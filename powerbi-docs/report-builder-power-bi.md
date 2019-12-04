@@ -1,7 +1,7 @@
 ---
 title: Paginated Report Builder i Power BI
 description: Power BI Paginated Report Builder är ett verktyg för skapande av sidnumrerade rapporter.
-ms.date: 09/16/2019
+ms.date: 11/27/2019
 ms.service: powerbi
 ms.subservice: report-builder
 featuredvideoid: 78TZeiEhveY
@@ -9,16 +9,18 @@ ms.topic: conceptual
 ms.assetid: 55bf4f9c-d037-412f-ae57-3fc39ce32fa5
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 6d13871ec3ba8a7550a556a8923893a6b7d676ae
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: faba36a609abd94b2439006fbbcf01a1d193c585
+ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71076066"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74565293"
 ---
 # <a name="power-bi-paginated-report-builder"></a>Paginated Report Builder i Power BI
 
  Power BI Paginated Report Builder är ett verktyg för skapande av sidnumrerade rapporter.  När du utformar en sidnumrerad rapport skapar du en rapportdefinition som anger vilka data som ska hämtas, var de ska hämtas och hur de ska visas. När du kör rapporten tar rapportbearbetaren den rapportdefinition som du har angett, hämtar data, kombinerar dem med rapportlayouten och genererar därmed rapporten. Du förhandsgranskar rapporten i Report Builder. Sedan publicerar du rapporten till Power BI-tjänsten.
+
+Prova [Labb: Skapa en sidnumrerad rapport i Microsoft Power BI](https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208).
 
 Föredrar du inlärning från videor? Titta på videoserien om sidnumrerade Power BI-rapporter på YouTube av Chris Finlan, Principal Program Manager för Power BI.
 
@@ -61,5 +63,5 @@ Följande sidnumrerade rapport har en matris med radgrupper och kolumngrupper, m
 ## <a name="next-steps"></a>Nästa steg
 
 - [Vad är sidnumrerade rapporter i Power BI Premium?](paginated-reports-report-builder-power-bi.md)
-
+- Prova [Labb: Skapa en sidnumrerad rapport i Microsoft Power BI](https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208)
 - Titta på [videoserien om sidnumrerade Power BI-rapporter](https://www.youtube.com/watch?v=78TZeiEhveY&list=PLx7LcKtN_gq-JVzM6L8xNNxX7kts-KflJ) på YouTube av Chris Finlan, Principal Program Manager för Power BI

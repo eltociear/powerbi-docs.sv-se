@@ -1,6 +1,6 @@
 ---
 title: Riktlinjer för visuella objekt för Power BI
-description: Läs hur du kan publicera dina anpassade visuella objekt till AppSource där andra kan upptäcka och använda dem via ett inköp.
+description: Läs hur du kan publicera dina anpassade visuella objekt till Microsoft AppSource där andra kan upptäcka och använda dem via ett inköp.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -8,77 +8,148 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 07/16/2019
-ms.openlocfilehash: e650b1eb8fd05db54b9d0bf9021eaa881d28832e
-ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
+ms.openlocfilehash: 10e7ab035f17715bba858fc3b055c5bf47af1331
+ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74128201"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74565488"
 ---
 # <a name="guidelines-for-power-bi-visuals"></a>Riktlinjer för visuella objekt för Power BI
-Innan du [publicerar](https://docs.microsoft.com/power-bi/developer/office-store) ditt visuella objekt till AppSource så att andra kan upptäcka och använda det ska du se till att följa riktlinjerna för att skapa en bra upplevelse för användarna. 
+Innan du [publicerar](https://docs.microsoft.com/power-bi/developer/office-store) ditt visuella Power BI-objekt till Microsoft AppSource så att andra kan upptäcka och använda det ska du se till att följa riktlinjerna så att användarna får en bra upplevelse.
+
+## <a name="power-bi-visuals-with-additional-purchases"></a>Visuella Power BI-objekt med ytterligare köp
+
+Du kan skicka in kostnadsfria visuella Power BI-objekt till Marketplace (Microsoft AppSource). Du kan även skicka in visuella Power BI-objekt till Microsoft AppSource som har en ”Ytterligare köp kan krävas”-prislapp. Visuella Power BI-objekt med prislappen ”Ytterligare köp kan krävas” liknar tillägg med köp via app (IAP) i Office Store. 
+
+Som med kostnadsfria visuella Power BI-objekt kan även visuella Power BI-objekt med köp via app certifieras. Innan du skickar ditt visuella Power BI-objekt med köp via app för certifiering måste du försäkra dig om att det uppfyller [certifieringskraven](../power-bi-custom-visuals-certified.md). 
+
+### <a name="what-is-a-power-bi-visual-with-iap-features"></a>Vad är ett visuellt Power BI-objekt med IAP-funktioner?
+
+Ett visuellt Power BI-objekt med köp via app är ett *kostnadsfritt* visuellt objekt som erbjuder *kostnadsfria funktioner*. Det har även vissa avancerade funktioner som kan kräva extra avgifter. I beskrivningen för det visuella Power BI-objektet måste utvecklare informera användarna om vilka funktioner som kräver ytterligare köp för att fungera. Microsoft tillhandahåller för närvarande inte inbyggda API:er för att stödja köp av appar och tilläggsprogram.
+
+Utvecklare kan använda valfritt betalningssystem från tredje part för dessa köp. Se vår [policy för marknadsplatsen](https://docs.microsoft.com/office/dev/store/validation-policies#2-apps-or-add-ins-can-display-certain-ads) för mer information.
+
+
+>[!IMPORTANT]  
+> Om du uppdaterar ditt visuella Power BI-objekt från kostnadsfritt till ”Ytterligare köp kan krävas” måste användarna få samma nivå av kostnadsfria funktioner som före uppdateringen. Du kan lägga till valfria avancerade betalfunktioner utöver de tidigare kostnadsfria funktionerna.
+
+### <a name="watermarks"></a>Vattenstämplar
+
+Du kan använda vattenstämplar så att kunderna kan fortsätta använda avancerade funktioner för köp via app utan att betala. 
+
+Vattenstämplar kan användas för att demonstrera alla funktioner i det visuella Power BI-objektet före ett köp. 
+
+* Vattenstämplar kan bara användas på betalda funktioner som används utan giltig licens.
+* Vattenstämplar är inte tillåtna i virtuella Power BI-objekt som har en *kostnadsfri* prislapp.
+* Vattenstämplar är inte tillåtna i visuella objekt med köp via app när användaren använder kostnadsfria funktioner. 
+
+### <a name="pop-up-window"></a>Popup-fönster
+
+Du kan använda ett popup-fönster för att förklara hur man köper en licens när en ogiltig (eller utgången) licens används med ditt visuella Power BI-objekt med köp via app.
+
+### <a name="submission-process"></a>Insändningsprocess
+
+Utvecklare laddar upp sina visuella Power BI-objekt med köp via app till Microsoft AppSource via instrumentpanelen för försäljning, precis som med kostnadsfria visuella objekt. För att visa att det inlämnade visuella Power BI-objektet har IAP-funktioner måste utvecklare skriva följande i anteckningarna på instrumentpanelen för försäljning: ”Visual with in-app purchase” (Visuellt objekt med köp i appen). Utvecklare måste också ange en licensnyckel eller token så att verifieringsteamet kan validera IAP-funktioner. När det visuella Power BI-objektet har verifierats och godkänts står det ”Ytterligare köp kan krävas” under priset för det visuella Power BI-objektet med köp via app i Microsoft AppSource.
 
 ## <a name="context-menu"></a>Snabbmeny
 Snabbmenyn är den högerklicksmeny som visas när användaren hovrar över ett visuellt objekt.
 Alla visuella Power BI-objekt bör aktivera snabbmenyn för att ge en enhetlig upplevelse. Information om hur du lägger till en snabbmeny finns i [den här artikeln](https://github.com/Microsoft/PowerBI-visuals/blob/gh-pages/tutorials/building-bar-chart/adding-context-menu-to-the-bar.md).
 
+## <a name="commercial-logo"></a>Kommersiell logotyp
+I det här avsnittet beskrivs specifikationerna för att lägga till kommersiella logotyper i visuella Power BI-objekt. Kommersiella logotyper är inte obligatoriska. Om de läggs till måste de följa dessa riktlinjer.
 
-## <a name="logo-guidelines"></a>Riktlinjer för logotyp
 > [!NOTE]
-> Ordet logotyp i den här artikeln avser valfri kommersiell företagsikon enligt beskrivningen i bilderna nedan. 
-
-I det här avsnittet beskrivs specifikationerna för att lägga till logotyper i visuella Power BI-objekt. Logotyper är inte obligatoriska. Om de läggs till måste de följa dessa riktlinjer. 
+> * I den här artikeln avser ”kommersiell logotyp” valfri kommersiell företagsikon enligt beskrivningen i bilderna nedan.
+> * Microsofts kommersiella logotyp används endast som exempel i den här artikeln. Använd din egen kommersiella logotyp med visuella Power BI-objekt.
 
 > [!IMPORTANT]
-> Logotyper tillåts *endast i redigeringsläge*. Logotyper *kan inte* visas i visningsläge.
+> Kommersiella logotyper tillåts *endast i redigeringsläge*. Kommersiella logotyper *kan inte* visas i visningsläge.
+
+### <a name="commercial-logo-type"></a>Kommersiell logotyp
+
+Det finns tre typer av kommersiella logotyper:
+* **Textlogotyp** – en textlogotyp består av två element som sitter ihop (en ikon och ett namn).
+
+    ![Microsofts logotyp](media/guidelines-powerbi-visuals/microsoft-logo.png)
+
+* **Symbol** – en bild utan text.
+
+    ![Microsoft-symbol](media/guidelines-powerbi-visuals/microsoft-symbol.png)
+
+* **Logotyp** – en logotyp utan ikon, som endast består av text.
+
+    ![Microsoft-symbol](media/guidelines-powerbi-visuals/microsoft-logotype.png)
+
+### <a name="commercial-logo-color"></a>Kommersiell logotypfärg
+
+När du använder en kommersiell logotyp måste färgen på logotypen vara grå (hexkoden #C8C8C8). Lägg inte till effekter som övertoningar till den kommersiella logotypen.
+
+* **Logotyp**
+
+    ![Microsoft-symbol](media/guidelines-powerbi-visuals/grey-microsoft-logo.png)
+
+* **Symbol** – en bild utan text.
+
+    ![Microsoft-symbol](media/guidelines-powerbi-visuals/grey-microsoft-symbol.png)
+
+* **Logotyp** – en logotyp utan ikon, som endast består av text.
+
+    ![Microsoft-symbol](media/guidelines-powerbi-visuals/grey-microsoft-logotype.png)
+
+> [!TIP]
+> * Om ditt visuella Power BI-objekt innehåller en bild kan du överväga att lägga till en vit bakgrund (med marginaler på 10 px) för din logotyp.
+> * Överväg att lägga till skugga för din logotyp (30 % ogenomskinlig svart).
+
+### <a name="commercial-logo-size"></a>Storlek på kommersiell logotyp
+
+Ett visuellt Power BI-objekt måste ha två kommersiella logotyper, en för stora paneler och en för små paneler. Placera logotypen i en avgränsningsruta i det övre eller nedre högra hörnet, med marginaler på 4 px.
+
+I följande tabell beskrivs storleksöverväganden för visuella Power BI-objekt.
+
+|  |Litet visuellt Power BI-objekt  |Stort visuellt Power BI-objekt  |
+|---------|---------|---------|
+|*Logotypens bredd*    |Upp till 240 px         |Större än 240 px         |
+|*Logotypens höjd*     |Upp till 160 px         |Större än 160 px         |
+|*Storlek på avgränsningsruta*     |40 x 15 px         |101 x 30 px         |
+|*Exempel på kommersiell logotyp*     |![Microsoft-symbol](media/guidelines-powerbi-visuals/grey-microsoft-symbol.png)         |![Microsofts logotyp](media/guidelines-powerbi-visuals/grey-microsoft-logo.png)         |
+|*Exempel på en avgränsningsruta*    |![exempel på liten logotyp](media/guidelines-powerbi-visuals/small-logo-box.png)         |![exempel på stor logotyp](media/guidelines-powerbi-visuals/big-logo-box.png)         |
+|    |         |         |
+
+### <a name="commercial-logo-behavior"></a>Beteende för kommersiell logotyp
+
+Kommersiella logotyper är endast tillåtna i redigeringsläge. En kommersiell logotyp kan den endast ha följande funktioner vid klick:
+
+* Vid klick på den kommersiella logotypen omdirigeras användaren till din webbplats.
+
+* Vid klick på den kommersiella logotypen öppnas ett popup-fönster med ytterligare information. Popup-fönstret ska vara indelat i två delar:
+    * Ett marknadsföringsutrymme som kan omfatta den kommersiella logotypen, ett visuellt objekt och marknadsomdömen.
+    * Ett informationsutrymme som kan innehålla information och länkar.    
 
 
-![Definitioner](media/guidelines-powerbi-visuals/definitions.png)
+### <a name="things-to-avoid"></a>Saker att undvika
 
-![Saker att tänka på](media/guidelines-powerbi-visuals/things-to-keep-in-mind.png)
+* Kommersiella logotyper kan inte visas i visningsläge.
 
-![Saker att undvika](media/guidelines-powerbi-visuals/things-to-avoid.png)
+* En animerad kommersiell logotyp kan visa en animering i högst fem sekunder.
 
-![Storlek och format](media/guidelines-powerbi-visuals/size-and-format.png)
+* Om det visuella Power BI-objektet innehåller informativa ikoner (i) i läsläge bör de överensstämma med färgen, storleken och platsen för den kommersiella logotypen, enligt beskrivningen ovan.
 
-![Marginaler och storlekar](media/guidelines-powerbi-visuals/margins-and-sizes.png)
+* Undvik en färgad eller svart kommersiell logotyp. Den kommersiella logotypen måste vara grå (hexkoden #C8C8C8).
 
-![Redigeringsläge](media/guidelines-powerbi-visuals/logos-in-edit-mode.png)
+    ![Otillåten färgad logotyp](media/guidelines-powerbi-visuals/no-color-logo.png) ![Otillåten svart logotyp](media/guidelines-powerbi-visuals/black-logo.png)
 
+* En kommersiell logotyp med effekter som övertoningar eller starka skuggor.
 
-Informativa ikoner, om sådana finns, i läsläge ska överensstämma med färg, storlek och plats som logotyperna ovan.
-
-## <a name="guidelines-for-power-bi-visuals-with-additional-purchases"></a>Riktlinjer för visuella objekt i Power BI med ytterligare inköp
-
-Tills nyligen godkände endast Marketplace (AppSource) kostnadsfria visuella objekt i Power BI. Den här principen har ändrats (december 2018) så att du nu även kan skicka in visuella objekt till AppSource som har pristaggen ytterligare köp kan krävas. 
-
-Visuella objekt där ytterligare köp kan krävas liknar tillägg med in-app köp (IAP) i Office Store. Utvecklare kan också skicka in dessa visuella objekt för certifiering efter att AppSource-teamet godkänt dem och efter att de sett till att de uppfyller certifieringskraven. Mer information om kraven finns i [Certifierade visuella Power BI-objekt](../developer/power-bi-custom-visuals-certified.md).
-
-> [!NOTE]
-> Det visuella objektet måste inte ha åtkomst till externa tjänster eller resurser för att godkännas.
-
->[!IMPORTANT]  
-> Om du uppdaterar ditt visuella objekt från kostnadsfritt till ”Ytterligare köp kan krävas” måste användarna får samma nivå av kostnadsfria funktioner som före uppdateringen. Du kan lägga till valfria avancerade betalfunktioner utöver de tidigare kostnadsfria funktionerna. Vi rekommenderar att du skickar in visuella IAP-objekt med de avancerade funktionerna som nya visuella objekt och inte uppdaterar de tidigare kostnadsfria versionerna.
-
-## <a name="what-changed-in-the-submission-process"></a>Vad ändras i inlämningsprocessen?
-
-Utvecklare laddar upp sina visuella IAP-objekt till AppSource via instrumentpanelen för försäljning, precis som med kostnadsfria visuella objekt. För att visa att det inlämnade visuella objektet har IAP-funktioner så ska utvecklare skriva följande i anteckningarna i säljarens instrumentpanel: ”Visual with in-app purchase” (Visuellt objekt med köp i appen). Utvecklare måste också ange en licensnyckel eller token så att verifieringsteamet kan validera IAP-funktioner. När det visuella objektet har verifierats och godkänts anger AppSource-listningen det visuella IAP-objektet ”Ytterligare köp kan krävas” under prissättningsalternativen.
-
-## <a name="what-is-a-power-bi-visual-with-iap-features"></a>Vad är ett visuellt Power BI-objekt med IAP-funktioner?
-
-Ett visuellt IAP-objekt är ett *kostnadsfritt* visuellt objekt som erbjuder *kostnadsfria funktioner*. Det har även vissa avancerade funktioner kan kräva extra avgifter för att använda. I beskrivningen för det visuella objektet så måste utvecklare meddela användare om vilka funktioner som kräver ytterligare köp för att fungera. Microsoft tillhandahåller för närvarande inte inbyggda API:er för att stödja köp av appar och tilläggsprogram.
-
-Utvecklare kan använda valfritt betalningssystem från tredje part för dessa köp. Se vår [policy för marknadsplatsen](https://docs.microsoft.com/office/dev/store/validation-policies#2-apps-or-add-ins-can-display-certain-ads) för mer information.
-
-> [!NOTE]
-> Vattenstämplar tillåts inte på de kostnadsfria funktionerna eller kostnadsfria visuella objekt. Vattenstämplar kan bara användas på betalda funktioner som används utan giltig licens. Vi rekommenderar att du visar ett popup-fönster all licensrelaterad information om de avancerade betalfunktionerna används utan giltig licens.  
-
+    ![Otillåten logotypstil](media/guidelines-powerbi-visuals/no-style-logo.png)
 
 ## <a name="best-practices"></a>Metodtips
 
+När du publicerar ett visuellt Power BI-objekt bör du tänka på följande rekommendationer för att ge användarna en bra upplevelse.
+
 ### <a name="visual-landing-page"></a>Landningssida för visuellt objekt
 
-Använd landningssidan för att klargöra för användarna hur de kan använda ditt visuella objekt och var de kan köpa licensen. Omfattar inte videor som utlöses automatiskt. Lägg bara till material som hjälper till att förbättra användarupplevelsen som information eller länkar till hur man köper en licens och hur man använder IAP-funktioner.
+Använd landningssidan för att klargöra för användarna hur de kan använda ditt visuella Power BI-objekt och var de kan köpa licensen. Omfattar inte videor som utlöses automatiskt. Lägg bara till material som hjälper till att förbättra användarupplevelsen som information eller länkar till hur man köper en licens och hur man använder IAP-funktioner.
 
 ### <a name="license-key-and-token"></a>Licensnyckel och token
 
@@ -86,8 +157,8 @@ För att underlätta för användaren så kan du lägga till licensnyckeln eller
 
 ## <a name="faq"></a>Vanliga frågor och svar
 
-Mer information om visuella objekt finns i [Vanliga frågor och svar om visuella objekt med ytterligare köp](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-faq#visuals-with-additional-purchases).
+Mer information om visuella Power BI-objekt finns i [Vanliga frågor och svar om visuella Power BI-objekt med ytterligare köp](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-faq#visuals-with-additional-purchases).
 
 ## <a name="next-steps"></a>Nästa steg
 
-Läs hur du kan publicera dina anpassade visuella objekt till [AppSource](office-store.md) där andra kan upptäcka och använda dem.
+Läs hur du kan publicera dina visuella Power BI-objekt till [Microsoft AppSource](office-store.md) där andra kan upptäcka och använda dem.

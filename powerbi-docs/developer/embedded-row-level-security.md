@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/10/2019
-ms.openlocfilehash: 3ef9bd001e17c472216e501c6d38907087219959
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: cd252572c3080f300592b52ddc0f25cefcf7f084
+ms.sourcegitcommit: 462ccdd9f79ff698ed0cdfc3165f4ada364dd9ef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73875827"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74478666"
 ---
 # <a name="row-level-security-with-power-bi-embedded"></a>Säkerhet på radnivå med Power BI Embedded
 
@@ -333,8 +333,7 @@ Du kan inte ange den här behörigheten med hjälp av administratörsportalen. D
 
 ### <a name="token-based-identity-limitations"></a>Begränsningar för tokenbaserade identiteter
 
-* Den här funktionen begränsar endast användning med Power BI Premium.
-* Funktionen fungerar inte med lokal SQL Server.
-* Den här funktionen fungerar inte med multi-geo.
+* Du kan endast använda RLS om du har en dedikerad kapacitet.
+* RLS fungerar inte med lokal SQL Server.
 
 Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

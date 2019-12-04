@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/11/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 5631e4144cf202591e202fd46405815b38ceb42d
-ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
+ms.openlocfilehash: cd952dfa690d079d662f09e1e01c34dadf129b7b
+ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74016260"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74565649"
 ---
 # <a name="connect-to-linkedin-sales-navigator-in-power-bi-desktop"></a>Ansluta till LinkedIn Sales Navigator i Power BI Desktop
 
@@ -111,6 +111,10 @@ Därifrån kan du ansluta dina egna data och välja hur många dagars data som s
 mallappen uppdaterar sedan datan i appen med dina data. Du kan också konfigurera en schemalagd uppdatering för att datan i din app ska vara lika aktuell som din uppdateringsfrekvens anger. 
 
 När datan har uppdaterats kan du se att appen är ifylld med dina egna data.
+
+## <a name="getting-help"></a>Få hjälp
+
+Om du stöter på problem när du ansluter till dina data kan du kontakta LinkedIn Sales Navigator-supporten på https://www.linkedin.com/help/sales-navigator. 
 
 ## <a name="next-steps"></a>Nästa steg
 Det finns alla möjliga sorters data du kan ansluta till med Power BI Desktop. Kolla in följande resurser för mer information om datakällor:

@@ -6,15 +6,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/30/2019
+ms.date: 11/27/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 8a9e2094619d4c6b0e0f6feb2c9767902b4f7b09
-ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
+ms.openlocfilehash: bdaac078fa106565f7c11b3cc323840b5d10b579
+ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099671"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74565346"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Organisera arbete på de nya arbetsytorna i Power BI
 
@@ -60,7 +60,7 @@ Med roller kan du hantera vem som kan göra vad i en arbetsyta, så att teamen k
 
 När du tilldelar roller till en användargrupp får personer i gruppen åtkomst till innehåll. Om du kapslar användargrupper får alla berörda användare behörighet.
 
-Här är funktionerna för de fyra rollerna: administratörer, medlemmar, deltagare och läsare. För alla dessa funktioner (utom den sistnämnda) krävs en Power BI Pro-licens.
+Här är funktionerna för de fyra rollerna: administratörer, medlemmar, deltagare och läsare. För alla dessa funktioner (utom visning och interaktion) krävs en Power BI Pro-licens.
 
 |Kapacitet   | Admin  | Medlem  | Deltagare  | Läsare |
 |---|---|---|---|---|
@@ -72,15 +72,15 @@ Här är funktionerna för de fyra rollerna: administratörer, medlemmar, deltag
 | Tillåta att andra delar objekt igen. |  X | X  |   |   |
 | Skapa, redigera och ta bort innehåll på arbetsytan.  |  X | X  | X  |   |
 | Publicera rapporter till arbetsytan och ta bort innehåll.  |  X | X  | X  |   |
-| Skapa en rapport på en annan arbetsyta baserat på en datamängd i den här arbetsytan. |  X | X  | X  |   |
-| Kopiera en rapport. | X | X | X |  |
-| Visa och interagera med ett objekt. |  X | X  | X  | X  |
+| Skapa en rapport på en annan arbetsyta baserat på en datamängd i den här arbetsytan.<sup>1</sup> |  X | X  | X  |   |
+| Kopiera en rapport.<sup>1</sup> | X | X | X |  |
+| Visa och interagera med ett objekt.<sup>2</sup> |  X | X  | X  | X  |
 
-> [!NOTE]
->För att kunna kopiera en rapport och skapa en rapport i en annan arbetsyta baserat på en datauppsättning i den här arbetsytan måste personer uppfylla följande kriterier:
->- Du måste ha en Power BI Pro-licens. Mer information finns i nästa avsnitt [Licensiering](#licensing).
->- Du måste ha behörigheten Skapa för datauppsättningen. Personer med administratörs- medlems- och deltagarroller har behörigheten Skapa för datauppsättningar i den här arbetsytan via rollen för arbetsytan.
- 
+1. För att kunna kopiera en rapport och skapa en rapport i en annan arbetsyta baserat på en datauppsättning i den här arbetsytan måste du uppfylla följande kriterier:
+    - Du måste ha en Power BI Pro-licens. Mer information finns i nästa avsnitt [Licensiering](#licensing).
+    - Du måste ha behörigheten Skapa för datauppsättningen. Personer med administratörs- medlems- och deltagarroller har behörigheten Skapa för datauppsättningar i den här arbetsytan via rollen för arbetsytan.
+2. Även om du inte har en Power BI Pro-licens kan du visa och interagera med objekt i Power BI-tjänsten om objekten finns i en arbetsyta i en Premium-kapacitet.
+
 ## <a name="licensing"></a>Licensiering
 Alla som du lägger till i en arbetsyta i den delade kapaciteten behöver en Power BI Pro-licens. På arbetsytan kan användarna samarbeta kring instrumentpaneler och rapporter som du planerar att publicera till en bredare publik eller hela organisationen. 
 

@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/22/2019
-ms.openlocfilehash: eecddd9251bbce732e9dc4ef70ad0d855f499d11
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 11/26/2019
+ms.openlocfilehash: 7297e73dc0e412f75412eb48398ef9c85cda8d6e
+ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73874142"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74565776"
 ---
 # <a name="install-power-bi-report-server"></a>Installera Power BI-rapportserver
 
@@ -21,9 +21,9 @@ Läs mer om att installera Power BI-rapportserver.
 
 ## <a name="download-power-bi-report-server"></a>Hämta Power BI-rapportservern
 
-[Ladda ned Power BI-rapportserver](https://www.microsoft.com/download/details.aspx?id=56722) från Microsoft Download Center.
+Gå till sidan [Lokal rapportering med Power BI-rapportserver](https://powerbi.microsoft.com/report-server/) och välj **Hämta en gratis utvärderingsversion**.
 
-Det finns även en kostnadsfri utvärderingsversion. Gå till sidan [Lokal rapportering med Power BI-rapportserver](https://powerbi.microsoft.com/report-server/) och välj **Hämta en gratis utvärderingsversion**.
+När du kör filen PowerBIReportServer.exe väljer du den kostnadsfria utvärderingsversionen eller anger produktnyckeln. Läs vidare om du vill veta mer.
 
 ## <a name="before-you-install"></a>Innan du installerar
 
@@ -43,7 +43,7 @@ Läs vidare om du vill veta mer.
 
 #### <a name="power-bi-premium"></a>Power BI Premium
 
-Om du har köpt Power BI Premium så kommer du att ha tillgång till din produktnyckel för Power BI-raportservern i fliken **premiuminställningar** i Power BI-administratörsportalen. Den finns endast tillgänglig för globala administratörer eller användare som har tilldelats rollen Power BI-tjänstadministratör.
+Om du har köpt Power BI Premium hittar du din produktnyckel för Power BI-rapportservern på fliken **Premium-inställningar** i Power BI-administratörsportalen. Administratörsportalen är endast tillgänglig för globala administratörer eller användare som har tilldelats rollen Power BI-tjänstadministratör.
 
 ![Premiuminställningar](../report-server/media/install-report-server/pbirs-product-key.png "Power BI-rapportservernyckeln i premiuminställningarna")
 
@@ -70,7 +70,7 @@ Du behöver inte en SQL Server Database Engine-server tillgänglig vid tidpunkte
 
     ![Välj utgåva](media/install-report-server/pbireportserver-choose-edition.png)
 
-    Du kan välja antingen utvärdering eller Developer edition från listmenyn.
+    Välj antingen Utvärdering eller Developer edition.
 
     ![Utgåva 2](media/install-report-server/pbireportserver-choose-edition2.png)
 
@@ -95,11 +95,11 @@ Du behöver inte en SQL Server Database Engine-server tillgänglig vid tidpunkte
 
 När du har valt **Konfigurera rapportservern** i installationsprogrammet, visas du konfigurationshanteraren för Reporting Services. Mer information finns i [konfigurationshanteraren för Reporting Services](https://docs.microsoft.com/sql/reporting-services/install-windows/reporting-services-configuration-manager-native-mode).
 
-Du behöver [skapa en rapportserverdatabas](https://docs.microsoft.com/sql/reporting-services/install-windows/ssrs-report-server-create-a-report-server-database) för att slutföra den inledande konfigurationen av Reporting Services. En SQL Server Database-server krävs för att slutföra det här steget.
+[Skapa en rapportserverdatabas](https://docs.microsoft.com/sql/reporting-services/install-windows/ssrs-report-server-create-a-report-server-database) för att slutföra den inledande konfigurationen av Reporting Services. En SQL Server Database-server krävs för att slutföra det här steget.
 
 ### <a name="creating-a-database-on-a-different-server"></a>Skapa en databas på en annan server
 
-Om du skapar rapportserverdatabasen på en databasserver på en annan dator, måste du ändra tjänstkontot för rapportservern till en autentiseringsuppgift som kan identifieras på databasservern. 
+Om du skapar rapportserverdatabasen på en databasserver på en annan dator, ändrar du tjänstkontot för rapportservern till en autentiseringsuppgift som kan identifieras på databasservern. 
 
 Som standard använder rapportservern det virtuella tjänstkontot. Om du försöker skapa en databas på en annan server, kan du få följande fel i steget tillämpar anslutningsrättigheter.
 
@@ -137,9 +137,9 @@ Ett exempel på den fullständiga URL-strängen kan vara följande:
 
 ## <a name="firewall"></a>Brandväggen
 
-Om du ansluter till rapportservern från en fjärrdator, behöver du kontrollera att du har konfigurerat brandväggsregler om det finns en brandvägg.
+Om du ansluter till rapportservern från en fjärrdator kontrollerar du att du har konfigurerat brandväggsregler om det finns en brandvägg.
 
-Du måste öppna TCP-porten som du har konfigurerat för din webbtjänst-URL och webbportals-URL. De är konfigurerade på TCP-port 80 som standard.
+Öppna TCP-porten som du har konfigurerat för din webbtjänst-URL och webbportals-URL. De är konfigurerade på TCP-port 80 som standard.
 
 ## <a name="additional-configuration"></a>Ytterligare konfiguration
 

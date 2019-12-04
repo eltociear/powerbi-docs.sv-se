@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
-ms.date: 09/24/2019
-ms.openlocfilehash: 9e49e8e70e7bc499fbcfe0c263bdd8315f2c7dbe
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 11/27/2019
+ms.openlocfilehash: 90bc46c484f659994c6a9500865803531fa3cdcc
+ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73874710"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74565704"
 ---
 # <a name="what-are-paginated-reports-in-power-bi-premium"></a>Vad är sidnumrerade rapporter i Power BI Premium?
 
@@ -21,9 +21,9 @@ Sidnumrerade rapporter, som länge varit standardrapportformat i SQL Server Repo
 
 Sidnumrerade rapporter kan ha många sidor. Den här rapporten har till exempel 563 sidor. Varje sida har en exakt utformning med en sida per faktura och upprepande sidhuvuden och sidfötter.
 
-![Sidnumrerad](media/paginated-reports-report-builder-power-bi/power-bi-paginated-wwi-report-page.png)
+Prova [Labb: Skapa en sidnumrerad rapport i Microsoft Power BI](https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208).
 
-![Sidnumrerad rapport i Power BI-tjänsten](media/report-builder-power-bi/report-builder-get-started-paginated-report.png)
+![Sidnumrerad](media/paginated-reports-report-builder-power-bi/power-bi-paginated-wwi-report-page.png)
 
 Du kan förhandsgranska rapporten i Report Builder och sedan publicera den i Power BI-tjänsten https://app.powerbi.com. Du måste ha en Power BI Pro-licens för att kunna publicera en rapport i tjänsten. Du kan publicera och dela sidnumrerade rapporter på Min arbetsyta eller på arbetsytor så länge arbetsytan ligger i en Power BI Premium-kapacitet. Dessutom måste en Power BI-administratör aktivera sidnumrerade rapporter i [avsnittet Premium-kapaciteter](service-admin-premium-workloads.md#paginated-reports) i Power BI-administratörsportalen. 
 
@@ -87,6 +87,6 @@ Här följer några andra funktioner som inte stöds i den första versionen:
 - [Installera Power BI Report Builder från Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=2086513)
 - [Självstudier: Skapa en sidnumrerad rapport](paginated-reports-quickstart-aw.md)
 - [Ange data direkt i en sidnumrerad rapport](paginated-reports-enter-data.md)
-
+- [Labb: Skapa en sidnumrerad rapport i Microsoft Power BI](https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208)
   
 

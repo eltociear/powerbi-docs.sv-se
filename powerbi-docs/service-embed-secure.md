@@ -7,14 +7,14 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/20/2019
+ms.date: 11/27/2019
 LocalizationGroup: Share your work
-ms.openlocfilehash: 59841cdcfae3bc08e0b6dcacf4bcb6664dfe209c
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: d4495a2021f008326d76c7fd9ff686d639827e90
+ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73877084"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74565758"
 ---
 # <a name="embed-a-report-in-a-secure-portal-or-website"></a>Bädda in en rapport i en säker portal eller webbplats
 
@@ -118,6 +118,8 @@ report.src = newUrl;
 Du kan lägga till så många knappar du vill skapa en anpassad upplevelse med lite kod. 
 
 ## <a name="considerations-and-limitations"></a>Överväganden och begränsningar
+
+* Sidnumrerade rapporter med säker inbäddning och sidnumrerade rapporter med URL-parametrar stöds. Läs mer om att [skicka rapportparametrar i en URL för en sidnumrerad rapport](report-builder-url-pass-parameters.md).
 
 * Stöder inte externa gästanvändare med Azure företag till företag (B2B).
 
