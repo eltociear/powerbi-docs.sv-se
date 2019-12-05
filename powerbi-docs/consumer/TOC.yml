@@ -58,8 +58,16 @@
               href: end-user-pdf.md
             - name: Lägga till ett bokmärke i en rapport
               href: end-user-bookmarks.md
-            - name: Sidnumrerade rapporter
-              href: end-user-paginated-report.md
+            - name: Sidnumrerade rapporter i Power BI
+              items:
+                - name: Sidnumrerade rapporter
+                  href: end-user-paginated-report.md
+                - name: Visa en sidnumrerad rapport
+                  href: paginated-reports-view-power-bi-service.md
+                - name: Interagera med parametrar
+                  href: paginated-reports-view-parameters.md
+                - name: Registrera dig eller andra
+                  href: paginated-reports-subscriptions.md
         - name: Visualiseringar
           items:
             - name: Vad kan jag göra med visualiseringar?
