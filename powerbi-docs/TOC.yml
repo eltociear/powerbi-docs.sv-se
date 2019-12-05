@@ -747,16 +747,6 @@
               href: designer/service-security-apply-data-sensitivity-labels.md
         - name: Dataursprung
           href: service-data-lineage.md
-        - name: Sidnumrerade rapporter i Power BI
-          items:
-            - name: Visa en sidnumrerad rapport
-              href: paginated-reports-view-power-bi-service.md
-            - name: Datakällor som stöds
-              href: paginated-reports-data-sources.md
-            - name: Interagera med parametrar
-              href: paginated-reports-view-parameters.md
-            - name: Registrera dig eller andra
-              href: paginated-reports-subscriptions.md
         - name: Mallappar
           items:
             - name: Översikt över mallappar
@@ -915,6 +905,8 @@
           href: report-builder-planning-report.md
         - name: Report Builder-data
           href: report-builder-data.md
+        - name: Datakällor som stöds
+          href: paginated-reports-data-sources.md
         - name: Använda delade datauppsättningar i Power BI
           href: report-builder-shared-datasets.md
         - name: Designtips
