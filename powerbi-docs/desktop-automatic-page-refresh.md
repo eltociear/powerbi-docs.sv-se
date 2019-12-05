@@ -7,15 +7,15 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/14/2019
+ms.date: 11/26/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b9f7c745ad251fdb81c7898130cd3ca6c5d32af9
-ms.sourcegitcommit: c839ef7437bc8fb8f7eeda23e59d05c7192a7fe8
+ms.openlocfilehash: 50daa90f937a9d1c7081d9b22e3c743da950945c
+ms.sourcegitcommit: fe9253a6021b9e198afa28aa9c670c3bacf59674
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74164158"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74548569"
 ---
 # <a name="automatic-page-refresh-in-power-bi-desktop-preview"></a>Automatisk sidouppdatering i Power BI Desktop (förhandsversion)
 
@@ -83,7 +83,7 @@ Härnäst ska vi titta på hur du kan identifiera och diagnostisera prestandapro
 
 Du kan också ställa in automatiska siduppdateringsintervall för rapporter som har skapats i Power BI Desktop och publicerats till Power BI-tjänsten. 
 
-Automatisk siduppdatering för rapporter i Power BI-tjänst konfigureras med steg som liknar konfigurationen i Power BI Desktop. Följande bild visar konfigurationen av **siduppdatering** för Power BI-tjänsten:
+Automatisk siduppdatering för rapporter i Power BI-tjänst konfigureras med steg som liknar konfigurationen i Power BI Desktop. Automatisk siduppdatering har även stöd för [inbäddat Power BI](developer/embedding.md)-innehåll när det konfigureras i Power BI-tjänsten. Följande bild visar konfigurationen av **siduppdatering** för Power BI-tjänsten:
 
 ![Automatisk siduppdatering i Power BI-tjänsten](media/desktop-automatic-page-refresh/automatic-page-refresh-04.png)
 
