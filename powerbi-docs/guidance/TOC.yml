@@ -32,6 +32,10 @@
           href: ../service-dataflows-best-practices.md
         - name: Vägledning för DirectQuery-modell i Power BI Desktop
           href: directquery-model-guidance.md
+        - name: Utöka visuella objekt med knappbeskrivningar för rapportsida
+          href: report-page-tooltips.md
+        - name: Visa detaljerad information för rapportsida
+          href: report-drillthrough.md
     - name: Vitböcker
       items:
         - name: Översikt vitböcker
