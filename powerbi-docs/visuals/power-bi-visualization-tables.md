@@ -2,20 +2,20 @@
 title: Tabellvisualiseringar i Power BI-rapporter och instrumentpaneler
 description: Självstudier för att arbeta med tabellvisualiseringar i Power BI-rapporter och instrumentpaneler, inklusive hur du ändrar kolumnbredder.
 author: mihart
-ms.reviewer: ''
+ms.reviewer: willt
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/24/2019
+ms.date: 12/04/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 2bb20b9ecc43e73e85d798416fe0ddaabb98e12b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 6d2f1eea22f83d90501581be7d2e9b8230962835
+ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870788"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74830856"
 ---
 # <a name="tables-in-power-bi-reports-and-dashboards"></a>Tabeller i Power BI-rapporter och instrumentpaneler
 
@@ -130,7 +130,7 @@ Med villkorsstyrd formatering för tabeller kan du specificera anpassade cellbak
 
 1. I dialogrutan som visas anger du färger för **Positiv stapel** och **Negativ stapel**, markerar alternativet **Visa enbart stapel** och gör eventuella andra ändringar som du önskar.
 
-    ![markeringen för Visa endast liggande](media/power-bi-visualization-tables/power-bi-data-bars.png)
+    ![markeringen för Visa endast liggande](media/power-bi-visualization-tables/power-bi-data-bar.png)
 
 1. Välj **OK**.
 

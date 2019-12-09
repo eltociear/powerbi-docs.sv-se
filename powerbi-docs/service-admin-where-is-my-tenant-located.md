@@ -1,20 +1,20 @@
 ---
 title: Var finns min Power BI-klient?
 description: Lär dig var din Power BI-klient finns och hur den platsen har valts. Det här är viktigt att lära sig eftersom det kan påverka dina interaktioner med tjänsten.
-author: mgblythe
+author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/09/2019
-ms.author: mblythe
+ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 3f12e6f0b54f85ebd626b2bd35bf1a03d513c17a
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 4a763b31333004a8cdecda5262967473817bc983
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73873334"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74698381"
 ---
 # <a name="where-is-my-power-bi-tenant-located"></a>Var finns min Power BI-klient?
 

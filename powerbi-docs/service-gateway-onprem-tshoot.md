@@ -1,20 +1,20 @@
 ---
 title: Felsöka gatewayer – Power BI
 description: Den här artikeln innehåller olika sätt att felsöka problem hos din lokala datagateway och Power BI. Här finns lösningar på kända problem och verktyg som kan hjälpa dig.
-author: mgblythe
-ms.author: mblythe
+author: arthiriyer
+ms.author: arthii
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: troubleshooting
 ms.date: 07/15/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: b420c827df3c18796d0d46514f81170f202eafbd
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 73e2c923500a2d78072a711bc7662a5923811bba
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73881560"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74699347"
 ---
 # <a name="troubleshoot-gateways---power-bi"></a>Felsöka gatewayer – Power BI
 

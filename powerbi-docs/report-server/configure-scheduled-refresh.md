@@ -1,19 +1,19 @@
 ---
 title: Konfigurera schemalagd uppdatering av en Power BI-rapport
 description: Om du vill uppdatera data i Power BI-rapport måste du skapa en plan för schemalagd uppdatering.
-author: mgblythe
+author: maggiesMSFT
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/01/2017
-ms.author: mblythe
-ms.openlocfilehash: c8794d797d6267fcc378b22d8b41995d88b8bddd
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.author: maggies
+ms.openlocfilehash: 2b4bcf0734f7bec85d2d152c4745d373c63dc230
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73859991"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74699531"
 ---
 # <a name="how-to-configure-power-bi-report-scheduled-refresh"></a>Konfigurera schemalagd uppdatering av en Power BI-rapport
 Om du vill uppdatera data i Power BI-rapport måste du skapa en plan för schemalagd uppdatering. Detta görs i området *Hantera* i Power BI-rapporten.

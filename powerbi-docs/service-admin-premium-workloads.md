@@ -1,20 +1,20 @@
 ---
 title: Så här konfigurerar du arbetsbelastningar i Power BI Premium
 description: Lär dig att konfigurera arbetsbelastningar i en Power BI Premium-kapacitet.
-author: mgblythe
-ms.author: mblythe
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/14/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 8240c4590a5e5bb892c4858ea74aa20e569ecb89
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 7d94c5d3531576cd36688591b55aaf4a49de51aa
+ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73856816"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74831304"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Konfigurera arbetsbelastningar i en Premium-kapacitet
 
@@ -164,7 +164,7 @@ Med arbetsbelastningens sidnumrerade rapporter kan du köra sidnumrerade rapport
 | **Maximalt minne (%)** | Den maximala procentandelen tillgängligt minne som sidnumrerade rapporter kan använda i en kapacitet. |
 |  |  |
 
-Sidnumrerade rapporter gör att anpassad kod kan köras vid rendering av en rapport. Det kan till exempel gälla dynamisk ändring av textfärg baserat på innehåll, vilket kan kräva ytterligare minne. I Power BI Premium körs sidnumrerade rapporter i ett inneslutet område inom kapaciteten. Det Max minne som anges används *oavsett huruvida* arbetsbelastningen är aktiv. Om du ändrar inställningen Max minne från standardvärdet ska du se till att ange det lågt nog så att det inte påverkar andra arbetsbelastningar negativt.
+Sidnumrerade rapporter gör att anpassad kod kan köras vid rendering av en rapport. Det kan till exempel gälla dynamisk ändring av textfärg baserat på innehåll, vilket kan kräva ytterligare minne. I Power BI Premium körs sidnumrerade rapporter i ett inneslutet område inom kapaciteten. 
 
 I vissa fall kan arbetsbelastningens sidnumrerade rapporter bli otillgängliga. I det här fallet visar arbetsbelastningen ett feltillstånd i administratörsportalen, och användarna ser överskridna tidsgränser vid rendering av rapporter. För att lösa det här problemet kan du inaktivera arbetsbelastningen och sedan aktivera den igen.
 

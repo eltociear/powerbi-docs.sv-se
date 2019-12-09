@@ -1,20 +1,20 @@
 ---
 title: Konfigurera och hantera kapaciteter i Power BI Premium
 description: Lär dig hur du kan hantera Power BI Premium och ge åtkomst till innehåll för hela organisationen.
-author: mgblythe
-ms.author: mblythe
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/17/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 04f5b1f639b7abdbbe789a23e5d7a54790ad50a5
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: e60aed5b538eab3b630f42a665d96256cc07879c
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73857085"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74700106"
 ---
 # <a name="configure-and-manage-capacities-in-power-bi-premium"></a>Konfigurera och hantera kapaciteter i Power BI Premium
 
@@ -122,7 +122,7 @@ Kapacitetsadministratörer, tillsammans med Power BI-administratörer och global
 
     ![Tilldela arbetsytor](media/service-admin-premium-manage/assign-workspaces.png)
 
-   | Val | Beskrivning |
+   | Urval | Beskrivning |
    | --- | --- |
    | **Arbetsytor av användare** | När du tilldelar arbetsytor per användare eller grupp, tilldelas alla arbetsytor som ägs av dessa användare till Premium-kapacitet, inklusive användares personliga arbetsytor. Dessa användare får automatiskt behörighet för tilldelning av arbetsyta.<br>Detta inkluderar arbetsytor som redan har tilldelats till en annan kapacitet. |
    | **Särskilda arbetsytor** | Ange namnet på en viss arbetsyta om du vill tilldela till den valda kapaciteten. |

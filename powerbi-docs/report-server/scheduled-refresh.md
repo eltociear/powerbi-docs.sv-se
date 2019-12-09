@@ -1,19 +1,19 @@
 ---
 title: Schemalagd uppdatering av Power BI-rapport i Power BI-rapportserver
 description: Power BI-rapporter kan ansluta till olika datakällor. Beroende på hur data används, finns olika datakällor tillgängliga.
-author: mgblythe
+author: maggiesMSFT
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/01/2017
-ms.author: mblythe
-ms.openlocfilehash: ede44316d9dd188787381b26ee3352af13775c0f
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.author: maggies
+ms.openlocfilehash: 90f08abd119e7dfc0bf639eeb2ed8334fbdfa234
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73873998"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74699025"
 ---
 # <a name="power-bi-report-scheduled-refresh-in-power-bi-report-server"></a>Schemalagd uppdatering av Power BI-rapport i Power BI-rapportserver
 Schemalagd uppdatering för Power BI-rapporter gör att data för en rapport hålls uppdaterad.

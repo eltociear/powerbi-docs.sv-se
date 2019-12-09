@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 06/06/2019
-ms.openlocfilehash: d1f23f52f484ec9e141b4870b50cc1b2758709d9
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 12/03/2019
+ms.openlocfilehash: 8afa43cf9d49286a1ec04f7f60aa4a4c4ca7fd16
+ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73874726"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74831182"
 ---
 # <a name="create-parameters-for-paginated-reports-in-the-power-bi-service"></a>Skapa parametrar för sidnumrerade rapporter i Power BI-tjänsten
 
@@ -64,6 +64,6 @@ I följande bild visas designvyn i Power BI Report Builder för en rapport med p
   
 ## <a name="next-steps"></a>Nästa steg
 
-Se [Visa parametrar för sidnumrerade rapporter](paginated-reports-view-parameters.md) för att se hur parametrarna ser ut i Power BI-tjänsten.
+Se [Visa parametrar för sidnumrerade rapporter](consumer/paginated-reports-view-parameters.md) för att se hur parametrarna ser ut i Power BI-tjänsten.
 
 Mer detaljerad information om parametrar i sidnumrerade rapporter finns i [Rapportparametrar i Power BI Report Builder](report-builder-parameters.md).

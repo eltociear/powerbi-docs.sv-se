@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 11/05/2018
-ms.openlocfilehash: 6cf3cd715915b5a6f3aa41e61c01c8b5b0a7d204
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 12/03/2019
+ms.openlocfilehash: a7f0e6f08f25d47cd50789a3c8f296ae20c4cab0
+ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73874762"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74831205"
 ---
 # <a name="publish-a-paginated-report-to-the-power-bi-service"></a>Publicera en sidnumrerad rapport i Power BI-tjänsten
 
@@ -87,6 +87,6 @@ För närvarande stöder inte gatewayer flervärdesparametrar.
 
 ## <a name="next-steps"></a>Nästa steg
 
-- [Visa en sidnumrerad rapport i Power BI-tjänsten](paginated-reports-view-power-bi-service.md)
+- [Visa en sidnumrerad rapport i Power BI-tjänsten](consumer/paginated-reports-view-power-bi-service.md)
 - [Vad är sidnumrerade rapporter i Power BI Premium?](paginated-reports-report-builder-power-bi.md)
 
