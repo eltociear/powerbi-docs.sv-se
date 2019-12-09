@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/01/2019
 ms.author: v-tatero
-ms.openlocfilehash: b451333aaf93584e7e16dcf24e6b693e9da3eccd
-ms.sourcegitcommit: 462ccdd9f79ff698ed0cdfc3165f4ada364dd9ef
+ms.openlocfilehash: 44da3a20c203bfc50be08b0ed91efa6dfd998204
+ms.sourcegitcommit: 9a265d8117cc202f5f700286b5ff42a631aacdb4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74478642"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74882757"
 ---
 # <a name="power-bi-webinars"></a>Power BI-webbseminarier
 
@@ -24,10 +24,6 @@ Registrera dig för våra kommande live-webbseminarier eller titta på våra ins
 **Analys i virtuella Azure-händelser: Få snabbare insikter med Azure Synapse Analytics**
 <br>av Gayle Sheppard och John MacIntyre
 <br>[Registrera dig nu](https://info.microsoft.com/WW-Analytics-in-Azure-virtual-event-Accelerate-Time-to-Insight-with-Azure-Synapse-Analytics-Registration.html?ocid=AID2482920_QSG_373413)
-
-**Hur Microsoft ändrar BI-dataskyddet**
-<br>av Anton Fritz och Adi Regev
-<br>[Registrera dig om du vill titta den 4 december](https://info.microsoft.com/ww-landing-How-Microsoft-Is-Changing-BI-Data-Protection.html?lcid=EN-US)
 
 **Nine Trends Shaping the Future of Big Data Analytics** (Nio trender som formar framtiden för stordataanalys)
 <br>av Vijay Gopalakrishnan
@@ -42,6 +38,10 @@ Registrera dig för våra kommande live-webbseminarier eller titta på våra ins
 ## <a name="featured-webinars"></a>Aktuella webbseminarier
 
 Kom igång med dessa populära webbseminarier på begäran
+
+**Hur Microsoft ändrar BI-dataskyddet**
+<br>av Anton Fritz och Adi Regev
+<br>[Registrera dig och titta nu](https://info.microsoft.com/ww-landing-How-Microsoft-Is-Changing-BI-Data-Protection.html?lcid=EN-US)
 
 **Power BI och framtidens moderna och företags-BI**
 <br>av Arun Ulag och Amir Netz
