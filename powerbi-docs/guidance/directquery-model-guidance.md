@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: d7fcc054ccf0bea1a036eaf24cb9631a2abb3969
-ms.sourcegitcommit: f1f57c5bc6ea3057007ed8636ede50188ed90ce1
+ms.openlocfilehash: bfc1572e31269182e9ca63efbbf6934b90f84b66
+ms.sourcegitcommit: 462ccdd9f79ff698ed0cdfc3165f4ada364dd9ef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74410884"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74478612"
 ---
 # <a name="directquery-model-guidance-in-power-bi-desktop"></a>Vägledning för DirectQuery-modell i Power BI Desktop
 
@@ -99,7 +99,7 @@ Du kan optimera rapporter baserade på en DirectQuery-datamängd på många sät
     
 - **Använd filter först:** När du först utformar rapporter rekommenderar vi att du tillämpar eventuella filter, för rapporter, sidor eller visuella objekt, innan du mappar fälten till de visuella fälten. Snarare än att dra in måtten **Country** och **Sales** och sedan filtrera efter ett visst år bör du till exempel tillämpa filtret på fältet **Year** först. Det här beror på att varje steg i processen att skapa ett visuellt objekt skickar en fråga, och även om du kan göra ytterligare en ändring innan den första frågan har slutförts så innebär det en onödig belastning på den underliggande datakällan. Om du tillämpar filter tidigt blir de mellanliggande frågorna normalt mer kostnadseffektiva och snabbare. Om du inte tillämpar filter tidigt kan du också råka överskrida gränsen på en miljon rader som beskrivs ovan.
 - **Begränsa antalet visuella objekt på en sida:** När du öppnar en rapportsida (när sidfilter används) uppdateras alla visuella objekt på sidan. Det finns dock en gräns för hur många frågor som kan skickas parallellt, baserat på Power BI-miljön och inställningen **Maximalt antal anslutningar per datakälla** för modellen, se beskrivningen ovan. När antalet visuella objekt på sidan ökar är det därmed högre risk att de uppdateras seriellt. Det här gör att det tar längre tid att uppdatera sidan, och risken ökar dessutom för att de visuella objekten på sidan visar inkonsekventa resultat (för obeständiga datakällor). Det här gör att du bör begränsa antalet visuella objekt på samma sida, och i stället använda fler och enklare sidor. Om du ersätter flera visuella kort med ett enda kort med flera rader kan du få en liknande sidlayout.
-- **Stäng av interaktionen mellan visuella objekt:** Interaktioner med korsmarkering och korsfiltrering gör att frågor måste skickas till den underliggande källan. Om dessa interaktioner inte är nödvändiga bör de stängas av så att det inte tar orimligt lång tid att svara på användarnas val. Du kan stänga av sådana interaktioner antingen för hela rapporten (se beskrivningen av frågereduktion ovan), eller från fall till fall enligt beskrivningen i artikeln [Korsfiltrering mellan visuella objekt i en Power BI-rapport](../consumer/end-user-interactions.md).
+- **Stäng av interaktionen mellan visuella objekt:** Interaktioner med korsmarkering och korsfiltrering gör att frågor måste skickas till den underliggande källan. Om dessa interaktioner inte är nödvändiga bör de stängas av så att det inte tar orimligt lång tid att svara på användarnas val. Interaktionerna kan stängas av, antingen för hela rapporten (enligt beskrivningen ovan för Alternativ för frågereduktion), eller från fall till fall. Mer information finns i [Hur visuella objekt korsfiltrerar varandra i en Power BI-rapport](../consumer/end-user-interactions.md).
 
 Utöver listan med optimeringstekniker ovan bör du tänka på att följande rapportfunktioner kan orsaka prestandaproblem:
 
@@ -110,8 +110,8 @@ Utöver listan med optimeringstekniker ovan bör du tänka på att följande rap
     
     Det här kan leda till att två frågor skickas till den underliggande datakällan:
     
-      - Den första frågan hämtar kategorierna som uppfyller villkoret (Sales > 15 miljoner USD)
-      - Den andra frågan hämtar sedan nödvändig information för det visuella objektet, och lägger till kategorierna som uppfyllde villkoret i WHERE-satsen
+    - Den första frågan hämtar kategorierna som uppfyller villkoret (Sales > 15 miljoner USD)
+    - Den andra frågan hämtar sedan nödvändig information för det visuella objektet, och lägger till kategorierna som uppfyllde villkoret i WHERE-satsen
     
     Detta fungerar i allmänhet bra om det finns hundratals eller tusentals kategorier, som i det här exemplet. Du kan dock få sämre prestanda om antalet kategorier är mycket större (och frågan riskerar faktiskt att misslyckas om det finns mer än en miljon kategorier som uppfyller villkoret, vilket beror på gränsen på en miljon rader som diskuterats ovan).
 - **TopN-filter:** Du kan definiera avancerade filter för att endast filtrera de N översta (eller understa) värdena som rangordnas av ett mått. Du kan till exempel bara visa de fem översta kategorierna i ovanstående visuella objekt. Precis som för måttfilter så leder detta till att två frågor skickas till den underliggande datakällan. Den första frågan returnerar alla kategorier från den underliggande källan, och sedan fastställs de översta N värdena utifrån de returnerade resultaten. Beroende på kardinaliteten hos den aktuella kolumnen kan detta leda till problem med prestanda (eller till frågefel på grund av gränsen på en miljon rader).
@@ -127,7 +127,7 @@ Det kan få bättre funktion och prestanda genom att konvertera en DirectQuery-m
 
 ## <a name="educate-users"></a>Utbilda användarna
 
-Det är viktigt att användarna får lära sig att arbeta effektivt med rapporter baserade på DirectQuery-datamängder. De som skriver rapporterna måste känna till informationen i avsnittet [Optimera rapportdesignen](#optimize-report-designs).
+Det är viktigt att användarna får lära sig att arbeta effektivt med rapporter baserade på DirectQuery-datamängder. De som skriver rapporterna måste känna till informationen i avsnittet [Optimera rapportdesignen](#optimize-report-designs section).
 
 Vi rekommenderar att de som ska använda rapporter baserade på DirectQuery-datamängder utbildas om rapporterna. Det kan vara bra att de förstår den allmänna dataarkitekturen, bland annat de relevanta begränsningar som beskrivs i den här artikeln. Berätta att de kan förvänta sig långa svarstider vid svarsuppdatering och interaktiv filtrering. När rapportanvändare förstår varför prestandaförsämringen inträffar är sannolikheten mindre att de förlorar förtroende för rapporterna och data.
 
