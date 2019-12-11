@@ -32,10 +32,14 @@
           href: ../service-dataflows-best-practices.md
         - name: Vägledning för DirectQuery-modell i Power BI Desktop
           href: directquery-model-guidance.md
+        - name: Referera till Power Query-frågor
+          href: power-query-referenced-queries.md
         - name: Utöka visuella objekt med knappbeskrivningar för rapportsida
           href: report-page-tooltips.md
         - name: Visa detaljerad information för rapportsida
           href: report-drillthrough.md
+        - name: Vägledning om automatisk datum/tid i Power BI Desktop
+          href: auto-date-time.md
     - name: Vitböcker
       items:
         - name: Översikt vitböcker
