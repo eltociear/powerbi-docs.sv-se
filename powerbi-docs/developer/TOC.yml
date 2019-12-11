@@ -41,13 +41,13 @@
               href: visuals/advanced-edit-mode.md
         - name: Gör så här
           items:
-            - name: Certifiera ett visuellt objekt
+            - name: Certifiera ett visuellt Power BI-objekt
               href: power-bi-custom-visuals-certified.md
-            - name: Publicera anpassad visuell information till AppSource
+            - name: Publicera visuella Power BI-objekt till AppSource
               href: office-store.md
-            - name: Använd R-baserade anpassade visuella objekt i Power BI
+            - name: Använd R-baserade visuella Power BI-objekt i Power BI
               href: ../desktop-r-powered-custom-visuals.md?toc=/powerbi-docs/developer/TOC.json&bc=/powerbi-docs/breadcrumb/toc.json
-            - name: Interaktioner med visuella objekt
+            - name: Visuella interaktioner
               href: visuals/visuals-interactions.md
             - name: Lägga till val
               href: visuals/selection-api.md
@@ -69,8 +69,6 @@
               href: visuals/high-contrast-support.md
             - name: Aktivera synkronisering av utsnitt
               href: visuals/enable-sync-slicers.md
-            - name: Lägg till stöd för ökad detaljnivå
-              href: visuals/drill-down-support.md
             - name: Felsöka anpassade visuella Power BI-objekt
               href: power-bi-custom-visuals-troubleshoot.md
         - name: Referens
@@ -85,14 +83,8 @@
               href: visuals/event-service.md
             - name: Sortering
               href: visuals/sort-options.md
-            - name: Lokalisering
-              href: visuals/localization.md
-            - name: Power BI – visuella verktyg
-              items:
-                - name: Interaktivitetsverktyg
-                  href: visuals/utils-interactivity-selections.md
-                - name: Formateringsverktyg
-                  href: visuals/utils-formatting.md
+            - name: Interaktivitetsverktyg
+              href: visuals/utils-interactivity-selections.md
         - name: Resurser
           items:
             - name: Dev Center
