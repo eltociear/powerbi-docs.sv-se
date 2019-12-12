@@ -1,20 +1,20 @@
 ---
 title: Distribuera innehåll till externa gästanvändare med Azure Active Directory B2B
 description: Power BI kan integreras med Azure Active Directory Business-to-business (Azure AD B2B) för att tillåta säker distribution av Power BI-innehåll till gästanvändare utanför organisationen.
-author: mgblythe
+author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/09/2019
-ms.author: mblythe
+ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: bcde2bc456ee48e8dc66d6c0ba6b17d79fbe43a8
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: c126b073ac80a470733d7d8dd2638da28a06b265
+ms.sourcegitcommit: 9a265d8117cc202f5f700286b5ff42a631aacdb4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73858016"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74882829"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-with-azure-ad-b2b"></a>Distribuera Power BI-innehåll till externa gästanvändare med Azure Active Directory B2B
 
@@ -30,7 +30,9 @@ Du kan också använda funktionen [Tillåt externa gästanvändare att redigera 
 
 ## <a name="who-can-you-invite"></a>Vilka kan du bjuda in?
 
-Du kan bjuda in gästanvändare som använder alla e-postadresser, även personliga konton som gmail.com, outlook.com och hotmail.com. I Azure AD B2B kallas de här adresserna *sociala identiteter*.
+Du kan bjuda in gästanvändare med de flesta typer av e-postadresser, även personliga konton som gmail.com, outlook.com och hotmail.com. I Azure AD B2B kallas de här adresserna *sociala identiteter*.
+
+Du kan inte bjuda in användare som är kopplade till ett myndighetsmoln, som [Power BI för amerikanska myndigheter](service-govus-overview.md).
 
 ## <a name="invite-guest-users"></a>Bjud in gästanvändare
 

@@ -7,15 +7,15 @@ ms.reviewer: cmfinlan
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/14/2019
+ms.date: 11/27/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 8041fee4689c6319f219c26f20701c6062601a64
-ms.sourcegitcommit: c839ef7437bc8fb8f7eeda23e59d05c7192a7fe8
+ms.openlocfilehash: 9e00e68e0a5f6df62072a1d9744276bffbd3beb4
+ms.sourcegitcommit: 90bd747b7c460d17b74cd386d3f5714234b1f6c9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74164198"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74791656"
 ---
 # <a name="export-reports-from-power-bi-to-pdf"></a>Exportera rapporter från Power BI till PDF
 
@@ -62,6 +62,7 @@ Det finns några överväganden och begränsningar som du bör tänka på när d
 * Power BI-tjänsten använder det språk du har i din Power BI-språkinställning som språk för PDF-exporten. Om du vill se eller ange din språkinställning, klicka på kugghjulsikonen ![kugghjulsikon](media/end-user-powerpoint/power-bi-settings-icon.png) > **Inställningar** > **Allmänt** > **Språk**.
 * URL-filter respekteras för närvarande inte när du väljer **Aktuella värden** för exporten.
 * Rapporter med ovanliga anpassade sidstorlekar kan ge problem i exportscenarier. För bästa resultat bör du överväga att byta till en standardstorlek för rapporten.
+* När du exporterar till PDF så används standardteckensnitt för rapporter med anpassade teckensnitt.
 
 ## <a name="next-steps"></a>Nästa steg
 [Skriva ut en rapport](end-user-print.md)

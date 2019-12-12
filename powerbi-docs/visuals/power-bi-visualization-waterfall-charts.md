@@ -7,15 +7,15 @@ featuredvideoid: maTzOJSRB3g
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/24/2019
+ms.date: 12/5/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: fedaa811c94a9e955d6ca10646bc546f60dc9b98
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 6abca661a1553bfabc3da35fe714ff9bced5555a
+ms.sourcegitcommit: 212fb4a46af3e434a230331f18456c6a49a408fd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73881949"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74907674"
 ---
 # <a name="waterfall-charts-in-power-bi"></a>Vattenfallsdiagram i Power BI
 
@@ -63,9 +63,11 @@ De här självstudierna använder sig av [PBIX-filen Exempel på detaljhandelsan
 
 Du ska skapa ett vattenfallsdiagram som visar försäljningsvarians (uppskattad försäljning jämfört med faktisk försäljning) per månad.
 
+### <a name="build-the-waterfall-chart"></a>Skapa vattenfallsdiagrammet
+
 1. Välj **Försäljning** > **Total försäljningsvarians** på panelen **Fält**.
 
-   ![Skärmbild av försäljning > Total försäljningsavvikelse vald och det resulterande visuella objektet.](media/power-bi-visualization-waterfall-charts/power-bi-first-value.png)
+   ![Skärmbild av försäljning > Total försäljningsavvikelse vald och det resulterande visuella objektet.](media/power-bi-visualization-waterfall-charts/power-bi-bar.png)
 
 1. Välj vattenfallsikonen ![Skärmbild av vattenfallsikonen](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-icon.png)
 
@@ -73,41 +75,45 @@ Du ska skapa ett vattenfallsdiagram som visar försäljningsvarians (uppskattad 
 
 1. Välj **Tid**  >  **FiscalMonth (Räkenskapsmånad)** och lägg till det i området **Kategori**.
 
-    ![vattenfall](media/power-bi-visualization-waterfall-charts/power-bi-waterfall.png)
+    ![vattenfall](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-month.png)
 
-1. Kontrollera att Power BI sorterade vattenfallsdiagrammet kronologiskt. Välj **Fler alternativ** (...) uppe till höger i diagrammet.
+### <a name="sort-the-waterfall-chart"></a>Sortera vattenfallsdiagrammet
 
-    I det här exemplet väljer vi **Sortera stigande**
+1. Se till att Power BI sorterar vattenfallsdiagrammet kronologiskt efter månad. Välj **Fler alternativ** (...) uppe till höger i diagrammet.
 
-    Kontrollera att det finns en gul indikator till vänster om alternativen **Sortera stigande**. Det här anger att ditt valda alternativ används.
+    I det här exemplet väljer du **Sortera efter** och sedan **FiscalMonth**. En gul indikator bredvid valet anger när urvalsalternativet används.
 
-    ![Välj att sortera efter > Stigande ordning](media/power-bi-visualization-waterfall-charts/power-bi-sort-by.png)
+    ![Välj att sortera efter > FiscalMonth (Räkenskapsmånad).](media/power-bi-visualization-waterfall-charts/power-bi-sort-by-fiscalmonth.png)
+    
+    Om du vill visa månaderna i kronologisk ordning väljer du **Sortera stigande**. Precis som i föregående steg kontrollerar du att det visas en gul indikator till vänster om **Sortera stigande**. Det här anger att ditt valda alternativ används.
 
-    Härnäst ska vi klicka på **Sortera efter** och välja **FiscalMonth** (Räkenskapsmånad) som i föregående steg, en gul indikator bredvid ditt val anger när ditt valda alternativ används.
+    ![Välj att sortera efter > Stigande ordning](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-ascending.png)
 
-    ![Välj att sortera efter > FiscalMonth (Räkenskapsmånad).](media/power-bi-visualization-waterfall-charts/power-bi-sort-by-fiscal-month.png)
+    
 
-    Du kan också titta på X-axelns värden och se att de är i ordning från **Jan** till **Aug**.
+    Observera att diagrammet sorteras från januari till augusti för FiscalMonth.  
 
-    Gräv lite djupare för att se vad som bidrar mest till ändringarna månad för månad.
+### <a name="explore-the-waterfall-chart"></a>Utforska vattenfallsdiagrammet
 
-1.  Välj **Butik** > **Område** som lägger till **Område** i bucketen **Detaljnivå**.
+Gräv lite djupare för att se vad som bidrar mest till ändringarna månad för månad.
+
+1.  Välj **Butik** > **Område**. Då läggs **Område** till i bucketen **Detaljnivå**.
 
     ![Visar butiken i bucketen Detaljnivå](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown.png)
 
-    Som standard lägger Power BI till de fem främsta bidragande faktorerna för ökning eller minskning per månad. Bilden nedan har expanderat visualiseringsfönstret så att den innehåller mer data. 
+    Power BI använder värdet i **Detaljnivå** för att lägga till ytterligare data i visualiseringen. Som standard läggs de fem främsta bidragande faktorerna för ökning eller minskning till per månad. Det innebär till exempel att februari nu har sex datapunkter i stället för bara en.  
 
-    ![Visar butiken i bucketen Detaljnivå](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown-initial.png)
+    ![Visar butiken i bucketen Detaljnivå](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown-default.png)
 
-    Du är bara intresserad av de två främsta.
+    Vi antar att du bara är intresserad av de två främsta faktorerna.
 
 1. Välj **Detaljnivå** på panelen **Format** och ange **Max uppdelningar** till **2**.
 
-    ![Format > Detaljnivå](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown-maximum.png)
+    ![Format > Detaljnivå](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown-two.png)
 
     En snabb genomgång visar att territorierna Ohio och Pennsylvania står för de största rörelserna, både negativa och positiva, i vårt vattenfallsdiagram.
 
-    ![vattenfallsdiagram](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-axis.png)
+    ![vattenfallsdiagram](media/power-bi-visualization-waterfall-charts/power-bi-axis-waterfall.png)
 
 ## <a name="next-steps"></a>Nästa steg
 

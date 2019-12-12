@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: ab84795ff5d140f23f19184bbc40e91133854f1f
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 37cbea42d530f05df1d9f1003554680b80c5b5c3
+ms.sourcegitcommit: 212fb4a46af3e434a230331f18456c6a49a408fd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876747"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74907967"
 ---
 # <a name="aggregations-in-power-bi-desktop"></a>Aggregeringar i Power BI Desktop
 
@@ -29,7 +29,7 @@ Följande lista innehåller fördelar med att använda **sammansättningar**:
 * **Få balanserad arkitektur** – Gör det möjligt för den minnesinterna cachelagringen i Power BI att hantera aggregerade frågor, vilket görs på ett effektivt sätt. Begränsa frågor som skickas till datakällan i DirectQuery-läge, vilket gör det lättare att hålla sig inom samtidighetsgränserna. Frågor som passerar igenom brukar vara filtrerade frågor på transaktionsnivå som informationslager och stordatasystem vanligtvis hanterar väl.
 
 ### <a name="table-level-storage"></a>Lagring på tabellnivå
-Lagring på tabellnivå används normalt med sammansättningsfunktionen. Läs artikeln [lagringsläge i Power BI Desktop](desktop-storage-mode.md) för mer information.
+Lagring på tabellnivå används normalt med sammansättningsfunktionen. Läs mer i artikeln om [lagringslägen i Power BI Desktop](desktop-storage-mode.md).
 
 ### <a name="data-source-types"></a>Typer av datakälla
 Sammansättningar används tillsammans med datakällor som representerar dimensionsmodeller, till exempel informationslager, data mart och Hadoop-baserade stordatakällor. Den här artikeln beskriver vanliga modelleringsskillnader i Power BI för varje typ av datakälla.
@@ -44,7 +44,7 @@ Fundera på följande modell, som är från en enskild datakälla. Vi antar att 
 
 ![tabeller i en modell](media/desktop-aggregations/aggregations_02.jpg)
 
-Istället skapar vi tabellen **Sales Agg** som en sammansättningstabell. Den är mer detaljerad än **Sales** så den kommer innehålla mycket färre rader. Antalet rader ska vara lika med summan av **SalesAmount** som grupperats efter **CustomerKey**, **Datekey** och **ProductSubcategoryKey**. Istället för flera miljarder rader kan det röra sig om miljontals rader, vilket är mycket enklare att hantera.
+Istället skapar vi tabellen **Sales Agg** som en sammansättningstabell. Den är mer detaljerad än **Sales** så den innehåller mycket färre rader. Antalet rader ska vara lika med summan av **SalesAmount** som grupperats efter **CustomerKey**, **Datekey** och **ProductSubcategoryKey**. Istället för flera miljarder rader kan det röra sig om miljontals rader, vilket är mycket enklare att hantera.
 
 Anta att följande dimensionstabeller är vanligast för frågor med högt affärsvärde. De är tabeller som kan filtrera **Sales Agg** med *en-till-många* (eller *många-till-en*)-relationer.
 
@@ -92,7 +92,7 @@ Det enda fallet där en *korskälla*-relation anses stark om bägge tabellerna �
 
 För *korskälla*-sammansättningsträffar som inte är beroende av relationer kan du se avsnittet nedan på sammansättningar baserade på gruppera efter-kolumner.
 
-### <a name="aggregation-tables-are-not-addressable"></a>Aggregeringstabeller är inte adresserbara
+### <a name="aggregation-tables-arent-addressable"></a>Aggregeringstabeller är inte adresserbara
 Användare med skrivskyddad åtkomst till datamängden kan inte köra frågor mot aggregeringstabeller. Detta förhindrar säkerhetsproblem vid användning med RLS. Konsumenter och frågor refererar till detaljtabellen, inte till sammansättningstabellen. De behöver inte ens veta att sammansättningstabellen finns.
 
 Av den här anledningen bör tabellen **Sales Agg** vara dold. Om den inte är det kommer dialogrutan Hantera aggregeringar att dölja den när du klickar på knappen Tillämpa alla.
@@ -125,7 +125,7 @@ I listrutan för sammanfattning kan du välja mellan följande.
 Följande viktiga valideringar tillämpas av dialogrutan:
 
 * Informationskolumnen som har valts måste ha samma datatyp som sammansättningskolumnen förutom sammanfattningsfunktioner för Antal och Antal tabellrader. Antal och Antal tabellrader erbjuds endast för heltalskolumner för sammansättning och kräver inte en matchande datatyp.
-* Länkade sammansättningar som omfattar tre eller flera tabeller är inte tillåtna. Det går till exempel inte att ställa in sammansättningar i **Tabell A** som refererar till **Tabell B** som har sammansättningar som refererar till **Tabell C**.
+* Länkade sammansättningar som omfattar tre eller flera tabeller är inte tillåtna. Du kan till exempel inte ställa in sammansättningar i **Tabell A** som refererar till **Tabell B** som har sammansättningar som refererar till **Tabell C**.
 * Duplicerade sammansättningar där två poster använder samma sammanfattningsfunktion och hänvisar till samma informationstabell/kolumn är inte tillåtna.
 * Informationstabellen måste vara DirectQuery, inte Import.
 
@@ -138,7 +138,7 @@ De flesta valideringar tillämpas genom att inaktivera listrutevärden och visa 
 I det här exemplet är de tre GroupBy-posterna valfria. De påverkar inte sammansättningsbeteendet (förutom för exempelfrågan DISTINCTCOUNT, vilket visas på nästa bild). De ingår för att förbättra läsbarheten. Utan dessa GroupBy-poster skulle sammansättningarna fortfarande användas utifrån relationer. Det här är annorlunda jämfört med att använda sammansättningar utan relationer, vilket visas i exemplet med stordata som tas upp senare i den här artikeln.
 
 ### <a name="inactive-relationships"></a>Inaktiva relationer
-Gruppering efter en sekundärnyckelkolumn som används av en inaktiv relation och förlitar sig på USERELATIONSHIP-funktionen för aggregeringsträffar stöds inte.
+Du kan inte gruppera efter en sekundärnyckelkolumn som används i en inaktiv relation och där funktionen USERELATIONSHIP används för aggregeringsträffar.
 
 ### <a name="detecting-whether-aggregations-are-hit-or-missed-by-queries"></a>Identifiera om sammansättningar används eller missas av frågor
 
@@ -161,7 +161,7 @@ Följande fråga använder sammansättningen eftersom kolumner i tabellen *Date*
 
 ![frågeexempel](media/desktop-aggregations/aggregations-code_02.jpg)
 
-Följande fråga träffar inte sammansättningen. Trots att summan av **SalesAmount** begärs så utför den en gruppera efter-åtgärd på en kolumn i **Produkt**-tabellen, som inte har den kornighet som kan träffa sammansättningen. Om du ser relationerna i modellen kan en produktunderkategori ha flera **Produkt**-rader. Frågan kan inte avgöra vilka produkter som den ska sammanställa till. I det här fallet återgår frågan till DirectQuery och skickar en SQL-fråga till datakällan.
+Följande fråga träffar inte sammansättningen. Trots att summan av **SalesAmount** begärs så utför den en gruppera efter-åtgärd på en kolumn i tabellen **Produkt**, som inte har den kornighet som kan träffa sammansättningen. Om du ser relationerna i modellen kan en produktunderkategori ha flera **Produkt**-rader. Frågan kan inte avgöra vilka produkter som den ska sammanställa till. I det här fallet återgår frågan till DirectQuery och skickar en SQL-fråga till datakällan.
 
 ![frågeexempel](media/desktop-aggregations/aggregations-code_03.jpg)
 
@@ -184,9 +184,9 @@ I vissa fall kan funktionen DISTINCTCOUNT använda sammansättningar. Följande 
 ### <a name="rls"></a>RLS
 RLS-uttryck (säkerhet på radnivå) bör filtrera både aggregeringstabellen och detaljtabellen för att fungera korrekt. Enligt exemplet fungerar ett RLS-uttryck i tabellen **Geografi** eftersom Geografi är på filtreringssidan för relationer med både tabellen **Försäljning** och tabellen **Försäljningssammanfattning**. RLS tillämpas korrekt på frågor som träffar aggregeringstabellen och dem som inte gör det.
 
-![roller för aggregeringshantering](media/desktop-aggregations/manage-roles.jpg)
+![roller för aggregeringshantering](media/desktop-aggregations/manage-roles.png)
 
-Ett RLS-uttryck i tabellen **Produkt** skulle endast filtrera tabellen **Försäljning**, inte tabellen **Sales Agg**. Detta rekommenderas ej. Frågor som skickats av användare som kommer åt datamängden via den här rollen tar inte del av aggregeringsträffar. Eftersom aggregeringstabellen är en annan representation av samma data i detaljtabellen skulle det inte vara säkert att besvara frågor från aggregeringstabellen eftersom RLS-filtret inte kan tillämpas.
+Ett RLS-uttryck i tabellen **Produkt** skulle endast filtrera tabellen **Försäljning**, inte tabellen **Sales Agg**. Det här rekommenderas inte. Frågor som skickats av användare som kommer åt datamängden via den här rollen tar inte del av aggregeringsträffar. Eftersom aggregeringstabellen är en annan representation av samma data i detaljtabellen skulle det inte vara säkert att besvara frågor från aggregeringstabellen eftersom RLS-filtret inte kan tillämpas.
 
 Ett RLS-uttryck i själva tabellen **Sales Agg** skulle endast filtrera aggregeringstabellen, inte detaljtabellen. Detta är inte tillåtet.
 
@@ -285,7 +285,7 @@ Följande fråga för tidsinformation använder inte sammansättningen eftersom 
 
 ## <a name="caches-should-be-kept-in-sync"></a>Cacheminnen bör hållas synkroniserade
 
-**Sammansättningar** som kombinerar DirectQuery och Import och/eller dubbelt lagringsläge kan returnera olika data om den minnesinterna cachen inte är synkroniserad med källdata. Frågekörningen försöker inte maskera dataproblem genom att t.ex. filtrera DirectQuery-resultat för att matcha cachelagrade värden. Dessa funktioner är för prestandaoptimering och bör endast användas på sätt som inte äventyrar möjligheten att uppfylla verksamhetskraven. Det är ditt ansvar att känna till dina dataflöden, så kontrollera utformningen. Det finns etablerade tekniker för att hantera sådana problem vid källan, om så behövs.
+**Sammansättningar** som kombinerar DirectQuery och Import och/eller dubbelt lagringsläge kan returnera olika data om den minnesinterna cachen inte är synkroniserad med källdata. Frågekörningen försöker inte maskera dataproblem genom att t.ex. filtrera DirectQuery-resultat för att matcha cachelagrade värden. Dessa funktioner är för prestandaoptimering och bör endast användas på sätt som inte äventyrar möjligheten att uppfylla verksamhetskraven. Det är ditt ansvar att känna till dina dataflöden, så anpassa designen efter dem. Det finns etablerade tekniker för att hantera sådana problem vid källan, om så behövs.
 
 ## <a name="next-steps"></a>Nästa steg
 

@@ -7,16 +7,18 @@ featuredvideoid: 9DeAKM4SNJM
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/4/2019
+ms.date: 12/3/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 393f6f25fedddd9ff17d635ae67ce473ab57eea4
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: bafcf3a754c58a040595279f93d885e8f317195e
+ms.sourcegitcommit: 90bd747b7c460d17b74cd386d3f5714234b1f6c9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880924"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74791789"
 ---
+- var är bruttomarginalraden för årsprocenten? Jag kan ha flera stapeldiagram men inte flera rader.
+
 # <a name="customize-x-axis-and-y-axis-properties"></a>Anpassa egenskaper för x-axeln och y-axeln
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
@@ -115,7 +117,7 @@ När X-axelns rubrik är **På** visas den under etiketterna på X-axeln.
 
     - **Axelrubrik**: Skriv *Räkenskapsmånad*
 
-    - **Storlek för rubriktext** : Ange *18*
+    - **Storlek för rubriktext **: Ange *18*
 
     När du är klar med anpassningarna ser det stående stapeldiagrammet ut ungefär så här:
 
@@ -171,7 +173,7 @@ Vissa visualiseringar kan bli bättre med två Y-axlar. Kombinationsdiagram är 
 
 ### <a name="create-a-chart-with-two-y-axes"></a>Skapa ett diagram med två Y-axlar
 
-1. Välj stapeldiagrammet och ändra det till ett *Linjediagram och stående stapeldiagram*. 
+1. Välj stapeldiagrammet och ändra det till ett *Linjediagram och stående stapeldiagram*. Den här typen av visualisering har stöd för ett enda linjediagramsvärde och flera staplade kolumnvärden. 
 
     ![Skärmbild av fönstret Visualiseringar med linje- och det staplade kolumndiagrammet framhävt.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-combo.png)
    
@@ -185,7 +187,7 @@ Vissa visualiseringar kan bli bättre med två Y-axlar. Kombinationsdiagram är 
 
    ![Kombinationsdiagram och formatfönster med teckenstorleken minskad till 12](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-font-size.png)
 
-   Power BI skapar två Y-axlar, vilket gör att värdena kan skalas på olika sätt. Den vänstra mäter försäljningen i dollar och den högra procentandelen.
+   Power BI skapar två Y-axlar, vilket gör att värdena kan skalas på olika sätt. Den vänstra axeln mäter försäljningen i dollar och den högra procentandelen av bruttomarginalen.
 
 ### <a name="format-the-second-y-axis"></a>Formatera den andra Y-axeln
 Eftersom vi började med en visualisering med en formaterad Y-axel, skapade Power BI den andra Y-axeln med samma inställningar. Men vi kan ändra det. 
@@ -204,7 +206,7 @@ Eftersom vi började med en visualisering med en formaterad Y-axel, skapade Powe
 
 I en så komplicerad visualisering underlättar det med axelrubriker.  Med titlar kan dina kollegor förstå vad ditt visuella objekt försöker berätta.
 
-1. Växla **Rubrik** till **På** för **Y-axeln (kolumn)** och **X-axeln (rad)** .
+1. Växla **Rubrik** till **På** för **Y-axeln (kolumn)** och **X-axeln (rad)**.
 
 1. Ange **Stil** till **Visa enbart rubrik** för båda.
 

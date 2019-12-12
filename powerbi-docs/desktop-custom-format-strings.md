@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/11/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 1c1f049f8ba8c7808001b8566b1d10424a1b2ed1
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 3ec372a51177e5979cdfbca8408e11801aefb414
+ms.sourcegitcommit: 90bd747b7c460d17b74cd386d3f5714234b1f6c9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878357"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74791597"
 ---
 # <a name="use-custom-format-strings-in-power-bi-desktop"></a>Använd anpassade formatsträngar i Power BI Desktop
 
@@ -51,7 +51,6 @@ Följande tabell visar **datumsymboler** som stöds:
 | _mm_ | 1-12 (månad, med inledande nolla, från och med januari = 1) |
 | _mmm_ | Visar förkortade månadsnamn (Hijri-månadsnamn har inga förkortningar) |
 | _mmmm_ | Visar fullständiga månadsnamn |
-| _y_ | 1-366 (Dag på året) |
 | _yy_ | 00-99 (årets två sista siffror) |
 | _yyyy_ | 100-9999 (tre eller fyrsiffriga årtal) |
 
@@ -121,7 +120,6 @@ Följande tabell visar tecken som du kan använda för att skapa **användardefi
 | mm | Månaden visas som ett tal med inledande nolla (01-12). Om m omedelbart följer h eller hh visas minuten i stället för månaden. |
 | mmm | Månaden visas som en förkortning (jan till dec). Lokaliserad. |
 | mmmm | Månaden visas som ett fullständigt namn (januari–december). Lokaliserad. |
-| y | Visa dagen på året som en siffra (1–366). |
 | yy | Visar året som ett tvåsiffrigt värde (00–99). |
 | yyyy | Visar året som ett fyrsiffrigt värde (100–9999). |
 | h | Visar timmen som ett tal utan inledande nolla (0–23). |
@@ -146,7 +144,7 @@ Följande tabell visar tecken som du kan använda för att skapa **användardefi
 | ( **/** ) | Datumavgränsare. I vissa språk kan andra tecken användas för att representera datumavgränsaren. Datumavgränsaren separerar dag, månad och år när datumvärden formateras. Det faktiska tecknet som används som datumavgränsare i formaterade utdata bestäms av systeminställningarna. |
 | ( **E- E+ e- e+** ) | Vetenskapligt format. Om formatuttrycket innehåller minst en platshållare för siffror ( **0** eller **#** ) till höger om E-, E+, e- eller e+ visas talet i exponentiellt format och E eller e infogas mellan talet och dess exponent. Antalet platshållare för siffror till höger avgör antalet siffror i exponenten. Använd E- eller e- för att placera ett minustecken intill negativa exponenter. Använd E+ eller e+ för att placera ett minustecken intill negativa exponenter och ett plustecken intill positiva exponenter. |
 | **- + $**  ( ) | Visa ett litteralt tecken. Om du vill visa ett annat tecken än de som anges i listan skriver du ett omvänt snedstreck (\) eller omger det med dubbla citattecken (&quot; &quot;). |
-| ( * *\** ) | Visa nästa tecken i formatsträngen. Om du vill visa ett tecken som har en speciell innebörd som ett litteralt tecken skriver du ett omvänt snedstreck (\). Det omvända snedstrecket visas inte. Att använda ett omvänt snedstreck är detsamma som att omsluta nästa tecken inom dubbla citattecken. Om du vill visa ett omvänt snedstreck använder du två omvända snedstreck (\\). Exempel på tecken som inte kan visas som litteralaterala tecken är tecken för datum- och tidformat (a, c, d, h, m, n, p, q, s, t, w, y, /, och:), de numeriska tecknen (#, 0, %, E, e, komma och punkt) och strängformateringstecken (@, &amp;, \&lt;, \&gt; och !). |
+| ( * *\** ) | Visa nästa tecken i formatsträngen. Om du vill visa ett tecken som har en speciell innebörd som ett litteralt tecken skriver du ett omvänt snedstreck (\). Det omvända snedstrecket visas inte. Att använda ett omvänt snedstreck är detsamma som att omsluta nästa tecken inom dubbla citattecken. Om du vill visa ett omvänt snedstreck använder du två omvända snedstreck (\\). Exempel på tecken som inte kan visas som literaler är tecken för datum- och tidformat (a, c, d, h, m, n, p, q, s, t, w, / och :), tecken för numeriska format (#, 0, %, E, e, komma och punkt) och strängformateringstecken (@, &amp;, \&lt;, \&gt; och !). |
 | (&quot;ABC&quot;) | Visa strängen innanför dubbla citattecken (&quot; &quot;). |
 
 

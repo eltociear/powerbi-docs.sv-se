@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 91acaa3a2252250e2a10674bae0e9be81f142696
-ms.sourcegitcommit: f1f57c5bc6ea3057007ed8636ede50188ed90ce1
+ms.openlocfilehash: c20a366ef657e851ef77a9649dbcc8b66b67dac0
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74410943"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74695207"
 ---
 # <a name="dax-divide-function-vs-divide-operator-"></a>DAX: Funktionen DIVIDERA jämfört med divisionsoperatorn (/)
 
@@ -25,7 +25,7 @@ När du använder funktionen DIVIDERA måste du ange uttryck för täljare och n
 DIVIDE(<numerator>, <denominator> [,<alternateresult>])
 ```
 
-Funktionen DIVIDERA har utformats för att automatiskt kunna hantera division med noll. Om ett alternativt resultat inte anges och nämnaren är noll eller TOM, returnerar funktionen TOM. Om ett alternativt resultat har angetts returneras det resultatet i stället för TOM.
+Funktionen DIVIDERA har utformats för att automatiskt kunna hantera division med noll. Om ett alternativt resultat inte anges och nämnaren är noll eller TOM, returnerar funktionen TOM. När ett alternativt resultat anges returneras det resultatet i stället för TOM.
 
 Funktionen DIVIDERA är praktisk eftersom uttrycket inte behöver testa värdet för nämnaren först. Funktionen är också bättre optimerad för testning av nämnarvärdet än funktionen [OM](/dax/if-function-dax). Prestandaförbättringen är avsevärd eftersom det är dyrt att kontrollera för division med noll. Att använda DIVIDERA resulterar i ett mer tydligt och elegant uttryck.
 
@@ -58,7 +58,7 @@ Vi rekommenderar att du använder funktionen DIVIDERA när nämnaren är ett utt
 
 Om nämnaren är ett konstant värde rekommenderar vi att du använder divisionsoperatorn. I det här fallet kommer divisionen garanterat att lyckas och ditt uttryck fungerar bättre eftersom det inte behöver genomföra någon onödig testning.
 
-Du bör noga överväga om DIVIDERA-funktionen ska returnera ett alternativt värde. För mått är det vanligtvis bättre att de returnerar TOM. Att returnera TOM är bättre eftersom rapportvisualiseringar, som standard, eliminerar grupperingar när summeringarna är TOM. Det gör att det visuella objektet kan fokusera på grupper där det finns data. Vid behov kan du konfigurera det visuella objektet så att det visar alla grupper (som returnerar värden eller TOM) i filterkontexten genom att aktivera alternativet ”Visa poster utan data”.
+Du bör noga överväga om DIVIDERA-funktionen ska returnera ett alternativt värde. För mått är det vanligtvis en bättre design att de returnerar TOM när det inte går att utvärdera något meningsfullt resultat. Mer information finns i [Undvik att omvandla tomma värden till värden](dax-avoid-converting-blank.md).
 
 ## <a name="next-steps"></a>Nästa steg
 

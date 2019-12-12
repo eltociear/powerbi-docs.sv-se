@@ -9,12 +9,12 @@ ms.topic: reference
 ms.date: 09/09/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b28c56433e27794798f2907f0d780002db96b2f7
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: c6c3ccdc547a8e9fb4e2d471365c9da67f7cf58a
+ms.sourcegitcommit: 90bd747b7c460d17b74cd386d3f5714234b1f6c9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878062"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74791310"
 ---
 # <a name="power-bi-desktop-privacy-levels"></a>Sekretessnivåer i Power BI Desktop
 I **Power BI Desktop**, anger sekretessnivåer en isoleringsnivå som definierar hur en datakälla isoleras från andra datakällor. Även om en begränsande isoleringsnivå blockerar information från att utbytas mellan datakällor, kan det minska funktionaliteten och påverka prestandan.
@@ -44,7 +44,7 @@ Om du vill konfigurera en sekretessnivå för datakällan, väljer du datakälla
 > 
 
 ## <a name="configure-privacy-levels"></a>Konfigurera sekretessnivåer
-**Sekretessnivåer** är en inställning som har angetts till att **Kombinera data enligt dina sekretessnivåinställningar för varje källa** som standard, vilket innebär att **Sekretessnivåer** inte har aktiverats.
+**Sekretessnivåer** är som standard inställda som **Kombinera data enligt dina sekretessnivåinställningar för varje källa**, vilket innebär att **Sekretessnivåer** tillämpas.
 
 | Inställning | Beskrivning |
 | --- | --- |

@@ -5,14 +5,14 @@ author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/19/2019
+ms.date: 11/19/2019
 ms.author: mohaali
-ms.openlocfilehash: 78a74d2d49ac9eabb7d63f467c9838d370d5c314
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 9805b98df7f606e61412ca9dee7dc0467a1649a3
+ms.sourcegitcommit: 90bd747b7c460d17b74cd386d3f5714234b1f6c9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870848"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74791817"
 ---
 # <a name="introduction-to-power-bi-qa-visual"></a>Introduktion till Visuella frågor och svar i Power BI
 
@@ -93,6 +93,10 @@ Om du är osäker på vilken typ av frågor du ska ställa eller vilken terminol
 6. Nu ska vi ändra det visuella objektet till ett kolumndiagram. 
 
     ![Visuella frågor och svar med ”som kolumndiagram” tillagt i frågan](media/power-bi-visualization-q-and-a/power-bi-specify-visual.png)
+
+7.  Lägg till fler visuella objekt på rapportsidan och se hur Q&A-objektet interagerar med de andra visuella objekten på sidan. I det här exemplet har Q&A-objektet korsfiltrerat linjediagrammet och kartan, och korsmarkerat stapeldiagrammet.
+
+    ![Q&A-objekt med en stapel markerad och påverkan på de andra tre visuella objekten på rapportsidan](media/power-bi-visualization-q-and-a/power-bi-filters.png)
 
 ## <a name="format-and-customize-the-qa-visual"></a>Formatera och anpassa Visuella frågor och svar-objektet
 Du kan anpassa Visuella frågor och svar-objekt i formateringsrutan och genom att använda ett tema. 

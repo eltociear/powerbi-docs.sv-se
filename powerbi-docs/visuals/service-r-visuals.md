@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/14/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b947fe3f2faf423a7b2ced4d0032578ded015f7a
-ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
+ms.openlocfilehash: efbeda396217c1a715f9a5d7ae4827c5f8d09a25
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099903"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74699002"
 ---
 # <a name="r-visuals-in-power-bi"></a>Visuella R-objekt i Power BI
 Visuella R-objekt kan för närvarande kan bara skapas i **Power BI Desktop**, och sedan publiceras i Power BI-tjänsten. Läs mer om hur du skapar visuella R-objekt i [Skapa visuella Power BI-objekt med R](../desktop-r-visuals.md).
@@ -94,6 +94,11 @@ Visuella R-objekt i Power BI-tjänsten har några begränsningar:
 * Visuella R-objekt visas inte när du använder **Publicera på webben**.
 * Visuella R-objekt skrivs för närvarande inte ut med utskrift av instrumentpanel och rapporter
 * Visuella R-objekt stöds för närvarande inte i Analysis Services i DirectQuery-läge
+* Visuella R-objekt kan konvertera textetiketter till grafiska element. Om du gör det i Power BI-tjänsten måste du utföra följande ytterligare steg:
+  
+  * Lägg sedan till följande rad i början av R-skriptet:
+    
+        powerbi_rEnableShowText =  1
 * Kinesiska, japanska och koreanska teckensnitt kräver alla följande extra steg för att fungera i Power BI-tjänsten:
   
   * Installera först R-paketet *showtext* och alla dess beroenden. Du kan göra detta genom att köra följande skript:

@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 5f5e4769c750406a02ead656af551133fbceb738
-ms.sourcegitcommit: f7b28ecbad3e51f410eff7ee4051de3652e360e8
+ms.openlocfilehash: 94a1af90cc7ed08947f65f4ed0d55e981558d049
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74061901"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74696452"
 ---
 # <a name="add-interactivity-into-visual-by-power-bi-visuals-selections"></a>Lägga till interaktivitet i visuella objekt med Power BI-markeringar
 
@@ -35,11 +35,11 @@ export interface ISelectionId {
 
 ## <a name="how-to-use-selectionmanager-to-select-data-points"></a>Så här använder du SelectionManager till att markera datapunkter
 
-Det visuella värdobjektet innehåller en metod för att skapa instanser av markeringshanteraren. Markeringshanteraren är ansvarig för att markera, ta bort markeringar, visa snabbmenyn, lagra aktuella markeringar och kontrollera markeringsstatusen. Markeringshanteraren innehåller dessutom motsvarande metoder för dessa åtgärder.
+Det visuella värdobjektet har en metod för att skapa instanser av urvalshanteraren. Urvalshanteraren ansvarar för att välja, rensa val, visa snabbmenyn, lagra aktuella val och kontrollera urvalsstatusen. Urvalshanteraren har motsvarande metoder för dessa åtgärder.
 
-### <a name="create-instance-of-selection-manager"></a>Skapa en instans av markeringshanteraren
+### <a name="create-an-instance-of-the-selection-manager"></a>Skapa en instans av urvalshanteraren
 
-När du använder markeringshanteraren måste du skapa en instans av den. Visuella objekt skapar vanligtvis en instans av markeringshanteraren i `constructor` för det visuella objektet.
+När du ska använda urvalshanteraren måste du skapa en instans av den. Visuella objekt skapar vanligtvis en instans av urvalshanteraren i `constructor`-metoden för det visuella objektet.
 
 ```typescript
 export class Visual implements IVisual {
@@ -56,7 +56,7 @@ export class Visual implements IVisual {
 }
 ```
 
-### <a name="create-instance-of-selection-builder"></a>Skapa en instans av markeringsverktyget
+### <a name="create-an-instance-of-the-selection-builder"></a>Skapa en instans av urvalshanteraren
 
 När instansen för markeringshanteraren har skapats, måste du skapa `selections` för varje datapunkt i det visuella objektet. Det visuella värdobjektet innehåller metoden `createSelectionIdBuilder` där du kan generera markeringar för varje datapunkt. Den här metoden returnerar en instans av objektet med gränssnittet `powerbi.visuals.ISelectionIdBuilder`:
 
@@ -71,15 +71,15 @@ export interface ISelectionIdBuilder {
 }
 ```
 
-Objektet innehåller motsvarande metoder för att skapa `selections` för olika typer av datavymappningar.
+Objektet har motsvarande metoder för att skapa `selections` för olika typer av datavymappningar.
 
 > [!NOTE]
-> Metoderna `withTable` och `withMatrixNode` lanserades i API 2.5.0 för visuella Power BI-objekt.
-> Om du behöver använda markeringar i datavymappningar för tabeller eller matriser, måste du uppdatera API-versionen till 2.5.0 eller högre.
+> Metoderna `withTable` och `withMatrixNode` introducerades i API-version 2.5.0 för visuella Power BI-objekt.
+> Om du behöver använda urval i datavymappningar för tabeller eller matriser måste du uppdatera till API-version 2.5.0 eller senare.
 
 ### <a name="create-selections-for-categorical-data-view-mapping"></a>Skapa markeringar för mappning av kategoriska datavyer
 
-Vi ska se hur markeringar visas i mappningen av kategoriska datavyer i exempeldatamängden:
+Vi ska se hur urval visas i mappningen av kategoriska datavyer i exempeldatamängden:
 
 | Tillverkare | Typ | Värde |
 | - | - | - |
@@ -108,7 +108,7 @@ Vi ska se hur markeringar visas i mappningen av kategoriska datavyer i exempelda
 | Toyota | Importerad bil | 20799 |
 | Toyota | Importerad lastbil | 23614 |
 
-Och det visuella objektet använder följande mappning av datavyn:
+Det visuella objektet använder följande mappning av datavyn:
 
 ```json
 {
@@ -155,11 +155,11 @@ Och det visuella objektet använder följande mappning av datavyn:
 }
 ```
 
-I exemplet är `Manafacturer` `columns` och `Type` är `rows`. Det finns serier som skapats med grupperade värden av `rows` (`Type`).
+I exemplet är `Manufacturer` `columns` och `Type` är `rows`. Det finns serier som skapats med grupperade värden av `rows` (`Type`).
 
-Och det visuella objektet ska kunna segmentera data från `Manafacturer` och `Type`.
+Och det visuella objektet ska kunna segmentera data från `Manufacturer` och `Type`.
 
-När användaren exempelvis väljer `Chrysler` i `Manafacturer`, bör andra visuella objekt visa följande data:
+När användaren exempelvis väljer `Chrysler` i `Manufacturer`, bör andra visuella objekt visa följande data:
 
 | Tillverkare | Typ | Värde |
 | - | - | - |
@@ -185,10 +185,10 @@ De visuella datakorgarna måste fyllas i.
 
 ![Datakorgar i det visuella objektet med markeringar](media/visual-selections-databuckets.png)
 
-Det finns `Manafacturer` som kategori (kolumner), `Type` som serier (rader) och `Value` som `Values` för serier.
+Det finns `Manufacturer` som kategori (kolumner), `Type` som serier (rader) och `Value` som `Values` för serier.
 
 > [!NOTE]
-> `Values` krävs för serier, eftersom enligt mappningen av datavyer förväntar sig det visuella objektet att `Values` kommer att grupperas av `Rows`-data.
+> `Values` krävs för serier eftersom mappningen av datavyer gör att det visuella objektet förväntar sig att `Values` grupperas enligt `Rows`-data.
 
 #### <a name="create-selections-for-categories"></a>Skapa markeringar för kategorier
 
@@ -196,7 +196,7 @@ Det finns `Manafacturer` som kategori (kolumner), `Type` som serier (rader) och 
 // categories
 const categories = dataView.categorical.categories;
 
-// create label for 'Manafacturer' column
+// create label for 'Manufacturer' column
 const p = document.createElement("p") as HTMLParagraphElement;
 p.innerText = categories[0].source.displayName.toString();
 this.target.appendChild(p);
@@ -209,7 +209,7 @@ for (let categoryIndex = 0; categoryIndex < categoriesCount; categoryIndex++) {
     const categoryValue: powerbi.PrimitiveValue = categories[0].values[categoryIndex];
 
     const categorySelectionId = this.host.createSelectionIdBuilder()
-        .withCategory(categories[0], categoryIndex) // we have only one category (only one `Manafacturer` column)
+        .withCategory(categories[0], categoryIndex) // we have only one category (only one `Manufacturer` column)
         .createSelectionId();
     this.dataPoints.push({
         value: categoryValue,
@@ -229,9 +229,9 @@ for (let categoryIndex = 0; categoryIndex < categoriesCount; categoryIndex++) {
 }
 ```
 
-I exempelkoden kan du se att vi itererar alla kategorier. I varje iteration anropar vi `createSelectionIdBuilder` för att skapa nästa markering för varje kategori, genom att anropa `withCategory`-metoden för markeringsverktyget. Metoden `createSelectionId` används som en slutgiltig metod för att returnera genererade `selection`-objekt.
+I exempelkoden kan du se att vi itererar över alla kategorier. I varje iteration anropar vi `createSelectionIdBuilder` för att skapa nästa urval för varje kategori, genom att anropa metoden `withCategory` i urvalsverktyget. Metoden `createSelectionId` används som slutmetod för att returnera det genererade `selection`-objektet.
 
-I `withCategory`-metoden skickar vi kolumnen `category`, i det exempel är den `Manafacturer`, samt indexet för kategorielementet.
+I metoden `withCategory` skickar vi kolumnen `category`, i exemplet är det `Manufacturer` och kategorielementets index.
 
 #### <a name="create-selections-for-series"></a>Skapa markeringar för serier
 
@@ -295,7 +295,7 @@ Exempel på mappning av tabelldatavyer
 }
 ```
 
-Om du vill skapa en markering för varje rad i mappningen av tabelldatavyn, måste du anropa `withTable`-metoden i markeringsverktyget.
+Om du vill skapa ett urval för varje rad i mappningen av tabelldatavyn måste du anropa metoden `withTable` i urvalsverktyget.
 
 ```typescript
 public update(options: VisualUpdateOptions) {
@@ -309,7 +309,7 @@ public update(options: VisualUpdateOptions) {
 }
 ```
 
-Den visuella koden itererar raderna i tabellen och varje rad anropar tabellmetoden `withTable`. Parametrarna i `withTable`-metoden är `table`-objekt och index för tabellraden.
+Den visuella koden itererar över raderna i tabellen och varje rad anropar tabellmetoden `withTable`. Parametrarna i `withTable`-metoden är `table`-objekt och index för tabellraden.
 
 ### <a name="create-selections-for-matrix-data-view-mapping"></a>Skapa markeringar för mappning av matrisdatavyer
 
@@ -336,13 +336,13 @@ public update(options: VisualUpdateOptions) {
 }
 ```
 
-I exemplet anropar `nodeWalker` rekursivt varje nod och underordnade noder.
+I exemplet anropar `nodeWalker` rekursivt varje nod samt underordnade noder.
 
 `nodeWalker` skapar `nodeSelection`-objekt vid varje anrop. Varje `nodeSelection` utgör en `selection` av motsvarande noder.
 
 ## <a name="select-datapoints-to-slice-other-visuals"></a>Välja datapunkter för att segmentera andra visuella objekt
 
-I exempelkoderna för markering av kategorisk datavymappning, såg du att vi skapade klickhanterare för knappelement. Hanteraren anropar `select`-metoden i markeringshanteraren och skickar markeringsobjekt.
+I exempelkoden med urval för mappning av kategoridatavyer såg du att vi skapade klickhanterare för knappelement. Hanteraren anropar metoden `select` i urvalshanteraren och skickar urvalsobjektet.
 
 ```typescript
 button.addEventListener("click", () => {
@@ -361,9 +361,9 @@ interface ISelectionManager {
 }
 ```
 
-Du kan se att `select` kan acceptera en matris med markeringar. Det innebär att ditt visuella objekt kan välja flera datapunkter. Med den andra parametern `multiSelect` kan du markera flera. Om värdet är sant tar Power BI inte bort föregående markeringsstatus utan tillämpar aktuell markering, annars kommer föregående markering att återställas.
+Du ser att `select` kan ta emot en array med urval. Det innebär att ditt visuella objekt kan välja flera datapunkter. Den andra parametern `multiSelect` hanterar flera urval. Om värdet är true så rensar inte Power BI föregående urvalsstatus utan tillämpar aktuellt urval, annars återställs föregående urval.
 
-Ett vanligt scenario där `multiSelect`-hantering av CTRL-knappens status används på klickhändelsen.
+Ett vanligt scenario är att `multiSelect` hanterar tillståndet för Ctrl-knappen vid klickhändelser.
 
 ```typescript
 button.addEventListener("click", (mouseEvent) => {
@@ -374,7 +374,7 @@ button.addEventListener("click", (mouseEvent) => {
 
 ## <a name="next-steps"></a>Nästa steg
 
-* [Läs om hur du använder markeringar till att binda visuella egenskaper till datapunkter](objects-properties.md#objects-selector)
+* [Läs om hur du använder urval till att binda visuella egenskaper vid datapunkter](objects-properties.md#objects-selector)
 
 * [Läs om hur du hanterar markeringar när du växlar mellan bokmärken](bookmarks-support.md#visuals-with-selection)
 

@@ -1,21 +1,21 @@
 ---
 title: Felsöka datakälla utan stöd för uppdatering
 description: Felsöka datakälla utan stöd för uppdatering
-author: mgblythe
+author: maggiesMSFT
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: troubleshooting
 ms.date: 12/06/2017
-ms.author: mblythe
+ms.author: maggies
 ms.custom: seodec18
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: b44dbc06c15a576174277695583f3afebb0f298a
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: e3fe8626001972acc0b7555f37844b5abb62753b
+ms.sourcegitcommit: 90bd747b7c460d17b74cd386d3f5714234b1f6c9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73856273"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74791994"
 ---
 # <a name="troubleshooting-unsupported-data-source-for-refresh"></a>Felsöka datakälla utan stöd för uppdatering
 Du kan se ett fel vid försök att konfigurera en datauppsättning för schemalagd uppdatering.
@@ -35,7 +35,7 @@ Om du inte är säker på vilken datakälla som användes, kan du hitta den med 
    ![Avancerad redigerare](media/service-admin-troubleshoot-unsupported-data-source-for-refresh/tshoot-advanced-editor.png)
 4. Anteckna providern som är angiven för datakällan i listan.  I det här exemplet är providern ActiveDirectory.  
    ![Datakällprovider](media/service-admin-troubleshoot-unsupported-data-source-for-refresh/tshoot-provider.png)
-5. Jämför providern med listan över stödda datakällor som finns i [Refresh data in Power BI (Uppdatera data i Power BI)](refresh-data.md).  Du kommer märka att Active Directory inte är en datakälla som stöds för uppdatering.  
+5. Jämför providern med listan över de datakällor som stöds i [Power BI-datakällor](power-bi-data-sources.md).
 
 ## <a name="next-steps"></a>Nästa steg
 [Datauppdatering](refresh-data.md)  

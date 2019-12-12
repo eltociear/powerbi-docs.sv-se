@@ -1,42 +1,40 @@
 ---
 title: Det går inte att kontakta supporten för Power BI
 description: Lösningar för att skapa ett Power BI-fall om en användare inte kan logga in
-author: mgblythe
-ms.author: mblythe
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 03/12/2019
-ms.openlocfilehash: 37bb189f7792410ffdef30e79d36f94cc85478b4
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: b65cf23e37773861d41b037b0f45c430224f1930
+ms.sourcegitcommit: 9a265d8117cc202f5f700286b5ff42a631aacdb4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73874598"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74882862"
 ---
 # <a name="troubleshooting-sign-in-issues-for-power-bi"></a>Felsöka inloggningsproblem i Power BI
 
-Den här artikeln beskriver hur du får [hjälp](https://powerbi.microsoft.com/support/) när du har problem med Power BI-inloggning.
+I den här artikeln beskrivs hur administratörer kan kontakta supporten om problem med inloggning i Power BI. Om du är Power BI-användare och har inloggningsproblem ska du först kontakta organisationens interna supportteam.
 
-Den första åtgärden som du behöver vidta är att **engagera din organisations interna supportteam** för att få hjälp.
+Om du däremot är **klientadministratör** för din organisation och fortfarande inte kan logga in i Power BI fortsätter du med informationen nedan.
 
-Men om du är en **klientadministratör** för din organisation och fortfarande inte kan logga in på Power BI fortsätter du med informationen nedan.
-
-## <a name="engage-the-support-team"></a>Engagera supporten
+## <a name="contact-microsoft-support"></a>Kontakta Microsoft-supporten
 
 Försök först att skapa ett supportärende via [Power BI-supportsidan](https://powerbi.microsoft.com/support/).
 
-Om du inte kan använda Power BI-supportsidan försöker du att skapa ett ärende via [supportsidan för Office 365 (O365)](https://support.office.com/home/contact).
+Om du inte kan använda Power BI-supportsidan kan du försöka skapa ett ärende via [supportsidan för Office 365](https://support.office.com/home/contact).
 
-Om det inte går att skapa ett ärende via Power BI-supportsidan eller O365 försöker du kontakta supporten via telefon.
+Om du inte kan skapa något ärende på någon av de här sidorna kan du supporten via telefon:
 
 * För kunder i USA och resten av Amerika: + 1-800-936-5800
 * För kunder i Europa, Mellanöstern och Asien (EMEA): + 44-844-800-2400
 * För kunder i Indien: + 1-800-419-5666
 
-Ett annat alternativ för att kontakta Microsoft-supporten är genom att köpa [Microsoft Premier-support](https://support.microsoft.com/premier). Om du vet att din organisation har köpt Microsoft Premier-support och du fortfarande inte skapa ett ärende från någon Power BI- eller O365-kanal kan du kontakta Premier-supporten via telefon.
+Ett annat alternativ för att kontakta Microsoft-supporten är genom att köpa [Microsoft Premier-support](https://support.microsoft.com/premier). Om du vet att din organisation har köpt Microsoft Premier-support och du fortfarande inte skapa ett ärende via någon kanal för Power BI eller Office 365 kan du kontakta Premier-supporten på telefon:
 
 * För kunder i USA och resten av Amerika: + 1-800-936-3100
 * För kunder i Europa, Mellanöstern och Asien (EMEA): + 44-844-800-8338
@@ -47,13 +45,8 @@ Ett annat alternativ för att kontakta Microsoft-supporten är genom att köpa [
 
 ## <a name="power-bi-community"></a>Power BI-community
 
-Om det inte går att skapa ett foruminlägg på communitysidan beror det på att [Power BI community-forumen](https://community.powerbi.com/) också kräver att du loggar in.
-
-> [!Note]
-> Mer information finns i [artikeln med hjälp för communityn](https://community.powerbi.com/t5/Community-Support/ct-p/PBI_CommunitySupport).
+Om du inte kan skapa något inlägg i forumet för Power BI-communityn beror det på att du måste logga in där också. Mer information finns i [artikeln med hjälp för communityn](https://community.powerbi.com/t5/Community-Support/ct-p/PBI_CommunitySupport).
 
 ## <a name="next-steps"></a>Nästa steg
 
-Här följer några webbplatser som du kan gå till för ytterligare Power BI-support:
-
-* [Power BI Microsoft docs](https://docs.microsoft.com/power-bi/)
+[Supportalternativ för Power BI Pro och Power BI Premium](service-support-options.md)

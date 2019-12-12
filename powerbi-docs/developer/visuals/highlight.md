@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 10/31/2019
-ms.openlocfilehash: ed1a67168a386838049ec2ca047ec0cd971408fc
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: bf5cd8d8ae649071b3c9cc7243f87ac3cc316c3b
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880016"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74695414"
 ---
 # <a name="highlight-data-points-in-power-bi-visuals"></a>Markera datapunkter i visuella Power BI-objekt
 
@@ -26,6 +26,9 @@ Om du anger egenskapen `supportsHighlight` i din `capabilities.json` till `true`
 ![datavyn har stöd för markering](./media/highlight-dataview-supports.png)
 
 Du ser att en stapel är markerad i exemplet. Och det är det enda värdet i markeringsmatrisen. Observera även att det kan finnas flera markeringar och delvis markering. De markerade värdena visas i datavyn.
+
+> [!Note]
+> Det finns inte stöd för markeringsfunktionen vid mappning av tabelldatavyer.
 
 ## <a name="highlight-data-points-with-categorical-data-view-mapping"></a>Markera datapunkter med kategorimappning i datavyn
 

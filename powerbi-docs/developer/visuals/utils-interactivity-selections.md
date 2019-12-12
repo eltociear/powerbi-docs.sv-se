@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 8a9218085b0da655d1ce4b3ece0b2666c4826c86
-ms.sourcegitcommit: f7b28ecbad3e51f410eff7ee4051de3652e360e8
+ms.openlocfilehash: e2587140d5436552e26be90c67eb5e6240bf6a1d
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74061878"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74696150"
 ---
 # <a name="microsoft-power-bi-visuals-interactivity-utils"></a>Interaktivitetsverktyg för visuella Microsoft Power BI-objekt
 
@@ -23,10 +23,10 @@ InteractivityUtils är en uppsättning funktioner och klasser som förenklar imp
 ## <a name="installation"></a>Installation
 
 > [!NOTE]
-> Om du fortsätter använda den gamla versionen av powerbi-visuals-tools (versionsnummer som är mindre än 3.x), installerar du den nya versionen av verktygen (3.x.x).
+> Om du fortsätter att använda den gamla versionen av powerbi-visuals-tools (versionsnummer tidigare än 3.x.x) installerar du den nya versionen av verktygen (3.x.x).
 
 > [!IMPORTANT]
-> De nya uppdateringarna av interaktivitetsverktygen stöder bara den senaste verktygsversionen. [Läs mer om hur du uppdaterar koden till de visuella objekten, som ska användas med de senaste verktygen](migrate-to-new-tools.md)
+> Det finns bara stöd för de nya interaktivitetsverktygen i den senaste verktygsversionen. [Läs mer om hur du uppdaterar koden för visuella objekt så att de använder de senaste verktygen](migrate-to-new-tools.md)
 
 Om du vill installera paketet kör du följande kommando i katalogen med ditt nuvarande anpassade visuella objekt:
 
@@ -40,7 +40,7 @@ Från version 3.0 eller senare måste du också installera ```powerbi-models``` 
 npm install powerbi-models --save
 ```
 
-Du måste importera den komponent som krävs i det visuella objektets källkod för att kunna använda interaktivitetsverktygen.
+Du måste importera den komponent som används i det visuella objektets källkod för att kunna använda interaktivitetsverktygen.
 
 ```typescript
 import { interactivitySelectionService } from "powerbi-visuals-utils-interactivityutils";
@@ -80,7 +80,7 @@ Datapunkter innehåller vanligtvis markeringar och värden. Gränssnittet utöka
   specificIdentity?: powerbi.extensibility.ISelectionId;
 ```
 
-Det första steget när interaktivitetsverktyg ska användas är att skapa en instans av interaktivitetsverktyg och spara objekt som en egenskap för det visuella objektet
+Det första steget när du använder interaktivitetsverktyg är att skapa en instans av interaktivitetsverktyget och spara objektet som en egenskap hos det visuella objektet
 
 ```typescript
 export class Visual implements IVisual {
@@ -106,9 +106,9 @@ export interface VisualDataPoint extends interactivitySelectionService.Selectabl
 Det andra steget är att utöka BaseBehavior-klassen:
 
 > [!NOTE]
-> BaseBehavior introducerades i [5.6.x-versionen för interaktivitetsverktygen](https://www.npmjs.com/package/powerbi-visuals-utils-interactivityutils/v/5.6.0). Om du använder en tidigare version kan du skapa beteendeklassen från exemplet nedan (`BaseBehavior`-klassen är densamma):
+> BaseBehavior introducerades i [5.6.x-versionen för interaktivitetsverktygen](https://www.npmjs.com/package/powerbi-visuals-utils-interactivityutils/v/5.6.0). Om du använder den äldre versionen kan du skapa beteendeklassen från exemplet nedan (klassen `BaseBehavior` är densamma):
 
-Definiera gränssnittet för alternativen i beteendeklassen:
+Definiera gränssnittet för beteendeklassens alternativ:
 
 ```typescript
 import { SelectableDataPoint } from "./interactivitySelectionService";
@@ -126,8 +126,8 @@ export interface BaseBehaviorOptions<SelectableDataPointType extends BaseDataPoi
 }
 ```
 
-Definiera en klass för `visual behaviour`. Den klass som ansvarar för att hantera `click`, `contextmenu`-mushändelser.
-När du klickar på dataelement anropar det visuella objektet markeringshanteraren för att välja datapunkter. Markeringen rensas om användaren klickar på bakgrundselementet i det visuella objektet. Klassen har motsvarande metoder: `bindClick`, `bindClearCatcher`, `bindContextMenu`.
+Definiera en klass för `visual behavior`. Klassen ansvarar för att hantera mushändelserna `click` och `contextmenu`.
+När användaren klickar på dataelement anropar det visuella objektet urvalshanteraren för att välja datapunkter. Om användaren klickar på bakgrundselementet i det visuella objektet anropas hanteraren för att rensa urvalet. Klassen har motsvarande metoder: `bindClick`, `bindClearCatcher`, `bindContextMenu`.
 
 ```typescript
 export class Behavior<SelectableDataPointType extends BaseDataPoint> implements IInteractiveBehavior {
@@ -214,7 +214,7 @@ protected bindContextMenu() {
 }
 ```
 
-Interaktivitetsverktygen anropar `bindEvents`-metoder som tilldelar funktioner till hanterare, samt lägger till anrop för `bindClick`, `bindClearCatcher` och `bindContextMenu` i `bindEvents`-metoden:
+Interaktivitetsverktygen anropar `bindEvents`-metoder som tilldelar funktioner till hanterare och lägger till anrop av `bindClick`, `bindClearCatcher` och `bindContextMenu` i metoden `bindEvents`:
 
 ```typescript
   public bindEvents(
@@ -230,9 +230,9 @@ Interaktivitetsverktygen anropar `bindEvents`-metoder som tilldelar funktioner t
   }
 ```
 
-`renderSelection`-metoden är ansvarig för att uppdatera elementens status i visuella objekt i diagrammet.
+Metoden `renderSelection` ansvarar för att uppdatera diagramelementens visuella status.
 
-Exempel på implementering av `renderSelection`-metoden:
+Exempel på implementering av metoden `renderSelection`:
 
 ```typescript
 public renderSelection(hasSelection: boolean): void {
@@ -246,7 +246,7 @@ public renderSelection(hasSelection: boolean): void {
 }
 ```
 
-Det sista steget är att skapa en instans av `visual behavior` och anropa en `bind`-metod för en interaktivitetsverktygsinstans:
+Det sista steget är att skapa en instans av `visual behavior` och ett anrop av metoden `bind` för instansen av interaktivitetsverktyget:
 
 ```typescript
 this.interactivity.bind(<BaseBehaviorOptions<VisualDataPoint>>{
@@ -257,11 +257,11 @@ this.interactivity.bind(<BaseBehaviorOptions<VisualDataPoint>>{
 });
 ```
 
-* `selectionMerge` är D3-markeringsobjektet, vilket motsvarar alla valbara element i det visuella objektet.
+* `selectionMerge` är D3-urvalsobjektet som motsvarar alla valbara element i det visuella objektet.
 
-* `select(this.target)` är D3-markeringsobjektet, vilket motsvarar DOm-huvudelement i det visuella objektet.
+* `select(this.target)` är D3-urvalsobjektet som motsvarar DOM-huvudelementen i det visuella objektet.
 
-* `this.categories`-datapunkter med element, där gränssnittet är `VisualDataPoint` (eller `categories: VisualDataPoint[];`)
+* `this.categories` är datapunkter med element där gränssnittet är `VisualDataPoint` (eller `categories: VisualDataPoint[];`)
 
 * `this.behavior` är en ny instans av `visual behavior`
 
@@ -278,7 +278,7 @@ this.interactivity.bind(<BaseBehaviorOptions<VisualDataPoint>>{
   }
   ```
 
-Nu är ditt visuella objekt redo att hantera markeringar.
+Nu är ditt visuella objekt redo att hantera urval.
 
 ## <a name="next-steps"></a>Nästa steg
 

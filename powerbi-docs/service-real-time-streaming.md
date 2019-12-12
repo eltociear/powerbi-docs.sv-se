@@ -9,17 +9,17 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 9415365c3846329d5bcf707ec7f41d0bd2cc6f92
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: a4d948e768682aab77708289320914ce3ef0fdc3
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73871742"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74699114"
 ---
 # <a name="real-time-streaming-in-power-bi"></a>Realtidsuppspelning i Power BI
 Med direktuppspelning i realtid för Power BI, kan du strömma data och uppdatera instrumentpaneler i realtid. Visuella objekt och instrumentpaneler som kan skapas i Power BI kan även skapas för att visa och uppdatera data och visuella objekt i realtid. Enheter och datakällor för strömmande data kan vara fabrikssensorer, sociala mediekällor, användningsstatistik för tjänsten och alla andra källor där tidskänsliga data kan insamlas eller skickas.
 
-![](media/service-real-time-streaming/real-time-streaming_10.jpg)
+![Skärmbild som visar resultatet av miljösensorer i realtid.](media/service-real-time-streaming/real-time-streaming-10.png)
 
 Den här artikeln visar hur man ställer in en strömmande datauppsättning i realtid i Power BI. Men innan dess är det viktigt att förstå de typer av datauppsättningar i realtid som är skapade att visas i paneler (och instrumentpaneler) och hur de datauppsättningarna skiljer sig åt.
 
@@ -198,7 +198,7 @@ I det här exemplet, använder vi en offentligt tillgänglig ström från **PubN
    ![](media/service-real-time-streaming/real-time-streaming_9.png)
 5. I din Power BI-arbetsyta skapar du sedan en ny instrumentpanel och lägger till en panel (se ovanstående steg om du behöver dem). Nu när du skapar en panel och väljer **anpassade strömmande data**, får du en strömmande datauppsättning att arbeta med. Experimentera med den. Om du lägger till *siffer*fälten till linjediagram och därefter lägger till andra paneler så får du en instrumentpanel i realtid som ser ut ungefär såhär:
    
-   ![](media/service-real-time-streaming/real-time-streaming_10.jpg)
+   ![Skärmbild som visar resultatet av miljösensorer i realtid.](media/service-real-time-streaming/real-time-streaming-10.png)
 
 Prova att experimentera med exempel-datauppsättningen. Gå sedan skapa dina egna datauppsättningar och strömma realtidsdata till Power BI.
 

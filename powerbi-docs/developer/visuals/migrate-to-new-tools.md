@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: cc554bff1cbd248ccd69a80ee47b60af981cdab1
-ms.sourcegitcommit: f7b28ecbad3e51f410eff7ee4051de3652e360e8
+ms.openlocfilehash: 245475feeb43ee544117aaa54969f2de1e207cd5
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74061832"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74696292"
 ---
 # <a name="migrate-to-the-new-powerbi-visuals-tools-3xx"></a>Migrera till nya powerbi-visuals-tools 3.x.x
 
@@ -27,7 +27,7 @@ I den nya versionen finns många nya möjligheter för utvecklare som skapar vis
 
 * Nya versioner av [D3v5](https://d3js.org/) och andra ES6-modulbaserade bibliotek stöds.
 
-* Minskad paketstorlek. WebPack använder [Tree Shaking](https://webpack.js.org/guides/tree-shaking/) till att ta bort oanvänd kod. Den minskar koden i JS och ger bättre prestanda vid inläsning av visuella objekt.
+* Minskad paketstorlek. WebPack använder [Tree Shaking](https://webpack.js.org/guides/tree-shaking/) till att ta bort oanvänd kod. Mängden JS-kod minskar och du får bättre prestanda när det visuella objektet läses in.
 
 * Förbättrad API-prestanda.
 
@@ -39,7 +39,7 @@ Alla migreringssteg i den nya versionen av Power BI:s verktyg för visuella obje
 
 ## <a name="backward-compatibility"></a>Bakåtkompatibilitet
 
-De nya verktygen sparar bakåtkompatibiliteten för kodbasen till gamla visuella objekt, men det kan krävas vissa ändringar om externa bibliotek ska läsas in.
+De nya verktygen är bakåtkompatibla med kodbasen för gamla visuella objekt, men det kan krävas vissa ändringar om externa bibliotek ska läsas in.
 
 Biblioteken stöder modulsystem och kommer att importeras som WebPack-moduler. Alla andra bibliotek och den visuella källkoden kommer att komprimeras till en modul.
 
@@ -79,7 +79,7 @@ Exempel på ett visuellt sampleBarChart-objekt och motsvarande [ändringar](http
 
 ## <a name="how-to-install-power-bi-custom-visuals-api"></a>Så här installerar du Power BI-API:et för anpassade visuella objekt
 
-Den nya versionen av powerbi-visuals-tools innehåller inte alla API-versioner. I stället bör utvecklaren därför installera en specifik version av [`powerbi-visuals-api`](https://www.npmjs.com/package/powerbi-visuals-api)-paketet. Paketversionen matchar API-versionen för Power BI:s anpassade visuella objekt och innehåller alla typdefinitioner till Power BI-API:et för anpassade visuella objekt.
+Den nya versionen av powerbi-visuals-tools innehåller inte alla API-versioner. I stället bör utvecklaren därför installera en specifik version av [`powerbi-visuals-api`](https://www.npmjs.com/package/powerbi-visuals-api)-paketet. Paketversionen matchar API-versionen för Power BI Custom Visuals och innehåller alla typdefinitioner för API:et Power BI Custom Visuals.
 
 Lägg till `powerbi-visuals-api` i dina projektberoenden genom att köra kommandot `npm install --save-dev powerbi-visuals-api`.
 Du bör även ta bort länken till gamla definitioner av API-typen. Typer från `powerbi-visuals-api` inkluderas automatiskt av WebPack. Motsvarande ändringar finns på [den här](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/sample-next/package.json#L14) raden i `package.json`.
@@ -91,11 +91,11 @@ Om du vill använda externa moduler bör du byta `out`-alternativet till `outDir
 
 Detta är nödvändigt eftersom TypeScript-filerna kommer att kompileras till JavaScript-filer oberoende av varandra. Det är därför du inte längre behöver ange filen visual.js som utdata.
 
-Du kan också ändra `target`-alternativet till `ES6` om du vill använda modern JavaScript som utdata. [Det är valfritt](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/sample-next/tsconfig.json#L6).
+Du kan också ändra alternativet `target` till `ES6` om du vill använda modern JavaScript som utdata. [Det är valfritt](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/sample-next/tsconfig.json#L6).
 
 ## <a name="update-custom-visuals-utils"></a>Uppdatera verktyg för anpassade visuella objekt
 
-Om du använder [powerbi-visuals-utils](https://www.npmjs.com/search?q=powerbi-visuals-utils) bör du även uppdatera dem till den senaste versionen.
+Om du använder någon powerbi-visuals-utils (https://www.npmjs.com/search?q=powerbi-visuals-utils) ska du även uppdatera dem till den senaste versionen.
 
 Kör kommandot `npm install powerbi-visuals-utils-<UTILNAME> --save`. (Exempelvis `npm install powerbi-visuals-utils-dataviewutils --save`) för att hämta den nya versionen med externa moduler av TypeScript.
 
@@ -104,7 +104,7 @@ Det här visuella objektet använder alla verktyg.
 
 ## <a name="remove-globalizejs-library"></a>Ta bort Globalize.js-biblioteket
 
-Globalize.js finns redan i den nya versionen av [powerbi-visuals-utils-formattingutils@4.3](https://www.npmjs.com/package/powerbi-visuals-utils-formattingutils).
+globalize.js finns redan i den nya versionen av [powerbi-visuals-utils-formattingutils@4.3](https://www.npmjs.com/package/powerbi-visuals-utils-formattingutils).
 Du behöver inte inkludera det här biblioteket manuellt i projektet.
 Alla obligatoriska lokaliseringar kommer att läggas till i det slutliga paketet automatiskt.
 
@@ -127,7 +127,7 @@ Importera bibliotek till källan. Exempel på `lodash-es`:
 import * as _ from "lodash-es";
 ```
 
-där `_` är en global variabel för `lodash`-biblioteket.
+där `_` är den globala variabeln för biblioteket `lodash`.
 
 ## <a name="changes-in-the-visuals-sources"></a>Ändringar i de visuella objektens källor
 
@@ -236,7 +236,7 @@ Det finns flera icke-bakåtkompatibla ändringar och du bör ändra koden för a
 
 ## <a name="babel"></a>Babel
 
-Från och med version 3.1 använder verktygen Babel för att kompilera ny modern JS-kod till gamla ES5 och kunna stödja många olika webbläsare.
+Från och med version 3.1 använder verktygen Babel till att kompilera ny modern JS-kod till gamla ES5 för att kunna stödja många olika webbläsare.
 
 Det här alternativet är aktiverat som standard, men du måste importera [`@babel/polyfill`](https://babeljs.io/docs/en/babel-polyfill)-paketet manuellt.
 
@@ -250,6 +250,6 @@ och importera paketet vid startpunkten för den visuella objektkoden (vanligtvis
 
 Läs mer om Babel [i dokumenten](https://babeljs.io/docs/en/).
 
-Kör slutligen [webpack-visualizer](https://github.com/chrisbateman/webpack-visualizer) för att visa kodbasen till det visuella objektet.  
+Kör slutligen [webpack-visualizer](https://github.com/chrisbateman/webpack-visualizer) för att visa det visuella objektets kodbas.  
 
 ![Statistik över visuella koder](./media/webpack-stats.png)

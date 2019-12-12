@@ -7,19 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 07/22/2019
-ms.openlocfilehash: d0f0abe15348d54f24143d69fcd6c0c2b71e9a34
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 12/03/2019
+ms.openlocfilehash: fced83abab1898724e165154fbc177ccf50ca061
+ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73874789"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74831241"
 ---
 # <a name="pagination-in-power-bi-paginated-reports"></a>Sidnumrering i sidnumrerade rapporter i Power BI
 
- Sidnumreringen refererar till antalet sidor i en rapport och hur rapportobjekt är ordnade på dessa sidor. Sidnumreringen i sidnumrerade rapporter i Power BI varierar beroende på vilket återgivningstillägg du använder för att visa och leverera rapporten. När du kör en rapport på rapportservern används HTML-återgivning. HTML följer en viss uppsättning sidnumreringsregler. Om du exporterar samma rapport till exempelvis PDF används PDF-återgivning och då tillämpas en annan uppsättning regler, vilket gör att rapporten får en annan sidnumrering. För att kunna utforma en lättläst rapport för dina användare som är optimerad för den återgivning som du tänker använda när du levererar rapporten, måste du förstå reglerna som styr sidnumreringen i sidnumrerade rapporter i Power BI.  
+ *Sidnumrering* syftar på antalet sidor i en rapport och hur rapportobjekt är ordnade på dessa sidor. Sidnumreringen i sidnumrerade rapporter i Power BI varierar beroende på vilket återgivningstillägg du använder för att visa och leverera rapporten. När du kör en rapport på rapportservern används HTML-återgivning. HTML följer en viss uppsättning sidnumreringsregler. Om du till exempel exporterar samma rapport till PDF används PDF-återgivning, som har en annan uppsättning regler. Rapportens sidbrytningar blir därför annorlunda. Du måste förstå reglerna som används för att styra sidbrytning i sidnumrerade Power BI-rapporter. Då kan du skapa lättlästa rapporter som är optimerade för den återgivning du tänker använda.  
   
- I det här avsnittet beskrivs vilken påverkan den fysiska sidstorleken och rapportlayouten har på hur rapporten återges vid återgivning med hård sidbrytning. Du kan ange egenskaper om du vill ändra den fysiska sidstorleken och marginalerna och dela in rapporten i kolumner med hjälp av fönstret **Rapportegenskaper**, fönstret **Egenskaper** och dialogrutan **Utskriftsformat**. Du öppnar fönstret **Rapportegenskaper** genom att klicka på det blå området utanför rapportens brödtext. Du öppnar dialogrutan **Utskriftsformat** genom att klicka på **Kör** på startfliken och sedan klicka på **Utskriftsformat** på fliken Kör.  
+ I det här avsnittet beskrivs vilken påverkan den fysiska sidstorleken och rapportlayouten har på hur rapporten återges med hård sidbrytning. Du kan ange egenskaper för att ändra den fysiska sidstorleken och marginalerna, och dela in rapporten i kolumner. Använd fönstret **Rapportegenskaper**, fönstret **Egenskaper** eller dialogrutan **Utskriftsformat**. Du öppnar fönstret **Rapportegenskaper** genom att klicka på det blå området utanför rapportens brödtext. Du öppnar dialogrutan **Utskriftsformat** genom att klicka på **Kör** på startfliken och sedan på **Utskriftsformat** på fliken Kör.  
   
 > [!NOTE]  
 >  Om du har designat en rapport som är en sida bred, men den återges över flera sidor, kontrollerar du att bredden för rapportens brödtext, inklusive marginaler, inte är större än bredden för den fysiska sidstorleken. Du kan förhindra att tomma sidor läggs till i rapporten genom att minska storleken på behållaren genom att dra i hörnet på behållaren åt vänster.  
@@ -30,9 +30,9 @@ ms.locfileid: "73874789"
  Du kan formatera rapportens brödtext med färg, format, bredd för kantlinjerna. Du kan också lägga till en bakgrundsfärg och en bakgrundsbild.  
   
 ## <a name="the-physical-page"></a>Den fysiska sidan  
- Den fysiska sidstorleken är pappersstorleken. Den pappersstorlek som du anger för rapporten styr hur rapporten återges. I rapporter som återges i format med hård sidbrytning infogas sidbrytningar vågrätt och lodrätt baserat på den fysiska sidstorleken och ger en optimal läsupplevelse när de skrivs ut eller visas i ett filformat med hård sidbrytning. I rapporter som återges i format med mjuk sidbrytning infogas sidbrytningar vågrätt baserat på den fysiska storleken för att ge en optimal läsupplevelse när rapporten visas i en webbläsare.  
+ Den fysiska sidstorleken är pappersstorleken. Den pappersstorlek som du anger för rapporten styr hur rapporten återges. Rapporter som återges med hård sidbrytning infogar sidbrytningar vågrätt och lodrätt baserat på den fysiska sidstorleken. De här sidbrytningarna ger bästa möjliga läsupplevelse när de skrivs ut eller visas i filformat med hård sidbrytning. Rapporter som återges med mjuk sidbrytning infogar sidbrytningar vågrätt baserat på den fysiska storleken. Sidbrytningarna ger bästa möjliga läsupplevelse i webbläsare.  
   
- Som standard är sidstorleken 8,5 x 11 tum, men du kan ändra storleken i fönstret **Rapportegenskaper** eller i dialogrutan **Utskriftsformat**, eller genom att ändra egenskaperna PageHeight och PageWidth i fönstret **Egenskaper**. Sidstorleken ökar eller minskar inte för att få plats med innehållet i rapportens brödtext. Om du vill att rapporten ska visas på en enda sida måste allt innehåll i rapportens brödtext få plats på den fysiska sidan. Om det inte får plats och du använder formatet för hård sidbrytning, krävs ytterligare sidor i rapporten. Om rapportens brödtext växer utanför den fysiska sidans högra kant, infogas en vågrät sidbrytning. Om rapportens brödtext växer utanför den fysiska sidans nedre kant, infogas en lodrät sidbrytning.  
+ Som standard är sidstorleken 8,5 x 11 tum, men du kan ändra storleken i fönstret **Rapportegenskaper** eller i dialogrutan **Utskriftsformat**, eller genom att ändra egenskaperna PageHeight och PageWidth i fönstret **Egenskaper**. Sidstorleken ökar eller minskar inte för att få plats med innehållet i rapportens brödtext. Om du vill att rapporten ska visas på en enda sida måste allt innehåll i rapportens brödtext få plats på den fysiska sidan. Om den inte får plats och du använder hårda sidbrytningar behövs ytterligare sidor för rapporten. Om rapportens brödtext växer utanför den fysiska sidans högra kant, infogas en vågrät sidbrytning. Om rapportens brödtext växer utanför den fysiska sidans nedre kant, infogas en lodrät sidbrytning.  
   
  Om du vill åsidosätta den fysiska sidstorleken som definierats i rapporten kan du ange fysisk sidstorlek med inställningarna för enhetsinformation för den specifika återgivning som du använder för att exportera rapporten. En komplett lista finns i [Device Information Settings for Rendering Extensions](https://docs.microsoft.com/sql/reporting-services/device-information-settings-for-rendering-extensions-reporting-services?view=sql-server-2017) i dokumentationen för SQL Server Reporting Services.  
   
@@ -40,7 +40,7 @@ ms.locfileid: "73874789"
 
  Marginalerna dras från kanten på de fysiska siddimensionerna inåt till den angivna marginalinställningen. Om ett rapportobjekt sträcker sig utanför marginalytan kapas det så att den överskjutande ytan inte visas. Om du anger marginalstorlekar som gör att den vågräta eller lodräta bredden på sidan blir lika med noll, får marginalinställningarna standardvärdet noll. Marginaler anges i fönstret **Rapportegenskaper** eller i dialogrutan **Utskriftsformat**, eller genom att ändra egenskaperna TopMargin, BottomMargin, LeftMargin och RightMargin i fönstret **Egenskaper**. Om du vill åsidosätta marginalstorleken som definierats i rapporten kan du ange marginalstorlek med inställningarna för enhetsinformation för den specifika återgivning som du använder för att exportera rapporten.  
   
- Området på den fysiska sidan som återstår efter att området tilldelats för marginaler, kolumnavstånd och sidhuvud och sidfot kallas *användbart sidområde*. Marginaler används endast när du återger och skriver ut rapporter i återgivningsformat med hård sidbrytning. På följande bild visas marginaler och det användbara sidområdet på en fysisk sida.  
+ Området på den fysiska sidan som återstår efter att området tilldelats för marginaler, kolumnavstånd och sidhuvud och sidfot kallas *användbart sidområde*. Marginaler används bara när du återger och skriver ut rapporter i återgivningsformat med hård sidbrytning. På följande bild visas marginaler och det användbara sidområdet på en fysisk sida.  
   
 ![Fysisk sida med marginaler och användbart område](media/paginated-reports-pagination/power-bi-paginated-rs-page-margins.png) 
   
@@ -87,6 +87,6 @@ ms.locfileid: "73874789"
   
 ## <a name="next-steps"></a>Nästa steg
 
-[Visa en sidnumrerad rapport i Power BI-tjänsten](paginated-reports-view-power-bi-service.md)
+[Visa en sidnumrerad rapport i Power BI-tjänsten](consumer/paginated-reports-view-power-bi-service.md)
 
 Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)

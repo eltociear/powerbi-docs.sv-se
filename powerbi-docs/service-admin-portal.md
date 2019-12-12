@@ -1,21 +1,21 @@
 ---
 title: Power BI-administratörsportalen
 description: I administratörsportalen kan Power BI-klienterna i din organisation hanteras. Den innehåller sådant som användningsstatistik för åtkomst till Microsoft 365-administrationscenter och inställningar.
-author: mgblythe
+author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/25/2019
-ms.author: mblythe
+ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: bb842128c26161d2f8da2961c6f014b9ecb45fc5
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.openlocfilehash: 4776e458c778b6bd482106660ab9b8cd978699e5
+ms.sourcegitcommit: 9a265d8117cc202f5f700286b5ff42a631aacdb4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74265892"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74882907"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administrera Power BI i Admin-portalen
 
@@ -176,7 +176,7 @@ Genom att ange en webbadress för licensförfrågningar anpassar du måladressen
 
 E-postaktiverade säkerhetsgrupper får e-postmeddelanden om den här klientorganisationen påverkas av ett avbrott i tjänsten eller en incident. Lär dig mer om [Aviseringar om tjänstavbrott](service-interruption-notifications.md).
 
-## <a name="workspace-settings"></a>Inställningar för arbetsyta
+## <a name="workspace-settings"></a>Arbetsyteinställningar
 
 ### <a name="create-workspaces"></a>Skapa arbetsytor
 
@@ -208,7 +208,7 @@ Följande bild visar menyn **Arkiv** för en rapport när inställningen **Publi
 
 Användarna ser olika alternativ i användargränssnittet baserat på vad inställningen för **Publicering på webben** är.
 
-|Visning av aktuellt objekt |Aktiverad för hela organisationen |Inaktiverad för hela organisationen |Specifika säkerhetsgrupper   |
+|Funktion |Aktiverad för hela organisationen |Inaktiverad för hela organisationen |Specifika säkerhetsgrupper   |
 |---------|---------|---------|---------|
 |**Publicera på webben** under rapportens **Fil**meny.|Aktiverad för alla|Inte synlig för alla|Endast synlig för behöriga användare eller grupper.|
 |**Hantera inbäddade koder** under **Inställningar**|Aktiverad för alla|Aktiverad för alla|Aktiverad för alla<br><br>Alternativet * **Ta bort** endast för behöriga användare eller grupper.<br>* **Hämta koder** aktiverat för alla.|
@@ -247,11 +247,14 @@ Följande bild visar menyn **Arkiv** för en rapport när inställningen **Skriv
 ![Skriva ut rapporten](media/service-admin-portal/powerbi-admin-print-report.png)
 
 ### <a name="allow-external-guest-users-to-edit-and-manage-content-in-the-organization"></a>Tillåt externa gästanvändare att redigera och hantera innehåll i organisationen
-Azure B2B-gästanvändare kan redigera och hantera innehåll i organisationen. [Läs mer](service-admin-azure-ad-b2b.md)
+Azure Active Directory B2B-gästanvändare kan redigera och hantera innehåll i organisationen. [Läs mer](service-admin-azure-ad-b2b.md)
 
 I följande bild visas alternativet Tillåt externa gästanvändare att redigera och hantera innehåll i organisationen.
 
 ![Tillåt externa gästanvändare att redigera och hantera innehåll i organisationen](media/service-admin-portal/powerbi-admin-tenant-settings-b2b-guest-edit-manage.png)
+
+> [!IMPORTANT]
+> När du lägger till en extern användare i din Azure AD-klientorganisation (antingen manuellt eller genom att dela en rapport med användaren) kan interna konton nu se det aktuella användarkontot. En intern användare kan dela andra saker med den externa användaren även om det interna kontot inte behörighet att dela externt.
 
 ### <a name="email-subscriptions"></a>E-postprenumerationer
 Användare i organisationen kan skapa e-postprenumerationer. Läs mer om [prenumerationer](service-report-subscribe.md).

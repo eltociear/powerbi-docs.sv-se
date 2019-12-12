@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 07cc0517fb27649bb3cc47b8ba8f51b4268d9a7c
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: b50ebde94d78ca42437979d792fb6402affe8855
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880164"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74696675"
 ---
 # <a name="understand-data-view-mapping-in-power-bi-visuals"></a>Förstå datavymappning i visuella Power BI-objekt
 
@@ -101,14 +101,29 @@ Om du vill använda enkel datamappning behöver du definiera namnet på den data
 ### <a name="example-3"></a>Exempel 3
 
 ```json
-"dataViewMappings": {
-    "conditions": [
-        { "Y": { "max": 1 } }
+{
+    "dataRoles": [
+        {
+            "displayName": "Y",
+            "name": "Y",
+            "kind": "Measure"
+        }
     ],
-    "single": {
-        "role": "Y"
-    }
-}  
+    "dataViewMappings": [
+        {
+            "conditions": [
+                {
+                    "Y": {
+                        "max": 1
+                    }
+                }
+            ],
+            "single": {
+                "role": "Y"
+            }
+        }
+    ]
+}
 ```
 
 Den resulterande datavyn innehåller fortfarande de andra typerna (tabell, kategorisk och så vidare), men varje mappning innehåller bara det enskilda värdet. Bästa praxis är att bara komma åt värdet i enkelformat.
@@ -129,6 +144,48 @@ Den resulterande datavyn innehåller fortfarande de andra typerna (tabell, kateg
     ]
 }
 ```
+
+Kodexempel för att bearbeta enkel mappning av datavyer
+
+```typescript
+"use strict";
+import powerbi from "powerbi-visuals-api";
+import DataView = powerbi.DataView;
+import DataViewSingle = powerbi.DataViewSingle;
+// standart imports
+// ...
+
+export class Visual implements IVisual {
+    private target: HTMLElement;
+    private host: IVisualHost;
+    private valueText: HTMLParagraphElement;
+
+    constructor(options: VisualConstructorOptions) {
+        // constructor body
+        this.target = options.element;
+        this.host = options.host;
+        this.valueText = document.createElement("p");
+        this.target.appendChild(this.valueText);
+        // ...
+    }
+
+    public update(options: VisualUpdateOptions) {
+        const dataView: DataView = options.dataViews[0];
+        const singleDataView: DataViewSingle = dataView.single;
+
+        if (!singleDataView ||
+            !singleDataView.value ) {
+            return
+        }
+
+        this.valueText.innerText = singleDataView.value.toString();
+    }
+}
+```
+
+Resultatet blir att det visuella objektet visar ett enda värde från Power BI:
+
+![Visuellt exempel på mappning av en enda datavy](./media/visual-simple-dataview-mapping.png)
 
 ## <a name="categorical-data-mapping"></a>Kategorisk datamappning
 
@@ -284,10 +341,10 @@ Den kategoriska datavyn kan visualiseras så här:
 |-----|-----|------|------|------|------|
 | | År | 2013 | 2014 | 2015 | 2016 |
 | Land | | |
-| USA | | x | x | 125 | 100 |
-| Kanada | | x | 50 | 200 | x |
-| Mexiko | | 300 | x | x | x |
-| Storbritannien | | x | x | 75 | x |
+| USA | | x | x | 650 | 350 |
+| Kanada | | x | 630 | 490 | x |
+| Mexiko | | 645 | x | x | x |
+| Storbritannien | | x | x | 831 | x |
 
 Power BI skapar den som den kategoriska datavyn. Detta är uppsättningen med kategorier.
 
@@ -299,9 +356,9 @@ Power BI skapar den som den kategoriska datavyn. Detta är uppsättningen med ka
                 "source": {...},
                 "values": [
                     "Canada",
-                    "Mexico",
+                    "USA",
                     "UK",
-                    "USA"
+                    "Mexico"
                 ],
                 "identity": [...],
                 "identityFields": [...],
@@ -313,54 +370,130 @@ Power BI skapar den som den kategoriska datavyn. Detta är uppsättningen med ka
 
 Varje kategori mappar även till en uppsättning värden. Vart och ett av dessa värden grupperas efter serie, vilket uttrycks som år.
 
-Försäljningen 2013 i Kanada är null och försäljningen 2014 i Kanada är 50.
+Varje `values`-array representerar till exempel data för respektive år.
+Varje `values`-array innehåller 4 värden, för Kanada, USA, Storbritannien och Mexiko:
 
 ```JSON
 {
     "values": [
+        // Values for 2013 year
         {
             "source": {...},
             "values": [
-                null,
-                300,
-                null,
-                null
+                null, // Value for `Canada` category
+                null, // Value for `USA` category
+                null, // Value for `UK` category
+                645 // Value for `Mexico` category
             ],
             "identity": [...],
         },
+        // Values for 2014 year
         {
             "source": {...},
             "values": [
-                50,
-                null,
-                150,
-                null
+                630, // Value for `Canada` category
+                null, // Value for `USA` category
+                null, // Value for `UK` category
+                null // Value for `Mexico` category
             ],
             "identity": [...],
         },
+        // Values for 2015 year
         {
             "source": {...},
             "values": [
-                200,
-                null,
-                null,
-                125
+                490, // Value for `Canada` category
+                650, // Value for `USA` category
+                831, // Value for `UK` category
+                null // Value for `Mexico` category
             ],
             "identity": [...],
         },
+        // Values for 2016 year
         {
             "source": {...},
             "values": [
-                null,
-                null,
-                null,
-                100
+                null, // Value for `Canada` category
+                350, // Value for `USA` category
+                null, // Value for `UK` category
+                null // Value for `Mexico` category
             ],
             "identity": [...],
         }
     ]
 }
 ```
+
+Kodexempel för bearbetning av kategorimappning i datavyer. I exemplet skapas den hierarkiska strukturen `Country => Year => Value`
+
+```typescript
+"use strict";
+import powerbi from "powerbi-visuals-api";
+import DataView = powerbi.DataView;
+import DataViewDataViewCategoricalSingle = powerbi.DataViewCategorical;
+import DataViewValueColumnGroup = powerbi.DataViewValueColumnGroup;
+import PrimitiveValue = powerbi.PrimitiveValue;
+// standart imports
+// ...
+
+export class Visual implements IVisual {
+    private target: HTMLElement;
+    private host: IVisualHost;
+    private categories: HTMLElement;
+
+    constructor(options: VisualConstructorOptions) {
+        // constructor body
+        this.target = options.element;
+        this.host = options.host;
+        this.categories = document.createElement("pre");
+        this.target.appendChild(this.categories);
+        // ...
+    }
+
+    public update(options: VisualUpdateOptions) {
+        const dataView: DataView = options.dataViews[0];
+        const categoricalDataView: DataViewCategorical = dataView.categorical;
+
+        if (!categoricalDataView ||
+            !categoricalDataView.categories ||
+            !categoricalDataView.categories[0] ||
+            !categoricalDataView.values) {
+            return;
+        }
+
+        // Categories have only one column in data buckets
+        // If you want to support several columns of categories data bucket, you should iterate categoricalDataView.categories array.
+        const categoryFieldIndex = 0;
+        // Measure has only one column in data buckets.
+        // If you want to support several columns on data bucket, you should iterate years.values array in map function
+        const measureFieldIndex = 0;
+        let categories: PrimitiveValue[] = categoricalDataView.categories[categoryFieldIndex].values;
+        let values: DataViewValueColumnGroup[] = categoricalDataView.values.grouped();
+
+        let data = {};
+        // iterate categories/countries
+        categories.map((category: PrimitiveValue, categoryIndex: number) => {
+            data[category.toString()] = {};
+            // iterate series/years
+            values.map((years: DataViewValueColumnGroup) => {
+                if (!data[category.toString()][years.name] && years.values[measureFieldIndex].values[categoryIndex]) {
+                    data[category.toString()][years.name] = []
+                }
+                if (years.values[0].values[categoryIndex]) {
+                    data[category.toString()][years.name].push(years.values[measureFieldIndex].values[categoryIndex]);
+                }
+            });
+        });
+
+        this.categories.innerText = JSON.stringify(data, null, 6);
+        console.log(data);
+    }
+}
+```
+
+Det visuella resultatet:
+
+![Det visuella objektet med kategorimappning i datavyn](./media/categorical-data-view-mapping-visual.png)
 
 ## <a name="table-data-mapping"></a>Tabelldatamappning
 
@@ -373,8 +506,13 @@ Med de aktuella funktionerna:
 ```json
 "dataRoles": [
     {
-        "displayName": "Values",
-        "name": "values",
+        "displayName": "Column",
+        "name": "column",
+        "kind": "Measure"
+    },
+    {
+        "displayName": "Value",
+        "name": "value",
         "kind": "Measure"
     }
 ]
@@ -385,9 +523,18 @@ Med de aktuella funktionerna:
     {
         "table": {
             "rows": {
-                "for": {
-                    "in": "values"
-                }
+                "select": [
+                    {
+                        "for": {
+                            "in": "column"
+                        }
+                    },
+                    {
+                        "for": {
+                            "in": "value"
+                        }
+                    }
+                ]
             }
         }
     }
@@ -395,6 +542,8 @@ Med de aktuella funktionerna:
 ```
 
 Du kan visualisera tabelldatavyn så här:  
+
+Dataexempel:
 
 | Land| År | Försäljning |
 |-----|-----|------|
@@ -406,6 +555,10 @@ Du kan visualisera tabelldatavyn så här:
 | Storbritannien | 2014 | 150 |
 | USA | 2015 | 75 |
 
+Databindning:
+
+![Databindning för mappning av tabelldata](./media/table-dataview-mapping-data.png)
+
 Power BI visar dina data som tabelldatavyn. Du bör inte anta att data är ordnade.
 
 ```JSON
@@ -416,37 +569,32 @@ Power BI visar dina data som tabelldatavyn. Du bör inte anta att data är ordna
             [
                 "Canada",
                 2014,
-                50
+                630
             ],
             [
                 "Canada",
                 2015,
-                200
+                490
             ],
             [
                 "Mexico",
                 2013,
-                300
+                645
             ],
             [
                 "UK",
                 2014,
-                150
+                831
             ],
             [
                 "USA",
                 2015,
-                100
-            ],
-            [
-                "USA",
-                2015,
-                75
+                650
             ],
             [
                 "USA",
                 2016,
-                100
+                350
             ]
         ]
     }
@@ -456,6 +604,89 @@ Power BI visar dina data som tabelldatavyn. Du bör inte anta att data är ordna
 Du kan aggregera data genom att markera önskat fält och sedan välja sum.  
 
 ![Dataaggregering](./media/data-aggregation.png)
+
+Kodexempel för bearbetning av tabellmappning i datavyer.
+
+```typescript
+"use strict";
+import "./../style/visual.less";
+import powerbi from "powerbi-visuals-api";
+// ...
+import DataViewMetadataColumn = powerbi.DataViewMetadataColumn;
+import DataViewTable = powerbi.DataViewTable;
+import DataViewTableRow = powerbi.DataViewTableRow;
+import PrimitiveValue = powerbi.PrimitiveValue;
+// other imports
+// ...
+
+export class Visual implements IVisual {
+    private target: HTMLElement;
+    private host: IVisualHost;
+    private table: HTMLParagraphElement;
+
+    constructor(options: VisualConstructorOptions) {
+        // constructor body
+        this.target = options.element;
+        this.host = options.host;
+        this.table = document.createElement("table");
+        this.target.appendChild(this.table);
+        // ...
+    }
+
+    public update(options: VisualUpdateOptions) {
+        const dataView: DataView = options.dataViews[0];
+        const tableDataView: DataViewTable = dataView.table;
+
+        if (!tableDataView) {
+            return
+        }
+        while(this.table.firstChild) {
+            this.table.removeChild(this.table.firstChild);
+        }
+
+        //draw header
+        const tableHeader = document.createElement("th");
+        tableDataView.columns.forEach((column: DataViewMetadataColumn) => {
+            const tableHeaderColumn = document.createElement("td");
+            tableHeaderColumn.innerText = column.displayName
+            tableHeader.appendChild(tableHeaderColumn);
+        });
+        this.table.appendChild(tableHeader);
+
+        //draw rows
+        tableDataView.rows.forEach((row: DataViewTableRow) => {
+            const tableRow = document.createElement("tr");
+            row.forEach((columnValue: PrimitiveValue) => {
+                const cell = document.createElement("td");
+                cell.innerText = columnValue.toString();
+                tableRow.appendChild(cell);
+            })
+            this.table.appendChild(tableRow);
+        });
+    }
+}
+```
+
+Formatfilen `style/visual.less` för det visuella objektet innehåller en layout för tabellen:
+
+```less
+table {
+    display: flex;
+    flex-direction: column;
+}
+
+tr, th {
+    display: flex;
+    flex: 1;
+}
+
+td {
+    flex: 1;
+    border: 1px solid black;
+}
+```
+
+![Det visuella objektet med tabellmappning i datavyn](./media/table-dataview-mapping-visual.png)
 
 ## <a name="matrix-data-mapping"></a>Matrisdatamappning
 
@@ -694,7 +925,7 @@ Du kan använda algoritmen för dataminskning för avsnittet `rows` i tabellen f
                     "top": {
                         "count": 2000
                     }
-                } 
+                }
             }
         }
     }
@@ -702,3 +933,7 @@ Du kan använda algoritmen för dataminskning för avsnittet `rows` i tabellen f
 ```
 
 Du kan använda algoritmen för dataminskning för avsnitten `rows` och `columns` i matrisen för datavymappning.
+
+## <a name="next-steps"></a>Nästa steg
+
+Läs om hur du [lägger till stöd för att öka detaljnivån för datavyer i visuella Power BI-objekt](drill-down-support.md).
