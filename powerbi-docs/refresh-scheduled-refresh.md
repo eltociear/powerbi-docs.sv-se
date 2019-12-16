@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 06/06/2019
 ms.author: maggies
 LocalizationGroup: Data refresh
-ms.openlocfilehash: e09b3f8579b65bc242cda1dbdb54f187ab6b47d0
-ms.sourcegitcommit: 90bd747b7c460d17b74cd386d3f5714234b1f6c9
+ms.openlocfilehash: 622273ed4c8d6f2faee46d3cc84d981f86bd8c92
+ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74791616"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74958412"
 ---
 # <a name="configure-scheduled-refresh"></a>Konfigurera schemalagd uppdatering
 
@@ -75,7 +75,7 @@ Du definierar frekvens och tidpunkter för att uppdatera datauppsättningen i av
 Ställ in skjutreglaget **Håll dina data aktuella** på **På** för att konfigurera inställningarna.
 
 > [!NOTE]
-> Power BI-tjänsten har som mål att initiera datauppdateringen inom **15 minuter** från din schemalagda uppdateringstid.
+> Målet är att starta uppdateringen inom 15 minuter efter den schemalagda tiden men en fördröjning på upp till en timme kan förekomma om tjänsten inte kan allokera de nödvändiga resurserna snabbare.
 
 ![Dialogrutan Schemalagd uppdatering](media/refresh-scheduled-refresh/scheduled-refresh.png)
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/09/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 0486abd448158baafeaac3047bcb7b461470bac9
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 4d03419105244b7fddafea3b26b69e4f4f5f874c
+ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74699163"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74958550"
 ---
 # <a name="optimizing-premium-capacities"></a>Optimera Premium-kapaciteter
 
@@ -268,5 +268,3 @@ Den här artikeln är skriven av Peter Myers, Data Platform MVP och oberoende BI
 > [Premium-kapacitetsscenarier](service-premium-capacity-scenarios.md)   
   
 Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
-
-||||||
