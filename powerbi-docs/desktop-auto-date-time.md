@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/23/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 8789986e94c860bffc622d903e33b4f1edabdd2d
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 1f350e8ff888ffc2fd95e6c47bf84ccc96ebf88b
+ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74696174"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "75000168"
 ---
 # <a name="auto-datetime-in-power-bi-desktop"></a>Automatiskt datum/tid i Power BI Desktop
 
@@ -36,7 +36,7 @@ Varje automatisk datum/tidtabell är i själva verket en [beräknad tabell](desk
 
 Dessutom skapar Power BI en relation mellan kolumnen **Date** i datum/tid-tabellen och modellens datumkolumn.
 
-Den automatiska datum/tid-tabellen innehåller hela kalenderår och alla datumvärden som lagras i modellens datumkolumn. Om det tidigaste värdet i en datumkolumn till exempel är 20 mars 2016 och det senaste värdet är 23 oktober 2019 så innehåller tabellen 1 461 rader. Den visar en rad för varje datum under de fyra kalenderåren 2016 till 2019. När Power BI uppdaterar modellen så uppdateras också datum/tid-tabellen för att säkerställa att den alltid innehåller de datum som förekommer i datumkolumnen.
+Den automatiska datum/tid-tabellen innehåller hela kalenderår och alla datumvärden som lagras i modellens datumkolumn. Om det tidigaste värdet i en datumkolumn till exempel är 20 mars 2016 och det senaste värdet är 23 oktober 2019 så innehåller tabellen 1 461 rader. Den visar en rad för varje datum under de fyra kalenderåren 2016 till 2019. När Power BI uppdaterar modellen uppdateras också varje automatiskt datum- och tidsschema. På så sätt innehåller modellen alltid datum som omfattar värdena i datumkolumnen.
 
 Om det skulle gå att se raderna i en automatisk datum/tid-tabell skulle de se ut så här:
 
@@ -53,7 +53,7 @@ Om det skulle gå att se en automatisk datum/tid-tabell i modellvydiagrammet sku
 
 ## <a name="work-with-auto-datetime"></a>Arbeta med automatisk datum/tid
 
-När det finns en automatisk datum/tid-tabell för en datumkolumn (och kolumnen är synlig) visas inte kolumnen som ett fält för rapportförfattarna i fönstret **Fält**. I stället finns det ett expanderbart objekt med samma namn som datumkolumnen. Det är enkelt att hitta eftersom det är märkt med en kalenderikon. När rapportförfattarna expanderar kalenderobjektet ser de en hierarki med namnet **Datumhierarki**. Den här hierarkin har fyra nivåer: **Year**, **Quarter**, **Month** och **Day**.
+När det finns en automatisk datum/tidtabell för en datumkolumn (och kolumnen är synlig), hittar inte rapportförfattarna den kolumnen som ett fält i fönstret **Fält**. I stället finns det ett expanderbart objekt med samma namn som datumkolumnen. Det är enkelt att hitta eftersom det är märkt med en kalenderikon. När rapportförfattarna expanderar kalenderobjektet ser de en hierarki med namnet **Datumhierarki**. Den här hierarkin har fyra nivåer: **Year**, **Quarter**, **Month** och **Day**.
 
 ![Exempel på fönstret Fält, där Sales-tabellen har expanderats. Den innehåller fältet OrderDate, som är märkt med kalenderikonen. Den är expanderad och innehåller en hierarki med namnet Date Hierarchy. Den är också expanderad och innehåller fyra nivåer: Year, Quarter, Month och Day.](media/desktop-auto-date-time/auto-date-time-fields-pane-example.png)
 
@@ -93,7 +93,8 @@ Välj _Arkiv > Alternativ och inställningar > Alternativ_ i Power BI Desktop oc
 
 ## <a name="next-steps"></a>Nästa steg
 
-Mer information om automatisk datum/tid och relaterade ämnen finns i följande resurser:
+Mer information om ämnet i den här artikeln finns i följande resurser:
 
+- [Vägledning om automatiskt datum/tid i Power BI Desktop](guidance/auto-date-time.md)
 - [Konfigurera och använda datumtabeller i Power BI Desktop](desktop-date-tables.md)
 - Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)

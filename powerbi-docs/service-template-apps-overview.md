@@ -1,19 +1,19 @@
 ---
 title: Vad är Power BI-mallappar?
 description: Den här artikeln ger en översikt över Power BI-mallappar. Lär dig hur du skapar Power BI-appar med lite eller ingen kodning och distribuerar dem till Power BI-kunder.
-author: teddybercovitz
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/24/2019
-ms.author: tebercov
-ms.openlocfilehash: 4b4e32f787d2d262d604ff0745f8c028e9fff949
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 12/08/2019
+ms.author: painbar
+ms.openlocfilehash: f519665c78f8c96452091edb84ae9a40f9dc01ba
+ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73871328"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "75000055"
 ---
 # <a name="what-are-power-bi-template-apps"></a>Vad är Power BI-mallappar?
 
@@ -23,7 +23,16 @@ Mallappar ersätter nuvarande innehållspaket för tjänsten. Som Power BI-partn
 
 Du skapar mallappar som kunderna sedan kan ansluta och instantiera med sina egna konton. Som domänexperter kan de låsa upp data på ett användarvänligt sätt för företagsanvändarna.  
 
-Du skickar dina mallappar till Cloud Partner Portal. Apparna blir sedan allmänt tillgängliga i Power BI-appgalleriet (app.powerbi.com/getdata/services) och på Microsoft AppSource (appsource.microsoft.com). Här ges en översikt över hur allmänt tillgängliga mallappar skapas.  
+Du skickar dina mallappar till Cloud Partner Portal. Apparna blir sedan offentligt tillgängliga i [Power BI Apps Marketplace](https://app.powerbi.com/getdata/services) och på [Microsoft AppSource](https://appsource.microsoft.com/?product=power-bi). Här ges en översikt över hur allmänt tillgängliga mallappar skapas.
+
+## <a name="power-bi-apps-marketplace"></a>Marketplace för Power BI-appar
+
+Med Power BI Template Apps kan Power BI Pro- eller Power BI Premium-användare få omedelbara insikter genom förpaketerade instrumentpaneler och rapporter som kan anslutas till realtidsdatakällor. Det finns många Power BI-appar som redan finns i [Power BI Apps Marketplace](https://app.powerbi.com/getdata/services).
+
+|  |
+|     :---:      |
+| [![Foo](./media/service-template-apps-overview/project-web.png)](https://app.powerbi.com/groups/me/getapps/services/office365mon.office365mon_powerbi_v3) [![Foo](./media/service-template-apps-overview/azure-backup.png)](https://app.powerbi.com/groups/me/getapps/services/pbi-azurebackup.pbi-azurebackup-template) [![Foo](./media/service-template-apps-overview/dynamics-sales.png)](https://app.powerbi.com/groups/me/getapps/services/microsoftdynsmb.businesscentral_sales) [![Foo](./media/service-template-apps-overview/forms-pro.png)](https://app.powerbi.com/groups/me/getapps/services/msfp.formsprocustomersatisfaction) |
+|  |
 
 ## <a name="process"></a>Process
 Den generella processen för att utveckla och skicka in en mallapp består av flera steg. Vissa steg kan omfatta flera samtidiga aktiviteter.
@@ -48,20 +57,21 @@ Här är de övergripande stegen.
 
 1. [Granska kraven](#requirements) och se till att du uppfyller dem. 
 
-1. Skapa en rapport i Power BI Desktop. Använd parametrarna så att du kan spara den som en fil som andra kan använda. 
+2. Skapa en rapport i Power BI Desktop. Använd parametrarna så att du kan spara den som en fil som andra kan använda. 
 
-1. Skapa en arbetsyta för din mallapp i din klientorganisation på Power BI-tjänsten (app.powerbi.com). 
+3. Skapa en arbetsyta för din mallapp i din klientorganisation på Power BI-tjänsten (app.powerbi.com). 
 
-1. Importera PBIX-filen och lägg till innehåll, till exempel en instrumentpanel, i din app. 
+4. Importera PBIX-filen och lägg till innehåll, till exempel en instrumentpanel, i din app. 
 
-1. Skapa ett testpaket för att testa mallappen själv inom din organisation. 
+5. Skapa ett testpaket för att testa mallappen själv inom din organisation. 
 
-1. Höj upp testappen till förproduktion för att skicka appen för validering i AppSource och testa den utanför din klientorganisation. 
+6. Höj upp testappen till förproduktion för att skicka appen för validering i AppSource och testa den utanför din klientorganisation. 
 
-1. Skicka innehållet till Cloud Partner Platform för publicering. 
+7. Skicka innehållet till Cloud Partner Platform för publicering. 
 
-1. Se till att ditt erbjudande är aktivt (publicerat) i AppSource och flytta appen till produktion i Power BI.
-2. Nu kan du börja utveckla nästa version i samma arbetsyta i förproduktion. 
+8. Se till att ditt erbjudande är aktivt (publicerat) i AppSource och flytta appen till produktion i Power BI.
+
+9. Nu kan du börja utveckla nästa version i samma arbetsyta i förproduktion. 
 
 ## <a name="requirements"></a>Krav
 
@@ -80,6 +90,19 @@ För att kunna publicera en mallapp i Power BI-tjänsten och AppSource måste du
 - Aktivera dataanpassning, till exempel stöd för anpassade anslutningar och konfiguration av parametrar i installationsprogrammet.
 
 Se [Tips för att skapa mallappar i Power BI](service-template-apps-tips.md) för fler förslag.
+
+## <a name="known-limitations"></a>Kända begränsningar
+
+| Funktion | Kända begränsningar |
+|---------|---------|
+|Innehåll:  Datauppsättningar   | Det ska finnas exakt en datauppsättning. Endast de datauppsättningar som finns inbyggda i Power BI Desktop (.pbix-filer) är tillåtna. <br>Stöds ej: Datauppsättningar från andra mallar, datauppsättningar mellan arbetsytor, sidnumrerade rapporter (RDL-filer), Excel-arbetsböcker |
+|Innehåll: Instrumentpaneler | Realtidspaneler godkänns inte (dvs. inget stöd för push eller strömmande datamängder) |
+|Innehåll: Dataflöden | Stöds ej: Dataflöden |
+|Innehåll från filer | Endast PBIX-filer är tillåtna. <br>Stöds inte: RDL-filer (sidnumrerade rapporter), Excel-arbetsböcker   |
+| Datakällor | Datakällor som har stöd för schemalagd datauppdatering i molnet är tillåtna. <br>Stöds ej: <li> DirectQuery</li><li>Live-anslutningar (inte Azure AS)</li> <li>Lokala datakällor (personlig gateway och företagsgateway stöds inte)</li> <li>Realtid (pushdatamängder stöds inte)</li> <li>Sammansatta modeller</li></ul> |
+| Datauppsättning: över arbetsytor | Inga datauppsättningar över arbetsytor är tillåtna  |
+| Frågeparametrar | Stöds ej: Parametrar av typen ”Any” eller ”Binary” blockerar uppdateringsåtgärden för datauppsättningen |
+| Anpassade visuella objekt | Bara som offentligt tillgängliga anpassade visuella objekt stöds. [Anpassade visuella objekt för organisationer](developer/power-bi-custom-visuals-organization.md) stöds inte |
 
 ## <a name="support"></a>Support
 Använd [https://powerbi.microsoft.com/support](https://powerbi.microsoft.com/support) för support under utveckling. Vi övervakar och hanterar den här webbplatsen aktivt. Kundincidenter når snabbt ett lämpligt team.

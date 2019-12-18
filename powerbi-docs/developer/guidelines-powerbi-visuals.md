@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 07/16/2019
-ms.openlocfilehash: 10e7ab035f17715bba858fc3b055c5bf47af1331
-ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
+ms.openlocfilehash: 6bf7610a010a72248a3d2fdd96718eea513a68da
+ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74565488"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "75000099"
 ---
 # <a name="guidelines-for-power-bi-visuals"></a>Riktlinjer för visuella objekt för Power BI
 Innan du [publicerar](https://docs.microsoft.com/power-bi/developer/office-store) ditt visuella Power BI-objekt till Microsoft AppSource så att andra kan upptäcka och använda det ska du se till att följa riktlinjerna så att användarna får en bra upplevelse.
@@ -50,7 +50,12 @@ Du kan använda ett popup-fönster för att förklara hur man köper en licens n
 
 ### <a name="submission-process"></a>Insändningsprocess
 
-Utvecklare laddar upp sina visuella Power BI-objekt med köp via app till Microsoft AppSource via instrumentpanelen för försäljning, precis som med kostnadsfria visuella objekt. För att visa att det inlämnade visuella Power BI-objektet har IAP-funktioner måste utvecklare skriva följande i anteckningarna på instrumentpanelen för försäljning: ”Visual with in-app purchase” (Visuellt objekt med köp i appen). Utvecklare måste också ange en licensnyckel eller token så att verifieringsteamet kan validera IAP-funktioner. När det visuella Power BI-objektet har verifierats och godkänts står det ”Ytterligare köp kan krävas” under priset för det visuella Power BI-objektet med köp via app i Microsoft AppSource.
+Följ [sändningsprocessen](office-store.md#submitting-to-appsource) och gå sedan till fliken *produktkonfiguration* och markera kryssrutan *Produkten kräver köp av en tjänst*.
+
+När det visuella Power BI-objektet har verifierats och godkänts står det ”Ytterligare köp kan krävas” under priset för det visuella Power BI-objektet med köp via app i Microsoft AppSource.
+
+>[!NOTE]
+>Om visuella Power BI-objekt redan har sänts med [Seller Dashboard](https://docs.microsoft.com/office/dev/store/use-the-seller-dashboard-to-submit-to-the-office-store) och du vill lägga till en IAP-funktion måste du skriva ”Visuellt objekt med köp i appen” i anteckningarna i Seller Dashboard. Du måste också ange en licensnyckel eller token så att verifieringsteamet kan validera IAP-funktionerna.
 
 ## <a name="context-menu"></a>Snabbmeny
 Snabbmenyn är den högerklicksmeny som visas när användaren hovrar över ett visuellt objekt.

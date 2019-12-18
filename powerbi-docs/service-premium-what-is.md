@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/28/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 9434aa717ad10791e75366cf23ef8ece567389ea
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 37107c1092b12a8efc230718c624f104aa31520f
+ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74699140"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74958573"
 ---
 # <a name="what-is-power-bi-premium"></a>Vad är Power BI Premium?
 
@@ -29,16 +29,17 @@ Power BI Premium tillhandahåller dedikerade och förbättrade resurser för kö
 > * Stöd för datahemvist per region (Multi-Geo)
 > * Dela data med vem som helst utan köpa en licens per användare
 
-Den här artikeln introducerar viktiga funktioner i Power BI Premium. Vid behov ges länkar till fler artiklar med mer detaljerad information.
+Den här artikeln introducerar viktiga funktioner i Power BI Premium. Vid behov ges länkar till fler artiklar med mer detaljerad information. Mer information om Power BI Pro och Power BI Premium finns i avsnittet _Jämförelse av Power BI-funktioner_ i [Power BI-prissättning](https://powerbi.microsoft.com/pricing/).
 
 ## <a name="subscriptions-and-licensing"></a>Prenumerationer och licensiering
 
 Power BI Premium är en prenumeration på klientnivå för Office 365, tillgänglig för två SKU-serier (lagerhållningsenhet):
 
-- **EM**-SKU:er (EM1–EM3) för inbäddning kräver ett årligt åtagande och faktureras månadsvis. EM1- och EM2-SKU:er är endast tillgängliga via planer med volymlicensiering. Du kan inte köpa dem direkt.
 - **P**-SKU:er (P1–P3) för inbäddning och företagsfunktioner kräver ett månatligt eller årsvis åtagande, faktureras månadsvis och inkluderar en licens för installation av Power BI-rapportservern lokalt.
 
-En annan metod är att köpa en **Azure Power BI Embedded**-prenumeration, som har en enda **A**-SKU-familj (A1–A6) som endast är avsedd för inbäddnings- och kapacitetstestning. Alla SKU:er levererar virtuella kärnor för att skapa kapaciteter, men EM-SKU:er är begränsade till inbäddning i mindre skala. EM1-, EM2-, A1- och A2-SKU:er med färre än fyra kärnor körs inte på dedikerad infrastruktur.
+- **EM**-SKU:er (EM1–EM3) för _organisatorisk_ inbäddning kräver ett årligt åtagande och faktureras månadsvis. EM1- och EM2-SKU:er är endast tillgängliga via planer med volymlicensiering. Du kan inte köpa dem direkt.
+
+En annan metod är att köpa en **Power BI Embedded**-prenumeration i Azure. Det finns en enda **A**-SKU (A1-A6) som inte kräver något åtagande och debiteras per användningstimme för vitmärkning av Power BI i program, portaler och webbplatser eller som ett sätt att testa P- eller EM-kapaciteter. Alla SKU:er levererar virtuella kärnor för att skapa kapaciteter, men EM-SKU:er är begränsade till inbäddning i mindre skala. EM1-, EM2-, A1- och A2-SKU:er med färre än fyra kärnor körs inte på dedikerad infrastruktur.
 
 Även om detta fokuset i den här artikeln ligger på P-SKU:er är mycket av det som beskrivs även relevant för A-SKU:er. Till skillnad från SKU:er för Premium-prenumeration, kräver Azure SKU:er ingen tid för åtagande och de faktureras per timme. De levererar fullständig flexibilitet att aktivera uppskalning, nedskalning, pausa, återuppta och ta bort. 
 
@@ -50,7 +51,11 @@ Power BI Premium-prenumerationer köps av administratörer i Microsoft 365 Admin
 
 ## <a name="dedicated-capacities"></a>Dedikerade kapaciteter
 
-Med Power BI Premium får du *dedikerade kapaciteter*. Till skillnad från en delad kapacitet där arbetsbelastningar körs på dataresurser som delas med andra kunder är en dedikerad kapacitet för exklusiv användning av en organisation. Den är isolerad med dedikerade resurser som ger pålitlig och konsekvent prestanda för värdbaserat innehåll. 
+Med Power BI Premium får du *dedikerade kapaciteter*. Till skillnad från en delad kapacitet där arbetsbelastningar körs på dataresurser som delas med andra kunder är en dedikerad kapacitet för exklusiv användning av en organisation. Den är isolerad med dedikerade resurser som ger pålitlig och konsekvent prestanda för värdbaserat innehåll. Observera att följande resurser lagras i delad kapacitet i stället för din dedikerade kapacitet:
+
+* Excel-arbetsböcker (såvida inte data först importeras till Power BI Desktop)
+* [Push-överför datauppsättningar](/rest/api/power-bi/pushdatasets)
+* [Direktuppspelande datauppsättningar](service-real-time-streaming.md#set-up-your-real-time-streaming-dataset-in-power-bi)
 
 Arbetsytor förvaras i kapaciteter. Varje Power BI-användare har en personlig arbetsyta som kallas **Min arbetsyta**. Du kan skapa fler arbetsytor, så kallade **arbetsytor**, för samarbete och distribution. Som standard skapas arbetsytor, däribland personliga arbetsytor, i den delade kapaciteten. När du har Premium-kapaciteter kan både Mina arbetsytor och arbetsytor tilldelas till Premium-kapaciteter.
 
@@ -77,6 +82,9 @@ Resurser och begränsningar för varje Premium-SKU (och en A-SKU med motsvarande
 | P2/A5 | 16 | 8 | 50 | 8 | 60 | 12 |
 | P3/A6 | 32 | 16 | 100 | 16 | 120 | 24 |
 | | | | | | | |
+
+> [!NOTE]
+> Användning av ett enda större SKU (t.ex. ett P2-SKU) kan vara bättre än att kombinera mindre SKU:er (t.ex. två P1-SKU:er). Du kan till exempel använda större modeller och uppnå bättre parallellitet med P2.
 
 ### <a name="capacity-workloads"></a>Kapacitetsarbetsbelastningar
 
@@ -235,5 +243,3 @@ Mer information finns i [Ansluta till datamängder med klientprogram och verktyg
 > [Hantera Premium-kapaciteter](service-premium-capacity-manage.md)
 
 Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
-
-||||||

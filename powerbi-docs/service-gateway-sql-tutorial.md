@@ -9,12 +9,12 @@ ms.topic: tutorial
 ms.date: 07/15/2019
 ms.author: arthii
 LocalizationGroup: Gateways
-ms.openlocfilehash: 0ab5831cb1cf4af28a56711475b7ba6a5683b5d5
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 100417202fca148be0e2e976ce0cd84167c803d9
+ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74699324"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74958456"
 ---
 # <a name="refresh-data-from-an-on-premises-sql-server-database"></a>Uppdatera data från en lokal SQL Server-databas
 
@@ -46,9 +46,13 @@ Gör enligt nedan för att skapa en grundläggande Power BI-rapport med Adventur
 
 1. I Power BI Desktop går du till fliken **Start** och väljer **Hämta data** \> **SQL Server**.
 
-2. I dialogrutan **SQL Server-databas** anger du namnen för **Server** och **Databas (valfritt)** . Kontrollera att **Läge för dataanslutning** är satt till **Import** och välj sedan **OK**.
+2. I dialogrutan **SQL Server-databas** anger du namnen för **Server** och **Databas (valfritt)**. Kontrollera att **Läge för dataanslutning** är satt till **Import** och välj sedan **OK**.
 
     ![SQL Server-databas](./media/service-gateway-sql-tutorial/sql-server-database.png)
+
+    Vi använder inte **Avancerade alternativ** i den här självstudien, men observera att du kan ange ett SQL-uttryck och ange andra alternativ som att använda [SQL Server-redundans](/sql/database-engine/availability-groups/windows/failover-clustering-and-always-on-availability-groups-sql-server).
+
+    ![Avancerade alternativ för SQL Server](media/service-gateway-sql-tutorial/sql-server-advanced-options.png)
 
 3. Verifiera dina **autentiseringsuppgifter** och välj sedan **Anslut**.
 
@@ -69,7 +73,7 @@ Gör enligt nedan för att skapa en grundläggande Power BI-rapport med Adventur
 
     ![Fönstret Fält](./media/service-gateway-sql-tutorial/fields-pane.png)
 
-5. Dra **EndDate** till **Rapportnivåfilter**. Under **Basfiltrering** markerar du bara kryssrutan för **(Tom)** .
+5. Dra **EndDate** till **Rapportnivåfilter**. Under **Basfiltrering** markerar du bara kryssrutan för **(Tom)**.
 
     ![Rapportnivåfilter](./media/service-gateway-sql-tutorial/report-level-filters.png)
 
@@ -130,7 +134,7 @@ I Power BI Desktop anslöt du direkt till din lokala SQL Server-databas, men Pow
 
 Nu har du anslutit din datauppsättning i Power BI till din SQL Server-databas lokalt, via en datagateway. Följ stegen nedan för att konfigurera ett uppdateringsschema. Uppdatera din datauppsättning enligt ett schema, för att se till att dina rapporter och instrumentpaneler alltid är uppdaterade med senaste data.
 
-1. I navigeringsfönstret öppnar du **Min arbetsyta** \> **Datauppsättningar**. Välj ellipsen ( **...** ) för datauppsättningen **AdventureWorksProducts**. Välj sedan **Uppdateringsschema**.
+1. I navigeringsfönstret öppnar du **Min arbetsyta** \> **Datauppsättningar**. Välj ellipsen (**...**) för datauppsättningen **AdventureWorksProducts**. Välj sedan **Uppdateringsschema**.
 
     > [!NOTE]
     > Kontrollera att du väljer ellipsen för **AdventureWorksProducts**-datauppsättningen och inte de tre punkterna för rapporten med samma namn. Snabbmenyn för **AdventureWorksProducts**-rapporten innehåller inte alternativet **Uppdateringsschema**.
@@ -164,7 +168,7 @@ Följ nu dessa steg så att uppdaterade data kan överföras via gateway-anslutn
 
 1. I navigeringsfönstret i Power BI-tjänsten väljer du att expandera **Min arbetsyta**.
 
-2. Under **Datauppsättningar**, för datauppsättningen **AdventureWorksProducts** väljer du ellipsen ( **. . .** ). Välj sedan **Uppdatera nu**.
+2. Under **Datauppsättningar**, för datauppsättningen **AdventureWorksProducts** väljer du ellipsen (**. . .**). Välj sedan **Uppdatera nu**.
 
     ![Uppdatera nu](./media/service-gateway-sql-tutorial/refresh-now.png)
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/29/2019
 ms.author: preetikr
 LocalizationGroup: Connect to data
-ms.openlocfilehash: e5374397dc9b89df7b7cbd86cfca5a44631b94e4
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: ef8e874c1f1a47d65845b87dccd441746651a68b
+ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876494"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "74999800"
 ---
 # <a name="connect-to-the-microsoft-graph-security-api-in-power-bi-desktop"></a>Anslut till Säkerhets-API för Microsoft Graph i Power BI Desktop
 
@@ -40,7 +40,7 @@ Din Azure AD-innehavaradministratör kan använda någon av de här metoderna f�
 
 * Svara på en begäran som logikappen skickar under sin första genomgång av [programtillåtelsen](https://docs.microsoft.com/azure/active-directory/develop/application-consent-experience)
    
-Det användarkonto som används för att logga in till anslutningsappen för Microsoft Graph-säkerhet måste vara medlem i rollen Säkerhetsläsare begränsad administratör i Azure AD, antingen *Säkerhetsläsare*  eller  *Säkerhetsadministratör*. Se avsnittet om att [tilldela Azure AD-roller till användare](https://docs.microsoft.com/graph/security-authorization#assign-azure-ad-roles-to-users).
+Det användarkonto som används för att logga in till anslutningsappen för Microsoft Graph-säkerhet måste vara tilldelad rollen Säkerhetsläsare i Azure AD, **om** användaren inte är medlem i rollen *Säkerhetsadministratör*. Se avsnittet om att [tilldela Azure AD-roller till användare](https://docs.microsoft.com/graph/security-authorization#assign-azure-ad-roles-to-users).
 
 ## <a name="using-the-microsoft-graph-security-connector"></a>Med anslutningsappen för Microsoft Graph-säkerhet
 
@@ -48,7 +48,7 @@ Följ stegen nedan för att använda anslutningsappen:
 
 1. Välj **Hämta data** > **Mer** från menyfliksområdet **Start** i Power BI Desktop.
 2. Välj **Onlinetjänster** från kategorilistan till vänster i fönstret.
-3. Välj **Microsoft Graph Security (Beta)** .
+3. Välj **Microsoft Graph Security (Beta)**.
 
     ![Dialogrutan Hämta data](media/desktop-connect-graph-security/GetData.PNG)
     

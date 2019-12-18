@@ -9,18 +9,18 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 12/11/2018
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 8c28c5ee89ffee37c09db8dc6ffcd6fb90274786
-ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
+ms.openlocfilehash: f11636de003aaab2d10d595b3c2b0230e373410c
+ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74102098"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "74999846"
 ---
 # <a name="organizational-visuals-in-power-bi"></a>Visuella objekt för organisationer i Power BI
 
 Du kan använda visuella Power BI-objekt med Power BI om du vill skapa en unik typ av visuella objekt som är skräddarsydd för dig. Dessa visuella Power BI-objekt skapas av utvecklare, och de skapas ofta när flera av de visuella objekt som ingår i Power BI inte riktigt uppfyller deras behov.
 
-I vissa organisationer är visuella Power BI-objekt ännu viktigare – de kan vara nödvändiga för att förmedla specifika data eller insikter som är unika för organisationen, de kan ha särskilda datakrav eller de kan lyfta fram privata affärsmetoder. Sådana organisationer behöver utveckla visuella Power BI-objekt, dela dem i hela organisationen och se till att de är underhålls ordentligt. Med visuella Power BI-objekt i Power BI kan organisationer göra just detta.
+I vissa organisationer är visuella Power BI-objekt ännu viktigare – de kan vara nödvändiga för att förmedla specifika data eller insikter som är unika för organisationen, de kan ha särskilda datakrav eller de kan lyfta fram privata affärsmetoder. Sådana organisationer behöver utveckla visuella Power BI-objekt, dela dem i hela organisationen och se till att de är underhålls ordentligt. Med visuella Power BI-objekt kan organisationer göra just detta.
 
 I följande bild visas den process genom vilken organisationens visuella Power BI-objekt i Power BI flödar från administratören, via utveckling och underhåll, för att slutligen hamna hos dataanalytikern.
 
@@ -55,10 +55,10 @@ Slutanvändare:
 
 ## <a name="troubleshoot"></a>Felsök
 
-Information om felsökning finns i [Felsöka dina visuella Power BI-objekt i Power BI](power-bi-custom-visuals-troubleshoot.md).
+Information om felsökning finns i [Felsöka dina visuella Power BI-objekt](power-bi-custom-visuals-troubleshoot.md).
 
 ## <a name="faq"></a>Vanliga frågor och svar
 
-Mer information och svar på frågor finns i [Vanliga frågor och svar om visuella Power BI-objekt i Power BI](power-bi-custom-visuals-faq.md#organizational-visuals).
+Mer information och svar på frågor finns i [Vanliga frågor och svar om visuella Power BI-objekt](power-bi-custom-visuals-faq.md#organizational-power-bi-visuals).
 
 Har du fler frågor? [Testa Power BI Community](https://community.powerbi.com/).

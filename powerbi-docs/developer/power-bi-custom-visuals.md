@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 05/15/2019
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e68d886564552d1b1cb2dc9e7c018c65a5cca039
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.openlocfilehash: 1d176941f04bdaf06c9cdeda65271769098268fb
+ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74265197"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "74999823"
 ---
 # <a name="visuals-in-power-bi"></a>Visuella objekt i Power BI
 
@@ -168,11 +168,11 @@ Du har två alternativ för att ladda ned och importera visuella Power BI-objekt
 
 ## <a name="troubleshoot"></a>Felsök
 
-Information om felsökning finns i [Felsöka visuella Power BI-objekt i Power BI](power-bi-custom-visuals-troubleshoot.md).
+Information om felsökning finns i [Felsöka visuella Power BI-objekt](power-bi-custom-visuals-troubleshoot.md).
 
 ## <a name="faq"></a>Vanliga frågor och svar
 
-Mer information och svar på frågor finns i [Vanliga frågor och svar om visuella Power BI-objekt i Power BI](power-bi-custom-visuals-faq.md#organizational-visuals).
+Mer information och svar på frågor finns i [Vanliga frågor och svar om visuella Power BI-objekt](power-bi-custom-visuals-faq.md#organizational-power-bi-visuals).
 
 ## <a name="next-steps"></a>Nästa steg
 

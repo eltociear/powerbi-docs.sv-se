@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 10/10/2019
+ms.date: 12/03/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 4ce5eab22538b7abdded2759a4a072fd500575ea
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 889fbce483f839147677789c73d826fa23542731
+ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74699232"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "75000122"
 ---
 # <a name="configure-kerberos-based-sso-from-power-bi-service-to-on-premises-data-sources"></a>Konfigurera Kerberos-baserad enkel inloggning från Power BI-tjänsten till lokala datakällor
 
@@ -66,6 +66,22 @@ Börja med att kontrollera om ett SPN redan har skapats för det domänkonto som
    ```setspn -a gateway/MyGatewayMachine Contoso\GatewaySvc```
 
    Ett sätt att ange SPN är med MMC-snapin-modulen **Active Directory - användare och datorer**.
+   
+### <a name="add-gateway-service-account-to-windows-authorization-and-access-group-if-required"></a>Lägg till gatewaytjänstkontot i auktoriserings- och åtkomstgruppen för Windows om det behövs
+
+I vissa fall måste gatewaytjänstkontot läggas till i auktoriserings- och åtkomstgruppen för Windows. De här scenarierna omfattar säkerhetshärdning av Active Directory-miljön och när gatewaytjänstkontot och de användarkonton som gatewayen ska personifiera finns i separata domäner eller skogar. Du kan också lägga till gatewaytjänstkontot i auktoriserings- och åtkomstgruppen för Windows i situationer då domänen/skogen inte har härdats, men detta är inte obligatoriskt.
+
+Mer information finns i [auktoriserings- och åtkomstgruppen för Windows](/windows/security/identity-protection/access-control/active-directory-security-groups#bkmk-winauthaccess).
+
+För att slutföra det här konfigurationssteget för varje domän som innehåller Active Directory-användare som du vill att gatewaytjänstkontot ska kunna personifiera:
+1. Logga in på en dator i domänen och starta MMC-snapin-modulen Active Directory-användare och -datorer.
+2. Leta upp gruppen **auktoriserings- och åtkomstgruppen för Windows** som vanligtvis finns i containern **Builtin**.
+3. Dubbelklicka på gruppen och klicka på fliken **Medlemmar**.
+4. Klicka på **Lägg till**och ändra domänplatsen till den domän där gatewaytjänstkontot finns.
+5. Ange kontonamnet för gatewaytjänsten och klicka på **Kontrollera namn** för att kontrollera att gatewaytjänstkontot är tillgängligt.
+6. Klicka på **OK**.
+7. Klicka på **Godkänn**.
+8. Starta om gatewaytjänsten.
 
 ### <a name="decide-on-the-type-of-kerberos-constrained-delegation-to-use"></a>Bestäm vilken typ av Kerberos-begränsad delegering som ska användas
 

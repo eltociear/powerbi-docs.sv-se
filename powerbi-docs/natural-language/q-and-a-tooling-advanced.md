@@ -7,19 +7,19 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/18/2019
 ms.author: mohaali
-ms.openlocfilehash: d1ae995c3e98befe776ac091a0312e281e97022e
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 64a6294ca30901c61928eca068ab4ebbb3d39638
+ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73875335"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74958527"
 ---
 # <a name="edit-qa-linguistic-schema-and-add-phrasings-in-power-bi-desktop"></a>Redigera språkschemat för Frågor och svar och lägga till fraser i Power BI Desktop 
 Användning av vanliga fraser och naturligt språk för att ställa frågor till dina data är kraftfullt. Det är ännu mer kraftfullt när dina data svarar. När du ställer en fråga till Frågor och svar i Power BI, gör funktionen vad den kan för att svara korrekt. Du kan dock få ännu bättre interaktion med Frågor och svar genom att förbättra svaren. Ett sätt är att redigera språkschemat. 
 
-Allt börjar med dina företagsdata.  Ju bättre datamodell, desto lättare blir det för användarna att få relevanta svar. Ett sätt att förbättra modellen är att lägga till ett språkschema som definierar och kategoriserar terminologi och relationer mellan tabell- och kolumnnamn i din datauppsättning. Du hanterar dina språkscheman i Power BI Desktop. 
+Allt börjar med dina företagsdata.  Ju bättre datamodell, desto lättare blir det för användarna att få relevanta svar. Ett sätt att förbättra modellen är att lägga till ett språkschema som definierar och kategoriserar terminologi och relationer mellan tabell- och kolumnnamn i din datauppsättning. Du hanterar dina språkscheman i Power BI Desktop. 
 
-Frågor och svar har två sidor.  Den första är förberedelsen, eller *modelleringen*.  Den andra handlar om att ställa frågor och utforska data, alltså själva *användningen*. På vissa företag ansvarar särskilda anställda, kallade *datamodellerare* eller IT-administratörer, för att sätta ihop datamängderna, skapa datamodellerna och publicera datamängderna till Power BI.  Sedan är det andra anställda som ”använder” dessa data online.  På andra företag kombineras dessa roller. 
+Frågor och svar har två sidor.  Den första är förberedelsen, eller *modelleringen*.  Den andra handlar om att ställa frågor och utforska data, alltså själva *användningen*. På vissa företag ansvarar särskilda anställda, kallade *datamodellerare* eller IT-administratörer, för att sätta ihop datamängderna, skapa datamodellerna och publicera datamängderna till Power BI.  Sedan är det andra anställda som ”använder” dessa data online.  På andra företag kombineras dessa roller. 
 
 Den här artikeln är avsedd för datamodellerarna, de som optimerar datamängder för att ge bästa möjliga resultat från Frågor och svar. 
 

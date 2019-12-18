@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/26/2019
 ms.author: davidi
 LocalizationGroup: Reports
-ms.openlocfilehash: 125cb684cae6263d335ad959bb17d1e5c84f5f72
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: d949978d431a219845ed93b59eb52439c9d7f0c0
+ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73855886"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74958642"
 ---
 # <a name="analyze-in-excel"></a>Analysera i Excel
 Det finns tillfällen när du kanske vill använda Excel för att visa och interagera med en datauppsättning som du har i Power BI. Med **Analysera i Excel** kan du göra just det och komma åt funktionerna för pivottabell, diagram och utsnitt i Excel baserat på den datauppsättning som finns i Power BI.
@@ -27,7 +27,7 @@ Det finns några krav för att använda **Analysera i Excel**:
 
 * Pivottabeller i Excel stöder inte dra och släpp-aggregering av numeriska fält. Datauppsättningen i Power BI *måste ha fördefinierade mått*.
 * Vissa organisationer kan ha grupprincipregler som förhindrar installation av nödvändiga **Analysera i Excel**-uppdateringar i Excel. Kontrollera med administratören om det inte går att installera uppdateringarna.
-* **Analysera i Excel** kräver att datauppsättningen finns i Power BI Premium eller att användaren har en Power BI Pro-licens. Mer information om skillnaderna i funktionalitet mellan de olika licenstyperna finns i [Power BI-funktioner efter licenstyp](service-features-license-type.md). 
+* **Analysera i Excel** kräver att datauppsättningen finns i Power BI Premium eller att användaren har en Power BI Pro-licens. Mer information om skillnaderna i funktionalitet mellan de olika licenstyperna finns i _Jämförelse av Power BI-funktioner_ i [Power BI-prissättning](https://powerbi.microsoft.com/pricing/).
 * Användare kan ansluta till datauppsättningar med hjälp av Analysera i Excel om de har läsbehörighet till den underliggande datauppsättningen.  En användare kan ha detta på flera olika sätt, till exempel genom att vara medlem i arbetsytan som innehåller datauppsättningen, ha en rapport eller instrumentpanel som delats till dem och som använder datauppsättningen, eller ha behörighet till en app som innehåller datauppsättningen.
 * **Analysera i Excel** är en funktion i Power BI-tjänsten och är inte tillgängligt i Power BI-rapportserver eller Power BI Embedded. 
 * **Analysera i Excel** stöds bara på datorer som kör Microsoft Windows.
