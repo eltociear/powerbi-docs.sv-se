@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 98a1fc1c394a81f743e622ec1756e6501a497fa3
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: cc85fb07f50a42952e9b293908a797b1cbac023f
+ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74699853"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74958366"
 ---
 # <a name="unable-to-add-power-bi-to-office-365-partner-subscription"></a>Det går inte att lägga till Power BI till en Office 365-partnerprenumeration
 
@@ -48,7 +48,7 @@ Om din partner inte erbjuder Power BI och du inte kan köpa direkt från Microso
 
 ## <a name="sign-up-for-a-free-trial"></a>Registrera dig för en kostnadsfri utvärderingsversion
 
-Du kan registrera dig för en kostnadsfri utvärderingsversion. Om du inte köper Power BI Pro i slutet av utvärderingsperioden har du fortfarande en kostnadsfri licens som erbjuder många av funktionerna i Power BI. Mer information finns i [Power-funktioner efter licenstyp](service-features-license-type.md).
+Du kan registrera dig för en kostnadsfri utvärderingsversion av Power BI. Om du inte köper Power BI Pro i slutet av utvärderingsperioden har du fortfarande en kostnadsfri licens som erbjuder många av funktionerna i Power BI. Mer information finns i [Registrera dig som enskild individ för Power BI](service-self-service-signup-for-power-bi.md).
 
 ### <a name="enable-ad-hoc-subscriptions"></a>Aktivera ad hoc-prenumerationer
 

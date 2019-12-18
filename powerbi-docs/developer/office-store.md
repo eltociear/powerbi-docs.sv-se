@@ -1,138 +1,106 @@
 ---
-title: Publicera visuella Power BI-objekt till AppSource
-description: Läs hur du kan publicera dina anpassade visuella objekt till AppSource där andra kan upptäcka och använda dem.
+title: Publicera visuella Power BI-objekt på Partnercenter
+description: Läs hur du kan publicera dina anpassade visuella objekt till på Partnercenter, så att andra kan upptäcka och använda dem
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
-ms.date: 3/27/2019
-ms.openlocfilehash: f8ca6aae805ae3184a1c54d8707fcb9a3cfd32e7
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.date: 12/02/2019
+ms.openlocfilehash: ec1bd8666a9d76b4ccfa7793415488f85a24dfdb
+ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74265252"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "74999932"
 ---
-# <a name="publish-power-bi-visuals-to-appsource"></a>Publicera visuella Power BI-objekt till AppSource
+# <a name="publish-power-bi-visuals-to-partner-center"></a>Publicera visuella Power BI-objekt på Partnercenter
 
-Läs hur du kan publicera dina anpassade visuella objekt till AppSource där andra kan upptäcka och använda dem.
-
-När du har skapat ditt anpassade visuella objekt, vill du kanske publicera det på AppSource så att andra kan hitta och använda det. Det finns vissa förberedelser som måste göras innan du kan göra det. Mer information om hur du skapar ett anpassat visuellt objekt finns i [Utveckla ett anpassat visuellt Power BI-objekt](visuals/custom-visual-develop-tutorial.md).
-
-   ![Office Store](media/office-store/appsource-01.png)
+När du har skapat ditt visuella Power BI-objekt, vill du kanske publicera det på AppSource så att andra kan hitta och använda det. Mer information om hur du skapar ett visuellt Power BI-objekt finns i [Utveckla ett visuellt Power BI-objekt](visuals/custom-visual-develop-tutorial.md).
 
 ## <a name="what-is-appsource"></a>Vad är AppSource?
 
-**AppSource** är det ställe där du hittar SaaS-appar och tillägg för dina Microsoft-produkter och tjänster. [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) ger miljontals användare av Office 365, Dynamics 365 och andra tillgång till lösningar som hjälper dem att få mer jobb gjort på ett effektivare sätt, med mer insikt och snyggare än tidigare.
+[AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) är det ställe där du hittar SaaS-appar och tillägg för dina Microsoft-produkter och tjänster.
 
-## <a name="preparing-to-submit-your-custom-visual"></a>Förbereda att skicka ditt anpassade visuella objekt
+![Office Store](media/office-store/appsource-01.png)
 
-När du har läst [riktlinjerna för visuella Power BI-objekt](guidelines-powerbi-visuals.md), kodat och [testat ditt anpassade visuella objekt](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/SubmissionTesting.md), samt har paketerat det i en pbiviz-fil, bör nedanstående vara klart för din överföring.
+## <a name="preparing-to-submit-your-power-bi-visual"></a>Förbereda att skicka ditt visuella Power BI-objekt
+
+Innan du skickar in ett visuellt Power BI-objekt till AppSource, så kontrollera att du har läst [Riktlinjer för visuella Power BI-objekt](guidelines-powerbi-visuals.md) och [testat dina anpassade visuella objekt](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/SubmissionTesting.md).
+
+När du är redo att skicka in ditt visuella Power BI-objekt, så verifiera att ditt visuella objekt uppfyller alla de krav som anges nedan.
 
 | Objekt | Krävs | Beskrivning |
 | --- | --- | --- |
-| Pbiviz-paketet innehåller alla metadata som krävs |Ja |Visuellt namn<br>Visningsnamn<br>GUID<br>Version<br>Beskrivning<br>Författarens namn och e-post |
-| Exempel på .pbix-rapportfil |Ja |Om du vill visa ditt visuella objekt bör du hjälpa användare att bekanta sig med det visuella objektet. Du bör fokusera på det mervärde som det visuella objektet medför till användaren och ge exempel på användningsområden, formateringsalternativ med mera. Du kan också lägga till en *”tips”* -sida på slutet med några tips och tricks, saker att undvika och liknande.<br>Exemplet på en .pbix-rapportfil måste fungera offline, utan någon extern anslutning. |
-| Ikon |Ja |Du bör inkludera den anpassade visuella logotypen som visas i Store. Formatet kan vara .png, .jpg, .jpeg eller .gif. Det måste vara exakt 300 px (bredd) x 300 px (höjd). **Viktigt!** Granska [snabbguiden](https://docs.microsoft.com/office/dev/store/craft-effective-appsource-store-images) noggrant innan du skickar ikonen. |
-| Skärmbilder |Ja |Du måste ange minst en skärmbild. Formatet kan vara .png, .jpg, .jpeg eller .gif. Det måste vara exakt 1366 px (bredd) x 768 px (höjd). Filstorleken får inte vara större än 1024 kB. *Lägg till textbubblor för att tydligt betona mervärdet av viktiga funktioner som visas i varje skärmbild.* |
-| Länk till nedladdningssupport |Ja |Ange en URL för att stödja kunder som har problem med ditt visuella objekt. Den här länken har angetts som en del av din SellerDashboard-registrering och är synlig för användare när de bereder sig åtkomst till ditt visuella objekts lista i AppSource. Formatet på URL:en ska inkludera https:// eller https://. |
-| Länk till sekretessdokumentet |Ja |Ange en länk till sekretesspolicyn för kunder som använder ditt visuella objekt. Den här länken har angetts som en del av din SellerDashboard-registrering och är synlig för användare när de bereder sig åtkomst till ditt visuella objekts lista i AppSource. Formatet på länken ska inkludera https:// eller https://. |
-| Licensavtal (EULA) |Ja |Du måste överföra ett licensavtal. Detta kan vara ditt eget licensavtal eller standardlicensavtalet från Office Store för visuella objekt i Power BI. Om du vill använda standardlicensavtalet klistrar du in följande URL i dialogrutan för filöverföring av ”Licensavtal” i försäljningsinstrumentpanelen: [https://visuals.azureedge.net/app-store/Power BI - Default Custom Visual EULA.pdf](https://visuals.azureedge.net/app-store/Power%20BI%20-%20Default%20Custom%20Visual%20EULA.pdf). |
-| Videolänk |Nej |Om du vill öka användarnas intresse för ditt anpassade visuella objekt är det bäst att ange en länk till en video om ditt visuella objekt. Formatet på URL:en ska inkludera https:// eller https://. |
-| GitHub-lagringsplats |Nej |Det är lämpligt att ha en giltig och offentlig länk till en [GitHub](https://www.github.com)-databas med datakällor för ditt visuella objekt och exempeldata, så att andra utvecklare kan ge feedback och föreslå förbättringar för din kod. |
+| Pbiviz-paket |Ja |Packa ditt visuella Power BI-objekt i ett Pbiviz-paket som innehåller alla nödvändiga metadata.<br>Visuellt namn<br>Visningsnamn<br>GUID<br>Version<br>Beskrivning<br>Författarens namn och e-post |
+| Exempel på .pbix-rapportfil |Ja |Om du vill visa ditt visuella objekt bör du hjälpa användarna att bekanta sig med det. Fokusera på det mervärde som det visuella objektet medför för användaren och ge exempel på användningsområden och formateringsalternativ. Du kan också lägga till en sida med *tips* på slutet med olika tips och saker att undvika och liknande.<br>Exemplet på en .pbix-rapportfil måste fungera offline, utan några externa anslutningar. |
+| Ikon |Ja |Du bör inkludera den anpassade visuella logotypen som visas i Store. Formatet kan vara .png, .jpg, .jpeg eller .gif. Det måste vara exakt 300 px (bredd) x 300 px (höjd).<BR>**Viktigt!** Studer guiden [AppSource-lageravbildningar](https://docs.microsoft.com/office/dev/store/craft-effective-appsource-store-images) noga innan du skickar in ikonen. |
+| Skärmbilder |Ja |Du måste tillhandahålla minst en skärmbild. Formatet kan vara .png, .jpg, .jpeg eller .gif. Måtten måste vara exakt 1366 px (bredd) x 768 px (höjd). Filens storlek får inte överstiga 1024 kb.<br>Lägg till textbubblor som tydligt betonar mervärdet av de viktiga funktioner som visas på respektive skärmbild. |
+| Länk till nedladdningssupport |Ja |Tillhandahåll en support-URL för dina kunder. Den här länken har angetts som en del av din SellerDashboard-registrering och är synlig för användana när får åtkomst till ditt visuella objekts lista i AppSource. Formatet på URL:en ska inkludera https:// eller https://. |
+| Länk till sekretessdokumentet |Ja |Tillhandahåll en länk till det visuella objektets sekretesspolicy. Den här länken har angetts som en del av din SellerDashboard-registrering och är synlig för användana när får åtkomst till ditt visuella objekts lista i AppSource. Formatet på länken ska inkludera https:// eller https://. |
+| Licensavtal (EULA) |Ja |Du måste överföra en licensavtalsfil. Detta kan vara ditt eget licensavtal eller standardlicensavtalet från Office Store för visuella Power BI-objekt. Om du vill använda standardlicensavtalet klistrar du in följande URL i dialogrutan för filöverföring av ”Licensavtal” på försäljningsinstrumentpanelen. [https://visuals.azureedge.net/app-store/Power BI - Default Custom Visual EULA.pdf](https://visuals.azureedge.net/app-store/Power%20BI%20-%20Default%20Custom%20Visual%20EULA.pdf). |
+| Videolänk |Nej |Om du vill öka användarnas intresse för ditt anpassade visuella objekt, så tillhandahåll en länk till en video om ditt visuella objekt. Formatet på URL:en ska inkludera https:// eller https://. |
+| GitHub-lagringsplats |Nej |Dela en offentlig länkt till ett [GitHub](https://www.github.com)-centrallager med källor till dina visuella Power BI-objekt och exempeldata. På så vis får andra utvecklare möjlighet att komma med feedback och föreslå förbättringar av din kod. |
 
-## <a name="submitting-to-power-bi"></a>Publicera till Power BI
+## <a name="getting-an-app-package-xml"></a>Skaffa appakets-XML
 
-Publiceringen börjar med att skicka ett e-postmeddelande till Power BI-teamet för överföring av visuella Power BI-objekt. Du kan skicka e-post till [pbivizsubmit@microsoft.com](mailto:pbivizsubmit@microsoft.com).
+Om du vill skicka in ett visuellt Power BI-objekt behöver du ett appakets-XML från Power BI-teamet. Om du vill ha ett appakets-XML, så skicka ett e-postmeddelande till teamet för visuella Power BI-objekt ([pbivizsubmit@microsoft.com](mailto:pbivizsubmit@microsoft.com)).
 
-> [!IMPORTANT]
-> Du måste fylla i följande fält i filen pbiviz.json: ”beskrivning”, ”supportUrl”, ”författare”, ”namn” och ”e-post” innan du skapar .pbiviz-paketet.
+Innan du skapar **pbiviz**-paketet måste du fylla i följande fält i **pbiviz.json**-filen:
+* beskrivning
+* supportUrl
+* författare
+* namn
+* e-post
 
-Bifoga **.pbiviz-filen** och **.pbix-filen med exempelrapporten** i ditt e-postmeddelande. Power BI-teamet kommer att svara med instruktioner och en XML-appaketsfil att överföra. Det här XML-appaketet krävs för att skicka ditt visuella objekt via Office Developer Center.
+Bifoga **pbiviz-filen** och **pbix-filen med exempelrapporten** i ditt e-postmeddelande. Power BI-teamet kommer att svara med instruktioner och en XML-appaketsfil att överföra. Det här XML-appaketet krävs för att skicka ditt visuella objekt via Office Developer Center.
 
 > [!NOTE]
 > För att förbättra kvaliteten och säkerställa att befintliga rapporter inte slutar fungera, tar det ytterligare 2 veckor för uppdateringar i befintliga visuella objekt att nå produktionsmiljön efter att de har godkänts i Store.
 
 ## <a name="submitting-to-appsource"></a>Skicka in till AppSource
 
-När du har hämtat XML-appaketet från Power BI-teamet, går du till [Developer Center](https://sellerdashboard.microsoft.com/Application/Summary) för att skicka ditt visuella objekt till AppSource.
+Om du vill skicka in ditt visuella Power BI-objekt till AppSource måste du skaffa ett appaket från Power BI-teamet och sedan skicka det till Partnercenter. 
 
-> [!NOTE]
-> Du måste ha ett giltigt Office-utvecklarkonto för att logga in på [Office Developer Center](https://dev.office.com/). Ett Office-utvecklarkonto måste vara ett Microsoft-konto (Live ID, t.ex. hotmail.com eller outlook.com).
+### <a name="getting-the-app-package"></a>Hämta appaketet
 
-> [!IMPORTANT]
-> Innan du skickar till AppSource, måste du skicka ett e-postmeddelande med .pbiviz-filen och .pbx-filen till Power BI-teamet. På så vis kan Power BI-teamet överföra filerna till en offentlig resursserver. Annars kommer butiken inte att hämta filerna. Du måste skicka filerna med varje ny inlämning av visuella objekt, uppdatering av visuella objekt och korrigeringar av avvisade inlämningar.
+Innan du skickar till AppSource, måste du skicka ett e-postmeddelande med **pbiviz**-filen och **pbx**-filen till Power BI-teamet. På så vis kan Power BI-teamet överföra filerna till en offentlig resursserver. Annars kommer butiken inte att hämta filerna. 
 
-### <a name="process-to-submit-visual"></a>Processen för att skicka visuella objekt
+Power BI-teamet måste kontrollera filerna för varje ny överföring av visuella Power BI-objekt, uppdateringar av visuella Power BI-objekt och korrigeringar av avvisade överföringar.
 
-Slutför överföringen genom att följa stegen.
+### <a name="submitting-to-partner-center"></a>Skicka in till Partnercenter
 
-1. Välj **lägg till en app**.
+Om du vill skicka in dina visuella Power BI-objekt till Partnercenter så måste du vara registrerad hos ditt Partnercenter. Om du inte har registrerat dig ännu så [öppna ett utvecklarkonto i Partnercenter](https://docs.microsoft.com/office/dev/store/open-a-developer-account).
 
-    ![Lägga till en app](media/office-store/powerbi-custom-visual-add-an-app.png)
+Följ stegen nedan när du ska skicka in ditt visuella Power BI-objekt till Partnercenter. Mer information om överföringsprocessen finns i [Skicka in din Office-lösning till AppSource via Partnercenter](https://docs.microsoft.com/office/dev/store/use-partner-center-to-submit-to-appsource).
 
-2. Välj anpassat visuellt objekt i **Power BI** och sedan **Nästa**.
+>[!NOTE]
+> Om du är mitt i överföringsprocess för ett visuellt Power BI-objekt och måste använda [instrumentpanelen för försäljning](https://docs.microsoft.com/office/dev/store/use-the-seller-dashboard-to-submit-to-the-office-store) (det gamla hanteringsverktyget), så läs igenom anvisningarna i [Skicka in ett visuellt Power BI-objekt till AppSource med hjälp av instrumentpanelen för försäljning](seller-dashboard.md).
 
-3. Välj **+** under **Appaket** och välj appaketets XML-fil som du har fått från Power BI-teamet från dialogrutan Öppna fil.
+1. Logga in på **Partnercenter**.
 
-    ![Appaket](media/office-store/powerbi-custom-visual-apppackage.png)
+2. Välj **OFFICE STORE** i den vänstra rutan.
 
-4. Du bör få ett godkännande om att detta är ett giltigt programpaket för Power BI.
+3. Välj **Översikt**.
 
-    ![Manifestet har godkänts](media/office-store/powerbi-custom-visual-manifest-approved.png)
+4. Välj **Skapa ny** och välj **Visuellt Power BI-objekt**på den nedrullningsbara menyn.
 
-5. Fyll i **Allmän information**.
+    ![Office Store](media/office-store/power-bi-visual.png)
 
-   * *Överföringsrubrik:* Namnet din överföring får i Developer Center.
-   * *Version:* Versionsnumret är automatiskt ifyllt från ditt tilläggsprogrampaket.
-   * *Utgivningsdatum (UTC):* Välj ett datum då din app ska lanseras i butiken. Om du väljer ett datum i framtiden blir appen inte tillgängligt i store förrän detta datum har nåtts.
-   * *Kategori:* Den första kategorin fylls i automatiskt som ”Datavisualisering + BI”. Så här markeras alla visuella Power BI-objekt. Du kan ange upp till 2 ytterligare kategorier som hjälper användare att söka efter ditt visuella objekt
-   * *Testanteckningar:* valfritt om du vill ge anvisningar till testarna på Microsoft
-   * *Min app anropar, stöder, innehåller eller använder kryptografi eller kryptering:* lämna alternativet omarkerat
-   * *Gör det här tillägget tillgängligt i Office-tillägg-katalogen på iPad:* lämna alternativet omarkerat
-6. Ladda upp en logotyp för ditt visuella objekt genom att välja **+** under **App-logotyp**. Välj sedan ikonfilen i dialogrutan Öppna fil. Filen måste vara .png, .jpg, .jpeg eller .gif. Det måste vara exakt 300 px (bredd) x 300 px (höjd) och inte större än 512 kB.
+5. Skriv in ett namn på ditt visuella Power BI-objekt i fönstret **Skapa ett nytt visuellt Power BI-objekt** och välj **Skapa**.
 
-    ![Applogotyp](media/office-store/powerbi-custom-visual-app-logo.png)
+6. Välj **Paket** och överför XML-appaketet för ditt visuella Power BI-objekt.
 
-7. Fyll i **Stöddokumentationen**.
+7. Välj **Egenskaper** och fyll i den information som krävs.
 
-   * Länk till stöddokumentet
-   * Länk till sekretessdokumentet
-   * Videolänk
-   * Licensavtalet (EULA)
+8. Om produkten kräver ytterligare inköp, så välj **Produktkonfiguration** och markera kryssrutan **Tillhörande tjänstinköp**.
 
-       Du måste överföra ett licensavtal. Detta kan vara ditt eget licensavtal eller standardlicensavtalet från Office Store för visuella objekt i Power BI. Om du vill använda standardlicensavtalet klistrar du in följande URL i dialogrutan för filöverföring av ”Licensavtal” i försäljningsinstrumentpanelen: [https://visuals.azureedge.net/app-store/Power BI - Default Custom Visual EULA.pdf](https://visuals.azureedge.net/app-store/Power%20BI%20-%20Default%20Custom%20Visual%20EULA.pdf).
+9. (Valfritt) Om du vill [certifiera](power-bi-custom-visuals-certified.md) ditt visuella objekt så välj **Produktkonfiguration** och markera kryssrutan **Power BI-certifiering**.
+    >[!TIP]
+    >Certifieringsprocessen för Power BI kan ta tid. Om du skapar ett nytt visuellt Power BI-objekt rekommenderar vi att du publicerar ditt visuella Power BI-objekt via Partnercenter innan du begär Power BI-certifiering. Detta säkerställer att publiceringen av ditt visuella objekt inte försenas.
 
-8. Välj **nästa** för att komma till sidan **Information**.
-
-9. Välj **språk** och välj ett språk i listan.
-
-    ![Språk](media/office-store/powerbi-custom-visual-language.png)
-
-10. Fyll i ”Beskrivning”.
-
-    * *Programnamn (för det här språket):* Ange rubriken för appen som det visas i storefront.
-    * *Kort beskrivning:* Ange den korta beskrivningen för din app, upp till 100 tecken, som det visas i storefront. Den här beskrivningen visas på sidorna på den högsta nivån tillsammans med logotypen. Du kan använda beskrivningen från pbiviz-paketet.
-    * *Lång beskrivning:* Ge en mer detaljerad beskrivning av din app som kommer att visas på din appinformationssida. Ange en länk till den offentliga databasen, till exempel GitHub, här om du vill låta communityn förbättra din visuella genom att öppna källkoden.
-
-11. Överför minst en skärmbild. Formatet kan vara .png, .jpg, .jpeg eller .gif. Det måste vara exakt 1366 px (bredd) x 768 px (höjd). Filstorleken får inte vara större än 1024 kB. *Lägg till textbubblor för att tydligt betona mervärdet av viktiga funktioner som visas i varje skärmbild.*
-
-12. Om du vill lägga till fler språk väljer du **Lägg till ett språk** och upprepa steg 10 och 11. Genom att lägga till fler språk kan användarna visa information om det anpassade visuella objektet på sina egna språk. Språk som inte visas kommer att övergå till det första valda språket som standard.
-
-13. När du är klar med att lägga till språk väljer du **Nästa** för att komma till sidan **Blockera åtkomst**.
-
-14. Om du vill förhindra kunder i vissa länder eller regioner från att använda eller köpa din app, markerar du kryssrutan och väljer dessa i listan.
-
-15. Välj **Nästa** för att komma till sidan **Prissättning**.
-
-16. För närvarande stöds endast *kostnadsfria* visuella objekt och ytterligare inköp i visuella objekt (köp i appen) är inte tillåtna. Välj **Den här appen är kostnadsfri**.
-
-    > [!NOTE]
-    > Om du väljer något annat alternativ än kostnadsfri eller har inköp i appinnehåll i det skickade visuella objektet, kommer överföringen att avvisas.
-
-17. Nu kan du välja **Spara som utkast** och skicka senare, eller välja **Överför för godkännande** för att skicka det anpassade visuella objektet till Office Store.
+10. Välj **Produktkonfiguration** och klicka på **Granska och publicera**.
 
 ## <a name="tracking-submission-status-and-usage"></a>Spåra sändningsstatus och användning
 
@@ -142,13 +110,13 @@ Därefter kommer du att kunna visa status för ansökan i [appinstrumentpanelen]
 
 ## <a name="certify-your-visual"></a>Godkänn ditt visuella objekt
 
-När du har skapat ditt visuella objekt kan du eventuellt få ditt visuella objekt godkänt. Detta innebär att den kan köras i Power BI-tjänsten och användas med andra funktioner i tjänsten, till exempel export till PowerPoint. Mer information finns i [Godkänn ett anpassat *visuellt objekt*](../developer/power-bi-custom-visuals-certified.md).
+När du har skapat ditt visuella objekt kan du välja att få det [certifierat](../developer/power-bi-custom-visuals-certified.md).
 
 ## <a name="next-steps"></a>Nästa steg
 
 [Utveckla ett anpassat visuellt objekt i Power BI](visuals/custom-visual-develop-tutorial.md)  
 [Visualiseringar i Power BI](../visuals/power-bi-report-visualizations.md)  
 [Anpassade visualiseringar i Power BI](../developer/power-bi-custom-visuals.md)  
-[Få anpassade visuella objekt *certifierade*](../developer/power-bi-custom-visuals-certified.md)
+[Certifiera ett visuellt Power BI-objekt](../developer/power-bi-custom-visuals-certified.md)
 
 Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
