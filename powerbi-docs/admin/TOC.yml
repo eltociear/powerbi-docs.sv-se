@@ -7,6 +7,10 @@
       items:
         - name: Vad är Power BI-administration?
           href: ../service-admin-administering-power-bi-in-your-organization.md
+        - name: Var finns min klient?
+          href: ../service-admin-where-is-my-tenant-located.md
+        - name: Migrera till Go Lokala tyska regioner
+          href: service-admin-migrate-data-germany.md
     - name: Begrepp
       expanded: true
       items:
@@ -30,8 +34,6 @@
               href: ../service-admin-syndication-partner.md
         - name: Använda administratörsportalen
           href: ../service-admin-portal.md
-        - name: Var finns min klient?
-          href: ../service-admin-where-is-my-tenant-located.md
         - name: Hitta användare som har loggat in
           href: ../service-admin-access-usage.md
         - name: Granskning

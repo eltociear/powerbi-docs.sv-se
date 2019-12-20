@@ -7,127 +7,127 @@
     - name: Snabbstarter
       expanded: true
       items:
-        - name: Ansluta till data
+        - name: Ansluta till datakällor i Power BI Desktop
           href: desktop-quickstart-connect-to-data.md
     - name: Självstudier
       items:
         - name: Forma och kombinera flera datakällor
           href: desktop-shape-and-combine-data.md
-        - name: Importera och analysera data från en webbsida med Power BI Desktop
+        - name: Importera och analysera data från en webbsida
           href: desktop-tutorial-importing-and-analyzing-data-from-a-web-page.md
-        - name: ' Analysera försäljningsdata från Excel och ett OData-flöde'
+        - name: Analysera försäljningsdata från Excel och en OData-feed
           href: desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed.md
-        - name: Skapa dina egna mått i Power BI Desktop
+        - name: Skapa egna mått
           href: desktop-tutorial-create-measures.md
-        - name: Skapa beräknade kolumner i Power BI Desktop
+        - name: Skapa beräknade kolumner
           href: desktop-tutorial-create-calculated-columns.md
-        - name: Facebook-analyser med Power BI Desktop
+        - name: Analysera Facebook-data
           href: desktop-tutorial-facebook-analytics.md
-        - name: Dynamisk säkerhet på radnivå med Analysis Services-tabellmodell
+        - name: Implementera säkerhet på radnivå i en Analysis Services-tabellmodell
           href: desktop-tutorial-row-level-security-onprem-ssas-tabular.md
     - name: Exempel
       items:
-        - name: Exempel för Power BI
+        - name: Hämta exempeldata för Power BI
           href: sample-datasets.md
-        - name: Använda exempelinnehållspaketen
+        - name: Importera och öppna exempelpaket
           href: sample-tutorial-connect-to-the-samples.md
-        - name: 'Exempel på kundlönsamhet: Ta en rundtur'
+        - name: 'Ta en rundtur: Exempel på kundlönsamhet'
           href: sample-customer-profitability.md
-        - name: 'Exempel på IT-utgiftsanalys: Ta en rundtur'
+        - name: 'Ta en rundtur: Exempel på IT-utgiftsanalys'
           href: sample-it-spend.md
-        - name: 'Exempel på personalfrågor: Ta en rundtur'
+        - name: 'Ta en rundtur: Exempel på personalfrågor'
           href: sample-human-resources.md
-        - name: 'Exempel på affärsmöjlighetsanalys: Ta en rundtur'
+        - name: 'Ta en rundtur: Exempel på affärsmöjlighetsanalys'
           href: sample-opportunity-analysis.md
-        - name: 'Exempel på anskaffningsanalys: Ta en rundtur'
+        - name: 'Ta en rundtur: Exempel på anskaffningsanalys'
           href: sample-procurement.md
-        - name: 'Exempel på detaljhandelsanalys: Ta en rundtur'
+        - name: 'Ta en rundtur: Exempel på detaljhandelsanalys'
           href: sample-retail-analysis.md
-        - name: 'Exempel på försäljning och marknadsföring: Ta en rundtur'
+        - name: 'Ta en rundtur: Exempel på försäljning och marknadsföring'
           href: sample-sales-and-marketing.md
-        - name: 'Exempel på leverantörskvalitetsanalys: Ta en rundtur'
+        - name: 'Ta en rundtur: Exempel på leverantörskvalitetsanalys'
           href: sample-supplier-quality.md
         - name: Ladda ned arbetsboken med finansiella exempel
           href: sample-financial-download.md
     - name: Begrepp
       items:
-        - name: Vad är nytt i den senaste uppdateringen av Power BI Desktop?
+        - name: Nyheter i Power BI Desktop
           href: desktop-latest-update.md
-        - name: Modellrelationer i Power BI Desktop
+        - name: Skapa modellrelationer
           href: desktop-relationships-understand.md
-        - name: Gruppera visuella objekt i Power BI Desktop
+        - name: Gruppera visuella objekt i en rapport
           href: desktop-grouping-visuals.md
-        - name: Använda mallar i Power BI Desktop
+        - name: Använda mallar
           href: desktop-templates.md
-        - name: Modelleringsvyn i Power BI Desktop
+        - name: Arbeta med modelleringsvyn
           href: desktop-modeling-view.md
-        - name: Aggregeringar i Power BI Desktop
+        - name: Hantera sammansättningar
           href: desktop-aggregations.md
-        - name: Sammansatta modeller i Power BI Desktop
+        - name: Använda sammansatta modeller
           href: desktop-composite-models.md
-        - name: Många-till-många-relationer i Power BI Desktop
+        - name: Använda många-till-många-relationer
           href: desktop-many-to-many-relationships.md
-        - name: Lagringsläge i Power BI Desktop (förhandsversion)
+        - name: Hantera lagringsläge
           href: desktop-storage-mode.md
-        - name: Dubbelriktad korsfiltrering i Power BI Desktop
+        - name: Använda dubbelriktad korsfiltrering
           href: desktop-bidirectional-filtering.md
-        - name: Power BI och DirectQuery
+        - name: Använda DirectQuery i Power BI
           href: desktop-directquery-about.md
-        - name: Datakällor som stöds av DirectQuery
-          href: desktop-directquery-data-sources.md
+        - name: Power BI-datakällor som stöds av DirectQuery
+          href: power-bi-data-sources.md
         - name: Krav på Power BI-datakälla
           href: desktop-data-source-prerequisites.md
-        - name: Standardmedlem i flerdimensionella modeller i Power BI
+        - name: Arbeta med flerdimensionella modeller i Power BI
           href: desktop-default-member-multidimensional-models.md
-        - name: Vanliga frågor och svar om visuella objekt
+        - name: Vanliga frågor och svar om visuella objekt för Power BI
           href: developer/power-bi-custom-visuals-faq.md
-    - name: Gör så här
+    - name: Instruktionsguider
       items:
         - name: Hämta Power BI Desktop
           href: desktop-get-the-desktop.md
-        - name: Kom igång guide för Power BI Desktop
+        - name: Komma igång med Power BI Desktop
           href: desktop-getting-started.md
-        - name: Vanliga frågeuppgifter i Power BI Desktop
+        - name: Utföra vanliga frågeaktiviteter
           href: desktop-common-query-tasks.md
-        - name: Skapa och hantera relationer i Power BI Desktop
+        - name: Skapa och hantera relationer
           href: desktop-create-and-manage-relationships.md
-        - name: Datavy i Power BI Desktop
+        - name: Arbeta med datavyn
           href: desktop-data-view.md
-        - name: Frågeöversikt i Power BI Desktop
+        - name: Använda frågor
           href: desktop-query-overview.md
-        - name: DAX-grunder i Power BI Desktop
+        - name: Använda grundläggande DAX-funktioner
           href: desktop-quickstart-learn-dax-basics.md
-        - name: Relationsvy i Power BI Desktop
+        - name: Arbeta med relationsvyn
           href: desktop-relationship-view.md
-        - name: Rapportvy i Power BI Desktop
+        - name: Arbeta med rapportvyn
           href: desktop-report-view.md
-        - name: Anslut till flera datakällor i Power BI Desktop
+        - name: Ansluta till flera datakällor
           href: desktop-connect-to-data.md
-        - name: Publicera från Power BI Desktop
+        - name: Publicera datauppsättningar
           href: desktop-upload-desktop-files.md
-        - name: 'Del 1, lägg till visualiseringar i en Power BI-rapport'
+        - name: Lägga till visuella objekt i en Power BI-rapport (del 1)
           href: visuals/power-bi-report-add-visualizations-i.md
-        - name: 'Del 2, lägg till visualiseringar i en Power BI-rapport'
+        - name: Lägga till visuella objekt i en Power BI-rapport (del 2)
           href: visuals/power-bi-report-add-visualizations-ii.md
-        - name: 'Anpassa visualiseringens rubrik, bakgrund och teckenförklaring'
+        - name: 'Anpassa visuella rubriker, bakgrunder och förklaringar'
           href: visuals/power-bi-visualization-customize-title-background-and-legend.md
         - name: Visa objekt utan data i Power BI
           href: desktop-show-items-no-data.md
-        - name: Automatiskt datum/tid i Power BI Desktop
+        - name: Använda automatiskt datum/tid
           href: desktop-auto-date-time.md
         - name: Ansluta till data
           items:
-            - name: Datakällor i Power BI Desktop
+            - name: Anslut till datakällor
               href: desktop-data-sources.md
-            - name: Anslut till LinkedIn Sales Navigator (förhandsversion)
+            - name: Ansluta till LinkedIn Sales Navigator
               href: desktop-connect-linkedin-sales-navigator.md
-            - name: Anslut till en webbsida med exempel (förhandsvisning)
+            - name: Hämta data från en webbsida genom att ge exempel
               href: desktop-connect-to-web-by-example.md
             - name: Ansluta till datauppsättningar i Power BI-tjänsten
               href: desktop-report-lifecycle-datasets.md
-            - name: Importera Excel-arbetsböcker till Power BI Desktop
+            - name: Importera en Excel-arbetsbok
               href: desktop-import-excel-workbooks.md
-            - name: Ansluta till data med hjälp av generiska gränssnitt
+            - name: Ansluta till data med hjälp av generiska gränssnitt i Power BI Desktop
               href: desktop-connect-using-generic-interfaces.md
             - name: Ansluta till en PDF-fil
               href: desktop-connect-pdf.md
@@ -135,128 +135,126 @@
               href: desktop-connect-adobe-analytics.md
             - name: Anslut till en Oracle-databas
               href: desktop-connect-oracle-database.md
-            - name: Köra Python-skript i Power BI Desktop
+            - name: Kör Python-skript
               href: desktop-python-scripts.md
-            - name: Använda Python i Power Query Editor
+            - name: Använda Python i frågeredigeraren
               href: desktop-python-in-query-editor.md
-            - name: Använda en extern Python IDE med Power BI
+            - name: Använda ett externt Python IDE
               href: desktop-python-ide.md
-            - name: Skapa visuella Power BI-objekt med Python
+            - name: Skapa visuella objekt med Python
               href: desktop-python-visuals.md
-            - name: Köra R-skript i Power BI Desktop
+            - name: Kör R-skript
               href: desktop-r-scripts.md
-            - name: Använda R i Frågeredigeraren
+            - name: Använda R i frågeredigeraren
               href: desktop-r-in-query-editor.md
-            - name: Använda en extern R IDE med Power BI
+            - name: Använda en extern R IDE
               href: desktop-r-ide.md
-            - name: R-paket som stöds
+            - name: Skapa virtuella objekt med R-paket
               href: service-r-packages-support.md
             - name: Ange data direkt i Power BI Desktop
               href: desktop-enter-data-directly-into-desktop.md
-            - name: Ansluta till Excel i Power BI Desktop
+            - name: Anslut till en Excel-arbetsbok
               href: desktop-connect-excel.md
-            - name: Analysis Services flerdimensionella data i Power BI Desktop
+            - name: Ansluta till flerdimensionella modeller
               href: desktop-ssas-multidimensional.md
-            - name: Ansluta till CSV-filer i Power BI Desktop
+            - name: Ansluta till en CSV-fil
               href: desktop-connect-csv.md
-            - name: Anslut till en Google BigQuery-databas i Power BI Desktop
+            - name: Ansluta till en Google BigQuery-databas
               href: desktop-connect-bigquery.md
-            - name: Anslut till en Impala-databas i Power BI Desktop
+            - name: Anslut till en Impala-databas
               href: desktop-connect-impala.md
-            - name: Ansluta till en OData-feed i Power BI Desktop
+            - name: Anslut till en OData-feed
               href: desktop-connect-odata.md
-            - name: Ansluta till en Amazon Redshift-databas i Power BI Desktop
+            - name: Ansluta till en Amazon Redshift-databas
               href: desktop-connect-redshift.md
-            - name: Ansluta till en webbsida från Power BI Desktop
+            - name: Ansluta till en webbsida
               href: desktop-connect-to-web.md
-            - name: Ansluta till ett Snowflake Computing-lager i Power BI Desktop
+            - name: Ansluta till ett Snowflake Computing-lager
               href: desktop-connect-snowflake.md
             - name: Ansluta till Azure Cost Management-data
               href: desktop-connect-azure-cost-management.md
             - name: Ansluta till Azure Consumption Insights-data
               href: desktop-connect-azure-consumption-insights.md
-            - name: Använda SAP HANA i Power BI Desktop
+            - name: Använda SAP HANA
               href: desktop-sap-hana.md
             - name: Aktivera kryptering för SAP HANA
               href: desktop-sap-hana-encryption.md
-            - name: Analysis Services tabelldata i Power BI Desktop
+            - name: Använda Analysis Services-tabelldata
               href: desktop-analysis-services-tabular-data.md
-            - name: Använda DirectQuery i Power BI Desktop
+            - name: Använda DirectQuery
               href: desktop-use-directquery.md
-            - name: DirectQuery och SAP Business Warehouse (BW)
+            - name: Ansluta till DirectQuery och SAP Business Warehouse
               href: desktop-directquery-sap-bw.md
-            - name: DirectQuery och SAP HANA
+            - name: Ansluta till DirectQuery och SAP HANA
               href: desktop-directquery-sap-hana.md
-            - name: Anta inställning för referensintegritet i Power BI Desktop
+            - name: Använda inställningen Anta referensintegritet
               href: desktop-assume-referential-integrity.md
-            - name: Använda anslutningstjänsten SAP BW i Power BI Desktop
+            - name: Använda SAP Business Warehouse-anslutningsappen
               href: desktop-sap-bw-connector.md
-            - name: Använd OneDrive för företag-länkar i Power BI Desktop
+            - name: Använda OneDrive för företag-länkar
               href: desktop-use-onedrive-business-links.md
-            - name: 'Tjänst från tredje part: Facebook-anslutningsprogram för Power BI Desktop'
+            - name: 'Tjänst från tredje part: Använda Facebook-anslutningsappen'
               href: service-facebook-connector.md
-            - name: 'Tjänst från tredje part: Google Analytics-anslutningsprogram för Power BI Desktop'
+            - name: 'Tjänst från tredje part: Använda Google Analytics-anslutningsappen'
               href: service-google-analytics-connector.md
             - name: 'Project Online: Ansluta till data via Power BI Desktop'
               href: desktop-project-online-connect-to-data.md
         - name: Omvandla och forma data
           items:
-            - name: Kombinera binärfiler
+            - name: Kombinera filer (binärfiler)
               href: desktop-combine-binaries.md
-            - name: Använda AI Insights i Power BI Desktop (förhandsversion)
+            - name: Använda AI Insights (förhandsversion)
               href: desktop-ai-insights.md
         - name: Modellera dina data
           items:
-            - name: Datakategorisering i Power BI Desktop
+            - name: Ange datakategorier i Power BI Desktop
               href: desktop-data-categorization.md
-            - name: Tagga ett streckkodsfält för mobilapparna
+            - name: Tagga ett streckkodsfält för Power BI-mobilappar
               href: desktop-mobile-barcodes.md
-            - name: Ange geografisk filtrering för mobilapparna
+            - name: Ange geografiska filter för Power BI-mobilappar
               href: desktop-mobile-geofiltering.md
-            - name: Beräknade kolumner i Power BI Desktop
+            - name: Använda beräknade kolumner
               href: desktop-calculated-columns.md
-            - name: Beräknade tabeller i Power BI Desktop
+            - name: Använda beräknade tabeller
               href: desktop-calculated-tables.md
-            - name: Mått i Power BI Desktop
+            - name: Använda mått
               href: desktop-measures.md
-            - name: 'Importera och visa KPI:er (förhandsgranskning)'
+            - name: 'Importera och visa KPI:er'
               href: desktop-import-and-display-kpis.md
         - name: Skapa rapporter
           items:
-            - name: Automatisk sidouppdatering i Power BI Desktop (förhandsversion)
+            - name: Använda automatisk siduppdatering (förhandsversion)
               href: desktop-automatic-page-refresh.md
-            - name: Använda prestandaanalyseraren i Power BI Desktop
+            - name: Använda Prestandaanalys
               href: desktop-performance-analyzer.md
-            - name: Visuella element för rapporter
+            - name: Lägga till visuella element i rapporter
               href: desktop-visual-elements-for-reports.md
             - name: Skapa knappbeskrivningar utifrån rapportsidor
               href: desktop-tooltips.md
-            - name: Exportera till PDF och skriva ut rapporter
+            - name: Exportera rapporter till PDF-filer
               href: desktop-export-to-pdf.md
-            - name: Analytics-fönstret i Power BI Desktop
+            - name: Använda fönstret Analytics
               href: desktop-analytics-pane.md
-            - name: Använda insikter för att förklara ökningar och minskningar
+            - name: Använda insikter för att förklara variationer i visuella objekt (förhandsversion)
               href: desktop-insights.md
-            - name: Använda insikter för att hitta var distributionen är annorlunda i diagram
+            - name: Använda insikter för att hitta var distributionen varierar i diagram (förhandsversion)
               href: desktop-insights-find-where-different.md
-            - name: Bokmärken i Power BI
+            - name: Dela insikter med hjälp av bokmärken
               href: desktop-bookmarks.md
-            - name: Använda rapportteman
+            - name: Arbeta med rapportteman
               href: desktop-report-themes.md
-            - name: Typer av filter
+            - name: Filtertyper i Power BI-rapporter
               href: power-bi-report-filter-types.md
-            - name: Testa den nya filterupplevelsen
+            - name: Arbeta med filter i Power BI-rapporter
               href: power-bi-report-filter.md
-            - name: Använda snabbmått
+            - name: Använd snabbmått för vanliga beräkningar
               href: desktop-quick-measures.md
-            - name: Använda Vad händer om-parametrar
+            - name: Använda konsekvensparametrar för att visualisera variabler
               href: desktop-what-if.md
-            - name: Använda visning av detaljerad information
+            - name: Använda funktionen för att visa detaljerad information
               href: desktop-drillthrough.md
-            - name: Använd detaljerad information mellan rapporter
+            - name: Använda funktionen för att visa detaljerad information mellan rapporter
               href: desktop-cross-report-drill-through.md
-            - name: Använda ett relativt datumutsnitt och filter
-              href: visuals/desktop-slicer-filter-date-range.md
             - name: Använda gruppering och diskretisering
               href: desktop-grouping-and-binning.md
             - name: Skapa visuella Power BI-objekt med R
@@ -265,53 +263,53 @@
               href: desktop-r-powered-custom-visuals.md
             - name: Använda stödlinjer och fästa mot rutnät
               href: desktop-gridlines-snap-to-grid.md
-            - name: Sidvisningsinställningar i en Power BI-rapport
+            - name: Använda sidvisningsinställningar i Power BI-rapporter
               href: power-bi-report-display-settings.md
             - name: Lägga till en kolumn från ett exempel
               href: desktop-add-column-from-example.md
             - name: Lägga till en anpassad kolumn
               href: desktop-add-custom-column.md
-            - name: Använd infogade hierarkietiketter i Power BI Desktop
+            - name: Använda infogade hierarkietiketter
               href: desktop-inline-hierarchy-labels.md
             - name: Använda numeriskt intervallutsnitt
               href: desktop-slicer-numeric-range.md
-            - name: Använda relativt datumutsnitt
+            - name: Använda ett relativt datumutsnitt och filter
               href: desktop-slicer-filter-date-range.md
             - name: Skapa ett utsnitt som du kan ändra storlek på
               href: power-bi-slicer-filter-responsive.md
-            - name: Säkerhet på radnivå
+            - name: Använda säkerhet på radnivå
               href: desktop-rls.md
             - name: Anpassa knappbeskrivningar
               href: desktop-custom-tooltips.md
-            - name: Textrutor och figurer i rapporter
+            - name: Lägga till textrutor och former i rapporter
               href: power-bi-reports-add-text-and-shapes.md
             - name: Lägga till en hyperlänk i en textruta
               href: service-add-hyperlink-to-text-box.md
-            - name: Hyperlänkar i tabeller
+            - name: Lägga till hyperlänkar i en tabell
               href: power-bi-hyperlinks-in-tables.md
             - name: Visa bilder i tabeller
               href: power-bi-images-tables.md
-            - name: Anpassade formatsträngar
+            - name: Använda anpassade formatsträngar
               href: desktop-custom-format-strings.md
-            - name: Villkorsstyrd tabellformatering
+            - name: Använda villkorsstyrd tabellformatering
               href: desktop-conditional-table-formatting.md
-            - name: Villkorsuttrycksbaserad rubrikformatering
+            - name: Skapa dynamiska uttrycksbaserade rubriker
               href: desktop-conditional-format-visual-titles.md
-            - name: Sortera efter kolumn i Power BI Desktop
+            - name: Sortera efter kolumn
               href: desktop-sort-by-column.md
-            - name: Optimera rapporter för mobila appar
+            - name: Optimera rapporter för Power BI-mobilappar
               href: desktop-create-phone-report.md
-            - name: Använd Visa data och Visa poster
+            - name: Använda alternativen Visa data och Visa poster
               href: desktop-see-data-see-records.md
             - name: Tips för att skapa rapporter
               href: desktop-tips-and-tricks-for-creating-reports.md
         - name: Visualiseringar
           items:
-            - name: Visualiseringar i Power BI
+            - name: Lägga till visuella objekt i Power BI-rapporter
               href: visuals/power-bi-report-visualizations.md
-            - name: Ändra visualiseringstypen i en rapport
+            - name: Ändra visuella objekt i Power BI-rapporter
               href: visuals/power-bi-report-change-visualization-type.md
-            - name: Datapunktsbegränsningar efter visuell typ
+            - name: Om datapunktsbegränsningar efter visuell typ
               href: visuals/power-bi-data-points.md
             - name: Visa de data som används för att skapa det visuella objektet
               href: visuals/service-reports-show-data.md
@@ -319,65 +317,65 @@
               href: visuals/service-getting-started-with-color-formatting-and-axis-properties.md
             - name: Tips för färgformatering
               href: visuals/service-tips-and-tricks-for-color-formatting.md
-            - name: Kopiera och klistra in en visualisering
+            - name: Kopiera och klistra in en rapportvisualisering
               href: visuals/power-bi-visualization-copy-paste.md
-            - name: Exportera data som används för att skapa visualiseringen
+            - name: Exportera de data som används för att skapa en visualisering
               href: visuals/power-bi-visualization-export-data.md
-            - name: 'Flytta, ändra storlek och fälla ut en visualisering i en rapport'
+            - name: 'Flytta, ändra storlek och fälla ut ett visuellt objekt i en rapport'
               href: visuals/power-bi-visualization-move-and-resize.md
             - name: Ändra hur visuella objekt interagerar i en rapport
               href: service-reports-visual-interactions.md
             - name: Tips för Power BI-kartvisualiseringar
               href: visuals/power-bi-map-tips-and-tricks.md
-            - name: Anpassa egenskaper för x-axeln och y-axeln
+            - name: Anpassa egenskaper för X-axel och Y-axel
               href: visuals/power-bi-visualization-customize-x-axis-and-y-axis.md
-            - name: Skapa ett visuellt ArcGIS Maps for Power BI-objekt
+            - name: Interagera med ArcGIS Maps i virtuella Power BI-objekt
               href: visuals/power-bi-visualizations-arcgis.md
-            - name: Interagera med ett visuellt ArcGIS Maps for Power BI-objekt
+            - name: Skapa ArcGIS Maps för virtuella Power BI-objekt
               href: visuals/power-bi-visualization-arcgis.md
-            - name: Grundläggande ytdiagram
+            - name: Skapa och använda enkla ytdiagram
               href: visuals/power-bi-visualization-basic-area-chart.md
-            - name: Kort (stora sifferpaneler) i Power BI
+            - name: Skapa kortvisualiseringar (stora sifferpaneler)
               href: visuals/power-bi-visualization-card.md
-            - name: Kombinationsdiagram i Power BI
+            - name: Skapa och använda kombinationsdiagram
               href: visuals/power-bi-visualization-combo-chart.md
-            - name: Dekompositionsträd i Power BI (förhandsversion)
+            - name: Använda visualisering av nedbrytningsträd (förhandsversion)
               href: visuals/power-bi-visualization-decomposition-tree.md
-            - name: Ringdiagram i Power BI
+            - name: Skapa och använda ringdiagram
               href: visuals/power-bi-visualization-doughnut-charts.md
-            - name: Fyllda kartor (koropleter) i Power BI
+            - name: Skapa och använda fyllda kartor (koropletkartor)
               href: visuals/power-bi-visualization-filled-maps-choropleths.md
-            - name: Trattdiagram i Power BI
+            - name: Skapa och använda trattdiagram
               href: visuals/power-bi-visualization-funnel-charts.md
-            - name: Diagram över viktiga influencers i Power BI
+            - name: Använda visualiseringar av viktiga influerare
               href: visuals/power-bi-visualization-influencers.md
-            - name: Radprovtagning med hög densitet
+            - name: Om radprovtagning med hög densitet
               href: desktop-high-density-sampling.md
-            - name: Visuell KPI-information
+            - name: Skapa och använda KPI-visualiseringar
               href: visuals/power-bi-visualization-kpi.md
-            - name: Visuellt matrisobjekt
+            - name: Använda matrisvisualiseringar
               href: visuals/desktop-matrix-visual.md
-            - name: Visuella frågor och svar
+            - name: Om visuella objekt för frågor och svar i Power BI
               href: visuals/power-bi-visualization-q-and-a.md
-            - name: Skapa avancerade analyser och visualiseringar med hjälp av R-skript i Power BI
+            - name: Använda visuella R-objekt
               href: visuals/service-r-visuals.md
-            - name: Diagram med radiella mätare i Power BI
+            - name: Skapa och använda diagram med radiell mätare
               href: visuals/power-bi-visualization-radial-gauge-charts.md
-            - name: Banddiagram
+            - name: Skapa och använda banddiagram
               href: visuals/desktop-ribbon-charts.md
-            - name: Punktdiagram i Power BI
+            - name: 'Skapa och använda punkt-, bubbel- och punktritningsdiagram'
               href: visuals/power-bi-visualization-scatter.md
-            - name: Punktdiagram med hög densitet
+            - name: Använda punktdiagram med hög densitet
               href: visuals/desktop-high-density-scatter-charts.md
-            - name: Använda formkartor i Power BI Desktop (förhandsgranskning)
+            - name: Skapa och använda visuella formkarteobjekt (förhandsversion)
               href: visuals/desktop-shape-map.md
-            - name: Utsnitt i Power BI
+            - name: Skapa och använda utsnitt
               href: visuals/power-bi-visualization-slicers.md
-            - name: Tabeller i Power BI
+            - name: Skapa och använda tabeller i Power BI-rapporter och instrumentpaneler
               href: visuals/power-bi-visualization-tables.md
-            - name: Trädkartor i Power BI
+            - name: Skapa och använda trädkartor
               href: visuals/power-bi-visualization-treemaps.md
-            - name: Vattenfallsdiagram i Power BI
+            - name: Skapa och använda vattenfallsdiagram
               href: visuals/power-bi-visualization-waterfall-charts.md
         - name: Naturligt språk
           items:
@@ -397,49 +395,47 @@
               href: natural-language/q-and-a-limitations.md
         - name: Felsök
           items:
-            - name: Lösa problem när du importerar Access-databaser och Excel-kalkylblad i Power BI Desktop och Power Query
+            - name: Felsöka import av Access- och Excel-filer (.xls)
               href: desktop-access-database-errors.md
-            - name: Lösa problem när du startar Power BI Desktop
+            - name: Felsöka öppning av Power BI Desktop
               href: desktop-error-launching-desktop.md
-            - name: Felsöka DirectQuery-modell i Power BI Desktop
+            - name: Felsöka utveckling av DirectQuery-modeller
               href: desktop-directquery-troubleshoot.md
     - name: Referens
       items:
-        - name: Datatyper i Power BI Desktop
+        - name: Förstå datatyper i Power BI Desktop
           href: desktop-data-types.md
-        - name: Power BI-datakällor
-          href: power-bi-data-sources.md
-        - name: Använda det uppdaterade menyfliksområdet i Power BI Desktop (förhandsversion)
+        - name: Använda det uppdaterade menyfliksområdet (förhandsversion)
           href: desktop-ribbon.md
-        - name: Genvägar till formelredigeraren för Power BI Desktop
+        - name: Använda genvägar för formelredigeraren
           href: desktop-formula-editor.md
-        - name: Sekretessnivåer i Power BI Desktop
+        - name: Konfigurera sekretessnivåer
           href: desktop-privacy-levels.md
-        - name: Utökningsbarhet av anslutningsprogram i Power BI
+        - name: Om utökningsbarhet av anslutningsappar
           href: desktop-connector-extensibility.md
-        - name: Betrodda signerade anslutningsappar från tredje part
+        - name: Om betrodda anslutningsappar från tredje part
           href: desktop-trusted-third-party-connectors.md
     - name: Resurser
       items:
         - name: Power BI Desktop-videoklipp
           href: desktop-videos.md
-        - name: Tidigare månadsuppdateringar till Power BI Desktop
+        - name: Uppdateringsarkiv för Power BI Desktop
           href: desktop-latest-update-archive.md
-        - name: Power BI Desktop sekretesspolicy för Skicka ett leende
+        - name: Sekretesskydd i Power BI Desktop
           href: desktop-send-smile-privacy-statement.md
         - name: Hantera inloggningsformuläret för Power BI Desktop
           href: desktop-admin-sign-in-form.md
         - name: Hjälpmedel
           items:
-            - name: Översikt över hjälpmedel i Power BI
+            - name: Om hjälpmedel i Power BI
               href: desktop-accessibility-overview.md
-            - name: Skapa Power BI-rapporter med hjälpmedel
+            - name: Om tillgänglig navigering i Power BI-rapporter
               href: desktop-accessibility-creating-reports.md
-            - name: Använda Power BI-rapporter med hjälpmedel
+            - name: Förstå hjälpmedelsfunktionerna i Power BI-rapporter
               href: desktop-accessibility-consuming-tools.md
-            - name: Skapa Power BI-rapporter med hjälpmedel
+            - name: Skapa rapporter i Power BI med hjälpmedelsverktyg
               href: desktop-accessibility-creating-tools.md
-            - name: Kortkommandon för hjälpmedel för Power BI-rapporter
+            - name: Använda kortkommandon i Power BI Desktop
               href: desktop-accessibility-keyboard-shortcuts.md
 - name: Power BI-tjänst
   items:
@@ -727,7 +723,7 @@
               href: desktop-connect-dataflows.md
             - name: Dataflöden och Azure Data Lake-integrering (förhandsversion)
               href: service-dataflows-azure-data-lake-integration.md
-            - name: Ansluta Azure Data Lake Storage Gen2 för lagring av dataflöde (förhandsversion)
+            - name: Ansluta Azure Data Lake Storage Gen2 för lagring av dataflöde
               href: service-dataflows-connect-azure-data-lake-storage-gen2.md
             - name: Konfigurera inställningar för arbetsytans dataflöde (förhandsversion)
               href: service-dataflows-configure-workspace-storage-settings.md

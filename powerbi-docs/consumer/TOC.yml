@@ -142,6 +142,8 @@
       items:
         - name: Vilka mobilappar finns det?
           href: mobile/mobile-apps-for-mobile-devices.md
+        - name: Upptäck startsidan
+          href: mobile/mobile-apps-home-page.md
     - name: Snabbstarter
       items:
         - name: Utforska instrumentpaneler och rapporter
@@ -198,7 +200,7 @@
               href: mobile/mobile-apps-qr-code.md
             - name: Kommentera och dela i mobilappar
               href: mobile/mobile-annotate-and-share-a-tile-from-the-mobile-apps.md
-            - name: Skanna en streckkod från appen på din iPhone
+            - name: Skanna en streckkod från Power BI-mobilappen
               href: mobile/mobile-apps-scan-barcode-iphone.md
             - name: Konfigurera med hjälp av mobilenhetshantering
               href: mobile/mobile-app-configuration.md

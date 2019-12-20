@@ -40,6 +40,8 @@
           href: report-drillthrough.md
         - name: Vägledning om automatisk datum/tid i Power BI Desktop
           href: auto-date-time.md
+        - name: Vägledning för att lägga till en många-till-många-relationer
+          href: relationships-many-to-many.md
     - name: Vitböcker
       items:
         - name: Översikt vitböcker

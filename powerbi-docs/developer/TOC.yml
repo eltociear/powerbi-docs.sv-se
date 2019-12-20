@@ -83,8 +83,22 @@
               href: visuals/event-service.md
             - name: Sortering
               href: visuals/sort-options.md
-            - name: Interaktivitetsverktyg
-              href: visuals/utils-interactivity-selections.md
+            - name: Lokalisering
+              href: visuals/localization.md
+            - name: Power BI – visuella verktyg
+              items:
+                - name: Interaktivitetsverktyg
+                  href: visuals/utils-interactivity-selections.md
+                - name: Formateringsverktyg
+                  href: visuals/utils-formatting.md
+                - name: Diagramverktyg
+                  href: visuals/utils-chart.md
+                - name: SVG-verktyg
+                  href: visuals/utils-svg.md
+                - name: Typverktyg
+                  href: visuals/utils-type.md
+                - name: Verktyg för datavisning
+                  href: visuals/utils-dataview.md
         - name: Resurser
           items:
             - name: Dev Center
