@@ -117,7 +117,7 @@ När X-axelns rubrik är **På** visas den under etiketterna på X-axeln.
 
     - **Axelrubrik**: Skriv *Räkenskapsmånad*
 
-    - **Storlek för rubriktext **: Ange *18*
+    - **Storlek för rubriktext**: Ange *18*
 
     När du är klar med anpassningarna ser det stående stapeldiagrammet ut ungefär så här:
 
@@ -206,7 +206,7 @@ Eftersom vi började med en visualisering med en formaterad Y-axel, skapade Powe
 
 I en så komplicerad visualisering underlättar det med axelrubriker.  Med titlar kan dina kollegor förstå vad ditt visuella objekt försöker berätta.
 
-1. Växla **Rubrik** till **På** för **Y-axeln (kolumn)** och **X-axeln (rad)**.
+1. Växla **Rubrik** till **På** för **Y-axeln (kolumn)** och **X-axeln (rad)** .
 
 1. Ange **Stil** till **Visa enbart rubrik** för båda.
 
