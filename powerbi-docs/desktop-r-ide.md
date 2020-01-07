@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: db4b6d4915e97aaee65806b0bca7801bf4ce951e
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 4440db5888eeeab638eab4ea3819107d37bdbdbd
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876237"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223453"
 ---
 # <a name="use-an-external-r-ide-with-power-bi"></a>Använda en extern R IDE med Power BI
 Med **Power BI Desktop** kan du använda din externa R IDE (Integrated Development Environment) för att skapa och förfina R-skript och sedan använda dessa skript i Power BI.
@@ -31,7 +31,7 @@ Från och med september 2016-versionen av **Power BI Desktop** (version 2.39.452
 Om du vill använda den här funktionen måste du installera en **R IDE** på den lokala datorn. **Power BI Desktop** varken inkluderar, distribuerar eller installerar R-motorn, så du måste installera **R** på den lokala datorn separat. Du kan välja vilka R IDE som ska användas med följande alternativ:
 
 * Du kan installera din favorit-R IDE – många finns tillgängliga kostnadsfritt på t.ex. [nedladdningssidan för Revolution Open](https://mran.revolutionanalytics.com/download/) och [CRAN Repository](https://cran.r-project.org/bin/windows/base/).
-* **Power BI Desktop** stöder också [R Studio](https://www.rstudio.com/) och **Visual Studio 2015** med redigeringsprogrammen [*R Tools for Visual Studio*](https://beta.visualstudio.com/vs/rtvs/).
+* **Power BI Desktop** stöder också [R Studio](https://www.rstudio.com/) och **Visual Studio 2015** med redigeringsprogrammen [*R Tools for Visual Studio*](/visualstudio/rtvs).
 * Du kan också installera en annan R IDE och låta **Power BI Desktop** starta den **R IDE**:n genom att göra något av följande:
   
   * Du kan associera **.R**-filer med den externa IDE som du vill att **Power BI Desktop** ska starta.

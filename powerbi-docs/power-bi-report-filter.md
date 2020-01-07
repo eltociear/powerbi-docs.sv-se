@@ -10,10 +10,10 @@ ms.date: 09/06/2019
 ms.author: maggies
 LocalizationGroup: Reports
 ms.openlocfilehash: ab7d8a34211b9cb8addd90daf2cbce7d22f10e61
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73875150"
 ---
 # <a name="the-new-filter-experience-in-power-bi-reports"></a>Den nya filterupplevelsen i Power BI-rapporter
@@ -53,7 +53,7 @@ Om du har aktiverat **Nytt utseende** i Power BI-tjänsten ![Nytt utseende på](
 Om du inte har aktiverat det nya utseendet kan du fortfarande se den nya filterupplevelsen genom att följa nedanstående steg.
 
 1. I Power BI-tjänsten väljer fliken **Rapporter** i innehållslistan för en arbetsyta.
-2. Leta upp den rapport som du vill aktivera och välj ikonen **Settings** ![ikonen Rapportinställningar](media/power-bi-report-filter/power-bi-settings-icon.png) för den rapporten.
+2. Leta upp den rapport som du vill aktivera och välj ikonen **Settings**![ikonen Rapportinställningar](media/power-bi-report-filter/power-bi-settings-icon.png) för den rapporten.
 3. Under **Filtreringsupplevelse** väljer du **Aktivera det uppdaterade filterfönstret och visa filter i det visuella sidhuvudet för den här rapporten**.
 
     ![Aktivera det uppdaterade filterfönstret](media/power-bi-report-filter/power-bi-service-filter-enable.png)

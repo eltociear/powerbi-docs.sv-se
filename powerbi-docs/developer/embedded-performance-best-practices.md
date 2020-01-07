@@ -9,10 +9,10 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 12/12/2018
 ms.openlocfilehash: c3e2327131ae82fa025236c9242476466b6d9074
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73864062"
 ---
 # <a name="power-bi-embedded-performance-best-practices"></a>Bästa praxis för Power BI Embedded-prestanda
@@ -94,7 +94,7 @@ Cachelagrade data renderas när de är tillgängliga, men det genereras ingen yt
 
 [Läs mer om händelsehantering](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Handling-Events).
 
-### <a name="performance-analyzer"></a>Prestandaanalys
+### <a name="performance-analyzer"></a>Prestandaanalyserare
 
 För att undersöka prestanda för rapportelementen kan du använda Prestandaanalys i Power BI Desktop.
 Med Prestandaanalys kan du se och registrera loggar som mäter hur var och en av dina rapportelement presterar.

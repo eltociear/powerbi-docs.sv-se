@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/28/2019
 ms.author: v-pemyer
-ms.openlocfilehash: b674c621c30491a00c529af7f2fcd9eb87f3ecfa
-ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
+ms.openlocfilehash: a19e8148a719186cbaefe3203d58a5a98687c067
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74834780"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223628"
 ---
 # <a name="report-page-drillthrough"></a>Visa detaljerad information för rapportsida
 
@@ -63,7 +63,7 @@ Här är några bra tips när du skapar rapporter:
 - **Identifiering:** Gör det enklare att upptäcka detaljsidan genom att ställa in rubriktext eller lägga till instruktioner i en textruta. Du kan också designa ett överlägg enligt beskrivningen i [det här blogginlägget](https://alluringbi.com/2019/10/23/overlays-for-true-self-serve-reporting/).
 
 > [!TIP]
-> Du kan även konfigurera visning av detaljerad information i sidnumrerade Power BI-rapporter. Det gör du genom att lägga till länkar till Power BI-rapporter. Länkar kan definiera [adressparametrar](/blog/url-parameters-for-paginated-reports-are-now-available/).
+> Du kan även konfigurera visning av detaljerad information i sidnumrerade Power BI-rapporter. Det gör du genom att lägga till länkar till Power BI-rapporter. Länkar kan definiera [adressparametrar](https://powerbi.microsoft.com/blog/url-parameters-for-paginated-reports-are-now-available/).
 
 ## <a name="next-steps"></a>Nästa steg
 

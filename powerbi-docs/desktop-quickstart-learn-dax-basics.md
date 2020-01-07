@@ -10,10 +10,10 @@ ms.date: 10/21/2019
 ms.author: davidi
 LocalizationGroup: Model your data
 ms.openlocfilehash: fcff0bf1d6c68b9bdb000855f4984b3664b882c1
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73877921"
 ---
 # <a name="dax-basics-in-power-bi-desktop"></a>DAX-grunder i Power BI Desktop
@@ -139,7 +139,7 @@ Du har nu sett flera viktiga aspekter av DAX-formler:
 
 Svaren finns i slutet av den här artikeln.
 
-### <a name="functions"></a>Funktioner
+### <a name="functions"></a>Functions
 Funktioner är fördefinierade formler som utför beräkningar med specifika värden, så kallade argument, i en viss ordning eller struktur. Argument kan vara andra funktioner, en annan formel, uttryck, kolumnreferenser, tal, text, logiska värden som TRUE eller FALSE, eller konstanter.
 
 DAX innehåller följande typer av funktioner: [Datum och tid](https://msdn.microsoft.com/library/ee634786.aspx), [Tidsinformation](https://msdn.microsoft.com/library/ee634763.aspx), [Information](https://msdn.microsoft.com/library/ee634552.aspx), [Logisk](https://msdn.microsoft.com/library/ee634365.aspx), [Matematisk](https://msdn.microsoft.com/library/ee634241.aspx), [Statistisk](https://msdn.microsoft.com/library/ee634822.aspx), [Text](https://msdn.microsoft.com/library/ee634938.aspx), [Överordnad/underordnad](https://msdn.microsoft.com/library/mt150102.aspx) och [Övrigt](https://msdn.microsoft.com/library/mt150101.aspx). Om du känner till funktionerna i Excel-formler, kommer du känna igen många av funktionerna i DAX. DAX-funktionerna är emellertid unika på följande sätt:

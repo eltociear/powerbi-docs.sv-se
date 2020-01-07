@@ -9,17 +9,17 @@ ms.topic: conceptual
 ms.date: 10/24/2019
 ms.author: v-pemyer
 ms.openlocfilehash: 623a0bbd187a997003ce7b82cc76d5c4fbe9ce44
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73868053"
 ---
 # <a name="directquery-model-troubleshooting-in-power-bi-desktop"></a>Felsöka DirectQuery-modell i Power BI Desktop
 
 Den här artikeln är avsedd för datamodellerare som utvecklar DirectQuery-modeller i Power BI, antingen i Power BI Desktop eller i Power BI-tjänsten. I det här avsnittet beskrivs hur du diagnostiserar prestandaproblem och hur du hämtar mer detaljerad information så att du kan optimera rapporter.
 
-## <a name="performance-analyzer"></a>Prestandaanalys
+## <a name="performance-analyzer"></a>Prestandaanalyserare
 
 Vi rekommenderar starkt att du låter all diagnostisering av prestandaproblem utgå från Power BI Desktop snarare än Power BI (tjänsten eller en Power BI-rapportserver). Prestandaproblem beror ofta på den underliggande datakällans prestanda, och denna kan enkelt identifieras och diagnostiseras i den mycket mer isolerade miljön i Power BI Desktop, där vissa komponenter (som Power BI-gatewayen) kan elimineras från början. Det är först om du inte hittar några prestandaproblem i Power BI Desktop som du bör gå vidare och undersöka den specifika rapporten i Power BI. [Prestandaanalyseraren](desktop-performance-analyzer.md) är ett användbart verktyg för att identifiera problem under den här processen.
 

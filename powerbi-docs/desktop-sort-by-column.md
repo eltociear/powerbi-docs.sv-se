@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 12/17/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: daf4f2c4aaa010516f90cae54c1e8b6784fb0f64
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 78632db52ae197a1643dcf1f2831e140568bc6fe
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879711"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223448"
 ---
 # <a name="sort-by-column-in-power-bi-desktop"></a>Sortera efter kolumn i Power BI Desktop
 I **Power BI Desktop** och **Power BI-tjänsten** kan du ändra utseendet på ett visuellt objekt genom att sortera det enligt olika datafält. Genom att ändra sorteringen för ett visuellt objekt kan du framhäva den information som du vill förmedla och se till att det visuella objektet speglar trenden på rätt sätt.
@@ -100,4 +100,11 @@ När vi går tillbaka till menyn och väljer **SalesQuantity** igen, sorteras de
 ![Standardsorteringsordning](media/desktop-sort-by-column/sortbycolumn_7.png)
 
 Med så här många alternativ för att sortera dina visuella objekt är det lätt att bara skapa diagrammet eller bilden.
+
+## <a name="next-steps"></a>Nästa steg
+
+Följande artiklar kan också vara av intresse för dig:
+
+* [Använd visning av detaljerad information mellan rapporter i Power BI Desktop](desktop-cross-report-drill-through.md)
+* [Använda utsnitt i Power BI Desktop](visuals/power-bi-visualization-slicers.md)
 

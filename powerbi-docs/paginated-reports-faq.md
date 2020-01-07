@@ -9,10 +9,10 @@ ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 12/03/2019
 ms.openlocfilehash: c1f8a274a17d85cf8f86d2e33ff63f3e9b686742
-ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "74831218"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Sidnumrerade rapporter i Power BI: Vanliga frågor och svar 
@@ -177,4 +177,4 @@ Ja, du kan nu söka efter dina sidnumrerade rapporter från startsidan.  De visa
 ## <a name="next-steps"></a>Nästa steg
 
 - [Installera Power BI Report Builder från Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=2086513)
-- [Självstudier: Skapa en sidnumrerad rapport](paginated-reports-quickstart-aw.md)
+- [Självstudie: Skapa en sidnumrerad rapport](paginated-reports-quickstart-aw.md)

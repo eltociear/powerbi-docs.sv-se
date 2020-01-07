@@ -10,10 +10,10 @@ ms.date: 10/28/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: e9759f69668780b450117e5e6255e7f5cb7e67f5
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73881025"
 ---
 # <a name="part-2-add-visualizations-to-a-power-bi-report"></a>Del 2, lägg till visualiseringar i en Power BI-rapport

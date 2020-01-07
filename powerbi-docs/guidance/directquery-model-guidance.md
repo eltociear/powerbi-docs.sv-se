@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: bfc1572e31269182e9ca63efbbf6934b90f84b66
-ms.sourcegitcommit: 462ccdd9f79ff698ed0cdfc3165f4ada364dd9ef
+ms.openlocfilehash: 723cc7b2767f6a5ee4394bca74e507fc688b3af8
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74478612"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223649"
 ---
 # <a name="directquery-model-guidance-in-power-bi-desktop"></a>Vägledning för DirectQuery-modell i Power BI Desktop
 
@@ -87,7 +87,7 @@ Du kan optimera en DirectQuery-modell på många sätt, vi går igenom dem i den
 
     Genom att öka värdet för **Maximalt antal anslutningar per datakälla** kan du säkerställa att fler frågor (upp till det maximala antal som anges) kan skickas till den underliggande datakällan. Det här kan vara användbart när du har flera visuella objekt på samma sida eller om många användare använder rapporten samtidigt. När det maximala antalet anslutningar har nåtts placeras ytterligare frågor i kö tills en anslutning blir tillgänglig. Om du ökar den här gränsen ökar även belastningen på den underliggande datakällan. Därför är det inte säkert att inställningen förbättrar den allmänna prestandan.
     
-    När modellen publiceras till Power BI beror det maximala antalet samtidiga frågor som skickas till den underliggande datakällan även på miljön. Olika miljöer (som Power BI, Power BI Premium eller en Power BI-rapportserver) kan ha olika begränsningar för dataflödet. Mer information om resursbegränsningar för Power BI Premium-kapaciteter finns i [Distribuera och hantera Power BI Premium-kapaciteter](https://docs.microsoft.com/power-bi/whitepaper-powerbi-premium-deployment#premium-capacities).
+    När modellen publiceras till Power BI beror det maximala antalet samtidiga frågor som skickas till den underliggande datakällan även på miljön. Olika miljöer (som Power BI, Power BI Premium eller en Power BI-rapportserver) kan ha olika begränsningar för dataflödet. Mer information om resursbegränsningar för Power BI Premium-kapaciteter finns i [Distribuera och hantera Power BI Premium-kapaciteter](https://docs.microsoft.com/power-bi/whitepaper-powerbi-premium-deployment).
 
 ## <a name="optimize-report-designs"></a>Optimera rapportdesignen
 

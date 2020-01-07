@@ -8,10 +8,10 @@ ms.service: power-bi-embedded
 ms.topic: conceptual
 ms.date: 08/13/2018
 ms.openlocfilehash: 362c765fb5e739563b8d21eaed53304eddce8acc
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "74265714"
 ---
 # <a name="diagnostic-logging-for-power-bi-embedded-in-azure"></a>Diagnostisk loggning för Power BI Embedded i Azure
@@ -131,7 +131,7 @@ Motorkategorin instruerar resursen att logga följande händelser och det finns 
 | ProgressTotal | 0 | Total utveckling. |
 | IntegerData | 0 | Integer-data. |
 | Allvarlighetsgrad | 0 | Ett undantags allvarlighetsgrad. |
-| Klart | 1 | 1 = Klart! 0 = fel (1 kan t.ex. innebära att en behörighetskontroll har slutförts och 0 att kontrollen underkänt behörigheten). |
+| Slutförd | 1 | 1 = Klart! 0 = fel (1 kan t.ex. innebära att en behörighetskontroll har slutförts och 0 att kontrollen underkänt behörigheten). |
 | Fel | 0 | Felnummer för en given händelse. |
 | ConnectionID | 3 | Unikt anslutnings-ID. |
 | DatasetID | 5eaa550e-06ac-4adf-aba9-dbf0e8fd1527 | ID för den datamängd i vilken användarens instruktion körs. |

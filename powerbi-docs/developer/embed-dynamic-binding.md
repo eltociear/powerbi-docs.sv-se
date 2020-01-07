@@ -8,10 +8,10 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 11/07/2019
 ms.openlocfilehash: f797dd55202ff4cba87cc3a15601d85091e94823
-ms.sourcegitcommit: c839ef7437bc8fb8f7eeda23e59d05c7192a7fe8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/18/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "74164055"
 ---
 # <a name="connect-a-report-to-a-dataset-using-dynamic-binding"></a>Ansluta en rapport till en datamängd med hjälp av dynamisk bindning 
@@ -66,5 +66,5 @@ var report = powerbi.embed(embedContainer, config);
 ## <a name="next-steps"></a>Nästa steg
 
 Om du inte har använt inbäddning i Power BI tidigare kan du läsa igenom de här självstudierna så att du får lära dig att bädda in Power BI-innehåll:
-* [Självstudier: Bädda in Power BI-innehåll i ett program för dina kunder](embed-sample-for-customers.md)
-* [Självstudier: Bädda in Power BI-innehåll i ett program för din organisation](embed-sample-for-your-organization.md)
+* [Självstudie: Bädda in Power BI-innehåll i ett program för dina kunder](embed-sample-for-customers.md)
+* [Självstudie: Bädda in Power BI-innehåll i ett program för din organisation](embed-sample-for-your-organization.md)

@@ -9,10 +9,10 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/30/2018
 ms.openlocfilehash: 01f79bfaae13b60d3c63abd8f7fc801998075ee6
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "74265262"
 ---
 # <a name="power-bi-embedded-migration-tool"></a>Migreringsverktyg för Power BI Embedded
@@ -26,7 +26,7 @@ Migrering av innehållet från dina samlingar med arbetsytor till Power BI-tjän
 * Skickade datauppsättningar kan inte hämtas och måste återskapas med hjälp av Power BI REST-API:er för Power BI-tjänsten.
 * PBIX-filer som importeras innan 26 November 2016 kan inte hämtas.
 
-## <a name="download"></a>Hämta
+## <a name="download"></a>Ladda ned
 
 Du kan hämta verktygsexemplet för migrering från [GitHub](https://github.com/Microsoft/powerbi-migration-sample). Du kan antingen ladda ned en zipfil av databasen eller klona den lokalt. När du har hämtat den, kan du öppna *powerbi-migration-sample.sln* i Visual Studio för att skapa och köra migreringsverktyget.
 

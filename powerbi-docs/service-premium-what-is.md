@@ -11,10 +11,10 @@ ms.date: 10/28/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
 ms.openlocfilehash: 37107c1092b12a8efc230718c624f104aa31520f
-ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "74958573"
 ---
 # <a name="what-is-power-bi-premium"></a>Vad är Power BI Premium?
@@ -114,7 +114,7 @@ Det är viktigt att påpeka att datamängdsavlägsning är ett normalt och förv
 
 Uppdateringar av importmodeller är alltid minnesintensiva eftersom modeller måste läsas in i minnet. Det krävs ytterligare minne för bearbetning. En fullständig uppdatering kan ungefär dubbla den mängd minne som krävs av modellen. Detta säkerställer att frågor kan köras mot modellen även när den bearbetas, eftersom frågor skickas till den befintliga modellen tills uppdateringen har slutförts och nya modelldata är tillgängliga. Inkrementell uppdatering kräver mindre minne och kan slutföras snabbare. Det kan således avsevärt minska trycket på kapacitetsresurser. Uppdateringar kan även vara processorintensiva för modeller, särskilt de med komplexa Power Query-omvandlingar eller beräknade tabeller/kolumner som är komplexa eller baseras på stora tabeller.
 
-Uppdateringar såsom frågor kräver att modellen läses in i minnet. Om det inte finns tillräckligt med minne kommer Power BI-tjänsten att försöka ta bort inaktiva modeller, och om det inte är möjligt (alla modeller är aktiva) placeras uppdateringsjobbet i kö. Uppdateringar är vanligtvis mycket CPU-intensiva, till och med mer än frågor. Därför finns kapacitetsbegränsningar på antal samtidiga uppdateringar, inställt på 1,5 gånger antalet serverdelens v-kärnor, avrundat uppåt. Om det finns för många samtidiga uppdateringar, placeras en schemalagd uppdatering i kö. När sådana situationer inträffar, tar det längre tid för uppdateringen att färdigställas. Uppdateringar på begäran, till exempel de som utlöses av en användarbegäran eller ett API-anrop, försöker igen tre gånger \[ [1](#endnote-1)\]. Om det fortfarande inte finns tillräckligt med resurser misslyckas uppdateringen.
+Uppdateringar såsom frågor kräver att modellen läses in i minnet. Om det inte finns tillräckligt med minne kommer Power BI-tjänsten att försöka ta bort inaktiva modeller, och om det inte är möjligt (alla modeller är aktiva) placeras uppdateringsjobbet i kö. Uppdateringar är vanligtvis mycket CPU-intensiva, till och med mer än frågor. Därför finns kapacitetsbegränsningar på antal samtidiga uppdateringar, inställt på 1,5 gånger antalet serverdelens v-kärnor, avrundat uppåt. Om det finns för många samtidiga uppdateringar, placeras en schemalagd uppdatering i kö. När sådana situationer inträffar, tar det längre tid för uppdateringen att färdigställas. Uppdateringar på begäran, till exempel de som utlöses av en användarbegäran eller ett API-anrop, försöker igen tre gånger \[[1](#endnote-1)\]. Om det fortfarande inte finns tillräckligt med resurser misslyckas uppdateringen.
 
 Avsnittskommentarer:   
 <a name="endnote-1"></a>\[1\] Kan komma att ändras.

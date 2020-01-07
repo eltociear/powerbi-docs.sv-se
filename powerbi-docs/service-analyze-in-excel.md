@@ -7,15 +7,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/26/2019
+ms.date: 12/17/2019
 ms.author: davidi
 LocalizationGroup: Reports
-ms.openlocfilehash: d949978d431a219845ed93b59eb52439c9d7f0c0
-ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
+ms.openlocfilehash: f72d29e7f5bc7f93abd43f4c14cf0e53ef18f8d3
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74958642"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223737"
 ---
 # <a name="analyze-in-excel"></a>Analysera i Excel
 Det finns tillfällen när du kanske vill använda Excel för att visa och interagera med en datauppsättning som du har i Power BI. Med **Analysera i Excel** kan du göra just det och komma åt funktionerna för pivottabell, diagram och utsnitt i Excel baserat på den datauppsättning som finns i Power BI.
@@ -104,3 +104,11 @@ Eftersom användarna måste uppdatera datauppsättningen, och uppdatering för e
 
 ## <a name="troubleshooting"></a>Felsökning
 Det kan finnas tillfällen när Analysera i Excel ger ett oväntat resultat eller funktionen inte fungerar som väntat. [Den här sidan innehåller lösningar för vanliga problem när du använder Analysera i Excel](desktop-troubleshooting-analyze-in-excel.md)
+
+## <a name="next-steps"></a>Nästa steg
+
+Följande artiklar kan också vara av intresse för dig:
+
+* [Använd visning av detaljerad information mellan rapporter i Power BI Desktop](desktop-cross-report-drill-through.md)
+* [Använda utsnitt i Power BI Desktop](visuals/power-bi-visualization-slicers.md)
+

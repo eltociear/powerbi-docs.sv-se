@@ -11,10 +11,10 @@ ms.date: 12/03/2019
 ms.author: maggies
 LocalizationGroup: Common tasks
 ms.openlocfilehash: 4d8a5c1cceb66b7103a58c7bcebfa46dbdd97430
-ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "74831109"
 ---
 # <a name="subscribe-yourself-and-others-to-reports-and-dashboards-in-the-power-bi-service"></a>Skapa en prenumeration åt dig eller andra på rapporter och instrumentpaneler i Power BI-tjänsten
@@ -53,7 +53,7 @@ Prenumeration på sidnumrerade rapporter fungerar lite annorlunda. Mer informati
 
 5. Fyll i information om **Ämne** och **Meddelande** för e-posten. 
 
-5. Välj en **frekvens** för prenumerationen: **Varje dag**, **Varje timme**, **Varje vecka**, **Varje månad** eller **Efter datauppdatering (en gång per dag)**.  Om du bara vill få e-post för prenumerationen på vissa dagar väljer du **Varje timme** eller **Varje vecka** och vilka dagar du vill få den.  Om du till exempel bara vill ha e-post för prenumerationen på vardagar väljer du **Varje vecka** och avmarkerar rutorna **Lör** och **Sön**.  Om du väljer **Varje månad** anger du den eller de dagar i månaden som du vill ta emot prenumerationsmeddelandet via e-post.  
+5. Välj en **frekvens** för prenumerationen: **Varje dag**, **Varje timme**, **Varje vecka**, **Varje månad** eller **Efter datauppdatering (en gång per dag)** .  Om du bara vill få e-post för prenumerationen på vissa dagar väljer du **Varje timme** eller **Varje vecka** och vilka dagar du vill få den.  Om du till exempel bara vill ha e-post för prenumerationen på vardagar väljer du **Varje vecka** och avmarkerar rutorna **Lör** och **Sön**.  Om du väljer **Varje månad** anger du den eller de dagar i månaden som du vill ta emot prenumerationsmeddelandet via e-post.  
 
 6. Om du väljer **Varje dag**, **Varje timme**, **Varje månad** eller **Varje vecka** kan du även välja en **Schemalagd tid** för prenumerationen.  Du kan köra den på heltimme eller 15, 30 eller 45 minuter över.  Välj morgon (AM) eller eftermiddag/kväll (PM). Du kan även ange tidszon.  Om du väljer **Varje timma** ska du välja **Schemalagd tid** då du vill att prenumerationen ska starta, så körs den varje timme efter det.
 

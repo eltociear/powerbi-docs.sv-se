@@ -11,10 +11,10 @@ ms.custom: ''
 ms.date: 08/10/2017
 LocalizationGroup: Data from databases
 ms.openlocfilehash: 00b7c98236f37505fbb0ddec81a45b65bf3e3ee6
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73871196"
 ---
 # <a name="sql-server-analysis-services-live-data-in-power-bi"></a>SQL Server Analysis Services-realtidsdata i Power BI
@@ -58,7 +58,7 @@ Om du fäster visuella objekt från en rapport på instrumentpanelen, uppdateras
 
 ## <a name="next-steps"></a>Nästa steg
 
-* [Lokal datagateway](service-gateway-onprem.md)  
+* [On-premises data gateway (Lokal datagateway)](service-gateway-onprem.md)  
 * [Hantera Analys Services-datakällor](service-gateway-enterprise-manage-ssas.md)  
 * [Felsöka den lokala datagatewayen](service-gateway-onprem-tshoot.md)  
 

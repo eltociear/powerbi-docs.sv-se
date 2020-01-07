@@ -1,19 +1,19 @@
 ---
 title: Visa Power BI-innehåll som en extern gästanvändare (Azure AD B2B)
 description: Använd Power BI-mobilappar för att visa innehåll som delas med dig från en extern organisation.
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 03/27/2019
-ms.author: mshenhav
-ms.openlocfilehash: f0db77a69bd8845b9448b7c15fedea7663683ec0
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 12/09/2019
+ms.author: painbar
+ms.openlocfilehash: c5e1e0b90f24a81940edab46633f49df41d25fdc
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879344"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75219919"
 ---
 # <a name="view-power-bi-content-shared-with-you-from-an-external-organization"></a>Visa Power BI-innehåll som delas med dig från en extern organisation
 
@@ -30,18 +30,18 @@ Gäller för:
 
 **Först behöver någon från en extern organisation dela ett objekt med dig.** När någon [delar ett objekt med dig](../../service-share-dashboards.md), antingen från samma organisation eller från en extern organisation, får du ett e-postmeddelande med en länk till det delade objektet. Om du öppnar den länken på din mobila enhet öppnas Power BI-mobilappen. Om appen känner av att objektet delades från en extern organisation återansluter appen till den organisationen med din identitet. Appen läser sedan in alla objekt som delades med dig från den organisationen.
 
-![Power BI – öppna delat objekt från e-post ](./media/mobile-apps-b2b/mobile-b2b-open-item-email.png)
+![Power BI – öppna delat objekt från e-post ](./media/mobile-apps-b2b/mobile-b2b-open-item-email-new.png)
 
 > [!NOTE]
 > Om det här är det första objektet som delas med dig som extern gästanvändare måste du lösa in inbjudan i en webbläsare. Det går inte att lösa in inbjudan i Power BI-appen.
 
 Så länge du är ansluten till en extern organisation visas en svart rubrik i appen. Den här rubriken visar att du inte är ansluten till din hemorganisation. Om du vill ansluta tillbaka till din hemorganisation avslutar du gästläget.
 
-![Power BI-rubrik för gästanvändare](./media/mobile-apps-b2b/mobile-b2b-exit-home.png)
+![Power BI-rubrik för gästanvändare](./media/mobile-apps-b2b/mobile-b2b-exit-home-new.png)
 
 Du behöver en Power BI-artefaktlänk för att ansluta till en extern organisation, men när din app har växlat kan du komma åt alla objekt som delas med dig (inte bara det objekt som du öppnade från e-postmeddelandet). Om du vill visa alla objekt som du har åtkomst till i den externa organisationen går du till appmenyn och väljer **Delat med mig**. Under **Appar** finns även appar som du kan använda.
 
-![Power BI-appmenyn som extern gästanvändare](./media/mobile-apps-b2b/mobile-b2b-menu.png)
+![Power BI-appmenyn som extern gästanvändare](./media/mobile-apps-b2b/mobile-b2b-menu-new.png)
 
 ## <a name="limitations"></a>Begränsningar
 

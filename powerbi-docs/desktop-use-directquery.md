@@ -10,10 +10,10 @@ ms.date: 08/19/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 08b739c5be01efed5abf8258540b5ab66b3b390b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73876077"
 ---
 # <a name="use-directquery-in-power-bi-desktop"></a>Använda DirectQuery i Power BI Desktop
@@ -96,5 +96,5 @@ Mer information om **DirectQuery** finns i följande resurser:
 * [Datakällor som stöds av DirectQuery](desktop-directquery-data-sources.md)
 * [DirectQuery och SAP BW](desktop-directquery-sap-bw.md)
 * [DirectQuery och SAP HANA](desktop-directquery-sap-hana.md)
-* [Lokal datagateway](service-gateway-onprem.md)
+* [On-premises data gateway (Lokal datagateway)](service-gateway-onprem.md)
 

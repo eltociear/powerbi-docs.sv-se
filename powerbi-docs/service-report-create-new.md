@@ -10,10 +10,10 @@ ms.date: 04/25/2019
 ms.author: maggies
 LocalizationGroup: Reports
 ms.openlocfilehash: c3f30206a01dce9cf9fd3ce0600b46b401df2b1f
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73871754"
 ---
 # <a name="create-a-report-in-the-power-bi-service-by-importing-a-dataset"></a>Skapa en rapport i Power BI-tjänsten genom att importera en datamängd
@@ -52,7 +52,7 @@ Den här metoden för att skapa en rapport som börjar med en datauppsättning o
 ## <a name="add-a-radial-gauge-to-the-report"></a>Lägg till en radiell mätare i rapporten
 Nu när vi har importerat vår datauppsättning kan vi börja svara på frågor.  Vår marknadschef (CMO) vill veta hur nära vi kommer att vara till att uppfylla det här årets försäljningsmål. En mätare är ett [bra visualiseringsval](visuals/power-bi-report-visualizations.md) för att visa den här typen av information.
 
-1. Välj **Sales (Försäljning)**  >  **This Year Sales (Årets försäljning)**  > **Value (Värde)** i fönstret Fält.
+1. Välj **Sales (Försäljning)**  > **This Year Sales (Årets försäljning)**  > **Value (Värde)** i fönstret Fält.
    
     ![stapeldiagram i rapportredigeraren](media/service-report-create-new/power-bi-report-step1.png)
 2. Omvandla det visuella objektet till en mätare genom att välja mätarmallen ![mätarikon](media/service-report-create-new/powerbi-gauge-icon.png) från fönstret **Visualiseringar**.
@@ -69,7 +69,7 @@ Nu när vi har importerat vår datauppsättning kan vi börja svara på frågor.
 Vår marknadschef har några ytterligare frågor för oss att besvara. Hon vill veta hur försäljningen i år ser ut jämfört med förra året. Dessutom vill hon se resultatet per distrikt.
 
 1. Först ska vi skapa lite utrymme på arbetsytan. Välj mätaren och flytta den till det övre högra hörnet. Tryck och dra ett av hörnet så att den blir mindre.
-2. Avmarkera mätaren. Gå till rutan Fält och välj **Försäljning** > **Försäljning detta år** > **värdet** och välj **Försäljning**  >  **Försäljning förra året**.
+2. Avmarkera mätaren. Gå till rutan Fält och välj **Försäljning** > **Försäljning detta år** > **värdet** och välj **Försäljning** > **Försäljning förra året**.
    
     ![rapportredigeraren med mätare och stapeldiagram](media/service-report-create-new/power-bi-report-step4.png)
 3. Omvandla det visuella objektet till ett ytdiagram genom att välja ytdiagrammallen ![diagramikon](media/service-report-create-new/power-bi-areachart-icon.png) från fönstret **Visualiseringar**.

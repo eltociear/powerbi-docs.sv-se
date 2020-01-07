@@ -10,10 +10,10 @@ ms.subservice: powerbi-report-server
 ms.custom: mvc
 ms.date: 12/03/2019
 ms.openlocfilehash: 88df45a95e485695a9a2f36358c1fcca9670f258
-ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "74831126"
 ---
 # <a name="comparing-power-bi-report-server-and-the-power-bi-service"></a>En jämförelse av Power BI-rapportservern och Power BI-tjänsten
@@ -24,7 +24,7 @@ Power BI-rapportservern och Power BI-tjänsten har många likheter och vissa vik
 
 | Funktioner | Power BI-rapportserver | Power BI-tjänst | Anteckningar |
 |---------|---------|---------|---------|
-| Distribution | Lokal eller värdbaserat moln | Moln | Power BI-rapportservern kan distribueras i virtuella Azure-datorer (värdbaserat moln) om den är licensierad via Power BI Premium. |
+| Distribution | Lokal eller värdbaserat moln | Molnet | Power BI-rapportservern kan distribueras i virtuella Azure-datorer (värdbaserat moln) om den är licensierad via Power BI Premium. |
 | Källdata | I molnet och/eller lokalt | I molnet och/eller lokalt |  |
 | Licens | Power BI Premium eller SQL Server EE med Software Assurance (SA) | Power BI Pro och/eller för Power BI Premium | |  
 | Livscykel | Modern livscykelprincip | Helt hanterad tjänst |  |

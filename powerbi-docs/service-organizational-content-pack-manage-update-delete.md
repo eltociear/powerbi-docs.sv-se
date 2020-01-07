@@ -10,10 +10,10 @@ ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
 ms.openlocfilehash: 975c219a98f3d03f59df4d1c2a0551718bf213f0
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73881280"
 ---
 # <a name="manage-update-and-delete-organizational-content-packs"></a>Hantera, uppdatera och ta bort organisationsinnehållspaket
@@ -23,7 +23,7 @@ ms.locfileid: "73881280"
 
 Du kan packa upp och dela dina instrumentpaneler, rapporter, Excel-arbetsböcker och datauppsättningar med dina kollegor som [organisationsinnehållspaket](service-organizational-content-pack-introduction.md). Dina kollegor kan använda dem som de är, eller skapa egna kopior.
 
-Att skapa innehållspaket skiljer sig från att dela instrumentpaneler eller samarbeta på dem i en grupp. Läs [Hur ska jag samarbeta med och dela instrumentpaneler och rapporter?](service-how-to-collaborate-distribute-dashboards-reports.md) för att välja det bästa alternativet för din situation.
+Att skapa innehållspaket skiljer sig från att dela instrumentpaneler eller samarbeta om dem i en grupp. Läs [Hur ska jag samarbeta med och dela instrumentpaneler och rapporter?](service-how-to-collaborate-distribute-dashboards-reports.md) för att välja det bästa alternativet för din situation.
 
 Du kan bara utföra vissa uppgifter för organisationsinnehållspaket om du har skapat innehållspaketet:
 

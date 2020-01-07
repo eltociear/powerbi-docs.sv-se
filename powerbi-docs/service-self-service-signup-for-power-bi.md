@@ -10,10 +10,10 @@ ms.date: 10/31/2019
 ms.author: kfollis
 LocalizationGroup: Get started
 ms.openlocfilehash: 13928bc39801cdaccf73450da64c4f84048fbce3
-ms.sourcegitcommit: 90bd747b7c460d17b74cd386d3f5714234b1f6c9
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "74791629"
 ---
 # <a name="sign-up-for-power-bi-as-an-individual"></a>Registrera dig själv som enskild individ för Power BI

@@ -9,10 +9,10 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/08/2018
 ms.openlocfilehash: 9d0ab5bcffe3b0267b3e07a684c2c7c9bd0fd316
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "74265827"
 ---
 # <a name="dataset-properties"></a>Egenskaper för datamängd
@@ -27,7 +27,7 @@ Den aktuella v1 av datauppsättnings-API:t tillåter endast att en datauppsättn
 Namn  |Typ  |Beskrivning  |Skrivskyddad  |Krävs
 ---------|---------|---------|---------|---------
 ID     |  GUID       | Unik identifierare för datauppsättningen i hela systemet.        | Sant        | Falskt        
-namn     | Sträng        | Användardefinierat namn på datauppsättningen.        | Falskt        | Sant        
+name     | Sträng        | Användardefinierat namn på datauppsättningen.        | Falskt        | Sant        
 tabeller     | Tabell[]        | Tabellsamling.        |  Falskt       | Falskt        
 relationer     | Relation[]        | En samling relationer mellan tabeller.        | Falskt        |  Falskt  
 defaultMode     | Sträng        | Anger huruvida datamängden push-överförs, strömmas eller båda, med värdena ”Push” och ”Streaming”.         | Falskt        |  Falskt
@@ -36,7 +36,7 @@ defaultMode     | Sträng        | Anger huruvida datamängden push-överförs, 
 
 Namn  |Typ  |Beskrivning  |Skrivskyddad  |Krävs
 ---------|---------|---------|---------|---------
-namn     | Sträng        |  Användardefinierat namn på tabellen. Det används också som tabellens identifierare.       | Falskt        |  Sant       
+name     | Sträng        |  Användardefinierat namn på tabellen. Det används också som tabellens identifierare.       | Falskt        |  Sant       
 kolumner     |  kolumn[]       |  Kolumnsamling.       | Falskt        |  Sant       
 mått     | mått[]        |  Måttsamling.       | Falskt        |  Falskt       
 isHidden     | Boolesk        | Om värdet är Sant döljs tabellen från klientverktyg.        | Falskt        | Falskt        
@@ -45,7 +45,7 @@ isHidden     | Boolesk        | Om värdet är Sant döljs tabellen från klient
 
 Namn  |Typ  |Beskrivning  |Skrivskyddad  |Krävs
 ---------|---------|---------|---------|---------
-namn     |  Sträng        | Användardefinierat namn på kolumnen.        |  Falskt       | Sant       
+name     |  Sträng        | Användardefinierat namn på kolumnen.        |  Falskt       | Sant       
 dataType     |  Sträng       |  [EDM-datatyper](https://msdn.microsoft.com/library/ee382832.aspx) som stöds och begränsningar. Se [Begränsningar för datatyper](#DataTypeRestrictions).      |  Falskt       | Sant        
 formatString     | Sträng        | En sträng som anger hur värdet ska formateras när det visas. Mer information om strängformatering finns på sidan om [FORMAT_STRING Contents](https://msdn.microsoft.com/library/ms146084.aspx) (Innehållsformat i strängar).      | Falskt        | Falskt        
 sortByColumn    | Sträng        |   Strängnamn på en kolumn i samma tabell som ska användas för att ordna den aktuella kolumnen.     | Falskt        | Falskt       
@@ -57,7 +57,7 @@ summarizeBy     | Sträng        |  Standardmetod för sammansättning för kolu
 
 Namn  |Typ  |Beskrivning  |Skrivskyddad  |Krävs
 ---------|---------|---------|---------|---------
-namn     | Sträng        |  Användardefinierat namn på måttet.       |  Falskt       | Sant        
+name     | Sträng        |  Användardefinierat namn på måttet.       |  Falskt       | Sant        
 uttryck     | Sträng        | Ett giltigt DAX-uttryck.        | Falskt        |  Sant       
 formatString     | Sträng        |  En sträng som anger hur värdet ska formateras när det visas. Mer information om strängformatering finns på sidan om [FORMAT_STRING Contents](https://msdn.microsoft.com/library/ms146084.aspx) (Innehållsformat i strängar).       | Falskt        | Falskt        
 isHidden     | Sträng        |  Om värdet är Sant döljs tabellen från klientverktyg.       |  Falskt       | Falskt       
@@ -66,7 +66,7 @@ isHidden     | Sträng        |  Om värdet är Sant döljs tabellen från klien
 
 Namn  |Typ  |Beskrivning  |Skrivskyddad  |Krävs 
 ---------|---------|---------|---------|---------
-namn     | Sträng        | Användardefinierat namn på relationen. Det används också som relationens identifierare.        | Falskt       | Sant        
+name     | Sträng        | Användardefinierat namn på relationen. Det används också som relationens identifierare.        | Falskt       | Sant        
 crossFilteringBehavior     | Sträng        |    Filterriktningen för relationen: OneDirection (standard), BothDirections, automatisk       | Falskt        | Falskt        
 fromTable     | Sträng        | Namnet på sekundärnyckeltabellen.        | Falskt        | Sant         
 fromColumn    | Sträng        | Namnet på sekundärnyckelkolumnen.        | Falskt        | Sant         

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/27/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: bdaac078fa106565f7c11b3cc323840b5d10b579
-ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
+ms.openlocfilehash: 749d8d5b62df87b0e6b29d524e90c694a0e38efe
+ms.sourcegitcommit: ef9ab7c0d84b926094c33e8aa2765cd43b844314
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74565346"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75622424"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Organisera arbete på de nya arbetsytorna i Power BI
 
@@ -111,18 +111,19 @@ Med arbetsytans OneDrive-funktion kan du konfigurera en Office 365-grupp vars fi
 Power BI synkroniserar inte behörigheter för användare eller grupper, som är konfigurerade med arbetsyteåtkomst, med Office 365-gruppmedlemskapet. Det bästa sättet är att hantera arbetsyteåtkomst via den Office 365-grupp vars fillagring du konfigurerar i den här inställningen. 
 
 Läs mer om hur du kan [konfigurera och få åtkomst till arbetsytans OneDrive](service-create-the-new-workspaces.md#workspace-onedrive).  
-   
+
 ## <a name="auditing"></a>Granskning
+
 Följande aktiviteter granskas av Power BI för arbetsytor för den nya arbetsytupplevelsen.
 
-| Eget namn |   Åtgärdsnamn |
+| Eget namn | Åtgärdsnamn |
 |---|---|
 | Power BI-mapp skapades | CreateFolder |
 | Power BI-mapp togs bort | DeleteFolder |
 | Power BI-mapp uppdaterades | UpdateFolder |
 | Power BI-mappåtkomst uppdaterades| UpdateFolderAccess |
 
-Läs mer om [Power BI-granskning](service-admin-auditing.md#activities-audited-by-power-bi).
+Läs mer om [Power BI-granskning](service-admin-auditing.md).
 
 ## <a name="limitations-and-considerations"></a>Begränsningar och överväganden
 

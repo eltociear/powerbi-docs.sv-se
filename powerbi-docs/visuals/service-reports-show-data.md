@@ -10,10 +10,10 @@ ms.date: 11/4/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 5417511b12c85cb467c3613671a1e101541c9609
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73880623"
 ---
 # <a name="show-the-data-that-was-used-to-create-the-visualization"></a>Visa data som används för att skapa visualiseringen
@@ -23,7 +23,7 @@ En Power BI-visualisering konstrueras med data från dina datauppsättningar. Om
 Du kan också exportera de data som används för att skapa visualiseringen som en .xlsx- eller .csv-fil och visa dem i Excel. Mer information finns i [Exportera data från visualiseringar i Power BI](power-bi-visualization-export-data.md).
 
 > [!NOTE]
-> *Visa Data* och *Exportera data* finns både i Power BI-tjänsten och Power BI Desktop. Dock ger Power BI Desktop ett ytterligare lager med information: [ *Visa poster* visar de faktiska raderna i datauppsättningen](../desktop-see-data-see-records.md).
+> *Visa Data* och *Exportera data* finns både i Power BI-tjänsten och Power BI Desktop. Dock ger Power BI Desktop ett ytterligare lager med information: [*Visa poster* visar de faktiska raderna i datauppsättningen](../desktop-see-data-see-records.md).
 > 
 > 
 

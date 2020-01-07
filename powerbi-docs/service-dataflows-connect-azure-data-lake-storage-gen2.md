@@ -6,17 +6,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/29/2019
+ms.date: 12/16/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: c48ae0913d0096546c23d22d3e4596fdb21aef82
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: c3f703bfe2685166ce575b37c053b2a9603a799f
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73872720"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223886"
 ---
-# <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage-preview"></a>Ansluta Azure Data Lake Storage Gen2 för lagring av dataflöde (förhandsversion)
+# <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage"></a>Ansluta Azure Data Lake Storage Gen2 för lagring av dataflöde
 
 Du kan konfigurera Power BI-arbetsytor till att lagra dataflöden på din organisations Azure Data Lake Storage Gen2-konto. Den här artikeln beskriver de allmänna stegen som krävs för att göra det och innehåller vägledning och bästa praxis längs vägen. Det finns några fördelar med att konfigurera arbetsytor för att lagra dataflödesdefinitioner och datafiler i din data lake, inklusive följande:
 
@@ -86,15 +86,15 @@ Det här steget kräver att du installerar Azure Storage Explorer version 1.6.2 
 
 3. Högerklicka på Blob-behållare och från snabbmenyn väljer du – Skapa Blob-behållare.
 
-   ![högerklicka på BLOB-behållare](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_05a.jpg)
+   ![högerklicka på BLOB-containrar](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_05a.jpg)
 
 4. En textruta visas nedanför mappen Blob-behållare. Ange namnet *powerbi* 
 
    ![ange namnet ”powerbi”](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_05b.jpg)
 
-5. Tryck på RETUR när du har skapat blob-behållaren
+5. Tryck på RETUR när du har skapat blob-containern
 
-   ![Tryck på RETUR för att skapa blob-behållaren](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_05c.jpg)
+   ![Tryck på RETUR för att skapa blob-containern](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_05c.jpg)
 
 I nästa avsnitt, kan du ge Power BI-gruppen av tjänster fullständig åtkomst till filsystemet som du skapade. 
 

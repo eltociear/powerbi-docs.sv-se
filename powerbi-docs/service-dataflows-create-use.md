@@ -10,10 +10,10 @@ ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: 704e073299f89859c507b3ddc6ccba0b4be03d76
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73877381"
 ---
 # <a name="creating-and-using-dataflows-in-power-bi"></a>Skapa och använda dataflöden i Power BI
@@ -57,7 +57,7 @@ En **entitet** är en uppsättning fält som används för att lagra data, ungef
 
 När du väljer en datakälla kan du uppmanas om att ange anslutningsinställningar, inklusive kontot som ska användas vid anslutning till datakällan, enligt följande bild.
 
-![Anslut till datakällan](media/service-dataflows-create-use/dataflows-create-use_06.png)
+![Anslut till datakälla](media/service-dataflows-create-use/dataflows-create-use_06.png)
 
 När du är ansluten, kan du välja vilka data som ska användas för entiteten. När du väljer data och en källa, kommer Power BI därefter att återansluta till datakällan för att behålla data i ditt dataflöde uppdaterade, med den frekvens som du väljer senare i installationen.
 

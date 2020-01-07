@@ -8,26 +8,18 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/01/2019
 ms.author: v-tatero
-ms.openlocfilehash: 44da3a20c203bfc50be08b0ed91efa6dfd998204
-ms.sourcegitcommit: 9a265d8117cc202f5f700286b5ff42a631aacdb4
+ms.openlocfilehash: 73b439b870a4f931c2db680c0067a6ea2fdf54ff
+ms.sourcegitcommit: d5de66b591c2e1de979ce0e3ce5e5b6e1f2a08db
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74882757"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548552"
 ---
 # <a name="power-bi-webinars"></a>Power BI-webbseminarier
 
 Registrera dig för våra kommande live-webbseminarier eller titta på våra inspelade sessioner på begäran.
 
 ## <a name="upcoming-webinars"></a>Kommande webbseminarier
-
-**Analys i virtuella Azure-händelser: Få snabbare insikter med Azure Synapse Analytics**
-<br>av Gayle Sheppard och John MacIntyre
-<br>[Registrera dig nu](https://info.microsoft.com/WW-Analytics-in-Azure-virtual-event-Accelerate-Time-to-Insight-with-Azure-Synapse-Analytics-Registration.html?ocid=AID2482920_QSG_373413)
-
-**Nine Trends Shaping the Future of Big Data Analytics** (Nio trender som formar framtiden för stordataanalys)
-<br>av Vijay Gopalakrishnan
-<br>[Registrera dig om du vill titta den 18 december](https://info.microsoft.com/ww-landing-Nine-Trends-Shaping-the-Future-of-Big-Data-Analytics.html?Lcid=EN-US)
 
 **Three Ways AI Is Changing BI**
 <br>av Justyna LUCZNIK
@@ -39,6 +31,10 @@ Registrera dig för våra kommande live-webbseminarier eller titta på våra ins
 
 Kom igång med dessa populära webbseminarier på begäran
 
+**Analys i virtuella Azure-händelser: Få snabbare insikter med Azure Synapse Analytics**
+<br>av Gayle Sheppard och John MacIntyre
+<br>[Registrera dig och titta nu](https://info.microsoft.com/Analytics-in-Azure-virtual-event-Accelerate-Time-to-Insight-with-Azure-Synapse-Analytics-On-Demand-Registration.html)
+
 **Hur Microsoft ändrar BI-dataskyddet**
 <br>av Anton Fritz och Adi Regev
 <br>[Registrera dig och titta nu](https://info.microsoft.com/ww-landing-How-Microsoft-Is-Changing-BI-Data-Protection.html?lcid=EN-US)
@@ -46,6 +42,10 @@ Kom igång med dessa populära webbseminarier på begäran
 **Power BI och framtidens moderna och företags-BI**
 <br>av Arun Ulag och Amir Netz
 <br>[Registrera dig och titta nu](https://info.microsoft.com/ww-landing-The-Future-of-Modern-and-Enterprise-BI-video.html?LCID=EN-US)
+
+**Nine Trends Shaping the Future of Big Data Analytics** (Nio trender som formar framtiden för stordataanalys)
+<br>av Vijay Gopalakrishnan
+<br>[Registrera dig och titta nu](https://info.microsoft.com/ww-landing-Nine-Trends-Shaping-the-Future-of-Big-Data-Analytics.html?Lcid=EN-US)
 
 **Kom igång med Power BI**
 <br>av Miguel Martinez
@@ -244,7 +244,7 @@ Titta på inspelade sessioner när som helst
 <br>av Kirkland Barrett
 <br>[Registrera dig och titta nu](https://info.microsoft.com/US-PowerBI-WBNR-FY17-11Nov-29-BIATMIcrosoft274828_01Registration-ForminBody.html?Is=Website)
 
-## <a name="see-also"></a>Se också
+## <a name="see-also"></a>Se även
 
 - [Power BI-vitböcker](whitepapers.md)
 
