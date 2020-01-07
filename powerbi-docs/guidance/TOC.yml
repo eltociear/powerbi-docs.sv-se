@@ -28,6 +28,8 @@
           href: dax-countrows.md
         - name: Undvik att omvandla tomma värden till värden
           href: dax-avoid-converting-blank.md
+        - name: Referenser för kolumner och mått
+          href: dax-column-measure-references.md
         - name: Metodtips för dataflöden
           href: ../service-dataflows-best-practices.md
         - name: Vägledning för DirectQuery-modell i Power BI Desktop
@@ -42,6 +44,8 @@
           href: auto-date-time.md
         - name: Vägledning för att lägga till en många-till-många-relationer
           href: relationships-many-to-many.md
+        - name: Inaktivera uppdatering av Power Query i bakgrunden
+          href: power-query-background-refresh.md
     - name: Vitböcker
       items:
         - name: Översikt vitböcker
