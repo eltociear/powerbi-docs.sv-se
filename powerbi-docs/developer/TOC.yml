@@ -15,8 +15,6 @@
               href: power-bi-custom-visuals.md
         - name: Självstudier
           items:
-            - name: Visuellt koncept
-              href: visuals/power-bi-visuals-concept.md
             - name: Utveckla ett visuellt Power BI-objekt
               href: visuals/custom-visual-develop-tutorial.md
             - name: Lägga till formateringsalternativ
@@ -25,6 +23,10 @@
               href: visuals/unit-tests-introduction.md
         - name: Begrepp
           items:
+            - name: Struktur för visuellt Power BI-objekt
+              href: visuals/visual-project-structure.md
+            - name: Visuellt koncept
+              href: visuals/power-bi-visuals-concept.md
             - name: Visuella objekt för organisationer i Power BI
               href: power-bi-custom-visuals-organization.md
             - name: Riktlinjer för visuella objekt för Power BI
@@ -63,6 +65,8 @@
               href: visuals/bookmarks-support.md
             - name: Lägga till stöd för snabbmeny
               href: visuals/context-menu.md
+            - name: Lägg till stöd för ökad detaljnivå
+              href: visuals/drill-down-support.md
             - name: Markera data i visuella objekt
               href: visuals/highlight.md
             - name: Lägga till stöd för högkontrastläge
