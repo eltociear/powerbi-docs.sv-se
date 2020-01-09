@@ -425,7 +425,7 @@
           href: desktop-send-smile-privacy-statement.md
         - name: Hantera inloggningsformuläret för Power BI Desktop
           href: desktop-admin-sign-in-form.md
-        - name: Hjälpmedel
+        - name: Tillgänglighet
           items:
             - name: Om hjälpmedel i Power BI
               href: desktop-accessibility-overview.md
@@ -903,8 +903,6 @@
           href: report-builder-data.md
         - name: Datakällor som stöds
           href: paginated-reports-data-sources.md
-        - name: Använda delade datauppsättningar i Power BI
-          href: report-builder-shared-datasets.md
         - name: Designtips
           href: report-builder-design-tips.md
         - name: 'Tabeller, matriser, listor'
@@ -929,6 +927,8 @@
           href: paginated-reports-embedded-data-source.md
         - name: Skapa en inbäddad datauppsättning
           href: paginated-reports-create-embedded-dataset.md
+        - name: Skapa en rapport med en delad Power BI-datamängd
+          href: report-builder-shared-datasets.md
         - name: Skapa parametrar
           href: paginated-reports-parameters.md
         - name: Skicka en rapportparameter i en URL
@@ -989,6 +989,8 @@
       items:
         - name: Installera Power BI Desktop
           href: report-server/install-powerbi-desktop.md
+        - name: Installera Report Builder
+          href: report-server/install-report-builder.md
         - name: Rapportservern grunder
           items:
             - name: Skapa en Power BI-rapport en rapportserver
