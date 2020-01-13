@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 06/10/2019
 ms.author: davidi
 LocalizationGroup: conceptual
-ms.openlocfilehash: 3965a21ff2ab53fd46667658f7cfa21fa4a3b916
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: cf927e94726f33e8d88c25c6d09f6f0ca2226e05
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73855606"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75224129"
 ---
 # <a name="cognitive-services-in-power-bi"></a>Cognitive Services i Power BI 
 
@@ -94,9 +94,9 @@ Den här funktionen kräver en bild-URL eller abase-64-fält som indata. För ti
 
 Den här artikeln gav en översikt över med Cognitive Services med Power BI-tjänsten. Följande artiklar kan också vara intressanta och användbara. 
 
-* [Självstudier: Anropa en Machine Learning Studio-modell i Power BI](service-tutorial-invoke-machine-learning-model.md)
+* [Självstudie: Anropa en Machine Learning Studio-modell (klassisk) i Power BI](service-tutorial-invoke-machine-learning-model.md)
 * [Azure Machine Learning-integrering i Power BI](service-machine-learning-integration.md)
-* [Självstudier: Använda Cognitive Services i Power BI](service-tutorial-use-cognitive-services.md)
+* [Självstudie: Använda Cognitive Services i Power BI](service-tutorial-use-cognitive-services.md)
 
 
 Mer information om dataflöden finns i de här artiklarna:

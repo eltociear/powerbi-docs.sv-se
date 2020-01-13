@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: quickstart
-ms.date: 10/29/2019
+ms.date: 12/18/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 55cdfad221aef276c790e98de83dd844bc13aafe
-ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
+ms.openlocfilehash: 01eb30857b0b76f96e7e18115d92fb1d68dbef0c
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74958731"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223831"
 ---
 # <a name="purchase-and-assign-power-bi-pro-user-licenses"></a>Köpa och tilldela Power BI Pro-användarlicenser
 
@@ -36,27 +36,17 @@ Så här köper du Power BI Pro-licenser i administrationscentret för Microsoft
 
 1. Öppna [Administrationscenter för Microsoft 365](https://portal.office.com/adminportal/home#/homepage).
 
-2. Välj **Fakturering** > **Prenumerationer** i navigeringsfönstret.
-
-    ![Navigeringsfönster](media/service-admin-purchasing-power-bi-pro/service-purchasing-power-bi-pro-01.png)
+2. I navigeringsfönstret väljer du **Fakturering** och sedan **Prenumerationer**.
 
 3. Klicka på **Lägg till prenumerationer** i det övre högra hörnet på sidan **Prenumerationer**.
 
-    ![Prenumeration](media/service-admin-purchasing-power-bi-pro/service-purchasing-power-bi-pro-02.png)
-
 4. Leta reda på önskat prenumerationserbjudande:
 
-    Välj **Office 365 Enterprise E5** under **Enterprise Suite**.
+    - Välj **Office 365 Enterprise E5** under **Enterprise Suite**.
 
-    ![Office E5-prenumeration](media/service-admin-purchasing-power-bi-pro/service-purchasing-power-bi-pro-03.png)
-
-    Välj **Power BI Pro** under **Andra alternativ**.
-
-    ![Power BI Pro-prenumeration](media/service-admin-purchasing-power-bi-pro/service-purchasing-power-bi-pro-04.png)
+    - Välj **Power BI Pro** under **Andra alternativ**.
 
 5. För pekaren över de tre punkterna ( **. . .** ) för den önskade prenumerationen och välj **Köp nu**.
-
-    ![Köp nu](media/service-admin-purchasing-power-bi-pro/service-purchasing-power-bi-pro-05.png)
 
 6. Välj om du vill betala **per månad** eller **för ett helt år**.
 
@@ -64,53 +54,27 @@ Så här köper du Power BI Pro-licenser i administrationscentret för Microsoft
 
 8. Kontrollera att den köpta prenumerationen nu visas på sidan **Prenumerationer**.
 
-   ![Förvärvad prenumeration](media/service-admin-purchasing-power-bi-pro/service-purchasing-power-bi-pro-06.png)
-
-9. Om du vill lägga till fler licenser efter det inledande köpet, väljer du **Power BI Pro** på sidan **Prenumerationer** och sedan **Lägg till/ta bort licenser**.
+9. Om du vill lägga till fler licenser efter det inledande köpet väljer du **Power BI Pro** på sidan **Prenumerationer** och sedan **Ändra licensantal**.
 
 ### <a name="assign-licenses-in-the-microsoft-365-admin-center"></a>Tilldela licenser i administrationscentret för Microsoft 365
 
-Följ de här stegen om du vill tilldela Power BI Pro-licenser till enskilda användarkonton:
+Information om tilldelning av licenser i administrationscentret för Microsoft 365 finns i [Tilldela licenser till användare](/office365/admin/manage/assign-licenses-to-users).
 
-1. Öppna [Administrationscenter för Microsoft 365](https://portal.office.com/adminportal/home#/homepage).
-
-2. Expandera **Användare** i navigeringsfönstret och välj sedan **Aktiva användare**.
-
-    ![Aktiva användare](media/service-admin-purchasing-power-bi-pro/service-assigning-power-bi-pro-licenses-05.png)
-
-3. Välj en användare och sedan **Redigera** under **Produktlicenser**.
-
-    ![Redigera produktlicenser](media/service-admin-purchasing-power-bi-pro/service-assigning-power-bi-pro-licenses-06.png)
-
-4. Under **Power BI Pro** ändrar du inställningen till **På** och klickar sedan på **Spara**.
-
-    ![Produktlicenser På](media/service-admin-purchasing-power-bi-pro/service-assigning-power-bi-pro-licenses-07.png)
-
-5. Under **Status** kontrollerar du att Power BI Pro-licensen har tilldelats för det valda kontot.
-
-    ![Kontrollera licensstatus](media/service-admin-purchasing-power-bi-pro/service-assigning-power-bi-pro-licenses-08.png)
+Information gällande gästanvändare finns i [Tilldela licenser till användare på sidan Licenser](/office365/admin/manage/assign-licenses-to-users#assign-licenses-to-users-on-the-licenses-page). Innan du tilldelar gästanvändare Pro-licenser bör du kontakta din Microsoft-kontorepresentant och se till att du följer villkoren i ditt avtal med Microsoft.
 
 ### <a name="assign-licenses-in-the-azure-portal"></a>Tilldela licenser i Azure-portalen
 
 Följ de här stegen om du vill tilldela Power BI Pro-licenser till enskilda användarkonton:
 
-1. Gå till [Azure-portalen](https://ms.portal.azure.com/#@microsoft.onmicrosoft.com/dashboard/private/39bc3cf7-31a4-43f6-954c-f2d69ca2f0).
+1. Gå till [Azure-portalen](https://portal.azure.com/).
 
-2. Välj **Azure Active Directory** i navigeringsfönstret.
-
-    ![Azure Active Directory](media/service-admin-purchasing-power-bi-pro/service-assigning-power-bi-pro-licenses-01.png)
+2. Sök efter och välj **Azure Active Directory**.
 
 3. Under **Azure Active Directory** väljer du **Licenser**.
 
-    ![Licenser](media/service-admin-purchasing-power-bi-pro/service-assigning-power-bi-pro-licenses-02.png)
-
 4. Under **Licenser**, väljer du **Alla produkter** och väljer sedan **Power BI Pro** för att visa listan över licensierade användare.
 
-    ![Licenser – Alla produkter](media/service-admin-purchasing-power-bi-pro/service-assigning-power-bi-pro-licenses-03.png)
-
 5. Välj **Tilldela** för att lägga till en Power BI Pro-licens för ett användarkonto.
-
-    ![Tilldela licens](media/service-admin-purchasing-power-bi-pro/service-assigning-power-bi-pro-licenses-04.png)
 
 ## <a name="next-steps"></a>Nästa steg
 

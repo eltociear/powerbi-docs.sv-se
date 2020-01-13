@@ -11,10 +11,10 @@ ms.date: 10/29/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 359d36e3becb58386aeaca66f12670bd463644d1
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73871107"
 ---
 # <a name="arcgis-maps-in-power-bi-desktop"></a>ArcGIS-kartor i Power BI Desktop
@@ -54,7 +54,7 @@ ArcGIS Maps for Power BI tillhandahålls av Esri(https://www.esri.com). Din anv�
 
 I den här självstudien använder vi Power BI Desktop och [PBIX-exempelfilen Retail Analysis](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix). Du kan också skapa ArcGIS Maps for Power BI med hjälp av Power BI-tjänsten. 
 
-1. Välj **Arkiv** \> **Öppna** uppe till vänster i menyraden
+1. I den övre vänstra delen i menyraden väljer du **Arkiv** \> **Öppna**
    
 2. Leta reda på **PBIX-filen Exempel på detaljhandelsanalys** som sparats på den lokala datorn.
 

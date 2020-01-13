@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 07/05/2019
 ms.author: mshenhav
-ms.openlocfilehash: 1a3450ba4a31679c9e2e4ad844ef1058ebfdf4ee
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: d35d54308f778033f508549bfd52e9d61ef2a949
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870650"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75218388"
 ---
 # <a name="view-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Visa instrumentpaneler och rapporter i Power BI-mobilappar
 Gäller för:
@@ -63,7 +63,7 @@ Här är en instrumentpanel i Power BI-tjänsten:
    
    * [Trycka på en panel](mobile-tiles-in-the-mobile-apps.md) för att öppna den i fokusläge och interagera med den.
    * Tryck på stjärnan ![Favoritstjärna](././media/mobile-apps-view-dashboard/power-bi-mobile-not-favorite-icon.png) för att [göra den till en favorit](mobile-apps-favorites.md).
-   * Tryck på **Bjuda in** ![Ikonen bjuda in](./media/mobile-apps-view-dashboard/pbi_ipad_shareiconblk.png) för att [Bjuda in en kollega](mobile-share-dashboard-from-the-mobile-apps.md) att visa instrumentpanelen.
+   * Tryck på **Bjud in** ![Inbjudningsikon](./media/mobile-apps-view-dashboard/pbi_ipad_shareiconblk.png) för att [Bjuda in en kollega](mobile-share-dashboard-from-the-mobile-apps.md) att visa din instrumentpanel.
    * [Synkronisera instrumentpanelen med din Apple Watch](mobile-apple-watch.md).
 4. Om du vill återgå till listan över instrumentpaneler trycker du på pilen bredvid instrumentpanelrubriken och sedan på **Min arbetsyta**.
    

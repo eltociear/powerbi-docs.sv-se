@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: v-pemyer
-ms.openlocfilehash: c20a366ef657e851ef77a9649dbcc8b66b67dac0
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 7eea15d4389afaac2ac69e2f26eaa38fe84e337b
+ms.sourcegitcommit: 4359baa43ca01b179d28ec59f4e61ba8c07ee288
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74695207"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75304174"
 ---
 # <a name="dax-divide-function-vs-divide-operator-"></a>DAX: Funktionen DIVIDERA jämfört med divisionsoperatorn (/)
 
@@ -58,7 +58,7 @@ Vi rekommenderar att du använder funktionen DIVIDERA när nämnaren är ett utt
 
 Om nämnaren är ett konstant värde rekommenderar vi att du använder divisionsoperatorn. I det här fallet kommer divisionen garanterat att lyckas och ditt uttryck fungerar bättre eftersom det inte behöver genomföra någon onödig testning.
 
-Du bör noga överväga om DIVIDERA-funktionen ska returnera ett alternativt värde. För mått är det vanligtvis en bättre design att de returnerar TOM när det inte går att utvärdera något meningsfullt resultat. Mer information finns i [Undvik att omvandla tomma värden till värden](dax-avoid-converting-blank.md).
+Du bör noga överväga om DIVIDERA-funktionen ska returnera ett alternativt värde. För mått är det vanligtvis bättre att de returnerar TOM. Att returnera TOM är bättre eftersom rapportvisualiseringar, som standard, eliminerar grupperingar när summeringarna är TOM. Det gör att det visuella objektet kan fokusera på grupper där det finns data. Vid behov kan du konfigurera det visuella objektet så att det visar alla grupper (som returnerar värden eller TOM) i filterkontexten genom att aktivera alternativet [Visa poster utan data](../desktop-show-items-no-data.md).
 
 ## <a name="next-steps"></a>Nästa steg
 

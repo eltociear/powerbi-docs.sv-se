@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/26/2019
 ms.author: tebercov
-ms.openlocfilehash: 04b50882c28bf561e628e9f02dff6c147233d260
-ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
+ms.openlocfilehash: a9f589a5e840e95e349ec303b42b30568820e8b3
+ms.sourcegitcommit: ef9ab7c0d84b926094c33e8aa2765cd43b844314
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099746"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75622463"
 ---
 # <a name="tips-for-authoring-template-apps-in-power-bi"></a>Tips för att skapa mallappar i Power BI
 
@@ -131,13 +131,13 @@ Mallapparna stöder bara appar med exempeldata så var noga med att markera krys
 * Var noga med att följa dokumentationen om [Power BI-apperbjudanden](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-power-bi-offer).
 * Om en instrumentpanel ingår i appen är det viktigt att den inte är tom.
 * Installera appen via applänken innan du skickar in den och se till att du kan ansluta datamängden och att appupplevelsen är som du har planerat.
-* Se till att ta bort alla onödiga anslutningar innan du laddar upp din bpix till mallarbetsytan.
+* Se till att ta bort alla onödiga anslutningar innan du laddar upp din pbix till mallarbetsytan.
 * Följ Power BI:s [Designmetodtips för rapporter och visuella objekt](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-best-practices) för att få högsta inverkan på användarna och bli godkänd för distribution.
 <!--- * In general, only application with valuable functionality can be approved for general use on AppSource. Application with sample data content only must have either a guidance or statistical value.) -->
 
 ## <a name="known-limitations"></a>Kända begränsningar
 
-| Visning av aktuellt objekt | Kända begränsningar |
+| Funktion | Kända begränsningar |
 |---------|---------|
 |Innehåll:  Datauppsättningar   | Det ska finnas exakt en datauppsättning. Endast de datauppsättningar som finns inbyggda i Power BI Desktop (.pbix-filer) är tillåtna. <br>Stöds ej: Datauppsättningar från andra mallar, datauppsättningar mellan arbetsytor, sidnumrerade rapporter (RDL-filer), Excel-arbetsböcker |
 |Innehåll: Instrumentpaneler | Realtidspaneler godkänns inte (dvs. inget stöd för push eller strömmande datamängder) |

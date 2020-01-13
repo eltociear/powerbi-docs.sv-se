@@ -10,12 +10,12 @@ ms.date: 09/25/2019
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 4776e458c778b6bd482106660ab9b8cd978699e5
-ms.sourcegitcommit: 9a265d8117cc202f5f700286b5ff42a631aacdb4
+ms.openlocfilehash: 99d57b734e42913db20e8a414c3216ed66334fa8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74882907"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75224165"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administrera Power BI i Admin-portalen
 
@@ -164,13 +164,13 @@ Följande avsnitt ger en översikt över de olika typerna av inställningar för
 
 ## <a name="help-and-support-settings"></a>Inställningar för hjälp och support
 
-### <a name="publish-get-help-information"></a>Publicera ”Få hjälp-information”
+### <a name="publish-get-help-information"></a>Publicera Få hjälp-information
 
 Användare i organisationen kan gå till intern hjälp och ta del av supportresurser i Power BI:s Hjälp-meny. Mer specifikt ändrar parametrarna beteendet för menyalternativen Läs, Community och Få hjälp.
 
-    ![Enable except setting](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except2.png)
+Genom att ange en URL för licensieringsbegäranden kan du dessutom anpassa mål-URL:en för knappen **Uppgradera konto**. Användare utan Power BI Pro-licens ser den här knappen i dialogrutan **Uppdatera till Power BI Pro** samt på sidan **Hantera personlig lagring**. Dessutom erbjuder Power BI inte längre knappen **Testa Pro kostnadsfritt** i den här dialogrutan eller på lagringssidan. Detta säkerställer att Power BI vägleder dina användare på ett tillförlitligt sätt genom de processer som definierats i din organisation via din licenshanteringslösning.
 
-Genom att ange en webbadress för licensförfrågningar anpassar du måladressen för knappen **Uppgradera konto** som en användare utan Power BI Pro-licens ser i dialogrutan **Uppdatera till Power BI Pro** och på sidan **Hantera personlig lagring**. Dessutom visas inte längre knappen **Prova Pro utan kostnad** i den här dialogrutan i Power BI eller på lagringssidan, så att Power BI vägleder användarna genom de processer som organisationen definierat i licenshanteringen.
+![Aktivera undantagsinställning](media/service-admin-portal/powerbi-admin-tenant-settings-gethelp.png)
 
 ### <a name="receive-email-notifications-for-service-outages-or-incidents"></a>Få e-postmeddelanden om tjänstavbrott eller incidenter
 

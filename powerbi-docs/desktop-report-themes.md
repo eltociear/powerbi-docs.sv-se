@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/26/2019
+ms.date: 12/16/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: c97316b0509f7d243befa5cfe5310aa0f5826335
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 4fdcfd4d7684cef3e6b703709b2739ebbff1badd
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879996"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223563"
 ---
 # <a name="use-report-themes-in-power-bi-desktop"></a>Använda rapportteman i Power BI Desktop
 Med **rapportteman** kan du tillämpa designändringar i hela rapporten, till exempel genom att använda företagsfärger, ändra ikonuppsättningar eller använda ny förvald visuell formatering. När du tillämpar ett **rapporttema** kommer alla visuella objekt i rapporten använda färger och formatering från det valda temat. Några undantag finns och de beskrivs längre fram i den här artikeln.
@@ -23,10 +23,10 @@ Med **rapportteman** kan du tillämpa designändringar i hela rapporten, till ex
 
 När du använder ett anpassat **Rapporttema** behöver du en JSON-fil som använder en grundläggande struktur. Du kan sedan importera den här JSON-filen till Power BI Desktop och tillämpa den på din rapport.
 
-Du kan också anpassa och standardisera nästan alla element som visas i **formateringsverktygsfältet** via temats JSON-fil. Målet är att ge dig full kontroll över hur rapporterna ser ut och känns på en detaljerad nivå.
+Du kan även anpassa och standardisera nästan alla element som visas i fönstret **Formatering**, antingen via anpassningar som görs direkt i Power BI Desktop eller via temats JSON-fil. Målet är att ge dig full kontroll över hur rapporterna ser ut och känns på en detaljerad nivå.
 
 ## <a name="how-report-themes-work"></a>Så här fungerar rapportteman
-Om du vill använda ett rapporttema i en Power BI Desktop-rapport kan du välja bland de tillgängliga rapportteman som är inbyggda eller importera ett anpassat tema.
+Om du vill använda ett rapporttema i en Power BI Desktop-rapport kan du välja bland de tillgängliga rapportteman som är inbyggda eller skapa eller importera ett anpassat tema.
 
 | Inbyggt rapporttema | Standardfärgsekvens    |
 |------ |---------- |
@@ -70,7 +70,48 @@ När temafilen har lästs in får du reda på det av Power BI Desktop.
 
 ![Temat importerades](media/desktop-report-themes/report-themes_5.png)
 
-Nu när vi har importerat en temafil ska vi titta på filstrukturen i JSON.
+Det finns två sätt att anpassa teman i Power BI Desktop. Vi tar en titt på båda dessa.
+
+
+## <a name="customize-report-themes-preview"></a>Anpassa rapportteman (förhandsversion)
+
+Från och med från december 2019-versionen av **Power BI Desktop** finns det nu två sätt att anpassa ett rapporttema:
+
+* Skapa och anpassa ett tema i Power BI Desktop (förhandsversion)
+* Skapa och anpassa en JSON-fil för anpassat rapporttema
+
+Om du vill anpassa ett tema direkt i Power BI Desktop måste du först välja **Arkiv > Alternativ och inställningar > Alternativ**. Sedan går du till avsnittet **Förhandsgranskningsfunktioner** och markerar rutan intill **Anpassa aktuellt tema** enligt följande bild.
+
+![Aktivera anpassade teman](media/desktop-report-themes/report-themes_5a.png)
+
+Du kan bli uppmanad att starta om Power BI Desktop för att förhandsgranskningsfunktionen ska aktiveras.
+
+När du har startat om kan du börja anpassa det aktuella temat genom att välja menyfliksområdet **Start** och sedan **Växla tema > Anpassa aktuellt tema** i menyfliksområdet. En dialogruta visas som visar de många olika sätten att anpassa ett befintligt tema.
+
+![Anpassa temat](media/desktop-report-themes/report-themes_5b.png)
+
+Om du gillar ett befintligt tema och vill göra några justeringar kan du välja ett befintligt tema och sedan välja **Anpassa aktuellt tema** i dialogrutan enligt följande bild. 
+
+![Anpassa det aktuella temat](media/desktop-report-themes/report-themes_5c.png)
+
+> [!NOTE]
+> Den föregående bilden skapades med det nya menyfliksområdet aktiverat, som för närvarande är en förhandsversion. Du kan aktivera förhandsversionen av det nya menyfliksområdet genom att välja **Arkiv > Alternativ och inställningar > Alternativ**. I avsnittet **Förhandsgranskningsfunktioner** väljer du sedan **Förhandsversion av det nya menyfliksområdet**.
+
+Temainställningar som kan anpassas finns i följande kategorier, som visas i dialogrutan Anpassa tema:
+
+* Temanamn (du kan namnge det tema som du anpassar) och olika färginställningar (temafärger, sentimentfärger, avvikande färger och mer)
+* Textinställningar, däribland teckensnittsfamilj, storlek och färg samt axelrubriker, färger, kort och KPI:er och flikrubriker
+* Visuella objekt, till exempel bakgrund, kantlinje, rubrik och knappbeskrivningar
+* Sidelement såsom skrivbordsunderlägg och bakgrund
+* Inställningar för filterfönstret, däribland bakgrundsfärg, transparens, teckensnitts- och ikonfärg, storlek, filterkort med mera
+
+När du har gjort ändringarna och valt knappen **Använd och spara** sparas ditt tema, och det kan sedan användas i den aktuella rapporten och kan exporteras. 
+
+Genom att anpassa det aktuella temat på det här sättet kan du snabbt och enkelt skapa anpassning av teman visuellt. Det finns dock vissa begränsade justeringar av teman som kräver att temats JSON-fil ändras, vilket beskrivs i följande avsnitt.
+
+> [!TIP]
+> Du kan anpassa de flesta temaelement med hjälp av de visuella elementen via dialogrutan **Anpassa aktuellt tema**. Sedan kan du exportera JSON-filen och göra finjusteringar manuellt (genom att ändra själva JSON-filen). Därefter kan du byta namn på den finjusterade JSON-filen, importera den och få alla justeringar som du vill ha.
+
 
 ## <a name="structure-of-a-report-theme-json-file"></a>Struktur för ett rapporttema i en JSON-fil
  Den grundläggande JSON-filen som valdes i föregående avsnitt (filen *St Patricks Day.json*) ser ut som följande skärmbild när den öppnas i ett redigeringsprogram:
@@ -130,7 +171,7 @@ Dessutom kommer många **anpassade visuella objekt** inte att använda rapportte
 ## <a name="report-theme-files-you-can-use-right-now"></a>Rapporttemafiler som du kan använda direkt
 Vill du komma igång med **rapportteman**? Här är ett par färdiga JSON-filer som du kan hämta och importera till din **Power BI Desktop**-rapport. Vi har också tagit en bild av det rapporttema som tillämpas på rapporten i den här artikeln.
 
-* Det [tema](https://go.microsoft.com/fwlink/?linkid=843924) som använts i [blogginlägget](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/) som presenterade den första versionen av **rapportteman** heter [ *waveform.json*](https://go.microsoft.com/fwlink/?linkid=843924).
+* Det [tema](https://go.microsoft.com/fwlink/?linkid=843924) som använts i [blogginlägget](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/) som presenterade den första versionen av **rapportteman** heter [*waveform.json*](https://go.microsoft.com/fwlink/?linkid=843924).
 
   ![Waverform.json-temat](media/desktop-report-themes/report-themes_10.png)
 
@@ -379,7 +420,7 @@ Tabellerna i det här avsnittet definierar namn på visuella objekt (*visualName
 | comboChart |
 | donutChart |
 | filledMap |
-| funnel |
+| tratt |
 | gauge |
 | hundredPercentStackedBarChart |
 | hundredPercentStackedColumnChart |

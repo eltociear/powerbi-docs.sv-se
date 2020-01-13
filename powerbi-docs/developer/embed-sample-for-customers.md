@@ -8,13 +8,13 @@ ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
-ms.date: 04/02/2019
-ms.openlocfilehash: 85b21d95cb992449d3b7a910c619d049237fc9d8
-ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
+ms.date: 12/12/2019
+ms.openlocfilehash: e27789ca28d86a53b7d8340b3d766a73a04645cb
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74311082"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223415"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-customers"></a>Självstudie: Bädda in Power BI-innehåll i ett program för dina kunder
 
@@ -78,7 +78,7 @@ I stegen nedan beskrivs hur du publicerar dina PBIX-rapporter på Power BI-arbet
 
 ## <a name="embed-content-using-the-sample-application"></a>Bädda in innehåll med exempelprogrammet
 
-Det här exemplet hålls medvetet enkelt i demonstrationssyfte. Det är upp till dig eller dina utvecklare att skydda apphemligheten eller autentiseringsuppgifterna för huvudkontot.
+Det här exemplet hålls medvetet enkelt i demonstrationssyfte. Det är upp till dig eller dina utvecklare att skydda programhemligheten eller autentiseringsuppgifterna för huvudkontot.
 
 Följ de här stegen nedan om du vill börja bädda in innehåll med hjälp av exempelprogrammet.
 
@@ -131,7 +131,7 @@ Så här hämtar du **applicationId**:
 
     ![applicationId](media/embed-sample-for-customers/embed-sample-for-customers-007.png)
 
-### <a name="workspace-id"></a>ID för arbetsyta
+### <a name="workspace-id"></a>Arbetsyte-ID
 
 Det här attributet behövs för både AuthenticationTypes (huvudkonto och [tjänstens huvudnamn](embed-service-principal.md)).
 
@@ -418,7 +418,7 @@ I tabellen nedan beskrivs resurser och begränsningar för respektive SKU. När 
 
 | Kapacitetsnoder | Totalt antal virtuella kärnor | Virtuella kärnor för serverdel | RAM (GB) | Virtuella kärnor för klientdel | DirectQuery/Live Connection (per sek) | Modellens uppdateringsparallellitet |
 | --- | --- | --- | --- | --- | --- | --- |
-| EM1/A1 | 1 | 0.5 | 2.5 | 0.5 | 3.75 | 1 |
+| EM1/A1 | 1 | 0,5 | 2.5 | 0,5 | 3.75 | 1 |
 | EM2/A2 | 2 | 1 | 5 | 1 | 7.5 | 2 |
 | EM3/A3 | 4 | 2 | 10 | 2 | 15 | 3 |
 | P1/A4 | 8 | 4 | 25 | 4 | 30 | 6 |
@@ -435,6 +435,8 @@ För mer information, se [White paper om kapacitetsplanering för inbäddad anal
 ### <a name="assign-a-workspace-to-a-dedicated-capacity"></a>Tilldela en arbetsyta till en dedikerad kapacitet
 
 När du har skapat en dedikerad kapacitet kan du tilldela arbetsytan till den dedikerade kapaciteten.
+
+Alla arbetsytor som innehåller Power BI-resurser som är relaterade till det inbäddade innehållet (däribland datamängder, rapporter och instrumentpaneler) måste tilldelas till dedikerade kapaciteter. Exempel: Om en inbäddad rapport och den datamängd som är kopplad till den finns på olika arbetsytor måste båda arbetsytorna tilldelas till dedikerade kapaciteter.
 
 Tilldela en dedikerad kapacitet till en arbetsyta med hjälp av [service principal](embed-service-principal.md) genom att använda [Power BI REST-API:et](https://docs.microsoft.com/rest/api/power-bi/capacities/groups_assigntocapacity). När du använder Power BI REST-API:erna ser du till att använda [objekt-ID för tjänstens huvudnamn](embed-service-principal.md#how-to-get-the-service-principal-object-id).
 

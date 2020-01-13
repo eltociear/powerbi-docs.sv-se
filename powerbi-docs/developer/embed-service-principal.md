@@ -8,13 +8,13 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 03/29/2019
-ms.openlocfilehash: 3791e9cdfd44c62e6f9e9b79f5345d6d2476b0db
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.date: 12/12/2019
+ms.openlocfilehash: dec23aaa4fd54761c62507b8c7a5a36c45c75afd
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74264188"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75223362"
 ---
 # <a name="service-principal-with-power-bi"></a>Tjänstens huvudnamn med Power BI
 
@@ -150,7 +150,7 @@ Nedan beskrivs hur du hämtar objekt-ID för tjänstens huvudnamn från Azure-po
 
    ![Hanterat program i den lokala katalogen](media/embed-service-principal/managed-application-in-local-directory.png)
 
-    > [!Note]
+    > [!NOTE]
     > Objekt-ID:t i bilden ovan är inte det som används med tjänstens huvudnamn.
 
 3. Välj **Egenskaper** om du vill se objekt-ID:t.
@@ -174,6 +174,7 @@ Nedan är ett exempelskript för att hämta objekt-ID för tjänstens huvudnamn 
 * Det går inte att använda tjänstens huvudnamn för [inbäddning för organisationens](embed-sample-for-your-organization.md) program.
 * Hantering av [dataflöden](../service-dataflows-overview.md) stöds inte.
 * Tjänstens huvudnamn har för närvarande inte stöd för några administratörs-API:er.
+* Vid användning av tjänsthuvudnamn med en [Azure Analysis Services](https://docs.microsoft.com/azure/analysis-services/analysis-services-overview)-datakälla måste själva tjänsthuvudnamnet ha en Azure Analysis Services-instansbehörighet. Det fungerar inte att använda en säkerhetsgrupp som innehåller tjänsthuvudnamnet för detta ändamål.
 
 ## <a name="next-steps"></a>Nästa steg
 

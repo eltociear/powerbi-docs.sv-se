@@ -1,5 +1,5 @@
 ---
-title: Uppgradera Power BI-rapportserver
+title: Uppgradera Power BI-rapportservern
 description: Lär dig mer om att uppgradera Power BI-rapportservern.
 author: maggiesMSFT
 ms.author: maggies
@@ -10,17 +10,17 @@ ms.topic: conceptual
 ms.custom: ''
 ms.date: 09/05/2017
 ms.openlocfilehash: eac019bc31396359b7520e057f2384adce386a96
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73873966"
 ---
-# <a name="upgrade-power-bi-report-server"></a>Uppgradera Power BI-rapportserver
+# <a name="upgrade-power-bi-report-server"></a>Uppgradera Power BI-rapportservern
 
 Lär dig mer om att uppgradera Power BI-rapportservern.
 
- **Ladda ned** ![nedladdning](media/upgrade/download.png "ladda ned")
+ **Ladda ned** ![ladda ned](media/upgrade/download.png "ladda ned")
 
 Om du vill ladda ned Power BI-rapportservern och Power BI Desktop som är optimerat för Power BI-rapportserver, går du till [Lokal rapportering med Power BI-rapportserver](https://powerbi.microsoft.com/report-server/).
 

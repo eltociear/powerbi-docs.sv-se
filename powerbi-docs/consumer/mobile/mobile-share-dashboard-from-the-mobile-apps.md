@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/20/2018
 ms.author: mshenhav
-ms.openlocfilehash: 232d311e876a5fe01eb6c8091eb7a83669592cbf
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 70ecd56f2823e608aa62deb4a5033f53272d3382
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879086"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75221057"
 ---
 # <a name="share-a-dashboard-or-report-from-the-power-bi-mobile-apps"></a>Dela en instrumentpanel eller rapport från Power BI-mobilapparna
 Gäller för:
@@ -26,120 +26,73 @@ Med en [Power BI Pro-licens](../../service-features-license-type.md) kan du bjud
 
 Du kan [kommentera på eller lägga till en ögonblicksbild i en panel, rapport eller visualisering](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) och sedan dela den med vem som helst med hjälp av Power BI-mobilapparna för iOS- och Android-enheter. 
 
-## <a name="share-from-your-iphone"></a>Dela från din iPhone
-1. Klicka på ikonen **Dela** ![ikonen Dela](././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-iphone-share-dashboard-icon.png) i aktivitetsfältet längst ner på instrumentpanelen eller i rapporten.
+## <a name="share-from-your-iphone-or-ipad"></a>Dela från din iPhone eller iPad
+
+1. Du kan dela en instrumentpanel eller rapport från antingen själva instrumentpanelen eller rapporten eller från startsidan för instrumentpanelen eller rapporten:
+    *  Från en instrumentpanel eller en rapport trycker du på ikonen **Dela** ![delningsikon](././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-invite-icon-ss.png) i aktivitetsfältet längst ner på instrumentpanelen eller i rapporten.
+    *  På startsidan för en instrumentpanel eller en rapport trycker du på ikonen **Infor** ![Mer info](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-more-info-icon.png) intill instrumentpanelens eller rapportens namn och trycker sedan på ikonen **Dela** ![inbjudningsikon](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-invite-icon-ss.png) på fliken Info som visas.
+2. Ange namn, avgränsade med komman, och ett meddelande som medföljer din inbjudan. Om du vill tillåta omdelning låter du **Tillåt mottagare att dela vidare** vara markerad. Med omdelning kan dina kollegor vidarebefordra din e-postinbjudan till andra i din organisation, antingen via webben eller mobila appar.
+3. Tryck på **Skicka** i det övre högra hörnet.
    
-   ![Delningsikon för iPhone](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-iphone-dashboard-invite.png)
-2. Ange namn, avgränsade med komman, och ett meddelande som medföljer din inbjudan.
-3. Om du vill tillåta omdelning låter du **Tillåt mottagare att dela vidare** vara markerad.
+   Mottagarna får en e-postinbjudan med en direktlänk till instrumentpanelen eller rapporten. Inbjudan upphör att gälla efter en månad. När de öppnar den i Power BI-tjänsten eller Power BI-mobilappen läggs den till i avsnittet **Delat med mig** i deras Power BI-konto. Så här kommer du till avsnittet Delat med mig:
    
-   Med omdelning kan dina kollegor vidarebefordra din e-postinbjudan till andra i din organisation, antingen via webben eller mobila appar.
-5. Tryck på **Skicka** i det övre högra hörnet.
-   
-   Mottagarna får en e-postinbjudan med en direktlänk till instrumentpanelen eller rapporten. Inbjudan upphör att gälla efter en månad. När de öppnar den i en webbläsare eller Power BI-mobilappen, läggs den till i området **Delas med mig** i deras Power BI-konto.
-   
-   ![Delat med mig](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-iphone-shared-with-me-left-nav.png)
+   * I Power BI-mobilappen trycker du på **Fler alternativ** (...) i navigeringsfältet och väljer ![Delat med mig](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png) **Delat med mig**.
+   * I Power BI-tjänsten klickar du på ![Delat med mig](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png) **Delat med mig** i det vänstra navigeringsfönstret.
    
    Läs mer [information om att dela med dina kollegor](../../service-share-dashboards.md).
 
-### <a name="unshare-from-your-iphone"></a>Sluta dela från din iPhone
+### <a name="unshare-from-your-iphone-or-ipad"></a>Sluta dela från din iPhone eller iPad
 Du kan bara avsluta delningen om du är ägaren.
 
-1. Klicka på ikonen **Dela** ![ikonen Dela](././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-iphone-share-dashboard-icon.png) i aktivitetsfältet längst ner på instrumentpanelen eller i rapporten.
-2. Peka på **Bjud in en kollega**.
-   
-   Du kan se en lista över kollegor med vilka du har delat den här instrumentpanelen eller rapporten med dessa fraser:
-   
-   * **Kan visa**: De kan visa men inte dela.
-   * **Kan visa och bjuda in**: De kan visa och dela med kollegor.
-1. Tryck på **Redigera**.
-   
-    ![Ikonen Redigera](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-iphone-edit-invite-dashboard.png)
-4. För att ta bort delningen, tryck på den röda cirkeln bredvid ett namn och tryck på **Ta bort**.
+1. Klicka på ikonen **Dela**![ikonen Dela](././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-invite-icon-ss.png) i aktivitetsfältet längst ner på instrumentpanelen eller i rapporten.
+2. Tryck på **Delat med**. Du kan se en lista över kollegor med vilka du har delat den här instrumentpanelen eller rapporten.
 
-## <a name="share-from-your-ipad"></a>Dela från din iPad
-1. Tryck på ikonen **Dela** ![ikonen Dela](././media/mobile-share-dashboard-from-the-mobile-apps/pbi_ipad_shareiconblk.png) högst upp till höger på instrumentpanelen eller i rapporten.
-2. Skriv e-postadresser och ett meddelande som medföljer din inbjudan.
-3. Om du vill tillåta omdelning låter du **Tillåt mottagare att dela vidare** vara markerad.
-   
-   Med omdelning kan dina kollegor vidarebefordra din e-postinbjudan till andra i din organisation, antingen via webben eller mobila appar. 
+3. Tryck på **Fler alternativ** (...) intill namnet på den person som du vill sluta dela med och välj om du vill ta bort åtkomsten till bara den delade instrumentpanelen eller även till allt underliggande innehåll som den använder.
 
-4. Tryck på **Skicka** i det övre högra hörnet.
-   
-   Mottagarna får en e-postinbjudan med en direktlänk till instrumentpanelen eller rapporten. Inbjudan upphör att gälla efter en månad. När de öppnar den i en webbläsare eller Power BI-mobilappen, läggs den till i området **Delat med mig** i deras Power BI-konto
-   
-   ![Delat med mig](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-iphone-shared-with-me-left-nav.png)
-   
-   Läs mer [information om att dela med dina kollegor](../../service-share-dashboards.md).
 
-### <a name="unshare-from-your-ipad"></a>Sluta dela från din iPad
-Du kan bara avsluta delningen om du är ägaren.
-
-1. Tryck på ikonen **Dela**![ikonen Dela](././media/mobile-share-dashboard-from-the-mobile-apps/pbi_ipad_shareiconblk.png) högst upp till höger på instrumentpanelen eller i rapporten.
-   
-   Du kan se en lista över kollegor med vilka du har delat den här instrumentpanelen eller rapporten med dessa fraser:
-   
-   * **Kan visa**: De kan visa men inte dela.
-   * **Kan visa och bjuda in**: De kan visa och dela med kollegor.
-2. Tryck på **Redigera**.
-3. För att ta bort delningen, tryck på den röda cirkeln bredvid ett namn och tryck på **Ta bort**.
 
 ## <a name="share-from-your-android-device"></a>Dela från din Android-enhet
-1. På startsidan för instrumentpaneler eller rapporter trycker du på **Fler alternativ** (...) och sedan på **Bjud in en kollega**.
+1. Du kan dela en instrumentpanel eller rapport från antingen själva instrumentpanelen eller rapporten eller från startsidan för instrumentpanelen eller rapporten:
+    *  I en instrumentpanel eller en rapport trycker du på **Fler alternativ** (...) överst på instrumentpanelen eller rapporten och väljer **Bjud in en kollega**.
+    *  På startsidan för en instrumentpanel eller en rapport trycker du på **Fler alternativ** (...) intill instrumentpanelens eller rapportens namn och trycker sedan på ikonen **Dela** ![inbjudningsikon](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-invite-icon-ss.png) på fliken Info som visas.
+ 
+2. Skriv e-postadresser och ett meddelande som medföljer din instrumentpanelinbjudan. Annars skickar Power BI ett standardmeddelande. Om du vill tillåta omdelning låter du **Tillåt mottagarna att dela den här instrumentpanelen** vara markerad. Med omdelning kan dina kollegor vidarebefordra din e-postinbjudan till andra i din organisation, antingen via webläsare eller mobila appar.
    
-   ![Bjud in en kollega](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-tablet-share-dashboard.png)
-2. Eller tryck på inbjudningsikonen på en instrumentpanel eller i en rapport ![Ikon för inbjudan](././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-invite-icon.png).
+3. Tryck på ikonen **Skicka**![Skicka](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-send-icon.png) i det övre högra hörnet för att skicka e-postmeddelandet.
+   
+    Mottagarna får en e-postinbjudan med en direktlänk till instrumentpanelen eller rapporten. Inbjudan upphör att gälla efter en månad. När de öppnar den i Power BI-tjänsten eller Power BI-mobilappen läggs den till i avsnittet **Delat med mig** i deras Power BI-konto. Så här kommer du till avsnittet Delat med mig:
+   * I Power BI-mobilappen trycker du på **Fler alternativ** (...) i navigeringsfältet och väljer ![Delat med mig](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png) **Delat med mig**.
+   * I Power BI-tjänsten klickar du på ![Delat med mig](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png) **Delat med mig** i det vänstra navigeringsfönstret.
+   
+   Läs mer [information om att dela med dina kollegor](../../service-share-dashboards.md).
 
-    Om du äger instrumentpanelen kan du se en lista över kollegor med vilka du har delat den här instrumentpanelen eller rapporten med dessa anteckningar:
-
-    -   **Kan visa**: De kan visa men inte dela.
-    -   **Kan visa och dela igen**: De kan visa och dela med kollegor.
-
-1. Skriv e-postadresser och ett meddelande som medföljer din instrumentpanelinbjudan. Annars skickar Power BI ett standardmeddelande.
-2. Om du vill tillåta omdelning låter du **Tillåt mottagarna att dela den här instrumentpanelen** vara markerad.
-   
-   Med omdelning kan dina kollegor vidarebefordra din e-postinbjudan till andra i din organisation, antingen via webläsare eller mobila appar.
-   
-1. Tryck på ikonen **Skicka**![Skicka](./media/mobile-share-dashboard-from-the-mobile-apps/pbi_andr_sendplane.png) i det övre högra hörnet för att skicka e-postmeddelandet.
-   
-   Mottagarna får en e-postinbjudan med en direktlänk till instrumentpanelen. Inbjudan upphör att gälla efter en månad. När de öppnar den i en webbläsare eller Power BI-mobilappen, läggs den till i området **Delat med mig** i deras Power BI-konto
-   
-   ![Delat med mig](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-shared-with-me-left-nav.png)
-   
-   Läs mer [information om att dela instrumentpaneler med dina kollegor](../../service-share-dashboards.md).
 
 ### <a name="unshare-from-your-android-device"></a>Sluta dela från din Android-enhet
 Du kan bara avsluta delningen om du är ägaren.
 
-1. Tryck på ikonen för inbjudan i det övre högra hörnet på en instrumentpanel eller i en rapport ![Ikon för inbjudan](././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-invite-icon.png). 
-   
-   Du kan se en lista över kollegor med vilka du har delat den här instrumentpanelen eller rapporten.
-2. Om du vill sluta dela med en kollega trycker du på **X** bredvid namnet \> **Ta bort**.
+1. Du kan sluta dela en instrumentpanel eller rapport från själva instrumentpanelen eller rapporten eller från startsidan för instrumentpanelen eller rapporten:
+    *  I en instrumentpanel eller en rapport trycker du på **Fler alternativ** (...) överst på instrumentpanelen eller rapporten och väljer **Bjud in en kollega**.
+    *  På startsidan för en instrumentpanel eller en rapport trycker du på **Fler alternativ** (...) intill instrumentpanelens eller rapportens namn och trycker sedan på ikonen **Dela** ![inbjudningsikon](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-invite-icon-ss.png) på fliken Info som visas.
+
+2. Längst ned på sidan **Lägg till personer** som öppnas visas en lista över kollegor som du har delat den här instrumentpanelen eller rapporten med. Tryck på namnet på den kollega som du vill sluta dela med.
+3. På sidan **Vem har åtkomst** som visas trycker du på ikonen **Ta bort** ![borttagningsikon](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-remove-icon.png) och väljer om du vill ta bort åtkomsten till bara den delade instrumentpanelen eller även till allt underliggande innehåll som den använder.
 
 ## <a name="share-from-your-windows-10-device"></a>Dela från din Windows 10-enhet
-1. På en instrumentpanel eller i en rapport trycker du på ikonen för inbjudan ![Ikon för inbjudan](./media/mobile-share-dashboard-from-the-mobile-apps/pbi_andr_inviteicon.png).
+
+1. Du kan dela en instrumentpanel eller rapport från själva instrumentpanelen eller rapporten eller från startsidan för instrumentpanelen eller rapporten:
+    * Från en instrumentpanel eller en rapport trycker du på ikonen **Dela** ![Inbjudningsikon](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-invite-icon-ss.png).
+    * På startsidan för en instrumentpanel eller en rapport högerklickar eller trycker du och håller ned, och väljer sedan **Bjud in**.
    
-   Eller högerklicka, eller tryck och håll kvar, och tryck på **Bjud in** på instrumentpanelens eller rapportens startsida.
+   Om du är ägare till instrumentpanelen visas en lista över kollegor som du har delat den här instrumentpanelen eller rapporten med.
+
+2. Skriv e-postadresser och ett meddelande som medföljer din inbjudan. Annars skickar Power BI ett standardmeddelande. Om du vill tillåta omdelning låter du **Tillåt mottagarna att dela den här instrumentpanelen** vara markerad. Med omdelning kan dina kollegor dela med andra i din organisation, antingen via webbläsaren eller mobilapparna.
    
-   ![Bjud in](./media/mobile-share-dashboard-from-the-mobile-apps/pbi_win10_sharedash.png)
+3. Tryck på ikonen **Skicka**![ikonen Skicka](./media/mobile-share-dashboard-from-the-mobile-apps/pbi_win10ph_sendicon.png).
    
-   Om du äger instrumentpanelen kan du se en lista över kollegor med vilka du har delat den här instrumentpanelen med dessa anteckningar:
+    Mottagarna får en e-postinbjudan med en direktlänk till instrumentpanelen eller rapporten. Inbjudan upphör att gälla efter en månad. När de öppnar den i Power BI-tjänsten eller Power BI-mobilappen läggs den till i avsnittet **Delat med mig** i deras Power BI-konto. Så här kommer du till avsnittet Delat med mig:
    
-   **Kan visa**: De kan visa men inte dela.
-   
-   **Kan visa och dela igen**: De kan visa och dela med kollegor.
-2. Skriv e-postadresser och ett meddelande som medföljer din inbjudan. Annars skickar Power BI ett standardmeddelande.
-   
-   ![Dialogrutan Bjud in](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-windows-10-share-dashboard.png)
-3. Om du vill tillåta omdelning låter du **Tillåt mottagare att dela vidare** vara markerad.
-   
-   Med omdelning kan dina kollegor dela med andra i din organisation, antingen via webbläsaren eller mobilapparna.
-   
-1. Tryck på ikonen **Skicka** ![ikonen Skicka](./media/mobile-share-dashboard-from-the-mobile-apps/pbi_win10ph_sendicon.png).
-   
-   Mottagarna får en e-postinbjudan med en direktlänk till instrumentpanelen eller rapporten. Inbjudan upphör att gälla efter en månad. När de öppnar den i en webbläsare eller Power BI-mobilappen, läggs den till i området **Delat med mig** i deras Power BI-konto
-   
-   ![Delat med mig](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-iphone-shared-with-me-left-nav.png)
+   * I Power BI-mobilappen trycker du på **Fler alternativ** (...) i navigeringsfältet och väljer ![Delat med mig](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png) **Delat med mig**.
+   * I Power BI-tjänsten klickar du på ![Delat med mig](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png) **Delat med mig** i det vänstra navigeringsfönstret.
    
    Läs mer [information om att dela med dina kollegor](../../service-share-dashboards.md).
 

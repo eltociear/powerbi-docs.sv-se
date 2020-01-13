@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/04/2018
+ms.date: 12/14/2019
 ms.author: mihart
-ms.openlocfilehash: b22da2df92c0cc7130c7a5ebf69e2284c12ffef4
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: a4b8dd876cfaca3fa4ad91bf5b4d94aa5b4be311
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73861978"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75218088"
 ---
 # <a name="view-a-report-in-the-power-bi-service-for-consumers"></a>Visa en rapport i Power BI-tjänsten för *konsumenter*
 
@@ -32,7 +32,7 @@ Nu ska vi öppna en rapport som har delats med dig direkt och sedan öppnar en r
    ![Startsida](./media/end-user-report-open/power-bi-home-canvas.png)
 
 ### <a name="open-a-report-that-has-been-shared-with-you"></a>Öppna en rapport som har delats med dig
-Power BI-*designers* kan dela en enskild rapport direkt med dig via en länk i ett e-postmeddelande eller genom att lägga till den automatiskt. Innehåll som delas på detta sätt visas i containern **delat med mig** i navigeringfönstret och i avsnittet **delat med mig** på Hem-arbetsytan.
+*Power BI-designers* kan dela en enskild rapport direkt med dig via en länk i ett e-postmeddelande eller genom att lägga till den automatiskt i ditt Power BI-innehåll. Rapporter som delas på detta sätt visas i containern **Delat med mig** i navigeringsfönstret samt i avsnittet **Delat med mig** på startarbetsytan.
 
 1. Öppna Power BI-tjänsten (app.powerbi.com).
 
@@ -40,7 +40,7 @@ Power BI-*designers* kan dela en enskild rapport direkt med dig via en länk i e
 
    ![Hem-arbetsytan](./media/end-user-report-open/power-bi-select-home-new.png)
    
-3. Rulla nedåt tills du ser **delat med mig**. Leta efter rapportikonen ![rapportikon](./media/end-user-report-open/power-bi-report-icon.png). På den här skärmbilden har vi en instrumentpanel och en *rapport med namnet* försäljnings- och marknadsföringsexempel. 
+3. Rulla nedåt tills du ser **delat med mig**. Leta efter rapportikonen ![rapportikon](./media/end-user-report-open/power-bi-report-icon.png). På den här skärmbilden har vi en instrumentpanel och en rapport. Rapporten heter *Exempel på försäljning och marknadsföring*. 
    
    ![delat med mig-delen av startsidan](./media/end-user-report-open/power-bi-shared-new.png)
 
@@ -64,8 +64,10 @@ Power BI-*designers* kan dela en enskild rapport direkt med dig via en länk i e
 
    ![anpassa till sida](./media/end-user-report-open/power-bi-actual.png)
 
+Det finns många sätt att interagera med en rapport för att upptäcka insikter och fatta affärsbeslut.  Använd innehållsförteckningen till vänster för att läsa igenom andra artiklar om Power BI-rapporter. 
+
 ### <a name="open-a-report-that-is-part-of-an-app"></a>Öppna en rapport som är en del av en app
-Om du har tagit emot appar från kollegor eller från AppSource, är dessa appar tillgängliga från startsidan och från containern **Appar** i navigeringsfönstret. En [app](end-user-apps.md) är ett paket med instrumentpaneler och rapporter.
+Om du har tagit emot appar från kollegor eller från AppSource, är dessa appar tillgängliga från startsidan och från containern **Appar** i navigeringsfönstret. En [app](end-user-apps.md) är en samling instrumentpaneler och rapporter som har samlats ihop av en *Power BI-designer*.
 
 ### <a name="prerequisites"></a>Förutsättningar
 Om du vill följa med hämtar du appen Försäljning och marknadsföring.
@@ -73,24 +75,24 @@ Om du vill följa med hämtar du appen Försäljning och marknadsföring.
 1. Sök efter "Försäljning och marknadsföring" och välj **Microsofts exempel – Försäljning & marknadsföring**.
 1. Välj **Hämta nu** > **Fortsätt** > **Installera** för att installera appen i din appbehållare. 
 
-Du kan öppna appen från din appbehållare eller från Start.
+Du kan öppna appen från din appcontainer eller från Start.
 1. Gå tillbaka till startsidan genom att välja **Start** i navigeringsfönstret.
 
 7. Rulla nedåt tills du ser **delat med mig**.
 
    ![Startsida](./media/end-user-report-open/power-bi-app.png)
 
-8. Välj den nya försäljnings- och marknadsföringsappen för att öppna den. Beroende på vilka alternativ som angetts av appens *designer*, kommer appen att öppnas sin en instrumentpanel eller en rapport. Den här appen öppnas på en instrumentpanel.  
+8. Välj den nya appen *Försäljning och marknadsföring* för att öppna den. Beroende på vilka alternativ som angetts av appens *designer*, kommer appen att öppnas sin en instrumentpanel eller en rapport. Den här appen öppnas på en instrumentpanel.  
 
 
 ## <a name="open-a-report-from-a-dashboard"></a>Öppna en rapport från en instrumentpanel
 Rapporter kan öppnas från en instrumentpanel. De flesta [paneler](end-user-tiles.md) på instrumentpanelen är *fästa* från rapporter. Om du väljer en panel öppnas rapporten som användes för att skapa panelen. 
 
-1. Välj en panel från en instrumentpanel. I det här exemplet har vi valt kolumndiagramspanelen Totalt antal enheter hittills i år...
+1. Välj en panel från en instrumentpanel. I det här exemplet har vi valt kolumndiagramspanelen *Totalt antal enheter hittills i år...* .
 
     ![instrumentpanel med vald panel](./media/end-user-report-open/power-bi-dashboard.png)
 
-2.  Den associerade rapporten öppnas. Du märker att vi är på sidan kategori hittills i år. Det är den rapportsidan som innehåller kolumndiagrammet som vi valt från instrumentpanelen.
+2.  Den associerade rapporten öppnas. Observera att vi är på sidan *Kategori hittills i år*. Det är den rapportsidan som innehåller kolumndiagrammet som vi valt från instrumentpanelen.
 
     ![öppen rapport i Läsvyn](./media/end-user-report-open/power-bi-report-tabs.png)
 
@@ -100,7 +102,7 @@ Rapporter kan öppnas från en instrumentpanel. De flesta [paneler](end-user-til
 
 ##  <a name="still-more-ways-to-open-a-report"></a>Ännu fler sätt att öppna en rapport
 När du börjar bli mer bekväm med att använda Power BI-tjänsten, kommer du att lista ut vilka arbetsflöden som fungerar bäst för dig. Några andra sätt att komma åt rapporter:
-- Från navigeringsfönstret med **Favoriter** och **Senaste**    
+- Från navigeringsfönstret med [Favoriter](end-user-favorite.md) och [Senaste](end-user-recent.md)    
 - Med [Visa relaterade](end-user-related.md)    
 - I ett e-postmeddelande när någon [delar med dig](../service-share-reports.md) eller [ställer in en avisering](end-user-alerts.md)    
 - Från ditt [Meddelandecenter](end-user-notification-center.md)    

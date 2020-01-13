@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 12/18/2017
-ms.author: mshenhav
-ms.openlocfilehash: c843a3ef8ddfde591dec27ea523cb73857d1a289
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 12/11/2019
+ms.author: painbar
+ms.openlocfilehash: 7668df00d63fc1bdb8bb0e113fa9ad7e0f029147
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870115"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75221546"
 ---
 # <a name="set-data-alerts-in-the-power-bi-mobile-apps"></a>Ställa in dataaviseringar i Power BI-mobilapparna
 Gäller för:
@@ -62,7 +62,8 @@ Du kan hantera enskilda aviseringar på din mobila enhet eller [hantera alla var
 
 1. Tryck på en tal- eller mätarpanel som har en avisering på instrumentpanelen.  
    
-   ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-card-visual.png)
+   ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-card-visual_has_alert.png)
+
 2. Tryck på klockikonen ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-has-alert-icon.png).  
 3. Tryck på namnet på aviseringen för att redigera den, tryck sedan på skjutreglaget för att stänga av e-postaviseringar eller på papperskorgen för att ta bort aviseringen.
    
@@ -148,10 +149,12 @@ Datakällor är ofta inställda på att uppdateras varje dag, men vissa uppdater
 2. Om du har valt att skicka ett e-postmeddelande kommer du att se följande i din inkorg.
    
    ![](media/mobile-set-data-alerts-in-the-mobile-apps/powerbi-alerts-email.png)
-3. Power BI lägger till ett meddelande i **Meddelandecentret** och lägger till en ny aviseringsikon i den berörda panelen ![](media/mobile-set-data-alerts-in-the-mobile-apps/powerbi-alert-tile-notification-icon.png).
-4. Tryck på knappen global navigering ![](./media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-alert-global-nav-button.png) för [att öppna **meddelandecentret**](mobile-apps-notification-center.md) och visa detaljerad information om aviseringen.
+3. Power BI lägger till ett meddelande i [Meddelandecenter](mobile-apps-notification-center.md) och lägger till en gul prick på klockikonen ![klockikon](media/mobile-set-data-alerts-in-the-mobile-apps/powerbi-alert-tile-notification-icon.png) på namnlisten (iOS och Android) eller till den globala navigeringsknappen ![globala navigeringsknapp](./media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-alert-global-nav-button.png) (Windows 10-enheter).
+
+
+4. Tryck på klockikonen ![klockikon](media/mobile-set-data-alerts-in-the-mobile-apps/powerbi-alert-tile-notification-icon.png) eller på den globala navigeringsknappen ![global navigeringsknapp](./media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-alert-global-nav-button.png) för att [öppna ditt **Meddelandecenter**](mobile-apps-notification-center.md) och se aviseringsinformationen.
    
-     ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-notifications.png) 
+     
 
 > [!NOTE]
 > Aviseringar fungerar bara på data som ska uppdateras. När data uppdateras söker Power BI för att se om en avisering har angetts för dessa data. Om data har uppnått ett tröskelvärde utlöses en avisering.

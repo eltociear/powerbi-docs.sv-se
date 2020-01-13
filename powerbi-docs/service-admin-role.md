@@ -1,40 +1,43 @@
 ---
-title: Förstå Power BI-administratörsrollen
-description: I den här artikeln beskrivs rollen Power BI-administratör och hur du använder den i organisationen.
+title: Förstå Power BI-tjänstadministratörsroller
+description: I den här artikeln beskrivs Power BI-tjänstadministratören och de specifika roller som ger administratörsbehörighet.
 author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 09/09/2019
+ms.date: 01/02/2020
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: a6121ca16250de9765557b9c9acbf73b513723ee
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 04ffeb01efeaa714b30b2246174584f2caf90468
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74699922"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75622325"
 ---
-# <a name="understanding-the-power-bi-service-administrator-role"></a>Förstå administratörsrollen för Power BI-tjänsten
+# <a name="understanding-power-bi-service-administrator-roles"></a>Förstå Power BI-tjänstadministratörsroller
 
-Lär dig använda Power BI-administratörsrollen i din organisation. Användare i den här rollen har fullständig kontroll över en Power BI-klient och dess administrativa funktioner (förutom licensiering).
+För att kunna administrera en Power BI-klientorganisation måste du ha någon av följande roller: Power BI-administratör, Power Platform-administratör eller global Microsoft 365-administratör. Användarhanteringsadministratörer i Microsoft 365 tilldelar användare till rollen Power BI-administratör eller Power Platform-administratör i Administrationscentret för Microsoft 365 eller genom att använda ett PowerShell-skript.
 
-Power BI-administratörsrollen kan tilldelas användare som ska ha åtkomst till Power BI-administratörsportalen utan att även ge dem fullständig administrativ Office 365-åtkomst.
+Användare med rollen Power BI-administratör och Power Platform-administratör har fullständig kontroll över en Power BI-klientorganisation och dess administrativa funktioner, förutom licensiering. När en användare har tilldelats får denne åtkomst till [Power BI-administratörsportalen](service-admin-portal.md). Där får de åtkomst till användningsstatistik för hela klienten och kan styra den klientomfattande användningen av Power BI-funktionerna. Dessa administratörsroller är lämpliga för användare som behöver ha åtkomst till Power BI-administratörsportalen utan fullständig administrativ Microsoft 365-åtkomst.
 
-Användarhanteringsadministratörer i Office 365 tilldelar användare till rollen Power BI-tjänstadministratör i Administrationscentret för Microsoft 365 eller genom att använda ett PowerShell-skript. När en användare har tilldelats får denne åtkomst till [Power BI-administratörsportalen](service-admin-portal.md). Där får de åtkomst till användningsstatistik för hela klienten och kan styra den klientomfattande användningen av Power BI-funktionerna.
+> [!NOTE]
+> I Power BI-dokumentationen syftar "Power BI-administratör" på användare som har rollen Power BI-administratör eller Power Platform-administratör. Det framgår i dokumentationen när rollen global Microsoft 365-administratör krävs för en uppgift.
 
 ## <a name="limitations-and-considerations"></a>Begränsningar och överväganden
 
-Rollen Power BI-tjänstadministratör ger inte åtkomst till följande funktioner:
+Rollerna Power BI-tjänstadministratör och Power Platform-administratör tillhandahåller inte följande funktioner:
 
-* Möjlighet att ändra användare och licenser i administrationscentret för Microsoft 365,
+* Möjligheten att ändra användare och licenser i administrationscentret för Microsoft 365.
 
-* Åtkomst till granskningsloggarna. Mer information finns i [Använda granskning i din organisation](service-admin-auditing.md).
+* Åtkomst till granskningsloggarna. Mer information finns i [Spåra användaraktiviteter i Power BI](service-admin-auditing.md).
 
-## <a name="assign-users-to-the-admin-role-in-office-365"></a>Tilldela användare till administratörsrollen i Office 365
+Dessa funktioner kräver rollen som global Microsoft 365-administratör.
 
-Följ dessa steg om du vill tilldela användare till Power BI-administratörsrollen i Microsoft 365 Administrationscenter.
+## <a name="assign-users-to-an-admin-role-in-the-microsoft-365-admin-center"></a>Tilldela användare en administratörsroll i administrationscentret för Microsoft 365
+
+Följ dessa steg om du vill tilldela användare en administratörsroll i administrationscentret för Microsoft 365.
 
 1. I [administrationscentret för Microsoft 365](https://portal.office.com/adminportal/home#/homepage) väljer du **Användare** > **Aktiva användare**.
 
@@ -42,19 +45,15 @@ Följ dessa steg om du vill tilldela användare till Power BI-administratörsrol
 
 1. Välj den användare som du vill tilldela rollen.
 
-1. Välj **Redigera** under **roller**.
+1. Under **Roller** väljer du **Hantera roller**.
 
-    ![Redigera roller](media/service-admin-role/powerbi-admin-edit-roles.png)
+    ![Hantera roller](media/service-admin-role/powerbi-admin-edit-roles.png)
 
-1. Välj **Anpassad administratör** > **Power BI-tjänstadministratör**.
+1. Expandera **Visa alla efter kategori** och välj sedan **Power BI-administratör** eller **Power Platform-administratör**.
 
-    ![Power BI-tjänstadministratör](media/service-admin-role/powerbi-admin-role.png)
+    ![Välja administratörsroll](media/service-admin-role/powerbi-admin-role.png)
 
-1. Välj **spara** och sedan **Stäng**.
-
-Du bör se **Power BI-tjänstadministratör** som användarens roll i listan.
-
-![Roller](media/service-admin-role/powerbi-admin-role-set.png)
+1. Välj **Spara ändringar**.
 
 ## <a name="assign-users-to-the-admin-role-with-powershell"></a>Tilldela användare till administratörsrollen med PowerShell
 

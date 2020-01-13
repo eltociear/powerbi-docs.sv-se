@@ -1,19 +1,19 @@
 ---
 title: Visa lokala rapporter och KPI:er i Power BI-mobilapparna
 description: I Power BI-mobilapparna finns levande, pekaktiverad mobil åtkomst till lokal företagsinformation i SQL Server Reporting Services och Power BI-rapportservern.
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/13/2018
-ms.author: mshenhav
-ms.openlocfilehash: 50d44b99d8efea848588ab4c460a469ef6dc780b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 12/05/2019
+ms.author: painbar
+ms.openlocfilehash: 6020a6cb72be4e8d7be0485c7787fefc097e679d
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879457"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75220131"
 ---
 # <a name="view-on-premises-report-server-reports-and-kpis-in-the-power-bi-mobile-apps"></a>Visa lokala rapportserverrapporter och KPI:er i Power BI-mobilapparna
 
@@ -40,8 +40,9 @@ I Power BI-mobilapparna ansluter du sedan till upp till fem rapportservrar för 
 ## <a name="explore-samples-in-the-mobile-apps-without-a-server-connection"></a>Utforska exempel i mobilapparna utan en serveranslutning
 Även om du inte har åtkomst till en Reporting Services-webbportal, kan du fortfarande utforska funktionerna i mobila rapporter i Reporting Services och KPI:er. 
 
-1. Tryck på knappen för global navigering ![Knappen Global navigering](././media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-iphone-global-nav-button.png) i det övre vänstra hörnet och tryck sedan på kugghjulsikonen uppe till höger ![Kugghjulsikon](././media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ios-settings-icon.png).
-2. Tryck på **Reporting Services-exempel** och bläddra sedan för att interagera med exempel på KPI:er och mobila rapporter.
+1. Tryck på din profilbild i det övre vänstra hörnet och sedan på **Inställningar** på den kontopanel som skjuts ut.
+
+2. På den inställningssida som öppnas trycker du på **Reporting Services-exempel** och bläddrar sedan för att interagera med exempel på KPI:er och mobila rapporter.
    
    ![Reporting Services-exempel](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-iphone-ssrs-samples.png)
 
@@ -53,18 +54,17 @@ Du kan visa lokala Power BI-rapporter, mobila Reporting Services-rapporter och K
    
    ![Logga in på en rapportserver](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-connect-to-rs-login.png)
    
-   Om du redan har loggat in på Power BI-appen trycker du på knappen för global navigering ![Knappen Global navigering](././media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-iphone-global-nav-button.png)och tryck sedan på kugghjulsikonen ![Kugghjulsikon](././media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ios-settings-icon.png) uppe till höger.
-3. Tryck på **Anslut till server**.
+   Om du redan har loggat in på Power BI-appen trycker du på din profilbild i det övre vänstra hörnet och sedan på **Inställningar** på den kontopanel som skjuts ut.
+3. På den inställningssida som öppnas trycker du på **Anslut till server**.
    
     ![Anslut till servern](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-android-server-sign-in.png)
 
-     Mobilappen behöver åtkomst till servern på något sätt. Det finns några sätt att göra det:
+    Mobilappen behöver åtkomst till servern på något sätt. Det finns några sätt att göra det:
+     * Det enklaste är att vara i samma nätverk/använda VPN.
+     * Det är möjligt att använda en webbprogramsproxy för att ansluta från utanför organisationen. Mer information finns i [Använda OAuth för att ansluta till Microsoft SQL Server Reporting Services](mobile-oauth-ssrs.md).
+     * Öppna en anslutning (port) i brandväggen.
 
-    - Det enklaste är att vara i samma nätverk/använda VPN.
-    - Det är möjligt att använda en webbprogramsproxy för att ansluta från utanför organisationen. Mer information finns i [Använda OAuth för att ansluta till Microsoft SQL Server Reporting Services](mobile-oauth-ssrs.md). 
-    - Öppna en anslutning (port) i brandväggen.
-
-1. Fyll i serveradressen samt ditt användarnamn och lösenord. Använd följande format för serveradressen:
+4. Fyll i serveradressen och ge servern ett eget namn om du vill. Använd följande format för serveradressen:
    
      `https://<servername>/reports`
    
@@ -75,14 +75,14 @@ Du kan visa lokala Power BI-rapporter, mobila Reporting Services-rapporter och K
    Inkludera **http** eller **https** framför anslutningssträngen.
    
     ![Dialogrutan Anslut till servern](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ios-connect-to-server-dialog.png)
-5. (Valfritt) Under **Avancerade alternativ** kan du ge servern ett eget namn, om du vill.
-6. Nu ser du servern i navigeringsfönstret – i det här exemplet heter den ”power bi report server”.
+5. När du har skrivit in serveradressen och det valfria namnet trycker du på **Anslut** och fyller sedan i ditt användarnamn och lösenord när du uppmanas till det.
+6. Nu ser du servern i fönstret Konton – i det här exemplet heter den "Work server".
    
    ![Rapportserver i navigeringsfönstret](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-iphone-left-nav-report-server.png)
 
-## <a name="connect-to-an-on-premises-report-server-in-ios"></a>Ansluta till en lokal rapportserver i iOS
+## <a name="connect-to-an-on-premises-report-server-in-ios-or-android"></a>Ansluta till en lokal rapportserver i iOS eller Android
 
-Om du använder Power BI i iOS-mobilappen kan det hända att din IT-administratör har definierat en appkonfigurationsprincip. I så fall är anslutningen till rapportservern väldigt smidig och du behöver inte ange så mycket information när du ansluter till en rapportserver. 
+Om du använder Power BI i mobilappen för iOS eller Android kan det hända att din IT-administratör har definierat en appkonfigurationsprincip. I så fall är anslutningen till rapportservern väldigt smidig och du behöver inte ange så mycket information när du ansluter till en rapportserver. 
 
 1. Du ser ett meddelande som anger att mobilappen har konfigurerats med en rapportserver. Tryck på **Logga in**.
 
@@ -117,7 +117,7 @@ Power BI-rapporter, mobila Reporting Services-rapporter och KPI:er visas i samma
 ## <a name="view-your-favorite-kpis-and-reports"></a>Se dina favorit-KPI:er och rapporter
 Du kan markera KPI:er och rapporter som favoriter i webbportalen och sedan visa dem i en lämplig mapp på din mobila enhet, tillsammans med dina Power BI-favoritinstrumentpaneler.
 
-* Tryck på **Favoriter**.
+* Tryck på **Favoriter** i navigeringsfältet.
   
    ![Favoriter i navigeringsfönstret](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ipad-faves-pbi-report-server-update.png)
   
@@ -126,8 +126,8 @@ Du kan markera KPI:er och rapporter som favoriter i webbportalen och sedan visa 
    ![Power BI-rapporter och instrumentpanel på sidan Favoriter](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ipad-favorites.png)
 
 ## <a name="remove-a-connection-to-a-report-server"></a>Ta bort en anslutning till en rapportserver
-1. Längst ner i navigeringsfönstret, trycker du på **Inställningar**.
-2. Tryck på namnet till den server som du inte vill vara ansluten till.
+1. Öppna kontofönstret och tryck på **Inställningar**.
+2. Tryck på namnet för den server som du inte vill vara ansluten till.
 3. Tryck på **Ta bort server**.
 
 ## <a name="next-steps"></a>Nästa steg

@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/29/2019
+ms.date: 12/18/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 934f045e2546893c48211729402a773b4bbe2aa0
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 044952c6ce5e3b1550067f9d288f8eab02b868bb
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74696771"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223716"
 ---
 # <a name="large-models-in-power-bi-premium-preview"></a>Stora modeller i Power BI Premium (förhandsversion)
 
@@ -118,23 +118,4 @@ Tänk på följande begränsningar när du använder stora modeller:
 - **Stöd för Multi-Geo**: Datamängder som är aktiverade för Premium-filer kommer inte att fungera i kapaciteter där [Multi-Geo](service-admin-premium-multi-geo.md) också är aktiverat.
 
 - **Ladda ned till Power BI Desktop**: Om en datamängd lagras på Premium-filer kommer [nedladdning som .pbix](service-export-to-pbix.md)-fil att misslyckas.
-- **Regioner som stöds**: Stora modeller stöds av nedanstående regioner.
-  - Australien, östra
-  - Australien, sydöstra
-  - USA, centrala
-  - Asien, östra
-  - USA, östra
-  - USA, östra 2
-  - Japan, östra
-  - Japan, västra
-  - Sydkorea, centrala
-  - Sydkorea, södra
-  - USA, norra centrala
-  - Europa, norra
-  - USA, södra centrala
-  - Sydostasien
-  - Storbritannien, södra
-  - Storbritannien, västra
-  - Europa, västra
-  - USA, västra
-  - USA, västra 2
+- **Regioner som stöds**: Stora modeller stöds i alla Azure-regioner som stöder lagring av Premium-filer. Mer information finns i [Produkttillgänglighet per region](https://azure.microsoft.com/global-infrastructure/services/?products=storage).

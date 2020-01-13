@@ -1,6 +1,6 @@
 ---
-title: 'Självstudie: Anropa en Machine Learning Studio-modell i Power BI (förhandsgranskning)'
-description: I den här självstudien kan du anropa en Machine Learning Studio-modell i Power BI.
+title: 'Självstudie: Anropa en Machine Learning Studio-modell (klassisk) i Power BI (förhandsversion)'
+description: I den här självstudien kan du anropa en Machine Learning Studio-modell (klassisk) i Power BI.
 author: davidiseminger
 ms.reviewer: SarinaJoan
 ms.service: powerbi
@@ -10,16 +10,16 @@ ms.topic: tutorial
 ms.date: 03/12/2019
 ms.author: davidi
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 3cbe715bc3cff9d2afeefe7c82847f104f4d0835
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 3a7d4fa73caa718cec905d8f511ae94b077f7e2b
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876972"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75224251"
 ---
-# <a name="tutorial-invoke-a-machine-learning-studio-model-in-power-bi-preview"></a>Självstudie: Anropa en Machine Learning Studio-modell i Power BI (förhandsgranskning)
+# <a name="tutorial-invoke-a-machine-learning-studio-classic-model-in-power-bi-preview"></a>Självstudie: Anropa en Machine Learning Studio-modell (klassisk) i Power BI (förhandsversion)
 
-I den här självstudien, går vi igenom upplevelsen av att införliva insikter från en **Azure Machine Learning Studio**-modell till Power BI. Den här självstudien innehåller vägledning för att bevilja en Power BI-användaråtkomst till en Azure ML-modell, skapa ett dataflöde och tillämpa insikterna från Azure ML-modellen på ditt dataflöde. Den refererar också till snabbstartsguiden för att skapa en Azure ML-modell om du inte redan har en modell.
+I den här självstudien går vi igenom funktionen för att införa insikter från en **Azure Machine Learning Studio-modell (klassisk)** till Power BI. Den här självstudien innehåller vägledning för att bevilja en Power BI-användaråtkomst till en Azure ML-modell, skapa ett dataflöde och tillämpa insikterna från Azure ML-modellen på ditt dataflöde. Den refererar också till snabbstartsguiden för att skapa en Azure ML-modell om du inte redan har en modell.
 
 I självstudien går vi igenom följande steg:
 
@@ -31,15 +31,15 @@ I självstudien går vi igenom följande steg:
 
 ## <a name="create-and-publish-an-azure-ml-model"></a>Skapa och publicera Azure ML-modell
 
-Följ anvisningarna i [Genomgång steg 1: Skapa en Machine Learning Studio-arbetsyta](https://docs.microsoft.com/azure/machine-learning/studio/walkthrough-1-create-ml-workspace) för att skapa en **Machine Learning**-arbetsyta.
+Följ anvisningarna i [Genomgång steg 1: Skapa en Machine Learning Studio-arbetsyta (klassisk)](https://docs.microsoft.com/azure/machine-learning/studio/walkthrough-1-create-ml-workspace) för att skapa en **Machine Learning**-arbetsyta.
 
-Du kan använda de här stegen med en Azure ML-modell eller datauppsättning som du redan har. Om du inte har en publicerad modell kan du skapa en modell på några minuter genom att referera till [Skapa ditt första dataexperiment i Azure Machine Learning Studio](https://docs.microsoft.com/azure/machine-learning/studio/create-experiment), som konfigurerar en Azure ML-modell för förutsägelser för bilpriser.
+Du kan använda de här stegen med en Azure ML-modell eller datauppsättning som du redan har. Om du inte har en publicerad modell kan du skapa en modell på några minuter genom att referera till [Skapa ditt första dataexperiment i Azure Machine Learning Studio (klassisk)](https://docs.microsoft.com/azure/machine-learning/studio/create-experiment), som konfigurerar en Azure ML-modell för förutsägelser av bilpriser.
 
-Följ stegen i [Distribuera en Azure Machine Learning Studio-webbtjänst](https://docs.microsoft.com/azure/machine-learning/studio/publish-a-machine-learning-web-service) för att publicera Azure ML-modellen som en webbtjänst.
+Följ stegen i [Distribuera en Azure Machine Learning Studio-webbtjänst (klassisk)](https://docs.microsoft.com/azure/machine-learning/studio/tutorial-part3-credit-risk-deploy) för att publicera Azure ML-modellen som en webbtjänst.
 
 ## <a name="grant-a-power-bi-user-access"></a>Ge en Power BI-användare åtkomst
 
-För att komma åt en Azure ML-modell från Power BI, måste du ha **Läs**-åtkomst till Azure-prenumerationen och resursgruppen och **Läs**-åtkomst till Azure Machine Learning Studio-webbtjänsten för Machine Learning Studio-modeller.  För Azure Machine Learning Service-modeller behöver du **Läs**-åtkomst till Machine Learning Service-arbetsytan.
+För att komma åt en Azure ML-modell från Power BI, måste du ha **Läs**-åtkomst till Azure-prenumerationen och resursgruppen och **Läs**-åtkomst till Azure Machine Learning Studio-webbtjänsten (klassisk) för Machine Learning Studio-modeller (klassisk).  För Azure Machine Learning-modeller behöver du **Läs**-åtkomst till Machine Learning-arbetsytan.
 
 Följande steg förutsätter att du är medadministratör för Azure-prenumerationen och resursgruppen till vilken modellen publicerades.
 
@@ -59,9 +59,9 @@ Upprepa stegen ovan för att bevilja **Deltagar**-rollåtkomst till Power BI-anv
 
 Logga in på Power BI-tjänsten med autentiseringsuppgifterna för användaren som du har beviljat åtkomst till Azure ML-modellen i föregående steg.
 
-Det här steget förutsätter att du har de data som du vill bedöma med din Azure ML-modell i CSV-format.  Om du har använt **Experimentet Bilpriser** för att skapa modellen i Machine Learning Studio, delas datauppsättningen i följande länk:
+Det här steget förutsätter att du har de data som du vill bedöma med din Azure ML-modell i CSV-format.  Om du har använt **Experimentet Bilpriser** för att skapa modellen i Machine Learning Studio (klassisk) delas datamängden i följande länk:
 
-* [Azure Learning Studio-exempelmodell](https://github.com/santoshc1/PowerBI-AI-samples/blob/master/Tutorial_MLStudio_model_integration/Automobile%20price%20data%20_Raw_.csv)
+* [Azure Learning Studio-exempelmodell (klassisk)](https://github.com/santoshc1/PowerBI-AI-samples/blob/master/Tutorial_MLStudio_model_integration/Automobile%20price%20data%20_Raw_.csv)
 
 ### <a name="create-a-dataflow"></a>Skapa ett dataflöde
 
@@ -173,7 +173,7 @@ Om du inte längre behöver de resurser som du skapade med hjälp av den här ar
 
 ## <a name="next-steps"></a>Nästa steg
 
-I den här självstudien skapade du ett enkelt experiment med hjälp av Azure Machine Learning Studio med hjälp av en enkel datauppsättning med de här stegen:
+I den här självstudien skapade du ett enkelt experiment med hjälp av Azure Machine Learning Studio (klassisk) med hjälp av en enkel datamängd med de här stegen:
 
 - Skapa och publicera en Azure Machine Learning-modell
 - Bevilja åtkomst till en Power BI-användare att använda modellen

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/25/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 88a49af62a26b64d8b913b6df03c82841f31a489
-ms.sourcegitcommit: f1f57c5bc6ea3057007ed8636ede50188ed90ce1
+ms.openlocfilehash: 0f24675d4185efd7524d9e8c453c919d64e0364a
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74410961"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75222176"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Datakällor i Power BI Desktop
 
@@ -24,14 +24,12 @@ Anslut till data genom att välja **Hämta data** från menyfliksområdet **Star
 
 ![Hämta data i Power BI Desktop](media/desktop-data-sources/data-sources-01.png)
 
-Om du väljer **Mer...** från menyn **Mest vanliga** visas fönstret **Hämta data**. Du kan också öppna fönstret **Hämta data** (och kringgå menyn **Mest vanliga**) genom att välja **Hämta data**-**ikonen** direkt.
+Om du väljer **Mer...** från menyn **Mest vanliga** visas fönstret **Hämta data**. Du kan även öppna fönstret **Hämta data** (och kringgå menyn **Vanligast**) genom att välja **Hämta data**-**ikonknappen** direkt.
 
 ![Knappen Hämta data](media/desktop-data-sources/data-sources-02.png)
 
 > [!NOTE]
-> Power BI-teamet utökar kontinuerligt de datakällor som är tillgängliga för **Power BI Desktop** och **Power BI-tjänsten**. Därför visas ofta tidiga versioner av pågående datakällor markerade med *beta* eller *förhandsversion*. Alla datakällor som har markerats som *beta* eller *förhandsversion* har begränsad support och funktionalitet och ska inte användas i produktionsmiljöer. 
-
-> Dessutom kan det hända att datakällor som är markerade som *Beta* eller *Förhandsversion* för **Power BI Desktop** inte är tillgängliga för användning i **Power BI-tjänsten** eller andra Microsoft-tjänster förrän datakällan blir allmänt tillgänglig.
+> Power BI-teamet utökar kontinuerligt de datakällor som är tillgängliga för **Power BI Desktop** och **Power BI-tjänsten**. Därför visas ofta tidiga versioner av pågående datakällor markerade med *beta* eller *förhandsversion*. Alla datakällor som har markerats som *beta* eller *förhandsversion* har begränsad support och funktionalitet och ska inte användas i produktionsmiljöer. Dessutom kan det hända att datakällor som är markerade som *Beta* eller *Förhandsversion* för **Power BI Desktop** inte är tillgängliga för användning i **Power BI-tjänsten** eller andra Microsoft-tjänster förrän datakällan blir allmänt tillgänglig.
 
 ## <a name="data-sources"></a>Datakällor
 Datatyperna ordnas i följande kategorier:
@@ -42,7 +40,7 @@ Datatyperna ordnas i följande kategorier:
 * Power BI
 * Azure
 * Onlinetjänster
-* Övrigt
+* Annat
 
 I kategorin **Alla** finns alla dataanslutningstyper från alla kategorier.
 
@@ -82,7 +80,7 @@ Kategorin **Databas** innehåller följande dataanslutningar:
 * Vertica
 * Snowflake
 * Essbase
-* AtScale-kuber (Beta)
+* AtScale-kuber
 * BI-anslutningsapp
 * Dremio
 * Exasol
@@ -104,7 +102,7 @@ I **Power Platform**-kategorin finns följande dataanslutningar:
 * Power BI-datauppsättningar
 * Power BI-dataflöden
 * Common Data Service
-* Power Platform-dataflöden (beta)
+* Power Platform-dataflöden
 
 Följande bild visar fönstret **Hämta data** för **Power Platform**.
 
@@ -118,13 +116,14 @@ Kategorin **Azure** innehåller följande dataanslutningar:
 * Azure Blob Storage
 * Azure Table Storage
 * Azure Cosmos DB
-* Azure Data Lake Storage Gen2 (Beta)
+* Azure Data Lake Storage Gen2
 * Azure Data Lake Storage Gen1
 * Azure HDInsight (HDFS)
 * Azure HDInsight Spark
 * HDInsight Interactive-fråga
 * Azure Data Explorer (Kusto)
-* Azure Cost Management (Beta)
+* Azure Cost Management
+* Azure Time Series Insights (beta)
 
 Följande bild visar fönstret **Hämta data** för **Azure**.
 

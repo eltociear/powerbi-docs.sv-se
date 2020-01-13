@@ -10,10 +10,10 @@ ms.date: 04/19/2019
 ms.author: davidi
 LocalizationGroup: Model your data
 ms.openlocfilehash: f759992c42cc589d21ed51d5d63775bf54518c3f
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73869117"
 ---
 # <a name="create-and-manage-relationships-in-power-bi-desktop"></a>Skapa och hantera relationer i Power BI Desktop
@@ -80,7 +80,7 @@ När du har kopplat ihop två tabeller med en relation kan du arbeta med data i 
 Vi går igenom en snabb självstudie för att bättre se hur relationer fungerar i Power BI Desktop.
 
 >[!TIP]
->Du kan slutföra den här lektionen själv. Kopiera tabellen ProjectHours nedan till ett Excel-kalkylblad, markera alla celler och klicka på **INSERT** \> **Tabell**. I dialogrutan **Skapa tabell** klickar du på **OK**. I **Tabellnamn** skriver du **ProjectHours**. Gör samma sak för CompanyProject-tabellen. Du kan sedan importera datan med hjälp av **Hämta data** i Power BI Desktop. Välj din arbetsbok och dina tabeller som en datakälla.
+>Du kan slutföra den här lektionen själv. Kopiera tabellen ProjectHours nedan till ett Excel-kalkylblad, markera alla celler och klicka på **INFOGA** \> **Tabell**. I dialogrutan **Skapa tabell** klickar du på **OK**. I **Tabellnamn** skriver du **ProjectHours**. Gör samma sak för CompanyProject-tabellen. Du kan sedan importera datan med hjälp av **Hämta data** i Power BI Desktop. Välj din arbetsbok och dina tabeller som en datakälla.
 
 Den första tabellen, ProjectHours, är ett register för arbetsbiljetter med antal timmar som en person har arbetat med ett visst projekt. 
 
@@ -92,9 +92,9 @@ Den första tabellen, ProjectHours, är ett register för arbetsbiljetter med an
 | 1002 |Brewer, Alan |26 |Röd |2/1/2013 |
 | 1003 |Ito, Shu |34 |Gul |12/4/2012 |
 | 1004 |Brewer, Alan |13 |Orange |1/2/2012 |
-| 1005 |Bowen, Eli |29 |Lila |10/1/2013 |
+| 1005 |Bowen, Eli |29 |Lila |01-10-2013 |
 | 1006 |Bento, Nuno |35 |Grön |2/1/2013 |
-| 1007 |Hamilton, David |10 |Gul |10/1/2013 |
+| 1007 |Hamilton, David |10 |Gul |01-10-2013 |
 | 1008 |Han, Mu |28 |Orange |1/2/2012 |
 | 1009 |Ito, Shu |22 |Lila |2/1/2013 |
 | 1010 |Bowen, Eli |28 |Grön |10/1/2013 |
@@ -186,7 +186,7 @@ Tabellen CompanyProjectPriority nedan är en lista över alla företagets projek
 |:--- | ---:| ---:|
 | Blå |40 000 |12/1/2012 |
 | Röd |100 000 |12/1/2012 |
-| Grön |50 000 |12/1/2012 |
+| Grön |50,000 |12/1/2012 |
 
 **CompanyProjectPriority**
 
@@ -224,7 +224,7 @@ Men vi antar att du vet att datan kommer att ändras nästa gång du uppdaterar 
 | --- | ---:| ---:|
 | Blå |40 000 |12/1/2012 |
 | Röd |100 000 |12/1/2012 |
-| Grön |50 000 |12/1/2012 |
+| Grön |50,000 |12/1/2012 |
 | Blå |80 000 |6/1/2013 |
 | Röd |90 000 |6/1/2013 |
 
@@ -294,9 +294,9 @@ Låt oss titta på ett exempel. Den första tabellen är ProjectTickets och näs
 | 1002 |Roman, Daniel |Brewer, Alan |26 |Röd |2/1/2013 |
 | 1003 |Roth, Daniel |Ito, Shu |34 |Gul |12/4/2012 |
 | 1004 |Perham, Tom |Brewer, Alan |13 |Orange |1/2/2012 |
-| 1005 |Roman, Daniel |Bowen, Eli |29 |Lila |10/1/2013 |
+| 1005 |Roman, Daniel |Bowen, Eli |29 |Lila |01-10-2013 |
 | 1006 |Roth, Daniel |Bento, Nuno |35 |Grön |2/1/2013 |
-| 1007 |Roth, Daniel |Hamilton, David |10 |Gul |10/1/2013 |
+| 1007 |Roth, Daniel |Hamilton, David |10 |Gul |01-10-2013 |
 | 1008 |Perham, Tom |Han, Mu |28 |Orange |1/2/2012 |
 | 1009 |Roman, Daniel |Ito, Shu |22 |Lila |2/1/2013 |
 | 1010 |Roth, Daniel |Bowen, Eli |28 |Grön |10/1/2013 |

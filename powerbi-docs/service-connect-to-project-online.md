@@ -10,10 +10,10 @@ ms.date: 07/25/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
 ms.openlocfilehash: 32d731c354d848809d336392ef51f667b14427d8
-ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/27/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "74565686"
 ---
 # <a name="connect-to-project-web-app-with-power-bi"></a>Anslut till Project Web App med Power BI
@@ -44,7 +44,7 @@ Anslut till [Project Web App-mallappen](https://appsource.microsoft.com/product/
 7. I textrutan **Project Web App-URL** anger du URL:en för den PWA (Project Web App) som du vill ansluta till.  Observera att det här kan skilja sig från exemplet om du har en anpassad domän. I textrutan **PWA Site Language** (PWA-webbplatsspråk) anger du rätt siffra för ditt PWA-webbplatsspråk. Ange ”1” för engelska, ”2” för franska, ”3” för tyska, ”4” för portugisiska (Brasilien), ”5” för portugisiska (Portugal) och ”6” för spanska. 
    
    ![Anslut till Microsoft Project Online](media/service-connect-to-project-online/params.png)
-8. Som Autentiseringsmetod väljer du **oAuth2** \> **Logga in**. När du uppmanas till det anger du dina autentiseringsuppgifter för Project Web App och följer autentiseringsprocessen.
+8. Som autentiseringsmetod väljer du **oAuth2** \> **Logga in**. När du uppmanas till det anger du dina autentiseringsuppgifter för Project Web App och följer autentiseringsprocessen.
 
     > [!NOTE]
     > Du behöver ha behörighet för portföljvy, portföljansvarig eller administratör för den Project Web App som du ansluter till.

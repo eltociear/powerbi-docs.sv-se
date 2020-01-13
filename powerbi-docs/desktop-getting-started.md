@@ -1,345 +1,348 @@
 ---
 title: Komma igång med Power BI Desktop
-description: Komma igång med Power BI Desktop
+description: Kom igång med Power BI Desktop.
 author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/29/2019
+ms.date: 12/09/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: e533313e20c4e1f994c2ae3d1e552170aef2cbd2
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: b32eee568ba560e95899cf0965a11f3bb037aed6
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73868025"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75222800"
 ---
-# <a name="getting-started-with-power-bi-desktop"></a>Komma igång med Power BI Desktop
-Välkommen till **Komma igång-guiden för Power BI Desktop**. Den här korta visningen av Power BI Desktop låter dig bekanta dig med hur den fungerar, visar vad den kan göra och ökar dina möjligheter att skapa robusta datamodeller, tillsammans med häpnadsväckande rapporter, som förstärker din affärsintelligens. 
+# <a name="get-started-with-power-bi-desktop"></a>Komma igång med Power BI Desktop
+Välkommen till Komma igång-guiden för Power BI Desktop. Den här guiden visar hur Power BI Desktop fungerar, vad det kan göra samt hur du skapar robusta datamodeller och fantastiska rapporter som förbättrar din Business Intelligence.
 
-Vill du titta istället för att läsa? Då kan du [ta en titt på vår kom igång video](desktop-videos.md). Om du vill följa med i videon med matchande exempeldata, kan du [hämta den här Excel-exempelarbetsboken](https://go.microsoft.com/fwlink/?LinkID=521962).
+Om du vill få en snabb översikt över hur Power BI Desktop fungerar och hur du använder det kan du gå igenom bilderna i den här guiden på bara några minuter. För en mer ingående förståelse kan du läsa igenom avsnitten, utföra stegen och skapa din egen Power BI Desktop-fil som kan publiceras till [Power BI-tjänsten](https://app.powerbi.com/) och delas med andra.
 
-![](media/desktop-getting-started/pbi_gettingstartedsplash_resized.png)
+![Power BI Desktop-rapport](media/desktop-getting-started/hero.png)
 
-Power BI Desktop låter dig skapa en samling frågor, dataanslutningar och rapporter som enkelt kan delas med andra. Power BI Desktop integrerar beprövad Microsoft-teknologi – den kraftfulla frågemotorn, datamodellering och visualiseringar – och fungerar sömlöst tillsammans med [**Power BI-tjänsten**](https://app.powerbi.com/) online.
-
-Med en kombination av **Power BI Desktop** (där analytiker och andra kan skapa kraftfulla dataanslutningar, modeller och rapporter) och [**Power BI-tjänsten**](https://preview.powerbi.com/) (där Power BI Desktop-rapporter kan delas så att användare kan visa och interagera med dem), blir nya insikter från en värld av data enklare än någonsin att modellera, skapa, dela och utöka.
-
-Dataanalytiker kommer att finna Power BI Desktop kraftfull, flexibel, och högtillgänglig för att ansluta till och forma en värld av data, skapa robusta modeller och skapa välstrukturerade rapporter.
-
-## <a name="how-to-use-this-guide"></a>Så här använder du den här guiden
-Du kan använda den här guiden på ett par olika sätt – kolla igenom den för en snabb överblick eller läs igenom varje avsnitt för en mer ingående förståelse av hur Power BI Desktop fungerar.
-
-Om har bråttom, kan du göra en visuell snabbläsning av den här guiden på ett par minuter och få en bra uppfattning av hur Power BI Desktop fungerar och hur du använder den. Det mest i den här guiden består av skärmbilder som visuellt visar hur Power BI Desktop fungerar.
-
-För en mer ingående förståelse så kan du läsa igenom avsnitten, utföra stegen och få fram din egen Power BI Desktop-fil som är redo för publicering till **Power BI**-tjänsten och delas med andra.
-
->[!NOTE]
->Det finns också en separat och specialiserad version av **Power BI** som heter [**Power BI-rapportserver**](report-server/get-started.md), som är till för kunder som behöver ha kvar sina data och rapportering lokalt. Det finns även en specialiserad version av **Power BI Desktop** för användning med den versionen, som heter **Power BI Desktop för Power BI-rapportserver**, som bara fungerar med rapportserver-versionen av Power BI. Den här artikeln beskriver standardversionen av **Power BI Desktop**.
-
+Du kan även titta på videon [Komma igång med Power BI Desktop](https://www.youtube.com/watch?v=Qgam9M8I0xA) och ladda ned Excel-arbetsboken [Financial Sample](https://go.microsoft.com/fwlink/?LinkID=521962) (Ekonomiexempel) för att följa med videon.
 
 ## <a name="how-power-bi-desktop-works"></a>Så här fungerar Power BI Desktop
-Med Power BI Desktop *ansluter du till data* (vanligtvis flera datakällor), *formar data* (med frågor som skapa insiktsfulla, övertygande datamodeller) och använder den modellen för att *skapa rapporter* (som andra kan dra nytta av, bygga vidare på och dela).
+Med Power BI Desktop kan du:
+1. Ansluta till data, däribland flera datakällor.
+1. Forma data med frågor som skapar insiktsfulla, övertygande datamodeller.
+1. Använda datamodeller för att skapa visualiseringar och rapporter. 
+1. Dela dina rapportfiler så att andra kan använda, bygga vidare på och dela dem. Du kan dela *.pbix*-filer för Power BI Desktop på samma sätt som med andra filer, men den kanske främsta metoden är att ladda upp dem till [Power BI-tjänsten](https://preview.powerbi.com/). 
 
-När stegen är klara så att du är nöjd – ansluta, forma och rapportera – så kan du spara arbetet i Power BI Desktop-filformatet, som är .pbix-tillägget. Power BI Desktop-filer kan delas som andra filer, men det mest övertygande sättet att dela Power BI Desktop-filer på är att överföra dem (dela dem) på [**Power BI-tjänsten**](https://preview.powerbi.com/). 
+Power BI Desktop integrerar beprövade tekniker för Microsoft-frågemotorn, datamodellering och visualisering. Dataanalytiker och andra kan skapa samlingar med frågor, dataanslutningar, modeller samt rapporter och enkelt dela dem med andra. Kombinationen av Power BI Desktop och Power BI-tjänsten gör det enklare att modellera, bygga, dela och utöka nya insikter från datavärlden.
 
 Power BI Desktop centraliserar, förenklar och strömlinjeformar något som annars kan uppfattas som en utspridd, lösryckt och mödosam process med att business intelligence-centrallager och -rapporter.
+Är du redo att testa? Nu börjar vi.
 
-Är du redo att testa? Då sätter vi igång.
-
-
+> [!NOTE]
+> För data och rapportering som måste hanteras lokalt finns det en separat och specialiserad version av Power BI som heter [Power BI-rapportserver](report-server/get-started.md). Power BI-rapportserver använder en separat och specialiserad version av Power BI Desktop som heter Power BI Desktop för Power BI-rapportserver, som bara fungerar med rapportserver-versionen av Power BI. I den här artikeln beskrivs standardversionen av Power BI Desktop.
 
 ## <a name="install-and-run-power-bi-desktop"></a>Installera och kör Power BI Desktop
-Du kan hämta Power BI Desktop från **Power BI**-tjänsten genom att välja **kugghjuls**ikonen och sedan välja **Power BI Desktop**.
+Om du vill ladda ned Power BI Desktop går du till [nedladdningssidan för Power BI Desktop](https://powerbi.microsoft.com/desktop) och väljer **Ladda ned kostnadsfritt**. Om du vill få nedladdningsalternativ väljer du [Se alternativ för nedladdning eller språk](https://www.microsoft.com/download/details.aspx?id=58494). 
 
-![](media/desktop-getting-started/gsg_download.png)
+Du kan även ladda ned Power BI Desktop från Power BI-tjänsten. Välj ikonen **Ladda ned** på den översta menyraden och välj sedan **Power BI Desktop**.
 
-Power BI Desktop installeras som ett program och körs på skrivbordet.
+![Ladda ned Power BI Desktop från Power BI-tjänsten](media/desktop-getting-started/gsg_download.png)
 
-![](media/desktop-getting-started/designer_gsg_install.png)
+På Microsoft Store-sidan väljer du **Hämta** och följer anvisningarna för att installera Power BI Desktop på datorn. Starta Power BI Desktop i **Starta-menyn** i Windows eller via ikonen i aktivitetsfältet i Windows.
 
-När du startar Power BI Desktop, visas en *välkommen*-skärm.
+Första gången Power BI Desktop startar visas skärmen **Välkommen**.
 
-![](media/desktop-getting-started/designer_gsg_startsplashscreen.png)
+På skärmen **Välkommen** kan du **Hämta data**, se **Senaste källor**, öppna de senaste rapporterna, **Öppna andra rapporter** eller välja andra länkar. Du kan även välja om skärmen **Välkommen** alltid ska visas vid start. Välj ikonen Stäng för att stänga skärmen **Välkommen**.
 
-Du kan **hämta data**, se **senaste källorna**, eller **öppna andra** **rapporter** direkt från *välkommen*-skärmen (från länkar i det vänstra fönstret). Om du stänger skärmen (välj **x** i övre högra hörnet), visas **rapport**vyn av Power BI Desktop.
+![Välkomstskärmen för Power BI Desktop](media/desktop-getting-started/designer_gsg_startsplashscreen.png)
 
-![](media/desktop-getting-started/designer_gsg_blankreport.png)
+På vänster sida i Power BI Desktop finns ikoner för de tre Power BI Desktop-vyerna: **Rapport**, **Data** och **Relationer**, uppifrån och ned. Den aktuella vyn anges av det gula fältet till vänster, och du kan ändra vyer genom att välja bland ikonerna. 
 
-Det finns tre vyer i Power BI Desktop: Vyn **Rapport**, vyn **Data** och vyn **Relationer**. Power BI Desktop innehåller även **Frågeredigeraren**, som du öppnar i ett separat fönster. I **Frågeredigeraren**, kan du skapa frågor och transformera data. Du kan därefter läsa in denna förfinade datamodell i Power BI Desktop och skapa rapporter.
+![Ikoner för de tre Power BI Desktop-vyerna](media/desktop-getting-started/designer_gsg_viewtypes.png)
 
-Följande skärmbild visar de tre visningsikonerna till vänster i Power BI Desktop: **Rapport**, **Data** och **Relationer**, uppifrån och ned. Den aktuella vyn indikeras av det gula fältet på vänster sida. I det här fallet visas **rapport**vyn. Ändra vy genom att välja någon av dessa tre ikoner.
+Standardvyn är vyn **Rapport**. 
 
-![](media/desktop-getting-started/designer_gsg_viewtypes.png)
+![Rapportvy i Power BI Desktop](media/desktop-getting-started/designer_gsg_blankreport.png)
 
-Med Power BI Desktop installerat är du redo att ansluta till data, forma data och skapa rapporter (vanligtvis i den ordningen). I nästa avsnitt, ska vi ta en rundtur genom var och en i turordning.
+Power BI Desktop innehåller även **Power Query-redigeraren**, som öppnas i ett separat fönster. I **Power Query-redigeraren** kan du skapa frågor och transformera data. Du kan därefter läsa in denna förfinade datamodell i Power BI Desktop för att skapa rapporter.
 
 ## <a name="connect-to-data"></a>Ansluta till data
-Med Power BI Desktop installerat, är du redo att ansluta till den ständigt växande världen av data. Det finns *många olika typer* av datakällor tillgängliga i frågefönstret. Följande bild visar hur du ansluter till data, genom att välja menyfliksområdet **Start** och därefter **Hämta data\> Mer**.
+Med Power BI Desktop installerat är du redo att ansluta till den ständigt växande datavärlden. Om du vill se de många typer av datakällor som är tillgängliga väljer du **Hämta data** > **Mer** på fliken **Start** i Power BI Desktop, och i fönstret **Hämta data** bläddrar du igenom listan med **Alla** datakällor. I den snabbturen ansluter du till ett par olika datakällor för **Webben**.
 
- ![](media/desktop-getting-started/getdatavidsmall.gif)
+![Välja webbdatakälla från Hämta data ](media/desktop-getting-started/getdataweb.png)
 
-I den här guidade turen, ska vi ansluta till ett par olika **Webb**datakällor.
+Föreställ dig att du arbetar som dataanalytiker hos en återförsäljare av solglasögon. Du vill hjälpa kunden att fokusera försäljning av solglasögon till de områden där solen skiner oftast. Bankrate.com-sidan [Best and worst states for retirement](https://www.bankrate.com/retirement/best-and-worst-states-for-retirement/) (de bästa och sämsta delstaterna för pension) innehåller intressant information om det här ämnet.
 
-Tänk dig att du ska pensionera dig – du vill leva där det finns en massa sol, ett bra skatteklimat och bra sjukvård – eller så kanske du är en dataanalytiker och behöver den informationen för att hjälpa dina kunder. Du vill kanske hjälpa ett solglasögonföretag att rikta sin försäljning där solen skiner oftast.
+På fliken **Start** i Power BI Desktop väljer du **Hämta data** > **Webben** för att ansluta till en webbdatakälla. 
 
-I båda fallen har följande webbresurs intressanta data om dessa ämnen och mer:
+![Välja webbdatakälla](media/desktop-getting-started/gsg_syw_2.png)
 
-[*https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx*](https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx)
+I dialogrutan **Från webben** klistrar du in adressen *https:\//www.bankrate.com/retirement/best-and-worst-states-for-retirement/* i fältet **URL** och väljer **OK**. 
 
-Välj **Hämta data \> Webb** och klistra in adressen.
+![Klistra in webbadress i dialogrutan Från webben](media/desktop-getting-started/gettingstarted_8.png)
 
- ![](media/desktop-getting-started/gettingstarted_8.png)
+På skärmen **Anslut till webbinnehåll** väljer du **Anslut**, om du uppmanas till det, för att använda anonym åtkomst. 
 
-När du väljer **OK**, används **Fråge**funktionen i Power BI Desktop. Frågan kontaktar webbresursen och **Navigerings**fönstret returnerar resultatet från den webbsidan. I det här fallet hittades en tabell (*Tabell 0*) och det övergripande webbdokumentet. Vi vill använda tabellen, så vi väljer den från listan. **Navigerings**fönstret visar en förhandsgranskning.
+Frågefunktionen i Power BI Desktop börjar arbeta och kontaktar webbresursen. Fönstret **Navigatör** returnerar det som hittas på webbsidan, i det här fallet en tabell som heter **Ranking of best and worst states for retirement** (Rangordning av de bästa och sämsta delstaterna för pension) samt ett dokument. Det är tabellen som är intressant, så välj den för att se en förhandsgranskning.
 
- ![](media/desktop-getting-started/datasources_fromnavigatordialog.png)
+Nu kan du välja **Läs in** för att läsa in tabellen eller **Transformera data** för att göra ändringar i tabellen innan du läser in den.
 
-Vi kan nu redigera frågan innan du läser in tabellen genom att välja **Redigera** längst ned i fönstret eller så kan vi läsa in tabellen.
+![Förhandsgranskning av tabell från webbsida](media/desktop-getting-started/datasources_fromnavigatordialog.png)
 
-När vi väljer **Redigera**, startar frågeredigeraren och en representativ vy av tabellen visas. Fönstret **Frågeinställningar** visas (om det inte öppnas kan du välja **Visa** från menyfliken och sedan **Visa\> Frågeinställningar** för att visa fönstret **Frågeinställningar**). Det ser ut så här.
+När du väljer **Transformera data** öppnas Power Query-redigeraren med en representativ vy av tabellen. Fönstret **Frågeinställningar** finns till höger. Du kan även välja att alltid visa det genom att välja **Frågeinställningar** på fliken **Visa** i Power Query-redigeraren. 
 
- ![](media/desktop-getting-started/designer_gsg_editquery.png)
+![Power Query-redigeraren med frågeinställningar](media/desktop-getting-started/designer_gsg_editquery.png)
 
 Mer information om hur du ansluter till data finns i [Anslut till data i Power BI Desktop](desktop-connect-to-data.md).
 
-> [!NOTE]
-> De tabelldata som refereras till i den här artikeln kan ändras med tiden. De steg som du måste följa kan därför avvika från de följande, varför du behöver vara kreativ när du anpassar steg eller resultat – men det är också en del av det roliga med inlärningen. 
-
-I nästa avsnitt justerar vi data så att de uppfyller våra behov. Processen med att justera anslutna data kallas att *forma* data.
-
-## <a name="shape-and-combine-data"></a>Forma och kombinera data
-Nu när vi har anslutit till en datakälla, behöver vi justera dessa data så att de uppfyller våra behov. Ibland innebär justering att *omvandla* data – till exempel byta namn på kolumner eller tabeller, ändra text till tal, ta bort rader, ställa in den första raden som rubrik och så vidare.
-
-Frågeredigeraren i Power BI Desktop använder sig mycket av högerklicksmenyer förutom att ha uppgifter tillgängliga i menyfliksområdet. Merparten av det du kan välja i menyfliksområdet **Omvandla** är också tillgängligt genom att högerklicka på ett objekt (till exempel en kolumn) och välja från menyn som visas.
-
 ## <a name="shape-data"></a>Forma data
-När du formar data i **frågeredigeraren** ger du stegvisa-instruktioner (som **frågeredigeraren** utför) för att justera de data som **frågeredigeraren** hämtar och presenterar. Den ursprungliga datakällan påverkas inte utan det är endast den här datavyn som justeras eller *formas*.
+Nu när vi har anslutit till en datakälla kan du justera dessa data så att de uppfyller behoven. Om du vill *forma* data ger du Power Query-redigeraren stegvisa instruktioner för att justera data vid inläsning och presentera dem. Formning påverkar inte den ursprungliga datakällan, utan bara just den här datavyn. 
 
-De steg som du anger (till exempel när du byter namn på en tabell, transformerar datatypen eller tar bort kolumner) registreras av **frågeredigeraren** och varje gång den här frågan ansluter till datakällan utförs dessa steg så att data alltid utformas på det sätt som du anger. Den här processen inträffar när du använder frågan i Power BI Desktop eller för alla som använder din delade fråga, till exempel i **Power BI**-tjänsten. De här stegen fångas i ordning i fönstret **Frågeinställningar** under **Tillämpade steg**.
+> [!NOTE]
+> De tabelldata som används i den här handboken kan komma att ändras med tiden. De steg som du behöver följa kan därför vara annorlunda, varför du behöver vara kreativ när du anpassar steg eller resultat – men det är också en del av det roliga med inlärningen. 
 
-Följande bild visar fönstret **Frågeinställningar** för en fråga som har formats – vi ska gå igenom de här stegen i följande stycken.
+Formning kan innebära att *transformera* data, till exempel byta namn på kolumner eller tabeller, ta bort rader eller kolumner eller ändra datatyper. Power Query-redigeraren samlar de här stegen sekventiellt under **Tillämpade steg** i fönstret **Frågeinställningar**. Varje gång den här frågan ansluter till datakällan utförs de stegen så att data alltid formas på det sätt du anger. Den här processen inträffar när du använder frågan i Power BI Desktop eller när någon använder din delade fråga, till exempel i Power BI-tjänsten. 
 
- ![](media/desktop-getting-started/shapecombine_querysettingsfinished.png)
+Observera att **Tillämpade steg** i **Frågeinställningar** redan innehåller några steg. Du kan välja varje steg för att se dess inverkan i Power Query-redigeraren. Först angav du en webbadress och sedan förhandsgranskade du tabellen i fönstret **Navigatör**. I det tredje steget, **Ändrad typ**, identifierade Power BI heltalsdata när dessa importerades och ändrade automatiskt den ursprungliga **Text**-*datatypen* för webb till **Heltal**. 
 
-Nu ska vi gå tillbaka till våra pensionsdata som vi hittade genom att ansluta till en Webbdatakälla och formar dessa data efter våra behov.
+![Fönstret Frågeinställningar med tre tillämpade steg](media/desktop-getting-started/designer_gsg_appliedsteps_changedtype.png)
 
-Till att börja med, har de flesta klassificeringar förts in i **Frågeredigeraren** som heltal, men inte alla (en kolumn som innehåller text och siffror, så konverterades in automatiskt). Vi behöver data som siffror. Inga problem – det är bara att högerklicka på kolumnrubriken och välja **Ändra typ \> Heltal** för att ändra datatypen. Om vi behöver välja fler än en kolumn, kan vi först markera en kolumn och sedan hålla ned **Skift**, välja fler intilliggande kolumner och högerklicka på en kolumnrubrik för att ändra alla valda kolumner. Du kan också använda **Ctrl** för att välja kolumner som inte ligger bredvid varandra.
+Om du behöver ändra en datatyp markerar du den kolumn eller de kolumner som du vill ändra. Håll ned tangenten **Skift** för att markera flera intilliggande kolumner, eller **Ctrl** för att markera kolumner som inte är intilliggande. Antingen högerklickar du på en kolumnrubrik, väljer **Ändra typ** och väljer en ny datatyp i menyn, eller så visar du listan intill **Datatyp** i gruppen **Transformera** på fliken **Start** och väljer en ny datatyp.
 
- ![](media/desktop-getting-started/designer_gsg_changedatatype.png)
+![Ändra datatyp](media/desktop-getting-started/designer_gsg_changedatatype.png)
 
-Du kan också ändra, eller *omvandla* dessa kolumner från text till rubrik från menyfliksområdet **Omvandla**. Här är menyfliksområdet **Omvandla** med en pil som pekar mot knappen **Datatyp**, som låter dig omvandla den aktuella datatypen till en annan.
+> [!NOTE]
+> Power Query-redigeraren i Power BI Desktop använder menyfliksområdet eller högerklicksmenyerna för tillgängliga uppgifter. De flesta uppgifter som du kan välja på flikarna **Start** eller **Transformera** i menyfliksområdet är även tillgängliga om du högerklickar på ett objekt och väljer från den meny som visas.
 
- ![](media/desktop-getting-started/shapecombine-changetype-b.png)
+Nu kan du tillämpa dina egna ändringar och transformeringar på data och se dem i **Tillämpade steg**. 
 
-Observera att i **Frågeinställningarna**, återspeglar **tillämpade steg** de ändringar som har gjorts. Om jag vill ta bort något steg från formningsprocessen, väljer jag det steget och trycker på **X** till vänster om steget.
+Till exempel är du för försäljning av solglasögon kanske mest intresserad av väderrangordningen, så du väljer att sortera tabellen efter kolumnen **Väder** i stället för **Övergripande ranking**. Klicka på pilen intill rubriken **Väder** och välj **Sortera stigande**. Data visas nu sorterade efter väderrangordning, och steget **Sorterade rader** visas i **Tillämpade steg**. 
 
- ![](media/desktop-getting-started/designer_gsg_appliedsteps_changedtype.png)
+![Sortera rader stigande](media/desktop-getting-started/shapecombine-changetype-b.png)
 
-Vi behöver göra några fler ändringar för att få frågan dit vi vill:
+Du är inte intresserad av att sälja solglasögon till delstaterna med det sämsta vädret, så du väljer att ta bort dem från tabellen. Från gruppen **Minimera rader** på fliken **Start** väljer du **Ta bort rader** > **Ta bort de nedersta raderna**. I dialogrutan **Ta bort de nedersta raderna** anger du *10* och väljer sedan **OK**. 
 
-* *Ta bort den första kolumnen* – den behövs inte, den innehåller endast överflödiga rader som säger ”Se hur din delstat rangordnas för pensioner”, vilket är en rest från att datakällan var en webbaserad tabell
+![Ta bort de nedersta raderna](media/desktop-getting-started/pbi_gsg_getdata3.png)
 
-<!-- -->
+De tio nedersta raderna med sämst väder tas bort från tabellen, och steget **Borttagna nedre rader** visas i **Tillämpade steg**.
 
-* *Åtgärda några fel* – på webbsidan hade en kolumn text blandat med siffrorna (stater som var på delad plats i en kategori). Det fungerade bra på webbplatsen, men inte för vår dataanalys. Det är (i det här fallet) enkelt att korrigera och visar några häftiga funktioner i **Frågeredigeraren** och dess **Tillämpade steg**
+Du anser att tabellen har för mycket extra information för dina behov och tar bort kolumnerna **Priser**, **Brottslighet**, **Kultur** och **Hälsa**. Markera rubriken för varje kolumn som du vill ta bort. Håll ned tangenten **Skift** för att markera flera intilliggande kolumner, eller **Ctrl** för att markera kolumner som inte är intilliggande. 
 
-<!-- -->
+I gruppen **Hantera kolumner** på fliken **Start** väljer du sedan **Ta bort kolumner**. Du kan även högerklicka på en av de valda kolumnrubrikerna och välja **Ta bort kolumner** i menyn. De markerade kolumnerna tas bort, och steget **Borttagna kolumner** visas i **Tillämpade steg**.
 
-* *Ändra tabellnamnet* – **Tabell 0** är inte en användbar beskrivning, men det är lätt att ändra det
+![Ta bort kolumner](media/desktop-getting-started/pbi_gsg_getdata3a.png)
 
-Var och en av de här stegen visas i **[Forma och kombinera Data i Power BI Desktop](desktop-shape-and-combine-data.md)** . Passa på att kolla in den sidan eller fortsätt i det här dokumentet för att se vad du ska göra härnäst. Nästa avsnitt fortsätter efter att ovanstående ändringar tillämpats.
+Vid närmare eftertanke kan **Priser** trots allt vara relevant för försäljning av solglasögon. Du skulle vilja få tillbaka den kolumnen. Du kan enkelt ångra det senaste steget i fönstret **Tillämpade steg** genom att välja borttagningsikonen **X** intill steget. Gör nu om steget och markera bara de kolumner som du vill ta bort. Du kan få mer flexibilitet genom att ta bort varje kolumn som ett separat steg. 
+
+Du kan högerklicka på valfritt steg i fönstret **Tillämpade steg** och välja att ta bort det, byta namn på det, flytta det uppåt eller nedåt i sekvensen eller lägga till eller ta bort steg efter det. För mellanliggande steg varnar Power BI Desktop dig om ändringen kan påverka senare steg och bryta frågan.  
+
+![Ändra tillämpade steg](media/desktop-getting-started/designer_gsg_install.png)
+
+Om du till exempel inte längre vill sortera tabellen efter **Väder** kan du försöka ta bort steget **Sorterade rader**. Power BI Desktop varnar dig om att borttagning av det här steget kan göra att frågan bryts. Du har tagit bort de nedersta tio raderna efter att du sorterat efter väder, så om du tar bort sorteringen tas olika rader bort. Du får även en varning om du väljer steget **Sorterade rader** och försöker lägga till ett nytt mellanliggande steg där.  
+
+![Varning om borttagning av steg](media/desktop-getting-started/deletestepwarning.png)
+
+Slutligen ändrar du tabellrubriken så att den handlar om försäljning av solglasögon i stället för pension. Under **Egenskaper** i rutan **Frågeinställningar** ersätter du den gamla rubriken med *De bästa delstaterna för försäljning av solglasögon*.
+
+Den färdiga frågan för dina formade data ser ut så här:
+
+![Slutförd fråga](media/desktop-getting-started/shapecombine_querysettingsfinished.png)
+
+Mer information om hur du formar data finns i [Forma och kombinera data i Power BI Desktop](desktop-shape-and-combine-data.md).
 
 ## <a name="combine-data"></a>Kombinera data
-Våra data om olika delstater är intressanta och kommer vara användbara för att skapa mer analysverktyg och -frågor. Men det finns ett problem: de flesta data använder en tvåbokstavsförkortning för delstatskoder, inte det fullständiga namnet på delstaten. Vi behöver hitta ett sätt att associera delstatsnamn med deras förkortningar.
+Data om olika delstater är intressanta och kommer vara användbara när vi skapar andra analyser och frågor. Men det finns ett problem: de flesta data använder en förkortning med två bokstäver för delstatskoder, inte det fullständiga namnet på delstaterna. För att kunna använda dessa data behöver du ett sätt att associera delstatsnamn med deras förkortningar.
 
-Vi har tur: det finns en annan offentlig datakälla som gör just detta, men den måste formas en hel del innan vi kan ansluta den till vår pensionstabell. Här är webbresursen för delstatsförkortningar:
+Som tur är går det att ordna. Det finns en annan offentlig datakälla som gör precis detta, men dessa data behöver en del formning innan du kan *kombinera* dem med din tabell för solglasögon.
 
-<https://en.wikipedia.org/wiki/List_of_U.S._state_abbreviations>
+Du importerar data om delstaternas förkortningar till Power Query-redigeraren genom att välja **Ny källa** > **Webb** i gruppen **Ny fråga** på fliken **Start** i menyfliksområdet. 
 
-Från menyfliksområdet **Start** i **Frågeredigeraren**, väljer vi **Hämta Data\> Webb** och skriver in adressen, väljer **Ok** så visar **Navigerings**fönstret vad det fann på den webbplatsen.
+![Ny källa](media/desktop-getting-started/pbi_gettingstartedsplash_resized.png)
 
- ![](media/desktop-getting-started/designer_gsg_usstateabbreviationsnavigator.png)
+I dialogrutan **Från webb** anger du URL:en till webbplatsen för delstaternas förkortningar: *https:\//en.wikipedia.org/wiki/List_of_U.S._state_abbreviations*.
 
-Vi väljer **Tabell [redigera]** eftersom den inkluderar data vi vill ha, men det kommer att krävas en hel del formning innan vi kan reducera tabellens data. Var och en av de här stegen visas också i **[Forma och kombinera Data i Power BI Desktop](desktop-shape-and-combine-data.md)** . För att sammanfatta de här stegen är det här vad vi ska göra:
+I fönstret **Navigatör** väljer du tabellen **Koder och förkortningar för amerikanska delstater, federala distrikt, territorier och andra regioner** och väljer sedan **OK**. Tabellen öppnas i Power Query-redigeraren.
 
-Vi väljer **Redigera**, sedan:
+Ta bort alla kolumner förutom **Regionens namn och status**, **Regionens namn och status2** och **ANSI**. Behåll endast dessa kolumner genom att hålla ned **Ctrl** och markera kolumnerna. Sedan högerklickar du antingen på en av kolumnrubrikerna och väljer **Ta bort andra kolumner** eller går till gruppen **Hantera kolumner** på fliken **Start** och väljer **Ta bort andra kolumner**. 
 
-* *Ta bort de två översta raderna* – de är ett resultat av sättet webbsidans tabell skapades och vi behöver dem inte.
+Klicka på pilen intill kolumnrubriken **Regionens namn och status2** och välj **Filter** > **Är lika med**. I dialogrutan **Filtrera rader** visar du fältet **Ange eller välj ett värde** intill **är lika med** och väljer **Delstat**. 
 
-<!-- -->
+Välj **Eller**. Intill det andra fältet **är lika med** väljer du sedan **Delstat ("Commonwealth")** . Välj **OK**. 
 
-* *Ta bort de understa 26 raderna* – de är territorier som vi inte behöver inkludera.
+![Filtrera rader](media/desktop-getting-started/filterrows.png)
 
-<!-- -->
-* *Filtrera bort Washington DC* – tabellen med pensionsstatistik inkluderar inte DC så vi utesluter den från listan.
+Nu när de extra värdena såsom **Federala distrikt** och **ö** har tagits bort har du en lista över de 50 delstaterna och deras officiella förkortningar med två bokstäver. Du kan byta namn på kolumnerna så att de blir mer begripliga, till exempel **Delstatsnamn**, **Status** och **Förkortning** genom att högerklicka på kolumnrubrikerna och välja **Byt namn**.
 
-<!-- -->
+Observera att alla dessa steg finns under **Tillämpade steg** i fönstret **Frågeinställningar**.
 
-* *Ta bort några kolumner som inte behövs* – vi behöver bara mappningen av delstaten till dess officiella tvåbokstavsförkortning så vi kan ta bort de andra kolumnerna.
+Nu ser den formade tabellen ut så här:
 
-<!-- -->
+![Formad tabell med Delstatskoder](media/desktop-getting-started/statecodes.png)
 
-* *Använd den första raden som rubriker* – eftersom vi har tagit bort de tre översta raderna är den aktuella översta raden vår önskade rubrik.
+Byt namn på tabellens rubrik till *Delstatskoder* i fältet **Egenskaper** i **Frågeinställningar**. 
 
-    >[!NOTE]
-    >Detta är ett bra tillfälle att påpeka att *sekvensen* för de tillämpade stegen i **Frågeredigeraren** är viktig och kan påverka hur data formas. Det är också viktigt att tänka på hur ett steg kan påverka andra efterföljande steg. Om du tar bort ett steg från **Tillämpade steg**, kanske efterföljande steg inte fungerar som avsett på grund av effekten av frågornas ordningsföljd.
+När tabellen **Delstatskoder** har formats kan du *kombinera* dessa två tabeller till en tabell. Eftersom de tabeller du har nu är resultatet av frågor som du har tillämpat på data kallas de även också för *frågor*. Det finns två huvudsakliga sätt att kombinera frågor: *sammanslå* och *lägga till*. 
 
-* *Byt namn på kolumner och själva tabellen* – som vanligt, finns det ett par olika sätt att byta namn på en kolumn, du kan välja det du föredrar.
+När du har en eller flera kolumner som du vill lägga till i en annan fråga kan du *sammanslå* frågorna. När du har ytterligare rader med data som du vill lägga till en befintlig fråga kan du *lägga till* frågan.
 
-Nu när vi har format *StateCodes*-tabellen, kan vi kombinera de här två tabellerna, eller frågorna till en. Eftersom tabellerna vi nu har är ett resultat av de frågor vi tillämpade på data, kallas de ofta för *frågor*.
+I det här fallet vill du *sammanslå* frågan **Delstatskoder** till frågan **De bästa delstaterna för solglasögon**. För att sammanfoga frågorna växlar du till frågan **De bästa delstaterna för solglasögon** genom att välja den i rutan **Frågor** till vänster i Power Query-redigeraren. Välj sedan **Sammanslå frågor** i gruppen **Kombinera** på fliken **Start** i menyfliksområdet.
 
-Det finns två huvudsakliga sätt att kombinera frågor – *sammanslagning* och *bifoga*.
+I fönstret **Sammanslå** visar du fältet för att välja **Delstatskoder** bland de andra tillgängliga frågorna. Markera den kolumn som ska matchas från varje tabell, i det här fallet **Delstat** från frågan **De bästa delstaterna för solglasögon** och **Delstatsnamn** från frågan **Delstatskoder** fråga. 
 
-När du har en eller flera kolumner som du vill lägga till i en annan fråga kan du **sammanfoga** frågorna. När du har ytterligare rader med data som du vill lägga till en befintlig fråga kan du **bifoga** frågan.
+Om dialogrutan **Sekretessnivåer** visas väljer du **Ignorera kontroller av sekretessnivå för den här filen** och sedan **Spara**. Välj **OK**. 
 
-I det här fallet vill vi sammanfoga frågor. För att komma igång, väljer vi frågan som vi vill att den andra frågan ska sammanfogas *till*, därefter väljer vi **sammanfoga frågor** från **Start**-fliken på menyfliksområdet.
+![Sammanslå frågor](media/desktop-getting-started/shapecombine_merge.png)
 
- ![](media/desktop-getting-started/shapecombine_mergequeries.png)
+En ny kolumn med namnet **Delstatskoder** visas till höger om tabellen **De bästa delstaterna för försäljning av solglasögon**. Den innehåller den fråga för delstatskoder som du sammanslog med frågan för de bästa delstaterna för försäljning av solglasögon. Alla kolumner från den sammanslagna tabellen samlas i kolumnen **Delstatskoder**. Du kan *expandera* den sammanslagna tabellen och endast inkludera de kolumner som du vill ha. 
 
-Fönstret **Sammanfoga** visas och ber oss välja vilken tabell som vi vill sammanfoga i den valda tabellen samt vilka matchande kolumner som ska användas för sammanfogningen. Välj *Stat* från *RetirementStats*-tabellen (fråga) och välj därefter *StateCodes*-frågan (enkelt i det här fallet när det bara finns en fråga – när du ansluter till flera datakällor, finns det flera frågor att välja mellan). När vi väljer rätt matchande kolumner – *Delstat* från *RetirementStats*, och *Delstatsnamn* från *StateCodes* – ser **Sammanfognigns**fönstret ut ungefär så här och **Ok**-knappen är aktiverad.
+![Sammanslagen frågekolumn](media/desktop-getting-started/mergedquery.png)
 
- ![](media/desktop-getting-started/shapecombine_merge.png)
+Om du vill expandera den sammanslagna tabellen och välja vilka kolumner som ska inkluderas väljer du ikonen **Expandera** i kolumnrubriken. I dialogrutan **Expandera** väljer du bara kolumnen **Förkortning**. Avmarkera **Använd det ursprungliga kolumnnamnet som prefix** och välj sedan **OK**. 
 
-En **NewColumn** skapas i slutet av frågan, vilket är innehållet för tabellen (frågan) som har sammanfogats med den befintliga frågan. Alla kolumner från den sammanfogade frågan ryms i **NewColumn**, men du kan välja att **Expandera** tabellen och inkludera alla kolumner som du vill. Om du vill expandera den sammanfogade tabellen och välja vilka kolumner som ska ingå, väljer du expandera-ikonen (![](media/desktop-getting-started/gettingstarted_29_expandicon.png)). Fönstret **Expandera** visas.
+![Välja expanderad kolumn från sammanslagen tabell](media/desktop-getting-started/shapecombine_mergeexpand.png)
 
- ![](media/desktop-getting-started/shapecombine_mergeexpand.png)
+> [!NOTE]
+> Du kan prova olika sätt att införa tabellen **Delstatskoder**. Experimentera lite. Om du inte gillar resultatet tar du bara bort det steget från listan **Tillämpade steg** i fönstret **Frågeinställningar**. Det är som en gratis uppfräschning, som du kan upprepa hur många gånger som helst tills du är nöjd med expanderingsprocessen.
 
-I det här fallet är vi bara intresserade av kolumnen *Delstatskod* så vi väljer bara den kolumnen och sedan **OK**. Vi avmarkerar kryssrutan från **Använd ursprungligt kolumnnamn som prefix** eftersom vi vare sig behöver eller vill ha det. Om vi lämnar den markerad, skulle den sammanfogade kolumnen heta *NewColumn.State Code* (det ursprungliga kolumnnamnet, eller *NewColumn*, därefter en punkt, därefter namnet på den kolumn som tas in i frågan).
+En fullständig beskrivning av stegen för att forma och kombinera data finns i [Forma och kombinera data i Power BI Desktop](desktop-shape-and-combine-data.md).
 
->[!NOTE]
->Vill du experimentera med hur du hanterar *NewColumn*-tabellen? Du kan prova dig fram och om du inte gillar resultatet är det bara att ta bort steget från listan **Tillämpade steg** i fönstret **Frågeinställningar**. Din fråga återgår till tillståndet innan du tillämpade steget **Expandera**. Det är som en gratis uppfräschning, som du kan upprepa hur många gånger som helst tills du är nöjd med expanderingsprocessen.
+Nu har du en enda frågetabell där de två datakällor kombineras, och var och en är formad efter dina behov. Den här frågan kan fungera som bas för många intressanta dataanslutningar, till exempel demografi, välståndsnivåer eller rekreationsmöjligheter i delstaterna.
 
-Nu har vi en enskild fråga (tabellen) som kombinerar två datakällor som har formats efter våra behov. Den här frågan kan fungera som bas för många intressanta dataanslutningar – till exempel statistik över bostadskostnader, demografi eller jobbmöjligheter i varje delstat.
+![Formade och kombinerade frågor](media/desktop-getting-started/mergedcolumn.png)
 
-För en fullständig beskrivning av varje steg för att forma och kombinera data, se [Forma och kombinera data i Power BI Desktop](desktop-shape-and-combine-data.md).
+För tillfället har du tillräckligt med data för att skapa en intressant rapport i Power BI Desktop. Eftersom det här är en milstolpe tillämpar du ändringarna i **Power Query-redigeraren** och läser in dem i Power BI Desktop genom att välja **Stäng och tillämpa** på fliken **Start** i menyfliksområdet. Du kan även välja **Tillämpa** för att låta frågan vara öppen i Power Query-redigeraren medan du arbetar i Power BI Desktop. 
 
-För tillfället har vi tillräckligt med data för att skapa några intressanta rapporter, allt i Power BI Desktop. Eftersom det är en milstolpe, sparar vi den här Power BI Desktop-filen – vi kallar den **Komma igång med Power BI Desktop**. Tillämpa ändringarna i **Frågeredigeraren** och läs in dem i Power BI Desktop, genom att välja **Stäng och tillämpa** från **Start**-menyfliksområdet.
+![Stäng och tillämpa ändringarna](media/desktop-getting-started/shapecombine_closeandapply.png)
 
-![](media/desktop-getting-started/shapecombine_closeandapply.png)
+Du kan göra fler ändringar i en tabell när den har lästs in i Power BI Desktop och läsa in modellen igen för att tillämpa de ändringar du gör. Om du vill öppna **Power Query-redigeraren** på nytt från Power BI Desktop väljer du **Redigera frågor** på fliken **Start** i menyfliksområdet i Power BI Desktop. 
 
 ## <a name="build-reports"></a>Skapa rapporter
-Ytterligare ändringar kan göras efter att tabellen har lästs in och du kan ladda om en modell för att tillämpa de ändringar du gör. För tillfället duger det här. Du kan börja bygga rapporter i **rapportvyn** i Power BI Desktop.
+I vyn **Rapport** i Power BI Desktop kan du bygga visualiseringar och rapporter. Vyn **Rapport** innehåller sex huvudområden:
 
-**Rapportvyn** innehåller fem huvudområden:
+![Rapportvy i Power BI Desktop](media/desktop-getting-started/designer_gsg_reportview.png)
 
-1. Menyfliksområdet, där vanliga uppgifter som är associerade med rapporter och visualiseringar visas
-2. **Rapportvyn**, eller arbetsytan, där visualiseringarna skapas och arrangeras
-3. Flikområdet **Sidor** längst ned, där du kan välja eller lägga till en rapportsida
-4. Rutan **Visualiseringar**, där du ändrar visualiseringar, anpassar färger, tillämpar filter, drar fält och mycket annat
-5. Rutan **Fält**, där du kan dra frågeelement och filter till **rapportvyn** eller till området **Filter** i fönstret **Visualiseringar**
-   
-   ![](media/desktop-getting-started/designer_gsg_reportview.png)
+1. Menyfliksområdet längst upp, där vanliga uppgifter som är hör till rapporter och visualiseringar visas.
+2. Arbetsytan i mitten, där visualiseringar skapas och arrangeras.
+3. Sidfliken längst ned, där du kan välja eller lägga till rapportsidor.
+4. Fönstret **Filter**, där du kan filtrera datavisualiseringar.
+5. Fönstret **Visualiseringar**, där du kan lägga till, ändra eller anpassa visualiseringar och tillämpa visning av detaljerad information.
+6. Rutan **Fält**, som visar tillgängliga fält i dina frågor. Du kan dra de här fälten till arbetsytan, fönstret **Filter** eller fönstret **Visualiseringar** för att skapa eller ändra visualiseringar.
 
-Du kan dölja fönstren **Visualiseringar** och **Fält** genom att välja den lilla pilen längs kanten, vilket ger mer utrymme i **rapportvyn** för att skapa snygga visualiseringar. När du modifierar visualiseringar visas även pilar som pekar uppåt eller nedåt, vilket innebär att du kan visa respektive dölja motsvarande avsnitt.
+Du kan expandera och minimera fönstren **Filter**, **Visualiseringar** och **Fält** genom att välja pilarna överst i fönstren. Om du minimerar fönstren skapas mer utrymme på arbetsytan för att bygga häftiga visualiseringar. 
 
- ![](media/desktop-getting-started/designer_gsg_collapsepanes.png)
+![Expandera eller minimera fönster](media/desktop-getting-started/designer_gsg_collapsepanes.png)
 
-Om du vill skapa en visualisering är det bara att dra ett fält från listan **Fält** till **rapportvyn**. I det här fallet drar vi fältet *Delstat* från *RetirementStats* och ser vad som händer.
+Om du vill skapa en enkel visualisering väljer du bara ett fält i fältlistan eller drar fältet från listan **Fält** till arbetsytan. Du kan till exempel dra fältet **Delstat** från **De bästa delstaterna för försäljning av solglasögon** till arbetsytan och se vad som händer.
 
- ![](media/desktop-getting-started/designer_gsg_reportfirstdrag.png)
+![Dra fältet Delstat för att skapa en kartvisualisering](media/desktop-getting-started/designer_gsg_reportfirstdrag.png)
 
-Ser man på... Power BI Desktop har automatiskt skapat en kartabaserad visualisering eftersom programmet registrerade att fältet *Delstat* innehöll geoplatsdata.
+Ser man på! Power BI Desktop registrerade att fältet **Delstat** innehöll geoplatsdata och skapade automatiskt en kartbaserad visualisering. Visualiseringen visar datapunkter för de 40 delstaterna från din datamodell. 
 
-Observera att i rutan **visualiseringar**, kan jag välja olika typer av visualiseringar och i området under ikonerna, kan jag dra fälten till olika områden för att tillämpa en teckenförklaring, eller på annat sätt modifiera visualiseringen.
+Fönstret **Visualiseringar** visar information om visualiseringen och gör att du kan ändra den. 
 
- ![](media/desktop-getting-started/designer_gsg_visualizationtypes.png)
+![Fönstret Visualisering](media/desktop-getting-started/designer_gsg_visualizationtypes.png)
 
-Vi spolar framåt lite och se hur **Rapport**vyn ser ut när en handfull visualiseringar har lagts till, samt några nya rapportsidor. Mer information om rapporter finns i [Rapportvyn i Power BI Desktop](desktop-report-view.md).
+1. Ikonerna visar vilken typ av visualisering som skapats. Du kan ändra typen för en vald visualisering genom att välja en annan ikon eller skapa en ny visualisering genom att välja en ikon utan att någon befintlig visualisering har valts. 
+2. Med alternativet **Fält** i fönstret **Visualisering** kan du dra datafält till **Förklaring** och andra fältbrunnar i fönstret. 
+3. Med alternativet **Format** kan du tillämpa formatering och andra kontroller på visualiseringar. 
 
-Den första sidan i rapporten ger en översikt över data baserat på *Övergripande rangordning*. När vi väljer du något av visualiseringarna, visar **Fält och filter**-rutan vilka fält som är markerade och strukturen för visualiseringen (vilka fält som tillämpas på den **Delade axeln**, **Kolumnvärdena** och **Radvärden**).
+De alternativ som är tillgängliga i områdena **Fält** och **Format** beror på vilken typ av visualisering och data du har.
 
- ![](media/desktop-getting-started/designer_gsg_report1.png)
+Du vill att kartvisualiseringen bara ska visa de tio delstater som har bäst väder. Om du bara vill visa de 10 främsta delstaterna går du till fönstret **Filter**, hovrar över **Delstaten är (Alla)** och expanderar den pil som visas. Under **Filtertyp** öppnar du och väljer **Högsta N**. Under **Visa objekt** väljer du **Lägsta**, eftersom du vill visa objekten med de lägsta numeriska rangordningarna, och anger *10* i nästa fält.
 
-Det finns sex **Sidor** i den här rapporten, varje sida visualiserar olika element av våra data.
+Dra fältet **Väder** från fönstret **Fält** till fältet **Efter värde** och välj **Tillämpa filter**. 
 
-1. Den första sidan som visas ovan, visar alla delstater baserat på *Övergripande rangordning*.
-2. Den andra sidan fokuserar på de översta tio delstaterna baserat på *Övergripande rangordning*.
-3. I den tredje sidan visualiseras de bästa 10 delstaterna för levnadskostnad (och associerade data).
-4. Väder är fokuset för den fjärde sidan, filtrerat till de 15 soligaste delstaterna.
-5. På den femte sidan, mappas och visualiseras samhällets välstånd för de översta 15 delstaterna.
-6. Slutligen visualiseras brottsstatistik och visar de bästa (och sämsta) tio delstaterna.
+![Filtret Topp 10 för väder](media/desktop-getting-started/gsg_share5.png)
 
-Så här ser rapportsidan som fokuserar på levnadskostnader ut.
+Nu visas bara de tio delstaterna med bäst väder i kartvisualiseringen. 
 
- ![](media/desktop-getting-started/designer_gsg_report2costofliving.png)
+Byt namn på visualiseringens rubrik genom att välja ikonen **Format** i fönstret **Visualiseringar** följt av **Rubrik** och skriva *De tio delstaterna med bäst väder* under **Rubriktext**. 
 
-Det finns en massa olika intressanta rapporter och visualiseringar som du kan skapa.
+![Ändra rubrik](media/desktop-getting-started/designer_gsg_report1.png)
+
+Om du vill lägga till en visualisering som visar namnen på de tio delstaterna med bäst väder och deras rangordning från 1 till 10 markerar du ett tomt område på arbetsytan och väljer sedan ikonen **Kolumndiagram** i fönstret **Visualisering**. I fönstret **Fält** väljer du **Delstat** och **Väder**. Ett kolumndiagram visar de 40 delstaterna i frågan rangordnade från högsta till lägsta numeriska rang eller sämst till bäst väder. 
+
+![Visualisering med kolumndiagram](media/desktop-getting-started/gsg_share7.png)
+
+Om du vill växla ordningen på rangordningen så att siffran 1 visas först väljer du ellipsen **Fler alternativ** längst upp till höger i visualiseringen och sedan **Sortera stigande** i menyn. 
+
+![Sortera stigande](media/desktop-getting-started/shapecombine_mergequeries.png)
+
+Om du vill begränsa tabellen till de 10 främsta delstaterna använder du filter för de lägsta tio som du gjorde för kartvisualiseringen. 
+
+Byt namn på visualiseringens rubrik på samma sätt som för kartvisualiseringen. I avsnittet **Format** i fönstret **Visualiseringar** ändrar du även **Y-axel** > **Axelrubrik** från **Väder** till *Väderrangordning* så att den blir lättare att förstå. Sedan växlar du **Y-axel** till **Av** och **Dataetiketter** till **På**. 
+
+Nu visas de tio delstaterna med bäst väder i rangordning tillsammans med sin numeriska rangordning. 
+
+![Avslutade stapeldiagram](media/desktop-getting-started/shapecombine_changetype.png)
+
+Du kan skapa liknande eller andra visualiseringar för fälten **Priser** och **Övergripande rangordning** eller kombinera flera fält till en enda visualisering. Det finns en massa olika intressanta rapporter och visualiseringar som du kan skapa. Dessa visualiseringar för **Tabell** och **Linjediagram och grupperat stående stapeldiagram** visar de tio delstaterna med bäst väder tillsammans med deras priser och övergripande rangordning:
+
+![Visualiseringar av tabell samt linjediagram och grupperat stående diagram](media/desktop-getting-started/designer_gsg_report2costofliving.png)
+
+Du kan visa olika visualiseringar på olika rapportsidor. Om du vill lägga till en ny sida väljer du symbolen **+** intill de befintliga sidorna i sidfältet eller väljer **Infoga** > **Ny sida** på fliken **Start** i menyfliksområdet. Om du vill byta namn på en sida dubbelklickar du på sidans namn i sidfältet eller högerklickar på den och väljer **Byt namn på sida** och skriver sedan det nya namnet. Om du vill gå till en annan sida i rapporten väljer du sidan i sidfältet. 
+
+![Sidfält](media/desktop-getting-started/pages.png)
+
+Du kan lägga till textrutor, bilder och knappar till rapportsidorna från gruppen **Infoga** på fliken **Start**. Om du vill ange formateringsalternativ för visualiseringar väljer du en visualisering och väljer sedan ikonen **Format** i fönstret **Visualiseringar**. Om du vill konfigurera sidstorlekar, bakgrunder och annan sidinformation väljer du ikonen **Format** utan någon visualisering markerad.
+
+När du har skapat sidorna och visualiseringarna väljer du **Arkiv** > **Spara** och sparar rapporten. 
+
+![Slutförd rapportsida i Power BI Desktop](media/desktop-getting-started/finished-report.png)
+
+Mer information om rapporter finns i [Rapportvyn i Power BI Desktop](desktop-report-view.md).
 
 ## <a name="share-your-work"></a>Dela ditt arbete
-Nu när vi har en Power BI Desktop-rapport som är förhållandevis fullständig, kan vi dela den med andra på **Power BI**-tjänsten. Det finns några olika sätt att dela ditt arbete i Power BI Desktop. Du kan publicera det till **Power BI**-tjänsten, du kan överföra .pbix-filen direkt från Power BI-tjänsten, eller så kan du spara .pbix-filen och skicka den vilken annan fil som helst.
+Nu när du har en Power BI Desktop-rapport kan du dela den med andra. Det finns några olika sätt att dela ditt arbete. Du kan distribuera rapportens *.pbix*-fil som med andra filer, ladda upp *.pbix*-filen från Power BI-tjänsten eller publicera direkt från Power BI Desktop till Power BI-tjänsten. Du måste ha ett Power BI-konto för att kunna publicera eller ladda upp rapporter till Power BI-tjänsten. 
 
-Först ska vi titta på hur man publicerar till **Power BI**-tjänsten direkt från Power BI Desktop. På **Start**-menyfliksområdet, väljer du **Publicera**.
+Om du vill publicera till **Power BI-tjänsten** från Power BI Desktop går du till fliken **Start** i menyfliksområdet och väljer **Publicera**.
 
-![](media/desktop-getting-started/gsg_syw_1.png)
+![Välja Publicera](media/desktop-getting-started/gsg_syw_1.png)
 
-Du kanske uppmanas att logga in på Power BI.
+Du uppmanas kanske att logga in på Power BI eller välja ett mål.
 
-![](media/desktop-getting-started/gsg_syw_2.png)
+När publiceringsprocessen är klar visas följande dialogruta:
 
-När du har loggat in och publiceringsprocessen är klar visas följande dialogruta.
+![Power BI – Publiceringen lyckades](media/desktop-getting-started/gsg_syw_3.png)
 
-![](media/desktop-getting-started/gsg_syw_3.png)
+När du väljer länken för att öppna rapporten i Power BI öppnas rapporten på Power BI-plats under **Min arbetsyta** > **Rapporter**. 
 
-När du loggar in på Power BI, ser du den Power BI Desktop-fil som du precis läste in i avsnittet **Instrumentpaneler**, **Rapporter** och **datauppsättningar** av tjänsten.
+Ett annat sätt att dela ditt arbete är att läsa in det från **Power BI**-tjänsten. Gå till *https:\//app.powerbi.com* för att öppna Power BI i en webbläsare. På sidan **Start** i Power BI väljer du **Hämta data** längst ned till vänster för att påbörja processen med att läsa in din Power BI Desktop-rapport.
 
-Ett annat sätt att dela ditt arbete är att läsa in det från **Power BI**-tjänsten. Följande länk öppnar **Power BI**-tjänsten i en webbläsare:
+![Välja Hämta data på Power BI-startsidan](media/desktop-getting-started/pbi_gsg_getdata1.png)
 
-`https://app.powerbi.com`
+På nästa sida väljer du **Hämta** i avsnittet **Filer**.
 
-Välj **Hämta Data** för att starta processen med att läsa in din Power BI Desktop-rapport.
+![Hämta filer](media/desktop-getting-started/pbi_gsg_getdata2.png)
 
- ![](media/desktop-getting-started/pbi_gsg_getdata1.png)
+På nästa sida väljer du **Lokal fil**. Bläddra till och välj din Power BI Desktop *.pbix*-fil följt av **Öppna**. 
 
-Sidan **Hämta Data** visas, där du kan välja var du vill hämta dina data från. I det här fallet, väljer vi **Hämta** från **Filer**-rutan.
+När filen har importerats visas den under **Min arbetsyta** > **Rapporter** i det vänstra fönstret i Power BI-tjänsten.
 
-![](media/desktop-getting-started/pbi_gsg_getdata2.png)
+![Power BI Desktop-fil som importerats till Power BI](media/desktop-getting-started/pbi_gsg_getdata4.png)
 
-**Filer**-vyn visas. I det här fallet väljer vi **Lokal fil**.
+När du väljer filen visas den första sidan i rapporten. Du kan välja olika sidor från flikarna till vänster i rapporten. 
 
-![](media/desktop-getting-started/pbi_gsg_getdata3.png)
+Du kan göra ändringar i en rapport i **Power BI-tjänsten** genom att välja **Fler alternativ** > **Redigera** från rapportarbetsytans överkant. Spara ändringarna genom att välja **Spara en kopia**.
 
-När du väljer filen, överför Power BI filen.
+![Redigera en rapport och spara en kopia](media/desktop-getting-started/gsg_share4.png)
 
-![](media/desktop-getting-started/pbi_gsg_getdata3a.png)
+Det finns en massa olika intressanta visualiseringar som du kan skapa i **Power BI-tjänsten**, som du sedan kan fästa på en *instrumentpanel*. Mer information om instrumentpaneler i **Power BI-tjänsten** finns i [Tips för att designa en utmärkt instrumentpanel](service-dashboards-design-tips.md). Mer information om hur du skapar, delar och modifierar instrumentpaneler finns i [Dela en instrumentpanel](service-share-dashboards.md).
 
-När filen har överförts, kan du välja den från **Rapporter** i den vänstra rutan i Power BI-tjänsten.
+Om du vill dela en rapport eller instrumentpanel väljer du **Dela** längst upp på den öppna rapportsidan eller instrumentpanelen, eller så kan du välja ikonen **Dela** intill rapportens eller instrumentpanelens namn i listorna **Min arbetsyta** > **Rapporter** eller **Min arbetsyta** > **Instrumentpaneler**.
 
-![](media/desktop-getting-started/pbi_gsg_getdata4.png)
+Slutför skärmen **Dela rapport** eller **Dela instrumentpanel** för att skicka ett e-postmeddelande eller hämta en länk för att dela rapporten eller instrumentpanelen med andra. 
 
-**Power BI**-tjänsten visar den första sidan i rapporten. Längst ned på sidan, kan du välja någon av flikarna för att visa den sidan i rapporten.
+![Dela rapport](media/desktop-getting-started/gsg_share6.png)
 
- ![](media/desktop-getting-started/gsg_share4.png)
-
-Du kan göra ändringar i en rapport i **Power BI**-tjänsten genom att välja **Redigera rapport** från rapportarbetsytans överkant.
-
-För att spara din rapport, väljer du **Filen \> Spara som** från tjänsten. Det finns en massa olika intressanta visualiseringar som du kan skapa i **Power BI**-tjänsten från din rapport som du kan fästa på en *Instrumentpanel*. Mer information om instrumentpaneler i **Power BI**-tjänsten<strong>[ finns i Tips för att designa en utmärkt instrumentpanel](service-dashboards-design-tips.md)</strong>.
-
- ![](media/desktop-getting-started/gsg_share5.png)
-
-När du sparat väljer du **Dela**-ikonen från huvudsidan.
-
- ![](media/desktop-getting-started/gsg_share6.png)
-
-Härifrån kan du skicka ett e-postmeddelande till kollegor som du vill dela instrumentpanelen med.
-
- ![](media/desktop-getting-started/gsg_share7.png)
-
-Mer information om hur du skapar, delar och modifierar instrumentpaneler finns i [Dela en instrumentpanel](service-share-dashboards.md).
-
-Det finns alla typer av övertygande datarelaterade kombinationsprogram och visualiseringar som du kan skapa med Power BI Desktop och Power BI-tjänsten. Ta en titt i nästa avsnitt för mer information.
-
-## <a name="diagnostics"></a>Diagnostik
-
-Power BI Desktop stöder anslutning till en diagnostikport. Diagnostikporten gör att andra verktyg kan ansluta och utföra spårningar för att ställa diagnoser. *Det finns inte stöd för att göra ändringar i modellen! Ändringar i modellen kan leda till skador och förlorade data.*
+Det finns många intressanta datarelaterade kombinationer och visualiseringar som du kan skapa med Power BI Desktop och Power BI-tjänsten. 
 
 ## <a name="next-steps"></a>Nästa steg
-Det finns olika typer av saker som du kan göra med Power BI Desktop. Läs följande resurser för mer information om dess möjligheter:
+Power BI Desktop stöder anslutning till en diagnostikport. Diagnostikporten gör att andra verktyg kan ansluta och utföra spårningar i diagnossyfte. Vid användning av diagnostikporten *finns det inte stöd för att göra ändringar i modellen. Ändringar i modellen kan leda till skador och förlorade data.*
 
-* [Frågeöversikt med Power BI Desktop](desktop-query-overview.md)
+Mer information om de många funktionerna i Power BI Desktop finns i följande resurser:
+
+* [Frågeöversikt i Power BI Desktop](desktop-query-overview.md)
 * [Datakällor i Power BI Desktop](desktop-data-sources.md)
-* [Anslut till data i Power BI Desktop](desktop-connect-to-data.md)
-* [Forma och kombinera data i Power BI Desktop](desktop-shape-and-combine-data.md)
+* [Ansluta till data i Power BI Desktop](desktop-connect-to-data.md)
+* [Självstudie: Forma och kombinera data i Power BI Desktop](desktop-shape-and-combine-data.md)
 * [Vanliga frågeuppgifter i Power BI Desktop](desktop-common-query-tasks.md)   

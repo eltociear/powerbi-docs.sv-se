@@ -8,15 +8,15 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 01/16/2018
 ms.author: mshenhav
-ms.openlocfilehash: 22988b08209865e9f1f2c583a30aa40e48c249bc
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 7b0a8b1f8b77ba1ee636bc92bb230b7c51e2935b
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879247"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75219403"
 ---
 # <a name="get-notifications-in-the-power-bi-mobile-apps"></a>Få aviseringar i Power BI-mobilapparna
-Gäller:
+Gäller för:
 
 | ![iPhone](./media/mobile-apps-notification-center/iphone-logo-50-px.png) | ![iPad](./media/mobile-apps-notification-center/ipad-logo-50-px.png) | ![Android-telefon](./media/mobile-apps-notification-center/android-phone-logo-50-px.png) | ![Android-surfplatta](./media/mobile-apps-notification-center/android-tablet-logo-50-px.png) | ![Windows 10](./media/mobile-apps-notification-center/win-10-logo-50-px.png) |
 |:--- |:--- |:--- |:--- |:--- |
@@ -34,27 +34,23 @@ Meddelanden ger dig information som rör din Power BI-användning direkt i Power
    
    ![Meddelandebanderoll](./media/mobile-apps-notification-center/power-bi-mobile-notification-banner.png)
    
-   Eller på en iPad:
-   
-   ![Meddelanden](./media/mobile-apps-notification-center/power-bi-ipad-notifications.png)
-   
+
    Du kan [ändra hur Power BI meddelar dig](mobile-apps-notification-center.md#change-or-turn-off-notifications-on-your-mobile-device).
-2. Om du har fått meddelanden när du loggar in till Power BI på din mobila enhet visas en gul punkt på den globala navigeringsknappen ![meddelandepunkt](./media/mobile-apps-notification-center/power-bi-android-menu-notifications-icon.png) (Android) eller på ikonen **Meddelanden**. 
-   
-   ![Meddelandepunkt](./media/mobile-apps-notification-center/power-bi-windows-10-notifications.png)
-3. Välj meddelandeikonen ![Meddelandeikon](./media/mobile-apps-notification-center/power-bi-windows-10-notification-icon.png) (Windows 10).
+2. Om du har fått meddelanden visas en gul punkt på klockikonen för meddelanden när du loggar in på Power BI på din mobila enhet ![meddelandeklocka](./media/mobile-apps-notification-center/powerbi-alert-tile-notification-icon.png) (iOS och Android) eller på den globala navigeringsknappen ![Meddelandepunkt](./media/mobile-apps-notification-center/power-bi-iphone-alert-global-nav-button.png) (Windows 10-enheter). 
+
+3. Om du vill se meddelanden i Meddelandecenter trycker du på meddelandeklockan ![meddelandeklocka](./media/mobile-apps-notification-center/powerbi-alert-tile-notification-icon.png) (iOS och Android) eller ikonen för Meddelandecenter ![Meddelandeikon](./media/mobile-apps-notification-center/power-bi-windows-10-notification-icon.png) (Windows 10-enheter).
    
     Meddelandena visas med de senaste överst, och olästa meddelanden är markerade. Meddelanden behålls under 90 dagar, såvida du inte tar bort dem eller når maxgränsen på 100.
    
    ![iOS-meddelandelista](./media/mobile-apps-notification-center/power-bi-iphone-notifications-list.png)
-4. Om du vill ignorera en avisering, så tryck på och håll kvar den och välj **Ignorera**.
+4. Om du vill stänga ett meddelande på iOS- och Android-enheter trycker du, håller ned och sveper. På Windows 10-enheter högerklickar du och väljer **Stäng**.
 
 ## <a name="change-or-turn-off-notifications-on-your-mobile-device"></a>Ändra eller stäng av meddelanden på din mobila enhet
 Du kan ändra hur du får meddelanden i Power BI.
 
 1. Gå till **Inställningar** > **Meddelanden** på en iOS-enhet. 
    
-    Gå till **Meddelandeinställningar** på en Android-telefon.
+    På Android-telefoner går du till **Inställningar** > **Meddelanden**.
    
     Gå till **System** > **Meddelanden och åtgärder** i **Inställningar** på en Windows-enhet.
 2. Välj **Power BI** i listan med appar. 

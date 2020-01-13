@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 12/03/2019
-ms.openlocfilehash: 12ecde787bb268190f9b94a2db5992d5840080ac
-ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
+ms.openlocfilehash: 73a6a3d16ae2515af41a3232a37579e18876f38b
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "75002545"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223674"
 ---
 # <a name="submit-a-power-bi-visual-to-appsource-using-seller-dashboard"></a>Skicka ett visuellt objekt för Power BI till AppSource med hjälp av Seller Dashboard
 
@@ -103,7 +103,7 @@ Följ anvisningarna i det här avsnittet om du vill skicka ett visuellt Power BI
     * [Uppfylla kraven](power-bi-custom-visuals-certified.md#certification-requirements)
     * Skicka kodgranskningen
 
-2. Teamet för visuella Power BI-objekt på Microsoft informerar dig när ditt visuella Power BI-objekt har certifierats och lagts till i [listan över certifierade objekt](power-bi-custom-visuals-certified.md#list-of-power-bi-visuals-that-have-been-certified) eller avvisats med en rapport som innehåller fel som ska åtgärdas. Det är utvecklarens ansvar för att kommunicera med Microsoft och för att uppdatera sina certifierade visuella objekt vid behov.
+2. Teamet för visuella Power BI-objekt på Microsoft informerar dig när ditt visuella Power BI-objekt har certifierats och lagts till i [listan över certifierade visuella Power BI-objekt](power-bi-custom-visuals-certified.md#certified-power-bi-visuals) eller avvisats med en rapport som innehåller fel som ska åtgärdas. Det är utvecklarens ansvar för att kommunicera med Microsoft och för att uppdatera sina certifierade visuella objekt vid behov.
 
 ## <a name="tracking-submission-status-and-usage"></a>Spåra sändningsstatus och användning
 
@@ -113,7 +113,7 @@ Därefter kommer du att kunna visa status för ansökan i [appinstrumentpanelen]
 
 ## <a name="certify-your-visual"></a>Godkänn ditt visuella objekt
 
-När du har skapat ditt visuella objekt kan du välja att få ditt visuella objekt [godkänt](../developer/power-bi-custom-visuals-certified.md).
+När du har skapat ditt visuella objekt kan du välja att få det [certifierat](../developer/power-bi-custom-visuals-certified.md).
 
 ## <a name="next-steps"></a>Nästa steg
 

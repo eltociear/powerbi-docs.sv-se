@@ -10,10 +10,10 @@ ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 11/04/2019
 ms.openlocfilehash: 1493f628ce822afa020e300ff7428da059fcc65d
-ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/22/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "74311432"
 ---
 # <a name="tutorial-embed-power-bi-paginated-reports-into-an-application-for-your-customers-preview"></a>Självstudie: Bädda in Power BI:s sidnumrerade rapporter i ett program åt dina kunder (förhandsversion)
@@ -125,7 +125,7 @@ Så här hämtar du **applicationId**:
 
     ![applicationId](media/embed-paginated-reports-for-customers/application-id.png)
 
-### <a name="workspace-id"></a>ID för arbetsyta
+### <a name="workspace-id"></a>Arbetsyte-ID
 
 Fyll i **workspaceId** med (grupp-)GUID för apparbetsytan från Power BI. Du kan få den här informationen från URL:en när du är inloggad i Power BI-tjänsten eller med hjälp av Powershell.
 
@@ -203,7 +203,7 @@ Fyll i informationen om **klientorganisationen** med ditt Azure-klientorganisati
 
 Power BI:s sidnumrerade rapporter kan bäddas in med hjälp av [Power BI REST-API:er](https://docs.microsoft.com/rest/api/power-bi/), men exempelkoderna som beskrivs i den här artikeln görs med **.NET SDK**.
 
-Om du bäddar in Power BI:s sidnumrerade rapporter åt dina kunder i programmet, måste du ha **Azure AD**:s [huvudnamn för tjänsten](embed-service-principal.md) och en [Azure AD-åtkomsttoken](get-azuread-access-token.md#access-token-for-non-power-bi-users-app-owns-data) för ditt Power BI-program, innan du kan göra några anrop till [Power BI REST-API:erna](https://docs.microsoft.com/rest/api/power-bi/).
+Inbäddning av sidnumrerade Power BI-rapporter åt dina kunder i programmet kräver att du har ett **Azure AD**-[tjänsthuvudnamn](embed-service-principal.md) och skaffar en [Azure AD-åtkomsttoken](get-azuread-access-token.md#access-token-for-non-power-bi-users-app-owns-data) för ditt Power BI-program innan du kan göra anrop till [Power BI REST-API:erna](https://docs.microsoft.com/rest/api/power-bi/).
 
 Skapa Power BI-klienten med din **åtkomsttoken** genom att skapa Power BI-klientobjektet som gör att du kan interagera med [Power BI REST-API:erna](https://docs.microsoft.com/rest/api/power-bi/). Du skapar Power BI-klientobjektet genom att omsluta **AccessToken** med ett ***Microsoft.Rest.TokenCredentials***-objekt.
 

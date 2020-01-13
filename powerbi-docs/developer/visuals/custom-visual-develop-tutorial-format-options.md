@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.topic: tutorial
 ms.subservice: powerbi-custom-visuals
 ms.date: 11/21/2018
-ms.openlocfilehash: 4d7f02d9f78eee4cf287e0bb83acb93a7b1b0355
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: f1a1bfc161fe163a4c4680dbcc90e6ad28b80a90
+ms.sourcegitcommit: 0da17de80c9651f9f4474d1abb1bdaaade8808fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74696863"
+ms.lasthandoff: 12/27/2019
+ms.locfileid: "75498496"
 ---
 # <a name="tutorial-adding-formatting-options-to-a-power-bi-visual"></a>Självstudie: Lägga till formateringsalternativ till ett visuellt Power BI-objekt
 
@@ -124,10 +124,12 @@ Du kan lägga till anpassade egenskaper om du vill aktivera möjligheten att kon
 
 8. I filen **visual.ts**
 
-    importerar du `VisualSettings`-klassen
+    importera `VisualSettings`, `VisualObjectInstanceEnumeration` och `EnumerateVisualObjectInstancesOptions`:
 
     ```typescript
     import { VisualSettings } from "./settings";
+    import VisualObjectInstanceEnumeration = powerbi.VisualObjectInstanceEnumeration;
+    import EnumerateVisualObjectInstancesOptions = powerbi.EnumerateVisualObjectInstancesOptions;
     ```
 
     och lägger till följande egenskap i klassen **Visual**:
@@ -218,23 +220,34 @@ Ange egenskapsvärden för det anpassade visualiseringsprojektet, uppdatera ikon
 
     *Visar ett formaterad måttvärde inuti en cirkel*
 
-5. Om du vill kan du ange dina uppgifter i objektet **författare**.
+5. Fyll i **supportUrl** och **gitHubUrl** för det visuella objektet.
 
-6. Spara filen **pbiviz.json**.
+    Exempel:
 
-7. Observera i objektet **tillgångar** att dokumentet definierar en sökväg till en ikon. Ikonen är den bild som visas i fönstret **_Visualiseringar_** . Det måste vara en **PNG**-fil, *20 x 20 pixlar*.
+    ```json
+    {
+        "supportUrl": "https://community.powerbi.com",
+        "gitHubUrl": "https://github.com/microsoft/PowerBI-visuals-circlecard"
+    }
+    ```
 
-8. Kopiera filen icon.png i Utforskaren och ersätt sedan standardfilen i tillgångsmappen genom att klistra in den.
+6. Ange informationen i objektet **author**.
 
-9. Expandera mappen med tillgångar i Utforskaren i Visual Studio Code och välj sedan filen icon.png.
+7. Spara filen **pbiviz.json**.
 
-10. Granska ikonen.
+8. Observera i objektet **tillgångar** att dokumentet definierar en sökväg till en ikon. Ikonen är den bild som visas i fönstret **_Visualiseringar_** . Det måste vara en **PNG**-fil, *20 x 20 pixlar*.
+
+9. Kopiera filen icon.png i Utforskaren och ersätt sedan standardfilen i tillgångsmappen genom att klistra in den.
+
+10. Expandera mappen med tillgångar i Utforskaren i Visual Studio Code och välj sedan filen icon.png.
+
+11. Granska ikonen.
 
     ![Det vill säga fönsterbilden](media/custom-visual-develop-tutorial-format-options/viz-pane-image.png)
 
-11. Se till att alla filer sparas i Visual Studio Code.
+12. Se till att alla filer sparas i Visual Studio Code.
 
-12. Paketera det anpassade visuella objektet i PowerShell genom att ange följande kommando.
+13. Paketera det anpassade visuella objektet i PowerShell genom att ange följande kommando.
 
     ```powershell
     pbiviz package

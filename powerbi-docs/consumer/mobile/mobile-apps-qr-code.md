@@ -1,22 +1,22 @@
 ---
 title: Skanna en QR-kod i Power BI från din mobila enhet
 description: Med QR-koderna i Power BI kan du ansluta vad som helst i verkligheten direkt till relaterad BI-information i Power BI-mobilappen för iPhone- och Android-enheter.
-author: KesemSharabi
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 03/13/2018
-ms.author: mshenhav
-ms.openlocfilehash: ba810bf416a913ddb41ab02c0afe7373e5c107f7
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 12/02/2019
+ms.author: painbar
+ms.openlocfilehash: d28596aae776d9a0087895cae38fc2e8848297b6
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879193"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75218959"
 ---
 # <a name="scan-a-power-bi-qr-code-from-your-mobile-device"></a>Skanna en QR-kod i Power BI från din mobila enhet
-Gäller:
+Gäller för:
 
 | ![iPhone](./media/mobile-apps-qr-code/ios-logo-40-px.png) | ![Android-telefon](././media/mobile-apps-qr-code/android-logo-40-px.png) | ![Android-surfplatta](././media/mobile-apps-qr-code/android-logo-40-px.png) |
 |:--- |:--- |:--- |:--- |
@@ -34,33 +34,38 @@ Om en kollega inte har delat instrumentpanelen eller rapporten med dig, kan du b
 > Du kan också [skanna en QR-kod för en rapport med appen Power BI for Mixed Reality](mobile-mixed-reality-app.md#scan-a-report-qr-code-in-holographic-view).
 
 ## <a name="scan-a-power-bi-qr-code-on-your-iphone-with-the-power-bi-scanner"></a>Skanna en Power BI QR-kod på din iPhone med Power BI-skannern
-1. I Power BI-mobilappen öppnar du den globala navigeringsmenyn ![](media/mobile-apps-qr-code/power-bi-iphone-global-nav-button.png) uppe till vänster. 
-2. Skrolla ned till **Skanner** och markera den. 
-   
-    ![](media/mobile-apps-qr-code/power-bi-iphone-scanner-menu.png)
-3. Du måste godkänna Power BI-appen för att använda kameran om din kamera inte är aktiverad. Det här är ett engångsgodkännande. 
-4. Peka skannern på Power BI QR-koden. 
+
+1. I navigeringsfältet trycker du på **Fler alternativ** (...) och sedan på **Skanner**.
+
+    ![](media/mobile-apps-qr-code/power-bi-scanner.png)
+
+2. Du måste godkänna Power BI-appen för att använda kameran om din kamera inte är aktiverad. Det här är ett engångsgodkännande. 
+ 
+3. Peka skannern på Power BI QR-koden. 
    
     ![](media/mobile-apps-qr-code/power-bi-align-qr-code.png)
-5. Panelen eller rapporten ser ut att hovra över bakgrunden som i en förhöjd verklighet.
+4. Panelen eller rapporten ser ut att hovra över bakgrunden som i en förhöjd verklighet.
    
     ![](media/mobile-apps-qr-code/power-bi-ios-qr-ar-scanner.png)
-6. Tryck på rapporten eller öppna den i fokusläge, eller gå tillbaka till skannern.
+
+5. Tryck på rapporten eller öppna den i fokusläge, eller gå tillbaka till skannern.
 
 ### <a name="scan-a-qr-code-from-an-external-scanner-on-your-iphone"></a>Skanna QR-kod från en extern skanner på din iPhone
 1. Om du har installerat någon skanner på mobiltelefonen, så peka med den mot den relevanta Power BI QR-koden så att du får omedelbar åtkomst till panelen eller rapporten. 
 2. Om du inte har installerat Power BI-appen omdirigeras du till [Apple App Store så att du kan hämta den](https://go.microsoft.com/fwlink/?LinkId=522062) till din iPhone.
 
 ## <a name="scan-a-power-bi-qr-code-on-your-android-device-with-the-power-bi-scanner"></a>Skanna en Power BI QR-kod på din Android-enhet med Power BI-skannern
-1. I Power BI-mobilappen öppnar du den globala navigeringsknappen ![](media/mobile-apps-qr-code/power-bi-android-global-nav-icon.png) i det övre vänstra hörnet. 
-2. Skrolla ned till **QR-skanner** och markera den.
-   
-    ![](media/mobile-apps-qr-code/power-bi-android-scanner-menu.png)
-3. Du måste godkänna Power BI-appen för att använda kameran om din kamera inte är aktiverad. Det här är ett engångsgodkännande. 
-4. Peka skannern på Power BI QR-koden. 
+
+1. I navigeringsfältet trycker du på **Fler alternativ** (...) och sedan på **Skanner**.
+
+    ![](media/mobile-apps-qr-code/power-bi-scanner.png)
+
+2. Du måste godkänna Power BI-appen för att använda kameran om din kamera inte är aktiverad. Det här är ett engångsgodkännande. 
+
+3. Peka skannern på Power BI QR-koden. 
    
     ![](media/mobile-apps-qr-code/pbi_iph_qrscan.png)
-5. Panelen eller rapporten öppnas automatiskt i Power BI.
+4. Panelen eller rapporten öppnas automatiskt i Power BI.
    
     ![](media/mobile-apps-qr-code/power-bi-android-tile.png)
 

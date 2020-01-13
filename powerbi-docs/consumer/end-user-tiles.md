@@ -10,10 +10,10 @@ ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
 ms.openlocfilehash: 92c473b5df6c21509ba32e41d88dd43c265fa3a0
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73861417"
 ---
 # <a name="dashboard-tiles-in-power-bi"></a>Paneler på instrumentpanelen i Power BI
@@ -51,7 +51,7 @@ Behöver du hjälp att förstå de olika byggstenarna i Power BI?  Mer informati
    
     Här kan göra du följande:
    
-   * [Öppna rapporten som användes för att skapa den här panelen ](end-user-reports.md) ![rapportikon](./media/end-user-tiles/chart-icon.jpg)  
+   * [Öppna den rapport som användes för att skapa den här panelen ](end-user-reports.md) ![rapportikon](./media/end-user-tiles/chart-icon.jpg)  
    
    * [Öppna den Frågor och svar-fråga som användes för att skapa panelen ](end-user-reports.md) ![Frågor och svar-ikon](./media/end-user-tiles/qna-icon.png)  
    

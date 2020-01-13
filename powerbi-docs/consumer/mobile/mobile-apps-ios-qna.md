@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 05/05/2018
 ms.author: mshenhav
-ms.openlocfilehash: 34fe1af53a62c5198cc30625d840321c414be8f7
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 6feba420e5bdc25651176be67e6f86f1dafc9ef6
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879384"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75219600"
 ---
 # <a name="qa-virtual-analyst-in-ios-apps---power-bi"></a>Det virtuella analysverktyget Frågor och svar i iOS-appar – Power BI
 
@@ -33,63 +33,26 @@ Om du inte har registrerat dig för Power BI [registrerar du dig för en kostnad
 
 ## <a name="prerequisites"></a>Förutsättningar
 
-### <a name="install-the-power-bi-for-ios-app"></a>Installera Power BI för iOS-appen
-[Ladda ned iOS-appen](https://go.microsoft.com/fwlink/?LinkId=522062 "Ladda ned iPhone-appen") från Apple App Store till din iPad, iPhone eller iPod Touch.
+* **Installera appen Power BI för iOS**: [Ladda ned iOS-appen](https://go.microsoft.com/fwlink/?LinkId=522062) till din iPhone eller iPad.
+Dessa versioner stöder Power BI-appen för iOS:
+    * iPad med iOS 11 eller senare.
+    * iPhone 5 och senare med iOS 11 eller senare.
+* **Ladda ned Exempel på detaljhandelsanalys och Exempel på affärsmöjlighetsanalys**: Det första steget i den här snabbstarten är att ladda ned Exempel på detaljhandelsanalys och Exempel på affärsmöjlighetsanalys i Power BI-tjänsten. [Lär dig hur du laddar ned ett exempel](./mobile-apps-download-samples.md) till ditt Power BI-konto för att komma igång. Se till att välja Exempel på detaljhandelsanalys och Exempel på affärsmöjlighetsanalys.
 
-Dessa versioner stöder Power BI för iOS-appen:
-- iPad med iOS 10 eller senare.
-- iPhone 5 och senare, med iOS 10 eller senare. 
-- iPad med iOS 10 eller senare.
-
-### <a name="download-samples"></a>Hämta exempel
-Det första steget är att hämta exemplen på detaljhandelanalys och affärsmöjlighetsanalys i Power BI-tjänsten.
-
-**Hämta exemplet på detaljhandelanalys**
-
-1. Öppna Power BI-tjänsten (app.powerbi.com) och logga in.
-
-2. I navigeringsfönstret väljer du **Arbetsytor**, **Min arbetsyta**.
-
-3. Längst ned i vänster hörn väljer du **Hämta data**.
-   
-    ![](media/mobile-apps-ios-qna/power-bi-get-data.png)
-
-3. På sidan Hämta data väljer du ikonen **Exempel**.
-   
-   ![](media/mobile-apps-ios-qna/power-bi-samples-icon.png)
-
-4. Välj **Exempel på detaljhandelsanalys**.
- 
-    ![Exempel på detaljhandelsanalys](./media/mobile-apps-ios-qna/power-bi-rs.png)
- 
-8. Välj **Anslut**.  
-  
-   ![Exempel på detaljhandelsanalys](./media/mobile-apps-ios-qna/retail16.png)
-   
-5. Power BI importerar innehållspaketet och lägger till en ny instrumentpanel, rapport och datauppsättning till din aktuella arbetsyta.
-   
-   ![Exempel på detaljhandelsanalys](./media/mobile-apps-ios-qna/power-bi-service-retail-sample.png)
-
-**Hämta exemplet på affärsmöjlighetsanalys**
-
-- Gå igenom samma steg som du gjorde för exemplet på detaljhandelsanalys, men välj **Exempel på affärsmöjlighetsanalys** i steg 4.
-
-    ![Exempel på detaljhandelsanalys](./media/mobile-apps-ios-qna/power-bi-oa.png)
-  
-OK, nu är du redo att visa exemplen på din iOS-enhet.
+När du har slutfört de nödvändiga förutsättningarna är det dags att testa det virtuella analysverktyget Frågor och svar.
 
 ## <a name="try-asking-questions-on-your-iphone-or-ipad"></a>Försök att ställa frågor om din iPhone eller iPad
-1. På din iPhone eller iPad trycker du på den ![globala navigeringsknappen](./media/mobile-apps-ios-qna/power-bi-iphone-global-nav-button.png) > **Arbetsytor** > **Min arbetsyta** och öppnar instrumentpanelen Exempel på detaljhandelsanalys.
+1. I det nedre navigeringsfältet på din iPhone eller iPad trycker du på knappen Arbetsytor ![knappen arbetsytor](./media/mobile-apps-ios-qna/power-bi-iphone-workspaces-button.png), gå till Min arbetsyta och öppna instrumentpanelen Exempel på detaljhandelsanalys.
 
 2. Tryck på ikonen för Frågor och svar ![Ikonen frågor och svar](././media/mobile-apps-ios-qna/power-bi-ios-q-n-a-icon.png) längst ned på sidan (överst på sidan på en iPad).
      Det virtuella analysverktyget Frågor och svar erbjuder några förslag för att komma igång.
-3. Skriv **Visa**, tryck på **Försäljning** från listan över förslag > **Skicka** ![Ikonen Skicka](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
+3. Skriv **visa**, tryck på **försäljning** från listan över förslag > **Skicka** ![Ikonen Skicka](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
 
     ![Visa försäljning](./media/mobile-apps-ios-qna/power-bi-ios-q-n-a-show-sales.png)
-4. Tryck på **av** från nyckelord, tryck **objektet** från listan över förslag > **skicka** ![](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
+4. Tryck på **efter** bland nyckelorden, tryck på **objekt** från listan över förslag > **Skicka** ![](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
 
     ![Försäljning per objekt](./media/mobile-apps-ios-qna/power-bi-ios-q-n-a-sale-by-item.png)
-5. Tryck på **Som** från nyckelord, därefter på kolumndiagramikonen ![](./media/mobile-apps-ios-qna/power-bi-ios-q-n-a-column-chart-icon.png)och sedan på **Skicka** ![](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
+5. Tryck på **som** bland nyckelorden, därefter på ikonen för kolumndiagram ![](./media/mobile-apps-ios-qna/power-bi-ios-q-n-a-column-chart-icon.png) och sedan på **Skicka** ![](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
 6. Tryck och håll kvar på diagrammet som skapas och sedan på **Expandera**.
 
     ![](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-tap-expand-feedback.png)
@@ -99,13 +62,13 @@ OK, nu är du redo att visa exemplen på din iOS-enhet.
     ![](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-expanded-chart.png)
 7. Tryck på pilen i det övre vänstra hörnet att gå tillbaka till chattfönstret för frågor och svar.
 8. Tryck på X till höger i textrutan för att ta bort texten och börja om.
-9. Försök med en ny fråga: Tryck på **topp** bland nyckelorden och därefter på **Försäljning efter genomsnittlig $/enhet ly** > **Skicka**![](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
+9. Försök med en ny fråga: Tryck på **topp** bland nyckelorden och därefter på **försäljning efter genomsnittlig $/enhet ly** > **Skicka** ![](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
 
     ![](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-top-sale-2.png)
-10. Välj **enligt** från nyckelord, tryck på **tid** från listan över förslag längst upp > **Skicka** ![](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
+10. Välj **efter** bland nyckelorden, tryck på **tid** från listan över förslag längst upp > **Skicka** ![](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
 
      ![](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-top-sale-by-time.png)
-11. Skriv **som**, välj raddiagramikonen ![](./media/mobile-apps-ios-qna/power-bi-ios-q-n-a-line-chart-icon.png) från listan över förslag > **Skicka** ![](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
+11. Skriv **som**, välj ikonen för linjediagram ![](./media/mobile-apps-ios-qna/power-bi-ios-q-n-a-line-chart-icon.png) från listan över förslag > **Skicka** ![](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
 
     ![](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-top-sale-as-line.png)
 
@@ -117,7 +80,7 @@ Du kan nu ställa frågor om dina data i mobilappen för Power BI genom att tala
 
     ![](media/mobile-apps-ios-qna/power-bi-ios-qna-mic-on.png)
 
-1. Börja tala när mikrofonikonen är aktiv. Till exempel, säg ”genomsnittligt enhetspris vid tidpunkten” och tryck på **Skicka** ![](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
+1. Börja tala när mikrofonikonen är aktiv. Säg till exempel ”genomsnittligt enhetspris efter tid” och tryck på **Skicka** ![](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
 
     ![](media/mobile-apps-ios-qna/power-bi-ios-qna-speech-complete.png)
 

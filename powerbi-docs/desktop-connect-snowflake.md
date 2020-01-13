@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 2bb44498b6123eadffe86c7eb9bfb93bb0db5e14
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 23d66994e88204f56ee937a4f7887225e48a5e2f
+ms.sourcegitcommit: 4359baa43ca01b179d28ec59f4e61ba8c07ee288
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876406"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75304262"
 ---
 # <a name="connect-to-snowflake-in-power-bi-desktop"></a>Ansluta till Snowflake i Power BI Desktop
 I Power BI Desktop kan du ansluta till en **Snowflake**-databas och använda underliggande data precis som andra datakällor i Power BI Desktop. 
@@ -42,9 +42,14 @@ När du uppmanas, ange ditt användarnamn och lösenord.
 > 
 > 
 
+Om du vill använda alternativet för Microsoft-konto kan du be din Snowflake-administratör att kontakta Snowflake om att gå med i den privata förhandsversionen för den här funktionen.
+
+![Autentiseringstyp för Microsoft-konto i Snowflake.](media/desktop-connect-snowflake/connect-snowflake-6.png)
+
+
 När du har anslutit, visas ett **navigator**-fönster som visar data som är tillgängliga på servern, där du kan välja ett eller flera element att importera och använda i **Power BI Desktop**.
 
-![](media/desktop-connect-snowflake/connect_snowflake_5.png)
+![ODBC-fel 28000 orsakar ett fel vid anslutning.](media/desktop-connect-snowflake/connect_snowflake_5.png)
 
 Du kan **Hämta** den markerade tabellen, vilket öppnar hela tabellen i **Power BI Desktop**, eller så kan du **Redigera** frågan, vilket öppnar **frågeredigeraren** så att du kan filtrera och begränsa uppsättningen av data som du vill använda och läsa in en förfinad datauppsättning till **Power BI Desktop**.
 

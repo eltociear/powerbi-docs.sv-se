@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/25/2019
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: 18062c770b93bcd1295026d841f923a81c11d84f
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 7aa0fb1c8707c18e583d0de6bbd602ef43291146
+ms.sourcegitcommit: d5de66b591c2e1de979ce0e3ce5e5b6e1f2a08db
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73851239"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548495"
 ---
 # <a name="using-microsoft-cloud-app-security-controls-in-power-bi-preview"></a>Använda Microsoft Cloud App Security-kontroller i Power BI (förhandsversion)
 
@@ -77,10 +77,11 @@ Du kan konfigurera inställningar för de här identifieringarna i Cloud App Sec
 Det skapas en ny roll för Power BI-administratörer när du använder Microsoft Cloud App Security med Power BI. När du loggar in som Power BI-administratör i [Cloud App Security-portalen](https://portal.cloudappsecurity.com/) har du begränsad åtkomst till data, varningar, riskanvändare, aktivitetsloggar och annan information som är relevant för Power BI.
 
 ## <a name="considerations-and-limitations"></a>Överväganden och begränsningar 
-Syftet med att använda Cloud App Security med Power BI är att du ska kunna skydda organisationens innehåll och data, med hjälp av identifieringar som övervakar användarnas sessioner och aktiviteter. När du använder Cloud App Security med Power BI finns det några begränsningar du bör ha i åtanke:
+Syftet med att använda Cloud App Security med Power BI är att du ska kunna skydda organisationens innehåll och data, med hjälp av identifieringar som övervakar användarnas sessioner och aktiviteter. När du använder Cloud App Security med Power BI finns det några överväganden och begränsningar som du bör ha i åtanke:
 
 * Microsoft Cloud App Security fungerar bara för Excel-, PowerPoint- och PDF-filer.
 * Om du vill använda känslighetsetiketter i dina sessionspolicyer för Power BI måste du ha en Premium P1- eller Premium P2-licens för Azure Information Protection. Du kan antingen köpa Microsoft Azure Information Protection separat eller via något av Microsofts licenspaket. Läs mer i [Prissättning för Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection/). Dessutom måste känslighetsetiketter ha tillämpats på dina Power BI-tillgångar.
+* Sessionskontroll är tillgänglig för alla webbläsare på alla större plattformar i alla operativsystem. Vi rekommenderar att du använder Internet Explorer 11, Microsoft Edge (senaste), Google Chrome (senaste), Mozilla Firefox (senaste) eller Apple Safari (senaste). Offentliga API-anrop i Power BI och andra icke-webbläsarbaserade sessioner stöds inte som en del av sessionskontroll för Microsoft Cloud App Security. [Se mer information](https://docs.microsoft.com/cloud-app-security/proxy-intro-aad#supported-apps-and-clients).
 
 > [!CAUTION]
 > * Policyn för *innehållsgranskning* i Microsoft Cloud App Security är för närvarande inte tillgänglig i Power BI när du tillämpar en policy för Excel-filer, så ställ inte in den här policyn för Power BI.

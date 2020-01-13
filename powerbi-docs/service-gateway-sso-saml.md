@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 10/10/2019
 LocalizationGroup: Gateways
 ms.openlocfilehash: bbb0584843f79445c4e5cca073f9c4b953d346aa
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/02/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "74699370"
 ---
 # <a name="use-security-assertion-markup-language-saml-for-sso-from-power-bi-to-on-premises-data-sources"></a>Använda Security Assertion Markup Language (SAML) för enkel inloggning från Power BI till lokala datakällor
@@ -68,7 +68,7 @@ Följande steg beskriver hur du etablerar en förtroenderelation mellan en HANA-
 
 Importera IdP:ns certifikat till HANA Studio för att skapa en ny SAML-identitetsprovider:
 
-1. I SAP HANA Studio högerklickar du på din SAP HANA-server och navigerar sedan till **Säkerhet** &gt; **Open Security Console (Öppna säkerhetskonsol)** &gt; **SAML Identity Provider (SAML-identitetsprovider)** &gt; **OpenSSL Cryptographic Library (Kryptografiskt bibliotek för OpenSSL)** .
+1. I SAP HANA Studio högerklickar du på din SAP HANA-server och går till **Security** (Säkerhet) &gt; **Open Security Console** (Öppna säkerhetskonsolen) &gt; **SAML Identity Provider** (SAML-identitetsprovider) &gt; **OpenSSL Cryptographic Library** (Kryptografiskt bibliotek för OpenSSL).
 
     ![Identitetsprovidrar](media/service-gateway-sso-saml/identity-providers.png)
 
@@ -126,7 +126,7 @@ Nu när du har konfigurerat gatewayens certifikat och identitet konverterar du c
 
     1. Expandera **Certifikat** &gt; **Personligt** &gt; **Certifikat** och leta upp certifikatet.
 
-    1. Högerklicka på certifikatet och navigera till **Alla uppgifter** &gt; **Hantera privata nycklar**.
+    1. Högerklicka på certifikatet och gå till **Alla uppgifter** &gt; **Hantera privata nycklar**.
 
         ![Hantera privata nycklar](media/service-gateway-sso-saml/manage-private-keys.png)
 

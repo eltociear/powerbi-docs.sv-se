@@ -1,19 +1,19 @@
 ---
 title: Utforska rapporter i Power BI-mobilappar
 description: Läs mer om att visa och interagera med rapporter i Power BI-mobilappar på din telefon eller surfplatta. Du skapar rapporter i Power BI-tjänsten eller Power BI Desktop och interagerar med dem i mobilapparna.
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 08/09/2019
-ms.author: mshenhav
-ms.openlocfilehash: d4b9a9aeda00dd7f16690d1e92336f5b63adf1da
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 12/16/2019
+ms.author: painbar
+ms.openlocfilehash: bb54a4e403f2cc12800d0c97e44308f7ad5c5f65
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73869765"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75220764"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Utforska rapporter i Power BI-mobilappar
 Gäller:
@@ -96,29 +96,43 @@ Från rapportens sidfot kan du utföra flera åtgärder på den aktuella rapport
 ![Rapportens sidfot](./media/mobile-reports-in-the-mobile-apps/report-footer.png)
 
 De åtgärder som du kan utföra från sidfoten är:
-- Återställa rapportfiltret och korsmarkera urvalet tillbaka till ursprungligt läge.
-- Öppna konversationsfönstret för att se eller lägga till kommentarer om rapporten.
-- Öppna filterfönstret för att se eller ändra det filter som för närvarande tillämpas på rapporten.
-- Skapa en lista med alla sidor i rapporten. När du trycker på sidnamnet läses den sidan in och visas.
+* Återställa rapportfiltret och korsmarkera urvalet tillbaka till ursprungligt läge.
+* Öppna konversationsfönstret för att se eller lägga till kommentarer om rapporten.
+* Öppna filterfönstret för att se eller ändra det filter som för närvarande tillämpas på rapporten.
+* Skapa en lista med alla sidor i rapporten. När du trycker på sidnamnet läses den sidan in och visas.
 Du kan flytta mellan rapportsidor genom att svepa från kanten av skärmen till mitten.
-- Visa alla rapportåtgärder.
+* Visa alla rapportåtgärder.
 
 #### <a name="all-report-actions"></a>Alla rapportåtgärder
 När du trycker på **Fler alternativ** (...) i rapportens sidfot ser du alla åtgärder som du kan utföra i en rapport:
 
 
-![Alla rapportåtgärder](./media/mobile-reports-in-the-mobile-apps/report-all-actions.png)
+![Alla rapportåtgärder](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-all-actions.png)
 
 Vissa av åtgärderna kan vara inaktiverade eftersom de är beroende av de specifika rapportfunktionerna.
 Till exempel:
+
+**Bokmärken** finns bara om [bokmärken](mobile-reports-in-the-mobile-apps.md#bookmarks) har angetts i rapporten. Både personliga bokmärken som du kan definiera i Power BI-tjänsten och bokmärken som definieras av rapportens skapare visas. Om ett av bokmärkena har definierats som standardbokmärke öppnas rapporten till den vyn när den läses in.
+
+**Anteckna och dela** kan vara inaktiverat om det finns en [Intune-skyddsprincip](https://docs.microsoft.com/intune/app-protection-policies) i din organisation som förbjuder delning från Power BI-mobilappen.
+
+**Bjud in** är endast aktiverat om du har behörighet att dela rapporten med andra. Du får bara behörighet om du är ägare till rapporten eller om du har fått behörighet att dela vidare av ägaren.
 
 **Filtrera efter aktuell plats** är aktiverat om rapportens författare har kategoriserat rapporten med geografiska data. Mer information finns i avsnittet om att [identifiera geografiska data i en rapport](https://docs.microsoft.com/power-bi/desktop-mobile-geofiltering).
 
 **Genomsök för att filtrera rapporten efter streckkod** är endast aktiverat om datamängden i rapporten har taggats som **Streckkod**. Mer information finns i artikeln om att [tagga streckkoder i Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-mobile-barcodes).
 
-**Bjud in** är endast aktiverat om du har behörighet att dela rapporten med andra. Du får bara behörighet om du är ägare till rapporten eller om du har fått behörighet att dela vidare av ägaren.
+### <a name="bookmarks"></a>Bokmärken
 
-**Anteckna och dela** kan vara inaktiverat om det finns en [Intune-skyddsprincip](https://docs.microsoft.com/intune/app-protection-policies) i din organisation som förbjuder delning från Power BI-mobilappen.
+Power BI-mobilappen stöder både rapportbokmärken som rapportens skapare har definierat och personliga bokmärken som du kan definiera i Power BI-tjänsten. Bokmärkesmenyn finns under **Fler alternativ** (...) i [verktygsfältet för rapportåtgärder](mobile-reports-in-the-mobile-apps.md#all-report-actions).
+
+![bokmärkesmeny](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-bookmark-menu.png)
+
+När en bokmärkesvy för en rapport är öppen visas namnet på det bokmärket överst i rapporten.
+
+![bokmärkesvy](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-bookmark-title.png)
+
+[Läs mer om bokmärken i Power BI-tjänsten](https://docs.microsoft.com/power-bi/consumer/end-user-bookmarks).
 
 ## <a name="next-steps"></a>Nästa steg
 * [Visa och interagera med Power BI-rapporter som är optimerade för din telefon](mobile-apps-view-phone-report.md)

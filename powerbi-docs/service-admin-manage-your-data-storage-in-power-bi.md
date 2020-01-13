@@ -11,10 +11,10 @@ ms.date: 12/21/2018
 ms.author: maggies
 LocalizationGroup: Administration
 ms.openlocfilehash: f8e7240b34e20a3d18443cadb5265c5d0d870790
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73873666"
 ---
 # <a name="manage-data-storage-in-power-bi-workspaces"></a>Hantera datalagring i Power BI-arbetsytor
@@ -48,7 +48,7 @@ Se hur mycket lagringsutrymme du använder i ditt Power BI-konto och hantera dit
 1. Om du vill hantera din lagring, så gå till **Min arbetsyta** i navigeringsfönstret.
    
     ![Min arbetsyta](media/service-admin-manage-your-data-storage-in-power-bi/pbi_myworkspace.png)
-2. Välj kugghjulsikonen ![Kugghjulsikon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png) i det övre högra hörnet \>  **hantera personlig lagring**.
+2. Välj kugghjulsikonen ![Kugghjulsikon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png) i det övre högra hörnet \> **Hantera personlig lagring**.
    
     Det översta fältet visar hur mycket av din lagringsgräns som du har använt.
    
@@ -63,10 +63,10 @@ Se hur mycket lagringsutrymme du använder i ditt Power BI-konto och hantera dit
 Tänk på att du eller någon annan kan ha rapporter och instrumentpaneler baserade på en datauppsättning. Om du tar bort datauppsättningen, fungerar dessa rapporter och instrumentpaneler inte längre.
 
 ## <a name="manage-your-workspace"></a>Hantera din arbetsyta
-1. Välj pilen bredvid **Arbetsytor** \> välj namnet på arbetsytan.
+1. Välj pilen intill **Arbetsytor** \> välj namnet på arbetsytan.
    
     ![Välj en arbetsyta](media/service-admin-manage-your-data-storage-in-power-bi/pbi_groupworkspaces.png)
-2. Välj kugghjulsikonen ![Kugghjulsikon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png) i det övre högra hörnet \>  **hantera grupplagring**.
+2. Välj kugghjulsikonen ![Kugghjulsikon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png) i det övre högra hörnet \>  **Hantera grupplagring**.
    
     Det översta fältet visar hur mycket av din lagringsgräns som du har använt.
    

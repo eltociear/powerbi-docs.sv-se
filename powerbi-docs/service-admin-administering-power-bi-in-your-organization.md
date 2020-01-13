@@ -9,12 +9,12 @@ ms.topic: overview
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: dced3d2bfe844e857556386fb208395faab3fd8b
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 57819765b156baac2a86b8144e86770a0117adfd
+ms.sourcegitcommit: d5de66b591c2e1de979ce0e3ce5e5b6e1f2a08db
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74698979"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548582"
 ---
 # <a name="what-is-power-bi-administration"></a>Vad är Power BI-administration?
 
@@ -61,7 +61,7 @@ Administratörer utför många uppgifter till stöd för Power BI-klienten för 
 | Säkra kompatibilitet med interna policyer, lagar och förordningar | <ul><li>Hantera klassificering av affärsdata<br><li>Bidra till att genomdriva innehållspublicering och delningsprinciper</ul>|
 | Hantera Power BI-resurser |<ul><li>Hantera arbetsytor<br><li>Publicera anpassade visuella objekt<br><li>Kontrollera koder som används för att bädda in Power BI i andra program|
 | Ge hjälp och support till klientanvändare |<ul><li>Felsöka dataåtkomst och andra problem</ul>|
-| Andra uppgifter |<ul><li>Distribuera Power BI Desktop, t.ex. med System Center Configuration Manager<br><li>Hantera distribution av Power BI-mobilappen med Intune<br><li>Hantera datasekretess och säkerhet, till exempel källdatasäkerhet</ul>|
+| Andra uppgifter |<ul><li>Distribuera Power BI Desktop, till exempel med hjälp av Microsoft Endpoint Configuration Manager<br><li>Hantera distribution av Power BI-mobilappen med Intune<br><li>Hantera datasekretess och säkerhet, till exempel källdatasäkerhet</ul>|
 
 ## <a name="administrative-tools"></a>Administrativa verktyg
 

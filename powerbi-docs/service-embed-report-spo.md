@@ -1,21 +1,21 @@
 ---
 title: Bädda in med rapportwebbdel i SharePoint Online
 description: Med den nya rapportwebbdelen för SharePoint Online i Power BI kan du enkelt bädda in interaktiva Power BI-rapporter i SharePoint Online-sidor.
-author: rkarlin
-ms.author: rkarlin
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 05/16/2019
-ms.openlocfilehash: e44ea4174545715a689b4f4370516cbbab4a593b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 12/18/2019
+ms.openlocfilehash: d1ac9238e361a0889e52838eb0b3c3889c1cccf7
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73881889"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75221722"
 ---
 # <a name="embed-with-report-web-part-in-sharepoint-online"></a>Bädda in med rapportwebbdel i SharePoint Online
 
@@ -29,6 +29,7 @@ För att rapporter med **Bädda in i SharePoint Online** ska fungera krävs föl
 
 * En Power BI Pro-licens eller en [Power BI Premium-kapacitet (EM eller P SKU)](service-premium-what-is.md) med en Power BI-licens.
 * Power BI-webbdelen för SharePoint Online kräver [moderna sidor](https://support.office.com/article/Allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b).
+* För att kunna använda en inbäddad rapport måste användare logga in på Power BI-tjänsten och aktivera sin Power BI-licens.
 
 ## <a name="embed-your-report"></a>Bädda in rapporten
 För att bädda in rapporten i SharePoint Online behöver du hämta rapport-URL:en och använda den med Power BI-webbdelen i SharePoint Online.
@@ -140,7 +141,7 @@ Kontakta ägaren av SharePoint Online-sidan för att hjälpa dig att lösa probl
 
 ## <a name="licensing"></a>Licensiering
 
-Användare som visar en rapport i SharePoint måste antingen ha en **Power BI Pro-licens** eller så måste innehållet finnas på en arbetsyta som är i en  **[Power BI Premium-kapacitet (EM eller P SKU)](service-admin-premium-purchase.md)** .
+Användare som visar en rapport i SharePoint måste antingen ha en **Power BI Pro-licens** eller så måste innehållet finnas på en arbetsyta som är i en **[Power BI Premium-kapacitet (EM eller P SKU)](service-admin-premium-purchase.md)** .
 
 ## <a name="known-issues-and-limitations"></a>Kända problem och begränsningar
 

@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/17/2019
+ms.date: 12/10/2019
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 6e64ab2730b73339d6d22ba356cce6e644af52c5
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 48efc58c7428961b70fb31a96f404139a75a1ac3
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73861850"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75217918"
 ---
 # <a name="change-the-display-of-a-report-page"></a>Ändra visning av en rapportsida
 
@@ -52,6 +52,26 @@ Alternativen på menyn **Visa** ger dig flexibilitet att visa rapportsidor med d
     ![rapport visad i helskärm](media/end-user-report-view/power-bi-full-screen.png)
 
 När du avslutar rapporten sparas inte dina **visningsinställningar**, utan de återgår till standardinställningarna. Använd [Bokmärken](end-user-bookmarks.md) om du vill spara inställningarna.
+
+## <a name="use-your-browser-to-change-page-display"></a>Använda webbläsaren för att ändra sidvisning
+
+Zoomningskontrollerna i webbläsaren ökar och minskar det tillgängliga arbetsområdet. Om du minskar zoomningen expanderas det tillgängliga arbetsområdet och vice versa. 
+
+![kort video som visar webbläsarens zoomningskontroller](media/end-user-report-view/power-bi-zoom.png)
+
+Att ändra storlek på hela webbläsaren är ett annat sätt att ändra visningsstorleken för rapporten. 
+
+![kort video som visar byte av webbläsarens storlek](media/end-user-report-view/power-bi-resize-browser.gif)
+
+## <a name="zoom-in-on-a-visual"></a>Zooma in på ett visuellt objekt
+Ibland är det svårt att se information i ett visuellt objekt. Du kan göra så att det visuella objektet visas större och fristående. Mer information finns i [Fokusläge och Helskärmsläge](end-user-focus.md)
+
+### <a name="a-visual-in-focus-mode"></a>Ett visuellt objekt i *Fokusläge*
+
+![Skärmbild av ett visuellt objekt som är öppet i fokusläge.](media/end-user-report-view/power-bi-focus.png)
+
+### <a name="a-visual-in-full-screen-mode"></a>Ett visuellt objekt i *Helskärmsläge*
+![Skärmbild av ett visuellt objekt som är öppet i helskärmsläge.](media/end-user-report-view/power-bi-full-screen.png)
 
 ## <a name="next-steps"></a>Nästa steg
 

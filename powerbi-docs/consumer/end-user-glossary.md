@@ -2,19 +2,18 @@
 title: Ordlista för Power BI-användare
 description: Power BI innehåller många nya termer och en del befintliga termer används på nya sätt. Använd vår ordlista för att bekanta dig med Power BI-terminologin.
 services: power-bi
-ms.custom: seodec18
 author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/04/2019
+ms.date: 12/18/2019
 ms.author: mihart
-ms.openlocfilehash: 8c7a0463e8a521482a1aab6a53ae9656585a7849
-ms.sourcegitcommit: fe9253a6021b9e198afa28aa9c670c3bacf59674
+ms.openlocfilehash: 046f35613e5fe748e93389fbe10a77af08f449e3
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74548542"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75303912"
 ---
 # <a name="glossary-for-power-bi-service"></a>Ordlista för Power BI-tjänsten
 Power BI-tjänsten kan introducera terminologi som du kanske inte är bekant med eller förstår. Ordlistan är ett bra ställe att leta upp terminologi. Om du vill kan du lägga till den som ett bokmärke. En annan bra resurs om du vill lära dig mer om byggstenarna bakom Power BI-tjänsten är [Grundläggande begrepp](end-user-basic-concepts.md). Grundläggande begrepp ger en översikt över de olika *delarna* i Power BI och hur de hänger ihop.
@@ -76,7 +75,9 @@ Den här ordlista är ett community-arbete.  Saknar du något ord? Be oss att l�
 
 **content view (innehållsvy)**
 
-**cross filter, cross highlight (korsfilter, korsmarkering)**
+**korsfilter** Gäller för interaktioner mellan visuella objekt. Korsfiltrering tar bort data som inte är aktuella. Om du till exempel väljer **Måttlighet** i ringdiagrammet korsfiltreras linjediagrammet. Linjediagrammet visar nu endast datapunkter som gäller för segmentet Måttlighet.
+
+**korsmarkering** Gäller för interaktioner mellan visuella objekt. Korsmarkering behåller alla ursprungliga datapunkter men tonar ned den del som inte gäller för ditt val. Om du till exempel väljer **Måttlighet** i ringdiagrammet korsmarkeras kolumndiagrammet. Kolumndiagrammet tonar ned alla data som inte gäller för segmentet Måttlighet och markerar i stället alla data som gäller för det segmentet.
 
 **custom visual (anpassat visuellt objekt)** Visuella objekt som skapas av communityn och Microsoft. De kan hämtas från Office Store för användning i Power BI-rapporter.
 
@@ -95,7 +96,7 @@ Den här ordlista är ett community-arbete.  Saknar du något ord? Be oss att l�
 
 **dedicated capacity (dedikerad kapacitet)** [Power BI Premium] Datamodeller som körs på dedikerad maskinvara i Microsofts molndatacenter för att säkerställa konsekventa prestanda i stor skala. BI-lösningar levereras till hela organisationen oavsett Power BI-licens.
 
-**Desktop** Första instans: Power BI Desktop, efterföljande omnämnanden: Desktop
+**Desktop** Första instans: Power BI Desktop, efterföljande omnämnanden: Skrivbord
 
 
 **diamond (romb)** Power BI Premium. Formen på den ikon som indikerar att en arbetsyta är en arbetsyta för Premium-kapacitet.
@@ -310,6 +311,8 @@ Power BI-instrumentpaneler innehålla rapportpaneler.
 **value, values (värde, värden)** Numeriska data som ska visualiseras.
 
 **visual, visualization (visuellt objekt, visualisering)** Ett diagram. Exempel på visuella objekt är: liggande diagram, trädkarta, ringdiagram och karta.
+
+**Interaktion mellan visuella objekt** En av de viktigaste funktionerna i Power BI är det sätt på vilket alla visuella objekt på en rapportsida är sammankopplade. Om du väljer en datapunkt på ett av de visuella objekten kan alla andra visuella objekt på sidan som innehåller dessa data ändras, baserat på det valet.
 
 **Visualizations pane (visualiseringsfönster)** Namnet på visualiseringsmallarna som levereras med den delade rapportarbetsytan i Power BI Desktop och Power BI-tjänsten. Innehåller små mallar, även kallade ikoner, för varje inbyggd visualiseringstyp.  
 

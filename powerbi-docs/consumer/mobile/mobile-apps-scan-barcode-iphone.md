@@ -1,19 +1,19 @@
 ---
 title: Skanna en streckkod från Power BI-mobilappen
 description: Skanna streckkoder ute i världen och gå direkt till filtrerad BI-information i Power BI-mobilappen.
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 10/13/2017
-ms.author: mshenhav
-ms.openlocfilehash: bbc787203293fc6c9075400abf674345710faaed
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 12/02/2019
+ms.author: painbar
+ms.openlocfilehash: ee3cfec0c735ad52f9a036e75f61c1ab0400567b
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879182"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75217832"
 ---
 # <a name="scan-a-barcode-with-your-device-from-the-power-bi-mobile-app"></a>Skanna en streckkod med din enhet från Power BI-mobilappen
 Skanna streckkoder ute i världen och gå direkt till filtrerad BI-information i Power BI-mobilappen.
@@ -32,15 +32,13 @@ Anta att en kollega har [taggat ett streckkodsfält i en rapport i Power BI Desk
 När du då skannar en produktstreckkod med skannern i Power BI-appen på din enhet, ser du rapporten (eller listan med rapporter) med den streckkoden. Du kan öppna rapporten, filtrerat till den streckkoden.
 
 ## <a name="scan-a-barcode-with-the-power-bi-scanner"></a>Skanna en streckkod med Power BI-skannern
-1. I Power BI-mobilappen öppnar du den huvudsakliga navigeringsmenyn ![](media/mobile-apps-scan-barcode-iphone/pbi_iph_navmenu.png) i det övre vänstra hörnet. 
-2. Skrolla ned till **skanner** och välj den. 
-   
+1. I navigeringsfältet trycker du på **Fler alternativ** (...) och sedan på **Skanner**.
+
     ![](media/mobile-apps-scan-barcode-iphone/power-bi-scanner.png)
-3. Du måste godkänna Power BI-appen för att använda kameran om din kamera inte är aktiverad. Det här är ett engångsgodkännande. 
-4. Peka skannern på en streckkod på en produkt. 
-   
-    Du får upp en lista över rapporter som är associerade med den streckkoden.
-5. Tryck på rapportnamnet för att öppna den på din enhet, automatiskt filtrerat till den streckkoden.
+
+2. Du måste godkänna Power BI-appen för att använda kameran om din kamera inte är aktiverad. Det här är ett engångsgodkännande. 
+4. Peka skannern på en streckkod på en produkt. Du får upp en lista över rapporter som är associerade med den streckkoden.
+5. Tryck på rapportnamnet för att öppna den på din enhet, automatiskt filtrerad enligt den streckkoden.
 
 ## <a name="filter-by-other-barcodes-while-in-a-report"></a>Filtrera efter andra streckkoder i en rapport
 När du tittar på en rapport som filtreras efter en streckkod på din enhet kanske du vill filtrera samma rapport efter en annan streckkod.

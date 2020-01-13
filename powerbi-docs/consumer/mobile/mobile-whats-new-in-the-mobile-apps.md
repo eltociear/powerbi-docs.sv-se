@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 11/12/2019
+ms.date: 12/16/2019
 ms.author: painbar
-ms.openlocfilehash: c188f2b00447ff9f97059e81e7945f67e3170c6d
-ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
+ms.openlocfilehash: 44fcfdbaa51b85b191ff1452c66daee7da0360f8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74010021"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75220528"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nyheter i Power BI-mobilapparna
 Relaterad information om nyheter finns i:
@@ -21,6 +21,20 @@ Relaterad information om nyheter finns i:
 * [Power BI-teambloggen för mobilappar](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Nyheter i Power BI Desktop](../../desktop-latest-update.md)  
 * [Nyheter i Power BI-tjänsten](../../service-whats-new.md)  
+
+## <a name="november-2019"></a>November 2019
+
+### <a name="power-bi-apps-new-look-is-now-on-by-default"></a>Power BI-appens nya utseende är nu aktiverat som standard
+ 
+När du nu öppnar appen aktiveras det nya utseendet och navigeringsfälten automatiskt så att du enklare kan hitta och öppna innehåll. Använd appens [startsida](mobile-apps-home-page.md) som startpunkt – du får snabb åtkomst till ditt viktigaste innehåll samt ett [aktivitetsflöde](mobile-apps-home-page.md#activity-feed) som håller dig uppdaterad med alla dina senaste aviseringar, meddelanden och mer.
+
+### <a name="see-all-your-latest-power-bi-activity"></a>Visa all din senaste Power BI-aktivitet
+ 
+Med aktivitetsflödet kan du hålla koll på vad som händer med ditt Power BI-innehåll i realtid. Gå bara till appens startsida och öppna fliken Aktivitet för att visa alla dina senaste meddelanden, aviseringar, kommentarer, @mentions och mer. [Läs mer](mobile-apps-home-page.md#activity-feed).
+
+### <a name="use-bookmarks-in-your-reports"></a>Använda bokmärken i dina rapporter
+
+Power BI-mobilappen stöder nu bokmärken som skapats i Power BI. När du öppnar appen kan du dra nytta av bokmärken som skapats av rapportförfattaren och eventuella personliga bokmärken som du själv har skapat. [Läs mer](mobile-reports-in-the-mobile-apps.md#bookmarks).
 
 ## <a name="october-2019"></a>Oktober 2019
 
@@ -520,7 +534,7 @@ Läs [funktionssammanfattningen om Power BI-mobilappar på bloggen för november
 #### <a name="android-devices"></a>Android-enheter
 **Förhandsversion: Intune Mobile Application Management** Power BI-supporten för Microsoft Intune Mobile Application Manager (MAM) finns nu i en förhandsversion för Power BI Pro-användare på Android-enheter. 
 
-**Favoriter** Tagga dina favoritinstrumentpaneler på din Android-enhet och se alla dina [favorit-Power BI-instrumentpaneler och mobila Reporting Services-rapporter och KPI:er](mobile-android-app-get-started.md#view-your-favorite-dashboards-kpis-and-reports) samlade på en och samma plats. 
+**Favoriter** Tagga dina favoritinstrumentpaneler på din Android-enhet och se alla dina [favorit-Power BI-instrumentpaneler och mobila Reporting Services-rapporter och KPI:er](mobile-android-app-get-started.md#view-your-favorite-dashboards-and-reports) samlade på en och samma plats. 
 
 #### <a name="ios-devices"></a>iOS-enheter
 **Länkar** URL:er på paneler och visualiseringar är nu klickbara och öppnas i en webbläsare.
@@ -667,7 +681,7 @@ Läs [blogginlägget om Power BI Mobile-appar för mars 2016](https://powerbi.mi
 **Bing- och R-paneler** Öppna Bing- och R-paneler i fokusläge.
 
 #### <a name="android-mobile-app"></a>Android-mobilappen
-**Mobila Microsoft SQL Server 2016-rapporter och KPI:er** [Visa mobila Microsoft SQL Server 2016-rapporter och KPI:er](mobile-app-ssrs-kpis-mobile-on-premises-reports.md) och förflytta dig mellan SSRS-mappar.
+**Mobila rapporter och KPI:er för SQL Server 2016** [Visa mobila rapporter och KPI:er för SQL Server 2016](mobile-app-ssrs-kpis-mobile-on-premises-reports.md) och navigera bland SSRS-mappar.
 
 **Visa rapporter** Öppna rapporter från paneler på dina instrumentpaneler.
 
@@ -678,7 +692,7 @@ Läs [blogginlägget om Power BI Mobile-appar för mars 2016](https://powerbi.mi
 
 **Bing- och R-paneler** Öppna Bing- och R-paneler i fokusläge.
 
-**Mer realtidspaneler på startskärmen** [Fäst KPI:er och radkort på startskärmen](mobile-pin-dashboard-start-screen-windows-10-phone-app.md) som realtidspaneler så att du får en enkel överblick över alla dina viktiga mått.
+**Fler realtidspaneler på startskärmen** [Fäst KPI:er och radkort på startskärmen](mobile-pin-dashboard-start-screen-windows-10-phone-app.md) som realtidspaneler så att du får en enkel överblick över alla dina viktiga mått.
 
 **Zooma genom att dra ihop/isär** Använd den här funktionen på din surfplatta för att zooma och undersöka instrumentpaneler i mer detalj.
 

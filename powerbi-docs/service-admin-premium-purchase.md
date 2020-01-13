@@ -7,31 +7,39 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 03/12/2019
+ms.date: 12/10/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: bc5576bcf1edbe5c3d3ccaf2d217e5666484a7d4
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 8a97f30f75b8bf720d735944589e671392c47237
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74699945"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75224018"
 ---
 # <a name="how-to-purchase-power-bi-premium"></a>Så här köper du Power BI Premium
 
+Den här artikeln beskriver hur du köper Power BI Premium-kapacitet till din organisation. Artikeln omfattar två scenarier:
+
+- Användning av P-SKU:er för vanliga produktionsscenarier. P-SKU:er kräver ett månatligt eller årligt åtagande och faktureras per månad. Du köper P-SKU:er i [Administrationscenter för Microsoft 365](https://admmin.microsoft.com).
+
+- Användning av A-SKU:er för testningsscenarier och för de fall där du inte har de behörigheter som krävs för att köpa P-SKU:er (rollen som global Microsoft 365-administratör eller faktureringsadministratör). A-SKU:er kräver inget tidsåtagande och faktureras per timme. Du kan köpa A-SKU:er i [Azure-portalen](https://portal.azure.com).
+
+Mer information om Power BI Premium finns i [Vad är Power BI Premium?](service-premium-what-is.md). Aktuell information om prissättning och planering finns på [prissättningssidan för Power BI](https://powerbi.microsoft.com/pricing/) och [Power BI Premium-kalkylatorn](https://powerbi.microsoft.com/calculator/). Innehållsskapare behöver fortfarande en [Power BI Pro-licens](service-admin-purchasing-power-bi-pro.md), även om organisationen använder Power BI Premium. Se till att du köper minst en Power BI Pro-licens för din organisation. Med A-SKU:er behöver _alla användare_ som använder innehåll även Pro-licenser.
+
 > [!NOTE]
-> Den här artikeln håller på att uppdateras för att beskriva nya funktioner, ge mer information och förbättra läsbarheten. 
+> Om en Premium-prenumeration upphör att gälla har du 30 dagar med fullständig åtkomst till din kapacitet. Efter det återgår innehållet till en delad kapacitet. Det finns inte stöd för modeller större än 1 GB i delade kapaciteter.
 
-Den här artikeln beskriver hur du köper Power BI Premium-kapacitet (P1–P3) till din organisation. Du köper Power BI Premium-kapacitet i administrationscentret för Microsoft 365, och du hanterar kapaciteterna i administratörsportalen för Power BI. Aktuell information om prissättning och planering finns på [prissättningssidan för Power BI](https://powerbi.microsoft.com/pricing/) och [Power BI Premium-kalkylatorn](https://powerbi.microsoft.com/calculator/).
+## <a name="purchase-p-skus-for-typical-production-scenarios"></a>Köpa P-SKU:er för vanliga produktionsscenarier
 
-Innehållsskapare behöver fortfarande en Power BI Pro-licens, även om organisationen använder Power BI Premium. Se till att du köper minst en Power BI Pro-licens för din organisation.
+Du kan skapa en ny klientorganisation med en Power BI Premium P1-SKU konfigurerad, eller så kan du köpa en Power BI Premium-kapacitet för en befintlig organisation. I båda fallen kan du sedan lägga till kapacitet om du behöver det.
 
-Om en Premium-prenumeration upphör att gälla har du 30 dagar med fullständig åtkomst till din kapacitet. Efter det återgår innehållet till en delad kapacitet. Det finns inte stöd för modeller större än 1 GB i delade kapaciteter.
-
-## <a name="create-a-new-tenant-with-power-bi-premium-p1"></a>Skapa en ny klient med Power BI Premium P1
+### <a name="create-a-new-tenant-with-power-bi-premium-p1"></a>Skapa en ny klient med Power BI Premium P1
 
 Om du inte har någon befintlig klient och vill skapa en, så kan du köpa Power BI Premium samtidigt. Följande länk vägleder dig genom processen med att skapa en ny klientorganisation och kan användas för att köpa Power BI Premium: [Power BI Premium P1-erbjudande](https://signup.microsoft.com/Signup?OfferId=b3ec5615-cc11-48de-967d-8d79f7cb0af1). När du skapar klientorganisationen blir du automatiskt tilldelad rollen som global Microsoft 365-administratör för klientorganisationen.
 
-## <a name="purchase-a-power-bi-premium-capacity-for-an-existing-organization"></a>Köp Power BI Premium-kapacitet för en befintlig organisation
+När du har köpt kapacitet kan du lära dig hur du [hanterar kapaciteter](service-admin-premium-manage.md#manage-capacity) och [tilldelar arbetsytor](service-admin-premium-manage.md#assign-a-workspace-to-a-capacity) till en kapacitet.
+
+### <a name="purchase-a-power-bi-premium-capacity-for-an-existing-organization"></a>Köp Power BI Premium-kapacitet för en befintlig organisation
 
 Om du har en befintlig organisation (klientorganisation) måste du ha rollen som global Microsoft 365-administratör eller faktureringsadministratör för att kunna köpa prenumerationer och licenser. Mer information finns i [Om Microsoft 365-administratörsroller](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d).
 
@@ -41,7 +49,7 @@ Om du vill köpa Premium-kapacitet följer du dessa steg:
 
     ![Microsoft 365-appväljaren](media/service-admin-premium-purchase/o365-app-picker.png)
 
-    Du kan också bläddra till Administrationscenter för Microsoft 365. Du kommer dit genom att gå till https://portal.office.com och välja **Admin**.
+    Du kan också bläddra till Administrationscenter för Microsoft 365.
 
 1. Välj **Fakturering** > **Köp tjänster**.
 
@@ -57,7 +65,9 @@ När du har slutfört köpet visas skärmen **Köptjänster** med information om
 
 ![Om du har köpt Power BI Premium](media/service-admin-premium-purchase/premium-purchased.png)
 
-## <a name="purchase-additional-capacities"></a>Köper ytterligare kapaciteter
+När du har köpt kapacitet kan du lära dig hur du [hanterar kapaciteter](service-admin-premium-manage.md#manage-capacity) och [tilldelar arbetsytor](service-admin-premium-manage.md#assign-a-workspace-to-a-capacity) till en kapacitet.
+
+### <a name="purchase-additional-capacities"></a>Köper ytterligare kapaciteter
 
 Nu när du har en kapacitet kan du lägga till fler allteftersom dina behov växer. Du kan använda valfri kombination av premiumkapacitets-SKU:er (från P1 till P3) i din organisation. De olika SKU:erna tillhandahåller olika resursfunktioner.
 
@@ -78,7 +88,7 @@ Sidan **Köp tjänster** visar sedan hur många instanser du har. De tillgängli
 
 ![Tillgängliga v-kärnor för Power BI Premium](media/service-admin-premium-purchase/premium-capacities.png)
 
-## <a name="cancel-your-subscription"></a>Avbryt din prenumeration
+### <a name="cancel-your-subscription"></a>Avbryt din prenumeration
 
 Du kan avbryta prenumerationen från Administrationscenter för Microsoft 365. Gör följande om du vill avbryta din Premium-prenumeration.
 
@@ -94,9 +104,70 @@ Du kan avbryta prenumerationen från Administrationscenter för Microsoft 365. G
 
 1. Läs igenom informationen och välj **Avbryt prenumeration** om du vill fortsätta.
 
-### <a name="when-canceling-or-your-license-expires"></a>När du avbryter eller licensen upphör att gälla
+#### <a name="when-canceling-or-your-license-expires"></a>När du avbryter eller licensen upphör att gälla
 
 När du avbryter din Premium-prenumeration eller kapacitetslicensen upphör att gälla, kan du fortsätta att få åtkomst till din Premium-kapacitet under en period på 30 dagar från datumet för avbrottet eller då licensen upphör att gälla. Efter 30 dagar kommer du inte längre att kunna komma åt din Premium-kapaciteter eller arbetsytor i dem.
+
+## <a name="purchase-a-skus-for-testing-and-other-scenarios"></a>Köpa A-SKU:er för testning och andra scenarier
+
+A-SKU:er görs tillgängliga via Azure Power BI Embedded-tjänsten. Du kan använda A-SKU:er på följande sätt:
+
+- Aktivera inbäddning av Power BI i program från tredje part. Mer information finns i [Power BI Embedded](developer/azure-pbie-what-is-power-bi-embedded.md).
+
+- Testa Premium-funktioner innan du köper en P-SKU.
+
+- Skapa utvecklings- och testmiljöer tillsammans med en produktionsmiljö som använder P-SKU:er.
+
+- Köp Power BI Premium även om du inte ha rollen som global Microsoft 365-administratör eller faktureringsadministratör.
+
+> [!NOTE]
+> Om du köper en SKU av typen A4 eller högre kan du utnyttja alla Premium-funktioner förutom obegränsad delning av innehåll. Med A-SKU:er behöver _alla användare_ som använder innehåll Pro-licenser.
+
+Följ dessa steg för att köpa A-SKU:er i Azure-portalen:
+
+1. Logga in på [Azure-portalen](https://portal.azure.com) med ett konto som minst har behörighet som kapacitetsadministratör i Power BI.
+
+1. Sök efter _Power BI Embedded_ och välj tjänsten i sökresultatet.
+
+    ![Sökning i Azure-portalen](media/service-admin-premium-purchase/azure-portal-search.png)
+
+1. Välj **Skapa Power BI Embedded**.
+
+    ![Skapa Power BI Embedded](media/service-admin-premium-purchase/create-power-bi-embedded.png)
+
+1. På skärmen för att skapa **Power BI Embedded** anger du följande information:
+
+    - Den **prenumeration** där Power BI Embedded-tjänsten ska skapas.
+
+    - Den fysiska **plats** där den resursgrupp som innehåller tjänsten ska skapas. För att du ska få bättre prestanda bör den här platsen vara nära platsen för din Azure Active Directory-klientorganisation för Power BI.
+
+    - Den befintliga **resursgrupp** som ska användas, eller skapa en ny enligt exemplet.
+
+    - **Power BI-kapacitetsadministratören**. Kapacitetsadministratören måste vara medlemsanvändare eller tjänsthuvudnamn i din Azure AD-klientorganisation.
+
+    ![Prenumeration och resursgrupp](media/service-admin-premium-purchase/subscription-resource-group.png)
+
+1. Om du vill använda alla funktioner i Power BI Premium (förutom obegränsad delning) behöver du SKU av typen A4 eller högre. Välj **Ändra storlek**.
+
+    ![Ändra kapacitetsstorlek](media/service-admin-premium-purchase/change-capacity-size.png)
+
+1. Välj en kapacitetsstorlek på A4, A5 eller A6, vilket motsvarar P1, P2 respektive P3.
+
+    ![Välja A3-kapacitet](media/service-admin-premium-purchase/select-a3-capacity.png)
+
+1. Välj **Granska + skapa**, granska de alternativ du valde och välj sedan **Skapa**.
+
+    ![Skapa resurs](media/service-admin-premium-purchase/create-resource.png)
+
+1. Det kan ta några minuter att slutföra distributionen. När det är klart väljer du **Gå till resurs**.
+
+    ![Distributionen är klar](media/service-admin-premium-purchase/deployment-complete.png)
+
+1. På hanteringssidan granskar du de alternativ du har för att hantera tjänsten, däribland att pausa tjänsten när du inte använder den.
+
+    ![Hantera kapacitet](media/service-admin-premium-purchase/manage-capacity.png)
+
+När du har köpt kapacitet kan du lära dig hur du [hanterar kapaciteter](service-admin-premium-manage.md#manage-capacity) och [tilldelar arbetsytor](service-admin-premium-manage.md#assign-a-workspace-to-a-capacity) till en kapacitet.
 
 ## <a name="next-steps"></a>Nästa steg
 

@@ -8,15 +8,15 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: mshenhav
-ms.openlocfilehash: 570276b8af2862d6aab6dc806cb0c627be8ff157
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: b400f429ef1e65a40caea717ab18bc06300f9d76
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870043"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75221217"
 ---
 # <a name="explore-tiles-in-the-power-bi-mobile-apps"></a>Utforska paneler i Power BI-mobilappar
-Gäller:
+Gäller för:
 
 | ![iPhone](./media/mobile-tiles-in-the-mobile-apps/iphone-logo-50-px.png) | ![iPad](./media/mobile-tiles-in-the-mobile-apps/ipad-logo-50-px.png) | ![Android-telefon](./media/mobile-tiles-in-the-mobile-apps/android-phone-logo-50-px.png) | ![Android-surfplatta](./media/mobile-tiles-in-the-mobile-apps/android-tablet-logo-50-px.png) | ![Windows 10-enheter](./media/mobile-tiles-in-the-mobile-apps/win-10-logo-50-px.png) |
 |:--- |:--- |:--- |:--- |:--- |
@@ -41,10 +41,13 @@ Sedan öppnar du panelerna i fokusläge i Power BI-mobilapparna och interagerar 
    
    ![](media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-tile-pie.png)
 3. Tryck på ikonen **Centrera karta** på en karta ![](media/mobile-tiles-in-the-mobile-apps/power-bi-center-map-icon.png) för att centrera kartan på din aktuella plats.
-   
-     ![](media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-center-map.png)
-4. Tryck på delningsikonen ![](./media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-share-icon.png) för att [kommentera och dela en panel](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) med andra.
+
+   ![](media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-center-map.png)
+
+4. Tryck på pennikonen ![](./media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-annotate-icon.png) för att [kommentera en panel](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md#annotate-and-share-the-tile-report-or-visual) och sedan på delningsikonen ![](./media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-share-icon.png) för att [dela den med andra](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md#annotate-and-share-the-tile-report-or-visual).
+
 5. [Lägg till en avisering till panelen](mobile-set-data-alerts-in-the-mobile-apps.md). Om värdena går över eller under målen, meddelar Power BI dig om detta.
+
 6. Ibland har skaparen av instrumentpanelen lagt till en länk till en panel. I så fall har den en länkikon ![](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-link-icon.png) som visas när den är i fokusläge:
    
     ![](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-tile-link.png)
@@ -54,7 +57,7 @@ Sedan öppnar du panelerna i fokusläge i Power BI-mobilapparna och interagerar 
     ![](media/mobile-tiles-in-the-mobile-apps/pbi_andr_openlinkmessage.png)
    
     När du har öppnat länken i Power BI-appen kan du kopiera länken och öppna den i ett webbläsarfönster i stället.
-7. [Öppna rapporten](mobile-reports-in-the-mobile-apps.md) ![](././media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-open-report-icon.png) som panelen baseras på.
+7. [Öppna den rapport](mobile-reports-in-the-mobile-apps.md) ![](././media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-open-report-icon.png) som panelen baseras på.
 8. Om du vill lämna panelen i fokusläge trycker du på panelens namn och sedan på instrumentpanelens namn eller på **Min arbetsyta**.
    
     ![](media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-tile-breadcrumb.png)
@@ -68,9 +71,9 @@ Sedan öppnar du panelerna i fokusläge i Power BI-mobilapparna och interagerar 
     I fokusläge kan du:
    
    * Tryck på diagrammet för att flytta stapeln i ett linje-, stapel- eller bubbeldiagram för att visa värdena för en specifik punkt i visualiseringen.  
-   * trycka på ikonen för att dela ögonblicksbild ![](./media/mobile-tiles-in-the-mobile-apps/pbi_andr_sharesnapicon.png) för att [kommentera och dela panelen](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) med andra,
+   * Tryck på pennikonen ![](./media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-annotate-icon.png) för att [kommentera en panel](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md#annotate-and-share-the-tile-report-or-visual) och sedan på ikonen Dela ögonblicksbild ![](./media/mobile-tiles-in-the-mobile-apps/pbi_andr_sharesnapicon.png) för att [dela den med andra](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md#annotate-and-share-the-tile-report-or-visual).
    * trycka på ikonen Öppna rapport ![](./media/mobile-tiles-in-the-mobile-apps/power-bi-android-tablet-open-report-icon.png) för att [visa rapporten](mobile-reports-in-the-mobile-apps.md) i mobilappen.
-3. Ibland har skaparen av instrumentpanelen lagt till en länk till en panel. I så fall visas **Öppna länk** ![](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-link-icon.png) när du trycker på den lodräta ellipsen ( **...** ):
+3. Ibland har skaparen av instrumentpanelen lagt till en länk till en panel. När du trycker på den vertikala ellipsen ( **...** ) visas i så fall **Öppna länk** ![](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-link-icon.png):
    
     ![](media/mobile-tiles-in-the-mobile-apps/power-bi-android-tile-link.png)
    
@@ -104,7 +107,7 @@ Sedan öppnar du panelerna i fokusläge i Power BI-mobilapparna och interagerar 
    
    *I den här stapeldiagrammet visas värdena för **Decor (Dekor)** överst i diagrammet.*
    
-   Tryck på ikonen **Fullskärm** ![](media/mobile-tiles-in-the-mobile-apps/power-bi-full-screen-icon.png)för att öppna panelen i fullskärmsläge, utan navigerings- och menyrader.
+   Tryck på ikonen **Fullskärm**![](media/mobile-tiles-in-the-mobile-apps/power-bi-full-screen-icon.png)för att öppna panelen i fullskärmsläge, utan navigerings- och menyrader.
    
    > [!NOTE]
    > Du kan också [visa instrumentpaneler och rapporter i fullskärmsläge](mobile-windows-10-app-presentation-mode.md) i Power BI-mobilappen för Windows 10.

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/18/2019
 ms.author: davidi
 LocalizationGroup: conceptual
-ms.openlocfilehash: 49615e1b6c205d9b894df0bcca7ef4979f153ba7
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: f5fa262c01767ba934a10300e321796845d47c5f
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73872130"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75223796"
 ---
 # <a name="automated-machine-learning-in-power-bi"></a>Automatiserad maskininlärning i Power BI
 
@@ -32,7 +32,7 @@ AutoML i Power BI gör att dataanalytiker kan använda dataflöden till att skap
 
 Med AutoML kan du skapa **binär förutsägelse**, **klassificering** och **regressionsmodeller** för dataflöden. Det här är olika tekniker för övervakad maskininlärning, vilket innebär att de använder kända resultat av tidigare observationer till att förutsäga resultatet av nya observationer. Indatamängden för träning av en AutoML-modell är en uppsättning poster som **märks** med de kända resultaten.
 
-AutoML i Power BI integrerar [automatiserad maskininlärning](https://docs.microsoft.com/azure/machine-learning/service/concept-automated-ml) från [tjänsten Azure Machine Learning ](https://docs.microsoft.com/azure/machine-learning/service/overview-what-is-azure-ml) för att skapa dina ML-modeller. Du behöver dock ingen Azure-prenumeration för att använda AutoML i Power BI. Processen med att träna och värdhantera ML-modeller hanteras helt av Power BI-tjänsten.
+AutoML i Power BI integrerar [automatiserad maskininlärning](https://docs.microsoft.com/azure/machine-learning/service/concept-automated-ml) från [Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/service/overview-what-is-azure-ml) för att skapa dina ML-modeller. Du behöver dock ingen Azure-prenumeration för att använda AutoML i Power BI. Processen med att träna och värdhantera ML-modeller hanteras helt av Power BI-tjänsten.
 
 När en maskininlärningsmodell har tränats genererar AutoML automatiskt en Power BI-rapport som förklarar ML-modellens sannolika prestanda. Tydligheten är viktig i AutoML, så de faktorer i dina indata som är viktigast för att ta fram förutsägelser i modellen lyfts fram. Rapporten innehåller även nyckelmått för modellen.
 
@@ -280,9 +280,9 @@ Kolumnen **RegressionResult** innehåller det förutsagda värdet för posten ba
 
 Den här artikeln visade en översikt av automatiserad maskininlärning för dataflöden i Power BI-tjänsten. Följande artiklar kan också vara användbara.
 
-- [Självstudier: Skapa en maskininlärningsmodell i Power BI](service-tutorial-build-machine-learning-model.md)
-- [Självstudier: Använda Cognitive Services i Power BI](service-tutorial-use-cognitive-services.md)
-- [Självstudier: Anropa en Machine Learning Studio-modell i Power BI (förhandsgranskning)](service-tutorial-invoke-machine-learning-model.md)
+- [Självstudie: Skapa en maskininlärningsmodell i Power BI](service-tutorial-build-machine-learning-model.md)
+- [Självstudie: Använda Cognitive Services i Power BI](service-tutorial-use-cognitive-services.md)
+- [Självstudie: Anropa en Machine Learning Studio-modell (klassisk) i Power BI (förhandsversion)](service-tutorial-invoke-machine-learning-model.md)
 - [Cognitive Services i Power BI](service-cognitive-services.md)
 - [Azure Machine Learning-integrering i Power BI](service-machine-learning-integration.md)
 

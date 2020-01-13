@@ -1,19 +1,19 @@
 ---
 title: Visa dina data offline i Power BI-mobilapparna
 description: 'Läs om en fördel med att visa Power BI i en mobilapp istället för en mobil webbläsare: du kan se dina data, även om du inte är ansluten till ett nätverk.'
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/27/2018
-ms.author: mshenhav
-ms.openlocfilehash: 09a4595b461f69cfa02b4cc0ca3c96b1eb917ef8
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 12/09/2019
+ms.author: painbar
+ms.openlocfilehash: 2974f257509d88a469f981bbdecf8cdca47c8e9e
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870624"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75219097"
 ---
 # <a name="view-your-data-offline-in-the-power-bi-mobile-apps"></a>Visa dina data offline i Power BI-mobilapparna
 Gäller för:
@@ -34,7 +34,7 @@ När du är offline kan du komma åt och interagera med instrumentpaneler som du
 Du har också läsbehörighet till alla Power BI-rapporter som du tidigare har hämtat från mobilappen. Du kan se den fullständiga rapporten men kan inte filtrera, korsfiltrera, sortera eller använda utsnitt på dem.
 
 ## <a name="background-data-refresh"></a>Uppdatering av bakgrundsdata
-Bakgrundsuppdatering uppdaterar dina favoritinstrumentpaneler, plus instrumentpaneler och rapporter som du har besökt under de senaste två veckorna med data i Power BI-tjänsten (inte datakällan). Om du är ansluten till WI-FI, uppdaterar bakgrundsuppdateringen varannan timme. Annars, om du befinner dig i ett 3G-nätverk, uppdaterar Power BI innehållet var 24:e timme.
+Bakgrundsuppdatering uppdaterar dina favoritinstrumentpaneler, plus instrumentpaneler och rapporter som du har besökt under de senaste två veckorna med data i Power BI-tjänsten (inte datakällan). Om du är ansluten till Wi-Fi uppdateras bakgrundsuppdateringen varannan timme. Annars, om du befinner dig i ett 3G-nätverk, uppdaterar Power BI innehållet var 24:e timme.
 
 Du kan stänga av bakgrundsuppdatering, till exempel för att undvika nätverksanvändning. Kontrollera inställningarna på din enhet.
 
@@ -52,7 +52,7 @@ Power BI ger tydliga indikatorer när du går till och från offline-läge, samt
 När du är offline med Power BI på din mobila enhet, kan du stöta på dessa begränsningar:
 
 * Power BI kan cachelagra upp till 250 MB data offline.
-* Vissa paneltyper kräver en aktiv serveranslutning så de finns inte tillgängliga offline &#151; till exempel Bing-kartpaneler och vissa anpassade paneler.
+* Vissa paneltyper kräver en aktiv serveranslutning och finns därför inte tillgängliga offline, till exempel Bing-kartrutor och vissa anpassade paneler.
 * Hela Excel-arbetsböcker i Power BI är inte tillgängliga offline.
 * Du kan se Reporting Services-mobila rapporter och KPI:er offline, om du har visat dem när du var ansluten. De uppdateras inte i bakgrunden. De uppdateras varje gång du öppnar dem.
 * I Power BI-mobilapparna kan du inte se Power BI Desktop-filer (.pbix) som sparats i Power BI-rapportservern. 
@@ -65,4 +65,3 @@ Din feedback hjälper oss att bestämma vad som ska implementeras i framtiden, s
 * Följ @MSPowerBI på Twitter
 * Delta i konversationen i [Power BI Community](https://community.powerbi.com/)
 * [Vad är Power BI?](../../fundamentals/power-bi-overview.md)
-

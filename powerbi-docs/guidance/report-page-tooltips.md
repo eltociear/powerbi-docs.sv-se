@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: b7256a04ccdca107ef0cd8e24af8b3170a3d68cc
-ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
+ms.openlocfilehash: 95cf62057cdea001a438f4555aa3384c54efe4b5
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74834734"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75221952"
 ---
 # <a name="extending-visuals-with-report-page-tooltips"></a>Utöka visuella objekt med knappbeskrivningar för rapportsida
 
@@ -61,15 +61,15 @@ En sidbeskrivning visas. Den visar specifika attribut och statistik för postnum
 
 ### <a name="add-help"></a>Lägg till hjälp
 
-Du kan konfigurera visuella rubriker så att de visar sidbeskrivningar. Du kan lägga till hjälpinnehåll i en sidbeskrivning med hjälp av RTF-formaterade textrutor. Du kan även lägga till bilder och former.
+Du kan konfigurera visuella rubriker så att de visar sidbeskrivningar. Du kan lägga till hjälpdokumentation i en sidbeskrivning med hjälp av formaterade textrutor. Du kan även lägga till bilder och former.
 
 Det är värt att notera att även knappar, bilder, textrutor och former kan visa sidbeskrivningar via en visuell rubrik.
 
-I det här exemplet ser du vad som händer när rapportanvändaren hovrar med markören över ikonen för den visuella rubriken.
+I det här exemplet ser du vad som händer när rapportanvändaren hovrar med markören över [ikonen för den visuella rubriken](../desktop-visual-elements-for-reports.md).
 
 ![En rapportanvändare har hovrat med markören över ikonen för den visuella rubriken (frågetecknet). En RTF-formaterad beskrivning visas.](media/report-page-tooltips/suggestion-add-help.png)
 
-En sidbeskrivning visas. Den visar RTF-formaterad text som beskriver måtten i det visuella objektet. Beskrivningen innehåller även en form (en linje).
+En sidbeskrivning visas. Den visar formaterad text i fyra textrutor samt en form (linje). Sidbeskrivningen hjälper till genom att beskriva varje förkortning som visas i det visuella objektet.
 
 ## <a name="recommendations"></a>Rekommendationer
 
@@ -87,5 +87,6 @@ Mer information om ämnet i den här artikeln finns i följande resurser:
 
 - [Skapa knappbeskrivningar baserat på rapportsidor i Power BI Desktop](../desktop-tooltips.md)
 - [Anpassa knappbeskrivningar i Power BI Desktop](../desktop-custom-tooltips.md)
+- [Använda visuella element för att förbättra Power BI-rapporter](../desktop-visual-elements-for-reports.md)
 - Videon Guy in a Cube: [Knappbeskrivningar i Power BI-rapporter – så skapar du dem i Power BI Desktop](https://www.youtube.com/watch?v=URTA7JZsAtw)
 - Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)

@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/15/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 8562d0fd5acee2f18576f0a6b6f2e3d613354f92
-ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
+ms.openlocfilehash: 0029d275e5180c29e8653f549d8450014362b59b
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74009617"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75304249"
 ---
 # <a name="model-relationships-in-power-bi-desktop"></a>Modellrelationer i Power BI Desktop
 
@@ -73,7 +73,7 @@ När du konfigurerar en en-till-många-relationer eller många-till-en-relatione
 
 Ett förhållande **En-till-en** innebär att båda kolumnerna innehåller unika värden. Den här typen av kardinalitet är inte vanlig, och det är troligen inte en optimal modelldesign, eftersom den leder till lagring av redundanta data.<!-- For guidance on using this cardinality type, see the [One-to-one relationship guidance](guidance/relationships-one-to-one) article.-->
 
-En **många-till-många**-relation innebär att båda kolumnerna kan innehålla dubblettvärden. Den här typen av kardinalitet används sällan. Den används vanligen när du utformar komplexa modellkrav.<!-- For guidance on using this cardinality type, see the [Many-to-many relationship guidance](guidance/relationships-many-to-many) article.-->
+En **många-till-många**-relation innebär att båda kolumnerna kan innehålla dubblettvärden. Den här typen av kardinalitet används sällan. Den används vanligen när du utformar komplexa modellkrav. Vägledning om hur du använder den här kardinalitetstypen finns i [Vägledning för att lägga till en många-till-många-relationer](guidance/relationships-many-to-many.md).
 
 > [!NOTE]
 > Det finns för närvarande inte stöd för kardinalitetstypen många-till-många för modeller som har utvecklats för Power BI-rapportserver.
@@ -226,4 +226,5 @@ I följande lista visas prestanda för filterspridning, från snabbast till lån
 ## <a name="next-steps"></a>Nästa steg
 
 - [Förstå star-schemat och dess betydelse för Power BI](guidance/star-schema.md)
+- [Vägledning för att lägga till en många-till-många-relationer](guidance/relationships-many-to-many.md)
 - Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)

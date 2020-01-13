@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 10/17/2019
 ms.author: mohaali
 ms.openlocfilehash: 17d0a68782f34c09286be5ebe020668a15061ee4
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73874944"
 ---
 # <a name="intro-to-qa-tooling-to-train-power-bi-qa-preview"></a>Introduktion till verktyg i Frågor och svar för att träna upp Power BI Frågor och svar (förhandsversion)
@@ -42,7 +42,7 @@ Verktyg i Frågor och svar är bara tillgängligt i Power BI Desktop, och för n
 
     ![Kom igång i Frågor och svar](media/qna-tooling-dialog.png)
 
-### <a name="review-questions"></a>Granska frågorna
+### <a name="review-questions"></a>Granska frågor
 
 Välj **Granska frågor** om du vill se en lista med de datamängder som används i Power BI-tjänsten för din klientorganisation. På sidan **Granska frågor** ser du även datamängdens ägare, arbetsytan och datumet för senaste uppdatering. Här kan du välja en datamängd och se vilka frågor som användarna har ställt. Du ser även ord som inte känts igen. De data som visas här är för de senaste 28 dagarna.
 
@@ -80,7 +80,7 @@ Du kan också dölja fält och tabeller så att de inte visas i resultat från F
 
 1. Välj vyn Modellering i Power BI Desktop.
 
-2. Välj ett fält eller en tabell så att fönstret **Egenskaper** öppnas och sätt egenskapen **Är dold** till **På**.
+2. Välj ett fält eller en tabell så att fönstret **Egenskaper** öppnas och ange egenskapen **Är dold** till **På**.
 
     Frågor och svar respekterar inställningen och ser till att fältet inte används i Frågor och svar. Du kan till exempel dölja ID-fält och sekundärnycklar så att du undviker onödiga dubbletter med samma namn. Även om du döljer ett fält kan du fortfarande använda det i visuella objekt i Power BI Desktop utanför Frågor och svar.
 

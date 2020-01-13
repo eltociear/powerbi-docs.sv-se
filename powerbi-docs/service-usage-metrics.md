@@ -11,10 +11,10 @@ ms.topic: conceptual
 ms.date: 10/21/2019
 LocalizationGroup: Dashboards
 ms.openlocfilehash: 9aa2e11dd2068cae118336268c5c55ead1e25b8b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73871208"
 ---
 # <a name="monitor-usage-metrics-for-power-bi-dashboards-and-reports"></a>Övervaka användningsstatistik för Power BI-instrumentpaneler och -rapporter
@@ -43,7 +43,7 @@ Du kan bara köra användningsstatistikrapporter i Power BI-tjänsten. Men om du
 ## <a name="view-a-usage-metrics-report"></a>Visa en rapport om användningsstatistik
 
 1. Starta från arbetsytan som innehåller instrumentpanelen eller rapporten.
-2. Gå antingen till arbetsytans innehållslista, instrumentpanelen eller själva rapporten och välj ikonen **Användningsstatistik** ![användningsstatistikikon](media/service-usage-metrics/power-bi-usage-metrics-report-icon.png).
+2. Gå antingen till arbetsytans innehållslista, instrumentpanelen eller själva rapporten och välj ikonen **Användningsmått**  ![ikon för användningsmått](media/service-usage-metrics/power-bi-usage-metrics-report-icon.png).
 
     ![Fliken Instrumentpaneler](media/service-usage-metrics/power-bi-run-usage-metrics-report.png)
 
@@ -83,7 +83,7 @@ För att analysera rapportdata för att bygga dina egna rapporter mot den underl
 
 ## <a name="which-metrics-are-reported"></a>Vilka mått rapporteras?
 
-| Mått | Instrumentpanel | Rapport | Beskrivning |
+| Metric | Instrumentpanel | Rapport | Beskrivning |
 | --- | --- | --- | --- |
 | Distributionsmetod för utsnitt |ja |ja |Hur användare får åtkomst till innehållet. Det finns tre metoder: användarna kan få åtkomst till instrumentpanelen eller rapporten genom att vara medlemmar i en [arbetsyta](consumer/end-user-experience.md), genom att innehållet [delas med dem](service-share-dashboards.md) eller genom att installera ett innehållspaket eller en app.  Observera att vyer via en app räknas som ”innehållspaket”. |
 | Plattformsutsnitt |ja |ja |Användes instrumentpanelen eller rapporten via Power BI-tjänsten (powerbi.com) eller en mobil enhet? Mobilt innefattar alla våra iOS-, Android- och Windows-appar. |

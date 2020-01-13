@@ -1,22 +1,22 @@
 ---
 title: Kom igång med Power BI-mobilappen för iOS
 description: Läs hur Microsoft Power BI-mobilappen för iOS ger dig tillgång till Power BI i fickan med mobil åtkomst till företagsinformation både lokalt och i molnet.
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/27/2018
-ms.author: mshenhav
-ms.openlocfilehash: dd43df2a01175657b39c1e3dcebe5ae6a9433e42
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 12/08/2019
+ms.author: painbar
+ms.openlocfilehash: e3bfdf7fd53e71a4582a1f3e3ba08f55f2e9a290
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870183"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75220379"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-ios-devices"></a>Kom igång med Power BI-mobilappen på iOS-enheter
-Microsofts Power BI för iOS-appen på iPhone, iPad eller iPod Touch ger dig den mobila BI-upplevelsen för Power BI, Power BI-rapportservern och Reporting Services. Visa och interagera med ditt företags instrumentpaneler lokalt och i molnet överallt, med pekaktiverad mobil åtkomst i realtid. Utforska data i instrumentpaneler och dela med dina kollegor via e-post eller sms. Och hålla dig uppdaterad med dina mest aktuella data på din [Apple Watch](mobile-apple-watch.md).  
+Microsoft Power BI-appen för iOS på iPhone och iPad ger dig den mobila BI-upplevelsen för Power BI, Power BI-rapportservern och Reporting Services. Visa och interagera med ditt företags instrumentpaneler lokalt och i molnet överallt, med pekaktiverad mobil åtkomst i realtid. Utforska data i instrumentpaneler och dela med dina kollegor via e-post eller sms. Och hålla dig uppdaterad med dina mest aktuella data på din [Apple Watch](mobile-apple-watch.md).  
 
 ![Power BI-mobilappen på iPhone eller iPad](./media/mobile-iphone-app-get-started/pbi_ipad_iphonedevices.png)
 
@@ -30,7 +30,7 @@ Sedan interagerar du i Power BI-mobilappen för iOS med dina instrumentpaneler o
 Ta reda på [nyheterna i Power BI-mobilapparna](mobile-whats-new-in-the-mobile-apps.md).
 
 ## <a name="download-the-app"></a>Hämta appen
-[Ladda ned iOS-appen](https://go.microsoft.com/fwlink/?LinkId=522062 "Ladda ned iOS-appen") från Apple App Store till din iPhone, iPad eller iPod Touch.
+[Ladda ned iOS-appen](https://go.microsoft.com/fwlink/?LinkId=522062 "Ladda ned iOS-appen") från Apple App Store till din iPhone eller iPad.
 
 Du kan köra Power BI för iOS-appen på alla enheter med iOS 11 eller senare. 
 
@@ -41,57 +41,32 @@ Om du inte har registrerat dig än kan du gå till [powerbi.com](https://powerbi
 ## <a name="get-started-with-the-power-bi-app"></a>Kom igång med Power BI-appen
 1. Öppna Power BI-appen på din iOS-enhet.
 2. Om du vill visa dina Power BI-instrumentpaneler, trycker du på **Power BI**.  
-   Om du vill visa dina mobila rapporter och KPI:er i Reporting Services trycker du på **SQL Server Reporting Services**.
+   Om du vill visa dina mobila rapporter och KPI:er i Reporting Services trycker du på **Rapportserver**.
    
-   ![Logga in till Power BI-mobilappen](./media/mobile-iphone-app-get-started/power-bi-connect-to-login.png)
+   ![Logga in på Power BI-mobilappen](./media/mobile-iphone-app-get-started/power-bi-connect-to-login.png)
    
-   När du befinner dig i appen, behöver du bara trycka på den globala navigeringsknappen ![Den globala navigeringsknappen](./././media/mobile-iphone-app-get-started/power-bi-iphone-global-nav-button.png) i det övre vänstra hörnet för att gå mellan de två. 
+   När du är i appen trycker du bara på kontoprofilbilden i det övre vänstra hörnet på skärmen för att växla mellan de två. 
 
 ## <a name="try-the-power-bi-and-reporting-services-samples"></a>Testa Power BI- och Reporting Services-exemplen
-Även om du inte registrerar dig, kan du prova dig fram med Power BI- och Reporting Services-exemplen. När du har hämtat appen kan du se exemplen eller sätta igång. Du kan gå tillbaka till exemplen från den globala navigeringen när du vill.
+Även om du inte registrerar dig kan du visa och interagera med Power BI- och Reporting Services-exemplen.
 
-### <a name="power-bi-samples"></a>Power BI-exempel
-Du kan visa och interagera med instrumentpanelsexemplen i Power BI, men det finns några saker som du inte kan göra med dem. Du kan inte öppna rapporterna bakom instrumentpanelerna, dela exemplen med andra eller göra dem till dina favoriter.
+Om du vill gå till exemplen trycker du på **Fler alternativ** (...) i navigeringsfältet och väljer **Exempel**.
 
-1. Tryck på den globala navigeringsknappen ![Den globala navigeringsknappen](./././media/mobile-iphone-app-get-started/power-bi-iphone-global-nav-button.png) i det övre vänstra hörnet.
-2. Tryck på ![kugghjulsikonen](././media/mobile-iphone-app-get-started/power-bi-ios-gear-icon.png) i det övre högra hörnet och sedan på **Power BI-exempel**.
-3. Välj en roll och utforska exemplet på instrumentpanel för rollen.  
-   
+Ett antal Power BI-exempel åtföljs av flera exempel på rapportservern.
+
    ![Mobila exempel för Power BI](./media/mobile-iphone-app-get-started/power-bi-iphone-powerbi-samples.png)
    
    > [!NOTE]
-   > Alla funktioner är inte tillgängliga i exemplen. Du kan till exempel inte visa exempelrapporterna som ligger bakom instrumentpanelerna. 
+   > Alla funktioner är inte tillgängliga i exemplen. Du kan till exempel inte visa de exempelrapporter som ligger bakom instrumentpanelerna, du kan inte dela exemplen med andra och du kan inte göra dem till favoriter. 
    > 
-   > 
-
-### <a name="reporting-services-mobile-report-samples"></a>Mobila rapportexempel för Reporting Services
-1. Tryck på den globala navigeringsknappen ![Den globala navigeringsknappen](./././media/mobile-iphone-app-get-started/power-bi-iphone-global-nav-button.png) i det övre vänstra hörnet.
-2. Tryck på ![kugghjulsikonen](././media/mobile-iphone-app-get-started/power-bi-ios-gear-icon.png) i det övre högra hörnet och sedan på **Reporting Services-exempel**.
-3. Öppna detaljhandelsrapporterna eller mappen för försäljningsrapporter om du vill utforska deras KPI:er och mobila rapporter.
-   
-   ![Reporting Services-exempel i Power BI-mobilappen](./media/mobile-iphone-app-get-started/power-bi-reporting-services-samples.png)
+   >
 
 ## <a name="find-your-content-in-the-power-bi-mobile-apps"></a>Hitta ditt innehåll i Power BI-mobilapparna
-Dina instrumentpaneler och rapporter lagras på olika platser i Power BI-mobilapparna beroende på var de kom från. Läs mer om [att hitta ditt innehåll i mobilapparna](mobile-apps-quickstart-view-dashboard-report.md). Dessutom kan du alltid söka efter det du har i Power BI-mobilapparna. 
 
-![Navigeringsfönster](./media/mobile-iphone-app-get-started/power-bi-iphone-left-nav.png)
+Tryck på förstoringsglaset i rubriken för att börja söka efter Power BI-innehåll.
 
-Läs mer om [att hitta ditt innehåll i mobilapparna](mobile-apps-quickstart-view-dashboard-report.md).
-
-## <a name="view-your-favorite-dashboards-kpis-and-reports"></a>Visa dina favoritinstrumentpaneler, KPI:er och rapporter
-På sidan Favoriter i mobilapparna visas alla dina Power BI-favoritinstrumentpaneler tillsammans med KPI:er och rapporter för Power BI-rapportservern och Reporting Services. När du gör en instrumentpanel till en *favorit* i Power BI-mobilappen, kan du komma åt den från alla dina enheter, inklusive Power BI-tjänsten i din webbläsare. 
-
-* Tryck på **Favoriter**.
-  
-   ![Favoriter i navigeringsfönstret](./media/mobile-iphone-app-get-started/power-bi-iphone-favorites-nav.png)
-  
-   Alla dina favoriter visas tillsammans på den här sidan:
-  
-   ![Sidan Favoriter](./media/mobile-iphone-app-get-started/power-bi-iphone-faves-report-server-number-callouts.png)
-  
-  1. Instrumentpaneler i Power BI-tjänsten
-  2. KPI:er i Power BI-rapportservern
-  3. Power BI-rapporter på Power BI-rapportservern
+## <a name="view-your-favorite-dashboards-and-reports"></a>Visa dina favoritinstrumentpaneler och -rapporter
+Tryck på **Favoriter** (![](./media/mobile-iphone-app-get-started/power-bi-mobile-apps-home-favorites-icon.png)) i navigeringsfältet för att visa sidan Favoriter. 
 
 Läs mer om [favoriter i Power BI-mobilappar](mobile-apps-favorites.md).
 

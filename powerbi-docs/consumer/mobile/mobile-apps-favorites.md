@@ -1,19 +1,19 @@
 ---
 title: Favoriter i Power BI-mobilappar
 description: Läs om hur du kan skapa och visa dina Power BI-favoritinstrumentpaneler, rapporter och appar, plus Power BI-rapportserver- och Reporting Services-rapporter och KPI:er i mobilappar.
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 05/05/2018
-ms.author: mshenhav
-ms.openlocfilehash: c4fcf7bea8bf458231533efbc88e307d8d9ba2ab
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 12/02/2019
+ms.author: painbar
+ms.openlocfilehash: 2c7ae8180f51592319c9aaca85272553480cd283
+ms.sourcegitcommit: 0da17de80c9651f9f4474d1abb1bdaaade8808fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870687"
+ms.lasthandoff: 12/27/2019
+ms.locfileid: "75498512"
 ---
 # <a name="make-and-view-favorites-in-the-power-bi-mobile-apps"></a>Skapa och visa favoriter i Power BI-mobilappar
 Gäller för:
@@ -24,7 +24,9 @@ Gäller för:
 
 Läs om hur du kan skapa och visa dina Power BI-favoritinstrumentpaneler, rapporter och appar, tillsammans med dina lokala Power BI-rapportserver- och Reporting Services-KPI:er och rapporter i mobilappar.
 
-När du skapar en favorit i Power BI-mobilappar visas den på sidan Favoriter i Power BI-tjänsten ([https://powerbi.com](https://powerbi.com)) och alla dina mobila enheter. 
+När du skapar en favorit i Power BI-mobilapparna visas den på sidan Favoriter i [Power BI-tjänsten](https://powerbi.com) och på alla dina mobila enheter.
+
+Om du vill se din sida för favoriter trycker du på ikonen Favoriter i navigeringsfältet:
 
 ![Favoriter i Power BI-mobilappar](./media/mobile-apps-favorites/power-bi-android-favorites-reports.png)
 
@@ -33,43 +35,41 @@ Du kan också [göra Power BI-instrumentpaneler och appar till favoriter i Power
 
 Du kan markera KPI:er och rapporter som favoriter i en webbportal för Power BI-rapportserver eller Reporting Services, och sedan visa dem i en lämplig mapp på din mobila enhet, tillsammans med dina Power BI-favoritinstrumentpaneler.
 
-## <a name="view-your-power-bi-favorites"></a>Visa dina Power BI-favoriter
-* Tryck på den översta ![navigeringsmenyikonen](./media/mobile-apps-favorites/power-bi-iphone-global-nav-button.png) och sedan på **Favoriter**.
-  
-  ![Favoriter i navigeringen](./media/mobile-apps-favorites/power-bi-ipad-faves-pbi-report-server.png)
-  
-  Alla dina favoriter visas tillsammans på den här sidan:
-  
-  ![Sidan Favoriter](./media/mobile-apps-favorites/power-bi-ipad-favorites.png)
-
 ## <a name="make-an-app-a-favorite"></a>Göra en app till en favorit
-1. Tryck på **Fler alternativ** (...) > **Favorit** bredvid appen i listan med appar.
+1. Tryck på ikonen Appar i det nedre navigeringsfältet för att visa din sida med appar.
+
+2. På en iOS-enhet trycker du på knappen Info till höger om namnet på den app som du vill göra till favorit. På Android-enheter visas Fler alternativ (...) i stället för knappen Info. 
+
+3. I avsnittet Appinformation som visas trycker du på stjärnan.
    
     ![Appfavoritmenyn](./media/mobile-apps-favorites/power-bi-android-favorite-app-ellipsis.png)
    
-    Nu visas den med dina andra instrumentpanels- och appfavoriter.
+    Appen visas nu på sidan Favoriter tillsammans med dina andra instrumentpaneler, rapporter och appar som är favoriter.
    
-    ![Appar i Favoriter](./media/mobile-apps-favorites/power-bi-android-favorite-apps.png)
-
 ## <a name="make-a-dashboard-or-report-a-favorite-in-the-ios-and-windows-10-mobile-apps"></a>Gör en instrumentpanel eller rapport till en favorit i iOS- och Windows 10-mobilappar
 Du kan göra en Power BI-instrumentpanel eller rapport till en favorit från listan med instrumentpaneler eller rapporter från själva instrumentpanelen eller rapporten i sig.
 
 * Tryck på den tomma stjärnan bredvid namnet i listan över instrumentpaneler eller rapporter i mobilappen ![Ikonen Ej favorit](./././media/mobile-apps-favorites/power-bi-mobile-not-favorite-icon.png). Stjärnan blir gul ![Ikonen Favorit](./././media/mobile-apps-favorites/power-bi-mobile-yes-favorite-icon.png).
   
     ![Instrumentpanelsfavoriter](./media/mobile-apps-favorites/power-bi-mobile-make-dashboard-favorite.png)
-* Tryck på den tomma stjärnan i instrumentpanelens eller rapportens menyfliksområde ![Ikonen Ej favorit](./././media/mobile-apps-favorites/power-bi-mobile-not-favorite-icon.png). Stjärnan blir gul ![Ikonen Favorit](./././media/mobile-apps-favorites/power-bi-mobile-yes-favorite-icon.png).
+* Om du är på en instrumentpanel trycker du på den tomma stjärnan ![ikonen Inte favorit](./././media/mobile-apps-favorites/power-bi-mobile-not-favorite-icon.png) i menyfliksområdet. Om du är i en rapport är stjärnan under **Fler alternativ** (...).  Stjärnan blir svart ![Favoritikon](./././media/mobile-apps-favorites/power-bi-mobile-favorite-selected-black.png).
   
     ![Ikonen Valda favoriter](./media/mobile-apps-favorites/power-bi-mobile-favorite-selected.png)
 
 ## <a name="make-a-dashboard-or-report-a-favorite-in-the-android-mobile-apps"></a>Gör en instrumentpanel eller rapport till en favorit i Android-mobilappar
 Du kan göra en instrumentpanel eller rapport till en favorit från listan med instrumentpaneler eller rapporter från själva instrumentpanelen eller rapporten i sig.
 
-* Tryck på den vertikala knappen **Fler alternativ** (...) bredvid namnet i listan med instrumentpaneler eller rapporter i mobilappen, och sedan på **Favorit**. En gul stjärna visas intill namnet ![Favoritikon](./././media/mobile-apps-favorites/power-bi-mobile-yes-favorite-icon.png).
+* I listan över instrumentpaneler eller rapporter i mobilappen trycker du på den vertikala knappen **Fler alternativ** (...) intill namnet och sedan på stjärnan Favoriter på den infoflik som visas.
   
     ![Favoritmenyn i Android](./media/mobile-apps-favorites/power-bi-android-make-favorite.png)
-* Tryck på den tomma stjärnan i instrumentpanelens eller rapportens menyfliksområde ![Ikonen Ej favorit](./././media/mobile-apps-favorites/power-bi-mobile-not-favorite-icon.png). Stjärnan blir mörkgrå ![Ikonen Favorit](./media/mobile-apps-favorites/power-bi-android-favorite-icon.png).
+
+* När du är i en instrumentpanel trycker du på den tomma stjärnan i menyfliksområdet ![Ikonen Ej favorit](./././media/mobile-apps-favorites/power-bi-mobile-not-favorite-icon.png). Stjärnan blir mörkgrå ![Ikonen Favorit](./media/mobile-apps-favorites/power-bi-android-favorite-icon.png).
   
     ![Favoritstjärnan i Android](./media/mobile-apps-favorites/power-bi-android-favorite-in-dashboard.png)
+
+* Om du är i en rapport sveper du nedåt för att visa menyfliksområdet. Tryck på **Fler alternativ** (...) och bläddra sedan nedåt för att hitta den tomma stjärnan ![ikonen Inte favorit](./././media/mobile-apps-favorites/power-bi-mobile-not-favorite-icon.png) och tryck på den. Stjärnan blir mörkgrå ![ikonen Favorit](./media/mobile-apps-favorites/power-bi-android-favorite-icon.png).
+  
+    ![Favoritstjärnan i Android](./media/mobile-apps-favorites/power-bi-android-favorite-in-report.png)
 
 ## <a name="make-favorite-power-bi-report-server-and-reporting-services-reports-and-kpis"></a>Gör Power BI-rapportserver- och Reporting Services-rapporter och KPI:er till favoriter
 Du kan visa dina Power BI-rapportserver- och Reporting Services-favoritrapporter och KPI:er i Power BI-mobilappar, men du kan inte göra dem till favoriter i mobilapparna. Du [tagga dem som favoriter i webbportalen](../../report-server/tutorial-explore-report-server-web-portal.md#tag-your-favorites). 

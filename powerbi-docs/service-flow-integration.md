@@ -10,18 +10,18 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 738ae599e116beaf5ff80098e4965ee3ed958b04
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: e9c6185506d1992a46ee14ff1eafe0c37d9f65c1
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74699692"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223788"
 ---
 # <a name="power-automate-and-power-bi"></a>Power Automate och Power BI
 
-[Power Automate](https://flow.microsoft.com/documentation/getting-started) är ett SaaS-erbjudande för automatisering av arbetsflöden i det växande antalet program och SaaS-tjänster som användare i verksamheten förlitar sig på. Du kan använda Flow för att automatisera uppgifter genom att integrera dina favorit-appar och -tjänster (inklusive Power BI) om du vill få meddelanden, synkronisera filer, samla in data med mera. Återkommande uppgifter blir enkelt med automatisering av arbetsflödet.
+[Power Automate](https://docs.microsoft.com/power-automate/getting-started) är ett SaaS-erbjudande för automatisering av arbetsflöden i det växande antalet program och SaaS-tjänster som användare i verksamheten förlitar sig på. Du kan använda Flow för att automatisera uppgifter genom att integrera dina favorit-appar och -tjänster (inklusive Power BI) om du vill få meddelanden, synkronisera filer, samla in data med mera. Återkommande uppgifter blir enkelt med automatisering av arbetsflödet.
 
-[Kom igång med Flow nu.](https://flow.microsoft.com/documentation/getting-started)
+[Kom igång med Flow nu.](https://docs.microsoft.com/power-automate/getting-started)
 
 Titta på när Sirui skapar ett flöde som skickar ett detaljerat e-postmeddelande till kollegor när en Power BI-avisering utlöses. Prova sedan själv genom att följa de stegvisa anvisningarna under videon.
 
@@ -107,7 +107,7 @@ I den här uppgiften skapar vi ett enkelt flöde från början som utlöses av e
     ![Flödet utlöser Outlook-meddelande](media/service-flow-integration/power-bi-flow-notice.png)
 
 ## <a name="next-steps"></a>Nästa steg
-* [Kom igång med Power Automate](https://flow.microsoft.com/documentation/getting-started/)
+* [Kom igång med Power Automate](https://docs.microsoft.com/power-automate/getting-started/)
 * [Ange datavarningar i Power BI-tjänsten](service-set-data-alerts.md)
 * [Ange datavarningar på din iPhone](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
 * [Ställ in dataaviseringar i Power BI-mobilappen för Windows 10](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)

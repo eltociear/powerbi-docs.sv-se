@@ -8,16 +8,16 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 11/07/2019
 ms.author: painbar
-ms.openlocfilehash: a517ee4edce6e18eadcbe2b1b6765684f8121b21
-ms.sourcegitcommit: 768e1e4b19fe8c7627010127c2420d63021cb542
+ms.openlocfilehash: ccc7e3864590145309709d27774951c281b3ebdd
+ms.sourcegitcommit: ef9ab7c0d84b926094c33e8aa2765cd43b844314
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199421"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75622358"
 ---
 # <a name="remotely-configure-power-bi-app-using-mobile-device-management-mdm-tool"></a>Konfigurera Power BI-appen via fjärranslutning med verktyget för hantering av mobilenheter (MDM)
 
-Power BI Mobile-appen för iOS och Android har stöd för appinställningar som innebär att administratörer av Office 365 och MDM-tjänster (t.ex. Intune) kan anpassa appen.
+Power BI Mobile-appen för iOS och Android har stöd för appinställningar som innebär att administratörer av MDM-tjänster, till exempel Intune, kan anpassa appen.
 
 Power BI Mobile-appen har stöd för följande konfigurationsscenarier:
 

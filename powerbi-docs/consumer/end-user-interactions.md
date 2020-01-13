@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/03/2019
+ms.date: 12/18/2019
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 28e6cea55b02fabddd0b2f118631a09c0344b66f
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: dc8dad0417ac2ed6498fb7612900ebdbb0ce2a18
+ms.sourcegitcommit: 4359baa43ca01b179d28ec59f4e61ba8c07ee288
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73863098"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75303898"
 ---
 # <a name="how-visuals-cross-filter-each-other-in-a-power-bi-report"></a>Hur visuella objekt korsfiltrerar varandra i en Power BI-rapport
 En av de viktigaste funktionerna i Power BI är det sätt på vilket alla visuella objekt på en rapportsida är sammankopplade. Om du väljer en datapunkt på ett av de visuella objekten kan alla andra visuella objekt på sidan som innehåller dessa data ändras, baserat på det valet. 
@@ -27,20 +27,31 @@ När en datapunkt väljs i ett visuellt objekt på en rapportsida sker som stand
 
 Om du inte har kommit i kontakt med hierarkier eller granskning tidigare kan du lära dig allt om dem genom att läsa artikeln om [detaljgranskning i Power BI](end-user-drill.md). 
 
-Korsfiltrering och korsmarkering kan vara användbart för att identifiera hur ett värde i dina data bidrar till ett annat. Om du till exempel väljer segmentet Moderering i ringdiagrammet markeras bidraget från det segmentet till varje kolumn i diagrammet Totalt antal enheter efter månad, och linjediagrammet filtreras.
+### <a name="cross-filtering-and-cross-highlighting"></a>Korsfiltrering och korsmarkering
 
-![bild med interaktion av visuella objekt](media/end-user-interactions/power-bi-interactions.png)
+Korsfiltrering och korsmarkering kan vara användbart för att identifiera hur ett värde i dina data bidrar till ett annat. Termerna *Korsfilter* och *Korsmarkering* används för att särskilja det beteende som beskrivs här från vad som händer när du använder fönstret **Filter** till att filtrera och markera visuella objekt.  
 
-Se [Om filtrering och markering](end-user-report-filter.md). 
+Vi definierar de här termerna när vi tittar på rapportsidorna nedan. Ringdiagrammet "Total kategorivolym efter segment" har två värden: "Måttlighet" och "Bekvämlighet". 
 
+![Rapportsida](media/end-user-interactions/power-bi-interactions-before.png)
 
-  
-> [!NOTE]
-> Termerna *Korsfilter* och *Korsmarkering* används för att särskilja det beteende som beskrivs här från vad som händer när du använder fönstret **Filter** till att filtrera och markera visuella objekt.  
+1. Nu ska vi se vad som händer när vi väljer **Måttlighet**.
+
+    ![Rapportsidan efter att segmentet Måttlighet i ringdiagrammet har valts](media/end-user-interactions/power-bi-interactions-after.png)
+
+2. **Korsfiltrering** tar bort data som inte är aktuella. Om du väljer **Måttlighet** i ringdiagrammet korsfiltreras linjediagrammet. Linjediagrammet visar nu endast datapunkter för segmentet Måttlighet. 
+
+3. **Korsmarkering** behåller alla ursprungliga datapunkter men tonar ned den del som inte gäller för ditt val. Om du väljer **Måttlighet** i ringdiagrammet korsmarkeras kolumndiagrammet. Kolumndiagrammet tonar ned alla data som gäller för segmentet Bekvämlighet och markerar alla data som gäller för segmentet Måttlighet. 
+
 
 ## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
 - Om din rapport har ett visuellt objekt som stöder [detaljgranskning](end-user-drill.md) så har detaljgranskning av ett visuellt objekt som standard ingen inverkan på andra visuella objekt på rapportsidan.     
-- Om du använder visuellt objekt A för att interagera med visuellt objekt B tillämpas filter på visuell nivå från visuellt objekt A på visuellt objekt B.
+- Filter på visuell nivå behålls vid korsfiltrering och korsmarkering av andra visuella objekt på rapportsidan. Om filter på visuell nivå tillämpas på Visuellt objekt A av rapportdesignern eller av dig, och om du använder Visuellt objekt A för att interagera med Visuellt objekt B, tillämpas därför filter på visuell nivå från Visuellt objekt A på Visuellt objekt B.
+
+    ![Rapportsidan efter att segmentet Måttlighet i ringdiagrammet har valts](media/end-user-interactions/power-bi-visual-filters.png)
 
 ## <a name="next-steps"></a>Nästa steg
-[Så här använder du rapportfilter](../power-bi-how-to-report-filter.md)
+[Så här använder du rapportfilter](../power-bi-how-to-report-filter.md)    
+
+
+[Om filtrering och markering](end-user-report-filter.md). 
