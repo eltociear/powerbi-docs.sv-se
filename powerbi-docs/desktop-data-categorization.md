@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 8667823567270680415c2fb0ba2db7846dd968ac
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: ef3191d77e2aeb89ff97468bd4bfdc07b0d7afb8
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878314"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761351"
 ---
-# <a name="data-categorization-in-power-bi-desktop"></a>Datakategorisering i Power BI Desktop
+# <a name="specify-data-categories-in-power-bi-desktop"></a>Ange datakategorier i Power BI Desktop
 I **Power BI Desktop** kan du ange datakategori för en kolumn så att Power BI Desktop vet hur den ska hantera dess värden i en visualisering.
 
 När Power BI Desktop importerar data hämtas inte bara själva informationen, utan även information som tabell- och kolumnnamn, om det är en primär nyckel, osv.  Med denna information gör Power BI Desktop några antaganden om hur du ska få en bra standardupplevelse när du skapar en visualisering. 

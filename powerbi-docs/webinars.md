@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/01/2019
 ms.author: v-tatero
-ms.openlocfilehash: 73b439b870a4f931c2db680c0067a6ea2fdf54ff
-ms.sourcegitcommit: d5de66b591c2e1de979ce0e3ce5e5b6e1f2a08db
+ms.openlocfilehash: e3154e5a143de63300e7f5dc87cec518188a3442
+ms.sourcegitcommit: 4b926ab5f09592680627dca1f0ba016b07a86ec0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75548552"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75837590"
 ---
 # <a name="power-bi-webinars"></a>Power BI-webbseminarier
 
@@ -21,9 +21,7 @@ Registrera dig för våra kommande live-webbseminarier eller titta på våra ins
 
 ## <a name="upcoming-webinars"></a>Kommande webbseminarier
 
-**Three Ways AI Is Changing BI**
-<br>av Justyna LUCZNIK
-<br>[Registrera dig om du vill titta den 8 januari](https://info.microsoft.com/ww-landing-Three-Ways-AI-Is-Changing-BI.html?lcid=EN-US&ocid=mkto_eml_EM581230A1LA1)
+Inga webbseminarier schemalagda ännu. Kontrollera snart igen efter fler kommande händelser.
 
 >[Kommande webbseminarier från Power BI-communityn](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
 
@@ -38,6 +36,10 @@ Kom igång med dessa populära webbseminarier på begäran
 **Hur Microsoft ändrar BI-dataskyddet**
 <br>av Anton Fritz och Adi Regev
 <br>[Registrera dig och titta nu](https://info.microsoft.com/ww-landing-How-Microsoft-Is-Changing-BI-Data-Protection.html?lcid=EN-US)
+
+**Three Ways AI Is Changing BI**
+<br>av Justyna LUCZNIK
+<br>[Registrera dig och titta nu](https://info.microsoft.com/ww-landing-Three-Ways-AI-Is-Changing-BI.html?lcid=EN-US&ocid=mkto_eml_EM581230A1LA1)
 
 **Power BI och framtidens moderna och företags-BI**
 <br>av Arun Ulag och Amir Netz

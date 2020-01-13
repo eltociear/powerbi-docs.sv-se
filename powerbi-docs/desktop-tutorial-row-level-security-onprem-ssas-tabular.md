@@ -10,14 +10,14 @@ ms.topic: tutorial
 ms.date: 05/28/2019
 ms.author: selvar
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 64a7cc62f319162b653742be776a9aa9549f8659
-ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
+ms.openlocfilehash: 09e4a9cc3e6a5c16f23532f0a4589fdcb1906549
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74311459"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75759530"
 ---
-# <a name="dynamic-row-level-security-with-analysis-services-tabular-model"></a>Dynamisk säkerhet på radnivå med Analysis Services-tabellmodell
+# <a name="implement-row-level-security-in-an-analysis-services-tabular-model"></a>Implementera säkerhet på radnivå i en Analysis Services-tabellmodell
 
 När du använder en exempeldatamängd och går igenom stegen nedan får du i den här självstudien lära dig att implementera [**säkerhet på radnivå**](service-admin-rls.md) för en **tabellmodell i Analysis Services** och använda den i en Power BI-rapport. 
 

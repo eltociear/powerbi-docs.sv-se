@@ -9,14 +9,14 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/18/2019
 ms.author: mihart
-ms.openlocfilehash: 1e141c56387e4bbde1741752e40e600c37088e87
-ms.sourcegitcommit: 768e1e4b19fe8c7627010127c2420d63021cb542
+ms.openlocfilehash: 0cbd343203aa0626877e6d4841284eb57869e101
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199683"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75758817"
 ---
-# <a name="interacting-with-arcgis-maps-in-power-bi"></a>Interagera med ArcGIS-kartor i Power BI
+# <a name="interact-with-arcgis-maps-in-power-bi"></a>Interagera med ArcGIS-kartor i Power BI
 Det här avsnittet skrivs utifrån perspektivet av en person som använder en ArcGIS-karta i Power BI-tjänsten, Desktop eller i en mobil lösning. När en designer har delat en ArcGIS-karta för visuellt Power BI-objekt med dig finns det många sätt att interagera med det.  Mer information om hur du skapar en ArcGIS-karta finns i [självstudierna om ArcGIS-kartor från Esri](../visuals/power-bi-visualization-arcgis.md).
 
 Kombinationen av ArcGIS-kartor och Power BI tar mappning längre än till bara presentation av punkter på en karta – helt enkelt till en helt ny nivå. Rapportdesigners börjar med en karta och kopplar lager med demografiska data till kartan. Kombinationen av de här platsbaserade dataskikten (som insamlade data) på en karta med spatial analys ger en bättre förståelse av dina data i visualiseringen.
