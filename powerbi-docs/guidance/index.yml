@@ -12,12 +12,12 @@ metadata:
   author: maggiesMSFT
   ms.author: maggies
   ms.date: 11/14/2019
-  ms.openlocfilehash: 685c4d885d6658b2f0d6eace63882e453cfb77a2
-  ms.sourcegitcommit: b09de56e971b8844a3771413d1f56d49b31baaaf
+  ms.openlocfilehash: 2d34b41ec7ebc473c84bbfffccfa555cda817e3a
+  ms.sourcegitcommit: 801d2baa944469a5b79cf591eb8afd18ca4e00b1
   ms.translationtype: HT
   ms.contentlocale: sv-SE
-  ms.lasthandoff: 01/07/2020
-  ms.locfileid: "75691317"
+  ms.lasthandoff: 01/11/2020
+  ms.locfileid: "75885172"
 landingContent:
 - title: Power BI-vägledning
   linkLists:
@@ -79,3 +79,7 @@ landingContent:
       url: report-page-tooltips.md
     - text: Visa detaljerad information för rapportsida
       url: report-drillthrough.md
+    - text: Använda sidnumrerade rapporter i Power BI
+      url: report-paginated-or-power-bi.md
+    - text: Migrera SQL Server Reporting Services-rapporter till Power BI
+      url: migrate-ssrs-reports-to-power-bi.md
