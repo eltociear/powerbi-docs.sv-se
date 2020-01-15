@@ -23,9 +23,9 @@
               href: visuals/unit-tests-introduction.md
         - name: Begrepp
           items:
-            - name: Struktur för visuellt Power BI-objekt
+            - name: Struktur för projekt med visuella Power BI-objekt
               href: visuals/visual-project-structure.md
-            - name: Visuellt koncept
+            - name: Begrepp om visuella objekt
               href: visuals/power-bi-visuals-concept.md
             - name: Visuella objekt för organisationer i Power BI
               href: power-bi-custom-visuals-organization.md

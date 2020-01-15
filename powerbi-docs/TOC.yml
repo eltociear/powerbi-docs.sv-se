@@ -871,6 +871,8 @@
           href: service-admin-premium-workloads.md
         - name: Övervaka funktioner med appen
           href: service-admin-premium-monitor-capacity.md
+        - name: Övervaka Premium-arbetsbelastningsmått
+          href: service-premium-metrics-app.md
         - name: Övervaka kapaciteter i administratörsportalen
           href: service-admin-premium-monitor-portal.md
         - name: Konfigurera inkrementell uppdatering
