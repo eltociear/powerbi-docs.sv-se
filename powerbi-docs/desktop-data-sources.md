@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/25/2019
+ms.date: 01/08/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 0f24675d4185efd7524d9e8c453c919d64e0364a
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: fd25e4ca6357dbfa5954eeabe0bf97fb6ccb8a1c
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75222176"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761374"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Datakällor i Power BI Desktop
 
@@ -30,6 +30,10 @@ Om du väljer **Mer...** från menyn **Mest vanliga** visas fönstret **Hämta d
 
 > [!NOTE]
 > Power BI-teamet utökar kontinuerligt de datakällor som är tillgängliga för **Power BI Desktop** och **Power BI-tjänsten**. Därför visas ofta tidiga versioner av pågående datakällor markerade med *beta* eller *förhandsversion*. Alla datakällor som har markerats som *beta* eller *förhandsversion* har begränsad support och funktionalitet och ska inte användas i produktionsmiljöer. Dessutom kan det hända att datakällor som är markerade som *Beta* eller *Förhandsversion* för **Power BI Desktop** inte är tillgängliga för användning i **Power BI-tjänsten** eller andra Microsoft-tjänster förrän datakällan blir allmänt tillgänglig.
+
+> [!NOTE]
+> Det finns många dataanslutningar för Power BI Desktop som kräver Internet Explorer 10 (eller senare) för autentisering. 
+
 
 ## <a name="data-sources"></a>Datakällor
 Datatyperna ordnas i följande kategorier:

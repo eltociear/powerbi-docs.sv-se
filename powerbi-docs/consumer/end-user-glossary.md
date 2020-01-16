@@ -6,14 +6,14 @@ author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 12/18/2019
+ms.date: 01/07/2019
 ms.author: mihart
-ms.openlocfilehash: 046f35613e5fe748e93389fbe10a77af08f449e3
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: cf70774712a8b72493c8957139d8f802dc4d1ed7
+ms.sourcegitcommit: 4b926ab5f09592680627dca1f0ba016b07a86ec0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75303912"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75836671"
 ---
 # <a name="glossary-for-power-bi-service"></a>Ordlista för Power BI-tjänsten
 Power BI-tjänsten kan introducera terminologi som du kanske inte är bekant med eller förstår. Ordlistan är ett bra ställe att leta upp terminologi. Om du vill kan du lägga till den som ett bokmärke. En annan bra resurs om du vill lära dig mer om byggstenarna bakom Power BI-tjänsten är [Grundläggande begrepp](end-user-basic-concepts.md). Grundläggande begrepp ger en översikt över de olika *delarna* i Power BI och hur de hänger ihop.
@@ -41,7 +41,9 @@ Den här ordlista är ett community-arbete.  Saknar du något ord? Be oss att l�
 
 **ArcGIS för Power BI** ArcGIS är en plattform för mappning och analys som skapats av företaget ESRI. Namnet på det visuella objektet som ingår i biblioteket med Power BI-visualiseringar kallas ArcGIS för Power BI.
 
-**assign (tilldela)** [Power BI Premium] Verb för att flytta en arbetsyta till eller från dedikerad kapacitet. Använd inte en ”uppgradering” för att flytta en arbetsyta till dedikerad kapacitet eftersom det antyder att ”dedikerad” är överlägset ”delad” kapacitet.  
+**assign (tilldela)** [Power BI Premium] Verb för att flytta en arbetsyta till eller från dedikerad kapacitet. Använd inte en ”uppgradering” för att flytta en arbetsyta till dedikerad kapacitet eftersom det antyder att ”dedikerad” är överlägset ”delad” kapacitet. 
+
+**Automatiska insikter** kallas nu för *Snabbinsikter*.
 
 ## <a name="b"></a>B
 
@@ -49,7 +51,7 @@ Den här ordlista är ett community-arbete.  Saknar du något ord? Be oss att l�
 
 **bokmärke** En vy över data som hämtats till fönstret Bokmärken i en rapport i Power BI Desktop eller Power BI-tjänsten. I Desktop sparas bokmärken i .pbix-rapportfilen för delning i Power BI-tjänsten
   
-**breadcrumbs (sökvägar)** Navigeringen längst upp till vänster för snabb navigering mellan arbetsytor.
+**breadcrumbs (sökvägar)** Navigeringen längst upp till vänster för snabb navigering mellan rapporter och instrumentpaneler.
 
 ## <a name="c"></a>C
 
@@ -71,7 +73,7 @@ Den här ordlista är ett community-arbete.  Saknar du något ord? Be oss att l�
 
 **content list (innehållslista)** Innehållsindexet för en app.
 
-**content pack (Innehållspaket)** En uppsättning kompletta datauppsättningar, rapporter och instrumentpaneler. Nu till **appar**: lär dig mer [om den nya arbetsytan](https://docs.microsoft.com/power-bi/service-create-the-new-workspaces). 
+**content pack (Innehållspaket)** En uppsättning kompletta datauppsättningar, rapporter och instrumentpaneler. De ersätts av **appar**, lär dig mer [om den nya arbetsytan](https://docs.microsoft.com/power-bi/service-create-the-new-workspaces). 
 
 **content view (innehållsvy)**
 
@@ -89,26 +91,29 @@ Den här ordlista är ett community-arbete.  Saknar du något ord? Be oss att l�
 
 **data connector (datakoppling)** Se kopplingar
 
-**data model, Excel Data Model (datamodell, Excel-datamodell)**
+**data modell, data modell i Excel** I Power BI-innehåll refererar en datamodell till en karta över datastrukturer i ett tabellformat. Datamodellen visar de relationer som används för att bygga databaser. Rapportdesigners, administratörer och utvecklare skapar och arbetar med datamodeller för att skapa Power BI-innehåll.
 
+**dataflöde** Dataflöden matar in, transformerar, integrerar och utökar stordata genom att definiera anslutningar till datakällor, ETL-logik, uppdateringsscheman med mera. Tidigare datapool.
 
 **dataset (Datauppsättning)** kontra **datakälla** En **datauppsättning** är en samling data som används för att skapa visualiseringar och rapporter.
 
 **dedicated capacity (dedikerad kapacitet)** [Power BI Premium] Datamodeller som körs på dedikerad maskinvara i Microsofts molndatacenter för att säkerställa konsekventa prestanda i stor skala. BI-lösningar levereras till hela organisationen oavsett Power BI-licens.
 
-**Desktop** Första instans: Power BI Desktop, efterföljande omnämnanden: Skrivbord
+**Skrivbord** eller **Power BI Desktop** Kostnadsfritt Power BI-verktyg som främst används av rapportdesigners, administratörer och utvecklare. 
+
 
 
 **diamond (romb)** Power BI Premium. Formen på den ikon som indikerar att en arbetsyta är en arbetsyta för Premium-kapacitet.
 
-**drill up, drill down, drillthrough (detaljnivå, visa detaljnivå, detaljerad information)**
+**minska detaljnivån, öka detaljnivån, visa detaljnivå** I Power BI kan du ändra detaljnivån och lära dig mer om hur du kan utforska nästa detaljnivå i en rapport eller ett visuellt objekt. Använd olika detaljnivåer för att referera till möjligheten att välja en del av ett visuellt objekt och gå till en annan sida i rapporten, filtrerad efter de data som relaterar till den del av det visuella objektet som du valde på den ursprungliga sidan.
+Att öka detaljnivån innebär oftast att man visar de underliggande posterna.
 
 ## <a name="e"></a>E
 
 **Editing View (Redigeringsvy)** Läget där *rapportdesigners* kan utforska, designa, skapa och dela en rapport.
 
 **ellipsis (ellips)** ...    
-Om du väljer en ellips visas ytterligare menyalternativ.
+Om du väljer en ellips visas ytterligare menyalternativ. Kallas även för menyn **Fler åtgärder**.
 
 **embed code (bädda in kod)** En vanlig standard på Internet. I Power BI kan kunden generera en inbäddningskod och kopiera den för att placera innehåll, till exempel en rapportvisualisering, på en webbplats eller i en blogg.
 
@@ -117,22 +122,20 @@ Om du väljer en ellips visas ytterligare menyalternativ.
 **embedding (inbäddning)** I Power BI-utvecklingsprodukten syftar inbäddning på att integrera analyser i appar med Power BI REST-API:erna och Power BI SDK.
 
 
-**environment (miljö)** [Power BI Desktop, Power BI Mobile osv.] Använd Power BI-miljö. För kunder med flera klientorganisationer syftar detta på att välja klientorganisation att ansluta till.
-Power BI-miljö (klientorganisation) kan användas i dokumentation om det hjälper affärsanalytiker som är bekanta med termen ”klientorganisation” att förstå att det är samma sak.
+**miljö** [Power BI Desktop, Power BI Mobile, Power BI-tjänst, osv.] Ett annat sätt att referera till ett av Power BI-verktygen. Power BI-miljö (klientorganisation) kan användas i dokumentation om det hjälper affärsanalytiker som är bekanta med termen ”klientorganisation” att förstå att det är samma sak.
 
 ## <a name="f"></a>F
 
 **favorite, unfavorite (favorit, ta bort favorit)** Verb som betyder att lägga till i listan Favoriter för snabb åtkomst till instrumentpaneler och rapporter i Power BI som ofta används. När du inte längre vill ha kvar dem som favoriter kan du ta bort dem.
 
-**filter**
+**Filtrera** jämfört med **markering** Ett filter tar bort data som inte gäller. En gråmarkering tonar bort data som inte gäller. 
 
-**formatting (formatering)**
 
-**focus mode (fokusläge)** [Power BI-tjänsten]
+**fokusläge** Använd fokusläge för att expandera (fälla ut) ett visuellt objekt eller en panel för att se mer information. Du kan fortfarande interagera med det visuella objektet eller panelen i fokusläge. 
 
-**Free account (Kostnadsfritt konto)** Se konto i den här termsamlingen
+**Kostnadsfritt konto** Se *konto*
 
-**full screen, full-screen mode (helskärm, helskärmsläge)** [Power BI-tjänsten]
+**helskärm, helskärmsläge** Använd helskärmsläge för att visa Power BI-innehåll utan störande menyer och navigeringsfönster. Detta kallas ibland för TV-läge. 
 
 ## <a name="g"></a>G
 
@@ -145,7 +148,7 @@ Power BI-miljö (klientorganisation) kan användas i dokumentation om det hjälp
 
 ## <a name="i"></a>I
 
-**insights (insikter)** Den automatiska dataanalysen som utförs när våra maskininlärningsalgoritmer för insikter körs.
+**insikter** Se **Snabbinsikter-** .
 
 
 ## <a name="j"></a>J
@@ -170,17 +173,15 @@ Första förekomsten: navigeringsfönstret Efterföljande omnämnanden eller vid
 
 **modeling (modellering)** [Power BI Desktop] Att hämta data som du har anslutit till och som är redo att användas i Power BI. Detta omfattar att skapa relationer mellan tabeller i flera datakällor, att skapa mått och att tilldela mått.
 
-**My workspace (Min arbetsyta)** Arbetsytan där Power BI-kunder kan skapa innehåll. Om de vill paketera något som skapats här i en app, och de har *designerbehörighet*, överför de innehållet till lämplig arbetsyta eller skapar en ny.
+**My workspace (Min arbetsyta)** Arbetsytan som Power BI-kunder kan använda för att skapa innehåll. Om de vill paketera något som skapats här i en app, och de har *designerbehörighet*, överför de innehållet till lämplig arbetsyta eller skapar en ny.
 
 ## <a name="n"></a>N
 
 **native (inbyggt)** Inbyggt i produkten. Till exempel levereras Power BI med en uppsättning *inbyggda* visualiseringstyper. Men du kan också importera andra typer, till exempel anpassade visuella objekt.
 
-**nav pane (navigeringsfönster)** eller **nav pane** Kontrollerna längs vänsterkanten i Power BI-tjänsten.
+**navigation pane (navigeringsfönster)** eller **nav pane** Kontrollerna längs vänsterkanten i Power BI-tjänsten.
 
 Första förekomsten: navigeringsfönstret Efterföljande omnämnanden eller vid begränsat utrymme: nav pane
-
-**nave pane (navigeringsfönster)** Se **nav pane**
 
 **notification (meddelande)** Meddelandena som skickas av och till Power BI-meddelandecentret.  
 
@@ -191,15 +192,14 @@ Första förekomsten: navigeringsfönstret Efterföljande omnämnanden eller vid
 
 **OneDrive for Business (OneDrive för företag)** jämfört med **OneDrive** OneDrive är ett personligt konto och OneDrive för företag är för arbetskonton.  
 
-**On-premises data gateway (Lokal datagateway)**
-
+**Lokal** Det begrepp som används för att särskilja lokal databehandling (där datorresurserna finns på kundens egna anläggningar) från molnbaserad databehandling.
 
 
 ## <a name="p"></a>P
 
 **PaaS** PaaS står för Platform as a Service, eller plattform som en tjänst. Till exempel Power BI Embedded.
 
-**page (sida)** Rapporter har en eller flera sidor. Varje flik längs nederkanten av rapportarbetsytan representerar en sida.
+**page (sida)** Rapporter har en eller flera sidor. Varje flik på rapportarbetsytan representerar en sida.
 
 **pbiviz** Filnamnstillägget för en anpassad visualisering i Power BI.
 
@@ -211,7 +211,7 @@ Första förekomsten: navigeringsfönstret Efterföljande omnämnanden eller vid
 
 **phone view (telefonvy)** Användargränssnittet i Power BI-tjänsten för att utforma en telefonrapport.
 
-**pin, unpin (fästa, plocka bort)** Att placera ett visuellt objekt, vanligtvis från en rapport, på en instrumentpanel.
+**pin, unpin (fästa, plocka bort)** Den åtgärd som en *rapportdesigner* vidtar för att placera ett visuellt objekt, vanligtvis från en rapport, på en instrumentpanel.
 
 **Power BI**, **Power BI-tjänsten**, **Power BI Desktop**, **Power BI Mobile** Exempel på Power BI-produkter. *Power BI* är den generella termen. Termen används ofta i stället för det fullständiga produktnamnet, t.ex. *Power BI-tjänsten* eller *Power BI Mobile*, efter den första referensen till det fullständiga produktnamnet.
 
@@ -227,10 +227,9 @@ Första förekomsten: navigeringsfönstret Efterföljande omnämnanden eller vid
 
 **Power BI service (Power BI-tjänst)** En SaaS-tjänst (programvara som tjänst) online. Mer information finns i [Vad är Power BI?](../fundamentals/power-bi-overview.md).
 
-**Power BI service connector (Power BI-tjänstanslutning)** Den här anslutningen gör att Power BI Desktop-användare kan ansluta till datauppsättningar i Power BI-tjänsten från Desktop. De kan skapa en modell en gång och återanvända den i många rapporter och på många instrumentpaneler.
-
 **Premium workspace (Premium-arbetsyta)** En arbetsyta som körs i dedikerad kapacitet, och som visas för kunder i form av en rombikon.  
 
+**publicera** Power BI-tjänstrapportens *designers* paketerar innehållet i en Power BI-arbetsyta för att göra den tillgänglig för andra i form av en Power BI-app. Power BI Desktop-rapport*designers* använder publicering för att referera till att skicka en Power BI Desktop-rapport i. pbix-format till Power BI-tjänsten så att de kan bygga instrumentpaneler med den och enkelt dela den med andra. 
 
 ## <a name="q"></a>Q
 **Q& (Frågor och svar)** Möjligheten att skriva frågor på naturligt språk om en datauppsättning och få svar i form av visualiseringar. Visas i Power BI-tjänsten och Desktop.
@@ -243,13 +242,10 @@ Första förekomsten: navigeringsfönstret Efterföljande omnämnanden eller vid
 **query string parameter (frågesträngsparameter)**  
 Lägg till i en URL om du vill förfiltrera resultaten som visas i en Power BI-rapport. I dess mest generella betydelse hämtar en frågesträng information från en databas.
 
-**Quick Insights**
-
-
-**quick measures (snabbmått)**
+**Snabbinsikter** Snabbinsikter avser automatiskt genererade insikter som avslöjar trender och mönster i data.  
 
 ## <a name="r"></a>R
-**R, Microsoft R**
+**R, Microsoft R** R är ett programmeringsspråk och en programmiljö för statistisk databehandling och grafik.
 
 **Reading View (läsvy)** Skrivskyddad vy för rapporter (till skillnad mot redigeringsvyn).
 
@@ -264,19 +260,24 @@ Lägg till i en URL om du vill förfiltrera resultaten som visas i en Power BI-r
 **report (rapport)**  
 En rapport visar en enda datauppsättning från flera perspektiv med visualiseringar som representerar olika fynd och insikter från datauppsättningen. Kan ha en enda visualisering eller många, eller en enda sida eller många.  
 
-**report editor (rapportredigerare)**
+**rapportredigeraren** Rapportredigeraren är den plats där nya rapporter skapas och ändringar görs i befintliga rapporter av rapport*designers*. 
 
-**report measures (rapportmått)** Kallas även anpassade beräkningar. I Excel kallas dessa för beräknade fält. Se även *mått*.   
-**report server (rapportserver)** En instans av en rapportserver.
+**report measures (rapportmått)** Kallas även anpassade beräkningar. I Excel kallas dessa för *beräknade fält*. Se även *mått*.   
 
 **responsive visuals (dynamiska visuella objekt)** Visuella objekt som ändras dynamiskt för att visa den maximala mängden data och insikter, oavsett skärmstorlek.
 
+**säkerhet på radnivå** En Power BI-funktion som databasadministratörer möjlighet att styra åtkomsten till rader i en databastabell baserat på egenskaperna för användaren som kör en fråga (t.ex. gruppmedlemskap).  
+
+Administratörer kan konfigurera RLS för datamodeller som importerats till Power BI med Power BI Desktop.  
+
+
 ## <a name="s"></a>S
 **SaaS**   
+Programvara som en tjänst (eller SaaS) är ett sätt att leverera program via Internet, som en webbaserad tjänst. Kallas även: webbaserad programvara, programvara på begäran eller värdbaserad programvara. 
 
 **screenshot (skärmbild)** Enkla skärmdumpar av en rapport kan skickas via e-post med hjälp av funktionen Skicka en skärmbild.
 
-**service (tjänst)** Se *Power BI-tjänsten*
+**tjänst** se *Power BI-tjänst* E fristående resurs som är tillgänglig för kunder via prenumeration eller licens. En tjänst är ett produkterbjudande som levereras exklusivt via molnet.  
 
 **Settings (inställningar)** Platsen där Power BI-användare kan hantera sina egna allmänna inställningar, till exempel om de vill förhandsgranska nya funktioner, ange standardspråk, stänga sitt konto osv. Användare kan även hantera enskilda inställningar för innehållstillgångar, aviseringar och prenumerationer. Representeras av en kugghjulsikon.
 
@@ -285,8 +286,7 @@ På mobila enheter kan delning syfta på interna delningsfunktioner i operativsy
 
 **Shared with me (Delat med mig)** Containern i navigeringsfönstret som innehåller alla enskilda artefakter som delats direkt av en annan Power BI-användare.
 
-**snapshot (ögonblicksbild)**
-
+**ögonblicksbild** I Power BI är en ögonblicksbild en statisk bild eller en live-avbildning av en panel, en instrumentpanel eller en rapport.
 
 **SQL Server Analysis Services (SSAS)** 
  

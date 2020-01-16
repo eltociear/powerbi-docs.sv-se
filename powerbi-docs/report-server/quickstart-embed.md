@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc
-ms.openlocfilehash: fe91de89e7eec601c516895089e3dcc03eff14ea
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 4e7616ec3ce6552130848bc0508bf8b9ac8ac965
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/04/2020
-ms.locfileid: "75657223"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762610"
 ---
 # <a name="embed-a-power-bi-report-server-report-using-an-iframe-in-sharepoint-server"></a>Bädda in en Power BI-rapportserverrapport med en iFrame i SharePoint Server
 
@@ -25,7 +25,7 @@ I den här artikeln lär du dig att bädda in en Power BI-rapportserverrapport m
 * [Power BI-rapportserver](https://powerbi.microsoft.com/report-server/) ska vara installerad och konfigurerad.
 * [Power BI Desktop som har optimerats för Power BI-rapportservern](install-powerbi-desktop.md) ska vara installerat.
 * En [SharePoint](https://docs.microsoft.com/sharepoint/install/install)-miljö ska installerad och konfigurerad.
-* Internet Explorer 11 stöds endast vid användning av SharePoint Online.  Du kan använda andra webbläsare som stöds i ettdera scenariot.
+* Internet Explorer 11 stöds endast om dokumentläget är inställt på IE11 (Edge)-läge eller när du använder SharePoint Online. Du kan använda andra webbläsare som stöds med SharePoint lokalt och SharePoint Online.
 
 ## <a name="create-the-power-bi-report-url"></a>Skapa Power BI-rapport-URL:en
 

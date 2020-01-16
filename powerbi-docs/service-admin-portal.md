@@ -10,12 +10,12 @@ ms.date: 09/25/2019
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 99d57b734e42913db20e8a414c3216ed66334fa8
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: de745777a5ad6da1149328d9df92be9ecccfc181
+ms.sourcegitcommit: 801d2baa944469a5b79cf591eb8afd18ca4e00b1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75224165"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885309"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administrera Power BI i Admin-portalen
 
@@ -25,7 +25,7 @@ Hela administrationsportalen är tillgänglig för alla användare som är globa
 
 ## <a name="how-to-get-to-the-admin-portal"></a>Navigera till administrationsportalen
 
-Ditt konto måste vara markerat som **Global administratör** i Office 365 eller Azure Active Directory, eller ha tilldelats administratörsrollen för Power BI-tjänsten, för att ha åtkomst till Power BI-administratörsportalen. Läs mer om administratörsrollen för Power BI-tjänsten i [Förstå administratörsrollen för Power BI](service-admin-role.md). Gör följande för att gå till Power BI-administratörsportalen.
+Ditt konto måste vara markerat som **Global administratör** i Office 365 eller Azure Active Directory (Azure AD), eller ha tilldelats administratörsrollen för Power BI-tjänsten, för att ha åtkomst till Power BI-administratörsportalen. Läs mer om administratörsrollen för Power BI-tjänsten i [Förstå administratörsrollen för Power BI](service-admin-role.md). Gör följande för att gå till Power BI-administratörsportalen.
 
 1. Välj kugghjulet längst upp till höger i Power BI-tjänsten.
 
@@ -190,13 +190,16 @@ I administrationsportalen styr du också vilka användare som har behörighet at
 
 ### <a name="share-content-with-external-users"></a>Dela innehåll med externa användare
 
-Användare i organisationen kan dela instrumentpaneler med användare utanför organisationen. Läs mer om att [dela externt](service-share-dashboards.md#share-a-dashboard-or-report-outside-your-organization).
+Användare i organisationen kan dela instrumentpaneler, rapporter och appar med användare utanför organisationen. Läs mer om att [dela externt](service-share-dashboards.md#share-a-dashboard-or-report-outside-your-organization).
 
 ![Inställning för externa användare](media/service-admin-portal/powerbi-admin-sharing-external-02.png)
 
 Följande bild visar meddelandet som visas när du delar med en extern användare.
 
 ![Dela med externa användare](media/service-admin-portal/powerbi-admin-sharing-external.png)  
+
+> [!IMPORTANT]
+> Det här alternativet styr huruvida användare i Power BI kan bjuda in externa användare att bli Azure Active Directory B2B (Azure AD B2B)-gästanvändare i din organisation via Power BI. När funktionen är aktiverad kan användare som har rollen gästanvändare i Azure AD lägga till externa e-postadresser när de delar rapporter, instrumentpaneler och Power BI-appar. Den externa mottagaren uppmanas att ansluta till din organisation som en Azure AD B2B-gästanvändare. Observera att när den här inställningen inaktiveras fortsätter externa användare som redan är Azure AD B2B-gästanvändare i din organisation att visas i användargränssnitt med personväljaren i Power BI och kan ges åtkomst till objekt, arbetsytor och appar.
 
 ### <a name="publish-to-web"></a>Publicera på webben
 
@@ -247,14 +250,14 @@ Följande bild visar menyn **Arkiv** för en rapport när inställningen **Skriv
 ![Skriva ut rapporten](media/service-admin-portal/powerbi-admin-print-report.png)
 
 ### <a name="allow-external-guest-users-to-edit-and-manage-content-in-the-organization"></a>Tillåt externa gästanvändare att redigera och hantera innehåll i organisationen
-Azure Active Directory B2B-gästanvändare kan redigera och hantera innehåll i organisationen. [Läs mer](service-admin-azure-ad-b2b.md)
+
+Azure AD B2B-gästanvändare kan redigera och hantera innehåll i organisationen. [Läs mer](service-admin-azure-ad-b2b.md)
 
 I följande bild visas alternativet Tillåt externa gästanvändare att redigera och hantera innehåll i organisationen.
 
 ![Tillåt externa gästanvändare att redigera och hantera innehåll i organisationen](media/service-admin-portal/powerbi-admin-tenant-settings-b2b-guest-edit-manage.png)
 
-> [!IMPORTANT]
-> När du lägger till en extern användare i din Azure AD-klientorganisation (antingen manuellt eller genom att dela en rapport med användaren) kan interna konton nu se det aktuella användarkontot. En intern användare kan dela andra saker med den externa användaren även om det interna kontot inte behörighet att dela externt.
+I administrationsportalen styr du också vilka användare som har behörighet att bjuda in externa användare till organisationen. Mer information finns i [Dela innehåll med externa användare](#export-and-sharing-settings) i den här artikeln.
 
 ### <a name="email-subscriptions"></a>E-postprenumerationer
 Användare i organisationen kan skapa e-postprenumerationer. Läs mer om [prenumerationer](service-report-subscribe.md).
@@ -508,7 +511,7 @@ Välj kugghjulsikonen om du vill uppdatera det visuella objektet från organisat
 
 Kontrollera att visualiserings-ID förblir oförändrat. Den nya filen ersätter den tidigare filen för alla rapporter i hela organisationen. Men om den nya versionen av visualiseringen kan skada någon användnings- eller datastruktur av den tidigare versionen av visualiseringen ska du inte ersätta den tidigare versionen. I stället bör du skapa en ny lista för den nya versionen av visualiseringen. Lägg till exempel till ett nytt versionsnummer (version X.X) till rubriken för den nya listade visualiseringen. På det här sättet är det klart att det är samma visualisering men bara med ett uppdaterat versionsnummer så att befintliga rapporter inte skadar deras funktioner. Kontrollera igen att visualiserings-ID förblir oförändrat. Nästa gång användarna använder organisationens databas från Power BI Desktop kan de importera den nya versionen, vilket tvingar dem att ersätta den aktuella version som de har i sina rapporter.
 
-Mer information finns i [Vanliga frågor och svar om anpassade visuella objekt i en organisation](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-faq#organizational-visuals)
+Mer information finns i [Vanliga frågor och svar om anpassade visuella objekt i en organisation](/power-bi/developer/power-bi-custom-visuals-faq#organizational-power-bi-visuals)
 
 ## <a name="dataflowStorage">Dataflödeslagring (förhandsversion)</a>
 

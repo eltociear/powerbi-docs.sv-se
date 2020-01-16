@@ -1,6 +1,6 @@
 ---
 title: Använda Analysis Services-tabelldata i Power BI Desktop
-description: Analysis Services-tabelldata i Power BI Desktop
+description: Analysis Services tabelldata i Power BI Desktop
 author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
@@ -9,25 +9,25 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f7af1c584802181cab68f6ce2fc4823ec7078354
-ms.sourcegitcommit: 331ebf6bcb4a5cdbdc82e81a538144a00ec935d4
+ms.openlocfilehash: 7ce20b8b6dc382cdafe61bde3e9305197fd33ea6
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/28/2019
-ms.locfileid: "75523037"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762081"
 ---
-# <a name="using-analysis-services-tabular-data-in-power-bi-desktop"></a>Använda Analysis Services-tabelldata i Power BI Desktop
+# <a name="connect-to-analysis-services-tabular-data-in-power-bi-desktop"></a>Ansluta till Analysis Services-tabelldata i Power BI Desktop
 Med Power BI Desktop finns det två sätt att ansluta till och hämta data från SQL Server Analysis Services-tabellmodellerna: Utforska genom att använda en live-anslutning eller Välj objekt och importera till Power BI Desktop.
 
 Låt oss ta en närmare titt.
 
-**Utforska genom att använda en live-anslutning** – När du använder en live-anslutning kommer objekten i din tabellmodell eller ditt perspektiv, t.ex. tabeller, kolumner och mått, visas i listan med Power BI Desktop-fält. Du kan använda Power BI Desktops avancerade visualiserings- och rapportverktyg till att utforska din tabellmodell på nya interaktiva sätt.
+**Utforska genom att använda en live-anslutning** – När du använder en live-anslutning kommer objekten i din tabellmodell eller ditt perspektiv, t.ex. tabeller, kolumner och mått, att visas i listan med Power BI Desktop-fält. Du kan använda Power BI Desktops avancerade visualiserings- och rapportverktyg för att utforska din tabellmodell på nya interaktiva sätt.
 
 När du ansluter live importeras inte några data från tabellmodellen till Power BI Desktop. Varje gång du interagerar med en visualisering frågar Power BI Desktop efter tabellmodellen och beräknar resultatet som visas. Du ser alltid de senaste data som är tillgängliga i tabellmodellen, antingen från den senaste bearbetningstiden eller från Direct Query-tabeller som är tillgängliga i tabellmodellen. 
 
-Kom ihåg att tabellmodeller är mycket säkra. Vilka objekt som visas i Power BI Desktop beror på din behörighet för tabellmodellen du är ansluten till.
+Kom ihåg att tabellmodeller är mycket säkra. Vilka objekt som visas i Power BI Desktop beror på din behörighet för den tabellmodell du är ansluten till.
 
-När du har skapat dynamiska rapporter i Power BI Desktop kan du dela dem genom att publicera dem på Power BI-webbplatsen. När du publicerar en Power BI Desktop-fil med en live-anslutning till en tabellmodell på Power BI-webbplatsen, måste en lokal datagateway vara installerad och konfigurerad av en administratör. Läs mer i [Lokal datagateway](service-gateway-onprem.md).
+När du har skapat dynamiska rapporter i Power BI Desktop kan du dela dem genom att publicera dem på Power BI-webbplatsen. När du publicerar en Power BI Desktop-fil med en live-anslutning till en tabellmodell på Power BI-webbplatsen måste en lokal datagateway vara installerad och konfigurerad av en administratör. Läs mer i [Lokal datagateway](service-gateway-onprem.md).
 
 **Välj poster och importera till Power BI Desktop** – När du ansluter med det här alternativet kan du välja objekt som tabeller, kolumner och mått i tabellmodellen eller perspektivet och läsa in dem i en Power BI Desktop-modell. Du kan använda Power BI Desktops avancerade frågeredigerare till att ytterligare utforma som du vill. Du kan använda Power BI Desktops modelleringsfunktioner till att ytterligare modellera datan. Live-anslutning mellan Power BI Desktop och tabellmodellen behålls inte. Du kan sedan utforska din Power BI Desktop-modell offline eller publicera på Power BI-webbplatsen.
 
@@ -46,7 +46,7 @@ När du har skapat dynamiska rapporter i Power BI Desktop kan du dela dem genom 
 * Om du ansluter live i navigatören väljer du en tabellmodell eller ett perspektiv.
   
   ![](media/desktop-analysis-services-tabular-data/pbid_sqlas_getdata_as_live.png)
-* Om du valde Välj objekt och hämta data i navigatören, väljer du en tabellmodell eller ett perspektiv. Du kan sedan välja att endast specifika tabeller eller kolumner ska läsas in. Klicka på Redigera om du vill öppna frågeredigeraren för att utforma dina data innan du läser in dem. När du är klar klickar du på Läs in för att importera data till Power BI Desktop.
+* Om du valde Välj objekt och hämta data i navigatören väljer du en tabellmodell eller ett perspektiv. Du kan sedan välja att endast specifika tabeller eller kolumner ska läsas in. Klicka på Redigera om du vill öppna frågeredigeraren för att utforma dina data innan du läser in dem. När du är klar klickar du på Läs in för att importera data till Power BI Desktop.
 
   ![](media/desktop-analysis-services-tabular-data/pbid_sqlas_getdata_as_select.png)
 
@@ -59,7 +59,7 @@ Om du valde Välj objekt och hämta data importerar du tabellmodelldata till din
 
 **Fråga:** Vad är skillnaden mellan att ansluta live till en tabellmodell från Power BI-tjänsten och att ansluta live från Power BI Desktop?
 
-**Svar:** När du ansluter live till en tabellmodell från webbplatsen i Power BI-tjänsten till en Analysis Services-databas lokalt i din organisation, måste du ha en lokal datagateway för att skydda kommunikationen mellan dem. När du ansluter live till en tabellmodell från Power BI Desktop krävs ingen gateway eftersom både Power BI Desktop och Analysis Services-servern som du ansluter till körs lokalt i din organisation. Men om du publicerar din Power BI Desktop-fil på Power BI-webbplatsen krävs en gateway.
+**Svar:** När du ansluter live till en tabellmodell från webbplatsen i Power BI-tjänsten till en Analysis Services-databas lokalt i din organisation måste du ha en lokal datagateway för att skydda kommunikationen mellan dem. När du ansluter live till en tabellmodell från Power BI Desktop krävs ingen gateway eftersom både Power BI Desktop och Analysis Services-servern som du ansluter till körs lokalt i din organisation. Men om du publicerar din Power BI Desktop-fil på Power BI-webbplatsen krävs en gateway.
 
 **Fråga:** Om jag har skapat en live-anslutning kan jag ansluta till en annan datakälla i samma Power BI Desktop-fil?
 
@@ -75,7 +75,7 @@ Om du valde Välj objekt och hämta data importerar du tabellmodelldata till din
 
 **Fråga:** I navigatören ser jag både en modell och ett perspektiv. Vad är skillnaden?
 
-**Svar:** Ett perspektiv är en viss vy av en tabellmodell. Den kan innehålla enbart specifika tabeller, kolumner eller mått, beroende på det unika dataanalysbehovet. En tabellmodell innehåller alltid minst ett perspektiv, som kan omfatta allt i modellen. Om du är osäker vad du bör välja kan du kontrollera med administratören.
+**Svar:** Ett perspektiv är en viss vy av en tabellmodell. Den kan innehålla enbart specifika tabeller, kolumner eller mått, beroende på det unika dataanalysbehovet. En tabellmodell innehåller alltid minst ett perspektiv som kan omfatta allt i modellen. Om du är osäker vad du bör välja kan du kontrollera med administratören.
 
 **Fråga:** Finns det några funktioner i Analysis Services som ändrar beteendet för Power BI?
 

@@ -8,13 +8,13 @@ ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
-ms.date: 11/04/2019
-ms.openlocfilehash: 1493f628ce822afa020e300ff7428da059fcc65d
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.date: 01/04/2019
+ms.openlocfilehash: 48aae2391ead5ded0860364ce5942d7bd725c2d9
+ms.sourcegitcommit: b68a47b1854588a319a5a2d5d6a79bba2da3a4e6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74311432"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75731269"
 ---
 # <a name="tutorial-embed-power-bi-paginated-reports-into-an-application-for-your-customers-preview"></a>Självstudie: Bädda in Power BI:s sidnumrerade rapporter i ett program åt dina kunder (förhandsversion)
 
@@ -271,6 +271,12 @@ Du kan använda ett fullständigt exempel i JavaScript API i [Playground-verktyg
 
 ## <a name="next-steps"></a>Nästa steg
 
-I den här självstudien har du lärt dig att bädda in Power BI:s sidnumrerade rapporter i ett program åt dina kunder. Du kan även prova att bädda in Power BI-innehåll för din organisation.
+I den här självstudien har du lärt dig att bädda in Power BI:s sidnumrerade rapporter i ett program åt dina kunder. Du kan även prova att bädda in Power BI-innehåll för dina kunder eller din organisation.
+
+> [!div class="nextstepaction"]
+>[Bädda in innehåll för kunderna](embed-sample-for-customers.md)
+
+> [!div class="nextstepaction"]
+>[Bädda in innehåll för organisationen](embed-sample-for-your-organization.md)
 
 Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
