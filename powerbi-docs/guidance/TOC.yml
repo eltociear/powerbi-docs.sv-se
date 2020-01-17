@@ -52,12 +52,14 @@
               href: dax-avoid-avoid-filter-as-filter-argument.md
         - name: Skapa rapport
           items:
-            - name: Utöka visuella objekt med knappbeskrivningar för rapportsida
+            - name: Utöka visuella objekt med knappbeskrivningar för rapportsidor
               href: report-page-tooltips.md
-            - name: Visa detaljerad information för rapportsida
+            - name: Använd detaljerad information för rapportsidor
               href: report-drillthrough.md
             - name: Använda sidnumrerade rapporter i Power BI
               href: report-paginated-or-power-bi.md
+            - name: Undvik tomma sidor när du skriver ut sidnumrerade rapporter
+              href: report-paginated-blank-page.md
             - name: Migrera SQL Server Reporting Services-rapporter till Power BI
               href: migrate-ssrs-reports-to-power-bi.md
     - name: Vitböcker

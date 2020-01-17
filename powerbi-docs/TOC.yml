@@ -357,6 +357,8 @@
               href: visuals/power-bi-visualization-kpi.md
             - name: Skapa och använda visuella KPI-objekt
               href: visuals/desktop-matrix-visual.md
+            - name: Skapa och använda visuella objekt i Power Apps
+              href: visuals/power-bi-visualization-powerapp.md
             - name: Om visuella objekt för frågor och svar i Power BI
               href: visuals/power-bi-visualization-q-and-a.md
             - name: Skapa och använda visuella R-objekt
@@ -1035,6 +1037,8 @@
               href: report-server/configure-kerberos-powerbi-reports.md
             - name: Konfigurera mobilappåtkomst via fjärranslutning
               href: report-server/configure-powerbi-mobile-apps-remote.md
+            - name: Konfigurera WAP och AD FS
+              href: report-server/connect-adfs-wap-report-server.md
             - name: Mobil fjärråtkomst med Azure AD
               href: 'https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi'
             - name: Vara värd för Excel-arbetsböcker
