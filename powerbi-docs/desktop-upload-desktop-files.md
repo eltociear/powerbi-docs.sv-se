@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: fa8e901d73d6ae0f35e74a427354368e75977202
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: d528ba824986ff171688a55aee2ca2febe523236
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73865350"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75759300"
 ---
-# <a name="publish-from-power-bi-desktop"></a>Publicera från Power BI Desktop
+# <a name="publish-datasets-and-reports-from-power-bi-desktop"></a>Publicera datamängder och rapporter från Power BI Desktop
 När du publicerar en **Power BI Desktop**-fil till **Power BI-tjänsten** publiceras data i modellen och de rapporter som du skapade i **Rapportvyn** till Power BI-arbetsytan. En ny datamängd med samma namn och eventuella rapporter visas i navigatorfältet för arbetsytan.
 
 Publicering från **Power BI Desktop** har samma effekt som att använda **Hämta Data** i Power BI för att ansluta till och ladda upp en **Power BI Desktop**-fil.
@@ -27,7 +27,7 @@ Publicering från **Power BI Desktop** har samma effekt som att använda **Hämt
 > 
 
 ## <a name="to-publish-a-power-bi-desktop-dataset-and-reports"></a>Så här publicerar du en Power BI Desktop-datauppsättning och rapporter
-1. I Power BI Desktop väljer du **Arkiv** \> **Publicera** \> **Publicera till Power BI**, eller klickar på **Publicera** menyfliksområdet.  
+1. I Power BI Desktop väljer du **Arkiv** \> **Publicera** \> **Publicera till Power BI**, eller klickar på **Publicera** i menyfliksområdet.  
 
    ![Knappen Publicera](media/desktop-upload-desktop-files/pbid_publish_publishbutton.png)
 

@@ -8,14 +8,14 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 623a0bbd187a997003ce7b82cc76d5c4fbe9ce44
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 740760121635cc0dccb0f2aa64750ebf649d8de3
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73868053"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761213"
 ---
-# <a name="directquery-model-troubleshooting-in-power-bi-desktop"></a>Felsöka DirectQuery-modell i Power BI Desktop
+# <a name="troubleshoot-developing-directquery-models-in-power-bi-desktop"></a>Felsöka utveckling av DirectQuery-modeller i Power BI Desktop
 
 Den här artikeln är avsedd för datamodellerare som utvecklar DirectQuery-modeller i Power BI, antingen i Power BI Desktop eller i Power BI-tjänsten. I det här avsnittet beskrivs hur du diagnostiserar prestandaproblem och hur du hämtar mer detaljerad information så att du kan optimera rapporter.
 

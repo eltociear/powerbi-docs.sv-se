@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 04/10/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 8d5923c111debb14aab46977d42f3357837d9399
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 86307a871503dd42e565099b810cb82efa109417
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73878304"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761236"
 ---
-# <a name="directquery-and-sap-hana"></a>DirectQuery och SAP HANA
+# <a name="connect-to-sap-hana-data-sources-by-using-directquery-in-power-bi"></a>Ansluta till SAP HANA-datakällor med hjälp av DirectQuery i Power BI
 Du kan ansluta till **SAP HANA**-datakällor direkt med **DirectQuery**. Det finns två alternativ när du ansluter till SAP HANA:
 
 * **Hantera SAP HANA som en flerdimensionell källa (standard):**  I det här fallet ska beteendet vara detsamma som när Power BI ansluter till andra flerdimensionella källor som SAP Business Warehouse eller Analysis Services. När du ansluter till SAP HANA med den här inställningen väljs en enda analys- eller beräkningsvy, och alla åtgärder, hierarkier och attribut för den vyn blir tillgängliga i fältlistan. Då visuell information skapas, kommer sammanställda data alltid att hämtas från SAP HANA. Det är den rekommenderade metoden och är standard för nya DirectQuery-rapporter över SAP HANA.

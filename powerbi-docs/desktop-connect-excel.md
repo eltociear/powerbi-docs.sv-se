@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 31caf34b9167c282dc36afd5322458f76e7a7614
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: c63b84b506b872831c1a5ce00f6ef0e79f993849
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878589"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761667"
 ---
-# <a name="connect-to-excel-in-power-bi-desktop"></a>Ansluta till Excel i Power BI Desktop
+# <a name="connect-to-excel-workbooks-in-power-bi-desktop"></a>Anslut till Excel-arbetsböcker i Power BI Desktop
 Det är enkelt att ansluta till en Excel-arbetsbok från Power BI Desktop. Den här artikeln vägleder dig genom stegen.
 
 I Power BI Desktop väljer du **Hämta data** > Excel från fliken **Start** i menyfliksområdet.

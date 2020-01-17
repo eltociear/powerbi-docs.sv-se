@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: ffff443716f11101347debd97f28349afc3904bb
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: fee47524be70955a123d08e10dca5ee0dd3e07fd
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876334"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761190"
 ---
-# <a name="directquery-and-sap-business-warehouse-bw"></a>DirectQuery och SAP Business Warehouse (BW)
+# <a name="connect-to-sap-business-warehouse-by-using-directquery-in-power-bi"></a>Ansluta till SAP Business Warehouse med hjälp av DirectQuery i Power BI
 Du kan ansluta till **SAP Business Warehouse (BW)** -datakällor direkt med **DirectQuery**. På grund av SAP BW:s OLAP/flerdimensionella natur så finns det många viktiga skillnader mellan DirectQuery över SAP BW jämfört med relationella källor som SQL Server. Dessa skillnader kan sammanfattas på följande sätt:
 
 * I **DirectQuery** över relationella källor, finns det en uppsättning frågor (som de definieras i dialogrutan **Hämta Data** eller **Frågeredigeraren**) som logiskt definierar de data som finns tillgängliga i fältlistan. Detta är *inte* fallet när du ansluter till en OLAP-källa, till exempel SAP BW. Vid anslutning till SAP-servern med **Hämta Data**, är det istället bara Infocube eller BEx Query som är markerat. Alla nyckelfigurer och -dimensioner för den valda Infocube/BEx Query kommer då finnas tillgängliga i fältlistan.   

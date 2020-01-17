@@ -1,24 +1,24 @@
 ---
-title: 'Snabbstart: ansluta till data'
-description: Anslut till en datakälla i Power BI Desktop
+title: 'Snabbstart: Anslut till data i Power BI Desktop'
+description: Så ansluter du till de datakällor som är tillgängliga i Power BI Desktop
 author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: quickstart
-ms.date: 05/08/2019
+ms.date: 01/10/2020
 ms.author: davidi
 LocalizationGroup: quickstart
-ms.openlocfilehash: 1366a5281a36293a484f08c12ab9f8891e29123d
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 5aed52ec232d3e603d69bfe93640187401279ff6
+ms.sourcegitcommit: 801d2baa944469a5b79cf591eb8afd18ca4e00b1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73876218"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885220"
 ---
 # <a name="quickstart-connect-to-data-in-power-bi-desktop"></a>Snabbstart: Ansluta till datakällor i Power BI Desktop
 
-I den här snabbstarten ansluter du till data med hjälp av **Power BI Desktop**, vilket är det första steget för att skapa datamodeller och rapporter.
+I den här snabbstarten ansluter du till data med hjälp av Power BI Desktop, vilket är det första steget när du ska skapa datamodeller och rapporter.
 
 ![Power BI Desktop](media/desktop-what-is-desktop/what-is-desktop_01.png)
 
@@ -26,50 +26,52 @@ Om du inte har registrerat dig för Power BI [registrerar du dig för en kostnad
 
 ## <a name="prerequisites"></a>Förutsättningar
 
-För att slutföra stegen i den här artikeln behöver du följande:
-* Hämta och installera **Power BI Desktop**, som är ett kostnadsfritt program som körs på den lokala datorn. Du kan [hämta **Power BI Desktop**](https://powerbi.microsoft.com/desktop) direkt eller så kan du hämta det från [**Microsoft Store**](https://aka.ms/pbidesktopstore).
-* [Hämta exemplet på en Excel-arbetsbok](https://go.microsoft.com/fwlink/?LinkID=521962) och skapa en mapp med namnet *C:\PBID-qs* där du kan spara Excel-filen. Efterföljande steg i den här snabbstarten förutsätter att detta är sökvägen för den hämta Excel-arbetsboken.
+För att slutföra stegen i den här artikeln behöver du följande resurser:
+
+* Ladda ned och installera Power BI Desktop som är ett kostnadsfritt program som körs på den lokala datorn. Du kan [hämta Power BI Desktop](https://powerbi.microsoft.com/desktop) direkt, eller så kan du hämta det från [Microsoft Store](https://aka.ms/pbidesktopstore).
+* [Hämta exemplet på en Excel-arbetsbok](https://go.microsoft.com/fwlink/?LinkID=521962) och skapa en mapp med namnet *C:\PBID-qs* där du kan spara Excel-filen. I de senare stegen i snabbstarten förutsätts att detta är sökvägen för den Excel-arbetsbok du laddat ned.
+* För många dataanslutningar i Power BI Desktop krävs Internet Explorer 10 (eller senare) för autentisering.
 
 ## <a name="launch-power-bi-desktop"></a>Starta Power BI Desktop
 
-När du har installerat **Power BI Desktop** startar du programmet så att det körs på den lokala datorn. Du ser en självstudie för Power BI. Gå igenom självstudien eller klicka bort den och börja med en tom arbetsyta, där du kan skapa visuella objekt och rapporter från data som du ansluter till. 
+När du har installerat Power BI Desktop startar du programmet så att det körs lokalt i datorn. Du ser en självstudie för Power BI. Följ självstudiekursen eller stäng dialogrutan och börja med en tom arbetsyta. Det är på arbetsytan du skapar visuella objekt och rapporter från dina data.
 
-![Power BI Desktop – tom arbetsyta](media/desktop-quickstart-connect-to-data/qs-connect-data_01.png)
+![Power BI Desktop med en tom arbetsyta](media/desktop-quickstart-connect-to-data/qs-connect-data_01.png)
 
 ## <a name="connect-to-data"></a>Ansluta till data
 
-Med **Power BI Desktop** kan du ansluta till många olika typer av data. Du kan ansluta till grundläggande datakällor som en Microsoft Excel-fil och du kan ansluta till onlinetjänster som innehåller alla möjliga olika typer av data som Salesforce, Microsoft Dynamics, Azure Blob Storage och många andra.
+Med Power BI Desktop kan du ansluta till många olika typer av data. Det kan bland annat vara grundläggande datakällor som en Microsoft Excel-fil. Du kan ansluta till onlinetjänster som innehåller alla möjliga olika typer av data som Salesforce, Microsoft Dynamics, Azure Blob Storage och många andra.
 
 Du kan ansluta till data från **menyfliksområdet** genom att välja **Hämta data**.
 
-![Hämta data](media/desktop-quickstart-connect-to-data/qs-connect-data_02.png)
+![Hämta data i menyfliksområdet Start](media/desktop-quickstart-connect-to-data/qs-connect-data_02.png)
 
-Fönstret **Hämta data** visas, där du kan välja mellan de olika datakällor som **Power BI Desktop** kan ansluta till. I den här snabbstarten använder vi den Excel-arbetsbok som du hämtade och som beskrivs i avsnittet *Förutsättningar* i början av den här artikeln.
+Fönstret **Hämta data** visas. Du kan välja mellan de olika datakällor som Power BI Desktop kan ansluta till. I den här snabbstarten använder du Excel-arbetsboken du laddade ned under [Förutsättningar](#prerequisites).
 
-![Hämta data](media/desktop-quickstart-connect-to-data/qs-connect-data_03.png)
+![Hämta data alla källor](media/desktop-quickstart-connect-to-data/qs-connect-data_03.png)
 
-Eftersom det här är en Excel-fil, väljer vi **Excel** i fönstret **Hämta data** och väljer sedan knappen **Anslut**.
+Eftersom datakällan är en Excel-fil väljer du **Excel** i fönstret **Hämta data** och sedan knappen **Anslut**.
 
-Vi uppmanas att ange platsen för Excel-filen som vi vill ansluta till. Den hämtade filen heter *Finansiellt exempel*. Vi markerar filen och väljer sedan **Öppna**.
+Power BI uppmanar dig att ange var Excel-filen du vill ansluta till finns. Den nedladdade filen heter *Financial Sample*. Markera filen och välj **Öppna**.
 
-![Hämta data](media/desktop-quickstart-connect-to-data/qs-connect-data_04.png)
+![Hämta data i Financial Sample](media/desktop-quickstart-connect-to-data/qs-connect-data_04.png)
 
-**Power BI Desktop** läser sedan in arbetsboken och läser innehållet och visar tillgängliga data i filen med fönstret **Navigatör** där du kan välja vilka data som du vill läsa in till Power BI Desktop. Du markerar tabellerna genom att markera kryssrutorna bredvid varje tabell som du vill importera. I det här fallet ska vi importera båda de tillgängliga tabellerna.
+Power BI Desktop läser in arbetsboken, läser innehållet och visar tillgängliga data i filen i fönstret **Navigatör**. Där kan du välja vilka data du vill läsa in i Power BI Desktop. Välj tabeller genom att markera kryssrutorna bredvid de tabeller du vill importera. Importera båda de tillgängliga tabellerna.
 
-![Hämta data](media/desktop-quickstart-connect-to-data/qs-connect-data_05.png)
+![Välj data i fönstret Navigatör](media/desktop-quickstart-connect-to-data/qs-connect-data_05.png)
 
 När du har gjort dina val väljer du **Läs in** för att importera dessa data till Power BI Desktop.
 
 ## <a name="view-data-in-the-fields-pane"></a>Visa data i fönstret Fält
 
-När du har läst in tabellerna visas dina data i fönstret **Fält**. Du kan expandera varje tabell genom att välja triangeln bredvid dess namn. I följande bild har *ekonomitabellen* expanderats så att vart och ett av fälten visas. 
+När du har läst in tabellerna visas dina data i fönstret **Fält**. Du kan expandera tabellerna genom att välja pilen bredvid namnet. I följande bild har *ekonomitabellen* expanderats så att vart och ett av fälten visas.
 
 ![Hämta data](media/desktop-quickstart-connect-to-data/qs-connect-data_06.png)
 
-Och sedan är du klar! Du har anslutit till data i **Power BI Desktop**, läst in dessa data och nu kan du se alla tillgängliga fält i de här tabellerna.
+Och sedan är du klar! Du har anslutit till data i Power BI Desktop, läst in dessa data och nu kan du se alla tillgängliga fält i de här tabellerna.
 
 ## <a name="next-steps"></a>Nästa steg
 
-Det finns en mängd olika saker du kan göra med **Power BI Desktop** när du har anslutit till data, till exempel skapa visuella objekt och rapporter. Titta närmare på följande resurs för att komma igång:
+Det finns en mängd olika saker du kan göra med Power BI Desktop när du har anslutit till data. Du kan skapa visualiseringar och rapporter. Titta närmare på följande resurs för att komma igång:
 
-* [Guiden Komma igång för Power BI Desktop](desktop-getting-started.md)
+* [Kom igång med Power BI Desktop](desktop-getting-started.md)

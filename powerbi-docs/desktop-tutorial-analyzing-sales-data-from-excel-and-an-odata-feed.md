@@ -9,14 +9,14 @@ ms.topic: tutorial
 ms.date: 05/31/2019
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 8d1b253d5e84bb15dea4612978ee970faccb7a1a
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 712864afdea5431fa630d052271e8cb2c05e9dd2
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73866094"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75759892"
 ---
-# <a name="tutorial-combine-sales-data-from-excel-and-an-odata-feed"></a>Självstudie: Kombinera försäljningsdata från Excel och en OData-feed
+# <a name="tutorial-analyze-sales-data-from-excel-and-an-odata-feed"></a>Självstudie: Analysera försäljningsdata från Excel och en OData-feed
 
 Det är vanligt att ha data i flera datakällor. Du kan till exempel ha två databaser, en för produktinformation och en annan för försäljningsinformation. Med **Power BI Desktop**, kan du kombinera data från olika källor för att skapa intressanta, attraktiva dataanalyser och visualiseringar. 
 

@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 08/16/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: c2001a83a1fb4a5d605a7ac1c752fe4bbd4c5a51
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: a10de05fed8a77a165797dda7155ffb81bbad815
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879563"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75760007"
 ---
-# <a name="using-templates-in-power-bi-desktop"></a>Använda mallar i Power BI Desktop
+# <a name="create-report-templates-for-power-bi-desktop"></a>Skapa rapportmallar för Power BI Desktop
 
 Med **Power BI Desktop** kan du skapa övertygande rapporter som delar insikter i hela organisationen. Med **mallar** i Power BI Desktop kan du effektivisera ditt arbete genom att skapa en rapportmall, baserat på en befintlig mall, som du eller andra användare i din organisation kan använda som utgångspunkt för en ny rapports layout, datamodell och frågor. Mallar i **Power BI Desktop** hjälper dig att komma igång och standardisera rapportskapandet.
 

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/04/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 046a8f61154db5956efa10a0e10e847bbb69374c
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.openlocfilehash: 69295657702f995786379b18d3ad1ed3641bcbb8
+ms.sourcegitcommit: b68a47b1854588a319a5a2d5d6a79bba2da3a4e6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74265055"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75729820"
 ---
 # <a name="create-power-bi-visuals-using-r"></a>Skapa visuella Power BI-objekt med R
 Med Power BI Desktop, kan du använda *R* för att visualisera dina data. [R](https://mran.revolutionanalytics.com/documents/what-is-r) är ett språk och en miljö för statistisk databehandling och grafik.
@@ -128,6 +128,8 @@ Visuella R-objekt har skapats från R-skript som kan innehålla kod som medför 
 R-visualiseringar i Power BI Desktop har följande begränsningar:
 
 * Datastorlekar: Data som används för ritning av visuella R-objekt är begränsade till 150 000 rader. Om du väljer mer än 150 000 rader, är det enbart de översta 150 000 raderna som används och ett meddelande visas på bilden.
+
+* Upplösning: Alla R-visualiseringar visas med 72 DPI.
 
 * Beräkningstider: Om en visuell R-beräkning överskrider fem minuter orsakar det ett tidsgränsfel.
 

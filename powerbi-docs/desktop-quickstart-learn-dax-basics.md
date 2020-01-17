@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 10/21/2019
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: fcff0bf1d6c68b9bdb000855f4984b3664b882c1
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 9ff04510a786fa89e1e461e6eefee1af90e58a8e
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73877921"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75760645"
 ---
-# <a name="dax-basics-in-power-bi-desktop"></a>DAX-grunder i Power BI Desktop
+# <a name="apply-dax-basics-in-power-bi-desktop"></a>Använda grunderna i DAX i Power BI Desktop
 Den här artikeln är avsedd för nya användare i Power BI Desktop. Den är tänkt som en snabb och enkel introduktion till hur du kan använda DAX (Data Analysis Expressions) till att lösa ett antal grundläggande problem med beräkningar och dataanalys. Vi går igenom en del begrepp, några aktiviteter du kan utföra och ställer några kunskapsfrågor där du får testa vad du har lärt dig. När du har läst den här artikeln bör du ha en god förståelse för de viktigaste grundläggande begreppen i DAX.
 
 ## <a name="what-is-dax"></a>Vad är DAX?

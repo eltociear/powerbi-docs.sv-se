@@ -6,146 +6,174 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/16/2019
+ms.date: 12/26/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: d28028c7b75bedae958df77c743c52b44c4437d9
-ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
+ms.openlocfilehash: c79a8ddd68fa64b0a16663500a3f02e9a991835b
+ms.sourcegitcommit: b68a47b1854588a319a5a2d5d6a79bba2da3a4e6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74311729"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75730532"
 ---
-# <a name="conditional-formatting-in-tables"></a>Villkorsstyrd formatering i tabeller 
-Med villkorsstyrd formatering för tabeller kan du ange anpassade cellfärger baserat på cellvärden, eller baserat på andra värden eller fält. Du kan även använda toningar. Du kan också visa cellvärden med datastaplar. 
+# <a name="use-conditional-formatting-in-tables"></a>Använda villkorsstyrd formatering i tabeller 
 
-Åtkomst till villkorlig formatering, i brunnen **fält** i fönstret **Visuella objekt** i Power BI Desktop väljer du nedpilen bredvid värdet i brunnen **Värden** som du vill formatera (eller högerklicka på fältet). Du kan endast hantera villkorsstyrd formatering för fälten i området **Värden** i brunnen **Fält**.
+Med villkorsstyrd formatering för tabeller i Power BI Desktop kan du ange egna cellfärger baserat på fältvärden, inklusive toningar. Du kan också representera cellvärden som datastaplar eller KPI-ikoner, eller som aktiva webblänkar. Du kan använda villkorsstyrd formatering för all text och alla datatyper, så länge du baserar formateringen på ett fält som har värden i form av numeriska tal, namn på färger, hexadecimal kod eller webbadresser. 
+
+Om du vill använda villkorsstyrd formatering väljer du en **tabell** eller **matris** i Power BI Desktop. I avsnittet **Fält** i fönstret **Visualiseringar** högerklickar du på eller väljer nedpilen bredvid de **Värden** du vill formatera. Välj **Villkorsstyrd formatering** och sedan den typ av formatering du vill använda.
 
 ![Menyn Villkorsstyrd formatering](media/desktop-conditional-table-formatting/table-formatting-0-popup-menu.png)
 
-I följande avsnitt beskrivs vart och ett av dessa alternativ för villkorsstyrd formatering. Ett eller flera alternativ kan kombineras i samma tabellkolumn.
-
 > [!NOTE]
-> När villkorsstyrd formatering tillämpas i en tabell åsidosätts eventuella anpassade tabellformat som tillämpats på de villkorligt formaterade cellerna.
+> Villkorsstyrd formatering ersätter eventuella anpassade bakgrunder eller teckenfärger du har angivit för den villkorsstyrt formaterade cellen.
 
-Om du vill ta bort villkorlig formatering från en visualisering högerklickar du bara på fältet igen, väljer **Ta bort villkorsstyrd formatering** och väljer sedan den typ av formatering som du vill ta bort.
+Om du vill ta bort villkorsstyrd formatering från en visualisering väljer du **Ta bort villkorsstyrd formatering** från listrutan för fältet och sedan den typ av formatering du vill ta bort.
 
 ![Menyn Ta bort villkorsstyrd formatering](media/desktop-conditional-table-formatting/table-formatting-1-remove.png)
 
-## <a name="background-color-scales"></a>Skalor för bakgrundsfärg
+I följande avsnitt beskrivs de olika alternativen för villkorsstyrd formatering. Du kan använda fler än ett alternativ i samma tabellkolumn.
 
-Om du väljer **Villkorsstyrd formatering** och sedan **Skalor för bakgrundsfärg** visas följande dialogruta.
+## <a name="format-background-or-font-color"></a>Formatera bakgrund eller teckenfärg
 
-![Dialogrutan Skalor för bakgrundsfärg](media/desktop-conditional-table-formatting/table-formatting-1-default-dialog.png)
+Om du vill formatera cellens bakgrund eller teckenfärg väljer du **Villkorsstyrd formatering** för ett fält och väljer sedan antingen **Bakgrundsfärg** eller **Teckenfärg** från listrutan. 
 
-Du kan välja ett fält från datamodellen som färgerna ska baseras på genom att ange **Färgen baseras på** till det fältet. Du kan också ange aggregeringstypen för det valda fältet med värdet **Sammanfattning**. Fältet som färgerna tillämpas på anges i fältet **Använd färgen på**, så att du enkelt kan se vilket fält inställningarna tillämpas på. Du kan använda villkorsstyrd formatering för text- och datumfält, förutsatt att du väljer ett numeriskt värde som bas för formateringen.
+![Välj Bakgrundsfärg eller Teckenfärg](media/desktop-conditional-table-formatting/table-formatting-1-color-by-rules-dialog.png)
 
-![Fältet Färgen baseras på](media/desktop-conditional-table-formatting/table-formatting-1-apply-color-to.png)
+Dialogrutan **Bakgrundsfärg** eller **Teckenfärg** öppnas, med namnet på det fält du formaterar i rubriken. När du har valt alternativ för villkorsstyrd formatering väljer du **OK**. 
 
-Om du vill använda diskreta färgvärden för specifika värdeintervall väljer du **Färg efter regler**. Om du vill använda ett färgspektrum lämnar du alternativet **Färg efter regler** avmarkerat. 
+![Dialogrutorna Bakgrundsfärg och Teckenfärg](media/desktop-conditional-table-formatting/table-formatting-2-diverging.png)
 
-![Dialogrutan Skalor för bakgrundsfärg](media/desktop-conditional-table-formatting/table-formatting-1-color-by-rules-dialog.png)
+Alternativen **Bakgrundsfärg** och **Teckenfärg** fungerar på samma sätt, men påverkar cellens bakgrundsfärg respektive teckenfärg. Du kan använda samma eller olika villkorsstyrd formatering för ett fälts teckenfärg och bakgrundsfärg. Om du använder samma teckenfärg och bakgrundsfärg för ett fält smälter tecknen ihop med bakgrunden så att du bara ser själva färgen i tabellkolumnen.
 
-### <a name="color-by-rules"></a>Färg efter regler
+## <a name="color-by-color-scale"></a>Färg efter färgskala
 
-När du väljer **Färg efter regler** kan du ange ett eller flera värdeintervall, vart och ett med en bestämd färg.  Varje värdeintervall börjar med ett *Om*-värdevillkor, ett *Och*-värdevillkor och en färg.
+Om du vill formatera cellbakgrunden eller teckenfärgen efter en färgskala går du till fältet **Formatera efter** i dialogrutan **Bakgrundsfärg** eller **Teckenfärg** och väljer **Färgskala**. Under **Baserat på fält** väljer du fältet som formateringen ska baseras på. Du kan basera formateringen på det aktuella fältet eller något annat fält i modellen som har numeriska data eller färgdata. 
 
-![Värdeintervall för Färg efter regler](media/desktop-conditional-table-formatting/table-formatting-1-color-by-rules-if-value.png)
+Under **Sammanfattning** anger du vilken typ av aggregering du vill använda för det valda fältet. Under **Standardformatering** väljer du en formatering för tomma värden. 
 
-Tabellceller med värden i varje intervall fylls med den angivna färgen. Det finns tre regler i följande bild.
+Under **Minimum** och **Maximum** väljer du om färgschemat ska tillämpas baserat på de lägsta och högsta fältvärdena eller på anpassade värden som du anger själv. Välj de färger du vill använda för de lägsta och högsta värdena från listrutorna. Markera kryssrutan **Divergerande** om du vill ange värde och färg för **Centrera**. 
 
-![Exempel på Färg efter regler](media/desktop-conditional-table-formatting/table-formatting-1-color-by-rules.png)
+![Ange cellbakgrund med färgskala](media/desktop-conditional-table-formatting/table-formatting-1-diverging-table.png)
 
-Nu ser exempeltabellen ut så här:
+Så här kan en tabell med bakgrundsfärg efter färgskala på kolumnen **Affordability** (prisvärdhet) se ut:
+
+![Exempel på tabell med divergerande färgskala för bakgrunden](media/desktop-conditional-table-formatting/table-formatting-1-apply-color-to.png)
+
+Så här kan en tabell med teckenfärg efter färgskala på kolumnen **Affordability** (prisvärdhet) se ut:
+
+![Exempel på tabell med divergerande färgskala för teckenfärgen](media/desktop-conditional-table-formatting/table-formatting-2-table.png)
+
+## <a name="color-by-rules"></a>Färg efter regler
+
+Om du vill formatera cellbakgrunden eller teckenfärgen efter regler går du till fältet **Formatera efter** i dialogrutan **Bakgrundsfärg** eller **Teckenfärg** och väljer **Regler**. I **Baserat på fält** anger du återigen vilket fält formateringen ska baseras på, och i **Sammanfattning** anges fältets aggregering. 
+
+Under **Regler** anger du ett eller flera värdeintervall och en färg för vart och ett. Varje värdeintervall har ett *om*-värdevillkor, ett *och*-värdevillkor och en färg. Cellbakgrunderna eller teckensnitten i respektive värdeintervall ges den angivna färgen. I det här exemplet används tre regler:
+
+![Färg efter regler](media/desktop-conditional-table-formatting/table-formatting-1-color-by-rules-if-value.png)
+
+Så här kan en tabell med regelbaserad bakgrundsfärg på kolumnen **Affordability** (prisvärdhet) se ut:
 
 ![Exempeltabell med färg baserat på regler](media/desktop-conditional-table-formatting/table-formatting-1-color-by-rules-table.png)
 
+## <a name="color-by-color-values"></a>Färg efter färgvärden
 
-### <a name="color-minimum-to-maximum"></a>Minsta och största värden för färg
+Om du har ett fält eller mått med färgnamn eller hexadecimala värden kan du använda villkorsstyrd formatering till att automatiskt använda dessa färger som bakgrundsfärg eller teckenfärg för en kolumn. Du kan också använda anpassad logik för tillämpningen av teckenfärg eller bakgrundsfärg.
 
-Du kan konfigurera de *minsta* och *största* värdena och deras färger. Om du väljer rutan **Avvikande** kan du konfigurera ett valfritt *Centrumvärde*.
+Fältet kan innehålla alla färgvärden som anges i specifikationen för CSS-färger på [https://www.w3.org/TR/css-color-3/](https://www.w3.org/TR/css-color-3/). De här färgvärdena kan vara:
+- 3-, 6- eller 8-siffriga hexadecimala koder, till exempel #3E4AFF. #-symbolen ska finnas med i början av koden. 
+- RGB- eller RGBA-värden, till exempel RGBA(234, 234, 234, 0.5).
+- HSL- eller HSLA-värden, till exempel HSLA(123, 75%, 75%, 0.5).
+- Färgnamn, till exempel Green, SkyBlue eller PeachPuff. 
 
-![Knappen Divergerande](media/desktop-conditional-table-formatting/table-formatting-1-diverging.png)
+I den här tabellen är ett färgnamn kopplat till varje delstat: 
 
-Nu ser exempeltabellen ut så här:
+![Delstatstabell med färgnamn](media/desktop-conditional-table-formatting/conditional-table-formatting_01.png)
 
-![Exempeltabell med avvikande färger](media/desktop-conditional-table-formatting/table-formatting-1-diverging-table.png)
+Om du vill formatera kolumnen **Färg** baserat på dess fältvärden väljer du **Villkorsstyrd formatering** för fältet **Färg** och sedan **Bakgrundsfärg** eller **Teckenfärg**. 
 
-## <a name="font-color-scales"></a>Färgskalor för teckensnitt
+I dialogrutan **Bakgrundsfärg** eller **Teckenfärg** väljer du **Fältvärde** i listrutan **Formatera efter**.
 
-Om du väljer **Villkorsstyrd formatering** och sedan **Färgskalor för teckensnitt** visas följande dialogruta. Den här dialogrutan liknar dialogrutan **Skalor för bakgrundsfärg**, men ändrar teckensnittsfärgen i stället för cellernas bakgrundsfärg.
+![Formatera efter fältvärde](media/desktop-conditional-table-formatting/conditional-table-formatting_02.png)
 
-![Dialogrutan Färgskalor för teckensnitt](media/desktop-conditional-table-formatting/table-formatting-2-diverging.png)
+Så här kan en tabell med fältvärdesbaserad formatering av **bakgrunden** i kolumnen **Color** (färg) se ut:
 
-Nu ser exempeltabellen ut så här:
+![Exempeltabell med bakgrundsformatering efter fältvärde](media/desktop-conditional-table-formatting/conditional-table-formatting_03.png)
 
-![Exempeltabell med färgskalor för teckensnitt](media/desktop-conditional-table-formatting/table-formatting-2-table.png)
+Om du även använder **Fältvärde** till att formatera kolumnens **Teckenfärg** blir kolumnen **Color** helfärgad:
 
-## <a name="data-bars"></a>Datastaplar
+![Formatera bakgrund och teckensnitt efter fältvärde](media/desktop-conditional-table-formatting/conditional-table-formatting_04.png)
 
-Om du väljer **Villkorsstyrd formatering** och sedan **Datastaplar** visas följande dialogruta. 
+## <a name="color-based-on-a-calculation"></a>Färg baserat på en beräkning
+
+Du kan skapa en DAX-beräkning som ger olika värden baserat på affärslogik du anger. Det går vanligtvis snabbare att skapa en DAX-formel än att skapa flera regler i dialogrutan för villkorsstyrd formatering. 
+
+I den här DAX-formeln används till exempel hexadecimala färgvärden för den nya kolumnen **Affordability rank** (rangordning av prisvärdhet) baserat på de befintliga värdena i kolumnen **Affordability**:
+
+![DAX-beräkning](media/desktop-conditional-table-formatting/conditional-table-formatting_05.png)
+
+Du tillämpar färgerna genom att välja villkorsstyrd formatering baserad på **Bakgrundsfärg** eller **Teckenfärg** för kolumnen **Affordability** och basera formateringen på **Fältvärde** hos kolumnen **Affordability rank**. 
+
+![Basera bakgrundsfärgen på en beräknad kolumn](media/desktop-conditional-table-formatting/conditional-table-formatting_06.png)
+
+Så här ser exempeltabellen med bakgrundsfärg för **Affordability** baserad på beräkningen av **Affordability rank** ut:
+
+![Exempeltabell med en beräknad värdebaserad färg](media/desktop-conditional-table-formatting/conditional-table-formatting_07.png)
+
+Du kan skapa många fler varianter med hjälp av din fantasi och DAX.
+
+## <a name="add-data-bars"></a>Lägga till datastaplar
+
+Om du vill visa datastaplar baserade på cellvärden väljer du **Villkorsstyrd formatering** för fältet **Affordability** och sedan **Datastaplar** från listrutan. 
+
+I dialogrutan **Datastaplar** är alternativet **Visa enbart stapel** avmarkerat som standard, så att du ser både staplar och faktiska värden i tabellcellerna. Om du bara vill visa datastaplarna markerar du kryssrutan **Visa endast stapel**.
+
+Du kan ange värden för **Minimum** och **Maximum**, färger och riktning för datastaplarna och färger för axlarna. 
 
 ![Dialogrutan Datastaplar](media/desktop-conditional-table-formatting/table-formatting-3-default.png)
 
-Alternativet **Visa enbart stapel** är avmarkerat som standard, vilket innebär att tabellcellen visar både stapeln och själva värdet.
+Så här ser exempeltabellen ut med datastaplar för kolumnen **Affordability** ut:
 
-![Exempeltabell med datastaplar och värden](media/desktop-conditional-table-formatting/table-formatting-3-default-table.png)
+![Exempeltabell med datastaplar](media/desktop-conditional-table-formatting/table-formatting-3-default-table-bars.png)
 
-Om alternativet **Visa enbart stapel** är markerat, så visar tabellcellen endast stapeln.
+## <a name="add-icons"></a>Lägga till ikoner
 
-![Exempeltabell med endast datastaplar](media/desktop-conditional-table-formatting/table-formatting-3-default-table-bars.png)
+Om du vill visa ikoner baserade på cellvärden väljer du **Villkorsstyrd formatering** för fältet och sedan **Ikoner** från listrutan. 
 
-## <a name="color-formatting-by-field-value"></a>Färgformatering efter fältvärde
+I dialogrutan **Ikoner**, under **Formatera efter**, väljer du antingen **Regler** eller **Fältvärde**. 
 
-Du kan använda ett mått eller en kolumn som definierar en viss färg, antingen med hjälp av ett textvärde eller en hexadecimal kod, och tillämpa den färgen på bakgrunden eller teckenfärgen i en tabell- eller matrisvisualisering. Du kan också skapa anpassad logik för ett visst fält och använda den för att tillämpa en specifik färg på texten eller bakgrunden.
+Om du vill formatera efter regler väljer du ett fält i **Baserat på fält**, en metod för **Sammanfattning**, värden för **Ikonlayout** och **Ikonjustering**, ett **Format** och en eller flera **Regler**. Under **Regler** anger du en eller flera regler med ett *om*-villkor, ett *och*-villkor och en ikon som ska användas för varje regel. 
 
-I följande tabell associeras exempelvis en färg med varje produktmodell. 
+Om du vill formatera efter fältvärden väljer du ett fält i **Baserat på fält**, en metod för **Sammanfattning** samt en **Ikonlayout** och en **Ikonjustering**.
 
-![Fältet ProductName med färgnamn](media/desktop-conditional-table-formatting/conditional-table-formatting_01.png)
+I det här exemplet lägger vi till ikoner baserat på tre regler:
 
-Om du vill formatera cellen baserat på dess fältvärde öppnar du dialogrutan **Villkorsstyrd formatering** genom att högerklicka på kolumnen *Färg* för det visuella objektet, och väljer sedan i detta fall **Bakgrundsfärg** på menyn. 
+![Dialogrutan Ikoner](media/desktop-conditional-table-formatting/table-formatting-1-default-table.png)
 
-![Välj Bakgrundsfärg på menyn](media/desktop-conditional-table-formatting/conditional-table-formatting_02.png)
+Välj **OK**. Så här ser exempeltabellen ut med ikoner baserade på regler för kolumnen **Affordability** ut:
 
-I dialogrutan som visas väljer du **Fältvärde** i området med listrutan **Formatera efter**, som du ser i följande bild.
+![Exempeltabell med ikoner](media/desktop-conditional-table-formatting/table-formatting-1-default-dialog.png)
 
-![Formatera efter fältvärde](media/desktop-conditional-table-formatting/conditional-table-formatting_03.png)
+## <a name="format-as-web-urls"></a>Formatera som webbadresser
 
-Du kan upprepa processen för teckenfärgen, så att en färg i **färgkolumnen** tillämpas på resultatet i det visuella objektet, som du ser i följande skärmbild.
+Om du har en kolumn eller ett mått som innehåller webbadresser kan du använda villkorsstyrd formatering så att webbadresserna används som aktiva länkar för fälten. Den här tabellen innehåller till exempel kolumnen **Website** med en webbadress för varje delstat:
 
-![Formatera efter fältvärde](media/desktop-conditional-table-formatting/conditional-table-formatting_04.png)
+![Tabell med webbadresskolumn](media/desktop-conditional-table-formatting/table-formatting-1-diverging.png)
 
-Du kan också skapa en DAX-beräkning baserat på affärslogik som visar olika hexadecimala koder baserat på önskade villkor. Detta är vanligtvis enklare än att skapa flera regler i dialogrutan för villkorsstyrd formatering. Titta på fältet *ColorKPI* i följande exempelbild.
+Om du vill visa namnet på varje delstat som en länk till webbplatsen för den väljer du **Villkorsstyrd formatering** för fältet **State** (delstat) och sedan **Webbadress**. I dialogrutan **Webbadress**, under **Baserat på fält**, väljer du **Webbplats** och sedan **OK**. 
 
-![DAX-beräkningar](media/desktop-conditional-table-formatting/conditional-table-formatting_05.png)
+När formateringen **Webbadress** används för fältet **State** visas namnet på varje delstat som en aktiv länk till webbplatsen. I den här exempeltabellen används formateringen **Webbadress** för kolumnen **State**, och villkorsstyrda **datastaplar** och **bakgrundsfärger** används för kolumnen **Affordability**. 
 
-Du kan sedan ange fältvärdet för **Bakgrundsfärg** på följande sätt.
-
-![Ange fältfärgen baserat på en KPI](media/desktop-conditional-table-formatting/conditional-table-formatting_06.png)
-
-På så vis kan du sedan få resultat som liknar de i följande matris.
-
-![Matrisvisualisering med färg baserat på KPI-värde](media/desktop-conditional-table-formatting/conditional-table-formatting_07.png)
-
-Du kan skapa många fler varianter genom att bara använda din fantasi och DAX.
-
-Du kan använda vilka som helst av de värden som anges i CSS-färgspecifikationen på [https://www.w3.org/TR/css-color-3/](https://www.w3.org/TR/css-color-3/) för att färglägga visuella objekt:
-* Hexadecimala koder med 3, 6 eller 8 siffror, till exempel #3E4AFF. #-symbolen ska finnas med i början av koden. "3E4AFF" fungerar inte. 
-* RGB- eller RGBA-värden, till exempel RGBA(234, 234, 234, 0.5)
-* HSL- eller HSLA-värden, till exempel HSLA(123, 75%, 75%, 0.5)
-* Färgnamn, till exempel Green, SkyBlue eller PeachPuff 
+![Tabell med webbadresser, datastaplar och bakgrundsfärg](media/desktop-conditional-table-formatting/table-formatting-3-default-table.png)
 
 ## <a name="considerations-and-limitations"></a>Överväganden och begränsningar
 Det finns några saker att tänka på när du arbetar med villkorsstyrd tabellformatering:
 
-* Villkorsstyrd formatering tillämpas endast på värdena för ett visuellt **matrisobjekt** och tillämpas inte på delsummor eller totalsummor. 
-* Villkorsstyrd formatering tillämpas inte på raden **Summa**.
-* Tabeller som saknar gruppering visas som en enda rad som inte stöder villkorsstyrd formatering.
-* Om du använder toningsformat med automatiska max/min-värden eller regelbaserad formatering med procentregler, kan inte villkorsstyrd formatering tillämpas om dina data innehåller NaN-värden. NaN står för ”Inte ett nummer” och orsakas vanligtvis av fel vid en division med noll. Du kan använda [DAX-funktionen DIVIDE()](https://docs.microsoft.com/dax/divide-function-dax) för att undvika dessa fel.
-
+- Villkorsstyrd formatering tillämpas endast på värdena i tabeller och matriser, inte på delsummor, totalsummor eller raden **Totalt**. 
+- Tabeller som saknar gruppering visas som en enda rad som inte har stöd för villkorsstyrd formatering.
+- Du kan inte använda toningsformat med automatiska max/min-värden eller regelbaserad formatering med procentregler om dina data innehåller *NaN*-värden. NaN står för ”Inte ett nummer” och orsakas vanligtvis av fel vid division med noll. Du kan använda [DAX-funktionen DIVIDE()](https://docs.microsoft.com/dax/divide-function-dax) för att undvika dessa fel.
+- När du använder villkorsstyrd formatering behövs en aggregering eller ett mått som ska tillämpas på värdet. Det är därför du ser ”First” (första) eller ”Last” (sista) i exemplet **Färg efter värde**. Om du skapar din rapport mot en flerdimensionell Analysis Service-kub kan du inte använda ett attribut för villkorsstyrd formatering om inte kubens ägare har skapat ett mått som tillhandahåller värdet.
 
 ## <a name="next-steps"></a>Nästa steg
-Mer information finns i följande artikel:  
 
-* [Tips för färgformatering i Power BI](visuals/service-tips-and-tricks-for-color-formatting.md)  
+Du kan läsa mer om färgformatering i [Tips för färgformatering i Power BI](visuals/service-tips-and-tricks-for-color-formatting.md)  
 

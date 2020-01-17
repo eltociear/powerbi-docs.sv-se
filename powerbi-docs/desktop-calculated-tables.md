@@ -6,62 +6,62 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/07/2019
+ms.date: 01/02/2020
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 4da25e0c6ea7115111bc057947183a8b86b5c2f4
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: c72387d40ddf4b193481a37dbcb40695668eab66
+ms.sourcegitcommit: 4b926ab5f09592680627dca1f0ba016b07a86ec0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878690"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75837348"
 ---
-# <a name="using-calculated-tables-in-power-bi-desktop"></a>Använda beräknade tabeller i Power BI Desktop
-Med beräknade tabeller kan du lägga till en ny tabell i modellen. Men i stället för att fråga och läsa in värden i den nya tabellens kolumner från en datakälla kan du skapa en formel för Data Analysis-uttryck (DAX) som definierar tabellens värden. I Power BI Desktop skapas beräknade tabeller med funktionen Ny tabell i rapportvyn eller datavyn.
+# <a name="create-calculated-tables-in-power-bi-desktop"></a>Skapa beräknade tabeller i Power BI Desktop
+För det mest skapar du tabeller genom att importera data till din modell från en extern datakälla. Men med *beräknade tabeller* kan du lägga till nya tabeller baserat på data som du redan har läst in till modellen. I stället för att köra frågor och läsa in värden i den nya tabellens kolumner från en datakälla kan du skapa en [DAX-formel](/dax/index) (Data Analysis Expressions) som definierar tabellens värden.
 
-För det mest importerar du data till din modell från en extern datakälla. Beräknade tabeller har emellertid vissa fördelar. Beräknade tabeller är oftast bäst för mellanliggande beräkningar och data som ska lagras som en del av modellen i stället för att beräknas direkt eller som del av en fråga.
+DAX är ett formelspråk för att arbeta med relationsdata, som i Power BI Desktop. DAX innehåller ett bibliotek med över 200 funktioner, operatörer och konstruktioner och ger stor flexibilitet vid skapande av formler för att beräkna resultat för nästan alla dataanalysbehov. Beräknade tabeller passar bäst för mellanliggande beräkningar och data som ska lagras i modellen, snarare än att beräkna i farten eller som frågeresultat. Du kanske vill *förena* eller *korskoppla* två tabeller.
 
-Till skillnad från tabeller som skapats som en del av en fråga baseras beräknade tabeller som skapas i rapportvyn eller datavyn redan på data som du har läst in i modellen. Du kanske vill förena eller koppla två tabeller.
+Precis som andra tabeller i Power BI Desktop så kan beräknade tabeller ha relationer till andra tabeller. Kolumnerna i beräknade tabeller har datatyper, formatering och kan tillhöra en datakategori. Du kan kalla dina kolumner vad du vill och lägga till dem visualiseringar precis som andra fält. Beräknade tabeller beräknas om ifall någon av de tabeller som de hämtar data från uppdateras.
 
-Precis som vanliga tabeller kan beräknade tabeller ha relationer till andra tabeller. Kolumnerna i den beräknade tabellen har datatyper, formatering, och kan tillhöra en datakategori. Du kan kalla dina kolumner vad du vill och lägga till dem i ett visuellt objekt precis som ett annat fält. Beräknade tabeller beräknas om någon av de tabeller som den hämtar data från uppdateras på något sätt.
+## <a name="create-a-calculated-table"></a>Skapa en beräknad tabell
 
-Beräknade tabeller beräknar resultat med hjälp av [Data Analysis-uttryck](https://msdn.microsoft.com/library/gg413422.aspx) (DAX), ett formelspråk som är avsett att fungera med relationsdata, till exempel i Power BI Desktop. DAX innehåller ett bibliotek med över 200 funktioner, operatörer och konstruktioner och ger stor flexibilitet vid skapande av formler för att beräkna resultat för nästan alla dataanalysbehov.
+Du skapar beräknade tabeller med funktionen **Ny tabell** i rapportvyn eller datavyn i Power BI Desktop.
 
-## <a name="lets-look-at-an-example"></a>Låt oss ta en titt på ett exempel
-Jeff är projektledare på Contoso och har en tabell med anställda i regionen Nordväst och en annan tabell med anställda i Sydväst. Jeff vill förena de två tabellerna till en tabell.
+Anta till exempel att du är en personalchef som har en tabell med **Northwest Employees** och en annan tabell med **Southwest Employees**. Du vill kombinera de två tabellerna i en enda tabell med namnet **Western Region Employees**.
 
-**Anställdanordväst**
+**Northwest Employees**
 
  ![](media/desktop-calculated-tables/calctables_nwempl.png)
 
-**SouthwestEmployees**
+**Southwest Employees**
 
  ![](media/desktop-calculated-tables/calctables_swempl.png)
 
-Det är ganska enkelt att förena de två tabellerna med en beräknad tabell. Jeff kan skapa en beräknad tabell antingen i rapportvyn eller datavyn, men det är lite enklare att göra det i datavyn eftersom han då kan se sin nya beräknade tabell direkt.
+Gå till gruppen **Beräkningar** på fliken **Modellering** och välj **Ny tabell** i rapportvyn eller datavyn i Power BI Desktop. Det är lite enklare att göra i datavyn, eftersom du då ser den nya beräknade tabellen direkt.
 
-Jeff klickar på **Ny tabell** i **datavyn** på fliken **Modellering**. Ett formelfält visas.
+ ![Ny tabell i datavyn](media/desktop-calculated-tables/calctables_formulabarempty.png)
 
- ![](media/desktop-calculated-tables/calctables_formulabarempty.png)
+Ange följande formel i formelfältet:
 
-Jeff skriver sedan in följande formel:
+```dax
+Western Region Employees = UNION('Northwest Employees', 'Southwest Employees')
+```
 
- ![](media/desktop-calculated-tables/calctables_formulabarformula.png)
+Då skapas en ny tabell med namnet **Western Region Employees**, som visas precis som de andra tabellerna i fönstret **Fält**. Du kan skapa relationer till andra tabeller, lägga till mått och beräknade kolumner och lägga till fälten i rapporter precis som med andra tabeller.
 
-En ny tabell med namnet Anställda i region Väst skapas.
+ ![Ny beräknad tabell](media/desktop-calculated-tables/calctables_westregionempl.png)
 
- ![](media/desktop-calculated-tables/calctables_westregionempl.png)
-
-Jeffs nya tabell Anställda i region Väst visas precis som andra tabeller i listan Fält. Jeff kan även skapa relationer till andra tabeller, lägga till beräknade kolumner och mått och lägga till något av dess fält i rapporter, precis som med andra tabeller.
-
- ![](media/desktop-calculated-tables/calctables_fieldlist.png)
+ ![Ny tabell i fönstret Fält](media/desktop-calculated-tables/calctables_fieldlist.png)
 
 ## <a name="functions-for-calculated-tables"></a>Funktioner för beräknade tabeller
-Beräknade tabeller kan definieras av ett DAX-uttryck som returnerar en tabell, inklusive en enkel referens till en annan tabell. Till exempel:
 
- ![](media/desktop-calculated-tables/calctables_formulabarsimpleformula.png)
+Du kan definiera beräknade tabeller med DAX-uttryck som returnerar en tabell, även om det bara är en enkel referens till en annan tabell. Till exempel:
 
-Du kan använda beräknade tabeller med DAX för att lösa många analytiska problem. Vi tillhandahåller endast en snabb introduktion till beräknade tabeller här. När du börjar arbeta med beräknade tabeller är dessa några av de vanligaste DAX-tabellfunktionerna som du kan ha nytta av:
+```dax
+New Western Region Employees = 'Western Region Employees'
+```
+
+I den här artikeln ges bara en snabb introduktion till beräknade tabeller. Du kan använda beräknade tabeller med DAX för att lösa många analytiska problem. Här är några av de vanligare DAX-tabellfunktionerna du kan använda:
 
 * DISTINKTA
 * VÄRDEN
@@ -73,5 +73,5 @@ Du kan använda beräknade tabeller med DAX för att lösa många analytiska pro
 * CALENDAR
 * CALENDARAUTO
 
-Se [DAX-funktionsreferensen](https://msdn.microsoft.com/ee634396.aspx) för dessa och andra tabeller som returnerar DAX-funktioner.
+Läs mer om de här funktionerna och andra DAX-funktioner som returnerar tabeller i [DAX-funktionsreferensen](/dax/dax-function-reference).
 

@@ -9,12 +9,12 @@ ms.author: maggies
 ms.reviewer: cfinlan
 ms.custom: ''
 ms.date: 08/29/2019
-ms.openlocfilehash: 44e56613a69069351f21aa7d515fc2bb296e6728
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: b8301ca17559b81d4db132fbeaa0955ce68a4c6e
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74128274"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762150"
 ---
 # <a name="pass-a-report-parameter-in-a-url-for-a-paginated-report-in-power-bi"></a>Skicka en rapportparameter i en URL för en sidnumrerad rapport i Power BI 
 
@@ -64,6 +64,8 @@ Om du vill skicka ett booleskt värde använder du 0 för falskt och 1 för sant
 
 > [!NOTE]
 > Om din rapport innehåller en rapportparameter som har ett standardvärde, och värdet för egenskapen **Prompt** är **falskt** (det vill säga egenskapen **Fråga användaren** har inte valts i Rapporthanteraren), kan du inte skicka ett värde för den aktuella rapportparametern inuti en URL. Det här ger administratörer möjlighet att förhindra att slutanvändare lägger till eller ändrar värdena för vissa rapportparametrar.
+
+> Power BI har inte stöd för frågesträngar som är längre än 900 tecken.  Du kan överskrida det här värdet genom att använda adressparametrar för din sidnumrerade rapport.  Det här gäller särskilt om du använder parametrar med flera värden.
 
 ## <a name="additional-examples"></a>Ytterligare exempel 
 

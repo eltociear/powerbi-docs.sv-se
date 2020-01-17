@@ -10,15 +10,15 @@ ms.topic: conceptual
 ms.date: 04/05/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: d5fcc6866d564367d2a29dc00493a959409ea2ed
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: b14b9a8a0978876942de789548d9741fa3932152
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73858974"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762242"
 ---
-# <a name="what-sample-data-is-available-to-use-with-power-bi"></a>Vilka exempeldata är tillgängliga för användning med Power BI?
-Säg att du har använt Power BI och vill prova men inte har några data.  Eller så har du kanske en datamängd. Eftersom du ännu inte vet hur Power BI fungerar oroar du dig kanske för att du på något sätt ska skada datamängden?
+# <a name="get-sample-data-for-power-bi"></a>Hämta exempeldata för Power BI
+Säg att du har använt Power BI och vill prova men inte har några data.  Eller så har du kanske en datamängd. Eftersom du inte vet hur Power BI fungerar ännu kanske du oroar dig för att du ska råka skada datamängden?
 
 Du behöver inte känna dig stressad! obviEnce ([www.obvience.com](http://www.obvience.com/)) och Microsoft har skapat exempel att använda tills du känner dig bekvämade med Power BI.  Dessa data är anonyma och representerar olika branscher: ekonomi, HR, försäljning med mera. Vår onlinedokumentation använder samma exempel i självstudier och demonstrationer så att du kan följa processen.      
 
@@ -30,7 +30,7 @@ Innan vi sätter igång kan du läsa de juridiska riktlinjerna för användning 
 
 ## <a name="usage-guidelines-for-the-power-bi-sample-excel-workbooks"></a>Riktlinjer för användning av Excel-arbetsböckerna för Power BI-exemplen
 
-©2015 Microsoft Corporation. Med ensamrätt. Dokument och arbetsböcker tillhandahålls ”i befintligt skick”. Information och åsikter som uttrycks i arbetsböcker, inklusive webbadresser och andra webbplatsreferenser, kan ändras utan föregående meddelande. Du ansvarar för risken med att använda den. Några exempel är enbart för illustration och är fiktiva. Ingen verklig företeelse är avsedd eller härledd. Microsoft lämnar inga garantier, uttryckliga eller underförstådda, avseende informationen som visas här.
+©2015 Microsoft Corporation. All rights reserved. Dokument och arbetsböcker tillhandahålls ”i befintligt skick”. Information och åsikter som uttrycks i arbetsböcker, inklusive webbadresser och andra webbplatsreferenser, kan ändras utan föregående meddelande. Du ansvarar för risken med att använda den. Några exempel är enbart för illustration och är fiktiva. Ingen verklig företeelse är avsedd eller härledd. Microsoft lämnar inga garantier, uttryckliga eller underförstådda, avseende informationen som visas här.
 
 Arbetsböckerna ger dig inga juridiska rättigheter till någon immateriell egendom i någon Microsoft-produkt. Du kan kopiera och använda den här arbetsboken som intern referens.
 
@@ -85,7 +85,7 @@ Det här branschexemplet analyserar ett tillverkningsföretag, VanArsdel Ltd. De
 ### <a name="supplier-quality-sample--supplier-quality-samplemediasample-datasetspower-bi-sqpng"></a>Exempel på leverantörskvalitet  ![Exempel på leverantörskvalitet](media/sample-datasets/power-bi-sq.png)
 [Ta en rundtur i exemplet för leverantörskvalitet](sample-supplier-quality.md)
 
-Branschexemplet fokuserar på en av de mest typiska utmaningarna i leveranskedjan – analys av leverantörskvalitet. Två primära mått används i den här analysen: det totala antalet defekter och den totala stilleståndstid som dessa defekter har orsakat. Det här exemplet har två huvudmål: förstå vilka som är de bästa respektive sämsta leverantörerna med avseende på kvalitet, och identifiera vilka anläggningar som är bäst på att hitta och avvisa fel, för att minimera driftavbrotten.
+Branschexemplet fokuserar på en av de mest typiska utmaningarna i leveranskedjan – analys av leverantörskvalitet. Två primära mått används i den här analysen: det totala antalet defekter och den totala nedtiden som dessa defekter har orsakat. Det här exemplet har två huvudmål: förstå vilka som är de bästa respektive sämsta leverantörerna med avseende på kvalitet, och identifiera vilka anläggningar som är bäst på att hitta och avvisa fel, för att minimera driftavbrotten.
 
 Nu vet du vad som är tillgängligt. Nu är det dags att lära sig hur du får tag på de här exemplen.  
 
@@ -127,10 +127,10 @@ Varje exempel på innehållspaket är också tillgängligt som en Excel-arbetsbo
    * [Exempel på försäljning och marknadsföring](https://go.microsoft.com/fwlink/?LinkId=529785)
 2. Spara den hämtade filen. Det har betydelse var du sparar filen.
 
-   * ![Lokalt](media/sample-datasets/power-bi-local-file2.png) **Lokalt** – Om du sparar din fil från Power BI till en lokal enhet på datorn eller en annan plats inom din organisation kan du importera den till Power BI. Filen kommer att finnas kvar på den lokala enheten, så hela filen importeras inte till Power BI. Det som händer är att en ny datamängd skapas på din Power BI-webbplats samt att data och i vissa fall datamodellen läses in i datamängden. Om din fil innehåller rapporter kommer de rapporterna att visas på din Power BI-webbplats under Rapporter.
-   * ![OneDrive – företag](media/sample-datasets/power-bi-onedrive-file.png) **OneDrive – företag**– om du har OneDrive för företag och loggar in med samma konto som du loggar in i Power BI med är OneDrive för företag det överlägset effektivaste sättet att hålla ditt arbete i Excel, Power BI eller en CSV-fil synkroniserat med din datamängd, dina rapporter och dina instrumentpaneler i Power BI. Eftersom både Power BI och OneDrive finns i molnet, ansluter Power BI till din fil på OneDrive ungefär en gång per timme. Om det finns ändringar uppdateras dina datauppsättningar, rapporter och instrumentpaneler i Power BI automatiskt.
-   * ![OneDrive – personlig](media/sample-datasets/power-bi-onedrive-file.png) **OneDrive – personlig** – Om du sparar filer på ditt eget OneDrive-konto får du många av de fördelar som du får med OneDrive för företag. Den största skillnaden är att när du första gången ansluter till din fil (med Hämta data > Filer > OneDrive – personlig) måste du logga in i OneDrive med ditt Microsoft-konto som vanligtvis skiljer sig från det konto du använder för att logga in i Power BI. När du loggar in i OneDrive med ditt Microsoft-konto, måste du markera alternativet Jag vill förbli inloggad. På så sätt kan Power BI ansluta till din fil ungefär en gång i timmen och kontrollera att din datauppsättning i Power BI är synkroniserad.
-   * ![SharePoint-gruppwebbplatser](media/sample-datasets/power-bi-sharepoint2.png) **SharePoint-gruppwebbplatser** Spara dina Power BI-filer på SharePoint-gruppwebbplatser på ungefär samma sätt som för OneDrive för företag. Den största skillnaden är hur du ansluter till filen från Power BI. Du kan ange en URL eller ansluta till rotmappen.
+   * ![Lokalt](media/sample-datasets/power-bi-local-file2.png) **Lokalt** – om du sparar din fil från Power BI till en lokal enhet i datorn eller en annan plats i organisationen så kan du importera den till Power BI. Filen kommer att finnas kvar på den lokala enheten, så hela filen importeras inte till Power BI. Det som händer är att en ny datamängd skapas på din Power BI-webbplats samt att data och i vissa fall datamodellen läses in i datamängden. Om din fil innehåller rapporter kommer de rapporterna att visas på din Power BI-webbplats under Rapporter.
+   * ![OneDrive – företag](media/sample-datasets/power-bi-onedrive-file.png) **OneDrive – företag** – om du har OneDrive för företag och loggar in med samma konto som du loggar in i Power BI med är OneDrive för företag det överlägset effektivaste sättet att hålla ditt arbete i Excel, Power BI eller en CSV-fil synkroniserat med din datamängd, dina rapporter och dina instrumentpaneler i Power BI. Eftersom både Power BI och OneDrive finns i molnet, ansluter Power BI till din fil på OneDrive ungefär en gång per timme. Om det finns ändringar uppdateras dina datauppsättningar, rapporter och instrumentpaneler i Power BI automatiskt.
+   * ![OneDrive – personlig](media/sample-datasets/power-bi-onedrive-file.png) **OneDrive – personlig** – Om du sparar filer på ett eget OneDrive-konto får du många av de fördelar som du får med OneDrive för företag. Den största skillnaden är att när du första gången ansluter till din fil (med Hämta data > Filer > OneDrive – personlig) måste du logga in i OneDrive med ditt Microsoft-konto som vanligtvis skiljer sig från det konto du använder för att logga in i Power BI. När du loggar in i OneDrive med ditt Microsoft-konto, måste du markera alternativet Jag vill förbli inloggad. På så sätt kan Power BI ansluta till din fil ungefär en gång i timmen och kontrollera att din datauppsättning i Power BI är synkroniserad.
+   * ![SharePoint-gruppwebbplatser](media/sample-datasets/power-bi-sharepoint2.png) **SharePoint-gruppwebbplatser** Att spara dina Power BI-filer på SharePoint-gruppwebbplatser fungerar på ungefär samma sätt som i OneDrive för företag. Den största skillnaden är hur du ansluter till filen från Power BI. Du kan ange en URL eller ansluta till rotmappen.
 1. Öppna Power BI-tjänsten (app.powerbi.com) och logga in.
 
    > [!TIP]
@@ -193,7 +193,7 @@ Varje exempel på innehållspaket är också tillgängligt som en Power BI PBIX-
 ## <a name="next-steps"></a>Nästa steg
 [Grundläggande begrepp för designers i Power BI-tjänsten](service-basic-concepts.md)
 
-[Självstudier: Ansluta till Power BI-exempel](sample-tutorial-connect-to-the-samples.md)
+[Självstudie: Ansluta till Power BI-exempel](sample-tutorial-connect-to-the-samples.md)
 
 [Datakällor för Power BI](service-get-data.md)
 

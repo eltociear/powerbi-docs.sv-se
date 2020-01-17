@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 06/25/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: f37bbbb51176624cd2d1562e5d89de43facf3b43
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 150de174b15e684c49c38f67767b13a3a7f9a36a
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876877"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75758978"
 ---
-# <a name="use-the-matrix-visual-in-power-bi"></a>Använd det visuella matrisobjektet i Power BI
+# <a name="create-matrix-visualizations-in-power-bi"></a>Skapa matrisvisualiseringar i Power BI
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -67,7 +67,7 @@ Det finns en mängd intressanta aktiviteter som ökar detaljnivån i matrisen so
 
 Gå till fönstret Visualiseringar. När du lägger till flera fält i avsnittet **Rader** i området **Fält** aktiveras ökad detaljnivå för raderna det visuella matrisobjektet. Detta påminner om hur du skapar en hierarki som sedan låter dig öka detaljnivån (och återgå) i hierarkin och analysera data på varje nivå.
 
-I följande bild innehåller avsnittet **Rader** *Försäljningssteg* och *Affärsmöjlighetens storlek* och skapar en gruppering (eller hierarki) i raderna som vi kan visa i större eller mindre detalj.
+I följande bild innehåller avsnittet **Rader***Försäljningssteg* och *Affärsmöjlighetens storlek* och skapar en gruppering (eller hierarki) i raderna som vi kan visa i större eller mindre detalj.
 
 ![Filterkort som visar vilka rader som väljs](media/desktop-matrix-visual/power-bi-rows-matrix.png)
 

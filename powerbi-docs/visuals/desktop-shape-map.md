@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 11/14/2019
 ms.author: mihart
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: eac0c6fab686a3b5cf63d035ea19b52ab83aa339
-ms.sourcegitcommit: 768e1e4b19fe8c7627010127c2420d63021cb542
+ms.openlocfilehash: 3a043a343994c02a916102b83fe79d1ccd5208bf
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199462"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762334"
 ---
-# <a name="shape-maps-in-power-bi-desktop-preview"></a>Formkartor i Power BI Desktop (förhandsgranskning)
+# <a name="create-shape-map-visualizations-in-power-bi-desktop-preview"></a>Skapa formkartevisualiseringar i Power BI Desktop (förhandsversion)
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -115,7 +115,7 @@ Använd följande **Regionsnycklar** i den här förhandsversionen för att prov
 
 ### <a name="australia-states"></a>Australien: Stater
 
-| ID | förkortn. | ISO | namn | postnummer |
+| ID | förkortn. | ISO | name | postnummer |
 | --- | --- | --- | --- | --- |
 | au-wa |WA |AU-WA |Western Australia |WA |
 | au-vic |Vic |AU-VIC |Victoria |VIC |
@@ -128,7 +128,7 @@ Använd följande **Regionsnycklar** i den här förhandsversionen för att prov
 
 ### <a name="austria-states"></a>Österrike: Stater
 
-| ID | ISO | namn | namn-en | postnummer |
+| ID | ISO | name | namn-en | postnummer |
 | --- | --- | --- | --- | --- |
 | at-wi |AT-9 |Wien |Wien |WI |
 | at-vo |AT-8 |Vorarlberg |Vorarlberg |VO |
@@ -178,7 +178,7 @@ Använd följande **Regionsnycklar** i den här förhandsversionen för att prov
 
 ### <a name="canada-provinces"></a>Kanada: Provinser
 
-| ID | ISO | namn | postnummer |
+| ID | ISO | name | postnummer |
 | --- | --- | --- | --- |
 | ca-nu |CA-NU |Nunavut |NU |
 | ca-nt |CA-NT |Northwest Territories |NT |
@@ -196,7 +196,7 @@ Använd följande **Regionsnycklar** i den här förhandsversionen för att prov
 
 ### <a name="france-regions"></a>Frankrike: Regioner
 
-| ID | namn | namn-en |
+| ID | name | namn-en |
 | --- | --- | --- |
 | Auvergne-Rhone-Alpes |  |  |
 | Bourgogne-Franche-Comte |  |  |
@@ -218,7 +218,7 @@ Använd följande **Regionsnycklar** i den här förhandsversionen för att prov
 
 ### <a name="germany-states"></a>Tyskland: Stater
 
-| ID | ISO | namn | namn-en | postnummer |
+| ID | ISO | name | namn-en | postnummer |
 | --- | --- | --- | --- | --- |
 | de-be |DE-BE |Berlin |Berlin |BE |
 | de-th |DE-TH |Thüringen |Thüringen |TH |
@@ -270,7 +270,7 @@ Använd följande **Regionsnycklar** i den här förhandsversionen för att prov
 
 ### <a name="italy-regions"></a>Italien: Regioner
 
-| ID | ISO | namn | namn-en | postnummer |
+| ID | ISO | name | namn-en | postnummer |
 | --- | --- | --- | --- | --- |
 | it-vn |IT-34 |Veneto |Veneto |VN |
 | it-vd |IT-23 |Valle d'Aosta |Aosta-dalen |VD |
@@ -295,7 +295,7 @@ Använd följande **Regionsnycklar** i den här förhandsversionen för att prov
 
 ### <a name="mexico-states"></a>Mexiko: Stater
 
-| ID | förkortning | ISO | namn | namn-en | postnummer |
+| ID | förkortning | ISO | name | namn-en | postnummer |
 | --- | --- | --- | --- | --- | --- |
 | mx-zac |Zac. |MX-ZAC |Zacatecas |Zacatecas |ZA |
 | mx-yuc |Yuc. |MX-YUC |Yucatán |Yucatán |YU |
@@ -332,7 +332,7 @@ Använd följande **Regionsnycklar** i den här förhandsversionen för att prov
 
 ### <a name="netherlands-provinces"></a>Nederländerna: Provinser
 
-| ID | ISO | namn | namn-en |
+| ID | ISO | name | namn-en |
 | --- | --- | --- | --- |
 | nl-zh |NL-ZH |Zuid-Holland |Zuid-Holland |
 | nl-ze |NL-ZE |Zeeland |Zeeland |
@@ -349,7 +349,7 @@ Använd följande **Regionsnycklar** i den här förhandsversionen för att prov
 
 ### <a name="uk-countries"></a>Storbritannien: Länder
 
-| ID | ISO | namn |
+| ID | ISO | name |
 | --- | --- | --- |
 | gb-wls |GB-WLS |Wales |
 | gb-sct |GB-SCT |Skottland |
@@ -358,7 +358,7 @@ Använd följande **Regionsnycklar** i den här förhandsversionen för att prov
 
 ### <a name="usa-states"></a>USA: Stater
 
-| ID | namn | postnummer |
+| ID | name | postnummer |
 | --- | --- | --- |
 | us-mi |Michigan |MI |
 | us-ak |Alaska |AK |
@@ -400,7 +400,7 @@ Använd följande **Regionsnycklar** i den här förhandsversionen för att prov
 | us-ma |Massachusetts |MA |
 | us-ia |Iowa |IA |
 | us-nh |New Hampshire |NH |
-| us-or |Oregon |OR |
+| us-or |Oregon |ELLER |
 | us-mn |Minnesota |MN |
 | us-vt |Vermont |VT |
 | us-id |Idaho |ID |

@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/24/2019
+ms.date: 01/08/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 4cddf01dd57191b5d3e707589e6d8a78e106259f
-ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
+ms.openlocfilehash: c4b4d706f56d9ebc91b17194c9b2fa631aeb8497
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74958481"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762127"
 ---
 # <a name="bring-your-own-encryption-keys-for-power-bi-preview"></a>Använda egna krypteringsnycklar för Power BI (förhandsversion)
 
@@ -104,6 +104,8 @@ Innan du aktiverar BYOK måste du ha följande i åtanke:
 - Du kan för närvarande inte inaktivera BYOK när du har aktiverat det. Beroende på vilka parametrar du anger för `Add-PowerBIEncryptionKey` kan du styra hur BYOK ska användas för en eller flera av dina kapaciteter. Du kan däremot inte ångra introduktionen av nycklar för klientorganisationen. Mer information finns under [Aktivera BYOK](#enable-byok).
 
 - Du kan inte _direkt_ flytta en arbetsyta som använder BYOK från en dedikerad kapacitet i Power BI Premium till en delad kapacitet. Först måste du flytta arbetsytan till en dedikerad kapacitet som inte har BYOK aktiverat.
+
+- Om du flyttar en arbetsyta som använder BYOK från en dedikerad kapacitet i Power BI Premium till en delad kapacitet kommer det inte gå att använda rapporter och datamängder eftersom de är krypterade med den nyckeln. För att undvika det här måste du först flytta arbetsytan till en dedikerad kapacitet som inte har BYOK aktiverat.
 
 ### <a name="enable-byok"></a>Aktivera BYOK
 

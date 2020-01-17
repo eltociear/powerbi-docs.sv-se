@@ -1,20 +1,20 @@
 ---
-title: Använda delade datamängder i Paginated Report Builder i Power BI
-description: Ansluta till delade datamängder från Paginated Report Builder i Power BI.
-ms.date: 07/23/2019
+title: Skapa en sidnumrerad rapport med en delad Power BI-datamängd – Power BI Report Builder
+description: Skapa en sidnumrerad rapport i Power BI Report Builder baserat på en delad Power BI-datamängd.
+ms.date: 01/03/2020
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: c44f90bc29887a5431c893803cf4910e0e5093d3
-ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
+ms.openlocfilehash: 335b93720718bb72027c29c6093aad952cc4cdb2
+ms.sourcegitcommit: b09de56e971b8844a3771413d1f56d49b31baaaf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73791271"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75691472"
 ---
-# <a name="use-shared-datasets-in-power-bi-report-builder"></a>Använda delade datamängder Report Builder i Power BI
+# <a name="create-a-paginated-report-based-on-a-power-bi-shared-dataset"></a>Skapa en sidnumrerad rapport baserat på en delad Power BI-datamängd
 
 Du kan använda en datamängd som du skapar i Power BI Desktop som datakälla för sidnumrerade rapporter för Paginated Report Builder i Power BI. Tänk dig följande scenario: Du har skapat en Power BI-rapport i Power BI Desktop. Du har ägnat mycket tid åt att utforma datamodellen och skapade sedan en snygg Power BI-rapport med alla möjliga häftiga visuella objekt. Rapporten innehåller en matris med många rader, så du måste bläddra för att se alla. De som läser din rapport vill ha en rapport som de kan skriva ut och som visar alla rader i matrisen. En sidnumrerad Power BI-rapport kan göra detta: skriva ut en tabell eller matris som körs på flera sidor, med sidhuvuden och sidfötter samt en perfekt sidlayout som du utformar. Den kompletterar Power BI Desktop-rapporten. Du vill att de ska baseras på exakt samma data, utan avvikelser, så du använder samma datamängd.
 

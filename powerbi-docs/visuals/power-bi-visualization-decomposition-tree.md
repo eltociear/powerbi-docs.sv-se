@@ -7,17 +7,17 @@ ms.reviewer: juluczni
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 11/13/2019
+ms.date: 01/10/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d653bb0193351e2ecb38c09e6b34d02eea5cce67
-ms.sourcegitcommit: f7b28ecbad3e51f410eff7ee4051de3652e360e8
+ms.openlocfilehash: 8aa392b69d21905901f8304c577b87b00ed19057
+ms.sourcegitcommit: 801d2baa944469a5b79cf591eb8afd18ca4e00b1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74060666"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885276"
 ---
-# <a name="use-the-decomposition-tree-visual-in-power-bi-preview"></a>Använd det visuella objektet för nedbrytningsträd i Power BI (förhandsversion)
+# <a name="create-and-view-decomposition-tree-visuals-in-power-bi-preview"></a>Skapa och visa det visuella objektet för nedbrytningsträd i Power BI (förhandsversion)
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
 I det visuella objekt för nedbrytningsträd i Power BI kan du visualisera data i flera dimensioner. Data sammanställs automatiskt och du kan öka detaljnivån i dimensionerna i valfri ordning. Det är också en AI-visualisering (artificiell intelligens), så du kan be den hitta nästa dimension som du vill öka detaljnivån för utifrån vissa kriterier. Detta gör det till ett värdefullt verktyg för ad hoc-utforskning och för att genomföra rotorsaksanalyser.
@@ -131,6 +131,8 @@ I exemplet nedan är de två första nivåerna låsta. Det innebär att rapporta
 ![Låsa nedbrytningsträd](media/power-bi-visualization-decomposition-tree/tree-locking.png)
 
 ## <a name="known-limitations"></a>Kända begränsningar
+
+Det maximala antalet nivåer för trädet är 50. Det maximala antalet datapunkter som kan visualiseras samtidigt i trädet är 5 000. Vi trunkerar nivåerna så att vi ser de n översta. För närvarande är n översta per nivå inställt på 10. 
 
 Nedbrytningsträd stöds inte i följande scenarier:  
 -   Lokal Analysis Services

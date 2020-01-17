@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 10/30/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 4686b15e04d3724256c76d7ba27a125cb04e86b3
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 50a5705f5e236dc326f4c2b33716e55f6a9f7ce5
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878969"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761989"
 ---
-# <a name="creating-accessible-reports-in-power-bi"></a>Skapa tillgängliga rapporter i Power BI
+# <a name="design-power-bi-reports-for-accessibility"></a>Designa Power BI-rapporter med hjälpmedel
 Du kan utforma och skapa engagerande rapporter som även är så tillgängliga som möjligt. Oavsett vilken målgrupp du skapar rapporten för så bör du se till att de kan användas av så många personer som möjligt, utan att de måste anpassas för en viss typ av specialdesign.
 
 ![Inställningar för hög kontrast i Windows](media/desktop-accessibility/accessibility-05.png)

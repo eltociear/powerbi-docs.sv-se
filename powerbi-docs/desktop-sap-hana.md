@@ -1,6 +1,6 @@
 ---
 title: Använd SAP HANA i Power BI Desktop
-description: Använd SAP HANA i Power BI Desktop
+description: Använda SAP HANA i Power BI Desktop
 author: davidiseminger
 ms.reviewer: ''
 ms.custom: seodec18
@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.date: 08/21/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: bf258597f6369541fb9a221c8d423e8a9078a3a4
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 7c70c4f4e5fec55ffd98d0156944c9973cffdb2a
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879753"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75760306"
 ---
-# <a name="use-sap-hana-in-power-bi-desktop"></a>Använd SAP HANA i Power BI Desktop
+# <a name="connect-to-sap-hana-databases-in-power-bi-desktop"></a>Ansluta till SAP HANA-databaser i Power BI Desktop
 Med Power BI Desktop kan du nu komma åt **SAP HANA**-databaser. Om du vill använda **SAP HANA**, måste SAP HANA ODBC-drivrutinen installeras på den lokala klientdatorn för att Power BI Desktop **SAP HANA**-dataanslutningen ska fungera korrekt. Du kan ladda ned SAP HANA-klientverktyg från [SAP Development Tools](https://tools.hana.ondemand.com/#hanatools), där den ODBC-drivrutin som krävs finns. Du kan också hämta den från [SAP Software Download Center](https://support.sap.com/swdc). I programvaruportalen söker du efter SAP HANA CLIENT för Windows-datorer. Eftersom **SAP Software Download Center** ofta ändrar struktur, finns det inte tydligare riktlinjer för att navigera den webbplatsen.
 
 Om du vill ansluta till en **SAP HANA**-databas, väljer du **Hämta data > Databas > SAP HANA-databas** enligt följande bild:

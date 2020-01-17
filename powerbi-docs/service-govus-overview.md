@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/24/2019
+ms.date: 01/08/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 64e9ff8f4952abe79a62b6b805596554b32aa6c9
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.openlocfilehash: f14734f168abca1003bd5b6c773c4c70daf53d15
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74265463"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762104"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI för amerikanska myndighetskunder
 **Power BI-tjänsten** har en version som är tillgänglig för amerikanska myndigheter som en del av **Office 365 US Government Community**-prenumerationer. Den version av **Power BI-tjänsten** som beskrivs i den här artikeln är utformad för kunder som tillhör amerikanska myndigheter och är separat och skiljer sig från kommersiella versioner av **Power BI-tjänsten**.
@@ -40,7 +40,7 @@ Följande funktioner är tillgängliga för dem som använder **Power BI för am
 
 ## <a name="connectivity-between-government-and-global-azure-cloud-services"></a>Anslutningen mellan myndigheter och globala Azure-molntjänster 
 
-Azure fördelas mellan flera moln. Som standard kan klientorganisationer öppna brandväggsregler till en molnspecifik instans, men nätverk mellan moln är annorlunda och kräver att du öppnar specifika brandväggsregler för kommunikation mellan tjänster. Om du är en Power BI-kund och du har befintliga SQL-instanser i det offentliga molnet som du behöver komma åt, måste du öppna specifika brandväggsregler IP-adressutrymmet för SQL till Azure Government-molnet för följande datacenter:
+Azure distribueras i flera moln. Som standard kan klientorganisationer öppna brandväggsregler till en molnspecifik instans, men nätverk mellan moln är annorlunda och kräver att du öppnar specifika brandväggsregler för kommunikation mellan tjänster. Om du är en Power BI-kund och du har befintliga SQL-instanser i det offentliga molnet som du behöver komma åt, måste du öppna specifika brandväggsregler IP-adressutrymmet för SQL till Azure Government-molnet för följande datacenter:
 
 * USGov Iowa
 * USGov Virginia
@@ -59,6 +59,7 @@ Några av de funktioner som är tillgängliga i den kommersiella versionen av **
 * **Användningsstatistik för instrumentpaneler och rapporter** – användningsstatistik är inte tillgängligt för rapporter och instrumentpaneler. Kunder kan använda data i granskningsloggar för att få användningsinformation om innehåll i deras organisation.
 * **Dataflöden** – Dataflöden är inte tillgängliga.
 * **Sidnumrerade rapporter** – Sidnumrerade rapporter är för närvarande bara tillgängliga i USGov Virginia.  Vi planerar att införa stöd i USGov Texas, men det är inte färdigt ännu.
+* Du kan bara bädda in Power BI-innehåll från GCC (Government Community Cloud) med en Office 365-SKU. GCC High-kunder kan använda [Office 365- eller Azure-SKU:er](developer/embedded-faq.md#what-is-the-difference-between-the-a-skus-in-azure-and-the-em-skus-in-office-365).
 
 Om du har kostnadsfria **Power BI**-licenser som tilldelats ditt konto, körs dessa konton i en kommersiell version av **Power BI**-tjänsten, och ingår inte i erbjudandet om **Power BI för amerikanska myndigheter**. För dessa kostnadsfria konton kan följande problem uppstå:
 
@@ -88,7 +89,7 @@ Följande frågor (och svar) hjälper dig att snabbt få information som du beh�
 
 **Svar:** Ja, URL:erna skiljer sig åt. I följande tabell visas varje URL:
 
-| URL för den kommersiella versionen | URL för versionen för amerikanska myndigheter | URL för amerikanska myndigheter för GCC High |
+| URL för den kommersiella versionen | URL för US Government-versionen | URL för amerikanska myndigheter för GCC High |
 | --- | --- | --- |
 | https://app.powerbi.com/ |[https://app.powerbigov.us](https://app.powerbigov.us) | [https://app.high.powerbigov.us](https://app.high.powerbigov.us) |
 

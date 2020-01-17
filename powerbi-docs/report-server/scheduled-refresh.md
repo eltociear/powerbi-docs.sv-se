@@ -6,14 +6,14 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 11/01/2017
+ms.date: 01/09/2020
 ms.author: maggies
-ms.openlocfilehash: 90f08abd119e7dfc0bf639eeb2ed8334fbdfa234
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 7052b0f045b98ce8e25822f76fe0b8391e298a47
+ms.sourcegitcommit: 4b926ab5f09592680627dca1f0ba016b07a86ec0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74699025"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75837623"
 ---
 # <a name="power-bi-report-scheduled-refresh-in-power-bi-report-server"></a>Schemalagd uppdatering av Power BI-rapport i Power BI-rapportserver
 Schemalagd uppdatering för Power BI-rapporter gör att data för en rapport hålls uppdaterad.
@@ -61,8 +61,10 @@ Information om hur du övervakar en Analysis Services-instans finns i [Övervaka
 
 Information om inställningar för minne i Analysis Services finns i [Minnesegenskaper](https://docs.microsoft.com/sql/analysis-services/server-properties/memory-properties).
 
+### <a name="data-model-size-limit"></a>Storleksgräns för datamodeller
+Den datamodell som läses in i den interna Analysis Services-motorn under en schemalagd uppdatering har en maximal storlek på 2 000 MB (2 GB). Den här maximala storleken kan inte konfigureras. Om din datamodell växer sig större än 2 GB visas uppdateringsfelet ”The length of the result exceeds the length limit (2GB) of the target large type.” (Längden på resultatet överstiger längdgränsen (2 GB) för den stora måltypen.) I så fall rekommenderar vi att du lagrar modellen i en Analysis Services-instans och använder en liveanslutning till modellen i rapporten.
+
 ## <a name="next-steps"></a>Nästa steg
 Konfigurera [schemalagd uppdatering](configure-scheduled-refresh.md) på en Power BI-rapport.
 
 Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
-

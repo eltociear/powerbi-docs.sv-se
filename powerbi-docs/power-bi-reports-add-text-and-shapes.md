@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.date: 05/29/2019
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 3da18269817ef89dfff9524c8875814430bc6cce
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: b90bfd9482e28faa8d9dfb0d089ca07656663b53
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73874447"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762472"
 ---
-# <a name="text-boxes-and-shapes-in-power-bi-reports"></a>Textrutor och figurer i Power BI-rapporter
+# <a name="add-text-boxes-and-shapes-to-power-bi-reports"></a>Lägga till textrutor och figurer i Power BI-rapporter
 Du kan lägga till textrutor och former i rapporter med hjälp av Power BI-tjänsten och Power BI Desktop. I båda fallen måste du ha redigeringsbehörigheter för rapporten. Om en rapport har delats med dig i Power BI-tjänsten har du inte redigeringsbehörigheter. 
 
 Titta när Will använder Power BI Desktop för att [lägga till statiska bilder i en rapport](/learn/modules/visuals-in-power-bi/12-formatting), och följ stegen nedan för att prova själv med hjälp av Power BI-tjänsten i stället.

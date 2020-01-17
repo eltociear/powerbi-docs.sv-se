@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 37cbea42d530f05df1d9f1003554680b80c5b5c3
-ms.sourcegitcommit: 212fb4a46af3e434a230331f18456c6a49a408fd
+ms.openlocfilehash: ba9c11004099b1e11d935cd0b178463e542bea9a
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74907967"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761805"
 ---
-# <a name="aggregations-in-power-bi-desktop"></a>Aggregeringar i Power BI Desktop
+# <a name="manage-aggregations-in-power-bi-desktop"></a>Hantera aggregeringar i Power BI Desktop
 
 Användning av **sammansättningar** i Power BI tillåter interaktiv analys över stordata på sätt som tidigare inte var möjligt. Med **sammansättningar** kan du drastiskt minska kostnaderna för att låsa upp stora datauppsättningar för beslutsfattande.
 

@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 08/20/2018
 ms.author: otarb
 LocalizationGroup: Create reports
-ms.openlocfilehash: 567b775cb7323dbd343f2a26d4abc0d60885ab7a
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 21ec26182efe2d0b08b2a64227264d5b80756962
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73877980"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75760737"
 ---
-# <a name="create-power-bi-visuals-using-python"></a>Skapa visuella Power BI-objekt med Python
+# <a name="create-power-bi-visuals-by-using-python"></a>Skapa visuella Power BI-objekt med hjälp av Python
 Med **Power BI Desktop**, kan du använda **Python** för att visualisera dina data.
 
 ## <a name="prerequisites"></a>Förutsättningar
@@ -167,6 +167,7 @@ Den här självstudien är avsedd att hjälpa dig komma igång med att skapa vis
 Visuella Python-objekt i **Power BI Desktop** har några begränsningar:
 
 * Storleksbegränsningar för data – data som används för ritning av visuella Python-objekt är begränsat till 150 000 rader. Om du väljer mer än 150 000 rader, är det enbart de översta 150 000 raderna som används och ett meddelande visas på bilden.
+* Upplösning – alla Python-visualiseringar visas med 72 DPI.
 * Tidsbegränsning för beräkningar – om en beräkning för ett visuellt Python-objekt överstiger fem minuter så går tidsgränsen ut, vilket resulterar i ett fel.
 * Relationer – om datafält väljs från olika tabeller utan någon definierad relation mellan dem så uppstår ett fel, precis som med andra Power BI Desktop-visualiseringar.
 * Visuella Python-objekt uppdateras när data uppdateras, filtreras eller markeras. Själva bilden är dock inte interaktiv och kan inte vara källan till korsfiltrering.

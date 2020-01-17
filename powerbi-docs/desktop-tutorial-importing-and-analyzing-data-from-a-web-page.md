@@ -10,14 +10,14 @@ ms.topic: tutorial
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: e4a805db851e63a725a866065a774ef8ecc23c24
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 7d4aaa613ac2d79a08ed6bbc03ba47dd296942de
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879598"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75759599"
 ---
-# <a name="tutorial-analyze-web-page-data-using-power-bi-desktop"></a>Självstudie: Analysera webbsidedata med Power BI Desktop
+# <a name="tutorial-analyze-webpage-data-by-using-power-bi-desktop"></a>Självstudie: Analysera webbsidedata med Power BI Desktop
 
 Som den stora fotbollsfantast du är vill du rapportera om vinnarna i fotbolls-EM (UEFA) under årens lopp. Med Power BI Desktop kan du importera data från en webbplats till en rapport och skapa grafik som visar data. I självstudien får du lära dig hur du använder Power BI Desktop för att:
 
@@ -184,7 +184,7 @@ Du kan ändra typ för en visualisering genom att markera den och sedan välja e
 
 I Power BI Desktop är det enkelt att hämta data från en stor mängd datakällor och utforma dem efter dina analysbehov för att visualisera datan på interaktiva sätt. När rapporten är klar kan du [ladda upp den på Power BI](desktop-upload-desktop-files.md) och skapa instrumentpanelen som baseras på den, och sedan dela den med andra Power BI-användare.
 
-## <a name="see-also"></a>Se också
+## <a name="see-also"></a>Se även
 * [Läs andra Power BI Desktop-självstudier](https://go.microsoft.com/fwlink/?LinkID=521937)
 * [Se Power BI Desktop-videor](https://go.microsoft.com/fwlink/?LinkID=519322)
 * [Besök Power BI-forumet](https://go.microsoft.com/fwlink/?LinkID=519326)

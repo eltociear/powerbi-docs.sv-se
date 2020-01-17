@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 4125ff59f32de8453fe131685f0a05e1c45220c3
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: c6987c5849fd2f971c1d7bdc7fe6130dcd09ce59
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "73876535"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761736"
 ---
 # <a name="connect-to-azure-consumption-insights-data-in-power-bi-desktop"></a>Ansluta till Azure Consumption Insights-data i Power BI Desktop
 
@@ -192,23 +192,23 @@ Kolumnerna och detaljnamnen i Azure-portalen ser liknande ut i API:et och anslut
 | ConsumedServiceId |consumedServiceId | |Ja |
 | Cost |cost |ExtendedCost |Nej |
 | Cost Center |costCenter |Cost Center |Nej |
-| Date |date |Date |Nej |
+| Datum |date |Datum |Nej |
 | Dag | |Dag |Nej |
 | DepartmentName |departmentName |Department Name |Nej |
 | DepartmentID |departmentId | |Ja |
 | Instance ID | | |Ja |
 | InstanceId |instanceId |Instance ID |Nej |
-| Location | | |Ja |
+| Plats | | |Ja |
 | Meter Category |meterCategory |Meter Category |Nej |
 | Meter ID | | |Ja |
-| Meter Name |meterName |Meter Name |Nej |
+| Mätarnamn |meterName |Meter Name |Nej |
 | Meter Region |meterRegion |Meter Region |Nej |
 | Meter Sub-Category |meterSubCategory |Meter Sub-Category |Nej |
 | MeterId |meterId |Meter ID |Nej |
 | Månad | |Månad |Nej |
-| Product |product |Product |Nej |
+| Produkt |product |Product |Nej |
 | ProductId |productId | |Ja |
-| Resource Group |resourceGroup |Resource Group |Nej |
+| Resursgrupp |resourceGroup |Resource Group |Nej |
 | Resource Location |resourceLocation |Resource Location |Nej |
 | ResourceGroupId | | |Ja |
 | ResourceLocationId |resourceLocationId | |Ja |
@@ -220,8 +220,8 @@ Kolumnerna och detaljnamnen i Azure-portalen ser liknande ut i API:et och anslut
 | ServiceInfo2Id | | |Ja |
 | Store Service Identifier |storeServiceIdentifier |Store Service Identifier |Nej |
 | StoreServiceIdentifierId | | |Ja |
-| Subscription Name |subscriptionName |Subscription Name |Nej |
-| Tags |tags |Tags |Nej |
+| Prenumerationsnamn |subscriptionName |Subscription Name |Nej |
+| Taggar |tags |Taggar |Nej |
 | TagsId | | |Ja |
 | Unit Of Measure |unitOfMeasure |Unit Of Measure |Nej |
 | År | |År |Nej |

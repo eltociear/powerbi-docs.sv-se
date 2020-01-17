@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/02/2019
+ms.date: 01/08/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 31e2e681bc4309e5dce31583e70e669bce5e466f
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 3e6de89f66d6f6282fcde25a1d2be445e2721817
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73877240"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762196"
 ---
 # <a name="link-entities-between-dataflows-in-power-bi"></a>Länka entiteter mellan dataflöden i Power BI
 
@@ -81,6 +81,7 @@ Det finns några begränsningar att tänka på när du arbetar med länkade enti
 * Cykliska beroenden med länkade entiteter är inte tillåtna
 * Dataflödet måste finnas i en [ny Power BI-arbetsyta](service-create-the-new-workspaces.md)
 * En länkad entitet kan inte kopplas till en vanlig entitet som hämtar data från en lokal datakälla
+* När en fråga (till exempel fråga A) används i beräkningen av en annan fråga (fråga B) i ett dataflöde så blir fråga B en beräknad entitet. Beräknade entiteter kan inte referera till lokala källor.
 
 
 ## <a name="next-steps"></a>Nästa steg

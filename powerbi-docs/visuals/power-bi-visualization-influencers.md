@@ -6,17 +6,17 @@ ms.reviewer: juluczni
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: tutorial
-ms.date: 10/22/2019
+ms.date: 01/10/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 80ed285a22c0272f3bd268397e0e019396b941d7
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 413e30c04ac02e6b957f03494bf6a488edeacac0
+ms.sourcegitcommit: 801d2baa944469a5b79cf591eb8afd18ca4e00b1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73871004"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885313"
 ---
-# <a name="key-influencers-visualization"></a>Visualisering av viktiga influencers
+# <a name="create-key-influencers-visualizations"></a>Skapa visualiseringar av viktiga påverkare
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -57,7 +57,7 @@ Titta på den här videon om du vill lära dig att skapa ett visuellt objekt fö
    > 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fDb5zZ3xmxU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Din produktchef vill att du tar reda på vilka faktorer som gjorde att kunder lämnade negativa omdömen om er molntjänst. Öppna [PBIX-filen med kundfeedback](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.pbix) i Power BI Desktop. Du kan också ladda ned [Excel-filen med kundfeedback för Power BI-tjänsten eller Power BI Desktop](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.xlsx). Välj någon av länkarna och sedan **Ladda ned** från GitHub-sidan som öppnas.
+Din produktchef vill att du tar reda på vilka faktorer som gjorde att kunder lämnade negativa omdömen om er molntjänst. Öppna [PBIX-filen med kundfeedback](https://github.com/microsoft/powerbi-desktop-samples/tree/master/Monthly%20Desktop%20Blog%20Samples/2019/customerfeedback.pbix) i Power BI Desktop. Du kan också ladda ned [Excel-filen med kundfeedback för Power BI-tjänsten eller Power BI Desktop](https://github.com/microsoft/powerbi-desktop-samples/tree/master/Monthly%20Desktop%20Blog%20Samples/2019/customerfeedback.xlsx). Välj någon av länkarna och sedan **Ladda ned** från GitHub-sidan som öppnas.
 
 > [!NOTE]
 > Datamängden Customer Feedback (kundfeedback) bygger på [Moro et al., 2014] S. Moro, s. Cortez och s. Rita. ”A Data-Driven Approach to Predict the Success of Bank Telemarketing.” *Decision Support Systems*, Elsevier, 62:22–31, juni 2014. 
@@ -267,6 +267,8 @@ Om du vill lära dig mer om hur du kan analysera mått med visualiseringen av vi
  
 Det visuella objektet för den viktiga influeraren har vissa begränsningar:
 
+
+
 - Direct Query stöds inte
 - Live-anslutning till Azure Analysis Services och SQL Server Analysis Services stöds inte
 - Publicera på webben stöds inte
@@ -357,6 +359,9 @@ I följande exempel drivar kunder som är konsumenter ett lågt omdöme, där 14
 Orsaken till detta är att visualiseringen också tar hänsyn till antalet datapunkter när den identifierar påverkare. I följande exempel finns fler än 29 000 konsumenter och 10 gånger färre administratörer, ungefär 2 900. Endast 390 av dem gav ett lågt omdöme. Det visuella objektet har inte tillräckligt med data för att avgöra om det är ett mönster i administratörsomdömena eller om det bara är en slump. 
 
 ![Identifiering av påverkare](media/power-bi-visualization-influencers/power-bi-error5.png)
+
+**Vilka datapunktsgränser gäller för viktiga påverkare?**
+Vi kör analysen på ett prov med 10 000 datapunkter. Bubblorna på den ena sidan visar alla påverkare som identifierats. Kolumndiagrammen och plottarna på andra sidan följer provtagningsstrategierna för de visuella kärnobjekten.
 
 **Hur beräknas viktiga påverkare vid kategorianalys?**
 

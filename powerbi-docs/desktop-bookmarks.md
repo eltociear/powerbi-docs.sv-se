@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 11/18/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: d22ac09ac357f3060e4fd79a4e9344a059dace53
-ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
+ms.openlocfilehash: 08d222f03991bdf605f8e465ff0152d40d07d815
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74311326"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761897"
 ---
-# <a name="use-bookmarks-in-power-bi-desktop-to-share-insights-and-build-stories"></a>Använda bokmärken i Power BI Desktop för att dela insikter och skapa berättelser
+# <a name="create-bookmarks-in-power-bi-desktop-to-share-insights-and-build-stories"></a>Skapa bokmärken i Power BI Desktop för att dela insikter och skapa berättelser
 Med *bokmärkesfunktionen* i Power BI Desktop kan du spara den aktuella konfigurerade vyn av en rapportsida, inklusive filtrering och tillståndet för visuella objekt. Du kan sedan gå tillbaka till det tillståndet genom att välja det sparade bokmärket. 
 
 Du kan också skapa en samling bokmärken, ordna dem i valfri ordning och senare gå igenom varje bokmärke i en presentation för att betona ett antal insikter eller den berättelse som du vill förmedla med din visuella information och dina rapporter. 

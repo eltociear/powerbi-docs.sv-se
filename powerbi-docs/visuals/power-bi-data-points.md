@@ -2,21 +2,21 @@
 title: Stora datamängder, datapunktsbegränsningar och datastrategier
 description: Databegränsningar för visuella objekt och strategier för dataminskning
 author: mihart
-ms.reviewer: amac
+ms.reviewer: justyna
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/07/2018
+ms.date: 01/10/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 1ae0fc339d3837c8fc28cc604b3ddb840807dcd5
-ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
+ms.openlocfilehash: 320e8a25206a069c43800295ab64a7ab87afbcf0
+ms.sourcegitcommit: 801d2baa944469a5b79cf591eb8afd18ca4e00b1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74011284"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885265"
 ---
-# <a name="data-point-limits-and-strategies-by-visual-type"></a>Datapunktsbegränsningar och strategier efter visuell typ
+# <a name="apply-data-point-limits-and-strategies-by-visual-type"></a>Använda datapunktsbegränsningar och strategier efter visuell typ
 
 När man renderar ett visuellt objekt i Power BI måste visualiseringen vara snabb och exakt. Det kräver underliggande algoritmer som konfigurerats för varje visuell typ. Visuella objekt i Power BI måste vara tillräckligt flexibla för att hantera datauppsättningar med olika storlekar. Vissa datauppsättningar har bara ett fåtal datapunkter, medan andra datauppsättningar har flera petabyte med datapunkter. Den här artikeln beskriver de strategier som används av Power BI för att rendera visualiseringar.
 
@@ -75,7 +75,7 @@ Se [hur radsampling fungerar](../desktop-high-density-sampling.md#how-the-new-li
  Använder samma strategier som stapeldiagram. Observera att raden i **kombinationsdiagrammet** inte använder högdensitetsalgoritmen som **linjediagrammet** använder.
 
 ### <a name="custom-visuals"></a>Anpassade visuella objekt
-Kan få upp till 30 000, men det är upp till författarna av de visuella objekten att ange vilka strategier som ska användas
+Kan få upp till 30 000, men det är upp till författarna av de visuella objekten att ange vilka strategier som ska användas. Standardgränsen är 1 000, men den som skapat det visuella objektet kan ändra det här värdet upp till som högst 30 000.
 
 ### <a name="doughnut"></a>Ringdiagram
 - Maximalt antal punkter: 3 500
@@ -119,6 +119,9 @@ Beroende på konfigurationen, kan en karta ha:
 - Rader: Virtualisering med fönster med 500 rader i taget
 - Kolumner: 100 översta grupperade kolumner 
 - Värden: flera värden räknas inte mot dataminskningen
+
+### <a name="powerapps-visual"></a>Visuellt PowerApps-objekt
+Kan få upp till 30 000, men det är upp till författarna av de visuella objekten att ange vilka strategier som ska användas. Standardgränsen är 1 000, men den som skapat det visuella objektet kan ändra det här värdet upp till som högst 30 000.
 
 ### <a name="radial-gauge"></a>Radiell mätare
 Ingen strategi för dataminskning

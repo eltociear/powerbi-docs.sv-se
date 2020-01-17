@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.date: 12/05/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e7fa98be039093015e1b19ba8bf20f1368658a43
-ms.sourcegitcommit: 212fb4a46af3e434a230331f18456c6a49a408fd
+ms.openlocfilehash: 6a3458de09cece30948ff848859f05ed8127d034
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74907857"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75757863"
 ---
-# <a name="filled-maps-choropleth-in-power-bi"></a>Koropletkartor i Power BI
+# <a name="create-and-use-filled-maps-choropleth-maps-in-power-bi"></a>Skapa och använda fyllda kartor (koropletkartor) i Power BI
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -66,7 +66,7 @@ I det här videoklippet skapar Kim en grundläggande karta och konverterar den t
 [VIDEO https://www.youtube.com/embed/ajTPGNpthcg ]
 
 ### <a name="create-a-filled-map"></a>Skapa en koropletkarta
-1. Fönstret fält, Välj den **Geo** \> **tillstånd** fältet.    
+1. Välj fältet **Geo** \> **Stat** i fönstret Fält.    
 
    ![gul bockmarkering bredvid Stat](media/power-bi-visualization-filled-maps-choropleths/power-bi-state.png)
 2. [Konvertera diagrammet](power-bi-report-change-visualization-type.md) till en fylld karta. Observera att **Stat** nu befinner sig i **platsområdet**. Bing Maps använder fältet i **platsområdet** för att skapa kartan.  Platsen kan vara många olika giltiga platser som länder, stater, regioner, orter eller postnummer. Bing Maps tillhandahåller figurer för platser runt om i världen. Power BI kan inte skapa den fyllda kartan utan en giltig post i platsområdet.  

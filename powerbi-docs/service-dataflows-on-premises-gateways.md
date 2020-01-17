@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 01/08/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 53124f2b1ede9d8a9c3a9866416f713af1fd2061
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: efd110ad73b1bd72813d418a1f641613c88dc0d5
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73877276"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762587"
 ---
 # <a name="using-dataflows-with-on-premises-data-sources"></a>Använda dataflöden med lokala datakällor
 
@@ -24,7 +24,8 @@ Med **dataflöden**, kan du skapa en samling av data från olika källor, rensa 
 
 ## <a name="configuring-an-enterprise-gateway-for-use-with-dataflows"></a>Konfigurera en företagsgateway för användning med dataflöden
 
-Om du vill använda en lokal datakälla i ett dataflöde, måste alla användare som skapar dataflödet ha en **Företagsgateway** installerad och konfigurerad. Den användare som skapar dataflödet måste också vara administratör för Företagsgatewayen för att kunna använda denna gateway för ett dataflöde.
+Om du vill skapa ett dataflöde med en gateway måste användaren vara Enterprise Gateway-administratör, eller så måste administratören ha delat ut datakällan som ska användas till användaren. 
+
 
 > [!NOTE]
 > Dataflöden stöds endast med företagsgateway.
@@ -35,7 +36,7 @@ När du skapar ett dataflöde, välj en lokal datakälla från listan över data
 
 ![Välj en lokal datakälla](media/service-dataflows-onpremises-gateways/onpremises-gateways_02a.png)
 
-När du har gjort dina val uppmanas du att ange anslutningsinformationen för den företagsgateway som ska användas för att få åtkomst till lokala data. Du måste välja gatewayen och ange autentiseringsuppgifter för den valda gatewayen. Endast gatewayar som användaren är administratör för visas i den nedrullningsbara listan.
+När du har gjort dina val uppmanas du att ange anslutningsinformationen för den företagsgateway som ska användas för att få åtkomst till lokala data. Du måste välja gatewayen och ange autentiseringsuppgifter för den valda gatewayen.
 
 ![Ange anslutningsinformationen](media/service-dataflows-onpremises-gateways/onpremises-gateways_03.png)
 

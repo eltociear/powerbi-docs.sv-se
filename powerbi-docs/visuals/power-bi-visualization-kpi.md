@@ -10,14 +10,14 @@ ms.topic: tutorial
 ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 42a9f2c641a0cdac9b7a129ffc5ecc6f7fb8cf8d
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: f477c21a337838fb275087f744eef02eb7fd57ce
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870870"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762380"
 ---
-# <a name="key-performance-indicator-kpi-visuals"></a>Visuella KPI-objekt (Key Performance Indicator)
+# <a name="create-key-performance-indicator-kpi-visualizations"></a>Skapa KPI-visualiseringar (Key Performance Indicator)
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -97,7 +97,7 @@ KPI:er är också tillgängliga i Power BI-tjänsten och på din mobila enhet. D
 
 ## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
 
-Om din KPI inte ser ut som den på bilden ovan, kan det bero på att du inte har sorterat efter **FiscalMonth** (Räkenskapsmånad). KPI:er saknar sorteringsalternativ. Du måste börja om och sortera efter **FiscalMonth** (Räkenskapsmånad) *innan* du konverterar visualiseringen till en KPI.
+Om din KPI inte ser ut som den på bilden ovan, kan det bero på att du inte har sorterat efter **FiscalMonth** (Räkenskapsmånad). KPI:er saknar sorteringsalternativ. Du måste börja om och sortera efter **FiscalMonth** *innan* du konverterar visualiseringen till ett KPI.
 
 ## <a name="next-steps"></a>Nästa steg
 

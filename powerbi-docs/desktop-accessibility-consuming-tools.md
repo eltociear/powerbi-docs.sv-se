@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 10/28/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: ca2f1cd4908f99d47519f2dfca42bf2afae5fbed
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: c006d35baa14e68cca7009aabf79438321396802
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73878955"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761943"
 ---
-# <a name="consuming-reports-in-power-bi-with-accessibility-tools"></a>Använda rapporter i Power BI med hjälpmedel
+# <a name="consume-power-bi-reports-by-using-accessibility-features"></a>Använda Power BI-rapporter med hjälpmedel
 Power BI har många inbyggda funktioner som hjälper personer med funktionshinder att använda och interagera med Power BI-rapporter. De här verktygen gör att sådana användare kan få samma information från en rapport som de som inte använder hjälpmedelstekniken.
 
 ![Inställningar för hög kontrast i Windows](media/desktop-accessibility/accessibility-consuming-tools-01.png)

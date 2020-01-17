@@ -6,53 +6,48 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/22/2019
+ms.date: 01/02/2020
 ms.author: gepopell
 LocalizationGroup: Connect to data
-ms.openlocfilehash: e493e4a41e7b357a23677c1c50f654dbee51e0ca
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: b604ade56335e65b25501eb9fe3d3c2fd185a6f0
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878423"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761417"
 ---
 # <a name="connector-extensibility-in-power-bi"></a>Utökningsbarhet av anslutningsprogram i Power BI
 
-I Power BI kan kunder och utvecklare utöka datakällorna som de ansluter till på många sätt. De använder befintliga anslutningsprogram och allmänna datakällor (till exempel ODBC, OData, OLEDB, Webb, CSV, XML, JSON). Eller så kan utvecklare skapa datatillägg, så kallade **anpassade anslutningsprogram**, och göra dem till **certifierade anslutningsprogram**.
+Power BI kan ansluta till data med hjälp av befintliga anslutningsprogram och allmänna data källor som ODBC, OData, OLE DB, Web, CSV, XML och JSON. Utvecklare kan också aktivera nya datakällor med anpassade datatillägg som kallas *anpassade anslutningsprogram*. Vissa anpassade anslutningsprogram certifieras och distribueras av Microsoft som *certifierade kopplingar*.
 
-För närvarande aktiverar du **anpassade anslutningsprogram** på en meny. Och du kan på ett säkert sätt styra nivån för anpassad kod som du vill ska få köras i ditt system. Du kan välja bland anpassade anslutningsprogram eller endast anslutningsprogram som certifierats och distribuerats av Microsoft i dialogrutan **Hämta data**.
+Om du vill använda icke-certifierade anpassade anslutningsprogram som du eller en tredje part har utvecklat måste du justera säkerhetsinställningarna i Power BI Desktop så att tilläggen kan läsas in utan validering eller varningar. Eftersom den här koden kan hantera autentiseringsuppgifter, inklusive att skicka dem via HTTP, och ignorera sekretessnivåer ska du bara ändra den här säkerhetsinställningen om du litar helt och fullt på dina anpassade anslutningsprogram.
+
+Ett annat alternativ är att utvecklaren signerar anslutningsprogrammet med ett certifikat och anger informationen du behöver för att använda det utan att ändra dina säkerhetsinställningar. Mer information finns i [Om betrodda anslutningsprogram från tredje part](desktop-trusted-third-party-connectors.md).
 
 ## <a name="custom-connectors"></a>Anpassade anslutningar
 
-**Anpassade anslutningsprogram** inbegriper många möjligheter – från små API:er som är viktiga för din verksamhet, till stora branschspecifika tjänster som Microsoft inte har publicerat ett anslutningsprogram för. Många anslutningsprogram distribueras av leverantören. Om du behöver ett särskilt dataanslutningsprogram bör du kontakta en leverantör.
+Icke-certifierade anpassade anslutningsprogram kan vara allt från små, affärskritiska API:er till stora, branschspecifika tjänster som Microsoft inte har publicerat något anslutningsprogram för. Många anslutningsprogram distribueras av leverantörerna. Om du behöver en specifik datakoppling kontaktar du leverantören. 
 
-Om du vill använda ett **anpassat anslutningsprogram** placerar du det i mappen *\[Dokument]\\Power BI Desktop\\Anpassade anslutningsprogram* och ändrar säkerhetsinställningarna enligt beskrivningen i följande avsnitt.
+Om du vill använda ett icke-certifierat anpassat anslutningsprogram placerar du *.pq*-, *.pqx*-, *.m*- eller *.mez*-filen för anslutningsprogrammet i mappen *\[Dokument]\\Power BI Desktop\\Custom Connectors*. Skapa den här mappen om den inte redan finns.
 
-Du behöver inte ändra säkerhetsinställningarna för att använda **certifierade anslutningsappar**.
+Justera säkerhetsinställningarna för datatillägg så här:
 
-## <a name="data-extension-security"></a>Säkerhetsinställningar för datatillägg
+Välj **Arkiv** > **Alternativ och inställningar** > **Alternativ** > **Säkerhet** i Power BI Desktop.
 
-Om du vill ändra säkerhetsinställningarna för datatillägg går du till **Power BI Desktop** och väljer **Arkiv > Alternativ och inställningar > Alternativ > Säkerhet**.
+Under **Datatillägg** väljer du **(Rekommenderas inte) Tillåt att alla tillägg kan läsas in utan validering eller varning**. Välj **OK** och starta sedan om Power BI Desktop. 
 
-![Välj om du vill läsa in anpassade anslutningsprogram med säkerhetsalternativ för datatillägg](media/desktop-connector-extensibility/data-extension-security-1.png)
+![Tillåt icke-certifierade anpassade anslutningsprogram i säkerhetsalternativen för datatillägg](media/desktop-connector-extensibility/data-extension-security-1.png)
 
-Under **Datatillägg** kan du välja mellan två säkerhetsnivåer:
+Standardinställningen för datatillägg i Power BI Desktop är **(Rekommenderas) Tillåt endast Microsoft-certifierade och andra betrodda tillägg från tredje part att läsas in**. Om det finns icke-certifierade anpassade anslutningsprogram i systemet med den här inställningen så visas dialogrutan **Ocertifierade anslutningsappar** när du startar Power BI Desktop, där du ser vilka anslutningsprogram som inte går att läsa in säkert.
 
-* (Rekommenderas) Tillåt att endast certifierade filnamnstillägg läses in
-* (Rekommenderas inte) Tillåt att alla tillägg läses in utan varning
+![Dialogrutan Ocertifierade anslutningsappar](media/desktop-connector-extensibility/data-extension-security-2.png)
 
-Om du vill använda **anpassade anslutningsprogram** eller anslutningsprogram som du eller en tredje part har utvecklat och distribuerat, måste du välja **(Not Recommended) Allow any extension to load without warning** ((Rekommenderas inte) Tillåt att alla tillägg läses in utan varning). Vi rekommenderar att du inte använder den här säkerhetsinställningen såvida du inte litar till hundra procent på dina anpassade anslutningsprogram. Koden i dina anpassade anslutningsprogram kan hantera autentiseringsuppgifter, inklusive skicka dem via HTTP, och ignorera sekretessnivåer.
-
-Om du använder säkerhetsinställningen som **rekommenderas** och det finns anpassade anslutningsprogram i ditt system får du ett felmeddelande om att ”anslutningsprogrammet inte har certifierats och att vi inte kan verifiera att det är säkert att använda” följt av en lista med anslutningsprograms om inte kan läsas in på ett säkert sätt.
-
-![En dialogruta visas som beskriver de anpassade anslutningsprogram som inte kan läsas in på grund av säkerhetsinställningarna, i det här fallet TripPin](media/desktop-connector-extensibility/data-extension-security-2.png)
-
-Om du vill lösa felet utan att ändra säkerheten tar du bort de osignerade anslutningsprogrammen från mappen Anpassade anslutningsprogram.
-
-För att åtgärda problemet så att du kan använda dessa anslutningsprogram måste du ändra säkerhetsinställningarna till inställningen **(Rekommenderas inte)** som beskrivs ovan. Sedan startar du om **Power BI Desktop**.
+Du kan lösa det här problemet genom att antingen ändra säkerhetsinställningen **Datatillägg** eller ta bort de ocertifierade anslutningsprogrammen från mappen *Custom Connectors*.
 
 ## <a name="certified-connectors"></a>Certifierade kopplingar
 
-En begränsad delmängd av datatillägg betraktas som **certifierade**. Du kommer åt de certifierade anslutningsprogrammen i dialogrutan **Hämta data**. Men den tredjepartsutvecklare som har skapat anslutningsprogrammet ansvarar för underhåll och support. Även om vi (Microsoft) distribuerar dessa anslutningsprogram ansvarar vi inte för deras prestanda eller funktion.
+En begränsad delmängd datatillägg betraktas som *certifierade*. Även om vi (Microsoft) distribuerar dessa anslutningsprogram ansvarar vi inte för deras prestanda eller funktion. Den tredjepartsutvecklare som har skapat anslutningsprogrammet ansvarar för underhåll och support. 
 
-Om du vill att en anpassad anslutningsapp ska certifieras ber du din leverantör att kontakta dataconnectors@microsoft.com.
+Du kan se certifierade anslutningsprogram från tredje part i listan i dialogrutan **Hämta data** i Power BI Desktop, tillsammans med de allmänna och vanliga anslutningsprogrammen. Du behöver inte ändra några säkerhetsinställningar för att använda certifierade anslutningsprogram.
+
+Om du vill att ett anpassat anslutningsprogram ska certifieras ber du din leverantör att kontakta dataconnectors@microsoft.com.

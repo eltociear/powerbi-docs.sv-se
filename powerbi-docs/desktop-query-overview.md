@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 3ee7c094972e7251ab99d9092691bf809344a3d5
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 294bd8017d6e6c8a1eaca836b32c7bd5d50d88e1
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876293"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75760806"
 ---
-# <a name="query-overview-in-power-bi-desktop"></a>Frågeöversikt i Power BI Desktop
+# <a name="about-using-query-editor-in-power-bi-desktop"></a>Om att använda Frågeredigeraren i Power BI Desktop
 Med **Power BI Desktop** kan du ansluta till en värld av data, skapa övertygande och grundläggande rapporter och dela ditt arbete med andra – som sedan kan utgå från ditt arbete och förbättra sina Business Intelligence-uppgifter.
 
 Power BI Desktop har tre vyer:

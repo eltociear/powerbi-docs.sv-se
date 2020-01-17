@@ -9,12 +9,12 @@ ms.topic: reference
 ms.date: 09/05/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: a3ca4b8ffe709fec7953eb5d4081bdf296504eb1
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 3f263e67b866f6d6a3ea76257c64bbb2308a25d2
+ms.sourcegitcommit: b68a47b1854588a319a5a2d5d6a79bba2da3a4e6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73868524"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75729723"
 ---
 # <a name="data-types-in-power-bi-desktop"></a>Datatyper i Power BI Desktop
 Den här artikeln beskriver datatyper som stöds i Power BI Desktop och dataanalysuttryck (DAX). 
@@ -51,7 +51,7 @@ Power BI Desktop stöder tre typer av nummer:
 >
 
 ### <a name="datetime-types"></a>Datum/tid-typer
-Power BI Desktop stöder fem datum/tid-datatyper i frågevyn och tre i rapportvyn och modellen.   Både datum/tid/tidszon och Varaktighet konverteras vid inläsningen till modellen.
+Power BI Desktop har stöd för fem datum/tid-datatyper i frågevyn.  Både datum/tid/tidszon och Varaktighet konverteras vid inläsningen till modellen. Datamodellen i Power BI Desktop har endast stöd för datum/tid, men de kan formateras som datum och tid oberoende av varandra. 
 
 **Datum/tid** – Visar både ett datum- och ett tidsvärde.  Datum/tidsvärdet lagras som typen Decimaltal.  Så du kan faktiskt konvertera mellan de två.   Tidsdelen i ett datum lagras som ett bråkvärde till hela multiplar av 1/300 sekunder (3,33 ms).  Datum mellan åren 1900 och 9999 stöds.
 
@@ -59,7 +59,7 @@ Power BI Desktop stöder fem datum/tid-datatyper i frågevyn och tre i rapportvy
 
 **Tid** – Visar bara tid (ingen datumdel).  När tidsvärdet konverteras till modellen är det samma som ett datum/tid-värde utan några siffror till vänster om decimaltecknet.
 
-**Datum/tid/tidszon** – Visar UTC-datum/-tid.  För närvarande konverteras det till Datum/tid när det läses in i modellen.
+**Datum/tid/tidszon** – Visar datum/tid för tidszonen UTC med tidszonsförskjutning.  Den konverteras för närvarande till Datum/tid vid inläsning i modellen. Power BI modellen justerar inte tidszonen baserat på användarens plats eller språk. Om värdet 09:00 läses in i modellen i USA visas det som 09:00 när rapporten öppnas och visas. 
 
 **Varaktighet** – Visar en viss tidslängd. Den konverteras till typen Decimaltal när den läses in i modellen.  Som decimaltal kan den adderas eller subtraheras från ett datum/tid-fält med korrekta resultat.  Som decimaltal kan du lätt kan använda den i visualiseringar som visar omfattning.
 
@@ -175,13 +175,13 @@ Hur tomma värden ska hanteras i åtgärder som till exempel addition eller samm
 | BLANK + BLANK |BLANK |0(zero) |
 | BLANK + 5 |5 |5 |
 | BLANK * 5 |BLANK |0(zero) |
-| 5/BLANK |Infinity |Error |
+| 5/BLANK |Infinity |Fel |
 | 0/BLANK |NaN |Error |
-| BLANK/BLANK |BLANK |Error |
+| BLANK/BLANK |BLANK |Fel |
 | FALSE OR BLANK |FALSE |FALSE |
 | FALSE AND BLANK |FALSE |FALSE |
 | TRUE OR BLANK |TRUE |TRUE |
 | TRUE AND BLANK |FALSE |TRUE |
-| BLANK OR BLANK |BLANK |Error |
-| BLANK AND BLANK |BLANK |Error |
+| BLANK OR BLANK |BLANK |Fel |
+| BLANK AND BLANK |BLANK |Fel |
 

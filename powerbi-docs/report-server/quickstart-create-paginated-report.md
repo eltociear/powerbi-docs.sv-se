@@ -6,16 +6,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 10/22/2018
+ms.date: 01/07/2020
 ms.author: maggies
-ms.openlocfilehash: b8dd79e4b256a80ba5159a1b3980e798bc611840
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 4c4228ea4276235a983849d2ea88e1030f4690f7
+ms.sourcegitcommit: b68a47b1854588a319a5a2d5d6a79bba2da3a4e6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73875039"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75732048"
 ---
 # <a name="create-a-paginated-report-for-power-bi-report-server"></a>Skapa en sidnumrerad rapport för Power BI-rapportservern
+I den här artikeln får du skapa en sidnumrerad rapport för Power BI-rapportservern i några enkla steg.
+
+Behöver du hjälp med att skapa sidnumrerade rapporter i Report Builder för Power BI-tjänsten? Då ska du läsa [Skapa sidnumrerade rapporter i Power BI](../report-builder-power-bi.md) i stället.
+
 Som namnet antyder sidnumrerade rapporter ha många sidor. De har ett fast format och kan anpassas med precision. Sidnumrerade rapporter är RDL-filer.
 
 Du kan lagra och hantera sidnumrerade rapporter i webbportalen Power BI Report Server, precis som i webbportalen SQL Server Reporting Services (SSRS). Skapa och redigera dem i Report Builder eller Report Designer i SQL Server Data Tools (SSDT) och publicera dem sedan i någon av webbportalerna. Personerna i din organisation som läser rapporterna kan se dem i webbläsaren eller i mobilappen Power BI på deras mobilenhet.
@@ -24,7 +28,7 @@ Du kan lagra och hantera sidnumrerade rapporter i webbportalen Power BI Report S
 
 Om du redan har skapat sidnumrerade rapporter i Report Builder eller Report Designer är du redo att skapa sidnumrerade rapporter för Power BI-rapportservern. Annars kan du följa dessa snabbsteg för att komma igång.
 
-## <a name="step-1-install-and-start-report-builder"></a>Steg 1: Installera och starta Report Builder
+## <a name="step-1-start-report-builder"></a>Steg 1: Starta Report Builder
 Du kanske redan har installerat Report Builder för att skapa rapporter för SSRS-servern. Du kan använda samma version eller Report Builder för att skapa rapporter för Power BI-rapportservern. Det är lätt att installera programmet.
 
 1. Välj **ny** > **sidnumrerad rapport** i webbportalen för Power BI-rapportservern.
