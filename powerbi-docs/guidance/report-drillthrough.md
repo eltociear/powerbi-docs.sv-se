@@ -1,5 +1,5 @@
 ---
-title: Visa detaljerad information för rapportsida
+title: Använd detaljerad information för rapportsidor
 description: Vägledning för att arbeta med detaljerad information på rapportsidor.
 author: peter-myers
 ms.reviewer: asaxton
@@ -8,14 +8,14 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/28/2019
 ms.author: v-pemyer
-ms.openlocfilehash: a19e8148a719186cbaefe3203d58a5a98687c067
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: 48942b30b84706c933ccef455129c84a67ac5a1b
+ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75223628"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76040385"
 ---
-# <a name="report-page-drillthrough"></a>Visa detaljerad information för rapportsida
+# <a name="use-report-page-drillthrough"></a>Använd detaljerad information för rapportsidor
 
 Den här artikeln är avsedd för rapportförfattare som skapar Power BI-rapporter. Den innehåller förslag och rekommendationer när du skapar [visning av detaljerad information på rapportsidor](../desktop-drillthrough.md).
 

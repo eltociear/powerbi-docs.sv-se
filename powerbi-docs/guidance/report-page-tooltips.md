@@ -1,5 +1,5 @@
 ---
-title: Utöka visuella objekt med knappbeskrivningar för rapportsida
+title: Utöka visuella objekt med knappbeskrivningar för rapportsidor
 description: Vägledning för att arbeta med knappbeskrivningar för rapportsidor.
 author: peter-myers
 ms.reviewer: asaxton
@@ -8,14 +8,14 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 95cf62057cdea001a438f4555aa3384c54efe4b5
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: 826af7b224b901b6dc9f3926260b1d920836a792
+ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75221952"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76040349"
 ---
-# <a name="extending-visuals-with-report-page-tooltips"></a>Utöka visuella objekt med knappbeskrivningar för rapportsida
+# <a name="extend-visuals-with-report-page-tooltips"></a>Utöka visuella objekt med knappbeskrivningar för rapportsidor
 
 Den här artikeln är avsedd för rapportförfattare som skapar Power BI-rapporter. Den innehåller förslag och rekommendationer när du skapar [knappbeskrivningar för rapportsidor](../desktop-tooltips.md).
 
