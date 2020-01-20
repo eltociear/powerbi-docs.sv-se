@@ -26,11 +26,11 @@
               href: star-schema.md
             - name: Minska datamodellstorlek
               href: import-modeling-data-reduction.md
-            - name: Vägledning om automatisk datum/tid i Power BI Desktop
+            - name: Vägledning för automatiskt datum/tid
               href: auto-date-time.md
             - name: Vägledning för att lägga till en många-till-många-relationer
               href: relationships-many-to-many.md
-            - name: Vägledning för DirectQuery-modell i Power BI Desktop
+            - name: Vägledning för DirectQuery-modell
               href: directquery-model-guidance.md
         - name: DAX
           items:
@@ -58,9 +58,11 @@
               href: report-drillthrough.md
             - name: Använda sidnumrerade rapporter i Power BI
               href: report-paginated-or-power-bi.md
+            - name: Använda sammanhängande parametrar i sidnumrerade rapporter
+              href: paginated-report-cascading-parameter.md
             - name: Undvik tomma sidor när du skriver ut sidnumrerade rapporter
               href: report-paginated-blank-page.md
-            - name: Migrera SQL Server Reporting Services-rapporter till Power BI
+            - name: Migrera SSRS-rapporter till Power BI
               href: migrate-ssrs-reports-to-power-bi.md
     - name: Vitböcker
       items:
