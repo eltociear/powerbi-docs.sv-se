@@ -176,8 +176,8 @@
               href: mobile/mobile-share-dashboard-from-the-mobile-apps.md
             - name: Favoriter i mobilapparna
               href: mobile/mobile-apps-favorites.md
-            - name: Konfigurera rapportinteraktion i mobilapparna (endast telefon)
-              href: mobile/mobile-app-single-tap.md
+            - name: Konfigurera interaktionsinställningar (endast telefon)
+              href: mobile/mobile-app-interaction-settings.md
             - name: Ställa in dataaviseringar i Power BI-mobilapparna
               href: mobile/mobile-set-data-alerts-in-the-mobile-apps.md
             - name: Få aviseringar i Power BI-mobilapparna
