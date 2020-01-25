@@ -961,16 +961,18 @@
       items:
         - name: Nyheter
           href: report-server/whats-new.md
+        - name: Administratörsöversikt
+          href: report-server/admin-handbook-overview.md
         - name: Ändringslogg
           href: report-server/changelog.md
         - name: Supporttider
           href: report-server/support-timeline.md
+        - name: Always Encrypted-support
+          href: report-server/always-encrypted-support.md
         - name: Maskin- och programvarukrav
           href: report-server/system-requirements.md
         - name: Stöd för webbläsare
           href: report-server/browser-support.md
-        - name: Administratörsöversikt
-          href: report-server/admin-handbook-overview.md
         - name: Rapportservern grunder
           items:
             - name: Schemalagd uppdatering av Power BI-rapport
