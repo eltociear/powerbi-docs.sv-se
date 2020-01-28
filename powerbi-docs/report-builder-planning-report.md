@@ -1,6 +1,6 @@
 ---
 title: Planera en rapport i Power BI Report Builder
-description: Med Power BI Paginated Report Builder kan du skapa många typer av sidnumrerade rapporter. Det är en bra idé att planera först om du vill skapa en användbar rapport som är enkel att förstå.
+description: Med Power BI Report Builder kan du skapa många typer av sidnumrerade rapporter. Det är en bra idé att planera först om du vill skapa en användbar rapport som är enkel att förstå.
 ms.date: 07/25/2019
 ms.service: powerbi
 ms.subservice: report-builder
@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.assetid: 79113505-1ce8-4f8c-9260-d861838f7813
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 33cdb53ab411e0d2f4686f7cc9a41bb3f0fe4cb6
-ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
+ms.openlocfilehash: 30ab632d11befd34ff9a234e441b345c696fb54d
+ms.sourcegitcommit: df8bcc65f0df69bf1fc1d47eb06575742eac1622
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68623867"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75953818"
 ---
 # <a name="planning-a-report-in-power-bi-report-builder"></a>Planera en rapport i Power BI Report Builder
 
-Med Power BI Paginated Report Builder kan du skapa många typer av sidnumrerade rapporter. Du kan till exempel skapa rapporter som visar sammanfattningsdata eller detaljerade försäljningsdata, marknadsföring och försäljningstrender, driftsrapporter eller instrumentpaneler. Du kan även skapa rapporter som drar nytta av formaterad text, till exempel för försäljningsordrar, produktkataloger eller formulärbrev. Alla dessa rapporter skapas med hjälp av olika kombinationer av samma grundläggande byggstenar i Report Builder. Det är en bra idé att planera först om du vill skapa en användbar rapport som är enkel att förstå. Här följer några saker som du kanske vill överväga innan du sätter igång:  
+Med Power BI Report Builder kan du skapa många typer av sidnumrerade rapporter. Du kan till exempel skapa rapporter som visar sammanfattningsdata eller detaljerade försäljningsdata, marknadsföring och försäljningstrender, driftsrapporter eller instrumentpaneler. Du kan även skapa rapporter som drar nytta av formaterad text, till exempel för försäljningsordrar, produktkataloger eller formulärbrev. Alla dessa rapporter skapas med hjälp av olika kombinationer av samma grundläggande byggstenar i Report Builder. Det är en bra idé att planera först om du vill skapa en användbar rapport som är enkel att förstå. Här följer några saker som du kanske vill överväga innan du sätter igång:  
   
 ## <a name="in-what-format-do-you-want-the-report-to-appear"></a>I vilket format du vill att rapporten ska visas?
   

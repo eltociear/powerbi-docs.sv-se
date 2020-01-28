@@ -1,6 +1,6 @@
 ---
 title: Certifierade visuella Power BI-objekt
-description: Krav och processer för att skicka en visualisering för certifiering. Och en lista över certifierade visuella Power BI-objekt.
+description: Krav och processer för att skicka ett anpassat visuellt objekt för certifiering och en lista över certifierade visuella Power BI-objekt.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -8,73 +8,94 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
-ms.date: 12/02/2019
-ms.openlocfilehash: c39b96122016746905ea09c0983adf50356f0c77
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.date: 01/12/2019
+ms.openlocfilehash: 04954397a16fecddabca63067c903dee742873ef
+ms.sourcegitcommit: 052df769e6ace7b9848493cde9f618d6a2ae7df9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75221975"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75925583"
 ---
 # <a name="get-a-power-bi-visual-certified"></a>Certifiera ett visuellt Power BI-objekt
 
-Certifierade visuella Power BI-objekt är visuella objekt på *Marketplace* som uppfyller vissa *specificerade* kodkrav som *Microsoft Power BI-teamet* har testat och godkänt. Testerna är utformade för att kontrollera att det visuella objektet inte har tillgång till externa tjänster eller resurser.
+Certifierade visuella Power BI-objekt är visuella objekt i [AppSource](https://appsource.microsoft.com/en-us/marketplace/apps?page=1&product=power-bi-visuals) som uppfyller Microsoft Power BI-teamets [kodkrav](#certification-requirements). Dessa visuella objekt testas för att kontrollera att de inte har åtkomst till externa tjänster eller resurser och att de följer säkra kodningsmönster och riktlinjer.
 
-Certifierade visuella Power BI-objekt används som [standardinställda visuella Power BI-objekt](power-bi-custom-visuals.md). Du kan lägga till dem i [Power BI-Desktop](../desktop-what-is-desktop.md) och [Power BI-tjänsten](../power-bi-service-overview.md) och visa dem med [Power BI Mobile](../consumer/mobile/mobile-apps-for-mobile-devices.md) och [Power BI Embedded ](embedding.md).
+När ett visuellt Power BI-objekt har certifierats erbjuder det fler funktioner. Du kan [exportera det till PowerPoint](../consumer/end-user-powerpoint.md) och du kan visa det visuella objektet i e-postmeddelanden när en användare [prenumererar på rapportsidor](../consumer/end-user-subscribe.md).
 
-Certifieringsprocessen är en valfri process. Det är upp till utvecklaren att bestämma om det visuella Power BI-objektet i Marketplace ska certifieras. När ett visuellt Power BI-objekt har certifierats erbjuder det fler funktioner. Du kan [exportera det till PowerPoint](../consumer/end-user-powerpoint.md) och du kan visa det visuella objektet i e-postmeddelanden när en användare [prenumererar på rapportsidor](../consumer/end-user-subscribe.md).
-
-Ocertifierade visuella Power BI-objekt innebär inte nödvändigtvis osäkra visuella objekt. Vissa visuella objekt är inte certifierade eftersom de inte är kompatibla med ett eller flera av [certifieringskraven](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements). Till exempel att ansluta till en extern tjänst som visuell mappning eller visuella objekt med kommersiella bibliotek.
-
-Om du är webbutvecklare som är intresserad av att skapa egna visuella Power BI-objekt och lägga till dem i  [Microsoft AppSource](https://appsource.microsoft.com) kan du börja du med självstudien  [Utveckla ett visuellt Power BI-objekt](visuals/custom-visual-develop-tutorial.md).
+Certifieringsprocessen är valfri. Visuella Power BI-objekt som inte är certifierade är inte nödvändigtvis osäkra visuella objekt i Power BI. Vissa visuella Power BI-objekt är inte certifierade eftersom de inte är kompatibla med ett eller flera av [certifieringskraven](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements). Till exempel en visuell karta i Power BI som ansluter till en extern tjänst eller ett visuellt Power BI-objekt som använder kommersiella bibliotek.
 
 > [!NOTE]
-> **Microsoft** är *inte* författare till visuella Power BI-objekt från tredje part. Vi rekommenderar att kunder kontaktar upphovsmannen direkt för att verifiera funktionaliteten för visuella objekt från tredje part.
-
-> [!IMPORTANT]
-> Microsoft kan ta bort visuella Power BI-objekt från listan över [certifierade visuella Power BI-objekt](#certified-power-bi-visuals) efter eget gottfinnande.
+> Microsoft har inte skapat de visuella Power BI-objekten från tredje part. Kontakta upphovsmannen direkt för att verifiera funktionaliteten för visuella objekt från tredje part.
 
 ## <a name="certification-requirements"></a>Certifieringskrav
 
-Se till att visuella Power BI-objekt uppfyller de krav som anges i det här avsnittet för att [certifiera](#get-a-power-bi-visual-certified) ditt visuella Power BI-objekt. 
+För att få dina visuella Power BI-objekt [certifierade](#get-a-power-bi-visual-certified) måste ditt visuella Power BI-objekt uppfylla de krav som anges i det här avsnittet. 
 
-> [!TIP]
-> Vi rekommenderar att du använder EsLint med standardsäkerhetsregler för att kontrollera koden innan den skickas.
+### <a name="general-requirements"></a>Allmänna krav
 
-* Godkänd för Microsoft Seller Dashboard eller Partner Center. Ditt visuella Power BI-objekt måste finnas på vår [Marketplace](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals).
-* Visuella Power BI-objekt måste skrivas med *API v2.5* eller senare.
-* Kodlagringsplatsen måste vara tillgänglig för granskning av Power BI-teamet. Till exempel måste ett läsbart format för källkoden (Java Script eller TypeScript) vara tillgängligt för oss via GitHub.
+Ditt visuella Power BI-objekt måste godkännas av instrumentpanelen för försäljnings eller Partnercenter. Vi rekommenderar att ditt visuella Power BI-objekt redan finns i [AppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals). Mer information om att publicera visuella Power BI-objekt till AppSource finns i [Publicera visuella Power BI-objekt på Partnercenter](office-store.md).
 
-    >[!NOTE]
-    > Du måste inte dela koden offentligt i Github.
+Innan du skickar in ditt visuella Power BI-objekt för certifiering ska du kontrollera att det uppfyller [riktlinjerna för visuella Power BI-objekt](./guidelines-powerbi-visuals.md).
 
-* Krav för kodlagring:
-  * Måste innehålla följande filer:
-    * .gitignore
-    * capabilities.json
-    * pbiviz.json
-    * package.json
-    * package-lock.json
-    * tsconfig.json
-  * Får inte innehålla mappen *node_modules* (lägg till *node_modules* i filen .gitingore*).
-  * Kommandot *npm install* får inte returnera fel.
-  * Kommandot *npm audit* får inte returnera varningar av hög eller måttlig nivå.
-  * Kommandot *pbiviz package* får inte returnera några fel.
-  * Måste innehålla [TSlint från Microsoft](https://www.npmjs.com/package/tslint-microsoft-contrib) utan åsidosatta konfigurationer. Detta kommando får inte returnera fel.
-   * Det kompilerade paketet för det visuella Power BI-objektet måste matcha det skickade paketet.
-* Krav för källkod:
-   * Det visuella Power BI-objektet måste ha stöd för [API:et för renderingshändelser](./visuals/event-service.md).
-   * Se till att ingen godtycklig/dynamisk kod körs (dålig: eval() är osäker att använda för settimeout(), requestAnimationFrame(), setinterval(någon funktion med användarindata), körning av användarindata).
-   * Se till att DOM manipuleras på ett säkert sätt (dåligt: innerHTML, D3.html(<några användarindata>). Använd sanering för användarindata innan de läggs till i DOM.
-   * Se till att det inte finns några JavaScript-fel eller undantag i webbläsarkonsolen för indata. Användare kan använda ditt visuella Power BI-objekt med olika mängder oväntade data. Därför får det visuella objektet inte sluta fungera. Du kan använda [den här exempelrapporten](https://github.com/Microsoft/PowerBI-visuals/raw/gh-pages/assets/reports/large_data.pbix) som en testdatauppsättning.
+När du skickar det visuella Power BI-objektet ska du se till att det kompilerade paketet exakt matchar det skickade paketet.
 
-* Om några egenskaper i filen *capabilities.json* ändras ser du till att de inte gör att den befintliga användarens rapporter slutar fungera.
+### <a name="code-repository-requirements"></a>Krav för kodlagring
 
-* Kontrollera att det visuella Power BI-objektet uppfyller [riktlinjerna för visuella Power BI-objekt](./guidelines-powerbi-visuals.md).
-    
-* Din kod kan bara använda offentliga, granskade OSS-komponenter som offentliga Javascript- eller TypeScript-bibliotek. Källkoden måste vara tillgänglig för granskning och får inte ha kända säkerhetsrisker. Vi kan inte verifiera ett anpassat visuellt objekt med hjälp av en extern komponent.
+Även om du inte behöver dela koden offentligt i GitHub måste kodlagringsplatsen vara tillgänglig för granskning av Power BI-teamet. Det bästa sättet att göra det på är genom att tillhandahålla källkoden (Java Script eller TypeScript) i GitHub.
 
-* Det visuella Power BI-objektet får inte ha tillgång till externa tjänster eller resurser. Till exempel får inga HTTP/S- eller WebSocket-begäranden gå ut från Power BI till några tjänster. 
+Lagringsplatsen får bara innehålla kod för ett visuellt Power BI-objekt. Den får inte innehålla kod för flera visuella Power BI-objekt eller orelaterad kod.
+
+Lagringsplatsen måste innehålla en gren med namnet **certifiering**. Källkoden i den här grenen måste matcha det skickade paketet. Den här koden kan bara uppdateras under nästa sändningsprocess om du skickar in det visuella Power BI-objektet igen.
+
+Om ditt visuella Power BI-objekt använder privata NPM-paket eller Git-delmoduler måste du ge åtkomst till de övriga lagringsplatserna som innehåller den här koden.
+
+### <a name="file-requirements"></a>Filkrav
+
+Använd den senaste versionen av API:t för att skriva visuella Power BI-objekt.
+
+Lagringsplatsen måste innehålla följande filer:
+* **. gitignore** – Lägg till `node_modules` till den här filen. Koden får inte innehålla mappen *node_modules*.
+* **capability. JSON-** – Om du skickar nyare versioner av visuella Power BI-objekt med ändringar i egenskaperna i den här filen ska du kontrollera att de inte bryter rapporter för befintliga användare.
+* **pbiviz.json**
+* **package.json**
+* **package-lock.json**
+* **tsconfig.json**
+
+### <a name="command-requirements"></a>Kommandokrav
+
+Kontrollera att följande kommandon inte returnerar några fel.
+
+* `npm install`
+* `pbiviz package`
+* `npm audit` – Får inte returnera varningar av hög eller måttlig nivå.
+* [TSlint från Microsoft](https://www.npmjs.com/package/tslint-microsoft-contrib) utan åsidosatta konfigurationer. Detta kommando får inte returnera fel.
+
+### <a name="compiling-requirements"></a>Kompileringskrav
+
+Använd den senaste versionen av [powerbi-visuals-tools](https://www.npmjs.com/package/powerbi-visuals-tools) för att skriva visuella Power BI-objekt.
+
+Du måste kompilera det visuella Power BI-objektet med `pbiviz package`. Om du använder egna build-skript anger du ett `npm run package` anpassat build-kommando.
+
+
+
+### <a name="source-code-requirements"></a>Krav för källkod
+
+Kontrollera att du följer principlistan [Ytterligare certifiering för visuella Power BI-objekt](https://docs.microsoft.com/legal/marketplace/certification-policies#1200-power-bi-visuals-additional-certification). Om ditt bidrag inte följer dessa riktlinjer innehåller e-postmeddelandet med avvisandet från Partnercenter de principnummer som anges i den här länken.
+
+Följ de kodkrav som anges nedan för att kontrollera att koden följer Power BI:s certifieringsprinciper.  
+
+**Krävs**
+* Använd bara offentliga, granskade OSS-komponenter som offentliga Javascript- eller TypeScript-bibliotek.
+* Koden måste ha stöd för [API:et för renderingshändelser](./visuals/event-service.md).
+* Se till att DOM ändras på ett säkert sätt. Sanera användarindata eller användardata innan du lägger till dem i DOM.
+* Använd [exempelrapporten](https://github.com/Microsoft/PowerBI-visuals/raw/gh-pages/assets/reports/large_data.pbix) som en testdatamängd.
+
+**Inte tillåten**
+* Tillgång till externa tjänster eller resurser. Till exempel får inga HTTP/S- eller WebSocket-begäranden gå ut från Power BI till några tjänster.
+* Använda `innerHTML`eller `D3.html(user data or user input)`.
+* JavaScript-fel eller undantag i webbläsarkonsolen för indata.
+* Godtycklig eller dynamisk kod, till exempel `eval()`, osäker användning av `settimeout()`, `requestAnimationFrame()`, `setinterval(user input function)` och användarindata eller användardata.
+* Minimerade JavaScript-filer eller-projekt.
 
 ## <a name="submitting-a-power-bi-visual-for-certification"></a>Skicka ett visuellt Power BI-objekt för certifiering
 
@@ -212,6 +233,7 @@ Mer information om visuella objekt finns i [Vanliga frågor och svar om certifie
 * [Microsofts spelningslista om anpassade visuella objekt på YouTube](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)  
 * [Visualiseringar i Power BI](../visuals/power-bi-report-visualizations.md)  
 * [Anpassade visualiseringar i Power BI](power-bi-custom-visuals.md)  
-* [Publicera visuella Power BI-objekt i Microsoft AppSource](../developer/office-store.md)  
+* [Publicera visuella Power BI-objekt i Microsoft AppSource](../developer/office-store.md) 
+* Om du är webbutvecklare som är intresserad av att skapa egna visuella Power BI-objekt och lägga till dem i  [Microsoft AppSource](https://appsource.microsoft.com) kan du börja du med självstudien  [Utveckla ett visuellt Power BI-objekt](visuals/custom-visual-develop-tutorial.md). 
 
 Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)

@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/31/2019
+ms.date: 01/14/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 80fc4f4afe29806077d1bf64a59d8761d7ab1c1d
-ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
+ms.openlocfilehash: 8737a0e9b2dd8ba17d28962ed51e24ec0c5cefc4
+ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099930"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76040458"
 ---
 # <a name="visualization-types-in-power-bi"></a>Visualiseringstyper i Power BI
 ## <a name="power-bi-visualizations"></a>Power BI-visualiseringar
@@ -145,6 +145,13 @@ Mer information finns i [Matrix visuals in Power BI](desktop-matrix-visual.md) (
 
 >[!TIP]
 >Cirkeldiagram visar relationen mellan delar och en helhet. 
+
+### <a name="power-apps-visual"></a>Visuellt Power Apps-objekt
+![Visuellt Power Apps-objekt](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-powerapps-visual.png)
+
+Rapportdesigners kan skapa en Power App och bädda in den i en Power BI-rapport som ett visuellt objekt. Användarna kan interagera med det visuella objektet i Power BI-rapporten. 
+
+Mer information finns i [Lägga till ett visuellt Power Apps-objekt i din rapport](power-bi-visualization-powerapp.md).
 
 ### <a name="qa-visual"></a>Visuella frågor och svar
 ![Visuella frågor och svar](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-q-and-a.png)

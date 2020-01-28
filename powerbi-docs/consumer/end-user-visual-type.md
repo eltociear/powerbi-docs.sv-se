@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 08/21/2019
+ms.date: 01/15/2020
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: 1670d3af200c8da672ac7034e4e15f6f460147a7
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 6fd970064bbe686a433fba0c0675948576edd8c1
+ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73861329"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76039084"
 ---
 # <a name="visual-types-in-power-bi"></a>Typer av visuella objekt i Power BI
 Det finns visuella objekt i rapporter, på instrumentpaneler samt i frågor och svar. Vissa av dessa typer av visuella objekt paketeras med Power BI, och vissa är *anpassade visuella objekt*. Anpassade visuella objekt skapas utanför Power BI och på ett sätt som gör att *rapportdesigners* kan lägga till dem i Power BI-rapporter och -instrumentpaneler. 
@@ -59,7 +59,7 @@ Kombinationsdiagram är ett bra alternativ:
 - när du har ett linjediagram och ett stapeldiagram med samma X-axel,
 - för att jämföra flera mått med olika värdeintervall
 - för att illustrera korrelationen mellan två mått i ett visuellt objekt
-- för att kontrollera om ett mätvärde uppfyller det mål som definieras av ett annat mätvärde,
+- för att kontrollera om ett mått uppfyller det mål som har definierats av ett annat mått
 - för att spara utrymme på arbetsytan
 
 ### <a name="doughnut-charts"></a>Ringdiagram
@@ -139,6 +139,19 @@ Matrisen är en typ av visuellt tabellobjekt (se ”Tabell” nedan) som stöder
 ![cirkeldiagram](media/end-user-visual-type/pbi-nancy-viz-pie.png)
 
 Cirkeldiagram visar relationen mellan delar och en helhet. 
+
+### <a name="power-apps-visual"></a>Visuellt Power Apps-objekt
+![Visuellt Power Apps-objekt](media/end-user-visual-type/power-bi-powerapps-visual.png)
+
+Rapportdesigners kan skapa en Power App och bädda in den i en Power BI-rapport. Användarna kan interagera med det visuella objektet i Power BI-rapporten. 
+
+### <a name="qa-visual"></a>Visuella frågor och svar
+![Visuella frågor och svar](media/end-user-visual-type/power-bi-q-and-a.png)
+
+>[!TIP]
+>Precis som med [Frågor och svar på instrumentpaneler](../power-bi-tutorial-q-and-a.md) så kan du använda Visuella frågor och svar till att ställa frågor om dina data på naturligt språk. 
+
+Mer information finns i [Visuella frågor och svar i Power BI](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).
 
 ### <a name="ribbon-chart"></a>Banddiagram
 ![banddiagram](media/end-user-visual-type/power-bi-ribbon.png)

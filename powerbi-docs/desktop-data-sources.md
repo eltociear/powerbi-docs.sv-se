@@ -6,47 +6,50 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/08/2020
+ms.date: 01/09/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: fd25e4ca6357dbfa5954eeabe0bf97fb6ccb8a1c
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 0cf9d6acd4fe5f729dafb575a2ab736b9e8db7bb
+ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75761374"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76039808"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Datakällor i Power BI Desktop
 
 Med Power BI Desktop kan du ansluta till data från många olika källor. En fullständig lista över tillgängliga datakällor finns i [Power BI-datakällor](power-bi-data-sources.md).
 
-Anslut till data genom att välja **Hämta data** från menyfliksområdet **Start**. Om du väljer nedåtpilen eller texten **Hämta data** på knappen, visas menyn **Mest vanliga** datatyper, enligt följande bild:
+Du ansluter till data med hjälp av menyfliksområdet **Start**. Om du vill se menyn för **Mest vanliga** datatyper, väljer du knappetiketten **Hämta data** eller nedåtpilen.
 
-![Hämta data i Power BI Desktop](media/desktop-data-sources/data-sources-01.png)
+![Menyn Mest vanliga datatyper, Hämta data i Power BI Desktop](media/desktop-data-sources/data-sources-01.png)
 
-Om du väljer **Mer...** från menyn **Mest vanliga** visas fönstret **Hämta data**. Du kan även öppna fönstret **Hämta data** (och kringgå menyn **Vanligast**) genom att välja **Hämta data**-**ikonknappen** direkt.
+Gå till dialogrutan **Hämta data** genom att visa menyn med **Mest vanliga** datatyper och välj **Mer**. Du kan även öppna dialogrutan **Hämta data** (och kringgå menyn **Mest vanliga**) genom att välja ikonen **Hämta data** direkt.
 
-![Knappen Hämta data](media/desktop-data-sources/data-sources-02.png)
+![Knappen Hämta data, Power BI Desktop](media/desktop-data-sources/data-sources-02.png)
 
 > [!NOTE]
-> Power BI-teamet utökar kontinuerligt de datakällor som är tillgängliga för **Power BI Desktop** och **Power BI-tjänsten**. Därför visas ofta tidiga versioner av pågående datakällor markerade med *beta* eller *förhandsversion*. Alla datakällor som har markerats som *beta* eller *förhandsversion* har begränsad support och funktionalitet och ska inte användas i produktionsmiljöer. Dessutom kan det hända att datakällor som är markerade som *Beta* eller *Förhandsversion* för **Power BI Desktop** inte är tillgängliga för användning i **Power BI-tjänsten** eller andra Microsoft-tjänster förrän datakällan blir allmänt tillgänglig.
+> Power BI-teamet utökar ständigt de datakällor som är tillgängliga för Power BI Desktop och Power BI-tjänsten. Därför visas ofta tidiga versioner av pågående datakällor markerade med **beta** eller **förhandsversion**. Alla datakällor som har markerats som **Beta** eller **Förhandsversion** har begränsad support och funktionalitet och ska inte användas i produktionsmiljöer. Dessutom kanske datakällor som är markerade som **Beta** eller **Förhandsversion** för Power BI Desktop inte är tillgängliga för användning i Power BI-tjänsten eller andra Microsoft-tjänster förrän datakällan blir allmänt tillgänglig.
 
 > [!NOTE]
 > Det finns många dataanslutningar för Power BI Desktop som kräver Internet Explorer 10 (eller senare) för autentisering. 
 
 
 ## <a name="data-sources"></a>Datakällor
-Datatyperna ordnas i följande kategorier:
+
+Dialogrutan **Hämta data** ordnar datatyperna i följande kategorier:
 
 * Alla
 * Fil
 * Databas
-* Power BI
+* Power Platform
 * Azure
 * Onlinetjänster
 * Annat
 
 I kategorin **Alla** finns alla dataanslutningstyper från alla kategorier.
+
+### <a name="file-data-sources"></a>Fildatakällor
 
 I kategorin **Fil** finns följande dataanslutningar:
 
@@ -60,7 +63,9 @@ I kategorin **Fil** finns följande dataanslutningar:
 
 Följande bild visar fönstret **Hämta data** för **Fil**.
 
-![Hämta data > Fil](media/desktop-data-sources/data-sources-03.png)
+![Fildatakällor, dialogrutan Hämta data, Power BI Desktop](media/desktop-data-sources/data-sources-03.png)
+
+### <a name="database-data-sources"></a>Databasens datakällor
 
 Kategorin **Databas** innehåller följande dataanslutningar:
 
@@ -74,7 +79,7 @@ Kategorin **Databas** innehåller följande dataanslutningar:
 * MySQL-databas
 * PostgreSQL-databas
 * Sybase-databas
-* Teradata
+* Teradata-databas
 * SAP HANA-databas
 * SAP Business Warehouse Application Server
 * SAP Business Warehouse Message Server
@@ -84,22 +89,25 @@ Kategorin **Databas** innehåller följande dataanslutningar:
 * Vertica
 * Snowflake
 * Essbase
-* AtScale-kuber
+* AtScale-kuber (Beta)
 * BI-anslutningsapp
+* Denodo
 * Dremio
 * Exasol
 * Indexima (Beta)
 * InterSystems IRIS (Beta)
 * Jethro (Beta)
-* Kyligence Enterprise (Beta)
-* MarkLogic (Beta)
+* Kyligence
+* MarkLogic
 
 > [!NOTE]
 > Vissa databaskopplingar kräver att du aktiverar dem genom att välja **Arkiv > Alternativ och inställningar > Alternativ** sedan välja **Förhandsversionsfunktioner** och aktivera kopplingen. Om du inte ser några av de kopplingar som nämns ovan och vill använda dem, kontrollerar du dina inställningar för **Förhandsversionsfunktioner**. Observera att alla datakällor som har markerats som *beta* eller *förhandsversion* har begränsad support och funktionalitet och ska inte användas i produktionsmiljöer.
 
 Följande bild visar fönstret **Hämta data** för **Databas**.
 
-![Hämta Data > Databaser](media/desktop-data-sources/data-sources-04.png)
+![Databasens datakällor, dialogrutan Hämta data, Power BI Desktop](media/desktop-data-sources/data-sources-04.png)
+
+### <a name="power-platform-data-sources"></a>Power Platform-datakällor
 
 I **Power Platform**-kategorin finns följande dataanslutningar:
 
@@ -110,11 +118,13 @@ I **Power Platform**-kategorin finns följande dataanslutningar:
 
 Följande bild visar fönstret **Hämta data** för **Power Platform**.
 
-![Hämta data > Power BI](media/desktop-data-sources/data-sources-05.png)
+![Power Platform-datakällor, dialogrutan Hämta data, Power BI Desktop](media/desktop-data-sources/data-sources-05.png)
+
+### <a name="azure-data-sources"></a>Azure-datakällor
 
 Kategorin **Azure** innehåller följande dataanslutningar:
 
-* Azure SQL Database
+* Azure SQL-databas
 * Azure SQL Data Warehouse
 * Azure Analysis Services-databas
 * Azure Blob Storage
@@ -131,7 +141,9 @@ Kategorin **Azure** innehåller följande dataanslutningar:
 
 Följande bild visar fönstret **Hämta data** för **Azure**.
 
-![Hämta data > Azure](media/desktop-data-sources/data-sources-06.png)
+![Azure-datakällor, dialogrutan Hämta data, Power BI Desktop](media/desktop-data-sources/data-sources-06.png)
+
+### <a name="online-services-data-sources"></a>Datakällor för onlinetjänster
 
 Kategorin **Onlinetjänster** innehåller följande dataanslutningar:
 
@@ -152,6 +164,7 @@ Kategorin **Onlinetjänster** innehåller följande dataanslutningar:
 * Data.World – Hämta datauppsättning (beta)
 * Facebook
 * GitHub (beta)
+* LinkedIn Sales Navigator (Beta)
 * MailChimp (beta)
 * Marketo (beta)
 * Mixpanel (beta)
@@ -160,26 +173,28 @@ Kategorin **Onlinetjänster** innehåller följande dataanslutningar:
 * QuickBooks Online (beta)
 * Smartsheet
 * SparkPost (beta)
-* Stripe (beta)
 * SweetIQ (beta)
-* Planview Enterprise One – CMT (beta)
+* Planview Enterprise One – CTM (Beta)
 * Twilio (beta)
 * tyGraph (beta)
 * Webtrends (beta)
 * Zendesk (beta)
 * Dynamics 365 Customer Insights (Beta)
-* Emigo Data Source (Beta)
+* Emigo Data Source
 * Entersoft Business Suite (Beta)
 * Industrial App Store
 * Intune Data Warehouse (Beta)
 * Microsoft Graph Security (Beta)
+* Product Insights (Beta)
 * Quick Base
 * TeamDesk (beta)
-
+* Workplace Analytics (Beta)
 
 Följande bild visar fönstret **Hämta data** för **Onlinetjänster**.
 
-![Hämta data > Onlinetjänster](media/desktop-data-sources/data-sources-07.png)
+![Datakällor för onlinetjänster, dialogrutan Hämta data, Power BI Desktop](media/desktop-data-sources/data-sources-07.png)
+
+### <a name="other-data-sources"></a>Andra datakällor
 
 Kategorin **Övrigt** innehåller följande dataanslutningar:
 
@@ -195,37 +210,39 @@ Kategorin **Övrigt** innehåller följande dataanslutningar:
 * ODBC
 * OLE DB
 * BI360 –Budgeting & Financial Reporting (Beta)
-* Denodo
 * Information Grid (Beta)
-* Paxata 
+* Paxata
 * QubolePresto (Beta)
 * Roamler (Beta)
+* Siteimprove (Beta)
 * SurveyMonkey (Beta)
 * Tenforce (Smart)List (Beta)
+* Vena (Beta)
 * Workforce Dimensions (Beta)
 * Tom fråga
 
 Följande bild visar fönstret **Hämta data** för **Övrigt**.
 
-![Hämta data > Övrigt](media/desktop-data-sources/data-sources-08.png)
+![Övriga datakällor, dialogrutan Hämta data, Power BI Desktop](media/desktop-data-sources/data-sources-08.png)
 
 > [!NOTE]
 > För tillfället går det inte att ansluta till anpassade datakällor som skyddas med Azure Active Directory.
 
 ## <a name="connecting-to-a-data-source"></a>Ansluta till en datakälla
+
 Anslut till en datakälla genom att välja datakällan i fönstret **Hämta data** och välja **Anslut**. I följande bild har **Webb** valts från dataanslutningskategorin **Övrigt**.
 
-![Anslut till webben](media/desktop-data-sources/data-sources-08.png)
+![Anslut till webben, dialogrutan Hämta data, Power BI Desktop](media/desktop-data-sources/data-sources-08.png)
 
 Ett fönster för anslutningen visas, specifik för dataanslutningstypen. Om det krävs autentiseringsuppgifter uppmanas du att ange dem. Följande bild visar en URL som anges för att ansluta till en webbdatakälla.
 
-![Ange webbadress](media/desktop-data-sources/datasources-fromwebbox.png)
+![Inmatnings-URL, dialogrutan Från webben, Power BI Desktop](media/desktop-data-sources/datasources-fromwebbox.png)
 
-När URL:en eller anslutningsinformationen för resursen har angetts, väljer du **OK**. Power BI Desktop ansluter till datakällan och visar tillgängliga datakällor i **navigatören**.
+Ange URL:en eller anslutningsinformationen för resursen och välj sedan **OK**. Power BI Desktop ansluter till datakällan och visar tillgängliga datakällor i **Navigatör**.
 
-![Navigatörsskärmen](media/desktop-data-sources/datasources-fromnavigatordialog.png)
+![Dialogrutan Navigatör, Power BI Desktop](media/desktop-data-sources/datasources-fromnavigatordialog.png)
 
-Du kan antingen läsa in data genom att välja knappen **Läs in** längst ned i **navigatören**, eller redigera frågan innan du läser in data genom att välja knappen **Redigera**.
+Läs in datan genom att välja knappen **Läs in** längst ned i fönstret **Navigatör**. Om du vill omvandla eller redigera frågan i Power Query-redigeraren innan du läser in datan, väljer du knappen **Transformera data**.
 
 Det är allt du behöver veta om att ansluta till datakällor i Power BI Desktop! Försök att ansluta till data från våra växande lista med datakällor och kom tillbaka ofta – vi fyller på listan hela tiden.
 
@@ -233,29 +250,29 @@ Det är allt du behöver veta om att ansluta till datakällor i Power BI Desktop
 
 PBIDS-filer är Power BI Desktop-filer med en speciell struktur där ett .PBIDS-tillägg visar att det är en Power BI-datakällfil.
 
-Du kan skapa en .PBIDS-fil för att effektivisera **Hämta data**-upplevelsen för rapportskapare i din organisation. Vi rekommenderar att administratörer skapar dessa filer för vanliga anslutningar, för att underlätta användningen av PBIDS-filer för nya rapportförfattare. 
+Du kan skapa en PBIDS-fil för att effektivisera **Hämta data**-upplevelsen för rapportskapare i din organisation. För att göra det enklare för en ny rapportförfattare att använda PBIDS-filer, rekommenderar vi att en administratör skapar dessa filer för anslutningar som ofta används.
 
-När en författare öppnar en .PBIDS-fil, öppnas Power BI Desktop och användaren uppmanas att ange autentiseringsuppgifter för att kunna autentisera och ansluta till den datakälla som anges i filen. Navigeringsdialogrutan visas och användaren måste välja de tabeller från datakällan som ska läsas in i modellen. Användarna kan också behöva välja databas(er) om det inte har angetts någon i .PBIDS-filen. 
+När en författare öppnar en PBIDS-fil, öppnas Power BI Desktop och användaren uppmanas att ange autentiseringsuppgifter för att kunna autentisera och ansluta till den datakälla som anges i filen. Dialogrutan **Navigering** öppnas där användaren måste välja de tabeller från datakällan som ska läsas in i modellen. Användarna kan också behöva välja databas(er), om det inte har angetts några i PBIDS-filen.
 
-Från och med nu kan användaren börja skapa visualiseringar eller gå tillbaka till *Senast använda källor* för att läsa in en ny uppsättning tabeller i modellen. 
+Från och med nu kan användaren börja skapa visualiseringar eller välja **Senast använda källor** för att läsa in en ny uppsättning tabeller i modellen.
 
-För närvarande har .PBIDS-filer bara stöd för en enda datakälla i en enda fil. Om du anger fler än en datakälla uppstår ett fel. 
+För närvarande har PBIDS-filer bara stöd för en enda datakälla i en enda fil. Om du anger fler än en datakälla uppstår ett fel.
 
-För att skapa .PBIDS-filen måste administratören ange nödvändiga indata för en enskild anslutning och kan ange anslutningsläge, antingen **DirectQuery** eller **Import**. Om **läge** saknas eller är null i filen uppmanas användaren som öppnar filen i Power BI Desktop att välja DirectQuery eller Import. 
+För att kunna skapa PBIDS-filen måste administratören ange nödvändiga indata för en enskild anslutning. Användaren kan även ange anslutningsläget som antingen DirectQuery eller Import. Om **läget** saknas eller är null i filen, uppmanas användaren som öppnar filen i Power BI Desktop att välja **DirectQuery** eller **Import**.
 
 ### <a name="pbids-file-examples"></a>Exempel på PBIDS-filer
 
-Det här avsnittet innehåller några exempel på datakällor som används ofta. .PBIDS-filtypen stöder bara dataanslutningar som också stöds i Power BI Desktop, med två undantag: Live Connect och Tom fråga. 
+Det här avsnittet innehåller några exempel på datakällor som används ofta. PBIDS-filtypen stöder bara dataanslutningar som också stöds i Power BI Desktop, med två undantag: Live Connect och Tom fråga.
 
-.PBIDS-filen innehåller *inte* någon autentiseringsinformation eller tabell- och schemainformation.  
+PBIDS-filen innehåller *inte* någon autentiserings-, tabell- eller schemainformation.  
 
-Nedan visas ett par vanliga exempel på .PBIDS-filer, men fler finns. För andra datakällor kan du referera till [DSR-formatet (Data Source Reference) för protokoll- och adressinformation](https://docs.microsoft.com/azure/data-catalog/data-catalog-dsr#data-source-reference-specification).
+Nedanstående kodfragment visar några vanliga exempel på PBIDS-filer, men de är inte fullständiga. För andra datakällor kan du referera till [DSR-formatet (Data Source Reference) för protokoll- och adressinformation](https://docs.microsoft.com/azure/data-catalog/data-catalog-dsr#data-source-reference-specification).
 
-De här exemplen är bara tips, de är inte avsedda att vara heltäckande och inkluderar inte alla anslutningsprogram som stöds i DSR-formatet. Administratörer eller organisationer kan skapa sina egna datakällor med hjälp av de här exemplen som guider, som de kan använda för att skapa sina egna filer för datakällan. 
+De här exemplen är bara tips, de är inte avsedda att vara heltäckande och inkluderar inte alla anslutningsprogram som stöds i DSR-formatet. Administratörer eller organisationer kan skapa sina egna datakällor med hjälp av de här exemplen som guider och använda dem till att skapa sina egna filer för datakällan.
 
+#### <a name="azure-as"></a>Azure AS
 
-**Azure AS**
-```
+```json
 { 
     "version": "0.1", 
     "connections": [ 
@@ -271,11 +288,9 @@ De här exemplen är bara tips, de är inte avsedda att vara heltäckande och in
 }
 ```
 
+#### <a name="folder"></a>Mapp
 
- 
-
-**Mapp**
-```
+```json
 { 
   "version": "0.1", 
   "connections": [ 
@@ -291,8 +306,9 @@ De här exemplen är bara tips, de är inte avsedda att vara heltäckande och in
 } 
 ```
 
-**OData**
-```
+#### <a name="odata"></a>OData
+
+```json
 { 
   "version": "0.1", 
   "connections": [ 
@@ -307,9 +323,10 @@ De här exemplen är bara tips, de är inte avsedda att vara heltäckande och in
   ] 
 } 
 ```
- 
-**SAP BW**
-```
+
+#### <a name="sap-bw"></a>SAP BW
+
+```json
 { 
   "version": "0.1", 
   "connections": [ 
@@ -326,9 +343,10 @@ De här exemplen är bara tips, de är inte avsedda att vara heltäckande och in
   ] 
 } 
 ```
- 
-**SAP HANA**
-```
+
+#### <a name="sap-hana"></a>SAP HANA
+
+```json
 { 
   "version": "0.1", 
   "connections": [ 
@@ -344,10 +362,11 @@ De här exemplen är bara tips, de är inte avsedda att vara heltäckande och in
 } 
 ```
 
-**SharePoint-lista**
+#### <a name="sharepoint-list"></a>SharePoint-lista
 
-URL:en måste peka på själva SharePoint-webbplatsen och inte till en lista på webbplatsen. Användarna får en navigatör som de kan använda för att välja en eller flera listor från den platsen, där varje lista blir en tabell i modellen. 
-```
+URL:en måste peka på själva SharePoint-webbplatsen och inte på en lista på webbplatsen. Användarna får en navigatör som de kan använda för att välja en eller flera listor från den platsen, där varje lista blir en tabell i modellen.
+
+```json
 { 
   "version": "0.1", 
   "connections": [ 
@@ -362,10 +381,10 @@ URL:en måste peka på själva SharePoint-webbplatsen och inte till en lista på
   ] 
 } 
 ```
- 
- 
-**SQL Server**
-```
+
+#### <a name="sql-server"></a>SQL Server
+
+```json
 { 
   "version": "0.1", 
   "connections": [ 
@@ -383,10 +402,10 @@ URL:en måste peka på själva SharePoint-webbplatsen och inte till en lista på
   ] 
 } 
 ```
- 
 
-**Textfil**
-```
+#### <a name="text-file"></a>Textfil
+
+```json
 { 
   "version": "0.1", 
   "connections": [ 
@@ -401,10 +420,10 @@ URL:en måste peka på själva SharePoint-webbplatsen och inte till en lista på
   ] 
 } 
 ```
- 
 
-**Webb**
-```
+#### <a name="web"></a>Webben
+
+```json
 { 
   "version": "0.1", 
   "connections": [ 
@@ -419,10 +438,10 @@ URL:en måste peka på själva SharePoint-webbplatsen och inte till en lista på
   ] 
 } 
 ```
- 
 
-**Dataflöde**
-```
+#### <a name="dataflow"></a>Dataflöde
+
+```json
 {
   "version": "0.1",
   "connections": [
@@ -440,12 +459,12 @@ URL:en måste peka på själva SharePoint-webbplatsen och inte till en lista på
 }
 ```
 
-
 ## <a name="next-steps"></a>Nästa steg
-Det finns olika typer av saker som du kan göra med Power BI Desktop. Läs följande resurser för mer information om dess möjligheter:
+
+Du kan göra många olika saker med Power BI Desktop. Läs följande resurser för mer information om dess möjligheter:
 
 * [Vad är Power BI Desktop?](desktop-what-is-desktop.md)
 * [Frågeöversikt med Power BI Desktop](desktop-query-overview.md)
 * [Datatyper i Power BI Desktop](desktop-data-types.md)
 * [Forma och kombinera data i Power BI Desktop](desktop-shape-and-combine-data.md)
-* [Vanliga frågeuppgifter i Power BI Desktop](desktop-common-query-tasks.md)    
+* [Vanliga frågeuppgifter i Power BI Desktop](desktop-common-query-tasks.md)

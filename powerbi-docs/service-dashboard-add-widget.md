@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/25/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: a012320a12d2516cb24dc92f2472e3c49ce9081e
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 0c9e3db46c66fcd440ebd304370d31539dd5c5c7
+ms.sourcegitcommit: 313a5a6a01c09038a6152d681103accbd2faf437
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73853516"
+ms.lasthandoff: 01/20/2020
+ms.locfileid: "76282044"
 ---
 # <a name="add-images-videos-and-more-to-your-dashboard"></a>Lägga till bilder, videor med mera på din instrumentpanel
 
@@ -117,8 +117,6 @@ När du lägger till en YouTube eller Vimeo-videopanel på instrumentpanelen, sp
 ## <a name="add-streaming-data"></a>Lägg till strömmande data
 Du kan använda PubNub för att lägga till strömmande data, till exempel Twitter-flöden eller sensordata, på en panel på instrumentpanelen. Power BI har skapat en integration för att hämta data från PubNub. Här förklarar Will hur det fungerar.
    
-
-Du kan använda PubNub för att lägga till strömmande data, till exempel Twitter-flöden eller sensordata, på en panel på instrumentpanelen. Power BI har skapat en integration för att hämta data från PubNub. Här förklarar Will hur det fungerar. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kOuINwgkEkQ" frameborder="0" allowfullscreen></iframe>
 
