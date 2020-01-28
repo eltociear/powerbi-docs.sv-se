@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/30/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 50a5705f5e236dc326f4c2b33716e55f6a9f7ce5
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 2b43727799316ade5ccdb868077360da0b315c56
+ms.sourcegitcommit: 052df769e6ace7b9848493cde9f618d6a2ae7df9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75761989"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75925699"
 ---
 # <a name="design-power-bi-reports-for-accessibility"></a>Designa Power BI-rapporter med hjälpmedel
 Du kan utforma och skapa engagerande rapporter som även är så tillgängliga som möjligt. Oavsett vilken målgrupp du skapar rapporten för så bör du se till att de kan användas av så många personer som möjligt, utan att de måste anpassas för en viss typ av specialdesign.
@@ -22,6 +22,8 @@ Du kan utforma och skapa engagerande rapporter som även är så tillgängliga s
 ![Inställningar för hög kontrast i Windows](media/desktop-accessibility/accessibility-05.png)
 
 I den här artikeln beskrivs hjälpmedelsfunktionerna och verktygen för att skapa tillgängliga rapporter i Power BI.
+
+I allmänhet rekommenderar vi att du aktiverar skanningsläge eller bläddrar bort när du använder Power BI med en skärmläsare.
 
 Det finns en snabbmeny som förbättrar processen med att skapa rapporter med skärmläsare. Menyn gör att fält i brunnen kan flyttas uppåt och nedåt i listan **Fält**. På menyn går det även att flytta fältet till andra brunnar såsom **Förklaring** eller **Värde** eller andra.
 

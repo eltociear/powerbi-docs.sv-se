@@ -1,6 +1,6 @@
 ---
-title: Paginated Report Builder i Power BI
-description: Power BI Paginated Report Builder är ett verktyg för skapande av sidnumrerade rapporter.
+title: Öppna Report Builder i Power BI
+description: Power BI Report Builder är ett verktyg för skapande av sidnumrerade rapporter.
 ms.date: 11/27/2019
 ms.service: powerbi
 ms.subservice: report-builder
@@ -9,16 +9,16 @@ ms.topic: conceptual
 ms.assetid: 55bf4f9c-d037-412f-ae57-3fc39ce32fa5
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: faba36a609abd94b2439006fbbcf01a1d193c585
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 5ef6068135e8adcbfd242ca4a6491396101d214e
+ms.sourcegitcommit: df8bcc65f0df69bf1fc1d47eb06575742eac1622
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74565293"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75953903"
 ---
-# <a name="power-bi-paginated-report-builder"></a>Paginated Report Builder i Power BI
+# <a name="power-bi-report-builder"></a>Öppna Report Builder i Power BI
 
- Power BI Paginated Report Builder är ett verktyg för skapande av sidnumrerade rapporter.  När du utformar en sidnumrerad rapport skapar du en rapportdefinition som anger vilka data som ska hämtas, var de ska hämtas och hur de ska visas. När du kör rapporten tar rapportbearbetaren den rapportdefinition som du har angett, hämtar data, kombinerar dem med rapportlayouten och genererar därmed rapporten. Du förhandsgranskar rapporten i Report Builder. Sedan publicerar du rapporten till Power BI-tjänsten.
+ Power BI Report Builder är ett verktyg för skapande av sidnumrerade rapporter.  När du utformar en sidnumrerad rapport skapar du en rapportdefinition som anger vilka data som ska hämtas, var de ska hämtas och hur de ska visas. När du kör rapporten tar rapportbearbetaren den rapportdefinition som du har angett, hämtar data, kombinerar dem med rapportlayouten och genererar därmed rapporten. Du förhandsgranskar rapporten i Report Builder. Sedan publicerar du rapporten till Power BI-tjänsten.
 
 Prova [Labb: Skapa en sidnumrerad rapport i Microsoft Power BI](https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208).
 

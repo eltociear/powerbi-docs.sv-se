@@ -1,126 +1,179 @@
 ---
 title: Struktur för projekt med visuella Power BI-objekt
-description: I artikeln beskrivs en struktur för projekt med visuella objekt
-author: zBritva
-ms.author: v-ilgali
+description: I den här artikeln beskrivs mappen och filstrukturen för ett visuellt Power BI-projekt
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
-ms.topic: tutorial
+ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
-ms.date: 03/15/2019
-ms.openlocfilehash: 728aba749f80710fdc0bb1e180b3318e63caa88c
-ms.sourcegitcommit: 331ebf6bcb4a5cdbdc82e81a538144a00ec935d4
+ms.date: 01/12/2020
+ms.openlocfilehash: 16e7a317102602ffb4faf04da0ed2cae588a2a4d
+ms.sourcegitcommit: 052df769e6ace7b9848493cde9f618d6a2ae7df9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/28/2019
-ms.locfileid: "75542103"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75925520"
 ---
 # <a name="power-bi-visual-project-structure"></a>Struktur för projekt med visuella Power BI-objekt
 
-När pbiviz new `<visual project name>` har körts skapar verktyget en grundläggande struktur för filer och mappar i mappen `<visual project name>`.
+Det bästa sättet att börja skapa ett nytt visuellt Power BI-objekt är att använda verktyget [pbiviz](https://www.npmjs.com/package/powerbi-visuals-tools) för visuella Power BI-objekt.
 
-## <a name="visual-project-structure"></a>Struktur för projekt med visuella objekt
+Om du vill skapa ett nytt visuellt objekt går du till den katalog som du vill att det visuella Power BI-objektet ska finnas i och kör kommandot:
 
-![Struktur för projekt med visuella objekt](./media/visual-project-structure.png)
+`pbiviz new <visual project name>`
 
-* `.vscode` – innehåller inställningar för projekt för VS Code. Konfigurera din arbetsyta genom att redigera filen `.vscode/settings.json`. Läs mer [om VS Code-inställningar i dokumentationen](https://code.visualstudio.com/docs/getstarted/settings)
+Om du kör det här kommandot skapas en mapp för visuella Power BI-objekt som innehåller följande filer:
 
-* Mappen `assets` innehåller bara filen `icon.png`. Verktyget använder den här filen som ikon för det visuella objektet i fönstret Visualisering i Power BI.
+```markdown
+project
+├───.vscode
+│   ├───launch.json
+│   └───settings.json
+├───assets
+│   └───icon.png
+├───node_modules
+├───src
+│   ├───settings.ts
+│   └───visual.ts
+├───style
+│   └───visual.less
+├───capabilities.json
+├───package-lock.json
+├───package.json
+├───pbiviz.json
+├───tsconfig.json
+└───tslint.json
+```
 
-    ![Fönstret Visualisering](./media/visualization-pane-analytics-tab.png)
+## <a name="folder-and-file-description"></a>Beskrivning av mapp och fil
 
-* Mappen `node_modules` innehåller alla paket [som installerats av Node Pack Manager](https://docs.npmjs.com/files/folders.html).
+Det här avsnittet innehåller information om varje mapp och fil i katalogen som verktyget **pbiciz** för visuella Power BI-objekt skapar.  
 
-* Mappen `src` innehåller källkoden för det visuella objektet. Som standard skapar verktyget två filer:
+### <a name="vscode"></a>.vscode
 
-  * `visual.ts` – den huvudsakliga källkoden för det visuella objektet.
+Den här mappen innehåller projektinställningar för VS-kod.
 
-  * `settings.ts` – koden för inställningarna för det visuella objektet. Klasserna i filen förenklar [arbetet med egenskaperna för de visuella objekten](./objects-properties.md#properties).
+Konfigurera din arbetsyta genom att redigera filen `.vscode/settings.json`.
 
-* Mappen `style` innehåller filen `visual.less` med format för det visuella objektet.
+Mer information finns i [Inställningar för användare och arbetsytor](https://code.visualstudio.com/docs/getstarted/settings)
 
-* Filen `capabilities.json` innehåller huvudegenskaperna och inställningarna för det visuella objektet. Det gör att visuella objekt kan deklarera funktioner, objekt, egenskaper och datavymappning som stöds.
+### <a name="assets"></a>tillgångar
 
-    Läs mer [om funktioner i dokumentationen](./capabilities.md).
+Den här mappen innehåller filen `icon.png`.
 
-* `package-lock.json` genereras automatiskt för alla åtgärder där NPM ändrar antingen trädet `node_modules` eller `package.json`.
+Verktyget för visuella Power BI-objekt använder den här filen som ny ikon för visuella Power BI-objekt i fönstret för visuella Power BI-objekt.
 
-    Läs mer [om `package-lock.json` i den officiella dokumentationen för NPM](https://docs.npmjs.com/files/package-lock.json).
+<!--- ![Visualization pane](./media/visualization-pane-analytics-tab.png) --->
 
-* `package.json` beskriver projektpaketet. Vanligtvis innehåller den information om projektet, författarna, beskrivningen och projektets beroenden.
+### <a name="src"></a>src
 
-    Läs mer [om `package.json` i den officiella dokumentationen för NPM](https://docs.npmjs.com/files/package.json.html).
+Mappen innehåller källkoden för det visuella objektet.
 
-* `pbiviz.json` innehåller metadata om det visuella objektet. Ange metadata om det visuella objektet i den här filen.
+I den här mappen skapar verktyget för visuella Power BI-objekt följande filer:
+* `visual.ts` – den huvudsakliga källkoden för det visuella objektet.
+* `settings.ts` – koden för inställningarna för det visuella objektet. Klasserna i filen innehåller ett gränssnitt för att definiera [det visuella objektets egenskaper](./objects-properties.md#properties).
 
-    Vanligt innehåll i filen:
+### <a name="style"></a>stil
 
-  ```json
-    {
-        "visual": {
-            "name": "<visual project name>",
-            "displayName": "<visual project name>",
-            "guid": "<visual project name>23D8B823CF134D3AA7CC0A5D63B20B7F",
-            "visualClassName": "Visual",
-            "version": "1.0.0",
-            "description": "",
-            "supportUrl": "",
-            "gitHubUrl": ""
-        },
-        "apiVersion": "2.6.0",
-        "author": { "name": "", "email": "" },
-        "assets": { "icon": "assets/icon.png" },
-        "externalJS": null,
-        "style": "style/visual.less",
-        "capabilities": "capabilities.json",
-        "dependencies": null,
-        "stringResources": []
-    }
-  ```
+Den här mappen innehåller filen `visual.less` som innehåller det visuella objektets format.
 
-    där
+### <a name="capabilitiesjson"></a>capabilities.json
 
-  * `name` – det visuella objektets interna namn.
+Filen innehåller huvudegenskaperna och inställningarna (eller [kapaciteten](./capabilities.md)) för det visuella objektet. Det gör att visuella objekt kan deklarera funktioner, objekt, egenskaper och [datavymappning](./dataview-mappings.md) som stöds.
 
-  * `displayName` – det visuella objektets namn i användargränssnittet i Power BI.
+### <a name="package-lockjson"></a>package-lock.json
 
-  * `guid` – det visuella objektets unika ID.
+Filen genereras automatiskt för alla åtgärder där *npm* ändrar antingen trädet `node_modules` eller filen `package.json`.
 
-  * `visualClassName` – det visuella objektets huvudklass. Power BI skapar instansen av den här klassen för att börja använda det visuella objektet i Power BI-rapporten.
+Mer information om den här filen finns i den officiella dokumentationen om [NPM-Package-lock.json](https://docs.npmjs.com/files/package-lock.json).
 
-  * `version` – det visuella objektets versionsnummer.
+### <a name="packagejson"></a>package.json
 
-  * `author` – innehåller författarens namn och e-postadress.
+Den här filen beskriver projektpaketet. Vanligtvis innehåller den information om projektet, författarna, beskrivningen och projektets beroenden.
 
-  * `icon` i `assets` – sökvägen till det visuella objektets ikonfil.
+Mer information om den här filen finns i den officiella dokumentationen om [npm-Package.json](https://docs.npmjs.com/files/package.json.html).
 
-  * `externalJS` innehåller sökvägar för JS-bibliotek som används i det visuella objektet.
+### <a name="pbivizjson"></a>pbiviz.json
 
-    > [!IMPORTANT]
-    > Den senaste versionen av verktyget 3.x.x eller senare använder inte längre `externalJS`.
+Den här filen innehåller metadata om det visuella objektet.
 
-  * `style` är sökvägen till formatfiler.
+Om du vill visa en `pbiviz.json`-exempelfil med kommentarer som beskriver metadataposterna, se avsnittet [metadata-poster](#metadata-entries).
 
-  * `capabilities` är sökvägen till filen `capabilities.json`.
+### <a name="tsconfigjson"></a>tsconfig.json
 
-  * `dependencies` är sökvägen till filen `dependencies.json`. `dependencies.json` innehåller information om R-paket som används i R-baserade visuella objekt.
+En konfigurationsfil för [TypeScript](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html).
 
-  * `stringResources` är en matris med sökvägar till filer med lokaliseringar.
+Filen måste innehålla sökvägen till filen **\*.ts** där det visuella objektets huvudklass finns enligt specifikation i egenskapen `visualClassName` i filen `pbiviz.json`.
 
-  Läs mer [om lokalisering i visuella objekt i dokumentationen](./localization.md)
+### <a name="tslintjson"></a>tslint.json
 
-* `tsconfig.json` är konfigurationsfilen för TypeScript.
+Filen innehåller [TSLint-konfiguration](https://palantir.github.io/tslint/usage/configuration/).
 
-    Läs mer [om TypeScript-konfiguration i den officiella dokumentationen](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html)
+## <a name="metadata-entries"></a>Metadata-poster
 
-    `tsconfig.json` i avsnittet `files` måste innehålla sökvägen till filen *.ts där det visuella objektets huvudklass finns enligt specifikation i egenskapen `visualClassName` i filen `pbiviz.json`.
+Kommentarerna i följande kodtext från `pbiviz.json`-filen beskriver metadata-posterna.
 
-* Filen `tslint.json` innehåller TSLint-konfiguration.
+> [!NOTE]
+> * Från version 3.x.x av **pbiciz**-verktyget stöds inte `externalJS`.
+> * [Lägg till Power BI-språkvarianten till ditt visuella objekt](./localization.md) för lokaliseringsstöd.
 
-    Läs mer [om TSLint-konfiguration i den officiella dokumentationen](https://palantir.github.io/tslint/usage/configuration/)
+```json
+{
+  "visual": {
+     // The visual's internal name.
+    "name": "<visual project name>",
+
+    // The visual's display name.
+    "displayName": "<visual project name>",
+
+    // The visual's unique ID.
+    "guid": "<visual project name>23D8B823CF134D3AA7CC0A5D63B20B7F",
+
+    // The name of the visual's main class. Power BI creates the instance of this class to start using the visual in a Power BI report.
+    "visualClassName": "Visual",
+
+    // The visual's version number.
+    "version": "1.0.0",
+    
+    // The visual's description (optional)
+    "description": "",
+
+    // A URL linking to the visual's support page (optional).
+    "supportUrl": "",
+
+    // A link to the source code available from GitHub (optional).
+    "gitHubUrl": ""
+  },
+  // The version of the Power BI API the visual is using.
+  "apiVersion": "2.6.0",
+
+  // The name of the visual's author and email.
+  "author": { "name": "", "email": "" },
+
+  // 'icon' holds the path to the icon file in the assets folder; the visual's display icon.
+  "assets": { "icon": "assets/icon.png" },
+
+  // Contains the paths for JS libraries used in the visual.
+  // Note: externalJS' isn't used in the Power BI visuals tool version 3.x.x or higher.
+  "externalJS": null,
+
+  // The path to the 'visual.less' style file.
+  "style": "style/visual.less",
+
+  // The path to the `capabilities.json` file.
+  "capabilities": "capabilities.json",
+
+  // The path to the `dependencies.json` file which contains information about R packages used in R based visuals.
+  "dependencies": null,
+
+  // An array of paths to files with localizations.
+  "stringResources": []
+}
+```
 
 ## <a name="next-steps"></a>Nästa steg
 
-* Läs mer [om begrepp för visuella objekt](./power-bi-visuals-concept.md) för att få mer kunskap om hur visuella objekt, användare och Power BI interagerar med varandra.
+* Information om interaktionen mellan ett visuellt objekt, en användare och Power BI finns i [Begrepp för visuella Power BI-objekt](./power-bi-visuals-concept.md).
 
 * Börja utveckla egna visuella Power BI-objekt från början [med en stegvis guide](./custom-visual-develop-tutorial.md).

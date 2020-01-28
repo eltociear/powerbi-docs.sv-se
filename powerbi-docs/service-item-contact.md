@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/08/2010
+ms.date: 10/08/2019
 ms.author: lukaszp
 LocalizationGroup: Common tasks
-ms.openlocfilehash: bb98f7bbb92b72512f880513ec94ccb55d64fc67
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 7ed0920f66c178c23e6c4db22ff6acd998619522
+ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73872136"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76160568"
 ---
 # <a name="set-contact-information-for-reports-and-dashboards-in-the-power-bi-service"></a>Ange kontaktuppgifter för rapporter och instrumentpaneler i Power BI-tjänsten
 I den här artikeln får du veta hur du anger kontaktuppgifter för en instrumentpanel eller rapport i Power BI-tjänsten.
@@ -60,6 +60,7 @@ Kontaktlistans uppgifter används även på andra platser. Den visas till exempe
 ## <a name="limitations-and-considerations"></a>Begränsningar och överväganden
 * Kontakten anges automatiskt för nya objekt som skapas i Power BI-tjänsten. Befintliga objekt visar arbetsytans standardvärde.
 * Du kan ange valfri användare eller grupp i kontaktlistan, men de kommer inte att beviljas åtkomst till objektet automatiskt. Använd delning eller ge användare som behöver det åtkomst till arbetsytan via en roll. 
+* Kontaktlistan på postnivå flyttas inte till appar när de publiceras. Den nya navigeringsupplevelsen för appar ger en support-URL som du konfigurerar för att hjälpa till att hantera feedback från ett stort antal appanvändare.
 
 
 ## <a name="next-steps"></a>Nästa steg

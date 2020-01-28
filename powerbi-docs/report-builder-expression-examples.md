@@ -1,6 +1,6 @@
 ---
 title: Uttrycksexempel i Power BI Report Builder
-description: Uttryck används ofta i sidnumrerade rapporter i Power BI Paginated Report Builder för att kontrollera innehåll och rapportens utseende.
+description: Uttryck används ofta i sidnumrerade rapporter i Power BI Report Builder för att kontrollera innehållets och rapportens utseende.
 ms.date: 10/21/2019
 ms.service: powerbi
 ms.subservice: report-builder
@@ -8,15 +8,15 @@ ms.topic: conceptual
 ms.assetid: 87ddb651-a1d0-4a42-8ea9-04dea3f6afa4
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 06847956eae4dfefc7cff75b5a360fbb8b892c39
-ms.sourcegitcommit: d173e22f5a3e76717adfaa573ea391bde0338ffe
+ms.openlocfilehash: 48e81c91a4555b4c8ea847ddffb1413058bbb152
+ms.sourcegitcommit: df8bcc65f0df69bf1fc1d47eb06575742eac1622
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72728549"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75953988"
 ---
 # <a name="expression-examples-in-power-bi-report-builder"></a>Uttrycksexempel i Power BI Report Builder
-Uttryck används ofta i sidnumrerade rapporter i Power BI Paginated Report Builder för att kontrollera innehållets och rapportens utseende. Uttryck skrivs i Microsoft Visual Basic och kan använda inbyggda funktioner, anpassad kod, rapport- och gruppvariabler samt användardefinierade variabler. Uttryck inledas med ett likhetstecken (=).   
+Uttryck används ofta i sidnumrerade rapporter i Power BI Report Builder för att kontrollera innehållets och rapportens utseende. Uttryck skrivs i Microsoft Visual Basic och kan använda inbyggda funktioner, anpassad kod, rapport- och gruppvariabler samt användardefinierade variabler. Uttryck inledas med ett likhetstecken (=).   
 
 Det här avsnittet innehåller exempel på uttryck som kan användas för ofta förekommande uppgifter i en rapport.  
   

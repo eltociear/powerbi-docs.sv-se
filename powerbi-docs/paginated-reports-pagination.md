@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 12/03/2019
-ms.openlocfilehash: fced83abab1898724e165154fbc177ccf50ca061
-ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
+ms.openlocfilehash: 5c2dc39f05609da8a460ac7575498c0df6a96c55
+ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74831241"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76160890"
 ---
 # <a name="pagination-in-power-bi-paginated-reports"></a>Sidnumrering i sidnumrerade rapporter i Power BI
 
@@ -22,10 +22,10 @@ ms.locfileid: "74831241"
  I det här avsnittet beskrivs vilken påverkan den fysiska sidstorleken och rapportlayouten har på hur rapporten återges med hård sidbrytning. Du kan ange egenskaper för att ändra den fysiska sidstorleken och marginalerna, och dela in rapporten i kolumner. Använd fönstret **Rapportegenskaper**, fönstret **Egenskaper** eller dialogrutan **Utskriftsformat**. Du öppnar fönstret **Rapportegenskaper** genom att klicka på det blå området utanför rapportens brödtext. Du öppnar dialogrutan **Utskriftsformat** genom att klicka på **Kör** på startfliken och sedan på **Utskriftsformat** på fliken Kör.  
   
 > [!NOTE]  
->  Om du har designat en rapport som är en sida bred, men den återges över flera sidor, kontrollerar du att bredden för rapportens brödtext, inklusive marginaler, inte är större än bredden för den fysiska sidstorleken. Du kan förhindra att tomma sidor läggs till i rapporten genom att minska storleken på behållaren genom att dra i hörnet på behållaren åt vänster.  
+>  Om du har designat en rapport som är en sida bred, men den återges över flera sidor, kontrollerar du att bredden för rapportens brödtext, inklusive marginaler, inte är större än bredden för den fysiska sidstorleken. Du kan förhindra att tomma sidor läggs till i rapporten genom att minska storleken på containern genom att dra i hörnet på containern åt vänster.  
 
 ## <a name="the-report-body"></a>Rapportens brödtext  
- Rapportens brödtext är en rektangulär behållare som visas som ett tomt utrymme på designytan. Behållaren kan växa eller krympa för att få plats med rapportobjekt som finns i behållaren. Rapportens brödtext motsvarar inte den fysiska sidstorleken. Rapportens brödtext kan växa utanför gränserna för den fysiska sidstorleken och sträcka sig över flera rapportsidor. Vissa renderare, till exempel Microsoft Excel, Word, HTML och MHTML, återger rapporter som växer eller krymper beroende på sidans innehåll. Rapporter som återges i dessa format är optimerade för skärmbaserad visning, till exempel i en webbläsare. I dessa återgivningar läggs lodräta sidbrytningar till när det behövs.  
+ Rapportens brödtext är en rektangulär container som visas som ett tomt utrymme på designytan. Behållaren kan växa eller krympa för att få plats med rapportobjekt som finns i behållaren. Rapportens brödtext motsvarar inte den fysiska sidstorleken. Rapportens brödtext kan växa utanför gränserna för den fysiska sidstorleken och sträcka sig över flera rapportsidor. Vissa renderare, till exempel Microsoft Excel, Word, HTML och MHTML, återger rapporter som växer eller krymper beroende på sidans innehåll. Rapporter som återges i dessa format är optimerade för skärmbaserad visning, till exempel i en webbläsare. I dessa återgivningar läggs lodräta sidbrytningar till när det behövs.  
   
  Du kan formatera rapportens brödtext med färg, format, bredd för kantlinjerna. Du kan också lägga till en bakgrundsfärg och en bakgrundsbild.  
   
@@ -87,6 +87,6 @@ ms.locfileid: "74831241"
   
 ## <a name="next-steps"></a>Nästa steg
 
-[Visa en sidnumrerad rapport i Power BI-tjänsten](consumer/paginated-reports-view-power-bi-service.md)
-
-Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
+- [Visa en sidnumrerad rapport i Power BI-tjänsten](consumer/paginated-reports-view-power-bi-service.md)
+- [Undvik tomma sidor när du skriver ut sidnumrerade rapporter](guidance/report-paginated-blank-page.md)
+- Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)

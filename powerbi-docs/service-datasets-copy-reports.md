@@ -1,31 +1,33 @@
 ---
-title: Kopiera rapporter från andra arbetsytor (förhandsversion) – Power BI
-description: Lär dig hur du delar en datamängd med användare i organisationen. De kan sedan skapa rapporter baserat på din datamängd på sina egna arbetsytor.
+title: Kopiera rapporter från andra appar eller arbetsytor (förhandsversion) – Power BI
+description: Lär dig att skapa en kopia av en rapport och spara den på din egen arbetsyta.
 author: maggiesMSFT
 ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/12/2019
+ms.date: 01/16/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 9c7cbd895a913b76a9c0b87155f7800c5538ab28
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: 8716a304e5b117c027d75db149ebcc8d95efebfe
+ms.sourcegitcommit: 313a5a6a01c09038a6152d681103accbd2faf437
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75223846"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "76268901"
 ---
 # <a name="copy-reports-from-other-workspaces-preview"></a>Kopiera rapporter från andra arbetsytor (förhandsversion)
 
-När du har hittat en rapport som du gillar på en arbetsyta eller i en app kan du göra en kopia av den och sedan spara den på en annan arbetsyta. Du kan sedan ändra din kopia av rapporten genom att lägga till eller ta bort visuella objekt och andra element. Du behöver inte tänka på att skapa datamodellen. Den har redan skapats. Och det är mycket enklare att ändra en befintlig rapport än att börja från början. Men när du skapar en app från den nya arbetsytan kan du ibland inte publicera din kopia av rapporten i appen. Mer information finns i [Överväganden och begränsningar i artikeln ”Använda datamängder mellan arbetsytor”](service-datasets-across-workspaces.md#considerations-and-limitations).
+När du har hittat en rapport som du gillar på en arbetsyta eller i en app kan du göra en kopia av den och sedan spara den på en annan arbetsyta. Du kan sedan ändra din kopia av rapporten genom att lägga till eller ta bort visuella objekt och andra element. Du behöver inte tänka på att skapa datamodellen. Den har redan skapats. Och det är mycket enklare att ändra en befintlig rapport än att börja från början. När du skapar en app från arbetsytan kan du ibland inte publicera din kopia av rapporten i appen. Mer information finns i [Överväganden och begränsningar i artikeln ”Använda datamängder mellan arbetsytor”](service-datasets-across-workspaces.md#considerations-and-limitations).
 
 > [!NOTE]
 > För att göra en kopia behöver du en Pro-licens, även om den ursprungliga rapporten finns på en arbetsyta i en Premium-kapacitet.
 
-## <a name="save-a-copy-of-a-report"></a>Skapa en kopia av en rapport
+## <a name="save-a-copy-of-a-report-in-a-workspace"></a>Spara en kopia av en rapport på en arbetsyta
 
-1. I en app eller på en arbetsyta går du till listvyn Rapporter.
+1. I arbetsytan går du till listvyn Rapporter.
+
+    ![Listvyn Rapporter](media/service-datasets-copy-reports/power-bi-report-list-view.png)
 
 1. Under **Åtgärder** väljer du **Spara en kopia**.
 
@@ -37,22 +39,46 @@ När du har hittat en rapport som du gillar på en arbetsyta eller i en app kan 
 
     ![Dialogrutan Spara en kopia](media/service-datasets-copy-reports/power-bi-dataset-save-report.png)
 
-    Vilken arbetsyta du kan spara till beror på var du kopierar från. När du kopierar från en arbetsyta kan du spara rapporten på den aktuella arbetsytan eller en annan i Power BI-tjänsten. Du kan bara se arbetsytor som är arbetsytor med den nya funktionen och där du är medlem. När du kopierar från en app kan du spara rapporten till Min arbetsyta.
+    Du kan spara rapporten på den aktuella arbetsytan eller en annan i Power BI-tjänsten. Du kan bara se arbetsytor som är arbetsytor med den nya funktionen och där du är medlem. 
   
 4. Välj **Spara**.
 
-    När du sparar en kopia av rapporten skapar du en live-anslutning till datamängden, och du kan öppna funktionen för rapportskapande med hela datamängden tillgänglig. Du har inte gjort en kopia av datamängden. Datamängden finns fortfarande på dess ursprungliga plats. Du kan använda alla tabeller och mått i datamängden i din egen rapport. Begränsningar gällande säkerhet på radnivå (RLS) för datamängden gäller, så du ser endast data som du har behörighet att se baserat på din RLS-roll.
-
-    Power BI skapar automatiskt en post i listan över datamängder om rapporten baseras på en datamängd utanför arbetsytan. Ikonen för den här datamängden skiljer sig från ikonen för datamängder på arbetsytan: ![Ikon för delad datamängd](media/service-datasets-discover-across-workspaces/power-bi-shared-dataset-icon.png)
-
-
+    Power BI skapar automatiskt kopia av rapporten och en post i listan med datamängder, om rapporten baseras på en datamängd utanför arbetsytan. Ikonen för den här datamängden skiljer sig från ikonen för datamängder på arbetsytan: ![Ikon för delad datamängd](media/service-datasets-discover-across-workspaces/power-bi-shared-dataset-icon.png)
+    
     På så sätt kan medlemmar i arbetsytan se vilka rapporter och instrumentpaneler som använder datamängder som är utanför arbetsytan. Posten visas information om datamängden och vissa utvalda åtgärder.
 
     ![Datamängdsåtgärder](media/service-datasets-across-workspaces/power-bi-dataset-actions.png)
 
+    Mer information om rapporten och relaterad datamängd finns i [Din kopia av rapporten](#your-copy-of-the-report) i den här artikeln.
+
+## <a name="copy-a-report-in-an-app"></a>Kopiera en rapport i en app
+
+1. I appen öppnar du den rapport som du vill kopiera.
+2. I menyraden väljer du **Fler alternativ** ( **...** ) > **Spara en kopia**.
+
+    ![Spara en kopia av rapporten](media/service-datasets-copy-reports/power-bi-save-copy.png)
+
+    Du ser bara alternativet **Spara en kopia** om rapporten är på en arbetsyta och du har [Skapa-behörighet](service-datasets-build-permissions.md).
+
+3. Ge rapporten ett namn > **Spara**.
+
+    ![Namnge din kopia av rapporten](media/service-datasets-copy-reports/power-bi-save-report-from-app.png)
+
+    Din kopia sparas automatiskt på Min arbetsyta.
+
+4. Välj **Gå till rapport** för att öppna din kopia.
+
+## <a name="your-copy-of-the-report"></a>Din kopia av rapporten
+
+När du sparar en kopia av rapporten skapar du en live-anslutning till datamängden, och du kan öppna funktionen för rapportskapande med hela datamängden tillgänglig. 
+
+![Redigera din kopia av rapporten](media/service-datasets-copy-reports/power-bi-edit-report-copy.png)
+
+Du har inte gjort en kopia av datamängden. Datamängden finns fortfarande på dess ursprungliga plats. Du kan använda alla tabeller och mått i datamängden i din egen rapport. Begränsningar gällande säkerhet på radnivå (RLS) för datamängden gäller, så du ser endast data som du har behörighet att se baserat på din RLS-roll.
+
 ## <a name="view-related-datasets"></a>Visa relaterade datamängder
 
-När du har en rapport på din arbetsyta kan du behöva känna till vilken datamängd den baseras på.
+När du har en rapport på en arbetsyta som baseras på en datamängd på en annan arbetsyta, kan du behöva veta mer om den datamängd som den baseras på.
 
 1. I listvyn Rapporter väljer du **Visa relaterade**.
 

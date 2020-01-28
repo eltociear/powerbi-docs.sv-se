@@ -1,6 +1,6 @@
 ---
 title: Rapportparametrar i Power BI Report Builder
-description: I det här ämnet beskrivs vanliga användningsområden för rapportparametrar i Power BI Report Builder, de egenskaper som du kan ange och mycket mer.
+description: I det här ämnet beskrivs vanliga användningsområden för rapportparametrar i Power BI Report Builder, vilka egenskaper du kan ange och mycket mer.
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
@@ -9,16 +9,16 @@ ms.author: maggies
 ms.reviewer: ''
 ms.custom: ''
 ms.date: 06/06/2019
-ms.openlocfilehash: d31036676a5960f7f6eb0f346c2c02ab979ff9bc
-ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
+ms.openlocfilehash: 5a7e91c03b11902f324d6a7c639a03f7652acf16
+ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74128414"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76160867"
 ---
 # <a name="report-parameters-in-power-bi-report-builder"></a>Rapportparametrar i Power BI Report Builder
 
-I det här ämnet beskrivs vanliga användningsområden för rapportparametrar i Power BI Report Builder, de egenskaper som du kan ange och mycket mer. Med rapportparametrar kan du kontrollera rapportdata, koppla ihop relaterade rapporter och variera rapportpresentationen. Du kan använda rapportparametrar i sidnumrerade rapporter som du skapar i Report Builder.
+I det här ämnet beskrivs vanliga användningsområden för rapportparametrar i Power BI Report Builder, vilka egenskaper du kan ange och mycket mer. Med rapportparametrar kan du kontrollera rapportdata, koppla ihop relaterade rapporter och variera rapportpresentationen. Du kan använda rapportparametrar i sidnumrerade rapporter som du skapar i Report Builder.
 
 ## <a name="bkmk_Common_Uses_for_Parameters"></a> Vanliga användningsområden för parametrar
 
@@ -93,7 +93,7 @@ Skapa en parameter manuellt från fönstret Rapportdata. Du kan konfigurera rapp
   
 - Välj flera parametervärden från en listruta.  
   
-- Välj ett värde från en listruta för en parameter, som bestämmer vilka värden som är tillgängliga i listrutan för en annan parameter. De här är sammanhängande parametrar. Med sammanhängande parametrar kan du filtrera parametervärden från tusentals värden till ett hanterbart antal.  
+- Välj ett värde från en listruta för en parameter, som bestämmer vilka värden som är tillgängliga i listrutan för en annan parameter. De här är sammanhängande parametrar. Med sammanhängande parametrar kan du filtrera parametervärden från tusentals värden till ett hanterbart antal. Mer information finns i [Använda sammanhängande parametrar i sidnumrerade rapporter](guidance/paginated-report-cascading-parameter.md).
   
 - Kör rapporten utan att först behöva välja ett parametervärde eftersom ett standardvärde har skapats för parametern.  
   
@@ -148,5 +148,4 @@ Skapa en parameter manuellt från fönstret Rapportdata. Du kan konfigurera rapp
 ## <a name="next-steps"></a>Nästa steg
 
 - [Vad är sidnumrerade rapporter i Power BI Premium?](paginated-reports-report-builder-power-bi.md)  
- 
- 
+- [Använda sammanhängande parametrar i sidnumrerade rapporter](guidance/paginated-report-cascading-parameter.md)

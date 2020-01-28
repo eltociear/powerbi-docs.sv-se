@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.assetid: c1490ff0-5b8a-43c1-8d22-e459395db4f6
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: d7e232d09eee2a4cfff17d4565443195e6f7f1aa
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: 3b436156d6bd36fe5da7b9b4404227ca1a6de336
+ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66840359"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76160545"
 ---
 # <a name="report-design-tips-in-power-bi-report-builder"></a>Tips om rapportdesign i Power BI Report Builder
   Använd följande tips för att utforma dina sidnumrerade rapporter i Power BI Report Builder.  
@@ -131,7 +131,7 @@ ms.locfileid: "66840359"
   
 -   Om du planerar att spara rapporten som en PDF-fil måste rapportbredden explicit anges till ett värde som ger det resultat du vill ha i filformatet för export. Till exempel kan du ange rapportsidans bredd till exakt 7,9375 tum och vänster- och högermarginalerna till 0,5 tum.  
   
--   Använd **Utskriftslayout** och **Utskriftsformat** i rapportgranskarens verktygsfält för att rendera en rapport i en utskriftskompatibel vy. Gör följande för att ta bort oönskade vågräta sidor:  
+-   Använd **Utskriftslayout** och **Utskriftsformat** i rapportgranskarens verktygsfält för att rendera en rapport i en utskriftskompatibel vy. Gör följande för att ta bort oönskade tomma sidor:  
   
     1.  Ta bort alla extra blanksteg mellan dataområden och på rapportens kanter.  
   
@@ -140,8 +140,10 @@ ms.locfileid: "66840359"
     3.  Använd **Rektanglar** som containrar för att kontrollera det sätt som rapportobjekt renderas på.  
   
     4.  I kolumnrubriker ändrar du textruteegenskapen WritingMode till att använda lodrät text.  
-  
- Kombinationen av det här beteendet, egenskaper för bredd och höjd för rapportobjekt, storleken på rapportinnehållet, definitionen för sidhöjd och sidbredd, marginalinställningarna för den överordnade rapporten samt renderarspecifikt stöd för sidindelning avgör tillsammans vilka rapportobjekt som passar ihop på en renderad sida. 
+
+ Mer information finns i [Undvik tomma sidor när du skriver ut sidnumrerade rapporter](guidance/report-paginated-blank-page.md).
+
+ Kombinationen av det här beteendet, egenskaper för bredd och höjd för rapportobjekt, storleken på rapportinnehållet, definitionen för sidhöjd och sidbredd, marginalinställningarna för den överordnade rapporten samt renderarspecifikt stöd för sidindelning avgör tillsammans vilka rapportobjekt som passar ihop på en renderad sida.
  
 ## <a name="next-steps"></a>Nästa steg
 

@@ -1,7 +1,7 @@
 ---
 title: Introduktion till instrumentpaneler för Power BI-designers
 description: Instrumentpaneler är en nyckelfunktion i Power BI-tjänsten. De är en enda sida, som ofta kallas för arbetsyta, som har ett budskap via visualiseringar.
-author: maggieMSFT
+author: maggiesMSFT
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/19/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 41381a2f0ccc2c5db904d9ac94c7dad19edfa4e5
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: eb2c513e8ee8ad1c8ad93866f688e40f6c5af56d
+ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73872747"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76160798"
 ---
 # <a name="introduction-to-dashboards-for-power-bi-designers"></a>Introduktion till instrumentpaneler för Power BI-designers
 
@@ -38,7 +38,7 @@ Instrumentpaneler är fantastiska för att övervaka affärsverksamheten och fö
 En instrumentpanel är inte bara en fin bild. Den är i hög grad interaktiv. Panelerna uppdateras när underliggande data ändras.
 
 ## <a name="who-can-create-a-dashboard"></a>Vem kan skapa en instrumentpanel?
-Möjligheten att skapa en instrumentpanel är en funktion för *skapare* och kräver behörighet att redigera i rapporten. Behörigheter att redigera är tillgängliga för rapportskapare av och de medarbetare skaparen beviljar åtkomst till. Om David till exempel skapar en rapport i workspaceABC och sedan lägger till dig som medlem i den arbetsytan kommer både du och David att ha redigeringsbehörighet. Om en rapport å andra sidan har delats med dig direkt eller som en del av en [Power BI-app](service-create-distribute-apps.md) så *använder* du rapporten. Du kanske inte kan fästa paneler på en instrumentpanel. 
+Möjligheten att skapa en instrumentpanel är en funktion för *skapare* och kräver behörighet att redigera i rapporten. Behörigheter att redigera är tillgängliga för rapportskapare av och de medarbetare skaparen beviljar åtkomst till. Om David till exempel skapar en rapport på arbetsytan ABC och sedan lägger till dig som medlem i den arbetsytan kommer både du och David att ha redigeringsbehörighet. Om en rapport å andra sidan har delats med dig direkt eller som en del av en [Power BI-app](service-create-distribute-apps.md) så *använder* du rapporten. Du kanske inte kan fästa paneler på en instrumentpanel. 
 
 > [!IMPORTANT]
 > Du behöver en [Power BI Pro](service-free-vs-pro.md)-licens för att skapa instrumentpaneler i arbetsytor. Du kan skapa instrumentpaneler i din egen min arbetsyta utan en Power BI Pro-licens.

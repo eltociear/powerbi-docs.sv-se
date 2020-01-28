@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: maggies
 LocalizationGroup: Data refresh
-ms.openlocfilehash: bdb5b797146dae0bd8c6a70163a245f44430da8c
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 2db2b4f02dac1ebcd9d24a8217a181efa9ce0779
+ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74791680"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76039048"
 ---
 # <a name="data-refresh-in-power-bi"></a>Datauppdatering i Power BI
 
@@ -317,10 +317,9 @@ Varningsikonen hjälper till att visa aktuella datauppsättningsproblem, men det
 
 ## <a name="automatic-page-refresh"></a>Automatisk siduppdatering
 
-Automatisk siduppdatering används på nivån för rapportsidan och innebär att rapportförfattarna kan ange ett uppdateringsintervall för visuella objekt på sidor som bara är aktivt när sidan används. Automatisk siduppdatering är endast tillgängligt för DirectQuery-datakällor. Det lägsta uppdateringsintervallet beror på vilken typ av arbetsyta som rapporten publiceras på, samt kapacitetsadministratörens inställningar för Premium-arbetsytor.
+Automatisk siduppdatering används på nivån för rapportsidan och innebär att rapportförfattarna kan ange ett uppdateringsintervall för visuella objekt på sidor som bara är aktivt när sidan används. Automatisk siduppdatering är endast tillgängligt för DirectQuery-datakällor. Det lägsta uppdateringsintervallet beror på vilken typ av arbetsyta som rapporten publiceras på, samt kapacitetsadministratörens inställningar för Premium-arbetsytor och [inbäddade arbetsytor](developer/embedding.md).
 
 Läs mer om automatisk siduppdatering i artikeln [om automatisk siduppdatering](desktop-automatic-page-refresh.md).
-
 
 ## <a name="best-practices"></a>Metodtips
 

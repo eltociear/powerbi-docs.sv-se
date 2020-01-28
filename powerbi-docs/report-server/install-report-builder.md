@@ -8,18 +8,18 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/07/2020
-ms.openlocfilehash: 4cf5d2c1df4d7e0884083d48aa66421e5c43765a
-ms.sourcegitcommit: b68a47b1854588a319a5a2d5d6a79bba2da3a4e6
+ms.openlocfilehash: 1cf8797939eafb69734ecd0f4be752926d1994a1
+ms.sourcegitcommit: df8bcc65f0df69bf1fc1d47eb06575742eac1622
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75735153"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75953940"
 ---
 # <a name="install-report-builder---power-bi-report-server"></a>Installera Report Builder – Power BI-rapportserver
 
 Report Builder är en fristående app som du eller en administratör installerar i datorn. Du kan installera den från Microsoft Download Center eller Power BI-rapportserver.  
 
-Behöver du hjälp med att installera Report Builder för Power BI-tjänsten? Då ska du läsa [Skapa sidnumrerade rapporter i Power BI](../report-builder-power-bi.md) i stället.
+Behöver du hjälp med att installera Report Builder för Power BI-tjänsten? Då ska du läsa [Power BI Report Builder](../report-builder-power-bi.md) i stället.
   
 En administratör installerar och konfigurerar vanligtvis Power BI-rapportserver, ger behörighet att ladda ned Report Builder från webbportalen samt hanterar mappar och behörigheter till rapporter och delade datamängder som sparas på rapportservern. Du kan läsa mer om administration av Power BI-rapportserver i [Administrationsöversikt, Power BI-rapportserver](admin-handbook-overview.md).  
   
