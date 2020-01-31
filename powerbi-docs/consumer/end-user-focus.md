@@ -7,15 +7,15 @@ featuredvideoid: dtdLul6otYE
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/23/2019
+ms.date: 01/22/2020
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 633aaf4bd06634f0b1cc7eb2dd38b56eec0cfaf0
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: f2114d8d4be2e5f9c3b3f34589adc901a0ef4ebb
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73852752"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76537765"
 ---
 # <a name="display-content-in-more-detail-focus-mode-and-full-screen-mode"></a>Visa innehållet i detalj: fokusläge och fullskärmsläge
 
@@ -30,21 +30,20 @@ Fokusläge och fullskärmsläge är två olika sätt att se mer information i di
 |Instrumentpanel     |   Inte möjligt     | ja |
 |Rapportsida   | Inte möjligt  | ja|
 |Visuellt rapportobjekt | ja    | ja |
-|Instrumentpanel | ja    | ja |
+|Instrumentpanel | ja    | Inte möjligt |
 |Windows 10 Mobile | Inte möjligt | Ja |
 
 ## <a name="what-is-full-screen-mode"></a>Vad är fullskärmsläge?
 
 ![instrumentpanelens fullskärmsläge före och efter](media/end-user-focus/power-bi-dashboards-focus.png)
 
-Visa ditt innehåll i Power BI-tjänsten (instrumentpaneler, rapportsidor, paneler och visuella objekt) utan störande menyer och navigeringsfönster.  Du får en oförstörd, fullständig översikt över ditt innehåll på ett överblick, vid alla tidpunkter. Detta kallas ibland för TV-läge.   
+Visa ditt innehåll i Power BI-tjänsten (instrumentpaneler, rapportsidor och visuella objekt) utan störande menyer och navigeringsfönster.  Du får en oförstörd, fullständig översikt över ditt innehåll på ett överblick, vid alla tidpunkter. Detta kallas ibland för TV-läge.   
 
-Om du vill öppna fullskärmsläget väljer du ikonen **fullskärm** ![fullskärmsikonen ](media/end-user-focus/power-bi-full-screen-icon.png) i Power BI-tjänstens menyrad ovanför din instrumentpanel, rapport, panel i fokusläge eller ett visuellt objekt i fokusläge.  Ditt valda innehåll fyller hela skärmen.
 Om du använder Power BI Mobile är [fullskärm är tillgängligt för mobila Windows 10-appar](./mobile/mobile-windows-10-app-presentation-mode.md). 
 
 Några användningsområden för fullskärmsläge:
 
-* presentera instrumentpanelen, panelen, visuella objekt eller en rapport under ett möte eller en konferens
+* presentera instrumentpanelen, visuella objekt eller en rapport under ett möte eller en konferens
 * visa bilden på kontoret på en dedikerad stor bildskärm eller projektor
 * visa på en liten skärm
 * granska i låst läge – du kan röra skärmen eller musen över panelerna utan att öppna den underliggande rapporten eller instrumentpanelen
@@ -53,18 +52,30 @@ Några användningsområden för fullskärmsläge:
 
 Med läget ***Fokus*** kan du expandera (fälla ut) ett visuellt objekt eller en panel för att se mer information.  Du kanske har en instrumentpanel eller rapport med mycket innehåll och du vill zooma in på ett enskilt visuellt objekt.  Det här är ett perfekt användningsområde för fokusläget.  
 
-![instrumentpanelens fullskärmsläge före och efter](media/end-user-focus/power-bi-compare-dash.png)
+![instrumentpanelens panelfokusläge före och efter](media/end-user-focus/power-bi-compare-dash.png)
 
 I fokusläget kan en Power BI-*användare* interagera med de filter som tillämpades när det visuella objektet skapades.  Du kan använda fokusläget i BI-tjänsten på en instrumentpanel eller i en rapportvisualisering.
 
 ## <a name="working-in-full-screen-mode"></a>Arbeta i fullskärmsläge
 
-Om du vill öppna en instrumentpanel eller en rapportsida i fullskärmsläge, väljer du fullskärmsikonen ![fullskärmsikonen](media/end-user-focus/power-bi-full-screen-icon.png) från det översta navigeringsfönstret. När du är i fullskärmsläge visas en snabbmeny när du flyttar musen eller markören. Eftersom fullskärmsläget används för en mängd olika innehåll kan alternativen i snabbmenyn skilja sig åt, men de är ganska självförklarande.  Du kan hovra över en ikon för att se en beskrivning av den.
+Helskärmsläge är tillgängligt för instrumentpaneler, rapportsidor och visuella objekt för rapporter. 
+
+- Om du vill öppna en instrumentpanel i helskärmsläge väljer du helskärmsikonen ![fullskärmsikonen](media/end-user-focus/power-bi-full-screen-icon.png) på den översta menyraden. 
+
+- Om du vill öppna en rapportsida i helskärmsläge väljer du **Visa** > **Helskärm**.
+
+    ![välja Helskärm från menyn Visa](media/end-user-focus/power-bi-view.png)
+
+
+- Om du vill visa ett visuellt objekt i helskärmsläge öppnar du det först i fokusläge och väljer sedan **Visa** > **Helskärm**.  
+
+
+Ditt valda innehåll fyller hela skärmen.    När du är i fullskärmsläge visas en snabbmeny när du flyttar musen eller markören. Eftersom fullskärmsläget används för en mängd olika innehåll kan alternativen i snabbmenyn skilja sig åt, men de är ganska självförklarande.  Du kan hovra över en ikon för att se en beskrivning av den.
 
 Menyn för instrumentpaneler    
 ![Menyn för instrumentpaneler](media/end-user-focus/power-bi-full-screen-dash.png)    
 
-Menyn för rapportsidor    
+Menyn för rapportsidor och visuella objekt för rapporter    
 ![Menyn för rapporter](media/end-user-focus/power-bi-report-full-screen.png)    
 
   * ![Ikonen Tillbaka](media/end-user-focus/power-bi-back-icon.png)    
@@ -92,46 +103,36 @@ Menyn för rapportsidor
 
 ## <a name="working-in-focus-mode"></a>Arbeta i fokusläge
 
-Det finns två sätt att öppna fokusläget på: ett för instrumentpaneler och ett för visuella rapportobjekt.
+Fokusläge är tillgängligt för paneler på instrumentpaneler och visuella objekt för rapporter. 
 
-### <a name="focus-mode-in-dashboards"></a>Fokusläge i instrumentpaneler
+- Om du vill öppna en panel på instrumentpanelen i fokusläge hovrar du över en panel på instrumentpanelen eller ett visuellt objekt för rapporter och väljer **Fler alternativ** (...) följt av **Öppna i fokusläge**.
 
-1. Öppna en instrumentpanel i Power BI-tjänsten.
+    ![panelens ellipsmeny](media/end-user-focus/power-bi-dashboard-focus.png).. 
 
-2. Hovra över instrumentpanelen eller det visuella rapportobjektet, välj **Fler alternativ** (...) och sedan **Öppna i fokusläge**.
+- Om du vill öppna ett visuellt objekt för rapporter i fokusläge hovrar du över det visuella objektet och väljer ikonen för **fokusläge** ![ikon för fokusläge](media/end-user-focus/pbi_popout.jpg).  
 
-    ![panelens ellipsmeny](media/end-user-focus/power-bi-dashboard-focus.png).
+   ![fokusikon visas på panel](media/end-user-focus/power-bi-hover-focus-icon.png)
 
-2. Panelen öppnas och fyller hela rapportarbetsytan. Obs! Du har fortfarande ett **Filter**-fönster du kan använda för att interagera med det visuella rapportobjektet. Fönstret **Filter** kan komprimeras.
+
+
+Det visuellt objektet öppnas och fyller hela arbetsytan. Obs! Du har fortfarande ett **Filter**-fönster du kan använda för att interagera med det visuella rapportobjektet. Fönstret **Filter** och navigeringsfönstret kan minimeras.
 
    ![panelen fyller rapportarbetsytan](media/end-user-focus/power-bi-focus-filter.png)
 
-4. Utforska ytterligare genom att [ändra filtren](end-user-report-filter.md) och se intressanta upptäckter i dina data.  
 
-5. Lämna fokusläget och återgå till instrumentpanelen genom att välja **Avsluta fokusläge** (i det övre vänstra hörnet av visualiseringen).
+   ![panelen fyller rapportarbetsytan och båda menyerna minimeras](media/end-user-focus/power-bi-menu-collapse.png)  
 
-    ![avsluta fokusläge](media/end-user-focus/power-bi-exit.png)    
+Utforska ytterligare genom att [ändra filtren](end-user-report-filter.md) och se intressanta upptäckter i dina data.  
 
+Analysera datan efter nya insikter och svar på frågor. Som *användare* kan du inte lägga till nya filter, ändra vilka fält som används i de visuella objekten eller skapa nya visuella objekt.  Du kan dock interagera med de befintliga filtren. 
 
-## <a name="focus-mode-for-report-visuals"></a>Fokusläge för visuella rapportobjekt
+Det går inte att spara ändringarna för en panel på instrumentpanelen. För ett visuellt objekt för rapporter sparas dock eventuella ändringar som du gör i befintliga filter när du avslutar Power BI. Om du inte vill att Power BI ska spara dina ändringar väljer du **Återställ till standard**. ![knappen återställ till standard](media/end-user-focus/power-bi-resets.png)  
 
-1. Öppna en rapport i Power BI-tjänsten.  I det här exemplet demonstrerar vi hur du gör med hjälp av exemplet på försäljning och marknadsföring.
+Lämna fokusläget och återgå till instrumentpanelen genom att välja antingen **Avsluta fokusläge** eller **Tillbaka till rapporten** (i det övre vänstra hörnet av det visuella objektet).
 
-1. När rapporten har öppnats väljer du fliken **Kategori hittills i år**.
+![avsluta fokusläge](media/end-user-focus/power-bi-exit.png)    
 
-2. Hovra över trädkartan i det övre vänstra hörnet och välj ikonen för **fokusläget** ![fokuslägesikonen](media/end-user-focus/pbi_popout.jpg).  
-
-   ![fokusikon visas på panel](media/end-user-focus/power-bi-hover-focus-icon.png)
-2. Det visuellt objektet öppnas och fyller hela arbetsytan.
-
-   ![visualisering i fokusläge](media/end-user-focus/power-bi-display-focus-new.png)
-
-3. Du kan också använda fönstret **Filter** om du vill interagera med de filter som tillämpats på det visuella objektet. Analysera datan efter nya insikter och svar på frågor. Som *användare* kan du inte lägga till nya filter, ändra vilka fält som används i de visuella objekten eller skapa nya visuella objekt.  Eventuella ändringar du gör i befintliga filter sparas dock när du avslutar Power BI. Om du inte vill att Power BI ska spara dina ändringar väljer du **Återställ till standard**. ![knappen återställ till standard](media/end-user-focus/power-bi-resets.png)  
-
-
-5. Lämna fokusläget och gå tillbaka till rapporten genom att välja **Tillbaka till rapporten** (i det övre vänstra hörnet av visualiseringen).
-
-    ![avsluta fokusläge](media/end-user-focus/power-bi-back-to-report.png)  
+![avsluta fokusläge](media/end-user-focus/power-bi-back-to-report.png)  
 
 ## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
 

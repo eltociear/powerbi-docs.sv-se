@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 11/07/2019
+ms.date: 01/15/2020
 ms.author: painbar
-ms.openlocfilehash: ccc7e3864590145309709d27774951c281b3ebdd
-ms.sourcegitcommit: ef9ab7c0d84b926094c33e8aa2765cd43b844314
+ms.openlocfilehash: 58b2f96b069815af448352b3b54875dc4d6b27ee
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75622358"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76538277"
 ---
 # <a name="remotely-configure-power-bi-app-using-mobile-device-management-mdm-tool"></a>Konfigurera Power BI-appen via fjärranslutning med verktyget för hantering av mobilenheter (MDM)
 
@@ -21,8 +21,9 @@ Power BI Mobile-appen för iOS och Android har stöd för appinställningar som 
 
 Power BI Mobile-appen har stöd för följande konfigurationsscenarier:
 
-- Konfiguration av rapportserver (iOS och Android)
-- Inställningar för dataskydd (iOS)
+* Konfiguration av rapportserver (iOS och Android)
+* Inställningar för dataskydd (iOS och Android)
+* Interaktionsinställningar (Android)
 
 ## <a name="report-server-configuration-ios-and-android"></a>Konfiguration av rapportserver (iOS och Android)
 
@@ -37,11 +38,21 @@ Med Power BI-appen för iOS och Android kan administratörer fjärrstyra push-ö
 
 ## <a name="data-protection-settings-ios"></a>Inställningar för dataskydd (iOS)
 
-Med Power BI-appen för iOS kan administratörer anpassa standardkonfigurationen av säkerhets- och sekretessinställningar. Du kan tvinga användarna att använda ansiktsigenkänning, fingeravtryck eller lösenord för att kunna öppna Power BI-appen.
+Med Power BI-appen för iOS och Android kan administratörer anpassa standardkonfigurationen av säkerhets- och sekretessinställningar. Du kan tvinga användarna att använda ansiktsigenkänning, fingeravtryck eller lösenord för att kunna öppna Power BI-appen.
 
 | Nyckel | Typ | Beskrivning |
 |---|---|---|
 | com.microsoft.powerbi.mobile.ForceDeviceAuthentication | Boolesk | Standardvärdet är False. <br><br>Biometrik, som fingeravtryck eller ansiktsigenkänning, kan krävas för att användare ska kunna öppna appen på sin enhet. Om det behövs kan biometrik användas utöver vanlig autentisering.<br><br>Om du använder principer för appskydd rekommenderar Microsoft att du inaktiverar den här inställningen för att förhindra dubbla inloggningar. |
+
+## <a name="interaction-settings-android"></a>Interaktionsinställningar (Android)
+
+Power BI-appen för Android ger administratörer möjlighet att konfigurera interaktionsinställningar om det fastställs att standardinteraktionsinställningarna måste ändras mellan grupper av användare i en organisation. 
+
+| Nyckel | Typ | Värden | Beskrivning |
+|---|---|---|---|
+| com.microsoft.powerbi.mobile.ReportTapInteraction | Sträng |  <nobr>enkelknackning</nobr><br><nobr>dubbelknackning</nobr> | Konfigurera om ett tryck på visuellt objekt även gör ett datapunktsval. |
+| ccom.microsoft.powerbi.mobile.RefreshAction | Sträng |  <nobr>dra nedåt för att uppdatera</nobr><br>knapp | Konfigurera om användaren ska ha en knapp för att uppdatera rapporten eller om denne ska använda dra nedåt för att uppdatera. |
+| com.microsoft.powerbi.mobile.FooterAppearance | Sträng |  dockad<br>dynamisk | Konfigurera om rapportfoten ska vara fäst längst ned i rapporten eller döljas automatiskt. |
 
 ## <a name="deploying-app-configuration-settings"></a>Distribuera konfigurationsinställningar för appen
 

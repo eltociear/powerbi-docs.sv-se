@@ -1,23 +1,24 @@
 ---
 title: Översikt över hjälpmedel i Power BI
-description: Funktioner och förslag för att skapa tillgängliga Power BI Desktop-rapporter
+description: Funktioner och förslag för att skapa tillgängliga Power BI Desktop-rapporter, inklusive WCAG (Web Content Accessibility Guidelines)
 author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/08/2020
+ms.date: 01/17/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: ef19c638f9c456364757576e21c303103a7f4e39
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 8604ed2c737b7d2a75b3af052878ecb157ffacf1
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75761874"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76538622"
 ---
 # <a name="overview-of-accessibility-in-power-bi"></a>Översikt över hjälpmedel i Power BI
-När du arbetar med Power BI måste du tänka på vilka typer av användare som ska interagera med dina rapporter. Genom att skapa och presentera rapporter som är enkla att navigera i både för de som använder tangentbord och skärmläsare, så kan även användare med visuella eller fysiska nedsättningar ta del av samma information.
+
+När du arbetar med Power BI måste du tänka på vilka typer av användare som ska interagera med dina rapporter. Du kan skapa rapporter som är enkla att navigera i, och som de som använder tangentbordsnavigering eller skärmläsare kan förstå. Det gör att även användare med nedsatt syn eller nedsatt fysisk förmåga kan använda dina rapporter.
 
 ![Inställningar för hög kontrast i Windows](media/desktop-accessibility/accessibility-05b.png)
 
@@ -27,35 +28,34 @@ I den här artikeln går vi igenom hjälpmedlen i Power BI. Det finns fler artik
 
 Universal design handlar om att designa produkter som kan användas av så många personer som möjligt, utan att det behövs några särskilda anpassningar eller någon specialiserad design. När du skapar rapporter eller miljöer i Power BI är det viktigt att du funderar på användarnas behov. Om du gör miljön tillgänglig så är det inte bara användare med nedsatt hörsel, syn, motorik eller kognitiv förmåga som har nytta av det. Det är en fördel för alla slutanvändare i organisationen. Power BI har verktyg för att skapa och använda rapporter med hjälpmedel. Det är upp till dig som rapportdesigner att använda de här verktygen så att alla kan få en bättre upplevelse.
 
-
 ## <a name="accessibility-standards"></a>Hjälpmedelsstandarder
 
-Power BI uppfyller följande standarder för hjälpmedel. På så sätt ser du till att dina Power BI-miljöer är tillgängliga för så många personer som möjligt. Power BI Mobile-appar är certifierade för hjälpmedelsklass – c, vilket innebär att de tillgängliga rapporter och instrumentpaneler du skapar även är tillgängliga när de visas i Power BI Mobile. 
+Power BI uppfyller följande standarder för hjälpmedel. Dessa standarder ser till att dina Power BI-miljöer blir tillgängliga för så många som möjligt. Power BI Mobile-appar är certifierade för tillgänglighetsnivå C. När du skapar tillgängliga rapporter eller instrumentpaneler blir innehållet tillgängligt för alla som visar dem med Power BI Mobile.
 
 ### <a name="wcag-21"></a>WCAG 2.1
-WCAG (Web Content Accessibility Guidelines) bidrar till att göra webbinnehåll tillgängligt för personer med funktionsnedsättningar. WCAG omfattar tre primära principer:
 
-1. **Uppfattning** – information och gränssnittskomponenter ska presenteras för användarna på ett sätt som gör dem enkla att uppfatta.
-2. **Hantering** – gränssnittskomponenter och navigeringsfunktioner måste vara enkla att hantera.
-3. **Förståelse** – information och gränssnittskomponenter måste vara enkla att förstå.
+WCAG (Web Content Accessibility Guidelines) bidrar till att göra webbinnehåll tillgängligt för personer med funktionsnedsättningar. Viktiga principer i riktlinjerna:
+
+1. **Uppfattning**. Information och gränssnittskomponenter ska presenteras för användarna på ett sätt som gör dem enkla att uppfatta.
+2. **Hantering**. Gränssnittskomponenter och navigeringsfunktioner måste vara enkla att hantera.
+3. **Förståelse**. Information och gränssnittskomponenter måste vara enkla att förstå.
 
 ### <a name="us-section-508"></a>US Section 508
 
 US Section 508 är en standard som ålägger myndigheter och federala byråer att göra sin elektroniska information tillgänglig för personer med funktionsnedsättning.
 
 ### <a name="en-301-549"></a>EN 301 549
+
 EN 301 549 är den harmoniserade EU-standarden för ICT-produkter och -tjänster.  
-
-
 
 ## <a name="next-steps"></a>Nästa steg
 
-Här är samlingen med artiklar om hjälpmedel i Power BI:
+Mer information om hjälpmedel i Power BI finns i följande resurser:
 
-* [Skapa Power BI-rapporter med hjälpmedel](desktop-accessibility-creating-reports.md) 
+* [Designa Power BI-rapporter med hjälpmedel](desktop-accessibility-creating-reports.md)
 * [Använda Power BI-rapporter med hjälpmedel](desktop-accessibility-consuming-tools.md)
-* [Skapa Power BI-rapporter med hjälpmedel](desktop-accessibility-creating-tools.md)
-* [Kortkommandon för hjälpmedel i Power BI-rapporter](desktop-accessibility-keyboard-shortcuts.md)
+* [Skapa rapporter i Power BI med hjälpmedel](desktop-accessibility-creating-tools.md)
+* [Kortkommandon i Power BI Desktop](desktop-accessibility-keyboard-shortcuts.md)
 * [Checklista för hjälpmedel i rapporter](desktop-accessibility-creating-reports.md#report-accessibility-checklist)
 
 

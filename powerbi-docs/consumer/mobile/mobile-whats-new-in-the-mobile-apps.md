@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 12/16/2019
+ms.date: 01/08/2019
 ms.author: painbar
-ms.openlocfilehash: 44fcfdbaa51b85b191ff1452c66daee7da0360f8
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: caed3a107b8f7a57d2fb3da92073cb8a5f5331cd
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75220528"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76538415"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nyheter i Power BI-mobilapparna
 Relaterad information om nyheter finns i:
@@ -21,6 +21,27 @@ Relaterad information om nyheter finns i:
 * [Power BI-teambloggen för mobilappar](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Nyheter i Power BI Desktop](../../desktop-latest-update.md)  
 * [Nyheter i Power BI-tjänsten](../../service-whats-new.md)  
+
+## <a name="december-2019"></a>December 2019
+
+### <a name="docked-report-footer-and-a-refresh-button---new-experiences-for-interacting-with-reports-android"></a>Dockad rapportsidfot och en uppdateringsknapp – nya upplevelser för att interagera med rapporter (Android)
+
+Våra Android-användare har berättat att deras erfarenhet av rapporter inte är optimal – att det är svårt att använda rapportsidfoten och att ”dra nedåt för att uppdatera”-åtgärden är för känslig på vissa enheter. I den här versionen har vi därför ändrat dessa beteenden:
+* **Dockad rapportsidfot** – nu när du öppnar en rapport på telefonen är rapportsidfoten dockad längst ned på rapportsidan, där den alltid är synlig och tillgänglig, oavsett vad du gör på sidan. Detta gör det enkelt att använda alla alternativ på rapportsidfoten.
+* **Uppdateringsknappen i rapportsidhuvudet** – du hittar också en uppdateringsknapp i rapportsidhuvudet, vilket gör det enkelt att uppdatera rapporten precis när du vill.
+
+De användare som föredrar de tidigare beteendena kan återställa dem med appens nya, utökade [interaktionsinställningar](./mobile-app-interaction-settings.md).
+
+Dessutom kan IT-administratörer [åsidosätta de nya standardinställningarna via fjärrkonfiguration](./mobile-app-configuration.md#interaction-settings-android) för användarens räkning med hjälp av valfritt MDM-verktyg och en appkonfigurationsfil. På så sätt går det att ställa in samma beteende för alla användare i organisationen.
+
+> [!NOTE]
+> Interaktionsinställningarna för uppdateringsknappen och dockning av rapportsidfoten har för närvarande ingen inverkan på rapporter för rapportservern. Detta kommer att ändras med rapportserverversionen som släpps i januari!
+
+### <a name="set-default-bookmarks-from-your-mobile-app"></a>Ange standardbokmärken från din mobilapp
+Nu kan du ange standardbokmärken för dina rapporter direkt från din Power BI-mobilapp. Varje gång du öppnar en rapport kommer sedan dess standardbokmärke att användas automatiskt. [Läs mer!](./mobile-reports-in-the-mobile-apps.md#bookmarks)
+
+### <a name="filtering-by-location-on-android-tablets"></a>Filtrera efter plats på Android-surfplattor
+Med geofiltrering kan du filtrera dina rapporter baserat på din aktuella position. Den här funktionen är nu också tillgänglig i Power BI-appen för Android-surfplattor. [Läs mer!](./mobile-apps-geographic-filtering.md)
 
 ## <a name="november-2019"></a>November 2019
 

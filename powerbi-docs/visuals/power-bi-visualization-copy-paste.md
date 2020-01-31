@@ -6,17 +6,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/29/2019
+ms.date: 01/21/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 1cb683f050dfe6e77c0b199a2a156eb03dda7de2
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: f872d3b708733b28af83c0452e837638db0e65fe
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870903"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76539542"
 ---
 # <a name="copy-and-paste-a-report-visualization"></a>Kopiera och klistra in en rapportvisualisering
+Visuella objekt i Power BI-rapporter kan kopieras från en sida i rapporten till samma sida eller en annan sida i samma rapport. 
+
 Kopiering och inklistring av en visualisering kräver behörighet att redigera rapporten. I Power BI-tjänsten innebär detta att öppna rapporten i [redigeringsvyn](../consumer/end-user-reading-view.md). Du kan inte kopiera och klistra in visualiseringar på instrumentpaneler.
 
 ## <a name="copy-and-paste-a-visual"></a>Kopiera och klistra in ett visuellt objekt

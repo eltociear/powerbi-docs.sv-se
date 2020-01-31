@@ -7,74 +7,76 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 01/21/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 61af482ca5a035325a6c3f6c5a661aa8c3fc0985
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 751a53e2bfe0c9743a71cc41aa349afa23fd013a
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75761598"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76539198"
 ---
 # <a name="connect-to-data-sources-in-power-bi-desktop"></a>Ansluta till datakällor i Power BI Desktop
+
 Med Power BI Desktop kan du enkelt ansluta till den ständigt växande världen av data. Om du inte har Power BI Desktop, kan du [hämta](https://go.microsoft.com/fwlink/?LinkID=521662) och installera det.
 
-I Power BI Desktop finns det *många olika typer* av datakällor. Följande bild visar hur du ansluter till data, genom att välja fliken **Arkiv** och sedan **Hämta data\> Mer**.
+I Power BI Desktop finns det *många olika typer* av datakällor. Följande bild visar hur du ansluter till data, genom att välja **Hämta data** > **Övrigt** > **Webb**.
 
-![](media/desktop-connect-to-data/getdatavid_smallv2.gif)
+![Hämta data från webben](media/desktop-connect-to-data/get-data-from-the-web.png)
 
 ## <a name="example-of-connecting-to-data"></a>Exempel på anslutning till data
+
 I det här exemplet vi ansluter till en **Webb**datakälla.
 
-Anta att du går i pension – du vill bo där solen skiner, skatterna är låga och sjukvården är bra. Eller... Du kanske är en dataanalytiker och du behöver information för att hjälpa kunderna – till exempel hjälpa din kund som tillverkar regnjackor att hitta områden där det regnar *mycket*.
+Föreställ dig att du går i pension. Du vill bo där solen skiner, skatterna är låga och sjukvården är bra. Eller... Du kanske är dataanalytiker och behöver information för att hjälpa kunderna, till exempel hjälpa din kund som tillverkar regnjackor att hitta områden där det regnar *mycket*.
 
 I båda fallen hittar du en webbresurs som har intressant information om dessa ämnen med mera:
 
-[*https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx*](https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx)
+[https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx](https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx)
 
-Du väljer **Hämta data \> Webb** och anger adressen.
+Välj **Hämta data** > **Övrigt** > **Webb**. Ange adressen i **Från webben**.
 
-![](media/desktop-connect-to-data/connecttodata_3.png)
+![Ange en webbkälladress](media/desktop-connect-to-data/connecttodata_3.png)
 
-När du väljer **OK** används **Fråge**funktionen i Power BI Desktop. Power BI Desktop kontaktar webbresursen och fönstret **Navigator** returnerar resultatet från den sidan. I det här fallet hittade den en tabell (tabell 0) och ett övergripande dokument. Vi vill använda tabellen så vi väljer den från listan. **Navigerings**fönstret visar en förhandsgranskning.
+När du väljer **OK**, används *Fråge*funktionen i Power BI Desktop. Power BI Desktop kontaktar webbresursen och fönstret **Navigator** returnerar resultatet från den sidan. I det här fallet hittade den en tabell och ett övergripande dokument. Vi vill använda tabellen, så vi väljer den från listan. **Navigerings**fönstret visar en förhandsgranskning.
 
-![](media/desktop-connect-to-data/datasources_fromnavigatordialog.png)
+![Förhandsversion av data i Navigatör](media/desktop-connect-to-data/datasources_fromnavigatordialog.png)
 
-Vi kan nu redigera frågan innan du läser in tabellen genom att välja **Redigera** längst ned i fönstret eller läsa in tabellen.
+Du kan nu redigera frågan innan du läser in tabellen genom att välja **Transformera data** längst ned i fönstret eller så kan du läsa in tabellen.
 
-Om vi väljer **Redigera** hämtas tabellen och frågeredigeraren startas. Fönstret **frågeinställningar** visas (om det inte öppnas kan du välja **Visa** från menyfliken och sedan **Visa \> Frågeinställningar** för att visa fönstret **Frågeinställningar**). Det ser ut så här.
+Välj **Transformera data** för att läsa in tabellen och starta Power Query-redigeraren. Fönstret **Frågeinställningar** visas. Om det inte visas väljer du **Visa** i menyfliksområdet och sedan **Frågeinställningar** för att visa fönstret **Frågeinställningar**. Det ser ut så här.
 
-![](media/desktop-connect-to-data/designer_gsg_editquery.png)
+![Power Query-redigeraren med frågeinställningar](media/desktop-connect-to-data/designer_gsg_editquery.png)
 
-Dessa resultat är text i stället för siffror och vi behöver siffror. Inga problem – det är bara att högerklicka på kolumnrubriken och välja **Ändra typ \> Heltal** för att ändra dem. Om du vill välja fler än en kolumn ska du först markera en kolumn och sedan hålla ned **SKIFT**. Välj fler intilliggande kolumner och högerklicka på en kolumnrubrik för att ändra alla valda kolumner. Använd **CTRL** för välja kolumner som inte ligger intill varandra.
+Dessa resultat är text i stället för siffror och vi behöver siffror. Inga problem. Det är bara att högerklicka på kolumnrubriken och välja **Ändra typ**  > **Heltal** för att ändra dem. Om du vill välja fler än en kolumn ska du först markera en kolumn och sedan hålla ned Skift. Välj fler intilliggande kolumner och högerklicka på en kolumnrubrik för att ändra alla valda kolumner. Använd Ctrl för välja kolumner som inte ligger intill varandra.
 
-![](media/desktop-connect-to-data/designer_gsg_changedatatype.png)
+![Ändra datatypen till heltal](media/desktop-connect-to-data/designer_gsg_changedatatype.png)
 
-I **Frågeinställningarna** återspeglar **tillämpade steg** de ändringar som har gjorts. När du ändrar ytterligare data, antecknar frågeredigeraren ändringarna i området **Tillämpade steg** som du kan justera, besöka, ändra eller ta bort efter behov.
+I **Frågeinställningarna** återspeglar **TILLÄMPADE STEG** de ändringar som har gjorts. När du ändrar ytterligare data, antecknar Power Query-redigeraren ändringarna i området **TILLÄMPADE STEG** som du kan justera, besöka, ändra eller ta bort efter behov.
 
-![](media/desktop-connect-to-data/designer_gsg_appliedsteps_changedtype.png)
+![Tillämpade steg](media/desktop-connect-to-data/designer_gsg_appliedsteps_changedtype.png)
 
-Ytterligare ändringar i kan fortfarande göras i tabellen efter att den har lästs in, men detta räcker för tillfället. När det är klart vi väljer **Stäng & tillämpa** från den **Start**-menyfliksområdet och Power BI Desktop tillämpar våra ändringar och stänger frågeredigeraren.
+Ytterligare ändringar i kan fortfarande göras i tabellen efter att den har lästs in, men detta räcker för tillfället. När det är klart väljer du **Stäng & tillämpa** från den **Start**-menyfliksområdet och Power BI Desktop tillämpar våra ändringar och stänger Power Query-redigeraren.
 
-![](media/desktop-connect-to-data/connecttodata_closenload.png)
+![Stäng och tillämpa](media/desktop-connect-to-data/connecttodata_closenload.png)
 
 Med datamodellen har lästs in i **Rapportvyn** i Power BI Desktop kan vi börja skapa visualiseringar genom att dra fält till arbetsytan.
 
-![](media/desktop-connect-to-data/connecttodata_dragontoreportview.png)
+![Dra ett värde till arbetsytan](media/desktop-connect-to-data/connecttodata_dragontoreportview.png)
 
-Detta är förstås en enkel modell med en enkel dataanslutning. De flesta rapporterna i Power BI Desktop är kopplad till olika datakällor som har anpassats efter dina behov med relationer som skapar en omfattande datamodell. 
+Detta är förstås en enkel modell med en enkel dataanslutning. De flesta rapporterna i Power BI Desktop är kopplade till olika datakällor som har anpassats efter dina behov med relationer som skapar en omfattande datamodell.
 
 ## <a name="next-steps"></a>Nästa steg
 Det finns olika typer av saker som du kan göra med Power BI Desktop. Läs följande resurser för mer information om dess möjligheter:
 
 * [Vad är Power BI Desktop?](desktop-what-is-desktop.md)
-* [Frågeöversikt med Power BI Desktop](desktop-query-overview.md)
+* [Om att använda Frågeredigeraren i Power BI Desktop](desktop-query-overview.md)
 * [Datakällor i Power BI Desktop](desktop-data-sources.md)
 * [Forma och kombinera data i Power BI Desktop](desktop-shape-and-combine-data.md)
-* [Vanliga frågeuppgifter i Power BI Desktop](desktop-common-query-tasks.md)   
+* [Utföra vanliga frågeuppgifter i Power BI Desktop](desktop-common-query-tasks.md)   
 
-Vill du ge oss feedback? Toppen – använd menyalternativet **Skicka in en idé** i Power BI Desktop eller besök [Feedback från communityn](https://community.powerbi.com/t5/Community-Feedback/bd-p/community-feedback). Vi hoppas att få höra från dig!
+Vill du ge oss feedback? Toppen! Använd menyalternativet **Skicka in en idé** i Power BI Desktop eller besök [Feedback från communityn](https://community.powerbi.com/t5/Community-Feedback/bd-p/community-feedback). Vi hoppas att få höra från dig!
 
-![](media/desktop-connect-to-data/sendfeedback.png)
+![Skicka in en idé](media/desktop-connect-to-data/sendfeedback.png)
 

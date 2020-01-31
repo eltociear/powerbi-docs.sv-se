@@ -6,33 +6,33 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 01/21/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 131101d6e7a23b7c6d8571c89097036f1149a2f3
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 2c09f21565cdf9987aad2027a148823fb32e2e55
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75761552"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76539038"
 ---
 # <a name="get-webpage-data-by-providing-examples"></a>Hämta webbsidesdata genom att tillhandahålla exempel
 
-Hämtning av data från en webbplats låter användare enkelt extrahera data från webbsidor och importera dessa data till **Power BI Desktop**. Många gånger finns data på webbsidor dock inte i välvårdade tabeller som är lätta att extrahera så det kan bli en utmaning att hämta data från sådana sidor, även om de är strukturerade och konsekventa. 
+Hämtning av data från en webbplats låter användare enkelt extrahera data från webbsidor och importera dessa data till *Power BI Desktop*. Ofta är dock data för webbplatser inte organiserade i tydliga tabeller som är enkla att extrahera. Det kan vara svårt att hämta data från sådana sidor, även om data är strukturerade och konsekventa.
 
-Det finns en lösning. Med funktionen **Hämta data från webben efter exempel**, kan du i princip visa **Power BI Desktop** vilka data som du vill extrahera genom att ge ett eller flera exempel i anslutningsdialogrutan så samlar den in övriga data på sidan som matchar dina exempel. Med den här lösningen kan du extrahera alla typer av data från webbsidor, inklusive data som hittats i tabeller *och* andra icke-tabelldata. 
+Det finns en lösning. Med funktionen *Hämta data från webben efter exempel* kan du i princip visa för Power BI Desktop vilka data som du vill extrahera genom att ange ett eller flera exempel i dialogrutan för anslutningsprogram. Power BI Desktop samlar in andra data på sidan som matchar dina exempel. Med den här lösningen kan du extrahera alla typer av data från webbsidor, inklusive data som hittats i tabeller *och* andra icke-tabelldata.
 
 ![Hämta data från webben efter exempel](media/desktop-connect-to-web-by-example/web-by-example_01.png)
 
-
+Priserna i bilderna är endast exempel.
 
 ## <a name="using-get-data-from-web-by-example"></a>Använd Hämta data från webben efter exempel
 
-Om du vill använda **Hämta data från webben efter exempel** väljer du **Hämta data** från menyfliksområdet **Start**. I fönstret som visas väljer du **Övrigt** från kategorier i det vänstra fönstret och väljer sedan **Webb**.
+Välj **Hämta data** från menyfliksområdet **Start**. I den dialogruta som visas väljer du **Annat** från kategorierna i det vänstra fönstret och väljer sedan **Webb**. Välj **Anslut** för att fortsätta.
 
 ![välj Webb från Hämta data](media/desktop-connect-to-web-by-example/web-by-example_03.png)
 
-Därifrån anger du URL för den webbsida som du vill extrahera data från. I den här artikeln använder vi Microsoft Store-webbplatsen och visar hur den här anslutningsappen fungerar. 
+I **Från webben** anger du URL:en för den webbplats som du vill extrahera data från. I den här artikeln använder vi Microsoft Store-webbplatsen och visar hur det här anslutningsprogrammet fungerar.
 
 Om du vill följa med, kan du använda den [Microsoft Store-URL](https://www.microsoft.com/store/top-paid/games/xbox?category=classics) som vi använder i den här artikeln:
 
@@ -40,34 +40,33 @@ Om du vill följa med, kan du använda den [Microsoft Store-URL](https://www.mic
 
 ![Webbdialog](media/desktop-connect-to-web-by-example/web-by-example_04.png)
 
-När du väljer **OK**, tas du till dialogrutan **Navigator** där alla automatiskt identifierade tabeller från webbsidan visas. I exemplet i bilden nedan hittades inga tabeller, men det finns en knapp längst ned på sidan som heter **Extrahera tabell med exempel** där du kan ange exempel.
-
+När du väljer **OK** öppnas dialogrutan **Navigatör**, där alla automatiskt identifierade tabeller från webbplatsen visas. I det fall som visas i bilden nedan hittades inga tabeller. Välj **Lägg till tabell med hjälp av exempel** för att ange exempel.
 
 ![Navigatorfönstret](media/desktop-connect-to-web-by-example/web-by-example_05.png)
 
-Om du väljer **Extrahera tabell med exempel** så får du upp ett interaktivt fönster där du kan förhandsgranska innehållet på Webbsidor och ange exempelvärden för de data som du vill extrahera. 
+**Lägg till tabell med hjälp av exempel** visar ett interaktivt fönster där du kan förhandsgranska innehållet för webbplatsen. Ange exempelvärden för de data som du vill extrahera.
 
-I det här exemplet ska vi extrahera *Namn* och *Pris* för varje spel på sidan. Vi kan göra det genom att ange några exempel från sidan för varje kolumn, som visas i följande bild. Allteftersom exemplen skrivs in, kan **Power Query** (som är den underliggande teknik som hämtar data från webbsidan) extrahera data som passar mönstret för exempelposterna med hjälp av algoritmer för smart dataextrahering.
+I det här exemplet ska vi extrahera *Namn* och *Pris* för varje spel på sidan. Vi kan göra det genom att ange några exempel från sidan för varje kolumn. När du anger exempel extraherar *Power Query* data som passar mönstret för exempelposter med hjälp av algoritmer för smart dataextrahering.
 
 ![data efter exempel](media/desktop-connect-to-web-by-example/web-by-example_06.png)
 
-> OBS! Värdeförslagen innehåller endast värden som är mindre än eller lika med 128 tecken.
+> [!NOTE]
+> Värdeförslagen innehåller endast värden som är mindre än eller lika med 128 tecken.
 
-När vi är nöjda med de data som hämtats från webbsidan, väljer vi **OK** för att gå till **Frågeredigeraren**, där vi kan använda fler transformationer eller forma data, till exempel kombinera de med andra data från våra källor.
+När du är nöjd med de data som extraheras från webbplatsen väljer du **OK** för att gå till Power Query-redigeraren. Du kan tillämpa fler transformationer eller forma data, till exempel kombinera dessa data med andra datakällor.
 
 ![data efter exempel](media/desktop-connect-to-web-by-example/web-by-example_07.png)
 
-Därifrån kan du kan skapa visuell information eller på annat sätt använda webbsidans data när du skapar dina **Power BI Desktop**-rapporter.
-
+Därifrån kan du kan skapa visuella objekt eller på annat sätt använda webbplatsens data när du skapar Power BI Desktop-rapporter.
 
 ## <a name="next-steps"></a>Nästa steg
-Det finns en mängd olika typer av data du kan ansluta till med **Power BI Desktop**. Kolla in följande resurser för mer information om datakällor:
 
-* [Lägg till kolumn efter exempel](desktop-add-column-from-example.md)
-* [Anslut till en webbsida](desktop-connect-to-web.md)
+Det finns alla möjliga sorters data du kan ansluta till med Power BI Desktop. Kolla in följande resurser för mer information om datakällor:
+
+* [Lägg till en kolumn från ett exempel i Power BI Desktop](desktop-add-column-from-example.md)
+* [Ansluta till webbplatser från Power BI Desktop](desktop-connect-to-web.md)
 * [Datakällor i Power BI Desktop](desktop-data-sources.md)
 * [Forma och kombinera data i Power BI Desktop](desktop-shape-and-combine-data.md)
-* [Anslut till Excel-arbetsböcker i Power BI Desktop](desktop-connect-excel.md)   
-* [Anslut till CSV-filer i Power BI Desktop](desktop-connect-csv.md)   
-* [Ange data direkt i Power BI Desktop](desktop-enter-data-directly-into-desktop.md)   
-
+* [Anslut till Excel-arbetsböcker i Power BI Desktop](desktop-connect-excel.md)
+* [Anslut till CSV-filer i Power BI Desktop](desktop-connect-csv.md)
+* [Ange data direkt i Power BI Desktop](desktop-enter-data-directly-into-desktop.md)

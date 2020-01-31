@@ -1,27 +1,27 @@
 ---
-title: Komma igång med färgformatering och axelegenskaper
-description: Komma igång med färgformatering och axelegenskaper
+title: Kom igång med formatering av rapportvisualiseringar
+description: Kom igång med användning av formateringsalternativen med rapportvisualiseringar
 author: mihart
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/06/2018
+ms.date: 12/14/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 7eded3d17e0db5894bd2f1a03fae49357eb27c69
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: b42d83b4cea6f5f5e8908244b2b298dc3f327468
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75762265"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76540644"
 ---
-# <a name="get-started-with-color-formatting-and-axis-properties"></a>Komma igång med färgformatering och axelegenskaper
-I **Power BI** kan du ändra färg på dataserier, datapunkter och även visualiseringarnas bakgrund. Du kan också ändra hur x- och y-axeln visas, vilket ger dig fullständig kontroll över hur dina instrumentpaneler och rapporter visas.
+# <a name="getting-started-with-the-formatting-pane"></a>Kom igång med formateringsfönstret
+Om du har redigeringsbehörighet för en rapport finns det ett flertal formateringsalternativ. I **Power BI**-rapporter kan du ändra färg på dataserier, datapunkter och även visualiseringarnas bakgrund. Du kan ändra presentationen av x-axeln och y-axeln. Du kan till och med formatera teckensnittsegenskaper för visualiseringar, former och rubriker, vilket ger dig fullständig kontroll över hur dina rapporter visas.
 
-Kom igång genom att markera en **rapport** i fönstret **Min arbetsyta**. Välj sedan **Redigera rapport** på menyn högst upp.  
+Kom igång genom att öppna en rapport i Power BI Desktop eller Power BI-tjänsten. Båda alternativen ger nästan identiska formateringsalternativ. När du öppnar en rapport i Power BI-tjänsten ska du välja **Redigera rapport** på menyraden.  
 
-![](media/service-getting-started-with-color-formatting-and-axis-properties/gettingstartedcolor_1a.png)
+![menyrad som visar alternativet Redigera](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-edit.png)
 
 När du redigerar en rapport och du har en vald visualisering visas fönstret **Visualiseringar**, där du kan lägga till eller ändra visualiseringar. Direkt under de tillgängliga visualiseringarna finns tre ikoner: **fältikonen** (en stack med staplar), **formatikonen** (en roller) och **analysikonen** (ett förstoringsglas). På bilden nedan har **fältikonen** valts, vilket indikeras med ett gult fält under ikonen.
 

@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/16/2019
+ms.date: 01/22/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: c3f703bfe2685166ce575b37c053b2a9603a799f
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: e91900632b7cf470cd91923ca9ec871247c154ba
+ms.sourcegitcommit: a1409030a1616027b138128695b80f6843258168
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75223886"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76710187"
 ---
 # <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage"></a>Ansluta Azure Data Lake Storage Gen2 för lagring av dataflöde
 
@@ -45,7 +45,7 @@ Innan du kan konfigurera Power BI med ett Azure Data Lake Storage Gen2-konto, m�
 1. Storage-kontot måste skapas i samma Microsoft Azure Active Directory-klient som Power BI-klienten.
 2. Storage-kontot måste skapas i samma-region som Power BI-klienten. Om du vill ta reda på var din Power BI-klientorganisation finns kan du läsa [Var finns min Power BI-klientorganisation?](service-admin-where-is-my-tenant-located.md).
 3. Lagringskontot måste ha funktionen *Hierarkiskt namnområde* aktiverad.
-4. Power BI-tjänsten måste beviljas en roll som *Läsare* på lagringskontot.
+4. Power BI-tjänsten måste beviljas rollerna *Läsare* och *Dataåtkomst* på lagringskontot.
 5. Ett filsystem med namnet **powerbi** måste skapas.
 6. Power BI-tjänster måste ha behörighet till filsystemet **powerbi** som du skapar.
 
@@ -59,16 +59,13 @@ Följ stegen i artikeln [Skapa ett lagringskonto i Azure Data Lake Storage Gen2]
 2. Kontrollera att du aktiverar funktionen för hierarkiskt namnrymd
 3. Vi rekommenderar att ställa in inställningen för lagringsreplikering på **Read-access geo-redundant-lagring (RA-GRS)**
 
-### <a name="grant-the-power-bi-service-a-reader-role"></a>Bevilja Power BI-tjänsten en läsarroll
+### <a name="grant-the-power-bi-service-reader-and-data-access-roles"></a>Bevilja Power BI-tjänsten rollerna Läsare och Dataåtkomst
 
-Därefter måste du ge Power BI-tjänsten en läsarroll i ditt skapade lagringskonto. Det är en inbyggd roll så stegen är enkla. 
+Därefter behöver du bevilja Power BI-tjänsten rollerna Läsare och Dataåtkomst i ditt skapade lagringskonto. De här rollerna är inbyggda, och därför är stegen enkla. 
 
 Följ stegen i [Tilldela en inbyggd RBAC-roll](https://docs.microsoft.com/azure/storage/common/storage-auth-aad-rbac#assign-a-built-in-rbac-role).
 
-I fönstret **Lägg till rolltilldelning** väljer du rollen **Läsare** för att tilldela Power BI-tjänsten. Använd sedan sökfunktionen för att hitta **Power BI-tjänsten**. Följande bild visar rolltilldelningen **Läsare** för Power BI-tjänsten.
-
-![Power BI-tjänsten som tilldelats till rollen Läsare](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_05.jpg)
-
+I fönstret **Lägg till rolltilldelning** väljer du rollen **Läsare** och **Dataåtkomst** som ska tilldelas till Power BI-tjänsten. Använd sedan sökfunktionen för att hitta **Power BI-tjänsten**. 
 
 > [!NOTE]
 > Låt minst 30 minuter gå för att behörighet ska spridas till Power BI från portalen. När du ändrar behörigheter i portalen behöver du låta 30 minuter gå så att de behörigheterna återspeglas i Power BI. 

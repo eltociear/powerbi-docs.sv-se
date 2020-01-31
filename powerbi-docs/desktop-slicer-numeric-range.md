@@ -6,27 +6,29 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/19/2019
+ms.date: 01/17/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 535dbe2b1765d788e59d928f7303ce4696aa163b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 0fcc666febb4444b5ee83a1646e1e0c3ef9c6d82
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879683"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76539312"
 ---
 # <a name="use-the-numeric-range-slicer-in-power-bi-desktop"></a>Använd numeriska intervallutsnitt i Power BI Desktop
-Med numeriska intervallutsnitt kan du använda alla typer av filter på en numerisk kolumn i datamodellen. Det finns tre alternativ för att filtrera numeriska data: mellan tal, mindre än eller lika med ett tal eller större än eller lika med ett tal. Det här låter kanske simpelt, men det är ett kraftfullt sätt att filtrera data.
+
+Med numeriska intervallutsnitt kan du använda alla typer av filter på en numerisk kolumn i datamodellen. Det finns tre alternativ för att filtrera numeriska data: mellan tal, mindre än eller lika med ett tal eller större än eller lika med ett tal. Den här enkla tekniken är ett kraftfullt sätt att filtrera data.
 
 ![Visuellt objekt med numeriskt intervallutsnitt](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-0.png)
 
 ## <a name="use-the-numeric-range-slicer"></a>Använda numeriskt intervallutsnitt
+
 Du kan använda det numeriska intervallutsnittet precis som andra utsnitt. Skapa bara en **utsnittsvisualisering** för rapporten och välj sedan ett numeriskt värde för värdet **Fält**. I följande bild har vi markerat fältet **LineTotal**.
 
 ![Skapa ett numeriskt intervallutsnitt](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-1-create.png)
 
-Välj nedåtpilslänken i det övre högra hörnet på det **numeriska intervallutsnittet** för att visa en meny.
+Välj nedåtpilen i det övre högra hörnet i utsnittet för numeriska intervall för att visa en meny.
 
 ![Meny för numeriskt intervallutsnitt](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-2-between.png)
 
@@ -36,7 +38,7 @@ För det numeriska intervallet kan du välja bland följande tre alternativ:
 * **Mindre än eller lika med**
 * **Större än eller lika med**
 
-När du väljer **Mellan** från menyn visas ett skjutreglage. Du kan använda skjutreglaget för att välja numeriska värden som infaller mellan talen. Ibland gör kornigheten när du flyttar utsnittets skjutreglage att det är svårt att hamna på exakt det talet. Du kan även använda skjutreglaget och markera antingen rutan för att skriva in de värden som vi vill ha. Det här alternativet är praktiskt när du vill göra utsnitt med vissa tal. 
+När du väljer **Mellan** från menyn visas ett skjutreglage. Du kan använda skjutreglaget för att välja numeriska värden som infaller mellan talen. Ibland gör kornigheten när du flyttar utsnittets skjutreglage att det är svårt att hamna på exakt det talet. Du kan även använda skjutreglaget och markera antingen rutan för att skriva in de värden som vi vill ha. Det här alternativet är praktiskt när du vill göra utsnitt med vissa tal.
 
 I följande bild filtrerar rapportsidan för **LineTotal**-värden i intervallet 2500,00 till 6000,00.
 
@@ -52,19 +54,20 @@ Om du väljer **Större än eller lika med** försvinner skjutreglagets högra k
 
 ## <a name="snap-to-whole-numbers-with-the-numeric-range-slicer"></a>Fäst till heltal med utsnitt med numeriska intervall
 
-Ett utsnitt för ett numeriskt intervall hoppar till heltal om datatypen för det underliggande fältet är **Heltal**. Den här funktionen gör att utsnittet justeras korrekt till heltal. I fälten för **Decimaltal** kan du skriva in eller välja decimaler för ett tal. Den formatering som används anges i textrutan matchar den formatering som definierats för fältet, men du kan skriva in eller välja mer exakta siffror.
+Ett utsnitt för ett numeriskt intervall hoppar till heltal om datatypen för det underliggande fältet är *Heltal*. Den här funktionen gör att utsnittet justeras korrekt till heltal. I fälten för *Decimaltal* kan du skriva in eller välja decimaler för ett tal. Den formatering som används anges i textrutan matchar den formatering som definierats för fältet, men du kan skriva in eller välja mer exakta siffror.
 
 ## <a name="display-formatting-with-the-date-range-slicer"></a>Visa formatering med datumintervallutsnittet
 
-När du använder ett utsnitt för att visa eller ange ett datumintervall visas datumen i formatet **Kort datum**. De nationella inställningarna i användarens webbläsare eller operativsystem avgör datumformatet. Därmed blir det visningsformatet oavsett vad vilka datatypsinställningar som gäller för underliggande data eller modell. 
+När du använder ett utsnitt för att visa eller ange ett datumintervall visas datumen i formatet *Kort datum*. De nationella inställningarna i användarens webbläsare eller operativsystem avgör datumformatet. Därmed blir det visningsformatet oavsett vad vilka datatypsinställningar som gäller för underliggande data eller modell.
 
 Du kan till exempel ha ett långt datum format för den underliggande datatypen. I det här fallet skulle ett dataformat som *dddd, MMMM d, åååå* formatera ett datum i andra visuella objekt eller kontexter till *Onsdag 14 mars 2001*. Men i datumintervallets utsnitt visas det datumet i utsnittet som *03/14/2001*.
 
-Om du visar formatet **Kort datum** i utsnittet ser du till att längden på strängen är konsekvent och kompakt i utsnittet. 
+Om du visar formatet Kort datum i utsnittet ser du till att längden på strängen är konsekvent och kompakt i utsnittet.
 
 ## <a name="limitations-and-considerations"></a>Begränsningar och överväganden
-Följande begränsningar och överväganden gäller för **utsnittet för numeriska intervall**:
 
-* **Utsnittet för numeriska intervall** filtrerar varje underliggande rad i data, inte aggregerade värden. Anta till exempel att du använder ett fält som heter *Försäljningsbelopp*. Utsnittet filtrerar sedan varje transaktion baserat på försäljningsbeloppet, inte summan av försäljningsbeloppet för varje datapunkt i ett visuellt objekt.
+Följande begränsningar och överväganden gäller för utsnittet för numeriska intervall:
+
+* Utsnittet för numeriska intervall filtrerar varje underliggande rad i data, inte aggregerade värden. Anta till exempel att du använder ett fält som heter *Försäljningsbelopp*. Utsnittet filtrerar sedan varje transaktion baserat på försäljningsbeloppet, inte summan av försäljningsbeloppet för varje datapunkt i ett visuellt objekt.
 * Det fungerar för närvarande inte med mått.
-* Du kan ange ett tal i textrutorna i ett numeriskt utsnitt, även om det ligger utanför den underliggande kolumnens värdeintervall. Med det här alternativet kan du ange filter om du vet att dina data kan komma att ändras i framtiden.
+* Du kan ange valfritt tal i ett numeriskt utsnitt, även om det ligger utanför den underliggande kolumnens värdeintervall. Med det här alternativet kan du ange filter om du vet att dina data kan komma att ändras i framtiden.

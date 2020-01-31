@@ -7,30 +7,28 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 11/07/2019
-ms.openlocfilehash: f797dd55202ff4cba87cc3a15601d85091e94823
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 1f54ce3a6bfd69caa3f386b7684e3df7f725523d
+ms.sourcegitcommit: a1409030a1616027b138128695b80f6843258168
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74164055"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76709539"
 ---
 # <a name="connect-a-report-to-a-dataset-using-dynamic-binding"></a>Ansluta en rapport till en datamängd med hjälp av dynamisk bindning 
 
-När en rapport är ansluten till en datamängd kan du använda dynamisk bindning. Anslutningen mellan rapporten och datamängden kallas *bindning*. När bindningen fastställs vid inbäddningen, i stället för att vara fördefinierad från tidigare, kallas bindningen för en [dynamisk bindning](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FLate_binding&data=02%7C01%7CKesem.Sharabi%40microsoft.com%7C5d5b0d2d62cf4818f0c108d7635b151e%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637087115150775585&sdata=AbEtdJvgy4ivi4v4ziuui%2Bw2ibTQQXBQNYRKbXn5scA%3D&reserved=0).
- 
+När en rapport är ansluten till en datamängd kan du använda dynamisk bindning. Anslutningen mellan rapporten och datamängden kallas *bindning*. När bindningen fastställs vid inbäddningen, i stället för att vara fördefinierad från tidigare, kallas bindningen för en dynamisk bindning.
+
 När du bäddar in en Power BI-rapport med *dynamisk bindning* kan du ansluta samma rapport till olika datamängder beroende på användarens autentiseringsuppgifter.
- 
+
 Det innebär att du kan använda en rapport och visa olika information beroende på den datamängd som rapporten är ansluten till. En rapport som visar en återförsäljares försäljningsvärden kan till exempel anslutas till olika datamängder för återförsäljaren och ge olika resultat beroende på den datamängd för återförsäljaren den är ansluten till.
- 
+
 Rapporten och datamängden behöver inte ligga i samma arbetsyta. Båda arbetsytorna (den som innehåller rapporten och den som innehåller datamängden) måste tilldelas till en [kapacitet](azure-pbie-create-capacity.md).
 
 Se till att du som en del av inbäddningsprocessen *genererar en token med tillräckliga behörigheter*och *justerar konfigurationsobjektet*.
 
-
 ## <a name="generating-a-token-with-sufficient-permissions"></a>Generera en token med tillräckliga behörigheter
 
 Dynamisk bindning stöds för både scenariot *Inbäddning för din organisation* och scenariot *Inbäddning för dina kunder*. I tabellen nedan beskrivs överväganden för respektive scenario.
-
 
 |Scenario  |Dataägarskap  |Token  |Krav  |
 |---------|---------|---------|---------|

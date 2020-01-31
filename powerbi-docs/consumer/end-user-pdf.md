@@ -7,15 +7,15 @@ ms.reviewer: cmfinlan
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 11/27/2019
+ms.date: 1/16/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 9e00e68e0a5f6df62072a1d9744276bffbd3beb4
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 4570fea58a19acb4f35a5c24d0a5bfa93beba215
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74791656"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76537564"
 ---
 # <a name="export-reports-from-power-bi-to-pdf"></a>Exportera rapporter från Power BI till PDF
 
@@ -63,6 +63,7 @@ Det finns några överväganden och begränsningar som du bör tänka på när d
 * URL-filter respekteras för närvarande inte när du väljer **Aktuella värden** för exporten.
 * Rapporter med ovanliga anpassade sidstorlekar kan ge problem i exportscenarier. För bästa resultat bör du överväga att byta till en standardstorlek för rapporten.
 * När du exporterar till PDF så används standardteckensnitt för rapporter med anpassade teckensnitt.
+* Vi försöker ge en konsekvent upplevelse, men vi kan inte garantera att den exporterade PDF-filen från Power BI-tjänsten alltid matchar den exporterade PDF-filen från en lokal Power BI Desktop-fil.
 
 ## <a name="next-steps"></a>Nästa steg
 [Skriva ut en rapport](end-user-print.md)

@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/15/2019
+ms.date: 01/23/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8bbf391135442d6490033c0fc65b7372154820d2
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: e3e9e8ebc7feda46cb4c79ffd1535807d04a178b
+ms.sourcegitcommit: a1409030a1616027b138128695b80f6843258168
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73866435"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76709769"
 ---
 # <a name="use-performance-analyzer-to-examine-report-element-performance"></a>Använd Prestandaanalys till att undersöka prestandan för rapportelement
 
@@ -58,6 +58,9 @@ Varje visuellt objekts logginformation inkluderar den tid som använts (varaktig
 * **Visuell framställning** – Den tid det tog att rita det visuella objektet på skärmen, inklusive den tid som krävdes för att hämta eventuella webbilder eller geokodning. 
 * **Övrigt** – Den tid som krävs av det visuella objektet för att förbereda frågor, vänta på att andra visuella objekt ska slutföras eller utföra annan bakgrundsbearbetning.
 
+Värdena i **Varaktighet (ms)** anger skillnaden mellan en *start-* och *sluttidsstämpel* för varje åtgärd. De flesta arbetsytor och visuella åtgärder körs sekventiellt i en enda användargränssnittstråd, som delas av flera åtgärder. De rapporterade varaktigheterna innefattar tidsåtgång för kö medan andra åtgärder slutförs. [Prestandaanalys-exempel](https://github.com/microsoft/powerbi-desktop-samples/tree/master/Performance%20Analyzer) på GitHub och tillhörande [dokumentation](https://github.com/microsoft/powerbi-desktop-samples/blob/master/Performance%20Analyzer/Power%20BI%20Performance%20Analyzer%20Export%20File%20Format.docx) ger information om hur visuella data ska frågas och hur de återges.
+
+
 ![element i logginformation](media/desktop-performance-analyzer/performance-analyzer-06.png)
 
 När du har interagerat med de element i rapporten som du vill mäta med Prestandaanalys kan du välja knappen **Stopp**. Prestandainformationen som ska analyseras finns kvar i fönstret när du har valt **Stopp**.
@@ -89,3 +92,7 @@ För mer information om **Power BI Desktop**, och hur du kommer igång, ta en ti
 * [Forma och kombinera data i Power BI Desktop](desktop-shape-and-combine-data.md)
 * [Vanliga frågeuppgifter i Power BI Desktop](desktop-common-query-tasks.md)   
 
+Information prestandaanalys-exemplet finns i följande resurser.
+
+* [Prestandaanalys-exempel](https://github.com/microsoft/powerbi-desktop-samples/tree/master/Performance%20Analyzer)
+* [Dokumentation om prestandaanalys-exempel](https://github.com/microsoft/powerbi-desktop-samples/blob/master/Performance%20Analyzer/Power%20BI%20Performance%20Analyzer%20Export%20File%20Format.docx)

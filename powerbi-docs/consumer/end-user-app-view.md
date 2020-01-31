@@ -6,15 +6,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/31/2019
+ms.date: 1/22/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 0b581b9c45cb75d12eea974c0895474015634eb1
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 0733e726512ff52c5b51ba2d25cea18f8857f1e8
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73851294"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76537627"
 ---
 # <a name="install-and-use-apps-with-dashboards-and-reports-in-power-bi"></a>Installera och använda appar med instrumentpaneler och rapporter i Power BI
 
@@ -48,12 +48,13 @@ Du hittar även och kan installera appar i Microsoft AppSource. Det är bara app
 1. Välj **Appar**  > **Hämta appar**. 
    
     ![Ikonen Hämta appar](./media/end-user-app-view/power-bi-get-app2.png)    
-2. I AppSource under **Min organisation** kan du söka för att begränsa resultaten och hitta den apn som du letar efter.
+2. I AppSource under **Min organisation** kan du söka för att begränsa resultaten och hitta den app som du letar efter.
    
     ![I AppSource under Min organisation](./media/end-user-app-view/power-bi-opportunity-app.png)
 3. Välj **Hämta den nu** om du vill lägga till den i din innehållslista i Appar. 
 
-## <a name="get-an-app-from-the-microsoft-appsource-website-httpsappsourcemicrosoftcom"></a>Hämta en app från webbplatsen Microsoft AppSource (https://appsource.microsoft.com)
+## <a name="get-an-app-from-the-microsoft-appsource-website"></a>Hämta en app från Microsoft AppSource-webbplatsen 
+
 I det här exemplet öppnar vi en av Microsofts exempelappar. På AppSource hittar du appar för många av de tjänster som du använder för att bedriva din verksamhet.  Tjänster som Salesforce, Microsoft Dynamics, Google Analytics, GitHub, Zendesk, Marketo och många fler. Mer information finns i [Appar för tjänster du använder med Power BI](../service-connect-to-services.md). 
 
 1. Öppna https://appsource.microsoft.com i en webbläsare och välj **Power BI-appar**.
@@ -92,12 +93,36 @@ I det här exemplet öppnar vi en av Microsofts exempelappar. På AppSource hitt
     ![Utforska med exempeldata](./media/end-user-apps/power-bi-new-app.png)
 
 
-
-
 ## <a name="interact-with-the-dashboards-and-reports-in-the-app"></a>Interagera med instrumentpaneler och rapporter i appen
 Ägna en stund åt att utforska data på de instrumentpaneler och i de rapporter som ingår i appen. Du har åtkomst till alla Power BI-standardinteraktioner som filtrering, syntaxmarkering, sortering och detaljinformation.  Är du fortfarande lite osäker på skillnaden mellan instrumentpaneler och rapporter?  Läs [artikeln om instrumentpaneler](end-user-dashboards.md) och [artikeln om rapporter](end-user-reports.md).  
 
+## <a name="update-an-app"></a>Uppdatera en app 
 
+Ibland kan appskapare släppa nya versioner av sina appar. Ditt sätt att skaffa den nya versionen beror på hur du fick den ursprungliga versionen. 
+
+* Om du fick appen från din organisation är uppdateringen av den nya versionen helt transparent – du behöver inte göra något. 
+
+* Om du fick appen från AppSource visas en meddelandebanderoll nästa gång du öppnar appen. Meddelandet handlar om att en ny version är tillgänglig. 
+
+    1. Välj **Hämta** för att uppdatera.  
+
+        <!--![App update notification](./media/end-user-app-view/power-bi-new-app-version-notification.png) -->
+
+    2. När du uppmanas att installera den uppdaterade appen väljer du **Installera**. 
+
+        ![Installera uppdatering](./media/end-user-app-view/power-bi-install.png) 
+
+    3. Eftersom du redan har en version av den här appen väljer du om du vill ersätta den befintliga versionen eller installera den uppdaterade appen på en ny arbetsyta.   
+
+        ![Skriva över gammal appversion](./media/end-user-app-view/power-bi-already-installed.png) 
+
+
+    > [!NOTE] 
+    > När du installerar en ny version skrivs alla ändringar du har gjort av rapporter och instrumentpaneler över. Om du vill behålla dina uppdaterade rapporter och instrumentpaneler kan du spara dem med ett annat namn eller på en annan plats innan du installerar. 
+
+    4. När du har installerat den uppdaterade versionen väljer du **Uppdatera app** för att slutföra uppdateringsprocessen. 
+
+    <!--![Update app](./media/end-user-app-view/power-bi-new-app-version-update-app.png) -->
 
 
 ## <a name="next-steps"></a>Nästa steg

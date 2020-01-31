@@ -3,17 +3,17 @@ title: API:et för lokal lagring i visuella Power BI-objekt
 description: I den här artikeln beskrivs hur du använder visuella objekt i Power BI för åtkomst till webbläsarens lokala lagring
 author: uve
 ms.author: v-grniki
-ms.reviewer: sranins
+ms.reviewer: KesemSharabi
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 10/31/2019
-ms.openlocfilehash: f69a3c8928b8079f79b8a6dd5f5b132235a7089c
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 01/21/2019
+ms.openlocfilehash: 85517fcd7ec773f947135614c94c0c4e4638ea48
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879893"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76539335"
 ---
 # <a name="local-storage-api"></a>API för lokal lagring
 
@@ -59,4 +59,5 @@ export class Visual implements IVisual {
 
 ## <a name="known-limitations-and-issues"></a>Kända begränsningar och problem
 
-API:et för lokal lagring är inte aktiverat för anpassade visuella objekt som standard. Om du vill aktivera det för ditt anpassade visuella objekt skickar du begäran till supporten för Power BI Custom Visuals `pbicvsupport@microsoft.com`
+API:et för lokal lagring är inte aktiverat för anpassade visuella objekt som standard. Om du vill aktivera det för ditt anpassade visuella objekt skickar du begäran till supporten för Power BI Custom Visuals `pbicvsupport@microsoft.com`.  
+**Observera att det visuella objektet ska vara tillgängligt i [AppSource](https://appsource.microsoft.com/en-us/marketplace/apps?product=power-bi-visuals) och vara [certifierat](https://powerbi.microsoft.com/en-us/documentation/powerbi-custom-visuals-certified/).**

@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/26/2019
 ms.author: tebercov
-ms.openlocfilehash: a9f589a5e840e95e349ec303b42b30568820e8b3
-ms.sourcegitcommit: ef9ab7c0d84b926094c33e8aa2765cd43b844314
+ms.openlocfilehash: 632c1f1a9f0cba3f403cae4a471df6b7e699f481
+ms.sourcegitcommit: a1409030a1616027b138128695b80f6843258168
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75622463"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76710163"
 ---
 # <a name="tips-for-authoring-template-apps-in-power-bi"></a>Tips för att skapa mallappar i Power BI
 
@@ -134,6 +134,17 @@ Mallapparna stöder bara appar med exempeldata så var noga med att markera krys
 * Se till att ta bort alla onödiga anslutningar innan du laddar upp din pbix till mallarbetsytan.
 * Följ Power BI:s [Designmetodtips för rapporter och visuella objekt](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-best-practices) för att få högsta inverkan på användarna och bli godkänd för distribution.
 <!--- * In general, only application with valuable functionality can be approved for general use on AppSource. Application with sample data content only must have either a guidance or statistical value.) -->
+
+## <a name="create-a-download-link-for-the-app"></a>Skapa en nedladdningslänk för appen
+
+När du har publicerat mallappen på AppSource ska du överväga att skapa en nedladdningslänk från webbplatsen till antingen:
+* AppSource-nedladdningssidan – kan ses offentligt, hämta länken från din AppSource-sida.
+* Power BI – kan visas av en Power BI-användare.
+
+För att kunna omdirigera en användare till appens nedladdningslänk i Power BI kan du titta på följande kodexempel: [GitHub-lagringsplats](https://github.com/microsoft/Template-apps-examples/tree/master/src).
+[![Nedladdningslänk till app](media/service-template-apps-tips/service-template-apps-tips-download.png)](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.pbiapps-github)
+
+
 
 ## <a name="known-limitations"></a>Kända begränsningar
 

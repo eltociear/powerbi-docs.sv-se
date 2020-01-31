@@ -7,15 +7,15 @@ featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/30/2019
+ms.date: 01/22/2020
 ms.author: mihart
 LocalizationGroup: Consumers
-ms.openlocfilehash: 0e8a3ce01356804aa5dcca21895fa01b5908ebd0
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 27128618fc594a8b7259a3de3862c6766eaecd86
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73851320"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76537535"
 ---
 # <a name="export-data-from-a-visual"></a>Exportera data från ett visuellt objekt
 
@@ -31,15 +31,18 @@ Om du vill se de data som används i en visualisering [kan du visa dessa data i 
 
 2. Hovra över ett visuellt objekt för att visa **Fler alternativ** (...) och klicka på det för att visa åtgärdsmenyn.
 
-    ![Meny som visas när du väljer ellipserna](media/end-user-export/power-bi-action-menu.png)
+    ![Meny som visas när du väljer ellipserna](media/end-user-export/power-bi-options-menu.png)
 
-3. Välj **Exportera till Excel**.
+3. Välj **Exportera till .csv**.
 
 4. Vad som händer härnäst beror på vilken webbläsare du använder. Du kan uppmanas att spara filen eller så kan en länk till den exporterade filen visas längst ned i webbläsaren. 
 
     ![Chrome-webbläsare som visar exporterad fillänk](media/end-user-export/power-bi-dashboard-exports.png)
 
-5. Öppna filen i Excel.  
+5. Öppna filen i Excel. 
+
+    > [!NOTE]
+    > Om du inte har behörighet till data kan du inte exportera eller öppna filen i Excel.  
 
     ![Summa enheter hittils i år i Excel](media/end-user-export/power-bi-excel.png)
 
@@ -53,27 +56,30 @@ Du kan exportera data från en visualisering i en rapport som .csv- eller .xlsx-
 
     Eftersom den här panelen skapades från exempelrapporten *Försäljning och marknadsföring* öppnas den rapporten. Och den öppnas på sidan som innehåller den valda visualiseringen. 
 
-2. Välj panelen i rapporten. Expandera fönstret **Filter** till höger. Den här visualiseringen har tillämpade filter. Mer information om filter finns i [Använda filter i en rapport.](end-user-report-filter.md)
+2. Välj visualiseringen i rapporten. Expandera fönstret **Filter** till höger. Den här visualiseringen har tillämpade filter. Mer information om filter finns i [Använda filter i en rapport.](end-user-report-filter.md)
 
     ![Filterfönstret har valts](media/end-user-export/power-bi-export-filter.png)
 
 
-3. Välj ellipserna i det övre högra hörnet i visualiseringen. Välj **Exportera data**.
+3. Välj **Fler alternativ (...)** uppe till höger i visualiseringen. Välj **Exportera data**.
 
     ![Markerade exporterade data från listrutan](media/end-user-export/power-bi-export-report.png)
 
 4. Du ser alternativ för att exportera sammanfattade data eller underliggande data. Om du använder exempelappen *Försäljning och marknadsföring* inaktiveras **Underliggande data**. Men du kan stöta på rapporter där båda alternativen är aktiverade. Här förklaras skillnaden.
 
-    **Sammanfattade data**: Välj det här alternativet om du vill exportera data för det som visas i visualiseringen.  Den här typen av export visar bara de data som använts för att skapa visualiseringen. Om visualiseringen har filter tillämpat kommer även de data du exporterar att filtreras. Till exempel, i den här visualiseringen kommer din export endast att innehålla data för 2014 och den centrala regionen, och endast data för fyra av tillverkarna: VanArsdel, Natura, Aliqui och Pirum.
+    **Sammanfattade data**: Välj det här alternativet om du vill exportera data för det som för närvarande visas i visualiseringen.  Den här typen av export visar bara de data som använts för att skapa det aktuella tillståndet för visualiseringen. Om visualiseringen har filter tillämpat kommer även de data du exporterar att filtreras. Till exempel, i den här visualiseringen kommer din export endast att innehålla data för 2014 och den centrala regionen, och endast data för fyra av tillverkarna: VanArsdel, Natura, Aliqui och Pirum. Om ditt visuella objekt har aggregeringar (summa, medelvärde osv.) aggregeras även exporten. 
   
 
-    **Underliggande data**: Välj det här alternativet om du vill exportera data för det du ser i visualiseringen **plus** ytterligare data från den underliggande datauppsättningen.  Detta kan omfatta data som finns i datauppsättningen men som inte används i visualiseringen. 
+    **Underliggande data**: Välj det här alternativet om du vill exportera data för det du ser i visualiseringen **plus** ytterligare data från den underliggande datauppsättningen.  Detta kan omfatta data som finns i datauppsättningen men som inte används i visualiseringen. Om visualiseringen har filter tillämpat kommer även de data du exporterar att filtreras.  Om ditt visuella objekt har aggregeringar (summa, medelvärde osv.) tas aggregeringen bort i exporten (data plattas ut). 
 
-    ![Meny där du väljer underliggande eller sammanfattade](media/end-user-export/power-bi-export-option.png)
+    ![Meny där du väljer underliggande eller sammanfattade](media/end-user-export/power-bi-export-underlying.png)
 
 5. Vad som händer härnäst beror på vilken webbläsare du använder. Du kan uppmanas att spara filen eller så kan en länk till den exporterade filen visas längst ned i webbläsaren. 
 
     ![Exporterad fil visas i webbläsaren Microsoft Edge](media/end-user-export/power-bi-export-edge-browser.png)
+
+    > [!NOTE]
+    > Om du inte har behörighet till data kan du inte exportera eller öppna filen i Excel.  
 
 
 6. Öppna filen i Excel. Jämför mängden data som exporteras med de data som vi exporterade från samma visualiseringen på instrumentpanelen. Skillnaden är att denna export inkluderar **underliggande data**. 

@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 12/16/2019
+ms.date: 01/18/2020
 ms.author: painbar
-ms.openlocfilehash: bb54a4e403f2cc12800d0c97e44308f7ad5c5f65
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: 27f6469cb960ff101f45636e0720b935929ff010
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75220764"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76538156"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Utforska rapporter i Power BI-mobilappar
 Gäller:
@@ -53,6 +53,13 @@ Om du vill gå till en rapport från en instrumentpanel trycker du på **Fler al
 ## <a name="interact-with-reports"></a>Interagera med rapporter
 När du har öppnat en rapport i appen kan du börja arbeta med den. Det finns många saker du kan göra med rapporten och dess data. I rapportens sidfot finns åtgärder som du kan utföra i rapporten. Genom att trycka och trycka länge på de data som visas i rapporten, kan du också dela upp och blanda datan.
 
+### <a name="single-tap-versus-double-tap-interaction"></a>Interaktion med enkelknackning respektive dubbelknackning
+När du hämtar Power BI-mobilappen är den inställd på enkeltryck. Det innebär att när du trycker på ett visuellt objekt för att utföra en viss åtgärd, till exempel välja ett utsnittsobjekt, korsmarkera, klicka på en länk eller knapp och så vidare, så kommer både det visuella objektet att väljas och den valda åtgärden att utföras.
+
+Om du vill kan du växla till interaktion med dubbelknackning. När interaktion med dubbeltryck används trycker du först på ett visuellt objekt för att välja det och sedan en gång till i det visuella objektet för att utföra önskad åtgärd.
+
+Om du vill växla till dubbelknackningsinteraktion, eller om du vill växla tillbaka till enkelknackningsinteraktion, går du till [inställningarna för appinteraktion](./mobile-app-interaction-settings.md).
+
 ### <a name="using-tap-and-long-tap"></a>Använda tryckning och lång tryckning
 En tryckning är detsamma som en musklickning. Om du vill korsmarkera rapporten baserat på en datapunkt trycker du därför på den datapunkten.
 När du trycker på ett sektorvärde markeras värdet och resten av rapporten delas upp med det värdet.
@@ -63,7 +70,6 @@ Du märkte förmodligen att en kantlinje visas när du trycker på ett visuellt 
 ![Visuellt objekt och meny](./media/mobile-reports-in-the-mobile-apps/report-visual-menu.png)
 
 ### <a name="tooltip-and-drill-actions"></a>Knappbeskrivning och detaljgranskningsåtgärder
-
 När du trycker länge (trycker och håller ned) på en datapunkt, visas en knappbeskrivning med de värden som datapunkten representerar:
 
 ![Knappbeskrivning](./media/mobile-reports-in-the-mobile-apps/report-tooltip.png)
@@ -126,6 +132,8 @@ Till exempel:
 
 Power BI-mobilappen stöder både rapportbokmärken som rapportens skapare har definierat och personliga bokmärken som du kan definiera i Power BI-tjänsten. Bokmärkesmenyn finns under **Fler alternativ** (...) i [verktygsfältet för rapportåtgärder](mobile-reports-in-the-mobile-apps.md#all-report-actions).
 
+Standardbokmärken indikeras av en specialikon. För personliga bokmärken kan du ange, ta bort eller ändra standardinställningen genom att trycka på **Fler alternativ (...)** bredvid det bokmärke som du vill ändra och välja **Gör till**  eller **Rensa standardinställningen**.
+
 ![bokmärkesmeny](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-bookmark-menu.png)
 
 När en bokmärkesvy för en rapport är öppen visas namnet på det bokmärket överst i rapporten.
@@ -133,6 +141,15 @@ När en bokmärkesvy för en rapport är öppen visas namnet på det bokmärket 
 ![bokmärkesvy](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-bookmark-title.png)
 
 [Läs mer om bokmärken i Power BI-tjänsten](https://docs.microsoft.com/power-bi/consumer/end-user-bookmarks).
+
+## <a name="configure-your-experience-with-reports"></a>Konfigurera din upplevelse med rapporter
+Power BI-mobilappen har ett antal inställningar som gör att du kan styra din rapportanvändning. För närvarande kan du konfigurera
+* **Interaktion med rapportvisualiseringar**: Du kan välja att använda antingen enkelknackning eller dubbelknackning.
+* **Metod för datauppdatering**: Du kan välja att antingen ha en uppdateringsknapp eller att dra nedåt uppdatera rapportdata.
+* **Synlighet för rapportsidfot**: Du kan välja att antingen ha en dockad sidfot som alltid är synlig eller en dynamisk sidfot som döljs och visas på olika sätt beroende på dina åtgärder (rullning till exempel).
+
+Information om hur du ändrar de här inställningarna finns i [inställningarna för appinteraktion](./mobile-app-interaction-settings.md).
+
 
 ## <a name="next-steps"></a>Nästa steg
 * [Visa och interagera med Power BI-rapporter som är optimerade för din telefon](mobile-apps-view-phone-report.md)

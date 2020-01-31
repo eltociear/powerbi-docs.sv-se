@@ -6,14 +6,14 @@ author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 01/07/2019
+ms.date: 01/17/2019
 ms.author: mihart
-ms.openlocfilehash: cf70774712a8b72493c8957139d8f802dc4d1ed7
-ms.sourcegitcommit: 4b926ab5f09592680627dca1f0ba016b07a86ec0
+ms.openlocfilehash: e5c3f8b327d6899d83e2304e56e5813a47fc4698
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75836671"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76537817"
 ---
 # <a name="glossary-for-power-bi-service"></a>Ordlista för Power BI-tjänsten
 Power BI-tjänsten kan introducera terminologi som du kanske inte är bekant med eller förstår. Ordlistan är ett bra ställe att leta upp terminologi. Om du vill kan du lägga till den som ett bokmärke. En annan bra resurs om du vill lära dig mer om byggstenarna bakom Power BI-tjänsten är [Grundläggande begrepp](end-user-basic-concepts.md). Grundläggande begrepp ger en översikt över de olika *delarna* i Power BI och hur de hänger ihop.
@@ -77,6 +77,10 @@ Den här ordlista är ett community-arbete.  Saknar du något ord? Be oss att l�
 
 **content view (innehållsvy)**
 
+**Kontinuerlig variabel** – en kontinuerlig variabel kan vara valfritt värde mellan den lägsta och högsta gränsen. Annars är det en diskret variabel. Exempel är temperatur, vikt, ålder och tid. Kontinuerliga variabler kan innehålla bråktal eller delar av värdet. Det totala antalet sålda blå skateboards är en diskret variabel eftersom vi inte kan sälja hälften av en skateboard.
+
+**Korrelation** – en korrelation anger hur sakers beteenden är relaterade till varandra.  Om saker har liknande mönster för ökning och minskning är de positivt korrelerade. Och om mönstren visar ett motsatt förhållande är de negativt korrelerade. Om vår försäljning av röda skateboards ökar varje gång vi kör en TV-reklamkampanj innebär det att försäljningen av röda skateboards och TV-kampanjen är positivt korrelerade.
+
 **korsfilter** Gäller för interaktioner mellan visuella objekt. Korsfiltrering tar bort data som inte är aktuella. Om du till exempel väljer **Måttlighet** i ringdiagrammet korsfiltreras linjediagrammet. Linjediagrammet visar nu endast datapunkter som gäller för segmentet Måttlighet.
 
 **korsmarkering** Gäller för interaktioner mellan visuella objekt. Korsmarkering behåller alla ursprungliga datapunkter men tonar ned den del som inte gäller för ditt val. Om du till exempel väljer **Måttlighet** i ringdiagrammet korsmarkeras kolumndiagrammet. Kolumndiagrammet tonar ned alla data som inte gäller för segmentet Måttlighet och markerar i stället alla data som gäller för det segmentet.
@@ -102,8 +106,9 @@ Den här ordlista är ett community-arbete.  Saknar du något ord? Be oss att l�
 **Skrivbord** eller **Power BI Desktop** Kostnadsfritt Power BI-verktyg som främst används av rapportdesigners, administratörer och utvecklare. 
 
 
-
 **diamond (romb)** Power BI Premium. Formen på den ikon som indikerar att en arbetsyta är en arbetsyta för Premium-kapacitet.
+
+**Dimension** – dimensioner är kategoriska data (text). En dimension beskriver en person, ett objekt, en artikel, en produkt, en plats och en tidpunkt. I en datamängd är dimensioner ett sätt att gruppera *mått* i användbara kategorier. För vårt skateboardföretag kan vissa dimensioner innefatta att titta på försäljningen (ett mått) efter modell, färg, land eller marknadsföringskampanj.   
 
 **minska detaljnivån, öka detaljnivån, visa detaljnivå** I Power BI kan du ändra detaljnivån och lära dig mer om hur du kan utforska nästa detaljnivå i en rapport eller ett visuellt objekt. Använd olika detaljnivåer för att referera till möjligheten att välja en del av ett visuellt objekt och gå till en annan sida i rapporten, filtrerad efter de data som relaterar till den del av det visuella objektet som du valde på den ursprungliga sidan.
 Att öka detaljnivån innebär oftast att man visar de underliggande posterna.
@@ -168,6 +173,8 @@ Första förekomsten: navigeringsfönstret Efterföljande omnämnanden eller vid
 **list page (listsida)** eller **content list (innehållslista)** En av avsnittssidorna för elementen i navigeringsfönstret. Till exempel Favoriter, Senaste, Min arbetsyta osv.
 
 ## <a name="m"></a>M
+
+**Mått** – ett mått är ett kvantitativt fält (numeriskt) som kan användas för beräkningar. Vanliga beräkningar är summa, medelvärde och minimum. Anta att vi till exempel har ett företag som tillverkar och säljer skateboards. Då kan våra mått vara antalet sålda skateboards och genomsnittlig vinst per år.
 
 **Mobile app (Mobilapp)** Appar med vilka du kan köra Power BI på iOS-, Android- och Windows-enheter.
 
@@ -302,6 +309,8 @@ Du kan prenumerera på rapportsidor, appar och instrumentpaneler och ta emot e-p
 ## <a name="t"></a>T
 **tiles (paneler0**  
 Power BI-instrumentpaneler innehålla rapportpaneler.
+
+**Tidsserie** – en tidsserie är ett sätt att visa tid som successiva datapunkter. Dessa datapunkter kan anges i steg, till exempel sekunder, timmar, månader eller år.  
 
 
 ## <a name="u"></a>U

@@ -7,21 +7,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 01/14/2020
+ms.date: 01/16/2020
 ms.author: mblythe
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d9549364f9129ee4ddc6e90fb973cb73c241e4a9
-ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
+ms.openlocfilehash: bbca812644b82f8a0b848dc16e450f880ccb596c
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76042128"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76539910"
 ---
 # <a name="tutorial-embed-a-power-apps-visual-in-a-power-bi-report"></a>Självstudie: Bädda in ett visuellt objekt från Power Apps i en Power BI-rapport
 
 I den här självstudien använder du visuella objekt i Power Apps för att skapa en ny app som är inbäddad i en exempelrapport i Power BI. Appen samverkar med andra visuella objekt i rapporten.
 
-Om du inte har någon Power Apps-prenumeration kan du [skapa ett kostnadsfritt konto](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps) innan du börjar.
+Om du inte har någon Power Apps-prenumeration kan du [skapa ett kostnadsfritt konto](https://web.powerapps.com/signup?redirect=marketing&email=) innan du börjar.
 
 I de här självstudierna får du lära dig att
 > [!div class="checklist"]
@@ -33,7 +33,7 @@ I de här självstudierna får du lära dig att
 
 * Någon av webbläsarna [Google Chrome](https://www.google.com/chrome/browser/) eller [Microsoft Edge](https://www.microsoft.com/windows/microsoft-edge)
 * En [Power BI-prenumeration](https://docs.microsoft.com/power-bi/service-self-service-signup-for-power-bi) med rapporten [Exempel på affärsmöjlighetsanalys](https://docs.microsoft.com/power-bi/sample-opportunity-analysis#get-the-content-pack-for-this-sample) installerad
-* Kunskap om hur du [skapar appar i Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/data-platform-create-app-scratch.md) och hur du [redigerar Power BI-rapporter](https://docs.microsoft.com/power-bi/service-the-report-editor-take-a-tour)
+* Kunskap om hur du [skapar appar i Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/data-platform-create-app-scratch) och hur du [redigerar Power BI-rapporter](https://docs.microsoft.com/power-bi/service-the-report-editor-take-a-tour)
 
 
 

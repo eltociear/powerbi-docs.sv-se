@@ -1,33 +1,29 @@
 ---
-title: Relationsvy i Power BI Desktop
-description: Relationsvy i Power BI Desktop
+title: Modellvy i Power BI Desktop
+description: Modellvy i Power BI Desktop
 author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 01/17/2020
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: cd9671b8c38cb2aa1502c3aa00a871d125f819b1
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: ea568c061142e66e79351de8a6c0f0603a46f775
+ms.sourcegitcommit: 08f65ea314b547b41b51afef6876e56182190266
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75760490"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "76753245"
 ---
-# <a name="work-with-relationship-view-in-power-bi-desktop"></a>Arbeta med relationsvyn i Power BI Desktop
-**Relationsvyn** visar alla tabeller, kolumner och relationer i din modell. Det kan vara särskilt användbart när modellen har komplexa relationer mellan många tabeller.
+# <a name="work-with-model-view-in-power-bi-desktop"></a>Arbeta med modellvyn i Power BI Desktop
 
-Låt oss ta en titt.
+*Modellvyn* visar alla tabeller, kolumner och relationer i din modell. Den här vyn är särskilt användbar om modellen har komplexa relationer mellan många tabeller.
 
-![](media/desktop-relationship-view/relationshipview_fullscreen.png)
+Välj **modellikonen** nära kanten av fönstret om du vill visa en vy över den befintliga modellen. Håll muspekaren över en relationslinje om du vill visa de kolumner som används.
 
-**A.**  Ikon för relationen – Klicka här för att visa din modell i relationsvyn
+![Modellvy i Power BI Desktop](media/desktop-relationship-view/model-view-full-screen.png)
 
-**B.** Relation – Du kan hålla muspekaren över en relation för att visa de använda kolumnerna. Dubbelklicka på en relation för att öppna den i dialogrutan **Redigera relation**. 
+På bilden ovan har tabellen *Stores* en *StoreKey*-kolumn som är relaterad till tabellen *Sales* som också har en *StoreKey*-kolumn. Dessa två tabeller har en *många-till-en-relation* (\*:1). Pilen i mitten av linjen visar i filterkontextens riktning. Dubbelpilen betyder att korsfilterriktningen har angetts till *Båda*.
 
-I bilden ovan kan du se att tabellen *Stores* har en *StoreKey*-kolumn som är relaterad till tabellen *Sales* som också har en *StoreKey*-kolumn. Det finns en *många-till-en-relation* (\*: 1) och ikonen mitt i raden visar att korsfilterriktningen är inställd på *båda*. Pilen på ikonen visar i vilken riktning kontextfiltret flödar.
-
-Läs mer om relationer i [Skapa och hantera relationer i Power BI Desktop](desktop-create-and-manage-relationships.md).
-
+Om du dubbelklickar på en relation öppnas den i dialogrutan **Redigera relation**. Läs mer om relationer i [Skapa och hantera relationer i Power BI Desktop](desktop-create-and-manage-relationships.md).

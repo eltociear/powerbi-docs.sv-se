@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/15/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 56ff7d09530030d1a1ae046a3439022cbf638b9d
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 124f373e7841cb899f0a26debb2bcc8302e8e970
+ms.sourcegitcommit: 7efbe508787029e960d6d535ac959a922c0846ca
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75760582"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76309112"
 ---
 # <a name="create-model-relationships-in-power-bi-desktop"></a>Skapa modellrelationer i Power BI Desktop
 
@@ -227,4 +227,6 @@ I följande lista visas prestanda för filterspridning, från snabbast till lån
 
 - [Förstå star-schemat och dess betydelse för Power BI](guidance/star-schema.md)
 - [Vägledning för att lägga till en många-till-många-relationer](guidance/relationships-many-to-many.md)
+- Video: [Vad du bör och inte bör göra med Power BI-relationer](https://youtu.be/78d6mwR8GtA)
 - Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+- Har du förslag? [Bidra till att förbättra Power BI](https://ideas.powerbi.com)

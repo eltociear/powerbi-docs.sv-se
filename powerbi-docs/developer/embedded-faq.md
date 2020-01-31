@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/27/2019
-ms.openlocfilehash: 7670f8147af54f3b3a6c2c0eba34bb3ca7843eda
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.openlocfilehash: 8a3b9389769c92bc52512dbf1215afa405161cd5
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74264067"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76539059"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Vanliga frågor och svar om Power BI Embedded
 
@@ -63,12 +63,12 @@ Power BI Embedded är PaaS-tjänst med en uppsättning API:er som utvecklare kan
 
 Här är en ofullständig lista med skillnader.
 
-| Visning av aktuellt objekt | Power BI Embedded | Power BI Premium-kapacitet | Power BI Premium-kapacitet |
+| Funktion | Power BI Embedded | Power BI Premium-kapacitet | Power BI Premium-kapacitet |
 |----------------------------------------------------------------------------------|-------------------|---------------------------|---------------------------|
 |   | A SKUs-Azure-kapacitet | EM SKUs-O365-kapacitet | P SKUs-O365-kapacitet |
 | Bädda in artefakter från en Power BI-arbetsyta | Ja | Ja | Ja |
-| Förbruka Power BI-rapporter i ett inbäddat program – SaaS | Nej | Ja | Ja |
-| Förbruka Power BI-rapporter i ett inbäddat program – PaaS | Ja | Ja | Ja |
+| Förbruka Power BI-rapporter i ett inbäddat program för din organisation  | Nej | Ja | Ja |
+| Förbruka Power BI-rapporter i ett inbäddat program för dina kunder | Ja | Ja | Ja |
 | Använda Power BI-rapporter i SharePoint | Nej | Ja | Ja |
 | Använda Power BI-rapporter i Dynamics | Nej | Ja | Ja |
 | Använda Power BI-rapporter i Teams (gäller inte mobilapp) | Nej | Ja | Ja |

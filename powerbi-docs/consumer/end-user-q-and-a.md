@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 12/18/2019
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 5dd924f066b6382ed895d81ed0ada5d913c040e6
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: cc20d981e1e774eed109c614e146415ec3813601
+ms.sourcegitcommit: a1409030a1616027b138128695b80f6843258168
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75218255"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76709793"
 ---
-# <a name="qa-for-power-bi-consumers"></a>Frågor och svar för Power BI-**användare**
+# <a name="qa-for-power-bi-consumers"></a>Frågor och svar för Power BI-användare
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
@@ -167,6 +167,10 @@ Välj sedan **Inställningar** > **Instrumentpaneler**. Kontrollera att det finn
 **Svar:** Välj ett alternativ för att kontakta ägaren till rapporten eller instrumentpanelen. Det här kan du göra direkt instrumentpanelsidan för Frågor och svar eller från det visuella Frågor och svar-objektet. Du kan också leta rätt på ägaren i Power BI-sidhuvudet.  Det finns många saker som designern kan göra för att förbättra resultaten för Frågor och svar. Till exempel kan designern byta namn på kolumner i datamängden till termer som är lätta att förstå (`CustomerFirstName` i stället för `CustFN`). Designern känner till datamängden väl och kan därför ta fram användbara frågor och lägga till dem bland de föreslagna frågorna i Frågor och svar.
 
 ![Visa kontaktuppgifter](media/end-user-q-and-a/power-bi-q-and-a-contact.png)
+
+## <a name="privacy"></a>Sekretess
+
+Microsoft kan använda dina frågor för att förbättra Power BI. Mer information finns i [Microsofts sekretesspolicy](https://go.microsoft.com/fwlink/?LinkId=521839).
 
 ## <a name="next-steps"></a>Nästa steg
 Om du vill lära dig hur en *rapportdesigner* skapar och hanterar ett visuellt Frågor och svar-objekt kan du läsa [Typ av visuellt Frågor och svar-objekt](../visuals/power-bi-visualization-q-and-a.md).

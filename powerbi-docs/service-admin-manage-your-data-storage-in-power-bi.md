@@ -7,33 +7,42 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/21/2018
+ms.date: 01/23/2020
 ms.author: maggies
 LocalizationGroup: Administration
-ms.openlocfilehash: f8e7240b34e20a3d18443cadb5265c5d0d870790
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: bc8b8c16675e6d413c22d4ae88018222b02b17d6
+ms.sourcegitcommit: a1409030a1616027b138128695b80f6843258168
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73873666"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76709882"
 ---
 # <a name="manage-data-storage-in-power-bi-workspaces"></a>Hantera datalagring i Power BI-arbetsytor
 
-Läs hur du hanterar datalagring individuellt eller på arbetsytan för att se till att du kan fortsätta publicera rapporter och datamängder.
+Läs hur du hanterar datalagring individuellt eller på arbetsytan så att du kan fortsätta publicera rapporter och datamängder.
 
-Användare och arbetsytor har egna datakapaciteter:
+## <a name="capacity-limits"></a>Kapacitetsbegränsningar
 
-* Alla användare har upp till 10 GB datalagring.
-* Användare med en Power BI Pro-licens kan skapa arbetsytor med upp till 10 GB lagring för varje.
-* En arbetsyta på Premium-nivå räknas inte mot lagringen för en Power BI Pro-användare.
+Lagringsgränser för arbetsytan, vare sig det gäller min arbetsyta eller en apparbetsyta, beror på om arbetsytan har [delad eller premiumkapacitet](service-basic-concepts.md#capacities).
 
-Den totala användningen får inte överstiga 10 GB per Pro-användare sett till alla Pro-användare och arbetsytor i en klientorganisation.
+### <a name="shared-capacity-limits"></a>Begränsningar för delad kapacitet
+För arbetsytor i delad kapacitet: 
+
+- Det finns en lagringsgräns per arbetsyta på 10 GB.
+- För app-arbetsytor får den totala användningen inte överskrida 10 GB multiplicerat med antalet Pro-licenser i klienten.
+
+### <a name="premium-capacity-limits"></a>Begränsningar för premiumkapacitet
+För arbetsytor med premiumkapacitet:
+- Det finns en gräns på 100 TB per Premium-kapacitet.
+- Det finns ingen lagringsgräns per användare.
 
 Läs om andra funktioner i [Power BI-prismodellen](https://powerbi.microsoft.com/pricing).
 
+## <a name="whats-included-in-storage"></a>Vad som ingår i lagringen
+
 Din datalagring inkluderar dina egna datauppsättningar och Excel-rapporter och de objekt som någon har delat med dig. Datauppsättningar är alla datakällor du har laddat upp eller anslutit till. Dessa datakällor omfattar Power BI Desktop-filer och Excel-arbetsböcker du använder. Följande ingår även i din datakapacitet.
 
-* Excel-intervall fästa till en instrumentpanel.
+* Excel-intervall fästa på en instrumentpanel.
 * Reporting Services lokala visualiseringar fästa på en Power BI-instrumentpanel.
 * Överförda bilder.
 
@@ -45,9 +54,10 @@ Storleken på en instrumentpanel som du delar varierar beroende på vad som är 
 
 Se hur mycket lagringsutrymme du använder i ditt Power BI-konto och hantera ditt konto.
 
-1. Om du vill hantera din lagring, så gå till **Min arbetsyta** i navigeringsfönstret.
+1. Om du vill hantera din lagring går du till **Min arbetsyta** i navigeringsfönstret.
    
     ![Min arbetsyta](media/service-admin-manage-your-data-storage-in-power-bi/pbi_myworkspace.png)
+
 2. Välj kugghjulsikonen ![Kugghjulsikon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png) i det övre högra hörnet \> **Hantera personlig lagring**.
    
     Det översta fältet visar hur mycket av din lagringsgräns som du har använt.
@@ -57,6 +67,7 @@ Se hur mycket lagringsutrymme du använder i ditt Power BI-konto och hantera dit
     Datauppsättningarna och rapporterna avgränsas på två flikar:
    
     **Ägs av mig:** Du har laddat upp dessa rapporter och datauppsättningar till ditt Power BI-konto, inklusive tjänstedatauppsättningar som Salesforce och Dynamics CRM.  
+
     **Ägs av andra:** Andra har delat dessa rapporter och datauppsättningar med dig.
 1. Om du vill ta bort en datauppsättning eller rapport, väljer du papperskorgsikonen ![papperskorgsikonen](media/service-admin-manage-your-data-storage-in-power-bi/pbi_deleteicon.png).
 
@@ -75,15 +86,15 @@ Tänk på att du eller någon annan kan ha rapporter och instrumentpaneler baser
     Datauppsättningarna och rapporterna avgränsas på två flikar:
    
     **Ägs av oss:** Du eller någon annan har laddat upp dessa rapporter och datauppsättningar till gruppens Power BI-konto, inklusive tjänstedatauppsättningar som Salesforce och Dynamics CRM.
+
     **Ägs av andra:** Andra har delat dessa rapporter och datauppsättningar med din grupp.
+
 3. Om du vill ta bort en datauppsättning eller rapport, väljer du papperskorgsikonen ![papperskorgsikonen](media/service-admin-manage-your-data-storage-in-power-bi/pbi_deleteicon.png).
    
    > [!NOTE]
-   > Alla medlemmar med redigeringsbehörigheter för en arbetsyta har behörighet att ta bort datamängder och rapporter från arbetsytan.
-   > 
-   > 
-
-Tänk på att du eller någon annan i gruppen kan ha rapporter och instrumentpaneler baserade på en datauppsättning. Om du tar bort datauppsättningen, fungerar dessa rapporter och instrumentpaneler inte längre.
+   > Tänk på att du eller någon annan i gruppen kan ha rapporter och instrumentpaneler baserade på en datauppsättning. Om du tar bort datauppsättningen, fungerar dessa rapporter och instrumentpaneler inte längre.
+   
+   Alla medlemmar i en arbetsyta med rollen administratör, medlem eller deltagare har behörighet att ta bort datamängder och rapporter från arbetsytan.
 
 ## <a name="dataset-limits"></a>Datauppsättningsgränser
 Det finns en gräns på 1 GB, per datauppsättning som importeras till Power BI. Om du har valt att behålla Excel-upplevelsen istället för att importera data, är gränsen 250 MB för datauppsättningen.
@@ -102,6 +113,8 @@ Den här gränsen visas också i **Hantera personlig lagring**.
  När du försöker utföra en åtgärd som når någon av gränserna visas ett meddelande om att du är över gränsen. Du kan [hantera](#manage) din lagring för att minska ditt lagringsutrymme och komma förbi gränsen.
 
  ![Över din lagringsgräns](media/service-admin-manage-your-data-storage-in-power-bi/powerbi-pro-over-limit.png)
+
+ ## <a name="next-steps"></a>Nästa steg
 
  Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 

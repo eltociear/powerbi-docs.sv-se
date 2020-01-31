@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/17/2018
+ms.date: 01/21/2020
 ms.author: maggies
-ms.openlocfilehash: 019cbc489ae6433629898e44088e689767ef12ae
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 343c7d7e81d8e8ec53383feab6dc4dcfb17129d6
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73874189"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76540600"
 ---
 # <a name="power-bi-report-data-sources-in-power-bi-report-server"></a>Power BI-rapportdatakällor i Power BI-rapportserver
 Power BI-rapporter kan ansluta till ett antal datakällor. Beroende på hur data används, finns olika datakällor tillgängliga. Data kan importeras eller så kan data frågas direkt med DirectQuery eller en live-anslutning till SQL Server Analysis Services.
@@ -72,7 +72,7 @@ Andra datakällor kan fungera även om de inte finns med på listan.
 | Sybase-databas |Ja |Ja |Nej |
 | Teradata |Ja |Ja |Ja |
 | Text/CSV |Ja |Ja |Nej |
-| Webb |Ja |Ja |Nej |
+| Webben |Ja |Ja |Nej |
 | XML |Ja |Ja |Nej |
 | appFigures (beta) |Ja |Nej |Nej |
 | Azure Analysis Services-databas |Ja |Nej |Ja |
@@ -202,12 +202,12 @@ Power BI-rapportservern har inte stöd för OAuth-baserad autentisering för Dir
 | Azure SQL Data Warehouse |Nej |Nej |Ja |Nej |Nej |
 | Oracle-databas |Nej |Nej |Ja |Ja |Ja |
 | SAP Business Warehouse-server |Nej |Nej |Ja |Nej |Nej |
-| SAP HANA-databas |Nej |Nej |Ja |Ja |Nej |
+| SAP HANA-databas |Nej |Nej |Ja |Ja |Ja** |
 | Teradata |Nej |Nej |Ja |Ja |Ja |
 
+**SAP HANA stöder DirectQuery med integrerad Windows-autentisering endast när den används som relationsdatabas i den publicerade Power BI Desktop-filen (.pbix).
 
 ## <a name="next-steps"></a>Nästa steg
 Nu när du har anslutit till din datakällan, [skapar du en Power BI-rapport](quickstart-create-powerbi-report.md) med hjälp av data från den datakällan.
 
 Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
-

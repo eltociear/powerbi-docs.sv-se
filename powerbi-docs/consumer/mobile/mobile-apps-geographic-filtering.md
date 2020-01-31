@@ -7,19 +7,19 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 09/25/2019
 ms.author: mshenhav
-ms.openlocfilehash: 1079b624ebab827b41f4da55095028796319fdcd
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 002ddeac915b2b2b67570e8b4078a175de09aaef
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870638"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76538208"
 ---
 # <a name="filter-a-report-by-geographic-location-in-the-power-bi-mobile-apps"></a>Filtrera en rapport efter geografisk plats i Power BI-mobilappar
-Gäller:
+Gäller för:
 
-| ![iPhone](./media/mobile-apps-geographic-filtering/iphone-logo-50-px.png) | ![iPad](./media/mobile-apps-geographic-filtering/ipad-logo-50-px.png) | ![Android-telefon](./media/mobile-apps-geographic-filtering/android-phone-logo-50-px.png) | ![Android-surfplatta](./media/mobile-apps-geographic-filtering/win-10-logo-50-px.png) |
-|:--- |:--- |:--- |:--- |
-| iPhone-telefoner |iPad-surfplattor |Android-telefoner |Windows 10-telefoner |
+| ![iPhone](./media/mobile-apps-geographic-filtering/iphone-logo-50-px.png) | ![iPad](./media/mobile-apps-geographic-filtering/ipad-logo-50-px.png) | ![Android-telefon](./media/mobile-apps-geographic-filtering/android-phone-logo-50-px.png) | ![Android-surfplatta](./media/mobile-apps-view-dashboard/android-tablet-logo-50-px.png) | ![Windows-telefon](./media/mobile-apps-geographic-filtering/win-10-logo-50-px.png) |
+|:--- |:--- |:--- |:--- |:--- |
+| iPhone-telefoner |iPad-surfplattor |Android-telefoner |Android-surfplattor |Windows 10-telefoner |
 
 Ser du en liten kartnålsikon i det övre högra hörnet när du tittar på en Power BI-rapport på din mobila enhet? I så fall kan du filtrera rapporten baserat på var du befinner dig.
 
@@ -42,7 +42,7 @@ Alla följande tre villkor måste vara uppfyllda för att du ska kunna se platst
 * Du befinner dig på en av de platser som har data i den kolumnen.
 * Du använder någon av följande mobila enheter:
   * iOS (iPad, iPhone, iPod).
-  * Android-telefon.
+  * Android (telefon, surfplatta).
   * Windows 10-telefon (andra Windows 10-enheter, t.ex. stationära datorer och surfplattor stöder inte geografisk filtrering).
 
 Läs mer om [Konfigurera geografiskt filtrering](../../desktop-mobile-geofiltering.md) i Power BI Desktop.
