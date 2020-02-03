@@ -489,8 +489,10 @@
               href: service-new-workspaces.md
             - name: Dela ditt arbete
               href: service-how-to-collaborate-distribute-dashboards-reports.md
-            - name: Övervaka Power BI-användning
+            - name: Övervaka användning på klassiska arbetsytor
               href: service-usage-metrics.md
+            - name: Övervaka användning på nya arbetsytor
+              href: service-modern-usage-metrics.md
         - name: Licensiering
           items:
             - name: Registrera dig för Power BI
@@ -645,8 +647,6 @@
               href: service-create-qr-code-for-report.md
             - name: Exportera en rapport till Power BI Desktop (förhandsversion)
               href: service-export-to-pbix.md
-            - name: 'Filtrera en rapport med hjälp av parametrar i URL:en'
-              href: service-url-filters.md
             - name: Redigera SAP-variabler
               href: service-edit-sap-variables.md
             - name: Metodtips för att skapa snabba och tillförlitliga rapporter
@@ -691,8 +691,10 @@
           items:
             - name: Dela instrumentpaneler och rapporter
               href: service-share-dashboards.md
-            - name: Dela en filtrerad rapport
+            - name: Filtrera och dela en rapport
               href: service-share-reports.md
+            - name: 'Filtrera en rapport med hjälp av parametrar i URL:en'
+              href: service-url-filters.md
             - name: Registrera dig och andra för prenumeration
               href: service-report-subscribe.md
             - name: Bädda in rapport i SharePoint Online

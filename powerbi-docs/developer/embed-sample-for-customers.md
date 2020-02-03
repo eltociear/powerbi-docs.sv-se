@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 12/12/2019
-ms.openlocfilehash: e27789ca28d86a53b7d8340b3d766a73a04645cb
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: a07a3e6e1086c463e0f0c8911d7a9b6ce89aa115
+ms.sourcegitcommit: 53c2b5ea4ee1fe2659804d5ccc8e4bb445a8bcad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75223415"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76913646"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-customers"></a>Självstudie: Bädda in Power BI-innehåll i ett program för dina kunder
 
@@ -409,8 +409,8 @@ Nu när du har utvecklat ditt program är det dags att skapa dedikerad kapacitet
 ### <a name="create-a-dedicated-capacity"></a>Skapa en dedikerad kapacitet
 
 Genom att skapa en dedikerad kapacitet kan du dra nytta av att ha en dedikerad resurs för dina kunder. Det finns två typer av kapaciteter att välja mellan:
-* **Power BI Premium** – en Office 365-prenumeration för klientorganisationer som finns i två olika SKU-serier, *EM* och *P*. När du bäddar in Power BI-innehåll kallas den här lösningen för *Power BI-inbäddning*. Mer information om den här prenumerationen finns i [Vad är Power BI Premium?](../service-premium-what-is.md)
-* **Azure Power BI Embedded** – du kan köpa en dedikerad kapacitet i [Microsoft Azure-portalen](https://portal.azure.com). Den här prenumerationen använder *A*-SKU:er. Mer information om hur du skapar Power BI Embedded-kapacitet finns i [Skapa Power BI Embedded-kapacitet i Azure-portalen](azure-pbie-create-capacity.md).
+* **Power BI Premium** – en Office 365-prenumeration för klientorganisationer som finns i två olika SKU-serier, *EM* och *P*. När du bäddar in Power BI-innehåll kallas den här lösningen för *Power BI-inbäddning*. Mer information om prenumerationen finns i [Vad är Power BI Premium?](../service-premium-what-is.md)
+* **Azure Power BI Embedded** – Du kan köpa en dedikerad kapacitet i [Microsoft Azure-portalen](https://portal.azure.com). Den här prenumerationen använder *A*-SKU:er. Mer information om hur du skapar Power BI Embedded-kapacitet finns i [Skapa Power BI Embedded-kapacitet i Azure-portalen](azure-pbie-create-capacity.md).
 > [!NOTE]
 > Med A-SKU:er kan du inte komma åt Power BI-innehåll med en kostnadsfri Power BI-licens.
 

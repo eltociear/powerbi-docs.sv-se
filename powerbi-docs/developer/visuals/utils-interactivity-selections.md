@@ -1,20 +1,20 @@
 ---
 title: Interaktivitetsverktyg för visuella Power BI-objekt
 description: I den här artikeln beskrivs hur du lägger till markeringar i visuella Power BI-objekt med hjälp av interaktivitetsverktyg
-author: zBritva
-ms.author: v-ilgali
+author: KesemSharabi
+ms.author: kesharab
+ms.reviewer: rkarlin
 manager: rkarlin
-ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: e2587140d5436552e26be90c67eb5e6240bf6a1d
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: be7a708dfcc6ebc40c62a1a9075e2cbf134363b1
+ms.sourcegitcommit: 0cc594ebb78a6d0e88784673ed09f8aefd10c7a7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74696150"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76818696"
 ---
 # <a name="microsoft-power-bi-visuals-interactivity-utils"></a>Interaktivitetsverktyg för visuella Microsoft Power BI-objekt
 
