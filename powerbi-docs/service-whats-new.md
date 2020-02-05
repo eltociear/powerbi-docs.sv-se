@@ -10,10 +10,10 @@ ms.date: 10/22/2019
 ms.author: nikhilga
 LocalizationGroup: Get started
 ms.openlocfilehash: 06e46413be709ac3eda2102332740d709092187e
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "74265343"
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nyheter i Power BI-tjänsten
@@ -353,7 +353,7 @@ För mer information, [besök Power BI-teamets blogg](https://powerbi.microsoft.
 
 * Automatisk ifyllnad för ”är”: Frågor och svar föreslår värden om du anger kolumnens namn följt av ”är”.
 
-***Mobil***
+***Mobilt***
 
 * KPI:er på din Apple Watch: övervaka KPI:er och kortpaneler utan att öppna Power BI-appen.
 
@@ -415,7 +415,7 @@ Idag släppte vi en lång lista med de mest efterfrågade funktionerna. [Läs bl
 * Lägga till videoinnehåll på instrumentpanelen (via Widget)
 * Zooma instrumentpaneler
 
-***Anslutningsmöjligheter***
+***Anslutningsmöjlighet***
 
 * Ansluta till filer på SharePoint-gruppwebbplatsen via en URL
 

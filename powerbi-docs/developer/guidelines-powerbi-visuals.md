@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 07/16/2019
 ms.openlocfilehash: 6bf7610a010a72248a3d2fdd96718eea513a68da
-ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/11/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "75000099"
 ---
 # <a name="guidelines-for-power-bi-visuals"></a>Riktlinjer för visuella objekt för Power BI
@@ -76,7 +76,7 @@ I det här avsnittet beskrivs specifikationerna för att lägga till kommersiell
 Det finns tre typer av kommersiella logotyper:
 * **Textlogotyp** – en textlogotyp består av två element som sitter ihop (en ikon och ett namn).
 
-    ![Microsofts logotyp](media/guidelines-powerbi-visuals/microsoft-logo.png)
+    ![Microsoft-logotyp](media/guidelines-powerbi-visuals/microsoft-logo.png)
 
 * **Symbol** – en bild utan text.
 
@@ -117,7 +117,7 @@ I följande tabell beskrivs storleksöverväganden för visuella Power BI-objekt
 |*Logotypens bredd*    |Upp till 240 px         |Större än 240 px         |
 |*Logotypens höjd*     |Upp till 160 px         |Större än 160 px         |
 |*Storlek på avgränsningsruta*     |40 x 15 px         |101 x 30 px         |
-|*Exempel på kommersiell logotyp*     |![Microsoft-symbol](media/guidelines-powerbi-visuals/grey-microsoft-symbol.png)         |![Microsofts logotyp](media/guidelines-powerbi-visuals/grey-microsoft-logo.png)         |
+|*Exempel på kommersiell logotyp*     |![Microsoft-symbol](media/guidelines-powerbi-visuals/grey-microsoft-symbol.png)         |![Microsoft-logotyp](media/guidelines-powerbi-visuals/grey-microsoft-logo.png)         |
 |*Exempel på en avgränsningsruta*    |![exempel på liten logotyp](media/guidelines-powerbi-visuals/small-logo-box.png)         |![exempel på stor logotyp](media/guidelines-powerbi-visuals/big-logo-box.png)         |
 |    |         |         |
 

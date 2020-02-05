@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 12/03/2019
 ms.openlocfilehash: 73a6a3d16ae2515af41a3232a37579e18876f38b
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/19/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "75223674"
 ---
 # <a name="submit-a-power-bi-visual-to-appsource-using-seller-dashboard"></a>Skicka ett visuellt objekt för Power BI till AppSource med hjälp av Seller Dashboard

@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 01/13/2020
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: ef1d72754d7f77d7cb3c835c1a2b94e0f7e324f4
-ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
+ms.openlocfilehash: 5497c56f358470d0d24f69f0d67865dbbd7839a3
+ms.sourcegitcommit: 75300b3f53f438ed7d3bd4edc93b9eb5925bf3af
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76039552"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77026748"
 ---
 # <a name="tutorial-analyze-webpage-data-by-using-power-bi-desktop"></a>Självstudie: Analysera webbsidedata med Power BI Desktop
 
@@ -201,7 +201,7 @@ I Power BI Desktop är det enkelt att hämta data från en stor mängd datakäll
 
 ## <a name="see-also"></a>Se även
 
-* [Läs andra Power BI Desktop-självstudier](/guided-learning/)
+* [Läs andra Power BI Desktop-självstudier](/power-bi/guided-learning/)
 * [Se Power BI Desktop-videor](desktop-videos.md)
 * [Besök Power BI-forumet](https://go.microsoft.com/fwlink/?LinkID=519326)
 * [Läs Power BI-bloggen](https://go.microsoft.com/fwlink/?LinkID=519327)

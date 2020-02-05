@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: maggies
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 91740d16a91aa8dc1936e8ae1a2812653c45e6a1
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: c342a7472666ee50b7213e7d933ad36da85ce7f6
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73925833"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76975043"
 ---
 # <a name="connect-to-the-services-you-use-with-power-bi"></a>Ansluta till de tjänster du använder med Power BI
 Med Power BI kan du ansluta till många av de tjänster som du använder för att driva verksamheten, som Salesforce, Microsoft Dynamics och Google Analytics. Power BI börjar med att använda dina autentiseringsuppgifter för att ansluta till tjänsten. Därefter skapas en Power BI-*arbetsyta* med en instrumentpanel och en uppsättning Power BI-rapporter som automatiskt visar dina data och ger visuella insikter om verksamheten.
@@ -71,5 +71,4 @@ Om du är intresserad av att skapa mallappar som du kan distribuera själv, kan 
 * [Distribuera appar till kollegor](service-create-distribute-apps.md)
 * [Skapa de nya arbetsytorna i Power BI](service-create-the-new-workspaces.md)
 * Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
-* Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 
