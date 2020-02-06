@@ -1,20 +1,20 @@
 ---
 title: Publicera på webben från Power BI
 description: Med Power BI Publicera på webben kan du enkelt bädda in interaktiva Power BI-visualiseringar online, t.ex. blogginlägg, webbplatser, via e-post eller sociala medier på alla enheter.
-author: rkarlin
-ms.author: rkarlin
+author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/16/2019
+ms.date: 01/30/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 1fd640922f132f56a03b37ed59a6267a5af83d00
-ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
+ms.openlocfilehash: 53cc311f2fb0bfa4ab876c80b81ee2a092c4fd8c
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74311708"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76913626"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Publicera på webben från Power BI
 
@@ -39,20 +39,24 @@ Följande steg beskriver hur du använder **Publicera på webben**.
 1. Öppna en rapport på din arbetsyta som du kan redigera och välj **Arkiv > Publicera på webben**.
 
    ![PtW1](media/service-publish-to-web/publish_to_web1.png)
+   
+2. Kontakta Power BI-administratören om du inte har fått behörighet att skapa inbäddningskoder
 
-2. Granska innehållet i dialogrutan och välj **Skapa inbäddningskod**.
+   ![PtW1](media/service-publish-to-web/publish_to_web_admin_prompt.png)
+
+3. Granska innehållet i dialogrutan och välj **Skapa inbäddningskod**.
 
    ![PtW2](media/service-publish-to-web/publish_to_web2_ga.png)
 
-3. Läs den varning som visas här och bekräfta att det är OK om dessa data bäddas in på en offentlig webbplats. Välj **Publicera** om så är fallet.
+4. Läs den varning som visas här och bekräfta att det är OK om dessa data bäddas in på en offentlig webbplats. Välj **Publicera** om så är fallet.
 
    ![PtW3](media/service-publish-to-web/publish_to_web3_ga.png)
 
-4. En dialogruta visas med en länk. Du kan skicka den här länken i ett e-postmeddelande, bädda in den i kod såsom en iFrame eller klistra in den direkt på en webbplats eller blogg.
+5. En dialogruta visas med en länk. Du kan skicka den här länken i ett e-postmeddelande, bädda in den i kod såsom en iFrame eller klistra in den direkt på en webbplats eller blogg.
 
    ![PtW4](media/service-publish-to-web/publish_to_web4.png)
 
-5. Om du tidigare skapade en inbäddningskod för en rapport och väljer **Publicera på webben** ser du inte dialogrutorna i steg 2–4. I stället visas dialogrutan **Inbäddningskod**:
+6. Om du tidigare skapade en inbäddningskod för en rapport och väljer **Publicera på webben** ser du inte dialogrutorna i steg 2–4. I stället visas dialogrutan **Inbäddningskod**:
 
    ![PtW5](media/service-publish-to-web/publish_to_web5.png)
 
@@ -67,13 +71,13 @@ Följande tabell innehåller råd om visningsläget och hur det ser ut när det 
 
 | Visningsläge | Hur det ser ut när det är inbäddat |
 | --- | --- |
-| ![PtW6b](media/service-publish-to-web/publish_to_web6b.png) |**Anpassa till sida** tar hänsyn till rapportens sidhöjd och sidbredd. Om du ställer in sidan på *dynamiska* förhållanden såsom 16:9 eller 4:3 skalas innehållet så att det passar i iFrame. Vid inbäddning i en iFrame kan användning av **Anpassa till sida** resultera i *letterbox-format*, där en grå bakgrund visas i iFrame-områden när innehållet har skalats för att rymmas i iFrame. Om du vill minimera letterbox-formatet anger du höjd och bredd för iFrame därefter. |
+| ![PtW6b](media/service-publish-to-web/publish_to_web6b.png) |**Anpassa till sida** tar hänsyn till rapportens sidhöjd och sidbredd. Om du ställer in sidan på *dynamiska* förhållanden såsom 16:9 eller 4:3, så skalas innehållet så att det passar i iFrame. Vid inbäddning i en iFrame kan användning av **Anpassa till sida** resultera i *letterbox-format*, där en grå bakgrund visas i iFrame-områden när innehållet har skalats för att rymmas i iFrame. Om du vill minimera letterbox-formatet anger du höjd och bredd för iFrame därefter. |
 | ![PtW6d](media/service-publish-to-web/publish_to_web6d.png) |**Faktisk storlek** säkerställer att rapporten bevarar den storlek som angetts på rapportsidan. Detta kan resultera i rullningslister i iFrame. Ange höjd och bredd för iFrame så att du kan undvika rullningslister. |
 | ![PtW6c](media/service-publish-to-web/publish_to_web6c.png) |**Anpassa till bredd** säkerställer att innehållet passar det vågräta iFrame-området. En kant visas fortfarande, men innehållet skalas så att allt tillgängligt vågrätt utrymme används. |
 
 ## <a name="tips-and-tricks-for-iframe-height-and-width"></a>Tips och tricks för höjd och bredd i iFrame
 
-En inbäddningskod för **Publicera på webben** ser ut så här:
+En inbäddningskod för **Publicera på webben** ser ut som i följande exempel:
 
 ![PtW7](media/service-publish-to-web/publish_to_web7.png)
  
@@ -141,16 +145,27 @@ Anpassade visuella objekt stöds i **Publicera på webben**. När du använder *
 
 ## <a name="tenant-setting"></a>Klientinställning
 
-Power BI-administratörer kan aktivera eller inaktivera funktionen **Publicera på webben**. De kan även begränsa åtkomsten till specifika grupper, vilket kan påverka din möjlighet att skapa en inbäddningskod.
+Inställningen **Publicera på webben** tillhandahåller alternativ för vilka användare kan skapa inbäddningskoder.
 
-|Visning av aktuellt objekt |Aktiverad för hela organisationen |Inaktiverad för hela organisationen |Specifika säkerhetsgrupper   |
+![Inställningen publicera på webben](media/service-admin-portal/powerbi-admin-publish-to-web-setting.png)
+
+Du uppmanas att be en Power BI-administratör skapa en inbäddningskod när alternativet **Välj hur inbäddningskoder ska fungera** är inställt på **Tillåt endast befintliga inbäddningskoder** och inställningen **Publicera till webben** är **Aktiverad**.
+
+![Uppmaning om att publicera på webben](media/service-publish-to-web/publish_to_web_admin_prompt.png)
+
+Power BI-administratörer kan aktivera eller inaktivera funktionen **Publicera på webben**. De kan även begränsa åtkomsten till specifika grupper, vilket kan påverka din möjlighet att skapa en inbäddningskod. Du ser olika alternativ i användargränssnittet baserat på vad inställningen för **Publicera på webben** är.
+
+|Funktion |Aktiverad för hela organisationen |Inaktiverad för hela organisationen |Specifika säkerhetsgrupper   |
 |---------|---------|---------|---------|
 |**Publicera på webben** under rapportens **Arkiv**-meny|Aktiverad för alla|Inte synlig för alla|Endast synlig för behöriga användare eller grupper.|
 |**Hantera inbäddade koder** under **Inställningar**|Aktiverad för alla|Aktiverad för alla|Aktiverad för alla.<br><br>Alternativet * **Ta bort** endast för behöriga användare eller grupper.<br>* **Hämta koder** aktiverat för alla.|
-|**Inbäddade koder** i administrationsportalen|Statusen visas något av följande:<br>* Aktiv<br>* Stöds ej<br>* Blockerad|Statusen visar **Inaktiverad**|Statusen visas något av följande:<br>* Aktiv<br>* Stöds ej<br>* Blockerad<br><br>Om en användare inte har behörighet baserad på klientinställningen, visas statusen som **intrång**.|
+|**Inbäddade koder** i administrationsportalen|Statusen visar något av följande:<br>* Aktiv<br>* Stöds ej<br>* Blockerad|Statusen visar **Inaktiverad**|Statusen visar något av följande:<br>* Aktiv<br>* Stöds ej<br>* Blockerad<br><br>Om en användare inte har behörighet baserad på klientinställningen, visas statusen som **intrång**.|
 |Befintliga publicerade rapporter|Alla aktiverade|Alla inaktiverade|Rapporter fortsätta att visas för alla.|
 
 ## <a name="understanding-the-embed-code-status-column"></a>Förstå statuskolumnen för inbäddningskod
+
+>[!Note]
+>Du bör regelbundet granska de inbäddningskoder som du har publicerat och ta bort dem som inte längre behöver vara tillgängliga offentligt. 
 
 Sidan **Hantera inbäddningskoder** innehåller en statuskolumn. Som standard är inbäddningskoder **aktiva**, men de kan även ha någon av de statusar som anges nedan.
 
@@ -178,7 +193,7 @@ Du måste vara en Microsoft Power BI-användare för att kunna använda **Public
 
 När du skapar en inbäddningskod med hjälp av **Publicera på webben** görs rapporten synlig för Internetanvändare. Den är offentligt tillgänglig, så du kan förvänta dig att användarna enkelt kan dela rapporten via sociala medier i framtiden. När användarna visar rapporten, antingen genom att öppna den offentliga URL:en direkt, eller visa den inbäddad på en webbsida eller i en blogg, så cachelagrar Power BI rapportdefinitionen och resultaten för de frågor som krävs för att visa rapporten. Detta säkerställer att tusentals samtidiga användare kan visa rapporten utan att påverka prestanda.
 
-Cacheminnet är långlivat, så om du uppdaterar rapportdefinitionen (om du till exempel dess visningsläge) eller uppdaterar rapportdata kan ta ungefär en timme innan ändringarna avspeglas i den version av rapporten som användarna ser. Därför rekommenderar vi att du mellanlagrar ditt arbete i förväg och skapa inbäddningskoden för **Publicera på webben** enbart när du är nöjd med inställningarna.
+Cacheminnet är långlivat, så om du uppdaterar rapportdefinitionen (genom att t.ex. ändra dess visningsläge) eller uppdaterar rapportdata, så kan det ta ungefär en timme innan ändringarna avspeglas i den version av rapporten som användarna ser. Därför rekommenderar vi att du mellanlagrar ditt arbete i förväg och skapa inbäddningskoden för **Publicera på webben** enbart när du är nöjd med inställningarna.
 
 ## <a name="next-steps"></a>Nästa steg
 

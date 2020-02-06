@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 1/22/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 0733e726512ff52c5b51ba2d25cea18f8857f1e8
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: 08a58bd725b8a8da3ff54b5bb670eb70af458dc7
+ms.sourcegitcommit: 0cc594ebb78a6d0e88784673ed09f8aefd10c7a7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76537627"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76819271"
 ---
 # <a name="install-and-use-apps-with-dashboards-and-reports-in-power-bi"></a>Installera och använda appar med instrumentpaneler och rapporter i Power BI
 
@@ -57,7 +57,7 @@ Du hittar även och kan installera appar i Microsoft AppSource. Det är bara app
 
 I det här exemplet öppnar vi en av Microsofts exempelappar. På AppSource hittar du appar för många av de tjänster som du använder för att bedriva din verksamhet.  Tjänster som Salesforce, Microsoft Dynamics, Google Analytics, GitHub, Zendesk, Marketo och många fler. Mer information finns i [Appar för tjänster du använder med Power BI](../service-connect-to-services.md). 
 
-1. Öppna https://appsource.microsoft.com i en webbläsare och välj **Power BI-appar**.
+1. Öppna [https://appsource.microsoft.com](https://appsource.microsoft.com) i en webbläsare och välj **Power BI-appar**.
 
     ![Webbplatsen för AppSource med valda Power BI-appar  ](./media/end-user-apps/power-bi-appsource.png)
 

@@ -1,66 +1,57 @@
 ---
-title: Söka och sortera ditt innehåll i Power BI-tjänsten
-description: dokumentation för sökning samt sortering av innehåll i Min arbetsyta i Power BI
+title: Sök efter och hitta ditt innehåll
+description: dokumentation för sökning, lokalisering och navigering av innehåll i Power BI-tjänsten
 author: mihart
 ms.reviewer: willt
 ms.custom: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/21/2019
+ms.date: 01/27/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 5a7848cb5931d983ab434a19c934c9e9cb464724
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 64570b23700e125e9040f493630317c0c6350d0e
+ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73861739"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76889152"
 ---
-# <a name="navigation-searching-finding-and-sorting-content-in-power-bi-service"></a>Navigering: sökning, lokalisering och sortering av innehåll i Power BI-tjänsten
+# <a name="navigation-for-power-bi-consumers-sorting-content"></a>Navigering för Power BI konsumenter: sortera innehåll
+
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-Det finns många sätt att navigera i ditt innehåll i Power BI-tjänsten. Innehållet är organiserat på din arbetsyta efter typ: instrumentpaneler och rapporter.  Och innehållet ordnas också efter användning: favoriter, senaste, appar, delas med mig och funktioner. För enhetlig navigering organiserar *Power BI-start* innehållet på en enda sida. Med dessa olika vägar till ditt innehåll kan du snabbt hitta det du söker i Power BI-tjänsten.  
 
-## <a name="navigation-within-workspaces"></a>Navigera i arbetsytorna
+När du börjar använda Power BI-tjänsten så är bara några få innehållskomponenter tillgängliga (instrumentpaneler, rapporter, appar). Men allteftersom dina kollegor börjar dela innehåll med dig och du börjar hämta appar så kan du få långa listor med innehåll. Det är då du inser att sökning och sortering är mycket användbart.
 
-Power BI-*konsumenter* har vanligtvis endast en arbetsyta: **Min arbetsyta**. **Min arbetsyta** har innehåll om du har laddat ned Microsoft-exempel eller skapat eller laddat ned egna instrumentpaneler, rapporter eller appar.  
+## <a name="searching-for-content"></a>Söka efter innehåll
+ Sökning är tillgängligt från nästan alla delar av Power BI-tjänsten. Det är bara att titta efter sökrutan eller sökikonen ![förstoringsglasikon](./media/end-user-search-sort/power-bi-search-icon.png).
 
-I **Min arbetsyta** separerar Power BI-tjänsten ditt innehåll efter typ: instrumentpaneler, rapporter, arbetsböcker och datamängder. Den här organisationen visas när du väljer en arbetsyta. I det här exemplet innehåller **Min arbetsyta** en instrumentpanel, en rapport, inga arbetsböcker och en datamängd.
+ I sökfältet skriver du hela namnet, eller en del av det, för en instrumentpanel, rapport, arbetsbok eller ägare. Power BI söker igenom allt innehåll. 
 
-![video](./media/end-user-search-sort/myworkspace/myworkspace.gif)
+ ![söka efter en rapport](./media/end-user-search-sort/power-bi-search-field.png) 
 
-________________________________________
-## <a name="navigation-using-the-search-field"></a>Navigering via sökfältet
-Använd innehållsvyn i **Min arbetsyta** till att söka efter, filtrera och sortera ditt innehåll. I sökfältet skriver du hela eller en del av namnet på en instrumentpanel, rapport, arbetsbok eller ägare.  
+ I vissa områden av Power BI, t.ex. arbetsytor, finns det två olika sökfält. Sökfältet på menyraden söker igenom allt innehåll medan sökfältet arbetsytans sökfält endast söker igenom arbetsytan.
 
-Om du har ganska lite innehåll behöver du inte söka eller sortera.  Om du däremot har en lång lista över instrumentpaneler och rapporter är sökning och sortering dock mycket användbara funktioner. Till exempel innehåller rapportlistan nedan 83 objekt. 
+ ![söka igenom en arbetsyta](./media/end-user-search-sort/power-bi-search-fields.png) 
 
-![söka efter en rapport](./media/end-user-experience/power-bi-search.png)
+## <a name="sorting-content-lists"></a>Sortera innehållslistor
 
-Du kan också sortera innehåll efter namn eller ägare. Observera uppåtpilen till höger om **Namn**. För närvarande sorterar vi 83 objekt stigande alfabetiskt efter namn. Om du vill ändra sorteringsordningen till fallande väljer du **Namn**. Uppåtpilen ändras till en nedåtpil.
+Om du bara har några få innehållsbitar, så är kanske inte sortering nödvändigt.  Men när du har långa listor med instrumentpaneler och rapporter, så kan sortering hjälpa dig att hitta det du söker. Den här innehållslistan för **Delas med mig** innehåller t.ex. 63 objekt. 
 
-![sortera innehåll](./media/end-user-experience/power-bi-sort-new.png)
+![innehållslista för delas med mig](./media/end-user-search-sort/power-bi-long-lists.png)
+
+Just nu sorteras den här innehållslistan efter datum, från det senaste till det äldsta. Om du vill ändra sorteringsvillkoren, så välj pilen till höger om **Datum (senaste)** .
+
+![Sorteringslistruta](./media/end-user-search-sort/power-bi-sort-date.png)
+
+
+Sortering är också tillgängligt på arbetsytor. I det här exemplet sorteras innehållet efter det datum då det **uppdaterades**. Om du vill ange sorteringsvillkor för arbetsytor, så välj kolumnrubriker. Markera en gång för att välja rubriken och markera en gång till för att ändra sorteringsriktningen. 
+
+![söka efter en rapport](./media/end-user-search-sort/power-bi-workspace-sort.png)
 
 Det finns vissa kolumner som inte kan sorteras. Hovra över kolumnrubrikerna för att identifiera vilka som kan sorteras.
-
-___________________________________________________________________
-## <a name="navigation-using-the-nav-pane"></a>Navigera med hjälp av navigeringsfönstret
-I navigeringsfönstret klassificeras ditt innehåll på ett sätt som gör att du snabbt hittar det du behöver.  
-
-![navigeringsfönster](./media/end-user-search-sort/power-bi-nav pane.png)
-
-
-- Innehåll som delas med dig är tillgängligt i **delat med mig**.
-- Senast visat innehåll är tillgängligt i **senaste**. 
-- Dina appar kan hittas genom att välja **appar**.
-- **Start** är en vy av en enda sida av dina viktigaste innehåll och innehållsförslag och inlärningskällor.
-
-Dessutom kan du tagga innehåll Med [Favoriter](end-user-favorite.md) och [Aktuellt](end-user-featured.md). Välj den instrumentpanel eller den rapport som du tror att du oftast kommer att använda och ange den som ditt *aktuella* innehåll. Varje gång du öppnar Power BI-tjänsten visas din aktuella instrumentpanel först. Har du flera instrumentpaneler och appar som du besöker ofta? Genom att ange dem som favoriter är de alltid tillgängliga i navigeringsfönstret.
-
-![Favoriter utfällt](./media/end-user-search-sort/power-bi-favorite.png).
-
 
 
 ## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning

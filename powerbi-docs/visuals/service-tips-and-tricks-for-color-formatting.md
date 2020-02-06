@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/04/2019
+ms.date: 01/29/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 006288cd380a56ba57697ed285b04b38985b69db
-ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
+ms.openlocfilehash: 0b633f2482c5b9f1624f39e4f2c0e07afc55353f
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74831645"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76895064"
 ---
 # <a name="tips-and-tricks-for-color-formatting-in-power-bi"></a>Tips för färgformatering i Power BI
 Power BI erbjuder många olika sätt på vilka du kan anpassa dina instrumentpaneler och rapporter. Den här artikeln innehåller detaljerad information om en samling tips med vilkas hjälp du kan göra dina Power BI-visualiseringar mer intressanta och anpassade efter dina behov.
@@ -23,13 +23,15 @@ Följande tips tillhandahålls. Har du ytterligare något bra tips? Toppen! Skic
 
 * Använd ett tema för hela rapporten
 * Ändra färg på en enskild datapunkt
+* Villkorsstyrd formatering
 * Basera färgerna i ett diagram på ett numeriskt värde
 * Basera datapunkternas färg på ett fältvärde
 * Anpassa färgerna som används i färgskalan
 * Använda avvikande färgskalor
+* Lägg till färg till tabellrader
 * Hur du ångrar i Power BI
 
-Om du vill göra några ändringar måste du redigera en rapport. Öppna rapporten och välj **Redigera rapport** från menyområdet, som i följande bild.
+Om du vill göra några ändringar måste du ha redigeringsbehörigheter för rapporten. Öppna rapporten i **rapportvyn** i Power BI Desktop. I Power BI-tjänsten innebär detta att du öppnar rapporten och väljer **Redigera** på menyraden, så som visas på följande bild.
 
 ![här hittar du menyn Redigera](media/service-tips-and-tricks-for-color-formatting/power-bi-edit-report.png)
 
@@ -55,7 +57,7 @@ Följande visualisering rangordnar enheter sålda per produktsegment.
 
 Anta nu att du vill att anropa segmentet **Bekvämlighet** för att visa hur väl den här helt nya segmentet fungerar, genom att använda färg. Gör så här:
 
-Expandera avsnittet **Datafärger** och aktivera skjutreglaget för **Visa alla**. Då visas färgerna för varje dataelement i visualiseringen. Ändra någon av datapunkterna.
+Visa kortet **Datafärger** och aktivera skjutreglaget för **Visa alla**. Då visas färgerna för varje dataelement i visualiseringen. Du kan nu ändra vilken som helst av datapunkterna.
 
 ![](media/service-tips-and-tricks-for-color-formatting/power-bi-show.png)
 
@@ -71,7 +73,7 @@ Du kan ändra färg på en datapunkt för ett, flera eller alla dataelement i vi
 
 ![stapeldiagram med staplar som är gröna, gula och blå](media/service-tips-and-tricks-for-color-formatting/power-bi-corporate.png)
 
-Det finns olika typer av saker du kan göra med färger. I nästa avsnitt ta vi en titt på toningar.
+Det finns olika typer av saker du kan göra med färger. I nästa avsnitt ta vi en titt på villkorsstyrd formatering.
 
 ## <a name="conditional-formatting-for-visualizations"></a>Villkorsstyrd formatering för visuella objekt
 Visualiseringar blir ofta bättre om du använder dynamiska färginställningar som baseras på fältens numeriska värden. På så sätt kan du visa ett annat värde än vad som används för stapelns storlek, och visa två värden i samma diagram. Eller så kan du använda det för att markera datapunkter över (eller under) ett visst värde – t.ex. områden med låg lönsamhet.
@@ -79,7 +81,7 @@ Visualiseringar blir ofta bättre om du använder dynamiska färginställningar 
 I följande avsnitt visar vi olika sätt på vilka man kan basera färger på numeriska värden.
 
 ### <a name="base-the-color-of-data-points-on-a-value"></a>Basera datapunkternas färg på ett värde
-Om du vill ändra färg baserat på ett värde väljer du en visualisering för att göra den aktiv. Öppna formateringsfönstret genom att välja rollerikonen och expandera kortet **Datafärger**. Hovra över kortet, välj de tre lodräta punkterna som visas och sedan **Villkorsstyrd formatering**.  
+Om du vill ändra färg baserat på ett värde väljer du en visualisering för att göra den aktiv. Öppna formateringsfönstret genom att välja rollerikonen och visa sedan kortet **Datafärger**. Hovra över kortet, välj de tre lodräta punkterna som visas och sedan **Villkorsstyrd formatering**.  
 
 ![välj alternativet för villkorsstyrd formatering genom att klicka på de tre lodräta punkterna](media/service-tips-and-tricks-for-color-formatting/power-bi-conditional-formatting.gif)
 
@@ -103,9 +105,9 @@ Notera hur diagramstaplarna i den första bilden reflekterar den toning som visa
 
 ![](media/service-tips-and-tricks-for-color-formatting/power-bi-conditional4.png)
 
-Nu ska vi se vad som händer om vi tillhandahåller numeriska värden i värdefälten **Minimum** och **Maximum**. Välj **Tal** från listrutorna för både **Lägsta** och **Högsta**. Sätt **Lägsta** till 3 500 och **Högsta** till 6 000.
+Nu ska vi se vad som händer om vi tillhandahåller numeriska värden i värdefälten **Minimum** och **Maximum**. Välj **Anpassad** från listrutorna för både **Lägsta** och **Högsta**. Sätt **Lägsta** till 3 500 och **Högsta** till 6 000.
 
-![Formatering med talvillkor](media/service-tips-and-tricks-for-color-formatting/power-bi-conditional-formatting-number.png)
+![Formatering med talvillkor](media/service-tips-and-tricks-for-color-formatting/power-bi-conditional-formatting-numbers.png)
 
 Om du anger dessa värden så tillämpas inte toningen längre på värden i diagrammet som är lägre än **Lägsta** eller högre än **Högsta**. Alla staplar med värden över **Högsta** färgas gröna, och alla staplar med värden under **Lägsta** färgas röda.
 
@@ -116,22 +118,36 @@ Ibland kan dina data ha en naturligt avvikande skala. Ett temperaturintervall ha
 
 Om du vill använda divergerande färgskalor markerar du kryssrutan **Divergerande**. När du har aktiverat **Divergerande** visas ytterligare en färgväljare som kallas **Mitten**, som du ser i följande bild.
 
-![](media/service-tips-and-tricks-for-color-formatting/power-bi-diverging2.png)
+![Standarddialogrutan för färg med färgskala vald](media/service-tips-and-tricks-for-color-formatting/power-bi-diverging-colors.png)
 
 När skjutreglaget **Avvikande** har aktiverats kan du ange färgerna för **Lägsta**, **Högsta** och **Mitten** separat. I följande bild är **Center** (Mitten) inställt på .2 för **% Market Share SPLY YTD**, så staplar med värden över .2 har olika toningar av grönt medan staplar med värden under har olika toningar av rött.
 
-![](media/service-tips-and-tricks-for-color-formatting/power-bi-diverging.png)
+![stapeldiagram med röda och gröna staplar](media/service-tips-and-tricks-for-color-formatting/power-bi-diverging.png)
+
+## <a name="add-color-to-table-rows"></a>Lägg till färg till tabellrader
+Tabeller och matriser erbjuder många alternativ för färgformatering. 
+
+![standardtabell](media/service-tips-and-tricks-for-color-formatting/power-bi-table.png)
+
+Ett av de snabbaste sätten att använda färger på i en tabell eller matris är att öppna fliken Formatering och välja **Format**.  På bilden nedan har **Fet rubrik, pråliga rader** valts.
+
+![standardtabell](media/service-tips-and-tricks-for-color-formatting/power-bi-table-style.png)
+
+Experimentera med andra färgformateringsalternativ. På den här bilden har vi ändrat bakgrundsfärgen under **Kolumnrubriker** och ändrat både **Bakgrundsfärg** och **Alternativ bakgrundsfärg** för **Värden** (rader).
+
+![standardtabell](media/service-tips-and-tricks-for-color-formatting/power-bi-table-rows.png)
 
 ## <a name="how-to-undo-in-power-bi"></a>Hur du ångrar i Power BI
 Precis som med många andra Microsoft-tjänster och program så erbjuder Power BI ett enkelt sätt på vilket du kan ångra ditt senaste kommando. Låt oss säga att du t.ex. ändrar färg på en datapunkt, eller en serie datapunkter, och du inte tycker om färgen när den visas i visualiseringen. Du kommer inte ihåg exakt vilken färg du hade tidigare, men du vill ha tillbaka den!
 
 Om du vill **ångra** en eller flera åtgärder trycker du bara Ctrl+Z.
 
+Om du vill ignorera alla ändringar som du har gjort på ett formateringskort, så välj **Återgå till standard**.
+
+![Formateringskort som visar Återgå till standard längst ned](media/service-tips-and-tricks-for-color-formatting/power-bi-revert.png)
+
 ## <a name="feedback"></a>Feedback
 Har du något tips som du vill dela? Skicka det till oss, så ska vi se till att lägga till det här.
-
->[!NOTE]
->Dessa färger, axlar och relaterade anpassningar är tillgängliga när ikonen **Format** är markerad, och de är också tillgängliga i Power BI Desktop.
 
 ## <a name="next-steps"></a>Nästa steg
 [Komma igång med färgformatering och axelegenskaper](service-getting-started-with-color-formatting-and-axis-properties.md)

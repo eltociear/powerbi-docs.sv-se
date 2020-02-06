@@ -1,29 +1,174 @@
 ---
 title: Nyheter i Power BI-rapportserver
-description: Läs mer om nyheterna i Power BI-rapportserver. Detta omfattar de viktiga funktionsområdena och uppdateras när nya objekt släpps.
+description: Läs mer om nyheterna i Power BI-rapportserver. Den här artikeln omfattar de viktiga funktionsområdena och uppdateras när nya objekt släpps.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 09/26/2019
-ms.openlocfilehash: 526a971817c50599bf77ae085f3d5ff07294b25b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 01/23/2020
+ms.openlocfilehash: 9b7ea090d7860de9ec4132b070bd1286085cc5f3
+ms.sourcegitcommit: 0cc594ebb78a6d0e88784673ed09f8aefd10c7a7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73858746"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76819570"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Nyheter i Power BI-rapportserver
 
-Lär dig mer nyheterna i Power BI-rapportserver och Power BI Desktop optimerat för Power BI-rapportserver. Den här artikeln omfattar de viktiga funktionsområdena och uppdateras med varje ny utgåva.
+Läs om nyheterna i Power BI-rapportserver och Power BI Desktop optimerat för Power BI-rapportserver. Den här artikeln omfattar de viktiga funktionsområdena och uppdateras med varje ny utgåva.
+
+Ladda ned [Power BI-rapportserver och Power BI Desktop optimerat för Power BI-rapportserver](https://powerbi.microsoft.com/report-server/).
 
 Relaterad information om nyheter i Power BI finns i:
 
 * [Nyheter i Power BI-tjänsten](../service-whats-new.md)
 * [Nyheter i Power BI Desktop](../desktop-latest-update.md)
 * [Nyheter i mobilapparna för Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)
+
+## <a name="january-2020"></a>Januari 2020
+
+Mer information finns i blogginlägget om Power BI-rapportserver från januari 2020.
+
+### <a name="power-bi-desktop-optimized-for-power-bi-report-server"></a>Power BI Desktop optimerat för Power BI-rapportserver
+
+Den här versionen innehåller många nya funktioner, som villkorsstyrd formatering för knappar, dataprofileringsförbättringar och fler formateringsinställningar för KPI:er och visuella tabellobjekt. Här följer en sammanfattning av uppdateringarna:
+
+**Rapportering**
+
+- Ange tabellkolumn eller matrisvärde som en anpassad URL
+- Inställningar för visuell KPI-formatering
+- Uppdateringar av filterfönsterfunktionen
+
+**Analys**
+
+- Knappar för villkorsstyrd formatering
+- Läsa in mer för analys av insikter
+- Ny DAX-funktion: Kvartal
+
+**Förberedelse av data**
+
+- Förbättringar av dataprofilering
+
+**Övrigt**
+
+- Nytt filformat: .pbids
+- Prestandaförbättringar för modelleringsåtgärder
+
+**Rapportering**
+
+*Ange en tabellkolumn eller ett matrisvärde som en anpassad URL*
+
+Du kan ange en tabellkolumn eller ett matrisvärde som en anpassad URL. Du hittar det här nya alternativet under kortet för villkorsstyrd formatering i formateringsfönstret.
+
+*Inställningar för visuell KPI-formatering*
+
+I och med den här månadens version så har KPI:er nya formateringsalternativ:
+
+- Indikatortextformatering (teckensnittsfamilj, färg och justering)
+- Trendaxeltransparens
+- Mål- och avståndstextformat (etikettext, teckensnittsfamilj, färg och storlek)
+- Avståndstextformat (etikettext, positiv riktning, teckensnittsfamilj, färg och storlek)
+- Lägga till en datumetikett med formatering (teckensnittsfamilj, färg och storlek)
+
+Du kan ange vissa av de här formateringsalternativen med villkorsstyrd formatering:
+
+- Indikatorteckensnittsfärg
+- Målteckensnittsfärg och färg för målavståndsteckensnitt
+- Färgerna för bra/dålig/neutral status
+- Datumteckensnittsfärg
+
+*Uppdateringar av filterfönsterfunktionen*
+
+Som en del av den allmänna tillgängligheten för den [senaste versionens](https://powerbi.microsoft.com/blog/power-bi-report-server-september-2019-feature-summary/#filterPane) nya filterfunktion har vi effektiviserat processen att överföra aktuella rapporter till det nya fönstret. När du öppnar Power BI-rapportserver för första gången visas en dialogruta för automatisk uppdatering av filterfönstret. Dessa uppdateringar inkluderar även banderoller i rapportservern när rapporterna måste migreras till den nya funktionen.
+
+**Analys**
+
+*Villkorsstyrd formatering för knappar*
+
+Alla de här uppdateringarna för villkorsstyrd formatering är knapprelaterade. Nu kan du ange formatering för följande egenskaper dynamiskt:
+
+- Teckenfärg för knapptext
+- Knapptext
+- Ikonlinjefärg
+- Konturfärg
+- Fyllningsfärg
+- Knappbeskrivning (under åtgärdskortet)
+
+*Läsa in mer för analys av insikter*
+
+När du kör analysfunktionen för att hitta insikter i dina data, som att exempelvis förklara ökning, så körs maskininlärningsmodellerna endast under en viss fastställd tidsperiod, så att du får insikterna inom rimlig tid. Om det är mycket data att analysera så kan du nu välja att fortsätta att köra analysen efter den första tidsgränsen.
+
+*Ny DAX-funktion: Kvartal*
+
+Den här månaden har vi den nya DAX-funktionen Kvartal. Funktionen Kvartal returnerar det kvartal som motsvarar det angivna datumet.
+
+**Förberedelse av data**
+
+*Förbättringar av dataprofilering*
+
+Den här månaden introducerar vi ett par betydande förbättringar av Power Query-redigerarens dataprofileringsfunktioner:
+
+- Flera grupperingsalternativ för kolumnprofilsfönstervärdets visuella distributionsobjekt, särskilt efter kolumntyp, förutom de befintliga "efter värde"-kriterierna.
+- Text: Efter textlängd (antal tecken).
+- Tal: Efter tecken (positivt/negativt) och paritet (jämn/udda).
+- Datum/DateTime: Per år, månad, dag, vecka, veckodag, fm/em-tid och timma.
+- Och mera för andra datatyper, t.ex. logiska sant/falskt.
+
+*Filtrera alternativ*
+
+Du kan redan utnyttja flera typspecifika grupperingskriterier i distributions fönstret för Kolumnprofiler. Nu kan du också filtrera inifrån bildtexterna för vart och ett av värdena i distributionsdiagrammet när du använder gruppvillkor. I fönstret Dataprofiler för en Datum/DateTime-kolumn kan du t.ex. undanta alla värden som infaller under en viss månad.
+
+**Övrigt**
+
+*Nytt filformat: .pbids*
+
+Den här månaden släpper vi ett nytt filformat, .pbids, med vilket du kan effektivisera funktionen Hämta data för din organisations rapportskapare. Vi rekommenderar att administratörer skapar dessa filer för de anslutningar som används ofta.
+
+När en rapportskapare öppnar en .pbids-fil, så visas en autentiseringsuppmaning i Power BI Desktop för anslutning till den datakälla som anges i filen. Sedan väljer användaren de tabeller som ska läsas in i modellen. De kan också behöva välja databasen om någon sådan inte har angetts i filen. Därifrån kan rapportskaparen börja skapa visualiseringar.
+
+Mer information och exempel finns i avsnittet [Använda .pbids-filer för att hämta data](../desktop-data-sources.md#using-pbids-files-to-get-data) i artikeln "Datakällor i Power BI Desktop".
+
+*Prestandaförbättringar för modelleringsåtgärder*
+
+Vi har gjort en prestandaförbättring i Analysis Services-motorn, så att modelleringsåtgärderna, som att lägga till mått eller beräknade kolumner eller skapa relationer, kan genomföras snabbare. Hur stora förbättringar du ser beror på modellen, men vi har sett tjugofaldiga prestandaförbättringar för vissa kunder när det gäller åtgärder som att öppna en fil eller lägga till ett mått.
+
+Detta är allt när det gäller januariversionen 2020 av Power BI-rapportserver. Fortsätt att skicka feedback och glöm inte att [rösta på de funktioner som du vill se i Power BI](https://ideas.powerbi.com/forums/265200-power-bi).
+
+### <a name="power-bi-report-server"></a>Power BI-rapportserver
+
+#### <a name="export-to-excel-from-power-bi-reports"></a>Exportera till Excel från Power BI-rapporter
+
+Att exportera till Excel från en Power BI-rapport i Power BI-rapportserver fungerar nu på samma sätt som när du exporterar till Excel från en Power BI-rapport i Power BI-tjänsten. Du kan exportera direkt till Excels .xlsx-format, och exportgränsen ligger på 150 000 rader.
+
+#### <a name="azure-sql-managed-instance-support"></a>Support för Azure SQL-hanterad instans
+
+Nu kan du vara värd för en databaskatalog som används för Power BI-rapportserver i en Azure SQL-hanterad instans (MI) som finns i en virtuell dator eller i ditt datacenter. Stödet är begränsat till att använda databasautentiseringsuppgifter för anslutningen till SQL MI.
+
+#### <a name="power-bi-premium-dataset-support"></a>Power BI Premium-datamängdssupport
+
+Du kan ansluta till Power BI-datamängder med Microsoft Report Builder eller SQL Server Data Tools (SSDT). Sedan kan du publicera dessa rapporter till Power BI-rapportserver med hjälp av en SQL Server Analysis Services-anslutning. Användarna måste använda ett lagrat Windows-användarnamn och lösenord för att kunna aktivera scenariot.
+
+#### <a name="alttext-alternative-text-support-for-report-elements"></a>AltText-stöd (alternativ text) för rapportelement
+
+När du redigerar rapporter kan du använda knappbeskrivningar för att ange text för varje element i rapporten. Skärmläsartekniker kan använda dessa knappbeskrivningar.
+
+#### <a name="azure-active-directory-application-proxy-support"></a>Support för Azure Active Directory-programproxy
+
+Med Azure Active Directory-programproxy behöver du inte längre hantera din egen webbprogramproxy när du ska tillåta säker åtkomst via webben eller mobilappar. Mer information finns i [Fjärråtkomst till lokala program via Azure Active Directory-programproxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy).
+
+#### <a name="custom-headers"></a>Anpassade rubriker
+
+Anger rubrikvärden för alla URL:er som matchar det angivna regex-mönstret. Användare kan uppdatera det anpassade rubrikvärdet med giltig XML och ange rubrikvärden för de valda begärans-URL:erna. Administratörer kan lägga till ett valfritt antal rubriker i XML-filen. Mer information finns i [Anpassade rubriker](https://docs.microsoft.com/sql/reporting-services/tools/server-properties-advanced-page-reporting-services#custom-headers) i Reporting Services-artikeln **Serveregenskaper, sidan Avancerat**.
+
+#### <a name="transparent-database-encryption"></a>Transparent databaskryptering
+
+Power BI-rapportserver stöder nu transparent databaskryptering för Power BI-rapportserverns databaskatalog för Enterprise- och Standard-utgåvorna.
+
+#### <a name="microsoft-report-builder-update"></a>Microsoft Report Builder-uppdatering
+
+Den nyligen utgivna versionen av Report Builder är helt kompatibel med Reporting Services-versionerna från 2016, 2017 och 2019. Den är också kompatibel med alla släppta versioner av Power BI-rapportserver som stöds.
 
 ## <a name="september-2019"></a>September 2019
 
@@ -80,37 +225,39 @@ Här är hela listan över funktioner.
 - Kopiera till urklipp från dataprofilering
 
 
-## <a name="may-2019-power-bi-desktop-for-power-bi-report-server"></a>Maj 2019: Power BI Desktop för Power BI-rapportservern
+## <a name="may-2019"></a>Maj 2019
+
+### <a name="power-bi-desktop-for-power-bi-report-server"></a>Power BI Desktop för Power BI-rapportservern
 
 Se inlägget om [Power BI-rapportserver maj 2019](https://powerbi.microsoft.com/blog/power-bi-report-server-update-may-2019/) för information om alla nya funktioner.
 
 Här följer några höjdpunkter:
 
-### <a name="performance-analyzer"></a>Prestandaanalys 
+#### <a name="performance-analyzer"></a>Prestandaanalys 
 
 Om din rapport körs långsammare än förväntat provar du Prestandaanalys i Power BI Desktop. När du startar den skapas en loggfil med information om varje åtgärd du utför i rapporten. Läs mer om [Prestandaanalys](../desktop-performance-analyzer.md).
 
-### <a name="new-modeling-view"></a>Ny modelleringsvy
+#### <a name="new-modeling-view"></a>Ny modelleringsvy
 
 I den nya Modelleringsvyn i Power BI Desktop kan du visa och arbeta med komplexa datauppsättningar som innehåller många tabeller. Höjdpunkterna omfattar flera diagramlayouter och massredigering av kolumner, mått och tabeller. Läs mer om [Modelleringsvyn](../desktop-modeling-view.md).
 
-### <a name="accessible-visual-interaction"></a>Tillgänglig visuell interaktion
+#### <a name="accessible-visual-interaction"></a>Tillgänglig visuell interaktion
 
 Nu kan du komma åt datapunkter på många av de inbyggda visuella objekten med hjälp av tangentbordsnavigering. Läs mer om [tillgänglighet i Power BI-rapporter](../desktop-accessibility.md).
 
-### <a name="conditional-formatting-titles-and-web-url-actions"></a>Rubriker för villkorsstyrd formatering och webb-URL-åtgärder
+#### <a name="conditional-formatting-titles-and-web-url-actions"></a>Rubriker för villkorsstyrd formatering och webb-URL-åtgärder
 
 Power BI-rapporter är interaktiva. Det är logiskt att rubriker i en rapport är dynamiska, för att spegla den aktuella statusen för rapporten. Du kan använda samma uttrycksbunden formatering för att göra URL:erna för dina knappar, former och bilder dynamiska. Läs mer om [uttrycksbaserade rubriker](../desktop-conditional-format-visual-titles.md).
 
-### <a name="cross-highlight-by-axis-labels"></a>Korsmarkera enligt axeletiketter
+#### <a name="cross-highlight-by-axis-labels"></a>Korsmarkera enligt axeletiketter
 
 Välj axelkategorietiketterna i ett visuellt objekt för att korsmarkera de andra elementen på en sida, precis som du skulle välja datapunkterna i ett visuellt objekt. Läs mer om [korsmarkering](../power-bi-reports-filters-and-highlighting.md#ad-hoc-highlighting).
 
-### <a name="all-the-new-features"></a>Alla nya funktioner
+#### <a name="all-the-new-features"></a>Alla nya funktioner
 
 Här är listan över alla nya funktioner:
 
-### <a name="reporting"></a>Rapportering
+#### <a name="reporting"></a>Rapportering
 
 - Korsmarkera på en enskild punkt i linjediagram 
 - Automatiskt radbyte i rubriker 
@@ -131,24 +278,24 @@ Här är listan över alla nya funktioner:
 - Kontroll över etiketters position i raddata
 - Kontroll över textstorleken i visuella KPI-indikeringar
 
-### <a name="analytics"></a>Analys
+#### <a name="analytics"></a>Analys
 
 - Visa datum som en hierarki är nu allmänt tillgängligt  
 
-### <a name="modeling"></a>Modellering
+#### <a name="modeling"></a>Modellering
 
 - Ny modelleringsvy är nu allmänt tillgänglig
 - Nya DAX-funktioner
 - Uppdatering av funktionen ALLSELECTED DAX
 - Inaktivera automatisk datering av tabeller i nya rapporter
 
-## <a name="may-2019-power-bi-report-server"></a>Maj 2019: Power BI-rapportserver
+### <a name="power-bi-report-server"></a>Power BI-rapportserver
 
-### <a name="support-for-trusted-visuals"></a>Stöd för betrodda visuella objekt
+#### <a name="support-for-trusted-visuals"></a>Stöd för betrodda visuella objekt
 
 Vi har lagt till stöd för betrodda visuella objekt i Power BI-rapportserver. För närvarande stöds visuella Mapbox- och PowerOn-objekt. ESRI, Visio och PowerApps stöds inte för den här versionen.)
 
-### <a name="improved-security-features"></a>Förbättrade säkerhetsfunktioner
+#### <a name="improved-security-features"></a>Förbättrade säkerhetsfunktioner
 
 **RestrictedResourceMimeTypeForUpload**, som administratörer kan använda för att ange en kommaavgränsad lista över förbjudna mime-typer, till exempel text/html.
 
@@ -158,7 +305,7 @@ Stöd för dessa funktioner i Power BI-rapporter:
 
 [**Säkerhet på radnivå**](row-level-security-report-server.md) Konfiguration av säkerhet på radnivå (RLS) med Power BI-rapportserver kan begränsa dataåtkomst för givna användare. Filter begränsar åtkomst till data på radnivå och du kan definiera filter inom roller.
 
-[**Expandera eller komprimera på matrisens radrubriker** ](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/#expandCollapse) Vi har lagt till möjligheten att expandera eller komprimera enskilda radrubriker, en av de mest efterfrågade visuella funktionerna.
+[**Expandera eller komprimera på matrisens radrubriker**](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/#expandCollapse) Vi har lagt till möjligheten att expandera eller komprimera enskilda radrubriker, en av de mest efterfrågade visuella funktionerna.
 
 [**Kopiera och klistra in mellan pbix-filer**](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/#copyPaste) Du kan kopiera visuella objekt mellan pbix-filer, antingen från snabbmenyn för det visuella objektet eller med standardkortkommandot Ctrl + C och klistra in dem i en annan rapport med Ctrl + V.
 
@@ -176,7 +323,7 @@ Administratörer kan ange följande egenskaper i de avancerade SSMS-egenskaperna
 
 **AllowedResourceExtensionsForUpload** Ange tillägg av resurser som kan laddas upp till rapportservern. Filnamnstillägg för inbyggda filtyper som &ast;.rdl och &ast;.pbix behöver inte inkluderas. Standardvärdet är ”&ast;, &ast;.xml, &ast;.xsd, &ast;.xsl, &ast;.png, &ast;.gif, &ast;.jpg, &ast;.tif, &ast;.jpeg, &ast;.tiff, &ast;.bmp, &ast;.pdf, &ast;.svg, &ast;.rtf, &ast;.txt, &ast;.doc, &ast;.docx, &ast;.pps, &ast;.ppt, &ast;.pptx”. 
 
-**SupportedHyperlinkSchemes** Anger att en kommaavgränsad lista över URI-scheman som är tillåtna måste definieras i hyperlänkåtgärder som tillåts att återges eller ”&ast;” för att aktivera alla hyperlänkscheman. Till exempel skulle inställningen ”http,https” tillåta hyperlänkar till ”https://www. contoso.com”, men ta bort hyperlänkar till ”mailto:bill@contoso.com” eller ”javascript:window.open(”www.contoso.com”, ”_tomt”)”. Standardvärdet är ”&ast;”.
+**SupportedHyperlinkSchemes** Anger att en kommaavgränsad lista över URI-scheman som är tillåtna måste definieras i hyperlänkåtgärder som tillåts att återges eller ”&ast;” för att aktivera alla hyperlänkscheman. Inställningen ”http,https” skulle exempelvis tillåta hyperlänkar till ”https://www. contoso.com”, men ta bort hyperlänkar till ”mailto:bill@contoso.com” eller ”javascript:window.open(”www.contoso.com”, ”_tomt”)”. Standardvärdet är ”&ast;”.
 
 ## <a name="august-2018"></a>Augusti 2018
 
@@ -392,7 +539,7 @@ I Power BI-rapportserver kan du ställa in schemalagda datauppdateringar för at
 
 ### <a name="editing-power-bi-reports-from-the-server"></a>Redigera Power BI-rapporter från servern
 
-Du kan öppna och redigera Power BI-rapportfiler (.pbix) från servern, men du kommer tillbaka till den ursprungliga fil som du överförde.  Det innebär att **om datan har uppdaterats av servern kommer den inte uppdateras när du först öppnar filen**. Du måste uppdatera den lokalt manuellt för att se ändringen.
+Du kan öppna och redigera Power BI-rapportfiler (.pbix) från servern, men du kommer tillbaka till den ursprungliga fil som du överförde. **Om data har uppdaterats av servern så uppdateras de inte när du först öppnar filen första gången**. Du måste uppdatera den lokalt manuellt för att se ändringen.
 
 ### <a name="large-file-uploaddownload"></a>Uppladdning/nedladdning av stora filer
 
@@ -404,7 +551,7 @@ Du kan komma åt delade datauppsättningar från Power BI Desktop med ett OData-
 
 ### <a name="scale-out"></a>Utskalning
 
-Den här versionen stöder utskalning. Använd en belastningsutjämnare och ange servertillhörighet för bästa möjliga resultat. Observera att scenariot ännu inte har optimerats för utskalning, så du kommer eventuellt se att modeller replikeras över flera noder. Scenariot fungerar utan nätverkslastbalanseraren och fästsessioner. Dock visas inte bara en överanvändning av minnet i noderna när modellen blir inläst N gånger, utan prestandan kommer att bli långsammare mellan anslutningarna eftersom modellen strömmas när den når en ny nod mellan begärandena.  
+Den här versionen stöder utskalning. Använd en belastningsutjämnare och ange servertillhörighet för bästa möjliga resultat. Scenariot har ännu inte optimerats för utskalning, så du kan eventuellt komma att se modeller replikeras över flera noder. Scenariot fungerar utan nätverkslastbalanseraren och fästsessioner. Dock visas inte bara en överanvändning av minnet i noderna när modellen läses in N gånger, utan prestandan blir långsammare mellan anslutningarna eftersom modellen strömmas när den når en ny nod mellan begärandena.  
 
 ### <a name="administrator-settings"></a>Administratörsinställningar
 
@@ -416,7 +563,7 @@ Administratörer kan ange följande egenskaper i de avancerade SSMS-egenskaperna
 * MaxFileSizeMb: Standard är nu 1 000
 * ModelCleanupCycleMinutes: Hur ofta den kontrollerar att modeller tas bort från minnet
 * ModelExpirationMinutes: Hur lång tid det tar innan modellen upphör att gälla och tas bort, baserat på senaste användning
-* ScheduleRefreshTimeoutMinutes: Hur länge datauppdateringen kan ta för en modell. Som standard är detta två timmar.  Det finns ingen fast övre gräns.
+* ScheduleRefreshTimeoutMinutes: Hur länge datauppdateringen kan ta för en modell. Standardvärdet är två timmar.  Det finns ingen fast övre gräns.
 
 **Konfigurationsfilen rsreportserver.config**
 
@@ -434,7 +581,7 @@ Administratörer kan ange följande egenskaper i de avancerade SSMS-egenskaperna
 
 Utvecklings-API:n (REST API) som introducerades för SSRS 2017 har utökats för Power BI-rapportservern så att den fungerar med både Excel- och .pbix-filer. Ett användningsområde kan vara att programmässigt ladda ned filer från servern, uppdatera dem och sedan publicera dem igen. Detta är det enda sättet för att exempelvis uppdatera Excel-arbetsböcker med PowerPivot-modeller.
 
-Observera att det finns en ny separat API för stora filer som kommer att uppdateras i Power BI-rapportserverversionen för Swagger. 
+Det finns ett nytt separat API för stora filer som kommer att uppdateras i Power BI-rapportserverversionen för Swagger. 
 
 ### <a name="sql-server-analysis-services-ssas-and-the-power-bi-report-server-memory-footprint"></a>SQL Server Analysis Services (SSAS) och minnesfotavtryck för Power BI-rapportserver
 
@@ -472,7 +619,6 @@ Power BI-rapportserver har nu stöd för den nya Power BI-tabellen och visuella 
 Kontrollera dessa källor för att hålla dig uppdaterad om nya funktioner i Power BI-rapportservern.
 
 * [Microsoft Power BI-bloggen](https://powerbi.microsoft.com/blog/)
-* [SQL Server Reporting Services team-bloggen](https://blogs.msdn.microsoft.com/sqlrsteamblog/)
 * [YouTube-kanalen Guy in a Cube ](https://aka.ms/guyinacube)
 
 Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

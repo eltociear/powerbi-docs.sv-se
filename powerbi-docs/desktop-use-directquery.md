@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/18/2019
+ms.date: 01/29/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: cfde935b2cec6e86b56b4f70865ff2d02b5ce27a
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 90721b059958e59cfd74f9ba1d0d25617a7438e6
+ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75759209"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76889292"
 ---
 # <a name="use-directquery-in-power-bi-desktop"></a>Använda DirectQuery i Power BI Desktop
 När du ansluter till din datakälla i *Power BI Desktop* kan du alltid importera en kopia av data till Power BI Desktop. En annan metod är tillgänglig för vissa datakällor: att ansluta direkt till datakällan med DirectQuery.
@@ -55,9 +55,9 @@ Det finns några begränsningar när du använder DirectQuery:
 
 - Det finns begränsningar för DAX-uttryck som tillåts i mått så att frågor som skickas till den underliggande datakällan har acceptabel prestanda.
 
-- Det finns en begränsning på en miljon rader för att returnera data när du använder DirectQuery. Den här begränsningen påverkar inte aggregeringar eller beräkningar som används till att skapa datamängden som returneras med DirectQuery. Den gäller bara de rader som returneras.
+- Det finns en begränsning på en miljon rader för att returnera data när du använder DirectQuery, såvida du inte använder en Premium-kapacitet. Den här begränsningen påverkar inte aggregeringar eller beräkningar som används till att skapa datamängden som returneras med DirectQuery. Den gäller bara de rader som returneras. Premium-kapaciteter kan ange gränser för maximalt antal rader, så som beskrivs i [det här inlägget](https://powerbi.microsoft.com/blog/five-new-power-bi-premium-capacity-settings-is-available-on-the-portal-preloaded-with-default-values-admin-can-review-and-override-the-defaults-with-their-preference-to-better-fence-their-capacity/). 
 
-    Du kan till exempel aggregera 10 000 000 rader med din fråga som körs mot datakällan. Frågan returnerar resultatet av aggregeringen till Power BI med DirectQuery om de Power BI-data som returneras innehåller färre än 1 000 000 rader. Om fler än 1 miljon rader returneras från DirectQuery returnerar Power BI ett fel.
+    Du kan till exempel aggregera 10 000 000 rader med din fråga som körs mot datakällan. Frågan returnerar resultatet av aggregeringen till Power BI med DirectQuery om de Power BI-data som returneras innehåller färre än 1 000 000 rader. Om över 1 miljon rader returneras från DirectQuery så returnerar Power BI ett fel (såvida inte i Premium-kapacitet används, och radantalet understiger den administratörsfastställda gränsen).
 
 ## <a name="important-considerations-when-using-directquery"></a>Att tänka på när du använder DirectQuery
 Du måste tänka på följande tre punkter när du använder DirectQuery:

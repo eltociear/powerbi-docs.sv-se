@@ -7,15 +7,15 @@ featuredvideoid: N_xYsCbyHPw
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/11/2019
+ms.date: 01/29/2020
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 2485d9120b10b41d193189de383a1a92b15378d5
-ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
+ms.openlocfilehash: 116ff1df7ddc75df79e6f2f28296543449498599
+ms.sourcegitcommit: 64a270362c60581a385af7fbc31394e3ebcaca41
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74011055"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "76894737"
 ---
 # <a name="change-how-visuals-interact-in-a-power-bi-report"></a>Ändra hur visuella objekt interagerar i en Power BI-rapport
 Om du har redigeringsbehörighet för en rapport kan du använda **Visuella interaktioner** för att ändra hur visualiseringar på en rapportsida påverkar varandra. 
@@ -52,7 +52,7 @@ Om du har redigeringsbehörighet i en rapport kan du aktivera de visuella intera
 
         ![Listrutan Visuella interaktioner](media/service-reports-visual-interactions/power-bi-service.png)
 
-3. Välj **Redigera interaktioner** för att se kontrollerna för visualiseringsinteraktion. Power BI lägger till ikoner för filtrering och markering i alla andra visualiseringar på rapportsidan. Nu kan du ändra hur den valda visualiseringen interagerar med andra visualiseringar på rapportsidan.
+3. Välj **Redigera interaktioner** för att se kontrollerna för visualiseringsinteraktion. Power BI lägger till ikoner för filtrering och markering i alla andra visualiseringar på rapportsidan. Vi kan se att trädkartan korsfiltrerar linjediagrammet och kartan, och att det korsmarkerar stapeldiagrammet. Nu kan du ändra hur den valda visualiseringen interagerar med andra visualiseringar på rapportsidan.
    
     ![rapport med Visuella interaktioner aktiverat](media/service-reports-visual-interactions/power-bi-turn-on.png)
 
@@ -61,25 +61,32 @@ Om du har redigeringsbehörighet i en rapport kan du aktivera de visuella intera
 Bekanta dig med hur visualiseringarna interagerar genom att välja en visualisering i taget på rapportsidan.  Välj en datapunkt, en stapel eller en figur och se hur det påverkar de andra visualiseringarna. Om du inte får önskat beteende kan du ändra interaktionerna. Ändringarna sparas i rapporten så du och dina rapportanvändare får samma visuella interaktionsupplevelse.
 
 
-Bestäm vilken effekt den **valda visualiseringen** ska ha på de andra visualiseringarna.  Du kan också upprepa detta för alla andra visualiseringar på rapportsidan.
+Börja med att välja en visualisering, så att den aktiveras.  Observera att alla övriga visualiseringar på sidan nu visar interaktionsikoner. Den fetstilta ikonen är den som används. Bestäm därefter vilken effekt den **valda visualiseringen** ska ha på de andra visualiseringarna.  Du kan också upprepa detta för alla andra visualiseringar på rapportsidan.
+
+Om den valda visualiseringen ska:
    
-   * Om du vill korsfiltrera visualiseringen väljer du ikonen **Filter** ![filterikon](media/service-reports-visual-interactions/power-bi-filter-icon.png).
-   * Om du vill korsmarkera visualiseringen väljer du ikonen **Markera** ![ikonen Markera](media/service-reports-visual-interactions/power-bi-highlight-icon.png).
-   * Om den inte ska ha någon effekt väljer du ikonen **Ingen inverkan** ![ikonen Ingen inverkan](media/service-reports-visual-interactions/power-bi-no-impact.png).
+   * korsfiltrera en av de andra visualiseringarna på sidan, så välj ikonen **Filter** i det övre högra hörnet av den visualiseringens ![filterikon](media/service-reports-visual-interactions/power-bi-filter-icon.png).
+   * korsmarkera en av de andra visualiseringarna på sidan, så välj **markeringsikonen**![markeringsikon](media/service-reports-visual-interactions/power-bi-highlight-icon.png).
+   * inte ska ha någon inverkan på någon av de andra visualiseringarna på sidan, så välj ikonen **ingen effekt**![ingen effekt-ikon](media/service-reports-visual-interactions/power-bi-no-impact.png).
 
 ## <a name="change-the-interactions-of-drillable-visualizations"></a>Ändra interaktioner för visualiseringar som går att detaljgranska
 [Vissa Power BI-visualiseringar kan detaljgranskas](consumer/end-user-drill.md). När du ökar detaljnivån i en visualisering påverkar det som standard inte andra visualiseringar på rapportsidan. Men du kan ändra detta. 
-
-1. Välj det visuella objektet för att aktivera det. 
 
 > [!TIP]
 > Prova själv med [PBIX-filen Exempel på personalfrågor](https://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human%20Resources%20Sample%20PBIX.pbix). Där finns ett stapeldiagram med ökad detaljnivå på fliken **Nya anställningar**.
 >
 
+1. Välj det visuella objektet för att aktivera det. 
+
+2. Öka detaljnivån genom att välja ikonen för ökad detaljnivå.
+
+    ![aktivera ökad detaljnivå](media/service-reports-visual-interactions/power-bi-drill-down.png)
 
 2. I menyraden väljer du **Format** > **Att gå in på detalj filtrerar andra visuella objekt**.  Nu när du ökar detaljnivån i en visualisering ändras de andra visualiseringarna på rapportsidan för att återspegla din aktuella detaljgranskningsmarkering. 
 
-    ![aktivera att gå in på detalj filtrerar andra visuella objekt](media/service-reports-visual-interactions/power-bi-drill.png).
+    ![aktivera att gå in på detalj filtrerar andra visuella objekt](media/service-reports-visual-interactions/power-bi-drill.png)
+
+3. Om du inte får det beteende du vill ha, så kan du ändra interaktionerna [så som beskrivs ovan](#change-the-interaction-behavior).
     
 ## <a name="next-steps"></a>Nästa steg
 [Filtrera och markera i Power BI-rapporter](power-bi-reports-filters-and-highlighting.md)

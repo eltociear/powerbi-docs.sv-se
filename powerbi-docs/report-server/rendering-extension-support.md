@@ -1,6 +1,6 @@
 ---
-title: Anpassning av PDF-återgivningstillägg till ISO 14289-1 – Power BI-rapportserver
-description: I det här dokumentet beskrivs specifikationer för anpassning av PDF-återgivningstillägg till ISO 14289-1 (PDF/UA) för Power BI-rapportserver och SQL Reporting Services.
+title: Anpassning av PDF-återgivningstillägg till ISO 14289-1 – Power BI-rapportserver och SSRS
+description: I det här dokumentet beskrivs specifikationer för anpassning av PDF-återgivningstillägg till ISO 14289-1 (PDF/UA) för Power BI-rapportserver och SQL Server Reporting Services.
 author: maggiesMSFT
 ms.reviewer: ''
 ms.service: powerbi
@@ -8,18 +8,18 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/04/2019
 ms.author: maggies
-ms.openlocfilehash: c800ee995bc3c03b3cbcda91503e6dea9495f6b5
-ms.sourcegitcommit: 721cf375627b010e8ad12c4c668295f38d450a17
+ms.openlocfilehash: bfefcef18b8cd92a5c3b15c2dcbd4653a6c7c9cd
+ms.sourcegitcommit: 0cc594ebb78a6d0e88784673ed09f8aefd10c7a7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73638090"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76819524"
 ---
-# <a name="pdf-rendering-extension-conformance-to-iso-14289-1---power-bi-report-server"></a>Anpassning av PDF-återgivningstillägg till ISO 14289-1 – Power BI-rapportserver 
+# <a name="pdf-rendering-extension-conformance-to-iso-14289-1---power-bi-report-server--ssrs"></a>Anpassning av PDF-återgivningstillägg till ISO 14289-1 – Power BI-rapportserver och SSRS
 
-Gäller för: Power BI-rapportserver och SQL Server Reporting Services
+Gäller för: Power BI-rapportserver och SQL Server Reporting Services (SSRS)
 
-I det här dokumentet beskrivs specifikationer för anpassning av PDF-återgivningstillägg till [ISO 14289-1 (PDF/UA)](https://www.pdfa.org/publication/pdfua-in-a-nutshell/) för Power BI-rapportserver och SQL Reporting Services.
+I det här dokumentet beskrivs specifikationer för anpassning av PDF-återgivningstillägg till [ISO 14289-1 (PDF/UA)](https://www.pdfa.org/publication/pdfua-in-a-nutshell/) för Power BI-rapportserver och SQL Server Reporting Services.
 
 > [!NOTE]
 > Du kan spara eller skriva ut detta white paper genom att välja **Skriv ut** i webbläsaren och sedan välja **Spara som PDF**.

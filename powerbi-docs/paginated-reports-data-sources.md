@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 12/03/2019
-ms.openlocfilehash: bd58f5f5f6ceaad07cbba5d25508a160b3447f88
-ms.sourcegitcommit: 4359baa43ca01b179d28ec59f4e61ba8c07ee288
+ms.date: 01/30/2020
+ms.openlocfilehash: 17d5661cf68b3a79598dc370ecff17c1c438fc8e
+ms.sourcegitcommit: 64a270362c60581a385af7fbc31394e3ebcaca41
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75304342"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "76895107"
 ---
 # <a name="supported-data-sources-for-power-bi-paginated-reports"></a>Datakällor som stöds för sidnumrerade Power BI-rapporter
 
@@ -27,7 +27,7 @@ Sidnumrerade rapporter har inbyggt stöd för följande lista av datakällor:
 | --- | --- | --- |
 | Azure SQL Database <br>Azure SQL Data Warehouse | Grundläggande, enkel inloggning, OAuth2 |   |
 | Azure SQL-hanterad instans | Grundläggande | via offentlig slutpunkt med Azure SQL Database-tillägget  |
-| Azure Analysis Services | Enkel inloggning, OAuth2 |   |
+| Azure Analysis Services | Enkel inloggning, OAuth2 | AAS-brandväggen måste inaktiveras eller konfigureras så att alla IP-intervall tillåts  |
 | Power BI-datamängd | Enkel inloggning | Premium-baserade och icke-Premium-baserade Power BI-datamängder. Kräver läs-behörighet |
 | Premium Power BI-datamängd (XMLA) | Enkel inloggning |   |
 | Ange data | Saknas | Data bäddas in i rapporten. |

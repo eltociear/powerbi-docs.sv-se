@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: troubleshooting
-ms.date: 05/08/2019
+ms.date: 01/29/2020
 ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 987078ae33af10e9c33b4d8a00f8e2e688be12a1
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 8f4ed049fad2739ef8cc5cd307c06100f68419bd
+ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73865763"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76889315"
 ---
 # <a name="troubleshooting-analyze-in-excel"></a>Felsöka Analysera i Excel
 
@@ -84,7 +84,7 @@ Om du ser felet **Token har upphört att gälla** innebär det att du inte har a
 Om du försöker komma åt en datauppsättning som har anslutningar till lokala Analysis Services-data kan du få ett felmeddelande. **Analysera i Excel** stöder anslutning till datauppsättningar och rapporter på lokala **Analysis Services** med en anslutningssträng, så länge som datorn tillhör samma domän som **Analysis Services**-servern och ditt konto har åtkomst till den **Analysis Services**-servern.
 
 ## <a name="cant-drag-anything-to-the-pivottable-values-area-no-measures"></a>Det går inte att dra något till området värden i pivottabeller (inga mått)
-När **Analysera i Excel** ansluter till en extern OLAP-modell (vilket är hur Excel ansluter till Power BI) kräver *pivottabellen* [att **åtgärder** ska definieras i den externa modellen](https://support.microsoft.com/kb/234700)eftersom alla beräkningar utförs på servern. Detta skiljer sig från när du arbetar med en lokal datakälla (till exempel tabeller i Excel, eller när du arbetar med datauppsättningar i **Power BI Desktop** eller **Power BI-tjänsten**), i vilket fall tabellmodellen är tillgänglig lokalt och [du kan använda införstådda mått](https://msdn.microsoft.com/library/gg399077.aspx), som är mått som genereras dynamiskt och inte lagras i datamodellen. I dessa fall kan Excel bete sig annorlunda än **Power BI Desktop** eller **Power BI-tjänsten**: det kan finnas kolumner i dessa data som kan hanteras som åtgärder i Power BI, men kan inte användas som värden (mått) i Excel.
+När **Analysera i Excel** ansluter till en extern OLAP-modell (vilket är hur Excel ansluter till Power BI) kräver *pivottabellen*[att **åtgärder** ska definieras i den externa modellen](https://support.microsoft.com/kb/234700), eftersom alla beräkningar utförs på servern. Detta skiljer sig från när du arbetar med en lokal datakälla (till exempel tabeller i Excel, eller när du arbetar med datauppsättningar i **Power BI Desktop** eller **Power BI-tjänsten**), i vilket fall tabellmodellen är tillgänglig lokalt och [du kan använda införstådda mått](https://msdn.microsoft.com/library/gg399077.aspx), som är mått som genereras dynamiskt och inte lagras i datamodellen. I dessa fall kan Excel bete sig annorlunda än **Power BI Desktop** eller **Power BI-tjänsten**: det kan finnas kolumner i dessa data som kan hanteras som åtgärder i Power BI, men kan inte användas som värden (mått) i Excel.
 
 Det finns ett par alternativ för att hantera det här problemet:
 
@@ -97,7 +97,7 @@ När din mått har definierats i modellen i Power BI-tjänsten kan du använda d
 ## <a name="next-steps"></a>Nästa steg
 [Analysera i Excel](service-analyze-in-excel.md)
 
-[Självstudier: Skapa dina egna mått i Power BI Desktop](desktop-tutorial-create-measures.md)
+[Självstudie: Skapa dina egna mått i Power BI Desktop](desktop-tutorial-create-measures.md)
 
 [Mått i PowerPivot](https://msdn.microsoft.com/library/gg399077.aspx)
 
@@ -105,5 +105,4 @@ När din mått har definierats i modellen i Power BI-tjänsten kan du använda d
 
 [Lägga till kalkylbladsdata i en datamodell med hjälp av en länkad tabell](https://support.office.com/article/Add-worksheet-data-to-a-Data-Model-using-a-linked-table-d3665fc3-99b0-479d-ba09-a37640f5be42)
 
-[Skillnader mellan OLAP- och icke-OLAP-pivottabeller i Excel](https://support.microsoft.com/kb/234700)
 

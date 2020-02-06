@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/14/2020
+ms.date: 01/30/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: fa097489fcf81ec1bb1df2162465e6413bd116c0
-ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
+ms.openlocfilehash: 2e4ab92d5d1adce8659cdb971c5061a0f133b38f
+ms.sourcegitcommit: 64a270362c60581a385af7fbc31394e3ebcaca41
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76040423"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "76895544"
 ---
 # <a name="create-matrix-visualizations-in-power-bi"></a>Skapa matrisvisualiseringar i Power BI
 
@@ -41,25 +41,24 @@ I det här exemplet visar varje rad i det visuella matrisobjektet längst till h
 
 När du tittar på summor och delsummor, kom ihåg att dessa värden baseras på underliggande data. De är inte bara baserade på de synliga värdena.
 
-<!-- use Nov blog post video
 
-## Expanding and collapsing row headers
-There are two ways you can expand row headers. The first is through the right-click menu. You’ll see options to expand the specific row header you clicked on, the entire level or everything down to the very last level of the hierarchy. You have similar options for collapsing row headers as well.
+## <a name="expanding-and-collapsing-row-headers"></a>Visa och dölja radrubriker
+Det finns två sätt på vilka du kan visa radrubriker. Det första är att klicka på snabbmenyn. Du ser alternativen för att visa den radrubrik som du har valt, hela nivån eller allt upp till den sista nivån i hierarkin. Det finns även snarlika alternativ för att dölja radrubrikerna.
 
 ![](media/desktop-matrix-visual/power-bi-expand1.png)
 
-You can also add +/- buttons to the row headers through the formatting pane under the row headers card. By default, the icons will match the formatting of the row header, but you can customize the icons’ color and size separately if you want. 
-Once the icons are turned on, they work similarly to the icons from PivotTables in Excel.
+Du kan också lägga till plus- och minusknappar (+/-) till radrubrikerna via formateringsrutan under kortet **Radrubriker**. Ikonerna matchar som standard radrubrikens formatering, men du kan anpassa deras färger och storlekar separat om du vill.
+
+När ikonerna har aktiverats fungerar de ungefär som pivottabellsikoner i Excel.
 
 ![](media/desktop-matrix-visual/power-bi-expand2.png)
 
-The expansion state of the matrix will save with your report. It can be pinned to dashboards as well, but consumers will need to open up the report to change the state. Conditional formatting will only apply to the inner most visible level of the hierarchy. Note that this expand/collapse experience is not currently supported when connecting to AS servers older than 2016 or MD servers.
+Matrisens expansionsstatus sparas med rapporten. En matris kan fästas på en instrumentpanel som visas eller döljs. När instrumentpanelen är markerad och rapporten öppnas, kan du fortfarande ändra visningstillståndet i rapporten. 
 
 ![](media/desktop-matrix-visual/power-bi-expand3.png)
 
-Watch the following video to learn more about expand/collapse in the matrix:
 
--->
+
 ## <a name="using-drill-down-with-the-matrix-visual"></a>Öka detaljnivån i det visuella matrisobjektet
 Det finns en mängd intressanta aktiviteter som ökar detaljnivån i matrisen som inte var tillgängliga tidigare. Detta inkluderar möjligheten att öka detaljnivån för rader, kolumner och även i enskilda avsnitt och celler. Nu ska vi titta på hur var och en av dessa fungerar.
 
@@ -183,6 +182,16 @@ Din matris eller tabell kan ha innehåll som du vill använda i andra program: D
 * Kopian kommer att vara en annan matris visualisering, men innehåller bara dina kopierade data.
 
     ![Skärmbild som visar exempel på Kopiera visuellt objekt](media/desktop-matrix-visual/power-bi-copy-visual-example.png)
+
+## <a name="setting-a-matrix-value-as-a-custom-url"></a>Ange ett matrisvärde som en anpassad URL
+
+Om du har en kolumn eller ett mått som innehåller webbadresser kan du använda villkorsstyrd formatering så att webbadresserna används som aktiva länkar för fälten. Du hittar det här alternativet under kortet **Villkorsstyrd formatering** i formateringsfönstret.
+
+![Filterkort som visar vilka rader som väljs](media/desktop-matrix-visual/power-bi-web-url.png)
+
+Ställ in **Webb-URL** på värdet PÅ och välj ett fält som ska användas som URL för kolumnen. När värdena i fältet (kolumnen) används blir de aktiva länkar. Hovra om du vill se länken och välj att hoppa till den sidan. 
+
+Mer information finns i [Villkorsstyrd tabellformatering](../desktop-conditional-table-formatting.md)
 
 ## <a name="shading-and-font-colors-with-matrix-visuals"></a>Fyllning och teckenfärger med matriser
 Med det visuella matrisobjektet kan du använda villkorsstyrd formatering (färger, fyllning och datastaplar) för cellernas bakgrundsfärger inom matrisen samt tillämpa villkorsstyrd formatering på själva texten och värdena.

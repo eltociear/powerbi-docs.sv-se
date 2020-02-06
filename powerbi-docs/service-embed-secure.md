@@ -1,20 +1,20 @@
 ---
 title: Bädda in en rapport i en säker portal eller webbplats
 description: Med funktionen för inbäddning i Power BI kan användare enkelt och säkert bädda in rapporter i interna webbportaler.
-author: rkarlin
-ms.author: rkarlin
+author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/27/2019
+ms.date: 01/30/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: d4495a2021f008326d76c7fd9ff686d639827e90
-ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
+ms.openlocfilehash: f4da9179ef140fd254939a4121e91dd032269c98
+ms.sourcegitcommit: 53c2b5ea4ee1fe2659804d5ccc8e4bb445a8bcad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74565758"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76913596"
 ---
 # <a name="embed-a-report-in-a-secure-portal-or-website"></a>Bädda in en rapport i en säker portal eller webbplats
 
@@ -129,7 +129,11 @@ Du kan lägga till så många knappar du vill skapa en anpassad upplevelse med l
 
 * Vissa webbläsare kräver att du uppdaterar sidan efter inloggning, i synnerhet om du använder InPrivate- eller Incognito-läget.
 
-* Om du vill uppnå en enkel inloggningsupplevelse använder du alternativet Bädda in i SharePoint Online eller skapar en anpassad integrering med hjälp av inbäddningsmetoden [användaren äger data](developer/embed-sample-for-your-organization.md). 
+* Du kan stöta på problem om du använder webbläsarversioner som inte stöds. Power BI har stöd för [följande webbläsare](power-bi-browsers.md).
+
+* Den klassiska SharePoint-servern stöds inte eftersom den kräver tidigare versioner av Internet Explorer än 11 eller aktivering av läget Kompatibilitetsvy.
+
+* Om du vill uppnå en enkel inloggningsupplevelse använder du alternativet [Bädda in i SharePoint Online](service-embed-report-spo.md) eller skapar en anpassad integrering med hjälp av inbäddningsmetoden [användaren äger data](developer/embed-sample-for-your-organization.md). 
 
 * Den automatiska autentiseringsfunktionen som tillhandahålls av alternativet **Bädda in** fungerar inte med Power BI JavaScript-API:et. När det gäller Power BI JavaScript-API:et använder du metoden [användaren äger data](developer/embed-sample-for-your-organization.md) för inbäddning. 
 

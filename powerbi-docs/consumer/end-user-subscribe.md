@@ -8,14 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/21/2019
+ms.date: 01/30/2020
 rLocalizationGroup: Common tasks
-ms.openlocfilehash: a9339cc9f61a3a191e8783935c9ec38e119894e9
-ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
+ms.openlocfilehash: 267a1e8b2f45198059e5acfcdf0233445babbd14
+ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099220"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76888641"
 ---
 # <a name="subscribe-to-a-report-or-dashboard-in-the-power-bi-service"></a>Prenumerera på en rapport eller en instrumentpanel i Power BI-tjänsten 
 
@@ -31,41 +31,43 @@ När du får e-postmeddelandet innehåller det en länk med rubriken ”Gå till
 
 
 ## <a name="requirements"></a>Krav
-Att **skapa** en prenumeration för dig själv kräver en Power BI Pro-licens. Användare som visar innehåll i en Premium-arbetsyta eller -app kan också prenumerera på innehåll som finns där, även utan Power BI Pro-licens. Att **prenumerera åt andra** är endast tillgängligt för instrumentpanelens ägare. 
+Att **skapa** en prenumeration för dig själv kräver en viss typ av licens. Kontakta Power BI-administratören om du inte kan skapa någon prenumeration. Att **prenumerera åt andra** är endast tillgängligt för instrumentpanelens eller rapportens ägare. 
 
 ## <a name="subscribe-to-a-dashboard-or-a-report-page"></a>Prenumerera på instrumentpanel eller en rapportsida
 Oavsett om du prenumererar på en instrumentpanel eller en rapport är processerna lika. Du kan använda samma knapp för att prenumerera på Power BI-tjänstens instrumentpaneler och rapporter.
  
-![välj ikonen Prenumerera](./media/end-user-subscribe/power-bi-subscribe-orientation.png).
+![välj ikonen Prenumerera](./media/end-user-subscribe/power-bi-subscribe.png).
 
 1. Öppna instrumentpanelen eller rapporten.
 2. Välj **Prenumerera** på den översta menyraden, eller välj kuvertikonen ![ikonen Prenumerera](./media/end-user-subscribe/power-bi-icon-envelope.png).
    
-   ![Ikonen Prenumerera](./media/end-user-subscribe/power-bi-subscribe-icon.png)
 
-   ![Prenumerationsfönster](./media/end-user-subscribe/power-bi-emails-newest.png)
+
+   ![Prenumerationsfönster](./media/end-user-subscribe/power-bi-emails-numbered.png)
     
-    Fönstret till vänster när du är på en instrumentpanel och väljer **Prenumerera**. Fönstret till höger när du är på en rapportsida och väljer **Prenumerera**. Om du vill prenumerera på flera sidor i en rapport väljer du **Lägg till en till prenumeration** och väljer en annan sida. 
+    Fönstret till vänster när du är på en instrumentpanel och väljer **Prenumerera**. Fönstret till höger när du är på en rapportsida och väljer **Prenumerera**. 
+    
+    a. Om du vill prenumerera på flera sidor i en rapport väljer du **Lägg till en till prenumeration** och väljer en annan sida i listrutan högst upp.
 
-4. Aktivera eller inaktivera prenumerationen med det gula skjutreglaget.  Om du ställer in skjutreglaget på Av så tas inte prenumerationen bort. Om du vill ta bort prenumerationen så väljer du istället papperskorgen.
+    b. Aktivera eller inaktivera prenumerationen med det gula skjutreglaget.  Om du ställer in skjutreglaget på Av så tas inte prenumerationen bort. Om du vill ta bort prenumerationen så väljer du istället papperskorgen.
 
-5. Lägg alternativt till ett ämne och e-postmeddelandeinformation. 
+    c. Lägg alternativt till ett ämne och e-postmeddelandeinformation. 
 
-5. Välj en **frekvens** för prenumerationen.  Du kan välja Varje dag, Varje vecka och Efter datauppdatering (Varje dag).  Om du bara vill få e-post för prenumerationen på vissa dagar väljer du **Varje vecka** och vilka dagar du vill få den.  Om du till exempel bara vill ha prenumerationens e-postmeddelanden på arbetsdagar, väljer du **Varje vecka** som frekvens och avmarkerar rutorna Lör och Sön.   
+    d. Välj en **frekvens** för prenumerationen.  Du kan välja Varje dag, Varje vecka och Efter datauppdatering (Varje dag).  Om du bara vill få e-post för prenumerationen på vissa dagar väljer du **Varje vecka** och vilka dagar du vill få den.  Om du till exempel bara vill ha prenumerationens e-postmeddelanden på arbetsdagar, väljer du **Varje vecka** som frekvens och avmarkerar rutorna Lör och Sön.   
 
-6. Schemalägg tiden som e-postmeddelandet skickas genom att välja Varje dag eller Varje vecka som frekvens och ange en **Schemalagd** **tid** för prenumerationen.  Det är här som prenumerationsjobbet startas. I vissa scenarier kan det kan ta några minuter tills e-postmeddelandet dyker upp i din inkorg.    
+    e. Schemalägg tiden som e-postmeddelandet skickas genom att välja Varje dag eller Varje vecka som frekvens och ange en **Schemalagd** **tid** för prenumerationen.  Det är här som prenumerationsjobbet startas. I vissa scenarier kan det kan ta några minuter tills e-postmeddelandet dyker upp i din inkorg.    
 
-7. Schemalägg start- och slutdatum genom att ange datum i datumfälten. Som standard blir starttiden för prenumerationen det datum du skapade den och slutdatumet blir ett år senare. När en prenumeration når ett slutdatum stoppas den tills du aktiverar den igen.  Du får ett eller flera meddelanden innan det schemalagda slutdatumet där du tillfrågas om du vill förlänga den.     
+    f. Schemalägg start- och slutdatum genom att ange datum i datumfälten. Som standard blir starttiden för prenumerationen det datum du skapade den och slutdatumet blir ett år senare. När en prenumeration når ett slutdatum stoppas den tills du aktiverar den igen.  Du får ett eller flera meddelanden innan det schemalagda slutdatumet där du tillfrågas om du vill förlänga den.     
 
-8. Välj **Kör nu** om du vill granska prenumerationen och testa den.  Då skickas e-postmeddelandet till dig direkt. 
+    ex. Välj **Kör nu** om du vill granska prenumerationen och testa den.  Då skickas e-postmeddelandet till dig direkt. 
 
-8. Om allt ser bra ut väljer du **Spara och stäng**. Du får ett e-postmeddelande och en ögonblicksbild av instrumentpanelen eller rapporten enligt det schema som du anger. Alla prenumerationer med frekvensen **Efter datauppdatering** inställd skickar bara ett e-postmeddelande efter den första schemalagda uppdateringen på den dagen.
+3. Om allt ser bra ut väljer du **Spara och stäng**. Du får ett e-postmeddelande och en ögonblicksbild av instrumentpanelen eller rapporten enligt det schema som du anger. Alla prenumerationer med frekvensen **Efter datauppdatering** inställd skickar bara ett e-postmeddelande efter den första schemalagda uppdateringen på den dagen.
    
    ![e-postmeddelande med ögonblicksbild av instrumentpanel](media/end-user-subscribe/power-bi-subscribe-email.png)
    
-    Att uppdatera rapportsidan uppdaterar inte datauppsättningen. Endast datauppsättningens ägare kan uppdatera en datauppsättning manuellt. Om du vill söka efter ägarnamnet på den underliggande datamängden väljer du **Visa relaterade** på den översta menyraden eller letar rätt på det ursprungliga prenumerations-e-postmeddelandet.
+    Att uppdatera rapportsidan uppdaterar inte datauppsättningen. Endast datauppsättningens ägare kan uppdatera en datauppsättning manuellt. Om du vill söka efter ägarnamnet på den eller de underliggande datamängderna väljer du listrutan på menyraden eller letar rätt på prenumerationens ursprungliga e-postmeddelande.
    
-    ![Relaterade datauppsättningar](./media/end-user-subscribe/power-bi-view-related-screen.png)
+    ![hitta ägaren](./media/end-user-subscribe/power-bi-owner.png)
 
 
 ## <a name="manage-your-subscriptions"></a>Hantera dina prenumerationer

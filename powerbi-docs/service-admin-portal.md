@@ -10,12 +10,12 @@ ms.date: 09/25/2019
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: de745777a5ad6da1149328d9df92be9ecccfc181
-ms.sourcegitcommit: 801d2baa944469a5b79cf591eb8afd18ca4e00b1
+ms.openlocfilehash: c59f1c1653e3b1a506f342bffed6fa539dfe58b3
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885309"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76819593"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administrera Power BI i Admin-portalen
 
@@ -203,11 +203,24 @@ Följande bild visar meddelandet som visas när du delar med en extern användar
 
 ### <a name="publish-to-web"></a>Publicera på webben
 
-Användare i organisationen kan publicera rapporter på webben. [Läs mer](service-publish-to-web.md)
+Användare i organisationen kan publicera rapporter på webben. [Läs mer](service-publish-to-web.md). Detta gör rapporten och de data som den innehåller tillgängliga för alla på webben.
+
+> [!NOTE]
+> En Power BI-administratör måste tillåta att nya publiceringar till inbäddningskoder skapas. Organisationer kan ha befintliga inbäddningskoder. Använd sidan [inbäddningskoder](service-admin-portal.md#embed-codes) för att granska aktuella publicerade rapporter.
 
 Följande bild visar menyn **Arkiv** för en rapport när inställningen **Publicera på webben** är aktiverad.
 
-![Inställningen publicera på webben](media/service-admin-portal/powerbi-admin-publish-to-web.png)
+![Publicera på webben i filmenyn](media/service-admin-portal/powerbi-admin-publish-to-web.png)
+
+Inställningen **Publicera på webben** ger alternativ som användare kan använda för att skapa inbäddningskoder.
+
+![Inställningen publicera på webben](media/service-admin-portal/powerbi-admin-publish-to-web-setting.png)
+
+
+Användarna uppmanas att kontakta Power BI-administratören så att de kan skapa en inbäddningskod när alternativet **Välj hur inbäddningskoder fungerar** är inställt på **Tillåt endast befintliga inbäddningskoder** och inställningen **Publicera till webben** är **aktiverad**.
+
+![Fråga om publicera till webben](media/service-publish-to-web/publish_to_web_admin_prompt.png)
+
 
 Användarna ser olika alternativ i användargränssnittet baserat på vad inställningen för **Publicering på webben** är.
 
@@ -449,7 +462,7 @@ Mer information om hur du hanterar inställningar för Power BI Embedded (A SKU)
 
 ## <a name="embed-codes"></a>Bädda in koder
 
-Som administratör kan du visa de inbäddningskoder som har genererats för din klient. Du kan även återkalla eller ta bort koder. [Läs mer](service-publish-to-web.md)
+Som administratör kan du visa de inbäddningskoder som har genererats för din klient för att dela rapport offentligt. Du kan även återkalla eller ta bort koder. [Läs mer](service-publish-to-web.md)
 
 ![Bädda in koder i administrationsportalen för Power BI](media/service-admin-portal/embed-codes.png)
 

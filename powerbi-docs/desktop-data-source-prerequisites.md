@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 01/29/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: d118cae8cd4b6fbd95066b15819b1e798c8bbe0f
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: c3ccbe6ad87a813185943845431fa1a859b09a76
+ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75761328"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76888441"
 ---
 # <a name="power-bi-data-source-prerequisites"></a>Krav på Power BI-datakälla
 Power BI stöder en specifik providerversion för varje dataleverantör när det gäller objekt. Läs mer om datakällor som är tillgängliga för Power BI i [Datakällor](desktop-data-sources.md). I följande tabell beskrivs dessa krav.
@@ -28,7 +28,7 @@ Power BI stöder en specifik providerversion för varje dataleverantör när det
 | | System.Data.OracleClient (inbyggd i .NET Framework) |.NET Framework 3.5 |9.x+ |Tabeller/vyer |Ingår i .NET Framework 3.5 eller senare |
 | IBM DB2 |ADO.Net-klient från IBM (del av drivrutinspaket för IBM-dataserver) |10.1 |9.1+ |Tabeller/vyer |[Nedladdningslänk](https://go.microsoft.com/fwlink/?linkid=274911&clcid=0x409) |
 | MySQL |Anslutning/nät |6.6.5 |5.1 |Tabeller/vyer, skalärfunktioner |[Nedladdningslänk](https://go.microsoft.com/fwlink/?linkid=278885&clcid=0x409) |
-| PostgreSQL |NPGSQL ADO.NET-provider |2.0.12 |7.4 |Tabeller/vyer |[Nedladdningslänk](https://go.microsoft.com/fwlink/?linkid=282716&clcid=0x409) |
+| PostgreSQL |NPGSQL ADO.NET-provider |2.0.12 |9.4 |Tabeller/vyer |[Nedladdningslänk](https://go.microsoft.com/fwlink/?linkid=282716&clcid=0x409) |
 | Teradata |.NET Data Provider för Teradata |14+ |12+ |Tabeller/vyer |[Nedladdningslänk](https://go.microsoft.com/fwlink/?linkid=278886&clcid=0x409) |
 | SAP Sybase SQL Anywhere |iAnywhere.Data.SQLAnywhere för .NET 3.5 |16+ |16+ |Tabeller/vyer |[Nedladdningslänk](https://go.microsoft.com/fwlink/?linkid=324846) |
 

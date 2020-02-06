@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/09/2019
+ms.date: 01/29/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 444a6978b0fcf841f0d0a3b2d50cc70062389cba
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: 6c2c41221e4a199d6a5d3a800f3820746ef7389a
+ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75222082"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76888372"
 ---
 # <a name="get-power-bi-desktop"></a>Hämta Power BI Desktop
 Med Power BI Desktop kan du skapa avancerade frågor, modeller och rapporter som visualiserar data. Med Power BI Desktop kan du bygga datamodeller, skapa rapporter och dela ditt arbete genom att publicera till Power BI-tjänsten. Power BI Desktop är en kostnadsfri nedladdning.
@@ -132,6 +132,8 @@ Du kan även använda följande syntaxparametrar som du anger med syntaxen *egen
 |INSTALLLOCATION     |Filsökväg till den plats där du vill installera den         |
 |LANGUAGE     |Språkkod (till exempel en-US, de-DE eller pr-BR) för att framtvinga programmets standardspråk. Om du inte anger något språk visar Power BI Desktop språket från Windows-operativsystemet. Du kan ändra den här inställningen i dialogrutan **Alternativ**.         |
 |REG_SHOWLEADGENDIALOG     |Värdet 0 inaktiverar visning av den dialogruta som visas innan du har loggat in på Power BI Desktop.         |
+|DISABLE_UPDATE_NOTIFICATION     |Värdet 1 inaktiverar uppdateringsmeddelanden.         |
+
 
 Du kan till exempel köra Power BI Desktop med följande alternativ och parametrar för att installera utan något användargränssnitt med språket tyska: 
 

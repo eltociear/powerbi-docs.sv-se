@@ -1,20 +1,20 @@
 ---
 title: URL:er för Power BI för vitlistning
-description: Den här artikeln beskriver de slutpunkter som bör kunna nås av kunder som använder Power BI.
+description: I den här artikeln listas URL-slutpunkter och portar till den betrodda listan för anslutning till Power BI.
 author: kfollis
 ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/22/2018
+ms.date: 01/29/2020
 ms.custom: seodec18
-ms.openlocfilehash: cd13e36ca7216036a22db332a508e3c825fecf4b
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 48406a8c68237d182960b46de67f91dbd2717922
+ms.sourcegitcommit: 64a270362c60581a385af7fbc31394e3ebcaca41
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74698795"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "76894670"
 ---
 # <a name="power-bi-urls-for-whitelisting"></a>URL:er för Power BI för vitlistning
 
@@ -46,11 +46,12 @@ För allmän användning av Power BI måste du kunna ansluta till slutpunkterna 
 | Rad | Syfte | Mål | Portar |
 | --- | --- | --- | --- |
 | 1 | **Krävs:** Backend-API:er | *.analysis.windows.net | TCP 443 |
-| 2 | **Krävs:** Office 365-integration | Se Office 365-dokumentationen för [Office Online och vanliga URL:er](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) | Saknas |
-| 3 | **Krävs:** Portal | app.powerbi.com | TCP 443 |
-| 4 | **Krävs:** Tjänsttelemetri | dc.services.visualstudio.com | TCP 443 |
-| 5 | **Valfritt:** Informationsmeddelanden | dynmsg.modpim.com | TCP 443 |
-| 6 | **Valfritt:** NPS-undersökningar | nps.onyx.azure.net | TCP 443 |
+| 2 | **Krävs:** Backend-API:er | *.pbidedicated.windows.net | TCP 443 |
+| 3 | **Krävs:** Office 365-integration | Se Office 365-dokumentationen för [Office Online och vanliga URL:er](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) | Saknas |
+| 4 | **Krävs:** Portal | app.powerbi.com | TCP 443 |
+| 5 | **Krävs:** Tjänsttelemetri | dc.services.visualstudio.com | TCP 443 |
+| 6 | **Valfritt:** Informationsmeddelanden | dynmsg.modpim.com | TCP 443 |
+| 7 | **Valfritt:** NPS-undersökningar | nps.onyx.azure.net | TCP 443 |
 | | | |
 
 ## <a name="administration"></a>Administration
@@ -77,7 +78,7 @@ För att hämta data från specifika datakällor, till exempel OneDrive, måste 
 
 ## <a name="dashboard-and-report-integration"></a>Instrumentpanels- och rapportintegration
 
-Power BI är beroende av vissa slutpunkter för att kunna hantera dina instrumentpaneler och rapporter. Du måste kunna ansluta till slutpunkterna i tabellen och på de länkade webbplatserna nedan.
+Power BI är beroende av vissa slutpunkter för att kunna stödja dina instrumentpaneler och rapporter. Du måste kunna ansluta till slutpunkterna i tabellen och på de länkade webbplatserna nedan.
 
 | Rad | Syfte | Mål | Portar |
 | --- | --- | --- | --- |
@@ -86,7 +87,7 @@ Power BI är beroende av vissa slutpunkter för att kunna hantera dina instrumen
 
 ## <a name="custom-visuals"></a>Anpassade visuella objekt
 
-Power BI är beroende av vissa slutpunkter för att kunna visa och komma åt de anpassade visuella objekten. Du måste kunna ansluta till slutpunkterna i tabellen och på de länkade webbplatserna nedan.
+Power BI är beroende av vissa slutpunkter för att kunna visa och få åtkomst till anpassade visuella objekt. Du måste kunna ansluta till slutpunkterna i tabellen och på de länkade webbplatserna nedan.
 
 | Rad | Syfte | Mål | Portar |
 | --- | --- | --- | --- |
@@ -98,7 +99,7 @@ Power BI är beroende av vissa slutpunkter för att kunna visa och komma åt de 
 
 ## <a name="related-external-sites"></a>Relaterade externa webbplatser
 
-Power BI-länkar till andra relaterade webbplatser. Dessa webbplatser inbegriper dem som gäller dokumentation, support, förfrågningar om nya funktioner och mycket annat. Dessa webbplatser påverkar inte funktionerna i Power BI, så de kan tillåtas om så önskas.
+Power BI-länkar till andra relaterade webbplatser. Dessa webbplatser är värdar för dokumentation, support, förfrågningar om nya funktioner och mycket annat. Åtkomst till dessa webbplatser påverkar inte funktionerna i Power BI, så vitlistning är valfritt.
 
 | Rad | Syfte | Mål | Portar |
 | --- | --- | --- | --- |

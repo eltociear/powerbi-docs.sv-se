@@ -6,32 +6,32 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/14/2019
+ms.date: 01/30/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b42d83b4cea6f5f5e8908244b2b298dc3f327468
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: 2433f030f00ec8cd337d97c4402b83ed6c4c5a00
+ms.sourcegitcommit: 64a270362c60581a385af7fbc31394e3ebcaca41
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76540644"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "76895241"
 ---
 # <a name="getting-started-with-the-formatting-pane"></a>Kom igång med formateringsfönstret
-Om du har redigeringsbehörighet för en rapport finns det ett flertal formateringsalternativ. I **Power BI**-rapporter kan du ändra färg på dataserier, datapunkter och även visualiseringarnas bakgrund. Du kan ändra presentationen av x-axeln och y-axeln. Du kan till och med formatera teckensnittsegenskaper för visualiseringar, former och rubriker, vilket ger dig fullständig kontroll över hur dina rapporter visas.
+Om du har redigeringsbehörighet för en rapport finns det ett flertal formateringsalternativ. I Power BI-rapporter kan du ändra färg på dataserier, datapunkter och även visualiseringarnas bakgrund. Du kan ändra presentationen av x-axeln och y-axeln. Du kan även formatera teckensnittsegenskaperna för visualiseringar, former och titlar. Power BI ger fullständig kontroll över hur dina rapporter visas.
 
-Kom igång genom att öppna en rapport i Power BI Desktop eller Power BI-tjänsten. Båda alternativen ger nästan identiska formateringsalternativ. När du öppnar en rapport i Power BI-tjänsten ska du välja **Redigera rapport** på menyraden.  
+Kom igång genom att öppna en rapport i Power BI Desktop eller Power BI-tjänsten. Båda alternativen ger nästan identiska formateringsalternativ. När du öppnar en rapport i Power BI-tjänsten ska du välja **Redigera** på menyraden. 
 
 ![menyrad som visar alternativet Redigera](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-edit.png)
 
-När du redigerar en rapport och du har en vald visualisering visas fönstret **Visualiseringar**, där du kan lägga till eller ändra visualiseringar. Direkt under de tillgängliga visualiseringarna finns tre ikoner: **fältikonen** (en stack med staplar), **formatikonen** (en roller) och **analysikonen** (ett förstoringsglas). På bilden nedan har **fältikonen** valts, vilket indikeras med ett gult fält under ikonen.
+När du redigerar en rapport och du har en vald visualisering visas fönstret **Visualiseringar**. Använd det här fönstret för att ändra visualiseringar. Direkt under fönstret **Visualiseringar** finns tre ikoner: **Fält** (en stack med staplar), **Format** (en roller) och **Analys** (ett förstoringsglas). På bilden nedan har ikonen **Fält** valts, vilket indikeras med ett gult fält under ikonen.
 
-![](media/service-getting-started-with-color-formatting-and-axis-properties/gettingstartedcolor_2a.png)
+![](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-format.png)
 
-När du väljer **Format** visar området under ikonen de färg- och axelanpassningar som är tillgängliga för den för tillfället valda visualiseringen.  
+När du väljer **Format** visar området under ikonen de anpassningar som är tillgängliga för den för tillfället valda visualiseringen.  
 
-![](media/service-getting-started-with-color-formatting-and-axis-properties/gettingstartedcolor_3a.png)
+![](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-format-selected.png)
 
-Du kan anpassa många element i respektive visualisering:
+Du kan anpassa många element i respektive visualisering. Vilka alternativ som är tillgängliga beror på vilket visuellt objekt som har valts. Några av dessa alternativ är:
 
 * Förklaring
 * X-axeln
@@ -44,6 +44,12 @@ Du kan anpassa många element i respektive visualisering:
 * Bakgrund
 * Låsning av höjd/bredd
 * Kantlinje
+* Knappbeskrivningar
+* Visuella rubriker
+* Former
+* Position    
+och mer.
+
 
 > [!NOTE]
 >  
@@ -51,49 +57,101 @@ Du kan anpassa många element i respektive visualisering:
 
 Observera också att om du inte har markerat någon visualisering så visas **filter** istället för ikoner, vilket gör att du kan använda filter för alla visualiseringar på sidan.
 
-Låt oss se på några exempel: ett handlar om att arbeta med färger, och det andra handlar om att ändra en axels egenskaper. Efter det bör du vara redo att anpassa färger, axlar och etiketter mest hela dagen.
+Det bästa sättet att lära dig hur du använder formateringsalternativen är att testa dem. Du kan alltid ångra ändringarna eller återgå till standard. Det finns en otrolig mängd alternativ som är tillgängliga och nya läggs till hela tiden. Det är helt enkelt inte möjligt att beskriva alla formateringsalternativ i en artikel. Men för att komma igång ska vi gå igenom några saker tillsammans. 
+
+1. Ändra färger som används i det visuella objektet   
+2. Använda en stil    
+3. Ändra axelegenskaper    
+4. Lägga till dataetiketter    
+
+
+
 
 ## <a name="working-with-colors"></a>Arbeta med färger
 
-Låt oss gå igenom de olika stegen för hur man anpassar färger i ett diagram.
+Låt oss gå igenom de olika stegen för hur man anpassar färger i en visualisering.
 
-1. Välj ett **grupperat stående stapeldiagram** på rapportarbetsytan.
-2. Välj sedan **formatikonen** så att du kan visa tillgängliga anpassningar.
-3. Välj sedan den lilla nedåtpilen till vänster om **Datafärger**. Här ser du hur du kan anpassa datafärgerna, med alternativ som är specifika för den markerade visualiseringen.
-4. **Datafärger** utvidgas nedåt, så att dess tillgängliga anpassningar visas.  
-   ![](media/service-getting-started-with-color-formatting-and-axis-properties/gettingstartedcolor_4a.png)
+1. Välj en visualisering för att aktivera den.
 
-Låt oss göra några ändringar. Genom att välja nedåtpilen bredvid färgen kan du göra ändringar på varje tillgängliga dataserie. Låt oss färga **levnadskostnader** gult **väder** orange och **hälsa** grönt. Följande skärmbild visar hur jag ändrar **levnadskostnader**.  
+2. Välj rollerikonen för att öppna formateringsfönstret. Fliken formatering visar alla formateringselement som är tillgängliga för den valda visualiseringen.
 
-![](media/service-getting-started-with-color-formatting-and-axis-properties/gettingstartedcolor_5a.png)
+    ![Diagram med fliken Formatfönstret valt](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-formatting.png)
 
-Ändringarna visas på bilden nedan. Oj, det var ett ljust diagram. Här får du några användbara tips att tänka på när du arbetar med färger. Siffrorna i följande lista visas även på följande skärmbild, där de indikerar var du kan hitta och ändra dessa användbara element.
+3. Välj **Datafärger** för att utöka de tillgängliga anpassningarna.  
 
-1. Gillar du inte färgerna? Inga problem. Det är bara att välja **Återgå till standard**, så återgår markeringen till standardinställningarna. Du kan göra det för en färg eller för hela visualiseringen.
-2. Vill du ha en färg som inte visas på paletten? Då är det bara att välja **Egen färg**, och välja färg i spektrumet.  
-   ![](media/service-getting-started-with-color-formatting-and-axis-properties/gettingstartedcolor_6a.png)
+    ![Diagram med öppna formatfönster och datafärger expanderade](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-data-colors.png)
+
+4. Ändra **Visa alla** till På och välj olika färger för kolumner.
+
+    ![Diagram med nya färger som tillämpats på vissa kolumner](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-change-colors.png)
+
+Här följer några användbara tips om hur du arbetar med färger. Siffrorna i följande lista visas även på följande skärmbild, där de indikerar var du kan hitta och ändra dessa användbara element.
+
+1. Gillar du inte färgerna? Inga problem. Det är bara att välja **Återgå till standard**, så återgår valet till standardinställningarna. 
+
+2. Gillar du inte någon av färgändringarna? Välj **Återgå till standard** längst ned i avsnittet **Datafärg**, så återgår färgerna till standardinställningarna. 
+
+3. Vill du ha en färg som inte visas på paletten? Då är det bara att välja **Egen färg**, och välja färg i spektrumet.  
+
+   ![Avsnittet Datafärg med färgpalett öppen](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-color-extras.png)
 
 Är du inte överförtjust i den ändring du just har gjort? Ångra med **CTRL + Z**, precis som du är van att göra i andra sammanhang.
+
+## <a name="applying-a-style-to-a-table"></a>Tillämpa en stil på en tabell
+Vissa Power BI-visualiseringar har ett **Stil**-alternativ. Med ett klick används en fullständig uppsättning av formateringsalternativ i visualiseringen, samtidigt. 
+
+1. Välj en tabell eller matris för att göra den aktiv.   
+1. Öppna fliken formatering och välj **Stil**.
+
+   ![Välj Stil från fliken Formatering](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-style.png)
+
+
+1. Välj en stil i listrutan. 
+
+   ![Samma tabell med fet rubrik, pråliga rader används](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-style-flashy.png)
+
+Även om du har tillämpat en stil kan du fortsätta att formatera egenskaper, inklusive färg, för visualiseringen.
+
 
 ## <a name="changing-axis-properties"></a>Ändra axelegenskaper
 
 Det kan ofta vara användbart att ändra x-axeln eller y-axeln. På liknande sätt som du arbetar med färger kan du ändra en axel genom att välja nedåtpilen till vänster om den axel som du vill ändra, så som visas på följande bild.  
-![](media/service-getting-started-with-color-formatting-and-axis-properties/gettingstartedcolor_7a.png)
+![](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-y-axis.png)
 
-Om du vill komprimera alternativen för **x-axeln** så välj bara uppåtpilen intill **x-axeln**.
+I exemplet nedan har vi formaterat Y-axeln genom att:
+- flytta etiketterna till höger sida av visualiseringen
 
-Du kan ta bort x-axelns etiketter helt och hållet genom att klicka på alternativknappen bredvid **x-axeln**. Du kan också ange om du vill aktivera eller inaktivera axelrubriker genom att välja alternativknappen bredvid **rubriken**.  
+- ändra startvärdet till noll.
 
-Det finns alla möjliga typer av färger att välja bland, och många andra anpassningar du kan använda till dina Power BI-rapporter och instrumentpaneler.
+- ändra etikettens teckensnittsfärg till svart
 
-> [!NOTE]
->  
-> Dessa färger, axlar och relaterade anpassningar är tillgängliga när ikonen **Format** är markerad, och de är också tillgängliga i Power BI Desktop.
+- öka etikettens teckensnittsstorlek till 12
 
-## <a name="setting-color-from-text-values"></a>Ställa in färg från textvärden
+- lägga till en rubrik i Y-axeln
 
-Från och med **Power BI Desktop**-uppdateringen för augusti 2018 kan du ange färger baserat på textvärdet, eller den hexadecimala koden, för ett specifikt rapportelement. Mer information finns i [Villkorsstyrd formatering i tabeller](../desktop-conditional-table-formatting.md).
 
+    ![samma stapeldiagram men med massor av formatering av Y-axeln](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-axis-changes.png)
+
+Du kan ta bort x-axelns etiketter helt och hållet genom att klicka på alternativknappen bredvid **x-axeln** eller **y-axeln**. Du kan också ange om du vill aktivera eller inaktivera axelrubriker genom att välja alternativknappen bredvid **rubriken**.  
+
+
+
+## <a name="adding-data-labels"></a>Lägga till dataetiketter    
+
+Ett sista formateringsexempel innan du börjar utforska på egen hand.  Vi ska lägga till dataetiketter i ett ytdiagram. 
+
+Här är *förebilden*. 
+
+![oformaterat ytdiagram](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-area-chart.png)
+
+
+Och här är *efterbilden*.
+
+![formaterat ytdiagram](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-data-labels.png)
+
+Vi valde visualiseringen för att göra den aktiv och öppnade fliken Formatering.  Vi valde **Dataetiketter** och aktiverade dem. Sedan ökade vi teckensnittet till 12, ändrade teckensnittet till Arial Black, aktiverade **Visa bakgrund** till På och bakgrundsfärg till vit med transparensen 5 %.
+
+Detta är bara några av de formateringsåtgärder som är möjliga. Öppna en rapport i redigeringsläge och roa dig med att utforska formateringsfönstret för att skapa snygga och informativa visualiseringar.
 
 ## <a name="next-steps"></a>Nästa steg
 Mer information finns i följande artikel:  

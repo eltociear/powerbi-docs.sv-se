@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/14/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 7d94c5d3531576cd36688591b55aaf4a49de51aa
-ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
+ms.openlocfilehash: 924be90a8598c561a12ed87872bdfbd4681831c8
+ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74831304"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76889384"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Konfigurera arbetsbelastningar i en Premium-kapacitet
 
@@ -67,7 +67,7 @@ Som standard är datamängdernas arbetsbelastning aktiverad och kan inte inaktiv
 | **Maximalt antal mellanliggande raduppsättningar** | Det maximala antalet mellanliggande rader som returneras av DirectQuery. Standardvärdet är 1 000 000 och det tillåtna intervallet är mellan 100 000 och 2 147 483 647. |
 | **Maximal storlek för offlinedatamängd (GB)** | Maximal storlek för offlinedatamängden i minnet. Detta är den komprimerade storleken på disken. Standardvärdet anges av SKU:n och det tillåtna intervallet är 0,1–10 GB. |
 | **Maximalt antal resultatraduppsättningar** | Det maximala antalet rader som returneras i en DAX-fråga. Standardvärdet är -1 (ingen gräns) och det tillåtna intervallet är mellan 100 000 och 2 147 483 647. |
-| **Minnesgräns för frågor (%)** | Den maximala procentandelen tillgängligt minne som kan användas för tillfälliga resultat i en fråga eller ett DAX-mått. |
+| **Minnesgräns för frågor (%)** | Den maximala procentandel tillgängligt minne i arbetsbelastningen som kan användas för att köra en MDX- eller DAX-fråga. |
 | **Tidsgräns för frågor (sekunder)** | Maximal tid innan tidsgränsen för frågan uppnås. Standardvärdet är 3 600 sekunder (en timme). Värdet 0 anger att frågorna inte har någon tidsgräns. |
 | **Automatisk siduppdatering (förhandsversion)** | På/av växlar funktionen för automatisk siduppdatering i Premium-arbetsytor. |
 | **Minsta uppdateringsintervall** | Om automatisk siduppdatering är aktiverat, är detta det minsta intervall som tillåts för siduppdatering. Standardvärdet är fem minuter och det lägsta tillåtna värdet är en sekund. |
@@ -99,11 +99,17 @@ Observera att den här inställningen endast påverkar DAX-frågor, medan [Maxim
 
 Använd inställningen för att styra påverkan från resursintensiva eller bristfälligt utformade rapporter. Vissa frågor och beräkningar kan resultera i mellanliggande resultat som använder mycket minne i kapaciteten. Det kan göra att andra frågor körs mycket långsamt, att andra datauppsättningar tas bort från kapaciteten och att det uppstår minnesfel för andra som använder kapaciteten.
 
-Den här inställningen gäller för datauppdatering och rapportåtergivning. Vid datauppdateringen utförs både uppdatering av data från datakällan och uppdatering av frågan, om inte frågeuppdateringen är inaktiverad. Om frågeuppdatering inte är inaktiverad gäller den här minnesgränsen även för dessa frågor. Eventuella misslyckade frågor gör att tillståndet för den schemalagda uppdateringen rapporteras som ett fel, även om det gick att utföra datauppdateringen.
+Den här inställningen gäller för alla DAX-och MDX-frågor som körs av såväl Power BI-rapporter och Analysera i Excel-rapporter som av andra verktyg som kan ansluta via XMLA-slutpunkten.
+
+Observera att datauppdateringsåtgärder också kan också köra DAX-frågor som en del av uppdateringen av instrumentpaneler och visuella cacheminnen efter det att datamängdens data har uppdaterats. Det finns även en risk att sådana frågor kan misslyckas pga den här inställningen, och det kan leda till att datauppdateringsåtgärden visas med tillståndet misslyckad, även om datamängdens data har uppdaterats.
 
 #### <a name="query-timeout"></a>Tidsgräns för frågor
 
-Använd den här inställningen om du vill ha bättre kontroll över långvariga frågor, som kan göra att rapporter läses in långsamt för användarna. Den här inställningen gäller för datauppdatering och rapportåtergivning. Vid datauppdateringen utförs både uppdatering av data från datakällan och uppdatering av frågan, om inte frågeuppdateringen är inaktiverad. Om frågeuppdateringen inte är inaktiverad gäller den här minnesgränsen även för dessa frågor.
+Använd den här inställningen om du vill ha bättre kontroll över långvariga frågor, som kan göra att rapporter läses in långsamt för användarna.
+
+Den här inställningen gäller för alla DAX-och MDX-frågor som körs av såväl Power BI-rapporter och Analysera i Excel-rapporter som av andra verktyg som kan ansluta via XMLA-slutpunkten.
+
+Observera att datauppdateringsåtgärder också kan också köra DAX-frågor som en del av uppdateringen av instrumentpaneler och visuella cacheminnen efter det att datamängdens data har uppdaterats. Det finns även en risk att sådana frågor kan misslyckas pga den här inställningen, och det kan leda till att datauppdateringsåtgärden visas med tillståndet misslyckad, även om datamängdens data har uppdaterats.
 
 Den här inställningen gäller för en enskild fråga och inte den tid det tar att köra alla frågor som är kopplade till uppdateringen av en datauppsättning eller rapport. Se följande exempel:
 
@@ -144,7 +150,7 @@ Du kan använda den nya beräkningsmotorn till att dela upp datan i separata dat
 
 #### <a name="container-size"></a>Containerstorlek
 
-Vid uppdatering av ett dataflöde skapar dataflödesarbetsbelastningen en container för varje entitet i dataflödet. Varje container kan använda minne upp till den volym som anges i inställningen **Containerstorlek. Standardvärdet för alla SKU:er är 700 MB. Den här inställningen bör kanske ändras om:
+Vid uppdatering av ett dataflöde skapar dataflödesarbetsbelastningen en container för varje entitet i dataflödet. Varje container kan använda minne upp till den volym som anges i inställningen Containerstorlek. Standardvärdet för alla SKU:er är 700 MB. Den här inställningen bör kanske ändras om:
 
 - Dataflöden tar för lång tid att uppdateras eller om uppdatering av dataflöde misslyckas med överskriden tidsgräns.
 - Dataflödesentiteter omfattar beräkningssteg, till exempel en koppling.  
