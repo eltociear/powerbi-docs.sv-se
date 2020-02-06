@@ -8,12 +8,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 01/03/2020
 ms.author: v-pemyer
-ms.openlocfilehash: b1ce8644decb758775c0bbff87df7975a64692a2
-ms.sourcegitcommit: 801d2baa944469a5b79cf591eb8afd18ca4e00b1
+ms.openlocfilehash: 53940737f71e04fbf5bccd9520a749f6fc559db9
+ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75886123"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76889246"
 ---
 # <a name="migrate-sql-server-reporting-services-reports-to-power-bi"></a>Migrera SQL Server Reporting Services-rapporter till Power BI
 
@@ -104,6 +104,8 @@ De här SSRS-objekttyperna kan du dock inte migrera till Power BI:
 
 Om dina RDL-rapporter använder funktioner som [ännu inte stöds i sidnumrerade Power BI-rapporter](../paginated-reports-faq.md#what-paginated-report-features-in-ssrs-arent-yet-supported-in-power-bi) kan du planera att utveckla dem på nytt som [Power BI-rapporter](../consumer/end-user-reports.md). Även om det går att migrera dina RDL-rapporter så rekommenderar vi att du överväger att modernisera dem till Power BI-rapporter om det går.
 
+Om dina RDL-rapporter behöver hämta data från _lokala datakällor_ kan de inte använda enkel inloggning (SSO). För närvarande görs alla datahämtningar från dessa källor med hjälp av säkerhetskontexten för _Gateway-datakällans användarkonto_. Det är inte möjligt för SQL Server Analysis Services (SSAS) att framtvinga säkerhet på radnivå (RLS) per användare.
+
 Sidnumrerade Power BI-rapporter är i allmänhet optimerade för **utskrift** eller **PDF-generering**. Power BI-rapporter är optimerade för **utforskning och interaktivitet**. Läs mer i [Använda sidnumrerade rapporter i Power BI](report-paginated-or-power-bi.md).
 
 ### <a name="prepare"></a>Förbereda
@@ -116,6 +118,8 @@ Målet i fasen _Förbereda_ är att göra allting redo. Det är här du konfigur
 1. Bekanta dig med delning i Power BI och planera hur du ska distribuera innehåll genom att publicera [Power BI-appar](../service-create-distribute-apps.md).
 1. Överväg att använda [delade Power BI-datamängder](../service-datasets-build-permissions.md) i stället för dina delade SSRS-datakällor.
 1. Använd [Power BI Desktop](../desktop-what-is-desktop.md) till att utveckla rapporter optimerade för mobila enheter, eventuellt med hjälp av [det anpassade visuella objektet Power KPI](https://appsource.microsoft.com/product/power-bi-visuals/WA104381083?tab=Overview) i stället för dina mobila rapporter och KPI:er i SSRS.
+1. Utvärdera användningen av det inbyggda fältet **UserID** i dina rapporter igen. Om du förlitar dig på **UserID** för att skydda rapportdata, bör du känna till att för sidnumrerade rapporter (om de finns i Power BI-tjänsten) returneras användarhuvudnamnet (UPN). I stället för att returnera NT-kontonamnet, till exempel _AW\mblythe_, kommer det inbyggda fältet att returnera något som _m.blythe&commat;adventureworks.com_. Du måste ändra dina datauppsättningsdefinitioner och eventuellt källdata. När du har ändrat och publicerat rekommenderar vi att du testar dina rapporter noggrant för att säkerställa att databehörigheter fungerar som förväntat.
+1. Utvärdera användningen av det inbyggda fältet **ExecutionTime** i dina rapporter igen. För sidnumrerade rapporter (när de finns i Power BI-tjänsten) returnerar det inbyggda fältet datum/tid _i UTC (Coordinated Universal Time)_ . Det kan påverka rapportparameterns standardvärden och etiketter för rapportkörningstid (som vanligtvis läggs till i rapport med sidfot).
 1. Se till att rapportförfattarna har [Power BI Report Builder](../report-builder-power-bi.md) installerat och att de senare versionerna enkelt kan distribueras i hela organisationen.
 
 ## <a name="migration-stage"></a>Migreringssteget
