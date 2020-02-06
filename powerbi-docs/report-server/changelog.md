@@ -7,19 +7,44 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 10/25/2019
-ms.openlocfilehash: ef85aea957ec470b348676b553248f30d3bf8532
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.date: 01/27/2020
+ms.openlocfilehash: 993d83e15eafa0e40938eee13cbeabec75389f47
+ms.sourcegitcommit: 0cc594ebb78a6d0e88784673ed09f8aefd10c7a7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73874277"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76819547"
 ---
 # <a name="change-log-for-power-bi-report-server"></a>Ändringslogg för Power BI-rapportservern
 
 Den här ändringsloggen är avsedd för Power BI-rapportservern och visar nya objekt tillsammans med felkorrigeringar för varje utgiven version.
 
 Detaljerad information om nya funktioner finns [Nyheter i Power BI-rapportserver](whats-new.md). 
+
+
+## <a name="january-2020"></a>Januari 2020
+- **Power BI-rapportserver**
+    - *Version: 1.6.7327.3007 (version 15.0.1102.759), utgiven: 23 januari 2020*
+         - Funktioner
+            -  Exportera till Excel från Power BI-rapporter.
+           -  Stöd för Power BI Premium-datauppsättning för sidnumrerade rapporter.
+           -  AltText-stöd (alternativ text) för sidnumrerade rapportelement.
+           -  Stöd för anpassade rubriker.
+           -  Stöd för Azure SQL-hanterade instanser som katalogen.
+           -  Transparent databaskryptering för katalogen.
+        - Säkerhetsuppdateringar
+        - Felkorrigeringar
+            - Korrigeringar för hjälpmedel för skärmläsare, rapportåtergivning och tangentbordsnavigering.
+            - Korrigering för att spara rapporttitlar med flera byte.
+            - Korrigering för utförlig loggning som påverkar rapportserverns tillförlitlighet.
+          - Korrigering för att säkerställa realtidsdata i Power BI-rapporter på mobilen.
+          - Korrigering för att tillämpa korsvisualiseringsmarkeringar mellan olika visuella objekt i filtrerade exporter av Power BI-rapporter.
+          - Korrigering för att skriva sidfot när du exporterar till Word med uttryck för synlighet för sidnumrerade rapporter. 
+     
+- **Power BI Desktop (optimerad för Power BI-rapportservern)**
+    - *Version: 2.76.5678.1521 (januari 2020), publicerad: 23 januari 2020* (ny build och ny version)
+        - Innehåller ändringar som krävs för anslutning till Power BI-rapportservern (januari 2020)        
+
 
 ## <a name="september-2019"></a>September 2019
 - **Power BI-rapportserver**
