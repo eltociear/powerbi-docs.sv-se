@@ -37,10 +37,10 @@ Exemplet nedan visar hur **Förutsätt referensintegritet** beter sig när det a
 1. Följande bild visar tabellerna **Beställningar** och **Produkter**. Observera att det finns en referensintegritet mellan **Beställningar [ProductID]** och **Produkter [ProductID]** . Kolumnen **[ProductID]** i tabellen **Beställningar** är aldrig *Null* och varje värde visas också i tabellen **Produkter**. Därför ska **Förutsätt referensintegritet** anges för att få mer effektiva frågor (med den här inställningen inte ändras de värden som visas i visuella objekt).
    
    ![](media/desktop-assume-referential-integrity/assume-referential-integrity_2.png)
-2. I nästa bild kan du lägga märke till att det inte finns någon referensintegritet mellan **Beställningar [DepotID]** och **Depåer [DepotID]** eftersom **DepotID** är *Null*  för vissa *Beställningar*. Därför bör **Förutsätt referensintegritet***inte* anges.
+2. I nästa bild kan du lägga märke till att det inte finns någon referensintegritet mellan **Beställningar [DepotID]** och **Depåer [DepotID]** eftersom **DepotID** är *Null*  för vissa *Beställningar*. Därför bör **Förutsätt referensintegritet** *inte* anges.
    
    ![](media/desktop-assume-referential-integrity/assume-referential-integrity_3.png)
-3. Slutligen förekommer ingen referensintegritet mellan **Beställningar [CustomerID]** och **Kunder [CustID]** i följande tabeller. **CustomerID** innehåller vissa värden (i det här fallet *CustX*) som inte finns i tabellen *Kunder*. Därför bör **Förutsätt referensintegritet***inte* anges.
+3. Slutligen förekommer ingen referensintegritet mellan **Beställningar [CustomerID]** och **Kunder [CustID]** i följande tabeller. **CustomerID** innehåller vissa värden (i det här fallet *CustX*) som inte finns i tabellen *Kunder*. Därför bör **Förutsätt referensintegritet** *inte* anges.
    
    ![](media/desktop-assume-referential-integrity/assume-referential-integrity_4.png)
 
