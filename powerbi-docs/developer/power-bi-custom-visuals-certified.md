@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 01/12/2019
-ms.openlocfilehash: 04954397a16fecddabca63067c903dee742873ef
-ms.sourcegitcommit: 052df769e6ace7b9848493cde9f618d6a2ae7df9
+ms.openlocfilehash: 4ffab3913560498dd57103f0a25c39f7a03a42ec
+ms.sourcegitcommit: 75300b3f53f438ed7d3bd4edc93b9eb5925bf3af
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "75925583"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77026679"
 ---
 # <a name="get-a-power-bi-visual-certified"></a>Certifiera ett visuellt Power BI-objekt
 
@@ -45,7 +45,7 @@ När du skickar det visuella Power BI-objektet ska du se till att det kompilerad
 
 Lagringsplatsen får bara innehålla kod för ett visuellt Power BI-objekt. Den får inte innehålla kod för flera visuella Power BI-objekt eller orelaterad kod.
 
-Lagringsplatsen måste innehålla en gren med namnet **certifiering**. Källkoden i den här grenen måste matcha det skickade paketet. Den här koden kan bara uppdateras under nästa sändningsprocess om du skickar in det visuella Power BI-objektet igen.
+Lagringsplatsen måste innehålla en gren med namnet **certification** (skrivet med gemener). Källkoden i den här grenen måste matcha det skickade paketet. Den här koden kan bara uppdateras under nästa sändningsprocess om du skickar in det visuella Power BI-objektet igen.
 
 Om ditt visuella Power BI-objekt använder privata NPM-paket eller Git-delmoduler måste du ge åtkomst till de övriga lagringsplatserna som innehåller den här koden.
 

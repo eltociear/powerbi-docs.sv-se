@@ -10,10 +10,10 @@ ms.date: 09/11/2019
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: 3ec372a51177e5979cdfbca8408e11801aefb414
-ms.sourcegitcommit: 90bd747b7c460d17b74cd386d3f5714234b1f6c9
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "74791597"
 ---
 # <a name="use-custom-format-strings-in-power-bi-desktop"></a>Använd anpassade formatsträngar i Power BI Desktop
@@ -70,7 +70,7 @@ Följande tabell visar **tidssymboler** som stöds:
 
 Du kan se ett [exempel](https://docs.microsoft.com/office/vba/language/reference/user-interface-help/format-function-visual-basic-for-applications#example) på hur du formaterar anpassade värdesträngar.
 
-Ett användardefinierat formatuttryck för tal kan ha mellan en och tre delar som är avgränsade med semikolon. Om du inkluderar semikolon utan något mellan dem visas inte avsnittet som saknas (det kommer att vara &quot; &quot;). Om semikolon inte anges används det positiva formatet.
+Ett användardefinierat formatuttryck för tal kan ha mellan en och tre delar som är avgränsade med semikolon. Om du inkluderar semikolon utan något mellan dem visas inte avsnittet som saknas (det kommer att vara &quot;&quot;). Om semikolon inte anges används det positiva formatet.
 
 Här följer några exempel på olika format för olika värdesträngar:
 
@@ -143,9 +143,9 @@ Följande tabell visar tecken som du kan använda för att skapa **användardefi
 | ( **:** ) | Klockslagsavgränsare. I vissa språk kan andra tecken användas för att representera klockslagsavgränsaren. Klockslagsavgränsaren separerar timmar, minuter och sekunder när tidsvärden formateras. Det faktiska tecknet som används som tidsavgränsare i formaterade utdata bestäms av systeminställningarna. |
 | ( **/** ) | Datumavgränsare. I vissa språk kan andra tecken användas för att representera datumavgränsaren. Datumavgränsaren separerar dag, månad och år när datumvärden formateras. Det faktiska tecknet som används som datumavgränsare i formaterade utdata bestäms av systeminställningarna. |
 | ( **E- E+ e- e+** ) | Vetenskapligt format. Om formatuttrycket innehåller minst en platshållare för siffror ( **0** eller **#** ) till höger om E-, E+, e- eller e+ visas talet i exponentiellt format och E eller e infogas mellan talet och dess exponent. Antalet platshållare för siffror till höger avgör antalet siffror i exponenten. Använd E- eller e- för att placera ett minustecken intill negativa exponenter. Använd E+ eller e+ för att placera ett minustecken intill negativa exponenter och ett plustecken intill positiva exponenter. |
-| **- + $**  ( ) | Visa ett litteralt tecken. Om du vill visa ett annat tecken än de som anges i listan skriver du ett omvänt snedstreck (\) eller omger det med dubbla citattecken (&quot; &quot;). |
+| **- + $**  ( ) | Visa ett litteralt tecken. Om du vill visa ett annat tecken än de som anges i listan skriver du ett omvänt snedstreck (\) innan tecknet eller omger det med dubbla citattecken (&quot; &quot;). |
 | ( * *\** ) | Visa nästa tecken i formatsträngen. Om du vill visa ett tecken som har en speciell innebörd som ett litteralt tecken skriver du ett omvänt snedstreck (\). Det omvända snedstrecket visas inte. Att använda ett omvänt snedstreck är detsamma som att omsluta nästa tecken inom dubbla citattecken. Om du vill visa ett omvänt snedstreck använder du två omvända snedstreck (\\). Exempel på tecken som inte kan visas som literaler är tecken för datum- och tidformat (a, c, d, h, m, n, p, q, s, t, w, / och :), tecken för numeriska format (#, 0, %, E, e, komma och punkt) och strängformateringstecken (@, &amp;, \&lt;, \&gt; och !). |
-| (&quot;ABC&quot;) | Visa strängen innanför dubbla citattecken (&quot; &quot;). |
+| (&quot;ABC&quot;) | Visa strängen inom dubbla citattecken (&quot; &quot;). |
 
 
 ## <a name="next-steps"></a>Nästa steg

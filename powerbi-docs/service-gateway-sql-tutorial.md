@@ -10,10 +10,10 @@ ms.date: 07/15/2019
 ms.author: arthii
 LocalizationGroup: Gateways
 ms.openlocfilehash: 100417202fca148be0e2e976ce0cd84167c803d9
-ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "74958456"
 ---
 # <a name="refresh-data-from-an-on-premises-sql-server-database"></a>Uppdatera data från en lokal SQL Server-databas
@@ -46,7 +46,7 @@ Gör enligt nedan för att skapa en grundläggande Power BI-rapport med Adventur
 
 1. I Power BI Desktop går du till fliken **Start** och väljer **Hämta data** \> **SQL Server**.
 
-2. I dialogrutan **SQL Server-databas** anger du namnen för **Server** och **Databas (valfritt)**. Kontrollera att **Läge för dataanslutning** är satt till **Import** och välj sedan **OK**.
+2. I dialogrutan **SQL Server-databas** anger du namnen för **Server** och **Databas (valfritt)** . Kontrollera att **Läge för dataanslutning** är satt till **Import** och välj sedan **OK**.
 
     ![SQL Server-databas](./media/service-gateway-sql-tutorial/sql-server-database.png)
 
@@ -73,7 +73,7 @@ Gör enligt nedan för att skapa en grundläggande Power BI-rapport med Adventur
 
     ![Fönstret Fält](./media/service-gateway-sql-tutorial/fields-pane.png)
 
-5. Dra **EndDate** till **Rapportnivåfilter**. Under **Basfiltrering** markerar du bara kryssrutan för **(Tom)**.
+5. Dra **EndDate** till **Rapportnivåfilter**. Under **Basfiltrering** markerar du bara kryssrutan för **(Tom)** .
 
     ![Rapportnivåfilter](./media/service-gateway-sql-tutorial/report-level-filters.png)
 
@@ -85,7 +85,7 @@ Gör enligt nedan för att skapa en grundläggande Power BI-rapport med Adventur
 
 6. Spara rapporten med namnet ”AdventureWorksProducts.pbix”.
 
-7. På fliken **Start** väljer du **Publicera** \> **Min arbetsyta** \> **Välj**. Logga in på Power BI-tjänsten om du uppmanas att göra det.
+7. På fliken **Start** väljer du **Publicera** \> **Min arbetsyta**\>**Välj**. Logga in på Power BI-tjänsten om du uppmanas att göra det.
 
 8. På skärmen **Klart!** väljer du **att öppna ”AdventureWorksProducts.pbix” i Power BI**.
 
@@ -134,7 +134,7 @@ I Power BI Desktop anslöt du direkt till din lokala SQL Server-databas, men Pow
 
 Nu har du anslutit din datauppsättning i Power BI till din SQL Server-databas lokalt, via en datagateway. Följ stegen nedan för att konfigurera ett uppdateringsschema. Uppdatera din datauppsättning enligt ett schema, för att se till att dina rapporter och instrumentpaneler alltid är uppdaterade med senaste data.
 
-1. I navigeringsfönstret öppnar du **Min arbetsyta** \> **Datauppsättningar**. Välj ellipsen (**...**) för datauppsättningen **AdventureWorksProducts**. Välj sedan **Uppdateringsschema**.
+1. I navigeringsfönstret öppnar du **Min arbetsyta** \> **Datamängder**. Välj ellipsen ( **...** ) för datauppsättningen **AdventureWorksProducts**. Välj sedan **Uppdateringsschema**.
 
     > [!NOTE]
     > Kontrollera att du väljer ellipsen för **AdventureWorksProducts**-datauppsättningen och inte de tre punkterna för rapporten med samma namn. Snabbmenyn för **AdventureWorksProducts**-rapporten innehåller inte alternativet **Uppdateringsschema**.
@@ -168,7 +168,7 @@ Följ nu dessa steg så att uppdaterade data kan överföras via gateway-anslutn
 
 1. I navigeringsfönstret i Power BI-tjänsten väljer du att expandera **Min arbetsyta**.
 
-2. Under **Datauppsättningar**, för datauppsättningen **AdventureWorksProducts** väljer du ellipsen (**. . .**). Välj sedan **Uppdatera nu**.
+2. Under **Datauppsättningar**, för datauppsättningen **AdventureWorksProducts** väljer du ellipsen ( **. . .** ). Välj sedan **Uppdatera nu**.
 
     ![Uppdatera nu](./media/service-gateway-sql-tutorial/refresh-now.png)
 

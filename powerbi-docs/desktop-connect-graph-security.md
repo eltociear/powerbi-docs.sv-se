@@ -11,10 +11,10 @@ ms.date: 01/29/2019
 ms.author: preetikr
 LocalizationGroup: Connect to data
 ms.openlocfilehash: ef8e874c1f1a47d65845b87dccd441746651a68b
-ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/11/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "74999800"
 ---
 # <a name="connect-to-the-microsoft-graph-security-api-in-power-bi-desktop"></a>Anslut till Säkerhets-API för Microsoft Graph i Power BI Desktop
@@ -48,7 +48,7 @@ Följ stegen nedan för att använda anslutningsappen:
 
 1. Välj **Hämta data** > **Mer** från menyfliksområdet **Start** i Power BI Desktop.
 2. Välj **Onlinetjänster** från kategorilistan till vänster i fönstret.
-3. Välj **Microsoft Graph Security (Beta)**.
+3. Välj **Microsoft Graph Security (Beta)** .
 
     ![Dialogrutan Hämta data](media/desktop-connect-graph-security/GetData.PNG)
     
@@ -74,7 +74,7 @@ Följ stegen nedan för att använda anslutningsappen:
     
 9. Om du vill använda en avancerad fråga med Säkerhets-API för Microsoft Graph väljer du **Specify custom Microsoft Graph Security URL to filter results** (Ange anpassad URL för Microsoft Graph-säkerhet för att filtrera resultat). Använd den här funktionen för att skapa en [OData.Feed](https://docs.microsoft.com/power-bi/desktop-connect-odata)-fråga till Säkerhets-API för Microsoft Graph med den behörighet som krävs.
 
-   I följande exempel används `https://graph.microsoft.com/v1.0/security/alerts?$filter=Severity eq 'High'`*serviceUri*. Om du vill se hur du skapar frågor för att filtrera, sortera eller hämta de senaste resultaten kan du läsa [OData system query options](https://docs.microsoft.com/graph/query-parameters) (OData-systemfrågealternativ).
+   I följande exempel används `https://graph.microsoft.com/v1.0/security/alerts?$filter=Severity eq 'High'` *serviceUri*. Om du vill se hur du skapar frågor för att filtrera, sortera eller hämta de senaste resultaten kan du läsa [OData system query options](https://docs.microsoft.com/graph/query-parameters) (OData-systemfrågealternativ).
 
    ![OdataFeed-exempel](media/desktop-connect-graph-security/ODataFeed.PNG)
     

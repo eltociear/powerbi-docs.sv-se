@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 09/26/2019
+ms.date: 02/03/2020
 ms.author: maggies
-ms.openlocfilehash: cfb83ae8b005744098261c6973a87fb929a864dd
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 69ebfa9b1d2ef500b388a1bbb57926dc53ff2607
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73858958"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76975021"
 ---
 # <a name="create-a-power-bi-report-for-power-bi-report-server"></a>Skapa en Power BI-rapport för Power BI-rapportservern
 Du kan lagra och hantera Power BI-rapporter lokalt i webbportalen för Power BI-rapportserver, precis som du kan lagra Power BI-rapporter i molnet i Power BI-tjänsten (https://powerbi.com). Du skapar och redigerar rapporter i Power BI Desktop och publicerar dem till webbportalen. Rapportläsare i din organisation kan sedan se dem i webbläsaren eller i en Power BI-mobilapp på en mobilenhet.
@@ -90,6 +90,9 @@ När din rapport är klar, kan du spara den på den Power BI-rapportserver som d
 2. Nu kan du visa den i webbportalen.
    
     ![Visa rapporten i webbportalen](media/quickstart-create-powerbi-report/report-server-powerbi-report.png)
+    
+> [!NOTE]
+> Om du redigerar rapporten i framtiden kommer de rapportdata du ser på skrivbordet alltid att vara cachelagrade data från när rapporten ursprungligen skapades.  Om du vill visa aktuella data när du redigerar rapporten måste du uppdatera data i Power BI Desktop-programmet.
 
 ## <a name="next-steps"></a>Nästa steg
 ### <a name="power-bi-desktop"></a>Power BI Desktop

@@ -10,10 +10,10 @@ ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: a4d948e768682aab77708289320914ce3ef0fdc3
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/02/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "74699114"
 ---
 # <a name="real-time-streaming-in-power-bi"></a>Realtidsuppspelning i Power BI
@@ -82,7 +82,7 @@ Låt oss ta en titt på var och en av dessa metoder.
 ### <a name="using-power-bi-rest-apis-to-push-data"></a>Använd Power BI REST API:er för att pusha data
 **Power BI REST API:er** kan användas för att skapa och skicka data till **push**-datauppsättningar och **strömmande** datauppsättningar. När du skapar en datauppsättning med Power BI REST API:er, anger flaggan *defaultMode* om datauppsättningen är push eller strömmande. Om ingen *defaultMode*-flagga har angetts, blir datauppsättningen **push** som standard.
 
-Om värdet *defaultMode* är satt till *pushStreaming* så är datauppsättningen både **push** *och* **strömmande**, vilket ger fördelarna från bägge datauppsättningstyperna. 
+Om värdet *defaultMode* är satt till *pushStreaming* så är datauppsättningen både **push-baserad** *och* **strömmande**, vilket ger dig bägge datauppsättningstypernas fördelar. 
 
 > [!NOTE]
 > När du använder datauppsättningar med *defaultMode* -flaggan satt till *pushStreaming* och om en begäran överskrider storleksbegränsningen på 15Kb för en **strömmande** datauppsättning, men är mindre än storleksbegränsningen på 16 MB för en **push**-datauppsättning, kommer begäran att lyckas och data kommer att uppdateras i push-datauppsättningen. Eventuella strömmande paneler kommer dock tillfälligt att misslyckas.
