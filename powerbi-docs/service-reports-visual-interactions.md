@@ -7,15 +7,15 @@ featuredvideoid: N_xYsCbyHPw
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/29/2020
+ms.date: 02/04/2020
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 116ff1df7ddc75df79e6f2f28296543449498599
-ms.sourcegitcommit: 64a270362c60581a385af7fbc31394e3ebcaca41
+ms.openlocfilehash: 1d723f3dd67eb5e096622c882b5f538a77666d9e
+ms.sourcegitcommit: 75300b3f53f438ed7d3bd4edc93b9eb5925bf3af
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "76894737"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "77036709"
 ---
 # <a name="change-how-visuals-interact-in-a-power-bi-report"></a>Ändra hur visuella objekt interagerar i en Power BI-rapport
 Om du har redigeringsbehörighet för en rapport kan du använda **Visuella interaktioner** för att ändra hur visualiseringar på en rapportsida påverkar varandra. 
@@ -87,6 +87,11 @@ Om den valda visualiseringen ska:
     ![aktivera att gå in på detalj filtrerar andra visuella objekt](media/service-reports-visual-interactions/power-bi-drill.png)
 
 3. Om du inte får det beteende du vill ha, så kan du ändra interaktionerna [så som beskrivs ovan](#change-the-interaction-behavior).
+
+## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
+Om du skapar en matris med fält från olika tabeller och försöker korsmarkera genom att markera flera objekt i flera nivåer i hierarkin så får du fel i de andra visuella objekten. 
+
+![Video av buggen när du försöker filtrera på olika nivåer i hierarkin](media/service-reports-visual-interactions/cross-highlight.gif)
     
 ## <a name="next-steps"></a>Nästa steg
 [Filtrera och markera i Power BI-rapporter](power-bi-reports-filters-and-highlighting.md)

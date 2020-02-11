@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 01/16/2020
-ms.author: mblythe
+ms.date: 02/03/2020
+ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: bbca812644b82f8a0b848dc16e450f880ccb596c
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: 99869740eb20b14625e66ff50cb48b08e5cb3e15
+ms.sourcegitcommit: 75300b3f53f438ed7d3bd4edc93b9eb5925bf3af
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76539910"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "77036686"
 ---
 # <a name="tutorial-embed-a-power-apps-visual-in-a-power-bi-report"></a>Självstudie: Bädda in ett visuellt objekt från Power Apps i en Power BI-rapport
 
@@ -25,7 +25,7 @@ Om du inte har någon Power Apps-prenumeration kan du [skapa ett kostnadsfritt k
 
 I de här självstudierna får du lära dig att
 > [!div class="checklist"]
-> * Lägga till ett visuellt objekt från Power Apps i en Power BI-rapport
+> * Lägga till ett visuellt Power Apps-objekt i en Power BI-rapport
 > * Arbeta i Power Apps för att skapa en ny app som använder data från Power BI-rapporten
 > * Visa och interagera med det visuella objektet från Power Apps i rapporten
 

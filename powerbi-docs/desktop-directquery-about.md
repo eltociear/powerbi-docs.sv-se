@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 01/10/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 504b389bdbe50d17f969365d7e4f2e51d206918c
-ms.sourcegitcommit: 4b926ab5f09592680627dca1f0ba016b07a86ec0
+ms.openlocfilehash: dedbe3800dc4a6b1088ca5a4037bc8451c61d986
+ms.sourcegitcommit: 578d43aeb7cebf40f3caf03a614bc885cc039488
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75837208"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77076668"
 ---
 # <a name="about-using-directquery-in-power-bi"></a>Använda DirectQuery i Power BI
 
@@ -312,7 +312,7 @@ Förutom tidigare förslag så kan alla de här rapportfunktionerna leda till pr
 
 * **Medianvärde:** Normalt push-överförs alla aggregeringar som `Sum` och `Count Distinct` till den underliggande källan. Det här gäller dock inte för medianen, eftersom den här aggregeringen normalt inte stöds av den underliggande datakällan. I sådana fall hämtas detaljerade data från den underliggande källan och medianvärdet beräknas från de returnerade resultaten. Den här metoden är rimlig när medianvärdet ska beräknas över ett relativt litet antal resultat. Det kan uppstå prestandaproblem eller frågefel på grund av gränsen på 1 000 000 rader om kardinaliteten är stor. Ett **medianvärde för länders befolkningar** kan till exempel vara rimligt medan ett **medianvärde för försäljningspris** inte är det.
 
-* **Avancerade textfilter (* contains* och liknande):* * När du filtrerar en textkolumn kan du använda avancerade filter som *contains* och *begins with*. Dessa filter kan tveklöst resultera i sämre prestanda för vissa datakällor. Du bör i synnerhet inte använda standardfiltret *contains* om det du behöver är en exakt matchning. Även om resultatet kan vara detsamma, beroende på faktiska data, så kan prestanda variera mycket beroende på användningen av index.
+* **Avancerade textfilter (_contains_ och liknande):** När du filtrerar en textkolumn så tillåter avancerad filtrering filter som *contains* och *begins with* osv. Dessa filter kan tveklöst resultera i sämre prestanda för vissa datakällor. Du bör i synnerhet inte använda standardfiltret *contains* om det du behöver är en exakt matchning. Även om resultatet kan vara detsamma, beroende på faktiska data, så kan prestanda variera mycket beroende på användningen av index.
 
 * **Flervalsutsnitt:** Utsnitt tillåter som standard bara enskilda val. Att tillåta flera val i filter kan orsaka prestandaproblem eftersom användaren väljer en uppsättning objekt i utsnittet. Om användaren till exempel väljer 10 produkter av intresse så gör varje nytt val att frågor skickas till källan. Även om användaren kan välja nästa objekt innan frågan slutförs så leder det här till en extra belastning på den underliggande källan.
 

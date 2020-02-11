@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 12/18/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 016b83e983f2b3139eb040a1f1d8d48d70b44a52
-ms.sourcegitcommit: df8bcc65f0df69bf1fc1d47eb06575742eac1622
+ms.openlocfilehash: c6f1a04f7178719eb68bcd54674ea0312c97ef3e
+ms.sourcegitcommit: 578d43aeb7cebf40f3caf03a614bc885cc039488
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75953494"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77076588"
 ---
 # <a name="whats-new-in-power-bi-desktop"></a>Nyheter i Power BI Desktop
 
@@ -31,9 +31,9 @@ Skaffa den senaste versionen av Power BI Desktop från [Download Center](https:/
 
 Länkarna intill varje funktion i Power BI Desktop uppdateringslistan tolkas enligt följande:
 
-* [blog]: Most features are explained in a section in the monthly update blog post.
-* [video]: Some features have a video excerpt that discusses the feature, which plays in a new browser tab.
-* [article]: Some features have an article that provides more detail.
+* \[blogg\]: De flesta funktioner beskrivs i ett avsnitt i månadsuppdateringens blogginlägg.
+* \[video\]: Vissa funktioner har ett videoutdrag som diskuterar funktionen, som spelas upp i en ny flik i webbläsaren.
+* \[artikel\]: Vissa funktioner har en artikel som innehåller mer information.
 * De återstående funktionerna är självförklarande och behöver varken artikel eller video.
 
 Du kan även titta på hela [videon om månadsuppdateringen av Power BI Desktop](#power-bi-desktop-monthly-update-video).

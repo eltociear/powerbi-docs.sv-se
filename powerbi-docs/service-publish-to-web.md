@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/30/2020
+ms.date: 02/06/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 53cc311f2fb0bfa4ab876c80b81ee2a092c4fd8c
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: a9417e7de98e0fa1867aa0561743c1ed6c5b63e2
+ms.sourcegitcommit: 578d43aeb7cebf40f3caf03a614bc885cc039488
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76913626"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77076713"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Publicera på webben från Power BI
 
@@ -40,9 +40,11 @@ Följande steg beskriver hur du använder **Publicera på webben**.
 
    ![PtW1](media/service-publish-to-web/publish_to_web1.png)
    
-2. Kontakta Power BI-administratören om du inte har fått behörighet att skapa inbäddningskoder
+2. Kontakta [Power BI-administratören](service-admin-role.md) om du inte har fått behörighet att skapa inbäddningskoder
 
    ![PtW1](media/service-publish-to-web/publish_to_web_admin_prompt.png)
+   
+   Om du vill ha hjälp med att hitta den person som kan aktivera publicera på webben i din organisation kan du [se dessa tips](#how-to-find-your-power-bi-administrator).
 
 3. Granska innehållet i dialogrutan och välj **Skapa inbäddningskod**.
 
@@ -71,7 +73,7 @@ Följande tabell innehåller råd om visningsläget och hur det ser ut när det 
 
 | Visningsläge | Hur det ser ut när det är inbäddat |
 | --- | --- |
-| ![PtW6b](media/service-publish-to-web/publish_to_web6b.png) |**Anpassa till sida** tar hänsyn till rapportens sidhöjd och sidbredd. Om du ställer in sidan på *dynamiska* förhållanden såsom 16:9 eller 4:3, så skalas innehållet så att det passar i iFrame. Vid inbäddning i en iFrame kan användning av **Anpassa till sida** resultera i *letterbox-format*, där en grå bakgrund visas i iFrame-områden när innehållet har skalats för att rymmas i iFrame. Om du vill minimera letterbox-formatet anger du höjd och bredd för iFrame därefter. |
+| ![PtW6b](media/service-publish-to-web/publish_to_web6b.png) |**Anpassa till sida** tar hänsyn till rapportens sidhöjd och sidbredd. Om du ställer in sidan på *dynamiska* förhållanden såsom 16:9 eller 4:3, så skalas innehållet så att det passar i iFrame. Vid inbäddning i en iFrame kan användning av **Anpassa till sida** resultera i *letterbox-format*, där en grå bakgrund visas i iFrame-områden när innehållet har skalats för att rymmas i iFrame. Om du vill minimera letterbox-formatet anger du lämplig höjd och bredd för iFrame. |
 | ![PtW6d](media/service-publish-to-web/publish_to_web6d.png) |**Faktisk storlek** säkerställer att rapporten bevarar den storlek som angetts på rapportsidan. Detta kan resultera i rullningslister i iFrame. Ange höjd och bredd för iFrame så att du kan undvika rullningslister. |
 | ![PtW6c](media/service-publish-to-web/publish_to_web6c.png) |**Anpassa till bredd** säkerställer att innehållet passar det vågräta iFrame-området. En kant visas fortfarande, men innehållet skalas så att allt tillgängligt vågrätt utrymme används. |
 
@@ -83,7 +85,7 @@ En inbäddningskod för **Publicera på webben** ser ut som i följande exempel:
  
 Du kan redigera bredd och höjd manuellt så att det blir exakt som du vill att det ska passa in på den sida där du bäddar in.
 
-Du kan prova att lägga till 56 bildpunkter i iFrame-höjden för att ta hänsyn till det nedre fältets aktuella storlek och uppnå en mer exakt anpassning. Om din rapportsida använder dynamisk storlek kan du använda någon av storlekarna i tabellen nedan för att uppnå en anpassning utan letterbox-format.
+Du kan prova att lägga till 56 bildpunkter till iFrame-höjden för att ta hänsyn till det nedre fältets aktuella storlek och uppnå en mer exakt anpassning. Om din rapportsida använder dynamisk storlek kan du använda någon av storlekarna i tabellen nedan för att uppnå en anpassning utan letterbox-format.
 
 | Proportion | Storlek | Dimension (bredd och höjd) |
 | --- | --- | --- |
@@ -194,6 +196,21 @@ Du måste vara en Microsoft Power BI-användare för att kunna använda **Public
 När du skapar en inbäddningskod med hjälp av **Publicera på webben** görs rapporten synlig för Internetanvändare. Den är offentligt tillgänglig, så du kan förvänta dig att användarna enkelt kan dela rapporten via sociala medier i framtiden. När användarna visar rapporten, antingen genom att öppna den offentliga URL:en direkt, eller visa den inbäddad på en webbsida eller i en blogg, så cachelagrar Power BI rapportdefinitionen och resultaten för de frågor som krävs för att visa rapporten. Detta säkerställer att tusentals samtidiga användare kan visa rapporten utan att påverka prestanda.
 
 Cacheminnet är långlivat, så om du uppdaterar rapportdefinitionen (genom att t.ex. ändra dess visningsläge) eller uppdaterar rapportdata, så kan det ta ungefär en timme innan ändringarna avspeglas i den version av rapporten som användarna ser. Därför rekommenderar vi att du mellanlagrar ditt arbete i förväg och skapa inbäddningskoden för **Publicera på webben** enbart när du är nöjd med inställningarna.
+
+## <a name="how-to-find-your-power-bi-administrator"></a>Så här hittar du din Power BI-administratör
+
+Om du vill ändra [Klientinställningar för publicera på webben](#tenant-setting) måste du arbeta med organisationens [Power BI-administratör](service-admin-role.md).
+
+För mindre organisationer eller individer som registrerat sig för Power BI kanske du inte har en Power BI-administratör ännu. Du måste följa vår [process för klientadministratörsövertagande](https://docs.microsoft.com/azure/active-directory/users-groups-roles/domains-admin-takeover). När du har en Power BI-administratör kan denne aktivera att skapa inbäddningskoder åt dig.
+
+Etablerade organisationer har vanligtvis redan en Power BI-administratör. Personer i någon av följande roller kan fungera som Power BI-administratör:
+
+- Office 365-administratörer
+- Azure Active Directory-administratörer
+- Användare med rollen Power BI-tjänstadministratör i Azure Active Directory
+
+Du måste [hitta någon av dessa personer](https://docs.microsoft.com/office365/admin/admin-overview/admin-overview#who-has-admin-permissions-in-my-business) i din organisation så de kan uppdatera inställningen.
+
 
 ## <a name="next-steps"></a>Nästa steg
 

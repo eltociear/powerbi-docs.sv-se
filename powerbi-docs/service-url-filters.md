@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 01/30/2020
 LocalizationGroup: Reports
-ms.openlocfilehash: e2840d2695b70867b73c873aea7a06acf26bcc3e
-ms.sourcegitcommit: 53c2b5ea4ee1fe2659804d5ccc8e4bb445a8bcad
+ms.openlocfilehash: b20820490ec88d34d4ee75c135cc54277e473545
+ms.sourcegitcommit: 578d43aeb7cebf40f3caf03a614bc885cc039488
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76913558"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77076629"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtrera en rapport med frågesträngparametrar i URL:en
 
@@ -193,7 +193,7 @@ Den här skillnaden är användbar när du vill se olika resultat: filtrerade p�
 Det finns några saker som du bör vara medveten om när du använder frågesträngparametrarna.
 
 * Vid användning av *in*-operatorn måste värden till höger om *in* vara en kommaavgränsad lista inom parenteser.    
-* I Power BI-rapportservern kan du [skicka rapportparametrar ](https://docs.microsoft.com/sql/reporting-services/pass-a-report-parameter-within-a-url?view=sql-server-2017.md) genom att ta med dem i en rapport-URL. Dessa URL-parametrar har inget prefix eftersom de skickas direkt till rapportbearbetningsmotorn.
+* Power BI-rapportservern stöder även möjligheten att ange ytterligare filter med URL-parametern "filter".  I Power BI-rapportserver kan URL:en till exempel se ut så här: https://reportserver/reports/powerbi/Store Sales?rs:Embed=true&filter= Store/Territory eq 'NC' and Store/Chain eq 'Fashions Direct'
 * Frågesträngsfiltrering fungerar inte med [Publicera på webben](service-publish-to-web.md) eller [Exportera till PDF](consumer/end-user-pdf.md).
 * [Bädda in med rapportwebbdel i SharePoint Online](service-embed-report-spo.md) har inte stöd för URL-filter.
 * Datatypen long är (2^53-1) på grund av begränsningar i Javascript.
