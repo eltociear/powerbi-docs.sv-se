@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/23/2020
-ms.openlocfilehash: 9b7ea090d7860de9ec4132b070bd1286085cc5f3
-ms.sourcegitcommit: 0cc594ebb78a6d0e88784673ed09f8aefd10c7a7
+ms.openlocfilehash: d4e233e55731d77d4136c1b6ef1e341a2d043234
+ms.sourcegitcommit: 75300b3f53f438ed7d3bd4edc93b9eb5925bf3af
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76819570"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77026725"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Nyheter i Power BI-rapportserver
 
@@ -160,7 +160,7 @@ Med Azure Active Directory-programproxy behöver du inte längre hantera din ege
 
 #### <a name="custom-headers"></a>Anpassade rubriker
 
-Anger rubrikvärden för alla URL:er som matchar det angivna regex-mönstret. Användare kan uppdatera det anpassade rubrikvärdet med giltig XML och ange rubrikvärden för de valda begärans-URL:erna. Administratörer kan lägga till ett valfritt antal rubriker i XML-filen. Mer information finns i [Anpassade rubriker](https://docs.microsoft.com/sql/reporting-services/tools/server-properties-advanced-page-reporting-services#custom-headers) i Reporting Services-artikeln **Serveregenskaper, sidan Avancerat**.
+Anger rubrikvärden för alla URL:er som matchar det angivna regex-mönstret. Användare kan uppdatera det anpassade rubrikvärdet med giltig XML och ange rubrikvärden för de valda begärans-URL:erna. Administratörer kan lägga till ett valfritt antal rubriker i XML-filen. Mer information finns i [CustomHeaders](/sql/reporting-services/tools/server-properties-advanced-page-reporting-services#customheaders) i Reporting Services-artikeln **Serveregenskaper, sidan Avancerat**.
 
 #### <a name="transparent-database-encryption"></a>Transparent databaskryptering
 
