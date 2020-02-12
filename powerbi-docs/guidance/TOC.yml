@@ -66,6 +66,8 @@
               href: migrate-ssrs-reports-to-power-bi.md
         - name: Administration och distribution
           items:
+            - name: Klientorganisationens administratörsinställningar
+              href: admin-tenant-settings.md
             - name: Dimensionering av lokal datagateway
               href: gateway-onprem-sizing.md
     - name: Vitböcker
