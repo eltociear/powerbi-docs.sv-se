@@ -66,7 +66,7 @@ Det finns en mängd intressanta aktiviteter som ökar detaljnivån i matrisen so
 
 Gå till fönstret Visualiseringar. När du lägger till flera fält i avsnittet **Rader** i området **Fält** aktiveras ökad detaljnivå för raderna det visuella matrisobjektet. Detta påminner om hur du skapar en hierarki som sedan låter dig öka detaljnivån (och återgå) i hierarkin och analysera data på varje nivå.
 
-I följande bild innehåller avsnittet **Rader***Försäljningssteg* och *Affärsmöjlighetens storlek* och skapar en gruppering (eller hierarki) i raderna som vi kan visa i större eller mindre detalj.
+I följande bild innehåller avsnittet **Rader** *Försäljningssteg* och *Affärsmöjlighetens storlek* och skapar en gruppering (eller hierarki) i raderna som vi kan visa i större eller mindre detalj.
 
 ![Filterkort som visar vilka rader som väljs](media/desktop-matrix-visual/power-bi-rows-matrix.png)
 

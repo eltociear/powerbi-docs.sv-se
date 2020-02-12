@@ -152,7 +152,7 @@ Y-axelns etiketter visas till vänster som standard. Just nu är de ljusgrå, sm
     ![Diagram efter formateringen av Y-axeln](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-formatting-y.png)
 
 ### <a name="customize-the-y-axis-title"></a>Anpassa Y-axelns rubrik
-När Y-axelns rubrik är **På** visas rubriken på Y-axeln bredvid etiketterna för Y-axeln. För det här visuella objektet förbättras inte visualiseringen av en rubrik för Y-axeln, så vi **inaktiverar****Rubrik**. Vi kommer att lägga till Y-axelns rubriker i ett visuellt objekt med dubbla axlar senare i den här självstudien. 
+När Y-axelns rubrik är **På** visas rubriken på Y-axeln bredvid etiketterna för Y-axeln. För det här visuella objektet förbättras inte visualiseringen av en rubrik för Y-axeln, så vi **inaktiverar** **Rubrik**. Vi kommer att lägga till Y-axelns rubriker i ett visuellt objekt med dubbla axlar senare i den här självstudien. 
 
 ### <a name="customize-the-gridlines"></a>Anpassa stödlinjerna
 Nu ska vi få stödlinjerna att stå ut genom att ändra färgen och öka bredden på dem:
@@ -204,7 +204,7 @@ Eftersom vi började med en visualisering med en formaterad Y-axel, skapade Powe
 
 I en så komplicerad visualisering underlättar det med axelrubriker.  Med titlar kan dina kollegor förstå vad ditt visuella objekt försöker berätta.
 
-1. Växla **Rubrik** till **På** för **Y-axeln (kolumn)** och **X-axeln (rad)**.
+1. Växla **Rubrik** till **På** för **Y-axeln (kolumn)** och **X-axeln (rad)** .
 
 1. Ange **Stil** till **Visa enbart rubrik** för båda.
 
