@@ -429,6 +429,8 @@
           href: desktop-send-smile-privacy-statement.md
         - name: 'Administratörer: Hantera inloggningsformuläret för Power BI Desktop'
           href: desktop-admin-sign-in-form.md
+        - name: Felsök inloggning i Power BI Desktop
+          href: desktop-troubleshooting-sign-in.md
         - name: Tillgänglighet
           items:
             - name: Om hjälpmedel i Power BI
@@ -827,6 +829,8 @@
                   href: service-connect-to-xero.md
                 - name: Zendesk
                   href: service-connect-to-zendesk.md
+                - name: Snowflake Data Warehouse
+                  href: service-connect-snowflake.md
             - name: Organisationsinnehållspaket
               items:
                 - name: Introduktion till organisationsinnehållspaket
