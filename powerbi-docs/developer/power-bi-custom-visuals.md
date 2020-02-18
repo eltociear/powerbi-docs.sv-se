@@ -10,12 +10,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 01/03/2019
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 897590324040a69dbaa1ac549dcee80de8da76a5
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 56958d59e52065f3553a60ce49bd988b4869a646
+ms.sourcegitcommit: e27d40054949421701f829113c4a5f6d260c8d5f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "75691409"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77153969"
 ---
 # <a name="visuals-in-power-bi"></a>Visuella objekt i Power BI
 
@@ -80,4 +80,4 @@ Om du är webbutvecklare och intresserad av att skapa egna visuella objekt och l
 
 * Utforska [riktlinjerna för visuella Power BI-objekt](guidelines-powerbi-visuals.md).
 
-Har du fler frågor? Läs mer i [Vanliga frågor och svar om anpassade visuella Power BI-objekt](power-bi-custom-visuals-faq.md) eller i [Power BI-communityn](http://community.powerbi.com/).
+Har du fler frågor? Läs mer i [Vanliga frågor och svar om anpassade visuella Power BI-objekt](power-bi-custom-visuals-faq.md) eller i [Power BI-communityn](https://community.powerbi.com/).
