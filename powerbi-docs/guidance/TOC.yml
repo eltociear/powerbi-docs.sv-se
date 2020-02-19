@@ -52,15 +52,19 @@
               href: dax-column-measure-references.md
             - name: Undvik att använda FILTER som ett filterargument
               href: dax-avoid-avoid-filter-as-filter-argument.md
+        - name: Power BI-rapporter
+          items:
             - name: Utöka visuella objekt med knappbeskrivningar för rapportsidor
               href: report-page-tooltips.md
             - name: Använd detaljerad information för rapportsidor
               href: report-drillthrough.md
-            - name: Använda sidnumrerade rapporter i Power BI
+        - name: Sidnumrerade rapporter i Power BI
+          items:
+            - name: Användningsområden för sidnumrerade rapporter
               href: report-paginated-or-power-bi.md
-            - name: Använda sammanhängande parametrar i sidnumrerade rapporter
+            - name: Använda sammanhängande parametrar
               href: paginated-report-cascading-parameter.md
-            - name: Undvik tomma sidor när du skriver ut sidnumrerade rapporter
+            - name: Undvika tomma sidor vid utskrift
               href: report-paginated-blank-page.md
             - name: Migrera SSRS-rapporter till Power BI
               href: migrate-ssrs-reports-to-power-bi.md
