@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/01/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: d30a8012161934ada4ff3cb2ce6852fe62f48892
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 148e5283e1a2e2d5ef61027c24df1a4c3e574822
+ms.sourcegitcommit: e27d40054949421701f829113c4a5f6d260c8d5f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73877204"
+ms.lasthandoff: 02/13/2020
+ms.locfileid: "77179230"
 ---
 # <a name="intro-to-datasets-across-workspaces-preview"></a>Introduktion till datamängder mellan arbetsytor (förhandsversion)
 
@@ -62,7 +62,7 @@ Specifika funktioner som bygger på funktionaliteten hos delade datamängder lic
 ## <a name="considerations-and-limitations"></a>Överväganden och begränsningar
 
 - Som apputgivare måste du se till att målgruppen har åtkomst till datamängder utanför arbetsytan. Annars kommer användarna att stöta på problem när de interagerar med appen: rapporter öppnas inte utan datauppsättningsåtkomst och instrumentpaneler visas som låsta. Dessutom kommer inte användarna att kunna öppna appen om det första objektet i dess navigering är en rapport utan åtkomst till datauppsättningen.
-- Skapande av en rapport ovanpå en datamängd på en annan arbetsyta kräver den nya arbetsytefunktionen på båda sidor: Både rapporten och datamängden måste finnas på en arbetsyta med den nya arbetsytefunktionen.
+- Skapande av en rapport ovanpå en datamängd på en annan arbetsyta kräver den nya arbetsytefunktionen på båda sidor: Både rapporten och datamängden måste finnas på en arbetsyta med den nya arbetsytefunktionen. Du kan bara kopiera rapporter från en ny arbetsyta till en annan ny arbetsyta, inte till klassiska arbetsytor eller Min arbetsyta. 
 - På en klassisk arbetsyta visar funktionen för datamängdsupptäckt endast datamängder på den arbetsytan.
 - ”Publicera på webben” fungerar avsiktligen inte för en rapport som baseras på en delad datamängd.
 - Om två personer är medlemmar i en arbetsyta som har åtkomst till en delad datamängd är det möjligt att endast en av dem kan se den relaterade datamängden på arbetsytan. Endast personer med minst läsbehörighet till datamängden kan se den delade datamängden. 

@@ -11,18 +11,18 @@ ms.topic: conceptual
 ms.date: 10/16/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 24e5a06d3e835f7ff5114cbf17b772bc7efd00bb
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 7513479d14b57e47b30d2cd7ac9cc4acfe69d075
+ms.sourcegitcommit: 17aad73762579d6822383b27b96b1b63f87f2d6f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73852233"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "77260118"
 ---
 # <a name="basic-concepts-for-the-power-bi-service-consumers"></a>Grundläggande begrepp för användare av Power BI-tjänsten
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-Den här artikeln förutsätter att du redan har läst [översikten över Power BI](../fundamentals/power-bi-overview.md) och har identifierat dig själv som [användare av ***Power BI***](end-user-consumer.md). Användare får Power BI-innehåll såsom instrumentpaneler och rapporter från kollegor. Användare använder Power BI-tjänsten, som är den webbplatsbaserade versionen av Power BI.
+I den här artikeln förutsätts att du redan har läst [översikten över Power BI](../fundamentals/power-bi-overview.md) och har identifierat dig själv som [Power BI **-_användare_** ](end-user-consumer.md). Användare får Power BI-innehåll såsom instrumentpaneler och rapporter från kollegor. Användare använder Power BI-tjänsten, som är den webbplatsbaserade versionen av Power BI.
 
 Du kommer utan tvekan att höra talas om ”Power BI Desktop” eller bara ”Desktop”. Det är det fristående verktyget som används av *designers* som skapar och delar instrumentpaneler och rapporter med dig. Det är viktigt att veta att det även finns andra Power BI-verktyg. Om du är användare kommer du bara att arbeta med Power BI-tjänsten. Den här artikeln gäller endast för Power BI-tjänsten.
 
@@ -54,13 +54,13 @@ _______________________________________________________
 
 ### <a name="introduction-to-building-blocks"></a>Introduktion till byggstenar
 
-För Power BI-användare är de fem byggblocken: ***visualiseringar***, ***instrumentpaneler***, ***rapporter***, ***appar*** och ***datamängder***. Dessa kallas ibland *Power BI*-***innehåll***. *Innehåll* finns i ***arbetsytor***. Ett vanligt arbetsflöde inbegriper alla dessa byggstenar: En *Power BI-designer* (gul i diagrammet nedan) samlar in data från *datamängder*, hämtar in dem till Power BI för analys, skapar *rapporter* med *visualiseringar* som visar intressanta fakta och insikter, fäster visualiseringar från rapporter på en instrumentpanel och delar rapporterna och instrumentpanelerna med *användare* som du (svarta i diagrammet nedan). *Designern* delar dem i form av *appar* eller andra typer av delat innehåll.
+För Power BI-användare är de fem byggstenarna: **_visualiseringar_** , **_instrumentpaneler_** , **_rapporter_** , **_appar_** och **_datamängder_** . Dessa kallas ibland *Power BI*- **_innehåll_** . *Innehåll* finns på **_arbetsytor_** . Ett vanligt arbetsflöde inbegriper alla dessa byggstenar: En *Power BI-designer* (gul i diagrammet nedan) samlar in data från *datamängder*, hämtar in dem till Power BI för analys, skapar *rapporter* med *visualiseringar* som visar intressanta fakta och insikter, fäster visualiseringar från rapporter på en instrumentpanel och delar rapporterna och instrumentpanelerna med *användare* som du (svarta i diagrammet nedan). *Designern* delar dem i form av *appar* eller andra typer av delat innehåll.
 
 ![Ett grundläggande arbetsflödesdiagram i Power BI.](media/end-user-basic-concepts/power-bi-workflow.png)
 
 I dess mest grundläggande form:
 
-- ![En skärmbild av visualiseringsikonen.](media/end-user-basic-concepts/visual.png) En ***visualisering*** (eller ett *visuellt objekt*) är en typ av diagram som skapats av *Power BI-designers*. De visuella objekten visar data från *rapporter* och *datamängder*. Normalt skapar *designers* visuella objekt i Power BI Desktop.
+- ![En skärmbild av visualiseringsikonen.](media/end-user-basic-concepts/visual.png) en **_visualisering_** (eller ett *visuellt objekt*) är en typ av diagram som skapats av en Power BI-*designer*. De visuella objekten visar data från *rapporter* och *datamängder*. Normalt skapar *designers* visuella objekt i Power BI Desktop.
 
     Mer information finns i [Interagera med visuella objekt i rapporter, instrumentpaneler och appar](end-user-visualizations.md).
 
@@ -148,7 +148,7 @@ En instrumentpanel representerar en anpassad vy av någon delmängd av de underl
 
   ![Skärmbild av ett exempel på en instrumentpanel](media/end-user-basic-concepts/power-bi-dashboard.png)
 
-En panel är en rendering av ett visuellt objekt som en *designer* *fäster* till exempel från en rapport till en instrumentpanel. Varje fäst panel visar en [visualisering](end-user-visualizations.md) som en designer har skapat från en datamängd och som har fästs på instrumentpanelen. En panel kan även innehålla en hel rapportsida och kan innehålla liveuppspelningsdata eller en video. Det finns många sätt som *designers* kan använda för att lägga till paneler på instrumentpaneler. Det finns för många för att vi ska kunna ta upp dem i den här översikten. Läs mer i [Paneler på instrumentpanelen i Power BI](end-user-tiles.md).
+En panel är en återgivning av ett visuellt objekt som en *designer* *fäster* på en instrumentpanel, till exempel från en rapport. Varje fäst panel visar en [visualisering](end-user-visualizations.md) som en designer har skapat från en datamängd och som har fästs på instrumentpanelen. En panel kan även innehålla en hel rapportsida och kan innehålla liveuppspelningsdata eller en video. Det finns många sätt som *designers* kan använda för att lägga till paneler på instrumentpaneler. Det finns för många för att vi ska kunna ta upp dem i den här översikten. Läs mer i [Paneler på instrumentpanelen i Power BI](end-user-tiles.md).
 
 Användare kan inte redigera instrumentpaneler. Du kan dock lägga till kommentarer, visa relaterade data, ange en instrumentpanel som favorit, prenumerera med mera.
 

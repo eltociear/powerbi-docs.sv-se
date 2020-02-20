@@ -1,19 +1,19 @@
 ---
 title: Visa presentationsläge på Surface Hub, Windows 10 – Power BI
 description: Läs mer om att visa Power BI-rapporter i Surface Hub och visa Power BI-instrumentpaneler, rapporter och paneler i helskärmsläge på Windows 10-enheter.
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 12/10/2018
-ms.author: mshenhav
-ms.openlocfilehash: abd7fd34cf2dbdc2f8f12a7f3c6de6228941af5a
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 02/08/2020
+ms.author: painbar
+ms.openlocfilehash: f900a329ccbfa2a6e80883baec9694ddeaf3833a
+ms.sourcegitcommit: 17aad73762579d6822383b27b96b1b63f87f2d6f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73869525"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "77260062"
 ---
 # <a name="view-reports-and-dashboards-in-presentation-mode-on-surface-hub-and-windows-10-devices"></a>Visa rapporter och instrumentpaneler i presentationsläge på Surface Hub och Windows 10-enheter
 Du kan använda presentationsläge för att visa rapporter och instrumentpaneler i helskärmsläge på Windows 10-enheter och Surface Hub. 
@@ -37,14 +37,17 @@ Byt till helskärmsläge i Power BI-mobilappen genom att trycka på **helskärms
 
 ![Rapport i helskärmsläge med verktygsfält på sidorna](./media/mobile-windows-10-app-presentation-mode/power-bi-presentation-mode-2.png)
 
-Du kan utföra följande åtgärder från verktygsfältet:
+Du kan trycka för att utföra följande åtgärder från verktygsfältet:
 
-1. Trycka på ikonen tillbaka ![ikonen tillbaka](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-back-icon.png) för att gå tillbaka till den föregående sidan. Med ett långt tryck på ikonen visas fönstret med sökvägar så att du kan navigera till den mapp som innehåller din rapport eller instrumentpanel.
-2. Med pennanteckningsikonen ![pennanteckningsikon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-ink-icon.png) kan du välja en färg när du använder Surface-pennan för att rita eller anteckna på rapportsidan. 
-3. Använda sidikonen ![sidnumreringsikonen](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-pages-icon.png) för att byta rapportsidan som du för närvarande presenterar.
-4. Ikonen spela upp  ![Ikonen spela upp](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-play-icon.png) döljer åtgärdsfältet och startar bildspelet, där appen automatiskt bläddrar mellan rapportsidorna. 
-5. Tryck på sökikonen ![Sökikonen](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-search-icon.png) för att söka efter andra artefakter i Power BI.
-6. Avsluta presentationsläget genom att trycka på ikonen med två inåtriktade pilar ![Avsluta helskärmsläge](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-exit-full-screen-icon.png) i verktygsfältet.
+1. **Gå tillbaka** ![bakåtikonen](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-back-icon.png) till föregående sida. Om du trycker länge på ikonen visas fönstret med sökvägar så att du kan navigera till mappen som innehåller din rapport eller instrumentpanel.
+2. **Välja pennfärg** ![pennfärgsikonen](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-ink-icon.png) när du använder Surface-pennan till att rita eller anteckna på rapportsidan.
+3. **Ta bort pennanteckningar** ![radergummiikonen](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-eraser-icon.png) du har gjort med Surface-pennan på rapportsidan.  
+4. **Byta sida** ![sidnummerikonen](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-pages-icon.png) till en annan sida i presentationen.
+5. **Spela upp bildspel** ![uppspelningsikonen](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-play-icon.png), åtgärdsfältet döljs och bildspelet startar. Appen växlar automatiskt mellan rapportsidorna. 
+6. **Söka** ![sökikonen](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-search-icon.png) efter andra artefakter i Power BI.
+7. **Uppdatera** ![uppdateringsikonen](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-refresh-icon.png) rapporten.
+8. **Avsluta** ![avsluta helskärmsläget](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-exit-full-screen-icon.png) presentationsläget.
+8. **Dela** ![delningsikonen](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-share-icon.png) en bild av presentationsvyn med dina kollegor. Bilden innehåller eventuella anteckningar du har gjort med Surface-pennan under presentationen.
 
 Du kan avdocka verktygsfältet och dra och placera det var som helst på skärmen. Det här är användbart för stora skärmar när du vill fokusera på ett visst område i rapporten och vill ha verktygen bredvid det. Placera bara fingret på verktygsfältet och svep det till rapportarbetsytan.
 

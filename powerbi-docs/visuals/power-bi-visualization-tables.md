@@ -7,15 +7,15 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/04/2019
+ms.date: 02/10/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 6d2f1eea22f83d90501581be7d2e9b8230962835
-ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
+ms.openlocfilehash: 014186acf6bf6b8c00686c0b7a29d0b526b0afb7
+ms.sourcegitcommit: e27d40054949421701f829113c4a5f6d260c8d5f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74830856"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77154321"
 ---
 # <a name="tables-in-power-bi-reports-and-dashboards"></a>Tabeller i Power BI-rapporter och instrumentpaneler
 
@@ -98,22 +98,19 @@ Det finns många sätt för att formatera en tabell. Här beskrivs bara några a
 
 ### <a name="conditional-formatting"></a>Villkorsstyrd formatering
 
-*Villkorsstyrd formatering* är en typ av formatering. Power BI använder villkorsstyrd formatering för fälten i området **Värden** i fönstret **Visualiseringar**.
+*Villkorsstyrd formatering* är en typ av formatering. Power BI kan använda villkorsstyrd formatering för de fält du lägger till i avsnittet **Värden** i fönstret **Visualiseringar**.
 
-Med villkorsstyrd formatering för tabeller kan du specificera anpassade cellbakgrundsfärger och teckenfärg baserat på cellvärden, inklusive toningar.
+![Fönstret Visualisering](media/power-bi-visualization-tables/power-bi-table-values.png)
 
-1. I fönstret **Visualiseringar** väljer du ikonen **Fält**![ikonen Fält](media/power-bi-visualization-tables/power-bi-fields-icon.png).
+Med villkorsstyrd formatering för tabeller kan du ange ikoner, webbadresser, cellbakgrundsfärger och teckenfärger baserat på cellvärden, inklusive toningar.
 
-1. Välj nedpilen bredvid värdet i området **Värden** som du vill formatera (eller högerklicka på fältet).
+1. Gå till fönstret **Format** och öppna kortet **Villkorsstyrd formatering**.
 
-    > [!NOTE]
-    > Du kan endast hantera villkorsstyrd formatering för fälten i området **Värden** i brunnen **Fält**.
+    ![Kortet Villkorsstyrd formatering](media/power-bi-visualization-tables/power-bi-conditional.png)
 
-    ![sökväg till Skalor för bakgrundsfärg](media/power-bi-visualization-tables/power-bi-conditional-formatting-background.png)
+1. Välj ett fält att formatera och flytta skjutreglaget för **Bakgrundsfärg** till På. Power BI använder toning baserat på värdena i kolumnen. Om du vill ändra standardfärgerna väljer du **Avancerade kontroller**.
 
-1. Välj **Bakgrundsfärg**.
-
-1. I dialogrutan som visas kan du konfigurera färgen samt **min-** och **max**-värden. Om du väljer alternativet **Divergerande** kan du även konfigurera ett valfritt **centreringsvärde**.
+    Om du väljer alternativet **Divergerande** kan du även konfigurera ett valfritt **centreringsvärde**.
 
     ![Skärmen Skalor för bakgrundsfärg](media/power-bi-visualization-tables/power-bi-conditional-formatting-background2.png)
 
@@ -124,11 +121,11 @@ Med villkorsstyrd formatering för tabeller kan du specificera anpassade cellbak
 
     ![visar ett nytt fält till höger](media/power-bi-visualization-tables/power-bi-conditional-formatting2.png)
 
-1. Lägg till datastapeln villkorsstyrd formatering genom att välja nedåtpilen bredvid **Total försäljningsvarians** och välja **Villkorsstyrd formatering > Datastaplar**.
+1. Lägg till villkorsstyrd formatering för datastaplar genom att flytta skjutreglaget för **Datastaplar** till På.  
 
-    ![sökväg till Datastaplar](media/power-bi-visualization-tables/power-bi-conditional-formatting-data-bars.png)
+    ![Kortet Villkorsstyrd formatering med datastaplar aktiverade](media/power-bi-visualization-tables/power-bi-data-bar-matrix.png)
 
-1. I dialogrutan som visas anger du färger för **Positiv stapel** och **Negativ stapel**, markerar alternativet **Visa enbart stapel** och gör eventuella andra ändringar som du önskar.
+1. Om du vill anpassa datastaplarna väljer du **Avancerade kontroller**. I dialogrutan som visas anger du färger för **Positiv stapel** och **Negativ stapel**, markerar alternativet **Visa enbart stapel** och gör eventuella andra ändringar som du önskar.
 
     ![markeringen för Visa endast liggande](media/power-bi-visualization-tables/power-bi-data-bar.png)
 
@@ -138,10 +135,10 @@ Med villkorsstyrd formatering för tabeller kan du specificera anpassade cellbak
 
     ![samma tabell men med staplar i sista kolumnen](media/power-bi-visualization-tables/power-bi-conditional-formatting-data-bars2.png)
 
-Om du vill ta bort villkorlig formatering från en visualisering, bara högerklickar du på fältet igen och väljer **Ta bort villkorsstyrd formatering**.
+1. Du kan ge visuell vägledning i dina tabeller med *villkorsstyrda ikoner*.  Öppna kortet **Villkorsstyrd formatering** och välj **Årets försäljning** från listrutan. Flytta reglaget för **Ikoner** till **På**.  Om du vill anpassa ikonerna väljer du **Avancerade kontroller**.
 
-> [!TIP]
-> Villkorsstyrd formatering är också tillgängligt från fönstret **Format**. Välj värdet att formatera och växla sedan **färgskalor** eller **datastaplar** till **På** för att använda standardinställningarna eller, om du vill anpassa inställningarna, välj **Avancerade kontroller**.
+    ![Tabell med tillagda ikoner](media/power-bi-visualization-tables/power-bi-table-icons.png)
+
 
 ## <a name="copy-values-from-power-bi-tables-for-use-in-other-applications"></a>Kopiera värden från Power BI-tabeller så att du kan använda dem i andra program
 
@@ -174,6 +171,7 @@ För att kopiera fler än en cell:
 Power BI trunkerar ibland en kolumnrubrik i en rapport eller på en instrumentpanel. Om du vill visa hela kolumnnamnet håller du muspekaren över utrymmet till höger om rubriken för att visa dubbelpilarna, markerar och drar.
 
 ![närbild på storleksändring av kolumn](media/power-bi-visualization-tables/resizetable.gif)
+
 
 ## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
 

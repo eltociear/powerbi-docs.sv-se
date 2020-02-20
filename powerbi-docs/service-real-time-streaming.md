@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: a4d948e768682aab77708289320914ce3ef0fdc3
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 047aa5e19089555538c874702dd50da0f1146ff1
+ms.sourcegitcommit: 578d43aeb7cebf40f3caf03a614bc885cc039488
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "74699114"
+ms.lasthandoff: 02/10/2020
+ms.locfileid: "77115295"
 ---
 # <a name="real-time-streaming-in-power-bi"></a>Realtidsuppspelning i Power BI
 Med direktuppspelning i realtid för Power BI, kan du strömma data och uppdatera instrumentpaneler i realtid. Visuella objekt och instrumentpaneler som kan skapas i Power BI kan även skapas för att visa och uppdatera data och visuella objekt i realtid. Enheter och datakällor för strömmande data kan vara fabrikssensorer, sociala mediekällor, användningsstatistik för tjänsten och alla andra källor där tidskänsliga data kan insamlas eller skickas.
@@ -35,7 +35,7 @@ Först ska vi gå igenom hur de här datauppsättningarna skiljer sig från vara
 ### <a name="push-dataset"></a>Push-datauppsättning
 Med en **push-datauppsättning**, pushas data till Power BI-tjänsten. När datauppsättningen skapas, skapar Power BI-tjänsten automatiskt en ny databas i tjänsten för att lagra data. Eftersom det finns en underliggande databas som fortsätter att lagra data allteftersom de kommer in, kan rapporter skapas med dessa data. Rapporterna och deras visuella objekt är precis som alla andra visuella rapportobjekt, vilket innebär att du kan använda alla Power BI:s funktioner för rapportskapande för att skapa visuella objekt, inklusive anpassade sådana, dataaviseringar, fästa instrumentpaneler och mycket mer.
 
-När en rapport skapas med push-datauppsättningen, kan alla dess visualiseringar fästas på en instrumentpanel. På den visualiseringen uppdateras sedan visualiseringarna i realtid närhelst data uppdateras. Inom tjänsten, utlöser instrumentpanelen en uppdateringen av panelen varje gång nya data tas emot.
+När du skapar en rapport med push-datauppsättningen kan du fästa dess visuella objekt på en instrumentpanel. På den visualiseringen uppdateras sedan visualiseringarna i realtid närhelst data uppdateras. Inom tjänsten, utlöser instrumentpanelen en uppdateringen av panelen varje gång nya data tas emot.
 
 Det finns två saker att tänka på med fästa paneler från en push-datauppsättning:
 
@@ -80,7 +80,7 @@ Det finns tre primära sätt som du kan pusha data till en datauppsättning:
 Låt oss ta en titt på var och en av dessa metoder.
 
 ### <a name="using-power-bi-rest-apis-to-push-data"></a>Använd Power BI REST API:er för att pusha data
-**Power BI REST API:er** kan användas för att skapa och skicka data till **push**-datauppsättningar och **strömmande** datauppsättningar. När du skapar en datauppsättning med Power BI REST API:er, anger flaggan *defaultMode* om datauppsättningen är push eller strömmande. Om ingen *defaultMode*-flagga har angetts, blir datauppsättningen **push** som standard.
+Du kan använda **Power BI REST-API:er** till att skapa och skicka data till **push**-datauppsättningar och **strömmande** datauppsättningar. När du skapar en datauppsättning med Power BI REST API:er, anger flaggan *defaultMode* om datauppsättningen är push eller strömmande. Om ingen *defaultMode*-flagga har angetts, blir datauppsättningen **push** som standard.
 
 Om värdet *defaultMode* är satt till *pushStreaming* så är datauppsättningen både **push-baserad** *och* **strömmande**, vilket ger dig bägge datauppsättningstypernas fördelar. 
 

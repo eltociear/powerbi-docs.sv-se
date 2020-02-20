@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 12/08/2019
+ms.date: 02/10/2020
 ms.author: painbar
-ms.openlocfilehash: f0ffcdabf1fea090cff769fa35c8346812b37896
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: af3ae969d0aedab3cc49e8d286ce71313da3d6bc
+ms.sourcegitcommit: 17aad73762579d6822383b27b96b1b63f87f2d6f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75220265"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "77259793"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-android-devices"></a>Kom igång med Power BI-mobilapp på Android-enheter
 Android-appen för Microsoft Power BI ger mobil BI-upplevelse för Power BI, Power BI-rapportserver och Reporting Services. Visa och interagera med ditt företags instrumentpaneler lokalt och i molnet överallt, med pekaktiverad mobil åtkomst i realtid. Utforska data i instrumentpaneler och dela med dina kollegor via e-post eller sms. 
@@ -52,13 +52,13 @@ Om du inte har registrerat dig ännu, går du till [Power BI-tjänsten](https://
 1. Öppna Power BI för Android-enheten från startskärmen på din Android-telefon.
    
    ![Power BI-ikon](./media/mobile-android-app-get-started/power-bi-logo-android.png)
-2. Om du vill visa dina Power BI-instrumentpaneler och -rapporter trycker du på **Power BI**.  
-   
-   Om du får ett meddelande om att Power BI inte kan logga in, hittar du mer information i [”kunde inte autentisera eftersom företagets SSL-certifikat inte är betrott”](mobile-android-app-error-corporate-ssl-account-is-untrusted.md) om hur du löser problemet.
+2. Om du vill logga in i Power BI trycker du på fliken **Power BI** och fyller i dina inloggningsuppgifter.
 
-   Om du vill visa dina rapporter för Power BI-rapportserver och Reporting Services och KPI:er, trycker du på **Rapportserver**.
+    Om du får ett meddelande om att Power BI inte kan logga in, hittar du mer information i [”kunde inte autentisera eftersom företagets SSL-certifikat inte är betrott”](mobile-android-app-error-corporate-ssl-account-is-untrusted.md) om hur du löser problemet.
+
+   Om du vill logga in i dina mobila rapporter och KPI:er i Reporting Services trycker du på fliken **Rapportserver** och fyller i dina inloggningsuppgifter.
    
-   ![Logga in till Power BI](./media/mobile-android-app-get-started/power-bi-connect-to-login.png)
+   ![Logga in i Power BI](./media/mobile-android-app-get-started/power-bi-connect-to-login.png)
 
 ## <a name="try-the-power-bi-and-reporting-services-samples"></a>Testa Power BI- och Reporting Services-exemplen
 Även om du inte registrerar dig kan du visa och interagera med Power BI- och Reporting Services-exemplen.

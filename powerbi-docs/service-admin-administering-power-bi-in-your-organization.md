@@ -9,12 +9,12 @@ ms.topic: overview
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 57819765b156baac2a86b8144e86770a0117adfd
-ms.sourcegitcommit: d5de66b591c2e1de979ce0e3ce5e5b6e1f2a08db
+ms.openlocfilehash: 864854e774defee16d446a513622e1134c77d75c
+ms.sourcegitcommit: 578d43aeb7cebf40f3caf03a614bc885cc039488
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75548582"
+ms.lasthandoff: 02/10/2020
+ms.locfileid: "77115272"
 ---
 # <a name="what-is-power-bi-administration"></a>Vad är Power BI-administration?
 
@@ -80,10 +80,9 @@ Det finns flera verktyg för Power BI-administration, vilka beskrivs i följande
 
 Vi hoppas att den här artikeln gav några snabba insikter i Power BI-administratörens arbete och de specifika roller, aktiviteter och verktyg som ingår. Vi rekommenderar följande artiklar om du vill fördjupa din förståelse.
 
-[Använda Power BI-administratörsportalen](service-admin-portal.md)
-
-[Använda PowerShell-cmdletar](/powershell/power-bi/overview)
-
-[Vanliga frågor om Power BI-administration](service-admin-faq.md)
-
-Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+- [Använda Power BI-administratörsportalen](service-admin-portal.md)
+- [Guide till administratörsinställningar för klientorganisationer](guidance/admin-tenant-settings.md)
+- [Använda PowerShell-cmdletar](/powershell/power-bi/overview)
+- [Vanliga frågor om Power BI-administration](service-admin-faq.md)
+- Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+- Har du förslag? [Bidra till att förbättra Power BI](https://ideas.powerbi.com/)

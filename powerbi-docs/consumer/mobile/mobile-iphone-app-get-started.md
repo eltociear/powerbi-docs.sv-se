@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 12/08/2019
+ms.date: 02/10/2020
 ms.author: painbar
-ms.openlocfilehash: e3bfdf7fd53e71a4582a1f3e3ba08f55f2e9a290
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: ba39718a5a458ec18af976806bc634d32843afb2
+ms.sourcegitcommit: 17aad73762579d6822383b27b96b1b63f87f2d6f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75220379"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "77259722"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-ios-devices"></a>Kom igång med Power BI-mobilappen på iOS-enheter
 Microsoft Power BI-appen för iOS på iPhone och iPad ger dig den mobila BI-upplevelsen för Power BI, Power BI-rapportservern och Reporting Services. Visa och interagera med ditt företags instrumentpaneler lokalt och i molnet överallt, med pekaktiverad mobil åtkomst i realtid. Utforska data i instrumentpaneler och dela med dina kollegor via e-post eller sms. Och hålla dig uppdaterad med dina mest aktuella data på din [Apple Watch](mobile-apple-watch.md).  
@@ -40,12 +40,12 @@ Om du inte har registrerat dig än kan du gå till [powerbi.com](https://powerbi
 
 ## <a name="get-started-with-the-power-bi-app"></a>Kom igång med Power BI-appen
 1. Öppna Power BI-appen på din iOS-enhet.
-2. Om du vill visa dina Power BI-instrumentpaneler, trycker du på **Power BI**.  
-   Om du vill visa dina mobila rapporter och KPI:er i Reporting Services trycker du på **Rapportserver**.
+2. Om du vill logga in i Power BI trycker du på fliken **Power BI** och fyller i dina inloggningsuppgifter.  
+   Om du vill logga in i dina mobila rapporter och KPI:er i Reporting Services trycker du på fliken **Rapportserver** och fyller i dina inloggningsuppgifter.
    
    ![Logga in på Power BI-mobilappen](./media/mobile-iphone-app-get-started/power-bi-connect-to-login.png)
    
-   När du är i appen trycker du bara på kontoprofilbilden i det övre vänstra hörnet på skärmen för att växla mellan de två. 
+   När du är i appen trycker du bara på kontoprofilbilden uppe till vänster på skärmen för att växla mellan Power BI och rapportservern. 
 
 ## <a name="try-the-power-bi-and-reporting-services-samples"></a>Testa Power BI- och Reporting Services-exemplen
 Även om du inte registrerar dig kan du visa och interagera med Power BI- och Reporting Services-exemplen.

@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/30/2020
+ms.date: 02/10/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 2e4ab92d5d1adce8659cdb971c5061a0f133b38f
-ms.sourcegitcommit: 64a270362c60581a385af7fbc31394e3ebcaca41
+ms.openlocfilehash: 10f79c8670b42828b4219723bd8e503424e77820
+ms.sourcegitcommit: e27d40054949421701f829113c4a5f6d260c8d5f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "76895544"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77154444"
 ---
 # <a name="create-matrix-visualizations-in-power-bi"></a>Skapa matrisvisualiseringar i Power BI
 
@@ -136,17 +136,32 @@ Du kan enkelt ändra inställningarna för stegvis layout. Med det visuella matr
 
 Om du inaktiverar stegvis layout, visar Power BI underkategorierna i en annan kolumn istället för att visas indragna under den överordnade kategorin.
 
-## <a name="subtotals-with-matrix-visuals"></a>Delsummor med matriser
+## <a name="subtotals-and-grand-totals-with-matrix-visuals"></a>Delsummor och totalsummor med visuella matrisobjekt
 
-Du kan aktivera eller inaktivera delsummor i matriser, för såväl rader som kolumner. På den följande bilden kan du se att raddelsummorna är inställda på **På**.
+Du kan aktivera eller inaktivera delsummor i matriser, för såväl rader som kolumner. I den här bilden ser du att raddelsummorna har inställningen **På** och att de ska visas längst ned.
 
-![matris som visar summor och delsummor](media/desktop-matrix-visual/matrix-visual_20.png)
+![matris som visar summor och delsummor](media/desktop-matrix-visual/power-bi-subtotals.png)
 
-I avsnittet format i fönstret Visualiseringar, expanderar du kortet **Delsummor** och sätter skjutreglaget raddelsummor till **Av**. När du gör det visas inte delsummorna.
+När du aktiverar **Delsummor** och lägger till en etikett så lägger Power BI också till en rad och samma etikett för totalsumman. Om du vill formatera totalsumman väljer du formateringsalternativet för **Totalsumma**. 
 
-![matris med delsummor inaktiverade](media/desktop-matrix-visual/matrix-visual_21.png)
+![matris som visar kortet Totalsumma](media/desktop-matrix-visual/power-bi-grand-total.png)
+
+Om du vill inaktivera delsummor och totalsumma expanderar du kortet **Delsummor** i formateringsavsnittet i fönstret Visualiseringar. Flytta skjutreglaget för raddelsummor till **Av**. När du gör det visas inte delsummorna.
+
+![matris med delsummor inaktiverade](media/desktop-matrix-visual/power-bi-no-subtotals.png)
 
 Samma sak gäller för kolumndelsummor.
+
+## <a name="add-conditional-icons"></a>Lägg till villkorsstyrda ikoner
+Du kan ge visuell vägledning i dina tabeller och matriser med *villkorsstyrda ikoner*. 
+
+Expandera kortet **Villkorsstyrd formatering** i formateringsavsnittet i fönstret Visualiseringar. Flytta reglaget för **Ikoner** till **På** och välj **Avancerade kontroller**.
+
+![Matris med skärmen Ikoner visas](media/desktop-matrix-visual/power-bi-icons.png)
+
+Justera villkor, ikoner och färger för matrisen och välj **OK**. I det här exemplet använder vi en röd flagga för låga värden, en lila cirkel för höga värden och en gul triangel för alla värden där emellan. 
+
+![Matris med ikoner visas](media/desktop-matrix-visual/power-bi-icons-applied.png)
 
 ## <a name="cross-highlighting-with-matrix-visuals"></a>Korsmarkering med matriser
 

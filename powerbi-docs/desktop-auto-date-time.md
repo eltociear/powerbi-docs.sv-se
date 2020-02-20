@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/23/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 160812521939d505612e0725e678dcf985f0d03a
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 01996f3460b7c7a507796bd3f071f7887a69854e
+ms.sourcegitcommit: e27d40054949421701f829113c4a5f6d260c8d5f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "75761851"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77154222"
 ---
 # <a name="apply-auto-datetime-in-power-bi-desktop"></a>Använda automatisk datum/tid i Power BI Desktop
 
@@ -24,6 +24,7 @@ Automatiskt datum/tid är ett datainläsningsalternativ i Power BI Desktop. Syft
 När alternativet är aktiverat skapar Power BI Desktop en dold automatisk datum/tidtabell för varje datumkolumn, förutsatt att alla följande villkor är uppfyllda:
 
 - Tabellens lagringsläge är Importera
+- Kolumnen är inte en beräknad kolumn
 - Kolumnens datatyp är datum eller datum/tid
 - Kolumnen är inte på ”många”-sidan i en modellrelation
 
@@ -44,6 +45,8 @@ Om det skulle gå att se raderna i en automatisk datum/tid-tabell skulle de se u
 
 > [!NOTE]
 > Automatiska datum/tidtabeller är alltid dolda, även för modellerare. De går inte att se i fönstret **Fält** eller i modellens vydiagram och det går inte att se dess rader i datavyn. Dessutom går det inte att referera till tabellen och dess kolumn direkt från DAX-uttryck.
+>
+> Du kan inte heller arbeta med dem när du använder [Analysera i Excel](service-analyze-in-excel.md) eller när du ansluter till modellen via en annan rapportdesigner än Power BI.
 
 Tabellen definierar också en hierarki, vilket ger visuella objekt en detaljnivå med nivåerna år, kvartal, månad och dag.
 
@@ -98,3 +101,4 @@ Mer information om ämnet i den här artikeln finns i följande resurser:
 - [Vägledning om automatiskt datum/tid i Power BI Desktop](guidance/auto-date-time.md)
 - [Konfigurera och använda datumtabeller i Power BI Desktop](desktop-date-tables.md)
 - Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+- Har du förslag? [Bidra till att förbättra Power BI](https://ideas.powerbi.com/)
