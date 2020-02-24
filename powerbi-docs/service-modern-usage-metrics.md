@@ -95,7 +95,7 @@ Den förbättrade användningsstatistikrapporten innehåller följande rapportsi
 | Rapportprestanda | Daglig prestanda | Prestanda för 10 %, 50 % och 90 % av de öppna rapportåtgärder som beräknats för varje enskild dag. |
 | Rapportprestanda | 7-dagars prestanda | Prestanda för 10 %, 50 % och 90 % av de öppna rapportåtgärder som beräknats för de senaste 7 dagarna för varje datum. |
 | Rapportprestanda | Förbrukningsmetod | Hur användare öppnade rapporten, t.ex. via Power BI-tjänsten (powerbi.com), Power BI Embedded eller en mobil enhet. |
-| Rapportprestanda | Webbläsare | Vilken webbläsare användarna använde för att öppna rapporten, till exempel Firefox, Edge och Chrome. |
+| Rapportprestanda | Webbläsare | Vilken webbläsare användarna använde för att öppna rapporten, till exempel Firefox, Microsoft Edge och Chrome. |
 
 ## <a name="update-usage-metrics-report-credentials"></a>Uppdatera autentiseringsuppgifter för användningsstatistik
 

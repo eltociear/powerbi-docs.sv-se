@@ -34,7 +34,7 @@ Följ dessa steg för att hitta den region som din klient finns i.
 
 ## <a name="how-the-data-region-is-selected"></a>Så här väljs dataregionen
 
-Dataområdet baseras på det land som du väljer när du skapar klienten. Valet gäller för registreringen för både Office 365 och Power BI eftersom den här informationen delas. Om det är en ny klient väljer du rätt land i listan när du registrerar dig.
+Dataområdet baseras på det land som du väljer när du skapar klienten. Valet gäller för registreringen för både Office 365 och Power BI eftersom den här informationen delas. Om det är en ny klient väljer du rätt land/region i listan när du registrerar dig.
 
 ![Val av land](media/service-admin-where-is-my-tenant-located/sign-up-country-selection.png)
 
