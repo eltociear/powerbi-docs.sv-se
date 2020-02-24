@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 01/17/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 1b90357aa6d8f66612857e8247a8b48dc2c2c369
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: 83cf7517fac569f8439f1debcdf621a786835d2c
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76539674"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77427379"
 ---
 # <a name="implement-row-level-security-in-an-analysis-services-tabular-model"></a>Implementera säkerhet på radnivå i en Analysis Services-tabellmodell
 
@@ -82,7 +82,7 @@ När ditt relationsinformationslager finns på plats ska du definiera tabellmode
 
 1. Funktionen `LOOKUPVALUE` returnerar värden för en kolumn där Windows-användarnamnet matchar det namn som returneras av funktionen `USERNAME`. Du kan sedan begränsa frågor så att värden som returneras av `LOOKUPVALUE` matchar värdena i samma eller en relaterad tabell. I kolumnen **DAX-filter** skriver du följande formel:
 
-    ```sql
+    ```dax
         =DimSalesTerritory[SalesTerritoryKey]=LOOKUPVALUE(DimUserSecurity[SalesTerritoryID], DimUserSecurity[UserName], USERNAME(), DimUserSecurity[SalesTerritoryID], DimSalesTerritory[SalesTerritoryKey])
     ```
 
@@ -95,7 +95,7 @@ När ditt relationsinformationslager finns på plats ska du definiera tabellmode
 
 1. För tabellen `DimUserSecurity` lägger du i kolumnen **DAX Filter** till följande formel:
 
-    ```sql
+    ```dax
         =FALSE()
     ```
 
@@ -175,7 +175,7 @@ Om det uppstår mer aktivitet i instrumentpanelen kan du med SQL Profiler se att
 
 Nedan kan du även se den DAX-fråga som körs för att fylla i rapportdata.
    
-   ```sql
+   ```dax
    EVALUATE
      ROW(
        "SumEmployeeKey", CALCULATE(SUM(Employee[EmployeeKey]))

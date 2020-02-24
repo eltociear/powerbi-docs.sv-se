@@ -7,15 +7,15 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.custom: connect-to-services
 ms.topic: tutorial
-ms.date: 03/12/2019
+ms.date: 02/20/2020
 ms.author: davidi
 LocalizationGroup: Connect to services
-ms.openlocfilehash: e9b34d79a70207e175c873a88ec4d5dfe5417747
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: 6ffce8b209d78f5297812f2345f454aa94ac1c9a
+ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75224215"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77527827"
 ---
 # <a name="tutorial-use-cognitive-services-in-power-bi"></a>Självstudie: Använda Cognitive Services i Power BI
 
@@ -56,7 +56,7 @@ Klistra in URL:en i URL-fältet: [https://pbiaitutorials.blob.core.windows.net/t
 
 ![Skapa ett dataflöde](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_03.png)
 
-I det övre menyfliksområdet väljer du **Transformera tabell** och sedan **Använd första raden som rubriker.** Data är nu klar att användas för textanalys och vi kan använda Sentimentbedömning och Extrahering av diskussionsämne på kolumnen Kundkommentarer.
+Data är nu klar att användas för textanalys och vi kan använda Sentimentbedömning och Extrahering av diskussionsämne på kolumnen Kundkommentarer.
 
 I Power Query Editor väljer du **AI-insikter**
 

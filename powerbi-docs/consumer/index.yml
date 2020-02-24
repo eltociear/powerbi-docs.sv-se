@@ -1,0 +1,101 @@
+### YamlMime:Landing
+title: Dokumentation om Power BI för konsumenter
+summary: Som konsument får du instrumentpaneler och rapporter från kollegor. Du arbetar i Power BI med att granska och interagera med innehållet för att kunna fatta välgrundade affärsbeslut.
+metadata:
+  title: Power BI för konsumenter
+  description: Vill du komma igång med Power BI? Lär känna funktionerna och egenskaperna i Power BI-tjänsten och se vad du kan göra med dem som Power BI-konsument eller slutanvändare.
+  ms.service: powerbi
+  ms.subservice: powerbi-consumer
+  ms.topic: landing-page
+  author: mihart
+  ms.author: mihart
+  ms.date: 01/10/2020
+  ms.openlocfilehash: d08520a7ee3526323111de91c4dfb67e139a8813
+  ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
+  ms.translationtype: HT
+  ms.contentlocale: sv-SE
+  ms.lasthandoff: 02/20/2020
+  ms.locfileid: "77497803"
+landingContent:
+- title: Om Power BI för konsumenter
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Vad är en Power BI-konsument?
+      url: end-user-consumer.md
+    - text: Få en genomgång av Power BI-tjänsten
+      url: end-user-reading-view.md
+    - text: Granska begrepp och innehåll
+      url: end-user-basic-concepts.md
+- title: Kom igång
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: Logga in
+      url: end-user-sign-in.md
+  - linkListType: concept
+    links:
+    - text: Läs mer om rapporter
+      url: end-user-reports.md
+    - text: Läs mer om instrumentpaneler
+      url: end-user-dashboards.md
+    - text: Läs mer om appar
+      url: end-user-apps.md
+- title: Visa innehåll
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Visa en rapport
+      url: end-user-report-view.md
+    - text: Visa innehåll större eller fristående
+      url: end-user-focus.md
+    - text: Visa de data som används för att skapa ett visuellt objekt
+      url: end-user-show-data.md
+    - text: Exportera data till Excel
+      url: end-user-export.md
+- title: Interagera och analysera
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Hitta i Power BI
+      url: end-user-experience.md
+    - text: Öka detaljnivån i ett visuellt objekt
+      url: end-user-drill.md
+    - text: Ändra hur ett visuellt objekt sorteras
+      url: end-user-change-sort.md
+    - text: Använda rapportfilter
+      url: end-user-report-filter.md
+    - text: Ställa en fråga på ett naturligt språk
+      url: end-user-q-and-a.md
+- title: Samarbeta och dela
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Publicera en rapport till PowerPoint
+      url: end-user-powerpoint.md
+    - text: Exportera en rapport till PDF
+      url: end-user-pdf.md
+    - text: Prenumerera på innehåll
+      url: end-user-subscribe.md
+- title: Avancerade ämnen
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Skapa och använda bokmärken
+      url: end-user-bookmarks.md
+    - text: Visa automatiska insikter
+      url: end-user-insights.md
+    - text: Visa en sidnumrerad rapport
+      url: paginated-reports-view-power-bi-service.md
+- title: Resurser
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: Ordlista
+      url: end-user-glossary.md
+    - text: Vanliga frågor och svar
+      url: end-user-faq.md
+    - text: Insiktstyper
+      url: end-user-insight-types.md
+    - text: Typer av visuella objekt
+      url: end-user-visual-type.md

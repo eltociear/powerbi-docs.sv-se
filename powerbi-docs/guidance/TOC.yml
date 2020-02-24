@@ -62,6 +62,10 @@
           items:
             - name: Användningsområden för sidnumrerade rapporter
               href: report-paginated-or-power-bi.md
+            - name: Vägledning om datahämtning
+              href: report-paginated-data-retrieval.md
+            - name: Vägledning om avbildningsanvändning
+              href: report-paginated-image.md
             - name: Använda sammanhängande parametrar
               href: paginated-report-cascading-parameter.md
             - name: Undvika tomma sidor vid utskrift

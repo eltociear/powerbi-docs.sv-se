@@ -579,6 +579,8 @@
           items:
             - name: Konfigurera schemalagd uppdatering
               href: refresh-scheduled-refresh.md
+            - name: Konfigurera inkrementell uppdatering
+              href: service-premium-incremental-refresh.md
             - name: Uppdatera en datauppsättning från en lokal Power BI Desktop-fil
               href: refresh-desktop-file-local-drive.md
             - name: Uppdatera en datauppsättning från en Power BI Desktop-fil i molnet
@@ -701,6 +703,8 @@
               href: service-url-filters.md
             - name: Registrera dig och andra för prenumeration
               href: service-report-subscribe.md
+            - name: Bädda in rapport i Microsoft Teams
+              href: service-embed-report-microsoft-teams.md
             - name: Bädda in rapport i SharePoint Online
               href: service-embed-report-spo.md
             - name: Bädda in en rapport på en säker portal eller webbplats
@@ -885,8 +889,6 @@
           href: service-premium-metrics-app.md
         - name: Övervaka kapaciteter i administratörsportalen
           href: service-admin-premium-monitor-portal.md
-        - name: Konfigurera inkrementell uppdatering
-          href: service-premium-incremental-refresh.md
         - name: Konfigurera stora modeller (förhandsversion)
           href: service-premium-large-models.md
         - name: Konfigurera Multi-Geo

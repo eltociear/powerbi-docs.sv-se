@@ -8,24 +8,24 @@
           href: end-user-consumer.md
         - name: Grundläggande begrepp och terminologi för Power BI-konsumenter
           href: end-user-basic-concepts.md
+        - name: Få en genomgång av Power BI-tjänsten
+          href: end-user-reading-view.md
+    - name: Kom igång
+      items:
+        - name: Lär dig hitta i Power BI
+          href: end-user-experience.md
         - name: Hitta innehåll med hjälp av Start-landningssidan
           href: end-user-home.md
+        - name: Lär dig att ställ frågor på ett naturligt språk
+          href: end-user-q-and-a.md
+        - name: Logga in första gången
+          href: end-user-sign-in.md
+        - name: Leta upp din licenstyp
+          href: end-user-license.md
         - name: Navigera i det "nya utseendet"
           href: ../service-new-look.md
         - name: 'Det ”nya utseendet”: Var finns åtgärderna?'
           href: ../service-new-look-where-actions.md
-    - name: Snabbstarter
-      items:
-        - name: Lär dig hitta i Power BI
-          href: end-user-experience.md
-        - name: Vad kan jag göra med Power BI?
-          href: end-user-reading-view.md
-        - name: Logga in första gången
-          href: end-user-sign-in.md
-    - name: Självstudier
-      items:
-        - name: Skapa en instrumentpanelsavisering
-          href: end-user-alerts.md
     - name: Gör så här
       items:
         - name: Instrumentpaneler
@@ -40,6 +40,10 @@
               href: end-user-tiles.md
             - name: Lägga till en kommentar eller starta en konversation
               href: end-user-comment.md
+            - name: Visa automatiska insikter för paneler på instrumentpanelen
+              href: end-user-insights.md
+            - name: Skapa en instrumentpanelsavisering
+              href: end-user-alerts.md
         - name: Rapporter
           items:
             - name: Rapporter
@@ -78,7 +82,7 @@
               href: end-user-visual-type.md
             - name: Visa data som används för att skapa visualiseringen
               href: end-user-show-data.md
-            - name: Öka detaljnivån i en visualisering i Power BI
+            - name: Öka detaljnivån i en visualisering
               href: end-user-drill.md
             - name: Interagera med ArcGIS-kartor
               href: ../power-bi-visualizations-arcgis.md
@@ -104,8 +108,6 @@
               href: end-user-subscribe.md
             - name: Söka efter och sortera innehåll i Power BI
               href: end-user-search-sort.md
-            - name: Visa automatiska insikter för paneler på instrumentpanelen
-              href: end-user-insights.md
             - name: Aktivera förhandsgranskningsfunktioner
               href: end-user-preview-features.md
             - name: Få aviseringar i Power BI-tjänsten
@@ -134,7 +136,7 @@
           href: end-user-faq.md
         - name: Webbläsare som stöds
           href: end-user-browsers.md
-        - name: Typer av Quick Insights som stöds av Power BI
+        - name: Typer av snabbinsikter
           href: end-user-insight-types.md
 - name: Power BI-mobilappar
   items:
