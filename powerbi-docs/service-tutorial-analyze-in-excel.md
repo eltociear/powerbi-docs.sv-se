@@ -1,31 +1,31 @@
 ---
-title: 'Självstudie: Använda Analysera i Excel'
-description: I den här självstudien använder du sidan Power BI-datamängder för att importera datamängder till Excel.
+title: 'Självstudie: Använda Power BI Analysera i Excel med start i Excel'
+description: I den här självstudien börjar du i Excel och ansluter till Power BI-sidan Datamängder för att importera datamängder till Excel.
 author: tejaskulkarni
 ms.reviewer: davidiseminger
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.custom: connect-to-services
 ms.topic: tutorial
-ms.date: 01/27/2020
+ms.date: 02/13/2020
 ms.author: tekulkar
 LocalizationGroup: Connect to services
-ms.openlocfilehash: a68adccec019e64e554d199d23d7dddd782f56a2
-ms.sourcegitcommit: 53c2b5ea4ee1fe2659804d5ccc8e4bb445a8bcad
+ms.openlocfilehash: d3795c34e477c593af4afefbe5cc01040026bfa4
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76921495"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77426551"
 ---
-# <a name="tutorial-use-analyze-in-excel"></a>Självstudie: Använda Analysera i Excel
+# <a name="tutorial-use-power-bi-analyze-in-excel-starting-in-excel"></a>Självstudie: Använda Power BI Analysera i Excel med start i Excel
 
-Din organisation använder Power BI för att dela åtkomst till data. Använd funktionen Analysera i Excel när du vill skapa pivottabeller och pivotdiagram för att ge ytterligare kontext till din analys eller minska den tid det tar att söka efter och importera relevanta datamängder.
+Din organisation använder Power BI för att dela åtkomst till data. Du startar Power BI-funktionen Analysera i Excel från Excel för att skapa pivottabeller och pivotdiagram i Excel. De kan ge ytterligare kontext till din analys eller göra att det går snabbare att hitta och importera relevanta datamängder.
 
-Kom igång genom att välja en datamängd och sedan välja Analysera i Excel. Du får hjälp med att skapa en pivottabell som använder dina data.  
+Kom igång med en Power BI-datamängd genom att välja ”Analysera i Excel” i Excel. Du får hjälp att skapa en pivottabell som använder dina data.  
 
 Du kan hitta ytterligare datamängder som delas av din organisation genom att gå tillbaka till sidan Datamängder.
 
-Om du stöter på problem på vägen så välj Nej i det aktuella steget i flödet nedan och ge feedback i det länkade formuläret.  
+Om du får problem på vägen väljer du **Nej** i det aktuella steget i flödet nedan och ger feedback i det länkade formuläret.  
 
 I de här självstudierna får du lära dig att
 

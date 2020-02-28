@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/13/2020
+ms.date: 02/19/2020
 ms.author: kfollis
 LocalizationGroup: Get started
-ms.openlocfilehash: 26dabde3846ec33e2f5910de75fb8165cce6513a
-ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
+ms.openlocfilehash: 590b00f5eb03b1bd31430866a52faa4748f9b32a
+ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "76160775"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77496929"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI för amerikanska myndighetskunder
 Den här artikeln är till för amerikanska myndighetskunder som distribuerar Power BI som en del av ett Office 365-myndighetsabonnemang. Myndighetsabonnemang är utformade för de unika behoven hos organisationer som måste uppfylla amerikanska efterlevnads- och säkerhetsstandarder. Power BI-tjänsten som har utformats för amerikanska myndighetskunder skiljer sig från den kommersiella versionen av Power BI-tjänsten. Dessa funktionsskillnader och funktioner beskrivs i följande avsnitt.
@@ -89,12 +89,12 @@ För att tillgodose kraven hos molnkunder på myndigheter finns det vissa skilln
 |Skapa rapport|Skapa och visa instrumentpaneler och rapporter|Tillgänglig|Tillgänglig|Tillgänglig|
 |  |Schemalagd datauppdatering|Tillgänglig|Tillgänglig|Tillgänglig|
 |  |Uppdateringsbara teaminstrumentpaneler|Tillgänglig|Tillgänglig|Tillgänglig|
-|  |Sidnumrerade rapporter|Endast tillgängligt i USGov Texas och USGov Virginia |Tillgänglig|I planeringsstadiet|
+|  |Sidnumrerade rapporter|Tillgänglig|Tillgänglig|I planeringsstadiet|
 |  |Mallappar|Inte tillgänglig|Inte tillgänglig|Inte tillgänglig|
 |Ansluta till data|Importera data och rapporter från Excel|Tillgänglig|Tillgänglig|Tillgänglig|
 |  |Importera data från CSV-filer|Tillgänglig|Tillgänglig|Tillgänglig|
 |  |Importera data från Power BI Desktop-filer|Tillgänglig|Tillgänglig|Tillgänglig|
-|  |Anslutning till CDS|Inte tillgänglig|Inte tillgänglig|Inte tillgänglig|
+|  |Anslutning till CDS|Tillgänglig|Inte tillgänglig|Inte tillgänglig|
 |  |Azure Data Lake Storage Gen2-anslutning|Inte tillgänglig|Inte tillgänglig|Inte tillgänglig|
 |Datahantering|Gateway för datahantering|Tillgänglig|Tillgänglig|Tillgänglig|
 |  |Datakryptering i Azure SQL|Tillgänglig|Tillgänglig|Tillgänglig|
@@ -103,7 +103,7 @@ För att tillgodose kraven hos molnkunder på myndigheter finns det vissa skilln
 |  |Bädda in i SharePoint Online med hjälp av Bädda in webbdel|Tillgänglig|Tillgänglig|Tillgänglig|
 |  |Dataflöden-och AI-funktioner|Inte tillgänglig|Inte tillgänglig|Inte tillgänglig|
 |  |Power Automate-anslutning för datadrivna aviseringar|Inte tillgänglig|Inte tillgänglig|Inte tillgänglig|
-|  |Fliken Power BI i Teams|Inte tillgänglig|Inte tillgänglig|Inte tillgänglig|
+|  |Fliken Power BI i Teams|Tillgänglig|Inte tillgänglig|Inte tillgänglig|
 |  |Automatiserad maskininlärning|Inte tillgänglig|Inte tillgänglig|Inte tillgänglig|
 |  |Cognitive Services|Inte tillgänglig|Inte tillgänglig|Inte tillgänglig|
 |  |Azure ML|Inte tillgänglig|Inte tillgänglig|Inte tillgänglig|
@@ -111,7 +111,6 @@ För att tillgodose kraven hos molnkunder på myndigheter finns det vissa skilln
 ## <a name="next-steps"></a>Nästa steg
 
 * [Registrera dig för Power BI för amerikanska myndigheter](service-govus-signup.md)
+* [Microsoft Power Apps US Government](https://docs.microsoft.com/power-platform/admin/powerapps-us-government)
+* [Power Automate US Government](https://docs.microsoft.com/power-automate/us-govt)
 * <a href="https://channel9.msdn.com/Blogs/Azure/Cognitive-Services-HDInsight-and-Power-BI-on-Azure-Government">Demonstration av Power BI för amerikanska myndigheter</a>
-* [Komma igång med Power BI-tjänsten](service-get-started.md)
-* [Vad är Power BI Desktop?](desktop-what-is-desktop.md)
-

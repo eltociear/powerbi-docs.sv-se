@@ -6,15 +6,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/27/2019
+ms.date: 02/12/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 6337c4c5e3098d56e869b8ce71117da2413802e6
-ms.sourcegitcommit: 052df769e6ace7b9848493cde9f618d6a2ae7df9
+ms.openlocfilehash: 976d53a5a74bc077d3d4642ccec336b1225344ae
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "75925677"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77426574"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Organisera arbete på de nya arbetsytorna i Power BI
 
@@ -68,15 +68,16 @@ Här är funktionerna för de fyra rollerna: administratörer, medlemmar, deltag
 | Lägga till/ta bort personer, inklusive andra administratörer.  | X  |   |   |   |
 | Lägga till medlemmar eller andra med lägre behörighet.  |  X | X  |   |   |
 | Publicera och uppdatera en app. |  X | X  |   |   |
-| Dela ett objekt eller dela en app. |  X | X  |   |   |
-| Tillåta att andra delar objekt igen. |  X | X  |   |   |
+| Dela ett objekt eller dela en app.<sup>1</sup> |  X | X  |   |   |
+| Tillåta att andra delar objekt igen.<sup>1</sup> |  X | X  |   |   |
 | Skapa, redigera och ta bort innehåll på arbetsytan.  |  X | X  | X  |   |
 | Publicera rapporter till arbetsytan och ta bort innehåll.  |  X | X  | X  |   |
 | Skapa en rapport på en annan arbetsyta baserat på en datamängd i den här arbetsytan.<sup>1</sup> |  X | X  | X  |   |
-| Kopiera en rapport.<sup>1</sup> | X | X | X |  |
-| Visa och interagera med ett objekt.<sup>2</sup> |  X | X  | X  | X  |
+| Kopiera en rapport.<sup>2</sup> | X | X | X |  |
+| Visa och interagera med ett objekt.<sup>3</sup> |  X | X  | X  | X  |
 
-1. För att kunna kopiera en rapport och skapa en rapport i en annan arbetsyta baserat på en datauppsättning i den här arbetsytan måste du uppfylla följande kriterier:
+1. Deltagare och användare kan dela objekt i en arbetsyta om de har omdelningsbehörighet.
+2. För att kunna kopiera en rapport och skapa en rapport i en annan arbetsyta baserat på en datauppsättning i den här arbetsytan måste du uppfylla följande kriterier:
     - Du måste ha en Power BI Pro-licens. Mer information finns i nästa avsnitt [Licensiering](#licensing).
     - Du måste ha behörigheten Skapa för datauppsättningen. Personer med administratörs- medlems- och deltagarroller har behörigheten Skapa för datauppsättningar i den här arbetsytan via rollen för arbetsytan.
 2. Även om du inte har en Power BI Pro-licens kan du visa och interagera med objekt i Power BI-tjänsten om objekten finns i en arbetsyta i en Premium-kapacitet.

@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/16/2020
+ms.date: 02/14/2020
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: d8db626300902125cf3536f03ed111ef3e052324
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: b7ff14b4932ba77b47fdb603124d29858c622fc7
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76538774"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77427676"
 ---
 # <a name="use-aggregations-in-power-bi-desktop"></a>Använda sammansättningar i Power BI Desktop
 
@@ -185,6 +185,10 @@ Funktionen AVERAGE kan använda sammansättningar. Följande fråga träffar sam
 I vissa fall kan funktionen DISTINCTCOUNT använda sammansättningar. Följande fråga träffar sammanställningen eftersom det finns en GroupBy-post för **CustomerKey** som behåller tydligheten för **CustomerKey** i sammanställningstabellen. Den här tekniken kan fortfarande omfattas av prestandatröskelvärdet där mer än två till fem miljoner distinkta värden kan påverka frågeprestanda. Men den kan vara användbar i scenarier där det finns miljarder rader i informationstabellen, men två till fem miljoner distinkta värden i kolumnen. I det här fallet kan DISTINCTCOUNT prestera snabbare än om du söker i tabellen som innehåller flera miljarder rader, även om de har cachelagrats i minnet.
 
 ![DISTINCTCOUNT-sammanställningsfråga](media/desktop-aggregations/aggregations-code_07.jpg)
+
+Tidsinformationsfunktionerna i DAX är aggregeringsfunktioner. Den här frågan träffar aggregeringen eftersom funktionen DATESYTD genererar en tabell med **CalendarDay**-värden och aggregeringstabellen har en kornighet som omfattas av group-by-tabeller i **datumtabellen**. Det här är ett exempel på ett tabellfilter för funktionen CALCULATE som kan användas med aggregeringar.
+
+![Fråga med SUMMARIZECOLUMNS-aggregering](media/desktop-aggregations/aggregations-code-07b.jpg)
 
 ## <a name="aggregation-based-on-groupby-columns"></a>Sammansättning som baseras på GroupBy-kolumner 
 

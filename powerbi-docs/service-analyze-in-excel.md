@@ -7,15 +7,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/17/2019
+ms.date: 02/13/2020
 ms.author: davidi
 LocalizationGroup: Reports
-ms.openlocfilehash: f72d29e7f5bc7f93abd43f4c14cf0e53ef18f8d3
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: a142b950375014c4d1adba917cceb2c6d9af4825
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "75223737"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77427701"
 ---
 # <a name="analyze-in-excel"></a>Analysera i Excel
 Det finns tillfällen när du kanske vill använda Excel för att visa och interagera med en datauppsättning som du har i Power BI. Med **Analysera i Excel** kan du göra just det och komma åt funktionerna för pivottabell, diagram och utsnitt i Excel baserat på den datauppsättning som finns i Power BI.
@@ -25,17 +25,17 @@ Det finns några krav för att använda **Analysera i Excel**:
 
 * **Analysera i Excel** stöds för Microsoft Excel 2010 SP1 och senare.
 
-* Pivottabeller i Excel stöder inte dra och släpp-aggregering av numeriska fält. Datauppsättningen i Power BI *måste ha fördefinierade mått*.
+* Pivottabeller i Excel stöder inte dra och släpp-aggregering av numeriska fält. Datauppsättningen i Power BI *måste ha fördefinierade mått*. Läs om att [skapa mått](desktop-measures.md).
 * Vissa organisationer kan ha grupprincipregler som förhindrar installation av nödvändiga **Analysera i Excel**-uppdateringar i Excel. Kontrollera med administratören om det inte går att installera uppdateringarna.
 * **Analysera i Excel** kräver att datauppsättningen finns i Power BI Premium eller att användaren har en Power BI Pro-licens. Mer information om skillnaderna i funktionalitet mellan de olika licenstyperna finns i _Jämförelse av Power BI-funktioner_ i [Power BI-prissättning](https://powerbi.microsoft.com/pricing/).
-* Användare kan ansluta till datauppsättningar med hjälp av Analysera i Excel om de har läsbehörighet till den underliggande datauppsättningen.  En användare kan ha detta på flera olika sätt, till exempel genom att vara medlem i arbetsytan som innehåller datauppsättningen, ha en rapport eller instrumentpanel som delats till dem och som använder datauppsättningen, eller ha behörighet till en app som innehåller datauppsättningen.
-* **Analysera i Excel** är en funktion i Power BI-tjänsten och är inte tillgängligt i Power BI-rapportserver eller Power BI Embedded. 
-* **Analysera i Excel** stöds bara på datorer som kör Microsoft Windows.
+* Användare kan ansluta till datamängder via Analysera i Excel om de har behörighet till den underliggande datamängden.  En användare kan ha sådan behörighet på flera olika sätt, till exempel genom att vara medlem i arbetsytan som innehåller datamängden, få en rapport eller instrumentpanel delad till sig där datamängden används eller ha skapandebehörighet till datamängden via en arbetsyta eller app som innehåller datamängden. Läs mer om [behörigheten Skapa](service-datasets-build-permissions.md) för datamängder.
+* **Analysera i Excel** är en funktion i Power BI-tjänsten och är inte tillgänglig i Power BI Report Server eller Power BI Embedded. 
+* **Analysera i Excel** stöds bara för datorer som kör Microsoft Windows.
 
 ## <a name="how-does-it-work"></a>Hur fungerar det?
-När du väljer **Analysera i Excel** på ellipsmenyn (...) som är associerad med en datauppsättning eller en rapport i **Power BI**, skapar Power BI en odc-fil och hämtar den från webbläsaren till din dator.
+När du väljer **Analysera i Excel** på menyn **Fler alternativ** (...) som är associerad med en datamängd eller rapport i **Power BI** så skapar Power BI en .ODC-fil och laddar ned den från webbläsaren till din dator.
 
-![](media/service-analyze-in-excel/power-bi-analyze-in-excel.png)
+![Analysera i Excel](media/service-analyze-in-excel/power-bi-analyze-in-excel.png)
 
 När du öppnar filen i Excel, visas en tom **pivottabell** och en **Fält**-lista med tabeller, fält och mått från Power BI-datauppsättningen. Du kan skapa pivottabeller och diagram och analysera din datauppsättning precis som om du arbetade med en lokal datauppsättning i Excel.
 
@@ -44,9 +44,9 @@ Odc-filen har en MSOLAP-anslutningssträng som ansluter till din datauppsättnin
 **Analysera i Excel** är mycket användbart för datauppsättningar och rapporter som ansluter till *Analysis Services-tabeller* eller *flerdimensionella* databaser, eller från Power BI Desktop-filer eller Excel-arbetsböcker med datamodeller vars modellmått skapas med hjälp av Data Analysis-uttryck (DAX).
 
 ## <a name="get-started-with-analyze-in-excel"></a>Kom igång med Analysera i Excel
-Välj ellipsmenyn bredvid en rapport eller datauppsättning i Power BI (... bredvid namnet på rapporten eller datauppsättning) och välj **Analysera i Excel** på menyn som visas.
+Välj menyn **Fler alternativ** bredvid en rapport eller datamängd i Power BI (... bredvid namnet på rapporten eller datamängden) och välj **Analysera i Excel** på menyn som visas.
 
-![](media/service-analyze-in-excel/power-bi-analyze-menu.png)
+![Analysera i Excel](media/service-analyze-in-excel/power-bi-analyze-menu.png)
 
 ### <a name="install-excel-updates"></a>Installera Excel-uppdateringar
 När du använder **Analysera i Excel** för första gången, måste du installera uppdateringar av Excel-biblioteken. Du uppmanas att ladda ned och köra Excel-uppdateringar (detta startar installationen av *SQL_AS_OLEDDB.msi*, Windows installationspaket). Det här paketet installerar **Microsoft Analysis Services OLE DB-provider för Microsoft SQL Server 2016 RC0 (förhandsversion)** .
@@ -56,11 +56,11 @@ När du använder **Analysera i Excel** för första gången, måste du installe
 > 
 > 
 
-![](media/service-analyze-in-excel/pbi_anlz_excel_dontshow.png)
+![Kryssrutan Visa inte detta igen](media/service-analyze-in-excel/pbi_anlz_excel_dontshow.png)
 
 Om du behöver installera Excel-uppdateringarna för **Analysera i Excel** igen, kan du hämta dem från **hämtningsikonen** i Power BI, enligt följande bild.
 
-![](media/service-analyze-in-excel/pbi_anlz_excel_download_again.png)
+![Installera uppdateringar](media/service-analyze-in-excel/pbi_anlz_excel_download_again.png)
 
 ### <a name="sign-in-to-power-bi"></a>Logga in i Power BI
 Även om du är inloggad i Power BI i webbläsaren, kan du första gången du öppnar en ny odc-fil i Excel bli ombedd att logga in i Power BI med ditt Power BI-konto. Detta autentiserar anslutningen från Excel till Power BI.
@@ -70,12 +70,12 @@ Vissa användare har flera Power BI-konton och dessa användare kan råka ut fö
 
 Du ges en ny möjlighet att logga in och då kan du logga in med det Power BI-konto som har åtkomst till datauppsättningen som används av Analysera i Excel. Du kan också välja **Profil** på menyfliken **Power BI** i Excel, vilket identifierar vilket konto som du är inloggad med för tillfället och innehåller en länk där du kan logga ut (och följaktligen logga in med ett annat konto). Du kan [ladda ned Power BI Publisher för Excel](https://www.microsoft.com/download/details.aspx?id=50729) om du inte redan har det installerat. Det är så Power BI-menyfliksområdet i Excel installeras.
 
-![](media/service-analyze-in-excel/pbi_anlz_excel_profile.png)
+![Visa din profil](media/service-analyze-in-excel/pbi_anlz_excel_profile.png)
 
 ### <a name="enable-data-connections"></a>Aktivera dataanslutningar
 För att analysera dina Power BI-data i Excel, uppmanas du att kontrollera filnamnet och sökvägen för odc-filen och sedan välja **Aktivera**.
 
-![](media/service-analyze-in-excel/pbi_anlz_excel_enable.png)
+![Aktivera dataanslutningar](media/service-analyze-in-excel/pbi_anlz_excel_enable.png)
 
 > [!NOTE]
 > Administratörer för Power BI-klienter kan använda *Power BI-administratörsportalen* för att inaktivera användningen av **Analysera i Excel** med lokala datauppsättningar som förvaras i Analysis Services-databaser. När alternativet är inaktiverat, är **Analysera i Excel** inaktiverat för Analysis Services-databaser, men fortsätter att vara tillgängligt för användning med andra datauppsättningar.
@@ -85,7 +85,7 @@ För att analysera dina Power BI-data i Excel, uppmanas du att kontrollera filna
 ## <a name="analyze-away"></a>Analysera mera
 Nu när Excel har öppnats och du har en tom pivottabell, är du redo att göra alla typer av analyser med din Power BI-datauppsättning. Precis som för andra lokala arbetsböcker kan du med Analysera i Excel skapa pivottabeller och diagram, lägga till data från andra källor och så vidare. Och naturligtvis kan du skapa olika kalkylblad med alla typer av vyer för dina data.
 
-![](media/service-analyze-in-excel/pbi_anlz_excel_chart.png)
+![Pivottabell och pivotdiagram i Excel](media/service-analyze-in-excel/pbi_anlz_excel_chart.png)
 
 > [!NOTE]
 > Det är viktigt att veta att användning av **Analysera i Excel** visar alla data på detaljnivå för alla användare med behörighet för datauppsättningen.

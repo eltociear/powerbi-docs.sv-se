@@ -1,6 +1,6 @@
 ---
 title: Distribuera innehåll till externa gästanvändare med Azure Active Directory B2B
-description: Power BI kan integreras med Azure Active Directory Business-to-business (Azure AD B2B) för att tillåta säker distribution av Power BI-innehåll till gästanvändare utanför organisationen.
+description: I Power BI kan du dela innehåll med externa gästanvändare via Azure Active Directory Business-to-Business (Azure AD B2B).
 author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
@@ -9,47 +9,48 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 2a17e4963d4607b67279f65205579e115df2e550
-ms.sourcegitcommit: 75300b3f53f438ed7d3bd4edc93b9eb5925bf3af
+ms.openlocfilehash: 828736dac528a8ba8c77b90162309236f5bc7018
+ms.sourcegitcommit: d42fbe235b6cf284ecc09c2a3c005459cec11272
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "77026656"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77558612"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-with-azure-ad-b2b"></a>Distribuera Power BI-innehåll till externa gästanvändare med Azure Active Directory B2B
 
-Power BI kan integreras med Azure Active Directory Business-to-business (Azure AD B2B) för att tillåta säker distribution av Power BI-innehåll till gästanvändare utanför organisationen, medan kontroll över interna data bibehålls. Dessutom kan du tillåta att gästanvändare utanför organisationen redigerar och hanterar innehåll i din organisation.
+I Power BI kan du dela innehåll med externa gästanvändare via Azure Active Directory Business-to-Business (Azure AD B2B).
+Med Azure AD B2B kan din organisation aktivera och hantera delningen med externa användare från en och samma plats. Externa gäster är som standard endast användare. Dessutom kan du tillåta att gästanvändare utanför organisationen redigerar och hanterar innehåll i din organisation.
 
 Den här artikeln innehåller en grundläggande introduktion till Azure AD B2B i Power BI. Mer information finns i [Distribuera Power BI-innehåll till externa gästanvändare med Azure Active Directory B2B](whitepaper-azure-b2b-power-bi.md).
 
 ## <a name="enable-access"></a>Aktivera åtkomst
 
-Du måste aktivera funktionen [Dela innehåll med externa användare](service-admin-portal.md#export-and-sharing-settings) på Power BI-administratörsportalen innan du bjuder in gästanvändare. Även om det här alternativet är aktiverat så måste användaren ha behörighet i Azure Active Directory att bjuda in gästanvändare, vilket kan beviljas genom rollen som Gästinbjudare. 
+Du måste aktivera funktionen [Dela innehåll med externa användare](service-admin-portal.md#export-and-sharing-settings) på Power BI-administratörsportalen innan du bjuder in gästanvändare. Även om det här alternativet är aktiverat så måste användaren ha behörighet i Azure Active Directory att bjuda in gästanvändare, vilket beviljas genom rollen som Gästinbjudare. 
 
-Du kan också använda funktionen [Tillåt externa gästanvändare att redigera och hantera innehåll i organisationen](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization). Den låter dig välja vilken gästanvändare som får se och skapa innehåll i arbetsytor, inklusive att bläddra i din organisations Power BI.
+Med funktionen [Tillåt externa gästanvändare att redigera och hantera innehåll i organisationen](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization) kan du ge gästanvändarna möjlighet att visa och skapa innehåll på arbetsytor, inklusive att bläddra i organisationens Power BI.
 
 > [!NOTE]
-> Inställningen [Dela innehåll med externa användare](service-admin-portal.md#export-and-sharing-settings) anger huruvida externa användare kan bjudas in eller inte till din organisation via Power BI. När en extern användare godkänner inbjudan blir hen Azure AD B2B-gästanvändare i din organisation. Gästanvändarna visas i personväljare i Power BI. När inställningen är inaktiverad så har befintliga gästanvändare i din organisation fortsatt åtkomst till alla objekt som de hade tillgång till och fortsätter att listas i personväljarna. Om gäster läggs till via metoden för planerad inbjudan, så visas även de i personväljarna. En Azure AD-princip för villkorsstyrd åtkomst kan användas för att förhindra gästanvändare från att få åtkomst till Power BI.
+> Inställningen [Dela innehåll med externa användare](service-admin-portal.md#export-and-sharing-settings) anger om Power BI tillåter att externa användare bjuds in till organisationen. När en extern användare godkänner inbjudan blir hen Azure AD B2B-gästanvändare i organisationen. Gästanvändarna visas i personväljare i Power BI. När inställningen är inaktiverad så har befintliga gästanvändare i din organisation fortsatt åtkomst till alla objekt som de hade tillgång till och fortsätter att listas i personväljarna. Om gäster läggs till via metoden för [planerad inbjudan](#planned-invites) så visas de även i personväljarna. Använd en Azure AD-princip för villkorsstyrd åtkomst om du vill förhindra att gästanvändare kommer åt Power BI.
 
 ## <a name="who-can-you-invite"></a>Vilka kan du bjuda in?
 
-Du kan bjuda in gästanvändare med de flesta typer av e-postadresser, även personliga konton som gmail.com, outlook.com och hotmail.com. I Azure AD B2B kallas de här adresserna *sociala identiteter*.
+Du kan bjuda in gästanvändare med de flesta typer av e-postadresser till organisationen, även personliga konton som gmail.com, outlook.com och hotmail.com. I Azure AD B2B kallas de här adresserna *sociala identiteter*.
 
 Du kan inte bjuda in användare som är kopplade till ett myndighetsmoln, som [Power BI för amerikanska myndigheter](service-govus-overview.md).
 
 ## <a name="invite-guest-users"></a>Bjud in gästanvändare
 
-Gästanvänder behöver endast en inbjudan den första gången du bjuder in dem till din organisation. Det finns två sätt att bjuda in användare: planerad inbjudan och ad hoc-inbjudan.
+Gästanvänder behöver endast en inbjudan den första gången du bjuder in dem till din organisation. Om du vill bjuda in användare ska du använda planerade inbjudningar eller ad hoc-inbjudningar.
 
-Du kan bjuda in gästanvändare genom följande funktioner i Power BI:
+Använd följande funktioner om du vill använda ad hoc-inbjudningar:
 * Delning av rapporter och instrumentpaneler
 * Appåtkomstlista
 
-Om du behöver lägga till externa användare, som inte redan är gäster, till en arbetsyta i ditt Azure AD kan du använda metoden för planerad inbjudan nedan. 
+Du kan inte använda ad hoc-inbjudningar i arbetsytans åtkomstlista. Använd metoden med [planerade inbjudningar](#planned-invites) för att lägga till dessa användare i organisationen. När den externa användaren är en gäst i organisationen kan du lägga till hen i arbetsytans åtkomstlista.
 
 ### <a name="planned-invites"></a>Planerad inbjudan
 
-Använd en planerad inbjudan om du vet vilka användare du vill bjuda in. Du kan skicka inbjudan med hjälp av Azure-portalen eller PowerShell. Du måste vara klientadministratör för att bjuda in människor.
+Använd en planerad inbjudan om du vet vilka användare du vill bjuda in. Du kan skicka inbjudningar via Azure-portalen eller PowerShell. Du måste vara klientadministratör för att bjuda in människor.
 
 Följ dessa steg för att skicka en inbjudan i Azure-portalen.
 
@@ -81,14 +82,14 @@ Gästanvändaren får ett e-postmeddelande som anger att appen har delats med de
 
 ![Skärmbild på e-post för appen som delas med gästanvändare](media/service-admin-azure-ad-b2b/guest-user-invite-email-2.png)
 
-Gästanvändaren måste logga in med sin organisations e-postadress. De uppmanas att tacka ja till inbjudan efter inloggningen. Efter inloggningen öppnas appen för gästanvändare. De kan märka länken med ett bokmärke eller spara e-postmeddelandet om de vill återgå till appen.
+Gästanvändaren måste logga in med sin organisations e-postadress. De uppmanas att tacka ja till inbjudan efter inloggningen. Efter inloggningen öppnas appen för gästanvändaren. Användaren bör bokmärka länken eller spara e-postmeddelandet så att det blir enkelt att återgå till appen.
 
 
 ## <a name="licensing"></a>Licensiering
 
 Gästanvändaren måste ha korrekt licensiering för att se innehållet som delats. Det finns tre alternativ för att kontrollera att användaren har en giltig licens: använda Power BI Premium; tilldela en licens för Power BI Pro; eller använda gästens Power BI Pro-licens.
 
-När du använder funktionen [Tillåt externa gästanvändare att redigera och hantera innehåll i organisationen](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization) krävs en Power BI Pro-licens för att gästanvändare ska kunna bidra med innehåll till arbetsytor eller dela innehåll med andra.
+[Gästanvändare som kan redigera och hantera innehåll i organisationen](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization) behöver en Power BI Pro-licens för att bidra med innehåll på arbetsytor och dela innehåll med andra.
 
 ### <a name="use-power-bi-premium"></a>Använda Power BI Premium
 
@@ -110,23 +111,23 @@ Gästanvändaren har redan en Power BI Pro-licens i klientorganisationen.
 
 ## <a name="guest-users-who-can-edit-and-manage-content"></a>Gästanvändare som kan redigera och hantera innehåll
 
-När du använder [Tillåt externa gästanvändare att redigera och hantera innehåll i organisationen](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization) får den angivna gästen åtkomst till organisationens Power BI. De kan se allt innehåll som de har behörighet till. De kan komma åt Start, bläddra i arbetsytor, installera appar där de är på åtkomstlistan och bidra med innehåll till arbetsytor. De kan skapa eller vara administratör för arbetsytor som använder den nya användningen av arbetsytan. Vissa begränsningar gäller. I avsnittet Överväganden och begränsningar listas dessa begränsningar.
+När du använder [Tillåt externa gästanvändare att redigera och hantera innehåll i organisationen](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization) får den angivna gästen ytterligare åtkomst till organisationens Power BI. Tillåtna gäster kan se allt innehåll de har behörighet till, komma åt Start, bläddra på arbetsytor, installera appar, se var de finns på åtkomstlistan och bidra med innehåll på arbetsytor. De kan skapa eller vara administratör för arbetsytor som använder den nya användningen av arbetsytan. Vissa begränsningar gäller. I avsnittet Överväganden och begränsningar listas dessa begränsningar.
  
-För att hjälpa användarna att logga in på Power BI kan du ange dem med klientorganisations-URL:en. Följ dessa steg för att hitta klientorganisations-URL:en.
+För att hjälpa tillåtna användare att logga in i Power BI kan du ge dem klientorganisationens webbadress. Följ dessa steg för att hitta klientorganisations-URL:en.
 
 1. I Power BI-tjänsten på den översta menyn väljer du hjälp ( **?** ) och sedan **Om Power BI**.
 
-2. Leta efter värdet bredvid **Klientorganisations-URL**. Det här värdet är klientorganisations-URL:en som du kan dela med dina gästanvändare.
+2. Leta efter värdet bredvid **Klientorganisations-URL**. Dela klientorganisationens webbadress med dina tillåtna gästanvändare.
 
-    ![Skärmbild på dialogrutan Om Power BI där webbadressen till gästanvändarklienten har markerats.](media/service-admin-azure-ad-b2b/power-bi-about-dialog.png)
+    ![Skärmbild av dialogrutan Om Power BI där webbadressen till klientorganisationen har markerats.](media/service-admin-azure-ad-b2b/power-bi-about-dialog.png)
 
 ## <a name="considerations-and-limitations"></a>Överväganden och begränsningar
 
-* Som standard är externa Azure AD B2B-gäster begränsade till förbrukning av innehåll. Externa Azure AD B2B-gäster kan visa appar, instrumentpaneler, rapporter, exportera data och skapa e-postprenumerationer för instrumentpaneler och rapporter. De kan inte komma åt arbetsytor eller publicera sitt eget innehåll. Men dessa begränsningar gäller inte för gästanvändare som tillåts via funktionen [Tillåt externa gästanvändare att redigera och hantera innehåll i organisationen](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization).
+* Som standard är externa Azure AD B2B-gäster begränsade till förbrukning av innehåll. Externa Azure AD B2B-gäster kan visa appar, instrumentpaneler, rapporter, exportera data och skapa e-postprenumerationer för instrumentpaneler och rapporter. De kan inte komma åt arbetsytor eller publicera sitt eget innehåll. Om du vill ta bort de här begränsningarna kan du använda funktionen [Tillåt externa gästanvändare att redigera och hantera innehåll i organisationen](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization).
 
 * Du behöver en Power BI Pro-licens för att bjuda in gästanvändare. Pro Trial-användare kan inte bjuda in gästanvändare i Power BI.
 
-* För gästanvändare som aktiverats via funktionen [Tillåt externa gästanvändare att redigera och hantera innehåll i organisationen](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization) är vissa funktioner inte tillgängliga. För att uppdatera eller publicera rapporter måste de använda Power BI-tjänstens webbgränssnitt, inklusive Hämta data för att överföra Power BI Desktop-filer.  Följande upplevelser stöds inte:
+* Vissa funktioner är inte tillgängliga för [gästanvändare som kan redigera och hantera innehåll i organisationen](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization). För att uppdatera eller publicera rapporter måste de använda Power BI-tjänstens webbgränssnitt, inklusive Hämta data för att överföra Power BI Desktop-filer.  Följande upplevelser stöds inte:
     * Direktpublicering från Power BI Desktop till Power BI-tjänsten
     * Gästanvändare kan inte använda Power BI Desktop för att ansluta till tjänstdatauppsättningar i Power BI-tjänsten
     * Klassiska arbetsytor som är kopplade till Office 365-grupper:
@@ -154,7 +155,9 @@ För att hjälpa användarna att logga in på Power BI kan du ange dem med klien
     * [Tillåt eller blockera inbjudningar till B2B-användare från specifika organisationer](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list)
     * [Tillåt eller blockera gästanvändares åtkomst till Power BI-tjänsten](/azure/active-directory/conditional-access/overview)
     
-* Att dela utanför din organisation stöds inte med nationella moln. Skapa istället användarkonton i din organisation som externa användare kan använda för att få åtkomst till innehållet. 
+* Du kan inte dela utanför organisationen i nationella moln. Skapa istället användarkonton i din organisation som externa användare kan använda för att få åtkomst till innehållet. 
+
+* Om du delar direkt till en gästanvändare kommer Power BI att skicka ett e-postmeddelande med länken. Du undviker att skicka e-postmeddelanden genom att lägga till gästanvändaren i en säkerhetsgrupp och dela till säkerhetsgruppen.  
 
 ## <a name="next-steps"></a>Nästa steg
 

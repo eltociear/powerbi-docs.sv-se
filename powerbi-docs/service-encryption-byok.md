@@ -1,5 +1,5 @@
 ---
-title: Använda egna krypteringsnycklar för Power BI (förhandsversion)
+title: Använda egna krypteringsnycklar för Power BI
 description: Lär dig hur du använder egna krypteringsnycklar i Power BI Premium.
 author: davidiseminger
 ms.author: davidi
@@ -7,22 +7,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 01/08/2020
+ms.date: 02/20/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: c4b4d706f56d9ebc91b17194c9b2fa631aeb8497
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 133d807d26ba6571eeb614852f3f651a749a369f
+ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "75762127"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77527781"
 ---
-# <a name="bring-your-own-encryption-keys-for-power-bi-preview"></a>Använda egna krypteringsnycklar för Power BI (förhandsversion)
+# <a name="bring-your-own-encryption-keys-for-power-bi"></a>Använda egna krypteringsnycklar för Power BI
 
 Power BI krypterar data _i vila_ och _under bearbetning_. Som standard använder Power BI Microsoft-hanterade nycklar till datakrypteringen. I Power BI Premium kan du även använda egna nycklar för data i vila som importeras till en datamängd (lär mer under [Att tänka på med datakällor och lagring](#data-source-and-storage-considerations)). Den här metoden beskrivs ofta som _BYOK_ (Bring Your Own Key).
 
 ## <a name="why-use-byok"></a>Varför ska du använda BYOK?
 
-Med BYOK blir det enklare att uppfylla efterlevnadskrav som täcker nyckelhantering med molntjänstleverantören (i det här fallet Microsoft). Med BYOK tillhandahåller du och styr krypteringsnycklarna för dina Power BI-data i vila på appnivå. Det innebär att du kan kontrollera och återkalla organisationens nycklar om du väljer att avsluta tjänsten. När du återkallar nycklarna kan tjänsten inte läsa dina data.
+Med BYOK blir det enklare att uppfylla efterlevnadskrav som täcker nyckelhantering med molntjänstleverantören (i det här fallet Microsoft). Med BYOK tillhandahåller du och styr krypteringsnycklarna för dina Power BI-data i vila på appnivå. Det innebär att du kan kontrollera och återkalla organisationens nycklar om du väljer att avsluta tjänsten. När du återkallar nycklarna kan tjänsten inte läsa dina data på 30 minuter.
 
 ## <a name="data-source-and-storage-considerations"></a>Att tänka på med datakällor och lagring
 
@@ -34,7 +34,12 @@ Om du vill använda BYOK måste du ladda upp data till Power BI-tjänsten från 
 - [Direktuppspelande datauppsättningar](service-real-time-streaming.md#set-up-your-real-time-streaming-dataset-in-power-bi)
 - [Stora modeller](service-premium-large-models.md)
 
-BYOK gäller enbart för den datamängd som är associerad med PBIX-filen, inte för frågeresultatcacher för paneler och visuella objekt.
+BYOK gäller endast för datamängder. Push-datamängder, Excel-filer och CSV-filer som användare kan ladda upp till tjänsten krypteras inte med din egen nyckel. Du kan se vilka artefakter som lagras på arbetsytan med följande PowerShell-kommando:
+
+```PS C:\> Get-PowerBIWorkspace -Scope Organization -Include All```
+
+> [!NOTE]
+> Den här cmdleten behöver Power BI Management Module v1.0.840. Du kan se vilken version du har genom att köra Get-InstalledModule -Name MicrosoftPowerBIMgmt. Installera den senaste versionen genom att köra Install-Module -Name MicrosoftPowerBIMgmt. Du kan läsa mer om cmdleten för Power BI och dess parametrar i [PowerShell-cmdlet-modulen för Power BI](https://docs.microsoft.com/powershell/power-bi/overview).
 
 ## <a name="configure-azure-key-vault"></a>Konfigurera Azure Key Vault
 
@@ -53,7 +58,7 @@ Anvisningarna i det här avsnittet förutsätter att du har grundläggande kunsk
 
 ### <a name="add-the-service-principal"></a>Lägg till tjänstens huvudnamn
 
-1. I ditt nyckelvalv i Azure-portalen, under **Åtkomstprinciper**, väljer du **Lägg till ny**.
+1. Gå till ditt nyckelvalv i Azure-portalen, under **Åtkomstprinciper**, och välj **Lägg till ny**.
 
 1. Under **Välj huvudkonto** söker du efter och väljer Microsoft.Azure.AnalysisServices.
 
@@ -183,3 +188,17 @@ Power BI har ytterligare cmdletar som hjälper dig att hantera BYOK för kliento
     ```powershell
     Switch-PowerBIEncryptionKey -Name'Contoso Sales' -KeyVaultKeyUri'https://contoso-vault2.vault.azure.net/keys/ContosoKeyVault/b2ab4ba1c7b341eea5ecaaa2wb54c4d2'
     ```
+
+
+
+## <a name="next-steps"></a>Nästa steg
+
+* [PowerShell-cmdlet-modulen för Power BI](https://docs.microsoft.com/powershell/power-bi/overview) 
+
+* [Olika sätt att dela ditt arbete i Power BI](service-how-to-collaborate-distribute-dashboards-reports.md)
+
+* [Filtrera en rapport med frågesträngparametrar i URL:en](service-url-filters.md)
+
+* [Bädda in med rapportwebbdel i SharePoint Online](service-embed-report-spo.md)
+
+* [Publicera på webben från Power BI](service-publish-to-web.md)

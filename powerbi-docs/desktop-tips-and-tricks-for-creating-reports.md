@@ -7,14 +7,14 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 01/31/2020
 ms.author: davidi
-ms.openlocfilehash: a6d949f95f463cb988958551d825a4eae824fb70
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: d3733b651ac8b9687d3b0547cc2f76c04a0d0823
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73865827"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77427264"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop"></a>Tips om hur du skapar rapporter i Power BI Desktop
 För att få ut mesta möjliga av dina data, behövs ibland lite extra hjälp. Vi har samlat några tips och råd som du kan använda när du skapar rapporter i Microsoft Power BI Desktop *och* i Microsoft Excel 2016 eller Excel 2013 Pro-Plus-versioner med Power Pivot-tillägget aktiverat och Power Query installerad och aktiverad. 
@@ -36,7 +36,7 @@ När du högerklickar på någon av frågorna i frågeredigerarens navigatör i 
 
 * När du använder filer som datakälla för en fråga lagras den absoluta sökvägen till filen i frågan. När du delar eller flyttar Power BI Desktop-filen eller Excel-arbetsboken sparar du tid när du uppdaterar sökvägarna genom att uppdatera den endast en gång i stället för sökvägarna.
 
-Som standard läses alla frågor in i ett Excel-arbetsblad eller en datamodell (eller båda). Vissa frågor är mellanliggande steg och är inte avsedda för slutanvändarna. Detta är ofta fallet för referenser till frågor som nämns ovan. Du kan styra inläsningen av frågan genom att högerklicka på frågan i navigatören och växla till alternativet ”Aktivera inläsning”. När *Aktivera inläsning* inte har markerats, kommer frågan fortfarande att vara tillgänglig på frågefliken och du kan använda den med andra frågor. Det är särskilt användbart i kombination med Sammanfoga, Lägga till, och Refererenstransformeringar. Men eftersom resultatet av frågan inte har lästs in till datamodellen kommer frågan inte att störa dina rapporter eller din datamodell. 
+Som standard läses alla frågor in i datamodellen. Vissa frågor är mellanliggande steg och är inte avsedda för slutanvändarna. Detta är ofta fallet för referenser till frågor som nämns ovan. Du kan styra inläsningen av frågan genom att högerklicka på frågan i navigatören och växla till alternativet ”Aktivera inläsning”. När *Aktivera inläsning* inte har markerats, kommer frågan fortfarande att vara tillgänglig på frågefliken och du kan använda den med andra frågor. Det är särskilt användbart i kombination med Sammanfoga, Lägga till, och Refererenstransformeringar. Men eftersom resultatet av frågan inte har lästs in till datamodellen kommer frågan inte att störa dina rapporter eller din datamodell. 
 
 ## <a name="scatter-charts-need-a-point-identifier"></a>Punktdiagrammet behöver en punktidentifierare
 Ta till exempel en enkel tabell med temperaturer och tidpunkten för avläsning av dessa. Om du beskriver detta direkt med ett punktdiagram aggregerar Power BI alla värden i en enda punkt. Om du vill visa individuella datapunkter måste du lägga till ett fält i bucketen Detaljer i fältet. Ett enkelt sätt att göra detta i Power BI Desktop är med hjälp av alternativet ”Lägg till indexkolumn” i menyfliksområdet ”Lägg till kolumn” på frågefliken. 
@@ -116,7 +116,7 @@ Om vi hämtar datauppsättningar från en aktiv kundsupportbegäran och från en
 > 
 > 
 
-När vi vill spåra alla incidenter och arbetsobjekt som hör till ett specifikt CustomerName skapar vi inte bara en relation mellan dessa två datamängder. Vissa WorkItems kan inte vara relaterade till CustomerName, så det fältet är tomt eller NULL. Det kan finnas flera poster i WorkItems och CustomerIncidents för alla angivna CustomerName. 
+När vi vill spåra alla incidenter och arbetsobjekt som hör till ett specifikt CustomerName kan vi inte bara skapa en relation mellan dessa två datamängder. Vissa WorkItems kan inte vara relaterade till CustomerName, så det fältet är tomt eller NULL. Det kan finnas flera poster i WorkItems och CustomerIncidents för alla angivna CustomerName. 
 
 ### <a name="creating-relationships-in-power-bi-desktop-when-the-data-has-null-or-blank-values"></a>Skapa relationer i Power BI Desktop när data har nullvärden eller tomma värden
 Ofta innehåller datauppsättningar kolumner med null eller tomma värden. Detta kan orsaka problem när du försöker använda relationer. Du har i stort sett två alternativ för att hantera problemen. Du kan ta bort rader som innehåller null eller tomma värden. Du kan göra detta med hjälp av antingen filterfunktionen i frågefliken eller om du samkör frågor genom att välja alternativet ”Behåll endast matchande rader”. Alternativt kan du ersätta nullvärden eller tomma värden med värden som fungerar med relationer, vanligtvis strängar som ”NULL” och ”(tom)”. Det finns inga rätta inställningar – när du filtrerar ut frågerader på frågestadiet tas rader bort, vilket kan påverka sammanfattningsstatistik och beräkningar. Den senare metoden bevarar dessa datarader men orelaterade rader visas i modellen, vilket kan leda till felberäkningar. Om du antar denna lösning, se till att du använder filter på Vy/diagram där det behövs för att säkerställa att du får korrekta resultat. Viktigast av allt utvärdera vilka rader som är kvar eller tagits bort och förstå den övergripande effekten på analysen... 
@@ -132,7 +132,7 @@ Om vi hämtar datauppsättningar från en aktiv kundsupportbegäran och från en
 > 
 > 
 
-När vi vill spåra alla incidenter och arbetsobjekt som hör till ett specifikt CustomerName skapar vi inte bara en relation mellan dessa två datamängder. Vissa WorkItems kan inte vara relaterade till CustomerName, så det fältet är tomt eller NULL. Om du har tomma värden eller nullvärden i tabellen CustomerNames kan du inte skapa en relation – se Skapa relationer om mina data har null – eller tomma värden. Det kan finnas flera poster i WorkItems och CustomerIncidents för alla angivna CustomerName. 
+När vi vill spåra alla incidenter och arbetsobjekt som hör till ett specifikt CustomerName kan vi inte bara skapa en relation mellan dessa två datamängder. Vissa WorkItems kan inte vara relaterade till CustomerName, så det fältet är tomt eller NULL. Om du har tomma värden eller nullvärden i tabellen CustomerNames kan du inte skapa en relation – se Skapa relationer om mina data har null – eller tomma värden. Det kan finnas flera poster i WorkItems och CustomerIncidents för alla angivna CustomerName. 
 
 Om du vill skapa en relation i det här fallet måste vi skapa en logisk datauppsättning för alla CustomerNames mellan båda datamängder. Du kan använda följande sekvens för att skapa en logisk datauppsättning på fliken Fråga:
 

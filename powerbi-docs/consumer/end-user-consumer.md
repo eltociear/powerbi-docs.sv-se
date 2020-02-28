@@ -3,20 +3,21 @@ title: Vad är en Power BI-”konsument”?
 description: Översikt över Power BI för konsumenter (även kallade slutanvändare eller affärsanvändare).
 author: mihart
 ms.service: powerbi
-ms.custom: seodec18
 ms.subservice: powerbi-consumer
 ms.topic: overview
-ms.date: 10/31/2019
+ms.date: 02/18/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: bf5e83005e0bd1782e497cdeec1d3689e5749b12
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 100a9302e260a7c8f34c6fa07cc6b231e7271ce6
+ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73863813"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77496250"
 ---
 # <a name="the-power-bi-service-for-consumers"></a>Power BI-tjänsten för konsumenter
+
+[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
 Du lever i en datakultur där affärsbeslut baseras på fakta, och inte på åsikter. Du behöver data för att kunna fatta dessa beslut, och dina kollegor hjälper dig gärna.     
  
@@ -43,6 +44,8 @@ Hur du interagerar med Power BI beror på din arbetsroll. Som slutanvändare ell
 Som konsument har du inte tillgång till alla funktioner i Power BI, men du har heller inget behov av att kunna skapa instrumentpaneler eller rapporter. Du kommer att använda Power BI-tjänsten till analys, övervakning, utforskning och beslutsfattande. 
 
 Du kommer säkerligen att höra termen ”Power BI Desktop” eller bara ”Desktop”, och det här är ett fristående verktyg som används av de *designers* som skapar och delar instrumentpaneler och rapporter med dig.  Det är viktigt att veta att det finns andra Power BI-verktyg, men som användare arbetar du bara med Power BI-tjänsten. 
+
+Eftersom du arbetar med *delat* innehåll behöver du en Power BI Pro- eller Premium-licens. [Vilken licens har jag?](end-user-license.md)
 
 
 ## <a name="safely-interact-with-content"></a>Interagera på ett säkert sätt med innehåll 

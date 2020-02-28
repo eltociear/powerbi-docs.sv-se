@@ -1,18 +1,18 @@
 ---
 title: Skapa en sidnumrerad rapport med en delad Power BI-datamängd – Power BI Report Builder
 description: Skapa en sidnumrerad rapport i Power BI Report Builder baserat på en delad Power BI-datamängd.
-ms.date: 01/03/2020
+ms.date: 02/12/2020
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 335b93720718bb72027c29c6093aad952cc4cdb2
-ms.sourcegitcommit: b09de56e971b8844a3771413d1f56d49b31baaaf
+ms.openlocfilehash: 4a46f0aae642b42cd797940e0b0991cfa77a077e
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75691472"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77427860"
 ---
 # <a name="create-a-paginated-report-based-on-a-power-bi-shared-dataset"></a>Skapa en sidnumrerad rapport baserat på en delad Power BI-datamängd
 
@@ -27,6 +27,7 @@ Datamängden behöver inte finnas på en arbetsyta i en Premium-kapacitet, och d
 Här är en lista över det du behöver och inte behöver för att använda en delad datamängd i Report Builder i Power BI.
 
 - Öppna Report Builder i Power BI. [Ladda ned och installera Report Builder i Power BI](https://go.microsoft.com/fwlink/?linkid=2086513).
+- Power BI Desktop. [Ladda ner och installera Power BI Desktop](https://powerbi.microsoft.com/desktop/).
 - För att få åtkomst till en Power BI-datamängd behöver du ha behörigheten Skapa för datamängden. Läs om [behörigheten Skapa](service-datasets-build-permissions.md).
 - Du behöver ingen Power BI Pro-licens för att skapa en sidnumrerad rapport i Report Builder. 
 - Du behöver dock en Power BI Pro-licens för att publicera den sidnumrerade rapporten. Du behöver även minst rollen Deltagare för en arbetsyta i en Premium-kapacitet. 
@@ -57,12 +58,26 @@ Här är en lista över det du behöver och inte behöver för att använda en d
     Kom ihåg att du kan ansluta till flera Power BI-datamängder och andra datakällor i samma sidnumrerade rapport.
 
 
-## <a name="get-the-query-for-the-dataset"></a>Hämta frågan för datamängden
+## <a name="get-the-dax-query-for-the-dataset"></a>Hämta DAX-frågan för datamängden
 
 När du vill att data i Power BI-rapporten och i Report Builder-rapporten ska vara samma räcker det inte att ansluta till datamängden. Du behöver även den fråga som bygger på den datamängden.
 
+### <a name="video-get-the-dax-query"></a>Video: Hämta DAX-frågan
+
+I det här videoklippet visar Chris Finlan hur du hämtar den DAX du behöver till din sidnumrerade rapport.
+
+<iframe width="400" height="450" src="https://www.youtube.com/embed/NfoOK4QRkhI" frameborder="0" allowfullscreen></iframe>
+
+### <a name="steps-to-get-the-dax-query"></a>Steg för att hämta DAX-frågan
+
+Här är stegen du behöver utföra för att hämta frågan.
+
 1. Öppna Power BI-rapporten (.pbix) i Power BI Desktop.
-1. Se till att du har en tabell i rapporten som innehåller alla data som du vill ha i den sidnumrerade rapporten.
+1. Se till att du har en tabell i rapporten som innehåller alla data som du vill ha i den sidnumrerade rapporten. Tabellen måste uppfylla dessa två krav:
+    - Det måste vara en platt tabell, inte en matris eller något annat visuellt objekt. Om det inte är en tabell konverterar du den till en tabell nu, går igenom följande steg för prestandaanalys och konverterar sedan tillbaka tabellen till det visuella objekt du vill använda.
+    - För dina numeriska fält måste du använda *fördefinierade mått*. De har en miniräknarsymbol bredvid sig. Läs om att [skapa mått](desktop-measures.md). 
+
+        ![Måttikon](media/report-builder-shared-datasets/power-bi-measure-icon.png)
 
 1. I menyfliksområdet **Visa** väljer du **Prestandaanalys**.
 
@@ -204,6 +219,7 @@ Anta till exempel att rapporten har formatet 8,5 x 11 tum och att du har ange
 
 - För datamängder som använder en live-anslutning till Analysis Services kan du ansluta direkt med hjälp av den underliggande Analysis Services-anslutningen i stället för en delad datamängd.
 - Datamängder med upphöjda eller certifierade intyg visas i listan över tillgängliga datamängder, men de markeras inte som sådana. 
+- Du kan inte bädda in sidnumrerade rapporter som baseras på delade Power BI-datamängder i scenariot ”Appen äger data”.
 
 ## <a name="next-steps"></a>Nästa steg
 

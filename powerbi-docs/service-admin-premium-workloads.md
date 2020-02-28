@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/14/2019
+ms.date: 02/14/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 924be90a8598c561a12ed87872bdfbd4681831c8
-ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
+ms.openlocfilehash: ae05fdcd3a38f10707e991524bac61a305b88794
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76889384"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77427724"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Konfigurera arbetsbelastningar i en Premium-kapacitet
 
@@ -170,7 +170,7 @@ Med arbetsbelastningens sidnumrerade rapporter kan du köra sidnumrerade rapport
 | **Maximalt minne (%)** | Den maximala procentandelen tillgängligt minne som sidnumrerade rapporter kan använda i en kapacitet. |
 |  |  |
 
-Sidnumrerade rapporter gör att anpassad kod kan köras vid rendering av en rapport. Det kan till exempel gälla dynamisk ändring av textfärg baserat på innehåll, vilket kan kräva ytterligare minne. I Power BI Premium körs sidnumrerade rapporter i ett inneslutet område inom kapaciteten. 
+Sidnumrerade rapporter har samma funktioner som SSRS-rapporter (SQL Server Reporting Services) har idag, inklusive möjligheten för rapportförfattare att lägga till anpassad kod.  Det här gör att författare kan ändra sina rapporter dynamiskt, och exempelvis ändra textfärg baserat på koduttryck.  Sidnumrerade rapporter isoleras genom att de körs i en skyddad sandbox-miljö per kapacitet. Rapporter som körs inom samma kapacitet kan orsaka sidoeffekter. På samma sätt som du begränsar vilka författare som kan publicera innehåll till en instans av SSRS rekommenderar vi att du använder en liknande metod för sidnumrerade rapporter. Se till att författare som publicerar innehåll till en kapacitet är betrodda av organisationen. Du kan skydda miljön ytterligare genom att etablera flera kapaciteter och tilldela olika författare till var och en av dem. 
 
 I vissa fall kan arbetsbelastningens sidnumrerade rapporter bli otillgängliga. I det här fallet visar arbetsbelastningen ett feltillstånd i administratörsportalen, och användarna ser överskridna tidsgränser vid rendering av rapporter. För att lösa det här problemet kan du inaktivera arbetsbelastningen och sedan aktivera den igen.
 

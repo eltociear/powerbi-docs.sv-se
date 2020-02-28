@@ -7,15 +7,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/13/2020
+ms.date: 02/13/2020
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: ddb54ca91936626b4870b51b86b7fc7f0ac6b2c9
-ms.sourcegitcommit: df8bcc65f0df69bf1fc1d47eb06575742eac1622
+ms.openlocfilehash: f8a49780804449296194d7adb8091f7f0c5748fe
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75954126"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77427816"
 ---
 # <a name="add-hyperlinks-urls-to-a-table-or-matrix"></a>Lägga till hyperlänkar (URL) i en tabell eller matris
 I det här avsnittet lär du dig lägga till hyperlänkar (URL:er) i en tabell. Du använder Power BI Desktop för att lägga till hyperlänkar (URL:er) i en datamängd. Du kan lägga till hyperlänkarna i dina rapporttabeller och matriser, antingen i Power BI Desktop eller Power BI-tjänsten. Sedan kan du visa URL-adressen eller en länkikon, eller formatera en annan kolumn som länktext.
@@ -34,7 +34,7 @@ Du kan formatera ett fält med URL:er som hyperlänkar i Power BI Desktop, men i
     > [!NOTE]
     > Du kan inte skapa en kolumn i DirectQuery-läge.  Men om dina data redan innehåller URL:er, kan du förvandla dem till hyperlänkar.
 
-2. Välj kolumnen i vyn Data. 
+2. Välj kolumnen i vyn Data eller Rapport. 
 
 3. På fliken **Modellering** väljer du **Datakategori** > **Webb-URL**.
    
@@ -79,13 +79,20 @@ Du kan också formatera ett annat fält i en tabell som hyperlänk och inte ha n
 
 1. Om det inte redan finns ett fält med en hyperlänk i datamängden använder du Power BI Desktop för att lägga till det som en [anpassad kolumn](desktop-common-query-tasks.md). Kom ihåg att du inte kan skapa en ny kolumn i DirectQuery-läge.  Men om dina data redan innehåller URL:er, kan du förvandla dem till hyperlänkar.
 
-2. I rapportvyn skapar du en tabell eller matris med kolumnen som du ska formatera som länktext.
+2. Välj kolumnen som innehåller webbadressen i vyn Data eller Rapport. 
+
+3. På fliken **Modellering** väljer du **Datakategori**. Se till att kolumnen är formaterad som **Okategoriserad**.
+
+2. I rapportvyn skapar du en tabell eller matris med adresskolumnen och kolumnen du ska formatera som länktext.
 
 3. Med tabellen markerad väljer du **Format**-ikonen ![Färgrollerikon](media/power-bi-hyperlinks-in-tables/power-bi-paintroller.png) för att öppna formateringsfönstret.
 
-4. Expandera **Villkorsstyrd formatering** och se till att namnet i rutan är den kolumn som du vill använda som länktext. Leta upp **URL-ikonen** och **aktivera** den.
+4. Expandera **Villkorsstyrd formatering** och se till att namnet i rutan är den kolumn som du vill använda som länktext. Leta rätt på **Webb-URL** och **aktivera** den.
 
     ![Villkorsstyrd formatering av Webb-URL](media/power-bi-hyperlinks-in-tables/power-bi-format-conditional-web-url.png)
+
+    > [!NOTE]
+    > Om du inte ser alternativet **Webb-URL** kontrollerar du att kolumnen som innehåller hyperlänkarna *inte* är formaterad som **Webb-URL** i listrutan **Datakategori**.
 
 5. I dialogrutan **Webb-URL** väljer du det fält som innehåller URL: en i rutan **Baserat på fält** > **OK**.
 

@@ -1,37 +1,37 @@
 ---
-title: Inkrementell uppdatering i Power BI Premium
-description: Lär dig hur du kan använda mycket stora datamängder i Power BI Premium-tjänsten.
+title: Inkrementell uppdatering i Power BI
+description: Lär dig hur du kan använda mycket stora datamängder i Power BI.
 author: davidiseminger
-ms.reviewer: kayu
+ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 08/21/2019
+ms.date: 02/20/2020
 ms.author: davidi
 LocalizationGroup: Premium
-ms.openlocfilehash: cc2b005ef72700891a603162a281fbba23aa5120
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 852bdcdeb71f6dae555c37467145bad6b584e324
+ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74699301"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77527644"
 ---
-# <a name="incremental-refresh-in-power-bi-premium"></a>Inkrementell uppdatering i Power BI Premium
+# <a name="incremental-refresh-in-power-bi"></a>Inkrementell uppdatering i Power BI
 
-Inkrementell uppdatering gör det möjligt att använda mycket stora datamängder i Power BI Premium-tjänsten, vilket medför följande fördelar:
+Inkrementell uppdatering gör att du kan använda mycket stora datamängder i Power BI, vilket medför följande fördelar:
 
 > [!div class="checklist"]
 > * **Snabbare uppdateringar** – Endast data som ändras behöver uppdateras. Exempelvis kan en uppdatering göras på de senaste fem dagarna i en datamängd som spänner över tio år.
 > * **Mer tillförlitliga uppdateringar** – Det krävs inte längre långvariga anslutningar till instabila källsystem.
 > * **Minskad resursförbrukning** – När färre data behöver uppdateras minskar den totala förbrukningen av minne och andra resurser.
 
+> [!NOTE]
+> Nu är inkrementell uppdatering tillgängligt för Power BI Pro, Premium samt delade prenumerationer och datamängder. 
+
 ## <a name="configure-incremental-refresh"></a>Konfigurera inkrementell uppdatering
 
 Principerna för inkrementell uppdatering definieras i Power BI Desktop och tillämpas när de har publicerats till Power BI-tjänsten.
 
-Börja genom att aktivera inkrementell uppdatering i **förhandsversionsfunktionerna**.
-
-![Alternativ – förhandsversionsfunktioner](media/service-premium-incremental-refresh/preview-features.png)
 
 ### <a name="filter-large-datasets-in-power-bi-desktop"></a>Filtrera stora datamängder i Power BI Desktop
 
@@ -72,7 +72,7 @@ Filtret för datumkolumnen används för att dynamiskt partitionera data i inter
 
 Det är viktigt att partitionsfilter skickas till källsystemet när frågor skickas för uppdateringsåtgärder. Att skicka ned filtrering innebär att datakällan ska ha stöd för frågepartitionering. De flesta datakällor som stöder SQL-frågor har stöd för frågepartitionering. Men datakällor såsom flata filer, blobar samt webb- och OData-flöden har vanligtvis inte stöd. I fall där filtret inte stöds av datakällans serverdel kan den inte skickas ned. I sådana fall kompenserar kombinationsprogrammotorn och tillämpar filtret lokalt, vilket kan kräva att den fullständiga datamängden hämtas från datakällan. Detta kan göra så att inkrementell uppdatering går mycket långsamt, och processen kan få slut på resurser i Power BI-tjänsten eller i den lokala datagatewayen om den används.
 
-Med tanke på de olika nivåerna av stöd för frågepartitionering för varje given datakälla rekommenderar vi att du kontrollerar att filterlogiken ingår i källfrågorna. För att underlätta detta försöker Power BI Desktop utföra den här kontrollen åt dig. Om kontrollen inte kan utföras visas en varning i dialogrutan för inkrementell uppdatering när du definierar principen för inkrementell uppdatering. SQL-baserade datakällor, till exempel SQL, Oracle och Teradata, kan vara beroende av den här varningen. Andra datakällor kanske inte kan göra en kontroll utan att spåra frågor. Om Power BI Desktop inte kan bekräfta visas följande varning.
+Med tanke på de olika nivåerna av stöd för frågepartitionering för varje given datakälla rekommenderar vi att du kontrollerar att filterlogiken ingår i källfrågorna. För att underlätta detta försöker Power BI Desktop utföra den här kontrollen åt dig. Om kontrollen inte kan utföras visas en varning i dialogrutan för inkrementell uppdatering när du definierar principen för inkrementell uppdatering. SQL-baserade datakällor, till exempel SQL, Oracle och Teradata, kan vara beroende av den här varningen. Andra datakällor kanske inte kan göra en kontroll utan att spåra frågor. Om Power BI Desktop inte kan bekräfta visas följande varning. Om du ser den här varningen och vill kontrollera att frågan partitioneras ordentligt kan du använda funktionen för frågediagnostik eller spåra de frågor som tas emot av källdatabasen.
 
  ![Frågepartitionering](media/service-premium-incremental-refresh/query-folding.png)
 
@@ -93,7 +93,7 @@ Dialogrutan Inkrementell uppdatering visas. Aktivera dialogrutan med hjälp av v
 
 Rubriktexten förklarar följande:
 
-- Inkrementell uppdatering stöds endast för arbetsytor med Premium-kapaciteter. Uppdateringsprinciper definieras i Power BI Desktop och tillämpas genom uppdateringsåtgärder i tjänsten.
+- Uppdateringsprinciper definieras i Power BI Desktop och tillämpas genom uppdateringsåtgärder i tjänsten.
 
 - Om du laddar ned PBIX-filen som innehåller en princip för inkrementell uppdatering från Power BI-tjänsten, kan den inte öppnas i Power BI Desktop. Även om det kan finnas stöd för detta längre fram bör du ha i åtanke att dessa datamängder kan bli så stora att det är opraktiskt att ladda ned och öppna dem på en vanlig skrivbordsdator.
 
@@ -110,6 +110,13 @@ I följande exempel definieras en uppdateringsprincip för att lagra data i fem 
 Den första uppdateringen i Power BI-tjänsten kan ta längre tid eftersom alla fem fullständiga kalenderår importeras. Efterföljande uppdateringar slutförs på en bråkdel av tiden.
 
 ![Uppdateringsintervall](media/service-premium-incremental-refresh/refresh-ranges.png)
+
+
+#### <a name="current-date"></a>Aktuellt datum
+
+*Aktuellt datum* baseras på systemdatumet vid tidpunkten för uppdateringen. Om schemalagd uppdatering är aktiverad för datamängden i Power BI-tjänsten tas den angivna tidszonen med i beräkningen när det aktuella datumet fastställs. Tidszonen räknas in för både manuellt anropade och schemalagda uppdateringar om den är tillgänglig. En uppdatering som görs 20.00 Pacific Time (USA och Kanada) med angiven tidszon fastställer till exempel aktuellt datumet baserat på Pacific Time, inte GMT (vilket annars skulle vara nästa dag).
+
+![Tidszon](media/service-premium-incremental-refresh/time-zone2.png)
 
 > [!NOTE]
 > Definitionen av dessa intervall kanske är allt du behöver. I så fall kan du gå direkt till publiceringssteget nedan. De ytterligare nedrullningsbara avsnitten beskriver avancerade funktioner.
@@ -143,10 +150,6 @@ Ett annat exempel är när data uppdateras från ett ekonomisystem där data fö
 > Uppdateringsåtgärder i tjänsten körs enligt UTC-tid. Detta kan avgöra det effektiva datumet och påverka fullständiga perioder. Vi planerar att lägga till möjligheten att åsidosätta det effektiva datumet för uppdateringsåtgärder.
 
 ## <a name="publish-to-the-service"></a>Publicera till tjänsten
-
-Eftersom inkrementell uppdatering är en exklusiv Premium-funktion krävs Premium-kapacitet för att du ska kunna välja en arbetsyta i publiceringsdialogrutan.
-
-![Publicera till tjänsten](media/service-premium-incremental-refresh/publish.png)
 
 Nu kan du uppdatera modellen. Den första uppdateringen kan ta längre tid eftersom historiska data importeras. Efterföljande uppdateringar går vanligtvis mycket snabbare eftersom de använder inkrementell uppdatering.
 

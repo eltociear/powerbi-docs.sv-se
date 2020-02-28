@@ -7,23 +7,28 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/18/2019
+ms.date: 02/18/2020
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: da941de8b44f3833a5f80bba648f4a185f35b36e
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 59ba4d0e62613ed25569efd0602815e3d98aec4d
+ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73852038"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77496498"
 ---
 # <a name="add-comments-to-a-dashboard-or-report"></a>Lägga till kommentarer på en instrumentpanel eller i en rapport
+
+[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 Lägg till en personlig kommentar eller starta en konversation om en instrumentpanel eller en rapport med dina kollegor. **Kommentarsfunktionen** är bara ett exempel på hur en *användare* kan samarbeta med andra. 
 
 ![kommentarsvideo](media/end-user-comment/comment.gif)
+
+> [!NOTE]
+> När du ska samarbeta med andra, till exempel om du vill lägga till kommentarer i delade rapporter, behöver du en Power BI Pro- eller Premium-licens. [Vilken licenstyp har jag?](end-user-license.md)
 
 ## <a name="how-to-use-the-comments-feature"></a>Hur du använder kommentarsfunktionen
 Kommentarer kan läggas till på en hel instrumentpanel, i enskilda visuella objekt på en instrumentpanel, på en rapportsida, i en sidnumrerad rapport samt i enskilda visuella objekt på en rapportsida. Lägg till en allmän kommentar eller en kommentar riktad till specifika kollegor.  
@@ -34,7 +39,7 @@ När du lägger till en kommentar i en rapport hämtar Power BI de aktuella filt
 
 Varför är det här viktigt? Anta att en kollega använde ett filter som gav en intressant insikt som kollegan vill dela med teamet. Utan det filtret skulle kommentaren kanske inte ge någon tydlig information.
 
-Om du använder en sidnumrerad rapport kan du endast lämna en allmän kommentar om rapporten.  Det finns inte stöd för att lämna kommentarer om enskilda visuella objekt i rapporten.
+Om du använder en sidnumrerad rapport kan du endast lämna en allmän kommentar om rapporten.  Du kan inte lämna kommentarer till enskilda visuella objekt i sidnumrerade rapporter.
 
 ### <a name="add-a-general-comment-to-a-dashboard-or-report"></a>Lägga till en allmän kommentar på en instrumentpanel eller i en rapport
 Processen för att lägga till kommentarer på en instrumentpanel liknar den där du lägger till i en rapport.  I det här exemplet använder vi en instrumentpanel. 

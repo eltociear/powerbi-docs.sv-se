@@ -1,110 +1,115 @@
 ---
 title: Sortera efter kolumn i Power BI Desktop
-description: Sortera efter kolumn i Power BI Desktop
+description: Du kan ändra utseendet för ett visuellt objekt i Power BI genom att sortera det enligt olika datafält.
 author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/17/2019
+ms.date: 01/30/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 78632db52ae197a1643dcf1f2831e140568bc6fe
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: 0cbba86bd77debda9ab2162b8f9b190e1846b99c
+ms.sourcegitcommit: cde65bb8b1bed1ee8cf512651afeb829ddc155de
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75223448"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77464699"
 ---
 # <a name="sort-by-column-in-power-bi-desktop"></a>Sortera efter kolumn i Power BI Desktop
-I **Power BI Desktop** och **Power BI-tjänsten** kan du ändra utseendet på ett visuellt objekt genom att sortera det enligt olika datafält. Genom att ändra sorteringen för ett visuellt objekt kan du framhäva den information som du vill förmedla och se till att det visuella objektet speglar trenden på rätt sätt.
+I Power BI Desktop och Power BI-tjänsten kan du ändra utseendet på ett visuellt objekt genom att sortera det enligt olika datafält. Genom att ändra sorteringen för ett visuellt objekt kan du framhäva den information som du vill förmedla och se till att det visuella objektet speglar trenden på rätt sätt.
 
-Om du använder numeriska data (till exempel försäljningssiffror) eller textdata (till exempel namn på delstater) kan du sortera dina visuella objekt och utforma dem som det passar dig.  **Power BI** ger stor flexibilitet för sortering och snabb menyer som du kan använda. Välj ellipsmenyn (...) på ett visuellt objekt och välj sedan det fält som du vill sortera efter, som du ser i bilden nedan.
+Om du använder numeriska data (till exempel försäljningssiffror) eller textdata (till exempel namn på delstater) kan du sortera dina visuella objekt och utforma dem som du vill. Du har stor flexibilitet gällande sortering i Power BI och du kan använda olika snabbmenyer. Välj **Fler alternativ** (...) för valfritt visuellt objekt, välj **Sortera efter** och sedan det fält du vill sortera efter.
 
 ![Menyn Fler alternativ](media/desktop-sort-by-column/sortbycolumn_2.png)
 
-## <a name="more-depth-and-an-example"></a>Mer djup och ett exempel
-Låt oss ta ett exempel som är djupare och se hur det fungerar i **Power BI Desktop**.
+## <a name="sorting-example"></a>Sorteringsexempel
+Låt oss ta ett mer ingående exempel och se hur det fungerar i Power BI Desktop.
 
-Följande visualisering visar kostnader, antal och belopp efter tillverkare. Så här ser det visuella objektet ut innan vi sorterar ytterligare.
+Följande visualisering visar kostnader, antal och belopp efter tillverkare. Så här ser det visuella objektet ut innan vi sorterar ytterligare:
 
 ![Ursprunglig visualisering](media/desktop-sort-by-column/sortbycolumn_1.png)
 
-Det visuella objektet sorteras för närvarande efter **SalesQuantity**. Det kan vi se genom att matcha färgen på de stigande staplarna med förklaringen. Men det finns ett enklare sätt att ta reda på den aktuella sorteringskolumnen: ellipsmenyn (...) i det visuella objektets övre högra hörn. Vi ser följande när vi väljer ellipserna:
+Det visuella objektet sorteras för närvarande efter kolumnen **SalesQuantity**. Vi kan bestämma sorteringskolumnen genom att matcha färgen på staplarna mot förklaringen, men det finns ett bättre sätt: menyn **Fler alternativ** som du öppnar genom att välja ellipsen (...).
 
 ![Menyn Fler alternativ](media/desktop-sort-by-column/sortbycolumn_2.png)
 
-* Vi vet att det aktuella sorteringsfältet är **SalesQuantity** eftersom **Sortera efter SalesQuantity** visas i fetstil med en gul markering. 
+Du har följande sorteringsalternativ:
 
-* Den aktuella sorteringsordningen är ”minsta till största”, vilket anges av den lilla ikonen **A/Ö** (A ovanför Ö) och en nedpil.
+* Det nuvarande sorteringsfältet är **SalesQuantity**, vilket visas med **SalesQuantity** i fetstil och en gul markering. 
 
-Vi ska titta på sorteringsfältet och riktningen var för sig i följande två avsnitt.
+* Den nuvarande sorteringsriktningen är stigande, vilket visas med **Sortera stigande** i fetstil och ett gult fält.
 
-## <a name="selecting-which-column-to-use-for-sorting"></a>Så här väljer du vilken kolumn som ska användas för sortering
-Du såg den gula markeringen intill **Sortera efter SalesQuantity** på menyn **Fler alternativ**, som anger att det visuella objektet sorteras baserat på kolumnen **SalesQuantity**. Det är lätt att sortera efter en annan kolumn – klicka bara på ellipserna för att visa ellipsmenyn och välj en annan kolumn.
+Vi ska titta närmare på sorteringsfältet och riktningen i följande två avsnitt.
 
-I följande bild valde vi *DiscountAmount* som den kolumn som vi vill sortera efter. Den här kolumnen råkar vara en av linjerna i det visuella objektet snarare än en stapel. Så här ser det ut när vi har valt **Sortera efter DiscountAmount**.
+## <a name="select-which-column-to-use-for-sorting"></a>Välj vilken kolumn som ska användas för sortering
+Du såg den gula markeringen innan **SalesQuantity** på menyn **Fler alternativ**, vilket innebär att det visuella objektet sorteras baserat på kolumnen **SalesQuantity**. Det är enkelt att sortera efter en annan kolumn: välj ellipserna (...) för att öppna menyn **Fler alternativ**, välj **Sortera efter** och välj sedan en annan kolumn.
 
-![Sortera efter DiscoutAmount](media/desktop-sort-by-column/sortbycolumn_3.png)
+I den här bilden har vi valt **DiscountAmount** som kolumn att sortera efter. Den här kolumnen visas som en av linjerna i det visuella objektet snarare än en stapel. 
 
-Observera hur den visuella informationen har ändrats. Nu sorteras värdena från det högsta DiscountAmount-värdet, i detta fall Fabrikam Inc., och nedåt till Northwind Traders, som har det lägsta värdet. 
+![Sortera efter DiscountAmount](media/desktop-sort-by-column/sortbycolumn_3.png)
+
+Observera hur den visuella informationen har ändrats. Nu sorteras värdena från det högsta **DiscountAmount**-värdet, i detta fall Fabrikam Inc., och nedåt till det lägsta värdet som är Northwind Traders. 
 
 Men vad händer om vi vill sortera stigande i stället för fallande? I nästa avsnitt visar vi hur enkelt det är.
 
-## <a name="selecting-the-sort-order---smallest-to-largest-largest-to-smallest"></a>Att välja sorteringsordning – minsta till största, största till minsta
-När vi tittar närmare på **Alternativ**-menyn från den föregående bilden ser vi att ikonen bredvid **Sortera efter DiscountAmount** visar **Ö/A** (Ö ovanför A). Låt oss ta en titt:
+## <a name="select-the-sort-order"></a>Välj sorteringsordning
+Om vi tittar närmare på menyn **Fler alternativ** i föregående bild ser vi att **Sortera fallande** är fetstilt och föregås av ett gult fält.
 
 ![Sortera efter största till minsta](media/desktop-sort-by-column/sortbycolumn_4.png)
 
-När **Z/A** är visas, betyder det visuella objektet sorteras efter den markerade kolumnen från det största till det minsta värdet. Vill du ändra det? Inga problem – bara tryck eller klicka på **Z/A**-ikonen så ändras sorteringsordningen till **A/Z** och sorterar det visuella objektet (baserat på den markerade kolumnen) från det minsta till största värdet.
+När du väljer **Sortera fallande** innebär det att det visuella objektet sorteras efter den markerade kolumnen från det största till det minsta värdet. Vill du ändra det? Inga problem, välj bara **Sortera stigande** så ändras sorteringsordningen för den valda kolumnen från det minsta till det största värdet.
 
-Här är samma visuella objekt när vi ändrat sorteringsordningen genom att trycka på ikonen **Ö/A** på menyobjektet **Sortera efter DiscountAmount**. Observera att nu är Northwind Traders den tillverkare som visas först, och Fabrikam, Inc. visas sist, dvs. motsatt sorteringsordning mot förut.
+Här är samma visuella objekt när ordningen för **DiscountAmount** har ändrats. Observera att Northwind Traders nu är den tillverkare som visas först medan Fabrikam, Inc. visas sist, alltså den motsatta sorteringsordningen.
 
 ![Sortera efter minsta till största](media/desktop-sort-by-column/sortbycolumn_5.png)
 
-Du kan sortera efter valfri kolumn som ingår i det visuella objektet. Vi kan till exempel enkelt välja SalesQuantity som sorteringskolumn, med **Sortera efter SalesQuantity**, om vi vill visa tillverkare med störst försäljning först, och bevara övriga kolumner i det visuella objektet baserat på deras relation till tillverkaren i fråga. Så här ser det visuella objektet ut med dessa inställningar.
+Du kan sortera efter valfri kolumn i det visuella objektet. Vi kan till exempel enkelt välja **SalesQuantity** som sorteringskolumn om vi vill visa tillverkarna med störst försäljning först, och bevara övriga kolumner i det visuella objektet baserat på deras relation till tillverkaren i fråga. Så här ser det visuella objektet ut med dessa inställningar:
 
 ![Sortera efter SalesQuantity](media/desktop-sort-by-column/sortbycolumn_6.png)
 
 ## <a name="sort-using-the-sort-by-column-button"></a>Sortera med knappen Sortera efter kolumn
-Det finns ett annat sätt att sortera data och det är med hjälp av knappen **Sortera efter kolumn** i menyfliksområdet **Modellering**.
+Det finns ett annat sätt att sortera data, och det är med hjälp av knappen **Sortera efter kolumn** i menyfliksområdet **Modellering**.
 
 ![Knappen Sortera efter kolumn](media/desktop-sort-by-column/sortbycolumn_8.png)
 
-Den här sorteringsmetoden kräver att du väljer en kolumn från fönstret **Fält** och sedan väljer knappen **Sortera efter kolumn** för att välja hur (genom vilken kolumn) som du vill sortera ditt visuella objekt. Du måste markera kolumnen (fältet) som du vill sortera från rutan **Fält** för att aktivera knappen **Sortera efter kolumn** – annars är knappen inaktiv.
+Den här sorteringsmetoden kräver att du först väljer kolumnen (fältet) från fönstret **Fält** och sedan väljer **Modellering** > **Sortera efter kolumn** för att sortera ditt visuella objekt. Om du inte väljer någon kolumn är knappen **Sortera efter kolumn** inaktiv.
 
-Nu ska vi titta på ett vanligt exempel: du har data från varje månad på året och vill sortera dem i kronologisk ordning. Följande steg visar hur du gör.
+Låt oss titta på ett vanligt exempel. Du har data från varje månad under året och vill sortera dem i kronologisk ordning. Så här gör du:
 
-1. Observera att knappen är inaktiv (grå) när det visuella objektet har valts men ingen kolumn har markerats i rutan **Fält** i **Sortera efter kolumn**.
+1. Observera att knappen är inaktiv (nedtonad) när det visuella objektet har valts men ingen kolumn har valts i rutan **Fält** i **Sortera efter kolumn**.
    
    ![Knappen Sortera efter kolumn är inaktiv](media/desktop-sort-by-column/sortbycolumn_9.png)
 
 2. När vi väljer den kolumn som vi vill sortera i rutan **fält** i **Sortera efter kolumn** blir knappen aktiv.
    
    ![Knappen Sortera efter kolumn är aktiv](media/desktop-sort-by-column/sortbycolumn_10.png)
-3. Nu när det visuella objektet är markerat kan vi välja *MonthOfYear*, i stället för standardinställningen (*MonthName*), så sorteras det visuella objektet i den ordning vi valt: efter månaden på året.
+3. Nu när det visuella objektet är valt kan vi välja **MonthOfYear** i stället för standardinställningen **MonthName**, så sorteras det visuella objektet i den ordning vi villa ha: efter månaden på året.
    
    ![Menyn Sortera efter kolumn](media/desktop-sort-by-column/sortbycolumn_11.png)
 
-Och sedan är du klar. Kom ihåg att du måste markera en kolumn i rutan **Fält** för knappen **Sortera efter kolumn** ska aktiveras.
 
-## <a name="getting-back-to-default-column-for-sorting"></a>Gå tillbaka till standardkolumnen för sortering
-Du kan sortera efter valfri kolumn men det kan finnas tillfällen när du vill att det visuella objektet ska återgå till dess standardsorteringskolumn. Inga problem. För ett visuellt objekt som har en vald sorteringskolumn (som vi såg tidigare vet vi att en vald sorteringskolumn visas med en gul markering på ellipsmenyn) öppnar du bara menyn **Sortera efter** och väljer kolumnen igen, så återställs standardsorteringskolumnen för visualiseringen.
+<!---
+This functionality is no longer active. Jan 2020
 
-Till exempel, här diagrammet vi visade tidigare:
+## Getting back to default column for sorting
+You can sort by any column you'd like, but there may be times when you want the visual to return to its default sorting column. No problem. For a visual that has a sort column selected, open the **More options** menu and select that column again, and the visualization returns to its default sort column.
 
-![Ursprunglig visualisering](media/desktop-sort-by-column/sortbycolumn_6.png)
+For example, here's our previous chart:
 
-När vi går tillbaka till menyn och väljer **SalesQuantity** igen, sorteras det visuella objektet i alfabetisk ordning efter **Tillverkare**, som du ser i följande bild.
+![Initial visualization](media/desktop-sort-by-column/sortbycolumn_6.png)
 
-![Standardsorteringsordning](media/desktop-sort-by-column/sortbycolumn_7.png)
+When we go back to the menu and select **SalesQuantity** again, the visual defaults to being ordered alphabetically by **Manufacturer**, as shown in the following image.
 
-Med så här många alternativ för att sortera dina visuella objekt är det lätt att bara skapa diagrammet eller bilden.
+![Default sort order](media/desktop-sort-by-column/sortbycolumn_7.png)
+
+With so many options for sorting your visuals, creating just the chart or image you want is easy.
+--->
 
 ## <a name="next-steps"></a>Nästa steg
 
 Följande artiklar kan också vara av intresse för dig:
 
 * [Använd visning av detaljerad information mellan rapporter i Power BI Desktop](desktop-cross-report-drill-through.md)
-* [Använda utsnitt i Power BI Desktop](visuals/power-bi-visualization-slicers.md)
+* [Utsnitt i Power BI](visuals/power-bi-visualization-slicers.md)
 

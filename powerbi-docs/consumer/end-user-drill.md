@@ -6,17 +6,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/17/2019
+ms.date: 02/18/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 21d663b2f29a8090e6cfb7013d16c739ef0a29b3
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 7c0c08e8056232fa7c60b20faf48b0137a19bc5f
+ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73851462"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77496418"
 ---
 # <a name="drill-mode-in-a-visual-in-power-bi"></a>Granskningsläge i ett visuellt objekt i Power BI
+
+[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
@@ -32,6 +34,7 @@ Datum är en unik typ av hierarki.  Rapportdesigners lägger ofta till datum-hie
 Är du osäker på vilka visuella Power BI-objekt som innehåller en hierarki? Hovra över ett visuellt objekt. Om du ser en kombination av dessa granskningskontroller längst upp har det visuella objektet en hierarki.
 
 ![Skärmbild av granskningsikonerna.](./media/end-user-drill/power-bi-drill-icons.png)  
+
 
 ## <a name="learn-how-to-drill-down-and-up"></a>Lär dig hur du ökar/minskar detaljnivån
 
@@ -116,7 +119,7 @@ En trädkarta som bara visar postnummer är inte användbar.  Så låt oss *expa
 
     ![Skärmbild av trädkartan som visar alla data för TN.](media/end-user-drill/power-bi-expand-two.png)
 
-1. Se till att ökning av detaljnivån fortfarande är aktiverat. ![Skärmbild av aktiverad ikon för ökad detaljnivå på/av.](./media/end-user-drill/power-bi-drill-icon2.png) och välj ikonen för att *expandera ned* ![Skärmbild av ikonen för att expandera ned.](./media/end-user-drill/power-bi-drill-icon6.png) Din trädkarta visar nu samma antal löv (rutor), men varje löv har ytterligare information. Istället för att bara visa stad och stat, visas nu även postnumret.
+1. Se till att ökning av detaljnivån fortfarande är aktiverat. ![Skärmbild av aktiverad ikon för ökad detaljnivå på/av.](./media/end-user-drill/power-bi-drill-icon2.png) och välj ikonen för att *expandera ned*![Skärmbild av ikonen för att expandera ned.](./media/end-user-drill/power-bi-drill-icon6.png) Din trädkarta visar nu samma antal löv (rutor), men varje löv har ytterligare information. Istället för att bara visa stad och stat, visas nu även postnumret.
 
     ![Skärmbild av det visuella objektet med visning av stad, stat och postnummer.](./media/end-user-drill/power-bi-expand-three.png)
 
@@ -141,7 +144,9 @@ Observera att summorna är desamma för **Stad**, **Postnummer** och **Namn**. D
 
 
 ## <a name="considerations-and-limitations"></a>Överväganden och begränsningar
-Som standard filtreras inte andra visuella objekt i rapporten när du ändrar detaljnivån. Rapportdesignern kan dock ändra detta standardbeteende. Medan du ändrar detaljnivå ser du om de andra visuella objekten på sidan korsfiltreras eller korsmarkeras.
+- Som standard filtreras inte andra visuella objekt i rapporten när du ändrar detaljnivån. Rapportdesignern kan dock ändra detta standardbeteende. Medan du ändrar detaljnivå ser du om de andra visuella objekten på sidan korsfiltreras eller korsmarkeras.
+
+- Du behöver en Power BI Pro- eller Premium-licens för att kunna visa en rapport som har delats med dig. [Vilken licens har jag?](end-user-license.md)
 
 
 ## <a name="next-steps"></a>Nästa steg

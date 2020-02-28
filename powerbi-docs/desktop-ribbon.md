@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/11/2019
+ms.date: 02/20/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 0f7debd49541679b2ec5d41eaa2307c50bf170ce
-ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
+ms.openlocfilehash: df8c84b5b7baf55a32e07e3e48cb02317fdf7875
+ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74016145"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77527487"
 ---
 # <a name="use-the-updated-ribbon-in-power-bi-desktop-preview"></a>Använda det uppdaterade menyfliksområdet i Power BI Desktop (förhandsversion)
 
@@ -51,7 +51,18 @@ Dessa fördelar kan grupperas i följande kategorier:
 
 * **Ett menyfliksområde på en rad tar mindre plats när det är komprimerat** – En annan fördel med det uppdaterade menyfliksområdet är möjligheten att komprimera själva menyfliksområdet till en enda rad, som dynamiskt visar menyobjekt baserat på ditt sammanhang. 
 
-    ![Bättre teman](media/desktop-ribbon/desktop-ribbon-06.png)
+    ![Dolt menyfliksområde](media/desktop-ribbon/desktop-ribbon-06.png)
+
+* **Tangenttips för att navigera och välja knappar** – för att navigera i menyfliksområdet kan du trycka på **Alt + Windows-tangenten** för att aktivera tangenttips. När du har aktiverat funktionen kan du trycka på de knappar som visas på tangentbordet för att navigera.
+
+    ![Tangenttips](media/desktop-ribbon/desktop-ribbon-07.png)
+
+* **Anpassade formatsträngar** – förutom att ställa in anpassade formatsträngar i fönstret *Egenskaper* kan du också ställa in dem i menyfliksområdet. Välj det mått eller den kolumn du vill anpassa så visas den sammanhangsbaserade fliken **Måttverktyg** eller **Kolumnverktyg** beroende på ditt val. Du kan ange din anpassade formatsträng direkt i listrutan i formateringsområdet på fliken.
+
+    ![Anpassade formatsträngar](media/desktop-ribbon/desktop-ribbon-08.png)
+
+* **Hjälpmedel** – rubrikfältet, menyfliksområdet och Arkiv-menyn är tillgängliga via hjälpmedel. Tryck på CTRL + F6 för att navigera till menyfliksområdet. Väl där kan du använda **Tabb** till att växla mellan de övre och nedre staplarna och använda piltangenterna för att flytta mellan element.
+
 
 Förutom de synliga ändringarna innebär ett uppdaterat menyfliksområde också att vi kan göra uppdateringar framöver av Power BI Desktop och dess menyfliksområde, som till exempel följande:
 

@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 01/15/2020
 ms.author: painbar
-ms.openlocfilehash: 58b2f96b069815af448352b3b54875dc4d6b27ee
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: b7a02261e6e00c01befa8ba7716b9e0d132323ea
+ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76538277"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77496757"
 ---
 # <a name="remotely-configure-power-bi-app-using-mobile-device-management-mdm-tool"></a>Konfigurera Power BI-appen via fjärranslutning med verktyget för hantering av mobilenheter (MDM)
 
@@ -51,7 +51,7 @@ Power BI-appen för Android ger administratörer möjlighet att konfigurera inte
 | Nyckel | Typ | Värden | Beskrivning |
 |---|---|---|---|
 | com.microsoft.powerbi.mobile.ReportTapInteraction | Sträng |  <nobr>enkelknackning</nobr><br><nobr>dubbelknackning</nobr> | Konfigurera om ett tryck på visuellt objekt även gör ett datapunktsval. |
-| ccom.microsoft.powerbi.mobile.RefreshAction | Sträng |  <nobr>dra nedåt för att uppdatera</nobr><br>knapp | Konfigurera om användaren ska ha en knapp för att uppdatera rapporten eller om denne ska använda dra nedåt för att uppdatera. |
+| com.microsoft.powerbi.mobile.RefreshAction | Sträng |  <nobr>dra nedåt för att uppdatera</nobr><br>knapp | Konfigurera om användaren ska ha en knapp för att uppdatera rapporten eller om denne ska använda dra nedåt för att uppdatera. |
 | com.microsoft.powerbi.mobile.FooterAppearance | Sträng |  dockad<br>dynamisk | Konfigurera om rapportfoten ska vara fäst längst ned i rapporten eller döljas automatiskt. |
 
 ## <a name="deploying-app-configuration-settings"></a>Distribuera konfigurationsinställningar för appen

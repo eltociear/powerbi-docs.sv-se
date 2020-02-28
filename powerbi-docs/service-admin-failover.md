@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 09/09/2019
+ms.date: 02/20/2020
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 24867d231cca0135c09119f4b885b393cb2b8dd8
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 3dd50d4f57b3146135cde5e91062ed3b2a0eecc1
+ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74699071"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77527348"
 ---
 # <a name="power-bi-high-availability-failover-and-disaster-recovery-faq"></a>Vanliga frågor och svar om hög tillgänglighet, redundans och haveriberedskap i Power BI
 
@@ -53,7 +53,10 @@ Ett meddelande publiceras på Power BI-supportsidan ([https://powerbi.microsoft.
 
 ## <a name="how-long-does-it-take-power-bi-to-fail-over"></a>Hur lång tid tar det för Power BI att redundansväxla?
 
-När ett beslut att redundansväxla fattas kan det ta upp till 60 minuter för en redundansinstans att bli tillgänglig.
+När det har fastställts att en redundansväxling krävs tar det cirka 15 minuter innan Power BI fungerar igen. Tiden för att fastställa att en redundansväxling krävs varierar beroende på vilket scenario som slutat fungera. 
+
+När en redundansväxling har utförts använder Power BI Azure Storage GEO-replikering för att utföra redundansväxlingen. Sådana replikeringar har vanligtvis en återställningstid på 15 minuter, men [Azure Storage garanterar inte denna tidsram](https://docs.microsoft.com/azure/storage/common/storage-redundancy) i ett serviceavtal, och därför kan inte heller Power BI garantera någon tidsram. 
+
 
 ## <a name="when-does-my-power-bi-instance-return-to-the-original-region"></a>När återgår min Power BI-instans till den ursprungliga regionen?
 

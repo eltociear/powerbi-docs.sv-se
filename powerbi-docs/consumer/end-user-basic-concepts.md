@@ -8,21 +8,25 @@ ms.service: powerbi
 ms.custom: seodec18
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/16/2019
+ms.date: 02/18/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 7513479d14b57e47b30d2cd7ac9cc4acfe69d075
-ms.sourcegitcommit: 17aad73762579d6822383b27b96b1b63f87f2d6f
+ms.openlocfilehash: 2c8a8356fe20136d0325efe51934a7db3d4b113e
+ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77260118"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77496883"
 ---
 # <a name="basic-concepts-for-the-power-bi-service-consumers"></a>Grundläggande begrepp för användare av Power BI-tjänsten
+
+[!INCLUDE[consumer-appliesto-ynnm](../includes/consumer-appliesto-ynnm.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 I den här artikeln förutsätts att du redan har läst [översikten över Power BI](../fundamentals/power-bi-overview.md) och har identifierat dig själv som [Power BI **-_användare_** ](end-user-consumer.md). Användare får Power BI-innehåll såsom instrumentpaneler och rapporter från kollegor. Användare använder Power BI-tjänsten, som är den webbplatsbaserade versionen av Power BI.
+
+För att ta emot innehåll från andra behöver du en Power BI Pro-användarlicens eller en Power BI Premium-kapacitetslicens. [Leta reda på din licenstyp](end-user-license.md)
 
 Du kommer utan tvekan att höra talas om ”Power BI Desktop” eller bara ”Desktop”. Det är det fristående verktyget som används av *designers* som skapar och delar instrumentpaneler och rapporter med dig. Det är viktigt att veta att det även finns andra Power BI-verktyg. Om du är användare kommer du bara att arbeta med Power BI-tjänsten. Den här artikeln gäller endast för Power BI-tjänsten.
 
@@ -179,6 +183,9 @@ _______________________________________________________
 ## <a name="apps"></a>Appar
 
 Dessa samlingar av instrumentpaneler och rapporter organiserar relaterat innehåll tillsammans i ett enda paket. Power BI-*designers* skapar och delar dem med enskilda användare, grupper, en hel organisation eller allmänheten. Som användare kan du vara säker på att du och dina kolleger arbetar med samma data, en enskild betrodd version av sanningen.
+
+> [!NOTE]
+> För att använda appar behöver du en Power BI Pro- eller Premium-licens. 
 
 ![Skärmbild av appar har valts i det vänstra fönstret i Power BI.](media/end-user-basic-concepts/power-bi-apps.png)
 

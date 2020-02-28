@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/29/2020
+ms.date: 02/13/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 90721b059958e59cfd74f9ba1d0d25617a7438e6
-ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
+ms.openlocfilehash: d8432ae10afab6cbf12c017a8f315fd55825212d
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76889292"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77427241"
 ---
 # <a name="use-directquery-in-power-bi-desktop"></a>Använda DirectQuery i Power BI Desktop
 När du ansluter till din datakälla i *Power BI Desktop* kan du alltid importera en kopia av data till Power BI Desktop. En annan metod är tillgänglig för vissa datakällor: att ansluta direkt till datakällan med DirectQuery.
@@ -46,8 +46,6 @@ Det finns några fördelar med att använda DirectQuery:
 
 ## <a name="limitations-of-directquery"></a>Begränsningar hos DirectQuery
 Det finns några begränsningar när du använder DirectQuery:
-
-- Alla tabeller måste komma från samma databas, om du inte använder [sammansatta modeller](desktop-composite-models.md).
 
 - Om frågan i **frågeredigeraren** är alltför komplex uppstår ett fel. Du kan lösa felet genom att antingen ta bort det problematiska steget i **frågeredigeraren** eller *importera* data istället för att använda DirectQuery. För flerdimensionella källor som SAP Business Warehouse finns det ingen **frågeredigerare**.
 
@@ -94,7 +92,7 @@ Om den datakälla du använder inte behöver en **lokal datagateway** (**Azure S
 
 4. Lägg till autentiseringsuppgifterna. Annars inträffar ett fel när du öppnar en publicerad rapport eller utforskar en datamängd som har skapats via en DirectQuery-anslutning.
 
-Om du vill skapa en dataanslutning för andra datakällor än **Azure SQL Database**, **Azure SQL Data Warehouse** eller **Redshift** som använder DirectQuery måste du installera en **lokal datagateway** och registrera datakällan. Mer information finns i [Vad är en lokal datagateway?](service-gateway-onprem.md)
+Om du vill skapa en dataanslutning för andra datakällor än **Azure SQL Database**, **Azure SQL Data Warehouse**, **Redshift** eller **Snowflake Data Warehouse** som använder DirectQuery måste du installera en **lokal datagateway** och registrera datakällan. Mer information finns i [Vad är en lokal datagateway?](service-gateway-onprem.md)
 
 ## <a name="next-steps"></a>Nästa steg
 Mer information om DirectQuery finns i följande resurser:

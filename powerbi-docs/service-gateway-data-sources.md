@@ -6,16 +6,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 07/15/2019
+ms.date: 02/21/2020
 ms.author: arthii
 ms.custom: seodec18
 LocalizationGroup: Gateways
-ms.openlocfilehash: 2665e33d5f268bf8037634406aca819c23f3513c
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 15b3236741eb19d9f08601f9503e0380f54a8d63
+ms.sourcegitcommit: d42fbe235b6cf284ecc09c2a3c005459cec11272
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74698197"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77558701"
 ---
 # <a name="manage-data-sources"></a>Hantera datakällor
 
@@ -45,11 +45,24 @@ De flesta hanteringsåtgärder för datakällor kan även utföras med hjälp av
 
 5. För SQL Server väljer du en **Autentiseringsmetod** som är **Windows** eller **Grundläggande** (SQL-autentisering). Om du väljer **Grundläggande** ska du ange autentiseringsuppgifterna för datakällan.
 
-6. Under **Avancerade inställningar** kan du som alternativ konfigurera [sekretessnivån](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540) för datakällan (gäller inte för [DirectQuery](desktop-directquery-about.md)).
+6. Under **Avancerade inställningar** kan du konfigurera [Enkel inloggning (SSO)](service-gateway-sso-overview.md) för din datakälla. 
+
+    ![avancerade inställningar](media/service-gateway-data-sources/advanced-settings-02.png)
+
+Du kan antingen ange **Använd SSO via Kerberos för DirectQuery-frågor** eller **Använd SSO via Kerberos för DirectQuery- och importfrågor** för DirectQuery-baserade rapporter och **Använd SSO via Kerberos för DirectQuery- och importfrågor** för uppdateringsbaserade rapporter.
+
+Om du använder **Använd SSO via Kerberos för DirectQuery-frågor** och du använder den här datakällan för en DirectQuery-baserad rapport så används användaren som är mappad till den (Azure) Active Directory-användare som loggar in i Power BI-tjänsten. För uppdateringsbaserade rapporter används de autentiseringsuppgifter du anger i fälten **Användarnamn** och **Lösenord**.
+
+Om du använder **Använd SSO via Kerberos för DirectQuery- och importfrågor** behöver du inte ange några autentiseringsuppgifter. Om den här datakällan används för en DirectQuery-baserad rapport så används användaren som är mappad till den (Azure) Active Directory-användare som loggar in i Power BI-tjänsten.  För uppdateringsbaserade rapporter används säkerhetskontexten för datamängdens ägare
+
+> [!NOTE]
+>Enkel inloggning för importfrågor är bara tillgängligt för listan med SSO-datakällor som använder [Kerberos-begränsad delegering](service-gateway-sso-kerberos.md).
+
+7. Under **Avancerade inställningar** kan du som alternativ konfigurera [sekretessnivån](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540) för datakällan (gäller inte för [DirectQuery](desktop-directquery-about.md)).
 
     ![Avancerade inställningar](media/service-gateway-data-sources/advanced-settings.png)
 
-7. Välj **Lägg till**. Du ser *Anslutningen lyckades* om processen lyckas.
+8. Välj **Lägg till**. Du ser *Anslutningen lyckades* om processen lyckas.
 
     ![Anslutningen lyckades](media/service-gateway-data-sources/connection-successful.png)
 

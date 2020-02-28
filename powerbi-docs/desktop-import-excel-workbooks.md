@@ -1,70 +1,76 @@
 ---
 title: Importera Excel-arbetsböcker till Power BI Desktop
-description: Importera Excel-arbetsböcker till Power BI Desktop
+description: Du kan enkelt importera Excel-arbetsböcker som innehåller Power Query-frågor, Power Pivot-modeller och Power View-kalkylblad till Power BI Desktop.
 author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 01/22/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 96ec6349080547688914360f77cbfb2c12cb1fd8
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 0a9880eea0511b942c3c7310a059caf5cd9415e1
+ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878156"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77496793"
 ---
 # <a name="import-excel-workbooks-into-power-bi-desktop"></a>Importera Excel-arbetsböcker till Power BI Desktop
-Med **Power BI Desktop** kan du enkelt importera Excel-arbetsböcker som innehåller Power Query-frågor, Power Pivot-modeller och Power View-kalkylblad till Power BI Desktop. Rapporter och visualiseringar skapas automatiskt utifrån Excel-arbetsboken och när de importerats, kan du fortsätta att förbättra och förfina rapporterna med hjälp av Power BI Desktop med hjälp av befintliga funktioner och nya funktioner som lanseras med varje månatlig Power BI Desktop-uppdatering.
-
-I framtiden är planen att tillhandahålla ytterligare kommunikation mellan Excel och Power BI Desktop (till exempel import/export). Den aktuella möjligheten att importera arbetsböcker till Power BI Desktop låter befintliga Excel-användare komma igång med Power BI Desktop.
+Med Power BI Desktop kan du enkelt importera Excel-arbetsböcker som innehåller Power Query-frågor, Power Pivot-modeller och Power View-kalkylblad till Power BI Desktop. Power BI Desktop skapar automatiskt rapporter och visualiseringar baserat på Excel-arbetsboken. Efter importen kan du fortsätta att förbättra och förfina rapporterna i Power BI Desktop med hjälp av befintliga funktioner och nya funktioner som lanseras med varje månatlig Power BI Desktop-uppdatering.
 
 ## <a name="how-do-i-import-an-excel-workbook"></a>Hur gör jag för att importera en Excel-arbetsbok?
-Importera en arbetsbok från Power BI Desktop genom att välja **Fil -\> Import -\> Excel-arbetsboksinnehåll**.
+1. Om du vill importera en Excel-arbetsbok till Power BI Desktop väljer du **Arkiv** > **Importera** > **Power Query, Power Pivot, Power View**.
 
-![](media/desktop-import-excel-workbooks/importexceltopbi_1.png)
+   ![Importera Excel-arbetsbok](media/desktop-import-excel-workbooks/importexceltopbi_1.png)
 
-Ett fönster visas som låter dig välja arbetsbok att importera. Det finns för tillfället ingen begränsning för storlek eller antal objekt i arbetsboken, men större arbetsböcker tar längre tid för Power BI Desktop att analysera och importera.
 
-> [!NOTE]
-> Om du vill läsa in eller importera Excel-filer från **delade OneDrive för företag**-mappar eller från **Office 365-grupp**mappar, använder du URL:en för Excel-filen och anger den i **webb**datakällan i Power BI Desktop. Det finns några steg du måste följa för att korrekt formatera **OneDrive för företag**-URL:en så kolla in [Använd OneDrive för företag-länkar i Power BI Desktop](desktop-use-onedrive-business-links.md) för mer information och korrekt antal steg.
-> 
-> 
+2. Välj en Excel-arbetsbok att importera från fönstret **Öppna**. 
 
-När en arbetsbok har valts, analyserar Power BI Desktop arbetsboken och konverterar den till en Power BI Desktop-fil (.pbix). Den här åtgärden är en engångshändelse. När Power BI Desktop-filen har skapats med de här stegen, är den inte beroende av den ursprungliga Excel-arbetsboken och kan modifieras eller ändras (och sparas och delas) utan att påverka den ursprungliga arbetsboken.
+   Det finns för tillfället ingen begränsning angående storlek eller antal objekt i arbetsboken, men större arbetsböcker tar längre tid för Power BI Desktop att analysera och importera.
 
-![](media/desktop-import-excel-workbooks/importexceltopbi_2.png)
+   > [!NOTE]
+   > Om du vill läsa in eller importera Excel-filer från delade OneDrive för företag-mappar eller från Office 365-gruppmappar använder du webbadressen till Excel-filen och anger den som webbdatakälla i Power BI Desktop. Du måste utföra några steg för att formatera webbadressen till OneDrive för företag på rätt sätt, läs mer om de här stegen i [Använd OneDrive för företag-länkar i Power BI Desktop](desktop-use-onedrive-business-links.md).
+   > 
+   > 
 
-När importen har slutförts, visas en **sammanfattnings**sida som beskriver de objekt som konverterats och listar även objekt som inte kunde importeras.
+3. Välj **Starta** i dialogrutan Importera som visas.
 
-![](media/desktop-import-excel-workbooks/importexceltopbi_3.png)
+   ![Importera innehåll från en Excel-arbetsbok](media/desktop-import-excel-workbooks/import-excel-power-bi-5.png)
 
-När du väljer **Stäng**, läses rapporten in i Power BI Desktop. Följande bild visar Power BI Desktop efter en Excel-arbetsbok har importerats: Power BI Desktop läste automatiskt in rapporten utifrån arbetsbokens innehåll.
 
-![](media/desktop-import-excel-workbooks/importexceltopbi_4.png)
+   Power BI Desktop analyserar arbetsboken och konverterar den till en Power BI Desktop-fil (.pbix). Den här åtgärden är en engångshändelse. När Power BI Desktop-filen har skapats med de här stegen är den inte beroende av den ursprungliga Excel-arbetsboken och kan modifieras, sparas och delas utan att den ursprungliga arbetsboken påverkas.
 
-Nu när arbetsboken har importerats kan du fortsätta arbeta med rapporten. Du kan till exempel skapa nya visualiseringar, lägga till data, eller skapa nya rapportsidor. Med de funktioner som ingår i Power BI Desktop.
+   När importen har slutförts visas en sammanfattningssida som beskriver de objekt som har konverterats, och eventuella objekt som inte kunde importeras.
+
+   ![Importsammanfattningssida](media/desktop-import-excel-workbooks/importexceltopbi_3.png)
+
+4. Välj **Stäng**. 
+
+   Power BI Desktop importerar Excel-arbetsboken och läser in en rapport baserat på arbetsbokens innehåll.
+
+   ![Inläst importrapport](media/desktop-import-excel-workbooks/importexceltopbi_4.png)
+
+När arbetsboken har importerats kan du fortsätta att arbeta med rapporten. Du kan skapa nya visualiseringar, lägga till data eller skapa nya rapportsidor genom att använda någon av funktionerna i Power BI Desktop.
 
 ## <a name="which-workbook-elements-are-imported"></a>Vilka arbetsbokselement importeras?
 Power BI Desktop kan importera följande element, som vanligtvis kallas *objekt*, i Excel.
 
 | Objekt i Excel-arbetsboken | Slutresultatet i Power BI Desktop-filen |
 | --- | --- |
-| Power Query-frågor |Alla Power Query-frågor från Excel konverteras till frågor i Power BI Desktop. Om det fanns frågegrupper definierade i Excel-arbetsboken, replikeras samma organisation i Power BI Desktop. Alla frågor har lästs in om de inte har ställts in på Skapa enbart anslutning i Excel. Inläsningsbeteendet kan anpassa från dialogrutan **Egenskaper** i fliken **Start** i **Frågeredigeraren** i Power BI Desktop. |
-| Power Pivot externa dataanslutningar |Alla Power Pivot externa dataanslutningar kommer att konverteras till frågor i Power BI Desktop. |
-| Länkade tabeller eller tabeller för den aktuella arbetsboken |Om det finns en kalkylbladstabell i Excel som är länkad till datamodellen eller länkas till en fråga (med hjälp av *Från tabell* eller funktionen *Excel.CurrentWorkbook()* i M), visas följande alternativ: <ol><li>Importera tabellen till Power BI Desktop-filen. Den här tabellen är en engångs-ögonblicksbild av data. Därefter kan du inte redigera data i tabellen i Power BI Desktop. Det finns en storleksgräns på 1 miljon tecken (totalt, genom att kombinera alla kolumnrubriker och celler) för tabeller som skapats med det här alternativet.</li><li>Behåll en anslutning till den ursprungliga arbetsboken. Du kan även behålla en anslutning till den ursprungliga Excel-arbetsboken så hämtar Power BI Desktop det senaste innehållet i den här tabellen med varje uppdatering precis som andra frågor som skapas mot en Excel-arbetsbok i Power BI Desktop.</li></ul> |
-| Datamodelldata för beräknade kolumner, mått, KPI:er, datakategorier och relationer |Dessa datamodellobjekt konverteras till motsvarande objekt i Power BI Desktop. Observera att det finns vissa datakategorier som inte är tillgängliga i Power BI Desktop ännu, till exempel **Bild**. I dessa fall återställs datakategoriinformationen för kolumnerna i fråga. |
+| Power Query-frågor |Alla Power Query-frågor från Excel konverteras till frågor i Power BI Desktop. Om det finns frågegrupper definierade i Excel-arbetsboken replikeras samma organisation i Power BI Desktop. Alla frågor läses in om de inte har ställts in på **Skapa enbart anslutning** i Excel-dialogrutan **Importera data**. Du kan anpassa inläsningsbeteendet genom att välja **Egenskaper** på fliken **Start** i Frågeredigeraren i Power BI Desktop. |
+| Externa Power Pivot-dataanslutningar |Alla externa Power Pivot-dataanslutningar konverteras till frågor i Power BI Desktop. |
+| Länkade tabeller eller aktuella arbetsbokstabeller |Om det finns en kalkylbladstabell i Excel som är länkad till datamodellen, eller till en fråga (med hjälp av *From Table* eller funktionen *Excel.CurrentWorkbook()* i M), visas följande alternativ: <ol><li><b>Importera tabellen till Power BI Desktop-filen</b>. Den här tabellen är en ögonblicksbild av data, efteråt är data skrivskyddade i tabellen i Power BI Desktop. Det finns en storleksgräns på 1 miljon tecken (totalt för alla kolumnrubriker och celler) för tabeller som skapas med det här alternativet.</li><li><b>Behåll en anslutning till den ursprungliga arbetsboken</b>. Du kan även behålla en anslutning till den ursprungliga Excel-arbetsboken så hämtar Power BI Desktop det senaste innehållet i den här tabellen med varje uppdatering precis som andra frågor som skapas mot en Excel-arbetsbok i Power BI Desktop.</li></ul> |
+| Beräknade kolumner, mått, KPI:er, datakategorier och relationer i datamodellen |De här datamodellobjekten konverteras till motsvarande objekt i Power BI Desktop. Observera att det finns vissa datakategorier som inte är tillgängliga i Power BI Desktop, som Bild. I de här fallen återställs datakategoriinformationen för kolumnerna. |
 | Power View-kalkylblad |En ny rapportsida skapas för varje Power View-kalkylblad i Excel. Namnet och sorteringen för dessa rapportsidor matchar den ursprungliga Excel-arbetsboken. |
 
 ## <a name="are-there-any-limitations-to-importing-a-workbook"></a>Finns det några begränsningar för import av en arbetsbok?
-Det finns några begränsningar för import av en arbetsbok till Power BI Desktop, som anges i följande lista:
+Det finns några begränsningar när du importerar en arbetsbok till Power BI Desktop:
 
-* **Externa anslutningar till Analysis Services-tabellmodeller:** I Excel 2013 är det möjligt att skapa en anslutning till SQL Server Analysis Services-tabellmodeller och skapa Power View-rapporter ovanpå dessa modeller utan att behöva importera data. Den här typen av anslutning stöds inte för tillfället som en del av att importera Excel-arbetsböcker till Power BI Desktop. Under tiden måste du återskapa dessa externa anslutningar i Power BI Desktop.
-* **Hierarkier:** Den här typen av datamodellobjekt stöds för närvarande inte i Power BI Desktop. Därför ignoreras hierarkier som en del av att importera en Excel-arbetsbok till Power BI Desktop.
+* **Externa anslutningar till SQL Server Analysis Services-tabellmodeller:** I Excel 2013 kan du skapa en anslutning till SQL Server Analysis Services-tabellmodeller och skapa Power View-rapporter ovanpå dessa modeller utan att behöva importera data. Den här typen av anslutning stöds för närvarande inte när du importerar Excel-arbetsböcker till Power BI Desktop. Under tiden måste du återskapa dessa externa anslutningar i Power BI Desktop.
+* **Hierarkier:** Den här typen av datamodellobjekt stöds för närvarande inte i Power BI Desktop. Därför ignoreras hierarkier när du importerar Excel-arbetsböcker till Power BI Desktop.
 * **Binära datakolumner:** Den här typen av datamodellobjekt stöds för närvarande inte i Power BI Desktop. Binära datakolumner tas bort från den resulterande tabellen i Power BI Desktop.
-* **Power View-element som inte stöds:** Det finns några funktioner i Power View som inte är tillgängliga i Power BI Desktop, till exempel teman eller vissa typer av visualiseringar (punktdiagram med uppspelningsaxel, beteenden för att öka detaljnivå, osv.). Dessa visualiseringar som inte stöds, resulterar i meddelanden om *visualiseringen stöds inte* på deras motsvarande platser i Power BI Desktop-rapporten, vilka du kan ta bort eller konfigurera om efter behov.
-* **Namngivna områden som använder** ***från tabellen*** **i Power Query eller** ***Excel.CurrentWorkbook*** **i M:** Det finns inte stöd för att importera dessa namngivna områdesdata till Power BI Desktop för närvarande, men det är en planerad uppdatering för Power BI Desktop. För närvarande laddas dessa namngivna områden till Power BI Desktop som en anslutning till den externa Excel-arbetsboken.
-* **PowerPivot till SSRS:** Externa PowerPivot-anslutningar till SQL Server Reporting Services (SSRS) stöds inte för närvarande, eftersom datakällan inte är tillgänglig i Power BI Desktop för tillfället.
+* **Power View-element som inte stöds:** Det finns några funktioner i Power View som inte är tillgängliga i Power BI Desktop, som teman och vissa typer av visualiseringar (som punktdiagram med uppspelningsaxel och beteenden för att öka detaljnivå). Dessa visualiseringar som inte stöds, resulterar i meddelanden om *visualiseringen stöds inte* på deras motsvarande platser i Power BI Desktop-rapporten, vilka du kan ta bort eller konfigurera om efter behov.
+* **Namngivna områden som använder** ***From Table*** **i Power Query eller** ***Excel.CurrentWorkbook*** **i M:** För närvarande kan du inte importera de här typerna av namngivna områdesdata till Power BI Desktop, men det är en planerad uppdatering. För närvarande laddas dessa namngivna områden till Power BI Desktop som en anslutning till den externa Excel-arbetsboken.
+* **PowerPivot till SSRS:** Externa PowerPivot-anslutningar till SQL Server Reporting Services (SSRS) stöds inte för närvarande eftersom datakällan inte är tillgänglig i Power BI Desktop.
 

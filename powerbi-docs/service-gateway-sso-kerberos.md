@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 12/03/2019
+ms.date: 02/20/2020
 LocalizationGroup: Gateways
-ms.openlocfilehash: 889fbce483f839147677789c73d826fa23542731
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: aacab1541f336ed12c36dab8243d0096c9a6ed19
+ms.sourcegitcommit: d42fbe235b6cf284ecc09c2a3c005459cec11272
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "75000122"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77558647"
 ---
 # <a name="configure-kerberos-based-sso-from-power-bi-service-to-on-premises-data-sources"></a>Konfigurera Kerberos-baserad enkel inloggning från Power BI-tjänsten till lokala datakällor
 
@@ -246,11 +246,17 @@ SAP HANA och SAP BW har ytterligare datakällsspecifika konfigurationskrav och f
 
 ## <a name="run-a-power-bi-report"></a>Köra en Power BI-rapport
 
-När du har slutfört alla konfigurationssteg kan du använda sidan **Hantera gateway** i Power BI till att konfigurera datakällan för SSO-användning. Om du har flera gatewayer ska du välja den gateway som du har konfigurerat för enkel inloggning med Kerberos. Under **Avancerade inställningar** för datakällan kontrollerar du sedan att kryssrutan **Använd enkel inloggning via Kerberos för DirectQuery-frågor** är markerad.
+När du har slutfört alla konfigurationssteg kan du använda sidan **Hantera gateway** i Power BI till att konfigurera datakällan för SSO-användning. Om du har flera gatewayer ska du välja den gateway som du har konfigurerat för enkel inloggning med Kerberos. Under **Avancerade inställningar** för datakällan ser du sedan till att **Använd SSO via Kerberos för DirectQuery-frågor** eller **Använd SSO via Kerberos för DirectQuery och importera frågor** är markerat för DirectQuery-baserade rapporter och **Använd SSO via Kerberos för DirectQuery och importera frågor** är markerat för uppdateringsbaserade rapporter.
 
-![Alternativ under Avancerade inställningar](media/service-gateway-sso-kerberos/advanced-settings.png)
+![Alternativ under Avancerade inställningar](media/service-gateway-sso-kerberos/advanced-settings-02.png)
 
- Publicera en DirectQuery-baserad rapport från Power BI Desktop. Den här rapporten måste använda data som är tillgängliga för användaren som är mappad till den (Azure) Active Directory-användare som loggar in i Power BI-tjänsten. Du måste använda DirectQuery i stället för import på grund av hur uppdateringen fungerar. När gatewayen uppdaterar importbaserade rapporter används de autentiseringsuppgifter du angav i fälten **Användarnamn** och **Lösenord** när du skapade datakällan. Med andra ord används *inte* enkel inloggning med Kerberos. När du publicerar ska du välja den gateway du har konfigurerat för enkel inloggning om du har flera gatewayer. Nu kan du uppdatera rapporten i Power BI-tjänsten eller skapa en ny rapport baserat på den publicerade datamängden.
+Om du publicerar en DirectQuery-baserad rapport från Power BI Desktop och mappar den till en datakälla som har **Använd SSO via Kerberos för DirectQuery-frågor** eller **Använd SSO via Kerberos för DirectQuery och importera frågor** markerad använder den här rapporten data som är tillgängliga för den användare som är mappad till Active Directory-användaren i Azure som loggar in i Power BI-tjänsten.
+
+Om du publicerar en uppdateringsbaserad rapport från Power BI Desktop och mappar den till en datakälla som har **Använd SSO via Kerberos för DirectQuery och importera frågor** markerat behöver du inte heller ange några autentiseringsuppgifter. Uppdateringen körs under datamängdens ägares Active Directory-kontext.
+
+Om du däremot mappar den till en datakälla där **Använd SSO via Kerberos för DirectQuery och importera frågor** inte är markerat använder uppdateringen de autentiseringsuppgifter du angav i fälten **Användarnamn** och **Lösenord** när du skapade datakällan. Med andra ord används *inte* enkel inloggning med Kerberos. 
+
+ När du publicerar ska du välja den gateway du har konfigurerat för enkel inloggning om du har flera gatewayer. 
 
 Den här konfigurationen fungerar i de flesta fall. Med Kerberos kan det dock förekomma olika konfigurationer beroende på din miljö. Om rapporten inte kan läsas in ska du kontakta domänadministratören för att undersöka saken vidare. Om din datakälla är SAP BW kan du läsa felsökningsavsnitten på de datakällsspecifika konfigurationssidorna för [CommonCryptoLib](service-gateway-sso-kerberos-sap-bw-commoncryptolib.md#troubleshooting) och [gx64krb5/gsskrb5](service-gateway-sso-kerberos-sap-bw-gx64krb.md#troubleshooting), beroende på vilket SNC-bibliotek du har valt.
 

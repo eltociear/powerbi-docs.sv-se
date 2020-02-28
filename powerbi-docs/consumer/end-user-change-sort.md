@@ -6,21 +6,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 01/29/2020
+ms.date: 02/19/2020
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 76370e2b633e21674ba878e70b5ecfc333453c96
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 1a59618ea27944314465d8e08d5f0c249c3bed0b
+ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76889223"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77496481"
 ---
 # <a name="change-how-a-chart-is-sorted-in-a-power-bi-report"></a>Ändra hur ett diagram sorteras i en Power BI-rapport
 
-
-
-[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
 
 > [!IMPORTANT]
@@ -32,7 +30,7 @@ Du kan inte sortera visuella objekt på en instrumentpanel, men i en Power BI-ra
 
 ## <a name="get-started"></a>Kom igång
 
-Kom igång genom att välja valfritt visuellt rapportobjekt och sedan **Fler åtgärder** (...).  Det finns tre sorteringsalternativ: **Sortera fallande**, **Sortera stigande** och **Sortera efter**. 
+Börja med att öppna valfri rapport som har delats med dig. Välj ett visuellt objekt (som kan sorteras) och välj **Fler åtgärder** (...).  Det finns tre sorteringsalternativ: **Sortera fallande**, **Sortera stigande** och **Sortera efter**. 
     
 
 ![liggande diagram sorterat alfa till X-axeln](media/end-user-change-sort/power-bi-more-actions.png)
@@ -69,9 +67,9 @@ Ibland kan du vilja sortera ditt visuella objekt efter ett annat fält (som inte
 
 Det är bara den som designat rapporten som kan göra de här ändringarna åt dig. Du hittar kontaktuppgifter till *designern* genom att välja rapportnamnet i rubrikfältet.
 
-Om du är *designer* och har redigeringsbehörigheter till innehållet, så läs [Sortera efter kolumn i Power BI Desktop](../desktop-sort-by-column.md) om du vill veta mer om hur man uppdaterar datamängden och aktiverar den här typen av sortering.
-
 ![Listruta som visar kontaktuppgifter](media/end-user-change-sort/power-bi-contact.png)
+
+Om du är *designer* och har redigeringsbehörigheter till innehållet, så läs [Sortera efter kolumn i Power BI Desktop](../desktop-sort-by-column.md) om du vill veta mer om hur man uppdaterar datamängden och aktiverar den här typen av sortering.
 
 ## <a name="next-steps"></a>Nästa steg
 Du hittar mer i [Visualiseringar i Power BI-rapporter](end-user-visualizations.md).

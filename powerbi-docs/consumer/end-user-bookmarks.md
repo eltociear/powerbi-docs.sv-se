@@ -5,21 +5,23 @@ author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/31/2019
+ms.date: 02/18/2020
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: d5816c4080340b3ff5f29f6000fd203e1a2dedfd
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 5f197f2c2ca85673452a10986f19e26c5802c739
+ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73852265"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77496672"
 ---
 # <a name="what-are-bookmarks"></a>Vad är bokmärken?
 
+[!INCLUDE[consumer-appliesto-ynnm](../includes/consumer-appliesto-ynnm.md)]
+
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-Bokmärken registrerar den aktuella konfigurerade vyn för en rapportsida, inklusive filter, utsnitt och tillståndet för visuella objekt. När du väljer ett bokmärke går Power BI tillbaka till den vyn. Det finns två typer av bokmärken – sådana som du skapar själv och sådana som skapas av *rapportdesigners*.
+Bokmärken registrerar den aktuella konfigurerade vyn för en rapportsida, inklusive filter, utsnitt och tillståndet för visuella objekt. När du väljer ett bokmärke går Power BI tillbaka till den vyn. Det finns två typer av bokmärken – sådana som du skapar själv och sådana som skapas av *rapportdesigners*. Alla Power BI-användare kan skapa personliga bokmärken. För att använda bokmärken som skapats av andra behöver du dock en Power BI Pro- eller Premium-licens. [Vilken licens har jag?](end-user-license.md)
 
 ## <a name="use-bookmarks-to-share-insights-and-build-stories-in-power-bi"></a>Använda bokmärken för att dela information och skapa artiklar i Power BI 
 Bokmärken har många användningsområden. Anta att du upptäcker en intressant insikt och vill bevara den – skapa ett bokmärke så att du kan gå tillbaka senare. Om du behöver göra något annat och vill spara ditt nuvarande arbete kan du skapa ett bokmärke. Du kan dessutom göra ett bokmärke till din standardvy för rapporten så att den vyn av rapportsidan öppnas först varje gång du kommer tillbaka. 
@@ -33,6 +35,9 @@ Du kan öppna Bokmärkesfönstret genom att välja **Bokmärken** > **Visa flera
 
 ### <a name="report-bookmarks"></a>Rapportbokmärken
 Om *rapportdesignern* inkluderade rapportbokmärken finns de under rubriken **Rapportbokmärken**. Den här rapporten har två bokmärken, B1 och B2. 
+
+> [!NOTE]
+> Du behöver Power BI Pro eller Premium för att visa delade rapporter. 
 
 ![Visa rapportbokmärken.](media/end-user-bookmarks/power-bi-report.png)
 

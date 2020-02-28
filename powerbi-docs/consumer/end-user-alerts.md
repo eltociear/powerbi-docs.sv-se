@@ -7,17 +7,19 @@ featuredvideoid: removed
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: tutorial
-ms.date: 10/18/2019
+ms.date: 02/18/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: f7ebc459379dbf292603a605db8d3f9c7162e92f
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 5f4dc1d1f3e707a59ef81e63be42714c499d050f
+ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73851263"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77496524"
 ---
-# <a name="tutorial-set-dashboard-alerts-on-power-bi-dashboards"></a>Självstudie: Ställa in instrumentpanelsaviseringar på instrumentpaneler i Power BI
+# <a name="tutorial-set-alerts-on-power-bi-dashboards"></a>Självstudie: Ställa in aviseringar för instrumentpaneler i Power BI
+
+[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
@@ -112,6 +114,7 @@ Det finns många sätt att hantera dina aviseringar: Från paneler i instrumentp
 * Aviseringar kan bara ställas in på mätare, KPI:er och kort.
 * Om du inte kan ställa in en avisering för en mätare, KPI eller ett kort kan du kontakta systemadministratören och be om hjälp. Ibland är aviseringar inaktiverade eller otillgängliga för instrumentpanelen eller för vissa typer av paneler på instrumentpanelen.
 * Aviseringar fungerar bara på data som ska uppdateras. De fungerar inte på statiska data. De flesta av de exempel som tillhandahålls av Microsoft är statiska. 
+* *Användare* skapar inte några egna instrumentpaneler utan *designers* skapar instrumentpaneler som delas med användarna. För att ta emot och visa delat innehåll behövs en Power BI Pro- eller Premium-licens. Mer information finns i [Vilken licens har jag?](end-user-license.md) 
 
 
 ## <a name="clean-up-resources"></a>Rensa resurser

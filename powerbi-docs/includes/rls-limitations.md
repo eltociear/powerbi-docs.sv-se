@@ -2,28 +2,28 @@
 author: davidiseminger
 ms.service: powerbi
 ms.topic: include
-ms.date: 09/13/2019
+ms.date: 01/31/2020
 ms.author: davidi
-ms.openlocfilehash: 6d1a239954a64da1c92cc68b56912e6f4ab67228
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: b67025de5e2a70876a31fd42e22c9572403288fa
+ms.sourcegitcommit: cde65bb8b1bed1ee8cf512651afeb829ddc155de
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "74882801"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77464421"
 ---
 ## <a name="limitations"></a>Begränsningar
 
-Nedan följer en lista med aktuella begränsningar för säkerhet på radnivå i molnmodeller.
+Här är en lista med aktuella begränsningar för säkerhet på radnivå i molnmodeller:
 
 * Om du tidigare har definierat roller och regler i Power BI-tjänsten måste du återskapa dem i Power BI Desktop.
 
-* Du kan endast definiera RLS på datauppsättningar som skapats med Power BI Desktop. Om du vill aktivera RLS för datauppsättningar som skapats med Excel måste du först konvertera filerna till PBIX-filer (Power BI Desktop-filer). [Läs mer](../desktop-import-excel-workbooks.md)
+* Du kan endast definiera RLS på datauppsättningar som skapats med Power BI Desktop. Om du vill aktivera RLS för datauppsättningar som skapats med Excel måste du först konvertera filerna till PBIX-filer (Power BI Desktop-filer). [Läs mer](../desktop-import-excel-workbooks.md).
 
 * Du kan bara använda Import- och DirectQuery-anslutningar. Live-anslutningar till Analysis Services hanteras i modellen lokalt.
 
 ## <a name="known-issues"></a>Kända problem
 
-Det finns ett känt problem där du får ett felmeddelande om du försöker publicera en tidigare publicerad rapport från Power BI Desktop. Scenariot är följande.
+Det finns ett känt problem där du får ett felmeddelande om du försöker publicera en tidigare publicerad rapport från Power BI Desktop. Scenariot är följande:
 
 1. Anna har en datauppsättning som har publicerats till Power BI-tjänsten och är konfigurerad med RLS.
 

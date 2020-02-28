@@ -1,26 +1,32 @@
 ---
 title: Skapa-behörighet för delade datauppsättningar (förhandsversion)
-description: Läs hur du kan hålla koll på vem som har åtkomst till data med hjälp av skapa-behörigheten.
+description: Läs om hur du kan styra åtkomsten till data med hjälp av behörigheten Skapa.
 author: maggiesMSFT
 ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/01/2019
+ms.date: 02/12/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: b17fa4299d2db84f63f0d8f7ed4c17a0c9c437db
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 48380d40d819ea1af74430546b9548c372bd2091
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73872569"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77426620"
 ---
 # <a name="build-permission-for-shared-datasets-preview"></a>Skapa-behörighet för delade datauppsättningar (förhandsversion)
 
-Som skapare av *datamodeller* i Power BI Desktop kan du dela dem som *datamängder* i Power BI-tjänsten. Rapportskapare kan sedan enkelt upptäcka och återanvända de datamängder som du har delat. Läs hur du kan styra vem som har åtkomst till data med hjälp av skapa-behörigheten.
+När du skapar en rapport i Power BI Desktop lagras data i rapporten i en *datamodell*. När du publicerar dina rapporter till Power BI-tjänsten publicerar du även data som en *datamängd*. Du kan ge andra *behörigheten Skapa* för rapporten så att de kan identifiera och återanvända den datamängd du har delat. I den här artikeln går vi igenom hur du kan styra åtkomsten till data med hjälp av behörigheten Skapa.
 
-Skapa-behörighet är endast relevant för datauppsättningar. När du ger användare skapa-behörighet kan de skapa nytt innehåll i en datauppsättning, som rapporter, instrumentpaneler, fästa paneler från Frågor och svar och Insights Discovery. De kan även skapa nytt innehåll i datamängden utanför Power BI, till exempel Excel-blad via Analyze in Excel, XMLA och export av underliggande data.
+Behörigheten Skapa gäller för datamängder. När du ger användare behörigheten Skapa kan de skapa nytt innehåll i datamängden, som rapporter, instrumentpaneler, fästa paneler från Frågor och svar och Insights Discovery. 
+
+Användare behöver också behörigheten Skapa för att arbeta med data *utanför* Power BI:
+
+- till att exportera underliggande data
+- till att skapa nytt innehåll i datamängden, som med [Analysera i Excel](service-analyze-in-excel.md)
+- till att komma åt data via XMLA-slutpunkten.
 
 ## <a name="ways-to-give-build-permission"></a>Sätt att ge skapa-behörighet
 

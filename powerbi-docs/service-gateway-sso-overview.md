@@ -9,16 +9,16 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 10/10/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: bfa4534b625a965226dfced17403a7e2da7a7f84
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: b5ef7e99edbf862891811047ea5f1f961aaea348
+ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74699209"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77527601"
 ---
 # <a name="overview-of-single-sign-on-sso-for-gateways-in-power-bi"></a>Översikt över enkel inloggning (SSO) för gatewayer i Power BI
 
-Du kan få en smidig anslutning med enkel inloggning så att rapporter och instrumentpaneler i Power BI kan uppdateras med lokala data i realtid, genom att du konfigurerar din lokala datagateway. Du kan välja att konfigurera din gateway med antingen [Kerberos](service-gateway-sso-kerberos.md)-begränsad delegering eller Security Assertion Markup Language ([SAML](service-gateway-sso-saml.md)). Den lokala datagatewayen har stöd för enkel inloggning med hjälp av [DirectQuery](desktop-directquery-about.md), som ansluter till lokala datakällor.
+Du kan få en smidig anslutning med enkel inloggning så att rapporter och instrumentpaneler i Power BI kan uppdateras med lokala data i realtid, genom att du konfigurerar din lokala datagateway. Du kan välja att konfigurera din gateway med antingen [Kerberos](service-gateway-sso-kerberos.md)-begränsad delegering eller Security Assertion Markup Language ([SAML](service-gateway-sso-saml.md)). Den lokala datagatewayen har stöd för enkel inloggning med hjälp av [DirectQuery](desktop-directquery-about.md) eller uppdatering, som ansluter till lokala datakällor. 
 
 Power BI har stöd för följande datakällor:
 
@@ -33,7 +33,9 @@ Power BI har stöd för följande datakällor:
 
 Enkel inloggnings stöds för närvarande inte för [M-tillägg](https://github.com/microsoft/DataConnectors/blob/master/docs/m-extensions.md).
 
-När en användare interagerar med en DirectQuery-rapport i Power BI-tjänsten så kan varje åtgärd relaterad till korsfiltrering, utsnitt, sortering och rapportredigering resultera i frågor som körs i realtid mot den underliggande lokala datakällan. När du konfigurerar enkel inloggning för datakällan körs frågorna under identiteten för den användare som interagerar med Power BI (det vill säga via webbläsaren eller Power BI-mobilappen). Det innebär att alla användare ser precis de data från den underliggande datakällan som de har behörighet för. När enkel inloggning är konfigurerad delas ingen cachelagring av data mellan olika användare.
+När en användare interagerar med en DirectQuery-rapport i Power BI-tjänsten så kan varje åtgärd relaterad till korsfiltrering, utsnitt, sortering och rapportredigering resultera i frågor som körs i realtid mot den underliggande lokala datakällan. När du konfigurerar enkel inloggning för datakällan körs frågorna under identiteten för den användare som interagerar med Power BI (det vill säga via webbläsaren eller Power BI-mobilappen). Det innebär att alla användare ser precis de data från den underliggande datakällan som de har behörighet för. 
+
+Du kan också konfigurera att en rapport som är förberedd för uppdatering i Power BI-tjänsten ska använda SSO. När du konfigurerar SSO för den här datakällan körs frågor med datamängdsägarens identitet i Power BI. Uppdateringen görs därför utifrån datamängdsägarens behörigheter för den underliggande datakällan. Uppdatering med SSO är för närvarande bara aktiverat för datakällor som använder begränsad delegering i [Kerberos](service-gateway-sso-kerberos.md) 
 
 ## <a name="query-steps-when-running-sso"></a>Frågesteg vid körning av enkel inloggning
 

@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 241789dc6255dd461ef6cc62425b732788d7c63d
-ms.sourcegitcommit: f1f57c5bc6ea3057007ed8636ede50188ed90ce1
+ms.openlocfilehash: 85db7414fc476f2a62368d150e068a71c13d41cb
+ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74410848"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77527532"
 ---
 # <a name="understand-star-schema-and-the-importance-for-power-bi"></a>Förstå star-schemat och dess betydelse för Power BI
 
@@ -71,9 +71,10 @@ Det är viktigt att förstå att Power BI-modeller har stöd för en andra metod
 
 ![Ikonexempel i fältlista](media/star-schema/field-list-example.png)
 
-Det finns dock två övertygande orsaker att du bör skapa mått även för enkla sammanfattningar på kolumnnivå:
+Det finns dock tre bra skäl till att skapa mått även för enkla sammanfattningar på kolumnnivå:
 
-- När du vet att rapportförfattare kommer att köra frågor mot modellen med hjälp av [flerdimensionella uttryck (MDX)](https://docs.microsoft.com/sql/analysis-services/multidimensional-models/mdx/mdx-query-the-basic-query?view=sql-server-2017) måste modellen innehålla _explicita mått_. Explicita mått definieras med DAX. Den här designmetoden är mycket relevant när du hämtar data från en Power BI-datauppsättning med hjälp av MDX, eftersom MDX inte kan summera kolumnvärden. MDX används framför allt tillsammans med [Analysera i Excel](https://docs.microsoft.com/power-bi/service-analyze-in-excel) (pivottabeller skickar MDX-frågor).
+- När du vet att rapportförfattarna kommer att köra frågor mot modellen med hjälp av [flerdimensionella uttryck (MDX)](https://docs.microsoft.com/sql/analysis-services/multidimensional-models/mdx/mdx-query-the-basic-query?view=sql-server-2017) måste modellen innehålla _explicita mått_. Explicita mått definieras med DAX. Den här designmetoden är mycket relevant när du hämtar data från en Power BI-datauppsättning med hjälp av MDX, eftersom MDX inte kan summera kolumnvärden. MDX används framför allt tillsammans med [Analysera i Excel](https://docs.microsoft.com/power-bi/service-analyze-in-excel) (pivottabeller skickar MDX-frågor).
+- När du vet att rapportförfattarna kommer att skapa sidnumrerade Power BI-rapporter i MDX-frågedesignern måste modellen innehålla explicita mått. Det är bara MDX-frågedesignern som har stöd för [serveraggregeringar](/sql/reporting-services/report-design/report-builder-functions-aggregate-function). Så om rapportförfattarna behöver låta Power BI utvärdera mått (i stället för den sidnumrerade rapportens motor) måste de använda MDX-frågedesignern.
 - Det kan gälla om du behöver säkerställa att rapportförfattare endast kan sammanfatta kolumner på specifika sätt. Till exempel kan kolumnen **Enhetspris** (som representerar ett pris per enhet) för återförsäljares försäljning sammanfattas, men endast med hjälp av specifika sammansättningsfunktioner. Den bör aldrig sammanfattas, men det är lämpligt att sammanfatta den med hjälp av andra sammansättningsfunktioner (min, max, genomsnitt osv.). I det här fallet kan modelleraren dölja kolumnen **Enhetspris** och skapa mått för alla lämpliga sammansättningsfunktioner.
 
 Observera att den här designmetoden fungerar bra för rapporter som skapats i Power BI-tjänsten och för Frågor och svar. Power BI Desktop-live-anslutningar tillåter dock att rapportförfattare visar dolda fält i fönstret **Fält**, vilket kan leda till att den här designmetoden kringgås.
@@ -123,7 +124,7 @@ En icke-inkrementell uppdatering av en tabell av dimensionstyp för en Power BI-
 
 ### <a name="type-2-scd"></a>SCD av typ 2
 
-En **typ 2**-**SCD** stöder versionshantering av dimensionsmedlemmar. Om källsystemet inte lagrar versioner är det vanligtvis informationslagrets inläsningsprocess som identifierar ändringar och hanterar ändringen i en dimensionstabell. I det här fallet måste dimensionstabellen använda en surrogatnyckel för att tillhandahålla en unik referens till en _version_ av dimensionsmedlemmen. Den innehåller även kolumner som definierar datumintervallets giltighet för versionen (till exempel **StartDate** (Startdatum) och **EndDate** (Startdatum)) samt eventuellt en flaggkolumn (till exempel **IsCurrent** (Är aktuellt)) för enkel filtrering efter aktuella dimensionsmedlemmar.
+En **typ 2**-**SCD** har stöd för versionshantering av dimensionsmedlemmarna. Om källsystemet inte lagrar versioner är det vanligtvis informationslagrets inläsningsprocess som identifierar ändringar och hanterar ändringen i en dimensionstabell. I det här fallet måste dimensionstabellen använda en surrogatnyckel för att tillhandahålla en unik referens till en _version_ av dimensionsmedlemmen. Den innehåller även kolumner som definierar datumintervallets giltighet för versionen (till exempel **StartDate** (Startdatum) och **EndDate** (Startdatum)) samt eventuellt en flaggkolumn (till exempel **IsCurrent** (Är aktuellt)) för enkel filtrering efter aktuella dimensionsmedlemmar.
 
 Till exempel tilldelar Adventure Works säljare till en försäljningsregion. När en säljare byter region måste en ny version av säljaren skapas för att säkerställa att historiska uppgifter fortfarande är kopplade till den tidigare regionen. För att stödja korrekt historisk analys av försäljning per säljare måste dimensionstabellen lagra versioner av säljare och deras associerade region(er). Tabellen bör även innehålla start- och slutdatumvärden för att definiera tidens giltighet. Aktuella versioner kan definiera ett tomt slutdatum (eller 12/31/9999), vilket betyder att raden är den aktuella versionen. Tabellen måste även definiera en surrogatnyckel eftersom affärsnyckeln (i det här fallet medarbetar-ID) inte är unik.
 

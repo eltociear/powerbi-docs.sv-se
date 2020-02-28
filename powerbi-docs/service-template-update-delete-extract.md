@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/23/2019
 ms.author: tebercov
-ms.openlocfilehash: a15a27255f15bdce39ddb14a6cda798d170ba3ad
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 4b17ed5458a6245ab5796edcf15f6dee5f885358
+ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73871366"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77497242"
 ---
 # <a name="update-delete-and-extract-template-app"></a>Uppdatera, ta bort och extrahera en mallapp
 
@@ -36,15 +36,21 @@ Om du har gjort ändringarna i Power BI Desktop börjar du med steg (1). Om du i
 
    Nu kan du se att du har två versioner: Versionen som är i produktion, samt en ny version i testning.
 
-    ![Två versioner av en mallapp](media/service-template-apps-update-extract-delete/power-bi-template-app-update.png)
+    ![Två versioner av en mallapp](media/service-template-apps-update-extract-delete/power-bi-template-app-update1.png)
 
-5. När du är redo att flytta upp appen till förproduktion för ytterligare testning utanför klientorganisationen, går du tillbaka till versionshanteringsfönstret och väljer **Höj upp appen** bredvid **Testar**.
-6. Länken är nu live. Skicka den igen till Cloud Partner Portal (CPP) genom att följa stegen i [Uppdatera ett Power BI-apperbjudande](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-update-existing-offer).
-7. I Cloud Partner Portal måste du **publicera** ditt erbjudande igen samt få det validerat igen.
+1. När du är redo att flytta upp appen till förproduktion för ytterligare testning utanför klientorganisationen, går du tillbaka till versionshanteringsfönstret och väljer **Höj upp appen** bredvid **Testar**.
 
-   >[!NOTE]
-   >Höj inte upp appen till produktion förrän den har godkänts i Cloud Partner Portal och du publicerar den.
+   Nu har du en version i produktion och en version i förproduktion.
 
+   ![Två versioner av en mallapp, höj upp nedtonat](media/service-template-apps-update-extract-delete/power-bi-template-app-update2.png)
+
+   Länken är nu live. **Observera att knappen Höj upp appen är nedtonad i förproduktionssteget**. Det här görs för att förhindra att du råkar skriva över länken till den aktuella appversionen innan Cloud Partner Portal har verifierat och godkänt den nya appversionen.
+
+1. Skicka länken igen till Cloud Partner Portal (CPP) genom att följa stegen i [Uppdatera ett Power BI-apperbjudande](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-update-existing-offer). Du måste **publicera** ditt erbjudande igen i Cloud Partner Portal och få det validerat.
+
+   När ditt erbjudande godkänns aktiveras knappen Höj upp appen igen. 
+1. Höj upp din app till produktionssteget.
+   
 ### <a name="update-behavior"></a>Uppdateringsfunktioner
 
 1. Om du uppdaterar appen kan installationsprogrammet för mallappen [uppdatera en mallapp](service-template-apps-install-distribute.md#update-a-template-app) på den redan installerade arbetsytan utan att förlora anslutningskonfigurationen.
@@ -69,7 +75,7 @@ Om du tar bort en appversion, tas även app-URL:en bort som inte längre fungera
 
 1. I versionshanteringsfönstret trycker du på ellipsen **(...)**  och sedan på **Ta bort**.
  ![Ta bort mallappsversion](media/service-template-apps-update-extract-delete/power-bi-template-app-delete.png)
-  ![Ta bort mallappsversion](media/service-template-apps-update-extract-delete/power-bi-template-app-delete-dialog.png)
+ ![Ta bort mallappsversion](media/service-template-apps-update-extract-delete/power-bi-template-app-delete-dialog.png)
 
 >[!NOTE]
 >Se till att du inte ta bort en appversion som används av kunder eller **AppSource**, då fungerar de inte längre.

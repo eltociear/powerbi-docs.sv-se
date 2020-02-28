@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/30/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: c876a1f87afcb5bbaa3e27bdcb88bda2a04496e5
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 28d142ae92353f415f3cf29db959b24a8040c50b
+ms.sourcegitcommit: d42fbe235b6cf284ecc09c2a3c005459cec11272
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75758518"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77558582"
 ---
 # <a name="tips-and-tricks-for-power-bi-map-visualizations"></a>Tips för Power BI-kartvisualiseringar
 Power BI integrerar med Bing Maps för att tillhandahålla kartkoordinater av standardtyp (en process som kallas geokodning), vilket gör det enklare att skapa kartor. Tillsammans använder de algoritmer för att identifiera rätt plats, men är det mest en gissning. Om Power BI inte kan skapa kartvisualiseringen på egen hand, använder den sig av Bing Maps. 
@@ -28,17 +28,17 @@ Du eller din administratör kan behöva uppdatera brandväggen för att tillåta
 Du kan använda följande tips för att öka sannolikheten för rätt geo-kodning. Du kan skaffa den första uppsättningen tips för att få åtkomst till datauppsättningen. Den andra uppsättningen tips är saker du kan göra i Power BI om du inte har åtkomst till datauppsättningen. 
 
 ## <a name="what-is-sent-to-bing-maps"></a>Vad skickas till Bing Maps?
-Power BI-tjänsten och Power BI Desktop skickar Bing geoinformation som behövs för att skapa kartvisualiseringen. Detta kan omfatta data i bucketarna **plats**, **latitud** och **longitud** och geofälten och i någon av filterbucketarna **Rapportnivå**, **Sidonivå** eller **Visualiseringsnivå**. Exakt vad som skickas beror på karttypen. Läs mer i [Bing Maps-sekretess](https://go.microsoft.com/fwlink/?LinkID=248686).
+Power BI-tjänsten och Power BI Desktop skickar Bing geoinformation som behövs för att skapa kartvisualiseringen. Det här kan vara data i bucketarna **Plats**, **Latitud** och **Longitud** i visualiseringens fält. Exakt vad som skickas beror på karttypen. Läs mer i [Bing Maps-sekretess](https://go.microsoft.com/fwlink/?LinkID=248686).
 
-* Om longitud och latitud anges i kartor (bubbelkartor, punktkartor och punktritningskartor), kommer inte några data att skickas till Bing. Annars kommer alla data i **Plats** (och filter) skickas till Bing.     
+* Om longitud och latitud anges i kartor (bubbelkartor, punktkartor och punktritningskartor), kommer inte några data att skickas till Bing. Annars skickas alla data i bucketen **Plats** till Bing.     
 
 * Koropletkartor kräver att det finns ett fält i **Plats**, även om latitud och longitud anges. Alla data som finns i **Plats**, **Latitud** och **Longitud** skickas till Bing.
   
-    I exemplet nedan används fältet **leverantör**för geokodning. Därför skickas alla leverantörsdata till Bing. Data från **Storlek** och **Färgmättnad** skickas inte till Bing.
+    I exemplet nedan används fältet **Leverantör** till geokodning, så alla värden i kolumnen Leverantör skickas till Bing. Data från **Storlek** och **Färgmättnad** skickas inte till Bing.
   
     ![skickas till Bing Maps](./media/power-bi-map-tips-and-tricks/power-bi-sent-to-bing-new.png)
   
-    I det andra exemplet nedan används fältet **Region**för geokodning. Därför skickas alla regionsdata till Bing. Data från **Förklaring** och **Färgmättnad** skickas inte till Bing.
+    I exemplet nedan används fältet **Territorium** till geokodning, så alla värden i kolumnen Territorium skickas till Bing. Data från **Förklaring** och **Färgmättnad** skickas inte till Bing.
   
     ![Fyllda kartor och Bing](./media/power-bi-map-tips-and-tricks/power-bi-filled-map.png)
 

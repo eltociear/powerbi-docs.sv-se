@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/16/2019
+ms.date: 02/12/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 3a2b06071986b6994c68bde06e87c5ae7f5e7360
-ms.sourcegitcommit: df8bcc65f0df69bf1fc1d47eb06575742eac1622
+ms.openlocfilehash: f22b235ddb1918bda5284f72759485d01c4ceab9
+ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75953724"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77496736"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Tidigare månadsuppdateringar till Power BI Desktop
 
@@ -34,6 +34,89 @@ Du kan också se videon **Senaste uppdateringar** från början i den här artik
 Följande avsnitt beskriver tidigare månaders uppdateringar till **Power BI Desktop**.
 
 
+## <a name="december-2019-update-2765678661"></a>Uppdatering december 2019 (2.76.5678.661)
+
+Våra uppdateringar i december var lika roliga som att åka pulka i en härligt brant backe. 
+
+> [!IMPORTANT]
+> Från och med september 2019-versionen levereras Power BI Desktop endast som en enskild .exe-fil som innehåller alla språk med stöd. MSI-versionen släpps inte längre.
+
+Länkarna intill varje funktion i Power BI Desktop uppdateringslistan tolkas enligt följande:
+
+* [blogginlägg]: Most features are explained in a section in the monthly update blog post.
+* [videoklipp]: Some features have a video excerpt that discusses the feature, which plays in a new browser tab.
+* [artikel]: Some features have an article that provides more detail.
+* De återstående funktionerna är självförklarande och behöver varken artikel eller video.
+
+Följande uppdateringar var nya för Power BI Desktop den här månaden:
+
+### <a name="reporting"></a>Rapportering
+* Temauppdateringar (förhandsversion) [[video]](https://youtu.be/eCEwgZsVUOs?t=10)  [[artikel]](desktop-report-themes.md)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#customizeTheme) 
+* Exportera det aktuella temat (förhandsversion)   [[video]](https://youtu.be/eCEwgZsVUOs?t=242)  [[artikel]](desktop-report-themes.md)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#exportTheme) 
+* Ange tabellkolumn eller matrisvärde som en anpassad URL [[video]](https://youtu.be/eCEwgZsVUOs?t=277)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#customURL) 
+* Inställningar för visuell KPI-formatering [[video]](https://youtu.be/eCEwgZsVUOs?t=354)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#KPI) 
+* Ny formatering för nedbrytningsträd [[video]](https://youtu.be/eCEwgZsVUOs?t=442)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#decomp) 
+* Växlingsknapp för filterfönster i det nya menyfliksområdet [[video]](https://youtu.be/eCEwgZsVUOs?t=599)    [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#filterToggle) 
+* Information om frågor för automatisk siduppdatering [[video]](https://youtu.be/eCEwgZsVUOs?t=717)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#APR) 
+
+
+### <a name="analytics"></a>Analys
+* Läsa in mer för analys av insikter [[video]](https://youtu.be/eCEwgZsVUOs?t=831)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#moreAI) 
+* Ny DAX-funktion: Kvartal [[video]](https://youtu.be/eCEwgZsVUOs?t=855)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#quarter) 
+
+
+### <a name="visuals"></a>Visuella objekt
+* Anpassa visuellt fönster (allmänt tillgängligt) [[video]](https://youtu.be/eCEwgZsVUOs?t=865)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#personalizeViz) 
+* Nya anpassade visuella objekt [[video]](https://youtu.be/eCEwgZsVUOs?t=886)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#xViz) 
+
+
+### <a name="data-connectivity"></a>Dataanslutning
+* Azure Data Lake Storage Gen2-anslutningsprogram (allmänt tillgängligt) [[video]](https://youtu.be/eCEwgZsVUOs?t=2151)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/) 
+* Anslutningsprogram för Power Platform-dataflöden (allmänt tillgängligt) [[video]](https://youtu.be/eCEwgZsVUOs?t=2180)  [[artikel]](service-edit-sap-variables.md)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#ADLS) 
+* PostgreSQL-anslutningsprogrammet omfattar nu Npgsql-providern [[video]](https://youtu.be/eCEwgZsVUOs?t=2220)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#PostgreSQL) 
+* AtScale-anslutningsprogram (allmänt tillgängligt) [[video]](https://youtu.be/eCEwgZsVUOs?t=2245)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#AtScale) 
+* Azure Time Series Insights-anslutningsprogram [[video]](https://youtu.be/eCEwgZsVUOs?t=2261)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#ATS) 
+* Data Virtuality-anslutningsprogram [[video]](https://youtu.be/eCEwgZsVUOs?t=2294)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#DataVirt) 
+* Zucchetti HR Infinity-anslutningsprogram [[video]](https://youtu.be/eCEwgZsVUOs?t=2345)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#Zucchetti) 
+
+
+### <a name="data-preparation"></a>Förberedelse av data
+* Uppdateringar av funktioner för Alla insikter (förhandsversion) [[video]](https://youtu.be/eCEwgZsVUOs?t=2366)  [[artikel]](desktop-ai-insights.md)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#AIfunc) 
+
+
+### <a name="template-apps"></a>Mallappar
+* Insikter i flera kanaler för Dynamics 365  [[video]](https://youtu.be/eCEwgZsVUOs?t=2416)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#Omni) 
+* Kundtjänstanalys för Dynamics 365  [[video]](https://youtu.be/eCEwgZsVUOs?t=2500)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#CS)
+* Microsoft Forms Pro för kundtjänst  [[video]](https://youtu.be/eCEwgZsVUOs?t=2525)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#Forms) 
+
+
+Du kan läsa mer om de här nya funktionerna i [sammanfattningen av funktioner för Power BI Desktop i december 2019](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/).
+
+Se [nyheter i Power BI-tjänsten](service-whats-new.md) och [nyheter i mobilapparna för Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+
+> [!NOTE]
+> Se [datakällor som är tillgängliga för Power BI Desktop](desktop-data-sources.md). Vår lista växer ständigt, så titta gärna efter nyheter ofta.
+
+
+## <a name="power-bi-desktop-monthly-update-video"></a>Video om månadsuppdatering för Power BI Desktop
+I följande video beskrivs var och en av dessa uppdateringar. Du kan även titta på videon från blogginlägget:
+
+> [!VIDEO https://www.youtube.com/embed/eCEwgZsVUOs]
+
+Du kan också hämta tidigare versioner av Power BI Desktop om din organisation kräver det. Vi rekommenderar alltid att du använder den senaste versionen av Power BI Desktop, i stället för en tidigare version. Alla tidigare versioner har följande begränsningar:
+
+* Tidigare versioner av Power BI Desktop servas inte – du bör alltid använda den senaste versionen för de senaste funktionerna och uppdateringarna.
+* Det kanske inte går att öppna filer som skapats eller sparats i senare versioner av Power BI Desktop med tidigare versioner av Power BI Desktop. 
+* Om du får en varning när du läser in en rapport som sparas i en nyare version av Power BI Desktop och sedan spara rapporten i den tidigare versionen, förlorar du information som är relaterad till nya funktioner.
+* Vi arkiverar endast de engelska versionerna av Power BI Desktop.
+
+Välj följande länkar för att ladda ned den tidigare versionen: 
+
+* [December 2019-versionen av Power BI Desktop – 32-bitar](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2019-12.exe)
+* [December 2019-versionen av Power BI Desktop – 64-bitar](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2019-12_x64.exe)
+
+
+
 ## <a name="november-2019-update-2755649341"></a>Uppdatering november 2019 (2.75.5649.341)
 
 Våra novemberuppdateringar var lika uppskattade som ett riktigt trevligt släktkalas. 
@@ -43,8 +126,8 @@ Våra novemberuppdateringar var lika uppskattade som ett riktigt trevligt släkt
 
 Länkarna intill varje funktion i Power BI Desktop uppdateringslistan tolkas enligt följande:
 
-* [blogginlägg]: Most features are explained in a section in the monthly update blog post.
-* [videoklipp]: Some features have a video excerpt that discusses the feature, which plays in a new browser tab.
+* [blogg]: Most features are explained in a section in the monthly update blog post.
+* [video]: Some features have a video excerpt that discusses the feature, which plays in a new browser tab.
 * [artikel]: Some features have an article that provides more detail.
 * De återstående funktionerna är självförklarande och behöver varken artikel eller video.
 

@@ -6,20 +6,24 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 02/20/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: dcfc695d0371cce21a827ddfe71b3b4b05863935
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 882cddf7728a27e78056a35c14fde20f00678e33
+ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75762426"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77527712"
 ---
 # <a name="use-the-facebook-connector-for-power-bi-desktop"></a>Använda Facebook-anslutningsprogrammet för Power BI Desktop
 Facebook-anslutningsprogrammet i **Power BI Desktop** använder sig av Facebook Graph API. Det innebär att funktioner och tillgänglighet kan variera över tid.
 
 Du kan se en [självstudiekurs om Facebook-anslutningsprogrammet för Power BI Desktop](desktop-tutorial-facebook-analytics.md).
+
+> [!IMPORTANT]
+> **Meddelande om utfasning av Facebook-dataanslutningen:** Import och uppdatering av data från Facebook i Excel kommer att sluta fungera från och med april 2020. Tills dess kan du använda Facebook-anslutningsprogrammet *Get & Transform (Power Query)* . Efter det datumet kommer du inte att kunna ansluta till Facebook och får i stället ett felmeddelande. Vi rekommenderar att du ändrar eller tar bort befintliga *Get & Transform-frågor (Power Query)* som använder Facebook-anslutningsprogrammet så snart som möjligt, så att du undviker eventuella oväntade resultat.
+
 
 Facebook gjorde v1.0 av sitt Graph API inaktuellt 30 april 2015. Power BI använder sig av Graph API i bakgrunden för Facebook-anslutningsprogrammet så att du kan ansluta till dina data och analysera dem.
 
