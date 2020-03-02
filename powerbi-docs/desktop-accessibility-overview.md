@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/17/2020
+ms.date: 02/21/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8604ed2c737b7d2a75b3af052878ecb157ffacf1
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: a8bf446174cc16d95842022416352f538dca69ec
+ms.sourcegitcommit: 032a77f2367ca937f45e7e751997d7b7d0e89ee2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76538622"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609864"
 ---
 # <a name="overview-of-accessibility-in-power-bi"></a>Översikt över hjälpmedel i Power BI
 
@@ -30,7 +30,7 @@ Universal design handlar om att designa produkter som kan användas av så mång
 
 ## <a name="accessibility-standards"></a>Hjälpmedelsstandarder
 
-Power BI uppfyller följande standarder för hjälpmedel. Dessa standarder ser till att dina Power BI-miljöer blir tillgängliga för så många som möjligt. Power BI Mobile-appar är certifierade för tillgänglighetsnivå C. När du skapar tillgängliga rapporter eller instrumentpaneler blir innehållet tillgängligt för alla som visar dem med Power BI Mobile.
+Power BI uppfyller följande standarder för hjälpmedel. Dessa standarder ser till att dina Power BI-miljöer blir tillgängliga för så många som möjligt. När du skapar tillgängliga rapporter eller instrumentpaneler blir innehållet tillgängligt för alla som visar dem med Power BI Mobile.
 
 ### <a name="wcag-21"></a>WCAG 2.1
 

@@ -6,21 +6,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 02/12/2020
+ms.date: 02/27/2020
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: ec93e1575ec5429a3ca4c790150973a23224d97b
-ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
+ms.openlocfilehash: 927e882e9b0cd7195aec6cffd7305d887d1c306e
+ms.sourcegitcommit: ec4d2d0f52d737e8e0583f6a7b16e6fd87382510
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77427793"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77782370"
 ---
 # <a name="supported-browsers-for-power-bi"></a>Webbläsare som stöds för Power BI
 Power BI körs i dessa webbläsare:
 
 - Microsoft Edge
-- Internet Explorer 11. Vissa avancerade funktioner, till exempel ursprungsvyn, stöds inte i Internet Explorer. Mer information finns i [Dataursprung (förhandsversion)](service-data-lineage.md).
+- Internet Explorer 11. Vissa avancerade funktioner, till exempel ursprungsvyn, stöds inte i Internet Explorer. Mer information finns i [Dataursprung (förhandsversion)](designer/service-data-lineage.md).
 - Chrome skrivbordsprogram, senaste versionen
 - Safari Mac, senaste versionen
 - Firefox skrivbordsprogram, senaste versionen. Firefox kan ändra teckensnitten som används i Power BI 
