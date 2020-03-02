@@ -207,7 +207,7 @@
               href: desktop-combine-binaries.md
             - name: Använda AI Insights (förhandsversion)
               href: desktop-ai-insights.md
-        - name: Modellera dina data
+        - name: Forma dina data
           items:
             - name: Ange datakategorier i Power BI Desktop
               href: desktop-data-categorization.md
@@ -397,7 +397,7 @@
               href: natural-language/q-and-a-best-practices.md
             - name: Frågor och svar – begränsningar
               href: natural-language/q-and-a-limitations.md
-        - name: Felsök
+        - name: Felsöka
           items:
             - name: Felsöka import av Access- och Excel-filer (.xls)
               href: desktop-access-database-errors.md
@@ -431,7 +431,7 @@
           href: desktop-admin-sign-in-form.md
         - name: Felsök inloggning i Power BI Desktop
           href: desktop-troubleshooting-sign-in.md
-        - name: Tillgänglighet
+        - name: Hjälpmedel
           items:
             - name: Om hjälpmedel i Power BI
               href: desktop-accessibility-overview.md
@@ -523,7 +523,7 @@
               href: service-flow-integration.md
             - name: Använda appar från tredje part
               href: service-power-bi-get-started-third-party-apps.md
-    - name: Gör så här
+    - name: Gör så här för att
       items:
         - name: Hämta data från filer
           items:
@@ -613,7 +613,7 @@
               href: service-dashboard-pin-tile-from-q-and-a.md
             - name: Fästa en hel rapportsida på en instrumentpanel
               href: service-dashboard-pin-live-tile-from-report.md
-            - name: Datavarningar i Power BI-tjänsten
+            - name: Dataaviseringar i Power BI-tjänsten
               href: service-set-data-alerts.md
             - name: 'Lägga till en bild, textruta, video eller kod på en instrumentpanel'
               href: service-dashboard-add-widget.md
@@ -655,8 +655,6 @@
               href: service-export-to-pbix.md
             - name: Redigera SAP-variabler
               href: service-edit-sap-variables.md
-            - name: Metodtips för att skapa snabba och tillförlitliga rapporter
-              href: power-bi-reports-performance.md
         - name: Ställa frågor om dina data
           items:
             - name: Använda frågor och svar för att utforska dina data
@@ -741,7 +739,7 @@
               href: service-dataflows-azure-data-lake-integration.md
             - name: Ansluta Azure Data Lake Storage Gen2 för lagring av dataflöde
               href: service-dataflows-connect-azure-data-lake-storage-gen2.md
-            - name: Konfigurera inställningar för arbetsytans dataflöde (förhandsversion)
+            - name: Konfigurera inställningarna för dataflöde i arbetsytan (förhandsversion)
               href: service-dataflows-configure-workspace-storage-settings.md
             - name: Lägga till en CDM-mapp i Power BI som ett dataflöde (förhandsversion)
               href: service-dataflows-add-cdm-folder.md
@@ -757,8 +755,8 @@
               href: admin/service-security-data-protection-overview.md
             - name: Använda känslighetsetiketter
               href: designer/service-security-apply-data-sensitivity-labels.md
-        - name: Dataursprung
-          href: service-data-lineage.md
+        - name: Visa dataursprung
+          href: designer/service-data-lineage.md
         - name: Mallappar
           items:
             - name: Översikt över mallappar
@@ -773,7 +771,7 @@
               href: service-template-update-delete-extract.md
             - name: Exempel på mallappar
               href: service-template-apps-samples.md
-        - name: Felsök
+        - name: Felsöka
           items:
             - name: Har du glömt lösenordet till Power BI?
               href: service-admin-forgot-your-password.md
@@ -875,7 +873,7 @@
           href: service-premium-capacity-scenarios.md
         - name: Vanliga frågor och svar om Power BI Premium
           href: service-premium-faq.md
-    - name: Gör så här
+    - name: Gör så här för att
       items:
         - name: Köp Power BI Premium
           href: service-admin-premium-purchase.md
@@ -939,7 +937,7 @@
           href: report-builder-previewing-reports.md
         - name: Vanliga frågor och svar om sidnumrerade rapporter
           href: paginated-reports-faq.md
-    - name: Gör så här
+    - name: Gör så här för att
       items:
         - name: Ange data direkt i en sidnumrerad rapport
           href: paginated-reports-enter-data.md
@@ -975,7 +973,7 @@
           href: report-server/admin-handbook-overview.md
         - name: Ändringslogg
           href: report-server/changelog.md
-        - name: Supporttider
+        - name: Supporttidslinje
           href: report-server/support-timeline.md
         - name: Always Encrypted-support
           href: report-server/always-encrypted-support.md
@@ -1007,7 +1005,7 @@
               href: 'https://go.microsoft.com/fwlink/?linkid=848723'
             - name: Bädda in rapporter
               href: report-server/quickstart-embed.md
-    - name: Gör så här
+    - name: Gör så här för att
       items:
         - name: Installera Power BI Desktop
           href: report-server/install-powerbi-desktop.md
@@ -1085,7 +1083,7 @@
           href: service-gateway-deployment-guidance.md
         - name: Vanliga frågor och svar om lokal datagateway
           href: service-gateway-power-bi-faq.md
-    - name: Gör så här
+    - name: Gör så här för att
       items:
         - name: Lokal datagateway – på djupet
           href: service-gateway-onprem-indepth.md
