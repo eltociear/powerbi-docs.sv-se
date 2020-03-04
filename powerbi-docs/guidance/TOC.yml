@@ -60,6 +60,16 @@
               href: report-page-tooltips.md
             - name: Använd detaljerad information för rapportsidor
               href: report-drillthrough.md
+            - name: Tips för att hantera axlar
+              href: report-design-tips-axes.md
+            - name: Tips för att hantera stödlinjer i diagram
+              href: report-tips-chart-gridlines.md
+            - name: Tips för att optimera användningen av etiketter
+              href: report-tips-labels.md
+            - name: Tips för att formatera och implementera förklaringar
+              href: report-tips-legends.md
+            - name: Tips för att optimera färger i visuella objekt
+              href: report-tips-visual-colors.md
         - name: Sidnumrerade rapporter i Power BI
           items:
             - name: Användningsområden för sidnumrerade rapporter
