@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 02/10/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 10f79c8670b42828b4219723bd8e503424e77820
-ms.sourcegitcommit: e27d40054949421701f829113c4a5f6d260c8d5f
+ms.openlocfilehash: 6a45dcc195514bc1af71470beeead9f73a798942
+ms.sourcegitcommit: 4d98274aa0b9aa09db99add2dda91a3ba8fed40b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "77154444"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576840"
 ---
 # <a name="create-matrix-visualizations-in-power-bi"></a>Skapa matrisvisualiseringar i Power BI
 
@@ -218,6 +218,10 @@ Om du vill tillämpa villkorsstyrd formatering, väljer du det visuella matrisob
 Välj *Avancerade kontroller* för att visa en dialogruta där du kan göra justeringar. Det här exemplet visar dialogrutan för **Datastaplar**.
 
 ![Datastapelsfönster](media/desktop-matrix-visual/power-bi-data-bars.png)
+
+## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
+
+* Om textdata i matrisens celler eller rubriker innehåller tecken för ny rad, så ignoreras dessa tecken om du inte växlar alternativet "Automatiskt radbyte" i elementets associerade formatpanelskort. 
 
 ## <a name="next-steps"></a>Nästa steg
 

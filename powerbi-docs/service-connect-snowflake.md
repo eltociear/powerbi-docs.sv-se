@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/20/2019
 ms.author: gepopell
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 03e6e8efae5cd4a5f61e3d07bc0b3c524b3b0a46
-ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
+ms.openlocfilehash: 5e5519e30be30d6367791d1b6822196b407a21b1
+ms.sourcegitcommit: 4d98274aa0b9aa09db99add2dda91a3ba8fed40b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77429359"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576864"
 ---
 #  <a name="connecting-to-snowflake-in-power-bi-service"></a>Ansluta till Snowflake i Power BI-tjänsten
 
@@ -49,7 +49,7 @@ På grund av hur Power BI är utformat så fungerar enkel inloggning bara när i
 
 * Om du bara använder en Snowflake-källa i din datamodell kan du använda enkel inloggning om du väljer att inte använda den lokala datagatewayen
 * Om du använder en Snowflake-källa tillsammans med en annan källa kan du använda enkel inloggning om ingen av källorna använder den lokala datagatewayen
-* Om du använder en Snowflake-källa via den lokala datagatewayen kan du använda AAD-autentiseringsuppgifter men inte enkel inloggning. Det här kan vara relevant om du försöker komma åt ett virtuellt nätverk från en enskild IP-adress där gatewayen är installerad, snarare än från hela IP-intervallet för Power BI.
+* Om du använder en Snowflake-källa via den lokala datagatewayen, så stöds inte AAD-autentiseringsuppgifter för närvarande. Det här kan vara relevant om du försöker komma åt ett virtuellt nätverk från en enskild IP-adress där gatewayen är installerad, snarare än från hela IP-intervallet för Power BI.
 * Om du använder en Snowflake-källa tillsammans med en annan källa som behöver en gateway måste du även använda Snowflake via den lokala datagatewayen, och då kan du inte använda enkel inloggning.
 
 Du kan läsa mer om att använda den lokala datagatewayen i artikeln [Vad är en lokal datagateway?](https://docs.microsoft.com/power-bi/service-gateway-onprem)

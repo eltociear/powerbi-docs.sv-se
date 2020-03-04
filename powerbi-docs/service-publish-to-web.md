@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/06/2020
+ms.date: 02/25/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: a9417e7de98e0fa1867aa0561743c1ed6c5b63e2
-ms.sourcegitcommit: 578d43aeb7cebf40f3caf03a614bc885cc039488
+ms.openlocfilehash: 34754f413cd6bb8e520ff8d7f2c9d4a28da73ef5
+ms.sourcegitcommit: 032a77f2367ca937f45e7e751997d7b7d0e89ee2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "77076713"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609917"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Publicera på webben från Power BI
 
@@ -118,7 +118,7 @@ När du skapar en inbäddningskod för **Publicera på webben** kan du hantera k
 
 ## <a name="updates-to-reports-and-data-refresh"></a>Uppdateringar av rapporter och datauppdatering
 
-När du har skapat inbäddningskoden för **Publicera på webben** och delat den uppdateras rapporten med eventuella ändringar som du gör, och länken för inbäddningskoden blir aktiv omedelbart. Alla som öppnar länken kan visa den. Efter den här inledande åtgärd kan dock uppdateringar av rapporter eller visuella objekt ta ungefär en timme innan de blir synliga för användarna. Mer information finns i avsnittet [**Så här fungerar det**](#howitworks) längre fram i den här artikeln. 
+När du har skapat inbäddningskoden för **Publicera på webben** och delat den uppdateras rapporten med eventuella ändringar som du gör, och länken för inbäddningskoden blir aktiv omedelbart. Alla som öppnar länken kan visa den. Efter den här inledande åtgärden kan dock uppdateringar av rapporter eller visuella objekt ta två till tre timmar innan de blir synliga för användarna. Mer information finns i avsnittet [**Så här fungerar det**](#howitworks) längre fram i den här artikeln. 
 
 ## <a name="data-refresh"></a>Datauppdatering
 

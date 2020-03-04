@@ -5,15 +5,15 @@ author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
-ms.topic: conceptual
+ms.topic: how-to
 ms.subservice: powerbi-custom-visuals
-ms.date: 12/02/2019
-ms.openlocfilehash: ec1bd8666a9d76b4ccfa7793415488f85a24dfdb
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.date: 02/13/2020
+ms.openlocfilehash: 031e1fd5d5c57e37e0d70541d6662b0af7b91b07
+ms.sourcegitcommit: 4d98274aa0b9aa09db99add2dda91a3ba8fed40b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "74999932"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576798"
 ---
 # <a name="publish-power-bi-visuals-to-partner-center"></a>Publicera visuella Power BI-objekt på Partnercenter
 
@@ -39,7 +39,7 @@ När du är redo att skicka in ditt visuella Power BI-objekt, så verifiera att 
 | Skärmbilder |Ja |Du måste tillhandahålla minst en skärmbild. Formatet kan vara .png, .jpg, .jpeg eller .gif. Måtten måste vara exakt 1366 px (bredd) x 768 px (höjd). Filens storlek får inte överstiga 1024 kb.<br>Lägg till textbubblor som tydligt betonar mervärdet av de viktiga funktioner som visas på respektive skärmbild. |
 | Länk till nedladdningssupport |Ja |Tillhandahåll en support-URL för dina kunder. Den här länken har angetts som en del av din SellerDashboard-registrering och är synlig för användana när får åtkomst till ditt visuella objekts lista i AppSource. Formatet på URL:en ska inkludera https:// eller https://. |
 | Länk till sekretessdokumentet |Ja |Tillhandahåll en länk till det visuella objektets sekretesspolicy. Den här länken har angetts som en del av din SellerDashboard-registrering och är synlig för användana när får åtkomst till ditt visuella objekts lista i AppSource. Formatet på länken ska inkludera https:// eller https://. |
-| Licensavtal (EULA) |Ja |Du måste överföra en licensavtalsfil. Detta kan vara ditt eget licensavtal eller standardlicensavtalet från Office Store för visuella Power BI-objekt. Om du vill använda standardlicensavtalet klistrar du in följande URL i dialogrutan för filöverföring av ”Licensavtal” på försäljningsinstrumentpanelen. [https://visuals.azureedge.net/app-store/Power BI - Default Custom Visual EULA.pdf](https://visuals.azureedge.net/app-store/Power%20BI%20-%20Default%20Custom%20Visual%20EULA.pdf). |
+| Licensavtal (EULA) |Ja |Du måste tillhandahålla en EULA-fil ditt visuella Power BI-objekt. |
 | Videolänk |Nej |Om du vill öka användarnas intresse för ditt anpassade visuella objekt, så tillhandahåll en länk till en video om ditt visuella objekt. Formatet på URL:en ska inkludera https:// eller https://. |
 | GitHub-lagringsplats |Nej |Dela en offentlig länkt till ett [GitHub](https://www.github.com)-centrallager med källor till dina visuella Power BI-objekt och exempeldata. På så vis får andra utvecklare möjlighet att komma med feedback och föreslå förbättringar av din kod. |
 

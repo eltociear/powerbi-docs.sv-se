@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/29/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: c9e0658eb277ae25b3a418dd80fb9323be6f6ab0
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: e97d2301a77bb3fe4a7a8f4e50f6da73a68842d0
+ms.sourcegitcommit: 30ed21cca2125001f2f992dc6c5f546f4956631c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75758409"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77652552"
 ---
 # <a name="create-arcgis-maps-in-power-bi-desktop"></a>Skapa ArcGIS-kartor i Power BI Desktop
 
@@ -26,6 +26,9 @@ Den här självstudien är skriven utifrån en person som skapar en ArcGIS-karta
 Kombinationen av ArcGIS-kartor och Power BI tar mappning längre än till bara presentation av punkter på en karta – helt enkelt till en helt ny nivå. Välj mellan grundläggande kartor, platstyper, teman, symbolformat och referensskikt för att skapa fantastiska informativa kartvisualiseringar. Kombinationen av auktoritära dataskikt på en karta med spatial analys ger en djupare förståelse av visualiseringens data.
 
  Du kan inte skapa en ArcGIS Maps for Power BI-karta på en mobil enhet, men du kan visa och interagera med den. Se [Interagera med ArcGIS-kartor](power-bi-visualizations-arcgis.md).
+
+> [!NOTE]
+> ArcGIS Maps för Power BI är för närvarande inte tillgängligt för Power BI-rapportserver.
 
 > [!TIP]
 > GIS står för Geographic Information Systems.

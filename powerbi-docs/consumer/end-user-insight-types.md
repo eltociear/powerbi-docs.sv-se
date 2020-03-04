@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 01/15/2020
+ms.date: 02/24/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 184aeb1f26e54bb8b8935f2f06ec6cad2e282ecf
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: a89cb77b99356f9f282b522c2041e96210a026e9
+ms.sourcegitcommit: 4d98274aa0b9aa09db99add2dda91a3ba8fed40b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76537929"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576778"
 ---
 # <a name="types-of-insights-supported-by-power-bi"></a>Typer av insikter som stöds av Power BI
 
@@ -31,10 +31,10 @@ Power BI söker snabbt igenom delmängder av din datauppsättning. Under söknin
 I Power BI används statistiska algoritmer för att få insikter. Algoritmerna visas och beskrivs i nästa avsnitt i den här artikeln. Innan vi kommer till algoritmerna ska vi gå igenom definitionerna för vissa termer som du kanske inte känner till. 
 
 * **Mått** – ett mått är ett kvantitativt fält (numeriskt) som kan användas för beräkningar. Vanliga beräkningar är summa, medelvärde och minimum. Anta att vi till exempel har ett företag som tillverkar och säljer skateboards. Då kan våra mått vara antalet sålda skateboards och genomsnittlig vinst per år.  
-* **Dimension** – dimensioner är kategoriska data (text). En dimension beskriver en person, ett objekt, en artikel, en produkt, en plats och en tidpunkt. I en datauppsättning är dimensioner ett sätt att gruppera *mått* i användbara kategorier. För vårt skateboardföretag kan vissa dimensioner innefatta att titta på försäljningen (ett mått) efter modell, färg, land eller marknadsföringskampanj.   
+* **Dimension** – dimensioner är kategoriska data (text). En dimension beskriver en person, ett objekt, en artikel, en produkt, en plats och en tidpunkt. I en datamängd är dimensioner ett sätt att gruppera *mått* i användbara kategorier. För vårt skateboardföretag kan vissa dimensioner innefatta att titta på försäljningen (ett mått) efter modell, färg, land eller marknadsföringskampanj.   
 * **Korrelation** – en korrelation anger hur sakers beteenden är relaterade till varandra.  Om saker har liknande mönster för ökning och minskning är de positivt korrelerade. Och om mönstren visar ett motsatt förhållande är de negativt korrelerade. Om vår försäljning av röda skateboards ökar varje gång vi kör en tv-reklamkampanj innebär det att försäljningen av röda skateboards och tv-kampanjen är positivt korrelerade.
 * **Tidsserie** – en tidsserie är ett sätt att visa successiva datapunkter. Dessa datapunkter kan anges i steg, till exempel sekunder, timmar, månader eller år.  
-* **Kontinuerlig variabel** – en kontinuerlig variabel kan vara ett värde mellan dess lägsta och högsta gräns, annars är det en diskret variabel. Exempel är temperatur, vikt, ålder och tid. Kontinuerliga variabler kan innehålla ett bråktal eller en del av värdet. Det totala antalet sålda blå skateboards är en diskret variabel eftersom vi inte kan sälja hälften av en skateboard.  
+* **Kontinuerlig variabel** – en kontinuerlig variabel kan vara ett värde mellan dess lägsta och högsta gräns, annars är det en diskret variabel. Exempel är temperatur, vikt, ålder och tid. Kontinuerliga variabler kan innehålla bråktal eller delar av värdet. Det totala antalet sålda blå skateboards är en diskret variabel eftersom vi inte kan sälja hälften av en skateboard.  
 
 ## <a name="what-types-of-insights-can-you-find"></a>Vilka typer av insikter kan vi hitta?
 Dessa algoritmer används i Power BI. 
@@ -55,7 +55,7 @@ Identifierar fall där flera mått visar ett liknande mönster eller en trend n�
 ![Exempel på korrelation](./media/end-user-insight-types/pbi-auto-insight-types-correlation.png)
 
 ### <a name="low-variance"></a>Låg varians
-Identifierar fall där datapunkter ligger nära medelvärdet.
+Identifierar fall där datapunkter för en dimension inte är långt från medelvärdet, så att "variansen" är lågt. Anta att du har måttet "försäljning" och dimensionen "region". Och när du tittar på regionen ser du att det är en väldigt liten skillnad mellan datapunkterna och deras medelvärde. Insikten utlöses när försäljningsvariansen för alla regioner ligger under tröskelvärdet. Det sker, med andra ord, när försäljningen är i stort sett likadan i alla regioner.
 
 ![Exempel på låg varians](./media/end-user-insight-types/power-bi-low-variance.png)
 
@@ -75,7 +75,9 @@ Söker efter periodiska mönster i tidsseriedata, till exempel säsongsvärdet f
 ![Exempel på säsongsvärde](./media/end-user-insight-types/pbi-auto-insight-types-seasonality-new.png)
 
 ### <a name="steady-share"></a>Stadig resurs
-Visar fall där det finns en överordnad-underordnad korrelation mellan andelen av det underordnade värdet i förhållande till det övergripande värdet för det överordnade över en kontinuerlig variabel.
+Visar fall där det finns en överordnad-underordnad korrelation mellan andelen av det underordnade värdet i förhållande till det övergripande värdet för det överordnade över en kontinuerlig variabel. Den stabila resursinsikten gäller kontexten för ett mått, en dimension och en annan datum/tidsdimension. Den här insikten utlöses när ett visst dimensionsvärde, t.ex. "nordöstra regionen", har en stadig procentandel av den övergripande försäljningen för den datum/tidsdimensionen.
+
+Den stabila resursinsikten liknar insikten med låg varians, eftersom båda två relaterar till bristen på varians för ett värde över tid. De stabila resursinsiktsmåtten mäter dock bristen på varians i den **övergripande procentandelen** över tid, medan insikten med låg varians mäter bristen på varians för de absoluta mätvärdena i en dimension.
 
 ![Exempel på stadig resurs](./media/end-user-insight-types/pbi-auto-insight-types-steadyshare.png)
 

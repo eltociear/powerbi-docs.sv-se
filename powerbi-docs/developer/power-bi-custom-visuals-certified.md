@@ -8,13 +8,13 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
-ms.date: 01/12/2019
-ms.openlocfilehash: 4ffab3913560498dd57103f0a25c39f7a03a42ec
-ms.sourcegitcommit: 75300b3f53f438ed7d3bd4edc93b9eb5925bf3af
+ms.date: 02/17/2020
+ms.openlocfilehash: 52a99380f8e1afc39ddfc59a401418e61fe6ad58
+ms.sourcegitcommit: ec4d2d0f52d737e8e0583f6a7b16e6fd87382510
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "77026679"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77782416"
 ---
 # <a name="get-a-power-bi-visual-certified"></a>Certifiera ett visuellt Power BI-objekt
 
@@ -43,11 +43,13 @@ När du skickar det visuella Power BI-objektet ska du se till att det kompilerad
 
 Även om du inte behöver dela koden offentligt i GitHub måste kodlagringsplatsen vara tillgänglig för granskning av Power BI-teamet. Det bästa sättet att göra det på är genom att tillhandahålla källkoden (Java Script eller TypeScript) i GitHub.
 
-Lagringsplatsen får bara innehålla kod för ett visuellt Power BI-objekt. Den får inte innehålla kod för flera visuella Power BI-objekt eller orelaterad kod.
-
-Lagringsplatsen måste innehålla en gren med namnet **certification** (skrivet med gemener). Källkoden i den här grenen måste matcha det skickade paketet. Den här koden kan bara uppdateras under nästa sändningsprocess om du skickar in det visuella Power BI-objektet igen.
+Lagringsplatsen måste innehålla följande:
+* Kod för endast ett visuellt Power BI-objekt. Den får inte innehålla kod för flera visuella Power BI-objekt eller orelaterad kod.
+* En gren med namnet **certification** (skrivet med gemener). Källkoden i den här grenen måste matcha det skickade paketet. Den här koden kan bara uppdateras under nästa sändningsprocess om du skickar in det visuella Power BI-objektet igen.
 
 Om ditt visuella Power BI-objekt använder privata NPM-paket eller Git-delmoduler måste du ge åtkomst till de övriga lagringsplatserna som innehåller den här koden.
+
+Om du vill förstå hur en visuell Power BI-lagringsplats ser ut, så ta en titt på GitHub-lagringsplatsen för [exempelstapeldiagrammet för visuella Power BI-objekt](https://github.com/microsoft/PowerBI-visuals-sampleBarChartgi).
 
 ### <a name="file-requirements"></a>Filkrav
 
@@ -113,6 +115,18 @@ Så här begär du Power BI-certifiering:
 
 >[!NOTE]
 > Om du är mitt i en inlämningsprocess för ett visuellt Power BI-objekt och måste använda [Seller Dashboard](https://docs.microsoft.com/office/dev/store/use-the-seller-dashboard-to-submit-to-the-office-store) (det gamla hanteringsverktyget) hittar du information i anvisningarna [Sändnings process för Seller Dashboard](seller-dashboard.md#seller-dashboard-certification-submission-process).
+
+### <a name="private-repository-submission-process"></a>Process för överföring av privat lagringsplats
+
+Om du använder en privat lagringsplats, t.ex. GitHub, för att skicka in dina visuella Power BI-objekt för certifiering, så följ anvisningarna i det här avsnittet.
+1. Skapa ett nytt konto för valideringsteamet.
+2. Konfigurera [tvåfaktorautentisering](https://help.github.com/github/authenticating-to-github/securing-your-account-with-two-factor-authentication-2fa) för ditt konto.
+3. [Generera en ny uppsättning återställningskoder](https://help.github.com/github/authenticating-to-github/configuring-two-factor-authentication-recovery-methods#generating-a-new-set-of-recovery-codes).
+4. När du skickar in ditt visuella Power BI-objekt, så ange följande:
+    * En länk till lagringsplatsen
+    * Inloggningsuppgifter (inklusive lösenord)
+    * Återställningskoder
+    * Läs behörighet till vårt konto ([pbicvsupport](https://github.com/pbicvsupport))
 
 ## <a name="certified-power-bi-visuals"></a>Certifierade visuella Power BI-objekt
 

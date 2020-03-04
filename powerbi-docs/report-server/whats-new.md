@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/23/2020
-ms.openlocfilehash: d4e233e55731d77d4136c1b6ef1e341a2d043234
-ms.sourcegitcommit: 75300b3f53f438ed7d3bd4edc93b9eb5925bf3af
+ms.date: 02/27/2020
+ms.openlocfilehash: 251f89dd031d9a2bda146266308dc528f05eddb2
+ms.sourcegitcommit: ec4d2d0f52d737e8e0583f6a7b16e6fd87382510
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "77026725"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77782435"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Nyheter i Power BI-rapportserver
 
@@ -165,6 +165,10 @@ Anger rubrikvärden för alla URL:er som matchar det angivna regex-mönstret. An
 #### <a name="transparent-database-encryption"></a>Transparent databaskryptering
 
 Power BI-rapportserver stöder nu transparent databaskryptering för Power BI-rapportserverns databaskatalog för Enterprise- och Standard-utgåvorna.
+
+#### <a name="power-bi-visuals-api"></a>API för visuella Power BI-objekt
+
+Den API-version som levereras med den här versionen är 2.6.
 
 #### <a name="microsoft-report-builder-update"></a>Microsoft Report Builder-uppdatering
 
@@ -446,34 +450,34 @@ I mars 2018 har många nya funktioner lagts till i versionen av Power BI Desktop
 
 I den långa listan över nya funktioner är de här funktionerna särskilt intressanta.
 
-#### <a name="rule-based-conditional-formatting-for-table-and-matrixhttpspowerbimicrosoftcomblogpower-bi-desktop-november-2017-feature-summaryconditionalformatting"></a>[Regelbaserad villkorsstyrd formatering för tabeller och matriser](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#conditionalFormatting)
+#### <a name="rule-based-conditional-formatting-for-table-and-matrix"></a>[Regelbaserad villkorsstyrd formatering för tabeller och matriser](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#conditionalFormatting)
 
 Skapa regler för att villkorligt ange färg på bakgrunden eller teckenfärg för en kolumn baserat på särskild affärslogik i din tabell eller matris.
 
-#### <a name="show-and-hide-pageshttpspowerbimicrosoftcomblogpower-bi-desktop-january-2018-feature-summaryhidepages"></a>[Visa och dölja sidor](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#hidePages)
+#### <a name="show-and-hide-pages"></a>[Visa och dölja sidor](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#hidePages)
 
 Du kanske vill att läsarna ska ha åtkomst till din rapport, men vissa av sidorna är inte riktigt klara. Nu kan du dölja dem tills du är färdig med dem. Eller så kan du dölja sidor från den normala navigeringen och låta läsarna navigera till dem via bokmärken eller genom att visa mer detaljerad information.
 
-#### <a name="bookmarkinghttpspowerbimicrosoftcomblogpower-bi-desktop-march-2018-feature-summarybookmarking"></a>[Skapa bokmärken](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#bookmarking)
+#### <a name="bookmarking"></a>[Skapa bokmärken](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#bookmarking)
 
 Du kan använda bokmärken för att skapa en berättelse med data i din rapport.
 
 - [Korsmarkering för bokmärken](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#bookmarkCrossHighlighting): Bokmärken sparar och visar det korsmarkerade tillståndet för rapportsidan vid tidpunkten då du skapade bokmärket.
 - [Ökad flexibilitet för bokmärken](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#bookmarkFlexibility): Bokmärken återspeglar egenskaperna som du anger i din rapport och påverkar endast de visuella objekt som du väljer.
 
-#### <a name="multi-select-data-points-across-multiple-chartshttpspowerbimicrosoftcomblogpower-bi-desktop-february-2018-feature-summarycrosshighlight"></a>[Välja flera datapunkter över flera diagram](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#crosshighlight)
+#### <a name="multi-select-data-points-across-multiple-charts"></a>[Välja flera datapunkter över flera diagram](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#crosshighlight)
 
 Välj flera datapunkter i flera diagram och tillämpa korsfiltrering på hela sidan.
 
-#### <a name="sync-slicers-across-multiple-pages-of-your-reporthttpspowerbimicrosoftcomblogpower-bi-desktop-february-2018-feature-summarysyncslicers"></a>[Synkronisera utsnitt över flera sidor i en rapport](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#syncSlicers)
+#### <a name="sync-slicers-across-multiple-pages-of-your-report"></a>[Synkronisera utsnitt över flera sidor i en rapport](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#syncSlicers)
 
 Ett utsnitt kan tillämpas på en, två eller fler sidor i en rapport.
 
-#### <a name="quick-measureshttpspowerbimicrosoftcomblogpower-bi-desktop-february-2018-feature-summaryquickmeasures"></a>[Snabbmått](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#quickMeasures) 
+#### <a name="quick-measures"></a>[Snabbmått](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#quickMeasures) 
 
 Skapa nya mått baserat på befintliga mått och numeriska kolumner i en tabell.
 
-#### <a name="drilling-down-filters-other-visualshttpspowerbimicrosoftcomblogpower-bi-desktop-december-feature-summarydrillfiltersothervisuals"></a>[Vid visning av detaljerad information filtreras andra visuella objekt](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#drillFiltersOtherVisuals)
+#### <a name="drilling-down-filters-other-visuals"></a>[Vid visning av detaljerad information filtreras andra visuella objekt](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#drillFiltersOtherVisuals)
 
 När du visar mer detaljerad information i en viss kategori i ett visuellt objekt kan du låta alla visuella objekt på sidan filtreras på samma kategori.
 

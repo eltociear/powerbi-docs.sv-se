@@ -1,29 +1,29 @@
 ---
 title: Power BI-integrering med Power Automate
-description: Lär dig mer om att skapa flöden som utlösts av Power BI-datavarningar.
+description: Lär dig mer om att skapa Power Automate-flöden som utlösts av Power BI-datavarningar.
 author: maggiesMSFT
 ms.reviewer: ''
 featuredvideoid: YhmNstC39Mw
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/01/2018
+ms.date: 02/25/2020
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: e9c6185506d1992a46ee14ff1eafe0c37d9f65c1
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: aafba825c5bd4ece3c8b97256d5943f91b456cd7
+ms.sourcegitcommit: 032a77f2367ca937f45e7e751997d7b7d0e89ee2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "75223788"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609688"
 ---
 # <a name="power-automate-and-power-bi"></a>Power Automate och Power BI
 
-[Power Automate](https://docs.microsoft.com/power-automate/getting-started) är ett SaaS-erbjudande för automatisering av arbetsflöden i det växande antalet program och SaaS-tjänster som användare i verksamheten förlitar sig på. Du kan använda Flow för att automatisera uppgifter genom att integrera dina favorit-appar och -tjänster (inklusive Power BI) om du vill få meddelanden, synkronisera filer, samla in data med mera. Återkommande uppgifter blir enkelt med automatisering av arbetsflödet.
+[Power Automate](https://docs.microsoft.com/power-automate/getting-started) är ett SaaS-erbjudande för automatisering av arbetsflöden i det växande antalet program och SaaS-tjänster som användare i verksamheten förlitar sig på. Du kan använda Power Automate för att automatisera uppgifter genom att integrera dina favorit-appar och -tjänster (inklusive Power BI) om du vill få meddelanden, synkronisera filer, samla in data med mera. Återkommande uppgifter blir enkelt med automatisering av arbetsflödet.
 
-[Kom igång med Flow nu.](https://docs.microsoft.com/power-automate/getting-started)
+[Kom igång med att använda Power Automate nu.](https://docs.microsoft.com/power-automate/getting-started)
 
-Titta på när Sirui skapar ett flöde som skickar ett detaljerat e-postmeddelande till kollegor när en Power BI-avisering utlöses. Prova sedan själv genom att följa de stegvisa anvisningarna under videon.
+Titta på när Sirui skapar ett Power Automate-flöde som skickar ett detaljerat e-postmeddelande till kollegor när en Power BI-avisering utlöses. Prova sedan själv genom att följa de stegvisa anvisningarna under videon.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/YhmNstC39Mw" frameborder="0" allowfullscreen></iframe>
 
@@ -38,7 +38,7 @@ I den här uppgiften använder vi en mall för att skapa ett enkelt flöde som u
 1. Logga in till Power Automate (flow.microsoft.com).
 2. Välj **Mina flöden**.
    
-   ![Menyraden Flöde](media/service-flow-integration/power-bi-my-flows.png)
+   ![Power Automate-menyraden](media/service-flow-integration/power-bi-my-flows.png)
 3. Välj **Skapa från mall**.
    
     ![Menyraden Mina flöden](media/service-flow-integration/power-bi-template.png)
@@ -48,7 +48,7 @@ I den här uppgiften använder vi en mall för att skapa ett enkelt flöde som u
 
 
 ### <a name="build-the-flow"></a>Skapa flödet
-Den här mallen har en utlösare (Power BI-datavarning för nya OS-medaljer för Irland) och en åtgärd (skicka ett e-postmeddelande). När du markerar ett fält visar flödet dynamiskt innehåll som ska inkluderas.  I det här exemplet har vi inkluderat panelvärdet och panelens URL i meddelandekroppen.
+Den här mallen har en utlösare (Power BI-datavarning för nya OS-medaljer för Irland) och en åtgärd (skicka ett e-postmeddelande). När du markerar ett fält visar Power Automate dynamiskt innehåll som ska inkluderas.  I det här exemplet har vi inkluderat panelvärdet och panelens URL i meddelandetexten.
 
 ![flödesmall](media/service-flow-integration/power-bi-template1.png)
 
@@ -59,7 +59,7 @@ Den här mallen har en utlösare (Power BI-datavarning för nya OS-medaljer för
    
    ![Skärmen Skicka ett e-postmeddelande](media/service-flow-integration/power-bi-flow-email.png)
 
-3. Flow skapar en rubrik och ett meddelande som du kan behålla eller ändra. Alla värden som du angav när du skapade varningen i Power BI är tillgängliga för dig – bara placera markören och välj det gråmarkerade området. 
+3. Power Automate skapar en rubrik och ett meddelande som du kan behålla eller ändra. Alla värden som du angav när du skapade varningen i Power BI är tillgängliga för dig – bara placera markören och välj det gråmarkerade området. 
 
    ![Skärmen Skicka ett e-postmeddelande](media/service-flow-integration/power-bi-flow-email-default.png)
 
@@ -69,7 +69,7 @@ Den här mallen har en utlösare (Power BI-datavarning för nya OS-medaljer för
 
     Och du kan acceptera standardtexten för e-postmeddelandet eller skapa din egen text. Exemplet ovan innehåller några ändringar i meddelandet.
 
-1. När du är klar väljer du **Skapa flödet** eller **Spara flöde**.  Flödet skapas och utvärderas.  Flödet meddelar om några fel påträffas.
+1. När du är klar väljer du **Skapa flödet** eller **Spara flöde**.  Flödet skapas och utvärderas.  Power Automate meddelar om några fel påträffas.
 2. Om fel hittas, välj **Redigera flödet** åtgärda dem, välj annars **Klar** för att köra det nya flödet.
    
    ![meddelande om slutförande](media/service-flow-integration/power-bi-flow-running.png)
@@ -77,13 +77,13 @@ Den här mallen har en utlösare (Power BI-datavarning för nya OS-medaljer för
    
    ![aviseringsmeddelande](media/service-flow-integration/power-bi-flow-email2.png)
 
-## <a name="create-a-flow-that-uses-power-bi---from-scratch-blank"></a>Skapa ett flöde som använder Power BI – från början (tomt)
+## <a name="create-a-power-automate-that-uses-power-bi---from-scratch-blank"></a>Skapa en Power Automate som använder Power BI – från början (tomt)
 I den här uppgiften skapar vi ett enkelt flöde från början som utlöses av en Power BI-datavarning (meddelande).
 
 1. Logga in till Power Automate.
 2. Välj **Mina flöden** > **Skapa från början**.
    
-   ![Översta menyraden Flöde](media/service-flow-integration/power-bi-my-flows.png)
+   ![Power Automate-toppmenyraden](media/service-flow-integration/power-bi-my-flows.png)
 3. Använd sökrutan för att hitta en Power BI-utlösare och välj **Power BI – när en datadriven varning utlöses**.
 
 ### <a name="build-your-flow"></a>Skapa ditt flöde
@@ -96,15 +96,15 @@ I den här uppgiften skapar vi ett enkelt flöde från början som utlöses av e
 3. Sök efter **Outlook** och välj **Skapa en händelse**.
    
    ![skapa flödet](media/service-flow-integration/power-bi-create-event.png)
-4. Fyll i händelsefälten. När du markerar ett fält visar flödet dynamiskt innehåll som ska inkluderas.
+4. Fyll i händelsefälten. När du markerar ett fält visar Power Automate dynamiskt innehåll som ska inkluderas.
    
    ![fortsätta skapa flödet](media/service-flow-integration/power-bi-flow-event.png)
-5. Välj **Skapa flöde** när du är klar.  Flow sparar och utvärderar flödet. Om det inte finns några fel, välj **Klar** för att köra detta flöde.  Det nya flödet har lagts till på din sida **Mina flöden**.
+5. Välj **Skapa flöde** när du är klar.  Power Automate sparar och utvärderar flödet. Om det inte finns några fel, välj **Klar** för att köra detta flöde.  Det nya flödet har lagts till på din sida **Mina flöden**.
    
    ![Slutför flödet](media/service-flow-integration/power-bi-flow-running.png)
 6. När flödet utlöses av Power BI-datavarningen, får du ett Outlook-händelsemeddelande som liknar det här.
    
-    ![Flödet utlöser Outlook-meddelande](media/service-flow-integration/power-bi-flow-notice.png)
+    ![Power Automate utlöser Outlook-meddelande](media/service-flow-integration/power-bi-flow-notice.png)
 
 ## <a name="next-steps"></a>Nästa steg
 * [Kom igång med Power Automate](https://docs.microsoft.com/power-automate/getting-started/)

@@ -7,18 +7,18 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 12/18/2019
+ms.date: 02/25/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 044952c6ce5e3b1550067f9d288f8eab02b868bb
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: 4f256d9b0cbecf76ff002cc0214155b8b36014ee
+ms.sourcegitcommit: 032a77f2367ca937f45e7e751997d7b7d0e89ee2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75223716"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609903"
 ---
 # <a name="large-models-in-power-bi-premium-preview"></a>Stora modeller i Power BI Premium (förhandsversion)
 
-Power BI-datamängder kan lagra data i en mycket komprimerad minnesintern cache för optimerad frågeprestanda. Detta möjliggör snabb användarinteraktivitet i stora datamängder. Funktionen med stora modeller innebär att datamängder i Power BI Premium kan bli större än 10 GB. Storleken på datamängden begränsas i stället av Power BI Premium-kapacitetens storlek. Detta liknar hur Azure Analysis Services fungerar avseende storleksbegränsningar för modeller. Mer information om kapacitetsstorlekar i Power BI Premium finns i Kapacitetsnoder. Du kan konfigurera stora modeller för alla Premium P SKU:er och inbäddade A SKU:er, men de fungerar bara med [nya arbetsytor](service-create-the-new-workspaces.md).
+Power BI-datamängder kan lagra data i en mycket komprimerad minnesintern cache för optimerad frågeprestanda, så att snabb användarinteraktivitet för stora datamängder kan aktiveras för stora datamängder. Funktionen med stora modeller innebär att datamängder i Power BI Premium kan bli större än 10 GB. Datamängdens storlek begränsas i stället av kapacitetsstorleken för Power BI Premium, vilket liknar hur Azure Analysis Services fungerar med avseende på storleksbegränsningar för modeller. Mer information om kapacitetsstorlekar i Power BI Premium finns i Kapacitetsnoder. Du kan konfigurera stora modeller för alla Premium P SKU:er och inbäddade A SKU:er, men de fungerar bara med [nya arbetsytor](service-create-the-new-workspaces.md).
 
 Stora modeller påverkar inte PBIX-uppladdningsstorleken, som fortfarande är begränsad till 10 GB. I stället kan datamängderna bli större än 10 GB i tjänsten vid uppdatering. Du kan använda stegvis uppdatering om du vill konfigurera att en datamängd kan bli större än 10 GB.
 
@@ -90,7 +90,7 @@ Du kan kontrollera statusen för datamängdskonverteringar till och från Premiu
 
 Power BI använder dynamisk minneshantering för att ta bort inaktiva datamängder från minnet. Power BI tar bort datamängderna så att andra datamängder kan läsas in för användarfrågor. Med dynamisk minneshantering kan summan av datamängdsstorlekarna vara betydligt större än det tillgängliga minnet i kapaciteten, men en enskild datamängd måste få plats i minnet. Mer information om dynamisk minneshantering finns i [Så här fungerar kapaciteter](service-premium-what-is.md#how-capacities-function).
 
-Du bör ta hänsyn till effekten när stora modeller tas bort. Trots relativt snabba inläsningstider av datamängderna, kan det fortfarande uppstå en märkbar fördröjning för användarna om de behöver vänta på att stora borttagna datamängder ska läsas in igen. Av den anledningen rekommenderas funktionen för stora modeller i nuvarande form främst för kapaciteter som är avsedda för företagens BI-krav, i stället för de som är blandade med krav på självservice-BI. Det är mindre sannolikt att kapaciteter som är avsedda för företagens BI-krav ofta utlöser borttagning och att datamängderna behöver läsas in igen. Kapaciteter för självservice-BI kan å andra sidan ha många små datamängder som ofta läses in och ut från minnet.
+Du bör ta hänsyn till effekten när stora modeller tas bort. Trots relativt snabba inläsningstider av datamängderna, kan det fortfarande uppstå en märkbar fördröjning för användarna om de behöver vänta på att stora borttagna datamängder ska läsas in igen. Av den anledningen rekommenderas funktionen för stora modeller i nuvarande form främst för kapaciteter som är dedikerade för företagens BI-krav, i stället för kapaciteter som är blandade med krav på självservice-BI. Det är mindre sannolikt att kapaciteter som är avsedda för företagens BI-krav ofta utlöser borttagning och att datamängderna behöver läsas in igen. Kapaciteter för självservice-BI kan å andra sidan ha många små datamängder som ofta läses in och ut från minnet.
 
 ## <a name="checking-dataset-size"></a>Kontrollera datamängdsstorlek
 
@@ -110,7 +110,7 @@ SELECT * FROM SYSTEMRESTRICTSCHEMA
  [DATABASE_NAME] = '<Dataset Name>') //Sum USED_SIZE (bytes)
 ```
 
-## <a name="current-feature-restrictions"></a>Aktuella funktionsbegränsningar
+## <a name="limitations-and-considerations"></a>Begränsningar och överväganden
 
 Tänk på följande begränsningar när du använder stora modeller:
 
@@ -118,4 +118,46 @@ Tänk på följande begränsningar när du använder stora modeller:
 - **Stöd för Multi-Geo**: Datamängder som är aktiverade för Premium-filer kommer inte att fungera i kapaciteter där [Multi-Geo](service-admin-premium-multi-geo.md) också är aktiverat.
 
 - **Ladda ned till Power BI Desktop**: Om en datamängd lagras på Premium-filer kommer [nedladdning som .pbix](service-export-to-pbix.md)-fil att misslyckas.
-- **Regioner som stöds**: Stora modeller stöds i alla Azure-regioner som stöder lagring av Premium-filer. Mer information finns i [Produkttillgänglighet per region](https://azure.microsoft.com/global-infrastructure/services/?products=storage).
+- **Regioner som stöds**: Stora modeller stöds i alla Azure-regioner som stöder lagring av Premium-filer. Mer information finns i [Produkttillgänglighet efter region](https://azure.microsoft.com/global-infrastructure/services/?products=storage). Se även tabellen i följande avsnitt.
+
+
+## <a name="availability-in-regions"></a>Tillgänglighet i regioner
+
+Stora modeller är inte tillgängliga i alla regioner där Power BI erbjuds. Stora modeller i Power BI är endast tillgängliga i Azure-regioner som stöder [Azure Premium-fillagring](https://docs.microsoft.com/azure/storage/files/storage-files-planning#file-share-performance-tiers).
+
+Följande lista visar i vilka regioner de största Power BI-modellerna är tillgängliga. Regioner som inte finns med på följande lista stöds inte för stora modeller:
+
+
+|Azure-region  |Förkortning av Azure-region  |
+|---------|---------|
+|Australien, östra     | australienöstra        |
+|Australien, sydöstra     | australiensydöstra        |
+|USA, centrala     | usacentrala        |
+|Asien, östra     | eastasia        |
+|USA, östra     | eastus        |
+|USA, östra 2     | usaöstra2        |
+|Japan, östra     | japanöstra        |
+|Japan, västra     | japanvästra        |
+|Sydkorea, centrala     | koreacentrala        |
+|Sydkorea, södra     | koreasödra        |
+|USA, norra centrala     | usanorracentrala        |
+|Europa, norra     | northeurope        |
+|USA, södra centrala     | southcentralus        |
+|Sydostasien     | sydostasien        |
+|Storbritannien, södra     | södrastorbritannien        |
+|Storbritannien, västra     | västrastorbritannien        |
+|Europa, västra     | västeuropa        |
+|USA, västra     | westus        |
+|USA, västra 2     | westus2        |
+
+
+
+## <a name="next-steps"></a>Nästa steg
+
+Följande länk erbjuder information som du kan ha glädje av när du arbetar med stora modeller:
+
+* [Azure Premium-fillagring](https://docs.microsoft.com/azure/storage/files/storage-files-planning#file-share-performance-tiers)
+* [Konfigurera Multi-Geo-stöd för Power BI Premium](service-admin-premium-multi-geo.md)
+* [Använda egna krypteringsnycklar för Power BI](service-encryption-byok.md)
+* [Så fungerar kapaciteter](service-premium-what-is.md#how-capacities-function)
+* [Inkrementell uppdatering](service-premium-incremental-refresh.md).

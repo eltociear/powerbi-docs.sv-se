@@ -8,19 +8,19 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 12/12/2018
-ms.openlocfilehash: c3e2327131ae82fa025236c9242476466b6d9074
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: a0f4808aaf267e3cdb822e8778005c2eca247cb5
+ms.sourcegitcommit: 82c41f91055da8c1cc5d8cc67927d5246d11247b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73864062"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "78199014"
 ---
 # <a name="power-bi-embedded-performance-best-practices"></a>Bästa praxis för Power BI Embedded-prestanda
 
 Den här artikeln innehåller rekommendationer för snabbare rendering av rapporter, instrumentpaneler och paneler i ditt program.
 
 > [!Note]
-> Kom ihåg att inläsningstiden huvudsakligen beror på element som är relevanta för själva rapporten och data, däribland visuella objekt, storleken på data samt komplexiteten för frågorna och beräknade mått. Mer information finns i [Bästa praxis för Power BI-prestanda](../power-bi-reports-performance.md).
+> Kom ihåg att inläsningstiden huvudsakligen beror på element som är relevanta för själva rapporten och data, däribland visuella objekt, storleken på data samt komplexiteten för frågorna och beräknade mått. Mer information finns i [Power BI-optimeringsguiden](../guidance/power-bi-optimization.md).
 
 ## <a name="update-tools-and-sdk-packages"></a>Uppdatera verktyg och SDK-paket
 
@@ -106,6 +106,6 @@ Med Prestandaanalys kan du se och registrera loggar som mäter hur var och en av
 
 ## <a name="next-steps"></a>Nästa steg
 
-* [Bästa praxis för Power BI-rapportprestanda](../power-bi-reports-performance.md)
+* [Power BI-optimeringsguiden](../guidance/power-bi-optimization.md)
 * [Så här felsöker du problem i Power BI Embedded](embedded-troubleshoot.md)
 * [Vanliga frågor och svar om Power BI Embedded](embedded-faq.md)

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 02/10/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 014186acf6bf6b8c00686c0b7a29d0b526b0afb7
-ms.sourcegitcommit: e27d40054949421701f829113c4a5f6d260c8d5f
+ms.openlocfilehash: de0328a35922279082c93a9a2d2a4948f1af7dc5
+ms.sourcegitcommit: 4d98274aa0b9aa09db99add2dda91a3ba8fed40b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "77154321"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576807"
 ---
 # <a name="tables-in-power-bi-reports-and-dashboards"></a>Tabeller i Power BI-rapporter och instrumentpaneler
 
@@ -175,7 +175,10 @@ Power BI trunkerar ibland en kolumnrubrik i en rapport eller på en instrumentpa
 
 ## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
 
-Om du lägger till kolumnformatering kan du bara välja ett justeringsalternativ per kolumn: **automatisk justering**, **vänsterjustering**, **centrering**, **högerjustering**. Oftast innehåller en kolumn antingen text eller tal, inte en blandning av både text och tal. Om en kolumn innehåller både tal och text, vänsterjusteras texten och talen högerjusteras om du väljer **Auto**. Det här beteendet används med ”vänster till höger”-språk.
+* Om du lägger till kolumnformatering kan du bara välja ett justeringsalternativ per kolumn: **automatisk justering**, **vänsterjustering**, **centrering**, **högerjustering**. Oftast innehåller en kolumn antingen text eller tal, inte en blandning av både text och tal. Om en kolumn innehåller både tal och text, vänsterjusteras texten och talen högerjusteras om du väljer **Auto**. Det här beteendet används med ”vänster till höger”-språk.
+
+* Om textdata i tabellens celler eller rubriker innehåller tecken för ny rad, så ignoreras dessa tecken om du inte växlar alternativet "Automatiskt radbyte" i elementets associerade formatpanelskort. 
+
 
 ## <a name="next-steps"></a>Nästa steg
 
