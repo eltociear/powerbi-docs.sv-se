@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/30/2019
 ms.author: v-pemyer
-ms.openlocfilehash: a0127a6ffa0d698a94e368532c44d0f83c362b42
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 49601798ae920d956441c5580079625bf7408e07
+ms.sourcegitcommit: b59ec11a4a0a3d5be2e4d91548d637d31b3491f8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "75002407"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78290591"
 ---
 # <a name="referencing-power-query-queries"></a>Referera till Power Query-frågor
 
@@ -54,5 +54,5 @@ Mer information om ämnet i den här artikeln finns i följande resurser:
 
 - [Dataförberedelser med självbetjäning i Power BI](../service-dataflows-overview.md)
 - [Skapa och använda dataflöden i Power BI](../service-dataflows-create-use.md)
-- Videon Guy in a Cube: [Inuti Power Query-referensfrågor för Power BI och Excel](https://www.youtube.com/watch?v=3uKNNZqBIkg)
 - Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+- Har du förslag? [Bidra till att förbättra Power BI](https://ideas.powerbi.com/)

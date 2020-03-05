@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 826af7b224b901b6dc9f3926260b1d920836a792
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: f86317b12e3637d6522eebc2f304786c1b39c083
+ms.sourcegitcommit: b59ec11a4a0a3d5be2e4d91548d637d31b3491f8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76040349"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78290623"
 ---
 # <a name="extend-visuals-with-report-page-tooltips"></a>Utöka visuella objekt med knappbeskrivningar för rapportsidor
 
@@ -88,5 +88,5 @@ Mer information om ämnet i den här artikeln finns i följande resurser:
 - [Skapa knappbeskrivningar baserat på rapportsidor i Power BI Desktop](../desktop-tooltips.md)
 - [Anpassa knappbeskrivningar i Power BI Desktop](../desktop-custom-tooltips.md)
 - [Använda visuella element för att förbättra Power BI-rapporter](../desktop-visual-elements-for-reports.md)
-- Videon Guy in a Cube: [Knappbeskrivningar i Power BI-rapporter – så skapar du dem i Power BI Desktop](https://www.youtube.com/watch?v=URTA7JZsAtw)
 - Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+- Har du förslag? [Bidra till att förbättra Power BI](https://ideas.powerbi.com/)
