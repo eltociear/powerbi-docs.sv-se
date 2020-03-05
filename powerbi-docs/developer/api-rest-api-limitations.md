@@ -30,7 +30,7 @@ ms.locfileid: "74265630"
 * Max 5 000 000 rader lagras per tabell i datauppsätting utan bevarandeprincip  
 * 4 000 tecken per värde för strängkolumn i POST-radsåtgärd
   
-## <a name="see-also"></a>Se också
+## <a name="see-also"></a>Se även
 
 [Azure AD-tjänsten gränser och begränsningar](https://docs.microsoft.com/azure/active-directory/active-directory-service-limits-restrictions)   
 [Översikt över Power BI REST API](https://docs.microsoft.com/rest/api/power-bi/)

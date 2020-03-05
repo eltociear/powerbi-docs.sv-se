@@ -65,11 +65,11 @@ Det är viktigt att observera att om du vill ta bort en kapacitet utan att tilld
 
 Vi har gjort några ändringar i befintliga API: er för att stödja hantering av kapaciteter med Multi-Geo via API:
 
-1. **[Hämta kapaciteter](https://docs.microsoft.com/rest/api/power-bi/capacities/getcapacities)**  – API:n returnerar en lista med kapaciteter med åtkomst till användaren. Svaret innehåller nu en annan egenskap som kallas ”region”, som anger den kapacitetens plats.
+1. **[Hämta kapaciteter](https://docs.microsoft.com/rest/api/power-bi/capacities/getcapacities)** – API:n returnerar en lista med kapaciteter med åtkomst till användaren. Svaret innehåller nu en annan egenskap som kallas ”region”, som anger den kapacitetens plats.
 
-2. **[Tilldela till kapacitet](https://docs.microsoft.com/rest/api/power-bi/capacities)**  – API:n gör att du kan tilldela en kapacitet en viss arbetsyta. Den här åtgärden låter dig inte tilldela en kapacitet utanför din hemregion arbetsytor eller flytta arbetsytor mellan olika kapaciteter i olika regioner. Om du vill göra det måste användaren eller [tjänstens huvudnamn](embed-service-principal.md) ha administratörsbehörigheter på arbetsytan och administrera eller tilldela behörighet på målkapaciteten.
+2. **[Tilldela till kapacitet](https://docs.microsoft.com/rest/api/power-bi/capacities)** – API:n gör att du kan tilldela en kapacitet en viss arbetsyta. Den här åtgärden låter dig inte tilldela en kapacitet utanför din hemregion arbetsytor eller flytta arbetsytor mellan olika kapaciteter i olika regioner. Om du vill göra det måste användaren eller [tjänstens huvudnamn](embed-service-principal.md) ha administratörsbehörigheter på arbetsytan och administrera eller tilldela behörighet på målkapaciteten.
 
-3. **[Azure Resource Manager API](https://docs.microsoft.com/rest/api/power-bi-embedded/capacities)**  – alla Azure Resource Manager API-åtgärder, inklusive *Skapa* och *Ta bort*, har stöd för Multi-Geo.
+3. **[Azure Resource Manager API](https://docs.microsoft.com/rest/api/power-bi-embedded/capacities)** – alla Azure Resource Manager API-åtgärder, inklusive *Skapa* och *Ta bort*, har stöd för Multi-Geo.
 
 ## <a name="limitations-and-considerations"></a>Begränsningar och överväganden
 

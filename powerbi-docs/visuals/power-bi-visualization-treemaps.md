@@ -84,7 +84,7 @@ När du har hämtat datamängden **Exempel på detaljhandelsanalys** kan du sät
 Du skapar en rapport och lägger till en grundläggande trädkarta.
 
 
-1. I fönstret **Fält** väljer du måtten **Försäljning**  >  **Senaste årets försäljning**.
+1. I fönstret **Fält** väljer du måtten **Försäljning** > **Senaste årets försäljning**.
 
    ![Skärmbild av Försäljning > Senaste årets försäljning valt och det resulterande visuella objektet.](media/power-bi-visualization-treemaps/treemapfirstvalue-new.png)
 
