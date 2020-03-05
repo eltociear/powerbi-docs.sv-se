@@ -12,12 +12,12 @@ metadata:
   author: maggiesMSFT
   ms.author: maggies
   ms.date: 01/14/2020
-  ms.openlocfilehash: 9bb2835003d774bcc878114dbcc669a0bff7ff89
-  ms.sourcegitcommit: d65da4738f011beec8f4423085cbd483511cdfb0
+  ms.openlocfilehash: 23792d8d132702860c611623fc3888debe07cfed
+  ms.sourcegitcommit: d55d3089fcb3e78930326975957c9940becf2e76
   ms.translationtype: HT
   ms.contentlocale: sv-SE
-  ms.lasthandoff: 03/03/2020
-  ms.locfileid: "78237786"
+  ms.lasthandoff: 03/04/2020
+  ms.locfileid: "78260702"
 landingContent:
 - title: Power BI-vägledning
   linkLists:
@@ -51,12 +51,20 @@ landingContent:
       url: import-modeling-data-reduction.md
     - text: Vägledning för automatiskt datum/tid
       url: auto-date-time.md
+    - text: En-till-en-relationer
+      url: relationships-one-to-one.md
+    - text: Många-till-många-relationer
+      url: relationships-many-to-many.md
+    - text: Aktiva kontra inaktiva relationer
+      url: relationships-active-inactive.md
+    - text: Dubbelriktade relationer
+      url: relationships-bidirectional-filtering.md
+    - text: Felsökning av relationer
+      url: relationships-troubleshoot.md
     - text: Vägledning för DirectQuery-modell
       url: directquery-model-guidance.md
     - text: Vägledning för sammansatt modell
       url: composite-model-guidance.md
-    - text: Vägledning för att lägga till en många-till-många-relationer
-      url: relationships-many-to-many.md
 - title: DAX
   linkLists:
   - linkListType: concept

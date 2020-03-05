@@ -30,8 +30,16 @@
               href: import-modeling-data-reduction.md
             - name: Vägledning för automatiskt datum/tid
               href: auto-date-time.md
-            - name: Vägledning för att lägga till en många-till-många-relationer
+            - name: En-till-en-relationer
+              href: relationships-one-to-one.md
+            - name: Många-till-många-relationer
               href: relationships-many-to-many.md
+            - name: Aktiva kontra inaktiva relationer
+              href: relationships-active-inactive.md
+            - name: Dubbelriktade relationer
+              href: relationships-bidirectional-filtering.md
+            - name: Felsökning av relationer
+              href: relationships-troubleshoot.md
             - name: Vägledning för DirectQuery-modell
               href: directquery-model-guidance.md
             - name: Vägledning för sammansatt modell
