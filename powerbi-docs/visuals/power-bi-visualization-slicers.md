@@ -51,9 +51,9 @@ Power BI-utsnitt stöder inte:
    
 1. Bläddra till **PBIX.pbix-filen Exempel på detaljhandelsanalys** och välj **Öppna**.
 
-1. I den vänstra rutan väljer du **rapportikonen** ![rapportikon](media/power-bi-visualization-kpi/power-bi-report-view.png) för att öppna filen i rapportvyn.
+1. I den vänstra rutan väljer du **rapportikonen**![rapportikon](media/power-bi-visualization-kpi/power-bi-report-view.png) för att öppna filen i rapportvyn.
 
-1. På **översiktssidan**, utan något markerat på rapportarbetsytan, väljer du ikonen **Utsnitt** ![utsnittsikon](media/power-bi-visualization-slicers/slicer-icon.png) i fönstret **Visualiseringar** för att skapa ett nytt utsnitt. 
+1. På **översiktssidan**, utan något markerat på rapportarbetsytan, väljer du ikonen **Utsnitt**![utsnittsikon](media/power-bi-visualization-slicers/slicer-icon.png) i fönstret **Visualiseringar** för att skapa ett nytt utsnitt. 
 
 1. Med det nya utsnittet markerat väljer du **Distrikt** > **DM** från fönstret **Fält** för att fylla utsnittet. 
 

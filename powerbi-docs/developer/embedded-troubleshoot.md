@@ -197,7 +197,7 @@ En datakälla kan ha en enda uppsättning autentiseringsuppgifter för en huvuda
 
 ## <a name="troubleshoot-your-embedded-application-with-the-ierror-object"></a>Felsöka inbäddade program med IError-objektet
 
-Använd [ **IError-objektet** som returneras av *felhändelsen* från **JavaScript SDK**](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Troubleshooting-and-debugging-of-embedded-parts) för att felsöka ditt program och bättre förstå orsaken till felen.
+Använd [**IError-objektet** som returneras av *felhändelsen* från **JavaScript SDK**](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Troubleshooting-and-debugging-of-embedded-parts) för att felsöka ditt program och bättre förstå orsaken till felen.
 
 När du har hämtat IError-objektet bör du titta på relevant tabell över vanliga fel som passar den inbäddningstyp du använder. Jämför **IError-egenskaperna** med dem i tabellen och hitta möjliga skäl till felet.
 

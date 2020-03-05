@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/21/2020
+ms.date: 03/02/2020
 ms.author: maggies
-ms.openlocfilehash: 343c7d7e81d8e8ec53383feab6dc4dcfb17129d6
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: 08eca8ecb9aa941c2670a801113bc711bff409b2
+ms.sourcegitcommit: d65da4738f011beec8f4423085cbd483511cdfb0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76540600"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78237533"
 ---
 # <a name="power-bi-report-data-sources-in-power-bi-report-server"></a>Power BI-rapportdatakällor i Power BI-rapportserver
 Power BI-rapporter kan ansluta till ett antal datakällor. Beroende på hur data används, finns olika datakällor tillgängliga. Data kan importeras eller så kan data frågas direkt med DirectQuery eller en live-anslutning till SQL Server Analysis Services.
@@ -41,7 +41,7 @@ Andra datakällor kan fungera även om de inte finns med på listan.
 | Azure Blob Storage |Ja |Ja |Nej |
 | Azure Data Lake Store |Ja |Nej |Nej |
 | Azure HDInsight (HDFS) |Ja |Nej |Nej |
-| Azure HDInsight (Spark) |Ja |Ja |Nej |
+| Azure HDInsight (Spark) |Ja |Nej |Nej |
 | Azure Table Storage |Ja |Ja |Nej |
 | Dynamics 365 (online) |Ja |Nej |Nej |
 | Facebook |Ja |Nej |Nej |
@@ -128,7 +128,7 @@ Power BI-rapportservern har inte stöd för OAuth-baserad autentisering för mod
 | Azure Blob Storage |Ja |Ja |Nej |Nej |
 | Azure Data Lake Store |Nej |Nej |Nej |Nej |
 | Azure HDInsight (HDFS) |Nej |Nej |Nej |Nej |
-| Azure HDInsight (Spark) |Ja |Ja |Nej |Nej |
+| Azure HDInsight (Spark) |Nej |Nej |Nej |Nej |
 | Azure Table Storage |Nej |Ja |Nej |Nej |
 | Dynamics 365 (online) |Nej |Nej |Nej |Nej |
 | Facebook |Nej |Nej |Nej |Nej |

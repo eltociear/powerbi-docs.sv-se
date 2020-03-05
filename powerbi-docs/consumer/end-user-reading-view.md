@@ -152,7 +152,7 @@ Easily navigate between the visualizations on the report page.
     ![report Selection pane](media/end-user-reading-view/power-bi-selection-pane-new.png) -->
 
 ### <a name="zoom-in-on-individual-visuals"></a>Zooma in på enskilda visuella objekt
-Håll muspekaren över visualiseringen och välj ikonen **Fokusläge** ![](media/end-user-reading-view/pbi_popouticon.jpg). När du visar en visualisering i fokusläge expanderas den så att den fyller hela rapportarbetsytan enligt nedan.
+Håll muspekaren över visualiseringen och välj ikonen **Fokusläge**![](media/end-user-reading-view/pbi_popouticon.jpg). När du visar en visualisering i fokusläge expanderas den så att den fyller hela rapportarbetsytan enligt nedan.
 
 ![fokusläge](media/end-user-reading-view/power-bi-full-screen-before.png)
 

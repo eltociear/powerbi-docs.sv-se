@@ -27,7 +27,7 @@ Så här hämtar du en datauppsättning.
 
 ## <a name="get-a-power-bi-dataset"></a>Hämta en Power BI-datauppsättning
 
-> **Obs!** Innan du börjar kontrollerar du att du har följt de föregående stegen i genomgången för att [skicka data till en datauppsättning](walkthrough-push-data.md).
+> **OBS!** Innan du börjar kontrollerar du att du har följt de föregående stegen i genomgången för att [skicka data till en datauppsättning](walkthrough-push-data.md).
 
 1. I det konsolprogramprojekt du skapade i steg 2: Genomgång för att skicka data, [Hämta en åtkomsttoken för autentisering](walkthrough-push-data-get-token.md), installera Newtonsoft.Json NuGet-paketet. Så här installerar du paketet:
 

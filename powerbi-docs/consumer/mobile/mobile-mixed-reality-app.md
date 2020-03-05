@@ -43,11 +43,11 @@ Läs mer om [Microsofts handgester i mixad verklighet](https://developer.microso
 
 **Fästa ett objekt** 
 
-Tryck i luften på ikonen **Fästa** ![ikonen Fästa](./media/mobile-mixed-reality-app/power-bi-hololens-pin.png) om du vill fästa en instrumentpanel eller rapport från den klassiska Windows-vyn till den holografiska vyn. Du kan fästa ett antal objekt på den holografiska vyn. 
+Tryck i luften på ikonen **Fästa**![ikonen Fästa](./media/mobile-mixed-reality-app/power-bi-hololens-pin.png) om du vill fästa en instrumentpanel eller rapport från den klassiska Windows-vyn till den holografiska vyn. Du kan fästa ett antal objekt på den holografiska vyn. 
 
 **Växla till den holografiska vyn**
 
-När du har fäst objekt i den klassiska Windows-vyn trycker du i luften på ikonen för **Helskärm** ![ikonen för Helskärm](./media/mobile-mixed-reality-app/power-bi-hololens-fullscreen.png) för att växla till den holografiska vyn. 
+När du har fäst objekt i den klassiska Windows-vyn trycker du i luften på ikonen för **Helskärm**![ikonen för Helskärm](./media/mobile-mixed-reality-app/power-bi-hololens-fullscreen.png) för att växla till den holografiska vyn. 
 
 
 ## <a name="holographic-view-basics"></a>Grunder i den holografiska vyn

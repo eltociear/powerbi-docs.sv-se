@@ -59,7 +59,7 @@ Men det här betyder inte att du inte kan spara dina ändringar. Det kan du, men
 | Datakällor |En eller flera rapporter och en eller flera datauppsättningar per instrumentpanel |En enskild datauppsättning per rapport |
 | Filtrering |Det går inte att filtrera eller dela upp |Det finns många olika sätt att filtrera, markera och dela upp |
 | Ställa in avisering |Det går att skapa e-postaviseringar när instrumentpanelen uppfyller vissa villkor |Nej |
-| Visning av aktuellt objekt |Det går att ange en instrumentpanel som din ”aktuella” instrumentpanel |Det går inte att skapa en aktuell rapport |
+| Funktion |Det går att ange en instrumentpanel som din ”aktuella” instrumentpanel |Det går inte att skapa en aktuell rapport |
 | Det går att visa tabeller och fält från den underliggande datauppsättningen |Nej. Det går att exportera data, men tabeller och fält för datauppsättningen visas inte i själva instrumentpanelen |Ja. Det går att visa de tabeller, fält och värden för datauppsättningen som du har behörighet att visa |
 | Anpassning |Nej  |Det går att filtrera, exportera, visa relaterat innehåll, lägga till bokmärken, generera QR-koder, analysera i Excel och mycket mer |
 

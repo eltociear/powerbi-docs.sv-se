@@ -38,5 +38,5 @@ Tjänster ***ska inte*** ändra sin datamodell beroende på den autentiserade an
   
 Mer information om standarder för OData-datamodellen finns i [OData Version 4.0 del 1: Protokollet Plus rättelser 02](https://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html).  
   
-## <a name="see-also"></a>Se också
+## <a name="see-also"></a>Se även
 [Översikt över Power BI REST API](https://docs.microsoft.com/rest/api/power-bi/)  
