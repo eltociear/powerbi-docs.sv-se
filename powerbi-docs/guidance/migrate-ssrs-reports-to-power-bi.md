@@ -8,12 +8,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 01/03/2020
 ms.author: v-pemyer
-ms.openlocfilehash: e65dd42e8ec787d0c6edba534f79cdb06e5ba14c
-ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
+ms.openlocfilehash: f8b7cc302cd4a26aa099f723f47865723dccb7c9
+ms.sourcegitcommit: b59ec11a4a0a3d5be2e4d91548d637d31b3491f8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77527302"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78290646"
 ---
 # <a name="migrate-sql-server-reporting-services-reports-to-power-bi"></a>Migrera SQL Server Reporting Services-rapporter till Power BI
 
@@ -192,7 +192,6 @@ Mer information om den här artikeln finns i följande resurser:
 
 - [Vad är sidnumrerade rapporter i Power BI Premium?](../paginated-reports-report-builder-power-bi.md)
 - [Guide till datahämtning i sidnumrerade rapporter](report-paginated-data-retrieval.md)
-- Videon Guy in a Cube: [Introduktion till sidnumrerade rapporter i Power BI](https://www.youtube.com/watch?v=wfqn45XNK3M)
 - [Använda sidnumrerade rapporter i Power BI](report-paginated-or-power-bi.md)
 - [Sidnumrerade rapporter i Power BI: Vanliga frågor och svar](../paginated-reports-faq.md)
 - [Vanliga frågor och svar om Power BI Premium](../service-premium-faq.md)
