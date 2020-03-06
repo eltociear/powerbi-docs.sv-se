@@ -140,6 +140,8 @@
           items:
             - name: 'Kapacitet och SKU:er i inbäddad Power BI-analys'
               href: embedded-capacity.md
+            - name: Kapacitetsplanering
+              href: embedded-capacity-planning.md
             - name: Bästa praxis för prestanda
               href: embedded-performance-best-practices.md
             - name: Tjänstens huvudnamn
