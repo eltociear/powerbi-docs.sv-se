@@ -1,0 +1,61 @@
+- name: Sidnumrerade rapporter i Power BI
+  href: index.yml
+  expanded: true
+  items:
+    - name: Översikt
+      expanded: true
+      items:
+        - name: Vad är sidnumrerade rapporter?
+          href: paginated-reports-report-builder-power-bi.md
+        - name: Report Builder i Power BI
+          href: report-builder-power-bi.md
+    - name: Självstudier
+      expanded: true
+      items:
+        - name: 'Labb: Skapa en sidnumrerad rapport'
+          href: 'https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208'
+        - name: Skapa en sidnumrerad rapport och ladda upp den
+          href: paginated-reports-quickstart-aw.md
+    - name: Begrepp
+      expanded: true
+      items:
+        - name: Komma runt rapportdesignvyn
+          href: paginated-reports-report-design-view.md
+        - name: Planera en rapport
+          href: report-builder-planning-report.md
+        - name: Report Builder-data
+          href: report-builder-data.md
+        - name: Datakällor som stöds
+          href: paginated-reports-data-sources.md
+        - name: Designtips
+          href: report-builder-design-tips.md
+        - name: 'Tabeller, matriser, listor'
+          href: report-builder-tables-matrices-lists.md
+        - name: Parametrar
+          href: report-builder-parameters.md
+        - name: URL-parametrar i sidnumrerade rapporter
+          href: report-builder-url-parameters.md
+        - name: Exempel på uttryck
+          href: report-builder-expression-examples.md
+        - name: Sidnumrering för rapporten
+          href: paginated-reports-pagination.md
+        - name: Förhandsgranska rapporter
+          href: report-builder-previewing-reports.md
+        - name: Vanliga frågor och svar om sidnumrerade rapporter
+          href: paginated-reports-faq.md
+    - name: Gör så här
+      items:
+        - name: Ange data direkt i en sidnumrerad rapport
+          href: paginated-reports-enter-data.md
+        - name: Skapa en inbäddad datakälla
+          href: paginated-reports-embedded-data-source.md
+        - name: Skapa en inbäddad datauppsättning
+          href: paginated-reports-create-embedded-dataset.md
+        - name: Skapa en rapport med en delad Power BI-datamängd
+          href: report-builder-shared-datasets.md
+        - name: Skapa parametrar
+          href: paginated-reports-parameters.md
+        - name: Skicka en rapportparameter i en URL
+          href: report-builder-url-pass-parameters.md
+        - name: Publicera en sidnumrerad rapport
+          href: paginated-reports-save-to-power-bi-service.md
