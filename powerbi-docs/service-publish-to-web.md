@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 02/25/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 34754f413cd6bb8e520ff8d7f2c9d4a28da73ef5
-ms.sourcegitcommit: 032a77f2367ca937f45e7e751997d7b7d0e89ee2
+ms.openlocfilehash: 99fd17e8491613affbfe78e7cd9a2f268f588975
+ms.sourcegitcommit: d65da4738f011beec8f4423085cbd483511cdfb0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77609917"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78237993"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Publicera på webben från Power BI
 
@@ -134,6 +134,7 @@ Anpassade visuella objekt stöds i **Publicera på webben**. När du använder *
 
 - Rapporter som använder säkerhet på radnivå.
 - Rapporter som använder en datakälla för Live-anslutning, som Analysis Services Tabular på lokala flerdimensionella Analysis Services och Azure Analysis Services.
+- Rapporter som använder en [delad datauppsättning](service-datasets-across-workspaces.md), som lagras i en annan arbetsyta än rapporten.
 - Rapporter om delas med dig direkt eller via ett organisationsinnehållspaket.
 - Rapporter i en grupp som du inte är redigeringsmedlem i.
 - Visuella R-objekt stöds för närvarande inte i **Publicera på webben**-rapporter.

@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/15/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 124f373e7841cb899f0a26debb2bcc8302e8e970
-ms.sourcegitcommit: 7efbe508787029e960d6d535ac959a922c0846ca
+ms.openlocfilehash: 7be55c8b44a89ad5b317743b62e033cf34a01ef9
+ms.sourcegitcommit: b59ec11a4a0a3d5be2e4d91548d637d31b3491f8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76309112"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78290692"
 ---
 # <a name="create-model-relationships-in-power-bi-desktop"></a>Skapa modellrelationer i Power BI Desktop
 
@@ -40,7 +40,7 @@ En fråga – kanske genererad av ett visuellt objekt för ett Power BI-kort –
 
 ### <a name="disconnected-tables"></a>Frånkopplade tabeller
 
-Det är ovanligt att en modelltabell inte alls är relaterad till en annan modelltabell. En sådan tabell, i en giltig modelldesign, kallas en _frånkopplad tabell_. En frånkopplad tabell är inte avsedd att sprida filter till andra modelltabeller. Den används istället för att godkänna "användarindata" (kanske med ett visuellt utsnitt), så att modellberäkningar kan använda indatavärdet på ett meningsfullt sätt. Anta till exempel att en frånkopplad tabell har lästs in med ett intervall av värden för valutaväxelkurser. Om ett filter används för att filtrera efter ett enda värde, kan värdet användas genom ett måttuttryck för att konvertera försäljningsvärden.
+Det är ovanligt att en modelltabell inte alls är relaterad till en annan modelltabell. En sådan tabell, i en giltig modelldesign, kallas en _frånkopplad tabell_. En frånkopplad tabell är inte avsedd att sprida filter till andra modelltabeller. Den används istället för att godkänna "användarindata" (kanske med ett visuellt utsnitt), så att modellberäkningar kan använda indatavärdet på ett meningsfullt sätt. Anta till exempel att en frånkopplad tabell har lästs in med ett intervall av värden för valutaväxelkurser. Så länge ett filter används för att filtrera efter ett enda värde, kan värdet användas genom ett måttuttryck för att konvertera försäljningsvärden.
 
 Power BI Desktop konsekvensparameter är en funktion som skapar en frånkopplad tabell. Mer information finns i artikeln om att [skapa och använda en konsekvensparameter för att visualisera variabler i Power BI Desktop](desktop-what-if.md).
 
@@ -65,13 +65,13 @@ De fyra alternativen, tillsammans med deras stenografiska format, beskrivs i fö
 - En-till-en (1:1)
 - Många-till-många (\*:\*)
 
-När du skapar en relation i Power BI Desktop, kommer designern automatiskt detektera och ange kardinalitetstypen. Designern kan göra det eftersom den skickar frågor till modellen för att veta vilka kolumner som innehåller unika värden. För importmodeller använder den intern lagringsstatistik, för DirectQuery-modeller skickar den profileringsfrågor till datakällan. Men ibland går det fel. Det beror på att tabellerna inte har fyllts på med data än, eller på att kolumnerna du förväntar dig ska innehålla dubblettvärden bara innehåller unika värden för tillfället. I vilket fall kan du uppdatera kardinalitetstypen, under förutsättning att ”en”-sidekolumner innehåller unika värden (eller att tabellen väntar på att laddas med datarader).
+När du skapar en relation i Power BI Desktop, kommer designern automatiskt detektera och ange kardinalitetstypen. Designern skickar frågor till modellen för att veta vilka kolumner som innehåller unika värden. För importmodeller använder den intern lagringsstatistik, för DirectQuery-modeller skickar den profileringsfrågor till datakällan. Men ibland går det fel. Det beror på att tabellerna inte har fyllts på med data än, eller på att kolumnerna du förväntar dig ska innehålla dubblettvärden bara innehåller unika värden för tillfället. I vilket fall kan du uppdatera kardinalitetstypen, under förutsättning att ”en”-sidekolumner innehåller unika värden (eller att tabellen väntar på att laddas med datarader).
 
 Kardinaliteten **En-till-många-** och **Många-till-en** är i stort sett samma, och de är även de vanligaste kardinalitetstyperna.
 
 När du konfigurerar en en-till-många-relationer eller många-till-en-relationer, väljer du den som matchar den ordning du har relaterat kolumnerna i. Överväg hur du skulle konfigurera relationen från tabellen **Produkt** till tabellen **Försäljning** med hjälp av kolumnen **ProduktID** som finns i varje tabell. Kardinalitetstypen skulle vara _En-till-många_, eftersom kolumnen **ProduktID** i tabellen **Produkt** innehåller unika värden. Om du har relaterat tabellerna i omvänd riktning, **Försäljning** till **Produkt**, skulle kardinaliteten bli _Många-till-en_.
 
-Ett förhållande **En-till-en** innebär att båda kolumnerna innehåller unika värden. Den här typen av kardinalitet är inte vanlig, och det är troligen inte en optimal modelldesign, eftersom den leder till lagring av redundanta data.<!-- For guidance on using this cardinality type, see the [One-to-one relationship guidance](guidance/relationships-one-to-one) article.-->
+Ett förhållande **En-till-en** innebär att båda kolumnerna innehåller unika värden. Den här typen av kardinalitet är inte vanlig, och det är troligen inte en optimal modelldesign, eftersom den leder till lagring av redundanta data. Mer information om hur du använder den här typen av kardinalitet finns i [Vägledning för en-till-en-relation](guidance/relationships-one-to-one.md).
 
 En **många-till-många**-relation innebär att båda kolumnerna kan innehålla dubblettvärden. Den här typen av kardinalitet används sällan. Den används vanligen när du utformar komplexa modellkrav. Vägledning om hur du använder den här kardinalitetstypen finns i [Vägledning för att lägga till en många-till-många-relationer](guidance/relationships-many-to-many.md).
 
@@ -95,13 +95,13 @@ _Enkel_ korsfilterriktning betyder "enkel riktning" och _båda_ betyder "båda r
 
 För en-till-många-relationer går korsfilterriktningen alltid från ”en”-sidan och som tillval från ”många”-sidan (dubbelriktad). För en-till-en-relationer går korsfilterriktningen alltid från båda tabellerna. Slutligen, för många-till-många-relationer, kan korsfilterriktningen gå från en av tabellerna eller från båda tabellerna. Observera att när kardinalitetstypen innehåller en "en"-sida, kommer filtret alltid att spridas från den sidan.
 
-När korsfilterriktningen är satt till **Båda**, är ytterligare en egenskap tillgänglig för att tillämpa dubbelriktad filtrering när regler för säkerhet på radnivå (RLS) används. Mer information om RLS finns i artikeln om [säkerhet på radnivå (RLS) med Power BI Desktop](desktop-rls.md).
+När korsfilterriktningen är inställd på **båda**, är ytterligare en egenskap tillgänglig. Den kan använda dubbelriktad filtrering när regler för säkerhet på radnivå (RLS) tillämpas. Mer information om RLS finns i artikeln om [säkerhet på radnivå (RLS) med Power BI Desktop](desktop-rls.md).
 
 Ändringar av relationskorsfilterriktningen, inklusive inaktivering av filterspridning, kan också göras med en modellberäkning. Detta görs med DAX-funktionen [CROSSFILTER](/dax/crossfilter-function).
 
 Dubbelriktade relationer kan påverka prestandan negativt. Om du försöker konfigurera en dubbelriktad relation kan det leda till tvetydiga filterspridningsvägar. I det här fallet kan det hända att Power BI Desktop inte kan genomföra relationsändringen och du får då ett felmeddelande. Ibland kan Power BI Desktop emellertid tillåta att du definierar tvetydiga relationsvägar mellan tabeller. Prioritetsregler som påverkar detekteringen av tvetydigheter och sökvägsupplösning beskrivs längre fram i den här artikeln om [prioritetsregler](#precedence-rules).
 
-Vi rekommenderar att du bara använder dubbelriktad filtrering när det verkligen behövs.<!-- For guidance on bi-directional filtering, see the [Cross filter relationship guidance](guidance/relationships-bidirectional-filtering) article.-->
+Vi rekommenderar att du bara använder dubbelriktad filtrering när det verkligen behövs. Mer information finns i [Vägledning för dubbelriktad relation](guidance/relationships-bidirectional-filtering.md).
 
 > [!TIP]
 > I Power BI Desktop-modellvyn kan du tolka relationens riktning för ett korsfilter genom att titta på pilspetsen/pilspetsarna längs relationslinjen. En pilspets representerar ett filter med en riktning i pilspetsens riktning. En dubbel pilspets representerar en dubbelriktad relation.
@@ -110,7 +110,7 @@ Vi rekommenderar att du bara använder dubbelriktad filtrering när det verklige
 
 Det kan bara finnas en aktiv väg för filtreringsspridning mellan två modelltabeller. Det går emellertid att lägga till ytterligare relationsvägar, även om dessa relationer måste konfigureras som _inaktiva_. Inaktiva relationer kan bara göras aktiva under utvärderingen av en modellberäkning. Detta görs med DAX-funktionen [USERELATIONSHIP](/dax/userelationship-function-dax).
 
-<!--For guidance on defining inactive relationships, see the [Active vs inactive relationship guidance](guidance/relationships-active-inactive) article.-->
+Mer information finns i [Vägledning för aktiva kontra inaktiva relationer](guidance/relationships-active-inactive.md).
 
 > [!TIP]
 > I Power BI Desktop-modellvyn kan du läsa av en relations aktiva resp. inaktiva status. En aktiv relation visas som en heldragen linje och en inaktiv relation visas som en streckad linje.
@@ -119,7 +119,7 @@ Det kan bara finnas en aktiv väg för filtreringsspridning mellan två modellta
 
 Egenskapen _Anta referensintegritet_ är bara tillgängligt för en-till-många-relationer och en-till-en-relationer mellan två DirectQuery-tabeller i lagringsläge som baseras på samma datakälla. När den är aktiverad kommer internfrågor som skickas till datakällan att koppla samman de två tabellerna med en inre koppling istället för en yttre koppling. Den här egenskapen leder vanligtvis till en allmän förbättring av frågeprestanda om den aktiveras, även om det beror på de specifika egenskaperna för datakällan.
 
-Egenskapen bör alltid vara aktiverad när det finns en begränsning för den sekundära nyckeln för databasen mellan de två tabellerna. Om det inte finns en begränsning för sekundärnyckeln, kan du fortfarande aktivera egenskapen, om du är säker på att dataintegritet föreligger.
+Aktivera alltid denna egenskap när det finns en begränsning för den sekundära nyckeln för databasen mellan de två tabellerna. Om det inte finns en begränsning för sekundärnyckeln, kan du fortfarande aktivera egenskapen, om du är säker på att dataintegritet föreligger.
 
 > [!IMPORTANT]
 > Om dataintegriteten skulle bli komprometterad, tar den inre kopplingen bort omatchade rader mellan tabellerna. Ta till exempel en modelltabell **Försäljning** med ett kolumnvärde **ProduktID**, som inte fanns i den relaterade tabellen **Produkt**. Filterspridningen från tabellen **Produkt** till tabellen **Försäljning** tar bort försäljningsrader för okända produkter. Detta leder till för låga försäljningsresultat.
@@ -164,7 +164,7 @@ I följande exempel finns det två starka relationer, båda markerade som **S**.
 
 För importmodeller där alla data lagras i Vertipaq-cachen, skapas en datastruktur för varje stark relation vid datauppdateringen. Datastrukturerna består av indexerade mappningar för alla kolumn-till-kolumn-värden och syftet är att snabba upp kopplingen av tabeller när frågan körs.
 
-När frågan körs tillåter starka relationer _tabellexpansioner_. Tabellexpansionen resulterar i att en virtuell tabell skapas, genom att de interna kolumnerna i bastabellen inkluderas och sedan utökas till relaterade tabeller. För importtabeller görs detta i frågemotorn. För DirectQuery-tabeller görs det i den interna frågan som skickas till källdatabasen (förutsatt att egenskapen "Anta referensintegritet" inte är aktiverad). Frågemotorn jobbar sedan med den expanderade tabellen och använder filter och gruppering utifrån värdena i de expanderade tabellkolumnerna.
+När frågan körs tillåter starka relationer _tabellexpansioner_. Tabellexpansionen resulterar i att en virtuell tabell skapas, genom att de interna kolumnerna i bastabellen inkluderas och sedan utökas till relaterade tabeller. För importtabeller görs detta i frågemotorn. För DirectQuery-tabeller görs det i den interna frågan som skickas till källdatabasen (förutsatt att egenskapen **Anta referensintegritet** inte är aktiverad). Frågemotorn jobbar sedan med den expanderade tabellen och använder filter och gruppering utifrån värdena i de expanderade tabellkolumnerna.
 
 > [!NOTE]
 > Inaktiva relationer expanderas också, även om relationen inte används av en beräkning. Dubbelriktade relationer påverkar inte tabellexpansionen.
@@ -210,7 +210,7 @@ Dubbelriktade relationer kan leda till flera – och därför tvetydiga – filt
 
 1. Många-till-en- och en-till-en-relationer, inklusive svaga relationer
 2. Många-till-många-relationer
-3. Dubbelriktade relationer, i omvänd riktning (dvs. från "många"-sidan)
+3. Dubbelriktade relationer, i omvänd riktning (d.v.s. från ”många”-sidan)
 
 ### <a name="performance-preference"></a>Inställningar för prestanda
 
@@ -221,12 +221,16 @@ I följande lista visas prestanda för filterspridning, från snabbast till lån
 3. Många-till-många-modellrelationer som uppnås med en mellanliggande tabell och som omfattar minst en dubbelriktad relation
 4. Relationer av typen kors-ö
 
-<!--For further information and guidance on many-to-many relationships, see the [Cross filter relationship guidance](guidance/relationships-bidirectional-filtering) article.-->
-
 ## <a name="next-steps"></a>Nästa steg
 
+Mer information om den här artikeln finns i följande resurser:
+
 - [Förstå star-schemat och dess betydelse för Power BI](guidance/star-schema.md)
+- [Vägledning för en-till-en-relation](guidance/relationships-one-to-one.md)
 - [Vägledning för att lägga till en många-till-många-relationer](guidance/relationships-many-to-many.md)
-- Video: [Vad du bör och inte bör göra med Power BI-relationer](https://youtu.be/78d6mwR8GtA)
+- [Vägledning för aktiva kontra inaktiva relationer](guidance/relationships-active-inactive.md)
+- [Vägledning för dubbelriktad relation](guidance/relationships-bidirectional-filtering.md)
+- [Vägledning vid felsökning av relationer](guidance/relationships-troubleshoot.md)
+- Video: [Vad du bör och inte bör göra med Power BI-relationer](https://www.youtube.com/watch?v=78d6mwR8GtA)
 - Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
-- Har du förslag? [Bidra till att förbättra Power BI](https://ideas.powerbi.com)
+- Har du förslag? [Bidra till att förbättra Power BI](https://ideas.powerbi.com/)

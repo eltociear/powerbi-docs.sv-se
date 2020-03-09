@@ -8,13 +8,13 @@ ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc
-ms.date: 02/13/2020
-ms.openlocfilehash: c760450319f5ca32856520bce9c9f9b67a8616d6
-ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
+ms.date: 03/04/2020
+ms.openlocfilehash: a48f9c5938c93376cc5dcdbe3491ee2a7e6813c0
+ms.sourcegitcommit: b59ec11a4a0a3d5be2e4d91548d637d31b3491f8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77427770"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78290669"
 ---
 # <a name="comparing-power-bi-report-server-and-the-power-bi-service"></a>En jämförelse av Power BI-rapportservern och Power BI-tjänsten
 
@@ -24,11 +24,11 @@ Power BI-rapportservern och Power BI-tjänsten har många likheter och vissa vik
 
 | Funktioner | Power BI-rapportserver | Power BI-tjänst | Anteckningar |
 |---------|---------|---------|---------|
-| Distribution | Lokal eller värdbaserat moln | Molnet | Power BI-rapportservern kan distribueras i virtuella Azure-datorer (värdbaserat moln) om den är licensierad via Power BI Premium. |
+| Distribution | Lokal eller värdbaserat moln | Molnet | Power BI-rapportservern kan distribueras i virtuella Azure-datorer (värdbaserat moln) om den är licensierad via Power BI Premium eller SQL Server Enterprise med Software Assurance.|
 | Källdata | I molnet och/eller lokalt | I molnet och/eller lokalt |  |
 | Licens | Power BI Premium eller SQL Server EE med Software Assurance (SA) | Power BI Pro och/eller för Power BI Premium | |  
 | Livscykel | Modern livscykelprincip | Helt hanterad tjänst |  |
-| Publiceringscykeln | Tre gånger per år (januari, maj, september) | En gång i månaden | De senaste funktionerna och korrigeringarna levereras till Power BI-tjänsten först. De flesta grundläggande funktionerna kommer till Power BI-rapportservern under de kommande versionerna och vissa funktioner är endast avsedda för Power BI-tjänsten. |
+| Publiceringscykeln | Tre gånger per år (januari, maj, september) | En gång i månaden | De senaste funktionerna och korrigeringarna levereras till Power BI-tjänsten först. En sammanfattning av funktioner från Power BI Desktop-versioner för tjänsten kommer i Power BI-rapportservern i varje version. De flesta andra funktioner är endast avsedda för Power BI-tjänsten. |
 | Skapa Power BI-rapporter i Power BI Desktop | Ja | Ja |  |
 | Skapa Power BI-rapporter i webbläsaren | Nej | Ja |  |
 | Vara värd för och ansluta till delade datamängder i Power BI | Nej | Ja | [Introduktion till datamängder på arbetsytor](../service-datasets-across-workspaces.md) |

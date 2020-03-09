@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.topic: how-to
 ms.subservice: powerbi-custom-visuals
 ms.date: 02/13/2020
-ms.openlocfilehash: 031e1fd5d5c57e37e0d70541d6662b0af7b91b07
-ms.sourcegitcommit: 4d98274aa0b9aa09db99add2dda91a3ba8fed40b
+ms.openlocfilehash: 3f27c32442ecf3c70c3dc3e7d070fcc8bf14d7b1
+ms.sourcegitcommit: d65da4738f011beec8f4423085cbd483511cdfb0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77576798"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78237878"
 ---
 # <a name="publish-power-bi-visuals-to-partner-center"></a>Publicera visuella Power BI-objekt på Partnercenter
 
@@ -37,8 +37,8 @@ När du är redo att skicka in ditt visuella Power BI-objekt, så verifiera att 
 | Exempel på .pbix-rapportfil |Ja |Om du vill visa ditt visuella objekt bör du hjälpa användarna att bekanta sig med det. Fokusera på det mervärde som det visuella objektet medför för användaren och ge exempel på användningsområden och formateringsalternativ. Du kan också lägga till en sida med *tips* på slutet med olika tips och saker att undvika och liknande.<br>Exemplet på en .pbix-rapportfil måste fungera offline, utan några externa anslutningar. |
 | Ikon |Ja |Du bör inkludera den anpassade visuella logotypen som visas i Store. Formatet kan vara .png, .jpg, .jpeg eller .gif. Det måste vara exakt 300 px (bredd) x 300 px (höjd).<BR>**Viktigt!** Studer guiden [AppSource-lageravbildningar](https://docs.microsoft.com/office/dev/store/craft-effective-appsource-store-images) noga innan du skickar in ikonen. |
 | Skärmbilder |Ja |Du måste tillhandahålla minst en skärmbild. Formatet kan vara .png, .jpg, .jpeg eller .gif. Måtten måste vara exakt 1366 px (bredd) x 768 px (höjd). Filens storlek får inte överstiga 1024 kb.<br>Lägg till textbubblor som tydligt betonar mervärdet av de viktiga funktioner som visas på respektive skärmbild. |
-| Länk till nedladdningssupport |Ja |Tillhandahåll en support-URL för dina kunder. Den här länken har angetts som en del av din SellerDashboard-registrering och är synlig för användana när får åtkomst till ditt visuella objekts lista i AppSource. Formatet på URL:en ska inkludera https:// eller https://. |
-| Länk till sekretessdokumentet |Ja |Tillhandahåll en länk till det visuella objektets sekretesspolicy. Den här länken har angetts som en del av din SellerDashboard-registrering och är synlig för användana när får åtkomst till ditt visuella objekts lista i AppSource. Formatet på länken ska inkludera https:// eller https://. |
+| Länk till nedladdningssupport |Ja |Tillhandahåll en support-URL för dina kunder. Den här länken har angetts som en del av din Partnercenter-registrering och är synlig för användare när de bereder sig åtkomst till ditt visuella objekts lista i AppSource. Formatet på URL:en ska inkludera https:// eller https://. |
+| Länk till sekretessdokumentet |Ja |Tillhandahåll en länk till det visuella objektets sekretesspolicy. Den här länken har angetts som en del av din Partnercenter-registrering och är synlig för användare när de bereder sig åtkomst till ditt visuella objekts lista i AppSource. Formatet på länken ska inkludera https:// eller https://. |
 | Licensavtal (EULA) |Ja |Du måste tillhandahålla en EULA-fil ditt visuella Power BI-objekt. |
 | Videolänk |Nej |Om du vill öka användarnas intresse för ditt anpassade visuella objekt, så tillhandahåll en länk till en video om ditt visuella objekt. Formatet på URL:en ska inkludera https:// eller https://. |
 | GitHub-lagringsplats |Nej |Dela en offentlig länkt till ett [GitHub](https://www.github.com)-centrallager med källor till dina visuella Power BI-objekt och exempeldata. På så vis får andra utvecklare möjlighet att komma med feedback och föreslå förbättringar av din kod. |
@@ -74,9 +74,6 @@ Power BI-teamet måste kontrollera filerna för varje ny överföring av visuell
 Om du vill skicka in dina visuella Power BI-objekt till Partnercenter så måste du vara registrerad hos ditt Partnercenter. Om du inte har registrerat dig ännu så [öppna ett utvecklarkonto i Partnercenter](https://docs.microsoft.com/office/dev/store/open-a-developer-account).
 
 Följ stegen nedan när du ska skicka in ditt visuella Power BI-objekt till Partnercenter. Mer information om överföringsprocessen finns i [Skicka in din Office-lösning till AppSource via Partnercenter](https://docs.microsoft.com/office/dev/store/use-partner-center-to-submit-to-appsource).
-
->[!NOTE]
-> Om du är mitt i överföringsprocess för ett visuellt Power BI-objekt och måste använda [instrumentpanelen för försäljning](https://docs.microsoft.com/office/dev/store/use-the-seller-dashboard-to-submit-to-the-office-store) (det gamla hanteringsverktyget), så läs igenom anvisningarna i [Skicka in ett visuellt Power BI-objekt till AppSource med hjälp av instrumentpanelen för försäljning](seller-dashboard.md).
 
 1. Logga in på **Partnercenter**.
 

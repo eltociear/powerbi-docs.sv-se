@@ -6,23 +6,20 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/25/2019
+ms.date: 03/02/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 6ce82516413fe43cfbc1336e2f6f51003277fb4a
-ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
+ms.openlocfilehash: 937f8ca693113cf85d265420da44f7c9f8b68f5f
+ms.sourcegitcommit: d55d3089fcb3e78930326975957c9940becf2e76
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "76161304"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78260470"
 ---
 # <a name="many-to-many-relationship-guidance"></a>Vägledning för att lägga till en många-till-många-relationer
 
 Den här artikeln är avsedd för dig som är datamodellerare som arbetar med Power BI Desktop. I den beskrivs tre olika scenarier för många-till-många-modellering. Där finns även vägledning om hur du skapar utformning för dem i dina modeller.
 
-> [!NOTE]
-> En introduktion till modellrelationer beskrivs inte i den här artikeln. Om du inte är helt bekant med relationer, deras egenskaper eller hur du konfigurerar dem rekommenderar vi att du först läser artikeln [Modellrelationer i Power BI Desktop](../desktop-relationships-understand.md).
->
-> Det är även viktigt att du förstår design med star-schema. Mer information om finns i [Förstå star-schemat och dess betydelse för Power BI](star-schema.md).
+[!INCLUDE [relationships-prerequisite-reading](includes/relationships-prerequisite-reading.md)]
 
 Det finns i själva verket tre många-till-många-scenarier. De kan inträffa när du måste:
 
@@ -164,7 +161,7 @@ Det visuella objektet visar ett korrekt resultat. Modellens användbarhet är do
 
 ### <a name="relate-many-to-many-facts-guidance"></a>Vägledning om hur du relaterar många-till-många-fakta
 
-I allmänhet rekommenderar vi inte att du relaterar två tabeller av faktatyp direkt med hjälp av många-till-många-kardinalitet. Den främsta orsaken är att modellen i så fall inte ger flexibilitet för de visuella rapportobjektens filtrering och gruppering. I exemplet är det endast möjligt för visuella objekt att filtrera eller gruppera efter **Order**-tabellens **OrderID**-kolumn. Ytterligare en orsak relaterar till kvaliteten på dina data. Om det finns integritetsproblem i dina data kan det hända att vissa rader utelämnas under frågekörning på grund av den _svaga relationen_. Mer information finns i [Relationsbedömning](../desktop-relationships-understand.md#relationship-evaluation).
+I allmänhet rekommenderar vi inte att du relaterar två tabeller av faktatyp direkt med hjälp av många-till-många-kardinalitet. Den främsta orsaken är att modellen i så fall inte ger flexibilitet för de visuella rapportobjektens filtrering och gruppering. I exemplet är det endast möjligt för visuella objekt att filtrera eller gruppera efter **Order**-tabellens **OrderID**-kolumn. Ytterligare en orsak relaterar till kvaliteten på dina data. Om det finns integritetsproblem i dina data kan det hända att vissa rader utelämnas under frågekörning på grund av den _svaga relationen_. Mer information finns i [Modellrelationer i Power BI Desktop (relationsutvärdering)](../desktop-relationships-understand.md#relationship-evaluation).
 
 Vi rekommenderar att du i stället för att relatera tabeller av faktatyp direkt inför designprinciperna för [star-schema](star-schema.md). Det gör du genom att lägga till tabeller av dimensionstyp. Tabellerna av dimensionstyp relaterar sedan till tabellerna av faktatyp med hjälp av en-till-många-relationer. Den här designmetoden är robust eftersom den ger flexibla rapporteringsalternativ. Med den kan du filtrera eller gruppera med valfri kolumn av dimensionstyp och sammanfatta valfri relaterad tabell av faktatyp.
 
@@ -187,7 +184,7 @@ När vi utnyttjar designprinciperna för star-schema får vi dessa fördelar:
 - De visuella rapportobjekten kan _filtrera eller gruppera_ efter valfri synlig kolumn från tabellerna av dimensionstyp
 - De visuella rapportobjekten kan _sammanfatta_ valfri synlig kolumn från tabellerna av faktatyp
 - Filter som tillämpas på tabellerna **OrderLine**, **OrderDate** eller **Product** sprids till båda tabellerna av faktatyp
-- Alla relationer är av typen en-till-många, och varje relation är en _stark relation_. Problem med dataintegritet kommer inte att döljas. Mer information finns i [Relationsbedömning](../desktop-relationships-understand.md#relationship-evaluation).
+- Alla relationer är av typen en-till-många, och varje relation är en _stark relation_. Problem med dataintegritet kommer inte att döljas. Mer information finns i [Modellrelationer i Power BI Desktop (relationsutvärdering)](../desktop-relationships-understand.md#relationship-evaluation).
 
 ## <a name="relate-higher-grain-facts"></a>Relatera fakta med högre kornighet
 
@@ -300,4 +297,6 @@ Mer information om ämnet i den här artikeln finns i följande resurser:
 
 - [Modellrelationer i Power BI Desktop](../desktop-relationships-understand.md)
 - [Förstå star-schemat och dess betydelse för Power BI](star-schema.md)
+- [Vägledning vid felsökning av relationer](relationships-troubleshoot.md)
 - Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+- Har du förslag? [Bidra till att förbättra Power BI](https://ideas.powerbi.com/)

@@ -27,7 +27,7 @@ Många olika typer av visuella objekt är tillgängliga direkt från Power BI-f�
 
 ![fönster med ikoner för varje visualiseringstyp](media/power-bi-report-visualizations/power-bi-icons.png)
 
-Om du vill ha ännu fler alternativ kan du besöka [Microsoft AppSource community-webbplatsen](https://appsource.microsoft.com) och söka efter och [ladda ned](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) [anpassade visuella objekt](../developer/visuals/custom-visual-develop-tutorial.md) från Microsoft och communityn.
+Om du vill ha ännu fler alternativ, kan du besöka [Microsoft AppSource community-webbplatsen](https://appsource.microsoft.com) för att söka efter och [hämta](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) [anpassade visuella objekt](../developer/visuals/custom-visual-develop-tutorial.md) från Microsoft och communityn.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/SYk_gWrtKvM?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 

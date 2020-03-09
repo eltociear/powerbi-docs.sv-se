@@ -8,13 +8,13 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
-ms.date: 02/17/2020
-ms.openlocfilehash: 52a99380f8e1afc39ddfc59a401418e61fe6ad58
-ms.sourcegitcommit: ec4d2d0f52d737e8e0583f6a7b16e6fd87382510
+ms.date: 03/01/2020
+ms.openlocfilehash: 8aea9041665de69b2c5be954dc8f13a6402a06e0
+ms.sourcegitcommit: d55d3089fcb3e78930326975957c9940becf2e76
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "77782416"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78260771"
 ---
 # <a name="get-a-power-bi-visual-certified"></a>Certifiera ett visuellt Power BI-objekt
 
@@ -56,10 +56,14 @@ Om du vill förstå hur en visuell Power BI-lagringsplats ser ut, så ta en titt
 Använd den senaste versionen av API:t för att skriva visuella Power BI-objekt.
 
 Lagringsplatsen måste innehålla följande filer:
-* **. gitignore** – Lägg till `node_modules` till den här filen. Koden får inte innehålla mappen *node_modules*.
+* **.gitignore** – Lägg till `node_modules`, `.tmp`, `dist` till den här filen. Koden får inte innehålla mappen *node_modules*, *.tmp* eller *dist*.
 * **capability. JSON-** – Om du skickar nyare versioner av visuella Power BI-objekt med ändringar i egenskaperna i den här filen ska du kontrollera att de inte bryter rapporter för befintliga användare.
-* **pbiviz.json**
-* **package.json**
+* **pbiviz.json** 
+* **package.json**. Det visuella objektet måste ha följande paket installerat:
+   * [”tslint”](https://www.npmjs.com/package/tslint): ”5.18.0” eller senare
+   * [”typescript”](https://www.npmjs.com/package/typescript): ”3.0.0” eller senare
+   * [”tslint-microsoftcontrib”](https://www.npmjs.com/package/tslint-microsoft-contrib): ”6.2.0” eller senare
+   * Filen måste innehålla kommando för att köra linter: ”lint”: ”tslint -c tslint.json -p tsconfig.json”
 * **package-lock.json**
 * **tsconfig.json**
 
@@ -70,7 +74,7 @@ Kontrollera att följande kommandon inte returnerar några fel.
 * `npm install`
 * `pbiviz package`
 * `npm audit` – Får inte returnera varningar av hög eller måttlig nivå.
-* [TSlint från Microsoft](https://www.npmjs.com/package/tslint-microsoft-contrib) utan åsidosatta konfigurationer. Detta kommando får inte returnera fel.
+* [TSlint från Microsoft](https://www.npmjs.com/package/tslint-microsoft-contrib) med [krävd konfiguration](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/master/tslint.json). Detta kommando får inte returnera fel.
 
 ### <a name="compiling-requirements"></a>Kompileringskrav
 

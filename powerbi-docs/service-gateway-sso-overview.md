@@ -9,12 +9,12 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 10/10/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: b5ef7e99edbf862891811047ea5f1f961aaea348
-ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
+ms.openlocfilehash: 5eab21418eb1028d94ba2e50ffd6e736e6226018
+ms.sourcegitcommit: d65da4738f011beec8f4423085cbd483511cdfb0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77527601"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78237924"
 ---
 # <a name="overview-of-single-sign-on-sso-for-gateways-in-power-bi"></a>Översikt över enkel inloggning (SSO) för gatewayer i Power BI
 
@@ -25,8 +25,8 @@ Power BI har stöd för följande datakällor:
 * SQL Server (Kerberos)
 * SAP HANA (Kerberos och SAML)
 * SAP BW Application Server (Kerberos)
-* SAP BW Message Server (Kerberos) – offentlig förhandsversion
-* Oracle (Kerberos) – offentlig förhandsversion
+* SAP BW-meddelandeserver (Kerberos) 
+* Oracle (Kerberos) 
 * Teradata (Kerberos)
 * Spark (Kerberos)
 * Impala (Kerberos)
@@ -45,7 +45,7 @@ En fråga som körs med SSO (enkel inloggning) består av tre steg, vilket visas
 
 Här visas mer information om respektive steg:
 
-1. För varje fråga inkluderar Power BI-tjänsten *användarens huvudnamn (UPN)* , som är det fullständiga kvalificerade namnet för användaren som för närvarande är inloggad i Power BI-tjänsten, när en frågebegäran skickas till den konfigurerade gatewayen.
+1. För varje fråga inkluderar Power BI-tjänsten *användarens huvudnamn (UPN)*, som är det fullständiga kvalificerade namnet för användaren som för närvarande är inloggad i Power BI-tjänsten, när en frågebegäran skickas till den konfigurerade gatewayen.
 
 2. Gatewayen måste mappa UPN-namnet i Microsoft Azure Active Directory till en lokal Active Directory-identitet:
 

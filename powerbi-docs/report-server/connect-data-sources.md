@@ -8,19 +8,36 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/17/2018
 ms.author: maggies
-ms.openlocfilehash: 2218a03940aede698a737877b8c061a71129bee1
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 7cb5772e6ccdc1e4036d70f65a3a28210a4f6df1
+ms.sourcegitcommit: d55d3089fcb3e78930326975957c9940becf2e76
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73874151"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78260725"
 ---
 # <a name="paginated-report-data-sources--in-power-bi-report-server"></a>Sidnumrerad rapport datakällor i Power BI-rapportservern
 Sidnumrerade Reporting Services-rapporter i Power BI-rapportservern stöder samma datakällor som stöds i SQL Server Reporting Services. Se listan i [Datakällor som stöds av Reporting Services](https://docs.microsoft.com/sql/reporting-services/report-data/data-sources-supported-by-reporting-services-ssrs).
+
+## <a name="connect-to-oracle-data-sources-with-useinstalleduiculture"></a>Ansluta till Oracle-datakällor med UseInstalledUICulture
+
+För att ansluta till Oracle-datakällor använder Power BI-rapportserver Oracle Data Provider för .NET (ODP.NET) som är NLS-oberoende.
+
+Som standard använder rapportservern den första klientens gränssnittskultur för att läsa in ODP.NET.  Därför kommer alla efterföljande anslutningar till Oracle från rapportservern att finnas i den inledande användargränssnittskulturen tills omstart av tjänsten.  Den här metoden kan orsaka problem med att återge en rapport på grund av avvikelser i användargränssnittets kulturformat.
+
+För att erbjuda en bättre upplevelse i Power BI-rapportserver har vi infört en konfigurationsinställning med namnet UseInstalledUICulture. När UseInstalledUICulture är inställt på True laddar rapportservern alltid ODP.NET i serverns gränssnittskultur istället för den första klientens kultur.
+Den här inställningen är tillgänglig i Power BI-rapportserver från och med tjänstversionen i februari
+
+Aktivera funktionen genom att ändra ORACLE-förlängningen rsreportserver.config-filen, som nedan.
+```xml
+<Extension Name="ORACLE" Type="Microsoft.ReportingServices.DataExtensions.OracleClientConnectionWrapper,Microsoft.ReportingServices.DataExtensions">
+    <Configuration>
+        <UseInstalledUICulture>true</UseInstalledUICulture>
+    </Configuration>
+</Extension>
+```
 
 ## <a name="next-steps"></a>Nästa steg
 Nu när du har anslutit till din datakälla [skapar du en sidnumrerad rapport](quickstart-create-paginated-report.md).  
 
 
 Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
-

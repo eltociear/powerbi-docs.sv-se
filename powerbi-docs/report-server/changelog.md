@@ -7,13 +7,13 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/27/2020
-ms.openlocfilehash: 993d83e15eafa0e40938eee13cbeabec75389f47
-ms.sourcegitcommit: 0cc594ebb78a6d0e88784673ed09f8aefd10c7a7
+ms.date: 03/02/2020
+ms.openlocfilehash: 0a8cf16ddf7fe9e091599f1790a37a83b9923240
+ms.sourcegitcommit: d65da4738f011beec8f4423085cbd483511cdfb0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76819547"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78237970"
 ---
 # <a name="change-log-for-power-bi-report-server"></a>Ändringslogg för Power BI-rapportservern
 
@@ -24,6 +24,14 @@ Detaljerad information om nya funktioner finns [Nyheter i Power BI-rapportserver
 
 ## <a name="january-2020"></a>Januari 2020
 - **Power BI-rapportserver**
+    - *Version: 1.6.7364.4075 (version 15.0.1102.777), utgiven: 2 mars 2020*
+         - Felkorrigeringar
+           -  Korrigering för Power BI-rapporter kan inte överföras för vissa datakällor
+           -  Korrigering för portalens hämtningsplats för Desktop-länk för Power BI-rapportservern
+           -  Korrigering för DynamicImageDPI för Excel-återgivning
+           -  Korrigering för Oracle-anslutningar med felaktig trådkultur i vissa scenarier med flera användare
+           -  Korrigering för CustomHeaders-standardvärdet som orsakar problem vid inbäddning av rapporter
+           -  Korrigering för SQL-parameternamn som genereras felaktigt i vissa fall
     - *Version: 1.6.7327.3007 (version 15.0.1102.759), utgiven: 23 januari 2020*
          - Funktioner
             -  Exportera till Excel från Power BI-rapporter.

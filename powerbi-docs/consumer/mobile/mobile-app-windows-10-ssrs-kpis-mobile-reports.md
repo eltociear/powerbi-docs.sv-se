@@ -35,7 +35,7 @@ I Power BI-mobilappen för Windows 10, visar du sedan mobila rapporter och KPI:e
 
 1. På din Windows 10-enhet öppnar du Power BI-appen.
 2. Tryck på den globala navigeringsknappen ![Den globala navigeringsknappen](././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/powerbi_windows10_options_icon.png) i det övre vänstra hörnet.
-3. Tryck på ikonen **Inställningar** ![Inställningsikonen](./././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-settings-icon.png), högerklicka eller tryck och håll in **Anslut till server** och tryck sedan på **Visa exempel**.
+3. Tryck på ikonen **Inställningar**![Inställningsikonen](./././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-settings-icon.png), högerklicka eller tryck och håll in **Anslut till server** och tryck sedan på **Visa exempel**.
    
    ![Visa SSRS-exempel](./media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-win10-connect-ssrs-samples.png)
 4. Öppna mappen för detaljhandelsrapporterna eller försäljningsrapporter om du vill utforska deras KPI:er och mobila rapporter.
@@ -45,7 +45,7 @@ I Power BI-mobilappen för Windows 10, visar du sedan mobila rapporter och KPI:e
 Bläddra exemplen för att interagera med KPI:er och mobila rapporter.
 
 ## <a name="connect-to-a-reporting-services-report-server"></a>Anslut till en Reporting Services-rapportserver
-1. Längst ner i navigeringsfönstret trycker du på **Inställningar** ![Inställningsikonen](./././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-settings-icon.png)
+1. Tryck på **Inställningar** ![Inställningsikonen](./././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-settings-icon.png) längst ned i navigeringsfönstret
 2. Tryck på **Anslut till server**.
 3. Fyll i serveradressen samt ditt användarnamn och lösenord. Använd följande format för serveradressen:
    
@@ -95,7 +95,7 @@ Läs mer om [favoriter i Power BI-mobilappar](mobile-apps-favorites.md).
 ## <a name="remove-a-connection-to-a-report-server"></a>Ta bort en anslutning till en rapportserver
 Du kan bara vara ansluten till en rapportserver i taget från din Power BI-mobilapp. Om du vill ansluta till en annan server, måste du koppla från den nuvarande.
 
-1. Längst ner i navigeringsfönstret trycker du på **Inställningar** ![Inställningsikonen](./././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-settings-icon.png).
+1. Tryck på **Inställningar** ![Inställningsikonen](./././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-settings-icon.png) längst ned i navigeringsfönstret.
 2. Tryck på namnet till den server som du inte vill vara ansluten till och håll in.
 3. Tryck på **Ta bort server**.
    

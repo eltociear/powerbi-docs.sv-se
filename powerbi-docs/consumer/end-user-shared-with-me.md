@@ -38,7 +38,7 @@ Titta när Amanda förklarar innehållslistan **delat med mig** och visar hur du
 
 Du kommer att ha alternativ för att interagera med de delade instrumentpanelerna och dess rapporter, beroende på vilka behörigheter som *designern* ger dig. Det inkluderar att kunna göra kopior av instrumentpanelen, öppna rapporten [i läsvy](end-user-reading-view.md) och att dela vidare till andra kollegor.
 
-![Behållaren Delat med mig](./media/end-user-shared-with-me/power-bi-shared.png)
+![containern Delat med mig](./media/end-user-shared-with-me/power-bi-shared.png)
 
 ### <a name="actions-available-from-the-shared-with-me-container"></a>Åtgärder som är tillgängliga från **delat med mig**-behållaren
 Åtgärderna som är tillgängliga för dig beror på vilka inställningar som tilldelats av innehålls*designern*. Några av dina alternativ kan vara:

@@ -40,9 +40,9 @@ Om du har fler än fem senast besökta objekt väljer du **se alla** för att ö
 
 ## <a name="actions-available-from-the-recent-content-list"></a>Åtgärder tillgängliga i innehållslistan **Senaste**
 Åtgärderna som är tillgängliga för dig beror på vilka inställningar som tilldelats av innehålls*designern*. Några av dina alternativ kan vara:
-* Välj stjärnikonen för att [favoritmarkera en instrumentpanel, rapport eller app](end-user-favorite.md) ![stjärnikon](./media/end-user-shared-with-me/power-bi-star-icon.png).
+* Välj stjärnikonen om du vill [favoritmarkera en instrumentpanel, rapport eller app](end-user-favorite.md) ![stjärnikon](./media/end-user-shared-with-me/power-bi-star-icon.png).
 * Vissa instrumentpaneler och rapporter kan delas vidare  ![delningsikon](./media/end-user-shared-with-me/power-bi-share-icon-new.png).
-* [Öppna rapporten i Excel](end-user-export.md) ![exportera till Excel-ikonen](./media/end-user-shared-with-me/power-bi-excel.png) 
+* [Öppna rapporten i Excel](end-user-export.md) ![exportera till Excel-ikon](./media/end-user-shared-with-me/power-bi-excel.png) 
 * [Visa insikter](end-user-insights.md) som Power BI hittar i data ![insikter-ikonen](./media/end-user-shared-with-me/power-bi-insights.png).
 * Om dina listor blir långa, kan du dessutom [använda sökfältet och sortering för att hitta vad du behöver](end-user-search-sort.md). Du kan ta reda på om en kolumn kan sorteras genom att hovra för att se om en pil visas. I det här exemplet visas när du hovrar över **Senaste åtkomst** en pil – ditt senaste innehåll kan sorteras efter åtkomstdatum. 
 

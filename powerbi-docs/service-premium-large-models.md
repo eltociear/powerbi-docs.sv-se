@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/25/2020
+ms.date: 03/03/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 4f256d9b0cbecf76ff002cc0214155b8b36014ee
-ms.sourcegitcommit: 032a77f2367ca937f45e7e751997d7b7d0e89ee2
+ms.openlocfilehash: 2c984abaec40028fb01affa8ff7bf0bf87cdd616
+ms.sourcegitcommit: d55d3089fcb3e78930326975957c9940becf2e76
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77609903"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78260886"
 ---
 # <a name="large-models-in-power-bi-premium-preview"></a>Stora modeller i Power BI Premium (förhandsversion)
 
@@ -114,7 +114,7 @@ SELECT * FROM SYSTEMRESTRICTSCHEMA
 
 Tänk på följande begränsningar när du använder stora modeller:
 
-- **BYOK-kryptering (Bring Your Own Key)** : Datamängder som är aktiverade för Premium-filer krypteras inte av [BYOK](service-encryption-byok.md).
+- **BYOK-kryptering (Bring Your Own Key)**: Datamängder som är aktiverade för Premium-filer krypteras inte av [BYOK](service-encryption-byok.md).
 - **Stöd för Multi-Geo**: Datamängder som är aktiverade för Premium-filer kommer inte att fungera i kapaciteter där [Multi-Geo](service-admin-premium-multi-geo.md) också är aktiverat.
 
 - **Ladda ned till Power BI Desktop**: Om en datamängd lagras på Premium-filer kommer [nedladdning som .pbix](service-export-to-pbix.md)-fil att misslyckas.
@@ -123,7 +123,7 @@ Tänk på följande begränsningar när du använder stora modeller:
 
 ## <a name="availability-in-regions"></a>Tillgänglighet i regioner
 
-Stora modeller är inte tillgängliga i alla regioner där Power BI erbjuds. Stora modeller i Power BI är endast tillgängliga i Azure-regioner som stöder [Azure Premium-fillagring](https://docs.microsoft.com/azure/storage/files/storage-files-planning#file-share-performance-tiers).
+Stora modeller i Power BI är endast tillgängliga i vissa Azure-regioner som stöder [Azure Premium-fillagring](https://docs.microsoft.com/azure/storage/files/storage-files-planning#file-share-performance-tiers).
 
 Följande lista visar i vilka regioner de största Power BI-modellerna är tillgängliga. Regioner som inte finns med på följande lista stöds inte för stora modeller:
 

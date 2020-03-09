@@ -1,59 +1,49 @@
 ---
 title: Konfigurera autentiseringsuppgifter programmässigt för Power BI
-description: Konfigurera autentiseringsuppgifter programmässigt för Power BI för automatisering
+description: Så här konfigurerar du autentiseringsuppgifter programmässigt när du automatiserar Power BI
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.topic: conceptual
-ms.date: 01/08/2020
-ms.openlocfilehash: 222edd901409fa71d98308f27407838d54564834
-ms.sourcegitcommit: 4b926ab5f09592680627dca1f0ba016b07a86ec0
+ms.topic: how-to
+ms.date: 02/23/2020
+ms.openlocfilehash: 1c8741736f0639cba7f8df3f9891a6fe20397d8e
+ms.sourcegitcommit: d55d3089fcb3e78930326975957c9940becf2e76
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75836598"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78260794"
 ---
 # <a name="configure-credentials-programmatically-for-power-bi"></a>Konfigurera autentiseringsuppgifter programmässigt för Power BI
 
 Följ dessa anvisningar för att konfigurera autentiseringsuppgifter programmässigt för Power BI.
 
-## <a name="configure-a-credential-flow-for-data-sources"></a>Konfigurera en flöde för autentiseringsuppgifter för datakällor
+## <a name="update-credentials-flow-for-data-sources"></a>Uppdatera ett flöde för autentiseringsuppgifter för datakällor
 
 1. Anropa [Hämta datakällor](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasourcesingroup) för att identifiera datakällorna i datauppsättningen. I svarstexten för varje datakälla finns typ, anslutningsinformation, gateway och ID för datakälla.
 
     ```csharp
+    // Select a datasource
     var datasources = pbiClient.Datasets.GetDatasources(datasetId).Value;
-    var datasource = datasources.First(); // select a datasource
+    var datasource = datasources.First();
     ```
 
 2. Skapa en sträng för autentiseringsuppgifter enligt [exemplen för att uppdatera datakälla](https://docs.microsoft.com/rest/api/power-bi/gateways/updatedatasource) beroende på typ av autentiseringsuppgifter.
 
+    # <a name="net-sdk-v3"></a>[.NET SDK v3](#tab/sdk3)
+
     ```csharp
+    var credentials =  new BasicCredentials(username: "username", password :"*****");
+    ```
+
+    # <a name="net-sdk-v2"></a>[.NET SDK v2](#tab/sdk2)
+
+     ```csharp
     var credentials = "{\"credentialData\":[{\"name\":\"username\", \"value\":\"john\"},{\"name\":\"password\", \"value\":\"*****\"}]}";
     ```
 
-3. Skapa autentiseringsuppgiftsinformation.
-
-    ```csharp
-    var credentialDetails = new CredentialDetails(
-                    credentials,
-                    CredentialTypeEnum.Basic,
-                    EncryptedConnectionEnum.Encrypted,
-                    EncryptionAlgorithmEnum.None,
-                    PrivacyLevelEnum.Private);
-    ```
-
-4. Anropa [Uppdatera datakälla](https://docs.microsoft.com/rest/api/power-bi/gateways/updatedatasource) för att ange autentiseringsuppgifter, med gateway och ID för datakälla från steg 1 och med autentiseringsuppgiftsinformation från steg 4.
-
-    ```csharp
-    pbiClient.Gateways.UpdateDatasource(gatewayId, datasourceId, credentialDetails);
-    ```
-
-### <a name="expired-on-premises-data-source-credentials-flow"></a>Flöde för autentiseringsuppgifter för lokal datakälla som upphört
-
-1. [Följ steg 1 och 2 från det föregående scenariot](#configure-a-credential-flow-for-data-sources).
+    ---
 
 2. Anropa [Hämta gateway](https://docs.microsoft.com/rest/api/power-bi/gateways/getgateways) för att hämta den offentliga nyckeln för gatewayen.
 
@@ -61,24 +51,51 @@ Följ dessa anvisningar för att konfigurera autentiseringsuppgifter programmäs
     var gateway = pbiClient.Gateways.GetGatewayById(datasource.GatewayId);
     ```
 
-3. Kryptera autentiseringsuppgifterna med den offentliga nyckeln för gatewayen. Olika gatewayversioner kan ha olika stora offentliga nycklar.
-    
-    Titta på exemplet i SDK-koden som är tillgänglig från GitHub-lagringsplatsen för PowerBI-CSharp, [PowerBI-CSharp/sdk/PowerBI.Api/Extensions/V2/](https://github.com/microsoft/PowerBI-CSharp/tree/master/sdk/PowerBI.Api/Extensions/V2).
-    * [AsymmetricKeyEncryptor.cs](https://github.com/microsoft/PowerBI-CSharp/blob/master/sdk/PowerBI.Api/Extensions/V2/AsymmetricKeyEncryptor.cs)
-    * [Asymmetric1024KeyEncryptionHelper.cs](https://github.com/microsoft/PowerBI-CSharp/blob/master/sdk/PowerBI.Api/Extensions/V2/Asymmetric1024KeyEncryptionHelper.cs)
-    * [AsymmetricHigherKeyEncryptionHelper.cs](https://github.com/microsoft/PowerBI-CSharp/blob/master/sdk/PowerBI.Api/Extensions/V2/AsymmetricHigherKeyEncryptionHelper.cs)
-    * [AuthenticatedEncryption.cs](https://github.com/microsoft/PowerBI-CSharp/blob/master/sdk/PowerBI.Api/Extensions/V2/AuthenticatedEncryption.cs)
+3. Kryptera autentiseringsuppgifterna.
+
+    # <a name="net-sdk-v3"></a>[.NET SDK v3](#tab/sdk3)
+
+    ```csharp
+    var credentialsEncryptor = new AsymmetricKeyEncryptor(gateway.publicKey);
+    ```
+
+    # <a name="net-sdk-v2"></a>[.NET SDK v2](#tab/sdk2)
+
+    Kryptera autentiseringsuppgifterna med den offentliga nyckeln för gatewayen från steg 2. Olika gatewayversioner kan ha olika stora offentliga nycklar. Se följande exempel i SDK-koden, som är tillgängliga från [PowerBI-CSharp GitHub-lagringsplatsen](https://github.com/microsoft/PowerBI-CSharp/tree/master/sdk/PowerBI.Api/Extensions):
+    * [AsymmetricKeyEncryptor.cs](https://github.com/microsoft/PowerBI-CSharp/blob/master/sdk/PowerBI.Api/Extensions/AsymmetricKeyEncryptor.cs)
+    * [Asymmetric1024KeyEncryptionHelper.cs](https://github.com/microsoft/PowerBI-CSharp/blob/master/sdk/PowerBI.Api/Extensions/Asymmetric1024KeyEncryptionHelper.cs)
+    * [AsymmetricHigherKeyEncryptionHelper.cs](https://github.com/microsoft/PowerBI-CSharp/blob/master/sdk/PowerBI.Api/Extensions/AsymmetricHigherKeyEncryptionHelper.cs)
+    * [AuthenticatedEncryption.cs](https://github.com/microsoft/PowerBI-CSharp/blob/master/sdk/PowerBI.Api/Extensions/AuthenticatedEncryption.cs) 
+
+    ---  
 
 4. Skapa information om autentiseringsuppgifter med krypterade autentiseringsuppgifter.
 
+    # <a name="net-sdk-v3"></a>[.NET SDK v3](#tab/sdk3)
+
+    Använd klassen AssymetricKeyEncriptor med den offentliga nyckel som hämtades i **steg 3**.
+
     ```csharp
     var credentialDetails = new CredentialDetails(
-                    encryptedCredentials,
-                    CredentialTypeEnum.Basic,
-                    EncryptedConnectionEnum.Encrypted,
-                    EncryptionAlgorithmEnum.RSA-OAEP,
-                    PrivacyLevelEnum.Private);
+            credentials,
+            PrivacyLevel.Private,
+            EncryptedConnection.Encrypted,
+            credentialsEncryptor);
     ```
+
+
+    # <a name="net-sdk-v2"></a>[.NET SDK v2](#tab/sdk2)
+
+    ```csharp
+    var credentialDetails = new CredentialDetails(
+            credentials,
+            CredentialTypeEnum.Basic,
+            EncryptedConnectionEnum.Encrypted,
+            EncryptionAlgorithmEnum.None,
+            PrivacyLevelEnum.Private);
+    ```
+
+    ---
 
 5. Anropa [Uppdatera datakälla](https://docs.microsoft.com/rest/api/power-bi/gateways/updatedatasource) för att ange autentiseringsuppgifter.
 
@@ -93,20 +110,21 @@ Följ dessa anvisningar för att konfigurera autentiseringsuppgifter programmäs
 2. Anropa [Hämta gatewayer](https://docs.microsoft.com/rest/api/power-bi/gateways/getgateways) för att hämta gateway-ID:t och den offentliga nyckeln.
 
     ```csharp
+    // Select a gateway
     var gateways = pbiClient.Gateways.GetGateways().Value;
-    var gateway = gateways.First(); // select a gateway
+    var gateway = gateways.First();
     ```
 
-3. Skapa information om autentiseringsuppgifter som i det föregående scenariot med den offentliga nyckeln för gatewayen som hämtades i steget [Flöde för autentiseringsuppgifter för lokal datakälla som upphört](#expired-on-premises-data source-credentials-flow-on-premises-data-gateway).
+3. Skapa information om autentiseringsuppgifter som beskrivs i steget [uppdatera flödet t för autentiseringsuppgifter för datakällor](#update-credentials-flow-for-data-sources) med samma offentliga gateway-nyckel som hämtades i **steg 2**.
 
-4. skapa begärantexten
+4. Skapa begärandetexten.
 
     ```csharp
     var request = new PublishDatasourceToGatewayRequest(
-    dataSourceType: "SQL",
-    connectionDetails: "{\"server\":\"myServer\",\"database\":\"myDatabase\"}",
-    credentialDetails: credentialDetails,
-    dataSourceName: "my sql datasource");
+            dataSourceType: "SQL",
+            connectionDetails: "{\"server\":\"myServer\",\"database\":\"myDatabase\"}",
+            credentialDetails: credentialDetails,
+            dataSourceName: "my sql datasource");
     ```
 
 5. Anropa API:et [Skapa datakälla](https://docs.microsoft.com/rest/api/power-bi/gateways/createdatasource).
@@ -115,14 +133,99 @@ Följ dessa anvisningar för att konfigurera autentiseringsuppgifter programmäs
     pbiClient.Gateways.CreateDatasource(gateway.Id, request);
     ```
 
+## <a name="credential-types"></a>Typer av autentiseringsuppgifter
+
+När du anropar [Create Datasource](https://docs.microsoft.com/rest/api/power-bi/gateways/createdatasource) (Skapa datakälla) eller [Update Datasource](https://docs.microsoft.com/rest/api/power-bi/gateways/updatedatasource) (Uppdatera datakälla) under en **lokal företagsgateway** med [Power BI Rest API](https://docs.microsoft.com/rest/api/power-bi/), måste värdet för autentiseringsuppgifter krypteras med gatewayens offentliga nyckel.
+
+>[!NOTE]
+>.NET SDK v3 kan också köra de .NET SDK v2-exempel som anges nedan.
+
+### <a name="windows-and-basic-credentials"></a>Windows- och grundläggande autentiseringsuppgifter
+
+# <a name="net-sdk-v3"></a>[.NET SDK v3](#tab/sdk3)
+
+```csharp
+// Windows credentials
+var credentials = new WindowsCredentials(username: "john", password: "*****");
+
+// Or
+
+// Basic credentials
+var credentials = new BasicCredentials(username: "john", password: "*****");
+
+var credentialsEncryptor = new AsymmetricKeyEncryptor(publicKey);
+var credentialDetails = new CredentialDetails(credentials, PrivacyLevel.Private, EncryptedConnection.Encrypted, credentialsEncryptor);
+```
+
+# <a name="net-sdk-v2"></a>[.NET SDK v2](#tab/sdk2)
+
+```csharp
+var credentials = "{\"credentialData\":[{\"name\":\"username\", \"value\":\"john\"},{\"name\":\"password\", \"value\":\"*****\"}]}";
+```
+
+---
+
+### <a name="key-credentials"></a>Nyckelautentiseringsuppgifter
+
+# <a name="net-sdk-v3"></a>[.NET SDK v3](#tab/sdk3)
+
+```csharp
+var credentials = new KeyCredentials("TestKey");
+var credentialsEncryptor = new AsymmetricKeyEncryptor(publicKey);
+var credentialDetails = new CredentialDetails(credentials, PrivacyLevel.Private, EncryptedConnection.Encrypted, credentialsEncryptor);
+```
+
+# <a name="net-sdk-v2"></a>[.NET SDK v2](#tab/sdk2)
+
+```csharp
+var credentials = "{\"credentialData\":[{\"name\":\"key\", \"value\":\"ec....LA=\"}]}";
+```
+
+---
+
+**OAuth2**
+
+# <a name="net-sdk-v3"></a>[.NET SDK v3](#tab/sdk3)
+
+```csharp
+var credentials = new OAuth2Credentials("TestToken");
+var credentialsEncryptor = new AsymmetricKeyEncryptor(publicKey);
+var credentialDetails = new CredentialDetails(credentials, PrivacyLevel.Private, EncryptedConnection.Encrypted, credentialsEncryptor);
+```
+
+# <a name="net-sdk-v2"></a>[.NET SDK v2](#tab/sdk2)
+
+```csharp
+var credentials = "{\"credentialData\":[{\"name\":\"accessToken\", \"value\":\"eyJ0....fwtQ\"}]}";
+```
+
+---
+
+**Anonyma**
+
+# <a name="net-sdk-v3"></a>[.NET SDK v3](#tab/sdk3)
+
+```csharp
+var credentials = new AnonymousCredentials();
+var credentialDetails = new CredentialDetails(credentials, PrivacyLevel.Private, EncryptedConnection.NotEncrypted);
+```
+
+# <a name="net-sdk-v2"></a>[.NET SDK v2](#tab/sdk2)
+
+```csharp
+var credentials = "{\"credentialData\":\"\"}";
+```
+
+---
+
 ## <a name="troubleshooting"></a>Felsökning
 
 ### <a name="no-gateway-and-data-source-id-found-when-calling-get-data-sources"></a>Ingen gateway och inget ID för datakälla hittades vid anrop för att hämta datakällor
 
 Problemet betyder att datauppsättningen inte är bunden till en gateway. När du skapar en ny datauppsättning skapas en datakälla utan autentiseringsuppgifter automatiskt på användarens molngateway för varje molnanslutning. Denna gateway används för att lagra autentiseringsuppgifterna för molnanslutningar.
 
-När du har skapat datauppsättningen görs en automatisk bindning mellan datauppsättningen och en lämplig gateway, som innehåller matchande datakällor för alla anslutningar. Om det inte finns någon sådan gateway eller flera lämpliga gatewayer misslyckas den automatiska bindningen.
+När du har skapat datauppsättningen skapas en automatisk bindning mellan datauppsättningen och en lämplig gateway, som innehåller matchande datakällor för alla anslutningar. Om det inte finns någon sådan gateway eller flera lämpliga gatewayer misslyckas den automatiska bindningen.
 
-Skapa eventuella lokala datakällor som saknas och bind datauppsättningen till en gateway manuellt med hjälp av [Bind till gateway](https://docs.microsoft.com/rest/api/power-bi/datasets/bindtogateway).
+Om du använder lokala datauppsättningar skapar du de lokala datakällor som saknas och binder datauppsättningen till en gateway manuellt med hjälp av [Bind till gateway](https://docs.microsoft.com/rest/api/power-bi/datasets/bindtogateway).
 
 Om du vill identifiera gatewayer som kan bindas använder du [Identifiera gatewayer](https://docs.microsoft.com/rest/api/power-bi/datasets/discovergateways).
