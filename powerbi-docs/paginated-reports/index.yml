@@ -1,0 +1,81 @@
+### YamlMime:Landing
+title: Dokumentation om sidnumrerade rapporter i Power BI
+summary: Dokumentationen om sidnumrerade rapporter i Power BI innehåller expertinformation och hjälper dig att uppfylla dina specifika behov, oavsett hur du använder Power BI.
+metadata:
+  title: Dokumentation om sidnumrerade rapporter i Power BI
+  description: Dokumentationen om sidnumrerade rapporter i Power BI innehåller expertinformation och hjälper dig att uppfylla dina specifika behov, oavsett hur du använder Power BI.
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: powerbi
+  ms.topic: landing-page
+  ms.collection: collection
+  author: maggiesMSFT
+  ms.author: maggies
+  ms.date: 02/25/2020
+  ms.openlocfilehash: 47a77e156c6b59440e0de500a3f2ab9dede01c85
+  ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+  ms.translationtype: HT
+  ms.contentlocale: sv-SE
+  ms.lasthandoff: 03/07/2020
+  ms.locfileid: "78924608"
+landingContent:
+- title: Om sidnumrerade rapporter i Power BI
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Vad är sidnumrerade rapporter i Power BI?
+      url: paginated-reports-report-builder-power-bi.md
+    - text: Report Builder i Power BI
+      url: report-builder-power-bi.md
+- title: Kom igång
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Skapa en sidnumrerad rapport och ladda upp den
+      url: paginated-reports-quickstart-aw.md
+  - linkListType: concept
+    links:
+    - text: Hitta rätt i rapportdesignvyn
+      url: paginated-reports-report-design-view.md
+    - text: Planera en sidnumrerad rapport
+      url: report-builder-planning-report.md
+- title: Ansluta till data
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Data i Report Builder
+      url: report-builder-data.md
+    - text: Datakällor som stöds
+      url: paginated-reports-data-sources.md
+  - linkListType: how-to-guide
+    links:
+    - text: Skapa en inbäddad datakälla
+      url: paginated-reports-embedded-data-source.md
+    - text: Skapa en inbäddad datauppsättning
+      url: paginated-reports-create-embedded-dataset.md
+- title: Skapa rapporter
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Tabeller, matriser och listor
+      url: report-builder-tables-matrices-lists.md
+  - linkListType: how-to-guide
+    links:
+    - text: Skapa en rapport med en delad datamängd
+      url: report-builder-shared-datasets.md
+    - text: Skapa parametrar
+      url: paginated-reports-parameters.md
+- title: Förfina och publicera rapporter
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Exempel på uttryck
+      url: report-builder-expression-examples.md
+    - text: Sidnumrering för rapporten
+      url: paginated-reports-pagination.md
+  - linkListType: how-to-guide
+    links:
+    - text: Skicka en rapportparameter i en URL
+      url: report-builder-url-pass-parameters.md
+    - text: Publicera en sidnumrerad rapport
+      url: paginated-reports-save-to-power-bi-service.md

@@ -1,5 +1,5 @@
 ### YamlMime:Landing
-title: Dokumentation om Power BI för konsumenter
+title: Power BI-dokumentation för konsumenter
 summary: Som konsument får du instrumentpaneler och rapporter från kollegor. Du arbetar i Power BI med att granska och interagera med innehållet för att kunna fatta välgrundade affärsbeslut.
 metadata:
   title: Power BI för konsumenter
@@ -9,13 +9,13 @@ metadata:
   ms.topic: landing-page
   author: mihart
   ms.author: mihart
-  ms.date: 01/10/2020
-  ms.openlocfilehash: d08520a7ee3526323111de91c4dfb67e139a8813
-  ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
+  ms.date: 02/25/2020
+  ms.openlocfilehash: 3f6431f2011b4b6a75ea766d6051b02ce2abe947
+  ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
   ms.translationtype: HT
   ms.contentlocale: sv-SE
-  ms.lasthandoff: 02/20/2020
-  ms.locfileid: "77497803"
+  ms.lasthandoff: 03/07/2020
+  ms.locfileid: "78919364"
 landingContent:
 - title: Om Power BI för konsumenter
   linkLists:
@@ -85,15 +85,15 @@ landingContent:
       url: end-user-bookmarks.md
     - text: Visa automatiska insikter
       url: end-user-insights.md
-    - text: Visa en sidnumrerad rapport
-      url: paginated-reports-view-power-bi-service.md
+    - text: Användningstips för Frågor och svar
+      url: end-user-q-and-a-tips.md
 - title: Resurser
   linkLists:
   - linkListType: reference
     links:
     - text: Ordlista
       url: end-user-glossary.md
-    - text: Vanliga frågor och svar
+    - text: VANLIGA FRÅGOR OCH SVAR
       url: end-user-faq.md
     - text: Insiktstyper
       url: end-user-insight-types.md

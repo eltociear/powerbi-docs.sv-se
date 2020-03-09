@@ -1,8 +1,9 @@
-- name: Power BI för konsumenter
-  href: power-bi-consumer-landing.md
 - name: Power BI-tjänsten för konsumenter
+  href: index.yml
+  expanded: true
   items:
     - name: Översikt
+      expanded: true
       items:
         - name: Vad är en Power BI-konsument?
           href: end-user-consumer.md
@@ -11,6 +12,7 @@
         - name: Få en genomgång av Power BI-tjänsten
           href: end-user-reading-view.md
     - name: Kom igång
+      expanded: true
       items:
         - name: Lär dig hitta i Power BI
           href: end-user-experience.md
@@ -20,7 +22,7 @@
           href: end-user-q-and-a.md
         - name: Logga in första gången
           href: end-user-sign-in.md
-        - name: Leta upp din licenstyp
+        - name: Vilken Power BI-licens har jag?
           href: end-user-license.md
         - name: Navigera i det "nya utseendet"
           href: ../service-new-look.md
@@ -138,109 +140,3 @@
           href: end-user-browsers.md
         - name: Typer av snabbinsikter
           href: end-user-insight-types.md
-- name: Power BI-mobilappar
-  items:
-    - name: Översikt
-      items:
-        - name: Vilka mobilappar finns det?
-          href: mobile/mobile-apps-for-mobile-devices.md
-        - name: Upptäck startsidan
-          href: mobile/mobile-apps-home-page.md
-    - name: Snabbstarter
-      items:
-        - name: Utforska instrumentpaneler och rapporter
-          href: mobile/mobile-apps-quickstart-view-dashboard-report.md
-    - name: Självstudier
-      items:
-        - name: Ställ frågor i iOS-mobilappar
-          href: mobile/tutorial-mobile-apps-ios-qna.md
-    - name: Begrepp
-      items:
-        - name: Nyheter i mobilapparna
-          href: mobile/mobile-whats-new-in-the-mobile-apps.md
-        - name: Hämta verkliga data med mobilapparna
-          href: mobile/mobile-apps-data-in-real-world-context.md
-        - name: Visa dina data offline i mobilapparna
-          href: mobile/mobile-apps-offline-data.md
-        - name: Appen Power BI för Mixed Reality (förhandsversion)
-          href: mobile/mobile-mixed-reality-app.md
-    - name: Gör så här
-      items:
-        - name: Alla mobilappar
-          items:
-            - name: Instrumentpaneler för mobilt Power BI
-              href: mobile/mobile-apps-view-dashboard.md
-            - name: Rapporter i mobilapparna
-              href: mobile/mobile-reports-in-the-mobile-apps.md
-            - name: Interagera med paneler i mobilapparna
-              href: mobile/mobile-tiles-in-the-mobile-apps.md
-            - name: Dela en instrumentpanel från Power BI-mobilapparna
-              href: mobile/mobile-share-dashboard-from-the-mobile-apps.md
-            - name: Favoriter i mobilapparna
-              href: mobile/mobile-apps-favorites.md
-            - name: Konfigurera interaktionsinställningar (endast telefon)
-              href: mobile/mobile-app-interaction-settings.md
-            - name: Ställa in dataaviseringar i Power BI-mobilapparna
-              href: mobile/mobile-set-data-alerts-in-the-mobile-apps.md
-            - name: Få aviseringar i Power BI-mobilapparna
-              href: mobile/mobile-apps-notification-center.md
-            - name: Skapa en djuplänk till en specifik plats
-              href: mobile/mobile-apps-deep-link-specific-location.md
-            - name: Filtrera en rapport efter plats i Power BI-mobilapparna
-              href: mobile/mobile-apps-geographic-filtering.md
-            - name: Använda OAuth för att ansluta till Reporting Services
-              href: mobile/mobile-oauth-ssrs.md
-        - name: iOS och Android
-          items:
-            - name: Visa rapporter optimerade för din telefon
-              href: mobile/mobile-apps-view-phone-report.md
-            - name: Visa lokala rapporter i mobilapparna
-              href: mobile/mobile-app-ssrs-kpis-mobile-on-premises-reports.md
-            - name: Få åtkomst till innehåll från en extern organisation (B2B)
-              href: mobile/mobile-apps-b2b.md
-            - name: Skanna en Power BI QR-kod från din telefon
-              href: mobile/mobile-apps-qr-code.md
-            - name: Kommentera och dela i mobilappar
-              href: mobile/mobile-annotate-and-share-a-tile-from-the-mobile-apps.md
-            - name: Skanna en streckkod från Power BI-mobilappen
-              href: mobile/mobile-apps-scan-barcode-iphone.md
-            - name: Konfigurera med hjälp av mobilenhetshantering
-              href: mobile/mobile-app-configuration.md
-        - name: iOS
-          items:
-            - name: Kom igång med iOS-appen
-              href: mobile/mobile-iphone-app-get-started.md
-            - name: 'Skydda med Face ID, Touch ID eller lösenord'
-              href: mobile/mobile-ios-native-secure-access.md
-            - name: Frågor och svar virtuell analytiker i iOS-mobilappar
-              href: mobile/mobile-apps-ios-qna.md
-            - name: Power BI-mobilappsintegrering med Siri-genvägar
-              href: mobile/mobile-apps-iOS-siri-Shortcuts.md
-            - name: iOS-enhetssökningsintegrering
-              href: mobile/mobile-apps-iOS-search-integration.md
-            - name: Power BI-appen för Apple Watch
-              href: mobile/mobile-apple-watch.md
-        - name: Android-enheter
-          items:
-            - name: Kom igång med Android-appen
-              href: mobile/mobile-android-app-get-started.md
-            - name: Åtgärda "Ditt företags SSL-certifikat är inte betrott"
-              href: mobile/mobile-android-app-error-corporate-ssl-account-is-untrusted.md
-            - name: Åtgärda "Android System WebView måste uppdateras"
-              href: mobile/mobile-android-error-update-android-system-webview.md
-        - name: Power BI-appen för Windows 10-enheter
-          items:
-            - name: Kom igång med Windows 10-appen
-              href: mobile/mobile-windows-10-phone-app-get-started.md
-            - name: Fäst en instrumentpanel på startskärmen
-              href: mobile/mobile-pin-dashboard-start-screen-windows-10-phone-app.md
-            - name: 'Visa Reporting Services-mobilrapporter och KPI:er'
-              href: mobile/mobile-app-windows-10-ssrs-kpis-mobile-reports.md
-            - name: Visa Power BI på Surface Hub
-              href: mobile/mobile-windows-10-app-presentation-mode.md
-            - name: Enkel inloggning i Windows-appen
-              href: mobile/mobile-windows-10-app-single-sign-on-sso.md
-    - name: Resurser
-      items:
-        - name: Språk som stöds i mobilapparna
-          href: mobile/mobile-apps-supported-languages.md

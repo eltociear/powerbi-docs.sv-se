@@ -1,0 +1,81 @@
+### YamlMime:Landing
+title: Transformera, forma och modellera data i Power BI – dokumentation
+summary: Power BI-dokumentationen innehåller expertinformation och hjälper dig att uppfylla dina specifika behov, oavsett hur du använder Power BI.
+metadata:
+  title: Transformera, forma och modellera data i Power BI – dokumentation
+  description: Power BI-dokumentationen innehåller expertinformation och hjälper dig att uppfylla dina specifika behov, oavsett hur du använder Power BI.
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: powerbi
+  ms.topic: landing-page
+  ms.collection: collection
+  author: maggiesMSFT
+  ms.author: maggies
+  ms.date: 03/03/2020
+  ms.openlocfilehash: 738bc26097120b0075f3ca1ffb0787f241aec982
+  ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+  ms.translationtype: HT
+  ms.contentlocale: sv-SE
+  ms.lasthandoff: 03/07/2020
+  ms.locfileid: "78924539"
+landingContent:
+- title: Omvandla och forma data
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Översikt över Frågeredigeraren
+      url: ../desktop-query-overview.md
+  - linkListType: tutorial
+    links:
+    - text: Forma och kombinera data
+      url: ../desktop-shape-and-combine-data.md
+  - linkListType: concept
+    links:
+    - text: Vanliga frågeaktiviteter
+      url: ../desktop-common-query-tasks.md
+  - linkListType: how-to-guide
+    links:
+    - text: Kombinera filer (binärfiler)
+      url: ../desktop-combine-binaries.md
+- title: Modelldata
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Modelleringsvy
+      url: ../desktop-modeling-view.md
+    - text: Många-till-många-relationer
+      url: ../desktop-many-to-many-relationships.md
+  - linkListType: how-to-guide
+    links:
+    - text: Skapa och hantera relationer
+      url: ../desktop-create-and-manage-relationships.md
+    - text: Använda datakategorisering
+      url: ../desktop-data-categorization.md
+- title: Beräkningar
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Lär dig grunderna i DAX
+      url: ../desktop-quickstart-learn-dax-basics.md
+    - text: Skapa beräknade kolumner
+      url: ../desktop-tutorial-create-calculated-columns.md
+  - linkListType: concept
+    links:
+    - text: Beräknade tabeller
+      url: ../desktop-calculated-tables.md
+  - linkListType: how-to-guide
+    links:
+    - text: Använda snabbmått
+      url: ../desktop-quick-measures.md
+- title: Dataförberedelser med självbetjäning
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Dataförberedelser med självbetjäning i Power BI
+      url: ../desktop-quickstart-connect-to-data.md
+  - linkListType: concept
+    links:
+    - text: 'Dataflöden: Dataförberedelser med självbetjäning'
+      url: ../service-dataflows-overview.md
+    - text: Skapa och använda dataflöden
+      url: ../service-dataflows-create-use.md

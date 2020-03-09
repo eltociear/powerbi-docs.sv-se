@@ -1,0 +1,87 @@
+### YamlMime:Landing
+title: Dokumentation om Power BI-rapportserver
+summary: Dokumentationen om Power BI-rapportserver innehåller expertinformation och hjälper dig att uppfylla dina specifika behov, oavsett hur du använder Power BI.
+metadata:
+  title: Dokumentation om Power BI-rapportserver
+  description: Dokumentationen om Power BI-rapportserver innehåller expertinformation och hjälper dig att uppfylla dina specifika behov, oavsett hur du använder Power BI.
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: powerbi
+  ms.topic: landing-page
+  ms.collection: collection
+  author: maggiesMSFT
+  ms.author: maggies
+  ms.date: 03/03/2020
+  ms.openlocfilehash: f727b8832c29c4bfca448a03898620c183eb13a2
+  ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+  ms.translationtype: HT
+  ms.contentlocale: sv-SE
+  ms.lasthandoff: 03/07/2020
+  ms.locfileid: "78924631"
+landingContent:
+- title: Om Power BI-rapportserver
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Vad är Power BI-rapportserver?
+      url: get-started.md
+  - linkListType: concept
+    links:
+    - text: Jämföra rapportservern och tjänsten
+      url: compare-report-server-service.md
+    - text: Nyheter i Power BI-rapportserver
+      url: whats-new.md
+- title: Kom igång
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Utforska Power BI-rapportservern på en virtuell dator
+      url: tutorial-explore-report-server-web-portal.md
+  - linkListType: concept
+    links:
+    - text: Administratörsöversikt
+      url: admin-handbook-overview.md
+    - text: Utvecklaröversikt
+      url: developer-handbook-overview.md
+  - linkListType: how-to-guide
+    links:
+    - text: Installera Power BI Desktop
+      url: install-powerbi-desktop.md
+    - text: Installera Report Builder
+      url: install-report-builder.md
+- title: Rapportservern för administratörer
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Maskin- och programvarukrav
+      url: system-requirements.md
+  - linkListType: how-to-guide
+    links:
+    - text: Installera en rapportserver
+      url: install-report-server.md
+    - text: Hitta produktnyckeln för rapportservern
+      url: find-product-key.md
+    - text: Migrera en rapportserverinstallation
+      url: migrate-report-server.md
+    - text: Konfigurera Kerberos
+      url: configure-kerberos-powerbi-reports.md
+- title: Rapportserver för rapportutvecklare
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Schemalagd uppdatering av Power BI-rapport
+      url: scheduled-refresh.md
+    - text: Rapportdatakällor i Power BI
+      url: data-sources.md
+    - text: Sidnumrerade rapportdatakällor
+      url: connect-data-sources.md
+  - linkListType: how-to-guide
+    links:
+    - text: Skapa en Power BI-rapport
+      url: quickstart-create-powerbi-report.md
+    - text: Hantera innehåll i webbportalen
+      url: getting-around.md
+    - text: Åtkomst till delade datauppsättningar som OData-flöden
+      url: access-dataset-odata.md
+    - text: Säkerhet på radnivå
+      url: row-level-security-report-server.md

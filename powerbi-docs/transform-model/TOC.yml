@@ -1,0 +1,115 @@
+- name: 'Transformera, forma och modellera data i Power BI'
+  href: index.yml
+  expanded: true
+  items:
+    - name: Översikt
+      expanded: true
+      items:
+        - name: Översikt över Frågeredigeraren
+          href: ../desktop-query-overview.md
+        - name: Dataförberedelser med självbetjäning för dataflöden
+          href: ../service-dataflows-overview.md
+    - name: Självstudier
+      expanded: true
+      items:
+        - name: Skapa egna mått
+          href: ../desktop-tutorial-create-measures.md
+        - name: Skapa beräknade kolumner
+          href: ../desktop-tutorial-create-calculated-columns.md
+    - name: Begrepp
+      expanded: true
+      items:
+        - name: Skapa modellrelationer
+          href: ../desktop-relationships-understand.md
+        - name: Arbeta med modelleringsvyn
+          href: ../desktop-modeling-view.md
+        - name: Hantera sammansättningar
+          href: ../desktop-aggregations.md
+        - name: Använda sammansatta modeller
+          href: ../desktop-composite-models.md
+        - name: Använda många-till-många-relationer
+          href: ../desktop-many-to-many-relationships.md
+        - name: Hantera lagringsläge
+          href: ../desktop-storage-mode.md
+        - name: Aktivera dubbelriktad korsfiltrering
+          href: ../desktop-bidirectional-filtering.md
+        - name: Arbeta med flerdimensionella modeller i Power BI
+          href: ../desktop-default-member-multidimensional-models.md
+    - name: Instruktionsguider
+      items:
+        - name: Utföra vanliga frågeaktiviteter
+          href: ../desktop-common-query-tasks.md
+        - name: Skapa och hantera relationer
+          href: ../desktop-create-and-manage-relationships.md
+        - name: Använda fönstret Analytics
+          href: ../desktop-analytics-pane.md
+        - name: Arbeta med datavyn
+          href: ../desktop-data-view.md
+        - name: Använda grundläggande DAX-funktioner
+          href: ../desktop-quickstart-learn-dax-basics.md
+        - name: Arbeta med relationsvyn
+          href: ../desktop-relationship-view.md
+        - name: Omvandla och forma data
+          items:
+            - name: Kombinera filer (binärfiler)
+              href: ../desktop-combine-binaries.md
+            - name: Använda AI Insights (förhandsversion)
+              href: ../desktop-ai-insights.md
+        - name: Modellera dina data
+          items:
+            - name: Skapa snabbmått för vanliga beräkningar
+              href: ../desktop-quick-measures.md
+            - name: Skapa och använda konsekvensparametrar för att visualisera variabler
+              href: ../desktop-what-if.md
+            - name: Ange datakategorier i Power BI Desktop
+              href: ../desktop-data-categorization.md
+            - name: Tagga streckkodsfält i Power BI Desktop för mobilappen
+              href: ../desktop-mobile-barcodes.md
+            - name: Ange geografiska filter i Power BI för mobilappen
+              href: ../desktop-mobile-geofiltering.md
+            - name: Skapa beräknade kolumner
+              href: ../desktop-calculated-columns.md
+            - name: Skapa beräknade tabeller
+              href: ../desktop-calculated-tables.md
+            - name: Skapa mått för dataanalys
+              href: ../desktop-measures.md
+            - name: 'Importera och visa KPI:er'
+              href: ../desktop-import-and-display-kpis.md
+        - name: Dataförberedelser med självbetjäning
+          items:
+            - name: Skapa och använda dataflöden
+              href: ../service-dataflows-create-use.md
+            - name: Använda den förbättrade beräkningsmotorn med dataflöden
+              href: ../service-dataflows-enhanced-compute-engine.md
+            - name: Beräknade entiteter med Power BI Premium
+              href: ../service-dataflows-computed-entities-premium.md
+            - name: Ansluta till datakällor med dataflöden
+              href: ../service-dataflows-data-sources.md
+            - name: Använda dataflöden med lokala datakällor
+              href: ../service-dataflows-on-premises-gateways.md
+            - name: Länka entiteter mellan dataflöden
+              href: ../service-dataflows-linked-entities.md
+            - name: Använda inkrementell uppdatering med dataflöden
+              href: ../service-dataflows-incremental-refresh.md
+            - name: Utvecklarresurser för dataflöden
+              href: ../service-dataflows-developer-resources.md
+            - name: Ansluta till dataflöden i Power BI Desktop
+              href: ../desktop-connect-dataflows.md
+            - name: Dataflöden och Azure Data Lake-integrering (förhandsversion)
+              href: ../service-dataflows-azure-data-lake-integration.md
+            - name: Ansluta Azure Data Lake Storage Gen2 för lagring av dataflöde
+              href: ../service-dataflows-connect-azure-data-lake-storage-gen2.md
+            - name: Konfigurera inställningar för arbetsytans dataflöde (förhandsversion)
+              href: ../service-dataflows-configure-workspace-storage-settings.md
+            - name: Lägga till en CDM-mapp i Power BI som ett dataflöde (förhandsversion)
+              href: ../service-dataflows-add-cdm-folder.md
+            - name: Integrera Machine Learning i Power BI
+              href: ../service-machine-learning-integration.md
+            - name: Använda Cognitive Services i Power BI
+              href: ../service-cognitive-services.md
+            - name: Automatiserad maskininlärning i Power BI
+              href: ../service-machine-learning-automated.md
+    - name: Referens
+      items:
+        - name: Genvägar för formelredigeraren
+          href: ../desktop-formula-editor.md

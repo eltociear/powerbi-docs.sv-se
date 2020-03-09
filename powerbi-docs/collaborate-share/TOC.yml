@@ -1,0 +1,85 @@
+- name: 'Samarbeta, dela och integrera mellan produkter med Power BI'
+  href: index.yml
+  expanded: true
+  items:
+    - name: Översikt
+      expanded: true
+      items:
+        - name: Sätt att dela ditt arbete
+          href: ../service-how-to-collaborate-distribute-dashboards-reports.md
+    - name: Begrepp
+      expanded: true
+      items:
+        - name: Organize ditt arbete
+          href: ../service-new-workspaces.md
+        - name: Övervaka användning på klassiska arbetsytor
+          href: ../service-usage-metrics.md
+        - name: Övervaka användning på nya arbetsytor
+          href: ../service-modern-usage-metrics.md
+    - name: Instruktionsguider
+      expanded: true
+      items:
+        - name: Samarbeta i Power BI
+          items:
+            - name: Skapa nya arbetsytor
+              href: ../service-create-the-new-workspaces.md
+            - name: Uppgradera klassiska arbetsytor
+              href: ../designer/service-upgrade-workspaces.md
+            - name: Skapa arbetsytor
+              href: ../service-create-workspaces.md
+            - name: Publicera appar från arbetsytor
+              href: ../service-create-distribute-apps.md
+            - name: Hantera datalagring i arbetsytor
+              href: ../service-admin-manage-your-data-storage-in-power-bi.md
+            - name: Anslut till filer på din grupps OneDrive
+              href: ../service-connect-to-files-in-app-workspace-onedrive-for-business.md
+            - name: Samarbeta på en klassisk arbetsyta
+              href: ../service-collaborate-power-bi-workspace.md
+            - name: Hantera din grupp i Power BI och Office 365
+              href: ../service-manage-app-workspace-in-power-bi-and-office-365.md
+        - name: Publicera och dela ditt arbete
+          items:
+            - name: Dela instrumentpaneler och rapporter
+              href: ../service-share-dashboards.md
+            - name: Filtrera och dela en rapport
+              href: ../service-share-reports.md
+            - name: 'Filtrera en rapport med hjälp av parametrar i URL:en'
+              href: ../service-url-filters.md
+            - name: Registrera dig och andra för prenumeration
+              href: ../service-report-subscribe.md
+            - name: Bädda in rapport i Microsoft Teams
+              href: ../service-embed-report-microsoft-teams.md
+            - name: Bädda in rapport i SharePoint Online
+              href: ../service-embed-report-spo.md
+            - name: Bädda in en rapport på en säker portal eller webbplats
+              href: ../service-embed-secure.md
+            - name: Publicera på webben från Power BI
+              href: ../service-publish-to-web.md
+            - name: Dela en instrumentpanel som länkar till en Excel-arbetsbok på OneDrive
+              href: ../service-share-dashboard-that-links-to-excel-onedrive.md
+            - name: Power BI Publisher för Excel
+              href: ../publisher-for-excel.md
+        - name: Utöka Power BI
+          items:
+            - name: Analysera i Excel
+              href: ../service-analyze-in-excel.md
+            - name: Felsöka analysfunktionen i Excel
+              href: ../desktop-troubleshooting-analyze-in-excel.md
+            - name: 'Fel: Det gick inte att hitta några data i din Excel-arbetsbok'
+              href: ../service-admin-troubleshoot-excel-workbook-data.md
+            - name: Power Automate och Power BI
+              href: ../service-flow-integration.md
+            - name: Använda appar från tredje part
+              href: ../service-power-bi-get-started-third-party-apps.md
+        - name: Organisationsinnehållspaket
+          items:
+            - name: Introduktion till organisationsinnehållspaket
+              href: ../service-organizational-content-pack-introduction.md
+            - name: Skapa och publicera ett innehållspaket
+              href: ../service-organizational-content-pack-create-and-publish.md
+            - name: 'Kopiera, uppdatera och få åtkomst till innehållspaket'
+              href: ../service-organizational-content-pack-copy-refresh-access.md
+            - name: 'Hantera, uppdatera och ta bort innehållspaket'
+              href: ../service-organizational-content-pack-manage-update-delete.md
+            - name: Ta bort en anslutning till ett innehållspaket
+              href: ../service-organizational-content-pack-disconnect.md

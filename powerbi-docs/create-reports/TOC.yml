@@ -1,0 +1,377 @@
+- name: Skapa rapporter och instrumentpaneler i Power BI
+  href: index.yml
+  items:
+    - name: Översikt
+      expanded: true
+      items:
+        - name: Upptäck rapportredigeraren
+          href: ../service-the-report-editor-take-a-tour.md
+        - name: Vad är sidnumrerade rapporter?
+          href: ../paginated-reports/paginated-reports-report-builder-power-bi.md
+    - name: Självstudier
+      expanded: true
+      items:
+        - name: 'Labb: Skapa en sidnumrerad rapport'
+          href: 'https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208'
+        - name: Skapa en sidnumrerad rapport och ladda upp den
+          href: ../paginated-reports/paginated-reports-quickstart-aw.md
+    - name: Exempel
+      expanded: true
+      items:
+        - name: Hämta exempeldata för Power BI
+          href: ../sample-datasets.md
+        - name: Importera och öppna exempelpaket
+          href: ../sample-tutorial-connect-to-the-samples.md
+        - name: Exempel på kundlönsamhet
+          href: ../sample-customer-profitability.md
+        - name: Exempel på IT-utgiftsanalys
+          href: ../sample-it-spend.md
+        - name: Exempel på personalfrågor
+          href: ../sample-human-resources.md
+        - name: Exempel på affärsmöjlighetsanalys
+          href: ../sample-opportunity-analysis.md
+        - name: Exempel på anskaffningsanalys
+          href: ../sample-procurement.md
+        - name: Exempel på detaljhandelsanalys
+          href: ../sample-retail-analysis.md
+        - name: Exempel på försäljning och marknadsföring
+          href: ../sample-sales-and-marketing.md
+        - name: Exempel på leverantörskvalitetsanalys
+          href: ../sample-supplier-quality.md
+        - name: Ladda ned arbetsboken med finansiella exempel
+          href: ../sample-financial-download.md
+    - name: Begrepp
+      expanded: true
+      items:
+        - name: Power BI-rapporter
+          items:
+            - name: Arbeta med rapportvyn
+              href: ../desktop-report-view.md
+            - name: Filtertyper i Power BI-rapporter
+              href: ../power-bi-report-filter-types.md
+            - name: Filtrera och markera i rapporter
+              href: ../power-bi-reports-filters-and-highlighting.md
+            - name: Radprovtagning med hög densitet
+              href: ../desktop-high-density-sampling.md
+            - name: Om visuella objekt för frågor och svar i Power BI
+              href: ../visuals/power-bi-visualization-q-and-a.md
+            - name: Om hjälpmedel i Power BI
+              href: ../desktop-accessibility-overview.md
+            - name: Frågor och svar om naturligt språk
+              items:
+                - name: Frågor och svar – introduktion
+                  href: ../natural-language/q-and-a-intro.md
+                - name: Introduktion till verktyg för frågor och svar
+                  href: ../natural-language/q-and-a-tooling-intro.md
+                - name: Avancerade verktyg för frågor och svar
+                  href: ../natural-language/q-and-a-tooling-advanced.md
+                - name: Frågor och svar – begränsningar
+                  href: ../natural-language/q-and-a-limitations.md
+                - name: Visualiseringstyper i Frågor och svar
+                  href: ../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
+        - name: Sidnumrerade rapporter
+          items:
+            - name: Report Builder i Power BI
+              href: ../paginated-reports/report-builder-power-bi.md
+            - name: Komma runt rapportdesignvyn
+              href: ../paginated-reports/paginated-reports-report-design-view.md
+            - name: Planera en rapport
+              href: ../paginated-reports/report-builder-planning-report.md
+            - name: Report Builder-data
+              href: ../paginated-reports/report-builder-data.md
+            - name: Datakällor som stöds
+              href: ../paginated-reports/paginated-reports-data-sources.md
+            - name: Designtips
+              href: ../paginated-reports/report-builder-design-tips.md
+            - name: 'Tabeller, matriser, listor'
+              href: ../paginated-reports/report-builder-tables-matrices-lists.md
+            - name: Parametrar
+              href: ../paginated-reports/report-builder-parameters.md
+            - name: URL-parametrar i sidnumrerade rapporter
+              href: ../paginated-reports/report-builder-url-parameters.md
+            - name: Exempel på uttryck
+              href: ../paginated-reports/report-builder-expression-examples.md
+            - name: Sidnumrering för rapporten
+              href: ../paginated-reports/paginated-reports-pagination.md
+            - name: Förhandsgranska rapporter
+              href: ../paginated-reports/report-builder-previewing-reports.md
+            - name: Vanliga frågor och svar om sidnumrerade rapporter
+              href: ../paginated-reports/paginated-reports-faq.md
+    - name: Instruktionsguider
+      items:
+        - name: Publicera datamängder och rapporter
+          href: ../desktop-upload-desktop-files.md
+        - name: Lägga till visuella objekt i en Power BI-rapport (del 1)
+          href: ../visuals/power-bi-report-add-visualizations-i.md
+        - name: Lägga till visuella objekt i en Power BI-rapport (del 2)
+          href: ../visuals/power-bi-report-add-visualizations-ii.md
+        - name: 'Anpassa visuella rubriker, bakgrunder och förklaringar'
+          href: ../visuals/power-bi-visualization-customize-title-background-and-legend.md
+        - name: Visa objekt utan data i Power BI
+          href: ../desktop-show-items-no-data.md
+        - name: Använda automatiskt datum/tid
+          href: ../desktop-auto-date-time.md
+        - name: Power BI-rapporter
+          items:
+            - name: Aktivera automatisk siduppdatering (förhandsversion)
+              href: ../desktop-automatic-page-refresh.md
+            - name: Undersök rapportelement med Prestandaanalys
+              href: ../desktop-performance-analyzer.md
+            - name: Lägga till visuella element i rapporter
+              href: ../desktop-visual-elements-for-reports.md
+            - name: Förbättra dina visuella objekt med knappbeskrivningar för rapporter
+              href: ../desktop-tooltips.md
+            - name: Exportera rapporter till PDF-filer
+              href: ../desktop-export-to-pdf.md
+            - name: Använda insikter för att förklara variationer i visuella objekt (förhandsversion)
+              href: ../desktop-insights.md
+            - name: Använda insikter för att upptäcka hur distributioner kan variera (förhandsversion)
+              href: ../desktop-insights-find-where-different.md
+            - name: Skapa knappar
+              href: ../desktop-buttons.md
+            - name: Spara och dela insikter genom att skapa bokmärken
+              href: ../desktop-bookmarks.md
+            - name: Arbeta med rapportteman
+              href: ../desktop-report-themes.md
+            - name: Arbeta med filter i Power BI-rapporter
+              href: ../power-bi-report-filter.md
+            - name: Använda funktionen för att visa detaljerad information
+              href: ../desktop-drillthrough.md
+            - name: Använda funktionen för att visa detaljerad information mellan rapporter
+              href: ../desktop-cross-report-drill-through.md
+            - name: Använda gruppering och diskretisering
+              href: ../desktop-grouping-and-binning.md
+            - name: Skapa visuella Power BI-objekt med R
+              href: ../desktop-r-visuals.md
+            - name: Ladda ned och använda R-drivna anpassade visuella objekt
+              href: ../desktop-r-powered-custom-visuals.md
+            - name: Använda stödlinjer och fästa mot rutnät
+              href: ../desktop-gridlines-snap-to-grid.md
+            - name: Använda sidvisningsinställningar i Power BI-rapporter
+              href: ../power-bi-report-display-settings.md
+            - name: Lägga till en kolumn från ett exempel
+              href: ../desktop-add-column-from-example.md
+            - name: Lägga till en anpassad kolumn
+              href: ../desktop-add-custom-column.md
+            - name: Använda infogade hierarkietiketter
+              href: ../desktop-inline-hierarchy-labels.md
+            - name: Använda numeriskt intervallutsnitt
+              href: ../desktop-slicer-numeric-range.md
+            - name: Använda ett relativt datumutsnitt och filter
+              href: ../desktop-slicer-filter-date-range.md
+            - name: Skapa ett utsnitt som du kan ändra storlek på
+              href: ../power-bi-slicer-filter-responsive.md
+            - name: Begränsa dataåtkomst med säkerhet på radnivå
+              href: ../desktop-rls.md
+            - name: Anpassa knappbeskrivningar
+              href: ../desktop-custom-tooltips.md
+            - name: Lägga till textrutor och former i rapporter
+              href: ../power-bi-reports-add-text-and-shapes.md
+            - name: Lägga till en hyperlänk i en textruta
+              href: ../service-add-hyperlink-to-text-box.md
+            - name: Lägga till hyperlänkar i en tabell
+              href: ../power-bi-hyperlinks-in-tables.md
+            - name: 'Visa bilder i en tabell, en matris eller ett utsnitt'
+              href: ../power-bi-images-tables.md
+            - name: Visa anpassade formatsträngar
+              href: ../desktop-custom-format-strings.md
+            - name: Använda villkorsstyrd tabellformatering
+              href: ../desktop-conditional-table-formatting.md
+            - name: Skapa dynamiska uttrycksbaserade rubriker
+              href: ../desktop-conditional-format-visual-titles.md
+            - name: Sortera efter kolumn
+              href: ../desktop-sort-by-column.md
+            - name: Optimera rapporter för mobilapparna
+              href: ../desktop-create-phone-report.md
+            - name: Använda alternativen Visa data och Visa poster
+              href: ../desktop-see-data-see-records.md
+            - name: Tips om hur du skapar rapporter
+              href: ../desktop-tips-and-tricks-for-creating-reports.md
+            - name: Gruppera visuella objekt i en rapport
+              href: ../desktop-grouping-visuals.md
+            - name: Skapa rapportmallar
+              href: ../desktop-templates.md
+            - name: Skapa en rapport från en datauppsättning
+              href: ../service-report-create-new.md
+            - name: Lägga till ett filter i en rapport
+              href: ../power-bi-report-add-filter.md
+            - name: Spara en rapport
+              href: ../service-report-save.md
+            - name: Interagera med en rapport i redigeringsvyn
+              href: ../service-interact-with-a-report-in-editing-view.md
+            - name: Analysera i Excel
+              href: ../service-analyze-in-excel.md
+            - name: Tips om hur du skapar rapporter
+              href: ../power-bi-reports-tips-and-tricks-for-creating.md
+            - name: Arbeta med aggregeringar i tjänsten
+              href: ../service-aggregates.md
+            - name: Skapa en QR-kod för en rapport
+              href: ../service-create-qr-code-for-report.md
+            - name: Exportera en rapport till Power BI Desktop (förhandsversion)
+              href: ../service-export-to-pbix.md
+        - name: Visualiseringar
+          items:
+            - name: Lägga till visuella objekt i Power BI-rapporter
+              href: ../visuals/power-bi-report-visualizations.md
+            - name: Ändra visuella objekt i Power BI-rapporter
+              href: ../visuals/power-bi-report-change-visualization-type.md
+            - name: Använda datapunktsbegränsningar och strategier efter visuell typ
+              href: ../visuals/power-bi-data-points.md
+            - name: Vida ett visuellt objekts underliggande data
+              href: ../visuals/service-reports-show-data.md
+            - name: Komma igång med färgformatering och axelegenskaper
+              href: ../visuals/service-getting-started-with-color-formatting-and-axis-properties.md
+            - name: Tips för färgformatering
+              href: ../visuals/service-tips-and-tricks-for-color-formatting.md
+            - name: Kopiera och klistra in en rapportvisualisering
+              href: ../visuals/power-bi-visualization-copy-paste.md
+            - name: Exportera data som används för att skapa en visualisering
+              href: ../visuals/power-bi-visualization-export-data.md
+            - name: 'Flytta, ändra storlek och fälla ut ett visuellt objekt i en rapport'
+              href: ../visuals/power-bi-visualization-move-and-resize.md
+            - name: Ändra hur visuella objekt interagerar i en rapport
+              href: ../service-reports-visual-interactions.md
+            - name: Tips för Power BI-kartvisualiseringar
+              href: ../visuals/power-bi-map-tips-and-tricks.md
+            - name: Anpassa egenskaper för X-axel och Y-axel
+              href: ../visuals/power-bi-visualization-customize-x-axis-and-y-axis.md
+            - name: Interagera med ArcGIS-kartor i virtuella Power BI-objekt
+              href: ../visuals/power-bi-visualizations-arcgis.md
+            - name: Skapa ArcGIS-kartor för virtuella Power BI-objekt
+              href: ../visuals/power-bi-visualization-arcgis.md
+            - name: Skapa och använda enkla ytdiagram
+              href: ../visuals/power-bi-visualization-basic-area-chart.md
+            - name: Skapa kortvisualiseringar (stora sifferpaneler)
+              href: ../visuals/power-bi-visualization-card.md
+            - name: Skapa och använda kombinationsdiagram
+              href: ../visuals/power-bi-visualization-combo-chart.md
+            - name: Skapa och använda visualisering av nedbrytningsträd (förhandsversion)
+              href: ../visuals/power-bi-visualization-decomposition-tree.md
+            - name: Skapa och använda ringdiagram
+              href: ../visuals/power-bi-visualization-doughnut-charts.md
+            - name: Skapa och använda fyllda kartor (koropletkartor)
+              href: ../visuals/power-bi-visualization-filled-maps-choropleths.md
+            - name: Skapa och använda trattdiagram
+              href: ../visuals/power-bi-visualization-funnel-charts.md
+            - name: Skapa och använda visualiseringar av viktiga influerares visuella objekt
+              href: ../visuals/power-bi-visualization-influencers.md
+            - name: Skapa och använda visuella KPI-objekt
+              href: ../visuals/power-bi-visualization-kpi.md
+            - name: Skapa och använda visuella KPI-objekt
+              href: ../visuals/desktop-matrix-visual.md
+            - name: Skapa och använda visuella objekt i Power Apps
+              href: ../visuals/power-bi-visualization-powerapp.md
+            - name: Skapa och använda visuella R-objekt
+              href: ../visuals/service-r-visuals.md
+            - name: Skapa och använda diagram med radiell mätare
+              href: ../visuals/power-bi-visualization-radial-gauge-charts.md
+            - name: Skapa och använda banddiagram
+              href: ../visuals/desktop-ribbon-charts.md
+            - name: 'Skapa och använda punkt-, bubbel- och punktritningsdiagram'
+              href: ../visuals/power-bi-visualization-scatter.md
+            - name: Använda punktdiagram med hög densitet
+              href: ../visuals/desktop-high-density-scatter-charts.md
+            - name: Skapa och använda visuella formkarteobjekt (förhandsversion)
+              href: ../visuals/desktop-shape-map.md
+            - name: Skapa och använda utsnitt
+              href: ../visuals/power-bi-visualization-slicers.md
+            - name: Skapa och använda tabeller i Power BI-rapporter och instrumentpaneler
+              href: ../visuals/power-bi-visualization-tables.md
+            - name: Skapa och använda trädkartor
+              href: ../visuals/power-bi-visualization-treemaps.md
+            - name: Skapa och använda vattenfallsdiagram
+              href: ../visuals/power-bi-visualization-waterfall-charts.md
+        - name: Frågor och svar om naturligt språk
+          items:
+            - name: Visuella frågor och svar
+              href: ../visuals/power-bi-visualization-q-and-a.md
+            - name: Träna Frågor och svar att förstå
+              href: ../natural-language/q-and-a-tooling-teach-q-and-a.md
+            - name: Frågor och svar – metodtips
+              href: ../natural-language/q-and-a-best-practices.md
+            - name: Använda frågor och svar för att utforska dina data
+              href: ../power-bi-tutorial-q-and-a.md
+            - name: Skapa ett visuellt objekt med frågor och svar
+              href: ../power-bi-visualization-introduction-to-q-and-a.md
+            - name: Få dina Excel-data att fungera bra med Frågor och svar
+              href: ../service-prepare-data-for-q-and-a.md
+            - name: Skapa aktuella frågor för Frågor och svar
+              href: ../service-q-and-a-create-featured-questions.md
+            - name: Använda Frågor och svar med live-anslutningar
+              href: ../service-q-and-a-direct-query.md
+            - name: Snabba insikter i Power BI
+              href: ../service-insights.md
+            - name: Optimera dina data för Snabbinsikter
+              href: ../service-insights-optimize.md
+        - name: Tillgänglighet
+          items:
+            - name: Utforma tillgängliga Power BI-rapporter
+              href: ../desktop-accessibility-creating-reports.md
+            - name: Skapa Power BI-rapporter med hjälpmedel
+              href: ../desktop-accessibility-creating-tools.md
+            - name: Använda Power BI-rapporter med hjälpmedel
+              href: ../desktop-accessibility-consuming-tools.md
+            - name: Kortkommandon i Power BI Desktop
+              href: ../desktop-accessibility-keyboard-shortcuts.md
+        - name: Dataursprung
+          href: ../service-data-lineage.md
+        - name: Sidnumrerade rapporter
+          items:
+            - name: Ange data direkt i en sidnumrerad rapport
+              href: ../paginated-reports/paginated-reports-enter-data.md
+            - name: Skapa en inbäddad datakälla
+              href: ../paginated-reports/paginated-reports-embedded-data-source.md
+            - name: Skapa en inbäddad datauppsättning
+              href: ../paginated-reports/paginated-reports-create-embedded-dataset.md
+            - name: Skapa en rapport med en delad Power BI-datamängd
+              href: ../paginated-reports/report-builder-shared-datasets.md
+            - name: Skapa parametrar
+              href: ../paginated-reports/paginated-reports-parameters.md
+            - name: Skicka en rapportparameter i en URL
+              href: ../paginated-reports/report-builder-url-pass-parameters.md
+            - name: Publicera en sidnumrerad rapport
+              href: ../paginated-reports/paginated-reports-save-to-power-bi-service.md
+        - name: Instrumentpaneler
+          items:
+            - name: Introduktion till instrumentpaneler
+              href: ../service-dashboards.md
+            - name: Paneler på instrumentpanelen
+              href: ../service-dashboard-tiles.md
+            - name: Skapa en instrumentpanel från en rapport
+              href: ../service-dashboard-create.md
+            - name: Skapa en kopia av en instrumentpanel
+              href: ../service-dashboard-copy.md
+            - name: Fästa en panel på en instrumentpanel från en rapport
+              href: ../service-dashboard-pin-tile-from-report.md
+            - name: Fästa en panel från en instrumentpanel på en annan instrumentpanel
+              href: ../service-pin-tile-to-another-dashboard.md
+            - name: Fästa en panel på en instrumentpanel från Excel
+              href: ../service-dashboard-pin-tile-from-excel.md
+            - name: Fäst en panel till en instrumentpanel från frågor och svar
+              href: ../service-dashboard-pin-tile-from-q-and-a.md
+            - name: Fästa en hel rapportsida på en instrumentpanel
+              href: ../service-dashboard-pin-live-tile-from-report.md
+            - name: Datavarningar i Power BI-tjänsten
+              href: ../service-set-data-alerts.md
+            - name: 'Lägga till en bild, textruta, video eller kod på en instrumentpanel'
+              href: ../service-dashboard-add-widget.md
+            - name: Redigera en panel
+              href: ../service-dashboard-edit-tile.md
+            - name: Tips för att utforma en bra instrumentpanel
+              href: ../service-dashboards-design-tips.md
+            - name: Optimera en instrumentpanel för telefoner
+              href: ../service-create-dashboard-mobile-phone-view.md
+            - name: Skapa en QR-kod för en panel
+              href: ../service-create-qr-code-for-tile.md
+            - name: Klassificering av instrumentpanelsdata
+              href: ../service-data-classification.md
+            - name: Instrumentpanelsteman
+              href: ../service-dashboard-themes.md
+        - name: Andra uppgifter
+          items:
+            - name: Byt namn på innehåll i Power BI
+              href: ../service-rename.md
+            - name: Ange objektkontakter
+              href: ../service-item-contact.md
+            - name: Ta bort nästan vad som helst i Power BI
+              href: ../service-delete.md

@@ -1,0 +1,55 @@
+- name: Komma igång med Power BI – dokumentation
+  href: index.yml
+  expanded: true
+  items:
+    - name: Översikt
+      expanded: true
+      items:
+        - name: Vad är Power BI?
+          href: ../power-bi-overview.md
+        - name: Vad är Power BI Desktop?
+          href: ../desktop-what-is-desktop.md
+        - name: Vad är Power BI-tjänsten?
+          href: ../power-bi-service-overview.md
+        - name: Jämföra Power BI Desktop och tjänsten
+          href: ../service-service-vs-desktop.md
+    - name: Begrepp
+      items:
+        - name: Vad är nytt i den senaste uppdateringen av Power BI Desktop?
+          href: ../desktop-latest-update.md
+        - name: Nyheter i Power BI-tjänsten
+          href: ../service-whats-new.md
+        - name: Förstå Power BI-tjänsten
+          href: ../service-basic-concepts.md
+        - name: 10 tips för att få hjälp
+          href: ../service-tips-for-finding-help.md
+        - name: Licensiering
+          items:
+            - name: Registrera dig för Power BI
+              href: ../service-self-service-signup-for-power-bi.md
+            - name: Funktioner efter licenstyp
+              href: ../service-features-license-type.md
+    - name: Instruktionsguider
+      items:
+        - name: Hämta Power BI Desktop
+          href: ../desktop-get-the-desktop.md
+        - name: Komma igång med Power BI Desktop
+          href: ../desktop-getting-started.md
+    - name: Referens
+      items:
+        - name: Språk och länder/regioner som stöds
+          href: ../supported-languages-countries-regions.md
+        - name: Webbläsare som stöds
+          href: ../power-bi-browsers.md
+    - name: Resurser
+      items:
+        - name: Videor
+          href: ../videos.md
+        - name: Webbseminarier
+          href: ../webinars.md
+        - name: Power BI Desktop-videoklipp
+          href: ../desktop-videos.md
+        - name: Uppdateringsarkiv för Power BI Desktop
+          href: ../desktop-latest-update-archive.md
+        - name: Sekretesspolicy för Power BI Desktop Skicka ett leende
+          href: ../desktop-send-smile-privacy-statement.md

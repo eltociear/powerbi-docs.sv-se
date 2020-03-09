@@ -1,0 +1,121 @@
+### YamlMime:Landing
+title: Skapa rapporter och instrumentpaneler i Power BI – dokumentation
+summary: Power BI-dokumentationen innehåller expertinformation och hjälper dig att uppfylla dina specifika behov, oavsett hur du använder Power BI.
+metadata:
+  title: Skapa rapporter och instrumentpaneler i Power BI – dokumentation
+  description: Power BI-dokumentationen innehåller expertinformation och hjälper dig att uppfylla dina specifika behov, oavsett hur du använder Power BI.
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: powerbi
+  ms.topic: landing-page
+  ms.collection: collection
+  author: maggiesMSFT
+  ms.author: maggies
+  ms.date: 02/25/2020
+  ms.openlocfilehash: 592a7bff1f511158de929ce0a225f26558a1997b
+  ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+  ms.translationtype: HT
+  ms.contentlocale: sv-SE
+  ms.lasthandoff: 03/07/2020
+  ms.locfileid: "78924194"
+landingContent:
+- title: Kom igång
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: Använda det uppdaterade menyfliksområdet
+      url: ../desktop-ribbon.md
+    - text: Översikt över tillgänglighet
+      url: ../desktop-accessibility-overview.md
+    - text: Hämta exempeldata
+      url: ../sample-datasets.md
+  - linkListType: tutorial
+    links:
+    - text: Importera och öppna exempelpaket
+      url: ../sample-tutorial-connect-to-the-samples.md
+  - linkListType: concept
+    links:
+    - text: Rapportvy
+      url: ../desktop-report-view.md
+- title: Visualiseringar
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Översikt över visualiseringar
+      url: ../visuals/power-bi-report-visualizations.md
+    - text: Visualiseringstyper
+      url: ../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
+  - linkListType: how-to-guide
+    links:
+    - text: Tips och trick för kartor
+      url: ../visuals/power-bi-map-tips-and-tricks.md
+    - text: Exportera data från ett visuellt objekt
+      url: ../visuals/power-bi-visualization-export-data.md
+    - text: Utsnitt
+      url: ../visuals/power-bi-visualization-slicers.md
+- title: Utforma rapporter
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Rapportteman
+      url: ../desktop-report-themes.md
+    - text: Textrutor och figurer
+      url: ../power-bi-reports-add-text-and-shapes.md
+  - linkListType: how-to-guide
+    links:
+    - text: Villkorsstyrd tabellformatering
+      url: ../desktop-conditional-table-formatting.md
+    - text: Använda gruppering och kvantisering
+      url: ../desktop-grouping-and-binning.md
+    - text: Lägga till bokmärken i en rapport
+      url: ../desktop-bookmarks.md
+- title: Utforma rapportinteraktioner
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Rapportvy i Power BI Desktop
+      url: ../desktop-report-view.md
+  - linkListType: how-to-guide
+    links:
+    - text: Utforska data med Frågor och svar
+      url: ../power-bi-tutorial-q-and-a.md
+    - text: Använda visning av detaljerad information i en rapport
+      url: ../desktop-drillthrough.md
+    - text: Lägga till bokmärken i en rapport
+      url: ../desktop-bookmarks.md
+    - text: Lägga till filter i en rapport
+      url: ../power-bi-report-filter.md
+- title: Sidnumrerade rapporter i Power BI
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Vad är sidnumrerade rapporter i Power BI?
+      url: ../paginated-reports/paginated-reports-report-builder-power-bi.md
+    - text: Report Builder i Power BI
+      url: ../paginated-reports/report-builder-power-bi.md
+  - linkListType: concept
+    links:
+    - text: Exempel på uttryck
+      url: ../paginated-reports/report-builder-expression-examples.md
+    - text: Tabeller, matriser och listor
+      url: ../paginated-reports/report-builder-tables-matrices-lists.md
+  - linkListType: how-to-guide
+    links:
+    - text: Skapa en rapport med en delad datamängd
+      url: ../paginated-reports/report-builder-shared-datasets.md
+    - text: Skapa parametrar
+      url: ../paginated-reports/paginated-reports-parameters.md
+- title: Instrumentpaneler
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Introduktion till instrumentpaneler
+      url: ../service-dashboards.md
+  - linkListType: how-to-guide
+    links:
+    - text: Skapa en instrumentpanel
+      url: ../service-dashboard-create.md
+    - text: Fästa en panel på en instrumentpanel
+      url: ../service-share-dashboards.md
+    - text: Lägga till bilder eller video på en instrumentpanel
+      url: ../service-dashboard-add-widget.md

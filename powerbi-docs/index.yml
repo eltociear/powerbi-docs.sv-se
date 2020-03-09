@@ -1,0 +1,243 @@
+### YamlMime:Hub
+title: Power BI-dokumentation
+summary: Power BI ger dig en bättre inblick och ökar värdet på dina data. Power BI-dokumentationen innehåller expertinformation och hjälper dig att uppfylla dina specifika behov, oavsett hur du använder Power BI.
+brand: power-bi
+metadata:
+  title: Power BI-dokumentation
+  description: Power BI ger dig en bättre inblick och ökar värdet på dina data. Hitta expertinformation och svar här, oavsett hur du använder Power BI.
+  services: service
+  ms.service: powerbi
+  ms.subservice: subservice
+  ms.topic: hub-page
+  ms.collection: collection
+  author: maggiesMSFT
+  ms.author: maggies
+  ms.date: 03/03/2020
+  ms.openlocfilehash: ad1e273947744f2d7611f6a4a03940e52f2a64fa
+  ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+  ms.translationtype: HT
+  ms.contentlocale: sv-SE
+  ms.lasthandoff: 03/07/2020
+  ms.locfileid: "78924309"
+highlightedContent:
+  items:
+  - title: Komma igång med Power BI Desktop
+    itemType: get-started
+    url: desktop-getting-started.md
+  - title: Registrera dig för Power BI-tjänsten
+    itemType: how-to-guide
+    url: service-self-service-signup-for-power-bi.md
+  - title: Olika sätt att samarbeta och dela
+    itemType: concept
+    url: service-how-to-collaborate-distribute-dashboards-reports.md
+conceptualContent:
+  items:
+  - title: 'Power BI: Kom igång'
+    links:
+    - url: power-bi-overview.md
+      itemType: overview
+      text: Vad är Power BI?
+    - url: desktop-what-is-desktop.md
+      itemType: overview
+      text: Vad är Power BI Desktop?
+    - url: power-bi-service-overview.md
+      itemType: overview
+      text: Vad är Power BI-tjänsten?
+    footerLink:
+      url: fundamentals/index.yml
+      text: Visa mer
+  - title: Power BI för konsumenter
+    links:
+    - url: consumer/end-user-consumer.md
+      itemType: get-started
+      text: Är jag en Power BI-konsument?
+    - url: consumer/end-user-experience.md
+      itemType: get-started
+      text: Hitta rätt i Power BI-tjänsten
+    - url: consumer/end-user-dashboards.md
+      itemType: concept
+      text: Vad är en instrumentpanel?
+    footerLink:
+      url: consumer/index.yml
+      text: Visa mer
+  - title: Administrera Power BI
+    links:
+    - url: service-admin-administering-power-bi-in-your-organization.md
+      itemType: overview
+      text: Vad är Power BI-administration?
+    - url: service-admin-licensing-organization.md
+      itemType: concept
+      text: Licensiering i organisationen
+    - url: service-admin-portal.md
+      itemType: concept
+      text: Administratörsportalen
+    footerLink:
+      url: admin/index.yml
+      text: Visa mer
+  - title: Utveckla i Power BI
+    links:
+    - url: developer/what-can-you-do.md
+      itemType: overview
+      text: Vad utvecklare kan göra
+    - url: power-bi-custom-visuals.md
+      itemType: overview
+      text: Utvecklare och visuella objekt
+    - url: developer/embedding.md
+      itemType: overview
+      text: Inbäddad analys
+    footerLink:
+      url: developer/index.yml
+      text: Visa mer
+  - title: Ansluta till data
+    links:
+    - url: desktop-quickstart-connect-to-data.md
+      itemType: tutorial
+      text: Ansluta till data
+    - url: service-gateway-onprem.md
+      itemType: concept
+      text: Lokala datagatewayer
+    - url: refresh-data.md
+      itemType: concept
+      text: Datauppdatering
+    footerLink:
+      url: connect-data/index.yml
+      text: Visa mer
+  - title: Omvandla och forma data
+    links:
+    - url: desktop-analytics-pane.md
+      itemType: how-to-guide
+      text: Använda fönstret Analytics
+    - url: desktop-common-query-tasks.md
+      itemType: concept
+      text: Vanliga frågeaktiviteter
+    - url: desktop-shape-and-combine-data.md
+      itemType: tutorial
+      text: Forma och kombinera data
+    footerLink:
+      url: transform-model/index.yml
+      text: Visa mer
+  - title: Modelldata
+    links:
+    - url: desktop-add-custom-column.md
+      itemType: how-to-guide
+      text: Lägga till en anpassad kolumn
+    - url: desktop-tutorial-create-calculated-columns.md
+      itemType: tutorial
+      text: Skapa beräknade kolumner
+    - url: desktop-create-and-manage-relationships.md
+      itemType: how-to-guide
+      text: Skapa och hantera relationer
+    footerLink:
+      url: transform-model/index.yml
+      text: Visa mer
+  - title: Skapa rapporter och instrumentpaneler
+    links:
+    - url: desktop-report-themes.md
+      itemType: concept
+      text: Rapportteman
+    - url: desktop-conditional-table-formatting.md
+      itemType: concept
+      text: Vad är sidnumrerade rapporter?
+    - url: paginated-reports/paginated-reports-report-builder-power-bi.md
+      itemType: how-to-guide
+      text: Skapa en instrumentpanel
+    footerLink:
+      url: create-reports/index.yml
+      text: Visa mer
+  - title: Samarbeta och dela
+    links:
+    - url: service-share-dashboards.md
+      itemType: concept
+      text: Dela instrumentpaneler och rapporter
+    - url: service-create-the-new-workspaces.md
+      itemType: how-to-guide
+      text: Skapa nya arbetsytor
+    - url: service-datasets-across-workspaces.md
+      itemType: concept
+      text: Introduktion till delade datauppsättningar
+    footerLink:
+      url: collaborate-share/index.yml
+      text: Visa mer
+  - title: Integrera mellan produkter
+    links:
+    - url: service-azure-and-power-bi.md
+      itemType: concept
+      text: Azure och Power BI
+    - url: service-analyze-in-excel.md
+      itemType: concept
+      text: Analysera i Excel
+    - url: service-embed-report-spo.md
+      itemType: concept
+      text: Bädda in i SharePoint Online
+    footerLink:
+      url: collaborate-share/index.yml
+      text: Visa mer
+  - title: Power BI i mobilapparna
+    links:
+    - url: consumer/mobile/mobile-apps-for-mobile-devices.md
+      itemType: get-started
+      text: Vilka mobilappar finns det?
+    - url: consumer/mobile/mobile-apps-quickstart-view-dashboard-report.md
+      itemType: quickstart
+      text: Utforska instrumentpaneler och rapporter
+    - url: consumer/mobile/mobile-app-ssrs-kpis-mobile-on-premises-reports.md
+      itemType: how-to-guide
+      text: Visa lokala rapporter
+    footerLink:
+      url: consumer/mobile/index.yml
+      text: Visa mer
+  - title: Stora företag
+    links:
+    - url: service-premium-what-is.md
+      itemType: overview
+      text: Vad är Power BI Premium?
+    - url: service-admin-power-bi-security.md
+      itemType: concept
+      text: Säkerhet
+    - url: admin/service-security-data-protection-overview.md
+      itemType: concept
+      text: Dataskydd
+    footerLink:
+      url: admin/index.yml
+      text: Visa mer
+  - title: Vägledning för regelverk
+    links:
+    - url: guidance/overview.md
+      itemType: overview
+      text: Översikt över vägledning
+    - url: guidance/star-schema.md
+      itemType: concept
+      text: Star-scheman
+    - url: guidance/import-modeling-data-reduction.md
+      itemType: concept
+      text: Minska datamodellstorlek
+    footerLink:
+      url: guidance/index.yml
+      text: Visa mer
+  - title: Läs mer
+    links:
+    - url: https://docs.microsoft.com/learn/modules/explore-power-bi-service/
+      itemType: learn
+      text: Utforska vad du kan göra med Power BI
+    - url: https://docs.microsoft.com/learn/modules/analyze-data-power-bi/
+      itemType: learn
+      text: Analysera data
+    - url: https://docs.microsoft.com/learn/modules/get-started-with-power-bi/
+      itemType: learn
+      text: Komma igång med att bygga
+    footerLink:
+      url: guided-learning/index.yml
+      text: Visa mer
+additionalContent:
+  sections:
+  - title: Relaterade verktyg
+  - items:
+    - title: Power BI-rapportserver
+      summary: Utforska Power BI-rapportservern, en lokal rapportserver med en webbportal där du kan visa och hantera Power BI-rapporter, sidnumrerade rapporter och KPI:er.
+      url: report-server/index.yml
+    - title: REST API:er för Power BI
+      summary: REST-API:erna för Power BI tillhandahåller tjänstslutpunkter för inbäddning, administration och användarresurser.
+      url: https://docs.microsoft.com/rest/api/power-bi/
+    - title: Dokumentation om Power Platform
+      summary: Lär dig hur Power BI, Power Apps, Power Automate och Power Virtual Agents fungerar tillsammans och förbättrar varandra.
+      url: https://docs.microsoft.com/power-platform/

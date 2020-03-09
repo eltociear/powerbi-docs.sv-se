@@ -1,0 +1,71 @@
+### YamlMime:Landing
+title: Ansluta till data i Power BI – dokumentation
+summary: Power BI-dokumentationen innehåller expertinformation och hjälper dig att uppfylla dina specifika behov, oavsett hur du använder Power BI.
+metadata:
+  title: Ansluta till data i Power BI – dokumentation
+  description: Power BI-dokumentationen innehåller expertinformation och hjälper dig att uppfylla dina specifika behov, oavsett hur du använder Power BI.
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: powerbi
+  ms.topic: landing-page
+  ms.collection: collection
+  author: maggiesMSFT
+  ms.author: maggies
+  ms.date: 02/25/2020
+  ms.openlocfilehash: a46c459c61f85b2f8cb4885f93c1893724485dff
+  ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+  ms.translationtype: HT
+  ms.contentlocale: sv-SE
+  ms.lasthandoff: 03/07/2020
+  ms.locfileid: "78924148"
+landingContent:
+- title: Anslut till data i Power BI
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Datakällor
+      url: ../desktop-data-sources.md
+    - text: Datavy i Power BI Desktop
+      url: ../desktop-data-view.md
+  - linkListType: tutorial
+    links:
+    - text: Importera data från en webbsida
+      url: ../desktop-tutorial-importing-and-analyzing-data-from-a-web-page.md
+- title: Gateways
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Lokala datagatewayer
+      url: ../service-gateway-onprem.md
+  - linkListType: tutorial
+    links:
+    - text: Ansluta till lokala SQL Server-data
+      url: ../service-gateway-sql-tutorial.md
+  - linkListType: how-to-guide
+    links:
+    - text: Använda personliga gateways
+      url: ../service-gateway-personal-mode.md
+- title: Mallappar
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Vad är mallappar?
+      url: ../service-template-apps-overview.md
+  - linkListType: concept
+    links:
+    - text: Skapa mallappar
+      url: ../service-template-apps-create.md
+    - text: Distribuera mallappar i din organisation
+      url: ../service-template-apps-install-distribute.md
+- title: Uppdatera data
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Datauppdatering
+      url: ../refresh-data.md
+    - text: Inkrementell uppdatering i Power BI Premium
+      url: ../service-premium-incremental-refresh.md
+  - linkListType: how-to-guide
+    links:
+    - text: Konfigurera schemalagd uppdatering
+      url: ../refresh-scheduled-refresh.md

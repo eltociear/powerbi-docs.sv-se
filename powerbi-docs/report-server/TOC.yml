@@ -1,0 +1,124 @@
+- name: Power BI-rapportserver
+  expanded: true
+  items:
+    - name: Översikt
+      expanded: true
+      items:
+        - name: Vad är Power BI-rapportserver?
+          href: get-started.md
+        - name: Jämför Power BI-rapportservern och tjänsten
+          href: compare-report-server-service.md
+    - name: Självstudier
+      expanded: true
+      items:
+        - name: Utforska Power BI-rapportservern på en virtuell dator
+          href: tutorial-explore-report-server-web-portal.md
+    - name: Begrepp
+      expanded: true
+      items:
+        - name: Nyheter
+          href: whats-new.md
+        - name: Administratörsöversikt
+          href: admin-handbook-overview.md
+        - name: Ändringslogg
+          href: changelog.md
+        - name: Supporttider
+          href: support-timeline.md
+        - name: Always Encrypted-support
+          href: always-encrypted-support.md
+        - name: Maskin- och programvarukrav
+          href: system-requirements.md
+        - name: Stöd för webbläsare
+          href: browser-support.md
+        - name: Rapportservern grunder
+          items:
+            - name: Schemalagd uppdatering av Power BI-rapport
+              href: scheduled-refresh.md
+            - name: Rapportdatakällor i Power BI
+              href: data-sources.md
+            - name: Sidnumrerade rapportdatakällor
+              href: connect-data-sources.md
+            - name: Prenumerationer
+              href: 'https://go.microsoft.com/fwlink/?linkid=851310'
+            - name: Använda mobilappen
+              href: 'https://go.microsoft.com/fwlink/?linkid=848711'
+            - name: Felsöka schemalagd uppdatering
+              href: scheduled-refresh-troubleshoot.md
+        - name: Rapportserver för utvecklare
+          items:
+            - name: Rapportserver för utvecklare
+              href: developer-handbook-overview.md
+            - name: Rapportvisningskontroll
+              href: 'https://go.microsoft.com/fwlink/?linkid=848724'
+            - name: Utveckla tillägg
+              href: 'https://go.microsoft.com/fwlink/?linkid=848723'
+            - name: Bädda in rapporter
+              href: quickstart-embed.md
+    - name: Gör så här
+      items:
+        - name: Installera Power BI Desktop
+          href: install-powerbi-desktop.md
+        - name: Installera Report Builder
+          href: install-report-builder.md
+        - name: Rapportservern grunder
+          items:
+            - name: Skapa en Power BI-rapport en rapportserver
+              href: quickstart-create-powerbi-report.md
+            - name: Hantera innehåll på rapportservern
+              href: getting-around.md
+            - name: Säkerhet på radnivå (RLS) i rapportservern
+              href: row-level-security-report-server.md
+            - name: Skapa en sidnumrerad rapport för en rapportserver
+              href: quickstart-create-paginated-report.md
+            - name: Ange data direkt i en sidnumrerad rapport
+              href: ../paginated-reports/paginated-reports-enter-data.md
+            - name: 'Arbeta med KPI:er'
+              href: 'https://go.microsoft.com/fwlink/?linkid=849021'
+            - name: Åtkomst till delade datauppsättningar som OData-flöden
+              href: access-dataset-odata.md
+            - name: Ändra anslutningssträngar för datakällor med PowerShell
+              href: connect-data-source-apis.md
+            - name: Konfigurera schemalagd uppdatering
+              href: configure-scheduled-refresh.md
+            - name: Lägga till kommentarer i en rapport
+              href: add-comments.md
+        - name: Rapportservern för administratörer
+          items:
+            - name: Installera en rapportserver
+              href: install-report-server.md
+            - name: Hitta din produktnyckel
+              href: find-product-key.md
+            - name: Uppgradera en rapportserver
+              href: upgrade.md
+            - name: Migrera en rapportserver
+              href: migrate-report-server.md
+            - name: Konfigurera Kerberos för att använda Power BI-rapporter
+              href: configure-kerberos-powerbi-reports.md
+            - name: Konfigurera mobilappåtkomst via fjärranslutning
+              href: configure-powerbi-mobile-apps-remote.md
+            - name: Konfigurera WAP och AD FS
+              href: connect-adfs-wap-report-server.md
+            - name: Konfigurera en rapportserver med Azure Application Proxy
+              href: azure-application-proxy.md
+            - name: Mobil fjärråtkomst med Azure AD
+              href: 'https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi'
+            - name: Vara värd för Excel-arbetsböcker
+              href: excel-oos.md
+    - name: Referens
+      items:
+        - name: REST-API
+          href: rest-api.md
+        - name: WMI
+          href: 'https://go.microsoft.com/fwlink/?linkid=848719'
+        - name: 'SOAP-API:er'
+          href: 'https://go.microsoft.com/fwlink/?linkid=848721'
+        - name: URL-åtkomst
+          href: 'https://go.microsoft.com/fwlink/?linkid=848722'
+        - name: Tillägg
+          href: 'https://go.microsoft.com/fwlink/?linkid=848723'
+    - name: Resurser
+      items:
+        - name: Vitbok om kapacitetsplanering
+          href: capacity-planning.md
+        - name: Anpassning av PDF-återgivningstillägg
+          href: rendering-extension-support.md
