@@ -1,4 +1,5 @@
-- name: Power BI-rapportserver
+- name: Dokumentation om Power BI-rapportserver
+  href: index.yml
   expanded: true
   items:
     - name: Översikt
