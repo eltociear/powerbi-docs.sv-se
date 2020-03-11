@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 07/16/2019
-ms.openlocfilehash: 6bf7610a010a72248a3d2fdd96718eea513a68da
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 0203c191965bd2a496c1a5062b85af64d22b3b76
+ms.sourcegitcommit: 743167a911991d19019fef16a6c582212f6a9229
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "75000099"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78400441"
 ---
 # <a name="guidelines-for-power-bi-visuals"></a>Riktlinjer för visuella objekt för Power BI
 Innan du [publicerar](https://docs.microsoft.com/power-bi/developer/office-store) ditt visuella Power BI-objekt till Microsoft AppSource så att andra kan upptäcka och använda det ska du se till att följa riktlinjerna så att användarna får en bra upplevelse.
@@ -28,7 +28,7 @@ Som med kostnadsfria visuella Power BI-objekt kan även visuella Power BI-objekt
 
 Ett visuellt Power BI-objekt med köp via app är ett *kostnadsfritt* visuellt objekt som erbjuder *kostnadsfria funktioner*. Det har även vissa avancerade funktioner som kan kräva extra avgifter. I beskrivningen för det visuella Power BI-objektet måste utvecklare informera användarna om vilka funktioner som kräver ytterligare köp för att fungera. Microsoft tillhandahåller för närvarande inte inbyggda API:er för att stödja köp av appar och tilläggsprogram.
 
-Utvecklare kan använda valfritt betalningssystem från tredje part för dessa köp. Se vår [policy för marknadsplatsen](https://docs.microsoft.com/office/dev/store/validation-policies#2-apps-or-add-ins-can-display-certain-ads) för mer information.
+Utvecklare kan använda valfritt betalningssystem från tredje part för dessa köp. Se vår [policy för marknadsplatsen](https://docs.microsoft.com/legal/marketplace/certification-policies#11002-displaying-ads) för mer information.
 
 
 >[!IMPORTANT]  

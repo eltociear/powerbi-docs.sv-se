@@ -8,17 +8,17 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/07/2020
 ms.author: maggies
-ms.openlocfilehash: 54416b314b03a5889c58004918513fecd7ff5ccd
-ms.sourcegitcommit: df8bcc65f0df69bf1fc1d47eb06575742eac1622
+ms.openlocfilehash: 33c4f7b208916c2d920591acfc444f52c7655e47
+ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75954254"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78919529"
 ---
 # <a name="create-a-paginated-report-for-power-bi-report-server"></a>Skapa en sidnumrerad rapport för Power BI-rapportservern
 I den här artikeln får du skapa en sidnumrerad rapport för Power BI-rapportservern i några enkla steg.
 
-Behöver du hjälp med att skapa sidnumrerade rapporter i Report Builder för Power BI-tjänsten? Då ska du läsa [Power BI Report Builder](../report-builder-power-bi.md) i stället.
+Behöver du hjälp med att skapa sidnumrerade rapporter i Report Builder för Power BI-tjänsten? Då ska du läsa [Power BI Report Builder](../paginated-reports/report-builder-power-bi.md) i stället.
 
 Som namnet antyder sidnumrerade rapporter ha många sidor. De har ett fast format och kan anpassas med precision. Sidnumrerade rapporter är RDL-filer.
 

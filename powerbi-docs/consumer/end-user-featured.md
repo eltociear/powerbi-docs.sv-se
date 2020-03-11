@@ -3,19 +3,18 @@ title: Välj vilken instrumentpanel som ska visas när du öppnar Power BI-tjän
 description: Dokumentation om hur du skapar en aktuell instrumentpanel i Power BI-tjänsten
 author: mihart
 ms.reviewer: ''
-featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/14/2019
+ms.date: 02/19/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 412bcf397d550e002957e7379bf41381e8e3eea8
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 27a7bdce79d0cf39a15b3350d06fd01d7d9e13c2
+ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73852538"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79040051"
 ---
 # <a name="featured-dashboards-in-the-power-bi-service"></a>Aktuella instrumentpaneler i Power BI-tjänsten
 
@@ -33,9 +32,6 @@ Du kan även välja ut några instrumentpaneler och ställa in dem som favoriter
 Om du inte har angett en aktuell instrumentpanel ännu öppnas Power BI till den senaste instrumentpanelen som du använde eller till Power BI-**start**. 
 
 ### <a name="set-a-dashboard-as-featured"></a>Ange en instrumentpanel som aktuell
-Se hur Amanda skapar en aktuell instrumentpanel i videon. Prova själv genom att följa stegen.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/G26dr2PsEpk" frameborder="0" allowfullscreen></iframe>
 
 
 1. Öppna den instrumentpanel som du vill ange som aktuell. 
@@ -51,7 +47,6 @@ Du kan ange en ny instrumentpanel som den aktuella instrumentpanelen senare.
 
 1. Följ det tidigare stegen 1 och 2.
    
-    ![Fönstret Ändra den aktuella instrumentpanelen](./media/end-user-featured/power-bi-change-feature.png)
 2. Välj **Ställ in som aktuell instrumentpanel**. Om du tar bort statusen Aktuell från en instrumentpanel tas den inte bort från Power BI. 
    
     ![Meddelande som anger att åtgärden lyckades](./media/end-user-featured/power-bi-unfeature-new.png)
@@ -62,9 +57,9 @@ Om du bestämmer dig för att du inte vill att en aktuell instrumentpanel kan du
 1. Öppna den aktuella instrumentpanelen.
 2. Välj **Fler alternativ** (…) längst upp och sedan **Inaktivera aktuell**.
 
-    ![Inaktivera vald aktuell instrumentpanel](./media/end-user-featured/power-bi-unfeature-newer.png)
+    ![Inaktivera vald aktuell instrumentpanel](./media/end-user-featured/power-bi-unfeature.png)
    
 ## <a name="next-steps"></a>Nästa steg
-- [Favoritmarkera en instrumentpanel](end-user-favorite.md)
+- [Favoritmarkera en instrumentpanel](end-user-favorite.md)    
 - Har du fler frågor? Testa [Power BI Community](https://community.powerbi.com/).
 

@@ -8,16 +8,16 @@ ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 01/14/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 2a8dca43077fe12e4903585e3926cc67fe864136
-ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
+ms.openlocfilehash: 90f501b257313c48cbef13517747ff83cd9ea9d1
+ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "76162421"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78920772"
 ---
 # <a name="use-cascading-parameters-in-paginated-reports"></a>Använda sammanhängande parametrar i sidnumrerade rapporter
 
-Den här artikeln är avsedd för rapportförfattare som skapar [sidnumrerade rapporter](../paginated-reports-report-builder-power-bi.md) i Power BI. Den innehåller scenarier för att utforma sammanhängande parametrar. Sammanhängande parametrar är rapportparametrar med beroenden. När en rapportanvändare väljer ett parametervärde (eller -värden) används det för att ange tillgängliga värden för en annan parameter.
+Den här artikeln är avsedd för rapportförfattare som skapar [sidnumrerade rapporter](../paginated-reports/paginated-reports-report-builder-power-bi.md) i Power BI. Den innehåller scenarier för att utforma sammanhängande parametrar. Sammanhängande parametrar är rapportparametrar med beroenden. När en rapportanvändare väljer ett parametervärde (eller -värden) används det för att ange tillgängliga värden för en annan parameter.
 
 > [!NOTE]
 > En introduktion till sammanhängande parametrar och hur du konfigurerar dem, tas inte upp i den här artikeln. Om du inte är helt bekant med sammanhängande parametrar rekommenderar vi att du först läser [Lägga till sammanhängande parametrar till en rapport (Report Builder och SSRS)](/sql/reporting-services/report-design/add-cascading-parameters-to-a-report-report-builder-and-ssrs).
@@ -281,7 +281,7 @@ Se till att optimera dina datakällor genom att:
 
 Mer information om ämnet i den här artikeln finns i följande resurser:
 
-- [Rapportparametrar i Power BI Report Builder](../report-builder-parameters.md)
+- [Rapportparametrar i Power BI Report Builder](../paginated-reports/report-builder-parameters.md)
 - [Lägga till sammanhängande parametrar i en rapport (Report Builder och SSRS)](/sql/reporting-services/report-design/add-cascading-parameters-to-a-report-report-builder-and-ssrs)
 - Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 - Har du förslag? [Bidra till att förbättra Power BI](https://ideas.powerbi.com)

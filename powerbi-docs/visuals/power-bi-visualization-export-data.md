@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/16/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 4e42a00c516cf9cd24c307c8f953a6cc7f840314
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: f4e7d1aa580f7ad95da103fc2cb1e7e069a80ee6
+ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76539793"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78946861"
 ---
 # <a name="export-the-data-that-was-used-to-create-a-visualization"></a>Exportera data som används för att skapa en visualisering
 
@@ -166,7 +166,7 @@ Det finns flera strategier som Power BI-administratörer och designers bör anv�
 
 - Datamängdsägare kan ange säkerhet på radnivå (RLS). RLS begränsar åtkomsten till skrivskyddade användare. Men om du har konfigurerat en apparbetsyta och gett medlemmar redigeringsbehörighet tillämpas inte RLS-roller för dem. Mer information finns i [Säkerhet på radnivå](../service-admin-rls.md).
 
-- Rapportdesigners kan dölja kolumner så att de inte visas i listan **Fält**. Mer information finns i [Egenskaper för datamängd](../developer/api-dataset-properties.md)
+- Rapportdesigners kan dölja kolumner så att de inte visas i listan **Fält**. Mer information finns i [Egenskaper för datamängd](../developer/automation/api-dataset-properties.md)
 
 - Power BI-administratörer kan lägga till [känslighetsetiketter](../admin/service-security-data-protection-overview.md) till instrumentpaneler, rapporter, datamängder och dataflöden. De kan sedan framtvinga skyddsinställningar såsom kryptering eller vattenstämplar vid export av data. 
 

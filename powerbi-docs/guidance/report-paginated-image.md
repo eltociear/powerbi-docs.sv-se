@@ -8,16 +8,16 @@ ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 02/16/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 09fd2197cca31e083c0242b187d7e242244235eb
-ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
+ms.openlocfilehash: d2f3f36911c72df1b95ceb5bd90043870559cc62
+ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77530382"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78920713"
 ---
 # <a name="image-use-guidance-for-paginated-reports"></a>Guide till användning av bilder i sidnumrerade rapporter
 
-Den här artikeln är avsedd för rapportförfattare som skapar [sidnumrerade rapporter](../paginated-reports-report-builder-power-bi.md) i Power BI. Den innehåller förslag på hur du kan arbeta med bilder. Vanligtvis kan bilder i rapportlayouter visa en bild, som en företagslogotyp.
+Den här artikeln är avsedd för rapportförfattare som skapar [sidnumrerade rapporter](../paginated-reports/paginated-reports-report-builder-power-bi.md) i Power BI. Den innehåller förslag på hur du kan arbeta med bilder. Vanligtvis kan bilder i rapportlayouter visa en bild, som en företagslogotyp.
 
 Bilder kan lagras på tre olika sätt:
 
@@ -53,6 +53,6 @@ Följande förslag kan hjälpa dig att skapa professionella rapportlayouter, gö
 
 Mer information om ämnet i den här artikeln finns i följande resurser:
 
-- [Vad är sidnumrerade rapporter i Power BI Premium?](../paginated-reports-report-builder-power-bi.md)
+- [Vad är sidnumrerade rapporter i Power BI Premium?](../paginated-reports/paginated-reports-report-builder-power-bi.md)
 - Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 - Har du förslag? [Bidra till att förbättra Power BI](https://ideas.powerbi.com/)

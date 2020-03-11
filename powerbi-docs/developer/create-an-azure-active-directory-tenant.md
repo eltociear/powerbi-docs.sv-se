@@ -8,20 +8,20 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/28/2019
-ms.openlocfilehash: bdad4a068a5463bd683bc0dbfd20e68873599ace
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.openlocfilehash: c1944f80616b748d1120d28b1ba91e1f0f2ab6e8
+ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74265138"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79041457"
 ---
 # <a name="create-an-azure-active-directory-tenant-to-use-with-power-bi"></a>Skapa en Azure Active Directory-klient som ska användas med Power BI
 
-Lär dig hur du skapar en ny Azure AD-klientorganisation för en anpassad app som anropar [REST-API:er för Power BI](rest-api-reference.md).
+Lär dig hur du skapar en ny Azure AD-klientorganisation för en anpassad app som anropar [REST-API:er för Power BI](automation/rest-api-reference.md).
 
 En klientorganisation representerar en organisation i Azure Active Directory. Det är en dedikerad instans av Azure AD-tjänsten som en organisation tar emot och äger när den registrerar sig för en Microsoft-molntjänst som Azure, Microsoft Intune eller Office 365. Varje Azure AD-klient är unik och avgränsad från andra Azure AD-klienter.
 
-När du har en Azure AD-klientorganisation kan du definiera en app och tilldela behörigheter för den så att den kan anropa [REST-API:er för Power BI](rest-api-reference.md).
+När du har en Azure AD-klientorganisation kan du definiera en app och tilldela behörigheter för den så att den kan anropa [REST-API:er för Power BI](automation/rest-api-reference.md).
 
 Organisationen kanske redan har en Azure AD-klient som du kan använda för programmet. Du kan också skapa en ny klientorganisation specifikt för appen. I den här artikeln får du lära dig att skapa en ny klientorganisation.
 

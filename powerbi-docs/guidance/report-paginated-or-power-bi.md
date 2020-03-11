@@ -8,16 +8,16 @@ ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 01/04/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 3838c0b487be7faace2e58dd706aa7d172841215
-ms.sourcegitcommit: b59ec11a4a0a3d5be2e4d91548d637d31b3491f8
+ms.openlocfilehash: 049b6ac14c6d35d68815eac32520a4eaa654ad42
+ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78290508"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78920746"
 ---
 # <a name="when-to-use-paginated-reports-in-power-bi"></a>Använda sidnumrerade rapporter i Power BI
 
-Den här artikeln är avsedd för rapportförfattare som skapar rapporter för Power BI. Den innehåller förslag som hjälper dig att välja när du ska utveckla [sidnumrerade Power BI-rapporter](../paginated-reports-report-builder-power-bi.md).
+Den här artikeln är avsedd för rapportförfattare som skapar rapporter för Power BI. Den innehåller förslag som hjälper dig att välja när du ska utveckla [sidnumrerade Power BI-rapporter](../paginated-reports/paginated-reports-report-builder-power-bi.md).
 
 > [!NOTE]
 > Du måste ha en Power BI Premium-prenumeration när du ska publicera sidnumrerade Power BI-rapporter. Rapporterna återges bara när de ligger på en arbetsyta i en dedikerad kapacitet som har [arbetsbelastningen Sidnumrerade rapporter aktiverad](../service-admin-premium-workloads.md#paginated-reports).
@@ -49,7 +49,7 @@ Det finns många scenarier där du med fördel kan använda sidnumrerade Power B
 - **Noggrann layout**: Du kan skapa mycket formaterade, bildpunktsperfekta layouter och definiera storlek och plats ned till bråkdelar av tum eller centimeter.
 - **Dynamisk layout**: Du kan skapa följsamma layouter genom att ange VB.NET-uttryck för många rapportegenskaper. Uttrycken har åtkomst till många kärnbibliotek i .NET Framework.
 - **Återgivningsspecifik layout**: Du kan använda uttryck för att ändra rapportens layout baserat på vilket återgivningsformat som används. Du kan till exempel inaktivera växling av synlighet (för att öka eller minska detaljnivån) när rapporten återges i ett icke-interaktivt format som PDF.
-- **Interna frågor**: Du behöver inte först utveckla någon Power BI-datamängd. Du kan skriva interna frågor (eller använda lagrade procedurer) för [alla datakällor som stöds](../paginated-reports-data-sources.md). Frågor kan innehålla parametrisering.
+- **Interna frågor**: Du behöver inte först utveckla någon Power BI-datamängd. Du kan skriva interna frågor (eller använda lagrade procedurer) för [alla datakällor som stöds](../paginated-reports/paginated-reports-data-sources.md). Frågor kan innehålla parametrisering.
 - **Grafiska frågedesigners**: Power BI Report Builder innehåller grafiska designverktyg som hjälper dig att skriva och testa dina frågor mot datamängden.
 - **Statiska datamängder**: Du kan definiera en datamängd och ange data direkt i rapportdefinitionen. Den här funktionen är särskilt användbar när du ska hålla en demonstration eller visa upp ett koncepttest (POC).
 - **Dataintegrering**: Du kan kombinera data från olika datakällor eller statiska datamängder. Det gör du genom att skapa anpassade fält med hjälp av VB.NET-uttryck.
@@ -70,7 +70,7 @@ Det finns många scenarier där du med fördel kan använda sidnumrerade Power B
 
 Mer information om ämnet i den här artikeln finns i följande resurser:
 
-- [Vad är sidnumrerade rapporter i Power BI Premium?](../paginated-reports-report-builder-power-bi.md)
+- [Vad är sidnumrerade rapporter i Power BI Premium?](../paginated-reports/paginated-reports-report-builder-power-bi.md)
 - [Migrera SQL Server Reporting Services-rapporter till Power BI](migrate-ssrs-reports-to-power-bi.md)
 - Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 - Har du förslag? [Bidra till att förbättra Power BI](https://ideas.powerbi.com/)

@@ -8,12 +8,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 01/03/2020
 ms.author: v-pemyer
-ms.openlocfilehash: f8b7cc302cd4a26aa099f723f47865723dccb7c9
-ms.sourcegitcommit: b59ec11a4a0a3d5be2e4d91548d637d31b3491f8
+ms.openlocfilehash: cf11b98d7eacd7b1e245fb0aed62d0f14e7f4c4c
+ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78290646"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79041340"
 ---
 # <a name="migrate-sql-server-reporting-services-reports-to-power-bi"></a>Migrera SQL Server Reporting Services-rapporter till Power BI
 
@@ -60,11 +60,11 @@ Vi rekommenderar att du använder [verktyget RDL Migration](https://github.com/m
 
 De här uppgifterna sköts automatiskt i verktyget:
 
-- Det söker efter [datakällor](../paginated-reports-data-sources.md) och [rapportfunktioner](../paginated-reports-faq.md#what-paginated-report-features-in-ssrs-arent-yet-supported-in-power-bi) som inte stöds
-- Det konverterar eventuella _delade_ resurser till _inbäddade_ resurser:
-  - delade **datakällor** blir inbäddade datakällor
-  - delade **datamängder** blir inbäddade datamängder.
-- Det publicerar rapporter (som passerar kontroller) som sidnumrerade rapporter till en angiven Power BI-arbetsyta (i en Premium-kapacitet)
+* Det söker efter [datakällor](../paginated-reports/paginated-reports-data-sources.md) och [rapportfunktioner](../paginated-reports/paginated-reports-faq.md#what-paginated-report-features-in-ssrs-arent-yet-supported-in-power-bi) som inte stöds
+* Det konverterar eventuella _delade_ resurser till _inbäddade_ resurser:
+  * delade **datakällor** blir inbäddade datakällor
+  * delade **datamängder** blir inbäddade datamängder.
+* Det publicerar rapporter (som passerar kontroller) som sidnumrerade rapporter till en angiven Power BI-arbetsyta (i en Premium-kapacitet)
 
 Det modifierar inte och tar inte bort några befintliga rapporter. När verktyget har slutförts visas en sammanfattning av alla åtgärder som körts, både de som utförts och de som misslyckats.
 
@@ -102,7 +102,7 @@ De här SSRS-objekttyperna kan du dock inte migrera till Power BI:
 
 <sup>1</sup> [Verktyget RDL Migration](https://github.com/microsoft/RdlMigration) konverterar automatiskt delade datakällor och datamängder förutsatt att de använder datakällor som stöds.
 
-Om dina RDL-rapporter använder funktioner som [ännu inte stöds i sidnumrerade Power BI-rapporter](../paginated-reports-faq.md#what-paginated-report-features-in-ssrs-arent-yet-supported-in-power-bi) kan du planera att utveckla dem på nytt som [Power BI-rapporter](../consumer/end-user-reports.md). Även om det går att migrera dina RDL-rapporter så rekommenderar vi att du överväger att modernisera dem till Power BI-rapporter om det går.
+Om dina RDL-rapporter använder funktioner som [ännu inte stöds i sidnumrerade Power BI-rapporter](../paginated-reports/paginated-reports-faq.md#what-paginated-report-features-in-ssrs-arent-yet-supported-in-power-bi) kan du planera att utveckla dem på nytt som [Power BI-rapporter](../consumer/end-user-reports.md). Även om det går att migrera dina RDL-rapporter så rekommenderar vi att du överväger att modernisera dem till Power BI-rapporter om det går.
 
 Om dina RDL-rapporter behöver hämta data från _lokala datakällor_ kan de inte använda enkel inloggning (SSO). För närvarande görs alla datahämtningar från dessa källor med hjälp av säkerhetskontexten för _Gateway-datakällans användarkonto_. Det är inte möjligt för SQL Server Analysis Services (SSAS) att framtvinga säkerhet på radnivå (RLS) per användare.
 
@@ -113,7 +113,7 @@ Sidnumrerade Power BI-rapporter är i allmänhet optimerade för **utskrift** el
 Målet i fasen _Förbereda_ är att göra allting redo. Det är här du konfigurerar Power BI-miljön, planerar hur du ska skydda och publicera dina rapporter och tänker igenom hur du ska utveckla om SSRS-objekt som inte går att migrera.
 
 1. Se till att [arbetsbelastningen Sidnumrerade rapporter](../service-admin-premium-workloads.md#paginated-reports) är aktiverad för din Power BI Premium-kapacitet och att den har tillräckligt med minne.
-1. Kontrollera att det finns stöd för dina rapporters [datakällor](../paginated-reports-data-sources.md) och konfigurera en [Power BI-gateway](../service-gateway-onprem.md) för anslutning till eventuella lokala datakällor.
+1. Kontrollera att det finns stöd för dina rapporters [datakällor](../paginated-reports/paginated-reports-data-sources.md) och konfigurera en [Power BI-gateway](../service-gateway-onprem.md) för anslutning till eventuella lokala datakällor.
 1. Bekanta dig med säkerheten i Power BI och planera [hur du ska återskapa dina SSRS-mappar och tillhörande behörigheter](/sql/reporting-services/security/secure-folders) som [arbetsytor och arbetsyteroller i Power BI](../service-new-workspaces.md).
 1. Bekanta dig med delning i Power BI och planera hur du ska distribuera innehåll genom att publicera [Power BI-appar](../service-create-distribute-apps.md).
 1. Överväg att använda [delade Power BI-datamängder](../service-datasets-build-permissions.md) i stället för dina delade SSRS-datakällor.
@@ -121,7 +121,7 @@ Målet i fasen _Förbereda_ är att göra allting redo. Det är här du konfigur
 1. Utvärdera användningen av det inbyggda fältet **UserID** i dina rapporter igen. Om du förlitar dig på **UserID** för att skydda rapportdata, bör du känna till att för sidnumrerade rapporter (om de finns i Power BI-tjänsten) returneras användarhuvudnamnet (UPN). I stället för att returnera NT-kontonamnet, till exempel _AW\mblythe_, kommer det inbyggda fältet att returnera något som _m.blythe&commat;adventureworks.com_. Du måste ändra dina datauppsättningsdefinitioner och eventuellt källdata. När du har ändrat och publicerat rekommenderar vi att du testar dina rapporter noggrant för att säkerställa att databehörigheter fungerar som förväntat.
 1. Utvärdera användningen av det inbyggda fältet **ExecutionTime** i dina rapporter igen. För sidnumrerade rapporter (när de finns i Power BI-tjänsten) returnerar det inbyggda fältet datum/tid _i UTC (Coordinated Universal Time)_ . Det kan påverka rapportparameterns standardvärden och etiketter för rapportkörningstid (som vanligtvis läggs till i rapport med sidfot).
 1. Om datakällan är SQL Server (lokalt) kontrollerar du att rapporterna inte använder kartvisualiseringar. Kartvisualiseringar är beroende av rumsliga SQL Server-datatyper som inte stöds av gatewayen. Mer information finns i [Guide till datahämtning för sidnumrerade rapporter (komplexa SQL Server-datatyper)](report-paginated-data-retrieval.md#sql-server-complex-data-types).
-1. Se till att rapportförfattarna har [Power BI Report Builder](../report-builder-power-bi.md) installerat och att de senare versionerna enkelt kan distribueras i hela organisationen.
+1. Se till att rapportförfattarna har [Power BI Report Builder](../paginated-reports/report-builder-power-bi.md) installerat och att de senare versionerna enkelt kan distribueras i hela organisationen.
 
 ## <a name="migration-stage"></a>Migreringssteget
 
@@ -137,7 +137,7 @@ Alla som har behörighet att komma åt SSRS-instansen och Power BI-arbetsytan ka
 1. Ladda ned varje rapportdefinition och spara .rdl-filerna lokalt.
 1. Öppna _den senaste versionen_ av Power BI Report Builder och anslut till Power BI-tjänsten med dina autentiseringsuppgifter för Azure AD.
 1. Öppna varje rapport i Power BI Report Builder och gör följande:
-   1. Kontrollera att alla datakällor och datamängder är inbäddade i rapportdefinitionen och att de är [datakällor som stöds](../paginated-reports-data-sources.md).
+   1. Kontrollera att alla datakällor och datamängder är inbäddade i rapportdefinitionen och att de är [datakällor som stöds](../paginated-reports/paginated-reports-data-sources.md).
    1. Förhandsgranska rapporten för att se om den återges korrekt.
    1. Välj alternativet _Spara som_ och sedan _Power BI-tjänst_.
    1. Välj på vilken arbetsyta som rapporten ska ligga.
@@ -156,7 +156,7 @@ Du kan också använda de allmänt tillgängliga API:erna för SSRS och Power BI
 
 Du kan läsa mer om API:erna i de här resurserna:
 
-- [Power BI REST API-referens](../developer/rest-api-reference.md)
+- [Power BI REST API-referens](../developer/automation/rest-api-reference.md)
 - [REST-API:er för SQL Server Reporting Services](/sql/reporting-services/developer/rest-api)
 
 ## <a name="post-migration-stage"></a>Eftermigreringssteget
@@ -165,7 +165,7 @@ När du har slutfört migreringen är du redo för _eftermigreringssteget_. I de
 
 ### <a name="configure-data-sources"></a>Konfigurera datakällor
 
-När du har migrerat rapporter till Power BI måste du se till att datakällorna är korrekt konfigurerade. Du kan behöva tilldela datakällor till gatewayer och ordna med [säker lagring av autentiseringsuppgifter för datakällor](../paginated-reports-data-sources.md#azure-sql-database-authentication). De här åtgärderna utförs inte i verktyget RDL Migration.
+När du har migrerat rapporter till Power BI måste du se till att datakällorna är korrekt konfigurerade. Du kan behöva tilldela datakällor till gatewayer och ordna med [säker lagring av autentiseringsuppgifter för datakällor](../paginated-reports/paginated-reports-data-sources.md#azure-sql-database-authentication). De här åtgärderna utförs inte i verktyget RDL Migration.
 
 ### <a name="review-report-performance"></a>Granska rapportprestanda
 
@@ -190,13 +190,13 @@ Du kan läsa mer om de här problemen och se hur du bättre kan förstå och lö
 
 Mer information om den här artikeln finns i följande resurser:
 
-- [Vad är sidnumrerade rapporter i Power BI Premium?](../paginated-reports-report-builder-power-bi.md)
+- [Vad är sidnumrerade rapporter i Power BI Premium?](../paginated-reports/paginated-reports-report-builder-power-bi.md)
 - [Guide till datahämtning i sidnumrerade rapporter](report-paginated-data-retrieval.md)
 - [Använda sidnumrerade rapporter i Power BI](report-paginated-or-power-bi.md)
-- [Sidnumrerade rapporter i Power BI: Vanliga frågor och svar](../paginated-reports-faq.md)
+- [Sidnumrerade rapporter i Power BI: Vanliga frågor och svar](../paginated-reports/paginated-reports-faq.md)
 - [Vanliga frågor och svar om Power BI Premium](../service-premium-faq.md)
 - [Verktyget RDL Migration](https://github.com/microsoft/RdlMigration)
 - Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
-- Har du förslag? [Bidra till att förbättra Power BI](https://ideas.powerbi.com/)
+- Har du förslag? [Bidra till att förbättra Power BI](https://ideas.powerbi.com)
 
 Våra Power BI-partners finns där och kan hjälpa din organisation att lyckas med migreringsprocessen. Om du vill kontakta en Power BI-partner går du till [partnerportalen för Power BI](https://powerbi.microsoft.com/partners/).

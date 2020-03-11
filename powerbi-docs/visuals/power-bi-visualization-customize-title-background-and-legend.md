@@ -7,15 +7,15 @@ featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/04/2019
+ms.date: 03/06/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 1e2465273368c6b76e602e5ffbdf4ec3a1d121a3
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 7ff02eb07d4b052892cc80ab4710223d8d302a9f
+ms.sourcegitcommit: 743167a911991d19019fef16a6c582212f6a9229
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "75757843"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78893429"
 ---
 # <a name="customize-visualization-titles-backgrounds-and-legends"></a>Anpassa visualiseringens rubriker, bakgrunder och förklaringar
 
@@ -56,8 +56,8 @@ Logga in i Power BI-tjänsten och öppna rapporten [Retail Analysis Sample](../s
 1. Ändra **Teckenfärg** till vit och **Bakgrundsfärg** till blå.    
 
     a. Välj listrutan och en färg från **Temafärger**, **Senaste färger** eller **Anpassad färg**.
-
-        ![Screenshot of the Font color and Background color options.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-color.png)
+    
+    ![Skärmbild av alternativen Teckenfärg och Bakgrundsfärg.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-color.png)
 
     b. Välj i listrutan för att stänga färgfönstret.
 

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 11/04/2019
-ms.openlocfilehash: f9ed7f47c0f36e540d22270048e93acd2d3a8e21
-ms.sourcegitcommit: df8bcc65f0df69bf1fc1d47eb06575742eac1622
+ms.openlocfilehash: 09471cdacacc8d0b1067598cefac41915b0ef0d7
+ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75953773"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78920910"
 ---
 # <a name="implementing-row-level-security-in-embedded-paginated-reports-preview"></a>Implementera säkerhet på radnivå i inbäddade sidnumrerade rapporter (förhandsversion)
 
@@ -26,13 +26,13 @@ Den här funktionen ger ett säkert sätt att visa en delmängd av datan, utan a
 
 ## <a name="configuring-a-parameter-to-filter-the-dataset"></a>Konfigurera en parameter som filtrerar datamängden
 
-När du använder säkerhet på radnivå i en sidnumrerad Power BI-rapport, måste du tilldela en [-parameter](../report-builder-parameters.md) till **UserID**-attributet. Parametern begränsar vilka data som hämtas från datamängden innan rapporten bäddas in.
+När du använder säkerhet på radnivå i en sidnumrerad Power BI-rapport, måste du tilldela en [-parameter](../paginated-reports/report-builder-parameters.md) till **UserID**-attributet. Parametern begränsar vilka data som hämtas från datamängden innan rapporten bäddas in.
 
 När du har tilldelat parametern till **UserID**, använder du API:et [Reports GenerateTokenForCreateInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetokenforcreateingroup) till att hämta din inbäddningstoken.
 
 ## <a name="use-userid-as-a-filter-at-report-or-query-level"></a>Använda UserID som filter på rapport- eller frågenivå
 
-Du kan använda **UserId** som ett *filter* eller i en *fråga* till datakällan i [Power BI Report Builder](../report-builder-power-bi.md).
+Du kan använda **UserId** som ett *filter* eller i en *fråga* till datakällan i [Power BI Report Builder](../paginated-reports/report-builder-power-bi.md).
 
 ### <a name="using-the-filter"></a>Använda filtret
 

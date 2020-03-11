@@ -8,16 +8,16 @@ ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 02/16/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 1da75b14f628c8c765ea89a34dd2a2665cdf9a4b
-ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
+ms.openlocfilehash: 1e69c7eefe25da771ecc4d9602d6a21081f2c052
+ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77530451"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78920758"
 ---
 # <a name="data-retrieval-guidance-for-paginated-reports"></a>Vägledning till att hämta data i sidnumrerade rapporter
 
-Den här artikeln är avsedd för rapportförfattare som skapar [sidnumrerade rapporter](../paginated-reports-report-builder-power-bi.md) i Power BI. Den innehåller rekommendationer som hjälper dig att utforma en effektiv datahämtning.
+Den här artikeln är avsedd för rapportförfattare som skapar [sidnumrerade rapporter](../paginated-reports/paginated-reports-report-builder-power-bi.md) i Power BI. Den innehåller rekommendationer som hjälper dig att utforma en effektiv datahämtning.
 
 ## <a name="data-source-types"></a>Typer av datakälla
 
@@ -101,13 +101,13 @@ Vi rekommenderar _parametrisering av datamängden_ när du förväntar dig att d
 
 ## <a name="non-native-data-sources"></a>Icke-interna datakällor
 
-Om du behöver utveckla sidnumrerade rapporter som baseras på datakällor som inte [stöds internt i de sidnumrerade rapporterna](../paginated-reports-data-sources.md) kan du först utveckla en Power BI Desktop-datamodell. På så sätt kan du ansluta till fler än 100 [Power BI-datakällor](../power-bi-data-sources.md). När du har publicerat till Power BI-tjänsten kan du sedan utveckla en sidnumrerad rapport som ansluter till Power BI-datamängden.
+Om du behöver utveckla sidnumrerade rapporter som baseras på datakällor som inte [stöds internt i de sidnumrerade rapporterna](../paginated-reports/paginated-reports-data-sources.md) kan du först utveckla en Power BI Desktop-datamodell. På så sätt kan du ansluta till fler än 100 [Power BI-datakällor](../power-bi-data-sources.md). När du har publicerat till Power BI-tjänsten kan du sedan utveckla en sidnumrerad rapport som ansluter till Power BI-datamängden.
 
 ## <a name="data-integration"></a>Dataintegrering
 
 Om du behöver kombinera data från flera datakällor har du två alternativ:
 
-- **Kombinera rapportdatamängder**: Om datakällorna [stöds internt i sidnumrerade rapporter](../paginated-reports-data-sources.md) kan du överväga att skapa beräknade fält som använder Report Builder-funktionerna [Lookup](/sql/reporting-services/report-design/report-builder-functions-lookup-function) eller [LookupSet](/sql/reporting-services/report-design/report-builder-functions-lookupset-function).
+- **Kombinera rapportdatamängder**: Om datakällorna [stöds internt i sidnumrerade rapporter](../paginated-reports/paginated-reports-data-sources.md) kan du överväga att skapa beräknade fält som använder Report Builder-funktionerna [Lookup](/sql/reporting-services/report-design/report-builder-functions-lookup-function) eller [LookupSet](/sql/reporting-services/report-design/report-builder-functions-lookupset-function).
 - **Utveckla en Power BI Desktop-modell**: Det är förmodligen mer effektivt att utveckla en datamodell i Power BI Desktop. Du kan använda Power Query till att kombinera frågor baserat på alla [datakällor som stöds](../power-bi-data-sources.md). När du har publicerat till Power BI-tjänsten kan du sedan utveckla en sidnumrerad rapport som ansluter till Power BI-datamängden.
 
 ## <a name="sql-server-complex-data-types"></a>Komplexa SQL Server-datatyper
@@ -143,6 +143,6 @@ När du kör en rapport utvärderas alla datamängder, även om de inte är kopp
 
 Mer information om ämnet i den här artikeln finns i följande resurser:
 
-- [Datakällor som stöds i sidnumrerade Power BI-rapporter](../paginated-reports-data-sources.md)
+- [Datakällor som stöds i sidnumrerade Power BI-rapporter](../paginated-reports/paginated-reports-data-sources.md)
 - Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 - Har du förslag? [Bidra till att förbättra Power BI](https://ideas.powerbi.com/)

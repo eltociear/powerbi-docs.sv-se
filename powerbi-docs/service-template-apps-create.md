@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/15/2019
 ms.author: tebercov
-ms.openlocfilehash: 4b3158cbe26efe05e3d35c1c6c93027738cc817a
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 649f4d002c9adbfa882c4ee4320f040f490fd116
+ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73871480"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79041733"
 ---
 # <a name="create-a-template-app-in-power-bi"></a>Skapa en mallapp i Power BI
 
@@ -58,7 +58,7 @@ När du ska skapa en mallapp som du kan distribuera till andra klientorganisatio
 
 Precis som med en vanlig Power BI-arbetsyta är nästa steg att skapa innehållet på arbetsytan.  
 
-- [Skapa ditt Power BI-innehåll](power-bi-creator-landing.md) på arbetsytan.
+- [Skapa ditt Power BI-innehåll](index.yml) på arbetsytan.
 
 Om du använder parametrar i Power Query måste du se till att de har korrekt definierad typ (till exempel Text). Typerna Any och Binary stöds inte.
 

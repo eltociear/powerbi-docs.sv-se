@@ -8,23 +8,23 @@ ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 01/14/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 76d1631b95c30d5ae56ced5d64e5174f6f9db759
-ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
+ms.openlocfilehash: 349459b95a815a52665e50687554f81f90a9c81b
+ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76041875"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78920860"
 ---
 # <a name="avoid-blank-pages-when-printing-paginated-reports"></a>Undvik tomma sidor när du skriver ut sidnumrerade rapporter
 
-Den här artikeln är avsedd för rapportförfattare som utformar [sidnumrerade rapporter](../paginated-reports-report-builder-power-bi.md) i Power BI. Den innehåller rekommendationer som hjälper dig att undvika tomma sidor när rapporten exporteras till ett hårt sidformat – t.ex. PDF eller Microsoft Word – eller när den skrivs ut.
+Den här artikeln är avsedd för rapportförfattare som utformar [sidnumrerade rapporter](../paginated-reports/paginated-reports-report-builder-power-bi.md) i Power BI. Den innehåller rekommendationer som hjälper dig att undvika tomma sidor när rapporten exporteras till ett hårt sidformat – t.ex. PDF eller Microsoft Word – eller när den skrivs ut.
 
 ## <a name="page-setup"></a>Utskriftsformat
 
 Egenskaperna för rapportens sidstorlek avgör sidorientering, mått och marginaler. Öppna rapportegenskaperna genom att:
 
 - Använda rapportens **egenskapssida**: Högerklicka på det mörkgrå området utanför rapportarbetsytan och sedan välja _Rapportegenskaper_.
-- Använda fönstret [**Egenskaper**](../paginated-reports-report-design-view.md#4-properties-pane): Klicka på det mörkgrå området utanför rapportarbetsytan för att välja rapportobjektet. Kontrollera att fönstret **Egenskaper** är öppet.
+- Använda fönstret [**Egenskaper**](../paginated-reports/paginated-reports-report-design-view.md#4-properties-pane): Klicka på det mörkgrå området utanför rapportarbetsytan för att välja rapportobjektet. Kontrollera att fönstret **Egenskaper** är öppet.
 
 På sidan **Utskriftsformat** på rapportens **egenskapssida** finns ett gränssnitt där du kan se och uppdatera egenskaperna för utskriftsformatet.
 
@@ -91,7 +91,7 @@ Slutligen, om du skriver ut rapporten på papper, kontrollerar du att skrivaren 
 
 Mer information om ämnet i den här artikeln finns i följande resurser:
 
-- [Vad är sidnumrerade rapporter i Power BI Premium?](../paginated-reports-report-builder-power-bi.md)
-- [Sidnumrering i sidnumrerade Power BI-rapporter](../paginated-reports-pagination.md)
+- [Vad är sidnumrerade rapporter i Power BI Premium?](../paginated-reports/paginated-reports-report-builder-power-bi.md)
+- [Sidnumrering i sidnumrerade Power BI-rapporter](../paginated-reports/paginated-reports-pagination.md)
 - Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 - Har du förslag? [Bidra till att förbättra Power BI](https://ideas.powerbi.com)

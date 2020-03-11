@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/22/2019
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: 06e46413be709ac3eda2102332740d709092187e
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 32f0c03fc0ae586b8b98c7a4c84c9d4c7bbd9078
+ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "74265343"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78920972"
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nyheter i Power BI-tjänsten
 Kontrollera den här sidan för kända problem och nyligen utgivna funktioner i **Power BI-tjänsten**. Relaterad information om nyheter finns i:
@@ -41,11 +41,11 @@ Besök även våra YouTube-kanaler för information om nyheter och funktioner.
 * Nya kapacitetsinställningar för Power BI Premium.
 * [Anpassad varumärkesanpassning](https://powerbi.microsoft.com/blog/announcing-custom-branding-for-your-organization/) för din organisation.
 * Sammanfattad dataexport med behörigheten Skapa.
-* Stöd för URL-parametrar för [sidnumrerade rapporter](paginated-reports-report-builder-power-bi.md).
+* Stöd för URL-parametrar för [sidnumrerade rapporter](paginated-reports/paginated-reports-report-builder-power-bi.md).
 * Stöd för månatliga e-postprenumerationer. 
 
 ### <a name="july-2019"></a>Juli 2019
-* Stöd för [sidnumrerade rapporter](paginated-reports-report-builder-power-bi.md) i andra datamängder än Premium.
+* Stöd för [sidnumrerade rapporter](paginated-reports/paginated-reports-report-builder-power-bi.md) i andra datamängder än Premium.
 * Allmän tillgänglighet för [aggregeringar](desktop-aggregations.md) i Power BI.
 * Skicka uppdateringsmeddelanden till andra.
 * [Testverktyg](https://powerbi.microsoft.com/blog/power-bi-premium-know-what-your-premium-capacity-can-handle/) för Power BI Premium-kapaciteter.
@@ -57,7 +57,7 @@ Besök även våra YouTube-kanaler för information om nyheter och funktioner.
 * Offentlig förhandsversion av [delade och certifierade datamängder](service-datasets-across-workspaces.md).
 * AI-mått är tillgängliga i appen [Premium Capacity Metrics](service-admin-premium-monitor-capacity.md).
 * Allmän tillgänglighet för [mallappar](service-template-apps-overview.md) i Power BI.
-* Allmän tillgänglighet för [sidnumrerade rapporter](paginated-reports-report-builder-power-bi.md).
+* Allmän tillgänglighet för [sidnumrerade rapporter](paginated-reports/paginated-reports-report-builder-power-bi.md).
 * Offentlig förhandsversion av Bring Your Own Key ([BYOK](service-encryption-byok.md)) för Power BI Premium.
 * Roll för visning i den [nya arbetsytemiljön](service-new-workspaces.md).
 
@@ -71,7 +71,7 @@ Besök även våra YouTube-kanaler för information om nyheter och funktioner.
 * Allmän tillgänglighet för nya arbetsytor.
 * Nya Power BI-regioner i Frankrike och Korea.
 * Uppdaterade frågor och svar för instrumentpaneler.
-* Stöd för Azure Analysis Services i [sidnumrerade rapporter](paginated-reports-report-builder-power-bi.md).
+* Stöd för Azure Analysis Services i [sidnumrerade rapporter](paginated-reports/paginated-reports-report-builder-power-bi.md).
 * Sidnumrerade rapporter som stöds i Power BI-appar.
 * [E-postprenumerationer](https://powerbi.microsoft.com/blog/e-mail-subscriptions-for-paginated-reports-is-now-available/) med PDF-bilagor för sidnumrerade rapporter.
 * Power BI Premium-sammanfattning och arbetsbelastningsmått som stöds i administratörsportalen
@@ -108,7 +108,7 @@ Besök även våra YouTube-kanaler för information om nyheter och funktioner.
 
 ### <a name="november-2018"></a>November 2018
 * Power BI-dataförberedelser är tillgängliga med [dataflöden](service-dataflows-overview.md) i allmänt tillgänglig förhandsversion.
-* Allmänt tillgänglig förhandsversion av [sidnumrerade rapporter](paginated-reports-report-builder-power-bi.md) i Power BI Premium.
+* Allmänt tillgänglig förhandsversion av [sidnumrerade rapporter](paginated-reports/paginated-reports-report-builder-power-bi.md) i Power BI Premium.
 * Datastorlek och antal datauppsättningar i minnet i [kapacitetövervakningsappen](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
 
 ### <a name="october-2018"></a>Oktober 2018

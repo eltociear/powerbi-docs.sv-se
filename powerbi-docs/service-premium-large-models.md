@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 03/03/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 2c984abaec40028fb01affa8ff7bf0bf87cdd616
-ms.sourcegitcommit: d55d3089fcb3e78930326975957c9940becf2e76
+ms.openlocfilehash: 007ff786fcee5d2a7b7237ad578a202cfcf25b69
+ms.sourcegitcommit: 743167a911991d19019fef16a6c582212f6a9229
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78260886"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78401934"
 ---
 # <a name="large-models-in-power-bi-premium-preview"></a>Stora modeller i Power BI Premium (förhandsversion)
 
@@ -114,7 +114,7 @@ SELECT * FROM SYSTEMRESTRICTSCHEMA
 
 Tänk på följande begränsningar när du använder stora modeller:
 
-- **BYOK-kryptering (Bring Your Own Key)**: Datamängder som är aktiverade för Premium-filer krypteras inte av [BYOK](service-encryption-byok.md).
+- **BYOK-kryptering (Bring Your Own Key)** : Datamängder som är aktiverade för Premium-filer krypteras inte av [BYOK](service-encryption-byok.md).
 - **Stöd för Multi-Geo**: Datamängder som är aktiverade för Premium-filer kommer inte att fungera i kapaciteter där [Multi-Geo](service-admin-premium-multi-geo.md) också är aktiverat.
 
 - **Ladda ned till Power BI Desktop**: Om en datamängd lagras på Premium-filer kommer [nedladdning som .pbix](service-export-to-pbix.md)-fil att misslyckas.
@@ -123,7 +123,7 @@ Tänk på följande begränsningar när du använder stora modeller:
 
 ## <a name="availability-in-regions"></a>Tillgänglighet i regioner
 
-Stora modeller i Power BI är endast tillgängliga i vissa Azure-regioner som stöder [Azure Premium-fillagring](https://docs.microsoft.com/azure/storage/files/storage-files-planning#file-share-performance-tiers).
+Stora modeller i Power BI är endast tillgängliga i vissa Azure-regioner som stöder [Azure Premium-fillagring](https://docs.microsoft.com/azure/storage/files/storage-files-planning#storage-tiers).
 
 Följande lista visar i vilka regioner de största Power BI-modellerna är tillgängliga. Regioner som inte finns med på följande lista stöds inte för stora modeller:
 
@@ -156,7 +156,7 @@ Följande lista visar i vilka regioner de största Power BI-modellerna är tillg
 
 Följande länk erbjuder information som du kan ha glädje av när du arbetar med stora modeller:
 
-* [Azure Premium-fillagring](https://docs.microsoft.com/azure/storage/files/storage-files-planning#file-share-performance-tiers)
+* [Azure Premium-fillagring](https://docs.microsoft.com/azure/storage/files/storage-files-planning#storage-tiers)
 * [Konfigurera Multi-Geo-stöd för Power BI Premium](service-admin-premium-multi-geo.md)
 * [Använda egna krypteringsnycklar för Power BI](service-encryption-byok.md)
 * [Så fungerar kapaciteter](service-premium-what-is.md#how-capacities-function)
