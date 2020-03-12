@@ -31,6 +31,8 @@
               href: ../service-create-distribute-apps.md
             - name: Hantera datalagring i arbetsytor
               href: ../service-admin-manage-your-data-storage-in-power-bi.md
+            - name: Dataursprung
+              href: service-data-lineage.md
             - name: Anslut till filer på din grupps OneDrive
               href: ../service-connect-to-files-in-app-workspace-onedrive-for-business.md
             - name: Samarbeta på en klassisk arbetsyta

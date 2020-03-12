@@ -313,8 +313,6 @@
               href: ../desktop-accessibility-consuming-tools.md
             - name: Kortkommandon i Power BI Desktop
               href: ../desktop-accessibility-keyboard-shortcuts.md
-        - name: Dataursprung
-          href: ../service-data-lineage.md
         - name: Sidnumrerade rapporter
           items:
             - name: Ange data direkt i en sidnumrerad rapport
