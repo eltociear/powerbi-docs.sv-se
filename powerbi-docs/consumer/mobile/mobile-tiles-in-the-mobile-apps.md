@@ -1,19 +1,19 @@
 ---
 title: Utforska paneler i Power BI-mobilappar
 description: Paneler är ögonblicksbilder i realtid av dina data, fästa på en instrumentpanel. Läs mer om att interagera med paneler i Power BI-mobilappar.
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/28/2018
-ms.author: mshenhav
-ms.openlocfilehash: b400f429ef1e65a40caea717ab18bc06300f9d76
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.date: 03/11/2020
+ms.author: painbar
+ms.openlocfilehash: 0f3aa67ea3d8a1cdf34503a833fad42b2d258859
+ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75221217"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79114670"
 ---
 # <a name="explore-tiles-in-the-power-bi-mobile-apps"></a>Utforska paneler i Power BI-mobilappar
 Gäller för:

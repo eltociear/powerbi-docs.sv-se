@@ -6,17 +6,20 @@ ms.reviewer: chris finlan
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 12/02/2019
+ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: a66189707bc6b688be012eeb59881ce4a8517ea1
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 0ab2ececd4ede03a10094be53a2c08617463cc53
+ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "74830478"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79113124"
 ---
 # <a name="paginated-reports-in-the-power-bi-service"></a>Sidnumrerade rapporter i Power BI-tjänsten
+
+[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
+
 Du har lärt dig mer om [Power BI-rapporter](end-user-reports.md), och det är den typ av rapport du förmodligen kommer att se oftast. Det finns dock en annan typ av rapport som kallas *sidnumrerade rapporter*. *Rapportdesigners* kan dela sidnumrerade rapporter med dig på arbetsytor i Premium-kapaciteter, eller i en app på samma arbetsyta. 
 
 ## <a name="what-is-a-paginated-report"></a>Vad är en sidnumrerad rapport?

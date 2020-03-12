@@ -1,19 +1,19 @@
 ---
 title: Hämta verkliga data med Power BI-mobilappar
 description: Power BI-mobilappar kan ansluta den verkliga världen direkt till relaterad BI-information, ingen sökning krävs.
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 03/13/2018
-ms.author: mshenhav
-ms.openlocfilehash: cd2ed078a9278657cfa6842298e0a3486737099e
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 03/11/2020
+ms.author: painbar
+ms.openlocfilehash: e7d3d19bdef1b19d397ac7db13cdec2317f8ab42
+ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870703"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79114582"
 ---
 # <a name="get-data-from-the-real-world-with-the-power-bi-mobile-apps"></a>Hämta data från den verkliga världen med Power BI-mobilappar
 Power BI-mobilapparna kan ansluta den verkliga världen direkt till relaterad BI-information på ett antal olika sätt. 
