@@ -66,6 +66,8 @@
               href: end-user-powerpoint.md
             - name: Lägga till ett bokmärke i en rapport
               href: end-user-bookmarks.md
+            - name: Lägga till en spotlight till en rapport
+              href: end-user-spotlight.md
             - name: Sidnumrerade rapporter i Power BI
               items:
                 - name: Sidnumrerade rapporter
@@ -116,6 +118,8 @@
               href: end-user-notification-center.md
         - name: Hämta data
           items:
+            - name: Arbetsytor i Power BI
+              href: end-user-workspaces.md
             - name: Appar i Power BI
               href: end-user-apps.md
             - name: Installera och använda appar

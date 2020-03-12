@@ -19,7 +19,7 @@
     - name: Begrepp
       expanded: true
       items:
-        - name: Skapa modellrelationer
+        - name: Förstå modellrelationer
           href: ../desktop-relationships-understand.md
         - name: Arbeta med modelleringsvyn
           href: ../desktop-modeling-view.md
