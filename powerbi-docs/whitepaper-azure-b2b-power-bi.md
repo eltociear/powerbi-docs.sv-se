@@ -10,11 +10,11 @@ ms.date: 03/07/2019
 ms.author: davidi
 LocalizationGroup: Conceptual
 ms.openlocfilehash: 538c533a1b951fd2dff1b481adb94e2b1d0cf87b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870900"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79213613"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-using-azure-active-directory-b2b"></a>Distribuera Power BI innehåll till externa gäst användare med hjälp av Azure Active Directory B2B
 
@@ -38,7 +38,7 @@ Den här white paper omfattar all information som du behöver för att förstå 
 > [!NOTE]
 > Under den här white paper kan vi se Azure Active Directory som Azure AD och Azure Active Directory affärs verksamhet som Azure AD B2B.
 
-## <a name="scenarios"></a>Olika
+## <a name="scenarios"></a>Scenarier
 
 Contoso är ett bil tillverkare som arbetar med många olika leverantörer som tillhandahåller det med alla komponenter, material och tjänster som krävs för att köra dess tillverknings åtgärder. Contoso vill effektivisera sin logistik för leverans kedjan och planera för att använda Power BI för att övervaka nyckel prestanda mått för sin leverans kedja. Contoso vill dela med externa partner för leverans kedja på ett säkert och hanterbart sätt.
 
@@ -218,7 +218,7 @@ Power BI s integrering med Azure AD B2B ger contoso ett smidigt och smidigt sät
 
 - Contosos BI-team skapar en arbets yta i Power BI
 
-    ![platsen](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_12.png)
+    ![arbetsyta](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_12.png)
     
 
 - Andra författare läggs till i arbets ytan
@@ -336,7 +336,7 @@ Det är viktigt att känna till att Azure AD-kontot kommer att användas eller s
 Contoso kan välja en av tre metoder för att licensiera gäst användare från sina leverantörer och partner organisationer för att få åtkomst till Power BI innehåll.
 
 > [!NOTE]
-> _Den kostnads fria nivån av Azure AD B2B's räcker för att använda Power BI med Azure AD B2B. Vissa avancerade Azure AD B2B-funktioner som dynamiska grupper kräver ytterligare licensiering. Mer information finns i Azure AD B2B-dokumentationen:_ [ _https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance_ ](https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance)
+> _Den kostnads fria nivån av Azure AD B2B's räcker för att använda Power BI med Azure AD B2B. Vissa avancerade Azure AD B2B-funktioner som dynamiska grupper kräver ytterligare licensiering. Mer information finns i Azure AD B2B-dokumentationen:_ [ _https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance_](https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance)
 
 ### <a name="approach-1-contoso-uses-power-bi-premium"></a>Metod 1: Contoso använder Power BI Premium
 
@@ -356,7 +356,7 @@ Med den här metoden tilldelar contoso Pro-licenser till gäst användare från 
 > [!NOTE]
 > Contosos Pro-licens gäller enbart gäst användare när de får åtkomst till innehåll i Contoso-klienten. Pro-licenser ger åtkomst till innehåll som inte har Power BI Premium kapacitet. Externa användare med en Pro-licens begränsas dock som standard till endast en användning. Detta kan ändras med hjälp av den metod som beskrivs i avsnittet _aktivera externa användare för att redigera och hantera innehåll i Power BI_ längre fram i det här dokumentet.
 
-![Licens information](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_25.png)
+![Licensinformation](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_25.png)
 
 
 ### <a name="approach-3-guest-users-bring-their-own-power-bi-pro-license"></a>Metod 3: gäst användare får sin egen Power BI Pro-licens
@@ -586,7 +586,7 @@ I exemplet ovan kan användare från varje leverantör logga in på Contosos Par
 
 I webbappen är Power BI rapporter inbäddade från en Power BI Embedded-distribution. Webbappen effektiviserar åtkomsten till rapporterna och relaterade tjänster i en sammanhängande miljö som syftar till att göra det enkelt för leverantörer att interagera med contoso. Den här Portal miljön skulle isoleras från Contosos interna AAD och Contosos interna Power BI miljö för att säkerställa att leverantörer inte har åtkomst till dessa resurser. Normalt lagras data i ett separat partner informations lager för att säkerställa data isolering. Den här isoleringen har fördelar eftersom den begränsar antalet externa användare med direkt åtkomst till din organisations data, vilket begränsar vilka data som kan vara tillgängliga för den externa användaren och begränsar oavsiktlig delning med externa användare.
 
-Med hjälp av Power BI Embedded kan portalen dra nytta av en förmånlig licensiering, med hjälp av app-token eller huvud användare plus Premium kapacitet som köpts i Azure-modellen, vilket fören klar problem med att tilldela licenser till slutanvändare och skala upp/ned baserat på förväntat användningsvyn. Portalen kan erbjuda en övergripande högre kvalitet och konsekvent upplevelse eftersom partners får åtkomst till en enda portal som är utformad med alla partner behov i åtanke. Slutligen, eftersom Power BI Embeddedbaserade lösningar vanligt vis är utformade för att vara flera klienter, gör det enklare att isolera mellan partner organisationer.
+Med hjälp av Power BI Embedded kan portalen dra nytta av en förmånlig licensiering, med hjälp av app-token eller Master-användare plus Premium kapacitet som har köpts i Azure-modellen, vilket fören klar problem med att tilldela licenser till slutanvändare och skala upp/ned baserat på förväntad användning. Portalen kan erbjuda en övergripande högre kvalitet och konsekvent upplevelse eftersom partners får åtkomst till en enda portal som är utformad med alla partner behov i åtanke. Slutligen, eftersom Power BI Embeddedbaserade lösningar vanligt vis är utformade för att vara flera klienter, gör det enklare att isolera mellan partner organisationer.
 
 Anledningar till att välja det här alternativet:
 
@@ -606,7 +606,7 @@ Orsaker till att du inte väljer det här alternativet:
 
 
 
-## <a name="faq"></a>Vanliga frågor och svar
+## <a name="faq"></a>VANLIGA FRÅGOR OCH SVAR
 
 **Kan Contoso skicka en inbjudan som automatiskt löses, så att användaren bara är "redo att gå"? Eller behöver användaren alltid klicka dig igenom till inlösnings-URL: en?**
 
