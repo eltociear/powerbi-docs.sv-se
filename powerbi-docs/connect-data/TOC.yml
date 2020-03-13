@@ -46,6 +46,8 @@
           href: ../power-bi-data-sources.md
         - name: Krav på Power BI-datakälla
           href: ../desktop-data-source-prerequisites.md
+        - name: Använda utökade datamängder med metadata i Power BI Desktop (förhandsversion)
+          href: ../desktop-enhanced-dataset-metadata.md
         - name: Arbeta med flerdimensionella modeller i Power BI
           href: ../desktop-default-member-multidimensional-models.md
         - name: Använda DirectQuery i Power BI
@@ -56,7 +58,7 @@
               href: ../service-gateway-deployment-guidance.md
             - name: Vanliga frågor och svar om lokal datagateway
               href: ../service-gateway-power-bi-faq.md
-    - name: Anvisningar
+    - name: Instruktionsguider
       items:
         - name: Anslut till datakällor
           href: ../desktop-connect-to-data.md
@@ -234,7 +236,7 @@
               href: ../service-template-update-delete-extract.md
             - name: Exempel på mallappar
               href: ../service-template-apps-samples.md
-        - name: Felsöka
+        - name: Felsök
           items:
             - name: Felsöka uppdateringsscenarier
               href: ../refresh-troubleshooting-refresh-scenarios.md
@@ -316,7 +318,7 @@
               href: ../service-admin-troubleshooting-power-bi-personal-gateway.md
             - name: Använda anpassade anslutningsappar
               href: ../service-gateway-custom-connectors.md
-        - name: Felsöka
+        - name: Felsök
           items:
             - name: Felsöka import av Access- och Excel-filer (.xls)
               href: ../desktop-access-database-errors.md
