@@ -1,5 +1,5 @@
 ---
-title: White paper om Power BI-säkerhet
+title: Vitbok Power BI-säkerhet
 description: White paper där säkerhetsarkitekturen för och implementeringen av Power BI diskuteras och beskrivs
 author: davidiseminger
 ms.author: davidi
@@ -9,14 +9,14 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/24/2019
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 656f7e532702cef8c38af96e8c9df49ffc36734a
-ms.sourcegitcommit: 4359baa43ca01b179d28ec59f4e61ba8c07ee288
+ms.openlocfilehash: 50c8416573b995c34d62129d11926e70d9d4242d
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75304367"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79381409"
 ---
-# <a name="power-bi-security-whitepaper"></a>White paper om Power BI-säkerhet
+# <a name="power-bi-security-whitepaper"></a>Vitbok Power BI-säkerhet
 
 **Sammanfattning:** Power BI är ett erbjudande för online Software service (*SaaS*eller program vara som en tjänst) från Microsoft som gör det möjligt att enkelt och snabbt skapa självbetjänings instrument paneler, rapporter, data uppsättningar och visualiseringar. Med Power BI kan du ansluta till många olika datakällor, kombinera och forma data från dessa anslutningar och sedan skapa rapporter och instrumentpaneler som kan delas med andra.
 
@@ -45,7 +45,7 @@ Varje Power BI-distribution består av två kluster – ett frontwebb (**WFE**) 
 
 ![WFE och serverdelen](media/whitepaper-powerbi-security/powerbi-security-whitepaper_01.png)
 
-Power BI använder Azure Active Directory (**AAD**) för kontoautentisering och hantering. Power BI använder dessutom **Azure Traffic Manager** (ATM) till att dirigera användartrafik till det närmaste datacentret, vilket bestäms av DNS-posten för den klient som försöker att ansluta, för autentiseringsprocessen samt för att ladda ned statiskt innehåll och filer. Power BI använder geografiskt närmaste frontwebb (WFE) för att distribuera det statiska innehåll som krävs samt filer till användare, med undantag för anpassade visuella objekt som levereras via **Azure Content Delivery Network (CDN)**.
+Power BI använder Azure Active Directory (**AAD**) för kontoautentisering och hantering. Power BI använder dessutom **Azure Traffic Manager** (ATM) till att dirigera användartrafik till det närmaste datacentret, vilket bestäms av DNS-posten för den klient som försöker att ansluta, för autentiseringsprocessen samt för att ladda ned statiskt innehåll och filer. Power BI använder geografiskt nära WFE för att effektivt distribuera nödvändigt statiskt innehåll och filer till användare, med undantag för Power BI visuella objekt som levereras med hjälp av **Azure-Content Delivery Network (CDN)** .
 
 ### <a name="the-wfe-cluster"></a>WFE-klustret
 
@@ -253,7 +253,7 @@ Power BI tillhandahåller övervakning av dataintegritet på följande sätt:
 
 2. Statiska data
 
-   Statiska data omfattar artefakter såsom bakgrundsbilder och anpassade visuella objekt.
+   Statiska data innehåller artefakter som bakgrunds bilder och Power BI visuella objekt.
 
     &ensp; &ensp; a. För rapporter som skapats med Excel för Office 365 lagras ingenting.
 
@@ -274,7 +274,7 @@ Power BI tillhandahåller övervakning av dataintegritet på följande sätt:
 
 1. Cacheminnen – de data som behövs för visuella objekt på instrumentpanelen cachelagras och lagras vanligtvis krypterade i Azure SQL Database. Andra paneler såsom fästa visuella objekt från Excel eller SQL Server Reporting Services (SSRS) lagras i Azure Blob som bilder och krypteras också.
 
-2. Statiska data – som omfattar artefakter såsom bakgrundsbilder och anpassade visuella objekt som lagras krypterade i Azure Blob-lagring.
+2. Statiska data – som innehåller artefakter som bakgrunds bilder och Power BI visuella objekt som lagras, krypteras i Azure Blob Storage.
 
 Oavsett vilken krypteringsmetod som används hanterar Microsoft nyckelkrypteringen för kundernas räkning, antingen i ett hemligt arkiv eller i Azure Key Vault.
 
@@ -372,7 +372,7 @@ Följande frågor är vanliga frågor och svar om säkerhet för Power BI. Dessa
 
 **Hur ansluter användare till och får åtkomst till datakällor när de använder Power BI?**
 
-* **Power BI autentiseringsuppgifter och domänautentiseringsuppgifter:** Användarna loggar in på Power BI med hjälp av en e-postadress. När en användare försöker ansluta till en data resurs, skickar Power BI Power BI inloggnings-e-postadress som autentiseringsuppgifter. För domänanslutna resurser (antingen lokala eller molnbaserade) matchas e-postadressen för inloggning med ett _User Principal Name_ ([UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525(v=vs.85).aspx)) av katalogtjänsten för att fastställa om det finns tillräckligt med referenser för att tillåta åtkomst. För organisationer som använder arbetsbaserade e-postadresser för att logga in på Power BI (samma e-postadress som de använder för att logga in på arbetsresurser, till exempel _david@contoso.com_) kan mappningen ske sömlöst. För organisationer som inte använde arbetsbaserade e-postadresser (till exempel _david@contoso.onmicrosoft.com_) måste katalogmappning upprättas för att tillåta åtkomst till lokala resurser med inloggningsuppgifter för Power BI.
+* **Power BI autentiseringsuppgifter och domänautentiseringsuppgifter:** Användarna loggar in på Power BI med hjälp av en e-postadress. När en användare försöker ansluta till en data resurs, skickar Power BI Power BI inloggnings-e-postadress som autentiseringsuppgifter. För domänanslutna resurser (antingen lokala eller molnbaserade) matchas e-postadressen för inloggning med ett _User Principal Name_ ([UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525(v=vs.85).aspx)) av katalogtjänsten för att fastställa om det finns tillräckligt med referenser för att tillåta åtkomst. För organisationer som använder arbetsbaserade e-postadresser för att logga in på Power BI (samma e-postadress som de använder för att logga in på arbetsresurser, till exempel _david@contoso.com_ ) kan mappningen ske sömlöst. För organisationer som inte använde arbetsbaserade e-postadresser (till exempel _david@contoso.onmicrosoft.com_ ) måste katalogmappning upprättas för att tillåta åtkomst till lokala resurser med inloggningsuppgifter för Power BI.
 
 * **SQL Server Analysis Services och Power BI:** För organisationer som använder lokala SQL Server Analysis Services erbjuder Power BI den Power BI lokala datagatewayen (som är en **Gateway**, som det hänvisas till i föregående avsnitt).  Den lokala datagatewayen för Power BI kan tillämpa säkerhet på rollnivå (RLS) på datakällor. Mer information om RLS finns i **Användarautentisering till datakällor** tidigare i dokumentet. Mer information om gatewayer finns [i lokal datagateway](service-gateway-onprem.md).
 
@@ -438,7 +438,7 @@ Följande frågor är vanliga frågor och svar om säkerhet för Power BI. Dessa
 
   Baserat på information som uppges under den första anslutningen till Power BI-tjänsten kontaktar användarens webbläsare angivet Azure **CDN** (eller **WFE** för vissa av filerna) för att ladda ned samlingen av angivna delade filer som behövs för att aktivera webbläsarens interaktion med Power BI-tjänsten. Webbläsaren inkluderar sedan AAD-token, sessionsinformation, platsen för det associerade **serverdelsklustret** samt den samling av filer som har laddats ned från Azure **CDN** och **WFE**-klustret under hela webbläsarsessionen för Power BI-tjänsten.
 
-**Bad gäller anpassade visuella objekt, utför Microsoft alla säkerhets- eller sekretessutvärderingar av koden för anpassade visuella objekt före publicering va objekt till galleriet?**
+**För Power BI visuella objekt utför Microsoft all säkerhet eller sekretess bedömning av den anpassade visuella koden innan du publicerar objekt i galleriet?**
 
 * Nej. Det är kundens ansvar att granska och avgöra huruvida koden för anpassade visuella objekt ska användas. All kod för anpassade visuella objekt används i en sandbox-miljö. Eventuell avvikande kod i ett anpassat objekt påverkar därför inte resten av Power BI-tjänst negativt.
 
