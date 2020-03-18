@@ -11,12 +11,12 @@ ms.topic: quickstart
 ms.date: 01/31/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: fbd629ea7d2c5bb71471ac8073a5a823f1b2c192
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 595ce61bf2020c27420a33871e82ca7ff9025d60
+ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76975343"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79040169"
 ---
 # <a name="quickstart---getting-around-in-power-bi-service"></a>Snabbstart – Hitta rätt i Power BI-tjänsten
 
@@ -72,7 +72,7 @@ Titta efter själv genom att välja **Arbetsytor** i det vänstra navigeringsfä
 
 ![Mina arbetsytor ](./media/end-user-experience/power-bi-workspaces.png)
 
-Under **Min arbetsyta** lagras allt innehåll som du äger och skapar. Du kan se det som det personliga utvecklingsutrymme eller ett område för ditt eget innehåll. För många Power BI-*användare* är **Min arbetsyta** tom eftersom de inte skapar nytt innehåll i sin yrkesroll.  *Användare* använder per definition data som skapats av andra till att fatta affärsbeslut. Om det visar sig att du behöver skapa innehåll ska du läsa [Power BI-artiklarna för *designers*](../power-bi-creator-landing.md) i stället.
+Under **Min arbetsyta** lagras allt innehåll som du äger och skapar. Du kan se det som det personliga utvecklingsutrymme eller ett område för ditt eget innehåll. För många Power BI-*användare* är **Min arbetsyta** tom eftersom de inte skapar nytt innehåll i sin yrkesroll.  *Användare* använder per definition data som skapats av andra till att fatta affärsbeslut. Om det visar sig att du behöver skapa innehåll ska du läsa [Power BI-artiklarna för *rapportförfattare*](../index.yml) i stället.
 
 På **apparbetsytan** finns allt innehåll för den aktuella appen.  När en *designer* skapar en app sammanställer de allt innehåll som krävs för att appen ska kunna användas.  Välj arbetsytan för Sales and Marketing så att du ser vad *designern* sammanställt i appen. 
 

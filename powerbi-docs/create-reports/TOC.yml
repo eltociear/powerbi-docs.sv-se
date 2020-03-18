@@ -129,6 +129,8 @@
               href: ../desktop-insights-find-where-different.md
             - name: Skapa knappar
               href: ../desktop-buttons.md
+            - name: Skapa knappar för att gå ner på detaljnivå
+              href: ../desktop-drill-through-buttons.md
             - name: Spara och dela insikter genom att skapa bokmärken
               href: ../desktop-bookmarks.md
             - name: Arbeta med rapportteman

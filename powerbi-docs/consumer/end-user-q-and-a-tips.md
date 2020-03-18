@@ -6,21 +6,24 @@ ms.reviewer: Mohammad
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/23/2019
+ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 9fd5375684466eca49582ff9d153fd2533ad7e92
-ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
+ms.openlocfilehash: 83db194ab670f1726f9598193dc2d3addf2eae72
+ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099018"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79114286"
 ---
 # <a name="tips-for-asking-questions-in-power-bi-qa"></a>Tips för att ställa frågor i Frågor och svar i Power BI
+
+[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
+
 ## <a name="words-and-terminology-that-qa-recognizes"></a>Ord och terminologi som Frågor och svar känner igen
 Listan över nyckelord på den här sidan är inte fullständig.  Det bästa sättet att se om Power BI identifierar ett nyckelord är att testa att skriva det i frågerutan.  Om en term eller ett ord har tonats ned kan inte Power BI identifiera den/det.
 
-Nedanstående lista använder presens men alla tempus kan kännas igen. Till exempel omfattar ”är” **vara**, **var**, **kommer att vara**, **har** **varit**, **har**, **hade**, **kommer att** **ha**, **gör**, **gjorde**, **gjort**  Och ”sortera” innehåller **sorterade** och **sortering**.  Dessutom känner Power BI igen och inkluderar ord i singular och plural. 
+Nedanstående lista använder presens men alla tempus kan kännas igen. Till exempel omfattar ”är” **vara**, **var**, **kommer att vara**, **har** **varit**, **har**, **hade**, **kommer att** **ha**, **gör**, **gjorde**, **gjort**.  Och ”sortera” innehåller **sorterade** och **sortering**.  Dessutom känner Power BI igen och inkluderar ord i singular och plural. 
 
 > [!NOTE]
 > Frågor och svar finns också tillgängligt i [Microsoft Power BI-appen för iOS på iPad-, iPhone- och iPod Touch-enheter](mobile/mobile-apps-ios-qna.md).

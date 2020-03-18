@@ -1,19 +1,19 @@
 ---
 title: Åtgärda ”kommunikationsfel” i iOS-mobilappar – Power BI
 description: Den här artikeln kan hjälpa dig om du får upp meddelandet Vi påträffade kommunikationsfel. Felen kan vara relaterade till proxyinställningar för din Wi-Fi-anslutning.
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 05/21/2018
-ms.author: mshenhav
-ms.openlocfilehash: 14745d1f2b62845ca0eac549b100bf3e06f8f814
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 03/11/2020
+ms.author: painbar
+ms.openlocfilehash: 0162d78fd4358f415ac52ea70bd3460d3c28b722
+ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879096"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79114915"
 ---
 # <a name="fixing-communication-failures-in-ios-mobile-apps---power-bi"></a>Åtgärda ”kommunikationsfel” i iOS-mobilappar – Power BI
 
@@ -22,7 +22,7 @@ ms.locfileid: "73879096"
 | iPhone-telefoner |iPad-surfplattor |
 
 ## <a name="we-encountered-communication-failures"></a>Vi påträffade kommunikationsfel
-Vi påträffade kommunikationsfel. Felen kan vara relaterade till proxyinställningar för din Wi-Fi-anslutning. Om du växlar till en annan Wi-Fi-anslutning kan det lösa problemet.
+”Vi påträffade kommunikationsfel. Felen kan vara relaterade till proxyinställningar för din Wi-Fi-anslutning. Om du växlar till en annan Wi-Fi-anslutning kan det lösa problemet.”
 
 Du kan se det här meddelandet om Internetanslutningen för din iPhone eller iPad kräver att en obligatorisk explicit HTTP-proxy konfigureras manuellt eller automatiskt. I det här fallet fungerar inte Power BI-appen på din iOS-enhet.
 

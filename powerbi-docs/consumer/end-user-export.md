@@ -7,21 +7,24 @@ featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/22/2020
+ms.date: 02/20/2020
 ms.author: mihart
 LocalizationGroup: Consumers
-ms.openlocfilehash: 27128618fc594a8b7259a3de3862c6766eaecd86
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: 811eaa9769a099122597d7132de80cbc2d22a51b
+ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76537535"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79040163"
 ---
 # <a name="export-data-from-a-visual"></a>Exportera data från ett visuellt objekt
 
+[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
+
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-Om du vill se de data som används i en visualisering [kan du visa dessa data i Power BI](end-user-show-data.md) eller exportera data till Excel. Alternativet att exportera data kräver en viss typ av licens- och redigeringsbehörigheter till innehållet. Kontakta din Power BI-administratör om du inte kan exportera. 
+Om du vill se de data som används i en visualisering [kan du visa dessa data i Power BI](end-user-show-data.md) eller exportera data till Excel. Alternativet att exportera data kräver en viss typ av licens- och redigeringsbehörigheter till innehållet. Kontakta din Power BI-administratör om du inte kan exportera. Export av data kräver en Power BI Pro-licens, en Pro-licens per användare eller en Pro-licens per användare inom en organisation som har en licens för Premium-kapacitetslicens. Den här typen av licens används vanligtvis av raport *designers*, inte *konsumenter*. Mer information finns i [Vilken licens har jag?](end-user-license.md)
+
 
 ## <a name="from-a-visual-on-a-power-bi-dashboard"></a>Från en visualisering på en Power BI-instrumentpanel
 

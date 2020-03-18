@@ -7,17 +7,19 @@ featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/25/2019
+ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 6fdb336faaceee21347f426beb6fdefc0bdb70f4
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: d97727969ed48c50a86be032835b237d293a1d96
+ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73861699"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79114156"
 ---
 # <a name="display-the-dashboards-and-reports-that-have-been-shared-with-me"></a>Visa instrumentpaneler och rapporter som har delats med mig
+
+[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
@@ -25,7 +27,7 @@ När en kollega delar innehåll med dig visas det, via knappen **dela**, i behå
 
 ![Delningsikon](./media/end-user-shared-with-me/power-bi-share-dashboard.png)
 
-Titta när Amanda förklarar innehållslistan **delat med mig** och visar hur du navigera och filtrerar listan. Prova sedan själv genom att följa de stegvisa anvisningarna under videon. Om du vill visa instrumentpaneler som delas med dig, måste du ha en Power BI Pro-licens. Läs [Vad är Power BI Premium?](../service-premium-what-is.md) för mer information.
+Titta när Amanda förklarar innehållslistan **delat med mig** och visar hur du navigera och filtrerar listan. Prova sedan själv genom att följa de stegvisa anvisningarna under videon. Om du vill visa instrumentpaneler som delas med dig, måste du ha en Power BI Pro-licens. Läs [Vilken licens har jag?](end-user-license.md) för mer information.
     
 
 > [!NOTE]
@@ -45,7 +47,7 @@ Du kommer att ha alternativ för att interagera med de delade instrumentpanelern
 * Välj stjärnikonen för att [favoritmarkera en instrumentpanel eller rapport](end-user-favorite.md) ![stjärnikon](./media/end-user-shared-with-me/power-bi-star-icon.png).
 * Ta bort en instrumentpanel eller en rapport  ![papperskorgikonen](./media/end-user-shared-with-me/power-bi-delete-icon.png).
 * Vissa instrumentpaneler och rapporter kan delas vidare  ![delningsikon](./media/end-user-shared-with-me/power-bi-share-icon-new.png).
-* [Öppna rapporten i Excel](end-user-export.md) ![exportera till Excel-ikonen](./media/end-user-shared-with-me/power-bi-excel.png) 
+* [Öppna rapporten i Excel](end-user-export.md) ![exportera till Excel-ikon](./media/end-user-shared-with-me/power-bi-excel.png) 
 * [Visa insikter](end-user-insights.md) som Power BI hittar i data ![insikter-ikonen](./media/end-user-shared-with-me/power-bi-insights.png).
   
   > [!NOTE]

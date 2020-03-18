@@ -10,16 +10,16 @@ ms.topic: conceptual
 ms.date: 07/24/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 0364fae1648e6155cc5e5a92850861c3bedbabdc
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: aaafaa5b2822e3e17fdc92b43bf7b745330a547b
+ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73871890"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78946830"
 ---
 # <a name="connect-to-datasets-with-client-applications-and-tools-preview"></a>Ansluta till datamängder med klientprogram och verktyg (förhandsversion)
 
-Power BI Premium-arbetsytor och -datamängder har stöd för *skrivskyddade* anslutningar från Microsoft samt klientprogram och verktyg från tredje part. Som standard är anslutningar aktiverade
+Power BI Premium-arbetsytor och -datamängder har stöd för *skrivskyddade* anslutningar från Microsoft samt klientprogram och verktyg från tredje part. Anslutningar är aktiverade som standard.
 
 > [!NOTE]
 > Den här artikeln är endast avsedd att införa skrivskyddade anslutningar i Power BI Premium-arbetsytor och -datamängder. Den är *inte* avsedd att ge detaljerad information om programmerbarhet, specifika verktyg och program, arkitektur och hantering av arbetsytor och datamängder. Ämnen som beskrivs i artikeln kräver en gedigen förståelse av arkitekturen för och administration av den tabellbaserade modelldatabasen i Analysis Services.
@@ -104,17 +104,13 @@ Följande datamängder stöds inte i Power BI-tjänsten:
 
 För närvarande går det inte att identifiera eller visa modellroller eller rollmedlemskap med hjälp av XMLA-slutpunkter.
 
-## <a name="disable-connectivity"></a>Inaktivera anslutningar
-
-Som standard är anslutningar för XMLA-slutpunkt aktiverade för arbetsbelastningen Datamängder. Du kan inaktivera anslutningar i [Inställningar för arbetsbelastningar](service-admin-premium-workloads.md#workload-settings).
-
 ## <a name="audit-logs"></a>Granskningsloggar 
 
 När klientprogram och verktyg ansluter till en arbetsyta loggas åtkomst via XMLA-slutpunkter i Power BI-spårningsloggarna under åtgärden **GetWorkspaces**. Läs mer i [Granska Power BI](service-admin-auditing.md).
 
-## <a name="see-also"></a>Se också
+## <a name="see-also"></a>Se även
 
-[Analysis Services-referenser](https://docs.microsoft.com/bi-reference/#pivot=home&panel=home-all)   
+[Analysis Services-referenser](https://docs.microsoft.com/bi-reference/?pivot=home&panel=home-all)   
 [SQL Server Management Studio](https://docs.microsoft.com/sql/ssms/sql-server-management-studio-ssms)   
 [Tabellprotokoll för SQL Server Analysis Services](https://docs.microsoft.com/openspecs/sql_server_protocols/ms-ssas-t/b98ed40e-c27a-4988-ab2d-c9c904fe13cf)   
 [Dynamiska hanteringsvyer (DMV)](https://docs.microsoft.com/sql/analysis-services/instances/use-dynamic-management-views-dmvs-to-monitor-analysis-services)   

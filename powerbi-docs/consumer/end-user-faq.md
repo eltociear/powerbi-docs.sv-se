@@ -6,17 +6,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/03/2019
+ms.date: 02/20/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 282b10d48efc97c38dae06692964e3ba2a7412b0
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 9a59f8e230ecd8eec6338e92b7fb01e525831617
+ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73852515"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79040006"
 ---
 # <a name="frequently-asked-questions-about-power-bi"></a>Vanliga frågor och svar om Power BI
+
+[!INCLUDE[consumer-appliesto-ynnn](../includes/consumer-appliesto-ynnn.md)]
 
 * Om du har andra frågor [kan du fråga Power BI Community](https://community.powerbi.com/).
 * Har du fortfarande problem? Besök [Power BI-supportsidan](https://powerbi.microsoft.com/support/).
@@ -25,11 +27,18 @@ ms.locfileid: "73852515"
 
 Power BI är en molnbaserad tjänst för företagsanalyser som låter vem som helst visualisera och analysera data med högre hastighet, effektivitet och djupare insikter. Användare får tillgång till en stor mängd molnbaserade och lokala data genom lättanvända instrumentpaneler, interaktiva rapporter och spännande visualiseringar som levandegör data. Läs mer om [Power BI](../fundamentals/power-bi-overview.md).
 
+## <a name="what-is-the-microsoft-power-bi-service-for-consumers"></a>Vad innebär Microsoft Power BI-tjänsten för *konsumenter*?
+
+Hur du interagerar med Power BI beror på din arbetsroll. Som slutanvändare eller *konsument* är du den som tar emot innehåll (instrumentpaneler, rapporter och appar) från kollegorna. Du arbetar i online- eller mobilversionen av Power BI, som kallas för Power BI-tjänsten, där du granskar och interagerar med innehållet för att fatta affärsbeslut.  Läs mer om [Power BI för konsumenter](index.yml).
+
+
 ## <a name="whats-the-difference-between-power-bi-pro-and-power-bi-premium"></a>Vad är skillnaden mellan Power BI Pro och Power BI Premium?
 
-Power BI Pro är en individuell licens som ger åtkomst till allt innehåll och alla funktioner i Power BI-tjänsten. Du kan till och med dela innehåll och samarbeta med andra Pro-användare. Det är bara Pro-användare som kan publicera innehåll på arbetsytor, dela instrumentpaneler samt prenumerera på instrumentpaneler och rapporter.
+Power BI Pro är en individuell användarlicens som ger åtkomst till allt innehåll och alla funktioner i Power BI-tjänsten. Du kan till och med dela innehåll och samarbeta med andra Pro-användare. Det är bara Pro-användare som kan publicera innehåll på arbetsytor, dela instrumentpaneler samt prenumerera på instrumentpaneler och rapporter. Den här typen av licens tilldelas vanligtvis till Power BI-rapport*designers*, utvecklare och administratörer. 
 
-Power BI Premium tillhandahåller dedikerad kapacitet för att erbjuda mer enhetlig prestanda. Det ger även stöd för större datavolymer i Power BI. För enskilda användare möjliggör Premium även omfattande distribution av innehåll av Pro-användare utan att det krävs licenser per användare för mottagare som visar innehållet.
+Power BI Premium tillhandahåller dedikerad kapacitet för att erbjuda mer enhetlig prestanda. Det ger även stöd för större datavolymer i Power BI. För enskilda användare möjliggör Premium även omfattande distribution av innehåll av Pro-användare utan att det krävs Pro-licenser per användare för mottagare som visar innehållet. Detta innebär att *konsumenter* kan samarbeta med kollegor och visa och interagera med instrumentpaneler, rapporter och appar som har delats med dem. 
+
+Mer information finns i [Vilken typ av licens har jag?](end-user-license.md).
 
 ## <a name="what-if-i-have-questions-about-power-bi-premium"></a>Vad händer om jag har frågor om Power BI Premium?
 
@@ -37,19 +46,17 @@ För frågor som rör Power BI Premium, se [Power BI Premium, vanliga frågor oc
 
 ## <a name="what-is-power-bi-desktop"></a>Vad är Power BI Desktop?
 
-Power BI Desktop är ett kostnadsfritt program som du kan installera direkt på din dator. Power BI Desktop fungerar sömlöst med Power BI-tjänsten.  Datavetare, administratörer och utvecklare arbetar med Power BI Desktop för att framställa rapporter och göra dem tillgängliga för *konsumenter* av Power BI-tjänsten, som du. Läs mer om [vad Power BI Desktop är](../desktop-what-is-desktop.md).
+Power BI Desktop är ett kostnadsfritt program som du kan installera direkt på din dator. Power BI Desktop fungerar sömlöst med Power BI-tjänsten.  Datavetare, rapportdesigners, administratörer och utvecklare arbetar med Power BI Desktop för att framställa rapporter och göra dem tillgängliga för *konsumenter* av Power BI-tjänsten som du. Läs mer om [vad Power BI Desktop är](../desktop-what-is-desktop.md).
 
-## <a name="what-do-i-need-to-use-the-power-bi-service"></a>Vad behöver jag för att använda Power BI-tjänsten?
+## <a name="what-do-i-need-to-use-the-power-bi-service-as-a-consumer"></a>Vad behöver jag för att använda Power BI-tjänsten som *konsument*?
 
-Det räcker med en webbläsare och en jobbmejl. Du kan också registrera dig med en e-postadress av typen *.gov* eller *.mil*. Mer information finns på sidan [Registrera din amerikanska myndighetsorganisation i Power BI-tjänsten](../service-govus-signup.md).
+Om ditt företag har köpt Power BI-licenser eller ett Premium-kapacitetskonto, så är allt du behöver en webbläsare och autentiseringsuppgifter. Om du vill logga in använder du din e-postadress till arbetet och ett lösenord (som anges av Power BI-administratören).  
+
+Du kan också registrera dig själv som enskild individ för Power BI-tjänsten. Mer information finns i [Processen för självbetjäningsregistrering i Power BI](../service-self-service-signup-for-power-bi.md)
 
 ## <a name="why-do-i-have-to-sign-up-with-my-work-email"></a>Varför måste jag logga med min jobbmejl?
 
 Power BI stöder inte e-postadresser som tillhandahålls av e-posttjänster för konsumenter eller telekommunikationsleverantörer. Lär dig mer om [registreringsprocessen för Power BI med självbetjäning](../service-self-service-signup-for-power-bi.md).
-
-## <a name="is-government-academic-and-nonprofit-pricing-available-for-power-bi"></a>Erbjuds prissättning för myndigheter, akademiska institutioner och ideella organisationer för Power BI?
-
-Ja, priser för ideella organisationer är tillgängliga när du köper direkt från Microsoft. Läs mer och registrera dig på webbplatsen [Microsoft Nonprofits](https://www.microsoft.com/nonprofits/power-bi). Microsoft erbjuder prissättning för myndigheter och högskolor via MOSP/Direct, EA och öppna licensprogram. Priser för myndigheter är också tillgängliga som syndikering.
 
 ## <a name="does-power-bi-support-mobile-devices"></a>Har Power BI stöd för mobila enheter?
 
@@ -76,7 +83,7 @@ Följande resurser är tillgängliga för att komma igång:
 * [Power BI-bloggen](https://blogs.msdn.com/b/powerbi/)
 * [Webbseminarier](../webinars.md)
 * Komma igång-videor på vår [YouTube-kanal](https://www.youtube.com/user/mspowerbi)
-* Artikeln [Kom igång med Power BI som *konsument*](power-bi-consumer-landing.md)
+* Artikeln [Kom igång med Power BI som *konsument*](index.yml)
 * [Anslut till vår community](https://community.powerbi.com/) och ställ frågor
 * Se [10 tips för att få hjälp](../service-tips-for-finding-help.md) för fler förslag.
 
@@ -87,16 +94,6 @@ Här är en fullständig lista över [webbläsare som stöds för Power BI](../s
 ## <a name="what-regions-and-languages-does-power-bi-support"></a>Vilka regioner och språk stöder Power BI?
 
 Här är en fullständig lista över [de regioner och språk som stöds av Power BI](../supported-languages-countries-regions.md).
-
-## <a name="how-can-i-buy-power-bi-pro-in-my-country"></a>Hur kan jag köpa Power BI Pro i mitt land?
-
-Du kan köpa Power BI Pro-licenser direkt eller chatta med en representant på [www.powerbi.com](https://www.powerbi.com).
-
-Du kan också kontakta en [Microsoft-partner](https://partner.microsoft.com/) som hjälper dig med din Power BI-implementering.
-
-## <a name="does-power-bi-meet-national-regional-and-industry-specific-compliance-requirements"></a>Uppfyller Power BI nationella, regionala och branschspecifika efterlevnadskrav?
-
-Lär dig mer om Power BI-efterlevnad på [Microsoft Trust Center](https://go.microsoft.com/fwlink/?LinkId=785324).
 
 ## <a name="where-can-i-learn-more-about-security"></a>Var kan jag lära sig mer om säkerhet?
 

@@ -1,19 +1,19 @@
 ---
 title: Skapa en länk till en specifik plats i Power BI-mobilapparna
 description: Lär dig hur du skapar en djuplänk till en specifik instrumentpanel, panel eller rapport i Power BI-mobilappen med en URI (Uniform Resource Identifier).
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 04/24/2019
-ms.author: mshenhav
-ms.openlocfilehash: 427019d831aa02723f17efd3de78081c368717c2
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 03/11/2020
+ms.author: painbar
+ms.openlocfilehash: f0a72cf315c8ad911414274daae11b712971b305
+ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879302"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79114486"
 ---
 # <a name="create-a-link-to-a-specific-location-in-the-power-bi-mobile-apps"></a>Skapa en länk till en specifik plats i Power BI-mobilapparna
 Du kan använda länkar för att direkt komma åt specifika objekt i Power BI: Rapport, Instrumentpanel och Panel.

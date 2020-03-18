@@ -8,12 +8,12 @@ ms.topic: overview
 ms.date: 09/04/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 9da9465bea8512b541d3f1af3983df70d184ac26
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 5ad960560ba6c99228ba63ee0041789b9ec6ff7d
+ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73875661"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79114986"
 ---
 # <a name="what-is-power-bi"></a>Vad är Power BI?
 **Power BI** är en samling programvarutjänster, appar och kopplingar som arbetar tillsammans för att förvandla dina orelaterade datakällor till sammanhängande, visuellt fördjupande och interaktiva insikter. Dina data kan finnas i ett Excel-kalkylblad eller i en samling molnbaserade och lokala hybridinformationslager. Med Power BI kan du enkelt ansluta till dina datakällor, visualisera och upptäcka det som är viktigt och dela resultat med alla du vill.
@@ -51,7 +51,7 @@ Utforska dokument som hör till din roll:
 Ett vanligt arbetsflöde i Power BI börjar med att ansluta till datakällor och skapa en rapport i Power BI Desktop. Sedan publicerar du rapporten från Power BI Desktop till Power BI-tjänsten och delar den så att slutanvändarna i Power BI-tjänsten och mobila enheter kan läsa och interagera med den.
 Det här är det vanliga arbetsflödet, som visar hur de tre huvuddelarna i Power BI kompletterar varandra.
 
-Här är en detaljerad [jämförelse av Power BI Desktop och Power BI-tjänsten](../designer/service-service-vs-desktop.md).
+Här är en detaljerad [jämförelse av Power BI Desktop och Power BI-tjänsten](../fundamentals/service-service-vs-desktop.md).
 
 ## <a name="on-premises-reporting-with-power-bi-report-server"></a>Lokal rapportering med Power BI-rapportservern
 
@@ -67,5 +67,5 @@ Läs mer om [Power BI-rapportservern](../report-server/get-started.md).
 
 ## <a name="next-steps"></a>Nästa steg
 - [Snabbstart: Lär dig använda Power BI-tjänsten](../service-the-new-power-bi-experience.md)   
-- [Självstudier: Kom igång med Power BI-tjänsten](../service-get-started.md)
+- [Självstudie: Kom igång med Power BI-tjänsten](../service-get-started.md)
 - [Snabbstart: Ansluta till data i Power BI Desktop](../desktop-quickstart-connect-to-data.md)

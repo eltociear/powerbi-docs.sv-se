@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 01/29/2020
+ms.date: 03/09/2020
 ms.author: painbar
-ms.openlocfilehash: 7aa31d9c6eadd4c7c9c88c9006a360a6089f28e2
-ms.sourcegitcommit: 17aad73762579d6822383b27b96b1b63f87f2d6f
+ms.openlocfilehash: 97d2a3acba87309b74de1776f1325bb4c4a78910
+ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77259823"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79041591"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nyheter i Power BI-mobilapparna
 Relaterad information om nyheter finns i:
@@ -21,6 +21,29 @@ Relaterad information om nyheter finns i:
 * [Power BI-teambloggen för mobilappar](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Nyheter i Power BI Desktop](../../desktop-latest-update.md)  
 * [Nyheter i Power BI-tjänsten](../../service-whats-new.md)  
+
+## <a name="february-2020"></a>Februari 2020
+
+### <a name="multi-select-mode-android-and-ios"></a>Flervalsläge (Android och iOS)
+
+Vi har lagt till möjligheten att välja flera datapunkter på en rapportsida. När flervalsläget är aktiverat, läggs varje datapunkt som du trycker på till övriga valda datapunkter, varvid de kombinerade resultaten automatiskt markeras i alla visuella objekt på sidan. Om du vill aktivera flervalsläget, så gå till sidan [Mobilappsinställningar](./mobile-app-interaction-settings.md).
+
+>[!NOTE]
+>Flervalsläget kommer att stödjas i nästa version av Power BI-rapportserver.
+
+### <a name="report-footer-can-now-always-be-visible-in-the-mobile-app-for-iphones"></a>Rapportsidfoten kan nu hållas synlig i mobilappen för iPhone
+
+På din iPhone eller Android kan du nu välja att docka rapportsidfoten längst ned på rapportsidan, där den alltid är synlig och tillgänglig, oavsett vad du gör på sidan. Detta gör det enkelt att använda alla alternativ på rapportsidfoten. Om du vill docka sidfoten, så växla till **Dockad rapportfot** på sidan [Mobilappsinställningar](./mobile-app-interaction-settings.md).
+
+### <a name="support-for-pbirs-reports-preview-windows"></a>Stöd för PBIRS-rapporter (förhandsversion) (Windows)
+
+Nu kan du öppna dina Power BI-rapportserver-rapporter (PBIRS) i Power BI-appen.
+
+### <a name="quickly-access-your-recent-items-windows"></a>Ha snabb åtkomst till dina senast använda objekt (Windows)
+
+Hämta en lista över alla de objekt som du har visat nyligen genom att högerklicka på Power BI-appens ikon i aktivitetsfältet i Windows. Klicka på ett objekt i listan om du vill ta en snabb titt på det igen.
+
+![Snabbåtkomstmeny i aktivitetsfältet](media/mobile-whats-new-in-the-mobile-apps/mobile-apps-windows-taskbar-quick-access.png)
 
 ## <a name="january-2020"></a>Januari 2020
 
@@ -38,7 +61,7 @@ Våra Android-användare har berättat att deras erfarenhet av rapporter inte ä
 
 De användare som föredrar de tidigare beteendena kan återställa dem med appens nya, utökade [interaktionsinställningar](./mobile-app-interaction-settings.md).
 
-Dessutom kan IT-administratörer [åsidosätta de nya standardinställningarna via fjärrkonfiguration](./mobile-app-configuration.md#interaction-settings-android) för användarens räkning med hjälp av valfritt MDM-verktyg och en appkonfigurationsfil. På så sätt går det att ställa in samma beteende för alla användare i organisationen.
+Dessutom kan IT-administratörer [åsidosätta de nya standardinställningarna via fjärrkonfiguration](./mobile-app-configuration.md#interaction-settings-ios-and-android) för användarens räkning med hjälp av valfritt MDM-verktyg och en appkonfigurationsfil. På så sätt går det att ställa in samma beteende för alla användare i organisationen.
 
 > [!NOTE]
 > Interaktionsinställningarna för uppdateringsknappen och dockning av rapportsidfoten har för närvarande ingen inverkan på rapporter för rapportservern. Detta kommer att ändras med rapportserverversionen som släpps i januari!
@@ -96,7 +119,7 @@ Läs mer om [anpassad navigering](https://powerbi.microsoft.com/blog/designing-c
 
 ### <a name="introducting-power-bi-mobile-new-look-preview-ios-and-android"></a>Vi presenterar Power BI Mobile med nytt utseende (förhandsversion) (iOS och Android)
 
-Vi har uppdaterat vår app och lanserat nya upplevelser, lagt till en startsida som ger snabbåtkomst till det innehåll du oftast använder, samt nya navigeringsfönster som gör det enkelt att navigera i appen. Med de nya och uppdaterade upplevelserna går det snabbare och enklare att hitta det du behöver, när du behöver det.
+Vi har uppdaterat vår app och lanserat nya upplevelser, lagt till en startsida som ger snabbåtkomst till det innehåll du oftast använder, samt nya navigeringsfönster som gör det enkelt att navigera i appen. Med de nya och uppdaterade funktionerna kan du snabbare och enklare hitta det du behöver, när du behöver det.
 Eftersom det nya utseendet är i förhandsversion måste du aktivera det för att kunna ta del av det.
 Läs mer om [det nya utseendet för Power BI](https://powerbi.microsoft.com/blog/introducing-power-bi-mobile-apps-new-look-preview/).
 
@@ -104,7 +127,7 @@ Läs mer om [det nya utseendet för Power BI](https://powerbi.microsoft.com/blog
 
 ### <a name="secured-access-with-azure-active-directory-ad-application-proxy-ios-and-android"></a>Skyddad åtkomst med Azure Active Directory-programproxyn (iOS och Android)
 
-Vi har samarbetat med Azure Active Directory-team för att integrera mobila Power BI-program med Azure Active Directory- Programproxyn. Med den här konfigurationen kan du ansluta till en rapportserver inom företagsgränserna från Power BI Mobile-appen, utan att behöva konfigurera en komplex lokal konfiguration. Läs mer om [Integrera Power BI Mobile och Azure AD-programproxy](https://powerbi.microsoft.com/blog/access-on-prem-report-server-from-your-power-bi-mobile-app-with-azure-active-directory-application-proxy/). Lär dig [hur du konfigurerar Azure AD-programproxy och Power BI](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi).
+Vi har samarbetat med Azure Active Directory-teamet när det gäller att integrera mobila Power BI-program med Azure Active Directory-programproxyn. Med den här konfigurationen kan du ansluta till en rapportserver inom företagsgränserna från Power BI Mobile-appen, utan att behöva konfigurera en komplex lokal konfiguration. Läs mer om [Integrera Power BI Mobile och Azure AD-programproxy](https://powerbi.microsoft.com/blog/access-on-prem-report-server-from-your-power-bi-mobile-app-with-azure-active-directory-application-proxy/). Lär dig [hur du konfigurerar Azure AD-programproxy och Power BI](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi).
 
 ## <a name="july-2019"></a>Juli 2019
 
@@ -210,7 +233,7 @@ Rapportens filterfönster finns nu tillgängligt för liggande rapporter (utöve
 
 ### <a name="modern-visual-header"></a>Modern visuell rubrik 
 
-Rapporter som använder den nya moderna visuella rubriken kommer inte längre att allokera utrymme för rubriker, vilket ger mindre tomt utrymme och mer utrymme för dina visualiseringar.
+Rapporter som använder den nya typen av moderna visuella rubriker kommer inte längre att allokera utrymme för rubriker, vilket ger mindre outnyttjat utrymme och mer utrymme för dina visualiseringar.
 
 ### <a name="enhance-presentation-mode-windows"></a>Förbättra presentationsläge (Windows)
 
@@ -264,7 +287,7 @@ Nu kan du skapa en telefonrapportlayout för en rapport som redan har publicerat
 
 ### <a name="dashboard-commenting-ios-and-android"></a>Instrumentpanelskommentarer (iOS och Android) 
 
-Du kan lägga till kommentarer direkt till instrumentpaneler och specifika paneler för att diskutera dina data, så ser alla som visar instrumentpanelen dina kommentarer. Du kan även bjuda in andra i organisationen till konversationen genom att @mentioning dem. Dem som du har @mentioned får ett push-meddelande med ditt meddelande till deras mobiltelefon.
+Du kan lägga till kommentarer direkt till instrumentpaneler och specifika paneler för att diskutera dina data, så ser alla som visar instrumentpanelen dina kommentarer. Du kan även bjuda in andra i organisationen till konversationen genom att @mentioning dem. De som du har @mentioned får ett push-meddelande med ditt meddelande till sina mobiltelefoner.
 
 För närvarande tillgängligt för iOS- och Android-enheter. Windows-stöd kommer snart.
 
@@ -383,11 +406,11 @@ Stöd för villkorlig åtkomst med hantering av mobila enheter Microsoft Intune.
 
 #### <a name="improved-security-management"></a>Förbättrad säkerhetshantering 
 
-Vi har lagt till stöd för villkorlig åtkomst (CA) och Microsoft Intune-hantering av mobilenheter (MDM) för Android-enheter för att bättre kunna skydda din organisations data. Detta finns redan tillgängligt på iOS.
+Vi har lagt till stöd för villkorsstyrd åtkomst (CA) och Microsoft Intune-hantering av mobilenheter (MDM) för Android-enheter, så att din organisations data skyddas bättre. Detta finns redan tillgängligt på iOS.
 
 #### <a name="improved-permission-management"></a>Förbättrad behörighetshantering
 
-Vi har gjort några ändringar som ska ge en bättre hantering av användarbehörigheter för datauppsättningar, instrumentpaneler och rapporter.
+Vi har gjort några ändringar som ger en bättre hantering av användarbehörigheter för datamängder, instrumentpaneler och rapporter.
 
 #### <a name="auto-installed-apps"></a>Automatiskt installerade appar
 
@@ -521,7 +544,7 @@ Läs [funktionssammanfattningen om mobilappar på bloggen för december 2016](ht
 #### <a name="all-devices"></a>Alla enheter
 **Bakgrundsuppdatering offline**
 
-För att säkerställa att du kan komma åt dina senaste data offline, gör vi en uppdatering i bakgrunden på appen så att din affärsinformation är uppdaterad, även om du inte har använt den på ett tag. För att se till att vissa instrumentpaneler alltid är uppdaterade, markerar du bara dem som favoriter. Lär dig mer om [offlinefunktionerna i Power BI-mobilapparna](mobile-apps-offline-data.md).
+I syfte att säkerställa att du har åtkomst till dina senaste data offline, gör vi en uppdatering i bakgrunden i appen, så att din affärsinformation är uppdaterad, även om du inte har använt den på ett tag. För att se till att vissa instrumentpaneler alltid är uppdaterade, markerar du bara dem som favoriter. Lär dig mer om [offlinefunktionerna i Power BI-mobilapparna](mobile-apps-offline-data.md).
 
 #### <a name="ios-devices"></a>iOS-enheter
 **Kommentera och dela**.
@@ -573,7 +596,7 @@ Läs [funktionssammanfattningen om Power BI-mobilappar på bloggen för november
 Läs [funktionssammanfattningen om Power BI-mobilappar på bloggen för oktober 2016](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-feature-summary-october-2016/).
 
 #### <a name="all-devices"></a>Alla enheter
-**Favoriter som landningssida** Om du har markerat någon av dina instrumentpaneler som favorit, blir din landningssida din ingång till Favoriter. 
+**Favoriter som landningssida** Om du har markerat någon av dina instrumentpaneler som favorit, så blir din landningssida din Favoriter-post. 
 
 **Förbättrad navigering** Huvudnavigeringen har ett nytt utseende och gruppnavigeringen har flyttats till gruppkatalogen. 
 
@@ -625,11 +648,11 @@ I [Power BI-tjänsten](../../service-create-dashboard-mobile-phone-view.md) kan 
 
 **Förbättrad säkerhetshantering** Välj en riskklassificering för affärsdata som presenteras på en specifik instrumentpanel.
 
-**Förbättrade varningar och banderoller** Vi har förbättrat varningarna och banderollerna för mobilappen.
+**Förbättrade varningar och banderoller** Vi har förbättrat mobilappens varningar och banderoller.
 
 **QR-koder för rapportsidor** En QR-kod som genereras i tjänsten länkas till en viss sida i stället för hela rapporten.
 
-**Förbättrade aviseringar** Datadrivna aviseringar formateras nu baserat på din enhet språk.
+**Förbättrade aviseringar** Datadrivna aviseringar formateras nu baserat på din enhets språk.
 
 #### <a name="ios-on-iphones-and-ipads"></a>iOS på iPhone och iPad
 **Förbättrad säkerhetshantering** Välj en riskklassificering för affärsdata som presenteras på en specifik instrumentpanel.
@@ -638,16 +661,16 @@ I [Power BI-tjänsten](../../service-create-dashboard-mobile-phone-view.md) kan 
 
 **Förbättrad manuell uppdatering** Du kan nu manuellt uppdatera panelerna på din instrumentpanel. För paneler baserade på DirectQuery hämtas dina senaste data från datamodellen.
 
-**Förbättrade varningar och banderoller** Vi har förbättrat varningarna och banderollerna för mobilappen.
+**Förbättrade varningar och banderoller** Vi har förbättrat mobilappens varningar och banderoller.
 
 **QR-koder för rapportsidor** En QR-kod som genereras i tjänsten länkas till en viss sida i stället för hela rapporten.
 
-**Allmänna förbättringar** Vi har förbättrar felmeddelandena för paneler i mobilappen.
+**Allmänna förbättringar** Vi har förbättrat felmeddelandena för paneler i mobilappen.
 
 #### <a name="windows-10-devices"></a>Windows 10-enheter
 **Förbättrad säkerhetshantering** Välj en riskklassificering för affärsdata som presenteras på en specifik instrumentpanel.
 
-**Förbättrade varningar och banderoller** Vi har förbättrat varningarna och banderollerna för mobilappen.
+**Förbättrade varningar och banderoller** Vi har förbättrat mobilappens varningar och banderoller.
 
 ### <a name="june-2016"></a>Juni 2016
 Mer information finns i [blogginlägget om Power BI-mobilappar för juni](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-update-june-2016/).
@@ -673,7 +696,7 @@ Meddelandecentret i Power BI-mobilappen visar nya data eller instrumentpaneler s
 * **QR-koder** är nu tillgängliga även **för rapporter**. Skanna koden med Power BI-appen för att gå direkt till en relaterad rapport, utan att behöva navigera eller söka dig fram.
 * **Förbättrad datahantering** för SQL Server 2016 Reporting Services: Minskade inläsningstider och minskad dataförbrukning för din enhet.
 * **SQL Server 2016 mobilrapporter med teman**: Se teman för mobila rapporter på din enhet.
-* **Geofiltrering**: Filtrera rapporter efter din aktuella plats.
+* **Geo-filtrering**: Filtrera rapporter efter din aktuella plats.
 
 ### <a name="april-2016"></a>April 2016
 Mer information finns i [blogginlägget om Power BI Mobile-appar för april](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-update-april-2016/).
@@ -699,11 +722,11 @@ Läs [blogginlägget om Power BI Mobile-appar för mars 2016](https://powerbi.mi
 
 **iOS 9.0 och senare** För att kunna tillhandahålla en så bra upplevelse som möjligt och nya funktioner för Power BI, stöder vi nu bara enheter som kör iOS 9.0 eller senare.
 
-**Global sökning** Vi har lagt till en ny ”senast visade”-lista och global sökning så att du snabbt kan hitta de data du behöver.
+**Global sökning** Vi har lagt till en ny ”senast visade”-lista och global sökning, så att du snabbt kan hitta de data du behöver.
 
 **Rapportgalleri** Öppna dina rapporter direkt i rapportgalleriet.
 
-**Nyaste data offline** Ny uppdatering i bakgrunden som automatiskt uppdaterar dina cachelagrade data när du är online, så att du har dina nyaste data [även när du är offline](mobile-apps-offline-data.md). 
+**Nya data offline** Ny uppdatering i bakgrunden som automatiskt uppdaterar dina cachelagrade data när du är online, så att du har tillgång till dina nyaste data [även när du är offline](mobile-apps-offline-data.md). 
 
 **Bing- och R-paneler** Öppna Bing- och R-paneler i fokusläge.
 
@@ -712,7 +735,7 @@ Läs [blogginlägget om Power BI Mobile-appar för mars 2016](https://powerbi.mi
 
 **Visa rapporter** Öppna rapporter från paneler på dina instrumentpaneler.
 
-**Nyaste data offline** Ny uppdatering i bakgrunden som automatiskt uppdaterar dina cachelagrade data när du är online, så att du har dina nyaste data [även när du är offline](mobile-apps-offline-data.md). 
+**Nya data offline** Ny uppdatering i bakgrunden som automatiskt uppdaterar dina cachelagrade data när du är online, så att du har tillgång till dina nyaste data [även när du är offline](mobile-apps-offline-data.md). 
 
 #### <a name="power-bi-app-for-windows-10-devices"></a>Power BI-appen för Windows 10-enheter
 **Snabbåtkomst** Få åtkomst till dina instrumentpaneler, rapporter och grupper snabbt med en ny ”senast visade”-lista och global sökning så att du kan hitta de data du behöver.
@@ -832,4 +855,3 @@ Förbättringar i Power BI-mobilapparna – Android, iOS (iPhone och iPad) och W
 * Förbättrad användarupplevelse vid åtkomst till instrumentpaneler med hjälp av rollbaserad säkerhet. 
 * Med en av de nya funktionerna kan du bläddra fram och tillbaka via instrumentpanelens paneler och utforska dem direkt i fokusläge utan behov av att gå tillbaka till instrumentpanelen för att välja nästa panel.
 * Ytterligare stabilitets- och prestandaförbättringar. 
-

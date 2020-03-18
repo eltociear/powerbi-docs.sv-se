@@ -5,15 +5,15 @@ author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: overview
-ms.date: 02/18/2020
+ms.date: 02/24/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 100a9302e260a7c8f34c6fa07cc6b231e7271ce6
-ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
+ms.openlocfilehash: fb1209103c88e78148f746321d5ff8d8bd6e1a20
+ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77496250"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79039962"
 ---
 # <a name="the-power-bi-service-for-consumers"></a>Power BI-tjänsten för konsumenter
 
@@ -31,11 +31,11 @@ Power BI gör jobbet enklare samtidigt som det ger större effekt. Alla dessa da
 
 ![Power BI-instrumentpanel](media/end-user-consumer/power-bi-consumer-examples.png)
  
-Det enda du behöver göra är att öppna Power BI-tjänsten i en webbläsare eller på en mobil enhet. Du och dina kollegor arbetar från samma betrodda instrumentpaneler och rapporter, som uppdateras automatiskt, så att du alltid arbetar med det senaste innehållet.   
+Det enda du behöver göra är att öppna Power BI-tjänsten i en webbläsare eller på en mobil enhet. Du och dina kollegor arbetar från samma betrodda instrumentpaneler och rapporter, som uppdateras automatiskt, vilket innebär att du alltid arbetar med det senaste innehållet.   
 
 ![Power BI-instrumentpanel](media/end-user-consumer/power-bi-funnel.png)
 
-Eftersom innehållet inte är statiskt kan du titta närmare på trender, insikter och annan företagsintelligens. Segmentera och blanda innehållet – du kan till och med ställa frågor till det med dina egna ord. Eller luta dig tillbaka och låt dina data upptäcka intressanta insikter åt dig; skicka aviseringar när data ändras och skicka rapporter via e-post till dig enligt ett schema som du själv anger. Det här gäller alla dina data, när som helst, i molnet eller lokalt och från valfri enhet. Det här är bara några exempel på allt som Power BI kan göra. 
+Eftersom innehållet inte är statiskt kan du studera trender, insikter och annan företagsinformation närmare. Segmentera och blanda innehållet – du kan till och med ställa frågor till det med dina egna ord. Eller luta dig tillbaka och låt dina data upptäcka intressanta insikter åt dig; skicka aviseringar när data ändras och skicka rapporter via e-post till dig enligt ett schema som du själv anger. Det här gäller alla dina data, när som helst, i molnet eller lokalt och från valfri enhet. Det här är bara några exempel på allt som Power BI kan göra. 
 
 ## <a name="am-i-a-power-bi-consumer"></a>Är jag en Power BI-*konsument*?
 
@@ -45,13 +45,13 @@ Som konsument har du inte tillgång till alla funktioner i Power BI, men du har 
 
 Du kommer säkerligen att höra termen ”Power BI Desktop” eller bara ”Desktop”, och det här är ett fristående verktyg som används av de *designers* som skapar och delar instrumentpaneler och rapporter med dig.  Det är viktigt att veta att det finns andra Power BI-verktyg, men som användare arbetar du bara med Power BI-tjänsten. 
 
-Eftersom du arbetar med *delat* innehåll behöver du en Power BI Pro- eller Premium-licens. [Vilken licens har jag?](end-user-license.md)
+Och eftersom du arbetar med *delat* innehåll behöver du en **kostnadsfri** standardlicens, som fungerar i en organisation som använder **Premium**-kapacitet. [Vilken licens har jag?](end-user-license.md)
 
 
 ## <a name="safely-interact-with-content"></a>Interagera på ett säkert sätt med innehåll 
 När du filtrerar, gör utsnitt och exporterar behöver du inte oroa dig – ditt arbete påverkar inte den underliggande datauppsättningen eller det ursprungliga delade innehållet (instrumentpaneler, rapporter och appar).  
 
-Du kan inte förstöra dina data.  Power BI är en bra plats för att utforska och experimentera, utan att du behöver oroa dig för att ”förstöra” något.  
+Du kan inte förstöra dina data.  Power BI är en bra plats där du kan utforska och experimentera, utan att du behöver oroa dig för att ”förstöra” något.  
  
 Det betyder inte att du inte kan spara dina ändringar – det kan du. Men de ändringarna påverkar bara din vy över innehållet. Och att återgå till den ursprungliga standardvyn är lika enkelt som att klicka på en knapp.  
 

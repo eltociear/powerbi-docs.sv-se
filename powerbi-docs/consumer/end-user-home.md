@@ -6,17 +6,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 01/28/2020
+ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: dd83388c00b2415c43355bb57c271b430a9abc53
-ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
+ms.openlocfilehash: 83c834b05846c22577b7987d341c295a1e763b59
+ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76888889"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79113298"
 ---
 # <a name="find-your-dashboards-reports-and-apps"></a>Leta upp dina instrumentpaneler, rapporter och appar
+
+[!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 I Power BI syftar termen *innehåll* på appar, instrumentpaneler och rapporter. Innehållet skapas av Power BI-*designers* som delar det med kollegor som du. Ditt innehåll är tillgängligt och kan visas i Power BI-tjänsten. Den bästa platsen att börja arbeta med Power BI är från Power BI **Hem**.
 
 ## <a name="explore-power-bi-home"></a>Utforska Power BI-start

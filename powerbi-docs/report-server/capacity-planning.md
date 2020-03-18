@@ -7,21 +7,21 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 3/5/2018
-ms.author: pashah
-ms.openlocfilehash: ad657da4e0a81c6b3b9845d9c130755334f5a97f
-ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
+ms.author: parshah
+ms.openlocfilehash: ecb4f9540651b52f28626f8baa88854ff133b9d0
+ms.sourcegitcommit: 743167a911991d19019fef16a6c582212f6a9229
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74565741"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78402001"
 ---
 # <a name="capacity-planning-guidance-for-power-bi-report-server"></a>Vägledning för kapacitetsplanering för Power BI-rapportserver
-Power BI Report Server är en rapporteringslösning som för företag och BI som kunderna kan använda och distribuera lokalt, bakom brandväggen. Den kombinerar stödet för interaktiva rapporter hos Power BI Desktop med den lokala serverplattformen för SQL Server Reporting Services. Med intensiv och växande användning av analys och rapportering i företag, kan det vara en utmaning att budgetera maskinvaruinfrastrukturen och de programvarulicenser som krävs för att skala upp till en företagsanvändarbas. Det här dokumentet ger vägledning om kapacitetsplanering för rapportservern för Power BI genom att dela resultatet av ett flertal belastningstestkörningar av olika arbetsbelastningar mot en rapportserver. Medan olika organisationers rapporter, frågor och användningsmönster varierar mycket, utgör de resultat som visas i det här dokumentet, tillsammans med faktiska tester och en detaljerad beskrivning av hur de utfördes, en referenspunkt för vem som helst i tidigt stadium av planeringsprocessen för att distribuera Power BI-rapportservern.
+Power BI Report Server är en rapporteringslösning som för företag och BI som kunderna kan använda och distribuera lokalt, bakom brandväggen. Den kombinerar stödet för interaktiva rapporter hos Power BI Desktop med den lokala serverplattformen för SQL Server Reporting Services. Med intensiv och växande användning av analys och rapportering i företag, kan det vara en utmaning att budgetera maskinvaruinfrastrukturen och de programvarulicenser som krävs för att skala upp till en företagsanvändarbas. Det här dokumentet ger vägledning om kapacitetsplanering för rapportservern för Power BI genom att dela resultatet av ett flertal belastningstestkörningar av olika arbetsbelastningar mot en rapportserver. Medan olika organisationers rapporter, frågor och användningsmönster varierar mycket, så utgör de resultat som visas i det här dokumentet, tillsammans med faktiska tester och en detaljerad beskrivning av hur de utfördes, en referenspunkt för vem som helst under det inledande stadiet av planeringsprocessens inför distributionen av Power BI-rapportservern.
 
 ## <a name="executive-summary"></a>Sammanfattning
 Vi körde två olika typer av arbetsbelastningar mot Power BI Report Server. Varje arbetsbelastning bestod av att återge olika typer av rapporter samt utföra olika åtgärder för webbportalen. 
 
-* I arbetsbelastningen ”Intensiv Power BI-rapport” var den vanligaste åtgärden (det vill säga åtgärden som utfördes 60 % av gångerna) återgivning av Power BI-rapporter.
+* I arbetsbelastningen ”Intensiv Power BI-rapport” var den vanligaste åtgärden (dvs den åtgärd som utfördes 60 % av gångerna) återgivning av Power BI-rapporter.
 * I arbetsbelastningen ”Intensiv sidnumrerad rapport” var den vanligaste åtgärden återgivning av sidnumrerade rapporter.
 
 Med en servertopologi med fyra servrar för Power BI-rapportservern och en förväntan att mer än 5 % av användarna använder en rapportserver vid något tillfälle, beskriver följande tabell det maximala antalet användare som Power BI-rapportservern kan hantera med minst 99 % tillförlitlighet. 
@@ -56,7 +56,7 @@ Testerna som används i testkörningarna för belastningen är offentligt tillg�
 * Tester som simulerar återgivningen av små och stora sidnumrerade rapporter och 
 * Tester som simulerar körning av olika typer av åtgärder för webbportalen. 
 
-Alla tester har skrivits för att utföra en åtgärd från slutpunkt till slutpunkt (till exempel rapportåtergivning, skapa en ny datakälla, med mera). Detta sker genom att göra en eller flera webbegäranden till rapportservern (via API: er). I verkligheten kan en användare behöver utföra några mellanliggande åtgärder för att slutföra en av dessa åtgärder för slutpunkt till slutpunkt. Till exempel, för att återge en rapport måste en användare gå till webbportalen, fortsätta till mappen där rapporten befinner sig och sedan klicka på rapporten för att visa den. Medan testerna inte utför alla nödvändiga åtgärder för att slutföra en aktivitet för slutpunkt till slutpunkt används större delen av den belastning som Power BI-rapportservern skulle uppleva. Du kan läsa mer om de olika rapporterna och åtgärderna som utförs genom att utforska GitHub-projektet.  
+Alla tester har skrivits för att utföra en åtgärd från slutpunkt till slutpunkt (till exempel rapportåtergivning, skapa en ny datakälla, med mera). Detta sker genom att göra en eller flera webbegäranden till rapportservern (via API: er). I verkligheten kan en användare behöver utföra några mellanliggande åtgärder för att slutföra en av dessa åtgärder för slutpunkt till slutpunkt. Till exempel, för att återge en rapport måste en användare gå till webbportalen, fortsätta till mappen där rapporten befinner sig och sedan klicka på rapporten för att visa den. Även om testerna inte utför alla de åtgärder som krävs för att slutföra en slutpunkt-till-slutpunkt-aktivitet, så används större delen av den belastning som Power BI-rapportservern skulle uppleva. Du kan läsa mer om de olika rapporterna och åtgärderna som utförs genom att utforska GitHub-projektet.  
 
 > [!NOTE]
 > Verktyget stöds inte officiellt av Microsoft, men produktteamet bidrar till projektet och besvarar problem som andra deltagare tar upp.
@@ -66,15 +66,15 @@ Det finns 2 arbetsbelastningsprofiler som används för testning: Intensiv Power
 
 | Aktivitet | Intensiv Power BI-rapport, förekomstfrekvens | Intensiv sidnumrerad rapport, förekomstfrekvens |
 | --- | --- | --- |
-| **Återgivning av Power BI-rapporter** |60 % |10 % |
+| **Återgivning av Power BI-rapporter** |60 % |10 % |
 | **Återgivning av sidnumrerade (RDL) rapporter** |30% |60 % |
-| **Återgivning av mobilrapporter** |5 % |20% |
-| **Web portalåtgärder** |5 % |10 % |
+| **Återgivning av mobilrapporter** |5 % |20% |
+| **Web portalåtgärder** |5 % |10 % |
 
 ### <a name="user-load"></a>Användarbelastning
 För varje testkörning utfördes testerna baserat på frekvensen som definieras i någon av de två arbetsbelastningarna. Testerna började med 20 samtidiga användarförfrågningar till rapportservern. Användarbelastningen ökades sedan gradvis tills tillförlitligheten hade sjunkit under målet på 99 %.
 
-## <a name="results"></a>Resultat
+## <a name="results"></a>Results
 ### <a name="concurrent-user-capacity"></a>Kapacitet för samtidiga användare
 Som tidigare nämnts började testerna med 20 samtidiga användare som skickade begäranden till rapportservern. Antalet samtidiga användare ökades sedan gradvis tills 1 % av alla begäranden misslyckades. Resultaten i följande tabell visar antalet samtidiga användarbegäranden som servern kan hantera vid maximal belastning med en lägre misslyckandegrad än 1 %.
 
@@ -143,4 +143,3 @@ Om du vill köra verktyget Reporting Services LoadTest mot din eller en Microsof
 5. När du är klar med att distribuera miljön följer du anvisningarna som visas på https://github.com/Microsoft/Reporting-Services-LoadTest#load-test-execution för att köra testerna.
 
 Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
-

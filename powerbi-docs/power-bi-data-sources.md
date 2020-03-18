@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/08/2020
+ms.date: 03/10/2020
 ms.author: kfollis
-ms.openlocfilehash: 261d800dac9b65747e648bc76944a0b8a5077b73
-ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
+ms.openlocfilehash: 1853e710958b5bed0dad011594d9e04ccc99842d
+ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77427103"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79041687"
 ---
 # <a name="power-bi-data-sources"></a>Power BI-datakällor
 
@@ -43,7 +43,7 @@ I följande tabell visas de datakällor som Power BI stöder för datauppsättni
 | Azure HDInsight (HDFS) | Ja | Ja | Nej | Nej | Nej |
 | Azure HDInsight Spark | Ja | Ja | Ja | Nej | Nej |
 | Azure SQL Database | Ja | Ja | Ja | Ja <sup>2</sup> | Nej |
-| Azure SQL Data Warehouse | Ja | Ja | Ja | Nej | Nej |
+| Azure SQL Data Warehouse | Ja | Ja | Ja | Ja <sup>2</sup> | Nej |
 | Azure Table Storage | Ja | Ja | Nej | Ja | Nej |
 | BI-anslutningsapp | Ja | Ja | Ja | Ja | Ja |
 | BI360 – Budgeting & Financial Reporting | Ja | Ja | Nej | Nej | Nej |
@@ -134,7 +134,7 @@ I följande tabell visas de datakällor som Power BI stöder för datauppsättni
 | Twilio | Ja | Ja | Nej | Nej | Nej |
 | tyGraph | Ja | Ja | Nej | Nej | Nej |
 | Vertica | Ja | Ja | Ja | Ja | Ja |
-| Webben | Ja | Ja | Nej | Ja | Ja |
+| Webben | Ja | Ja | Nej | Ja | Ja <sup>6</sup> |
 | Webtrends | Ja | Ja | Nej | Nej | Nej |
 | Workforce Dimensions | Ja | Ja | Nej | Ja | Nej |
 | XML | Ja | Ja | Nej | Ja | Nej <sup>4</sup> |
@@ -143,13 +143,15 @@ I följande tabell visas de datakällor som Power BI stöder för datauppsättni
 
 <sup>1</sup> Stöds med [ACE OLEDB-providern](https://www.microsoft.com/download/details.aspx?id=54920), installerad på samma dator som gatewayen.
 
-<sup>2</sup> Stöds med samma M-funktion som den lokala versionen.
+<sup>2</sup> Stöds med samma M-funktion som den lokala versionen, vilket orsakar begränsade autentiseringsalternativ (Gateway stöder inte OAuth).
 
 <sup>3</sup> Excel 1997–2003-filer (.xls) kräver [ACE OLEDB-providern](https://www.microsoft.com/download/details.aspx?id=54920).
 
 <sup>4</sup> Krävs för den lokala versionen av tekniken.
 
 <sup>5</sup> Stöds endast med [personlig gateway](service-gateway-personal-mode.md).
+
+<sup>6</sup> Krävs för .html-, .xls- och Access-databaser
 
 ## <a name="single-sign-on-sso-for-directquery-sources"></a>Enkel inloggning (SSO) för DirectQuery-källor
 

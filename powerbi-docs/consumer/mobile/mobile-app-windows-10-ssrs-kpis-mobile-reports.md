@@ -1,29 +1,28 @@
 ---
-title: Visa SSRS-mobila rapporter, KPI:er i Windows 10-mobilappen – Power BI
+title: Visa lokala rapporter och KPI:er i Power BI Windows-appen
 description: Power BI-mobilappen för Windows 10 erbjuder live, pekaktiverad mobil åtkomst till viktig lokal företagsinformation.
-author: mshenhav
-ms.reviewer: ''
+author: paulinbar
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/28/2018
-ms.author: mshenhav
-ms.openlocfilehash: 4666e7c0e4901a99867ea72ab404df4cbffe110b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 03/09/2020
+ms.author: painbar
+ms.openlocfilehash: 010513ec8ca908167bbc99255a6fd207ca0ccfba
+ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879357"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79040921"
 ---
-# <a name="view-reporting-services-ssrs-mobile-reports-and-kpis-in-the-windows-10-power-bi-mobile-app"></a>Visa Reporting Services (SSRS) mobila rapporter och KPI:er i Windows 10 Power BI-mobilappen
-Power BI-mobilappen för Windows 10 erbjuder live, pekaktiverad mobil åtkomst till din viktiga lokala företagsinformation i SQL Server 2016 Reporting Services. 
+# <a name="view-on-premises-reports-and-kpis-in-the-power-bi-windows-app"></a>Visa lokala rapporter och KPI:er i Power BI Windows-appen
+Power BI-appen för Windows 10 erbjuder pekaktiverad live-mobilåtkomst till din viktiga lokala företagsinformation i SQL Server 2016 Reporting Services. 
 
 ![Reporting Services-mobila rapporter](././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-ssrs-mobile-report.png)
 
 ## <a name="first-things-first"></a>Vi tar det i ordning
 [Skapa mobila rapporter i Reporting Services](https://msdn.microsoft.com/library/mt652547.aspx) med SQL Server 2016 Enterprise Edition Mobile Report Publisher och publicerar dem på [Reporting Services-webbportalen](https://msdn.microsoft.com/library/mt637133.aspx). Skapa KPI:er direkt i webbportalen. Sortera dem i mappar och markerar dina favoriter så att du enkelt kan hitta dem. 
 
-I Power BI-mobilappen för Windows 10, visar du sedan mobila rapporter och KPI:er, ordnade i mappar eller samlade som favoriter. 
+I Power BI-appen för Windows 10 visar du sedan KPS, mobila rapporter och Power BI-rapporter, ordnade i mappar eller samlade som favoriter. 
 
 > [!NOTE]
 > Din enhet måste köra Windows 10. Appen fungerar bäst på enheter med minst 1 GB RAM-minne och 8 GB intern lagring.
@@ -68,7 +67,7 @@ Bläddra exemplen för att interagera med KPI:er och mobila rapporter.
    > 
 
 ## <a name="view-reporting-services-kpis-and-mobile-reports-in-the-power-bi-app"></a>Visa Reporting Services KPI:er och mobila rapporter i Power BI-appen
-Reporting Services KPI:er och mobila rapporter visas i samma mappar som de finns i på Reporting Services-webbportalen.
+Reporting Services-KPI:er, mobila rapporter och Power BI-rapporter (förhandsversion) visas i motsvarande mappar till dem i vilka de finns i Reporting Services-webbportalen.
 
 ![Rapportmappar](./media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-ssrs-mobile-report-folders.png)
 
@@ -80,7 +79,7 @@ Reporting Services KPI:er och mobila rapporter visas i samma mappar som de finns
     ![Reporting Services-mobil rapport](././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-ssrs-mobile-report.png)
 
 ## <a name="view-your-favorite-kpis-and-reports"></a>Se dina favorit-KPI:er och rapporter
-Du kan markera KPI:er och mobila rapporter som favoriter i din Reporting Services-webbportal och sedan visa dem i en lämplig mapp på din Windows 10-enhet, tillsammans med dina Power BI-favoritinstrumentpaneler och rapporter.
+Du kan markera KPI:er, mobila rapporter och Power BI-rapporter som favoriter i din Reporting Services-webbportal och sedan visa dem i en lämplig mapp på din Windows 10-enhet, tillsammans med dina Power BI-favoritinstrumentpaneler och rapporter.
 
 * Tryck på **Favoriter**.
   
@@ -88,8 +87,6 @@ Du kan markera KPI:er och mobila rapporter som favoriter i din Reporting Service
   
    Dina favoriter från webbportalen finns på den här sidan.
   
-   ![Sidan favoriter](./media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-windows-10-ssrs-favorites.png)
-
 Läs mer om [favoriter i Power BI-mobilappar](mobile-apps-favorites.md).
 
 ## <a name="remove-a-connection-to-a-report-server"></a>Ta bort en anslutning till en rapportserver

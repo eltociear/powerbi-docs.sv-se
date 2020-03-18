@@ -7,24 +7,25 @@ featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/19/2019
+ms.date: 03/09/2020
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 48322b554a7b600bc5cadc7c40fe366c64cd8549
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: bb69d1ecc4e91912b947a2120607e1a0502d8162
+ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73852660"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79040514"
 ---
 # <a name="favorite-dashboards-reports-and-apps-in-the-power-bi-service"></a>Favoritmarkera instrumentpaneler, rapporter och appar i Power BI-tjänsten
+
+[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
+
 När du gör innehåll till en *favorit* kan du komma åt det snabbt från innehållslistan i **Favoriter** samt från **Power BI-start** > **Favoriter + vanliga**. Favoriter är vanligtvis innehåll som du besöker oftast och som identifieras med en gul stjärna.
 
    ![Favoriter-ikonen](./media/end-user-favorite/power-bi-favorite-nav.png)
 
    ![Ikonen Favoriter + vanliga](./media/end-user-favorite/power-bi-home.png)
-
-Du kan även välja en enskild instrumentpanel som en [aktuell instrumentpanel](end-user-featured.md) i Power BI-tjänsten.
 
 ## <a name="add-a-dashboard-or-report-as-a-favorite"></a>Lägg till en instrumentpanel eller en rapport som en favorit
 
@@ -67,7 +68,7 @@ Om du inte längre använder en rapport så ofta som du brukade kan du ta bort d
 2. Välj den gula stjärnan bredvid innehållet du vill ta bort som favorit.
 
 > [!NOTE]
-> Du kan även ta bort en instrumentpanel, rapport eller app som favorit. Du behöver bara öppna och avmarkera den gula ikonen. 
+> Du kan även ta bort en instrumentpanel, rapport eller app som favorit. Öppna och välj den gula stjärnan så att den blir vit igen. 
 > 
 > 
 ## <a name="limitations-and-considerations"></a>Begränsningar och överväganden

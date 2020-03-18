@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 01/29/2020
 ms.custom: seodec18
-ms.openlocfilehash: 48406a8c68237d182960b46de67f91dbd2717922
-ms.sourcegitcommit: 64a270362c60581a385af7fbc31394e3ebcaca41
+ms.openlocfilehash: 6844d09c04759f0cdb780b3c1805698f1b1b519f
+ms.sourcegitcommit: 743167a911991d19019fef16a6c582212f6a9229
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "76894670"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78401913"
 ---
 # <a name="power-bi-urls-for-whitelisting"></a>URL:er för Power BI för vitlistning
 
@@ -85,13 +85,13 @@ Power BI är beroende av vissa slutpunkter för att kunna stödja dina instrumen
 | 1 | **Krävs:** Excel-integration | Se Office 365-dokumentationen för [Office Online och vanliga URL:er](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) | Saknas |
 | | | |
 
-## <a name="custom-visuals"></a>Anpassade visuella objekt
+## <a name="power-bi-visuals"></a>Visuella objekt för Power BI
 
-Power BI är beroende av vissa slutpunkter för att kunna visa och få åtkomst till anpassade visuella objekt. Du måste kunna ansluta till slutpunkterna i tabellen och på de länkade webbplatserna nedan.
+Power BI är beroende av vissa slutpunkter för att kunna visa och få åtkomst till anpassade visuella Power BI-objekt. Du måste kunna ansluta till slutpunkterna i tabellen och på de länkade webbplatserna nedan.
 
 | Rad | Syfte | Mål | Portar |
 | --- | --- | --- | --- |
-| 1 | **Krävs:** Importera ett anpassat visuellt objekt från Microsoft Azure Marketplace-gränssnittet eller från en fil | *.azureedge.net <br> *.blob.core.windows.net <br> store.office.com | TCP 443 |
+| 1 | **Krävs:** Importera ett anpassat visuellt objekt från Microsoft Azure Marketplace-gränssnittet eller från en fil | *.azureedge.net <br> *.blob.core.windows.net <br> *.osi.office.net <br> *.msecnd.net <br> store.office.com <br> web.vortex.data.microsoft.com <br> store-images.s-microsoft.com | TCP 443 |
 | 2 | **Valfritt:** Bing-kartor | bing.com <br> platform.bing.com <br> *.virtualearth.net | TCP 443 |
 | 3 | **Valfritt:** PowerApps | Se [avsnittet om tjänster som krävs](https://docs.microsoft.com/powerapps/maker/canvas-apps/limits-and-config#required-services) på webbplatsen för PowerApps-systemkrav | Saknas |
 | 4 | **Valfritt:** Visio | Se Office 365-dokumentationen för [Office Online och vanliga URL:er](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) samt [SharePoint Online och OneDrive för företag](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#sharepoint-online-and-onedrive-for-business) | Saknas |

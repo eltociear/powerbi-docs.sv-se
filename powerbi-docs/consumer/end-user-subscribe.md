@@ -8,16 +8,18 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 01/30/2020
-rLocalizationGroup: Common tasks
-ms.openlocfilehash: 267a1e8b2f45198059e5acfcdf0233445babbd14
-ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
+ms.date: 03/09/2020
+LocalizationGroup: Common tasks
+ms.openlocfilehash: 869da47cd64e93a930fe6e92071345be093617a7
+ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76888641"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79114032"
 ---
 # <a name="subscribe-to-a-report-or-dashboard-in-the-power-bi-service"></a>Prenumerera på en rapport eller en instrumentpanel i Power BI-tjänsten 
+
+[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
@@ -63,7 +65,7 @@ Oavsett om du prenumererar på en instrumentpanel eller en rapport är processer
 
 3. Om allt ser bra ut väljer du **Spara och stäng**. Du får ett e-postmeddelande och en ögonblicksbild av instrumentpanelen eller rapporten enligt det schema som du anger. Alla prenumerationer med frekvensen **Efter datauppdatering** inställd skickar bara ett e-postmeddelande efter den första schemalagda uppdateringen på den dagen.
    
-   ![e-postmeddelande med ögonblicksbild av instrumentpanel](media/end-user-subscribe/power-bi-subscribe-email.png)
+   ![e-postmeddelande med ögonblicksbild av instrumentpanel](media/end-user-subscribe/power-bi-email.png)
    
     Att uppdatera rapportsidan uppdaterar inte datauppsättningen. Endast datauppsättningens ägare kan uppdatera en datauppsättning manuellt. Om du vill söka efter ägarnamnet på den eller de underliggande datamängderna väljer du listrutan på menyraden eller letar rätt på prenumerationens ursprungliga e-postmeddelande.
    
@@ -73,11 +75,12 @@ Oavsett om du prenumererar på en instrumentpanel eller en rapport är processer
 ## <a name="manage-your-subscriptions"></a>Hantera dina prenumerationer
 Endast du kan hantera de prenumerationer som du skapar. Välj **prenumerera** igen och välj **Hantera alla prenumerationer** längst ned i det nedre vänstra hörnet (se skärmbilder ovan). 
 
-![se alla prenumerationer i Min arbetsyta](./media/end-user-subscribe/power-bi-manage.png)
+![se alla prenumerationer i Min arbetsyta](./media/end-user-subscribe/power-bi-manage-subscriptions.png)
 
 En prenumeration går ut om Pro-licensen upphör att gälla, om instrumentpanelen eller rapporten tas bort av ägaren eller om det användarkonto som använts för att skapa prenumerationen raderas.
 
 ## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
+* Om du vill undvika att e-postprenumerationer skickas till din skräppostmapp lägger du till e-postalias för Power Platform (PowerPlat-noreply@microsoft.com) till dina kontakter. Om du använder Microsoft Outlook högerklickar du på aliaset och väljer **Lägg till i Outlook-kontakter**. 
 * Instrumentpaneler med fler än 25 fästa paneler, eller fyra fästa liverapportsidor, kanske inte återges till fullo i prenumerationsmeddelanden som skickas till användare via e-post. Vi rekommenderar att du kontaktar och ber instrumentpanelsdesignern att minska antalet fästa paneler till färre än 25 och fästa live-rapporter till färre än fyra så att e-postmeddelandet återges korrekt.  
 * För e-postprenumerationer på instrumentpaneler visas inte paneler som har säkerhet på radnivå (RLS) tillämpat.  För e-postprenumerationer på rapporter går det inte att skapa en prenumeration om datauppsättningen använder RLS.
 * Om länkarna i ditt e-postmeddelande (till innehållet) slutar fungera kan det bero på att innehållet har tagits bort. Under skärmbilden i e-postmeddelandet kan du se om du har prenumererat dig själv eller om någon annan prenumererade åt dig. Om någon annan gjorde det kan du be den kollegan att antingen avbryta e-postmeddelandena eller prenumerera på nytt åt dig.

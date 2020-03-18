@@ -6,30 +6,34 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 01/21/2020
+ms.date: 03/08/2020
 ms.author: painbar
-ms.openlocfilehash: fee89c65328b70e1f312b39fbad75d7148bd92f2
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: c7280b2b6bb34b070e7ced3785959d61c74cd165
+ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76542299"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79041291"
 ---
 # <a name="configure-report-interaction-settings"></a>Konfigurera inställningar för rapportinteraktion
 
 ## <a name="overview"></a>Översikt
 
-Power BI-mobilappen har ett antal konfigurerbara inställningar för ”interaktion” som gör att du kan styra hur du interagerar med dina data och definiera beteendet för vissa element i Power BI-mobilappen. För närvarande finns det inställningar för
-* [Enkeltryck eller dubbeltryck på visuella rapportobjekt](#single-tap)
-* [Dockad eller dynamisk rapportsidfot](#docked-report-footer-android-phones) (Android)
-* [Knappinitierad rapportuppdatering eller ”dra nedåt för att uppdatera”-åtgärden](#report-refresh-android-phones) (Android)
+Power BI-mobilappen har ett antal konfigurerbara inställningar för ”interaktion” som gör att du kan styra hur du interagerar med dina data och definiera beteendet för vissa element i Power BI-mobilappen. Tabellen nedan visar de interaktionsinställningar som för närvarande är tillgängliga och de enheter som har dem.
+
+|| Android-telefon | iPhone | Android-surfplatta  | iPad |
+|-|:-:|:-:|:-:|:-:|
+| [Enkeltryck eller dubbeltryck på visuella rapportobjekt](#single-tap) |✔|✔|||
+| [Flerval jämfört med enskild markering av datapunkter i visuella rapportobjekt](#multi-select) |✔|✔|✔|✔|
+| [Dockad eller dynamisk rapportsidfot](#docked-report-footer) |✔|✔|||
+| [Knappinitierad rapportuppdatering eller ”dra nedåt för att uppdatera”-åtgärden](#report-refresh) |✔||||
+|
 
 Om du vill gå till interaktionsinställningarna trycker du på din profilbild för att öppna [sidopanelen](./mobile-apps-home-page.md#header). Välj sedan **Inställningar**och leta reda på avsnittet **Interaktion**.
 
 ![Interaktionsinställningar](./media/mobile-app-interaction-settings/powerbi-mobile-app-interactions-section.png)
 
->[!NOTE]
->Interaktionsinställningar för uppdateringsknappen och för dockning av rapportsidfoten har för närvarande ingen inverkan på rapporter för rapportservern. Detta kommer att ändras med rapportserverversionen som släpps i januari 2020.
+Interaktionsinställningarna beskrivs i avsnitten nedan.
 
 ## <a name="interaction-settings"></a>Interaktionsinställningar
 
@@ -38,13 +42,24 @@ När du hämtar Power BI-mobilappen är den inställd på enkeltryck. Det inneb�
 
 Om du vill kan du inaktivera interaktion med enkeltryck. I så fall används interaktion med dubbeltryck. När interaktion med dubbeltryck används trycker du först på ett visuellt objekt för att välja det och sedan en gång till i det visuella objektet för att utföra önskad åtgärd.
 
-### <a name="docked-report-footer-android-phones"></a>Dockad rapportsidfot (Android-telefoner)
+### <a name="multi-select"></a>Flera markeringar
+
+Med flervalsalternativet kan du välja flera datapunkter på en rapportsida. När flervalsläget är aktiverat, läggs varje datapunkt som du trycker på till övriga valda datapunkter, varvid de kombinerade resultaten automatiskt markeras i alla visuella objekt på sidan. När flervalsläget är avstängt ersätter den nya markeringen den aktuella.
+
+Om du vill avmarkera en datapunkt trycker du på den igen.
+
+>[!NOTE]
+>Flervalsalternativet stöds inte i anpassade visuella objekt.
+>
+>Flervalsläget kommer att stödjas i nästa version av Power BI-rapportserver.
+
+### <a name="docked-report-footer"></a>Dockad rapportsidfot
 
 Inställningen för dockad rapportsidfot bestämmer om rapportsidfoten ska vara dockad (dvs. fäst och alltid synlig) längst ned i rapporten, eller döljas och visas på nytt beroende på dina åtgärder i rapporten, till exempel när du rullar.
 
 I Android-telefoner är inställningen för dockad rapportsidfot **På** som standard, vilket innebär att rapportsidfoten är dockat och alltid synlig längst ned i rapporten. Ändra inställningen till **Av** om du föredrar en dynamisk rapportsidfot som visas och försvinner, beroende på dina åtgärder i rapporten.
 
-### <a name="report-refresh-android-phones"></a>Rapportuppdatering (Android-telefoner)
+### <a name="report-refresh"></a>Rapportuppdatering
 
 Inställningen för rapportuppdatering definierar hur du initierar rapportuppdateringar. Du kan välja att antingen ha en uppdateringsknapp på alla rapportsidhuvuden eller använda ”dra nedåt för att uppdatera”-åtgärden (dra nedåt från den övre kanten till den nedre) på rapportsidan för att uppdatera rapporten. Figuren nedan visar de två alternativen. 
 

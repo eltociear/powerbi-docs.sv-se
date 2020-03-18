@@ -1,19 +1,19 @@
 ---
 title: Visa Power BI-rapporter som är optimerade för din telefon
 description: Läs mer om att interagera med rapportsidor som har optimerats för visning i Power BI-appar.
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 04/22/2019
-ms.author: mshenhav
-ms.openlocfilehash: f8dba41a15390e4b52227c7daaa603daf7c08939
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 03/11/2020
+ms.author: painbar
+ms.openlocfilehash: 1db56c2844d217bf6bff633609893e5a97a6dae5
+ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870513"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79114875"
 ---
 # <a name="view-power-bi-reports-optimized-for-your-phone"></a>Visa Power BI-rapporter som är optimerade för din telefon
 
