@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/07/2019
 ms.author: davidi
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 538c533a1b951fd2dff1b481adb94e2b1d0cf87b
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.openlocfilehash: 955a14b37d59f554fb12b302c16472387c896e54
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79213613"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488601"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-using-azure-active-directory-b2b"></a>Distribuera Power BI innehåll till externa gäst användare med hjälp av Azure Active Directory B2B
 
@@ -336,7 +336,7 @@ Det är viktigt att känna till att Azure AD-kontot kommer att användas eller s
 Contoso kan välja en av tre metoder för att licensiera gäst användare från sina leverantörer och partner organisationer för att få åtkomst till Power BI innehåll.
 
 > [!NOTE]
-> _Den kostnads fria nivån av Azure AD B2B's räcker för att använda Power BI med Azure AD B2B. Vissa avancerade Azure AD B2B-funktioner som dynamiska grupper kräver ytterligare licensiering. Mer information finns i Azure AD B2B-dokumentationen:_ [ _https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance_](https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance)
+> _Den kostnads fria nivån av Azure AD B2B's räcker för att använda Power BI med Azure AD B2B. Vissa avancerade Azure AD B2B-funktioner som dynamiska grupper kräver ytterligare licensiering. Mer information finns i Azure AD B2B-dokumentationen:_ [ _https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance_ ](https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance)
 
 ### <a name="approach-1-contoso-uses-power-bi-premium"></a>Metod 1: Contoso använder Power BI Premium
 
@@ -576,7 +576,7 @@ Orsaker till att du inte väljer det här alternativet:
 
 ### <a name="alternative-option-2-create-a-custom-power-bi-embedded-application-using-custom-authentication"></a>Alternativt alternativ 2: skapa ett anpassat Power BI Embedded program med anpassad autentisering
 
-Ett annat alternativ för contoso är att bygga ett eget anpassat inbäddat Power BI program med anpassad autentisering ([appen äger data](https://docs.microsoft.com/power-bi/developer/embed-sample-for-customers)). Även om många organisationer inte har tid eller resurser för att skapa ett anpassat program för att distribuera Power BI innehåll till sina externa partners, är det av vissa organisationer det bästa sättet att använda och förtjänar allvarliga överväganden.
+Ett annat alternativ för contoso är att bygga ett eget anpassat inbäddat Power BI program med anpassad autentisering ([appen äger data](https://docs.microsoft.com/power-bi/developer/embedded/embed-sample-for-customers)). Även om många organisationer inte har tid eller resurser för att skapa ett anpassat program för att distribuera Power BI innehåll till sina externa partners, är det av vissa organisationer det bästa sättet att använda och förtjänar allvarliga överväganden.
 
 Organisationer har ofta befintliga partner portaler som centraliserar åtkomsten till alla organisations resurser för partner, ger isolering från interna organisations resurser och ger effektiva erfarenheter för partner som stöder många partner och deras enskilda användare.
 
