@@ -7,14 +7,14 @@ ms.reviewer: rkarlin
 manager: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/18/2019
-ms.openlocfilehash: 6854dad244636854cc8b77ddf1ffc15342281771
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: a631e6f5baf7942b81ce22a238d80f4aea40d022
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76818903"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79379725"
 ---
 # <a name="add-interactivity-into-visual-by-power-bi-visuals-selections"></a>Lägga till interaktivitet i visuella objekt med Power BI-markeringar
 
@@ -179,11 +179,11 @@ När användaren väljer `Import Car` i `Type` (väljer data i serier), bör de 
 | Nissan | **Importerad bil** | 5485 |
 | Toyota | **Importerad bil** | 20799 |
 
-![Det visuella objektet med markeringar av kategorier och serier](media/visual-selections-sample.png)
+![Det visuella objektet med markeringar av kategorier och serier](media/selection-api/visual-selections-sample.png)
 
 De visuella datakorgarna måste fyllas i.
 
-![Datakorgar i det visuella objektet med markeringar](media/visual-selections-databuckets.png)
+![Datakorgar i det visuella objektet med markeringar](media/selection-api/visual-selections-databuckets.png)
 
 Det finns `Manufacturer` som kategori (kolumner), `Type` som serier (rader) och `Value` som `Values` för serier.
 

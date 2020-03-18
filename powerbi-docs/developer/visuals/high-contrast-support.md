@@ -6,14 +6,14 @@ ms.author: kesharab
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/18/2019
-ms.openlocfilehash: 021040706ff34f43c6a7772849f2e27181041bc9
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 56ebfeb8c1c52b83f5be0ca9e9db6f312986dd57
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880054"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79380181"
 ---
 # <a name="high-contrast-mode-support-in-power-bi-visuals"></a>Stöd för högkontrastläge i visuella Power BI-objekt
 
@@ -82,9 +82,9 @@ Inbyggda visuella Power BI-objekt följer dessa riktlinjer:
 
 I följande exempelstapeldiagram ritas till exempel alla staplar med förgrundskontur och bakgrundsfyllning som är två bildpunkter tjocka. Jämför hur det ser ut med standardfärger och med några högkontrastteman:
 
-![Exempelstapeldiagram med standardfärger](./media/hc-samplebarchart-standard.png)
-![Exempelstapeldiagram med färgtemat *Mörk #2*](./media/hc-samplebarchart-dark2.png)
-![Exempelstapeldiagram med färgtemat *Vitt*](./media/hc-samplebarchart-white.png)
+![Exempelstapeldiagram med standardfärger](media/high-contrast-support/hc-samplebarchart-standard.png)
+![Exempelstapeldiagram med färgtemat *Mörk #2*](media/high-contrast-support/hc-samplebarchart-dark2.png)
+![Exempelstapeldiagram med färgtemat *Vitt*](media/high-contrast-support/hc-samplebarchart-white.png)
 
 I nästa avsnitt visas ett ställe i funktionen `visualTransform` som ändrades för att stödja högkontrast. Det anropas som en del av renderingen under uppdateringen.
 

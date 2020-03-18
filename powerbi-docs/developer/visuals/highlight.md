@@ -6,28 +6,28 @@ ms.author: kesharab
 ms.reviewer: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 10/31/2019
-ms.openlocfilehash: 0c1263760157371f9f4d9fc0f122d6e37d73d720
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: d406396db64b52326bbd8ea2aa485cd3d7451294
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76819179"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79380079"
 ---
 # <a name="highlight-data-points-in-power-bi-visuals"></a>Markera datapunkter i visuella Power BI-objekt
 
 När ett element väljs filtreras matrisen `values` i `dataView`-objektet som standard till endast de valda värdena. Det gör att alla andra visuella objekt på sidan endast visar valda data.
 
-![standardbeteende för markering för ”datavy”](./media/highlight-dataview.png)
+![standardbeteende för markering för ”datavy”](media/highlight/highlight-dataview.png)
 
 Om du anger egenskapen `supportsHighlight` i din `capabilities.json` till `true` får du den fullständiga ofiltrerade `values`-matris tillsammans med en `highlights`-matris. Matrisen `highlights` får samma längd som värdematrisen, och alla ej valda värden anges till `null`. Med den här egenskapen aktiverad ansvarar det visuella ansvaret för att markera lämpliga data genom att jämföra matrisen `values` med matrisen `highlights`.
 
-![datavyn har stöd för markering](./media/highlight-dataview-supports.png)
+![datavyn har stöd för markering](media/highlight/highlight-dataview-supports.png)
 
 Du ser att en stapel är markerad i exemplet. Och det är det enda värdet i markeringsmatrisen. Observera även att det kan finnas flera markeringar och delvis markering. De markerade värdena visas i datavyn.
 
-> [!Note]
+> [!NOTE]
 > Det finns inte stöd för markeringsfunktionen vid mappning av tabelldatavyer.
 
 ## <a name="highlight-data-points-with-categorical-data-view-mapping"></a>Markera datapunkter med kategorimappning i datavyn
@@ -187,7 +187,7 @@ public update(options: VisualUpdateOptions) {
 
 Där `categoryValues` är en array med kategorivärden, `measureValues` är en array med måttvärden och `measureHighlights` är de markerade delarna av måtten.
 
-> [!Note]
+> [!NOTE]
 > Värdena för egenskapen `measureHighlights` kan vara mindre än värdena för egenskapen `categoryValues`.
 > Det innebär det att värdet är delvis markerat.
 
@@ -271,7 +271,7 @@ div.value {
 
 Det visuella objektet bör se ut så här i resultatet.
 
-![Visuella objekt med kategorimappning i datavyn och markering](./media/dev-categorical-visual-highlight-demo.gif)
+![Visuella objekt med kategorimappning i datavyn och markering](media/highlight/dev-categorical-visual-highlight-demo.gif)
 
 ## <a name="highlight-data-points-with-matrix-data-view-mapping"></a>Markering av datapunkter med matrismappning i datavyn
 
@@ -582,7 +582,7 @@ JSON.stringify(options.dataViews[0].matrix.rows.root.children[0].children[0].chi
 
 Där egenskapen `value` representerar nodens värde utan att använda något urval från ett annat visuellt objekt och egenskapen highlight anger vilken del av data som markerats.
 
-> [!Note]
+> [!NOTE]
 > Värdet för egenskapen `highlight` kan vara mindre än värdet för egenskapen `value`.
 > Det innebär det att värdet är delvis markerat.
 
@@ -643,7 +643,7 @@ public update(options: VisualUpdateOptions) {
 
 Resultatet blir att det visuella objektet visas med knappar och värdena `highlighted value/default value`
 
-![Det visuella objektet med matrismappning i datavyn och markering](./media/dev-matrix-visual-highlight-demo.gif)
+![Det visuella objektet med matrismappning i datavyn och markering](media/highlight/dev-matrix-visual-highlight-demo.gif)
 
 ## <a name="next-steps"></a>Nästa steg
 

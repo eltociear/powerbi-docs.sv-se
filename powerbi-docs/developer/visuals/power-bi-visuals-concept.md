@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: bb0834527ba23c6cfcc155cc65cd0318b296ba84
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 96f1fd217a59ee95aed05b790800024dc9f72be9
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "75925594"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79378163"
 ---
 # <a name="visuals-in-power-bi"></a>Visuella objekt i Power BI
 
@@ -22,7 +22,7 @@ I artikeln beskrivs hur visuella objekt integreras med Power BI och hur en anvä
 
 Följande bild visar hur vanliga visuellt baserade åtgärder som en användare vidtar, t.ex. att välja ett bokmärke, bearbetas i Power BI.
 
-![Åtgärdsdiagram för visuella Power BI-objekt](./media/visual-concept.svg)
+![Åtgärdsdiagram för visuella Power BI-objekt](media/power-bi-visuals-concept/visual-concept.svg)
 
 ## <a name="visuals-get-updates-from-power-bi"></a>Visuella objekt hämtar uppdateringar från Power BI
 
@@ -131,4 +131,4 @@ Uppdateringar utlöses när det visuella objektet anropar `update`-metoden.
 Är du intresserad av att skapa visualiseringar och lägga till dem i Microsoft AppSource? Läs följande artiklar:
 
 * [Utveckla ett visuellt Power BI-objekt](./custom-visual-develop-tutorial.md)
-* [Publicera visuella Power BI-objekt på Partnercenter](../office-store.md)
+* [Publicera visuella Power BI-objekt på Partnercenter](office-store.md)

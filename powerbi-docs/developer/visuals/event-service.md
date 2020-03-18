@@ -6,14 +6,14 @@ ms.author: kesharab
 ms.reviewer: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 06/18/2019
-ms.openlocfilehash: 873968a89a230171d8fecba81a7d528767ee7077
-ms.sourcegitcommit: 0cc594ebb78a6d0e88784673ed09f8aefd10c7a7
+ms.openlocfilehash: c54aaa92f3463ce1102866c8d3b69532c8b25cf7
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76819156"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79380259"
 ---
 # <a name="render-events-in-power-bi-visuals"></a>Rendera händelser i visuella Power BI-objekt
 
@@ -113,4 +113,4 @@ Om det visuella objektet har animeringar eller asynkrona funktioner för renderi
 
 ## <a name="rendering-events-for-visual-certification"></a>Återgivningshändelser för certifiering av visuellt objekt
 
-Ett krav för certifiering av visuella objekt är det visuella objektets stöd för renderingshändelser. Mer information finns i [certifieringskrav](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements).
+Ett krav för certifiering av visuella objekt är det visuella objektets stöd för renderingshändelser. Mer information finns i [certifieringskrav](power-bi-custom-visuals-certified.md#certification-requirements).

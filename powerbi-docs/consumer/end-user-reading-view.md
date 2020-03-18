@@ -10,16 +10,19 @@ ms.service: powerbi
 ms.topic: quickstart
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 08/30/2019
+ms.date: 03/11/2020
 ms.author: mihart
-ms.openlocfilehash: 09b9bf10c3328ecc4eb9ca9d16460b1bcfab0da5
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: eeffb4c0fb7db57eacf18818275716db42679f6e
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73862671"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79206043"
 ---
 # <a name="quickstart-learn-about-the-power-bi-capabilities-for-consumers"></a>Snabbstart: Lär dig mer om Power BI-funktioner för *användare*
+
+[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
+
 I den här snabbstarten lär du dig att interagera med Power BI för att identifiera databaserade affärsinsikter. Det här är ingen djupgående artikel utan snarare en snabb titt på många av de åtgärder som är tillgängliga för **Power BI-användare**.
 
 Om du inte har registrerat dig för Power BI [registrerar du dig för en kostnadsfri utvärderingsversion](https://app.powerbi.com/signupredirect?pbi_source=web) innan du börjar.
@@ -34,7 +37,7 @@ Läsvyn i Power BI-tjänsten är tillgänglig för *rapportanvändare*. När en 
 
 Det enda du behöver göra är att öppna Power BI-tjänsten i en webbläsare eller på en mobil enhet. Du och dina kollegor arbetar från samma betrodda appar, instrumentpaneler och rapporter. De uppdateras automatiskt, så att ni alltid arbetar med det senaste innehållet.   
 
-Eftersom innehållet inte är statiskt kan du titta närmare på trender, insikter och annan företagsintelligens. Segmentera och blanda innehållet – du kan till och med ställa frågor till det med dina egna ord. Eller luta dig tillbaka och låt dina data upptäcka intressanta insikter åt dig; skicka aviseringar när data ändras och skicka rapporter via e-post till dig enligt ett schema som du själv anger. Det här gäller alla dina data, när som helst, i molnet eller lokalt och från valfri enhet. 
+Eftersom innehållet inte är statiskt kan du studera trender, insikter och annan företagsinformation närmare. Segmentera och blanda innehållet – du kan till och med ställa frågor till det med dina egna ord. Eller luta dig tillbaka och låt dina data upptäcka intressanta insikter åt dig; skicka aviseringar när data ändras och skicka rapporter via e-post till dig enligt ett schema som du själv anger. Det här gäller alla dina data, när som helst, i molnet eller lokalt och från valfri enhet. 
 
 Läs vidare om du vill lära dig mer om dessa funktioner och annat.
 
@@ -186,7 +189,7 @@ Utöver att visa de data som används för att skapa ett visuellt objekt kan du 
 
 ![data som exporterats till Excel](./media/end-user-reading-view/power-bi-export-powerpoint.png)
 
-<!-- Exporting isn’t limited to individual visuals; you can export entire reports to PowerPoint or PDF to share with your colleagues.
+<!-- Exporting isn't limited to individual visuals; you can export entire reports to PowerPoint or PDF to share with your colleagues.
 
 ![data exported to PowerPoint](./media/end-user-reading-view/power-bi-export-powerpoint.png) -->
 
