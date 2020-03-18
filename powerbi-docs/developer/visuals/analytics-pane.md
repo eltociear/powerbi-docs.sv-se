@@ -9,19 +9,19 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 06/18/2019
-ms.openlocfilehash: c5530767d37e9c9dfaf5270037d873fc4d1a58ec
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 43fcc0873006cfd42c97a287c7bff66f5995bfef
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880276"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79380969"
 ---
 # <a name="the-analytics-pane-in-power-bi-visuals"></a>Fönstret Analys i visuella Power BI-objekt
 
 Fönstret **Analys** introducerades för [inbyggda visuella objekt](https://docs.microsoft.com/power-bi/desktop-analytics-pane) i november 2018.
 I den här artikeln diskuteras hur visuella Power BI-objekt med API-version 2.5.0 kan visa och hantera sina egenskaper i fönstret **Analys**.
 
-![Fönstret Analys](./media/visualization-pane-analytics-tab.png)
+![Fönstret Analys](media/analytics-pane/visualization-pane-analytics-tab.png)
 
 ## <a name="manage-the-analytics-pane"></a>Hantera fönstret Analys
 

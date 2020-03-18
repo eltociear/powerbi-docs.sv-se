@@ -9,16 +9,16 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 02/14/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: ae05fdcd3a38f10707e991524bac61a305b88794
-ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
+ms.openlocfilehash: de988442edf4c60841bac757bb67ea5ed5038b25
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77427724"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79207975"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Konfigurera arbetsbelastningar i en Premium-kapacitet
 
-I den här artikeln beskrivs aktivering och konfigurering av arbetsbelastningar för Power BI Premium-kapaciteter. Som standard stöder kapaciteterna endast arbetsbelastningen som är associerad med att köra Power BI-frågor. Du kan också aktivera och konfigurera ytterligare arbetsbelastningar för **[AI (Cognitive Services)](service-cognitive-services.md)** , **[Dataflöden](service-dataflows-overview.md#dataflow-capabilities-on-power-bi-premium)** och **[Sidnumrerade rapporter](paginated-reports-save-to-power-bi-service.md)** .
+I den här artikeln beskrivs aktivering och konfigurering av arbetsbelastningar för Power BI Premium-kapaciteter. Som standard stöder kapaciteterna endast arbetsbelastningen som är associerad med att köra Power BI-frågor. Du kan också aktivera och konfigurera ytterligare arbetsbelastningar för **[AI (Cognitive Services)](service-cognitive-services.md)** , **[Dataflöden](service-dataflows-overview.md#dataflow-capabilities-on-power-bi-premium)** och **[Sidnumrerade rapporter](paginated-reports/paginated-reports-save-to-power-bi-service.md)** .
 
 ## <a name="default-memory-settings"></a>Standardinställningar för minne
 
@@ -67,7 +67,7 @@ Som standard är datamängdernas arbetsbelastning aktiverad och kan inte inaktiv
 | **Maximalt antal mellanliggande raduppsättningar** | Det maximala antalet mellanliggande rader som returneras av DirectQuery. Standardvärdet är 1 000 000 och det tillåtna intervallet är mellan 100 000 och 2 147 483 647. |
 | **Maximal storlek för offlinedatamängd (GB)** | Maximal storlek för offlinedatamängden i minnet. Detta är den komprimerade storleken på disken. Standardvärdet anges av SKU:n och det tillåtna intervallet är 0,1–10 GB. |
 | **Maximalt antal resultatraduppsättningar** | Det maximala antalet rader som returneras i en DAX-fråga. Standardvärdet är -1 (ingen gräns) och det tillåtna intervallet är mellan 100 000 och 2 147 483 647. |
-| **Minnesgräns för frågor (%)** | Den maximala procentandel tillgängligt minne i arbetsbelastningen som kan användas för att köra en MDX- eller DAX-fråga. |
+| **Minnesgräns för frågor (%)** | Den maximala procentandel tillgängligt minne i arbetsbelastningen som kan användas för att köra en MDX- eller DAX-fråga. Standardvärdet är 0, vilket resulterar i att en automatisk SKU-specifik minnesgräns för frågor används. |
 | **Tidsgräns för frågor (sekunder)** | Maximal tid innan tidsgränsen för frågan uppnås. Standardvärdet är 3 600 sekunder (en timme). Värdet 0 anger att frågorna inte har någon tidsgräns. |
 | **Automatisk siduppdatering (förhandsversion)** | På/av växlar funktionen för automatisk siduppdatering i Premium-arbetsytor. |
 | **Minsta uppdateringsintervall** | Om automatisk siduppdatering är aktiverat, är detta det minsta intervall som tillåts för siduppdatering. Standardvärdet är fem minuter och det lägsta tillåtna värdet är en sekund. |
@@ -102,6 +102,14 @@ Använd inställningen för att styra påverkan från resursintensiva eller bris
 Den här inställningen gäller för alla DAX-och MDX-frågor som körs av såväl Power BI-rapporter och Analysera i Excel-rapporter som av andra verktyg som kan ansluta via XMLA-slutpunkten.
 
 Observera att datauppdateringsåtgärder också kan också köra DAX-frågor som en del av uppdateringen av instrumentpaneler och visuella cacheminnen efter det att datamängdens data har uppdaterats. Det finns även en risk att sådana frågor kan misslyckas pga den här inställningen, och det kan leda till att datauppdateringsåtgärden visas med tillståndet misslyckad, även om datamängdens data har uppdaterats.
+
+Standardinställningen är 0, vilket resulterar i att följande automatiska SKU-specifika minnesgräns för frågor används.
+
+|                              | EM1/A1 | EM2/A2 | EM3/A3 | P1/A4 | P2/A5 | P3/A6 |   
+|------------------------------|----------|----------|----------|---------|---------|---------|
+| Automatisk minnesgräns för frågor | 1 GB     | 2 GB     | 2 GB     | 6 GB    | 6 GB    | 10 GB   |
+|                              |          |          |          |         |         |         |
+
 
 #### <a name="query-timeout"></a>Tidsgräns för frågor
 
@@ -200,7 +208,7 @@ Arbetsbelastningar kan aktiveras och tilldelas till en kapacitet med hjälp av [
 
 [Optimera Power BI Premium-kapaciteter](service-premium-capacity-optimize.md)     
 [Dataförberedelser med självbetjäning i Power BI med dataflöden](service-dataflows-overview.md)   
-[Vad är sidnumrerade rapporter i Power BI Premium?](paginated-reports-report-builder-power-bi.md)   
+[Vad är sidnumrerade rapporter i Power BI Premium?](paginated-reports/paginated-reports-report-builder-power-bi.md)   
 [Automatisk siduppdatering i Power BI Desktop (förhandsversion)](desktop-automatic-page-refresh.md)
 
 Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

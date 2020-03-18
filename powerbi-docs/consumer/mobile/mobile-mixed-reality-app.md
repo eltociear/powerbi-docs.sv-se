@@ -1,19 +1,19 @@
 ---
 title: Appen Power BI för Mixed Reality (förhandsversion)
 description: Visa dina instrumentpaneler och rapporter i appen Power BI for Mixed Reality (förhandsversion), antingen i en virtuell värld eller i din miljö.
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/05/2018
-ms.author: mshenhav
-ms.openlocfilehash: 04a77aa9a5a464baf0ce1c9a88604d84ad0feb53
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 03/11/2020
+ms.author: painbar
+ms.openlocfilehash: 99e9c407a92d126ddc4c6f4822106cfa6458dbac
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879129"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79205928"
 ---
 # <a name="power-bi-for-mixed-reality-app-preview"></a>Appen Power BI för Mixed Reality (förhandsversion)
 Visa dina instrumentpaneler och rapporter i appen Power BI for Mixed Reality (förhandsversion) i en virtuell värld, eller placera dem på specifika platser i din miljö. 

@@ -8,22 +8,22 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.date: 05/29/2019
-ms.openlocfilehash: 4b1c890a69863f3e05dee052efe9529b174f0874
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.openlocfilehash: 7e74b01a6b12302393a3e4bc40b2e9cccfc13d63
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79079127"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488279"
 ---
 # <a name="step-2-get-an-authentication-access-token"></a>Steg 2: Hämta en autentiseringsåtkomsttoken
 
 Den här artikeln är det andra steget i serien [Push-överföra data till en Power BI-datamängd](walkthrough-push-data.md).
 
-I steg 1 [registrerade du en klientapp i Azure AD](../register-app.md). I det här steget, hämtar du en åtkomsttoken för autentisering. Power BI-appar är integrerade i Azure Active Directory så att appen ska få säker inloggning och auktorisering. Appen använder en token för autentisering med Azure AD och för att få åtkomst till Power BI-resurser.
+I steg 1 [registrerade du en klientapp i Azure AD](../embedded/register-app.md). I det här steget, hämtar du en åtkomsttoken för autentisering. Power BI-appar är integrerade i Azure Active Directory så att appen ska få säker inloggning och auktorisering. Appen använder en token för autentisering med Azure AD och för att få åtkomst till Power BI-resurser.
 
 ## <a name="get-an-authentication-access-token"></a>Hämta en autentiseringsåtkomsttoken
 
-Innan du börjar ska du kontrollera att du har utfört [föregående steg](../register-app.md) i serien [Push-överföra data till en Power BI-datamängd](walkthrough-push-data.md). 
+Innan du börjar ska du kontrollera att du har utfört [föregående steg](../embedded/register-app.md) i serien [Push-överföra data till en Power BI-datamängd](walkthrough-push-data.md). 
 
 För den här proceduren behöver du Visual Studio 2015 eller senare.
 
@@ -39,7 +39,7 @@ För den här proceduren behöver du Visual Studio 2015 eller senare.
 
 3. Lägg till exempelkoden nedan i Program.cs.
 
-4. Ersätt ”{ClientID}” med det **klient-ID** du fick i den [föregående artikeln](../register-app.md) när du registrerade appen.
+4. Ersätt ”{ClientID}” med det **klient-ID** du fick i den [föregående artikeln](../embedded/register-app.md) när du registrerade appen.
 
 5. Kör konsolappen och logga in på ditt Power BI-konto. 
 

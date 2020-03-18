@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 06/18/2019
-ms.openlocfilehash: 590f11f23a04a698459cc4db99efe5308ccc0ce3
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 996e409e634292ca0767f34c49931cfbcdcd4b94
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879969"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79379583"
 ---
 # <a name="tutorial-add-unit-tests-for-power-bi-visual-projects"></a>Självstudie: Lägga till enhetstester för projekt med visuella Power BI-objekt
 
@@ -381,7 +381,7 @@ npm run test
 
 `karma.js` kör testfallet i webbläsaren Chrome.
 
-![Karma JavaScript som öppnats i Chrome](./media/karmajs-chrome.png)
+![Karma JavaScript som öppnats i Chrome](media/unit-tests-introduction/karmajs-chrome.png)
 
 > [!NOTE]
 > Du måste installera Google Chrome lokalt.
@@ -453,7 +453,7 @@ Klassen `SampleBarChartDataBuilder` utökar `TestDataViewBuilder` och implemente
 
 När du lagrar data i datafältsbuckets skapar Power BI ett kategoriskt `dataview`-objekt som baseras på dina data.
 
-![Datafältsbuckets](./media/fields-buckets.png)
+![Datafältsbuckets](media/unit-tests-introduction/fields-buckets.png)
 
 I enhetstester har du inte Power BI-kärnfunktioner för att reproducera data. Men du behöver mappa dina statiska data till den kategoriska `dataview`. Klassen `TestDataViewBuilder` kan hjälpa dig att mappa dem.
 
@@ -596,23 +596,23 @@ Lines        : 52.83% ( 112/212 )
 
 Ditt visuella objekt öppnas i webbläsaren Chrome så här:
 
-![UT startar i Chrome](./media/karmajs-chrome-ut-runned.png)
+![UT startar i Chrome](media/unit-tests-introduction/karmajs-chrome-ut-runned.png)
 
 Sammanfattningen visar att täckningen har ökat. Öppna `coverage\index.html` för att ta reda på mer om aktuell kodtäckning.
 
-![UT-täckningsindex](./media/code-coverage-index.png)
+![UT-täckningsindex](media/unit-tests-introduction/code-coverage-index.png)
 
 Eller titta på omfånget för mappen `src`:
 
-![Täckning för mappen src](./media/code-coverage-src-folder.png)
+![Täckning för mappen src](media/unit-tests-introduction/code-coverage-src-folder.png)
 
 I omfånget för filen kan du titta på källkoden. `Coverage`-verktygen skulle markera raden i rött om viss kod inte körs under enhetstesterna.
 
-![Kodtäckning för filen visual.ts](./media/code-coverage-visual-src.png)
+![Kodtäckning för filen visual.ts](media/unit-tests-introduction/code-coverage-visual-src.png)
 
 > [!IMPORTANT]
 > Kodtäckning innebär inte att du har god funktionstäckning för det visuella objektet. Ett enkelt enhetstest ger över 96 procents täckning i `src\visual.ts`.
 
 ## <a name="next-steps"></a>Nästa steg
 
-När ditt visuella objekt är redo kan du skicka det till publicering. Mer information finns i [Publicera visuella Power BI-objekt till AppSource](../office-store.md).
+När ditt visuella objekt är redo kan du skicka det till publicering. Mer information finns i [Publicera visuella Power BI-objekt till AppSource](office-store.md).

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: b50ebde94d78ca42437979d792fb6402affe8855
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 571d4a2992a5017114cf94c3f49296769062d8ee
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "74696675"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79380866"
 ---
 # <a name="understand-data-view-mapping-in-power-bi-visuals"></a>Förstå datavymappning i visuella Power BI-objekt
 
@@ -185,7 +185,7 @@ export class Visual implements IVisual {
 
 Resultatet blir att det visuella objektet visar ett enda värde från Power BI:
 
-![Visuellt exempel på mappning av en enda datavy](./media/visual-simple-dataview-mapping.png)
+![Visuellt exempel på mappning av en enda datavy](media/dataview-mappings/visual-simple-dataview-mapping.png)
 
 ## <a name="categorical-data-mapping"></a>Kategorisk datamappning
 
@@ -493,7 +493,7 @@ export class Visual implements IVisual {
 
 Det visuella resultatet:
 
-![Det visuella objektet med kategorimappning i datavyn](./media/categorical-data-view-mapping-visual.png)
+![Det visuella objektet med kategorimappning i datavyn](media/dataview-mappings/categorical-data-view-mapping-visual.png)
 
 ## <a name="table-data-mapping"></a>Tabelldatamappning
 
@@ -508,7 +508,7 @@ Med de aktuella funktionerna:
     {
         "displayName": "Column",
         "name": "column",
-        "kind": "Measure"
+        "kind": "Grouping"
     },
     {
         "displayName": "Value",
@@ -557,7 +557,7 @@ Dataexempel:
 
 Databindning:
 
-![Databindning för mappning av tabelldata](./media/table-dataview-mapping-data.png)
+![Databindning för mappning av tabelldata](media/dataview-mappings/table-dataview-mapping-data.png)
 
 Power BI visar dina data som tabelldatavyn. Du bör inte anta att data är ordnade.
 
@@ -603,7 +603,7 @@ Power BI visar dina data som tabelldatavyn. Du bör inte anta att data är ordna
 
 Du kan aggregera data genom att markera önskat fält och sedan välja sum.  
 
-![Dataaggregering](./media/data-aggregation.png)
+![Dataaggregering](media/dataview-mappings/data-aggregation.png)
 
 Kodexempel för bearbetning av tabellmappning i datavyer.
 
@@ -686,7 +686,7 @@ td {
 }
 ```
 
-![Det visuella objektet med tabellmappning i datavyn](./media/table-dataview-mapping-visual.png)
+![Det visuella objektet med tabellmappning i datavyn](media/dataview-mappings/table-dataview-mapping-visual.png)
 
 ## <a name="matrix-data-mapping"></a>Matrisdatamappning
 
@@ -767,7 +767,7 @@ Datauppsättning:
 
 Det visuella kärnmatrisobjektet i Power BI renderar detta som en tabell.
 
-![Visuellt matrisobjekt](./media/matrix-visual-smaple.png)
+![Visuellt matrisobjekt](media/dataview-mappings/matrix-visual-smaple.png)
 
 Det visuella objektet får sin datastruktur enligt beskrivningen i följande kod (endast de första två tabellraderna visas här):
 

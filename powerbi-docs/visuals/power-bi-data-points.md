@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 01/10/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 320e8a25206a069c43800295ab64a7ab87afbcf0
-ms.sourcegitcommit: 801d2baa944469a5b79cf591eb8afd18ca4e00b1
+ms.openlocfilehash: 98af83c726cfd4e5b4e6744cbcfa1f7e5a69f57b
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885265"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79381455"
 ---
 # <a name="apply-data-point-limits-and-strategies-by-visual-type"></a>Använda datapunktsbegränsningar och strategier efter visuell typ
 
@@ -74,7 +74,7 @@ Se [hur radsampling fungerar](../desktop-high-density-sampling.md#how-the-new-li
 ### <a name="combo-chart"></a>Kombinationsdiagram
  Använder samma strategier som stapeldiagram. Observera att raden i **kombinationsdiagrammet** inte använder högdensitetsalgoritmen som **linjediagrammet** använder.
 
-### <a name="custom-visuals"></a>Anpassade visuella objekt
+### <a name="power-bi-visuals"></a>Visuella objekt för Power BI
 Kan få upp till 30 000, men det är upp till författarna av de visuella objekten att ange vilka strategier som ska användas. Standardgränsen är 1 000, men den som skapat det visuella objektet kan ändra det här värdet upp till som högst 30 000.
 
 ### <a name="doughnut"></a>Ringdiagram

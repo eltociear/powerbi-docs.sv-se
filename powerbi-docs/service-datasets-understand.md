@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/09/2019
 ms.author: v-pemyer
-ms.openlocfilehash: eaa4354ed7355c0e01d9f75675cb7fed4bdc9d96
-ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
+ms.openlocfilehash: 6170217119e443a2eb24aac056623dce5070303e
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74133737"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79208021"
 ---
 # <a name="datasets-in-the-power-bi-service"></a>Datamängder i Power BI-tjänsten
 
@@ -26,7 +26,7 @@ Power BI-datauppsättningar representerar en källa av data som är redo för ra
 - Ansluta till en befintlig datamodell som inte finns i någon Power BI-kapacitet
 - Ladda upp en Power BI Desktop-fil som innehåller en modell
 - Ladda upp en Excel-arbetsbok (med en eller flera Excel-tabeller och/eller en arbetsboksdatamodell), eller ladda upp en CSV-fil (kommaavgränsade värden)
-- Använda Power BI-tjänsten för att skapa en [push-datamängd](developer/walkthrough-push-data.md)
+- Använda Power BI-tjänsten för att skapa en [push-datamängd](developer/automation/walkthrough-push-data.md)
 - Använda Power BI-tjänsten för att skapa en [direktuppspelande eller hybriduppspelande datamängd](service-real-time-streaming.md)
 
 Förutom direktuppspelande datamängder, representerar datamängden en datamodell som använder modelleringstekniker från [Analysis Services](/analysis-services/analysis-services-overview).

@@ -6,22 +6,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/09/2019
+ms.date: 03/13/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: b32eee568ba560e95899cf0965a11f3bb037aed6
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: 719c07abdcdb42916db8a01a7fab28d3f6c98fba
+ms.sourcegitcommit: 22991861c2b9454b170222591f64266335b9fcff
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75222800"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79133356"
 ---
 # <a name="get-started-with-power-bi-desktop"></a>Komma igång med Power BI Desktop
 Välkommen till Komma igång-guiden för Power BI Desktop. Den här guiden visar hur Power BI Desktop fungerar, vad det kan göra samt hur du skapar robusta datamodeller och fantastiska rapporter som förbättrar din Business Intelligence.
 
 Om du vill få en snabb översikt över hur Power BI Desktop fungerar och hur du använder det kan du gå igenom bilderna i den här guiden på bara några minuter. För en mer ingående förståelse kan du läsa igenom avsnitten, utföra stegen och skapa din egen Power BI Desktop-fil som kan publiceras till [Power BI-tjänsten](https://app.powerbi.com/) och delas med andra.
 
-![Power BI Desktop-rapport](media/desktop-getting-started/hero.png)
+![Power BI Desktop-rapport](media/desktop-getting-started/hero-02.png)
 
 Du kan även titta på videon [Komma igång med Power BI Desktop](https://www.youtube.com/watch?v=Qgam9M8I0xA) och ladda ned Excel-arbetsboken [Financial Sample](https://go.microsoft.com/fwlink/?LinkID=521962) (Ekonomiexempel) för att följa med videon.
 

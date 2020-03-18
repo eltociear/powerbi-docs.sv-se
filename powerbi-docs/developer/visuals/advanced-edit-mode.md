@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 19714db2d1307ac9d7eb8861955870ba9988539e
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 97242883fe90c8f5e115818a24e4bb1c49f69b77
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880336"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79380578"
 ---
 # <a name="advanced-edit-mode-in-power-bi-visuals"></a>Avancerat redigeringsläge i visuella Power BI-objekt
 
@@ -39,7 +39,7 @@ Knappen **Redigera** visas om:
 
 Om egenskapen `advancedEditModeSupport` saknas i filen *capabilities.json* eller har angetts till `NotSupported` visas inte knappen **Redigera**.
 
-![Växla till redigeringsläge](./media/edit-mode.png)
+![Växla till redigeringsläge](media/advanced-edit-mode/edit-mode.png)
 
 När du väljer **Redigera** får det visuella objektet ett anrop av update() med redigeringsläget angett till `Advanced`. Beroende på det värde som anges i filen *capabilities.json* utförs följande åtgärder:
 

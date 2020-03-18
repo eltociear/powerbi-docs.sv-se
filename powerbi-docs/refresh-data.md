@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: maggies
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 2db2b4f02dac1ebcd9d24a8217a181efa9ce0779
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 810077e8c651d3d6faf91eecb6fd320c24a69d2f
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76039048"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488808"
 ---
 # <a name="data-refresh-in-power-bi"></a>Datauppdatering i Power BI
 
@@ -76,7 +76,7 @@ Eftersom Power BI inte importerar data behöver du inte köra en datauppdatering
 Push-datauppsättningar innehåller inte någon formell definition av en datakälla, så de kräver inte att du utför en datauppdatering i Power BI. Du uppdaterar dem genom att skicka data till datauppsättningen via en extern tjänst eller process, till exempel Azure Stream Analytics. Det här är en vanlig metod för realtidsanalys med Power BI. Power BI utför fortfarande cacheuppdateringar för paneler som används utöver en push-datauppsättning. En detaljerad genomgång finns i [Självstudie: Stream Analytics och Power BI: En instrumentpanel för analys i realtid för strömmande data](/azure/stream-analytics/stream-analytics-power-bi-dashboard).
 
 > [!NOTE]
-> Push-läget har flera begränsningar som finns dokumenterade i [Power BI REST API-begränsningar](developer/api-rest-api-limitations.md).
+> Push-läget har flera begränsningar som finns dokumenterade i [Power BI REST API-begränsningar](developer/automation/api-rest-api-limitations.md).
 
 ### <a name="power-bi-refresh-types"></a>Power BI-uppdateringstyper
 
@@ -317,7 +317,7 @@ Varningsikonen hjälper till att visa aktuella datauppsättningsproblem, men det
 
 ## <a name="automatic-page-refresh"></a>Automatisk siduppdatering
 
-Automatisk siduppdatering används på nivån för rapportsidan och innebär att rapportförfattarna kan ange ett uppdateringsintervall för visuella objekt på sidor som bara är aktivt när sidan används. Automatisk siduppdatering är endast tillgängligt för DirectQuery-datakällor. Det lägsta uppdateringsintervallet beror på vilken typ av arbetsyta som rapporten publiceras på, samt kapacitetsadministratörens inställningar för Premium-arbetsytor och [inbäddade arbetsytor](developer/embedding.md).
+Automatisk siduppdatering används på nivån för rapportsidan och innebär att rapportförfattarna kan ange ett uppdateringsintervall för visuella objekt på sidor som bara är aktivt när sidan används. Automatisk siduppdatering är endast tillgängligt för DirectQuery-datakällor. Det lägsta uppdateringsintervallet beror på vilken typ av arbetsyta som rapporten publiceras på, samt kapacitetsadministratörens inställningar för Premium-arbetsytor och [inbäddade arbetsytor](developer/embedded/embedding.md).
 
 Läs mer om automatisk siduppdatering i artikeln [om automatisk siduppdatering](desktop-automatic-page-refresh.md).
 

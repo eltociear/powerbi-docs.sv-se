@@ -9,11 +9,11 @@ ms.date: 08/15/2019
 ms.author: maggies
 LocalizationGroup: Share your work
 ms.openlocfilehash: 622d01632b9c9cbe6203090b3ac2149d4bc94474
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73853647"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79207883"
 ---
 # <a name="publish-an-app-in-power-bi"></a>Publicera en app i Power BI
 
@@ -37,7 +37,7 @@ Du behöver en Power BI Pro-licens för att skapa eller uppdatera en app. För *
 * **Alternativ 1** Arbetsytan för den här appen är *inte* i en Power BI Premium-kapacitet: Alla företagsanvändare behöver Power BI Pro-licenser för att kunna visa din app. 
 * **Alternativ 2** Arbetsytan för den här appen *är* i en Power BI Premium-kapacitet: Företagsanvändare utan Power BI Pro-licenser i din organisation kan visa appinnehåll. De kan dock inte kopiera rapporterna eller skapa rapporter som baseras på de underliggande datamängderna. Läs [Vad är Power BI Premium?](service-premium.md) för mer information.
 
-## <a name="publish-your-app"></a>Publicera appen
+## <a name="publish-your-app"></a>Publicera din app
 När instrumentpanelerna och rapporterna på din arbetsyta är redo kan du välja vilka instrumentpaneler och rapporter som du vill publicera, och sedan publicerar du dem som en app. 
 
 1. I arbetsytans listvy väljer du vilka instrumentpaneler och rapporter som du vill **inkludera i appen**.

@@ -10,11 +10,11 @@ ms.date: 10/02/2019
 ms.author: maggies
 LocalizationGroup: Share your work
 ms.openlocfilehash: bbb5eeee7422670c771f7bbfb4b051de0538a10a
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73877519"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79207837"
 ---
 # <a name="create-the-new-workspaces-in-power-bi"></a>Skapa de nya arbetsytorna i Power BI
 
@@ -73,9 +73,9 @@ Du kan ange vilka användare som ska informeras om problem som uppstår i arbets
 
     I fönstret **Skapa en arbetsyta** första gången du skapar den.
 
-    Välj pilen bredvid **Arbetsytor** i den vänstra navigeringsrutan, välj **Fler alternativ** (…) intill namnet på arbetsytan > **Inställningar för arbetsytan**. Fönstret **Inställningar** öppnas.
+    Välj pilen bredvid **Arbetsytor** i  navigeringsfönstret, välj **Fler alternativ** (…) intill namnet på arbetsytan > **Inställningar för arbetsyta**. Fönstret **Inställningar** öppnas.
 
-    ![Inställningar för arbetsyta](media/service-create-the-new-workspaces/power-bi-workspace-new-settings.png)
+    ![Arbetsyteinställningar](media/service-create-the-new-workspaces/power-bi-workspace-new-settings.png)
 
 2. Godkänn **standardadministratörer för arbetsytan** eller lägg till en egen lista över **specifika användare eller grupper** i **Avancerat** > **Kontaktlista**. 
 
@@ -95,7 +95,7 @@ Power BI synkroniserar inte behörigheter för användare eller grupper, som är
 
     Välj pilen bredvid **Arbetsytor** i  navigeringsfönstret, välj **Fler alternativ** (…) intill namnet på arbetsytan > **Inställningar för arbetsyta**. Fönstret **Inställningar** öppnas.
 
-    ![Inställningar för arbetsyta](media/service-create-the-new-workspaces/power-bi-workspace-new-settings.png)
+    ![Arbetsyteinställningar](media/service-create-the-new-workspaces/power-bi-workspace-new-settings.png)
 
 2. Under **Avancerat** > **OneDrive för arbetsytan** anger du namnet på den Office 365-grupp som du skapade tidigare. Power BI hämtar automatiskt OneDrive för gruppen.
 

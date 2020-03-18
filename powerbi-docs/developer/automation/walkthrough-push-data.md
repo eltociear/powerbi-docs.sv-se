@@ -8,22 +8,22 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.date: 05/22/2019
-ms.openlocfilehash: c39c7234ec4bc1b632355f92bdfdec9dc2b21ae4
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.openlocfilehash: 932e458c90b248e01a88d45a849838cff27f6dcb
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79079288"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488210"
 ---
 # <a name="push-data-into-a-power-bi-dataset"></a>Skicka data till en Power BI-datauppsättning
 
 Power BI-API:et låter dig skicka data till en Power BI-datauppsättning. I den här artikeln visar vi hur du skickar en datauppsättning för försäljningsmarknadsföring som innehåller en produkttabell till en befintlig datauppsättning.
 
-Innan du sätter igång, behöver du ett konto i Azure Active Directory (Azure AD) och ett [Power BI-konto](../create-an-azure-active-directory-tenant.md).
+Innan du sätter igång, behöver du ett konto i Azure Active Directory (Azure AD) och ett [Power BI-konto](../embedded/create-an-azure-active-directory-tenant.md).
 
 ## <a name="steps-to-push-data-into-a-dataset"></a>Steg för att skicka data till en datauppsättning
 
-* Steg 1: [Registrera en app med Azure AD](../register-app.md)
+* Steg 1: [Registrera en app med Azure AD](../embedded/register-app.md)
 * Steg 2: [Hämta en åtkomsttoken för autentisering](walkthrough-push-data-get-token.md)
 * Steg 3: [Skapa en datauppsättning i Power BI](walkthrough-push-data-create-dataset.md)
 * Steg 4: [Hämta en datauppsättning för att lägga till rader i en Power BI-tabell](walkthrough-push-data-get-datasets.md)
@@ -111,11 +111,11 @@ Du kan använda följande datatyper för ett Power BI-tabellschema.
 
 ## <a name="learn-more-about-pushing-data-into-power-bi"></a>Mer information om att skicka data till Power BI
 
-Om du vill komma igång med att skicka data till en datauppsättning, se [Steg 1: Registrera en app med Azure AD](../register-app.md) i navigeringsfönstret.
+Om du vill komma igång med att skicka data till en datauppsättning, se [Steg 1: Registrera en app med Azure AD](../embedded/register-app.md) i navigeringsfönstret.
 
 ## <a name="next-steps"></a>Nästa steg
 
-* [Registrera dig för Power BI](../create-an-azure-active-directory-tenant.md)  
+* [Registrera dig för Power BI](../embedded/create-an-azure-active-directory-tenant.md)  
 * [Introduktion till JSON](https://json.org/)  
 * [Översikt över Power BI REST API](overview-of-power-bi-rest-api.md)  
 

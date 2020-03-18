@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: overview
 ms.date: 03/25/2019
-ms.openlocfilehash: 3ff7eb4a771ed8c65d18262f61170f312049a898
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.openlocfilehash: 1a74d856ad46dc6843546919aa4234dc86d2be5c
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79079426"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488442"
 ---
 # <a name="what-can-developers-do-with-the-power-bi-api"></a>Vad kan utvecklare göra med Power BI-API?
 
@@ -25,10 +25,10 @@ Här följer några av de saker som du kan göra med Power BI-API:er.
 
 | **Läs mer** | **Använd följande information** |
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| Bädda in rapporter, instrumentpaneler och paneler för Power BI-användare och icke-Power BI-användare. | [Så här bäddar du in dina instrumentpaneler, rapporter och paneler i Power BI ](../embed-sample-for-customers.md) |
+| Bädda in rapporter, instrumentpaneler och paneler för Power BI-användare och icke-Power BI-användare. | [Så här bäddar du in dina instrumentpaneler, rapporter och paneler i Power BI ](../embedded/embed-sample-for-customers.md) |
 | Utföra hanteringsuppgifter på Power BI-objekt. | [Power BI REST API-referens](https://docs.microsoft.com/rest/api/power-bi/) |
 | Utöka ett befintligt business-arbetsflöde för att skicka viktiga data till en Power BI-instrumentpanel. | [Skicka data till en instrumentpanel ](walkthrough-push-data.md) |
-| Autentisera till Power BI. | [Autentisera till Power BI ](../get-azuread-access-token.md) |
+| Autentisera till Power BI. | [Autentisera till Power BI ](../embedded/get-azuread-access-token.md) |
 
 > [!NOTE]
 > I API:erna för Power BI kallas arbetsytor fortfarande för grupper. Referenser till grupper innebär att du arbetar med arbetsytor.
