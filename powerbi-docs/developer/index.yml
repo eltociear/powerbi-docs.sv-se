@@ -12,12 +12,12 @@ metadata:
   author: maggiesMSFT
   ms.author: maggies
   ms.date: 10/25/2019
-  ms.openlocfilehash: 94800e2b5996b9b9fc6bf60c4c95dd72b0725b81
-  ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+  ms.openlocfilehash: b03678dba371ed26a8965c2ebbcd26453689cea2
+  ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
   ms.translationtype: HT
   ms.contentlocale: sv-SE
-  ms.lasthandoff: 03/14/2020
-  ms.locfileid: "79378258"
+  ms.lasthandoff: 03/18/2020
+  ms.locfileid: "79487773"
 landingContent:
 - title: Om Power BI för utvecklare
   linkLists:
@@ -26,9 +26,9 @@ landingContent:
     - text: Vad kan utvecklare göra?
       url: what-can-you-do.md
     - text: Visuella objekt i Power BI
-      url: power-bi-custom-visuals.md
+      url: visuals/power-bi-custom-visuals.md
     - text: Det här är inbäddat
-      url: embedding.md
+      url: embedded/embedding.md
     - text: Vad är Power BI-API?
       url: automation/overview-of-power-bi-rest-api.md
   - linkListType: reference
@@ -52,42 +52,42 @@ landingContent:
   - linkListType: concept
     links:
     - text: Vanliga frågor och svar om visuella objekt
-      url: power-bi-custom-visuals-faq.md
+      url: visuals/power-bi-custom-visuals-faq.md
     - text: Riktlinjer för visuella objekt
-      url: guidelines-powerbi-visuals.md
+      url: visuals/guidelines-powerbi-visuals.md
     - text: Avancerat redigeringsläge i visuella objekt
       url: visuals/advanced-edit-mode.md
   - linkListType: how-to-guide
     links:
     - text: Certifiera ett visuellt objekt
-      url: power-bi-custom-visuals-certified.md
+      url: visuals/power-bi-custom-visuals-certified.md
     - text: Publicera visuella Power BI-objekt till AppSource
-      url: office-store.md
+      url: visuals/office-store.md
 - title: Inbäddad analys
   linkLists:
   - linkListType: tutorial
     links:
     - text: Bädda in innehåll för kunder
-      url: embed-sample-for-customers.md
+      url: embedded/embed-sample-for-customers.md
     - text: Bädda in innehåll för organisationen
-      url: embed-sample-for-your-organization.md
+      url: embedded/embed-sample-for-your-organization.md
   - linkListType: concept
     links:
     - text: Säkerhet på radnivå
-      url: embedded-row-level-security.md
+      url: embedded/embedded-row-level-security.md
     - text: Hantera flera innehavare
-      url: embed-multi-tenancy.md
+      url: embedded/embed-multi-tenancy.md
     - text: Inbäddade vanliga frågor och svar
-      url: embedded-faq.md
+      url: embedded/embedded-faq.md
     - text: Behörigheter
-      url: power-bi-permissions.md
+      url: embedded/power-bi-permissions.md
   - linkListType: how-to-guide
     links:
     - text: Bädda in från appar
-      url: embed-from-apps.md
+      url: embedded/embed-from-apps.md
     - text: Skapa en Azure Active Directory-klient
-      url: create-an-azure-active-directory-tenant.md
+      url: embedded/create-an-azure-active-directory-tenant.md
     - text: Hämta en Azure AD-åtkomsttoken
-      url: get-azuread-access-token.md
+      url: embedded/get-azuread-access-token.md
     - text: Funktionen Frågor och svar i Power BI Embedded
-      url: qanda.md
+      url: embedded/qanda.md
