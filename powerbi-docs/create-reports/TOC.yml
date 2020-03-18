@@ -145,7 +145,7 @@
               href: ../desktop-grouping-and-binning.md
             - name: Skapa visuella Power BI-objekt med R
               href: ../desktop-r-visuals.md
-            - name: Ladda ned och använda R-drivna anpassade visuella objekt
+            - name: Hämta och använda R-baserade visuella Power BI-objekt
               href: ../desktop-r-powered-custom-visuals.md
             - name: Använda stödlinjer och fästa mot rutnät
               href: ../desktop-gridlines-snap-to-grid.md
