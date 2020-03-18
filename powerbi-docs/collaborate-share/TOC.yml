@@ -51,6 +51,8 @@
               href: ../service-url-filters.md
             - name: Registrera dig och andra för prenumeration
               href: ../service-report-subscribe.md
+            - name: Funktionsinnehåll på Startsidan
+              href: service-featured-content.md
             - name: Bädda in rapport i Microsoft Teams
               href: ../service-embed-report-microsoft-teams.md
             - name: Bädda in rapport i SharePoint Online
