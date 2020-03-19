@@ -12,6 +12,8 @@
     - name: Självstudier
       expanded: true
       items:
+        - name: Nätbaserad kurs
+          href: paginated-reports-online-course.md
         - name: 'Labb: Skapa en sidnumrerad rapport'
           href: 'https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208'
         - name: Skapa en sidnumrerad rapport och ladda upp den
