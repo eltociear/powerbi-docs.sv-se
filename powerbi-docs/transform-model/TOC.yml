@@ -75,6 +75,8 @@
               href: ../desktop-measures.md
             - name: 'Importera och visa KPI:er'
               href: ../desktop-import-and-display-kpis.md
+            - name: Använda automatiskt datum/tid
+              href: ../desktop-auto-date-time.md
         - name: Dataförberedelser med självbetjäning
           items:
             - name: Skapa och använda dataflöden
