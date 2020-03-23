@@ -10,16 +10,16 @@ ms.topic: conceptual
 ms.date: 11/26/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 50daa90f937a9d1c7081d9b22e3c743da950945c
-ms.sourcegitcommit: fe9253a6021b9e198afa28aa9c670c3bacf59674
+ms.openlocfilehash: e7e5e406a0a4c9cdcecfab5a5af681857600feb5
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74548569"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488532"
 ---
 # <a name="automatic-page-refresh-in-power-bi-desktop-preview"></a>Automatisk sidouppdatering i Power BI Desktop (förhandsversion)
 
-När du övervakar kritiska händelser är det viktigt att datan uppdateras varje gång källdatan uppdateras. I tillverkningsbranschen är det till exempel viktigt att upptäcka när en maskin slutar fungera eller om fel uppstår.
+När du övervakar kritiska händelser är det viktigt att data uppdateras så fort källdata uppdateras. I tillverkningsbranschen är det till exempel viktigt att upptäcka när en maskin slutar fungera eller om fel uppstår.
 
 Med funktionen för automatisk siduppdatering i Power BI kan aktiva rapportsida söka efter nya data i en fördefinierad takt för [DirectQuery-källor](https://docs.microsoft.com/power-bi/desktop-directquery-about).
 
@@ -35,9 +35,9 @@ Följande bild visar kortet **Siduppdatering**. Beskrivningar av de numrerade el
 
 ![Kortet Siduppdatering](media/desktop-automatic-page-refresh/automatic-page-refresh-02.png)
 
-1.  Skjutreglage för automatisk siduppdatering – Aktiverar eller inaktiverar siduppdatering
-2.  Värde för siduppdateringsintervall – Värde för uppdateringsintervall
-3.  Enhet för siduppdateringsintervall – Intervallenhet för siduppdatering
+1.    Skjutreglage för automatisk siduppdatering – Aktiverar eller inaktiverar siduppdatering
+2.    Värde för siduppdateringsintervall – Värde för uppdateringsintervall
+3.    Enhet för siduppdateringsintervall – Intervallenhet för siduppdatering
 
 Här kan du aktivera siduppdatering och välja uppdateringens varaktighet. Standardvärdet är 30 minuter och det minsta uppdateringsintervallet är en sekund. Rapporten kommer att börja uppdateras med det intervall som du har angett. 
 
@@ -62,10 +62,10 @@ Följande bild visar resultatet av en DirectQuery i Prestandaanalys:
 
 Vi använder några andra egenskaper för den här datakällan. 
 
-1.  Data tas emot med en hastighet på två sekunder. 
-2.  Prestandaanalysen visar maximal fråga + visningstid på ungefär 4,9 sekunder (4 688 millisekunder). 
-3.  Datakällan har konfigurerats för att hantera cirka 1 000 samtidiga frågor per sekund. 
-4.  Du förväntar dig att cirka 10 användare ska kunna se rapporten samtidigt.
+1.    Data tas emot med en hastighet på två sekunder. 
+2.    Prestandaanalysen visar maximal fråga + visningstid på ungefär 4,9 sekunder (4 688 millisekunder). 
+3.    Datakällan har konfigurerats för att hantera cirka 1 000 samtidiga frågor per sekund. 
+4.    Du förväntar dig att cirka 10 användare ska kunna se rapporten samtidigt.
 
 Detta resulterar i följande:
 
@@ -83,13 +83,13 @@ Härnäst ska vi titta på hur du kan identifiera och diagnostisera prestandapro
 
 Du kan också ställa in automatiska siduppdateringsintervall för rapporter som har skapats i Power BI Desktop och publicerats till Power BI-tjänsten. 
 
-Automatisk siduppdatering för rapporter i Power BI-tjänst konfigureras med steg som liknar konfigurationen i Power BI Desktop. Automatisk siduppdatering har även stöd för [inbäddat Power BI](developer/embedding.md)-innehåll när det konfigureras i Power BI-tjänsten. Följande bild visar konfigurationen av **siduppdatering** för Power BI-tjänsten:
+Automatisk siduppdatering för rapporter i Power BI-tjänst konfigureras med steg som liknar konfigurationen i Power BI Desktop. Automatisk siduppdatering har även stöd för [inbäddat Power BI](developer/embedded/embedding.md)-innehåll när det konfigureras i Power BI-tjänsten. Följande bild visar konfigurationen av **siduppdatering** för Power BI-tjänsten:
 
 ![Automatisk siduppdatering i Power BI-tjänsten](media/desktop-automatic-page-refresh/automatic-page-refresh-04.png)
 
-1.  Skjutreglage för automatisk siduppdatering – Aktiverar eller inaktiverar siduppdatering
-2.  Värde för siduppdateringsintervall – Värde för uppdateringsintervall, måste vara ett heltal
-3.  Enhet för siduppdateringsintervall – Intervallenhet för siduppdatering
+1.    Skjutreglage för automatisk siduppdatering – Aktiverar eller inaktiverar siduppdatering
+2.    Värde för siduppdateringsintervall – Värde för uppdateringsintervall, måste vara ett heltal
+3.    Enhet för siduppdateringsintervall – Intervallenhet för siduppdatering
 
 ### <a name="page-refresh-intervals"></a>Siduppdateringsintervall
 

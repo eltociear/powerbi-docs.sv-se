@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/08/2018
-ms.openlocfilehash: cdbf50ee5078eaade7794242b3ed522e043cab22
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.openlocfilehash: 3ac4c28b3f07cb1a19e241089b54ee4594a7a7dd
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79079656"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79378304"
 ---
 # <a name="automatic-retention-policy-for-real-time-data"></a>Princip för automatiskt bevarande av realtidsdata
 
@@ -25,6 +25,6 @@ Principen för automatiskt bevarande i Power BI-tjänsten är en frågesträngsp
 
 </center>
 
-Bevarandeprinciperna aktiveras när du skapar dina datauppsättningar. Allt du behöver göra är att lägga till frågeparametern för ”standardprincip för bevarande” i ditt anrop till POST-datauppsättningar och ställa in den på *basicFIFO*.  
+Bevarandeprinciperna aktiveras när du skapar dina datauppsättningar. Det enda du behöver göra är att lägga till frågeparametern för "standardprincip för bevarande" i ditt anrop till POST-datauppsättningar och ställa in den på *basicFIFO*.  
   
     POST https://api.powerbi.com/v1.0/myorg/datasets?defaultRetentionPolicy={None | basicFIFO}

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/22/2019
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: 32f0c03fc0ae586b8b98c7a4c84c9d4c7bbd9078
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.openlocfilehash: 878e4a2e033d33e8c6bb027f35976c19e8b108c9
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78920972"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488854"
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nyheter i Power BI-tjänsten
 Kontrollera den här sidan för kända problem och nyligen utgivna funktioner i **Power BI-tjänsten**. Relaterad information om nyheter finns i:
@@ -91,7 +91,7 @@ Besök även våra YouTube-kanaler för information om nyheter och funktioner.
 * Filtrerad export för PPT och PDF.
 * [Inställningar för hjälp och support](https://powerbi.microsoft.com/blog/tailoring-help-and-support-for-power-bi-users/) i administratörsportalen.
 * Datahärkomst för [dataflöden](service-dataflows-overview.md).
-* Inställning för certifierade, anpassade visuella objekt i administratörsportalen.
+* Inställning för certifierade visuella Power BI-objekt i administratörsportalen.
 
 ### <a name="january-2019"></a>Januari 2019
 * [Bädda in säkra Power BI-rapporter](service-embed-secure.md) i interna portaler eller webbplatser.
@@ -126,7 +126,7 @@ Besök även våra YouTube-kanaler för information om nyheter och funktioner.
 * Förbättringar för [URL-rapportfilter](service-url-filters.md) i Power BI.
 
 ### <a name="july-2018"></a>Juli 2018
-* Stöd för anpassade visuella objekt för [beständiga filter](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/).
+* Stöd för visuella Power BI-objekt för [beständiga filter](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/).
 * [API:er och PowerShell-cmdletar](https://powerbi.microsoft.com/blog/announcing-apis-and-powershell-cmdlets-for-power-bi-administrators/) för Power BI-administratörer.
 * [Multi-Geo-stöd](service-admin-premium-multi-geo.md) för Power BI Premium.
 
@@ -153,20 +153,20 @@ Besök även våra YouTube-kanaler för information om nyheter och funktioner.
 ### <a name="february-2018"></a>Februari 2018
 * Installera [Power BI-appar](service-create-distribute-apps.md) automatiskt för slutanvändare.
 * P4- och P5-kapaciteter på Power BI Premium
-* Förhandsgranskning av [anpassade visuella objekt i en organisation](developer/power-bi-custom-visuals-organization.md).
+* Förhandsgranskning av [visuella Power BI-objekt i en organisation](developer/visuals/power-bi-custom-visuals-organization.md).
 
 ### <a name="january-2018"></a>Januari 2018
-*   Resurs- och favoritrapporter i Power BI.
-*   Stöd för enkel inloggning med OAuth2- och DirectQuery för Azure SQL Database och Data Warehouse.
-*   Regiongranskning: Granskningsloggarna lagras nu i samma Office 365-region som klientorganisationen.
-*   GA för SharePoint Online [Power BI-rapportwebbdel](https://go.microsoft.com/fwlink/p/?LinkId=825698).
-*   Administratörskontroll för att stänga av visning av anpassade visuella objekt för alla användare i en klientorganisation.
-*   Schemalagt uppdateringsstöd för Azure Analysis Services (AAS).
+*    Resurs- och favoritrapporter i Power BI.
+*    Stöd för enkel inloggning med OAuth2- och DirectQuery för Azure SQL Database och Data Warehouse.
+*    Regiongranskning: Granskningsloggarna lagras nu i samma Office 365-region som klientorganisationen.
+*    GA för SharePoint Online [Power BI-rapportwebbdel](https://go.microsoft.com/fwlink/p/?LinkId=825698).
+*    Administratörskontroll för att stänga av visning av visuella Power BI-objekt för alla användare i en klientorganisation.
+*    Schemalagt uppdateringsstöd för Azure Analysis Services (AAS).
 
 ## <a name="previous-months-2017"></a>Föregående månader (2017)
 ### <a name="october-and-november-2017"></a>Oktober och november 2017
-*   Selektiv publicering av innehåll med [Power BI-appar](service-create-distribute-apps.md).
-*   Extern användardistribution med [Azure Active Directory B2B](https://powerbi.microsoft.com/blog/power-bi-expands-access-to-intelligence-for-external-guest-users/preview/).
+*    Selektiv publicering av innehåll med [Power BI-appar](service-create-distribute-apps.md).
+*    Extern användardistribution med [Azure Active Directory B2B](https://powerbi.microsoft.com/blog/power-bi-expands-access-to-intelligence-for-external-guest-users/preview/).
 * Rekommendationer för AI-drivna apprekommendationer.
 * UI-uppdateringar av instrumentpanelen.
 * E-postprenumerationsstöd för appar. 
@@ -183,8 +183,8 @@ Besök även våra YouTube-kanaler för information om nyheter och funktioner.
 * Lär känna din målgrupp med [användningsstatistik per användare](https://powerbi.microsoft.com/blog/introducing-per-user-usage-metrics-know-your-audience-and-amplify-your-impact/).
 * Kom igång med [Power BI-tjänst](service-connect-to-services.md)appar för onlinetjänster.
 * Anslut till IBM Netezza med den lokala datagatewayen i både anslutningslägena import och DirectQuery.
-* [Dynamisk RLS](developer/embedded-row-level-security.md) stöds nu för Power BI Embedded.
-* Avancerat [filtrerings-API](https://github.com/Microsoft/powerbi-visuals-sampleslicer/blob/master/doc/UsingAdvancedFilterAPI.md) har nu lagts till i version 1.7 av anpassade API:er för visuella objekt.
+* [Dynamisk RLS](developer/embedded/embedded-row-level-security.md) stöds nu för Power BI Embedded.
+* Avancerat [filtrerings-API](https://github.com/Microsoft/powerbi-visuals-sampleslicer/blob/master/doc/UsingAdvancedFilterAPI.md) har nu lagts till i version 1.7 av anpassade API:er för visuella Power BI-objekt.
 
 ### <a name="july-2017"></a>Juli 2017
 * Stöd för [e-postprenumerationer](consumer/end-user-subscribe.md) på instrumentpaneler.
@@ -197,7 +197,7 @@ Besök även våra YouTube-kanaler för information om nyheter och funktioner.
 * Flera API förbättringar av [automatiska schemalagda uppdateringar](https://powerbi.microsoft.com/blog/announcing-data-refresh-apis-in-the-power-bi-service/), [klona och bind om rapporter](https://github.com/Azure-Samples/powerbi-powershell/blob/master/rebindReport.ps1), [uppdatera gatewaybindningar](https://msdn.microsoft.com/library/mt784650.aspx), och mycket mer
 * Relativa länkar i Power BI-appar från paneler på instrumentpanelen till andra instrumentpaneler och rapporter.
 * [Impala-anslutningsprogrammet](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#impala) är allmänt tillgängligt i Power BI Desktop.
-* Utökade visuella funktioner i Power BI med [anpassade interaktiva visuella R-objekt](https://powerbi.microsoft.com/blog/interactive-r-custom-visuals-support-is-here/).
+* Utökade visuella funktioner i Power BI med [interaktiva visuella R-objekt i Power BI](https://powerbi.microsoft.com/blog/interactive-r-custom-visuals-support-is-here/).
 
 ### <a name="april-and-may-2017"></a>April och maj 2017
 * Mät och öka din inverkan med användningsstatistik för [skapare av instrumentpaneler och rapporter](service-usage-metrics.md).
@@ -213,7 +213,7 @@ Besök även våra YouTube-kanaler för information om nyheter och funktioner.
 * Förbättrad [felsökningsmeddelanden för DAX-frågor](https://powerbi.microsoft.com/blog/power-bi-service-march-feature-summary/#DAXtroubleshooting).
 * Ökad kontroll över dina datauppsättningar med [anpassade scheman för cacheuppdateringar](https://powerbi.microsoft.com/blog/announcing-custom-cache-refresh-schedules-in-the-power-bi-service/).
 * Anslut till [Amazon Redshift](https://powerbi.microsoft.com/blog/announcing-support-for-amazon-redshift-reports-in-the-power-bi-service/).
-* Bläddra till [anpassade visuella objekt i Power BI i Office Store](https://powerbi.microsoft.com/blog/custom-visuals-now-available-in-the-office-store/).
+* Bläddra till [visuella Power BI-objekt i Office Store](https://powerbi.microsoft.com/blog/custom-visuals-now-available-in-the-office-store/).
 * Förhandsversion: [Prenumerera på rapportsidor](https://powerbi.microsoft.com/blog/introducing-email-subscriptions-in-power-bi-stay-informed-when-it-matters/) för att hålla koll på dina data.
 * Använda Azure AD-innehållspaketet för lära dig mer om hur dina anställda och partners använder Azure AD.
 
@@ -225,7 +225,7 @@ Besök även våra YouTube-kanaler för information om nyheter och funktioner.
 ### <a name="january-2017"></a>Januari 2017
 * Administrera Power BI med hjälp av [Power BI administratörsrollen](https://powerbi.microsoft.com/blog/power-bi-service-january-feature-summary/#pbiadminrole).
 * [Power BI-granskningsloggar ](https://powerbi.microsoft.com/blog/power-bi-service-january-feature-summary/#auditlogs) i granskningsportalen i Office 365 är tillgängliga globalt.
-* Version 1.4 av [utvecklingsverktyg och anpassade visuella objekt API:er](https://powerbi.microsoft.com/blog/new-apis-available-for-custom-visuals-developers/) släpps.
+* Version 1.4 av [utvecklingsverktyg och visuella Power BI-objekt-API:er](https://powerbi.microsoft.com/blog/new-apis-available-for-custom-visuals-developers/) släpps.
 * [Funktionsuppsättning för strömning i realtid](https://powerbi.microsoft.com/blog/announcing-general-availability-of-power-bi-real-time-streaming-datasets/) släpps till allmän tillgänglighet.
 * [Skicka data till Power BI med hjälp av Power Automate](https://powerbi.microsoft.com/blog/push-rows-to-a-power-bi-streaming-dataset-without-writing-any-code-using-microsoft-flow/) utan att skriva en enda kodrad.
 * Förhandsversion: [Prenumerera på rapportsidor](https://powerbi.microsoft.com/blog/introducing-email-subscriptions-in-power-bi-stay-informed-when-it-matters/) för att hålla koll på dina data.
@@ -654,7 +654,7 @@ Besök [bloggen](https://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi-se
 
 **18 augusti 2015**
 
-* Azure Mobile Engagement är en appanalystjänst som gör att utvecklare kan spåra sina appars prestanda och hjälpa dem att förbättra kvarhållning och appanvändning. Med hjälp av [innehållspaketet för Power BI Azure Mobile Engagement](https://blogs.msdn.com/b/powerbi/archive/2015/08/17/monitor-and-analyze-your-azure-mobile-engagement-data-in-power-bi.aspx) kan du snabbt ansluta till en instrumentpanelmall, en rapportuppsättning och en granskad datauppsättning och få insikter om din apps prestation direkt. Se hjälpsidan för [Azure Mobile Engagement-innehållspaketet för Power BI](service-connect-to-azure-mobile.md) för mer information.
+* Azure Mobile Engagement är en appanalystjänst som gör att utvecklare kan spåra prestanda hos sin app och öka datakvarhållning och appanvändning. Med hjälp av [innehållspaketet för Power BI Azure Mobile Engagement](https://blogs.msdn.com/b/powerbi/archive/2015/08/17/monitor-and-analyze-your-azure-mobile-engagement-data-in-power-bi.aspx) kan du snabbt ansluta till en instrumentpanelmall, en rapportuppsättning och en granskad datauppsättning och få insikter om din apps prestation direkt. Se hjälpsidan för [Azure Mobile Engagement-innehållspaketet för Power BI](service-connect-to-azure-mobile.md) för mer information.
 
 **11 augusti 2015**
 
@@ -663,7 +663,7 @@ Besök [bloggen](https://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi-se
 **4 augusti 2015**
 
 * Power BI erbjuder nu användare av [Circuit-ID](https://blogs.msdn.com/b/powerbi/archive/2015/08/04/circuit-id-data-with-power-bi.aspx) möjlighet att spåra och övervaka deras molnkommunikationtjänster med Circuit-ID och fatta bättre affärsbeslut. Mer information om hur du kommer igång finns på hjälpsidan för innehållspaketet [Circuit ID för Power BI](service-connect-to-circuit-id.md).
-* Vi har idag ut en förbättring av funktionen dela instrumentpanelen som gör den lättare att använda.  Om din organisation använder Office 365 för e-post, kan du nu [dela i en e-postdistributionsgrupp](https://blogs.msdn.com/b/powerbi/archive/2015/08/04/easier-dashboard-sharing-with-distribution-groups.aspx) på samma sätt du skulle skicka ett e-postmeddelande i Outlook.  Det är bara att ange adressen till distributionsgruppen och klicka på Dela.  Alla medlemmar i distributionsgruppen får en e-postinbjudan för att visa instrumentpanelen.
+* Idag har vi släppt en förbättring av funktionen Dela instrumentpanel så att den blir ännu enklare att använda.  Om din organisation använder Office 365 för e-post, kan du nu [dela i en e-postdistributionsgrupp](https://blogs.msdn.com/b/powerbi/archive/2015/08/04/easier-dashboard-sharing-with-distribution-groups.aspx) på samma sätt du skulle skicka ett e-postmeddelande i Outlook.  Det är bara att ange adressen till distributionsgruppen och klicka på Dela.  Alla medlemmar i distributionsgruppen får en e-postinbjudan för att visa instrumentpanelen.
 
 **28 juli 2015**
 

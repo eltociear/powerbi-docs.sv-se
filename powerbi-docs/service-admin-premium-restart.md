@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 09/17/2019
+ms.date: 03/12/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 34b409bc6c319594c6b8e79acd48e5ed0d674ced
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 8bb95da5383eedac57fb705f697a8481e934e379
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74698473"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79202032"
 ---
 # <a name="restart-a-power-bi-premium-capacity"></a>Starta om en Power BI Premium-kapacitet
 
@@ -30,7 +30,9 @@ Power BI förbättras ständigt när det gäller hur Premium-kapacitetsanvändar
 
 ## <a name="is-the-restart-process-safe-will-i-lose-any-data"></a>Är omstarten säker? Förlorar jag data?
 
-Alla sparade data, definitioner, rapporter och instrumentpaneler i kapaciteten förblir helt intakta efter omstart. När du startar om en kapacitet stoppas alla pågående uppdateringar och ad hoc-uppdateringar. Tjänsten försöker uppdatera igen när kapaciteten är tillgänglig. Användare som interagerar med kapaciteten förlorar arbete som inte har sparats. De bör uppdatera sina webbläsare när omstarten har slutförts.
+Alla sparade data, definitioner, rapporter och instrumentpaneler i kapaciteten förblir helt intakta efter omstart. När du startar om en kapacitet stoppas pågående schemalagda uppdateringar och ad hoc-uppdateringar tillfälligt av uppdateringsmotorn i de flesta fall. De startas sedan om på grund av den logik för uppdateringsomförsök som är inbyggd i Power BI. Tjänsten provar att göra nya försök med eventuella uppdateringar som påverkats när kapaciteten blir tillgänglig. Uppdateringarnas tillstånd kanske inte ändras i användargränssnittet under omstarten. 
+
+Användare som interagerar med kapaciteten förlorar arbete som inte har sparats när omstartsprocessen körs. De bör uppdatera sina webbläsare när omstarten har slutförts.
 
 ## <a name="how-do-i-restart-a-capacity"></a>Hur startar jag om en kapacitet?
 

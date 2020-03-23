@@ -7,16 +7,16 @@ manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 06/18/2019
-ms.openlocfilehash: ad63a1b97c744e8614e584874c4d896a85598e48
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: bb323737934ade08ed4998bdcf8d441e8951732c
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76819133"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79379934"
 ---
-# <a name="add-the-locale-in-power-bi-for-custom-visuals"></a>Lägg till nationella inställningar i Power BI för anpassade visuella objekt
+# <a name="add-the-locale-in-power-bi-for-power-bi-visuals"></a>Lägg till nationella inställningar i Power BI för visuella Power BI-objekt
 
 Visuella objekt kan hämta nationella inställningar från Power BI för att lokalisera innehållet till relevant språk.
 
@@ -24,12 +24,12 @@ Läs mer om vilka [språk och länder/regioner som stöds i Power BI](./../../su
 
 Exempel: hämta nationella inställningar för ett stapeldiagram.
 
-![Lokalisering i exempel på stapeldiagram](media/locale-in-samplebarchart.png)
+![Lokalisering i exempel på stapeldiagram](media/localization/locale-in-samplebarchart.png)
 
 De här stapeldiagrammen skapades på olika språk (engelska, baskiska och hindi) vilket visas i knappbeskrivningen.
 
 > [!NOTE]
-> Lokaliseringshanteraren i koden för det visuella objektets stöds från och med API-version 1.10.0.
+> Lokaliseringshanteraren i koden för det visuella objektet stöds från och med API-version 1.10.0.
 
 ## <a name="get-the-locale"></a>Hämta nationella inställningar
 
@@ -95,13 +95,13 @@ zh-TW | 中國 (traditionell kinesiska)
 > [!NOTE]
 > I PowerBI Desktop innehåller egenskapen locale språket för det PowerBI Desktop som är installerat.
 
-## <a name="localizing-the-property-pane-for-custom-visuals"></a>Lokalisering av egenskapsrutan för anpassade visuella objekt
+## <a name="localizing-the-property-pane-for-power-bi-visuals"></a>Lokalisering av egenskapsrutan för visuella Power BI-objekt
 
 Fält i egenskapsrutan kan lokaliseras för att ge en mer integrerad och enhetlig upplevelse. Det gör att ditt anpassade visuella objekt fungerar precis som standardobjekten i Power BI.
 
 Ett anpassat visuellt objekt utan översättning som skapats med kommandot `pbiviz new` har till exempel nu följande fält i egenskapsfönstret:
 
-![Lokalisering i egenskapsfönstret](media/property-pane.png)
+![Lokalisering i egenskapsfönstret](media/localization/property-pane.png)
 
 både Category Data och Measure Data är definierade i filen capabilities.json som `displayName`.
 
@@ -132,7 +132,7 @@ Lägg sedan till en katalog med namnet stringResources. Katalogen innehåller al
 
 I vårt exempel kan vi anta att vi vill ha stöd för arabiska och hebreiska. Då måste vi lägga till två JSON-filer så här:
 
-![Lokaliseringssträngar i strängresursmappen](media/stringresources-files.png)
+![Lokaliseringssträngar i strängresursmappen](media/localization/stringresources-files.png)
 
 Varje JSON-fil definierar ett enda språk (den här filen måste vara ett av språken i listan ovan) med strängvärden för önskade visningsnamnsnycklar. I vårt exempel ser strängresursfilen för hebreiska ut så här:
 
@@ -161,13 +161,13 @@ För skrivbordsanvändning laddar du ned den lokaliserade versionen av Power BI 
 
 Om du använder webbklienten (webbläsare) i tjänsten ändrar du språket i inställningarna:
 
-![Lokalisering i webbtjänsten](media/webservice-settings.png)
+![Lokalisering i webbtjänsten](media/localization/webservice-settings.png)
 
 ## <a name="resource-file"></a>Resursfil
 
 Lägg till filen resources.resjson i en mapp med samma namn som språket du vill använda i mappen stringResources. I vårt exempel är det en-US och ru-RU.
 
-![Den nya resjson-filen](media/new-resjson.png)
+![Den nya resjson-filen](media/localization/new-resjson.png)
 
 Lägg sedan till alla lokaliserade strängar du vill använda i filen resources.resjson, som du lade till i föregående steg.
 

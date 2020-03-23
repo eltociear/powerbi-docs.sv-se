@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/23/2020
+ms.date: 03/12/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 5a4ed3ffc833b2405a3c231b80047c71b40a64cc
-ms.sourcegitcommit: 08f65ea314b547b41b51afef6876e56182190266
+ms.openlocfilehash: 2316fcf5d0b5c0a4c63e4786b80b8c7e20c643e3
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/25/2020
-ms.locfileid: "76753707"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79378971"
 ---
 # <a name="use-report-themes-in-power-bi-desktop"></a>Använda rapportteman i Power BI Desktop
 
@@ -195,7 +195,7 @@ Kanske vill du ange en datapunktsfärg manuellt med hjälp av avsnittet **Temaf�
 
 ![Återgå till standard](media/desktop-report-themes/report-themes_9.png)
 
-Många anpassade visuella objekt kommer inte att använda rapportteman.
+Många visuella Power BI-objekt kommer inte att använda rapportteman.
 
 ## <a name="custom-report-theme-files-you-can-use-right-now"></a>Anpassade rapporttemafiler som du kan använda direkt
 
@@ -265,13 +265,13 @@ På den mest grundläggande nivån har tema-JSON-filen bara en nödvändig rad: 
 }
 ```
 
-**Förutom namn** är allt annat valfritt, vilket innebär att du kan lägga till de egenskaper som du vill formatera i temafilen och fortsätta att använda standardvärden för Power BI för de övriga.
+Förutom **namn** är allt annat valfritt, vilket innebär att du kan lägga till de egenskaper som du vill formatera i temafilen och fortsätta använda standardvärden för Power BI för de övriga.
 
 ### <a name="setting-theme-colors"></a>Ange temafärger
 
 Under **namn** kan du lägga till följande grundläggande datafärgegenskaper:
 
-- **dataColors**: Listan med hexadecimala färgkoder som används för att färglägga former som representerar visuella objekt i Power BI Desktop. Den här listan kan innehålla så många eller så få färger som du vill. Om alla färger från den här listan har använts och det visuella objektet fortfarande behöver fler färger,återgår den till att använda standardfärgpaletten för Power BI.
+- **dataColors**: Listan med hexadecimala färgkoder som används för att färglägga former som representerar visuella objekt i Power BI Desktop. Den här listan kan innehålla så många eller så få färger som du vill. Om alla färger från den här listan har använts och det visuella objektet fortfarande behöver fler färger, återgår det till standardfärgpaletten för Power BI.
 - **bra**, **neutralt**, **dåligt**: Dessa egenskaper anger de statusfärger som används av vattenfallsdiagrammet och det visuella KPI-objektet.
 - **maximi**, **medel**, **minimi**, **noll**: Dessa färger anger de olika tonade färgerna i dialogrutan villkorsstyrd formatering.
 
@@ -312,10 +312,10 @@ Följande tabell visar de sex färgklasser som du kan formatera.  Namnen för **
 |---------|---------|
 | **firstLevelElements** <br> **foreground**    (inaktuell) | Bakgrundsfärg för etiketter (när de är utanför datapunkter) <br> Trendlinjefärg <br>  Standardfärg för textruta <br> Tabell- och matrisvärdefärger och summeringsteckenfärger Datastaplarnas axelfärg <br> Kortdataetiketter <br> Värde för pratbubbla <br> Målfärg för KPI <br>  Textfärg för KPI <br> Utsnittsobjektets färg (i fokusläge)  <br> Teckenfärg för listrutobjekt i utsnitt <br> Teckenfärg för numerisk indatamängd i utsnitt <br> Teckenfärg för utsnittsrubrik <br> Linjefärg för punktdiagram <br> Prognoslinjefärg för linjediagram <br> Färg för ledande linje på karta <br> Filterfönster- och korttextfärg|
 | **secondLevelElements** <br> **foregroundNeutralSecondary** (inaktuell) | "ljusa" [sekundära text klasser](#setting-formatted-text-defaults) <br> Etikettfärger  <br> Teckenförklaringsfärg <br> Axelförklaringsfärg <br> Teckenfärg för tabell- och matrisrubrik <br> Linjefärg för mätarmål och målriktningslinje <br>  Axelfärg för KPI-trend <br> Skjutreglagefärg <br> Teckenfärg för utsnittsobjekt <br> Färg på utsnittskonturen <br> Linjediagrammets hovringsfärg <br> Flerradskortsrubrikfärg <br> Linjefärg för banddiagram <br> Kantlinjefärg för formkarta <br> Teckenfärg för knapptext <br> Linjefärg för knappikon <br> Kantfärg för knapp |
-| **thirdLevelElements** <br >**backgroundLight** (inaktuell) | Axelrutnätsfärg <br> Rutnätsfärger för tabeller och matriser <br> Bakgrundsfärg för utsnittsrubrik (i fokusläge)  <br> Kantfärg för multiradskort  <br> Formfyllningsfärg <br> Bakgrundsfärg för mätarbåge <br> Bakgrundsfärg för tillämpat filterkort <br> |
-| **fourthLevelElements** <br> **foregroundNeutralTertiary** (inaktuell) | förklaring nedtonad färg <br> Kortkategorietikettfärg <br> Etikettfärg för flerradskortkategorier <br> Fältfärg för flerradskortkategorier <br> Snittfärg för konverteringsgrad för trattdiagram
+| **thirdLevelElements** <br >**backgroundLight** (inaktuell) | Axelrutnätsfärg <br> Rutnätsfärger för tabeller och matriser <br> Bakgrundsfärg för utsnittsrubrik (i fokusläge)  <br> Kantfärg för multiradskort  <br> Formfyllningsfärg <br> Bakgrundsfärg för mätarbåge <br> Bakgrundsfärg för tillämpat filterkort <br> När Bakgrund = FFFFFF: <br> Inaktiverad knappfyllningsfärg <br> Inaktiverad knappkonturfärg <br> |
+| **fourthLevelElements** <br> **foregroundNeutralTertiary** (inaktuell) | förklaring nedtonad färg <br> Kortkategorietikettfärg <br> Etikettfärg för flerradskortkategorier <br> Fältfärg för flerradskortkategorier <br> Snittfärg för konverteringsgrad för trattdiagram <br> Inaktiverad knapptextfärg <br> Inaktiverad knappikonlinjefärg <br> |
 | **background** | Bakgrundsfärg för etiketter (när de är innanför datapunkter) <br> Bakgrundsfärg för listruteobjekt för utsnitt  <br> Linjefärg för ringdiagram <br> Linjefärg för trädkarta <br> Bakgrundsfärg för kombinationsdiagram <br> Knappfyllningsfärg <br> Filterfönstret och det tillgängliga filterkortets bakgrundsfärg |
-| **secondaryBackground** <br> **backgroundNeutral** (inaktuell) | Rutnätskantfärg för tabeller och matriser <br> Standardfärg för formkarta <br> Fyllnadsfärg för band i banddiagram(när alternativet matcha serie är inaktiverat) |
+| **secondaryBackground** <br> **backgroundNeutral** (inaktuell) | Rutnätskantfärg för tabeller och matriser <br> Standardfärg för formkarta <br> Fyllnadsfärg för band i banddiagram(när alternativet matcha serie är inaktiverat) <br> När bakgrund != FFFFFF: <br> Inaktiverad knappfyllningsfärg <br> Inaktiverad knappkonturfärg <br> |
 | **tableAccent** | Åsidosätter tabell- och matrisrutnätets dispositionsfärg vid visning |
 
 Här är ett exempeltema som anger färgklasser:
@@ -419,7 +419,7 @@ Slutligen gäller att om du vill skapa en JSON-fil med ett utökat format och me
     }
 ```
 
-För avsnitten **visualName** och **cardName** använder du ett specifikt visuellt objekt och cardName. För närvarande är **styleName** alltid en asterisk (*), men i en framtida version kan du skapa olika format för dina visuella objekt och ge dem namn (liknar funktionen tabell- och matriststil). **propertyName** är namnet på formateringsalternativet och **propertyValue** är värdet på det formateringsalternativet.
+För avsnitten **visualName** och **cardName** använder du ett specifikt visuellt objekt och cardName. För närvarande är **styleName** alltid en asterisk (*), men i en framtida version kan du skapa olika format för dina visuella objekt och ge dem namn (liknar funktionen tabell- och matris-stil). **propertyName** är namnet på formateringsalternativet och **propertyValue** är värdet på det formateringsalternativet.
 
 För **visualName** och **cardName** kan du använda en asterisk om du vill att inställningen ska gälla för alla visuella objekt eller kort som har en egenskap. Om du använder en asterisk för både det visuella objektet och kortnamnet kommer du att tillämpa en inställning globalt i rapporten, till exempel en teckenstorlek eller en speciell teckensnittsfamilj för all text i alla visuella objekt.
 

@@ -6,19 +6,19 @@ ms.author: kesharab
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 02/14/2020
-ms.openlocfilehash: 4ce61fcd4f322abc0362956453d76ced9b78d887
-ms.sourcegitcommit: d55d3089fcb3e78930326975957c9940becf2e76
+ms.openlocfilehash: c87d1af9033044a8b79d6fe00d566d9b46c499fc
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78264253"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79377930"
 ---
 # <a name="how-to-debug-power-bi-visuals"></a>Felsöka visuella Power BI-objekt
 
 På den här sidan visas några tips för felsökning när du skapar ditt visuella objekt. Den innehåller grundläggande steg och visar skillnaderna mellan standard-frontend-program och felsökning av visuella Power BI-objekt.
-När du har läst artikeln kan du felsöka anpassade visuella objekt med hjälp av brytpunkter, loggundantag och catch-undantag i Chrome och Edge.
+När du har läst artikeln kan du felsöka visuella Power BI-objekt med hjälp av brytpunkter, loggundantag och catch-undantag i Chrome och Edge.
 
 ## <a name="using-breakpoints"></a>Använda brytpunkter
 
@@ -80,7 +80,7 @@ Du kan också ange att webbläsaren ska bryta vid insamlade undantag. Detta stop
 3. Klicka på ikonen **Bryt vid undantag** (sexhörning med en paussymbol).
 4. Välj **Bryt vid alla undantag**.
 
-![Fält för dataroller](./media/how-to-debug-edge.png)
+![Fält för dataroller](media/visuals-how-to-debug/how-to-debug-edge.png)
 
 ## <a name="chrome"></a>Chrome
 
@@ -89,8 +89,8 @@ Du kan också ange att webbläsaren ska bryta vid insamlade undantag. Detta stop
 3. Klicka på ikonen **Bryt vid undantag** (stopptecken med en paussymbol).
 4. Markera kryssrutan **pausa vid fångade undantag**.
 
-![Fält för dataroller](./media/how-to-debug-chrome.png)
+![Fält för dataroller](media/visuals-how-to-debug/how-to-debug-chrome.png)
 
 ## <a name="next-steps"></a>Nästa steg
-* [Felsöka anpassade visuella Power BI-objekt](../power-bi-custom-visuals-troubleshoot.md)
-* Mer information och svar på frågor finns i [Vanliga frågor och svar om visuella Power BI-objekt](../power-bi-custom-visuals-faq.md#organizational-power-bi-visuals)
+* [Felsöka anpassade visuella Power BI-objekt](power-bi-custom-visuals-troubleshoot.md)
+* Mer information och svar på frågor finns i [Vanliga frågor och svar om visuella Power BI-objekt](power-bi-custom-visuals-faq.md#organizational-power-bi-visuals)

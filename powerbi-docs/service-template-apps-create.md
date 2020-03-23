@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/15/2019
 ms.author: tebercov
-ms.openlocfilehash: 649f4d002c9adbfa882c4ee4320f040f490fd116
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.openlocfilehash: 6b7b472b0c16c47ae2497c5dc8c74cc1c4d778d4
+ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79041733"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79436029"
 ---
 # <a name="create-a-template-app-in-power-bi"></a>Skapa en mallapp i Power BI
 
@@ -30,7 +30,7 @@ Här följer kraven för att skapa en mallapp:
 - En [Power BI Pro-licens](service-self-service-signup-for-power-bi.md)
 - En [installation av Power BI Desktop](desktop-get-the-desktop.md) (valfritt)
 - Kunskap om [grundläggande begrepp i Power BI](service-basic-concepts.md)
-- Behörighet för att dela en mallapp offentligt. Se [mallappinställningarna i Power BI-administratörsportalen](service-admin-portal.md#template-apps-settings) för mer information.
+- Behörigheter för att dela en mall-app offentligt (mer information finns i [administrationsportalen för Power BI, inställningar för mall-app](service-admin-portal.md#template-apps-settings)
 
 ## <a name="create-the-template-workspace"></a>Skapa mallarbetsytan
 
@@ -87,9 +87,9 @@ Nu när du har innehåll på arbetsytan är du redo att paketera det i en mallap
 
     Aktivera **Nytt navigeringsverktyg** där du kan definiera appens navigeringsfönster (mer information finns i [Utforma navigeringsfunktionen](service-create-distribute-apps.md#design-the-navigation-experience) i den här artikeln).
 
-   ![Ange landningssida för appen](media/service-template-apps-install-distribute/power-bi-install-app-content.png)
+   ![Ange landningssida för appen](media/service-template-apps-create/power-bi-install-app-content.png)
     
-    **Applandningssida:** Om du bestämmer dig för att välja bort navigeringsverktyget har du alternativet att välja applandningssidan. Ange en rapport eller instrumentpanel som ska vara landningssida för din app. Använd en landningssida som ger rätt intryck.
+    **Applandningssida:** Om du bestämmer dig för att välja bort navigeringsverktyget har du alternativet att välja appstartsidan. Ange en rapport eller instrumentpanel som ska vara landningssida för din app. Använd en landningssida som ger rätt intryck.
 
     **Kontroll**
 
@@ -109,7 +109,7 @@ Nu när du har innehåll på arbetsytan är du redo att paketera det i en mallap
     - **Krävs**: ange det här om den som installerar måste ange ett användarspecifikt värde.
     - **Lås**: låsning förhindrar att installationsprogrammet uppdaterar en parameter.
 
-    **Åtkomst**: under testfasen kan du avgöra vilka personer i organisationen som ska kunna installera och testa appen. Oroa dig inte, du kan alltid gå tillbaka och ändra de här inställningarna senare (inställningarna påverkar inte åtkomsten till den distribuerade mallappen).
+    **Åtkomst**: under testfasen kan du avgöra vilka personer i organisationen som ska kunna installera och testa appen. Oroa dig inte, du kan alltid komma tillbaka och ändra inställningarna senare. Inställningen påverkar inte åtkomsten till den distribuerade mall-appen.
 
 2. Välj **Skapa app**.
 

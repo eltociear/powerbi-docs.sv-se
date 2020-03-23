@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 07/27/2018
 LocalizationGroup: Create reports
-ms.openlocfilehash: 9cc5c40328955f54cb0f37567d7ff91d37a302ce
-ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
+ms.openlocfilehash: 020967948e3f0551de50e4485be0dde450a4f18b
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74128246"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79378695"
 ---
 # <a name="use-r-powered-power-bi-visuals-in-power-bi"></a>Använd R-baserade visuella Power BI-objekt i Power BI
 
@@ -49,7 +49,7 @@ Här följer stegen för att bläddra efter och välja visuella objekt från onl
 
    ![Visuellt R-objekt 3a](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_3a.png)
 
-   Du behöver inte installera R för att använda R-baserade visuella Power BI-objekt i **Power BI-tjänsten**, men om du vill använda R-baserade visuella Power BI-objekt i **Power BI Desktop** *måste* du installera R på den lokala datorn. Du kan hämta R från följande platser:
+   Du behöver inte installera R för att använda R-baserade visuella Power BI-objekt i **Power BI-tjänsten**, men om du vill använda R-baserade visuella Power BI-objekt i **Power BI Desktop***måste* du installera R på den lokala datorn. Du kan hämta R från följande platser:
 
    * [CRAN](https://cran.r-project.org/)
    * [MRO](https://mran.microsoft.com/)
@@ -129,7 +129,7 @@ Power BI-teamet arbetar aktivt med att åtgärda dessa problem innan de når dig
 
    b.  Från R-konsolen kör du följande:
 
-       source(“C:/Users/david/Downloads/ScriptInstallPackagesForForecastWithWorkarounds.R”)
+       source("C:/Users/david/Downloads/ScriptInstallPackagesForForecastWithWorkarounds.R")
 
    Vanliga standardinstallationsplatser är:
 
@@ -149,7 +149,7 @@ Power BI-teamet arbetar aktivt med att åtgärda dessa problem innan de når dig
 
 Ta en titt på följande extra information om R i Power BI.
 
-* [Power BI Visuals Gallery i Power BI](https://app.powerbi.com/visuals/)
+* [Power BI Visuals Gallery](https://app.powerbi.com/visuals/)
 * [Köra R-skript i Power BI Desktop](desktop-r-scripts.md)
 * [Skapa visuella R-objekt i Power BI Desktop](desktop-r-visuals.md)
 * [Använd en extern R IDE med Power BI](desktop-r-ide.md)

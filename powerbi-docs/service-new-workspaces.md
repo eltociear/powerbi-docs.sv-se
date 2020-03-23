@@ -6,15 +6,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/12/2020
+ms.date: 03/16/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 976d53a5a74bc077d3d4642ccec336b1225344ae
-ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
+ms.openlocfilehash: 27ebe50030fbd06f65be5530ee2a2c0a7897f0f5
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77426574"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488739"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Organisera arbete på de nya arbetsytorna i Power BI
 
@@ -54,7 +54,7 @@ Nya och uppgraderade arbetsytor och befintliga, klassiska arbetsytor fungerar br
 
 ## <a name="roles-in-the-new-workspaces"></a>Roller i de nya arbetsytorna
 
-Om du vill bevilja åtkomst till en ny arbetsyta, lägger du till användargrupper eller enskilda personer till en av arbetsyterollerna läsare, medlemmar, deltagare eller administratörer. Alla i en användargrupp får den roll som du har definierat. Om en person finns i flera användargrupper, får personen den högsta av de behörighetsnivåer som följer av de roller som denne har tilldelats.
+Om du vill bevilja åtkomst till en ny arbetsyta, lägger du till användargrupper eller enskilda personer till en av arbetsyterollerna administratörer, medlemmar, deltagare eller läsare. Alla i en användargrupp får den roll som du har definierat. Om en person finns i flera användargrupper, får personen den högsta av de behörighetsnivåer som följer av de roller som denne har tilldelats.
 
 Med roller kan du hantera vem som kan göra vad i en arbetsyta, så att teamen kan samarbeta. De nya arbetsytorna gör att du kan tilldela roller till enskilda användare och användargrupper: säkerhetsgrupper, Office 365-grupper och distributionslistor. 
 
@@ -70,11 +70,14 @@ Här är funktionerna för de fyra rollerna: administratörer, medlemmar, deltag
 | Publicera och uppdatera en app. |  X | X  |   |   |
 | Dela ett objekt eller dela en app.<sup>1</sup> |  X | X  |   |   |
 | Tillåta att andra delar objekt igen.<sup>1</sup> |  X | X  |   |   |
+| Framhäva appar på kollegors startsida |  X | X  |   |   |
+| Framhäva instrumentpaneler och rapporter på kollegors startsida |  X | X  | X |   |
 | Skapa, redigera och ta bort innehåll på arbetsytan.  |  X | X  | X  |   |
 | Publicera rapporter till arbetsytan och ta bort innehåll.  |  X | X  | X  |   |
 | Skapa en rapport på en annan arbetsyta baserat på en datamängd i den här arbetsytan.<sup>1</sup> |  X | X  | X  |   |
 | Kopiera en rapport.<sup>2</sup> | X | X | X |  |
 | Visa och interagera med ett objekt.<sup>3</sup> |  X | X  | X  | X  |
+| Läs data som lagrats på arbetsytedataflöden | X | X | X | X |
 
 1. Deltagare och användare kan dela objekt i en arbetsyta om de har omdelningsbehörighet.
 2. För att kunna kopiera en rapport och skapa en rapport i en annan arbetsyta baserat på en datauppsättning i den här arbetsytan måste du uppfylla följande kriterier:
@@ -99,7 +102,7 @@ Vi har gjort om vissa funktioner för de nya arbetsytorna. Här är de förändr
 * När du skapar de här arbetsytorna skapas inte Office 365-grupper som för klassiska arbetsytor. Du kan dock nu använda en Office 365-grupp för att ge användare åtkomst till din arbetsyta genom att tilldela den till en roll. 
 * I klassiska arbetsytor kan du bara lägga till enskilda personer till medlems- och administratörslistor. I de nya arbetsytorna kan du lägga till flera AD-säkerhetsgrupper, distributionslistor eller Office 365-grupper till de här listorna för enklare användarhantering. 
 - Du kan skapa ett innehållspaket för organisationen från en klassisk arbetsyta. Du kan inte skapa sådana från de nya arbetsytorna.
-- Du kan använda ett innehållspaket för organisationen från en klassisk arbetsyta. Du kan inte använda sådana från de nya arbetsytorna.
+- Du kan använda ett innehållspaket för organisationen från en klassisk arbetsyta. Du kan inte använda dessa från de nya arbetsytorna.
 
 ## <a name="workspace-contact-list"></a>Arbetsytans kontaktlista
 I den nya **kontaktlistan** kan du ange vilka användare som ska informeras om problem som kan uppstå i arbetsytan. Som standard informeras alla användare och grupper som angetts som arbetsyteadministratör, men du kan justera listan. Användare eller grupper som finns med i kontaktlistan visas i användargränssnittet för att hjälpa användarna att få hjälp med arbetsytan. 
@@ -140,7 +143,7 @@ Begränsningar att känna till:
 
 ## <a name="workspace-features-that-work-differently"></a>Arbetsytefunktioner som fungerar annorlunda
 
-Vissa funktioner fungerar annorlunda i de nya arbetsytorna jämfört med de aktuella arbetsytorna. De här skillnaderna är avsiktliga och baseras på feedback som vi har fått från kunder. De kommer att möjliggöra en mer flexibel metod för samarbete med arbetsytor:
+Vissa funktioner fungerar annorlunda i de nya arbetsytorna jämfört med de aktuella arbetsytorna. De här skillnaderna är avsiktliga och baseras på feedback som vi har fått från kunder. De möjliggör en mer flexibel metod för samarbete med arbetsytor:
 
 - Licensieringskontroll: Vid publicering av rapporter till den nya arbetsyteupplevelsen aktiveras de befintliga licensieringsreglerna som kräver en Power BI Pro-licens för användare som samarbetar i arbetsytor eller som delar innehåll till andra i Power BI-tjänsten. För användare utan Pro-licens visas ett felmeddelande om att ”endast användare med Power BI Pro-licenser kan publicera till här arbetsytan”.
 - Medlemmar kan eller kan inte dela igen: ersätts med rollen Deltagare

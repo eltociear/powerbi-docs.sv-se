@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/26/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 5f6f0db28103b937d2074e6f339c9aaa61bfd688
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 2492996c8bbc6ea7a8d359b4b1015de67bb17430
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879645"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79378718"
 ---
 # <a name="create-tooltips-based-on-report-pages-in-power-bi-desktop"></a>Skapa knappbeskrivningar baserat på rapportsidor i Power BI Desktop
 Du kan skapa visuellt avancerade **rapportknappbeskrivningar** som visas när du hovrar över visuella objekt, baserat på rapportsidor som du skapar i **Power BI Desktop**. Genom att skapa en rapportsida som fungerar som en knappbeskrivning kan dina anpassade knappbeskrivningar innehålla visuella objekt, bilder och andra samlingar av objekt som du skapar på rapportsidan. 
@@ -112,7 +112,7 @@ När ett visuellt objekt korsmarkeras i en rapport visas alltid korsmarkerade da
 Det finns några begränsningar och saker för **knappbeskrivningar** som du bör tänka på.
 
 * Från och med **Power BI Desktop**-versionen för december 2018 har visuella knappobjekt också stöd för knappbeskrivningar.
-* Rapportknappbeskrivningar stöds inte för anpassade visuella objekt. 
+* Rapportknappbeskrivningar stöds inte för visuella Power BI-objekt. 
 * Kluster stöds för närvarande inte som fält som kan visas i rapportknappbeskrivningar. 
 * När du väljer ett fält som ska visas för rapportknappbeskrivningar, när du använder ett fält jämfört med en kategori, visas endast den angivna knappbeskrivningen när sammanfattning med det valda fältet matchar i visuella objekt som innehåller det fältet. 
 
