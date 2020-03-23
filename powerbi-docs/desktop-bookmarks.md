@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/18/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 08d222f03991bdf605f8e465ff0152d40d07d815
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 00ea3e70b34ecdaf2c5bd8b8728153bfb26f899b
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "75761897"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79378994"
 ---
 # <a name="create-bookmarks-in-power-bi-desktop-to-share-insights-and-build-stories"></a>Skapa bokmärken i Power BI Desktop för att dela insikter och skapa berättelser
 Med *bokmärkesfunktionen* i Power BI Desktop kan du spara den aktuella konfigurerade vyn av en rapportsida, inklusive filtrering och tillståndet för visuella objekt. Du kan sedan gå tillbaka till det tillståndet genom att välja det sparade bokmärket. 
@@ -198,7 +198,7 @@ Så här aktiverar du funktionen för förhandsgranskning av bokmärken:
 ## <a name="limitations-and-considerations"></a>Begränsningar och överväganden
 Det finns några begränsningar och saker du bör tänka på för den här versionen av bokmärkesfunktionerna.
 
-* De flesta anpassade visuella objekt bör fungera väl med bokmärkning. Men om du stöter på problem med bokmärkning och ett anpassat visuellt objekt, kontaktar du den person som skapat det anpassade visuella objektet och ber dem att lägga till stöd för bokmärken till sina visuella objekt. 
+* De flesta visuella Power BI-objekt bör fungera väl med bokmärkning. Men om du stöter på problem med bokmärkning och ett anpassat visuellt objekt, kontaktar du den person som skapat det anpassade visuella objektet och ber dem att lägga till stöd för bokmärken till sina visuella objekt. 
 * Om du lägger till ett visuellt objekt på en rapportsida efter att du har skapat ett bokmärke kommer det visuella objektet att visas i dess standardläge. Det innebär att om du introducerar ett utsnitt på en sida där du tidigare skapade bokmärken så fungerar utsnittet som i dess standardtillstånd.
 * Om du flyttar ett visuellt objekt efter att ett bokmärke har skapats så återges det automatiskt i bokmärket. 
 

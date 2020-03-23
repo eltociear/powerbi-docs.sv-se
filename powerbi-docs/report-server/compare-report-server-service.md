@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc
 ms.date: 03/04/2020
-ms.openlocfilehash: 4c48b9c2695c7feab5897527c9ff2fbf2a2d0455
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.openlocfilehash: 7762ace1da913713567b79a9650b3f07aa71146d
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78920946"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79381064"
 ---
 # <a name="comparing-power-bi-report-server-and-the-power-bi-service"></a>En jämförelse av Power BI-rapportservern och Power BI-tjänsten
 
@@ -52,7 +52,7 @@ Power BI-rapportservern och Power BI-tjänsten har många likheter och vissa vik
 | Avancerat Office 365-samarbete | Nej | Ja | [Samarbeta på en arbetsyta](../service-collaborate-power-bi-workspace.md) med Office 365 |
 | R-visualiseringar | Nej | Ja | [Skapa visuella R-objekt](../desktop-r-visuals.md) i Power BI Desktop och publicera dem till Power BI-tjänsten. Du kan inte spara Power BI-rapporter med visuella R-objekt till Power BI-rapportserver.  |
 | Förhandsgranskningsfunktioner | Nej | Ja | [Anmäl dig till förhandsversionsfunktioner](../consumer/end-user-preview-features.md) i Power BI-tjänsten |
-| Anpassade visuella objekt | Ja | Ja | [Anpassade visuella objekt i Power BI](../developer/power-bi-custom-visuals.md) |
+| Visuella objekt för Power BI | Ja | Ja | [Visuella Power BI-objekt](../developer/visuals/power-bi-custom-visuals.md) |
 | Sammansatta modeller | Nej | Ja |
 | Power BI Desktop | Version som är optimerad för rapportservern och som kan laddas ned med rapportservern | Version som är optimerad för Power BI-tjänsten, tillgänglig från Windows Store | [Power BI Desktop för rapportservern](https://powerbi.microsoft.com/report-server/) <br><br> [Power BI Desktop för Power BI-tjänsten](https://aka.ms/pbidesktopstore) |
 

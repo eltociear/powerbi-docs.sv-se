@@ -9,18 +9,18 @@ ms.topic: conceptual
 ms.date: 01/14/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 8737a0e9b2dd8ba17d28962ed51e24ec0c5cefc4
-ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
+ms.openlocfilehash: 12c2d839c14a4a982505f56b7d605bacc5edc728
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76040458"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79381432"
 ---
 # <a name="visualization-types-in-power-bi"></a>Visualiseringstyper i Power BI
 ## <a name="power-bi-visualizations"></a>Power BI-visualiseringar
 Vi planerar nya visualiseringar, håll ögonen öppna!
 
-Kolla även in [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) där du hittar en växande lista med [anpassade visuella objekt](../developer/power-bi-custom-visuals.md) som du kan hämta och använda i dina egna instrumentpaneler och rapporter. Känner du dig kreativ? [Läs hur du skapar och lägger till dina egna visuella objekt på den här community-webbplatsen](../developer/office-store.md).  
+Kolla även in [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) där du hittar en växande lista med [visuella Power BI-objekt](../developer/visuals/power-bi-custom-visuals.md) som du kan ladda ned och använda i dina egna instrumentpaneler och rapporter. Känner du dig kreativ? [Läs hur du skapar och lägger till dina egna visuella objekt på den här community-webbplatsen](../developer/visuals/office-store.md).  
 
 ## <a name="list-of-visualizations-available-in-power-bi"></a>Lista över visuella objekt som är tillgängliga i Power BI
 Alla dessa visuella objekt kan läggas till Power BI-rapporter, anges i frågor och svar och fästas på instrumentpaneler.

@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 01/30/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 019a3af81cd3661307fd9de6d0577ac58a11ae6a
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.openlocfilehash: 58f9a56d41bd35987f7c258fafdbff26aedf5df1
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78919803"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488831"
 ---
 # <a name="embed-a-report-in-a-secure-portal-or-website"></a>Bädda in en rapport i en säker portal eller webbplats
 
@@ -104,7 +104,7 @@ newUrl += "&$filter=Industries/Industry eq '" + filterValue + "'";
 
 }
 
-//Assumes there’s an iFrame on the page with id=”iFrame”
+//Assumes there's an iFrame on the page with id="iFrame"
 
 var report = document.getElementById("iFrame")
 
@@ -115,7 +115,7 @@ report.src = newUrl;
 
 ![Filtrera](media/service-embed-secure/secure-embed-filter.png)
 
-Du kan lägga till så många knappar du vill skapa en anpassad upplevelse med lite kod. 
+Du kan lägga till så många knappar du vill för att skapa en anpassad upplevelse med lite kod. 
 
 ## <a name="considerations-and-limitations"></a>Överväganden och begränsningar
 
@@ -133,9 +133,9 @@ Du kan lägga till så många knappar du vill skapa en anpassad upplevelse med l
 
 * Den klassiska SharePoint-servern stöds inte eftersom den kräver tidigare versioner av Internet Explorer än 11 eller aktivering av läget Kompatibilitetsvy.
 
-* Om du vill uppnå en enkel inloggningsupplevelse använder du alternativet [Bädda in i SharePoint Online](service-embed-report-spo.md) eller skapar en anpassad integrering med hjälp av inbäddningsmetoden [användaren äger data](developer/embed-sample-for-your-organization.md). 
+* Om du vill uppnå en enkel inloggningsupplevelse använder du alternativet [Bädda in i SharePoint Online](service-embed-report-spo.md) eller skapar en anpassad integrering med hjälp av inbäddningsmetoden [användaren äger data](developer/embedded/embed-sample-for-your-organization.md). 
 
-* Den automatiska autentiseringsfunktionen som tillhandahålls av alternativet **Bädda in** fungerar inte med Power BI JavaScript-API:et. När det gäller Power BI JavaScript-API:et använder du metoden [användaren äger data](developer/embed-sample-for-your-organization.md) för inbäddning. 
+* Den automatiska autentiseringsfunktionen som tillhandahålls av alternativet **Bädda in** fungerar inte med Power BI JavaScript-API:et. När det gäller Power BI JavaScript-API:et använder du metoden [användaren äger data](developer/embedded/embed-sample-for-your-organization.md) för inbäddning. 
 
 * Livstiden för autentiseringstoken styrs utifrån dina AAD-inställningar. När autentiseringstoken upphör att gälla måste användaren uppdatera sin webbläsare för att få en uppdaterad autentiseringstoken. Livslängden är som standard en timme, men den kan vara kortare eller längre i din organisation.
 

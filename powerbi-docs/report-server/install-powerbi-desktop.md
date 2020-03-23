@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 02/13/2020
-ms.openlocfilehash: ee789274f6581423ed7adebc5b662a732dbeaa7a
-ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
+ms.openlocfilehash: 74e2c60bfe0d6d494fc1175fb001b4b4b7eb24fa
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77426666"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79381133"
 ---
 # <a name="install-power-bi-desktop-optimized-for-power-bi-report-server"></a>Installera Power BI Desktop som har optimerats för Power BI-rapportservern
 
@@ -70,7 +70,7 @@ För Power BI Desktop som har optimerats för Power BI-rapportserver väljer du 
 
 ### <a name="report-visuals-in-a-browser"></a>Visuellt rapportobjekt i en webbläsare
 
-Rapporter i Power BI-rapportservern har stöd för nästan alla visualiseringar, inklusive anpassade visualiseringar. Rapporter i Power BI-rapportservern stöder inte:
+Rapporter i Power BI-rapportservern har stöd för nästan alla visualiseringar, inklusive visuella Power BI-objekt. Rapporter i Power BI-rapportservern stöder inte:
 
 * R-visualiseringar
 * ArcGIS-mappar
@@ -89,7 +89,7 @@ Rapporter i Power BI-rapportservern stöder inte de här funktionerna i Power BI
 
 * R-visualiseringar
 * ArcGIS-mappar
-* Anpassade visuella objekt
+* Visuella objekt för Power BI
 * Synliga sökvägar
 * Geofiltering eller streckkoder
 

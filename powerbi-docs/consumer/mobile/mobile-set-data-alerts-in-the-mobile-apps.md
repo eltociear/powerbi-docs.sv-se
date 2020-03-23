@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/11/2019
 ms.author: painbar
-ms.openlocfilehash: 3af0470e29b4f71cf8948bff4c1b317304533ac8
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.openlocfilehash: ff33bc2005918ba08c6098afd91a020e0cb6ba79
+ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79114667"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79435822"
 ---
 # <a name="set-data-alerts-in-the-power-bi-mobile-apps"></a>Ställa in dataaviseringar i Power BI-mobilapparna
 Gäller för:
@@ -103,6 +103,10 @@ Du kan hantera enskilda aviseringar i Power BI-appen eller [hantera alla varning
 5. Om du vill ta bort aviseringen helt knackar du på papperskorgen ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-android-delete-alert-icon.png).
 
 ## <a name="data-alerts-on-a-windows-device"></a>Dataaviseringar på en Windows-enhet
+
+>[!NOTE]
+>Stöd för Power BI-mobilappen för **telefoner som använder Windows 10 Mobile** kommer att upphöra den 16 mars 2021. [Läs mer](https://go.microsoft.com/fwlink/?linkid=2121400)
+
 ### <a name="set-data-alerts-on-a-windows-device"></a>Ställ in dataaviseringar på en Windows-enhet
 1. Tryck på en tal- eller mätarpanel på en instrumentpanel att öppna den.  
 2. Tryck på klockikonen ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-windows-10-alert-bell-off.png) för att lägga till en avisering.  

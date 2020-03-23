@@ -8,12 +8,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 01/03/2020
 ms.author: v-pemyer
-ms.openlocfilehash: cf11b98d7eacd7b1e245fb0aed62d0f14e7f4c4c
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.openlocfilehash: b87848953722d33235a11729a3643c627cca7234
+ms.sourcegitcommit: 646d2de454a2897dc52cbc02b7743aaa021bac04
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79041340"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79525624"
 ---
 # <a name="migrate-sql-server-reporting-services-reports-to-power-bi"></a>Migrera SQL Server Reporting Services-rapporter till Power BI
 
@@ -194,6 +194,7 @@ Mer information om den här artikeln finns i följande resurser:
 - [Guide till datahämtning i sidnumrerade rapporter](report-paginated-data-retrieval.md)
 - [Använda sidnumrerade rapporter i Power BI](report-paginated-or-power-bi.md)
 - [Sidnumrerade rapporter i Power BI: Vanliga frågor och svar](../paginated-reports/paginated-reports-faq.md)
+- [Nätbaserad kurs: Sidnumrerade rapporter på en dag](../paginated-reports/paginated-reports-online-course.md)
 - [Vanliga frågor och svar om Power BI Premium](../service-premium-faq.md)
 - [Verktyget RDL Migration](https://github.com/microsoft/RdlMigration)
 - Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)

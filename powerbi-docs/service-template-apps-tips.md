@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/26/2019
 ms.author: tebercov
-ms.openlocfilehash: 632c1f1a9f0cba3f403cae4a471df6b7e699f481
-ms.sourcegitcommit: a1409030a1616027b138128695b80f6843258168
+ms.openlocfilehash: dcb7ba5dabbbb0387b92908f7e299d61f2145d44
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76710163"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79376602"
 ---
 # <a name="tips-for-authoring-template-apps-in-power-bi"></a>Tips för att skapa mallappar i Power BI
 
@@ -157,7 +157,7 @@ För att kunna omdirigera en användare till appens nedladdningslänk i Power BI
 | Datakällor | Datakällor som har stöd för schemalagd datauppdatering i molnet är tillåtna. <br>Stöds ej: <li> DirectQuery</li><li>Live-anslutningar (inte Azure AS)</li> <li>Lokala datakällor (personlig gateway och företagsgateway stöds inte)</li> <li>Realtid (pushdatamängder stöds inte)</li> <li>Sammansatta modeller</li></ul> |
 | Datauppsättning: över arbetsytor | Inga datauppsättningar över arbetsytor är tillåtna  |
 | Frågeparametrar | Stöds ej: Parametrar av typen ”Any” eller ”Binary” blockerar uppdateringsåtgärden för datauppsättningen |
-| Anpassade visuella objekt | Bara som offentligt tillgängliga anpassade visuella objekt stöds. [Anpassade visuella objekt för organisationer](developer/power-bi-custom-visuals-organization.md) stöds inte |
+| Visuella objekt för Power BI | Bara som offentligt tillgängliga visuella Power BI-objekt stöds. [Visuella Power BI-objekt för organisationer](developer/visuals/power-bi-custom-visuals-organization.md) stöds inte |
 
 ## <a name="next-steps"></a>Nästa steg
 

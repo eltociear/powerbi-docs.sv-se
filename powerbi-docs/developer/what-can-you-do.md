@@ -1,6 +1,6 @@
 ---
 title: Vad kan utvecklare göra med Power BI?
-description: Power BI erbjuder en mängd olika alternativ för utvecklare. Allt från inbäddning till anpassad visuell information och strömning av datauppsättningar.
+description: Power BI erbjuder en mängd olika alternativ för utvecklare. Allt från inbäddning till visuella Power BI-objekt och strömning av datauppsättningar.
 author: KesemSharabi
 ms.author: kesharab
 ms.topic: overview
@@ -8,16 +8,16 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: mvc
 ms.date: 03/15/2019
-ms.openlocfilehash: 4e8ce6d9a892abf3e24ecae6dee1e3ea23504d31
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.openlocfilehash: c92eea927368d885a297fd83d39f528f7dae848e
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79041365"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79487796"
 ---
 # <a name="what-can-developers-do-with-power-bi"></a>Vad kan utvecklare göra med Power BI?
 
-Utvecklare har olika alternativ som försöker inkludera Power BI-innehåll i program. Som utvecklare kan du använda alternativ, som inkluderar **bädda in med Power BI**, **anpassade visuella objekt** och **skicka data till Power BI**.
+Utvecklare har olika alternativ som försöker inkludera Power BI-innehåll i program. Som utvecklare kan du använda de här alternativ, som inkluderar **inbäddning med Power BI**, **visuella Power BI-objekt** och **skicka data till Power BI**.
 
 ## <a name="embedding-power-bi-content"></a>Bädda in Power BI-innehåll
 
@@ -27,19 +27,19 @@ Med [konfigurationsverktyget för inbäddning](https://aka.ms/embedsetup) kommer
 
 Välj den lösning som passar dig:
 
-* [Inbäddning för dina kunder](embedding.md#embedding-for-your-customers) ger dig möjlighet att bädda in instrumentpaneler och rapporter för användare som inte har något Power BI-konto. Kör lösningen [Embed for your customers](https://aka.ms/embedsetup/AppOwnsData) (Bädda in för dina kunder).
+* [Inbäddning för dina kunder](embedded/embedding.md#embedding-for-your-customers) ger dig möjlighet att bädda in instrumentpaneler och rapporter för användare som inte har något Power BI-konto. Kör lösningen [Embed for your customers](https://aka.ms/embedsetup/AppOwnsData) (Bädda in för dina kunder).
 
-* [Inbäddning för din organisation](embedding.md#embedding-for-your-organization) låter dig utöka Power BI-tjänsten. Kör lösningen [Embed for your organization](https://aka.ms/embedsetup/UserOwnsData) (Bädda in för din organisation).
+* [Inbäddning för din organisation](embedded/embedding.md#embedding-for-your-organization) låter dig utöka Power BI-tjänsten. Kör lösningen [Embed for your organization](https://aka.ms/embedsetup/UserOwnsData) (Bädda in för din organisation).
 
 ![PBIE-exempel](media/what-can-you-do/what-can-you-do-02.png)
 
-Läs mer om inbäddning med Power BI i [Inbäddning med Power BI](embedding.md).
+Läs mer om inbäddning med Power BI i [Inbäddning med Power BI](embedded/embedding.md).
 
-## <a name="developing-custom-visuals"></a>Utveckla anpassade visuella objekt
+## <a name="developing-power-bi-visuals"></a>Utveckla visuella Power BI-objekt
 
-Du kan använda anpassade visuella objekt med Power BI om du vill skapa en unik form av visuella objekt som är skräddarsydd för dig. Dessa anpassade visuella objekt skapas ofta av utvecklare. De byggs när de visuella objekt som ingår i Power BI inte helt uppfyller dina behov.
+Du kan använda visuella Power BI-objekt med Power BI om du vill skapa en unik form av visuella objekt som är skräddarsydd för dig. Dessa visuella Power BI-objekt skapas ofta av utvecklare. De byggs när de visuella objekt som ingår i Power BI inte helt uppfyller dina behov.
 
-Med anpassade visuell objekt kan du skapa visuell objekt för användning i Power BI-rapporter. Anpassade visuella objekt skrivs i TypeScript, som är en supermängd till JavaScript. TypeScript stöder vissa avancerade funktioner och snabb åtkomst till ES6-/ES7-funktioner. Visual formatering hanteras med sammanhängande formatmallar (CSS). För din bekvämlighet använder vi förkompileraren Less som stöder avancerade funktioner, som kapsling, variabler, villkor, slingor och fler. Du kan skriva vanlig CSS i Less-filen om du inte vill använda någon av dessa funktioner.
+Med visuella Power BI-objekt kan du skapa visuella objekt för användning i Power BI-rapporter. Visuella Power BI-objekt skrivs i TypeScript, som är en supermängd till JavaScript. TypeScript stöder vissa avancerade funktioner och snabb åtkomst till ES6-/ES7-funktioner. Visual formatering hanteras med sammanhängande formatmallar (CSS). För din bekvämlighet använder vi förkompileraren Less som stöder avancerade funktioner, som kapsling, variabler, villkor, slingor och fler. Du kan skriva vanlig CSS i Less-filen om du inte vill använda någon av dessa funktioner.
 
 ![CV-exempel](media/what-can-you-do/powerbi-custom-visual-store.png)
 
@@ -57,7 +57,7 @@ Information om några av de saker du kan göra med Power BI-API:er finns i [Vad 
 
 ## <a name="next-steps"></a>Nästa steg
 
-[Bädda in med Power BI](embedding.md)  
+[Bädda in med Power BI](embedded/embedding.md)  
 
 [Utveckla ett anpassat visuellt objekt i Power BI](https://microsoft.github.io/PowerBI-visuals/docs/step-by-step-lab/developing-a-power-bi-custom-visual/)
 

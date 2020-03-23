@@ -7,12 +7,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/09/2020
 ms.author: painbar
-ms.openlocfilehash: 010513ec8ca908167bbc99255a6fd207ca0ccfba
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.openlocfilehash: 67daafc0938216b135b31d3190c191402e9a10de
+ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79040921"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79435385"
 ---
 # <a name="view-on-premises-reports-and-kpis-in-the-power-bi-windows-app"></a>Visa lokala rapporter och KPI:er i Power BI Windows-appen
 Power BI-appen för Windows 10 erbjuder pekaktiverad live-mobilåtkomst till din viktiga lokala företagsinformation i SQL Server 2016 Reporting Services. 
@@ -26,8 +26,9 @@ I Power BI-appen för Windows 10 visar du sedan KPS, mobila rapporter och Power 
 
 > [!NOTE]
 > Din enhet måste köra Windows 10. Appen fungerar bäst på enheter med minst 1 GB RAM-minne och 8 GB intern lagring.
-> 
-> 
+
+>[!NOTE]
+>Stöd för Power BI-mobilappen för **telefoner som använder Windows 10 Mobile** kommer att upphöra den 16 mars 2021. [Läs mer](https://go.microsoft.com/fwlink/?linkid=2121400)
 
 ## <a name="explore-samples-without-a-sql-server-2016-reporting-services-server"></a>Utforska prover utan en SQL Server 2016 Reporting Services-server
 Även om du inte har åtkomst till en Reporting Services-webbportal, kan du fortfarande utforska funktionerna i Reporting Services-mobila rapporter.

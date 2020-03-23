@@ -2,19 +2,19 @@
 title: Använda formkartor i Power BI Desktop (förhandsversion)
 description: Skapa relativa jämförelser för områden med formkartor i Power BI Desktop
 author: mihart
-ms.reviewer: amanda, justyna, sujata
+ms.reviewer: justyna, sujata
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/14/2019
+ms.date: 03/18/2020
 ms.author: mihart
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 3a043a343994c02a916102b83fe79d1ccd5208bf
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 67c2acad74827c515c92ed0d16dd642170b8dc61
+ms.sourcegitcommit: 646d2de454a2897dc52cbc02b7743aaa021bac04
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75762334"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79525670"
 ---
 # <a name="create-shape-map-visualizations-in-power-bi-desktop-preview"></a>Skapa formkartevisualiseringar i Power BI Desktop (förhandsversion)
 
@@ -22,7 +22,7 @@ ms.locfileid: "75762334"
 
 Skapa en **Formkarta** för att jämföra regioner på en karta med hjälp av färg. Till skillnad från **Karta** kan **Formkarta** inte visa exakta geografiska platser för datapunkter på en karta. Istället är dess huvudsakliga syfte att visa relativa jämförelser mellan regioner med hjälp av olika färger.
 
-**Formkartor** är baserade på ESRI/TopoJSON-kartor som kan använda anpassade kartor skapade av dig. Exempel på anpassade kartor är geografiska kartor, placeringskartor, plankartor med mera. Möjligheten att använda anpassade kartor är inte tillgänglig i den här förhandsversionen av **Formkarta**.
+**Formkartor** är baserade på TopoJSON-kartor, som kan använda anpassade kartor skapade av dig. Exempel på anpassade kartor är geografiska kartor, placeringskartor, plankartor med mera. Möjligheten att använda anpassade kartor är inte tillgänglig i den här förhandsversionen av **Formkarta**.
 
 ## <a name="creating-shape-maps"></a>Skapa formkartor
 Du kan testa kontrollen **Formkarta** med kartorna som levereras med den här förhandsversionen använda dina egna anpassade kartor förutsatt att de uppfyller kraven som anges i följande avsnitt: **Använda anpassade kartor**.
@@ -79,7 +79,7 @@ Man kan också göra intressanta saker med enskilda delstatskartor och visa mer 
 
 ![formkarta över Texas](media/desktop-shape-map/shape-map-7b.png)
 
-Om du vill experimentera med datauppsättningen och visualiseringen kan du hämta den ursprungliga PBIX-filen som användes för att generera rapporten med hjälp av följande länk.
+Om du vill experimentera med datauppsättningen och visualiseringen kan du ladda ned den ursprungliga PBIX-filen som användes för att generera rapporten med hjälp av följande länk.
 
 * [PBIX-fil för demonstration av anpassad formkarta](https://download.microsoft.com/download/1/2/8/128943FB-9231-42BD-8A5D-5E2362C9D589/DistrictAttorneyFiscalReport.pbix)
 
@@ -400,7 +400,7 @@ Använd följande **Regionsnycklar** i den här förhandsversionen för att prov
 | us-ma |Massachusetts |MA |
 | us-ia |Iowa |IA |
 | us-nh |New Hampshire |NH |
-| us-or |Oregon |ELLER |
+| us-or |Oregon |OR |
 | us-mn |Minnesota |MN |
 | us-vt |Vermont |VT |
 | us-id |Idaho |ID |

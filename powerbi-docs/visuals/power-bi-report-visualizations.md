@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/28/2019
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 02617e690c347448ecb1c313bc86969dabeb9984
-ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
+ms.openlocfilehash: bd8053123d8a5c2fa0c4362cb2a534021208ba36
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099089"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79381478"
 ---
 # <a name="visualizations-in-power-bi-reports"></a>Visualiseringar i Power BI-rapporter
 
@@ -27,7 +27,7 @@ Många olika typer av visuella objekt är tillgängliga direkt från Power BI-f�
 
 ![fönster med ikoner för varje visualiseringstyp](media/power-bi-report-visualizations/power-bi-icons.png)
 
-Om du vill ha ännu fler alternativ, kan du besöka [Microsoft AppSource community-webbplatsen](https://appsource.microsoft.com) för att söka efter och [hämta](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) [anpassade visuella objekt](../developer/visuals/custom-visual-develop-tutorial.md) från Microsoft och communityn.
+Om du vill ha ännu fler alternativ, kan du besöka [Microsoft AppSource community-webbplatsen](https://appsource.microsoft.com) för att söka efter och [ladda ned](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) [visuella Power BI-objekt](../developer/visuals/custom-visual-develop-tutorial.md) från Microsoft och communityn.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/SYk_gWrtKvM?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
@@ -40,7 +40,7 @@ Om du inte har arbetat med Power BI tidigare eller behöver en uppfräschning, k
 
 ## <a name="upload-a-custom-visualization-and-use-it-in-power-bi"></a>Ladda upp en anpassad visualisering och använd den i Power BI
 
-Lägg till en anpassad visualisering som du har skapat själv eller som du hittat på [Microsoft AppSource community-webbplatsen](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). Känner du dig kreativ? Ta en närmare titt på vår källkod och använd våra [utvecklarverktyg](../developer/visuals/custom-visual-develop-tutorial.md) om du vill skapa nya visualiseringstyper och [dela dem med communityn](../developer/office-store.md). Om du vill veta mer om hur man utvecklar anpassade visuella objekt kan du läsa [Utveckla ett anpassat visuellt objekt i Power BI](../developer/visuals/custom-visual-develop-tutorial.md).
+Lägg till en anpassad visualisering som du har skapat själv eller som du hittat på [Microsoft AppSource community-webbplatsen](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). Känner du dig kreativ? Ta en närmare titt på vår källkod och använd våra [utvecklarverktyg](../developer/visuals/custom-visual-develop-tutorial.md) om du vill skapa nya visualiseringstyper och [dela dem med communityn](../developer/visuals/office-store.md). Om du vill veta mer om hur man utvecklar anpassade visuella objekt kan du läsa [Utveckla ett anpassat visuellt objekt i Power BI](../developer/visuals/custom-visual-develop-tutorial.md).
 
 ## <a name="personalize-your-visualization-pane-preview"></a>Anpassa visualiseringsfönstret (förhandsversion)
 
@@ -52,7 +52,7 @@ När ett visuellt objekt har fästs flyttas det upp till de andra inbyggda visue
 
 ![Anpassat fönster för visualiseringar](media/power-bi-report-visualizations/power-bi-personalized-visualization-pane.png)
 
-Eftersom funktionen bara finns som förhandsversion kommer du bara att se det fästa visuella objekt i Power BI Desktop. Du måste också vara inloggad för att funktionen ska vara tillgänglig.
+Eftersom funktionen bara finns som förhandsversion kommer du bara att se dina fästa visuella objekt i Power BI Desktop. Du måste också vara inloggad för att funktionen ska vara tillgänglig.
 
 ## <a name="change-the-visualization-type"></a>Ändra visualiseringstyp
 
@@ -70,4 +70,4 @@ När du har fått till visualiseringen som du vill ha den i Power BI-tjänsten, 
 ## <a name="next-steps"></a>Nästa steg
 
 * [Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
-* [Anpassade visuella objekt](../developer/power-bi-custom-visuals.md)
+* [Visuella objekt för Power BI](../developer/visuals/power-bi-custom-visuals.md)

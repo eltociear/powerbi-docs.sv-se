@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 12/19/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: b7a45309c3bfad27cc3b26990ee148a9e44b8998
-ms.sourcegitcommit: 052df769e6ace7b9848493cde9f618d6a2ae7df9
+ms.openlocfilehash: ae11ec64a0bffbd3e64c0fd677a7225c2b31f521
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "75927124"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488693"
 ---
 # <a name="power-bi-premium-metrics-app"></a>Måttappen för Power BI Premium
 
@@ -78,7 +78,7 @@ När du ser sådana fall bör du titta noggrant på de andra diagrammen på sida
 
 Det andra visuella objektet på sidan, **B: Inaktiverade aktiva datauppsättningar i timmar** visar antalet datauppsättningar som har lästs in i minnet, i timbuckets. 
 
-Det tredje visuella objektet, **C: Varför data uppsättningar finns i minnet** är en tabell med en lista över datauppsättningen efter arbetsytansnamn, datauppsättningens namn, datauppsättningarnas okomprimerade storlek i minnet, förklaring av orsaken till att den läses in i minnet (till exempel, den uppdateras eller efterfrågas eller båda).
+Det tredje visuella objektet, **C: Varför data uppsättningar finns i minnet** är en tabell med en lista över datauppsättningen efter arbetsytans namn, datauppsättningens namn, datauppsättningarnas okomprimerade storlek i minnet, förklaring av orsaken till att den läses in i minnet (till exempel, den uppdateras eller efterfrågas eller båda).
 
 #### <a name="diagnosing-scenario-one"></a>Diagnostisera scenario ett
 
@@ -131,7 +131,7 @@ Om du vill diagnostisera scenario två kontrollerar du om trendlinjen visar en u
 
 Du kan utföra följande steg för att åtgärda de problem som är kopplade till scenario två:
 
-1. **Skala upp kapaciteten** – om du skalar upp kapaciteten till nästa SKU blir dubbelt så mycket minne tillgängligt som med den aktuella SKU:n, vilket minskar minnesbelastningen som kapaciteten.
+1. **Skala upp kapaciteten** – om du skalar upp kapaciteten till nästa SKU blir dubbelt så mycket minne tillgängligt som med den aktuella SKU:n, vilket minskar minnesbelastningen som för närvarande berör kapaciteten.
 
 2. **Flytta datauppsättningar till en annan kapacitet** – om du har en annan kapacitet som har mer tillgängligt minne kan du flytta arbetsytorna som innehåller de större datauppsättningarna till den kapaciteten.
 
@@ -262,7 +262,7 @@ Om det inte finns tillräckligt med minne för att läsa in en datauppsättning 
 
 För att diagnostisera scenario ett bör du först avgöra om begränsningen beror på otillräckligt minne. Gör följande.
 
-1.  Välj den datauppsättning som du är intresserad av från **tabell A** genom att klicka på den: 
+1.    Välj den datauppsättning som du är intresserad av från **tabell A** genom att klicka på den: 
 
     ![Tabell A](media/service-premium-metrics-app/premium-metrics-app-22.png)
 
@@ -305,7 +305,7 @@ För dedikerade kapaciteter begränsar Power BI antalet uppdateringar som kan sk
 
 För att diagnostisera scenario två bör du först avgöra om begränsningen beror på att den maximala samtidigheten för uppdateringar körs. Gör följande.
 
-1.  Välj den datauppsättning som du är intresserad av från **tabell A** genom att klicka på den: 
+1.    Välj den datauppsättning som du är intresserad av från **tabell A** genom att klicka på den: 
 
     ![Tabell A](media/service-premium-metrics-app/premium-metrics-app-22.png)
 
@@ -341,6 +341,6 @@ För att diagnostisera scenario två bör du först avgöra om begränsningen be
 * [Microsoft Power BI Premium – white paper](https://aka.ms/pbipremiumwhitepaper)
 * [Planera ett white paper för en företagsdistribution för Power BI](https://aka.ms/pbienterprisedeploy)
 * [Aktivering av utökad Pro-utvärderingsversion](service-extended-pro-trial.md)
-* [Vanliga frågor och svar om Power BI Embedded](developer/embedded-faq.md)
+* [Vanliga frågor och svar om Power BI Embedded](developer/embedded/embedded-faq.md)
 
 Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

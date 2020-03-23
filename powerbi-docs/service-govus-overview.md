@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/19/2020
+ms.date: 03/13/2020
 ms.author: kfollis
 LocalizationGroup: Get started
-ms.openlocfilehash: 590b00f5eb03b1bd31430866a52faa4748f9b32a
-ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
+ms.openlocfilehash: b36bc6d23b56b4118f848ad9fa4e8f39dbc65d2d
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77496929"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79376734"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI för amerikanska myndighetskunder
 Den här artikeln är till för amerikanska myndighetskunder som distribuerar Power BI som en del av ett Office 365-myndighetsabonnemang. Myndighetsabonnemang är utformade för de unika behoven hos organisationer som måste uppfylla amerikanska efterlevnads- och säkerhetsstandarder. Power BI-tjänsten som har utformats för amerikanska myndighetskunder skiljer sig från den kommersiella versionen av Power BI-tjänsten. Dessa funktionsskillnader och funktioner beskrivs i följande avsnitt.
@@ -46,7 +46,7 @@ Office 365 erbjuder olika miljöer för myndigheter för att uppfylla olika krav
 När du har distribuerat Office 365 kan du lägga till en Power BI-prenumeration. Följ steg-för-steg-vägledningen i [Registrera din amerikanska myndighetsorganisation](service-govus-signup.md#existing-office-government-cloud-customers) för att köpa myndighetstjänsten för Power BI Pro. Köp tillräckligt många licenser för alla användare som behöver använda Power BI och tilldela sedan dessa licenser till enskilda användarkonton.
 
 > [!IMPORTANT]
-> Power BI för amerikanska myndigheter är inte tillgängligt som gratislicens. Varje användare måste tilldelas en Pro-licens för att få åtkomst till Government Community Cloud. Om ett användarkonto har tilldelats en gratislicens har användaren bara åtkomst till det kommersiella molnet och kommer att stöta på autentiserings- och åtkomstproblem. Om du vill granska skillnaderna mellan licenstyper, se [Power BI-tjänstefunktioner efter licenstyp](service-features-license-type.md).
+> Power BI för amerikanska myndigheter är inte tillgängligt som gratislicens. Varje användare måste tilldelas en Pro-licens för att få åtkomst till Government Community Cloud. Om ett användarkonto har tilldelats en gratislicens har användaren bara åtkomst till det kommersiella molnet och kommer att stöta på autentiserings- och åtkomstproblem. Om du har köpt Power BI Premium behöver du inte tilldela Pro-licenser för att aktivera användaråtkomst.  Alla användare i organisationen kan komma åt rapporter som delas med dem så länge rapporten publiceras till en Premium-kapacitet. Om du vill granska skillnaderna mellan licenstyper, se [Power BI-tjänstefunktioner efter licenstyp](service-features-license-type.md).
 >
 >
 

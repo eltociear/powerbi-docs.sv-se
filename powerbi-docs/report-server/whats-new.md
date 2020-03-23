@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 02/27/2020
-ms.openlocfilehash: 251f89dd031d9a2bda146266308dc528f05eddb2
-ms.sourcegitcommit: ec4d2d0f52d737e8e0583f6a7b16e6fd87382510
+ms.openlocfilehash: 6ee1740d536a1bfd248b91d002142470b3894180
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "77782435"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79381317"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Nyheter i Power BI-rapportserver
 
@@ -317,7 +317,7 @@ Stöd för dessa funktioner i Power BI-rapporter:
 
 **Hjälpmedelsfunktioner** För många hjälpmedelsfunktioner att lista: till exempel [fältlista med stöd för hjälpmedel](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#fieldList). Fältlistrutan är helt åtkomlig. Du kan navigera i rutan med enbart tangentbordet och en skärmläsare och använda snabbmenyn för att lägga till fält på rapportsidan.
 
-#### <a name="custom-visuals"></a>Anpassade visuella objekt
+#### <a name="power-bi-visuals"></a>Visuella objekt för Power BI
 
 - Den API-version som levereras med den här versionen är 2.3.
 
@@ -381,11 +381,11 @@ SAP HANA SSO Direct Query-stöd med Kerberos är nu tillgängligt för Power BI-
 >[!Note]
 >Det här scenariot stöds endast när SAP HANA behandlas som en relationsdatakälla med rapporter som du har skapat i Power BI Desktop.  Aktivera detta i Power BI Desktop i DirectQuery-menyn under Alternativ genom att markera ”Behandla SAP HANA som en relationskälla” och klicka på OK.
 
-#### <a name="custom-visuals"></a>Anpassade visuella objekt
+#### <a name="power-bi-visuals"></a>Visuella objekt för Power BI
 
 - Den API-versionen som levereras med den här versionen är 1.13.0.
 
-- Nu kan anpassade visuella objekt återställas till en tidigare version som är kompatibel med den aktuella versionen av server-API (om tillgängligt).
+- Nu kan visuella Power BI-objekt återställas till en tidigare version som är kompatibel med den aktuella versionen av server-API (om tillgängligt).
 
 ### <a name="reporting"></a>Rapportering 
 
@@ -613,7 +613,7 @@ Power BI-rapportserver har nu stöd för den nya Power BI-tabellen och visuella 
 
 * Förhandsvisningen av Power BI-rapportserver blir tillgänglig
 * Möjlighet att publicera Power BI-rapporter lokalt
-  * stöd för anpassade visuella objekt
+  * stöd för visuella Power BI-objekt
   * Stöd för **live-anslutningar med Analysis Services** för fler datakällor är på gång.
   * Power BI-mobilappen uppdateras för att kunna visa Power BI-rapporter som finns i Power BI-rapportserver
 * Förbättrat samarbete i rapporter med kommentarer

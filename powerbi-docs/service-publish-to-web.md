@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 02/25/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 99fd17e8491613affbfe78e7cd9a2f268f588975
-ms.sourcegitcommit: d65da4738f011beec8f4423085cbd483511cdfb0
+ms.openlocfilehash: 0876d5ecd1d58c909242bbc05be213780d3aefdc
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "78237993"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488785"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Publicera på webben från Power BI
 
@@ -124,9 +124,9 @@ När du har skapat inbäddningskoden för **Publicera på webben** och delat den
 
 Datauppdateringarna återspeglas automatiskt i din inbäddade rapport eller visuella objekt. Det kan ta ungefär en timme för uppdaterade data att bli synliga från inbäddningskoder. Du kan inaktivera automatisk uppdatering genom att välja **Uppdatera inte** på schemat för den datamängd som används av rapporten.  
 
-## <a name="custom-visuals"></a>Anpassade visuella objekt
+## <a name="power-bi-visuals"></a>Visuella objekt för Power BI
 
-Anpassade visuella objekt stöds i **Publicera på webben**. När du använder **Publicera på webben** behöver inte användare som du delar det publicerade visuella objektet med aktivera anpassade visuella objekt för att kunna visa rapporten.
+Visuella Power BI-objekt stöds i **Publicera på webben**. När du använder **Publicera på webben** behöver inte användare som du delar det publicerade visuella objektet med aktivera visuella Power BI-objekt för att kunna visa rapporten.
 
 ## <a name="limitations"></a>Begränsningar
 
@@ -144,7 +144,7 @@ Anpassade visuella objekt stöds i **Publicera på webben**. När du använder *
 - Datafrågemodeller för enkel inloggning.
 - Skydda konfidentiell eller upphovsrättsskyddad information.
 - [Delade och certifierade datamängder](service-datasets-share.md).
-- Den automatiska autentiseringsfunktionen som tillhandahålls av alternativet **Bädda in** fungerar inte med Power BI JavaScript-API:et. När det gäller Power BI JavaScript-API:et använder du metoden [användaren äger data](developer/embed-sample-for-your-organization.md) för inbäddning.
+- Den automatiska autentiseringsfunktionen som tillhandahålls av alternativet **Bädda in** fungerar inte med Power BI JavaScript-API:et. När det gäller Power BI JavaScript-API:et använder du metoden [användaren äger data](developer/embedded/embed-sample-for-your-organization.md) för inbäddning.
 
 ## <a name="tenant-setting"></a>Klientinställning
 

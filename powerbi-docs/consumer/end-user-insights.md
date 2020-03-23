@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: e86e8c87ca7942e74ff2f16e299304f56f4a2aa3
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.openlocfilehash: 891a9b1a5afee26bdb2d6b363ccd2cee5f2461cb
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79113087"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79377294"
 ---
 # <a name="view-data-insights-on-dashboard-tiles-with-power-bi"></a>Visa datainsikter på instrumentpanelens paneler med Power BI
 
@@ -61,7 +61,7 @@ När du har en insikt öppen, kan fortsätta att utforska.
 Om du vill återgå till din rapport väljer du **Avsluta Fokusläge** i det övre vänstra hörnet.
 
 ## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
-- **Visa insikter** fungerar inte med alla typer av paneler på instrumentpanelen. Det är till exempel inte tillgängligt för anpassade visuella objekt.<!--[custom visuals](end-user-custom-visuals.md)-->
+- **Visa insikter** fungerar inte med alla typer av paneler på instrumentpanelen. Det är till exempel inte tillgängligt för visuella Power BI-objekt.<!--[Power BI visuals](end-user-custom-visuals.md)-->
 
 
 ## <a name="next-steps"></a>Nästa steg

@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 02/18/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 2c8a8356fe20136d0325efe51934a7db3d4b113e
-ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
+ms.openlocfilehash: e303d85083624bb67e73729024875d0f6f44fc42
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77496883"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79377164"
 ---
 # <a name="basic-concepts-for-the-power-bi-service-consumers"></a>Grundläggande begrepp för användare av Power BI-tjänsten
 
@@ -118,7 +118,7 @@ Några exempel på de visualiseringar som du stöter på i Power BI är: vattenf
 
 Se den [fullständiga listan över visualiseringar som ingår i Power BI](../power-bi-visualization-types-for-reports-and-q-and-a.md).
 
-Visualiseringar, som även kallas *anpassade visuella objekt*, finns också tillgängliga från communityt. Om du får en rapport med ett visuellt objekt som du inte känner igen är det sannolikt ett anpassat visuellt objekt. Om du behöver hjälp med att tolka det anpassade visuella objektet, letar du upp namnet på *designern* av rapporten eller instrumentpanelen och kontaktar denne.
+Visualiseringar, som även kallas *visuella Power BI-objekt*, finns också tillgängliga från communityn. Om du får en rapport med ett visuellt objekt som du inte känner igen är det sannolikt ett anpassat visuellt objekt. Om du behöver hjälp med att tolka det anpassade visuella objektet, letar du upp namnet på *designern* av rapporten eller instrumentpanelen och kontaktar denne.
 
 En visualisering i en rapport ...
 

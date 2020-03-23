@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 02/21/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 4194afb71dec7b50d75def0677489d3ff009917e
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.openlocfilehash: f9e0288c91f65d10329aaac29df8eb6e7a81f297
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79113748"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79377177"
 ---
 # <a name="export-reports-from-power-bi-to-powerpoint"></a>Exportera rapporter från Power BI till PowerPoint
 
@@ -78,7 +78,7 @@ Det är nu upp till dig vad du vill göra med PowerPoint-presentationen eller n�
 Det finns några överväganden och begränsningar som du bör tänka på när du arbetar med funktionen **exportera till PowerPoint**.
 
 * Visuella R-och Python-objekt stöds inte för tillfället. Alla sådana visualiseringar exporteras som en tom bild till PowerPoint med ett felmeddelande som säger att visualiseringen inte stöds.
-* Anpassade visuella objekt som har certifierats stöds. Mer information om certifierade anpassade visuella objekt, inklusive hur anpassade visuella objekt certifieras, finns i [certifiera anpassade visuella objekt](../developer/power-bi-custom-visuals-certified.md). Anpassade visuella objekt som inte har certifierats stöds inte. De exporteras som en tom bild till PowerPoint med ett felmeddelande som säger att visualiseringen inte stöds.
+* Visuella Power BI-objekt som har certifierats stöds. Mer information om certifierade anpassade visuella objekt, inklusive hur anpassade visuella objekt certifieras, finns i [certifiera anpassade visuella objekt](../developer/power-bi-custom-visuals-certified.md). Anpassade visuella objekt som inte har certifierats stöds inte. De exporteras som en tom bild till PowerPoint med ett felmeddelande som säger att visualiseringen inte stöds.
 * Det här visuella ESRI-objektet stöds inte
 * Rapporter med mer än 30 rapportsidor kan för närvarande inte exporteras.
 * Visuella objekt med rullningslister exporteras i sitt standardtillstånd. Du ser bara de översta dataraderna i det visuella objektet i PowerPoint. Du kan inte rulla i PowerPoint eftersom objekten är bilder. 

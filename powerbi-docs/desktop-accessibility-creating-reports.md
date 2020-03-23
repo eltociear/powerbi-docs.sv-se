@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/30/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 2b43727799316ade5ccdb868077360da0b315c56
-ms.sourcegitcommit: 052df769e6ace7b9848493cde9f618d6a2ae7df9
+ms.openlocfilehash: ae13bc69d7049dc9cf5c9d71ce0961ec566252bf
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "75925699"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79379109"
 ---
 # <a name="design-power-bi-reports-for-accessibility"></a>Designa Power BI-rapporter med hjälpmedel
 Du kan utforma och skapa engagerande rapporter som även är så tillgängliga som möjligt. Oavsett vilken målgrupp du skapar rapporten för så bör du se till att de kan användas av så många personer som möjligt, utan att de måste anpassas för en viss typ av specialdesign.
@@ -253,8 +253,8 @@ Förutom verktyg och funktioner för tillgänglighet så har Power BI följande 
 * Se till att alla dekorativa bilder är markerade som dolda i tabbordningen, så att skärmläsare inte läser upp dem.
 * Använd inte för många dekorativa bilder, de kan lätt bli störande.
 
-### <a name="custom-visuals"></a>Anpassade visuella objekt
-* Kontrollera anpassade visuella objekt i den tillgängliga tabellen **Visa data**. Om informationen som visas inte räcker kan du leta efter ett annat visuellt objekt.
+### <a name="power-bi-visuals"></a>Visuella objekt för Power BI
+* Kontrollera visuella Power BI-objekt i den tillgängliga tabellen **Visa data**. Om informationen som visas inte räcker kan du leta efter ett annat visuellt objekt.
 * Om du använder det anpassade visuella objektet *Uppspelningsaxel* ska du se till att den inte spelas upp automatiskt. Gör det uppenbart att användaren måste trycka på knappen Spela upp/pausa för att starta/stoppa uppspelningen av värdena.
 
 ### <a name="across-visuals-on-the-page"></a>Över visuella objekt på sidan

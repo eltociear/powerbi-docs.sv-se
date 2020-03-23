@@ -1,20 +1,20 @@
 ---
 title: Den nya filterupplevelsen i Power BI-rapporter
-description: Filter i Power BI får nya funktioner och en ny design.
+description: Filtren i Power BI har nya funktioner och en ny design.
 author: maggiesMSFT
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/06/2019
+ms.date: 02/26/2020
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: e991b84dede16f35a732c54ff916ec02f5610783
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: f4dbbdd30b403c8ac14db069b826f26af0bce24a
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75762541"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79201949"
 ---
 # <a name="work-with-filters-in-power-bi-reports"></a>Arbeta med filter i Power BI-rapporter
 
@@ -52,8 +52,11 @@ Om du har aktiverat **Nytt utseende** i Power BI-tjänsten ![Nytt utseende på](
 
 Om du inte har aktiverat det nya utseendet kan du fortfarande se den nya filterupplevelsen genom att följa nedanstående steg.
 
-1. I Power BI-tjänsten väljer fliken **Rapporter** i innehållslistan för en arbetsyta.
-2. Leta upp den rapport som du vill aktivera och välj ikonen **Settings**![ikonen Rapportinställningar](media/power-bi-report-filter/power-bi-settings-icon.png) för den rapporten.
+1. I Power BI-tjänsten öppnar du innehållslistan för en arbetsyta.
+2. Leta upp den rapport du vill aktivera, välj **Fler alternativ (...)** och välj sedan **Inställningar** för rapporten.
+
+    ![Rapportinställningar](media/power-bi-report-filter/power-bi-filter-options.png)
+
 3. Under **Filtreringsupplevelse** väljer du **Aktivera det uppdaterade filterfönstret och visa filter i det visuella sidhuvudet för den här rapporten**.
 
     ![Aktivera det uppdaterade filterfönstret](media/power-bi-report-filter/power-bi-service-filter-enable.png)
@@ -82,11 +85,21 @@ När du aktiverar det nya filterfönstret så ser du det till höger på rapport
 
 1. Dina rapportkonsumenter kan se filterfönstret som standard. Om du inte vill att de ska se det, väljer du ögonikonen bredvid **Filter**.
 
-    ![Ögonikonen för Power BI-filter](media/power-bi-report-filter/power-bi-filter-eye.png)
+    ![Ögonikonen för Power BI-filter](media/power-bi-report-filter/power-bi-filter-eye-icon.png)
 
 2. Börja bygga ditt nya filterfönster genom att dra fält av intresse till det nya filterfönstret, som filter för visuellt objekt-, sid- eller rapportnivå.
 
 När du lägger till ett visuellt objekt på en rapportarbetsyta lägger Power BI automatiskt till ett filter i filterfönstret för varje fält i det visuella objektet. 
+
+## <a name="hide-the-filters-pane-while-editing"></a>Dölj filterfönstret när du redigerar
+
+Power BI Desktop har ett nytt menyfliksområde i förhandsversionen. På fliken **Visa** kan du visa eller dölja filterfönstret med växlingsknappen för **Filter**. Den här funktionen är användbar när du inte använder filterfönstret och behöver extra utrymme på skärmen. Detta tillägg justerar filterfönstret mot de andra fönstren som du kan öppna och stänga, till exempel bokmärken och markeringsfönstret. 
+
+![Visa eller dölj filterfönstret när du redigerar](media/power-bi-report-filter/power-bi-filter-hide.png)
+
+Den här inställningen döljer endast filterfönstret i Power BI Desktop. Om du vill dölja filterfönstret för dina slutanvändare väljer du i stället **ögonikonen** bredvid **Filter**.
+
+![Ögonikonen](media/power-bi-report-filter/power-bi-filter-eye.png) 
 
 ## <a name="lock-or-hide-filters"></a>Låsa eller dölja filter
 
@@ -124,15 +137,15 @@ Du kan också formatera de här elementen för filterkort, beroende på om de an
 1. I rapporten klickar du på själva rapporten eller på bakgrunden (*skrivbordsunderlägget*) därefter går du till **Visualiseringar** och väljer **Format**. 
     Du ser alternativ för att formatera rapportsidan, skrivbordsunderlägget och även filterfönstret och filterkort.
 
-1. Expandera **Filter-fönstret** för att ange färg för bakgrund, ikon och vänster kantlinje så att de matchar rapportsidan.
+1. Expandera **Filterfönster** för att ange färg för bakgrund, ikon och vänster kantlinje så att de matchar rapportsidan.
 
-    ![Expandera Filter-fönster](media/power-bi-report-filter/power-bi-format-filter-pane.png)
+    ![Expandera filterfönstret](media/power-bi-report-filter/power-bi-format-filter-pane.png)
 
 1. Expandera **Filterkort** för att ange färg och kantlinje för **Tillgänglig** och **Använd**. Om du gör korten tillgänglig och använd olika färger så blir det uppenbart vilka filter som används. 
   
     ![Expandera Filter-kortet](media/power-bi-report-filter/power-bi-format-filter-cards.png)
 
-## <a name="theming-for-filter-pane"></a>Teman för filterfönstret
+## <a name="theming-for-filters-pane"></a>Teman för filterfönstret
 Du kan nu ändra standardinställningarna för filterfönstret med temafilen. Här är ett avsnitt ur ett exempeltema som du kan använda för att komma igång:
 
  
@@ -204,7 +217,7 @@ Du kan nu ändra standardinställningarna för filterfönstret med temafilen. H�
 }] 
 ```
 
-## <a name="sort-the-filter-pane"></a>Sortera filterfönstret
+## <a name="sort-the-filters-pane"></a>Sortera filterfönstret
 
 En anpassad sorteringsfunktion ingår i det nya filterfönstret. Rapportskapare kan dra och släppa filter för att ordna om dem i den ordning som de önskar.
 
@@ -223,11 +236,25 @@ När du redigerar filterfönstret kan du dubbelklicka på rubriken för att redi
 
 ![Byta namn på ett filter](media/power-bi-report-filter/power-bi-filter-rename.png)
 
+## <a name="filters-pane-search"></a>Söka i filterfönstret
+
+Med sökfunktionen i filterfönstret kan du söka bland filterkorten efter rubrik. Den här funktionen är användbar om du har flera olika filterkort i filterfönstret och behöver hjälp att hitta dem du är intresserad av.
+
+![Söka efter ett filter](media/power-bi-report-filter/power-bi-filter-search.png)
+
+Du kan också formatera sökrutan, precis som du kan formatera andra element i filterfönstret.
+
+![Formatera sökrutan](media/power-bi-report-filter/power-bi-filter-format-search.png)
+
+Även om filterfönstrets sökfunktion är aktiv som standard, kan du välja att aktivera eller inaktivera den genom att välja **Aktivera sökning för filterfönstret** i rapportinställningarna för dialogrutan Alternativ.
+
+![Aktivera eller inaktivera sökning](media/power-bi-report-filter/power-bi-enable-search-filter.png)
+
 ## <a name="restrict-changes-to-filter-type"></a>Begränsa ändringar efter filtertyp
 
 Under avsnittet Filtreringsupplevelse i rapportinställningarna har du möjlighet att ange om användarna ska kunna ändra filtertypen.
 
-![Begränsa ändringar av filtertyp](media/power-bi-report-filter/power-bi-filter-restrict-change.png)
+![Begränsa ändringar av filtertyp](media/power-bi-report-filter/power-bi-enable-change-filter-type.png)
 
 ## <a name="next-steps"></a>Nästa steg
 

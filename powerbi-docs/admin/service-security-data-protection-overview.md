@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/22/2020
+ms.date: 03/12/2020
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: adfa99a3e973108d65a06361ed967bef2ce37eb3
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: fa373fca782a582ec2ac2ef60cb36322efaff327
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76537219"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79205284"
 ---
 # <a name="data-protection-in-power-bi-preview"></a>Dataskydd i Power BI (förhandsversion)
 
@@ -23,7 +23,7 @@ Moderna företag har strikta affärsregler och krav på hur känsliga data ska h
 
 Med Dataskydd i Power BI kan du göra följande:
 
-* Använda Microsofts känslighetsetiketter till att klassificera och märka upp innehåll i Power BI-tjänsten (instrumentpaneler, rapporter, datamängder och dataflöden) med samma taxonomi som används till att klassificera och skydda filer i Office 365. 
+* Använd Microsofts känslighetsetiketter för att klassificera och märka upp innehåll i Power BI-tjänsten (instrumentpaneler, rapporter, datamängder och dataflöden) med samma taxonomi som används till att klassificera och skydda filer i Office 365. 
 
 * Tillämpa skyddsinställningar som kryptering eller vattenstämplar när du exporterar data från Power BI-tjänsten genom att innehållets känslighetsetikett och skydd ärvs (Excel, PowerPoint och PDF). 
 
@@ -105,9 +105,6 @@ I den här listan anges några begränsningar för känslighetsetiketter i Power
 * [HYOK-skydd](https://docs.microsoft.com/azure/information-protection/configure-adrms-restrictions) stöds inte för de etiketter du använder i Power BI.
 * Det finns [licenskrav](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps#subscription-and-licensing-requirements-for-sensitivity-labels) för att visa och använda etiketter i Office-appar.
 * Känslighetsetiketter stöds bara för klientorganisationer i det globala (offentliga) molnet. Känslighetsetiketter stöds inte för klientorganisationer i andra moln.
-* Känslighetsetiketter stöds inte för [externa användare (Azure Active Directory B2B-gästanvändare)](../service-admin-azure-ad-b2b.md). Det innebär att externa användare inte kan visa etiketter och att de blockeras från att exportera data till filer med formaten Excel, PDF och PPTX. [Ta bort etiketten](../designer/service-security-apply-data-sensitivity-labels.md#removing-sensitivity-labels) om du vill att externa användare ska kunna exportera data till dessa filtyper.
-
-
 
 ## <a name="next-steps"></a>Nästa steg
 

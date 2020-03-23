@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/03/2019
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 4d8a5c1cceb66b7103a58c7bcebfa46dbdd97430
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 5208c72016a148f86a119bdddd2bbd1f69d3456b
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "74831109"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79381041"
 ---
 # <a name="subscribe-yourself-and-others-to-reports-and-dashboards-in-the-power-bi-service"></a>Skapa en prenumeration åt dig eller andra på rapporter och instrumentpaneler i Power BI-tjänsten
 
@@ -95,10 +95,10 @@ En prenumeration går ut om Pro-licensen upphör att gälla, om ägaren tar bort
 * För e-postprenumerationer på rapporter kan du skapa en prenumeration åt dig själv om datamängden använder RLS. Du kan inte skapa prenumerationer av en rapport åt andra med säkerhet på radnivå (RLS), såvida du inte använder en sidnumrerad rapport, vilket i så fall gör att du kan skicka prenumerationen till andra med hjälp av din säkerhetskontext. 
 * Rapportsideprenumerationer är knutna till namnet på rapportsidan. Om du prenumererar på en rapportsida och sedan byter namn på den, måste du återskapa din prenumeration.
 * Din organisation kan konfigurera vissa inställningar i Azure Active Directory som begränsar möjligheten att använda e-postprenumerationer i Power BI.  Dessa begränsningar inkluderar, men begränsas inte till, att ha multifaktorautentisering eller begränsningar för IP-intervallet vid åtkomst till resurser.
-* För närvarande stöds inte e-postprenumerationer för rapporter/instrumentpaneler som använder datauppsättningar från realtidsanslutningar när du skapar prenumerationer åt andra användare än dig själv, såvida du inte använder en sidnumrerad rapport, vilket i så fall gör att du kan skicka prenumerationen till andra med hjälp av din säkerhetskontext. 
-* E-postprenumerationer har inte stöd för så många [anpassade visuella objekt](developer/power-bi-custom-visuals.md).  Det enda undantaget är de anpassade visuella objekt som har [certifierats](developer/power-bi-custom-visuals-certified.md).  
-* E-postprenumerationer har för närvarande inte stöd för R-baserade anpassade visuella objekt.  
-* E-postprenumerationer skickas med rapportens standardfilter och utsnittstillstånd. Inga ändringar av standardinställningarna som du gör efter att du börjar prenumerera visas i e-postmeddelandet.  Sidnumrerade rapporter har stöd för den här funktionen och gör att du kan ställa in specifika parametervärden per prenumeration.   
+* För närvarande stöds inte e-postprenumerationer för rapporter/instrumentpaneler som använder datauppsättningar från realtidsanslutningar när du skapar prenumerationer åt andra användare än dig själv, såvida du inte använder en sidnumrerad rapport, vilket i så fall gör att du kan skicka prenumerationen till andra med hjälp av din säkerhetskontext.
+* I e-postprenumerationer saknas stöd för de flesta [visuella Power BI-objekt](developer/visuals/power-bi-custom-visuals.md).  Enda undantaget är de visuella Power BI-objekt som har [certifierats](developer/visuals/power-bi-custom-visuals-certified.md).  
+* E-postprenumerationer saknar för närvarande stöd för R-baserade visuella Power BI-objekt.  
+* E-postprenumerationer skickas med rapportens standardfilter och utsnittstillstånd. Inga ändringar av standardinställningarna som du gör efter att du börjar prenumerera visas i e-postmeddelandet.  Sidnumrerade rapporter har stöd för den här funktionen och gör att du kan ställa in specifika parametervärden per prenumeration.
 * För prenumerationer på instrumentpaneler så saknar vissa typer av paneler fortfarande stöd.  Detta gäller: strömningspaneler, videopaneler och paneler för anpassat webbinnehåll.     
 * Om du delar en instrumentpanel med en kollega utanför din klientorganisation kan du inte skapa en prenumeration till den kollegan. Om du till exempel är aaron@xyz.com kan du dela med anyone@ABC.com, men du kan ännu inte prenumerera anyone@ABC.com, och den personen kan inte prenumerera på delat innehåll.      
 * Power BI pausar automatiskt uppdateringar för datauppsättningar som är associerade med instrumentpaneler och rapporter som inte har besökts på över två månader.  Men om du lägger till en prenumeration på en instrumentpanel eller en rapport, så pausas den inte, även om den förblir obesökt.    

@@ -8,12 +8,12 @@ ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 02/18/2020
 ms.author: mihart
-ms.openlocfilehash: 4679973cf65ced31a40b3a1bb40c820184e10e2c
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.openlocfilehash: 19a3b1bbf5f2ea3043b92d97a66196ca3e32118c
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79040082"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79377246"
 ---
 # <a name="glossary-for-power-bi-service"></a>Ordlista för Power BI-tjänsten
 Power BI-tjänsten kan introducera terminologi som du kanske inte är bekant med eller förstår. Ordlistan är ett bra ställe att leta upp terminologi. Om du vill kan du lägga till den som ett bokmärke. En annan bra resurs om du vill lära dig mer om byggstenarna bakom Power BI-tjänsten är [Grundläggande begrepp](end-user-basic-concepts.md). Grundläggande begrepp ger en översikt över de olika *delarna* i Power BI och hur de hänger ihop.
@@ -188,7 +188,7 @@ Första förekomsten: navigeringsfönstret Efterföljande omnämnanden eller vid
 
 ## <a name="n"></a>N
 
-**native (inbyggt)** Inbyggt i produkten. Till exempel levereras Power BI med en uppsättning *inbyggda* visualiseringstyper. Men du kan också importera andra typer, till exempel anpassade visuella objekt.
+**native (inbyggt)** Inbyggt i produkten. Till exempel levereras Power BI med en uppsättning *inbyggda* visualiseringstyper. Men du kan också importera andra typer, till exempel visuella objekt för Power BI.
 
 **navigation pane (navigeringsfönster)** eller **nav pane** Kontrollerna längs vänsterkanten i Power BI-tjänsten.
 

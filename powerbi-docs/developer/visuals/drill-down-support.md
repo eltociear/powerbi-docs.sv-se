@@ -7,18 +7,18 @@ manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: tutorial
 ms.date: 06/18/2019
-ms.openlocfilehash: 0253455cfba96c3c467f4cf8882550e22edce8ba
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: dd8510230a66a9897023686aefb72990ac01a5fd
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76819248"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79380499"
 ---
 # <a name="add-drill-down-support"></a>Lägg till stöd för ökad detaljnivå
 
-Du kan använda ökad detaljnivå i Power BI i anpassade visuella objekt.
+Du kan använda ökad detaljnivå i Power BI i visuella Power BI-objekt.
 
 Läs mer om ökad detaljnivå i Power BI [här](./../../consumer/end-user-drill.md)
 
@@ -205,38 +205,38 @@ button {
 
 Förbered exempeldata för att testa det visuella objektet:
 
-|   H1  |   H2    | H3  |   VÄRDEN  |
+|   H1  |   H2    | H3  |   VALUES  |
 |-----|-----|------|-------|
-|   A   |   A1  |   A11 |   1   |
-|   A   |   A1  |   A12 |   2   |
-|   A   |   A2  |   A21 |   3   |
-|   A   |   A2  |   A22 |   4   |
-|   A   |   A3  |   A31 |   5   |
-|   A   |   A3  |   A32 |   6   |
-|   B   |   B1  |   B11 |   7   |
-|   B   |   B1  |   B12 |   8   |
-|   B   |   B2  |   B21 |   9   |
-|   B   |   B2  |   B22 |   10  |
-|   B   |   B3  |   B31 |   11  |
-|   B   |   B3  |   B32 |   12  |
+|   A   |    A1  |    A11 |    1   |
+|   A    |    A1    |    A12    |    2    |
+|   A    |    A2    |    A21    |    3    |
+|   A    |    A2    |    A22    |    4    |
+|   A    |    A3    |    A31    |    5    |
+|   A    |    A3    |    A32    |    6    |
+|   B    |    B1    |    B11    |    7    |
+|   B    |    B1    |    B12    |    8    |
+|   B    |    B2    |    B21    |    9    |
+|   B    |    B2    |    B22    |    10    |
+|   B    |    B3    |    B31    |    11    |
+|   B    |    B3    |    B32    |    12    |
 
 Och skapa hierarkin i Power BI Desktop:
 
-![Skapa ny hierarki](./media/create-new-hierarchy.png)
+![Skapa ny hierarki](media/drill-down-support/create-new-hierarchy.png)
 
 Ta med alla kategorikolumner (H1, H2, H3) i den nya hierarkin:
 
-![Skapa ny hierarki](./media/new-hierarchy.png)
+![Skapa ny hierarki](media/drill-down-support/new-hierarchy.png)
 
 Nu bör du få följande visuella objekt:
 
-![Dev-visualisering med knappar](./media/dev-visual-drilldown1.png)
+![Dev-visualisering med knappar](media/drill-down-support/dev-visual-drilldown1.png)
 
 ## <a name="add-context-menu-to-visual-elements"></a>Lägga till en snabbmeny i visuella element
 
 I det här steget lägger du till en snabbmeny för knapparna i det visuella objektet:
 
-![Snabbmeny i det visuella objektet](./media/dev-visual-drilldown-context-menu.png)
+![Snabbmeny i det visuella objektet](media/drill-down-support/dev-visual-drilldown-context-menu.png)
 
 När du ska skapa en snabbmeny sparar du `host`-objektet i egenskaperna för det visuella objektet och anropar metoden `createSelectionManager` för att skapa urvalshanteraren som ska visa snabbmenyn via API:et Power BI Visuals.
 
@@ -305,11 +305,11 @@ export class Visual implements IVisual {
 
 Fyll det visuella objektet med data:
 
-![Det visuella objektet med data](./media/dev-visual-drilldown-data.png)
+![Det visuella objektet med data](media/drill-down-support/dev-visual-drilldown-data.png)
 
 I det sista steget bör du få ett visuellt objekt med val och snabbmenyer:
 
-![Visuellt objekt med stöd för ökad detaljnivå](./media/dev-visual-drilldown-demo.gif)
+![Visuellt objekt med stöd för ökad detaljnivå](media/drill-down-support/dev-visual-drilldown-demo.gif)
 
 ## <a name="add-drill-down-support-for-matrix-data-view-mapping"></a>Lägg till stöd för ökad detaljnivå för mappningar av matrisdatavyer
 
@@ -389,7 +389,7 @@ Använd följande datavymappning för det visuella objektet:
 
 Fyll det visuella objektet med data:
 
-![Det visuella objektet med data](./media/dev-matrix-visual-drilldown-data.png)
+![Det visuella objektet med data](media/drill-down-support/dev-matrix-visual-drilldown-data.png)
 
 Importera nödvändiga gränssnitt för att bearbeta mappningar av matrisdatavyer:
 
@@ -614,7 +614,7 @@ public update(options: VisualUpdateOptions) {
 
 I det sista steget bör du få ett visuellt objekt med snabbmenyer:
 
-![Visuellt objekt med stöd för ökad detaljnivå](./media/dev-matrix-visual-drilldown-demo.gif)
+![Visuellt objekt med stöd för ökad detaljnivå](media\drill-down-support\dev-visual-drilldown-demo.gif)
 
 ## <a name="next-steps"></a>Nästa steg
 

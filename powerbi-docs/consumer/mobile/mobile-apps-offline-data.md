@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/09/2019
 ms.author: painbar
-ms.openlocfilehash: 2974f257509d88a469f981bbdecf8cdca47c8e9e
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: 9c38aef858d723e548529f450e34d0480de5f8b2
+ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75219097"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79435454"
 ---
 # <a name="view-your-data-offline-in-the-power-bi-mobile-apps"></a>Visa dina data offline i Power BI-mobilapparna
 Gäller för:
@@ -21,6 +21,9 @@ Gäller för:
 | ![iPhone](./media/mobile-apps-offline-data/iphone-logo-50-px.png) | ![iPad](./media/mobile-apps-offline-data/ipad-logo-50-px.png) | ![Android-telefon](./media/mobile-apps-offline-data/android-phone-logo-50-px.png) | ![Android-surfplatta](./media/mobile-apps-offline-data/android-tablet-logo-50-px.png) | ![Windows 10](./media/mobile-apps-offline-data/win-10-logo-50-px.png) |
 |:--- |:--- |:--- |:--- |:--- |
 | iPhone-telefoner |iPad-surfplattor |Android-telefoner |Android-surfplattor |Windows 10-enheter |
+
+>[!NOTE]
+>Stöd för Power BI-mobilappen för **telefoner som använder Windows 10 Mobile** kommer att upphöra den 16 mars 2021. [Läs mer](https://go.microsoft.com/fwlink/?linkid=2121400)
 
 En fördel med att visa Power BI i en mobilapp istället för en mobil webbläsare är att du kan se dina data, även om du inte är ansluten till ett nätverk. 
 
@@ -34,7 +37,7 @@ När du är offline kan du komma åt och interagera med instrumentpaneler som du
 Du har också läsbehörighet till alla Power BI-rapporter som du tidigare har hämtat från mobilappen. Du kan se den fullständiga rapporten men kan inte filtrera, korsfiltrera, sortera eller använda utsnitt på dem.
 
 ## <a name="background-data-refresh"></a>Uppdatering av bakgrundsdata
-Bakgrundsuppdatering uppdaterar dina favoritinstrumentpaneler, plus instrumentpaneler och rapporter som du har besökt under de senaste två veckorna med data i Power BI-tjänsten (inte datakällan). Om du är ansluten till Wi-Fi uppdateras bakgrundsuppdateringen varannan timme. Annars, om du befinner dig i ett 3G-nätverk, uppdaterar Power BI innehållet var 24:e timme.
+Bakgrundsuppdatering uppdaterar dina favoritinstrumentpaneler, plus instrumentpaneler och rapporter som du har besökt under de senaste två veckorna med data i Power BI-tjänsten (inte datakällan). Om du är ansluten till Wi-Fi uppdateras bakgrundsuppdateringen varannan timme. Om du befinner dig i ett 3G-nätverk uppdateras annars Power BI-innehållet en gång per dygn.
 
 Du kan stänga av bakgrundsuppdatering, till exempel för att undvika nätverksanvändning. Kontrollera inställningarna på din enhet.
 

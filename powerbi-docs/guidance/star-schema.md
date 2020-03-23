@@ -8,18 +8,18 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 279e6895122f6b82f8e7670d982a8b50c78ec83a
-ms.sourcegitcommit: d55d3089fcb3e78930326975957c9940becf2e76
+ms.openlocfilehash: ba1909c5fc75abdf7338572c646d98fca83595b0
+ms.sourcegitcommit: 22991861c2b9454b170222591f64266335b9fcff
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78260426"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79133244"
 ---
 # <a name="understand-star-schema-and-the-importance-for-power-bi"></a>Förstå star-schemat och dess betydelse för Power BI
 
 Den här artikeln vänder sig till Power BI Desktop-datamodellerare. I den beskrivs star-schemadesignen och dess relevans för utveckling av Power BI-datamodeller som är optimerade för prestanda och användbarhet.
 
-Den här artikeln är inte avsedd att ge en fullständig genomgång av star-schemadesignen. Mer information finns i publicerat innehåll såsom **The Data Warehouse Toolkit: The Complete Guide to Dimensional Modeling** (andra utgåvan, 2002) av Ralph Kimball et al.
+Den här artikeln är inte avsedd att ge en fullständig genomgång av star-schemadesignen. Mer information finns i publicerat innehåll såsom **The Data Warehouse Toolkit: The Definitive Guide to Dimensional Modeling** (tredje utgåvan, 2013) av Ralph Kimball et al.
 
 ## <a name="star-schema-overview"></a>Översikt av star-schema
 

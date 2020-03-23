@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/23/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 01996f3460b7c7a507796bd3f071f7887a69854e
-ms.sourcegitcommit: e27d40054949421701f829113c4a5f6d260c8d5f
+ms.openlocfilehash: 6ec4e5afe63fbdf754fcb20ec8cd12379740d33d
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "77154222"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79201549"
 ---
 # <a name="apply-auto-datetime-in-power-bi-desktop"></a>Använda automatisk datum/tid i Power BI Desktop
 
@@ -33,7 +33,7 @@ När alternativet är aktiverat skapar Power BI Desktop en dold automatisk datum
 Varje automatisk datum/tidtabell är i själva verket en [beräknad tabell](desktop-calculated-tables.md) som genererar datarader med hjälp av funktionen DAX [CALENDAR](/dax/calendar-function-dax). Varje tabell innehåller också sex beräknade kolumner: **Day**, **MonthNo**, **Month**, **QuarterNo**, **Quarter** och **Year**.
 
 > [!NOTE]
-> Power BI översätter och formaterar kolumnnamnen och värdena enligt [modellspråket](supported-languages-countries-regions.md#choose-the-language-for-the-model-in-power-bi-desktop).
+> Power BI översätter och formaterar kolumnnamnen och värdena enligt [modellspråket](supported-languages-countries-regions.md#choose-the-language-for-the-model-in-power-bi-desktop). Om modellen till exempel har skapats med hjälp av engelska visas fortfarande månadsnamn och så vidare på engelska, även om den öppnas i en koreansk klient.
 
 Dessutom skapar Power BI en relation mellan kolumnen **Date** i datum/tid-tabellen och modellens datumkolumn.
 

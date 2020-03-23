@@ -9,12 +9,12 @@ ms.topic: overview
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 864854e774defee16d446a513622e1134c77d75c
-ms.sourcegitcommit: 578d43aeb7cebf40f3caf03a614bc885cc039488
+ms.openlocfilehash: cfe877d6fac96124badc19f6ab685523077132fc
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/10/2020
-ms.locfileid: "77115272"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79381294"
 ---
 # <a name="what-is-power-bi-administration"></a>Vad är Power BI-administration?
 
@@ -59,7 +59,7 @@ Administratörer utför många uppgifter till stöd för Power BI-klienten för 
 | Hantera Premium-kapacitet |<ul><li>Anskaffa och arbeta med Premium-kapacitet<br><li>Säkra servicekvaliteten|
 | Hantera Embedded-kapacitet |<ul><li>Anskaffa Embedded-kapacitet för att förenkla hur ISV:er och utvecklare använder Power BI-funktioner</ul>|
 | Säkra kompatibilitet med interna policyer, lagar och förordningar | <ul><li>Hantera klassificering av affärsdata<br><li>Bidra till att genomdriva innehållspublicering och delningsprinciper</ul>|
-| Hantera Power BI-resurser |<ul><li>Hantera arbetsytor<br><li>Publicera anpassade visuella objekt<br><li>Kontrollera koder som används för att bädda in Power BI i andra program|
+| Hantera Power BI-resurser |<ul><li>Hantera arbetsytor<br><li>Publicera visuella Power BI-objekt<br><li>Kontrollera koder som används för att bädda in Power BI i andra program|
 | Ge hjälp och support till klientanvändare |<ul><li>Felsöka dataåtkomst och andra problem</ul>|
 | Andra uppgifter |<ul><li>Distribuera Power BI Desktop, till exempel med hjälp av Microsoft Endpoint Configuration Manager<br><li>Hantera distribution av Power BI-mobilappen med Intune<br><li>Hantera datasekretess och säkerhet, till exempel källdatasäkerhet</ul>|
 
@@ -69,7 +69,7 @@ Det finns flera verktyg för Power BI-administration, vilka beskrivs i följande
 
 | **Verktyg** | **Vanliga uppgifter** |
 | --- | --- |
-| Power BI-administratörsportalen |<ul><li>Anskaffa och arbeta med Premium-kapacitet</li><li>Säkra servicekvaliteten</li><li>Hantera klassificering av affärsdata</li><li>Bidra till att genomdriva innehållspublicering och delningsprinciper</li><li>Hantera arbetsytor<br><li>Publicera anpassade visuella objekt</li><li>Kontrollera koder som används för att bädda in Power BI i andra program</li><li>Felsöka dataåtkomst och andra problem</li></ul>|
+| Power BI-administratörsportalen |<ul><li>Anskaffa och arbeta med Premium-kapacitet</li><li>Säkra servicekvaliteten</li><li>Hantera klassificering av affärsdata</li><li>Bidra till att genomdriva innehållspublicering och delningsprinciper</li><li>Hantera arbetsytor<br><li>Publicera visuella Power BI-objekt</li><li>Kontrollera koder som används för att bädda in Power BI i andra program</li><li>Felsöka dataåtkomst och andra problem</li></ul>|
 | Administrationscenter för Microsoft 365 |<ul><li>Hantera användarregistrering</li><li>Köpa och tilldela Pro-licenser</li><li>Blockera användare från att få åtkomst till Power BI</li></ul>|
 | Säkerhets- och efterlevnadscenter för Office 365 |<ul><li>Granska och hantera granskning av händelser</li></ul>|
 | Azure Active Directory i Azure-portalen |<ul><li>Konfigurera villkorlig åtkomst till Power BI-resurser via AAD</li><li>Tillhandahålla Power BI Embedded-kapacitet</li></ul>|

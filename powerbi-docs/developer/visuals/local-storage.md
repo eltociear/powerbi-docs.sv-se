@@ -6,14 +6,14 @@ ms.author: kesharab
 ms.reviewer: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 01/21/2019
-ms.openlocfilehash: 7665f0c8e3c909263f194a0fd54a54ed2a752c8c
-ms.sourcegitcommit: 0cc594ebb78a6d0e88784673ed09f8aefd10c7a7
+ms.openlocfilehash: e2cb11ea9be85916e6b5557e7933f6a6b5a7159a
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76819110"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79380604"
 ---
 # <a name="local-storage-api"></a>API för lokal lagring
 
@@ -59,5 +59,5 @@ export class Visual implements IVisual {
 
 ## <a name="known-limitations-and-issues"></a>Kända begränsningar och problem
 
-API:et för lokal lagring är inte aktiverat för anpassade visuella objekt som standard. Om du vill aktivera det för ditt anpassade visuella objekt skickar du begäran till supporten för Power BI Custom Visuals `pbicvsupport@microsoft.com`.  
+API:et för lokal lagring är inte aktiverat för visuella Power BI-objekt som standard. Om du vill aktivera det för ditt visuella Power BI-objekt skickar du begäran till supporten för visuella Power BI-objekt `pbicvsupport@microsoft.com`.  
 **Observera att det visuella objektet ska vara tillgängligt i [AppSource](https://appsource.microsoft.com/en-us/marketplace/apps?product=power-bi-visuals) och vara [certifierat](https://powerbi.microsoft.com/en-us/documentation/powerbi-custom-visuals-certified/).**

@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 02/05/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 27e4bbd1437f59b7cf213333d9df27019aaadcd4
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: ad7c0dab0c4390326eea157351735802d12b3795
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74698864"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488578"
 ---
 # <a name="configure-multi-geo-support-for-power-bi-premium"></a>Konfigurera Multi-Geo-stöd för Power BI Premium
 
@@ -33,7 +33,7 @@ Multi-Geo är en Power BI Premium-funktion som hjälper multinationella kunder a
 
 Multi-Geo är inte tillgängligt för Power BI Tyskland, Power BI Kina, drivet av 21Vianet, eller Power BI för amerikanska myndigheter.
 
-Multi-Geo finns nu även i Power BI Embedded. Läs mer i [Multi-Geo-stöd för Power BI Embedded](developer/embedded-multi-geo.md).
+Multi-Geo finns nu även i Power BI Embedded. Läs mer i [Multi-Geo-stöd för Power BI Embedded](developer/embedded/embedded-multi-geo.md).
 
 ## <a name="enable-and-configure"></a>Aktivera och konfigurera
 
@@ -99,6 +99,6 @@ Du kan ta bort arbetsytor från Multi-Geo-kapaciteten på något av följande tv
 ## <a name="next-steps"></a>Nästa steg
 
 - [Vad är Power BI Premium?](service-premium-what-is.md)
-- [Multi-Geo för Power BI Embedded-kapaciteter](developer/embedded-multi-geo.md)
+- [Multi-Geo för Power BI Embedded-kapaciteter](developer/embedded/embedded-multi-geo.md)
 
 Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

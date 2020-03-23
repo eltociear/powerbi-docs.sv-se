@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 02/18/2020
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: 5f197f2c2ca85673452a10986f19e26c5802c739
-ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
+ms.openlocfilehash: 7d1e355f2c28679f5c2101d250a9fc2d5c99a2bd
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77496672"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79205652"
 ---
 # <a name="what-are-bookmarks"></a>Vad är bokmärken?
 
@@ -157,7 +157,7 @@ Note that selecting **Ungroup** for any bookmark from a group takes all bookmark
 ## <a name="limitations-and-considerations"></a>Begränsningar och överväganden
 Det finns några begränsningar och saker du bör tänka på för den här versionen av **bokmärken**.
 
-* De flesta anpassade visuella objekt bör fungera väl med bokmärkning. Om du stöter på problem med bokmärkning och ett anpassat visuell objekt, kontaktar du den person som skapat det anpassade visuella objektet och ber dem att lägga till stöd för bokmärken till sina visuella objekt. 
+* De flesta visuella Power BI-objekt bör fungera väl med bokmärkning. Om du stöter på problem med bokmärkning och ett visuellt Power BI-objekt, kontaktar du den som har skapat det visuella Power BI-objektet och ber den personen att lägga till stöd för bokmärken till sina visuella objekt.
 * Om du lägger till ett visuellt objekt på en rapportsida efter att du har skapat ett bokmärke kommer det visuella objektet att visas i sitt standardläge. Det innebär att om du lägger till ett utsnitt på en sida där du tidigare skapade bokmärken så fungerar utsnittet i standardtillståndet.
 * Generellt påverkas inte dina bokmärken om *rapportdesignern* uppdaterar eller publicerar rapporten på nytt. Men om designern gör större ändringar i rapporten, till exempel att ta bort fält som används av ett bokmärke, visas ett felmeddelande nästa gång du försöker öppna det bokmärket. 
 

@@ -6,20 +6,20 @@ ms.author: kesharab
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/18/2019
-ms.openlocfilehash: 8829cb8af41611fb29cd4fc22da7706e80ef3210
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 4379fbfe051b69a2c9502a033ba462c1dded2022
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880340"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79380667"
 ---
 # <a name="tooltips-in-power-bi-visuals"></a>Knappbeskrivningar i visuella Power BI-objekt
 
-Visuella objekt kan nu utnyttja stödet för knappbeskrivningar i Power BI. Power BI-knappbeskrivningar hanterar följande interaktioner:
+Visuella objekt kan nu utnyttja stödet för knappbeskrivningar i Power BI. Power BI-knappbeskrivningar hanterar följande interaktioner:'''
 
-* Visa en knappbeskrivning.
+* Visa en knappbeskrivning.'''
 * Dölj en knappbeskrivning.
 * Flytta en knappbeskrivning.
 
@@ -27,7 +27,7 @@ Knappbeskrivningar kan visa ett textelement med en rubrik, ett värde med en vis
 
 En knappbeskrivning i ett exempelstapeldiagram visas i följande bild:
 
-![Knappbeskrivningar i exempelstapeldiagram](./media/tooltips-in-samplebarchart.png)
+![Knappbeskrivningar i exempelstapeldiagram](media/add-tooltips/tooltips-in-samplebarchart.png)
 
 Föregående bild med knappbeskrivningar visar en kategori och ett värde för en stapel. Du kan utöka en enskild knappbeskrivning till att visa flera värden.
 
@@ -209,7 +209,7 @@ Ett exempel på ett schema:
 
 Du kan definiera knappbeskrivningar för rapportsida i fönstret **Format**.
 
-![Rapportsidans knappbeskrivning](media/report-page-tooltip.png)
+![Rapportsidans knappbeskrivning](media/add-tooltips/report-page-tooltips.png)
 
 * `supportedTypes`: Den knappbeskrivningskonfiguration som stöds av det visuella objektet och avspeglas i fältkällan. 
    * `default`: Anger huruvida ”automatisk” knappbeskrivningsbindning via datafält stöds. 

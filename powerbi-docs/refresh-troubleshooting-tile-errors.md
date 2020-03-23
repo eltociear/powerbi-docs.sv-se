@@ -10,12 +10,12 @@ ms.topic: troubleshooting
 ms.date: 12/06/2018
 ms.author: maggies
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 04ee1386547ed888531ea139227969d49629863d
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 79f18faf56fba8afa85afd808f6faa1bd16811d8
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74699554"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79381156"
 ---
 # <a name="troubleshooting-tile-errors"></a>Felsöka panelfel
 Nedan visas vanliga fel som kan uppstå med paneler tillsammans med en förklaring.
@@ -35,9 +35,10 @@ Det gick inte att komma åt dina data eftersom datakällan inte kan nås. Det h�
 
 Kontakta instrumentpanelens ägare och säkerställ att datakällorna och modellen finns och är tillgängliga för ditt konto.
 
-**Anpassade visuella objekt har inaktiverats av din administratör.**
+**Visuella Power BI-objekt har inaktiverats av din administratör.**
 
-Power BI-administratören har inaktiverat användningen av anpassade visuella objekt för din organisation eller din säkerhetsgrupp. Du kommer inte att kunna använda anpassade visuella objekt från [Microsoft Marketplace](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) eller importera privata visuella objekt från en fil. Du kan endast använda den medföljande uppsättningen visuella objekt.
+Power BI-administratören har inaktiverat användningen av visuella Power BI-objekt för din organisation eller din säkerhetsgrupp.
+Du kommer inte att kunna använda visuella Power BI-objekt från [Microsoft Marketplace](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) eller importera privata visuella objekt från en fil. Du kan endast använda den medföljande uppsättningen visuella objekt.
 
 
 **Datastrukturer måste innehålla minst en grupp eller beräkning som producerar data. Kontakta instrumentpanelens ägare.**

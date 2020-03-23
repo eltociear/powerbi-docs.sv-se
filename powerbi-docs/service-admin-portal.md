@@ -6,16 +6,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 09/25/2019
+ms.date: 03/16/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: d56e329d5331403c0ed0ce4da28bf73aea65d9a6
-ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
+ms.openlocfilehash: 97aad9a72cba6fe195208902e2a3d986b3225a3d
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77427885"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488716"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administrera Power BI i Admin-portalen
 
@@ -277,6 +277,14 @@ Användare i organisationen kan skapa e-postprenumerationer. Läs mer om [prenum
 
 ![Aktivera e-postprenumerationer](media/service-admin-portal/power-bi-manage-email-subscriptions.png)
 
+### <a name="featured-content"></a>Aktuellt innehåll
+
+Tillåt att vissa eller alla rapportförfattare i din organisation kan ha innehåll i avsnittet Aktuellt på Power BI-startsidan. Nya användare ser aktuellt innehåll överst på sin Power BI-startsida. Aktuellt innehåll flyttas ned på startsidan när användarna lägger till **favoriter**, **ofta använda**och **nya**. 
+
+Vi rekommenderar att du börjar med en liten uppsättning kampanjdeltagare först. Att låta hela organisationen lägga upp innehåll på startsidan kan göra det svårt att hålla koll på allt aktuellt innehåll. 
+
+När du har aktiverat aktuellt innehåll kan du också hantera det i administrationsportalen. I [Hantera aktuellt innehåll](#manage-featured-content) i den här artikeln kan du läsa om hur du styr aktuellt innehåll i din domän.
+
 ## <a name="content-pack-and-app-settings"></a>Inställningar för innehållspaket och appar
 
 ### <a name="publish-content-packs-and-apps-to-the-entire-organization"></a>Publicera innehållspaket och appar för hela organisationen
@@ -312,17 +320,16 @@ Användare i organisationen kan använda ArcGIS Maps for Power BI-visualiseringe
 
 Användare i organisationen kan använda externa sökfunktioner som förlitar sig på Azure Search.
 
-## <a name="custom-visuals-settings"></a>Inställningar för anpassade visuella objekt
+## <a name="power-bi-visuals-settings"></a>Inställningar för visuella Power BI-objekt
 
-### <a name="add-and-use-custom-visuals"></a>Lägg till och använda anpassade visuella objekt
+### <a name="add-and-use-power-bi-visuals"></a>Lägga till och använda visuella Power BI-objekt
 
-Användare i organisationen kan interagera med och dela anpassad visuell information. [Läs mer](developer/power-bi-custom-visuals.md)
+Användare i organisationen kan interagera med och dela visuella Power BI-objekt. [Läs mer](developer/visuals/power-bi-custom-visuals.md)
 
 > [!NOTE]
 > Den här inställningen kan tillämpas för hela organisationen eller begränsas till specifika grupper.
 
-
-Power BI Desktop (med start från lanseringen i mars 2019) stöder användning av **Grupprincip** för att inaktivera användningen av anpassade visuella objekt i en organisations distribuerade datorer.
+Power BI Desktop (med start från lanseringen i mars 2019) stöder användning av **Grupprincip** för att inaktivera användningen av visuella Power BI-objekt i en organisations distribuerade datorer.
 
 <table>
 <tr><th>Attribut</th><th>Värde</th>
@@ -335,16 +342,16 @@ Power BI Desktop (med start från lanseringen i mars 2019) stöder användning a
 </tr>
 </table>
 
-Med värdet 1 (decimal) kan du använda anpassade visuella objekt i Power BI (detta är standardinställningen).
+Med värdet 1 (decimal) kan du använda visuella Power BI-objekt i Power BI (detta är standardinställningen).
 
-Med värdet 0 (decimal) kan du inaktivera användningen av anpassade visuella objekt i Power BI.
+Med värdet 0 (decimal) kan du inaktivera användningen av visuella Power BI-objekt i Power BI.
 
 ### <a name="allow-only-certified-visuals"></a>Tillåt endast certifierade visuella objekt
 
-Användare i organisationen som har behörighet att lägga till och använda anpassade visuella objekt, enligt inställningen ”Lägg till och använd anpassade visuella objekt”, kan endast använda [certifierade anpassade visuella objekt](https://go.microsoft.com/fwlink/?linkid=2002010) (ocertifierade visuella objekt blockeras och ett felmeddelande visas när det används). 
+Användare i organisationen som har behörighet att lägga till och använda visuella Power BI-objekt, enligt inställningen ”Lägg till och använd visuella Power BI-objekt”, kan endast använda [certifierade anpassade visuella objekt](https://go.microsoft.com/fwlink/?linkid=2002010) (ocertifierade visuella objekt blockeras och ett felmeddelande visas när det används). 
 
 
-Power BI Desktop (med start från lanseringen i mars 2019) stöder användning av **Grupprincip** för att inaktivera användningen av ocertifierade anpassade visuella objekt i en organisations distribuerade datorer.
+Power BI Desktop (med start från lanseringen i mars 2019) stöder användning av **Grupprincip** för att inaktivera användningen av ocertifierade visuella Power BI-objekt i en organisations distribuerade datorer.
 
 <table>
 <tr><th>Attribut</th><th>Värde</th>
@@ -357,9 +364,9 @@ Power BI Desktop (med start från lanseringen i mars 2019) stöder användning a
 </tr>
 </table>
 
-Med värdet 1 (decimal) kan du använda ocertifierade anpassade visuella objekt i Power BI (detta är standardinställningen).
+Med värdet 1 (decimal) kan du använda ocertifierade visuella Power BI-objekt i Power BI (detta är standardinställningen).
 
-Värdet 0 (decimal) inaktiverar användningen av ocertifierade anpassade visuella objekt i Power BI (det här alternativet kan bara använda [certifierade anpassade visuella objekt](https://go.microsoft.com/fwlink/?linkid=2002010)).
+Värdet 0 (decimal) inaktiverar användningen av ocertifierade visuella Power BI-objekt i Power BI (det här alternativet kan bara använda [certifierade visuella Power BI-objekt](https://go.microsoft.com/fwlink/?linkid=2002010)).
 
 ## <a name="r-visuals-settings"></a>Inställningar för R-visualisering
 
@@ -404,11 +411,11 @@ Användare i organisationen kan tagga instrumentpaneler med klassificeringar som
 
 ### <a name="embed-content-in-apps"></a>Bädda in innehåll i appar
 
-Användare i organisationen kan bädda in Power BI-instrumentpaneler och rapporter i SaaS-program (programvara som en tjänst). När du inaktiverar den här inställningen kan användare inte använda REST-API: er för att bädda in Power BI-innehåll i sina program. [Läs mer](developer/embedding.md)
+Användare i organisationen kan bädda in Power BI-instrumentpaneler och rapporter i SaaS-program (programvara som en tjänst). När du inaktiverar den här inställningen kan användare inte använda REST-API: er för att bädda in Power BI-innehåll i sina program. [Läs mer](developer/embedded/embedding.md)
 
 ### <a name="allow-service-principals-to-use-power-bi-apis"></a>Tillåt att tjänsters huvudnamn att använda Power BI API:er
 
-Webbappar som är registrerade i Azure Active Directory (Azure AD) använder en ett huvudnamn för tjänsten som tilldelas i syfte att få åtkomst till Power BI:s API:er utan en inloggad användare. För att tillåta en app att använda autentisering med tjänstens huvudnamn, måste tjänstens huvudnamn ingå i en godkänd säkerhetsgrupp. [Läs mer](developer/embed-service-principal.md)
+Webbappar som är registrerade i Azure Active Directory (Azure AD) använder en ett huvudnamn för tjänsten som tilldelas i syfte att få åtkomst till Power BI:s API:er utan en inloggad användare. För att tillåta en app att använda autentisering med tjänstens huvudnamn, måste tjänstens huvudnamn ingå i en godkänd säkerhetsgrupp. [Läs mer](developer/embedded/embed-service-principal.md)
 
 > [!NOTE]
 > Tjänsthuvudnamn ärver behörigheterna för alla Power BI-klientinställningar för deras säkerhetsgrupp. Begränsa behörigheter genom att skapa en dedikerad säkerhetsgrupp för tjänstens huvudkonton och lägg till i listan Förutom vissa säkerhetsgrupper för de relevanta, aktiverade Power BI-inställningarna.
@@ -456,9 +463,9 @@ På fliken **Power BI Premium** kan du hantera alla premiumfunktioner för Power
 
 ### <a name="power-bi-embedded"></a>Power BI Embedded
 
-På fliken för **Power BI Embedded** kan du visa de Power BI Embedded-kapaciteter (A SKU) som du har köpt för din kund. Eftersom du bara kan köpa SKU:er från Azure, [hanterar du inbäddade kapaciteter i Azure](developer/azure-pbie-create-capacity.md) från **Azure-portalen**.
+På fliken för **Power BI Embedded** kan du visa de Power BI Embedded-kapaciteter (A SKU) som du har köpt för din kund. Eftersom du bara kan köpa SKU:er från Azure, [hanterar du inbäddade kapaciteter i Azure](developer/embedded/azure-pbie-create-capacity.md) från **Azure-portalen**.
 
-Mer information om hur du hanterar inställningar för Power BI Embedded (A SKU) finns i [Vad är Power BI Embedded](developer/azure-pbie-what-is-power-bi-embedded.md).
+Mer information om hur du hanterar inställningar för Power BI Embedded (A SKU) finns i [Vad är Power BI Embedded](developer/embedded/azure-pbie-what-is-power-bi-embedded.md).
 
 ## <a name="embed-codes"></a>Bädda in koder
 
@@ -466,14 +473,14 @@ Som administratör kan du visa de inbäddningskoder som har genererats för din 
 
 ![Bädda in koder i administrationsportalen för Power BI](media/service-admin-portal/embed-codes.png)
 
- ## <a name="organizational-visuals">Visuella organisationsobjekt</a> 
+ ## <a name=""></a><a name="organizational-visuals">Visuella organisationsobjekt</a> 
 
-Med fliken **organisationsobjekt** kan du distribuera och hantera anpassade visuella objekt i din organisation. Med visuella objekt kan du enkelt distribuera egna visuella objekt i din organisation som rapportförfattarna kan sedan identifiera och importera till sina rapporter från Power BI Desktop. [Läs mer](developer/power-bi-custom-visuals-organization.md)
+Med fliken **organisationsobjekt** kan du distribuera och hantera visuella Power BI-objekt i din organisation. Med visuella objekt kan du enkelt distribuera egna visuella objekt i din organisation som rapportförfattarna kan sedan identifiera och importera till sina rapporter från Power BI Desktop. [Läs mer](developer/visuals/power-bi-custom-visuals-organization.md)
 
 > [!WARNING]
 > Ett anpassat visuellt objekt kan innehålla kod som innebär säkerhets- eller integritetsrisker. Kontrollera att författaren och det visuella objektets källa är betrodda innan du distribuerar till organisationens databas.
 
-Följande bild visar alla de anpassade visuella objekt som för närvarande har distribuerats i organisationens databas.
+Följande bild visar alla de visuella Power BI-objekt som för närvarande har distribuerats i organisationens databas.
 
 ![Organisera visuellt objekt som administratör](media/service-admin-portal/power-bi-custom-visuals-organizational-admin-01.png)
 
@@ -483,11 +490,11 @@ Följ dessa steg om du vill lägga till ett nytt anpassat visuellt objekt i list
 
 1. I den högra rutan väljer du **Lägg till ett anpassat visuellt objekt**.
 
-    ![Anpassat visuellt objekt](media/service-admin-portal/power-bi-custom-visuals-organizational-admin-02.png)
+    ![Formulär för visuella Power BI-objekt](media/service-admin-portal/power-bi-custom-visuals-organizational-admin-02.png)
 
 1. Fyll i formuläret **Lägg till anpassade visuella objekt**:
 
-    * **Välj en .pbiviz-fil** (obligatoriskt): välj en fil för ett anpassat visuellt objekt att överföra. Endast versionshanterade visuella API-objekt stöds, och här kan du läsa vad det innebär.
+    * **Välj en .pbiviz-fil** (obligatoriskt): välj en fil för ett anpassat visuellt objekt att överföra. Endast versionshanterade visuella API-Power BI-objekt stöds, och här kan du läsa vad det innebär.
 
     Innan du överför ett anpassat visuellt objekt bör du granska objektet ur säkerhets- och sekretessynvinkel för att säkerställa att det uppfyller din organisations standarder.
 
@@ -524,9 +531,9 @@ Välj kugghjulsikonen om du vill uppdatera det visuella objektet från organisat
 
 Kontrollera att visualiserings-ID förblir oförändrat. Den nya filen ersätter den tidigare filen för alla rapporter i hela organisationen. Men om den nya versionen av visualiseringen kan skada någon användnings- eller datastruktur av den tidigare versionen av visualiseringen ska du inte ersätta den tidigare versionen. I stället bör du skapa en ny lista för den nya versionen av visualiseringen. Lägg till exempel till ett nytt versionsnummer (version X.X) till rubriken för den nya listade visualiseringen. På det här sättet är det klart att det är samma visualisering men bara med ett uppdaterat versionsnummer så att befintliga rapporter inte skadar deras funktioner. Kontrollera igen att visualiserings-ID förblir oförändrat. Nästa gång användarna använder organisationens databas från Power BI Desktop kan de importera den nya versionen, vilket tvingar dem att ersätta den aktuella version som de har i sina rapporter.
 
-Mer information finns i [Vanliga frågor och svar om anpassade visuella objekt i en organisation](/power-bi/developer/power-bi-custom-visuals-faq#organizational-power-bi-visuals)
+Mer information finns i [Vanliga frågor och svar om visuella Power BI-objekt i en organisation](developer/visuals/power-bi-custom-visuals-faq.md#organizational-power-bi-visuals)
 
-## <a name="dataflowStorage">Dataflödeslagring (förhandsversion)</a>
+## <a name=""></a><a name="dataflowStorage">Dataflödeslagring (förhandsversion)</a>
 
 Som standard lagras data som används med Power BI i intern lagring som tillhandahålls av Power BI. Med integreringen av dataflöden och Azure Data Lake Storage Gen2 (ADLS Gen2) kan du lagra dina dataflöden på din organisations Azure Data Lake Storage Gen2 konto. Mer information finns i [Dataflöden och Azure Data Lake-integrering (förhandsversion)](service-dataflows-azure-data-lake-integration.md).
 
@@ -542,7 +549,7 @@ På fliken **Arbetsytor** visas *tillståndet* för varje arbetsyta. Följande t
 |---------|---------|
 | Aktiv | En normal arbetsyta. Det indikerar ingenting om användning eller innehåll, bara att själva arbetsytan är ”normal”. |
 | Frånkopplad | En arbetsyta utan administratörsanvändare. |
-| Borttagen | En borttagen arbetsyta. Vi har tillräckligt mycket metadata för att återställa arbetsytan om du vill. |
+| Borttagen | En borttagen arbetsyta. I upp till 90 dagar behåller vi tillräckligt mycket metadata för att återställa arbetsytan om du vill. |
 | Tar bort | En arbetsyta som håller på att tas bort men som inte är borta än. Användare kan ta bort sina egna arbetsytor, och placera saker i Tar bort och slutligen i Borttagen. |
 
 ## <a name="custom-branding"></a>Anpassad varumärkesanpassning
@@ -561,6 +568,17 @@ Som administratör kan du anpassa utseendet på Power BI för hela organisatione
 Mer information finns i [Anpassad varumärkesanpassning för din organisation](https://aka.ms/orgBranding).
 
 ![Lista över arbetsytor](media/service-admin-portal/workspaces-list.png)
+
+## <a name="manage-featured-content"></a>Hantera aktuellt innehåll
+
+Som innehavaradministratör kan du hantera alla rapporter, instrumentpaneler och appar som har lagts upp i avsnittet Aktuellt innehåll på startsidan för Power BI i hela organisationen.
+
+- I administratörsportalen väljer du **Hantera aktuellt innehåll**.
+
+Här visas en översikt över vem som har tillgång till innehållet, när det lades upp som aktuellt samt alla relevanta metadata. Om något ser misstänkt ut eller om du vill rensa avsnittet Aktuellt innehåll kan du ta bort aktuellt innehåll efter behov.
+
+I [Aktuellt innehåll](#featured-content) i den här artikeln kan du läsa om hur du aktiverar aktuellt innehåll.
+
 ## <a name="next-steps"></a>Nästa steg
 
 [Administrera Power BI i din organisation](service-admin-administering-power-bi-in-your-organization.md)  

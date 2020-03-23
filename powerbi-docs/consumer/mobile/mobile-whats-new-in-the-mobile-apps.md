@@ -8,19 +8,22 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/09/2020
 ms.author: painbar
-ms.openlocfilehash: 97d2a3acba87309b74de1776f1325bb4c4a78910
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.openlocfilehash: 6885f635f96da3bbea039f445e83cd7cada144ce
+ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79041591"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79435983"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nyheter i Power BI-mobilapparna
 Relaterad information om nyheter finns i:
 
 * [Power BI-teambloggen för mobilappar](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Nyheter i Power BI Desktop](../../desktop-latest-update.md)  
-* [Nyheter i Power BI-tjänsten](../../service-whats-new.md)  
+* [Nyheter i Power BI-tjänsten](../../service-whats-new.md)
+
+>[!NOTE]
+>Stöd för Power BI-mobilappen för **telefoner som använder Windows 10 Mobile** kommer att upphöra den 16 mars 2021. [Läs mer](https://go.microsoft.com/fwlink/?linkid=2121400)
 
 ## <a name="february-2020"></a>Februari 2020
 
@@ -396,7 +399,7 @@ Nu när någon delar en rapport med dig, så listas den på sidan **Delat med mi
 
 #### <a name="improved-hyperlink-support"></a>Förbättrat stöd för hyperlänkar
 
-Nu kan du trycka på länkarna i anpassade visuella objekt om du vill öppna dem i din mobila webbläsare.
+Nu kan du trycka på länkarna i visuella Power BI-objekt om du vill öppna dem i din mobila webbläsare.
 
 #### <a name="intune-integration-android"></a>Intune-integration (Android)
 
@@ -470,7 +473,7 @@ Läs [funktionssammanfattningen om mobilappar för april 2017](https://powerbi.m
 #### <a name="all-devices"></a>Alla enheter
 **Bakgrundsfärg för telefonrapporter** När du definierar en bakgrundsfärg för en rapport i Power BI Desktop, får telefonrapporten samma bakgrundsfärg. Mer om att [optimera rapportsidor för telefoner](../../desktop-create-phone-report.md).
 
-**Utveckla mobilvänliga anpassade visuella objekt** Läs den här [utvecklarhandboken](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/MobileGuideline.md) för tips om hur du skapar anpassade visuella objekt som ser bra ut och fungerar bra på mobila enheter.
+**Utveckla mobilvänliga visuella Power BI-objekt** Läs den här [utvecklarhandboken](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/MobileGuideline.md) för tips om hur du skapar visuella Power BI-objekt som ser bra ut och fungerar bra på mobila enheter.
 
 #### <a name="ios-devices"></a>iOS-enheter
 **Prata med dina data: Ställ frågor genom att tala** Nu kan du [ställa frågor till dina data med Frågor och svar ](mobile-apps-ios-qna.md) genom att prata i stället för att skriva. 

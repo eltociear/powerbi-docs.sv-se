@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 01/29/2020
+ms.date: 03/12/2020
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 07fd9a00034a210dfbcc6cae4aa721e3b09bd37a
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 1caa68ac00f9821979f741bf3266514fcb33c36a
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76889407"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79381179"
 ---
 # <a name="what-is-power-bi-premium"></a>Vad är Power BI Premium?
 
@@ -88,7 +88,7 @@ Resurser och begränsningar för varje Premium-SKU (och en A-SKU med motsvarande
 
 ### <a name="capacity-workloads"></a>Kapacitetsarbetsbelastningar
 
-Kapacitetsarbetsbelastningar är tjänster som är tillgängliga för användarna. Som standard har Premium- och Azure-kapaciteterna endast stöd för en datamängdsarbetsbelastning som är associerad med Power BI-frågor som körs. Datamängdsarbetsbelastningen kan inte inaktiveras. Ytterligare arbetsbelastningar kan aktiveras för [AI (Cognitive Services)](https://powerbi.microsoft.com/blog/easy-access-to-ai-in-power-bi-preview/), [dataflöden](service-dataflows-overview.md#dataflow-capabilities-on-power-bi-premium) och [sidnumrerade rapporter](paginated-reports-save-to-power-bi-service.md). Dessa arbetsbelastningar stöds endast i Premium-prenumerationer. 
+Kapacitetsarbetsbelastningar är tjänster som är tillgängliga för användarna. Som standard har Premium- och Azure-kapaciteterna endast stöd för en datamängdsarbetsbelastning som är associerad med Power BI-frågor som körs. Datamängdsarbetsbelastningen kan inte inaktiveras. Ytterligare arbetsbelastningar kan aktiveras för [AI (Cognitive Services)](https://powerbi.microsoft.com/blog/easy-access-to-ai-in-power-bi-preview/), [dataflöden](service-dataflows-overview.md#dataflow-capabilities-on-power-bi-premium) och [sidnumrerade rapporter](paginated-reports/paginated-reports-save-to-power-bi-service.md). Dessa arbetsbelastningar stöds endast i Premium-prenumerationer. 
 
 Varje ytterligare arbetsbelastning möjliggör konfiguration av den högsta mängd minne (som en procentandel av den totala mängden tillgängligt minne) som kan användas av arbetsbelastningen. Standardvärden för maximalt minne bestäms av SKU:n. Du kan maximera kapacitetens tillgängliga resurser genom att endast aktivera dessa ytterligare arbetsbelastningar när de används. Du kan även ändra minnesinställningar först när du har fastställt att standardinställningarna inte uppfyller dina kapacitetsresurskrav. Arbetsbelastningar kan aktiveras och konfigureras för en kapacitet av kapacitetsadministratörer med hjälp av **kapacitetsinställningarna** i [administratörsportalen](service-admin-portal.md) eller via [REST-API:erna för kapaciteter](https://docs.microsoft.com/rest/api/power-bi/capacities).  
 
@@ -209,7 +209,7 @@ Sidnumrerade rapporter, som stöds på P1–P3- och A4–A6-SKU:er, baseras på 
 
 I Power BI Premium är sidnumrerade rapporter en arbetsbelastning som måste aktiveras för en kapacitet med hjälp av administratörsportalen. Kapacitetsadministratörer kan aktivera och sedan ange mängden minne som en procentandel av kapacitetens övergripande minnesresurser. Till skillnad från andra typer av arbetsbelastningar kör Premium sidnumrerade rapporter i ett inneslutet område inom kapaciteten. Det maximala minne som anges för det här området används oavsett om arbetsbelastningen är aktiv eller inte. Standard är 20 %. 
 
-Mer information finns i [Sidnumrerade rapporter i Power BI Premium](paginated-reports-report-builder-power-bi.md). Mer information om hur du aktiverar arbetsbelastningen för sidnumrerade rapporter finns i [Konfigurera arbetsbelastningar](service-admin-premium-workloads.md).
+Mer information finns i [Sidnumrerade rapporter i Power BI Premium](paginated-reports/paginated-reports-report-builder-power-bi.md). Mer information om hur du aktiverar arbetsbelastningen för sidnumrerade rapporter finns i [Konfigurera arbetsbelastningar](service-admin-premium-workloads.md).
 
 ## <a name="power-bi-report-server"></a>Power BI-rapportserver
  
@@ -227,7 +227,7 @@ Premium möjliggör omfattande distribution av innehåll från Pro-användare ut
 
 Mer information finns i [Power BI-licensiering](service-admin-licensing-organization.md).
 
-## <a name="tool-connectivity-preview"></a>Verktygsanslutning (förhandsgranskning)
+## <a name="analysis-services-in-power-bi-premium-preview"></a>Analysis Services i Power BI Premium (förhandsversion)
 
 Under huven drivs Power BI-datamängder av den beprövade **Analysis Services Vertipaq-motorn** från Microsoft. Analysis Services tillhandahåller programmerbarhet samt stöd för klientprogram och verktyg via klientbibliotek och API:er som stöder XMLA-protokollet med öppen standard. För närvarande stöder Power BI Premium-datamängder *skrivskyddade* åtgärder från Microsoft samt klientprogram och verktyg från tredje part via **XMLA-slutpunkter**. 
 

@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/08/2020
 ms.author: painbar
-ms.openlocfilehash: c7280b2b6bb34b070e7ced3785959d61c74cd165
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.openlocfilehash: 58ef9c6760194e3f11374bdb0663552fd11ce285
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79041291"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79377385"
 ---
 # <a name="configure-report-interaction-settings"></a>Konfigurera inställningar för rapportinteraktion
 
@@ -49,7 +49,7 @@ Med flervalsalternativet kan du välja flera datapunkter på en rapportsida. Nä
 Om du vill avmarkera en datapunkt trycker du på den igen.
 
 >[!NOTE]
->Flervalsalternativet stöds inte i anpassade visuella objekt.
+>Flervalsalternativet stöds inte i visuella Power BI-objekt.
 >
 >Flervalsläget kommer att stödjas i nästa version av Power BI-rapportserver.
 

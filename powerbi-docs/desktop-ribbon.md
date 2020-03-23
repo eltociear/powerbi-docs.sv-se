@@ -6,30 +6,30 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/20/2020
+ms.date: 03/20/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: df8c84b5b7baf55a32e07e3e48cb02317fdf7875
-ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
+ms.openlocfilehash: cbaf3244ce8e8aa2755b6b47bf6381c191293306
+ms.sourcegitcommit: 22991861c2b9454b170222591f64266335b9fcff
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77527487"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79133240"
 ---
-# <a name="use-the-updated-ribbon-in-power-bi-desktop-preview"></a>Använda det uppdaterade menyfliksområdet i Power BI Desktop (förhandsversion)
+# <a name="use-the-updated-ribbon-in-power-bi-desktop"></a>Använda det uppdaterade menyfliksområdet i Power BI Desktop
 
-Från och med uppdateringen i november 2019 ändrar Power BI Desktop sitt menyfliksområde för att anpassa det till andra Microsoft-produkter, till exempel Microsoft Office.
+Från och med uppdateringen i mars 2020 ändrar Power BI Desktop sitt menyfliksområde för att anpassa det bättre till andra Microsoft-produkter, till exempel Microsoft Office. Det uppdaterade menyfliksområdet visas i månadsuppdateringar från november 2019 som en förhandsgranskningsfunktion, och från och med uppdateringen i mars 2020 är det nya menyfliksområdet standard.
 
 ![Nytt menyfliksområde i Power BI Desktop](media/desktop-ribbon/desktop-ribbon-02.png)
 
-Det uppdaterade menyfliksområdet är i förhandsversion, för att vi ska kunna samla in feedback från användare och kunder och se till att upplevelsen blir enastående bra. Vi förväntar oss några månader för förhandsversion, feedback och förbättringar innan det uppdaterade menyfliksområdet i Power BI Desktop lanseras till alla. 
-
 ## <a name="how-to-enable-the-updated-ribbon"></a>Så här aktiverar du det uppdaterade menyfliksområdet
 
-Det uppdaterade menyfliksområdet i Power BI är en förhandsgranskningsfunktion som måste vara aktiverad. Aktivera den genom att välja **Arkiv > Alternativ och inställningar > Alternativ** och sedan **Förhandsgranskningsfunktioner** i den vänstra kolumnen. I den högra rutan finns alternativet **Menyfliksområdet har uppdaterats**. Markera kryssrutan bredvid **Menyfliksområdet har uppdaterats** för att aktivera förhandsgranskningsfunktionen. Du måste starta om Power BI Desktop för att förhandsgranskningsfunktionen ska börja gälla.
+Från och med uppdateringen i mars 2020 är det uppdaterade menyfliksområdet aktiverat som standard. I tidigare versioner av Power BI Desktop än denna (från och med uppdateringen i november 2019) var det uppdaterade menyfliksområdet i Power BI en förhandsgranskningsfunktion som måste aktiveras. Om du vill aktivera den i en tidigare uppdatering väljer du **Arkiv > Alternativ och inställningar > Alternativ** och väljer sedan **Förhandsgranskningsfunktioner** i den vänstra kolumnen. I den högra rutan finns alternativet **Menyfliksområdet har uppdaterats**. Markera kryssrutan bredvid **Menyfliksområdet har uppdaterats** för att aktivera förhandsgranskningsfunktionen. Du måste starta om Power BI Desktop för att förhandsgranskningsfunktionen ska börja gälla.
 
 ![Det uppdaterade menyfliksområdet i Power BI Desktop](media/desktop-ribbon/desktop-ribbon-01.png)
 
+> [!NOTE]
+> För versioner av Power BI Desktop som börjar med mars 2020 behöver du inte aktivera det uppdaterade menyfliksområdet, eftersom det nya menyfliksområdet är standard från och med mars 2020.
 
 ## <a name="features-of-the-new-ribbon"></a>Funktioner i det nya menyfliksområdet
 

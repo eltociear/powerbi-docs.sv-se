@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: quickstart
 ms.date: 11/25/2019
 ms.author: painbar
-ms.openlocfilehash: 8703bfa60116b7e60f1e6bec931b0f6183f7dd31
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 0313dc2014130ded9b9ed4ad112aa26803d92d28
+ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75218734"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79435730"
 ---
 # <a name="quickstart-explore-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Snabbstart: Utforska instrumentpaneler och rapporter i Power BI-mobilappar
 I den här snabbstarten får du en snabbtur om Power BI-mobilappen och utforskar ett exempel på en instrumentpanel och en rapport. Power BI-appen för iOS visas, men du kan enkelt följa med på andra enheter.
@@ -23,6 +23,9 @@ Gäller för:
 | ![iPhone](./media/mobile-apps-quickstart-view-dashboard-report/iphone-logo-30-px.png) | ![iPad](./media/mobile-apps-quickstart-view-dashboard-report/ipad-logo-30-px.png) | ![Android](./media/mobile-apps-quickstart-view-dashboard-report/android-logo-30-px.png) | ![Windows 10-enheter](./media/mobile-apps-quickstart-view-dashboard-report/win-10-logo-30-px.png) |
 |:--- |:--- |:--- |:--- |
 | iPhone | iPad | Android | Windows 10 |
+
+>[!NOTE]
+>Stöd för Power BI-mobilappen för **telefoner som använder Windows 10 Mobile** kommer att upphöra den 16 mars 2021. [Läs mer](https://go.microsoft.com/fwlink/?linkid=2121400)
 
 En instrumentpanel är en portal till ditt företags livscykel och processer. Det är en enskild plats där du har översikt över verksamheten. Rapporter är interaktiva vyer över dina data med visuell information som representerar olika resultat och insikter från dessa data. 
 

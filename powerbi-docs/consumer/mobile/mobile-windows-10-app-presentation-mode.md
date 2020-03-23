@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 02/08/2020
 ms.author: painbar
-ms.openlocfilehash: f900a329ccbfa2a6e80883baec9694ddeaf3833a
-ms.sourcegitcommit: 17aad73762579d6822383b27b96b1b63f87f2d6f
+ms.openlocfilehash: 3be0ab1eb45716d0b9b7736d3e5bf5b8bfc25891
+ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77260062"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79436006"
 ---
 # <a name="view-reports-and-dashboards-in-presentation-mode-on-surface-hub-and-windows-10-devices"></a>Visa rapporter och instrumentpaneler i presentationsläge på Surface Hub och Windows 10-enheter
 Du kan använda presentationsläge för att visa rapporter och instrumentpaneler i helskärmsläge på Windows 10-enheter och Surface Hub. 
@@ -28,8 +28,9 @@ Du kan också [visa instrumentpaneler och rapporter i helskärmsläge från Powe
 
 > [!NOTE]
 > Presentationsläget skiljer sig från [fokusläge för paneler](mobile-tiles-in-the-mobile-apps.md).
-> 
-> 
+
+>[!NOTE]
+>Stöd för Power BI-mobilappen för **telefoner som använder Windows 10 Mobile** kommer att upphöra den 16 mars 2021. [Läs mer](https://go.microsoft.com/fwlink/?linkid=2121400)
 
 ## <a name="use-presentation-mode"></a>Använda presentationsläge
 Byt till helskärmsläge i Power BI-mobilappen genom att trycka på **helskärms**ikonen.

@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: db636f16729847c40806bc328efbbdd700e79083
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.openlocfilehash: 0bbdc13e1adf52ba90435f22920e4351e8f34404
+ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79114743"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79435960"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-for-windows-10"></a>Kom igång med Power BI-mobilappen för Windows 10
 Power BI-mobilappen för Windows 10 ger Power BI till din surfplatta eller telefon. Du får aktuell, mobil åtkomst med pekfunktion till din företagsinformation. Visa och interagera med ditt företags instrumentpaneler från valfri plats – direkt från [Windows-startskärmen](mobile-pin-dashboard-start-screen-windows-10-phone-app.md).
@@ -28,6 +28,9 @@ Sedan interagerar du med dina instrumentpaneler och rapporter, utforskar data oc
 * [**Hämta Power BI-mobilappen för Windows 10**](https://go.microsoft.com/fwlink/?LinkID=526478) från Windows Store.
   
   Din enhet måste köra Windows 10. Appen kan köras på enheter med minst 3 GB RAM-minne och 8 GB intern lagring.
+
+  >[!NOTE]
+  >Stöd för Power BI-mobilappen för **telefoner som använder Windows 10 Mobile** kommer att upphöra den 16 mars 2021. [Läs mer](https://go.microsoft.com/fwlink/?linkid=2121400)
    
 * Ta reda på [nyheterna i Power BI-mobilapparna](mobile-whats-new-in-the-mobile-apps.md).
 

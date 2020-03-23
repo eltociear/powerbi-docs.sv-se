@@ -9,23 +9,23 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: d9e291ff4f61f69ec84e39767906a79f65c2f30f
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.openlocfilehash: 6bf8ccd9048262ce05aff68819ecdb31a44ddfe2
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79114173"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79377200"
 ---
 # <a name="visual-types-in-power-bi"></a>Typer av visuella objekt i Power BI
 
 [!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
-Det finns visuella objekt i rapporter, på instrumentpaneler samt i frågor och svar. Vissa av dessa typer av visuella objekt paketeras med Power BI, och vissa är *anpassade visuella objekt*. Anpassade visuella objekt skapas utanför Power BI och på ett sätt som gör att *rapportdesigners* kan lägga till dem i Power BI-rapporter och -instrumentpaneler. 
+Det finns visuella objekt i rapporter, på instrumentpaneler samt i frågor och svar. Vissa av dessa typer av visuella objekt paketeras med Power BI, och vissa är *visuella Power BI-objekt*. Anpassade visuella objekt skapas utanför Power BI och på ett sätt som gör att *rapportdesigners* kan lägga till dem i Power BI-rapporter och -instrumentpaneler. 
 
 Den här artikeln är en översikt över de visuella objekt som paketeras med Power BI-tjänsten.  Det här är de visuella objekt som du stöter på oftast. Detaljerad information om dessa visuella objekt finns i [dokumentationen om typer av visuella objekt för Power BI-*rapportdesigners*](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md)
 
 > [!NOTE]
-> Du kan få mer information om anpassade visuella genom att söka efter dem i avsnittet om **visuella objekt i Power BI** i [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). För varje visuella objekt finns en beskrivning, information om skapare och antingen skärmbilder eller en video. 
+> Du kan få mer information om visuella Power BI-objekt genom att söka efter dem i avsnittet om **visuella objekt i Power BI** i [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). För varje visuella objekt finns en beskrivning, information om skapare och antingen skärmbilder eller en video. 
 
 ## <a name="list-of-visuals-available-in-power-bi"></a>Lista över visuella objekt som är tillgängliga i Power BI
 Alla dessa visuella objekt finns i Power BI-instrumentpaneler och -rapporter och [anges i frågor och svar](end-user-q-and-a.md). Information om hur du interagerar med visuella objekt finns i [Interagera med visuella objekt i rapporter, instrumentpaneler och appar](end-user-visualizations.md)
@@ -237,7 +237,7 @@ Vattenfallsdiagram är ett bra alternativ
 - för att illustrera inledande och avslutande personalstyrka för ditt företag under ett år
 - för att visualisera hur mycket pengar ni tjänar och spenderar varje månad och den löpande balansen för räkenskaperna.
 
-## <a name="qna"></a>Berätta för Frågor och svar vilket visuellt objekt som ska användas
+## <a name="tell-qa-which-visual-to-use"></a><a name="qna"></a>Berätta för Frågor och svar vilket visuellt objekt som ska användas
 När du skriver frågor med naturligt språk i Frågor och svar för Power BI kan du ange typen av visuellt objekt i frågan.  Till exempel:
 
 

@@ -11,11 +11,11 @@ ms.date: 03/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
 ms.openlocfilehash: bdd2ec136ae741e15e0cb60d141c651cd5fb6749
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73877475"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79207607"
 ---
 # <a name="edit-or-remove-a-dashboard-tile"></a>Redigera eller ta bort en panel på instrumentpanelen
 
@@ -126,7 +126,7 @@ Om du väljer en panel skickas du som standard till rapporten där panelen skapa
 <a name="different"></a>
 
 ### <a name="pin-the-tile-to-a-different-dashboard"></a>Fäst panelen på en annan instrumentpanel
-1. Från ellipsens listmeny väljer du **Fäst panelen** ![fästikon](media/service-dashboard-edit-tile/pinnooutline.png).
+1. Från ellipsens listmeny väljer du **Fäst panel** ![fästikon](media/service-dashboard-edit-tile/pinnooutline.png).
 2. Välj om du ska fästa en dublett av den här panelen på en befintlig eller ny instrumentpanel. 
    
    ![Dialogrutan Fäst på instrumentpanelen](media/service-dashboard-edit-tile/pbi_pintoanotherdash.png)
@@ -135,7 +135,7 @@ Om du väljer en panel skickas du som standard till rapporten där panelen skapa
 <a name="delete"></a>
 
 ### <a name="delete-the-tile"></a>Ta bort panelen
-1. Om du vill ta bort en panel permanent från en instrumentpanel väljer du **Ta bort panelen** ![borttagningsikon](media/service-dashboard-edit-tile/power-bi-delete-tile-icon.png) från ellips-listmenyn. 
+1. Om du vill ta bort en panel permanent från en instrumentpanel väljer du **Ta bort panel** ![borttagningsikon](media/service-dashboard-edit-tile/power-bi-delete-tile-icon.png) från ellipsens listmeny. 
 
 2. Om du tar bort en panel så tas inte den underliggande visualiseringen bort. Öppna den underliggande rapporten genom att välja Belopp-panelen. Öppna den sista sidan i rapporten för att se att den ursprungliga visualiseringen inte har tagits bort från rapporten. 
 

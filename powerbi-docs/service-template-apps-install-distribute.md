@@ -1,134 +1,130 @@
 ---
-title: Distribuera mallappar i organisationen – Power BI
+title: Installera och distribuera mallappar i organisationen – Power BI
 description: Läs mer om att installera, anpassa och distribuera mallappar i din organisation i Power BI.
-author: teddybercovitz
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
-ms.date: 09/14/2019
-ms.author: tebercov
-ms.openlocfilehash: dcb037fdf064611947719a57316f31d901e3b81d
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.topic: how-to
+ms.date: 03/15/2020
+ms.author: painbar
+ms.openlocfilehash: 08aadc3027c5b265194e4239b150ea5d27fe2e43
+ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73871429"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79436121"
 ---
-# <a name="install-and-distribute-template-apps-in-your-organization---power-bi"></a>Installera och distribuera mallappar i organisationen – Power BI
+# <a name="install-and-distribute-template-apps-in-your-organization"></a>Installera och distribuera mallappar i organisationen
 
-Är du Power BI-analytiker? I så fall kan du läsa den här artikeln om att installera *mallappar* och ansluta dem till många av de tjänster du använder i verksamheten, som Salesforce, Microsoft Dynamics och Google Analytics. Du kan modifiera instrumentpaneler och rapporter enligt organisationens behov och sedan distribuera dem till dina kollegor som en *app*. 
+Är du Power BI-analytiker? I så fall kan du läsa den här artikeln om att installera [mallappar](service-template-apps-overview.md) och ansluta dem till många av de tjänster du använder i verksamheten, som Salesforce, Microsoft Dynamics och Google Analytics. Du kan sedan modifiera mallappens inbyggda instrumentpanel och rapporter enligt organisationens behov och sedan distribuera dem till dina kollegor som [appar](consumer/end-user-apps.md). 
 
 ![Installerade Power BI-appar](media/service-template-apps-install-distribute/power-bi-get-apps.png)
 
-Om du är intresserad av att skapa mallappar som du kan distribuera själv, kan du läsa [Skapa en mallapp i Power BI](service-template-apps-create.md). Power BI-partner kan skapa Power BI-appar nästan helt utan kodning och distribuera dem till Power BI-kunder. 
+Om du är intresserad av att skapa mallappar som du själv kan distribuera utanför organisationen, kan du läsa [Skapa en mallapp i Power BI](service-template-apps-create.md). Power BI-partner kan skapa Power BI-appar nästan helt utan kodning och distribuera dem till Power BI-kunder. 
 
 ## <a name="prerequisites"></a>Förutsättningar  
 
-Här följer kraven för att installera, anpassa och distribuera en mallapp: 
+Om du vill installera, anpassa och distribuera en mallapp behöver du: 
 
-- A [Power BI Pro-licens](service-self-service-signup-for-power-bi.md)
-- Bekanta dig med [grundläggande begrepp för Power BI ](service-basic-concepts.md)
-- Giltigt installationslänk från den som skapat mallappen eller AppSource. 
-- Behörighet att installera mallappar. 
+* En [Power BI Pro-licens](service-self-service-signup-for-power-bi.md).
+* Behörighet att installera mallappar på klientorganisationen.
+* En giltig installationslänk för appen, som du får antingen från AppSource eller från appskaparen.
+* Kunskap om [grundläggande begrepp i Power BI](service-basic-concepts.md).
 
 ## <a name="install-a-template-app"></a>Installera en mallapp
-
-Du kan få en länk till en mallapp. Annars kan du söka på AppSource efter något som intresserar dig. När du har installerat appen kan du ändra den och distribuera den till din egen organisation.
-
-### <a name="search-appsource-from-a-browser"></a>Söka i AppSource från en webbläsare
-
-Välj den här länken i en webbläsare för att öppna AppSource filtrerat på Power BI-appar:
-
-- https://appsource.microsoft.com/marketplace/apps?product=power-bi
-
-### <a name="search-appsource-from-the-power-bi-service"></a>Söka på AppSource från Power BI-tjänsten
 
 1. Välj **Appar** > **Hämta appar** i navigeringsfönstret i Power BI-tjänsten.
 
     ![Hämta appar](media/service-template-apps-install-distribute/power-bi-get-apps-arrow.png)
 
-2. Välj **Appar** i AppSource.
+1. I AppSource-fönstret som visas väljer du **Appar**. Bläddra eller sök efter appen du vill använda och välj sedan **Hämta nu**.
 
     ![Söka i AppSource](media/service-template-apps-install-distribute/power-bi-appsource.png)
 
-3. Bläddra eller sök efter appen och välj sedan **Hämta nu**.
+1. I dialogrutan som visas väljer du **Installera**.
 
-4. Välj **Installera** i dialogrutan.
+    ![Installera app](media/service-template-apps-install-distribute/power-install-dialog.png)
+    
+    Appen installeras med en associerad arbetsyta. **Om du bestämmer dig för att anpassa appen gör du det i den associerade arbetsytan**.
 
-    ![Installera app](media/service-template-apps-install-distribute/power-install-dialog.png) Om du har en Power BI Pro-licens installeras appen med dess tillhörande arbetsyta. Du kan anpassa appen i arbetsytan.
+    > [!NOTE]
+    > Om du använder en installationslänk för en app som inte finns i AppSource, visas dialogrutan för validering där du uppmanas att bekräfta valet.
+    >
+    >För att kunna installera en mall som inte visas i AppSource, måste du begära relevanta behörigheter från din administratör. Se [Mallappinställningar](service-admin-portal.md#template-apps-settings) i Power BI-administratörsportalen för mer information.
 
-    När installationen är klar visas ett meddelande om att din nya app är klar.
-4. Välj **Gå till app**.
-5. I **Kom igång med din nya app** väljer du ett av följande tre alternativ:
+    När installationen har slutförts visas ett meddelande som anger att din nya app är klar.
 
-    ![Kom igång med din app](media/service-template-apps-create/power-bi-template-app-get-started.png)
+    ![Gå till app](media/service-template-apps-install-distribute/power-bi-go-to-app.png)
 
-    - **Utforska appen**: Utforskning av data med grundläggande exempel. Börja här för att få en känsla av appen. 
-    - **Anslut data**: Ändra datakällan från exempeldata till din egen datakälla. Du kan definiera om datauppsättningsparametrar och autentiseringsuppgifter för datakällan. Se [Kända begränsningar](service-template-apps-tips.md#known-limitations) i artikeln om tips för mallappar. 
-    - **Gå till arbetsytan** (avancerat alternativ): du kan göra de ändringar som apputvecklaren tillåter.
+## <a name="connect-to-data"></a>Ansluta till data
 
-    Eller så kan du hoppa över den här dialogrutan och gå direkt till den tillhörande arbetsytan via **Arbetsytor** i navigeringsfönstret.
-    >[!NOTE]
-    >Vid installation av en mallapp installeras både en *organisationsapp* och en *arbetsyta*. Läs mer om att [distribuera appar i Power BI](service-create-distribute-apps.md).
- 
-6. Innan du delar den med dina medarbetare ansluter du till dina egna data. Du kanske också vill ändra rapporten eller instrumentpanelen så att den passar din organisation. Du kan även lägga till andra rapporter eller instrumentpaneler i det här läget.
+1. Välj **Gå till app**. Fönstret **Kom igång med din nya app** visas.
 
-   Om du väljer en installationslänk för en app som inte finns i AppSource, visas dialogrutan för validering där du uppmanas att bekräfta valet.
+   ![Kom igång med din app](media/service-template-apps-install-distribute/power-bi-template-app-get-started.png)
 
-   ![Installera app](media/service-template-apps-install-distribute/power-install-unvalidated-dialog.png)
+1. Klicka på **Anslut**.
+    
+    Då öppnas en dialogruta eller serie med dialogrutor där du kan ändra datakällan från exempeldata till din egen datakälla. Det betyder vanligtvis att du definierar om datauppsättningsparametrar och autentiseringsuppgifter för datakällan. Se [Kända begränsningar](service-template-apps-tips.md#known-limitations).
+    
+    I exemplet nedan involverar anslutningen till data två dialogrutor.
 
-   >[!NOTE]
-   >Du måste begära behörighet från din administratör för att kunna installera mallappar som inte finns i AppSource. Se [mallappinställningarna i Power BI-administratörsportalen](service-admin-portal.md#template-apps-settings) för mer information.
+   ![Dialogrutor för Anslut till data](media/service-template-apps-install-distribute/power-bi-template-app-connect-to-data-dialogs.png)
 
-## <a name="customize-and-publish-the-app"></a>Anpassa och publicera appen
+    När du har fyllt i anslutningsdialogrutorna startar anslutningsprocessen. En banderoll informerar dig om att du visar exempeldata.
 
-När du har anpassat appen för din organisation är du redo att publicera den. Stegen är desamma som för publicering av andra appar.
+    ![Visar exempeldata](media/service-template-apps-install-distribute/power-bi-template-app-viewing-sample-data.png)
 
-1. När du är klar med anpassningen väljer du **Uppdatera app** längst upp till höger i listvyn för arbetsytan.  
+    Vänta tills data har anslutits och uppdaterats. Om du vill veta när den här processen är avslutad tittar du på förloppsindikatorn på datauppsättningsraden (nytt utseende) eller fliken (gammalt utseende).
 
-    ![Starta appinstallationen](media/service-template-apps-install-distribute/power-bi-start-install-app.png)
+   När anslutningen och datauppdateringen är klar ska du uppdatera webbläsaren. Banderollen informerar nu om att du behöver uppdatera appen för att tillämpa de ändringar du gör i appen och för att dela den.
 
-2. I **Information** kan du ändra beskrivningen och bakgrundsfärgen.
+    ![Anpassa och dela appen](media/service-template-apps-install-distribute/power-bi-template-app-customize-share.png)
 
-   ![Ange beskrivning och färg för appen](media/service-template-apps-install-distribute/power-bi-install-app-details.png)
+## <a name="customize-and-share-the-app"></a>Anpassa och dela appen
 
-3. I **Navigering** kan du använda det nya navigeringsverktyget för appen eller välja instrumentpanelen eller rapporten för landningssidan. Se [Utforma appens navigeringsfunktion](service-create-distribute-apps.md#design-the-navigation-experience) för mer information.
+När du har uppdaterat webbläsaren efter anslutning till data och datauppdatering, ser du nu arbetsytan som är associerad med appen. Nu kan du redigera alla artefakter där, precis som i alla arbetsytor. Kom dock ihåg att alla ändringar du gör kommer att skrivas över när du uppdaterar appen med en ny version, om du inte sparar de objekt som du har ändrat under olika namn. [Se information om att skriva över](#overwrite-behavior).
 
-   ![Ange landningssida för appen](media/service-template-apps-install-distribute/power-bi-install-app-content.png)
+Information om hur du redigerar artefakter i arbetsytan finns i
+* [Upptäck rapportredigeraren i Power BI](service-the-report-editor-take-a-tour.md)
+* [Grundläggande begrepp för designers i Power BI-tjänsten](service-basic-concepts.md)
 
-4. I **Åtkomst** ger du åtkomst till valda användare eller hela organisationen.  
-
-   ![Ange åtkomst till appen](media/service-template-apps-install-distribute/power-bi-install-access.png)
-
-5. Välj **Uppdatera app**. 
-
-6. När den har publicerats kan du kopiera länken och dela den med de personer som du har beviljat åtkomst till. De som du delar länken med kan också se den på fliken **Min organisation** i AppSource.
+När du har gjort alla ändringar du vill för artefakterna i arbetsytan är du redo att publicera och dela appen. Se [Publicera din app](service-create-distribute-apps.md#publish-your-app) för att lära dig hur du gör detta.
 
 ## <a name="update-a-template-app"></a>Uppdatera en mallapp
 
-Skapare av mallappar kan släppa nya versioner av sina mallappar via AppSource eller en direktlänk. När de gör de kan du uppdatera mallappen när du ominstallerar appen med samma eller en nyare version.
+Då och då släpper skapare av mallappar nya förbättrade versioner av sina mallappar, antingen via AppSource, direktlänk eller både och.
 
-  >[!NOTE]
-  >När du installerar en ny version skrivs alla ändringar du har gjort av rapporter och instrumentpaneler över. Om du vill behålla dina uppdaterade rapporter och instrumentpaneler kan du spara dem med ett annat namn eller på en annan plats innan du installerar.
+Om du ursprungligen laddade ned appen från AppSource, och en ny version av mallappen blir tillgänglig, visas en uppdateringsbanderoll i Power BI-tjänsten som informerar dig om att en ny appversion är tillgänglig.
 
-- **Skriv över en befintlig version:** Skriver över den befintliga arbetsytan med den uppdaterade versionen av mallappen.
+  ![Uppdateringsmeddelande för mallapp](media/service-template-apps-install-distribute/power-bi-new-app-version-notification.png)
 
-   ![Uppdatera mallappen](media/service-template-apps-install-distribute/power-bi-update-app-overwrite.png)
+>[!NOTE]
+>Om du ursprungligen fick appen via direktlänk i stället för via AppSource, kan du bara få reda på om en ny version är tillgänglig genom att kontakta skaparen av mallappen.
 
-- **Installera på en ny arbetsyta:** Installerar en ny version av arbetsytan och appen som du måste konfigurera om
+  Om du vill installera uppdateringen klickar du antingen på **Hämta** i meddelandebanderollen, eller söker efter appen igen i AppSource och väljer **Hämta nu**. Om du har en direktlänk för uppdateringen från den som skapat mallappen, klickar du bara på länken.
+  
+  Du får en fråga om du vill skriva över den aktuella versionen eller installera den nya versionen i en ny arbetsyta. Överskrivning är valt som standard.
+
+  ![Uppdatera mallappen](media/service-template-apps-install-distribute/power-bi-update-app-overwrite.png)
+
+- **Skriv över en befintlig version:** Skriver över den befintliga arbetsytan med den uppdaterade versionen av mallappen. [Se information om att skriva över](#overwrite-behavior).
+
+- **Installera på en ny arbetsyta:** Installerar en ny version av arbetsytan och appen som du måste konfigurera om (det vill säga ansluta till data, definiera navigering och behörigheter).
 
 ### <a name="overwrite-behavior"></a>Överskrivningsfunktioner
 
-* Att skriva över uppdaterar rapporterna, instrumentpanelerna och datauppsättningen på *arbetsytan*, inte i appen. När du skriver över ändras inte appnavigeringen, konfigurationen och behörigheten.
-* När du har uppdaterat arbetsytan måste du *uppdatera appen* för att tillämpa ändringar från arbetsytan till organisationsappen.
-* Överskrivning behåller konfigurerade parametrar och autentisering. Efter uppdatering startar en automatisk uppdatering av datauppsättningen. Under den tiden visar organisationsappen, rapporter och instrumentpaneler gränssnittet för *exempeldata*.
+* Att skriva över uppdaterar rapporterna, instrumentpanelerna och datauppsättningen på arbetsytan, inte i appen. När du skriver över ändras inte appnavigeringen, konfigurationen och behörigheterna.
+* När du har uppdaterat arbetsytan **måste du uppdatera appen för att tillämpa ändringar från arbetsytan till appen**.
+* Överskrivning behåller konfigurerade parametrar och autentisering. Efter uppdatering startar en automatisk uppdatering av datauppsättningen. **Under uppdateringen visas exempeldata i appen, rapporterna och på instrumentpanelerna**.
+
   ![Exempeldata](media/service-template-apps-install-distribute/power-bi-sample-data.png)
-* Vid överskrivning visas alltid exempeldata tills uppdateringen är klar. Om mallappens skapare har gjort ändringar av datauppsättningen eller parametrarna fortsätter användare av arbetsyta och appen att se gränssnittet för *exempeldata*.
-* Överskrivning tar aldrig bort *nya* rapporter eller instrumentpaneler du har lagt till på arbetsytan. De ursprungliga rapporterna och instrumentpanelerna skrivs över med ändringar från den ursprungliga skaparen.
+
+* Vid överskrivning visas alltid exempeldata tills uppdateringen är klar. Om mallappens skapare har gjort ändringar i datauppsättningen eller parametrarna kommer användare av arbetsytan och appen inte att se nya data förrän uppdateringen är klar. I stället kommer de fortfarande att se exempeldata under den här tiden.
+* Överskrivning tar aldrig bort nya rapporter eller instrumentpaneler som du har lagt till i arbetsytan. De ursprungliga rapporterna och instrumentpanelerna skrivs endast över med ändringar från den ursprungliga skaparen.
 
 >[!IMPORTANT]
->Kom ihåg att [uppdatera appen](#customize-and-publish-the-app) efter överskrivning för att tillämpa ändringar på rapporterna och instrumentpanelen för användarna av organisationsappen.
+>Kom ihåg att [uppdatera appen](#customize-and-share-the-app) efter överskrivning för att tillämpa ändringar på rapporterna och instrumentpanelen för användarna av organisationsappen.
 
 ## <a name="next-steps"></a>Nästa steg
 

@@ -1,24 +1,24 @@
 ---
 title: Introduktion till användning av SVG-verktyg för visuella Power BI-objekt
-description: I den här artikeln beskrivs hur du använder SVG-verktyg för att förenkla SVG-manipulering för anpassade visuella Power BI-objekt
+description: I den här artikeln beskrivs hur du använder SVG-verktyg för att förenkla SVG-manipulering för visuella Power BI-objekt
 author: KesemSharabi
 ms.author: kesharab
 manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 06/18/2019
-ms.openlocfilehash: 612c253e53cdaec5819387548354595c8bd94fa0
-ms.sourcegitcommit: 0cc594ebb78a6d0e88784673ed09f8aefd10c7a7
+ms.openlocfilehash: aa1ac8074e842a51b369c48f57c4b5016a80140c
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76819317"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79377982"
 ---
 # <a name="svg-utils"></a>SVG-verktyg
 
-SVGUtils är en uppsättning funktioner och klasser som förenklar SVG-manipulering för anpassade visuella Power BI-objekt
+SVGUtils är en uppsättning funktioner och klasser som förenklar SVG-manipulering för visuella Power BI-objekt
 
 ## <a name="installation"></a>Installation
 

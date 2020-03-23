@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 01/16/2020
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 138173d30b9c37c04047c61dbd04cbd3101696aa
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: eefae2b230bf087635b79ed4645a9297b7194edd
+ms.sourcegitcommit: 646d2de454a2897dc52cbc02b7743aaa021bac04
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76753201"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79525647"
 ---
 # <a name="purchase-and-assign-power-bi-pro-user-licenses"></a>Köpa och tilldela Power BI Pro-användarlicenser
 
@@ -28,7 +28,7 @@ Power BI Pro är en enskild användarlicens där användarna kan läsa och inter
 Den här artikeln beskriver hur du köper Power BI Pro-användarlicenser i Administrationscenter för Microsoft 365. När du har köpt licenser kan du tilldela dem till användare i antingen Administrationscenter för Microsoft 365 eller Azure-portalen.
 
 > [!NOTE]
-> Från och med 14 januari 2020 är funktionerna för självbetjäningsköp, prenumeration och licenshantering för Power Platform-produkter (Power BI, Power Apps och Power Automate) tillgängliga för kommersiella molnkunder i USA. Mer information, inklusive steg för att aktivera eller inaktivera självbetjäningsköp i din organisation, finns i [Vanliga frågor och svar om att självbetjäningsköp](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq).
+> Från och med 14 januari 2020 är funktionerna för självbetjäningsköp, prenumeration och licenshantering för Power Platform-produkter (Power BI, Power Apps och Power Automate) tillgängliga för kommersiella molnkunder. Mer information, inklusive steg för att aktivera eller inaktivera självbetjäningsköp i din organisation, finns i [Vanliga frågor och svar om att självbetjäningsköp](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq).
 
 ### <a name="prerequisites"></a>Förutsättningar
 

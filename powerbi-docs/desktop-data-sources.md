@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/13/2020
+ms.date: 03/13/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f13c8f34fbbe927ee6929a0b3e717248aedd63d0
-ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
+ms.openlocfilehash: fa0686171ee6f9e171e69d60f804d8e141530103
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77427563"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79207262"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Datakällor i Power BI Desktop
 
@@ -90,7 +90,8 @@ Kategorin **Databas** innehåller följande dataanslutningar:
 * Snowflake
 * Essbase
 * AtScale-kuber
-* BI Connector Data Virtuality LDW (Beta)
+* BI-anslutningsapp 
+* Data Virtuality LDW (Beta)
 * Denodo
 * Dremio
 * Exasol
@@ -124,9 +125,10 @@ Följande bild visar fönstret **Hämta data** för **Power Platform**.
 
 Kategorin **Azure** innehåller följande dataanslutningar:
 
-* Azure SQL-databas
+* Azure SQL Database
 * Azure SQL Data Warehouse
 * Azure Analysis Services-databas
+* Azure Database for PostgreSQL
 * Azure Blob Storage
 * Azure Table Storage
 * Azure Cosmos DB
@@ -154,8 +156,8 @@ Kategorin **Onlinetjänster** innehåller följande dataanslutningar:
 * Dynamics 365 Business Central
 * Dynamics 365 Business Central (lokal)
 * Microsoft Azure Consumption Insights (beta)
-* Azure DevOps (Beta)
-* Azure DevOps Server (Beta)
+* Azure-DevOps (endast kort)
+* Azure-DevOps Server (endast kort)
 * Salesforce-objekt
 * Salesforce-rapporter
 * Google Analytics
@@ -164,7 +166,6 @@ Kategorin **Onlinetjänster** innehåller följande dataanslutningar:
 * Data.World – Hämta datauppsättning (beta)
 * GitHub (beta)
 * LinkedIn Sales Navigator (Beta)
-* MailChimp (beta)
 * Marketo (beta)
 * Mixpanel (beta)
 * Planview Enterprise One – PRM (beta)
@@ -178,6 +179,7 @@ Kategorin **Onlinetjänster** innehåller följande dataanslutningar:
 * tyGraph (beta)
 * Webtrends (beta)
 * Zendesk (beta)
+* Asana (Beta)
 * Dynamics 365 Customer Insights (Beta)
 * Emigo Data Source
 * Entersoft Business Suite (Beta)
@@ -205,6 +207,7 @@ Kategorin **Övrigt** innehåller följande dataanslutningar:
 * Microsoft Exchange
 * Hadoop-fil (HDFS)
 * Spark
+* Hive LLAP (Beta)
 * R-skript
 * Python-skript
 * ODBC
@@ -220,6 +223,7 @@ Kategorin **Övrigt** innehåller följande dataanslutningar:
 * Siteimprove (Beta)
 * SurveyMonkey (Beta)
 * Tenforce (Smart)List (Beta)
+* TIBCO (R) Data Virtualization (Beta)
 * Vena (Beta)
 * Workforce Dimensions (Beta)
 * Zucchetti HR Infinity (Beta)

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 047aa5e19089555538c874702dd50da0f1146ff1
-ms.sourcegitcommit: 578d43aeb7cebf40f3caf03a614bc885cc039488
+ms.openlocfilehash: ed1100a418259845e6a2656e1c5bab6d80358df0
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/10/2020
-ms.locfileid: "77115295"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79381087"
 ---
 # <a name="real-time-streaming-in-power-bi"></a>Realtidsuppspelning i Power BI
 Med direktuppspelning i realtid för Power BI, kan du strömma data och uppdatera instrumentpaneler i realtid. Visuella objekt och instrumentpaneler som kan skapas i Power BI kan även skapas för att visa och uppdatera data och visuella objekt i realtid. Enheter och datakällor för strömmande data kan vara fabrikssensorer, sociala mediekällor, användningsstatistik för tjänsten och alla andra källor där tidskänsliga data kan insamlas eller skickas.
@@ -33,7 +33,7 @@ Det finns tre typer av datauppsättningar i realtid som är skapade för visning
 Först ska vi gå igenom hur de här datauppsättningarna skiljer sig från varandra (det här avsnittet), därefter ska vi prata om hur man pushar data in i de olika datauppsättningarna.
 
 ### <a name="push-dataset"></a>Push-datauppsättning
-Med en **push-datauppsättning**, pushas data till Power BI-tjänsten. När datauppsättningen skapas, skapar Power BI-tjänsten automatiskt en ny databas i tjänsten för att lagra data. Eftersom det finns en underliggande databas som fortsätter att lagra data allteftersom de kommer in, kan rapporter skapas med dessa data. Rapporterna och deras visuella objekt är precis som alla andra visuella rapportobjekt, vilket innebär att du kan använda alla Power BI:s funktioner för rapportskapande för att skapa visuella objekt, inklusive anpassade sådana, dataaviseringar, fästa instrumentpaneler och mycket mer.
+Med en **push-datauppsättning**, pushas data till Power BI-tjänsten. När datauppsättningen skapas, skapar Power BI-tjänsten automatiskt en ny databas i tjänsten för att lagra data. Eftersom det finns en underliggande databas som fortsätter att lagra data allteftersom de kommer in, kan rapporter skapas med dessa data. Rapporterna och deras visuella objekt är precis som alla andra visuella rapportobjekt, vilket innebär att du kan använda alla Power BI:s funktioner för rapportskapande för att skapa visuella objekt, inklusive visuella objekt från Power BI, dataaviseringar, fästa instrumentpaneler och mycket mer.
 
 När du skapar en rapport med push-datauppsättningen kan du fästa dess visuella objekt på en instrumentpanel. På den visualiseringen uppdateras sedan visualiseringarna i realtid närhelst data uppdateras. Inom tjänsten, utlöser instrumentpanelen en uppdateringen av panelen varje gång nya data tas emot.
 
@@ -45,7 +45,7 @@ Det finns två saker att tänka på med fästa paneler från en push-datauppsät
 ### <a name="streaming-dataset"></a>Strömmande datauppsättning
 Med en **strömmande datauppsättning** pushas data också till Power BI-tjänsten med en viktig skillnad: Power BI lagrar endast data i ett tillfälligt cacheminne som snabbt förfaller. Det tillfälliga cacheminnet används bara för att visa visuella objekt med en tillfällig historisk information, till exempel ett linjediagram med ett tidsfönster på en timme.
 
-Med en **strömmande datauppsättning**, finns det *ingen* underliggande databas så du *kan* skapa rapportvisualiseringar med data som flödar in från strömmen. Därmed, kan du inte använda rapportfunktionaliteter som filtrering, anpassade visualiseringar och andra rapportfunktioner.
+Med en **strömmande datauppsättning**, finns det *ingen* underliggande databas så du *kan* skapa rapportvisualiseringar med data som flödar in från strömmen. Du kan inte använda rapportfunktionaliteter som filtrering, visuella Power BI-objekt och andra rapportfunktioner.
 
 Det enda sättet att visualisera en strömmande datauppsättning är att lägga till en panel och använda den strömmande datauppsättning som en **anpassad strömmande data**-datakälla. De anpassade strömmande panelerna som baseras på en **strömmande datauppsättning** är optimerade för att snabbt visa data i realtid. Det är mycket låg fördröjning mellan när data pushas till Power BI-tjänsten och när det visuella objektet uppdateras, eftersom inga data behöver matas in i eller läsas från en databas.
 
@@ -54,7 +54,7 @@ I praktiken är strömmande datauppsättningar och deras tillhörande strömmand
 ### <a name="pubnub-streaming-dataset"></a>PubNub-strömmande datauppsättning
 Med en **PubNub** strömmande datauppsättning, använder Power BI-webbklienten sig av PubNub SDK:n för att läsa en befintlig PubNub-dataström och inga data lagras i Power BI-tjänsten.
 
-Precis som med den **strömmande datauppsättningen** så har **PubNub-strömmande datauppsättningen** ingen underliggande databas i Power BI. Det går därmed inte att skapa rapportvisualiseringar mot de data som flödar in och du kan inte dra nytta av rapportfunktioner som filtrering, anpassade visuella objekt och så vidare. Därmed kan den **PubNub-strömmande datauppsättningen** också bara visualiseras genom att lägga till en panel på instrumentpanelen och konfigurera en PubNub-dataström som källa.
+Precis som med den **strömmande datauppsättningen** så har den **PubNub-strömmande datauppsättningen** ingen underliggande databas i Power BI. Det går därmed inte att skapa rapportvisualiseringar mot de data som flödar in och du kan inte dra nytta av rapportfunktioner som filtrering, visuella Power BI-objekt och så vidare. Därmed kan den **PubNub-strömmande datauppsättningen** också bara visualiseras genom att lägga till en panel på instrumentpanelen och konfigurera en PubNub-dataström som källa.
 
 Paneler baserade på en **PubNub-strömmande datauppsättning** är optimerade för att snabbt visa data i realtid. Eftersom Power BI är direkt ansluten till PubNub-dataströmmen, finns det mycket låg fördröjning mellan när data pushas till Power BI-tjänsten och när det visuella objektet uppdateras.
 
@@ -64,9 +64,7 @@ Följande tabell (eller matris, om du vill) beskriver de tre typerna av dataupps
 ![](media/service-real-time-streaming/real-time-streaming_11.png)
 
 > [!NOTE]
-> Se [den här artikeln](https://docs.microsoft.com/power-bi/developer/api-rest-api-limitations) för information om **push**-begränsningar för hur mycket data som kan pushas in.
-> 
-> 
+> Se [den här artikeln](developer/automation/api-rest-api-limitations.md) för information om **push**-begränsningar för hur mycket data som kan pushas in.
 
 ## <a name="pushing-data-to-datasets"></a>Skickar data till datauppsättningar
 I föregående avsnitt beskrevs de tre primära typerna av datauppsättningar i realtid som du kan använda för realtidsströmning samt hur de skiljer sig åt. Det här avsnittet beskriver hur man skapar och pushar data till de datauppsättningarna.
@@ -110,7 +108,7 @@ När **historisk dataanalys** är inaktiverat (det är inaktiverat som standard)
 ### <a name="using-azure-stream-analytics-to-push-data"></a>Använd Azure Stream Analytics för att pusha data
 Du kan lägga till Power BI som utdata i **Azure Stream Analytics** (ASA) och sedan visualisera dessa dataströmmar i Power BI-tjänsten i realtid. Det här avsnittet beskriver teknisk information om hur den här processen sker.
 
-Azure Stream Analytics använder Power BI REST-API:er för att skapa sin utdataström till Power BI med *defaultMode* satt till *pushStreaming* (se tidigare avsnitt i den här artikeln för information om *defaultMode*), vilket resulterar i en datauppsättning som kan dra nytta av både **push** och **strömning**. Vid skapandet av datauppsättningen, sätter även Azure Stream Analytics **retentionPolicy*-flaggan till *basicFIFO*. Med den inställningen, lagrar databasen som stöder push-datauppsättningen 200 000 rader och efter att den gränsen överskrids, släpps raderna enligt FIFO-metoden (first-in first-out).
+Azure Stream Analytics använder Power BI REST-API:er för att skapa sin utdataström till Power BI med *defaultMode* satt till *pushStreaming* (se tidigare avsnitt i den här artikeln för information om *defaultMode*), vilket resulterar i en datauppsättning som kan dra nytta av både **push** och **strömning**. Vid skapandet av datauppsättningen, sätter även Azure Stream Analytics **retentionPolicy**-flaggan till *basicFIFO*. Med den inställningen, lagrar databasen som stöder push-datauppsättningen 200 000 rader och efter att den gränsen överskrids, släpps raderna enligt FIFO-metoden (first-in first-out).
 
 > [!CAUTION]
 > Om din Azure Stream Analytics-fråga resulterar i mycket snabba utdata till Power BI (till exempel en eller två gånger per sekund), börjar Azure Stream Analytics batchbearbeta dessa utdata till en enskild begäran. Detta kan göra att begärans storlek överskrider gränsen för den strömmande panelen. I det fallet kommer, som tidigare nämnts, de strömmande panelerna att misslyckas med att renderas. I sådana fall är ett metodtips att sakta ner hastigheten för utdata till Power BI. Istället för ett maxvärde varje sekund till exempel, kan du ange det till ett max var 10:e sekund.

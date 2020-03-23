@@ -9,12 +9,12 @@ ms.topic: troubleshooting
 ms.date: 03/05/2020
 ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 50cb15e95f051dd6860112243514464dd80a8b1e
-ms.sourcegitcommit: 743167a911991d19019fef16a6c582212f6a9229
+ms.openlocfilehash: 299329cad78d831a3b77e55107e94a234d6f64b1
+ms.sourcegitcommit: 22991861c2b9454b170222591f64266335b9fcff
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78401168"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79133175"
 ---
 # <a name="troubleshooting-sign-in-for-power-bi-desktop"></a>Felsök inloggning i Power BI Desktop
 Det kan finnas tillfällen när du försöker logga in på **Power BI Desktop** men stöter på fel. Det finns två primära orsaker för inloggningsproblem: **Proxy-autentiseringsfel** och **icke-HTTPS-URL omdirigeringsfel**. 
@@ -75,4 +75,37 @@ Om du vill samla in ett spår i **Power BI Desktop** gör du följande:
     `C:\Users/<user name>/AppData/Local/Microsoft/Power BI Desktop/Traces`
 
 Det kan finnas många spårningsfiler i den mappen. Kontrollera att du bara skickar de senaste filerna till din administratör för att underlätta snabb identifiering av felet. 
+
+
+## <a name="using-default-system-credentials-for-web-proxy"></a>Använda standardautentiseringsuppgifter för systemet för webbproxy
+
+Webbförfrågningar som utfärdats av Power BI Desktop använder inte autentiseringsuppgifter för webbproxy. I nätverk som använder en proxyserver kanske Power BI Desktop inte kan göra webbförfrågningar. 
+
+Från och med Power BI Desktop-versionen för mars 2020 kan system- eller nätverksadministratörer tillåta att systemets standardautentiseringsuppgifter används för webbproxyautentisering. Administratörer kan skapa en registerpost med namnet **UseDefaultCredentialsForProxy** och ange värdet till ett (1) för att aktivera användning av systemets standardautentiseringsuppgifter för autentisering av webbproxy.
+
+Registerposten kan placeras på någon av följande platser:
+
+`[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Microsoft Power BI Desktop]`
+`[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Power BI Desktop]`
+
+Det är inte nödvändigt att ha registerposten på båda platserna.
+
+![Registernyckel för användning av systemets standardautentiseringsuppgifter](media/desktop-troubleshooting-sign-in/desktop-tshoot-sign-in-03.png)
+
+När registerposten har skapats (en omstart kan vara nödvändig) används proxyinställningarna som definierats i Internet Explorer när Power BI Desktop gör webbförfrågningar. 
+
+Precis som med alla ändringar av proxy- eller autentiseringsuppgiftsinställningar finns det säkerhetsrisker med att skapa registerposten, så administratörer måste kontrollera att de har konfigurerat Internet Explorer-proxyservrarna på rätt sätt innan de aktiverar den här funktionen.         
+
+### <a name="limitations-and-considerations-for-using-default-system-credentials"></a>Begränsningar och överväganden för användning av systemets standardautentiseringsuppgifter
+
+Det finns en samling säkerhetskonsekvenser som administratörer bör tänka på innan de aktiverar den här funktionen. 
+
+Följande rekommendationer bör följas när du aktiverar den här funktionen för klienter:
+
+* Använd endast **Förhandling** som autentiseringsschema på proxyservern, för att säkerställa att endast proxyservrar som är anslutna till Active Directory-nätverket används av klienten. 
+* Använd inte **NTLM-återställning** på klienter som använder den här funktionen.
+* Om användarna inte finns i ett nätverk med en proxy när den här funktionen är aktiverad och konfigurerad enligt rekommendationerna i det här avsnittet, används inte processen för att försöka kontakta proxyservern och använda systemets standardautentiseringsuppgifter.
+
+
+[Använda systemets standardautentiseringsuppgifter för webbproxy](#using-default-system-credentials-for-web-proxy)
 

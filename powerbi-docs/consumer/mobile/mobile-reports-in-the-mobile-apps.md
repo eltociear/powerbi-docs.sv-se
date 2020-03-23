@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 01/18/2020
+ms.date: 03/07/2020
 ms.author: painbar
-ms.openlocfilehash: 27f6469cb960ff101f45636e0720b935929ff010
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: 9f9a0afb766becefa5b74c5737795f6f227e7c27
+ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76538156"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79435776"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Utforska rapporter i Power BI-mobilappar
 Gäller:
@@ -21,6 +21,9 @@ Gäller:
 | ![iPhone](././media/mobile-reports-in-the-mobile-apps/ios-logo-40-px.png) | ![iPad](././media/mobile-reports-in-the-mobile-apps/ios-logo-40-px.png) | ![Android-telefon](././media/mobile-reports-in-the-mobile-apps/android-logo-40-px.png) | ![Android-surfplatta](././media/mobile-reports-in-the-mobile-apps/android-logo-40-px.png) | ![Windows 10-enheter](./media/mobile-reports-in-the-mobile-apps/win-10-logo-40-px.png) |
 |:---: |:---: |:---: |:---: |:---: |
 | iPhone-telefoner |iPad-surfplattor |Android-telefoner |Android-surfplattor |Windows 10-enheter |
+
+>[!NOTE]
+>Stöd för Power BI-mobilappen för **telefoner som använder Windows 10 Mobile** kommer att upphöra den 16 mars 2021. [Läs mer](https://go.microsoft.com/fwlink/?linkid=2121400)
 
 En Power BI-rapport är en interaktiv vy över dina data med visuella objekt som representerar olika resultat och insikter från dessa data. Att visa rapporter i Power BI-mobilappar är det tredje steget i en trestegsprocess:
 
@@ -59,6 +62,14 @@ När du hämtar Power BI-mobilappen är den inställd på enkeltryck. Det inneb�
 Om du vill kan du växla till interaktion med dubbelknackning. När interaktion med dubbeltryck används trycker du först på ett visuellt objekt för att välja det och sedan en gång till i det visuella objektet för att utföra önskad åtgärd.
 
 Om du vill växla till dubbelknackningsinteraktion, eller om du vill växla tillbaka till enkelknackningsinteraktion, går du till [inställningarna för appinteraktion](./mobile-app-interaction-settings.md).
+
+### <a name="single-select-versus-multi-select-mode-for-data-point-selection"></a>Envalsläge respektive flervalsläge vid markering av datapunkter
+
+I en rapport trycker du på en datapunkt för att markera den. Du kan välja om du vill använda envalsläget eller flervalsläget. När du trycker på en datapunkt för att välja den i envalsläget ersätter markeringen alla tidigare val som du har gjort. När du trycker på en datapunkt för att markera den i flervalsläget *läggs markeringen till* i det den markering som du för närvarande har, och det kombinerade resultatet av alla dina markeringar markeras i alla rapportens visuella objekt.
+
+Om du vill avmarkera en markerad datapunkt trycker du bara på den igen.
+
+Om du vill växla mellan envalsläget och flervalsläget går du till [interaktionsinställningarna för appen](./mobile-app-interaction-settings.md).
 
 ### <a name="using-tap-and-long-tap"></a>Använda tryckning och lång tryckning
 En tryckning är detsamma som en musklickning. Om du vill korsmarkera rapporten baserat på en datapunkt trycker du därför på den datapunkten.

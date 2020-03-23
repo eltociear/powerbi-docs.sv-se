@@ -7,14 +7,14 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/06/2019
+ms.date: 03/12/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 7633f0771a87c01d53261d13135d831e95e80136
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 86992d2e1426616f8d902a9f49d35407fde60ef2
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73881330"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79376763"
 ---
 # <a name="ways-to-share-your-work-in-power-bi"></a>Olika sätt att dela ditt arbete i Power BI
 
@@ -23,10 +23,12 @@ Du har skapat instrumentpaneler och rapporter. Du kanske även använder dem fö
 * Samarbeta med kollegor och skapa meningsfulla rapporter och instrumentpaneler på *arbetsytor*.
 * Paketera dessa instrumentpaneler och rapporter i *appar* och distribuera dem till en större grupp eller hela organisationen.
 * Skapa *delade datauppsättningar* som dina kollegor kan använda som grund för egna rapporter på egna arbetsytor.
-* Skapa en *mallapp* som du kan distribuera till externa Power BI-användare via Microsoft AppSource.
 * Dela instrumentpaneler och rapporter med några få personer från tjänsten eller via Power BI-mobilappar.
+* Kommentera och dela från Power BI-mobilapparna.
+* Bädda in en rapport i Microsoft Teams.
 * Skriv ut rapporter.
 * *Bädda in* rapporter i säkra portaler eller på offentliga webbplatser.
+* Skapa en *mallapp* som du kan distribuera till externa Power BI-användare via Microsoft AppSource.
 
 Oavsett vilket alternativ du väljer för att dela ditt innehåll behöver du en [Power BI Pro-licens](service-features-license-type.md) eller så måste innehållet finnas i en [Premium-kapacitet](service-premium-what-is.md). Licenskraven kan variera för de kollegor som visar ditt innehåll, beroende på vilket alternativ du väljer. Det följande avsnittet beskriver detta i större detalj. 
 
@@ -97,6 +99,10 @@ Du delar en ögonblicksbild av paneler, rapporten eller visualiseringen och mott
 Mer om [delning och kommentering för paneler, rapporter och visuella objekt](consumer/mobile/mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) från iOS- och Android-appar.
 
 Du kan också [dela en ögonblicksbild av en panel](consumer/mobile/mobile-windows-10-phone-app-get-started.md) från Power BI-appen för Windows 10-enheter.
+
+## <a name="embed-a-report-in-microsoft-teams"></a>Bädda in en rapport i Microsoft Teams
+
+Öka det datadrivna samarbetet i din organisation genom att bädda in Power BI-rapporter och sidnumrerade Power BI-rapporter i Microsoft Teams. Du kan lägga till separata Power BI-flikar för varje enskild rapport och ge varje flik rapportens namn eller något annat namn. Dina kollegor kan visa dina rapporter på Power BI-flikarna i Teams. De kan också öppna konversationsfönstret och kommentera rapporten direkt i Teams. Läs mer om hur du [bäddar in en rapport i Microsoft Teams](service-embed-report-microsoft-teams.md).
 
 ## <a name="print-or-save-as-pdf-or-other-static-file"></a>Skriva ut eller spara som PDF eller andra statiska filer
 
