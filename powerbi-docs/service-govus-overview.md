@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/13/2020
 ms.author: kfollis
 LocalizationGroup: Get started
-ms.openlocfilehash: b36bc6d23b56b4118f848ad9fa4e8f39dbc65d2d
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.openlocfilehash: 349b4d51c1649b714c67e61ac42ddcc49b2eeb12
+ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79376734"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80114898"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI för amerikanska myndighetskunder
 Den här artikeln är till för amerikanska myndighetskunder som distribuerar Power BI som en del av ett Office 365-myndighetsabonnemang. Myndighetsabonnemang är utformade för de unika behoven hos organisationer som måste uppfylla amerikanska efterlevnads- och säkerhetsstandarder. Power BI-tjänsten som har utformats för amerikanska myndighetskunder skiljer sig från den kommersiella versionen av Power BI-tjänsten. Dessa funktionsskillnader och funktioner beskrivs i följande avsnitt.
@@ -95,7 +95,7 @@ För att tillgodose kraven hos molnkunder på myndigheter finns det vissa skilln
 |  |Importera data från CSV-filer|Tillgänglig|Tillgänglig|Tillgänglig|
 |  |Importera data från Power BI Desktop-filer|Tillgänglig|Tillgänglig|Tillgänglig|
 |  |Anslutning till CDS|Tillgänglig|Inte tillgänglig|Inte tillgänglig|
-|  |Azure Data Lake Storage Gen2-anslutning|Inte tillgänglig|Inte tillgänglig|Inte tillgänglig|
+|  |Azure Data Lake Storage Gen2-anslutning|Tillgänglig|Inte tillgänglig|Inte tillgänglig|
 |Datahantering|Gateway för datahantering|Tillgänglig|Tillgänglig|Tillgänglig|
 |  |Datakryptering i Azure SQL|Tillgänglig|Tillgänglig|Tillgänglig|
 |  |Datakryptering i Blob Storage för Power BI|Tillgänglig|Tillgänglig|Tillgänglig|
