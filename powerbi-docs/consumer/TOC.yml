@@ -102,12 +102,12 @@
               href: end-user-favorite.md
             - name: 'Skriva ut en instrumentpanel, skriva ut en panel på instrumentpanelen, skriva ut en rapportsida'
               href: end-user-print.md
+            - name: Visa innehåll som delas med mig
+              href: end-user-shared-with-me.md
             - name: Visa relaterat innehåll
               href: end-user-related.md
             - name: Visa senaste innehåll
               href: end-user-recent.md
-            - name: Visa innehåll i Delat med mig-containern
-              href: end-user-shared-with-me.md
             - name: Prenumerera på en rapport eller instrumentpanel
               href: end-user-subscribe.md
             - name: Söka efter och sortera innehåll i Power BI

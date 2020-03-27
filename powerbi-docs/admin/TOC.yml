@@ -100,7 +100,7 @@
               href: ../service-encryption-byok.md
             - name: Starta om en Premium-kapacitet
               href: ../service-admin-premium-restart.md
-            - name: Ansluta till datauppsättningar med klientprogram och verktyg
+            - name: Datamängdsanslutning med XMLA-slutpunkten (förhandsversion)
               href: ../service-premium-connect-tools.md
     - name: Referens
       items:
