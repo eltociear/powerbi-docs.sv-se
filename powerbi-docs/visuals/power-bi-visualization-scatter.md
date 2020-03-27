@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/21/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: a03ac63caf8da96cd7e786c99c8a8dcd36f45a75
-ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
+ms.openlocfilehash: e7160505a720b6629067d7b1486f0dd227efd862
+ms.sourcegitcommit: ad638d553d5f7f5831587791ffa7aa37a47dd6ae
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74311652"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80273327"
 ---
 # <a name="scatter-charts-bubble-charts-and-dot-plot-charts-in-power-bi"></a>Punktdiagram, bubbeldiagram och punktritningsdiagram i Power BI
 
@@ -184,8 +184,10 @@ Skapa ett nytt fält genom att [använda Power BI Desktop frågeredigeraren för
 
 ## <a name="next-steps"></a>Nästa steg
 
-* [Högdensitetssampling i Power BI-punktdiagram](desktop-high-density-scatter-charts.md)
+Följande artiklar kan också vara av intresse för dig:
 
+* [Högdensitetssampling i Power BI-punktdiagram](desktop-high-density-scatter-charts.md)
 * [Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+* [Tips för att sortera och distribuera datapunkter i Power BI-rapporter](../guidance/report-tips-sort-distribute-data-plots.md)
 
 Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)

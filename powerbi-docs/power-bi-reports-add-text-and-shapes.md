@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/29/2019
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b90bfd9482e28faa8d9dfb0d089ca07656663b53
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 6e5281b03ecf9de5414b334d4f88658fb9741d3f
+ms.sourcegitcommit: ad638d553d5f7f5831587791ffa7aa37a47dd6ae
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75762472"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80273212"
 ---
 # <a name="add-text-boxes-and-shapes-to-power-bi-reports"></a>Lägga till textrutor och figurer i Power BI-rapporter
 Du kan lägga till textrutor och former i rapporter med hjälp av Power BI-tjänsten och Power BI Desktop. I båda fallen måste du ha redigeringsbehörigheter för rapporten. Om en rapport har delats med dig i Power BI-tjänsten har du inte redigeringsbehörigheter. 
@@ -63,8 +63,10 @@ Titta när Will använder Power BI Desktop för att [lägga till statiska bilder
    > 
 
 ## <a name="next-steps"></a>Nästa steg
-[Lägga till en hyperlänk i en textruta](service-add-hyperlink-to-text-box.md)
 
-[Grundläggande begrepp för designers i Power BI-tjänsten](service-basic-concepts.md)
+Följande artiklar kan också vara av intresse för dig:
 
-Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
+* [Lägga till en hyperlänk i en textruta](service-add-hyperlink-to-text-box.md)
+* [Grundläggande begrepp för designers i Power BI-tjänsten](service-basic-concepts.md)
+* [Tips för bättre analyser med former, bilder och ikoner i Power BI-rapporter](guidance/report-tips-shapes-images-icons.md)
+* Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)

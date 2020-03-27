@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 01/22/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: e91900632b7cf470cd91923ca9ec871247c154ba
-ms.sourcegitcommit: a1409030a1616027b138128695b80f6843258168
+ms.openlocfilehash: 8297d5e16c15baac058f82b75634eb4f31b3c630
+ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76710187"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80113173"
 ---
 # <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage"></a>Ansluta Azure Data Lake Storage Gen2 för lagring av dataflöde
 
@@ -42,12 +42,10 @@ Om du vill använda Azure Data Lake Storage Gen2 för dataflöden, behöver du f
 
 Innan du kan konfigurera Power BI med ett Azure Data Lake Storage Gen2-konto, måste du skapa och konfigurera ett lagringskonto. Låt oss ta en titt på kraven för Power BI:
 
-1. Storage-kontot måste skapas i samma Microsoft Azure Active Directory-klient som Power BI-klienten.
-2. Storage-kontot måste skapas i samma-region som Power BI-klienten. Om du vill ta reda på var din Power BI-klientorganisation finns kan du läsa [Var finns min Power BI-klientorganisation?](service-admin-where-is-my-tenant-located.md).
-3. Lagringskontot måste ha funktionen *Hierarkiskt namnområde* aktiverad.
-4. Power BI-tjänsten måste beviljas rollerna *Läsare* och *Dataåtkomst* på lagringskontot.
-5. Ett filsystem med namnet **powerbi** måste skapas.
-6. Power BI-tjänster måste ha behörighet till filsystemet **powerbi** som du skapar.
+1. Du måste vara ADLS-lagringskontots ägare. Detta måste tilldelas på en resursnivå, inte ärvas från prenumerationsnivån.
+2. Storage-kontot måste skapas i samma Microsoft Azure Active Directory-klient som Power BI-klienten.
+3. Storage-kontot måste skapas i samma-region som Power BI-klienten. Om du vill ta reda på var din Power BI-klientorganisation finns kan du läsa [Var finns min Power BI-klientorganisation?](service-admin-where-is-my-tenant-located.md).
+4. Lagringskontot måste ha funktionen *Hierarkiskt namnområde* aktiverad.
 
 I följande avsnitt beskrivs de steg som krävs för att konfigurera ditt Azure Data Lake Storage Gen2-konto i detalj.
 
@@ -59,73 +57,17 @@ Följ stegen i artikeln [Skapa ett lagringskonto i Azure Data Lake Storage Gen2]
 2. Kontrollera att du aktiverar funktionen för hierarkiskt namnrymd
 3. Vi rekommenderar att ställa in inställningen för lagringsreplikering på **Read-access geo-redundant-lagring (RA-GRS)**
 
-### <a name="grant-the-power-bi-service-reader-and-data-access-roles"></a>Bevilja Power BI-tjänsten rollerna Läsare och Dataåtkomst
+### <a name="grant-permissions-to-power-bi-services"></a>Bevilja behörigheter till Power BI-tjänster
 
 Därefter behöver du bevilja Power BI-tjänsten rollerna Läsare och Dataåtkomst i ditt skapade lagringskonto. De här rollerna är inbyggda, och därför är stegen enkla. 
 
 Följ stegen i [Tilldela en inbyggd RBAC-roll](https://docs.microsoft.com/azure/storage/common/storage-auth-aad-rbac#assign-a-built-in-rbac-role).
 
-I fönstret **Lägg till rolltilldelning** väljer du rollen **Läsare** och **Dataåtkomst** som ska tilldelas till Power BI-tjänsten. Använd sedan sökfunktionen för att hitta **Power BI-tjänsten**. 
+I fönstret **Lägg till rolltilldelning** väljer du rollen **Läsare och Dataåtkomst**. Använd sedan sökfunktionen för att hitta programmet **Power BI-tjänst**.
+Upprepa samma steg för rollen **Storage Blob Data-ägare** och tilldela rollen till programmen **Power BI-tjänst** och **Power BI Premium**.
 
 > [!NOTE]
 > Låt minst 30 minuter gå för att behörighet ska spridas till Power BI från portalen. När du ändrar behörigheter i portalen behöver du låta 30 minuter gå så att de behörigheterna återspeglas i Power BI. 
-
-
-### <a name="create-a-file-system-for-power-bi"></a>Skapa ett filsystem för Power BI
-
-Du måste skapa ett filsystem med namnet *powerbi* innan ditt lagringskontot kan läggas till i Power BI. Det finns många sätt att skapa sådana ett filsystem, inklusive användning av Azure Databricks, HDInsight, AZCopy eller Azure Storage Explorer. Det här avsnittet visas ett enkelt sätt att skapa ett filsystem med hjälp av Azure Storage Explorer.
-
-Det här steget kräver att du installerar Azure Storage Explorer version 1.6.2 eller senare. Om du vill installera Azure Storage Explorer för Windows, Macintosh eller Linux, se [Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/).
-
-1. När du har installerat Azure Storage Explorer, kommer Microsoft Azure Storage Explorer – Anslut fönster att visas. Storage Explorer ger flera sätt att ansluta till lagringskonton,men för närvarande stöds bara ett sätt för de nödvändiga inställningarna. 
-
-2. I det vänstra fönstret letar du upp och expanderar det lagringskonto som du skapade ovan.
-
-3. Högerklicka på Blob-behållare och från snabbmenyn väljer du – Skapa Blob-behållare.
-
-   ![högerklicka på BLOB-containrar](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_05a.jpg)
-
-4. En textruta visas nedanför mappen Blob-behållare. Ange namnet *powerbi* 
-
-   ![ange namnet ”powerbi”](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_05b.jpg)
-
-5. Tryck på RETUR när du har skapat blob-containern
-
-   ![Tryck på RETUR för att skapa blob-containern](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_05c.jpg)
-
-I nästa avsnitt, kan du ge Power BI-gruppen av tjänster fullständig åtkomst till filsystemet som du skapade. 
-
-### <a name="grant-power-bi-permissions-to-the-file-system"></a>Bevilja Power BI tillstånd till filsystemet
-
-För att tilldela behörigheter till filsystemet, kan du använda inställningar för åtkomstkontrollistan (ACL) som beviljar åtkomst för Power BI-tjänsten. Det första steget för detta är att skaffa Power BI-tjänsteidentitet i din klient. Du kan visa dina Microsoft Azure Active Directory (AAD)-program i avsnittet **företagsappar** i Azure Portal.
-
-Följ dessa steg om du vill hitta dina klientprogram:
-
-1. Välj **Azure Active Directory** i navigeringsfönstret i [Azure Portal](https://portal.azure.com/).
-2. I bladet Azure **Active Directory** väljer du **företagsprogram**.
-3. Från den nedrullningsbara menyn **Programtyp** väljer du **Alla program** och välj sedan **Tillämpa**. Ett exempel på klient-program visas som liknar följande bild.
-
-    ![Microsoft Azure Active Directory-företagsprogram](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_06.jpg)
-
-4. I sökfältet skriver du in *Power* och en samling objekt-ID för Power BI- och Power Query-program visas. Du behöver alla tre värden i efterföljande steg.  
-
-    ![Sök efter Power-program](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07.jpg)
-
-5. Markera och kopiera objekt-ID för både Power BI Premium-tjänsten och Power Query Online från sökresultatet. Var redo att klistra in värdena i efterföljande steg.
-
-6. Använd sedan **Azure Storage Explorer** för att navigera till filsystemet *powerbi* som du skapade i föregående avsnitt. Följ instruktionerna i delen [Hantera åtkomst](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-how-to-set-permissions-storage-explorer#managing-access) av artikeln [Ange behörigheter på fil- och kolumnnivå med Azure Storage-utforskaren](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-how-to-set-permissions-storage-explorer).
-
-7. För vart och ett av de två Power BI Premium-objekt-ID:n som samlats in i steg 5 tilldela **Läs**-, **Skriv**- och **Kör**-åtkomst och standard-ACL till ditt *powerbi*-filsystem.
-
-   ![för båda tilldela alla tre](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07a.jpg)
-
-8. För Power Query Online-objekt-ID som samlats in i steg 4 tilldelar du **Skriv**- och **Kör**åtkomst samt standard-ACL till ditt *powerbi*-filsystem.
-
-   ![tilldela sedan skriv och kör](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07b.jpg)
-
-9. Dessutom för den **Andra**, tilldela **kör**-åtkomst och standard-ACL:er också.
-
-    ![sist, för andra tilldela kör](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07c.jpg)
 
 ## <a name="connect-your-azure-data-lake-storage-gen2-to-power-bi"></a>Anslut din Azure Data Lake Storage Gen2 till Power BI
 

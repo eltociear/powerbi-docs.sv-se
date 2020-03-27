@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/14/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 04fa40f5f73199ed5050870b49cd432f62cf362c
-ms.sourcegitcommit: 82c41f91055da8c1cc5d8cc67927d5246d11247b
+ms.openlocfilehash: 60432c110df7c20aa13969d70ed7c2a90d0ef575
+ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "78199083"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80114852"
 ---
 # <a name="create-and-use-r-visuals-in-power-bi"></a>Skapa och använd R-visualiseringar i Power BI
 Visuella R-objekt kan för närvarande kan bara skapas i **Power BI Desktop**, och sedan publiceras i Power BI-tjänsten. Läs mer om hur du skapar visuella R-objekt i [Skapa visuella Power BI-objekt med R](../desktop-r-visuals.md).
@@ -88,6 +88,7 @@ Visuella R-objekt i Power BI-tjänsten har några begränsningar:
 * Stödet för visuella R-objekt är begränsat till de paket som identifieras [i Läs mer om vilka R-paket som stöds](../service-r-packages-support.md). Det finns för närvarande inget stöd för anpassade paket.
 * Storleksbegränsningar för data – data som används för ritning av visuella R-objekt är begränsat till 150 000 rader. Om du väljer mer än 150 000 rader, är det enbart de översta 150 000 raderna som används och ett meddelande visas på bilden. Indata har dessutom en gräns på 250 MB.
 * Upplösning – alla R-visualiseringar visas med 72 DPI.
+* Ritenhet – det finns endast stöd för att rita till standardenheten. 
 * Begränsning av beräkningstid – om en beräkning för visuella R-objekt överstiger 60 så passerar skriptet sin tidsgräns, vilket resulterar i ett fel.
 * Visuella R-objekt uppdateras när data uppdateras, filtreras eller markeras. Bilden i sig är dock inte interaktiv och stöder inte verktygstips.
 * Visuella R-objekt svarar på markering av andra visuella objekt, men du kan inte korsfiltrera andra element genom att klicka på element i det visuella R-objektet.

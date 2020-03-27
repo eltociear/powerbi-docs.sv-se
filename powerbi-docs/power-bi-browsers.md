@@ -6,26 +6,27 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 02/27/2020
+ms.date: 03/25/2020
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: a7112ff766b3b32b374b203d9f2206cabbd7fa2e
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.openlocfilehash: abe556231978d762dab652263aa2c55cf3c8a955
+ms.sourcegitcommit: ad638d553d5f7f5831587791ffa7aa37a47dd6ae
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79115049"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80273281"
 ---
 # <a name="supported-browsers-for-power-bi"></a>Webbläsare som stöds för Power BI
-Power BI körs i dessa webbläsare:
+
+Power BI har utformats för att fungera med alla dessa webbläsare som stöds, men prestanda kan variera. Särskilt Internet Explorer kan fungera sämre. Vi rekommenderar starkt att du byter från Internet Explorer till en modernare webbläsare, till exempel Microsoft Edge. Vi förväntar oss att Microsoft Edge kommer att fortsätta att bli bättre med hjälp av Edge Chromium. Om det fortfarande inte fungerar väl kan du testa andra moderna webbläsare som stöds för att se om de fungerar bättre med din Power BI-lösning.
+
+Power BI har stöd för dessa webbläsare på alla plattformar där de är tillgängliga:
 
 - Microsoft Edge
 - Internet Explorer 11. Vissa avancerade funktioner, till exempel ursprungsvyn, stöds inte i Internet Explorer. Mer information finns i [Dataursprung (förhandsversion)](collaborate-share/service-data-lineage.md).
 - Chrome skrivbordsprogram, senaste versionen
 - Safari Mac, senaste versionen
 - Firefox skrivbordsprogram, senaste versionen. Firefox kan ändra teckensnitten som används i Power BI 
-
-Dessa webbläsare stöds på alla plattformar där de är tillgängliga.
 
 > [!NOTE]
 > Power BI kan inte köras i webbläsare i iOS10 eller tidigare versioner.
@@ -34,4 +35,3 @@ Dessa webbläsare stöds på alla plattformar där de är tillgängliga.
 * [Vad är Power BI?](power-bi-overview.md)
 * Fråga [Power BI Community](https://community.powerbi.com/)
 * Har du fortfarande problem? Besök [Power BI-supportsidan](https://powerbi.microsoft.com/support/).
-

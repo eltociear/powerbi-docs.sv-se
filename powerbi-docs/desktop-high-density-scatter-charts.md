@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: ae33d7aac0eb42e925e78b8b76a9d7106cdf9d20
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: b603ced5775d72c09419ea5e18b2eb03b2680e95
+ms.sourcegitcommit: ad638d553d5f7f5831587791ffa7aa37a47dd6ae
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73867449"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80273373"
 ---
 # <a name="high-density-sampling-in-power-bi-scatter-charts"></a>Högdensitetssampling i Power BI-punktdiagram
 Från och med september 2017-versionen av **Power BI Desktop** och uppdateringar av **Power BI-tjänsten**, finns en ny samplingsalgoritm tillgänglig som förbättrar hur punktdiagram visar högdensitetsdata.
@@ -85,7 +85,8 @@ Algoritmen för högdensitetssampling är en viktig förbättring i Power BI, me
 * Algoritmen för **Högdensitetssampling** fungerar endast med realtidsanslutningar till modeller som är baserade på Power BI-tjänsten, importerade modeller eller DirectQuery.
 
 ## <a name="next-steps"></a>Nästa steg
-Information om högdensitetssampling i andra diagram finns i följande artikel.
+
+Information om högdensitetssampling finns i följande artiklar:
 
 * [Högdensitetssampling av linjer i Power BI](desktop-high-density-sampling.md)
-
+* [Tips för att sortera och distribuera datapunkter i Power BI-rapporter](guidance/report-tips-sort-distribute-data-plots.md)

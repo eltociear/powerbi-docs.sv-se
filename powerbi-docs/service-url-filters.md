@@ -8,14 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/30/2020
+ms.date: 03/25/2020
 LocalizationGroup: Reports
-ms.openlocfilehash: b20820490ec88d34d4ee75c135cc54277e473545
-ms.sourcegitcommit: 578d43aeb7cebf40f3caf03a614bc885cc039488
+ms.openlocfilehash: 79f3fa8c9c175b698cb91784f95d3bb9d8ca0cc5
+ms.sourcegitcommit: ad638d553d5f7f5831587791ffa7aa37a47dd6ae
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "77076629"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80273258"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtrera en rapport med frågesträngparametrar i URL:en
 
@@ -193,11 +193,17 @@ Den här skillnaden är användbar när du vill se olika resultat: filtrerade p�
 Det finns några saker som du bör vara medveten om när du använder frågesträngparametrarna.
 
 * Vid användning av *in*-operatorn måste värden till höger om *in* vara en kommaavgränsad lista inom parenteser.    
-* Power BI-rapportservern stöder även möjligheten att ange ytterligare filter med URL-parametern "filter".  I Power BI-rapportserver kan URL:en till exempel se ut så här: https://reportserver/reports/powerbi/Store Sales?rs:Embed=true&filter= Store/Territory eq 'NC' and Store/Chain eq 'Fashions Direct'
-* Frågesträngsfiltrering fungerar inte med [Publicera på webben](service-publish-to-web.md) eller [Exportera till PDF](consumer/end-user-pdf.md).
-* [Bädda in med rapportwebbdel i SharePoint Online](service-embed-report-spo.md) har inte stöd för URL-filter.
-* Datatypen long är (2^53-1) på grund av begränsningar i Javascript.
+* Power BI-rapportservern stöder även möjligheten att ange ytterligare filter med URL-parametern ”filter”. Här är ett exempel på hur URL:en kan se ut i Power BI-rapportservern: `https://reportserver/reports/powerbi/Store Sales?rs:Embed=true&filter= Store/Territory eq 'NC' and Store/Chain eq 'Fashions Direct'`
 * Rapportfilter för URL har en begränsning på 10 uttryck (10 filter som är hopkopplade med AND).
+* Datatypen long är (2^53-1) på grund av begränsningar i JavaScript.
+
+URL-filter stöds i vissa inbäddningsscenarier, men inte i andra.
+
+- [Bädda in en rapport i en säker portal eller webbplats](service-embed-secure.md) stöds.
+- URL-filter stöds i Power BI Embedded. Mer information finns i [Funktioner för avancerad URL-filtrering i Power BI Embedded](https://azure.microsoft.com/updates/power-bi-embedded-advanced-url-filtering-capabilities).
+- Frågesträngsfiltrering fungerar inte med [Publicera på webben](service-publish-to-web.md) eller [Exportera till PDF](consumer/end-user-pdf.md).
+- [Bädda in med rapportwebbdel i SharePoint Online](service-embed-report-spo.md) har inte stöd för URL-filter.
+- Du kan inte ange en URL i Teams.
 
 ## <a name="next-steps"></a>Nästa steg
 

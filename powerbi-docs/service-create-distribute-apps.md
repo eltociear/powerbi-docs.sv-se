@@ -5,15 +5,15 @@ author: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/15/2019
+ms.date: 03/23/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 622d01632b9c9cbe6203090b3ac2149d4bc94474
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.openlocfilehash: 0b420a41474349f86be682987ff9f8144debab11
+ms.sourcegitcommit: 075a0ade4134d28f578fda78996595e8cd9f3555
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79207883"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80147387"
 ---
 # <a name="publish-an-app-in-power-bi"></a>Publicera en app i Power BI
 
@@ -28,6 +28,7 @@ Företagsanvändarna får dina appar på ett par olika sätt:
 - De kan leta upp och installera din app från Microsoft AppSource.
 - Du kan skicka dem en direktlänk.
 - Du kan installera den automatiskt på dina medarbetares Power BI-konton om din Power BI-administratör ger dig behörighet.
+- Power BI skickar inga e-postmeddelanden till interna användare när du distribuerar eller uppdaterar en app. Om du distribuerar den till externa användare får de ett e-postmeddelande med en direktlänk. 
 
 Du kan skapa appen med en egen inbyggd navigering så att användarna enkelt navigerar i ditt innehåll. De kan inte ändra innehållet i appen. De kan interagera med det i antingen Power BI-tjänsten eller i någon av mobilapparna och kan filtrera, markera och sortera data på egen hand. De får uppdateringar automatiskt och du kan styra hur ofta dina data ska uppdateras. Du kan även ge dem skapa-behörighet för att ansluta till de underliggande datauppsättningarna och skapa kopior av rapporterna i appen. Läs mer om [skapa-behörighet](service-datasets-build-permissions.md).
 

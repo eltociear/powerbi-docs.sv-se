@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 02/28/2020
-ms.openlocfilehash: d9d97715853ab87ac507ff41117ab176b8620e2e
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.date: 03/18/2020
+ms.openlocfilehash: 885c6b98e66a6ce2fd8069cc86bf50440cb94b4b
+ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79205261"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80113630"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Sidnumrerade rapporter i Power BI: Vanliga frågor och svar 
 
@@ -68,13 +68,17 @@ Du kan ladda upp sidnumrerade rapporter till din Min arbetsyta utan en Pro-licen
 
 Du får ett felmeddelande och du kan inte se rapporten förrän arbetsbelastningen aktiveras igen. Du kan fortfarande ta bort rapporten från arbetsytan.
 
-### <a name="what-is-the-default-memory-for-each-of-the-premium-skus-supported-for-paginated-reports"></a>Vad är standardminnet för de olika Premium-SKU:er som stöds för sidnumrerade rapporter?
+### <a name="what-is-the-default-memory-for-each-of-the-premium-skus-that-support-paginated-reports"></a>Vad är standardminnet för de olika Premium-SKU:er som stöder sidnumrerade rapporter?
 
 Standardminnet i varje Premium-SKU för sidnumrerade rapporter:
 
 - **P1/A4**: 20 % standard, 10 % minimum
 - **P2/A5**: 20 % standard, 5 % minimum
 - **P3/A6**: 20 % standard, 2,5 % minimum
+
+Power BI-klientorganisationsadministratörer kan ändra den maximala andelen minne i procent som används som standard i administrationsportalen. Se arbetsbelastningsavsnittet **Sidnumrerade rapporter** under **Power BI Premium** på fliken **Kapacitetsinställningar**.
+
+:::image type="content" source="media/paginated-reports-faq/paginated-reports-capacity-settings.png" alt-text="Fliken Kapacitetsinställningar för sidnumrerade rapporter":::
 
 ## <a name="general"></a>Allmänt
 
@@ -146,7 +150,7 @@ Ja, e-postprenumerationer stöds fullt ut för sidnumrerade rapporter och har st
 
 Ja, vi har stöd för möjligheten att köra kod i dina rapporter som i SSRS.
 
-### <a name="can-i-use-power-bi-embedded-to-embed-my-paginated-reports-into-an-app-im-hosting"></a>Kan jag använda inbäddad Power BI för att bädda in min sidnumrerade rapporter i en app som jag värd för?
+### <a name="can-i-use-power-bi-embedded-to-embed-my-paginated-reports-into-an-app-im-hosting"></a>Kan jag använda inbäddad Power BI för att bädda in mina sidnumrerade rapporter i en app som jag värd för?
 
 SaaS-inbäddning, inklusive stöd för säker inbäddning, är redan tillgängligt. Om det gäller inbäddning av PaaS kan du gå igenom självstudien [Bädda in sidnumrerade Power BI-rapporter i en app för dina kunder](../developer/embed-paginated-reports-customers.md).
 
@@ -160,11 +164,11 @@ Ja, sidnumrerade rapporter har stöd för att distribueras med appar från både
 
 ### <a name="will-other-report-specific-features-in-power-bi-like-pinning-to-report-tiles-to-dashboards-work-with-paginated-reports"></a>Kommer andra rapportspecifika funktioner i Power BI, t.ex. fästa rapportpaneler på instrumentpaneler, fungera med sidnumrerade rapporter?
 
-Vi planerar att rapporterna ska ha stöd för samma större scenarier i tjänsten så mycket som möjligt.  Även om verktyget för att skapa dem skiljer sig, är det ur ett konsumentperspektiv bara en annan rapport i listan i portalen. De spelar ingen roll hur den skapades, den kan göra vad de behöver.  Ett bra exempel på den här funktionspariteten är det planerade kommentarsstödet. Även om själva funktionen fungerar lite annorlunda för varje rapporttyp, kommer du att kunna använda kommentarer för båda.
+Vi planerar att rapporterna ska ha stöd för samma större scenarier i tjänsten så mycket som möjligt.  I bästa fall ser konsumenterna det bara som ytterligare en rapport i listan i portalen, även om verktyget för att skapa dem är annorlunda. För dem spelar det ingen roll hur den skapades så länge de kan åstadkomma det de behöver.  Ett bra exempel på den här funktionspariteten är det planerade kommentarsstödet. Även om själva funktionen fungerar lite annorlunda för varje rapporttyp, kommer du att kunna använda kommentarer för båda.
 
 ### <a name="is-there-a-report-viewer-control-for-paginated-reports-in-the-power-bi-service"></a>Finns det en rapportvisningskontroll för sidnumrerade rapporter i Power BI-tjänsten?
 
-Nej, en rapportvisningskontrollen är inte tillgängligt för tillfället.
+Nej, någon rapportvisningskontroll finns inte för tillfället.
 
 ### <a name="can-you-search-for-paginated-reports-from-the-new-home-experience-in-the-power-bi-service"></a>Kan man söka efter sidnumrerade rapporter från den nya startupplevelsen i Power BI-tjänsten?
 

@@ -10,12 +10,12 @@ ms.date: 01/03/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 6cf298f6fd4d6d99163b2c0f5674b40cfc14bbfc
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 1102022edca3afad2a658facdf43da7b8bca547d
+ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75657200"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80113794"
 ---
 # <a name="track-user-activities-in-power-bi"></a>Spåra användaraktiviteter i Power BI
 
@@ -49,13 +49,13 @@ Du kan använda ett administrativt program baserat på Power BI REST-API:erna f�
 https://api.powerbi.com/v1.0/myorg/admin/activityevents?startDateTime='2019-08-31T00:00:00'&endDateTime='2019-08-31T23:59:59'
 ```
 
-Om antalet poster är stort returnerar **ActivityEvents**-API:et bara cirka 5 000 till 10 000 poster samt en fortsättningstoken. Du måste sedan anropa **ActivityEvents**-API:et igen med en fortsättningstoken för att hämta nästa batch med poster och så vidare tills du har hämtat alla poster och inte längre får en fortsättningstoken. I följande exempel visas hur du använder fortsättningstoken.
+Om antalet poster är stort returnerar **ActivityEvents**-API:et bara cirka 5 000 till 10 000 poster samt en fortsättningstoken. Anropa **ActivityEvents**-API:et igen med en fortsättningstoken för att hämta nästa batch med poster och så vidare tills du har hämtat alla poster och inte längre får en fortsättningstoken. I följande exempel visas hur du använder fortsättningstoken.
 
 ```
 https://api.powerbi.com/v1.0/myorg/admin/activityevents?continuationToken='%2BRID%3ARthsAIwfWGcVAAAAAAAAAA%3D%3D%23RT%3A4%23TRC%3A20%23FPC%3AARUAAAAAAAAAFwAAAAAAAAA%3D'
 ```
 
-Oavsett hur många poster som returneras gäller att om resultatet innehåller en fortsättningstoken så ska du se till att anropa API:et igen med denna token för att hämta återstående data tills det inte längre returneras någon fortsättningstoken. Det kan hända att ett anrop till och med returnerar en fortsättningstoken utan några händelseposter. I följande exempel visas hur du loopar med en fortsättningstoken som returneras i svaret:
+Om resultatet innehåller en fortsättningstoken så ska du anropa API:et igen med denna token för att hämta återstående data. Fortsätt göra detta tills det inte längre returneras någon fortsättningstoken, oavsett hur många poster som returneras. Det kan hända att ett anrop till och med returnerar en fortsättningstoken utan några händelseposter. I följande exempel visas hur du loopar med en fortsättningstoken som returneras i svaret:
 
 ```
 while(response.ContinuationToken != null)
@@ -68,12 +68,15 @@ while(response.ContinuationToken != null)
 }
 completeListOfActivityEvents.AddRange(response.ActivityEventEntities);
 ```
-
+> [!NOTE]
+> Det kan ta upp till 24 timmar för alla händelser att visas, men fullständiga data görs vanligtvis tillgängliga snabbare än så.
+>
+>
 ### <a name="get-powerbiactivityevent-cmdlet"></a>Cmdleten Get-PowerBIActivityEvent
 
-Det är enkelt att ladda ned aktivitetshändelser med hjälp av Power BI Management-cmdletar för PowerShell, som omfattar cmdleten **Get-PowerBIActivityEvent** som automatiskt hanterar fortsättningstoken. Cmdleten **get-PowerBIActivityEvent** tar en StartDateTime-parameter och en EndDateTime-parameter med samma begränsningar som **ActivityEvents** REST-API:et. Med andra ord måste startdatumet och slutdatumet referera till samma datumvärde eftersom du bara kan hämta aktivitetsdata för en dag i taget.
+Ladda ned aktivitetshändelser med hjälp av cmdletar för hantering av Power BI för PowerShell. Cmdleten **Get-PowerBIActivityEvent** hanterar automatiskt fortsättningstoken åt dig. Cmdleten **get-PowerBIActivityEvent** tar en StartDateTime-parameter och en EndDateTime-parameter med samma begränsningar som **ActivityEvents** REST-API:et. Med andra ord måste startdatumet och slutdatumet referera till samma datumvärde eftersom du bara kan hämta aktivitetsdata för en dag i taget.
 
-Följande skript visar hur du laddar ned alla Power BI-aktiviteter. Kommandot konverterar resultatet från JSON till .NET-objekt för enkel åtkomst till enskilda aktivitetsegenskaper.
+Följande skript visar hur du laddar ned alla Power BI-aktiviteter. Kommandot konverterar resultatet från JSON till .NET-objekt för enkel åtkomst till enskilda aktivitetsegenskaper. De här exemplen visar de minsta och största tidsstämplarna för en dag som är möjliga för att se till att inga händelser missas.
 
 ```powershell
 Login-PowerBI
@@ -111,15 +114,15 @@ Du måste uppfylla följande krav för att komma åt granskningsloggar:
 
 - Du måste antingen vara global administratör eller ha tilldelats rollen Spårningsloggar eller Visa enbart spårningsloggar i Exchange Online för att få åtkomst till spårningsloggen. För rollgrupperna Efterlevnadshantering och Organisationsledning är de här rollerna som standard tilldelade på sidan **Behörigheter** i administrationscentret för Exchange.
 
-    Om du vill ge åtkomst till granskningsloggen för icke-administratörskonton måste du lägga till användaren som en medlem i någon av dessa rollgrupper. Om du vill göra det på ett annat sätt kan du skapa en anpassad rollgrupp i administrationscentret för Exchange, tilldela gruppen någon av rollerna Spårningsloggar eller Visa enbart spårningsloggar, och sedan lägga till icke-administratörskontot till den nya rollgruppen. Mer information finns i [Hantera rollgrupper i Exchange Online](/Exchange/permissions-exo/role-groups).
+    Lägg till användaren som en medlem i någon av dessa rollgrupper om du vill ge åtkomst till granskningsloggen till icke-administratörskonton. Om du vill göra det på ett annat sätt kan du skapa en anpassad rollgrupp i administrationscentret för Exchange, tilldela gruppen någon av rollerna Spårningsloggar eller Visa enbart spårningsloggar, och sedan lägga till icke-administratörskontot till den nya rollgruppen. Mer information finns i [Hantera rollgrupper i Exchange Online](/Exchange/permissions-exo/role-groups).
 
     Om du inte får åtkomst till administrationscentret för Exchange från administrationscenter för Microsoft 365 går du till https://outlook.office365.com/ecp och loggar in med dina autentiseringsuppgifter.
 
-- Om du har åtkomst till granskningsloggen men inte är global administratör eller administratör för Power BI-tjänsten får du inte åtkomst till Power BI-administratörsportalen. I det här fallet måste du använda en direktlänk till [Centrum för säkerhet och efterlevnad för Office 365](https://sip.protection.office.com/#/unifiedauditlog).
+- Om du har åtkomst till granskningsloggen men inte är global administratör eller administratör för Power BI-tjänsten kan du inte få åtkomst till Power BI-administratörsportalen. I det här fallet använder du en direktlänk till [Säkerhets- och efterlevnadscenter för Office 365](https://sip.protection.office.com/#/unifiedauditlog).
 
 ### <a name="access-your-audit-logs"></a>Komma åt dina granskningsloggar
 
-För att komma åt loggar ska du först aktivera loggning i Power BI. Mer information finns i [Granskningsloggar](service-admin-portal.md#audit-logs) i dokumentationen för administratörsportalen. Det kan dröja upp till 48 timmar från att du aktiverar granskning till att du kan visa granskningsdata. Om du inte ser data omedelbart kontrollerar du granskningsloggarna senare. Det kan förekomma en liknande fördröjning mellan hämtning av behörighet för att visa granskningsloggar och att komma åt loggarna.
+För att komma åt loggar ska du först aktivera loggning i Power BI. Mer information finns i [Granskningsloggar](service-admin-portal.md#audit-logs) i dokumentationen för administratörsportalen. Det kan dröja upp till 48 timmar från att du aktiverar granskning till att du kan visa granskningsdata. Om du inte ser data omedelbart kontrollerar du granskningsloggarna senare. Det kan förekomma en liknande fördröjning mellan hämtning av behörighet för att visa granskningsloggar och att komma åt loggarna.
 
 Granskningsloggar för Power BI är tillgängliga direkt via [säkerhets- och efterlevnadscenter för Office 365](https://sip.protection.office.com/#/unifiedauditlog). Det finns även en länk från Power BI-administratörsportalen:
 
@@ -258,7 +261,7 @@ Följande åtgärder är tillgängliga i både granskningsloggar och aktivitetsl
 | Power BI-mapp skapades                           | CreateFolder                                |                                          |
 | Power BI-gateway skapades                          | CreateGateway                               |                                          |
 | Power BI-grupp skapades                            | CreateGroup                                 |                                          |
-| Power BI-rapport skapades                           | CreateReport                                |                                          |
+| Power BI-rapport skapades                           | CreateReport <sup>1</sup>                                |                                          |
 | Dataflöde migrerades till externt lagringskonto     | DataflowMigratedToExternalStorageAccount    | Används inte för närvarande                       |
 | Dataflödesbehörigheter har lagts till                        | DataFlowPermissionsAdded                    | Används inte för närvarande                       |
 | Dataflödesbehörigheter har tagits bort                      | DataflowPermissionsRemoved                  | Används inte för närvarande                       |
@@ -294,7 +297,7 @@ Följande åtgärder är tillgängliga i både granskningsloggar och aktivitetsl
 | Power BI-kommentar lades upp                           | PostComment                                 |                                          |
 | Power BI-instrumentpanel skrevs ut                        | PrintDashboard                              |                                          |
 | Power BI-rapportsida skrevs ut                      | PrintReport                                 |                                          |
-| Power BI-rapport publicerades på webben                  | PublishToWebReport                          |                                          |
+| Power BI-rapport publicerades på webben                  | PublishToWebReport <sup>2</sup>                         |                                          |
 | Power BI-dataflödeshemlighet togs emot från Key Vault  | ReceiveDataflowSecretFromKeyVault           |                                          |
 | En datakälla togs bort från Power BI-gatewayen         | RemoveDatasourceFromGateway                 |                                          |
 | Power BI-gruppmedlemmar togs bort                    | DeleteGroupMembers                          |                                          |
@@ -333,6 +336,10 @@ Följande åtgärder är tillgängliga i både granskningsloggar och aktivitetsl
 | Power BI-panelen visades                              | ViewTile                                    |                                          |
 | Användningsstatistik för Power BI visades                     | ViewUsageMetrics                            |                                          |
 |                                                   |                                             |                                          |
+
+<sup>1</sup> Publicering från Power BI Desktop till tjänsten är en CreateReport-händelse i tjänsten.
+
+<sup>2</sup> PublishtoWebReport refererar till funktionen [Publicera på webben](service-publish-to-web.md).
 
 ## <a name="next-steps"></a>Nästa steg
 

@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/26/2019
+ms.date: 03/24/2020
 ms.author: tebercov
-ms.openlocfilehash: dcb7ba5dabbbb0387b92908f7e299d61f2145d44
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.openlocfilehash: 92d5a5177b0fa03af583e9e89ce574c0197f3f7a
+ms.sourcegitcommit: ad638d553d5f7f5831587791ffa7aa37a47dd6ae
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79376602"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80273235"
 ---
 # <a name="tips-for-authoring-template-apps-in-power-bi"></a>Tips för att skapa mallappar i Power BI
 
@@ -150,7 +150,7 @@ För att kunna omdirigera en användare till appens nedladdningslänk i Power BI
 
 | Funktion | Kända begränsningar |
 |---------|---------|
-|Innehåll:  Datauppsättningar   | Det ska finnas exakt en datauppsättning. Endast de datauppsättningar som finns inbyggda i Power BI Desktop (.pbix-filer) är tillåtna. <br>Stöds ej: Datauppsättningar från andra mallar, datauppsättningar mellan arbetsytor, sidnumrerade rapporter (RDL-filer), Excel-arbetsböcker |
+|Innehåll:  Datauppsättningar   | Det ska finnas exakt en datauppsättning. Endast de datauppsättningar som finns inbyggda i Power BI Desktop (.pbix-filer) är tillåtna. <br>Stöds ej: Datamängder från andra mallar, datamängder mellan arbetsytor, sidnumrerade rapporter (RDL-filer), Excel-arbetsböcker, förbättrade datamängdsmetadata |
 |Innehåll: Instrumentpaneler | Realtidspaneler godkänns inte (dvs. inget stöd för push eller strömmande datamängder) |
 |Innehåll: Dataflöden | Stöds ej: Dataflöden |
 |Innehåll från filer | Endast PBIX-filer är tillåtna. <br>Stöds inte: RDL-filer (sidnumrerade rapporter), Excel-arbetsböcker   |

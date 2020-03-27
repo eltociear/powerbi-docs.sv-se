@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 01/13/2020
 ms.author: otarb
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 5693e75ff186c3edb95eeaa92d26823e0e0d3a60
-ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
+ms.openlocfilehash: d5b57b782af52542ed944b5e5e7504a974ee9d81
+ms.sourcegitcommit: ad638d553d5f7f5831587791ffa7aa37a47dd6ae
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76039060"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80273350"
 ---
 # <a name="run-python-scripts-in-power-bi-desktop"></a>Kör Python-skript i Power BI Desktop
 
@@ -109,6 +109,14 @@ Så här kör du Python-skriptet i Power BI Desktop:
 Om Python inte är installerat eller inte identifierat visas en varning. Det kan även visas en varning om du har flera installationer på den lokala datorn. Gå tillbaka och läs de tidigare avsnitten Installera Python och Aktivera Python-skript.
 
 ![Varning om att Python inte har installerats](media/desktop-python-scripts/python-scripts-3.png)
+
+#### <a name="using-custom-python-distributions"></a>Använda anpassade Python-distributioner
+
+Power BI kör skript direkt via den körbara filen python.exe från en användardefinierad katalog (som tillhandahålls via sidan Inställningar). Distributioner som kräver ett extra steg för att förbereda miljön (t.ex. Conda) kan drabbas av ett problem där körningen misslyckas.
+
+Vi rekommenderar att du använder den officiella Python-distributionen från https://www.python.org/ för att undvika relaterade problem.
+
+Du kan starta Power BI Desktop från din anpassade kommandotolk för din Python-miljö som en möjlig lösning.
 
 ### <a name="refresh"></a>Uppdatera
 
