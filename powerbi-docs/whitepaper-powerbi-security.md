@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/24/2019
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 50c8416573b995c34d62129d11926e70d9d4242d
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.openlocfilehash: 88c32a3d32a8d6c6653fa9badcf728bad0ee2c54
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79381409"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80404584"
 ---
 # <a name="power-bi-security-whitepaper"></a>Vitbok Power BI-säkerhet
 
@@ -135,7 +135,7 @@ Användarautentisering till Power BI-tjänsten består av en serie begäranden, 
 
 Sekvensen för användarautentisering för Power BI-tjänsten sker enligt beskrivningen i följande steg, som illustreras i följande bilder.
 
-1. En användare upprättar en anslutning till Power BI-tjänsten via en webbläsare, antingen genom att skriva Power BI-adressen i adressfältet (till exempel https://app.powerbi.com)) eller genom att välja _Logga in_ från landningssidan för Power BI (https://powerbi.microsoft.com). Anslutningen upprättas med hjälp av TLS 1.2 och HTTPS, och all efterföljande kommunikation mellan webbläsaren och Power BI-tjänsten använder HTTPS. Begäran skickas till **Azure Traffic Manager**.
+1. En användare initierar en anslutning till Power BI-tjänst från en webbläsare, antingen genom att skriva in Power BI adressen i adress fältet (till exempel `https://app.powerbi.com`) eller genom att välja _Logga_ in från Power BI landnings sida (https://powerbi.microsoft.com). Anslutningen upprättas med hjälp av TLS 1.2 och HTTPS, och all efterföljande kommunikation mellan webbläsaren och Power BI-tjänsten använder HTTPS. Begäran skickas till **Azure Traffic Manager**.
 
 2. **Azure Traffic Manager** kontrollerar användarens DNS-post för att fastställa det närmaste datacentret där Power BI-tjänst distribueras, och svarar till DNS med IP-adressen för det WFE-kluster som användaren ska skickas till.
 
@@ -480,7 +480,7 @@ Mer information om Power BI finns i följande resurser.
 - [Komma igång med Power BI Desktop](https://support.powerbi.com/knowledgebase/articles/471664)
 - [Power BI REST API – Översikt](https://msdn.microsoft.com/library/dn877544.aspx)
 - [Power BI API-referens](https://msdn.microsoft.com/library/mt147898.aspx)
-- [On-premises data gateway (Lokal datagateway)](service-gateway-onprem.md)
+- [Lokal datagateway](service-gateway-onprem.md)
 - [Nationella moln i Power BI](https://powerbi.microsoft.com/clouds/)
 - [Power BI Premium](https://aka.ms/pbipremiumwhitepaper)
 - [Använda Kerberos för enkel inloggning från Power BI till lokala datakällor](service-gateway-sso-overview.md)
