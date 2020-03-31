@@ -18,10 +18,8 @@
     - name: Exempel
       expanded: true
       items:
-        - name: Hämta exempeldata för Power BI
+        - name: Hämta exempel för Power BI
           href: ../sample-datasets.md
-        - name: Importera och öppna exempelpaket
-          href: ../sample-tutorial-connect-to-the-samples.md
         - name: Exempel på kundlönsamhet
           href: ../sample-customer-profitability.md
         - name: Exempel på IT-utgiftsanalys
@@ -34,6 +32,8 @@
           href: ../sample-procurement.md
         - name: Exempel på detaljhandelsanalys
           href: ../sample-retail-analysis.md
+        - name: Utforska exempel på detaljhandelsanalys
+          href: ../sample-tutorial-connect-to-the-samples.md
         - name: Exempel på försäljning och marknadsföring
           href: ../sample-sales-and-marketing.md
         - name: Exempel på leverantörskvalitetsanalys
