@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/13/2020
 ms.author: kfollis
 LocalizationGroup: Get started
-ms.openlocfilehash: 349b4d51c1649b714c67e61ac42ddcc49b2eeb12
-ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
+ms.openlocfilehash: 14c01eb3041964a858b1aeeaeaa471f0d839898e
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80114898"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80404808"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI för amerikanska myndighetskunder
 Den här artikeln är till för amerikanska myndighetskunder som distribuerar Power BI som en del av ett Office 365-myndighetsabonnemang. Myndighetsabonnemang är utformade för de unika behoven hos organisationer som måste uppfylla amerikanska efterlevnads- och säkerhetsstandarder. Power BI-tjänsten som har utformats för amerikanska myndighetskunder skiljer sig från den kommersiella versionen av Power BI-tjänsten. Dessa funktionsskillnader och funktioner beskrivs i följande avsnitt.
@@ -56,7 +56,7 @@ Du kan använda en annan URL än kommersiella användare för att ansluta till P
 
 | URL för den kommersiella versionen | URL för US Government-versionen | URL för amerikanska myndigheter för GCC High |
 | --- | --- | --- |
-| https://app.powerbi.com/ |[https://app.powerbigov.us](https://app.powerbigov.us) | [https://app.high.powerbigov.us](https://app.high.powerbigov.us) |
+| `https://app.powerbi.com/` |[https://app.powerbigov.us](https://app.powerbigov.us) | [https://app.high.powerbigov.us](https://app.high.powerbigov.us) |
 
 Ditt konto kan vara etablerat i mer än ett moln. När du använder Power BI Desktop kan du då välja vilket moln du vill ansluta till när du loggar in.
 

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/11/2020
-ms.openlocfilehash: 6dd5b7838a1f59971e11a4674853abead7af0b90
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.openlocfilehash: 0042c7db70cac103d04d1c48d06c12b71634b541
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79492800"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80403654"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Vanliga frågor och svar om Power BI Embedded
 
@@ -96,7 +96,7 @@ Du kan lösa det här problemet genom att anropa [refreshUserPermissions API](ht
 
 Du kan använda PBI-portalen för att ta reda på regionen för din PBI-klientorganisation.
 
-[https://app.powerbi.com/](https://app.powerbi.com/ ) > ? > Om Power BI
+[https://app.powerbi.com/](`https://app.powerbi.com/`) > ? > Om Power BI
 
 ![Om Power BI](media/embedded-faq/about-01.png)
 ![Klientorganisationsregion](media/embedded-faq/tenant-location-01.png)
@@ -200,7 +200,7 @@ Den här situationen spelar roll när du lägger till tjänstens huvudnamn som *
 
 **[Program-ID:t](embed-sample-for-customers.md#application-id)** används för att skapa åtkomsttoken när program-ID:t skickas för autentisering.
 
-För att referera ett tjänsthuvudnamn för åtgärder eller för att göra ändringar använder du **[objekt-ID för tjänstens huvudnamn](embed-service-principal.md#how-to-get-the-service-principal-object-id)** – till exempel tillämpa en tjänsthuvudnamn som administratör för en arbetsyta.
+För att referera ett tjänsthuvudnamn för åtgärder eller för att göra ändringar använder du **[objekt-ID för tjänstens huvudnamn](embed-service-principal.md)** – till exempel tillämpa en tjänsthuvudnamn som administratör för en arbetsyta.
 
 ### <a name="can-you-manage-an-on-premises-data-gateway-with-service-principal"></a>Kan du hantera en lokal datagateway med tjänstens huvudnamn?
 

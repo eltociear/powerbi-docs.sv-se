@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/10/2019
-ms.openlocfilehash: 80b97757ab0ab8fefa23f4481abb2d8bc02de78d
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.openlocfilehash: 66a1253233ab623ff2332a7b112575a7509c0e3c
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79492501"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80403692"
 ---
 # <a name="row-level-security-with-power-bi-embedded"></a>Säkerhet på radnivå med Power BI Embedded
 
@@ -217,7 +217,7 @@ Här följer stegen för att börja konfigurera funktionen CustomData() med appe
 
 7. Använd Power BI-API: er för att använda funktionen CustomData i ditt program.  När du skapar en token med CustomData-funktionen så måste du ha ett användarnamn. Användarnamnet måste vara samma som UPN-namnet för överordnad användare. Överordnad användare måste vara medlem i de roller som du skapade. Om inga roller har angetts används de roller som överordnad användare är medlem i för RLS utvärdering.
 
-    När du arbetar med ett [huvudnamn för tjänsten](embed-service-principal.md) måste du också utföra stegen ovan i stället för med ett huvudkonto. När du genererar inbäddningstoken ska du använda [objekt-ID:t för tjänstens huvudnamn](embed-service-principal.md#how-to-get-the-service-principal-object-id) som användarnamn.
+    När du arbetar med ett [huvudnamn för tjänsten](embed-service-principal.md) måste du också utföra stegen ovan i stället för med ett huvudkonto. När du genererar inbäddningstoken ska du använda [objekt-ID:t för tjänstens huvudnamn](embed-service-principal.md) som användarnamn.
 
     > [!Note]
     > När du är redo att distribuera ditt program till produktion ska alternativet eller kontofältet för överordnad användare inte visas för slutanvändaren.

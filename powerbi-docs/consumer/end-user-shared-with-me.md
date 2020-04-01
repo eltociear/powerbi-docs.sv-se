@@ -3,23 +3,22 @@ title: Visa instrumentpaneler och rapporter som har delats med mig
 description: dokumentation för delat med mig i Power BI
 author: mihart
 ms.reviewer: ''
-featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 03/11/2020
+ms.date: 03/22/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: d97727969ed48c50a86be032835b237d293a1d96
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.openlocfilehash: d4fbc607b27999a9a1264a4cf004898ec05b0d18
+ms.sourcegitcommit: bcc42e938fa28abe433287fecb9abb28c253b6bb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79114156"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80302501"
 ---
 # <a name="display-the-dashboards-and-reports-that-have-been-shared-with-me"></a>Visa instrumentpaneler och rapporter som har delats med mig
 
-[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
+[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
@@ -27,7 +26,7 @@ När en kollega delar innehåll med dig visas det, via knappen **dela**, i behå
 
 ![Delningsikon](./media/end-user-shared-with-me/power-bi-share-dashboard.png)
 
-Titta när Amanda förklarar innehållslistan **delat med mig** och visar hur du navigera och filtrerar listan. Prova sedan själv genom att följa de stegvisa anvisningarna under videon. Om du vill visa instrumentpaneler som delas med dig, måste du ha en Power BI Pro-licens. Läs [Vilken licens har jag?](end-user-license.md) för mer information.
+Titta när Amanda förklarar innehållslistan **delat med mig** och visar hur du navigera och filtrerar listan. Prova sedan själv genom att följa de stegvisa anvisningarna under videon. Om du vill visa instrumentpaneler som delas med dig, måste du ha en Power BI Pro-licens. Läs [Vad är Power BI Premium?](../service-premium-what-is.md) för mer information.
     
 
 > [!NOTE]

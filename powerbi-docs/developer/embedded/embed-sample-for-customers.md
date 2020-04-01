@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 12/12/2019
-ms.openlocfilehash: 37f8858d3581f58fc82fcbd1f3a1718ca56b6d72
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.openlocfilehash: 4eca0a799440da57cdb37a603447ba2b0d0c99c8
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79494042"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80403809"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-customers"></a>Självstudie: Bädda in Power BI-innehåll i ett program för dina kunder
 
@@ -438,7 +438,7 @@ När du har skapat en dedikerad kapacitet kan du tilldela arbetsytan till den de
 
 Alla arbetsytor som innehåller Power BI-resurser som är relaterade till det inbäddade innehållet (däribland datamängder, rapporter och instrumentpaneler) måste tilldelas till dedikerade kapaciteter. Exempel: Om en inbäddad rapport och den datamängd som är kopplad till den finns på olika arbetsytor måste båda arbetsytorna tilldelas till dedikerade kapaciteter.
 
-Tilldela en dedikerad kapacitet till en arbetsyta med hjälp av [service principal](embed-service-principal.md) genom att använda [Power BI REST-API:et](https://docs.microsoft.com/rest/api/power-bi/capacities/groups_assigntocapacity). När du använder Power BI REST-API:erna ser du till att använda [objekt-ID för tjänstens huvudnamn](embed-service-principal.md#how-to-get-the-service-principal-object-id).
+Tilldela en dedikerad kapacitet till en arbetsyta med hjälp av [service principal](embed-service-principal.md) genom att använda [Power BI REST-API:et](https://docs.microsoft.com/rest/api/power-bi/capacities/groups_assigntocapacity). När du använder Power BI REST-API:erna ser du till att använda [objekt-ID för tjänstens huvudnamn](embed-service-principal.md).
 
 Följ stegen nedan för att tilldela en dedikerad kapacitet till en arbetsyta med hjälp av ett **huvudkonto**.
 

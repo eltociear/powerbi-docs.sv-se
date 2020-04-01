@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
 ms.date: 11/27/2019
-ms.openlocfilehash: 29a6e9f67258d4babc58d8195dda59afe97554c6
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.openlocfilehash: 7ab9ac60e416502f69401fcea87a697f53176448
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79205238"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80404791"
 ---
 # <a name="what-are-paginated-reports-in-power-bi-premium"></a>Vad är sidnumrerade rapporter i Power BI Premium?
 
@@ -25,7 +25,7 @@ Prova [Labb: Skapa en sidnumrerad rapport i Microsoft Power BI](https://www.micr
 
 ![Sidnumrerad](media/paginated-reports-report-builder-power-bi/power-bi-paginated-wwi-report-page.png)
 
-Du kan förhandsgranska rapporten i Report Builder och sedan publicera den i Power BI-tjänsten https://app.powerbi.com. Du måste ha en Power BI Pro-licens för att kunna publicera en rapport i tjänsten. Du kan publicera och dela sidnumrerade rapporter på Min arbetsyta eller på arbetsytor så länge arbetsytan ligger i en Power BI Premium-kapacitet. Dessutom måste en Power BI-administratör aktivera sidnumrerade rapporter i [avsnittet Premium-kapaciteter](../service-admin-premium-workloads.md#paginated-reports) i Power BI-administratörsportalen. 
+Du kan förhandsgranska rapporten i Report Builder och sedan publicera den i Power BI-tjänsten `https://app.powerbi.com`. Du måste ha en Power BI Pro-licens för att kunna publicera en rapport i tjänsten. Du kan publicera och dela sidnumrerade rapporter på Min arbetsyta eller på arbetsytor så länge arbetsytan ligger i en Power BI Premium-kapacitet. Dessutom måste en Power BI-administratör aktivera sidnumrerade rapporter i [avsnittet Premium-kapaciteter](../service-admin-premium-workloads.md#paginated-reports) i Power BI-administratörsportalen. 
 
 ## <a name="create-reports-in-power-bi-report-builder"></a>Skapa rapporter i Power BI Report Builder
 
@@ -61,7 +61,7 @@ Allt innehåll i en sidnumrerad rapport, från rapporten i sig till varje textru
 
 ## <a name="creating-a-report-definition"></a>Skapa en rapportdefinition
 
-När du utformar en sidnumrerad rapport skapar du i själva verket en *rapportdefinition*. Den innehåller inte data. Den anger var data ska hämtas, vilka data som ska hämtas och hur dessa data ska visas. När du kör rapporten tar rapportprocessorn den rapportdefinitionen som du har angett, hämtar data, kombinerar dem med rapportlayouten och genererar därmed rapporten. Du överför rapportdefinitionen till Power BI-tjänsten, https://app.powerbi.com, antingen till Min arbetsyta eller till en arbetsyta som du delar med dina kollegor. Om rapportdatakällan finns lokalt, när du har överfört rapporten, så kan du omdirigera datakällsanslutningen så att den gå via en gateway. 
+När du utformar en sidnumrerad rapport skapar du i själva verket en *rapportdefinition*. Den innehåller inte data. Den anger var data ska hämtas, vilka data som ska hämtas och hur dessa data ska visas. När du kör rapporten tar rapportprocessorn den rapportdefinitionen som du har angett, hämtar data, kombinerar dem med rapportlayouten och genererar därmed rapporten. Du överför rapportdefinitionen till Power BI-tjänsten, `https://app.powerbi.com`, antingen till Min arbetsyta eller till en arbetsyta som du delar med dina kollegor. Om rapportdatakällan finns lokalt, när du har överfört rapporten, så kan du omdirigera datakällsanslutningen så att den gå via en gateway. 
 
 ## <a name="view-your-paginated-report"></a>Visa din sidnumrerade rapport
 Du kan visa din sidnumrerade rapport i Power BI-tjänsten i en webbläsare, och även i Power BI-mobilappar. Från Power BI-tjänsten kan du exportera rapporten till flera format, t.ex. HTML, MHTML, PDF, XML, CSV, TIFF, Word och Excel. Du kan också dela den med andra.  

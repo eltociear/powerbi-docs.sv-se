@@ -16,12 +16,12 @@ helpviewer_keywords:
 - Power BI APIs
 ms.custom: seodec18
 ms.date: 05/15/2019
-ms.openlocfilehash: 779ca338a211e569c0dd7f529208cf7bfb1bcf7c
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.openlocfilehash: ade60bf8b786f70002f0af0672acf951348fee49
+ms.sourcegitcommit: 9ecd7cadb9ff47f0fc0e400730777cc4dadbd80d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79492340"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80487824"
 ---
 # <a name="embedded-analytics-with-power-bi"></a>Inbäddade analyser med Power BI
 
@@ -34,7 +34,7 @@ Välj den lösning som passar dig:
 * [Inbäddning för din organisation](embedding.md#embedding-for-your-organization) låter dig utöka Power BI-tjänsten. Gör detta genom att implementera lösningen [Bädda in för din organisation](https://aka.ms/embedsetup/UserOwnsData).
 * [Inbäddning för dina kunder](embedding.md#embedding-for-your-customers) gör att du kan bädda in instrumentpaneler och rapporter för användare som inte har något Power BI-konto. Gör detta genom att implementera lösningen [Bädda in för dina kunder](https://aka.ms/embedsetup/AppOwnsData).
 
-![PBIE-exempel](../media/what-can-you-do/what-can-you-do-02.png)
+![PBIE-exempel](media/embedding/what-can-you-do-02.png)
 
 ## <a name="use-apis"></a>Använda API:er
 
