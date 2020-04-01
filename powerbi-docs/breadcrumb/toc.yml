@@ -19,6 +19,16 @@
             - name: Utvecklare
               tocHref: /power-bi/developer/
               topicHref: /power-bi/developer/index
+              items:
+                - name: Inbäddad analys
+                  tocHref: /power-bi/developer/embedded/
+                  topicHref: /power-bi/developer/embedded/
+                - name: Visuella objekt för Power BI
+                  tocHref: /power-bi/developer/visuals/
+                  topicHref: /power-bi/developer/visuals/
+                - name: Automation
+                  tocHref: /power-bi/developer/automation/
+                  topicHref: /power-bi/developer/automation/
             - name: Interaktiv utbildning
               tocHref: /power-bi/guided-learning/
               topicHref: /power-bi/guided-learning/
