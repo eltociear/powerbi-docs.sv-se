@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 02/05/2019
-ms.openlocfilehash: dc429e4147016df07d339468090ad50bb6f14842
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.openlocfilehash: 52f840d5806c10de088838cf64187b953f36aa54
+ms.sourcegitcommit: 6e56d038280efab86521602cbc089b3989dddbd0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79493904"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80550953"
 ---
 # <a name="tutorial-embed-a-power-bi-content-into-your-application-for-national-clouds"></a>Självstudie: Integrera Power BI-innehåll i ditt program för nationella moln
 
@@ -116,7 +116,7 @@ Artikeln visar den kod som användes i exemplet [Appen äger data](https://githu
 
 * Parametrar för Power BI för moln i Kina
 
-1. Skriv över Cloud.config-filen med innehåll i [Power BI för moln i Kina](https://github.com/Microsoft/PowerBI-Developer-Samples/blob/master/App%20Owns%20Data/PowerBIEmbedded_AppOwnsData/CloudConfigs/Power%20BI%20operated%20by%2021Vianet%20in%20China/Cloud.config).
+1. Skriv över Cloud.config-filen med innehåll i [Power BI för moln i Kina](https://github.com/microsoft/PowerBI-Developer-Samples/blob/master/.NET%20Framework/App%20Owns%20Data/PowerBIEmbedded_AppOwnsData/CloudConfigs/Power%20BI%20operated%20by%2021Vianet%20in%20China/Cloud.config).
 
 2. Uppdatera applicationId (inbyggt app-applicationId), workspaceId, användare (din huvudanvändare) och lösenordet i Web.config-filen.
 
@@ -143,7 +143,7 @@ Registrera ditt program med Microsoft Azure Active Directory om du vill göra RE
 
 * Power Bi för moln i Kina – ```https://app.powerbi.cn/apps```
 
-Om du hämtade [exemplet för inbäddning för kunder](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data) använder du det **applicationId** som du fick så att exemplet kan autentisera mot Microsoft Azure Active Directory. Om du vill konfigurera exemplet, ändrar du **applicationId** i *web.config*-filen.
+Om du hämtade [exemplet för inbäddning för kunder](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Framework/App%20Owns%20Data/PowerBIEmbedded_AppOwnsData) använder du det **applicationId** som du fick så att exemplet kan autentisera mot Microsoft Azure Active Directory. Om du vill konfigurera exemplet, ändrar du **applicationId** i *web.config*-filen.
 
 ## <a name="step-2---get-an-access-token-from-azure-ad"></a>Steg 2 – Hämta en åtkomsttoken från Azure AD
 
@@ -187,7 +187,7 @@ using (var client = new PowerBIClient(new Uri(ApiUrl), tokenCredentials))
 
 Använd Power BI-klientobjektet för att hämta en referens till det objekt du vill bädda in. Du kan bädda in instrumentpaneler, paneler eller rapporter. Här är ett exempel på hur du hämtar den första instrumentpanelen, panelen eller rapporten från en given arbetsyta.
 
-Ett exempel finns i **Controllers\HomeController.cs** av [Appen äger dataexemplet](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data).
+Ett exempel finns i **Controllers\HomeController.cs** av [Appen äger dataexemplet](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Framework/App%20Owns%20Data/PowerBIEmbedded_AppOwnsData).
 
 #### <a name="reports"></a>Rapporter
 
@@ -243,7 +243,7 @@ Med JavaScript-API kan du generera en inbäddningstoken. En inbäddningstoken g�
 > [!IMPORTANT]
 > Eftersom inbäddningstoken endast är avsedda för utvecklartestning är antalet inbäddningstoken som ett Power BI-huvudkonto kan generera begränsat. En [kapacitet måste köpas](https://docs.microsoft.com/power-bi/developer/embedded-faq#technical) för inbäddningsscenarier för produktion. Det finns ingen gräns för generering av inbäddningstoken när en kapacitet köps.
 
-Ett exempel finns i **Controllers\HomeController.cs** av [Inbäddning för ditt organisationsexempel](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data).
+Ett exempel finns i **Controllers\HomeController.cs** av [Inbäddning för ditt organisationsexempel](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Framework/App%20Owns%20Data/PowerBIEmbedded_AppOwnsData).
 
 En klass skapas för **EmbedConfig** och **TileEmbedConfig**. Ett exempel är tillgängligt i **Models\EmbedConfig.cs** och **Models\TileEmbedConfig.cs**.
 
@@ -309,7 +309,7 @@ var embedConfig = new TileEmbedConfig()
 
 Du kan använda JavaScript för att läsa in en instrumentpanel till olika element på webbsidan. Exemplet använder en EmbedConfig/TileEmbedConfig-modell tillsammans med vyer för en instrumentpanel, panel eller rapport. Om du vill ha ett fullständigt exempel av att använda JavaScript API:t, kan du använda [Microsoft Power BI Embedded-exemplet](https://microsoft.github.io/PowerBI-JavaScript/demo).
 
-Ett programexempel finns i [Inbäddning för ditt organisationsexempel](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data).
+Ett programexempel finns i [Inbäddning för ditt organisationsexempel](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Framework/App%20Owns%20Data/PowerBIEmbedded_AppOwnsData).
 
 ### <a name="viewshomeembeddashboardcshtml"></a>Views\Home\EmbedDashboard.cshtml
 
@@ -436,7 +436,7 @@ Ett programexempel finns i [Inbäddning för ditt organisationsexempel](https://
 
 ## <a name="next-steps"></a>Nästa steg
 
-* Det finns ett exempelprogram på GitHub som du kan granska. Ovanstående exempel baseras på det exemplet. Mer information finns i [Inbäddning för din organisation-exemplet](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data).
+* Det finns ett exempelprogram på GitHub som du kan granska. Ovanstående exempel baseras på det exemplet. Mer information finns i [Inbäddning för din organisation-exemplet](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Framework/App%20Owns%20Data/PowerBIEmbedded_AppOwnsData).
 
 * Mer information om JavaScript API finns i [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript).
 

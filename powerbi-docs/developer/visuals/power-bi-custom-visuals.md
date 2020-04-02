@@ -10,12 +10,12 @@ ms.subservice: powerbi-desktop
 ms.topic: overview
 ms.date: 01/03/2019
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 26b2cbfc8e57009b836b5ca650e16977de425f3a
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.openlocfilehash: 22c367dbc6160928541570bf2de37c51edcbfc14
+ms.sourcegitcommit: 6e56d038280efab86521602cbc089b3989dddbd0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79383492"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80550867"
 ---
 # <a name="visuals-in-power-bi"></a>Visuella objekt i Power BI
 
@@ -41,7 +41,7 @@ Både communitymedlemmar och Microsoft har bidragit med visuella Power BI-objekt
 
 ### <a name="what-is-appsource"></a>Vad är AppSource?
 
-[AppSource](office-store.md) är en plats där du kan hitta appar och tillägg till dina Microsoft-program. På AppSource får miljontals användare av produkter som Office 365, Azure, Dynamics 365, Cortana och Power BI tillgång till lösningar som hjälper dem att utföra sitt arbete ännu mer effektivt och insiktsfullt än förut.
+[AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) är en plats där du kan hitta appar och tillägg till dina Microsoft-program. På AppSource får miljontals användare av produkter som Office 365, Azure, Dynamics 365, Cortana och Power BI tillgång till lösningar som hjälper dem att utföra sitt arbete ännu mer effektivt och insiktsfullt än förut.
 
 ### <a name="certified-power-bi-visuals"></a>Certifierade visuella Power BI-objekt
 
