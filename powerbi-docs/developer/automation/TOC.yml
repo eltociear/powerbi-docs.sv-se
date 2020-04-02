@@ -1,0 +1,54 @@
+- name: Dokumentation om Power BI-automatisering
+  href: index.yml
+  expanded: true
+  items:
+    - name: Översikt
+      expanded: true
+      items:
+        - name: Vad kan jag göra med Power BI-programmeringsgränssnittet?
+          href: overview-of-power-bi-rest-api.md
+    - name: Självstudier
+      expanded: true
+      items:
+        - name: Skicka data till en datauppsättning
+          href: walkthrough-push-data.md
+        - name: Hämta en autentiseringsåtkomsttoken
+          href: walkthrough-push-data-get-token.md
+        - name: Skapa en datauppsättning
+          href: walkthrough-push-data-create-dataset.md
+        - name: Hämta en datauppsättning för att lägga till rader
+          href: walkthrough-push-data-get-datasets.md
+        - name: Lägga till rader i en tabell
+          href: walkthrough-push-data-add-rows.md
+    - name: Begrepp
+      items:
+        - name: Princip för automatiskt bevarande av realtidsdata
+          href: api-automatic-retention-policy-for-real-time-data.md
+        - name: Skicka data
+          items:
+            - name: 'Begränsningar för Power BI REST API:t'
+              href: api-rest-api-limitations.md
+            - name: Egenskaper för datamängd
+              href: api-dataset-properties.md
+            - name: Versionshantering av datamodell
+              href: api-data-model-versioning.md
+    - name: Gör så här
+      items:
+        - name: Konfigurera autentiseringsuppgifter
+          href: configure-credentials.md
+    - name: Referens
+      items:
+        - name: 'REST API:er'
+          href: 'https://docs.microsoft.com/rest/api/power-bi'
+        - name: Power BI REST API-referens
+          href: rest-api-reference.md
+        - name: Fullständig kodlista
+          href: walkthrough-push-data-complete-code.md
+    - name: Resurser
+      items:
+        - name: Dev Center
+          href: 'https://powerbi.microsoft.com/en-us/developers/'
+        - name: 'Power BI C# Git Repo'
+          href: 'https://go.microsoft.com/fwlink/?linkid=848273'
+        - name: Hämta .NET SDK
+          href: 'https://go.microsoft.com/fwlink/?linkid=848274'

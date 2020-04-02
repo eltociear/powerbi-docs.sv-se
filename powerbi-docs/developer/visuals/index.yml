@@ -1,0 +1,59 @@
+### YamlMime:Landing
+title: Dokumentation om Power BI-visualiseringar
+summary: Utveckla egna visuella Power BI-objekt för användning i organisationen, eller i hela Power BI-communityn. Vår dokumentation innehåller den information du behöver.
+metadata:
+  title: Dokumentation om Power BI-visualiseringar
+  description: Utveckla egna visuella Power BI-objekt för användning i organisationen, eller i hela Power BI-communityn. Vår dokumentation innehåller den information du behöver.
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: powerbi-developer
+  ms.topic: landing-page
+  ms.collection: collection
+  author: KesemSharabi
+  ms.author: kesharab
+  ms.date: 31/03/2020
+  ms.openlocfilehash: d68b08f941ebe04c41e29f1260332e6f2b0d332c
+  ms.sourcegitcommit: 9ecd7cadb9ff47f0fc0e400730777cc4dadbd80d
+  ms.translationtype: HT
+  ms.contentlocale: sv-SE
+  ms.lasthandoff: 04/01/2020
+  ms.locfileid: "80516248"
+landingContent:
+- title: Kom igång
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: Visuella objekt i Power BI
+      url: power-bi-custom-visuals.md
+    - text: Struktur för projekt med visuella Power BI-objekt
+      url: visual-project-structure.md
+    - text: Vanliga frågor och svar
+      url: power-bi-custom-visuals-faq.md
+- title: Utveckla ett visuellt Power BI-objekt
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: 'Självstudie: Utveckla ett visuellt Power BI-objekt'
+      url: custom-visual-develop-tutorial.md
+    - text: 'Självstudie: Lägga till formateringsalternativ till ett visuellt Power BI-objekt'
+      url: custom-visual-develop-tutorial-format-options.md
+  - linkListType: concept
+    links:
+    - text: Riktlinjer för visuella objekt för Power BI
+      url: guidelines-powerbi-visuals.md
+- title: Publicera visuella Power BI-objekt
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Publicera visuella Power BI-objekt på Partnercenter
+      url: office-store.md
+    - text: Certifiera ett visuellt Power BI-objekt
+      url: power-bi-custom-visuals-certified.md
+- title: Referenser och resurser
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: Exempel på Power BI-visualiseringar
+      url: https://microsoft.github.io/PowerBI-visuals/samples/
+    - text: Git-lagringsplats
+      url: https://github.com/Microsoft/PowerBI-visuals

@@ -1,0 +1,110 @@
+- name: Dokumentation om inbäddad Power BI-analys
+  href: index.yml
+  expanded: true
+  items:
+    - name: Översikt
+      expanded: true
+      items:
+        - name: Vad är inbäddning med Power BI?
+          href: embedding.md
+        - name: Vad är Power BI Embedded i Azure?
+          href: azure-pbie-what-is-power-bi-embedded.md
+    - name: Självstudier
+      expanded: true
+      items:
+        - name: Bädda in innehåll för kunder
+          href: embed-sample-for-customers.md
+        - name: Bädda in innehåll för organisationen
+          href: embed-sample-for-your-organization.md
+        - name: Bädda in sidindelade rapporter för kunder
+          href: embed-paginated-reports-customers.md
+        - name: Bädda in innehåll för nationella moln
+          href: embed-sample-for-customers-national-clouds.md
+    - name: Begrepp
+      items:
+        - name: 'Kapacitet och SKU:er i inbäddad Power BI-analys'
+          href: embedded-capacity.md
+        - name: Kapacitetsplanering
+          href: embedded-capacity-planning.md
+        - name: Bästa praxis för prestanda
+          href: embedded-performance-best-practices.md
+        - name: Tjänstens huvudnamn
+          href: embed-service-principal.md
+        - name: Säkerhet på radnivå
+          href: embedded-row-level-security.md
+        - name: Sidindelade rapporter – säkerhet på radnivå
+          href: paginated-reports-row-level-security.md
+        - name: Hantera flera klienter
+          href: embed-multi-tenancy.md
+        - name: Diagnostisk loggning i Azure för Power BI Embedded
+          href: azure-pbie-diag-logs.md
+        - name: Bädda in
+          href: embedded-faq.md
+        - name: Power BI-behörigheter
+          href: power-bi-permissions.md
+    - name: Gör så här
+      items:
+        - name: Bädda in från en app
+          href: embed-from-apps.md
+        - name: Exportera rapport till fil
+          href: export-to.md
+        - name: Installera appar automatiskt
+          href: embed-auto-install-app.md
+        - name: Skapa en Azure Active Directory-klient
+          href: create-an-azure-active-directory-tenant.md
+        - name: Registrera ett program
+          href: register-app.md
+        - name: Hämta en Azure AD-åtkomsttoken
+          href: get-azuread-access-token.md
+        - name: Ansluta en rapport med hjälp av dynamisk bindning
+          href: embed-dynamic-binding.md
+        - name: Bädda in frågor och svar
+          href: qanda.md
+        - name: Felsök ditt inbäddade program
+          href: embedded-troubleshoot.md
+        - name: Hantera kapacitet i Azure
+          items:
+            - name: Skapa kapacitet i Azure
+              href: azure-pbie-create-capacity.md
+            - name: Skapa en kapacitet med hjälp av Multi-Geo in Azure
+              href: embedded-multi-geo.md
+            - name: Skala kapacitet i Azure
+              href: azure-pbie-scale-capacity.md
+            - name: Pausa och starta kapacitet i Azure
+              href: azure-pbie-pause-start.md
+        - name: Migrera från arbetsytesamlingar
+          items:
+            - name: Så här migrerar du från Power BI-arbetsytesamlingar
+              href: migrate-from-powerbi-embedded.md
+            - name: Migreringsverktyg
+              href: migrate-tool.md
+            - name: Kodavsnitt för migrering
+              href: migrate-code-snippets.md
+    - name: Referens
+      items:
+        - name: 'API:er'
+          items:
+            - name: 'REST API:er för Azure Resource Management'
+              href: 'https://docs.microsoft.com/rest/api/power-bi-embedded/'
+            - name: 'REST API:er för Power BI'
+              href: 'https://msdn.microsoft.com/library/mt147898.aspx'
+        - name: Power BI-bibliotek
+          href: 'https://go.microsoft.com/fwlink/?linkid=848274'
+        - name: Bädda in anpassade layouter i en app
+          href: embedded-custom-layout.md
+    - name: Resurser
+      items:
+        - name: Developer Center
+          href: 'https://powerbi.microsoft.com/en-us/developers/'
+        - name: Konfigurationsverktyget för inbäddning
+          href: 'https://aka.ms/embedsetup'
+        - name: Exempel för JavaScript Playground
+          href: 'https://go.microsoft.com/fwlink/?linkid=848279'
+        - name: Power BI JavaScript-wiki
+          href: 'https://github.com/Microsoft/powerbi-javascript/wiki'
+        - name: Exempel och skript för utvecklare
+          href: 'https://go.microsoft.com/fwlink/?linkid=851293'
+        - name: Power BI-community
+          href: 'https://go.microsoft.com/fwlink/?linkid=848280'
+        - name: Dataspill
+          href: 'https://go.microsoft.com/fwlink/?linkid=848281'

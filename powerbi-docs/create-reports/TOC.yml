@@ -20,6 +20,8 @@
       items:
         - name: Hämta exempel för Power BI
           href: ../sample-datasets.md
+        - name: COVID-19-exempel för USA
+          href: sample-covid-19-us.md
         - name: Exempel på kundlönsamhet
           href: ../sample-customer-profitability.md
         - name: Exempel på IT-utgiftsanalys

@@ -1,0 +1,65 @@
+### YamlMime:Landing
+title: Dokumentation om Power BI-automatisering
+summary: Med Power BI-automatisering kan du hantera Power BI-objekt såsom rapporter, datauppsättningar och arbetsytor.
+metadata:
+  title: Dokumentation om Power BI-automatisering
+  description: Med Power BI-automatisering kan du hantera Power BI-objekt såsom rapporter, datauppsättningar och arbetsytor.
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: powerbi-developer
+  ms.topic: landing-page
+  ms.collection: collection
+  author: KesemSharabi
+  ms.author: kesharab
+  ms.date: 31/03/2020
+  ms.openlocfilehash: 33f3caa20bc29c41b9d2c43f6727947ce9b7d446
+  ms.sourcegitcommit: 9ecd7cadb9ff47f0fc0e400730777cc4dadbd80d
+  ms.translationtype: HT
+  ms.contentlocale: sv-SE
+  ms.lasthandoff: 04/01/2020
+  ms.locfileid: "80516409"
+landingContent:
+- title: Kom igång
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: Lär dig vad du kan göra med Power BI-API:et
+      url: overview-of-power-bi-rest-api.md
+  - linkListType: tutorial
+    links:
+    - text: 'Självstudie: Skicka data till en datauppsättning'
+      url: walkthrough-push-data.md
+    - text: 'Självstudie: Hämta en autentiseringsåtkomsttoken'
+      url: walkthrough-push-data-get-token.md
+    - text: 'Självstudie: Skapa en datauppsättning'
+      url: walkthrough-push-data-create-dataset.md
+    - text: Hämta en datauppsättning för att lägga till rader
+      url: walkthrough-push-data-get-datasets.md
+    - text: Lägga till rader i en Power BI-tabell
+      url: walkthrough-push-data-add-rows.md
+- title: Arbeta med data
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Princip för automatiskt bevarande av realtidsdata
+      url: api-automatic-retention-policy-for-real-time-data.md
+    - text: Begränsningar för Power BI REST API:t
+      url: api-rest-api-limitations.md
+    - text: Egenskaper för datamängd
+      url: api-dataset-properties.md
+  - linkListType: how-to-guide
+    links:
+    - text: Konfigurera autentiseringsuppgifter
+      url: configure-credentials.md
+- title: Referenser och resurser
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: REST API:er för Power BI
+      url: https://docs.microsoft.com/rest/api/power-bi/
+    - text: Power BI REST API-referens
+      url: https://docs.microsoft.com/power-bi/developer/automation/rest-api-reference
+    - text: Developer Center
+      url: https://powerbi.microsoft.com/developers/
+    - text: Power BI-bibliotek
+      url: https://www.nuget.org/profiles/powerbi

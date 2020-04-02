@@ -1,0 +1,120 @@
+- name: Dokumentation om Power BI-visualiseringar
+  href: index.yml
+  expanded: true
+  items:
+    - name: Översikt
+      expanded: true
+      items:
+        - name: Visuella objekt i Power BI
+          href: power-bi-custom-visuals.md
+    - name: Självstudier
+      expanded: true
+      items:
+        - name: Utveckla ett visuellt Power BI-objekt
+          href: custom-visual-develop-tutorial.md
+        - name: Lägga till formateringsalternativ
+          href: custom-visual-develop-tutorial-format-options.md
+        - name: Lägga till enhetstester för visuellt projekt
+          href: unit-tests-introduction.md
+    - name: Begrepp
+      items:
+        - name: Struktur för projekt med visuella Power BI-objekt
+          href: visual-project-structure.md
+        - name: Begrepp om visuella objekt
+          href: power-bi-visuals-concept.md
+        - name: Visuella objekt för organisationer i Power BI
+          href: power-bi-custom-visuals-organization.md
+        - name: Riktlinjer för visuella objekt för Power BI
+          href: guidelines-powerbi-visuals.md
+        - name: Vanliga frågor och svar om visuella objekt
+          href: power-bi-custom-visuals-faq.md
+        - name: Använda funktioner
+          href: capabilities.md
+        - name: Datavymappningar
+          href: dataview-mappings.md
+        - name: Objekt och egenskaper
+          href: objects-properties.md
+        - name: Avancerat redigeringsläge
+          href: advanced-edit-mode.md
+    - name: Gör så här
+      items:
+        - name: Certifiera ett visuellt Power BI-objekt
+          href: power-bi-custom-visuals-certified.md
+        - name: Publicera visuella Power BI-objekt till AppSource
+          href: office-store.md
+        - name: Använd R-baserade visuella Power BI-objekt i Power BI
+          href: ../../desktop-r-powered-custom-visuals.md?toc=/powerbi-docs/developer/TOC.json&bc=/powerbi-docs/breadcrumb/toc.json
+        - name: Visuella interaktioner
+          href: visuals-interactions.md
+        - name: Lägga till val
+          href: selection-api.md
+        - name: Lägga till knappbeskrivningar för visuella objekt
+          href: add-tooltips.md
+        - name: Lägga till analysfönster
+          href: analytics-pane.md
+        - name: Filtrera visuella objekt
+          href: filter-api.md
+        - name: Hämta mer data
+          href: fetch-more-data.md
+        - name: Lägga till stöd för bokmärken
+          href: bookmarks-support.md
+        - name: Lägga till stöd för snabbmeny
+          href: context-menu.md
+        - name: Lägg till stöd för ökad detaljnivå
+          href: drill-down-support.md
+        - name: Markera data i visuella objekt
+          href: highlight.md
+        - name: Lägga till stöd för högkontrastläge
+          href: high-contrast-support.md
+        - name: Aktivera synkronisering av utsnitt
+          href: enable-sync-slicers.md
+        - name: Felsöka visuella objekt
+          href: visuals-how-to-debug.md
+        - name: Felsöka anpassade visuella Power BI-objekt
+          href: power-bi-custom-visuals-troubleshoot.md
+    - name: Referens
+      items:
+        - name: Landningssida
+          href: landing-page.md
+        - name: Starta URL
+          href: launch-url.md
+        - name: API för lokal lagring
+          href: local-storage.md
+        - name: Återgivningshändelser
+          href: event-service.md
+        - name: Sortering
+          href: sort-options.md
+        - name: Lokalisering
+          href: localization.md
+        - name: Power BI – visuella verktyg
+          items:
+            - name: Lägga till externa bibliotek
+              href: adding-external-libraries.md
+            - name: Interaktivitetsverktyg
+              href: utils-interactivity-selections.md
+            - name: Formateringsverktyg
+              href: utils-formatting.md
+            - name: Verktyg för datavisning
+              href: utils-dataview.md
+            - name: Diagramverktyg
+              href: utils-chart.md
+            - name: Färgverktyg
+              href: utils-color.md
+            - name: SVG-verktyg
+              href: utils-svg.md
+            - name: Typverktyg
+              href: utils-type.md
+            - name: Verktyg för knappbeskrivningar
+              href: utils-tooltip.md
+            - name: Verktyg för datavisning
+              href: utils-dataview.md
+    - name: Resurser
+      items:
+        - name: Dev Center
+          href: 'https://powerbi.microsoft.com/developers/'
+        - name: Exempel på Power BI-visualiseringar
+          href: 'https://microsoft.github.io/PowerBI-visuals/samples/'
+        - name: Git-lagringsplats för visuella Power BI -objekt
+          href: 'https://go.microsoft.com/fwlink/?linkid=848277'
+        - name: Skapa SSL-certifikat
+          href: create-ssl-certificate.md

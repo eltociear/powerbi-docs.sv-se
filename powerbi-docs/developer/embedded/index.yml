@@ -1,0 +1,83 @@
+### YamlMime:Landing
+title: Dokumentation om inbäddad Power BI-analys
+summary: Lär dig hur du använder de två lösningarna för inbäddad analys, Power BI Embedded och inbäddning med Power BI Premium.
+metadata:
+  title: Dokumentation om inbäddad Power BI-analys
+  description: Lär dig hur du använder de två lösningarna för inbäddad analys, Power BI Embedded och inbäddning med Power BI Premium.
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: powerbi-developer
+  ms.topic: landing-page
+  ms.collection: collection
+  author: KesemSharabi
+  ms.author: kesharab
+  ms.date: 31/03/2020
+  ms.openlocfilehash: 3f7bf1ebb51e7f9e5916e16280a2e10d7339df73
+  ms.sourcegitcommit: 9ecd7cadb9ff47f0fc0e400730777cc4dadbd80d
+  ms.translationtype: HT
+  ms.contentlocale: sv-SE
+  ms.lasthandoff: 04/01/2020
+  ms.locfileid: "80516271"
+landingContent:
+- title: Kom igång
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: Vad är inbäddning med Power BI?
+      url: embedding.md
+    - text: Vad är Power BI Embedded i Azure?
+      url: azure-pbie-what-is-power-bi-embedded.md
+    - text: Vanliga frågor och svar
+      url: embedded-faq.md
+- title: Bädda in rapporter eller instrumentpaneler
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: 'Självstudie: Bädda in Power BI-innehåll i ett program för dina kunder'
+      url: embed-sample-for-customers.md
+    - text: 'Självstudie: Bädda in Power BI-innehåll i ett program för din organisation'
+      url: embed-sample-for-your-organization.md
+    - text: 'Självstudie: Bädda in sidnumrerade Power BI-rapporter i en app för dina kunder'
+      url: embed-paginated-reports-customers.md
+    - text: 'Självstudie: Integrera Power BI-innehåll i ditt program för nationella moln'
+      url: embed-sample-for-customers-national-clouds.md
+  - linkListType: reference
+    links:
+    - text: Konfigurationsverktyget för inbäddning
+      url: https://app.powerbi.com/embedsetup
+    - text: Exempel och skript för utvecklare
+      url: https://github.com/Microsoft/PowerBI-Developer-Samples
+- title: Produktionsplan
+  linkLists:
+  - linkListType: architecture
+    links:
+    - text: Kapacitet och SKU:er
+      url: embedded-capacity.md
+    - text: Kapacitetsplanering
+      url: embedded-capacity-planning.md
+  - linkListType: concept
+    links:
+    - text: Bästa praxis för prestanda
+      url: embedded-performance-best-practices.md
+    - text: Power BI-behörigheter
+      url: power-bi-permissions.md
+    - text: Frågor och svar
+      url: qanda.md
+    - text: Felsök ditt inbäddade program
+      url: embedded-troubleshoot.md
+- title: Referenser och resurser
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: REST API:er för Power BI
+      url: https://docs.microsoft.com/rest/api/power-bi/
+    - text: Power BI REST API-referens
+      url: https://docs.microsoft.com/power-bi/developer/automation/rest-api-reference
+    - text: Developer Center
+      url: https://powerbi.microsoft.com/developers/
+    - text: Power BI-bibliotek
+      url: https://www.nuget.org/profiles/powerbi
+    - text: Testplats
+      url: https://microsoft.github.io/PowerBI-JavaScript/demo/v2-demo/index.html
+    - text: JavaScript-wiki
+      url: https://github.com/Microsoft/powerbi-javascript/wiki

@@ -1,93 +1,110 @@
-### YamlMime:Landing
+### YamlMime:Hub
 title: Power BI-utvecklardokumentation
-summary: Med Power BI-dokumentation får du expertinformation och hjälp med dina behov, oavsett hur du använder Power BI.
+summary: Som Power BI-utvecklare kan du bädda in Power BI-innehåll, skapa en Power BI-visualisering och automatisera Power BI-processer.
+brand: power-bi
 metadata:
   title: Power BI-utvecklardokumentation
-  description: Med Power BI-dokumentation får du expertinformation och hjälp med dina behov, oavsett hur du använder Power BI.
+  description: Som Power BI-utvecklare kan du bädda in Power BI-innehåll, skapa en Power BI-visualisering och automatisera Power BI-processer.
   services: powerbi
   ms.service: powerbi
   ms.subservice: powerbi-developer
-  ms.topic: landing-page
+  ms.topic: hub-page
   ms.collection: collection
-  author: maggiesMSFT
-  ms.author: maggies
-  ms.date: 10/25/2019
-  ms.openlocfilehash: b03678dba371ed26a8965c2ebbcd26453689cea2
-  ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+  author: KesemSharabi
+  ms.author: kesharab
+  ms.date: 31/03/2020
+  ms.openlocfilehash: 8d37f5a4cde341dd8788791fecdbd1c7f20249d0
+  ms.sourcegitcommit: 9ecd7cadb9ff47f0fc0e400730777cc4dadbd80d
   ms.translationtype: HT
   ms.contentlocale: sv-SE
-  ms.lasthandoff: 03/18/2020
-  ms.locfileid: "79487773"
-landingContent:
-- title: Om Power BI för utvecklare
-  linkLists:
-  - linkListType: overview
+  ms.lasthandoff: 04/01/2020
+  ms.locfileid: "80487809"
+highlightedContent:
+  items:
+  - title: Inbäddade analyser med Power BI
+    itemType: overview
+    url: embedded/embedding.md
+  - title: Vad är Power BI Embedded i Azure?
+    itemType: overview
+    url: embedded/azure-pbie-what-is-power-bi-embedded.md
+  - title: Visuella objekt i Power BI
+    itemType: overview
+    url: visuals/power-bi-custom-visuals.md
+  - title: Vad kan utvecklare göra med Power BI-API?
+    itemType: overview
+    url: automation/overview-of-power-bi-rest-api.md
+conceptualContent:
+  items:
+  - title: Inbäddad analys
     links:
-    - text: Vad kan utvecklare göra?
-      url: what-can-you-do.md
-    - text: Visuella objekt i Power BI
-      url: visuals/power-bi-custom-visuals.md
-    - text: Det här är inbäddat
-      url: embedded/embedding.md
-    - text: Vad är Power BI-API?
-      url: automation/overview-of-power-bi-rest-api.md
-  - linkListType: reference
+    - url: embedded/embedding.md
+      itemType: overview
+      text: Inbäddade analyser med Power BI
+    - url: embedded/azure-pbie-what-is-power-bi-embedded.md
+      itemType: overview
+      text: Vad är Power BI Embedded i Azure?
+    - url: embedded/embedded-capacity.md
+      itemType: concept
+      text: Kapacitet och SKU:er
+    footerLink:
+      url: embedded/index.yml
+      text: Visa mer
+  - title: Visuella objekt för Power BI
     links:
-    - text: Developer Center
-      url: https://powerbi.microsoft.com/developers/
-    - text: Utvecklarexempel
-      url: https://github.com/Microsoft/PowerBI-Developer-Samples
-    - text: JavaScript-wiki
-      url: https://github.com/Microsoft/powerbi-javascript/wiki
-    - text: REST API:er
+    - url: visuals/power-bi-custom-visuals.md
+      itemType: overview
+      text: Visuella objekt i Power BI
+    - url: visuals/custom-visual-develop-tutorial.md
+      itemType: tutorial
+      text: Utveckla ett visuellt Power BI-objekt
+    - url: visuals/office-store.md
+      itemType: how-to-guide
+      text: Publicera visuella Power BI-objekt på Partnercenter
+    footerLink:
+      url: visuals/index.yml
+      text: Visa mer
+  - title: Automation
+    links:
+    - url: automation/overview-of-power-bi-rest-api.md
+      itemType: overview
+      text: Vad kan utvecklare göra med Power BI-API?
+    - url: automation/walkthrough-push-data.md
+      itemType: tutorial
+      text: Skicka data till en Power BI-datauppsättning
+    - url: automation/configure-credentials.md
+      itemType: how-to-guide
+      text: Konfigurera autentiseringsuppgifter
+    footerLink:
+      url: automation/index.yml
+      text: Visa mer
+additionalContent:
+  sections:
+  - title: Relaterade verktyg
+  - items:
+    - title: REST API:er för Power BI
+      summary: REST-API:erna för Power BI tillhandahåller tjänstslutpunkter för inbäddning, administration och användarresurser.
       url: https://docs.microsoft.com/rest/api/power-bi/
-    - text: Azure Resource Manager REST-API:er
+    - title: Azure Resource Manager REST-API
+      summary: Ett API som tillhandahåller en RESTful-uppsättning av webbtjänster som gör att du kan skapa, hämta, uppdatera och ta bort Power BI-dedikerad kapacitet.
       url: https://docs.microsoft.com/rest/api/power-bi-embedded/
-- title: Visuella objekt
-  linkLists:
-  - linkListType: tutorial
-    links:
-    - text: Utveckla ett visuellt objekt
-      url: visuals/custom-visual-develop-tutorial.md
-  - linkListType: concept
-    links:
-    - text: Vanliga frågor och svar om visuella objekt
-      url: visuals/power-bi-custom-visuals-faq.md
-    - text: Riktlinjer för visuella objekt
-      url: visuals/guidelines-powerbi-visuals.md
-    - text: Avancerat redigeringsläge i visuella objekt
-      url: visuals/advanced-edit-mode.md
-  - linkListType: how-to-guide
-    links:
-    - text: Certifiera ett visuellt objekt
-      url: visuals/power-bi-custom-visuals-certified.md
-    - text: Publicera visuella Power BI-objekt till AppSource
-      url: visuals/office-store.md
-- title: Inbäddad analys
-  linkLists:
-  - linkListType: tutorial
-    links:
-    - text: Bädda in innehåll för kunder
-      url: embedded/embed-sample-for-customers.md
-    - text: Bädda in innehåll för organisationen
-      url: embedded/embed-sample-for-your-organization.md
-  - linkListType: concept
-    links:
-    - text: Säkerhet på radnivå
-      url: embedded/embedded-row-level-security.md
-    - text: Hantera flera innehavare
-      url: embedded/embed-multi-tenancy.md
-    - text: Inbäddade vanliga frågor och svar
-      url: embedded/embedded-faq.md
-    - text: Behörigheter
-      url: embedded/power-bi-permissions.md
-  - linkListType: how-to-guide
-    links:
-    - text: Bädda in från appar
-      url: embedded/embed-from-apps.md
-    - text: Skapa en Azure Active Directory-klient
-      url: embedded/create-an-azure-active-directory-tenant.md
-    - text: Hämta en Azure AD-åtkomsttoken
-      url: embedded/get-azuread-access-token.md
-    - text: Funktionen Frågor och svar i Power BI Embedded
-      url: embedded/qanda.md
+    - title: Dokumentation om Power Platform
+      summary: Lär dig hur Power BI, Power Apps, Power Automate och Power Virtual Agents fungerar tillsammans och förbättrar varandra.
+      url: https://docs.microsoft.com/power-platform/
+    - title: Power BI Developer Center
+      summary: Skapa med Power BI.
+      url: https://powerbi.microsoft.com/developers/
+    - title: Exempel på Power BI-visualiseringar
+      summary: En samling Power BI-exempel och relaterade kodbibliotek.
+      url: https://microsoft.github.io/PowerBI-visuals/samples/
+    - title: Power BI-bibliotek
+      summary: Power BI-bibliotek (NuGets).
+      url: https://www.nuget.org/profiles/powerbi
+    - title: Konfigurationsverktyget för inbäddning
+      summary: Konfigurera din Power BI-inbäddningsmiljö.
+      url: https://app.powerbi.com/embedsetup
+    - title: Testplats
+      summary: Testa funktioner och utforska API:er.
+      url: https://aka.ms/pbieplayground
+    - title: JavaScript-wiki
+      summary: Utforska Java Script-kunskapsbasen.
+      url: https://github.com/Microsoft/powerbi-javascript/wiki
