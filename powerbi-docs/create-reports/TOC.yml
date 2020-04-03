@@ -317,8 +317,6 @@
               href: ../desktop-accessibility-keyboard-shortcuts.md
         - name: Sidnumrerade rapporter
           items:
-            - name: 'Labb: Skapa en sidnumrerad rapport'
-              href: 'https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208'
             - name: Ange data direkt i en sidnumrerad rapport
               href: ../paginated-reports/paginated-reports-enter-data.md
             - name: Skapa en inbäddad datakälla
