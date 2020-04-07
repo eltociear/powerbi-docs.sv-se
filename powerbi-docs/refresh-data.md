@@ -6,15 +6,15 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/14/2019
+ms.date: 03/26/2020
 ms.author: maggies
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 810077e8c651d3d6faf91eecb6fd320c24a69d2f
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.openlocfilehash: 63275e882d71cd5c47a9a10baf4f0975abc2a845
+ms.sourcegitcommit: bcc42e938fa28abe433287fecb9abb28c253b6bb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79488808"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80302465"
 ---
 # <a name="data-refresh-in-power-bi"></a>Datauppdatering i Power BI
 
@@ -92,7 +92,7 @@ En Power BI-uppdatering kan bestå av flera uppdateringstyper, till exempel data
 
 #### <a name="data-refresh"></a>Datauppdatering
 
-För Power BI-användare innebär uppdatering av data normalt att importera data från de ursprungliga datakällorna till en datauppsättning, antingen utifrån ett uppdateringsschema eller på begäran. Du kan utföra flera datauppsättningsuppdateringar dagligen, vilket kan vara nödvändigt om de underliggande källdata ändras ofta. Power BI begränsar datauppsättningar på delad kapacitet till åtta dagliga uppdateringar. Om datauppsättningen ligger i en Premium-kapacitet kan du schemalägga upp till 48 uppdateringar per dag i inställningarna för datamängden. Mer information finns i [Konfigurera schemalagd uppdatering](#configure-scheduled-refresh) senare i den här artikeln.
+För Power BI-användare innebär uppdatering av data normalt att importera data från de ursprungliga datakällorna till en datauppsättning, antingen utifrån ett uppdateringsschema eller på begäran. Du kan utföra flera datauppsättningsuppdateringar dagligen, vilket kan vara nödvändigt om de underliggande källdata ändras ofta. Power BI begränsar datauppsättningar på delad kapacitet till åtta dagliga uppdateringar. Om datauppsättningen ligger i en Premium-kapacitet kan du schemalägga upp till 48 uppdateringar per dag i inställningarna för datamängden. Mer information finns i [Konfigurera schemalagd uppdatering](#configure-scheduled-refresh) senare i den här artikeln. Datauppsättningar på en Premium-kapacitet med [XMLA-slutpunkten ](service-premium-connect-tools.md) inställd på läs-/skrivbehörighet för obegränsade uppdateringsåtgärder när de konfigureras programmässigt med TMSL eller PowerShell.
 
 Det är också viktigt att påpeka att begränsningen för dagliga uppdateringar i delade kapaciteter gäller för antalet schemalagda uppdateringar och API-uppdateringar tillsammans. Du kan också utlösa en uppdatering på begäran genom att välja **Uppdatera nu** i datamängdens meny, som i den här bilden. Uppdateringar på begäran räknas inte mot uppdateringsgränsen. Observera också att datamängder i Premium-kapaciteter inte har några begränsningar för API-uppdateringar. Om du vill skapa en egen uppdateringsläsning via REST-API:et för Power BI ska du läsa [Datamängder – Uppdatera datamängd](/rest/api/power-bi/datasets/refreshdataset).
 

@@ -7,19 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 03/12/2020
+ms.date: 03/26/2020
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 1caa68ac00f9821979f741bf3266514fcb33c36a
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.openlocfilehash: f53f7a1e51ce1cb17c337569ba770ac2b5643d19
+ms.sourcegitcommit: 8267a7383d6506dae42f87e4f4a2362b875b2911
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79381179"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80329673"
 ---
 # <a name="what-is-power-bi-premium"></a>Vad är Power BI Premium?
 
-Power BI Premium tillhandahåller dedikerade och förbättrade resurser för körning av Power BI-tjänsten för din organisation. Till exempel:
+Du kan använda Power BI Premium för att få dedikerade och förbättrade resurser för din organisation, så att användare i din organisation kan använda Power BI-tjänsten med bättre prestanda och svarstider. Med en Power BI Premium-prenumeration får du och din organisations användare till exempel åtkomst till:
 
 > [!div class="checklist"]
 > * Större skala och bättre prestanda
@@ -29,13 +29,16 @@ Power BI Premium tillhandahåller dedikerade och förbättrade resurser för kö
 > * Stöd för datahemvist per region (Multi-Geo)
 > * Dela data med vem som helst utan köpa en licens per användare
 
+
+![Administratörsportalen](media/service-premium-what-is/premium-admin-portal.png) 
+
 Den här artikeln introducerar viktiga funktioner i Power BI Premium. Vid behov ges länkar till fler artiklar med mer detaljerad information. Mer information om Power BI Pro och Power BI Premium finns i avsnittet _Jämförelse av Power BI-funktioner_ i [Power BI-prissättning](https://powerbi.microsoft.com/pricing/).
 
 ## <a name="subscriptions-and-licensing"></a>Prenumerationer och licensiering
 
 Power BI Premium är en prenumeration på klientnivå för Office 365, tillgänglig för två SKU-serier (lagerhållningsenhet):
 
-- **P**-SKU:er (P1–P3) för inbäddning och företagsfunktioner kräver ett månatligt eller årsvis åtagande, faktureras månadsvis och inkluderar en licens för installation av Power BI-rapportservern lokalt.
+- **P**-SKU:er (P1–P5) för inbäddning och företagsfunktioner kräver ett månatligt eller årsvis åtagande, faktureras månadsvis och inkluderar en licens för installation av Power BI-rapportservern lokalt.
 
 - **EM**-SKU:er (EM1–EM3) för _organisatorisk_ inbäddning kräver ett årligt åtagande och faktureras månadsvis. EM1- och EM2-SKU:er är endast tillgängliga via planer med volymlicensiering. Du kan inte köpa dem direkt.
 
@@ -81,6 +84,8 @@ Resurser och begränsningar för varje Premium-SKU (och en A-SKU med motsvarande
 | P1/A4 | 8 | 4 | 25 | 4 | 30 | 6 |
 | P2/A5 | 16 | 8 | 50 | 8 | 60 | 12 |
 | P3/A6 | 32 | 16 | 100 | 16 | 120 | 24 |
+| P4 | 64 | 32 | 200 | 32 | 240 | 48 |
+| P5 | 128 | 64 | 400 | 64 | 480 | 96 |
 | | | | | | | |
 
 > [!NOTE]
@@ -229,13 +234,14 @@ Mer information finns i [Power BI-licensiering](service-admin-licensing-organiza
 
 ## <a name="analysis-services-in-power-bi-premium-preview"></a>Analysis Services i Power BI Premium (förhandsversion)
 
-Under huven drivs Power BI-datamängder av den beprövade **Analysis Services Vertipaq-motorn** från Microsoft. Analysis Services tillhandahåller programmerbarhet samt stöd för klientprogram och verktyg via klientbibliotek och API:er som stöder XMLA-protokollet med öppen standard. För närvarande stöder Power BI Premium-datamängder *skrivskyddade* åtgärder från Microsoft samt klientprogram och verktyg från tredje part via **XMLA-slutpunkter**. 
+Under huven drivs Power BI Premium-datauppsättningar och arbetsytor av den beprövade **Analysis Services Vertipaq-motorn** från Microsoft. Analysis Services tillhandahåller programmerbarhet samt stöd för klientprogram och verktyg via klientbibliotek och API:er som stöder XMLA-protokollet med öppen standard. Som standard stöder datauppsättningar Power BI Premium-kapacitet *skrivskyddade* åtgärder från Microsoft samt klientprogram och verktyg från tredje part via **XMLA-slutpunkter**. Kapacitetsadministratörer kan också välja att inaktivera eller tillåta *Läs-/skriv-* åtgärder via slutpunkten.
 
-Microsoft-verktyg som SQL Server Management Studio och SQL Server Profiler samt appar från tredje part såsom DAX-Studio och datavisualiseringsprogram kan ansluta till och köra frågor mot datamängder med hjälp av XMLA, DAX, MDX, DMV:er och spårningshändelser. 
+Med skrivskyddad åtkomst kan Microsoft-verktyg som SQL Server Management Studio (SSMS) och SQL Server Profiler samt appar från tredje part såsom DAX-Studio och datavisualiseringsprogram ansluta till och köra frågor mot datamängder med hjälp av XMLA, DAX, MDX, DMV:er och spårningshändelser. Med läs-/skrivåtkomst kan du använda Enterprise Data Modeling-verktyg som Visual Studio med Analysis Services-projekttillägg eller tabellredigeraren med öppen källkod kan distribuera tabellmodeller som en datauppsättning till en Premium-arbetsyta. Och med verktyg som SSMS kan administratörer använda TMSL (tabellmodellskriptspråk) för att ändra skript för metadata och avancerade datauppdateringsscenarier. 
+
+Mer information finns i [Datamängdsanslutning med XMLA-slutpunkten](service-premium-connect-tools.md).
 
 ![SSMS](media/service-premium-what-is/connect-tools-ssms-dax.png)
 
-Mer information finns i [Ansluta till datamängder med klientprogram och verktyg](service-premium-connect-tools.md).
 
 ## <a name="next-steps"></a>Nästa steg
 

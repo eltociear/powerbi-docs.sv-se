@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/03/2019
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 5208c72016a148f86a119bdddd2bbd1f69d3456b
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.openlocfilehash: 0804650149f98d7f63315025ffe3f8a1771ac2ef
+ms.sourcegitcommit: bcc42e938fa28abe433287fecb9abb28c253b6bb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79381041"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80302750"
 ---
 # <a name="subscribe-yourself-and-others-to-reports-and-dashboards-in-the-power-bi-service"></a>Skapa en prenumeration åt dig eller andra på rapporter och instrumentpaneler i Power BI-tjänsten
 
@@ -96,7 +96,7 @@ En prenumeration går ut om Pro-licensen upphör att gälla, om ägaren tar bort
 * Rapportsideprenumerationer är knutna till namnet på rapportsidan. Om du prenumererar på en rapportsida och sedan byter namn på den, måste du återskapa din prenumeration.
 * Din organisation kan konfigurera vissa inställningar i Azure Active Directory som begränsar möjligheten att använda e-postprenumerationer i Power BI.  Dessa begränsningar inkluderar, men begränsas inte till, att ha multifaktorautentisering eller begränsningar för IP-intervallet vid åtkomst till resurser.
 * För närvarande stöds inte e-postprenumerationer för rapporter/instrumentpaneler som använder datauppsättningar från realtidsanslutningar när du skapar prenumerationer åt andra användare än dig själv, såvida du inte använder en sidnumrerad rapport, vilket i så fall gör att du kan skicka prenumerationen till andra med hjälp av din säkerhetskontext.
-* I e-postprenumerationer saknas stöd för de flesta [visuella Power BI-objekt](developer/visuals/power-bi-custom-visuals.md).  Enda undantaget är de visuella Power BI-objekt som har [certifierats](developer/visuals/power-bi-custom-visuals-certified.md).  
+* Endast standard- och [certifierade visuella Power BI-objekt](developer/visuals/power-bi-custom-visuals.md) stöds för e-postprenumerationer.  
 * E-postprenumerationer saknar för närvarande stöd för R-baserade visuella Power BI-objekt.  
 * E-postprenumerationer skickas med rapportens standardfilter och utsnittstillstånd. Inga ändringar av standardinställningarna som du gör efter att du börjar prenumerera visas i e-postmeddelandet.  Sidnumrerade rapporter har stöd för den här funktionen och gör att du kan ställa in specifika parametervärden per prenumeration.
 * För prenumerationer på instrumentpaneler så saknar vissa typer av paneler fortfarande stöd.  Detta gäller: strömningspaneler, videopaneler och paneler för anpassat webbinnehåll.     

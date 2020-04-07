@@ -1,167 +1,191 @@
 ---
 title: Tjänstens huvudnamn med Power BI
-description: Lär dig hur du registrerar en app i Azure Active Directory med hjälp av tjänstens huvudnamn för användning med inbäddning av Power BI-innehåll.
+description: Lär dig hur du registrerar en app i Azure Active Directory med hjälp av tjänstens huvudnamn och en apphemlighet för användning med inbäddning av Power BI-innehåll.
 author: KesemSharabi
 ms.author: kesharab
-ms.reviewer: nishalit
+ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 12/12/2019
-ms.openlocfilehash: ce72abc3f3b60423344c2b28f39d9bdbfbcee7cd
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.date: 03/30/2020
+ms.openlocfilehash: 9ec08ebe583110b2775f107be0ace2a03929c72d
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79493513"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80403521"
 ---
-# <a name="service-principal-with-power-bi"></a>Tjänstens huvudnamn med Power BI
+# <a name="embedding-power-bi-content-with-service-principal-and-application-secret"></a>Bädda in Power BI innehåll med tjänstens huvudnamn och apphemlighet
 
-Med **tjänstens huvudnamn** kan du bädda in Power BI-innehåll i ett program och använda automatisering med Power BI med hjälp av en **appspecifik** token. Tjänstens huvudnamn är bra när du använder **Power BI Embedded** eller **automatiserar Power BI-uppgifter och -processer**.
+Tjänstens huvudnamn är en autentiseringsmetod som kan användas för att ge Azure AD-program åtkomst till Power BI-tjänstinnehåll och API:er.
 
-När du arbetar med Power BI Embedded finns det fördelar när du använder tjänstens huvudnamn. En huvudsaklig fördel är att du inte behöver ett huvudkonto (Power BI Pro-licens som bara är ett användarnamn och lösenord för inloggning) för autentisering i programmet. Tjänstens huvudnamn använder ett program-ID och en apphemlighet för att autentisera programmet.
+När du skapar en Azure Active Directory-app (Azure AD) skapas ett [huvudobjekt för tjänsten](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object). Huvudobjektet för tjänsten, som också är känt som *tjänstens huvudnamn*, gör att Azure AD kan autentisera din app. Efter autentisering kan appen komma åt Azure AD-klientens resurser.
 
-När du arbetar med att automatisera Power BI-uppgifter kan du även skapa skript för hur du bearbetar och hanterar tjänsthuvudnamn för skalanpassning.
+För att autentisera använder tjänstens huvudnamn Azure AD-appens *program-ID* och något av följande:
+* Apphemlighet
+* Certifikat
 
-## <a name="application-and-service-principal-relationship"></a>Relation mellan program och tjänstens huvudnamn
+I den här artikeln beskrivs autentisering med tjänstens huvudnamn med *program-ID* och *apphemlighet*. Information om hur du autentiserar med ett huvudnamn för tjänsten med ett certifikat finns i [certifikat autentisering för Power BI]().
 
-För att få åtkomst till resurser som skyddar en Azure AD-klientorganisation representerar entiteten som kräver åtkomst ett säkerhetsobjekt. Den här åtgärden gäller för båda användare (användarens huvudnamn) och program (tjänstens huvudnamn).
+## <a name="method"></a>Metod
 
-Säkerhetsobjektet definierar åtkomstprincipen och behörigheterna för användare och program i Azure AD-klientorganisationen. Åtkomstprincipen aktiverar kärnfunktioner som autentisering av användare och program vid inloggning och auktorisering vid resursåtkomst. Mer information finns i [Application and service principal in Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals) (Program och tjänstens huvudnamn i Azure Active Directory (AAD)).
+Följ dessa steg om du vill använda tjänstens huvudnamn och ett program-ID med inbäddad analys:
 
-När du registrerar ett Azure AD-program i Azure-portalen skapas två objekt i Azure AD-klientorganisationen:
+1. Skapa en [Azure AD-app](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-application-management).
 
-* Ett [programobjekt](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals#application-object)
-* Ett [objekt för tjänstens huvudnamn](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object)
+    1. Skapa Azure AD-appens hemlighet.
+    
+    2. Hämta appens *program-ID* och *apphemlighet*.
 
-Tänk dig programobjektet som den *globala* representationen av programmet för användning i alla klientorganisationer och objektet för tjänstens huvudnamn som den *lokala* representationen för användning i en specifik klientorganisation.
+    >[!NOTE]
+    >De här stegen beskrivs i **steg 1**. Mer information om hur du skapar en Azure AD-app finns i artikeln [Skapa en Azure AD-App](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal).
 
-Programobjektet fungerar som mallen som vanliga och standardinställda egenskaper *härleds* för användning när motsvarande objekt för tjänstens huvudnamn skapas.
+2. Skapa en Azure AD-säkerhetsgrupp.
 
-Ett tjänsthuvudnamn krävs per klientorganisation där programmet används – så att det kan upprätta en identitet för inloggning och åtkomst till resurser som skyddas av klientorganisationen. Ett program för enskild klient har bara ett tjänsthuvudnamn (i dess startklientorganisation), som skapas och godkänns vid programregistrering.
+3. Aktivera Power BI-tjänstens administratörsinställningar.
 
-## <a name="service-principal-with-power-bi-embedded"></a>Tjänstens huvudnamn med Power BI Embedded
+4. Lägg till ett tjänsthuvudnamn i din arbetsyta.
 
-Med tjänstens huvudnamn kan du maskera huvudkontots information i programmet genom att använda ett program-ID och en apphemlighet. Du behöver inte längre hårdkoda ett huvudkonto i programmet för autentisering.
+5. Bädda in innehållet.
 
-Eftersom **Power BI-API:er** och **Power BI .NET SDK** nu stöder anrop med tjänstens huvudnamn kan du använda [Power BI REST-API:er](https://docs.microsoft.com/rest/api/power-bi/) med tjänstens huvudnamn. Du kan till exempel göra ändringar av arbetsytor, som att skapa arbetsytor, lägga till och ta bort användare från arbetsytor och importera innehåll till arbetsytor.
+> [!IMPORTANT]
+> Om du aktiverar tjänstens huvudnamn för användning med Power BI gäller inte längre programmets AD-behörigheter. Programmets behörigheter hanteras då via Power BI-administrationsportalen.
 
-Du kan bara använda tjänstens huvudnamn om dina Power BI-artefakter lagras på den [nya Power BI-arbetsytan](../../service-create-the-new-workspaces.md).
+## <a name="step-1---create-an-azure-ad-app"></a>Steg 1 – Skapa en Azure AD-app
 
-## <a name="service-principal-vs-master-account"></a>Tjänstens huvudnamn jämfört med huvudkonto
+Skapa en Azure AD-app med någon av följande metoder:
+* Skapa appen i [Microsoft Azure-portalen](https://ms.portal.azure.com/#allservices)
+* Skapa appen med hjälp av [PowerShell](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-3.6.1).
 
-Det finns skillnader mellan att använda tjänstens huvudnamn och ett standardhuvudkonto (Power BI Pro-licens) för autentisering. I tabellen nedan visas några skillnader.
+### <a name="creating-an-azure-ad-app-in-the-microsoft-azure-portal"></a>Skapa en Azure AD-app i Microsoft Azure-portalen
 
-| Funktion | Huvudanvändarkonto <br> (Power BI Pro-licens) | Tjänstens huvudnamn <br> (appspecifik token) |
-|------------------------------------------------------|---------------------|-------------------|
-| Kan logga in på Power BI-tjänsten  | Ja | Nej |
-| Aktiverad i Power BI-administratörsportalen | Nej | Ja |
-| [Fungerar med arbetsytor (v1)](../../service-create-workspaces.md) | Ja | Nej |
-| [Fungerar med de nya arbetsytorna (v2)](../../service-create-the-new-workspaces.md) | Ja | Ja |
-| Måste vara arbetsyteadministratör om de används med Power BI Embedded | Ja | Ja |
-| Kan använda Power BI REST-API:er | Ja | Ja |
-| Måste ha en global administratör för att skapa | Ja | Nej |
-| Kan installera och hantera en lokal datagateway | Ja | Nej |
+1. Logga in på [Microsoft Azure](https://ms.portal.azure.com/#allservices).
 
-## <a name="get-started-with-a-service-principal"></a>Kom igång med ett tjänsthuvudnamn
+2. Sök efter **Appregistreringar** och klicka på länken **Appregistreringar**.
 
-Till skillnad från traditionell användning av ett huvudkonto kräver användning av tjänstens huvudnamn (appspecifik token) några olika delar som ska konfigureras. Om du vill komma igång med tjänstens huvudnamn (appspecifik token) måste du konfigurera rätt miljö.
+    ![Azure-appregistrering](media/embed-service-principal/azure-app-registration.png)
 
-1. [Registrera ett webbprogram på serversidan](register-app.md) i Azure Active Directory (AAD) för användning med Power BI. När du har registrerat programmet kan du registrera ett program-ID, en apphemlighet och objekt-ID för tjänstens huvudnamn för åtkomst till ditt Power BI-innehåll. Du kan skapa ett tjänsthuvudnamn med [PowerShell](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-1.1.0).
+3. Klicka **Ny registrering**.
 
-    Nedan är ett exempelskript för att skapa ett nytt Azure Active Directory-program.
+    ![ny registrering](media/embed-service-principal/new-registration.png)
 
-    ```powershell
-    # The app id - $app.appid
-    # The service principal object id - $sp.objectId
-    # The app key - $key.value
+4. Fyll i nödvändig information:
+    * **Namn** – Ange ett namn för ditt program
+    * **Kontotyper som stöds** – Välj kontotyper som stöds
+    * (Valfritt) **Omdirigerings-URI** – ange en URI om det behövs
 
-    # Sign in as a user that is allowed to create an app.
-    Connect-AzureAD
+5. Klicka på **Registrera**.
 
-    # Create a new AAD web application
-    $app = New-AzureADApplication -DisplayName "testApp1" -Homepage "https://localhost:44322" -ReplyUrls "https://localhost:44322"
+6. Efter registreringen är *Program-ID* tillgängligt på fliken **Översikt**. Kopiera och spara *Program-ID* för senare användning.
 
-    # Creates a service principal
-    $sp = New-AzureADServicePrincipal -AppId $app.AppId
+    ![program-ID](media/embed-service-principal/application-id.png)
 
-    # Get the service principal key.
-    $key = New-AzureADServicePrincipalPasswordCredential -ObjectId $sp.ObjectId
-    ```
+7. Klicka på fliken **Certifikat och hemligheter**.
 
-   > [!Important]
-   > Om du aktiverar tjänstens huvudnamn för användning med Power BI gäller inte längre programmets AD-behörigheter. Programmets behörigheter hanteras då via Power BI-administrationsportalen.
+     ![program-ID](media/embed-service-principal/certificates-and-secrets.png)
 
-2.  **Rekommenderat** – Skapa en [säkerhetsgrupp i Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals) och lägg till det program du skapade i den säkerhetsgruppen. Du kan skapa en AAD-säkerhetsgrupp med [PowerShell](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-1.1.0).
+8. Klicka på **Ny klienthemlighet**
 
-    Nedan är ett exempelskript för att skapa en ny säkerhetsgrupp och lägga till programmet i den säkerhetsgruppen.
+    ![ny klienthemlighet](media/embed-service-principal/new-client-secret.png)
 
-    ```powershell
-    # Required to sign in as a tenant admin
-    Connect-AzureAD
+9. I fönstret *Lägg till en klienthemlighet* anger du en beskrivning och när du vill att klienthemligheten ska upphöra att gälla. Klicka sedan på **Lägg till**.
 
-    # Create an AAD security group
-    $group = New-AzureADGroup -DisplayName <Group display name> -SecurityEnabled $true -MailEnabled $false -MailNickName notSet
+10. Kopiera och spara värdet för *Klienthemligheten*.
 
-    # Add the service principal to the group
-    Add-AzureADGroupMember -ObjectId $($group.ObjectId) -RefObjectId $($sp.ObjectId)
-    ```
+    ![värde för klienthemlighet](media/embed-service-principal/client-secret-value.png)
 
-3. Som Power BI-administratör måste du aktivera tjänstens huvudnamn i **Inställningar för utvecklare** i Power BI-administratörsportalen. Lägg till den säkerhetsgrupp som du skapade i Azure AD i det specifika avsnittet för säkerhetsgrupp i **Inställningar för utvecklare**. Du kan även aktivera åtkomst med tjänstens huvudnamn för hela organisationen. I det fallet krävs inte steg 2.
+    >[!NOTE]
+    >När du lämnar det här fönstret döljs värdet för klienthemligheten och du kommer inte att kunna visa eller kopiera det igen.
 
-   > [!Important]
-   > Tjänstens huvudnamn har åtkomst till alla klientorganisationsinställningar som är aktiverade för hela organisationen eller aktiverade för säkerhetsgrupper som har tjänstens huvudnamn som en del av gruppen. För att begränsa tjänstens huvudnamns åtkomst till specifika klientorganisationsinställningar tillåter du endast åtkomst till specifika säkerhetsgrupper, eller skapar en dedikerad säkerhetsgrupp för tjänstens huvudnamn och utesluter den.
+### <a name="creating-an-azure-ad-app-using-powershell"></a>Skapa en Azure AD-app med PowerShell
 
-    ![Administratörsportalen](media/embed-service-principal/admin-portal.png)
+Det här avsnittet innehåller ett exempelskript för att skapa en ny Azure AD-app med hjälp av [PowerShell](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-1.1.0).
 
-4. Konfigurera din [Power BI-miljö](embed-sample-for-customers.md#set-up-your-power-bi-environment).
+```powershell
+# The app ID - $app.appid
+# The service principal object ID - $sp.objectId
+# The app key - $key.value
 
-5. Lägg till tjänstens huvudnamn som **administratör** för den nya arbetsyta du har skapat. Du kan hantera den här uppgiften via [API:erna](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser) eller med Power BI-tjänsten.
+# Sign in as a user that's allowed to create an app
+Connect-AzureAD
 
-    ![Lägga till ett tjänsthuvudnamn som administratör på en arbetsyta](media/embed-service-principal/add-service-principal-in-the-UI.png)
+# Create a new Azure AD web application
+$app = New-AzureADApplication -DisplayName "testApp1" -Homepage "https://localhost:44322" -ReplyUrls "https://localhost:44322"
 
-6. Välj nu att bädda in ditt innehåll med ett exempelprogram eller i ditt program.
+# Creates a service principal
+$sp = New-AzureADServicePrincipal -AppId $app.AppId
 
-    * [Bädda in innehåll med exempelprogrammet](embed-sample-for-customers.md#embed-content-using-the-sample-application)
-    * [Bädda in innehåll i programmet](embed-sample-for-customers.md#embed-content-within-your-application)
+# Get the service principal key
+$key = New-AzureADServicePrincipalPasswordCredential -ObjectId $sp.ObjectId
+```
 
-7. Nu är du redo att [flytta till produktion](embed-sample-for-customers.md#move-to-production).
+## <a name="step-2---create-an-azure-ad-security-group"></a>Steg 2 – Skapa en Azure AD-säkerhetsgrupp
 
-## <a name="migrate-to-service-principal"></a>Migrera till tjänstens huvudnamn
+Tjänstens huvudnamn har inte åtkomst till något av dina Power BI-innehåll eller API:er. För att ge tjänstens huvudnamn åtkomst skapar du en säkerhetsgrupp i Azure AD och lägger till tjänstens huvudnamn som du skapade i säkerhetsgruppen.
 
-Du kan migrera till användning av tjänstens huvudnamn om du använder ett huvudkonto med Power BI eller med Power BI Embedded.
+Det finns två sätt att skapa en Azure AD-säkerhetsgrupp:
+* Manuellt (i Azure)
+* Använda PowerShell
 
-Slutför de tre första stegen i avsnittet [Kom igång med tjänstens huvudnamn](#get-started-with-a-service-principal), och när du är klar följer du informationen nedan.
+### <a name="create-a-security-group-manually"></a>Skapa en säkerhetsgrupp manuellt
 
-Om du redan använder de [nya arbetsytorna](../../service-create-the-new-workspaces.md) i Power BI lägger du sedan till tjänstens huvudnamn som **administratör** för arbetsytorna med dina Power BI-artefakter. Men om du använder de [traditionella arbetsytorna](../../service-create-workspaces.md) kopierar eller flyttar du dina Power BI-artefakter och -resurser till de nya arbetsytorna och lägger sedan till tjänstens huvudnamn som **administratör** för de arbetsytorna.
+Om du vill skapa en Azure-säkerhetsgrupp manuellt följer du anvisningarna i artikeln [Skapa en basgrupp och lägga till medlemmar med hjälp av Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal). 
 
-Det finns ingen funktion i användargränssnittet för att flytta Power BI-artefakter och -resurser från en arbetsyta till en annan, så du måste använda [API:er](https://powerbi.microsoft.com/pt-br/blog/duplicate-workspaces-using-the-power-bi-rest-apis-a-step-by-step-tutorial/) för att utföra den här uppgiften. När du använder API:erna med tjänstens huvudnamn måste du ha objekt-ID:t för tjänstens huvudnamn.
+### <a name="create-a-security-group-using-powershell"></a>Skapa en säkerhetsgrupp med PowerShell
 
-### <a name="how-to-get-the-service-principal-object-id"></a>Så här får du objekt-ID för tjänstens huvudnamn
+Nedan är ett exempelskript för att skapa en ny säkerhetsgrupp och lägga till programmet i den säkerhetsgruppen.
 
-När du ska tilldela ett tjänsthuvudnamn till en ny arbetsyta använder du [REST-API:erna för Power BI](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser). För att referera ett tjänsthuvudnamn för åtgärder eller för att göra ändringar använder du **objekt-ID för tjänstens huvudnamn** – till exempel tillämpa en tjänsthuvudnamn som administratör för en arbetsyta.
+>[!NOTE]
+>Om du vill aktivera åtkomst med tjänstens huvudnamn för hela organisationen kan du hoppa över det här steget.
 
-Nedan beskrivs hur du hämtar objekt-ID för tjänstens huvudnamn från Azure-portalen.
+```powershell
+# Required to sign in as a tenant admin
+Connect-AzureAD
 
-1. Skapa en ny appregistrering i Azure-portalen.  
+# Create an Azure AD security group
+$group = New-AzureADGroup -DisplayName <Group display name> -SecurityEnabled $true -MailEnabled $false -MailNickName notSet
 
-2. Därefter väljer du, under **Hanterat program i den lokala katalogen**, namnet på programmet du har skapat.
+# Add the service principal to the group
+Add-AzureADGroupMember -ObjectId $($group.ObjectId) -RefObjectId $($sp.ObjectId)
+```
 
-   ![Hanterat program i den lokala katalogen](media/embed-service-principal/managed-application-in-local-directory.png)
+## <a name="step-3---enable-the-power-bi-service-admin-settings"></a>Steg 3 –Aktivera Power BI-tjänstens administratörsinställningar
 
-    > [!NOTE]
-    > Objekt-ID:t i bilden ovan är inte det som används med tjänstens huvudnamn.
+För att en Azure AD-App ska kunna komma åt Power BI-innehåll och API:er måste en Power BI-administratör aktivera åtkomst till tjänstens huvudnamn i administratörsportalen för Power BI.
 
-3. Välj **Egenskaper** om du vill se objekt-ID:t.
+Lägg till den säkerhetsgrupp som du skapade i Azure AD i det specifika området för säkerhetsgrupp i **Inställningar för utvecklare**.
 
-    ![Egenskaper för objekt-ID för tjänstens huvudnamn](media/embed-service-principal/service-principal-object-id-properties.png)
+>[!IMPORTANT]
+>Tjänstens huvudnamn har åtkomst till alla klientinställningar som de är aktiverade för. Beroende på dina administratörsinställningar inkluderar detta vissa säkerhetsgrupper eller hela organisationen.
+>
+>Om du vill begränsa åtkomsten till tjänstens huvudnamn till särskilda klientinställningar ger du åtkomst till vissa säkerhetsgrupper. Du kan också skapa en dedikerad säkerhetsgrupp för tjänstens huvudnamn och undanta den från önskade klientinställningar.
 
-Nedan är ett exempelskript för att hämta objekt-ID för tjänstens huvudnamn med PowerShell.
+![Administratörsportalen](media/embed-service-principal/admin-portal.png)
 
-   ```powershell
-   Get-AzureADServicePrincipal -Filter "DisplayName eq '<application name>'"
-   ```
+## <a name="step-4---add-the-service-principal-as-an-admin-to-your-workspace"></a>Steg 4 – Lägg till tjänstens huvudnamn som administratör för din arbetsyta
+
+Om du vill aktivera åtkomstartefakter för Azure AD-appen, till exempel rapporter, instrumentpaneler och datauppsättningar i Power BI-tjänsten, lägger du till entiteten för tjänstens huvudnamn som medlem eller administratör på din arbetsyta.
+
+>[!NOTE]
+>Det här avsnittet innehåller gränssnittsanvisningar. Du kan också lägga till ett tjänsthuvudnamn i en arbetsyta med hjälp av [Grupper – Lägg till API för gruppanvändare](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser).
+
+1. Bläddra till den arbetsyta som du vill aktivera åtkomst för och välj **Åtkomst till arbetsytan** på menyn **Mer**.
+
+    ![Arbetsyteinställningar](media/embed-service-principal/workspace-access.png)
+
+2. Lägg till tjänstens huvudnamn som **Administratör** eller **Medlem** på arbetsytan.
+
+    ![Administratör för arbetsytan](media/embed-service-principal/add-service-principal-in-the-UI.png)
+
+## <a name="step-5---embed-your-content"></a>Steg 5: Bädda in innehåll
+
+Du kan bädda in ditt innehåll med ett exempelprogram eller i ditt program.
+
+* [Bädda in innehåll med exempelprogrammet](embed-sample-for-customers.md#embed-content-using-the-sample-application)
+* [Bädda in innehåll i programmet](embed-sample-for-customers.md#embed-content-within-your-application)
+
+När ditt innehåll hasr bäddats in kan du [övergå till produktion](embed-sample-for-customers.md#move-to-production).
 
 ## <a name="considerations-and-limitations"></a>Överväganden och begränsningar
 
@@ -178,7 +202,8 @@ Nedan är ett exempelskript för att hämta objekt-ID för tjänstens huvudnamn 
 
 ## <a name="next-steps"></a>Nästa steg
 
-* [Registrera en app](register-app.md)
 * [Power BI Embedded för dina kunder](embed-sample-for-customers.md)
-* [Objekt för program och tjänstens huvudnamn i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals)
+
 * [Säkerhet på radnivå med hjälp av lokal datagateway med tjänstens huvudnamn](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal)
+
+* [Bädda in Power BI innehåll med tjänstens huvudnamn och certifikat]()

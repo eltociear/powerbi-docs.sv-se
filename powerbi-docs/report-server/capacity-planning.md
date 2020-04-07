@@ -8,12 +8,12 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 3/5/2018
 ms.author: parshah
-ms.openlocfilehash: ecb4f9540651b52f28626f8baa88854ff133b9d0
-ms.sourcegitcommit: 743167a911991d19019fef16a6c582212f6a9229
+ms.openlocfilehash: 8b30089fe04c832734bd418cc58fabb7b574a082
+ms.sourcegitcommit: dc18209dccb6e2097a92d87729b72ac950627473
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78402001"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80361774"
 ---
 # <a name="capacity-planning-guidance-for-power-bi-report-server"></a>Vägledning för kapacitetsplanering för Power BI-rapportserver
 Power BI Report Server är en rapporteringslösning som för företag och BI som kunderna kan använda och distribuera lokalt, bakom brandväggen. Den kombinerar stödet för interaktiva rapporter hos Power BI Desktop med den lokala serverplattformen för SQL Server Reporting Services. Med intensiv och växande användning av analys och rapportering i företag, kan det vara en utmaning att budgetera maskinvaruinfrastrukturen och de programvarulicenser som krävs för att skala upp till en företagsanvändarbas. Det här dokumentet ger vägledning om kapacitetsplanering för rapportservern för Power BI genom att dela resultatet av ett flertal belastningstestkörningar av olika arbetsbelastningar mot en rapportserver. Medan olika organisationers rapporter, frågor och användningsmönster varierar mycket, så utgör de resultat som visas i det här dokumentet, tillsammans med faktiska tester och en detaljerad beskrivning av hur de utfördes, en referenspunkt för vem som helst under det inledande stadiet av planeringsprocessens inför distributionen av Power BI-rapportservern.
@@ -116,7 +116,7 @@ Resultaten i den här artikeln har härletts från att köra en specifik uppsät
 ### <a name="1-topology"></a>1 Topologi
 **1.1 Topologi för Power BI-rapportservern**
 
-För att endast fokusera på Power BI-rapportserverns beteende under olika konfigurationer åtgärdades VM-konfigurationen för varje typ av dator (förutom för den dator som är värd för Power BI-rapportservern). Varje dator har etablerats enligt andra generationens (v2) D-seriedatorer med premium-lagringsdiskar. Du hittar detaljerad information om varje VM-storlek under avsnittet ”Generell användning” på https://azure.microsoft.com/pricing/details/virtual-machines/windows/.
+För att endast fokusera på Power BI-rapportserverns beteende under olika konfigurationer åtgärdades VM-konfigurationen för varje typ av dator (förutom för den dator som är värd för Power BI-rapportservern). Varje dator har etablerats enligt andra generationens (v2) D-seriedatorer med premium-lagringsdiskar. Du hittar detaljerad information om varje VM-storlek under [avsnittet ”Allmän användning”](https://azure.microsoft.com/pricing/details/virtual-machines/windows/).
 
 | Virtuell datortyp | Processor | Minne | Azure VM-storlek |
 | --- | --- | --- | --- |
@@ -126,7 +126,7 @@ För att endast fokusera på Power BI-rapportserverns beteende under olika konfi
 
 **1.2 Power BI-rapportserver, konfiguration av virtuell dator** 
 
-Olika konfigurationer för processor och minnet användes för den virtuella datorn som är värd för Power BI-rapportservern. Till skillnad från andra virtuella datorer har varje dator etablerats enligt tredje generationens (v3) D-seriedatorer med premium-lagringsdiskar. Du hittar detaljerad information om denna VM-storlek under avsnittet ”Generell användning” på https://azure.microsoft.com/pricing/details/virtual-machines/windows/.
+Olika konfigurationer för processor och minnet användes för den virtuella datorn som är värd för Power BI-rapportservern. Till skillnad från andra virtuella datorer har varje dator etablerats enligt tredje generationens (v3) D-seriedatorer med premium-lagringsdiskar. Du hittar detaljerad information om denna VM-storlek under [avsnittet ”Allmän användning”](https://azure.microsoft.com/pricing/details/virtual-machines/windows/.)
 
 | Virtuell dator | Processor | Minne | Azure VM-storlek |
 | --- | --- | --- | --- |

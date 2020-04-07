@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 01/30/2020
-ms.openlocfilehash: ec299ceb5862be3f1e121e0e7d67eca6447f2da6
-ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
+ms.openlocfilehash: b4ed632d6106fa552cebf9837ba238bdc7a4d3f1
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80113748"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80404839"
 ---
 # <a name="supported-data-sources-for-power-bi-paginated-reports"></a>Datakällor som stöds för sidnumrerade Power BI-rapporter
 
@@ -32,7 +32,7 @@ Sidnumrerade rapporter har inbyggt stöd för följande lista av datakällor:
 | Premium Power BI-datamängd (XMLA) | Enkel inloggning |   |
 | Ange data | Saknas | Data bäddas in i rapporten. |
 
-Förutom Azure SQL Database är alla data källor redo att användas när du har laddat upp rapporten till Power BI-tjänsten. Datakällorna använder som standard enkel inloggning (SSO) där det är tillämpligt. För Azure Analysis Services kan du ändra autentiseringstypen till OAuth2.
+Förutom Azure SQL Database är alla data källor redo att användas när du har laddat upp rapporten till Power BI-tjänsten. Datakällorna använder som standard enkel inloggning (SSO) där det är tillämpligt. För Azure Analysis Services kan du ändra autentiseringstypen till OAuth2. Men när autentiseringstypen för en specifik datakälla har ändrats till OAuth2 går det inte att återgå till att använda SSO.  Dessutom gäller den här ändringen alla rapporter som använder datakällan på alla arbetsytor för en specifik klient.  Säkerhet på radnivå i sidnumrerade rapporter fungerar inte om användarna väljer SSO för autentiseringstyp.
 
 För Azure SQL Database-datakällor behöver du ange mer information, enligt beskrivningen i avsnittet [Azure SQL Database-autentisering](#azure-sql-database-authentication).
 

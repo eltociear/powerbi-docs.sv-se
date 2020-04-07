@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 03/13/2020
+ms.date: 03/31/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 3812f16489d304912ec9574352897e1effb29d4a
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.openlocfilehash: 54c3622b0a4dd6c690c2f22a0b93aed39e9d2799
+ms.sourcegitcommit: 3c51431d85793b71f378c4b0b74483dfdd8411b3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79201411"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80464625"
 ---
 # <a name="using-enhanced-dataset-metadata-preview"></a>Använda utökade datamängdsmetadata (förhandsversion)
 
@@ -24,6 +24,8 @@ I och med att funktionen för **förbättrade datamängdsmetadata** släpps tas 
 
 
 Funktionen för **förbättrade datamängdsmetadata** är strategisk och grundläggande, eftersom framtida Power BI funktioner kommer att skapas utifrån sina metadata. Några ytterligare funktioner som drar nytta av förbättrade datamängdsmetadata är [XMLA läs/skriv](https://docs.microsoft.com/power-platform-release-plan/2019wave2/business-intelligence/xmla-readwrite) för hantering av Power BI-datauppsättningar och migrering av Analysis Services-arbetsbelastningar till Power BI för att dra nytta av nästa generations funktioner.
+
+
 
 ## <a name="enable-enhanced-dataset-metadata"></a>Aktivera utökade datamängdsmetadata
 
@@ -36,6 +38,9 @@ Du kan bli ombedd att starta om Power BI Desktop.
 ![Uppmaning att starta om](media/desktop-enhanced-dataset-metadata/enhanced-dataset-metadata-02.png)
 
 När förhandsfunktionen har aktiverats försöker Power BI Desktop uppgradera PBIX- och PBIT-filer som använder det tidigare metadataformatet. 
+
+> [!IMPORTANT]
+> Om du aktiverar funktionen **Utökade datauppsättningens metadata** uppgraderas rapporterna. Detta kan inte ångras. Alla Power BI rapporter som läses in eller skapas med Power BI Desktop när **utökade metadata för datauppsättningen** har aktiverats konverteras oåterkalleligt till det utökade formatet för datauppsättningen.
 
 ## <a name="considerations-and-limitations"></a>Överväganden och begränsningar
 

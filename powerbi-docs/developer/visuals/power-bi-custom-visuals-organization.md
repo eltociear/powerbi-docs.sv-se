@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 12/11/2018
 LocalizationGroup: Visualizations
-ms.openlocfilehash: ab2aa7f1771c09a7ec725f9cc533717e7daf11a0
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.openlocfilehash: 52ebb1bf049024051846936237d35b202f00d630
+ms.sourcegitcommit: 3c51431d85793b71f378c4b0b74483dfdd8411b3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79383515"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80464573"
 ---
 # <a name="organizational-visuals-in-power-bi"></a>Visuella objekt för organisationer i Power BI
 
@@ -35,7 +35,7 @@ Mer information om hur du använder visuella Power BI-objekt i en organisation i
 Mer information om hur du administrerar, distribuerar och hanterar visuella Power BI-objekt i din organisation finns i följande artikel: [Mer information om distribution och hantering av en organisations visuella Power BI-objekt](https://go.microsoft.com/fwlink/?linkid=866790).
 
 > [!WARNING]
-> Ett anpassat visuellt objekt kan innehålla kod som innebära säkerhets- eller integritetsrisker. Kontrollera att författaren eller källan till alla anpassade visuella objekt är tillförlitlig innan du distribuerar dem till organisationens databas.
+> Ett anpassat visuellt Power BI-objekt som har installerats från en fil kan innehålla kod som innebär säkerhets- och integritetsrisker. Kontrollera att författaren eller källan till den visuella Power BI-objektfilen är tillförlitlig innan du distribuerar dem till organisationens databas.
 
 ## <a name="considerations-and-limitations"></a>Överväganden och begränsningar
 
@@ -45,7 +45,9 @@ Administration:
 
 * Äldre visuella Power BI-objekt (t.ex visuella Power BI-objekt som inte har byggts ovanpå den nya versionens API:er) stöds inte
 
-* Om ett anpassat visuellt objekt tas bort från databasen upphör alla befintliga rapporter som använder det borttagna visuella objektet att återges. Det går inte att ångra borttagningen från databasen. För att tillfälligt inaktivera anpassad visualisering, använder du funktionen ”inaktivera”.
+* Om ett visuellt Power BI-objekt från ApSource eller en fil tas bort från databasen upphör alla befintliga rapporter som använder det borttagna visuella objektet att återges. Det går inte att ångra borttagningen från databasen. Om du tillfälligt vill inaktivera ett visuellt Power BI-objekt från ApSource eller en fil använder du funktionen "Inaktivera".
+
+* Visuella Power BI-objekt på organisationsnivå stöds inte i Power BI Report Server.
 
 Slutanvändare:
 

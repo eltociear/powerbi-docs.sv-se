@@ -1,37 +1,37 @@
 ---
-title: Ansluta till exemplen i Power BI-tjänsten
-description: Lär dig att installera och utforska exemplen i Power BI-tjänsten.
+title: Läs mer om exempel på detaljhandelsanalys
+description: Lär dig att installera och utforska exemplet på detaljhandelsanalys i Power BI-tjänsten och i Power BI Desktop.
 author: maggiesMSFT
 ms.reviewer: amac
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/19/2019
+ms.date: 03/27/2020
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: c1fbd57f1c92c9900178eb212a1369d25fdf838a
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: f18ec650167b7872cb332bc9ccd606f7ea1f7500
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75762173"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80404593"
 ---
-#  <a name="import-and-open-sample-packs-for-power-bi"></a>Importera och öppna exempelpaket för Power BI
+# <a name="explore-the-retail-analysis-sample"></a>Läs mer om exempel på detaljhandelsanalys
 
 Den här självstudien visar hur du gör följande: 
-- Importera ett exempelinnehållspaket, lägga till det i Power BI-tjänsten och öppna innehållet. Ett *innehållspaket* är en typ av exempel där datauppsättningen har paketerats med en instrumentpanel och en rapport. 
-- Öppna en PBIX-exempelfil i Power BI Desktop.
+- Importera exempelinnehållspaketet detalj, lägga till det i Power BI-tjänsten och öppna innehållet. Ett *innehållspaket* är en typ av exempel där datauppsättningen har paketerats med en instrumentpanel och en rapport. 
+- Öppna .pbix-filen Exempel på detaljhandelsanalys i Power BI Desktop.
 
 Om du vill ha mer bakgrundsinformation kan du läsa [Exempeldatamängder för Power BI](sample-datasets.md). I den här artikeln får du lära dig allt om exemplen: hur du hämtar dem, var du sparar dem, hur du använder dem och några av de budskap som varje exempel kan förmedla. 
 
 ## <a name="prerequisites"></a>Förutsättningar
-Exemplen finns tillgängliga för Power BI-tjänsten och Power BI Desktop. Om du vill följa med kommer vi att använda exemplet på detaljhandelsanalysen.
+Exemplen finns tillgängliga för Power BI-tjänsten och Power BI Desktop. Om du vill följa med kan du hämta Exempel på detaljhandelsanalys.
 
 Innehållspaketet för *Exempel på detaljhandelsanalys* som används i de här självstudierna består av en instrumentpanel, en rapport och en datauppsättning.
 Om du vill bekanta dig med det här specifika innehållspaketet och dess scenario kan du gå igenom [Exempel på detaljhandelsanalys för Power BI: Ta en rundtur](sample-retail-analysis.md) innan du börjar.
 
-## <a name="samples-in-the-power-bi-service"></a>Exempel i Power BI-tjänsten
+## <a name="import-the-sample-in-the-power-bi-service"></a>Importera exemplet i Power BI-tjänsten
 
 1. Öppna Power BI-tjänsten (app.powerbi.com), logga in och öppna den arbetsyta där du vill spara exemplet. 
 
@@ -94,7 +94,7 @@ Utforska nu instrumentpanelen, datauppsättningen och rapporten på egen hand. D
      
     ![Insiktsrapport](media/sample-tutorial-connect-to-the-samples/power-bi-insights.png)
 
-## <a name="samples-in-power-bi-desktop"></a>Exempel i Power BI Desktop 
+## <a name="download-the-sample-in-power-bi-desktop"></a>Hämta exemplet i Power BI Desktop 
 När du först öppnar .pbix-exempelfilen i Power BI Desktop visas den i rapportvyn, där du kan utforska, skapa och ändra valfritt antal rapportsidor med visualiseringar. Rapportvyn ger nästan samma designupplevelse som rapportens redigeringsvy i Power BI-tjänsten. Du kan flytta runt visuella objekt, kopiera och klistra in, sammanfoga och så vidare. 
 
 Till skillnad från redigering av en rapport i Power BI-tjänsten kan du i Power BI Desktop även arbeta med dina frågor och modellera dina data så att de ger de bästa insikterna i rapporterna. Du kan sedan spara Power BI Desktop-filen var du vill, oavsett om det är en lokal hårddisk eller till molnet.

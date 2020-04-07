@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 08/07/2019
 ms.author: maggies
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 986f35cd1c4f612b16374107487d0ca20c9c607e
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: a3c87a700df1c35596b6520cc64d9b580ccb74eb
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73871256"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80403415"
 ---
 # <a name="tutorial-connect-to-a-github-repo-with-power-bi"></a>Självstudie: Ansluta till en GitHub-lagringsplats med Power BI
 I den här självstudien ska du ansluta till verkliga data i GitHub-tjänsten med Power BI, så skapar Power BI automatiskt instrumentpaneler och rapporter. Du ansluter till den offentliga lagringsplatsen (även kallad *databas*) för Power BI-innehåll och hittar svar på frågor som: Hur många personer bidrar till det offentliga Power BI-innehållet? Vem bidrar med mest innehåll? Vilken dag i veckan har flest bidrag? Och andra frågor. 
@@ -43,7 +43,7 @@ I den här kursen behöver du ett GitHub-konto om du inte redan har ett.
 
 
 ## <a name="how-to-connect"></a>Så här ansluter du
-1. Logga in till Power BI-tjänsten (https://app.powerbi.com). 
+1. Logga in på Power BI-tjänsten (`https://app.powerbi.com`. 
 2. Välj **Appar** i navigeringsfönstret och sedan **Hämta appar**.
    
    ![Hämta appar i Power BI](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial.png) 
@@ -64,7 +64,7 @@ I den här kursen behöver du ett GitHub-konto om du inte redan har ett.
 
 5. Ange autentiseringsuppgifterna för GitHub som du skapade. Power BI kan hoppa över det här steget om du redan är inloggad i GitHub i din webbläsare. 
 
-6. Som **Autentiseringsmetod** låter du **oAuth2** vara markerat \> **Logga in**.
+6. Som **Autentiseringsmetod** låter du **oAuth2** vara markerat \>**Logga in**.
 
 7. Följ autentiseringsskärmarna i GitHub. Ge Power BI behörighet till GitHub-data.
    

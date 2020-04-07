@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 03/12/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 8bb95da5383eedac57fb705f697a8481e934e379
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.openlocfilehash: ccc14cb041c5131d2cb06a8ad362b7054bcde857
+ms.sourcegitcommit: 3c51431d85793b71f378c4b0b74483dfdd8411b3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79202032"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80464701"
 ---
 # <a name="restart-a-power-bi-premium-capacity"></a>Starta om en Power BI Premium-kapacitet
 
@@ -40,7 +40,7 @@ Starta om en kapacitet med hjälp av följande steg.
 
 1. I Power BI-administrationsportalen, på fliken **Kapacitetsinställningar**, går du till din kapacitet. 
 
-1. Lägg till **CapacityRestart**-*funktionsflaggan* i kapacitets-URL:en: https://app.powerbi.com/admin-portal/capacities/<YourCapacityId>?capacityRestartButton=true.
+1. Lägg till **CapacityRestart**-*funktionsflaggan* i kapacitets-URL:en: `https://app.powerbi.com/admin-portal/capacities/<YourCapacityId>?capacityRestartButton=true`.
 
 1. Under **Avancerade inställningar** > **KAPACITETSOMSTART** väljer du **Starta om kapaciteten**.
 

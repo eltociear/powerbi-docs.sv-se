@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/19/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 156b00c7f7287f12397afea422a38f3870d6c399
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 51c9b8a570abf2686abe9b26a4d9e111e8ef022a
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73858412"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80404636"
 ---
 # <a name="supplier-quality-analysis-sample-for-power-bi-take-a-tour"></a>Exempel på leverantörskvalitetsanalys för Power BI: Ta en rundtur
 
@@ -62,7 +62,7 @@ Du kan även ladda ned Exempel på leverantörskvalitetsanalys som en [.pbix-fil
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Hämta Excel-arbetsboken för det här exemplet
 
-Om du vill visa i datakällan för det här exemplet är det även tillgängligt som en [Excel-arbetsbok](https://go.microsoft.com/fwlink/?LinkId=529779). Arbetsboken innehåller Power View-blad som du kan visa och ändra. Om du vill se rådata aktiverar du dataanalystilläggen och väljer **Power Pivot > Hantera**. Aktivering av tilläggen för Power View och Power Pivot beskrivs i avsnittet om att [titta på Excel-exemplen inuti själva Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
+Om du vill visa i datakällan för det här exemplet är det även tillgängligt som en [Excel-arbetsbok](https://go.microsoft.com/fwlink/?LinkId=529779). Arbetsboken innehåller Power View-blad som du kan visa och ändra. Om du vill se rådata aktiverar du dataanalystilläggen och väljer **Power Pivot > Hantera**. Aktivering av tilläggen för Power View och Power Pivot beskrivs i avsnittet om att [Titta på Excel-exemplen inuti Excel](sample-datasets.md#explore-excel-samples-inside-excel).
 
 ## <a name="downtime-caused-by-defective-materials"></a>Stilleståndstid som orsakas av defekta material
 Nu ska vi analysera den stilleståndstid som orsakas av defekta material och se vilka leverantörer som är ansvariga.  
@@ -163,7 +163,7 @@ Nu ska vi titta på en annan instrumentpanels panel som rör det totala antalet 
 
    ![Fråga för Frågor och svar: Total nedtid i minuter per månad och år som ett linjediagram](media/sample-supplier-quality/supplier15.png)
 
-   Förutom en tydlig ökning av nedtiden i minuter under juni och oktober resulterade det större antalet defekter inte i någon väsentlig ökning av nedtiden. Detta resultat visar att vi hanterar defekter bra.  
+   Förutom en tydlig ökning av nedtiden i minuter under juni och oktober resulterade det större antalet defekter inte i någon väsentlig ökning av nedtiden. Det här resultatet visar att vi hanterar problem på rätt sätt.  
 3. Välj fästikonen för att fästa diagrammet på instrumentpanelen ![Fästikon](media/sample-supplier-quality/pin.png) ovanför frågerutan.  
 4. Om du vill utforska de avvikande månaderna kontrollerar du nedtiden i minuter under oktober per materialtyp, anläggningsplats, kategori och så vidare genom att ställa frågor som *total nedtid i minuter i oktober per anläggning*. 
 5. Välj **Avsluta Frågor och svar** i det övre vänstra hörnet för att gå tillbaka till instrumentpanelen.

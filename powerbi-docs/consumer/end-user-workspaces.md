@@ -6,22 +6,26 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/05/2020
+ms.date: 03/10/2020
 ms.author: mihart
 LocalizationGroup: Consumers
-ms.openlocfilehash: 0f0957962a761623262268f8c84c338000ba56f2
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.openlocfilehash: 6886bc628add44f94c91b77cada97abf81635e78
+ms.sourcegitcommit: bcc42e938fa28abe433287fecb9abb28c253b6bb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79078989"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80302286"
 ---
 # <a name="collaborate-in-workspaces"></a>Samarbeta på arbetsytor
 
  *Arbetsytor* är platser för samarbete kollegor emellan kring ett speciellt innehåll. Arbetsytor skapas av Power BI-*designers* i syfte att lagra samlingar med instrumentpaneler, rapporter och appar. 
 
+## <a name="types-of-workspaces"></a>Typer av arbetsytor
+Under **Min arbetsyta** lagras allt innehåll som du äger och skapar. Du kan se det som det personliga utvecklingsutrymme eller ett område för ditt eget innehåll. För många Power BI-användare är **Min arbetsyta** tom eftersom de inte skapar nytt innehåll i sin yrkesroll. Användare använder per definition data som skapats av andra till att fatta affärsbeslut. Om det visar sig att du behöver skapa innehåll ska du läsa [Power BI-artiklarna för designers](../create-reports/index.yml) i stället.
 
-<art showing different wss>
+På **apparbetsytan** finns allt innehåll för den aktuella appen. När en *designer* skapar en app sammanställer de allt innehåll som krävs för att appen ska kunna användas. Innehållet kan omfatta instrumentpaneler, rapporter, appar och arbetsböcker. Alla appar har inte dessa tre sorters innehåll. En app kanske bara innehåller en instrumentpanel, en annan tre av varje innehållstyp och någon kan innehålla tjugo rapporter. Det beror helt på vad *designern* tar med i appen. Normalt innehåller dock inte apparbetsytor för *användare* några datamängder.
+
+<!--<art showing different wss> -->
 
 ## <a name="roles-in-the-workspaces"></a>Roller på arbetsytorna
 
@@ -42,3 +46,16 @@ Det kan finnas tillfällen när du får en inbjudan till en arbetsyta utanför o
 ## <a name="next-steps"></a>Nästa steg
 * [Appar i Power BI](end-user-apps.md)    
 * Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+
+
+
+
+
+
+
+
+
+
+
+
+

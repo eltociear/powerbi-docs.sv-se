@@ -7,15 +7,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 04/01/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 281d5b616b58fce4326e6d719502e443c249372a
-ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
+ms.openlocfilehash: 0f01a6da3bb0d829d396861814f71d33ba69f22f
+ms.sourcegitcommit: 6e56d038280efab86521602cbc089b3989dddbd0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80403177"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80550922"
 ---
 # <a name="connect-to-project-online-data-through-power-bi-desktop"></a>Ansluta till Project Online-data via Power BI Desktop
 Du kan ansluta till data i Project Online via Power BI Desktop.
@@ -31,7 +31,10 @@ Du kan ansluta till data i Project Online via Power BI Desktop.
    
    Om adressen till din Project Web App-webbplats liknar *https://\<KlientorganisationensNamn\>.sharepoint.com/sites/pwa* blir den adress som du anger för ditt OData-flöde *https://\<KlientorganisationensNamn\>.sharepoint.com/sites/pwa/\_api/Projectdata*.
    
-   I det här exemplet använder vi `https://contoso.sharepoint.com/sites/pwa/default.aspx`
+   I det här exemplet använder vi:
+
+    `https://contoso.sharepoint.com/sites/pwa/default.aspx`
+
 5. Power BI Desktop ber dig att autentisera med ditt Office 365-konto. Välj organisationskonto och ange dina autentiseringsuppgifter.
    
    ![](media/desktop-project-online-connect-to-data/image.png)

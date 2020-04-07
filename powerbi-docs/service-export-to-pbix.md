@@ -6,20 +6,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/12/2019
+ms.date: 04/01/2020
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: de7a01f70d179237c45205447f564b3833db2156
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 15a4d88ac9de5d50caeb975afa8ad1758246031f
+ms.sourcegitcommit: 6e56d038280efab86521602cbc089b3989dddbd0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73881825"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80551088"
 ---
 # <a name="download-a-report-from-the-power-bi-service-to-power-bi-desktop-preview"></a>Hämta en rapport från Power BI-tjänsten till Power BI Desktop (förhandsversion)
 I Power BI Desktop kan du publicera en rapport (en *.pbix*-fil) från den lokala datorn till Power BI-tjänsten. Power BI-rapporter kan även gå åt det andra hållet: Du kan ladda ned en rapport från Power BI-tjänsten till Power BI Desktop. Filnamnstillägget för en Power BI-rapport är i båda fallen .pbix.
 
-Det finns några begränsningar och saker du bör tänka på, vilket beskrivs längre fram i den här artikeln.
+Det finns några begränsningar och saker du bör tänka på, vilket beskrivs längre fram avsnittet [Överväganden och felsökning](#considerations-and-troubleshooting) i den här artikeln.
 
 ![Listrutan Fil](media/service-export-to-pbix/power-bi-file-export.png)
 
@@ -55,6 +55,7 @@ Det finns några viktiga överväganden och begränsningar att ta hänsyn till v
 * Använd alltid den senaste versionen av Power BI Desktop när du öppnar nedladdade filer. Nedladdade .pbix-filer öppnas kanske inte i inaktuella versioner av Power BI Desktop.
 * Om administratören har stängt av möjligheten att ladda ned data visas den här funktionen inte i Power BI-tjänsten.
 * Datamängder med inkrementell uppdatering kan inte laddas ned till en .pbix-fil.
+* Om du skapar en Power BI-rapport som baseras på en datauppsättning i en arbetsyta och publicerar till en annan arbetsyta kan du och dina användare inte ladda ned den. Nedladdningsfunktionen stöds för närvarande inte i det här scenariot.
 
 ## <a name="next-steps"></a>Nästa steg
 Visa enminutsvideon **Kille i en kub** om den här funktionen:

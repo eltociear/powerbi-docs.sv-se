@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 5b6b8658e4480173c32a591c2fc763a238cfd13a
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: f1e48fb2f20c531f4dc66e86d13b76f54165b81c
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73872697"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80404772"
 ---
 # <a name="add-a-cdm-folder-to-power-bi-as-a-dataflow-preview"></a>Lägga till en CDM-mapp i Power BI som ett dataflöde (förhandsversion)
 
@@ -24,6 +24,7 @@ I Power BI, kan du lägga till CDM-mappar (Common Data Model) som lagras i din o
 
 Det finns några krav som måste uppfyllas för att skapa dataflöden från CDM-mappar och de beskrivs i följande lista:
 
+* En administratör måste länka ADLS Gen2-lagringskontot i Power BI innan det kan användas. Mer information om hur du länkar ett ADLS Gen2-konto till Power BI finns i [Ansluta Azure Data Lake Storage Gen2 för lagring av dataflöde](service-dataflows-connect-azure-data-lake-storage-gen2.md).
 * Möjligheten att skapa dataflöden från CDM-mappar finns *bara* tillgänglig i den [nya arbetsytan](service-create-the-new-workspaces.md). 
 * För att lägga till en CDM-mapp i Power BI krävs det att användaren har [behörighet för CDM-mappen och dess filer](https://go.microsoft.com/fwlink/?linkid=2029121).
 * Du måste läsas beviljas läs- och körbehörighet för alla filer och mappar i CDM-mappen för att lägga till dem i Power BI.
@@ -58,11 +59,11 @@ När du arbetar med behörigheter till ett dataflöde som skapats från en CDM-m
 Följande listor tydliggör hur dataflöden från CDM-mappar fungerar med Power BI.
 
 Power BI Pro-, Premium- och Embedded-arbetsytor:
-* Det går inte att redigera dataflöden från CDM-mappar.
+* Det går inte att redigera dataflöden från CDM-mappar
 * Behörighet att läsa ett dataflöde som skapats från en CDM-mapp hanteras av CDM-mappens ägare och inte av Power BI.
 
 Power BI Desktop:
-* Endast användare som har behörighet för både arbetsytan där dataflödet skapades och CDM-mappen kan få åtkomst till dess data från Power BI-dataflödenas anslutningsapp.
+* Endast användare som har behörighet för både arbetsytan där dataflödet skapades och CDM-mappen kan få åtkomst till dess data från Power BI-dataflödenas anslutningsapp
 
 
 Det finns några ytterligare saker att ta hänsyn till, som beskrivs i följande lista:
@@ -73,11 +74,11 @@ Det finns några ytterligare saker att ta hänsyn till, som beskrivs i följande
 
 **Power BI Desktop**-användare kan inte komma åt dataflöden som är lagrade i Azure Data Lake Storage Gen2-kontot, såvida inte de är ägare av dataflödet eller de uttryckligen har godkänts för detta dataflödes CDM-mapp. Se följande situation:
 
-1.  Anna skapar en ny arbetsyta och konfigurerar den för lagring av dataflöden från en CDM-mapp.
-2.  Ben, som också är medlem i arbetsytan som Anna skapade, vill använda Power BI Desktop och anslutningsappen för dataflöden för att hämta data från det dataflöde som Anna skapade.
-3.  Ben får ett fel eftersom han inte har lagts till som auktoriserad användare i dataflödets CDM-mapp i datasjön.
+1.    Anna skapar en ny arbetsyta och konfigurerar den för lagring av dataflöden från en CDM-mapp.
+2.    Ben, som också är medlem i arbetsytan som Anna skapade, vill använda Power BI Desktop och anslutningsappen för dataflöden för att hämta data från det dataflöde som Anna skapade.
+3.    Ben får ett fel eftersom han inte har lagts till som auktoriserad användare i dataflödets CDM-mapp i datasjön.
 
-    ![Fel vid försök att använda dataflöde](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_08.jpg)
+  ![Fel vid försök att använda dataflöde](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_08.jpg)
 
 För att lösa problemet, måste Ben beviljas läsbehörighet till CDM-mappen och dess filer. Du kan läsa mer om hur du ger åtkomst till CDM-mappen i [den här artikeln](https://go.microsoft.com/fwlink/?linkid=2029121).
 

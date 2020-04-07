@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 11/06/2018
-ms.openlocfilehash: aa916afbf439beb7019bd6f0af30cc56ad903704
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.openlocfilehash: 17742c48d9ac5cb49b6d04fe6fe4674e7f6c7ac9
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79207239"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80404865"
 ---
 # <a name="tutorial-create-a-paginated-report-and-upload-it-to-the-power-bi-service"></a>Självstudie: Skapa en sidnumrerad rapport och ladda upp den till Power BI-tjänsten
 
@@ -286,7 +286,7 @@ Ytterligare en formateringsförbättring innan du publicerar rapporten till Powe
 
 Nu när du har skapat den här sidnumrerade rapporten är det dags att överföra den till Power BI-tjänsten.
 
-1. Välj **Arbetsytor** > **Skapa arbetsyta** i navigeringsfönstret i Power BI-tjänsten (https://app.powerbi.com).
+1. Välj **Arbetsytor** > **Skapa arbetsyta** i navigeringsfönstret i Power BI-tjänsten (`https://app.powerbi.com`).
 
 2. Ge arbetsytan namnet **Azure AW** eller något annat unikt namn. Du är den enda medlemmen för tillfället. 
 

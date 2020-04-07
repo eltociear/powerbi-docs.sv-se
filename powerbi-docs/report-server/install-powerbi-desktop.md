@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 02/13/2020
-ms.openlocfilehash: 74e2c60bfe0d6d494fc1175fb001b4b4b7eb24fa
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.openlocfilehash: dfb6c313e989514da2aa04facd6c6136a0eadc1a
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79381133"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80404185"
 ---
 # <a name="install-power-bi-desktop-optimized-for-power-bi-report-server"></a>Installera Power BI Desktop som har optimerats för Power BI-rapportservern
 
@@ -62,7 +62,7 @@ När du redigerar en Power BI-rapport från Power BI-rapportservern eller skapar
 
 ## <a name="considerations-and-limitations"></a>Överväganden och begränsningar
 
-Power BI-rapporter i Power BI-rapportserver, i Power BI-tjänsten (https://app.powerbi.com) och i Power BI-mobilappen fungerar nästan likadant men några funktioner skiljer sig).
+Power BI-rapporter i Power BI-rapportserver, i Power BI-tjänsten (`https://app.powerbi.com` och i Power BI-mobilappen fungerar nästan likadant men några funktioner skiljer sig).
 
 ### <a name="selecting-a-language"></a>Välja ett språk
 

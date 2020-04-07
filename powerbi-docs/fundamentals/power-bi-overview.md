@@ -8,12 +8,12 @@ ms.topic: overview
 ms.date: 09/04/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 5ad960560ba6c99228ba63ee0041789b9ec6ff7d
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.openlocfilehash: c3218e20274c0607c2bbec86e961685ccd276659
+ms.sourcegitcommit: 9ecd7cadb9ff47f0fc0e400730777cc4dadbd80d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79114986"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80487745"
 ---
 # <a name="what-is-power-bi"></a>Vad är Power BI?
 **Power BI** är en samling programvarutjänster, appar och kopplingar som arbetar tillsammans för att förvandla dina orelaterade datakällor till sammanhängande, visuellt fördjupande och interaktiva insikter. Dina data kan finnas i ett Excel-kalkylblad eller i en samling molnbaserade och lokala hybridinformationslager. Med Power BI kan du enkelt ansluta till dina datakällor, visualisera och upptäcka det som är viktigt och dela resultat med alla du vill.
@@ -44,8 +44,12 @@ Hur du använder Power BI kan ändra enligt vilken funktion eller tjänst i Powe
 Utforska dokument som hör till din roll:
 - Power BI Desktop för [*designers*](../desktop-what-is-desktop.md)
 - Power BI för [*konsumenter*](../consumer/end-user-consumer.md)
-- Power BI för [*utvecklare*](../developer/what-can-you-do.md)
 - Power BI för [*administratörer*](../service-admin-administering-power-bi-in-your-organization.md)
+- Power BI för *utvecklare*
+    * [Inbäddad analys med Power BI](../developer/embedded/embedding.md)
+    * [Vad är Power BI Embedded i Azure?](../developer/embedded/azure-pbie-what-is-power-bi-embedded.md)
+    * [Visuella objekt i Power BI](../developer/visuals/power-bi-custom-visuals.md)
+    * [Vad kan utvecklare göra med Power BI-API?](../developer/automation/overview-of-power-bi-rest-api.md)
 
 ## <a name="the-flow-of-work-in-power-bi"></a>Arbetsflödet i Power BI
 Ett vanligt arbetsflöde i Power BI börjar med att ansluta till datakällor och skapa en rapport i Power BI Desktop. Sedan publicerar du rapporten från Power BI Desktop till Power BI-tjänsten och delar den så att slutanvändarna i Power BI-tjänsten och mobila enheter kan läsa och interagera med den.

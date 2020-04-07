@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 01/15/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 9338bc914c7f4e4afd826bcd3e3452e7c7a3ef35
-ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
+ms.openlocfilehash: 403537f8cd18948c99cc4dffb911009771a8b806
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76040441"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80404737"
 ---
 # <a name="creating-and-using-dataflows-in-power-bi"></a>Skapa och använda dataflöden i Power BI
 
@@ -32,7 +32,7 @@ Det finns tre huvudsakliga steg för att använda ett dataflöde:
 2. Schemalägga uppdateringsfrekvensen för de data du vill ta till ditt dataflöde
 3. Skapa datauppsättningen med hjälp av ditt dataflöde, med hjälp av Power BI Desktop 
 
-I följande avsnitt kommer vi att titta på vart och ett av de här stegen och bekanta oss med de verktyg som finns för att slutföra varje steg. Då sätter vi igång.
+I följande avsnitt kommer vi att titta på vart och ett av de här stegen och bekanta oss med de verktyg som finns för att slutföra varje steg. Nu börjar vi.
 
 ## <a name="creating-a-dataflow"></a>Skapa ett dataflöde
 Om du vill skapa ett dataflöde startar du Power BI-tjänsten i en webbläsare och väljer sedan en **arbetsyta** (dataflöden är inte tillgängliga i *Min arbetsyta* i Power BI-tjänsten) i navigeringsfönstret till vänster, så som visas på följande bild. Du kan också skapa en ny arbetsyta där du kan skapa ditt nya dataflöde. 
@@ -150,9 +150,9 @@ Det kan finnas tillfällen när anslutningen till datakällor för dataflöden s
 
 * **Salesforce-anslutningsprogrammet** – Att använda ett konto för Salesforce-dataflöden leder till ett anslutningsfel men ingen information tillhandahålls. Lös detta genom att använda ett Salesforce-konto för produktion eller ett utvecklarkonto för testning.
 
-* **SharePoint-anslutningsappen** – Kontrollera att du anger rotadressen för SharePoint-webbplatsen utan undermappar eller dokument. Använd till exempel länken som liknar följande: https://microsoft.sharepoint.com/teams/ObjectModel/ 
+* **SharePoint-anslutningsappen** – Kontrollera att du anger rotadressen för SharePoint-webbplatsen utan undermappar eller dokument. Använd till exempel länken som liknar följande: `https://microsoft.sharepoint.com/teams/ObjectModel/` 
 
-* **JSON File-anslutningsappen** – För närvarande kan du endast ansluta till en JSON-fil med grundläggande autentisering.  Det går för närvarande inte att ansluta till en JSON-fil genom att ange autentiseringsuppgifterna i URL:en (exempelvis stöds https://XXXXX.blob.core.windows.net/path/file.json?sv=2019-01-01&si=something&sr=c&sig=123456abcdefg... ) **inte** för närvarande.  
+* **JSON File-anslutningsappen** – För närvarande kan du endast ansluta till en JSON-fil med grundläggande autentisering.  Det går för närvarande **inte** att ansluta till en JSON-fil genom att ange autentiseringsuppgifterna i URL:en (till exempel`https://XXXXX.blob.core.windows.net/path/file.json?sv=2019-01-01&si=something&sr=c&sig=123456abcdefg`...).  
 
 * **Azure SQL Data Warehouse** – Dataflöden stöder för närvarande inte AAD-autentisering (Azure Active Directory) för Azure SQL Data Warehouse. Använd grundläggande autentisering för detta scenario.
 
