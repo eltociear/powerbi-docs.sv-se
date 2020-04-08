@@ -9,12 +9,12 @@ ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 03/18/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 69f498239b80dd7445898528aeb09396d0046689
-ms.sourcegitcommit: 646d2de454a2897dc52cbc02b7743aaa021bac04
+ms.openlocfilehash: 4df77ee94ee72e2104b7964f1835b446bde6b676
+ms.sourcegitcommit: 8eeb784fd46321680367ac913ef976aeedaa7766
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79526105"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80621495"
 ---
 # <a name="online-course-power-bi-paginated-reports-in-a-day"></a>Nätbaserad kurs: Sidnumrerade rapporter i Power BI på en dag
 
@@ -88,6 +88,5 @@ Vi kommer snart att publicera PowerPoint-presentationen och de praktiska övning
 Mer information om ämnet i den här artikeln finns i följande resurser:
 
 - Självstudie: [Skapa en sidnumrerad rapport och ladda upp den till Power BI-tjänsten](paginated-reports-quickstart-aw.md)
-- Praktiska labbövningar: [Skapa en sidnumrerad rapport i Microsoft Power BI](https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208)
 - Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 - Har du förslag? [Bidra till att förbättra Power BI](https://ideas.powerbi.com/)

@@ -9,18 +9,16 @@ ms.topic: conceptual
 ms.assetid: 55bf4f9c-d037-412f-ae57-3fc39ce32fa5
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 5ef6068135e8adcbfd242ca4a6491396101d214e
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.openlocfilehash: 0118bc427ce58f48d50b3e8ed4e918bf66c6e8fc
+ms.sourcegitcommit: 8eeb784fd46321680367ac913ef976aeedaa7766
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78923021"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80621532"
 ---
 # <a name="power-bi-report-builder"></a>Öppna Report Builder i Power BI
 
  Power BI Report Builder är ett verktyg för skapande av sidnumrerade rapporter.  När du utformar en sidnumrerad rapport skapar du en rapportdefinition som anger vilka data som ska hämtas, var de ska hämtas och hur de ska visas. När du kör rapporten tar rapportbearbetaren den rapportdefinition som du har angett, hämtar data, kombinerar dem med rapportlayouten och genererar därmed rapporten. Du förhandsgranskar rapporten i Report Builder. Sedan publicerar du rapporten till Power BI-tjänsten.
-
-Prova [Labb: Skapa en sidnumrerad rapport i Microsoft Power BI](https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208).
 
 Föredrar du inlärning från videor? Titta på videoserien om sidnumrerade Power BI-rapporter på YouTube av Chris Finlan, Principal Program Manager för Power BI.
 
@@ -30,13 +28,13 @@ Följande sidnumrerade rapport har en matris med radgrupper och kolumngrupper, m
 
 ![Sidnumrerad rapport i Power BI-tjänsten](media/report-builder-power-bi/report-builder-get-started-paginated-report.png)
 
-##  <a name="JumpStartReptCreation"></a> Komma igång snabbt med att skapa en rapport  
+##  <a name="jump-start-report-creation"></a><a name="JumpStartReptCreation"></a> Komma igång snabbt med att skapa en rapport  
  
 -   **Börja med tabell-, matris- eller diagramguiden**. Skapa en anslutning för datakälla, dra och släpp fält för att skapa en datamängdsfråga, välj layout och stil samt anpassa rapporten.  
   
 -   **Börja med kartguiden** för att skapa rapporter som visar aggregerade data mot en geografisk eller geometrisk bakgrund. Kartdata kan vara rumsliga data från en Transact-SQL-fråga eller en formfil från Environmental Systems Research Institute, Inc. (ESRI). Du kan också lägga till en Microsoft Bing-kartrutebakgrund.  
 
-##  <a name="DesignRept"></a> Utforma din rapport  
+##  <a name="design-your-report"></a><a name="DesignRept"></a> Utforma din rapport  
   
 -   **Skapa sidnumrerade rapporter med tabeller, matriser, diagram och rapportlayouter med fritt format.** Skapa tabellrapporter för kolumnbaserade data, matrisrapporter (t.ex. korstabulerings- eller pivottabellrapporter) för sammanfattade data, diagramrapporter för grafiska data och rapporter i fritt format för allt annat. Rapporter kan bädda in andra rapporter och diagram, tillsammans med listor, grafik och kontroller för dynamiska webbaserade program.  
   
@@ -52,7 +50,7 @@ Följande sidnumrerade rapport har en matris med radgrupper och kolumngrupper, m
   
 -   **Bädda in eller referera till bilder** och andra resurser, inklusive externt innehåll.  
   
-##  <a name="ManageRpt"></a> Hantera rapporten  
+##  <a name="manage-your-report"></a><a name="ManageRpt"></a> Hantera rapporten  
   
 -   **Spara definitionen av rapporten** på din dator eller på rapportservern, där du kan hantera den och dela den med andra.  
   
@@ -63,5 +61,4 @@ Följande sidnumrerade rapport har en matris med radgrupper och kolumngrupper, m
 ## <a name="next-steps"></a>Nästa steg
 
 - [Vad är sidnumrerade rapporter i Power BI Premium?](paginated-reports-report-builder-power-bi.md)
-- Prova [Labb: Skapa en sidnumrerad rapport i Microsoft Power BI](https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208)
 - Titta på [videoserien om sidnumrerade Power BI-rapporter](https://www.youtube.com/watch?v=78TZeiEhveY&list=PLx7LcKtN_gq-JVzM6L8xNNxX7kts-KflJ) på YouTube av Chris Finlan, Principal Program Manager för Power BI

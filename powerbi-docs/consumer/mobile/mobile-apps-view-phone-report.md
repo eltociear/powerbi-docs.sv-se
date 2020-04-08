@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: 1db56c2844d217bf6bff633609893e5a97a6dae5
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.openlocfilehash: 91fc7e9e3664f21d50b475f316a9a6c64875fab4
+ms.sourcegitcommit: 9b806dfe62c2dee82d971bb4f89d983b97931b43
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79114875"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80802148"
 ---
 # <a name="view-power-bi-reports-optimized-for-your-phone"></a>Visa Power BI-rapporter som är optimerade för din telefon
 
@@ -39,10 +39,11 @@ Alla andra funktioner i Power BI-rapporter fungerar fortfarande i telefon-optime
 ## <a name="filter-the-report-page-on-a-phone"></a>Filtrera rapportsidan på en telefon
 Om en telefonoptimerad rapport har filter definierade, kan du använda dessa filter när du visar rapporten på en telefon. Rapporten öppnas på din telefon filtrerad enligt de värden som filtreras i rapporten på webben. Ett meddelande om att det finns aktiva filter på sidan visas. Du kan ändra filtren på din telefon.
 
-1. Tryck på filterikonen ![Telefonfilterikon](./media/mobile-apps-view-phone-report/power-bi-phone-filter-icon.png) längst ned på sidan. 
+1. Tryck på filterikonen ![Telefonfilterikon](./media/mobile-apps-view-phone-report/power-bi-phone-filter-icon.png) längst ned på sidan.
+
 2. Använda grundläggande eller avancerad filtrering för att se resultatet som du är intresserad av.
    
-    ![Avancerat filter för rapport på telefon](./media/mobile-apps-view-phone-report/power-bi-iphone-advanced-filter-toronto.gif)
+    ![Avancerat filter för rapport på telefon](./media/mobile-apps-view-phone-report/power-bi-iphone-advanced-filter-toronto.png)
 
 ## <a name="cross-highlight-visuals"></a>Korsmarkera visuella objekt
 Korsmarkering av visuella objekt i stående vy fungerar på samma sätt som i Power BI-tjänsten och på telefoner i liggande vy: När du väljer data i ett visuellt objekt markeras relaterade data i övriga visuella objekt på samma sida.
