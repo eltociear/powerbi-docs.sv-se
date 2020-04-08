@@ -254,8 +254,14 @@
           items:
             - name: Ansluta till tjänster med appar
               href: ../service-connect-to-services.md
+            - name: COVID-19 – uppföljningsrapport för USA
+              href: service-connect-to-covid-19-tracking.md
+            - name: Närvarorapportering för kriskommunikation
+              href: service-connect-to-crisis-communication-presence-report.md
             - name: GitHub
               href: ../service-connect-to-github.md
+            - name: Instrumentpanel för beslutsstöd för akutrespons för sjukhus
+              href: service-connect-to-health-emergency-response.md
             - name: Microsofts hållbarhetskalkylator
               href: ../service-connect-to-microsoft-sustainability-calculator.md
             - name: Office365Mon
