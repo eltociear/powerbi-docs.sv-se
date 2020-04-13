@@ -8,13 +8,13 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: cfinlan
 ms.custom: ''
-ms.date: 09/10/2019
-ms.openlocfilehash: 35df214da19d5f35130408ce8128643f52682428
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.date: 04/02/2020
+ms.openlocfilehash: df59d09a1e8557842904b46eded0a83c86448224
+ms.sourcegitcommit: e0833ec22b263f919025acae88551570b4def0cd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78922239"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80647702"
 ---
 # <a name="url-parameters-in-paginated-reports-in-power-bi"></a>URL-parametrar i sidnumrerade rapporter i Power BI
 
@@ -78,6 +78,14 @@ Du kan använda följande parametrar som en del av en URL för att konfigurera u
 - CSV 
 - PDF 
 - XML 
+
+**Tillstånd för parameterfönster** Anger om parameterfönstret är stängt eller öppet när rapporten läses in, eller är helt dolt.
+
+-   rdl:parameterPanelState
+
+    - Komprimerat: rapporten läses in med parameterfönstret stängt. Parameterknappen är aktiverad så att användarna kan klicka på knappen för att expandera.
+    - Dolt: rapporten läses in med parameterfönstret stängt och parameterknappen inaktiverad.
+    - Expanderat: rapporten läses in med parameterfönstret stängt och parameterknappen inaktiverad.
 
 **Enhetsinformation** Du kan ange ytterligare utdataparametrar för följande exportformat. 
 

@@ -7,19 +7,19 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/31/2020
+ms.date: 04/06/2020
 ms.author: lukaszp
 LocalizationGroup: Samples
-ms.openlocfilehash: 432312b5ceb7632e0249d1d7dda6158bf97d0224
-ms.sourcegitcommit: 3c51431d85793b71f378c4b0b74483dfdd8411b3
+ms.openlocfilehash: 66e76c21e7d5171d24ff1518745a35947aa7ca42
+ms.sourcegitcommit: e7fda395b47e404c61e961a60816b7a1b0182759
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80472070"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80979786"
 ---
 # <a name="covid-19-tracking-sample-for-us-state-and-local-governments"></a>COVID–19-spårningsexempel för myndigheter i USA på lokal och delstatsnivå
 
-Power BI-teamet har skapat ett spårningsexempel för COVID-19 som gör det möjligt myndigheter i USA på lokal och delstatsnivå att publicera eller anpassa en interaktiv rapport om COVID-19. Med hjälp av Power BI Desktop kan de analysera och visualisera COVID-19-data för att hålla sina grupper informerade på ort-, region-, delstats- och nationsnivå. Sedan kan de dela rapporten för att informera medborgarna med Power BI Publicera på webben. Artikeln innehåller tre olika alternativ för att använda interaktiva visuella Power BI- i din egen offentliga berättelse, blogg eller webbplats.
+Power BI-teamet har skapat ett spårningsexempel för COVID-19 som gör det möjligt myndigheter i USA på lokal och delstatsnivå att publicera eller anpassa en interaktiv rapport om COVID-19. Med hjälp av Power BI Desktop kan de analysera och visualisera COVID-19-data för att hålla sina grupper informerade på ort-, region-, delstats- och nationsnivå. Sedan kan de dela rapporten för att informera medborgarna med Power BI Publicera på webben. Artikeln innehåller olika alternativ för att använda interaktiva visuella Power BI-objekt i din egen offentliga berättelse, blogg eller webbplats.
 
 :::image type="content" source="media/sample-covid-19-us/covid-19-us-tracking-sample.png" alt-text="COVID-19-exempel med data från USA":::
 
@@ -45,10 +45,10 @@ Microsoft har publicerat exempelrapporten och skapat en inbäddningskod för pub
 Om du vill inkludera den interaktiva grafiken på din webbplats kopierar du och klistrar in följande inbäddningskod till den plats där du vill att bilden ska visas på din webbplats.  
 
 ```
-<iframe width="800" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiMmI2ZjExMzItZTcwNy00YmUwLWFlMTAtYTUxYzVjODZmYjA5IiwidCI6ImMxMzZlZWMwLWZlOTItNDVlMC1iZWFlLTQ2OTg0OTczZTIzMiIsImMiOjF9" frameborder="0" allowFullScreen="true"></iframe>
+<iframe width="1600" height="900" src="https://app.powerbi.com/view?r=eyJrIjoiMmI2ZjExMzItZTcwNy00YmUwLWFlMTAtYTUxYzVjODZmYjA5IiwidCI6ImMxMzZlZWMwLWZlOTItNDVlMC1iZWFlLTQ2OTg0OTczZTIzMiIsImMiOjF9" frameborder="0" allowFullScreen="true"></iframe>
 ```
 
-Inbäddningskoden är ett iFrame-element i HTML som du kan infoga på en HTML-sida. Justera bredden och höjden på den iFrame som är avsedd att passa på din webbplats. Exampelrapporten har skrivits med förhållandena 16:9. Välj en storlek som bevarar förhållandet. När det implementeras korrekt visas bilden utan extra grå kantlinjer. Det är användbart att [läsa tips och råd för iFrame-storlek](https://docs.microsoft.com/power-bi/service-publish-to-web#tips-and-tricks-for-iframe-height-and-width) när du genomför dessa ändringar.
+Inbäddningskoden är ett iFrame-element i HTML som du kan infoga på en HTML-sida. Justera bredden och höjden på den iFrame som är avsedd att passa på din webbplats. Exampelrapporten har skrivits med förhållandena 16:9. Välj en storlek som bevarar förhållandet. När det implementeras korrekt visas bilden utan extra grå kantlinjer. Det är användbart att [läsa tips och råd för iFrame-storlek](../service-publish-to-web.md#tips-and-tricks-for-iframe-height-and-width) när du genomför dessa ändringar.
 
 ## <a name="option-2-customize-the-sample-power-bi-file"></a>Alternativ 2: Anpassa Power BI-exempelfilen
 
@@ -104,9 +104,9 @@ När du följer stegen kan du välja följande alternativ:
 1. Autentiseringmetod för autentiseringsuppgifter för datakälla: Anonym
 2. Inställningar för sekretessnivå för den här datakällan: Offentlig
 
-Om du vill testa uppdateringsinställningen väljer du alternativet [Uppdatera nu som är tillgängligt från datauppsättningsobjektet](../refresh-data.md#data-refresh).
+Om du vill testa uppdateringsinställningen väljer du alternativet [Uppdatera nu](../refresh-data.md#data-refresh) som är tillgängligt från datauppsättningsobjektet.
 
-Uppdaterade data läses in varje gången schemat körs. Tänk på att underliggande data tillhandahålls av USAFacts och kanske inte uppdateras lika ofta som ditt uppdateringsschema. Kontrollera [USAFacts webbplats](https://usafacts.org/visualizations/coronavirus-covid-19-spread-map/) för att veta när de underliggande data senast uppdaterades. 
+Uppdaterade data läses in varje gången schemat körs. Underliggande data tillhandahålls av USAFacts och kanske inte uppdateras lika ofta som ditt uppdateringsschema. Kontrollera [USAFacts webbplats](https://usafacts.org/visualizations/coronavirus-covid-19-spread-map/) för att veta när de underliggande data senast uppdaterades. 
 
 Om du tänker publicera den anpassade rapporten på din webbplats är det bäst att konfigurera den schemalagda uppdateringen så att den körs minst lika ofta som USAFacts-datauppdateringarna. Eftersom USAFacts kan uppdatera sina data vid olika tidpunkter kan det vara bra att konfigurera flera uppdateringar varje dag. 
 
@@ -147,6 +147,11 @@ Du kan också kombinera data i den här rapporten med data från en annan källa
     
 Du kan sedan använda Power BI Desktop för att visualisera data. Använd slutligen stegen i **Alternativ 2:** [Publicera rapporten till Power BI-tjänsten](#publish-your-report-to-the-power-bi-service) för att publicera rapporten och skapa en anpassad inbäddningskod. 
 
+## <a name="option-4-use-the-covid-19-us-tracking-template-app"></a>Alternativ 4: Använda mallappen för uppföljningsrapport för COVID-19 för USA
+
+För att tillhandahålla ytterligare ett alternativ har Power BI-teamet skapat en *mallapp* för uppföljning av COVID-19 för USA så att du kan komma igång direkt. Mallappar är paket med rapporter, instrumentpaneler och datauppsättningar för en specifik datakälla. Du laddar ned dem från AppSource, använder dem som de är eller anpassar dem efter dina behov, och distribuerar dem till dina medarbetare. 
+
+Mallappen för uppföljning av COVID-19 för USA innehåller en fördefinierad rapport med COVID-19-mått som du kan använda som de är, anpassa direkt i Power BI-tjänsten eller ladda ned för att lägga till andra datakällor. Läs om hur du installerar [mallappen för uppföljning av COVID-19 för USA](../connect-data/service-connect-to-covid-19-tracking.md) och kommer igång direkt.
 
 ## <a name="about-the-data-source-for-this-report"></a>Om datakällan för den här rapporten
 Den här interaktiva rapporten sammanställer data från Centeres for Disease Control and Prevention (centrum för sjukdomsbekämpning och skydd, CDC) och offentliga hälsomyndigheter på delstats- och lokal nivå. Data på regionsnivå bekräftas genom att hänvisa till myndigheter på delstats- och lokal nivå direkt (länk).

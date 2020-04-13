@@ -7,21 +7,21 @@ featuredvideoid: JbL2-HJ8clE
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/21/2019
+ms.date: 04/02/2020
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 8f5d11b53526c5d266b96a8f21c42fecc66d3795
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: a67d983d11ae8fa2f82a540c0649c2da475d5249
+ms.sourcegitcommit: 8eeb784fd46321680367ac913ef976aeedaa7766
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "74163764"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80621612"
 ---
 # <a name="data-alerts-in-the-power-bi-service"></a>Datavarningar i Power BI-tjänsten
 
 Ställ in aviseringar som meddelar dig när data i dina instrumentpaneler har ändrats så att de överskrider de gränser du har angett.
 
-Du kan konfigurera aviseringar på paneler om du har en Power BI Pro-licens. Du kan även konfigurera aviseringar om någon delar en instrumentpanel som finns i en [Premium](service-premium-what-is.md)-kapacitet. Aviseringar kan endast konfigureras på paneler som har fästs från visuella objekt i rapporter och endast på mätare, KPI:er och kort. Aviseringar kan konfigureras för visuella objekt som skapats från direktuppspelande datamängder som du fäster från en rapport på en instrumentpanel. Aviseringar kan inte konfigureras på direktuppspelande paneler som skapats direkt på instrumentpanelen med hjälp av **Lägg till panel** > **Anpassade direktuppspelande data**.
+Du kan konfigurera aviseringar på paneler i Min arbetsyta. Du kan även konfigurera aviseringar om någon delar en instrumentpanel som finns i en [Premium-kapacitet](service-premium-what-is.md). Om du har en Power BI Pro-licens kan du även konfigurera aviseringar på paneler i andra arbetsytor. Aviseringar kan endast konfigureras på paneler som har fästs från visuella objekt i rapporter och endast på mätare, KPI:er och kort. Aviseringar kan konfigureras för visuella objekt som skapats från direktuppspelande datamängder som du fäster från en rapport på en instrumentpanel. Aviseringar kan inte konfigureras på direktuppspelande paneler som skapats direkt på instrumentpanelen med hjälp av **Lägg till panel** > **Anpassade direktuppspelande data**.
 
 Du kan endast se aviseringar som du anger, även om du delar din instrumentpanel. Inte ens instrumentpanelens ägare kan se de aviseringar du anger i din vy av instrumentpanelen. Datavarningar är helt synkroniserade på plattformar. Ställ in och visa datavarningar [i Power BI-appar](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md) och i Power BI-tjänsten. De är inte tillgängliga för Power BI Desktop. Du kan till och med automatisera och integrera aviseringar med Power Automate. Du kan prova själv i den här artikeln om [Power Automate och Power BI](service-flow-integration.md).
 

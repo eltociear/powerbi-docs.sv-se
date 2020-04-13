@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/10/2019
+ms.date: 04/06/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 51d7b29eee1394ec1bbcad8d69b39b4e45ecdb18
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 7f300cca6614f638f88886a913b30a93d0f52cfd
+ms.sourcegitcommit: 2b93c1cc29aaf199ab7441a04c8e5ae49ffca5d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74700083"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80813016"
 ---
 # <a name="monitor-capacities-in-the-admin-portal"></a>Övervaka kapaciteter i administratörsportalen
 
@@ -23,6 +23,9 @@ Fliken **Hälsa** i **Kapacitetsinställningar** i administratörsportalen inneh
 ![Fliken Kapacitetshälsa i portalen](media/service-admin-premium-monitor-portal/admin-portal-health.png)
 
 Om du behöver mer omfattande mätningar använder du appen [Kapacitetsmått för Power BI Premium](service-admin-premium-monitor-capacity.md). Appen innehåller detaljerad information och filtrering, samt de mest detaljerade måtten för i princip varje del som påverkar kapacitetsprestandan. Läs mer i [Övervaka Premium-kapaciteter med appen](service-admin-premium-monitor-capacity.md).
+
+> [!IMPORTANT]
+> Om din Power BI Premium-kapacitet har hög resursanvändning, som medför prestanda- och tillförlitlighetsproblem, kan du få e-postmeddelanden för att identifiera och lösa problemet. Mer information finns i [meddelanden om kapacitet och tillförlitlighet](service-interruption-notifications.md#capacity-and-reliability-notifications).
 
 ## <a name="system-metrics"></a>Systemmått
 

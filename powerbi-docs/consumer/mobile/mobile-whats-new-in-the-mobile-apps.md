@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/09/2020
 ms.author: painbar
-ms.openlocfilehash: 6885f635f96da3bbea039f445e83cd7cada144ce
-ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
+ms.openlocfilehash: af9a1ad5dd13f4f57947b0ca92459e7691eab5fd
+ms.sourcegitcommit: 9b806dfe62c2dee82d971bb4f89d983b97931b43
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79435983"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80802105"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nyheter i Power BI-mobilapparna
 Relaterad information om nyheter finns i:
@@ -24,6 +24,20 @@ Relaterad information om nyheter finns i:
 
 >[!NOTE]
 >Stöd för Power BI-mobilappen för **telefoner som använder Windows 10 Mobile** kommer att upphöra den 16 mars 2021. [Läs mer](https://go.microsoft.com/fwlink/?linkid=2121400)
+
+## <a name="march-2020"></a>Mars 2020
+
+### <a name="use-shortcuts-and-google-search-to-launch-your-content-android"></a>Använda genvägar och Google Search för att öppna innehåll (Android)
+Vi har gjort det enklare att hitta och visa data genom att integrera både genvägar och Google Search med Power BI-appen. Skapa genvägar för enkel åtkomst till rapporter och instrumentpaneler du använder ofta direkt från enhetens startskärm. Och använd Google Search för att snabbt leta reda på och öppna Power BI-innehåll. Läs mer om [Android-appgenvägar](mobile-app-quick-access-shortcuts.md) och [Google Search](mobile-app-find-access-google-search.md)!
+
+### <a name="enhanced-security-using-device-protection-preview-android"></a>Förbättrad säkerhet med enhetsskydd (förhandsversion) (Android)
+Använd enhetens inbyggda skyddsfunktioner för att skydda din Power BI-app och få den sekretess du behöver. Genom att kräva biometrisk autentisering (fingeravtrycks-ID) för att komma åt Power BI-appen kan du säkerställa att bara du kan se dina data. [Läs om inbyggd säker åtkomst](mobile-native-secure-access.md)
+
+### <a name="scanning-is-now-available-on-ipad"></a>Genomsökning är nu tillgängligt på iPad
+Nu kan du skanna streckkoder för att filtrera rapporter eller använda QR-koder för att snabbt öppna en rapport, direkt från din iPad.  
+
+### <a name="updated-filtering-experience"></a>Uppdaterad filtreringsfunktion
+Filtren i Power BI-appen har nya funktioner och en ny design. Detta omfattar förbättrad synlighet för tillämpade filter som påverkar rapportvisualiseringar och möjligheten att låsa, och till och med dölja, filter. Dessa ändringar ger också bättre kompatibilitet med filtreringen i Power BI-tjänsten.
 
 ## <a name="february-2020"></a>Februari 2020
 

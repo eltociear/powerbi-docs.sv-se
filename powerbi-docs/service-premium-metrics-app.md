@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 12/19/2019
+ms.date: 04/06/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: ae11ec64a0bffbd3e64c0fd677a7225c2b31f521
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.openlocfilehash: c15576ac6ab9b20a3492341c05d2f9d8eb42e107
+ms.sourcegitcommit: 2b93c1cc29aaf199ab7441a04c8e5ae49ffca5d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79488693"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80813062"
 ---
 # <a name="power-bi-premium-metrics-app"></a>Måttappen för Power BI Premium
 
@@ -27,6 +27,9 @@ Du kan använda **Power BI Premium-måttappen** för att hantera hälsan och kap
 ![Måttappen för Power BI Premium](media/service-premium-metrics-app/premium-metrics-app-00.png)
 
 I följande avsnitt beskrivs landningssidan och de tre måttrapportsidorna i detalj. 
+
+> [!IMPORTANT]
+> Om din Power BI Premium-kapacitet har hög resursanvändning, som medför prestanda- och tillförlitlighetsproblem, kan du få e-postmeddelanden för att identifiera och lösa problemet. Mer information finns i [meddelanden om kapacitet och tillförlitlighet](service-interruption-notifications.md#capacity-and-reliability-notifications).
 
 ## <a name="premium-capacity-health-center"></a>Hälsocenter för Premiumkapacitet
 

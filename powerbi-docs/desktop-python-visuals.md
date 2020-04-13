@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/15/2020
+ms.date: 04/03/2020
 ms.author: otarb
 LocalizationGroup: Create reports
-ms.openlocfilehash: c5105d038480bbee3e534574add91203f54e3119
-ms.sourcegitcommit: 032a77f2367ca937f45e7e751997d7b7d0e89ee2
+ms.openlocfilehash: 72c285fd57af21fcb3d1a4568a5ff2e83016072f
+ms.sourcegitcommit: e7fda395b47e404c61e961a60816b7a1b0182759
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77609843"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80979878"
 ---
 # <a name="create-power-bi-visuals-by-using-python"></a>Skapa visuella Power BI-objekt med hjälp av Python
 
@@ -155,9 +155,9 @@ När du väljer skriptknappen **Kör** genereras följande stapeldiagram:
 > **Säkerhet för Python-skript:** Python-visualiseringar skapas från Python-skript, vilka kan innehålla kod med säkerhets- eller integritetsrisker. När användare försöker visa eller interagera med en Python-visualisering för första gången, visas en säkerhetsvarning. Aktivera endast visuell Python-information om du litar på skaparen och källan, eller när du granskat och förstått Python-skriptet.
 >  
 
-## <a name="more-information-about-plotting-with-matprolib-pandas-and-python"></a>Mer information om hur du ritar med Matprolib, Pandas och Python
+## <a name="more-information-about-plotting-with-matplotlib-pandas-and-python"></a>Mer information om hur du ritar med Matplotlib, Pandas och Python
 
-Den här självstudien är avsedd att hjälpa dig komma igång med att skapa visuella objekt med Python i Power BI Desktop. Den behandlar bara några av de många alternativ och funktioner för skapande av visuella rapporter med Python, Pandas och Matprolib-biblioteket. Det finns mycket mer information om detta – här är några länkar som du kan använda för att komma igång.
+Den här självstudien är avsedd att hjälpa dig komma igång med att skapa visuella objekt med Python i Power BI Desktop. Den behandlar bara några av de många alternativ och funktioner för skapande av visuella rapporter med Python, Pandas och Matplotlib-biblioteket. Det finns mycket mer information om detta – här är några länkar som du kan använda för att komma igång.
 
 - Dokumentation på webbplatsen för [Matplotlib](https://matplotlib.org/). 
 - [Matplotlib Tutorial: A Basic Guide to Use Matplotlib with Python](https://www.datasciencelearner.com/matplotlib-tutorial-complete-guide-to-use-matplotlib-with-python/) (En grundläggande guide om hur du använder Matplotlib med Python) 
@@ -177,6 +177,7 @@ Visuella Python-objekt i Power BI Desktop har några begränsningar:
 - Visuella Python-objekt uppdateras när data uppdateras, filtreras eller markeras. Själva bilden är dock inte interaktiv och kan inte vara källan till korsfiltrering.
 - Visuella Python-objekt svarar på markering av andra visuella objekt, men du kan inte korsfiltrera andra element genom att klicka på element i det visuella Python-objektet.
 - Endast områden som ritas till Python-standardenheten för visning visas korrekt på arbetsytan. Undvik att uttryckligen använda en annan Python-visningsenhet.
+- Visuella Python-objekt stöder inte byte av namn på indatakolumner. Kolumner refereras till med sitt ursprungliga namn under skriptkörningen.
 
 ## <a name="next-steps"></a>Nästa steg
 

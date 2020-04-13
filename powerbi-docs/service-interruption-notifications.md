@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/16/2019
+ms.date: 04/06/2020
 ms.author: kfollis
-ms.openlocfilehash: cb117cb325255f63a0c5d21eddc01e9806358f7f
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 984991d8640df04c19b6461f5f0faaf0a50fe4ed
+ms.sourcegitcommit: 2b93c1cc29aaf199ab7441a04c8e5ae49ffca5d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74697254"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80812990"
 ---
 # <a name="service-interruption-notifications"></a>Aviseringar om tjänstavbrott
 
@@ -31,6 +31,28 @@ Meddelanden skickas när det uppstår _längre förseningar_ i åtgärder som at
 
 > [!NOTE]
 > Den här funktionen är för närvarande endast tillgänglig för dedikerade kapaciteter i Power BI Premium. Den är inte tillgänglig för delad eller inbäddad kapacitet.
+
+## <a name="capacity-and-reliability-notifications"></a>Meddelanden om kapacitet och tillförlitlighet
+
+När en Power BI Premium-kapacitet har långa perioder av hög resursanvändning som skulle kunna påverka tillförlitligheten, skickas en e-postavisering. Exempel på saker som kan påverka resursanvändningen är öppnande av rapporter, uppdateringar av datauppsättningar och frågekörningar. 
+
+E-postmeddelandet innehåller information om orsaker till den höga resursanvändningen, till exempel:
+
+* Datauppsättningens ID
+* Åtgärdstyp
+* CPU-tiden som är associerad med den höga resursanvändningen
+
+Power BI skickar också e-postaviseringar när en överbelastning identifieras i en Power BI Premium-kapacitet. I e-postmeddelandet anges den troliga orsaken till överbelastningen, vilka åtgärder som genererat belastningen under de senaste 10 minuterna och hur stor belastning varje åtgärd har genererat. 
+
+Om du har mer än en Premium-kapacitet innehåller e-postmeddelandet information om dessa kapaciteter under den överbelastade perioden, så du kan fundera över om du vill flytta de arbetsytor som innehåller resursintensiva objekt till de kapaciteter som har minst belastning.
+
+E-postaviseringar om överbelastning skickas endast när ett tröskelvärde för överbelastning har nåtts. Du får inte ett till e-postmeddelande när belastningen på Premium-kapaciteten återgår till värden som ligger under gränsnivån för överbelastning.
+
+Följande bild visar ett exempel på en e-postavisering:
+
+
+![e-postmeddelande om överbelastning i en kapacitet](media/service-interruption-notifications/refresh-notification-email-2.png)
+
 
 ## <a name="enable-notifications"></a>Aktivera meddelanden
 

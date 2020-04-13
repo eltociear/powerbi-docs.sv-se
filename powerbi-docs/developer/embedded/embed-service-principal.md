@@ -9,24 +9,18 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 03/30/2020
-ms.openlocfilehash: 9ec08ebe583110b2775f107be0ace2a03929c72d
-ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
+ms.openlocfilehash: 7ae2752627e24c5de2feed372009061e523a3fc8
+ms.sourcegitcommit: 34cca70ba84f37b48407d5d8a45c3f51fb95eb3c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80403521"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80751625"
 ---
 # <a name="embedding-power-bi-content-with-service-principal-and-application-secret"></a>Bädda in Power BI innehåll med tjänstens huvudnamn och apphemlighet
 
-Tjänstens huvudnamn är en autentiseringsmetod som kan användas för att ge Azure AD-program åtkomst till Power BI-tjänstinnehåll och API:er.
+[!INCLUDE[service principal overview](../../includes/service-principal-overview.md)]
 
-När du skapar en Azure Active Directory-app (Azure AD) skapas ett [huvudobjekt för tjänsten](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object). Huvudobjektet för tjänsten, som också är känt som *tjänstens huvudnamn*, gör att Azure AD kan autentisera din app. Efter autentisering kan appen komma åt Azure AD-klientens resurser.
-
-För att autentisera använder tjänstens huvudnamn Azure AD-appens *program-ID* och något av följande:
-* Apphemlighet
-* Certifikat
-
-I den här artikeln beskrivs autentisering med tjänstens huvudnamn med *program-ID* och *apphemlighet*. Information om hur du autentiserar med ett huvudnamn för tjänsten med ett certifikat finns i [certifikat autentisering för Power BI]().
+I den här artikeln beskrivs autentisering med tjänstens huvudnamn med *program-ID* och *apphemlighet*.
 
 ## <a name="method"></a>Metod
 
@@ -55,12 +49,12 @@ Följ dessa steg om du vill använda tjänstens huvudnamn och ett program-ID med
 ## <a name="step-1---create-an-azure-ad-app"></a>Steg 1 – Skapa en Azure AD-app
 
 Skapa en Azure AD-app med någon av följande metoder:
-* Skapa appen i [Microsoft Azure-portalen](https://ms.portal.azure.com/#allservices)
+* Skapa appen i [Microsoft Azure-portalen](https://portal.azure.com/#allservices)
 * Skapa appen med hjälp av [PowerShell](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-3.6.1).
 
 ### <a name="creating-an-azure-ad-app-in-the-microsoft-azure-portal"></a>Skapa en Azure AD-app i Microsoft Azure-portalen
 
-1. Logga in på [Microsoft Azure](https://ms.portal.azure.com/#allservices).
+1. Logga in på [Microsoft Azure](https://portal.azure.com/#allservices).
 
 2. Sök efter **Appregistreringar** och klicka på länken **Appregistreringar**.
 
@@ -72,7 +66,7 @@ Skapa en Azure AD-app med någon av följande metoder:
 
 4. Fyll i nödvändig information:
     * **Namn** – Ange ett namn för ditt program
-    * **Kontotyper som stöds** – Välj kontotyper som stöds
+    * **Kontotyper som stöds** – Välj det Azure AD-konto du behöver
     * (Valfritt) **Omdirigerings-URI** – ange en URI om det behövs
 
 5. Klicka på **Registrera**.
@@ -205,5 +199,3 @@ När ditt innehåll hasr bäddats in kan du [övergå till produktion](embed-sam
 * [Power BI Embedded för dina kunder](embed-sample-for-customers.md)
 
 * [Säkerhet på radnivå med hjälp av lokal datagateway med tjänstens huvudnamn](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal)
-
-* [Bädda in Power BI innehåll med tjänstens huvudnamn och certifikat]()

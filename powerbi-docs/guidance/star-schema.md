@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: v-pemyer
-ms.openlocfilehash: ba1909c5fc75abdf7338572c646d98fca83595b0
-ms.sourcegitcommit: 22991861c2b9454b170222591f64266335b9fcff
+ms.openlocfilehash: a2e53d27a8ca49e9fc318fd25cc20acbb7bacc38
+ms.sourcegitcommit: 34cca70ba84f37b48407d5d8a45c3f51fb95eb3c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79133244"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80751619"
 ---
 # <a name="understand-star-schema-and-the-importance-for-power-bi"></a>Förstå star-schemat och dess betydelse för Power BI
 
@@ -75,7 +75,7 @@ Det finns dock tre bra skäl till att skapa mått även för enkla sammanfattnin
 
 - När du vet att rapportförfattarna kommer att köra frågor mot modellen med hjälp av [flerdimensionella uttryck (MDX)](https://docs.microsoft.com/sql/analysis-services/multidimensional-models/mdx/mdx-query-the-basic-query?view=sql-server-2017) måste modellen innehålla _explicita mått_. Explicita mått definieras med DAX. Den här designmetoden är mycket relevant när du hämtar data från en Power BI-datauppsättning med hjälp av MDX, eftersom MDX inte kan summera kolumnvärden. MDX används framför allt tillsammans med [Analysera i Excel](https://docs.microsoft.com/power-bi/service-analyze-in-excel) eftersom pivottabeller skickar MDX-frågor.
 - När du vet att rapportförfattarna kommer att skapa sidnumrerade Power BI-rapporter i MDX-frågedesignern måste modellen innehålla explicita mått. Det är bara MDX-frågedesignern som har stöd för [serveraggregeringar](/sql/reporting-services/report-design/report-builder-functions-aggregate-function). Så om rapportförfattarna behöver låta Power BI utvärdera mått (i stället för den sidnumrerade rapportens motor) måste de använda MDX-frågedesignern.
-- Det kan gälla om du behöver säkerställa att rapportförfattare endast kan sammanfatta kolumner på specifika sätt. Till exempel kan kolumnen **Enhetspris** (som representerar ett pris per enhet) för återförsäljares försäljning sammanfattas, men endast med hjälp av specifika sammansättningsfunktioner. Den bör aldrig sammanfattas, men det är lämpligt att sammanfatta den med hjälp av andra sammansättningsfunktioner (min, max, genomsnitt osv.). I det här fallet kan modelleraren dölja kolumnen **Enhetspris** och skapa mått för alla lämpliga sammansättningsfunktioner.
+- Det kan gälla om du behöver säkerställa att rapportförfattare endast kan sammanfatta kolumner på specifika sätt. Till exempel kan kolumnen **Enhetspris** (som representerar ett pris per enhet) för återförsäljares försäljning sammanfattas, men endast med hjälp av specifika sammansättningsfunktioner. Den bör aldrig sammanfattas, men det är lämpligt att sammanfatta den med hjälp av andra sammansättningsfunktioner (till exempel min, max, genomsnitt osv.). I det här fallet kan modelleraren dölja kolumnen **Enhetspris** och skapa mått för alla lämpliga sammansättningsfunktioner.
 
 Den här designmetoden fungerar bra för rapporter som skapats i Power BI-tjänsten och för Frågor och svar. Power BI Desktop-live-anslutningar tillåter dock att rapportförfattare visar dolda fält i fönstret **Fält**, vilket kan leda till att den här designmetoden kringgås.
 
@@ -188,7 +188,7 @@ I Power BI-modellen kan det vara lämpligt att lägga till kolumnen för försä
 
 ![Exempel på degenererad dimension](media/star-schema/degenerate-dimension.png)
 
-Mer information finns i [vägledning för en-till-en-relation (degenererade dimensioner)](relationships-one-to-one.md#degenerate-dimensions).
+Men om Adventure Works tabell för återförsäljares försäljning innehåller kolumner för ordernummer _och_ orderradnummer, och dessa krävs för filtrering, skulle en tabell med degenererad dimension vara ett bra designval. Mer information finns i [vägledning för en-till-en-relation (degenererade dimensioner)](relationships-one-to-one.md#degenerate-dimensions).
 
 ## <a name="factless-fact-tables"></a>Faktalösa faktatabeller
 
@@ -196,7 +196,7 @@ En **faktalös faktatabell** innehåller inte några måttkolumner. Den innehål
 
 En faktalös faktatabell kan lagra observationer som definieras av dimensionsnycklar. Det kan till exempel vara att en viss kund loggade in på din webbplats vid ett visst datum och en viss tid. Du skulle kunna definiera ett mått för att räkna antalet rader i den faktalösa faktatabellen för att utföra analys av när och hur många kunder som har loggat in.
 
-En mer övertygande användning av en faktalös faktatabell är att lagra relationer mellan dimensioner, och det är den Power BI-modelldesign som vi rekommenderar för att definiera många-till-många-dimensionsrelationer. I en många-till-många-dimensionsrelationsdesign kallas den faktalösa faktatabellen för _bryggningstabell_.
+En mer övertygande användning av en faktalös faktatabell är att lagra relationer mellan dimensioner, och det är den Power BI-modelldesign som vi rekommenderar för att definiera många-till-många-dimensionsrelationer. I en [många-till-många-dimensionsrelationsdesign](relationships-many-to-many.md#relate-many-to-many-dimensions) kallas den faktalösa faktatabellen för _bryggningstabell_.
 
 Anta till exempel att säljare kan tilldelas till en _eller flera_ försäljningsregioner. Bryggningstabellen skulle då utformas som en faktalös faktatabell bestående av två kolumner: säljarnyckel och regionsnyckel. Dubblettvärden kan lagras i båda kolumnerna.
 

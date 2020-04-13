@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 09/17/2019
+ms.date: 04/06/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: e60aed5b538eab3b630f42a665d96256cc07879c
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 2aa62197bc9af359962f25394d4f202a945d97d8
+ms.sourcegitcommit: 2b93c1cc29aaf199ab7441a04c8e5ae49ffca5d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74700106"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80813108"
 ---
 # <a name="configure-and-manage-capacities-in-power-bi-premium"></a>Konfigurera och hantera kapaciteter i Power BI Premium
 
@@ -94,6 +94,10 @@ Power BI-administratörer och globala Office 365-administratörer kan ändra Pow
     Administratörer kan skapa, ändra storlek på och ta bort noder, så länge som de har det nödvändiga antalet v-kärnor.
 
     P SKU:er kan inte nedklassificeras till EM SKU:er. Du kan hovra över inaktiverade alternativ för att se en förklaring.
+
+> [!IMPORTANT]
+> Om din Power BI Premium-kapacitet har hög resursanvändning, som medför prestanda- och tillförlitlighetsproblem, kan du få e-postmeddelanden för att identifiera och lösa problemet. Mer information finns i [meddelanden om kapacitet och tillförlitlighet](service-interruption-notifications.md#capacity-and-reliability-notifications).
+
 
 ### <a name="manage-user-permissions"></a>Hantera användarbehörigheter
 

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/04/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 729a50e251a9c2ae083375e187ff133022f3ce91
-ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
+ms.openlocfilehash: 061a2a99ad4cc812aac0d66ec4993001187179a0
+ms.sourcegitcommit: e7fda395b47e404c61e961a60816b7a1b0182759
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80114875"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80979901"
 ---
 # <a name="create-power-bi-visuals-using-r"></a>Skapa visuella Power BI-objekt med R
 Med Power BI Desktop, kan du använda *R* för att visualisera dina data. [R](https://mran.revolutionanalytics.com/documents/what-is-r) är ett språk och en miljö för statistisk databehandling och grafik.
@@ -142,6 +142,8 @@ R-visualiseringar i Power BI Desktop har följande begränsningar:
 * Höjdpunkter: R-visualiseringar svarar om du markerar andra visuella objekt, men du kan inte välja element i R-visualiseringen för att korsfiltrera andra element.
 
 * Visa enheter: Endast områden som ritas till R-standardenheten för visning visas korrekt på arbetsytan. Undvik att uttryckligen använda en annan R-visningsenhet.
+
+* Ändra namn på kolumner: Visuella R-objekt stöder inte byte av namn på indatakolumner. Kolumner refereras till med sitt ursprungliga namn under skriptkörningen.
 
 * RRO-installationer: I den här versionen identifieras inte RRO-installationer automatiskt av 32-bitars versionen av Power BI Desktop så du måste manuellt ange sökvägen till R-installationskatalogen i **Alternativ och inställningar** > **Alternativ** > **R-skriptning**.
 

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 03/08/2020
-ms.openlocfilehash: bfdac85b50851f840db04d2b3d8e88d434ab7b7e
-ms.sourcegitcommit: 6e56d038280efab86521602cbc089b3989dddbd0
+ms.openlocfilehash: 08790c8c0c751f935d62357d86b6976a81dc977b
+ms.sourcegitcommit: 8eeb784fd46321680367ac913ef976aeedaa7766
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "80550898"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80621466"
 ---
 # <a name="publish-power-bi-visuals-to-partner-center"></a>Publicera visuella Power BI-objekt på Partnercenter
 
@@ -100,6 +100,8 @@ Följ stegen nedan när du ska skicka in ditt visuella Power BI-objekt till Part
 10. Välj **Produktkonfiguration** och klicka på **Granska och publicera**.
 
 ## <a name="tracking-submission-status-and-usage"></a>Spåra sändningsstatus och användning
+
+Du kan granska [verifieringsprinciperna](https://docs.microsoft.com/legal/marketplace/certification-policies#1180-power-bi-visuals).
 
 Därefter kommer du att kunna visa status för ansökan i [appinstrumentpanelen](https://sellerdashboard.microsoft.com/Application/Summary/).
 

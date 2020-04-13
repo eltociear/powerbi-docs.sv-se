@@ -2,18 +2,17 @@
 title: Konfigurationsinställningar för Power BI-appen
 description: Så här anpassar du Power BI med hjälp av MDM-verktyget
 author: paulinbar
-ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 03/07/2020
+ms.date: 04/05/2020
 ms.author: painbar
-ms.openlocfilehash: 1991381f8b2917fe3bc61a8be22fbdf44e706d71
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.openlocfilehash: ce147be4c23b738e1a09296a5d798fb0f94efe13
+ms.sourcegitcommit: 9b806dfe62c2dee82d971bb4f89d983b97931b43
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79205560"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80802036"
 ---
 # <a name="remotely-configure-power-bi-app-using-mobile-device-management-mdm-tool"></a>Konfigurera Power BI-appen via fjärranslutning med verktyget för hantering av mobilenheter (MDM)
 
@@ -22,7 +21,7 @@ Power BI Mobile-appen för iOS och Android har stöd för appinställningar som 
 Power BI Mobile-appen har stöd för följande konfigurationsscenarier:
 
 * Konfiguration av rapportserver (iOS och Android)
-* Inställningar för dataskydd (iOS)
+* Inställningar för dataskydd (iOS och Android)
 * Inställningar för interaktion (iOS och Android)
 
 ## <a name="report-server-configuration-ios-and-android"></a>Konfiguration av rapportserver (iOS och Android)
@@ -36,13 +35,16 @@ Med Power BI-appen för iOS och Android kan administratörer fjärrstyra push-ö
 | com.microsoft.powerbi.mobile.ServerDisplayName | Sträng | [valfritt]<br><br>Standardvärdet är ”Rapportserver”<br><br>Ett eget namn som används i appen för att representera servern. |
 | com.microsoft.powerbi.mobile.OverrideServerDetails | Boolesk | [valfritt]<br><br>Standardvärdet är True. När värdet är True åsidosätts eventuella rapportserverdefinitioner som redan finns på den mobila enheten. Befintliga servrar som redan är konfigurerade tas bort. Genom att sätta Åsidosätt till True förhindras också att användaren tar bort konfigurationen.<br><br>Sätt värdet till False för att lägga till de push-överförda värdera, vilket bevarar de befintliga inställningarna. Om samma server-URL redan har konfigurerats i mobilappen, lämnas den konfigurationen i befintligt skick. Användaren uppmanas inte att logga in på nytt för samma server. |
 
-## <a name="data-protection-settings-ios"></a>Inställningar för dataskydd (iOS)
+## <a name="data-protection-settings-ios-and-android"></a>Inställningar för dataskydd (iOS och Android)
 
-Med Power BI-appen för iOS kan administratörer anpassa standardkonfigurationen av säkerhets- och sekretessinställningar. Du kan tvinga användarna att använda ansiktsigenkänning, fingeravtryck eller lösenord för att kunna öppna Power BI-appen.
+Med Power BI-mobilappen för iOS och Android kan administratörer anpassa standardkonfigurationen av säkerhets- och sekretessinställningar. För iOS kan du tvinga användarna att använda ansiktsigenkänning, fingeravtryck eller lösenord när de öppnar Power BI-mobilappen. För Android kan du tvinga användarna att använda biometrisk autentisering (fingeravtrycks-ID).
 
 | Nyckel | Typ | Beskrivning |
 |---|---|---|
-| com.microsoft.powerbi.mobile.ForceDeviceAuthentication | Boolesk | Standardvärdet är False. <br><br>Biometrik, som fingeravtryck eller ansiktsigenkänning, kan krävas för att användare ska kunna öppna appen på sin enhet. Om det behövs kan biometrik användas utöver vanlig autentisering.<br><br>Om du använder principer för appskydd rekommenderar Microsoft att du inaktiverar den här inställningen för att förhindra dubbla inloggningar. |
+| com.microsoft.powerbi.mobile.ForceDeviceAuthentication | Boolesk | Standardvärdet är False. <br><br>Biometrisk autentisering med Touch ID eller Face ID (iOS) eller fingeravtrycks-ID (Android) kan krävas när användarna ska öppna appen på sin enhet. Om det behövs kan biometrik användas utöver vanlig autentisering.<br><br>Om du använder principer för appskydd rekommenderar Microsoft att du inaktiverar den här inställningen för att förhindra dubbla inloggningar. |
+
+>[!NOTE]
+>Inställningarna för dataskydd tillämpas endast på Android-enheter som stöder biometrisk autentisering.
 
 ## <a name="interaction-settings-ios-and-android"></a>Inställningar för interaktion (iOS och Android)
 

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/14/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 60432c110df7c20aa13969d70ed7c2a90d0ef575
-ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
+ms.openlocfilehash: 9f9b0ec77d0273374d940332abd5d186c2604866
+ms.sourcegitcommit: e7fda395b47e404c61e961a60816b7a1b0182759
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80114852"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80979832"
 ---
 # <a name="create-and-use-r-visuals-in-power-bi"></a>Skapa och använd R-visualiseringar i Power BI
 Visuella R-objekt kan för närvarande kan bara skapas i **Power BI Desktop**, och sedan publiceras i Power BI-tjänsten. Läs mer om hur du skapar visuella R-objekt i [Skapa visuella Power BI-objekt med R](../desktop-r-visuals.md).
@@ -94,6 +94,7 @@ Visuella R-objekt i Power BI-tjänsten har några begränsningar:
 * Visuella R-objekt svarar på markering av andra visuella objekt, men du kan inte korsfiltrera andra element genom att klicka på element i det visuella R-objektet.
 * Visuella R-objekt stöds för närvarande inte för datatypen *Time*. Använd Date/Time istället.
 * Visuella R-objekt visas inte när du använder **Publicera på webben**.
+* Visuella R-objekt stöder inte byte av namn på indatakolumner. Kolumner refereras till med sitt ursprungliga namn under skriptkörningen.
 * Visuella R-objekt skrivs för närvarande inte ut med utskrift av instrumentpanel och rapporter
 * Visuella R-objekt stöds för närvarande inte i Analysis Services i DirectQuery-läge
 * Visuella R-objekt kan konvertera textetiketter till grafiska element. Om du gör det i Power BI-tjänsten måste du utföra följande ytterligare steg:

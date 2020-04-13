@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 03/02/2020
+ms.date: 04/08/2020
 ms.author: maggies
-ms.openlocfilehash: 08eca8ecb9aa941c2670a801113bc711bff409b2
-ms.sourcegitcommit: d65da4738f011beec8f4423085cbd483511cdfb0
+ms.openlocfilehash: 166f72a717c99457e1d6b8e9a1f30535a9b4686f
+ms.sourcegitcommit: e7fda395b47e404c61e961a60816b7a1b0182759
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "78237533"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80979855"
 ---
 # <a name="power-bi-report-data-sources-in-power-bi-report-server"></a>Power BI-rapportdatakällor i Power BI-rapportserver
 Power BI-rapporter kan ansluta till ett antal datakällor. Beroende på hur data används, finns olika datakällor tillgängliga. Data kan importeras eller så kan data frågas direkt med DirectQuery eller en live-anslutning till SQL Server Analysis Services.
@@ -156,7 +156,7 @@ Power BI-rapportservern har inte stöd för OAuth-baserad autentisering för mod
 | SharePoint Online-lista |Nej |Nej |Nej |Nej |
 | Snowflake |Nej |Nej |Nej |Nej |
 | Sybase-databas |Nej |Nej |Ja |Ja |
-| Teradata |Nej |Nej |Ja |Ja |
+| Teradata |Nej |Nej |Ja |Ja** |
 | appFigures (beta) |Nej |Nej |Nej |Nej |
 | Azure Analysis Services-databas (beta) |Nej |Nej |Nej |Nej |
 | Azure Cosmos DB (beta) |Nej |Nej |Nej |Nej |
@@ -189,6 +189,8 @@ Power BI-rapportservern har inte stöd för OAuth-baserad autentisering för mod
 | Visual Studio Team Services (beta) |Nej |Nej |Nej |Nej |
 | Webtrends (beta) |Nej |Nej |Nej |Nej |
 | Zendesk (beta) |Nej |Nej |Nej |Nej |
+
+**Användning av LDAP-autentisering med Teradata (aktiveras i Power BI Desktop med kommandot ”setx PBI_EnableTeradataLdap true” i Kommandotolken) stöds inte för modelluppdatering.
 
 ## <a name="list-of-supported-authentication-methods-for-directquery"></a>Lista med autentiseringsmetoder som stöds för DirectQuery
 

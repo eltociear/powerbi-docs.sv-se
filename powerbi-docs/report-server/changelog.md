@@ -7,13 +7,13 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 03/02/2020
-ms.openlocfilehash: f27f03a88a39ce046ae64454b9b092e87c07d0a3
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.date: 04/08/2020
+ms.openlocfilehash: ff63e38e52a3c8970edfa5b6d9e2ccabeff2e16a
+ms.sourcegitcommit: e7fda395b47e404c61e961a60816b7a1b0182759
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79381110"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80979809"
 ---
 # <a name="change-log-for-power-bi-report-server"></a>Ändringslogg för Power BI-rapportservern
 
@@ -29,7 +29,7 @@ Detaljerad information om nya funktioner finns [Nyheter i Power BI-rapportserver
            -  Korrigering för Power BI-rapporter kan inte överföras för vissa datakällor
            -  Korrigering för portalens hämtningsplats för Desktop-länk för Power BI-rapportservern
            -  Korrigering för DynamicImageDPI för Excel-återgivning
-           -  Korrigering för Oracle-anslutningar med felaktig trådkultur i vissa scenarier med flera användare
+           -  Korrigering för Oracle-anslutningar med felaktig trådkultur i vissa scenarier med flera användare (mer information finns i [UseInstalledUICulture-dokumentationen] (https://docs.microsoft.com/power-bi/report-server/connect-data-sources) )
            -  Korrigering för CustomHeaders-standardvärdet som orsakar problem vid inbäddning av rapporter
            -  Korrigering för SQL-parameternamn som genereras felaktigt i vissa fall
     - *Version: 1.6.7327.3007 (version 15.0.1102.759), utgiven: 23 januari 2020*

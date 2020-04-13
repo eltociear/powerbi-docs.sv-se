@@ -7,20 +7,23 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 05/31/2019
+ms.date: 04/06/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: a61288c9792d562e9a5efecd43d879d6df6d1782
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 268aa73506be5cc025645672f402b88646497b1c
+ms.sourcegitcommit: 2b93c1cc29aaf199ab7441a04c8e5ae49ffca5d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74698887"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80813085"
 ---
 # <a name="monitor-premium-capacities-with-the-app"></a>Övervaka Premium-funktioner med appen
 
 Övervakning av dina kapaciteter är viktigt för att fatta välgrundade beslut om hur du bäst använder dina Premium-kapacitetsresurser. Du kan övervaka kapacitet med administratörsportalen eller med appen **Power BI Premium Capacity Metrics**. I den här artikeln beskrivs appen Premium Capacity Metrics. Appen ger den mest djupgående informationen om hur kapaciteterna fungerar. För en översikt på högre nivå över genomsnittliga användningsmått de senaste sju dagarna kan du använda administratörsportalen. Mer information om övervakning i portalen finns i [Övervaka Premium-kapaciteter i administratörsportalen](service-admin-premium-monitor-portal.md).
 
 Appen uppdateras regelbundet med nya funktioner. Se till att du kör den senaste versionen. Om du redan har en tidigare version av appen installerad är det bäst att ta bort den från dina appar och sedan trycka på CTRL+F5 för att uppdatera.
+
+> [!IMPORTANT]
+> Om din Power BI Premium-kapacitet har hög resursanvändning, som medför prestanda- och tillförlitlighetsproblem, kan du få e-postmeddelanden för att identifiera och lösa problemet. Detta kan vara ett effektivt sätt att felsöka överbelastade kapaciteter. Mer information finns i [meddelanden om kapacitet och tillförlitlighet](service-interruption-notifications.md#capacity-and-reliability-notifications).
 
 ## <a name="install-the-app"></a>Installera appen
 
@@ -60,7 +63,7 @@ Instrumentpanelen innehåller följande mått:
 
 #### <a name="top"></a>Överkant
 
-| Mått | Beskrivning |
+| Metric | Beskrivning |
 | --- | --- |
 | Version | Appversion. | 
 | Kapacitet | Antal kapaciteter som du är administratör för. | 
@@ -69,7 +72,7 @@ Instrumentpanelen innehåller följande mått:
 
 #### <a name="system-summary"></a>Systemöversikt
 
-| Mått | Beskrivning |
+| Metric | Beskrivning |
 | --- | --- |
 | Högsta utnyttjandekapacitet av processor | Kapacitet med det högsta antalet gånger som processorn översteg 80 % av tröskelvärdena under de senaste sju dagarna. |
 | Högsta utnyttjandeantal för processorn | Antal gånger som processorn av den namngivna kapaciteten översteg 80 % av tröskelvärdena under de senaste sju dagarna. | 
@@ -79,7 +82,7 @@ Instrumentpanelen innehåller följande mått:
 
 #### <a name="dataset-summary"></a>Översikt över datamängd
 
-| Mått | Beskrivning |
+| Metric | Beskrivning |
 | --- | --- |
 | Datauppsättningar | Totalt antal datauppsättningar för alla arbetsytor i dina kapaciteter.|
 | Genomsnittlig storlek på datauppsättningarna (MB) | Genomsnittlig storlek för datauppsättningar för alla arbetsytor i dina kapaciteter.|  
@@ -106,7 +109,7 @@ Instrumentpanelen innehåller följande mått:
 
 #### <a name="dataflow-summary"></a>Översikt över dataflöde
 
-| Mått | Beskrivning |
+| Metric | Beskrivning |
 | --- | --- |
 | Dataflöden |  Totalt antal dataflöden för alla arbetsytor i dina kapaciteter.|
 | Uppdateringar totalt | Totalt antal uppdateringar under de senaste sju dagarna.|  
@@ -120,7 +123,7 @@ Instrumentpanelen innehåller följande mått:
 
 #### <a name="paginated-report-summary"></a>Översikt över sidnumrerade rapporter
 
-| Mått | Beskrivning |
+| Metric | Beskrivning |
 | --- | --- |
 | Sidnumrerade rapporter |  Totalt antal sidnumrerade rapporter för alla arbetsytor i dina kapaciteter. |
 | Totalt antal visningar | Totalt antal gånger som alla rapporter har visats av användare. | 
@@ -134,7 +137,7 @@ Instrumentpanelen innehåller följande mått:
 
 #### <a name="ai-summary"></a>AI-sammanfattning
 
-| Mått | Beskrivning |
+| Metric | Beskrivning |
 | --- | --- |
 | Körning av AI-funktion | Totalt antal körningar under de senaste sju dagarna. |
 | Tillförlitlighet för AI-funktionskörning (%) | Antal lyckade körningar delat på det totala antalet körningar under de senaste sju dagarna. |

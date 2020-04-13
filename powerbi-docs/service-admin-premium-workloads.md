@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 03/24/2020
+ms.date: 04/08/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: d468ab70f47edcd5487b548596f4aea4080cd994
-ms.sourcegitcommit: 8267a7383d6506dae42f87e4f4a2362b875b2911
+ms.openlocfilehash: aa44f0c8c11cb26ecfc7763ec127ca8a8505536a
+ms.sourcegitcommit: e7fda395b47e404c61e961a60816b7a1b0182759
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80329630"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80979924"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Konfigurera arbetsbelastningar i en Premium-kapacitet
 
@@ -65,7 +65,7 @@ Som standard är datamängdernas arbetsbelastning aktiverad och kan inte inaktiv
 | **Maximalt minne (%)** | Den maximala procentandelen tillgängligt minne som datamängder kan använda i en kapacitet. |
 | **XMLA-slutpunkt** | Anger att anslutningar från klientprogram följer medlemsuppsättningen för säkerhetsgrupper på nivåerna för arbetsyta och app. Mer information finns i [Ansluta till datamängder med klientprogram och verktyg](service-premium-connect-tools.md). |
 | **Maximalt antal mellanliggande raduppsättningar** | Det maximala antalet mellanliggande rader som returneras av DirectQuery. Standardvärdet är 1 000 000 och det tillåtna intervallet är mellan 100 000 och 2 147 483 647. |
-| **Maximal storlek för offlinedatamängd (GB)** | Maximal storlek för offlinedatamängden i minnet. Detta är den komprimerade storleken på disken. Standardvärdet anges av SKU:n och det tillåtna intervallet är 0,1–10 GB. |
+| **Maximal storlek för offlinedatamängd (GB)** | Maximal storlek för offlinedatamängden i minnet. Detta är den komprimerade storleken på disken. Standardvärdet är 0, vilket är den högsta gränsen som definieras av SKU. Det tillåtna intervallet är mellan 0 och storleksgränsen för kapacitet. |
 | **Maximalt antal resultatraduppsättningar** | Det maximala antalet rader som returneras i en DAX-fråga. Standardvärdet är -1 (ingen gräns) och det tillåtna intervallet är mellan 100 000 och 2 147 483 647. |
 | **Minnesgräns för frågor (%)** | Den maximala procentandel tillgängligt minne i arbetsbelastningen som kan användas för att köra en MDX- eller DAX-fråga. Standardvärdet är 0, vilket resulterar i att en automatisk SKU-specifik minnesgräns för frågor används. |
 | **Tidsgräns för frågor (sekunder)** | Maximal tid innan tidsgränsen för frågan uppnås. Standardvärdet är 3 600 sekunder (en timme). Värdet 0 anger att frågorna inte har någon tidsgräns. |
@@ -203,6 +203,9 @@ Arbetsbelastningar kan aktiveras och tilldelas till en kapacitet med hjälp av [
 ## <a name="monitoring-workloads"></a>Övervaka arbetsbelastningar
 
 [Power BI Premium-appen för kapacitetsmått](service-admin-premium-monitor-capacity.md) ger mått på datauppsättning, dataflöden och sidnumrerade rapporter för att övervaka arbetsbelastningar som aktiverats för din kapacitet. 
+
+> [!IMPORTANT]
+> Om din Power BI Premium-kapacitet har hög resursanvändning, som medför prestanda- och tillförlitlighetsproblem, kan du få e-postmeddelanden för att identifiera och lösa problemet. Mer information finns i [meddelanden om kapacitet och tillförlitlighet](service-interruption-notifications.md#capacity-and-reliability-notifications).
 
 ## <a name="next-steps"></a>Nästa steg
 
