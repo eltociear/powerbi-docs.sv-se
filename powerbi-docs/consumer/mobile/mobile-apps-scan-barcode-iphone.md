@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/02/2019
 ms.author: painbar
-ms.openlocfilehash: ee3cfec0c735ad52f9a036e75f61c1ab0400567b
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: 043f27a2fb695811ac867689b4a63efdefded2e6
+ms.sourcegitcommit: 9b806dfe62c2dee82d971bb4f89d983b97931b43
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75217832"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80802059"
 ---
 # <a name="scan-a-barcode-with-your-device-from-the-power-bi-mobile-app"></a>Skanna en streckkod med din enhet från Power BI-mobilappen
 Skanna streckkoder ute i världen och gå direkt till filtrerad BI-information i Power BI-mobilappen.
@@ -21,9 +21,9 @@ Skanna streckkoder ute i världen och gå direkt till filtrerad BI-information i
 
 Gäller för:
 
-| ![iPhone](./media/mobile-apps-quickstart-view-dashboard-report/iphone-logo-30-px.png) | ![Android](./media/mobile-apps-quickstart-view-dashboard-report/android-logo-30-px.png) | 
-|:--- |:--- |
-| iPhone | Android (telefon, surfplatta) | 
+| ![iPhone](./media/mobile-apps-qr-code/ios-logo-40-px.png) | ![iPad-surfplattor](./media/mobile-apps-qr-code/ios-logo-40-px.png) | ![Android-telefon](././media/mobile-apps-qr-code/android-logo-40-px.png) | ![Android-surfplatta](././media/mobile-apps-qr-code/android-logo-40-px.png) |
+|:--- |:--- |:--- |:--- |
+|iPhone-telefoner |iPad-surfplattor |Android-telefoner |Android-surfplattor |
 
 Anta att en kollega har [taggat ett streckkodsfält i en rapport i Power BI Desktop](../../desktop-mobile-barcodes.md) och delat rapporten med dig. 
 
