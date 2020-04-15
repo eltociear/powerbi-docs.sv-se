@@ -49,7 +49,7 @@ Här följer stegen för att bläddra efter och välja visuella objekt från onl
 
    ![Visuellt R-objekt 3a](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_3a.png)
 
-   Du behöver inte installera R för att använda R-baserade visuella Power BI-objekt i **Power BI-tjänsten**, men om du vill använda R-baserade visuella Power BI-objekt i **Power BI Desktop***måste* du installera R på den lokala datorn. Du kan hämta R från följande platser:
+   Du behöver inte installera R för att använda R-baserade visuella Power BI-objekt i **Power BI-tjänsten**, men om du vill använda R-baserade visuella Power BI-objekt i **Power BI Desktop** *måste* du installera R på den lokala datorn. Du kan hämta R från följande platser:
 
    * [CRAN](https://cran.r-project.org/)
    * [MRO](https://mran.microsoft.com/)

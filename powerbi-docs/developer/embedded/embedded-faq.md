@@ -96,7 +96,7 @@ Du kan lösa det här problemet genom att anropa [refreshUserPermissions API](ht
 
 Du kan använda PBI-portalen för att ta reda på regionen för din PBI-klientorganisation.
 
-[https://app.powerbi.com/](`https://app.powerbi.com/`) > ? > Om Power BI
+`https://app.powerbi.com/` > ? > Om Power BI
 
 ![Om Power BI](media/embedded-faq/about-01.png)
 ![Klientorganisationsregion](media/embedded-faq/tenant-location-01.png)
