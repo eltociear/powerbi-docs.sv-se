@@ -81,6 +81,8 @@
           items:
             - name: Skapa och använda dataflöden
               href: ../service-dataflows-create-use.md
+            - name: Marknadsför eller certifiera dataflöden
+              href: service-dataflows-promote-certify.md
             - name: Använda den förbättrade beräkningsmotorn med dataflöden
               href: ../service-dataflows-enhanced-compute-engine.md
             - name: Beräknade entiteter med Power BI Premium

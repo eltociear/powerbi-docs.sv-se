@@ -1,0 +1,21 @@
+- name: Utbildningskatalog
+  href: index.yml
+  items:
+    - name: Företagsbeslutsfattare
+      href: learning-catalog-bdm.md
+    - name: Konsumenter
+      href: learning-catalog-consumer.md
+    - name: Rapportgenererare
+      href: learning-catalog-report-creator.md
+    - name: Dataanalytiker
+      href: learning-catalog-data-analyst.md
+    - name: Administratörer
+      href: learning-catalog-administrator.md
+    - name: Utvecklare
+      href: learning-catalog-developer.md
+    - name: Förförsäljningsroller för partner
+      href: learning-catalog-presales.md
+    - name: Funktionella konsulter
+      href: learning-catalog-functional-consultant.md
+    - name: Lösningsarkitekter
+      href: learning-catalog-solution-architect.md

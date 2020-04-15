@@ -76,6 +76,8 @@
               href: service-security-data-protection-metrics-report.md
         - name: Säkerhet på radnivå
           href: ../service-admin-rls.md
+        - name: Konfigurera datauppsättnings- och dataflödescertifiering
+          href: service-admin-setup-certification.md
         - name: Konfigurera mobilappar med Intune
           href: ../service-admin-mobile-intune.md
         - name: Power BI Premium

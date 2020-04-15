@@ -48,6 +48,8 @@
           href: embed-from-apps.md
         - name: Exportera rapport till fil
           href: export-to.md
+        - name: Exportera den sidnumrerade rapporten till fil
+          href: export-paginated-report.md
         - name: Installera appar automatiskt
           href: embed-auto-install-app.md
         - name: Skapa en Azure Active Directory-klient
