@@ -32,6 +32,9 @@
             - name: Interaktiv utbildning
               tocHref: /power-bi/guided-learning/
               topicHref: /power-bi/guided-learning/
+            - name: Utbildningskatalog
+              tocHref: /power-bi/learning-catalog/
+              topicHref: /power-bi/learning-catalog/index
             - name: Rapportserver
               tocHref: /power-bi/report-server/
               topicHref: /power-bi/report-server/index

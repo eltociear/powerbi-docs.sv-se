@@ -64,6 +64,8 @@
               href: dax-avoid-avoid-filter-as-filter-argument.md
         - name: Power BI-rapporter
           items:
+            - name: Separata rapporter från modeller
+              href: report-separate-from-model.md
             - name: Utöka visuella objekt med knappbeskrivningar för rapportsidor
               href: report-page-tooltips.md
             - name: Använd detaljerad information för rapportsidor

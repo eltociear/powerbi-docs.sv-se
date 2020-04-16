@@ -16,14 +16,24 @@
       items:
         - name: Administratörsrollen i Microsoft 365
           href: ../service-admin-role.md
+        - name: Licensiering för din organisation
+          href: ../service-admin-licensing-organization.md
+        - name: Power BI för amerikanska myndigheter
+          items:
+            - name: Power BI för amerikanska myndigheter
+              href: ../service-govus-overview.md
+            - name: 'Registrera en myndighet inom USA:s förvaltning'
+              href: ../service-govus-signup.md
+        - name: Power BI i regionala moln
+          items:
+            - name: Migrera till Go Lokala tyska regioner
+              href: service-admin-migrate-data-germany.md
+            - name: Vanliga frågor och svar för molnkunder i Tyskland
+              href: ../service-govde-faq.md
         - name: Vanliga frågor och svar
           href: ../service-admin-faq.md
         - name: Vanliga frågor och svar om hög tillgänglighet och redundans
           href: ../service-admin-failover.md
-        - name: Migrera till Go Lokala tyska regioner
-          href: service-admin-migrate-data-germany.md
-        - name: Vanliga frågor och svar för molnkunder i Tyskland
-          href: ../service-govde-faq.md
         - name: Power BI Premium
           items:
             - name: Hantera Premium-kapaciteter
@@ -38,14 +48,14 @@
       items:
         - name: Licensiering och registrering
           items:
-            - name: Licensiering för din organisation
-              href: ../service-admin-licensing-organization.md
+            - name: Få Power BI för din organisation
+              href: service-admin-org-subscription.md
             - name: Köp Power BI Pro
               href: ../service-admin-purchasing-power-bi-pro.md
-            - name: Power BI för amerikanska myndigheter
-              href: ../service-govus-overview.md
-            - name: 'Registrera en myndighet inom USA:s förvaltning'
-              href: ../service-govus-signup.md
+            - name: Inaktivera självbetjäningsregistrering
+              href: service-admin-disable-self-service.md
+            - name: Visa och hantera användarlicenser
+              href: service-admin-manage-licenses.md
             - name: Registrera dig med en utvärderingsversion av Microsoft 365
               href: ../service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md
             - name: Lägga till Power BI med en Microsoft 365-partner

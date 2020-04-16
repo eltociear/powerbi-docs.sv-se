@@ -13,12 +13,12 @@ metadata:
   author: maggiesMSFT
   ms.author: maggies
   ms.date: 03/31/2020
-  ms.openlocfilehash: ac6ecb181cd5b06e54ab611976532638d43359f6
-  ms.sourcegitcommit: 9ecd7cadb9ff47f0fc0e400730777cc4dadbd80d
+  ms.openlocfilehash: 0ad39302737284ecbde50a8810b740d68706c809
+  ms.sourcegitcommit: b2cb0b02bdc451bf11a92a68f2c4d560a811f563
   ms.translationtype: HT
   ms.contentlocale: sv-SE
-  ms.lasthandoff: 04/01/2020
-  ms.locfileid: "80487708"
+  ms.lasthandoff: 04/16/2020
+  ms.locfileid: "81439405"
 highlightedContent:
   items:
   - title: Skapa en COVID-19-rapport med data för USA
@@ -217,19 +217,19 @@ conceptualContent:
     footerLink:
       url: guidance/index.yml
       text: Visa mer
-  - title: Läs mer
+  - title: Utbildningskatalog
     links:
-    - url: https://docs.microsoft.com/learn/modules/explore-power-bi-service/
+    - url: learning-catalog/learning-catalog-bdm.md
       itemType: learn
-      text: Utforska vad du kan göra med Power BI
-    - url: https://docs.microsoft.com/learn/modules/analyze-data-power-bi/
+      text: Företagsbeslutsfattare
+    - url: guided-learning/introductiontodax.yml?tutorial-step=1
       itemType: learn
-      text: Analysera data
-    - url: https://docs.microsoft.com/learn/modules/get-started-with-power-bi/
+      text: Komma igång med DAX
+    - url: learning-catalog/learning-catalog-solution-architect.md
       itemType: learn
-      text: Komma igång med att bygga
+      text: Lösningsarkitekter
     footerLink:
-      url: guided-learning/index.yml
+      url: learning-catalog/index.yml
       text: Visa mer
 additionalContent:
   sections:

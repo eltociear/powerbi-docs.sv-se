@@ -19,3 +19,5 @@
       href: learning-catalog-functional-consultant.md
     - name: Lösningsarkitekter
       href: learning-catalog-solution-architect.md
+    - name: Introduktion till DAX
+      href: ../guided-learning/introductiontodax.yml?tutorial-step=1
