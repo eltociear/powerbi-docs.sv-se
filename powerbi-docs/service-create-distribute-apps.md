@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 03/23/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 0b420a41474349f86be682987ff9f8144debab11
-ms.sourcegitcommit: 075a0ade4134d28f578fda78996595e8cd9f3555
+ms.openlocfilehash: 93cb384c06fc78f8d006aed02aef323bf3a72d31
+ms.sourcegitcommit: 915cb7d8088deb0d9d86f3b15dfb4f6f5b1b869c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80147387"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "81006387"
 ---
 # <a name="publish-an-app-in-power-bi"></a>Publicera en app i Power BI
 
@@ -43,25 +43,26 @@ När instrumentpanelerna och rapporterna på din arbetsyta är redo kan du välj
 
 1. I arbetsytans listvy väljer du vilka instrumentpaneler och rapporter som du vill **inkludera i appen**.
 
-     ![Välja instrumentpanelen för publicering](media/service-create-distribute-apps/power-bi-apps-incude-dashboard.png)
+    ![Välja instrumentpanelen för publicering](media/service-create-distribute-apps/power-bi-apps-incude-dashboard.png)
 
-     Om du väljer att inte inkludera en rapport som har en relaterad instrumentpanel visas en varning intill rapporten. Du kan fortfarande publicera appen, men den relaterade instrumentpanelen får inte panelerna från den rapporten.
+    Om du väljer att inte inkludera en rapport som har en relaterad instrumentpanel visas en varning intill rapporten. Du kan fortfarande publicera appen, men den relaterade instrumentpanelen får inte panelerna från den rapporten.
 
-     ![Varning om relaterad instrumentpanel](media/service-create-distribute-apps/power-bi-apps-report-warning.png)
+    ![Varning om relaterad instrumentpanel](media/service-create-distribute-apps/power-bi-apps-report-warning.png)
 
 2. Välj knappen **Publicera app** i det övre högra hörnet för att starta processen med att skapa och publicera en app från arbetsytan.
    
-     ![Publicera app](media/service-create-distribute-apps/power-bi-apps-publish-button.png)
+    ![Publicera app](media/service-create-distribute-apps/power-bi-apps-publish-button.png)
 
 3. I **Konfiguration** fyller du i namn och beskrivning som hjälper andra att hitta appen. Du kan ange en temafärg för att göra den lite personlig. Du kan även lägga till en länk till en supportwebbplats.
    
-     ![Skapa appen](media/service-create-distribute-apps/power-bi-apps-build-your-apps.png)
+    ![Skapa appen](media/service-create-distribute-apps/power-bi-apps-build-your-apps.png)
 
 4. I **Navigering** väljer du det innehåll som ska publiceras som en del av appen. Därefter lägger du till appnavigering för att ordna innehållet i avsnitt. Mer information finns i [Utforma appens navigeringsfunktion](#design-the-navigation-experience) i den här artikeln.
    
-     ![Appnavigering](media/service-create-distribute-apps/power-bi-apps-navigation.png)
+    ![Appnavigering](media/service-create-distribute-apps/power-bi-apps-navigation.png)
 
 5. På **Behörigheter** väljer du vilka som har åtkomst till appen och vad de kan göra med den. 
+
     - I [klassiska arbetsytor](service-create-workspaces.md): alla i din organisation, specifika personer eller Azure Active Directory-säkerhetsgrupper (AAD).
     - I [arbetsytor med ny funktion](service-create-the-new-workspaces.md): specifika personer, AAD-säkerhetsgrupper och distributionslistor samt Office 365-grupper. Alla arbetsyteanvändare får automatiskt åtkomst till appen för arbetsytan.
     - Du kan tillåta appanvändare att ansluta till appens underliggande datamängder genom att ge dem skapa-behörighet. De ser dessa datamängder när de söker efter delade datamängder. Läs mer om att [tillåta att användare ansluter till appens datamängder](#allow-users-to-connect-to-datasets) i den här artikeln.
@@ -73,24 +74,24 @@ När instrumentpanelerna och rapporterna på din arbetsyta är redo kan du välj
 
 6. Du kan installera appen automatiskt för mottagarna om Power BI-administratören har aktiverat den här inställningen för dig i Power BI-administratörsportalen. Läs mer om [automatisk installation av en app](#automatically-install-apps-for-end-users) i den här artikeln.
 
-     ![Appbehörigheter](media/service-create-distribute-apps/power-bi-apps-permissions.png)
+    ![Appbehörigheter](media/service-create-distribute-apps/power-bi-apps-permissions.png)
 
-7. När du väljer **Publicera app** visas ett meddelande som bekräftar att appen är redo för publicering. I dialogrutan **Dela den här appen** kan du kopiera den URL som är en direktlänk till den här appen.
+7. När du väljer **Publicera app** visas ett meddelande som bekräftar att appen är redo för publicering. I dialogrutan **Dela den här appen** kan du kopiera webbadressen som är en direktlänk till appen.
    
-     ![Slutföra appen](media/service-create-distribute-apps/power-bi-apps-success.png)
+    ![Slutföra appen](media/service-create-distribute-apps/power-bi-apps-success.png)
 
-Du kan skicka direktlänken till de personer som du har delat den med, eller så kan de leta upp din app på fliken Appar genom att gå till **Ladda ned och utforska fler appar från AppSource**. Läs mer om [app-upplevelsen för företagsanvändare](consumer/end-user-apps.md).
+Du kan skicka direktlänken till de personer du har delat den med, eller så kan de leta upp din app på fliken Appar genom att gå till **Ladda ned och utforska fler appar från AppSource**. Läs mer om [app-upplevelsen för företagsanvändare](consumer/end-user-apps.md).
 
 ## <a name="change-your-published-app"></a>Ändra en publicerad app
-När du har publicerat en app kan du vilja ändra eller uppdatera den. Det är enkelt att uppdatera den om du är administratör eller medlem för den nya arbetsytan. 
+När du har publicerat en app kan du vilja ändra eller uppdatera den. Det är enkelt att uppdatera den om du är administratör eller medlem på den nya arbetsytan. 
 
 1. Öppna den arbetsyta som motsvarar appen. 
    
-     ![Öppna arbetsyta](media/service-create-distribute-apps/power-bi-apps-open-workspace.png)
+    ![Öppna arbetsyta](media/service-create-distribute-apps/power-bi-apps-open-workspace.png)
 
 2. Gör de ändringar du vill för instrumentpanelerna eller rapporterna.
  
-     Arbetsytan är ditt mellanlagringsområde så att ändringarna inte börjar gälla i appen förrän du gör en ny publicering. På så sätt kan du göra ändringar utan att påverka de publicerade apparna.  
+    Arbetsytan är ditt mellanlagringsområde så att ändringarna inte börjar gälla i appen förrän du gör en ny publicering. På så sätt kan du göra ändringar utan att påverka de publicerade apparna.  
  
     > [!IMPORTANT]
     > Om du tar bort en rapport och uppdaterar appen förlorar dina appkonsumenter alla anpassningar såsom bokmärken, kommentarer och så vidare även om du lägger till rapporten i appen igen.  
@@ -99,7 +100,7 @@ När du har publicerat en app kan du vilja ändra eller uppdatera den. Det är e
    
 1. Uppdatera **Konfiguration**, **Navigering** och **Behörigheter** om det behövs, och välj sedan **Uppdatera app**.
    
-De personer som du har publicerat appen för ser automatiskt den uppdaterade versionen av appen. 
+De personer du har publicerat appen för ser automatiskt den uppdaterade versionen av appen. 
 
 ## <a name="design-the-navigation-experience"></a>Utforma navigeringsfunktionen
 Med alternativet **Nytt navigeringsverktyg** kan du skapa en anpassad navigering för din app. Den anpassade navigeringen gör det enklare för användarna att hitta och använda innehåll i appen. I befintliga appar är det här alternativet inaktiverat, och i nya appar är alternativet aktiverat som standard.
@@ -111,6 +112,7 @@ När du aktiverar **Nytt navigeringsverktyg** kan du utforma en anpassad naviger
 ![Appnavigering](media/service-create-distribute-apps/power-bi-apps-navigation.png)
 
 Du kan anpassa appnavigering ytterligare genom att göra följande:
+
 * Ändra ordningen på elementen med hjälp av uppåt-/nedåtpilen. 
 * Byta namn på objekt i **Rapportinformation**, **Instrumentpanelsinformation** och **Arbetsboksinformation**.
 * Dölja vissa objekt från navigeringen.
@@ -121,16 +123,20 @@ När du lägger till en **länk** kan du i **Länkinformation** välja var länk
 
 ### <a name="considerations-for-using-the-new-navigation-builder-option"></a>Att tänka på vid användning av alternativet för nytt navigeringsverktyg
 Här följer allmänna saker att tänka på vid användning av det nya navigeringsverktyget:
-* Rapportsidor visas i appnavigeringsområdet som ett expanderbart avsnitt
-* Om du stänger av det nya navigeringsverktyget och sedan publicerar eller uppdaterar appen förlorar du de anpassningar som du har gjort. Till exempel förloras avsnitt, organisering, länkar och anpassade namn för navigeringsobjekt.
+
+* Rapportsidor visas som ett expanderbart avsnitt i appnavigeringsområdet. När en rapport bara har en synlig sida visas bara rapportnamnet. Om du klickar på rapportnamnet i navigeringsområdet öppnas den första sidan i rapporten. 
+
+    > [!NOTE]
+    > Rapporten kanske också bara har en synlig sida om du har konfigurerat navigeringen till resten av sidorna med knappar eller detaljvisningsåtgärder.
+
+* Om du stänger av det nya navigeringsverktyget och sedan publicerar eller uppdaterar appen förlorar du de anpassningar du har gjort. Till exempel förloras avsnitt, organisering, länkar och anpassade namn för navigeringsobjekt.
+* Du kan också välja att inte använda appverktyget.
 
 När du lägger till länkar till appnavigeringen och väljer alternativet för innehållsområde:
 * Se till att länken kan bäddas in. Vissa tjänster blockerar inbäddning av sitt innehåll i tredjepartswebbplatser som Power BI.
 * Inbäddning av innehåll från Power BI-tjänsten såsom rapporter och instrumentpaneler på andra arbetsytor stöds inte. 
 * Bädda in Power BI-rapportserverinnehåll via dess inbyggda inbäddning av URL-innehåll från en lokal distribution. Följ stegen i [skapa URL för Power BI-rapportserver](https://docs.microsoft.com/power-bi/report-server/quickstart-embed#create-the-power-bi-report-url) för att hämta URL:en. Tänk på att vanliga autentiseringsregler gäller. Därför kräver visning av innehållet en VPN-anslutning till den lokala servern. 
 * En säkerhetsvarning visas överst i det inbäddade innehållet för att ange att innehållet inte finns i Power BI.
-
-
 
 ## <a name="automatically-install-apps-for-end-users"></a>Installera appar automatiskt för slutanvändare
 Om en administratör ger dig behörighet kan du installera appar automatiskt och *push-överföra* dem till slutanvändare. Den här push-funktionen gör det enklare att distribuera rätt appar till rätt personer eller grupper. Appen visas automatiskt i slutanvändarnas innehållslista för appar. De behöver inte leta upp den i Microsoft AppSource eller följa en installationslänk. Se artikeln om hur administratörer möjliggör [push-överföring av appar till slutanvändare](service-admin-portal.md#push-apps-to-end-users) i Power BI-administratörsportalen.
@@ -154,7 +160,7 @@ Här är saker som du bör ha i åtanke när du pushar appar till slutanvändare
 
 * Om användarna inte ser appen omedelbart i applistan bör de uppdatera eller stänga och öppna webbläsaren igen.
 
-* Försök att inte överväldiga användarna. Se till att inte pusha för många appar, så att användarna uppfattar det som att de förinstallerade apparna är användbara för dem. Det är bäst att kontrollera vem som kan pusha appar till slutanvändarna så att tidsaspekten kan samordnas. Upprätta en kontaktpunkt i för att push-överföra appar i din organisation till slutanvändarna.
+* Försök att inte överväldiga användarna. Se till att inte pusha för många appar, så att användarna uppfattar det som att de förinstallerade apparna är användbara för dem. Du bör styra vilka som kan push-överföra appar till slutanvändarna så att tidsaspekten kan samordnas. Upprätta en kontaktpunkt i för att push-överföra appar i din organisation till slutanvändarna.
 
 * Appar installeras inte automatiskt för gästanvändare som inte har godkänt en inbjudan.  
 
@@ -181,22 +187,28 @@ Alla medlemmar för en arbetsyta kan avpublicera appen.
 
 * På en arbetsyta väljer du ellipsen ( **…** ) i det övre högra hörnet > **Avpublicera appen**.
   
-     ![Ta bort appen](media/service-create-distribute-apps/power-bi-app-unpublish.png)
+    ![Ta bort appen](media/service-create-distribute-apps/power-bi-app-unpublish.png)
 
 Den här åtgärden avinstallerar appen för alla som du har publicerat den till och de har inte längre åtkomst till den. Varken arbetsytan eller dess innehåll tas bort.
 
 ## <a name="view-your-published-app"></a>Visa din publicerade app
 
-När dina appanvändare öppnar appen ser de den navigering som du skapade, i stället för standardnavigeringsfönstret i Power BI. Appnavigeringen visar en lista över rapporter och instrumentpaneler i de avsnitt som du har definierat. Dessutom visas de enskilda sidorna i varje rapport i stället för bara rapportnamnet.
+När dina appanvändare öppnar appen ser de den navigering som du skapade, i stället för standardnavigeringsfönstret i Power BI. Appnavigeringen visar en lista över rapporter och instrumentpaneler i de avsnitt som du har definierat. Dessutom visas de enskilda sidorna i varje rapport i stället för bara rapportnamnet. Du kan expandera och komprimera det vänstra navigeringsområdet med hjälp av pilarna i menyraden.
 
 ![App med navigering](media/service-create-distribute-apps/power-bi-new-apps-navigation.png)
+
+I helskärmsläge kan du visa eller dölja navigeringen genom att välja alternativet i hörnet.
+
+![Navigering i helskärmsläge](media/service-create-distribute-apps/full-screen-app-show-navigation.png)
 
 ## <a name="considerations-and-limitations"></a>Överväganden och begränsningar
 Saker att tänka på när det gäller att publicera appar:
 
+* Behörighetssidan ändrar inte behörigheter för datamängder på andra arbetsytor. Du får en varning om att ge åtkomst till dessa datamängder för sig. Ett bra tips är att kontakta datamängdens ägare innan du börjar skapa din app så att du vet att det är okej att ge alla appanvändare åtkomst till de här datamängderna. 
 * Du kan som mest ha 100 användare eller grupper i åtkomstlistan för appen. Du kan dock ge mer än 100 användare åtkomst till appen. Det gör du genom att använda en eller flera användargrupper som innehåller alla önskade användare.
 * För det nya arbetsytgränssnittet, om användaren som lagts till i appåtkomstlistan redan har åtkomst till appen via arbetsytan visas de inte i åtkomstlistan för appen.  
-
+* När du använder det nya utseendet för Power BI-tjänsten visas webbadressen till supportwebbplatsen på objekts informationskort. Läs mer om det [nya utseendet i Power BI](service-new-look.md).
+* Appar har ett alternativ för att tillåta användare att dela appen och appens underliggande datamängder med hjälp av dela-behörigheten. För nya appar är det här alternativet inaktiverat som standard. Vi rekommenderar att du inaktiverar det här alternativet för dina befintliga appar och uppdaterar behörigheten för de underliggande datamängderna. Alternativet var aktiverat för befintliga appar eftersom appar ursprungligen utformats för att ersätta innehållspaket, som hade det här beteendet.
 
 ## <a name="next-steps"></a>Nästa steg
 * [Skapa en arbetsyta](service-create-workspaces.md)

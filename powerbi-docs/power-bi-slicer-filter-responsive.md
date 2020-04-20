@@ -6,17 +6,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/04/2018
+ms.date: 04/06/2020
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: aa7dc612d7a1b16fdc02fb1b40c98257cda3183d
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 2feb20907bbcffcb8aa395705b34604ebbedb682
+ms.sourcegitcommit: 915cb7d8088deb0d9d86f3b15dfb4f6f5b1b869c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73877588"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "81006513"
 ---
 # <a name="create-a-responsive-slicer-you-can-resize-in-power-bi"></a>Skapa ett dynamiskt utsnitt som du kan ändra storlek på i Power BI
+
+[!INCLUDE [applies-to](includes/applies-to.md)] [!INCLUDE [yes-desktop](includes/yes-desktop.md)] [!INCLUDE [yes-service](includes/yes-service.md)]
 
 Dynamiska utsnitt ändrar storlek för att passa i alla olika utrymmen i rapporten. Du kan ändra storlek på de dynamiska utsnitten till olika storlekar och former, från vågräta till kvadratiska, till lodräta och värdena i utsnittet ordnar om sig själva på samma sätt som du gör. I Power BI Desktop och Power BI-tjänsten kan du göra vågräta utsnitt och datum-/intervallutsnitt dynamiska. Datum-/intervallutsnitt har också förbättrade pekområden så att det är lättare att ändra dem med ett fingertryck. Du kan göra dynamiska utsnitt så små eller stora som du vill. De ändrar också storlek automatiskt så att de passar bra för rapporter i Power BI-tjänsten och även i Power BI-appar. 
 
@@ -26,7 +28,7 @@ Dynamiska utsnitt ändrar storlek för att passa i alla olika utrymmen i rapport
 
 Det första steget för att skapa ett dynamiskt utsnitt är att skapa ett grundläggande utsnitt. 
 
-1. Välj ikonen **Utsnitt** ![Utsnittsikonen](media/power-bi-slicer-filter-responsive/power-bi-slicer-filter-responsive-0-slicer-icon.png) i fönstret **Visualiseringar**.
+1. Välj ikonen **Utsnitt**![Utsnittsikonen](media/power-bi-slicer-filter-responsive/power-bi-slicer-filter-responsive-0-slicer-icon.png) i fönstret **Visualiseringar**.
 2. Dra fältet som du vill filtrera till **Fält**.
 
     ![Lägg till ett fält till utsnittet](media/power-bi-slicer-filter-responsive/power-bi-slicer-filter-responsive-1-create.png)
@@ -73,7 +75,7 @@ Läs mer om hur du skapar [rapporter som är optimerade för Power BI-appar](des
 Du kan följa samma steg för att göra en panel eller ett intervallutsnitt dynamiskt. När du ställer in **Dynamiskt** till **På**, upptäcker du några saker:
 
 - Visuell information optimerar ordningen på indatarutorna beroende på arbetsytans storlek. 
-- Visningen av dataelement är optimerad för att göra utsnittet så användbart som möjligt, baserat på den storleken som är tillåten på arbetsytan. 
+- Visningen av dataelement är optimerad för att göra utsnittet så användbart som möjligt, baserat på storleken som är tillåten på arbetsytan. 
 - Nya runda handtag på reglagen optimerar pekinteraktioner. 
 - När en visuell information blir för liten för att användas, blir den en ikon som representerar typen av visuell information i dess ställe. För att interagera med den dubbelklickar du bara på den för att öppna den i Fokusläge. Detta sparar värdefullt utrymme på sidan utan att förlora funktionerna.
 

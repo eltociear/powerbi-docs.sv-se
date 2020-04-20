@@ -1,31 +1,35 @@
 ---
 title: Utsnitt i Power BI
 description: Ett utsnitt i Power BI är en alternativ filtreringsmetod som begränsar den del av datauppsättningen som visas i övriga visualiseringar i en rapport.
-author: v-thepet
+author: maggiesMSFT
 ms.reviewer: ''
-featuredvideoid: zIZPA0UrJyA
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: tutorial
-ms.date: 11/04/2019
-ms.author: mihart
+ms.topic: conceptual
+ms.date: 04/06/2020
+ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 97ad95346715cd5ad38f41d6e7b9df3cc7493f40
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.openlocfilehash: 105a9afe7292412227f67ef80e15eb23eb7d5f71
+ms.sourcegitcommit: 915cb7d8088deb0d9d86f3b15dfb4f6f5b1b869c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74265406"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "81006812"
 ---
 # <a name="slicers-in-power-bi"></a>Utsnitt i Power BI
 
-[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-desktop](../includes/yes-desktop.md)] [!INCLUDE [yes-service](../includes/yes-service.md)]
 
-Anta att du vill att rapportens läsare ska kunna se övergripande försäljningsmått, men också att de ska kunna lyfta fram prestanda för enskilda distriktschefer och olika tidsramar. Du kan skapa separata rapporter eller jämförande diagram. Du kan också använda utsnitt. Ett utsnitt är en alternativ filtreringsmetod som begränsar den del av datauppsättningen som visas i övriga visualiseringar i en rapport. 
-
-I den här självstudien används kostnadsfria [Exempel på detaljhandelsanalys](../sample-retail-analysis.md) för att visa hur du kan skapa, formatera och använda utsnitt för listor och datumutsnitt. Du kommer att upptäcka nya sätt att formatera och använda utsnitt. 
+Anta att du vill att rapportens läsare ska kunna se övergripande försäljningsmått, men också att de ska kunna lyfta fram prestanda för enskilda distriktschefer och olika tidsramar. Du kan skapa separata rapporter eller jämförande diagram. Du kan också använda *utsnitt*. Ett utsnitt är en alternativ filtreringsmetod som begränsar den del av datauppsättningen som visas i övriga visualiseringar i en rapport. 
 
 ![Animering av utsnitt](media/power-bi-visualization-slicers/slicer2.gif)
+
+I den här artikeln beskrivs hur du skapar och formaterar ett grundläggande utsnitt med hjälp av det kostnadsfria [exemplet om detaljhandelsanalys](../sample-retail-analysis.md). Dessutom får du se hur du kan styra vilka visuella objekt som påverkas av ett utsnitt och hur du synkroniserar med utsnitt på andra sidor. Här är några andra artiklar som förklarar hur du skapar vissa typer av utsnitt:
+
+- [Numeriska intervallutsnitt](../desktop-slicer-numeric-range.md).
+- [Relativa datumutsnitt](desktop-slicer-filter-date-range.md).
+- Dynamiska, [storlekskänsliga utsnitt](../power-bi-slicer-filter-responsive.md).
+- [Hierarkiutsnitt](../create-reports/power-bi-slicer-hierarchy-multiple-fields.md) med flera fält.
 
 ## <a name="when-to-use-a-slicer"></a>När ska du använda ett utsnitt
 Utsnitt är ett bra val när du vill:
@@ -40,16 +44,13 @@ Power BI-utsnitt stöder inte:
 - Indatafält
 - Detaljgranskning
 
+## <a name="create-a-slicer"></a>Skapa ett utsnitt
 
-## <a name="create-slicers"></a>Skapa utsnitt
+Det här utsnittet filtrerar data efter distriktschef. Om du vill följa med i den här proceduren laddar du ned [filen Retail Analysis sample PBIX](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
-**Skapa ett nytt utsnitt och filtrera data efter distriktschef**
-
-1. Ladda ned [PBIX-filen Exempel på detaljhandelsanalys](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
-
-1. Välj **Arkiv** > **Öppna** på menyraden i Power BI Desktop.
+1. Öppna Power BI Desktop och välj **Arkiv** > **Öppna** på menyraden.
    
-1. Bläddra till **PBIX.pbix-filen Exempel på detaljhandelsanalys** och välj **Öppna**.
+1. Bläddra till **.pbix-filen Retail Analysis sample PBIX** och välj **Öppna**.
 
 1. I den vänstra rutan väljer du **rapportikonen**![rapportikon](media/power-bi-visualization-kpi/power-bi-report-view.png) för att öppna filen i rapportvyn.
 
@@ -73,36 +74,6 @@ Power BI-utsnitt stöder inte:
 
    >[!TIP]
    >Objekten i en utsnittslista sorteras i stigande ordning som standard. Om du vill ändra sorteringsordningen till fallande väljer du ellipsen ( **...** ) i utsnittets övre högra hörn och väljer **Sortera fallande**.
-
-**Skapa ett nytt utsnitt för att filtrera data efter datumintervall**
-
-1. Välj **översiktssidan** för rapporten. När inget har markerats på rapportens arbetsyta väljer du **Arkiv** >  **OpenDate** i fönstret **Fält**.
-
-    Den här åtgärden fyller i rutan **Värden** i fönstret **Visualiseringar** så att en ny visualisering skapas.
-
-1. När den nya visualiseringen är markerad i rapporten väljer du **utsnittsikonen** i fönstret **Visualiseringar** för att konvertera den nya visualiseringen till ett utsnitt. Det här **OpenDate**-utsnittet är ett skjutreglage med ifyllt datumintervall.
-    
-    ![Skapa en OpenDate-visualisering](media/power-bi-visualization-slicers/power-bi-date-slicer.png)
-
-1. Ändra storlek och dra utsnittet och andra element på arbetsytan så att du frigör utrymme för utsnittet. Observera att skjutreglaget anpassas efter utsnittets storlek, men det försvinner och datumen klipps bort om du gör utsnittet för litet. 
-
-1. Välj olika datumintervall med skjutreglaget eller välj ett datumfält så att du kan skriva in ett datum eller öppna en kalender om du vill göra mer precisa val. Observera effekterna på de övriga visualiseringarna på sidan.
-    
-    >[!NOTE]
-    >Numeriska datatyper och datum-/tiddatatyper producerar skjutreglageutsnitt som standard. Från och med Power BI-uppdateringen i februari 2018 fäster skjutreglage för heltalsdata nu till helstalsvärden istället för att visa decimaler. 
-
-1. Om du vill ändra utsnittstyp för ett markerat utsnitt hovrar du över utsnittets övre högra område, väljer cirkumflexen som visas och väljer något av alternativen, t.ex. **Lista** eller **Före**. Observera hur utsnittets utseende och markeringsalternativ ändras. 
- 
-    ![Nytt intervall för utsnitt](media/power-bi-visualization-slicers/power-bi-between-slicer.png)
-
-
-Mer information om hur du skapar utsnitt med datumintervall och numeriska intervall finns i följande video och i [Använda utsnittet för numeriska intervall i Power BI Desktop](../desktop-slicer-numeric-range.md).
-   > [!NOTE]
-   > Den här videon använder en äldre version av Power BI Desktop.
-   > 
-   > 
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/zIZPA0UrJyA" frameborder="0" allowfullscreen></iframe> 
 
 ## <a name="control-which-page-visuals-are-affected-by-slicers"></a>Kontrollera vilka visuella objekt på sidan som påverkas av utsnitten
 Normalt påverkar utsnitt på rapportsidorna alla övriga visualiseringar på sidan, inklusive varandra. Observera effekten på de andra visualiseringarna när du väljer värden i list- och datumutsnitten som du precis skapat. Filtrerade data utgör en skärningspunkt för de värden som du har valt i båda utsnitten. 
@@ -208,7 +179,7 @@ Mer information om vågrät orientering och dynamisk layout finns i [Skapa ett d
 
 ### <a name="title-options"></a>Rubrik alternativ
 **Rubrik** är **aktiverat** som standard. Det här alternativet visar namnet på datafält överst i utsnittet. 
-- I den här självstudien ska du formatera rubriktexten så här: 
+- I den här artikeln ska du formatera rubriktexten så här: 
    - **Teckenfärg**: röd
    - **Textstorlek**: **14 pt**
    - **Justering**: **Centrera**
@@ -216,7 +187,7 @@ Mer information om vågrät orientering och dynamisk layout finns i [Skapa ett d
 
 
 ### <a name="items-options-list-slicers-only"></a>Objektalternativ (endast listutsnitt)
-1. I den här självstudien ska du formatera **objektalternativen** så här:
+1. I den här artikeln ska du formatera **objektalternativen** så här:
     - **Teckenfärg**: svart
     - **Bakgrund**: ljusröd
     - **Textstorlek**: **10 pt**

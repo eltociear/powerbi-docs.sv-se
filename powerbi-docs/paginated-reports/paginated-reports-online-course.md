@@ -9,16 +9,16 @@ ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 03/18/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 4df77ee94ee72e2104b7964f1835b446bde6b676
-ms.sourcegitcommit: 8eeb784fd46321680367ac913ef976aeedaa7766
+ms.openlocfilehash: 325e62bbf326e9f30d4c41299998c61cc5d7f487
+ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80621495"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81267605"
 ---
 # <a name="online-course-power-bi-paginated-reports-in-a-day"></a>Nätbaserad kurs: Sidnumrerade rapporter i Power BI på en dag
 
-Onlinekursen **Sidnumrerade rapporter i Power BI på en dag** ger dig som rapportförfattare de tekniska kunskaper som krävs för att skapa, publicera och distribuera sidnumrerade rapporter i Power BI. Den består av nästan 4 timmar och 20 minuters innehåll – tillgängligt på begäran och kostnadsfritt.
+Onlinekursen **Sidnumrerade rapporter i Power BI på en dag** ger dig som rapportförfattare de tekniska kunskaper som krävs för att skapa, publicera och distribuera sidnumrerade rapporter i Power BI. Den består av nästan 4 timmar och 20 minuters innehåll – tillgängligt på begäran och kostnadsfritt. Det finns också ett [självstudiepaket](#self-study-kit) som du kan hämta, där du kan gå igenom åtta praktiska labbövningar.
 
 Mer specifikt riktar sig kursen till:
 
@@ -39,7 +39,7 @@ När kursen har slutförts kan du:
 
 Titta på välkomst- och introduktionsvideon för att starta kursen.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/DN1t5p9aui0" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/DN1t5p9aui0]
 
 ## <a name="course-outline"></a>Kursöversikt
 
@@ -79,9 +79,32 @@ Titta på välkomst- och introduktionsvideon för att starta kursen.
   - Video 23: [Bonusinnehåll: Utveckling av sidnumrerade rapporter](https://www.youtube.com/watch?v=pevpai65MvY&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT)
   - Video 24: [Bonusinnehåll: Sänka barriären för att börja](https://www.youtube.com/watch?v=vu32LfckCt8&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT)
 
-## <a name="additional-content"></a>Ytterligare innehåll
+## <a name="self-study-kit"></a>Självstudiepaket
 
-Vi kommer snart att publicera PowerPoint-presentationen och de praktiska övningarna som ett självstudiepaket. Kom tillbaka till den här artikeln senare så hittar du nedladdningslänkarna.
+Du kan ladda ned och konfigurera ett självstudiepaket som består av presentationsinnehåll och åtta praktiska labbövningar:
+
+1. Använd [den här länken](https://aka.ms/priad-ilt-student) till att ladda ned självstudien (.zip) lokalt.
+1. Öppna filegenskaperna och markera ”Avblockera” (Windows kan flagga filen som potentiellt osäker).
+1. Extrahera filinnehållet till en mapp i filsystemet. Vi rekommenderar att du skapar en mapp som är lätt att hitta, du kan ge den namnet **Utbildning**. Labbdokumenten refererar till den här platsen som **&lt;CourseFolder&gt;** .
+
+När du har extraherat filerna har du mappen **PowerBIPRIAD** med följande undermappar:
+
+- **Lab01A** (och övriga övningsmappar). Övningsmapparna innehåller alla övningsdokument och resurser, det kan även vara tillgångar och lösningsfiler.
+- **MySolution**: I den här mappen lagras dina lösningsfiler. Det står när du ska använda lösningsfiler i övningsinstruktionerna.
+- **Presentation**: Den här mappen innehåller kurspresentationen i form av ett PDF-dokument.
+
+### <a name="getting-started"></a>Kom igång
+
+Vi rekommenderar att du tittar på onlinekursen först. Du kan gå tillbaka till presentationsteorin genom att öppna filen **&lt;CourseFolder&gt;\PowerBIPRIAD\Presentation\PowerBIPRIAD_Presentation.pdf**. I presentationen finns åtta övningsbilder som visar när det är dags att använda teorin i praktiken. Den innehåller också många resurslänkar som hjälper dig att hitta relaterat innehåll.
+
+När du är redo att börja med den första övningen öppnar du filen **&lt;CourseFolder&gt;\PowerBIPRIAD\Lab01A\PowerBIPRIAD_Lab01A.pdf**. I det här dokumentet får du hjälp med att logga in i Power BI-tjänsten, ladda upp en datamängd och sedan installera [Power BI Report Builder](report-builder-power-bi.md).
+
+> [!NOTE]
+> Du måste ha ett eget Power BI-konto. Om du inte redan har det kan du läsa [Registrera dig för Power BI som enskild person](../service-self-service-signup-for-power-bi.md).
+>
+> Du måste logga in i Power BI för att publicera en Power BI Desktop-fil till en arbetsyta. Publiceringen ger dig en datamängd som används som datakälla till rapporter. Du behöver ingen Power BI Pro-licens eller Power BI Premium-prenumeration för att använda en datamängd som datakälla till rapporter.
+>
+> I en del övningar ska du dock publicera en sidnumrerad rapport till en arbetsyta. Du kan bara öppna en sidnumrerad rapport när den är sparad på en arbetsyta i en [dedikerad kapacitet](../service-premium-what-is.md#dedicated-capacities) som har arbetsbelastningar för sidnumrerade rapporter aktiverade. Om du inte har åtkomst till någon sådan arbetsyta får du en länk till en video som visar rapportpublicering i stället.
 
 ## <a name="next-steps"></a>Nästa steg
 

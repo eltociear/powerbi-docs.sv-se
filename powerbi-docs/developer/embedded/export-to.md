@@ -7,36 +7,36 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 03/24/2020
-ms.openlocfilehash: 35b5c5f05a9c0ae5a36875671a919df12843e295
-ms.sourcegitcommit: ad638d553d5f7f5831587791ffa7aa37a47dd6ae
+ms.openlocfilehash: 472797cf30d6b88a59af5b3846e9b710bf4607c7
+ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80273304"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81267513"
 ---
 # <a name="export-power-bi-report-to-file-preview"></a>Exportera Power BI-rapport till fil (förhandsversion)
 
 Med `exportToFile`-API:et kan du exportera en Power BI-rapport genom att använda ett REST-anrop. Följande filformat stöds:
-* **PPTX** (PowerPoint)
-* **PDF**
-* **PNG**
-    * När du exporterar till en PNG komprimeras en rapport med flera sidor till en zip-fil
-    * Varje fil i PNG-zipfilen representerar en rapportsida
+* **.pptx** (PowerPoint)
+* **.pdf**
+* **.png**
+    * När du exporterar till .png komprimeras rapporter med flera sidor i en zip-fil
+    * Varje fil i .zip-filen representerar en rapportsida
     * Sidnamnen är desamma som returvärdena för API:erna för[Hämta sidor](https://docs.microsoft.com/rest/api/power-bi/reports/getpages) eller [Hämta sidor i grupp](https://docs.microsoft.com/rest/api/power-bi/reports/getpagesingroup)
 
 ## <a name="usage-examples"></a>Användningsexempel
 
 Du kan använda exportfunktionen på flera olika sätt. Här följer några exempel:
 
-* **Knappen Skicka till utskrift** – Skapa en knapp i ditt program som utlöser ett exportjobb när man klickar på den. Jobbet kan exporteras till den visade rapporten som en PDF- eller PPTX-fil, och när den är klar kan användaren ta emot filen som en nedladdning. Med hjälp av bokmärken kan du exportera rapporten i ett särskilt tillstånd, inklusive konfigurerade filter, utsnitt och ytterligare inställningar. Eftersom API:et är asynkront kan det ta lite tid innan filen är tillgänglig.
+* **Knappen Skicka till utskrift** – Skapa en knapp i ditt program som utlöser ett exportjobb när man klickar på den. Jobbet kan exportera den visade rapporten som en .pdf- eller en .pptx-fil, och efteråt kan användaren få filen som en nedladdning. Med hjälp av bokmärken kan du exportera rapporten i ett särskilt tillstånd, inklusive konfigurerade filter, utsnitt och ytterligare inställningar. Eftersom API:et är asynkront kan det ta lite tid innan filen är tillgänglig.
 
-* **E-postbilaga** – Skicka automatiska e-postmeddelande i angivna intervall med en bifogad PDF-rapport. Det här scenariot kan vara användbart om du vill automatisera sändningen av en veckorapport till chefer.
+* **E-postbilaga** – Skicka automatiskt regelbundna e-postmeddelanden med en .pdf-rapport som bilaga. Det här scenariot kan vara användbart om du vill automatisera sändningen av en veckorapport till chefer.
 
 ## <a name="using-the-api"></a>Använda API:et
 
 Innan du använder API:et måste du verifiera att följande [administratörsklientinställningar](../../service-admin-portal.md#tenant-settings) har aktiverats:
 * **Exportera rapporter som PowerPoint-presentationer eller PDF-dokument** – aktiverat som standard.
-* **Exportera rapporter som bildfiler** – krävs endast för PNG-filer och är inaktiverat som standard.
+* **Exportera rapporter som bildfiler** – Krävs bara för *.png-filer* och är inaktiverat som standard.
 
 API:et är asynkront. När [exportToFile](https://docs.microsoft.com/rest/api/power-bi/reports/exporttofile)-API:et anropas utlöser det ett exportjobb. När jobbet har utlösts använder du [avsökning](https://docs.microsoft.com/rest/api/power-bi/reports/getexporttofilestatus) för att spåra jobbet tills det har slutförts.
 
@@ -73,9 +73,9 @@ Om du vill exportera RLS måste du ha följande behörigheter:
 
 ### <a name="data-protection"></a>Dataskydd
 
-PDF- och PPTX-formaten stöder [känslighetsetiketter](../../admin/service-security-data-protection-overview.md#sensitivity-labels-in-power-bi). Om du exporterar en rapport med en känslighetsetikett till en PDF- eller PPTX-fil så visas rapporten med dess känslighetsetikett i den exporterade filen.
+Formaten .pdf och .pptx har stöd för [känslighetsetiketter](../../admin/service-security-data-protection-overview.md#sensitivity-labels-in-power-bi). Om du exporterar en rapport med en känslighetsetikett till .pdf- eller .pptx-format så visas rapporten med dess känslighetsetikett i den exporterade filen.
 
-En rapport med en känslighetsetikett kan inte exporteras till en PDF- eller PPTX-fil med hjälp av ett [huvudnamn för tjänsten](embed-service-principal.md).
+Du kan inte exportera en rapport med en känslighetsetikett till .pdf- eller .pptx-format med hjälp av ett [huvudnamn för tjänsten](embed-service-principal.md).
 
 ### <a name="localization"></a>Lokalisering
 
@@ -102,8 +102,8 @@ Ett jobb som överskrider antalet samtidiga begäranden avslutas inte. Om du exe
 * Datauppsättningen i den rapport som du exporterar måste finnas på en Premium- eller inbäddad kapacitet.
 * För den offentliga förhandsversionen är antalet Power BI-rapportsidor som exporteras per timme begränsat till 50 per kapacitet.
 * Exporterade rapporter får inte överskrida en filstorlek på 250 MB.
-* Känslighetsetiketter stöds inte när du exporterar till PNG.
-* En rapport med en känslighetsetikett kan inte exporteras till en PDF- eller PPTX-fil med hjälp av ett [huvudnamn för tjänsten](embed-service-principal.md).
+* Känslighetsetiketter stöds inte när du exporterar till .png-format.
+* Du kan inte exportera en rapport med en känslighetsetikett till .pdf- eller .pptx-format med hjälp av ett [huvudnamn för tjänsten](embed-service-principal.md).
 * Det antal sidor som kan ingå i en exporterad rapport är 30. Om rapporten innehåller fler sidor returnerar API:et ett fel och exportjobbet avbryts.
 * [Personliga bokmärken](../../consumer/end-user-bookmarks.md#personal-bookmarks) och [beständiga filter](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) stöds inte.
 * De visuella Power BI-objekt som listas nedan stöds inte. När en rapport som innehåller dessa visuella objekt exporteras så återges inte de delar av rapporten som innehåller dessa visuella objekt, och en felsymbol visas.
@@ -263,6 +263,9 @@ private async Task<ExportedFile> ExportPowerBIReport(
 ## <a name="next-steps"></a>Nästa steg
 
 Granska hur du kan bädda in innehållet för dina kunder och din organisation:
+
+> [!div class="nextstepaction"]
+>[Exportera den sidnumrerade rapporten till fil](export-paginated-report.md)
 
 > [!div class="nextstepaction"]
 >[Bädda in för dina kunder](embed-sample-for-customers.md)

@@ -23,6 +23,8 @@
           items:
             - name: Skapa nya arbetsytor
               href: ../service-create-the-new-workspaces.md
+            - name: Välj att använda det nya utseendet för arbetsytor
+              href: service-workspaces-new-look.md
             - name: Uppgradera klassiska arbetsytor
               href: ../designer/service-upgrade-workspaces.md
             - name: Skapa arbetsytor
@@ -65,8 +67,6 @@
               href: ../service-publish-to-web.md
             - name: Dela en instrumentpanel som länkar till en Excel-arbetsbok på OneDrive
               href: ../service-share-dashboard-that-links-to-excel-onedrive.md
-            - name: Power BI Publisher för Excel
-              href: ../publisher-for-excel.md
         - name: Utöka Power BI
           items:
             - name: Analysera i Excel
