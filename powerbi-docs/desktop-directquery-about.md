@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/10/2020
+ms.date: 04/09/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: dedbe3800dc4a6b1088ca5a4037bc8451c61d986
-ms.sourcegitcommit: 578d43aeb7cebf40f3caf03a614bc885cc039488
+ms.openlocfilehash: 0f2d6bae607383eb8934b3f395add540c6754690
+ms.sourcegitcommit: 915cb7d8088deb0d9d86f3b15dfb4f6f5b1b869c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "77076668"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "81006720"
 ---
 # <a name="about-using-directquery-in-power-bi"></a>Använda DirectQuery i Power BI
 
@@ -98,7 +98,7 @@ I den här tabellen beskrivs några situationer där det skulle vara särskilt b
 
 | Begränsning | Beskrivning |
 | --- | --- |
-| Data ändras ofta och det behövs rapportering praktiskt taget i realtid |Modeller med importerade data kan uppdateras högst en gång i timmen. Om data ändras kontinuerligt och rapporterna måste visar aktuella data så kanske det inte fungerar med importer och schemalagd uppdatering. Du kan strömma data direkt till Power BI, men det finns begränsningar för hur stora datavolymer som stöds. <br/> <br/> Om du använder DirectQuery innebär det i stället att instrumentpanelen alltid visar aktuella data från källan när du öppnar eller uppdaterar en rapport eller instrumentpanel. Du kan också uppdatera instrumentpanelens paneler oftare, ned till var 15:e minut. |
+| Data ändras ofta och det behövs rapportering praktiskt taget i realtid |Du kan uppdatera modeller med importerade data högst en gång per timme (oftare med Power BI Pro-licens eller en Power BI Premium-prenumeration). Om data ändras kontinuerligt och rapporterna måste visar aktuella data så kanske det inte fungerar med importer och schemalagd uppdatering. Du kan strömma data direkt till Power BI, men det finns begränsningar för hur stora datavolymer som stöds. <br/> <br/> Om du använder DirectQuery innebär det i stället att instrumentpanelen alltid visar aktuella data från källan när du öppnar eller uppdaterar en rapport eller instrumentpanel. Du kan också uppdatera instrumentpanelens paneler oftare, ned till var 15:e minut. |
 | Data är mycket omfattande |Om det gäller mycket stora datamängder är det inte praktiskt genomförbart att importera allt. Med DirectQuery behöver du inga stora dataöverföringar eftersom frågorna körs på plats. <br/> <br/> Stora mängder data kan dock innebära att frågeprestanda mot den underliggande källan blir lidande, läs mer i avsnittet [Effekter av att använda DirectQuery](#implications-of-using-directquery). Du behöver inte alltid importera samtliga detaljer om dina data. Du kan i stället föraggregera data under importen. I *frågeredigeraren* kan du enkelt föraggregera data under importen. I yttersta fall skulle det gå att importera exakt de aggregerade data som behövs för respektive virtuellt objekt. Även om det är enklast att använda DirectQuery när du hanterar stora datamängder så kan det vara ett alternativ att importera aggregerade data om den underliggande källan är för långsam. |
 | Säkerhetsregler definieras i den underliggande datakällan |När data importeras ansluter Power BI till datakällan med den aktuella användarens autentiseringsuppgifter från Power BI Desktop, eller de autentiseringsuppgifter som definierades när den schemalagda uppdateringen konfigurerades från Power BI-tjänsten. När du publicerar och delar en sådan rapport måste du vara noga med att bara dela den med användare som har tillåtelse att se dessa data, eller så måste du definiera säkerhet på radnivå som en del av datamängden. <br/> <br/> Eftersom DirectQuery alltid kör frågor mot den underliggande datakällan skulle den här konfigurationen innebära att du kan använda all eventuell säkerhet från den underliggande källan. För närvarande ansluter dock Power BI alltid till den underliggande källan med samma autentiseringsuppgifter som skulle användas vid import. <br/> <br/> Fram till det att Power BI tillåter att rapportkonsumentens identitet skickas till den underliggande källan så ger inte DirectQuery några fördelar avseende datakällans säkerhet. |
 | Begränsningar för datasuveränitet gäller |Vissa organisationer har policyer avseende datasuveränitet, vilket innebär att data inte får lämna organisationens lokaler. En lösning baserad på import skulle i sådana fall utgöra ett uppenbart problem. Men med DirectQuery skulle dessa data finnas kvar i den underliggande datakällan. <br/> <br/> Vissa cacheminnen med data på visuell objektnivå ligger dock kvar i Power BI-tjänsten med DirectQuery, på grund av den schemalagda uppdateringen av panelerna. |

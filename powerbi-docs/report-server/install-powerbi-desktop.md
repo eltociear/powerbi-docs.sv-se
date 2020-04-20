@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 02/13/2020
-ms.openlocfilehash: dfb6c313e989514da2aa04facd6c6136a0eadc1a
-ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
+ms.openlocfilehash: dfb57d6344e6a8e020404f9cd23c957967b960f7
+ms.sourcegitcommit: a9ebab692c670192b62a31bfe99447908506251b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80404185"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "81122264"
 ---
 # <a name="install-power-bi-desktop-optimized-for-power-bi-report-server"></a>Installera Power BI Desktop som har optimerats för Power BI-rapportservern
 
@@ -96,6 +96,10 @@ Rapporter i Power BI-rapportservern stöder inte de här funktionerna i Power BI
 ### <a name="custom-security"></a>Anpassad säkerhet
 
 Det finns inget stöd för anpassad säkerhet i Power BI Desktop optimerad för Power BI-rapportserver. Om din Power BI-rapportserver har konfigurerats med ett anpassat säkerhetstillägg kan du inte spara en Power BI-rapport från Power BI Desktop (optimerad för Power BI Report Server) till Power BI Report Server-instansen. Du måste spara .pbix-rapportfilen från Power BI Desktop och ladda upp den till Power BI Report Server-portalen.
+
+### <a name="saving-reports-to-a-power-bi-report-server-in-a-different-domain"></a>Spara rapporter på en Power BI-rapportserver i en annan domän
+
+När du sparar en Power BI-rapport på en Power BI-rapportserver används dina Windows-autentiseringsuppgifter. Du kan inte spara direkt på en rapportserver i en annan domän än den där dina Windows-autentiseringsuppgifter gäller. Du kan visa rapportservern i en webbläsare och manuellt ladda upp filen från datorn i stället.
 
 ## <a name="power-bi-desktop-for-earlier-versions-of-power-bi-report-server"></a>Power BI Desktop för tidigare versioner av Power BI-rapportserver
 

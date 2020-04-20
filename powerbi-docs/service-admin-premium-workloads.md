@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 04/08/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: aa44f0c8c11cb26ecfc7763ec127ca8a8505536a
-ms.sourcegitcommit: e7fda395b47e404c61e961a60816b7a1b0182759
+ms.openlocfilehash: a252c10b247ad5fc06565139bc69fc43a9add467
+ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80979924"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81267490"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Konfigurera arbetsbelastningar i en Premium-kapacitet
 
@@ -24,23 +24,13 @@ I den här artikeln beskrivs aktivering och konfigurering av arbetsbelastningar 
 
 Frågearbetsbelastningar är optimerade för och begränsade av resurser som bestäms av din Premium-kapacitets SKU. Premium-kapaciteter har också stöd för ytterligare arbetsbelastningar som kan använda din kapacitets resurser. Standardminnet för dessa arbetsbelastningar baseras på tillgängliga kapacitetsnoder för din SKU. De maximala minnesinställningarna är inte kumulativa. Minnet upp till det högsta värde som har angetts allokeras dynamiskt för AI och dataflöden, men allokeras statiskt för sidnumrerade rapporter.
 
-### <a name="microsoft-office-skus-for-software-as-a-service-saas-scenarios"></a>Microsoft Office-SKU:er för SaaS-scenarier (programvara som en tjänst)
-
-|                     | EM2                      | EM3                       | P1                      | P2                       | P3                       |
-|---------------------|--------------------------|--------------------------|-------------------------|--------------------------|--------------------------|
-| AI | 40 % standard, 40 % minimum | 20 % standard, 20 % minimum | 20 % standard, 8 % minimum | 20 % standard, 4 % minimum | 20 % standard, 2 % minimum |
-| Dataflöden | Saknas |20 % standard, 12 % minimum  | 20 % standard, 5 % minimum  | 20 % standard, 3 % minimum | 20 % standard, 2 % minimum  |
-| Sidnumrerade rapporter | Saknas |Saknas | 20 % standard, 10 % minimum | 20 % standard, 5 % minimum | 20 % standard, 2,5 % minimum |
-| | | | | | |
-
-### <a name="microsoft-azure-skus-for-platform-as-a-service-paas-scenarios"></a>Microsoft Azure-SKU:er för PaaS-scenarier (plattform som en tjänst)
-
-|                  | A1                       | A2                       | A3                      | A4                       | A5                      | A6                        |
-|-------------------|--------------------------|--------------------------|-------------------------|--------------------------|-------------------------|---------------------------|
-| AI | Saknas  | 40 % standard, 40 % minimum  | 20 % standard, 20 % minimum | 20 % standard, 8 % minimum | 20 % standard, 4 % minimum | 20 % standard, 2 % minimum |
-| Dataflöden         | 40 % standard, 40 % minimum | 24 % standard, 24 % minimum | 20 % standard, 12 % minimum | 20 % standard, 5 % minimum  | 20 % standard, 3 % minimum | 20 % standard, 2 % minimum   |
-| Sidnumrerade rapporter | Saknas                      | Saknas                      | Saknas                     | 20 % standard, 10 % minimum | 20 % standard, 5 % minimum | 20 % standard, 2,5 % minimum |
-| | | | | | |
+|                   | EM1/A1                  | EM2/A2                  | EM3/A3                  | P1/A4                  | P2/A5                  | P3/A6                   |
+|-------------------|---------------------------|---------------------------|---------------------------|--------------------------|--------------------------|---------------------------|
+| AI                | Stöd saknas               | 40 % standard, 40 % minimum  | 20 % standard, 20 % minimum  | 20 % standard, 8 % minimum  | 20 % standard, 4 % minimum  | 20 % standard, 2 % minimum   |
+| Datauppsättningar          | 100 % standard, 67 % minimum | 100 % standard, 40 % minimum | 100 % standard, 20 % minimum | 100 % standard, 8 % minimum | 100 % standard, 4 % minimum | 100 % standard, 2 % minimum  |
+| Dataflöden         | 40 % standard, 40 % minimum  | 24 % standard, 24 % minimum  | 20 % standard, 12 % minimum  | 20 % standard, 5 % minimum  | 20 % standard, 3 % minimum  | 20 % standard, 2 % minimum   |
+| Sidnumrerade rapporter | Stöd saknas               | Stöd saknas               | Stöd saknas               | 20 % standard, 10 % minimum | 20 % standard, 5 % minimum  | 20 % standard, 2,5 % minimum |
+|                   |                           |                           |                           |                          |                          |                           |
 
 ## <a name="workload-settings"></a>Inställningar för arbetsbelastning
 
@@ -83,9 +73,16 @@ Observera att den här inställningen endast påverkar DirectQuery-frågor, meda
 
 #### <a name="max-offline-dataset-size"></a>Maxstorlek för offlinedatamängd
 
-Använd inställningen till att förhindra att rapportskapare publicerar en stor datamängd som kan påverka kapaciteten negativt. Observera att Power BI inte kan fastställa den faktiska minnesstorleken förrän datauppsättningen har lästs in i minnet. Det är möjligt att en datauppsättning med en mindre offlinestorlek kan ha ett större fotavtryck för minnesanvändning än en datauppsättning med en större offlinestorlek.
+Använd inställningen till att förhindra att rapportskapare publicerar en stor datamängd som kan påverka kapaciteten negativt. Observera att Power BI inte kan fastställa den faktiska minnesstorleken förrän datamängden har lästs in i minnet. Det är möjligt att en datamängd med en mindre offlinestorlek kan ha ett större fotavtryck för minnesanvändning än en datamängd med en större offlinestorlek.
 
-Om du har en befintlig datauppsättning som är större än den storlek som du angett för den här inställningen går det inte att läsa in datauppsättningen när användaren försöker komma åt den.
+Om du har en befintlig datauppsättning som är större än den storlek som du angett för den här inställningen går det inte att läsa in datauppsättningen när användaren försöker komma åt den. Det kanske inte heller går att läsa in datamängden om den är större än det maximala minne som har konfigurerats för datamängdens arbetsbelastning.
+
+För att skydda systemets prestanda används ytterligare ett ytterligare SKU-specifikt tak för offlinedatamängdens maximala storlek oavsett vilket värde som är konfigurerat. Det här fasta taket gäller inte för Power BI-datamängder som är optimerade för stora datastorlekar. Mer information finns i [Stora modeller i Power BI Premium](service-premium-large-models.md).
+
+|                                           | EM1/A1 | EM2/A2 | EM3/A3 | P1/A4 | P2/A5 | P3/A6 |   
+|-------------------------------------------|----------|----------|----------|---------|---------|---------|
+| Fast tak för maximal storlek på offlinedatamängd | 3 GB     | 5 GB     | 6 GB     | 10 GB   | 10 GB   | 10 GB   |
+|                                           |          |          |          |         |         |         |
 
 #### <a name="max-result-row-set-count"></a>Maximalt antal resultatraduppsättningar
 
@@ -110,6 +107,7 @@ Standardinställningen är 0, vilket resulterar i att följande automatiska SKU-
 | Automatisk minnesgräns för frågor | 1 GB     | 2 GB     | 2 GB     | 6 GB    | 6 GB    | 10 GB   |
 |                              |          |          |          |         |         |         |
 
+För att skydda systemets prestanda används ett fast tak på 10 GB för alla frågor som körs av Power BI-rapporter, oavsett vilken minnesgräns som användaren har konfigurerat. Det här fasta taket gäller inte för frågor som körs via verktyg som använder Analysis Services-protokollet (det vill säga XMLA). Användare bör överväga att förenkla frågan eller dess beräkningar om frågan är för minnesintensiv.
 
 #### <a name="query-timeout"></a>Tidsgräns för frågor
 
@@ -132,8 +130,8 @@ Observera att för Power BI-rapporter åsidosätts detta standardvärde med en m
 
 När den här inställningen är aktiverad kan användare i Premium-kapaciteten uppdatera sidor i rapporten till DirectQuery-källor med hjälp av automatisk siduppdatering. Som kapacitetsadministratör kan du göra följande:
 
-1.  Aktivera och inaktivera automatisk siduppdatering
-2.  Definiera ett minsta uppdateringsintervall
+- Aktivera och inaktivera automatisk siduppdatering
+- Definiera ett minsta uppdateringsintervall
 
 Följande bild visar platsen för inställningen av automatiskt uppdateringsintervall:
 
@@ -167,7 +165,7 @@ Vi rekommenderar att du använder appen [Kapacitetsmått för Power BI Premium](
 
 I vissa fall förbättras kanske inte prestandan av att containerstorleken ökas. Om dataflödet till exempel bara hämtar data från en källa utan att utföra betydande beräkningar hjälper det förmodligen inte att öka containerstorleken. Ökning av containerstorleken kan vara till hjälp om det gör att dataflödesarbetsbelastningen kan allokera mer minne för åtgärder för entitetsuppdatering. Genom att ha mer allokerat minne kan den tid det tar att uppdatera kraftigt beräknade entiteter minskas.
 
-Värdet för Containerstorlek kan inte överskrida det maximala minnet för dataflödesarbetsbelastningen. Till exempel har en P1-kapacitet 25 GB minne. Om Maximalt minne för dataflödesarbetsbelastning (%) anges till 20 % kan Containerstorlek (MB) inte överstiga 5000. I samtliga fall kan containerstorleken inte överskrida Max minne, även om du anger ett högre värde.
+Värdet för containerstorlek kan inte överskrida det maximala minnet för dataflödets arbetsbelastning. Till exempel har en P1-kapacitet 25 GB minne. Om Maximalt minne för dataflödesarbetsbelastning (%) anges till 20 % kan Containerstorlek (MB) inte överstiga 5000. I samtliga fall kan containerstorleken inte överskrida Max minne, även om du anger ett högre värde.
 
 ### <a name="paginated-reports"></a>Sidnumrerade rapporter
 

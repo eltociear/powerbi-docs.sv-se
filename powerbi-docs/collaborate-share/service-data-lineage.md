@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 02/27/2020
 ms.author: painbar
 LocalizationGroup: ''
-ms.openlocfilehash: cb58b71d4fe15458516dc0b1d3f25d79e6ef1a62
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.openlocfilehash: 165651beab2e20f033d20480e78a3876931ea806
+ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79126062"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81267283"
 ---
 # <a name="data-lineage-preview"></a>Dataursprung (förhandsversion)
 I moderna Business Intelligence-projekt kan det vara svårt att förstå dataflödet från datakällan till målet. Det kan vara ännu svårare om du har byggt avancerade analysprojekt som omfattar flera datakällor, artefakter och beroenden. Frågor som ”vad händer om jag ändrar dessa data?” eller ”varför är inte den här rapporten uppdaterad?” kan vara svåra att svara på. Det kan krävas ett team av experter eller en djupgående undersökning för att hitta svaren. Vi har skapat en dataursprungsvy för att hjälpa dig att besvara dessa frågor.
@@ -93,3 +93,4 @@ Ursprungsvyn är en interaktiv arbetsyta. Du kan använda musen och pekplattan f
 ## <a name="next-steps"></a>Nästa steg
 
 * [Introduktion till datamängder mellan arbetsytor (förhandsversion)](../service-datasets-across-workspaces.md)
+* [Påverkansanalys för en datamängd](service-dataset-impact-analysis.md)

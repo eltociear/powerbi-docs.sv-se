@@ -6,14 +6,14 @@ author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 02/18/2020
+ms.date: 04/07/2020
 ms.author: mihart
-ms.openlocfilehash: 19a3b1bbf5f2ea3043b92d97a66196ca3e32118c
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.openlocfilehash: 2e5b8cf174e5e2180a42d2ccb3d2b43ba31b2d38
+ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79377246"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81267237"
 ---
 # <a name="glossary-for-power-bi-service"></a>Ordlista för Power BI-tjänsten
 Power BI-tjänsten kan introducera terminologi som du kanske inte är bekant med eller förstår. Ordlistan är ett bra ställe att leta upp terminologi. Om du vill kan du lägga till den som ett bokmärke. En annan bra resurs om du vill lära dig mer om byggstenarna bakom Power BI-tjänsten är [Grundläggande begrepp](end-user-basic-concepts.md). Grundläggande begrepp ger en översikt över de olika *delarna* i Power BI och hur de hänger ihop.
@@ -24,7 +24,7 @@ Den här ordlista är ett community-arbete.  Saknar du något ord? Be oss att l�
 
 **Konto** Det finns olika typer av Power BI-konton, som även kallas *licenser*.  Kontona är antingen: per användare eller organisation. Konton per användare är tillgängliga som *kostnadsfria* eller *Pro*.  En *kostnadsfri* Power BI-användare använder antingen fristående Power BI Desktop eller använder Power BI-tjänsten som del av en Premium-organisations konto. Per-användare-konton för Power BI *Pro* är en betald månatlig prenumeration som gör det möjligt att samarbeta och dela innehåll med andra *Pro*-användare. 
 
-*Premium*-konto för organisationer (även kallat *Premium-kapacitet*) lägger till ett lager med funktioner utöver per användare-licenser. Exempel: *kostnadsfria* per användare-kontoinnehavare inom en organisation som har en *Premium*-licens kan göra mycket mer med Power BI än *kostnadsfria* användare utan *Premium*. Till exempel kan *kostnadsfria* användare med *Premium*-organisationskonton samarbeta med kollegor och visa innehåll som ligger på en Power BI Premium-kapacitet.  
+*Premium*-konto för organisationer (även kallat *Premium-kapacitet*) lägger till ett lager med funktioner utöver per användare-licenser. Exempel: *kostnadsfria* per användare-kontoinnehavare inom en organisation som har en *Premium*-licens kan göra mycket mer med Power BI än *kostnadsfria* användare utan *Premium*. Till exempel kan *kostnadsfria* användare med *Premium*-organisationskonton samarbeta med kollegor och visa innehåll som ligger i en Power BI Premium-kapacitet.  
 
 **admin portal (administrationsportal)** Platsen där Power BI-administratörer hanterar användare, funktioner och inställningar för Power BI i deras organisation. (Obs! För Office 365, Azure och PowerApps används termen administrationscenter.)
 
@@ -36,8 +36,7 @@ Den här ordlista är ett community-arbete.  Saknar du något ord? Be oss att l�
 
 **annotate (kommentera)** Att skriva rader, text eller stämplar på en kopia av en ögonblicksbild av en panel, rapport eller visualisering i Power BI-mobilappen för iOS- och Android-enheter.
 
-**app, apps (app, appar)** 
-
+**app, appar** En samling instrumentpaneler, rapporter och datamängder. Kan också avse mobilappar för att använda innehåll, som Power BI-appen för iOS.
 
 **AppSource** Centraliserad lagringsplats online där du kan bläddra och upptäcka instrumentpaneler, rapporter, datauppsättningar och appar att ladda ned.
 
@@ -203,7 +202,7 @@ Första förekomsten: navigeringsfönstret Efterföljande omnämnanden eller vid
 
 **OneDrive for Business (OneDrive för företag)** jämfört med **OneDrive** OneDrive är ett personligt konto och OneDrive för företag är för arbetskonton.  
 
-**Lokal** Det begrepp som används för att särskilja lokal databehandling (där datorresurserna finns på kundens egna anläggningar) från molnbaserad databehandling.
+**Lokal** Det begrepp som används för att särskilja lokal databehandling (där datorresurserna finns lokalt hos kunden) från molnbaserad databehandling.
 
 
 ## <a name="p"></a>P

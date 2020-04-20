@@ -108,6 +108,8 @@
               href: gateway-onprem-sizing.md
             - name: Övervaka rapportprestanda
               href: monitor-report-performance.md
+            - name: Felsöka rapportprestanda
+              href: report-performance-troubleshoot.md
     - name: Vitböcker
       items:
         - name: Översikt vitböcker

@@ -1,28 +1,41 @@
 ---
-title: Använd numeriska intervallutsnitt i Power BI Desktop
-description: Lär dig hur du använder ett utsnitt för att begränsa till numeriska intervall i Power BI Desktop
+title: Använd numeriska intervallutsnitt i Power BI
+description: Lär dig hur du använder ett utsnitt för att begränsa till numeriska intervall i Power BI.
 author: davidiseminger
 ms.reviewer: ''
+featuredvideoid: zIZPA0UrJyA
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/17/2020
+ms.date: 04/06/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 0fcc666febb4444b5ee83a1646e1e0c3ef9c6d82
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: bd5f937154edf9f8b6a86fb7f53690943a7f3a53
+ms.sourcegitcommit: 915cb7d8088deb0d9d86f3b15dfb4f6f5b1b869c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76539312"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "81006651"
 ---
-# <a name="use-the-numeric-range-slicer-in-power-bi-desktop"></a>Använd numeriska intervallutsnitt i Power BI Desktop
+# <a name="use-the-numeric-range-slicer-in-power-bi"></a>Använd numeriska intervallutsnitt i Power BI
+
+[!INCLUDE [applies-to](includes/applies-to.md)] [!INCLUDE [yes-desktop](includes/yes-desktop.md)] [!INCLUDE [yes-service](includes/yes-service.md)]
 
 Med numeriska intervallutsnitt kan du använda alla typer av filter på en numerisk kolumn i datamodellen. Det finns tre alternativ för att filtrera numeriska data: mellan tal, mindre än eller lika med ett tal eller större än eller lika med ett tal. Den här enkla tekniken är ett kraftfullt sätt att filtrera data.
 
 ![Visuellt objekt med numeriskt intervallutsnitt](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-0.png)
 
-## <a name="use-the-numeric-range-slicer"></a>Använda numeriskt intervallutsnitt
+## <a name="video"></a>Video
+
+I den här videon går vi igenom hur du skapar ett numeriskt intervallutsnitt.
+
+> [!NOTE]
+> Den här videon använder en äldre version av Power BI Desktop.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zIZPA0UrJyA" frameborder="0" allowfullscreen></iframe> 
+
+
+## <a name="add-a-numeric-range-slicer"></a>Lägga till ett numeriskt intervallutsnitt
 
 Du kan använda det numeriska intervallutsnittet precis som andra utsnitt. Skapa bara en **utsnittsvisualisering** för rapporten och välj sedan ett numeriskt värde för värdet **Fält**. I följande bild har vi markerat fältet **LineTotal**.
 

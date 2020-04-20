@@ -1,22 +1,24 @@
 ---
-title: Använda ett relativt datumutsnitt eller filter i Power BI Desktop
-description: Lär dig hur du använder ett utsnitt eller filter för att begränsa relativa datumintervall i Power BI Desktop
+title: Använda ett relativt datumutsnitt eller filter i Power BI
+description: Lär dig hur du använder ett utsnitt eller filter till att begränsa relativa datumintervall i Power BI.
 author: mihart
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/24/2019
+ms.date: 04/06/2020
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: 9d7173225cc52df5d7221b32a6fad81617afa422
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 9ce36bfa61b16bd30e59bc8491af80efdfdc8a35
+ms.sourcegitcommit: 915cb7d8088deb0d9d86f3b15dfb4f6f5b1b869c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876807"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "81006804"
 ---
-# <a name="use-a-relative-date-slicer-and-filter-in-power-bi-desktop"></a>Använda ett relativt datumutsnitt och filter i Power BI Desktop
+# <a name="use-a-relative-date-slicer-and-filter-in-power-bi"></a>Använda ett relativt datumutsnitt eller filter i Power BI
+
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-desktop](../includes/yes-desktop.md)] [!INCLUDE [yes-service](../includes/yes-service.md)]
 
 Med ett **relativt datumutsnitt** eller **relativt datumfilter** kan du använda tidsbaserade filter på kolumner i datamodellen. Du kan till exempel använda ett **relativt datumutsnitt** för att bara visa försäljningsdata inom de senaste 30 dagarna (eller månad, kalendermånad och så vidare). När du uppdaterar data tillämpas den relativa tidsperioden automatiskt.
 
@@ -98,7 +100,7 @@ Följande begränsningar och överväganden kan användas för utsnitt och filte
 
 * Datamodeller i **Power BI** omfattar inte tidszonsinformation. Modeller kan lagra tidpunkter, men det finns inget som indikerar vilken tidszonen de befinner sig i.
 
-* Utsnitt och filter baseras alltid på tiden i UTC. Om du skapar ett filter i en rapport och skickar rapporten till en kollega i en annan tidszon så kommer ni båda att se samma data. Om ni inte befinner er i UTC-tidszonen så måste ni justera för tidsförskjutningen.
+* Utsnitt och filter baseras alltid på tiden i UTC. Om du skapar ett filter i en rapport och skickar rapporten till en kollega i en annan tidszon så kommer ni båda att se samma data. Om ni inte befinner er i tidszonen UTC så måste ni justera för tidsförskjutningen.
 
 * Du kan konvertera data som hämtats i en lokal tidszon till UTC med hjälp av **Frågeredigeraren**.
 

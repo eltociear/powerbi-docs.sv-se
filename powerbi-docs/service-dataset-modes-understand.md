@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/09/2019
 ms.author: v-pemyer
-ms.openlocfilehash: be8716cebb091dafcc927b4bd1ecd0942ad88b47
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.openlocfilehash: cd2086facbeb581a4418a3358a79cca0e80140ff
+ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79208067"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81267352"
 ---
 # <a name="dataset-modes-in-the-power-bi-service"></a>Datamängdslägen i Power BI-tjänsten
 
@@ -77,18 +77,9 @@ Det finns flera fördelar med DirectQuery-modeller:
 - Rapporter i realtid kan utvecklas med hjälp av funktionen [Automatisk siduppdatering](desktop-automatic-page-refresh.md)
 - Paneler på instrumentpanelen som är baserade på DirectQuery-modeller, kan uppdateras automatiskt så ofta som var 15:e minut
 
-Det finns dock flera nackdelar och begränsningar med DirectQuery-modeller:
+Det finns dock en del begränsningar för DirectQuery-modeller:
 
-- Modellen måste baseras på en enda datakälla som stöds. Därför måste all dataintegrering redan finnas i datakällan. Datakällor som stöds är relationella och analytiska system, med stöd för många populära datalager.
-
-    > [!TIP]
-    > Många datakällor från Microsoft stöds. Bland Microsoft-datakällorna finns SQL Server, Azure Data Bricks, Azure HDInsight Spark (Beta), Azure SQL Database och Azure SQL Data Warehouse. Mer information finns i artikeln [Datakällor som stöds av DirectQuery i Power BI](desktop-directquery-data-sources.md).
-
-- Prestandan kan vara långsam, vilket kan påverka Power BI-tjänsten negativt. Det här problemet kan uppstå eftersom vissa frågor är processorintensiva för Power BI-tjänsten. Det kan också bero på att datakällan inte är optimerad för de frågor som Power BI skickar.
-- Power Query-frågor måste vara vikbara. Detta krav innebär att Power Query-logiken inte kan vara alltför komplex. Dessutom måste logiken vara begränsad till M-uttryck och funktioner som kan transponeras till interna frågor som kan tolkas av datakällan.
-- DAX-formler är begränsade till att endast använda funktioner som kan transponeras till interna frågor som kan tolkas av datakällan. Det finns inte heller något stöd för beräknade tabeller eller för funktioner i DAX-tidsinformation.
-- Frågor som ställs av modellen frågor som kräver hämtning av över en miljon rader kommer att misslyckas
-- Rapporter och instrumentpaneler med flera visuella objekt kan visa inkonsekventa resultat, särskilt när datakällan är temporär
+- DAX-formler är begränsade till att endast använda funktioner som kan transponeras till interna frågor som kan tolkas av datakällan. Beräknade tabeller stöds inte.
 - Funktioner för Frågor och svar och Snabbinsikter stöds inte
 
 Ur ett resursperspektiv för Power BI-tjänsten, kräver DirectQuery-modeller:
