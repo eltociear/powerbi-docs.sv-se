@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/06/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 45f3ff801b2f1bffd2396fe9f59ea32dd4b11ffb
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: a6dd3040fd765010c5d6baaf76991f7d1be4cfa7
+ms.sourcegitcommit: d43761104f7daf4b2f297648855bb573b53e6d8c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73877051"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "81637901"
 ---
 # <a name="get-data-from-excel-workbook-files"></a>Hämta data från Excel-arbetsboksfiler
 ![](media/service-excel-workbook-files/excel_icon.png)
@@ -124,8 +124,6 @@ För närvarande när du väljer Importera importerar Power BI endast data som i
 **Schemalägg uppdatering** – om din Excel-arbetsboksfil ansluter till externa datakällor eller har importerats från en lokal enhet kan du konfigurera schemalagd uppdatering så att din datauppsättning eller rapport alltid är uppdaterad. I de flesta fall är det ganska enkelt att ställa in schemalagd uppdatering, men det ligger utanför omfånget för den här artikeln att gå in på detaljer. Du kan läsa mer i [Datauppdatering i Power BI](refresh-data.md).
 
 [Publicera till Power BI från Excel 2016](service-publish-from-excel.md)
-
-[Power BI Publisher för Excel](publisher-for-excel.md)
 
 [Datauppdatering i Power BI](refresh-data.md)
 

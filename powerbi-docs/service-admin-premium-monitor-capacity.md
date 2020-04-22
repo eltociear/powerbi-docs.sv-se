@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/06/2020
+ms.date: 04/17/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 268aa73506be5cc025645672f402b88646497b1c
-ms.sourcegitcommit: 2b93c1cc29aaf199ab7441a04c8e5ae49ffca5d6
+ms.openlocfilehash: 86a3c1ce2bbd678a2030fc4a3bc256424f7c8ad8
+ms.sourcegitcommit: d43761104f7daf4b2f297648855bb573b53e6d8c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "80813085"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "81637717"
 ---
 # <a name="monitor-premium-capacities-with-the-app"></a>Övervaka Premium-funktioner med appen
 
@@ -22,8 +22,9 @@ ms.locfileid: "80813085"
 
 Appen uppdateras regelbundet med nya funktioner. Se till att du kör den senaste versionen. Om du redan har en tidigare version av appen installerad är det bäst att ta bort den från dina appar och sedan trycka på CTRL+F5 för att uppdatera.
 
-> [!IMPORTANT]
-> Om din Power BI Premium-kapacitet har hög resursanvändning, som medför prestanda- och tillförlitlighetsproblem, kan du få e-postmeddelanden för att identifiera och lösa problemet. Detta kan vara ett effektivt sätt att felsöka överbelastade kapaciteter. Mer information finns i [meddelanden om kapacitet och tillförlitlighet](service-interruption-notifications.md#capacity-and-reliability-notifications).
+
+
+
 
 ## <a name="install-the-app"></a>Installera appen
 

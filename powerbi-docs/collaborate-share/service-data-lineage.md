@@ -1,5 +1,5 @@
 ---
-title: Dataursprung (förhandsversion)
+title: Dataursprung
 description: I moderna Business Intelligence-projekt kan det vara svårt för många kunder att förstå dataflödet från datakällan till målet.
 author: paulinbar
 ms.reviewer: ''
@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.date: 02/27/2020
 ms.author: painbar
 LocalizationGroup: ''
-ms.openlocfilehash: 165651beab2e20f033d20480e78a3876931ea806
-ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
+ms.openlocfilehash: fc1f55fbadfaa6c25dd9140a41064eaa876013df
+ms.sourcegitcommit: 5ece366fceee9832724dae40eacf8755e1d85b04
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81267283"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81525409"
 ---
-# <a name="data-lineage-preview"></a>Dataursprung (förhandsversion)
+# <a name="data-lineage"></a>Dataursprung
 I moderna Business Intelligence-projekt kan det vara svårt att förstå dataflödet från datakällan till målet. Det kan vara ännu svårare om du har byggt avancerade analysprojekt som omfattar flera datakällor, artefakter och beroenden. Frågor som ”vad händer om jag ändrar dessa data?” eller ”varför är inte den här rapporten uppdaterad?” kan vara svåra att svara på. Det kan krävas ett team av experter eller en djupgående undersökning för att hitta svaren. Vi har skapat en dataursprungsvy för att hjälpa dig att besvara dessa frågor.
 
 ![Ursprungsvyn i Power BI](media/service-data-lineage/service-data-lineage-view.png)

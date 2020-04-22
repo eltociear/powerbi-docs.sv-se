@@ -7,15 +7,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/12/2019
+ms.date: 04/17/2020
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 801af5e9c4d5306a3e77d4e82c787cc90e9cac37
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: efa5acbe70ea4541c2f9819d5260cb662ca0adac
+ms.sourcegitcommit: d43761104f7daf4b2f297648855bb573b53e6d8c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73872787"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "81637886"
 ---
 # <a name="intro-to-dashboard-tiles-for-power-bi-designers"></a>Introduktion till paneler på instrumentpanelen för Power BI-designers
 
@@ -41,7 +41,6 @@ Det finns många olika sätt att lägga till (fästa) en panel till en instrumen
 * [En rapport](service-dashboard-pin-tile-from-report.md)
 * [En annan instrumentpanel](service-pin-tile-to-another-dashboard.md)
 * [Excel-arbetsbok på OneDrive för företag](service-dashboard-pin-tile-from-excel.md)
-* [Power BI Publisher för Excel](publisher-for-excel.md)
 * [Quick Insights](service-insights.md)
 * [En lokal sidnumrerad rapport i Power BI-rapportserver eller SQL Server Reporting Services](https://docs.microsoft.com/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards)
 

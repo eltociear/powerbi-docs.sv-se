@@ -1,5 +1,5 @@
 ---
-title: Påverkansanalys för en datamängd (förhandsversion)
+title: Effektanalys för datamängd
 description: Visualisera och analysera effekten på underordnade objekt av att göra ändringar i datamängder.
 author: paulinbar
 ms.reviewer: ''
@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.date: 04/13/2020
 ms.author: painbar
 LocalizationGroup: ''
-ms.openlocfilehash: 016c555c6df65a45a9d429c25db93110022d9d8f
-ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
+ms.openlocfilehash: d6d62583d6ef6bd1fcc1630b46bdb5d97c221f16
+ms.sourcegitcommit: 5ece366fceee9832724dae40eacf8755e1d85b04
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81268039"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81525340"
 ---
-# <a name="dataset-impact-analysis-preview"></a>Påverkansanalys för en datamängd (förhandsversion)
+# <a name="dataset-impact-analysis"></a>Effektanalys för datamängd
 
 När du gör ändringar i en datamängd eller överväger att göra det är det viktigt att du kan bedöma effekten som dessa ändringar kommer att ha på rapporter och instrumentpaneler som är beroende av datamängden. **Påverkansanalys för en datamängd** ger dig information som kan hjälpa dig med den här bedömningen.
 * Det visar hur många arbetsytor, rapporter och instrumentpaneler som kan påverkas av din ändring och ger enkel navigering till arbetsytorna där de berörda rapporterna och instrumentpanelerna är placerade så att du kan undersöka ytterligare.

@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 04/08/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: a252c10b247ad5fc06565139bc69fc43a9add467
-ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
+ms.openlocfilehash: 6350c67835c097de6f065ba61c0b49b555551952
+ms.sourcegitcommit: d43761104f7daf4b2f297648855bb573b53e6d8c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81267490"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "81637739"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Konfigurera arbetsbelastningar i en Premium-kapacitet
 
@@ -202,8 +202,9 @@ Arbetsbelastningar kan aktiveras och tilldelas till en kapacitet med hjälp av [
 
 [Power BI Premium-appen för kapacitetsmått](service-admin-premium-monitor-capacity.md) ger mått på datauppsättning, dataflöden och sidnumrerade rapporter för att övervaka arbetsbelastningar som aktiverats för din kapacitet. 
 
-> [!IMPORTANT]
-> Om din Power BI Premium-kapacitet har hög resursanvändning, som medför prestanda- och tillförlitlighetsproblem, kan du få e-postmeddelanden för att identifiera och lösa problemet. Mer information finns i [meddelanden om kapacitet och tillförlitlighet](service-interruption-notifications.md#capacity-and-reliability-notifications).
+
+
+
 
 ## <a name="next-steps"></a>Nästa steg
 

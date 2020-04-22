@@ -1,20 +1,20 @@
 ---
 title: Använda knappar i Power BI
 description: Du kan lägga till knappar i Power BI-rapporter som gör att dina rapporter fungerar som appar, och fördjupar engagemanget hos användarna.
-author: davidiseminger
+author: maggiesMSFT
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 03/12/2020
-ms.author: davidi
+ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 6629165ec031fea0d1c1af443e1d7b311bc743aa
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.openlocfilehash: c703a4b67b642af5199413e80ff1e140905a2338
+ms.sourcegitcommit: b2cb0b02bdc451bf11a92a68f2c4d560a811f563
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79201652"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81439835"
 ---
 # <a name="use-buttons-in-power-bi"></a>Använda knappar i Power BI
 Med hjälp av **knappar** i Power BI kan du skapa rapporter som fungerar ungefär som appar. Därigenom skapar du en engagerande miljö så att användarna kan hovra, klicka och interagera ytterligare med Power BI-innehåll. Du kan lägga till knappar i rapporter i **Power BI Desktop** och i **Power BI-tjänsten**. När du delar dina rapporter i Power BI-tjänsten ger de en appliknande upplevelse för dina användare.
