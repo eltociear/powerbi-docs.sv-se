@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 01/29/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 2c0d7c90c92a0a20fb7acf2985707c2bc99a69bc
-ms.sourcegitcommit: 915cb7d8088deb0d9d86f3b15dfb4f6f5b1b869c
+ms.openlocfilehash: 9a1d0abc065380a30b1868710bea31d0bf1fa89f
+ms.sourcegitcommit: 01bcbc8f0280aec875b22542a9c193c80899dc10
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "81006605"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "82066160"
 ---
 # <a name="tips-to-manage-axes-in-power-bi-reports"></a>Tips om hur du kan hantera axlar i Power BI-rapporter
 
@@ -41,7 +41,7 @@ Sammanfattningsvis så omfattar de åtta bästa tipsen om hur du kan hantera axl
 
 Mer information om ämnet i den här artikeln finns i följande resurser:
 
-- [Tips om hur du kan skapa snygga rapporter](../power-bi-reports-tips-and-tricks-for-creating.md)
+- [Tips om hur du kan skapa snygga rapporter](../desktop-tips-and-tricks-for-creating-reports.md)
 - biDezine-video: [8 viktiga tips om hur du kan hantera axlar effektivt i Power BI](https://www.youtube.com/watch?v=3t9W7Xvpzo0)
 - Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 - Har du förslag? [Bidra till att förbättra Power BI](https://ideas.powerbi.com)

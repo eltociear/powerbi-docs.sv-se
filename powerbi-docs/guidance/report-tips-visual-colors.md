@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 02/15/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 8f2698d37c306451ccd73f2b1dd3017933077a0c
-ms.sourcegitcommit: 915cb7d8088deb0d9d86f3b15dfb4f6f5b1b869c
+ms.openlocfilehash: 007f91a0f220ce7482600ac284336a3ac1cbfa0f
+ms.sourcegitcommit: 01bcbc8f0280aec875b22542a9c193c80899dc10
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "81006490"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "82065511"
 ---
 # <a name="tips-to-optimize-visual-colors-in-power-bi-reports"></a>Tips om hur du kan optimera visuella färger i Power BI-rapporter
 
@@ -41,7 +41,7 @@ Sammanfattningsvis så omfattar de åtta bästa tipsen om hur du kan optimera vi
 
 Mer information om ämnet i den här artikeln finns i följande resurser:
 
-- [Tips om hur du kan skapa snygga rapporter](../power-bi-reports-tips-and-tricks-for-creating.md)
+- [Tips om hur du kan skapa snygga rapporter](../desktop-tips-and-tricks-for-creating-reports.md)
 - biDezine-video: [8 viktiga tips om hur du kan optimera visuella färger i Power BI](https://www.youtube.com/watch?v=RhYcEsdPqJg)
 - Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 - Har du förslag? [Bidra till att förbättra Power BI](https://ideas.powerbi.com)

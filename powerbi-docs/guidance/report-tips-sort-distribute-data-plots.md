@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 03/25/2020
 ms.author: v-pemyer
-ms.openlocfilehash: f497060c4e36c648bd2b3ef23ae8914d303adfa6
-ms.sourcegitcommit: 915cb7d8088deb0d9d86f3b15dfb4f6f5b1b869c
+ms.openlocfilehash: e532c78254dffc9a3f95a165f509f8cc0553f09b
+ms.sourcegitcommit: 01bcbc8f0280aec875b22542a9c193c80899dc10
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "81006536"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "82065949"
 ---
 # <a name="tips-to-sort-and-distribute-data-plots-in-power-bi-reports"></a>Tips för att sortera och distribuera datapunkter i Power BI rapporter
 
@@ -42,7 +42,7 @@ För att summera kan vi säga att de nio främsta tipsen för att sortera och di
 
 Mer information om ämnet i den här artikeln finns i följande resurser:
 
-- [Tips om hur du kan skapa snygga rapporter](../power-bi-reports-tips-and-tricks-for-creating.md)
+- [Tips om hur du kan skapa snygga rapporter](../desktop-tips-and-tricks-for-creating-reports.md)
 - biDezine-video: [De nio främsta tipsen för att sortera och distribuera datapunkter i Power BI](https://www.youtube.com/watch?v=BnhA4qa-9Jk)
 - Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 - Har du förslag? [Bidra till att förbättra Power BI](https://ideas.powerbi.com/)
