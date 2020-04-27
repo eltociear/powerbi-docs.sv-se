@@ -7,14 +7,14 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/31/2020
+ms.date: 04/22/2020
 ms.author: davidi
-ms.openlocfilehash: d3733b651ac8b9687d3b0547cc2f76c04a0d0823
-ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
+ms.openlocfilehash: 95492b8561c37b52e77fbd8b16ce5e1e2ec4e4e1
+ms.sourcegitcommit: 01bcbc8f0280aec875b22542a9c193c80899dc10
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77427264"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "82066247"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop"></a>Tips om hur du skapar rapporter i Power BI Desktop
 För att få ut mesta möjliga av dina data, behövs ibland lite extra hjälp. Vi har samlat några tips och råd som du kan använda när du skapar rapporter i Microsoft Power BI Desktop *och* i Microsoft Excel 2016 eller Excel 2013 Pro-Plus-versioner med Power Pivot-tillägget aktiverat och Power Query installerad och aktiverad. 
@@ -148,7 +148,7 @@ Nu har du en dimensionstabell som du kan använda för att relatera till Custome
 Frågeredigeraren är ett kraftfullt verktyg som kan manipulera data för att forma och rensa dem så att de kan visualiseras eller modelleras. Det finns några mönster som du bör känna till.
 
 ### <a name="temporary-columns-can-be-deleted-after-computing-a-result"></a>Tillfälliga kolumner kan tas bort efter att ha beräknat ett resultat
-Du behöver ofta skapa en beräkning i Power BI Desktop som omvandlar data från flera kolumner till en ny kolumn. Detta kan vara komplicerat. Ett enkelt sätt att lösa problemet är att dela upp åtgärden i flera steg. Starta genom att duplicera de inledande kolumnerna. Bygg sedan stegen som tillfälliga kolumner. Skapa sedan en kolumn för slutresultatet. Du kan sedan ta bort temporära kolumner så att den slutgiltiga uppsättningen data inte fylls. Det är möjligt eftersom frågefliken utför stegen i ordning. 
+Du behöver ofta skapa en beräkning i Power BI Desktop som omvandlar data från flera kolumner till en ny kolumn. Detta kan vara komplicerat. Ett enkelt sätt att lösa problemet är att dela upp åtgärden i flera steg. Starta genom att duplicera de inledande kolumnerna. Bygg sedan de tillfälliga kolumnerna. Skapa sedan kolumnen för slutresultatet. Du kan sedan ta bort temporära kolumner så att den slutgiltiga uppsättningen data inte fylls. Det är möjligt eftersom frågefliken utför stegen i ordning. 
 
 ### <a name="duplicate-or-reference-queries-followed-by-merge-to-original-query"></a>Dubblett- eller referensfrågor följt av koppla till ursprungsfrågan
 Ibland är det praktiskt att beräkna sammanfattande statistik för en datauppsättning. Ett enkelt sätt att göra detta på är att duplicera eller skapa en referens till frågan i frågefliken. Använd sedan **Gruppera efter** för att beräkna sammanfattande statistik. Sammanfattande statistik hjälpa dig att normalisera data i den ursprungliga informationen så att de blir mer jämförbara. Detta är särskilt användbart för att jämföra enskilda värden med helheten. För att göra detta ska du gå till ursprungsfråga och välja alternativet sammanfoga. Sammanfoga sedan data från frågan sammanfattningsstatistik för lämpliga identifierare. Nu är du redo att normalisera de data som behövs för din analys.
@@ -161,3 +161,64 @@ DAX är formelspråket för beräkningar i Power BI Desktop. Det är optimerat f
 [Data Analysis uttryck (DAX)-referens](https://msdn.microsoft.com/library/gg413422.aspx)
 
 [DAX Resource Center](https://social.technet.microsoft.com/wiki/contents/articles/1088.dax-resource-center.aspx)
+
+## <a name="power-bi-service-and-power-bi-desktop"></a>Power BI-tjänsten *och* Power BI Desktop
+
+### <a name="read-andor-watch-how-to-design-visually-stunning-reports-and-dashboards-in-power-bi"></a>Läsa och/eller titta på reportage om att ”utforma visuellt snygga rapporter (och instrumentpaneler) i Power BI”
+Community-medlemmen Miguel Myers är både dataforskare och grafisk designer.
+
+![Power BI-rapport](media/desktop-tips-and-tricks-for-creating-reports/power-bi-reports.png)
+
+* [Läs bloggen](https://powerbi.microsoft.com/blog/how-to-design-visually-stunning-reports/)
+* [Titta på webbseminariet](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-04Apr-19-Design-Reports-in-PowerBI-Registration.html)
+
+### <a name="consider-your-audience"></a>Ta hänsyn till din målgrupp
+Vilka är de viktigaste måtten som kommer hjälpa dem att fatta beslut? Hur kommer rapporten att användas? Vilka inlärda eller kulturella antaganden kan påverka utformningsvalen? Vilken information behöver din målgrupp för att lyckas?
+
+Var ska rapporten visas? Om den ska visas på en stor skärm kan du placera mer innehåll på den. Om läsarna ska visa den på sina surfplattor blir färre visualiseringar lättare att läsa.
+
+### <a name="tell-a-story-and-keep-it-to-one-screen"></a>Förmedla ditt budskap och begränsa det till en skärm
+Varje rapportsida ska kunna förmedla en berättelse vid första anblicken. Går det att undvika rullningslister på sidorna? Är rapporten för plottrigt eller för upptagen?  Ta bort allt utom viktig information som enkelt kan läsas och tolkas.
+
+### <a name="make-the-most-important-information-biggest"></a>Gör den viktigaste informationen störst
+Om texten och visualiseringarna på rapportsidan har samma storlek, får läsaren svårt att fokusera på vad som är viktigt. Till exempel är kortvisualiseringar ett bra sätt att visa upp ett viktigt tal på en framträdande plats:  
+![Kortvisualisering](media/service-dashboards-design-tips/pbi_card.png)
+
+### <a name="but-be-sure-to-provide-context"></a>Men kom ihåg att tillhandahålla kontexten  
+
+Använd funktioner som textrutor och beskrivningar när du vill lägga till kontext till dina visualiseringar.
+
+### <a name="put-the-most-important-information-in-the-upper-corner"></a>Placera den viktigaste informationen i det övre hörnet
+De flesta läser uppifrån och ned, så placera mer allmän information högst upp och visa fler detaljer i den riktning som målgruppen läser (från vänster till höger eller från höger till vänster).
+
+### <a name="use-the-right-visualization-for-the-data-and-format-it-for-easy-reading"></a>Använd rätt visualisering för dina data och formatera den för enklare läsning
+Undvik att variera visualiseringarna bara för sakens skull.  Visualiseringar ska skapa en översiktsbild och vara enkla att ”läsa” och tolka.  För vissa data och visualiseringar räcker det med en enkel grafisk visualisering. Men andra data kan kräva en mer komplex visualisering – var noga med att använda rubriker och etiketter och andra anpassningar för att hjälpa läsaren.  
+
+* Var försiktig med att använda diagram som förvränger verkligheten, till exempel 3D-diagram och diagram som inte börjar vid noll. Tänk på att det är förhållandevis svårt för den mänskliga hjärnan att tolka runda figurer. Cirkeldiagram, ringdiagram, måttdiagram och andra runda diagramtyper kan se fina ut, men det finns kanske ett annat visuellt objekt som du kan använda istället?    
+* Var konsekvent när du väljer skalor för diagram, bestämmer hur diagram ska dimensioneras och väljer färger för att betecknar värden i diagram.    
+* Var noga med att koda kvantitativa data på ett snyggt sätt. Använd inte fler än tre eller fyra siffror när tal visas. Visa mått med en eller två siffror till vänster om decimaltecknet och skala för tusen eller miljoner, det vill säga skriv 3,4 miljoner och inte 3 400 000.    
+* Försök att undvika att blanda olika precisions- och tidsnivåer. Kontrollera att tidsramarna är lätta att förstå.  Placera inte ett diagram från förra månaden bredvid filtrerade diagram från en specifik månad det året.    
+* Blanda inte heller stora och små mått på samma skala, t.ex i ett linje- eller stapeldiagram.  Som exempel då ett mått är i miljontal och det andra i tusental.  Med en så stor skala är det svårt att se skillnaderna mellan måtten i tusental.  Om du måste blanda så välj en visualisering, t.ex. ett kombinationsdiagram, som tillåter användning av en andra axel.    
+* Undvik att fylla dina diagram med dataetiketter som inte behövs. Värdena i stapeldiagram, ***om de är tillräckligt stora***, är vanligtvis så lätta att förstå att man inte behöver visa det faktiska talet.   
+* Var uppmärksam på hur [diagram sorteras](consumer/end-user-change-sort.md). Om du vill uppmärksamma det högsta eller lägsta talet kan du sortera efter mått. Om du vill att användare snabbt ska kunna hitta en viss kategori bland många kategorier, kan du sortera efter axeln.  
+* Cirkeldiagram fungerar som bäst med mindre än åtta kategorier. Eftersom man inte kan jämföra värden sida vid sida, är det svårare för att jämföra värden i ett cirkeldiagram än i ett stapel- eller kolumndiagram. Cirkeldiagram är bättre för att visa förhållanden mellan en del och helheten, än för att jämföra delarna med varandra. Och måttdiagram är bra för att visa aktuell status i kontexten för ett mål.    
+
+Mer visualiseringsspecifika anvisningar finns i [Visualiseringstyper i Power BI](visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).  
+
+### <a name="learn-more-about-best-practice-dashboard-design"></a>Läs mer om bästa praxis för instrumentpanelsutformning
+Några av våra favoritböcker är:
+
+* *Storytelling with Data* av Cole Nussbaumer Knafic
+* *Data points* av Nathan Yau
+* *The truthful Art* av Alberto Cairo
+* *Now You See It* av Stephen Few  
+* *Envisioning Information* av Edward Tufte  
+* *Advanced Presentations Design* av Andrew Abela   
+
+## <a name="next-steps"></a>Nästa steg
+* [Grundläggande begrepp för designers i Power BI-tjänsten](service-basic-concepts.md)
+* [Rapporter i Power BI](consumer/end-user-reports.md)
+
+Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
+
+

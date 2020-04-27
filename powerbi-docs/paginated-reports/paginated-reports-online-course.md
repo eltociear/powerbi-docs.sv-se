@@ -9,12 +9,12 @@ ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 03/18/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 325e62bbf326e9f30d4c41299998c61cc5d7f487
-ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
+ms.openlocfilehash: 5ff7891ce704ebaf8677df6f0872396ffa1b04a2
+ms.sourcegitcommit: 1f768dfef27cd8887318671f91427f72d02370c6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81267605"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81675646"
 ---
 # <a name="online-course-power-bi-paginated-reports-in-a-day"></a>Nätbaserad kurs: Sidnumrerade rapporter i Power BI på en dag
 
@@ -83,7 +83,7 @@ Titta på välkomst- och introduktionsvideon för att starta kursen.
 
 Du kan ladda ned och konfigurera ett självstudiepaket som består av presentationsinnehåll och åtta praktiska labbövningar:
 
-1. Använd [den här länken](https://aka.ms/priad-ilt-student) till att ladda ned självstudien (.zip) lokalt.
+1. Använd [den här länken](https://aka.ms/priad-student) till att ladda ned självstudien (.zip) lokalt.
 1. Öppna filegenskaperna och markera ”Avblockera” (Windows kan flagga filen som potentiellt osäker).
 1. Extrahera filinnehållet till en mapp i filsystemet. Vi rekommenderar att du skapar en mapp som är lätt att hitta, du kan ge den namnet **Utbildning**. Labbdokumenten refererar till den här platsen som **&lt;CourseFolder&gt;** .
 
@@ -105,6 +105,10 @@ När du är redo att börja med den första övningen öppnar du filen **&lt;Cou
 > Du måste logga in i Power BI för att publicera en Power BI Desktop-fil till en arbetsyta. Publiceringen ger dig en datamängd som används som datakälla till rapporter. Du behöver ingen Power BI Pro-licens eller Power BI Premium-prenumeration för att använda en datamängd som datakälla till rapporter.
 >
 > I en del övningar ska du dock publicera en sidnumrerad rapport till en arbetsyta. Du kan bara öppna en sidnumrerad rapport när den är sparad på en arbetsyta i en [dedikerad kapacitet](../service-premium-what-is.md#dedicated-capacities) som har arbetsbelastningar för sidnumrerade rapporter aktiverade. Om du inte har åtkomst till någon sådan arbetsyta får du en länk till en video som visar rapportpublicering i stället.
+
+## <a name="instructor-kit"></a>Instruktörssats
+
+Använd [den här länken](https://aka.ms/priad-instructor) till att ladda ned instruktörssatsen (.zip) lokalt till datorn.
 
 ## <a name="next-steps"></a>Nästa steg
 

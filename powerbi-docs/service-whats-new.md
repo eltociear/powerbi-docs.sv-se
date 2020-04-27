@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/22/2019
+ms.date: 04/14/2020
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: 878e4a2e033d33e8c6bb027f35976c19e8b108c9
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.openlocfilehash: 014e3963c0297adb4b77a71f1267f7f132944094
+ms.sourcegitcommit: b2cb0b02bdc451bf11a92a68f2c4d560a811f563
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79488854"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81439858"
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nyheter i Power BI-tjänsten
 Kontrollera den här sidan för kända problem och nyligen utgivna funktioner i **Power BI-tjänsten**. Relaterad information om nyheter finns i:
@@ -29,11 +29,41 @@ Besök även våra YouTube-kanaler för information om nyheter och funktioner.
 * [Microsoft Power BI (YouTube)](https://www.youtube.com/channel/UCy--PYvwBwAeuYaR8JLmrfg)
 * [Guy in a Cube (YouTube)](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)
 
+### <a name="april-2020"></a>April 2020
+* Offentlig förhandsversion av det ”nya utseendet” för arbetsytor i Power BI-tjänsten.
+* Allmän tillgänglighet för utformning av anpassad navigering för [Power BI-appar](service-create-distribute-apps.md).
+
+## <a name="previous-months-2020"></a>Föregående månader (2020)
+### <a name="march-2020"></a>Mars 2020
+* Exportera rapporter till PDF-, PPTX- och PNG-filer med hjälp av Power BI REST-API:er.
+* Ny och omdesignad global sökfunktion i Power BI-tjänsten.
+* Prestandaförbättringar för [Multi-Geo Premium-kapaciteter](service-admin-premium-multi-geo.md).
+* Offentlig förhandsversion av [XMLA-slutpunkter för läsning/skrivning](service-premium-connect-tools.md) i Power BI Premium.
+
+### <a name="february-2020"></a>Februari 2020
+* Möjlighet att flytta upp instrumentpaneler, rapporter och appar på Power BI-start.
+* Den nya [Power BI-fliken](service-embed-report-microsoft-teams.md) för inbäddning av rapporter i Microsoft Teams.
+* Allmän tillgänglighet för [inkrementell uppdatering](service-premium-incremental-refresh.md) med stöd för Power BI Pro-användare.
+* Stöd för e-postprenumerationer för externa e-postadresser.
+* Allmän tillgänglighet för [Bring Your Own Key (BYOK)](service-encryption-byok.md) för Power BI Premium.
+
+### <a name="january-2020"></a>Januari 2020
+* Nya och förbättrade [användningsmått](service-usage-metrics.md) för den Power BI-arbetsytans upplevelse.
+
+## <a name="2019"></a>2019
+### <a name="december-2019"></a>December 2019
+* Nytt aktivitetsloggs-API som gör det möjligt för Power BI-tjänstadministratörer att spåra användar- och administratörsaktiviteter i sin klientorganisation.
+
+### <a name="november-2019"></a>November 2019
+* Offentlig förhandsversion av [stora modeller i Power BI Premium](service-premium-large-models.md].
+* Offentlig förhandsversion av användning av säkerhetskontroller för Microsoft-molnappar i Power BI.
+
 ### <a name="october-2019"></a>Oktober 2019
 * Ny Power Automate-åtgärd för att uppdatera Power BI-datamängder.
 * [Kontaktlista](https://powerbi.microsoft.com/blog/announcing-new-contact-lists-for-reports-and-dashboards-in-the-power-bi-service/) för rapporter och instrumentpaneler i Power BI-tjänsten.
+* Allmän tillgänglighet för [Automatiserad maskininlärning](service-machine-learning-automated
+* Offentlig förhandsversion av Power BI-vyn för dataursprung.
 
-## <a name="previous-months-2019"></a>Föregående månader (2019)
 ### <a name="september-2019"></a>September 2019
 * Uppdateringar av anslutningskonfigurationen för [mallappar](service-template-apps-overview.md).
 

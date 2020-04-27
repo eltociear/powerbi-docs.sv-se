@@ -10,18 +10,18 @@ ms.author: kfollis
 ms.date: 12/05/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: bfcb88354d542416268ab145a056644db5042b21
-ms.sourcegitcommit: 9a265d8117cc202f5f700286b5ff42a631aacdb4
+ms.openlocfilehash: 831c6f1d2cecfa51b64c8ff77f14ead9f644bcc7
+ms.sourcegitcommit: b2cb0b02bdc451bf11a92a68f2c4d560a811f563
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74882857"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81439996"
 ---
 # <a name="row-level-security-rls-with-power-bi"></a>Säkerhet på radnivå (RLS) med Power BI
 
 Säkerhet på radnivå (RLS) med Power BI kan användas för att begränsa åtkomst till data för givna användare. Filter begränsar åtkomst till data på radnivå och du kan definiera filter inom roller. Tänk på att medlemmar i en arbetsyta har åtkomst till datauppsättningar i arbetsytan i Power BI-tjänsten. RLS begränsar inte åtkomsten till data.
 
-Du kan konfigurera RLS för datamodeller som importerats till Power BI med Power BI Desktop. Du kan också konfigurera RLS på datauppsättningar som använder DirectQuery, till exempel SQL Server. Tidigare kunde du endast att implementera RLS inom lokala Analysis Services-modeller utanför Power BI. För Analysis Services live-anslutningar konfigurerar du säkerhet på radnivå på den lokala modellen. Säkerhetsalternativet visas inte för datauppsättningar med live-anslutning.
+Du kan konfigurera RLS för datamodeller som importerats till Power BI med Power BI Desktop. Du kan också konfigurera RLS på datauppsättningar som använder DirectQuery, till exempel SQL Server. Tidigare kunde du endast att implementera RLS inom lokala Analysis Services-modeller utanför Power BI. För live-anslutningar med Analysis Services eller Azure Analysis Services konfigurerar du säkerhet på radnivå i modellen, inte i Power BI Desktop. Säkerhetsalternativet visas inte för datauppsättningar med live-anslutning.
 
 [!INCLUDE [include-short-name](./includes/rls-desktop-define-roles.md)]
 
@@ -39,7 +39,7 @@ Mer information finns i [dubbelriktad korsfiltrering med DirectQuery i Power BI 
 Om du vill hantera säkerheten på din datamodell, gör du följande.
 
 1. Välj **ellipsen (...)**  för en datauppsättning.
-2. Välj **säkerhet**.
+2. Välj **Säkerhet**.
    
    ![Tillämpa säkerhetsfilter i båda riktningarna](media/service-admin-rls/rls-security.png)
 

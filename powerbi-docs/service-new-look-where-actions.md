@@ -6,19 +6,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/08/2019
+ms.date: 04/15/2020
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 2216fb2b18fd0f35fe9ece25ae2bfeea26672a66
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 69b42452af53b8929f49a6bde6b47b0cf3cc152e
+ms.sourcegitcommit: 5ece366fceee9832724dae40eacf8755e1d85b04
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73872033"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81525570"
 ---
 # <a name="the-new-look-where-did-the-actions-go"></a>Det ”nya utseendet”: Var finns åtgärderna?
 
 Power BI-tjänsten (app.powerbi.com) har ett nytt utseende som gör det enklare att visa och interagera med dina rapporter. Därför har många menyåtgärder flyttats. Tabellerna i den här artikeln mappar den gamla platsen till den nya. Du kan få bakgrundsinformation i [det nya utseendet för Power BI-tjänsten](service-new-look.md).
+
+Letar du efter information om det nya utseendet i **Power BI Desktop**? Se [Använda det uppdaterade menyfliksområdet i Power BI Desktop](desktop-ribbon.md).
 
 ## <a name="report-actions-in-the-new-look"></a>Rapportåtgärder i det nya utseendet
 
@@ -56,7 +58,7 @@ Power BI-tjänsten (app.powerbi.com) har ett nytt utseende som gör det enklare 
 | Lägg till panel | Lägg till panel | Menyfält Fler alternativ (...) > Lägg till panel |
 | Kommentarer | Kommentarer | Kommentarer |
 | Visa relaterade | Visa relaterade | Menyfält Fler alternativ (...) > Visa relaterade |
-| Ställ in som aktuell | Ställ in som aktuell| Menyfält Fler alternativ (...) > Ställ in som aktuell|
+| Konfigurera som aktuell | Konfigurera som aktuell| Menyfält Fler alternativ (...) > Ställ in som aktuell|
 | Favorit | Favorit | Favorit |
 | Prenumerera | Prenumerera |Prenumerera |
 | Dela | Dela | Dela |

@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 03/24/2020
-ms.openlocfilehash: 472797cf30d6b88a59af5b3846e9b710bf4607c7
-ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
+ms.openlocfilehash: db907897256ef4afc0bdb9a253a23880b6e79f53
+ms.sourcegitcommit: 5ece366fceee9832724dae40eacf8755e1d85b04
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81267513"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81525478"
 ---
 # <a name="export-power-bi-report-to-file-preview"></a>Exportera Power BI-rapport till fil (förhandsversion)
 
@@ -106,6 +106,7 @@ Ett jobb som överskrider antalet samtidiga begäranden avslutas inte. Om du exe
 * Du kan inte exportera en rapport med en känslighetsetikett till .pdf- eller .pptx-format med hjälp av ett [huvudnamn för tjänsten](embed-service-principal.md).
 * Det antal sidor som kan ingå i en exporterad rapport är 30. Om rapporten innehåller fler sidor returnerar API:et ett fel och exportjobbet avbryts.
 * [Personliga bokmärken](../../consumer/end-user-bookmarks.md#personal-bookmarks) och [beständiga filter](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) stöds inte.
+* Nationella moln stöds inte.
 * De visuella Power BI-objekt som listas nedan stöds inte. När en rapport som innehåller dessa visuella objekt exporteras så återges inte de delar av rapporten som innehåller dessa visuella objekt, och en felsymbol visas.
     * Ocertifierade visuella Power BI-objekt
     * R-visualiseringar

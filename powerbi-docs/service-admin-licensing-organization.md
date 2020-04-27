@@ -1,34 +1,95 @@
 ---
 title: Power BI-licensiering i din organisation
-description: 'Information om de olika licenstyperna i Power BI: kostnadsfria licenser, Power BI Pro och Power BI Premium.'
+description: Översikt av olika licenstyper som är tillgängliga i Power BI och hur administratörer köper och hanterar licensiering för organisationen.
 author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 09/09/2019
+ms.date: 04/08/2020
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 7a2cc9a1deb87e94c0887b1ae00174d6791cf712
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: a41e9453158c38a208fe7f4ac937b4e86a515f4b
+ms.sourcegitcommit: b2cb0b02bdc451bf11a92a68f2c4d560a811f563
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74700037"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81436332"
 ---
 # <a name="power-bi-licensing-in-your-organization"></a>Power BI-licensiering i din organisation
 
-[!INCLUDE [license-capabilities](includes/license-capabilities.md)]
+Vad användare kan göra i Power BI-tjänsten beror på den typ av licens de har och om innehållet de interagerar med ligger på en arbetsyta som tilldelats till en Power BI Premium kapacitet. Alla användare av Power BI-tjänsten måste ha en licens.
 
-Den här artikeln fokuserar på licenser per användare från en administratörs perspektiv.
+Det finns två sätt för användare att få en licens. Användare kan skaffa en egen kostnadsfri licens eller Pro-licens med hjälp av funktioner för registrering via självbetjäning och ett arbets- eller skolkonto. Alternativt kan administratörer skaffa en Power BI-prenumeration och tilldela licenser till användare.
 
-## <a name="manage-power-bi-pro-licenses"></a>Hantera Power BI Pro-licenser
+Den här artikeln fokuserar på inköp av tjänster och licensiering per användare från en administratörs perspektiv. Mer information om hur användare kan hämta sin egen licens finns i [Registrera dig själv som enskild individ för Power BI](service-self-service-signup-for-power-bi.md).
 
-Som administratör kan du köpa och tilldela Power BI Pro-licenser. Du kan även registrera dig för en utvärderingsversion av Power BI Pro för din organisation. Enskilda användare kan också registrera sig för en utvärderingsversion av Power BI Pro.
+## <a name="who-can-purchase-and-assign-licenses"></a>Vem kan köpa och tilldela licenser?
 
-### <a name="purchase-power-bi-pro-licenses"></a>Köpa Power BI Pro-licenser
+Du måste tilldelas en administratörsroll för att köpa eller tilldela licenser för din organisation. Administratörsroller tilldelas via administrationscentret för Azure Active Directory eller administrationscentret för Microsoft 365. Följande tabell visar vilken roll som krävs för att utföra uppgifter som rör inköp och licensiering. Mer information om administratörsroller i Azure Active Directory finns i [Visa och tilldela administratörsroller i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-manage-roles-portal). Mer information om administratörsroller i Microsoft 365, inklusive bästa praxis, finns i [Om administratörsroller](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide).
 
-Som administratör kan du köpa Power BI Pro-licenser via Microsoft 365 eller en certifierad Microsoft-partner. När du har köpt licenserna kan du tilldela dem till enskilda användare. Mer information finns i avsnittet [Köpa och tilldela Power BI Pro-licenser](service-admin-purchasing-power-bi-pro.md).
+| Vem kan köpa tjänster och licenser? | Vem kan hantera användarlicenser? |
+| --------------- | --------------- |
+| Faktureringsadministratör | Licensadministratör |
+| Global administratör | Användaradministratör |
+|  | Global administratör |
+
+Dessa roller sköter hantering av organisationen. Mer information om administratörsroller för Power BI-tjänsten finns i [Förstå Power BI-tjänstadministratörsroller](service-admin-role.md).
+
+## <a name="get-power-bi-for-your-organization"></a>Få Power BI för din organisation
+
+En global administratör eller en faktureringsadministratör kan registrera sig för Power BI-tjänsten och köpa licenser för användarna i organisationen. Om du inte är helt redo att köpa väljer du utvärderingsversionen för Power BI Pro. Du får 25 licenser som du kan använda i en månad. Stegvisa instruktioner för hur du registrerar dig finns i [Skaffa en Power BI-prenumeration för din organisation](admin/service-admin-org-subscription.md).
+
+## <a name="about-self-service-sign-up"></a>Om registrering via självbetjäning
+
+Enskilda användare kan få sin egen Power BI-licens genom att registrera sig med sitt arbets- eller skolkonto. Med en kostnadsfri licens kan användarna utforska Power BI för personlig dataanalys och visualisering med hjälp av Min arbetsyta, men de kan inte inleda samarbete med andra användare. En Power BI Pro-licens krävs för delning av innehåll. Användarna kan uppgradera sin licenstyp till Pro eller registrera sig för Pro direkt om organisationen använder det kommersiella molnet. Direkt inköp av eller uppgradering till Pro är inte tillgänglig för utbildningsorganisationer eller organisationer som distribuerats till myndigheter eller instanser av nationella moln.
+
+Om du inte vill att självbetjäningsregistrering ska vara tillgänglig för användare i din organisation läser du [Aktivera eller inaktivera självbetjäningsregistrering](admin/service-admin-disable-self-service.md) för att lära dig hur du inaktiverar det.
+
+Om du vill se vilka användare i din organisation som kanske redan har en licens kan du läsa [Visa och hantera användarlicenser](admin/service-admin-manage-licenses.md) för att lära dig hur det går till.
+
+## <a name="license-types-and-capabilities"></a>Licenstyper och funktioner
+
+Det finns två typer av Power BI-licenser per användare: kostnadsfri och Pro. Den typ av licens som användare behöver beror på var innehållet lagras och hur de interagerar med innehållet. Var innehåll kan lagras bestäms av din organisations [prenumerationstyp](#subscription-types).
+
+En typ av prenumeration, [Power BI Premium](service-admin-premium-purchase.md), gör att användare med en kostnadsfri licens kan interagera med innehåll på arbetsytor som har tilldelats till en Premium-kapacitet. Utanför Premium-kapacitet kan användare med en kostnadsfri licens endast använda Power BI-tjänsten för att ansluta till data samt skapa rapporter och instrumentpaneler på en personlig arbetsyta. De kan inte dela innehåll med andra eller publicera innehåll till apparbetsytor.
+
+Standardprenumerationer på Power BI använder delad kapacitet. När innehållet lagras i delad kapacitet kan användare som har tilldelats en Power BI Pro-licens endast samarbeta med andra Power BI Pro-användare. De kan använda innehåll som delas av andra användare, publicera innehåll på arbetsytor, dela instrumentpaneler samt prenumerera på instrumentpaneler och rapporter.  När arbetsytor är i Premium-kapacitet kan Pro-användare distribuera innehåll till användare som inte har en Power BI Pro-licens.
+
+I tabellen nedan sammanfattas de grundläggande funktionerna för varje licenstyp. En detaljerad analys av tillgängliga funktioner per licenstyp finns i [Funktioner per licenstyp](service-features-license-type.md).
+
+| Licenstyp | Funktioner när arbetsytan är i delad kapacitet | Ytterligare funktioner när arbetsytan är i Premium-kapacitet |
+| --------- | ----------- | ----------- |
+| Power BI (kostnadsfri) | Åtkomst till innehåll på Min arbetsyta | Använda innehåll som delas med dem |
+| Power BI Pro | Publicera innehåll på arbetsytor, dela instrumentpaneler, prenumerera på instrumentpaneler och rapporter samt dela med användare som har en Pro-licens | Distribuera innehåll till användare som har kostnadsfria licenser |
+
+## <a name="subscription-types"></a>Prenumerationstyper
+
+Alla användarbaserade prenumerationer med kommersiell licens från Microsoft baseras på Azure Active Directory-identiteter. Det innebär att du måste logga in med en identitet som Azure Active Directory stöder för kommersiella licenser. Du kan lägga till en Power BI-prenumeration till valfri Microsoft-prenumeration som använder Azure Active Directory för identitetstjänster. Vissa prenumerationer, till exempel Office 365 E5, innehåller en Power BI Pro-licens, och då behövs ingen separat registrering för Power BI.
+
+Det finns två typer av Power BI-prenumerationer för organisationer: självbetjänings-BI med Power BI Pro samt avancerad analys med Power BI Premium.
+
+Med en standardmässig Power BI Pro-självbetjäningsprenumeration tilldelar administratörer licenser per användare. Det finns en månatlig avgift per användare för Power BI Pro-licenser som möjliggör samarbete, publicering, delning och ad hoc-analys. Innehållet sparas i den delade lagringskapaciteten, som Microsoft hanterar fullständigt.
+
+En Power BI Premium-prenumeration allokerar dedikerad kapacitet till en organisation. Premium passar för BI i företagsklass, stordataanalys samt molnbaserad och lokal rapportering. Det tillhandahåller avancerade administrations- och distributionskontroller. Dedikerade beräknings- och lagringsresurser hanteras av kapacitetsadministratörer i din organisation. Det finns en månatlig kostnad för den här dedikerade miljön. Utöver andra Premium-fördelar kan innehåll som lagras i Premium-kapacitet nås av och distribueras till användare som inte har Power BI Pro-licenser. Minst en användare måste ha en Power BI Pro-licens tilldelad för att kunna använda Premium, och innehållsskapare och utvecklare behöver en Power BI Pro-licens.
+
+De två prenumerationstyperna är inte ömsesidigt uteslutande. Du kan ha både Power BI Premium och Power BI Pro. I den här konfigurationen kan innehåll som lagras i Premium-kapacitet delas med alla användare, och delad kapacitet är också tillgängligt. Information om kapacitetsgränser finns i [Hantera datalagring på Power BI-arbetsytor](service-admin-manage-your-data-storage-in-power-bi.md).
+
+Information om hur du jämför produktfunktioner och priser finns i [Power BI-prissättning](https://powerbi.microsoft.com/pricing).
+
+## <a name="guest-user-access"></a>Gästanvändaråtkomst
+
+Du vill kanske distribuera innehåll till användare som är utanför organisationen. Det går att dela innehåll med externa användare genom att bjuda in dem att titta på innehåll som gäster. Azure Active Directory Business-to-business (Azure AD B2B) möjliggör delning med externa gästanvändare. Följande krav måste uppfyllas för att det ska gå att dela med externa användare:
+
+- Möjligheten att dela innehåll med externa användare måste vara aktiverad
+
+- Gästanvändare måste ha korrekt licensiering för att se det delade innehållet
+
+Mer information om gästanvändaråtkomst finns i [Distribuera Power BI-innehåll till externa gästanvändare med Azure AD B2B](service-admin-azure-ad-b2b.md).
+
+## <a name="purchase-power-bi-pro-licenses"></a>Köpa Power BI Pro-licenser
+
+Som administratör kan du köpa Power BI Pro-licenser via Microsoft 365 eller en Microsoft-partner. När du har köpt licenserna kan du tilldela dem till enskilda användare. Mer information finns i avsnittet [Köpa och tilldela Power BI Pro-licenser](service-admin-purchasing-power-bi-pro.md).
 
 ### <a name="power-bi-pro-license-expiration"></a>Power BI Pro-licensens upphörande
 
@@ -36,123 +97,10 @@ Det finns en respitperiod efter att en Power BI Pro-licens har gått ut. För li
 
 Power BI Pro har samma prenumerationslivscykel som Office 365. Mer information finns i [Vad händer med mina data och åtkomst när Office 365 för företag-prenumerationen går ut?](https://support.office.com/article/What-happens-to-my-data-and-access-when-my-Office-365-for-business-subscription-ends-4436582f-211a-45ec-b72e-33647f97d8a3).
 
-### <a name="power-bi-pro-trial-for-individuals"></a>Utvärderingsversion av Power BI Pro för enskilda användare
-
-Enskilda användare i din organisation kan registrera sig för en utvärderingsversion av Power BI Pro. Mer information finns i [Registrera dig själv som enskild individ för Power BI](service-self-service-signup-for-power-bi.md).
-
-De som använder den här utvärderingsversionen av Power BI Pro för individer visas inte som Power BI Pro-utvärderingsanvändare i Microsoft 365-administratörscentret (de visas som användare av den kostnadsfria Power BI-versionen). De visas dock som Power BI Pro-utvärderingsanvändare på sidan Hantera lagring i Power BI.
-
-### <a name="power-bi-pro-trial-for-organizations"></a>Utvärderingsversion av Power BI Pro för organisationer
-
-Om du vill hämta och distribuera Power BI-utvärderingslicenser till flera användare i din organisation utan att de enskilda användarna ska behöva godkänna användningsvillkoren individuellt, så kan du registrera dig för en utvärderingsversion av Power BI Pro för din organisation.
-
-Tänk på följande innan du börjar registrera dig:
-
-* Du måste ha rollen [**global administratör** eller **faktureringsadministratör**](https://support.office.com/article/about-office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d) i Microsoft 365 för att kunna registrera dig.
-
-* Det finns en gräns på en organisationsutvärdering per klientorganisation. Det innebär att om någon redan har använt Power BI Pro-utvärderingen för din klientorganisation så kan du inte göra det igen. Om du behöver hjälp med det här kan du kontakta [faktureringssupporten för Office 365](https://support.office.microsoft.com/article/contact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b?CorrelationId=552bbf37-214f-4202-80cb-b94240dcd671).
-
-1. Gå till [Administrationscenter för Microsoft 365](https://portal.office.com/adminportal/home#/homepage).
-
-1. On the nav pane, Välj **Fakturering** i navigeringsfönstret och sedan **Prenumerationer**.
-
-   ![Fakturering och prenumerationer](media/service-admin-licensing-organization/service-power-bi-pro-in-your-organization-05.png)
-
-1. Till höger väljer du **Lägg till prenumerationer**.
-
-   ![Lägg till prenumerationer](media/service-admin-licensing-organization/service-power-bi-pro-in-your-organization-06.png)
-
-1. Under **Andra planer** hovrar du över ellipsen ( **. . .** ) för Power BI Pro och väljer **Starta en kostnadsfri utvärderingsversion**.
-
-   ![Starta en kostnadsfri utvärderingsversion](media/service-admin-licensing-organization/service-power-bi-pro-in-your-organization-07.png) 
-
-1. Välj **Testa nu** på orderbekräftelsesidan.
-
-1. Välj **Fortsätt** på orderkvittot.
-
-Nu kan du [tilldela licenser i Office 365](https://support.office.com/article/assign-licenses-to-users-in-office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
-
-## <a name="manage-power-bi-free-licenses"></a>Hantera kostnadsfria Power BI-licenser
-
-Användare i din organisation kan få tillgång till kostnadsfria Power BI-licenser på två olika sätt:
-
-* Du kan tilldela en licens för Power BI till dem i administrationscentret för Microsoft 365.
-
-* Om en användare [registrerar ett Power BI-konto](service-self-service-signup-for-power-bi.md) tilldelas de en kostnadsfri licens.
-
-### <a name="requesting-and-assigning-free-licenses"></a>Begära och tilldela kostnadsfria licenser
-
-Om du planerar att hantera av licensbegäranden och licenstilldelningar centralt kontrollerar du först om du redan har det obegränsade Power BI-licensblocket (kostnadsfritt) för din klientorganisation.
-
-Det här blocket med licenser är tillgängligt efter den första gången någon registrerat sig för Power BI som individ. Under den här processen är licensblocket kopplat till din organisation och en licens tilldelas till den användare som registrerar sig.
-
-1. I Administrationscenter för Microsoft 365 söker du efter **obegränsat** under **Fakturering** > **Licenser**.
-
-    ![Obegränsat kostnadsfritt licensblock](media/service-admin-licensing-organization/unlimited-licenses.png)
-
-1. Om blocket är tillgängligt kan du nu [tilldela licenser i Office 365](https://support.office.com/article/assign-licenses-to-users-in-office-365-for-business-997596b5-4173-4627-b915-36abac6786dc). Om blocket inte är tillgängligt har du två alternativ:
-
-    * Låt en medlem i din organisation registrera sig som enskild användare, vilket gör att det obegränsade blocket skapas.
-
-    * Gå till nästa procedur där du kan registrera dig för ett fast antal licenser.
-
-Om det obegränsade Power BI-licensblocket (kostnadsfritt) inte är tillgängligt och du inte vill göra en enskild registrering kan du följa den här proceduren.
-
-1. Gå till [Administrationscenter för Microsoft 365](https://portal.office.com/admin/default.aspx).
-
-1. Välj **Fakturering** > **Prenumerationer** i navigeringsfönstret.
-
-1. Välj **Lägg till prenumerationer +** till höger.
-
-1. Under **Andra planer**, hovrar du över ellipsen ( **. . .** ) för Power BI (kostnadsfri) och väljer **Köp nu**.
-
-    ![Köp nu – Power BI (kostnadsfri)](media/service-admin-licensing-organization/buy-powerbi-free.png)
-
-1. Ange det antal licenser som du vill lägga till och markera sedan **Checka ut nu** eller **Lägg till i kundvagn**.
-
-1. Ange den nödvändiga informationen i utcheckningsflödet.
-
-    Det sker inget köp när du gör på det här sättet, men du behöver ange din kreditkortsinformation för debitering eller välja att faktureras.
-
-1. Nu kan du [tilldela licenser i Office 365](https://support.office.com/article/assign-licenses-to-users-in-office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
-
-1. Om du väljer senare att du vill lägga till fler licenser, går du tillbaka till **lägg till prenumerationer** och väljer **ändra licensantal** för Power BI (kostnadsfri).
-
-    ![Ändra licensantal](media/service-admin-licensing-organization/change-license-quantity.png)
-
-### <a name="enable-or-disable-individual-user-sign-up-in-azure-active-directory"></a>Aktivera eller inaktivera registrering för enskilda användare i Azure Active Directory
-
-Som administratör kan du välja att aktivera eller inaktivera individuell användarregistrering via Azure Active Directory (AAD). Det här avsnittet av artikeln visar hur du hanterar registreringar med PowerShell-kommandon. Läs mer om Azure PowerShell i [Översikt över Azure PowerShell](/powershell/azure/overview).
-
-Inställningen som styr registreringen i Azure Active Directory är **AllowAdHocSubscriptions**. I de flesta klienter är det här inställt på *true*, vilket innebär att inställningen är aktiverad. Om du har köpt Power BI via en partner kan detta vara inställt på *false*, vilket innebär att det är inaktiverat. Om du ändrar inställningen från *true* till *false* blockeras nya användare i din organisation från att kunna registrera sig individuellt. Användare som har registrerat sig för Power BI före inställningen ändrades har kvar sina licenser. Om inställningen är *false* kan användare med en kostnadsfri Power BI-licens fortfarande registrera sig för en enskild utvärdering av Power BI Pro.
-
-1. Logga in i Azure Active Directory med dina autentiseringsuppgifter för Microsoft 365. Den första raden i följande PowerShell-skript uppmanar dig att ange dina autentiseringsuppgifter. Den andra raden ansluter till Azure Active Directory.
-
-    ```powershell
-     $msolcred = get-credential
-     connect-msolservice -credential $msolcred
-    ```
-
-   ![Inloggning i Azure Active Directory](media/service-admin-licensing-organization/azure-ad-sign-in.png)
-
-1. När du har loggat in kan du köra följande kommando för att se hur din klient är konfigurerad. (Observera att "fl" nedan använder bokstaven "l", inte siffran 1.)
-
-    ```powershell
-     Get-MsolCompanyInformation | fl AllowAdHocSubscriptions 
-    ```
-1. Kör det här kommandot för att aktivera ($true) eller inaktivera ($false) **AllowAdHocSubscriptions**.
-
-    ```powershell
-     Set-MsolCompanySettings -AllowAdHocSubscriptions $true
-    ```
-
-> [!NOTE]
-> Flaggan AllowAdHocSubscriptions används för att styra flera användarfunktioner i organisationen, inklusive möjligheten för användare att registrera sig för Azure Rights Management-tjänsten. Om du ändrar flaggan påverkas alla dessa funktioner.
 
 ## <a name="next-steps"></a>Nästa steg
 
-[Självregistrering för Power BI](service-self-service-signup-for-power-bi.md)  
-
-[Köpa och tilldela Power BI Pro-licenser](service-admin-purchasing-power-bi-pro.md)
-
-Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+- [Köpa och tilldela Power BI Pro-licenser](service-admin-purchasing-power-bi-pro.md)
+- [Dokumentation om Microsoft 365 Business-prenumerationer och fakturering](https://docs.microsoft.com/microsoft-365/commerce/?view=o365-worldwide)
+- [Hitta Power BI-användare som har loggat in](service-admin-access-usage.md)
+- Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

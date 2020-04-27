@@ -10,12 +10,12 @@ ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 03/24/2020
 LocalizationGroup: Common tasks
-ms.openlocfilehash: bfec81aaa47f210855c4db4c8c97ab259b685110
-ms.sourcegitcommit: bcc42e938fa28abe433287fecb9abb28c253b6bb
+ms.openlocfilehash: 10d1e87fabc54c5886930c52ce60ed4a62479847
+ms.sourcegitcommit: 5ece366fceee9832724dae40eacf8755e1d85b04
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80302435"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81525455"
 ---
 # <a name="subscribe-to-a-report-or-dashboard-in-the-power-bi-service"></a>Prenumerera på en rapport eller en instrumentpanel i Power BI-tjänsten 
 
@@ -33,7 +33,7 @@ När du får e-postmeddelandet innehåller det en länk med rubriken ”Gå till
 
 
 ## <a name="requirements"></a>Krav
-Att **Skapa** en prenumeration för dig själv kräver en viss typ av [licens](end-user-license.md). Kontakta Power BI-administratören om du inte kan skapa någon prenumeration. Att **prenumerera åt andra** är endast tillgängligt för instrumentpanelens eller rapportens ägare. Prenumeration på sidnumrerade rapporter fungerar lite annorlunda. Mer information finns i  [Skapa en prenumeration åt dig själv och andra på en sidnumrerad rapport i Power BI-tjänsten](paginated-reports-subscriptions.md) . 
+Att **Skapa** en prenumeration för dig själv kräver en viss typ av [licens](end-user-license.md). Kontakta Power BI-administratören om du inte kan skapa någon prenumeration. Att **prenumerera åt andra** är endast tillgängligt för instrumentpanelens eller rapportens ägare. Prenumeration på sidnumrerade rapporter fungerar lite annorlunda. Mer information finns i [Skapa en prenumeration åt dig själv och andra på en sidnumrerad rapport i Power BI-tjänsten](paginated-reports-subscriptions.md). 
 
 ## <a name="subscribe-to-a-dashboard-or-a-report-page"></a>Prenumerera på instrumentpanel eller en rapportsida
 Oavsett om du prenumererar på en instrumentpanel eller en rapport är processerna lika. Du kan använda samma knapp för att prenumerera på Power BI-tjänstens instrumentpaneler och rapporter.
@@ -55,7 +55,7 @@ Oavsett om du prenumererar på en instrumentpanel eller en rapport är processer
 
     c. Lägg alternativt till ett ämne och e-postmeddelandeinformation. 
 
-    d. Välj en **frekvens** för prenumerationen.  Du kan välja Varje dag, Varje vecka och Efter datauppdatering (Varje dag).  Om du bara vill få e-post för prenumerationen på vissa dagar väljer du **Varje vecka** och vilka dagar du vill få den.  Om du till exempel bara vill ha prenumerationens e-postmeddelanden på arbetsdagar, väljer du **Varje vecka** som frekvens och avmarkerar rutorna Lör och Sön. Om du väljer   **Varje månad** anger du den eller de dagar i månaden som du vill ta emot prenumerationsmeddelandet via e-post.   
+    d. Välj en **frekvens** för prenumerationen.  Du kan välja Varje dag, Varje vecka och Efter datauppdatering (Varje dag).  Om du bara vill få e-post för prenumerationen på vissa dagar väljer du **Varje vecka** och vilka dagar du vill få den.  Om du till exempel bara vill ha prenumerationens e-postmeddelanden på arbetsdagar, väljer du **Varje vecka** som frekvens och avmarkerar rutorna Lör och Sön. Om du väljer **Varje månad** anger du den eller de dagar i månaden som du vill ta emot prenumerationsmeddelandet via e-post.   
 
     e. Om du väljer Varje dag, Varje timme, Varje månad eller Varje vecka kan du även välja en Schemalagd tid för prenumerationen. Du kan köra den på heltimme eller 15, 30 eller 45 minuter över. Välj morgon (AM) eller eftermiddag/kväll (PM). Du kan även ange tidszon. Om du väljer Varje timme ska du välja Schemalagd tid då du vill att prenumerationen ska starta, så körs den varje timme efter det.  
 
@@ -73,7 +73,7 @@ Oavsett om du prenumererar på en instrumentpanel eller en rapport är processer
 
 
 ## <a name="manage-your-subscriptions"></a>Hantera dina prenumerationer
-Endast du kan hantera de prenumerationer som du skapar. Välj **prenumerera** igen och välj **Hantera alla prenumerationer** längst ned i det nedre vänstra hörnet (se skärmbilder ovan). Vilka enskilda prenumerationer som visas beror på vilken arbetsyta som för närvarande är aktiv. Om du vill se alla dina prenumerationer på en gång för alla arbetsytor, så kontrollera att  **Min arbetsyta**  är aktiv. Om du vill ha hjälp med att förstå hur arbetsytor fungerar, så gå till  [Arbetsytor i Power BI](end-user-workspaces.md). 
+Endast du kan hantera de prenumerationer som du skapar. Välj **prenumerera** igen och välj **Hantera alla prenumerationer** längst ned i det nedre vänstra hörnet (se skärmbilder ovan). Vilka enskilda prenumerationer som visas beror på vilken arbetsyta som för närvarande är aktiv. Om du vill se alla dina prenumerationer på en gång för alla arbetsytor, så kontrollera att **Min arbetsyta** är aktiv. Om du vill ha hjälp med att förstå hur arbetsytor fungerar, så gå till [Arbetsytor i Power BI](end-user-workspaces.md). 
 
 ![se alla prenumerationer i Min arbetsyta](./media/end-user-subscribe/power-bi-manage-subscriptions.png)
 

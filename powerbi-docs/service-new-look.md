@@ -6,23 +6,27 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/08/2019
+ms.date: 04/15/2020
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: c69e0247ecde7d6bd1cf158761a2ff9efd31d2d3
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: de30da9c5cf6ad2046a99fb327cdad825725a14d
+ms.sourcegitcommit: d43761104f7daf4b2f297648855bb573b53e6d8c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73881389"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "81637834"
 ---
 # <a name="the-new-look-of-the-power-bi-service"></a>Det nya utseendet för Power BI-tjänsten
 
-Power BI-tjänsten (app.powerbi.com) har ett nytt utseende som gör det enklare att visa och interagera med dina rapporter. Det nya utseendet är enklare och bygger på din vana med andra Microsoft-produkter. I Power BI-tjänsten har vi satt rapportinnehållet i fokus genom att byta till ett ljusare färgtema och uppdatera ikonerna. Här är en översikt över vad som har ändrats i det nya utseendet. Mer information finns i de numrerade avsnitten:
+Power BI-tjänsten (app.powerbi.com) har ett nytt utseende som gör det enklare att visa och interagera med dina rapporter. Det nya utseendet är enklare och bygger på din vana med andra Microsoft-produkter. I Power BI-tjänsten har vi satt rapportinnehållet i fokus genom att byta till ett ljusare färgtema och uppdatera ikonerna. 
+
+Letar du efter information om det nya utseendet i **Power BI Desktop**? Se [Använda det uppdaterade menyfliksområdet i Power BI Desktop](desktop-ribbon.md).
+
+Här är en översikt över vad som har ändrats i det nya utseendet. Mer information finns i de numrerade avsnitten:
 
 ![Nytt utseende – översikt över ändringar](media/service-new-look/power-bi-new-look-changes.png)
 
-Söker du efter en specifik åtgärd? Se [Det nya utseendet: Var finns åtgärderna?](service-new-look-where-actions.md)
+Söker du efter en specifik åtgärd? Se [Det nya utseendet: Var finns åtgärderna?](service-new-look-where-actions.md).
 
 ## <a name="quick-tour-of-the-changes"></a>Snabb genomgång av ändringarna
 
@@ -87,4 +91,6 @@ Redigeringsupplevelsen liknar fortfarande den som finns i Desktop. Ändringarna 
 
 ## <a name="next-steps"></a>Nästa steg
 
-[Power BI för konsumenter](consumer/end-user-consumer.md)
+- [Använda det uppdaterade menyfliksområdet i Power BI Desktop](desktop-ribbon.md)
+- [Välj att använda det ”nya utseendet” för arbetsytor](collaborate-share/service-workspaces-new-look.md)
+- [Power BI för konsumenter](consumer/end-user-consumer.md)

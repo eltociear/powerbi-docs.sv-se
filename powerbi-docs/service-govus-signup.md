@@ -1,128 +1,79 @@
 ---
 title: Registrering för Power BI för myndigheter i USA
-description: För USA. myndigheter i USA, lär dig hur du registrerar dig för tjänsten Power BI US Government
+description: För amerikanska myndighetskunder kan du läsa om hur du registrerar dig för Power BI för Government Community Cloud.
 author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/08/2019
-ms.author: davidi
+ms.date: 04/07/2020
+ms.author: kfollis
 LocalizationGroup: Get started
-ms.openlocfilehash: 7edfe46173b1d9b2537c5fd980b245af09fd1f53
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 3f001c91c89b18b43c953669272b4d5be37dd154
+ms.sourcegitcommit: b2cb0b02bdc451bf11a92a68f2c4d560a811f563
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74178290"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81436283"
 ---
 # <a name="enroll-your-us-government-organization-in-the-power-bi-service"></a>Registrera din amerikanska myndighetsorganisation i Power BI-tjänsten
-**Power BI-tjänsten** har en version som är tillgänglig för amerikanska myndigheter som en del av **Office 365 US Government Community**-prenumerationer. Den version av **Power BI-tjänsten** som beskrivs i den här artikeln är utformad för kunder som tillhör amerikanska myndigheter. Den är separat och skiljer sig från kommersiella versioner av **Power BI-tjänsten**.
 
-Mer information om **Power BI-tjänsten** för tillhör amerikanska myndigheter, inklusive dess funktioner och begränsningar finns på [Power BI för amerikanska myndigheter – översikt](service-govus-overview.md).
+Det finns en version av Power BI-tjänsten som ingår i [Office 365-myndighetsabonnemang](https://www.microsoft.com/microsoft-365/government/compare-office-365-government-plans?rtc=1). Den här artikeln är utformad för kunder som tillhör amerikanska myndigheter. Den registreringsprocess som beskrivs här skiljer sig från kommersiella versioner av Power BI-tjänsten.
+
+Mer information om Power BI-tjänsten för amerikanska myndigheter finns i [Power BI för amerikanska myndigheter – översikt](service-govus-overview.md).
 
 > [!NOTE]
 > Den här artikeln är avsedd för administratörer som har behörighet att registrera organisationer som tillhör amerikanska myndigheter för Power BI. Om du är en slutanvändare ska du kontakta administratören om att få en prenumeration på Power BI för amerikanska myndigheter.
 > 
 > 
 
-![](media/service-govus-signup/service_govus_signup_1.png)
-
 ## <a name="select-the-right-sign-up-process-for-your-us-government-organization"></a>Välj rätt registreringsprocessen för din organisation som tillhör en amerikansk myndighet
-Din myndighetsorganisation kan vara ny till **Office Government Cloud** eller redan ha en prenumeration. Följande avsnitt innehåller information om registreringsstegen beroende på var du befinner dig med Office Government Cloud och Power BI och varierar beroende på din befintliga prenumeration.
 
-När du har registrerat dig för Power BI US Government fungerar vissa funktioner kanske inte förrän sälj- eller supportrepresentant har slutfört övergångsprocessen. För mer information om dessa funktioner, gå till [Power BI för myndigheter i USA – Översikt](service-govus-overview.md). För att slutföra övergångsprocessen för att aktivera dessa funktioner, kontakta din sälj- eller supportrepresentant.
+Government Cloud Community kan vara nytt för din myndighetsorganisation, eller så har den kanske redan en prenumeration. Följande avsnitt innehåller information om de registreringssteg som baseras på var du befinner dig med avseende på Office 365-myndighetsabonnemangen och Power BI. Stegen är olika beroende på din aktuella registrering.
 
-### <a name="us-government-organizations-that-are-new-office-cloud-customers"></a>Myndigheter i USA som är nya Office Cloud-kunder
-Om organisationen är en ny **Office Government Cloud**-kund gör du följande:
+När du har registrerat dig för Power BI US Government kan du arbeta med ditt kontoteam för att påbörja den [*vitslistningsprocess*](#additional-signup-information) som beskrivs i den här artikeln. Det steget krävs för att du ska aktivera organisationen fullständigt i Government Community Cloud.
 
-> [!NOTE]
-> De här stegen bör utföras av portaladministratören.
->
+## <a name="sign-up-for-a-new-office-365-government-plan"></a>Registrera dig för ett nytt Office 365-myndighetsabonnemang
 
-1. Gå till [https://products.office.com/government/office-365-web-services-for-government](https://products.office.com/government/office-365-web-services-for-government).
-
->[!NOTE]
->Om du inte vill registrera dig för Office Government Cloud just nu bör du prata med din säljrepresentant.
->
-
-2. Välj Office G3 och fyll i formuläret för en utvärderingsversion av Office
-3. När du är en Office Cloud-kund fortsätter du med stegen nedan för ”befintliga Office Government Cloud-kunder”
-
-### <a name="existing-office-government-cloud-customers"></a>Befintliga Office Government Cloud-kunder
-Om din organisation är en befintlig **Office Government Cloud**-kund men ni saknar en **Power BI**-prenumeration (kostnadsfri eller annan) ska du följa dessa steg:
+Om Government Cloud Community är nytt för din organisation följer du dessa steg för att få ett Office 365-myndighetsabonnemang:
 
 > [!NOTE]
-> De här stegen bör utföras av portaladministratören.
+> De här stegen bör utföras av den globala administratören.
+>
+
+1. Gå till [Office 365-myndighetsabonnemang](https://products.office.com/government/office-365-web-services-for-government).
+2. Välj **Kom igång med en kostnadsfri utvärderingsversion**.
+3. Fyll i formuläret för att berätta för oss om din organisation. Använd listrutan för att välja din organisationstyp.
+
+   ![Välj organisationstyp under registreringen för utvärdering](media/service-govus-signup/gcc-trial-signup.png)
+
+4. Skicka formuläret för att starta registreringsprocessen. Din Microsoft-representant eller -partner kan hjälpa dig med frågor.
+
+När den här processen är klar följer du stegen för befintliga Office 365 Government-kunder för att lägga till en Power BI-prenumeration.
+
+## <a name="add-power-bi-to-an-office-365-government-plan"></a>Lägga till Power BI i ett Office 365-myndighetsabonnemang
+
+Om din organisation redan har ett Office 365-myndighetsabonnemang följer du dessa steg för att lägga till en Power BI-prenumeration:
+
+> [!NOTE]
+> De här stegen bör utföras av den globala administratören.
 > 
 > 
 
-1. Logga in på ditt befintliga konto för Office Government Cloud och gå till administrationsportalen
-2. Välj **Fakturering**.
-3. Välj **Köp tjänsten**.
-4. Välj alternativet Power BI Pro Government och välj mellan **Försök** och **Köp nu**
-5. Slutföra din order
-6. Tilldela användare till kontot.
-   
-   ![](media/service-govus-signup/service_govus_signup_5.png)
-7. Logga in på **Power BI-tjänsten** för US Government-kunder på [https://app.powerbigov.us](https://app.powerbigov.us)
+1. Logga in på Administrationscenter för Microsoft 365 med hjälp av dina autentiseringsuppgifter för global administratör eller faktureringsadministratör.
+2. Välj **Fakturering** > **Köp tjänster**.
+4. Sök eller rulla för att hitta Power BI Pro Government-erbjudandet och välj **Prova** eller **Köp nu**.
+5. Slutför din order.
+6. Tilldela licenser till användarkonton.
 
-## <a name="additional-signup-information"></a>Ytterligare inloggningsinformation
-Nedan visas ytterligare information för att registrera dig för **Power BI US Government** i olika licensmigrationsfall.
+## <a name="additional-signup-information"></a>Ytterligare registreringsinformation
 
-### <a name="direct-power-bi-trial-to-pro-customer-onboarding"></a>Direkt omställning från utvärderingsversionen till fullversionen av Power BI
-* Klicka på och slutför Fakturering > Köp tjänsten > Power BI Pro Gov och välj köp och inte utvärderingsversion
-* Fyll i det nödvändiga och hämta licenserna
-* Ta bort Power BI Pro-utvärderingsversion eller ta bort de gamla licenserna och tilldela nya till användare
-* Logga in på [https://app.powerbigov.us](https://app.powerbigov.us)
+Innan du kan använda Power BI-tjänster för amerikanska myndigheter måste du arbeta med ditt Microsoft-kontoteam för att inleda *vitlistning* för din organisation. Vitlistning är en process som Power BI-utvecklingsteamet använder för att flytta kunder från den kommersiella molnmiljön till det säkra Government Community Cloud. Detta steg säkerställer att funktionerna i US Government Cloud fungerar som förväntat. 
 
-### <a name="reseller-power-bi-trial-to-pro-customer-onboarding"></a>Återförsäljaromställning från utvärderingsversionen till fullversionen av Power BI
-Gå till **Fakturering > Prenumerationer** och välj prenumerationen **Power BI Pro för myndigheter**. Följande visas:
+Du startar vitlistningsprocessen genom att kontakta ditt Microsoft-kontoteam för att få hjälp. Endast administratörer kan begära vitlistning. Processen tar cirka tre veckor. Under denna tid utför Power BI-teknikteamet lämpliga ändringar så att din klientorganisation fungerar korrekt i molnet för amerikanska myndigheter.
 
-* Tillgänglig
-* Tilldelad
-* Länkar för att tilldela till användare
-* Om du fortfarande har tilldelats utvärderingsversionen:
-  * Klicka på **Tilldelad** under testprenumerationen och ta bort användarna du vill lägga till i den betalda versionen
-  * Gå till betald prenumeration och tilldela dessa användare
-
-### <a name="whitelisting-instructions"></a>Anvisningar för vitlistning
-*Vitlistning* är en process som utvecklingsteamet för Power BI använder för att flytta kunder från den kommersiella molnmiljön till en säker molnmiljö för myndigheter. Detta säkerställer att funktionerna i US Government Cloud fungerar som förväntat. Alla befintliga (eller nya) amerikanska myndigheter som är våra kunder som köper **Power BI**-tjänster för myndigheter för första gången *måste* utföra följande vitlistningsprocess. Processen måste göras innan installation eller migrering till US Government **Power BI**-tjänster. 
-
-Om du vill få din klientorganisation *vitlistad* för US Government-molnet kontaktar du Microsoft-kontoteamet för hjälp med vitlistning. Endast administratörer kan göra denna begäran. Processen för *vitlistning* tar cirka tre veckor, då teknikteamet för Power BI utför lämpliga ändringar för din klient så att den fungerar korrekt i molnet för amerikanska myndigheter.
-
-Kunder som migrerar från **Kostnadsfria** Power BI-licenser till **Power BI US Government** (och per definition migrerar till de associerade **Pro**-licensfunktioner som beskrivs ovan i den här artikeln) kan påträffa problem som beskrivs i följande avsnitt i den här artikeln tills klienten har *vitlistats* av Power BI-utvecklingsteamet.
-
-### <a name="mixed-free-and-pro-licenses-in-us-government-tenants"></a>Blandad kostnadsfria och fulla licenser för klienter hos amerikanska myndigheter
-Om du har både kostnadsfria och US Government Pro-licenser i din klient kommer både licenser att bli kvar, men någon av licenserna kommer inte att fungera korrekt. Om din klient har godkänts i *vitlistning*sprocessen inträffar följande:
-
-* Användare med kostnadsfri licens kommer inte längre att kunna logga in på Power BI med hjälp av **Power BI Desktop** och kan uppleva avvikande funktionalitet som beskrivs i följande avsnitt.
-* Alla klienter som tilldelats US Government Pro-licenser fungerar som väntat, inklusive användning av gateway, Power BI Desktop och Mobile-appar.
-
-När du använder en blandning av kostnadsfria och Pro-licenser på en klient som tillhör amerikanska myndigheter och går igenom *vitlistningsprocessen* kan följande förväntas:
-
-**Inför _vitlistning_** :
-
-* Användare med kostnadsfria licenser använder det kommersiella molnet
-* Pro-licenser för amerikanska myndigheter visas i portalen och administratören kan välja att tilldela dessa myndigheter till användare. Pro-användare hos amerikanska myndigheter kommer inte att förlora några data från sina kostnadsfria licenser så snart som administratören har tilldelat en Pro-licens. Tilldelade användare har åtkomst till Power BI Pro-funktioner för amerikanska myndigheter, men följande punktlista med funktionsluckor kan kvarstå tills klienten har *vitlistats*:
-  
-  * Gateway, Mobile och Power BI Desktop kan inte autentisera
-  * Du har inte åtkomst till kommersiella Azure-datakällor
-  * PBIX filer måste överföras manuellt från den kommersiella Power BI-tjänsten
-  * Power BI-mobilappar är inte tillgängliga
-
-**Efter _vitlistning_** :
-
-* Användare av den kostnadsfria versionen som använder den kommersiella Power BI-tjänsten kan fortsätta att göra detta men de kan inte längre autentisera.
-* Pro-användarna som använder molntjänsten för amerikanska myndigheter kan använda tjänsten **Power BI för amerikanska myndigheter** som förväntat.
-
-För att identifiera användare på din klient som använder en kostnadsfri licens för Power BI kan administratören köra en licensrapport, där kostnadsfria licenser visas som **Power BI Standard**.
 
 ## <a name="next-steps"></a>Nästa steg
-Det finns olika typer av saker du kan göra med Power BI. Mer information och utbildning, inklusive en artikel som visar hur du registrerar dig för tjänsten, hittar du i följande resurser:
 
-* [Översikt över Power BI för amerikanska myndigheter](service-govus-overview.md)
-* [Guidad utbildning för Power BI](guided-learning/index.yml)
-* [Komma igång med Power BI-tjänsten](service-get-started.md)
-* [Vad är Power BI Desktop?](desktop-what-is-desktop.md)
-
+* [Översikt av Power BI för amerikanska myndigheter](service-govus-overview.md)
+- [Hur köper jag Microsoft 365 Government?](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/microsoft-365-government-how-to-buy#how-do-i-buy-microsoft-365-government)

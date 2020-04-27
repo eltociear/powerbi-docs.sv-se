@@ -1,20 +1,20 @@
 ---
 title: Konfigurera schemalagd uppdatering
 description: Detta beskrivs stegen för att välja en gateway och konfigurera schemalagd uppdatering.
-author: maggiesMSFT
+author: davidiseminger
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/06/2019
-ms.author: maggies
+ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 622273ed4c8d6f2faee46d3cc84d981f86bd8c92
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: cc0527d093118fdb585800d0038f824223098119
+ms.sourcegitcommit: 1f768dfef27cd8887318671f91427f72d02370c6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "74958412"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81675681"
 ---
 # <a name="configure-scheduled-refresh"></a>Konfigurera schemalagd uppdatering
 
@@ -32,17 +32,17 @@ Så här öppnar du skärmen **Schemalagd uppdatering**:
 
 ## <a name="gateway-connection"></a>Gatewayanslutning
 
-Olika alternativ visas beroende på om du har en personlig eller en företagsgateway online och tillgänglig.
+Olika alternativ visas här beroende på om du har en personlig gateway eller en företagsgateway online och tillgänglig.
 
-Om ingen gateway är tillgänglig visas **Gatewayanslutning** som inaktiverat. Du kan även se ett meddelande om hur du installerar den personliga gatewayen.
+Om ingen gateway är tillgänglig visas **Gatewayanslutning** som inaktiverad. Du kan även se ett meddelande om hur du installerar den personliga gatewayen.
 
 ![Ingen gateway konfigurerad](media/refresh-scheduled-refresh/gateway-not-configured.png)
 
-Om du har en personlig gateway konfigurerad kan du välja den om den är online. Den visas som offline om den inte är tillgänglig.
+Om du har en personlig gateway konfigurerad och online kan du välja den. Den visas som offline om den inte är tillgänglig.
 
 ![Gatewayanslutning](media/refresh-scheduled-refresh/gateway-connection.png)
 
-Du kan också välja företagsgatewayen om du har en sådan tillgänglig. En företagsgateway visas bara som tillgänglig om ditt konto finns med på fliken **Användare** för datakällan som har konfigurerats för en viss gateway.
+Du kan också välja företagsgatewayen om du har en sådan tillgänglig. En företagsgateway visas bara som tillgänglig om ditt konto finns med på fliken **Användare** för den datakälla som har konfigurerats för en viss gateway.
 
 ## <a name="data-source-credentials"></a>Datakällans autentiseringsuppgifter
 
@@ -55,9 +55,9 @@ Om du använder den personliga gatewayen för att uppdatera data, måste ange au
 Du behöver bara logga in till datakällor första gången du uppdaterar den aktuella datamängden. När autentiseringsuppgifterna har angetts sparas de för datauppsättningen.
 
 > [!NOTE]
-> Om lösenordet du använder för att logga in till en datakälla upphör att gälla eller har ändras måste du för vissa autentiseringsmetoder även ändra det för datakällan i **Autentiseringsuppgifter för datakällan**.
+> Om det lösenord som du använder för att logga in till en datakälla upphör att gälla eller har ändrats måste du för vissa autentiseringsmetoder även ändra det för datakällan i **Autentiseringsuppgifter för datakällan**.
 
-Om något går fel beror problemet oftast antingen på att gatewayen är offline, eftersom den inte kan logga in till Windows och starta tjänsten, eller att Power BI inte kan logga in till datakällorna för att fråga efter uppdaterade data. Kontrollera datauppsättningens inställningar om uppdateringen misslyckas. Om gatewaytjänsten är offline visas felet i **Status**. Om Power BI inte kan logga in till datakällorna, visas ett fel i Autentiseringsuppgifter för datakälla.
+Om något går fel beror problemet oftast antingen på att gatewayen är offline, eftersom den inte kan logga in till Windows och starta tjänsten, eller att Power BI inte kan logga in till datakällorna för att fråga efter uppdaterade data. Kontrollera datamängdens inställningar om uppdateringen misslyckas. Om gatewaytjänsten är offline visas felet i **Status**. Om Power BI inte kan logga in till datakällorna visas ett fel i Autentiseringsuppgifter för datakälla.
 
 ### <a name="on-premises-data-gateway"></a>Lokal datagateway
 
@@ -83,6 +83,10 @@ Ställ in skjutreglaget **Håll dina data aktuella** på **På** för att konfig
 > Efter två månaders inaktivitet pausas schemalagd uppdatering för en datauppsättning. En datauppsättning betraktas som inaktiv när ingen användare har besökt någon instrumentpanel eller rapport som bygger på datauppsättningen. När det händer får ägaren till datamängden ett e-postmeddelande som anger att den schemalagda uppdateringen har pausats. Uppdateringsschema för datamängden visas sedan som **inaktiverat**. Om du vill återuppta schemalagd uppdatering besöker du helt enkelt någon av instrumentpanelerna eller rapporterna som bygger på datauppsättningen.
 
 ## <a name="whats-supported"></a>Vad stöds?
+
+
+> [!NOTE]
+> Schemalagd uppdatering kommer också att inaktiveras automatiskt efter fyra på varandra efterföljande fel.
 
 Vissa datauppsättningar stöds för olika gatewayar för schemalagd uppdatering. Nedan följer en referens för att få en uppfattning om vad som är tillgängligt.
 

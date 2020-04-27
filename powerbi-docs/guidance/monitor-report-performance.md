@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 02/16/2020
 ms.author: v-pemyer
-ms.openlocfilehash: b1ab74ec7f7f6594450ec2cf95528d06dc45f613
-ms.sourcegitcommit: 032a77f2367ca937f45e7e751997d7b7d0e89ee2
+ms.openlocfilehash: 2962d5f8504b7214cb685457c59b11f1d9d7b85e
+ms.sourcegitcommit: 5ece366fceee9832724dae40eacf8755e1d85b04
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77610028"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81525547"
 ---
 # <a name="monitor-report-performance-in-power-bi"></a>Övervaka rapportprestanda i Power BI
 
@@ -23,7 +23,7 @@ ms.locfileid: "77610028"
 Att övervaka prestanda är relevant i följande situationer:
 
 - Uppdateringen av importdatamodellen är långsam.
-- Dina DirectQuery- eller LiveConnection-rapporter är långsamma.
+- Dina DirectQuery- eller live-anslutningsrapporter är långsamma.
 - Dina modellberäkningar är långsamma.
 
 Fokusera på långsamma frågor eller visuella rapportobjekt i den fortsatta optimeringen.
@@ -85,6 +85,7 @@ Mer information om den här artikeln finns i följande resurser:
 
 - [Frågediagnostik](/power-query/QueryDiagnostics)
 - [Prestandaanalys](../desktop-performance-analyzer.md)
+- [Felsöka rapportprestanda i Power BI](report-performance-troubleshoot.md)
 - [Power BI Premium-måttappen](../service-premium-metrics-app.md)
 - Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 - Har du förslag? [Bidra till att förbättra Power BI](https://ideas.powerbi.com/)

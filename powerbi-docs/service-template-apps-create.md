@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/15/2019
 ms.author: tebercov
-ms.openlocfilehash: 6b7b472b0c16c47ae2497c5dc8c74cc1c4d778d4
-ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
+ms.openlocfilehash: 4062cb8a417ce20f4d6823a3e68d26ad12b9a6c9
+ms.sourcegitcommit: 01bcbc8f0280aec875b22542a9c193c80899dc10
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79436029"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "82066358"
 ---
 # <a name="create-a-template-app-in-power-bi"></a>Skapa en mallapp i Power BI
 
@@ -166,7 +166,7 @@ Lås oss gå igenom de olika stegen:
 
     Om du inte ser det alternativet ber du Power BI-administratören ge dig [behörighet för mallapputveckling](service-admin-portal.md#template-apps-settings) i administratörsportalen.
 11. Välj **Höj en nivå** för att bekräfta ditt val.
-12. Kopiera den nya URL:en så att du kan dela den för testning utanför din klientorganisation. Det är också den här länken du skickar för att börja distribuera app i AppSource genom att skapa ett [nytt Cloud Partner Portal-erbjudande](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-publish-offer). Skicka endast förproduktionslänkar till Cloud Partner Portal. När appen har godkänts och du får ett meddelande om att den publicerats i AppSource kan du flytta upp paketet till produktion i Power BI.
+12. Kopiera den nya URL:en så att du kan dela den för testning utanför din klientorganisation. Det är också den här länken du skickar för att börja distribuera appen i AppSource genom att skapa ett [nytt Partnercenter-erbjudande](https://docs.microsoft.com/azure/marketplace/partner-center-portal/create-power-bi-app-offer). Skicka endast förproduktionslänkar till Partnercenter. När appen har godkänts och du får ett meddelande om att den publicerats i AppSource kan du flytta upp paketet till produktion i Power BI.
 13. När appen är klar för produktion eller delning via AppSource går du tillbaka till fönstret **Versionshantering** och väljer **Höj upp appen** bredvid **Förproduktion**.
 14. Välj **Höj en nivå** för att bekräfta ditt val.
 
@@ -174,10 +174,10 @@ Lås oss gå igenom de olika stegen:
 
     ![App i produktion](media/service-template-apps-create/power-bi-template-app-production.png)
 
-Vi rekommenderar att du skickar appen till AppSource så att den blir allmänt tillgänglig för tusentals Power BI-användare runt om i världen. Se [Power BI Application offer](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-power-bi-offer) (Power BI-programerbjudande) för mer information.
+Vi rekommenderar att du skickar appen till AppSource så att den blir allmänt tillgänglig för tusentals Power BI-användare runt om i världen. Se [Power BI Application offer](https://docs.microsoft.com/azure/marketplace/partner-center-portal/create-power-bi-app-offer) (Power BI-programerbjudande) för mer information.
 
 ## <a name="next-steps"></a>Nästa steg
 
 Se hur dina kunder interagerar med din mallapp i [Installera, anpassa och distribuera mallappar i organisationen](service-template-apps-install-distribute.md).
 
-Se [Power BI Application offer](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-power-bi-offer) (Power BI-programerbjudande) för mer information.
+Se [Power BI Application offer](https://docs.microsoft.com/azure/marketplace/partner-center-portal/create-power-bi-app-offer) (Power BI-programerbjudande) för mer information.

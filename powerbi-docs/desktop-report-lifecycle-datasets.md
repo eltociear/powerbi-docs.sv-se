@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 01/13/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 278aa4c28db97c348e683b759e8a7f9415f19c3e
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.openlocfilehash: 1312e56edfb17c57334af263b9f38c3dd97c1894
+ms.sourcegitcommit: 5ece366fceee9832724dae40eacf8755e1d85b04
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79206848"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81525438"
 ---
 # <a name="connect-to-datasets-in-the-power-bi-service-from-power-bi-desktop"></a>Ansluta till datauppsättningar i Power BI-tjänsten från Power BI Desktop
 
@@ -91,7 +91,7 @@ För att upprätta en anslutning till den publicerade rapporten och skapa en ege
 
 Om du inte är inloggad uppmanas du av Power BI att logga in. När du har loggat in visar Power BI vilka arbetsytor som du är medlem i. Du kan välja vilken arbetsyta som innehåller den datauppsättning som du vill upprätta en live-anslutning till Power BI-tjänst till.
 
-Datamängderna i listan är de delade datamängder som du har behörigheten Skapa för, oavsett arbetsyta. Du kan söka efter en viss datamängd och se dess namn, ägare, arbetsytan där den finns och när den senast uppdaterades. Du ser även **GODKÄNNANDEN** för datauppsättninger överst i listan, som antingen certifierats eller höjts upp.
+Datamängderna i listan är de delade datamängder som du har behörigheten Skapa för, oavsett arbetsyta. Du kan söka efter en viss datamängd och se dess namn, ägare, arbetsytan där den finns och när den senast uppdaterades. Du ser även **GODKÄNNANDEN** för datamängder överst i listan, som antingen certifierats eller höjts upp.
 
 ![Lista med tillgängliga datamängder](media/desktop-report-lifecycle-datasets/desktop-select-shared-dataset.png)
 

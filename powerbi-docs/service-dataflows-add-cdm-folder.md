@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: f1e48fb2f20c531f4dc66e86d13b76f54165b81c
-ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
+ms.openlocfilehash: cc47820e5903426d4f3635c78e0dc108049f897e
+ms.sourcegitcommit: b2cb0b02bdc451bf11a92a68f2c4d560a811f563
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80404772"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81439352"
 ---
 # <a name="add-a-cdm-folder-to-power-bi-as-a-dataflow-preview"></a>Lägga till en CDM-mapp i Power BI som ett dataflöde (förhandsversion)
 
@@ -30,6 +30,12 @@ Det finns några krav som måste uppfyllas för att skapa dataflöden från CDM-
 * Du måste läsas beviljas läs- och körbehörighet för alla filer och mappar i CDM-mappen för att lägga till dem i Power BI.
 
 I följande avsnitt beskrivs hur du skapar ett dataflöde från en CDM-mapp.
+
+## <a name="authorizing-users-for-cdm-folders-to-create-a-dataflow"></a>Auktorisera användare för CDM-mappar för att skapa ett dataflöde
+
+Följande behörigheter måste läggas till för att du ska kunna skapa ett dataflöde från en CDM-mapp:
+* Den användare som ska få åtkomst till CDM-mappen via Power BI måste anges under **Storage Blob Data-ägare** för lagringskontot.
+* Den användare som kommer åt CDM-mappen via Power BI måste ha ACL:er för **läsåtkomst** och **körningsåtkomst** både i själva CDM-mappen och i alla filer och mappar i den. 
 
 ## <a name="create-a-dataflow-from-a-cdm-folder"></a>Skapa ett dataflöde från en CDM-mapp
 

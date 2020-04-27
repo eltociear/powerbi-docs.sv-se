@@ -1,5 +1,5 @@
 ---
-title: Funktionstillgänglighet för kostnadsfria användare
+title: Tillgängliga funktioner för användare med kostnadsfria licenser
 description: Förklaring och diagram som visar vilka funktioner som är tillgängliga för konsumenter och kostnadsfria användare.
 author: mihart
 ms.reviewer: ''
@@ -7,17 +7,17 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 04/05/2020
+ms.date: 04/17/2020
 ms.author: mihart
 LocalizationGroup: consumers
-ms.openlocfilehash: 60ac58c2d1cb815ca322abf6806d9e866f719660
-ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
+ms.openlocfilehash: 4c4b923199ccd35433b7bf743314395fc70bbe30
+ms.sourcegitcommit: 01bcbc8f0280aec875b22542a9c193c80899dc10
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81268016"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "82065783"
 ---
-# <a name="power-bi-feature-list-for-consumers-and-other-free-users"></a>Lista med Power BI-funktioner för *konsumenter* och andra kostnadsfria användare
+# <a name="power-bi-feature-list-for-consumers-and-others-with-free-licenses"></a>Lista med Power BI-funktioner för *konsumenter* och andra med kostnadsfria licenser
 
 [!INCLUDE[consumer-appliesto-ynnn](../includes/consumer-appliesto-ynnn.md)]
 
@@ -27,40 +27,47 @@ Designers har många olika sätt att dela innehåll. Den här artikeln är dock 
 
 ![Navigeringsfönstret i Power BI](media/end-user-features/power-bi-share.png)
 
-I [föregående artikel](end-user-license.md) gick vi igenom de olika typerna av Power BI-licenser (kostnadsfria och Pro) och Power BI-prenumerationer (Premium), och du fick lära dig att leta rätt på vilken licens och prenumeration du använder. I den här artikeln går vi igenom vilka Power BI-funktioner som är tillgängliga för dig baserat på din licens och prenumeration.   
+I [föregående artikel](end-user-license.md) fick du reda på att det du kan göra med instrumentpaneler, rapporter och appar (innehåll) i Power BI-tjänst beror på tre saker: dina licenser, dina roller och behörigheter samt var innehållet lagras.
+
+I den här artikeln anges vilka funktioner i Power BI-tjänsten som är tillgängliga för *konsumenter* som du. Per definition använder *konsumenter* en kostnadsfri licens för att arbeta i Power BI-tjänsten (inte Power BI Desktop), och de är medlemmar i organisationer som har Premium-kapacitet.
 
 <art>
 
 ## <a name="quick-review-of-terminology"></a>Snabb genomgång av terminologin
-Vi går igenom några Power BI-begrepp innan vi börjar med listan. Det här är en snabb genomgång, om du behöver mer information kan du besöka [Licenser och prenumerationer för användare](end-user-license.md) eller [Grundläggande Power BI-begrepp](end-user-basic-concepts.md).
+Vi går igenom några Power BI-begrepp innan vi börjar med listan. Det här är en snabb genomgång, om du behöver mer information kan du besöka [Licenser för konsumenter](end-user-license.md) eller [Grundläggande Power BI-begrepp](end-user-basic-concepts.md).
 
 ### <a name="workspaces-and-roles"></a>Arbetsytor och roller
-Det finns två typer av arbetsytor: **Min arbetsyta** och apparbetsytor. Det är bara du som har åtkomst till **Min arbetsyta**. Vid samarbete och delning måste innehållsdesignern använda en apparbetsyta. 
+Det finns två typer av arbetsytor: **Min arbetsyta** och apparbetsytor. Det är bara du som har åtkomst till **Min arbetsyta**. Vid samarbete och delning måste *innehållsdesignern*, som har Pro-licens, använda en apparbetsyta. 
 
-Power BI-designers använder *roller* för arbetsytor till att styra vem som kan göra vad på arbetsytan. *Konsumenter* tilldelas vanligtvis rollen **Läsare**. 
+I apparbetsytor tilldelas *roller* av designers för att hantera vem som kan göra vad på den arbetsytan. *Konsumenter* tilldelas vanligtvis rollen **Läsare**. 
 
-### <a name="premium-capacity-subscription"></a>Premium-kapacitetsprenumeration
-När en organisation har en Premium-kapacitetsprenumeration kan administratörer och Pro-användare tilldela arbetsytor till *Premium-kapaciteten*. En arbetsyta i en Premium-kapacitet är ett utrymme där Pro-användare kan dela och samarbeta med användare med kostnadsfria licenser, utan att dessa användare behöver ha en Pro-licens. På sådana arbetsytor har kostnadsfria användare utökade behörigheter (se listan nedan). 
+### <a name="premium-capacity"></a>Premiumkapacitet
+När en organisation har en Premium-kapacitetsprenumeration kan administratörer och Pro-användare tilldela arbetsytor till *dedikerad kapacitet*. En arbetsyta i en dedikerad kapacitet är ett utrymme där Pro-användare kan dela och samarbeta med användare med kostnadsfria licenser, utan att dessa användare behöver ha en Pro-licens. På sådana arbetsytor har kostnadsfria användare utökade behörigheter (se listan nedan). 
 
 ### <a name="licenses"></a>Licenser 
-Alla Power BI-tjänstanvändare har antingen en kostnadsfri licens eller en Pro-licens. Vissa funktioner är reserverade för användare med Pro-licenser.
+Alla Power BI-tjänstanvändare har antingen en kostnadsfri licens eller en Pro-licens. *Konsumenter* har kostnadsfria licenser.
 
-- **Kostnadsfri licens** – tilldelas vanligtvis till *konsumenter* i en organisation. Används också av alla som registrerar sig för Power BI som en privatperson och vill testa [Power BI-tjänsten i fristående läge](../service-self-service-signup-for-power-bi.md).  
-- **Pro-licens** – tilldelas vanligtvis till designers, analytiker och utvecklare i en organisation.   
-- **Kostnadsfri licens + Premium-kapacitet** – gör att kostnadsfria användare (*konsumenter*) kan visa och interagera med innehåll som Pro-användare har skapat i Premium-kapacitet och sedan delat. På så sätt kan Pro-användare samarbeta med kostnadsfria användare på arbetsytan eller via **Delat med mig**.
+- **Kostnadsfri licens** – tilldelas vanligtvis till *konsumenter* i en organisation (se första bilden nedan). Tilldelas även av alla som registrerar sig för Power BI-tjänsten som enskild person och vill testa [Power BI-tjänsten i fristående läge](../service-self-service-signup-for-power-bi.md) (se andra bilden nedan). 
 
-För kostnadsfria användare är det organisationens Premium-kapacitetsprenumeration som ger superkrafter. Så länge dina Pro-kollegor använder arbetsytor i Premium-kapaciteten till att dela innehåll så kan du som kostnadsfri användare visa innehållet och samarbeta med dem.  **På så sätt blir den kostnadsfria användaren en *Power BI-konsument* med möjlighet att ta emot och dela innehåll för att fatta affärsbeslut.** 
+    ![skärm som visar användare med kostnadsfri licens](media/end-user-features/power-bi-free-organization.png)
+
+    För användare med kostnadsfri licens är det organisationens Premium-kapacitet som ger superkrafter. Så länge dina Pro-kollegor använder arbetsytor i Premium-kapaciteten till att dela innehåll så kan du som kostnadsfri användare visa innehållet och samarbeta med dem.  **På så sätt blir den kostnadsfria användaren en *Power BI-konsument* med möjlighet att ta emot och dela innehåll för att fatta affärsbeslut.** 
+ 
+    ![skärm som visar användare med kostnadsfri licens](media/end-user-features/power-bi-free-user.png)
+
+
+   
 
 ## <a name="power-bi-feature-list-for-consumers-and-free-users"></a>Lista med Power BI-funktioner för *konsumenter* och kostnadsfria användare
-I följande diagram ser du vilka uppgifter som kan utföras av en *konsument* i en organisation som har en Premium-prenumeration.    
+I följande diagram visas de uppgifter som kan utföras av en *konsument* som interagerar med innehåll i Premium-kapacitet och i delad kapacitet.    
 
-Den första kolumnen representerar en kostnadsfri användare som arbetar med innehåll i **Min arbetsyta**. Den här användaren kan inte samarbeta med kolleger på arbetsytor. Kollegor kan inte dela innehåll direkt med den här användaren och användaren kan inte dela från **Min arbetsyta**. 
+Den första kolumnen representerar en kostnadsfri användare som arbetar med innehåll i **Min arbetsyta**. Den här användaren kan inte samarbeta med kolleger i Power BI-tjänsten. Kollegor kan inte dela innehåll direkt med den här användaren och användaren kan inte dela från **Min arbetsyta**. 
 
 Den andra kolumnen representerar en *konsument*.  En konsument:
 
 - har en kostnadsfri användarlicens
 - ingår i en organisation som har en Premium-kapacitetsprenumeration
-- får innehåll (appar, instrumentpaneler, rapporter) från Pro-användare som delar innehållet via apparbetsytor i en Premium-kapacitet
+- får innehåll (appar, instrumentpaneler, rapporter) från Pro-användare som delar innehållet via apparbetsytor i dedikerad kapacitet.
 - tilldelas rollen **Läsare** för dessa apparbetsytor. 
 
 ### <a name="legend"></a>Förklaring
@@ -72,7 +79,7 @@ Den andra kolumnen representerar en *konsument*.  En konsument:
 
 ### <a name="feature-list"></a>Funktionslista
 
-|Funktioner   | Scenario 1: Kostnadsfri Power BI-användare som inte har åtkomst till innehåll i en Premium-kapacitet.    | Scenario 2: Kostnadsfri Power BI-användare med behörigheten **Läsare** för innehåll som lagras i en Premium-kapacitet. Den här personen är en *Power BI-konsument*. |
+|Funktioner   | Scenario 1: Kostnadsfri Power BI-användare som inte har åtkomst till innehåll i dedikerad kapacitet.    | Scenario 2: Kostnadsfri Power BI-användare med behörigheten **Läsare** för innehåll som lagras i dedikerad kapacitet. Den här personen är en *Power BI-konsument*. |
 |---|---|---|
 |**Appar** 
 |Installeras automatiskt | ![orange x](media/end-user-features/orange-x.png) | ![grön prick](media/end-user-license/power-bi-green-dot.png)*| 
