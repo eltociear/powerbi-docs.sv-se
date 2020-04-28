@@ -26,6 +26,8 @@
           href: power-bi-custom-visuals-organization.md
         - name: Riktlinjer för visuella objekt för Power BI
           href: guidelines-powerbi-visuals.md
+        - name: Prestandatips
+          href: performance-tips.md
         - name: Vanliga frågor och svar om visuella objekt
           href: power-bi-custom-visuals-faq.md
         - name: Använda funktioner
@@ -70,6 +72,8 @@
           href: enable-sync-slicers.md
         - name: Felsöka visuella objekt
           href: visuals-how-to-debug.md
+        - name: Mobil utveckling
+          href: mobile-development.md
         - name: Felsöka anpassade visuella Power BI-objekt
           href: power-bi-custom-visuals-troubleshoot.md
     - name: Referens
@@ -104,6 +108,8 @@
               href: utils-svg.md
             - name: Typverktyg
               href: utils-type.md
+            - name: Testverktyg
+              href: utils-test.md
             - name: Verktyg för knappbeskrivningar
               href: utils-tooltip.md
             - name: Verktyg för datavisning
