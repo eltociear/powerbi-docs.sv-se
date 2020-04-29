@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/07/2020
 ms.author: kfollis
 LocalizationGroup: Get started
-ms.openlocfilehash: 8a6351c96a2d2bef596cbdd693b4b7035fc16e14
-ms.sourcegitcommit: b2cb0b02bdc451bf11a92a68f2c4d560a811f563
+ms.openlocfilehash: a9a5f3fd5304e64209b6069741dffcc3fa9b07c8
+ms.sourcegitcommit: c772c544ce2e1e2a147b9b62e5579ac3cb59d54c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81436355"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82256164"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI för amerikanska myndighetskunder
 Den här artikeln är till för amerikanska myndighetskunder som distribuerar Power BI som en del av ett Office 365-myndighetsabonnemang. Myndighetsabonnemang är utformade för de unika behoven hos organisationer som måste uppfylla amerikanska efterlevnads- och säkerhetsstandarder. Den Power BI-tjänst som har utformats för amerikanska myndighetskunder skiljer sig från den kommersiella versionen av Power BI-tjänsten. Dessa funktionsskillnader och funktioner beskrivs i följande avsnitt.
@@ -88,7 +88,7 @@ För att tillgodose kraven hos molnkunder på myndigheter finns det vissa skilln
 |Skapa rapport|Skapa och visa instrumentpaneler och rapporter|Tillgänglig|Tillgänglig|Tillgänglig|
 |  |Schemalagd datauppdatering|Tillgänglig|Tillgänglig|Tillgänglig|
 |  |Uppdateringsbara teaminstrumentpaneler|Tillgänglig|Tillgänglig|Tillgänglig|
-|  |Sidnumrerade rapporter|Tillgänglig|Tillgänglig|I planeringsstadiet|
+|  |Sidnumrerade rapporter|Tillgänglig|I planeringsstadiet|I planeringsstadiet|
 |  |Mallappar|Inte tillgänglig|Inte tillgänglig|Inte tillgänglig|
 |Ansluta till data|Importera data och rapporter från Excel|Tillgänglig|Tillgänglig|Tillgänglig|
 |  |Importera data från CSV-filer|Tillgänglig|Tillgänglig|Tillgänglig|
