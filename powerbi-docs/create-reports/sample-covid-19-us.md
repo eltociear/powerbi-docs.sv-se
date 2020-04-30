@@ -2,20 +2,20 @@
 title: COVID – 19 spårningsexempel för myndigheter i USA på lokal och delstatsnivå
 description: Hämta och ändra exempelrapporten med data från USA på lokal och delstatsnivå om pandemin COVID-19.
 author: LukaszPawlowski-MS
-ms.reviewer: ''
+ms.reviewer: maggies
 ms.custom: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/06/2020
+ms.date: 04/28/2020
 ms.author: lukaszp
 LocalizationGroup: Samples
-ms.openlocfilehash: 66e76c21e7d5171d24ff1518745a35947aa7ca42
-ms.sourcegitcommit: e7fda395b47e404c61e961a60816b7a1b0182759
+ms.openlocfilehash: 8cdc4a9a78c20c7c4e6986b63a3af61a319df1b6
+ms.sourcegitcommit: 20f15ee7a11162127e506b86d21e2fff821a4aee
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80979786"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82584924"
 ---
 # <a name="covid-19-tracking-sample-for-us-state-and-local-governments"></a>COVID–19-spårningsexempel för myndigheter i USA på lokal och delstatsnivå
 
@@ -48,7 +48,7 @@ Om du vill inkludera den interaktiva grafiken på din webbplats kopierar du och 
 <iframe width="1600" height="900" src="https://app.powerbi.com/view?r=eyJrIjoiMmI2ZjExMzItZTcwNy00YmUwLWFlMTAtYTUxYzVjODZmYjA5IiwidCI6ImMxMzZlZWMwLWZlOTItNDVlMC1iZWFlLTQ2OTg0OTczZTIzMiIsImMiOjF9" frameborder="0" allowFullScreen="true"></iframe>
 ```
 
-Inbäddningskoden är ett iFrame-element i HTML som du kan infoga på en HTML-sida. Justera bredden och höjden på den iFrame som är avsedd att passa på din webbplats. Exampelrapporten har skrivits med förhållandena 16:9. Välj en storlek som bevarar förhållandet. När det implementeras korrekt visas bilden utan extra grå kantlinjer. Det är användbart att [läsa tips och råd för iFrame-storlek](../service-publish-to-web.md#tips-and-tricks-for-iframe-height-and-width) när du genomför dessa ändringar.
+Inbäddningskoden är ett iFrame-element i HTML som du kan infoga på en HTML-sida. Justera bredden och höjden på den iFrame som är avsedd att passa på din webbplats. Exampelrapporten har skrivits med förhållandena 16:9. Välj en storlek som bevarar förhållandet. När det implementeras korrekt visas bilden utan extra grå kantlinjer. Det är användbart att [läsa tips och råd för iFrame-storlek](../service-publish-to-web.md#tips-for-iframe-height-and-width) när du genomför dessa ändringar.
 
 ## <a name="option-2-customize-the-sample-power-bi-file"></a>Alternativ 2: Anpassa Power BI-exempelfilen
 
@@ -112,7 +112,7 @@ Om du tänker publicera den anpassade rapporten på din webbplats är det bäst 
 
 ### <a name="create-a-publish-to-web-embed-code"></a>Skapa en inbäddningskod för publicering till webben 
 
-Om du vill bädda in din anpassade rapport på din egen webbplats följer du anvisningarna för hur du [skapar en egen inbäddningskod för publicering till webbplats](../service-publish-to-web.md#how-to-use-publish-to-web).
+Om du vill bädda in din anpassade rapport på din egen webbplats följer du anvisningarna för hur du [skapar en egen inbäddningskod för publicering till webbplats](../service-publish-to-web.md#create-embed-codes-with-publish-to-web).
 
 När du har publicerat din inbäddningskod använder du iFrame i bekräftelsedialogrutan för att bädda in den på webbplatsen.
 
