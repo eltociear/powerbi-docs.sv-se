@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 01/15/2020
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 218a05c41c3befed8f8600f6a584560f5be92a1f
-ms.sourcegitcommit: a1409030a1616027b138128695b80f6843258168
+ms.openlocfilehash: 4ce9946672514d3d3f181c573789b256888a4372
+ms.sourcegitcommit: 20f15ee7a11162127e506b86d21e2fff821a4aee
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76709578"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82584834"
 ---
 # <a name="specify-data-categories-in-power-bi-desktop"></a>Ange datakategorier i Power BI Desktop
 I Power BI Desktop kan du ange *datakategori* för en kolumn så att Power BI Desktop vet hur den ska hantera dess värden i en visualisering.
@@ -33,7 +33,7 @@ Ska Power BI Desktop visa en bild av världen med markerade länder? Eller visa 
 **Ange en datakategori**
 
 1. Gå till **rapportvyn** eller **datavyn**, och i listan **Fält** väljer du de fält som du vill sortera med en annan kategorisering.
-2. I området **Egenskaper** på fliken **Modellering** i menyfliksområdet väljer du listrutan bredvid **Datakategori**.  Därmed visas de datakategorier som du kan välja för kolumnen. Vissa alternativ kan vara inaktiverade om de inte fungerar med den aktuella datatypen för kolumnen.  Om en kolumn exempelvis är av en binär datatyp kommer Power BI Desktop inte låta dig välja geografiska datakategorier. 
+2. I området **Egenskaper** på fliken **Modellering** i menyfliksområdet väljer du listrutan bredvid **Datakategori**.  Därmed visas de datakategorier som du kan välja för kolumnen. Vissa alternativ kan vara inaktiverade om de inte fungerar med den aktuella datatypen för kolumnen.  Om en kolumn exempelvis är av datatypen datum eller tid kommer Power BI Desktop inte att låta dig välja geografiska datakategorier. 
 3. Välj den kategori som du vill använda.
 
    ![](media/desktop-data-categorization/desktop-data-categorization.png)

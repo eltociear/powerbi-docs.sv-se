@@ -6,16 +6,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 03/16/2020
+ms.date: 04/27/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 48f26229ea77bbe26ee07d46925d41cadcce7c12
-ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
+ms.openlocfilehash: e44a50a6e44006c0b23b0d57917f16260fdbe2f8
+ms.sourcegitcommit: 20f15ee7a11162127e506b86d21e2fff821a4aee
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80114503"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82585411"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administrera Power BI i Admin-portalen
 
@@ -203,30 +203,28 @@ Följande bild visar meddelandet som visas när du delar med en extern användar
 
 ### <a name="publish-to-web"></a>Publicera på webben
 
-Användare i organisationen kan publicera rapporter på webben. [Läs mer](service-publish-to-web.md). Detta gör rapporten och de data som den innehåller tillgängliga för alla på webben.
+Som administratör för en Power BI-klientorganisation ger inställningen **Publicera på webben** alternativ för vilka användare som kan skapa inbäddningskoder för att publicera rapporter på webben. Den här funktionen gör rapporten och dess data tillgängliga för alla på webben. Mer information om att [publicera på webben](service-publish-to-web.md).
 
 > [!NOTE]
-> En Power BI-administratör måste tillåta att nya publiceringar till inbäddningskoder skapas. Organisationer kan ha befintliga inbäddningskoder. Använd sidan [inbäddningskoder](service-admin-portal.md#embed-codes) för att granska aktuella publicerade rapporter.
+> Endast Power BI-administratörer kan tillåta att nya inbäddningskoder för publicering på webben skapas. Organisationer kan ha befintliga inbäddningskoder. Se avsnittet [Inbäddningskoder](service-admin-portal.md#embed-codes) i administrationsportalen för att granska aktuella publicerade rapporter.
 
-Följande bild visar menyn **Arkiv** för en rapport när inställningen **Publicera på webben** är aktiverad.
+Följande bild visar menyn **Fler alternativ (...)** för en rapport när inställningen **Publicera på webben** är aktiverad.
 
-![Publicera på webben i filmenyn](media/service-admin-portal/powerbi-admin-publish-to-web.png)
+![Publicera på webben på menyn Fler alternativ](media/service-admin-portal/power-bi-more-options-publish-web.png)
 
-Inställningen **Publicera på webben** ger alternativ som användare kan använda för att skapa inbäddningskoder.
+Inställningen **Publicera på webben** i administratörsportalen tillhandahåller alternativ för vilka användare kan skapa inbäddningskoder.
 
 ![Inställningen publicera på webben](media/service-admin-portal/powerbi-admin-publish-to-web-setting.png)
 
+Administratörer kan ställa in **Publicera på webben** till **Aktiverad** och **Välj hur inbäddningskoder fungerar** till **Tillåt endast befintliga inbäddningskoder**. I detta fall kan användarna skapa inbäddningskoder, men de måste kontakta Power BI-administratören som kan tillåta dem att göra det.
 
-Användarna uppmanas att kontakta Power BI-administratören så att de kan skapa en inbäddningskod när alternativet **Välj hur inbäddningskoder fungerar** är inställt på **Tillåt endast befintliga inbäddningskoder** och inställningen **Publicera till webben** är **aktiverad**.
-
-![Fråga om publicera till webben](media/service-publish-to-web/publish_to_web_admin_prompt.png)
-
+![Uppmaning om att publicera på webben](media/service-publish-to-web/publish_to_web_admin_prompt.png)
 
 Användarna ser olika alternativ i användargränssnittet baserat på vad inställningen för **Publicering på webben** är.
 
 |Funktion |Aktiverad för hela organisationen |Inaktiverad för hela organisationen |Specifika säkerhetsgrupper   |
 |---------|---------|---------|---------|
-|**Publicera på webben** under rapportens **Fil**meny.|Aktiverad för alla|Inte synlig för alla|Endast synlig för behöriga användare eller grupper.|
+|**Publicera på webben** under rapportens **Fler alternativ (...)** -meny|Aktiverad för alla|Inte synlig för alla|Endast synlig för behöriga användare eller grupper.|
 |**Hantera inbäddade koder** under **Inställningar**|Aktiverad för alla|Aktiverad för alla|Aktiverad för alla<br><br>Alternativet * **Ta bort** endast för behöriga användare eller grupper.<br>* **Hämta koder** aktiverat för alla.|
 |**Inbäddade koder** i administrationsportalen|Statusen visar något av följande:<br>* Aktiv<br>* Stöds ej<br>* Blockerad|Statusen visar **Inaktiverad**|Statusen visar något av följande:<br>* Aktiv<br>* Stöds ej<br>* Blockerad<br><br>Om en användare inte har behörighet baserat på klientinställningen visas statusen **Intrång**.|
 |Befintliga publicerade rapporter|Alla aktiverade|Alla inaktiverade|Rapporter fortsätta att visas för alla.|

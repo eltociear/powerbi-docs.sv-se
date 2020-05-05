@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/06/2020
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 105a9afe7292412227f67ef80e15eb23eb7d5f71
-ms.sourcegitcommit: 915cb7d8088deb0d9d86f3b15dfb4f6f5b1b869c
+ms.openlocfilehash: 1ba284aa3c925ef0679572ca55cad9e5267d3f21
+ms.sourcegitcommit: 20f15ee7a11162127e506b86d21e2fff821a4aee
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "81006812"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82585059"
 ---
 # <a name="slicers-in-power-bi"></a>Utsnitt i Power BI
 
@@ -131,6 +131,11 @@ I den aktuella rapporten har sidan **Månadsvis försäljning för distriktet** 
     >[!NOTE]
     >Om du synkroniserar ett utsnitt till en sida, men inte gör det synligt på sidan, så filtrerar fortfarande de utsnittsval som gjorts på de övriga sidorna informationen på sidan.
  
+## <a name="filtering-slicers"></a>Filtrera utsnitt
+Du kan använda filter på visuell nivå för utsnitt för att minska listan med värden som visas i utsnittet. Du kan till exempel filtrera bort tomma värden från ett listutsnitt, eller filtrera bort vissa datum från ett intervallutsnitt. När du gör detta påverkar det bara *värden som visas i utsnittet*, inte *filtret som utsnittet gäller för andra visuella objekt* när du gör ett val. Anta till exempel att du använder ett filter till ett intervallutsnitt för att endast visa vissa datum. Valet i utsnittet visar bara de första och sista datumen från intervallet, men du ser fortfarande andra datum i dina andra visuella objekt. När du har ändrat det valda intervallet i utsnittet visas den andra uppdateringen för visuella objekt. Om du avmarkerar utsnittet visas alla datum igen.
+
+Se [Filtertyper](../power-bi-report-filter-types.md) för mer information om filter på visuell nivå.
+
 ## <a name="format-slicers"></a>Formatutsnitt
 Olika formateringsalternativ är tillgängliga beroende på vilken utsnittstyp det rör sig om. Med hjälp av **vågrät** orientering **dynamisk** layout och **objekt**färger kan du skapa knappar och paneler istället för standardlistobjekt och ändra storlek på utsnittsobjekt så att de passar olika skärmstorlekar och layouter.  
 

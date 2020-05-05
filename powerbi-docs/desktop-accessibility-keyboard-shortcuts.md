@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/28/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8c4db4d659c64fba8b7a79e6e36a5f27d8dd5d34
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 986c09e404e0190a3efee8480d413d49cbd49186
+ms.sourcegitcommit: 20f15ee7a11162127e506b86d21e2fff821a4aee
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73869383"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82584816"
 ---
 # <a name="keyboard-shortcuts-in-power-bi-desktop"></a>Kortkommandon i Power BI Desktop
 
@@ -56,6 +56,7 @@ I vår fortsatta strävan efter att förbättra hjälpmedel så stöder även de
 | Flera markeringar | **Ctrl + Retur** eller **Ctrl + Blanksteg** |
 | Högerklicka | <ul><li>Windows-tangentbordet: **Windows-menytangent + F10**. Windows-menytangenten ligger mellan den vänstra Alt-tangenten och Vänsterpil-tangenten</li><li>Andra tangentbord: **Skift + F10**</li></ul> |
 | Rensa val | **Ctrl + Skift + C** |
+| Visa eller dölja skärmtips | **Ctrl + H** |
 
 ## <a name="table-and-matrix-navigation"></a>Navigering i tabeller och matriser
 | Så här utför du den här åtgärden          | Tryck på                |
@@ -119,7 +120,7 @@ Det finns några kända problem och begränsningar hos hjälpmedelsfunktionerna.
 Här är samlingen med artiklar om hjälpmedel i Power BI:
 
 * [Översikt över hjälpmedel i Power BI](desktop-accessibility-overview.md) 
-* [Skapa Power BI-rapporter med hjälpmedel](desktop-accessibility-creating-reports.md) 
+* [Skapa tillgängliga Power BI-rapporter](desktop-accessibility-creating-reports.md) 
 * [Använda rapporter i Power BI med hjälpmedel](desktop-accessibility-consuming-tools.md)
 * [Skapa Power BI-rapporter med hjälpmedel](desktop-accessibility-creating-tools.md)
 * [Checklista för hjälpmedel i rapporter](desktop-accessibility-creating-reports.md#report-accessibility-checklist)

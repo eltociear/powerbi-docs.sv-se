@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/20/2019
+ms.date: 04/24/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: c2290963db54f150eed8176c2820c59f8f138666
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: a118cd0874410e538ca8329e0b8c0ed1bdb430b7
+ms.sourcegitcommit: 834cad24901f7fd966c4010e36a7904bc120e57f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75223330"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "82149601"
 ---
 # <a name="connect-to-an-oracle-database"></a>Anslut till en Oracle-databas
 Anslutning till en Oracle-databas med Power BI Desktop kräver att rätt Oracle-klientprogramvara är installerad på den dator som kör Power BI Desktop. Den Oracle-klientprogramvara du använder beror på vilken version av Power BI Desktop som du har installerat: 32-bitars eller 64-bitars.
@@ -22,6 +22,10 @@ Anslutning till en Oracle-databas med Power BI Desktop kräver att rätt Oracle-
 Oracle-versioner som stöds: 
 - Oracle 9 och senare
 - Oracle klientprogramvara 8.1.7 och senare
+
+> [!NOTE]
+> Om du konfigurerar en Oracle-databas för Power BI-rapportserver kan du läsa informationen i artikeln [Oracle-anslutningstyp](https://docs.microsoft.com/sql/reporting-services/report-data/oracle-connection-type-ssrs?view=sql-server-ver15). 
+
 
 ## <a name="determining-which-version-of-power-bi-desktop-is-installed"></a>Så här fastställer du vilken version av Power BI Desktop som är installerad
 För att kontrollera vilken version av Power BI Desktop som är installerad väljer du **Arkiv** > **Hjälp** > **Om** och läser sedan raden **Version**. I följande bild är en 64-bitarsversion av Power BI Desktop installerad:
@@ -65,3 +69,5 @@ Om du har laddat ned Power BI Desktop från Microsoft Store kanske du inte kan a
 * Om du vill använda versionen från Microsoft Store kopierar du oraons.dll från _12.X.X\client_X_ till _12.X.X\client_X\bin_. Här utgör _X_ versions- och katalognummer.
 
 Om felmeddelandet *Ingen objektreferens har angetts* visas i Power BI Gateway när du ansluter till en Oracle-databas följer du anvisningarna i [Hantera din datakälla – Oracle](service-gateway-onprem-manage-oracle.md).
+
+Om du använder Power BI-rapportservern kan du läsa mer i artikeln [Oracle-anslutningstyp](https://docs.microsoft.com/sql/reporting-services/report-data/oracle-connection-type-ssrs?view=sql-server-ver15).

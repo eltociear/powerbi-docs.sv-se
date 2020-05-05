@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/31/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 54c3622b0a4dd6c690c2f22a0b93aed39e9d2799
-ms.sourcegitcommit: 3c51431d85793b71f378c4b0b74483dfdd8411b3
+ms.openlocfilehash: 301d6397e4a3ae4498234bae3ad8a49aa7552722
+ms.sourcegitcommit: 20f15ee7a11162127e506b86d21e2fff821a4aee
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80464625"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82584666"
 ---
 # <a name="using-enhanced-dataset-metadata-preview"></a>Använda utökade datamängdsmetadata (förhandsversion)
 
@@ -46,6 +46,7 @@ När förhandsfunktionen har aktiverats försöker Power BI Desktop uppgradera P
 
 I förhandsversionen gäller följande begränsningar när förhandsfunktionen är aktiverad.
 
+### <a name="unsupported-features-and-connectors"></a>Funktioner och anslutningar som inte stöds
 När du öppnar en befintlig PBIX- eller PBIT-fil som inte har uppgraderats misslyckas uppgraderingen om datamängden innehåller någon av följande funktioner eller anslutningar. Om den misslyckas bör det inte ha någon direkt påverkan på användarupplevelsen, och Power BI Desktop fortsätter använda det tidigare metadataformatet.
 
 * Python-skript
@@ -67,6 +68,8 @@ När du öppnar en befintlig PBIX- eller PBIT-fil som inte har uppgraderats miss
 
 PBIX- och PBIT-filer som redan har uppgraderats att använda **förbättrade datamängdsmetadata** *kan inte* heller använda ovanstående funktioner eller anslutningar i den aktuella versionen.
 
+### <a name="lineage-view"></a>Ursprungsvy
+Datauppsättningar med det nya metadataformatet visar för närvarande inte länkar till dataflöden i ursprungsvyn i Power BI-tjänsten.
 
 ## <a name="next-steps"></a>Nästa steg
 

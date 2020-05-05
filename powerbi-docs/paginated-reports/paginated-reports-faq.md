@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 04/21/2020
-ms.openlocfilehash: dcf154105b8940bd400fbb4e630a1d1cfd00ddf0
-ms.sourcegitcommit: 8775168ed916c517c57c696ebe45699e638b86e8
+ms.date: 04/29/2020
+ms.openlocfilehash: 3677e29e4ca9bc13bf0c7397d854dea62ec5f70f
+ms.sourcegitcommit: 20f15ee7a11162127e506b86d21e2fff821a4aee
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81766289"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82584984"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Sidnumrerade rapporter i Power BI: Vanliga frågor och svar 
 
@@ -173,6 +173,11 @@ Nej, någon rapportvisningskontroll finns inte för tillfället.
 ### <a name="can-you-search-for-paginated-reports-from-the-new-home-experience-in-the-power-bi-service"></a>Kan man söka efter sidnumrerade rapporter från den nya startupplevelsen i Power BI-tjänsten?
 
 Ja, du kan nu söka efter dina sidnumrerade rapporter från startsidan.  De visas också i andra delar av den nya startupplevelsen.
+
+## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
+Det här är något att tänka på när du arbetar med DateTime-fält i sidnumrerade rapporter.
+
+- Det finns för närvarande vissa globaliseringsbegränsningar som är relaterade till DateTime-parametrar. Alla DateTime-parametrar i Power BI-tjänsten hämtas i amerikanskt format (MM/DD/ÅÅÅÅ), oavsett hur du utformar DateTime i Power BI Report Builder.
 
 ## <a name="next-steps"></a>Nästa steg
 

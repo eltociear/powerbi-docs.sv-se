@@ -6,15 +6,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 02/18/2020
+ms.date: 04/18/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: f42455033a0853cc9a962d3167ed8a69a0f42c4e
-ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
+ms.openlocfilehash: 3b8985158092227fde5eb64eddabc9990d0606f6
+ms.sourcegitcommit: 9ec2c608b90bf651df613f0714addd251a885039
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77496917"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "82120285"
 ---
 # <a name="install-and-use-apps-with-dashboards-and-reports-in-power-bi"></a>Installera och använda appar med instrumentpaneler och rapporter i Power BI
 
@@ -28,6 +28,11 @@ Nu när du har en [grundläggande förståelse av appar](end-user-apps.md) ska v
 Du kan skaffa en ny app på olika sätt. En rapportdesignerkollega kan installera appen automatiskt på ditt Power BI-konto eller skicka dig en direktlänk till en app. Du kan också gå till AppSource och söka efter appar tillgängliga för dig från appdesigners både inom och utanför företaget. 
 
 I Power BI på din mobila enhet kan du bara installera en app från en direktlänk och inte från AppSource. Om appdesignern installerar appen automatiskt visas den i din lista över appar.
+
+## <a name="apps-and-licenses"></a>Appar och licenser
+Alla Power BI-användare kan inte visa och interagera med appar. 
+- Om du har en kostnadsfri licens kan du öppna appar som har delats med dig, och som lagras i en arbetsyta i Premium-kapaciteten.
+- Om du har en Pro-licens kan du öppna appar som har delats med dig.
 
 ## <a name="install-an-app-from-a-direct-link"></a>Installera en app från en direktlänk
 Det enklaste sättet att själv installera en ny app är genom att få en direktlänk, i ett e-postmeddelande, från appdesignern.  
@@ -45,7 +50,10 @@ När du väljer länken i ett e-postmeddelande på din mobila enhet så installe
 ![Appinnehållslista på mobil enhet](./media/end-user-app-view/power-bi-ios.png)
 
 ## <a name="get-the-app-from-microsoft-appsource"></a>Hämta appen från Microsoft AppSource
-Du hittar även och kan installera appar i Microsoft AppSource. Det är bara appar du har åtkomst till (dvs. där appförfattaren har gett dig eller alla behörighet) som visas.
+Du hittar även och kan installera appar i Microsoft AppSource. Det är bara appar du har åtkomst till (dvs. där appförfattaren har gett dig eller alla behörighet) som visas. 
+
+> [!NOTE]
+> Om du använder en kostnadsfri användarlicens kan du ladda ned appar, men kan inte visa dem om du inte uppgraderar till ett Power BI Pro-konto eller om appen inte är lagrad i Premium-kapaciteten. Mer information finns i [licenser för konsumenter](end-user-license.md).
 
 1. Välj **Appar**  > **Hämta appar**. 
    
@@ -79,7 +87,12 @@ I det här exemplet öppnar vi en av Microsofts exempelappar. På AppSource hitt
 
 5. När appen har installerats visas ett meddelande om att det är klart i Power BI-tjänsten. Välj **Gå till app** för att öppna appen. Beroende på hur designern har skapat appen visas antingen appens instrumentpanel eller appens rapport.
 
+
+
     ![Appen har installerats ](./media/end-user-apps/power-bi-app-ready.png)
+
+    > [!NOTE]
+    > Om du använder en kostnadsfri användarlicens kan du ladda ned appar, men kan inte visa dem om du inte uppgraderar till ett Power BI Pro-konto. 
 
     Du kan också öppna appen direkt från din innehållslista för appar genom att markera **Appar** och välja **Försäljning och marknadsföring**.
 
@@ -123,8 +136,6 @@ Ibland kan appskapare släppa nya versioner av sina appar. Ditt sätt att skaffa
     > När du installerar en ny version skrivs alla ändringar du har gjort av rapporter och instrumentpaneler över. Om du vill behålla dina uppdaterade rapporter och instrumentpaneler kan du spara dem med ett annat namn eller på en annan plats innan du installerar. 
 
     4. När du har installerat den uppdaterade versionen väljer du **Uppdatera app** för att slutföra uppdateringsprocessen. 
-
-    <!--![Update app](./media/end-user-app-view/power-bi-new-app-version-update-app.png) -->
 
 
 ## <a name="next-steps"></a>Nästa steg

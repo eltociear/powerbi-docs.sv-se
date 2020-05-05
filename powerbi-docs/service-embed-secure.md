@@ -7,14 +7,14 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/30/2020
+ms.date: 04/27/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 58f9a56d41bd35987f7c258fafdbff26aedf5df1
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.openlocfilehash: 4be8a1ce88d50461ca51bb65278b823046459e30
+ms.sourcegitcommit: 20f15ee7a11162127e506b86d21e2fff821a4aee
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79488831"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82585022"
 ---
 # <a name="embed-a-report-in-a-secure-portal-or-website"></a>Bädda in en rapport i en säker portal eller webbplats
 
@@ -22,11 +22,13 @@ Med det nya alternativet **Bädda in** för Power BI-rapporter kan du enkelt och
 
 Alternativet **Bädda in** stöder [URL-filter](service-url-filters.md) och URL-inställningar. Med det kan du integrera med portaler med en mindre mängd kod som enbart kräver grundläggande kunskaper om HTML och JavaScript.
 
-## <a name="how-to-embed-power-bi-reports-into-portals"></a>**Bädda in** Power BI-rapporter i portaler
+## <a name="how-to-embed-power-bi-reports-into-portals"></a>Bädda in Power BI-rapporter i portaler
 
-1. Det nya alternativet **Bädda in** finns på **Arkiv**-menyn i rapporter i Power BI-tjänsten.
+1. Öppna rapporten i Power BI-tjänsten.
 
-    ![Listrutealternativet för säker inbäddning](media/service-embed-secure/secure-embed-drop-down-menu.png)
+2. På menyn **Fler alternativ (...)** väljer du **Bädda in** >  **Webbplats eller portal**.
+
+    ![Alternativet Webbplats eller portal](media/service-embed-secure/power-bi-more-options-website.png)
 
 2. Välj alternativet **Bädda in** om du vill öppna en dialogruta som tillhandahåller en länk och en iFrame som du kan använda för att bädda in rapporten på ett säkert sätt.
 

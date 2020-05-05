@@ -1,23 +1,23 @@
 ---
-title: Bädda in med rapportwebbdel i SharePoint Online
+title: Bädda in en rapportwebbdel i SharePoint Online
 description: Med den nya rapportwebbdelen för SharePoint Online i Power BI kan du enkelt bädda in interaktiva Power BI-rapporter i SharePoint Online-sidor.
-author: KesemSharabi
-ms.author: kesharab
+author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 12/18/2019
-ms.openlocfilehash: d1ac9238e361a0889e52838eb0b3c3889c1cccf7
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.date: 04/27/2020
+ms.openlocfilehash: 5b726137fae0087701833b2d713cf7b5a329f899
+ms.sourcegitcommit: 20f15ee7a11162127e506b86d21e2fff821a4aee
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75221722"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82585236"
 ---
-# <a name="embed-with-report-web-part-in-sharepoint-online"></a>Bädda in med rapportwebbdel i SharePoint Online
+# <a name="embed-a-report-web-part-in-sharepoint-online"></a>Bädda in en rapportwebbdel i SharePoint Online
 
 Med den nya rapportwebbdelen för SharePoint Online i Power BI kan du enkelt bädda in interaktiva Power BI-rapporter i SharePoint Online-sidor.
 
@@ -38,9 +38,9 @@ För att bädda in rapporten i SharePoint Online behöver du hämta rapport-URL:
 
 1. Visa rapporten i Power BI.
 
-2. Välj listrutemenyn **Arkiv** och välj sedan **Bädda in i SharePoint Online**.
+2. På listrutemenyn **Fler alternativ (...)** väljer du **Bädda in** > **SharePoint Online**.
 
-    ![Filmenyn](media/service-embed-report-spo/powerbi-file-menu.png)
+    ![Menyn Fler alternativ, SharePoint Online](media/service-embed-report-spo/power-bi-more-options-sharepoint-online.png)
 
 3. Kopiera rapport-URL:en från dialogrutan.
 

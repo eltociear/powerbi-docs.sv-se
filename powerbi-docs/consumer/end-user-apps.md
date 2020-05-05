@@ -6,15 +6,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 02/19/2020
+ms.date: 04/19/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: fd11e6fd45a3978eb301adabc15ac8941e7824bf
-ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
+ms.openlocfilehash: 1b23f76425fdf7ceb245b25bcc2b7551dabf0600
+ms.sourcegitcommit: 9ec2c608b90bf651df613f0714addd251a885039
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77496714"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "82120262"
 ---
 # <a name="apps-in-power-bi"></a>Appar i Power BI
 
@@ -29,8 +29,8 @@ Apparna är ordnade i innehållslistan i **Appar**. Du väljer bara **Appar** f�
 
 ![Appar i Power BI](./media/end-user-apps/power-bi-apps.png)
 
-> [!NOTE]
-> Du behöver en Power BI Pro-licens för att kunna använda appfunktionen. [Leta rätt på din licenstyp](end-user-license.md)
+
+Användningen av appfunktionen kräver en Power BI Pro-licens eller att appen är lagrad i Premium-kapaciteten. Mer information om licenser och Premium-kapacitet finns i [Licenser för konsumenter](end-user-license.md).
 
 ## <a name="app-designers-and-app-consumers"></a>*Appdesigners* och *appkonsumenter*
 Beroende på din roll kan du vara någon som skapar appar (*designer*) för eget bruk eller för att dela med kollegor. Eller så kanske du är någon som tar emot och laddar ned appar (*konsument*) som andra har skapat. Den här artikeln är för *appkonsumenter*.
@@ -44,8 +44,8 @@ Och när appförfattare släpper uppdateringar, så ser du dem automatiskt. För
 ## <a name="get-a-new-app"></a>Hämta en ny app
 Du kan hämta appar på några olika sätt. Några av metoderna visas nedan.  Behöver du detaljerade steg-för-steg-instruktioner för att hämta och utforska en app kan du i stället läsa [Öppna och interagera med en app](end-user-app-view.md).
 
-- Appdesignern kan installera appen automatiskt på ditt Power BI-konto, och nästa gång du öppnar Power BI visas den nya appen i innehållslistan i **Appar**. 
-- Appdesignern kan skicka dig en direktlänk till en app via e-post. När du klickar på länken öppnas appen i Power BI.
+- Appdesignern kan installera appen automatiskt på ditt Power BI-konto, och nästa gång du öppnar Power BI-tjänsten så visas den nya appen i innehållslistan i **Appar**. 
+- Appdesignern kan skicka dig en direktlänk till en app via e-post. När du väljer länken öppnas appen i Power BI-tjänsten.
 - I Power BI på din mobila enhet kan du bara installera en app från en direktlänk och inte från AppSource. Om appförfattaren installerar appen automatiskt, så visas den i din lista över appar.
 - Du kan söka efter appar i [AppSource](https://appsource.microsoft.com). AppSource innehåller appar publicerade av rapportdesigneras både inom och utanför företaget. Du kan till exempel hitta en app i AppSource för en tjänst du redan använder, som Google Analytics, GitHub eller Microsoft Dynamics. Du hittar även exempelappar som du kan använda för att lära dig Power BI.  
 
