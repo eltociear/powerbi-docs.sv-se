@@ -327,6 +327,10 @@
               href: ../paginated-reports/report-builder-shared-datasets.md
             - name: Skapa parametrar
               href: ../paginated-reports/paginated-reports-parameters.md
+            - name: Underrapporter
+              href: ../paginated-reports/subreports.md
+            - name: Felsöka underrapporter
+              href: ../paginated-reports/subreports-troubleshoot.md
             - name: Skicka en rapportparameter i en URL
               href: ../paginated-reports/report-builder-url-pass-parameters.md
             - name: Publicera en sidnumrerad rapport
