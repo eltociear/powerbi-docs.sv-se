@@ -11,10 +11,10 @@ ms.date: 09/11/2019
 ms.author: maggies
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 95b1dc1be3421f19fa8220629ca2003469658480
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73874489"
 ---
 # <a name="display-images-in-a-table-matrix-or-slicer-in-a-report"></a>Visa bilder i en tabell, matris eller ett utsnitt i en rapport
@@ -35,7 +35,7 @@ Ett bra sätt att förbättra dina rapporter är att lägga till bilder i dem. S
 
     ![Utsnitt med bilder](media/power-bi-images-tables/power-bi-url-images-slicer.png)
 
-## <a name="considerations"></a>Att tänka på
+## <a name="considerations"></a>Att tänka på:
 
 - Bilderna måste vara i något av följande filformat: .bmp, .jpg, .jpeg, .gif, .png eller .svg
 - URL:en måste vara tillgänglig anonymt, d.v.s. inte på en plats som kräver inloggning, till exempel SharePoint. Men om bilderna finns på SharePoint eller OneDrive kan du få en inbäddningskod som pekar direkt till dem. 
@@ -47,5 +47,5 @@ Ett bra sätt att förbättra dina rapporter är att lägga till bilder i dem. S
 
 [Grundläggande begrepp för designers i Power BI-tjänsten](service-basic-concepts.md)
 
-Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
+Fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
 

@@ -10,10 +10,10 @@ ms.date: 10/23/2019
 ms.author: maggies
 LocalizationGroup: Share your work
 ms.openlocfilehash: b766cc4eae71b94a28e12ba989f85542fec2ab83
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73871978"
 ---
 # <a name="intro-to-organizational-content-packs-in-power-bi"></a>Introduktion till organisationsinnehållspaket i Power BI
@@ -21,11 +21,11 @@ ms.locfileid: "73871978"
 > Du kan inte skapa innehållspaket för organisationen eller installera dem i den nya arbetsyteupplevelsen. Nu är ett bra tillfälle att uppgradera dina innehållspaket till appar, om du inte har börjat ännu. Lär dig [mer om den nya arbetsytan](service-create-the-new-workspaces.md).
 > 
 
-Distribuerar du regelbundet rapporter via e-post till ditt team? Prova det här istället: Paketera dina instrumentpaneler, rapporter, Excel-arbetsböcker och datauppsättningar och publicera dem till ditt team som ett *organisationsinnehållspaket*. Det är lätt för ditt team att hitta innehållspaketen du skapar &#151; de finns på AppSource. Eftersom de är en del av Power BI använder de alla funktioner i Power BI, inklusive interaktiv datagranskning, nya visuella objekt, frågor och svar, integrering med andra datakällor och datauppdatering.
+Distribuerar du regelbundet rapporter via e-post till ditt team? Prova i stället: Packa upp dina instrumentpaneler, rapporter, Excel-arbetsböcker och datauppsättningar och publicera dem i din grupp som ett *organisationsinnehållpaket*. Det är lätt för ditt team att hitta innehållspaketen du skapar &#151; de finns på AppSource. Eftersom de är en del av Power BI använder de alla funktioner i Power BI, inklusive interaktiv datagranskning, nya visuella objekt, frågor och svar, integrering med andra datakällor och datauppdatering.
 
 ![](media/service-organizational-content-pack-introduction/power-bi-org-content-packs.png)
 
-Att skapa innehållspaket är inte samma sak som att dela instrumentpaneler eller samarbeta på dem i en arbetsyta. Läs [Hur ska jag samarbeta kring och dela instrumentpaneler och rapporter?](service-how-to-collaborate-distribute-dashboards-reports.md) för att välja det bästa alternativet för din situation. 
+Att skapa innehållspaket är inte samma sak som att dela instrumentpaneler eller samarbeta på dem i en arbetsyta. Läs [Hur ska jag samarbeta med och dela instrumentpaneler och rapporter?](service-how-to-collaborate-distribute-dashboards-reports.md) för att välja det bästa alternativet för din situation. 
 
 I AppSource, kan du bläddra eller söka efter innehållspaket som publiceras till hela organisationen, distributioner eller säkerhetsgrupper och till de [Office 365-grupper som du tillhör](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9). Om du inte är medlem i en specifik grupp visas inte innehållspaket som delas med den gruppen. Alla medlemmar i gruppen har samma skrivskyddad åtkomst till innehållspaketets data, rapporter, arbetsböcker och instrumentpaneler (om det inte är en datakälla för SQL Server Analysis Services (SSAS), varmed dina behörigheter överförs med datakällan).
 
@@ -75,5 +75,5 @@ Alla medlemmar i distributionsgruppen har samma behörighet för data som skapar
 * [Skapa och publicera ett organisationsinnehållspaket](service-organizational-content-pack-create-and-publish.md)
 * [Skapa och distribuera en app i Power BI](service-create-distribute-apps.md) 
 * [Grundläggande begrepp för designers i Power BI-tjänsten](service-basic-concepts.md)
-* Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
+* Fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
 

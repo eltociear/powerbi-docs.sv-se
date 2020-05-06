@@ -10,10 +10,10 @@ ms.date: 06/11/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 5fda121af151e787c444b928c320b7f33fe1405c
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/09/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75757886"
 ---
 # <a name="create-and-use-basic-area-charts"></a>Skapa och använda enkla ytdiagram
@@ -63,7 +63,7 @@ De här självstudierna använder sig av [PBIX-filen Exempel på detaljhandelsan
    d.  Om du vill visa diagrammet efter månad, väljer du ellipserna (övre högra hörnet av visualiseringen) och väljer **sortera efter månad**. Om du vill ändra sorteringsordningen väljer du ellipsen igen och väljer antingen **Sort ascending (Sortera stigande)** eller **Sort descending (Sortera fallande)** .
 
 ## <a name="highlighting-and-cross-filtering"></a>Markering och korsfiltrering
-Information om hur du använder filterfönstret finns i [Lägg till ett filter i en rapport](../power-bi-report-add-filter.md).
+Information om hur du använder fönstret Filter finns i [Lägga till ett filter i en rapport](../power-bi-report-add-filter.md).
 
 Om du vill fokusera på ett visst område i ditt diagrammet, väljer du det området eller dess översta kant.  Till skillnad från andra visualiseringstyper så korsfiltreras inte andra visualiseringar på rapportsidan om du markerar ett grundläggande ytdiagram och det finns andra visualiseringar på samma sida. Ytdiagram är dock ett mål för korsfiltrering som utlösts av andra visualiseringar på rapportsidan. 
 

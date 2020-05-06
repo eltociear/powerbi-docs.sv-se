@@ -10,10 +10,10 @@ ms.date: 09/11/2018
 ms.author: maggies
 LocalizationGroup: Common tasks
 ms.openlocfilehash: 0ccc32a18098673034e7f37b92f8edb5636ef21d
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73872527"
 ---
 # <a name="delete-almost-anything-in-power-bi-service"></a>Ta bort på nästan vad som helst i Power BI-tjänsten
@@ -56,7 +56,7 @@ Om arbetsboken lagras på OneDrive för företag raderas den inte från OneDrive
 
 ### <a name="to-delete-a-workbook"></a>Så här tar du bort en arbetsbok
 1. Stanna kvar på arbetsytan och välj fliken **Arbetsböcker**.
-2. Leta upp arbetsboken du vill ta bort och välj ikonen Ta bort ![ikonen Ta bort](media/service-delete/power-bi-delete-report2.png) .
+2. Leta upp arbetsboken du vill ta bort och välj ikonen Ta bort ![ikonen Ta bort](media/service-delete/power-bi-delete-report2.png) -ikonen.
 
     ![Fliken Arbetsböcker](media/service-delete/power-bi-delete-workbooknew.png)
 3. Bekräfta borttagningen.

@@ -10,10 +10,10 @@ ms.date: 10/28/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: c9de9031fdbee48fca3b9a025fe2547ec08a5f20
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73871028"
 ---
 # <a name="change-the-type-of-visualization-in-a-power-bi-report"></a>Ändra visualiseringstypen i en Power BI-rapport
@@ -37,7 +37,7 @@ Om du har ändrat visualiseringstyp i rapporten efter att du har fäst den på i
 ## <a name="next-steps"></a>Nästa steg
 Mer om [Visualiseringar i Power BI-rapporter](power-bi-report-visualizations.md)
 
-[Power BI – grundläggande begrepp](../consumer/end-user-basic-concepts.md)
+[Power BI – Grundläggande begrepp](../consumer/end-user-basic-concepts.md)
 
-Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
+Fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
 

@@ -9,10 +9,10 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/03/2020
 ms.openlocfilehash: 3546254c8bff56ac4caefbdd0b5f8df901256a59
-ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/21/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "77527578"
 ---
 # <a name="support-timeline-for-power-bi-report-server"></a>Supporttider för Power BI-rapportservern
@@ -47,4 +47,4 @@ Om du vill ladda ned Power BI-rapportservern och Power BI Desktop som är optime
 [Administratörsöversikt](admin-handbook-overview.md)  
 [Installera Power BI-rapportserver](install-report-server.md)  
 
-Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+Fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

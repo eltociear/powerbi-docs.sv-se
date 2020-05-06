@@ -9,10 +9,10 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/22/2019
 ms.openlocfilehash: 7436b97cdeacf08f1d4ed9374ec615d56ae92db1
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73859180"
 ---
 # <a name="row-level-security-rls-in-power-bi-report-server"></a>Säkerhet på radnivå (RLS) i Power BI-rapportservern
@@ -97,7 +97,7 @@ Rapportförfattare har inte behörighet att visa rapportdata i Power BI-rapports
 
  
 
-## <a name="faq"></a>Vanliga frågor och svar 
+## <a name="faq"></a>VANLIGA FRÅGOR OCH SVAR 
 
 ### <a name="can-i-create-these-roles-for-analysis-services-data-sources"></a>Kan jag skapa rollerna för Analysis Services-datakällor? 
 
@@ -118,7 +118,7 @@ Om du redan har befintliga roller som definierats och medlemmar som tilldelats i
 
 ## <a name="next-steps"></a>Nästa steg
 
-[Vad är Power BI-rapportservern? ](get-started.md)  
- [Administratörshandbok](admin-handbook-overview.md)  
+[Vad är Power BI-rapportservern? ](get-started.md) 
+[Administratörshandbok](admin-handbook-overview.md)  
 
-Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+Fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

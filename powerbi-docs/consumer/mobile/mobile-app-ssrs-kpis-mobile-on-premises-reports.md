@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 12/05/2019
 ms.author: painbar
 ms.openlocfilehash: 6020a6cb72be4e8d7be0485c7787fefc097e679d
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/19/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75220131"
 ---
 # <a name="view-on-premises-report-server-reports-and-kpis-in-the-power-bi-mobile-apps"></a>Visa lokala rapportserverrapporter och KPI:er i Power BI-mobilapparna
@@ -23,7 +23,7 @@ Gäller för:
 
 | ![iPhone](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/iphone-logo-50-px.png) | ![iPad](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/ipad-logo-50-px.png) | ![Android-telefon](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/android-phone-logo-50-px.png) | ![Android-surfplatta](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/android-tablet-logo-50-px.png) |
 |:--- |:--- |:--- |:--- |
-| iPhone-telefoner |iPad-surfplattor |Android-telefoner |Android-surfplattor |
+| iPhone-enheter |iPad-surfplattor |Android-telefoner |Android-surfplattor |
 
 
 ![Rapportserverns startsida i mobilapparna](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ipad-pbi-report-server-home.png)
@@ -68,7 +68,7 @@ Du kan visa lokala Power BI-rapporter, mobila Reporting Services-rapporter och K
    
      `https://<servername>/reports`
    
-     ELLER
+     OR
    
      `https://<servername>/reports`
    
@@ -90,11 +90,11 @@ Om du använder Power BI i mobilappen för iOS eller Android kan det hända att 
 
 2.  Informationen om rapportservern är redan ifylld på sidan **Anslut till server**. Tryck på **Anslut**.
 
-    ![Ifylld information om rapportservern](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ios-remote-configure-connect-server.png)
+    ![Informationen om rapportservern är ifylld](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ios-remote-configure-connect-server.png)
 
 3. Skriv ett lösenord för att autentisera och tryck sedan på **Logga in**. 
 
-    ![Ifylld information om rapportservern](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-config-server-address.png)
+    ![Informationen om rapportservern är ifylld](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-config-server-address.png)
 
 Nu kan du visa och interagera med KPI:er och Power BI-rapporter som lagras på rapportservern.
 

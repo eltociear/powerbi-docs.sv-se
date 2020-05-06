@@ -1,5 +1,5 @@
 ---
-title: Det går inte att lägga till Power BI till en O365-partner
+title: Det gick inte att lägga till Power BI till O365-partner
 description: Det går inte att lägga till Power BI till en syndikeringspartner i Office 365. Den syndikerade modellen är en inköpsmodell som används av Office 365.
 author: kfollis
 ms.reviewer: ''
@@ -10,10 +10,10 @@ ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
 ms.openlocfilehash: cc85fb07f50a42952e9b293908a797b1cbac023f
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74958366"
 ---
 # <a name="unable-to-add-power-bi-to-office-365-partner-subscription"></a>Det går inte att lägga till Power BI till en Office 365-partnerprenumeration
@@ -52,7 +52,7 @@ Du kan registrera dig för en kostnadsfri utvärderingsversion av Power BI. Om d
 
 ### <a name="enable-ad-hoc-subscriptions"></a>Aktivera ad hoc-prenumerationer
 
-Som standard är enskild registrering, även kallat ad hoc-prenumeration, inaktiverad. I det här fallet visas ett meddelande när du försöker registrera dig om att: *IT-avdelningen har inaktiverat registrering för Microsoft Power BI*.
+Som standard är enskild registrering, även kallat ad hoc-prenumeration, inaktiverad. I det här fallet visas följande meddelande när du försöker registrera dig: *IT-avdelningen har inaktiverat registrering för Microsoft Power BI*.
 
 ![Vi beklagar-bild](media/service-admin-syndication-partner/sorry.png)
 
@@ -83,4 +83,4 @@ Om du vill aktivera ad hoc-prenumerationer kan du kontakta din partner och begä
 
 [Power BI-licensiering i din organisation](service-admin-licensing-organization.md)
 
-Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+Fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

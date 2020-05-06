@@ -10,10 +10,10 @@ ms.date: 03/13/2018
 ms.author: maggies
 LocalizationGroup: Reports
 ms.openlocfilehash: c98f06afe2af93e32d98ff1c3147cc15b64fbb57
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73853370"
 ---
 # <a name="create-a-qr-code-for-a-report-in-power-bi-to-use-in-the-mobile-apps"></a>Skapa en QR-kod för en rapport i Power BI som ska användas i mobilapparna

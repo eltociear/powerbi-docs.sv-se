@@ -10,10 +10,10 @@ ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Data refresh
 ms.openlocfilehash: bf007dfe70b5bfb7be9fa8c00865663b07210367
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/02/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74698772"
 ---
 # <a name="refresh-a-dataset-created-from-an-excel-workbook-on-a-local-drive"></a>Uppdatera en datauppsättning som skapats från en Excel-arbetsbok på en lokal enhet
@@ -64,7 +64,7 @@ När du konfigurerar ett uppdateringsschema, ansluter Power BI direkt till datak
 Mer information om hur du konfigurerar schemalagda uppdateringar finns i [Konfigurera schemalagd uppdatering](refresh-scheduled-refresh.md).
 
 ## <a name="when-things-go-wrong"></a>Om något går fel
-Om något går fel beror det vanligtvis på att Power BI inte kan logga in till datakällor, eller att gatewayen är offline om datauppsättningen ansluter till en lokal datakälla. Kontrollera att Power BI kan logga in till datakällor. Om det lösenord som du använder för att logga in till en datakälla ändras eller om Power BI loggas ut från en datakälla, bör du försöka logga in till dina datakällor igen i datakällans autentiseringsuppgifter.
+Om något går fel beror det vanligtvis på att Power BI inte kan logga in till datakällor, eller att gatewayen är offline om datauppsättningen ansluter till en lokal datakälla. Kontrollera att Power BI kan logga in till datakällor. Om det lösenord som du använder för att logga in på en datakälla ändras eller om Power BI loggas ut från en datakälla, bör du försöka logga in på dina datakällor igen i datakällans autentiseringsuppgifter.
 
 Se till att lämna **Skicka ett e-postmeddelande till mig om uppdateringen misslyckas** markerat. Du vill veta direkt om en schemalagd uppdatering misslyckas.
 
@@ -79,5 +79,5 @@ Ibland går det inte som förväntat att uppdatera data. Vanligtvis rör problem
 [Felsöka Power BI Gateway – Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)
 
 ## <a name="next-steps"></a>Nästa steg
-Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
+Fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
 

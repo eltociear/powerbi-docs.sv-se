@@ -1,5 +1,5 @@
 ---
-title: SQL Server Analysis Services-realtidsdata i Power BI
+title: SQL Server Analysis Services realtidsdata i Power BI
 description: SQL Server Analysis Services realtidsdata i Power BI. Detta görs via en datakälla som har konfigurerats för en företagsgateway.
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -11,13 +11,13 @@ ms.custom: ''
 ms.date: 08/10/2017
 LocalizationGroup: Data from databases
 ms.openlocfilehash: 00b7c98236f37505fbb0ddec81a45b65bf3e3ee6
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73871196"
 ---
-# <a name="sql-server-analysis-services-live-data-in-power-bi"></a>SQL Server Analysis Services-realtidsdata i Power BI
+# <a name="sql-server-analysis-services-live-data-in-power-bi"></a>SQL Server Analysis Services realtidsdata i Power BI
 
 Det finns två sätt att ansluta till en SQL Server Analysis Services-realtidsserver i Power BI. I **hämta data**, kan du ansluta till en SQL Server Analysis Services-server, eller så kan du ansluta till en [Power BI Desktop-fil](service-desktop-files.md), eller [Excel-arbetsbok](service-excel-workbook-files.md) som redan ansluter till en Analysis Services-server. Som bästa praxis rekommenderar Microsoft användning av Power BI Desktop på grund av den kompletta verktygsuppsättningens och möjligheten att upprätthålla en säkerhetskopia av Power BI Desktop-filen lokalt.
 
@@ -32,11 +32,11 @@ Det finns två sätt att ansluta till en SQL Server Analysis Services-realtidsse
 
    ![Knappen Anslut för att hämta data](media/sql-server-analysis-services-tabular-data/connecttoas_getdatabutton.png)
 
-2. Välj **Databaser och mer**.
+2. Välj **databaser och mer**.
 
    ![Anslut för att hämta data 1](media/sql-server-analysis-services-tabular-data/connecttoas_getdata_1.png)
 
-3. Välj **SQL Server Analysis Services** > **Anslut**.
+3. Välj **SQL Server Analysis Services** > **anslut**.
 
    ![Anslut för att hämta data 2](media/sql-server-analysis-services-tabular-data/connecttoas_getdata_2.png)
 
@@ -62,4 +62,4 @@ Om du fäster visuella objekt från en rapport på instrumentpanelen, uppdateras
 * [Hantera Analys Services-datakällor](service-gateway-enterprise-manage-ssas.md)  
 * [Felsöka den lokala datagatewayen](service-gateway-onprem-tshoot.md)  
 
-Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
+Fler frågor? [Prova Power BI Community](https://community.powerbi.com/)

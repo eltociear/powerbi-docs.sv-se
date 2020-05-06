@@ -10,10 +10,10 @@ ms.date: 04/18/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
 ms.openlocfilehash: 75152d546bc2dc622210d5b9e5933ee44fbdc0b7
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73872868"
 ---
 # <a name="optimize-a-dashboard-for-mobile-phones---power-bi"></a>Optimera en instrumentpanel för mobiltelefoner – Power BI 
@@ -56,7 +56,7 @@ Letar du efter information om visning av instrumentpaneler på en mobil enhet? P
     Power BI sparar telefonlayouten automatiskt.
 
 ## <a name="next-steps"></a>Nästa steg
-* [Skapa rapporter som är optimerade för Power BI-telefonapopar](desktop-create-phone-report.md)
+* [Skapa rapporter som är optimerade för Power BI-telefonappar](desktop-create-phone-report.md)
 * [Skapa dynamiska visuella objekt som optimerats för alla storlekar](visuals/desktop-create-responsive-visuals.md)
-* Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+* Fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 

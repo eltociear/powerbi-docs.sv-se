@@ -10,10 +10,10 @@ ms.date: 11/14/2019
 ms.author: maggies
 LocalizationGroup: Share your work
 ms.openlocfilehash: 266a8609123f05f258daee60f6ae17f032ebae29
-ms.sourcegitcommit: f1f57c5bc6ea3057007ed8636ede50188ed90ce1
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/23/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74410829"
 ---
 # <a name="upgrade-classic-workspaces-to-the-new-workspaces-in-power-bi"></a>Uppgradera klassiska arbetsytor till de nya arbetsytorna i Power BI
@@ -111,7 +111,7 @@ Den nya arbetsytan innehåller funktioner som de klassiska arbetsytorna saknar. 
 
 1. Välj **Inställningar** på menyraden överst i arbetsytans innehållslista för att få åtkomst till arbetsytans inställningar.
 
-    ![Inställningar för arbetsyta](media/service-upgrade-workspaces/power-bi-new-workspace-settings.png)
+    ![Arbetsyteinställningar](media/service-upgrade-workspaces/power-bi-new-workspace-settings.png)
 
 2. Under **Avancerat** är arbetsytans **Kontaktlista** konfigurerad som den Office 365-grupp som arbetsytan har uppgraderats från. Du kan lägga till fler användare eller grupper i kontaktlistan, eller byta till arbetsytans administratörer.
 
@@ -148,7 +148,7 @@ För att kunna gå tillbaka måste du vara ägare till Office 365-gruppen som ar
 
 1. I arbetsytans innehållslista väljer du **Fler alternativ** ( **...** ) > **Inställningar för arbetsyta**.
 
-    ![Inställningar för arbetsyta](media/service-upgrade-workspaces/power-bi-workspace-settings-more-options.png)
+    ![Arbetsyteinställningar](media/service-upgrade-workspaces/power-bi-workspace-settings-more-options.png)
 
 1. Expandera **Avancerat** och välj **Växla tillbaka till klassisk**. Om det här alternativet inte är tillgängligt kan du läsa [Att tänka på när du växlar tillbaka till klassiskt läge](#considerations-for-switching-back-to-classic) i den här artikeln.
 

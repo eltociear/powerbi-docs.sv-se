@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 04/06/2020
 LocalizationGroup: Premium
 ms.openlocfilehash: 18ae8828ce5811b4f06038b18ff6b423562c335b
-ms.sourcegitcommit: d43761104f7daf4b2f297648855bb573b53e6d8c
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "81637691"
 ---
 # <a name="monitor-capacities-in-the-admin-portal"></a>Övervaka kapaciteter i administratörsportalen
@@ -32,7 +32,7 @@ Om du behöver mer omfattande mätningar använder du appen [Kapacitetsmått fö
 
 På den högsta nivån på fliken **Hälsa** kan du med processor- och minnesanvändning få en snabb överblick över de viktigaste måtten för kapaciteten. Dessa mått är kumulativa och innefattar alla aktiverade arbetsbelastningar för kapaciteten.
 
-| **Mått** | **Beskrivning** |
+| **Mått** | **Description** |
 | --- | --- |
 | PROCESSORANVÄNDNING | Genomsnittlig processoranvändning, som en procentandel av den totala tillgängliga processorkapaciteten. |
 | MINNESANVÄNDNING | Genomsnittlig minnesanvändning i gigabyte (GB).|
@@ -41,7 +41,7 @@ På den högsta nivån på fliken **Hälsa** kan du med processor- och minnesanv
 
 För varje arbetsbelastning som är aktiverad för kapaciteten. Processoranvändning och minnesanvändning visas.
 
-| **Mått** | **Beskrivning** |
+| **Mått** | **Description** |
 | --- | --- |
 | PROCESSORANVÄNDNING | Genomsnittlig processoranvändning, som en procentandel av den totala tillgängliga processorkapaciteten. |
 | MINNESANVÄNDNING | Genomsnittlig minnesanvändning i gigabyte (GB).|
@@ -56,7 +56,7 @@ Varje arbetsbelastning har ytterligare mått. Vilken typ av mått som visas bero
 
 ##### <a name="dataflow-operations"></a>Dataflödesåtgärder
 
-| **Mått** | **Beskrivning** |
+| **Mått** | **Description** |
 | --- | --- |
 | Totalt antal kärnor | Totalt antal uppdateringar för varje dataflöde. |
 | Antal slutförda | Totalt antal lyckade uppdateringar för varje dataflöde.|
@@ -65,11 +65,11 @@ Varje arbetsbelastning har ytterligare mått. Vilken typ av mått som visas bero
 | Genomsnittlig väntetid (min) | Den genomsnittliga fördröjningen mellan schemalagd tid och start av en uppdatering av dataflödet, i minuter. |
 | Maximal väntetid (min) | Maximal väntetid för dataflödet, i minuter.  |
 
-#### <a name="datasets"></a>Datauppsättningar
+#### <a name="datasets"></a>Datamängder
 
-##### <a name="refresh"></a>Uppdatera
+##### <a name="refresh"></a>Refresh
 
-| **Mått** | **Beskrivning** |
+| **Mått** | **Description** |
 | --- | --- |
 | Totalt antal kärnor | Totalt antal uppdateringar för varje datauppsättning. |
 | Antal slutförda | Totalt antal lyckade uppdateringar för varje datamängd. |
@@ -82,7 +82,7 @@ Varje arbetsbelastning har ytterligare mått. Vilken typ av mått som visas bero
 
 ##### <a name="query"></a>Fråga
 
-| **Mått** | **Beskrivning** |
+| **Mått** | **Description** |
 | --- | --- |
 | Totalt antal kärnor | Det totala antal frågor som körts för datauppsättningen. |
 | Genomsnittlig varaktighet (ms) |Den genomsnittliga frågevaraktigheten för datauppsättningen, mätt i millisekunder|
@@ -92,7 +92,7 @@ Varje arbetsbelastning har ytterligare mått. Vilken typ av mått som visas bero
 
 ##### <a name="eviction"></a>Borttagning
 
-| **Mått** | **Beskrivning** |
+| **Mått** | **Description** |
 | --- | --- |
 | Modellantal | Det totala antalet borttagna datamängder för denna kapacitet. När en kapacitet drabbas av minnesbelastning avlägsnar noden en eller flera datauppsättningar från minnet. Datamängder som är inaktiva (utan frågor/uppdateringsåtgärder som körs för tillfället) avlägsnas först. Avlägsnandeordern baseras sedan på ett mått på ”minst nyligen använd” (LRU, Least Recently Used). |
 
@@ -100,13 +100,13 @@ Varje arbetsbelastning har ytterligare mått. Vilken typ av mått som visas bero
 
 ##### <a name="report-execution"></a>Rapportkörning
 
-| **Mått** | **Beskrivning** |
+| **Mått** | **Description** |
 | --- | --- |
 | Antal körningar  | Antalet gånger som rapporten har körts och visats av användarna.|
 
 ##### <a name="report-usage"></a>Rapportanvändning
 
-| **Mått** | **Beskrivning** |
+| **Mått** | **Description** |
 | --- | --- |
 | Antal slutförda | Antalet gånger som rapporten har visats av en användare. |
 | Antal misslyckade |Antalet gånger som rapporten har visats av en användare.|

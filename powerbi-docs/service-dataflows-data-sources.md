@@ -10,10 +10,10 @@ ms.date: 09/20/2019
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: 650fb243152d9bf2ca2ecfc37143145d734b78fe
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73872668"
 ---
 # <a name="connect-to-data-sources-for-power-bi-dataflows"></a>Ansluta till datakällor för Power BI-dataflöden
@@ -49,18 +49,18 @@ Du kan visa de tillgängliga datakällorna genom att välja **Hämta Data** i re
 Datakällor för dataflöden är ordnade i följande kategorier, som visas högst upp i dialogrutan **Hämta data**:
 
 * Alla kategorier
-* Fil
+* Arkiv
 * Databas
 * Power BI
 * Azure
 * Onlinetjänster
-* Annat
+* Övriga
 
 Kategorin **Alla kategorier** innehåller alla datakällor, från alla kategorier. 
 
 Kategorin **Fil** innehåller följande tillgängliga dataanslutningar för dataflöden:
 
-* Åtkomst
+* Access
 * Excel
 * JSON
 * Text/CSV
@@ -92,7 +92,7 @@ Kategorin **Azure** innehåller följande tillgängliga dataanslutningar för da
 Kategorin **Onlinetjänster** innehåller följande tillgängliga dataanslutningar för dataflöden:
 
 * Amazon Redshift
-* Common Data Service for Apps
+* Common Data Service för appar
 * Microsoft Exchange Online
 * Salesforce-objekt
 * Salesforce-rapporter
@@ -185,6 +185,6 @@ Mer information om Power Query och schemalagd uppdatering finns i följande arti
 * [Frågeöversikt i Power BI Desktop](desktop-query-overview.md)
 * [Konfigurera schemalagd uppdatering](refresh-scheduled-refresh.md)
 
-Mer information om Common Data Service finns i dess översiktsartikel:
+För mer information om den gemensamma datamodellen kan du läsa dess översiktsartikel:
 * [Common Data Service – översikt ](https://docs.microsoft.com/powerapps/common-data-model/overview)
 
