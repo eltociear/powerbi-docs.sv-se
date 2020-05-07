@@ -9,17 +9,17 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/16/2020
 ms.openlocfilehash: 0b57ec084477955086b3d1bb0acd0a3139d325c6
-ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/17/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76160614"
 ---
 # <a name="install-power-bi-report-server"></a>Installera Power BI-rapportserver
 
 Läs mer om att installera Power BI-rapportserver.
 
-## <a name="download-power-bi-report-server"></a>Hämta Power BI-rapportservern
+## <a name="download-power-bi-report-server"></a>Hämta Power BI-rapportserver
 
 Gå till sidan [Lokal rapportering med Power BI-rapportserver](https://powerbi.microsoft.com/report-server/) och välj **Hämta en gratis utvärderingsversion**.
 
@@ -152,7 +152,7 @@ Om du ansluter till rapportservern från en fjärrdator kontrollerar du att du h
 
 [Administratörsöversikt](admin-handbook-overview.md)  
 [Så här hittar du rapportserverns produktnyckel](find-product-key.md)  
-[Installera Power BI Desktop som har optimerats för Power BI-rapportservern](install-powerbi-desktop.md)  
+[Installera Power BI Desktop optimerad för Power BI-rapportserver](install-powerbi-desktop.md)  
 [Verifiera en Reporting Services-installation](https://docs.microsoft.com/sql/reporting-services/install-windows/verify-a-reporting-services-installation)  
 [Konfigurera tjänstkontot för rapportservern](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-the-report-server-service-account-ssrs-configuration-manager)  
 [Konfigurera rapportserverns URL:er](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-report-server-urls-ssrs-configuration-manager)  
@@ -162,4 +162,4 @@ Om du ansluter till rapportservern från en fjärrdator kontrollerar du att du h
 [Konfigurera Windows-tjänstekonton och -behörigheter](https://docs.microsoft.com/sql/database-engine/configure-windows/configure-windows-service-accounts-and-permissions)  
 [Webbläsarstöd för Power BI-rapportserver](browser-support.md)
 
-Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+Fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

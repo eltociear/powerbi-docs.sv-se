@@ -10,10 +10,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: a33c8a45f4f32efb0a47df82b8af23d42c281ae9
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73855531"
 ---
 # <a name="get-data-from-comma-separated-value-csv-files"></a>Hämta data från filer med kommaavgränsade värden (.csv)
@@ -26,7 +26,7 @@ Om du har en .CSV, är det dags att få in den i din Power BI-plats som en datau
 >[!TIP]
 >Många organisationer skapar .CSV-filer med uppdaterade data varje dag. Kontrollera att din datauppsättning i Power BI håller sig synkroniserad med din uppdaterade fil, se till att den sparas till OneDrive med samma namn.
 
-## <a name="where-your-file-is-saved-makes-a-difference"></a>Det spelar roll vart du sparar filen
+## <a name="where-your-file-is-saved-makes-a-difference"></a>Det spelar roll var du sparar filen
 **Lokalt** – Om du sparar din .csv-fil till en lokal enhet på datorn eller en annan plats inom din organisation, från Power BI så kan du *importera* den till Power BI. Filen kommer att finnas kvar på den lokala enheten, så hela filen har i själva verket inte importerats till Power BI. Det som händer är att en ny datauppsättning skapas i Power BI och data .CSV-filen läses in i datauppsättningen.
 
 **OneDrive företag**  – om du har OneDrive för företag och du loggar in med samma konto som du använder för Power BI, är detta det mest effektiva sättet att behålla din .CSV-fil och din datauppsättning, rapporter och instrumentpaneler i Power BI synkroniserade. Eftersom både Power BI och OneDrive finns i molnet, *ansluter* Power BI till din fil på OneDrive någon gång i timmen. Om det finns ändringar uppdateras dina datauppsättningar, rapporter och instrumentpaneler i Power BI automatiskt.

@@ -9,12 +9,12 @@ ms.topic: reference
 ms.date: 09/05/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 281cb03e8d22688b23970c66b0fbc5a5bec1e15d
-ms.sourcegitcommit: 20f15ee7a11162127e506b86d21e2fff821a4aee
+ms.openlocfilehash: f689ba79f9cce7d6ee815e0712491e7d00647fe8
+ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82584769"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82841674"
 ---
 # <a name="data-types-in-power-bi-desktop"></a>Datatyper i Power BI Desktop
 Den här artikeln beskriver datatyper som stöds i Power BI Desktop och dataanalysuttryck (DAX). 
@@ -79,10 +79,11 @@ Power BI Desktop har stöd för fem datum/tid-datatyper i frågevyn.  Både datu
 Den binära datatypen kan användas för att representera andra data med binärformat. I Frågeredigeraren kan du använda den när du läser in binära filer om du konverterar den till andra datatyper innan du läser in den till Power BI-modellen. Binära kolumner stöds inte i Power BI-datamodellen. Den finns på menyn Datavy och Rapportvy på grund av äldre anledningar, men om du försöker läsa in binära kolumner till Power BI-modellen kan du stöta på fel.
 
 
+
+
 > [!NOTE]
 >  Om en binär kolumn finns i utdata för stegen i en fråga, kan försök att uppdatera data via en gateway orsaka fel. Vi rekommenderar att du uttryckligen tar bort alla binära kolumner som det sista steget i dina frågor.    
 > 
->
 
 ### <a name="table-data-type"></a>Tabelldatatyp
 DAX använder en tabelldatatyp i många funktioner, till exempel aggregeringar och beräkningar av tidsinformation. Vissa funktioner kräver en referens till en tabell. Andra funktioner returnerar en tabell som sedan kan användas som indata för andra funktioner. I vissa funktioner som kräver en tabell som indata, kan du ange ett uttryck som returnerar en tabell. För vissa funktioner krävs en referens till en bastabell. Information om kraven för specifika funktioner finns i [DAX-funktionsreferens](https://msdn.microsoft.com/library/ee634396.aspx).

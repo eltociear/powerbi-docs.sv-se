@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: 27d6db6cf8ad8ebd7b2c957954ceec34b83681d0
-ms.sourcegitcommit: cde65bb8b1bed1ee8cf512651afeb829ddc155de
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/19/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "77464445"
 ---
 ## <a name="define-roles-and-rules-in-power-bi-desktop"></a>Definiera roller och regler i Power BI Desktop
@@ -25,7 +25,7 @@ Följ dessa steg för att definiera säkerhetsroller.
    ![Välj Skapa](./media/rls-desktop-define-roles/powerbi-desktop-security-create-role.png)
 4. Ange ett namn på rollen under **Roller**. 
 5. Välj den tabell som du vill tillämpa DAX-regeln på under **Tabeller**.
-6. I rutan **DAX-uttryck för tabellfilter** anger du DAX-uttrycket. Det här uttrycket returnerar värdet true eller false. Exempel: ```[Entity ID] = “Value”```.
+6. I rutan **DAX-uttryck för tabellfilter** anger du DAX-uttrycket. Det här uttrycket returnerar värdet true eller false. Till exempel: ```[Entity ID] = “Value”```.
       
    ![Fönstret Hantera roller](./media/rls-desktop-define-roles/powerbi-desktop-security-create-rule.png)
 

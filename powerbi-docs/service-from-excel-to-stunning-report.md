@@ -10,10 +10,10 @@ ms.date: 08/12/2019
 ms.author: maggies
 LocalizationGroup: Data from files
 ms.openlocfilehash: c2a4719a03e37569e40d4247939a9f2c73379e52
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73872518"
 ---
 # <a name="from-excel-workbook-to-stunning-report-in-the-power-bi-service"></a>Från Excel-arbetsbok till fantastisk rapport i Power BI-tjänsten
@@ -139,5 +139,5 @@ Anta att du vill dela din instrumentpanel med din chef. Du kan dela din instrume
 * [Kom igång med Power BI Desktop](desktop-getting-started.md)
 * [Grundläggande begrepp för designers i Power BI-tjänsten](service-basic-concepts.md)
 
-Har du fler frågor? [Testa Power BI Community](https://community.powerbi.com/).
+Fler frågor? [Testa Power BI Community](https://community.powerbi.com/).
 

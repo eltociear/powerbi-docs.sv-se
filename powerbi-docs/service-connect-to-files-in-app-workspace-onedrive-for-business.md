@@ -9,10 +9,10 @@ ms.date: 04/15/2019
 ms.author: maggies
 LocalizationGroup: Share your work
 ms.openlocfilehash: 180fd8d451be794070d8b0f4d37c40965671d23d
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73854886"
 ---
 # <a name="connect-to-files-stored-in-onedrive-for-your-power-bi-workspace"></a>Anslut till filer som lagras i OneDrive för din Power BI-arbetsyta
@@ -79,6 +79,6 @@ Nu när dina filer finns i OneDrive för företag för din arbetsyta har du ett 
 * [Skapa appar och arbetsytor i Power BI](service-create-distribute-apps.md)
 * [Importera data från Excel-arbetsböcker](service-get-data-from-files.md)
 * [Ansluta till hela Excel-arbetsböcker](service-excel-workbook-files.md)
-* Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
+* Fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
 * Feedback? Besök [Power BI-idéer](https://ideas.powerbi.com/forums/265200-power-bi)
 

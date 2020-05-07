@@ -1,6 +1,6 @@
 ---
-title: Fäst en panel från en instrumentpanel till en annan instrumentpanel
-description: Fäst en panel från en instrumentpanel till en annan instrumentpanel
+title: Fästa en panel från en instrumentpanel till en annan instrumentpanelen
+description: Fästa en panel från en instrumentpanel till en annan instrumentpanelen
 author: maggiesMSFT
 ms.reviewer: ''
 ms.service: powerbi
@@ -10,13 +10,13 @@ ms.date: 03/01/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
 ms.openlocfilehash: 8e0c598d02b808e997bf0c1f47322e132860100c
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73881225"
 ---
-# <a name="pin-a-tile-from-one-dashboard-to-another-dashboard"></a>Fäst en panel från en instrumentpanel till en annan instrumentpanel
+# <a name="pin-a-tile-from-one-dashboard-to-another-dashboard"></a>Fästa en panel från en instrumentpanel till en annan instrumentpanelen
 Ett sätt att lägga till en ny [instrumentpanel](consumer/end-user-tiles.md) är genom att kopiera den från en annan instrumentpanel. Var och en av de här panelerna, när de klickas på, länkar tillbaka till där de skapades – antingen i frågor och svar eller i en rapport. 
 
 > [!NOTE]
@@ -34,7 +34,7 @@ Ett sätt att lägga till en ny [instrumentpanel](consumer/end-user-tiles.md) ä
    * **Ny instrumentpanel**: Skriv instrumentpanelens namn.
    
    ![Dialogrutan Fäst på instrumentpanelen](media/service-pin-tile-to-another-dashboard/pbi_pintoanotherdash.png)
-5. Välj **fäst**.
+5. Välj **Fäst**.
    Genom ett meddelande (nära det övre högra hörnet) får du reda på att visualiseringen har lagts till, som en panel på den valda instrumentpanelen.
    
    ![Fönstret Fäst på instrumentpanelen](media/service-pin-tile-to-another-dashboard/power-bi-pin-success.png)
@@ -43,5 +43,5 @@ Ett sätt att lägga till en ny [instrumentpanel](consumer/end-user-tiles.md) ä
 ## <a name="next-steps"></a>Nästa steg
 [Paneler i Power BI](consumer/end-user-tiles.md)  
 [Instrumentpaneler i Power BI](consumer/end-user-dashboards.md)  
-Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
+Fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
 

@@ -11,10 +11,10 @@ ms.date: 01/15/2020
 ms.author: davidi
 LocalizationGroup: Data refresh
 ms.openlocfilehash: b2a05f3112a9272d5e41cff20729c445c7a0ae39
-ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76038564"
 ---
 # <a name="refresh-a-dataset-stored-on-onedrive-or-sharepoint-online"></a>Uppdatera en datauppsättning som lagras på OneDrive eller SharePoint Online
@@ -39,7 +39,7 @@ Power BI har stöd för **Uppdatera** och **Schemalägg uppdatering** för datam
 > [!NOTE]
 > OneDrive-uppdatering för datamängder med liveanslutning stöds. Att ändra liveanslutningens datamängd, från en datamängd till en annan i en redan publicerad rapport, stöds dock inte i OneDrive-uppdateringsscenariot.
 
-### <a name="power-bi-gateway---personal"></a>Power BI Gateway - Personal
+### <a name="power-bi-gateway---personal"></a>Power BI Gateway – Personal
 * Alla datakällor online som visas i **Hämta data** och **Frågeredigeraren** i Power BI Desktop.
 * Alla lokala datakällor som visas i **Hämta data** och **Frågeredigeraren** i Power BI Desktop, förutom Hadoop-filer (HDFS) och Microsoft Exchange.
 
@@ -52,7 +52,7 @@ Power BI har stöd för **Uppdatera** och **Schemalägg uppdatering** för datam
 > 
 
 ## <a name="onedrive-or-onedrive-for-business-whats-the-difference"></a>OneDrive eller OneDrive för företag. Vad är skillnaden?
-Om du både har en personlig OneDrive och OneDrive för företag, bör du behålla alla filer som du vill importera till Power BI på OneDrive för företag. Skälet är följande: Du använder förmodligen två olika konton för att logga in till dem.
+Om du både har en personlig OneDrive och OneDrive för företag, bör du behålla alla filer som du vill importera till Power BI på OneDrive för företag. Skälet är att du förmodligen använder två olika konton för att logga in till dem.
 
 När du ansluter till OneDrive för företag i Power BI, är det enkelt att ansluta eftersom ditt Power BI-konto ofta är samma konto som ditt OneDrive för företag-konto. På din personliga OneDrive loggar du vanligtvis in med ett annat [Microsoft-konto](https://account.microsoft.com).
 
@@ -81,5 +81,5 @@ Ibland går det inte som förväntat att uppdatera data. Du stöter normalt på 
 
 [Felsöka Power BI Gateway – Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)
 
-Har du fler frågor? Fråga [Power BI Community](https://community.powerbi.com/).
+Fler frågor? Fråga [Power BI Community](https://community.powerbi.com/).
 

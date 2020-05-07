@@ -10,10 +10,10 @@ ms.date: 05/13/2019
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
 ms.openlocfilehash: 817ce82b94817530854d85c7dbcca17a313fc438
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73874471"
 ---
 # <a name="create-a-visual-with-power-bi-qa"></a>Skapa ett visuellt objekt med Frågor och svar i Power BI
@@ -73,5 +73,5 @@ Hur skapar vi linjediagrammet med Frågor och svar?
 - [Frågor och svar för konsumenter](consumer/end-user-q-and-a.md)
 - [Få dina data att fungera bra med Frågor och svar i Power BI](service-prepare-data-for-q-and-a.md)
 
-Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
+Fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
 
