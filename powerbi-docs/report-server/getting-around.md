@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 05/24/2018
 ms.author: maggies
 ms.openlocfilehash: ecc33c6176214cb8178e55d716294bf9446a7b1d
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73859490"
 ---
 # <a name="manage-content-in-the-web-portal"></a>Hantera innehåll i webbportalen 
@@ -22,8 +22,8 @@ Webbportalen för Power BI-rapportserver är en lokal plats för att visa, lagra
 
 Du kan visa webbportalen i alla moderna webbläsare. Rapporter och KPI:er i webbportalen är uppdelade i mappar och du kan markera dem som favoriter. Du kan även lagra Excel-arbetsböcker där. Från webbportalen kan du starta de verktyg du behöver för att skapa rapporter:
 
-* **Power BI-rapporter** skapade med Power BI Desktop: Visa dem på webbportalen och i Power BI-mobilappar.
-* **Sidnumrerade rapporter** skapade i Report Builder: Dokument med modernt utseende och fast layout optimerade för utskrift.
+* **Power BI-rapporter** skapas med Power BI Desktop: visa dem i webbportalen och Power BI-mobilapparna.
+* **Sidnumrerade rapporter** skapas i Report Builder: dokument med ett modernt utseende och fast layout som är optimerade för utskrift.
 * **KPI:er** skapas direkt i webbportalen.
 
 I webbportalen kan du bläddra igenom mapparna på rapportservern eller söka efter specifika rapporter. Du kan visa en rapport, dess allmänna egenskaper och tidigare kopior av rapporten som finns i rapporthistoriken. Beroende på dina behörigheter, kan du även kunna prenumerera på rapporter för leverans till din inkorgen eller en delad mapp i filsystemet.
@@ -48,7 +48,7 @@ Webbportalen är ett program som körs i en webbläsare. När du startar webbpor
    * Sidnumrerade rapporter
    * Power BI Desktop-rapporter
    * Excel-arbetsböcker
-   * Datauppsättningar
+   * Datamängder
    * Datakällor
    * Resurser
 
@@ -61,12 +61,12 @@ Power BI-rapportserver ger dig detaljerad kontroll över de objekt som du lagrar
 2. Välj egenskapen eller den andra funktionen du vill ange.
    
     ![Välj en egenskap](media/getting-around/report-server-web-portal-manage-properties.png)
-3. Välj **Tillämpa**.
+3. Välj **Använd**.
 
 Läs mer om att [arbeta med prenumerationer i webbportalen](https://docs.microsoft.com/sql/reporting-services/working-with-subscriptions-web-portal).
 
 ## <a name="next-steps"></a>Nästa steg
 [Vad är Power BI-rapportservern?](get-started.md)
 
-Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+Fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 

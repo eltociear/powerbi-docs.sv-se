@@ -10,10 +10,10 @@ ms.date: 07/15/2019
 ms.author: arthii
 LocalizationGroup: Gateways
 ms.openlocfilehash: ea6d4186d2f02665201f2161f50e06ad8f0f45a6
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/02/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74699416"
 ---
 # <a name="manage-your-data-source---analysis-services"></a>Hantera din datakälla – Analysis Services
@@ -154,7 +154,7 @@ Så här konfigurerar du gatewayen för att utföra Active Directory-sökningen:
 
 För att skapa en mappningsregel anger du ett värde för **Ursprungligt namn** och **Nytt namn** och väljer sedan **Lägg till**.
 
-| Fält | Beskrivning |
+| Field | Beskrivning |
 | --- | --- |
 | Ersätt (ursprungligt namn) |Den e-postadress som du använde för att logga in på Power BI. |
 | Med (nytt namn) |Det värde som du vill ersätta det med. Resultatet av ersättningen skickas till egenskapen EffectiveUserName för Analysis Services-anslutningen. |
@@ -267,7 +267,7 @@ Om du finns med på fliken **Användare** för den datakälla som konfigurerats 
 
 ### <a name="limitations-of-analysis-services-live-connections"></a>Begränsningar för Analysis Services realtidsanslutningar
 
-Du kan använda en realtidsanslutning för tabellinstanser eller flerdimensionella instanser.
+Du kan använda en realtidsanslutning för tabell- eller flerdimensionella instanser.
 
 | **Serverversion** | **Obligatorisk SKU** |
 | --- | --- |
@@ -283,5 +283,5 @@ Du kan använda en realtidsanslutning för tabellinstanser eller flerdimensionel
 * [Felsökning av den lokala datagatewayen](/data-integration/gateway/service-gateway-tshoot)
 * [Felsöka gatewayer – Power BI](service-gateway-onprem-tshoot.md)
 
-Har du fler frågor? Testa [Power BI Community](https://community.powerbi.com/).
+Fler frågor? Testa [Power BI Community](https://community.powerbi.com/).
 

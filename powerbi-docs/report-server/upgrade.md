@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.custom: ''
 ms.date: 09/05/2017
 ms.openlocfilehash: eac019bc31396359b7520e057f2384adce386a96
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73873966"
 ---
 # <a name="upgrade-power-bi-report-server"></a>Uppgradera Power BI-rapportservern
@@ -79,7 +79,7 @@ När rapportservern har uppgraderats är det lämpligt att kontrollera att alla 
 ## <a name="next-steps"></a>Nästa steg
 
 * [Administratörsöversikt](admin-handbook-overview.md)  
-* [Installera Power BI Desktop som har optimerats för Power BI-rapportservern](install-powerbi-desktop.md)  
+* [Installera Power BI Desktop optimerad för Power BI-rapportserver](install-powerbi-desktop.md)  
 * [Verifiera en Reporting Services-installation](https://docs.microsoft.com/sql/reporting-services/install-windows/verify-a-reporting-services-installation)  
 * [Konfigurera tjänstkontot för rapportservern](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-the-report-server-service-account-ssrs-configuration-manager)  
 * [Konfigurera rapportserverns URL:er](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-report-server-urls-ssrs-configuration-manager)  
@@ -89,4 +89,4 @@ När rapportservern har uppgraderats är det lämpligt att kontrollera att alla 
 * [Konfigurera Windows-tjänstekonton och -behörigheter](https://docs.microsoft.com/sql/database-engine/configure-windows/configure-windows-service-accounts-and-permissions)  
 * [Webbläsarstöd för Power BI-rapportserver](browser-support.md)
 
-Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+Fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

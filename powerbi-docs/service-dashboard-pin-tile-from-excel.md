@@ -11,10 +11,10 @@ ms.date: 05/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
 ms.openlocfilehash: d0f258af383327fb25c8f0e896677bbd19eca6c4
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73877437"
 ---
 # <a name="pin-a-tile-to-a-power-bi-dashboard-from-excel"></a>Fästa en panel på en Power BI-instrumentpanel från Excel
@@ -53,14 +53,14 @@ Ett sätt att lägga till en ny [instrumentpanel](consumer/end-user-tiles.md) ä
 1. Markera de celler som du vill fästa på en instrumentpanel.
    
     ![markera celler i Excel-arbetsbok](media/service-dashboard-pin-tile-from-excel/pbi_selectrange.png)
-2. Välj fästikonen ![fästikon](media/service-dashboard-pin-tile-from-excel/pbi_pintile_small.png) . 
+2. Välj fästikonen ![fästikon](media/service-dashboard-pin-tile-from-excel/pbi_pintile_small.png) -ikonen. 
 3. Fäst panelen på en befintlig eller ny instrumentpanel. 
    
    * Befintlig instrumentpanel: välj instrumentpanelens namn i listrutan.
    * Ny instrumentpanel: skriv instrumentpanelens namn.
    
-     ![Dialogrutan Fäst på instrumentpanelen](media/service-dashboard-pin-tile-from-excel/pbi_dashdialog1.png)
-4. Välj **fäst**. Genom ett meddelande (nära det övre högra hörnet) får du reda på att området har lagts till som en panel på instrumentpanelen. 
+     ![dialogrutan Fäst på instrumentpanelen](media/service-dashboard-pin-tile-from-excel/pbi_dashdialog1.png)
+4. Välj **Fäst**. Genom ett meddelande (nära det övre högra hörnet) får du reda på att området har lagts till som en panel på instrumentpanelen. 
    
     ![Dialogrutan Fäst på instrumentpanelen](media/service-dashboard-pin-tile-from-excel/power-bi-go-to-dashboard.png)
 5. Välj **Gå till instrumentpanelen**. Härifrån kan du [byta namn, ändra storlek, länka och flytta](service-dashboard-edit-tile.md) den fastsatta visualiseringen. Som standard öppnar den fastsatta panelen arbetsboken i Power BI.
@@ -87,5 +87,5 @@ Funktioner som inte stöds: Power BI använder Excel Services till att hämta ar
 
 [Hämta data från Excel-arbetsböcker](service-excel-workbook-files.md)
 
-Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
+Fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
 

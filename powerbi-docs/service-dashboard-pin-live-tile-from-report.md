@@ -11,10 +11,10 @@ ms.date: 03/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
 ms.openlocfilehash: d620c1def289cea39a90092876ce275eea8ee699
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73853062"
 ---
 # <a name="pin-an-entire-report-page-as-a-live-tile-to-a-power-bi-dashboard"></a>Fästa en hel rapportsida, som en levande panel, på en Power BI-instrumentpanel
@@ -37,12 +37,12 @@ Se hur Amanda fäster en liverapportsida på en instrumentpanel och följ sedan 
 2. Välj **Fäst Live-sida** på menyraden när inga visualiseringar har markerats.
    
    ![Ikonen Fäst Live-sida](media/service-dashboard-pin-live-tile-from-report/pbi-pin-live-page.png) 
-3. Fäst panelen på en befintlig eller ny instrumentpanel. Lägg märke till den markerade texten: *När du fäster en live-sida visas ändringar i rapporterna på instrumentpanelen när sidan uppdateras.*
+3. Fäst panelen på en befintlig eller ny instrumentpanel. Lägg märke till den markerade texten: *Fäst Live-sida möjliggör att ändringar som görs i rapporterna visas på instrumentpanelen när sidan uppdateras.*
    
    * Befintlig instrumentpanel: välj instrumentpanelens namn i listrutan. Instrumentpaneler som har delats med dig visas inte i listrutan.
    * Ny instrumentpanel: skriv instrumentpanelens namn.
      
-     ![Dialogrutan Fäst på instrumentpanelen](media/service-dashboard-pin-live-tile-from-report/pbi-pin-live-page-dialog.png)
+     ![dialogrutan Fäst på instrumentpanelen](media/service-dashboard-pin-live-tile-from-report/pbi-pin-live-page-dialog.png)
 4. Välj **Fäst live**. Genom ett meddelande (nära det övre högra hörnet) får du reda på att sidan har lagts till, som ett fönster, på instrumentpanelen.
 
 ## <a name="open-the-dashboard-to-see-the-pinned-live-tile"></a>Öppna instrumentpanelen om du vill se den fästa levande panelen
@@ -54,5 +54,5 @@ Se hur Amanda fäster en liverapportsida på en instrumentpanel och följ sedan 
 ## <a name="next-steps"></a>Nästa steg
 [Instrumentpaneler i Power BI](consumer/end-user-dashboards.md)
 
-Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
+Fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
 

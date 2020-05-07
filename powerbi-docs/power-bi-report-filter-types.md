@@ -10,10 +10,10 @@ ms.date: 06/25/2019
 ms.author: maggies
 LocalizationGroup: Reports
 ms.openlocfilehash: c96b4ebae574a3b6a6fa54c5f5dc99b5bc948a90
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73874407"
 ---
 # <a name="types-of-filters-in-power-bi-reports"></a>Filtertyper i Power BI-rapporter
@@ -76,7 +76,7 @@ Genomströmningsfiltren är filter på visuell nivå som skapas via Frågor och 
 
 Den här tabellen jämför vad författare kan göra med olika typer av filter.
 
-| Filtertyp | Redigera | Rensa | Ta bort | Dölj | Låsa | Sortera | Byt namn |
+| Filtertyp | Edit | Clear | Ta bort | Dölj | Låsa | Sortera | Byt namn |
 |----|----|----|----|----|----|----|----|
 | Manuella filter | Y | Y | Y | Y | Y | Y | Y |
 | Automatiska filter | Y | Y | N | Y | Y | Y | Y |
@@ -98,5 +98,5 @@ Den här tabellen jämför vad författare kan göra med olika typer av filter.
 
 [Filtrera och markera i rapporter](power-bi-reports-filters-and-highlighting.md)
 
-Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
+Fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
 

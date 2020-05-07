@@ -1,5 +1,5 @@
 ---
-title: 'Organisationsinnehållspaket: Åtkomst och kopiering'
+title: 'Organisationsinnehållspaket: få åtkomst och kopiera'
 description: Läs mer om att skapa kopior av och felsöka åtkomst till organisationsinnehållspaket i Power BI
 author: maggiesMSFT
 ms.reviewer: lukaszp, kayu
@@ -10,17 +10,17 @@ ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
 ms.openlocfilehash: 905e461c69a898b41b45e48405c3aaaa6e09cfec
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73881316"
 ---
-# <a name="organizational-content-packs-copy-refresh-and-get-access"></a>Organisationsinnehållspaket: Kopiera, uppdatera och få åtkomst
+# <a name="organizational-content-packs-copy-refresh-and-get-access"></a>Organisationsinnehållspaket: kopiera, uppdatera och få åtkomst
 
 När ett organisationsinnehållspaket publiceras, visas alla mottagare samma instrumentpanel, rapporter, Excel-arbetsböcker, datauppsättningar och data (om det inte rör sig om en SQL Server Analysis Services-datakälla).  [Endast innehållspaketets skapare kan redigera och publicera](service-organizational-content-pack-manage-update-delete.md) innehållspaketet.  Alla mottagare kan dock spara en kopia av innehållspaketet som kan existera tillsammans med originalet.
 
-Att skapa innehållspaket skiljer sig från att dela instrumentpaneler eller samarbeta om dem i en grupp. Läs [Hur ska jag samarbeta kring och dela instrumentpaneler och rapporter?](service-how-to-collaborate-distribute-dashboards-reports.md) för att välja det bästa alternativet för din situation.
+Att skapa innehållspaket skiljer sig från att dela instrumentpaneler eller samarbeta om dem i en grupp. Läs [Hur ska jag samarbeta med och dela instrumentpaneler och rapporter?](service-how-to-collaborate-distribute-dashboards-reports.md) för att välja det bästa alternativet för din situation.
 
 > [!NOTE]
 > Du kan inte skapa eller installera innehållspaket för organisationen i den nya arbetsyteupplevelsen. Nu är ett bra tillfälle att uppgradera dina innehållspaket till appar, om du inte har börjat ännu. Lär dig [mer om den nya arbetsytan](service-create-the-new-workspaces.md).
@@ -45,7 +45,7 @@ Nu har du en kopia som du kan ändra. Ingen annan kommer att se de ändringar du
 ## <a name="help--i-can-no-longer-access-the-content-pack"></a>Hjälp!  Jag kan inte längre komma åt innehållspaketet
 Detta kan bero på flera orsaker:
 
-* **Medlemskapsändringar**:  Innehållspaket publiceras för e-postdistributionsgrupper, säkerhetsgrupper och [Power BI-grupper baserat på Office 365](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9).  Om du har tagits bort från gruppen har du inte längre åtkomst till innehållspaketet.
+* **Medlemskapsändringar**: Innehållspaket publiceras för e-postdistributionsgrupper, säkerhetsgrupper och [Power BI-grupper baserat på Office 365](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9).  Om du har tagits bort från gruppen har du inte längre åtkomst till innehållspaketet.
 * **Distributionsändringar**: Innehållspaketets skapare har ändrat distributionen. Om till exempel innehållspaketet ursprungligen publicerades för hela organisationen men skaparen publicerar det på nytt men nu för en mindre målgrupp, kanske du inte längre ingår i den.
 * **Säkerhetsinställningar ändras**: Om instrumentpanelen och rapporterna ansluter till lokala SSAS-datakällor och ändringar görs i säkerhetsinställningarna, kan din behörighet till servern återkallas.
 
@@ -57,4 +57,4 @@ Se [Hantera, uppdatera och ta bort organisationsinnehållspaket](service-organiz
 ## <a name="next-steps"></a>Nästa steg
 * [Introduktion till organisationsinnehållspaket](service-organizational-content-pack-introduction.md)
 * [Skapa en grupp i Power BI](service-create-distribute-apps.md)
-* Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
+* Fler frågor? [Prova Power BI Community](https://community.powerbi.com/)

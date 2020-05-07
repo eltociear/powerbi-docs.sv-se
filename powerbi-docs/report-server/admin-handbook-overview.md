@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 05/22/2019
 ms.author: maggies
 ms.openlocfilehash: a93b3def115aaadbc33f6d0985aeea424558f248
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73860208"
 ---
 # <a name="admin-overview-power-bi-report-server"></a>Administratörsöversikt, Power BI-rapportserver
@@ -46,9 +46,9 @@ Säkerhet och skydd är viktigt för alla organisationer. Du kan lära dig om au
 ## <a name="next-steps"></a>Nästa steg
 [Installera Power BI-rapportserver](install-report-server.md)  
 [Hitta rapportserverns produktnyckel](find-product-key.md)  
-[Installera Power BI Desktop som har optimerats för Power BI-rapportservern](install-powerbi-desktop.md)  
+[Installera Power BI Desktop optimerad för Power BI-rapportserver](install-powerbi-desktop.md)  
 [Hämta Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
 [Ladda ned SQL Server Data Tools (SSDT)](https://go.microsoft.com/fwlink/?LinkID=616714)
 
-Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+Fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 

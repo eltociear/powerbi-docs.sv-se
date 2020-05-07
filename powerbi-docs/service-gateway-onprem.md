@@ -10,17 +10,17 @@ ms.topic: conceptual
 LocalizationGroup: Gateways
 ms.date: 07/15/2019
 ms.openlocfilehash: 96a006f60e08d35ef6bbe13a2033d866814ec5b2
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74697553"
 ---
 # <a name="what-is-an-on-premises-data-gateway"></a>Vad är en lokal datagateway?
 
 [!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
 
-Den lokala datagatewayen fungerar som en brygga med snabb och säker dataöverföring mellan lokala data (data som inte finns i molnet) och flera molntjänster från Microsoft. Dessa molntjänster omfattar Power BI, Power Apps, Power Automate, Azure Analysis Services och Azure Logic Apps. Genom att använda en gateway kan organisationer förvara databaser och andra datakällor i sina lokala nätverk, men ändå använda dessa lokala data i molntjänster.
+En lokal datagateway fungerar som en brygga med snabb och säker dataöverföring mellan lokala data (data som inte finns i molnet) och flera molntjänster från Microsoft. Dessa molntjänster omfattar Power BI, Power Apps, Power Automate, Azure Analysis Services och Azure Logic Apps. Genom att använda en gateway kan organisationer förvara databaser och andra datakällor i sina lokala nätverk, men ändå använda dessa lokala data i molntjänster.
 
 ## <a name="how-the-gateway-works"></a>Så här fungerar gatewayen
 
@@ -30,11 +30,11 @@ Mer information om hur gatewayen fungerar finns i [Arkitektur för lokal datagat
 
 ## <a name="types-of-gateways"></a>Typer av gatewayer
 
-Det finns två olika typer av gatewayer, var och en för olika scenarier:
+Det finns två olika typer av gatewayer för varsitt scenario:
 
 * **Lokal datagateway** – flera användare kan ansluta till flera lokala datakällor. Du kan använda en lokal datagateway med alla tjänster som stöds, men en enda gatewayinstallation. Den här gatewayen är väl lämpad för komplexa scenarier där flera personer har åtkomst till flera olika datakällor.
 
-* **Lokal datagateway (personligt läge)** – en användare kan ansluta till källor och kan inte delas med andra. En lokal datagateway (personligt läge) kan bara användas med Power BI. Den här gatewayen är väl lämpad för scenarier där du är den enda personen som skapar rapporter och du inte behöver dela några datakällor med andra.
+* **Lokal datagateway (personligt läge)** – en användare kan ansluta till källor och kan inte delas med andra. En lokal datagateway (personligt läge) kan bara användas med Power BI. Den här gatewayen är väl lämpad för scenarier där du är den enda personen som skapar rapporter och du inte behöver datakällor med andra.
 
 ## <a name="use-a-gateway"></a>Använda en gateway
 
@@ -50,4 +50,4 @@ Det finns fyra huvudsakliga steg för att använda en gateway.
 
 * [Installera den lokala datagatewayen](/data-integration/gateway/service-gateway-install)
 
-Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
+Fler frågor? [Prova Power BI Community](https://community.powerbi.com/)

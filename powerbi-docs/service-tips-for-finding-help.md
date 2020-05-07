@@ -10,10 +10,10 @@ ms.date: 06/28/2018
 ms.author: maggies
 LocalizationGroup: Get started
 ms.openlocfilehash: 10540ed49064b9e28543ce46b43d8bb2d9ca6cf7
-ms.sourcegitcommit: 57ec4d51744b89bd695e6c62184c21342f2eae83
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/19/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74178228"
 ---
 # <a name="10-tips-for-getting-help-with-your-power-bi-questions"></a>10 tips för att få hjälp med Power BI-frågor
@@ -29,7 +29,7 @@ Experter som måste ha svar om Power BI använder ofta sökning. Letar du efter 
 Power BI-teamet uppdaterar och förbättrar ständigt Power BI-dokumentationen och utbildningarna. Där finns bra innehåll, inklusive inspelningar av webbseminarier, white paper-dokument, interaktiva utbildningar och länkar till blogginlägg om de senaste funktionerna.
 
 ## <a name="3-read-the-power-bi-blog-for-the-latest-news"></a>3 Läs Power BI-bloggen för att få de senaste nyheterna
-Power BI-teamet beskriver de nya funktionerna i sina återkommande [Power BI-blogginlägg](https://powerbi.microsoft.com/blog/). Få reda på nyheter inom allt från Power BI Desktop till Power BI-mobilapparna. Titta in ofta för att se vad som är nytt: Ta ett par minuter varje vecka till att läsa igenom bloggarna. Du vet aldrig när du får nytta av den information som du läste för några månader sedan.
+Power BI-teamet beskriver de nya funktionerna i sina återkommande [Power BI-blogginlägg](https://powerbi.microsoft.com/blog/). Få reda på nyheter inom allt från Power BI Desktop till Power BI-mobilapparna. Ta till vana att ofta gå hit ofta för att se om det finns några nyheter: Ägna några minuter varje vecka till att läsa igenom bloggarna. Du vet aldrig när du får nytta av den information som du läste för några månader sedan.
 
 ## <a name="4-try-twitter"></a>4 Testa Twitter
 Många Power BI-kunder och experter finns på Twitter. Ställ en fråga i en tweet. Lägg till hashtaggarna #powerbi och #powerbihelp så att rätt personer kan se din tweet.

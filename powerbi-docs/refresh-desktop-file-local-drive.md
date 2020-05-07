@@ -10,10 +10,10 @@ ms.date: 06/04/2019
 ms.author: davidi
 LocalizationGroup: Data refresh
 ms.openlocfilehash: 63d49a439d10acc5d7cda10b76b04a26fcdb085a
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/02/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74698818"
 ---
 # <a name="refresh-a-dataset-created-from-a-power-bi-desktop-file-on-a-local-drive"></a>Uppdatera en datauppsättning som skapats från en Power BI Desktop-fil på en lokal disk
@@ -22,7 +22,7 @@ ms.locfileid: "74698818"
 
 I Power BI stöds Uppdatera nu och Schemalägg uppdatering för datauppsättningar som skapas från Power BI Desktop-filer som importerats från en lokal enhet där Hämta data/Frågeredigeraren används för att ansluta till och läsa in data från någon av följande datakällor:
 
-### <a name="power-bi-gateway---personal"></a>Power BI Gateway - Personal
+### <a name="power-bi-gateway---personal"></a>Power BI Gateway – Personal
 
 - Alla datakällor online som visas i Hämta data och Frågeredigeraren i Power BI Desktop.
 - Alla lokala datakällor som visas i Hämta data och Frågeredigeraren i Power BI Desktop, förutom Hadoop-filer (HDFS) och Microsoft Exchange.
@@ -37,7 +37,7 @@ I Power BI stöds Uppdatera nu och Schemalägg uppdatering för datauppsättning
 
 Du kan utföra manuell engångsuppdatering direkt i Power BI Desktop genom att välja **Uppdatera** på menyfliken Start. När du väljer **Uppdatera** här kommer data i *filens* modell att uppdateras med uppdaterade data från den ursprungliga datakällan. Den här typen av uppdatering sker helt inom Power BI Desktop programmet och skiljer sig från manuell eller schemalagd uppdatering i Power BI och det är viktigt att förstå skillnaden.
 
-![Uppdatera](media/refresh-desktop-file-local-drive/pbix-refresh.png)
+![Refresh](media/refresh-desktop-file-local-drive/pbix-refresh.png)
 
 När du importerar din Power BI Desktop-fil från en lokal enhet läses data, tillsammans med annan information om modellen, in i en datamängd i Power BI-tjänsten. I Power BI-tjänsten, inte Power BI Desktop, kan du behöva uppdatera data i datauppsättningen eftersom det är dessa som dina rapporter i Power BI-tjänsten bygger på. Eftersom datakällorna är externa kan du manuellt uppdatera datamängden med **Uppdatera nu**. Du kan också konfigurera ett uppdateringsschema med hjälp av **Schemalägg uppdatering**.
 
@@ -56,7 +56,7 @@ Mer information om hur du konfigurerar schemalagda uppdateringar finns i [Konfig
 
 ## <a name="when-things-go-wrong"></a>Om något går fel
 
-Om något går fel beror det vanligtvis på att Power BI inte kan logga in till datakällor, eller att gatewayen är offline om datauppsättningen ansluter till en lokal datakälla. Kontrollera att Power BI kan logga in till datakällor. Om det lösenord som du använder för att logga in till en datakälla ändras eller om Power BI loggas ut från en datakälla, bör du försöka logga in till dina datakällor igen i datakällans autentiseringsuppgifter.
+Om något går fel beror det vanligtvis på att Power BI inte kan logga in till datakällor, eller att gatewayen är offline om datauppsättningen ansluter till en lokal datakälla. Kontrollera att Power BI kan logga in till datakällor. Om det lösenord som du använder för att logga in på en datakälla ändras eller om Power BI loggas ut från en datakälla, bör du försöka logga in på dina datakällor igen i datakällans autentiseringsuppgifter.
 
 Se till att lämna **Skicka ett e-postmeddelande till mig om uppdateringen misslyckas** markerat. Du vill veta direkt om en schemalagd uppdatering misslyckas.
 
@@ -67,5 +67,5 @@ Ibland går det inte som förväntat att uppdatera data. Vanligtvis beror det h�
 - [Felsöka den lokala datagatewayen](service-gateway-onprem-tshoot.md)
 - [Felsöka Power BI Gateway – Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)
 
-Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+Fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 

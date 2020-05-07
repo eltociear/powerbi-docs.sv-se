@@ -10,10 +10,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: f1d782aa7409dce43d960956406e996cc7951a57
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73876461"
 ---
 # <a name="connect-to-data-created-by-power-bi-dataflows-in-power-bi-desktop-beta"></a>Ansluta till data som skapats av Power BI-dataflöden i Power BI Desktop (Beta)
@@ -43,9 +43,9 @@ De flesta dataflöden finns i Power BI-tjänsteklienten. Dock kan **Power BI Des
 2.  Ben, som också är medlem i arbetsytan som Anna skapade, vill använda Power BI Desktop och anslutningsappen för dataflöden för att hämta data från det dataflöde som Anna skapade.
 3.  Ben får ett fel som beror på att han inte lagts till som behörig användare i dataflödets CDM-mapp i datasjön.
 
-    ![Fel vid försök att använda dataflöde](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_08.jpg)
+    ![Fel när dataflödet användes](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_08.jpg)
 
-För att lösa problemet, måste Ben beviljas läsbehörighet till CDM-mappen och dess filer. Du kan läsa mer om hur du ger åtkomst till Common Data Service-mappen i [den här artikeln](https://go.microsoft.com/fwlink/?linkid=2029121).
+För att lösa problemet, måste Ben beviljas läsbehörighet till CDM-mappen och dess filer. Du kan läsa mer om hur du ger åtkomst till CDM-mappen i [den här artikeln](https://go.microsoft.com/fwlink/?linkid=2029121).
 
 
 

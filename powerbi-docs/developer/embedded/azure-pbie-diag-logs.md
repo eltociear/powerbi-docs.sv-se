@@ -8,10 +8,10 @@ ms.service: power-bi-embedded
 ms.topic: conceptual
 ms.date: 08/13/2018
 ms.openlocfilehash: 362c765fb5e739563b8d21eaed53304eddce8acc
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79495813"
 ---
 # <a name="diagnostic-logging-for-power-bi-embedded-in-azure"></a>Diagnostisk loggning för Power BI Embedded i Azure
@@ -110,7 +110,7 @@ Motorkategorin instruerar resursen att logga följande händelser och det finns 
 |    Frågan slutar    |    Registrerar alla Frågan slutar-händelser sedan spårningen startades.    |
 |    Vertipaq-frågan slutar    |    Registrerar alla Frågan slutar-händelser för VertiPaq SE sedan spårningen startades.    |
 |    Granskning utloggning    |    Registrerar alla bortkopplingar från motorhändelser sedan spårningen startades.    |
-|    Fel    |    Registrerar alla motorfelshändelser sedan spårningen startades.    |
+|    Error    |    Registrerar alla motorfelshändelser sedan spårningen startades.    |
 
 <br>
 <br>
@@ -118,7 +118,7 @@ Motorkategorin instruerar resursen att logga följande händelser och det finns 
 | Egenskapens namn | Vertipaq-frågan slutar, exempel | Beskrivning av egenskap |
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
 | EventClass | XM_SEQUERY_END | Händelseklass används för att kategorisera händelser. |
-| EventSubclass | 0 | Händelseunderklassen tillhandahåller ytterligare information om varje händelseklass. (till exempel 0: VertiPaq-genomsökning) |
+| EventSubclass | 0 | Händelseunderklassen tillhandahåller ytterligare information om varje händelseklass. (exempel: 0: VertiPaq-genomsökning) |
 | RootActivityId | ff217fd2-611d-43c0-9c12-19e202a94f70 | Rotaktivitets-ID. |
 | CurrentTime | 2018-04-06T18:30:11.9137358Z | Tid då händelsen startade, när denna angivelse är tillgänglig. |
 | StartTime | 2018-04-06T18:30:11.9137358Z | Tid då händelsen startade, när denna angivelse är tillgänglig. |
@@ -127,12 +127,12 @@ Motorkategorin instruerar resursen att logga följande händelser och det finns 
 | ObjectType | 802012 | ObjectType |
 | EndTime | 2018-04-06T18:30:11.9137358Z | Tid då händelsen avslutades. |
 | Varaktighet | 0 | Den tid händelsen tar (i millisekunder). |
-| SessionType | Användare | Sessionstyp (vilken entitet som orsakade åtgärden). |
+| SessionType | User | Sessionstyp (vilken entitet som orsakade åtgärden). |
 | ProgressTotal | 0 | Total utveckling. |
 | IntegerData | 0 | Integer-data. |
 | Allvarlighetsgrad | 0 | Ett undantags allvarlighetsgrad. |
-| Slutförd | 1 | 1 = Klart! 0 = fel (1 kan t.ex. innebära att en behörighetskontroll har slutförts och 0 att kontrollen underkänt behörigheten). |
-| Fel | 0 | Felnummer för en given händelse. |
+| Klart | 1 | 1 = Klart! 0 = fel (1 kan t.ex. innebära att en behörighetskontroll har slutförts och 0 att kontrollen underkänt behörigheten). |
+| Error | 0 | Felnummer för en given händelse. |
 | ConnectionID | 3 | Unikt anslutnings-ID. |
 | DatasetID | 5eaa550e-06ac-4adf-aba9-dbf0e8fd1527 | ID för den datamängd i vilken användarens instruktion körs. |
 | SessionID | 3D063F66-A111-48EE-B960-141DEBDA8951 | Sessions-GUID. |

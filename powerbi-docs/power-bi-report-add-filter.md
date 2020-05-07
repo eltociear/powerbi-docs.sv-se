@@ -10,10 +10,10 @@ ms.date: 10/20/2019
 ms.author: maggies
 LocalizationGroup: Reports
 ms.openlocfilehash: 143851013679dd0356c1ea5036c3d724b1dc436d
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73875179"
 ---
 # <a name="add-a-filter-to-a-report-in-power-bi"></a>Lägga till ett filter i en Power BI-rapport
@@ -29,7 +29,7 @@ Den här artikeln förklarar hur du lägger till ett sidfilter, ett visualiserin
 Power BI erbjuder ett antal olika typer av filter, både manuella och automatiska samt för visning av detaljerad information och för genomströmning. Läs mer om de [olika typerna av filter](power-bi-report-filter-types.md).
 
 ## <a name="filters-in-editing-view-or-reading-view"></a>Filter i redigeringsvyn jämfört med läsvyn
-Du kan interagera med rapporter i två olika vyer: Läsvyn och redigeringsvyn. Vilka filtreringsfunktioner som är tillgängliga beror på vilket läge du befinner dig i. Läs allt [om filter och markeringar i Power BI-rapporter](power-bi-reports-filters-and-highlighting.md) för mer information.
+Du kan interagera med rapporter i två olika vyer: läsvyn och redigeringsvyn. Vilka filtreringsfunktioner som är tillgängliga beror på vilket läge du befinner dig i. Läs allt [om filter och markeringar i Power BI-rapporter](power-bi-reports-filters-and-highlighting.md) för mer information.
 
 Den här artikeln beskriver hur du skapar filter i rapportens **Redigeringsvy**.  Mer information om filter i läsvyn finns i [Interagera med filter i rapportens läsvy](consumer/end-user-report-filter.md).
 
@@ -89,7 +89,7 @@ Nu ska vi lägga till ett helt nytt fält som ett filter på visuell nivå i vå
      
     ![Lägga till ett fält till fönstret Filter](media/power-bi-report-add-filter/power-bi-search-add-visual-filter.png)
 
-    Observera att **Distriktschef** *inte* läggs till i själva visualiseringen. Visualiseringen består fortfarande av **StoreNumberName** som axel och **This Year Sales (Årets försäljning)** som värde.  
+    Observera att **Distriktschef***inte* läggs till i själva visualiseringen. Visualiseringen består fortfarande av **StoreNumberName** som axel och **This Year Sales (Årets försäljning)** som värde.  
      
     ![Fältet finns inte i det visuella objektet](media/power-bi-report-add-filter/power-bi-visualization.png)
 
@@ -179,5 +179,5 @@ Nu ska vi se hur filtret för detaljerad information fungerar.
 
 [Olika typer av filter i Power BI](power-bi-report-filter-types.md)
 
-Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
+Fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
 

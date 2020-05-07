@@ -11,10 +11,10 @@ ms.custom: ''
 ms.date: 04/28/2020
 LocalizationGroup: Data from databases
 ms.openlocfilehash: cb9ae846f1033c6e7bcbecae28c039dd985adec0
-ms.sourcegitcommit: c772c544ce2e1e2a147b9b62e5579ac3cb59d54c
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "82255844"
 ---
 # <a name="azure-sql-database-with-directquery"></a>Azure SQL Database med DirectQuery
@@ -57,4 +57,4 @@ Du hittar det fullständigt kvalificerade servernamnet och databasnamnet i Azure
 * [Vad är Power BI?](fundamentals/power-bi-overview.md)  
 * [Hämta data för Power BI](service-get-data.md)  
 
-Har du fler frågor? [Testa Power BI Community](https://community.powerbi.com/)
+Fler frågor? [Testa Power BI Community](https://community.powerbi.com/)

@@ -1,6 +1,6 @@
 ---
-title: 'Självstudie: Skapa beräknade kolumner i Power BI Desktop'
-description: 'Självstudie: Skapa beräknade kolumner i Power BI Desktop'
+title: 'Självstudier: Skapa beräknade kolumner i Power BI Desktop'
+description: 'Självstudier: Skapa beräknade kolumner i Power BI Desktop'
 author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
@@ -10,13 +10,13 @@ ms.date: 11/26/2019
 ms.author: davidi
 LocalizationGroup: Learn more
 ms.openlocfilehash: cdd4f4f5058b57cbf59a3a0b35286243bd8c8f37
-ms.sourcegitcommit: b68a47b1854588a319a5a2d5d6a79bba2da3a4e6
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/08/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75731888"
 ---
-# <a name="tutorial-create-calculated-columns-in-power-bi-desktop"></a>Självstudie: Skapa beräknade kolumner i Power BI Desktop
+# <a name="tutorial-create-calculated-columns-in-power-bi-desktop"></a>Självstudier: Skapa beräknade kolumner i Power BI Desktop
 
 Ibland innehåller de data som du analyserar inte det fält som du behöver för att kunna hämta ett visst resultat. Det är därför vi använder *beräknade kolumner*. Beräknade kolumner använder DAX-formler (Data Analysis Expressions) för att definiera en kolumns värden, allt från att sätta ihop textvärden från ett antal olika kolumner till att beräkna ett numeriskt värde från andra värden. Anta till exempel att dina data har **Stad** och **Delstat**, men du vill ha ett enda fält för **Plats** som har båda värdena, som ”Miami, FL”. Detta är exakt vad beräknade kolumner är till för.
 

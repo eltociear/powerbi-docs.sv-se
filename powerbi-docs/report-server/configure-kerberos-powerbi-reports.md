@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 11/01/2017
 ms.author: maggies
 ms.openlocfilehash: 6e341f80e3631228c28590ccf0a7711e0b624f2c
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73874229"
 ---
 # <a name="configure-kerberos-to-use-power-bi-reports"></a>Konfigurera Kerberos för att använda Power BI-rapporter
@@ -193,13 +193,13 @@ Vi vill konfigurera begränsad delegering med protokollövergång. Med begränsa
 5. Under **tjänster som det här kontot kan ge delegerade autentiseringsuppgifter**: väljer du **lägg till**.
 6. I den nya dialogrutan väljer du **Användare eller datorer**.
 7. Ange tjänstkontot för Analysis Services-tjänsten och välj **Ok**.
-8. Välj det SPN som du skapade. Det börjar med `MSOLAPSvc.3`. Om du har lagt till både FQDN och NetBIOS SPN, väljs båda. Du kan bara se en.
+8. Välj det SPN som du skapade. Det börjar med `MSOLAPSvc.3`. Om du har lagt till både FQDN och NetBIOS SPN, väljs båda. Du kan hända att du bara ser en.
 9. Välj **OK**.  Du bör nu se SPN-namnet i listan.
 10. Du kan också markera **expanderat** för att visa både FQDN- och NetBIOS SPN i listan.
 11. Välj **lägg till** igen. Vi lägger till SQL Browser SPN nu.
 12. I den nya dialogrutan väljer du **Användare eller datorer**.
 13. Ange datornamnet för datorn som SQL Browser-tjänsten är på och välj **Ok**.
-14. Välj det SPN som du skapade. Det börjar med `MSOLAPDisco.3`. Om du har lagt till både FQDN och NetBIOS SPN, väljs båda. Du kan bara se en.
+14. Välj det SPN som du skapade. Det börjar med `MSOLAPDisco.3`. Om du har lagt till både FQDN och NetBIOS SPN, väljs båda. Du kan hända att du bara ser en.
 15. Välj **OK**. Dialogrutan bör likna följande när du har markerat **expanderat**.
     
     ![](media/configure-kerberos-powerbi-reports/powerbi-report-config-delegation.png)
@@ -217,5 +217,5 @@ Den här konfigurationen borde fungera i de flesta fall, men med Kerberos kan de
 [Administratörsöversikt](admin-handbook-overview.md)  
 [Installera Power BI-rapportserver](install-report-server.md)  
 
-Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+Fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 

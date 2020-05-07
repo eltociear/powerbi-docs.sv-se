@@ -10,10 +10,10 @@ ms.date: 06/06/2019
 ms.author: davidi
 LocalizationGroup: Data refresh
 ms.openlocfilehash: 21b7b93b4e522a8e6a49d22b54c9ddd83cb5e042
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/02/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74699631"
 ---
 # <a name="refresh-a-dataset-created-from-an-excel-workbook-on-onedrive-or-sharepoint-online"></a>Uppdatera en datauppsättning som skapats från en Excel-arbetsbok på OneDrive eller SharePoint Online
@@ -32,7 +32,7 @@ Du kan uppdatera datamängden i Power BI-tjänsten. När du uppdaterar dataupps�
 
 I Power BI stöds **Uppdatera nu** och **Schemalägg uppdatering** för datamängder som skapas från Power BI Desktop-filer som importerats från en lokal enhet där Hämta data/Frågeredigeraren används till att ansluta till och läsa in data från någon av följande datakällor:  
 
-### <a name="power-bi-gateway---personal"></a>Power BI Gateway - Personal
+### <a name="power-bi-gateway---personal"></a>Power BI Gateway – Personal
 
 * Alla datakällor online som visas i Hämta data och Frågeredigeraren i Power BI Desktop.
 * Alla lokala datakällor som visas i Hämta data och Frågeredigeraren i Power BI Desktop, förutom Hadoop-filer (HDFS) och Microsoft Exchange.
@@ -47,7 +47,7 @@ I Power BI stöds **Uppdatera nu** och **Schemalägg uppdatering** för datamän
 
 ## <a name="onedrive-or-onedrive-for-business-whats-the-difference"></a>OneDrive eller OneDrive för företag. Vad är skillnaden?
 
-Om du både har en personlig OneDrive och OneDrive för företag, bör du behålla alla filer som du vill importera till Power BI på OneDrive för företag. Skälet är att Du använder förmodligen två olika konton för att logga in till dem.
+Om du både har en personlig OneDrive och OneDrive för företag, bör du behålla alla filer som du vill importera till Power BI på OneDrive för företag. Skälet är att du förmodligen använder två olika konton för att logga in till dem.
 
 Det är vanligtvis inga problem att ansluta till OneDrive för företag i Power BI eftersom det konto som du använder för att logga in i Power BI ofta är samma konto som används för att logga in i OneDrive för företag. Men på din personliga OneDrive loggar du troligen in med ett annat [Microsoft-konto](https://account.microsoft.com).
 
@@ -61,9 +61,9 @@ Om du gör ändringar i din fil på OneDrive som inte kan synkroniseras med data
 
 När du ansluter till en Excel-arbetsbok i OneDrive för företag eller SharePoint Online, har du två alternativ för hur du hämtar vad som finns i din arbetsbok till Power BI.
 
-[**Importera Excel-data till Power BI** ](service-excel-workbook-files.md#import-or-connect-to-an-excel-workbook-from-power-bi) – När du importerar en Excel-arbetsbok från OneDrive för företag eller SharePoint Online, fungerar det som det beskrivs ovan.
+[**Importera Excel-data till Power BI**](service-excel-workbook-files.md#import-or-connect-to-an-excel-workbook-from-power-bi) – När du importerar en Excel-arbetsbok från OneDrive för företag eller SharePoint Online, fungerar det som det beskrivs ovan.
 
-[**Anslut, hantera och visa Excel i Power BI** ](service-excel-workbook-files.md#one-excel-workbook--two-ways-to-use-it) – När du använder det här alternativet skapar du en anslutning från Power BI direkt till din arbetsbok på OneDrive för företag eller SharePoint Online.
+[**Anslut, hantera och visa Excel i Power BI**](service-excel-workbook-files.md#one-excel-workbook--two-ways-to-use-it) – När du använder det här alternativet skapar du en anslutning från Power BI direkt till din arbetsbok på OneDrive för företag eller SharePoint Online.
 
 När du ansluter till en Excel-arbetsbok på det här sättet, skapas inte någon datauppsättning i Power BI. Arbetsboken visas dock i Power BI-tjänsten under Rapporter med en Excel-symbol bredvid namnet. Till skillnad från Excel Online kan du när du ansluter till din arbetsbok från Power BI, om arbetsboken har anslutningar till externa datakällor som skickar data till Excel-datamodellen, konfigurera ett uppdateringsschema.
 
@@ -102,7 +102,7 @@ Mer information om hur du konfigurerar schemalagda uppdateringar finns i [Konfig
 
 ## <a name="when-things-go-wrong"></a>Om något går fel
 
-Om något går fel beror det vanligtvis på att Power BI inte kan logga in till datakällor, eller att gatewayen är offline om datauppsättningen ansluter till en lokal datakälla. Kontrollera att Power BI kan logga in till datakällor. Om det lösenord som du använder för att logga in till en datakälla ändras eller om Power BI loggas ut från en datakälla, bör du försöka logga in till dina datakällor igen i datakällans autentiseringsuppgifter.
+Om något går fel beror det vanligtvis på att Power BI inte kan logga in till datakällor, eller att gatewayen är offline om datauppsättningen ansluter till en lokal datakälla. Kontrollera att Power BI kan logga in till datakällor. Om det lösenord som du använder för att logga in på en datakälla ändras eller om Power BI loggas ut från en datakälla, bör du försöka logga in på dina datakällor igen i datakällans autentiseringsuppgifter.
 
 Se till att lämna **Skicka ett e-postmeddelande till mig om uppdateringen misslyckas** markerat. Du vill veta direkt om en schemalagd uppdatering misslyckas.
 
@@ -117,5 +117,5 @@ Ibland går det inte som förväntat att uppdatera data. Vanligtvis beror det h�
 - [Felsöka den lokala datagatewayen](service-gateway-onprem-tshoot.md)
 - [Felsöka Power BI Gateway – Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)
 
-Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
+Fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
 

@@ -10,10 +10,10 @@ ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: a655c55520d76bfaeb51318d09244ea663ccc192
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73872660"
 ---
 # <a name="using-computed-entities-on-power-bi-premium"></a>Använda beräknade entiteter i Power BI Premium
@@ -94,6 +94,6 @@ Mer information om Power Query och schemalagd uppdatering finns i följande arti
 * [Frågeöversikt i Power BI Desktop](desktop-query-overview.md)
 * [Konfigurera schemalagd uppdatering](refresh-scheduled-refresh.md)
 
-Mer information om Common Data Service finns i dess översiktsartikel:
+För mer information om den gemensamma datamodellen kan du läsa dess översiktsartikel:
 * [Common Data Service – översikt ](https://docs.microsoft.com/powerapps/common-data-model/overview)
 

@@ -9,10 +9,10 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/25/2018
 ms.openlocfilehash: 9b8e795c4a55f9efd6fd534d92d95b36c93cf2c0
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73874064"
 ---
 # <a name="develop-with-the-rest-apis-for-power-bi-report-server"></a>Utveckla med REST-API:er för Power BI-rapportservern
@@ -31,8 +31,8 @@ Ett REST API-begäran/-svarspar kan delas in i fem komponenter:
   
   * URI-schema: Anger det protokoll som används för att överföra begäran. Till exempel `http` eller `https`.
   * URI-värd: Anger domännamnet eller IP-adressen för servern där REST-tjänstslutpunkten finns, som `myserver.contoso.com`.
-  * Resursens sökväg: Anger resursen eller resurssamlingen, vilket kan inkludera flera segment som används av tjänsten för att fastställa valet av dessa resurser. Till exempel: `CatalogItems(01234567-89ab-cdef-0123-456789abcdef)/Properties` Kan användas för att hämta de angivna egenskaperna för CatalogItem.
-  * Frågesträng (valfritt): Ger ytterligare enkla parametrar, till exempel API-version eller resursurvalskriterier.
+  * Resursens sökväg: Anger den resurs- eller resurssamling som kan innehålla flera segment som används av tjänsten för att fastställa valet av dessa resurser. Till exempel: `CatalogItems(01234567-89ab-cdef-0123-456789abcdef)/Properties` Kan användas för att hämta de angivna egenskaperna för CatalogItem.
+  * Frågesträng (valfritt): Ger ytterligare enkla parametrar, till exempel API-versionen eller resursurvalskriterier.
 * Huvudfält för HTTP-begärandemeddelande:
   
   * En nödvändig [HTTP-metod](https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html) (kallas även åtgärd eller verb) som talar om för tjänsten vilken typ av åtgärd som du begär. Reporting Services REST-API:er stöder metoderna DELETE, GET, HEAD, PUT, POST, och PATCH.
@@ -60,4 +60,4 @@ Granska de tillgängliga API:erna på [SwaggerHub](https://app.swaggerhub.com/ap
 
 Exempel finns på [GitHub](https://github.com/Microsoft/Reporting-Services). Exemplet innehåller en HTML5-app som bygger på TypeScript, React och Webpack och ett PowerShell-exempel.
 
-Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+Fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

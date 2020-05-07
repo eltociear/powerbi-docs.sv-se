@@ -10,10 +10,10 @@ ms.date: 08/14/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
 ms.openlocfilehash: 95170ec36c5b4da0314c858ae415c3bbcb2ab556
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73877410"
 ---
 # <a name="tips-for-designing-a-great-power-bi-dashboard"></a>Tips för att utforma en bra Power BI-instrumentpanel
@@ -82,4 +82,4 @@ Mer visualiseringsspecifika anvisningar finns i [Visualiseringstyper i Power BI]
 ## <a name="next-steps"></a>Nästa steg
 [Skapa en instrumentpanel från en rapport](service-dashboard-create.md)  
 [Grundläggande begrepp för designers i Power BI-tjänsten](service-basic-concepts.md)  
-Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
+Fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
