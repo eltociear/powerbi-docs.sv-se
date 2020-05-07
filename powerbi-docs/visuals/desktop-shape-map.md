@@ -10,10 +10,10 @@ ms.date: 03/18/2020
 ms.author: mihart
 LocalizationGroup: Transform and shape data
 ms.openlocfilehash: 67c2acad74827c515c92ed0d16dd642170b8dc61
-ms.sourcegitcommit: 646d2de454a2897dc52cbc02b7743aaa021bac04
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79525670"
 ---
 # <a name="create-shape-map-visualizations-in-power-bi-desktop-preview"></a>Skapa formkartevisualiseringar i Power BI Desktop (förhandsversion)
@@ -113,9 +113,9 @@ Det finns några överväganden och krav för den här förhandsversionen av **F
 
 Använd följande **Regionsnycklar** i den här förhandsversionen för att prova **formkartan**.
 
-### <a name="australia-states"></a>Australien: Stater
+### <a name="australia-states"></a>Australien: delstater
 
-| ID | förkortn. | ISO | name | postnummer |
+| ID | förkortn. | ISO | namn | postnummer |
 | --- | --- | --- | --- | --- |
 | au-wa |WA |AU-WA |Western Australia |WA |
 | au-vic |Vic |AU-VIC |Victoria |VIC |
@@ -126,9 +126,9 @@ Använd följande **Regionsnycklar** i den här förhandsversionen för att prov
 | au-nsw |NSW |AU-NSW |New South Wales |NSW |
 | au-act |ACT |AU-ACT |Australian Capital Territory |ACT |
 
-### <a name="austria-states"></a>Österrike: Stater
+### <a name="austria-states"></a>Österrike: förbundsländer
 
-| ID | ISO | name | namn-en | postnummer |
+| ID | ISO | namn | namn-en | postnummer |
 | --- | --- | --- | --- | --- |
 | at-wi |AT-9 |Wien |Wien |WI |
 | at-vo |AT-8 |Vorarlberg |Vorarlberg |VO |
@@ -136,11 +136,11 @@ Använd följande **Regionsnycklar** i den här förhandsversionen för att prov
 | at-st |AT-6 |Steiermark |Steiermark |ST |
 | at-sz |AT-5 |Salzburg |Salzburg |SZ |
 | at-oo |AT-4 |Oberösterreich |Övre Österrike |OO |
-| at-no |AT-3 |Niederösterreich |Nedre Österrike |NO |
+| at-no |AT-3 |Niederösterreich |Nedre Österrike |NEJ |
 | at-ka |AT-2 |Kärnten |Kärnten |KA |
 | för |AT-1 |Burgenland |Burgenland |BU |
 
-### <a name="brazil-states"></a>Brasilien: Stater
+### <a name="brazil-states"></a>Brasilien: delstater
 
 | ID |
 | --- |
@@ -176,9 +176,9 @@ Använd följande **Regionsnycklar** i den här förhandsversionen för att prov
 | Litigated Zone 3 |
 | Litigated Zone 4 |
 
-### <a name="canada-provinces"></a>Kanada: Provinser
+### <a name="canada-provinces"></a>Kanada: provinser
 
-| ID | ISO | name | postnummer |
+| ID | ISO | namn | postnummer |
 | --- | --- | --- | --- |
 | ca-nu |CA-NU |Nunavut |NU |
 | ca-nt |CA-NT |Northwest Territories |NT |
@@ -194,9 +194,9 @@ Använd följande **Regionsnycklar** i den här förhandsversionen för att prov
 | ca-bc |CA-BC |British Columbia |BC |
 | ca-ab |CA-AB |Alberta |AB |
 
-### <a name="france-regions"></a>Frankrike: Regioner
+### <a name="france-regions"></a>Frankrike: regioner
 
-| ID | name | namn-en |
+| ID | namn | namn-en |
 | --- | --- | --- |
 | Auvergne-Rhone-Alpes |  |  |
 | Bourgogne-Franche-Comte |  |  |
@@ -216,9 +216,9 @@ Använd följande **Regionsnycklar** i den här förhandsversionen för att prov
 | Provence-Alpes-Cote d'Azur |Provence-Alpes-Côte d'Azur |Provence-Alpes-Cote d'Azur |
 |  |  |  |
 
-### <a name="germany-states"></a>Tyskland: Stater
+### <a name="germany-states"></a>Tyskland: delstater
 
-| ID | ISO | name | namn-en | postnummer |
+| ID | ISO | namn | namn-en | postnummer |
 | --- | --- | --- | --- | --- |
 | de-be |DE-BE |Berlin |Berlin |BE |
 | de-th |DE-TH |Thüringen |Thüringen |TH |
@@ -237,7 +237,7 @@ Använd följande **Regionsnycklar** i den här förhandsversionen för att prov
 | de-by |DE-BY |Bayern |Bayern |BY |
 | de-bw |DE-BW |Baden-Württemberg |Baden-Württemberg |BW |
 
-### <a name="ireland-counties"></a>Irland: Län
+### <a name="ireland-counties"></a>Irland: grevskap
 
 | ID |
 | --- |
@@ -268,9 +268,9 @@ Använd följande **Regionsnycklar** i den här förhandsversionen för att prov
 | Cavan |
 | Carlow |
 
-### <a name="italy-regions"></a>Italien: Regioner
+### <a name="italy-regions"></a>Italien: regioner
 
-| ID | ISO | name | namn-en | postnummer |
+| ID | ISO | namn | namn-en | postnummer |
 | --- | --- | --- | --- | --- |
 | it-vn |IT-34 |Veneto |Veneto |VN |
 | it-vd |IT-23 |Valle d'Aosta |Aosta-dalen |VD |
@@ -293,9 +293,9 @@ Använd följande **Regionsnycklar** i den här förhandsversionen för att prov
 | it-pu |IT-75 |Apulia |Apulien |PU |
 | it-ab |IT-65 |Abruzzo |Abruzzo |AB |
 
-### <a name="mexico-states"></a>Mexiko: Stater
+### <a name="mexico-states"></a>Mexiko: delstater
 
-| ID | förkortning | ISO | name | namn-en | postnummer |
+| ID | förkortning | ISO | namn | namn-en | postnummer |
 | --- | --- | --- | --- | --- | --- |
 | mx-zac |Zac. |MX-ZAC |Zacatecas |Zacatecas |ZA |
 | mx-yuc |Yuc. |MX-YUC |Yucatán |Yucatán |YU |
@@ -330,9 +330,9 @@ Använd följande **Regionsnycklar** i den här förhandsversionen för att prov
 | mx-bcn |B.C. |MX-BCN |Baja California |Baja California |BN |
 | mx-agu |Ags. |MX-AGU |Aguascalientes |Aguascalientes |AG |
 
-### <a name="netherlands-provinces"></a>Nederländerna: Provinser
+### <a name="netherlands-provinces"></a>Nederländerna: provinser
 
-| ID | ISO | name | namn-en |
+| ID | ISO | namn | namn-en |
 | --- | --- | --- | --- |
 | nl-zh |NL-ZH |Zuid-Holland |Zuid-Holland |
 | nl-ze |NL-ZE |Zeeland |Zeeland |
@@ -347,18 +347,18 @@ Använd följande **Regionsnycklar** i den här förhandsversionen för att prov
 | nl-fl |NL-FL |Flevoland |Flevoland |
 | nl-dr |NL-DR |Drenthe |Drenthe |
 
-### <a name="uk-countries"></a>Storbritannien: Länder
+### <a name="uk-countries"></a>Storbritannien: länder
 
-| ID | ISO | name |
+| ID | ISO | namn |
 | --- | --- | --- |
 | gb-wls |GB-WLS |Wales |
 | gb-sct |GB-SCT |Skottland |
 | gb-nir |GB-NIR |Nordirland |
 | gb-eng |GB-ENG |England |
 
-### <a name="usa-states"></a>USA: Stater
+### <a name="usa-states"></a>USA: delstater
 
-| ID | name | postnummer |
+| ID | namn | postnummer |
 | --- | --- | --- |
 | us-mi |Michigan |MI |
 | us-ak |Alaska |AK |
@@ -367,7 +367,7 @@ Använd följande **Regionsnycklar** i den här förhandsversionen för att prov
 | us-la |Louisiana |LA |
 | us-ar |Arkansas |AR |
 | us-sc |South Carolina |SC |
-| us-ga |Georgia |GA |
+| us-ga |Georgien |GA |
 | us-ms |Mississippi |MS |
 | us-al |Alabama |AL |
 | us-nm |New Mexico |NM |

@@ -9,10 +9,10 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/11/2020
 ms.openlocfilehash: 27d6ddd9b24e09805bd22150a22347e5cd93c8e0
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79492846"
 ---
 # <a name="capacity-and-skus-in-power-bi-embedded-analytics"></a>Kapacitet och SKU:er i inbäddad Power BI-analys
@@ -164,7 +164,7 @@ I tabellen nedan ser du information om betalning och användning per kapacitet.
 </tr>
 <tr>
 <td><p><strong>Bindningstid</strong></td>
-<td style="text-align: center;">Ingen</td>
+<td style="text-align: center;">None</td>
 <td style="text-align: center;">Varje år</td>
 <td style="text-align: center;">Per månad eller år</td>
 </tr>

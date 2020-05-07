@@ -10,10 +10,10 @@ ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
 ms.openlocfilehash: b4f4227a53a87cd831962bc5c944a569531b8232
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/02/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74699876"
 ---
 # <a name="powershell-cmdlets-rest-apis-and-net-sdk-for-power-bi-administration"></a>PowerShell-cmdletar, REST API:er och .NET SDK för Power BI-administration
@@ -25,7 +25,7 @@ Med Power BI kan administratörer skripta vanliga åtgärder med PowerShell-cmdl
 
 > Cmdlet:arna nedan ska anropas med `-Scope Organization` för att fungera med klientorganisationen för administration.
 
-| **Cmdlet-namn** | **Alias** | **SDK-metod** | **REST API-slutpunkt** | **Beskrivning** |
+| **Cmdlet-namn** | **Alias** | **SDK-metod** | **REST API-slutpunkt** | **Description** |
 | --- | --- | --- | --- | --- |
 | `Get-PowerBIDatasource` | Saknas | `Datasets_GetDataSourcesAsAdmin` | /v1.0/myorg/admin/datasets/{datasetkey}/datasources | Hämtar datakällor för den angivna datauppsättningen. |
 | `Get-PowerBIDataset` | Saknas | `Datasets_GetDatasetsAsAdmin` | /v1.0/myorg/admin/datasets | Hämtar en fullständig lista över datauppsättningar i en Power BI-klientorganisation. |

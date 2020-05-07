@@ -11,10 +11,10 @@ ms.topic: overview
 ms.custom: seodec18
 ms.date: 12/10/2018
 ms.openlocfilehash: f04621fdfe7e6055d84fa4d2672c874837ff5ea4
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79495284"
 ---
 # <a name="what-is-power-bi-embedded-in-azure"></a>Vad är Power BI Embedded i Azure?
@@ -48,7 +48,7 @@ Genom REST-API:et har Power BI Embedded stöd för utveckling med valfritt språ
 ## <a name="engage-with-the-power-bi-engineering-team"></a>Interagera med teknikteamet för Power BI
 
 * [Webbgrupper](https://community.powerbi.com/): Ställ frågor om Power BI
-* [Power BI-idéer](https://ideas.powerbi.com): Begära och rösta fram funktioner
+* [Power BI-idéer](https://ideas.powerbi.com): Önska och rösta fram funktioner
 * [Reddit](https://www.reddit.com/r/PowerBI/): Diskutera Power BI
 
 ## <a name="next-steps"></a>Nästa steg

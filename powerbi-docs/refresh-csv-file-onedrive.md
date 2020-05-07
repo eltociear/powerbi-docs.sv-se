@@ -11,10 +11,10 @@ ms.date: 09/12/2019
 ms.author: davidi
 LocalizationGroup: Data refresh
 ms.openlocfilehash: d18d3a5b5d85a121f67c5b3109a150a21ab72d1a
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74699715"
 ---
 # <a name="refresh-a-dataset-created-from-a-csv-file-on-onedrive-or-sharepoint-online"></a>Uppdatera en datauppsättning som skapats från en .CSV-fil i OneDrive eller SharePoint Online
@@ -29,9 +29,9 @@ Många organisationer kör processer som automatiskt frågar databaser efter dat
 Filer med kommaavgränsade värden är enkla textfiler, så anslutningar till externa datakällor och rapporter stöds inte. Du kan inte schemalägga en uppdatering av en datauppsättning som skapats från en kommaavgränsad fil. Men om filen finns i OneDrive eller SharePoint Online synkroniserar Power BI alla ändringar i filen med datauppsättningen automatiskt ungefär varje timme.
 
 ## <a name="onedrive-or-onedrive-for-business-whats-the-difference"></a>OneDrive eller OneDrive för företag. Vad är skillnaden?
-Om du både har en privat OneDrive och en OneDrive för företag, bör du ha alla filer som du vill ansluta till i Power BI i din OneDrive för företag. Skälet är följande: Du använder förmodligen två olika konton för att logga in till dem.
+Om du både har en privat OneDrive och en OneDrive för företag, bör du ha alla filer som du vill ansluta till i Power BI i din OneDrive för företag. Skälet är att du förmodligen använder två olika konton för att logga in till dem.
 
-Det är vanligtvis inga problem att ansluta till OneDrive för företag i Power BI eftersom det konto som du använder för att logga in på Power BI ofta är samma konto som används för att logga in på OneDrive för företag. Men din privata OneDrive loggar du troligen in på med ett annat [Microsoft-konto](https://account.microsoft.com).
+Det är vanligtvis inga problem att ansluta till OneDrive för företag i Power BI eftersom det konto som du använder för att logga in på Power BI ofta är samma konto som används för att logga in på OneDrive för företag. Men på din personliga OneDrive loggar du troligen in med ett annat [Microsoft-konto](https://account.microsoft.com).
 
 När du loggar in på ditt Microsoft-konto bör du markera Jag vill förbli inloggad. Power BI kan sedan synkronisera uppdateringarna med datauppsättningar i Power BI
 
@@ -46,5 +46,5 @@ Om data i .csv-filen på OneDrive ändras och dessa ändringar inte avspeglas i 
 [Verktyg vid felsökning av uppdateringsproblem](service-gateway-onprem-tshoot.md)
 [Felsökning av uppdateringsscenarier](refresh-troubleshooting-refresh-scenarios.md)
 
-Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+Fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 

@@ -10,10 +10,10 @@ ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
 ms.openlocfilehash: 32ca01d06f4fc8c3f90f73bf8137349eed0220a6
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/02/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74698841"
 ---
 # <a name="find-power-bi-users-that-have-signed-in"></a>Hitta Power BI-användare som har loggat in
@@ -29,7 +29,7 @@ Alla användare (inklusive icke-administratörer) kan visa en rapport med egna i
 
 * Din klientorganisation måste ha en associerad Azure Active Directory Premium-licens.
 
-* Du måste ha någon av följande roller: Global administratör, Säkerhetsadministratör eller Säkerhetsläsare.
+* Du måste vara i någon av följande roller: global administratör, säkerhetsadministratör eller säkerhetsläsare.
 
 ## <a name="use-the-azure-portal-to-view-sign-ins"></a>Använda Azure Portal för att visa inloggningar
 
@@ -67,4 +67,4 @@ Inloggningsdata kan hållas kvar i upp till 30 dagar. Mer information finns i [R
 
 [Använda granskning i din organisation](service-admin-auditing.md)
 
-Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+Fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

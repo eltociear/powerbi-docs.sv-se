@@ -9,10 +9,10 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 02/24/2020
 ms.openlocfilehash: 9df111e7545c43fe9b75784b1a95df4f37fd01e7
-ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/21/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80114139"
 ---
 # <a name="adding-external-libraries"></a>Lägga till externa bibliotek
@@ -49,7 +49,7 @@ Ett fullständigt exempel finns i koden för [visuella Power BI-objekt](https://
 ## <a name="css-framework"></a>CSS framework
 
 1. Installera ett externt CSS-bibliotek med valfri pakethanterare som *npm* eller *yarn*.
-2. Ta med instruktionen `import` i filen `.less` för det visuella objektet.
+2. Ta med instruktionen `.less` i filen `import` för det visuella objektet.
 
 ### <a name="installing-bootstrap"></a>Installerar bootstrap
 
