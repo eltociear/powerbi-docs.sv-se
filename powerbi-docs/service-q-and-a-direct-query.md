@@ -10,10 +10,10 @@ ms.date: 10/16/2018
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
 ms.openlocfilehash: cf1d67318fc86b1044e38e6f4f5f56c9473c39a1
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74265510"
 ---
 # <a name="enable-qa-for-live-connections-in-power-bi"></a>Aktivera Frågor och svar för live-anslutningar i Power BI
@@ -65,5 +65,5 @@ Funktionen har vissa begränsningar:
 - [Grundläggande begrepp för designers i Power BI-tjänsten](service-basic-concepts.md)  
 - [Översikt över Power BI frågor och svar](consumer/end-user-q-and-a.md)  
 
-Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+Fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 

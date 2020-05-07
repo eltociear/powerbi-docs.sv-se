@@ -10,10 +10,10 @@ ms.date: 10/23/2019
 ms.author: maggies
 LocalizationGroup: Reports
 ms.openlocfilehash: f1722690ff974a9d4fac6e94243e1024bfbfc12e
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79207078"
 ---
 # <a name="filters-and-highlighting-in-power-bi-reports"></a>Filter och markeringar i Power BI-rapporter
@@ -52,7 +52,7 @@ Du kan söka på sidor, visuella objekt och rapportfilter i läs- eller redigeri
 Om filtret har ordet **alla** bredvid det innebär det att alla värden i fältet ingår i filtret.  Som exempel kan vi av **Chain(All) (Kedja(alla))** på skärmbilden nedan avläsa att den här rapportsidan innehåller data om alla butikskedjorna.  Å andra sidan berättar filtret på rapportnivå för **Räkenskapsår 2013 eller 2014** att rapporten bara innehåller data för räkenskapsåren 2013 och 2014.
 
 ## <a name="filters-in-reading-or-editing-view"></a>Filter i läs- eller redigeringsvyn
-Det finns två lägen för att interagera med rapporter: [läsvyn](consumer/end-user-reading-view.md) och redigeringsvyn. Vilka filtreringsfunktioner som är tillgängliga beror på vilket läge du befinner dig i.
+Det finns två lägen för att interagera med rapporter: [Läsvy och Redigeringsvy](consumer/end-user-reading-view.md). Vilka filtreringsfunktioner som är tillgängliga beror på vilket läge du befinner dig i.
 
 * Du kan lägga till rapportfilter, sidfilter, filter för visning av detaljerad information och visuella filter i redigeringsvyn. När du sparar rapporten sparas filtren med rapporten, även om du har öppnat den i en mobilapp. De som tittar på rapporten i läsvyn kan interagera med de filter som du har lagt till, men inte lägga till nya filter.
 * I läsvyn kan du interagera med alla filter som redan finns i rapporten och spara dina val. Du kan inte lägga till nya filter.
@@ -99,5 +99,5 @@ Markera ett värde eller en axeletikett i ett visuellt objekt för att markera a
 
 [Ändra hur en rapports visuella objekt korsfiltrerar och korsmarkerar varandra](consumer/end-user-interactions.md)
 
-Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
+Fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
 
