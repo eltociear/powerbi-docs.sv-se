@@ -10,10 +10,10 @@ ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
 ms.openlocfilehash: 2f2c0b2c6ba4d991dd6293b435acc07659013f5b
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/02/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74698519"
 ---
 # <a name="configure-mobile-apps-with-microsoft-intune"></a>Konfigurera mobilappar med Microsoft Intune
@@ -95,7 +95,7 @@ Du kan skapa programmet eller principen först. Den ordning som de läggs till s
 
 1. Välj **Överför**.
 
-1. Om du inte ser appen i listan bör du uppdatera sidan: Gå till **Översikt** och därefter tillbaka till **Appar**.
+1. Om du inte ser appen i listan bör du förnya sidan: Gå till **Översikt** sedan tillbaka till **Appar**.
 
     ![Fliken appar](media/service-admin-mobile-intune/intune-add-software-ios2.png)
 
@@ -111,7 +111,7 @@ Du kan skapa programmet eller principen först. Den ordning som de läggs till s
 
 1. Välj **Överför**.
 
-1. Om du inte ser appen i listan bör du uppdatera sidan: Gå till **Översikt** och därefter tillbaka till **Appar**.
+1. Om du inte ser appen i listan bör du förnya sidan: Gå till **Översikt** sedan tillbaka till **Appar**.
 
     ![Fliken appar](media/service-admin-mobile-intune/intune-add-software-android2.png)
 
@@ -172,7 +172,7 @@ Du installerar programmet via *företagsportalappen*. Om du inte har installerat
 
     ![Power BI-app](media/service-admin-mobile-intune/intune-companyportal2.png)
 
-1. Välj **installera**.
+1. Välj **Installera**.
 
     ![Installera app](media/service-admin-mobile-intune/intune-companyportal3.png)
 
@@ -190,4 +190,4 @@ Du installerar programmet via *företagsportalappen*. Om du inte har installerat
 
 [Power BI-appar för mobila enheter](consumer/mobile/mobile-apps-for-mobile-devices.md)  
 
-Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)  
+Fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)  

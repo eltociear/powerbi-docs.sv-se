@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: c3b1b7288d0d277fc866ea47887335d10279c6cc
-ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73800163"
 ---
 Med DAX får du tillgång till många funktioner för att forma, ställa upp eller i övrigt analysera dina data. Dessa funktioner kan grupperas i en handfull kategorier:
@@ -52,7 +52,7 @@ Dessa funktioner räkna olika delar som distinkta värden, icke-tomma värden oc
 ## <a name="logical-functions"></a>Logiska funktioner
 Samlingen av **logiska** funktioner i DAX inkluderar:
 
-* AND
+* OCH
 * OR
 * NOT
 * IF

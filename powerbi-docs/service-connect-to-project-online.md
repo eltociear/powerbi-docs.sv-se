@@ -10,10 +10,10 @@ ms.date: 07/25/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
 ms.openlocfilehash: 32d731c354d848809d336392ef51f667b14427d8
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74565686"
 ---
 # <a name="connect-to-project-web-app-with-power-bi"></a>Anslut till Project Web App med Power BI
@@ -27,7 +27,7 @@ Anslut till [Project Web App-mallappen](https://appsource.microsoft.com/product/
 
     ![Hämta appar](media/service-connect-to-project-online/GetApps.png)
 
-2. I rutan **Tjänster** väljer du **Hämta**.
+2. I rutan **tjänster** väljer du **Hämta**.
    
    ![AppSource](media/service-connect-to-project-online/AppSource.png)
 3. I AppSource väljer du fliken **Appar** och söker efter och väljer **Microsoft Project Web App**.
@@ -40,7 +40,7 @@ Anslut till [Project Web App-mallappen](https://appsource.microsoft.com/product/
    ![Microsoft Project Web App](media/service-connect-to-project-online/getstarted.png)
 6. I **Kom igång med din nya app** väljer du **Anslut data**.
    
-   ![Ansluta till data](media/service-connect-to-project-online/mproject.png)
+   ![Anslut till data](media/service-connect-to-project-online/mproject.png)
 7. I textrutan **Project Web App-URL** anger du URL:en för den PWA (Project Web App) som du vill ansluta till.  Observera att det här kan skilja sig från exemplet om du har en anpassad domän. I textrutan **PWA Site Language** (PWA-webbplatsspråk) anger du rätt siffra för ditt PWA-webbplatsspråk. Ange ”1” för engelska, ”2” för franska, ”3” för tyska, ”4” för portugisiska (Brasilien), ”5” för portugisiska (Portugal) och ”6” för spanska. 
    
    ![Anslut till Microsoft Project Online](media/service-connect-to-project-online/params.png)
@@ -57,7 +57,7 @@ Anslut till [Project Web App-mallappen](https://appsource.microsoft.com/product/
 
     ![Instrumentpanel för portfölj](media/service-connect-to-project-online/report1.png)
    
-    ![Tillgängligt](media/service-connect-to-project-online/report3.png)
+    ![Tillgänglighet](media/service-connect-to-project-online/report3.png)
    
     ![Projektstatus](media/service-connect-to-project-online/report2.png)
 

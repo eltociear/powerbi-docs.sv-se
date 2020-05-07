@@ -10,17 +10,17 @@ ms.date: 11/11/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: cd952dfa690d079d662f09e1e01c34dadf129b7b
-ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/27/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74565649"
 ---
 # <a name="connect-to-linkedin-sales-navigator-in-power-bi-desktop"></a>Ansluta till LinkedIn Sales Navigator i Power BI Desktop
 
 I **Power BI Desktop** kan du ansluta till **LinkedIn Sales Navigator** för att hitta och skapa relationer, på samma sätt som i andra datakällor i Power BI Desktop samt skapa färdiga rapporter för dina resultat.
 
-![Användningsflik för LinkedIn Sales Navigator](media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-01.png)
+![Fliken Användning för LinkedIn Sales Navigator](media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-01.png)
 
 
 Om du vill ansluta till LinkedIn-data med **LinkedIn Sales Navigator**, måste du ha ett LinkedIn Sales Navigator Enterprise-abonnemang och antingen vara administratörsanvändare eller rapporterande användare i Sales Navigator-kontraktet.
@@ -80,7 +80,7 @@ Du kan hämta mallappen för **LinkedIn Sales Navigator** från följande länk:
 I mallappen finns fyra flikar som hjälper dig att analysera och dela din information:
 
 * Användning
-* Sök
+* Sökning
 * InMail
 * SSI
 

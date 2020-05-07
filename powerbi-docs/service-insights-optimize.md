@@ -10,13 +10,13 @@ ms.date: 03/02/2017
 ms.author: maggies
 LocalizationGroup: Dashboards
 ms.openlocfilehash: 1ed588b0ca183e090d12f9aa0df23460a6037ed4
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73872222"
 ---
-# <a name="optimize-your-data-for-power-bi-quick-insights"></a>Optimera dina data för Power BI Quick Insights
+# <a name="optimize-your-data-for-power-bi-quick-insights"></a>Optimera dina data för snabba insikter i Power BI
 Vill du förbättra dina resultat för Quick Insights?  Om du är datauppsättningens ägare kan du försöka med dessa:
 
 * Dölja eller visa kolumner i datauppsättningen. Power BI Quick Insights söker inte dolda kolumner.  Dölj dubbletter eller onödiga kolumner och visa kolumner av intresse.
@@ -27,5 +27,5 @@ Vill du förbättra dina resultat för Quick Insights?  Om du är datauppsättni
 ### <a name="next-steps"></a>Nästa steg
 [Power BI quick insights](consumer/end-user-insights.md)
 
-Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
+Fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
 

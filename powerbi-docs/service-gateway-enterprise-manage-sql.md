@@ -10,10 +10,10 @@ ms.date: 07/15/2019
 ms.author: arthii
 LocalizationGroup: Gateways
 ms.openlocfilehash: c0dc3b9eeb7932ca0cb6784fd6a46857821d1b12
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/02/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74698128"
 ---
 # <a name="manage-your-data-source---sql-server"></a>Hantera din datakälla – SQL Server
@@ -80,5 +80,5 @@ Om du finns med på fliken **Användare** för den datakälla som konfigurerats 
 * [Felsöka gatewayer – Power BI](service-gateway-onprem-tshoot.md)
 * [Använda Kerberos för enkel inloggning (SSO) från Power BI till lokala datakällor](service-gateway-sso-kerberos.md)
 
-Har du fler frågor? Fråga [Power BI Community](https://community.powerbi.com/).
+Fler frågor? Fråga [Power BI Community](https://community.powerbi.com/).
 

@@ -1,5 +1,5 @@
 ---
-title: Använda en extern Python IDE med Power BI
+title: Använd en extern Python IDE med Power BI
 description: Du kan starta och använda en extern IDE med Power BI
 author: otarb
 ms.reviewer: ''
@@ -10,13 +10,13 @@ ms.date: 06/18/2018
 ms.author: otarb
 LocalizationGroup: Connect to data
 ms.openlocfilehash: dbdd4076c9944cf0335ed1f6b6aa43a2a3887189
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73865973"
 ---
-# <a name="use-an-external-python-ide-with-power-bi"></a>Använda en extern Python IDE med Power BI
+# <a name="use-an-external-python-ide-with-power-bi"></a>Använd en extern Python IDE med Power BI
 Med **Power BI Desktop** kan du använda din externa Python IDE (Integrated Development Environment) för att skapa och förfina Python-skript och sedan använda dessa skript i Power BI.
 
 ![](media/desktop-python-ide/python-ide-1.png)

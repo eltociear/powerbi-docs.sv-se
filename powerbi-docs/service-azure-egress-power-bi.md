@@ -1,5 +1,5 @@
 ---
-title: Power BI och utgående Azure-data
+title: Utgående Power BI- och Azure-data
 description: Förstå avgifter för utgående Azure-utgående och Power BI baserat på klientorganisationens plats och Power BI Premium
 author: davidiseminger
 ms.reviewer: ''
@@ -10,13 +10,13 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Data from databases
 ms.openlocfilehash: 17175e1accb5013b960c5e1a71ae036b3dda72f3
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73855569"
 ---
-# <a name="power-bi-and-azure-egress"></a>Power BI och utgående Azure-data
+# <a name="power-bi-and-azure-egress"></a>Utgående Power BI- och Azure-data
 
 När du använder Power BI med Azure-datakällor kan du undvika avgifter för utgående Azure-data genom att se till att din Power BI-klientorganisation är i samma region som dina Azure-datakällor.
 

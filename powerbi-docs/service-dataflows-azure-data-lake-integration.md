@@ -10,10 +10,10 @@ ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: 5b13fdc1f65fe2650ea0fb4fee1be20611ac3e8b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73877304"
 ---
 # <a name="dataflows-and-azure-data-lake-integration-preview"></a>Dataflöden och Azure Data Lake-integrering (förhandsversion)
@@ -91,7 +91,7 @@ Mer information om Azure Storage finns i de här artiklarna:
 * [Säkerhetsguiden för Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-security-guide)
 * [Kom igång med github-exempel från Azure Data Services](https://aka.ms/cdmadstutorial)
 
-Mer information om Common Data Service finns i dess översiktsartikel:
+För mer information om den gemensamma datamodellen kan du läsa dess översiktsartikel:
 * [Common Data Service – översikt ](https://docs.microsoft.com/powerapps/common-data-model/overview)
 * [CDM-mappar](https://go.microsoft.com/fwlink/?linkid=2045304)
 * [CDM-modellfildefinition](https://go.microsoft.com/fwlink/?linkid=2045521)

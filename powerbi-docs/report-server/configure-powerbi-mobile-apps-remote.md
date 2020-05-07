@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 11/07/2019
 ms.author: painbar
 ms.openlocfilehash: b84d7a23cf947b18302c761ff5f78143bf3356aa
-ms.sourcegitcommit: 50c4bebd3432ef9c09eacb1ac30f028ee4e66d61
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/12/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73925894"
 ---
 # <a name="configure-power-bi-mobile-app-access-to-report-server-remotely"></a>Fjärrkonfiguration av Power BI-mobilappens åtkomst till en rapportserver
@@ -43,7 +43,7 @@ I följande tabell anges paren.
 | com.microsoft.powerbi.mobile.ServerURL | Sträng | URL till rapportserver <br> Bör börja med http eller https |
 | com.microsoft.powerbi.mobile.ServerUsername | Sträng | [valfritt] <br> Användarnamnet som ska användas för att ansluta servern. <br> Om det inte finns, uppmanas användaren att ange användarnamn för anslutningen i appen.| 
 | com.microsoft.powerbi.mobile.ServerDisplayName | Sträng | [valfritt] <br> Standardvärdet är ”Rapportserver” <br> Ett eget namn som används i appen för att representera servern | 
-| com.microsoft.powerbi.mobile.OverrideServerDetails | Boolesk | Standardvärdet är True <br>När värdet är ”True” åsidosätts eventuella rapportserverdefinitioner som redan finns i den mobila enheten. Befintliga servrar som redan är konfigurerade tas bort. <br> Genom att sätta Åsidosätt till True förhindras också att användaren tar bort konfigurationen. <br> Sätt värdet till ”False” för att lägga till de push-överförda värdera, vilket bevarar de befintliga inställningarna. <br> Om samma server-URL redan har konfigurerats i mobilappen, lämnas den konfigurationen i befintligt skick. Användaren uppmanas inte att logga in på nytt för samma server. |
+| com.microsoft.powerbi.mobile.OverrideServerDetails | Boolean (Boolesk) | Standardvärdet är True <br>När värdet är ”True” åsidosätts eventuella rapportserverdefinitioner som redan finns i den mobila enheten. Befintliga servrar som redan är konfigurerade tas bort. <br> Genom att sätta Åsidosätt till True förhindras också att användaren tar bort konfigurationen. <br> Sätt värdet till ”False” för att lägga till de push-överförda värdera, vilket bevarar de befintliga inställningarna. <br> Om samma server-URL redan har konfigurerats i mobilappen, lämnas den konfigurationen i befintligt skick. Användaren uppmanas inte att logga in på nytt för samma server. |
 
 Här är ett exempel på hur man ställer in konfigurationsprincipen i Intune.
 
@@ -63,7 +63,7 @@ Här är ett exempel på hur man ställer in konfigurationsprincipen i Intune.
 
 3. De skriver ett lösenord för att autentisera och tryck sedan på **Logga in**. 
 
-    ![Ifylld information om rapportservern](media/configure-powerbi-mobile-apps-remote/power-bi-config-server-address.png)
+    ![Informationen om rapportservern är ifylld](media/configure-powerbi-mobile-apps-remote/power-bi-config-server-address.png)
 
 Nu kan de visa och interagera med KPI:er och Power BI-rapporter som lagrats på rapportservern.
 
@@ -73,5 +73,5 @@ Nu kan de visa och interagera med KPI:er och Power BI-rapporter som lagrats på 
 - [Administratörsöversikt](admin-handbook-overview.md)  
 - [Installera Power BI-rapportserver](install-report-server.md)  
 
-Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+Fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 

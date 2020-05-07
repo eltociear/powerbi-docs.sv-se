@@ -1,5 +1,5 @@
 ---
-title: 'Självstudie: Ansluta till lokala data i SQL Server'
+title: 'Självstudier: Ansluta till lokala data i SQL Server'
 description: Lär dig hur du använder SQL Server som en gatewaydatakälla, inklusive hur du uppdaterar data.
 author: arthiriyer
 ms.reviewer: kayu
@@ -10,10 +10,10 @@ ms.date: 07/15/2019
 ms.author: arthii
 LocalizationGroup: Gateways
 ms.openlocfilehash: 100417202fca148be0e2e976ce0cd84167c803d9
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74958456"
 ---
 # <a name="refresh-data-from-an-on-premises-sql-server-database"></a>Uppdatera data från en lokal SQL Server-databas
@@ -95,7 +95,7 @@ Gör enligt nedan för att skapa en grundläggande Power BI-rapport med Adventur
 
 I Power BI Desktop anslöt du direkt till din lokala SQL Server-databas, men Power BI-tjänsten behöver en gateway för att fungera som en brygga mellan molnet och ditt lokala nätverk. Följ dessa steg för att lägga till en lokal SQL Server-databas som en datakälla till en gateway och sedan ansluta din datauppsättning till den här datakällan.
 
-1. Logga in i Power BI. Välj kugghjulsikonen i det övre högra hörnet och välj sedan **Inställningar**.
+1. Logga in på Power BI. Välj kugghjulsikonen i det övre högra hörnet och välj sedan **Inställningar**.
 
     ![Power BI-inställningar](./media/service-gateway-sql-tutorial/power-bi-settings.png)
 
@@ -114,7 +114,7 @@ I Power BI Desktop anslöt du direkt till din lokala SQL Server-databas, men Pow
 
 5. På administratörssidan för **Gateway**, på fliken **Inställningar för datakälla**, anger och bekräftar du följande information. Välj sedan **Lägg till**.
 
-    | Alternativ | Värde |
+    | Alternativ | Value |
     | --- | --- |
     | Namn på datakälla | AdventureWorksProducts |
     | Typ av datakälla | SQL Server |

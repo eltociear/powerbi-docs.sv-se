@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 04/17/2020
 LocalizationGroup: Premium
 ms.openlocfilehash: 9dbbf38b69d71811de4dd599951529234068b178
-ms.sourcegitcommit: d43761104f7daf4b2f297648855bb573b53e6d8c
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "81637929"
 ---
 # <a name="configure-and-manage-capacities-in-power-bi-premium"></a>Konfigurera och hantera kapaciteter i Power BI Premium
@@ -126,14 +126,14 @@ Kapacitetsadministratörer, tillsammans med Power BI-administratörer och global
 
     ![Tilldela arbetsytor](media/service-admin-premium-manage/assign-workspaces.png)
 
-   | Urval | Beskrivning |
+   | Val | Beskrivning |
    | --- | --- |
    | **Arbetsytor av användare** | När du tilldelar arbetsytor per användare eller grupp, tilldelas alla arbetsytor som ägs av dessa användare till Premium-kapacitet, inklusive användares personliga arbetsytor. Dessa användare får automatiskt behörighet för tilldelning av arbetsyta.<br>Detta inkluderar arbetsytor som redan har tilldelats till en annan kapacitet. |
    | **Särskilda arbetsytor** | Ange namnet på en viss arbetsyta om du vill tilldela till den valda kapaciteten. |
    | **The entire organization's workspaces (Hela organisationens arbetsytor)** | Om du tilldelar hela organisationens arbetsytor till en Premium-kapacitet tilldelas alla arbetsytor och Mina arbetsytor i din organisation till den här Premium-kapaciteten. Dessutom kommer alla nuvarande och framtida användare ha behörigheten att omtilldela individuella arbetsytorna till den här kapaciteten. |
    | | |
 
-1. Välj **Tillämpa**.
+1. Välj **Använd**.
 
 ### <a name="assign-from-workspace-settings"></a>Tilldela från arbetsyteinställningarna
 
@@ -169,4 +169,4 @@ Mer information finns i [Installera Power BI-rapportservern](report-server/insta
 
 [Hantera Premium-kapaciteter](service-premium-capacity-manage.md)
 
-Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+Fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
