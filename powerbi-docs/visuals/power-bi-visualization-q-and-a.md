@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 11/19/2019
 ms.author: mohaali
 ms.openlocfilehash: a17f98859e637621fbae037610359c8f29391a98
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75762288"
 ---
 # <a name="introduction-to-power-bi-qa-visualizations"></a>Introduktion Visuella frågor och svar i Power BI
@@ -61,7 +61,7 @@ I den här övningen väljer vi en av de föreslagna frågorna för att skapa et
 
     ![Visuella frågor och svar på rapportarbetsytan](media/power-bi-visualization-q-and-a/power-bi-qna.png)
 
-3. Skapa det visuella objektet genom att välja en av de föreslagna frågorna eller börja skriva i frågerutan. I det här exemplet har vi valt **top geo states by sum of revenue**. Power BI väljer vilken typ av visualisering som ska användas efter bästa förmåga. I det här fallet är det en karta.
+3. Skapa det visuella objektet genom att välja en av de föreslagna frågorna eller börja skriva i frågerutan. I det här exemplet har vi valt **top geo states by sum of revenue**. Power BI väljer vilken typ av visualisering som ska användas. I det här fallet är det en karta.
 
     ![Karta för Visuella frågor och svar](media/power-bi-visualization-q-and-a/power-bi-map.png)
 
@@ -87,7 +87,7 @@ Om du är osäker på vilken typ av frågor du ska ställa eller vilken terminol
 
 5. Med hjälp av Power BI kunde vi ställa en fråga där alla termer känns igen. Power BI visar resultatet som ett linjediagram. 
 
-    ![Resultat från Visuella frågor och svar](media/power-bi-visualization-q-and-a/power-bi-type.png)
+    ![Visuella resultat från Frågor och svar](media/power-bi-visualization-q-and-a/power-bi-type.png)
 
 
 6. Nu ska vi ändra det visuella objektet till ett kolumndiagram. 

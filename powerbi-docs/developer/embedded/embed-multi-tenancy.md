@@ -9,15 +9,15 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 01/11/2019
 ms.openlocfilehash: 435f643ba155bc9d6c67d1131d946769e3d61730
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79494962"
 ---
 # <a name="manage-multi-tenancy-with-power-bi-embedded-analytics"></a>Hantera flera innehavare med Power BI Embedded-analys
 
-När du utformar ett SaaS-program med flera innehavare måste du noggrant välja den innehavarmodell som passar ditt SaaS-program bäst. Den här processen gäller även för Power BI som en del av inbäddad analys i ditt SaaS-program. En klientorganisationsmodell avgör hur varje klientorganisations data mappas och hanteras i Power BI och i lagringskontot. Din klientorganisationsmodell påverkar programdesign och hantering. Att växla till en annan modell senare kan bli kostsamt och störande.
+När du utformar ett SaaS-program med flera innehavare måste du noggrant välja den innehavarmodell som passar ditt SaaS-program bäst. Den här processen gäller även för Power BI som en del av inbäddad analys i ditt SaaS-program. En klientorganisationsmodell avgör hur varje klientorganisations data mappas och hanteras i Power BI och i lagringskontot. Din innehavarmodell påverkar programdesign och hantering. Att växla till en annan modell senare kan bli kostsamt och störande.
 
 I Power BI Embedded finns det två viktiga grundläggande sätt att upprätthålla uppdelningen mellan klienter.
 
@@ -102,7 +102,7 @@ Genom att identifiera dessa processer och se hur du hanterar dem kan du få en b
 
 Power BI Embedded stöder Multi-Geo-distribution (förhandsgranskningsfunktion). Tack vare [Multi-Geo](embedded-multi-geo.md) kan Power BI Embedded-resurser distribueras i olika regioner med specifikt innehåll som ska finns i specifika regioner. Den här funktionen kan användas för alla modeller, men kan påverka innehållsmängd och kostnad. För närvarande har Multi-Geo utformats för att uppfylla dataplaceringskrav och förbättrar inte prestanda genom att flytta data närmare konsumenterna.
 
-### <a name="cost"></a>Kostnad
+### <a name="cost"></a>Cost
 
 [Power BI Embedded](azure-pbie-what-is-power-bi-embedded.md) har en resursbaserad inköpsmodell i likhet med **Power BI Premium**. Du köper en eller flera kapaciteter med fast datorkraft och minne. Den här kapaciteten är det viktigaste kostnadsobjektet när du arbetar med **Power BI Embedded**. Det finns ingen gräns för hur många användare som kan utnyttja kapaciteten. Den ena begränsningen är kapacitetens prestanda. En [Power BI Pro-licens](../../service-admin-licensing-organization.md) krävs för varje *huvudanvändare*, eller specifika användare som behöver ha åtkomst till Power BI-portalen.
 
@@ -161,7 +161,7 @@ Att skapa en arbetsyta för en ny klient är t.ex. en gemensam uppgift som behö
 
 Multi-Geo inbegriper inköp av kapacitet i den önskade regionen och tilldelning av en arbetsyta till den kapaciteten. Om du behöver stödja olika klienter i olika regioner måste du tilldela klientens arbetsyta till en kapacitet i den önskade regionen. Det här är en enkel åtgärd och en där kostnaden inte överskrider kostnaden för att ha alla arbetsytor i samma kapacitet. Om du däremot har klienter som behöver data i flera regioner, så måste alla artefakter på arbetsytan dupliceras i varje regional kapacitet, vilket ökar både kostnaden och hanteringens komplexitet.
 
-### <a name="cost"></a>Kostnad
+### <a name="cost"></a>Cost
 
 Programutvecklare som använder Power BI Embedded måste [köpa Power BI Embedded-kapacitet för att gå vidare till produktion](embed-sample-for-customers.md#move-to-production).  Det är viktigt att man förstår effekten av arbetsytebaserade modeller och deras inverkan på kapaciteter.
 
@@ -209,7 +209,7 @@ En annan komplexitet i driften är behovet av att noga övervaka minnesanvändni
 
 Eftersom alla data lagras i en enda datauppsättning är det svårt att uppfylla datahemvistkraven på att vissa data ska bindas till specifika platser. Det kan också avsevärt öka kostnaden för att använda flera regioner eftersom alla data replikeras och lagras i varje region. Om endast ett begränsat antal klienter behöver olika geografiska områden kan du behålla enbart dessa klienters data i en annan region med hjälp av modellen för arbetsytebaserad isolering som beskrivs ovan.
 
-### <a name="cost"></a>Kostnad
+### <a name="cost"></a>Cost
 
 Den huvudsakliga kostnadsdrivande faktorn när det gäller säkerhetsbaserad isolering på radnivå är det minnesavtryck för minnesanvändning som krävs för datauppsättningen. Du måste ha tillräcklig kapacitet för att lagra datauppsättningen och behålla viss ytterligare minnesbuffert för eventuella minneskravstoppar. Ett sätt att åtgärda den här situationen är att lagra data i en SQL Server-databas eller SQL Server Analysis Services-kub och hämta data från datakällan i realtid genom att använda Direct Query eller en Live-anslutning. Den här metoden ökar kostnaden för datakällorna, men minskar behovet av hög kapacitet beroende på minnesbehovet, vilket därmed minskar kostnaden för Power BI-kapaciteten.
 
@@ -229,7 +229,7 @@ När slutanvändare redigerar eller skapar rapporter kan de använda produktions
 | Skalbarhet  | Medium. Att dela upp data i flera datauppsättningar möjliggör optimering.  | Lägsta. Begränsad av datauppsättningsgränser.  |  |  |
 | Multi-Geo-behov  | Passar bra om merparten av klienterna finns i samma region.  | Rekommenderas ej. Hela datauppsättningen måste lagras i flera regioner.  |  |  |
 | Automatisering och driftkomplexitet  | Bra automatisering för den enskilda klienten.   Komplicerat att hantera många artefakter i stor skala.  | Lätt att hantera Power BI-artefakter, men komplicerat att hantera RLS i stor skala.  |  |  |
-| Kostnad  | Låg-medel. Det går att minska kostnaden-per-klient genom att optimera användningen.  Kan öka när frekventa uppdateringar behövs.  | Mellanhög om du använder importläge.  Låg-medel om du använder Direct Query-läget.  |  |  |
+| Cost  | Låg-medel. Det går att minska kostnaden-per-klient genom att optimera användningen.  Kan öka när frekventa uppdateringar behövs.  | Mellanhög om du använder importläge.  Låg-medel om du använder Direct Query-läget.  |  |  |
 | Anpassa och skapa innehåll  | Passar bra. Kan nå begränsningar i stor skala.  | Innehållsskapande endast i inbäddad iFrame  |  |  |
 
 ## <a name="deployment-considerations-and-limitations"></a>Överväganden och begränsningar när det gäller distribution

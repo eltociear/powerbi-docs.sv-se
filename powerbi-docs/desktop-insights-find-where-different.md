@@ -11,10 +11,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: 33fc0faf92d1730c1d08f91eabc276cdafadfffb
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/09/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75761121"
 ---
 # <a name="apply-insights-in-power-bi-desktop-to-discover-where-distributions-vary-preview"></a>Använda insikter i Power BI Desktop till att upptäcka var fördelningar varierar (förhandsversion)
@@ -98,7 +98,7 @@ De visuella objekten som visas är alltså avsedda att tydliggöra skillnaderna 
 
 För additiva mått, som *försäljningen* i föregående exempel, används ett stapel- och linjediagram, med en dubbel axel i lämplig skala som gör det enkelt att jämföra de relativa värdena. Staplarna visar värdet då filtret tillämpas, och linjen visar det övergripande värdet (med kolumnaxeln till vänster och radaxeln till höger som vanligt). Raden visas med ett *stegvist* format, med en streckad linje som är fylld med grått. För det föregående exemplet gäller att om kolumnaxelns högsta värde är 4, och radaxelns högsta värde är 20, så skulle det vara enkelt att jämföra de relativa värdena mellan USA och Kanada för filtrerade och övergripande värden. 
 
-För icke-additiva mått, som *marginalerna* i föregående exempel, används också ett stapel- och linjediagram, där en enda axel gör det enkelt att jämföra de absoluta värdena. Även här visar linjen (i grått) det övergripande värdet. När faktiska eller relativa tal jämförs beräknas storleksskillnaden mellan två fördelningar inte bara som skillnaden i värdena. Till exempel:
+För icke-additiva mått, som *marginalerna* i föregående exempel, används också ett stapel- och linjediagram, där en enda axel gör det enkelt att jämföra de absoluta värdena. Även här visar linjen (i grått) det övergripande värdet. När faktiska eller relativa tal jämförs beräknas storleksskillnaden mellan två fördelningar inte bara som skillnaden i värdena. Exempel:
 
 * Storleken på populationen tas med i beaktande eftersom en skillnad är mindre viktig statistiskt sett om den gäller för en mindre del av hela populationen. Exempelvis kanske skillnaden i försäljningsfördelningen mellan länder är mycket stor för en viss produkt. Detta skulle dock inte vara intressant om det fanns flera tusen produkter, och den specifika produkten endast utgjorde en liten procentandel av den övergripande försäljningen.
 

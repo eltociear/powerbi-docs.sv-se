@@ -1,6 +1,6 @@
 ---
 title: Rapportparametrar i Power BI Report Builder
-description: I det här ämnet beskrivs vanliga användningsområden för rapportparametrar i Power BI Report Builder, vilka egenskaper du kan ange och mycket mer.
+description: I det här avsnittet beskrivs vanliga användningsområden för rapportparametrar i Power BI Report Builder, vilka egenskaper du kan ange och mycket mer.
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
@@ -10,17 +10,17 @@ ms.reviewer: ''
 ms.custom: ''
 ms.date: 06/06/2019
 ms.openlocfilehash: 823f2ea621d16eb911284cadeced2fb676fa5c75
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/07/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "78923067"
 ---
 # <a name="report-parameters-in-power-bi-report-builder"></a>Rapportparametrar i Power BI Report Builder
 
-I det här ämnet beskrivs vanliga användningsområden för rapportparametrar i Power BI Report Builder, vilka egenskaper du kan ange och mycket mer. Med rapportparametrar kan du kontrollera rapportdata, koppla ihop relaterade rapporter och variera rapportpresentationen. Du kan använda rapportparametrar i sidnumrerade rapporter som du skapar i Report Builder.
+I det här avsnittet beskrivs vanliga användningsområden för rapportparametrar i Power BI Report Builder, vilka egenskaper du kan ange och mycket mer. Med rapportparametrar kan du kontrollera rapportdata, koppla ihop relaterade rapporter och variera rapportpresentationen. Du kan använda rapportparametrar i sidnumrerade rapporter som du skapar i Report Builder.
 
-## <a name="bkmk_Common_Uses_for_Parameters"></a> Vanliga användningsområden för parametrar
+## <a name="common-uses-for-parameters"></a><a name="bkmk_Common_Uses_for_Parameters"></a> Vanliga användningsområden för parametrar
 
  Här följer några av de vanligaste sätten att använda parametrar.  
   
@@ -36,7 +36,7 @@ I det här ämnet beskrivs vanliga användningsområden för rapportparametrar i
   
 - Ge användarna möjligheten att anpassa rapportdata och utseende genom att inkludera parametrar i ett uttryck.  
   
-## <a name="UserInterface"></a> Visa en rapport med parametrar
+## <a name="viewing-a-report-with-parameters"></a><a name="UserInterface"></a> Visa en rapport med parametrar
 
 När du visar en rapport som har parametrar, visar rapportgranskarens verktygsfält varje parameter så att du kan ange värden interaktivt. Följande bild visar parameterområdet för en rapport med parametrarna @ReportMonth, @ReportYear, @EmployeeID, @ShowAll, @ExpandTableRows, @CategoryQuota och @SalesDate.  
 
@@ -54,7 +54,7 @@ När du visar en rapport som har parametrar, visar rapportgranskarens verktygsf�
   
 6. **Visa rapporten** När du angett parametervärden klickar du på **Visa rapport** för att köra rapporten. Om alla parametrar har standardvärden körs rapporten automatiskt vid den första visningen.  
   
-## <a name="bkmk_Create_Parameters"></a> Skapa parametrar
+## <a name="creating-parameters"></a><a name="bkmk_Create_Parameters"></a> Skapa parametrar
 
 Du kan skapa rapportparametrar på ett par olika sätt.
   
@@ -97,14 +97,14 @@ Skapa en parameter manuellt från fönstret Rapportdata. Du kan konfigurera rapp
   
 - Kör rapporten utan att först behöva välja ett parametervärde eftersom ett standardvärde har skapats för parametern.  
   
-## <a name="bkmk_Report_Parameters"></a> Egenskaper för rapportparametrar
+## <a name="report-parameter-properties"></a><a name="bkmk_Report_Parameters"></a> Egenskaper för rapportparametrar
 
  Du kan ändra egenskaperna för rapportparameter med hjälp av dialogrutan Rapportegenskaper. I följande tabell sammanfattas de egenskaper som du kan ange för varje parameter:  
   
 |Egenskap|Beskrivning|  
 |--------------|-----------------|  
 |Namn|Skriv ett skiftlägeskänsligt namn för parametern. Namnet måste börja med en bokstav och kan innehålla bokstäver, siffror och understreck (_). Namnet får inte innehålla blanksteg. För automatiskt genererade parametrar matchar namnet parametern i datamängdsfrågan. Som standard liknar manuellt skapade parametrar ReportParameter1.|  
-|Promptfråga|Den text som visas intill parametern i rapportgranskarens verktygsfält.|  
+|Fråga|Den text som visas intill parametern i rapportgranskarens verktygsfält.|  
 |Datatyp|En rapportparameter måste vara någon av följande datatyper:<br /><br /> **Boolean** (Boolesk). Användaren väljer True (Sant) eller False (Falskt) från en alternativknapp.<br /><br /> **DateTime**. Användaren väljer ett datum från en kalenderkontroll.<br /><br /> **Integer** (Heltal). Användaren skriver värden i en textruta.<br /><br /> **Float** (Flyttal). Användaren skriver värden i en textruta.<br /><br /> **Text**. Användaren skriver värden i en textruta.<br /><br /> När tillgängliga värden har definierats för en parameter väljer användaren värden från en listrutan, även när datatypen är **DateTime**.|  
 |Tillåta tomt värde|Välj det här alternativet om värdet för parametern kan vara en tom sträng eller ett tomt värde.<br /><br /> Om du anger giltiga värden för en parameter och du vill att ett tomt värde ska vara ett av de giltiga värdena måste du inkludera det som ett av de värden som du anger. Om du väljer det här alternativet inkluderas inte ett tomt värde automatiskt för tillgängliga värden.|  
 |Tillåta nullvärde|Välj det här alternativet om värdet för parametern kan vara null.<br /><br /> Om du anger giltiga värden för en parameter och du vill att null ska vara ett av de giltiga värdena måste du inkludera null som ett av de värden som du anger. Om du väljer det här alternativet inkluderas inte null automatiskt för tillgängliga värden.|  
@@ -116,7 +116,7 @@ Skapa en parameter manuellt från fönstret Rapportdata. Du kan konfigurera rapp
 |Standardvärden|Ange standardvärden från en fråga eller från en statisk lista.<br /><br /> När varje parameter har ett standardvärde körs rapporten automatiskt vid den första visningen.|  
 |Avancerat|Ange rapportdefinitionsattributet **UsedInQuery**, ett värde som anger huruvida den här parametern direkt eller indirekt påverkar data i en rapport.<br /><br /> **Automatiskt avgöra när uppdatering ska ske**<br /> Välj det här alternativet när du vill att rapportbearbetaren ska bestämma en inställning för det här värdet. Värdet är **Sant** om rapportbearbetaren identifierar en datamängdsfråga med en direkt eller indirekt referens till den här parametern, eller om rapporten innehåller underrapporter.<br /><br /> **Uppdatera alltid**<br /> Välj det här alternativet när rapportparametern används direkt eller indirekt i en datamängdsfråga eller ett parameteruttryck. Det här alternativet anger **UsedInQuery** till True (Sant).<br /><br /> **Uppdatera aldrig**<br /> Välj det här alternativet när rapportparametern inte används direkt eller indirekt i en datamängdsfråga eller ett parameteruttryck. Det här alternativet anger **UsedInQuery** till False (Falskt).<br /><br /> **Varning** Använd **Uppdatera aldrig** med försiktighet. På rapportservern används **UsedInQuery** för att kontrollera cachealternativ för rapportdata och återgivna rapporter, och parameteralternativ för ögonblicksbilder av rapport. Om du anger **Uppdatera aldrig** på fel sätt kan det leda till att felaktiga rapportdata eller rapporter cachelagras eller att en ögonblicksbild av rapport har inkonsekventa data. |  
   
-##  <a name="bkmk_Dataset_Parameters"></a> Datamängdsfråga  
+##  <a name="dataset-query"></a><a name="bkmk_Dataset_Parameters"></a> Datamängdsfråga  
  Om du vill filtrera data i datamängdsfrågan kan du inkludera en begränsningssats som begränsar hämtade data genom att ange värden för att inkludera eller exkludera från resultatuppsättningen.  
   
  Använda frågedesignern för datakällan för att skapa en parametriserad fråga.  
@@ -125,7 +125,7 @@ Skapa en parameter manuellt från fönstret Rapportdata. Du kan konfigurera rapp
   
 -   För frågor som baseras på en flerdimensionell datakälla såsom Microsoft SQL Server Analysis Services kan du ange om en parameter baserat på ett filter som du anger i frågedesignern ska skapas. 
   
-##  <a name="bkmk_Manage_Parameters"></a> Parameterhantering för en publicerad rapport  
+##  <a name="parameter-management-for-a-published-report"></a><a name="bkmk_Manage_Parameters"></a> Parameterhantering för en publicerad rapport  
  När du utformar en rapport sparas rapportparametrarna i rapportdefinitionen. När du publicerar en rapport sparas och hanteras rapportparametrarna separat från rapportdefinitionen.  
   
  För en publicerad rapport kan du använda följande:  
@@ -140,7 +140,7 @@ Skapa en parameter manuellt från fönstret Rapportdata. Du kan konfigurera rapp
   
  Alternativ för rapportkörning kan påverka hur parametrar bearbetas. En rapport som körs som en ögonblicksbild kan inte använda parametrar som kommer från en fråga såvida inte frågan innehåller standardvärden för parametrarna.  
   
-##  <a name="bkmk_Parameters_Subscription"></a> Parametrar för en prenumeration  
+##  <a name="parameters-for-a-subscription"></a><a name="bkmk_Parameters_Subscription"></a> Parametrar för en prenumeration  
  Du kan definiera en prenumeration för en på begäran-rapport eller en ögonblicksbild av rapport och ange parametervärden som ska användas vid prenumerationsbearbetning.  
   
 -   **Rapport på begäran.**  För en på begäran-rapport kan du ange ett annat parametervärde än det publicerade värdet för varje parameter som anges för rapporten. Anta exempelvis att du har en kundtjänstrapport som använder en *Time Period*-parameter (Tidsperiod) för att returnera kundservicebegäranden för aktuell dag, vecka eller månad. Om standardparametervärdet för rapporten anges till **today** (i dag) kan prenumerationen använda ett annat parametervärde (till exempel **week** (vecka) eller **month** (månad)) för att framställa en rapport som innehåller veckovisa eller månadsvisa uppgifter.  
