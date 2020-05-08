@@ -11,10 +11,10 @@ ms.date: 03/06/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 7ff02eb07d4b052892cc80ab4710223d8d302a9f
-ms.sourcegitcommit: 743167a911991d19019fef16a6c582212f6a9229
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/07/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "78893429"
 ---
 # <a name="customize-visualization-titles-backgrounds-and-legends"></a>Anpassa visualiseringens rubriker, bakgrunder och förklaringar
@@ -157,7 +157,7 @@ Här är en lista över visualiseringarna och vilka anpassningsalternativ som ä
 | Utsnitt | ja | ja | saknas |
 | Tabell | ja | ja | saknas |
 | Textruta | nej | ja | saknas |
-| Trädkarta | ja | ja | ja |
+| Treemap | ja | ja | ja |
 | Vattenfall | ja | ja | ja |
 
 ## <a name="next-steps"></a>Nästa steg
@@ -166,4 +166,4 @@ Här är en lista över visualiseringarna och vilka anpassningsalternativ som ä
 
 - [Komma igång med färgformatering och axelegenskaper](service-getting-started-with-color-formatting-and-axis-properties.md)
 
-Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
+Fler frågor? [Prova Power BI Community](https://community.powerbi.com/)

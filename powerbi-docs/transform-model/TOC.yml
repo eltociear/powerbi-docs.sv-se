@@ -16,7 +16,7 @@
           href: ../desktop-tutorial-create-measures.md
         - name: Skapa beräknade kolumner
           href: ../desktop-tutorial-create-calculated-columns.md
-    - name: Begrepp
+    - name: Koncept
       expanded: true
       items:
         - name: Förstå modellrelationer
@@ -55,7 +55,7 @@
               href: ../desktop-combine-binaries.md
             - name: Använda AI Insights (förhandsversion)
               href: ../desktop-ai-insights.md
-        - name: Modellera dina data
+        - name: Forma dina data
           items:
             - name: Skapa snabbmått för vanliga beräkningar
               href: ../desktop-quick-measures.md
@@ -103,7 +103,7 @@
               href: ../service-dataflows-azure-data-lake-integration.md
             - name: Ansluta Azure Data Lake Storage Gen2 för lagring av dataflöde
               href: ../service-dataflows-connect-azure-data-lake-storage-gen2.md
-            - name: Konfigurera inställningar för arbetsytans dataflöde (förhandsversion)
+            - name: Konfigurera inställningarna för dataflöde i arbetsytan (förhandsversion)
               href: ../service-dataflows-configure-workspace-storage-settings.md
             - name: Lägga till en CDM-mapp i Power BI som ett dataflöde (förhandsversion)
               href: ../service-dataflows-add-cdm-folder.md

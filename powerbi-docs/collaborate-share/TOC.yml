@@ -7,7 +7,7 @@
       items:
         - name: Sätt att dela ditt arbete
           href: ../service-how-to-collaborate-distribute-dashboards-reports.md
-    - name: Begrepp
+    - name: Koncept
       expanded: true
       items:
         - name: Organize ditt arbete

@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 02/05/2019
 LocalizationGroup: Premium
 ms.openlocfilehash: 4b30e2fbf4ec3607b3ee155749a1ddeeb9f76cad
-ms.sourcegitcommit: 075a0ade4134d28f578fda78996595e8cd9f3555
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80147364"
 ---
 # <a name="configure-multi-geo-support-for-power-bi-premium"></a>Konfigurera Multi-Geo-stöd för Power BI Premium
@@ -22,7 +22,7 @@ Multi-Geo är en Power BI Premium-funktion som hjälper multinationella kunder a
 
 - USA
 - Kanada
-- Storbritannien
+- Storbritannien och Nordirland
 - Brasilien
 - Europa
 - Japan
@@ -43,7 +43,7 @@ Aktivera Multi-Geo genom att välja en annan region än standardregion i listrut
 
 När du har skapat en kapacitet finns den kvar i den regionen, och alla arbetsytor som skapats får sitt innehåll sparat i den regionen. Du kan migrera arbetsytor från en region till en annan via listrutan på skärmen för arbetsyteinställningar.
 
-![Redigera arbetsyta: Välj en tillgänglig kapacitet. Power BI med Multi-Geo](media/service-admin-premium-multi-geo/power-bi-multi-geo-edit-workspace.png)
+![Redigera arbetsyta: välj en tillgänglig kapacitet. Power BI med Multi-Geo](media/service-admin-premium-multi-geo/power-bi-multi-geo-edit-workspace.png)
 
 Det här meddelandet visas så att du kan bekräfta ändringen.
 
@@ -101,4 +101,4 @@ Du kan ta bort arbetsytor från Multi-Geo-kapaciteten på något av följande tv
 - [Vad är Power BI Premium?](service-premium-what-is.md)
 - [Multi-Geo för Power BI Embedded-kapaciteter](developer/embedded/embedded-multi-geo.md)
 
-Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+Fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

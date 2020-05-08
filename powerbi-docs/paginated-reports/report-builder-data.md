@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.custom: seodec18
 ms.date: 06/06/2019
 ms.openlocfilehash: fea4e4927b009e30bc040593f9237cc49ff73956
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/07/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "78921457"
 ---
 # <a name="report-data-in-power-bi-report-builder"></a>Rapportdata i Power BI Report Builder
@@ -23,7 +23,7 @@ Rapportdata kan komma från flera datakällor i din organisation. Det första st
 Lär dig hur du [skapar en inbäddad datakälla för sidnumrerade rapporter i Power BI Report Builder](paginated-reports-embedded-data-source.md).
 
 
-##  <a name="BkMk_ReportDataTerms"></a> Termer  
+##  <a name="terms"></a><a name="BkMk_ReportDataTerms"></a> Termer  
   
 - **Dataanslutning.** Kallas även för *datakälla*. En dataanslutning innehåller ett namn och anslutningsegenskaper som är beroende av anslutningstypen. Dataanslutningar innehåller inga autentiseringsuppgifter. Dataanslutningar anger inte vilka data som ska hämtas från den externa datakällan. Det gör du i stället genom att ange en fråga när du skapar en datamängd.  
   
@@ -33,7 +33,7 @@ Lär dig hur du [skapar en inbäddad datakälla för sidnumrerade rapporter i Po
   
 - **Autentiseringsuppgifter.** Autentiseringsuppgifter är den autentiseringsinformation som måste anges för att du ska få tillgång till externa data.  
   
-##  <a name="BkMk_ReportDataTips"></a> Tips för att specificera rapportdata
+##  <a name="tips-for-specifying-report-data"></a><a name="BkMk_ReportDataTips"></a> Tips för att specificera rapportdata
 
  Använd följande information för att utforma din strategi för rapportdata.  
   

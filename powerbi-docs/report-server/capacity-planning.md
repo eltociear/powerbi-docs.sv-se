@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 04/02/2020
 ms.author: maggies
 ms.openlocfilehash: 25bf9d8a05805fad268152c64b5aefa36f602803
-ms.sourcegitcommit: e0833ec22b263f919025acae88551570b4def0cd
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/03/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80647650"
 ---
 # <a name="capacity-planning-guidance-for-power-bi-report-server"></a>Vägledning för kapacitetsplanering för Power BI-rapportserver
@@ -62,19 +62,19 @@ Alla tester har skrivits för att utföra en åtgärd från slutpunkt till slutp
 > Verktyget stöds inte officiellt av Microsoft, men produktteamet bidrar till projektet och besvarar problem som andra deltagare tar upp.
 
 ### <a name="workloads"></a>Arbetsbelastningar
-Det finns 2 arbetsbelastningsprofiler som används för testning: Intensiv Power BI-rapport och intensiv sidnumrerad rapport. Tabellen nedan beskriver distributionen av begäranden som körs mot rapportservern.
+Det finns 2 arbetsbelastningsprofiler som används för testning: Intensiv Power BI-rapport och intensiv rapport med sidbrytning. Tabellen nedan beskriver distributionen av begäranden som körs mot rapportservern.
 
 | Aktivitet | Intensiv Power BI-rapport, förekomstfrekvens | Intensiv sidnumrerad rapport, förekomstfrekvens |
 | --- | --- | --- |
-| **Återgivning av Power BI-rapporter** |60 % |10 % |
+| **Återgivning av Power BI-rapporter** |60 % |10 % |
 | **Återgivning av sidnumrerade (RDL) rapporter** |30% |60 % |
-| **Återgivning av mobilrapporter** |5 % |20% |
-| **Web portalåtgärder** |5 % |10 % |
+| **Återgivning av mobilrapporter** |5 % |20% |
+| **Web portalåtgärder** |5 % |10 % |
 
 ### <a name="user-load"></a>Användarbelastning
 För varje testkörning utfördes testerna baserat på frekvensen som definieras i någon av de två arbetsbelastningarna. Testerna började med 20 samtidiga användarförfrågningar till rapportservern. Användarbelastningen ökades sedan gradvis tills tillförlitligheten hade sjunkit under målet på 99 %.
 
-## <a name="results"></a>Results
+## <a name="results"></a>Resultat
 ### <a name="concurrent-user-capacity"></a>Kapacitet för samtidiga användare
 Som tidigare nämnts började testerna med 20 samtidiga användare som skickade begäranden till rapportservern. Antalet samtidiga användare ökades sedan gradvis tills 1 % av alla begäranden misslyckades. Resultaten i följande tabell visar antalet samtidiga användarbegäranden som servern kan hantera vid maximal belastning med en lägre misslyckandegrad än 1 %.
 
@@ -126,4 +126,4 @@ Om du vill köra verktyget Reporting Services LoadTest mot din eller en Microsof
 4. Följ anvisningarna som visas på https://github.com/Microsoft/Reporting-Services-LoadTest#create-a-sql-server-reporting-services-load-environment-in-azure för att skapa en Power BI Report Server-miljö i Azure.
 5. När du är klar med att distribuera miljön följer du anvisningarna som visas på https://github.com/Microsoft/Reporting-Services-LoadTest#load-test-execution för att köra testerna.
 
-Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+Fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

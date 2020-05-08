@@ -1,5 +1,5 @@
 ---
-title: Ändra hur visuella objekt interagerar i en rapport
+title: Ändra hur den visuella informationen interagerar i en rapport
 description: Dokumentation om hur du ställer in visuella interaktioner i en Microsoft Power BI-tjänstrapport och en Power BI Desktop-rapport.
 author: mihart
 ms.reviewer: ''
@@ -11,10 +11,10 @@ ms.date: 02/04/2020
 ms.author: mihart
 LocalizationGroup: Reports
 ms.openlocfilehash: 1d723f3dd67eb5e096622c882b5f538a77666d9e
-ms.sourcegitcommit: 75300b3f53f438ed7d3bd4edc93b9eb5925bf3af
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/06/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "77036709"
 ---
 # <a name="change-how-visuals-interact-in-a-power-bi-report"></a>Ändra hur visuella objekt interagerar i en Power BI-rapport

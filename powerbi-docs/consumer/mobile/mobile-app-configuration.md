@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 04/05/2020
 ms.author: painbar
 ms.openlocfilehash: ce147be4c23b738e1a09296a5d798fb0f94efe13
-ms.sourcegitcommit: 9b806dfe62c2dee82d971bb4f89d983b97931b43
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/07/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80802036"
 ---
 # <a name="remotely-configure-power-bi-app-using-mobile-device-management-mdm-tool"></a>Konfigurera Power BI-appen via fjärranslutning med verktyget för hantering av mobilenheter (MDM)
@@ -33,7 +33,7 @@ Med Power BI-appen för iOS och Android kan administratörer fjärrstyra push-ö
 | com.microsoft.powerbi.mobile.ServerURL | Sträng | Webbadress till rapportservern.<br><br>Ska börja med http eller https.|
 | com.microsoft.powerbi.mobile.ServerUsername | Sträng | [valfritt]<br><br>Användarnamnet som ska användas för att ansluta servern.<br><br>Om det inte finns, uppmanas användaren att ange användarnamn för anslutningen i appen.|
 | com.microsoft.powerbi.mobile.ServerDisplayName | Sträng | [valfritt]<br><br>Standardvärdet är ”Rapportserver”<br><br>Ett eget namn som används i appen för att representera servern. |
-| com.microsoft.powerbi.mobile.OverrideServerDetails | Boolesk | [valfritt]<br><br>Standardvärdet är True. När värdet är True åsidosätts eventuella rapportserverdefinitioner som redan finns på den mobila enheten. Befintliga servrar som redan är konfigurerade tas bort. Genom att sätta Åsidosätt till True förhindras också att användaren tar bort konfigurationen.<br><br>Sätt värdet till False för att lägga till de push-överförda värdera, vilket bevarar de befintliga inställningarna. Om samma server-URL redan har konfigurerats i mobilappen, lämnas den konfigurationen i befintligt skick. Användaren uppmanas inte att logga in på nytt för samma server. |
+| com.microsoft.powerbi.mobile.OverrideServerDetails | Boolean (Boolesk) | [valfritt]<br><br>Standardvärdet är True. När värdet är True åsidosätts eventuella rapportserverdefinitioner som redan finns på den mobila enheten. Befintliga servrar som redan är konfigurerade tas bort. Genom att sätta Åsidosätt till True förhindras också att användaren tar bort konfigurationen.<br><br>Sätt värdet till False för att lägga till de push-överförda värdera, vilket bevarar de befintliga inställningarna. Om samma server-URL redan har konfigurerats i mobilappen, lämnas den konfigurationen i befintligt skick. Användaren uppmanas inte att logga in på nytt för samma server. |
 
 ## <a name="data-protection-settings-ios-and-android"></a>Inställningar för dataskydd (iOS och Android)
 
@@ -41,7 +41,7 @@ Med Power BI-mobilappen för iOS och Android kan administratörer anpassa standa
 
 | Nyckel | Typ | Beskrivning |
 |---|---|---|
-| com.microsoft.powerbi.mobile.ForceDeviceAuthentication | Boolesk | Standardvärdet är False. <br><br>Biometrisk autentisering med Touch ID eller Face ID (iOS) eller fingeravtrycks-ID (Android) kan krävas när användarna ska öppna appen på sin enhet. Om det behövs kan biometrik användas utöver vanlig autentisering.<br><br>Om du använder principer för appskydd rekommenderar Microsoft att du inaktiverar den här inställningen för att förhindra dubbla inloggningar. |
+| com.microsoft.powerbi.mobile.ForceDeviceAuthentication | Boolean (Boolesk) | Standardvärdet är False. <br><br>Biometrisk autentisering med Touch ID eller Face ID (iOS) eller fingeravtrycks-ID (Android) kan krävas när användarna ska öppna appen på sin enhet. Om det behövs kan biometrik användas utöver vanlig autentisering.<br><br>Om du använder principer för appskydd rekommenderar Microsoft att du inaktiverar den här inställningen för att förhindra dubbla inloggningar. |
 
 >[!NOTE]
 >Inställningarna för dataskydd tillämpas endast på Android-enheter som stöder biometrisk autentisering.
@@ -56,7 +56,7 @@ Power BI-appen för iOS och Android ger administratörer möjlighet att konfigur
 | Nyckel | Typ | Värden | Beskrivning |
 |---|---|---|---|
 | com.microsoft.powerbi.mobile.ReportTapInteraction | Sträng |  <nobr>enkelknackning</nobr><br><nobr>dubbelknackning</nobr> | Konfigurera om ett tryck på ett visuellt objekt även markerar en datapunkt. |
-| com.microsoft.powerbi.mobile.EnableMultiSelect | Boolesk |  <nobr>True</nobr><br><nobr>False</nobr> | Ange om ett tryck på en datapunkt ska ersätta den aktuella markeringen eller läggas till i den aktuella markeringen. |
+| com.microsoft.powerbi.mobile.EnableMultiSelect | Boolean (Boolesk) |  <nobr>True</nobr><br><nobr>False</nobr> | Ange om ett tryck på en datapunkt ska ersätta den aktuella markeringen eller läggas till i den aktuella markeringen. |
 | com.microsoft.powerbi.mobile.RefreshAction | Sträng |  <nobr>dra nedåt för att uppdatera</nobr><br>knapp | Konfigurera om användaren ska ha en knapp för att uppdatera rapporten eller ska använda dra nedåt för att uppdatera. |
 | com.microsoft.powerbi.mobile.FooterAppearance | Sträng |  dockad<br>dynamisk | Konfigurera om rapportfoten ska vara fäst längst ned i rapporten eller döljas automatiskt. |
 
@@ -75,4 +75,4 @@ Med Intune-portalen kan administratörer enkelt distribuera de här inställning
 
 * Hämta Power BI-mobilappen från [App Store](https://apps.apple.com/app/microsoft-power-bi/id929738808) eller [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.powerbim&amp;amp;clcid=0x409)
 * Följ [@MSPowerBI på Twitter](https://twitter.com/MSPowerBI)
-* Delta i samtalet i [Power BI Community](https://community.powerbi.com/)
+* Delta i konversationen i [Power BI Community](https://community.powerbi.com/)

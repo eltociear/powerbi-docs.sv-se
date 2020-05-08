@@ -10,10 +10,10 @@ ms.date: 01/15/2020
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: 3a67c36b2594696e1c576693cc5808eb0227c1c7
-ms.sourcegitcommit: a1409030a1616027b138128695b80f6843258168
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/24/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76709631"
 ---
 # <a name="publish-datasets-and-reports-from-power-bi-desktop"></a>Publicera datamängder och rapporter från Power BI Desktop
@@ -31,7 +31,7 @@ Publicering från Power BI Desktop har samma effekt som när du använder **Häm
 
    ![Knappen Publicera](media/desktop-upload-desktop-files/pbid_publish_publishbutton.png)
 
-2. Logga in i Power BI.
+2. Logga in på Power BI.
 3. Välj målet.
 
    ![Välj publiceringsmålet](media/desktop-upload-desktop-files/pbid_publish_select_destination.png)

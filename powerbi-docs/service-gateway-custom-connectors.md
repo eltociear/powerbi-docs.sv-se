@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 LocalizationGroup: Gateways
 ms.openlocfilehash: 51d03582ec91b926526a075a356323eb4f95a84b
-ms.sourcegitcommit: 032a77f2367ca937f45e7e751997d7b7d0e89ee2
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "77609880"
 ---
 # <a name="use-custom-data-connectors-with-the-on-premises-data-gateway"></a>Använda anpassade dataanslutningar med den lokala datagatewayen
@@ -30,7 +30,7 @@ När du skapar rapporter i Power BI Desktop som använder anpassade dataanslutni
 
 När du installerar versionen av lokal datagateway från juli 2018 eller senare kan du se fliken **Anslutningar** i appen för lokal datagateway. I rutan **Läs in anpassade datakopplingar från mappen** väljer du en mapp som kan nås av användaren som kör gatewaytjänsten. Standardanvändaren är *NT SERVICE\PBIEgwService*. Gatewayen läser automatiskt in de anpassade kopplingsfilerna som finns i den mappen. De visas i listan över dataanslutningar.
 
-![Anpassade dataanslutningar](media/service-gateway-custom-connectors/gateway-onprem-customconnector1.png)
+![Anpassade datakopplingar](media/service-gateway-custom-connectors/gateway-onprem-customconnector1.png)
 
 Om du använder lokal datagateway (personligt läge) kan du ladda upp Power BI-rapporten till Power BI-tjänsten och använda gatewayen för att uppdatera den.
 
@@ -58,4 +58,4 @@ När det här alternativet är aktiverat visas dina anpassade anslutningar som t
 * [Konfigurera proxyinställningar för den lokala datagatewayen](/data-integration/gateway/service-gateway-proxy)
 * [Använda Kerberos för enkel inloggning (SSO) från Power BI till lokala datakällor](service-gateway-sso-kerberos.md)  
 
-Har du fler frågor? Fråga [Power BI Community](https://community.powerbi.com/).
+Fler frågor? Fråga [Power BI Community](https://community.powerbi.com/).
