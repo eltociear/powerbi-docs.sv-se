@@ -14,14 +14,14 @@ metadata:
   ms.author: kesharab
   ms.date: 31/03/2020
   ms.openlocfilehash: 8d37f5a4cde341dd8788791fecdbd1c7f20249d0
-  ms.sourcegitcommit: 9ecd7cadb9ff47f0fc0e400730777cc4dadbd80d
+  ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
   ms.translationtype: HT
   ms.contentlocale: sv-SE
-  ms.lasthandoff: 04/01/2020
+  ms.lasthandoff: 05/05/2020
   ms.locfileid: "80487809"
 highlightedContent:
   items:
-  - title: Inbäddade analyser med Power BI
+  - title: Inbäddad analys med Power BI
     itemType: overview
     url: embedded/embedding.md
   - title: Vad är Power BI Embedded i Azure?
@@ -39,7 +39,7 @@ conceptualContent:
     links:
     - url: embedded/embedding.md
       itemType: overview
-      text: Inbäddade analyser med Power BI
+      text: Inbäddad analys med Power BI
     - url: embedded/azure-pbie-what-is-power-bi-embedded.md
       itemType: overview
       text: Vad är Power BI Embedded i Azure?
@@ -48,7 +48,7 @@ conceptualContent:
       text: Kapacitet och SKU:er
     footerLink:
       url: embedded/index.yml
-      text: Visa mer
+      text: Mer information
   - title: Visuella objekt för Power BI
     links:
     - url: visuals/power-bi-custom-visuals.md
@@ -62,7 +62,7 @@ conceptualContent:
       text: Publicera visuella Power BI-objekt på Partnercenter
     footerLink:
       url: visuals/index.yml
-      text: Visa mer
+      text: Mer information
   - title: Automation
     links:
     - url: automation/overview-of-power-bi-rest-api.md
@@ -76,12 +76,12 @@ conceptualContent:
       text: Konfigurera autentiseringsuppgifter
     footerLink:
       url: automation/index.yml
-      text: Visa mer
+      text: Mer information
 additionalContent:
   sections:
   - title: Relaterade verktyg
   - items:
-    - title: REST API:er för Power BI
+    - title: Power BI REST-API:er
       summary: REST-API:erna för Power BI tillhandahåller tjänstslutpunkter för inbäddning, administration och användarresurser.
       url: https://docs.microsoft.com/rest/api/power-bi/
     - title: Azure Resource Manager REST-API
