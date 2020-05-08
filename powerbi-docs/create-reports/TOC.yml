@@ -62,7 +62,7 @@
             - name: Frågor och svar om naturligt språk
               items:
                 - name: Frågor och svar – introduktion
-                  href: ../natural-language/q-and-a-tooling-intro.md
+                  href: ../natural-language/q-and-a-intro.md
                 - name: Introduktion till verktyg för frågor och svar
                   href: ../natural-language/q-and-a-tooling-intro.md
                 - name: Avancerade verktyg för frågor och svar
@@ -99,6 +99,14 @@
               href: ../paginated-reports/report-builder-previewing-reports.md
             - name: Vanliga frågor och svar om sidnumrerade rapporter
               href: ../paginated-reports/paginated-reports-faq.md
+        - name: Distributionspipelines
+          items:
+            - name: Introduktion till distributionspipelines
+              href: deployment-pipelines-overview.md
+            - name: Förstå distributionsprocessen
+              href: deployment-pipelines-process.md
+            - name: Metodtips
+              href: deployment-pipelines-best-practices.md
     - name: Instruktionsguider
       items:
         - name: Power BI-rapporter
@@ -121,22 +129,20 @@
               href: ../desktop-buttons.md
             - name: Skapa knappar för att gå ner på detaljnivå
               href: ../desktop-drill-through-buttons.md
+            - name: Använda funktionen för att visa detaljerad information
+              href: ../desktop-drillthrough.md
+            - name: Använda funktionen för att visa detaljerad information mellan rapporter
+              href: ../desktop-cross-report-drill-through.md
             - name: Spara och dela insikter genom att skapa bokmärken
               href: ../desktop-bookmarks.md
             - name: Arbeta med rapportteman
               href: ../desktop-report-themes.md
             - name: Arbeta med filter i rapporter
               href: ../power-bi-report-filter.md
-            - name: Använda funktionen för att visa detaljerad information
-              href: ../desktop-drillthrough.md
-            - name: Använda funktionen för att visa detaljerad information mellan rapporter
-              href: ../desktop-cross-report-drill-through.md
+            - name: Lägga till ett filter i en rapport
+              href: ../power-bi-report-add-filter.md
             - name: Använda gruppering och diskretisering
               href: ../desktop-grouping-and-binning.md
-            - name: Skapa visuella Power BI-objekt med R
-              href: ../desktop-r-visuals.md
-            - name: Hämta och använda R-baserade visuella Power BI-objekt
-              href: ../desktop-r-powered-custom-visuals.md
             - name: Använda stödlinjer och fästa mot rutnät
               href: ../desktop-gridlines-snap-to-grid.md
             - name: Använda sidvisningsinställningar i rapporter
@@ -153,6 +159,8 @@
               href: ../desktop-slicer-numeric-range.md
             - name: Relativa datumutsnitt och filter
               href: ../visuals/desktop-slicer-filter-date-range.md
+            - name: Relativa tidsutsnitt och filter
+              href: slicer-filter-relative-time.md
             - name: Skapa ett utsnitt som du kan ändra storlek på
               href: ../power-bi-slicer-filter-responsive.md
             - name: Lägga till flera fält i ett utsnitt
@@ -189,8 +197,6 @@
               href: ../desktop-templates.md
             - name: Skapa en rapport från en datauppsättning
               href: ../service-report-create-new.md
-            - name: Lägga till ett filter i en rapport
-              href: ../power-bi-report-add-filter.md
             - name: Spara en rapport
               href: ../service-report-save.md
             - name: Interagera med en rapport i redigeringsvyn
@@ -201,6 +207,8 @@
               href: ../service-aggregates.md
             - name: Skapa en QR-kod för en rapport
               href: ../service-create-qr-code-for-report.md
+            - name: Låt konsumenter anpassa visuella objekt (förhandsversion)
+              href: power-bi-personalize-visuals.md
             - name: Exportera en rapport till Power BI Desktop (förhandsversion)
               href: ../service-export-to-pbix.md
             - name: Publicera datamängder och rapporter
@@ -267,6 +275,10 @@
               href: ../visuals/power-bi-visualization-powerapp.md
             - name: R-visualiseringar
               href: ../visuals/service-r-visuals.md
+            - name: Skapa visuella Power BI-objekt med R
+              href: ../desktop-r-visuals.md
+            - name: Hämta och använda R-baserade visuella Power BI-objekt
+              href: ../desktop-r-powered-custom-visuals.md
             - name: Diagram med radiell mätare
               href: ../visuals/power-bi-visualization-radial-gauge-charts.md
             - name: Banddiagram
@@ -371,6 +383,12 @@
               href: ../service-data-classification.md
             - name: Instrumentpanelsteman
               href: ../service-dashboard-themes.md
+        - name: Distributionspipelines
+          items:
+            - name: Kom igång
+              href: deployment-pipelines-get-started.md
+            - name: Felsökning
+              href: deployment-pipelines-troubleshooting.md
         - name: Andra uppgifter
           items:
             - name: Byta namn på innehåll

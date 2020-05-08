@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 04/08/2020
 ms.author: maggies
 ms.openlocfilehash: 166f72a717c99457e1d6b8e9a1f30535a9b4686f
-ms.sourcegitcommit: e7fda395b47e404c61e961a60816b7a1b0182759
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/08/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80979855"
 ---
 # <a name="power-bi-report-data-sources-in-power-bi-report-server"></a>Power BI-rapportdatakällor i Power BI-rapportserver
@@ -54,13 +54,13 @@ Andra datakällor kan fungera även om de inte finns med på listan.
 | Microsoft Exchange |Ja |Nej |Nej |
 | Microsoft Exchange Online |Ja |Nej |Nej |
 | MySQL-databas |Ja |Ja |Nej |
-| OData-flöde |Ja |Ja |Nej |
+| OData-feed |Ja |Ja |Nej |
 | ODBC |Ja |Ja |Nej |
 | OLE DB |Ja |Ja |Nej |
 | Oracle-databas |Ja |Ja |Ja |
 | PostgreSQL-databas |Ja |Ja |Nej |
 | Power BI-tjänst |Nej |Nej |Nej |
-| R -skript |Ja |Nej |Nej |
+| R-skript |Ja |Nej |Nej |
 | Salesforce-objekt |Ja |Nej |Nej |
 | Salesforce-rapporter |Ja |Nej |Nej |
 | SAP Business Warehouse-server |Ja |Ja |Ja |
@@ -72,7 +72,7 @@ Andra datakällor kan fungera även om de inte finns med på listan.
 | Sybase-databas |Ja |Ja |Nej |
 | Teradata |Ja |Ja |Ja |
 | Text/CSV |Ja |Ja |Nej |
-| Webben |Ja |Ja |Nej |
+| Webb |Ja |Ja |Nej |
 | XML |Ja |Ja |Nej |
 | appFigures (beta) |Ja |Nej |Nej |
 | Azure Analysis Services-databas |Ja |Nej |Ja |
@@ -120,7 +120,7 @@ Power BI-rapportservern har inte stöd för OAuth-baserad autentisering för mod
 | --- | --- | --- | --- | --- |
 | SQL Server-databas |Nej |Nej |Ja |Ja |
 | SQL Server Analysis Services |Nej |Nej |Ja |Ja |
-| Webben |Ja |Nej |Ja |Ja |
+| Webb |Ja |Nej |Ja |Ja |
 | Azure SQL Database |Nej |Nej |Ja |Nej |
 | Azure SQL Data Warehouse |Nej |Nej |Ja |Nej |
 | Active Directory |Nej |Nej |Ja |Ja |
@@ -180,12 +180,12 @@ Power BI-rapportservern har inte stöd för OAuth-baserad autentisering för mod
 | Spark (beta) |Nej |Nej |Nej |Nej |
 | SparkPost (beta) |Nej |Nej |Nej |Nej |
 | SQL Sentry (beta) |Nej |Nej |Nej |Nej |
-| Stripe (beta) |Nej |Nej |Nej |Nej |
+| Stripe (Beta) |Nej |Nej |Nej |Nej |
 | SweetIQ (beta) |Nej |Nej |Nej |Nej |
 | Troux (beta) |Nej |Nej |Nej |Nej |
 | Twilio (beta) |Nej |Nej |Nej |Nej |
 | tyGraph (beta) |Nej |Nej |Nej |Nej |
-| Vertica (beta) |Nej |Nej |Nej |Nej |
+| Vertika (beta) |Nej |Nej |Nej |Nej |
 | Visual Studio Team Services (beta) |Nej |Nej |Nej |Nej |
 | Webtrends (beta) |Nej |Nej |Nej |Nej |
 | Zendesk (beta) |Nej |Nej |Nej |Nej |
@@ -212,4 +212,4 @@ Power BI-rapportservern har inte stöd för OAuth-baserad autentisering för Dir
 ## <a name="next-steps"></a>Nästa steg
 Nu när du har anslutit till din datakällan, [skapar du en Power BI-rapport](quickstart-create-powerbi-report.md) med hjälp av data från den datakällan.
 
-Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+Fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

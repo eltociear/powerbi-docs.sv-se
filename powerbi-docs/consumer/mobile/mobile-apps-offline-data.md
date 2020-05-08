@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 12/09/2019
 ms.author: painbar
 ms.openlocfilehash: 9c38aef858d723e548529f450e34d0480de5f8b2
-ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/17/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79435454"
 ---
 # <a name="view-your-data-offline-in-the-power-bi-mobile-apps"></a>Visa dina data offline i Power BI-mobilapparna
@@ -20,7 +20,7 @@ Gäller för:
 
 | ![iPhone](./media/mobile-apps-offline-data/iphone-logo-50-px.png) | ![iPad](./media/mobile-apps-offline-data/ipad-logo-50-px.png) | ![Android-telefon](./media/mobile-apps-offline-data/android-phone-logo-50-px.png) | ![Android-surfplatta](./media/mobile-apps-offline-data/android-tablet-logo-50-px.png) | ![Windows 10](./media/mobile-apps-offline-data/win-10-logo-50-px.png) |
 |:--- |:--- |:--- |:--- |:--- |
-| iPhone-telefoner |iPad-surfplattor |Android-telefoner |Android-surfplattor |Windows 10-enheter |
+| iPhone-enheter |iPad-surfplattor |Android-telefoner |Android-surfplattor |Windows 10-enheter |
 
 >[!NOTE]
 >Stöd för Power BI-mobilappen för **telefoner som använder Windows 10 Mobile** kommer att upphöra den 16 mars 2021. [Läs mer](https://go.microsoft.com/fwlink/?linkid=2121400)
