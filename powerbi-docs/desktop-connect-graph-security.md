@@ -11,10 +11,10 @@ ms.date: 01/29/2019
 ms.author: preetikr
 LocalizationGroup: Connect to data
 ms.openlocfilehash: ef8e874c1f1a47d65845b87dccd441746651a68b
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74999800"
 ---
 # <a name="connect-to-the-microsoft-graph-security-api-in-power-bi-desktop"></a>Anslut till Säkerhets-API för Microsoft Graph i Power BI Desktop
@@ -28,7 +28,7 @@ Säkerhets-API för Microsoft Graph ansluter [flera säkerhetslösningar](https:
 Om du vill använda anslutningsappen för Microsoft Graph-säkerhet måste du *uttryckligen* få användarens tillstånd av klientadministratören för Azure Active Directory (AD Azure). Se [autentiseringskrav för Microsoft Graph Security](https://aka.ms/graphsecurityauth).
 Medgivande kräver anslutningsappens program-ID och namn, som har citerats här och är tillgängliga i [Azure-portalen](https://portal.azure.com):
 
-| Egenskap | Värde |
+| Egenskap | Value |
 |----------|-------|
 | **Programnamn** | `MicrosoftGraphSecurityPowerBIConnector` |
 | **Program-ID** | `cab163b7-247d-4cb9-be32-39b6056d4189` |

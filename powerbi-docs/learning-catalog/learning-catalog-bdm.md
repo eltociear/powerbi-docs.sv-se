@@ -7,15 +7,15 @@ ms.topic: article
 ms.date: 03/25/2020
 ms.author: v-lshann
 ms.openlocfilehash: fbdd55309de033c4173c9068cf0f2bc499855307
-ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "81268453"
 ---
 # <a name="business-and-technical-decision-makers-learning-catalog"></a>Utbildningskatalog för beslutsfattare inom affärs- och teknikområdena
 
-Fattar du beslut om investeringar i ny teknik? 
+Fattar du beslut om investeringar i nya teknik? 
 
 Följande katalog ordnas från kärnkunskaper till specifika domäner och från det grundläggande till det mest avancerade. Om det finns innehåll i flera format meddelar vi dig, så att du kan välja det utbildningsformat som bäst motsvarar dina behov. 
 

@@ -10,10 +10,10 @@ ms.date: 07/02/2019
 ms.author: maggies
 LocalizationGroup: Samples
 ms.openlocfilehash: 8ee77485da03cb8e507d30d511c08aa869c3e4ba
-ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/30/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80404672"
 ---
 # <a name="procurement-analysis-sample-for-power-bi-take-a-tour"></a>Exempel på anskaffningsanalys för Power BI: Ta en rundtur
@@ -138,7 +138,7 @@ Välj **Redigera rapporten** i det övre vänstra hörnet och utforska i rediger
 * Ändra typen av visualisering för ett diagram. Till exempel genom att ändra ett träddiagram till en toroid.
 * Fäst dem på din instrumentpanel.
 
-## <a name="next-steps-connect-to-your-data"></a>Nästa steg: Anslut till dina data
+## <a name="next-steps-connect-to-your-data"></a>Nästa steg: anslut till dina data
 Den här miljön är säker att leka i eftersom du kan välja att inte spara dina ändringar. Men om du sparar dem kan du alltid välja **Hämta data** för att få en ny kopia av exemplet.
 
 Vi hoppas att denna rundtur har visat hur Power BI-instrumentpaneler, frågor och svar, samt rapporter kan ge insikter om exempeldata. Nu är det din tur – anslut till dina egna data. Med Power BI kan du ansluta till en mängd olika datakällor. Läs mer i [Kom igång med Power BI-tjänsten](service-get-started.md).

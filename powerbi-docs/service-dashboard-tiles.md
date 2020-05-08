@@ -11,10 +11,10 @@ ms.date: 04/17/2020
 ms.author: maggies
 LocalizationGroup: Dashboards
 ms.openlocfilehash: efa5acbe70ea4541c2f9819d5260cb662ca0adac
-ms.sourcegitcommit: d43761104f7daf4b2f297648855bb573b53e6d8c
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "81637886"
 ---
 # <a name="intro-to-dashboard-tiles-for-power-bi-designers"></a>Introduktion till paneler på instrumentpanelen för Power BI-designers
@@ -100,5 +100,5 @@ När du väljer en panel beror händelseförloppet på hur du skapade panelen. I
 - [Integrera Power BI-paneler i Office-dokument](https://blogs.msdn.com/b/powerbidev/archive/2015/09/28/integrating-power-bi-tiles-into-office-documents.aspx)
 - [Fästa Reporting Services-objekt till Power BI-instrumentpaneler](https://msdn.microsoft.com/library/mt604784.aspx)
 
-Har du fler frågor? [Testa Power BI Community](https://community.powerbi.com/).
+Fler frågor? [Testa Power BI Community](https://community.powerbi.com/).
 

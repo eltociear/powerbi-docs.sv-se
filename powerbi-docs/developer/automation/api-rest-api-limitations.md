@@ -9,10 +9,10 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/08/2018
 ms.openlocfilehash: 5f4067e77631f22951844c0d4d64b06e5e2e30cc
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79079587"
 ---
 # <a name="power-bi-rest-api-limitations"></a>Begränsningar för Power BI REST API:t  
@@ -30,7 +30,7 @@ ms.locfileid: "79079587"
 * Max 5 000 000 rader lagras per tabell i datauppsätting utan bevarandeprincip  
 * 4 000 tecken per värde för strängkolumn i POST-radsåtgärd
   
-## <a name="see-also"></a>Se även
+## <a name="see-also"></a>Se också
 
 * [Azure AD-tjänstens begränsningar](https://docs.microsoft.com/azure/active-directory/active-directory-service-limits-restrictions)   
 * [Översikt över Power BI REST API](https://docs.microsoft.com/rest/api/power-bi/)

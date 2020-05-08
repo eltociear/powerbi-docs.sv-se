@@ -11,10 +11,10 @@ ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
 ms.openlocfilehash: d92d7a3095ff2f252a09834becf90d5efc1811a0
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79113058"
 ---
 # <a name="view-power-bi-notifications"></a>Visa Power BI-meddelanden
@@ -48,5 +48,5 @@ Titta när Amanda granskar, hanterar och svarar på meddelanden. Följ sedan ins
 * [Dataaviseringar i Power BI-tjänsten](end-user-alerts.md)
 * [Ställ in dataaviseringar i iPhone-appen (Power BI för iOS)](mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
 * [Ställ in dataaviseringar i Power BI-mobilappen för Windows 10](mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
-* Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
+* Fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
 
