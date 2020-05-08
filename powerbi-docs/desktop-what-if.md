@@ -11,10 +11,10 @@ ms.date: 01/21/2020
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: 8a72bc43bcceae6e676728934ceec81c8cb27d04
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/23/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76539484"
 ---
 # <a name="create-and-use-what-if-parameters-to-visualize-variables-in-power-bi-desktop"></a>Skapa och använd Vad om-parametrar för att visualisera variabler i Power BI Desktop

@@ -16,7 +16,7 @@
             - name: Mobil
               tocHref: /power-bi/consumer/mobile/
               topicHref: /power-bi/consumer/mobile/index
-            - name: Utvecklare
+            - name: Developer
               tocHref: /power-bi/developer/
               topicHref: /power-bi/developer/index
               items:
@@ -38,7 +38,7 @@
             - name: Rapportserver
               tocHref: /power-bi/report-server/
               topicHref: /power-bi/report-server/index
-            - name: Vägledning
+            - name: Riktlinjer
               tocHref: /power-bi/guidance/
               topicHref: /power-bi/guidance/index
             - name: 'Samarbeta, dela och integrera'
@@ -47,7 +47,7 @@
             - name: Skapa rapporter och instrumentpaneler
               tocHref: /power-bi/create-reports/
               topicHref: /power-bi/create-reports/index
-            - name: Ansluta till data
+            - name: Anslut till data
               tocHref: /power-bi/connect-data/
               topicHref: /power-bi/connect-data/index
             - name: Kom igång

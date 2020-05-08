@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/26/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: e7e5e406a0a4c9cdcecfab5a5af681857600feb5
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.openlocfilehash: 95ccee8e2c711c272d6114339161cbf1d1c883a9
+ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79488532"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82841697"
 ---
 # <a name="automatic-page-refresh-in-power-bi-desktop-preview"></a>Automatisk sidouppdatering i Power BI Desktop (förhandsversion)
 
@@ -212,7 +212,7 @@ Mer information finns i följande artiklar:
 
 * [Använd DirectQuery i Power BI](desktop-directquery-about.md)
 * [Använda Prestandaanalys till att undersöka prestanda för rapportelement](desktop-performance-analyzer.md)
-* [Distribuera och hantera Power BI Premium-kapaciteter](whitepaper-powerbi-premium-deployment.md)
+* [Distribuera och hantera Power BI Premium-kapaciteter](guidance/whitepaper-powerbi-premium-deployment.md)
 * [Datakällor i Power BI Desktop](desktop-data-sources.md)
 * [Forma och kombinera data i Power BI Desktop](desktop-shape-and-combine-data.md)
 * [Anslut till Excel-arbetsböcker i Power BI Desktop](desktop-connect-excel.md)   

@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 03/10/2020
 ms.author: kfollis
 ms.openlocfilehash: 1853e710958b5bed0dad011594d9e04ccc99842d
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79041687"
 ---
 # <a name="power-bi-data-sources"></a>Power BI-datakällor
@@ -62,7 +62,7 @@ I följande tabell visas de datakällor som Power BI stöder för datauppsättni
 | Exasol | Ja | Ja | Ja | Ja | Ja |
 | Excel | Ja <sup>3</sup> | Ja <sup>3</sup> | Nej | Ja <sup>3</sup> | Nej <sup>4</sup> |
 | Facebook | Ja | Ja | Nej | Nej | Nej |
-| Fil | Ja | Ja | Nej | Ja | Ja |
+| Arkiv | Ja | Ja | Nej | Ja | Ja |
 | Mapp | Ja | Ja | Nej | Ja | Ja |
 | GitHub | Ja | Ja | Nej | Nej | Nej |
 | Google Analytics | Ja | Ja | Nej | Nej | Nej |
@@ -134,7 +134,7 @@ I följande tabell visas de datakällor som Power BI stöder för datauppsättni
 | Twilio | Ja | Ja | Nej | Nej | Nej |
 | tyGraph | Ja | Ja | Nej | Nej | Nej |
 | Vertica | Ja | Ja | Ja | Ja | Ja |
-| Webben | Ja | Ja | Nej | Ja | Ja <sup>6</sup> |
+| Webb | Ja | Ja | Nej | Ja | Ja <sup>6</sup> |
 | Webtrends | Ja | Ja | Nej | Nej | Nej |
 | Workforce Dimensions | Ja | Ja | Nej | Ja | Nej |
 | XML | Ja | Ja | Nej | Ja | Nej <sup>4</sup> |

@@ -9,10 +9,10 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 10/31/2019
 ms.openlocfilehash: a472db6c6dcc1266a11e78d72ab8465df7682042
-ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/21/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80114162"
 ---
 # <a name="highlight-data-points-in-power-bi-visuals"></a>Markera datapunkter i visuella Power BI-objekt
@@ -32,7 +32,7 @@ Du ser att en stapel är markerad i exemplet. Och det är det enda värdet i mar
 
 ## <a name="highlight-data-points-with-categorical-data-view-mapping"></a>Markera datapunkter med kategorimappning i datavyn
 
-Visuella objekt med kategorimappning i datavyn har `capabilities.json` med parametern `"supportsHighlight": true`. Till exempel:
+Visuella objekt med kategorimappning i datavyn har `capabilities.json` med parametern `"supportsHighlight": true`. Exempel:
 
 ```json
 {
@@ -275,7 +275,7 @@ Det visuella objektet bör se ut så här i resultatet.
 
 ## <a name="highlight-data-points-with-matrix-data-view-mapping"></a>Markering av datapunkter med matrismappning i datavyn
 
-Visuella objekt med matrismappning i datavyn har `capabilities.json` med parametern `"supportsHighlight": true`. Till exempel:
+Visuella objekt med matrismappning i datavyn har `capabilities.json` med parametern `"supportsHighlight": true`. Exempel:
 
 ```json
 {

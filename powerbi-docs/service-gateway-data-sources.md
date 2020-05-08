@@ -11,10 +11,10 @@ ms.author: arthii
 ms.custom: seodec18
 LocalizationGroup: Gateways
 ms.openlocfilehash: 15b3236741eb19d9f08601f9503e0380f54a8d63
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79207469"
 ---
 # <a name="manage-data-sources"></a>Hantera datakällor
@@ -29,7 +29,7 @@ De flesta hanteringsåtgärder för datakällor kan även utföras med hjälp av
 
 1. Välj kugghjulsikonen ![Inställningar](media/service-gateway-data-sources/icon-gear.png) > **Hantera gatewayer** i det övre högra hörnet av Power BI-tjänsten.
 
-    ![Hantera gatewayer](media/service-gateway-data-sources/manage-gateways.png)
+    ![Hantera gatewayar](media/service-gateway-data-sources/manage-gateways.png)
 
 2. Välj en gateway och välj sedan **Lägg till datakälla**. Eller gå till **Gatewayer** > **Lägg till datakälla**.
 
@@ -141,4 +141,4 @@ Information om vilka datakällor som stöds av den lokala datagatewayen finns i 
 * [Hantera din datakälla – Import/schemalagd uppdatering](service-gateway-enterprise-manage-scheduled-refresh.md)
 * [Vägledning för distribution av en datagateway](service-gateway-deployment-guidance.md)
 
-Har du fler frågor? Testa [Power BI Community](https://community.powerbi.com/).
+Fler frågor? Testa [Power BI Community](https://community.powerbi.com/).
