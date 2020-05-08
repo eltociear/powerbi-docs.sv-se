@@ -9,10 +9,10 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
 ms.openlocfilehash: c3c6e8d7ddb823eb1e857b102c2f6c788e366141
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79114953"
 ---
 # <a name="using-oauth-to-connect-to-power-bi-report-server-and-ssrs"></a>Ansluta till Power BI-rapportservern och SSRS via OAuth
@@ -166,7 +166,7 @@ Utför följande steg för att konfigurera begränsad delegering.
 
    Detta konfigurerar begränsad delegering för det här WAP-serverdatorkontot. Därefter måste vi konfigurera tjänsterna som den här datorn får delegera till.
 
-6. Välj **Lägg till...** under rutan tjänster.
+6. Välj **Lägg till...**  under rutan tjänster.
 
    ![Begränsad WAP, 02](media/mobile-oauth-ssrs/wap-contrained-delegation2.png)
 
@@ -232,7 +232,7 @@ När du väljer **Anslut** omdirigeras du till inloggningssidan för ADFS. Ange 
 
 När du har valt **Logga in** visas element från Reporting Services-servern.
 
-## <a name="multi-factor-authentication"></a>Multifaktorautentisering
+## <a name="multi-factor-authentication"></a>Multi-Factor Authentication
 
 Du kan aktivera multifaktorautentisering att göra din miljö ännu säkrare. Läs mer i [konfigurera AD FS 2016 och Azure MFA](https://technet.microsoft.com/windows-server-docs/identity/ad-fs/operations/configure-ad-fs-2016-and-azure-mfa).
 
@@ -255,4 +255,4 @@ Om inloggningen fungerar korrekt när du använder Fiddler kan det finnas ett ce
 [Proxy för webbprogram i Windows Server 2016](https://technet.microsoft.com/windows-server-docs/identity/web-application-proxy/web-application-proxy-windows-server)  
 [Publicera program med AD FS-förautentisering](https://technet.microsoft.com/windows-server-docs/identity/web-application-proxy/publishing-applications-using-ad-fs-preauthentication#a-namebkmk14apublish-an-application-that-uses-oauth2-such-as-a-windows-store-app)  
 [Konfigurera AD FS 2016 och Azure MFA](https://technet.microsoft.com/windows-server-docs/identity/ad-fs/operations/configure-ad-fs-2016-and-azure-mfa)  
-Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
+Fler frågor? [Prova Power BI Community](https://community.powerbi.com/)

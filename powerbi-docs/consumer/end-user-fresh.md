@@ -10,10 +10,10 @@ ms.date: 02/18/2020
 ms.author: mihart
 LocalizationGroup: Get started
 ms.openlocfilehash: 81581b861f731ac287cc18f4ab1fdf77ab7a4e7c
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79040123"
 ---
 # <a name="your-content-is-up-to-date"></a>Ditt innehåll är aktuellt och uppdaterat
@@ -55,7 +55,7 @@ Appskärmen visar både namnet på designern samt det datum då appen senast upp
     ![2 appar med en markerad](media/end-user-fresh/power-bi-app.png)
 
 
-### <a name="shared-with-me"></a>Delat med mig
+### <a name="shared-with-me"></a>Delad med mig
 På skärmen **Delat med mig** ser du namnet på innehållsägaren samt det datum då innehållet senast delades med dig.
 
 ![skärmen delat med mig som visar datum för ändring och ägare](media/end-user-fresh/power-bi-share.png) 

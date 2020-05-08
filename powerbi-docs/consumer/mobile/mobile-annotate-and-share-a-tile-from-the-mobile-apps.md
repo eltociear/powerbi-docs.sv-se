@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
 ms.openlocfilehash: 5d1a014b32bcb3ce90938659e2b6478518e8aefc
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79205514"
 ---
 # <a name="annotate-and-share-a-tile-report-or-visual-in-power-bi-mobile-apps"></a>Kommentera och dela en panel, rapport eller ett visuellt objekt i Power BI-mobilapparna
@@ -20,7 +20,7 @@ Gäller för:
 
 | ![iPhone](./media/mobile-annotate-and-share-a-tile-from-the-mobile-apps/iphone-logo-50-px.png) | ![iPad](./media/mobile-annotate-and-share-a-tile-from-the-mobile-apps/ipad-logo-50-px.png) | ![Android-telefon](./media/mobile-annotate-and-share-a-tile-from-the-mobile-apps/android-phone-logo-50-px.png) | ![Android-surfplatta](./media/mobile-annotate-and-share-a-tile-from-the-mobile-apps/android-tablet-logo-50-px.png) |
 |:--- |:--- |:--- |:--- |
-| iPhone-telefoner |iPad-surfplattor |Android-telefoner |Android-surfplattor |
+| iPhone-enheter |iPad-surfplattor |Android-telefoner |Android-surfplattor |
 
 Du kan kommentera och dela en ögonblicksbild av en panel, rapport eller visualisering från Power BI-mobilappen för iOS- och Android-enheter. Dina mottagarna ser den exakt som den var när du skickade e-postmeddelandet, plus en länk. Du kan skicka ögonblicksbilder av paneler till vem som helst. Inte bara kollegor på samma e-postdomän. Du kan lägga till anteckningar: rader, text eller stämplar, innan du delar den.
 

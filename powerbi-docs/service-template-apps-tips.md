@@ -1,19 +1,19 @@
 ---
 title: Tips för att skapa mallappar i Power BI
 description: Tips om hur du kan använda frågor, datamodeller, rapporter och instrumentpaneler för att skapa bra mallappar
-author: teddybercovitz
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 03/24/2020
-ms.author: tebercov
-ms.openlocfilehash: 12ba04381c5227c897f4b1f13def4c52999bc1a5
-ms.sourcegitcommit: 01bcbc8f0280aec875b22542a9c193c80899dc10
+ms.date: 05/04/2020
+ms.author: painbar
+ms.openlocfilehash: 266e44b5e5ecff2f86bcd3d43ce91368cc57b9e1
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "82066292"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82781304"
 ---
 # <a name="tips-for-authoring-template-apps-in-power-bi"></a>Tips för att skapa mallappar i Power BI
 
@@ -142,22 +142,8 @@ När du har publicerat mallappen på AppSource ska du överväga att skapa en ne
 * Power BI – kan visas av en Power BI-användare.
 
 För att kunna omdirigera en användare till appens nedladdningslänk i Power BI kan du titta på följande kodexempel: [GitHub-lagringsplats](https://github.com/microsoft/Template-apps-examples/tree/master/src).
+
 [![Nedladdningslänk till app](media/service-template-apps-tips/service-template-apps-tips-download.png)](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.pbiapps-github)
-
-
-
-## <a name="known-limitations"></a>Kända begränsningar
-
-| Funktion | Kända begränsningar |
-|---------|---------|
-|Innehåll:  Datauppsättningar   | Det ska finnas exakt en datauppsättning. Endast de datauppsättningar som finns inbyggda i Power BI Desktop (.pbix-filer) är tillåtna. <br>Stöds ej: Datamängder från andra mallar, datamängder mellan arbetsytor, sidnumrerade rapporter (RDL-filer), Excel-arbetsböcker, förbättrade datamängdsmetadata |
-|Innehåll: Instrumentpaneler | Realtidspaneler godkänns inte (dvs. inget stöd för push eller strömmande datamängder) |
-|Innehåll: Dataflöden | Stöds ej: Dataflöden |
-|Innehåll från filer | Endast PBIX-filer är tillåtna. <br>Stöds inte: RDL-filer (sidnumrerade rapporter), Excel-arbetsböcker   |
-| Datakällor | Datakällor som har stöd för schemalagd datauppdatering i molnet är tillåtna. <br>Stöds ej: <li> DirectQuery</li><li>Live-anslutningar (inte Azure AS)</li> <li>Lokala datakällor (personlig gateway och företagsgateway stöds inte)</li> <li>Realtid (pushdatamängder stöds inte)</li> <li>Sammansatta modeller</li></ul> |
-| Datauppsättning: över arbetsytor | Inga datauppsättningar över arbetsytor är tillåtna  |
-| Frågeparametrar | Stöds ej: Parametrar av typen ”Any” eller ”Binary” blockerar uppdateringsåtgärden för datauppsättningen |
-| Visuella objekt för Power BI | Bara som offentligt tillgängliga visuella Power BI-objekt stöds. [Visuella Power BI-objekt för organisationer](developer/visuals/power-bi-custom-visuals-organization.md) stöds inte |
 
 ## <a name="next-steps"></a>Nästa steg
 

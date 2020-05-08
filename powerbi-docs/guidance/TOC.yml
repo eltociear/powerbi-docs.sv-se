@@ -9,7 +9,7 @@
           href: overview.md
         - name: Optimeringsguide för Power BI
           href: power-bi-optimization.md
-    - name: Begrepp
+    - name: Koncept
       expanded: true
       items:
         - name: Omvandla och forma data
@@ -46,7 +46,7 @@
               href: composite-model-guidance.md
         - name: DAX
           items:
-            - name: Funktionen DIVIDERA jämfört med divisionsoperatorn (/)
+            - name: Funktionen DIVIDERA jämfört med operatorn för division (/)
               href: dax-divide-function-operator.md
             - name: Lämplig användning av felfunktioner
               href: dax-error-functions.md
@@ -110,13 +110,13 @@
               href: monitor-report-performance.md
             - name: Felsöka rapportprestanda
               href: report-performance-troubleshoot.md
-    - name: Vitböcker
+    - name: Faktablad (white paper)
       items:
         - name: Översikt vitböcker
-          href: ../whitepapers.md
+          href: whitepapers.md
         - name: Vitbok Power BI-säkerhet
-          href: ../whitepaper-powerbi-security.md
+          href: whitepaper-powerbi-security.md
         - name: Power BI Premium-distribution
-          href: ../whitepaper-powerbi-premium-deployment.md
+          href: whitepaper-powerbi-premium-deployment.md
         - name: Distribuera Power BI externt med hjälp av Azure Active Directory B2B
-          href: ../whitepaper-azure-b2b-power-bi.md
+          href: whitepaper-azure-b2b-power-bi.md

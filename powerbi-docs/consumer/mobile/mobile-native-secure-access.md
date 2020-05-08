@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 04/07/2020
 ms.author: painbar
 ms.openlocfilehash: ce7b3c3bc667023ef36650d8c551caaceab04c02
-ms.sourcegitcommit: 9b806dfe62c2dee82d971bb4f89d983b97931b43
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/07/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80802811"
 ---
 # <a name="protect-power-bi-app-with-face-id-touch-id-passcode-or-biometric-data"></a>Skydda Power BI-appen med Face ID, Touch ID, lösenord eller biometriska data 
@@ -24,7 +24,7 @@ Gäller för:
 
 | ![iPhone](./media/mobile-native-secure-access/ios-logo-40-px.png) | ![iPad-surfplattor](./media/mobile-native-secure-access/ios-logo-40-px.png) | ![Android-telefon](././media/mobile-native-secure-access/android-logo-40-px.png) | ![Android-surfplatta](././media/mobile-native-secure-access/android-logo-40-px.png) |
 |:--- |:--- |:--- |:--- |
-|iPhone-telefoner |iPad-surfplattor |Android-telefoner |Android-surfplattor |
+|iPhone-enheter |iPad-surfplattor |Android-telefoner |Android-surfplattor |
 
 ## <a name="turn-on-face-id-touch-id-or-passcode-on-ios"></a>Aktivera Face ID, Touch ID eller lösenord i iOS
 

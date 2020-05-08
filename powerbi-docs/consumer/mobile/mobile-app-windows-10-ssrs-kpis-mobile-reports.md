@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 03/09/2020
 ms.author: painbar
 ms.openlocfilehash: 67daafc0938216b135b31d3190c191402e9a10de
-ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/17/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79435385"
 ---
 # <a name="view-on-premises-reports-and-kpis-in-the-power-bi-windows-app"></a>Visa lokala rapporter och KPI:er i Power BI Windows-appen
@@ -34,7 +34,7 @@ I Power BI-appen för Windows 10 visar du sedan KPS, mobila rapporter och Power 
 Även om du inte har åtkomst till en Reporting Services-webbportal, kan du fortfarande utforska funktionerna i Reporting Services-mobila rapporter.
 
 1. På din Windows 10-enhet öppnar du Power BI-appen.
-2. Tryck på den globala navigeringsknappen ![Den globala navigeringsknappen](././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/powerbi_windows10_options_icon.png) i det övre vänstra hörnet.
+2. Tryck på knappen för global navigering ![Knappen Global navigering](././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/powerbi_windows10_options_icon.png) i det övre vänstra hörnet.
 3. Tryck på ikonen **Inställningar**![Inställningsikonen](./././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-settings-icon.png), högerklicka eller tryck och håll in **Anslut till server** och tryck sedan på **Visa exempel**.
    
    ![Visa SSRS-exempel](./media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-win10-connect-ssrs-samples.png)

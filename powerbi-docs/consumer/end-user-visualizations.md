@@ -10,10 +10,10 @@ ms.date: 01/29/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 1aaacfae3c9af4517f6b028852e46059884dd3d5
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79113860"
 ---
 # <a name="interact-with-visuals-in-reports-dashboards-and-apps"></a>Interagera med visuella objekt i rapporter, instrumentpaneler och appar
@@ -43,7 +43,7 @@ För många av dessa alternativ kan administratören eller *designern* inaktiver
 
 
 
-|Aktivitet  |På en instrumentpanel  |I en rapport  | I frågor och svar
+|Uppgift  |På en instrumentpanel  |I en rapport  | I frågor och svar
 |---------|---------|---------|--------|
 |[Lägga till kommentarer i ett visuellt objekt för dig själv eller starta en konversation med kollegor om det visuella objektet](end-user-comment.md).     |  ja       |   ja      |  nej  |
 |[Öppna och utforska rapporten där det visuella objektet skapades](end-user-tiles.md).     |    ja     |   na      |  nej |

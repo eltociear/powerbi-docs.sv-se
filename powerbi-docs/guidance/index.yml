@@ -12,12 +12,12 @@ metadata:
   author: maggiesMSFT
   ms.author: maggies
   ms.date: 01/14/2020
-  ms.openlocfilehash: eecccb15eb48e922fd6b29e703a2bc4f298caa6e
-  ms.sourcegitcommit: 5ece366fceee9832724dae40eacf8755e1d85b04
+  ms.openlocfilehash: 2aba7eb9ff9fbd6941c84a9f3db10758724cdb0c
+  ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
   ms.translationtype: HT
   ms.contentlocale: sv-SE
-  ms.lasthandoff: 04/16/2020
-  ms.locfileid: "81525363"
+  ms.lasthandoff: 05/05/2020
+  ms.locfileid: "82841589"
 landingContent:
 - title: Power BI-vägledning
   linkLists:
@@ -28,7 +28,7 @@ landingContent:
     - text: Optimeringsguide för Power BI
       url: power-bi-optimization.md
     - text: Översikt vitböcker
-      url: ../whitepapers.md
+      url: whitepapers.md
 - title: Omvandla och forma data
   linkLists:
   - linkListType: concept

@@ -1,5 +1,5 @@
 ---
-title: Power BI-videoklipp
+title: Power BI-videor
 description: Power BI-videoklipp och länk till YouTube-kanalen.
 author: davidiseminger
 ms.reviewer: ''
@@ -10,13 +10,13 @@ ms.topic: conceptual
 ms.date: 03/03/2020
 ms.author: davidi
 ms.openlocfilehash: 41a0d100817f23d3a395f05cefbe60a0214bfb59
-ms.sourcegitcommit: d55d3089fcb3e78930326975957c9940becf2e76
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/04/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "78260863"
 ---
-# <a name="power-bi-videos"></a>Power BI-videoklipp
+# <a name="power-bi-videos"></a>Power BI-videor
 Vi har en YouTube-kanal för Power BI! Du kan besöka [vår kanal](https://www.youtube.com/user/mspowerbi/videos) och om är ny i Power BI är spellistan [analysera och visualisera data med Power BI](https://www.youtube.com/playlist?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP) ett bra ställe att börja.
 
 Här följer några videoklipp från den spellistan för att komma igång.
@@ -47,5 +47,5 @@ Kolla in följande uppsättning källor och innehåll för mer videoklipp.
 ## <a name="next-steps"></a>Nästa steg
 [Vad är Power BI?](fundamentals/power-bi-overview.md)
 
-Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+Fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 

@@ -10,10 +10,10 @@ ms.date: 07/15/2019
 ms.author: arthii
 LocalizationGroup: Gateways
 ms.openlocfilehash: 13d8cd9838cdcb035e7dd30a1180ac77957441ea
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79207423"
 ---
 # <a name="manage-your-data-source---importscheduled-refresh"></a>Hantera din datakälla – Import/schemalagd uppdatering
@@ -74,4 +74,4 @@ OAuth är inte ett schema för autentiseringsmetoder som stöds med en lokal dat
 * [Felsökning av den lokala datagatewayen](/data-integration/gateway/service-gateway-tshoot)
 * [Felsöka gatewayer – Power BI](service-gateway-onprem-tshoot.md)
 
-Har du fler frågor? Testa [Power BI Community](https://community.powerbi.com/).
+Fler frågor? Testa [Power BI Community](https://community.powerbi.com/).

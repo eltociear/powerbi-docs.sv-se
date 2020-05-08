@@ -10,10 +10,10 @@ ms.date: 04/01/2019
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: 28be15b1f62f410c14faaa5d3e8c36060596c466
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79208136"
 ---
 # <a name="self-service-data-prep-in-power-bi"></a>Dataförberedelser med självbetjäning i Power BI
@@ -116,6 +116,6 @@ Mer information om Power Query och schemalagd uppdatering finns i följande arti
 * [Frågeöversikt i Power BI Desktop](desktop-query-overview.md)
 * [Konfigurera schemalagd uppdatering](refresh-scheduled-refresh.md)
 
-Mer information om Common Data Service finns i dess översiktsartikel:
+För mer information om den gemensamma datamodellen kan du läsa dess översiktsartikel:
 * [Common Data Service – översikt ](https://docs.microsoft.com/powerapps/common-data-model/overview)
 

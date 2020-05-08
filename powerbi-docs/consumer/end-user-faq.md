@@ -10,10 +10,10 @@ ms.date: 02/20/2020
 ms.author: mihart
 LocalizationGroup: Get started
 ms.openlocfilehash: 9a59f8e230ecd8eec6338e92b7fb01e525831617
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79040006"
 ---
 # <a name="frequently-asked-questions-about-power-bi"></a>Vanliga frågor och svar om Power BI
@@ -54,7 +54,7 @@ Om ditt företag har köpt Power BI-licenser eller ett Premium-kapacitetskonto, 
 
 Du kan också registrera dig själv som enskild individ för Power BI-tjänsten. Mer information finns i [Processen för självbetjäningsregistrering i Power BI](../service-self-service-signup-for-power-bi.md)
 
-## <a name="why-do-i-have-to-sign-up-with-my-work-email"></a>Varför måste jag logga med min jobbmejl?
+## <a name="why-do-i-have-to-sign-up-with-my-work-email"></a>Varför måste jag registrera min e-postadress för arbetet?
 
 Power BI stöder inte e-postadresser som tillhandahålls av e-posttjänster för konsumenter eller telekommunikationsleverantörer. Lär dig mer om [registreringsprocessen för Power BI med självbetjäning](../service-self-service-signup-for-power-bi.md).
 
@@ -113,5 +113,5 @@ Precis som med många andra Microsoft-tjänster och program så erbjuder Power B
 
 * [Vad är en Power BI-konsument?](end-user-consumer.md)
 * [Hur använder en konsument Power BI?](end-user-reading-view.md)
-* Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+* Fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 * Har du fortfarande problem? Besök [Power BI-supportsidan](https://powerbi.microsoft.com/support/).
