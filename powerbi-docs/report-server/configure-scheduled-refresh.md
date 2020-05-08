@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 11/01/2017
 ms.author: davidi
 ms.openlocfilehash: cab64bdcd5707cfd0b1578e82334de4b5c84495c
-ms.sourcegitcommit: b2cb0b02bdc451bf11a92a68f2c4d560a811f563
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "81439973"
 ---
 # <a name="how-to-configure-power-bi-report-scheduled-refresh"></a>Konfigurera schemalagd uppdatering av en Power BI-rapport
@@ -70,7 +70,7 @@ Visa status för en plan för schemalagd uppdatering i webbportalen.
 2. I den vänstra menyn väljer du fliken **Schemalagd uppdatering**.
 3. På sidan **Schemalagd uppdatering** visar den högra kolumnen för de flesta sidan status för en plan.
    
-   | **Status** | **Beskrivning** |
+   | **Status** | **Description** |
    | --- | --- |
    | Ny plan för schemalagd uppdatering |Planen har skapats men har inte körts. |
    | Uppdaterar |Uppdateringsprocessen har startats. |
@@ -78,7 +78,7 @@ Visa status för en plan för schemalagd uppdatering i webbportalen.
    | Uppdaterar data |Uppdatera data i modellen. |
    | Ta bort autentiseringsuppgifterna från modellen |De autentiseringsuppgifter som användes för att ansluta till datakällan från modellen har tagits bort. |
    | Spara modellen till katalogen |Uppdatering av data är klar och den uppdaterade modellen sparas tillbaka till katalogen för rapportserverdatabasen. |
-   | Slutförd: Datauppdatering |Uppdateringen är klar. |
+   | Slutfört: Datauppdatering |Uppdateringen är klar. |
    | Fel: |Ett fel uppstod under uppdatering och visas. |
 
 Webbsidan måste uppdateras för att visa aktuell status. Statusen ändras inte automatiskt.
@@ -88,5 +88,5 @@ Läs mer om att skapa och ändra scheman i [Skapa, ändra och ta bort scheman](h
 
 Information om hur du felsöker schemalagd uppdatering finns i [Felsök schemalagd uppdatering i Power BI Report Server](scheduled-refresh-troubleshoot.md).
 
-Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+Fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 

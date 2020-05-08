@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 03/08/2020
 ms.author: painbar
 ms.openlocfilehash: 58ef9c6760194e3f11374bdb0663552fd11ce285
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/14/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79377385"
 ---
 # <a name="configure-report-interaction-settings"></a>Konfigurera inställningar för rapportinteraktion

@@ -7,12 +7,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/23/2019
 ms.author: mohaali
-ms.openlocfilehash: d6b07025f2aefe334fbbd65659b527c2bcad1efd
-ms.sourcegitcommit: 032a77f2367ca937f45e7e751997d7b7d0e89ee2
+ms.openlocfilehash: 02faed03e84c9d3a9f9ebd536116ffa0287dba4e
+ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77609957"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82841927"
 ---
 # <a name="best-practices-to-optimize-qa-in-power-bi"></a>Metodtips för att optimera Frågor och svar i Power BI
 Användning av vanliga fraser och naturligt språk för att ställa frågor till dina data är kraftfullt. Det är ännu mer kraftfullt när dina data svarar, vilket är precis vad du kan åstadkomma med Frågor och svar i Power BI.
@@ -194,6 +194,8 @@ Det enda undantaget från regeln ”normalisering är bättre” inträffar när
 Det här steget gäller specifikt för frågor och svar (och inte för Power BI-rapporter i allmänhet). Användare har ofta en mängd olika termer som de använder för att referera till samma sak, till exempel total försäljning, nettoförsäljning, total nettoförsäljning. Du kan lägga till de här synonymerna i tabeller och kolumner i Power BI-modellen. 
 
 Det här steget kan vara viktigt. Även om tabeller och kolumner heter enkla saker kan de som använder Frågor och svar ställa frågor på sitt eget sätt. De väljer inte från en fördefinierad lista med kolumner. Ju bättre synonymer du lägger till desto bättre blir användarnas upplevelse av rapporten. Om du vill lägga till synonymer i Power BI Desktop går du till modellvyn, väljer fliken Modellering och väljer sedan ett fält eller en tabell. Du kan lägga till synonymer i rutan **Synonymer** i fönstret Egenskaper.
+
+
 
 ![Synonymer i fönstret Egenskaper i Frågor och svar](media/qna-modelling-pane-synonyms.png)
 

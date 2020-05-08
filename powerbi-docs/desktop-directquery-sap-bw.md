@@ -10,10 +10,10 @@ ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: fee47524be70955a123d08e10dca5ee0dd3e07fd
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/09/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75761190"
 ---
 # <a name="connect-to-sap-business-warehouse-by-using-directquery-in-power-bi"></a>Ansluta till SAP Business Warehouse med hjälp av DirectQuery i Power BI
@@ -31,24 +31,24 @@ Det är dessutom *mycket viktigt* att förstå att det finns många funktioner f
 ## <a name="additional-modeling-restrictions"></a>Ytterligare modelleringsbegränsningar
 Den primära ytterligare modelleringsbegränsningen vid anslutning till SAP BW med DirectQuery i Power BI är följande:
 
-* **Inget stöd för beräknade kolumner:** Möjligheten att skapa beräknade kolumner är inaktiverad. Det innebär också att gruppering och klustring, som skapar beräknade kolumner, inte är tillgängligt.
-* **Ytterligare begränsningar för mått:** Det finns ytterligare begränsningar av de DAX-uttryck som kan användas i mått för att återspegla den supportnivå som erbjuds av SAP BW.
-* **Inget stöd för att definiera relationer:** Relationerna är inbyggda i den externa SAP-källan och ytterligare relationer kan inte definieras i modellen.
-* **Ingen datavy:** **Datavyn** visar normalt detaljerade nivådata i tabellerna. På grund av naturen för OLAP-källor som SAP BW, är den här vyn inte tillgänglig via SAP BW.
-* **Information om kolumner och mått är fasta:** Listan över kolumner och mått som visas i fältlistan korrigeras i den underliggande källan och kan inte modifieras. Det går till exempel inte att ta bort en kolumn eller ändra dess datatyp (det går däremot att byta namn på den).
-* **Ytterligare begränsningar i DAX:** Det finns ytterligare begränsningar för DAX som kan användas i måttdefinitioner när man vill återspegla begränsningar i källan. Det är till exempel inte möjligt att använda en mängdfunktion via en tabell.
+* **Inget stöd för beräknade kolumner:** möjligheten att skapa beräknade kolumner är inaktiverad. Det innebär också att gruppering och klustring, som skapar beräknade kolumner, inte är tillgängligt.
+* **Ytterligare begränsningar för mått:** det finns ytterligare begränsningar av de DAX-uttryck som kan användas i mått för att återspegla den supportnivå som erbjuds av SAP BW.
+* **Inget stöd för att definiera relationer:** relationerna är inbyggda i den externa SAP-källan och ytterligare relationer kan inte definieras i modellen.
+* **Ingen datavy:** **datavyn** visar normalt detaljerad nivådata i tabellerna. På grund av naturen för OLAP-källor som SAP BW, är den här vyn inte tillgänglig via SAP BW.
+* **Information om kolumner och mått är fasta:** listan över kolumner och mått som visas i fältlistan korrigeras i den underliggande källan och kan inte modifieras. Det går till exempel inte att ta bort en kolumn eller ändra dess datatyp (det går däremot att byta namn på den).
+* **Ytterligare begränsningar i DAX:** det finns ytterligare begränsningar för DAX som kan användas i måttdefinitioner, för att återspegla begränsningar i källan. Det är till exempel inte möjligt att använda en mängdfunktion via en tabell.
 
 ## <a name="additional-visualization-restrictions"></a>Ytterligare visualiseringsbegränsningar
 De primära ytterligare begränsningarna av visualiseringar vid anslutning till SAP BW med DirectQuery i Power BI är följande:
 
-* **Ingen sammansättning av kolumner:** Det går inte att ändra aggregeringen för en kolumn i ett visuellt objekt, och den är alltid *Sammanfatta inte*
-* **Måttfiltrering är inaktiverat:** Måttfiltrering är inaktiverat för att återspegla det stöd som erbjuds av SAP BW.
-* **Flera val och inkludera/exkludera:** Möjlighet att välja flera datapunkter på en visualisering är inaktiverad om punkterna motsvarar värden från fler än en kolumn. I ett stapeldiagram som visar försäljning efter land med kategori i teckenförklaringen, skulle det till exempel inte vara möjligt att välja punkten för (USA, cyklar) och (Frankrike, kläder). På samma sätt skulle det inte vara möjligt att välja punkten (USA, cyklar) och utesluta den från den visuella informationen. Bägge begränsningarna gäller för att återspegla det stöd som erbjuds av SAP BW.
+* **Ingen sammansättning av kolumner:** det går inte att ändra sammansättning för en kolumn på en visualisering. Den är alltid *Sammanfatta inte*
+* **Måttfiltrering är inaktiverat:** måttfiltrering är inaktiverat för att återspegla det stöd som erbjuds av SAP BW.
+* **Flera val och inkludera/exkludera:** möjlighet att välja flera datapunkter på en visualisering är inaktiverad om punkterna motsvarar värden från fler än en kolumn. I ett stapeldiagram som visar försäljning efter land med kategori i teckenförklaringen, skulle det till exempel inte vara möjligt att välja punkten för (USA, cyklar) och (Frankrike, kläder). På samma sätt skulle det inte vara möjligt att välja punkten (USA, cyklar) och utesluta den från den visuella informationen. Bägge begränsningarna gäller för att återspegla det stöd som erbjuds av SAP BW.
 
 ## <a name="support-for-sap-bw-features"></a>Stöd för SAP BW-funktioner
 I följande tabell listar alla SAP BW-funktioner som inte stöds fullt ut eller fungerar annorlunda mot när du använder Power BI.   
 
-| Funktion | Beskrivning |
+| Visning av aktuellt objekt | Beskrivning |
 | --- | --- |
 | Lokala beräkningar |Lokala beräkningar som definieras i en BEx-fråga ändrar talen som de visas via verktyg som BEx Analyzer. Dessa återspeglas dock inte i de siffror som returneras från SAP, via det offentliga MDX-gränssnittet. <br/> <br/> **Därför matchar siffror som visas i en Power BI-visualisering inte nödvändigtvis de för en motsvarande visualisering i ett SAP-verktyg.**<br/> <br/>  När du till exempel ansluter till en frågekub från en BEx-fråga som anger sammansättningen att vara kumulerande (d.v.s. löpande summering), får Power BI tillbaka basnumren och ignorerar den inställningen.  En analytiker kan absolut därefter tillämpa en löpande summeringsberäkning lokalt i Power BI, men måste vara försiktig med hur siffrorna tolkas om detta inte görs. |
 | Sammansättningar |I vissa fall (särskilt när du handskas med flera valutor), matchar inte de sammansatta siffrorna som returneras av det offentliga SAP-gränssnittet de som visas av SAP-verktygen. <br/> <br/> **Därför matchar siffror som visas i en Power BI-visualisering inte nödvändigtvis de för en motsvarande visualisering i ett SAP-verktyg.** <br/> <br/> Summor över olika valutor skulle till exempel visas som * i BEx Analyzer, men totalen skulle returneras av det offentliga SAP-gränssnittet, utan någon information om att ett sådant sammansatt nummer är meningslöst. Därför skulle numret (som sammansätter, säg, $, EUR och AUD) visas av Power BI. |

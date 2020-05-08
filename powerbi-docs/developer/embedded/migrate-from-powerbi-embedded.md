@@ -8,10 +8,10 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/30/2018
 ms.openlocfilehash: a8ce4209610e229ae1da7773bd7cb10bd522f72c
-ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/30/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80404059"
 ---
 # <a name="how-to-migrate-power-bi-workspace-collection-content-to-power-bi-embedded"></a>Så här migrerar du innehåll från Power BI-arbetsytesamlingar till Power BI Embedded
@@ -116,7 +116,7 @@ Det finns flera typer av rapporter, som var och en kräver ett något annorlunda
 
 Med cachelagrade datauppsättningar avses PBIX-filer som har importerade data istället för en live-anslutning eller DirectQuery-anslutning.
 
-**Flow**
+**Flöde**
 
 1. Anropshämta PBIX API från PaaS-arbetsytan.
 2. Spara PBIX.
@@ -124,7 +124,7 @@ Med cachelagrade datauppsättningar avses PBIX-filer som har importerade data is
 
 #### <a name="directquery-dataset--report"></a>DirectQuery-datauppsättning och -rapport
 
-**Flow**
+**Flöde**
 
 1. Anropa GET `https://api.powerbi.com/v1.0/collections/{collection_id}/workspaces/{wid}/datasets/{dataset_id}/Default.GetBoundGatewayDataSources` och spara anslutningssträngen som tagits emot.
 2. Anropshämta PBIX API från PaaS-arbetsytan.
@@ -138,7 +138,7 @@ Med cachelagrade datauppsättningar avses PBIX-filer som har importerade data is
 
 Dessa är datauppsättningar/rapporter som skapats före oktober 2016. PBIX-hämtningen stöder inte PBIX:er som hämtades före oktober 2016
 
-**Flow**
+**Flöde**
 
 1. Hämta PBIX från din utvecklingsmiljö (din interna källkontroll).
 2. Anropsimportera PBIX till SaaS-arbetsytan.
@@ -147,7 +147,7 @@ Dessa är datauppsättningar/rapporter som skapats före oktober 2016. PBIX-häm
 
 PBIX-hämtning stöder inte *Push API*-datauppsättningar. API-datauppsättningsdata för push-överföring API kan inte porteras från PaaS till SaaS.
 
-**Flow**
+**Flöde**
 
 1. Anropa API:et för att skapa datauppsättning med datauppsättnings-JSON för att skapa datauppsättningar på SaaS-arbetsytan.
 2. Återskapa rapporten för den skapade datauppsättningen *.
@@ -199,7 +199,7 @@ Rensa i Azure.
 [Bädda in med Power BI](embedding.md)  
 [Migreringsverktyg för Power BI-arbetsytesamling](migrate-tool.md)  
 [Kodfragment för migrering av innehåll från Power BI-arbetsytesamling](migrate-code-snippets.md)  
-[Så här bäddar du in dina Power BI-instrumentpaneler, -rapporter och -paneler](embed-sample-for-your-organization.md)  
+[Hur du bäddar in dina Power BI-instrumentpaneler, -rapporter och -paneler](embed-sample-for-your-organization.md)  
 [Power BI Premium – vad är det?](../../service-premium-what-is.md)  
 [JavaScript API Git Repo](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Power BI C# Git Repo](https://github.com/Microsoft/PowerBI-CSharp)  
@@ -207,4 +207,4 @@ Rensa i Azure.
 [White paper om kapacitetsplanering för analys i arbetsytesamling](https://aka.ms/pbiewhitepaper)  
 [Power BI Premium – white paper](https://aka.ms/pbipremiumwhitepaper)  
 
-Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+Fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

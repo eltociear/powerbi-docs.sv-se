@@ -9,16 +9,16 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/09/2019
 LocalizationGroup: Administration
-ms.openlocfilehash: e856c3afca0578c906a54f636dd58cd9208607a8
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.openlocfilehash: 31ce44059ec2abd5a2615267311ba651993342ba
+ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79207998"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82841904"
 ---
 # <a name="power-bi-security"></a>Power BI-säkerhet
 
-En detaljerad förklaring av Power BI-säkerheten får du om du [läser white paper-dokumentet om Power BI-säkerhet](whitepaper-powerbi-security.md):
+En detaljerad förklaring av Power BI-säkerheten får du om du [läser white paper-dokumentet om Power BI-säkerhet](guidance/whitepaper-powerbi-security.md):
 
 Power BI-tjänsten bygger på **Azure**, vilket är Microsofts infrastruktur och plattform för molntjänster. Power BI-tjänstens arkitektur baseras på två kluster – frontwebb (**WFE**) och **serverdel**. WFE-klustret är hanterar den första anslutningen och autentiseringen till Power BI-tjänsten. Efter att den har autentiseras hanterar serverdelen alla efterföljande användarinteraktioner. Power BI använder Azure Active Directory (AAD) till att lagra och hantera användaridentiteter, samt hanterar lagringen av data och metadata med Azure-blobb och Azure SQL Database.
 
