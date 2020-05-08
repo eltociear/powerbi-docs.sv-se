@@ -10,10 +10,10 @@ ms.date: 05/13/2019
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
 ms.openlocfilehash: 16d58090a9a7c6e64fbf2ace23fdf342d1768a30
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73881091"
 ---
 # <a name="make-excel-data-work-well-with-qa-in-power-bi"></a>Få Excel-data att fungera med Frågor och svar i Power BI
@@ -49,5 +49,5 @@ Här får du några tips om hur du kan utnyttja Frågor och svar på bästa sät
 - [Förbereda lokala datamängder för Frågor och svar](service-q-and-a-direct-query.md)   
 - [Hämta data (för Power BI)](service-get-data.md)  
 
-Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
+Fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
 

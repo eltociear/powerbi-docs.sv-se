@@ -1,5 +1,5 @@
 ---
-title: Anslut till en Google BigQuery-databas i Power BI Desktop
+title: Ansluta till en Google BigQuery-databas i Power BI Desktop
 description: Anslut enkelt till och använd Google BigQuery i Power BI Desktop
 author: davidiseminger
 ms.reviewer: ''
@@ -10,13 +10,13 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: b88be05c1e3890dd8ac63503d9279f51b1d9eec9
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73876507"
 ---
-# <a name="connect-to-a-google-bigquery-database-in-power-bi-desktop"></a>Anslut till en Google BigQuery-databas i Power BI Desktop
+# <a name="connect-to-a-google-bigquery-database-in-power-bi-desktop"></a>Ansluta till en Google BigQuery-databas i Power BI Desktop
 I Power BI Desktop kan du ansluta till en Google **BigQuery**-databas och använda underliggande data precis som andra datakällor i Power BI Desktop.
 
 ## <a name="connect-to-google-bigquery"></a>Anslut till Google BigQuery

@@ -9,10 +9,10 @@ ms.assetid: 76d3ac86-650c-46fe-8086-8b3edcea3882
 author: maggiesMSFT
 ms.author: maggies
 ms.openlocfilehash: 96c62fec55f87a31970b624a79314656ced0c159
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/07/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "78921135"
 ---
 # <a name="expressions-in-power-bi-report-builder"></a>Uttryck i Power BI Report Builder
@@ -30,7 +30,7 @@ ms.locfileid: "78921135"
   
  Om du vill ange uttryck manuellt markerar du ett objekt på designytan och använder genvägsmenyerna och dialogrutorna för att ange objektets egenskaper. När du ser knappen ***(fx)*** eller värdet `<Expression>` i en listruta innebär det att du kan ange egenskapen till ett uttryck. 
   
-##  <a name="Types"></a> Förstå enkla och komplexa uttryck  
+##  <a name="understanding-simple-and-complex-expressions"></a><a name="Types"></a> Förstå enkla och komplexa uttryck  
  Uttryck börjar med ett likhetstecken (=) och skrivs i Microsoft Visual Basic. Uttryck kan omfatta en kombination av konstanter, operatorer och referenser till inbyggda värden (fält, samlingar och funktioner) samt till extern eller anpassad kod.  
   
  Du kan använda uttryck för att ange värdet för många egenskaper för rapportobjekt. De vanligaste egenskaperna är värden för textrutor och platshållartext. Om en textruta innehåller endast ett uttryck är uttrycket vanligtvis värdet för textrutans egenskap. Om en textruta innehåller flera uttryck är varje uttryck värdet för platshållartexten i textrutan.  
@@ -50,7 +50,7 @@ ms.locfileid: "78921135"
 ![Exempelformat för Report Builder-uttryck](media/report-builder-expressions/report-builder-expression-sample-values-format.png)  
 
 
-## <a name="DisplayText"></a> Förstå prefixsymbolerna i enkla uttryck  
+## <a name="understanding-prefix-symbols-in-simple-expressions"></a><a name="DisplayText"></a> Förstå prefixsymbolerna i enkla uttryck  
 
 Enkla uttryck använder symboler för att ange huruvida referensen är till ett fält, en parameter, en inbyggd samling eller samlingen ReportItems. I följande tabell visas exempel på visningstext och uttryckstext:  
   
@@ -61,7 +61,7 @@ Enkla uttryck använder symboler för att ange huruvida referensen är till ett 
 |Inbyggda fält|`[&ReportName]`|`=Globals!ReportName.Value`|  
 |Vanliga tecken som används för att visa text|`\[Sales\]`|`[Sales]`|  
   
-##  <a name="References"></a> Skriva komplexa uttryck  
+##  <a name="writing-complex-expressions"></a><a name="References"></a> Skriva komplexa uttryck  
  Uttryck kan innehålla referenser till funktioner, operatörer, konstanter, fält, parametrar, objekt från inbyggda samlingar och inbäddad anpassad kod eller anpassade sammansättningar.  
   
  I följande tabell visas de typer av referenser som du kan inkludera i ett uttryck:  
@@ -74,8 +74,8 @@ Enkla uttryck använder symboler för att ange huruvida referensen är till ett 
 |Inbyggda rapport- och mängdfunktioner|Beskriver de inbyggda funktionerna, till exempel `Sum` eller `Previous`, som du kan komma åt från ett uttryck.|`=Previous(Sum(Fields!Sales.Value))`|  
 |Anpassad kod och sammansättningsreferenser i uttryck i Report Builder |Beskriver hur du kan komma åt de inbyggda CLR-klasserna `xref:System.Math` och `xref:System.Convert`, andra CLR-klasser, funktioner i Visual Basic-körningsbibliotek samt metoder från en extern sammansättning.<br /><br /> Beskriver hur du kan komma åt anpassad kod som är inbäddad i din rapport eller kompilera och installera som en anpassad sammansättning på både rapportklienten och rapportservern.|`=Sum(Fields!Sales.Value)`<br /><br /> `=CDate(Fields!SalesDate.Value)`<br /><br /> `=DateAdd("d",3,Fields!BirthDate.Value)`<br /><br /> `=Code.ToUSD(Fields!StandardCost.Value)`|  
    
-##  <a name="Valid"></a> Validera uttryck  
- När du skapar ett uttryck för en specifik egenskap för rapportobjekt beror de referenser som du kan inkludera i ett uttryck på de värden som egenskapen för rapportobjekt kan acceptera och det omfång där egenskapen utvärderas. Till exempel:  
+##  <a name="validating-expressions"></a><a name="Valid"></a> Validera uttryck  
+ När du skapar ett uttryck för en specifik egenskap för rapportobjekt beror de referenser som du kan inkludera i ett uttryck på de värden som egenskapen för rapportobjekt kan acceptera och det omfång där egenskapen utvärderas. Exempel:  
   
 -   Som standard beräknar uttrycket [Sum] summan av data som ingår i omfånget vid den tidpunkt då uttrycket utvärderas. För en tabellcell beror omfånget på gruppmedlemskap för rad och kolumn. 
   

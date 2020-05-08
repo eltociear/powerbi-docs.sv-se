@@ -11,10 +11,10 @@ ms.date: 04/02/2020
 ms.author: maggies
 LocalizationGroup: Dashboards
 ms.openlocfilehash: a67d983d11ae8fa2f82a540c0649c2da475d5249
-ms.sourcegitcommit: 8eeb784fd46321680367ac913ef976aeedaa7766
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/03/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80621612"
 ---
 # <a name="data-alerts-in-the-power-bi-service"></a>Datavarningar i Power BI-tjänsten
@@ -131,4 +131,4 @@ Det finns många sätt att hantera dina aviseringar:
 
 * [Vad är Power BI?](fundamentals/power-bi-overview.md)
 
-Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+Fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

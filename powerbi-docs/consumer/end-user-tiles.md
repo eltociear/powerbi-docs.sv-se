@@ -10,10 +10,10 @@ ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
 ms.openlocfilehash: 0481a09aaeac4f6c76c49d3a816ac880cdb9d60b
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79114052"
 ---
 # <a name="dashboard-tiles-in-power-bi"></a>Paneler på instrumentpanelen i Power BI
@@ -87,4 +87,4 @@ När du väljer en panel beror händelseförloppet på hur panelen skapades och 
 ## <a name="next-steps"></a>Nästa steg
 [Datauppdatering](../refresh-data.md)
 
-[Power BI – grundläggande begrepp](end-user-basic-concepts.md)
+[Power BI – Grundläggande begrepp](end-user-basic-concepts.md)

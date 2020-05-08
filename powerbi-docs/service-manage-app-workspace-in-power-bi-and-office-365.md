@@ -10,10 +10,10 @@ ms.date: 03/02/2020
 ms.author: maggies
 LocalizationGroup: Share your work
 ms.openlocfilehash: 72694ea771950b4a12427e0a0696e221fbe993bf
-ms.sourcegitcommit: d65da4738f011beec8f4423085cbd483511cdfb0
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/03/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "78237855"
 ---
 # <a name="manage-your-workspace-in-power-bi-and-office-365"></a>Hantera din arbetsyta i Power BI och Office 365
@@ -86,4 +86,4 @@ När du distribuerar appen från arbetsytan används bilden du lägger till här
 
 * [Publicera en app i Power BI](service-create-distribute-apps.md)
 
-* Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
+* Fler frågor? [Prova Power BI Community](https://community.powerbi.com/)

@@ -12,10 +12,10 @@ ms.date: 01/31/2020
 ms.author: mihart
 LocalizationGroup: Get started
 ms.openlocfilehash: 595ce61bf2020c27420a33871e82ca7ff9025d60
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79040169"
 ---
 # <a name="quickstart---getting-around-in-power-bi-service"></a>Snabbstart – Hitta rätt i Power BI-tjänsten
@@ -127,12 +127,12 @@ Läs mer i [Favoriter](end-user-favorite.md)
 Läs mer i [Senaste i Power BI](end-user-recent.md)
 
 ### <a name="search-and-sort-content"></a>Söka efter och sortera innehåll
-När du börjar använda Power BI-tjänsten har du bara några få innehållskomponenter. Men allteftersom dina kollegor börjar dela innehåll med dig och du börjar ladda ned appar så kan innehållslistorna bli långa. Det är då du märker hur användbart det är med sökning och sortering.
+När du börjar använda Power BI-tjänsten har du bara några få innehållskomponenter. Men allteftersom dina kollegor börjar dela innehåll med dig och du börjar hämta appar så kan du få långa listor med innehåll. Det är då du inser att sökning och sortering är mycket användbart.
 
 Sökning är tillgängligt från nästan alla delar av Power BI-tjänsten. Leta bara efter sökrutan eller förstoringsglaset.    
 ![förstoringsglasikon](./media/end-user-experience/power-bi-search-icon.png)
 
-Skriv hela eller delar av namnet på en instrumentpanel, rapport, arbetsbok, app eller ägare i sökfältet. Power BI söker igenom allt innehåll.
+I sökfältet skriver du hela namnet, eller en del av det, för en instrumentpanel, rapport, arbetsbok eller ägare. Power BI söker igenom allt innehåll.
 
 ![söka efter en rapport](./media/end-user-experience/power-bi-search-field.png)
 

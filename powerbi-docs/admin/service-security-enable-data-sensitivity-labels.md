@@ -10,10 +10,10 @@ ms.date: 10/25/2019
 ms.author: painbar
 LocalizationGroup: Data from files
 ms.openlocfilehash: 70a1aed046ac213e314da2ddaecafab9c5a941ee
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/23/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76537242"
 ---
 # <a name="enable-data-sensitivity-labels-in-power-bi-preview"></a>Aktivera känslighetsetiketter för data i Power BI (förhandsversion)

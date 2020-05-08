@@ -10,10 +10,10 @@ ms.date: 04/06/2020
 ms.author: mihart
 LocalizationGroup: Create reports
 ms.openlocfilehash: 9ce36bfa61b16bd30e59bc8491af80efdfdc8a35
-ms.sourcegitcommit: 915cb7d8088deb0d9d86f3b15dfb4f6f5b1b869c
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/10/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "81006804"
 ---
 # <a name="use-a-relative-date-slicer-and-filter-in-power-bi"></a>Använda ett relativt datumutsnitt eller filter i Power BI
@@ -46,7 +46,7 @@ För den första inställningen i det *relativa datumutsnittet* finns följande 
 
 * Nästa
 
-* Den här
+* Detta
 
 Med den andra inställningen (i mitten) i *det relativa datumutsnittet* kan du ange ett värde för att definiera det relativa datumintervallet.
 

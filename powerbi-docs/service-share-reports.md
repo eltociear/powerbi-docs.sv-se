@@ -11,10 +11,10 @@ ms.date: 01/29/2020
 ms.author: maggies
 LocalizationGroup: Share your work
 ms.openlocfilehash: 16041ebc9ba293ab166178e008b12277d94e89c3
-ms.sourcegitcommit: 64a270362c60581a385af7fbc31394e3ebcaca41
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76894917"
 ---
 # <a name="filter-and-share-a-power-bi-report"></a>Filtrera och dela en Power BI-rapport
@@ -81,6 +81,6 @@ Spara rapporten.
 ## <a name="next-steps"></a>Nästa steg
 * [Olika sätt att dela ditt arbete i Power BI](service-how-to-collaborate-distribute-dashboards-reports.md)
 * [Dela en instrumentpanel](service-share-dashboards.md)
-* Har du fler frågor? [Testa Power BI Community](https://community.powerbi.com/).
+* Fler frågor? [Testa Power BI Community](https://community.powerbi.com/).
 * Har du feedback till oss? Gå till [Power BI Community-webbplatsen](https://community.powerbi.com/) med dina förslag.
 

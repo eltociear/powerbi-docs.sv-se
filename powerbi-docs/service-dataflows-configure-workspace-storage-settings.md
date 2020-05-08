@@ -10,10 +10,10 @@ ms.date: 01/29/2020
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: 516d3a682b669400a015aaec101c7e79c14dbb44
-ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/30/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76889361"
 ---
 # <a name="configure-workspace-dataflow-settings-preview"></a>Konfigurera inställningar för arbetsytans dataflöde (förhandsversion)
@@ -88,7 +88,7 @@ I den angivna informationen visas platsen för dataflödets CDM-mapp under **Dat
 
 Vissa dataflödesfunktioner stöds inte när dataflödeslagring finns i Azure Data Lake Storage Gen2: 
 
-Power BI Pro, Premium och inbäddade arbetsytor:
+Power BI Pro-, Premium- och Embedded-arbetsytor:
 * Funktionen **länkade entiteter** stöds bara bland arbetsytor i samma lagringskonto
 * Behörigheter för arbetsytan gäller inte för dataflöden som lagras i Azure Data Lake Storage Gen2: endast ägaren av dataflödet kan komma åt den.
 * I annat fall är alla funktioner för datapreparation desamma som för dataflöden som lagras i Power BI-lagring
@@ -106,7 +106,7 @@ Det finns några ytterligare överväganden, som beskrivs i följande lista:
 2.  Ben, som också är medlem i arbetsytan som Anna skapade, vill använda Power BI Desktop och anslutningsappen för dataflöden för att hämta data från det dataflöde som Anna skapade.
 3.  Ben får ett fel eftersom han inte har lagts till som auktoriserad användare i dataflödets CDM-mapp i datasjön.
 
-    ![Fel vid försök att använda dataflöde](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_08.jpg)
+    ![Fel när dataflödet användes](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_08.jpg)
 
 
 ## <a name="next-steps"></a>Nästa steg
@@ -131,7 +131,7 @@ Mer information om Azure Storage finns i de här artiklarna:
 * [Säkerhetsguiden för Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-security-guide)
 * [Kom igång med github-exempel från Azure Data Services](https://aka.ms/cdmadstutorial)
 
-Mer information om Common Data Service finns i dess översiktsartikel:
+För mer information om den gemensamma datamodellen kan du läsa dess översiktsartikel:
 
 * [Common Data Service – översikt ](https://docs.microsoft.com/powerapps/common-data-model/overview)
 * [CDM-mappar](https://go.microsoft.com/fwlink/?linkid=2045304)

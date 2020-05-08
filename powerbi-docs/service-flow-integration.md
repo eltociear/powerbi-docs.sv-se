@@ -11,10 +11,10 @@ ms.date: 02/25/2020
 ms.author: maggies
 LocalizationGroup: Get started
 ms.openlocfilehash: aafba825c5bd4ece3c8b97256d5943f91b456cd7
-ms.sourcegitcommit: 032a77f2367ca937f45e7e751997d7b7d0e89ee2
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "77609688"
 ---
 # <a name="power-automate-and-power-bi"></a>Power Automate och Power BI
@@ -111,5 +111,5 @@ I den här uppgiften skapar vi ett enkelt flöde från början som utlöses av e
 * [Ange datavarningar i Power BI-tjänsten](service-set-data-alerts.md)
 * [Ange datavarningar på din iPhone](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
 * [Ställ in dataaviseringar i Power BI-mobilappen för Windows 10](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
-* Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
+* Fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
 

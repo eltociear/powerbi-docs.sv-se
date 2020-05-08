@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 01/22/2020
 ms.author: maggies
 ms.openlocfilehash: f8d711bba8dc7570f2d470554fd1d971639bbb7b
-ms.sourcegitcommit: a1409030a1616027b138128695b80f6843258168
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/24/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76710216"
 ---
 # <a name="always-encrypted-in-power-bi-report-server"></a>Always Encrypted i Power BI-rapportservern
@@ -27,7 +27,7 @@ För närvarande begränsar Power BI-rapportservern inte åtkomsten till Always 
 
 ### <a name="key-storage-strategies"></a>Strategier för nyckellagring
 
-|Lagringsutrymme  |Stöds  |
+|Lagring  |Stöds  |
 |---------|---------|
 |Windows-certifikatarkiv | Ja |
 |Azure Key Vault | Nej |
@@ -69,7 +69,7 @@ Användning av parametrar gäller endast för deterministisk kryptering.
 
 ## <a name="datatype-support"></a>Stöd för datatyp
 
-| SQL-datatyp | Stöder läsning av fält | Stöder användning av Gruppera efter-element | Aggregeringar som stöds (COUNT, DISTINCT, MAX, MIN, SUM osv.) | Stöder filtrering via likhet med hjälp av parametrar | Anteckningar |
+| SQL-datatyp | Stöder läsning av fält | Stöder användning av Gruppera efter-element | Aggregeringar som stöds (COUNT, DISTINCT, MAX, MIN, SUM osv.) | Stöder filtrering via likhet med hjälp av parametrar | Information |
 | --- | --- | --- | --- | --- | --- |
 | int | Ja | Ja | COUNT, DISTINCT | Ja, som heltal |   |
 | float | Ja | Ja | COUNT, DISTINCT | Ja, som flyttal |   |
@@ -92,5 +92,5 @@ Du måste aktivera Always Encrypted i anslutningssträngen för en SQL Server-da
 
 [Always Encrypted](https://docs.microsoft.com/sql/relational-databases/security/encryption/always-encrypted-database-engine) i SQL Server och Azure SQL Database
 
-Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+Fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 
