@@ -10,10 +10,10 @@ ms.date: 04/06/2020
 ms.author: maggies
 LocalizationGroup: Create reports
 ms.openlocfilehash: c41fa1e0c8510f64f9c6e53c83fe9ee8a2e75e67
-ms.sourcegitcommit: 915cb7d8088deb0d9d86f3b15dfb4f6f5b1b869c
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/10/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "81006903"
 ---
 # <a name="add-multiple-fields-to-a-slicer-preview"></a>Lägga till flera fält i ett utsnitt (förhandsversion)
@@ -43,4 +43,4 @@ Du kan ställa in enkel markering för utsnittet. Du ser en halvfylld cirkel fö
 ## <a name="next-steps"></a>Nästa steg
 
 - [Utsnitt i Power BI](../visuals/power-bi-visualization-slicers.md)
-- Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+- Fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

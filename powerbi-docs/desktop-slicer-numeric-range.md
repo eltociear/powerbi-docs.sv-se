@@ -1,21 +1,21 @@
 ---
 title: Använd numeriska intervallutsnitt i Power BI
 description: Lär dig hur du använder ett utsnitt för att begränsa till numeriska intervall i Power BI.
-author: davidiseminger
+author: maggiesMSFT
 ms.reviewer: ''
 featuredvideoid: zIZPA0UrJyA
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 04/06/2020
-ms.author: davidi
+ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: bd5f937154edf9f8b6a86fb7f53690943a7f3a53
-ms.sourcegitcommit: 915cb7d8088deb0d9d86f3b15dfb4f6f5b1b869c
+ms.openlocfilehash: 51bc2f7e3069302fd4ba7a652ee4350bceb8b7e6
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "81006651"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82866712"
 ---
 # <a name="use-the-numeric-range-slicer-in-power-bi"></a>Använd numeriska intervallutsnitt i Power BI
 

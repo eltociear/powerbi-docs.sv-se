@@ -9,18 +9,18 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
 ms.openlocfilehash: 99e9c407a92d126ddc4c6f4822106cfa6458dbac
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79205928"
 ---
 # <a name="power-bi-for-mixed-reality-app-preview"></a>Appen Power BI för Mixed Reality (förhandsversion)
 Visa dina instrumentpaneler och rapporter i appen Power BI for Mixed Reality (förhandsversion) i en virtuell värld, eller placera dem på specifika platser i din miljö. 
 
-[Hämta Power BI for Mixed Reality](https://www.microsoft.com/p/power-bi-mobile/9nblgggzlxn1?activetab=pivot%3aoverviewtab)-appen från Windows Store: I Windows Store heter den Power BI Mobile. Interagera med dina instrumentpaneler och rapporter i den virtuella världen, och välj sedan dem som du vill placera ut. 
+[Ladda ned appen Power BI for Mixed Reality](https://www.microsoft.com/p/power-bi-mobile/9nblgggzlxn1?activetab=pivot%3aoverviewtab) från Windows Store: i Windows Store kallas den för ”Power BI Mobile”. Interagera med dina instrumentpaneler och rapporter i den virtuella världen, och välj sedan dem som du vill placera ut. 
 
-## <a name="two-views-windows-classic-and-holographic"></a>Två vyer: Windows klassisk och holografisk
+## <a name="two-views-windows-classic-and-holographic"></a>Två vyer: den klassiska Windows-vyn och den holografiska vyn
 
 Power BI for Mixed Reality är baserad på Windows-mobilappen för Power BI och har ytterligare funktioner som är unika för mixad verklighet. När du startar Power BI for Mixed Reality är du i den klassiska Windows-vyn för Power BI. I den här vyn kan du navigera mellan de instrumentpaneler och rapporter som du har åtkomst till. När du hittar någon du vill ha kan du växla från den klassiska Windows-vyn till den holografiska vyn. 
 

@@ -14,7 +14,7 @@
       items:
         - name: Utforska Power BI-rapportservern på en virtuell dator
           href: tutorial-explore-report-server-web-portal.md
-    - name: Begrepp
+    - name: Koncept
       expanded: true
       items:
         - name: Nyheter
@@ -23,7 +23,7 @@
           href: admin-handbook-overview.md
         - name: Ändringslogg
           href: changelog.md
-        - name: Supporttider
+        - name: Supporttidslinje
           href: support-timeline.md
         - name: Always Encrypted-support
           href: always-encrypted-support.md
@@ -55,7 +55,7 @@
               href: 'https://go.microsoft.com/fwlink/?linkid=848723'
             - name: Bädda in rapporter
               href: quickstart-embed.md
-    - name: Gör så här
+    - name: Gör så här för att
       items:
         - name: Installera Power BI Desktop
           href: install-powerbi-desktop.md

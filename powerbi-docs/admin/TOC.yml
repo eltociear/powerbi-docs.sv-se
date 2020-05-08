@@ -11,7 +11,7 @@
           href: ../service-admin-where-is-my-tenant-located.md
         - name: Vad är Power BI Premium?
           href: ../service-premium-what-is.md
-    - name: Begrepp
+    - name: Koncept
       expanded: true
       items:
         - name: Administratörsrollen i Microsoft 365
@@ -30,7 +30,7 @@
               href: service-admin-migrate-data-germany.md
             - name: Vanliga frågor och svar för molnkunder i Tyskland
               href: ../service-govde-faq.md
-        - name: Vanliga frågor och svar
+        - name: Vanliga frågor och svar (FAQ)
           href: ../service-admin-faq.md
         - name: Vanliga frågor och svar om hög tillgänglighet och redundans
           href: ../service-admin-failover.md
@@ -44,7 +44,7 @@
               href: ../service-premium-capacity-scenarios.md
             - name: Vanliga frågor och svar om Power BI Premium
               href: ../service-premium-faq.md
-    - name: Gör så här
+    - name: Gör så här för att
       items:
         - name: Licensiering och registrering
           items:
@@ -131,7 +131,7 @@
           href: ../service-admin-power-bi-security.md
         - name: Sekretessnivåer
           href: ../desktop-privacy-levels.md
-    - name: Felsök
+    - name: Felsöka
       items:
         - name: Går det inte att logga in?
           href: ../power-bi-cannot-sign-in.md
@@ -147,5 +147,3 @@
           href: ../service-admin-alternate-email-address-for-power-bi.md
         - name: Så här använder du samma kontoinloggning för Power BI och Azure
           href: ../service-admin-how-to-use-the-same-account-as-azure.md
-        - name: Office 365-dedicerad – kända problem
-          href: ../service-admin-office-365-dedicated-known-issues.md

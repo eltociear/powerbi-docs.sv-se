@@ -10,10 +10,10 @@ ms.date: 10/28/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 132c795724b6f3744e0648ac1f3229c5e6538a97
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/09/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75758432"
 ---
 # <a name="add-visuals-to-a-power-bi-report-part-2"></a>Lägga till visuella objekt i en Power BI-rapport (del 2)
@@ -70,6 +70,6 @@ Skapa ett visuellt objekt genom att välja ett fält från fönstret **Fält**. 
    ![rapportarbetsyta med enpil från Kedja i fältlistan till Kedja i förklaringsbucketen](media/power-bi-report-add-visualizations-ii/power-bi-chain.png)
 
 ## <a name="next-steps"></a>Nästa steg
-* Du hittar mer i [Visualiseringar i Power BI-rapporter](power-bi-report-visualizations.md).  
-* Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
+* Mer om [Visualiseringar i Power BI-rapporter](power-bi-report-visualizations.md).  
+* Fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
 

@@ -11,10 +11,10 @@ ms.date: 07/25/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
 ms.openlocfilehash: 0c9e3db46c66fcd440ebd304370d31539dd5c5c7
-ms.sourcegitcommit: 313a5a6a01c09038a6152d681103accbd2faf437
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/20/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76282044"
 ---
 # <a name="add-images-videos-and-more-to-your-dashboard"></a>Lägga till bilder, videor med mera på din instrumentpanel
@@ -62,7 +62,7 @@ Om du vill lägga till företagets logotyp eller någon annan bild till din inst
 
       När kollegor klickar på den här bilden eller rubriken, vidarebefordras de till denna URL.
 
-   d. Välj **Tillämpa**. 
+   d. Välj **Använd**. 
 
       ![Fönstret Lägg till bildpanel](media/service-dashboard-add-widget/pbi-widget-add-image-new.png)
 
@@ -84,7 +84,7 @@ Om du vill lägga till en rubrik för en instrumentpanel, skriver du in rubriken
 
    c. Du kan också ange en anpassad länk för rubriken. En anpassad länk kan gå till en extern webbplats eller en instrumentpanel eller rapport på arbetsytan. Men i det här exemplet har vi lagt till hyperlänkar i själva textrutan så vi lämnar **Ställ in anpassad länk** avmarkerad.
 
-   d. Välj **Tillämpa**. 
+   d. Välj **Använd**. 
 
      ![Fönstret Lägg till textrutepanel](media/service-dashboard-add-widget/power-bi-add-textbox.png)
    
@@ -104,7 +104,7 @@ När du lägger till en YouTube eller Vimeo-videopanel på instrumentpanelen, sp
 
    c. Lägg till en hyperlänk för **Rubrik** och **Underrubrik** så att dina kollegor kan se hela spellistan på YouTube när de har tittat på den inbäddade videon. Det gör du genom att under **Funktioner** välja **Ställ in anpassad länk** och sedan ange **URL**:en för spellistan.
 
-   d. Välj **Tillämpa**.  
+   d. Välj **Använd**.  
 
    ![Fönstret Lägg till videopanel](media/service-dashboard-add-widget/power-bi-add-video-new.png)
 
@@ -181,7 +181,7 @@ Du kan klistra in eller skriva in HTML-innehåll som en panel i rapporten eller 
 
    b. Ange inbäddningskoden. I det här exemplet kopierar vi och klistrar in ett Twitter-flöde.
 
-   c. Välj **Tillämpa**.
+   c. Välj **Använd**.
 
    ![Fönstret Lägg till webbinnehållspanel](media/service-dashboard-add-widget/power-bi-add-web-content.png)
    
@@ -243,5 +243,5 @@ Så här gör du ändringar i en befintlig panel:
 ## <a name="next-steps"></a>Nästa steg
 [Introduktion till paneler på instrumentpanelen för Power BI-designers](service-dashboard-tiles.md)
 
-Har du fler frågor? [Testa Power BI Community](https://community.powerbi.com/).
+Fler frågor? [Testa Power BI Community](https://community.powerbi.com/).
 

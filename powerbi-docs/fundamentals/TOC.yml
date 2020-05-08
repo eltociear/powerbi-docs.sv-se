@@ -13,7 +13,7 @@
           href: ../power-bi-service-overview.md
         - name: Jämföra Power BI Desktop och tjänsten
           href: ../service-service-vs-desktop.md
-    - name: Begrepp
+    - name: Koncept
       items:
         - name: Vad är nytt i den senaste uppdateringen av Power BI Desktop?
           href: ../desktop-latest-update.md
@@ -43,11 +43,11 @@
           href: ../power-bi-browsers.md
     - name: Resurser
       items:
-        - name: Videor
+        - name: Videoklipp
           href: ../videos.md
-        - name: Webbseminarier
+        - name: Webbinarier
           href: ../webinars.md
-        - name: Power BI Desktop-videoklipp
+        - name: Power BI Desktop-videor
           href: ../desktop-videos.md
         - name: Uppdateringsarkiv för Power BI Desktop
           href: ../desktop-latest-update-archive.md
