@@ -11,10 +11,10 @@ ms.topic: overview
 ms.date: 01/03/2019
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 22c367dbc6160928541570bf2de37c51edcbfc14
-ms.sourcegitcommit: 6e56d038280efab86521602cbc089b3989dddbd0
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80550867"
 ---
 # <a name="visuals-in-power-bi"></a>Visuella objekt i Power BI
@@ -65,7 +65,7 @@ Du kommer åt organisationslagret genom att gå till fönstret *Visualisering*, 
 
 Visuella Power BI-objekt är paket som innehåller kod för att återge de data som de förses med. Alla kan skapa anpassade visuella objekt och paketera dem som enskilda `.pbiviz`-filer som sedan kan importeras till Power BI-rapporter.
 
-Om du vill importera ett visuellt Power BI-objekt klickar du på **Importera ett anpassat visuellt objekt** i fönstret *Visualisering* och väljer **Importera från fil**.
+Om du vill importera ett visuellt Power BI-objekt klickar du på *Importera ett anpassat visuellt objekt* i fönstret **Visualisering** och väljer **Importera från fil**.
 
 Om du är webbutvecklare och intresserad av att skapa egna visuella objekt och lägga till dem i AppSource så kan du lära dig att [utveckla ett visuellt Power BI-objekt](custom-visual-develop-tutorial.md) och att [publicera ett visuellt Power BI-objekt till AppSource](office-store.md).
 
@@ -80,4 +80,4 @@ Om du är webbutvecklare och intresserad av att skapa egna visuella objekt och l
 
 * Utforska [riktlinjerna för visuella Power BI-objekt](guidelines-powerbi-visuals.md).
 
-Har du fler frågor? Läs mer i [Vanliga frågor och svar om visuella Power BI-objekt](power-bi-custom-visuals-faq.md) eller i [Power BI-communityn](https://community.powerbi.com/).
+Fler frågor? Läs mer i [Vanliga frågor och svar om visuella Power BI-objekt](power-bi-custom-visuals-faq.md) eller i [Power BI-communityn](https://community.powerbi.com/).

@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 01/21/2020
 ms.author: maggies
 ms.openlocfilehash: 9ca5d47a938210c10903c916c54713b89923e287
-ms.sourcegitcommit: 34cca70ba84f37b48407d5d8a45c3f51fb95eb3c
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80751535"
 ---
 # <a name="change-data-source-connection-strings-in-power-bi-reports-with-powershell---power-bi-report-server"></a>Ändra anslutningssträngar för datakällor i Power BI-rapporter med PowerShell – Power BI-rapportserver
@@ -70,4 +70,4 @@ Du kan ändra anslutningssträngar för datakällor i Power BI-rapporter på Pow
 
 [Datakällor i sidnumrerade rapporter på Power BI-rapportservern](connect-data-sources.md) 
 
-Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+Fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 01/09/2020
 ms.author: maggies
 ms.openlocfilehash: 7052b0f045b98ce8e25822f76fe0b8391e298a47
-ms.sourcegitcommit: 4b926ab5f09592680627dca1f0ba016b07a86ec0
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75837623"
 ---
 # <a name="power-bi-report-scheduled-refresh-in-power-bi-report-server"></a>Schemalagd uppdatering av Power BI-rapport i Power BI-rapportserver
@@ -24,7 +24,7 @@ Schemalagd uppdatering är specifik för Power BI-rapporter med en inbäddad mod
 
 Schemalagd uppdatering konfigureras i hanteringsavsnittet för en rapport. Mer information om hur du konfigurerar schemalagd uppdatering finns i [så här konfigurerar du schemalagd uppdatering för Power BI-rapporter](configure-scheduled-refresh.md).
 
-## <a name="how-this-works"></a>Så här fungerar det
+## <a name="how-this-works"></a>Så fungerar det
 Flera komponenter ingår när du använder schemalagd uppdatering för Power BI-rapporter.
 
 * SQL Server Agent som en timer för att skapa schemalagda händelser.
@@ -67,4 +67,4 @@ Den datamodell som läses in i den interna Analysis Services-motorn under en sch
 ## <a name="next-steps"></a>Nästa steg
 Konfigurera [schemalagd uppdatering](configure-scheduled-refresh.md) på en Power BI-rapport.
 
-Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+Fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
