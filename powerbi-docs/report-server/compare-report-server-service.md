@@ -10,10 +10,10 @@ ms.subservice: powerbi-report-server
 ms.custom: mvc
 ms.date: 03/04/2020
 ms.openlocfilehash: 7762ace1da913713567b79a9650b3f07aa71146d
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/14/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79381064"
 ---
 # <a name="comparing-power-bi-report-server-and-the-power-bi-service"></a>En jämförelse av Power BI-rapportservern och Power BI-tjänsten
@@ -22,9 +22,9 @@ Power BI-rapportservern och Power BI-tjänsten har många likheter och vissa vik
 
 ## <a name="features-of-power-bi-report-server-and-the-power-bi-service"></a>Funktioner i Power BI-rapportservern och i Power BI-tjänsten
 
-| Funktioner | Power BI-rapportserver | Power BI-tjänst | Anteckningar |
+| Funktioner | Power BI-rapportserver | Power BI-tjänst | Information |
 |---------|---------|---------|---------|
-| Distribution | Lokal eller värdbaserat moln | Molnet | Power BI-rapportservern kan distribueras i virtuella Azure-datorer (värdbaserat moln) om den är licensierad via Power BI Premium eller SQL Server Enterprise med Software Assurance.|
+| Distribution | Lokal eller värdbaserat moln | Moln | Power BI-rapportservern kan distribueras i virtuella Azure-datorer (värdbaserat moln) om den är licensierad via Power BI Premium eller SQL Server Enterprise med Software Assurance.|
 | Källdata | I molnet och/eller lokalt | I molnet och/eller lokalt |  |
 | Licens | Power BI Premium eller SQL Server EE med Software Assurance (SA) | Power BI Pro och/eller för Power BI Premium | |  
 | Livscykel | Modern livscykelprincip | Helt hanterad tjänst |  |
@@ -36,7 +36,7 @@ Power BI-rapportservern och Power BI-tjänsten har många likheter och vissa vik
 | Realtidsuppspelning | Nej | Ja | [Realtidsuppspelning i Power BI](../service-real-time-streaming.md) |
 | Instrumentpaneler | Nej | Ja | [Instrumentpaneler i Power BI-tjänsten](../consumer/end-user-dashboards.md) |
 | Distribuera grupp av rapporter med hjälp av appar | Nej | Ja | [Skapa och publicera appar med instrumentpaneler och rapporter](../service-create-distribute-apps.md) |
-| Innehållspaket | Nej | Ja | [Organisationsinnehållspaket: Introduktion](../service-organizational-content-pack-introduction.md) |
+| Innehållspaket | Nej | Ja | [Organisationsinnehållspaket: introduktion](../service-organizational-content-pack-introduction.md) |
 | Ansluta till tjänster som Salesforce | Ja | Ja | [Ansluta till de tjänster som du använder](../service-connect-to-services.md) med innehållspaket i Power BI-tjänsten. I Power BI-rapportservern använder du certifierade kopplingar för att ansluta till tjänster. Mer information finns i [Power BI-rapportdatakällor i Power BI-rapportserver](data-sources.md). |
 | Frågor och svar | Nej | Ja | [Frågor och svar i Power BI-tjänsten och Power BI Desktop](../power-bi-tutorial-q-and-a.md) 
 | Snabba insikter | Nej | Ja | [Automatiskt skapa datainsikter med Power BI](../consumer/end-user-insights.md) |
@@ -51,8 +51,8 @@ Power BI-rapportservern och Power BI-tjänsten har många likheter och vissa vik
 | Helskärmsläge | Nej | Ja | [Helskärmsläge](../consumer/end-user-focus.md) i Power BI-tjänsten |
 | Avancerat Office 365-samarbete | Nej | Ja | [Samarbeta på en arbetsyta](../service-collaborate-power-bi-workspace.md) med Office 365 |
 | R-visualiseringar | Nej | Ja | [Skapa visuella R-objekt](../desktop-r-visuals.md) i Power BI Desktop och publicera dem till Power BI-tjänsten. Du kan inte spara Power BI-rapporter med visuella R-objekt till Power BI-rapportserver.  |
-| Förhandsgranskningsfunktioner | Nej | Ja | [Anmäl dig till förhandsversionsfunktioner](../consumer/end-user-preview-features.md) i Power BI-tjänsten |
-| Visuella objekt för Power BI | Ja | Ja | [Visuella Power BI-objekt](../developer/visuals/power-bi-custom-visuals.md) |
+| Funktioner i förhandsversionen | Nej | Ja | [Anmäl dig till förhandsversionsfunktioner](../consumer/end-user-preview-features.md) i Power BI-tjänsten |
+| Visuella objekt för Power BI | Ja | Ja | [Visuella objekt för Power BI](../developer/visuals/power-bi-custom-visuals.md) |
 | Sammansatta modeller | Nej | Ja |
 | Power BI Desktop | Version som är optimerad för rapportservern och som kan laddas ned med rapportservern | Version som är optimerad för Power BI-tjänsten, tillgänglig från Windows Store | [Power BI Desktop för rapportservern](https://powerbi.microsoft.com/report-server/) <br><br> [Power BI Desktop för Power BI-tjänsten](https://aka.ms/pbidesktopstore) |
 

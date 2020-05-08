@@ -10,10 +10,10 @@ ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: de65fed27260f3e93c4e91fcb680d2e5190543b0
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/02/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74698220"
 ---
 # <a name="using-incremental-refresh-with-power-bi-dataflows"></a>Använda inkrementell uppdatering med Power BI-dataflöden
@@ -162,6 +162,6 @@ Mer information om Power Query och schemalagd uppdatering finns i följande arti
 * [Frågeöversikt i Power BI Desktop](desktop-query-overview.md)
 * [Konfigurera schemalagd uppdatering](refresh-scheduled-refresh.md)
 
-Mer information om Common Data Service finns i dess översiktsartikel:
+För mer information om den gemensamma datamodellen kan du läsa dess översiktsartikel:
 * [Common Data Service – översikt ](https://docs.microsoft.com/powerapps/common-data-model/overview)
 

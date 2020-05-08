@@ -10,10 +10,10 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 02/24/2020
 ms.openlocfilehash: f4d47347c98d19afdfbf07615842bfb4649dc1b9
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/14/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79379270"
 ---
 # <a name="power-bi-visuals-interactivity-utils"></a>Interaktivitetsverktyg för visuella Power BI-objekt
@@ -289,6 +289,6 @@ Datapunkter innehåller vanligtvis markeringar och värden. Gränssnittet utöka
 
 * [Läs om hur du hanterar markeringar när du växlar mellan bokmärken](bookmarks-support.md#visuals-with-selection)
 
-* [Läs om hur du lägger till snabbmenyn för datapunkter till visuella objekt](context-menu.md)
+* [Läs om hur du lägger till snabbmenyn för visuella datapunkter](context-menu.md)
 
 * [Läs om hur du använder markeringshanteraren för att lägga till markeringar i visuella Power BI-objekt](selection-api.md)

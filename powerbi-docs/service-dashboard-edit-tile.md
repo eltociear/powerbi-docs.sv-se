@@ -11,10 +11,10 @@ ms.date: 03/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
 ms.openlocfilehash: bdd2ec136ae741e15e0cb60d141c651cd5fb6749
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79207607"
 ---
 # <a name="edit-or-remove-a-dashboard-tile"></a>Redigera eller ta bort en panel på instrumentpanelen
@@ -117,7 +117,7 @@ Om du väljer en panel skickas du som standard till rapporten där panelen skapa
 
     ![Dialogrutan Funktioner](media/service-dashboard-edit-tile/power-bi-custom-link.png)
 
-3. Välj **Tillämpa**.
+3. Välj **Använd**.
 
 4. Den nya rubriken visas på panelen.  När du väljer panelen, öppnar Power BI också instrumentpanelen Personalfrågor. 
 
@@ -129,8 +129,8 @@ Om du väljer en panel skickas du som standard till rapporten där panelen skapa
 1. Från ellipsens listmeny väljer du **Fäst panel** ![fästikon](media/service-dashboard-edit-tile/pinnooutline.png).
 2. Välj om du ska fästa en dublett av den här panelen på en befintlig eller ny instrumentpanel. 
    
-   ![Dialogrutan Fäst på instrumentpanelen](media/service-dashboard-edit-tile/pbi_pintoanotherdash.png)
-3. Välj **fäst**.
+   ![dialogrutan Fäst på instrumentpanelen](media/service-dashboard-edit-tile/pbi_pintoanotherdash.png)
+3. Välj **Fäst**.
 
 <a name="delete"></a>
 
@@ -147,5 +147,5 @@ Om du väljer en panel skickas du som standard till rapporten där panelen skapa
 
 [Grundläggande begrepp för designers i Power BI-tjänsten](service-basic-concepts.md)
 
-Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
+Fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
 

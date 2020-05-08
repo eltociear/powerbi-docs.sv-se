@@ -10,10 +10,10 @@ ms.date: 07/26/2019
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: 2492996c8bbc6ea7a8d359b4b1015de67bb17430
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/14/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79378718"
 ---
 # <a name="create-tooltips-based-on-report-pages-in-power-bi-desktop"></a>Skapa knappbeskrivningar baserat på rapportsidor i Power BI Desktop
@@ -58,7 +58,7 @@ Först måste du ändra skjutreglaget vid **Knappbeskrivning** till **På** i ko
 
 ![Aktivera skjutreglaget för knappbeskrivning för att ange att sidan är en knappbeskrivning](media/desktop-tooltips/desktop-tooltips_07.png)
 
-När skjutreglaget är aktiverat anger du vilka fält du vill att rapportknappbeskrivningen ska visas för. För visuella objekt i rapporten som innehåller det fält du anger kommer knappbeskrivningen att visas. Du anger vilket eller vilka fält som ska användas genom att dra dem till **bucketen **Knappbeskrivningsfält** i avsnittet **Fält** i fönstret Visualiseringar**. På följande bild har fältet *SalesAmount* dragits till bucketen **Knappbeskrivningsfält**.
+När skjutreglaget är aktiverat anger du vilka fält du vill att rapportknappbeskrivningen ska visas för. För visuella objekt i rapporten som innehåller det fält du anger kommer knappbeskrivningen att visas. Du anger vilket eller vilka fält som ska användas genom att dra dem till bucketen **Knappbeskrivningsfält** i avsnittet **Fält** i fönstret **Visualiseringar**. På följande bild har fältet *SalesAmount* dragits till bucketen **Knappbeskrivningsfält**.
 
 ![Lägg till fält för att ange var knappbeskrivningen ska visas](media/desktop-tooltips/desktop-tooltips_08.png)
  

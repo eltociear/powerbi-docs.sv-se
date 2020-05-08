@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 03/12/2020
 LocalizationGroup: Share your work
 ms.openlocfilehash: 86992d2e1426616f8d902a9f49d35407fde60ef2
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/14/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79376763"
 ---
 # <a name="ways-to-share-your-work-in-power-bi"></a>Olika sätt att dela ditt arbete i Power BI
@@ -140,4 +140,4 @@ Med **Publicera på webben** kan du publicera Power BI-rapporter till hela inter
 
 Har du feedback till oss? Gå till [Power BI Community-webbplatsen](https://community.powerbi.com/) med dina förslag.
 
-Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
+Fler frågor? [Prova Power BI Community](https://community.powerbi.com/)

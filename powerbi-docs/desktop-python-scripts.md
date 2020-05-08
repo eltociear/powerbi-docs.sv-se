@@ -10,10 +10,10 @@ ms.date: 01/13/2020
 ms.author: otarb
 LocalizationGroup: Connect to data
 ms.openlocfilehash: d5b57b782af52542ed944b5e5e7504a974ee9d81
-ms.sourcegitcommit: ad638d553d5f7f5831587791ffa7aa37a47dd6ae
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/26/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80273350"
 ---
 # <a name="run-python-scripts-in-power-bi-desktop"></a>Kör Python-skript i Power BI Desktop
@@ -118,7 +118,7 @@ Vi rekommenderar att du använder den officiella Python-distributionen från htt
 
 Du kan starta Power BI Desktop från din anpassade kommandotolk för din Python-miljö som en möjlig lösning.
 
-### <a name="refresh"></a>Uppdatera
+### <a name="refresh"></a>Refresh
 
 Du kan uppdatera ett Python-skript i Power BI Desktop. Uppdatera genom att gå till menyfliken **Start** och välja **Uppdatera**. När du uppdaterar ett Python-skript kör Power BI Desktop Python-skriptet igen.
 

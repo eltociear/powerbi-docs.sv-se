@@ -10,10 +10,10 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
 ms.openlocfilehash: 2cca057b2a91129745fe739160ffbb3e9e25b6da
-ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/21/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80113702"
 ---
 # <a name="add-interactivity-into-visual-by-power-bi-visuals-selections"></a>Lägga till interaktivitet i visuella objekt med Power BI-markeringar
@@ -81,7 +81,7 @@ Objektet har motsvarande metoder för att skapa `selections` för olika typer av
 
 Vi ska se hur urval visas i mappningen av kategoriska datavyer i exempeldatamängden:
 
-| Tillverkare | Typ | Värde |
+| Tillverkare | Typ | Value |
 | - | - | - |
 | Chrysler | Inhemsk bil | 28883 |
 | Chrysler | Inhemsk lastbil | 117131 |
@@ -161,7 +161,7 @@ Och det visuella objektet ska kunna segmentera data från `Manufacturer` och `Ty
 
 När användaren exempelvis väljer `Chrysler` i `Manufacturer`, bör andra visuella objekt visa följande data:
 
-| Tillverkare | Typ | Värde |
+| Tillverkare | Typ | Value |
 | - | - | - |
 | **Chrysler** | Inhemsk bil | 28883 |
 | **Chrysler** | Inhemsk lastbil | 117131 |
@@ -170,7 +170,7 @@ När användaren exempelvis väljer `Chrysler` i `Manufacturer`, bör andra visu
 
 När användaren väljer `Import Car` i `Type` (väljer data i serier), bör de andra visuella objekten visa följande data:
 
-| Tillverkare | Typ | Värde |
+| Tillverkare | Typ | Value |
 | - | - | - |
 | Chrysler | **Importerad bil** | 0 |
 | Ford | **Importerad bil** | 0 |

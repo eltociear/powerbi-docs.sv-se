@@ -10,10 +10,10 @@ ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: ed1100a418259845e6a2656e1c5bab6d80358df0
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/14/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79381087"
 ---
 # <a name="real-time-streaming-in-power-bi"></a>Realtidsuppspelning i Power BI
@@ -43,7 +43,7 @@ Det finns två saker att tänka på med fästa paneler från en push-datauppsät
 * När en visualisering har fästs på en instrumentpanel, kan du använda **frågor och svar** för att ställa frågor till push-datauppsättningen på naturligt språk. När du ställer en **frågor och svar**-fråga, kan du fästa tillbaka den resulterande visualiseringen till instrumentpanelen och instrumentpanelen kommer *också* uppdateras i realtid.
 
 ### <a name="streaming-dataset"></a>Strömmande datauppsättning
-Med en **strömmande datauppsättning** pushas data också till Power BI-tjänsten med en viktig skillnad: Power BI lagrar endast data i ett tillfälligt cacheminne som snabbt förfaller. Det tillfälliga cacheminnet används bara för att visa visuella objekt med en tillfällig historisk information, till exempel ett linjediagram med ett tidsfönster på en timme.
+Med en **strömmande datauppsättning**, pushas data också till Power BI-tjänsten med en viktig skillnad: Power BI lagrar endast data i ett tillfälligt cacheminne som snabbt förfaller. Det tillfälliga cacheminnet används bara för att visa visuella objekt med en tillfällig historisk information, till exempel ett linjediagram med ett tidsfönster på en timme.
 
 Med en **strömmande datauppsättning**, finns det *ingen* underliggande databas så du *kan* skapa rapportvisualiseringar med data som flödar in från strömmen. Du kan inte använda rapportfunktionaliteter som filtrering, visuella Power BI-objekt och andra rapportfunktioner.
 

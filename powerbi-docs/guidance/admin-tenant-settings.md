@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 01/29/2020
 ms.author: v-pemyer
 ms.openlocfilehash: fdd7504823f088ed0e88657a6fcccaeb9a5a36d0
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79487819"
 ---
 # <a name="tenant-admin-settings-guidance"></a>Guide till administratörsinställningar för klientorganisationer
@@ -25,7 +25,7 @@ Vi ger vägledning kring specifika klientinställningar som bidrar till att för
 
 ## <a name="improve-power-bi-experience"></a>Förbättra Power BI-miljön
 
-### <a name="publish-get-help-information"></a>Publicera Få hjälp-information
+### <a name="publish-get-help-information"></a>Publicera ”Få hjälp-information”
 
 Vi rekommenderar att du konfigurerar interna Power BI-relaterade webbplatser med [Microsoft Teams](/microsoftteams)eller någon annan samarbetsplattform. Sådana webbplatser kan användas till att lagra utbildningsdokumentation, hålla diskussioner, begära licenser och att ge svar på frågor.
 

@@ -9,10 +9,10 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
 ms.openlocfilehash: 26e68f64f9cce2251e98c6a831200b6fbc5d2dd8
-ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/21/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80114494"
 ---
 # <a name="code-snippets-for-migrating-content-from-power-bi-workspace-collection"></a>Kodfragment för migrering av innehåll från Power BI-arbetsytesamling
@@ -232,11 +232,11 @@ I det här fragmentet antar vi att datauppsättningen som ska skickas redan finn
 [Migreringsverktyg för Power BI Embedded](migrate-tool.md)  
 [Bädda in med Power BI](embedding.md)  
 [Så här migrerar du innehåll från Power BI Embedded-arbetsytesamlingar till Power BI](migrate-from-powerbi-embedded.md)  
-[Så här bäddar du in dina Power BI-instrumentpaneler, -rapporter och -paneler](embed-sample-for-your-organization.md)  
+[Hur du bäddar in dina Power BI-instrumentpaneler, -rapporter och -paneler](embed-sample-for-your-organization.md)  
 [Power BI Premium – vad är det?](../../service-premium-what-is.md)  
 [JavaScript API Git Repo](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Power BI C# Git Repo](https://github.com/Microsoft/PowerBI-CSharp)  
 [JavaScript-inbäddningsexempel](https://microsoft.github.io/PowerBI-JavaScript/demo/)  
 [Power BI Premium – white paper](https://aka.ms/pbipremiumwhitepaper)  
 
-Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+Fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

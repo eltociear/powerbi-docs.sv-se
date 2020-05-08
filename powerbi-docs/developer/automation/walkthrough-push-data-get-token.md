@@ -9,13 +9,13 @@ ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.date: 05/29/2019
 ms.openlocfilehash: 7e74b01a6b12302393a3e4bc40b2e9cccfc13d63
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79488279"
 ---
-# <a name="step-2-get-an-authentication-access-token"></a>Steg 2: Hämta en autentiseringsåtkomsttoken
+# <a name="step-2-get-an-authentication-access-token"></a>Steg 2: hämta en åtkomsttoken för autentisering
 
 Den här artikeln är det andra steget i serien [Push-överföra data till en Power BI-datamängd](walkthrough-push-data.md).
 
@@ -115,7 +115,7 @@ När du får en autentiseringstoken, kan du anropa valfri Power BI-åtgärd.
 I nästa artikel i serien ska du [skapa en datamängd i Power BI](walkthrough-push-data-create-dataset.md).
 
 
-## <a name="complete-code-listing"></a>Fullständig kodlista
+## <a name="complete-code-listing"></a>Slutföra kodlistning
 
 ```csharp
 using System;
@@ -186,4 +186,4 @@ namespace walkthrough_push_data
 * [Översikt över Power BI REST API](overview-of-power-bi-rest-api.md)  
 * [REST API:er för Power BI](https://docs.microsoft.com/rest/api/power-bi/)  
 
-Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
+Fler frågor? [Prova Power BI Community](https://community.powerbi.com/)

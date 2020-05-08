@@ -9,10 +9,10 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 10/01/2018
 ms.openlocfilehash: 51c43a19613381d39e0397864e55baed2022663c
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79491374"
 ---
 # <a name="power-bi-permissions"></a>Power BI-behörigheter
@@ -53,4 +53,4 @@ Ett program kan begära behörighet när den först försöker logga in på en a
 * **Auktoriseringstoken** – Används för att autentisera API-anrop åt en annan användare. De kommer att tillhöra ett visst program. Tokens har en angiven livslängd och när de upphör att gälla kommer de behöva uppdateras.
 * **Uppdateringstoken** – När tokens upphör sker en process för att uppdatera dem.
 
-Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+Fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 02/25/2020
 LocalizationGroup: Share your work
 ms.openlocfilehash: 1a3d4c264e343382422cbe2a881b5fcedaa19e13
-ms.sourcegitcommit: 20f15ee7a11162127e506b86d21e2fff821a4aee
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "82585258"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Publicera på webben från Power BI
@@ -87,13 +87,13 @@ Du kan redigera bredd och höjd manuellt så att det blir exakt som du vill att 
 
 Du kan prova att lägga till 56 bildpunkter till iFrame-höjden för att ta hänsyn till det nedre fältets aktuella storlek och uppnå en mer exakt anpassning. Om din rapportsida använder dynamisk storlek kan du använda någon av storlekarna i tabellen nedan för att uppnå en anpassning utan letterbox-format.
 
-| Förhållande | Storlek | Dimension (bredd x höjd) |
+| Proportion | Storlek | Dimension (bredd x höjd) |
 | --- | --- | --- |
 | 16:9 |Liten |640 x 416 px |
-| 16:9 |Medel |800 x 506 px |
+| 16:9 |Medium |800 x 506 px |
 | 16:9 |Stor |960 x 596 px |
 | 4:3 |Liten |640 x 536 px |
-| 4:3 |Medel |800 x 656 px |
+| 4:3 |Medium |800 x 656 px |
 | 4:3 |Stor |960 x 776 px |
 
 ## <a name="manage-embed-codes"></a>Hantera inbäddningskoder
@@ -139,7 +139,7 @@ Sidan **Hantera inbäddningskoder** innehåller en statuskolumn. Som standard ä
 | --- | --- |
 | **Aktiv** |Rapporten är tillgänglig för Internet-användare kan visa och interagera med den. |
 | **Blockerad** |Rapportinnehållet strider mot [användningsvillkoren för Power BI](https://powerbi.microsoft.com/terms-of-service). Microsoft har blockerat det. Kontakta supporten om du tror att innehållet har blockerats av misstag. |
-| **Stöds inte** |Rapportens datauppsättning använder säkerhet på radnivå eller en annan konfiguration som inte stöds. En fullständig lista finns i avsnittet [**Begränsningar**](#limitations). |
+| **Stöds ej** |Rapportens datauppsättning använder säkerhet på radnivå eller en annan konfiguration som inte stöds. En fullständig lista finns i avsnittet [**Begränsningar**](#limitations). |
 | **Intrång** |Inbäddningskoden ligger utanför den definierade klientorganisationsprincipen. Denna status inträffar vanligtvis när en inbäddningskod har skapats och klientorganisationsinställningen **Publicera på webben** ändrats till att exkludera den användare som äger inbäddningskoden. Om klientorganisationsinställningen är inaktiverad, eller om användaren inte längre kan skapa inbäddningskoder, visar befintliga inbäddningskoder statusen **Intrång**. Mer information finns i avsnittet [Hitta din Power BI-administratör](#find-your-power-bi-administrator) i den här artikeln. |
 
 ## <a name="report-a-concern-with-publish-to-web-content"></a>Rapportera ett problem med innehåll för Publicera på webben
@@ -199,4 +199,4 @@ Du behöver [hitta någon av dessa personer](https://docs.microsoft.com/office36
 
 - [Bädda in en rapport på en säker portal eller webbplats](service-embed-secure.md)
 
-Fler frågor? [Försök med Power BI Community](https://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
