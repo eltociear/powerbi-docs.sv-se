@@ -10,13 +10,13 @@ ms.date: 01/10/2020
 ms.author: davidi
 LocalizationGroup: quickstart
 ms.openlocfilehash: 5aed52ec232d3e603d69bfe93640187401279ff6
-ms.sourcegitcommit: 801d2baa944469a5b79cf591eb8afd18ca4e00b1
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/11/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75885220"
 ---
-# <a name="quickstart-connect-to-data-in-power-bi-desktop"></a>Snabbstart: Ansluta till datakällor i Power BI Desktop
+# <a name="quickstart-connect-to-data-in-power-bi-desktop"></a>Snabbstart: Anslut till data i Power BI Desktop
 
 I den här snabbstarten ansluter du till data med hjälp av Power BI Desktop, vilket är det första steget när du ska skapa datamodeller och rapporter.
 
@@ -38,7 +38,7 @@ När du har installerat Power BI Desktop startar du programmet så att det körs
 
 ![Power BI Desktop med en tom arbetsyta](media/desktop-quickstart-connect-to-data/qs-connect-data_01.png)
 
-## <a name="connect-to-data"></a>Ansluta till data
+## <a name="connect-to-data"></a>Anslut till data
 
 Med Power BI Desktop kan du ansluta till många olika typer av data. Det kan bland annat vara grundläggande datakällor som en Microsoft Excel-fil. Du kan ansluta till onlinetjänster som innehåller alla möjliga olika typer av data som Salesforce, Microsoft Dynamics, Azure Blob Storage och många andra.
 

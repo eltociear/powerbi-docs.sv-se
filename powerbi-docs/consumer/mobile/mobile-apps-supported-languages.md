@@ -1,5 +1,5 @@
 ---
-title: Språk som stöds i Power BI-mobilappar
+title: Språk som stöds i Power BI-mobilapparna
 description: Se listan över språk som stöds i Power BI-mobilappar.
 author: paulinbar
 ms.reviewer: ''
@@ -9,13 +9,13 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
 ms.openlocfilehash: 4f135a411d69835e925cf97b418bda6ae80adc1a
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79113176"
 ---
-# <a name="supported-languages-in-the-power-bi-mobile-apps"></a>Språk som stöds i Power BI-mobilappar
+# <a name="supported-languages-in-the-power-bi-mobile-apps"></a>Språk som stöds i Power BI-mobilapparna
 Power BI-mobilapparna stöder för närvarande följande språk:
 
 * Arabiska (endast iOS)
@@ -53,7 +53,7 @@ Power BI-mobilapparna stöder för närvarande följande språk:
 * Ukrainska – українська
 * Vietnamesiska – Tiếng Việt
 
-## <a name="notes"></a>Anteckningar
+## <a name="notes"></a>Information
 * Power BI använder det språk som motsvarar de nationella inställningarna för den mobila enheten. Du kan inte ställa in ett annat språk.
 * Meddelanden är bara på engelska. Om någon till exempel delar en instrumentpanel med dig, får du meddelandet på engelska. 
 

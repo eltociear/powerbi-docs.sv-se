@@ -9,10 +9,10 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 02/20/2020
 ms.openlocfilehash: 20b41762f7b38bd4ed26add97abb4eec1da0c000
-ms.sourcegitcommit: d42fbe235b6cf284ecc09c2a3c005459cec11272
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/22/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "77558559"
 ---
 # <a name="hardware-and-software-requirements-for-installing-power-bi-report-server"></a>Maskin- och programvarukrav för att installera Power BI-rapportservern
@@ -25,9 +25,9 @@ I den här artikeln beskrivs minimikraven för maskin- och programvara för inst
 | --- | --- |
 | .NET Framework |4.7<br><br>Du kan installera .NET Framework manuellt från [Microsoft .NET Framework 4.7 (webbinstallationsprogram) för Windows](https://support.microsoft.com/en-us/kb/3186500).<br/><br/> Mer information, rekommendationer och vägledning för .NET Framework 4.7 finns i [.NET Framework Deployment Guide for Developer (.NET Framework-distributionsguiden för utvecklare)](https://docs.microsoft.com/dotnet/framework/deployment/deployment-guide-for-developers).<br/><br/>För Windows 8.1 och Windows Server 2012 R2 behöver du [KB2919355](https://support.microsoft.com/kb/2919355) innan du installerar .NET Framework 4.7. |
 | Hårddisk |Power BI-rapportservern kräver minst 1 GB ledigt utrymme på hårddisken.<br><br>Ytterligare utrymme krävs på den databasserver som är värd för rapportserverdatabasen. |
-| Minne |**Minsta:** 1 GB<br/><br/> **Rekommenderas:** Minst 4 GB |
-| Processorhastighet |**Minst:** x64-processor: 1,4 GHz<br/><br/> **Rekommenderas:** 2,0 GHz eller snabbare |
-| Processortyp |x64-processor: AMD Opteron, AMD Athlon 64, Intel Xeon med Intel EM64T-stöd, Intel Pentium IV med EM64T-stöd |
+| Minne |**Minst:** 1 GB<br/><br/> **Rekommenderat:** Minst 4 GB |
+| Processorhastighet |**Minst:** x64-processor: 1,4 GHz<br/><br/> **Rekommenderat:** 2,0 GHz eller snabbare |
+| Processortyp |x64.processor: AMD Opteron, AMD Athlon 64, Intel Xeon med Intel EM64T-stöd, Intel Pentium IV med EM64T-stöd |
 | Operativsystem |Windows Server 2019 Datacenter<br><br>Windows Server 2019 Standard<br><br>Windows Server 2016 Datacenter<br><br>Windows Server 2016 Standard<br><br>Windows Server 2012 R2 Datacenter<br><br>Windows Server 2012 R2 Standard<br><br>Windows Server 2012 R2 Essentials<br><br>Windows Server 2012 R2 Foundation<br><br>Windows Server 2012 Datacenter<br><br>Windows Server 2012 Standard<br><br>Windows Server 2012 Essentials<br><br>Windows Server 2012 Foundation<br><br>Windows 10 Home<br><br>Windows 10 Professional<br><br>Windows 10 Enterprise<br><br>Windows 8.1<br><br>Windows 8.1 Pro<br><br>Windows 8.1 Enterprise<br><br>Windows 8<br><br>Windows 8 Pro<br><br>Windows 8 Enterprise |
 
 > [!NOTE]
@@ -64,7 +64,7 @@ Power BI-rapportservern installerar standardvärden för att konfigurera de grun
 
 ## <a name="power-bi-reports-and-analysis-services-live-connections"></a>Power BI-rapporter och realtidsanslutningar för Analysis Services
 
-Du kan använda en realtidsanslutning för tabellinstanser eller flerdimensionella instanser. Analysis Services-servern måste vara av rätt version och utgåva för att fungera korrekt.
+Du kan använda en realtidsanslutning för tabell- eller flerdimensionella instanser. Analysis Services-servern måste vara av rätt version och utgåva för att fungera korrekt.
 
 | **Serverversion** | **Obligatorisk SKU** |
 | --- | --- |
@@ -80,4 +80,4 @@ Du kan använda en realtidsanslutning för tabellinstanser eller flerdimensionel
 [Hämta Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
 [Ladda ned SQL Server Data Tools (SSDT)](https://go.microsoft.com/fwlink/?LinkID=616714)
 
-Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+Fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

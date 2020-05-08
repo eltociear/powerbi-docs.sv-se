@@ -10,10 +10,10 @@ ms.date: 02/14/2020
 ms.author: davidi
 LocalizationGroup: Transform and shape data
 ms.openlocfilehash: b7ff14b4932ba77b47fdb603124d29858c622fc7
-ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "77427676"
 ---
 # <a name="use-aggregations-in-power-bi-desktop"></a>Använda sammansättningar i Power BI Desktop
@@ -46,11 +46,11 @@ När du har skapat den nya tabellen med de fält du vill ha högerklickar du på
 I dialogrutan **Hantera sammansättningar** visas en rad för varje kolumn i tabellen där du kan ange sammansättningsbeteendet. I följande exempel kommer frågor till detaljtabellen **Sales** att omdirigeras internt till sammansättningstabellen **Sales Agg**. 
 
 Listrutan **Sammanfattning** i dialogrutan **Hantera sammansättningar** innehåller följande värden:
-- Antal
+- Count
 - GroupBy
 - Max
 - Min
-- Summa
+- Sum
 - Antal tabellrader
 
 ![Hantera dialogrutan sammansättningar](media/desktop-aggregations/aggregations_07.jpg)
@@ -118,7 +118,7 @@ Om följande dimensionella tabeller är de vanligaste för frågorna med högt a
 
 - Geografi
 - Kund
-- Datum
+- Date
 - Produktunderkategori
 - Produktkategori
 

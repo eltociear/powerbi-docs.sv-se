@@ -9,10 +9,10 @@ ms.assetid: 87ddb651-a1d0-4a42-8ea9-04dea3f6afa4
 author: maggiesMSFT
 ms.author: maggies
 ms.openlocfilehash: 48e81c91a4555b4c8ea847ddffb1413058bbb152
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/07/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "78921158"
 ---
 # <a name="expression-examples-in-power-bi-report-builder"></a>Uttrycksexempel i Power BI Report Builder
@@ -34,10 +34,10 @@ Det här avsnittet innehåller exempel på uttryck som kan användas för ofta f
   
 Mer information om enkla och komplexa uttryck, var du kan använda uttryck och samt de typer av referenser som du kan inkludera i uttryck finns i ämnena under [Uttryck i Power BI Report Builder](report-builder-expressions.md). 
   
-## <a name="functions"></a>Functions  
+## <a name="functions"></a>Funktioner  
  Många uttryck rapporter innehåller funktioner. Du kan formatera data, tillämpa logik och komma åt rapportmetadata med hjälp av dessa funktioner. Du kan skriva uttryck som använder funktioner från Microsoft Visual Basic-körningsbiblioteket samt från namnrymderna `xref:System.Convert` och `xref:System.Math`. Du kan lägga till referenser i funktioner i anpassad kod. Du kan även använda klasser från Microsoft .NET Framework, däribland `xref:System.Text.RegularExpressions`.  
   
-##  <a name="VisualBasicFunctions"></a> Visual Basic-funktioner  
+##  <a name="visual-basic-functions"></a><a name="VisualBasicFunctions"></a> Visual Basic-funktioner  
  Du kan använda Visual Basic-funktioner för att ändra data som visas i textrutor eller som används för parametrar, egenskaper eller andra delar av rapporten. Det här avsnittet innehåller exempel som visar några av dessa funktioner. Mer information finns i [Medlemmar i Visual Basic-körningsbiblioteket](https://go.microsoft.com/fwlink/?LinkId=198941) på MSDN.  
   
  .NET Framework innehåller många alternativ för anpassade format, till exempel för specifika datumformat. Mer information finns i [Formateringstyper](/dotnet/standard/base-types/formatting-types).  
@@ -56,7 +56,7 @@ Mer information om enkla och komplexa uttryck, var du kan använda uttryck och s
     = Round(1.3*5)/5  
     ```  
   
-###  <a name="DateFunctions"></a> Datumfunktioner  
+###  <a name="date-functions"></a><a name="DateFunctions"></a> Datumfunktioner  
   
 -   Funktionen **Today** (I dag) ger dagens datum. Det här uttrycket kan användas i en textruta för att visa datumet i rapporten eller i en parameter för att filtrera data baserat på det aktuella datumet.  
   
@@ -161,7 +161,7 @@ Mer information om enkla och komplexa uttryck, var du kan använda uttryck och s
 |Ett år sedan|`=DateSerial(Year(Parameters!TodaysDate.Value)-1,Month(Parameters!TodaysDate.Value),Day(Parameters!TodaysDate.Value))`|  
 |Två år sedan|`=DateSerial(Year(Parameters!TodaysDate.Value)-2,Month(Parameters!TodaysDate.Value),Day(Parameters!TodaysDate.Value))`|  
   
-###  <a name="StringFunctions"></a> Strängfunktioner  
+###  <a name="string-functions"></a><a name="StringFunctions"></a> Strängfunktioner  
   
 -   Kombinera flera fält genom att använda sammanfogningsoperatorer och Visual Basic-konstanter. Följande uttryck returnerar två fält, vart och ett på en separat rad i samma textruta:  
   
@@ -211,7 +211,7 @@ Mer information om enkla och komplexa uttryck, var du kan använda uttryck och s
     > [!NOTE]  
     >  Kontrollera att värdet för Fields!Phone.Value inte innehåller några extra blanksteg och är av typen `xref:System.String`.  
   
-### <a name="lookup"></a>Lookup  
+### <a name="lookup"></a>Uppslag  
   
 -   Genom att ange ett nyckelfält kan du använda funktionen **Lookup** för att hämta ett värde från en datamängd för en en-till-en-relation, till exempel ett nyckel/värde-par. Följande uttryck visar produktnamnet från en datamängd (”Product”) givet det produkt-ID som ska matchas:  
   
@@ -227,7 +227,7 @@ Mer information om enkla och komplexa uttryck, var du kan använda uttryck och s
     =Join(LookupSet(Fields!ContactID.Value, Fields!PersonID.Value, Fields!PhoneNumber.Value, "PhoneList"),",")  
     ```  
   
-###  <a name="ConversionFunctions"></a> Konverteringsfunktioner  
+###  <a name="conversion-functions"></a><a name="ConversionFunctions"></a> Konverteringsfunktioner  
  Du kan använda Visual Basic-funktioner för att konvertera ett fält från en datatyp till en annan datatyp. Konverteringsfunktioner kan användas för att konvertera standarddatatypen för ett fält till den datatyp som behövs för att utföra beräkningar eller kombinera text.  
   
 -   Följande uttryck konverterar konstanten 500 till typen Decimal för att jämföra den med en Transact-SQL-pengadatatyp i fältet Value (värde) för ett filteruttryck.  
@@ -242,7 +242,7 @@ Mer information om enkla och komplexa uttryck, var du kan använda uttryck och s
     =CStr(Parameters!MySelection.Count)  
     ```  
   
-###  <a name="DecisionFunctions"></a> Beslutsfunktioner  
+###  <a name="decision-functions"></a><a name="DecisionFunctions"></a> Beslutsfunktioner  
   
 -   Funktionen **Iif** returnerar ett av två värden beroende på om uttrycket är sant eller inte. Följande uttryck använder funktionen **Iif** för att returnera det booleska värdet **True** (Sant) om värdet för `LineTotal` överskrider 100. Annars returnerar det **False** (Falskt):  
   
@@ -297,10 +297,10 @@ Mer information om enkla och komplexa uttryck, var du kan använda uttryck och s
   
     ```  
   
-##  <a name="ReportFunctions"></a> Rapportfunktioner  
+##  <a name="report-functions"></a><a name="ReportFunctions"></a> Rapportfunktioner  
  I ett uttryck kan du lägga till en referens till ytterligare rapportfunktioner som ändrar data i en rapport. Det här avsnittet innehåller exempel för två av dessa funktioner. 
   
-###  <a name="Sum"></a> Sum  
+###  <a name="sum"></a><a name="Sum"></a> Sum  
   
 -   Funktionen **Sum** kan summera värdena i en grupp eller ett dataområde. Den här funktionen kan vara användbar i huvudet eller foten för en grupp. Följande uttryck visar summan av data i gruppen eller dataområdet Order:  
   
@@ -314,7 +314,7 @@ Mer information om enkla och komplexa uttryck, var du kan använda uttryck och s
     =Sum(IIF(Fields!State.Value = "Finished", 1, 0))  
     ```  
   
-###  <a name="RowNumber"></a> RowNumber  
+###  <a name="rownumber"></a><a name="RowNumber"></a> RowNumber  
   
 -   När funktionen **RowNumber** (Radnummer) används i en textruta i ett dataområde visar den radnumret för varje instans av den textruta där uttrycket visas. Den här funktionen kan användas till att numrera rader i en tabell. Den kan även vara användbar för mer avancerade uppgifter, till exempel att ge sidbrytningar baserat på antalet rader. Mer information finns i [Sidbrytningar](#PageBreaks) i det här ämnet.  
   
@@ -324,10 +324,10 @@ Mer information om enkla och komplexa uttryck, var du kan använda uttryck och s
     =RowNumber(Nothing)  
     ```  
   
-##  <a name="AppearanceofReportData"></a> Utseendet på rapportdata  
+##  <a name="appearance-of-report-data"></a><a name="AppearanceofReportData"></a> Utseendet på rapportdata  
  Du kan använda uttryck för att ändra hur data visas i en rapport. Du kan till exempel visa värdena för två fält i en enda textruta, visa information om rapporten eller påverka hur sidbrytningar infogas i rapporten.  
   
-###  <a name="PageHeadersandFooters"></a> Sidhuvuden och sidfötter  
+###  <a name="page-headers-and-footers"></a><a name="PageHeadersandFooters"></a> Sidhuvuden och sidfötter  
  När du skapar en rapport vill du kanske visa namnet på rapporten och sidnumret i rapportsidfoten. Det kan du göra med hjälp av följande uttryck:  
   
 -   Följande uttryck ger namnet på rapporten och den tid då den kördes. Det kan placeras i en textruta i rapportsidfoten eller i rapportens brödtext. Tiden formateras med .NET Framework-formateringssträngen för kort datum:  
@@ -367,7 +367,7 @@ Mer information om enkla och komplexa uttryck, var du kan använda uttryck och s
 > [!NOTE]  
 >  Du kan referera till endast ett rapportobjekt per uttryck i ett sidhuvud eller en sidfot. Du kan även referera till textrutans namn, men inte det faktiska datauttrycket i textrutan, i sidhuvud- och sidfotsuttryck.  
   
-###  <a name="PageBreaks"></a> Sidbrytningar  
+###  <a name="page-breaks"></a><a name="PageBreaks"></a> Sidbrytningar  
  I vissa rapporter vill du kanske placera en sidbrytning i slutet av ett angivet antal rader i stället för, eller utöver, i grupper eller rapportobjekt. Det gör du genom att skapa en grupp som innehåller de grupper eller informationsposter du vill ha, lägga till en sidbrytning i gruppen och sedan lägga till ett grupputtryck för att gruppera efter ett angivet antal rader.  
   
 -   När följande uttryck placeras i grupputtrycket tilldelar det ett tal till varje uppsättning med 25 rader. När en sidbrytning definieras för gruppen resulterar det här uttrycket i en sidbrytning var 25:e rad.  
@@ -382,10 +382,10 @@ Mer information om enkla och komplexa uttryck, var du kan använda uttryck och s
     =Ceiling(RowNumber(Nothing)/Parameters!RowsPerPage.Value)  
     ```  
   
-##  <a name="Properties"></a> Egenskaper  
+##  <a name="properties"></a><a name="Properties"></a> Egenskaper  
  Uttryck används inte bara för att visa data i textrutor. De kan även användas för att ändra hur egenskaper tillämpas på rapportobjekt. Du kan ändra stilinformation för ett rapportobjekt eller ändra dess synlighet.  
   
-###  <a name="Formatting"></a> Formatering  
+###  <a name="formatting"></a><a name="Formatting"></a> Formatering  
   
 -   När följande uttryck används i egenskapen Color (Färg) för en textruta ändras färgen på texten beroende på värdet för fältet `Profit`:  
   
@@ -415,7 +415,7 @@ Mer information om enkla och komplexa uttryck, var du kan använda uttryck och s
 ### <a name="chart-colors"></a>Diagramfärger  
  Om du vill ange färger för ett formdiagram kan du använda anpassad kod för att kontrollera den ordning med vilken färger mappas till datapunktsvärden. Detta hjälper dig att använda konsekventa färger för flera diagram som har samma kategorigrupper. 
   
-###  <a name="Visibility"></a> Synlighet  
+###  <a name="visibility"></a><a name="Visibility"></a> Synlighet  
  Du kan visa och dölja objekt i en rapport med hjälp av synlighetsegenskaper för rapportobjektet. I ett dataområde som en tabell kan du till en början dölja rader med detaljerad information baserat på värdet i ett uttryck.  
   
 -   När följande uttryck används för inledande synlighet för rader med detaljerad information i en grupp visar det rader med detaljerad information för all försäljningen som överstiger 90 procent i fältet `PctQuota`:  
@@ -436,7 +436,7 @@ Mer information om enkla och komplexa uttryck, var du kan använda uttryck och s
     =IIF(Fields!Column_1.IsMissing, true, false)  
     ```  
   
-###  <a name="Hyperlinks"></a> URL:er  
+###  <a name="urls"></a><a name="Hyperlinks"></a> URL:er  
  Du kan anpassa URL:er med hjälp av rapportdata och även villkorligt kontrollera huruvida URL:er läggs till som en åtgärd för en textruta.  
   
 -   När följande uttryck används som en åtgärd i en textruta genererar det en anpassad URL som anger datamängdsfältet `EmployeeID` som en URL-parameter.  
@@ -451,10 +451,10 @@ Mer information om enkla och komplexa uttryck, var du kan använda uttryck och s
     =IIF(Parameters!IncludeURLs.Value,"https://adventure-works.com/productcatalog",Nothing)  
     ```  
   
-##  <a name="ReportData"></a> Rapportdata  
+##  <a name="report-data"></a><a name="ReportData"></a> Rapportdata  
  Uttryck kan användas för att ändra de data som används i rapporten. Du kan referera till parametrar och annan rapportinformation. Du kan även ändra den fråga som används för att hämta data för rapporten.  
   
-###  <a name="Parameters"></a> Parametrar  
+###  <a name="parameters"></a><a name="Parameters"></a> Parametrar  
  Du kan använda uttryck i en parameter för att variera standardvärdet för parametern. Du kan till exempel använda en parameter för att filtrera data till en viss användare baserat på det användar-ID som används för att köra rapporten.  
   
 -   När följande uttryck används som standardvärdet för en parameter samlar det in användar-ID för den person som kör rapporten:  
@@ -475,7 +475,7 @@ Mer information om enkla och komplexa uttryck, var du kan använda uttryck och s
     =Fields(Parameters!ParameterField.Value).Value  
     ```  
   
-##  <a name="CustomCode"></a> Anpassad kod  
+##  <a name="custom-code"></a><a name="CustomCode"></a> Anpassad kod  
  Du kan använda anpassad kod som är inbäddad i en rapport. 
   
 ### <a name="using-group-variables-for-custom-aggregation"></a>Använda gruppvariabler för anpassad aggregering  

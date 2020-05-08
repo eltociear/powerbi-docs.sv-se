@@ -10,10 +10,10 @@ ms.date: 01/10/2020
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: 4ad843078e452502a94aa7d60b3304528fd25496
-ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76038729"
 ---
 # <a name="use-the-analytics-pane-in-power-bi-desktop"></a>Använda fönstret Analytics i Power BI Desktop
@@ -49,7 +49,7 @@ I fönstret **Analytics** kan du skapa följande typer av dynamiska referenslinj
 
 Följande avsnitt visar hur du kan använda fönstret **Analytics** och dynamiska referenslinjer i dina visualiseringar.
 
-Följ dessa steg om du vill visa tillgängliga dynamiska referenslinjer för ett visuellt objekt:
+Följ dessa steg om du vill visa tillgängliga dynamiska referensrader för någon visualisering:
 
 1. Välj eller skapa ett visuellt objekt och välj sedan ikonen **Analytics** i avsnittet **Visualiseringar**.
 
@@ -69,7 +69,7 @@ Följ dessa steg om du vill visa tillgängliga dynamiska referenslinjer för ett
 
     ![Inställningar för dataetikett, fönstret Analytics, Visualiseringar, Power BI Desktop](media/desktop-analytics-pane/analytics-pane_5.png)
 
-5. Observera siffran som visas bredvid objektet **Medellinje** i fönstret **Analytics**. Det anger hur många dynamiska linjer som det för närvarande finns i ditt visuella objekt, samt vilken typ de är. När vi lägger till en **Maxlinje** i **Affordability** ser vi att fönstret **Analytics** nu visar att vi också har en **Maxlinje** för den dynamiska referenslinje som tillämpas på det visuella objektet.
+5. Observera siffran som visas bredvid objektet **Genomsnittlig rad** objektet i fönstret **Analytics**. Det anger hur många dynamiska linjer som det för närvarande finns i ditt visuella objekt, samt vilken typ de är. När vi lägger till en **Maxlinje** i **Affordability** ser vi att fönstret **Analytics** nu visar att vi också har en **Maxlinje** för den dynamiska referenslinje som tillämpas på det visuella objektet.
 
     ![Summor för maxlinje och medellinje, fönstret Analytics, Visualiseringar, Power BI Desktop](media/desktop-analytics-pane/analytics-pane_6.png)
 

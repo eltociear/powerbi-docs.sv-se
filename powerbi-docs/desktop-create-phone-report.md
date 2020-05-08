@@ -10,10 +10,10 @@ ms.date: 11/18/2019
 ms.author: maggies
 LocalizationGroup: Create reports
 ms.openlocfilehash: 2dca4094ed0c21c421aa2fef89353e6f210b3ea4
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75761489"
 ---
 # <a name="optimize-power-bi-reports-for-the-mobile-app"></a>Optimera Power BI-rapporter för mobilappen
@@ -109,5 +109,5 @@ Rapportläsarna kan vrida sina telefoner eller surfplattor åt sidan för att se
 * [Skapa en telefonvy av en instrumentpanel i Power BI](service-create-dashboard-mobile-phone-view.md).
 * [Visa Power BI-rapporter som är optimerade för din telefon](consumer/mobile/mobile-apps-view-phone-report.md).
 * [Skapa dynamiska visuella objekt som optimerats för alla storlekar](visuals/desktop-create-responsive-visuals.md).
-* Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/).
+* Fler frågor? [Fråga Power BI Community](https://community.powerbi.com/).
 

@@ -9,10 +9,10 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/07/2020
 ms.openlocfilehash: a18e0a094c5bc42f7a77a045ac7b552e458e5628
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/07/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "78919832"
 ---
 # <a name="install-report-builder---power-bi-report-server"></a>Installera Report Builder – Power BI-rapportserver
@@ -46,7 +46,7 @@ Du kan installera Report Builder från en webbportal för Power BI-rapportserver
     ![Skärmen Ny rapport eller datamängd](media/quickstart-create-paginated-report/reportserver-paginated-new-report-screen.png)
  
 
-##  <a name="download"></a> Installera Report Builder från Download Center.  
+##  <a name="install-report-builder-from-the-download-center"></a><a name="download"></a> Installera Report Builder från Download Center.  
   
 1.  Gå till [Report Builder-sidan i Microsoft Download Center](https://go.microsoft.com/fwlink/?LinkID=734968) och välj **Ladda ned**.  
   

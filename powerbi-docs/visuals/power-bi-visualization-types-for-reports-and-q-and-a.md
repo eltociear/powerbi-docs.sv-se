@@ -10,10 +10,10 @@ ms.date: 01/14/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 12c2d839c14a4a982505f56b7d605bacc5edc728
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/14/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79381432"
 ---
 # <a name="visualization-types-in-power-bi"></a>Visualiseringstyper i Power BI
@@ -25,7 +25,7 @@ Kolla även in [Microsoft AppSource](https://appsource.microsoft.com/marketplace
 ## <a name="list-of-visualizations-available-in-power-bi"></a>Lista över visuella objekt som är tillgängliga i Power BI
 Alla dessa visuella objekt kan läggas till Power BI-rapporter, anges i frågor och svar och fästas på instrumentpaneler.
 
-### <a name="area-charts-basic-layered-and-stacked"></a>Ytdiagram: Enkelt (i lager) och stapel
+### <a name="area-charts-basic-layered-and-stacked"></a>Ytdiagram: enkelt (i lager) och stapel-
 ![ytdiagram](media/power-bi-visualization-types-for-reports-and-q-and-a/basicareamapsmall.png)
 
 >[!TIP]
@@ -41,10 +41,10 @@ Mer information finns i [Grundläggande ytdiagram](power-bi-visualization-basic-
 >[!TIP]
 >Stapeldiagram är standard för att visa ett specifikt värde över olika kategorier.
 
-### <a name="cards-multi-row"></a>Kort: Flerrad
+### <a name="cards-multi-row"></a>Kort: Flera rader
 ![flerradskort](media/power-bi-visualization-types-for-reports-and-q-and-a/multi-row-card.png)
 
-### <a name="cards-single-number"></a>Kort: Enskilt antal
+### <a name="cards-single-number"></a>Kort: Enskilt tal
 ![talkort](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_card.png)
 
 Mer information finns i [Skapa ett kort (stor sifferpanel)](power-bi-visualization-card.md).
@@ -110,12 +110,12 @@ Mer information finns i [KPI i Power BI](power-bi-visualization-kpi.md).
 
 Mer information finns i [Tips och trick för kartor](power-bi-map-tips-and-tricks.md).
 
-### <a name="maps-arcgis-maps"></a>Kartor: ArcGIS-mappar
+### <a name="maps-arcgis-maps"></a>Kartor: ArcGIS-kartor
 ![ArcGis-karta](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-esri-map-theme2.png)
 
 Mer information finns i [ArcGIS-kartor i Power BI](power-bi-visualization-arcgis.md).
 
-### <a name="maps-filled-maps-choropleth"></a>Kartor: Fyllda kartor (Choropleth)
+### <a name="maps-filled-maps-choropleth"></a>Maps: Fyllda kartor (Choropleth)
 ![ifylld karta](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_filledmap.png)
 
 >[!TIP]
@@ -194,7 +194,7 @@ Mer information finns i [Punktdiagram i Power BI](power-bi-visualization-scatter
 Mer information finns i [Punktdiagram med hög densitet i Power BI](desktop-high-density-scatter-charts.md).
 
 ### <a name="slicers"></a>Utsnitt
-![utsnitt](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_slicer.png)
+![slicer](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_slicer.png)
 
 Mer information finns i [Utsnitt i Power BI](power-bi-visualization-slicers.md).
 
@@ -203,7 +203,7 @@ Mer information finns i [Utsnitt i Power BI](power-bi-visualization-slicers.md).
 
 Mer information finns i [Lägga till en bildwidget i en instrumentpanel](../service-dashboard-add-widget.md).
 
-### <a name="tables"></a>Tabeller
+### <a name="tables"></a>Tables
 ![tabellvisualisering](media/power-bi-visualization-types-for-reports-and-q-and-a/tabletype.png)
 
 >[!TIP]
@@ -228,7 +228,7 @@ Mer information finns i [Trädkartor i Power BI](power-bi-visualization-treemaps
 Mer information finns i [Vattenfallsdiagram i Power BI](power-bi-visualization-waterfall-charts.md).
 
 ## <a name="tell-qa-which-visualization-to-use"></a>Berätta för Frågor och svar vilket visuellt objekt som ska användas
-När du skriver frågor med naturligt språk i Frågor och svar för Power BI kan du ange typen av visuellt objekt i din fråga.  Till exempel:
+När du skriver frågor med naturligt språk i Frågor och svar för Power BI kan du ange typen av visuellt objekt i din fråga.  Exempel:
 
 ”***försäljning per tillstånd som en trädkarta***”
 
