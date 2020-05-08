@@ -14,13 +14,13 @@
           href: walkthrough-push-data.md
         - name: Hämta en autentiseringsåtkomsttoken
           href: walkthrough-push-data-get-token.md
-        - name: Skapa en datauppsättning
+        - name: Skapa en datamängd
           href: walkthrough-push-data-create-dataset.md
         - name: Hämta en datauppsättning för att lägga till rader
           href: walkthrough-push-data-get-datasets.md
         - name: Lägga till rader i en tabell
           href: walkthrough-push-data-add-rows.md
-    - name: Begrepp
+    - name: Koncept
       items:
         - name: Princip för automatiskt bevarande av realtidsdata
           href: api-automatic-retention-policy-for-real-time-data.md
@@ -32,23 +32,23 @@
               href: api-dataset-properties.md
             - name: Versionshantering av datamodell
               href: api-data-model-versioning.md
-    - name: Gör så här
+    - name: Gör så här för att
       items:
         - name: Konfigurera autentiseringsuppgifter
           href: configure-credentials.md
     - name: Referens
       items:
-        - name: 'REST API:er'
+        - name: 'REST-API:er'
           href: 'https://docs.microsoft.com/rest/api/power-bi'
         - name: Power BI REST API-referens
           href: rest-api-reference.md
-        - name: Fullständig kodlista
+        - name: Slutföra kodlistning
           href: walkthrough-push-data-complete-code.md
     - name: Resurser
       items:
         - name: Dev Center
           href: 'https://powerbi.microsoft.com/en-us/developers/'
-        - name: 'Power BI C# Git Repo'
+        - name: 'Power BI C# Git-lagringsplats'
           href: 'https://go.microsoft.com/fwlink/?linkid=848273'
         - name: Hämta .NET SDK
           href: 'https://go.microsoft.com/fwlink/?linkid=848274'

@@ -9,10 +9,10 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/08/2018
 ms.openlocfilehash: e74e390a5d228cb4a158d422cf0adab48b573cce
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79079679"
 ---
 # <a name="dataset-properties"></a>Egenskaper för datamängd
@@ -26,8 +26,8 @@ Den aktuella v1 av datauppsättnings-API:t tillåter endast att en datauppsättn
 
 Namn  |Typ  |Beskrivning  |Skrivskyddad  |Krävs
 ---------|---------|---------|---------|---------
-ID     |  GUID       | Unik identifierare för datauppsättningen i hela systemet.        | Sant        | Falskt        
-name     | Sträng        | Användardefinierat namn på datauppsättningen.        | Falskt        | Sant        
+id     |  GUID       | Unik identifierare för datauppsättningen i hela systemet.        | Sant        | Falskt        
+namn     | Sträng        | Användardefinierat namn på datauppsättningen.        | Falskt        | Sant        
 tabeller     | Tabell[]        | Tabellsamling.        |  Falskt       | Falskt        
 relationer     | Relation[]        | En samling relationer mellan tabeller.        | Falskt        |  Falskt  
 defaultMode     | Sträng        | Anger huruvida datamängden push-överförs, strömmas eller båda, med värdena ”Push” och ”Streaming”.         | Falskt        |  Falskt
@@ -36,28 +36,28 @@ defaultMode     | Sträng        | Anger huruvida datamängden push-överförs, 
 
 Namn  |Typ  |Beskrivning  |Skrivskyddad  |Krävs
 ---------|---------|---------|---------|---------
-name     | Sträng        |  Användardefinierat namn på tabellen. Det används också som tabellens identifierare.       | Falskt        |  Sant       
+namn     | Sträng        |  Användardefinierat namn på tabellen. Det används också som tabellens identifierare.       | Falskt        |  Sant       
 kolumner     |  kolumn[]       |  Kolumnsamling.       | Falskt        |  Sant       
 mått     | mått[]        |  Måttsamling.       | Falskt        |  Falskt       
-isHidden     | Boolesk        | Om värdet är Sant döljs tabellen från klientverktyg.        | Falskt        | Falskt        
+isHidden     | Boolean (Boolesk)        | Om värdet är Sant döljs tabellen från klientverktyg.        | Falskt        | Falskt        
 
 ## <a name="column"></a>Kolumn
 
 Namn  |Typ  |Beskrivning  |Skrivskyddad  |Krävs
 ---------|---------|---------|---------|---------
-name     |  Sträng        | Användardefinierat namn på kolumnen.        |  Falskt       | Sant       
+namn     |  Sträng        | Användardefinierat namn på kolumnen.        |  Falskt       | Sant       
 dataType     |  Sträng       |  [EDM-datatyper](https://msdn.microsoft.com/library/ee382832.aspx) som stöds och begränsningar. Se [Begränsningar för datatyper](#data-type-restrictions).      |  Falskt       | Sant        
 formatString     | Sträng        | En sträng som anger hur värdet ska formateras när det visas. Mer information om strängformatering finns på sidan om [FORMAT_STRING Contents](https://msdn.microsoft.com/library/ms146084.aspx) (Innehållsformat i strängar).      | Falskt        | Falskt        
 sortByColumn    | Sträng        |   Strängnamn på en kolumn i samma tabell som ska användas för att ordna den aktuella kolumnen.     | Falskt        | Falskt       
-dataCategory     | Sträng        |  Strängvärdet som ska användas för datakategorin som beskriver data i kolumnen. Vissa vanliga värden är: Adress, Stad, Kontinent, Land, Bild, Bild-URL, Latitud, Longitud, Organisation, Plats, Postnummer, Region, Webb-URL       |  Falskt       | Falskt        
-isHidden    |  Boolesk       |  Egenskap som anger om kolumnen är dold från vyn. Standardvärdet är Falskt.       | Falskt        | Falskt        
+dataCategory     | Sträng        |  Strängvärdet som ska användas för datakategorin som beskriver data i kolumnen. Några vanliga värden är: Adress, Stad, Kontinent, Land, Bild, Bild-URL, Latitud, Longitud, Organisation, Plats, Postnummer, Region, Webb-URL.       |  Falskt       | Falskt        
+isHidden    |  Boolean (Boolesk)       |  Egenskap som anger om kolumnen är dold från vyn. Standardvärdet är falskt.       | Falskt        | Falskt        
 summarizeBy     | Sträng        |  Standardmetod för sammansättning för kolumnen. Några värden är: standard, ingen, summa, min, max, antal, genomsnittlig, antal unika.     |  Falskt       | Falskt
 
 ## <a name="measure"></a>Mått
 
 Namn  |Typ  |Beskrivning  |Skrivskyddad  |Krävs
 ---------|---------|---------|---------|---------
-name     | Sträng        |  Användardefinierat namn på måttet.       |  Falskt       | Sant        
+namn     | Sträng        |  Användardefinierat namn på måttet.       |  Falskt       | Sant        
 uttryck     | Sträng        | Ett giltigt DAX-uttryck.        | Falskt        |  Sant       
 formatString     | Sträng        |  En sträng som anger hur värdet ska formateras när det visas. Mer information om strängformatering finns på sidan om [FORMAT_STRING Contents](https://msdn.microsoft.com/library/ms146084.aspx) (Innehållsformat i strängar).       | Falskt        | Falskt        
 isHidden     | Sträng        |  Om värdet är Sant döljs tabellen från klientverktyg.       |  Falskt       | Falskt       
@@ -66,8 +66,8 @@ isHidden     | Sträng        |  Om värdet är Sant döljs tabellen från klien
 
 Namn  |Typ  |Beskrivning  |Skrivskyddad  |Krävs 
 ---------|---------|---------|---------|---------
-name     | Sträng        | Användardefinierat namn på relationen. Det används också som relationens identifierare.        | Falskt       | Sant        
-crossFilteringBehavior     | Sträng        |    Filterriktningen för relationen: OneDirection (standard), BothDirections, automatisk       | Falskt        | Falskt        
+namn     | Sträng        | Användardefinierat namn på relationen. Det används också som relationens identifierare.        | Falskt       | Sant        
+crossFilteringBehavior     | Sträng        |    Filterriktningen för relationen: OneDirection (standard), BothDirections, automatisk.       | Falskt        | Falskt        
 fromTable     | Sträng        | Namnet på sekundärnyckeltabellen.        | Falskt        | Sant         
 fromColumn    | Sträng        | Namnet på sekundärnyckelkolumnen.        | Falskt        | Sant         
 toTable    | Sträng        | Namnet på primärnyckeltabellen.        | Falskt        | Sant         
@@ -81,7 +81,7 @@ Datatyp  |Begränsningar
 ---------|---------
 Int64     |   Int64.MaxValue och Int64.MinValue tillåts inte.      
 Double     |  Double.MaxValue- och Double.MinValue-värden tillåts inte. NaN stöds inte. +Infinity och -Infinity stöds inte i vissa funktioner (t.ex. Min, Max).       
-Boolesk     |   Sant eller Falskt.
+Boolean (Boolesk)     |   Sant eller Falskt.
 Datumtid    |   Vid datainläsning kvantifierar vi värden med dagbråk till hela multiplar av 1/300 sekunder (3,33ms).      
 Sträng     |  För närvarande tillåts upp till 4 000 tecken per strängvärde.
 Decimal|precision = 28, skala = 4
