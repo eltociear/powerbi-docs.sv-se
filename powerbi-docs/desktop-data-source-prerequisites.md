@@ -10,10 +10,10 @@ ms.date: 01/29/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 498636d61f61764cfaef29db32454f55f1328243
-ms.sourcegitcommit: 743167a911991d19019fef16a6c582212f6a9229
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/06/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "78401210"
 ---
 # <a name="power-bi-data-source-prerequisites"></a>Krav på Power BI-datakälla
@@ -22,7 +22,7 @@ Power BI stöder en specifik providerversion för varje dataleverantör när det
 | Datakälla | Provider | Lägsta providerversion | Lägsta version för datakälla | Datakällobjekt som stöds | Nedladdningslänk |
 | --- | --- | --- | --- | --- | --- |
 | SQL Server |ADO.net (inbyggt i .Net Framework) |.NET Framework 3.5 (endast) |SQL Server 2005+ |Tabeller/vyer, skalärfunktioner, tabellfunktioner |Ingår i .NET Framework 3.5 eller senare |
-| Åtkomst |Microsoft Access-databasmotor (ACE) |ACE 2010 SP1 |Ingen begränsning |Tabeller/vyer |[Nedladdningslänk](https://go.microsoft.com/fwlink/?linkid=285987&clcid=0x409) |
+| Access |Microsoft Access-databasmotor (ACE) |ACE 2010 SP1 |Ingen begränsning |Tabeller/vyer |[Nedladdningslänk](https://go.microsoft.com/fwlink/?linkid=285987&clcid=0x409) |
 | Excel (endast .xls-filer) (se kommentar 1) |Microsoft Access-databasmotor (ACE) |ACE 2010 SP1 |Ingen begränsning |Tabeller, blad |[Nedladdningslänk](https://go.microsoft.com/fwlink/?linkid=285987&clcid=0x409) |
 | Oracle (se kommentar 2) |ODP.NET |ODAC 11.2 version 5 (11.2.0.3.20) |9.x+ |Tabeller/vyer |[Nedladdningslänk](https://go.microsoft.com/fwlink/?linkid=272376&clcid=0x409) |
 | | System.Data.OracleClient (inbyggd i .NET Framework) |.NET Framework 3.5 |9.x+ |Tabeller/vyer |Ingår i .NET Framework 3.5 eller senare |

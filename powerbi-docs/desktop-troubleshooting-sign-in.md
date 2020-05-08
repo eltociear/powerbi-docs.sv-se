@@ -10,14 +10,14 @@ ms.date: 03/05/2020
 ms.author: davidi
 LocalizationGroup: Troubleshooting
 ms.openlocfilehash: 299329cad78d831a3b77e55107e94a234d6f64b1
-ms.sourcegitcommit: 22991861c2b9454b170222591f64266335b9fcff
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/12/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79133175"
 ---
 # <a name="troubleshooting-sign-in-for-power-bi-desktop"></a>Felsök inloggning i Power BI Desktop
-Det kan finnas tillfällen när du försöker logga in på **Power BI Desktop** men stöter på fel. Det finns två primära orsaker för inloggningsproblem: **Proxy-autentiseringsfel** och **icke-HTTPS-URL omdirigeringsfel**. 
+Det kan finnas tillfällen när du försöker logga in på **Power BI Desktop** men stöter på fel. Det finns två primära orsaker till inloggningsproblem: **Proxyautentiseringsfel** och **icke-HTTPS-URL omdirigeringsfel**. 
 
 För att avgöra vilka problem som orsakar inloggningsproblemet, är det första steget att kontakta din administratör och ange diagnostisk information så att de kan fastställa orsaken till problemet. Genom att spåra problem associerade med dina inloggningsproblem, kan administratörer vilket av följande fel som gäller för dig. 
 
@@ -55,7 +55,7 @@ Aktuella versioner av **Power BI Desktop** använder den aktuella versionen av A
 
 Följande undantag i *Power BI Desktop*-spårningsfiler är associerat med det här felet:
 
-* *Microsoft.IdentityModel.Clients.ActiveDirectory.AdalServiceException: Omdirigering av Icke-HTTPS-URL stöds inte i webbvy*
+* *Microsoft.IdentityModel.Clients.ActiveDirectory.AdalServiceException: Omdirigering till icke-HTTPS-URL:er stöds inte i webbvyn*
 * *ErrorCode: non_https_redirect_failed*
 
 Om *ErrorCode: non_https_redirect_failed* inträffar, innebär det att en eller flera omdirigeringssidor eller providers i omdirigeringskedjan inte är en HTTPS-skyddad slutpunkt eller att en certifikatutfärdare för en eller flera omdirigeringar inte finns bland enhetens betrodda rotcertifikat. Alla leverantörer i en omdirigeringskedja för inloggning måste använda en HTTPS-URL. Kontakta din administratör och begär att säkra URL:er används för deras autentiseringswebbplatser för att lösa problemet. 

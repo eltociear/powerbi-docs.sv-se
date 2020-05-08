@@ -11,10 +11,10 @@ ms.date: 08/12/2019
 ms.author: maggies
 LocalizationGroup: Reports
 ms.openlocfilehash: 39b95708b95144ba77a3b33b8ee15f913ae7ca2b
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79126269"
 ---
 # <a name="comparing-power-bi-desktop-and-the-power-bi-service"></a>Jämföra Power BI Desktop och Power BI-tjänsten
@@ -64,5 +64,5 @@ Dataflöden hjälper organisationer att samla data från olika källor och förb
 
 [Grundläggande begrepp för rapportdesigners](../service-basic-concepts.md)
 
-Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
+Fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
 

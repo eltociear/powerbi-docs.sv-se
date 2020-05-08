@@ -9,10 +9,10 @@ ms.assetid: c1490ff0-5b8a-43c1-8d22-e459395db4f6
 author: maggiesMSFT
 ms.author: maggies
 ms.openlocfilehash: 13b9e37d4a64493dfdcac02d9df86a1e19a1c24b
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/07/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "78921181"
 ---
 # <a name="report-design-tips-in-power-bi-report-builder"></a>Tips om rapportdesign i Power BI Report Builder
@@ -20,7 +20,7 @@ ms.locfileid: "78921181"
   
    
   
-##  <a name="DesigningReports"></a> Utforma rapporter  
+##  <a name="designing-reports"></a><a name="DesigningReports"></a> Utforma rapporter  
   
 -   En väl utformad rapport förmedlar information som leder till åtgärd. Identifiera de frågor som rapporten hjälper till att besvara. Tänk på dessa frågor när du utformar rapporten.  
   
@@ -36,7 +36,7 @@ ms.locfileid: "78921181"
   
  Mer information om saker du bör överväga när du utformar rapporten finns i [Planera en rapport i Report Builder](report-builder-planning-report.md)).  
   
-##  <a name="NamingConventions"></a> Namngivningskonventioner för rapporter, datakällor och datamängder  
+##  <a name="naming-conventions-for-reports-data-sources-and-datasets"></a><a name="NamingConventions"></a> Namngivningskonventioner för rapporter, datakällor och datamängder  
   
 -   Använd namngivningskonventioner för datakällor och datamängder som dokumenterar datakällan.  
   
@@ -44,7 +44,7 @@ ms.locfileid: "78921181"
   
     2.  **Datamängder.** Använd ett namn som anger vilken datakälla den är baserad på.  
   
-##  <a name="Data"></a> Arbeta med data  
+##  <a name="working-with-data"></a><a name="Data"></a> Arbeta med data  
   
 -   Som ett första steg hämtar du alla data som du vill arbeta med och som ska visas i fönstret Rapportdata. När du förfinar de frågor som rapporten är utformad för att besvara bör du överväga hur data i rapportdatamängderna ska begränsas till endast det som behövs.  
   
@@ -54,7 +54,7 @@ ms.locfileid: "78921181"
   
 -   Beroende på dina krav kan du visa namn och platser för rapportdatakällor, kommandotext för datauppsättningsfrågor samt parametervärden i rapporten. Den första fråga som många användare ställer handlar om var data kommer från. För att minska oredan i rapporten kan du villkorligt dölja textrutor med den här typen av information och låta användarna välja om de vill se den. Försök att lägga till den här informationen på den sista sidan i rapporten. Ange synligheten för textrutan baserat på en parameter som användaren kan ändra.  
   
-##  <a name="DesignSurface"></a> Interagera med rapportdesignytan  
+##  <a name="interacting-with-the-report-design-surface"></a><a name="DesignSurface"></a> Interagera med rapportdesignytan  
  Rapportdesignytan är inte WYSIWYG. När du placerar rapportobjekt på designytan påverkar deras relativa plats det sätt som objekt visas på den renderade rapportens sida. Blanksteg bevaras.  
   
 -   Använd justeringsguider och layoutknappar för att rikta in och ordna objekt på rapportdesignytan. Du kan till exempel rikta in överdelen eller kanterna på valda objekt, expandera ett objekt så att storleken matchar ett annat objekt eller justera avståndet mellan objekt.  
@@ -77,7 +77,7 @@ ms.locfileid: "78921181"
   
 -   För att dra fält från fönstret Rapportdata till fönstret Gruppering bör du undvika att dra fältet över andra rapportobjekt på designytan eftersom detta markerar de andra objekten och avmarkerar tablix-dataområdet. Dra fältet nedåt i fönstret Rapportdata och sedan över till fönstret Gruppera.  
   
-###  <a name="Selecting"></a> Välja objekt  
+###  <a name="selecting-items"></a><a name="Selecting"></a> Välja objekt  
  För att markera det objekt som du vill ha på rapportdesignytan använder du Esc-tangenten, snabbmenyn via högerklick, fönstret Egenskaper samt fönstret Gruppering.  
   
 -   -   Tryck på ESC för att bläddra igenom stacken med rapportobjekt som upptar samma område på designytan.  
@@ -89,31 +89,31 @@ ms.locfileid: "78921181"
     -   Om du vill arbeta med radgrupper och kolumngrupper i ett tablix-dataområde väljer du gruppen från fönstret Gruppera.  
 
   
-##  <a name="ReportItems"></a> Arbeta med specifika typer av rapportobjekt  
+##  <a name="working-with-specific-types-of-report-items"></a><a name="ReportItems"></a> Arbeta med specifika typer av rapportobjekt  
   
-###  <a name="Parameters"></a> Arbeta med parametrar  
+###  <a name="working-with-parameters"></a><a name="Parameters"></a> Arbeta med parametrar  
   
 -   Det huvudsakliga syftet med rapportparametrarna är att filtrera data vid datakällan och hämta bara det som behövs för rapporten.  
   
 -   För rapportparametrar hittar du en balans mellan att ge interaktivitet och hjälpa användarna att få det resultat de vill ha. Du kan till exempel ange standardvärden för en parameter till värden som du vet är populära.  
   
-###  <a name="Text"></a> Arbeta med text  
+###  <a name="working-with-text"></a><a name="Text"></a> Arbeta med text  
   
 -   När du klistrar in flera rader i en textruta läggs texten som en enda textkörning. Varje textkörning kan endast formateras som en enhet. Om du vill formatera varje rad oberoende av varandra infogar du en ny rad genom att trycka på Retur i textkörningen vid behov. Du kan sedan använda formatering och format för varje oberoende textrad i textrutan.  
   
 -   Du kan ange egenskaper och åtgärder på en textruta eller platshållartext i textrutan. Om det bara finns en enda rad med text är det mer effektivt att ange egenskaper för textrutan än för texten.  
   
-###  <a name="Expressions"></a> Arbeta med uttryck  
+###  <a name="working-with-expressions"></a><a name="Expressions"></a> Arbeta med uttryck  
   
 -   Förstå enkla och komplexa uttrycksformat. Du kan skriva enkla uttrycksformat direkt i textrutor, egenskaper i fönstret Egenskap eller på platser i dialogrutor som accepterar ett uttryck.
   
 -   När du skapar ett uttryck hjälper det dig att skapa varje del oberoende av varandra och verifiera dess värde. Du kan sedan kombinera alla delar i ett slutgiltigt uttryck. En användbar teknik är att lägga till en textruta i en matriscell, visa varje del av uttrycket och ange villkorsstyrd synlighet för textrutan. För att kontrollera kantstil och -färg när textrutan är dolt placerar du först textrutan i en rektangel och anger sedan kantstil- och färg för rektangeln så att de matchar matrisen.  
   
-###  <a name="Indicators"></a> Arbeta med indikatorer  
+###  <a name="working-with-indicators"></a><a name="Indicators"></a> Arbeta med indikatorer  
   
 -   Som standard visar en indikator minst tre tillstånd. När du har lagt till en indikator i en rapport kan du konfigurera den genom att lägga till eller ta bort tillstånd. Du kan göra visningen enklare för användarna genom att välja en indikator som varierar vad gäller både färg och form.  
   
-##  <a name="Rendering"></a> Kontrollera renderingen av rapportobjekt på rapportsidan  
+##  <a name="controlling-the-rendering-of-report-items-on-the-report-page"></a><a name="Rendering"></a> Kontrollera renderingen av rapportobjekt på rapportsidan  
   
 -   I rapportdesignytan växer rapportobjekt för att passa innehållet från tillhörande datamängd, uttryck, underrapport eller text.  
   

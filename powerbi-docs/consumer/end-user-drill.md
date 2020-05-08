@@ -10,10 +10,10 @@ ms.date: 02/18/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 7c0c08e8056232fa7c60b20faf48b0137a19bc5f
-ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/20/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "77496418"
 ---
 # <a name="drill-mode-in-a-visual-in-power-bi"></a>Granskningsläge i ett visuellt objekt i Power BI
@@ -155,6 +155,6 @@ Observera att summorna är desamma för **Stad**, **Postnummer** och **Namn**. D
 
 [Power BI-rapporter](end-user-reports.md)
 
-[Power BI – grundläggande begrepp](end-user-basic-concepts.md)
+[Power BI – Grundläggande begrepp](end-user-basic-concepts.md)
 
-Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
+Fler frågor? [Prova Power BI Community](https://community.powerbi.com/)

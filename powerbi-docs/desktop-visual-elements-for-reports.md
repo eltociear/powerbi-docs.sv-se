@@ -10,10 +10,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: 86728adbad8a96875fc21bb9fe5c5267a2ce6651
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79206365"
 ---
 # <a name="use-visual-elements-to-enhance-power-bi-reports"></a>Använd visuella element för att förbättra Power BI-rapporter
@@ -60,7 +60,7 @@ När du ställer in din sidas bakgrund till mer än 50 % transparens så visas e
 Det är viktigt att notera att den prickade gränsen *endast* visas när du redigerar rapporten och *inte* visas för personer som ser din publicerade rapport, till exempel när den visas i **Power BI-tjänsten**.
 
 > [!NOTE]
-> Om du använder mörka bakgrunder för skrivbordsunderlägg och använder en vit eller en väldigt ljus textfärg måste du ha i åtanke att funktionen **Exportera till PDF** inte tar med skrivbordsunderlägg vid exporten. Det betyder att en export med vit text kommer att vara praktiskt taget osynlig i den exporterade PDF-filen. Mer information om **Exportera till PDF** finns i avsnittet [Exportera till PDF](desktop-export-to-pdf.md).
+> Om du använder mörka bakgrunder för skrivbordsunderlägg och använder en vit eller en väldigt ljus textfärg måste du ha i åtanke att funktionen **Exportera till PDF** inte tar med skrivbordsunderlägg vid exporten. Det betyder att en export med vit text kommer att vara praktiskt taget osynlig i den exporterade PDF-filen. Mer information om [Exportera till PDF](desktop-export-to-pdf.md) finns i avsnittet **Exportera till PDF**.
 
 
 ## <a name="using-improved-visual-headers-in-power-bi-reports"></a>Använd förbättrade visuella rubriker i Power BI-rapporter

@@ -10,10 +10,10 @@ ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Reports
 ms.openlocfilehash: 089d1df9a63a30d602ac12f1bf18f32787374654
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79114241"
 ---
 # <a name="reports-in-power-bi"></a>Rapporter i Power BI
@@ -51,7 +51,7 @@ Men det här betyder inte att du inte kan spara dina ändringar. Det kan du, men
 
 ![Skärmbild av ikonen Återgå till standard.](./media/end-user-reports/power-bi-reset.png)
 
-## <a name="dashboards-versus-reports"></a>Instrumentpaneler kontra rapporter
+## <a name="dashboards-versus-reports"></a>Instrumentpaneler jämfört med rapporter
 
 [Instrumentpaneler](end-user-dashboards.md) förväxlas ofta med rapporter, eftersom de också är arbetsytor med visuella objekt. Men det finns några viktiga skillnader.  
 
@@ -61,7 +61,7 @@ Men det här betyder inte att du inte kan spara dina ändringar. Det kan du, men
 | Datakällor |En eller flera rapporter och en eller flera datauppsättningar per instrumentpanel |En enskild datauppsättning per rapport |
 | Filtrering |Det går inte att filtrera eller dela upp |Det finns många olika sätt att filtrera, markera och dela upp |
 | Ställa in avisering |Det går att skapa e-postaviseringar när instrumentpanelen uppfyller vissa villkor |Nej |
-| Funktion |Det går att ange en instrumentpanel som din ”aktuella” instrumentpanel |Det går inte att skapa en aktuell rapport |
+| Visning av aktuellt objekt |Det går att ange en instrumentpanel som din ”aktuella” instrumentpanel |Det går inte att skapa en aktuell rapport |
 | Det går att visa tabeller och fält från den underliggande datauppsättningen |Nej. Det går att exportera data, men tabeller och fält för datauppsättningen visas inte i själva instrumentpanelen |Ja. Det går att visa de tabeller, fält och värden för datauppsättningen som du har behörighet att visa |
 | Anpassning |Nej  |Det går att filtrera, exportera, visa relaterat innehåll, lägga till bokmärken, generera QR-koder, analysera i Excel och mycket mer |
 

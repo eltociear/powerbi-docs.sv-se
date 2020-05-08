@@ -10,10 +10,10 @@ ms.date: 02/26/2020
 ms.author: maggies
 LocalizationGroup: Reports
 ms.openlocfilehash: 791df63db1ef87bd5d61d80f97e225ae63feae2c
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79201526"
 ---
 # <a name="interact-with-a-report-in-editing-view-in-the-power-bi-service"></a>Interagera med en rapport i redigeringsvyn i Power BI-tjänsten
@@ -44,5 +44,5 @@ En Power BI Pro-licens krävs för att redigera rapporter som skapats av andra s
 ## <a name="next-steps"></a>Nästa steg
 Gå tillbaka till [Läsvyn och redigeringsvyn i Power BI-tjänsten](consumer/end-user-reading-view.md)
 
-Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
+Fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
 

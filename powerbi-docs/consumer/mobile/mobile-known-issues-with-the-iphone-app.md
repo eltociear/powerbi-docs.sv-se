@@ -9,17 +9,17 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
 ms.openlocfilehash: 0162d78fd4358f415ac52ea70bd3460d3c28b722
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79114915"
 ---
 # <a name="fixing-communication-failures-in-ios-mobile-apps---power-bi"></a>Åtgärda ”kommunikationsfel” i iOS-mobilappar – Power BI
 
 | ![iPhone](./media/mobile-known-issues-with-the-iphone-app/iphone-logo-50-px.png) | ![iPad](./media/mobile-known-issues-with-the-iphone-app/ipad-logo-50-px.png) |
 |:--- |:--- |
-| iPhone-telefoner |iPad-surfplattor |
+| iPhone-enheter |iPad-surfplattor |
 
 ## <a name="we-encountered-communication-failures"></a>Vi påträffade kommunikationsfel
 ”Vi påträffade kommunikationsfel. Felen kan vara relaterade till proxyinställningar för din Wi-Fi-anslutning. Om du växlar till en annan Wi-Fi-anslutning kan det lösa problemet.”

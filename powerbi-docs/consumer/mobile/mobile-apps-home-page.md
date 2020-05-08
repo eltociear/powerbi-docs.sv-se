@@ -9,10 +9,10 @@ ms.topic: quickstart
 ms.date: 12/16/2019
 ms.author: painbar
 ms.openlocfilehash: 9af7fd95bcdaf0d747d1a3f2313f965d18a888e3
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79205675"
 ---
 # <a name="a-quick-tour-of-the-mobile-app-home-page"></a>En snabbtur för mobilappens startsida
@@ -48,7 +48,7 @@ Uppdateringarna i flödet omfattar:
 
 Aktivitetsobjekt aggregeras så att alla datauppdateringar som kommer från samma app eller arbetsyta grupperas ihop. Använd ![expansionspil](./media/mobile-apps-home-page/powerbi-mobile-app-expand-arrow.png) pil för att expandera och visa de aggregerade objekten. Det senaste objektet är alltid överst i listan.
 
-## <a name="navigation-bar"></a>Navigeringsfält
+## <a name="navigation-bar"></a>Navigeringsfältet
 
 Längst ned på sidan finns navigeringsfältet.
 
