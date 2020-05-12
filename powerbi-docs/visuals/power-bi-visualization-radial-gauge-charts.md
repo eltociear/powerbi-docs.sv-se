@@ -3,21 +3,23 @@ title: Diagram med radiella mätare i Power BI
 description: Diagram med radiella mätare i Power BI
 author: mihart
 ms.reviewer: ''
-featuredvideoid: xmja6Epqa
+featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/24/2019
-ms.author: mihart
+ms.date: 05/05/2020
+ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e783b4357d4db39e09aabbb1df39e1bb5c84532e
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 7c6c4dbe9f17464483f5b44542ffbe04f715d4bd
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "73880909"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82866942"
 ---
 # <a name="radial-gauge-charts-in-power-bi"></a>Diagram med radiella mätare i Power BI
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -27,12 +29,8 @@ Ett diagram med radiell mätare har en cirkelformad båge och visar ett värde s
 
 I det här exemplet är du en bilåterförsäljare som spårar säljteamets genomsnittliga försäljning per månad. Nålen representerar ett försäljningsmål på 140 bilar. Minsta möjliga genomsnittliga försäljning är 0 och högsta är 200.  Den blå skuggningen visar att teamet snittar ca 120 försäljningar den här månaden. Som tur är, är det fortfarande en vecka kvar till målet.
 
-Du kan också titta på när Will visar hur du skapar enskilda visuella måttobjekt: måttdiagram, kort och KPI:er.
-   > [!NOTE]
-   > Den här videon använder en äldre version av Power BI Desktop.
-   > 
-   > 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/xmja6EpqaO0?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
+> [!NOTE]
+> För att dela en rapport med en Power BI-kollega krävs att du både har individuella Power BI Pro-licenser eller att rapporten har sparats med Premium-kapacitet.
 
 ## <a name="when-to-use-a-radial-gauge"></a>När är det bra att använda en radiell mätare
 

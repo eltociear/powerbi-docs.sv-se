@@ -8,16 +8,18 @@ ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 12/05/2019
-ms.author: mihart
+ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: a2ac2820c7beb3a82650716896ddd36b79c82e07
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: ba344d66f967d502d9de8adef7defcae434fb3ef
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79436075"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82865470"
 ---
 # <a name="create-and-use-filled-maps-choropleth-maps-in-power-bi"></a>Skapa och använda fyllda kartor (koropletkartor) i Power BI
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -55,15 +57,8 @@ I den här självstudien används [pbix-exempelfilen Sales and Marketing](https:
 
 1. Välj ![Skärmbild av den gula fliken.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) för att lägga till en ny sida.
 
-
-## <a name="create-a-basic-filled-map"></a>Skapa en grundläggande fylld karta
-I det här videoklippet skapar Kim en grundläggande karta och konverterar den till en fylld karta.
-   > [!NOTE]
-   > I den här videon används en äldre version av Power BI Desktop.
-   > 
-   > 
-
-> [VIDEO https://www.youtube.com/embed/ajTPGNpthcg ]
+> [!NOTE]
+> För att dela en rapport med en Power BI-kollega krävs att du både har individuella Power BI Pro-licenser eller att rapporten har sparats med Premium-kapacitet.    
 
 ### <a name="create-a-filled-map"></a>Skapa en koropletkarta
 1. Välj fältet **Geo** \> **Stat** i fönstret Fält.    

@@ -10,10 +10,10 @@ ms.date: 08/29/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
 ms.openlocfilehash: 511fb6674d84cc0d206fdb1807fcb9ebf9e41d30
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73873108"
 ---
 # <a name="connect-to-azure-search-with-power-bi"></a>Anslut till Azure Search med Power BI
@@ -30,7 +30,7 @@ Anslut till [Azure Search-innehållspaketet](https://app.powerbi.com/getdata/ser
 2. I rutan **Tjänster** väljer du **Hämta**.
    
    ![](media/service-connect-to-azure-search/pbi_getservices.png) 
-3. Välj **Azure Search** \> **hämta**.
+3. Välj **Azure Search** \> **Hämta**.
    
    ![](media/service-connect-to-azure-search/azuresearch.png)
 4. Ange namnet på tabellagringskontot där din Azure Search-analys lagras.

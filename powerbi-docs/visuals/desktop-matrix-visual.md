@@ -1,5 +1,5 @@
 ---
-title: Använd det visuella matrisobjektet i Power BI
+title: Skapa ett visuellt matrisobjekt i Power BI
 description: Läs mer om hur det visuella matrisobjektet möjliggör steglayouter och detaljerade markeringar i Power BI.
 author: mihart
 ms.reviewer: ''
@@ -7,16 +7,18 @@ ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 02/10/2020
-ms.author: mihart
+ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: c091295d50bac576af411d967b9902d6804f82be
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 0a9bebd51e64c18e0c354386e168661542b9c5bf
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81637854"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82866597"
 ---
 # <a name="create-matrix-visualizations-in-power-bi"></a>Skapa matrisvisualiseringar i Power BI
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -28,6 +30,8 @@ Du kan skapa visuella matrisobjekt i **Power BI Desktop**-rapporter och korsmark
 
 Det finns många funktioner som är kopplade till matrisen och vi ska gå igenom dem i följande avsnitt i den här artikeln.
 
+> [!NOTE]
+> För att dela en rapport med en Power BI-kollega krävs att du både har individuella Power BI Pro-licenser eller att rapporten har sparats med Premium-kapacitet.
 
 ## <a name="understanding-how-power-bi-calculates-totals"></a>Beräkning av summor i Power BI
 

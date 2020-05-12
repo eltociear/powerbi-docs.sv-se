@@ -6,19 +6,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/17/2020
+ms.date: 05/05/2020
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: a82465adb5b0c7fe8be0e6e724c5eda1bfcf7ec0
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 1fee95bbfb790a1c61d82131579c8fb43980ca05
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79206963"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82866735"
 ---
 # <a name="work-with-data-view-in-power-bi-desktop"></a>Arbeta med datavyn i Power BI Desktop
 
 *Datavyn* gör det enklare att inspektera, utforska och förstå data i *Power BI Desktop*-modellen. Det här skiljer sig från hur du visar tabeller, kolumner och data i *Power Query Editor*. I datavyn tittar du på dina data *efter* att de har lästs in i modellen.
+
+> [!NOTE]
+> Eftersom datavyn visar data när de har lästs in i modellen visas inte datavyn om alla datakällor är baserade på DirectQuery. 
 
 När du modellerar dina data vill ibland du se vad som faktiskt finns i en tabell eller kolumn utan att skapa ett visuellt objekt på rapportarbetsytan. Du kanske vill se vad som finns på radnivå. Den här möjligheten är särskilt användbar när du skapar mått och beräknade kolumner eller om du behöver identifiera en datatyp eller datakategori.
 
@@ -48,3 +51,14 @@ Du kan filtrera enskilda värden eller använda avancerad filtrering baserat på
 
 > [!NOTE]
 > Om en Power BI-modell har skapats i en annan kultur än ditt aktuella gränssnitt visas sökrutan i användargränssnittet för datavyn endast för textfält. Detta gäller till exempel en modell som skapats med amerikansk engelska och som du sedan visar på spanska.
+
+
+## <a name="next-steps"></a>Nästa steg
+
+Du kan göra många olika saker med Power BI Desktop. Läs följande resurser för mer information om dess möjligheter:
+
+* [Vad är Power BI Desktop?](desktop-what-is-desktop.md)
+* [Frågeöversikt med Power BI Desktop](desktop-query-overview.md)
+* [Datatyper i Power BI Desktop](desktop-data-types.md)
+* [Forma och kombinera data i Power BI Desktop](desktop-shape-and-combine-data.md)
+* [Vanliga frågeuppgifter i Power BI Desktop](desktop-common-query-tasks.md)

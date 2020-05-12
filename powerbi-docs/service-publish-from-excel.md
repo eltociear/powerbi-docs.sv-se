@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/26/2020
+ms.date: 05/05/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: e503d2c68b4b726ab44c3bec0fad7001da33e184
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: ca3e954f64665798c439fba47c3135e93fe51ac0
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80329623"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82866804"
 ---
 # <a name="publish-to-power-bi-from-microsoft-excel"></a>Publicera till Power BI från Microsoft Excel
 Med Microsoft Excel 2016 och nyare kan du publicera dina Excel-arbetsböcker direkt till din [Power BI](https://powerbi.microsoft.com)-arbetsyta, där du kan skapa interaktiva rapporter och instrumentpaneler baserat på data i arbetsboken. Du kan sedan dela dina insikter med andra i din organisation.
@@ -42,7 +42,7 @@ Excel stöder publicering av lokala Excel-filer. De behöver inte sparas till On
 > Du kan bara publicera lokala filer om du använder Excel 2016 (eller senare) med en prenumeration på Office 365. Fristående versioner av Excel 2016 kan publicera till Power BI, men endast när arbetsboken sparas i OneDrive för företag eller SharePoint Online.
 > 
 
-När du väljer **Publicera** kan du välja vilken arbetsyta du vill publicera till. Arbetsytan kan vara din personliga arbetsyta eller en grupparbetsyta som du har åtkomst till, vilket visas i följande bild.
+När du väljer **Publicera** kan du välja vilken arbetsyta du vill publicera till. Om din Excel-fil finns på OneDrive för företag kan du bara publicera till din *Min arbetsyta*. Om din Excel-fil finns på en lokal enhet kan du publicera till *Min arbetsyta* eller en delad arbetsyta som du har åtkomst till.
 
 ![Publicera till Power BI](media/service-publish-from-excel/pbi_choose_workspace.png)
 
@@ -92,5 +92,5 @@ När du är klar kan du gå till Power BI direkt från Excel.
 
 ## <a name="next-steps"></a>Nästa steg
 [Excel-data i Power BI](service-excel-workbook-files.md)  
-Fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
 

@@ -3,32 +3,28 @@ title: Visuella KPI-objekt (Key Performance Indicator)
 description: Skapa Visuella KPI-objekt (Key Performance Indicator) i Power BI
 author: mihart
 ms.reviewer: ''
-featuredvideoid: xmja6EpqaO0
+featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
 ms.date: 01/30/2020
-ms.author: mihart
+ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 5d21fc3a2e585922e65e1385ed1fc436a6dbcf22
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 7f865c53a1a47ad53137f0e7659917689243b914
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "76974997"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82865192"
 ---
 # <a name="create-key-performance-indicator-kpi-visualizations"></a>Skapa KPI-visualiseringar (Key Performance Indicator)
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
 En KPI (Key Performance Indicator) är en visuell ledtråd som kommunicerar de framsteg som gjorts mot ett mätbart mål. Mer information om KPI:er finns i [Key Performance Indicators (KPI:er) i PowerPivot](/previous-versions/sql/sql-server-2012/hh272050(v=sql.110)).
 
-Du kan också titta på när Will visar hur du skapar enskilda visuella måttobjekt: måttdiagram, kort och KPI:er.
-   > [!NOTE]
-   > Den här videon använder en äldre version av Power BI Desktop.
-   > 
-   > 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/xmja6EpqaO0?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
 ## <a name="when-to-use-a-kpi"></a>När du ska använda KPI:er
 
@@ -55,6 +51,9 @@ De här självstudierna använder sig av [PBIX-filen Exempel på detaljhandelsan
 1. Öppna **PBIX-filen Exempel på detaljhandelsanalys** i rapportvy. ![Skärmbild av rapportvyikonen.](media/power-bi-visualization-kpi/power-bi-report-view.png)
 
 1. Välj **+** för att lägga till en ny sida. ![Skärmbild av den gula fliken.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png)
+
+> [!NOTE]
+> För att dela en rapport med en Power BI-kollega krävs att du både har individuella Power BI Pro-licenser eller att rapporten har sparats med Premium-kapacitet.    
 
 ## <a name="how-to-create-a-kpi"></a>Så här skapar du en KPI
 
@@ -105,4 +104,4 @@ Om din KPI inte ser ut som den på bilden ovan, kan det bero på att du inte har
 
 * [Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
-Fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)

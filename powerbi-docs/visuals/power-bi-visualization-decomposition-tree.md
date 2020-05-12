@@ -8,16 +8,19 @@ ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
 ms.date: 01/10/2020
-ms.author: mihart
+ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 8aa392b69d21905901f8304c577b87b00ed19057
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: f7c907d31d4d58a9f39ad982e7d94f3f5ba3f118
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "75885276"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82865578"
 ---
 # <a name="create-and-view-decomposition-tree-visuals-in-power-bi-preview"></a>Skapa och visa det visuella objektet för nedbrytningsträd i Power BI (förhandsversion)
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
+
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
 I det visuella objekt för nedbrytningsträd i Power BI kan du visualisera data i flera dimensioner. Data sammanställs automatiskt och du kan öka detaljnivån i dimensionerna i valfri ordning. Det är också en AI-visualisering (artificiell intelligens), så du kan be den hitta nästa dimension som du vill öka detaljnivån för utifrån vissa kriterier. Detta gör det till ett värdefullt verktyg för ad hoc-utforskning och för att genomföra rotorsaksanalyser.
@@ -29,6 +32,8 @@ I den här självstudien används två exempel:
 - Ett scenario med en leveranskedja som analyserar procentandelen produkter som ett företag har som restorder (slut i lager).  
 - Ett försäljningsscenario som delar upp videospelsförsäljning efter olika faktorer som spelgenre och utgivare.
 
+> [!NOTE]
+> För att dela en rapport med en Power BI-kollega krävs att du både har individuella Power BI Pro-licenser eller att rapporten har sparats med Premium-kapacitet.    
 
 ## <a name="get-started"></a>Kom igång
 Välj ikonen för nedbrytningsträd i fönstret Visualiseringar.

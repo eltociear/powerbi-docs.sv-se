@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 03/08/2020
-ms.openlocfilehash: 2dee596648c9921cefab6903167e780bfacb122e
-ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
+ms.openlocfilehash: b759d19046ddb375646743a50025689ab9a566c0
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80113910"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82613544"
 ---
 # <a name="get-a-power-bi-visual-certified"></a>Certifiera ett visuellt Power BI-objekt
 
@@ -82,8 +82,6 @@ Använd den senaste versionen av [powerbi-visuals-tools](https://www.npmjs.com/p
 
 Du måste kompilera det visuella Power BI-objektet med `pbiviz package`. Om du använder egna build-skript anger du ett `npm run package` anpassat build-kommando.
 
-
-
 ### <a name="source-code-requirements"></a>Krav för källkod
 
 Kontrollera att du följer principlistan [Ytterligare certifiering för visuella Power BI-objekt](https://docs.microsoft.com/legal/marketplace/certification-policies#1200-power-bi-visuals-additional-certification). Om ditt bidrag inte följer dessa riktlinjer innehåller e-postmeddelandet med avvisandet från Partnercenter de principnummer som anges i den här länken.
@@ -150,6 +148,25 @@ När ett visuellt Power BI-objekt certifieras, så får det ett märke som indik
     ![Certifierade visuella Power BI-objekt i Power BI-gränssnittet](media/power-bi-custom-visuals-certified/certified-visual-blue.png)
 
 * Du kan bara visa certifierade visuella Power BI-objekt genom att välja filteralternativet *Power BI-certifierat*.
+
+## <a name="publication-timeline"></a>Tidslinje för publikation
+
+Distribution till AppSource är en process som kan ta lite tid. Ditt visuella objekt i Power BI kan laddas ned från AppSource när den här processen är klar.
+
+### <a name="when-will-users-be-able-to-download-my-visual"></a>När kommer användarna att kunna ladda ned mitt visuella objekt?
+
+* Om du har skickat ett visuellt Power BI-objekt för första gången kommer användarna att kunna hämta det några timmar efter att du fått ett e-postmeddelande från AppSource.
+
+* Om du skickade en uppdatering till ett befintligt visuellt objekt i Power BI kan användarna ladda ned dem inom en månad efter ditt bidrag.
+
+    >[!NOTE]
+    > Fältet *Version* i AppSource uppdateras med den dag då din Power BI godkändes av AppSource, ungefär en vecka efter att du skickat in ditt visuella objekt. Användarna kommer att kunna ladda ned det uppdaterade visuella objektet men de uppdaterade funktionerna börjar inte gälla. Dina visuella objekts nya funktioner kommer att påverka användarens rapporter efter cirka en månad. 
+
+### <a name="when-will-my-power-bi-visual-display-a-certification-badge"></a>När visas ett certifieringsmärke i det visuella objektet i Power BI?
+
+* Om du har skickat ett visuellt Power BI-objekt för första gången visas certifieringsmärket inom en dag efter att du mottagit e-postmeddelandet för godkännande från AppSource.
+
+* Om du begär certifiering för ett befintligt visuellt Power BI-objekt visas certifieringsmärket inom en månad efter ditt bidrag.
 
 ## <a name="next-steps"></a>Nästa steg
 

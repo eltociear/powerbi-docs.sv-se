@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/09/2020
+ms.date: 05/05/2020
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 6f71cf9b8325441fe3827a259daf3bcbe15765a5
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 373ad0d230b3d9d7b9d35909d086b0611637f0e2
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "76710005"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82866344"
 ---
 # <a name="create-and-manage-relationships-in-power-bi-desktop"></a>Skapa och hantera relationer i Power BI Desktop
 När du importerar flera tabeller är det möjligt att du kommer att utföra analyser med data från alla tabellerna. Det måste finnas relationer mellan dessa tabeller för korrekt beräkning av resultat och för att rätt information ska visas i dina rapporter. Med Power BI Desktop blir det enkelt att skapa dessa relationer. I de flesta fall behöver du faktiskt inte behöver göra något alls. Funktionen Identifiera automatiskt gör det åt dig. I vissa fall kan du dock behöva skapa relationerna själv eller göra ändringar i en relation. Oavsett vilket är det viktigt att förstå relationer i Power BI Desktop, samt hur du skapar och redigerar dem.
@@ -271,7 +271,7 @@ Med korsfiltrering i en riktning gäller att om du skapar en rapport som sammanf
 
  ![Korsfilterriktning](media/desktop-create-and-manage-relationships/candmrel_repcrossfiltersingle.png)
 
-Filterspecifikationen flödar från **CompanyProject** till **CompanyEmployee** (enligt följande bild), men den kommer inte att flöda upp till **CompanyEmployee**. 
+Filterspecifikationen flödar från **CompanyProject** till **ProjectHours** (enligt följande bild), men den kommer inte att flöda upp till **CompanyEmployee**. 
 
  ![Exempel på korsfiltrering](media/desktop-create-and-manage-relationships/candmrel_singledircrossfiltering.png)
 

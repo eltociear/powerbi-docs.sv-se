@@ -6,21 +6,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 03/12/2020
+ms.date: 04/17/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 402bf2028b7cc30acf0ce752e8f0343a44829cb3
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: e73c02402e05abf730dbd0fdf742b4a6f0998c03
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79378488"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82866643"
 ---
 # <a name="whats-new-in-power-bi-desktop"></a>Nyheter i Power BI Desktop
 
-## <a name="march-2020-update-2795768562"></a>Uppdatering mars 2020 (2.79.5768.562)
+## <a name="april-2020-update-2805803282"></a>Uppdatering april 2020 (2.80.5803.282)
 
-Vi är väldigt glada att få dela vår Power BI Desktop för mars med dig. 
+Vi är tacksamma att kunna dela Power BI Desktop från april med er, vårt globala community. 
 
 Skaffa den senaste versionen av Power BI Desktop från [Download Center](https://www.microsoft.com/download/details.aspx?id=58494). Om du kör Windows 10 kan du även hämta Power BI Desktop från [Windows Store](https://aka.ms/pbidesktopstore). Oavsett hur du installerar Power BI Desktop är månadsversionerna desamma, men versionsnumreringen kan variera. Mer information om hur du laddar ned och installerar Power BI Desktop finns i [Hämta Power BI Desktop](desktop-get-the-desktop.md). 
 
@@ -41,47 +41,46 @@ Följande uppdateringar är nya för Power BI Desktop den här månaden:
 
 
 ### <a name="reporting"></a>Rapportering
-* Nya åtgärdstyper för knappar [[video]](https://youtu.be/DMjvJGGB_LQ?t=45)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_New_action_types) 
-* Sortering i flera kolumner för tabeller   [[video]](https://youtu.be/DMjvJGGB_LQ?t=414) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_Multi-column_sort) 
-* Dubbel axel för linjediagram   [[video]](https://youtu.be/DMjvJGGB_LQ?t=504)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_Dual_axis) 
-* Filterfönstersökning   [[video]](https://youtu.be/DMjvJGGB_LQ?t=553)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_Filter_pane_search) 
-* Uppdateringar till visuellt nedbrytningsträd   [[video]](https://youtu.be/DMjvJGGB_LQ?t=688)  [[artikel]](visuals/power-bi-visualization-decomposition-tree.md)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_Updates_to_decomp_tree) 
-* Det nya menyfliksområdet är nu aktiverat som standard [[video]](https://youtu.be/DMjvJGGB_LQ?t=785)   [[artikel]](desktop-ribbon.md)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_New_ribbon) 
+* Anpassa visuella objekt (förhandsversion) [[video]](https://youtu.be/q2Hfn_Rhb3E?t=54)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Personalize_visuals) 
+* Ändra identifiering för siduppdatering (förhandsversion) [[video]](https://youtu.be/q2Hfn_Rhb3E?t=447) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Change_detection) 
+* Relativt tidsfilter (förhandsversion) [[video]](https://youtu.be/q2Hfn_Rhb3E?t=744)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Relative_time_filter) 
+* Rektangulärt lasso väljer bland visuella objekt [[video]](https://youtu.be/q2Hfn_Rhb3E?t=1016)[[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Lasso_select) 
+* Villkorsstyrd formatering för summor och delsummor i tabell och matris   [[video]](https://youtu.be/q2Hfn_Rhb3E?t=1075)  [[artikel]](desktop-conditional-table-formatting.md#totals-and-subtotals)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Conditional_formatting) 
+* Dialogrutan Anpassa tema är nu allmänt tillgänglig  [[video]](https://youtu.be/q2Hfn_Rhb3E?t=1250) [[artikel]](desktop-report-themes.md#customize-report-themes)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Customize_theme_GA) 
+* Förbättrad identifiering för villkorsstyrd formatering [[video]](https://youtu.be/q2Hfn_Rhb3E?t=1479)[[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Improved_discoverability) 
 
 
 
+### <a name="analytics"></a>Analys
+* DirectQuery-stöd för visuella AI-objekt [[video]](https://youtu.be/q2Hfn_Rhb3E?t=1498)   [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Direct_Query_AI) 
+* Nedbrytningsträd stöder nu knappbeskrivningar [[video]](https://youtu.be/q2Hfn_Rhb3E?t=1550) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Decomp_tree_tooltips) 
+* Uppdateringar av frågor och svar [[video]](https://youtu.be/q2Hfn_Rhb3E?t=1606)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_QA_updates) 
 
-### <a name="modeling"></a>Modellering
-* Ny DAX-funktion: SLÅ SAMMAN [[video]](https://youtu.be/DMjvJGGB_LQ?t=830)  [[artikel]](https://docs.microsoft.com/dax/firstnonblankvalue-function-dax)   [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_New_DAX_function
-) 
 
 ### <a name="visuals"></a>Visuella objekt
-* Uppdateringar av ArcGIS Maps [[video]](https://youtu.be/DMjvJGGB_LQ?t=1043)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_Updates_to_ArcGIS) 
-* Nya visuella objekt för Power BI [[video]](https://youtu.be/DMjvJGGB_LQ?t=1025)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_Waterfall_chart
-)
+* Nya visualiseringsikoner [[video]](https://youtu.be/q2Hfn_Rhb3E?t=1946)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_New_Visualization_icons) 
+* Nya visuella objekt för Power BI [[video]](https://youtu.be/q2Hfn_Rhb3E?t=1833)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Visualizations)
 
 
 ### <a name="template-apps"></a>Mallappar
-* Azure DevOps-instrumentpanel från Data Maru [[video]](https://youtu.be/DMjvJGGB_LQ?t=1116)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_Azure_DevOps_dashboard) 
-* TeamsPower från Encamina  [[video]](https://youtu.be/DMjvJGGB_LQ?t=1135)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_TeamsPower)
+* Power Platform Center of Excellence StartKit [[video]](https://youtu.be/q2Hfn_Rhb3E?t=1969)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_CoE_StartKit) 
+* Azure Cognitive Search: Analysera loggar och mått  [[video]](https://youtu.be/q2Hfn_Rhb3E?t=1969)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Azure_Cognitive_Search)
+* COVID-19 appar [[video]](https://youtu.be/q2Hfn_Rhb3E?t=1969)[[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_COVID)
 
 
 ### <a name="data-preparation"></a>Förberedelse av data
-* Frågediagnostik är nu allmänt tillgänglig [[video]](https://youtu.be/DMjvJGGB_LQ?t=1144)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_Query_diagnostics) 
+* Förbättringar av Frågediagnostik  [[video]](https://youtu.be/q2Hfn_Rhb3E?t=2011)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Enhancements_to_Query) 
 
 
 ### <a name="data-connectivity"></a>Dataanslutning
-* Hive LLAP-anslutning (förhandsversion) [[video]](https://youtu.be/DMjvJGGB_LQ?t=1165)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_Hive_LLAP_connector) 
-* Cognite-anslutning (förhandsversion) [[video]](https://youtu.be/DMjvJGGB_LQ?t=1165)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_Cognite) 
+* CDM-mappvy för Azure Data Lake Storage Gen2 [[video]](https://youtu.be/q2Hfn_Rhb3E?t=2124)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_CDM_Folder_view) 
 
 
 ### <a name="other-features"></a>Andra funktioner
-* Utökade datamängdsmetadata (förhandsversion) [[video]](https://youtu.be/DMjvJGGB_LQ?t=1184)  [[artikel]](desktop-enhanced-dataset-metadata.md)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_Enhanced_dataset_metadata) 
-* Använda systemets standardautentiseringsuppgifter för webbproxy[[video]](https://youtu.be/DMjvJGGB_LQ?t=1239)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_Using_default_system) 
-* Ny lärarledd utbildning, administratör på en dag [[video]](https://youtu.be/DMjvJGGB_LQ?t=1247)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_New_administrator) 
+* Ny instruktörsledd utbildning [[video]](https://youtu.be/q2Hfn_Rhb3E?t=2147)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_New_instructor-led_training) 
 
 
-Du kan läsa mer om de här nya funktionerna i [blogginlägget om Power BI Desktop-funktioner](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/).
+Du kan läsa mer om de här nya funktionerna i [blogginlägget om Power BI Desktop-funktioner](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/).
 
 Se [nyheter i Power BI-tjänsten](service-whats-new.md) och [nyheter i mobilapparna för Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
@@ -89,12 +88,10 @@ Se [nyheter i Power BI-tjänsten](service-whats-new.md) och [nyheter i mobilappa
 > Se [datakällor som är tillgängliga för Power BI Desktop](desktop-data-sources.md). Vår lista växer ständigt, så titta gärna efter nyheter ofta.
 
 
-## <a name="power-bi-desktop-monthly-update-video"></a>Video om månadsuppdatering för Power BI Desktop
+### <a name="power-bi-desktop-monthly-update-video"></a>Video om månadsuppdatering för Power BI Desktop
 I följande video beskrivs var och en av dessa uppdateringar. Du kan även titta på videon från blogginlägget:
 
-> [!VIDEO https://www.youtube.com/embed/DMjvJGGB_LQ]
-
-
+> [!VIDEO https://www.youtube.com/embed/q2Hfn_Rhb3E]
 
 ## <a name="more-videos"></a>Fler videor
 

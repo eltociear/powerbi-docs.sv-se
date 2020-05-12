@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 03/07/2020
+ms.date: 05/05/2020
 ms.author: painbar
-ms.openlocfilehash: 9f9a0afb766becefa5b74c5737795f6f227e7c27
-ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
+ms.openlocfilehash: f2aeb720221fa79aa95f9674aa1e3ac610b28c19
+ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79435776"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82841743"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Utforska rapporter i Power BI-mobilappar
 Gäller:
@@ -45,7 +45,7 @@ Det finns två ikoner för rapporter i Power BI-mobilapparna:
 * ![Telefonrapportikon](./media/mobile-reports-in-the-mobile-apps/report-phone-icon.png) anger en rapport som har minst en telefonoptimerad rapportsida som visas i stående orientering.
 
 > [!NOTE]
-> Genom att hålla telefonen i liggande orientering får du alltid liggande layout, även om rapportsidan har en telefonlayout.
+> Genom att hålla telefonen i liggande orientering får du alltid liggande layout, även om rapportsidan har en mobillayout.
 
 Om du vill gå till en rapport från en instrumentpanel trycker du på **Fler alternativ** (...) uppe till höger på en panel och sedan på **Öppna rapport**:
   

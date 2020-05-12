@@ -4,17 +4,17 @@ description: Få en översikt över Power BI-rapportservern för att förstå hu
 keywords: ''
 author: maggiesMSFT
 ms.author: maggies
-ms.date: 05/22/2019
+ms.date: 04/29/2020
 ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc
-ms.openlocfilehash: 26593f4869d6b8d2c1c206a8bedd3c0d214581b3
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 3e01bd0d7314cba1eb46dacff01b350c6685a6e9
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73859541"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82613610"
 ---
 # <a name="what-is-power-bi-report-server"></a>Vad är Power BI-rapportserver?
 
@@ -23,7 +23,7 @@ Power BI-rapportservern är en lokal rapportserver med en webbportal som du kan 
 ![Webbportalen för Power BI-rapportserver](media/get-started/power-bi-report-server-overview.png)
 
 ## <a name="comparing-power-bi-report-server"></a>Jämföra Power BI-rapportserver 
-Power BI-rapportserver är lik både SQL Server Reporting Services och Power BI-tjänsten online, men på olika sätt. Precis som Power BI-tjänsten är Power BI Report Server värd för Power BI-rapporter (.PBIX), Excel-filer och sidnumrerade rapporter (.RDL). Precis som Reporting Services är Power BI Report Server lokal. Power BI Report Server är en supermängd av Reporting Services: allt som du kan göra i Reporting Services kan du göra med Power BI-rapportservern och mer, tillsammans med stöd för Power BI-rapporter. Se [Jämföra Power BI-rapportservern och Power BI-tjänsten](compare-report-server-service.md) för mer information.
+Power BI-rapportserver är lik både SQL Server Reporting Services och Power BI-tjänsten online, men på olika sätt. Precis som Power BI-tjänsten är Power BI Report Server värd för Power BI-rapporter(.pbix), Excel-filer och sidnumrerade rapporter (.rdl). Precis som Reporting Services är Power BI Report Server lokal. Power BI Report Server är en supermängd av Reporting Services: allt som du kan göra i Reporting Services kan du göra med Power BI-rapportservern och mer, tillsammans med stöd för Power BI-rapporter. Se [Jämföra Power BI-rapportservern och Power BI-tjänsten](compare-report-server-service.md) för mer information.
 
 ## <a name="licensing-power-bi-report-server"></a>Licensiera Power BI-rapportserver
 Power BI-rapportserver finns tillgänglig via två olika licenser: [Power BI Premium](../service-premium-what-is.md) och [SQL Server Enterprise Edition](https://www.microsoft.com/sql-server/sql-server-2017-editions) med Software Assurance. Med Power BI Premium-licensen kan du skapa en hybrid distributionsblandning för moln och lokalt.  
@@ -41,7 +41,7 @@ Du kan hantera innehållet i webbportalen beroende på dina behörigheter. Du ka
 Mer om webbportalen för [Power BI-rapportserver](https://docs.microsoft.com/sql/reporting-services/web-portal-ssrs-native-mode).
 
 ## <a name="power-bi-reports"></a>Power BI-rapporter
-Du skapar Power BI-rapporter (.PBIX) med versionen av Power BI Desktop som är optimerad för rapportservern. Sedan publicerar du dem och visar dem i webbportalen i din egen miljö.
+Du skapar Power BI-rapporter (.pbix) med versionen av Power BI Desktop som är optimerad för rapportservern. Sedan publicerar du dem och visar dem i webbportalen i din egen miljö.
 
 ![Power BI-rapporter i Power BI-rapportservern](media/get-started/powerbi-reports.png)
 
@@ -50,7 +50,7 @@ En Power BI-rapport visar en datamodell från flera perspektiv med visualisering
 Läs mer om hur du [installerar Microsoft Power BI Desktop](install-powerbi-desktop.md).
 
 ## <a name="paginated-reports"></a>Sidnumrerade rapporter
-Sidbrytningsrapporter (.RDL) är rapporter i dokumentformat med visualiseringar där tabeller expanderar vågrätt och lodrätt för att visa alla sina data, och fortsätter från sida till sida enligt behov. Det är bra för att skapa dokument med fast layout och bra utseende som är optimerade för utskrift, till exempel PDF- och Word-filer. 
+Sidbrytningsrapporter (.rdl) är rapporter i dokumentformat med visualiseringar där tabeller expanderar vågrätt och lodrätt för att visa alla sina data, och fortsätter från sida till sida enligt behov. Det är bra för att skapa dokument med fast layout och bra utseende som är optimerade för utskrift, till exempel PDF- och Word-filer. 
 
 ![Sidnumrerade rapporter i Power BI-rapportservern](media/get-started/paginated-reports.png)
 

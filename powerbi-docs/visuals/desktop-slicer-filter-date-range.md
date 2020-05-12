@@ -1,36 +1,38 @@
 ---
 title: Använda ett relativt datumutsnitt eller filter i Power BI
 description: Lär dig hur du använder ett utsnitt eller filter till att begränsa relativa datumintervall i Power BI.
-author: mihart
+author: maggiesMSFT
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/06/2020
-ms.author: mihart
+ms.date: 05/05/2020
+ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 9ce36bfa61b16bd30e59bc8491af80efdfdc8a35
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: f63a56ea350d089b82eb7a18470e1bcc439d1151
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81006804"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82866528"
 ---
-# <a name="use-a-relative-date-slicer-and-filter-in-power-bi"></a>Använda ett relativt datumutsnitt eller filter i Power BI
+# <a name="creating-a-relative-date-slicer-and-filter-in-power-bi"></a>Skapa ett relativt datumutsnitt eller filter i Power BI
 
-[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-desktop](../includes/yes-desktop.md)] [!INCLUDE [yes-service](../includes/yes-service.md)]
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
 
 Med ett **relativt datumutsnitt** eller **relativt datumfilter** kan du använda tidsbaserade filter på kolumner i datamodellen. Du kan till exempel använda ett **relativt datumutsnitt** för att bara visa försäljningsdata inom de senaste 30 dagarna (eller månad, kalendermånad och så vidare). När du uppdaterar data tillämpas den relativa tidsperioden automatiskt.
 
-![Skärmbild av en rapport, med en pil som pekar på ett relativt datumutsnitt.](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-01.png)
+![Skärmbild av en rapport med en pil som pekar på ett relativt datumutsnitt.](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-01.png)
 
-## <a name="use-the-relative-date-range-slicer"></a>Använd relativt datumutsnitt
+För att dela en rapport med en Power BI-kollega krävs att du både har individuella Power BI Pro-licenser eller att rapporten har sparats med Premium-kapacitet.
+
+## <a name="create-the-relative-date-range-slicer"></a>Skapa relativt datumutsnitt
 
 Du kan använda utsnittet relativt datum precis som andra utsnitt. Skapa ett **utsnitt** för rapporten och välj sedan ett datumvärde för värdet **Fält**. I följande bild har vi valt fältet *OrderDate*.
 
 ![Skärmbild av fönstret Visualiseringar med pilar som pekar på visualiseringen av utsnittet och källan för Fält.](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-02.png)
 
-Välj utsnittet på arbetsytan och sedan cirkumflex i det övre högra hörnet av visualiseringen av utsnittet. Om det finns datumdata för det visuella objektet så visas alternativen för **Relativt** på menyn.
+Välj utsnittet på arbetsytan och sedan cirkumflex i det övre högra hörnet av visualiseringen av utsnittet. Om det finns datumdata för det visuella objektet visas alternativen för **Relativt** på menyn.
 
 ![Skärmbild av visualiseringen av utsnittet med en markering runt cirkumflexet och en pil som pekar på Relativt.](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-03.png)
 
@@ -46,7 +48,7 @@ För den första inställningen i det *relativa datumutsnittet* finns följande 
 
 * Nästa
 
-* Detta
+* Den här
 
 Med den andra inställningen (i mitten) i *det relativa datumutsnittet* kan du ange ett värde för att definiera det relativa datumintervallet.
 
@@ -80,7 +82,7 @@ Om du till exempel väljer **Månader** i listan och anger *2* i den mellersta i
 
 Som jämförelse visas data från 1 maj till och med 30 juni (de sista två fullständiga kalendermånaderna) om du väljer *Månader (kalender)* .
 
-## <a name="using-the-relative-date-range-filter"></a>Använda relativt datumfilter
+## <a name="create-the-relative-date-range-filter"></a>Skapa relativt datumfilter
 
 Du kan också skapa ett filter för relativt datumintervall för rapportsidan eller hela rapporten. För att göra detta drar du ett datumfält till källan **Sidnivåfilter** eller **Rapportnivåfilter** i fönstret **Fält**:
 
@@ -106,4 +108,5 @@ Följande begränsningar och överväganden kan användas för utsnitt och filte
 
 ## <a name="next-steps"></a>Nästa steg
 
-Lär dig [använda gruppering i Power BI Desktop](../desktop-grouping-and-binning.md).
+- [Använda ett relativt datumutsnitt eller filter i Power BI](desktop-slicer-filter-date-range.md)
+- [Utsnitt i Power BI](power-bi-visualization-slicers.md)

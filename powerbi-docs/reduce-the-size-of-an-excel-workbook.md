@@ -10,10 +10,10 @@ ms.date: 01/10/2019
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: 8c58c85ea46f9884586e1ff73f1ef9f7b1db9cdd
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73860554"
 ---
 # <a name="reduce-the-size-of-an-excel-workbook-to-view-it-in-power-bi"></a>Minska storleken på en Excel-arbetsbok för att visa den i Power BI
@@ -50,7 +50,7 @@ Följ dessa tips när du importerar data till Excel:
 * **I Power Query**: Rensa rutan **Läs in i kalkylblad**.
   
   Data importeras endast till datamodellen, utan data i Excel-kalkylbladen.
-* **Från Excel Data-fliken**, om du tidigare har markerat **Tabell** i Importguiden: Gå till **Befintliga anslutningar** \> och klicka på \> **Skapa endast anslutning**. Ta bort den ursprungliga tabellen eller tabellerna som skapades under den initiala importen.
+* **Från Excel Data-fliken**, om du tidigare har markerat **Tabell** i Importguiden: Gå till **Befintliga anslutningar**\> och klicka på \> **Skapa endast anslutning**. Ta bort den ursprungliga tabellen eller tabellerna som skapades under den initiala importen.
 * **På Excel Data-fliken**: markera inte **tabell** i rutan **importera data**.
 
 ## <a name="workbook-size-optimizer"></a>Arbetsbokens storleksoptimering
