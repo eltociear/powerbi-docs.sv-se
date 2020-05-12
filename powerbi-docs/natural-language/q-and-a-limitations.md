@@ -1,18 +1,18 @@
 ---
 title: Begränsningar för Power BI Frågor och svar
 description: Aktuella begränsningar för Power BI Frågor och svar
-author: mohaali
+author: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/18/2019
-ms.author: mohaali
-ms.openlocfilehash: 9f1beed3408d53a58a0fb725f9d98a4a95bb1b7c
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 04/21/2020
+ms.author: maggies
+ms.openlocfilehash: b71fd2986fb79adf88493416ac8234f2656aefa9
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73874890"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82866781"
 ---
 # <a name="limitations-of-power-bi-qa"></a>Begränsningar för Power BI Frågor och svar
 
@@ -27,7 +27,7 @@ Power BI Frågor och svar har för närvarande stöd för följande konfiguratio
 - Import-läge
 - Direktanslutning till Azure Analysis Services
 - Direktanslutning till SQL Server Analysis Services (via en gateway)
-- Power BI-datamängder. Power BI Desktop rapporterar ett fel med Frågor och svar när du använder en Power BI-datamängd. När du publicerar rapporten till Power BI-tjänsten försvinner dock felet.
+- Power BI-datamängder.
 
 Alla de här konfigurationerna har även stöd för säkerhet på radnivå.
 
@@ -61,11 +61,14 @@ Med Träna Frågor och svar kan du åtgärda två typer av fel:
 
 För närvarande saknas stöd för att definiera om en identifierad term eller att definiera andra typer av villkor eller fraser. När du definierar filtervillkor kan du bara använda en begränsad del av språket, bland annat följande:
 
-- "Land” som är ”USA”
-- ”Land” som inte är ”USA”
-- ”Vikt” > 2000
-- ”Vikt” = 2000
-- ”Vikt” < 2000
+- Land som är USA
+- Land som inte är USA
+- Produkter > 100
+- Produkter som är större än 100
+- Produkter = 100
+- Produkter är 100
+- Produkter < 100
+- Produkter som är mindre än 100
 
 > [!NOTE]
 > Verktygen i Frågor och svar har bara stöd för importläge. För närvarande saknas stöd för anslutning till en lokal datakälla eller en Azure Analysis Services-datakälla. Den här begränsningen kommer att försvinna i senare versioner av Power BI.
@@ -75,3 +78,7 @@ För närvarande saknas stöd för att definiera om en identifierad term eller a
 - Du kan för närvarande inte använda mått i villkor. Konvertera i stället måtten till beräknade kolumner så att de fungerar.
 - Du kan inte använda flera villkor. En lösning är att skapa en beräknad DAX-kolumn som utvärderar ett booleskt uttryck med flera villkor och använder detta fält i stället.
 - Om du inte anger något filtervillkor när Frågor och svar begär en delmängd data kan du inte spara definitionen, även om hela instruktionen saknar röda understrykningar.
+
+## <a name="next-steps"></a>Nästa steg
+
+Det finns ett antal metodtips för att förbättra motorn för naturligt språk. Mer information finns i [Frågor och svar – metodtips](q-and-a-best-practices.md).

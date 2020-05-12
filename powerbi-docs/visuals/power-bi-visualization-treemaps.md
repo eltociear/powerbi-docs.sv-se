@@ -3,21 +3,22 @@ title: Trädkartor i Power BI
 description: Trädkartor i Power BI
 author: mihart
 ms.reviewer: ''
-featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/24/2019
-ms.author: mihart
+ms.date: 05/05/2020
+ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b70e9611b22f1df20d39cdbd338fd5b6bfe1b43d
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 189cc784577df277b0b0517253699ae06842b30c
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "73880732"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82866896"
 ---
 # <a name="treemaps-in-power-bi"></a>Trädkartor i Power BI
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -39,14 +40,6 @@ I grenen **Urbant** ovan, såldes massor av **VanArsdel**-kläder. Mindre med **
 
 Du skulle kunna jämföra antalet sålda artiklar med de övriga klädkategorierna genom att jämföra storlek och färg för varje lövnod; ju större rektangel och ju mörkare färg, desto högre värde.
 
-Vill du först se någon annan skapa en trädkarta? Hoppa till 2:10 i det här videoklippet och se Amanda skapa en trädkarta.
-
-   > [!NOTE]
-   > Den här videon använder en äldre version av Power BI Desktop.
-   > 
-   > 
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 
 ## <a name="when-to-use-a-treemap"></a>När du ska använda en trädkarta
 
@@ -75,6 +68,10 @@ De här självstudierna använder sig av [PBIX-filen Exempel på detaljhandelsan
 1. Öppna **PBIX-filen Exempel för detaljhandelsanalys** i rapportvyn ![Skärmbild av rapportvisningsikonen.](media/power-bi-visualization-kpi/power-bi-report-view.png).
 
 1. Välj ![Skärmbild av den gula fliken.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) för att lägga till en ny sida.
+
+> [!NOTE]
+> För att dela en rapport med en Power BI-kollega krävs att du både har individuella Power BI Pro-licenser eller att rapporten har sparats med Premium-kapacitet.    
+
 
 
 När du har hämtat datamängden **Exempel på detaljhandelsanalys** kan du sätta igång.

@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 04/28/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: f82bde423d910cb5622e5e709890502e96daab36
-ms.sourcegitcommit: 20f15ee7a11162127e506b86d21e2fff821a4aee
+ms.openlocfilehash: e3e0108f539a7c42b41c36f743a0b8b79f3b61b8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82585395"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82781741"
 ---
 # <a name="export-the-data-that-was-used-to-create-a-visualization"></a>Exportera data som används för att skapa en visualisering
 
@@ -265,6 +265,8 @@ Dessa begränsningar och överväganden gäller för Power BI Desktop och Power 
   1. Välj **Hämta externa data** > **Från text**.
   
   1. Gå till den lokala mappen där filen lagras och välj *.csv-filen*.
+
+- När du exporterar till *.csv* undantas vissa tecken med en inledande **”** .
 
 - Power BI-administratörer kan inaktivera export av data.
 

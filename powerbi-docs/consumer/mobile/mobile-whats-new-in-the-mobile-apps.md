@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 03/09/2020
+ms.date: 05/05/2020
 ms.author: painbar
-ms.openlocfilehash: af9a1ad5dd13f4f57947b0ca92459e7691eab5fd
-ms.sourcegitcommit: 9b806dfe62c2dee82d971bb4f89d983b97931b43
+ms.openlocfilehash: 8235f95d724b34e7ea815579e6f8ed6a1f71e409
+ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "80802105"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82841720"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nyheter i Power BI-mobilapparna
 Relaterad information om nyheter finns i:
@@ -24,6 +24,14 @@ Relaterad information om nyheter finns i:
 
 >[!NOTE]
 >Stöd för Power BI-mobilappen för **telefoner som använder Windows 10 Mobile** kommer att upphöra den 16 mars 2021. [Läs mer](https://go.microsoft.com/fwlink/?linkid=2121400)
+
+## <a name="april-2020"></a>April 2020
+
+### <a name="sharing-from-workspaces-is-now-available"></a>Delning från arbetsytor är nu tillgängligt
+Vi har lagt till möjligheten att dela rapporter och instrumentpaneler från arbetsytor. Du kan nu dela innehållet från "Min arbetsyta" och från andra arbetsytor om arbetsytans ägare tillåter det, precis som i Power BI-tjänsten. 
+
+### <a name="dashboards-now-support-full-screen-mode-ios-and-android"></a>Instrumentpanelerna stöder nu fullskärmsläge (iOS och Android)
+Nu kan du visa dina instrumentpaneler i fullskärmsläge, vilket ger dig mer utrymme att visa instrumentpanelens innehåll. 
 
 ## <a name="march-2020"></a>Mars 2020
 
@@ -871,4 +879,4 @@ Förbättringar i Power BI-mobilapparna – Android, iOS (iPhone och iPad) och W
 * Förbättrad kartpanelsåtergivning i fokusläge för att maximera skärmutrymmet.
 * Förbättrad användarupplevelse vid åtkomst till instrumentpaneler med hjälp av rollbaserad säkerhet. 
 * Med en av de nya funktionerna kan du bläddra fram och tillbaka via instrumentpanelens paneler och utforska dem direkt i fokusläge utan behov av att gå tillbaka till instrumentpanelen för att välja nästa panel.
-* Ytterligare stabilitets- och prestandaförbättringar. 
+* Ytterligare stabilitets- och prestandaförbättringar.

@@ -7,17 +7,19 @@ featuredvideoid: lnv66cTZ5ho
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/22/2019
-ms.author: mihart
+ms.date: 04/22/2020
+ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b0ed499a272fc3f6fc0590117898c64551fedac1
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 9c8dcfec103bb53d645cdfd347112d7443506569
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79436098"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82867011"
 ---
 # <a name="create-and-use-combo-charts-in-power-bi"></a>Skapa och använda kombinationsdiagram i Power BI
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -33,6 +35,9 @@ Kombinationsdiagram är ett bra alternativ:
 * för att illustrera sambandet mellan två mätvärden i en visualisering,
 * för att kontrollera om ett mätvärde uppfyller det mål som definieras av ett annat mätvärde,
 * för att spara utrymme på arbetsytan.
+
+> [!NOTE]
+> För att dela en rapport med en Power BI-kollega krävs att du både har individuella Power BI Pro-licenser eller att rapporten har sparats med Premium-kapacitet.
 
 ### <a name="prerequisites"></a>Förutsättningar
 De här självstudierna använder sig av [PBIX-filen Exempel på detaljhandelsanalys](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
@@ -68,7 +73,7 @@ Se hur Will skapar ett kombinationsdiagram med exemplet på försäljning och ma
     ![självstudieexempel på kombinationsdiagram](media/power-bi-visualization-combo-chart/combotutorial1new.png)
 5. Välj **Fler alternativ** uppe till höger i visualiseringen och välj **Sortera efter > FiscalMonth** (Räkenskapsmånad). Om du vill ändra sorteringsordningen väljer du ellipsen igen och väljer antingen **Sort ascending (Sortera stigande)** eller **Sort descending (Sortera fallande)** . I det här exemplet väljer vi **Sortera stigande**.
 
-6. Konvertera stapeldiagrammet till ett kombinationsdiagram. Det finns två kombinationsdiagram: **linjediagram och stående stapeldiagram** samt **linjediagram och grupperat stående stapeldiagram**. Välj **Linje- och grupperat stapeldiagram** i fönstret **Visualiseringar** med stapeldiagrammet markerat.
+6. Konvertera stapeldiagrammet till ett kombinationsdiagram. Det finns två kombinationsdiagram: **Linjediagram och stående stapeldiagram** samt **Linjediagram och grupperat stående stapeldiagram**. Välj **Linje- och grupperat stapeldiagram** i fönstret **Visualiseringar** med stapeldiagrammet markerat.
 
     ![exempel på konvertering av kombinationsdiagram](media/power-bi-visualization-combo-chart/converttocombo-new2.png)
 7. Från panelen **Fält** drar du **Försäljning** \> **Last Years Sales (Förra årets försäljning)** till behållaren **Radvärden**.
@@ -89,7 +94,7 @@ I januari var bruttomarginal % 35 %, med en topp på 45 % i april som sjönk i
 2. Lägg till **This Year Sales (Årets försäljning) > Värde** och **Last Years Sales (Förra årets försäljning)** till linjediagrammet. Skalan för **Bruttomarginal förra året %** är mycket mindre än skalan för **Försäljning** vilket gör det svårt att jämföra.      
 
    ![exempel på flatline för kombinationsdiagram](media/power-bi-visualization-combo-chart/flatline-new.png)
-3. Konvertera linjediagrammet till ett stående linje- och stapeldiagram om du vill göra det visuella objektet lättare att läsa och tolka.
+3. Konvertera linjediagrammet till ett Linjediagram och stående stapeldiagram om du vill göra det visuella objektet lättare att läsa och tolka.
 
    ![exempel på konvertering till kombinationsdiagram](media/power-bi-visualization-combo-chart/converttocombo-new.png)
 

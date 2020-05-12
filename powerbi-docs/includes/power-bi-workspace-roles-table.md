@@ -8,12 +8,12 @@ ms.topic: include
 ms.date: 04/23/2020
 ms.author: maggies
 ms.custom: include file
-ms.openlocfilehash: 9a6ca5abf3c26af876666ef45fe7ae192e69f2a3
-ms.sourcegitcommit: 9ec2c608b90bf651df613f0714addd251a885039
+ms.openlocfilehash: 5ed3a65f1ef65640c76ada765931a85714aad3af
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "82120371"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82781370"
 ---
 Här är funktionerna för de fyra rollerna: administratörer, medlemmar, deltagare och läsare. För alla dessa funktioner (utom visning och interaktion) krävs en Power BI Pro-licens.
 
@@ -31,10 +31,13 @@ Här är funktionerna för de fyra rollerna: administratörer, medlemmar, deltag
 | Publicera rapporter till arbetsytan och ta bort innehåll.  |  X | X  | X  |   |
 | Skapa en rapport på en annan arbetsyta baserat på en datamängd i den här arbetsytan.<sup>1</sup> |  X | X  | X  |   |
 | Kopiera en rapport.<sup>2</sup> | X | X | X |  |
-| Visa och interagera med ett objekt.<sup>3</sup> |  X | X  | X  | X  |
+| Schemalägg datauppdateringar via den lokala gatewayen.<sup>3</sup> | X | X | X |  |
+| Modifiera anslutningsinställningar för gateway.<sup>3</sup> | X | X | X |  |
+| Visa och interagera med ett objekt.<sup>4</sup> |  X | X  | X  | X  |
 | Läs data som lagrats på arbetsytedataflöden | X | X | X | X |
 
 1. Deltagare och användare kan dela objekt i en arbetsyta om de har omdelningsbehörighet.
 2. För att kunna kopiera en rapport och skapa en rapport i en annan arbetsyta baserat på en datauppsättning i den här arbetsytan behöver du behörigheten Skapa för datauppsättningen. Personer med administratörs-, medlems- och deltagarroller har behörigheten Skapa för datauppsättningar i den här arbetsytan via rollen för arbetsytan.
-3. Även om du inte har en Power BI Pro-licens kan du visa och interagera med objekt i Power BI-tjänsten om objekten finns i en arbetsyta i en Premium-kapacitet.
+3. Tänk på att du även behöver behörigheter på gatewayen. Dessa behörigheter hanteras någon annanstans, oberoende av arbetsytans roller och behörigheter. Mer information finns i [Manage an on-premises gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-manage) (Hantera en lokal gateway).
+4. Även om du inte har en Power BI Pro-licens kan du visa och interagera med objekt i Power BI-tjänsten om objekten finns i en arbetsyta i en Premium-kapacitet.
 

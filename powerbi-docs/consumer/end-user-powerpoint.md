@@ -3,18 +3,19 @@ title: Exportera rapporter från Power BI till PowerPoint
 description: Läs hur du exporterar en Power BI-rapport till PowerPoint.
 author: mihart
 ms.reviewer: ''
+ms.custom: contperfq4
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 02/21/2020
+ms.date: 05/05/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: f9e0288c91f65d10329aaac29df8eb6e7a81f297
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.openlocfilehash: 4a93bbc0d5d8014e11fb59129b22b5493def0ac2
+ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79377177"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82841140"
 ---
 # <a name="export-reports-from-power-bi-to-powerpoint"></a>Exportera rapporter från Power BI till PowerPoint
 
@@ -22,7 +23,9 @@ ms.locfileid: "79377177"
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-Med Power BI kan du publicera din rapport till Microsoft PowerPoint och enkelt att skapa ett bildspel baserat på din Power BI-rapport. När du exporterar till PowerPoint, inträffar följande:
+![bild som visar Power BI-logotyp och PowerPoint-logotyp](media/end-user-powerpoint/logos.png)
+
+Med tjänsten Power BI (app.powerbi.com) kan du publicera din rapport till Microsoft PowerPoint och enkelt att skapa ett bildspel baserat på din Power BI-rapport. När du exporterar till PowerPoint, inträffar följande:
 
 * Varje sida i Power BI-rapporten blir en enskild bild i PowerPoint.
 * Varje sida i Power BI-rapporten exporteras som en högupplöst bild i PowerPoint.
@@ -30,6 +33,10 @@ Med Power BI kan du publicera din rapport till Microsoft PowerPoint och enkelt a
 * En länk skapas i PowerPoint som länkar till Power BI-rapporten.
 
 Att få din **Power BI-rapport** exporterad till **PowerPoint** går snabbt. Följ stegen som beskrivs i nästa avsnitt.
+
+Du kan också kopiera vissa visuella objekt från Power BI-tjänsten och klistra in dem i PowerPoint. Välj ikonen för **Kopiera som bild** för att kopiera det visuella objektet till Urklipp. Öppna sedan PowerPoint och klistra in det visuella objektet.
+
+![Välj ikonen Kopiera som bild](media/end-user-powerpoint/power-bi-copy.png)
 
 ## <a name="export-your-power-bi-report-to-powerpoint"></a>Exportera en Power BI-rapport till PowerPoint
 Välj en rapport i **Power BI-tjänsten** för att visa den på arbetsytan. Du kan även välja en rapport från **Start**, **Appar** eller någon annan container i navigeringsfönstret.
@@ -77,12 +84,13 @@ Det är nu upp till dig vad du vill göra med PowerPoint-presentationen eller n�
 ## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
 Det finns några överväganden och begränsningar som du bör tänka på när du arbetar med funktionen **exportera till PowerPoint**.
 
-* Visuella R-och Python-objekt stöds inte för tillfället. Alla sådana visualiseringar exporteras som en tom bild till PowerPoint med ett felmeddelande som säger att visualiseringen inte stöds.
+
+* Att exportera rapporten till PowerPoint kan ta några minuter att slutföra, så ha tålamod. Faktorer som kan påverka den tid som krävs är rapportens struktur och den aktuella belastningen på Power BI-tjänsten.
 * Visuella Power BI-objekt som har certifierats stöds. Mer information om certifierade anpassade visuella objekt, inklusive hur anpassade visuella objekt certifieras, finns i [certifiera anpassade visuella objekt](../developer/power-bi-custom-visuals-certified.md). Anpassade visuella objekt som inte har certifierats stöds inte. De exporteras som en tom bild till PowerPoint med ett felmeddelande som säger att visualiseringen inte stöds.
-* Det här visuella ESRI-objektet stöds inte
+* URL-filter respekteras för närvarande inte när du väljer **Aktuella värden** för exporten.
+* Det [visuella ESRI ArcGIS-objektet](../visuals/power-bi-visualizations-arcgis.md) stöds inte
 * Rapporter med mer än 30 rapportsidor kan för närvarande inte exporteras.
 * Visuella objekt med rullningslister exporteras i sitt standardtillstånd. Du ser bara de översta dataraderna i det visuella objektet i PowerPoint. Du kan inte rulla i PowerPoint eftersom objekten är bilder. 
-* Att exportera rapporten till PowerPoint kan ta några minuter att slutföra, så ha tålamod. Faktorer som kan påverka den tid som krävs är rapportens struktur och den aktuella belastningen på Power BI-tjänsten.
 * Om menyobjektet **exportera till PowerPoint** inte finns i Power BI-tjänsten, beror det förmodligen på att din klientadministratör har inaktiverat funktionen. Kontakta din klientadministratör för mer information.
 * Bakgrundsbilder beskärs med diagrammets markeringsområdet. Vi rekommenderar att du tar bort bakgrundsbilder innan du exporterar till PowerPoint.
 * Sidor i PowerPoint skapas alltid i 9:16 standardstorlek, oavsett ursprungliga sidstorlekar eller dimensioner i Power BI-rapporten.
@@ -93,7 +101,10 @@ Det finns några överväganden och begränsningar som du bör tänka på när d
 * Power BI-tjänsten använder det språk du har i din Power BI-språkinställning som språk för PowerPoint-exporten. Om du vill se eller ange din språkinställning, klicka på kugghjulsikonen ![kugghjulsikon](media/end-user-powerpoint/power-bi-settings-icon.png) > **Inställningar** > **Allmänt** > **Språk**.
 * Klockslaget **Hämtad vid** på omslagsbilden för den exporterade PowerPoint-filen har angetts till datorns tidszon vid tidpunkten för exporten.
 * När du exporterar till PPTX så används standardteckensnitt för rapporter med anpassade teckensnitt.
-* URL-filter respekteras för närvarande inte när du väljer **Aktuella värden** för exporten.
+* Visuella objekt som skapats med R och Python stöds inte för närvarande. Alla sådana visualiseringar exporteras som en tom bild till PowerPoint med ett felmeddelande som säger att visualiseringen inte stöds.
+
+
 
 ## <a name="next-steps"></a>Nästa steg
+[Kopiera visuella objekt som statiska bilder](../power-bi-visualization-copy-paste.md)    
 [Skriva ut en rapport](end-user-print.md)

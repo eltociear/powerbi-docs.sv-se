@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 03/08/2020
-ms.openlocfilehash: 08790c8c0c751f935d62357d86b6976a81dc977b
-ms.sourcegitcommit: 8eeb784fd46321680367ac913ef976aeedaa7766
+ms.openlocfilehash: 90e914cf9b5c03542436750253fd959808403214
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80621466"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82613567"
 ---
 # <a name="publish-power-bi-visuals-to-partner-center"></a>Publicera visuella Power BI-objekt på Partnercenter
 
@@ -101,9 +101,11 @@ Följ stegen nedan när du ska skicka in ditt visuella Power BI-objekt till Part
 
 ## <a name="tracking-submission-status-and-usage"></a>Spåra sändningsstatus och användning
 
-Du kan granska [verifieringsprinciperna](https://docs.microsoft.com/legal/marketplace/certification-policies#1180-power-bi-visuals).
+* Du kan granska [verifieringsprinciperna](https://docs.microsoft.com/legal/marketplace/certification-policies#1180-power-bi-visuals).
 
-Därefter kommer du att kunna visa status för ansökan i [appinstrumentpanelen](https://sellerdashboard.microsoft.com/Application/Summary/).
+* Därefter kommer du att kunna visa status för ansökan i [appinstrumentpanelen](https://sellerdashboard.microsoft.com/Application/Summary/).
+
+* Information om hur du kan hämta det visuella Power BI-objektet från AppSource finns i [tidslinjen för publikation](power-bi-custom-visuals-certified.md#publication-timeline) för visuella Power BI-objekt.
 
 ## <a name="certify-your-visual"></a>Godkänn ditt visuella objekt
 

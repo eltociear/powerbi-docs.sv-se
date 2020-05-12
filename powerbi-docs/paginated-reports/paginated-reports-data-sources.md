@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 04/24/2020
-ms.openlocfilehash: cbf30e3479629533faea73465362c378d4b73848
-ms.sourcegitcommit: c772c544ce2e1e2a147b9b62e5579ac3cb59d54c
+ms.date: 04/28/2020
+ms.openlocfilehash: ad75cf6b85a896fbdc275748dc31c620206e08a2
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82255755"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82692899"
 ---
 # <a name="supported-data-sources-for-power-bi-paginated-reports"></a>Datakällor som stöds för sidnumrerade Power BI-rapporter
 
@@ -25,7 +25,7 @@ Sidnumrerade rapporter har inbyggt stöd för följande lista av datakällor:
 
 | Datakälla | Autentisering | Anteckningar |
 | --- | --- | --- |
-| Azure SQL Database <br>Azure SQL Data Warehouse | Grundläggande, enkel inloggning, OAuth2 |   |
+| Azure SQL Database <br>Azure SQL Data Warehouse | Grundläggande, enkel inloggning, OAuth2 | Du kan använda en Enterprise Gateway med Azure SQL DB. Du får dock inte använda SSO eller oAuth2 för att autentisera i dessa scenarier.   |
 | Azure SQL-hanterad instans | Grundläggande | via offentlig eller privat slutpunkt (privat slutpunkt måste dirigeras via Enterprise Gateway)  |
 | Azure Analysis Services | Enkel inloggning, OAuth2 | AAS-brandväggen måste inaktiveras eller konfigureras så att alla IP-intervall tillåts.|
 | Power BI-datamängd | Enkel inloggning | Premium-baserade och icke-Premium-baserade Power BI-datamängder. Kräver läs-behörighet |

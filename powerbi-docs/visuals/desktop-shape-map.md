@@ -7,22 +7,27 @@ ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 03/18/2020
-ms.author: mihart
+ms.author: rien
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 67c2acad74827c515c92ed0d16dd642170b8dc61
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 5717d543d5c70bbbe7c25ed3e55778639d777170
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79525670"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82866551"
 ---
 # <a name="create-shape-map-visualizations-in-power-bi-desktop-preview"></a>Skapa formkartevisualiseringar i Power BI Desktop (förhandsversion)
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
 Skapa en **Formkarta** för att jämföra regioner på en karta med hjälp av färg. Till skillnad från **Karta** kan **Formkarta** inte visa exakta geografiska platser för datapunkter på en karta. Istället är dess huvudsakliga syfte att visa relativa jämförelser mellan regioner med hjälp av olika färger.
 
 **Formkartor** är baserade på TopoJSON-kartor, som kan använda anpassade kartor skapade av dig. Exempel på anpassade kartor är geografiska kartor, placeringskartor, plankartor med mera. Möjligheten att använda anpassade kartor är inte tillgänglig i den här förhandsversionen av **Formkarta**.
+
+> [!NOTE]
+> För att dela en rapport med en Power BI-kollega krävs att du både har individuella Power BI Pro-licenser eller att rapporten har sparats med Premium-kapacitet.
 
 ## <a name="creating-shape-maps"></a>Skapa formkartor
 Du kan testa kontrollen **Formkarta** med kartorna som levereras med den här förhandsversionen använda dina egna anpassade kartor förutsatt att de uppfyller kraven som anges i följande avsnitt: **Använda anpassade kartor**.
@@ -113,9 +118,9 @@ Det finns några överväganden och krav för den här förhandsversionen av **F
 
 Använd följande **Regionsnycklar** i den här förhandsversionen för att prova **formkartan**.
 
-### <a name="australia-states"></a>Australien: delstater
+### <a name="australia-states"></a>Australien: Stater
 
-| ID | förkortn. | ISO | namn | postnummer |
+| ID | förkortn. | ISO | name | postnummer |
 | --- | --- | --- | --- | --- |
 | au-wa |WA |AU-WA |Western Australia |WA |
 | au-vic |Vic |AU-VIC |Victoria |VIC |
@@ -126,9 +131,9 @@ Använd följande **Regionsnycklar** i den här förhandsversionen för att prov
 | au-nsw |NSW |AU-NSW |New South Wales |NSW |
 | au-act |ACT |AU-ACT |Australian Capital Territory |ACT |
 
-### <a name="austria-states"></a>Österrike: förbundsländer
+### <a name="austria-states"></a>Österrike: Stater
 
-| ID | ISO | namn | namn-en | postnummer |
+| ID | ISO | name | namn-en | postnummer |
 | --- | --- | --- | --- | --- |
 | at-wi |AT-9 |Wien |Wien |WI |
 | at-vo |AT-8 |Vorarlberg |Vorarlberg |VO |
@@ -136,11 +141,11 @@ Använd följande **Regionsnycklar** i den här förhandsversionen för att prov
 | at-st |AT-6 |Steiermark |Steiermark |ST |
 | at-sz |AT-5 |Salzburg |Salzburg |SZ |
 | at-oo |AT-4 |Oberösterreich |Övre Österrike |OO |
-| at-no |AT-3 |Niederösterreich |Nedre Österrike |NEJ |
+| at-no |AT-3 |Niederösterreich |Nedre Österrike |NO |
 | at-ka |AT-2 |Kärnten |Kärnten |KA |
 | för |AT-1 |Burgenland |Burgenland |BU |
 
-### <a name="brazil-states"></a>Brasilien: delstater
+### <a name="brazil-states"></a>Brasilien: Stater
 
 | ID |
 | --- |
@@ -176,9 +181,9 @@ Använd följande **Regionsnycklar** i den här förhandsversionen för att prov
 | Litigated Zone 3 |
 | Litigated Zone 4 |
 
-### <a name="canada-provinces"></a>Kanada: provinser
+### <a name="canada-provinces"></a>Kanada: Provinser
 
-| ID | ISO | namn | postnummer |
+| ID | ISO | name | postnummer |
 | --- | --- | --- | --- |
 | ca-nu |CA-NU |Nunavut |NU |
 | ca-nt |CA-NT |Northwest Territories |NT |
@@ -194,9 +199,9 @@ Använd följande **Regionsnycklar** i den här förhandsversionen för att prov
 | ca-bc |CA-BC |British Columbia |BC |
 | ca-ab |CA-AB |Alberta |AB |
 
-### <a name="france-regions"></a>Frankrike: regioner
+### <a name="france-regions"></a>Frankrike: Regioner
 
-| ID | namn | namn-en |
+| ID | name | namn-en |
 | --- | --- | --- |
 | Auvergne-Rhone-Alpes |  |  |
 | Bourgogne-Franche-Comte |  |  |
@@ -216,9 +221,9 @@ Använd följande **Regionsnycklar** i den här förhandsversionen för att prov
 | Provence-Alpes-Cote d'Azur |Provence-Alpes-Côte d'Azur |Provence-Alpes-Cote d'Azur |
 |  |  |  |
 
-### <a name="germany-states"></a>Tyskland: delstater
+### <a name="germany-states"></a>Tyskland: Stater
 
-| ID | ISO | namn | namn-en | postnummer |
+| ID | ISO | name | namn-en | postnummer |
 | --- | --- | --- | --- | --- |
 | de-be |DE-BE |Berlin |Berlin |BE |
 | de-th |DE-TH |Thüringen |Thüringen |TH |
@@ -237,7 +242,7 @@ Använd följande **Regionsnycklar** i den här förhandsversionen för att prov
 | de-by |DE-BY |Bayern |Bayern |BY |
 | de-bw |DE-BW |Baden-Württemberg |Baden-Württemberg |BW |
 
-### <a name="ireland-counties"></a>Irland: grevskap
+### <a name="ireland-counties"></a>Irland: Län
 
 | ID |
 | --- |
@@ -268,9 +273,9 @@ Använd följande **Regionsnycklar** i den här förhandsversionen för att prov
 | Cavan |
 | Carlow |
 
-### <a name="italy-regions"></a>Italien: regioner
+### <a name="italy-regions"></a>Italien: Regioner
 
-| ID | ISO | namn | namn-en | postnummer |
+| ID | ISO | name | namn-en | postnummer |
 | --- | --- | --- | --- | --- |
 | it-vn |IT-34 |Veneto |Veneto |VN |
 | it-vd |IT-23 |Valle d'Aosta |Aosta-dalen |VD |
@@ -293,9 +298,9 @@ Använd följande **Regionsnycklar** i den här förhandsversionen för att prov
 | it-pu |IT-75 |Apulia |Apulien |PU |
 | it-ab |IT-65 |Abruzzo |Abruzzo |AB |
 
-### <a name="mexico-states"></a>Mexiko: delstater
+### <a name="mexico-states"></a>Mexiko: Stater
 
-| ID | förkortning | ISO | namn | namn-en | postnummer |
+| ID | förkortning | ISO | name | namn-en | postnummer |
 | --- | --- | --- | --- | --- | --- |
 | mx-zac |Zac. |MX-ZAC |Zacatecas |Zacatecas |ZA |
 | mx-yuc |Yuc. |MX-YUC |Yucatán |Yucatán |YU |
@@ -330,9 +335,9 @@ Använd följande **Regionsnycklar** i den här förhandsversionen för att prov
 | mx-bcn |B.C. |MX-BCN |Baja California |Baja California |BN |
 | mx-agu |Ags. |MX-AGU |Aguascalientes |Aguascalientes |AG |
 
-### <a name="netherlands-provinces"></a>Nederländerna: provinser
+### <a name="netherlands-provinces"></a>Nederländerna: Provinser
 
-| ID | ISO | namn | namn-en |
+| ID | ISO | name | namn-en |
 | --- | --- | --- | --- |
 | nl-zh |NL-ZH |Zuid-Holland |Zuid-Holland |
 | nl-ze |NL-ZE |Zeeland |Zeeland |
@@ -347,18 +352,18 @@ Använd följande **Regionsnycklar** i den här förhandsversionen för att prov
 | nl-fl |NL-FL |Flevoland |Flevoland |
 | nl-dr |NL-DR |Drenthe |Drenthe |
 
-### <a name="uk-countries"></a>Storbritannien: länder
+### <a name="uk-countries"></a>Storbritannien: Länder
 
-| ID | ISO | namn |
+| ID | ISO | name |
 | --- | --- | --- |
 | gb-wls |GB-WLS |Wales |
 | gb-sct |GB-SCT |Skottland |
 | gb-nir |GB-NIR |Nordirland |
 | gb-eng |GB-ENG |England |
 
-### <a name="usa-states"></a>USA: delstater
+### <a name="usa-states"></a>USA: Stater
 
-| ID | namn | postnummer |
+| ID | name | postnummer |
 | --- | --- | --- |
 | us-mi |Michigan |MI |
 | us-ak |Alaska |AK |
@@ -367,7 +372,7 @@ Använd följande **Regionsnycklar** i den här förhandsversionen för att prov
 | us-la |Louisiana |LA |
 | us-ar |Arkansas |AR |
 | us-sc |South Carolina |SC |
-| us-ga |Georgien |GA |
+| us-ga |Georgia |GA |
 | us-ms |Mississippi |MS |
 | us-al |Alabama |AL |
 | us-nm |New Mexico |NM |

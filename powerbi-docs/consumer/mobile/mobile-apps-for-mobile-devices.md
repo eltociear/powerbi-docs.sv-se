@@ -9,12 +9,12 @@ ms.date: 03/11/2020
 ms.author: painbar
 ms.custom: ''
 ms.reviewer: ''
-ms.openlocfilehash: 3eb8aafca2257bff12d3b248d4f3c1d43708e563
-ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
+ms.openlocfilehash: 8e24258d7431996bcdcc1c049daa2a6cbd4f60b5
+ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79435409"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82841766"
 ---
 # <a name="what-are-the-power-bi-mobile-apps"></a>Vad är Power BI-mobilappar?
 Power BI ger en uppsättning av mobila appar för mobila iOS-, Android- och Windows 10-enheter. I mobilappar, ansluter du till och interagerar med dina molntjänster och lokala data. 
@@ -31,7 +31,7 @@ Du skapar rapporter i Power BI Desktop. Du skapar instrumentpaneler, och visar i
 
 | **Enhet** | **Höjdpunkter** |
 | --- | --- |
-| [![iPhone](./media/mobile-apps-for-mobile-devices/iphone-logo-50-px.png)](mobile-iphone-app-get-started.md) |**iPhone** fungerar överallt, och [Power BI-mobilappen för iPhone](mobile-iphone-app-get-started.md) fungerar också. Förutom att visa dina Power BI[-rapporter i en särskild telefonlayoutvy](mobile-apps-view-phone-report.md), kan du [lägga till Power BI till din Apple Watch](mobile-apple-watch.md) och [ställa frågor med den virtuella frågor och svar analyseraren](mobile-apps-ios-qna.md). <br/>Kom igång med [Power BI-mobilappen för iOS](mobile-iphone-app-get-started.md). |
+| [![iPhone](./media/mobile-apps-for-mobile-devices/iphone-logo-50-px.png)](mobile-iphone-app-get-started.md) |**iPhone** fungerar överallt, och [Power BI-mobilappen för iPhone](mobile-iphone-app-get-started.md) fungerar också. Förutom att visa dina Power BI[-rapporter i en särskild mobillayoutvy](mobile-apps-view-phone-report.md), kan du [lägga till Power BI till din Apple Watch](mobile-apple-watch.md) och [ställa frågor med den virtuella frågor och svar analyseraren](mobile-apps-ios-qna.md). <br/>Kom igång med [Power BI-mobilappen för iOS](mobile-iphone-app-get-started.md). |
 | [![iPad](./media/mobile-apps-for-mobile-devices/ipad-logo-50-px.png)](mobile-iphone-app-get-started.md) |På en **iPad** visar Power BI-mobilappen instrumentpaneler och rapporter på det sätt som de formaterats för Power BI-tjänsten. Dessutom kan du visa dina [KPI:er och rapporter från Power BI-rapportserver och Reporting Services](mobile-app-ssrs-kpis-mobile-on-premises-reports.md) direkt i din iPad. Du kan [ställa in dataaviseringar i Power BI-mobilappen](mobile-set-data-alerts-in-the-mobile-apps.md) för att meddela dig när data i en instrumentpanel ändras utöver de gränser som du anger. <br/>Kom igång med [Power BI-mobilappen för iOS](mobile-iphone-app-get-started.md). |
 | [![Android-telefon](media/mobile-apps-for-mobile-devices/android-phone-logo-50-px.png)](mobile-android-app-get-started.md) |Power BI-mobilappen för **Android-telefoner** gör att du kan ta med Power BI i fickan med uppdaterad, pekaktiverad mobil åtkomst till företagets information. Du kan [filtrera en rapport efter din geografiska plats](mobile-apps-geographic-filtering.md). Du kan [skanna QR-koder med din Android-telefon](mobile-apps-qr-code.md) och gå direkt till en Power BI-instrumentpanel eller -rapport. <br/>Kom igång med [Power BI-mobilappen för Android](mobile-android-app-get-started.md). |
 | [![Android-surfplatta](./media/mobile-apps-for-mobile-devices/android-tablet-logo-50-px.png)](mobile-android-app-get-started.md) |Den här mobilappen körs på ett antal olika **Android-surfplattor** och ger dig uppdaterad, pekaktiverad mobil åtkomst till företagets information. På en Android-surfplatta visar den mobila Power BI-appen instrumentpaneler och rapporter på det sätt som de formaterats för Power BI-tjänsten. Du kan [markera dina favoritinstrumentpaneler och -rapporter](mobile-apps-favorites.md), så att du kan nå dem snabbt, tillsammans med din favorit-Power BI-rapportserver och Reporting Services-KPI:er och -rapporter. <br/>Kom igång med [Power BI-mobilappen för Android](mobile-android-app-get-started.md). |

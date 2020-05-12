@@ -2,27 +2,35 @@
 title: Linjediagram i Power BI
 description: Linjediagram i Power BI
 author: mihart
-ms.reviewer: amac
+ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/26/2019
-ms.author: mihart
+ms.date: 05/05/2020
+ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e46aa05ac326b5c959da8a29329fa92f4aec0b4d
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 0f430747187729cbb939b67795ff0507770bb0f1
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "73871081"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82867034"
 ---
 # <a name="line-charts-in-power-bi"></a>Linjediagram i Power BI
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
+
 Ett linjediagram är en serie datapunkter som representeras av prickar som är anslutna via raka linjer. Ett linjediagram kan innehålla en eller flera linjer. Linjediagram har en X- och en Y-axel. 
 
 ![enkelt linjediagram](media/power-bi-line-charts/power-bi-line.png)
 
+
+
 ## <a name="create-a-line-chart"></a>Skapa ett linjediagram
 De här anvisningarna använder appen Exempel på försäljning och marknadsföring för att skapa ett linjediagram som visar årets försäljning efter kategori. Om du vill följa med kan du hämta exempelappen från appsource.com.
+
+> [!NOTE]
+> För att dela en rapport med en Power BI-kollega krävs att du både har individuella Power BI Pro-licenser eller att rapporten har sparats med Premium-kapacitet.
 
 1. Börja med en tom rapportsida. Om du inte använder Power BI-tjänsten, se till att du öppnar rapporten i [redigeringsvyn](../service-interact-with-a-report-in-editing-view.md).
 

@@ -4,16 +4,16 @@ description: Läs mer om att installera, anpassa och distribuera mallappar i din
 author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
-ms.topic: how-to
-ms.date: 03/15/2020
+ms.subservice: powerbi-template-apps
+ms.topic: conceptual
+ms.date: 05/04/2020
 ms.author: painbar
-ms.openlocfilehash: 08aadc3027c5b265194e4239b150ea5d27fe2e43
-ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
+ms.openlocfilehash: 86fe618508504faebc920c77a1f9605da59040d9
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79436121"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82781712"
 ---
 # <a name="install-and-distribute-template-apps-in-your-organization"></a>Installera och distribuera mallappar i organisationen
 
@@ -65,7 +65,7 @@ Om du vill installera, anpassa och distribuera en mallapp behöver du:
 
 1. Klicka på **Anslut**.
     
-    Då öppnas en dialogruta eller serie med dialogrutor där du kan ändra datakällan från exempeldata till din egen datakälla. Det betyder vanligtvis att du definierar om datauppsättningsparametrar och autentiseringsuppgifter för datakällan. Se [Kända begränsningar](service-template-apps-tips.md#known-limitations).
+    Då öppnas en dialogruta eller serie med dialogrutor där du kan ändra datakällan från exempeldata till din egen datakälla. Det betyder vanligtvis att du definierar om datauppsättningsparametrar och autentiseringsuppgifter för datakällan. Se [Kända begränsningar](service-template-apps-overview.md#known-limitations).
     
     I exemplet nedan involverar anslutningen till data två dialogrutor.
 
@@ -95,14 +95,18 @@ När du har gjort alla ändringar du vill för artefakterna i arbetsytan är du 
 
 Då och då släpper skapare av mallappar nya förbättrade versioner av sina mallappar, antingen via AppSource, direktlänk eller både och.
 
-Om du ursprungligen laddade ned appen från AppSource, och en ny version av mallappen blir tillgänglig, visas en uppdateringsbanderoll i Power BI-tjänsten som informerar dig om att en ny appversion är tillgänglig.
+Om du ursprungligen laddade ned appen från AppSource när en ny version av Template-appen blir tillgänglig får du ett meddelande på två sätt:
+* En uppdateringsbanderoll visas i Power BI-tjänsten som informerar dig om att det finns en ny version av appen.
+  ![Uppdateringsmeddelande för mallapp](media/service-template-apps-install-distribute/power-bi-new-app-version-notification-banner.png)
+* Du får ett meddelande i Power BI-meddelandefönstret.
 
-  ![Uppdateringsmeddelande för mallapp](media/service-template-apps-install-distribute/power-bi-new-app-version-notification.png)
+
+  ![Uppdateringsmeddelande för mallapp](media/service-template-apps-install-distribute/power-bi-new-app-version-notification-pane.png)
 
 >[!NOTE]
 >Om du ursprungligen fick appen via direktlänk i stället för via AppSource, kan du bara få reda på om en ny version är tillgänglig genom att kontakta skaparen av mallappen.
 
-  Om du vill installera uppdateringen klickar du antingen på **Hämta** i meddelandebanderollen, eller söker efter appen igen i AppSource och väljer **Hämta nu**. Om du har en direktlänk för uppdateringen från den som skapat mallappen, klickar du bara på länken.
+  Om du vill installera uppdateringen klickar du antingen på **Hämta** i meddelandebanderollen eller meddelandecentret eller söker efter appen igen i AppSource och väljer **Hämta nu**. Om du har en direktlänk för uppdateringen från den som skapat mallappen, klickar du bara på länken.
   
   Du får en fråga om du vill skriva över den aktuella versionen eller installera den nya versionen i en ny arbetsyta. Överskrivning är valt som standard.
 

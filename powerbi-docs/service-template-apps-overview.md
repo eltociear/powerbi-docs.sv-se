@@ -4,16 +4,16 @@ description: Den här artikeln ger en översikt över Power BI-mallappar. Lär d
 author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 04/16/2020
+ms.date: 05/04/2020
 ms.author: painbar
-ms.openlocfilehash: 42fa16228deea88f606e348d1a87f9d465c8c2ea
-ms.sourcegitcommit: 01bcbc8f0280aec875b22542a9c193c80899dc10
+ms.openlocfilehash: 466e7cb842244104b004c4f65f82dafe13dc9725
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "82066335"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82781327"
 ---
 # <a name="what-are-power-bi-template-apps"></a>Vad är Power BI-mallappar?
 
@@ -103,6 +103,7 @@ Se [Tips för att skapa mallappar i Power BI](service-template-apps-tips.md) fö
 | Datauppsättning: över arbetsytor | Inga datauppsättningar över arbetsytor är tillåtna  |
 | Frågeparametrar | Stöds ej: Parametrar av typen ”Any” eller ”Binary” blockerar uppdateringsåtgärden för datauppsättningen |
 | Visuella objekt för Power BI | Bara som offentligt tillgängliga visuella Power BI-objekt stöds. [Visuella Power BI-objekt för organisationer](developer/visuals/power-bi-custom-visuals-organization.md) stöds inte |
+| Nationella moln | Mallappar är inte tillgängliga i nationella moln |
 
 ## <a name="support"></a>Support
 Använd [https://powerbi.microsoft.com/support](https://powerbi.microsoft.com/support) för support under utveckling. Vi övervakar och hanterar den här webbplatsen aktivt. Kundincidenter når snabbt ett lämpligt team.

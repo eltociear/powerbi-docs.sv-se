@@ -7,12 +7,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/23/2019
 ms.author: mohaali
-ms.openlocfilehash: 02faed03e84c9d3a9f9ebd536116ffa0287dba4e
-ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
+ms.openlocfilehash: b5865219d84c8fa388f297824550fd715f0c2923
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82841927"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82866870"
 ---
 # <a name="best-practices-to-optimize-qa-in-power-bi"></a>Metodtips för att optimera Frågor och svar i Power BI
 Användning av vanliga fraser och naturligt språk för att ställa frågor till dina data är kraftfullt. Det är ännu mer kraftfullt när dina data svarar, vilket är precis vad du kan åstadkomma med Frågor och svar i Power BI.
@@ -195,8 +195,10 @@ Det här steget gäller specifikt för frågor och svar (och inte för Power BI-
 
 Det här steget kan vara viktigt. Även om tabeller och kolumner heter enkla saker kan de som använder Frågor och svar ställa frågor på sitt eget sätt. De väljer inte från en fördefinierad lista med kolumner. Ju bättre synonymer du lägger till desto bättre blir användarnas upplevelse av rapporten. Om du vill lägga till synonymer i Power BI Desktop går du till modellvyn, väljer fliken Modellering och väljer sedan ett fält eller en tabell. Du kan lägga till synonymer i rutan **Synonymer** i fönstret Egenskaper.
 
-
-
-![Synonymer i fönstret Egenskaper i Frågor och svar](media/qna-modelling-pane-synonyms.png)
+![Synonymer i fönstret Egenskaper i Frågor och svar](media/q-and-a-best-practices/qna-modelling-pane-synonyms.png)
 
  Var försiktig när du lägger till synonymer. Om du lägger till samma synonym för fler än en kolumn eller tabell uppstår tvetydighet. Om det är möjligt använder Frågor och svar kontexten till att välja mellan tvetydiga synonymer, men alla frågor har inte tillräcklig kontext. Om du till exempel har tre saker med synonymen ”kund” i din modell och användaren ställer frågan ”antal kunder” kanske svaret inte blir som förväntat. Kontrollera i dessa fall att den primära synonymen är unik, eftersom det är den som används i omformuleringen. Den kan göra användaren uppmärksam på tvetydigheten (till exempel en omformulering ”visa antalet arkiverade kundposter”), och antyda att hen kanske vill ställa frågan annorlunda.
+
+## <a name="next-steps"></a>Nästa steg
+
+[Introduktion till Power BI Frågor och svar](q-and-a-intro.md)

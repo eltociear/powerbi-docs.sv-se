@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/03/2019
+ms.date: 04/23/2020
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 951a05247a02e379c56c45176edb622e683af413
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.openlocfilehash: 401cc419401756c9576ce6efc25a34b7aa667024
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79207745"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82781596"
 ---
 # <a name="supported-languages-and-countriesregions-for-power-bi"></a>Språk och länder/regioner som stöds för Power BI
 
@@ -72,7 +72,7 @@ Power BI-tjänsten (i webbläsaren) finns på följande 44 språk:
 * Vietnamesiska – Tiếng Việt
 
 ### <a name="whats-translated"></a>Vad är översatt?
-Power BI översätter menyer, knappar, meddelanden och andra delar av upplevelsen till ditt språk. Rapportinnehåll såsom automatiskt genererade titlar, filter och knappbeskrivningar översätts, men dina data översätts inte automatiskt. Inuti rapporter ändras inte layouten för visuella objekt om du använder ett höger-till-vänster-språk, till exempel hebreiska.
+Power BI översätter menyer, knappar, meddelanden och andra delar av upplevelsen till ditt språk. Power BI översätter till exempel rapportinnehåll som automatiskt skapade rubriker, filter och knappbeskrivningar. Dina data översätts dock inte automatiskt. Inuti rapporter ändras inte layouten för visuella objekt om du använder ett höger-till-vänster-språk, till exempel hebreiska.
 
 För tillfället är endast några funktioner enbart tillgängliga på engelska:
 
@@ -118,7 +118,7 @@ Power BI identifierar språket baserat på datorns språkinställningar. Hur du 
 Det finns två sätt att skaffa Power BI Desktop: Du kan ladda ned det som ett fristående installationsprogram eller installera det från Windows Store.
 
 * När du installerar Power BI Desktop från Windows Store, installeras alla språk och det språk som motsvarar standardspråket för Windows visas som standard.
-* När du laddar ned Power BI Desktop som fristående installationsprogram väljer du standardspråk när du kör installationsprogrammet och kan ändra det vid ett senare tillfälle.
+* När du laddar ned Power BI Desktop som fristående installationsprogram väljer du standardspråk när du kör installationsprogrammet. Du kan ändra den senare.
 * Du kan också [välja en språkversion som ska användas när du importerar data](#choose-the-locale-for-importing-data-into-power-bi-desktop) för en viss rapport.
 
 > [!NOTE]
@@ -126,11 +126,12 @@ Det finns två sätt att skaffa Power BI Desktop: Du kan ladda ned det som ett f
 
 ### <a name="choose-a-language-for-power-bi-desktop"></a>Välj ett språk för Power BI Desktop 
 1. Installera Power BI Desktop [från Windows Store](https://aka.ms/pbidesktopstore) eller som ett [fristående installationsprogram](https://aka.ms/pbiSingleInstaller).
-2. Ändra språk i din datorsökning efter **Windows-inställningar**. 
-3. Välj **Tid och språk**.
+2. Om du vill ändra språk väljer du **Inställningar** på Windows-menyn
+
+3. I **Windows-inställningar**väljer du **Tid och språk**.
    
      ![Dialogrutan Windows-inställningar](media/supported-languages-countries-regions/power-bi-service-windows-settings.png)
-4. Välj **Region och språk**, välj ett språk och välj **Ange som standard**.
+4. Välj **Språk** och välj ett språk. Välj **Add a Windows display language in Microsoft Store** (Lägg till ett Windows-visningsspråk i Microsoft Store) om det behövs.
    
      ![Dialogrutan Språkinställningar i Windows](media/supported-languages-countries-regions/power-bi-service-language-settings.png)
    
@@ -143,8 +144,30 @@ Om du vill åsidosätta standardvärdet och använda Power BI Desktop på ett an
 
 Språkstöd i Power BI Desktop är begränsat till de språk som visas i listrutan Programspråk.
 
+### <a name="verify-power-bi-desktop-default-number-and-date-formatting"></a>Verifiera Power BI Desktop-standardantal och datumformat
+
+Power BI Desktop hämtar standardantal och datumformatering från inställningarna för Windows-regionen. Du kan kontrollera eller ändra inställningarna om det behövs.
+
+1. På Windows-menyn väljer du **Inställningar**
+
+2. I **Windows-inställningar**väljer du **Tid och språk**.
+   
+     ![Dialogrutan Windows-inställningar](media/supported-languages-countries-regions/power-bi-service-windows-settings.png)
+
+3. Välj **Region** > **Additional date, time, and regional settings** (Ytterligare datum-, tid- och regionsinställningar).
+
+    :::image type="content" source="media/supported-languages-countries-regions/power-bi-service-region-settings.png" alt-text="Ytterligare datum-, tid- och regionsinställningar":::
+
+4. I **Clock and Region** (Klocka och region) väljer du **Change date, time, or number formats** (Ändra format för datum, tid eller siffror).
+
+    :::image type="content" source="media/supported-languages-countries-regions/power-bi-service-check-region-settings.png" alt-text="Inställningar för klocka och region":::
+
+5. Kontrollera att **Matcha Windows-visningsspråk** är markerat eller ändra det om det behövs.
+
+    :::image type="content" source="media/supported-languages-countries-regions/power-bi-service-match-windows.png" alt-text="Matcha Windows-visningsspråk":::
+
 ### <a name="choose-the-locale-for-importing-data-into-power-bi-desktop"></a>Välja språk för import av data till Power BI Desktop
-Oavsett om du laddar ned Power BI Desktop eller installerar det från Windows Store, kan du välja att ett språk för en viss rapport ska vara något annat än språket i din version av Power BI Desktop. Språkinställningen påverkar hur data tolkas när de importeras från datakällan, till exempel om ”3/4/2017” ska tolkas som 3 april eller 4 mars. 
+Oavsett om du laddar ned Power BI Desktop eller installerar det från Windows Store, kan du välja att ett språk för en viss rapport ska vara något annat än språket i din version av Power BI Desktop. Språkinställningen påverkar hur Power BI tolkar data när de importeras från datakällan. Ska till exempel ”3/4/2017” tolkas som 3 april eller 4 mars?
 
 1. I Power BI Desktop går du till **Arkiv** > **Alternativ och inställningar** > **Alternativ**.
 2. Under **Aktuell fil**väljer du **Regionala inställningar**.

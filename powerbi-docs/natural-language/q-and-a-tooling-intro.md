@@ -1,18 +1,18 @@
 ---
 title: Introduktion till verktyg i Frågor och svar för att träna upp Power BI Frågor och svar (förhandsversion)
 description: Introduktion till verktyg i Power BI Frågor och svar
-author: mohaali
+author: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/17/2019
-ms.author: mohaali
-ms.openlocfilehash: 17d0a68782f34c09286be5ebe020668a15061ee4
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.date: 04/17/2020
+ms.author: maggies
+ms.openlocfilehash: 6178c9f157578110a09abf3fcbebccba54339f13
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73874944"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82866084"
 ---
 # <a name="intro-to-qa-tooling-to-train-power-bi-qa-preview"></a>Introduktion till verktyg i Frågor och svar för att träna upp Power BI Frågor och svar (förhandsversion)
 
@@ -36,29 +36,44 @@ Verktyg i Frågor och svar är bara tillgängligt i Power BI Desktop, och för n
 1. Öppna Power BI Desktop och skapa ett visuellt objekt med Frågor och svar. 
 2. Välj kugghjulsikonen i hörnet av det visuella objektet. 
 
-    ![Kugghjul i visuellt Frågor och svar-objekt](media/qna-visual-gear.png)
+    ![Kugghjul i visuellt Frågor och svar-objekt](media/q-and-a-tooling-intro/qna-visual-gear.png)
 
     Sidan Kom igång öppnas.  
 
-    ![Kom igång i Frågor och svar](media/qna-tooling-dialog.png)
+    ![Kom igång i Frågor och svar](media/q-and-a-tooling-intro/qna-tooling-dialog.png)
 
 ### <a name="review-questions"></a>Granska frågor
 
 Välj **Granska frågor** om du vill se en lista med de datamängder som används i Power BI-tjänsten för din klientorganisation. På sidan **Granska frågor** ser du även datamängdens ägare, arbetsytan och datumet för senaste uppdatering. Här kan du välja en datamängd och se vilka frågor som användarna har ställt. Du ser även ord som inte känts igen. De data som visas här är för de senaste 28 dagarna.
 
-![Granska frågor i Frågor och svar](media/qna-tooling-review-questions.png)
+![Granska frågor i Frågor och svar](media/q-and-a-tooling-intro/qna-tooling-review-questions.png)
 
 ### <a name="teach-qa"></a>Lär ut frågor och svar
 
 I avsnittet **Träna Frågor och svar** kan du träna Frågor och svar på att identifiera ord. Börja genom att skriva en fråga som innehåller ett eller flera ord som Frågor och svar inte känner igen. Frågor och svar uppmanar dig att ange en definition av termen. Ange antingen ett filter eller ett fältnamn som motsvarar vad ordet representerar. Frågor och svar tolkar sedan om den ursprungliga frågan. Om du är nöjd med resultatet kan du spara dina indata. Läs mer i [Träna Frågor och svar](q-and-a-tooling-teach-q-and-a.md)
 
-![Förhandsversion av synonymträning i Frågor och svar](media/qna-tooling-teach-fixpreview.png)
+![Förhandsversion av synonymträning i Frågor och svar](media/q-and-a-tooling-intro/qna-tooling-teach-fixpreview.png)
 
 ### <a name="manage-terms"></a>Hantera termer
 
 Här visas allt du har sparat från Träna Frågor och svar, så att du kan granska och eventuellt ta bort de termer du har definierat. För närvarande kan du inte redigera befintliga definitioner, så om du vill definiera om en term måste du ta bort och återskapa den.
 
-![Hantera termer i Frågor och svar](media/qna-manage-terms.png)
+![Hantera termer i Frågor och svar](media/q-and-a-tooling-intro/qna-manage-terms.png)
+
+### <a name="suggest-questions"></a>Föreslå frågor
+
+Om du inte konfigurerar någon inställning föreslår Visuella frågor och svar flera frågor att komma igång med. Frågorna genereras automatiskt baserat på din datamodell. I **Föreslå frågor**kan du skriva över de automatiskt genererade frågorna med dina egna frågor. 
+
+Börja med att skriva den fråga som du vill lägga till i textrutan. I avsnittet förhandsversion ser du hur resultatet kommer att se ut i Visuella frågor och svar. 
+
+:::image type="content" source="media/q-and-a-tooling-intro/power-bi-qna-suggest-questions.png" alt-text="Föreslå frågor och svar":::
+ 
+Välj knappen **Lägg till** för att lägga till den här frågan till **dina föreslagna frågor**. Alla ytterligare frågor läggs till i slutet av den här listan. Frågorna visas i Visuella frågor och svar i samma ordning som i den här listan. 
+
+:::image type="content" source="media/q-and-a-tooling-intro/power-bi-qna-save-suggest-questions.png" alt-text="Spara föreslagna frågor":::
+ 
+Se till att välja **Spara** för att visa en lista över föreslagna frågor i Visuella frågor och svar. 
+
 
 ## <a name="other-qa-settings"></a>Andra inställningar i Frågor och svar
 
@@ -70,7 +85,7 @@ På fliken **Modellering** i Power BI Desktop finns fler alternativ för att fö
 
 2. Välj ett fält eller en tabell så att fönstret **Egenskaper** öppnas.  Det här fönstret innehåller flera Frågor och svar-åtgärder och visas till höger på arbetsytan. Ett alternativ är **Synonymer**. I rutan **Synonymer** kan du snabbt definiera alternativ till den tabell eller det fält du väljer. Du kan också definiera synonymer i avsnittet **Träna Frågor och svar** i dialogrutan Verktyg, men om det gäller många fält i en tabell går det ofta snabbare att göra det här.
 
-    ![Synonymer på fliken Modellering i Frågor och svar](media/qna-modelling-pane-synonyms.png)
+    ![Synonymer på fliken Modellering i Frågor och svar](media/q-and-a-tooling-intro/qna-modelling-pane-synonyms.png)
 
 3. Om du vill definiera flera synonymer för ett enda fält använder du kommatecken till att avgränsa dem.
 
@@ -100,6 +115,4 @@ I Power BI kan du träna upp och förbättra motorn för naturligt språk helt i
 
 ## <a name="next-steps"></a>Nästa steg
 
-Det finns ett antal metodtips för att förbättra motorn för naturligt språk. Mer information finns i följande artikel:
-
-* [Metodtips för Frågor och svar](q-and-a-best-practices.md)
+Det finns ett antal metodtips för att förbättra motorn för naturligt språk. Mer information finns i [Frågor och svar – metodtips](q-and-a-best-practices.md).

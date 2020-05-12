@@ -1,19 +1,19 @@
 ---
 title: Träna Frågor och svar att förstå frågor och termer i Power BI Frågor och svar
 description: Så använder du Frågor och svar i Power BI till att utforska dina data
-author: mohaali
+author: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/17/2019
-ms.author: mohaali
+ms.date: 04/21/2020
+ms.author: maggies
 LocalizationGroup: Ask questions of your datadefintion
-ms.openlocfilehash: 695ad9143aa7074e079ae8606a9ad0eb6f6c964f
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: e5b870201943b93bfdaec2881005785c2f3c470b
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73874928"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82865828"
 ---
 # <a name="teach-qa-to-understand-questions-and-terms-in-power-bi-qa"></a>Träna Frågor och svar att förstå frågor och termer i Power BI Frågor och svar
 
@@ -26,7 +26,7 @@ I avsnittet **Träna Frågor och svar** i Frågor och svar-konfigurationen trän
 
 1. Öppna menyfliksområdet **Modellering** i Power BI Desktop och välj **Konfiguration av Frågor och svar** > **Träna Frågor och svar**.
 
-    ![Röd synonym i Träna Frågor och svar](media/qna-tooling-teach-synonym-red.png)
+    ![Röd synonym i Träna Frågor och svar](media/q-and-a-tooling-teach-q-and-a/qna-tooling-teach-synonym-red.png)
 
 2. Skriv en mening med en term som Frågor och svar inte känner igen och välj **Skicka**.
 
@@ -36,7 +36,7 @@ I avsnittet **Träna Frågor och svar** i Frågor och svar-konfigurationen trän
     
 3. Ange en definition under **Definiera de termer som Frågor och svar inte förstod**.
 
-    ![Förhandsgranska synonymer i Träna Frågor och svar](media/qna-tooling-teach-fixpreview.png)
+    ![Förhandsgranska synonymer i Träna Frågor och svar](media/q-and-a-tooling-teach-q-and-a/qna-tooling-teach-fixpreview.png)
 
 4. Välj **Spara** för att förhandsgranska det uppdaterade visuella objektet.
 
@@ -61,7 +61,7 @@ Frågor och svar identifierar automatiskt när ett okänt ord är ett substantiv
 
 Du fyller i rutan med termen från dina data.
 
-![Uppmaning om synonym i Träna Frågor och svar](media/qna-tooling-synonym-prompt.png)
+![Uppmaning om synonym i Träna Frågor och svar](media/q-and-a-tooling-teach-q-and-a/qna-tooling-synonym-prompt.png)
 
 Om du anger något annat än ett fält från datamodellen kan du få oönskade resultat.
 
@@ -73,17 +73,26 @@ Ibland kanske du vill definiera termer som fungerar som ett villkor för underli
 
 Du fyller i rutan med villkoret.
 
-![Uppmaning om synonym i Träna Frågor och svar](media/qna-tooling-adjectives.png)
+![Uppmaning om synonym i Träna Frågor och svar](media/q-and-a-tooling-teach-q-and-a/qna-tooling-adjectives.png)
 
 Här är några exempel på villkor du kan definiera:
 
-- ”Land” som är ”USA”
-- ”Land” som inte är ”USA”
-- ”Vikt” > 2000
-- ”Vikt” = 2000
-- ”Vikt” < 2000
+- Land som är USA
+- Land som inte är USA
+- Produkter > 100
+- Produkter som är större än 100
+- Produkter = 100
+- Produkter är 100
+- Produkter < 100
+- Produkter som är mindre än 100
 
-Du kan bara definiera enstaka villkor i verktyget. Om du vill definiera mer komplicerade villkor använder du DAX och skapar en beräknad kolumn. Sedan kan du skapa ett villkor för den beräknade kolumnen i verktyget. Du kan inte använda mått. Använd beräknade kolumner i stället.
+I de här exemplen kan ”produkter” vara antingen ett kolumnnamn eller ett mått. 
+
+Du kan också ange en sammansättning i själva uttrycket för frågor och svar. Om till exempel ”populära produkter” är produkter med minst 100 sålda enheter kan du definiera produkter med ”summan av sålda enheter > 100” som populära.  
+
+:::image type="content" source="media/q-and-a-tooling-teach-q-and-a/power-bi-qna-popular-products.png" alt-text="Definiera ”populära produkter”":::
+
+Du kan bara definiera enstaka villkor i verktyget. Om du vill definiera mer komplicerade villkor använder du DAX och skapar en beräknad kolumn eller mått. Sedan kan du skapa ett enskilt villkor för den beräknade kolumnen eller måttet i verktyget.
 
 ## <a name="manage-terms"></a>Hantera termer
 
@@ -93,10 +102,8 @@ När du har angett definitioner kan du gå tillbaka för att se dina ändringar 
 
 2. Ta bort de termer du inte vill använda längre. Du kan för närvarande inte redigera termer. Om du vill definiera om en term tar du bort termen och definierar den på nytt.
 
-    ![Hantera termer i Frågor och svar](media/qna-manage-terms.png)
+    ![Hantera termer i Frågor och svar](media/q-and-a-tooling-teach-q-and-a/qna-manage-terms.png)
 
 ## <a name="next-steps"></a>Nästa steg
 
-Det finns ett antal metodtips för att förbättra motorn för naturligt språk. Mer information finns i följande artikel:
-
-* [Metodtips för Frågor och svar](q-and-a-best-practices.md)
+Det finns ett antal metodtips för att förbättra motorn för naturligt språk. Mer information finns i [Frågor och svar – metodtips](q-and-a-best-practices.md).

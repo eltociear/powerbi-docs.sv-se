@@ -10,10 +10,10 @@ ms.date: 11/26/2019
 ms.author: painbar
 LocalizationGroup: Connect to services
 ms.openlocfilehash: 8e9563d10d80290a48e20cd2d6a889831d34924b
-ms.sourcegitcommit: fe9253a6021b9e198afa28aa9c670c3bacf59674
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/26/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74548580"
 ---
 # <a name="connect-to-office365mon-with-power-bi"></a>Ansluta till Office365Mon med Power BI
@@ -34,7 +34,7 @@ Anslut till [Office365Mon-mallappen](https://msit.powerbi.com/groups/me/getapps/
 3. Välj **Office365Mon** \> **Hämta**.
    
    ![](media/service-connect-to-office365mon/o365mon.png)
-4. Som Autentiseringsmetod väljer du **oAuth2** \> **Logga in**.
+4. Som autentiseringsmetod väljer du **oAuth2** \> **Logga in**.
    
    När du uppmanas till det anger du autentiseringsuppgifterna som Office365Mon-administratör och följer autentiseringsprocessen.
    
