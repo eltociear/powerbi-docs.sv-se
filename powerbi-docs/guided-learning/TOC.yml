@@ -1,6 +1,6 @@
-- name: Utforska Power BI (konsument)
+- name: Utforska Power BI (../konsument)
   href: 'https://docs.microsoft.com/learn/modules/explore-power-bi-service'
-- name: Analysera data i Power BI (konsument)
+- name: Analysera data i Power BI (../konsument)
   href: 'https://docs.microsoft.com/learn/modules/analyze-data-power-bi'
 - name: Kom igång med att bygga med Power BI
   href: 'https://docs.microsoft.com/learn/modules/get-started-with-power-bi'

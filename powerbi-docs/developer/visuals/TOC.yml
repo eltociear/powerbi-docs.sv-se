@@ -12,6 +12,10 @@
       items:
         - name: Utveckla ett visuellt Power BI-objekt
           href: custom-visual-develop-tutorial.md
+        - name: Skapa React-baserade visuella objekt
+          href: create-react-visual.md
+        - name: Skapa ett stapeldiagram
+          href: create-bar-chart.md
         - name: Lägga till formateringsalternativ
           href: custom-visual-develop-tutorial-format-options.md
         - name: Lägga till enhetstester för visuellt projekt
@@ -38,14 +42,20 @@
           href: objects-properties.md
         - name: Avancerat redigeringsläge
           href: advanced-edit-mode.md
+        - name: supportsKeyboardFocus-funktion
+          href: supportskeyboardfocus-feature.md
+        - name: supportsMultiVisualSelection-feature.md
+          href: supportsmultivisualselection-feature.md
     - name: Gör så här
       items:
         - name: Certifiera ett visuellt Power BI-objekt
           href: power-bi-custom-visuals-certified.md
         - name: Publicera visuella Power BI-objekt till AppSource
           href: office-store.md
+        - name: Testa din Power BI-visualisering
+          href: submission-testing.md
         - name: Använd R-baserade visuella Power BI-objekt i Power BI
-          href: ../../desktop-r-powered-custom-visuals.md?toc=/powerbi-docs/developer/TOC.json&bc=/powerbi-docs/breadcrumb/toc.json
+          href: ../../create-reports/desktop-r-powered-custom-visuals.md?toc=/powerbi-docs/developer/TOC.json&bc=/powerbi-docs/breadcrumb/toc.json
         - name: Visuella interaktioner
           href: visuals-interactions.md
         - name: Lägga till val
@@ -64,6 +74,8 @@
           href: context-menu.md
         - name: Lägg till stöd för ökad detaljnivå
           href: drill-down-support.md
+        - name: Lägg till färger i ditt visuella objekt
+          href: add-colors-power-bi-visual.md
         - name: Markera data i visuella objekt
           href: highlight.md
         - name: Lägga till stöd för högkontrastläge
@@ -78,10 +90,14 @@
           href: power-bi-custom-visuals-troubleshoot.md
     - name: Referens
       items:
+        - name: Ändringslogg
+          href: changelog.md
         - name: Landningssida
           href: landing-page.md
         - name: Starta URL
           href: launch-url.md
+        - name: Visual API
+          href: visual-api.md
         - name: API för lokal lagring
           href: local-storage.md
         - name: Återgivningshändelser
@@ -119,8 +135,8 @@
         - name: Dev Center
           href: 'https://powerbi.microsoft.com/developers/'
         - name: Exempel på Power BI-visualiseringar
-          href: 'https://microsoft.github.io/PowerBI-visuals/samples/'
-        - name: Git-lagringsplats för visuella Power BI -objekt
+          href: samples.md
+        - name: Git Repo för anpassade visuella objekt
           href: 'https://go.microsoft.com/fwlink/?linkid=848277'
         - name: Skapa SSL-certifikat
           href: create-ssl-certificate.md
