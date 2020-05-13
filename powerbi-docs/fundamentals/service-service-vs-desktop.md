@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/12/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 39b95708b95144ba77a3b33b8ee15f913ae7ca2b
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 87a30acce38966d0e044f4ed0b6691ccbc7acd3f
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79126269"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83349228"
 ---
 # <a name="comparing-power-bi-desktop-and-the-power-bi-service"></a>Jämföra Power BI Desktop och Power BI-tjänsten
 
@@ -23,7 +23,7 @@ I ett Venndiagram där Power BI Desktop och Power BI-tjänsten jämförs visar o
 
 ![Venndiagram över Power BI Desktop och tjänsten](media/service-service-vs-desktop/power-bi-venn-desktop-service.png)
 
-**Power BI Desktop** är ett komplett verktyg för dataanalys och rapportskapande som du installerar kostnadsfritt på den lokala datorn. Det omfattar frågeredigeraren, där du kan ansluta till många olika datakällor och kombinera dem (detta kallas ofta modellering) till en datamodell. Sedan designar du en rapport baserat på den datamodellen. [Kom igång-guiden för Power BI Desktop](../desktop-getting-started.md) går igenom processen.
+**Power BI Desktop** är ett komplett verktyg för dataanalys och rapportskapande som du installerar kostnadsfritt på den lokala datorn. Det omfattar frågeredigeraren, där du kan ansluta till många olika datakällor och kombinera dem (detta kallas ofta modellering) till en datamodell. Sedan designar du en rapport baserat på den datamodellen. [Kom igång-guiden för Power BI Desktop](desktop-getting-started.md) går igenom processen.
 
 **Power BI-tjänsten** är en molnbaserad tjänst. Den har stöd för enklare redigering av rapporter samt samarbete för team och organisationer. Du kan ansluta till datakällor i Power BI-tjänsten också men modelleringen är begränsad. 
 
@@ -50,19 +50,18 @@ I den här videon visas rapportredigeraren i Power BI Desktop.
 ### <a name="collaborating"></a>Samarbeta
 
 
-När du har skapat dina rapporter kan du spara dem på en *arbetsyta* i **Power BI-tjänsten**, där du och dina kollegor samarbetar. Du skapar *instrumentpaneler* på de rapporterna. Sedan delar du de instrumentpanelerna och rapporterna med rapportanvändare inom och utanför organisationen. Rapportanvändarna visar dem i Power BI-tjänsten i *läsvyn*, inte redigeringsvyn. De har inte åtkomst till alla funktioner som är tillgängliga för rapportskapare.  Du kan även dela dina datamängder och låta andra bygga egna rapporter utifrån dem. Läs mer om att [samarbeta i Power BI-tjänsten](../service-new-workspaces.md).
+När du har skapat dina rapporter kan du spara dem på en *arbetsyta* i **Power BI-tjänsten**, där du och dina kollegor samarbetar. Du skapar *instrumentpaneler* på de rapporterna. Sedan delar du de instrumentpanelerna och rapporterna med rapportanvändare inom och utanför organisationen. Rapportanvändarna visar dem i Power BI-tjänsten i *läsvyn*, inte redigeringsvyn. De har inte åtkomst till alla funktioner som är tillgängliga för rapportskapare.  Du kan även dela dina datamängder och låta andra bygga egna rapporter utifrån dem. Läs mer om att [samarbeta i Power BI-tjänsten](../collaborate-share/service-new-workspaces.md).
 
 ### <a name="self-service-data-prep-with-dataflows"></a>Dataförberedelser med självbetjäning för dataflöden
 
-Dataflöden hjälper organisationer att samla data från olika källor och förbereda dem för modellering. Analytiker kan enkelt skapa dataflöden, med välbekanta självbetjäningsverktyg. Analytiker använder dataflöden för att mata in, transformera, integrera och utöka stordata genom att definiera datakällsanslutningar, ETL-logik, uppdateringsscheman och mer. Läs mer om [dataförberedelser med självbetjäning för dataflöden](../service-dataflows-overview.md).
+Dataflöden hjälper organisationer att samla data från olika källor och förbereda dem för modellering. Analytiker kan enkelt skapa dataflöden, med välbekanta självbetjäningsverktyg. Analytiker använder dataflöden för att mata in, transformera, integrera och utöka stordata genom att definiera datakällsanslutningar, ETL-logik, uppdateringsscheman och mer. Läs mer om [dataförberedelser med självbetjäning för dataflöden](../transform-model/service-dataflows-overview.md).
 
 ## <a name="next-steps"></a>Nästa steg
 
-[Vad är Power BI Desktop?](../desktop-what-is-desktop.md)
+[Vad är Power BI Desktop?](desktop-what-is-desktop.md)
 
-[Skapa en rapport](../service-report-create-new.md) i Power BI-tjänsten
+[Skapa en rapport](../create-reports/service-report-create-new.md) i Power BI-tjänsten
 
-[Grundläggande begrepp för rapportdesigners](../service-basic-concepts.md)
+[Grundläggande begrepp för rapportdesigners](service-basic-concepts.md)
 
 Fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
-

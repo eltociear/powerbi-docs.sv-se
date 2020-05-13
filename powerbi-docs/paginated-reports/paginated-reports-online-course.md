@@ -9,12 +9,12 @@ ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 03/18/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 5ff7891ce704ebaf8677df6f0872396ffa1b04a2
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: ada695b2a568358f96010feb320226437beeb075
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81675646"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83349182"
 ---
 # <a name="online-course-power-bi-paginated-reports-in-a-day"></a>Nätbaserad kurs: Sidnumrerade rapporter i Power BI på en dag
 
@@ -100,11 +100,11 @@ Vi rekommenderar att du tittar på onlinekursen först. Du kan gå tillbaka till
 När du är redo att börja med den första övningen öppnar du filen **&lt;CourseFolder&gt;\PowerBIPRIAD\Lab01A\PowerBIPRIAD_Lab01A.pdf**. I det här dokumentet får du hjälp med att logga in i Power BI-tjänsten, ladda upp en datamängd och sedan installera [Power BI Report Builder](report-builder-power-bi.md).
 
 > [!NOTE]
-> Du måste ha ett eget Power BI-konto. Om du inte redan har det kan du läsa [Registrera dig för Power BI som enskild person](../service-self-service-signup-for-power-bi.md).
+> Du måste ha ett eget Power BI-konto. Om du inte redan har det kan du läsa [Registrera dig för Power BI som enskild person](../fundamentals/service-self-service-signup-for-power-bi.md).
 >
 > Du måste logga in i Power BI för att publicera en Power BI Desktop-fil till en arbetsyta. Publiceringen ger dig en datamängd som används som datakälla till rapporter. Du behöver ingen Power BI Pro-licens eller Power BI Premium-prenumeration för att använda en datamängd som datakälla till rapporter.
 >
-> I en del övningar ska du dock publicera en sidnumrerad rapport till en arbetsyta. Du kan bara öppna en sidnumrerad rapport när den är sparad på en arbetsyta i en [dedikerad kapacitet](../service-premium-what-is.md#dedicated-capacities) som har arbetsbelastningar för sidnumrerade rapporter aktiverade. Om du inte har åtkomst till någon sådan arbetsyta får du en länk till en video som visar rapportpublicering i stället.
+> I en del övningar ska du dock publicera en sidnumrerad rapport till en arbetsyta. Du kan bara öppna en sidnumrerad rapport när den är sparad på en arbetsyta i en [dedikerad kapacitet](../admin/service-premium-what-is.md#dedicated-capacities) som har arbetsbelastningar för sidnumrerade rapporter aktiverade. Om du inte har åtkomst till någon sådan arbetsyta får du en länk till en video som visar rapportpublicering i stället.
 
 ## <a name="instructor-kit"></a>Instruktörssats
 

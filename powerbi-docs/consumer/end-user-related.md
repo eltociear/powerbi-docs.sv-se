@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 0d3bbbf9042d2b0d1a42ab9c1f759ccfd03c6609
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 3dcd968d00d98106a8b717e635b8a7fdf958dc70
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79114380"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83347342"
 ---
 # <a name="view-related-content-in-the-power-bi-service"></a>Visa relaterat innehåll i Power BI-tjänsten
 
@@ -47,12 +47,12 @@ Fönstret **Relaterat innehåll** öppnas. För en instrumentpanel visas alla ra
 
 ![Fönstret Relaterat innehåll](./media/end-user-related/power-bi-view-related-dashboard.png)
 
-Härifrån kan du vidta direkta åtgärder för det relaterade innehållet.  Välj exempelvis namnet på en rapport eller en instrumentpanel för att öppna.  För en rapport i listan väljer du en ikon för att [analysera i Excel](../service-analyze-in-excel.md) eller [få insikter](end-user-insights.md). För en datamängd kan du se datum och tid för senaste uppdatering, [analysera i Excel](../service-analyze-in-excel.md) och [få insikter](end-user-insights.md).  
+Härifrån kan du vidta direkta åtgärder för det relaterade innehållet.  Välj exempelvis namnet på en rapport eller en instrumentpanel för att öppna.  För en rapport i listan väljer du en ikon för att [analysera i Excel](../collaborate-share/service-analyze-in-excel.md) eller [få insikter](end-user-insights.md). För en datamängd kan du se datum och tid för senaste uppdatering, [analysera i Excel](../collaborate-share/service-analyze-in-excel.md) och [få insikter](end-user-insights.md).  
 
 
 
 ## <a name="view-related-content-for-a-dataset"></a>Visa relaterat innehåll för en datauppsättning
-Du behöver minst behörighet att *visa* för en datauppsättning för att öppna fönstret **Relaterat innehåll**. I det här exemplet använder vi [Exemplet på anskaffningsanalys](../sample-procurement.md).
+Du behöver minst behörighet att *visa* för en datauppsättning för att öppna fönstret **Relaterat innehåll**. I det här exemplet använder vi [Exemplet på anskaffningsanalys](../create-reports/sample-procurement.md).
 
 I navigeringsfältet letar Leta upp rubriken **Arbetsytor** i navigeringsfönstret och välj en arbetsyta i listan. Om du har innehåll på en arbetsyta visas det på ytan till höger. 
 
@@ -67,7 +67,7 @@ Välj ikonen för att öppna fönstret **Relaterat innehåll**.
 
 ![Panel med relaterat innehåll öppnas ovanpå Power BI-innehållsvyn](media/end-user-related/power-bi-dataset.png)
 
-Härifrån kan du vidta direkta åtgärder för det relaterade innehållet. Välj exempelvis ett namn på en instrumentpanel eller rapport för att öppna den.  Välj en ikon för någon instrumentpanel i listan för att [dela instrumentpanelen med andra](../service-share-dashboards.md) eller öppna fönstret **Inställningar** för instrumentpanelen. Välj en ikon för en rapport för att [analysera i Excel](../service-analyze-in-excel.md), [byta namn](../service-rename.md) eller [hämta insikter](end-user-insights.md).  
+Härifrån kan du vidta direkta åtgärder för det relaterade innehållet. Välj exempelvis ett namn på en instrumentpanel eller rapport för att öppna den.  Välj en ikon för någon instrumentpanel i listan för att [dela instrumentpanelen med andra](../collaborate-share/service-share-dashboards.md) eller öppna fönstret **Inställningar** för instrumentpanelen. Välj en ikon för en rapport för att [analysera i Excel](../collaborate-share/service-analyze-in-excel.md), [byta namn](../create-reports/service-rename.md) eller [hämta insikter](end-user-insights.md).  
 
 ## <a name="limitations-and-troubleshooting"></a>Begränsningar och felsökning
 * Om du inte ser ”Visa relaterade” ska du istället leta efter ![ikonen Visa relaterade](./media/end-user-related/power-bi-view-related-icon-new.png). Välj ikonen för att öppna fönstret **Relaterat innehåll**.
@@ -75,6 +75,5 @@ Härifrån kan du vidta direkta åtgärder för det relaterade innehållet. Väl
 * Funktionen Relaterat innehåll fungerar inte för strömning av datauppsättningar.
 
 ## <a name="next-steps"></a>Nästa steg
-* [Kom igång med Power BI-tjänsten](../service-get-started.md)
+* [Kom igång med Power BI-tjänsten](../fundamentals/service-get-started.md)
 * Fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
-

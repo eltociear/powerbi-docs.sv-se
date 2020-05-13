@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 02/10/2020
 ms.author: painbar
-ms.openlocfilehash: af3ae969d0aedab3cc49e8d286ce71313da3d6bc
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 557334ed8aecccd646fde92a6d2cfa7852aff36b
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "77259793"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83347227"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-android-devices"></a>Kom igång med Power BI-mobilapp på Android-enheter
 Android-appen för Microsoft Power BI ger mobil BI-upplevelse för Power BI, Power BI-rapportserver och Reporting Services. Visa och interagera med ditt företags instrumentpaneler lokalt och i molnet överallt, med pekaktiverad mobil åtkomst i realtid. Utforska data i instrumentpaneler och dela med dina kollegor via e-post eller sms. 
@@ -46,7 +46,7 @@ Ta reda på [nyheterna i Power BI-mobilapparna](../../mobile-whats-new-in-the-mo
 Om du inte har registrerat dig ännu, går du till [Power BI-tjänsten](https://powerbi.com/) för att registrera dig för ditt eget konto för att skapa och lagra instrumentpaneler och rapporter och föra samman dina data. Logga sedan in på Power BI från din Android-enhet att se dina egna instrumentpaneler varifrån du vill.
 
 1. I Power BI-tjänsten, peka på [registrering](https://go.microsoft.com/fwlink/?LinkID=513879) för att skapa ett Power BI-konto.
-2. Starta [skapa dina egna instrumentpaneler och rapporter](../../service-get-started.md).
+2. Starta [skapa dina egna instrumentpaneler och rapporter](../../fundamentals/service-get-started.md).
 
 ## <a name="get-started-with-the-power-bi-app-on-your-device"></a>Kom igång med Power BI-appen på enheten
 1. Öppna Power BI för Android-enheten från startskärmen på din Android-telefon.
@@ -94,17 +94,17 @@ Microsoft Intune låter organisationer kontrollera objekt och kräva en PIN-kod 
 > 
 > 
 
-Läs mer om att [konfigurera Power BI-mobilappar med Microsoft Intune](../../service-admin-mobile-intune.md). 
+Läs mer om att [konfigurera Power BI-mobilappar med Microsoft Intune](../../admin/service-admin-mobile-intune.md). 
 
 ## <a name="next-steps"></a>Nästa steg
 Här följer några saker som du kan göra i Android-enhetsappen för Power BI med instrumentpaneler och rapporter i Power BI och rapporter och KPI:er i webbportalen för Power BI-rapportserver eller Reporting Services.
 
 ### <a name="power-bi-dashboards-and-reports"></a>Power BI-instrumentpaneler och -rapporter
-* Visa [dina appar](../../service-create-distribute-apps.md).
+* Visa [dina appar](../../collaborate-share/service-create-distribute-apps.md).
 * Visa dina [instrumentpaneler](../../mobile-apps-view-dashboard.md).
 * Utforska [panelerna på dina instrumentpaneler](../../mobile-tiles-in-the-mobile-apps.md).
 * Öppna [Power BI-rapporter](../../mobile-reports-in-the-mobile-apps.md).
-* Visa [dina appar](../../service-create-distribute-apps.md).
+* Visa [dina appar](../../collaborate-share/service-create-distribute-apps.md).
 * [Kommentera och dela paneler](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md).
 * Dela [instrumentpaneler](../../mobile-share-dashboard-from-the-mobile-apps.md).
 * [Skanna en Power BI QR-kod](../../mobile-apps-qr-code.md) med din Android-telefon för att öppna en relaterad instrumentpanel eller rapport. 
@@ -119,5 +119,3 @@ Här följer några saker som du kan göra i Android-enhetsappen för Power BI m
 * [Hämta Android-appen](https://go.microsoft.com/fwlink/?LinkID=544867) från Android-appbutiken.
 * [Vad är Power BI?](../../fundamentals/power-bi-overview.md)
 * Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
-
-

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 02/27/2020
-ms.openlocfilehash: 6ee1740d536a1bfd248b91d002142470b3894180
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 3ce1ae5207af6f4aaf844679bcd3ae52d2c13819
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79381317"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83348170"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Nyheter i Power BI-rapportserver
 
@@ -23,8 +23,8 @@ Ladda ned [Power BI-rapportserver och Power BI Desktop optimerat för Power BI-r
 
 Relaterad information om nyheter i Power BI finns i:
 
-* [Nyheter i Power BI-tjänsten](../service-whats-new.md)
-* [Nyheter i Power BI Desktop](../desktop-latest-update.md)
+* [Nyheter i Power BI-tjänsten](../fundamentals/service-whats-new.md)
+* [Nyheter i Power BI Desktop](../fundamentals/desktop-latest-update.md)
 * [Nyheter i mobilapparna för Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)
 
 ## <a name="january-2020"></a>Januari 2020
@@ -128,7 +128,7 @@ Den här månaden släpper vi ett nytt filformat, .pbids, med vilket du kan effe
 
 När en rapportskapare öppnar en .pbids-fil, så visas en autentiseringsuppmaning i Power BI Desktop för anslutning till den datakälla som anges i filen. Sedan väljer användaren de tabeller som ska läsas in i modellen. De kan också behöva välja databasen om någon sådan inte har angetts i filen. Därifrån kan rapportskaparen börja skapa visualiseringar.
 
-Mer information och exempel finns i avsnittet [Använda .pbids-filer för att hämta data](../desktop-data-sources.md#using-pbids-files-to-get-data) i artikeln "Datakällor i Power BI Desktop".
+Mer information och exempel finns i avsnittet [Använda .pbids-filer för att hämta data](../connect-data/desktop-data-sources.md#using-pbids-files-to-get-data) i artikeln "Datakällor i Power BI Desktop".
 
 *Prestandaförbättringar för modelleringsåtgärder*
 
@@ -239,11 +239,11 @@ Här följer några höjdpunkter:
 
 #### <a name="performance-analyzer"></a>Prestandaanalys 
 
-Om din rapport körs långsammare än förväntat provar du Prestandaanalys i Power BI Desktop. När du startar den skapas en loggfil med information om varje åtgärd du utför i rapporten. Läs mer om [Prestandaanalys](../desktop-performance-analyzer.md).
+Om din rapport körs långsammare än förväntat provar du Prestandaanalys i Power BI Desktop. När du startar den skapas en loggfil med information om varje åtgärd du utför i rapporten. Läs mer om [Prestandaanalys](../create-reports/desktop-performance-analyzer.md).
 
 #### <a name="new-modeling-view"></a>Ny modelleringsvy
 
-I den nya Modelleringsvyn i Power BI Desktop kan du visa och arbeta med komplexa datauppsättningar som innehåller många tabeller. Höjdpunkterna omfattar flera diagramlayouter och massredigering av kolumner, mått och tabeller. Läs mer om [Modelleringsvyn](../desktop-modeling-view.md).
+I den nya Modelleringsvyn i Power BI Desktop kan du visa och arbeta med komplexa datauppsättningar som innehåller många tabeller. Höjdpunkterna omfattar flera diagramlayouter och massredigering av kolumner, mått och tabeller. Läs mer om [Modelleringsvyn](../transform-model/desktop-modeling-view.md).
 
 #### <a name="accessible-visual-interaction"></a>Tillgänglig visuell interaktion
 
@@ -251,11 +251,11 @@ Nu kan du komma åt datapunkter på många av de inbyggda visuella objekten med 
 
 #### <a name="conditional-formatting-titles-and-web-url-actions"></a>Rubriker för villkorsstyrd formatering och webb-URL-åtgärder
 
-Power BI-rapporter är interaktiva. Det är logiskt att rubriker i en rapport är dynamiska, för att spegla den aktuella statusen för rapporten. Du kan använda samma uttrycksbunden formatering för att göra URL:erna för dina knappar, former och bilder dynamiska. Läs mer om [uttrycksbaserade rubriker](../desktop-conditional-format-visual-titles.md).
+Power BI-rapporter är interaktiva. Det är logiskt att rubriker i en rapport är dynamiska, för att spegla den aktuella statusen för rapporten. Du kan använda samma uttrycksbunden formatering för att göra URL:erna för dina knappar, former och bilder dynamiska. Läs mer om [uttrycksbaserade rubriker](../create-reports/desktop-conditional-format-visual-titles.md).
 
 #### <a name="cross-highlight-by-axis-labels"></a>Korsmarkera enligt axeletiketter
 
-Välj axelkategorietiketterna i ett visuellt objekt för att korsmarkera de andra elementen på en sida, precis som du skulle välja datapunkterna i ett visuellt objekt. Läs mer om [korsmarkering](../power-bi-reports-filters-and-highlighting.md#ad-hoc-highlighting).
+Välj axelkategorietiketterna i ett visuellt objekt för att korsmarkera de andra elementen på en sida, precis som du skulle välja datapunkterna i ett visuellt objekt. Läs mer om [korsmarkering](../create-reports/power-bi-reports-filters-and-highlighting.md#ad-hoc-highlighting).
 
 #### <a name="all-the-new-features"></a>Alla nya funktioner
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 02/27/2020
 ms.author: painbar
 LocalizationGroup: ''
-ms.openlocfilehash: fc1f55fbadfaa6c25dd9140a41064eaa876013df
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 101217023576783a32491b21ba254d54736b27db
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81525409"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83348216"
 ---
 # <a name="data-lineage"></a>Dataursprung
 I moderna Business Intelligence-projekt kan det vara svårt att förstå dataflödet från datakällan till målet. Det kan vara ännu svårare om du har byggt avancerade analysprojekt som omfattar flera datakällor, artefakter och beroenden. Frågor som ”vad händer om jag ändrar dessa data?” eller ”varför är inte den här rapporten uppdaterad?” kan vara svåra att svara på. Det kan krävas ett team av experter eller en djupgående undersökning för att hitta svaren. Vi har skapat en dataursprungsvy för att hjälpa dig att besvara dessa frågor.
@@ -88,9 +88,9 @@ Ursprungsvyn är en interaktiv arbetsyta. Du kan använda musen och pekplattan f
 
 ## <a name="considerations-and-limitations"></a>Överväganden och begränsningar
 
-- Ursprungsvyn är inte tillgänglig i Internet Explorer. Mer information finns i [Webbläsare som stöds för Power BI](../power-bi-browsers.md).
+- Ursprungsvyn är inte tillgänglig i Internet Explorer. Mer information finns i [Webbläsare som stöds för Power BI](../fundamentals/power-bi-browsers.md).
 
 ## <a name="next-steps"></a>Nästa steg
 
-* [Introduktion till datamängder mellan arbetsytor (förhandsversion)](../service-datasets-across-workspaces.md)
+* [Introduktion till datamängder mellan arbetsytor (förhandsversion)](../connect-data/service-datasets-across-workspaces.md)
 * [Påverkansanalys för en datamängd](service-dataset-impact-analysis.md)

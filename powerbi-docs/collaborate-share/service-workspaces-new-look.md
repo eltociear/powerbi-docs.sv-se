@@ -9,18 +9,18 @@ ms.topic: conceptual
 ms.date: 04/15/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: e74a59d3ff4a5568352c647ec9f384ad8c3a09b8
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 53a4ae78fa996c1e48ed0c16e0caf15e4f687697
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81638535"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83347940"
 ---
 # <a name="opt-in-to-the-workspace-new-look-preview"></a>Välj att använda det ”nya utseendet” för arbetsytor (förhandsversion)
 
-Arbetsytor har ett nytt utseende som sammanfaller med det [nya utseendet](../service-new-look.md) på Power BI-tjänsten. Alla som använder Power BI-tjänsten (app.powerbi.com) kan välja att använda det. När du aktiverar det **nya utseendet** i det svarta rubrikfältet väljer du det nya utseendet för rapporter och arbetsytor. Alla arbetsytor, både klassiska och nya, kan dra nytta av det nya utseendet.
+Arbetsytor har ett nytt utseende som sammanfaller med det [nya utseendet](../consumer/service-new-look.md) på Power BI-tjänsten. Alla som använder Power BI-tjänsten (app.powerbi.com) kan välja att använda det. När du aktiverar det **nya utseendet** i det svarta rubrikfältet väljer du det nya utseendet för rapporter och arbetsytor. Alla arbetsytor, både klassiska och nya, kan dra nytta av det nya utseendet.
 
-Letar du efter information om det nya utseendet i **Power BI Desktop**? Se [Använda det uppdaterade menyfliksområdet i Power BI Desktop](../desktop-ribbon.md).
+Letar du efter information om det nya utseendet i **Power BI Desktop**? Se [Använda det uppdaterade menyfliksområdet i Power BI Desktop](../create-reports/desktop-ribbon.md).
 
 ## <a name="features-of-the-new-look"></a>Egenskaper i det nya utseendet
 
@@ -50,7 +50,6 @@ Om du vill gå tillbaka till det gamla utseendet växlar du till **av** i ![Nytt
 
 ## <a name="next-steps"></a>Nästa steg
 
-- [Använda det uppdaterade menyfliksområdet i Power BI Desktop](../desktop-ribbon.md)
-- [Det nya utseendet för Power BI-tjänsten](../service-new-look.md)
+- [Använda det uppdaterade menyfliksområdet i Power BI Desktop](../create-reports/desktop-ribbon.md)
+- [Det nya utseendet för Power BI-tjänsten](../consumer/service-new-look.md)
 - Har du några frågor? [Prova Power BI Community](https://community.powerbi.com/)
-

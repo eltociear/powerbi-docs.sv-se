@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: c757534ba0d93fb5eb04f10ee7b8792c8c9e4af3
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 31d3ee405f77acaa47bb158ddde97778a8af9ff0
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79435799"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83349343"
 ---
 # <a name="share-a-dashboard-or-report-from-the-power-bi-mobile-apps"></a>Dela en instrumentpanel eller rapport från Power BI-mobilapparna
 Gäller för:
@@ -25,7 +25,7 @@ Gäller för:
 >[!NOTE]
 >Stöd för Power BI-mobilappen för **telefoner som använder Windows 10 Mobile** kommer att upphöra den 16 mars 2021. [Läs mer](https://go.microsoft.com/fwlink/?linkid=2121400)
 
-Med en [Power BI Pro-licens](../../service-features-license-type.md) kan du bjuda in andra att visa dina instrumentpaneler och rapporter genom att dela länkar från Power BI-mobilapparna. Du kan dela med vem som helst, inom eller utanför din organisation, och med eller utan ett e-postkonto som tillhör företaget. De måste även ha en Power BI Pro-licens, eller så måste innehållet finnas i en [Premium-kapacitet](../../service-premium-what-is.md).
+Med en [Power BI Pro-licens](../../fundamentals/service-features-license-type.md) kan du bjuda in andra att visa dina instrumentpaneler och rapporter genom att dela länkar från Power BI-mobilapparna. Du kan dela med vem som helst, inom eller utanför din organisation, och med eller utan ett e-postkonto som tillhör företaget. De måste även ha en Power BI Pro-licens, eller så måste innehållet finnas i en [Premium-kapacitet](../../admin/service-premium-what-is.md).
 
 Du kan [kommentera på eller lägga till en ögonblicksbild i en panel, rapport eller visualisering](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) och sedan dela den med vem som helst med hjälp av Power BI-mobilapparna för iOS- och Android-enheter. 
 
@@ -42,7 +42,7 @@ Du kan [kommentera på eller lägga till en ögonblicksbild i en panel, rapport 
    * I Power BI-mobilappen trycker du på **Fler alternativ** (...) i navigeringsfältet och väljer ![Delat med mig](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png) **Delat med mig**.
    * I Power BI-tjänsten klickar du på ![Delat med mig](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png) **Delat med mig** i det vänstra navigeringsfönstret.
    
-   Läs mer [information om att dela med dina kollegor](../../service-share-dashboards.md).
+   Läs mer [information om att dela med dina kollegor](../../collaborate-share/service-share-dashboards.md).
 
 ### <a name="unshare-from-your-iphone-or-ipad"></a>Sluta dela från din iPhone eller iPad
 Du kan bara avsluta delningen om du är ägaren.
@@ -67,7 +67,7 @@ Du kan bara avsluta delningen om du är ägaren.
    * I Power BI-mobilappen trycker du på **Fler alternativ** (...) i navigeringsfältet och väljer ![Delat med mig](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png) **Delat med mig**.
    * I Power BI-tjänsten klickar du på ![Delat med mig](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png) **Delat med mig** i det vänstra navigeringsfönstret.
    
-   Läs mer [information om att dela med dina kollegor](../../service-share-dashboards.md).
+   Läs mer [information om att dela med dina kollegor](../../collaborate-share/service-share-dashboards.md).
 
 
 ### <a name="unshare-from-your-android-device"></a>Sluta dela från din Android-enhet
@@ -97,10 +97,9 @@ Du kan bara avsluta delningen om du är ägaren.
    * I Power BI-mobilappen trycker du på **Fler alternativ** (...) i navigeringsfältet och väljer ![Delat med mig](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png) **Delat med mig**.
    * I Power BI-tjänsten klickar du på ![Delat med mig](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png) **Delat med mig** i det vänstra navigeringsfönstret.
    
-   Läs mer [information om att dela med dina kollegor](../../service-share-dashboards.md).
+   Läs mer [information om att dela med dina kollegor](../../collaborate-share/service-share-dashboards.md).
 
 ## <a name="next-steps"></a>Nästa steg
 * [Lägga till anteckningar och dela ögonblicksbild av en panel, en rapport eller ett visuellt objekt i mobilapparna](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md)
-* [Dela en instrumentpanel eller rapport i Power BI](../../service-share-dashboards.md)
+* [Dela en instrumentpanel eller rapport i Power BI](../../collaborate-share/service-share-dashboards.md)
 * Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
-

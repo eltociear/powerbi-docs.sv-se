@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: 3410d8fa8c2f9300fccbe47683a90cbca8ff8383
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 8a3a80ea7bb318944961a57ac6fdac695aa46253
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79205537"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83349458"
 ---
 # <a name="view-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Visa instrumentpaneler och rapporter i Power BI-mobilappar
 Gäller för:
@@ -29,8 +29,8 @@ Instrumentpaneler är en portal till ditt företags livscykel och processer. En 
 
 Om du vill visa instrumentpaneler och rapporter på din mobila enhet måste du skapa eller ansluta dem i en webbläsare. 
 
-1. Gå till Power BI-tjänsten ([https://www.powerbi.com](https://www.powerbi.com)) och [registrera dig för ett konto](../../service-self-service-signup-for-power-bi.md).
-2. [Skapa egna Power BI-instrumentpaneler och rapporter](../../service-get-started.md) eller anslut till befintliga [Power BI-appar](../../service-connect-to-services.md) för en mängd olika tjänster, som till exempel [Microsoft Dynamics CRM](../../service-connect-to-microsoft-dynamics-crm.md).
+1. Gå till Power BI-tjänsten ([https://www.powerbi.com](https://www.powerbi.com)) och [registrera dig för ett konto](../../fundamentals/service-self-service-signup-for-power-bi.md).
+2. [Skapa egna Power BI-instrumentpaneler och rapporter](../../fundamentals/service-get-started.md) eller anslut till befintliga [Power BI-appar](../../connect-data/service-connect-to-services.md) för en mängd olika tjänster, som till exempel [Microsoft Dynamics CRM](../../connect-data/service-connect-to-services.md).
 
 Här är en instrumentpanel i Power BI-tjänsten:
 
@@ -45,14 +45,14 @@ Här är en instrumentpanel i Power BI-tjänsten:
     ![Tryck på instrumentpanel](./media/mobile-apps-view-dashboard/power-bi-iphone-dashboard-home.png)
    
    * Gula stjärnor ![Favoritstjärnor](././././media/mobile-apps-view-dashboard/power-bi-mobile-yes-favorite-icon.png) visar vilka instrumentpaneler som är Favoriter. 
-   * Anteckningen under varje instrumentpanelsnamns (i det här fallet ”MBI”) ![Dataklassificering](././media/mobile-apps-view-dashboard/power-bi-dashboard-ios-medium-classification.png) visar hur data i varje instrumentpanel klassificeras. Läs mer om [dataklassificering i Power BI](../../service-data-classification.md).
+   * Anteckningen under varje instrumentpanelsnamns (i det här fallet ”MBI”) ![Dataklassificering](././media/mobile-apps-view-dashboard/power-bi-dashboard-ios-medium-classification.png) visar hur data i varje instrumentpanel klassificeras. Läs mer om [dataklassificering i Power BI](../../create-reports/service-data-classification.md).
    
    Som standard visas Power BI-instrumentpaneler lite annorlunda på din iPhone. Alla paneler visas samma storlek och de är placerade efter varandra uppifrån och ned.
    
     ![Stående instrumentpanelsvy](./media/mobile-apps-view-dashboard/power-bi-iphone-dashboard-portrait.png)
    
    > [!TIP]
-   > Om du är instrumentpanelens ägare i Power BI-tjänsten kan du [skapa en vy på instrumentpanelen för telefoner](../../service-create-dashboard-mobile-phone-view.md) i stående läge. 
+   > Om du är instrumentpanelens ägare i Power BI-tjänsten kan du [skapa en vy på instrumentpanelen för telefoner](../../create-reports/service-create-dashboard-mobile-phone-view.md) i stående läge. 
    > 
    > 
    
@@ -85,7 +85,7 @@ Du kan använda gesten ”Zooma” för att zooma in och ut på olika områden i
    ![Startsidan för instrumentpanelen](./media/mobile-apps-view-dashboard/power-bi-ipad-dashboard-home.png)
    
    * Gula stjärnor ![Favoritstjärna](././././media/mobile-apps-view-dashboard/power-bi-mobile-yes-favorite-icon.png) visar vilka instrumentpaneler som är Favoriter. 
-   * Anteckningen under varje instrumentpanelsnamns (i det här fallet ”MBI”) ![Dataklassificering](././media/mobile-apps-view-dashboard/power-bi-dashboard-ios-medium-classification.png) visar hur data i varje instrumentpanel klassificeras. Läs mer om [dataklassificering i Power BI](../../service-data-classification.md).
+   * Anteckningen under varje instrumentpanelsnamns (i det här fallet ”MBI”) ![Dataklassificering](././media/mobile-apps-view-dashboard/power-bi-dashboard-ios-medium-classification.png) visar hur data i varje instrumentpanel klassificeras. Läs mer om [dataklassificering i Power BI](../../create-reports/service-data-classification.md).
 3. Du kan dela en instrumentpanel från en arbetsyta. Tryck på knappen ( **...** ) i det nedre högra hörnet av instrumentpanelens sida och tryck på **Bjud in andra**.
    
    ![Ikon för inbjudan](./media/mobile-apps-view-dashboard/power-bi-ipad-tile-invite-others.png)
@@ -109,13 +109,13 @@ Du kan använda gesten ”Zooma” för att zooma in och ut på olika områden i
 
     Gula stjärnor ![Favoritstjärna](././././media/mobile-apps-view-dashboard/power-bi-mobile-yes-favorite-icon.png) visar vilka instrumentpaneler som är Favoriter. 
 
-    Anteckningen under varje instrumentpanelsnamns (i det här fallet ”MBI”) ![Dataklassificering](././media/mobile-apps-view-dashboard/power-bi-android-dashboard-medium-classification.png) visar hur data i varje instrumentpanel klassificeras. Läs mer om [dataklassificering i Power BI](../../service-data-classification.md).
+    Anteckningen under varje instrumentpanelsnamns (i det här fallet ”MBI”) ![Dataklassificering](././media/mobile-apps-view-dashboard/power-bi-android-dashboard-medium-classification.png) visar hur data i varje instrumentpanel klassificeras. Läs mer om [dataklassificering i Power BI](../../create-reports/service-data-classification.md).
 
     Power BI-instrumentpaneler ser lite annorlunda ut på din Android-telefon. Alla paneler visas med samma bredd och de är placerade efter varandra uppifrån och ned.
 
     ![Stående instrumentpanelsvy](./media/mobile-apps-view-dashboard/pbi_andr_dash.png)
 
-    Om du är instrumentpanelens ägare i Power BI-tjänsten kan du [skapa en vy på instrumentpanelen för telefoner](../../service-create-dashboard-mobile-phone-view.md) i stående läge. 
+    Om du är instrumentpanelens ägare i Power BI-tjänsten kan du [skapa en vy på instrumentpanelen för telefoner](../../create-reports/service-create-dashboard-mobile-phone-view.md) i stående läge. 
 
 1. På instrumentpanelen kan du trycka på den lodräta knappen **Fler alternativ** (...) bredvid namnet för att bjuda in en kollega, uppdatera eller hämta information om instrumentpanelen:
    
@@ -132,7 +132,7 @@ Du kan använda gesten ”Zooma” för att zooma in och ut på olika områden i
    ![Startsidan för instrumentpanelen](./media/mobile-apps-view-dashboard/power-bi-android-tablet-dashboard-home.png)
    
    * Gula stjärnor ![Favoritstjärna](././././media/mobile-apps-view-dashboard/power-bi-mobile-yes-favorite-icon.png) visar vilka instrumentpaneler som är Favoriter. 
-   * Anteckningen under varje instrumentpanelsnamns (i det här fallet ”MBI”) ![Dataklassificering](././media/mobile-apps-view-dashboard/power-bi-android-dashboard-medium-classification.png) visar hur data i varje instrumentpanel klassificeras. Läs mer om [dataklassificering i Power BI](../../service-data-classification.md).
+   * Anteckningen under varje instrumentpanelsnamns (i det här fallet ”MBI”) ![Dataklassificering](././media/mobile-apps-view-dashboard/power-bi-android-dashboard-medium-classification.png) visar hur data i varje instrumentpanel klassificeras. Läs mer om [dataklassificering i Power BI](../../create-reports/service-data-classification.md).
 3. På instrumentpanelen kan du trycka på den lodräta knappen **Fler alternativ** (...) bredvid namnet för att bjuda in en kollega, uppdatera eller hämta information om instrumentpanelen:
    
    ![Ellips-menyn](././media/mobile-apps-view-dashboard/pbi_andr_dashellipsis.png)
@@ -150,11 +150,10 @@ Om du är instrumentpanelens ägare i *Power BI-tjänsten* kan du skapa en vy p�
 
 ![Telefonvy för instrumentpanelen](./media/mobile-apps-view-dashboard/power-bi-phone-dashboard-in-progress.png)
 
-Läs mer om [skapar en telefonvy av en instrumentpanel](../../service-create-dashboard-mobile-phone-view.md).
+Läs mer om [skapar en telefonvy av en instrumentpanel](../../create-reports/service-create-dashboard-mobile-phone-view.md).
 
 ## <a name="next-steps"></a>Nästa steg
 * [Hämta Android-appen](https://go.microsoft.com/fwlink/?LinkID=544867) från Google play  
 * [Kom igång med Android-appen för Power BI](mobile-android-app-get-started.md)  
 * [Vad är Power BI?](../../fundamentals/power-bi-overview.md)
 * Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
-

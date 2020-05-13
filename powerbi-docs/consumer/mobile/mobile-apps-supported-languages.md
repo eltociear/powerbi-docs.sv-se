@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: 4f135a411d69835e925cf97b418bda6ae80adc1a
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 6c8957526f3aaf63d6dda80d5e5d84db1eb22df4
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79113176"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83349389"
 ---
 # <a name="supported-languages-in-the-power-bi-mobile-apps"></a>Språk som stöds i Power BI-mobilapparna
 Power BI-mobilapparna stöder för närvarande följande språk:
@@ -58,7 +58,6 @@ Power BI-mobilapparna stöder för närvarande följande språk:
 * Meddelanden är bara på engelska. Om någon till exempel delar en instrumentpanel med dig, får du meddelandet på engelska. 
 
 ## <a name="next-steps"></a>Nästa steg
-* [Språk som stöds och länder/regioner för Power BI](../../supported-languages-countries-regions.md)
+* [Språk som stöds och länder/regioner för Power BI](../../fundamentals/supported-languages-countries-regions.md)
 * Har du några frågor? Fråga [Power BI Community](https://community.powerbi.com/).
 * Har du fortfarande problem? Besök [Power BI-supportsidan](https://powerbi.microsoft.com/support/).
-

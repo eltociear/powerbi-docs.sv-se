@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 04/17/2020
 ms.author: mihart
 LocalizationGroup: consumers
-ms.openlocfilehash: 4c4b923199ccd35433b7bf743314395fc70bbe30
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 088844ccf52a67cfd67590e62a2dd8cab83add66
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82065783"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83348423"
 ---
 # <a name="power-bi-feature-list-for-consumers-and-others-with-free-licenses"></a>Lista med Power BI-funktioner för *konsumenter* och andra med kostnadsfria licenser
 
@@ -23,7 +23,7 @@ ms.locfileid: "82065783"
 
 Som *användare* så använder du Power BI-tjänsten till att utforska rapporter och instrumentpaneler i syfte att fatta affärsbeslut. Dessa rapporter och instrumentpaneler skapas av *designers* som har en Power BI *Pro*-licens. Pro-användare kan dela innehåll med sina kollegor och styra vad kollegorna får göra med innehållet. Ibland kan designers dela innehåll genom att skicka länkar till dig, och ibland installeras och visas innehållet automatiskt i Power BI under **Appar** eller **Delat med mig**.
 
-Designers har många olika sätt att dela innehåll. Den här artikeln är dock till för *Power BI-konsumenter*, och därför beskrivs bara hur konsumenter får och interagerar med innehåll. Mer information om andra sätt att dela innehåll finns i [Sätt att dela ditt arbete i Power BI](../service-how-to-collaborate-distribute-dashboards-reports.md).
+Designers har många olika sätt att dela innehåll. Den här artikeln är dock till för *Power BI-konsumenter*, och därför beskrivs bara hur konsumenter får och interagerar med innehåll. Mer information om andra sätt att dela innehåll finns i [Sätt att dela ditt arbete i Power BI](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md).
 
 ![Navigeringsfönstret i Power BI](media/end-user-features/power-bi-share.png)
 
@@ -47,7 +47,7 @@ När en organisation har en Premium-kapacitetsprenumeration kan administratörer
 ### <a name="licenses"></a>Licenser 
 Alla Power BI-tjänstanvändare har antingen en kostnadsfri licens eller en Pro-licens. *Konsumenter* har kostnadsfria licenser.
 
-- **Kostnadsfri licens** – tilldelas vanligtvis till *konsumenter* i en organisation (se första bilden nedan). Tilldelas även av alla som registrerar sig för Power BI-tjänsten som enskild person och vill testa [Power BI-tjänsten i fristående läge](../service-self-service-signup-for-power-bi.md) (se andra bilden nedan). 
+- **Kostnadsfri licens** – tilldelas vanligtvis till *konsumenter* i en organisation (se första bilden nedan). Tilldelas även av alla som registrerar sig för Power BI-tjänsten som enskild person och vill testa [Power BI-tjänsten i fristående läge](../fundamentals/service-self-service-signup-for-power-bi.md) (se andra bilden nedan). 
 
     ![skärm som visar användare med kostnadsfri licens](media/end-user-features/power-bi-free-organization.png)
 

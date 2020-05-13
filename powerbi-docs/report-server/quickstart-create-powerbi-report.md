@@ -8,12 +8,12 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 02/03/2020
 ms.author: maggies
-ms.openlocfilehash: 69ebfa9b1d2ef500b388a1bbb57926dc53ff2607
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: efc316e93bea9cfc1b3f429657ac2810e13f4e63
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "76975021"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83349481"
 ---
 # <a name="create-a-power-bi-report-for-power-bi-report-server"></a>Skapa en Power BI-rapport för Power BI-rapportservern
 Du kan lagra och hantera Power BI-rapporter lokalt i webbportalen för Power BI-rapportserver, precis som du kan lagra Power BI-rapporter i molnet i Power BI-tjänsten (https://powerbi.com). Du skapar och redigerar rapporter i Power BI Desktop och publicerar dem till webbportalen. Rapportläsare i din organisation kan sedan se dem i webbläsaren eller i en Power BI-mobilapp på en mobilenhet.
@@ -79,7 +79,7 @@ Du kan till exempel skapa ett trattdiagram med kunder och gruppvärden efter år
 2. Dra fältet som ska räknas till brunnen **värden**. Om det inte är ett numeriskt fält, gör Power BI Desktop automatiskt det till ett *antal* av värdet.
 3. Dra fältet till gruppen på **grupp**-brunnen.
 
-Läs mer om [att skapa en Power BI-rapport](../desktop-report-view.md).
+Läs mer om [att skapa en Power BI-rapport](../create-reports/desktop-report-view.md).
 
 ## <a name="step-4-save-your-report-to-the-report-server"></a>Steg 4: Spara din rapport på rapportservern
 När din rapport är klar, kan du spara den på den Power BI-rapportserver som du valde i steg 2.
@@ -98,7 +98,7 @@ När din rapport är klar, kan du spara den på den Power BI-rapportserver som d
 ### <a name="power-bi-desktop"></a>Power BI Desktop
 Det finns många bra resurser för att skapa rapporter i Power BI Desktop. Den här länken är en bra utgångspunkt.
 
-* [Kom igång med Power BI Desktop](../desktop-getting-started.md)
+* [Kom igång med Power BI Desktop](../fundamentals/desktop-getting-started.md)
 * Interaktiv utbildning: [Utforska Power BI Desktop](/learn/modules/get-data-power-bi/2-getting-started-power-bi-desktop)
 
 ### <a name="power-bi-report-server"></a>Power BI-rapportserver
