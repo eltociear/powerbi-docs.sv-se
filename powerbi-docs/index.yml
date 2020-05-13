@@ -13,12 +13,12 @@ metadata:
   author: maggiesMSFT
   ms.author: maggies
   ms.date: 03/31/2020
-  ms.openlocfilehash: 0ad39302737284ecbde50a8810b740d68706c809
-  ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+  ms.openlocfilehash: 57fd08720d908ac67e383b91239e44373b1e586f
+  ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
   ms.translationtype: HT
   ms.contentlocale: sv-SE
-  ms.lasthandoff: 05/05/2020
-  ms.locfileid: "81439405"
+  ms.lasthandoff: 05/13/2020
+  ms.locfileid: "83348768"
 highlightedContent:
   items:
   - title: Skapa en COVID-19-rapport med data för USA
@@ -26,24 +26,24 @@ highlightedContent:
     url: create-reports/sample-covid-19-us.md
   - title: Komma igång med Power BI Desktop
     itemType: get-started
-    url: desktop-getting-started.md
+    url: fundamentals/desktop-getting-started.md
   - title: Registrera dig för Power BI-tjänsten
     itemType: how-to-guide
-    url: service-self-service-signup-for-power-bi.md
+    url: fundamentals/service-self-service-signup-for-power-bi.md
   - title: Olika sätt att samarbeta och dela
     itemType: concept
-    url: service-how-to-collaborate-distribute-dashboards-reports.md
+    url: collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md
 conceptualContent:
   items:
   - title: 'Power BI: Kom igång'
     links:
-    - url: power-bi-overview.md
+    - url: fundamentals/power-bi-overview.md
       itemType: overview
       text: Vad är Power BI?
-    - url: desktop-what-is-desktop.md
+    - url: fundamentals/desktop-what-is-desktop.md
       itemType: overview
       text: Vad är Power BI Desktop?
-    - url: power-bi-service-overview.md
+    - url: fundamentals/power-bi-service-overview.md
       itemType: overview
       text: Vad är Power BI-tjänsten?
     footerLink:
@@ -65,13 +65,13 @@ conceptualContent:
       text: Visa mer
   - title: Administrera Power BI
     links:
-    - url: service-admin-administering-power-bi-in-your-organization.md
+    - url: admin/service-admin-administering-power-bi-in-your-organization.md
       itemType: overview
       text: Vad är Power BI-administration?
-    - url: service-admin-licensing-organization.md
+    - url: admin/service-admin-licensing-organization.md
       itemType: concept
       text: Licensiering i organisationen
-    - url: service-admin-portal.md
+    - url: admin/service-admin-portal.md
       itemType: concept
       text: Administratörsportalen
     footerLink:
@@ -93,13 +93,13 @@ conceptualContent:
       text: Visa mer
   - title: Ansluta till data
     links:
-    - url: desktop-quickstart-connect-to-data.md
+    - url: connect-data/desktop-quickstart-connect-to-data.md
       itemType: tutorial
       text: Ansluta till data
-    - url: service-gateway-onprem.md
+    - url: connect-data/service-gateway-onprem.md
       itemType: concept
       text: Lokala datagatewayer
-    - url: refresh-data.md
+    - url: connect-data/refresh-data.md
       itemType: concept
       text: Datauppdatering
     footerLink:
@@ -107,13 +107,13 @@ conceptualContent:
       text: Visa mer
   - title: Omvandla och forma data
     links:
-    - url: desktop-analytics-pane.md
+    - url: transform-model/desktop-analytics-pane.md
       itemType: how-to-guide
       text: Använda fönstret Analytics
-    - url: desktop-common-query-tasks.md
+    - url: transform-model/desktop-common-query-tasks.md
       itemType: concept
       text: Vanliga frågeaktiviteter
-    - url: desktop-shape-and-combine-data.md
+    - url: connect-data/desktop-shape-and-combine-data.md
       itemType: tutorial
       text: Forma och kombinera data
     footerLink:
@@ -121,13 +121,13 @@ conceptualContent:
       text: Visa mer
   - title: Modelldata
     links:
-    - url: desktop-add-custom-column.md
+    - url: create-reports/desktop-add-custom-column.md
       itemType: how-to-guide
       text: Lägga till en anpassad kolumn
-    - url: desktop-tutorial-create-calculated-columns.md
+    - url: transform-model/desktop-tutorial-create-calculated-columns.md
       itemType: tutorial
       text: Skapa beräknade kolumner
-    - url: desktop-create-and-manage-relationships.md
+    - url: transform-model/desktop-create-and-manage-relationships.md
       itemType: how-to-guide
       text: Skapa och hantera relationer
     footerLink:
@@ -135,13 +135,13 @@ conceptualContent:
       text: Visa mer
   - title: Skapa rapporter och instrumentpaneler
     links:
-    - url: desktop-report-themes.md
+    - url: create-reports/desktop-report-themes.md
       itemType: concept
       text: Rapportteman
     - url: paginated-reports/paginated-reports-report-builder-power-bi.md
       itemType: concept
       text: Vad är sidnumrerade rapporter?
-    - url: service-dashboard-create.md
+    - url: create-reports/service-dashboard-create.md
       itemType: how-to-guide
       text: Skapa en instrumentpanel
     footerLink:
@@ -149,13 +149,13 @@ conceptualContent:
       text: Visa mer
   - title: Samarbeta och dela
     links:
-    - url: service-share-dashboards.md
+    - url: collaborate-share/service-share-dashboards.md
       itemType: concept
       text: Dela instrumentpaneler och rapporter
-    - url: service-create-the-new-workspaces.md
+    - url: collaborate-share/service-create-the-new-workspaces.md
       itemType: how-to-guide
       text: Skapa nya arbetsytor
-    - url: service-datasets-across-workspaces.md
+    - url: connect-data/service-datasets-across-workspaces.md
       itemType: concept
       text: Introduktion till delade datauppsättningar
     footerLink:
@@ -163,13 +163,13 @@ conceptualContent:
       text: Visa mer
   - title: Integrera mellan produkter
     links:
-    - url: service-azure-and-power-bi.md
+    - url: connect-data/service-azure-and-power-bi.md
       itemType: concept
       text: Azure och Power BI
-    - url: service-analyze-in-excel.md
+    - url: collaborate-share/service-analyze-in-excel.md
       itemType: concept
       text: Analysera i Excel
-    - url: service-embed-report-spo.md
+    - url: collaborate-share/service-embed-report-spo.md
       itemType: concept
       text: Bädda in i SharePoint Online
     footerLink:
@@ -191,10 +191,10 @@ conceptualContent:
       text: Visa mer
   - title: Stora företag
     links:
-    - url: service-premium-what-is.md
+    - url: admin/service-premium-what-is.md
       itemType: overview
       text: Vad är Power BI Premium?
-    - url: service-admin-power-bi-security.md
+    - url: admin/service-admin-power-bi-security.md
       itemType: concept
       text: Säkerhet
     - url: admin/service-security-data-protection-overview.md

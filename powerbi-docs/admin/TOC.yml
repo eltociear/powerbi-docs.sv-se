@@ -6,74 +6,74 @@
       expanded: true
       items:
         - name: Vad är Power BI-administration?
-          href: ../service-admin-administering-power-bi-in-your-organization.md
+          href: service-admin-administering-power-bi-in-your-organization.md
         - name: Var finns min klient?
-          href: ../service-admin-where-is-my-tenant-located.md
+          href: service-admin-where-is-my-tenant-located.md
         - name: Vad är Power BI Premium?
-          href: ../service-premium-what-is.md
-    - name: Koncept
+          href: service-premium-what-is.md
+    - name: Begrepp
       expanded: true
       items:
         - name: Administratörsrollen i Microsoft 365
-          href: ../service-admin-role.md
+          href: service-admin-role.md
         - name: Licensiering för din organisation
-          href: ../service-admin-licensing-organization.md
+          href: service-admin-licensing-organization.md
         - name: Power BI för amerikanska myndigheter
           items:
             - name: Power BI för amerikanska myndigheter
-              href: ../service-govus-overview.md
+              href: service-govus-overview.md
             - name: 'Registrera en myndighet inom USA:s förvaltning'
-              href: ../service-govus-signup.md
+              href: service-govus-signup.md
         - name: Power BI i regionala moln
           items:
             - name: Migrera till Go Lokala tyska regioner
               href: service-admin-migrate-data-germany.md
             - name: Vanliga frågor och svar för molnkunder i Tyskland
-              href: ../service-govde-faq.md
-        - name: Vanliga frågor och svar (FAQ)
-          href: ../service-admin-faq.md
+              href: service-govde-faq.md
+        - name: Vanliga frågor och svar
+          href: service-admin-faq.md
         - name: Vanliga frågor och svar om hög tillgänglighet och redundans
-          href: ../service-admin-failover.md
+          href: service-admin-failover.md
         - name: Power BI Premium
           items:
             - name: Hantera Premium-kapaciteter
-              href: ../service-premium-capacity-manage.md
+              href: service-premium-capacity-manage.md
             - name: Optimera Premium-kapaciteter
-              href: ../service-premium-capacity-optimize.md
+              href: service-premium-capacity-optimize.md
             - name: Premium-kapacitetsscenarier
-              href: ../service-premium-capacity-scenarios.md
+              href: service-premium-capacity-scenarios.md
             - name: Vanliga frågor och svar om Power BI Premium
-              href: ../service-premium-faq.md
-    - name: Gör så här för att
+              href: service-premium-faq.md
+    - name: Gör så här
       items:
         - name: Licensiering och registrering
           items:
             - name: Få Power BI för din organisation
               href: service-admin-org-subscription.md
             - name: Köp Power BI Pro
-              href: ../service-admin-purchasing-power-bi-pro.md
+              href: service-admin-purchasing-power-bi-pro.md
             - name: Inaktivera självbetjäningsregistrering
               href: service-admin-disable-self-service.md
             - name: Visa och hantera användarlicenser
               href: service-admin-manage-licenses.md
             - name: Registrera dig med en utvärderingsversion av Microsoft 365
-              href: ../service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md
+              href: service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md
             - name: Lägga till Power BI med en Microsoft 365-partner
-              href: ../service-admin-syndication-partner.md
+              href: service-admin-syndication-partner.md
         - name: Använda administratörsportalen
-          href: ../service-admin-portal.md
+          href: service-admin-portal.md
         - name: Hitta användare som har loggat in
-          href: ../service-admin-access-usage.md
+          href: service-admin-access-usage.md
         - name: Spåra användaraktiviteter
-          href: ../service-admin-auditing.md
+          href: service-admin-auditing.md
         - name: Spåra tjänstens hälsotillstånd
-          href: ../service-admin-health.md
+          href: service-admin-health.md
         - name: Stänga ditt konto
-          href: ../service-admin-closing-your-account.md
+          href: service-admin-closing-your-account.md
         - name: Använda Azure AD B2B
-          href: ../service-admin-azure-ad-b2b.md
+          href: service-admin-azure-ad-b2b.md
         - name: Hantera inloggningsformuläret för Power BI Desktop
-          href: ../desktop-admin-sign-in-form.md
+          href: desktop-admin-sign-in-form.md
         - name: Dataskydd
           items:
             - name: Översikt över dataskydd
@@ -85,65 +85,65 @@
             - name: Dataskyddsmåttrapport
               href: service-security-data-protection-metrics-report.md
         - name: Säkerhet på radnivå
-          href: ../service-admin-rls.md
+          href: service-admin-rls.md
         - name: Konfigurera datauppsättnings- och dataflödescertifiering
           href: service-admin-setup-certification.md
         - name: Konfigurera mobilappar med Intune
-          href: ../service-admin-mobile-intune.md
+          href: service-admin-mobile-intune.md
         - name: Power BI Premium
           items:
             - name: Köp Power BI Premium
-              href: ../service-admin-premium-purchase.md
+              href: service-admin-premium-purchase.md
             - name: Konfigurera och hantera kapacitet
-              href: ../service-admin-premium-manage.md
+              href: service-admin-premium-manage.md
             - name: Konfigurera arbetsbelastningar
-              href: ../service-admin-premium-workloads.md
+              href: service-admin-premium-workloads.md
             - name: Övervaka funktioner med appen
-              href: ../service-admin-premium-monitor-capacity.md
+              href: service-admin-premium-monitor-capacity.md
             - name: Övervaka Premium-arbetsbelastningsmått
-              href: ../service-premium-metrics-app.md
+              href: service-premium-metrics-app.md
             - name: Övervaka kapaciteter i administratörsportalen
-              href: ../service-admin-premium-monitor-portal.md
+              href: service-admin-premium-monitor-portal.md
             - name: Konfigurera stora modeller (förhandsversion)
-              href: ../service-premium-large-models.md
+              href: service-premium-large-models.md
             - name: Konfigurera Multi-Geo
-              href: ../service-admin-premium-multi-geo.md
+              href: service-admin-premium-multi-geo.md
             - name: Använda egna krypteringsnycklar
-              href: ../service-encryption-byok.md
+              href: service-encryption-byok.md
             - name: Starta om en Premium-kapacitet
-              href: ../service-admin-premium-restart.md
+              href: service-admin-premium-restart.md
             - name: Datamängdsanslutning med XMLA-slutpunkten (förhandsversion)
-              href: ../service-premium-connect-tools.md
+              href: service-premium-connect-tools.md
     - name: Referens
       items:
         - name: 'PowerShell, REST API: er och .NET SDK'
-          href: ../service-admin-reference.md
+          href: service-admin-reference.md
         - name: Power BI-cmdletar för PowerShell
           href: 'https://docs.microsoft.com/powershell/power-bi/'
           maintainContext: true
         - name: Referens för tjänst-URL
-          href: ../power-bi-whitelist-urls.md
+          href: power-bi-whitelist-urls.md
     - name: Resurser
       items:
         - name: Power BI-styrnings- och distributionsmetoder
-          href: ../service-admin-governance.md
+          href: service-admin-governance.md
         - name: Power BI-säkerhet
-          href: ../service-admin-power-bi-security.md
+          href: service-admin-power-bi-security.md
         - name: Sekretessnivåer
-          href: ../desktop-privacy-levels.md
-    - name: Felsöka
+          href: desktop-privacy-levels.md
+    - name: Felsök
       items:
         - name: Går det inte att logga in?
-          href: ../power-bi-cannot-sign-in.md
+          href: power-bi-cannot-sign-in.md
         - name: Supportalternativ för Power BI
-          href: ../service-support-options.md
+          href: service-support-options.md
         - name: Aviseringar om tjänstavbrott
-          href: ../service-interruption-notifications.md
+          href: service-interruption-notifications.md
         - name: Har du glömt lösenordet till Power BI?
-          href: ../service-admin-forgot-your-password.md
+          href: service-admin-forgot-your-password.md
         - name: Samla in ytterligare diagnostikinformation för Power BI
-          href: ../service-admin-capturing-additional-diagnostic-information-for-power-bi.md
+          href: service-admin-capturing-additional-diagnostic-information-for-power-bi.md
         - name: Alternativ e-postadress för Power BI
-          href: ../service-admin-alternate-email-address-for-power-bi.md
+          href: service-admin-alternate-email-address-for-power-bi.md
         - name: Så här använder du samma kontoinloggning för Power BI och Azure
-          href: ../service-admin-how-to-use-the-same-account-as-azure.md
+          href: service-admin-how-to-use-the-same-account-as-azure.md

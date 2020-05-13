@@ -9,7 +9,7 @@
           href: overview.md
         - name: Optimeringsguide för Power BI
           href: power-bi-optimization.md
-    - name: Koncept
+    - name: Begrepp
       expanded: true
       items:
         - name: Omvandla och forma data
@@ -21,7 +21,7 @@
             - name: Inaktivera uppdatering av Power Query i bakgrunden
               href: power-query-background-refresh.md
             - name: Metodtips för dataflöden
-              href: ../service-dataflows-best-practices.md
+              href: ../transform-model/service-dataflows-best-practices.md
         - name: Datamodellering
           items:
             - name: Vad är ett star-schema?
@@ -46,7 +46,7 @@
               href: composite-model-guidance.md
         - name: DAX
           items:
-            - name: Funktionen DIVIDERA jämfört med operatorn för division (/)
+            - name: Funktionen DIVIDERA jämfört med divisionsoperatorn (/)
               href: dax-divide-function-operator.md
             - name: Lämplig användning av felfunktioner
               href: dax-error-functions.md
@@ -110,7 +110,7 @@
               href: monitor-report-performance.md
             - name: Felsöka rapportprestanda
               href: report-performance-troubleshoot.md
-    - name: Faktablad (white paper)
+    - name: Vitböcker
       items:
         - name: Översikt vitböcker
           href: whitepapers.md

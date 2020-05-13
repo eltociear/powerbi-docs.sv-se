@@ -27,9 +27,9 @@
         - name: Lär dig att ställ frågor på ett naturligt språk
           href: end-user-q-and-a.md
         - name: Navigera i det "nya utseendet"
-          href: ../service-new-look.md
+          href: service-new-look.md
         - name: 'Det ”nya utseendet”: Var finns åtgärderna?'
-          href: ../service-new-look-where-actions.md
+          href: service-new-look-where-actions.md
     - name: Gör så här
       items:
         - name: Instrumentpaneler
@@ -93,7 +93,7 @@
             - name: Öka detaljnivån i en visualisering
               href: end-user-drill.md
             - name: Interagera med ArcGIS-kartor
-              href: ../power-bi-visualizations-arcgis.md
+              href: ../visuals/power-bi-visualizations-arcgis.md
         - name: Vanliga aktiviteter
           items:
             - name: Exportera data till Excel
