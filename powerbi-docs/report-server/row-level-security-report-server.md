@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/22/2019
-ms.openlocfilehash: 7436b97cdeacf08f1d4ed9374ec615d56ae92db1
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: d94e9696ee41e8bd76f7d11aab794ccd2dc701b3
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "73859180"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277995"
 ---
 # <a name="row-level-security-rls-in-power-bi-report-server"></a>Säkerhet på radnivå (RLS) i Power BI-rapportservern
 
@@ -33,7 +33,7 @@ Som standard använder säkerhetsfiltrering på radnivå sig av enkelriktade fil
 
 Markera den här rutan när du implementerar [dynamisk säkerhet på radnivå](https://docs.microsoft.com/analysis-services/tutorial-tabular-1200/supplemental-lesson-implement-dynamic-security-by-using-row-filters) baserat på användarnamn eller inloggnings-ID. 
 
-Mer information finns i [Dubbelriktad korsfiltrering med DirectQuery i Power BI Desktop](../desktop-bidirectional-filtering.md) och det tekniska faktabladet [Skydda en Tabular BI-semantikmodell](https://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx).
+Mer information finns i [Dubbelriktad korsfiltrering med DirectQuery i Power BI Desktop](../transform-model/desktop-bidirectional-filtering.md) och det tekniska faktabladet [Skydda en Tabular BI-semantikmodell](https://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx).
 
 [!INCLUDE [rls-desktop-view-as-roles](../includes/rls-desktop-view-as-roles.md)]
 
@@ -84,7 +84,7 @@ Här följer de aktuella begränsningarna för säkerhet på radnivå i Power BI
 
 Användare som hade rapporter med DAX-funktionen username() ser nu det nya beteendet där användarens huvudnamn (UPN) returneras förutom när han/hon använder DirectQuery med integrerad säkerhet.  Eftersom ingen hänsyn tas till RLS i det här scenariot är beteendet i det här scenariot oförändrat.
 
-Du kan endast definiera RLS på datauppsättningar som skapats med Power BI Desktop. Om du vill aktivera RLS för datauppsättningar som skapats med Excel måste du först konvertera filerna till PBIX-filer (Power BI Desktop-filer). Läs mer om [konvertering av Excel-filer](../desktop-import-excel-workbooks.md).
+Du kan endast definiera RLS på datauppsättningar som skapats med Power BI Desktop. Om du vill aktivera RLS för datauppsättningar som skapats med Excel måste du först konvertera filerna till PBIX-filer (Power BI Desktop-filer). Läs mer om [konvertering av Excel-filer](../connect-data/desktop-import-excel-workbooks.md).
 
 Endast ETL- (Extract, Transform, Load) och DirectQuery-anslutningar med lagrade autentiseringsuppgifter stöds. Live-anslutningar till Analysis Services och DirectQuery-anslutningar som använder integrerad autentisering ska hanteras i den underliggande datakällan. 
 
@@ -122,3 +122,4 @@ Om du redan har befintliga roller som definierats och medlemmar som tilldelats i
 [Administratörshandbok](admin-handbook-overview.md)  
 
 Fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+

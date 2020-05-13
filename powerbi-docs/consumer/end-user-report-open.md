@@ -8,12 +8,12 @@ ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: mihart
-ms.openlocfilehash: 6ffdc73e5e9ef9ccd416378c19da587986c80b55
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 661277337c00f160c010351ba5f827b6e0fc2f8f
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79114326"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277627"
 ---
 # <a name="view-a-report-in-the-power-bi-service-for-consumers"></a>Visa en rapport i Power BI-tjänsten för *konsumenter*
 
@@ -99,14 +99,14 @@ Rapporter kan öppnas från en instrumentpanel. De flesta [paneler](end-user-til
     ![öppen rapport i Läsvyn](./media/end-user-report-open/power-bi-report-tabs.png)
 
 > [!NOTE]
-> Inte alla paneler leder till en rapport. Om du väljer en panel som [skapades med Frågor och svar](end-user-q-and-a.md), visas Frågor och svar-skärmen. Om du väljer en panel som [skapades med instrumentpanelens **Lägg till panel**-widget](../service-dashboard-add-widget.md), kan flera saker hända: en video kanske spelas upp, en webbplats öppnas eller annat.  
+> Inte alla paneler leder till en rapport. Om du väljer en panel som [skapades med Frågor och svar](end-user-q-and-a.md), visas Frågor och svar-skärmen. Om du väljer en panel som [skapades med instrumentpanelens **Lägg till panel**-widget](../create-reports/service-dashboard-add-widget.md), kan flera saker hända: en video kanske spelas upp, en webbplats öppnas eller annat.  
 
 
 ##  <a name="still-more-ways-to-open-a-report"></a>Ännu fler sätt att öppna en rapport
 När du börjar bli mer bekväm med att använda Power BI-tjänsten, kommer du att lista ut vilka arbetsflöden som fungerar bäst för dig. Några andra sätt att komma åt rapporter:
 - Från navigeringsfönstret med [Favoriter](end-user-favorite.md) och [Senaste](end-user-recent.md)    
 - Med [Visa relaterade](end-user-related.md)    
-- I ett e-postmeddelande när någon [delar med dig](../service-share-reports.md) eller [ställer in en avisering](end-user-alerts.md)    
+- I ett e-postmeddelande när någon [delar med dig](../collaborate-share/service-share-reports.md) eller [ställer in en avisering](end-user-alerts.md)    
 - Från ditt [Meddelandecenter](end-user-notification-center.md)    
 - Från en arbetsyta
 - och mycket mer

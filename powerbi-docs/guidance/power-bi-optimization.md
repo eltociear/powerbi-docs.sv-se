@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 02/16/2020
 ms.author: v-pemyer
-ms.openlocfilehash: d718c9c7f627d735c083a46c1483815e3744faca
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: f189ea2944f86a3caabfbc51ae5b2887bc7c89bb
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79378879"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83278617"
 ---
 # <a name="optimization-guide-for-power-bi"></a>Optimeringsguide för Power BI
 
@@ -26,7 +26,7 @@ Den här artikeln innehåller riktlinjer som gör det möjligt för utvecklare o
 
 ## <a name="optimizing-the-data-model"></a>Optimera datamodellen
 
-Datamodellen stöder hela visualiseringsupplevelsen. Datamodeller är antingen externt eller internt värdbaserade, och i Power BI kallas de för _datamängder_. Det är viktigt att du förstår dina alternativ och att du väljer rätt datamängdstyp för din lösning. De tre datamängdslägena är: Import, DirectQuery och Sammansatt. Mer information finns i [Datamängder i Power BI-tjänsten](../service-datasets-understand.md) och  [Datamängdslägen i Power BI-tjänsten](../service-dataset-modes-understand.md).
+Datamodellen stöder hela visualiseringsupplevelsen. Datamodeller är antingen externt eller internt värdbaserade, och i Power BI kallas de för _datamängder_. Det är viktigt att du förstår dina alternativ och att du väljer rätt datamängdstyp för din lösning. De tre datamängdslägena är: Import, DirectQuery och Sammansatt. Mer information finns i [Datamängder i Power BI-tjänsten](../connect-data/service-datasets-understand.md) och  [Datamängdslägen i Power BI-tjänsten](../connect-data/service-dataset-modes-understand.md).
 
 Mer specifik vägledning om datamängdslägen finns i:
 
@@ -40,7 +40,7 @@ Power BI-visualiseringar kan vara instrumentpaneler, Power BI-rapporter eller pa
 
 ### <a name="dashboards"></a>Instrumentpaneler
 
-Det är viktigt att du förstår att Power BI upprätthåller ett cacheminne för dina instrumentpaneler, med undantag för rapportpaneler i realtid och direktuppspelningspaneler. Mer information finns i [Datauppdatering i Power BI (paneluppdatering)](../refresh-data.md#tile-refresh). Om din datamängd framtvingar dynamisk [säkerhet på radnivå (RLS)](../service-admin-rls.md), så är det viktigt att du förstår prestandaimplikationerna eftersom panelerna cachelagras per användare.
+Det är viktigt att du förstår att Power BI upprätthåller ett cacheminne för dina instrumentpaneler, med undantag för rapportpaneler i realtid och direktuppspelningspaneler. Mer information finns i [Datauppdatering i Power BI (paneluppdatering)](../connect-data/refresh-data.md#tile-refresh). Om din datamängd framtvingar dynamisk [säkerhet på radnivå (RLS)](../admin/service-admin-rls.md), så är det viktigt att du förstår prestandaimplikationerna eftersom panelerna cachelagras per användare.
 
 När du fäster live-rapportpaneler på en instrumentpanel, så betjänas de inte från frågans cacheminne. De fungerar i stället som rapporter och gör frågor till backend-kärnor i farten.
 
@@ -75,7 +75,7 @@ Se till att placera varje anpassad visuell information inom dess tempo för att 
 
 Du kan optimera sidnumrerade rapporter i Power BI genom att använda metodtips när det gäller rapportens datahämtning. Mer information finns i [Guide till datahämtning för sidnumrerade rapporter](report-paginated-data-retrieval.md).
 
-Se dessutom till att din kapacitet har tillräckligt med allokerat minne för den [paginerade rapportens arbetsbelastning](../service-admin-premium-workloads.md#paginated-reports).
+Se dessutom till att din kapacitet har tillräckligt med allokerat minne för den [paginerade rapportens arbetsbelastning](../admin/service-admin-premium-workloads.md#paginated-reports).
 
 ## <a name="optimizing-the-environment"></a>Optimera miljön
 
@@ -83,11 +83,11 @@ Du kan optimera Power BI-miljön genom att konfigurera kapacitetsinställningar,
 
 ### <a name="capacity-settings"></a>Kapacitetsinställningar
 
-När du använder dedikerade kapaciteter – tillgängliga med Power BI Premium (P SKUs) eller Power BI Embedded (A SKUs, A4-A6) – så kan du hantera kapacitetsinställningarna. Mer information finns i [Hantera Premium-kapaciteter](../service-premium-capacity-manage.md). Mer information om hur du kan optimera din kapacitet finns i [Optimera Premium-kapaciteter](../service-premium-capacity-optimize.md).
+När du använder dedikerade kapaciteter – tillgängliga med Power BI Premium (P SKUs) eller Power BI Embedded (A SKUs, A4-A6) – så kan du hantera kapacitetsinställningarna. Mer information finns i [Hantera Premium-kapaciteter](../admin/service-premium-capacity-manage.md). Mer information om hur du kan optimera din kapacitet finns i [Optimera Premium-kapaciteter](../admin/service-premium-capacity-optimize.md).
 
 ### <a name="gateway-sizing"></a>Gateway-storleksändring
 
-Det krävs en gateway när Power BI behöver få åtkomst till data som inte är direkt tillgängliga via Internet. Du kan installera den [lokala datagatewayen](../service-gateway-onprem.md) på en lokal server eller en VM-baserad infrastruktur som en tjänst (IaaS).
+Det krävs en gateway när Power BI behöver få åtkomst till data som inte är direkt tillgängliga via Internet. Du kan installera den [lokala datagatewayen](../connect-data/service-gateway-onprem.md) på en lokal server eller en VM-baserad infrastruktur som en tjänst (IaaS).
 
 Mer information om gateway-arbetsbelastningar och storleksrekommendationer finns i [Storleksändring av lokal datagateway](gateway-onprem-sizing.md).
 
@@ -96,7 +96,7 @@ Mer information om gateway-arbetsbelastningar och storleksrekommendationer finns
 Nätverksfördröjningen kan påverka rapportprestandan genom att öka den tid som krävs för begäranden att nå Power BI-tjänsten och för svar som ska levereras. En specifik region tilldelas klienter i Power BI.
 
 > [!TIP]
-> Om du vill ta reda på var din klientorganisation finns kan du läsa [Var finns min Power BI-klientorganisation?](../service-admin-where-is-my-tenant-located.md)
+> Om du vill ta reda på var din klientorganisation finns kan du läsa [Var finns min Power BI-klientorganisation?](../admin/service-admin-where-is-my-tenant-located.md)
 
 När användare från en klient ansluter till Power BI-tjänsten, dirigeras deras begäranden alltid till den här regionen. När begäranden når Power BI-tjänsten kan tjänsten sedan skicka ytterligare begäranden, till exempel till den underliggande datakällan eller en gateway, som också påverkas av nätverkssvarstiden.
 
@@ -115,3 +115,7 @@ Mer information om den här artikeln finns i följande resurser:
 - Whitepaper: [Planera en företagsdistribution för Power BI](https://go.microsoft.com/fwlink/?linkid=2057861)
 - Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 - Har du förslag? [Bidra till att förbättra Power BI](https://ideas.powerbi.com/)
+
+
+
+

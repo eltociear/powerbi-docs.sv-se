@@ -2,22 +2,25 @@
 title: Tips och råd för mappar (inklusive Bing Maps-integrering)
 description: 'Tips och trick för Power BI-kartvisualiseringar, visuella objekt, platser, longitud och latitud och hur de fungerar med Bing Maps. '
 author: mihart
-ms.reviewer: ''
+ms.reviewer: rien
 featuredvideoid: ajTPGNpthcg
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 03/17/2020
+ms.date: 05/05/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e5c89a8089929b7d87d2a1291ef2c5d3a5b012b7
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 89b81286819e5f286a26efeb6b36d6336446132c
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79525923"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277834"
 ---
 # <a name="tips-and-tricks-for-power-bi-map-visualizations"></a>Tips för Power BI-kartvisualiseringar
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
+
 Power BI integrerar med Bing Maps för att tillhandahålla kartkoordinater av standardtyp (en process som kallas geokodning), vilket gör det enklare att skapa kartor. Tillsammans använder de algoritmer för att identifiera rätt plats, men är det mest en gissning. Om Power BI inte kan skapa kartvisualiseringen på egen hand, använder den sig av Bing Maps. 
 
 Du eller din administratör kan behöva uppdatera brandväggen för att tillåta åtkomst till de URL:er Bing använder för geokodning.  Dessa URL:er är:
@@ -47,7 +50,7 @@ Om du har åtkomst till datamängden som används för att skapa kartan finns n�
 
 **1. Kategorisera geografiska fält i Power BI Desktop**
 
-Du kan kontrollera att fält är korrekt geokodade i Power BI Desktop genom att ställa in *Datakategori* i datafälten. Välj önskad kolumn i vyn Data. I menyfliksområdet väljer du fliken **Modellering**. Ange sedan **Datakategori** till **Adress**, **Stad**, **Kontinent**, **Land/region**, **Län**, **Postnummer**, **Delstat** eller **Provins**. Dessa datakategorier hjälper Bing att korrekt koda datumet. Läs mer i [kategorisering av data i Power BI Desktop](../desktop-data-categorization.md). Om du ansluter i realtid till SQL Server Analysis Services behöver du ange datakategorisering utanför Power BI med hjälp av [SQL Server Data Tools (SSDT)](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt).
+Du kan kontrollera att fält är korrekt geokodade i Power BI Desktop genom att ställa in *Datakategori* i datafälten. Välj önskad kolumn i vyn Data. I menyfliksområdet väljer du fliken **Modellering**. Ange sedan **Datakategori** till **Adress**, **Stad**, **Kontinent**, **Land/region**, **Län**, **Postnummer**, **Delstat** eller **Provins**. Dessa datakategorier hjälper Bing att korrekt koda datumet. Läs mer i [kategorisering av data i Power BI Desktop](../transform-model/desktop-data-categorization.md). Om du ansluter i realtid till SQL Server Analysis Services behöver du ange datakategorisering utanför Power BI med hjälp av [SQL Server Data Tools (SSDT)](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt).
 
 **2. Använda mer än en platskolumn.**     
  Ibland räcker det inte att ställa in datakategorier för kartor för att Bing ska kunna gissa din avsikt. Vissa benämningar är tvetydiga eftersom platsen som finns i flera länder eller regioner. ***Southampton*** finns till exempel i England, Pennsylvania och New York.
@@ -94,4 +97,5 @@ När du ändrar detaljnivån med geo-hierarkier är det viktigt att veta hur var
 [Visualiseringar i Power BI](power-bi-report-visualizations.md)
 
 Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
+
 

@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/05/2019
 ms.author: painbar
-ms.openlocfilehash: 6020a6cb72be4e8d7be0485c7787fefc097e679d
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 387f0cd4ecea59fd55af0a9eceff2272ddd8097b
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "75220131"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83278869"
 ---
 # <a name="view-on-premises-report-server-reports-and-kpis-in-the-power-bi-mobile-apps"></a>Visa lokala rapportserverrapporter och KPI:er i Power BI-mobilapparna
 
@@ -107,7 +107,7 @@ Power BI-rapporter, mobila Reporting Services-rapporter och KPI:er visas i samma
   > Öka och minska detaljnivån är för närvarande inte aktiverat i Power BI-rapporter på en Power BI-rapportserver.
   
     ![Power BI-rapport](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-iphone-report-server-report.png)
-* I Power BI Desktop kan rapportägare [optimera en rapport](../../desktop-create-phone-report.md) för Power BI-mobilapparna. På din mobiltelefon har optimerade rapporter en särskild ikon ![ikonen Optimerad Power BI-rapport](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-rs-mobile-optimized-icon.png) och layout.
+* I Power BI Desktop kan rapportägare [optimera en rapport](../../create-reports/desktop-create-phone-report.md) för Power BI-mobilapparna. På din mobiltelefon har optimerade rapporter en särskild ikon ![ikonen Optimerad Power BI-rapport](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-rs-mobile-optimized-icon.png) och layout.
   
     ![Power BI-rapport som optimerats för mobila enheter](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-rs-mobile-optimized-report.png)
 * Tryck på en KPI för att se den i fokusläge.
@@ -133,4 +133,3 @@ Du kan markera KPI:er och rapporter som favoriter i webbportalen och sedan visa 
 ## <a name="next-steps"></a>Nästa steg
 * [Vad är Power BI?](../../fundamentals/power-bi-overview.md)  
 * Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
-

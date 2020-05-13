@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/22/2020
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 4f0bfdbf3eb3856f872c872fbe0880ad39839e07
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: 31563e5bb5b91468b8913c3204e9d27607716c77
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82867609"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279214"
 ---
 # <a name="use-a-relative-time-slicer-and-filter-in-power-bi"></a>Använda ett relativt tidsutsnitt eller filter i Power BI
 
@@ -24,7 +24,7 @@ I nya scenarier med snabba uppdateringar kan det vara användbart att filtrera p
 
 :::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time.gif" alt-text="Exempel på relativ tid":::
 
-Du behöver inte använda funktionen tillsammans med funktionen för [automatisk siduppdatering](../desktop-automatic-page-refresh.md). Många relativa tidsscenarier är dock bra med funktionen för automatisk siduppdatering.  
+Du behöver inte använda funktionen tillsammans med funktionen för [automatisk siduppdatering](../create-reports/desktop-automatic-page-refresh.md). Många relativa tidsscenarier är dock bra med funktionen för automatisk siduppdatering.  
 
 > [!NOTE]
 > När du använder ett relativt tidsfilter eller utsnitt på sidan eller rapportnivån filtreras alla visuella objekt på sidan eller rapporten till exakt samma tidsintervall, med hjälp av ett delad *fästpunktstid*. Eftersom visuella objekt kan ha olika körningstider ser den här delade fästpunktstiden till att visuella objekt synkroniseras på sidan eller i hela rapporten. Läs mer om [fästpunktstid](#understanding-anchor-time) i den här artikeln.
@@ -107,4 +107,3 @@ Följande begränsningar och överväganden kan användas för relativt tidsutsn
 
 - [Använda ett relativt datumutsnitt eller filter i Power BI](../visuals/desktop-slicer-filter-date-range.md)
 - [Utsnitt i Power BI](../visuals/power-bi-visualization-slicers.md)
-

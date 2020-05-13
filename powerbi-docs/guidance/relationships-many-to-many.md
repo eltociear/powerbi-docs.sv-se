@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 03/02/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 937f8ca693113cf85d265420da44f7c9f8b68f5f
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 8718c67c592bf96d50efed475c0d27b4ec80ca04
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78260470"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83278340"
 ---
 # <a name="many-to-many-relationship-guidance"></a>Vägledning för att lägga till en många-till-många-relationer
 
@@ -161,7 +161,7 @@ Det visuella objektet visar ett korrekt resultat. Modellens användbarhet är do
 
 ### <a name="relate-many-to-many-facts-guidance"></a>Vägledning om hur du relaterar många-till-många-fakta
 
-I allmänhet rekommenderar vi inte att du relaterar två tabeller av faktatyp direkt med hjälp av många-till-många-kardinalitet. Den främsta orsaken är att modellen i så fall inte ger flexibilitet för de visuella rapportobjektens filtrering och gruppering. I exemplet är det endast möjligt för visuella objekt att filtrera eller gruppera efter **Order**-tabellens **OrderID**-kolumn. Ytterligare en orsak relaterar till kvaliteten på dina data. Om det finns integritetsproblem i dina data kan det hända att vissa rader utelämnas under frågekörning på grund av den _svaga relationen_. Mer information finns i [Modellrelationer i Power BI Desktop (relationsutvärdering)](../desktop-relationships-understand.md#relationship-evaluation).
+I allmänhet rekommenderar vi inte att du relaterar två tabeller av faktatyp direkt med hjälp av många-till-många-kardinalitet. Den främsta orsaken är att modellen i så fall inte ger flexibilitet för de visuella rapportobjektens filtrering och gruppering. I exemplet är det endast möjligt för visuella objekt att filtrera eller gruppera efter **Order**-tabellens **OrderID**-kolumn. Ytterligare en orsak relaterar till kvaliteten på dina data. Om det finns integritetsproblem i dina data kan det hända att vissa rader utelämnas under frågekörning på grund av den _svaga relationen_. Mer information finns i [Modellrelationer i Power BI Desktop (relationsutvärdering)](../transform-model/desktop-relationships-understand.md#relationship-evaluation).
 
 Vi rekommenderar att du i stället för att relatera tabeller av faktatyp direkt inför designprinciperna för [star-schema](star-schema.md). Det gör du genom att lägga till tabeller av dimensionstyp. Tabellerna av dimensionstyp relaterar sedan till tabellerna av faktatyp med hjälp av en-till-många-relationer. Den här designmetoden är robust eftersom den ger flexibla rapporteringsalternativ. Med den kan du filtrera eller gruppera med valfri kolumn av dimensionstyp och sammanfatta valfri relaterad tabell av faktatyp.
 
@@ -184,7 +184,7 @@ När vi utnyttjar designprinciperna för star-schema får vi dessa fördelar:
 - De visuella rapportobjekten kan _filtrera eller gruppera_ efter valfri synlig kolumn från tabellerna av dimensionstyp
 - De visuella rapportobjekten kan _sammanfatta_ valfri synlig kolumn från tabellerna av faktatyp
 - Filter som tillämpas på tabellerna **OrderLine**, **OrderDate** eller **Product** sprids till båda tabellerna av faktatyp
-- Alla relationer är av typen en-till-många, och varje relation är en _stark relation_. Problem med dataintegritet kommer inte att döljas. Mer information finns i [Modellrelationer i Power BI Desktop (relationsutvärdering)](../desktop-relationships-understand.md#relationship-evaluation).
+- Alla relationer är av typen en-till-många, och varje relation är en _stark relation_. Problem med dataintegritet kommer inte att döljas. Mer information finns i [Modellrelationer i Power BI Desktop (relationsutvärdering)](../transform-model/desktop-relationships-understand.md#relationship-evaluation).
 
 ## <a name="relate-higher-grain-facts"></a>Relatera fakta med högre kornighet
 
@@ -209,7 +209,7 @@ En relation mellan tabellerna **Date** och **Target** bör vara en en-till-mång
 
 Var dock noggrann med att se till att filtren på månads- eller datumnivå ger ett meningsfullt resultat. Utan särskild beräkningslogik kan de visuella rapportobjekten rapportera att måldatumen bokstavligt talat är den första dagen under varje år. Alla andra dagar – och alla månader förutom januari – sammanfattar målkvantiteten som TOM.
 
-Följande visuella matrisobjekt visar vad som händer när rapportanvändaren ökar detaljnivån från ett år till dess månader. Det visuella objektet sammanfattar kolumnen **TargetQuantity**. (Alternativet [Visa objekt utan data](../desktop-show-items-no-data.md) har aktiverats för matrisraderna.)
+Följande visuella matrisobjekt visar vad som händer när rapportanvändaren ökar detaljnivån från ett år till dess månader. Det visuella objektet sammanfattar kolumnen **TargetQuantity**. (Alternativet [Visa objekt utan data](../create-reports/desktop-show-items-no-data.md) har aktiverats för matrisraderna.)
 
 ![Ett visuellt matrisobjekt visar målkvantiteten för året 2020 som 270. När det expanderas till att visa månaderna för 2020 är januari 270, och alla andra målkvantiteter på månadsnivå är TOM.](media/relationships-many-to-many/sales-targets-model-matrix-blank-months-bad.png)
 
@@ -295,7 +295,7 @@ När du behöver relatera en tabell av dimensionstyp till en tabell av faktatyp,
 
 Mer information om ämnet i den här artikeln finns i följande resurser:
 
-- [Modellrelationer i Power BI Desktop](../desktop-relationships-understand.md)
+- [Modellrelationer i Power BI Desktop](../transform-model/desktop-relationships-understand.md)
 - [Förstå star-schemat och dess betydelse för Power BI](star-schema.md)
 - [Vägledning vid felsökning av relationer](relationships-troubleshoot.md)
 - Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)

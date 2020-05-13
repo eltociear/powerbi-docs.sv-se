@@ -9,16 +9,16 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 02/16/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 2962d5f8504b7214cb685457c59b11f1d9d7b85e
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 9245dd6c25917b2c8c861ea5b83710cd8b52bb22
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81525547"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279030"
 ---
 # <a name="monitor-report-performance-in-power-bi"></a>Övervaka rapportprestanda i Power BI
 
-Övervaka rapportprestanda i Power BI Desktop med hjälp av appen [Power BI Premium Metrics](../service-premium-metrics-app.md), lär dig var flaskhalsarna finns och hur du kan förbättra rapportprestanda.
+Övervaka rapportprestanda i Power BI Desktop med hjälp av appen [Power BI Premium Metrics](../admin/service-premium-metrics-app.md), lär dig var flaskhalsarna finns och hur du kan förbättra rapportprestanda.
 
 Att övervaka prestanda är relevant i följande situationer:
 
@@ -39,7 +39,7 @@ Använd [Frågediagnostik](/power-query/QueryDiagnostics) i Power BI Desktop nä
 
 ## <a name="use-performance-analyzer"></a>Använda Prestandaanalys
 
-Använd [Prestandaanalys](../desktop-performance-analyzer.md) i Power BI Desktop om du vill ta reda på hur dina olika rapportelement, t.ex. visuella objekt och DAX-formler, presterar. Det är särskilt användbart att fastställa huruvida det är frågan eller den visuella återgivningen som orsakar prestandaproblem.
+Använd [Prestandaanalys](../create-reports/desktop-performance-analyzer.md) i Power BI Desktop om du vill ta reda på hur dina olika rapportelement, t.ex. visuella objekt och DAX-formler, presterar. Det är särskilt användbart att fastställa huruvida det är frågan eller den visuella återgivningen som orsakar prestandaproblem.
 
 ## <a name="use-sql-server-profiler"></a>Använd SQL Server Profiler
 
@@ -77,15 +77,15 @@ En fördel med att använda SQL Server Profiler är att det är möjligt att spa
 
 ## <a name="monitor-premium-metrics"></a>Övervaka Premium-mått
 
-Du kan använda **Power BI Premium-måttappen** för Power BI Premium-funktioner när du övervakar din Power BI Premium-prenumerations hälsa och kapacitet. Mer information finns i [Power BI Premium-måttappen](../service-premium-metrics-app.md).
+Du kan använda **Power BI Premium-måttappen** för Power BI Premium-funktioner när du övervakar din Power BI Premium-prenumerations hälsa och kapacitet. Mer information finns i [Power BI Premium-måttappen](../admin/service-premium-metrics-app.md).
 
 ## <a name="next-steps"></a>Nästa steg
 
 Mer information om den här artikeln finns i följande resurser:
 
 - [Frågediagnostik](/power-query/QueryDiagnostics)
-- [Prestandaanalys](../desktop-performance-analyzer.md)
+- [Prestandaanalys](../create-reports/desktop-performance-analyzer.md)
 - [Felsöka rapportprestanda i Power BI](report-performance-troubleshoot.md)
-- [Power BI Premium-måttappen](../service-premium-metrics-app.md)
+- [Power BI Premium-måttappen](../admin/service-premium-metrics-app.md)
 - Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 - Har du förslag? [Bidra till att förbättra Power BI](https://ideas.powerbi.com/)

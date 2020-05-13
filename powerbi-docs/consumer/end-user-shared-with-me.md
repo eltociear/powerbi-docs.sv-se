@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/22/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: d4fbc607b27999a9a1264a4cf004898ec05b0d18
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: e54fbf7c521d057b6cc9fe1dde6c66358a9c349d
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80302501"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277535"
 ---
 # <a name="display-the-dashboards-and-reports-that-have-been-shared-with-me"></a>Visa instrumentpaneler och rapporter som har delats med mig
 
@@ -26,7 +26,7 @@ När en kollega delar innehåll med dig visas det, via knappen **dela**, i behå
 
 ![Delningsikon](./media/end-user-shared-with-me/power-bi-share-dashboard.png)
 
-Titta när Amanda förklarar innehållslistan **delat med mig** och visar hur du navigera och filtrerar listan. Prova sedan själv genom att följa de stegvisa anvisningarna under videon. Om du vill visa instrumentpaneler som delas med dig, måste du ha en Power BI Pro-licens. Läs [Vad är Power BI Premium?](../service-premium-what-is.md) för mer information.
+Titta när Amanda förklarar innehållslistan **delat med mig** och visar hur du navigera och filtrerar listan. Prova sedan själv genom att följa de stegvisa anvisningarna under videon. Om du vill visa instrumentpaneler som delas med dig, måste du ha en Power BI Pro-licens. Läs [Vad är Power BI Premium?](../admin/service-premium-what-is.md) för mer information.
     
 
 > [!NOTE]
@@ -50,7 +50,7 @@ Du kommer att ha alternativ för att interagera med de delade instrumentpanelern
 * [Visa insikter](end-user-insights.md) som Power BI hittar i data ![insikter-ikonen](./media/end-user-shared-with-me/power-bi-insights.png).
   
   > [!NOTE]
-  > Välj **klassificeringsknappen** för information om EGRC-klassificeringar, eller [besök klassificering av instrumentpanelsdata](../service-data-classification.md).
+  > Välj **klassificeringsknappen** för information om EGRC-klassificeringar, eller [besök klassificering av instrumentpanelsdata](../create-reports/service-data-classification.md).
   > 
 
 

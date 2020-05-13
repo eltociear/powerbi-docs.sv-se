@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 02/15/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 098c01aacca7fca0621efe12367f2f66cd0d9d96
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 85cecc300ac3586c3702e8a7fa5e5c4a4dc6a65c
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82066117"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83278961"
 ---
 # <a name="tips-to-format-and-implement-legends-in-power-bi-reports"></a>Tips om hur du formaterar och implementerar förklaringar i Power BI-rapporter
 
@@ -39,7 +39,8 @@ De sex viktigaste tipsen om hur du kan formatera och implementera förklaringar 
 
 Mer information om ämnet i den här artikeln finns i följande resurser:
 
-- [Tips om hur du kan skapa snygga rapporter](../desktop-tips-and-tricks-for-creating-reports.md)
+- [Tips om hur du kan skapa snygga rapporter](../create-reports/desktop-tips-and-tricks-for-creating-reports.md)
 - biDezine-video: [De 6 bästa tipsen om hur du kan formatera och implementera förklaringar i Power BI](https://www.youtube.com/watch?v=r9XnHmuWkZQ)
 - Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 - Har du förslag? [Bidra till att förbättra Power BI](https://ideas.powerbi.com)
+

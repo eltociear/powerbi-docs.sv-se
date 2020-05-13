@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/28/2020
 ms.author: lukaszp
 LocalizationGroup: Samples
-ms.openlocfilehash: 8cdc4a9a78c20c7c4e6986b63a3af61a319df1b6
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: aca7fc70bc70de553eee070ce5e1522b96c94880
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82584924"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277903"
 ---
 # <a name="covid-19-tracking-sample-for-us-state-and-local-governments"></a>COVID–19-spårningsexempel för myndigheter i USA på lokal och delstatsnivå
 
@@ -48,7 +48,7 @@ Om du vill inkludera den interaktiva grafiken på din webbplats kopierar du och 
 <iframe width="1600" height="900" src="https://app.powerbi.com/view?r=eyJrIjoiMmI2ZjExMzItZTcwNy00YmUwLWFlMTAtYTUxYzVjODZmYjA5IiwidCI6ImMxMzZlZWMwLWZlOTItNDVlMC1iZWFlLTQ2OTg0OTczZTIzMiIsImMiOjF9" frameborder="0" allowFullScreen="true"></iframe>
 ```
 
-Inbäddningskoden är ett iFrame-element i HTML som du kan infoga på en HTML-sida. Justera bredden och höjden på den iFrame som är avsedd att passa på din webbplats. Exampelrapporten har skrivits med förhållandena 16:9. Välj en storlek som bevarar förhållandet. När det implementeras korrekt visas bilden utan extra grå kantlinjer. Det är användbart att [läsa tips och råd för iFrame-storlek](../service-publish-to-web.md#tips-for-iframe-height-and-width) när du genomför dessa ändringar.
+Inbäddningskoden är ett iFrame-element i HTML som du kan infoga på en HTML-sida. Justera bredden och höjden på den iFrame som är avsedd att passa på din webbplats. Exampelrapporten har skrivits med förhållandena 16:9. Välj en storlek som bevarar förhållandet. När det implementeras korrekt visas bilden utan extra grå kantlinjer. Det är användbart att [läsa tips och råd för iFrame-storlek](../collaborate-share/service-publish-to-web.md#tips-for-iframe-height-and-width) när du genomför dessa ändringar.
 
 ## <a name="option-2-customize-the-sample-power-bi-file"></a>Alternativ 2: Anpassa Power BI-exempelfilen
 
@@ -93,18 +93,18 @@ Kom igång genom att [Ladda ned .pbix-filen (här)](https://go.microsoft.com/fwl
 
 ### <a name="publish-your-report-to-the-power-bi-service"></a>Publicera din rapport till Power BI-tjänsten
 
-När du har anpassat rapporten enligt dina önskemål kan du [följa stegen som beskrivs här för att publicera rapporten](../desktop-upload-desktop-files.md) på Power BI-tjänsten.
+När du har anpassat rapporten enligt dina önskemål kan du [följa stegen som beskrivs här för att publicera rapporten](../create-reports/desktop-upload-desktop-files.md) på Power BI-tjänsten.
 
 ### <a name="configure-scheduled-refresh"></a>Konfigurera schemalagd uppdatering
 
-För att informationen i rapporten ska vara aktuell kan du [Konfigurera schemalagd uppdatering](../refresh-scheduled-refresh.md) när du har publicerat rapporten.
+För att informationen i rapporten ska vara aktuell kan du [Konfigurera schemalagd uppdatering](../connect-data/refresh-scheduled-refresh.md) när du har publicerat rapporten.
 
 När du följer stegen kan du välja följande alternativ:
 
 1. Autentiseringmetod för autentiseringsuppgifter för datakälla: Anonym
 2. Inställningar för sekretessnivå för den här datakällan: Offentlig
 
-Om du vill testa uppdateringsinställningen väljer du alternativet [Uppdatera nu](../refresh-data.md#data-refresh) som är tillgängligt från datauppsättningsobjektet.
+Om du vill testa uppdateringsinställningen väljer du alternativet [Uppdatera nu](../connect-data/refresh-data.md#data-refresh) som är tillgängligt från datauppsättningsobjektet.
 
 Uppdaterade data läses in varje gången schemat körs. Underliggande data tillhandahålls av USAFacts och kanske inte uppdateras lika ofta som ditt uppdateringsschema. Kontrollera [USAFacts webbplats](https://usafacts.org/visualizations/coronavirus-covid-19-spread-map/) för att veta när de underliggande data senast uppdaterades. 
 
@@ -112,7 +112,7 @@ Om du tänker publicera den anpassade rapporten på din webbplats är det bäst 
 
 ### <a name="create-a-publish-to-web-embed-code"></a>Skapa en inbäddningskod för publicering till webben 
 
-Om du vill bädda in din anpassade rapport på din egen webbplats följer du anvisningarna för hur du [skapar en egen inbäddningskod för publicering till webbplats](../service-publish-to-web.md#create-embed-codes-with-publish-to-web).
+Om du vill bädda in din anpassade rapport på din egen webbplats följer du anvisningarna för hur du [skapar en egen inbäddningskod för publicering till webbplats](../collaborate-share/service-publish-to-web.md#create-embed-codes-with-publish-to-web).
 
 När du har publicerat din inbäddningskod använder du iFrame i bekräftelsedialogrutan för att bädda in den på webbplatsen.
 
@@ -143,7 +143,7 @@ Du kan också kombinera data i den här rapporten med data från en annan källa
 
     :::image type="content" source="media/sample-covid-19-us/power-bi-covid-19-load-data.png" alt-text="Läs in data från webben":::
 
-    Den här artikeln [Ansluta till webbsidor från Power BI Desktop](../desktop-connect-to-web.md) innehåller mer information om att läsa in data från webben.
+    Den här artikeln [Ansluta till webbsidor från Power BI Desktop](../connect-data/desktop-connect-to-web.md) innehåller mer information om att läsa in data från webben.
     
 Du kan sedan använda Power BI Desktop för att visualisera data. Använd slutligen stegen i **Alternativ 2:** [Publicera rapporten till Power BI-tjänsten](#publish-your-report-to-the-power-bi-service) för att publicera rapporten och skapa en anpassad inbäddningskod. 
 
@@ -168,4 +168,8 @@ Johns Hopkins Universitys data är upphovsrättsskyddad från 2020 av Johns Hopk
 
 ## <a name="next-steps"></a>Nästa steg
 
-[Hämta exempel för Power BI](../sample-datasets.md)
+[Hämta exempel för Power BI](../create-reports/sample-datasets.md)
+
+
+
+

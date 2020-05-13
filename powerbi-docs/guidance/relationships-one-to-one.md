@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 03/02/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 92aa2c5d8da91590f5d491090761a6a6b1501061
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 43905b05bfe796c416bb8d91901497f6ca1e573e
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78263816"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83278271"
 ---
 # <a name="one-to-one-relationship-guidance"></a>Vägledning för en-till-en-relation
 
@@ -99,7 +99,7 @@ Närhelst det är möjligt rekommenderar vi att du undviker att skapa en-till-en
 - Begränsa möjligheten att skapa hierarkier, eftersom deras nivåer måste baseras på kolumner från _samma tabell_
 - Producera oväntade resultat när det inte finns någon komplett matchning av rader mellan tabellerna
 
-Specifika rekommendationer kan variera beroende på om en-till-en-relationen är _intra-insulär_ eller _inter-insulär_. Mer information om utvärdering av relationer finns i [Modellrelationer i Power BI Desktop (relationsutvärdering)](../desktop-relationships-understand.md#relationship-evaluation).
+Specifika rekommendationer kan variera beroende på om en-till-en-relationen är _intra-insulär_ eller _inter-insulär_. Mer information om utvärdering av relationer finns i [Modellrelationer i Power BI Desktop (relationsutvärdering)](../transform-model/desktop-relationships-understand.md#relationship-evaluation).
 
 ### <a name="intra-island-one-to-one-relationship"></a>Intra-insulär en-till-en-relation
 
@@ -107,7 +107,7 @@ När en _intra-insulär_ en-till-en-relation finns mellan tabeller, så rekommen
 
 I det följande presenteras en metod för att konsolidera och utforma en-till-en-relaterade data:
 
-1. **Sammanfoga frågor**: När du [kombinerar de två frågorna](../desktop-shape-and-combine-data.md#combine-queries), så ta hänsyn till datafullständigheten i respektive fråga. Om en fråga innehåller en komplett uppsättning rader (som en huvudlista), så sammanfoga den andra frågan med den. Konfigurera sammanslagningstransformationen med en _vänster yttre koppling_, vilket är standardkopplingstypen. Den här kopplingstypen ser till att du behåller alla rader i den första frågan, och kompletterar dem med alla eventuella matchande rader i den andra frågan. Utöka alla nödvändiga kolumner från en andra frågan i den första frågan.
+1. **Sammanfoga frågor**: När du [kombinerar de två frågorna](../connect-data/desktop-shape-and-combine-data.md#combine-queries), så ta hänsyn till datafullständigheten i respektive fråga. Om en fråga innehåller en komplett uppsättning rader (som en huvudlista), så sammanfoga den andra frågan med den. Konfigurera sammanslagningstransformationen med en _vänster yttre koppling_, vilket är standardkopplingstypen. Den här kopplingstypen ser till att du behåller alla rader i den första frågan, och kompletterar dem med alla eventuella matchande rader i den andra frågan. Utöka alla nödvändiga kolumner från en andra frågan i den första frågan.
 2. **Inaktivera frågeinläsning**: Se till att [inaktivera inläsningen](import-modeling-data-reduction.md#disable-power-query-query-load) av den andra frågan. På så vis läses dess resultat inte in som en modelltabell. Den här konfigurationen reducerar datamodellens lagringsstorlek och bidrar till att hålla **Fält**-fönstret rent från skräp.
 
     I vårt exempel kan rapportförfattare nu hitta en enskild tabell med namnet **Produkt** i **Fält**-fönstret. Det innehåller alla produktrelaterade fält.
@@ -131,11 +131,11 @@ I vårt exempel kan rapportförfattare hitta fältet **Kategori** i visningsmapp
 
 ![Fönstret Fält visar fältet Kategori i en visningsmapp med namnet Marknadsföring.](media/relationships-one-to-one/product-to-product-category-fields-pane-consolidated-display-folder.png)
 
-Om du ändå väljer att definiera en intra-insulär en-till-en relation i din modell, så se till, närhelst möjligt, att det finns matchande rader i de relaterade tabellerna. Eftersom en intra-insulär en-till-en-relation utvärderas som en [stark relation](../desktop-relationships-understand.md#strong-relationships), så kan dataintegritetsärenden dyka upp i dina visuella rapportobjekt som TOM. (Du kan se ett exempel på en TOM gruppering i det första visuella tabellobjektet som presenterades i den här artikeln.)
+Om du ändå väljer att definiera en intra-insulär en-till-en relation i din modell, så se till, närhelst möjligt, att det finns matchande rader i de relaterade tabellerna. Eftersom en intra-insulär en-till-en-relation utvärderas som en [stark relation](../transform-model/desktop-relationships-understand.md#strong-relationships), så kan dataintegritetsärenden dyka upp i dina visuella rapportobjekt som TOM. (Du kan se ett exempel på en TOM gruppering i det första visuella tabellobjektet som presenterades i den här artikeln.)
 
 ### <a name="inter-island-one-to-one-relationship"></a>Inter-insulär en-till-en-relation
 
-När det finns en _inter-insulär_ en-till-en-relation mellan tabeller, så finns det inte någon alternativ modelldesign, såvida du inte konsoliderat data i dina datakällor i förväg. Power BI utvärderar en-till-en-modell relationen som en [svag relation](../desktop-relationships-understand.md#weak-relationships). Därför bör du se till att det finns matchande rader i de relaterade tabellerna, eftersom omatchade rader elimineras från frågeresultaten.
+När det finns en _inter-insulär_ en-till-en-relation mellan tabeller, så finns det inte någon alternativ modelldesign, såvida du inte konsoliderat data i dina datakällor i förväg. Power BI utvärderar en-till-en-modell relationen som en [svag relation](../transform-model/desktop-relationships-understand.md#weak-relationships). Därför bör du se till att det finns matchande rader i de relaterade tabellerna, eftersom omatchade rader elimineras från frågeresultaten.
 
 Låt oss se vad som händer när fält från båda tabellerna läggs till i ett visuellt tabellobjekt, och det finns en svag relation mellan tabellerna.
 
@@ -147,7 +147,7 @@ Tabellen visar endast två rader. Produkt-SKU:n r-02 saknas eftersom det inte fi
 
 Mer information om ämnet i den här artikeln finns i följande resurser:
 
-- [Modellrelationer i Power BI Desktop](../desktop-relationships-understand.md)
+- [Modellrelationer i Power BI Desktop](../transform-model/desktop-relationships-understand.md)
 - [Förstå star-schemat och dess betydelse för Power BI](star-schema.md)
 - [Vägledning vid felsökning av relationer](relationships-troubleshoot.md)
 - Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)

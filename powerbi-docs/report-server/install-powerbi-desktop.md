@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 02/13/2020
-ms.openlocfilehash: dfb57d6344e6a8e020404f9cd23c957967b960f7
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: bdbd604c552f9efa29fc8738e474b0907ad44f2e
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81122264"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83278363"
 ---
 # <a name="install-power-bi-desktop-optimized-for-power-bi-report-server"></a>Installera Power BI Desktop som har optimerats för Power BI-rapportservern
 
@@ -81,7 +81,7 @@ Rapporter i Power BI-rapportservern har stöd för nästan alla visualiseringar,
 
 Rapporter i Power BI-rapportservern stöder alla de grundläggande funktionerna i [Power BI-mobilappar](../consumer/mobile/mobile-apps-for-mobile-devices.md), inklusive:
 
-* [Telefonrapportlayout](../desktop-create-phone-report.md): Du kan optimera en rapport för Power BI-mobilappar. Optimerade rapporter på din mobiltelefon har en särskild ikon, ![telefonrapportlayout-ikonen](media/install-powerbi-desktop/power-bi-rs-mobile-optimized-icon.png) och en särskild layout.
+* [Telefonrapportlayout](../create-reports/desktop-create-phone-report.md): Du kan optimera en rapport för Power BI-mobilappar. Optimerade rapporter på din mobiltelefon har en särskild ikon, ![telefonrapportlayout-ikonen](media/install-powerbi-desktop/power-bi-rs-mobile-optimized-icon.png) och en särskild layout.
   
     ![Rapport optimerad för telefoner](media/install-powerbi-desktop/power-bi-rs-mobile-optimized-report.png)
 
@@ -115,3 +115,4 @@ Nu när du har installerat Power BI Desktop kan du börja skapa Power BI-rapport
 [Vad är Power BI-rapportservern?](get-started.md)
 
 Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+

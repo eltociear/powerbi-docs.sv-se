@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 03/02/2020
 ms.author: v-pemyer
-ms.openlocfilehash: e2854d82d858bb1963b691d32d561c7b3bbfc11a
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 7ccff80391ed0625aac063af3bf7a86b83cd7e85
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78263655"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83278133"
 ---
 # <a name="relationship-troubleshooting-guidance"></a>Vägledning vid felsökning av relationer
 
@@ -44,18 +44,18 @@ Här är en lista över problem tillsammans med möjliga lösningar.
 
 |Problem|Möjliga orsaker|
 |---------|---------|
-|Det visuella objektet visar inga resultat|– Modellen har ännu inte lästs in med data<br />– Inga data finns i filterkontexten<br />– Säkerhet på radnivå upprätthålls<br />– Relationer sprids inte mellan tabeller – _följ kontrollistan ovan_<br />– Säkerhet på radnivå upprätthålls, men en dubbelriktad relation är inte aktiverad för att spridas – se [säkerhet på radnivå (RLS) med Power BI Desktop](../desktop-rls.md)|
+|Det visuella objektet visar inga resultat|– Modellen har ännu inte lästs in med data<br />– Inga data finns i filterkontexten<br />– Säkerhet på radnivå upprätthålls<br />– Relationer sprids inte mellan tabeller – _följ kontrollistan ovan_<br />– Säkerhet på radnivå upprätthålls, men en dubbelriktad relation är inte aktiverad för att spridas – se [säkerhet på radnivå (RLS) med Power BI Desktop](../create-reports/desktop-rls.md)|
 |Det visuella objektet visar samma värde för varje gruppering |– Relationer finns inte<br />– Relationer sprids inte mellan tabeller – _följ kontrollistan ovan_|
 |Det visuella objektet visar resultat, men de är inte korrekta|– Visuellt objekt är felaktigt konfigurerat<br />– Måttlogiken är felaktig<br />– Modelldata måste uppdateras<br />– Källdata är felaktiga<br />– Relationskolumner är felaktigt relaterade (till exempel **ProductID**-kolumnen mappar till **CustomerID**)<br />– Det är en relation mellan två DirectQuery-tabeller och kolumnen ”en”-sida i en relation innehåller dubblettvärden|
-|Tomma grupperingar eller utsnitt/filter-objekt visas och källkolumnerna innehåller inte tomma steg|– Det är en stark relation och kolumnen ”många”-sida innehåller värden som inte lagras i kolumnen ”en”-sida – se [modellrelationer i Power BI Desktop (starka relationer)](../desktop-relationships-understand.md#strong-relationships)<br />– Det är en stark relation med en-till-en-relation och relaterade kolumner som innehåller tomma celler – se [modellrelationer i Power BI Desktop (starka relationer)](../desktop-relationships-understand.md#strong-relationships)<br />– En inaktiverad relationskolumn lagrar tomma celler eller innehåller värden som inte är lagrade på ”en”-sidan|
-|Data saknas i visualiseringen|– Felaktiga/oväntade filter tillämpas<br />– Säkerhet på radnivå upprätthålls<br />– Det är en svag relation och det finns tomma värden i relaterade kolumner eller problem med dataintegritet – se [modellrelationer i Power BI Desktop (svaga relationer)](../desktop-relationships-understand.md#weak-relationships)<br />– Det är en relation mellan två DirectQuery-tabeller, relationen är konfigurerad att [anta referensintegritet](../desktop-relationships-understand.md#assume-referential-integrity), men det finns problem med dataintegritet (felmatchade värden i relaterade kolumner)|
-|Säkerhet på radnivå är inte korrekt framtvingad|– Relationer sprids inte mellan tabeller – _följ kontrollistan ovan_<br />– Säkerhet på radnivå upprätthålls, men en dubbelriktad relation är inte aktiverad för att spridas – se [säkerhet på radnivå (RLS) med Power BI Desktop](../desktop-rls.md)|
+|Tomma grupperingar eller utsnitt/filter-objekt visas och källkolumnerna innehåller inte tomma steg|– Det är en stark relation och kolumnen ”många”-sida innehåller värden som inte lagras i kolumnen ”en”-sida – se [modellrelationer i Power BI Desktop (starka relationer)](../transform-model/desktop-relationships-understand.md#strong-relationships)<br />– Det är en stark relation med en-till-en-relation och relaterade kolumner som innehåller tomma celler – se [modellrelationer i Power BI Desktop (starka relationer)](../transform-model/desktop-relationships-understand.md#strong-relationships)<br />– En inaktiverad relationskolumn lagrar tomma celler eller innehåller värden som inte är lagrade på ”en”-sidan|
+|Data saknas i visualiseringen|– Felaktiga/oväntade filter tillämpas<br />– Säkerhet på radnivå upprätthålls<br />– Det är en svag relation och det finns tomma värden i relaterade kolumner eller problem med dataintegritet – se [modellrelationer i Power BI Desktop (svaga relationer)](../transform-model/desktop-relationships-understand.md#weak-relationships)<br />– Det är en relation mellan två DirectQuery-tabeller, relationen är konfigurerad att [anta referensintegritet](../transform-model/desktop-relationships-understand.md#assume-referential-integrity), men det finns problem med dataintegritet (felmatchade värden i relaterade kolumner)|
+|Säkerhet på radnivå är inte korrekt framtvingad|– Relationer sprids inte mellan tabeller – _följ kontrollistan ovan_<br />– Säkerhet på radnivå upprätthålls, men en dubbelriktad relation är inte aktiverad för att spridas – se [säkerhet på radnivå (RLS) med Power BI Desktop](../create-reports/desktop-rls.md)|
 |||
 
 ## <a name="next-steps"></a>Nästa steg
 
 Mer information om ämnet i den här artikeln finns i följande resurser:
 
-- [Modellrelationer i Power BI Desktop](../desktop-relationships-understand.md)
+- [Modellrelationer i Power BI Desktop](../transform-model/desktop-relationships-understand.md)
 - Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 - Har du förslag? [Bidra till att förbättra Power BI](https://ideas.powerbi.com/)

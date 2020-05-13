@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/30/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 49601798ae920d956441c5580079625bf7408e07
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 242f1e44e3314af900d9f4d4e4fb7380b28b4103
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78290591"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83278685"
 ---
 # <a name="referencing-power-query-queries"></a>Referera till Power Query-frågor
 
@@ -42,7 +42,7 @@ Användningen av funktionen [Table.Buffer ](/powerquery-m/table-buffer) i **Frå
 
 I allmänhet rekommenderar vi att du refererar frågor för att undvika duplicering av logik över dina frågor. Som beskrivs i den här artikeln kan den här designmetoden dock bidra till långsammare datauppdateringar och överbelastade datakällor.
 
-Vi rekommenderar att du skapar ett [dataflöde](../service-dataflows-overview.md) istället. Ett dataflöde kan förbättra datauppdateringstiden och minska påverkan på dina datakällor.
+Vi rekommenderar att du skapar ett [dataflöde](../transform-model/service-dataflows-overview.md) istället. Ett dataflöde kan förbättra datauppdateringstiden och minska påverkan på dina datakällor.
 
 Du kan utforma dataflödet för att kapsla in källdata och transformeringar. Eftersom dataflödet är ett beständigt datalager i Power BI-tjänsten är datahämtningen snabb. Även om frågor med referenser leder det till flera begäranden för dataflödet kan datauppdateringstiderna alltså förbättras.
 
@@ -52,7 +52,7 @@ I exemplet, om **Fråga1** har gjorts om som en dataflödesentitet kan **Query2*
 
 Mer information om ämnet i den här artikeln finns i följande resurser:
 
-- [Dataförberedelser med självbetjäning i Power BI](../service-dataflows-overview.md)
-- [Skapa och använda dataflöden i Power BI](../service-dataflows-create-use.md)
+- [Dataförberedelser med självbetjäning i Power BI](../transform-model/service-dataflows-overview.md)
+- [Skapa och använda dataflöden i Power BI](../transform-model/service-dataflows-create-use.md)
 - Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 - Har du förslag? [Bidra till att förbättra Power BI](https://ideas.powerbi.com/)

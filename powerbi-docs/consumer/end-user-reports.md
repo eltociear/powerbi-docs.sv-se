@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 089d1df9a63a30d602ac12f1bf18f32787374654
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 28af5cd89e918fad7fc7064479ac95c67ca3cee3
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79114241"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277466"
 ---
 # <a name="reports-in-power-bi"></a>Rapporter i Power BI
 
@@ -76,7 +76,7 @@ Eller också är du en som *använder* rapporter, som tar emot dem från andra. 
 
 * Börja med att ta en närmare [titt på Power BI-tjänsten](end-user-basic-concepts.md) så att du vet var du hittar rapportverktyg och rapporter.
 * Lär dig att [öppna en rapport](end-user-report-open.md) och alla [interaktioner som är tillgängliga för konsumenter](end-user-reading-view.md).
-* Bekanta dig mer rapporter genom att ta en titt på ett av våra [exempel](../sample-tutorial-connect-to-the-samples.md).  
+* Bekanta dig mer rapporter genom att ta en titt på ett av våra [exempel](../create-reports/sample-tutorial-connect-to-the-samples.md).  
 * Information om vilken datauppsättning som används av rapporten och vilka instrumentpaneler som visar grafiska objekt från rapporten (*fästa paneler*) finns i [Visa relaterat innehåll i Power BI-tjänsten](end-user-related.md).
 
 > [!TIP]
@@ -86,3 +86,4 @@ Eller också är du en som *använder* rapporter, som tar emot dem från andra. 
 
 [Öppna och visa en rapport](end-user-report-open.md)    
 [Instrumentpaneler i Power BI-tjänsten](end-user-dashboards.md)
+

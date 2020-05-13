@@ -8,16 +8,16 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/28/2019
 ms.author: v-pemyer
-ms.openlocfilehash: d5599db57ef7b105575dcb7ee4b4342f374624f0
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 853f6d7f5cd6696be55edeea101bc0ca51922ad3
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78290600"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83278087"
 ---
 # <a name="use-report-page-drillthrough"></a>Använd detaljerad information för rapportsidor
 
-Den här artikeln är avsedd för rapportförfattare som skapar Power BI-rapporter. Den innehåller förslag och rekommendationer när du skapar [visning av detaljerad information på rapportsidor](../desktop-drillthrough.md).
+Den här artikeln är avsedd för rapportförfattare som skapar Power BI-rapporter. Den innehåller förslag och rekommendationer när du skapar [visning av detaljerad information på rapportsidor](../create-reports/desktop-drillthrough.md).
 
 Vi rekommenderar att du utformar dina rapporter så att användare kan följa det här flödet:
 
@@ -58,8 +58,8 @@ Här är några bra tips när du skapar rapporter:
 - **Filter för visning av detaljerad information:** Ställ in filter för detaljerad information så att du kan förhandsgranska ett realistiskt resultat när du utformar sidan. Glöm inte att ta bort de här filtren innan du publicerar rapporten.
 - **Ytterligare funktioner:** En sida med detaljerad information fungerar precis som andra rapportsidor. Du kan till och med utöka den med fler interaktiva funktioner som utsnitt och filter.
 - **Tomma värden:** Undvik att lägga till visuella objekt som kan visa tomma värden eller som genererar fel när filter för detaljerad information används.
-- **Synlighet för sidorna:** Överväg att dölja sidor med detaljerad information. Om du bestämmer dig för att låta sidor med detaljerad information vara synliga måste du lägga till en knapp som gör att användaren kan rensa alla tidigare angivna detaljfilter. Tilldela ett [bokmärke](../desktop-bookmarks.md) till knappen. Bokmärket ska konfigureras för att ta bort alla filter.
-- **Tillbaka-knapp:** När du tilldelar ett filter för detaljerad information läggs en [tillbaka-knapp](../desktop-buttons.md) till automatiskt. Behåll den gärna. På så sätt kan rapportanvändarna enkelt gå tillbaka till ursprungssidan.
+- **Synlighet för sidorna:** Överväg att dölja sidor med detaljerad information. Om du bestämmer dig för att låta sidor med detaljerad information vara synliga måste du lägga till en knapp som gör att användaren kan rensa alla tidigare angivna detaljfilter. Tilldela ett [bokmärke](../create-reports/desktop-bookmarks.md) till knappen. Bokmärket ska konfigureras för att ta bort alla filter.
+- **Tillbaka-knapp:** När du tilldelar ett filter för detaljerad information läggs en [tillbaka-knapp](../create-reports/desktop-buttons.md) till automatiskt. Behåll den gärna. På så sätt kan rapportanvändarna enkelt gå tillbaka till ursprungssidan.
 - **Identifiering:** Gör det enklare att upptäcka detaljsidan genom att ställa in rubriktext eller lägga till instruktioner i en textruta. Du kan också designa ett överlägg enligt beskrivningen i [det här blogginlägget](https://alluringbi.com/2019/10/23/overlays-for-true-self-serve-reporting/).
 
 > [!TIP]
@@ -69,6 +69,6 @@ Här är några bra tips när du skapar rapporter:
 
 Mer information om ämnet i den här artikeln finns i följande resurser:
 
-- [Använd detaljinformation i Power BI Desktop](../desktop-drillthrough.md)
+- [Använd detaljinformation i Power BI Desktop](../create-reports/desktop-drillthrough.md)
 - Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 - Har du förslag? [Bidra till att förbättra Power BI](https://ideas.powerbi.com/)

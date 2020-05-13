@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 02/10/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 0a9bebd51e64c18e0c354386e168661542b9c5bf
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: b26cd958ad637f0dc3c27c7a0f6ccbe2591d37b7
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82866597"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279191"
 ---
 # <a name="create-matrix-visualizations-in-power-bi"></a>Skapa matrisvisualiseringar i Power BI
 
@@ -62,7 +62,7 @@ Matrisens expansionsstatus sparas med rapporten. En matris kan fästas på en in
 ![](media/desktop-matrix-visual/power-bi-expand3.png)
 
 > [!NOTE]
-> Om du skapar en rapport ovanpå en flerdimensionell Analysis Services-modell finns det några särskilda överväganden för expandering/minimering om modellen använder standardmedlemsfunktionen. Mer information finns i [Arbeta med flerdimensionella modeller i Power BI](../desktop-default-member-multidimensional-models.md)
+> Om du skapar en rapport ovanpå en flerdimensionell Analysis Services-modell finns det några särskilda överväganden för expandering/minimering om modellen använder standardmedlemsfunktionen. Mer information finns i [Arbeta med flerdimensionella modeller i Power BI](../connect-data/desktop-default-member-multidimensional-models.md)
 
 ## <a name="using-drill-down-with-the-matrix-visual"></a>Öka detaljnivån i det visuella matrisobjektet
 Det finns en mängd intressanta aktiviteter som ökar detaljnivån i matrisen som inte var tillgängliga tidigare. Detta inkluderar möjligheten att öka detaljnivån för rader, kolumner och även i enskilda avsnitt och celler. Nu ska vi titta på hur var och en av dessa fungerar.
@@ -211,7 +211,7 @@ Om du har en kolumn eller ett mått som innehåller webbadresser kan du använda
 
 Ställ in **Webb-URL** på värdet PÅ och välj ett fält som ska användas som URL för kolumnen. När värdena i fältet (kolumnen) används blir de aktiva länkar. Hovra om du vill se länken och välj att hoppa till den sidan. 
 
-Mer information finns i [Villkorsstyrd tabellformatering](../desktop-conditional-table-formatting.md)
+Mer information finns i [Villkorsstyrd tabellformatering](../create-reports/desktop-conditional-table-formatting.md)
 
 ## <a name="shading-and-font-colors-with-matrix-visuals"></a>Fyllning och teckenfärger med matriser
 Med det visuella matrisobjektet kan du använda villkorsstyrd formatering (färger, fyllning och datastaplar) för cellernas bakgrundsfärger inom matrisen samt tillämpa villkorsstyrd formatering på själva texten och värdena.
@@ -233,3 +233,5 @@ Välj *Avancerade kontroller* för att visa en dialogruta där du kan göra just
 [Visuellt Power Apps-objekt för Power BI](power-bi-visualization-powerapp.md)
 
 [Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+
+

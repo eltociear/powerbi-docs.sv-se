@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 03/25/2020
 ms.author: v-pemyer
-ms.openlocfilehash: f03daf65ab938923906351acef9440fe0de88c5c
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 863f5f55eb4fb5d2427585bd2d792097ac1c6630
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82065580"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83278938"
 ---
 # <a name="tips-to-improve-analysis-with-shapes-images-and-icons-in-power-bi-reports"></a>Tips för bättre analyser med former, bilder och ikoner i Power BI-rapporter
 
@@ -37,7 +37,8 @@ Sammanfattningsvis omfattar de fyra tipsen för bättre analyser med former, bil
 
 Mer information om ämnet i den här artikeln finns i följande resurser:
 
-- [Tips om hur du kan skapa snygga rapporter](../desktop-tips-and-tricks-for-creating-reports.md)
+- [Tips om hur du kan skapa snygga rapporter](../create-reports/desktop-tips-and-tricks-for-creating-reports.md)
 - biDezine-video: [De fyra bästa tipsen för bättre analyser med piktogram i Power BI](https://www.youtube.com/watch?v=-gLwXonWNsI)
 - Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 - Har du förslag? [Bidra till att förbättra Power BI](https://ideas.powerbi.com/)
+

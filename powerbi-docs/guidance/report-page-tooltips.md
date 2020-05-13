@@ -8,16 +8,16 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 5a6b7bda8bf5e8d80ae8b22a71035f8bc362fb89
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: e3af0828afcc7c085b896fe9e1b99f3b10bfdd5f
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79377752"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277857"
 ---
 # <a name="extend-visuals-with-report-page-tooltips"></a>Utöka visuella objekt med knappbeskrivningar för rapportsidor
 
-Den här artikeln är avsedd för rapportförfattare som skapar Power BI-rapporter. Den innehåller förslag och rekommendationer när du skapar [knappbeskrivningar för rapportsidor](../desktop-tooltips.md).
+Den här artikeln är avsedd för rapportförfattare som skapar Power BI-rapporter. Den innehåller förslag och rekommendationer när du skapar [knappbeskrivningar för rapportsidor](../create-reports/desktop-tooltips.md).
 
 ## <a name="suggestions"></a>Förslag
 
@@ -29,7 +29,7 @@ Med knappbeskrivningar på rapportsidorna kan du ge användarna en bättre upple
 > [!NOTE]
 > Visuella rapportobjekt kan bara visa sidbeskrivningar när filtren för knappbeskrivningssidan är kompatibla med det visuella objektets design. Ett visuellt objekt som grupperas efter _produkt_ är till exempel kompatibelt med en knappbeskrivningssida som filtrerar efter _produkt_.
 >
-> Sidbeskrivningar är inte interaktiva. Om du vill att rapportanvändarna ska kunna interagera skapar du en [sida med visning av detaljerad information](../desktop-drillthrough.md) istället.
+> Sidbeskrivningar är inte interaktiva. Om du vill att rapportanvändarna ska kunna interagera skapar du en [sida med visning av detaljerad information](../create-reports/desktop-drillthrough.md) istället.
 >
 > Visuella Power BI-objekt saknar stöd för sidbeskrivningar.
 
@@ -65,7 +65,7 @@ Du kan konfigurera visuella rubriker så att de visar sidbeskrivningar. Du kan l
 
 Det är värt att notera att även knappar, bilder, textrutor och former kan visa sidbeskrivningar via en visuell rubrik.
 
-I det här exemplet ser du vad som händer när rapportanvändaren hovrar med markören över [ikonen för den visuella rubriken](../desktop-visual-elements-for-reports.md).
+I det här exemplet ser du vad som händer när rapportanvändaren hovrar med markören över [ikonen för den visuella rubriken](../create-reports/desktop-visual-elements-for-reports.md).
 
 ![En rapportanvändare har hovrat med markören över ikonen för den visuella rubriken (frågetecknet). En RTF-formaterad beskrivning visas.](media/report-page-tooltips/suggestion-add-help.png)
 
@@ -85,8 +85,8 @@ Här är några bra tips när du skapar rapporter:
 
 Mer information om ämnet i den här artikeln finns i följande resurser:
 
-- [Skapa knappbeskrivningar baserat på rapportsidor i Power BI Desktop](../desktop-tooltips.md)
-- [Anpassa knappbeskrivningar i Power BI Desktop](../desktop-custom-tooltips.md)
-- [Använda visuella element för att förbättra Power BI-rapporter](../desktop-visual-elements-for-reports.md)
+- [Skapa knappbeskrivningar baserat på rapportsidor i Power BI Desktop](../create-reports/desktop-tooltips.md)
+- [Anpassa knappbeskrivningar i Power BI Desktop](../create-reports/desktop-custom-tooltips.md)
+- [Använda visuella element för att förbättra Power BI-rapporter](../create-reports/desktop-visual-elements-for-reports.md)
 - Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 - Har du förslag? [Bidra till att förbättra Power BI](https://ideas.powerbi.com/)

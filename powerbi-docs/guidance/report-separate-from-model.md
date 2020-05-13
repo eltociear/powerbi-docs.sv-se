@@ -8,18 +8,18 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 04/11/2020
 ms.author: v-pemyer
-ms.openlocfilehash: dad451da460abed65a69990394522f268d7f21cd
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 971c699170103d5521763679c93d3641c094cc58
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81525289"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277443"
 ---
 # <a name="separate-reports-from-models-in-power-bi-desktop"></a>Separera rapporter från modeller i Power BI Desktop
 
 När du skapar en ny Power BI Desktop-lösning är en av de första uppgifter som du behöver göra att ”hämta data”. Att hämta data kan leda till två olika resultat. Det kan:
 
-- Skapa en [Live-anslutning](../desktop-report-lifecycle-datasets.md) till en modell som redan har publicerats, vilket kan vara en Power BI-datamängd eller en fjärrhanterad Analysis Services-modell.
+- Skapa en [Live-anslutning](../connect-data/desktop-report-lifecycle-datasets.md) till en modell som redan har publicerats, vilket kan vara en Power BI-datamängd eller en fjärrhanterad Analysis Services-modell.
 - Påbörja utvecklingen av en ny modell som kan vara antingen en import-, DirectQuery- eller kompositmodell.
 
 Den här artikeln handlar om det andra scenariot. I den finns vägledning om huruvida en rapport och en modell ska kombineras till en enskild Power BI Desktop-fil.
@@ -67,7 +67,7 @@ Vi rekommenderar att du kontaktar ägaren av varje relaterad artefakt för att m
 
 Mer information om ämnet i den här artikeln finns i följande resurser:
 
-- [Ansluta till datauppsättningar i Power BI-tjänsten från Power BI Desktop](../desktop-report-lifecycle-datasets.md)
+- [Ansluta till datauppsättningar i Power BI-tjänsten från Power BI Desktop](../connect-data/desktop-report-lifecycle-datasets.md)
 - [Visa relaterat innehåll i Power BI-tjänsten](../consumer/end-user-related.md)
 - [Dataursprung](../collaborate-share/service-data-lineage.md)
 - Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 04/28/2020
-ms.openlocfilehash: ad75cf6b85a896fbdc275748dc31c620206e08a2
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 865b60800b68aed410f10964148afdf2791b1ae1
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82692899"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279168"
 ---
 # <a name="supported-data-sources-for-power-bi-paginated-reports"></a>Datakällor som stöds för sidnumrerade Power BI-rapporter
 
@@ -38,7 +38,7 @@ För Azure SQL Database-datakällor behöver du ange mer information, enligt bes
 
 ## <a name="other-data-sources"></a>Andra datakällor
 
-Utöver datakällorna med inbyggt stöd ovan kan följande datakällor nås via en [Power BI-datagateway](../service-gateway-onprem.md):
+Utöver datakällorna med inbyggt stöd ovan kan följande datakällor nås via en [Power BI-datagateway](../connect-data/service-gateway-onprem.md):
 
 - SQL Server
 - SQL Server Analysis Services
@@ -74,3 +74,4 @@ För att enkel inloggning och OAuth2 ska fungera korrekt behöver den Azure SQL 
 [Visa en sidnumrerad rapport i Power BI-tjänsten](../consumer/paginated-reports-view-power-bi-service.md)
 
 Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
+
