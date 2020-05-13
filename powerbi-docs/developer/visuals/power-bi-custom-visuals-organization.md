@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 12/11/2018
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 52ebb1bf049024051846936237d35b202f00d630
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 6683efbf9fa9dea9215914c097f249362fbffff2
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80464573"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83278823"
 ---
 # <a name="organizational-visuals-in-power-bi"></a>Visuella objekt för organisationer i Power BI
 
@@ -42,8 +42,6 @@ Mer information om hur du administrerar, distribuerar och hanterar visuella Powe
 Det finns flera överväganden och begränsningar som du behöver känna till.
 
 Administration:
-
-* Äldre visuella Power BI-objekt (t.ex visuella Power BI-objekt som inte har byggts ovanpå den nya versionens API:er) stöds inte
 
 * Om ett visuellt Power BI-objekt från ApSource eller en fil tas bort från databasen upphör alla befintliga rapporter som använder det borttagna visuella objektet att återges. Det går inte att ångra borttagningen från databasen. Om du tillfälligt vill inaktivera ett visuellt Power BI-objekt från ApSource eller en fil använder du funktionen "Inaktivera".
 

@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 7eea15d4389afaac2ac69e2f26eaa38fe84e337b
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: b792c7d9f6200544188e9f9fe711cd1394e8b921
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "75304174"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279582"
 ---
 # <a name="dax-divide-function-vs-divide-operator-"></a>DAX: Funktionen DIVIDERA jämfört med divisionsoperatorn (/)
 
@@ -58,7 +58,7 @@ Vi rekommenderar att du använder funktionen DIVIDERA när nämnaren är ett utt
 
 Om nämnaren är ett konstant värde rekommenderar vi att du använder divisionsoperatorn. I det här fallet kommer divisionen garanterat att lyckas och ditt uttryck fungerar bättre eftersom det inte behöver genomföra någon onödig testning.
 
-Du bör noga överväga om DIVIDERA-funktionen ska returnera ett alternativt värde. För mått är det vanligtvis bättre att de returnerar TOM. Att returnera TOM är bättre eftersom rapportvisualiseringar, som standard, eliminerar grupperingar när summeringarna är TOM. Det gör att det visuella objektet kan fokusera på grupper där det finns data. Vid behov kan du konfigurera det visuella objektet så att det visar alla grupper (som returnerar värden eller TOM) i filterkontexten genom att aktivera alternativet [Visa poster utan data](../desktop-show-items-no-data.md).
+Du bör noga överväga om DIVIDERA-funktionen ska returnera ett alternativt värde. För mått är det vanligtvis bättre att de returnerar TOM. Att returnera TOM är bättre eftersom rapportvisualiseringar, som standard, eliminerar grupperingar när summeringarna är TOM. Det gör att det visuella objektet kan fokusera på grupper där det finns data. Vid behov kan du konfigurera det visuella objektet så att det visar alla grupper (som returnerar värden eller TOM) i filterkontexten genom att aktivera alternativet [Visa poster utan data](../create-reports/desktop-show-items-no-data.md).
 
 ## <a name="next-steps"></a>Nästa steg
 
@@ -66,3 +66,4 @@ Mer information om den här artikeln finns i följande resurser:
 
 - [Data Analysis uttryck (DAX)-referens](/dax/)
 - Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+

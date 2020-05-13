@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 12/18/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 3ca49008639f7e3e084c8d045bc911aff57b7b21
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 42d99c7139586a78565198b59bc74716261537e0
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "75498747"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279628"
 ---
 # <a name="dax-column-and-measure-references"></a>DAX: Referenser för kolumner och mått
 
@@ -43,7 +43,7 @@ Vi rekommenderar att du alltid kvalificerar kolumnreferenser fullständigt. Orsa
 
 ## <a name="measures"></a>Mått
 
-Ett mått är ett objekt på modellnivå. Därför måste måttnamn vara unika i modellen. I fönstret **Fält** ser rapportförfattare dock varje mått associerat med en enda modelltabell. Den här associationen anges av utseendeskäl. Du kan konfigurera den genom att ange måttets egenskap **Home Table** (Starttabell). Mer information finns i [Mått i Power BI Desktop (Ordna dina mått)](../desktop-measures.md#organizing-your-measures).
+Ett mått är ett objekt på modellnivå. Därför måste måttnamn vara unika i modellen. I fönstret **Fält** ser rapportförfattare dock varje mått associerat med en enda modelltabell. Den här associationen anges av utseendeskäl. Du kan konfigurera den genom att ange måttets egenskap **Home Table** (Starttabell). Mer information finns i [Mått i Power BI Desktop (Ordna dina mått)](../transform-model/desktop-measures.md#organizing-your-measures).
 
 Det går att använda ett fullständigt kvalificerat mått i uttryck. DAX IntelliSense erbjuder rentav förslag om det. Däremot är det inte nödvändigt och rekommenderas inte. Om du ändrar starttabellen för ett mått gör det att uttryck som använder en fullständigt kvalificerad måttreferens till tabellen slutar fungera. Du måste då redigera varje bruten formel genom att ta bort (eller uppdatera) måttreferensen.
 
@@ -68,3 +68,4 @@ Mer information om den här artikeln finns i följande resurser:
 
 - [Data Analysis uttryck (DAX)-referens](/dax/)
 - Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+

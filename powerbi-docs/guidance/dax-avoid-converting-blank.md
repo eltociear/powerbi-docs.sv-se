@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 2f70b98ed540a2e5b87e5a949e30b0c1c02069d1
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: aea24e96acadbf9fee9e6dbf3aa395e09ef8e541
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "74700396"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279651"
 ---
 # <a name="dax-avoid-converting-blanks-to-values"></a>DAX: Undvik att omvandla tomma värden till värden
 
@@ -66,7 +66,7 @@ Nu visas bara kunder som har en försäljning i den aktuella filterkontexten i d
 ![Samma visuella tabellobjekt med fyra datarader. Varje rad avser en kund som har ett försäljningsvärde, och vinstmarginalen är skild från noll.](media/dax-avoid-converting-blank/table-visual-good.png)
 
 > [!TIP]
-> Om det behövs kan du konfigurera det visuella objektet så att alla grupperingar visas (de som returnerar värden eller är tomma) i filterkontexten genom att aktivera alternativet [Visa poster utan data](../desktop-show-items-no-data.md).
+> Om det behövs kan du konfigurera det visuella objektet så att alla grupperingar visas (de som returnerar värden eller är tomma) i filterkontexten genom att aktivera alternativet [Visa poster utan data](../create-reports/desktop-show-items-no-data.md).
 
 ## <a name="recommendation"></a>Rekommendation
 
@@ -80,3 +80,4 @@ Mer information om den här artikeln finns i följande resurser:
 
 - [Data Analysis uttryck (DAX)-referens](/dax/)
 - Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+

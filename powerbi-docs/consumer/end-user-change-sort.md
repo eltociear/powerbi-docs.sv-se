@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 02/19/2020
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 1a59618ea27944314465d8e08d5f0c249c3bed0b
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 811e0513c1b4a16a731e6d9bd90cbc0689ca76e0
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "77496481"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279789"
 ---
 # <a name="change-how-a-chart-is-sorted-in-a-power-bi-report"></a>Ändra hur ett diagram sorteras i en Power BI-rapport
 
@@ -22,7 +22,7 @@ ms.locfileid: "77496481"
 
 
 > [!IMPORTANT]
-> **Den här artikeln är avsedd för Power BI-användare som inte har redigeringsbehörigheter för rapporten eller datamängden, och som endast fungerar i onlineversionen av Power BI (Power BI-tjänsten). Om du är rapport*designer*, *administratör* eller *ägare*, så erbjuder kanske inte den här artikeln all information du behöver. Läs då istället [Sortera efter kolumn i Power BI Desktop](../desktop-sort-by-column.md)** .
+> **Den här artikeln är avsedd för Power BI-användare som inte har redigeringsbehörigheter för rapporten eller datamängden, och som endast fungerar i onlineversionen av Power BI (Power BI-tjänsten). Om du är rapport*designer*, *administratör* eller *ägare*, så erbjuder kanske inte den här artikeln all information du behöver. Läs då istället [Sortera efter kolumn i Power BI Desktop](../create-reports/desktop-sort-by-column.md)** .
 
 I Power BI-tjänsten kan du ändra utseendet för ett visuellt objekt genom att sortera det enligt olika datafält. Genom att ändra sorteringen för ett visuellt objekt kan du framhäva den information du vill förmedla. Oavsett om du använder numeriska data (som försäljningssiffror) eller textdata (som namn på delstater) kan du sortera dina visuella objekt som det passar dig. Power BI ger stor flexibilitet gällande sortering och du kan använda olika snabbmenyer. 
 
@@ -69,7 +69,7 @@ Det är bara den som designat rapporten som kan göra de här ändringarna åt d
 
 ![Listruta som visar kontaktuppgifter](media/end-user-change-sort/power-bi-contact.png)
 
-Om du är *designer* och har redigeringsbehörigheter till innehållet, så läs [Sortera efter kolumn i Power BI Desktop](../desktop-sort-by-column.md) om du vill veta mer om hur man uppdaterar datamängden och aktiverar den här typen av sortering.
+Om du är *designer* och har redigeringsbehörigheter till innehållet, så läs [Sortera efter kolumn i Power BI Desktop](../create-reports/desktop-sort-by-column.md) om du vill veta mer om hur man uppdaterar datamängden och aktiverar den här typen av sortering.
 
 ## <a name="next-steps"></a>Nästa steg
 Du hittar mer i [Visualiseringar i Power BI-rapporter](end-user-visualizations.md).

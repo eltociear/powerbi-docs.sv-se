@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 01/29/2020
 ms.author: v-pemyer
-ms.openlocfilehash: fdd7504823f088ed0e88657a6fcccaeb9a5a36d0
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 1ab1ed139a62b1929cb1b4da411bf7949a5d151e
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79487819"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279766"
 ---
 # <a name="tenant-admin-settings-guidance"></a>Guide till administratörsinställningar för klientorganisationer
 
@@ -21,7 +21,7 @@ Den här artikeln är avsedd för Power BI-administratörer som ansvarar för at
 
 Vi ger vägledning kring specifika klientinställningar som bidrar till att förbättra Power BI-miljön, eller som kan innebära risker för din organisation. Du bör alltid konfigurera klientorganisationen i enlighet med organisationens policyer och processer.
 
-[Klientinställningar](../service-admin-portal.md#tenant-settings) hanteras i [administrationsportalen](https://app.powerbi.com/admin-portal/tenantSettings) och kan konfigureras av [administratörer för Power BI-tjänsten](../service-admin-administering-power-bi-in-your-organization.md#administrator-roles-related-to-power-bi). Många klientinställningar kan begränsa olika funktioner till en begränsad uppsättning användare. Vi rekommenderar därför att du först bekantar dig med inställningarna så att du kan planera vilka säkerhetsgrupper du behöver. Du kanske kan använda samma säkerhetsgrupp för flera inställningar.
+[Klientinställningar](../admin/service-admin-portal.md#tenant-settings) hanteras i [administrationsportalen](https://app.powerbi.com/admin-portal/tenantSettings) och kan konfigureras av [administratörer för Power BI-tjänsten](../admin/service-admin-administering-power-bi-in-your-organization.md#administrator-roles-related-to-power-bi). Många klientinställningar kan begränsa olika funktioner till en begränsad uppsättning användare. Vi rekommenderar därför att du först bekantar dig med inställningarna så att du kan planera vilka säkerhetsgrupper du behöver. Du kanske kan använda samma säkerhetsgrupp för flera inställningar.
 
 ## <a name="improve-power-bi-experience"></a>Förbättra Power BI-miljön
 
@@ -88,7 +88,7 @@ Vi rekommenderar att du tilldelar en eller flera säkerhetsgrupper. Dessa gruppe
 
 ### <a name="publish-to-web"></a>Publicera på webben
 
-Med funktionen [Publicera på webben](../service-publish-to-web.md) kan du publicera offentliga rapporter på internet. Om den används felaktigt finns det risk att konfidentiell information görs tillgänglig live på internet.
+Med funktionen [Publicera på webben](../collaborate-share/service-publish-to-web.md) kan du publicera offentliga rapporter på internet. Om den används felaktigt finns det risk att konfidentiell information görs tillgänglig live på internet.
 
 Inställningen **Publicera på webben** är som standard aktiverad för hela organisationen, men begränsar möjligheten att skapa inbäddningskoder till administratörsanvändare. Du hittar den i gruppen **Inställningar för export och delning**.
 
@@ -109,7 +109,7 @@ Inställningen **Exportera data** är som standard aktiverad för hela organisat
 Vi rekommenderar att du tilldelar en eller flera säkerhetsgrupper. Dessa grupper kan beviljas _eller nekas_ behörighet att publicera rapporter.
 
 > [!IMPORTANT]
-> Om du inaktiverar den här inställningen begränsas även användningen av funktionerna [Analysera i Excel](../service-analyze-in-excel.md) och Power BI-tjänstens [liveanslutningar](../desktop-report-lifecycle-datasets.md#using-a-power-bi-service-live-connection-for-report-lifecycle-management).
+> Om du inaktiverar den här inställningen begränsas även användningen av funktionerna [Analysera i Excel](../collaborate-share/service-analyze-in-excel.md) och Power BI-tjänstens [liveanslutningar](../connect-data/desktop-report-lifecycle-datasets.md#using-a-power-bi-service-live-connection-for-report-lifecycle-management).
 
 ![Inställningen "Exportera data" visas.](media/admin-tenant-settings/export-data.png)
 
@@ -118,7 +118,7 @@ Vi rekommenderar att du tilldelar en eller flera säkerhetsgrupper. Dessa gruppe
 
 ### <a name="allow-external-guest-users-to-edit-and-manage-content-in-the-organization"></a>Tillåt externa gästanvändare att redigera och hantera innehåll i organisationen
 
-Externa gästanvändare kan redigera och hantera Power BI-innehåll. Läs mer i [Distribuera Power BI-innehåll till externa gästanvändare med Azure AD B2B](../service-admin-azure-ad-b2b.md).
+Externa gästanvändare kan redigera och hantera Power BI-innehåll. Läs mer i [Distribuera Power BI-innehåll till externa gästanvändare med Azure AD B2B](../admin/service-admin-azure-ad-b2b.md).
 
 Inställningen **Tillåt externa gästanvändare att redigera och hantera innehåll i organisationen** är som standard inaktiverad för hela organisationen. Du hittar den i gruppen **Inställningar för export och delning**.
 
@@ -141,7 +141,8 @@ Om du inte har för avsikt att använda utvecklar-API:er till att bädda in inne
 
 Mer information om ämnet i den här artikeln finns i följande resurser:
 
-- [Vad är Power BI-administration?](../service-admin-administering-power-bi-in-your-organization.md)
-- [Administrera Power BI i Admin-portalen](../service-admin-portal.md)
+- [Vad är Power BI-administration?](../admin/service-admin-administering-power-bi-in-your-organization.md)
+- [Administrera Power BI i Admin-portalen](../admin/service-admin-portal.md)
 - Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 - Har du förslag? [Bidra till att förbättra Power BI](https://ideas.powerbi.com)
+
