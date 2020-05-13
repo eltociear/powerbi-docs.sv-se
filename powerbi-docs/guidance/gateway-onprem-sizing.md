@@ -8,16 +8,16 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/30/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 4f289bf319bf29de8f8765d55bf3400048420af5
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: de84dd7e9021abf1198f2dc4f910afb8bd078ac6
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "76829062"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279536"
 ---
 # <a name="on-premises-data-gateway-sizing"></a>Dimensionering av lokal datagateway
 
-Den här artikeln riktar sig till Power BI-administratörer som behöver installera och hantera en [lokal datagateway](../service-gateway-onprem.md).
+Den här artikeln riktar sig till Power BI-administratörer som behöver installera och hantera en [lokal datagateway](../connect-data/service-gateway-onprem.md).
 
 Gatewayen krävs när Power BI behöver få åtkomst till data som inte är direkt tillgängliga via Internet. Den kan installeras på en lokal server eller en VM-baserad infrastruktur som en tjänst (IaaS).
 
@@ -39,8 +39,8 @@ Arbetsbelastningen _Cachelagrade data_ hämtar och transformerar källdata för 
 
 _Live-anslutningen och DirectQuery_-arbetsbelastningen fungerar huvudsakligen i genomgångsläge. Power BI-tjänsten skickar frågor och gatewayen svarar med frågeresultat. Frågeresultaten är vanligtvis små till storleken.
 
-- Mer information om Live-anslutning finns i [Datamängder i Power BI-tjänsten (externt värdbaserade modeller)](../service-datasets-understand.md#external-hosted-models).
-- Mer information om varje DirectQuery finns i artikeln [Datamängdslägen i Power BI-tjänsten (DirectQuery-läge)](../service-dataset-modes-understand.md#directquery-mode).
+- Mer information om Live-anslutning finns i [Datamängder i Power BI-tjänsten (externt värdbaserade modeller)](../connect-data/service-datasets-understand.md#external-hosted-models).
+- Mer information om varje DirectQuery finns i artikeln [Datamängdslägen i Power BI-tjänsten (DirectQuery-läge)](../connect-data/service-dataset-modes-understand.md#directquery-mode).
 
 Den här arbetsbelastningen kräver CPU-resurser för routning av frågor och frågeresultat. Vanligtvis är CPU-efterfrågan betydligt mindre än vad som krävs av cachedataarbetsbelastningen, i synnerhet när den måste transformera data för cachelagring.
 
@@ -62,13 +62,13 @@ Att fastställa rätt dimensionering för din gatewaydator kan bero på följand
   - Antal samtidiga rapportanvändare
   - Antalet visuella objekt på rapportsidor (varje visuellt objekt skickar minst en fråga)
   - Frekvensen för uppdateringar av Power BI-instrumentpanelens frågecache
-  - Antalet rapporter i realtid som använder funktionen [Automatisk siduppdatering](../desktop-automatic-page-refresh.md)
-  - Huruvida datamängder ska tvinga [säkerhet på radnivå (RLS)](../desktop-rls.md) eller inte
+  - Antalet rapporter i realtid som använder funktionen [Automatisk siduppdatering](../create-reports/desktop-automatic-page-refresh.md)
+  - Huruvida datamängder ska tvinga [säkerhet på radnivå (RLS)](../create-reports/desktop-rls.md) eller inte
 
 Vanligtvis är CPU-kapaciteten tillräcklig för live-anslutning och DirectQuery-arbetsbelastningar, medan cachedataarbetsbelastningar kräver mer CPU-kraft och minne. Båda arbetsbelastningarna beror på en lämplig anslutning till Power BI-tjänsten och datakällorna.
 
 > [!NOTE]
-> Power BI-kapaciteterna begränsar modelluppdateringsparallellitet och dataflödet för live-anslutning och DirectQuery. Det finns ingen mening med att dimensionera dina gatewayar till mer än vad Power BI-tjänsten stöder. Gränserna skiljer sig från Premium-SKU:n (och lika stora A-SKU:n). Mer information finns i [Vad är Power BI Premium? (Kapacitetsnoder)](../service-premium-what-is.md#capacity-nodes).
+> Power BI-kapaciteterna begränsar modelluppdateringsparallellitet och dataflödet för live-anslutning och DirectQuery. Det finns ingen mening med att dimensionera dina gatewayar till mer än vad Power BI-tjänsten stöder. Gränserna skiljer sig från Premium-SKU:n (och lika stora A-SKU:n). Mer information finns i [Vad är Power BI Premium? (Kapacitetsnoder)](../admin/service-premium-what-is.md#capacity-nodes).
 
 ## <a name="recommendations"></a>Rekommendationer
 
@@ -84,9 +84,9 @@ Planera för bästa möjliga anslutning mellan Power BI-tjänsten och din gatewa
 
 - Sträva efter tillförlitlighet, snabba hastigheter och låga konsekventa fördröjningar
 - Eliminera – eller minska – datorhopp mellan gatewayen och dina datakällor
-- Ta bort eventuella nätverksbegränsningar som införts av brandväggsproxyns lager. Mer information om Power BI-slutpunkter finns i [Power BI-URL:er för vitlistning](../power-bi-whitelist-urls.md).
+- Ta bort eventuella nätverksbegränsningar som införts av brandväggsproxyns lager. Mer information om Power BI-slutpunkter finns i [Power BI-URL:er för vitlistning](../admin/power-bi-whitelist-urls.md).
 - Konfigurera [Azure ExpressRoute](/azure/expressroute/expressroute-introduction) för att upprätta en privat, hanterad anslutning till Power BI
-- När det gäller datakällor på virtuella Azure-datorer, så se till att de virtuella datorerna [samplaceras med Power BI-tjänsten](../service-admin-where-is-my-tenant-located.md)
+- När det gäller datakällor på virtuella Azure-datorer, så se till att de virtuella datorerna [samplaceras med Power BI-tjänsten](../admin/service-admin-where-is-my-tenant-located.md)
 - När det gäller de live-anslutningsarbetsbelastningar till SQL Server Analysis Services (SSAS) som involverar dynamisk RLS, så säkerställ en lämplig anslutning mellan gatewaydatorn och Active Directory lokalt
 
 ### <a name="clustering"></a>Klustring
@@ -105,17 +105,17 @@ Datamängdsdesignen och dess inställningar kan påverka gatewayarbetsbelastning
 För importdatamängder:
 
 - Konfigurera mindre frekvent uppdatering av data
-- Konfigurera [stegvis uppdatering](../service-premium-incremental-refresh.md) så att mängden data som överförs minimeras
+- Konfigurera [stegvis uppdatering](../admin/service-premium-incremental-refresh.md) så att mängden data som överförs minimeras
 - Närhelst det är möjligt bör du se till att [frågedelegering](power-query-folding.md) äger rum
-- I synnerhet när det gäller stora datavolymer, eller då det finns behov av resultat med låg latens, så konvertera designen till en DirectQuery-modell eller en [sammansatt](../service-dataset-modes-understand.md#composite-mode) modell
+- I synnerhet när det gäller stora datavolymer, eller då det finns behov av resultat med låg latens, så konvertera designen till en DirectQuery-modell eller en [sammansatt](../connect-data/service-dataset-modes-understand.md#composite-mode) modell
 
 För DirectQuery-datamängder:
 
 - Optimera datakällor, modell och rapportdesign. Mer information finns i [DirectQuery-modellvägledning i Power BI Desktop](directquery-model-guidance.md)
-- Skapa [aggregeringar](../desktop-aggregations.md) om du vill cachelagra högnivåresultat och därmed minska antalet DirectQuery-begäranden
-- Begränsa intervallerna för [automatisk siduppdatering](../desktop-automatic-page-refresh.md) i rapportdesigner och kapacitetsinställningar
+- Skapa [aggregeringar](../transform-model/desktop-aggregations.md) om du vill cachelagra högnivåresultat och därmed minska antalet DirectQuery-begäranden
+- Begränsa intervallerna för [automatisk siduppdatering](../create-reports/desktop-automatic-page-refresh.md) i rapportdesigner och kapacitetsinställningar
 - I synnerhet när dynamisk RLS tillämpas, bör du begränsa uppdateringsfrekvensen för instrumentpanelens cache
-- I synnerhet när det gäller mindre datavolymer eller beständiga data, så konvertera designen till en importmodell eller en [sammansatt](../service-dataset-modes-understand.md#composite-mode) modell
+- I synnerhet när det gäller mindre datavolymer eller beständiga data, så konvertera designen till en importmodell eller en [sammansatt](../connect-data/service-dataset-modes-understand.md#composite-mode) modell
 
 För live-anslutningsdatamängder:
 
@@ -125,10 +125,10 @@ För live-anslutningsdatamängder:
 
 Mer information om ämnet i den här artikeln finns i följande resurser:
 
-- [Vägledning för distribution av en datagateway för Power BI](../service-gateway-deployment-guidance.md)
+- [Vägledning för distribution av en datagateway för Power BI](../connect-data/service-gateway-deployment-guidance.md)
 - [Konfigurera proxyinställningar för den lokala datagatewayen](/data-integration/gateway/service-gateway-proxy)
 - [Övervaka och optimera lokala datagatewayprestanda](/data-integration/gateway/service-gateway-performance)
-- [Felsöka gatewayer – Power BI](../service-gateway-onprem-tshoot.md)
+- [Felsöka gatewayer – Power BI](../connect-data/service-gateway-onprem-tshoot.md)
 - [Felsöka den lokala datagatewayen](/data-integration/gateway/service-gateway-tshoot)
 - [Vikten av frågedelegering](power-query-folding.md)
 - Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)

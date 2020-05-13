@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 12/12/2018
-ms.openlocfilehash: 7284532d95cce780f4022477faab9033adcd764a
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: c619f37ac062eec02eb379ba7cd97731254a171a
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79492616"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279398"
 ---
 # <a name="power-bi-embedded-performance-best-practices"></a>Bästa praxis för Power BI Embedded-prestanda
 
@@ -59,7 +59,7 @@ När du bäddar in flera rapporter i samma iframe ska du inte generera en ny ifr
 
 Organisationer med Power BI Premium-kapacitet eller Power BI Embedded-kapacitet kan dra nytta av cachelagring av frågor för att få snabbare rapporter som är associerade med en datamängd.
 
-[Läs mer om cachelagring av frågor i Power BI](../../power-bi-query-caching.md).
+[Läs mer om cachelagring av frågor i Power BI](../../connect-data/power-bi-query-caching.md).
 
 ## <a name="preload"></a>Förinläsning
 
@@ -99,7 +99,7 @@ Cachelagrade data renderas när de är tillgängliga, men det genereras ingen yt
 För att undersöka prestanda för rapportelementen kan du använda Prestandaanalys i Power BI Desktop.
 Med Prestandaanalys kan du se och registrera loggar som mäter hur var och en av dina rapportelement presterar.
 
-[Läs mer om Prestandaanalys](../../desktop-performance-analyzer.md).
+[Läs mer om Prestandaanalys](../../create-reports/desktop-performance-analyzer.md).
 
 > [!NOTE]
 > Kom alltid ihåg att jämföra prestanda för den inbäddade rapporten med prestanda på powerbi.com. Detta kan hjälpa dig att förstå orsaken till dina prestandaproblem

@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/11/2019
 ms.author: painbar
-ms.openlocfilehash: ff33bc2005918ba08c6098afd91a020e0cb6ba79
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 288ac6620af03c49d0a7f96e219e88d855381caf
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79435822"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279559"
 ---
 # <a name="set-data-alerts-in-the-power-bi-mobile-apps"></a>Ställa in dataaviseringar i Power BI-mobilapparna
 Gäller för:
@@ -29,7 +29,7 @@ Du kan ställa in aviseringar på paneler om du har en Power BI Pro-licens, elle
 > [!WARNING]
 > Datadrivna aviseringar ger information om dina data. Om enheten blir stulen bör du gå till Power BI-tjänsten och inaktivera alla regler för datadrivna aviseringar. 
 > 
-> Lär dig mer om att [hantera dataaviseringar i Power BI-tjänsten](../../service-set-data-alerts.md).
+> Lär dig mer om att [hantera dataaviseringar i Power BI-tjänsten](../../create-reports/service-set-data-alerts.md).
 > 
 > 
 
@@ -58,7 +58,7 @@ Du kan ställa in aviseringar på paneler om du har en Power BI Pro-licens, elle
    ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-add-another-alert-rule.png)
 
 ### <a name="manage-alerts-on-your-iphone-or-ipad"></a>Hantera aviseringar på din iPhone eller iPad
-Du kan hantera enskilda aviseringar på din mobila enhet eller [hantera alla varningar i Power BI-tjänsten](../../service-set-data-alerts.md).
+Du kan hantera enskilda aviseringar på din mobila enhet eller [hantera alla varningar i Power BI-tjänsten](../../create-reports/service-set-data-alerts.md).
 
 1. Tryck på en tal- eller mätarpanel som har en avisering på instrumentpanelen.  
    
@@ -92,7 +92,7 @@ Du kan hantera enskilda aviseringar på din mobila enhet eller [hantera alla var
 8. Tryck på **Spara**.
 
 ### <a name="manage-alerts-on-an-android-device"></a>Hantera dataaviseringar på en Android-enhet
-Du kan hantera enskilda aviseringar i Power BI-appen eller [hantera alla varningar i Power BI-tjänsten](../../service-set-data-alerts.md).
+Du kan hantera enskilda aviseringar i Power BI-appen eller [hantera alla varningar i Power BI-tjänsten](../../create-reports/service-set-data-alerts.md).
 
 1. Tryck på en kort- eller mätarpanel som har en avisering på instrumentpanelen.  
 2. Tryck på den fasta klockikonen ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-android-filled-alert-bell.png).  
@@ -131,7 +131,7 @@ Du kan hantera enskilda aviseringar i Power BI-appen eller [hantera alla varning
    ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-windows-10-add-another-alert.png)
 
 ### <a name="manage-alerts-on-a-windows-device"></a>Hantera dataaviseringar på en Windows-enhet
-Du kan hantera enskilda aviseringar i Power BI-appen eller [hantera alla varningar i Power BI-tjänsten](../../service-set-data-alerts.md).
+Du kan hantera enskilda aviseringar i Power BI-appen eller [hantera alla varningar i Power BI-tjänsten](../../create-reports/service-set-data-alerts.md).
 
 1. Tryck på en kort- eller mätarpanel som har en avisering på instrumentpanelen.  
 2. Tryck på klockikonen ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-windows-10-alert-bell-on.png).  
@@ -172,7 +172,6 @@ Datakällor är ofta inställda på att uppdateras varje dag, men vissa uppdater
 * Aviseringar fungerar inte med paneler som innehåller direktuppspelade data.
 
 ## <a name="next-steps"></a>Nästa steg
-* [Hantera aviseringar i Power BI-tjänsten](../../service-set-data-alerts.md)
+* [Hantera aviseringar i Power BI-tjänsten](../../create-reports/service-set-data-alerts.md)
 * [Power BI Mobile-meddelandecentret](mobile-apps-notification-center.md)
 * Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
-

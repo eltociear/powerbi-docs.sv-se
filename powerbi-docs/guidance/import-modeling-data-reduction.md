@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 08/05/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 5560181f2fc52a02eebce274d88dc66517181517
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 7816fd6e75c9b8925ba0d707f6a63f58af546fcf
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79205790"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279490"
 ---
 # <a name="data-reduction-techniques-for-import-modeling"></a>Metoder för dataminskning för importmodellering
 
@@ -23,8 +23,8 @@ Importmodeller läses in med data som komprimeras och optimeras och sedan sparas
 
 Trots den effektivitet som uppnås av VertiPaq-lagringsmotorn är det viktigt att du försöker minimera de data som ska läsas in i dina modeller. Detta gäller särskilt för stora modeller eller modeller som du tror kommer att växa sig stora över tid. Följande är fyra övertygande orsaker:
 
-- Större modellstorlekar stöds kanske inte av din kapacitet. Delad kapacitet kan vara värd för modeller upp till 1 GB, medan Premium-kapaciteter kan vara värd för modeller upp till 13 GB i storlek. Mer information finns i artikeln[Power BI Premium-stöd för stora datamängder](../service-premium-large-datasets.md).
-- Mindre modellstorlekar minskar konkurrensen för kapacitetsresurser, särskilt vad gäller minne. Detta gör att fler modeller kan läsas in samtidigt under längre tidsperioder, vilket resulterar i lägre borttagningsfrekvenser. Mer information finns i [Hantera Premium-kapaciteter](../service-premium-capacity-manage.md).
+- Större modellstorlekar stöds kanske inte av din kapacitet. Delad kapacitet kan vara värd för modeller upp till 1 GB, medan Premium-kapaciteter kan vara värd för modeller upp till 13 GB i storlek. Mer information finns i artikeln[Power BI Premium-stöd för stora datamängder](../admin/service-premium-what-is.md).
+- Mindre modellstorlekar minskar konkurrensen för kapacitetsresurser, särskilt vad gäller minne. Detta gör att fler modeller kan läsas in samtidigt under längre tidsperioder, vilket resulterar i lägre borttagningsfrekvenser. Mer information finns i [Hantera Premium-kapaciteter](../admin/service-premium-capacity-manage.md).
 - Mindre modeller ger snabbare datauppdatering, vilket resulterar i rapporter med lägre svarstid, högre dataflöde för datamängdsuppdatering samt och mindre belastning på källsystem och kapacitetsresurser.
 - Mindre antal tabellrader kan leda till snabbare beräkningsutvärdering, vilket kan ge bättre övergripande prestanda för frågor.
 
@@ -88,7 +88,7 @@ Power Query-frågor som avses stödja dataintegrering med andra frågor bör int
 
 ## <a name="disable-auto-datetime"></a>Inaktivera automatisk datum/tid
 
-I Power BI Desktop finns det ett alternativ som heter _Automatisk datum/tid_. När det här alternativet är aktiverat skapas en dold tabell för automatisk datum/tid för datumkolumner som hjälper rapportförfattare när de konfigurerar filter, grupperar och ökar detaljnivån för kalenderns tidsperioder. De dolda tabellerna är egentligen beräknade tabeller som ökar modellens storlek. Anvisningar för hur du använder det här alternativet finns i artikeln [Vägledning för automatisk datum/tid i Power BI Desktop](../desktop-auto-date-time.md).
+I Power BI Desktop finns det ett alternativ som heter _Automatisk datum/tid_. När det här alternativet är aktiverat skapas en dold tabell för automatisk datum/tid för datumkolumner som hjälper rapportförfattare när de konfigurerar filter, grupperar och ökar detaljnivån för kalenderns tidsperioder. De dolda tabellerna är egentligen beräknade tabeller som ökar modellens storlek. Anvisningar för hur du använder det här alternativet finns i artikeln [Vägledning för automatisk datum/tid i Power BI Desktop](../transform-model/desktop-auto-date-time.md).
 
 ## <a name="switch-to-mixed-mode"></a>Växla till blandat läge
 
@@ -96,12 +96,13 @@ I Power BI Desktop skapar en design för blandad modell en sammansatt modell. I 
 
 En effektiv teknik för att minska modellstorleken är att ange egenskapen Lagringsläge för större tabeller av faktatyp till DirectQuery. Den här designmetoden kan fungera väl tillsammans med tekniken [Gruppera efter och sammanfatta](#group-by-and-summarize), som introducerades tidigare. Till exempel kan sammanfattade försäljningsdata användas för att uppnå ”sammanfattningsrapportering” med höga prestanda. En detaljgranskningssida kan visa detaljerad försäljning för specifik (och begränsad) filterkontext, vilket visar alla försäljningsordrar inom kontexten. I det här exemplet skulle detaljgranskningssidan innehålla visuella objekt baserat på en DirectQuery-tabell för att hämta försäljningsorderdata.
 
-Sammansatta modeller medför dock många säkerhets- och prestandakonsekvenser. Mer information finns i artikeln [Använda sammansatta modeller i Power BI Desktop](../desktop-composite-models.md).
+Sammansatta modeller medför dock många säkerhets- och prestandakonsekvenser. Mer information finns i artikeln [Använda sammansatta modeller i Power BI Desktop](../transform-model/desktop-composite-models.md).
 
 ## <a name="next-steps"></a>Nästa steg
 
 Mer information om Power BI-importmodelldesign finns i följande artiklar:
 
-- [Använda sammansatta modeller i Power BI Desktop](../desktop-composite-models.md)
-- [Lagringsläge i Power BI Desktop](../desktop-storage-mode.md)
+- [Använda sammansatta modeller i Power BI Desktop](../transform-model/desktop-composite-models.md)
+- [Lagringsläge i Power BI Desktop](../transform-model/desktop-storage-mode.md)
 - Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+
