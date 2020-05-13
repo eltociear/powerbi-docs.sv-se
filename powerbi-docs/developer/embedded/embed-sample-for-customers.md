@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 12/12/2019
-ms.openlocfilehash: 4eca0a799440da57cdb37a603447ba2b0d0c99c8
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 7eef6c7522bc364bc4b66c9567189dd7aec72239
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80403809"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83349849"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-customers"></a>Självstudie: Bädda in Power BI-innehåll i ett program för dina kunder
 
@@ -31,7 +31,7 @@ I de här självstudierna får du lära dig att
 
 Du måste ha följande för att komma igång:
 
-* Ett [Power BI Pro-konto](../../service-self-service-signup-for-power-bi.md) (ett huvudkonto som är ett användarnamn och lösenord för inloggning på ditt Power BI Pro-konto), eller [tjänstens huvudnamn (appspecifik token)](embed-service-principal.md).
+* Ett [Power BI Pro-konto](../../fundamentals/service-self-service-signup-for-power-bi.md) (ett huvudkonto som är ett användarnamn och lösenord för inloggning på ditt Power BI Pro-konto), eller [tjänstens huvudnamn (appspecifik token)](embed-service-principal.md).
 * Du måste ha en egen installation för [Azure Active Directory-klient](create-an-azure-active-directory-tenant.md).
 
 Om du inte har registrerat dig för **Power BI Pro**, [registrerar du dig för en kostnadsfri utvärderingsversion](https://powerbi.microsoft.com/pricing/) innan du börjar.
@@ -58,7 +58,7 @@ Men om du fortsätter att använda tjänstens huvudnamn måste du fortsätta med
 
 ### <a name="create-a-workspace"></a>Skapa en arbetsyta
 
-Om du bäddar in rapporter, instrumentpaneler eller paneler för dina kunder måste du placera innehållet i en arbetsyta. Det finns olika typer av arbetsytor du kan konfigurera: [traditionella arbetsytor](../../service-create-workspaces.md) eller [nya arbetsytor](../../service-create-the-new-workspaces.md). Om du använder ett *huvudkonto* spelar det ingen roll vilken typ av arbetsytor du använder. Om du däremot använder *[tjänstens huvudnamn](embed-service-principal.md)* för inloggning i programmet måste du använda de nya arbetsytorna. I båda scenarierna måste både *huvudkontot* och *tjänstens huvudnamn* vara administratör för arbetsytorna som används i programmet.
+Om du bäddar in rapporter, instrumentpaneler eller paneler för dina kunder måste du placera innehållet i en arbetsyta. Det finns olika typer av arbetsytor du kan konfigurera: [traditionella arbetsytor](../../collaborate-share/service-create-workspaces.md) eller [nya arbetsytor](../../collaborate-share/service-create-the-new-workspaces.md). Om du använder ett *huvudkonto* spelar det ingen roll vilken typ av arbetsytor du använder. Om du däremot använder *[tjänstens huvudnamn](embed-service-principal.md)* för inloggning i programmet måste du använda de nya arbetsytorna. I båda scenarierna måste både *huvudkontot* och *tjänstens huvudnamn* vara administratör för arbetsytorna som används i programmet.
 
 ### <a name="create-and-publish-your-reports"></a>Skapa och publicera rapporter
 
@@ -409,7 +409,7 @@ Nu när du har utvecklat ditt program är det dags att skapa dedikerad kapacitet
 ### <a name="create-a-dedicated-capacity"></a>Skapa en dedikerad kapacitet
 
 Genom att skapa en dedikerad kapacitet kan du dra nytta av att ha en dedikerad resurs för dina kunder. Det finns två typer av kapaciteter att välja mellan:
-* **Power BI Premium** – en Office 365-prenumeration för klientorganisationer som finns i två olika SKU-serier, *EM* och *P*. När du bäddar in Power BI-innehåll kallas den här lösningen för *Power BI-inbäddning*. Mer information om prenumerationen finns i [Vad är Power BI Premium?](../../service-premium-what-is.md)
+* **Power BI Premium** – en Office 365-prenumeration för klientorganisationer som finns i två olika SKU-serier, *EM* och *P*. När du bäddar in Power BI-innehåll kallas den här lösningen för *Power BI-inbäddning*. Mer information om prenumerationen finns i [Vad är Power BI Premium?](../../admin/service-premium-what-is.md)
 * **Azure Power BI Embedded** – Du kan köpa en dedikerad kapacitet i [Microsoft Azure-portalen](https://portal.azure.com). Den här prenumerationen använder *A*-SKU:er. Mer information om hur du skapar Power BI Embedded-kapacitet finns i [Skapa Power BI Embedded-kapacitet i Azure-portalen](azure-pbie-create-capacity.md).
 > [!NOTE]
 > Med A-SKU:er kan du inte komma åt Power BI-innehåll med en kostnadsfri Power BI-licens.

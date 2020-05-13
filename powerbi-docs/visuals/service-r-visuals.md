@@ -9,18 +9,18 @@ ms.topic: conceptual
 ms.date: 11/14/2019
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: eee7b67fcfaed987170baa8cb5a0b3c8cba86350
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: a7de3dfbbd378ea96f56c1d6d37d273434f5c2f9
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82866433"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83349826"
 ---
 # <a name="create-and-use-r-visuals-in-power-bi"></a>Skapa och använd R-visualiseringar i Power BI
 
 [!INCLUDE[consumer-appliesto-nnyn](../includes/consumer-appliesto-nnyn.md)]
 
-Visuella R-objekt kan för närvarande kan bara skapas i **Power BI Desktop**, och sedan publiceras i Power BI-tjänsten. Läs mer om hur du skapar visuella R-objekt i [Skapa visuella Power BI-objekt med R](../desktop-r-visuals.md).
+Visuella R-objekt kan för närvarande kan bara skapas i **Power BI Desktop**, och sedan publiceras i Power BI-tjänsten. Läs mer om hur du skapar visuella R-objekt i [Skapa visuella Power BI-objekt med R](../create-reports/desktop-r-visuals.md).
 
 ## <a name="viewing-r-visuals-in-the-power-bi-service"></a>Visa visuella R-objekt i Power BI-tjänsten
 Power BI-tjänsten stöder visning av och interaktion med visuella objekt som skapats med R-skript. Visualiseringar som har skapats med R-skript, vanligtvis kallade *visuella R-objekt*, kan användas för avancerad datautformning och analyser som t.ex. prognoser som bygger på den omfattande analys- och visualiseringskraften i R.
@@ -34,7 +34,7 @@ Följande bild visar en Power BI-instrumentpanel med en samling visuella R-objek
 
 ![Skärmbild av Power BI-tjänstens rapportarbetsyta](media/service-r-visuals/power-bi-r-visuals.png)
 
-Visuella R-objekt skapas i en [Power BI Desktop-rapport](../desktop-get-the-desktop.md), som den rapport som visas i följande bild.
+Visuella R-objekt skapas i en [Power BI Desktop-rapport](../fundamentals/desktop-get-the-desktop.md), som den rapport som visas i följande bild.
 
 ![Desktop-rapport med två visuella objekt](media/service-r-visuals/power-bi-r-visual-desktop.png)
 
@@ -44,7 +44,7 @@ När rapporten har skapats i **Power BI Desktop** kan du publicera rapporten med
 
 Du kan hämta den här [Power BI Desktop-exempelfilen](https://download.microsoft.com/download/D/9/A/D9A65269-D1FC-49F8-8EC3-1217E3A4390F/RVisual_correlation_plot_sample%20SL.pbix) (.pbix-fil) som innehåller ett antal visuella R-objekt, så att du kan experimentera och se hur de fungerar.
 
-Visuella R-objekt som skapas i **Power BI Desktop**, och sedan publiceras i Power BI-tjänsten, funerar oftast som andra visuella objekt i Power BI-tjänsten. Du kan interagera, filtrera, dela, och fästa dem på en instrumentpanel, eller dela dem med andra. Läs mer om man delar instrumentpaneler och visuella objekt i [Dela en instrumentpanel med kollegor och andra](../service-share-dashboards.md). En skillnad från andra visuella objekt är att visuella R-objekt inte kan visa verktygstips och kan inte användas för att filtrera övrig visuella objekt.
+Visuella R-objekt som skapas i **Power BI Desktop**, och sedan publiceras i Power BI-tjänsten, funerar oftast som andra visuella objekt i Power BI-tjänsten. Du kan interagera, filtrera, dela, och fästa dem på en instrumentpanel, eller dela dem med andra. Läs mer om man delar instrumentpaneler och visuella objekt i [Dela en instrumentpanel med kollegor och andra](../collaborate-share/service-share-dashboards.md). En skillnad från andra visuella objekt är att visuella R-objekt inte kan visa verktygstips och kan inte användas för att filtrera övrig visuella objekt.
 
 Som du ser i följande bild, så visar och beter sig visuella R-objekt i Power BI-tjänsten, i såväl instrumentpaneler som rapporter, i stort som andra visuella objekt, och användarna behöver inte känna till det underliggande R-skriptet som ligger till grund för det visuella objektet.
 
@@ -69,9 +69,9 @@ Följande bild innehåller ett annat exempel med det felmeddelande som visas nä
 ![Skärmbild som visar ett körningsfel](media/service-r-visuals/r-visuals-service-5.png)
 
 ## <a name="licensing"></a>Licensiering
-Visuella R-objekt måste ha en [Power BI Pro](../service-self-service-signup-for-power-bi.md)-licens för att kunna återges i rapporter, uppdateras, filtreras och korsfiltreras. Mer information om Power BI Pro-licenser och hur de skiljer sig från kostnadsfria licenser finns i [Power BI Pro-innehåll – vad är det?](../service-admin-purchasing-power-bi-pro.md)
+Visuella R-objekt måste ha en [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md)-licens för att kunna återges i rapporter, uppdateras, filtreras och korsfiltreras. Mer information om Power BI Pro-licenser och hur de skiljer sig från kostnadsfria licenser finns i [Power BI Pro-innehåll – vad är det?](../admin/service-admin-purchasing-power-bi-pro.md)
 
-Användare av den kostnadsfria Power BI-versionen kan bara använda paneler som delats med dem i Premium-arbetsytor. Mer information finns i [Köpa Power BI Pro](../service-admin-purchasing-power-bi-pro.md).
+Användare av den kostnadsfria Power BI-versionen kan bara använda paneler som delats med dem i Premium-arbetsytor. Mer information finns i [Köpa Power BI Pro](../admin/service-admin-purchasing-power-bi-pro.md).
 
 I följande tabell beskrivs funktionerna för visuella R-objekt baserat på licensiering.
 
@@ -88,7 +88,7 @@ I följande tabell beskrivs funktionerna för visuella R-objekt baserat på lice
 ## <a name="known-limitations"></a>Kända begränsningar
 Visuella R-objekt i Power BI-tjänsten har några begränsningar:
 
-* Stödet för visuella R-objekt är begränsat till de paket som identifieras [i Läs mer om vilka R-paket som stöds](../service-r-packages-support.md). Det finns för närvarande inget stöd för anpassade paket.
+* Stödet för visuella R-objekt är begränsat till de paket som identifieras [i Läs mer om vilka R-paket som stöds](../connect-data/service-r-packages-support.md). Det finns för närvarande inget stöd för anpassade paket.
 * Storleksbegränsningar för data – data som används för ritning av visuella R-objekt är begränsat till 150 000 rader. Om du väljer mer än 150 000 rader, är det enbart de översta 150 000 raderna som används och ett meddelande visas på bilden. Indata har dessutom en gräns på 250 MB.
 * Upplösning – alla R-visualiseringar visas med 72 DPI.
 * Ritenhet – det finns endast stöd för att rita till standardenheten. 
@@ -119,7 +119,7 @@ R-paket är samlingar med R-funktioner, data och kompilerad kod som kombineras i
 
 **Power BI Desktop** kan använda vilken typ av R-paket som helst utan några begränsningar. Du kan installera R-paket för användning i **Power BI Desktop** på egen hand, t.ex. med hjälp av [RStudio IDE](https://www.rstudio.com/).
 
-Visuella R-objekt i **Power BI-tjänsten** stöds av de paket som anges i avsnittet **Paket som stöds** i [den här artikeln](../service-r-packages-support.md). Om du inte hittar det paket som du är intresserad av i listan över paket som stöds, kan du begära stöd för paketet. Mer information om hur du begär stöd finns i [R-paket i Power BI-tjänsten](../service-r-packages-support.md).
+Visuella R-objekt i **Power BI-tjänsten** stöds av de paket som anges i avsnittet **Paket som stöds** i [den här artikeln](../connect-data/service-r-packages-support.md). Om du inte hittar det paket som du är intresserad av i listan över paket som stöds, kan du begära stöd för paketet. Mer information om hur du begär stöd finns i [R-paket i Power BI-tjänsten](../connect-data/service-r-packages-support.md).
 
 ### <a name="requirements-and-limitations-of-r-packages"></a>Krav och begränsningar avseende R-paket
 Det finns några krav och begränsningar när det gäller R-paket:
@@ -130,11 +130,10 @@ Det finns några krav och begränsningar när det gäller R-paket:
   
   * När det gäller R-visualiseringar kan du installera vilket paket du vill, inklusive anpassade R-paket
   * När det gäller anpassade R-visualiseringar stöds automatisk paketinstallation endast för offentliga CRAN-paket
-* Av säkerhets- och sekretesskäl stöder vi för tillfället inte R-paket som tillhandahåller klient/server-frågor via webben (t.ex. RgoogleMaps) i tjänsten. Nätverket blockeras för sådana försök. En lista över vilka paket som stöds respektive inte stöds finns i [R-paket i Power BI-tjänsten](../service-r-packages-support.md).
+* Av säkerhets- och sekretesskäl stöder vi för tillfället inte R-paket som tillhandahåller klient/server-frågor via webben (t.ex. RgoogleMaps) i tjänsten. Nätverket blockeras för sådana försök. En lista över vilka paket som stöds respektive inte stöds finns i [R-paket i Power BI-tjänsten](../connect-data/service-r-packages-support.md).
 * Godkännandeprocessen för att inkludera ett nytt R-paket har ett beroendeträd. Vissa av de beroenden som måste installeras i tjänsten stöds inte.
 
 ### <a name="supported-packages"></a>Paket som stöds:
 En lång lista över R-paket som stöds (och en kort lista över paket som inte stöds) finns i följande artikel:
 
-* [R-paket i Power BI-tjänsten](../service-r-packages-support.md)
-
+* [R-paket i Power BI-tjänsten](../connect-data/service-r-packages-support.md)

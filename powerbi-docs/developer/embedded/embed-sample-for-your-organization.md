@@ -9,12 +9,12 @@ ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 02/04/2020
-ms.openlocfilehash: 332b9d500aa45ed25199630422e89f890a81f6a3
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 125c8ddbdda48b5c7249a6f810d33a65a5f908ee
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80621654"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83349803"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-organization"></a>Självstudie: Bädda in Power BI-innehåll i ett program för din organisation
 
@@ -31,7 +31,7 @@ I den här självstudien går du igenom följande aktiviteter:
 
 Du måste ha följande för att komma igång:
 
-* Ett [Power BI Pro-konto](../../service-self-service-signup-for-power-bi.md).
+* Ett [Power BI Pro-konto](../../fundamentals/service-self-service-signup-for-power-bi.md).
 * En [Microsoft Azure](https://azure.microsoft.com/)-prenumeration.
 * Du måste ha en egen installation för [Azure Active Directory-klient](create-an-azure-active-directory-tenant.md).
 * För inbäddning av sidnumrerade rapporter behöver du minst P1-kapacitet. Se [Hur stor Premium-kapacitet måste jag ha för sidnumrerade rapporter?](../../paginated-reports/paginated-reports-faq.md#what-size-premium-capacity-do-i-need-for-paginated-reports)
@@ -60,7 +60,7 @@ När du har skapat ditt program i Azure öppnar du det Azure, går till *Autenti
 
 ### <a name="create-a-workspace"></a>Skapa en arbetsyta
 
-Om du bäddar in rapporter, instrumentpaneler eller paneler för dina kunder måste du placera innehållet i en arbetsyta. Det finns olika typer av arbetsytor du kan konfigurera: [traditionella arbetsytor](../../service-create-workspaces.md) eller [nya arbetsytor](../../service-create-the-new-workspaces.md).
+Om du bäddar in rapporter, instrumentpaneler eller paneler för dina kunder måste du placera innehållet i en arbetsyta. Det finns olika typer av arbetsytor du kan konfigurera: [traditionella arbetsytor](../../collaborate-share/service-create-workspaces.md) eller [nya arbetsytor](../../collaborate-share/service-create-the-new-workspaces.md).
 
 ### <a name="create-and-publish-your-power-bi-reports"></a>Skapa och publicera Power BI-rapporter
 
@@ -381,9 +381,9 @@ Nu när du har utvecklat ditt program är det dags att skapa dedikerad kapacitet
 
 ### <a name="create-a-dedicated-capacity"></a>Skapa en dedikerad kapacitet
 
-Genom att skapa dedikerad kapacitet får innehållet i arbetsytan dedikerade resurser. För sidnumrerade rapporter måste du minst använda en P1-kapacitet för arbetsytan. Du kan skapa en dedikerad kapacitet med hjälp av [Power BI Premium ](../../service-premium-what-is.md).
+Genom att skapa dedikerad kapacitet får innehållet i arbetsytan dedikerade resurser. För sidnumrerade rapporter måste du minst använda en P1-kapacitet för arbetsytan. Du kan skapa en dedikerad kapacitet med hjälp av [Power BI Premium ](../../admin/service-premium-what-is.md).
 
-Följande tabell innehåller de tillgängliga Power BI Premium-SKU:erna i [Microsoft Office 365](../../service-admin-premium-purchase.md):
+Följande tabell innehåller de tillgängliga Power BI Premium-SKU:erna i [Microsoft Office 365](../../admin/service-admin-premium-purchase.md):
 
 | Kapacitetsnod | Totalt antal virtuella kärnor<br/>(serverdel + klientdel) | Serverdelens virtuella kärnor | Klientdelens virtuella kärnor | DirectQuery/begränsningar vid liveanslutning |
 | --- | --- | --- | --- | --- | --- |
@@ -418,7 +418,7 @@ När du har skapat en dedikerad kapacitet kan du tilldela arbetsytan till den de
 
 ## <a name="admin-settings"></a>Administratörsinställningar
 
-Globala eller Power BI-tjänstadministratörer kan aktivera eller inaktivera REST API:er för en klient. Power BI-administratörer kan ange den här inställningen för hela organisationen eller för enskilda säkerhetsgrupper. Den har aktiverats för hela organisationen som standard. Du kan göra dessa ändringar i [Power BI-administratörsportalen](../../service-admin-portal.md).
+Globala eller Power BI-tjänstadministratörer kan aktivera eller inaktivera REST API:er för en klient. Power BI-administratörer kan ange den här inställningen för hela organisationen eller för enskilda säkerhetsgrupper. Den har aktiverats för hela organisationen som standard. Du kan göra dessa ändringar i [Power BI-administratörsportalen](../../admin/service-admin-portal.md).
 
 ## <a name="next-steps"></a>Nästa steg
 

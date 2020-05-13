@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 03/08/2020
-ms.openlocfilehash: 90e914cf9b5c03542436750253fd959808403214
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 1aa682a71fe7469f8a9c7d5415fb843400e5d312
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82613567"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83148339"
 ---
 # <a name="publish-power-bi-visuals-to-partner-center"></a>Publicera visuella Power BI-objekt på Partnercenter
 
@@ -27,7 +27,7 @@ När du har skapat ditt visuella Power BI-objekt, vill du kanske publicera det p
 
 ## <a name="preparing-to-submit-your-power-bi-visual"></a>Förbereda att skicka ditt visuella Power BI-objekt
 
-Innan du skickar in ett visuellt Power BI-objekt till AppSource, så kontrollera att du har läst [Riktlinjer för visuella Power BI-objekt](guidelines-powerbi-visuals.md) och [testat dina anpassade visuella objekt](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/SubmissionTesting.md).
+Innan du skickar in ett visuellt Power BI-objekt till AppSource, så kontrollera att du har läst [Riktlinjer för visuella Power BI-objekt](guidelines-powerbi-visuals.md) och [testat dina anpassade visuella objekt](./submission-testing.md).
 
 När du är redo att skicka in ditt visuella Power BI-objekt, så verifiera att ditt visuella objekt uppfyller alla de krav som anges nedan.
 
@@ -99,9 +99,10 @@ Följ stegen nedan när du ska skicka in ditt visuella Power BI-objekt till Part
 
 10. Välj **Produktkonfiguration** och klicka på **Granska och publicera**.
 
+
 ## <a name="tracking-submission-status-and-usage"></a>Spåra sändningsstatus och användning
 
-* Du kan granska [verifieringsprinciperna](https://docs.microsoft.com/legal/marketplace/certification-policies#1180-power-bi-visuals).
+Du kan granska [verifieringsprinciperna](https://docs.microsoft.com/legal/marketplace/certification-policies#1180-power-bi-visuals).
 
 * Därefter kommer du att kunna visa status för ansökan i [appinstrumentpanelen](https://sellerdashboard.microsoft.com/Application/Summary/).
 
