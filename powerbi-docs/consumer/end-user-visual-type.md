@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: 6bf8ccd9048262ce05aff68819ecdb31a44ddfe2
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: acfcd863a537153e70734d5f83e89e384438885e
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79377200"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279444"
 ---
 # <a name="visual-types-in-power-bi"></a>Typer av visuella objekt i Power BI
 
@@ -152,7 +152,7 @@ Rapportdesigners kan skapa en Power App och bädda in den i en Power BI-rapport.
 ![Visuella frågor och svar](media/end-user-visual-type/power-bi-q-and-a.png)
 
 >[!TIP]
->Precis som med [Frågor och svar på instrumentpaneler](../power-bi-tutorial-q-and-a.md) så kan du använda Visuella frågor och svar till att ställa frågor om dina data på naturligt språk. 
+>Precis som med [Frågor och svar på instrumentpaneler](../create-reports/power-bi-tutorial-q-and-a.md) så kan du använda Visuella frågor och svar till att ställa frågor om dina data på naturligt språk. 
 
 Mer information finns i [Visuella frågor och svar i Power BI](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).
 
@@ -248,3 +248,4 @@ När du skriver frågor med naturligt språk i Frågor och svar för Power BI ka
 ## <a name="next-steps"></a>Nästa steg
 [Interagera med visuella objekt i rapporter, instrumentpaneler och appar](end-user-visualizations.md)    
 [Rätt visuell referens från sqlbi.com](https://www.sqlbi.com/wp-content/uploads/videotrainings/dashboarddesign/visuals-reference-may2017-A3.pdf)
+

@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: c9957b1f190f3e2cfc2aa5f082eb11df4d647b5f
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: e5f4fc253fbb7427de8adb21305f66769abcd428
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79435914"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83273096"
 ---
 # <a name="explore-tiles-in-the-power-bi-mobile-apps"></a>Utforska paneler i Power BI-mobilappar
 Gäller för:
@@ -52,7 +52,7 @@ Sedan öppnar du panelerna i fokusläge i Power BI-mobilapparna och interagerar 
    
     ![](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-tile-link.png)
    
-    Länkarna kan gå till andra Power BI-instrumentpaneler eller till en extern URL. Du kan [trycka på länken](../../service-dashboard-edit-tile.md#hyperlink) för att öppna den i Power BI-appen. Om det är en extern webbplats, frågar Power BI om du tillåter det.
+    Länkarna kan gå till andra Power BI-instrumentpaneler eller till en extern URL. Du kan [trycka på länken](../../create-reports/service-dashboard-edit-tile.md#hyperlink) för att öppna den i Power BI-appen. Om det är en extern webbplats, frågar Power BI om du tillåter det.
    
     ![](media/mobile-tiles-in-the-mobile-apps/pbi_andr_openlinkmessage.png)
    
@@ -77,7 +77,7 @@ Sedan öppnar du panelerna i fokusläge i Power BI-mobilapparna och interagerar 
    
     ![](media/mobile-tiles-in-the-mobile-apps/power-bi-android-tile-link.png)
    
-    Länkarna kan gå till andra Power BI-instrumentpaneler eller till en extern URL. Du kan [trycka på länken](../../service-dashboard-edit-tile.md#hyperlink) för att öppna den i Power BI-appen. Om det är en extern webbplats, frågar Power BI om du tillåter det.
+    Länkarna kan gå till andra Power BI-instrumentpaneler eller till en extern URL. Du kan [trycka på länken](../../create-reports/service-dashboard-edit-tile.md#hyperlink) för att öppna den i Power BI-appen. Om det är en extern webbplats, frågar Power BI om du tillåter det.
    
     ![](media/mobile-tiles-in-the-mobile-apps/pbi_andr_openlinkmessage.png)
    
@@ -98,7 +98,7 @@ Sedan öppnar du panelerna i fokusläge i Power BI-mobilapparna och interagerar 
    
     Trycka på **Öppna rapport** ![](././media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-open-report-icon.png) för att [visa den underliggande rapporten](mobile-reports-in-the-mobile-apps.md).
    
-    [Öppna länken](../../service-dashboard-edit-tile.md#hyperlink), om den har en länk. Länkarna kan gå till Power BI-instrumentpaneler eller till en extern URL.
+    [Öppna länken](../../create-reports/service-dashboard-edit-tile.md#hyperlink), om den har en länk. Länkarna kan gå till Power BI-instrumentpaneler eller till en extern URL.
 3. Tryck på **Visa panel** ![](media/mobile-tiles-in-the-mobile-apps/power-bi-windows-10-focus-mode-icon.png). Den öppnas i fokusläge, där det är enklare att visa och utforska paneldata. I det här läget kan du:
    
    Rotera cirkeldiagrammet för att visa sektorns värden överst i diagrammet.  
@@ -130,4 +130,3 @@ Sedan öppnar du panelerna i fokusläge i Power BI-mobilapparna och interagerar 
 ## <a name="next-steps"></a>Nästa steg
 * [Vad är Power BI?](../../fundamentals/power-bi-overview.md)
 * Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
-

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 03/22/2020
 ms.author: painbar
 LocalizationGroup: Share your work
-ms.openlocfilehash: 1fc33b48613335f4fba97921e3d528175eb2a47f
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: ae47c6ea0c7b9bf629f55701ba4242a195dc164d
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81267855"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83274407"
 ---
 # <a name="set-up-dataset-and-dataflow-certification-preview"></a>Konfigurera certifiering för datamängder och dataflöden (förhandsversion)
 
@@ -24,7 +24,7 @@ Som administratör för en klientorganisation i Power BI ansvarar du för att ko
 * Definiera en lista med grupper och användare som har behörighet att certifiera datamängder och dataflöden.
 * För datamängder, att ange webbadressen till organisationens certifieringspolicy för datamängder om det finns en sådan.
 
-Certifieringen av datamängder och dataflöden ingår i processen att *bekräfta* datamängder och dataflöden. Du kan läsa mer i [bekräfta datamängd](../service-datasets-promote.md) och [bekräfta dataflöde](../transform-model/service-dataflows-promote-certify.md).
+Certifieringen av datamängder och dataflöden ingår i processen att *bekräfta* datamängder och dataflöden. Du kan läsa mer i [bekräfta datamängd](../connect-data/service-datasets-promote.md) och [bekräfta dataflöde](../transform-model/service-dataflows-promote-certify.md).
 
 
 ## <a name="set-up-certification"></a>Konfigurera certifiering
@@ -35,13 +35,13 @@ Certifieringen av datamängder och dataflöden ingår i processen att *bekräfta
    ![Konfigurera datauppsättnings- och dataflödescertifiering](media/service-admin-setup-certification/service-admin-certification-setup-dialog.png)
 
 1. Ställ in reglaget på **Aktiverat**.
-1. Om du certifierar en datamängd och din organisation har en publicerad certifieringspolicy kan du ange webbadressen till den här. Den här adressen används för länken **Läs mer** i certifieringsavsnittet i dialogrutan med inställningar för [bekräfta dataflöde](../service-datasets-promote.md#request-dataset-certification) 
-1. Ange vilka användare och grupper som har behörighet att certifiera datamängder och dataflöden. Dessa auktoriserade certifierare kan använda knappen Certifiering i certifieringsavsnittet i dialogrutan med inställningar för att bekräfta [datamängd](../service-datasets-promote.md#request-dataset-certification) eller [dataflöde](../transform-model/service-dataflows-promote-certify.md#certify-a-dataflow).
+1. Om du certifierar en datamängd och din organisation har en publicerad certifieringspolicy kan du ange webbadressen till den här. Den här adressen används för länken **Läs mer** i certifieringsavsnittet i dialogrutan med inställningar för [bekräfta dataflöde](../connect-data/service-datasets-promote.md#request-dataset-certification) 
+1. Ange vilka användare och grupper som har behörighet att certifiera datamängder och dataflöden. Dessa auktoriserade certifierare kan använda knappen Certifiering i certifieringsavsnittet i dialogrutan med inställningar för att bekräfta [datamängd](../connect-data/service-datasets-promote.md#request-dataset-certification) eller [dataflöde](../transform-model/service-dataflows-promote-certify.md#certify-a-dataflow).
 1. Klicka på **Godkänn**.
 
 ## <a name="next-steps"></a>Nästa steg
-* [Höja upp datamängder](../service-datasets-promote.md)
-* [Certifiera datamängder](../service-datasets-certify.md)
+* [Höja upp datamängder](../connect-data/service-datasets-promote.md)
+* [Certifiera datamängder](../connect-data/service-datasets-certify.md)
 * [Höja upp dataflöden](../transform-model/service-dataflows-promote-certify.md#promote-a-dataflow)
 * [Certifiera dataflöden](../transform-model/service-dataflows-promote-certify.md#certify-a-dataflow)
 * Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)

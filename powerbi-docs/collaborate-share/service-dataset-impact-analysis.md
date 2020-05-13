@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 04/13/2020
 ms.author: painbar
 LocalizationGroup: ''
-ms.openlocfilehash: d6d62583d6ef6bd1fcc1630b46bdb5d97c221f16
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: edb34fc5592a6b851ae2c48690a772d75049fb48
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81525340"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83274867"
 ---
 # <a name="dataset-impact-analysis"></a>Effektanalys för datamängd
 
@@ -54,7 +54,7 @@ Användningsstatistiken gäller de senaste 30 dagarna exklusive den aktuella dag
 
 ## <a name="notify-contacts"></a>Meddela kontakter
 
-Om du har gjort en ändring i en datamängd eller överväger att göra det kan du kontakta de berörda användarna och berätta om den. När du meddelar kontakter skickas ett e-postmeddelande till [kontaktlistorna](../service-create-the-new-workspaces.md#workspace-contact-list) för de arbetsytor som påverkas. Ditt namn visas i e-postmeddelandet så att kontakterna kan hitta dig och svara i en ny e-posttråd. 
+Om du har gjort en ändring i en datamängd eller överväger att göra det kan du kontakta de berörda användarna och berätta om den. När du meddelar kontakter skickas ett e-postmeddelande till [kontaktlistorna](../collaborate-share/service-create-the-new-workspaces.md#workspace-contact-list) för de arbetsytor som påverkas. Ditt namn visas i e-postmeddelandet så att kontakterna kan hitta dig och svara i en ny e-posttråd. 
 
 1. Klicka på **Meddela kontakter** i sidofönstret för påverkansanalysen. Du ser dialogrutan Meddela kontakter.
 
@@ -89,5 +89,6 @@ När du gör en ändring i en datamängd i Power BI Desktop och sedan publicerar
 
 ## <a name="next-steps"></a>Nästa steg
 
-* [Introduktion till datamängder mellan arbetsytor (förhandsversion)](../service-datasets-across-workspaces.md)
+* [Introduktion till datamängder mellan arbetsytor (förhandsversion)](../connect-data/service-datasets-across-workspaces.md)
 * [Dataursprung](service-data-lineage.md)
+

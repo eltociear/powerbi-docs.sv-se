@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/02/2019
 ms.author: painbar
-ms.openlocfilehash: 043f27a2fb695811ac867689b4a63efdefded2e6
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: dfe5e6350d0209f836900a921aadc5347b181766
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80802059"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276178"
 ---
 # <a name="scan-a-barcode-with-your-device-from-the-power-bi-mobile-app"></a>Skanna en streckkod med din enhet från Power BI-mobilappen
 Skanna streckkoder ute i världen och gå direkt till filtrerad BI-information i Power BI-mobilappen.
@@ -25,7 +25,7 @@ Gäller för:
 |:--- |:--- |:--- |:--- |
 |iPhone-telefoner |iPad-surfplattor |Android-telefoner |Android-surfplattor |
 
-Anta att en kollega har [taggat ett streckkodsfält i en rapport i Power BI Desktop](../../desktop-mobile-barcodes.md) och delat rapporten med dig. 
+Anta att en kollega har [taggat ett streckkodsfält i en rapport i Power BI Desktop](../../transform-model/desktop-mobile-barcodes.md) och delat rapporten med dig. 
 
 ![](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-scanner.png)
 
@@ -64,13 +64,12 @@ Streckkodsvärdet du skannade finns i din modell men alla/vissa av visualisering
 ### <a name="looks-like-you-dont-have-any-reports-that-can-be-filtered-by-barcodes"></a>”Det verkar som om du inte har några rapporter som kan filtreras efter streckkoder.”
 Det innebär inte att du inte har några streckkodsaktiverade rapporter. Streckkodsskannern kan bara filtrera rapporter som har en kolumn som har markerats som **streckkod**.  
 
-Kontrollera att du eller rapportens ägare har taggat en kolumn som **streckkod** i Power BI Desktop. Läs mer om att [tagga ett streckkodsfält i Power BI Desktop](../../desktop-mobile-barcodes.md)
+Kontrollera att du eller rapportens ägare har taggat en kolumn som **streckkod** i Power BI Desktop. Läs mer om att [tagga ett streckkodsfält i Power BI Desktop](../../transform-model/desktop-mobile-barcodes.md)
 
 ### <a name="couldnt-filter-report---looks-like-this-barcode-doesnt-exist-in-the-report-data"></a>”Det gick inte att filtrera rapporten – det verkar som att den här streckkoden inte finns i rapportdata.”
 Rapporten du valt att filtrera, baseras på en datamodell som inte innehåller det här streckkodsvärdet. Till exempel ingår inte produkten mineralvatten i rapporten. Du kan skanna en annan produkt, välja en annan rapport (om det finns fler än en rapport) eller visa rapporten ofiltrerad. 
 
 ## <a name="next-steps"></a>Nästa steg
-* [Tagga ett streckkodsfält i Power BI Desktop](../../desktop-mobile-barcodes.md)
+* [Tagga ett streckkodsfält i Power BI Desktop](../../transform-model/desktop-mobile-barcodes.md)
 * [Paneler på instrumentpanelen i Power BI](../end-user-tiles.md)
 * [Instrumentpaneler i Power BI](../end-user-dashboards.md)
-

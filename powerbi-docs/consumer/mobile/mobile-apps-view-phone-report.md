@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 05/05/2020
 ms.author: painbar
-ms.openlocfilehash: eba723e4e75c7ce051921a907d2a3d0aa9536833
-ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
+ms.openlocfilehash: d3584ebc5233ccffc007118ac87ada49e906b34c
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82841789"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83273533"
 ---
 # <a name="view-power-bi-reports-optimized-for-your-phone"></a>Visa Power BI-rapporter som är optimerade för din telefon
 
@@ -48,7 +48,7 @@ Om en telefonoptimerad rapport har filter definierade, kan du använda dessa fil
 ## <a name="cross-highlight-visuals"></a>Korsmarkera visuella objekt
 Korsmarkering av visuella objekt i stående vy fungerar på samma sätt som i Power BI-tjänsten och på telefoner i liggande vy: När du väljer data i ett visuellt objekt markeras relaterade data i övriga visuella objekt på samma sida.
 
-Läs mer om [filtrering och markering i Power BI](../../power-bi-reports-filters-and-highlighting.md).
+Läs mer om [filtrering och markering i Power BI](../../create-reports/power-bi-reports-filters-and-highlighting.md).
 
 ## <a name="select-visuals"></a>Välj visuella objekt
 I rapporter på telefonen markeras det visuella objektet när du väljer det, vilket neutraliserar gester på arbetsytan.
@@ -131,8 +131,7 @@ Rapportförfattarna kan [definiera detaljgranskning](https://docs.microsoft.com/
 
 
 ## <a name="next-steps"></a>Nästa steg
-* [Skapa rapporter som är optimerade för Power BI-mobilapparna](../../desktop-create-phone-report.md)
-* [Skapa en telefonvy av en instrumentpanel i Power BI](../../service-create-dashboard-mobile-phone-view.md)
+* [Skapa rapporter som är optimerade för Power BI-mobilapparna](../../create-reports/desktop-create-phone-report.md)
+* [Skapa en telefonvy av en instrumentpanel i Power BI](../../create-reports/service-create-dashboard-mobile-phone-view.md)
 * [Skapa dynamiska visuella objekt som optimerats för alla storlekar](../../visuals/desktop-create-responsive-visuals.md)
 * Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
-

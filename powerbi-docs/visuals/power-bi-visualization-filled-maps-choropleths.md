@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/05/2019
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: ba344d66f967d502d9de8adef7defcae434fb3ef
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: ae73f2e32d34c3e1b37991358545997c4b4bb961
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82865470"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83272912"
 ---
 # <a name="create-and-use-filled-maps-choropleth-maps-in-power-bi"></a>Skapa och använda fyllda kartor (koropletkartor) i Power BI
 
@@ -92,12 +92,12 @@ I den här självstudien används [pbix-exempelfilen Sales and Marketing](https:
 7. Koropletkartan färgas i grönt och rött, där rött motsvarar de lägre sentimentsiffrorna och grönt de högre, positivare sentimenten.  Dra ett fält till knappbeskrivningsområdet för att visa ytterligare information.  Här har vi lagt till **SalesFact** > **Sentiment gap**. Om du markerar delstaten Idaho (ID) ser du att sentimentgapet är lågt, 6.
    ![koropletkarta som visar knappbeskrivningar för Idaho](media/power-bi-visualization-filled-maps-choropleths/power-bi-idaho-filled-map.png)
 
-10. [Spara rapporten](../service-report-save.md).
+10. [Spara rapporten](../create-reports/service-report-save.md).
 
 Power BI ger dig stor kontroll över hur din koropletkarta ser ut. Experimentera med kontrollerna för datafärger tills du får det utseende du vill ha. 
 
 ## <a name="highlighting-and-cross-filtering"></a>Markering och korsfiltrering
-Information om hur du använder filterfönstret finns i [Lägg till ett filter i en rapport](../power-bi-report-add-filter.md).
+Information om hur du använder filterfönstret finns i [Lägg till ett filter i en rapport](../create-reports/power-bi-report-add-filter.md).
 
 Om du markerar en plats i en koropletkarta korsfiltreras de övriga visualiseringarna på rapportsidan, och vice versa.
 
@@ -136,3 +136,5 @@ Mer hjälp med kartvisualiseringar finns i [Tips and tricks for map visualizatio
 [Formkarta](desktop-shape-map.md)
 
 [Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+
+

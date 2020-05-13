@@ -7,16 +7,18 @@ ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 01/10/2020
-ms.author: mihart
+ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 98af83c726cfd4e5b4e6744cbcfa1f7e5a69f57b
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: a874875c470cd85720570e57b7c6d7cf50dabca1
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79381455"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83274177"
 ---
 # <a name="apply-data-point-limits-and-strategies-by-visual-type"></a>Använda datapunktsbegränsningar och strategier efter visuell typ
+
+[!INCLUDE[consumer-appliesto-yyyn](../includes/consumer-appliesto-yyyn.md)]    
 
 När man renderar ett visuellt objekt i Power BI måste visualiseringen vara snabb och exakt. Det kräver underliggande algoritmer som konfigurerats för varje visuell typ. Visuella objekt i Power BI måste vara tillräckligt flexibla för att hantera datauppsättningar med olika storlekar. Vissa datauppsättningar har bara ett fåtal datapunkter, medan andra datauppsättningar har flera petabyte med datapunkter. Den här artikeln beskriver de strategier som används av Power BI för att rendera visualiseringar.
 
@@ -57,7 +59,7 @@ Dynamisk begränsningar tillämpas automatiskt när servern har följande kapaci
 ## <a name="strategies-and-data-point-limits-by-visual-type"></a>Strategier och datapunktsbegränsningar efter visuell typ
 
 ### <a name="area-chart"></a>Ytdiagram
-Se [hur radsampling fungerar](../desktop-high-density-sampling.md#how-the-new-line-sampling-algorithm-works)
+Se [hur radsampling fungerar](../create-reports/desktop-high-density-sampling.md#how-the-new-line-sampling-algorithm-works)
 
 ### <a name="barcolumn-chart"></a>Stapel-/kolumndiagram
 - I kategoriskt läge
@@ -97,10 +99,10 @@ Den fyllda kartan kan använda statistik eller dynamiska gränser. Power BI för
 - 3 500 lägsta
 
 ### <a name="line-chart"></a>Linjediagram
-Se [hur radsampling fungerar](../desktop-high-density-sampling.md#how-the-new-line-sampling-algorithm-works)
+Se [hur radsampling fungerar](../create-reports/desktop-high-density-sampling.md#how-the-new-line-sampling-algorithm-works)
 
 ### <a name="line-chart-high-density"></a>Linjediagram, hög densitet
-Se [Högdensitetssampling](../desktop-high-density-sampling.md)
+Se [Högdensitetssampling](../create-reports/desktop-high-density-sampling.md)
 
 ### <a name="map"></a>Karta 
 - Maximalt antal punkter: 3 500
@@ -109,9 +111,9 @@ Beroende på konfigurationen, kan en karta ha:
 - Plats: 3 500 översta
 - Plats, storlek: 3 500 översta
 - Aggregeringar för plats, latitud och longitud (+/-storlek): 3 500 översta
-- Latitud, longitud: se [Punktdiagram med hög densitet](desktop-high-density-scatter-charts.md)
+- Latitud, longitud: se [Punktdiagram med hög densitet](../create-reports/desktop-high-density-scatter-charts.md)
 - Latitud, longitud, storlek: 3 500 översta
-- Förklaring, latitud, longitud: se [Punktdiagram med hög densitet](desktop-high-density-scatter-charts.md)
+- Förklaring, latitud, longitud: se [Punktdiagram med hög densitet](../create-reports/desktop-high-density-scatter-charts.md)
 - Förklaring, latitud, longitud, storlek: Översta 233 förklaringarna, översta 15 latituder och longituder (kan använda statistik eller dynamiska gränser)
 - Plats, förklaring, latitud, longitud som aggregeringar (+/-storlek): Översta 233 platserna, översta 15 förklaringarna (kan använda statistik eller dynamiska gränser)
 

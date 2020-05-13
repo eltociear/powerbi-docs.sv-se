@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: 5d1a014b32bcb3ce90938659e2b6478518e8aefc
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 31a899001b5a821a38a3de01db0357c26f2e58dc
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79205514"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83149192"
 ---
 # <a name="annotate-and-share-a-tile-report-or-visual-in-power-bi-mobile-apps"></a>Kommentera och dela en panel, rapport eller ett visuellt objekt i Power BI-mobilapparna
 Gäller för:
@@ -28,7 +28,7 @@ Du kan kommentera och dela en ögonblicksbild av en panel, rapport eller visuali
 
 *En rapport med kommentarer*
 
-E-postmeddelandet med ögonblicksbilden av panelen, rapporten eller det visuella objektet inkluderar även en länk till det faktiska objektet i Power BI-tjänsten ([https://powerbi.com](https://powerbi.com)). Dina mottagare kan klicka på länken och gå direkt till den panelen, rapporten eller visualiseringen, om du och de har Power BI Pro-licenser eller om innehållet ligger på en [Premium-kapacitet](../../service-premium-what-is.md) och du redan har delat objektet med dem. 
+E-postmeddelandet med ögonblicksbilden av panelen, rapporten eller det visuella objektet inkluderar även en länk till det faktiska objektet i Power BI-tjänsten ([https://powerbi.com](https://powerbi.com)). Dina mottagare kan klicka på länken och gå direkt till den panelen, rapporten eller visualiseringen, om du och de har Power BI Pro-licenser eller om innehållet ligger på en [Premium-kapacitet](../../admin/service-premium-what-is.md) och du redan har delat objektet med dem. 
 
 Du kan [dela en panel från Power BI-mobilappen för Windows 10-enheter](mobile-windows-10-phone-app-get-started.md) också, men inte kommentera den.
 
@@ -74,4 +74,3 @@ Du kan [dela en panel från Power BI-mobilappen för Windows 10-enheter](mobile-
 ## <a name="next-steps"></a>Nästa steg
 * [Dela en instrumentpanel från Power BI-mobilappar](mobile-share-dashboard-from-the-mobile-apps.md)
 * Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
-

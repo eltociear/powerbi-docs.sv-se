@@ -8,19 +8,19 @@ ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 01/04/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 049b6ac14c6d35d68815eac32520a4eaa654ad42
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: f1608fd2511e38758b5bf05041d625cf524fff34
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78920746"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83127812"
 ---
 # <a name="when-to-use-paginated-reports-in-power-bi"></a>Använda sidnumrerade rapporter i Power BI
 
 Den här artikeln är avsedd för rapportförfattare som skapar rapporter för Power BI. Den innehåller förslag som hjälper dig att välja när du ska utveckla [sidnumrerade Power BI-rapporter](../paginated-reports/paginated-reports-report-builder-power-bi.md).
 
 > [!NOTE]
-> Du måste ha en Power BI Premium-prenumeration när du ska publicera sidnumrerade Power BI-rapporter. Rapporterna återges bara när de ligger på en arbetsyta i en dedikerad kapacitet som har [arbetsbelastningen Sidnumrerade rapporter aktiverad](../service-admin-premium-workloads.md#paginated-reports).
+> Du måste ha en Power BI Premium-prenumeration när du ska publicera sidnumrerade Power BI-rapporter. Rapporterna återges bara när de ligger på en arbetsyta i en dedikerad kapacitet som har [arbetsbelastningen Sidnumrerade rapporter aktiverad](../admin/service-admin-premium-workloads.md#paginated-reports).
 
 Sidnumrerade Power BI-rapporter är optimerade för **utskrift** eller **PDF-generering**. De gör även att du kan skapa mycket formaterade, bildpunktsperfekta layouter. Sidnumrerade rapporter passar därför särskilt bra för driftsrapporter som försäljningsfakturor.
 
@@ -36,7 +36,7 @@ Vi rekommenderar att du använder en sidnumrerad Power BI-rapport i följande fa
 
 Om du redan har [RDL-rapporter (Report Definition Language)](/sql/reporting-services/reports/report-definition-language-ssrs) i SSRS (SQL Server Reporting Services) kan du välja att utveckla om dem som [Power BI-rapporter](../consumer/end-user-reports.md), eller så kan du migrera dem som sidnumrerade rapporter till Power BI. Läs mer i [Migrera SQL Server Reporting Services-rapporter till Power BI](migrate-ssrs-reports-to-power-bi.md).
 
-När du har publicerat sidnumrerade rapporter på en Power BI-arbetsyta är de tillgängliga på samma sätt som Power BI-rapporter. Du kan enkelt distribueras dem via [Power BI-appar](../service-create-distribute-apps.md).
+När du har publicerat sidnumrerade rapporter på en Power BI-arbetsyta är de tillgängliga på samma sätt som Power BI-rapporter. Du kan enkelt distribueras dem via [Power BI-appar](../collaborate-share/service-create-distribute-apps.md).
 
 Du kan överväga att utveckla om SSRS-rapporter i stället för att migrera dem. Det gäller särskilt rapporter som är avsedda för analys. I sådana fall kan du förmodligen ge användarna en bättre upplevelse med hjälp av Power BI-rapporter.
 

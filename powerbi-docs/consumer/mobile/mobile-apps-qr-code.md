@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/02/2019
 ms.author: painbar
-ms.openlocfilehash: 55b71508380a424ba48e4d24ac6c6fc70d9a570d
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: c4d1ce3a4a15c2d79951865e03131e001260e2c9
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80802082"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276086"
 ---
 # <a name="scan-a-power-bi-qr-code-from-your-mobile-device"></a>Skanna en QR-kod i Power BI från din mobila enhet
 Gäller för:
@@ -24,7 +24,7 @@ Gäller för:
 
 Med QR-koderna i Power BI kan du ansluta vad som helst i verkligheten direkt till relaterad BI-information &#151; Ingen navigering eller sökning behövs.
 
-Anta att en kollega har [skapat en QR-kod i Power BI-tjänsten](../../service-create-qr-code-for-tile.md) för en rapport eller för en panel i en instrumentpanel, och har delat instrumentpanelen eller rapporten med dig och placerat QR-koden i en nyckelplats &#151; exempelvis i ett e-postmeddelande eller på ett specifikt objekt. 
+Anta att en kollega har [skapat en QR-kod i Power BI-tjänsten](../../create-reports/service-create-qr-code-for-tile.md) för en rapport eller för en panel i en instrumentpanel, och har delat instrumentpanelen eller rapporten med dig och placerat QR-koden i en nyckelplats &#151; exempelvis i ett e-postmeddelande eller på ett specifikt objekt. 
 
 Du kan skanna QR-koden om du vill ha omedelbar åtkomst till den relevanta panelen eller rapporten direkt från din telefon, antingen med skannern i Power BI-appen, eller någon annan skanner som har installerats på din telefon. 
 
@@ -75,8 +75,7 @@ Om en kollega inte har delat instrumentpanelen eller rapporten med dig, kan du b
 
 ## <a name="next-steps"></a>Nästa steg
 * [Ansluta till Power BI-data från verkligheten](mobile-apps-data-in-real-world-context.md) med mobilapparna
-* [Skapa en QR-kod för en panel i Power BI-tjänsten](../../service-create-qr-code-for-tile.md)
-* [Skapa en QR-kod för en rapport i Power BI-tjänsten](../../service-create-qr-code-for-report.md)
+* [Skapa en QR-kod för en panel i Power BI-tjänsten](../../create-reports/service-create-qr-code-for-tile.md)
+* [Skapa en QR-kod för en rapport i Power BI-tjänsten](../../create-reports/service-create-qr-code-for-report.md)
 * Du kan också [skanna en QR-kod med appen Power BI for Mixed Reality](mobile-mixed-reality-app.md)
 * Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
-

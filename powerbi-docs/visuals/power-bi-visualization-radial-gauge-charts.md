@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/05/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 7c6c4dbe9f17464483f5b44542ffbe04f715d4bd
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: 4274136df063258b6879057636f11ec437873ae6
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82866942"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276362"
 ---
 # <a name="radial-gauge-charts-in-power-bi"></a>Diagram med radiella mätare i Power BI
 
@@ -116,7 +116,7 @@ I steg 2 använde Power BI fältet **Värde** för att automatiskt ange min- och
 
 ### <a name="step-5-save-your-report"></a>Steg 5: Spara rapporten
 
-1. [Spara rapporten](../service-report-save.md).
+1. [Spara rapporten](../create-reports/service-report-save.md).
 
 ## <a name="use-manual-format-options-to-set-minimum-maximum-and-target-values"></a>Använd manuella formateringsalternativ för att ange värden för Minimum, Maximum och Mål nedan.
 
@@ -151,3 +151,4 @@ När du är klar med de här stegen, har du ett mätardiagram som ser ut ungefä
 * [Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
 Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
+

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/18/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 3b8985158092227fde5eb64eddabc9990d0606f6
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: a38b3aa72c37d10ce19344ebe6f3c3f286661d62
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82120285"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83275534"
 ---
 # <a name="install-and-use-apps-with-dashboards-and-reports-in-power-bi"></a>Installera och använda appar med instrumentpaneler och rapporter i Power BI
 
@@ -65,7 +65,7 @@ Du hittar även och kan installera appar i Microsoft AppSource. Det är bara app
 
 ## <a name="get-an-app-from-the-microsoft-appsource-website"></a>Hämta en app från Microsoft AppSource-webbplatsen 
 
-I det här exemplet öppnar vi en av Microsofts exempelappar. På AppSource hittar du appar för många av de tjänster som du använder för att bedriva din verksamhet.  Tjänster som Salesforce, Microsoft Dynamics, Google Analytics, GitHub, Zendesk, Marketo och många fler. Mer information finns i [Appar för tjänster du använder med Power BI](../service-connect-to-services.md). 
+I det här exemplet öppnar vi en av Microsofts exempelappar. På AppSource hittar du appar för många av de tjänster som du använder för att bedriva din verksamhet.  Tjänster som Salesforce, Microsoft Dynamics, Google Analytics, GitHub, Zendesk, Marketo och många fler. Mer information finns i [Appar för tjänster du använder med Power BI](../connect-data/service-connect-to-services.md). 
 
 1. Öppna [https://appsource.microsoft.com](https://appsource.microsoft.com) i en webbläsare och välj **Power BI-appar**.
 
@@ -142,3 +142,4 @@ Ibland kan appskapare släppa nya versioner av sina appar. Ditt sätt att skaffa
 * [Gå tillbaka till översikten över appar](end-user-apps.md)
 * [Visa en Power BI-rapport](end-user-report-open.md)
 * [Andra sätt att dela innehåll med dig](end-user-shared-with-me.md)
+

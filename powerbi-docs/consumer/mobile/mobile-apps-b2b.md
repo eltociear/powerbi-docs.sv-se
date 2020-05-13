@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/09/2019
 ms.author: painbar
-ms.openlocfilehash: c5e1e0b90f24a81940edab46633f49df41d25fdc
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 711c920f5b0b7feeeeb2297e0f93714e1e89f1a2
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "75219919"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83148189"
 ---
 # <a name="view-power-bi-content-shared-with-you-from-an-external-organization"></a>Visa Power BI-innehåll som delas med dig från en extern organisation
 
@@ -28,7 +28,7 @@ Gäller för:
 
 ## <a name="accessing-shared-content"></a>Komma åt delat innehåll
 
-**Först behöver någon från en extern organisation dela ett objekt med dig.** När någon [delar ett objekt med dig](../../service-share-dashboards.md), antingen från samma organisation eller från en extern organisation, får du ett e-postmeddelande med en länk till det delade objektet. Om du öppnar den länken på din mobila enhet öppnas Power BI-mobilappen. Om appen känner av att objektet delades från en extern organisation återansluter appen till den organisationen med din identitet. Appen läser sedan in alla objekt som delades med dig från den organisationen.
+**Först behöver någon från en extern organisation dela ett objekt med dig.** När någon [delar ett objekt med dig](../../collaborate-share/service-share-dashboards.md), antingen från samma organisation eller från en extern organisation, får du ett e-postmeddelande med en länk till det delade objektet. Om du öppnar den länken på din mobila enhet öppnas Power BI-mobilappen. Om appen känner av att objektet delades från en extern organisation återansluter appen till den organisationen med din identitet. Appen läser sedan in alla objekt som delades med dig från den organisationen.
 
 ![Power BI – öppna delat objekt från e-post ](./media/mobile-apps-b2b/mobile-b2b-open-item-email-new.png)
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/29/2019
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: c296e202dccf814fcb9e1a4c6ee0620185723248
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: 34c0287c8a4df296e41826f32de95b0c050c8d08
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82865700"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277328"
 ---
 # <a name="create-arcgis-maps-in-power-bi-desktop"></a>Skapa ArcGIS-kartor i Power BI Desktop
 
@@ -73,7 +73,7 @@ I den här självstudien använder vi Power BI Desktop och [PBIX-exempelfilen Re
    
 ## <a name="create-an-arcgis-maps-for-power-bi-map-visualization"></a>Skapa en visualisering med en ArcGIS Maps for Power BI-karta
 
-Titta på när Will skapar några olika visualiseringar och följ sedan anvisningarna nedan för att prova själv med hjälp av [.PBIX-exempelfilen Retail Analysis](../sample-datasets.md).
+Titta på när Will skapar några olika visualiseringar och följ sedan anvisningarna nedan för att prova själv med hjälp av [.PBIX-exempelfilen Retail Analysis](../create-reports/sample-datasets.md).
     
 
    > [!NOTE]
@@ -368,4 +368,5 @@ Inte ännu. [Rösta på den här idén](https://ideas.powerbi.com/forums/265200-
 [Blogginlägg som meddelar tillgängligheten för ArcGIS-kartor för Power BI](https://powerbi.microsoft.com/blog/announcing-arcgis-maps-for-power-bi-by-esri-preview/)
 
 Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+
 

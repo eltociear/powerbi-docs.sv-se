@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 03/02/2020
-ms.openlocfilehash: 83fadfe5f690a87563d20b9c6385b9a37193b9c9
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: b70db42732143d5db938ad793be8aa3997ecdd8c
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78921779"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276914"
 ---
 # <a name="create-an-embedded-data-source-for-paginated-reports-in-the-power-bi-service"></a>Skapa en inbäddad datakälla för sidnumrerade rapporter i Power BI-tjänsten
 
@@ -27,11 +27,11 @@ I den här artikeln får du lära dig att skapa och ändra en inbäddad datakäl
 - Oracle 
 - Teradata 
 
-För följande datakällor ska du använda alternativet [SQL Server Analysis Services-anslutning](../service-premium-connect-tools.md):
+För följande datakällor ska du använda alternativet [SQL Server Analysis Services-anslutning](../admin/service-premium-connect-tools.md):
 
 - Power BI Premium datasets
 
-Sidnumrerade rapporter ansluter till lokala datakällor via en [Power BI-gateway](../service-gateway-onprem.md). Du ställer in gatewayen när du har publicerat rapporten till Power BI-tjänsten.
+Sidnumrerade rapporter ansluter till lokala datakällor via en [Power BI-gateway](../connect-data/service-gateway-onprem.md). Du ställer in gatewayen när du har publicerat rapporten till Power BI-tjänsten.
 
 Mer information finns i [Rapportdata i Power BI Report Builder](report-builder-data.md).
 
@@ -93,3 +93,4 @@ Sidnumrerade rapporter som ansluter till Power BI-datamängder följer reglerna 
 
 - [Skapa en inbäddad datamängd för en sidnumrerad rapport i Power BI-tjänsten](paginated-reports-create-embedded-dataset.md)
 - [Vad är sidnumrerade rapporter i Power BI Premium?](paginated-reports-report-builder-power-bi.md)
+

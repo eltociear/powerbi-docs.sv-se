@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/05/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 189cc784577df277b0b0517253699ae06842b30c
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: afc18fa33ec1612900cecc0a34eb50851804fb62
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82866896"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276707"
 ---
 # <a name="treemaps-in-power-bi"></a>Trädkartor i Power BI
 
@@ -120,10 +120,11 @@ Om du markerar en **kategori** eller **information** i en trädkarta, korsmarker
 1. I om du väljer delen **Fashions Direct** i cirkeldiagrammet **Senaste årets försäljning per kedja**, korsfiltreras trädkartan.
    ![GIF-demonstration av funktionen korsfiltrering.](media/power-bi-visualization-treemaps/treemapnoowl.gif)
 
-1. För att hantera hur diagram korsmarkeras och korsfiltrerar varandra, se [Ändra hur visuella objekt interagerar i en Power BI-rapport](../service-reports-visual-interactions.md).
+1. För att hantera hur diagram korsmarkeras och korsfiltrerar varandra, se [Ändra hur visuella objekt interagerar i en Power BI-rapport](../create-reports/service-reports-visual-interactions.md).
 
 ## <a name="next-steps"></a>Nästa steg
 
 * [Vattenfallsdiagram i Power BI](power-bi-visualization-waterfall-charts.md)
 
 * [Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+

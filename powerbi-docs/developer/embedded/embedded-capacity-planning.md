@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 03/03/2020
-ms.openlocfilehash: f437b1d1fbfc1e905878fbb99875f1fc455e7b14
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 23018dce94efad6c63a22b6ee3a2c0919475adb5
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79493260"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83145133"
 ---
 # <a name="capacity-planning-in-power-bi-embedded-analytics"></a>Kapacitetsplanering i inbäddad Power BI-analys
 
@@ -51,7 +51,7 @@ Här följer några exempel på hur du kan använda planeringsverktyget.
 
 Följ anvisningarna nedan om du vill se effekten av det genomförda belastningstestet i måttappen. Räkna med en fördröjning på 15 minuter från den tidpunkt då testet börjar generera belastning till dess att belastningen visas i måtten.
 
-1. Expandera fliken **Datamängder** på [måttappens](../../service-admin-premium-monitor-capacity.md) landningssida.
+1. Expandera fliken **Datamängder** på [måttappens](../../admin/service-admin-premium-monitor-capacity.md) landningssida.
 2. Starta en uppdatering på begäran genom att klicka på **Uppdatera nu**. Administratörer bör.
 
     ![Kapacitetsmått för Power BI Premium](media/embedded-capacity-planning/embedded-capacity-planning.png)

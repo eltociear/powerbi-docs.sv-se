@@ -7,12 +7,12 @@ ms.subservice: report-builder
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 717627e171df6a0843453a72b54ec591a7fd5a19
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 6f77b2c4ffa7b42cf99a75b4ae88ae0aeb631499
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78923205"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276638"
 ---
 # <a name="create-a-paginated-report-based-on-a-power-bi-shared-dataset"></a>Skapa en sidnumrerad rapport baserat på en delad Power BI-datamängd
 
@@ -20,14 +20,14 @@ Du kan använda en datamängd som du skapar i Power BI Desktop som datakälla f�
 
 ![Sidnumrerad rapport från Power BI Desktop till Report Builder](media/report-builder-shared-datasets/power-bi-desktop-report-builder-arrow-26-pgs.png)
 
-Datamängden behöver inte finnas på en arbetsyta i en Premium-kapacitet, och du behöver inte vara medlem i den arbetsytan. Du behöver bara ha [behörigheten Skapa](../service-datasets-build-permissions.md) för datamängden. För att publicera en sidnumrerad rapport behöver du en Power BI Pro-licens. Du behöver även minst rollen Deltagare för en arbetsyta i en Premium-kapacitet.
+Datamängden behöver inte finnas på en arbetsyta i en Premium-kapacitet, och du behöver inte vara medlem i den arbetsytan. Du behöver bara ha [behörigheten Skapa](../connect-data/service-datasets-build-permissions.md) för datamängden. För att publicera en sidnumrerad rapport behöver du en Power BI Pro-licens. Du behöver även minst rollen Deltagare för en arbetsyta i en Premium-kapacitet.
 
 ## <a name="what-you-need"></a>Detta behöver du
 
 Här är en lista över det du behöver och inte behöver för att använda en delad datamängd i Report Builder i Power BI.
 
 - Öppna Report Builder i Power BI. [Ladda ned och installera Report Builder i Power BI](https://go.microsoft.com/fwlink/?linkid=2086513).
-- För att få åtkomst till en Power BI-datamängd behöver du ha behörigheten Skapa för datamängden. Läs om [behörigheten Skapa](../service-datasets-build-permissions.md).
+- För att få åtkomst till en Power BI-datamängd behöver du ha behörigheten Skapa för datamängden. Läs om [behörigheten Skapa](../connect-data/service-datasets-build-permissions.md).
 - Du behöver ingen Power BI Pro-licens för att skapa en sidnumrerad rapport i Report Builder. 
 - Du behöver dock en Power BI Pro-licens för att publicera den sidnumrerade rapporten. Du behöver även minst rollen Deltagare för en arbetsyta i en Premium-kapacitet. 
 - Valfritt: Om du vill följa med i den här artikeln laddar du ned filen[Retail Analysis sample .pbix](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix), öppnar den i Power BI Desktop och lägger till en tabell med många kolumner. I fönstret **Format** inaktiverar du **Totals** (Summor). Publicera den sedan på en arbetsyta i Power BI-tjänsten.
@@ -74,7 +74,7 @@ Här är stegen du behöver utföra för att hämta frågan.
 1. Öppna Power BI-rapporten (.pbix) i Power BI Desktop.
 1. Se till att du har en tabell i rapporten som innehåller alla data som du vill ha i den sidnumrerade rapporten. Tabellen måste uppfylla dessa två krav:
     - Det måste vara en platt tabell, inte en matris eller något annat visuellt objekt. Om det inte är en tabell konverterar du den till en tabell nu, går igenom följande steg för prestandaanalys och konverterar sedan tillbaka tabellen till det visuella objekt du vill använda.
-    - För dina numeriska fält måste du använda *fördefinierade mått*. De har en miniräknarsymbol bredvid sig. Läs om att [skapa mått](../desktop-measures.md). 
+    - För dina numeriska fält måste du använda *fördefinierade mått*. De har en miniräknarsymbol bredvid sig. Läs om att [skapa mått](../transform-model/desktop-measures.md). 
 
         ![Måttikon](media/report-builder-shared-datasets/power-bi-measure-icon.png)
 

@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: 78bfc17e81a3de3ce9f6f32c694de902ae0a1ef9
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 015c227fd600827e306c8b31b68992e33e6a3206
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79114829"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276201"
 ---
 # <a name="qa-virtual-analyst-in-ios-apps---power-bi"></a>Det virtuella analysverktyget Frågor och svar i iOS-appar – Power BI
 
@@ -102,7 +102,7 @@ Du kan förbättra de resultat som du och dina kunder får när de använder det
 * Följ dessa [tips för att ställa frågor i Frågor och svar](../end-user-q-and-a-tips.md) i Power BI-tjänsten eller det virtuella analysverktyget Frågor och svar på din iOS-mobilapp.
 
 ### <a name="how-to-enhance-the-dataset"></a>Så här förbättrar du datauppsättningen
-* Förbättra datauppsättningen i Power BI Desktop eller i Power BI-tjänsten så att [dina data fungerar bra med Frågor och svar och det virtuella analysverktyget Frågor och svar](../../service-prepare-data-for-q-and-a.md).
+* Förbättra datauppsättningen i Power BI Desktop eller i Power BI-tjänsten så att [dina data fungerar bra med Frågor och svar och det virtuella analysverktyget Frågor och svar](../../create-reports/service-prepare-data-for-q-and-a.md).
 
 ## <a name="next-steps"></a>Nästa steg
 * [Frågor och svar i Power BI-tjänsten](../end-user-q-and-a.md)

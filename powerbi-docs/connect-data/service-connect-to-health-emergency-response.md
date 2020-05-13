@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 04/06/2020
 ms.author: painbar
 LocalizationGroup: Connect to services
-ms.openlocfilehash: b951e96a5d81603dc91e4fc47a2b412d4140f85d
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 65f1246185584b5887d97bb9188b43e016e78e8f
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80752060"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279260"
 ---
 # <a name="connect-to-the-hospital-emergency-response-decision-support-dashboard"></a>Ansluta till Instrumentpanel för beslutsstöd för akutrespons för sjukhus
 Instrumentpanelen för beslutsstöd för akutrespons för sjukhus är rapporteringskomponenten i [Microsoft Power Platform-lösningen för akutrespons inom hälso- och sjukvården](https://powerapps.microsoft.com/blog/emergency-response-solution-a-microsoft-power-platform-solution-for-healthcare-emergency-response/). På instrumentpanelen kan akutchefer se sammanställda data i vårdsystemet så att de kan fatta rätt beslut vid rätt tidpunkt.
@@ -86,21 +86,21 @@ Notera [URL:en för din Common Data Services-miljöinstans](https://docs.microso
 
 ## <a name="schedule-report-refresh"></a>Schemalägga rapportuppdatering
 
-När datauppdateringen har slutförts [skapar du ett uppdateringsschema](../refresh-scheduled-refresh.md) för att hålla rapportdata uppdaterade.
+När datauppdateringen har slutförts [skapar du ett uppdateringsschema](../connect-data/refresh-scheduled-refresh.md) för att hålla rapportdata uppdaterade.
 
 1. I det översta rubrikfältet väljer du **Power BI**.
 
    ![Dynamiska länkar i Power BI](media/service-connect-to-health-emergency-response/service-health-emergency-response-app-powerbi-breadcrumb.png)
 
-1. I det vänstra navigeringsfönstret letar du reda på arbetsytan Instrumentpanel för beslutsstöd för akutrespons för sjukhus under **Arbetsytor** och följer anvisningarna i artikeln [Konfigurera schemalagd uppdatering](../refresh-scheduled-refresh.md).
+1. I det vänstra navigeringsfönstret letar du reda på arbetsytan Instrumentpanel för beslutsstöd för akutrespons för sjukhus under **Arbetsytor** och följer anvisningarna i artikeln [Konfigurera schemalagd uppdatering](../connect-data/refresh-scheduled-refresh.md).
 
 ## <a name="customize-and-share"></a>Anpassa och dela
 
-Mer information finns i [Anpassa och dela appen](../service-template-apps-install-distribute.md#customize-and-share-the-app). Läs [friskrivningar för rapporter](../create-reports/sample-covid-19-us.md#disclaimers) innan du publicerar eller distribuerar appen.
+Mer information finns i [Anpassa och dela appen](../connect-data/service-template-apps-install-distribute.md#customize-and-share-the-app). Läs [friskrivningar för rapporter](../create-reports/sample-covid-19-us.md#disclaimers) innan du publicerar eller distribuerar appen.
 
 ## <a name="next-steps"></a>Nästa steg
 * [Förstå Akutrespons-rapporten](https://docs.microsoft.com/powerapps/sample-apps/emergency-response/deploy-configure#view-the-power-bi-dashboard)
 * [Konfigurera och läs mer om exempelmallen Kriskommunikation i Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/sample-crisis-communication-app)
 * Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
-* [Vad är Power BI-mallappar?](../service-template-apps-overview.md)
-* [Installera och distribuera mallappar i din organisation](../service-template-apps-install-distribute.md)
+* [Vad är Power BI-mallappar?](../connect-data/service-template-apps-overview.md)
+* [Installera och distribuera mallappar i din organisation](../connect-data/service-template-apps-install-distribute.md)

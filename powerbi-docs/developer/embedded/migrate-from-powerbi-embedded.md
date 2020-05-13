@@ -7,12 +7,12 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/30/2018
-ms.openlocfilehash: a8ce4209610e229ae1da7773bd7cb10bd522f72c
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 8d4145e1fdfdd6c1e9409dc305a5767eec8ace53
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80404059"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83148527"
 ---
 # <a name="how-to-migrate-power-bi-workspace-collection-content-to-power-bi-embedded"></a>Så här migrerar du innehåll från Power BI-arbetsytesamlingar till Power BI Embedded
 
@@ -200,7 +200,7 @@ Rensa i Azure.
 [Migreringsverktyg för Power BI-arbetsytesamling](migrate-tool.md)  
 [Kodfragment för migrering av innehåll från Power BI-arbetsytesamling](migrate-code-snippets.md)  
 [Hur du bäddar in dina Power BI-instrumentpaneler, -rapporter och -paneler](embed-sample-for-your-organization.md)  
-[Power BI Premium – vad är det?](../../service-premium-what-is.md)  
+[Power BI Premium – vad är det?](../../admin/service-premium-what-is.md)  
 [JavaScript API Git Repo](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Power BI C# Git Repo](https://github.com/Microsoft/PowerBI-CSharp)  
 [JavaScript-inbäddningsexempel](https://microsoft.github.io/PowerBI-JavaScript/demo/)  

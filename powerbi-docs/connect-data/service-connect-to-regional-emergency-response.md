@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 04/24/2020
 ms.author: painbar
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 6af8568dc39544ce064643c8dfb80fa2932cf13a
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 52522c03a285290fbc01da49328516f62ddfc60a
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82149680"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279237"
 ---
 # <a name="connect-to-the-regional-emergency-response-dashboard"></a>Anslut till instrumentpanelen för regional akutrespons
 Instrumentpanelen för regional akutrespons är rapporteringskomponenten i [Microsoft Power Platforms lösning för regional akutrespons](https://docs.microsoft.com/powerapps/sample-apps/regional-emergency-response/overview). Regionala organisationsadministratörer kan visa instrumentpanelen i sin Power BI-klientorganisation, så att de snabbt kan visa viktiga data och mått som kan hjälpa dem att fatta effektiva beslut.
@@ -82,21 +82,21 @@ Notera [URL:en för din Common Data Services-miljöinstans](https://docs.microso
 
 ## <a name="schedule-report-refresh"></a>Schemalägga rapportuppdatering
 
-När datauppdateringen har slutförts [skapar du ett uppdateringsschema](../refresh-scheduled-refresh.md) för att hålla rapportdata uppdaterade.
+När datauppdateringen har slutförts [skapar du ett uppdateringsschema](../connect-data/refresh-scheduled-refresh.md) för att hålla rapportdata uppdaterade.
 
 1. I det översta rubrikfältet väljer du **Power BI**.
 
    ![Dynamiska länkar i Power BI](media/service-connect-to-regional-emergency-response/service-regional-emergency-response-app-powerbi-breadcrumb.png)
 
-1. I det vänstra navigeringsfönstret letar du reda på arbetsytan Instrumentpanel för regional akutrespons under **Arbetsytor** och följer anvisningarna i artikeln [Konfigurera schemalagd uppdatering](../refresh-scheduled-refresh.md).
+1. I det vänstra navigeringsfönstret letar du reda på arbetsytan Instrumentpanel för regional akutrespons under **Arbetsytor** och följer anvisningarna i artikeln [Konfigurera schemalagd uppdatering](../connect-data/refresh-scheduled-refresh.md).
 
 ## <a name="customize-and-share"></a>Anpassa och dela
 
-Mer information finns i [Anpassa och dela appen](../service-template-apps-install-distribute.md#customize-and-share-the-app). Läs [friskrivningar för rapporter](https://docs.microsoft.com/powerapps/sample-apps/regional-emergency-response/overview#disclaimer) innan du publicerar eller distribuerar appen.
+Mer information finns i [Anpassa och dela appen](../connect-data/service-template-apps-install-distribute.md#customize-and-share-the-app). Läs [friskrivningar för rapporter](https://docs.microsoft.com/powerapps/sample-apps/regional-emergency-response/overview#disclaimer) innan du publicerar eller distribuerar appen.
 
 ## <a name="next-steps"></a>Nästa steg
 * [Förstå Instrumentpanelen för regional akutrespons](https://docs.microsoft.com/powerapps/sample-apps/regional-emergency-response/portals-admin-reporting#get-insights)
 * [Konfigurera och läs mer om exempelmallen Kriskommunikation i Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/sample-crisis-communication-app)
 * Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
-* [Vad är Power BI-mallappar?](../service-template-apps-overview.md)
-* [Installera och distribuera mallappar i din organisation](../service-template-apps-install-distribute.md)
+* [Vad är Power BI-mallappar?](../connect-data/service-template-apps-overview.md)
+* [Installera och distribuera mallappar i din organisation](../connect-data/service-template-apps-install-distribute.md)

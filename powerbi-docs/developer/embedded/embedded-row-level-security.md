@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/10/2019
-ms.openlocfilehash: 19abcd84809f0bf8d3560fd8734d30fcf31b9ecb
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 71f204058bfa94c61df8299d2a2c7c9063caad5d
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80550957"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277029"
 ---
 # <a name="row-level-security-with-power-bi-embedded"></a>Säkerhet på radnivå med Power BI Embedded
 
@@ -21,7 +21,7 @@ ms.locfileid: "80550957"
 
 Om du bäddar in för användare som inte använder Power BI (appen äger data), vilket vanligtvis är ett ISV-scenario, är det här rätt artikel för dig. Konfigurera en inbäddningstoken för användaren och rollen.
 
-Om du bäddar in till Power BI-användare (användare äger data) i din organisation fungerar RLS på samma sätt som i Power BI-tjänsten. Du behöver inte göra något mer i din app. Mer information finns i [säkerhet på radnivå (RLS) med Power BI](../../service-admin-rls.md).
+Om du bäddar in till Power BI-användare (användare äger data) i din organisation fungerar RLS på samma sätt som i Power BI-tjänsten. Du behöver inte göra något mer i din app. Mer information finns i [säkerhet på radnivå (RLS) med Power BI](../../admin/service-admin-rls.md).
 
 ![Objekt med säkerhet på radnivå.](media/embedded-row-level-security/powerbi-embedded-rls-components.png)
 
@@ -29,7 +29,7 @@ För att du ska kunna använda RLS är det viktigt att du förstår tre huvudsak
 
 **Användare** – slutanvändare som visar artefakten (instrumentpanel, panel, rapport eller datauppsättning). Användare identifieras av username-egenskapen i en inbäddningstoken i Power BI Embedded.
 
-**Roller** – användare tillhör roller. En roll är en container för regler och har namn som *försäljningschef* eller *säljare*. Du kan skapa roller i Power BI Desktop. Mer information finns i [Säkerhet på radnivå (RLS) med Power BI Desktop](../../desktop-rls.md).
+**Roller** – användare tillhör roller. En roll är en container för regler och har namn som *försäljningschef* eller *säljare*. Du kan skapa roller i Power BI Desktop. Mer information finns i [Säkerhet på radnivå (RLS) med Power BI Desktop](../../create-reports/desktop-rls.md).
 
 **Regler** – roller har regler och dessa regler är de faktiska filter som ska tillämpas på data. Reglerna kan vara enkla som ”Land = USA” eller något mycket mer dynamiskt.
 I resten av den här artikeln finns det ett exempel på hur RLS skapas och används i en inbäddad app. Vårt exempel använder PBIX-filen [Exempel för detaljhandelanalys](https://go.microsoft.com/fwlink/?LinkID=780547).
@@ -135,7 +135,7 @@ Den identitet som har angetts för egenskapen användarnamn måste vara en Windo
 
 ### <a name="on-premises-data-gateway-configuration"></a>Konfiguration för lokal datagateway
 
-En [lokal datagateway](../../service-gateway-onprem.md) används när du arbetar med live-anslutningar till Analysis Services. När du genererar en inbäddningstoken med en identitet som anges måste huvudkontot visas som en gatewayadministratör. Om masterkontot inte listas kommer säkerheten på radnivå inte att tillämpas på dataegenskapen. En icke-administratörer på gatewayen kan ange roller, men måste ange ett eget användarnamn för den effektiva identiteten.
+En [lokal datagateway](../../connect-data/service-gateway-onprem.md) används när du arbetar med live-anslutningar till Analysis Services. När du genererar en inbäddningstoken med en identitet som anges måste huvudkontot visas som en gatewayadministratör. Om masterkontot inte listas kommer säkerheten på radnivå inte att tillämpas på dataegenskapen. En icke-administratörer på gatewayen kan ange roller, men måste ange ett eget användarnamn för den effektiva identiteten.
 
 ### <a name="use-of-roles"></a>Användning av roller
 
@@ -235,9 +235,9 @@ Här följer stegen för att börja konfigurera funktionen CustomData() med appe
 
 När du bestämmer dig för att filtrera dina data i en rapport kan du använda **säkerhet på radnivå (RLS)** eller **JavaScript-filter**.
 
-[Säkerhet på radnivå](../../service-admin-rls.md) är en funktion som filtrerar data på datamodellsnivå. Serverdelens datakälla styr RLS-inställningarna. Baserat på datamodellen ställer genereringen av inbäddningstoken i användarnamn och roller för sessionen. Det kan inte åsidosättas, tas bort eller styras av koden på klientsidan och det är därför det anses vara säker. Vi rekommenderar att du använder RLS för att filtrera data på ett säkert sätt. Du kan filtrera data med RLS med något av alternativen nedan.
+[Säkerhet på radnivå](../../admin/service-admin-rls.md) är en funktion som filtrerar data på datamodellsnivå. Serverdelens datakälla styr RLS-inställningarna. Baserat på datamodellen ställer genereringen av inbäddningstoken i användarnamn och roller för sessionen. Det kan inte åsidosättas, tas bort eller styras av koden på klientsidan och det är därför det anses vara säker. Vi rekommenderar att du använder RLS för att filtrera data på ett säkert sätt. Du kan filtrera data med RLS med något av alternativen nedan.
 
-* [Konfigurera roller i en Power BI-rapport](../../desktop-rls.md).
+* [Konfigurera roller i en Power BI-rapport](../../create-reports/desktop-rls.md).
 * Konfigurera roller på datakällnivå (enbart Analysis Services live-anslutning).
 * Via programmering med en [inbäddningstoken](https://docs.microsoft.com/rest/api/power-bi/embedtoken/datasets_generatetokeningroup) med `EffectiveIdentity`. När du använder en inbäddningstoken passerar det faktiska filtret inbäddningstoken för en viss session.
 

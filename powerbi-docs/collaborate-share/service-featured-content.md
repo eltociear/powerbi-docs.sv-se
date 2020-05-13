@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/16/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 01e41520ec4cc391e241cd53a03c3e71d15379d7
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 4d8b3d48828840920b6bbd792c9fe9da40308b39
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79496273"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83142295"
 ---
 # <a name="feature-content-on-colleagues-power-bi-home-page"></a>Visa innehåll på kollegors Power BI-startsida
 
@@ -24,9 +24,9 @@ Du kan visa instrumentpaneler, rapporter och appar så att de visas i avsnittet 
 
 ## <a name="who-can-feature-content"></a>Vem kan visa innehåll
 
-Det är upp till administratören för Power BI-klientorganisationen att aktivera möjligheten att lyfta fram aktuellt innehåll i klientorganisationen. Administratören väljer också vem som kan visa aktuellt innehåll. Mer information finns i artikeln [Administratörsportalen](../service-admin-portal.md#featured-content).
+Det är upp till administratören för Power BI-klientorganisationen att aktivera möjligheten att lyfta fram aktuellt innehåll i klientorganisationen. Administratören väljer också vem som kan visa aktuellt innehåll. Mer information finns i artikeln [Administratörsportalen](../admin/service-admin-portal.md#featured-content).
 
-Om du är en i den utvalda gruppen i din organisation med detta ansvar måste du ha en Power BI Pro-licens. För att kunna visa instrumentpaneler och rapporter behöver du ha rollen administratör, medlem eller deltagare i arbetsytan. För att kunna visa själva appen måste du ha rollen administratör eller medlem i arbetsytan. Mer information finns i [Roller i de nya arbetsytorna](../service-new-workspaces.md#roles-in-the-new-workspaces).
+Om du är en i den utvalda gruppen i din organisation med detta ansvar måste du ha en Power BI Pro-licens. För att kunna visa instrumentpaneler och rapporter behöver du ha rollen administratör, medlem eller deltagare i arbetsytan. För att kunna visa själva appen måste du ha rollen administratör eller medlem i arbetsytan. Mer information finns i [Roller i de nya arbetsytorna](service-new-workspaces.md#roles-in-the-new-workspaces).
 
 ## <a name="who-sees-featured-content"></a>Vilka kan se aktuellt innehåll
 
@@ -58,7 +58,6 @@ Nu kan alla som har åtkomst till appen också se den i avsnittet **Aktuella** p
 
 ## <a name="next-steps"></a>Nästa steg
 
-* [Hur ska jag samarbeta kring och dela instrumentpaneler och rapporter?](../service-how-to-collaborate-distribute-dashboards-reports.md)
-* [Hantera aktuellt innehåll på administratörsportalen](../service-admin-portal.md#manage-featured-content)
+* [Hur ska jag samarbeta kring och dela instrumentpaneler och rapporter?](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md)
+* [Hantera aktuellt innehåll på administratörsportalen](../admin/service-admin-portal.md#manage-featured-content)
 * Har du några frågor? [Prova Power BI Community](https://community.powerbi.com/)
-

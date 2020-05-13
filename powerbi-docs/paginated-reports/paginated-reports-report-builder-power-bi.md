@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
 ms.date: 11/27/2019
-ms.openlocfilehash: 924c2850efe1e9e09a8f6f350be616695ab061ea
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 55e74809b47b2906edac9a06f701aa30b3498f80
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80621560"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83144734"
 ---
 # <a name="what-are-paginated-reports-in-power-bi-premium"></a>Vad är sidnumrerade rapporter i Power BI Premium?
 
@@ -23,7 +23,7 @@ Sidnumrerade rapporter kan ha många sidor. Den här rapporten har till exempel 
 
 ![Sidnumrerad](media/paginated-reports-report-builder-power-bi/power-bi-paginated-wwi-report-page.png)
 
-Du kan förhandsgranska rapporten i Report Builder och sedan publicera den i Power BI-tjänsten `https://app.powerbi.com`. Du måste ha en Power BI Pro-licens för att kunna publicera en rapport i tjänsten. Du kan publicera och dela sidnumrerade rapporter på Min arbetsyta eller på arbetsytor så länge arbetsytan ligger i en Power BI Premium-kapacitet. Dessutom måste en Power BI-administratör aktivera sidnumrerade rapporter i [avsnittet Premium-kapaciteter](../service-admin-premium-workloads.md#paginated-reports) i Power BI-administratörsportalen. 
+Du kan förhandsgranska rapporten i Report Builder och sedan publicera den i Power BI-tjänsten `https://app.powerbi.com`. Du måste ha en Power BI Pro-licens för att kunna publicera en rapport i tjänsten. Du kan publicera och dela sidnumrerade rapporter på Min arbetsyta eller på arbetsytor så länge arbetsytan ligger i en Power BI Premium-kapacitet. Dessutom måste en Power BI-administratör aktivera sidnumrerade rapporter i [avsnittet Premium-kapaciteter](../admin/service-admin-premium-workloads.md#paginated-reports) i Power BI-administratörsportalen. 
 
 ## <a name="create-reports-in-power-bi-report-builder"></a>Skapa rapporter i Power BI Report Builder
 

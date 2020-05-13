@@ -6,17 +6,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/4/2019
+ms.date: 12/4/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: f1598aabee45359b312d39f836cede8ca4198bb2
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: b2c587be792e0ad6318dd066cb239949b30cc9e5
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "75758633"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276569"
 ---
 # <a name="display-a-visualizations-underlying-data"></a>Visa underliggande data för en visualisering
+
+[!INCLUDE[consumer-appliesto-yyyn](../includes/consumer-appliesto-nyyn.md)]    
 
 ## <a name="show-data"></a>Visa data
 En Power BI-visualisering konstrueras med data från dina datauppsättningar. Om du är intresserad av att se vad som pågår i bakgrunden, Power BI kan *visa* de data som används för att skapa visualiseringen. När du väljer **Visa data** visar Power BI dessa data under (eller bredvid) visualiseringen.
@@ -24,7 +26,7 @@ En Power BI-visualisering konstrueras med data från dina datauppsättningar. Om
 Du kan också exportera de data som används för att skapa visualiseringen som en .xlsx- eller .csv-fil och visa dem i Excel. Mer information finns i [Exportera data från visualiseringar i Power BI](power-bi-visualization-export-data.md).
 
 > [!NOTE]
-> *Visa Data* och *Exportera data* finns både i Power BI-tjänsten och Power BI Desktop. Dock ger Power BI Desktop ett ytterligare lager med information: [*Visa poster* visar de faktiska raderna i datauppsättningen](../desktop-see-data-see-records.md).
+> *Visa Data* och *Exportera data* finns både i Power BI-tjänsten och Power BI Desktop. Dock ger Power BI Desktop ett ytterligare lager med information: [*Visa poster* visar de faktiska raderna i datauppsättningen](../create-reports/desktop-see-data-see-records.md).
 > 
 > 
 
@@ -75,4 +77,5 @@ Du kan också fokusera på en datapost i en visualisering och gå in på detaljn
 [Exportera data från Power BI-visualiseringar](power-bi-visualization-export-data.md)    
 
 Fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
+
 

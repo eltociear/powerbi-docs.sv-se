@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/05/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 0f430747187729cbb939b67795ff0507770bb0f1
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: 9f7cd6c277a02ce4e44db40930184cce955e5948
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82867034"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83274200"
 ---
 # <a name="line-charts-in-power-bi"></a>Linjediagram i Power BI
 
@@ -32,7 +32,7 @@ De här anvisningarna använder appen Exempel på försäljning och marknadsför
 > [!NOTE]
 > För att dela en rapport med en Power BI-kollega krävs att du både har individuella Power BI Pro-licenser eller att rapporten har sparats med Premium-kapacitet.
 
-1. Börja med en tom rapportsida. Om du inte använder Power BI-tjänsten, se till att du öppnar rapporten i [redigeringsvyn](../service-interact-with-a-report-in-editing-view.md).
+1. Börja med en tom rapportsida. Om du inte använder Power BI-tjänsten, se till att du öppnar rapporten i [redigeringsvyn](../create-reports/service-interact-with-a-report-in-editing-view.md).
 
 2. I fönstret Fält väljer du **SalesFact** \> **Totalt antal enheter** och sedan **Datum** > **Månad**.  Power BI skapar ett kolumndiagram på rapportarbetsytan.
 
@@ -74,7 +74,7 @@ Använd ett kombinationsdiagram för att visa mycket divergerande värden i ett 
    ![mycket divergerande värden](media/power-bi-line-charts/power-bi-dual-axes.png)
 
 ## <a name="highlighting-and-cross-filtering"></a>Markering och korsfiltrering
-Information om hur du använder filterfönstret finns i [Lägg till ett filter i en rapport](../power-bi-report-add-filter.md).
+Information om hur du använder filterfönstret finns i [Lägg till ett filter i en rapport](../create-reports/power-bi-report-add-filter.md).
 
 Om du väljer en datapunkt i ett kombinationsdiagram så korsmarkeras och korsfiltreras de övriga visualiseringarna på rapportsidan och vice versa. Om du vill följa med öppnar du fliken **Marknadsandel**.  
 
@@ -86,7 +86,7 @@ I det här exemplet har vi valt en datapunkt som omfattar juli 2014, % enheter m
 
 Observera hur kolumndiagrammet är korsmarkerat och mätaren är korsfiltrerad.
 
-För att hantera hur diagram korsmarkeras och korsfiltrerar varandra, se [Visualiseringsinteraktioner i en Power BI-rapport](../service-reports-visual-interactions.md)
+För att hantera hur diagram korsmarkeras och korsfiltrerar varandra, se [Visualiseringsinteraktioner i en Power BI-rapport](../create-reports/service-reports-visual-interactions.md)
 
 ## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
 * Ett linjediagram kan inte ha dubbla Y-axlar.  Du måste använda ett kombinationsdiagram i stället.
@@ -95,5 +95,8 @@ För att hantera hur diagram korsmarkeras och korsfiltrerar varandra, se [Visual
 ## <a name="next-steps"></a>Nästa steg
 
 [Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+
+
+
 
 

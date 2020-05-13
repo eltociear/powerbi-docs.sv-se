@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/21/2019
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 33c07df0cd8c0e00489f344e721164ed9252fcaf
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: 9a9248f68f85f6dec2a70842c0931d7dd448d690
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82866919"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276845"
 ---
 # <a name="scatter-charts-bubble-charts-and-dot-plot-charts-in-power-bi"></a>Punktdiagram, bubbeldiagram och punktritningsdiagram i Power BI
 
@@ -177,13 +177,13 @@ Om du inte har detta i dina data, skapa ett fält som tillsammans sammanfogar X-
 
 ![Skärmbild av ett punktdiagram med TempTime tillagt i området Information.](media/power-bi-visualization-scatter/pbi-scatter-tshoot2.png)
 
-Skapa ett nytt fält genom att [använda Power BI Desktop frågeredigeraren för att lägga till en indexkolumn](../desktop-add-custom-column.md) i din datauppsättning. Lägg sedan till den här kolumnen till området **Information** i din visualisering.
+Skapa ett nytt fält genom att [använda Power BI Desktop frågeredigeraren för att lägga till en indexkolumn](../create-reports/desktop-add-custom-column.md) i din datauppsättning. Lägg sedan till den här kolumnen till området **Information** i din visualisering.
 
 ## <a name="next-steps"></a>Nästa steg
 
 Följande artiklar kan också vara av intresse för dig:
 
-* [Högdensitetssampling i Power BI-punktdiagram](desktop-high-density-scatter-charts.md)
+* [Högdensitetssampling i Power BI-punktdiagram](../create-reports/desktop-high-density-scatter-charts.md)
 * [Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 * [Tips för att sortera och distribuera datapunkter i Power BI-rapporter](../guidance/report-tips-sort-distribute-data-plots.md)
 

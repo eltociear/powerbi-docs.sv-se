@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: v-pemyer
-ms.openlocfilehash: a2e53d27a8ca49e9fc318fd25cc20acbb7bacc38
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 4172fc2ff4a1da409a1f5586e8b3579e4745fe99
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80751619"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83273464"
 ---
 # <a name="understand-star-schema-and-the-importance-for-power-bi"></a>Förstå star-schemat och dess betydelse för Power BI
 
@@ -42,7 +42,7 @@ Tänk på att varje visuellt objekt i en Power BI-rapport genererar en fråga so
 - Dimensionstabeller stöder _filtrering_ och _gruppering_
 - Faktatabeller stöder _sammanfattning_
 
-Det finns ingen tabellegenskap som modellerare har angett för att konfigurera tabelltypen som dimension eller faktum. Det beror i själva verket på modellrelationerna. En modellrelation upprättar en filterspridningsväg mellan två tabeller, och det är egenskapen **Kardinalitet** för den relationen som avgör tabelltypen. En vanlig relationskardinalitet är _en-till-många_ eller inversen _många-till-en_. ”En”-sidan är alltid en tabell av dimensionstyp medan ”många”-sidan alltid är en tabell av faktatyp. Mer information om många relationer finns i [Modellrelationer i Power BI Desktop](../desktop-relationships-understand.md).
+Det finns ingen tabellegenskap som modellerare har angett för att konfigurera tabelltypen som dimension eller faktum. Det beror i själva verket på modellrelationerna. En modellrelation upprättar en filterspridningsväg mellan två tabeller, och det är egenskapen **Kardinalitet** för den relationen som avgör tabelltypen. En vanlig relationskardinalitet är _en-till-många_ eller inversen _många-till-en_. ”En”-sidan är alltid en tabell av dimensionstyp medan ”många”-sidan alltid är en tabell av faktatyp. Mer information om många relationer finns i [Modellrelationer i Power BI Desktop](../transform-model/desktop-relationships-understand.md).
 
 ![Begreppsmässigt star-schema](media/star-schema/star-schema-example2.png)
 
@@ -209,10 +209,12 @@ Den här många-till-många-designmetoden är väl dokumenterad och kan uppnås 
 Mer information om star-schemadesign eller Power BI-modelldesign finns i följande artiklar:
 
 - [Wikipedia-artikel om dimensionsmodellering](https://go.microsoft.com/fwlink/p/?linkid=246459)
-- [Skapa och hantera relationer i Power BI Desktop](../desktop-create-and-manage-relationships.md)
+- [Skapa och hantera relationer i Power BI Desktop](../transform-model/desktop-create-and-manage-relationships.md)
 - [Vägledning för en-till-en-relation](relationships-one-to-one.md)
 - [Vägledning för att lägga till en många-till-många-relationer](relationships-many-to-many.md)
 - [Vägledning för dubbelriktad relation](relationships-bidirectional-filtering.md)
 - [Vägledning för aktiva kontra inaktiva relationer](relationships-active-inactive.md)
 - Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 - Har du förslag? [Bidra till att förbättra Power BI](https://ideas.powerbi.com/)
+
+

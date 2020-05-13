@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/22/2020
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: 97e7bf44233e0986459be9edf719cd21cd3d7a01
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: d7fc915c9c21460670bf86f308b756196886983a
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81637588"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83132044"
 ---
 # <a name="data-protection-in-power-bi-preview"></a>Dataskydd i Power BI (förhandsversion)
 
@@ -113,6 +113,6 @@ I den här listan anges några begränsningar för känslighetsetiketter i Power
 I den här artikeln ges en översikt över dataskyddet i Power BI. De här artiklarna innehåller mer information om dataskydd i Power BI. 
 
 * [Aktivera känslighetsetiketter för data i Power BI](service-security-enable-data-sensitivity-labels.md)
-* [Använda känslighetsetiketter för data i Power BI](../designer/service-security-apply-data-sensitivity-labels.md)
+* [Använda känslighetsetiketter för data i Power BI](../collaborate-share/service-security-apply-data-sensitivity-labels.md)
 * [Använda Microsoft Cloud App Security-kontroller i Power BI](service-security-using-microsoft-cloud-app-security-controls.md)
 * [Dataskyddsmåttrapport](service-security-data-protection-metrics-report.md)

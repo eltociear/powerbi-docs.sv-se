@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/05/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b60a4c14873427bd06d2b6abce48c9d3d3008859
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: 6eee86423fdfc1e1a9338aa4fecfd5eae0c0d111
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82865263"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83272866"
 ---
 # <a name="create-and-use-funnel-charts"></a>Skapa och använda trattdiagram
 
@@ -94,20 +94,23 @@ Nu kan du skapa ett eget trattdiagram som visar antalet möjligheter i varje fö
      
      ![information om förslagsfält](media/power-bi-visualization-funnel-charts/funnelhover-new.png)
 
-6. [Spara rapporten](../service-report-save.md).
+6. [Spara rapporten](../create-reports/service-report-save.md).
 
 ## <a name="highlighting-and-cross-filtering"></a>Markering och korsfiltrering
-Information om hur du använder filterfönstret finns i [Lägg till ett filter i en rapport](../power-bi-report-add-filter.md).
+Information om hur du använder filterfönstret finns i [Lägg till ett filter i en rapport](../create-reports/power-bi-report-add-filter.md).
 
 Om du markerar ett fält i trattdiagrammet korsfiltreras de övriga visualiseringarna på rapportsidan, och vice versa. Följ med och lägg till ytterligare några visuella objekt på rapportsidan som innehåller trattdiagrammet.
 
 1. Välj fältet **Förslag** i trattdiagrammet. Detta korsmarkerar de övriga visualiseringarna på sidan. Använd CTRL för att välja flera.
    
    ![kort video som visar visuella interaktioner](media/power-bi-visualization-funnel-charts/funnelchartnoowl.gif)
-2. För att hantera hur diagram korsmarkeras och korsfiltrerar varandra, se [Visualiseringsinteraktioner i en Power BI-rapport](../service-reports-visual-interactions.md)
+2. För att hantera hur diagram korsmarkeras och korsfiltrerar varandra, se [Visualiseringsinteraktioner i en Power BI-rapport](../create-reports/service-reports-visual-interactions.md)
 
 ## <a name="next-steps"></a>Nästa steg
 
 [Mätare i Power BI](power-bi-visualization-radial-gauge-charts.md)
 
 [Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+
+
+

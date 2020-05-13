@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 04/29/2020
-ms.openlocfilehash: 65d1401a66f8e670df1af3097f0e99fb6b647022
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 784e3fd3883adb9fc5b773cc730b992135d7ef8b
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82615713"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83272820"
 ---
 # <a name="subreports-in-power-bi-paginated-reports"></a>Underrapporter i sidnumrerade Power BI-rapporter
 
@@ -74,7 +74,7 @@ Nu när du har sparat båda rapporterna till samma Premium-arbetsyta kan du läg
   
  Du kan placera en underrapport i huvuddelen av rapporten eller i ett dataområde. Om du placerar en underrapport i ett dataområde upprepas underrapporten med varje instans av gruppen eller raden i dataområdet. Du kan skicka ett värde från gruppen eller raden till underrapporten. I underrapportens värdeegenskap använder du ett fältuttryck för det fält som innehåller värdet som du vill skicka till underrapportens parameter.  
   
- Mer information om hur du arbetar med parametrar och underrapporter finns i [Add a subreport and parameters](https://docs.microsoft.com/sql/reporting-services/report-design/add-a-subreport-and-parameters-report-builder-and-ssrs.md) (Lägga till en underrapport och parametrar) i SQL Server Reporting Services-dokumentationen.  
+ Mer information om hur du arbetar med parametrar och underrapporter finns i [Add a subreport and parameters](https://docs.microsoft.com/sql/reporting-services/report-design/add-a-subreport-and-parameters-report-builder-and-ssrs) (Lägga till en underrapport och parametrar) i SQL Server Reporting Services-dokumentationen.  
 
 ## <a name="preview-paginated-reports-in-report-builder"></a>Förhandsgranska sidnumrerade rapporter i Report Builder
 

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/05/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 18d16440e8894e69101357af700c9b295eaa30c6
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: f6960d3087ba5b271c6c130df59e6e667e838165
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82866983"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277167"
 ---
 # <a name="create-and-use-basic-area-charts"></a>Skapa och använda enkla ytdiagram
 
@@ -68,7 +68,7 @@ De här självstudierna använder sig av [PBIX-filen Exempel på detaljhandelsan
    d.  Om du vill visa diagrammet efter månad, väljer du ellipserna (övre högra hörnet av visualiseringen) och väljer **sortera efter månad**. Om du vill ändra sorteringsordningen väljer du ellipsen igen och väljer antingen **Sort ascending (Sortera stigande)** eller **Sort descending (Sortera fallande)** .
 
 ## <a name="highlighting-and-cross-filtering"></a>Markering och korsfiltrering
-Information om hur du använder filterfönstret finns i [Lägg till ett filter i en rapport](../power-bi-report-add-filter.md).
+Information om hur du använder filterfönstret finns i [Lägg till ett filter i en rapport](../create-reports/power-bi-report-add-filter.md).
 
 Om du vill fokusera på ett visst område i ditt diagrammet, väljer du det området eller dess översta kant.  Till skillnad från andra visualiseringstyper så korsfiltreras inte andra visualiseringar på rapportsidan om du markerar ett grundläggande ytdiagram och det finns andra visualiseringar på samma sida. Ytdiagram är dock ett mål för korsfiltrering som utlösts av andra visualiseringar på rapportsidan. 
 
@@ -78,7 +78,7 @@ Om du vill fokusera på ett visst område i ditt diagrammet, väljer du det omr�
 
     ![Filterexempel](media/power-bi-visualization-basic-area-chart/power-bi-area-chart-filters.gif) 
 
-Läs mer i [Visuella interaktioner i rapporter](../service-reports-visual-interactions.md)
+Läs mer i [Visuella interaktioner i rapporter](../create-reports/service-reports-visual-interactions.md)
 
 
 ## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning   
@@ -87,4 +87,6 @@ Läs mer i [Visuella interaktioner i rapporter](../service-reports-visual-intera
 
 ## <a name="next-step"></a>Nästa steg
 [Rapporter i Power BI](power-bi-visualization-card.md)  
+
+
 

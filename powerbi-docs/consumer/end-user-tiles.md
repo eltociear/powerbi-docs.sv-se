@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 0481a09aaeac4f6c76c49d3a816ac880cdb9d60b
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: e82c82430b42874e512265b9dae113b86925a51d
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79114052"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83273280"
 ---
 # <a name="dashboard-tiles-in-power-bi"></a>Paneler på instrumentpanelen i Power BI
 
@@ -69,7 +69,7 @@ Behöver du hjälp att förstå de olika byggstenarna i Power BI?  Mer informati
 3. Om du vill stänga åtgärdsmenyn, välj ett tomt område på arbetsytan.
 
 ### <a name="select-click-a-tile"></a>Välj (klicka på) en panel
-När du väljer en panel beror händelseförloppet på hur panelen skapades och om den har en [anpassad länk](../service-dashboard-edit-tile.md). Om den har en anpassad länk kommer du till denna länk om du väljer panelen. I annat fall kommer du, om du väljer panelen, till rapporten, arbetsboken i Excel Online, den lokala SSRS-rapporten eller frågor och svar som användes för att skapa panelen.
+När du väljer en panel beror händelseförloppet på hur panelen skapades och om den har en [anpassad länk](../create-reports/service-dashboard-edit-tile.md). Om den har en anpassad länk kommer du till denna länk om du väljer panelen. I annat fall kommer du, om du väljer panelen, till rapporten, arbetsboken i Excel Online, den lokala SSRS-rapporten eller frågor och svar som användes för att skapa panelen.
 
 > [!NOTE]
 > Undantag för detta är videopaneler som skapats direkt på en instrumentpanel med hjälp av **Lägg till panel**. Att välja en videopanel (som har skapats på detta sätt) gör så att videon spelas upp direkt på instrumentpanelen.   
@@ -85,6 +85,8 @@ När du väljer en panel beror händelseförloppet på hur panelen skapades och 
 * Om den ursprungliga visualiseringen som användes för att skapa panelen ändras, ändras inte panelen.  Om *designern* till exempel har fäst ett linjediagram från en rapport och sedan ändrar linjediagrammet till ett stapeldiagram fortsätter panelen på instrumentpanelen att visa ett linjediagram. Data uppdateras, men visualiseringstypen gör det inte.
 
 ## <a name="next-steps"></a>Nästa steg
-[Datauppdatering](../refresh-data.md)
+[Datauppdatering](../connect-data/refresh-data.md)
 
 [Power BI – Grundläggande begrepp](end-user-basic-concepts.md)
+
+

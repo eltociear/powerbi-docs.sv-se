@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/5/2019
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d4e31d8c3d2bcbbfdf0d2d932be70cc2cd5f2625
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: 20b597507a3619b60ef1db058d0ff3c8fd63b867
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82866505"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276684"
 ---
 # <a name="waterfall-charts-in-power-bi"></a>Vattenfallsdiagram i Power BI
 
@@ -114,6 +114,7 @@ Gräv lite djupare för att se vad som bidrar mest till ändringarna månad för
 
 ## <a name="next-steps"></a>Nästa steg
 
-* [Ändra hur visuella objekt interagerar i en Power BI-rapport](../service-reports-visual-interactions.md)
+* [Ändra hur visuella objekt interagerar i en Power BI-rapport](../create-reports/service-reports-visual-interactions.md)
 
 * [Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+

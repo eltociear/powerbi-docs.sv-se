@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 11/06/2018
-ms.openlocfilehash: 17742c48d9ac5cb49b6d04fe6fe4674e7f6c7ac9
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 45edb3695acdcc5519fb0b62cebc853ff25ce97a
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80404865"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83145230"
 ---
 # <a name="tutorial-create-a-paginated-report-and-upload-it-to-the-power-bi-service"></a>Självstudie: Skapa en sidnumrerad rapport och ladda upp den till Power BI-tjänsten
 
@@ -43,7 +43,7 @@ Här följer förutsättningarna för att skapa den sidnumrerade rapporten:
 Här är förutsättningarna för att ladda upp din sidnumrerade rapport till Power BI-tjänsten:
 
 - Du måste ha en [Power BI Pro-licens](../service-admin-power-bi-pro-in-your-organization.md).
-- Du måste ha en arbetsyta i tjänsten i en [Power BI Premium-kapacitet](../service-premium-what-is.md). Den visas med en diamantikon ![Premium-diamantikon](media/paginated-reports-quickstart-aw/premium-diamond.png) bredvid arbetsytans namn.
+- Du måste ha en arbetsyta i tjänsten i en [Power BI Premium-kapacitet](../admin/service-premium-what-is.md). Den visas med en diamantikon ![Premium-diamantikon](media/paginated-reports-quickstart-aw/premium-diamond.png) bredvid arbetsytans namn.
 
 ## <a name="create-the-matrix-with-a-wizard"></a>Skapa matrisen med en guide
   
@@ -329,4 +329,3 @@ Nu när du har skapat den här sidnumrerade rapporten är det dags att överför
 ## <a name="next-steps"></a>Nästa steg
 
 [Vad är sidnumrerade rapporter i Power BI Premium?](paginated-reports-report-builder-power-bi.md)
-

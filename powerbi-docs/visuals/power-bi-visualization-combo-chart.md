@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/22/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 9c8dcfec103bb53d645cdfd347112d7443506569
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: 036343df0a9af678b5a88c261a60ce603483a1cc
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82867011"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277190"
 ---
 # <a name="create-and-use-combo-charts-in-power-bi"></a>Skapa och använda kombinationsdiagram i Power BI
 
@@ -121,16 +121,19 @@ I januari var bruttomarginal % 35 %, med en topp på 45 % i april som sjönk i
 
 Härifrån kan du vilja:
 
-* [lägga till kombinationsdiagrammet som en panel på instrumentpanelen](../service-dashboard-tiles.md),
-* [Spara rapporten](../service-report-save.md).
+* [lägga till kombinationsdiagrammet som en panel på instrumentpanelen](../create-reports/service-dashboard-tiles.md),
+* [Spara rapporten](../create-reports/service-report-save.md).
 * [göra rapporten mer lättillgänglig för personer med funktionshinder](../desktop-accessibility.md).
 
 ## <a name="cross-highlighting-and-cross-filtering"></a>Korsmarkering och korsfiltrering
 
-Om du markerar en kolumn eller linje i ett kombinationsdiagram så korsmarkeras och korsfiltreras de övriga visualiseringarna på rapportsidan och vice versa. Använd [visuella interaktioner](../service-reports-visual-interactions.md) för att ändra det här standardbeteendet.
+Om du markerar en kolumn eller linje i ett kombinationsdiagram så korsmarkeras och korsfiltreras de övriga visualiseringarna på rapportsidan och vice versa. Använd [visuella interaktioner](../create-reports/service-reports-visual-interactions.md) för att ändra det här standardbeteendet.
 
 ## <a name="next-steps"></a>Nästa steg
 
 [Ringdiagram i Power BI](power-bi-visualization-doughnut-charts.md)
 
 [Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+
+
+

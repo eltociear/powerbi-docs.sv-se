@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/12/2020
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 61322db7085bd41539c0c79d483403b794f23f26
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 8c91e2a07143a6355b7049e80cbdc3e4ba906013
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79114319"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83145394"
 ---
 # <a name="printing-from-the-power-bi-service"></a>Skriva ut från Power BI-tjänsten
 
@@ -116,7 +116,6 @@ Det går bara att skriva ut rapporter med en sida i taget.
 * S: Gå tillbaka till instrumentpanelen eller rapporten i standardvyn och öppna det visuella objektet i fokusläge igen och sedan i helskärmsläge. 
 
 ## <a name="next-steps"></a>Nästa steg
-[Dela instrumentpaneler och rapporter med kolleger och andra](../service-share-dashboards.md)
+[Dela instrumentpaneler och rapporter med kolleger och andra](../collaborate-share/service-share-dashboards.md)
 
 Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
-

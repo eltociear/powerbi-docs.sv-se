@@ -8,12 +8,12 @@ ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 02/16/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 067171f7ec74beccdb5a312c1cac5bbc6c87541f
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 511dc42a3090f838654cda84f596d34f02bb3439
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79377660"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83275097"
 ---
 # <a name="data-retrieval-guidance-for-paginated-reports"></a>Vägledning till att hämta data i sidnumrerade rapporter
 
@@ -101,14 +101,14 @@ Vi rekommenderar _parametrisering av datamängden_ när du förväntar dig att d
 
 ## <a name="non-native-data-sources"></a>Icke-interna datakällor
 
-Om du behöver utveckla sidnumrerade rapporter som baseras på datakällor som inte [stöds internt i de sidnumrerade rapporterna](../paginated-reports/paginated-reports-data-sources.md) kan du först utveckla en Power BI Desktop-datamodell. På så sätt kan du ansluta till fler än 100 [Power BI-datakällor](../power-bi-data-sources.md). När du har publicerat till Power BI-tjänsten kan du sedan utveckla en sidnumrerad rapport som ansluter till Power BI-datamängden.
+Om du behöver utveckla sidnumrerade rapporter som baseras på datakällor som inte [stöds internt i de sidnumrerade rapporterna](../paginated-reports/paginated-reports-data-sources.md) kan du först utveckla en Power BI Desktop-datamodell. På så sätt kan du ansluta till fler än 100 [Power BI-datakällor](../connect-data/power-bi-data-sources.md). När du har publicerat till Power BI-tjänsten kan du sedan utveckla en sidnumrerad rapport som ansluter till Power BI-datamängden.
 
 ## <a name="data-integration"></a>Dataintegrering
 
 Om du behöver kombinera data från flera datakällor har du två alternativ:
 
 - **Kombinera rapportdatamängder**: Om datakällorna [stöds internt i sidnumrerade rapporter](../paginated-reports/paginated-reports-data-sources.md) kan du överväga att skapa beräknade fält som använder Report Builder-funktionerna [Lookup](/sql/reporting-services/report-design/report-builder-functions-lookup-function) eller [LookupSet](/sql/reporting-services/report-design/report-builder-functions-lookupset-function).
-- **Utveckla en Power BI Desktop-modell**: Det är förmodligen mer effektivt att utveckla en datamodell i Power BI Desktop. Du kan använda Power Query till att kombinera frågor baserat på alla [datakällor som stöds](../power-bi-data-sources.md). När du har publicerat till Power BI-tjänsten kan du sedan utveckla en sidnumrerad rapport som ansluter till Power BI-datamängden.
+- **Utveckla en Power BI Desktop-modell**: Det är förmodligen mer effektivt att utveckla en datamodell i Power BI Desktop. Du kan använda Power Query till att kombinera frågor baserat på alla [datakällor som stöds](../connect-data/power-bi-data-sources.md). När du har publicerat till Power BI-tjänsten kan du sedan utveckla en sidnumrerad rapport som ansluter till Power BI-datamängden.
 
 ## <a name="sql-server-complex-data-types"></a>Komplexa SQL Server-datatyper
 

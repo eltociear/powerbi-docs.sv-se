@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 03/02/2020
 ms.author: v-pemyer
-ms.openlocfilehash: a8c8c50369911e76376ccbda3a95743813fde6bb
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 3e3e44647ca7c85c09a3e7f4b3c309947559f5d3
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78263678"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83273234"
 ---
 # <a name="active-vs-inactive-relationship-guidance"></a>Vägledning för aktiva kontra inaktiva relationer
 
@@ -114,7 +114,7 @@ Denna modelldesign stöder framställning av följande rapportdesign.
 
 Rapportsidan filtreras efter kvartal 2019 Q4. Tabellen visar grupper per månad och visar olika försäljningsstatistik. Måtten **Beställningar** och **Beställningar levererade** ger olika resultat. De använder samma sammanfattningslogik (antal rader i **Sales**-tabellen), men olika filterspridning för **Date**-tabell.
 
-Observera att kvartalutsnittet innehåller ett tomt objekt. Det här utsnittsobjektet visas som ett resultat av [tabellexpansion](../desktop-relationships-understand.md#strong-relationships). Även om varje **Sales**-tabellrad har ett beställningsdatum, har vissa rader ett tomt leveransdatum – dessa beställningar är ännu inte levererade. Tabellexpansion beaktar även inaktiva relationer, så tomma objekt kan visas på grund av tomma objekt på många sidor av relationen eller på grund av problem med dataintegriteten.
+Observera att kvartalutsnittet innehåller ett tomt objekt. Det här utsnittsobjektet visas som ett resultat av [tabellexpansion](../transform-model/desktop-relationships-understand.md#strong-relationships). Även om varje **Sales**-tabellrad har ett beställningsdatum, har vissa rader ett tomt leveransdatum – dessa beställningar är ännu inte levererade. Tabellexpansion beaktar även inaktiva relationer, så tomma objekt kan visas på grund av tomma objekt på många sidor av relationen eller på grund av problem med dataintegriteten.
 
 ## <a name="recommendations"></a>Rekommendationer
 
@@ -129,7 +129,7 @@ I vissa fall kan du dock definiera en eller flera inaktiva relationer för en ta
 
 Mer information om ämnet i den här artikeln finns i följande resurser:
 
-- [Modellrelationer i Power BI Desktop](../desktop-relationships-understand.md)
+- [Modellrelationer i Power BI Desktop](../transform-model/desktop-relationships-understand.md)
 - [Förstå star-schemat och dess betydelse för Power BI](star-schema.md)
 - [Vägledning vid felsökning av relationer](relationships-troubleshoot.md)
 - Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)

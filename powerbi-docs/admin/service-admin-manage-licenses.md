@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/08/2020
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: c3f0b536695f5ed126ddc82c9e1891d317ef953f
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 2d5eab5dbbf600227611cadc870fab1b3e44a4b7
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81447451"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83138909"
 ---
 # <a name="view-and-manage-power-bi-user-licenses"></a>Visa och hantera Power BI-användarlicenser
 
@@ -60,5 +60,5 @@ Följ dessa steg om du vill visa och tilldela Power BI-licenser med hjälp av Az
 
 ## <a name="next-steps"></a>Nästa steg
 
-- [Köpa Power BI Pro](../service-admin-purchasing-power-bi-pro.md)
-- [Licensiering för din organisation](../service-admin-licensing-organization.md)
+- [Köpa Power BI Pro](service-admin-purchasing-power-bi-pro.md)
+- [Licensiering för din organisation](service-admin-licensing-organization.md)

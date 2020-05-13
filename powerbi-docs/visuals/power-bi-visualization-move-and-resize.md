@@ -6,21 +6,23 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/31/2018
+ms.date: 12/31/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: cda52bd8814c409bdc8d8d7e14a30744fc91b9ad
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: eeb02715fa205d7fb9f6a3107998feb3d87a9d7b
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "73880777"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83271969"
 ---
 # <a name="move-and-resize-a-visualization-in-a-report"></a>Flytta och ändra storlek på en visualisering i en rapport
 
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
+
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
-De som designar och äger rapporter kan flytta och ändra storlek på visualiseringar. Om du arbetar i Power BI-tjänsten (app.powerbi.com) måste du öppna rapporten i [Redigeringsvyn](../service-interact-with-a-report-in-editing-view.md). 
+De som designar och äger rapporter kan flytta och ändra storlek på visualiseringar. Om du arbetar i Power BI-tjänsten (app.powerbi.com) måste du öppna rapporten i [Redigeringsvyn](../create-reports/service-interact-with-a-report-in-editing-view.md). 
 
 ## <a name="open-the-report"></a>Öppna rapporten
 Öppna en rapport i Power BI med minst en visualisering, eller [skapa en ny visualisering](power-bi-report-add-visualizations-i.md). 
@@ -37,8 +39,9 @@ De som designar och äger rapporter kan flytta och ändra storlek på visualiser
   ![Fokusläge-ikonen](media/power-bi-visualization-move-and-resize/pbi_popouticon.jpg)
 
 ## <a name="next-steps"></a>Nästa steg
-[Ändra storlek på en visualisering på en instrumentpanel](../service-dashboard-edit-tile.md)  
+[Ändra storlek på en visualisering på en instrumentpanel](../create-reports/service-dashboard-edit-tile.md)  
 
 [Fokusläge](../consumer/end-user-focus.md)
 
 Fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
+

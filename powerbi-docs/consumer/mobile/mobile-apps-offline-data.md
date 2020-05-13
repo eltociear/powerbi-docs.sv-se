@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/09/2019
 ms.author: painbar
-ms.openlocfilehash: 9c38aef858d723e548529f450e34d0480de5f8b2
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: cfb5e4f1f75437db6235ece0d8661bab3f008649
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79435454"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83148424"
 ---
 # <a name="view-your-data-offline-in-the-power-bi-mobile-apps"></a>Visa dina data offline i Power BI-mobilapparna
 Gäller för:
@@ -44,7 +44,7 @@ Du kan stänga av bakgrundsuppdatering, till exempel för att undvika nätverksa
 > [!NOTE]
 > Om du använder Power BI-mobilappen på din iOS-enhet och din organisation har konfigurerat Microsoft Intune MAM, stängs datauppdatering i bakgrunden av. Nästa gång du använder appen uppdaterar Power BI data från Power BI-tjänsten på webben.
 > 
-> Läs mer om att [konfigurera Power BI-mobilappar med Microsoft Intune](../../service-admin-mobile-intune.md). 
+> Läs mer om att [konfigurera Power BI-mobilappar med Microsoft Intune](../../admin/service-admin-mobile-intune.md). 
 > 
 > 
 

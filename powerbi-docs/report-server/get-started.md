@@ -9,12 +9,12 @@ ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc
-ms.openlocfilehash: 3e01bd0d7314cba1eb46dacff01b350c6685a6e9
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 39ccb9120b7dd61d7f160c296d2de799b7f3fe23
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82613610"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83141115"
 ---
 # <a name="what-is-power-bi-report-server"></a>Vad är Power BI-rapportserver?
 
@@ -26,7 +26,7 @@ Power BI-rapportservern är en lokal rapportserver med en webbportal som du kan 
 Power BI-rapportserver är lik både SQL Server Reporting Services och Power BI-tjänsten online, men på olika sätt. Precis som Power BI-tjänsten är Power BI Report Server värd för Power BI-rapporter(.pbix), Excel-filer och sidnumrerade rapporter (.rdl). Precis som Reporting Services är Power BI Report Server lokal. Power BI Report Server är en supermängd av Reporting Services: allt som du kan göra i Reporting Services kan du göra med Power BI-rapportservern och mer, tillsammans med stöd för Power BI-rapporter. Se [Jämföra Power BI-rapportservern och Power BI-tjänsten](compare-report-server-service.md) för mer information.
 
 ## <a name="licensing-power-bi-report-server"></a>Licensiera Power BI-rapportserver
-Power BI-rapportserver finns tillgänglig via två olika licenser: [Power BI Premium](../service-premium-what-is.md) och [SQL Server Enterprise Edition](https://www.microsoft.com/sql-server/sql-server-2017-editions) med Software Assurance. Med Power BI Premium-licensen kan du skapa en hybrid distributionsblandning för moln och lokalt.  
+Power BI-rapportserver finns tillgänglig via två olika licenser: [Power BI Premium](../admin/service-premium-what-is.md) och [SQL Server Enterprise Edition](https://www.microsoft.com/sql-server/sql-server-2017-editions) med Software Assurance. Med Power BI Premium-licensen kan du skapa en hybrid distributionsblandning för moln och lokalt.  
 
 > [!NOTE]
 > När det gäller Power BI Premium inkluderas Microsoft Power BI-rapportserver enbart med P SKU:er. Det inkluderas inte med EM SKU:er.
@@ -71,5 +71,3 @@ Fler [utvecklardokumentation för rapportservern](https://docs.microsoft.com/sql
 [Hämta Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
 
 Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
-
-

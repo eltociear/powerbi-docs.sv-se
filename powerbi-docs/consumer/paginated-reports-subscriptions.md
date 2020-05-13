@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 12/03/2019
-ms.openlocfilehash: d3813636010dcbf5c866248111755beb0dca99b8
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: c7f377c1295d4cd8f0d226331fcb6db697786e5a
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "74834642"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83141272"
 ---
 # <a name="subscribe-yourself-and-others-to-paginated-reports-in-the-power-bi-service"></a>Skapa en prenumeration åt dig själv och andra på en sidnumrerad rapport i Power BI-tjänsten 
 
@@ -39,7 +39,6 @@ När du ställer in prenumerationer väljer du hur ofta du vill få e-postmeddel
 
 ## <a name="next-steps"></a>Nästa steg
 
-[Skapa en prenumeration åt dig eller andra på rapporter och instrumentpaneler i Power BI-tjänsten](../service-report-subscribe.md)
+[Skapa en prenumeration åt dig eller andra på rapporter och instrumentpaneler i Power BI-tjänsten](../collaborate-share/service-report-subscribe.md)
 
 [Sidnumrerade rapporter i Power BI-tjänsten](end-user-paginated-report.md)
-

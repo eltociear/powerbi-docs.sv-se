@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 02/05/2019
-ms.openlocfilehash: 3277bba0a4351f17d671adf9a70aae4adb7ddbac
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: d30dfaa36bc55e8da769d4eaf0f7c2d1b9be0724
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81525386"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83145200"
 ---
 # <a name="tutorial-embed-a-power-bi-content-into-your-application-for-national-clouds"></a>Självstudie: Integrera Power BI-innehåll i ditt program för nationella moln
 
@@ -38,7 +38,7 @@ De olika nationella molnen är:
 
 ![Inbäddad instrumentpanel](media/embed-sample-for-customers/powerbi-embed-dashboard.png)
 
-För att komma igång med den här genomgången behöver du ett **Power BI**-konto. Om du inte har ett konto konfigurerat kan du, beroende på myndigheter eller land, välja rätt nationellt moln för dig. Du kan registrera dig för ett [Power BI-konto för amerikanska myndigheter](../../service-govus-signup.md), ett [Power BI-konto för moln i Tyskland](https://powerbi.microsoft.com/power-bi-germany/?ru=https%3A%2F%2Fapp.powerbi.de%2F%3FnoSignUpCheck%3D1) eller ett [Power BI-konto för moln i Kina](https://www.21vbluecloud.com/powerbi/).
+För att komma igång med den här genomgången behöver du ett **Power BI**-konto. Om du inte har ett konto konfigurerat kan du, beroende på myndigheter eller land, välja rätt nationellt moln för dig. Du kan registrera dig för ett [Power BI-konto för amerikanska myndigheter](../../admin/service-govus-signup.md), ett [Power BI-konto för moln i Tyskland](https://powerbi.microsoft.com/power-bi-germany/?ru=https%3A%2F%2Fapp.powerbi.de%2F%3FnoSignUpCheck%3D1) eller ett [Power BI-konto för moln i Kina](https://www.21vbluecloud.com/powerbi/).
 
 > [!NOTE]
 > Vill du bädda in en instrumentpanel för din organisation istället? Se [Integrera en instrumentpanel i en app för din organisation](embed-sample-for-your-organization.md).

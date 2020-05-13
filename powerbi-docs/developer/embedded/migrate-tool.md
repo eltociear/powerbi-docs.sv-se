@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/30/2018
-ms.openlocfilehash: 7415750d59155f690cf0ff1ced25b31669f73710
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: b6b84d9e6c5f0dee912ccf80cf6949618b16d8c5
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80114576"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83148997"
 ---
 # <a name="power-bi-embedded-migration-tool"></a>Migreringsverktyg för Power BI Embedded
 
@@ -271,7 +271,7 @@ Mer information finns i [Så här migrerar du innehåll från Power BI Embedded-
 
 [Bädda in med Power BI](embedding.md)  
 [Så här migrerar du innehåll från Power BI Embedded-arbetsytesamlingar till Power BI](migrate-from-powerbi-embedded.md)  
-[Power BI Premium – vad är det?](../../service-premium-what-is.md)  
+[Power BI Premium – vad är det?](../../admin/service-premium-what-is.md)  
 [JavaScript API Git Repo](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Power BI C# Git Repo](https://github.com/Microsoft/PowerBI-CSharp)  
 [JavaScript-inbäddningsexempel](https://microsoft.github.io/PowerBI-JavaScript/demo/)  

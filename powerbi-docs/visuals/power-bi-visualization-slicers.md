@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/06/2020
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 1ba284aa3c925ef0679572ca55cad9e5267d3f21
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: c72863407fea0cf550643e5193a8b514b2bb51bd
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82585059"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276339"
 ---
 # <a name="slicers-in-power-bi"></a>Utsnitt i Power BI
 
@@ -24,11 +24,11 @@ Anta att du vill att rapportens läsare ska kunna se övergripande försäljning
 
 ![Animering av utsnitt](media/power-bi-visualization-slicers/slicer2.gif)
 
-I den här artikeln beskrivs hur du skapar och formaterar ett grundläggande utsnitt med hjälp av det kostnadsfria [exemplet om detaljhandelsanalys](../sample-retail-analysis.md). Dessutom får du se hur du kan styra vilka visuella objekt som påverkas av ett utsnitt och hur du synkroniserar med utsnitt på andra sidor. Här är några andra artiklar som förklarar hur du skapar vissa typer av utsnitt:
+I den här artikeln beskrivs hur du skapar och formaterar ett grundläggande utsnitt med hjälp av det kostnadsfria [exemplet om detaljhandelsanalys](../create-reports/sample-retail-analysis.md). Dessutom får du se hur du kan styra vilka visuella objekt som påverkas av ett utsnitt och hur du synkroniserar med utsnitt på andra sidor. Här är några andra artiklar som förklarar hur du skapar vissa typer av utsnitt:
 
-- [Numeriska intervallutsnitt](../desktop-slicer-numeric-range.md).
+- [Numeriska intervallutsnitt](../create-reports/desktop-slicer-numeric-range.md).
 - [Relativa datumutsnitt](desktop-slicer-filter-date-range.md).
-- Dynamiska, [storlekskänsliga utsnitt](../power-bi-slicer-filter-responsive.md).
+- Dynamiska, [storlekskänsliga utsnitt](../create-reports/power-bi-slicer-filter-responsive.md).
 - [Hierarkiutsnitt](../create-reports/power-bi-slicer-hierarchy-multiple-fields.md) med flera fält.
 
 ## <a name="when-to-use-a-slicer"></a>När ska du använda ett utsnitt
@@ -92,7 +92,7 @@ Använd visuella interaktioner om du vill undanta vissa sidvisualiseringar så a
 
    När du nu väljer namn och datumintervall i utsnitten så förändras inte diagrammet **Total försäljningsavvikelse efter FiscalMonth och distriktschef**.
 
-Mer information om hur du redigerar interaktioner finns i [Ändra hur visuella objekt interagerar i en Power BI-rapport](../service-reports-visual-interactions.md).
+Mer information om hur du redigerar interaktioner finns i [Ändra hur visuella objekt interagerar i en Power BI-rapport](../create-reports/service-reports-visual-interactions.md).
 
 ## <a name="sync-and-use-slicers-on-other-pages"></a>Synkronisera och använda utsnitt på andra sidor
 Från och med Power BI-uppdateringen från februari 2018 kan du synkronisera ett utsnitt och använda det på några eller alla sidor i en rapport. 
@@ -134,7 +134,7 @@ I den aktuella rapporten har sidan **Månadsvis försäljning för distriktet** 
 ## <a name="filtering-slicers"></a>Filtrera utsnitt
 Du kan använda filter på visuell nivå för utsnitt för att minska listan med värden som visas i utsnittet. Du kan till exempel filtrera bort tomma värden från ett listutsnitt, eller filtrera bort vissa datum från ett intervallutsnitt. När du gör detta påverkar det bara *värden som visas i utsnittet*, inte *filtret som utsnittet gäller för andra visuella objekt* när du gör ett val. Anta till exempel att du använder ett filter till ett intervallutsnitt för att endast visa vissa datum. Valet i utsnittet visar bara de första och sista datumen från intervallet, men du ser fortfarande andra datum i dina andra visuella objekt. När du har ändrat det valda intervallet i utsnittet visas den andra uppdateringen för visuella objekt. Om du avmarkerar utsnittet visas alla datum igen.
 
-Se [Filtertyper](../power-bi-report-filter-types.md) för mer information om filter på visuell nivå.
+Se [Filtertyper](../create-reports/power-bi-report-filter-types.md) för mer information om filter på visuell nivå.
 
 ## <a name="format-slicers"></a>Formatutsnitt
 Olika formateringsalternativ är tillgängliga beroende på vilken utsnittstyp det rör sig om. Med hjälp av **vågrät** orientering **dynamisk** layout och **objekt**färger kan du skapa knappar och paneler istället för standardlistobjekt och ändra storlek på utsnittsobjekt så att de passar olika skärmstorlekar och layouter.  
@@ -169,7 +169,7 @@ Olika formateringsalternativ är tillgängliga beroende på vilken utsnittstyp d
 
     ![Alternativet Vågrät](media/power-bi-visualization-slicers/6-buttons.png)
 
-Mer information om vågrät orientering och dynamisk layout finns i [Skapa ett dynamiskt utsnitt som du kan ändra storlek på i Power BI](../power-bi-slicer-filter-responsive.md).
+Mer information om vågrät orientering och dynamisk layout finns i [Skapa ett dynamiskt utsnitt som du kan ändra storlek på i Power BI](../create-reports/power-bi-slicer-filter-responsive.md).
 
 ### <a name="selection-controls-options-list-slicers-only"></a>Markeringsalternativ (endast listutsnitt)
 1. Under **Markeringskontroller** **aktiverar** du **Visa alternativet Markera allt** för att lägga till ett **Markera allt**-objekt till utsnittet. 
@@ -222,4 +222,3 @@ Mer information finns i följande artiklar:
 - [Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
 - [Tabeller i Power BI](power-bi-visualization-tables.md)
-

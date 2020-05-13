@@ -9,12 +9,12 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 03/30/2020
-ms.openlocfilehash: 7ae2752627e24c5de2feed372009061e523a3fc8
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 40f713c2fd021ea8ecea5789b8ad0bc54cff2294
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80751625"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83275971"
 ---
 # <a name="embedding-power-bi-content-with-service-principal-and-application-secret"></a>Bädda in Power BI innehåll med tjänstens huvudnamn och apphemlighet
 
@@ -183,14 +183,14 @@ När ditt innehåll hasr bäddats in kan du [övergå till produktion](embed-sam
 
 ## <a name="considerations-and-limitations"></a>Överväganden och begränsningar
 
-* Tjänstens huvudnamn fungerar bara med [nya arbetsytor](../../service-create-the-new-workspaces.md).
+* Tjänstens huvudnamn fungerar bara med [nya arbetsytor](../../collaborate-share/service-create-the-new-workspaces.md).
 * **Min arbetsyta** stöds inte när du använder tjänstens huvudnamn.
 * Dedikerad kapacitet krävs vid flytt till produktion.
 * Du kan inte logga in på Power BI-portal med tjänstens huvudnamn.
 * Power BI-administratörsbehörighet krävs för att aktivera tjänstens huvudnamn i inställningarna för utvecklare i Power BI-administratörsportalen.
 * Du kan inte installera eller hantera en lokal datagateway med tjänstens huvudnamn.
 * Det går inte att använda tjänstens huvudnamn för [inbäddning för organisationens](embed-sample-for-your-organization.md) program.
-* Hantering av [dataflöden](../../service-dataflows-overview.md) stöds inte.
+* Hantering av [dataflöden](../../transform-model/service-dataflows-overview.md) stöds inte.
 * Tjänstens huvudnamn har för närvarande inte stöd för några administratörs-API:er.
 * Vid användning av tjänsthuvudnamn med en [Azure Analysis Services](https://docs.microsoft.com/azure/analysis-services/analysis-services-overview)-datakälla måste själva tjänsthuvudnamnet ha en Azure Analysis Services-instansbehörighet. Det fungerar inte att använda en säkerhetsgrupp som innehåller tjänsthuvudnamnet för detta ändamål.
 

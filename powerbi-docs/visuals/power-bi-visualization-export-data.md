@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 04/28/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e3e0108f539a7c42b41c36f743a0b8b79f3b61b8
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 49e4653152e8981222d3a2589781546eb25bcd0e
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82781741"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83273027"
 ---
 # <a name="export-the-data-that-was-used-to-create-a-visualization"></a>Exportera data som används för att skapa en visualisering
 
@@ -54,7 +54,7 @@ Här kan du se Will exportera data från en visualisering i sin rapport, spara d
 
 ## <a name="export-data-from-a-report"></a>Exportera data från en rapport
 
-Om du vill följa med kan du öppna [exempelrapporten för anskaffningsanalys](../sample-procurement.md) i redigeringsvyn i Power BI-tjänsten. Lägg till en ny tom rapportsida. Följ sedan stegen nedan för att lägga till en sammansättning, en hierarki och ett filter på visualiseringsnivå.
+Om du vill följa med kan du öppna [exempelrapporten för anskaffningsanalys](../create-reports/sample-procurement.md) i redigeringsvyn i Power BI-tjänsten. Lägg till en ny tom rapportsida. Följ sedan stegen nedan för att lägga till en sammansättning, en hierarki och ett filter på visualiseringsnivå.
 
 ### <a name="create-a-stacked-column-chart"></a>Skapa ett staplat kolumndiagram
 
@@ -94,7 +94,7 @@ Välj alternativet för **Sammanfattade data** om du vill exportera data för de
 
     - **Underliggande data**
 
-    För mer information om att förstå mängder kan du läsa [Mängder i Power BI](../service-aggregates.md).
+    För mer information om att förstå mängder kan du läsa [Mängder i Power BI](../create-reports/service-aggregates.md).
 
 
     > [!NOTE]
@@ -133,7 +133,7 @@ När du väljer **Exportera**, exporterar Power BI aktuella data till en *xlsx-f
 
     - **Underliggande data**
 
-    För mer information om att förstå mängder kan du läsa [Mängder i Power BI](../service-aggregates.md).
+    För mer information om att förstå mängder kan du läsa [Mängder i Power BI](../create-reports/service-aggregates.md).
 
 
     > [!NOTE]
@@ -164,7 +164,7 @@ Det finns flera strategier som Power BI-administratörer och designers bör anv�
 
 - Power BI-administratörer kan inaktivera dataexport för sin organisation. 
 
-- Datamängdsägare kan ange säkerhet på radnivå (RLS). RLS begränsar åtkomsten till skrivskyddade användare. Men om du har konfigurerat en apparbetsyta och gett medlemmar redigeringsbehörighet tillämpas inte RLS-roller för dem. Mer information finns i [Säkerhet på radnivå](../service-admin-rls.md).
+- Datamängdsägare kan ange säkerhet på radnivå (RLS). RLS begränsar åtkomsten till skrivskyddade användare. Men om du har konfigurerat en apparbetsyta och gett medlemmar redigeringsbehörighet tillämpas inte RLS-roller för dem. Mer information finns i [Säkerhet på radnivå](../admin/service-admin-rls.md).
 
 - Rapportdesigners kan dölja kolumner så att de inte visas i listan **Fält**. Mer information finns i [Egenskaper för datamängd](../developer/automation/api-dataset-properties.md)
 

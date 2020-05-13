@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 04/06/2020
 ms.author: painbar
 LocalizationGroup: Connect to services
-ms.openlocfilehash: f637bb10ed7ec27dcb3da07fc04cae39328ffebe
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: fef6bc5c396ccaf89ff4cd0e5a449cb9d01ce75b
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80752267"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83275511"
 ---
 # <a name="connect-to-the-crisis-communication-presence-report"></a>Ansluta till Närvarorapportering för kriskommunikation
 
@@ -89,20 +89,20 @@ När du installerar kriskommunikationsexemplet noterar du [sökvägen till mappe
 
 ## <a name="schedule-report-refresh"></a>Schemalägga rapportuppdatering
 
-När datauppdateringen har slutförts [skapar du ett uppdateringsschema](../refresh-scheduled-refresh.md) för att hålla rapportdata uppdaterade.
+När datauppdateringen har slutförts [skapar du ett uppdateringsschema](../connect-data/refresh-scheduled-refresh.md) för att hålla rapportdata uppdaterade.
 
 1. I det översta rubrikfältet väljer du **Power BI**.
 
    ![Dynamiska länkar i Power BI](media/service-connect-to-crisis-communication-presence-report/service-crisis-communication-presence-report-app-powerbi-breadcrumb.png)
 
-1. I det vänstra navigeringsfönstret letar du reda på arbetsytan Instrumentpanel för beslutsstöd för akutrespons för sjukhus under **Arbetsytor** och följer anvisningarna i artikeln [Konfigurera schemalagd uppdatering](../refresh-scheduled-refresh.md).
+1. I det vänstra navigeringsfönstret letar du reda på arbetsytan Instrumentpanel för beslutsstöd för akutrespons för sjukhus under **Arbetsytor** och följer anvisningarna i artikeln [Konfigurera schemalagd uppdatering](../connect-data/refresh-scheduled-refresh.md).
 
 ## <a name="customize-and-share"></a>Anpassa och dela
 
-Mer information finns i [Anpassa och dela appen](../service-template-apps-install-distribute.md#customize-and-share-the-app). Läs [friskrivningar för rapporter](../create-reports/sample-covid-19-us.md#disclaimers) innan du publicerar eller distribuerar appen.
+Mer information finns i [Anpassa och dela appen](../connect-data/service-template-apps-install-distribute.md#customize-and-share-the-app). Läs [friskrivningar för rapporter](../create-reports/sample-covid-19-us.md#disclaimers) innan du publicerar eller distribuerar appen.
 
 ## <a name="next-steps"></a>Nästa steg
 * [Konfigurera och läs mer om exempelmallen Kriskommunikation i Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/sample-crisis-communication-app)
 * Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
-* [Vad är Power BI-mallappar?](../service-template-apps-overview.md)
-* [Installera och distribuera mallappar i din organisation](../service-template-apps-install-distribute.md)
+* [Vad är Power BI-mallappar?](../connect-data/service-template-apps-overview.md)
+* [Installera och distribuera mallappar i din organisation](../connect-data/service-template-apps-install-distribute.md)
