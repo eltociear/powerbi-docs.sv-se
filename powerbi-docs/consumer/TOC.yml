@@ -72,6 +72,8 @@
               href: end-user-bookmarks.md
             - name: Lägga till en spotlight till en rapport
               href: end-user-spotlight.md
+            - name: Anpasssa ett visuellt objekt
+              href: end-user-personalize-visuals.md
             - name: Sidnumrerade rapporter i Power BI
               items:
                 - name: Sidnumrerade rapporter

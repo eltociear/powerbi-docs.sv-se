@@ -339,6 +339,8 @@
               href: ../paginated-reports/report-builder-shared-datasets.md
             - name: Skapa parametrar
               href: ../paginated-reports/paginated-reports-parameters.md
+            - name: Ange rapportvyer
+              href: ../paginated-reports/page-view.md
             - name: Underrapporter
               href: ../paginated-reports/subreports.md
             - name: Felsöka underrapporter
