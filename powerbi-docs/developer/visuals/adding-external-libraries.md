@@ -49,7 +49,7 @@ Ett fullständigt exempel finns i koden för [visuella Power BI-objekt](https://
 ## <a name="css-framework"></a>CSS framework
 
 1. Installera ett externt CSS-bibliotek med valfri pakethanterare som *npm* eller *yarn*.
-2. Ta med instruktionen `.less` i filen `import` för det visuella objektet.
+2. Ta med instruktionen `import` i filen `.less` för det visuella objektet.
 
 ### <a name="installing-bootstrap"></a>Installerar bootstrap
 

@@ -65,7 +65,7 @@ Du kommer åt organisationslagret genom att gå till fönstret *Visualisering*, 
 
 Visuella Power BI-objekt är paket som innehåller kod för att återge de data som de förses med. Alla kan skapa anpassade visuella objekt och paketera dem som enskilda `.pbiviz`-filer som sedan kan importeras till Power BI-rapporter.
 
-Om du vill importera ett visuellt Power BI-objekt klickar du på *Importera ett anpassat visuellt objekt* i fönstret **Visualisering** och väljer **Importera från fil**.
+Om du vill importera ett visuellt Power BI-objekt klickar du på **Importera ett anpassat visuellt objekt** i fönstret *Visualisering* och väljer **Importera från fil**.
 
 Om du är webbutvecklare och intresserad av att skapa egna visuella objekt och lägga till dem i AppSource så kan du lära dig att [utveckla ett visuellt Power BI-objekt](custom-visual-develop-tutorial.md) och att [publicera ett visuellt Power BI-objekt till AppSource](office-store.md).
 
