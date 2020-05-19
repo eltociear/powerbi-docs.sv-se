@@ -12,7 +12,7 @@
       expanded: true
       items:
         - name: 'Nätbaserad kurs: Sidnumrerade rapporter'
-          href: ../paginated-reports/paginated-reports-online-course.md
+          href: ../learning-catalog/paginated-reports-online-course.md
         - name: Skapa en sidnumrerad rapport och ladda upp den
           href: ../paginated-reports/paginated-reports-quickstart-aw.md
     - name: Exempel

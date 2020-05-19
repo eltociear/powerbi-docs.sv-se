@@ -20,13 +20,13 @@
           href: embed-paginated-reports-customers.md
         - name: Bädda in innehåll för nationella moln
           href: embed-sample-for-customers-national-clouds.md
-    - name: Koncept
+    - name: Begrepp
       items:
         - name: 'Kapacitet och SKU:er i inbäddad Power BI-analys'
           href: embedded-capacity.md
         - name: Kapacitetsplanering
           href: embedded-capacity-planning.md
-        - name: Metodtips för prestanda
+        - name: Bästa praxis för prestanda
           href: embedded-performance-best-practices.md
         - name: Tjänstens huvudnamn
           href: embed-service-principal.md
@@ -42,7 +42,7 @@
           href: embedded-faq.md
         - name: Power BI-behörigheter
           href: power-bi-permissions.md
-    - name: Gör så här för att
+    - name: Gör så här
       items:
         - name: Bädda in från en app
           href: embed-from-apps.md
@@ -62,17 +62,17 @@
           href: embed-dynamic-binding.md
         - name: Bädda in frågor och svar
           href: qanda.md
-        - name: Felsöka inbäddade program
+        - name: Felsök ditt inbäddade program
           href: embedded-troubleshoot.md
-        - name: Hantera kapaciteter i Azure
+        - name: Hantera kapacitet i Azure
           items:
-            - name: Skapa en kapacitet i Azure
+            - name: Skapa kapacitet i Azure
               href: azure-pbie-create-capacity.md
             - name: Skapa en kapacitet med hjälp av Multi-Geo in Azure
               href: embedded-multi-geo.md
-            - name: Skala en kapacitet i Azure
+            - name: Skala kapacitet i Azure
               href: azure-pbie-scale-capacity.md
-            - name: Pausa och starta en kapacitet i Azure
+            - name: Pausa och starta kapacitet i Azure
               href: azure-pbie-pause-start.md
         - name: Migrera från arbetsytesamlingar
           items:
@@ -80,16 +80,16 @@
               href: migrate-from-powerbi-embedded.md
             - name: Migreringsverktyg
               href: migrate-tool.md
-            - name: Kodfragment för migrering
+            - name: Kodavsnitt för migrering
               href: migrate-code-snippets.md
     - name: Referens
       items:
         - name: 'API:er'
           items:
-            - name: 'REST API:er i Azure Resource Management'
+            - name: 'REST API:er för Azure Resource Management'
               href: 'https://docs.microsoft.com/rest/api/power-bi-embedded/'
-            - name: 'Power BI REST-API:er'
-              href: 'https://msdn.microsoft.com/library/mt147898.aspx'
+            - name: 'REST API:er för Power BI'
+              href: 'https://docs.microsoft.com/rest/api/power-bi/'
         - name: Power BI-bibliotek
           href: 'https://go.microsoft.com/fwlink/?linkid=848274'
         - name: Bädda in anpassade layouter i en app
@@ -100,13 +100,13 @@
           href: 'https://powerbi.microsoft.com/en-us/developers/'
         - name: Konfigurationsverktyget för inbäddning
           href: 'https://aka.ms/embedsetup'
-        - name: Testplatsexempel för Javascript
+        - name: Exempel för JavaScript Playground
           href: 'https://go.microsoft.com/fwlink/?linkid=848279'
         - name: Power BI JavaScript-wiki
           href: 'https://github.com/Microsoft/powerbi-javascript/wiki'
         - name: Exempel och skript för utvecklare
           href: 'https://go.microsoft.com/fwlink/?linkid=851293'
-        - name: Power BI Community
+        - name: Power BI-community
           href: 'https://go.microsoft.com/fwlink/?linkid=848280'
-        - name: Stack Overflow
+        - name: Dataspill
           href: 'https://go.microsoft.com/fwlink/?linkid=848281'

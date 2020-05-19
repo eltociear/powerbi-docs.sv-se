@@ -7,6 +7,8 @@
       href: learning-catalog-consumer.md
     - name: Rapportgenererare
       href: learning-catalog-report-creator.md
+    - name: 'Nätbaserad kurs: Sidnumrerade rapporter'
+      href: paginated-reports-online-course.md
     - name: Dataanalytiker
       href: learning-catalog-data-analyst.md
     - name: Administratörer
