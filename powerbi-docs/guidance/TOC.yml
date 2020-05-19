@@ -110,6 +110,8 @@
               href: monitor-report-performance.md
             - name: Felsöka rapportprestanda
               href: report-performance-troubleshoot.md
+            - name: Metodtips för distributionspipelines
+              href: ../create-reports/deployment-pipelines-best-practices.md
     - name: Vitböcker
       items:
         - name: Översikt vitböcker
