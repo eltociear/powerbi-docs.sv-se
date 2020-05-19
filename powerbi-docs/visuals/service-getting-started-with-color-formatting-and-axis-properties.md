@@ -6,17 +6,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/30/2020
+ms.date: 04/30/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 2433f030f00ec8cd337d97c4402b83ed6c4c5a00
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 526d2face5b963b27ac17335bbe223c5e3bec672
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "76895241"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276592"
 ---
 # <a name="getting-started-with-the-formatting-pane"></a>Kom igång med formateringsfönstret
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
+
 Om du har redigeringsbehörighet för en rapport finns det ett flertal formateringsalternativ. I Power BI-rapporter kan du ändra färg på dataserier, datapunkter och även visualiseringarnas bakgrund. Du kan ändra presentationen av x-axeln och y-axeln. Du kan även formatera teckensnittsegenskaperna för visualiseringar, former och titlar. Power BI ger fullständig kontroll över hur dina rapporter visas.
 
 Kom igång genom att öppna en rapport i Power BI Desktop eller Power BI-tjänsten. Båda alternativen ger nästan identiska formateringsalternativ. När du öppnar en rapport i Power BI-tjänsten ska du välja **Redigera** på menyraden. 
@@ -154,8 +157,10 @@ Vi valde visualiseringen för att göra den aktiv och öppnade fliken Formaterin
 Detta är bara några av de formateringsåtgärder som är möjliga. Öppna en rapport i redigeringsläge och roa dig med att utforska formateringsfönstret för att skapa snygga och informativa visualiseringar.
 
 ## <a name="next-steps"></a>Nästa steg
-Mer information finns i följande artikel:  
+Mer information finns i följande artikel: 
+
+* [Dela rapporter](../collaborate-share/service-share-reports.md)
 
 * [Tips för färgformatering i Power BI](service-tips-and-tricks-for-color-formatting.md)  
-* [Villkorsstyrd formatering i tabeller](../desktop-conditional-table-formatting.md)
+* [Villkorsstyrd formatering i tabeller](../create-reports/desktop-conditional-table-formatting.md)
 

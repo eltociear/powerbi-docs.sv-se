@@ -7,18 +7,24 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/18/2019
+ms.date: 05/06/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 59685b4c3ceab4b60cba92ec1d3924b902c1426a
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 5783df071830cdb19ef124ebb908f53955823c69
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "77115318"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83130961"
 ---
 # <a name="interact-with-arcgis-maps-in-power-bi"></a>Interagera med ArcGIS-kartor i Power BI
+
+[!INCLUDE[consumer-appliesto-yyyn](../includes/consumer-appliesto-yyyn.md)]    
+
 Det här avsnittet skrivs utifrån perspektivet av en person som använder en ArcGIS-karta i Power BI-tjänsten, Desktop eller i en mobil lösning. När en designer har delat en ArcGIS-karta för visuellt Power BI-objekt med dig finns det många sätt att interagera med det.  Mer information om hur du skapar en ArcGIS-karta finns i [självstudierna om ArcGIS-kartor från Esri](../visuals/power-bi-visualization-arcgis.md).
+
+> [!NOTE]
+> För att dela en rapport med en Power BI-kollega krävs att du både har individuella Power BI Pro-licenser eller att rapporten har sparats med Premium-kapacitet. Se [delningsrapporter](../collaborate-share/service-share-reports.md).
 
 Kombinationen av ArcGIS-kartor och Power BI tar mappning längre än till bara presentation av punkter på en karta – helt enkelt till en helt ny nivå. Rapportdesigners börjar med en karta och kopplar lager med demografiska data till kartan. Kombinationen av de här platsbaserade dataskikten (som insamlade data) på en karta med spatial analys ger en bättre förståelse av dina data i visualiseringen.
 

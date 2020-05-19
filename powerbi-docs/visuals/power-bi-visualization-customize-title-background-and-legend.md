@@ -10,14 +10,17 @@ ms.topic: conceptual
 ms.date: 03/06/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 7ff02eb07d4b052892cc80ab4710223d8d302a9f
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 5a55fca07e4a0e5f9c027bcd17c3fba66a09958e
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78893429"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277144"
 ---
 # <a name="customize-visualization-titles-backgrounds-and-legends"></a>Anpassa visualiseringens rubriker, bakgrunder och förklaringar
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
+
 
 I de här självstudierna kommer du att få lära dig några olika metoder för att anpassa dina visualiseringar. Det finns många alternativ att välja mellan för att anpassa visualiseringar. Det bästa sättet att lära dig om alla är genom att utforska fönstret **Format** (välj rollerikonen). I den här artikeln kan du komma igång med att anpassa en visualiseringsrubrik, förklaring, bakgrund och lägger till ett tema.
 
@@ -30,12 +33,15 @@ Du kan inte anpassa alla visualiseringar. Se den [fullständiga listan](#visuali
 
 - Rapporten Exempel på detaljhandelsanalys
 
+> [!NOTE]
+> För att dela en rapport med en Power BI-kollega krävs att du både har individuella Power BI Pro-licenser eller att rapporten har sparats med Premium-kapacitet. Se [delningsrapporter](../collaborate-share/service-share-reports.md).
+
 ## <a name="customize-visualization-titles-in-reports"></a>Anpassa visualiseringstitlar i rapporter
 
-Logga in i Power BI-tjänsten och öppna rapporten [Retail Analysis Sample](../sample-datasets.md) så att du kan följa med.
+Logga in i Power BI-tjänsten och öppna rapporten [Retail Analysis Sample](../create-reports/sample-datasets.md) så att du kan följa med.
 
 > [!NOTE]
-> När du fäster en visualisering på en instrumentpanel blir den en panel på instrumentpanelen. Panelerna själva kan också anpassas med [nya rubriker, undertexter och hyperlänkar och du kan även ändra storleken](../service-dashboard-edit-tile.md).
+> När du fäster en visualisering på en instrumentpanel blir den en panel på instrumentpanelen. Panelerna själva kan också anpassas med [nya rubriker, undertexter och hyperlänkar och du kan även ändra storleken](../create-reports/service-dashboard-edit-tile.md).
 
 1. Gå till sidan **Nya butiker** i rapporten **Exempel på detaljhandelsanalys**.
 
@@ -157,7 +163,7 @@ Här är en lista över visualiseringarna och vilka anpassningsalternativ som ä
 | Utsnitt | ja | ja | saknas |
 | Tabell | ja | ja | saknas |
 | Textruta | nej | ja | saknas |
-| Treemap | ja | ja | ja |
+| Trädkarta | ja | ja | ja |
 | Vattenfall | ja | ja | ja |
 
 ## <a name="next-steps"></a>Nästa steg
@@ -166,4 +172,6 @@ Här är en lista över visualiseringarna och vilka anpassningsalternativ som ä
 
 - [Komma igång med färgformatering och axelegenskaper](service-getting-started-with-color-formatting-and-axis-properties.md)
 
-Fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
+
+

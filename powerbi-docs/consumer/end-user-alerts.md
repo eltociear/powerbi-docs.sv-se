@@ -7,25 +7,28 @@ featuredvideoid: removed
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: tutorial
-ms.date: 02/18/2020
+ms.date: 04/18/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 5f4dc1d1f3e707a59ef81e63be42714c499d050f
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 4cad37b9d4a7bf9e74a29312786a02b26fce5463
+ms.sourcegitcommit: faa8cfb66e79ea16ba46605f752cc9ca57924d0e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "77496524"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83382771"
 ---
 # <a name="tutorial-set-alerts-on-power-bi-dashboards"></a>Självstudie: Ställa in aviseringar för instrumentpaneler i Power BI
 
-[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
+[!INCLUDE[consumer-appliesto-ynnn](../includes/consumer-appliesto-ynnn.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-Ställ in aviseringar som meddelar dig när data i dina instrumentpaneler har ändrats så att de överskrider eller underskrider de gränser du har angett. Aviseringar fungerar för mätare, KPI: er och kort. Den här funktionen här fortfarande under utveckling, så [Läs avsnittet tips och felsökning nedan](#tips-and-troubleshooting).
+Ställ in aviseringar som meddelar dig när data i dina instrumentpaneler har ändrats så att de överskrider eller underskrider de gränser du har angett. Aviseringar kan endast konfigureras på paneler som har fästs från visuella objekt i rapporter och endast på mätare, KPI:er och kort. 
 
-![panel, kort, kpi](media/end-user-alerts/card-gauge-kpi.png)
+*Konsumenter* kan lägga till aviseringar i paneler på instrumentpaneler som de har skapat i **Min arbetsyta**. *Konsumenter* kan också lägga till aviseringar till paneler på instrumentpaneler som har delats med dem i en [Premium-kapacitet](end-user-license.md). Om du har en Power BI Pro-licens kan du även konfigurera aviseringar på paneler i andra arbetsytor.
+Den här funktionen här fortfarande under utveckling, så [Läs avsnittet tips och felsökning nedan](#tips-and-troubleshooting).
+
+![panel, kort, KPI](media/end-user-alerts/card-gauge-kpi.png)
 
 Du kan endast se aviseringar som du anger, även om du delar din instrumentpanel. Datavarningar är helt synkroniserade på plattformar. Ställ in och visa datavarningar [i Power BI-appar](mobile/mobile-set-data-alerts-in-the-mobile-apps.md) och i Power BI-tjänsten. 
 
@@ -44,12 +47,12 @@ Den här självstudien beskriver följande.
 
 Om du inte har registrerat dig för Power BI [registrerar du dig för en kostnadsfri utvärderingsversion](https://app.powerbi.com/signupredirect?pbi_source=web) innan du börjar.
 
-I det här exemplet används en instrumentpanels kortpanel från appen Försäljnings- och marknadsföringsexempel. Appen finns tillgänglig på [Microsoft AppSource](https://appsource.microsoft.com). Information om hur du hämtar appen finns i [Installera och använda appar med Power BI](end-user-app-view.md).
+I det här exemplet används en instrumentpanels kortpanel från appen Försäljnings- och marknadsföringsexempel. Appen finns tillgänglig på [Microsoft AppSource](https://appsource.microsoft.com). Information om hur du hämtar appen finns i [Installera och använda appen Försäljning och marknadsföring](end-user-app-marketing.md).
 
 1. Välj ellipserna (tre punkter) från en mätare, KPI eller kortpanel på instrumentpanelen.
    
    ![kortpanel](media/end-user-alerts/power-bi-cards.png)
-2. Välj klockikonen ![aviseringsikon](media/end-user-alerts/power-bi-bell-icon.png) eller **Hantera aviseringar** för att lägga till en eller flera aviseringar för **Totalt antal butiker**.
+2. Välj klockikonen ![Aviseringsikon](media/end-user-alerts/power-bi-bell-icon.png) eller **Hantera aviseringar** för att lägga till en eller flera aviseringar för **% enheter marknadsandel**.
 
    ![kortpanel med markerade ellipser](media/end-user-alerts/power-bi-ellipses.png)
 
@@ -111,10 +114,10 @@ Det finns många sätt att hantera dina aviseringar: Från paneler i instrumentp
 
 ## <a name="tips-and-troubleshooting"></a>Tips och felsökning 
 
-* Aviseringar kan bara ställas in på mätare, KPI:er och kort.
-* Om du inte kan ställa in en avisering för en mätare, KPI eller ett kort kan du kontakta systemadministratören och be om hjälp. Ibland är aviseringar inaktiverade eller otillgängliga för instrumentpanelen eller för vissa typer av paneler på instrumentpanelen.
+* Om du inte kan ställa in en avisering för en mätare, KPI eller ett kort kan du kontakta klientadministratören och be om hjälp. Ibland är aviseringar inaktiverade eller otillgängliga för instrumentpanelen eller för vissa typer av paneler på instrumentpanelen.
 * Aviseringar fungerar bara på data som ska uppdateras. De fungerar inte på statiska data. De flesta av de exempel som tillhandahålls av Microsoft är statiska. 
-* *Användare* skapar inte några egna instrumentpaneler utan *designers* skapar instrumentpaneler som delas med användarna. För att ta emot och visa delat innehåll behövs en Power BI Pro- eller Premium-licens. Mer information finns i [Vilken licens har jag?](end-user-license.md) 
+* För att ta emot och visa delat innehåll behövs en Power BI Pro- eller Premium-licens. Mer information finns i [Vilken licens har jag?](end-user-license.md).
+* Aviseringar kan konfigureras för visuella objekt som skapats från direktuppspelande datamängder som du fäster från en rapport på en instrumentpanel. Aviseringar kan inte konfigureras på direktuppspelande paneler som skapats direkt på instrumentpanelen med hjälp av **Lägg till panel** > **Anpassade direktuppspelande data**.
 
 
 ## <a name="clean-up-resources"></a>Rensa resurser

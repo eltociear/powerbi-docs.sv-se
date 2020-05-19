@@ -6,17 +6,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/28/2018
+ms.date: 05/06/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 132c795724b6f3744e0648ac1f3229c5e6538a97
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: c8b0012224d145f40cb6b9784da1a40957efce50
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "75758432"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277788"
 ---
 # <a name="add-visuals-to-a-power-bi-report-part-2"></a>Lägga till visuella objekt i en Power BI-rapport (del 2)
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -59,7 +61,7 @@ Skapa ett visuellt objekt genom att välja ett fält från fönstret **Fält**. 
 5. [Ändra storlek på visualiseringen](power-bi-visualization-move-and-resize.md) genom att välja visualiseringen, ta tag i en av konturens cirklar och dra. Gör den tillräckligt bred för att eliminera rullningslisten och tillräckligt liten för att ge oss tillräckligt med utrymme för att lägga till ytterligare en visualisering.
    
    ![skärmbild av ett visuellt ytdiagram](media/power-bi-report-add-visualizations-ii/pbi_part2_7b.png)
-6. [Spara rapporten](../service-report-save.md).
+6. [Spara rapporten](../create-reports/service-report-save.md).
 
 ### <a name="add-a-map-visualization-that-looks-at-sales-by-location"></a>Lägga till en kartvisualisering som visar försäljningen efter plats
 
@@ -69,7 +71,10 @@ Skapa ett visuellt objekt genom att välja ett fält från fönstret **Fält**. 
 2. Lägg till en förklaring.  Om du vill visa dina data efter butiksnamn drar du **Butik** > **Kedja** till förklaringsområdet.  
    ![rapportarbetsyta med enpil från Kedja i fältlistan till Kedja i förklaringsbucketen](media/power-bi-report-add-visualizations-ii/power-bi-chain.png)
 
+> [!NOTE]
+> För att dela en rapport med en Power BI-kollega krävs att du både har individuella Power BI Pro-licenser eller att rapporten har sparats med Premium-kapacitet. Se [Dela rapporter](../collaborate-share/service-share-reports.md).
+
 ## <a name="next-steps"></a>Nästa steg
-* Mer om [Visualiseringar i Power BI-rapporter](power-bi-report-visualizations.md).  
-* Fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
+* Du hittar mer i [Visualiseringar i Power BI-rapporter](power-bi-report-visualizations.md).  
+* Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
 

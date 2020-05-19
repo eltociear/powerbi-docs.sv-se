@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/26/2020
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 7bb3dc401fedbb55f5ed81fa5e859cbfee5a1a26
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 7a363af0bb8d6db9f0fd370b7c4b987b51c88221
+ms.sourcegitcommit: faa8cfb66e79ea16ba46605f752cc9ca57924d0e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 05/13/2020
-ms.locfileid: "83274453"
+ms.locfileid: "83382748"
 ---
 # <a name="dataset-connectivity-with-the-xmla-endpoint-preview"></a>Datamängdsanslutning med XMLA-slutpunkten (förhandsversion)
 
@@ -29,6 +29,9 @@ Power BI Premium-arbetsytor och -datauppsättningar på kompatibilitetsnivån 15
 Power BI Premium använder [XML for Analysis](https://docs.microsoft.com/analysis-services/xmla/xml-for-analysis-xmla-reference?view=power-bi-premium-current)-protokollet (XMLA) för kommunikation mellan klientprogram och den motor som hanterar dina Power BI-arbetsytor och -datamängder. Denna kommunikation sker via det som vanligtvis kallas XMLA-slutpunkter. XMLA är samma kommunikationsprotokoll som används av Microsoft Analysis Services-motorn, som under huven kör Power BI:s semantiska modellering, styrning, livscykel och datahantering.
 
 *Skrivskyddad* anslutning med slutpunkten aktiveras som standard för **Datauppsättningens arbetsbelastning** i en kapacitet. Med skrivskyddad information kan datavisualiseringsprogram och verktyg fråga data i datavisualiseringsmodeller, metadata, händelser och scheman. *Läs- och skrivåtgärder* som använder slutpunkten kan aktiveras för att tillhandahålla ytterligare datauppsättningshantering, styrning, avancerad semantisk modellering, felsökning och övervakning. Med läs- och skrivåtgärder är Power BI Premium-datauppsättningar mer jämförbara med Azure Analysis Services och SQL Server Analysis Services-modellverktyg och -processer i företagsklass.
+
+> [!NOTE]
+> Vi rekommenderar att du använder den moderna miljön för arbetsytor, särskilt när du ansluter till dina datauppsättningar med hjälp av XMLA-slutpunkten. Åtgärder som att skapa eller ta bort datauppsättningar stöds inte med klassiska arbetsytor. Information om hur du uppgraderar klassiska arbetsytor till den moderna miljön finns i [Uppgradera klassiska arbetsytor i Power BI](../collaborate-share/service-upgrade-workspaces.md).
 
 ## <a name="data-modeling-and-management-tools"></a>Verktyg för datamodellering och -hantering
 

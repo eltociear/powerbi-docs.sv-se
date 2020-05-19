@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 01/04/2019
-ms.openlocfilehash: d9ebab8c52be8872865b0c308e8629c92603bbaa
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: f9248b659bec744f7da02c4d2639f30bd646bb48
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80403779"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276063"
 ---
 # <a name="tutorial-embed-power-bi-paginated-reports-into-an-application-for-your-customers-preview"></a>Självstudie: Bädda in Power BI:s sidnumrerade rapporter i ett program åt dina kunder (förhandsversion)
 
@@ -34,14 +34,14 @@ Du måste ha följande för att komma igång:
 * Ett [huvudnamn för tjänsten (appspecifik token)](embed-service-principal.md)
 * En [Microsoft Azure](https://azure.microsoft.com/)-prenumeration
 * Du måste ha en egen konfiguration av [Azure Active Directory-klientorganisationen](create-an-azure-active-directory-tenant.md)
-* Minst en A4- eller P1-[kapacitet](#create-a-dedicated-capacity) med [sidnumrerade rapporter](../../service-admin-premium-workloads.md#paginated-reports) och en aktiverad arbetsbelastning
+* Minst en A4- eller P1-[kapacitet](#create-a-dedicated-capacity) med [sidnumrerade rapporter](../../admin/service-admin-premium-workloads.md#paginated-reports) och en aktiverad arbetsbelastning
 
 Om du inte har någon Azure-prenumeration kan du [skapa ett kostnadsfritt konto](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) innan du börjar.
 
 > [!IMPORTANT]
 > * Du måste använda **tjänstens huvudnamn**. Huvudanvändaren stöds inte.
 > * Datakällor som kräver enkel inloggning (SSO) stöds inte.
-> * Power BI-datauppsättningen stöds inte som [datakälla](../../service-get-data.md).
+> * Power BI-datauppsättningen stöds inte som [datakälla](../../connect-data/service-get-data.md).
 
 ## <a name="set-up-your-power-bi-environment"></a>Konfigurera din Power BI-miljö
 
@@ -49,12 +49,12 @@ Om du bäddar in en sidnumrerad rapport måste du tilldela en arbetsyta till en 
 
 ### <a name="create-an-app-workspace"></a>Skapa en apparbetsyta
 
-Men om du använder [tjänstens huvudnamn](embed-service-principal.md) när du loggar in i programmet, måste du använda de [nya arbetsytorna](../../service-create-the-new-workspaces.md). När du använder *tjänstens huvudnamn* måste du dessutom vara administratör eller medlem i de apparbetsytor som ingår i programmet.
+Men om du använder [tjänstens huvudnamn](embed-service-principal.md) när du loggar in i programmet, måste du använda de [nya arbetsytorna](../../collaborate-share/service-create-the-new-workspaces.md). När du använder *tjänstens huvudnamn* måste du dessutom vara administratör eller medlem i de apparbetsytor som ingår i programmet.
 
 ### <a name="create-a-dedicated-capacity"></a>Skapa en dedikerad kapacitet
 
 Innan du importerar eller laddar upp en sidnumrerad rapport som ska bäddas in, måste arbetsytan som innehåller rapporten vara tilldelad minst en A4- eller P1-kapacitet. Det finns två typer av kapaciteter att välja mellan:
-* **Power BI Premium** – Om du ska bädda in en sidnumrerad rapport krävs en *P* SKU-kapacitet. När du bäddar in Power BI-innehåll kallas den här lösningen för *Power BI-inbäddning*. Mer information om prenumerationen finns i [Vad är Power BI Premium?](../../service-premium-what-is.md)
+* **Power BI Premium** – Om du ska bädda in en sidnumrerad rapport krävs en *P* SKU-kapacitet. När du bäddar in Power BI-innehåll kallas den här lösningen för *Power BI-inbäddning*. Mer information om prenumerationen finns i [Vad är Power BI Premium?](../../admin/service-premium-what-is.md)
 * **Azure Power BI Embedded** – Du kan köpa en dedikerad kapacitet i [Microsoft Azure-portalen](https://portal.azure.com). Den här prenumerationen använder *A* SKU:er. Vid inbäddning av sidnumrerade rapporter behöver du minst en *A4*-prenumeration. Mer information om hur du skapar Power BI Embedded-kapacitet finns i [Skapa Power BI Embedded-kapacitet i Azure-portalen](azure-pbie-create-capacity.md).
 
 I tabellen nedan beskrivs resurserna och gränserna för varje SKU. När du ska avgöra vilken kapacitet som passar bäst för dina behov kan du använda tabellen [Vilken SKU ska jag köpa till mitt scenario](https://docs.microsoft.com/power-bi/developer/embedded-faq#which-solution-should-i-choose).
@@ -242,7 +242,7 @@ Report report = reports.Value.FirstOrDefault();
 
 ### <a name="create-the-embed-token"></a>Skapa inbäddningstoken
 
-Skapa en inbäddningstoken som kan användas från JavaScript-API:et. Om du vill skapa en inbäddad token för att bädda in Power BI:s sidnumrerade rapporter, använder du API:et [Reports GenerateTokenForCreateInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetokenforcreateingroup).
+Skapa en inbäddningstoken som kan användas från JavaScript-API:et. Om du vill skapa en inbäddad token för att bädda in Power BI:s sidnumrerade rapporter, använder du API:et [Reports GenerateTokenInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetokeningroup).
 
 Ett exempel på hur du skapar en inbäddningstoken finns i filen  *Services\EmbedService.cs* i [exempelprogrammet](https://github.com/Microsoft/PowerBI-Developer-Samples).
 

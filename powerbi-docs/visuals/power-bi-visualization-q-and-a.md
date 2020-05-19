@@ -1,20 +1,23 @@
 ---
 title: Använd Visuella frågor och svar i Power BI
 description: Så konfigurerar du Visuella frågor och svar i Power BI
-author: mihart
+author: rien
+ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/19/2019
 ms.author: mohaali
-ms.openlocfilehash: a17f98859e637621fbae037610359c8f29391a98
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: e94b27945f277c352773e7f9eaa3979fa8bc7451
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "75762288"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83148353"
 ---
 # <a name="introduction-to-power-bi-qa-visualizations"></a>Introduktion Visuella frågor och svar i Power BI
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
@@ -47,8 +50,10 @@ Visuella frågor och svar består av fyra kärnkomponenter:
 
 1. Välj ![Skärmbild av den gula fliken.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) för att lägga till en ny sida.
 
+Om du ser ett fel när du skapar ett Visuella frågor och svar-objekt ska du läsa avsnittet om [begränsningar](../natural-language/q-and-a-limitations.md) för att se om det finns stöd för din konfiguration av datakällor.    
 
-Om du ser ett fel när du skapar ett Visuella frågor och svar-objekt ska du läsa avsnittet om [begränsningar](../natural-language/q-and-a-limitations.md) för att se om det finns stöd för din konfiguration av datakällor.
+> [!NOTE]
+> För att dela en rapport med en Power BI-kollega krävs att du både har individuella Power BI Pro-licenser eller att rapporten har sparats med Premium-kapacitet. Se [delningsrapporter](../collaborate-share/service-share-reports.md).
 
 ## <a name="create-a-qa-visual-using-a-suggested-question"></a>Skapa ett Visuella frågor och svar-objekt med hjälp av en föreslagen fråga
 I den här övningen väljer vi en av de föreslagna frågorna för att skapa ett eget Visuella frågor och svar-objekt. 
@@ -61,7 +66,7 @@ I den här övningen väljer vi en av de föreslagna frågorna för att skapa et
 
     ![Visuella frågor och svar på rapportarbetsytan](media/power-bi-visualization-q-and-a/power-bi-qna.png)
 
-3. Skapa det visuella objektet genom att välja en av de föreslagna frågorna eller börja skriva i frågerutan. I det här exemplet har vi valt **top geo states by sum of revenue**. Power BI väljer vilken typ av visualisering som ska användas. I det här fallet är det en karta.
+3. Skapa det visuella objektet genom att välja en av de föreslagna frågorna eller börja skriva i frågerutan. I det här exemplet har vi valt **top geo states by sum of revenue**. Power BI väljer vilken typ av visualisering som ska användas efter bästa förmåga. I det här fallet är det en karta.
 
     ![Karta för Visuella frågor och svar](media/power-bi-visualization-q-and-a/power-bi-map.png)
 
@@ -87,7 +92,7 @@ Om du är osäker på vilken typ av frågor du ska ställa eller vilken terminol
 
 5. Med hjälp av Power BI kunde vi ställa en fråga där alla termer känns igen. Power BI visar resultatet som ett linjediagram. 
 
-    ![Visuella resultat från Frågor och svar](media/power-bi-visualization-q-and-a/power-bi-type.png)
+    ![Resultat från Visuella frågor och svar](media/power-bi-visualization-q-and-a/power-bi-type.png)
 
 
 6. Nu ska vi ändra det visuella objektet till ett kolumndiagram. 
