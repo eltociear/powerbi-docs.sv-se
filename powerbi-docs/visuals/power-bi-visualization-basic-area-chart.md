@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/05/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: f6960d3087ba5b271c6c130df59e6e667e838165
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: e03a453b95a797b281f789e8aed40b3879b54e02
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83277167"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83563859"
 ---
 # <a name="create-and-use-basic-area-charts"></a>Skapa och använda enkla ytdiagram
 
@@ -82,11 +82,8 @@ Läs mer i [Visuella interaktioner i rapporter](../create-reports/service-report
 
 
 ## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning   
-* [Gör rapporten mer lättillgänglig för personer med funktionshinder](../desktop-accessibility.md)
+* [Gör rapporten mer lättillgänglig för personer med funktionshinder](../create-reports/desktop-accessibility-overview.md)
 * Grundläggande ytdiagram är inte effektiva för att jämföra värden på grund av ocklusion av överlappande områden. Power BI använder genomskinlighet för att ange överlappande områden. Dock fungerar det bara bra med två eller tre olika områden. När du behöver jämföra trender med fler än tre mått, kan du testa att använda linjediagram. När du behöver jämföra volym med fler än tre mått, kan du testa att använda en trädkarta.
 
 ## <a name="next-step"></a>Nästa steg
 [Rapporter i Power BI](power-bi-visualization-card.md)  
-
-
-

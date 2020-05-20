@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/17/2020
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 0b0bf61672d383900dad50e5fe7404f7f4a7f0bc
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 96a780d7d7b100acb283623107d4ec841666bb8f
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83348929"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83561672"
 ---
 # <a name="intro-to-dashboard-tiles-for-power-bi-designers"></a>Introduktion till paneler på instrumentpanelen för Power BI-designers
 
@@ -23,7 +23,7 @@ En panel är en ögonblicksbild av dina data, fäst på instrumentpanelen. En pa
 
 ![Power BI-instrumentpanel](media/service-dashboard-tiles/power-bi-dashboard.png)
 
-Instrumentpaneler och paneler på instrumentpanelen är en funktion i Power BI-tjänsten, inte Power BI Desktop. Du kan inte skapa instrumentpaneler på mobila enheter, men du kan [view and share]../consumer/mobile/mobile-apps-view-dashboard.md) dem där.
+Instrumentpaneler och paneler på instrumentpanelen är en funktion i Power BI-tjänsten, inte Power BI Desktop. Du kan inte skapa instrumentpaneler på mobila enheter, men du kan [visa och dela](../consumer/mobile/mobile-apps-view-dashboard.md) dem.
 
 Utöver att fästa paneler kan du även skapa fristående paneler direkt på instrumentpanelen med hjälp av kontrollen [Lägg till panel](service-dashboard-add-widget.md). Fristående paneler innehåller: textrutor, bilder, videor, strömmande data och webbinnehåll.
 
@@ -98,6 +98,6 @@ När du väljer en panel beror händelseförloppet på hur du skapade panelen. I
 - [Datauppdatering i Power BI](../connect-data/refresh-data.md)
 - [Grundläggande begrepp för designers i Power BI-tjänsten](../fundamentals/service-basic-concepts.md)
 - [Integrera Power BI-paneler i Office-dokument](https://powerbi.microsoft.com/blog/integrating-power-bi-tiles-into-office-documents/)
-- [Fästa Reporting Services-objekt till Power BI-instrumentpaneler](https://msdn.microsoft.com/library/mt604784.aspx)
+- [Fästa Reporting Services-objekt till Power BI-instrumentpaneler](/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards)
 
 Har du fler frågor? [Testa Power BI Community](https://community.powerbi.com/).

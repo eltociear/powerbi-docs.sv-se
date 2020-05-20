@@ -9,12 +9,12 @@ ms.topic: reference
 ms.date: 05/06/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 27509d42b09b9524b204da5ab0ce76f3d180a057
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 06033a65acd090f0297a53bfbf0f0a004b68649a
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83293178"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83561580"
 ---
 # <a name="data-types-in-power-bi-desktop"></a>Datatyper i Power BI Desktop
 Den här artikeln beskriver datatyper som stöds i Power BI Desktop och dataanalysuttryck (DAX). 
@@ -72,7 +72,7 @@ Power BI Desktop har stöd för fem datum/tid-datatyper i frågevyn.  Både datu
 **Sant/falskt** – Ett booleskt värde för antingen sant eller falskt.
 
 ### <a name="blanksnulls-type"></a>Typen tomt/null
-**Tomt** – Är en datatyp i DAX som visar och ersätter null-värden i SQL. Du kan skapa ett tomt värde med funktionen [BLANK](https://msdn.microsoft.com/library/ee634820.aspx) och testa om det finns några tomma värden med hjälp av den logiska funktionen [ISBLANK](https://msdn.microsoft.com/library/ee634204.aspx).
+**Tomt** – Är en datatyp i DAX som visar och ersätter null-värden i SQL. Du kan skapa ett tomt värde med funktionen [BLANK](/dax/blank-function-dax) och testa om det finns några tomma värden med hjälp av den logiska funktionen [ISBLANK](/dax/isblank-function-dax).
 
 ### <a name="binary-data-type"></a>Datatypen Binär
 
@@ -86,7 +86,7 @@ Den binära datatypen kan användas för att representera andra data med binärf
 > 
 
 ### <a name="table-data-type"></a>Tabelldatatyp
-DAX använder en tabelldatatyp i många funktioner, till exempel aggregeringar och beräkningar av tidsinformation. Vissa funktioner kräver en referens till en tabell. Andra funktioner returnerar en tabell som sedan kan användas som indata för andra funktioner. I vissa funktioner som kräver en tabell som indata, kan du ange ett uttryck som returnerar en tabell. För vissa funktioner krävs en referens till en bastabell. Information om kraven för specifika funktioner finns i [DAX-funktionsreferens](https://msdn.microsoft.com/library/ee634396.aspx).
+DAX använder en tabelldatatyp i många funktioner, till exempel aggregeringar och beräkningar av tidsinformation. Vissa funktioner kräver en referens till en tabell. Andra funktioner returnerar en tabell som sedan kan användas som indata för andra funktioner. I vissa funktioner som kräver en tabell som indata, kan du ange ett uttryck som returnerar en tabell. För vissa funktioner krävs en referens till en bastabell. Information om kraven för specifika funktioner finns i [DAX-funktionsreferens](/dax/dax-function-reference).
 
 ## <a name="implicit-and-explicit-data-type-conversion-in-dax-formulas"></a>Implicit och explicit konvertering av datatyper i DAX-formler
 Varje DAX-funktion har specifika krav beträffande vilka typer av data som används som indata och utdata. Till exempel kräver en del funktioner heltal för vissa argument och datum för andra, medan andra funktioner kräver text eller tabeller.
@@ -197,4 +197,3 @@ Hur tomma värden ska hanteras i åtgärder som till exempel addition eller samm
 | TRUE AND BLANK |FALSE |TRUE |
 | BLANK OR BLANK |BLANK |Fel |
 | BLANK AND BLANK |BLANK |Fel |
-

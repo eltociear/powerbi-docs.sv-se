@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/08/2018
-ms.openlocfilehash: e74e390a5d228cb4a158d422cf0adab48b573cce
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 7dad7071fbf887c36443cacdb9be83d83e0b89be
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79079679"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83561511"
 ---
 # <a name="dataset-properties"></a>Egenskaper för datamängd
 
@@ -46,8 +46,8 @@ isHidden     | Boolean (Boolesk)        | Om värdet är Sant döljs tabellen fr
 Namn  |Typ  |Beskrivning  |Skrivskyddad  |Krävs
 ---------|---------|---------|---------|---------
 namn     |  Sträng        | Användardefinierat namn på kolumnen.        |  Falskt       | Sant       
-dataType     |  Sträng       |  [EDM-datatyper](https://msdn.microsoft.com/library/ee382832.aspx) som stöds och begränsningar. Se [Begränsningar för datatyper](#data-type-restrictions).      |  Falskt       | Sant        
-formatString     | Sträng        | En sträng som anger hur värdet ska formateras när det visas. Mer information om strängformatering finns på sidan om [FORMAT_STRING Contents](https://msdn.microsoft.com/library/ms146084.aspx) (Innehållsformat i strängar).      | Falskt        | Falskt        
+dataType     |  Sträng       |  [EDM-datatyper](/dotnet/framework/data/adonet/entity-data-model-primitive-data-types) som stöds och begränsningar. Se [Begränsningar för datatyper](#data-type-restrictions).      |  Falskt       | Sant        
+formatString     | Sträng        | En sträng som anger hur värdet ska formateras när det visas. Mer information om strängformatering finns på sidan om [FORMAT_STRING Contents](/analysis-services/multidimensional-models/mdx/mdx-cell-properties-format-string-contents) (Innehållsformat i strängar).      | Falskt        | Falskt        
 sortByColumn    | Sträng        |   Strängnamn på en kolumn i samma tabell som ska användas för att ordna den aktuella kolumnen.     | Falskt        | Falskt       
 dataCategory     | Sträng        |  Strängvärdet som ska användas för datakategorin som beskriver data i kolumnen. Några vanliga värden är: Adress, Stad, Kontinent, Land, Bild, Bild-URL, Latitud, Longitud, Organisation, Plats, Postnummer, Region, Webb-URL.       |  Falskt       | Falskt        
 isHidden    |  Boolean (Boolesk)       |  Egenskap som anger om kolumnen är dold från vyn. Standardvärdet är falskt.       | Falskt        | Falskt        
@@ -59,7 +59,7 @@ Namn  |Typ  |Beskrivning  |Skrivskyddad  |Krävs
 ---------|---------|---------|---------|---------
 namn     | Sträng        |  Användardefinierat namn på måttet.       |  Falskt       | Sant        
 uttryck     | Sträng        | Ett giltigt DAX-uttryck.        | Falskt        |  Sant       
-formatString     | Sträng        |  En sträng som anger hur värdet ska formateras när det visas. Mer information om strängformatering finns på sidan om [FORMAT_STRING Contents](https://msdn.microsoft.com/library/ms146084.aspx) (Innehållsformat i strängar).       | Falskt        | Falskt        
+formatString     | Sträng        |  En sträng som anger hur värdet ska formateras när det visas. Mer information om strängformatering finns på sidan om [FORMAT_STRING Contents](/analysis-services/multidimensional-models/mdx/mdx-cell-properties-format-string-contents) (Innehållsformat i strängar).       | Falskt        | Falskt        
 isHidden     | Sträng        |  Om värdet är Sant döljs tabellen från klientverktyg.       |  Falskt       | Falskt       
 
 ## <a name="relationship"></a>Relation

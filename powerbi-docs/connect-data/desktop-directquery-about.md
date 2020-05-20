@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/09/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: cf937ea36727ec036e3799cb0ac48dfbb5740325
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: dfd44b7130c1c7e4e1d2d7a9c9f15208cb0d9b0c
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83292925"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83563297"
 ---
 # <a name="about-using-directquery-in-power-bi"></a>Använda DirectQuery i Power BI
 
@@ -371,7 +371,7 @@ Om du går till mappens överordnade mapp ser du mappen som innehåller *Analysi
 
 I den här mappen finns mappen *\\data*. Den innehåller spårningsfilen *FlightRecorderCurrent.trc* för den aktuella Power BI-sessionen. Motsvarande arbetsytemapp tas bort när den associerade Power BI Desktop-sessionen avslutas.
 
-Du kan läsa spårningsfiler med verktyget *SQL Server Profiler*. Det ingår i den kostnadsfria nedladdningen av [SQL Server Management Studio](https://msdn.microsoft.com/library/mt238290.aspx).
+Du kan läsa spårningsfiler med verktyget *SQL Server Profiler*. Det ingår i den kostnadsfria nedladdningen av [SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms).
 
 När du har laddat ned och installerat SQL Server Management Studio så kör du SQL Server Profiler.
 
