@@ -208,8 +208,8 @@
               href: refresh-data.md
             - name: Konfigurera schemalagd uppdatering
               href: refresh-scheduled-refresh.md
-            - name: Uppdatera center
-              href: refresh-center.md
+            - name: Uppdatera sammanfattningar
+              href: refresh-summaries.md
             - name: Konfigurera inkrementell uppdatering
               href: ../admin/service-premium-incremental-refresh.md
             - name: Uppdatera en datauppsättning från en lokal Power BI Desktop-fil

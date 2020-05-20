@@ -257,7 +257,7 @@
               href: ../visuals/power-bi-visualization-card.md
             - name: Kombinationsdiagram
               href: ../visuals/power-bi-visualization-combo-chart.md
-            - name: Visualisering av nedbrytningsträd (förhandsversion)
+            - name: Visualisering med nedbrytningsträd
               href: ../visuals/power-bi-visualization-decomposition-tree.md
             - name: Ringdiagram
               href: ../visuals/power-bi-visualization-doughnut-charts.md
