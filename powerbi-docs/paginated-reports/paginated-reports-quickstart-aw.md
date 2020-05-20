@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 11/06/2018
-ms.openlocfilehash: 45edb3695acdcc5519fb0b62cebc853ff25ce97a
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 81e293f4dbf15a21c2546a54f140b163ebc93c05
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83145230"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565659"
 ---
 # <a name="tutorial-create-a-paginated-report-and-upload-it-to-the-power-bi-service"></a>Självstudie: Skapa en sidnumrerad rapport och ladda upp den till Power BI-tjänsten
 
@@ -42,7 +42,7 @@ Här följer förutsättningarna för att skapa den sidnumrerade rapporten:
 
 Här är förutsättningarna för att ladda upp din sidnumrerade rapport till Power BI-tjänsten:
 
-- Du måste ha en [Power BI Pro-licens](../service-admin-power-bi-pro-in-your-organization.md).
+- Du måste ha en [Power BI Pro-licens](../admin/service-admin-licensing-organization.md).
 - Du måste ha en arbetsyta i tjänsten i en [Power BI Premium-kapacitet](../admin/service-premium-what-is.md). Den visas med en diamantikon ![Premium-diamantikon](media/paginated-reports-quickstart-aw/premium-diamond.png) bredvid arbetsytans namn.
 
 ## <a name="create-the-matrix-with-a-wizard"></a>Skapa matrisen med en guide

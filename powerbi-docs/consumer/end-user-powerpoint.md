@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/12/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 1dbb35ab45a1172044cedb7fbe484ed4da6c43db
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: f70c41e40ff2da385b2f63798b93dec3fcd7b7c5
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83348377"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565751"
 ---
 # <a name="export-reports-to-powerpoint"></a>Exportera rapporter till PowerPoint
 
@@ -31,7 +31,7 @@ Med tjänsten Power BI (app.powerbi.com) kan du publicera din rapport till Micro
 
 Att få din **Power BI-rapport** exporterad till **PowerPoint** går snabbt. Följ stegen som beskrivs i nästa avsnitt.
 
-Du kan också kopiera ett visuellt objekt i taget från Power BI-tjänsten och klistra in det i PowerPoint (eller något annat program som stöder inklistring). Välj ikonen för **Kopiera som bild** för att kopiera det visuella objektet till Urklipp. Öppna sedan PowerPoint och klistra in det visuella objektet. Mer information finns i [Kopiera visuella objekt som statiska bilder](../power-bi-visualization-copy-paste.md).
+Du kan också kopiera ett visuellt objekt i taget från Power BI-tjänsten och klistra in det i PowerPoint (eller något annat program som stöder inklistring). Välj ikonen för **Kopiera som bild** för att kopiera det visuella objektet till Urklipp. Öppna sedan PowerPoint och klistra in det visuella objektet. Mer information finns i [Kopiera visuella objekt som statiska bilder](../visuals/power-bi-visualization-copy-paste.md).
 
 ![Välj ikonen Kopiera som bild](media/end-user-powerpoint/power-bi-copy.png)
 
@@ -87,12 +87,12 @@ Det är nu upp till dig vad du vill göra med PowerPoint-presentationen eller n�
 Det finns några överväganden och begränsningar som du bör tänka på när du arbetar med funktionen **exportera till PowerPoint**.
  
 
-* [URL-filter](../service-url-filters.md) respekteras för närvarande inte när du väljer **Aktuella värden** för exporten.
+* [URL-filter](../collaborate-share/service-url-filters.md) respekteras för närvarande inte när du väljer **Aktuella värden** för exporten.
 
 * Om rapporten använder ett anpassat teckensnitt när du exporterar till PowerPoint, så ersätts det teckensnittet med ett standardteckensnitt.
 
 * Följande visuella typer stöds inte och kommer inte att exporteras till PowerPoint:
-   - [Anpassade visuella objekt som inte har certifierats](../developer/power-bi-custom-visuals-certified.md)) stöds inte. 
+   - [Anpassade visuella objekt som inte har certifierats](../developer/visuals/power-bi-custom-visuals-certified.md)) stöds inte. 
    - Det [visuella ESRI ArcGIS-objektet](../visuals/power-bi-visualizations-arcgis.md) stöds inte
    - Visuella R- och Python-objekt stöds inte.
    - Bakgrundsbilder beskärs med diagrammets markeringsområdet. Vi rekommenderar att du tar bort bakgrundsbilder innan du exporterar till PowerPoint.
@@ -109,5 +109,5 @@ Det finns några överväganden och begränsningar som du bör tänka på när d
 
 
 ## <a name="next-steps"></a>Nästa steg
-[Kopiera visuella objekt som statiska bilder](../power-bi-visualization-copy-paste.md)    
+[Kopiera visuella objekt som statiska bilder](../visuals/power-bi-visualization-copy-paste.md)    
 [Skriva ut en rapport](end-user-print.md)

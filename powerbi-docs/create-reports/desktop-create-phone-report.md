@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/18/2019
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 593847d229dcd4e2081843523a0a988415a9ef81
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: cab4accfa11a4c92c1672314e2157659ef68f21a
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83297985"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83564756"
 ---
 # <a name="optimize-power-bi-reports-for-the-mobile-app"></a>Optimera Power BI-rapporter för mobilappen
 Du kan förbättra upplevelsen av att visa rapporter i mobilapparna genom att skapa en stående layout. I Power BI Desktop och i Power BI-tjänsten ordnar du om och ändrar storlek på visuella objekt för att få en optimal upplevelse i stående läge.  
@@ -58,7 +58,7 @@ När ett visuellt objekt får en annan storlek prioriterar Power BI datavyn. Til
 
 ![Dynamisk storleksändring av visuella objekt](media/desktop-create-phone-report/desktop-create-phone-report-6.gif)
 
-Du väljer om du ska aktivera svarstider för varje visuellt objekt. Läs mer om att [optimera visuella objekt](../visuals/desktop-create-responsive-visuals.md).
+Du väljer om du ska aktivera svarstider för varje visuellt objekt. Läs mer om att [optimera visuella objekt](../visuals/power-bi-report-visualizations.md).
 
 ## <a name="considerations-when-creating-phone-report-layouts"></a>Överväganden när man skapar telefonrapportlayouter
 * För rapporter med flera sidor kan du optimera alla sidor eller enbart ett fåtal. 
@@ -108,5 +108,5 @@ Rapportläsarna kan vrida sina telefoner eller surfplattor åt sidan för att se
 ## <a name="next-steps"></a>Nästa steg
 * [Skapa en telefonvy av en instrumentpanel i Power BI](service-create-dashboard-mobile-phone-view.md).
 * [Visa Power BI-rapporter som är optimerade för din telefon](../consumer/mobile/mobile-apps-view-phone-report.md).
-* [Skapa dynamiska visuella objekt som optimerats för alla storlekar](../visuals/desktop-create-responsive-visuals.md).
+* [Skapa dynamiska visuella objekt som optimerats för alla storlekar](../visuals/power-bi-report-visualizations.md).
 * Fler frågor? [Fråga Power BI Community](https://community.powerbi.com/).

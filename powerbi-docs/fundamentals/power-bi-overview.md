@@ -8,12 +8,12 @@ ms.topic: overview
 ms.date: 09/04/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: f02c383ddbe9eddca180ad8bd29816730c249561
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 9a7e7319bf8f5ccf517596d708dea4c1f4a41590
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83349619"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83564459"
 ---
 # <a name="what-is-power-bi"></a>Vad är Power BI?
 **Power BI** är en samling programvarutjänster, appar och kopplingar som arbetar tillsammans för att förvandla dina orelaterade datakällor till sammanhängande, visuellt fördjupande och interaktiva insikter. Dina data kan finnas i ett Excel-kalkylblad eller i en samling molnbaserade och lokala hybridinformationslager. Med Power BI kan du enkelt ansluta till dina datakällor, visualisera och upptäcka det som är viktigt och dela resultat med alla du vill.
@@ -70,6 +70,6 @@ Power BI-rapportservern är en lösning som du distribuerar bakom brandväggen o
 Läs mer om [Power BI-rapportservern](../report-server/get-started.md).
 
 ## <a name="next-steps"></a>Nästa steg
-- [Snabbstart: Lär dig använda Power BI-tjänsten](../service-the-new-power-bi-experience.md)   
+- [Snabbstart: Lär dig använda Power BI-tjänsten](../consumer/end-user-experience.md)   
 - [Självstudie: Kom igång med Power BI-tjänsten](service-get-started.md)
 - [Snabbstart: Ansluta till data i Power BI Desktop](../connect-data/desktop-quickstart-connect-to-data.md)

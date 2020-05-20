@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/14/2020
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: b89c64caa7a4f8fe846cca488164758550a4869a
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 78031bb4f8326b50917b5c299948518717cc18a9
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83361208"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83566073"
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nyheter i Power BI-tjänsten
 Kontrollera den här sidan för kända problem och nyligen utgivna funktioner i **Power BI-tjänsten**. Relaterad information om nyheter finns i:
@@ -224,7 +224,7 @@ Besök även våra YouTube-kanaler för information om nyheter och funktioner.
 
 ### <a name="june-2017"></a>Juni 2017
 * [Power BI Premium](https://powerbi.microsoft.com/blog/power-bi-premium-generally-available/) görs allmänt tillgänglig.
-* Flera API förbättringar av [automatiska schemalagda uppdateringar](https://powerbi.microsoft.com/blog/announcing-data-refresh-apis-in-the-power-bi-service/), [klona och bind om rapporter](https://github.com/Azure-Samples/powerbi-powershell/blob/master/rebindReport.ps1), [uppdatera gatewaybindningar](https://msdn.microsoft.com/library/mt784650.aspx), och mycket mer
+* Flera API förbättringar av [automatiska schemalagda uppdateringar](https://powerbi.microsoft.com/blog/announcing-data-refresh-apis-in-the-power-bi-service/), [klona och bind om rapporter](https://github.com/Azure-Samples/powerbi-powershell/blob/master/rebindReport.ps1), [uppdatera gatewaybindningar](/rest/api/power-bi/), och mycket mer
 * Relativa länkar i Power BI-appar från paneler på instrumentpanelen till andra instrumentpaneler och rapporter.
 * [Impala-anslutningsprogrammet](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#impala) är allmänt tillgängligt i Power BI Desktop.
 * Utökade visuella funktioner i Power BI med [interaktiva visuella R-objekt i Power BI](https://powerbi.microsoft.com/blog/interactive-r-custom-visuals-support-is-here/).

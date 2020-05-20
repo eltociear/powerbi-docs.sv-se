@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: cfbffaa06f3cfc393ba3381adbfc1a7613c2f0c1
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 04b5bfbc08295974efcb7d583036d96274754bad
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83349366"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565705"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-for-windows-10"></a>Kom igång med Power BI-mobilappen för Windows 10
 Power BI-mobilappen för Windows 10 ger Power BI till din surfplatta eller telefon. Du får aktuell, mobil åtkomst med pekfunktion till din företagsinformation. Visa och interagera med ditt företags instrumentpaneler från valfri plats – direkt från [Windows-startskärmen](mobile-pin-dashboard-start-screen-windows-10-phone-app.md).
@@ -118,8 +118,8 @@ Här följer några saker som du kan göra i Power BI-appen för Windows 10-enhe
 
 ### <a name="reporting-services-mobile-reports-and-kpis"></a>Reporting Services-mobila rapporter och KPI:er
 * [Se mobila rapporter i Reporting Services och KPI:er](mobile-app-windows-10-ssrs-kpis-mobile-reports.md) på Power BI-appen för Windows 10-enheter.
-* Skapa [KPI:er i Reporting Services-webbportalen](https://msdn.microsoft.com/library/mt683632.aspx).
-* [Skapa dina egna mobila rapporter med SQL Server Mobile Report Publisher](https://msdn.microsoft.com/library/mt652547.aspx) och publicera dem till Reporting Services-webbportalen.
+* Skapa [KPI:er i Reporting Services-webbportalen](/sql/reporting-services/working-with-kpis-in-reporting-services).
+* [Skapa dina egna mobila rapporter med SQL Server Mobile Report Publisher](/sql/reporting-services/mobile-reports/create-mobile-reports-with-sql-server-mobile-report-publisher) och publicera dem till Reporting Services-webbportalen.
 
 ## <a name="next-steps"></a>Nästa steg
 * [Ladda ned Power BI-appen](https://go.microsoft.com/fwlink/?LinkID=526478) från Windows Store  

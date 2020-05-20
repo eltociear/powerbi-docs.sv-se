@@ -9,12 +9,12 @@ ms.topic: troubleshooting
 ms.date: 09/13/2019
 ms.author: maggies
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 583d33a1d28fa926bdea41988d651f12de5a8e92
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: a490951808271cb845c1ec558344bcf5fdc6c145
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83309140"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83564956"
 ---
 # <a name="troubleshooting-refresh-scenarios"></a>Felsöka uppdateringsscenarier
 
@@ -33,7 +33,7 @@ Kontakta Power BI-administratören om du hamnat i den här artikeln från ett e-
 
 ## <a name="refresh-using-web-connector-doesnt-work-properly"></a>Uppdatering med hjälp av webbanslutningen fungerar inte korrekt
 
-Om du har ett webbanslutningsskript som använder funktionen [**Web.Page**](https://msdn.microsoft.com/library/mt260924.aspx) och du har uppdaterat din datauppsättning eller rapport efter den 18 november 2016, måste du använda en gateway för att uppdateringen ska fungera korrekt.
+Om du har ett webbanslutningsskript som använder funktionen [**Web.Page**](/powerquery-m/web-page) och du har uppdaterat din datauppsättning eller rapport efter den 18 november 2016, måste du använda en gateway för att uppdateringen ska fungera korrekt.
 
 ## <a name="unsupported-data-source-for-refresh"></a>Datakälla utan stöd för uppdatering
 

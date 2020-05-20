@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: arthii
 LocalizationGroup: Gateways
-ms.openlocfilehash: deb72b1b66d4cbc87c2e317bb1fe1428c079cfea
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 2c71f26949f19ed1beb29a162c18dc36ed689c21
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83308956"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565356"
 ---
 # <a name="manage-your-data-source---analysis-services"></a>Hantera din datakälla – Analysis Services
 
@@ -54,9 +54,9 @@ Om du vill kan du konfigurera sekretessnivån för datakällan. Den här instäl
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Qb5EEjkHoLg" frameborder="0" allowfullscreen></iframe>
 
-Varje gång en användare interagerar med en rapport ansluten till Analysis Services, skickas användarnamnet till gatewayen och sedan vidare till den lokala Analysis Services-servern. Den e-postadress som du använder för att logga in på Power BI skickas till Analysis Services som den gällande användaren. Den skickas i anslutningsegenskapen [EffectiveUserName](https://msdn.microsoft.com/library/dn140245.aspx#bkmk_auth). 
+Varje gång en användare interagerar med en rapport ansluten till Analysis Services, skickas användarnamnet till gatewayen och sedan vidare till den lokala Analysis Services-servern. Den e-postadress som du använder för att logga in på Power BI skickas till Analysis Services som den gällande användaren. Den skickas i anslutningsegenskapen [EffectiveUserName](/analysis-services/instances/connection-string-properties-analysis-services#bkmk_auth). 
 
-E-postadressen måste matcha ett definierat UPN (användarens huvudnamn) i den lokala Active Directory-domänen. UPN är en egenskap för ett Active Directory-konto. Windows-kontot måste finnas i en Analysis Services-roll. Inloggningen misslyckas om ingen matchning hittas i Active Directory. Mer information om Active Directory och namngivning av användare finns i [Attribut för namngivning av användare](https://msdn.microsoft.com/library/ms677605.aspx).
+E-postadressen måste matcha ett definierat UPN (användarens huvudnamn) i den lokala Active Directory-domänen. UPN är en egenskap för ett Active Directory-konto. Windows-kontot måste finnas i en Analysis Services-roll. Inloggningen misslyckas om ingen matchning hittas i Active Directory. Mer information om Active Directory och namngivning av användare finns i [Attribut för namngivning av användare](/windows/win32/ad/naming-properties).
 
 Du kan även [mappa ditt Power BI-inloggningsnamn med en lokal katalog-UPN](service-gateway-enterprise-manage-ssas.md#map-user-names-for-analysis-services-data-sources).
 
@@ -203,7 +203,7 @@ En användares möjlighet att fråga och visa modelldata bestäms av:
 - De roller som användarens Windows-användarkonto är medlem i.
 - Dynamisk säkerhet på radnivå, om det har konfigurerats.
 
-Rollimplementering och dynamisk säkerhet på radnivå i modeller ligger utanför den här artikelns fokus. Mer information finns i [Roles (SSAS tabular)](https://msdn.microsoft.com/library/hh213165.aspx) och [Security roles (Analysis Services - Multidimensional data)](https://msdn.microsoft.com/library/ms174840.aspx) på MSDN. Om du vill ha riktigt djup förståelse av säkerhet för tabellmodeller kan du ladda ned och läsa [white paper om BI-semantikmodellen för tabeller](https://msdn.microsoft.com/library/jj127437.aspx).
+Rollimplementering och dynamisk säkerhet på radnivå i modeller ligger utanför den här artikelns fokus. Mer information finns i [Roles (SSAS tabular)](/analysis-services/tabular-models/roles-ssas-tabular) och [Security roles (Analysis Services - Multidimensional data)](/analysis-services/multidimensional-models/olap-logical/security-roles-analysis-services-multidimensional-data) på MSDN. Om du vill ha riktigt djup förståelse av säkerhet för tabellmodeller kan du ladda ned och läsa [white paper om BI-semantikmodellen för tabeller](https://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx).
 
 ## <a name="what-about-azure-ad"></a>Om Azure AD
 

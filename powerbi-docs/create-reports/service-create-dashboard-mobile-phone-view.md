@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/18/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 93d94aadb8e7606fd6d55c463a2be88f87e48047
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 2aa75d1cbe04f33197bf8941fd101c66384142dd
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83314867"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565820"
 ---
 # <a name="optimize-a-dashboard-for-mobile-phones---power-bi"></a>Optimera en instrumentpanel för mobiltelefoner – Power BI 
 När du visar instrumentpaneler i stående läge på en telefon märker du att instrumentpanelens paneler placeras ut en i taget, alla i samma storlek. I Power BI-tjänsten kan du skapa en anpassad vy av en instrumentpanel särskilt för stående läge på mobiltelefoner. Även om du skapar en telefonvy ser du instrumentpanelen som den ser ut i tjänsten när du vänder telefonen i sidled.
@@ -57,5 +57,5 @@ Letar du efter information om visning av instrumentpaneler på en mobil enhet? P
 
 ## <a name="next-steps"></a>Nästa steg
 * [Skapa rapporter som är optimerade för Power BI-telefonappar](desktop-create-phone-report.md)
-* [Skapa dynamiska visuella objekt som optimerats för alla storlekar](../visuals/desktop-create-responsive-visuals.md)
+* [Skapa dynamiska visuella objekt som optimerats för alla storlekar](../visuals/power-bi-report-visualizations.md)
 * Fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

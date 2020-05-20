@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/05/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 89b81286819e5f286a26efeb6b36d6336446132c
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 8a7b5785712aeac318b3d8a2bbd14ab7170a435f
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83277834"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565912"
 ---
 # <a name="tips-and-tricks-for-power-bi-map-visualizations"></a>Tips för Power BI-kartvisualiseringar
 
@@ -55,7 +55,7 @@ Du kan kontrollera att fält är korrekt geokodade i Power BI Desktop genom att 
 **2. Använda mer än en platskolumn.**     
  Ibland räcker det inte att ställa in datakategorier för kartor för att Bing ska kunna gissa din avsikt. Vissa benämningar är tvetydiga eftersom platsen som finns i flera länder eller regioner. ***Southampton*** finns till exempel i England, Pennsylvania och New York.
 
-Power BI använder Bings [Ostrukturerade URL-malltjänst](https://msdn.microsoft.com/library/ff701714.aspx) för att hämta latitud- och longitudkoordinater baserat på en uppsättning adressvärden för valfritt land. Om dina data inte innehåller tillräckligt med platsdata kan du lägga till dessa kolumner och kategorisera dem korrekt.
+Power BI använder Bings [Ostrukturerade URL-malltjänst](/bingmaps/rest-services/locations/find-a-location-by-address) för att hämta latitud- och longitudkoordinater baserat på en uppsättning adressvärden för valfritt land. Om dina data inte innehåller tillräckligt med platsdata kan du lägga till dessa kolumner och kategorisera dem korrekt.
 
  Om du bara har en stadskolumn blir geokodningen svår för Bing. Lägga till ytterligare geokolumner om du vill att platsen ska vara entydig.  Ibland räcker det att lägga till en platskolumn i datauppsättningen, i det här fallet en stat/provins. Glöm inte att kategorisera den korrekt, se nr 1 ovan.
 
@@ -97,5 +97,3 @@ När du ändrar detaljnivån med geo-hierarkier är det viktigt att veta hur var
 [Visualiseringar i Power BI](power-bi-report-visualizations.md)
 
 Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
-
-

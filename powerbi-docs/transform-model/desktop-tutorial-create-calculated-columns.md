@@ -9,12 +9,12 @@ ms.topic: tutorial
 ms.date: 11/26/2019
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 858ecc07deabf5b91295220c2b92791b998ecf3a
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: e5394a9ac7b7dbfc9edcfac53ea87d061e306a47
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83349251"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565843"
 ---
 # <a name="tutorial-create-calculated-columns-in-power-bi-desktop"></a>Självstudier: Skapa beräknade kolumner i Power BI Desktop
 
@@ -46,7 +46,7 @@ I din försäljningsrapport vill du visa produktkategorier och underkategorier s
 
 2. Som standard får nya beräknade kolumner namnet **Kolumn**. Om du inte byter ut det här namnet får ytterligare nya kolumner namnet **Kolumn 2**, **Kolumn 3** och så vidare. Du vill att kolumnen ska vara enklare att identifiera, så även om namnet **Kolumn** redan är markerat i formelfältet byter du ut det här namnet genom att skriva **ProductFullCategory** och sedan ett likhetstecken ( **=** ).
 
-3. Du vill att värdena i din nya kolumn ska börja med namnet i fältet **ProductCategory**. Eftersom den här kolumnen finns i annan (men relaterad) tabell, kan du använda funktionen [RELATED](https://msdn.microsoft.com/library/ee634202.aspx) för att hämta den.
+3. Du vill att värdena i din nya kolumn ska börja med namnet i fältet **ProductCategory**. Eftersom den här kolumnen finns i annan (men relaterad) tabell, kan du använda funktionen [RELATED](/dax/related-function-dax) för att hämta den.
 
    Efter likhetstecknet skriver du **r**. En listruta med förslag visar alla DAX-funktioner som börjar med bokstaven R. Genom att välja varje funktion visas en beskrivning av dess effekt. Medan du skriver skalas alternativlistan närmre den funktion som du behöver. Välj **RELATED**, och tryck sedan på **Retur**.
 
@@ -97,7 +97,7 @@ Nu kan du använda din nya **ProductFullCategory**-kolumn till att titta på **S
 
 Contoso-försäljningsexemplet innehåller försäljningsdata för både aktiva och inaktiva butiker. Du vill se till att försäljningen i aktiva butiker tydligt avgränsas från försäljningen i inaktiva butiker i rapporten genom att skapa fältet **Active StoreName**. I den nya beräknade kolumnen **Active StoreName** visas alla aktiva butiker med butikens fullständiga namn, medan försäljningen för inaktiva butiker grupperas under posten **Inactive** (inaktiv).
 
-Lyckligtvis har tabellen **Stores** en kolumn med namnet **Status**, med värdet ”On” för aktiva butiker och ”Off” för inaktiva butiker, som vi använder till att skapa värden för vår nya **Active StoreName**-kolumn. DAX-formeln använder den logiska funktionen [IF](https://msdn.microsoft.com/library/ee634824.aspx) till att testa varje butiks **status** och returnerar ett visst värde beroende på resultatet. Om butikens **status** är ”On” returnerar formeln butikens namn. Om den är ”Off” tilldelar formeln ett **Active StoreName** med värdet ”Inactive”.
+Lyckligtvis har tabellen **Stores** en kolumn med namnet **Status**, med värdet ”On” för aktiva butiker och ”Off” för inaktiva butiker, som vi använder till att skapa värden för vår nya **Active StoreName**-kolumn. DAX-formeln använder den logiska funktionen [IF](/dax/if-function-dax) till att testa varje butiks **status** och returnerar ett visst värde beroende på resultatet. Om butikens **status** är ”On” returnerar formeln butikens namn. Om den är ”Off” tilldelar formeln ett **Active StoreName** med värdet ”Inactive”.
 
 1. Skapa en ny beräknad kolumn i tabellen **Stores** och ge den namnet **Active StoreName** i formelfältet.
 
@@ -133,4 +133,4 @@ Beräknade kolumner kan utöka dina data och ge enklare analyser. Du har lärt d
 
 Om du vill ha en grundligare genomgång av DAX-formler och skapa beräknade kolumner med mer avancerade formler, kan du läsa mer i [DAX-grunder i Power BI Desktop](desktop-quickstart-learn-dax-basics.md). Den här artikeln handlar om grundläggande begrepp i DAX, till exempel syntax, funktioner och en mer omfattande beskrivning av kontext.
 
-Det kan vara bra att lägga till [Referens för dataanalysuttryck (DAX)](https://msdn.microsoft.com/library/gg413422.aspx) i dina Favoriter. Där hittar du detaljerad information om DAX-syntax, operatorer och fler än 200 DAX-funktioner.
+Det kan vara bra att lägga till [Referens för dataanalysuttryck (DAX)](/dax/) i dina Favoriter. Där hittar du detaljerad information om DAX-syntax, operatorer och fler än 200 DAX-funktioner.

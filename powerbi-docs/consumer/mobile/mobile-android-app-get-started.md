@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 02/10/2020
 ms.author: painbar
-ms.openlocfilehash: 557334ed8aecccd646fde92a6d2cfa7852aff36b
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 105cef5b9df49d076491057d73f6929d46216a8b
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83347227"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83564870"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-android-devices"></a>Kom igång med Power BI-mobilapp på Android-enheter
 Android-appen för Microsoft Power BI ger mobil BI-upplevelse för Power BI, Power BI-rapportserver och Reporting Services. Visa och interagera med ditt företags instrumentpaneler lokalt och i molnet överallt, med pekaktiverad mobil åtkomst i realtid. Utforska data i instrumentpaneler och dela med dina kollegor via e-post eller sms. 
@@ -27,7 +27,7 @@ Du skapar Power BI-rapporter i Power BI Desktop och publicerar dem:
 
 Sedan interagerar du i Power BI-appen för Android med dina instrumentpaneler och rapporter, antingen lokalt eller i molnet.
 
-Ta reda på [nyheterna i Power BI-mobilapparna](../../mobile-whats-new-in-the-mobile-apps.md).
+Ta reda på [nyheterna i Power BI-mobilapparna](mobile-whats-new-in-the-mobile-apps.md).
 
 ## <a name="prerequisites"></a>Förutsättningar
 
@@ -40,7 +40,7 @@ Power BI kan köras på ett antal olika Android-enheter som kör operativsysteme
 **Starta när du öppnar appen**    
 Även utan att registrera dig eller logga in kan du, när du öppnar appen, bläddra igenom inloggningssidorna för en snabb överblick över vad du kan göra med Power BI-appen på din Android-telefon. Tryck på **Hoppa över** för att visa och utforska exemplen och praktisk information med appen. Du kan [gå tillbaka till exemplen](mobile-android-app-get-started.md#try-the-power-bi-and-reporting-services-samples) från instrumentpanelernas hemsida när du vill.
 
-Ta reda på [nyheterna i Power BI-mobilapparna](../../mobile-whats-new-in-the-mobile-apps.md).
+Ta reda på [nyheterna i Power BI-mobilapparna](mobile-whats-new-in-the-mobile-apps.md).
 
 ## <a name="sign-up-for-the-power-bi-service-on-the-web"></a>Registrera dig för Power BI-tjänsten på internet
 Om du inte har registrerat dig ännu, går du till [Power BI-tjänsten](https://powerbi.com/) för att registrera dig för ditt eget konto för att skapa och lagra instrumentpaneler och rapporter och föra samman dina data. Logga sedan in på Power BI från din Android-enhet att se dina egna instrumentpaneler varifrån du vill.
@@ -101,14 +101,14 @@ Här följer några saker som du kan göra i Android-enhetsappen för Power BI m
 
 ### <a name="power-bi-dashboards-and-reports"></a>Power BI-instrumentpaneler och -rapporter
 * Visa [dina appar](../../collaborate-share/service-create-distribute-apps.md).
-* Visa dina [instrumentpaneler](../../mobile-apps-view-dashboard.md).
-* Utforska [panelerna på dina instrumentpaneler](../../mobile-tiles-in-the-mobile-apps.md).
-* Öppna [Power BI-rapporter](../../mobile-reports-in-the-mobile-apps.md).
+* Visa dina [instrumentpaneler](mobile-apps-view-dashboard.md).
+* Utforska [panelerna på dina instrumentpaneler](mobile-tiles-in-the-mobile-apps.md).
+* Öppna [Power BI-rapporter](mobile-reports-in-the-mobile-apps.md).
 * Visa [dina appar](../../collaborate-share/service-create-distribute-apps.md).
 * [Kommentera och dela paneler](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md).
-* Dela [instrumentpaneler](../../mobile-share-dashboard-from-the-mobile-apps.md).
-* [Skanna en Power BI QR-kod](../../mobile-apps-qr-code.md) med din Android-telefon för att öppna en relaterad instrumentpanel eller rapport. 
-* Visa [meddelanden om uppdateringar av Power BI-kontot](../../mobile-apps-notification-center.md), till exempel instrumentpaneler som kollegor delar med dig.
+* Dela [instrumentpaneler](mobile-share-dashboard-from-the-mobile-apps.md).
+* [Skanna en Power BI QR-kod](mobile-apps-qr-code.md) med din Android-telefon för att öppna en relaterad instrumentpanel eller rapport. 
+* Visa [meddelanden om uppdateringar av Power BI-kontot](mobile-apps-notification-center.md), till exempel instrumentpaneler som kollegor delar med dig.
 
 ### <a name="reports-and-kpis-on-the-power-bi-report-server-and-reporting-services-web-portals"></a>Rapporter och KPI:er på webbportalerna för Power BI-rapportserver och Reporting Services
 * [Visa rapporter och KPI:er på webbportalen](mobile-app-ssrs-kpis-mobile-on-premises-reports.md) i Power BI-mobilappen för Android-enheter.

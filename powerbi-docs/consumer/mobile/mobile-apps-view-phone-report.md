@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 05/05/2020
 ms.author: painbar
-ms.openlocfilehash: d3584ebc5233ccffc007118ac87ada49e906b34c
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 380057c2c65db3ea659adc39d692d8955201483b
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83273533"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565133"
 ---
 # <a name="view-power-bi-reports-optimized-for-your-phone"></a>Visa Power BI-rapporter som är optimerade för din telefon
 
@@ -60,7 +60,7 @@ Telefonrapporter erbjuder även ett fokusläge: Du får en större vy av ett end
 
 * Knacka på ellipsen i en telefonrapport ( **...** ) i det övre högra hörnet i ett visuellt objekt > **Expandera till fokusläge**.
   
-    ![Expandera till fokusläge](././media/mobile-apps-view-phone-report/power-bi-phone-report-focus-mode.png)
+    ![Expandera till fokusläge](media/mobile-apps-view-phone-report/power-bi-phone-report-focus-mode.png)
 
 Det du gör i fokusläget överförs till rapportarbetsytan och vice versa. Om du till exempel markerar ett värde i ett visuellt objekt och sedan går tillbaka till hela rapporten filtreras rapporten till det värde som du markerade i det visuella objektet.
 
@@ -72,7 +72,7 @@ Vissa åtgärder kan endast utföras i fokusläge på grund av skärmens storlek
   
     Tryck på ellipsen ( **...** ) > **Återställ** för att rensa all utforskningsaktivitet från ett visuellt objekt.
   
-    ![Återställ](././media/mobile-apps-view-phone-report/power-bi-phone-report-revert-levels.png)
+    ![Återställ](media/mobile-apps-view-phone-report/power-bi-phone-report-revert-levels.png)
   
     Återställ är tillgängligt på rapportnivå, där utforskning rensas från alla visuella objekt, och på nivå för visuellt objekt, där utforskning rensas från det markerade visuella objektet.   
 
@@ -86,14 +86,14 @@ Det finns några typer av detaljnivåökning:
 2. En knappbeskrivning visas, och om hierarkin är definierad visar knappbeskrivningens sidfot pil för att öka eller minska detaljnivån.
 3. Tryck på nedåtpilen för att öka detaljnivån
 
-    ![Tryck på öka detaljnivån](././media/mobile-apps-view-phone-report/report-drill-down.png)
+    ![Tryck på öka detaljnivån](media/mobile-apps-view-phone-report/report-drill-down.png)
     
 4. Tryck på uppåtpilen för att minska detaljnivån.
 
 ### <a name="drill-to-next-level"></a>Ändra till nästa detaljnivå
 1. Knacka på ellipsen i en telefonrapport ( **...** ) i det övre högra hörnet > **Expandera till fokusläge**.
    
-    ![Expandera till fokusläge](././media/mobile-apps-view-phone-report/power-bi-phone-report-focus-mode.png)
+    ![Expandera till fokusläge](media/mobile-apps-view-phone-report/power-bi-phone-report-focus-mode.png)
    
     I det här exemplet visar staplarna värden för delstater.
 2. Tryck på utforskningsikonen ![Utforskningsikonen](./media/mobile-apps-view-phone-report/power-bi-phone-report-explore-icon.png) nere till vänster.
@@ -111,7 +111,7 @@ Det finns några typer av detaljnivåökning:
     ![Fortfarande expanderad till den lägre nivån](./media/mobile-apps-view-phone-report/power-bi-back-to-phone-report-expanded-levels.png)
 5. Om du vill gå tillbaka upp till den ursprungliga nivån, tryck på ellipsen ( **...** ) igen > **Återställ**.
    
-    ![Återställ](././media/mobile-apps-view-phone-report/power-bi-phone-report-revert-levels.png)
+    ![Återställ](media/mobile-apps-view-phone-report/power-bi-phone-report-revert-levels.png)
 
 ## <a name="drill-through-from-a-value"></a>Detaljgranska från ett värde
 Detaljgranska ansluter värden på en rapportsida till andra rapportsidor. När du detaljgranskar från en datapunkt till en annan rapportsida används datapunktsvärdena för att filtrera den detaljgranskade sidan, eller så kommer den att vara i kontexten för valda data.
@@ -121,11 +121,11 @@ Rapportförfattarna kan [definiera detaljgranskning](https://docs.microsoft.com/
 2. En knappbeskrivning visas, och om detaljgranskning är definierad visar knappbeskrivningens sidfot pil för detaljgranskning.
 3. Tryck på pilen för att detaljgranska
 
-    ![Tryck på detaljgranska](././media/mobile-apps-view-phone-report/report-drill-through1.png)
+    ![Tryck på detaljgranska](media/mobile-apps-view-phone-report/report-drill-through1.png)
 
 4. Välj vilken rapportsida du vill detaljgranska
 
-    ![Välj rapportsida](././media/mobile-apps-view-phone-report/report-drill-through2.png)
+    ![Välj rapportsida](media/mobile-apps-view-phone-report/report-drill-through2.png)
 
 5. Använd knappen Tillbaka i apphuvudet för att gå tillbaka till den sida som du började från.
 
@@ -133,5 +133,5 @@ Rapportförfattarna kan [definiera detaljgranskning](https://docs.microsoft.com/
 ## <a name="next-steps"></a>Nästa steg
 * [Skapa rapporter som är optimerade för Power BI-mobilapparna](../../create-reports/desktop-create-phone-report.md)
 * [Skapa en telefonvy av en instrumentpanel i Power BI](../../create-reports/service-create-dashboard-mobile-phone-view.md)
-* [Skapa dynamiska visuella objekt som optimerats för alla storlekar](../../visuals/desktop-create-responsive-visuals.md)
+* [Skapa dynamiska visuella objekt som optimerats för alla storlekar](../../visuals/power-bi-report-visualizations.md)
 * Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

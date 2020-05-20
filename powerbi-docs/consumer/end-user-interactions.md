@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: fb7bf439cdf2f7ebd6058aba6b147f800b9cf258
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 45f3aa4ccf92237085db0c7517c291fe8d0f0428
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79113047"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83564916"
 ---
 # <a name="how-visuals-cross-filter-each-other-in-a-power-bi-report"></a>Hur visuella objekt korsfiltrerar varandra i en Power BI-rapport
 
@@ -55,7 +55,7 @@ Vi definierar de här termerna när vi tittar på rapportsidorna nedan. Ringdiag
     ![Rapportsidan efter att segmentet Måttlighet i ringdiagrammet har valts](media/end-user-interactions/power-bi-visual-filters.png)
 
 ## <a name="next-steps"></a>Nästa steg
-[Så här använder du rapportfilter](../power-bi-how-to-report-filter.md)    
+[Så här använder du rapportfilter](../consumer/end-user-report-filter.md)
 
 
-[Om filtrering och markering](end-user-report-filter.md). 
+[Om filtrering och markering](end-user-report-filter.md).

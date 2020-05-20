@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/21/2019
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 9a9248f68f85f6dec2a70842c0931d7dd448d690
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 4a6ba7f171f462fe6fe0d386305c82b486db5ed4
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83276845"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565036"
 ---
 # <a name="scatter-charts-bubble-charts-and-dot-plot-charts-in-power-bi"></a>Punktdiagram, bubbeldiagram och punktritningsdiagram i Power BI
 
@@ -128,7 +128,7 @@ Nu ska vi lägga till en tredje dimension.
     > [!NOTE]
     > Fler datapunkter kan medföra längre inläsningstid. Om du väljer att publicera rapporter med gränser i den högre änden av skalan, ska du vara noga med att även testa dina rapporter på webben och mobilt. Du vill få bekräftat att diagrammets prestanda matchar dina användares förväntningar.
 
-1. Fortsätt att formatera visualiseringens färger, etiketter, rubriker, bakgrund med mera. Överväg att lägga till markörformer på varje linje för att [förbättra tillgängligheten](../desktop-accessibility.md). Välj markörform genom att expandera kortet **Former** och välja **Markörform** och sedan välja en form.
+1. Fortsätt att formatera visualiseringens färger, etiketter, rubriker, bakgrund med mera. Överväg att lägga till markörformer på varje linje för att [förbättra tillgängligheten](../create-reports/desktop-accessibility-overview.md). Välj markörform genom att expandera kortet **Former** och välja **Markörform** och sedan välja en form.
 
     ![Skärmbild av listrutan Former med alternativen för Markörform framhävda.](media/power-bi-visualization-scatter/pbi-scatter-marker.png)
 
