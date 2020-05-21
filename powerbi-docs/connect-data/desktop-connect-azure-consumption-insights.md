@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 5cc566798d53a29ef1f205c34d7e97d9331a164d
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 8959e703da2587b7633df4313606bdb11a8c983b
+ms.sourcegitcommit: 21b06e49056c2f69a363d3a19337374baa84c83f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83347986"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "83407503"
 ---
 # <a name="connect-to-azure-consumption-insights-data-in-power-bi-desktop"></a>Ansluta till Azure Consumption Insights-data i Power BI Desktop
 
@@ -184,7 +184,7 @@ Kolumnerna och detaljnamnen i Azure-portalen ser liknande ut i API:et och anslut
 | --- | --- | --- | --- |
 | AccountName |accountName |Account Name |Nej |
 | AccountId |accountId | |Ja |
-| AcccountOwnerId |accountOwnerEmail |AccountOwnerId |Nej |
+| AccountOwnerId |accountOwnerEmail |AccountOwnerId |Nej |
 | AdditionalInfo |additionalInfo |AdditionalInfo |Nej |
 | AdditionalInfold | | |Ja |
 | Consumed Quantity |consumedQuantity |Consumed Quantity |Nej |
