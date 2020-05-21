@@ -6,22 +6,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/28/2019
+ms.date: 05/19/2020
 ms.author: maggies
-ms.openlocfilehash: 8b103902f7a151dcbfee9fa6ff54830129a65c14
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 98b5323efa8b6c6c0e1d6f1dbab640fe5f4cae4c
+ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83279076"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83693962"
 ---
 # <a name="whitepapers-for-power-bi"></a>White paper-dokument om Power BI
 
 I våra white paper-dokument kan du läsa mer om Power BI på en djupare nivå. Här hittar du en lista över tillgängliga whitepapers för Power BI.
 
-| White paper | Beskrivning | Date |
+| White paper | Beskrivning | Datum |
 | --- | --- | --- |
-| [Planera en företagsdistribution för Power BI](https://go.microsoft.com/fwlink/?linkid=2057861) |Det här är ett tekniskt white paper som beskriver överväganden för en väl utförd och säker distribution av Power BI. | Juli 2018 |
+| [Planera en företagsdistribution för Power BI](https://aka.ms/PBIEnterpriseDeploymentWP) |Det uppdaterade tekniska dokumentet beskriver överväganden och bästa praxis för en bra och säker distribution av organisations Power BI. | Maj 2020 |
 | [Power BI och dataflöden](https://go.microsoft.com/fwlink/?linkid=2034388&clcid=0x409)| Det här faktabladet beskriver dataflöden i detalj och beskriver funktioner och initiativ bakom dataflödesegenskaper och -funktioner. | November 2018 |
 | [Microsoft Power BI Premium](https://aka.ms/pbipremiumwhitepaper) |Beskriver Power BI Premium, både i dess ursprungsform och hur den kommer att utvecklas. | Oktober 2017 |
 | [Power BI Premium planering och distribution](whitepaper-powerbi-premium-deployment.md)| Det här dokumentet innehåller vägledning och bästa praxis för planering och distribution av Premium-kapacitet för väldefinierade arbetsbelastningar.| Mars 2019 |
@@ -38,4 +38,4 @@ I våra white paper-dokument kan du läsa mer om Power BI på en djupare nivå. 
 
 [!INCLUDE [GDPR-related guidance](../includes/gdpr-hybrid-note.md)]
 
-Fler frågor? [Försök att be Power BI Community](https://community.powerbi.com/)
+Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/07/2019
 ms.author: davidi
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 955a14b37d59f554fb12b302c16472387c896e54
-ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
+ms.openlocfilehash: 7ab103c5d7b568e7315f67193da4d8da25b77a6c
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82843651"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565447"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-using-azure-active-directory-b2b"></a>Distribuera Power BI-innehåll till externa gästanvändare med Azure Active Directory B2B
 
@@ -415,7 +415,7 @@ Nu när den här användaren öppnar appen som delades med dem ser de bara en ra
 
 Ett annat intressant ämne är att se hur dynamisk säkerhet på radnivå (RLS) fungerar med Azure AD B2B.
 
-I korthet fungerar dynamisk säkerhet på radnivå genom att filtrera data i modellen baserat på användar namnet för den person som ansluter till Power BI. I stället för att lägga till flera roller för grupper av användare definierar du användarna i modellen. Vi beskriver inte mönstret i detalj här. Kasper de Jong erbjuder en detaljerad uppskrivning av all varianter på säkerhet på radnivå i [Power BI Desktop Dynamic Security lathund-bladet](https://www.kasperonbi.com/power-bi-desktop-dynamic-security-cheat-sheet/)och i [det här dokumentet](https://msdn.microsoft.com/library/jj127437.aspx) .
+I korthet fungerar dynamisk säkerhet på radnivå genom att filtrera data i modellen baserat på användar namnet för den person som ansluter till Power BI. I stället för att lägga till flera roller för grupper av användare definierar du användarna i modellen. Vi beskriver inte mönstret i detalj här. Kasper de Jong erbjuder en detaljerad uppskrivning av all varianter på säkerhet på radnivå i [Power BI Desktop Dynamic Security lathund-bladet](https://www.kasperonbi.com/power-bi-desktop-dynamic-security-cheat-sheet/)och i [det här dokumentet](https://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx) .
 
 Nu ska vi titta på ett litet exempel – contoso har en enkel rapport om försäljning per grupp:
 
@@ -504,7 +504,7 @@ För gäst användare som är aktiverade via alternativet Tillåt att externa g�
 
 - Direktpublicering från Power BI Desktop till Power BI-tjänsten
 - Gästanvändare kan inte använda Power BI Desktop för att ansluta till tjänstdatauppsättningar i Power BI-tjänsten
-- Klassiska arbets ytor är kopplade till Office 365-grupper: gäst användare kan inte skapa eller vara administratörer för dessa arbets ytor. De kan vara medlemmar.
+- Klassiska arbets ytor är knutna till Microsoft 365 grupper: gäst användare kan inte skapa eller vara administratörer för dessa arbets ytor. De kan vara medlemmar.
 - Det går inte att skicka ad hoc-inbjudan för arbetsyteåtkomstlistor
 - Power BI Publisher för Excel stöds inte för gästanvändare
 - Gästanvändare kan inte installera en Power BI Gateway och ansluta den till din organisation

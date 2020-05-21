@@ -1,5 +1,5 @@
 ---
-title: Vitbok Power BI-säkerhet
+title: White paper om Power BI-säkerhet
 description: White paper där säkerhetsarkitekturen för och implementeringen av Power BI diskuteras och beskrivs
 author: davidiseminger
 ms.author: davidi
@@ -9,14 +9,14 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/14/2020
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 4454269803c45948c21c4448ab76b5397d3388b2
-ms.sourcegitcommit: 21b06e49056c2f69a363d3a19337374baa84c83f
+ms.openlocfilehash: f4211b177c60c9bb990c6dc2c8aa8094ab9e69f0
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83407515"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565287"
 ---
-# <a name="power-bi-security-whitepaper"></a>Vitbok Power BI-säkerhet
+# <a name="power-bi-security-whitepaper"></a>White paper om Power BI-säkerhet
 
 **Sammanfattning:** Power BI är ett erbjudande för online Software service (*SaaS*eller program vara som en tjänst) från Microsoft som gör det möjligt att enkelt och snabbt skapa självbetjänings instrument paneler, rapporter, data uppsättningar och visualiseringar. Med Power BI kan du ansluta till många olika datakällor, kombinera och forma data från dessa anslutningar och sedan skapa rapporter och instrumentpaneler som kan delas med andra.
 
@@ -33,7 +33,7 @@ ms.locfileid: "83407515"
 
 **Power BI** är en onlinebaserad programvarutjänst (_SaaS_, programvara som en tjänst) från Microsoft som gör att du snabbt och enkelt kan instrumentpaneler, rapporter, datamängder och visualiseringar för Business Intelligence som självservice. Med Power BI kan du ansluta till många olika datakällor, kombinera och forma data från dessa anslutningar och sedan skapa rapporter och instrumentpaneler som kan delas med andra.
 
-Power BI-tjänsten regleras av [villkoren för Microsoft Online Services](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31) och [Microsofts sekretesspolicy för företag](https://www.microsoft.com/privacystatement/OnlineServices/Default.aspx). Information om platsen för databearbetning finns i villkoren för platsen för databehandling i villkoren för Microsoft Online Services. När det gäller information om efterlevnad är [Microsoft Trust Center](https://www.microsoft.com/trustcenter) den primära resursen för Power BI. Power BI-teamet arbetar ständigt med att ge sina kunder de senaste innovationerna och ökad produktivitet. Power BI är för närvarande i nivå D i [ramverket för Office 365-efterlevnad](https://www.microsoft.com/trust-center/compliance/compliance-overview).
+Power BI-tjänsten regleras av [villkoren för Microsoft Online Services](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31) och [Microsofts sekretesspolicy för företag](https://www.microsoft.com/privacystatement/OnlineServices/Default.aspx). Information om platsen för databearbetning finns i villkoren för platsen för databehandling i villkoren för Microsoft Online Services. När det gäller information om efterlevnad är [Microsoft Trust Center](https://www.microsoft.com/trustcenter) den primära resursen för Power BI. Power BI-teamet arbetar ständigt med att ge sina kunder de senaste innovationerna och ökad produktivitet. Power BI finns för närvarande i nivå D i ramverket för Microsoft 365 efterlevnad. Läs mer om kompatibilitet i [Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview).
 
 Den här artikeln beskriver Power BI-säkerhet genom att ge en förklaring av Power BI-arkitekturen samt hur användare autentiserar till Power BI och dataanslutningar upprättas. Sedan beskrivs hur Power BI lagrar och flyttar data genom tjänsten. I det sista avsnittet behandlas säkerhetsrelaterade frågor med svar för varje fråga.
 
@@ -87,13 +87,13 @@ Power BI använder två primära databaser för att lagra och hantera data: data
 
 Om till exempel en användare importerar en Excel-arbetsbok i Power BI-tjänsten skapas en Analysis Services-tabelldatabas i minnet, och data lagras i minnet i upp till en timme (eller tills minnesbelastning inträffar i systemet). Data skickas även till **Azure Blob**-lagring.
 
-Metadata om en användares Power BI-prenumeration, till exempel instrumentpaneler, rapporter, senaste datakällor, arbetsytor, organisationsinformation, information om klientorganisation samt andra metadata om systemet lagras och uppdateras i **Azure SQL Database**. All information som lagras i Azure SQL Database krypteras fullständigt med hjälp av [Azure SQL-tekniken Transparent datakryptering](https://msdn.microsoft.com/library/dn948096.aspx) (TDE). Alla data som lagras i Azure Blob-lagring krypteras också. Mer information om processen för inläsning, lagring och flytt av data beskrivs i avsnittet **Lagring och flytt av data**.
+Metadata om en användares Power BI-prenumeration, till exempel instrumentpaneler, rapporter, senaste datakällor, arbetsytor, organisationsinformation, information om klientorganisation samt andra metadata om systemet lagras och uppdateras i **Azure SQL Database**. All information som lagras i Azure SQL Database krypteras fullständigt med hjälp av [Azure SQL-tekniken Transparent datakryptering](/azure/sql-database/transparent-data-encryption-azure-sql) (TDE). Alla data som lagras i Azure Blob-lagring krypteras också. Mer information om processen för inläsning, lagring och flytt av data beskrivs i avsnittet **Lagring och flytt av data**.
 
 ## <a name="tenant-creation"></a>Skapa klientorganisation
 
 En klientorganisation är en dedikerad instans av Azure AD-tjänsten som en organisation får och äger när den registrerar sig för en Microsoft-molntjänst såsom Azure, Microsoft Intune, Power BI eller Office 365. Varje Azure AD-klient är separat och åtskild från andra Azure AD-klienter.
 
-En klient inrymmer användarna på ett företag och informationen om dem – deras lösenord, användarprofildata, behörigheter och så vidare. Den innehåller också grupper, program och annan information som hör till en organisation och dess säkerhet. Mer information finns i [Vad är en Azure AD-klient](https://msdn.microsoft.com/library/azure/jj573650.aspx#BKMK_WhatIsAnAzureADTenant).
+En klient inrymmer användarna på ett företag och informationen om dem – deras lösenord, användarprofildata, behörigheter och så vidare. Den innehåller också grupper, program och annan information som hör till en organisation och dess säkerhet. Mer information finns i [Vad är en Azure AD-klient](/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings).
 
 En Power BI-klientorganisation skapas i det datacentret bedöms vara närmast landet (eller regionen), och tillståndsinformation ges för klientorganisationen i Azure Active Directory, som tillhandahölls när Office 365 eller Power BI-tjänsten ursprungligen etablerades. Power BI-klientorganisationen flyttas inte från det datacentret i dag.
 
@@ -198,7 +198,7 @@ Den nyckelkrypteringsnyckel (KEK) som används för att kryptera CEK är en för
 
 Gatewaykrypteringsnycklar baserat på återställningsnyckeln lämnar aldrig en lokal infrastruktur. Power BI kan inte komma de krypterade lokala värdena för autentiseringsuppgifter och kan inte spärra de autentiseringsuppgifterna. Webbklienter krypterar autentiseringsuppgifterna med en offentlig nyckel som associeras med den specifika gateway som de kommunicerar med.
 
-För molnbaserade datakällor krypterar rollen Dataflytt krypteringsnycklarna med hjälp av [Always Encrypted](https://msdn.microsoft.com/library/mt163865.aspx)-metoder. Du kan läsa mer om [Always Encrypted-databasfunktionen](https://msdn.microsoft.com/library/mt163865.aspx).
+För molnbaserade datakällor krypterar rollen Dataflytt krypteringsnycklarna med hjälp av [Always Encrypted](/sql/relational-databases/security/encryption/always-encrypted-database-engine)-metoder. Du kan läsa mer om [Always Encrypted-databasfunktionen](/sql/relational-databases/security/encryption/always-encrypted-database-engine).
 
 #### <a name="datasets"></a>Datauppsättningar
 
@@ -381,7 +381,7 @@ Följande frågor är vanliga frågor och svar om säkerhet för Power BI. Dessa
 
 **Hur ansluter användare till och får åtkomst till datakällor när de använder Power BI?**
 
-* **Power BI autentiseringsuppgifter och domänautentiseringsuppgifter:** Användarna loggar in på Power BI med hjälp av en e-postadress. När en användare försöker ansluta till en data resurs, skickar Power BI Power BI inloggnings-e-postadress som autentiseringsuppgifter. För domänanslutna resurser (antingen lokala eller molnbaserade) matchas e-postadressen för inloggning med ett _User Principal Name_ ([UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525(v=vs.85).aspx)) av katalogtjänsten för att fastställa om det finns tillräckligt med referenser för att tillåta åtkomst. För organisationer som använder arbetsbaserade e-postadresser för att logga in på Power BI (samma e-postmeddelande som de använder för att logga in på arbets resurser, t. ex. _david@contoso.com_ ) kan mappningen ske sömlöst. för organisationer som inte använde arbetsbaserade e-postadresser (till exempel _david@contoso.onmicrosoft.com_ ) måste katalog mappning upprättas för att tillåta åtkomst till lokala resurser med Power BI inloggnings uppgifter.
+* **Power BI autentiseringsuppgifter och domänautentiseringsuppgifter:** Användarna loggar in på Power BI med hjälp av en e-postadress. När en användare försöker ansluta till en data resurs, skickar Power BI Power BI inloggnings-e-postadress som autentiseringsuppgifter. För domänanslutna resurser (antingen lokala eller molnbaserade) matchas e-postadressen för inloggning med ett _User Principal Name_ ([UPN](/windows/win32/secauthn/user-name-formats)) av katalogtjänsten för att fastställa om det finns tillräckligt med referenser för att tillåta åtkomst. För organisationer som använder arbetsbaserade e-postadresser för att logga in på Power BI (samma e-postmeddelande som de använder för att logga in på arbets resurser, t. ex. _david@contoso.com_ ) kan mappningen ske sömlöst. för organisationer som inte använde arbetsbaserade e-postadresser (till exempel _david@contoso.onmicrosoft.com_ ) måste katalog mappning upprättas för att tillåta åtkomst till lokala resurser med Power BI inloggnings uppgifter.
 
 * **SQL Server Analysis Services och Power BI:** För organisationer som använder lokala SQL Server Analysis Services erbjuder Power BI den Power BI lokala datagatewayen (som är en **Gateway**, som det hänvisas till i föregående avsnitt).  Den lokala datagatewayen för Power BI kan tillämpa säkerhet på rollnivå (RLS) på datakällor. Mer information om RLS finns i **Användarautentisering till datakällor** tidigare i dokumentet. Mer information om gatewayer finns [i lokal datagateway](../connect-data/service-gateway-onprem.md).
 
@@ -487,9 +487,9 @@ Mer information om Power BI finns i följande resurser.
 
 - [Grupper i Power BI](https://support.powerbi.com/knowledgebase/articles/654247)
 - [Komma igång med Power BI Desktop](https://support.powerbi.com/knowledgebase/articles/471664)
-- [Power BI REST API – Översikt](https://msdn.microsoft.com/library/dn877544.aspx)
-- [Power BI API-referens](https://msdn.microsoft.com/library/mt147898.aspx)
-- [Lokal datagateway](../connect-data/service-gateway-onprem.md)
+- [Power BI REST API – Översikt](/rest/api/power-bi/)
+- [Power BI API-referens](/rest/api/power-bi/)
+- [On-premises data gateway (Lokal datagateway)](../connect-data/service-gateway-onprem.md)
 - [Nationella moln i Power BI](https://powerbi.microsoft.com/clouds/)
 - [Power BI Premium](https://aka.ms/pbipremiumwhitepaper)
 - [Använda Kerberos för enkel inloggning från Power BI till lokala datakällor](../connect-data/service-gateway-sso-overview.md)
