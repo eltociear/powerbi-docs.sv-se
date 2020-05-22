@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/14/2020
 LocalizationGroup: Conceptual
-ms.openlocfilehash: f4211b177c60c9bb990c6dc2c8aa8094ab9e69f0
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: a80870963cf045730fff18413884d9871354b169
+ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83565287"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83792919"
 ---
 # <a name="power-bi-security-whitepaper"></a>White paper om Power BI-säkerhet
 
@@ -91,11 +91,11 @@ Metadata om en användares Power BI-prenumeration, till exempel instrumentpanele
 
 ## <a name="tenant-creation"></a>Skapa klientorganisation
 
-En klientorganisation är en dedikerad instans av Azure AD-tjänsten som en organisation får och äger när den registrerar sig för en Microsoft-molntjänst såsom Azure, Microsoft Intune, Power BI eller Office 365. Varje Azure AD-klient är separat och åtskild från andra Azure AD-klienter.
+En klient är en dedikerad instans av Azure AD-tjänsten som en organisation tar emot och äger när den registrerar sig för en moln tjänst från Microsoft, till exempel Azure, Microsoft Intune, Power BI eller Microsoft 365. Varje Azure AD-klient är separat och åtskild från andra Azure AD-klienter.
 
 En klient inrymmer användarna på ett företag och informationen om dem – deras lösenord, användarprofildata, behörigheter och så vidare. Den innehåller också grupper, program och annan information som hör till en organisation och dess säkerhet. Mer information finns i [Vad är en Azure AD-klient](/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings).
 
-En Power BI-klientorganisation skapas i det datacentret bedöms vara närmast landet (eller regionen), och tillståndsinformation ges för klientorganisationen i Azure Active Directory, som tillhandahölls när Office 365 eller Power BI-tjänsten ursprungligen etablerades. Power BI-klientorganisationen flyttas inte från det datacentret i dag.
+En Power BI-klient skapas i data centret som bedöms närmast det land (eller den region) och den tillståndsinformation som tillhandahölls för innehavaren i Azure Active Directory, som tillhandahölls när Microsoft 365 eller Power BI-tjänst ursprungligen etablerades. Power BI-klientorganisationen flyttas inte från det datacentret i dag.
 
 ### <a name="multiple-geographies-multi-geo"></a>Flera geografiska områden (Multi-Geo)
 
@@ -129,7 +129,7 @@ Mer information om var data lagras och hur de används finns i [Microsoft Trust 
 
 ## <a name="user-authentication"></a>Användarautentisering
 
-Användarautentisering till Power BI-tjänsten består av en serie begäranden, svar och omdirigeringar mellan användarens webbläsare och den Power BI-tjänst eller de Azure-tjänster som används av Power BI. Den sekvensen beskriver processen för autentisering av användare i Power BI. Mer information om alternativ för en organisations modeller för användarautentisering (inloggningsmodeller) finns i avsnittet om att [välja en inloggningsmodell för Office 365](https://blogs.office.com/2014/05/13/choosing-a-sign-in-model-for-office-365/).
+Användarautentisering till Power BI-tjänsten består av en serie begäranden, svar och omdirigeringar mellan användarens webbläsare och den Power BI-tjänst eller de Azure-tjänster som används av Power BI. Den sekvensen beskriver processen för autentisering av användare i Power BI. Mer information om alternativ för modeller för användar autentisering i en organisation (inloggnings modeller) finns i [välja en inloggnings modell för Microsoft 365](https://blogs.office.com/2014/05/13/choosing-a-sign-in-model-for-office-365/).
 
 ### <a name="authentication-sequence"></a>Autentiseringssekvens
 
@@ -245,9 +245,9 @@ Power BI tillhandahåller övervakning av dataintegritet på följande sätt:
 
 1. Metadata (rapportdefinition)
 
-   a. Rapporter kan antingen vara Excel för Office 365-rapporter eller Power BI-rapporter. Följande gäller för metadata baserat rapporttypen:
+   a. Rapporter kan antingen vara Excel för Microsoft 365 rapporter eller Power BI rapporter. Följande gäller för metadata baserat rapporttypen:
         
-    &ensp;&ensp;a. Excel-rapportens metadata lagras krypterade i SQL Azure. Metadata lagras också i Office 365.
+    &ensp;&ensp;a. Excel-rapportens metadata lagras krypterade i SQL Azure. Metadata lagras också i Microsoft 365.
 
     &ensp;&ensp;b. Power BI-rapporter lagras krypterade i Azure SQL-databas.
 
@@ -255,13 +255,13 @@ Power BI tillhandahåller övervakning av dataintegritet på följande sätt:
 
    Statiska data innehåller artefakter som bakgrunds bilder och Power BI visuella objekt.
 
-    &ensp;&ensp;a. För rapporter som skapats med Excel för Office 365 lagras ingenting.
+    &ensp;&ensp;a. För rapporter som har skapats med Excel för Microsoft 365, lagras inget.
 
     &ensp;&ensp;b. För Power BI-rapporter lagras och krypteras statiska data i Azure Blob-lagring.
 
 3. Caches
 
-    &ensp;&ensp;a. För rapporter som skapats med Excel för Office 365 cachelagras ingenting.
+    &ensp;&ensp;a. För rapporter som har skapats med Excel för Microsoft 365, cachelagras ingenting.
 
     &ensp;&ensp;b. För Power BI rapporter cachelagras data för de rapporters visuella objekt som visas i det visuella Datacachen som beskrivs i följande avsnitt.
  
