@@ -43,7 +43,7 @@
               href: ../connect-data/service-connect-to-files-in-app-workspace-onedrive-for-business.md
             - name: Samarbeta på en klassisk arbetsyta
               href: service-collaborate-power-bi-workspace.md
-            - name: Hantera din grupp i Power BI och Office 365
+            - name: Hantera din grupp i Power BI och Microsoft 365
               href: service-manage-app-workspace-in-power-bi-and-office-365.md
         - name: Publicera och dela ditt arbete
           items:
@@ -71,6 +71,8 @@
           items:
             - name: Analysera i Excel
               href: service-analyze-in-excel.md
+            - name: Aktuella Power BI-tabeller i Excel
+              href: service-excel-featured-tables.md
             - name: Felsöka analysfunktionen i Excel
               href: desktop-troubleshooting-analyze-in-excel.md
             - name: 'Fel: Det gick inte att hitta några data i din Excel-arbetsbok'

@@ -174,7 +174,7 @@
           items:
             - name: Använda datamängder på arbetsytor
               href: service-datasets-across-workspaces.md
-            - name: Dela datauppsättningar (förhandsversion)
+            - name: Dela datauppsättningar
               href: service-datasets-share.md
             - name: Skapa-behörighet för delade datamängder
               href: service-datasets-build-permissions.md
