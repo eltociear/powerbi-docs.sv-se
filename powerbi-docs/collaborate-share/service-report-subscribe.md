@@ -7,15 +7,15 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/10/2020
+ms.date: 05/15/2020
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 9ee04211c44fb342e4baf904bcfa73bab489a1ba
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: f057395361840b7b16fa8a7cde5a6d2513196845
+ms.sourcegitcommit: 6ba7cc9afaf91229f717374bc0c12f0b8201d15e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83273648"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "83438233"
 ---
 # <a name="subscribe-yourself-and-others-to-reports-and-dashboards-in-the-power-bi-service"></a>Skapa en prenumeration åt dig eller andra på rapporter och instrumentpaneler i Power BI-tjänsten
 
@@ -105,12 +105,13 @@ Power BI-administratörer kan använda Power BI-spårningsloggar till att visa i
 
 ### <a name="general"></a>Allmänt
 
-- I sällsynta fall kan e-postprenumerationer ta längre tid än 15 minuter at levereras till mottagarna. Om detta inträffar rekommenderar vi att du kör datauppdateringen och e-postprenumerationen vid olika tider för att säkerställa leverans i tid. Om problemet kvarstår kontaktar du supporten för Power BI.
-- Om du vill undvika att e-postprenumerationer skickas till skräppostmappen lägger du till e-postaliaset för Power BI ([no-reply-powerbi@microsoft.com](mailto:no-reply-powerbi@microsoft.com)) i dina kontakter. Om du använder Microsoft Outlook högerklickar du på aliaset och väljer **Lägg till i Outlook-kontakter**.
+- Precis som med andra BI-produkter är tiden som du anger för din prenumeration den tid då prenumerationen börjar bearbetas.  När rapportbearbetningen är klar placeras prenumerationen i kö och skickas till e-postmottagarna.  Vi bearbetar och levererar alla prenumerationer så snabbt som möjligt. När efterfrågan är hög kan det dock uppstå en fördröjning på grund av mängden prenumerationer som Power BI kan skicka samtidigt. Fördröjningen i bearbetningen och leveransen av rapporter brukar vara högst 15 minuter för kunder. Det kan ta upp till 30 minuter under vissa tider och för klientorganisationer med hög användning.  Ingen leveransfördröjning förväntas överstiga 60 minuter från den tidpunkt då prenumerationen schemalades.  Om fördröjningen ändå är så lång börjar du med att kontrollera att adressen `no-reply-powerbi@microsoft.com` är vitlistad av din e-postleverantör.  Om så är fallet kontaktar du Power BI-supporten.
 - E-postprenumerationer för rapporter och instrumentpaneler som använder datamängder med liveanslutning stöds för närvarande inte när du skapar prenumerationer åt andra än dig själv, förutom när det gäller sidnumrerade rapporter. Du kan skapa prenumerationer på en sidnumrerad rapport åt andra via din säkerhetskontext. Läs mer om att [prenumerera på sidnumrerade rapporter](../consumer/paginated-reports-subscriptions.md).
 - Power BI pausar automatiskt uppdateringar för datauppsättningar som är associerade med instrumentpaneler och rapporter som inte har besökts på över två månader. Men om du lägger till en prenumeration på en instrumentpanel eller en rapport, så pausas den inte, även om den förblir obesökt.
 - Om du inte får någon e-post angående prenumerationen, så kontrollera att ditt UPN (User Principal Name) kan ta emot e-postmeddelanden.
 - Om din instrumentpanel eller rapport finns i Premium-kapacitet kan du använda grupp-e-postalias för prenumerationer i stället för att prenumerera kollegor med en e-postadress i taget. Alias baseras på aktuell aktiv katalog.
+- Om ditt innehåll inte finns i en Premium-kapacitet kan endast Power BI Pro-användare få e-postprenumerationer. 
+- Prenumerationer stöder för närvarande inte bokmärken.
 
 ### <a name="dashboards"></a>Instrumentpaneler
 
@@ -118,7 +119,7 @@ Power BI-administratörer kan använda Power BI-spårningsloggar till att visa i
 - I sällsynta fall kan e-postprenumerationer ta längre tid än 15 minuter at levereras till mottagarna. Om detta inträffar rekommenderar vi att du kör datauppdateringen och e-postprenumerationen vid olika tider för att säkerställa leverans i tid. Om problemet kvarstår kontaktar du supporten för Power BI.
 - För e-postprenumerationer på instrumentpaneler visas inte paneler som har säkerhet på radnivå (RLS) tillämpat.
 - För prenumerationer på instrumentpaneler så saknar vissa typer av paneler fortfarande stöd. Detta gäller bland annat: strömningspaneler, videopaneler och paneler för anpassat webbinnehåll.
-- Om du delar en instrumentpanel med en kollega utanför din klientorganisation kan du inte skapa en prenumeration till den kollegan *om inte* instrumentpanelen finns i en Premium-arbetsyta eller -app. Om du till exempel är aaron@contoso.com kan du dela med anyone@fabrikam.com, men du kan ännu inte prenumerera anyone@fabrikam.com, och den personen kan inte prenumerera på delat innehåll.
+- Om du delar en instrumentpanel med en kollega utanför din klientorganisation kan du inte skapa en prenumeration till den kollegan *om inte* instrumentpanelen finns i en Premium-arbetsyta eller -app. Om du till exempel är `aaron@contoso.com` kan du dela med `anyone@fabrikam.com`, men du kan ännu inte prenumerera `anyone@fabrikam.com`, och den personen kan inte prenumerera på delat innehåll.
 
 ### <a name="reports"></a>Rapporter
 

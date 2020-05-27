@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
-ms.date: 11/27/2019
-ms.openlocfilehash: 55e74809b47b2906edac9a06f701aa30b3498f80
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.date: 05/14/2020
+ms.openlocfilehash: 0cf3fcdbcfb49d501ccbb7fa191b566e298c84b7
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83144734"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565516"
 ---
 # <a name="what-are-paginated-reports-in-power-bi-premium"></a>Vad är sidnumrerade rapporter i Power BI Premium?
 
@@ -76,7 +76,7 @@ Här följer några andra funktioner som inte stöds i den första versionen:
 
 - Fästa rapportsidor eller visuella objekt på Power BI-instrumentpaneler. Du kan fortfarande fästa visualiseringar på en Power BI-instrumentpanel från en lokal sidnumrerad rapport på en Power BI-rapportserver eller Reporting Services-rapportserver. Se [Fäst Reporting Services-objekt till Power BI-instrumentpaneler](https://docs.microsoft.com/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards) för mer information.
 - Dokumentöversikter.
-- Underrapporter och detaljerade rapporter.  Men du kan överväga att använda URL-parametrar med sidnumrerade rapporter för att åstadkomma parametrar med scenarier med visning av detaljerad information.
+- Detaljvisningsrapporter.  Överväg att använda URL-parametrar med sidnumrerade rapporter för scenarier med visning av detaljerad information.
 - Delade datakällor och delade datamängder.
 
  
@@ -85,4 +85,4 @@ Här följer några andra funktioner som inte stöds i den första versionen:
 - [Installera Power BI Report Builder från Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=2086513)
 - [Självstudie: Skapa en sidnumrerad rapport](paginated-reports-quickstart-aw.md)
 - [Ange data direkt i en sidnumrerad rapport](paginated-reports-enter-data.md)
-- [Självstudie: Bädda in sidnumrerade Power BI-rapporter i en app för dina kunder](../developer/embed-paginated-reports-customers.md)
+- [Självstudie: Bädda in sidnumrerade Power BI-rapporter i en app för dina kunder](../developer/embedded/embed-paginated-reports-customers.md)

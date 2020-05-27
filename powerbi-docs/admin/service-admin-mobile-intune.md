@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: e621deb2cc2db74d8836900aa65105a075d4cd3c
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: c7d1c9a29c95cb039c90fd339f6e6a38de111916
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83139371"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83563697"
 ---
 # <a name="configure-mobile-apps-with-microsoft-intune"></a>Konfigurera mobilappar med Microsoft Intune
 
@@ -24,7 +24,7 @@ Microsoft Intune låter organisationer hantera enheter och program. Power BI-mob
 
 Den här artikeln förutsätter att Intune är korrekt konfigurerat och att du har enheter som registrerats med Intune. Den här artikeln är inte avsedd som en fullständig konfigurationsguide för Microsoft Intune. Mer information om Intune finns i [Vad är Intune?](/intune/introduction-intune/).
 
-Microsoft Intune kan finnas tillsammans med hantering av mobilenheter (MDM) i Office 365. Om du använder MDM visar enheten registrerade inom MDM, men är tillgänglig för hantering i Intune.
+Microsoft Intune kan finnas tillsammans med hantering av mobilenheter (MDM) i Microsoft 365. Om du använder MDM visar enheten registrerade inom MDM, men är tillgänglig för hantering i Intune.
 
 > [!NOTE]
 > När du har konfigurerat Intune stängs datauppdateringar i bakgrunden av för Power BI-mobilappen på din iOS- eller Android-enhet. När du använder appen uppdaterar Power BI data från Power BI-tjänsten på webben.
@@ -95,7 +95,7 @@ Du kan skapa programmet eller principen först. Den ordning som de läggs till s
 
 1. Välj **Överför**.
 
-1. Om du inte ser appen i listan bör du förnya sidan: Gå till **Översikt** sedan tillbaka till **Appar**.
+1. Om du inte ser appen i listan bör du uppdatera sidan: Gå till **Översikt** och därefter tillbaka till **Appar**.
 
     ![Fliken appar](media/service-admin-mobile-intune/intune-add-software-ios2.png)
 
@@ -111,7 +111,7 @@ Du kan skapa programmet eller principen först. Den ordning som de läggs till s
 
 1. Välj **Överför**.
 
-1. Om du inte ser appen i listan bör du förnya sidan: Gå till **Översikt** sedan tillbaka till **Appar**.
+1. Om du inte ser appen i listan bör du uppdatera sidan: Gå till **Översikt** och därefter tillbaka till **Appar**.
 
     ![Fliken appar](media/service-admin-mobile-intune/intune-add-software-android2.png)
 
@@ -172,7 +172,7 @@ Du installerar programmet via *företagsportalappen*. Om du inte har installerat
 
     ![Power BI-app](media/service-admin-mobile-intune/intune-companyportal2.png)
 
-1. Välj **Installera**.
+1. Välj **installera**.
 
     ![Installera app](media/service-admin-mobile-intune/intune-companyportal3.png)
 
@@ -190,4 +190,4 @@ Du installerar programmet via *företagsportalappen*. Om du inte har installerat
 
 [Power BI-appar för mobila enheter](../consumer/mobile/mobile-apps-for-mobile-devices.md)  
 
-Fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)  
+Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)  

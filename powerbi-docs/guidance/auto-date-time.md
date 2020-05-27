@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/23/2019
 ms.author: v-pemyer
-ms.openlocfilehash: a143a9b158d8a00fc129953a601f9e4c8f19875f
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 69084048b46c77452bf94f04fd79a97c4f09af5b
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83279720"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83566004"
 ---
 # <a name="auto-datetime-guidance-in-power-bi-desktop"></a>Vägledning om automatisk datum/tid i Power BI Desktop
 
@@ -34,7 +34,10 @@ I följande punktlista beskrivs de överväganden – och eventuella begränsnin
     Det är därför det är viktigt att filtrering eller gruppering görs i kolumnen **År**. När du ökar detaljnivån med hjälp av hierarkin så filtreras året såvida inte nivån **År** har tagits bort avsiktligt. Om det inte finns något filter eller någon grupp på årsnivå, så skulle t.ex. en gruppering efter en viss månad summera värdena för just den månaden under alla år.
 - **Datumfiltrering för enskild tabell:** Eftersom varje datumkolumn skapar en egen (dold) tabell för automatiskt datum/tid så går det inte att använda något tidsfilter i en enskild tabell och sprida det till flera modelltabeller. Att filtrera på det här sättet är ett vanligt modellkrav vid rapportering av flera ämnen (faktatypstabeller) som försäljning och försäljningsbudget. När rapportförfattaren använder automatiskt datum/tid måste hen använda filter för varje annan datumkolumn.
 - **Modellstorlek:** För varje datumkolumn som genererar en dold tabell för automatiskt datum/tid så resulterar det i en ökad modellstorlek och en förlängd datauppdateringstid.
-- **Andra rapportverktyg:** Du kan inte arbeta med tabeller med automatisk datum/tid dem när du använder [Analysera i Excel](../collaborate-share/service-analyze-in-excel.md) eller när du ansluter till modellen via en annan rapportdesigner än Power BI.
+- **Andra rapportverktyg:** Du kan inte arbeta med automatiska datum/tid-tabeller när du:
+  - Använder [Analysera i Excel](../collaborate-share/service-analyze-in-excel.md).
+  - Använder Analysis Services-frågedesigner med sidnumrerade rapporter i Power BI.
+  - Ansluter till modellen med en annan rapportdesigner än den i Power BI.
 
 ## <a name="recommendations"></a>Rekommendationer
 

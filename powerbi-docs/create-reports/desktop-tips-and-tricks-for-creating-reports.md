@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/07/2020
 ms.author: davidi
-ms.openlocfilehash: f66e564091c30e11604d0ab3fe58ba1f93addb28
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: e7e7c0f8df0f41d673920cf4af596ca33d46519c
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83349113"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83564585"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop"></a>Tips om hur du skapar rapporter i Power BI Desktop
 För att få ut mesta möjliga av dina data, behövs ibland lite extra hjälp. Vi har samlat några tips och råd som du kan använda när du skapar rapporter i Microsoft Power BI Desktop *och* i Microsoft Excel 2016 eller Excel 2013 Pro-Plus-versioner med Power Pivot-tillägget aktiverat och Power Query installerad och aktiverad. 
@@ -92,7 +92,7 @@ Starta processen med hjälp av alternativet ”Referens” för den fråga som i
 >[!NOTE]
 >Det kan vara bra att tänka på sorteringsordningen innan du skapar några visuella objekt. 
 
-Nästa steg i processen är att definiera en relation mellan ”bucketerna” och ”informationsfrågorna” i bucketkolumnen. Välj **Hantera relationer** i menyfliksområdet i Power BI Desktop. Skapa en relation där bucketar finns i den vänstra tabellen och Information i den högra, och markera det fält som du använder för histogrammet. 
+Nästa steg i processen är att definiera en relation mellan ”bucketerna” och ”informationsfrågorna” i bucketkolumnen. Välj **Hantera relationer** i menyfliksområdet i Power BI Desktop. Skapa en relation där bucketar finns i den vänstra tabellen och information i den högra, och markera det fält som du använder för histogrammet. 
 
 Det avslutande steget är att skapa histogrammet. Dra bucketfältet från tabellen ”Bucketar”. Ta bort standardfältet från det resulterande stapeldiagrammet. Dra nu histogramfältet från tabellen ”Information” tabell till samma visuella objekt. Ändra standardmängden till Antal i fältkällan. Histogrammet är resultatet. Om du skapar ett annat visuellt objekt, t.ex. en trädkarta från tabellen Information, så välj en datapunkt i trädkartan om du vill se histogrammet markera och visa den valda datapunkten i förhållande till trenden för hela datauppsättningen.
 
@@ -112,7 +112,7 @@ Låt oss ta en titt på ett exempel:
 
 Om vi hämtar datauppsättningar från en aktiv kundsupportbegäran och från en annan datauppsättningar med arbetsobjekt med scheman som följande:
 
-> CustomerInicdents: {IncidentID, CustomerName, IssueName, OpenedDate, Status} WorkItems: {WorkItemID, IncidentID, WorkItemName, OpenedDate, Status, CustomerName } 
+> CustomerIncidents: {IncidentID, CustomerName, IssueName, OpenedDate, Status} WorkItems: {WorkItemID, IncidentID, WorkItemName, OpenedDate, Status, CustomerName } 
 > 
 > 
 
@@ -158,7 +158,7 @@ DAX är formelspråket för beräkningar i Power BI Desktop. Det är optimerat f
 
 [Lär dig grunderna i DAX i Power BI Desktop](../transform-model/desktop-quickstart-learn-dax-basics.md)
 
-[Data Analysis uttryck (DAX)-referens](https://msdn.microsoft.com/library/gg413422.aspx)
+[Data Analysis uttryck (DAX)-referens](/dax/)
 
 [DAX Resource Center](https://social.technet.microsoft.com/wiki/contents/articles/1088.dax-resource-center.aspx)
 

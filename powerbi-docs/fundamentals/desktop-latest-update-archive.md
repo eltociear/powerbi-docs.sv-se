@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/17/2020
+ms.date: 05/19/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 529417823db75d2add192e71e540242f68f420d1
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: d52b3b00902b350ebb81c66c516b5f84e97fb3d0
+ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83361737"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83694003"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Tidigare månadsuppdateringar till Power BI Desktop
 
@@ -32,6 +32,100 @@ Länkarna bredvid varje uppdatering innebär följande:
 Du kan också se videon **Senaste uppdateringar** från början i den här artikeln, genom att klicka på ikonen **Spela upp** på videobilden nedanför listan med uppdateringar.
 
 Följande avsnitt beskriver tidigare månaders uppdateringar till **Power BI Desktop**.
+
+
+## <a name="april-2020-update-2805803282"></a>Uppdatering april 2020 (2.80.5803.282)
+
+Vi är glada att kunna dela aprilversionen av Power BI Desktop med er, vår globala community. 
+
+Skaffa den senaste versionen av Power BI Desktop från [Download Center](https://www.microsoft.com/download/details.aspx?id=58494). Om du kör Windows 10 kan du även hämta Power BI Desktop från [Windows Store](https://aka.ms/pbidesktopstore). Oavsett hur du installerar Power BI Desktop är månadsversionerna desamma, men versionsnumreringen kan variera. Mer information om hur du laddar ned och installerar Power BI Desktop finns i [Hämta Power BI Desktop](desktop-get-the-desktop.md). 
+
+> [!IMPORTANT]
+> Från och med september 2019-versionen levereras Power BI Desktop endast som en enskild .exe-fil som innehåller alla språk med stöd. MSI-versionen släpps inte längre.
+
+
+Länkarna intill varje funktion i Power BI Desktop uppdateringslistan tolkas enligt följande:
+
+* \[blogg\]: De flesta funktioner beskrivs i ett avsnitt i månadsuppdateringens blogginlägg.
+* \[video\]: Vissa funktioner har ett videoutdrag som diskuterar funktionen, som spelas upp i en ny flik i webbläsaren.
+* \[artikel\]: Vissa funktioner har en artikel som innehåller mer information.
+* De återstående funktionerna är självförklarande och behöver varken artikel eller video.
+
+Du kan även titta på hela [videon om månadsuppdateringen av Power BI Desktop](#power-bi-desktop-monthly-update-video).
+
+Följande uppdateringar är nya för Power BI Desktop den här månaden:
+
+
+### <a name="reporting"></a>Rapportering
+* Anpassa visuella objekt (förhandsversion) [[video]](https://youtu.be/q2Hfn_Rhb3E?t=54)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Personalize_visuals) 
+* Ändra identifiering för siduppdatering (förhandsversion) [[video]](https://youtu.be/q2Hfn_Rhb3E?t=447) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Change_detection) 
+* Relativt tidsfilter (förhandsversion) [[video]](https://youtu.be/q2Hfn_Rhb3E?t=744)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Relative_time_filter) 
+* Rektangulärt lasso väljer bland visuella objekt [[video]](https://youtu.be/q2Hfn_Rhb3E?t=1016)[[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Lasso_select) 
+* Villkorsstyrd formatering för summor och delsummor i tabell och matris   [[video]](https://youtu.be/q2Hfn_Rhb3E?t=1075)  [[artikel]](../create-reports/desktop-conditional-table-formatting.md#totals-and-subtotals)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Conditional_formatting) 
+* Dialogrutan Anpassa tema är nu allmänt tillgänglig  [[video]](https://youtu.be/q2Hfn_Rhb3E?t=1250) [[artikel]](../create-reports/desktop-report-themes.md#customize-report-themes)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Customize_theme_GA) 
+* Förbättrad identifiering för villkorsstyrd formatering [[video]](https://youtu.be/q2Hfn_Rhb3E?t=1479)[[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Improved_discoverability) 
+
+
+
+### <a name="analytics"></a>Analys
+* DirectQuery-stöd för visuella AI-objekt [[video]](https://youtu.be/q2Hfn_Rhb3E?t=1498)   [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Direct_Query_AI) 
+* Nedbrytningsträd stöder nu knappbeskrivningar [[video]](https://youtu.be/q2Hfn_Rhb3E?t=1550) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Decomp_tree_tooltips) 
+* Uppdateringar av frågor och svar [[video]](https://youtu.be/q2Hfn_Rhb3E?t=1606)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_QA_updates) 
+
+
+### <a name="visuals"></a>Visuella objekt
+* Nya visualiseringsikoner [[video]](https://youtu.be/q2Hfn_Rhb3E?t=1946)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_New_Visualization_icons) 
+* Nya visuella objekt för Power BI [[video]](https://youtu.be/q2Hfn_Rhb3E?t=1833)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Visualizations)
+
+
+### <a name="template-apps"></a>Mallappar
+* Power Platform Center of Excellence StartKit [[video]](https://youtu.be/q2Hfn_Rhb3E?t=1969)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_CoE_StartKit) 
+* Azure Cognitive Search: Analysera loggar och mått  [[video]](https://youtu.be/q2Hfn_Rhb3E?t=1969)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Azure_Cognitive_Search)
+* COVID-19 appar [[video]](https://youtu.be/q2Hfn_Rhb3E?t=1969)[[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_COVID)
+
+
+### <a name="data-preparation"></a>Förberedelse av data
+* Förbättringar av Frågediagnostik  [[video]](https://youtu.be/q2Hfn_Rhb3E?t=2011)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Enhancements_to_Query) 
+
+
+### <a name="data-connectivity"></a>Dataanslutning
+* CDM-mappvy för Azure Data Lake Storage Gen2 [[video]](https://youtu.be/q2Hfn_Rhb3E?t=2124)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_CDM_Folder_view) 
+
+
+### <a name="other-features"></a>Andra funktioner
+* Ny instruktörsledd utbildning [[video]](https://youtu.be/q2Hfn_Rhb3E?t=2147)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_New_instructor-led_training) 
+
+
+Du kan läsa mer om de här nya funktionerna i [blogginlägget om Power BI Desktop-funktioner](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/).
+
+Se [nyheter i Power BI-tjänsten](service-whats-new.md) och [nyheter i mobilapparna för Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+
+> [!NOTE]
+> Se [datakällor som är tillgängliga för Power BI Desktop](../connect-data/desktop-data-sources.md). Vår lista växer ständigt, så titta gärna efter nyheter ofta.
+
+
+### <a name="power-bi-desktop-monthly-update-video"></a>Video om månadsuppdatering för Power BI Desktop
+I följande video beskrivs var och en av dessa uppdateringar. Du kan även titta på videon från blogginlägget:
+
+> [!VIDEO https://www.youtube.com/embed/q2Hfn_Rhb3E]
+
+
+Du kan också hämta tidigare versioner av Power BI Desktop om din organisation kräver det. Vi rekommenderar alltid att du använder den senaste versionen av Power BI Desktop, i stället för en tidigare version. Alla tidigare versioner har följande begränsningar:
+
+* Tidigare versioner av Power BI Desktop servas inte – du bör alltid använda den senaste versionen för de senaste funktionerna och uppdateringarna.
+* Det kanske inte går att öppna filer som skapats eller sparats i senare versioner av Power BI Desktop med tidigare versioner av Power BI Desktop. 
+* Om du får en varning när du läser in en rapport som sparas i en nyare version av Power BI Desktop och sedan spara rapporten i den tidigare versionen, förlorar du information som är relaterad till nya funktioner.
+* Vi arkiverar endast de engelska versionerna av Power BI Desktop.
+
+Välj följande länkar för att ladda ned den tidigare versionen: 
+
+* [April 2020-versionen av Power BI Desktop – 32 bitar](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2020-04.exe)
+* [April 2020-versionen av Power BI Desktop – 64 bitar](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2020-04_x64.exe)
+
+
+
+
+
 
 
 ## <a name="march-2020-update-2795768562"></a>Uppdatering mars 2020 (2.79.5768.562)
@@ -350,19 +444,6 @@ Se [nyheter i Power BI-tjänsten](service-whats-new.md) och [nyheter i mobilappa
 I följande video beskrivs var och en av dessa uppdateringar. Du kan även titta på videon från blogginlägget:
 
 > [!VIDEO https://www.youtube.com/embed/kVli3Vm_kDo]
-
-Du kan också hämta tidigare versioner av Power BI Desktop om din organisation kräver det. Vi rekommenderar alltid att du använder den senaste versionen av Power BI Desktop, i stället för en tidigare version. Alla tidigare versioner har följande begränsningar:
-
-* Tidigare versioner av Power BI Desktop servas inte – du bör alltid använda den senaste versionen för de senaste funktionerna och uppdateringarna.
-* Det kanske inte går att öppna filer som skapats eller sparats i senare versioner av Power BI Desktop med tidigare versioner av Power BI Desktop. 
-* Om du får en varning när du läser in en rapport som sparas i en nyare version av Power BI Desktop och sedan spara rapporten i den tidigare versionen, förlorar du information som är relaterad till nya funktioner.
-* Vi arkiverar endast de engelska versionerna av Power BI Desktop.
-
-Välj följande länkar för att ladda ned den tidigare versionen: 
-
-* [November 2019-versionen av Power BI Desktop – 32-bitars](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2019-11.exe)
-* [November 2019-versionen av Power BI Desktop – 64-bitars](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2019-11_x64.exe)
-
 
 
 

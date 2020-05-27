@@ -6,19 +6,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/12/2020
+ms.date: 05/19/2020
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: d3cb3c8093446d4417a59c5f64ab6b85a765e3c8
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 562e011bf280930fdcaf19cc87edc97b2bec131b
+ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83301527"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83694044"
 ---
-# <a name="create-a-drill-through-button-in-power-bi-preview"></a>Skapa en knapp för detaljgranskning i Power BI (förhandsversion)
+# <a name="create-a-drill-through-button-in-power-bi"></a>Skapa en knapp för detaljgranskning i Power BI
 
-När du skapar en knapp i Power BI kan du välja åtgärden **Detaljvisning (förhandsversion)** . Den här åtgärdstypen skapar en knapp som leder vidare till en fokuserad sida för att få fram information som är filtrerad till en specifik kontext.
+När du skapar en knapp i Power BI kan du välja åtgärden **Detaljvisning**. Den här åtgärdstypen skapar en knapp som leder vidare till en fokuserad sida för att få fram information som är filtrerad till en specifik kontext.
 
 En detaljgranskningsknapp kan vara användbar om du vill öka identifierbarheten för viktiga detaljgranskningsscenarier i dina rapporter.
 

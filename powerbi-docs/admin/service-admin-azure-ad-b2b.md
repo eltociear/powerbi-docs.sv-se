@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 09b2f8afd78eda244a6862459a85558efa0fa1c2
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 25b136bfa15b00333400b80781d968d0b40d9779
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83129394"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83564505"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-with-azure-ad-b2b"></a>Distribuera Power BI-innehåll till externa gästanvändare med Azure Active Directory B2B
 
@@ -130,7 +130,7 @@ För att hjälpa tillåtna användare att logga in i Power BI kan du ge dem klie
 * Vissa funktioner är inte tillgängliga för [gästanvändare som kan redigera och hantera innehåll i organisationen](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization). För att uppdatera eller publicera rapporter måste de använda Power BI-tjänstens webbgränssnitt, inklusive Hämta data för att överföra Power BI Desktop-filer.  Följande upplevelser stöds inte:
     * Direktpublicering från Power BI Desktop till Power BI-tjänsten
     * Gästanvändare kan inte använda Power BI Desktop för att ansluta till tjänstdatauppsättningar i Power BI-tjänsten
-    * Klassiska arbetsytor som är kopplade till Office 365-grupper:
+    * Klassiska arbetsytor knutna till Microsoft 365-grupper:
         * Gästanvändare kan inte skapa eller vara administratörer för dessa arbetsytor
         * Gästanvändare kan vara medlemmar
     * Det går inte att skicka ad hoc-inbjudan för åtkomstlistor för arbetsytor

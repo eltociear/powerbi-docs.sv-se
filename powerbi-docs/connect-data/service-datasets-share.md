@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/01/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: ba0e04ff4cd56566f7d33445fafa7c8cfcc6b7ad
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 4114287099300c371a6b02961a968702acb98f92
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83284806"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565470"
 ---
 # <a name="share-a-dataset-preview"></a>Dela en datauppsättning (förhandsversion)
 
@@ -24,7 +24,7 @@ Som skapare av *datamodeller* i Power BI Desktop, skapar du *datauppsättningar*
 
 1. Du börja med att skapa en .pbix-fil med en datamodell i Power BI Desktop. Om du planerar att erbjuda den här datamängden till andra så att de kan skapa rapporter så skapar du kanske inte ens en rapport i .pbix-filen.
 
-    Det är bästa praxis att spara .pbix-filen i en Office 365-grupp.
+    Det är bästa praxis att spara .pbix-filen i en Microsoft 365-grupp.
 
 1. Publicera .pbix-filen till en [arbetsyta med den nya funktionen](../collaborate-share/service-create-the-new-workspaces.md) i Power BI-tjänsten.
     

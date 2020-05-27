@@ -1,5 +1,5 @@
 ---
-title: Struktur för visuellt Power BI-objekt
+title: Struktur för projekt med visuella Power BI-objekt
 description: I den här artikeln beskrivs mappen och filstrukturen för ett visuellt Power BI-projekt
 author: KesemSharabi
 ms.author: kesharab
@@ -8,14 +8,14 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 01/12/2020
-ms.openlocfilehash: 18267f06bd43166cb1958d3aff73913a31189953
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: ce0f22c17ed718d3e2ad4e4fa9d9514edd315583
+ms.sourcegitcommit: 21b06e49056c2f69a363d3a19337374baa84c83f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80550770"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "83407441"
 ---
-# <a name="power-bi-visual-project-structure"></a>Struktur för visuellt Power BI-objekt
+# <a name="power-bi-visual-project-structure"></a>Struktur för projekt med visuella Power BI-objekt
 
 Det bästa sättet att börja skapa ett nytt visuellt Power BI-objekt är att använda verktyget [pbiviz](https://www.npmjs.com/package/powerbi-visuals-tools) för visuella Power BI-objekt.
 

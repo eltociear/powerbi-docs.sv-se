@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 08/21/2018
-ms.openlocfilehash: 907e65635424b709ec2c0850e4d0d759f4ba6dd3
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.date: 05/14/2020
+ms.openlocfilehash: 8d2efebcfd2d4bc4289f0c8136ef060507fe0a86
+ms.sourcegitcommit: 6ba7cc9afaf91229f717374bc0c12f0b8201d15e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "73874090"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "83438279"
 ---
 # <a name="configure-your-report-server-to-host-excel-workbooks-using-office-online-server-oos"></a>Konfigurera rapportservern för att hantera Excel-arbetsböcker med hjälp av Office Online Server (OOS)
 
@@ -179,7 +179,8 @@ När du har angett URL:en för identifiering och väljer **Verkställ** visas en
 
 ## <a name="limitations-and-considerations"></a>Begränsningar och överväganden
 
-* Du har bara läsbehörighet med arbetsböcker.
+- Du har bara läsbehörighet med arbetsböcker.
+- Schemalagd uppdatering stöds inte för Excel-arbetsböcker i Power BI-rapportserver.
 
 ## <a name="next-steps"></a>Nästa steg
 
@@ -188,4 +189,4 @@ När du har angett URL:en för identifiering och väljer **Verkställ** visas en
 [Hämta Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
 [Ladda ned SQL Server Data Tools (SSDT)](https://go.microsoft.com/fwlink/?LinkID=616714)
 
-Fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

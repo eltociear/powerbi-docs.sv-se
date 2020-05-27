@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/07/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 8d70b291b4ff2b157c15967d602cfbee8e12965a
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 1d37225e1de1ffdf0617a84c3b0514d32494c563
+ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83144356"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83693948"
 ---
 # <a name="create-classic-workspaces-in-power-bi"></a>Skapa klassiska arbetsytor i Power BI
 
@@ -22,30 +22,30 @@ I Power BI kan du skapa *arbetsytor*, platser där du kan samarbeta med kollegor
 
 **Visste du att?** Power BI erbjuder en ny arbetsyteupplevelse som nu är standard. Läs [Organisera arbete i de nya arbetsytorna](service-new-workspaces.md) för att få information om de nya arbetsytorna. Är du redo för att migrera den klassiska arbetsytan? Mer information finns i [Uppgradera klassiska arbetsytor till de nya arbetsytorna i Power BI](service-upgrade-workspaces.md).
 
-När du skapar en klassisk arbetsyta skapar du en underliggande, associerad Office 365-grupp. All administration för arbetsytor sker i Office 365. Du kan lägga till kollegor till dessa arbetsytor som medlemmar eller administratörer. På arbetsytan kan ni samarbeta kring instrumentpaneler, rapporter och annat innehåll som du planerar att distribuera till en bredare publik. Alla som du lägger till i en arbetsyta behöver en Power BI Pro-licens. 
+När du skapar en klassisk arbetsyta skapar du en underliggande, associerad Microsoft 365-grupp. All administration för arbetsytor sker i Microsoft 365. Du kan lägga till kollegor till dessa arbetsytor som medlemmar eller administratörer. På arbetsytan kan ni samarbeta kring instrumentpaneler, rapporter och annat innehåll som du planerar att distribuera till en bredare publik. Alla som du lägger till i en arbetsyta behöver en Power BI Pro-licens.
 
 ## <a name="video-apps-and-workspaces"></a>Video: Appar och arbetsytor
 <iframe width="640" height="360" src="https://www.youtube.com/embed/Ey5pyrr7Lk8?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
-## <a name="create-a-classic-workspace-based-on-an-office-365-group"></a>Skapa en klassisk arbetsyta baserat på en Office 365-grupp
+## <a name="create-a-classic-workspace-based-on-a-microsoft-365-group"></a>Skapa en klassisk arbetsyta baserat på en Microsoft 365-grupp
 
-När du skapar en arbetsyta byggs den på en Office 365-grupp.
+När du skapar en arbetsyta byggs den på en Microsoft 365-grupp.
 
 [!INCLUDE [powerbi-service-create-app-workspace](../includes/powerbi-service-create-app-workspace.md)]
 
-När du först skapar arbetsytan kan du behöva vänta i ungefär en timme för att den ska spridas till Office 365. 
+När du först skapar arbetsytan kan du behöva vänta i ungefär en timme för att den ska spridas till Microsoft 365.
 
-### <a name="add-an-image-to-your-office-365-workspace-optional"></a>Lägga till en bild i din Office 365-arbetsyta (valfritt)
+### <a name="add-an-image-to-your-microsoft-365-workspace-optional"></a>Lägga till en bild i din Microsoft 365-arbetsyta (valfritt)
 Som standard skapar Power BI en liten färgad cirkel för din app med appens initialer. Men du kan också anpassa den med en bild. Om du vill lägga till en bild måste du ha en Exchange Online-licens.
 
 1. Välj **Arbetsytor**, välj **Fler alternativ** (...) bredvid namnet på arbetsytan och sedan **Medlemmar**. 
    
      ![Välja medlemmar till arbetsytan](media/service-create-workspaces/power-bi-workspace-old-members.png)
    
-    Office 365 Outlook-kontot för arbetsytan öppnas i ett nytt webbläsarfönster.
+    Microsoft 365 Outlook-kontot för arbetsytan öppnas i ett nytt webbläsarfönster.
 2. Välj **redigeringspennan**.
    
-     ![Office 365-pennikon](media/service-create-workspaces/power-bi-workspace-old-edit-group.png)
+     ![Microsoft 365-pennikon](media/service-create-workspaces/power-bi-workspace-old-edit-group.png)
 3. Välj kamerabilden och leta reda på den bild som du vill använda.
    
      ![Välj kamerabilden](media/service-create-workspaces/power-bi-workspace-old-camera.png)
@@ -54,7 +54,7 @@ Som standard skapar Power BI en liten färgad cirkel för din app med appens ini
 
 4. Välj **OK** och sedan **Spara**.
    
-    Bilden ersätter den färgade cirkeln i Outlook-fönstret i Office 365. 
+    Bilden ersätter den färgade cirkeln i Outlook-fönstret i Microsoft 365.
    
      ![Anpassad bild](media/service-create-workspaces/power-bi-workspace-old-new-image.png)
    

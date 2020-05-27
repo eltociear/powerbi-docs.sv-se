@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 04/29/2020
-ms.openlocfilehash: 3677e29e4ca9bc13bf0c7397d854dea62ec5f70f
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 0089a38c852d82acaebc8cab0f0fb653c6a304cb
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82584984"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565636"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Sidnumrerade rapporter i Power BI: Vanliga frågor och svar 
 
@@ -41,7 +41,7 @@ Kapacitetsadministratören kan aktivera eller inaktivera arbetsbelastningen för
 
 ### <a name="how-can-i-monitor-usage-of-paginated-reports-in-my-tenant"></a>Hur övervakar jag användningen av sidnumrerade rapporter i min klientorganisation?
 
-Office 365-spårningsloggarna visar användningen av den här rapporttypen vid följande händelser: 
+Spårningsloggarna visar användningen av den här rapporttypen vid följande händelser:
 
 - Visa Power BI-rapport
 - Ta bort Power BI-rapport
@@ -152,7 +152,7 @@ Ja, vi har stöd för möjligheten att köra kod i dina rapporter som i SSRS.
 
 ### <a name="can-i-use-power-bi-embedded-to-embed-my-paginated-reports-into-an-app-im-hosting"></a>Kan jag använda inbäddad Power BI för att bädda in mina sidnumrerade rapporter i en app som jag värd för?
 
-SaaS-inbäddning, inklusive stöd för säker inbäddning, är redan tillgängligt. Om det gäller inbäddning av PaaS kan du gå igenom självstudien [Bädda in sidnumrerade Power BI-rapporter i en app för dina kunder](../developer/embed-paginated-reports-customers.md).
+SaaS-inbäddning, inklusive stöd för säker inbäddning, är redan tillgängligt. Om det gäller inbäddning av PaaS kan du gå igenom självstudien [Bädda in sidnumrerade Power BI-rapporter i en app för dina kunder](../developer/embedded/embed-paginated-reports-customers.md).
 
 ### <a name="can-i-drill-through-from-a-power-bi-report-to-a-paginated-report"></a>Kan jag få detaljerad information från en Power BI-rapport till en sidnumrerad rapport?
 

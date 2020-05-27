@@ -10,22 +10,22 @@ ms.date: 05/11/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 8fc1f2a668a0dfff4418749e7f3de7e0379b603f
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 42203c65f6351422bbb65b5a0dc2245ac6a7b190
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83129008"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83564625"
 ---
 # <a name="track-user-activities-in-power-bi"></a>Spåra användaraktiviteter i Power BI
 
-Att veta vem som har vidtagit en viss åtgärd för ett visst objekt i din Power BI-klientorganisation kan vara av avgörande betydelse när det gäller att hjälpa organisationen att uppfylla olika krav, till exempel regelefterlevnad och posthantering. Med Power BI har du två alternativ för att spåra användaraktivitet: [Power BI-aktivitetsloggen](#use-the-activity-log) och [enhetlig Office 365-granskningslogg](#use-the-audit-log). Båda dessa loggar innehåller en fullständig kopia av [Power BI-granskningsdata](#operations-available-in-the-audit-and-activity-logs), men det finns flera viktiga skillnader som sammanfattas i följande tabell.
+Att veta vem som har vidtagit en viss åtgärd för ett visst objekt i din Power BI-klientorganisation kan vara av avgörande betydelse när det gäller att hjälpa organisationen att uppfylla olika krav, till exempel regelefterlevnad och posthantering. Med Power BI har du två alternativ för att spåra användaraktivitet: [Power BI-aktivitetslogg](#use-the-activity-log) och [enhetlig spårningslogg](#use-the-audit-log). Båda dessa loggar innehåller en fullständig kopia av [Power BI-granskningsdata](#operations-available-in-the-audit-and-activity-logs), men det finns flera viktiga skillnader som sammanfattas i följande tabell.
 
-| **Enhetlig Office 365-granskningslogg** | **Power BI-aktivitetslogg** |
+| **Enhetlig spårningslogg** | **Power BI-aktivitetslogg** |
 | --- | --- |
 | Innehåller händelser från SharePoint Online, Exchange Online, Dynamics 365 och andra tjänster utöver Power BI-granskningshändelserna. | Innehåller endast Power BI-granskningshändelserna. |
 | Endast användare med behörigheter för skrivskyddade granskningsloggar eller granskningsloggar, till exempel globala administratörer och granskare, har åtkomst. | Globala administratörer och Power BI-tjänstadministratörer har åtkomst. |
-| Globala administratörer och granskare kan söka i den enhetliga granskningsloggen med hjälp av Säkerhets- och efterlevnadscenter för Office 365, Microsoft 365 Säkerhetscenter och Microsoft 365 Efterlevnadscenter. | Det finns inget användargränssnitt för att söka i aktivitetsloggen ännu. |
+| Globala administratörer och granskare kan söka i den enhetliga spårningsloggen i Microsoft 365 Säkerhetscenter och Microsoft 365 Efterlevnadscenter. | Det finns inget användargränssnitt för att söka i aktivitetsloggen ännu. |
 | Globala administratörer och granskare kan ladda ned granskningsloggposter med hjälp av API:er och cmdletar för Office 365-hantering. | Globala administratörer och Power BI-tjänstadministratörer kan ladda ned aktivitetsloggposter med hjälp av ett Power BI REST API och en cmdlet för hantering. |
 | Behåller granskningsdata i 90 dagar | Behåller aktivitetsdata i 30 dagar (offentlig förhandsversion). |
 | Behåller granskningsdata, även om klientorganisationen flyttas till en annan Azure-region. | Behåller inte aktivitetsdata när klientorganisationen flyttas till en annan Azure-region. |
@@ -105,7 +105,7 @@ $activities[0]
 
 ## <a name="use-the-audit-log"></a>Använda granskningsloggen
 
-Om din uppgift är att spåra användaraktiviteter i Power BI och Office 365 arbetar du med granskning i Säkerhets- och efterlevnadscenter för Office 365 eller använder PowerShell. Granskningen förlitar sig på funktioner i Exchange Online, som etableras automatiskt som stöd för Power BI.
+Om din uppgift är att spåra användaraktiviteter i Power BI och Microsoft 365 arbetar du med granskning i Säkerhets- och efterlevnadscenter för Office 365 eller använder PowerShell. Granskningen förlitar sig på funktioner i Exchange Online, som etableras automatiskt som stöd för Power BI.
 
 Du kan filtrera granskningsdata efter datumintervall, användare, instrumentpanel, rapport, datamängd och aktivitetstyp. Du kan även ladda ned aktiviteterna till en CSV-fil för att analysera dem offline.
 
@@ -184,7 +184,7 @@ Området **Resultat** innehåller följande information om varje händelse som r
 
 #### <a name="view-the-details-for-an-event"></a>Visa information om en händelse
 
-Om du vill visa mer information om en händelse väljer du händelseposten i listan med sökresultat. Sidan **Information** visas med detaljerade egenskaper från händelseposten. På sidan **Information** visas egenskaper som beror på vilken Office 365-tjänst händelsen inträffar i.
+Om du vill visa mer information om en händelse väljer du händelseposten i listan med sökresultat. Sidan **Information** visas med detaljerade egenskaper från händelseposten. På sidan **Information** visas egenskaper som beror på vilken Microsoft 365-tjänst händelsen inträffar i.
 
 Om du vill visa denna information väljer du **Mer information**. Alla Power BI-poster har värdet 20 för egenskapen RecordType (typ av post). Information om andra egenskaper finns i [detaljerade egenskaper i granskningsloggen](/office365/securitycompliance/detailed-properties-in-the-office-365-audit-log/).
 

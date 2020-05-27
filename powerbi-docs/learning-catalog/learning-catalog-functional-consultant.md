@@ -6,12 +6,12 @@ ms.prod: powerbi
 ms.topic: article
 ms.date: 03/25/2020
 ms.author: v-lshann
-ms.openlocfilehash: 0a0964f82c80017b53feb668cca8399b18a72cfc
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 8d7642dfbac40b3a31190bc02835a4132ee12e11
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81268522"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83564072"
 ---
 # <a name="functional-application-consultant-learning-catalog"></a>Utbildningskatalog för konsulter för funktionella program
 
@@ -82,7 +82,7 @@ För funktionella konsulter visade vår analys av jobbaktiviteter att alla måst
 | [Bättre tillsammans: 5 fördelar som Excel-användare får av att använda Power BI](https://info.microsoft.com/excel-powerbi-better-together-ondemand.html)  | Excel är ett av världens mest populära program. Miljontals individer och företag använder det till allt från enkel inmatning och redovisning till mer avancerad analys av statistik och data. Många vet dock inte att de dramatiskt kan utöka funktionerna i Excel, spara tid och öka effektiviteten genom att para ihop programmet med ett annat Microsoft-program: Power BI. Vi ska gå igenom fem olika anledningar till varför du och ditt företag kan ha nytta av att använda Excel och Power BI tillsammans. Efter seminariet vet du allt du behöver för att komma igång med att analysera, tolka och dra nytta av organisationens data. | Webbseminarium |   |
 | [Utöver kalkylbladet](https://info.microsoft.com/CA-PowerBI-WBNR-FY18-05May-09-DataBeyondtheSpreadsheet-MCW0006385_02OnDemandRegistration-ForminBody.html)  | Ett meddelande till alla Excel-användare och analytiker: arbeta smartare, få mer värde och fokusera på det som är viktigt. Lär dig hur du kan skapa vackra rapporter som människor vill använda, dela data visuellt på ett sätt som kollegorna förstår utan förklaring och gör insikter tillgängliga för alla som behöver dem – var de än befinner sig. Se Microsoft Power BI användas under denna onlinesession.  | Webbseminarium |   |
 | [Rita rätt insikter med Power BI och Visio](https://info.microsoft.com/ww-ondemand-powerbi-and-visio.html) | Var med på det här webbseminariet för att lära dig hur du kombinerar Power BI-instrumentpaneler och Microsoft Visio-diagram för att skapa kraftfulla visuella insikter. Visio och Power BI är mycket visuella och naturliga komplement. Med Visio kan du skapa vägledande diagram, till exempel sammankopplade arbetsflöden och verkliga layouter. Power BI hjälper dig att skapa intuitiva instrumentpaneler med hjälp av diagram och mappar för att mäta KPI:er och spåra mål.| Webbseminarium |   |
-| [Power BI, Excel och Office 365: Optimera dina företagsdata](https://info.microsoft.com/Unlocking-the-Value-of-your-Enterprise-Data-OnDemandRegistration.html?Is=Website)  | Den här sessionen är full av demonstrationer, och du får lära dig hur du använder den unika kraften hos Microsoft Excel i Power BI till att förbättra företagets analyser och insikter.  | Webbseminarium |   |
+| [Power BI, Excel och Microsoft 365: Optimera dina företagsdata](https://info.microsoft.com/Unlocking-the-Value-of-your-Enterprise-Data-OnDemandRegistration.html?Is=Website)  | Den här sessionen är full av demonstrationer, och du får lära dig hur du använder den unika kraften hos Microsoft Excel i Power BI till att förbättra företagets analyser och insikter.  | Webbseminarium |   |
 | [Använda Power BI med Dynamics 365 for Finance and Operations](https://info.microsoft.com/ww-landing-Using-Power-BI-with-Dynamics-365-Finance-and-Operations-OnDemand.html)   | Registrera dig för det här webbseminariet om du vill lära dig hur du kan bädda in och hantera Power BI-rapportlösningarna i Dynamics 365 Finance and Operations med hjälp av Azure Data Lake. Se hur du snabbt kan leverera användbara insikter utan avbrott i tjänsterna och dela analyslösningar på företaget med hjälp av Power BI.  | Webbseminarium |   |
 ## <a name="security"></a>Säkerhet<a name="security"></a>
 | Innehåll   | Beskrivning  | Format   | Längd   |

@@ -1,6 +1,6 @@
 ---
-title: Hantera din arbetsyta i Power BI och Office 365
-description: Arbetsytor i Power BI är en samarbetsmiljö som bygger på Office 365-grupper. Hantera dina arbetsytor i Power BI och Office 365.
+title: Hantera din arbetsyta i Power BI och Microsoft 365
+description: Arbetsytor i Power BI är en samarbetsmiljö som bygger på Microsoft 365-grupper. Hantera dina arbetsytor i Power BI och Microsoft 365.
 author: maggiesMSFT
 ms.reviewer: lukasz
 ms.service: powerbi
@@ -9,27 +9,27 @@ ms.topic: conceptual
 ms.date: 03/02/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 27f3c88607f57be8b5abffdbec71ecfe80beea23
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 1365eba697538255ea8c23b03f0b5db71a7ba1cd
+ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83348078"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83693810"
 ---
-# <a name="manage-your-workspace-in-power-bi-and-office-365"></a>Hantera din arbetsyta i Power BI och Office 365
+# <a name="manage-your-workspace-in-power-bi-and-microsoft-365"></a>Hantera din arbetsyta i Power BI och Microsoft 365
 
-Som skapare eller administratör för en [arbetsyta i Power BI](service-create-distribute-apps.md) eller i Office 365 kan du hantera vissa delar av arbetsytan i Power BI. Andra delar hanterar du i Office 365.
+Som skapare eller administratör för en [arbetsyta i Power BI](service-create-distribute-apps.md) eller i Microsoft 365 kan du hantera vissa delar av arbetsytan i Power BI. Andra delar hanterar du i Microsoft 365.
 
 > [!NOTE]
-> I de nya arbetsytorna har förhållandet ändrats mellan Power BI-arbetsytor och Office 365-grupper. Du kommer inte automatiskt att skapa en Office 365-grupp varje gång du skapar en av de nya arbetsytorna. Läs mer om att [skapa de nya arbetsytorna](service-create-the-new-workspaces.md).
+> I de nya arbetsytorna har förhållandet ändrats mellan Power BI-arbetsytor och Microsoft 365-grupper. Du kommer inte automatiskt att skapa en Microsoft 365-grupp varje gång du skapar en av de nya arbetsytorna. Läs mer om att [skapa de nya arbetsytorna](service-create-the-new-workspaces.md).
 
 I **Power BI** kan du:
 
 * Lägga till eller ta bort arbetsytans medlemmar, och även göra en medlem i arbetsytan till administratör.
 * Redigera arbetsytans namn.
-* Ta bort arbetsytan, som också tar bort Office 365-gruppen.
+* Ta bort arbetsytan, som också tar bort Microsoft 365-gruppen.
 
-I **Office 365** kan du:
+I **Microsoft 365** kan du:
 
 * Lägga till eller ta bort gruppmedlemmar i arbetsytan, och även göra en medlem till ägare.
 * Redigera gruppens namn, bild, beskrivning och andra inställningar.
@@ -53,9 +53,9 @@ Du måste ha en [Power BI Pro-licens](../fundamentals/service-features-license-t
 
 1. Välj **Spara** eller **Avbryt**.
 
-## <a name="edit-power-bi-workspace-properties-in-office-365"></a>Redigera egenskaper för Power BI-arbetsytor i Office 365
+## <a name="edit-power-bi-workspace-properties-in-microsoft-365"></a>Redigera egenskaper för Power BI-arbetsytor i Microsoft 365
 
-Du kan även redigera olika egenskaper för en arbetsyta direkt i Outlook för Office 365.
+Du kan även redigera olika egenskaper för en arbetsyta direkt i Outlook för Microsoft 365.
 
 ### <a name="edit-the-members-of-the-workspace-group"></a>Redigera medlemmarna i arbetsytegruppen
 
@@ -63,17 +63,17 @@ Du kan även redigera olika egenskaper för en arbetsyta direkt i Outlook för O
 
    ![Redigera arbetsytor i Power BI](media/service-manage-app-workspace-in-power-bi-and-office-365/power-bi-app-ellipsis-members.png)
 
-   Gruppvyn för arbetsytan öppnas i Outlook för Office 365. Du kan behöva logga in på ditt företagskonto.
+   Gruppvyn för arbetsytan öppnas i Outlook för Microsoft 365. Du kan behöva logga in på ditt företagskonto.
 
 1. Välj rollen intill en teammedlems namn för att göra den personen till **Medlem** eller **Ägare**. Välj **X** för att ta bort personen från gruppen.
 
-   ![Redigera en grupp i Office 365](media/service-manage-app-workspace-in-power-bi-and-office-365/pbi_managegroupo365.png)
+   ![Redigera en grupp i Microsoft 365](media/service-manage-app-workspace-in-power-bi-and-office-365/pbi_managegroupo365.png)
 
 ### <a name="add-an-image-and-set-other-workspace-properties"></a>Lägg till en bild och ange andra egenskaper för arbetsytor
 
-När du distribuerar appen från arbetsytan används bilden du lägger till här för appen. Läs mer under [Lägga till en bild för din Office 365-arbetsyta ](service-create-workspaces.md#add-an-image-to-your-office-365-workspace-optional) i artikeln **Skapa de nya arbetsytorna**.
+När du distribuerar appen från arbetsytan används bilden du lägger till här för appen. Läs mer under [Lägga till en bild för din Microsoft 365-arbetsyta ](service-create-workspaces.md#add-an-image-to-your-microsoft-365-workspace-optional) i artikeln **Skapa de nya arbetsytorna**.
 
-1. Öppna Outlook för Office 365-vyn av arbetsytan, gå till fliken **Om** och välj **Redigera**.
+1. Öppna Outlook för Microsoft 365-vyn av arbetsytan, gå till fliken **Om** och välj **Redigera**.
 
     ![Ikon för att redigera grupp](media/service-manage-app-workspace-in-power-bi-and-office-365/pbi_editgroupo365.png)
 1. Du kan redigera namn, beskrivning och språk för grupprelaterade meddelanden. Du kan även lägga till en bild och ange andra egenskaper här.
@@ -86,4 +86,4 @@ När du distribuerar appen från arbetsytan används bilden du lägger till här
 
 * [Publicera en app i Power BI](service-create-distribute-apps.md)
 
-* Fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
+* Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)

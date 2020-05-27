@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 01/16/2019
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 0c9f9c0f24ad40fadb7d0bd61cd6a6ce7d318e74
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 178ad340a9a3ccd9d6427dc6bad03b6d8d08ce90
+ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83297847"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83694068"
 ---
 # <a name="use-cross-report-drillthrough-in-power-bi"></a>Använda visning av detaljerad information mellan rapporter i Power BI
 
@@ -31,7 +31,7 @@ Om du vill initiera visning av detaljerad information mellan rapporter väljer d
 Den här artikeln visar hur du konfigurerar och använder detaljerad visning av information mellan rapporter för Power BI-rapporter.
 
 > [!NOTE]
-> Du kan inte använda visning av detaljerad information mellan rapporter med [Delat med mig-rapporter](../collaborate-share/service-share-dashboards.md#share-a-dashboard-or-report) som delas enskilt inom **Min arbetsyta**. Om du vill använda visning av detaljerad information mellan rapporter måste du öppna rapporterna på den arbetsyta som de delas från.
+> Du kan inte använda visning av detaljerad information mellan rapporter med [Delat med mig-rapporter](../collaborate-share/service-share-dashboards.md#share-a-dashboard-or-report) som delas enskilt. Om du vill använda visning av detaljerad information mellan rapporter måste du öppna rapporterna på arbetsytor som du är medlem i.
 
 ## <a name="enable-cross-report-drillthrough"></a>Aktivera detaljerad information mellan rapporter
 

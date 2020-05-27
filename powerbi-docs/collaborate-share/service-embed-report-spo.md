@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
 ms.date: 04/27/2020
-ms.openlocfilehash: 60232b81633542d28b4cd52baf171557e95074c6
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 046ebacc69642c1e7f399f0a44d7c5a32e411cb1
+ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83143515"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83693871"
 ---
 # <a name="embed-a-report-web-part-in-sharepoint-online"></a>Bädda in en rapportwebbdel i SharePoint Online
 
@@ -79,7 +79,7 @@ Inbäddning av en rapport i SharePoint Online ger inte automatiskt användarna b
 > [!IMPORTANT]
 > Se till att granska vem som kan visa rapporten i Power BI-tjänsten och bevilja åtkomst till de som inte visas i listan.
 
-Det finns två sätt att ge åtkomst till rapporter i Power BI. Det första sättet, om du använder en Office 365-grupp för att skapa SharePoint Online-teamwebbplatsen, är att ange användaren som medlem i **arbetsytan i Power BI-tjänsten** och **SharePoint-sidan**. Mer information finns i artikeln om att [hantera en arbetsyta](service-manage-app-workspace-in-power-bi-and-office-365.md).
+Det finns två sätt att ge åtkomst till rapporter i Power BI. Det första sättet, om du använder en Microsoft 365-grupp för att skapa SharePoint Online-teamwebbplatsen, är att ange användaren som medlem i **arbetsytan i Power BI-tjänsten** och **SharePoint-sidan**. Mer information finns i artikeln om att [hantera en arbetsyta](service-manage-app-workspace-in-power-bi-and-office-365.md).
 
 Det andra sättet är att bädda in en rapport i en app och dela den direkt med användare:  
 
@@ -157,7 +157,7 @@ Användare som visar en rapport i SharePoint måste antingen ha en **Power BI Pr
 
 * Power BI stöder inte samma språk som SharePoint Online. Det innebar att den inbäddade rapporten kanske inte är helt lokaliserad.
 
-* Problem kan också uppstå om du använder Internet Explorer 10. <!--You can look at the [browsers support for Power BI](../consumer/end-user-browsers.md) and for [Office 365](https://products.office.com/office-system-requirements#Browsers-section). -->
+* Problem kan också uppstå om du använder Internet Explorer 10. <!--You can look at the [browsers support for Power BI](../consumer/end-user-browsers.md) and for [Microsoft 365](https://products.office.com/office-system-requirements#Browsers-section). -->
 
 * Power BI-webbdelen är inte tillgänglig i [nationella moln](https://powerbi.microsoft.com/clouds/).
 

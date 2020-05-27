@@ -9,34 +9,34 @@ ms.topic: conceptual
 ms.date: 05/07/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: c534a72594692c5cf404b095492e7d6425f23329
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 701f478ce4dd59d77c1722b1386cd79ad3fbf2a0
+ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83273671"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83693778"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Organisera arbete på de nya arbetsytorna i Power BI
 
 *Arbetsytor* är platser för samarbete med kollegor för att skapa samlingar med instrumentpaneler, rapporter och sidnumrerade rapporter. Den nya arbetsyteupplevelsen hjälper dig att bättre hantera åtkomst till innehåll. Den här artikeln beskriver de nya arbetsytorna och hur de skiljer sig åt från de klassiska arbetsytorna.  De används, precis som de klassiska arbetsytorna, för att skapa och distribuera appar. Är du redo att skapa en ny arbetsyta? Läs [Skapa en ny arbetsyta-upplevelsen](service-create-the-new-workspaces.md).
 
-Nya och uppgraderade arbetsytor kan samexistera sida vid sida med befintliga klassiska arbetsytor. Den nya arbetsyteupplevelsen är stardardarbetsytan. Du kan fortfarande skapa och använda [klassiska arbetsytor](service-create-workspaces.md) baserat på Office 365-grupper om du vill. Är du redo för att migrera den klassiska arbetsytan? Mer information finns i [Uppgradera klassiska arbetsytor till de nya arbetsytorna i Power BI](service-upgrade-workspaces.md).
+Nya och uppgraderade arbetsytor kan samexistera sida vid sida med befintliga klassiska arbetsytor. Den nya arbetsyteupplevelsen är stardardarbetsytan. Du kan fortfarande skapa och använda [klassiska arbetsytor](service-create-workspaces.md) baserat på Microsoft 365-grupper om du vill. Är du redo för att migrera den klassiska arbetsytan? Mer information finns i [Uppgradera klassiska arbetsytor till de nya arbetsytorna i Power BI](service-upgrade-workspaces.md).
 
 Med de nya arbetsytorna kan du:
 
-- Tilldela arbetsyteroller till användargrupper: säkerhetsgrupper, distributionslistor, Office 365-grupper och enskilda användare.
-- När du skapar en arbetsyta i Power BI utan att skapa en underliggande, associerad Office 365-grupp. All administration för arbetsytor sker i Power BI, inte i Office 365.
-- Fortsätt att hantera användaråtkomst till innehåll via Office 365-grupper, om du vill. Du lägger bara till en Office 365-grupp i arbetsytans åtkomstlista.
+- Tilldela arbetsyteroller till användargrupper: säkerhetsgrupper, distributionslistor, Microsoft 365-grupper och enskilda användare.
+- Skapa en arbetsyta i Power BI utan att skapa en underliggande, associerad Microsoft 365-grupp. All administration för arbetsytor sker i Power BI, inte i Microsoft 365.
+- Fortsätt hantera användaråtkomst till innehåll via Microsoft 365-grupper, om du vill. Lägg bara till en Microsoft 365-grupp i åtkomstlistan för arbetsytor.
 - Använda mer detaljerade arbetsyteroller för mer flexibel hantering av behörigheter på en arbetsyta.
 
-Power BI fortsätter att lista alla Office 365-grupper som du är medlem i. På så sätt undviker du att ändra befintliga arbetsflöden.
+Power BI fortsätter att visa en lista över alla Microsoft 365-grupper som du är medlem i. På så sätt undviker du att ändra befintliga arbetsflöden.
 
 ## <a name="new-and-classic-workspace-differences"></a>Skillnader mellan nya och klassiska arbetsytor
 
 Vi har gjort om vissa funktioner för de nya arbetsytorna. Här är de viktigaste skillnaderna.
 
-* När du skapar de här arbetsytorna skapas inte Office 365-grupper som för klassiska arbetsytor. Du kan dock nu använda en Office 365-grupp för att ge användare åtkomst till din arbetsyta genom att tilldela den till en roll. 
-* I klassiska arbetsytor kan du bara lägga till enskilda personer till medlems- och administratörslistor. I de nya arbetsytorna kan du lägga till flera Active Directory-säkerhetsgrupper, distributionslistor eller Office 365-grupper till de här listorna för enklare användarhantering. 
+- När du skapar de här arbetsytorna skapas inte Microsoft 365-grupper som för klassiska arbetsytor. Nu kan du dock använda en Microsoft 365-grupp för att ge användare åtkomst till din arbetsyta genom att tilldela den till en roll.
+- I klassiska arbetsytor kan du bara lägga till enskilda personer till medlems- och administratörslistor. På de nya arbetsytorna kan du lägga till flera Active Directory-säkerhetsgrupper, distributionslistor eller Microsoft 365-grupper till de här listorna för enklare användarhantering.
 - Du kan skapa ett innehållspaket för organisationen från en klassisk arbetsyta. Du kan inte skapa sådana från de nya arbetsytorna.
 - Du kan använda ett innehållspaket för organisationen från en klassisk arbetsyta. Du kan inte använda dessa från de nya arbetsytorna.
 
@@ -47,7 +47,7 @@ Vissa funktioner fungerar annorlunda i de nya arbetsytorna jämfört med de aktu
 - **Licensieringskontroll**: Vid publicering av rapporter till den nya arbetsyteupplevelsen tillämpas befintliga licensieringsregler. Användare som samarbetar i arbetsytor eller delar innehåll till andra i Power BI-tjänsten behöver en Power BI Pro-licens. För användare utan Pro-licens visas ett felmeddelande om att ”endast användare med Power BI Pro-licenser kan publicera till här arbetsytan”.
 - **Medlemmar kan eller kan inte dela om**: Deltagarrollen ersätter den här inställningen.
 - **Skrivskyddade arbetsytor**: I stället för att ge användare skrivskyddad åtkomst till en arbetsyta, tilldelar du dem rollen Läsare. Den tillåter liknande skrivskyddad åtkomst till innehållet i en arbetsyta.
-- **Användare utan Pro-licens** kan få åtkomst till arbetsytan om arbetsytan är i en Power BI Premium-kapacitet, även om användarna endast har rollen Läsare.
+- **Användare utan Pro-licens** kan få åtkomst till arbetsytan om arbetsytan är i en Power BI Premium-kapacitet, men bara om de har rollen Läsare.
 - **Tillåt användare att exportera data**: Användare med rollen Läsare kan exportera data om de har behörighet att skapa för datauppsättningarna i arbetsytan. Läs mer om [behörighet att skapa för datamängder](../connect-data/service-datasets-build-permissions.md).
 - Det finns ingen knapp för att **lämna arbetsytan**.
 
@@ -59,9 +59,9 @@ Läs mer om att [ställa in arbetsytans kontaktlista](service-create-the-new-wor
 
 ### <a name="workspace-onedrive"></a>Arbetsytans OneDrive
 
-Med arbetsytans OneDrive-funktion kan du konfigurera en Office 365-grupp vars fillagring för SharePoint-dokumentbiblioteket är tillgänglig för arbetsyteanvändarna. Du skapar gruppen utanför Power BI.
+Med arbetsytans OneDrive-funktion kan du konfigurera en Microsoft 365-grupp vars fillagring för SharePoint-dokumentbiblioteket är tillgänglig för arbetsyteanvändarna. Du skapar gruppen utanför Power BI.
 
-Power BI synkroniserar inte behörigheter för användare eller grupper, som är konfigurerade med arbetsyteåtkomst, med Office 365-gruppmedlemskapet. Det bästa sättet är att hantera arbetsyteåtkomst via den Office 365-grupp vars fillagring du konfigurerar i den här inställningen. 
+Power BI synkroniserar inte behörigheter för användare eller grupper, som är konfigurerade med arbetsyteåtkomst, med Microsoft 365-gruppmedlemskapet. Det bästa sättet är att hantera arbetsyteåtkomst via den Microsoft 365-grupp vars fillagring du konfigurerar i den här inställningen.
 
 Läs mer om hur du kan [konfigurera och få åtkomst till arbetsytans OneDrive](service-create-the-new-workspaces.md#workspace-onedrive).  
 
@@ -69,7 +69,7 @@ Läs mer om hur du kan [konfigurera och få åtkomst till arbetsytans OneDrive](
 
 Om du vill bevilja åtkomst till en ny arbetsyta, lägger du till användargrupper eller enskilda personer till en av arbetsyterollerna administratörer, medlemmar, deltagare eller läsare. Alla i en användargrupp får den roll som du har definierat. Om en person finns i flera användargrupper, får personen den högsta av de behörighetsnivåer som följer av de roller som denne har tilldelats.
 
-Med roller kan du hantera vem som kan göra vad i en arbetsyta, så att teamen kan samarbeta. De nya arbetsytorna gör att du kan tilldela roller till enskilda användare och användargrupper: säkerhetsgrupper, Office 365-grupper och distributionslistor. 
+Med roller kan du hantera vem som kan göra vad i en arbetsyta, så att teamen kan samarbeta. De nya arbetsytorna gör att du kan tilldela roller till enskilda användare och användargrupper: säkerhetsgrupper, Microsoft 365-grupper och distributionslistor.
 
 När du tilldelar roller till en användargrupp får personer i gruppen åtkomst till innehåll. Om du kapslar användargrupper får alla berörda användare behörighet.
 
@@ -90,7 +90,7 @@ När arbetsytan är i en Power BI Premium-kapacitet, kan användare med läsarro
 
 ## <a name="administering-new-workspace-experience-workspaces"></a>Administrera arbetsytor för den nya arbetsyteupplevelsen
 
-Administration för arbetsytor i den nya arbetsyteupplevelsen finns nu i administratörsportalen för Power BI. Power BI-administratörer bestämmer vem i en organisation som kan skapa arbetsytor och distribuera appar. Administratörer kan se status för alla arbetsytor i organisationen. De kan också hantera och återställa arbetsytor. Läs mer om att [Skapa nya arbetsytor](../admin/service-admin-portal.md#create-the-new-workspaces) i artikeln Admin Portal.
+Administration för arbetsytor i den nya arbetsyteupplevelsen finns nu i administratörsportalen för Power BI. Power BI-administratörer bestämmer vem i en organisation som kan skapa arbetsytor och distribuera appar. Administratörer kan se status för alla arbetsytor i organisationen. De kan också hantera och återställa arbetsytor. Läs mer om att [Skapa nya arbetsytor](../admin/service-admin-portal.md#create-the-new-workspaces) i Admin Portal-artikeln.
 
 ## <a name="guest-users"></a>Gästanvändare
 
@@ -125,11 +125,11 @@ Nej. Länkar till befintliga objekt i klassiska arbetsytor påverkas inte av den
 
 **Uppgraderas befintliga arbetsytor till den nya arbetsyteupplevelsen med allmän tillgänglighet?**
 
-Nej. Den nya arbetsyteupplevelsen med allmän tillgänglighet ändrar bara standardarbetsytans typ till den nya arbetsyteupplevelsen. Befintliga klassiska arbetsytor som är baserade på Office 365-grupper förblir oförändrade.
+Nej. Den nya arbetsyteupplevelsen med allmän tillgänglighet ändrar bara standardarbetsytans typ till den nya arbetsyteupplevelsen. Befintliga klassiska arbetsytor som är baserade på Microsoft 365-grupper förblir oförändrade.
 
-**Skapas arbetsytor fortfarande automatiskt för Office 365-grupper?**
+**Skapas arbetsytor fortfarande automatiskt för Microsoft 365-grupper**
 
-Ja. Eftersom vi stöder bägge typer av arbetsytor, sida vid sida, fortsätter vi att lista alla Office 365-grupper som användaren har åtkomst till i listan över arbetsytor.
+Ja. Eftersom vi stöder bägge typer av arbetsytor, sida vid sida, fortsätter vi att lista alla Microsoft 365-grupper som användaren har åtkomst till i listan över arbetsytor.
 
 ## <a name="next-steps"></a>Nästa steg
 

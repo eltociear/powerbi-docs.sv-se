@@ -6,21 +6,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/17/2020
+ms.date: 05/19/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 21e0e6ee4499beac5937d0d5777bc7b66c2f09d1
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 2b170a9a5d6e5f36eab555401daf613774c2c984
+ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83361599"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83693980"
 ---
 # <a name="whats-new-in-power-bi-desktop"></a>Nyheter i Power BI Desktop
 
-## <a name="april-2020-update-2805803282"></a>Uppdatering april 2020 (2.80.5803.282)
+## <a name="may-2020-update-2815831621"></a>Uppdatering maj 2020 (2.81.5831.621)
 
-Vi är tacksamma att kunna dela Power BI Desktop från april med er, vårt globala community. 
+Vi hoppas att Power BI Desktop ger vår globala community nya insikter, nya möjligheter och en positiv utveckling. 
 
 Skaffa den senaste versionen av Power BI Desktop från [Download Center](https://www.microsoft.com/download/details.aspx?id=58494). Om du kör Windows 10 kan du även hämta Power BI Desktop från [Windows Store](https://aka.ms/pbidesktopstore). Oavsett hur du installerar Power BI Desktop är månadsversionerna desamma, men versionsnumreringen kan variera. Mer information om hur du laddar ned och installerar Power BI Desktop finns i [Hämta Power BI Desktop](desktop-get-the-desktop.md). 
 
@@ -41,46 +41,43 @@ Följande uppdateringar är nya för Power BI Desktop den här månaden:
 
 
 ### <a name="reporting"></a>Rapportering
-* Anpassa visuella objekt (förhandsversion) [[video]](https://youtu.be/q2Hfn_Rhb3E?t=54)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Personalize_visuals) 
-* Ändra identifiering för siduppdatering (förhandsversion) [[video]](https://youtu.be/q2Hfn_Rhb3E?t=447) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Change_detection) 
-* Relativt tidsfilter (förhandsversion) [[video]](https://youtu.be/q2Hfn_Rhb3E?t=744)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Relative_time_filter) 
-* Rektangulärt lasso väljer bland visuella objekt [[video]](https://youtu.be/q2Hfn_Rhb3E?t=1016)[[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Lasso_select) 
-* Villkorsstyrd formatering för summor och delsummor i tabell och matris   [[video]](https://youtu.be/q2Hfn_Rhb3E?t=1075)  [[artikel]](../create-reports/desktop-conditional-table-formatting.md#totals-and-subtotals)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Conditional_formatting) 
-* Dialogrutan Anpassa tema är nu allmänt tillgänglig  [[video]](https://youtu.be/q2Hfn_Rhb3E?t=1250) [[artikel]](../create-reports/desktop-report-themes.md#customize-report-themes)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Customize_theme_GA) 
-* Förbättrad identifiering för villkorsstyrd formatering [[video]](https://youtu.be/q2Hfn_Rhb3E?t=1479)[[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Improved_discoverability) 
-
-
+* Organisera aktuella tabeller för Excel (förhandsgranskning) [[video]](https://youtu.be/JtuHIslowxk?t=20)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_Excel) 
+* Tillämpa alla filter (förhandsgranskning) [[video]](https://youtu.be/JtuHIslowxk?t=193) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_Apply_all) 
+* Förbättringar av ändringsidentifiering (förhandsgranskning) [[video]](https://youtu.be/JtuHIslowxk?t=475)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_CDM) 
+* Knappåtgärden för detaljvisning är nu allmänt tillgänglig [[video]](https://youtu.be/JtuHIslowxk?t=626)  [[artikel]](../create-reports/desktop-drill-through-buttons.md) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_Drill_through) 
+* Förbättringar av sidnavigeringsåtgärd [[video]](https://youtu.be/JtuHIslowxk?t=1143)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_page_nav) 
+* Knappar stöder nu fyllningsbilder [[video]](https://youtu.be/JtuHIslowxk?t=1465)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_fill_images) 
+* Stöd för skugga i visuella objekt [[video]](https://youtu.be/JtuHIslowxk?t=1561)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_shadow) 
+* Migrering av filterpanel  [[video]](https://youtu.be/JtuHIslowxk?t=1688)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_migration) 
 
 ### <a name="analytics"></a>Analys
-* DirectQuery-stöd för visuella AI-objekt [[video]](https://youtu.be/q2Hfn_Rhb3E?t=1498)   [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Direct_Query_AI) 
-* Nedbrytningsträd stöder nu knappbeskrivningar [[video]](https://youtu.be/q2Hfn_Rhb3E?t=1550) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Decomp_tree_tooltips) 
-* Uppdateringar av frågor och svar [[video]](https://youtu.be/q2Hfn_Rhb3E?t=1606)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_QA_updates) 
+* Nedbrytningsträd är nu allmänt tillgängligt [[video]](https://youtu.be/JtuHIslowxk?t=1701)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_Decomp_tree) 
 
 
 ### <a name="visuals"></a>Visuella objekt
-* Nya visualiseringsikoner [[video]](https://youtu.be/q2Hfn_Rhb3E?t=1946)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_New_Visualization_icons) 
-* Nya visuella objekt för Power BI [[video]](https://youtu.be/q2Hfn_Rhb3E?t=1833)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Visualizations)
+* Nya visuella objekt för Power BI [[video]](https://youtu.be/JtuHIslowxk?t=1840)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_Visualizations)
+* Visuellt Power Apps-objekt är nu kompatibelt med alla språk som stöds [[video]](https://youtu.be/JtuHIslowxk?t=1861)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_lang)
 
-
-### <a name="template-apps"></a>Mallappar
-* Power Platform Center of Excellence StartKit [[video]](https://youtu.be/q2Hfn_Rhb3E?t=1969)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_CoE_StartKit) 
-* Azure Cognitive Search: Analysera loggar och mått  [[video]](https://youtu.be/q2Hfn_Rhb3E?t=1969)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Azure_Cognitive_Search)
-* COVID-19 appar [[video]](https://youtu.be/q2Hfn_Rhb3E?t=1969)[[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_COVID)
+### <a name="modeling"></a>Modellering
+* Listavgränsare och decimaltecken är nu standard för DAX-avgränsare [[video]](https://youtu.be/JtuHIslowxk?t=1869)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_List_separator)
 
 
 ### <a name="data-preparation"></a>Förberedelse av data
-* Förbättringar av Frågediagnostik  [[video]](https://youtu.be/q2Hfn_Rhb3E?t=2011)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Enhancements_to_Query) 
+* DirectQuery på dataflöden [[video]](https://youtu.be/JtuHIslowxk?t=1883)   [[artikel]](../transform-model/service-dataflows-directquery.md)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_DQ_Dataflows) 
+* Nu föreslår funktionen ”webben efter exempel” automatiskt tabeller som standard [[video]](https://youtu.be/JtuHIslowxk?t=1916)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_Web_by_example) 
+* Förbättringar av Frågediagnostik: Sekretessnivåpartitioner [[video]](https://youtu.be/JtuHIslowxk?t=1931)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_Query_Diag) 
 
 
 ### <a name="data-connectivity"></a>Dataanslutning
-* CDM-mappvy för Azure Data Lake Storage Gen2 [[video]](https://youtu.be/q2Hfn_Rhb3E?t=2124)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_CDM_Folder_view) 
+* Många nya dataanslutningsprogram [[video]](https://youtu.be/JtuHIslowxk?t=1948)   [[artikel]](../connect-data/desktop-data-sources.md)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_Data_connectivity) 
+
 
 
 ### <a name="other-features"></a>Andra funktioner
-* Ny instruktörsledd utbildning [[video]](https://youtu.be/q2Hfn_Rhb3E?t=2147)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_New_instructor-led_training) 
+* Påverkansanalys för en datamängd [[video]](https://youtu.be/JtuHIslowxk?t=1964)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_Impact) 
 
 
-Du kan läsa mer om de här nya funktionerna i [blogginlägget om Power BI Desktop-funktioner](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/).
+Du kan läsa mer om de här nya funktionerna i [blogginlägget om Power BI Desktop-funktioner](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/).
 
 Se [nyheter i Power BI-tjänsten](service-whats-new.md) och [nyheter i mobilapparna för Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
@@ -91,7 +88,7 @@ Se [nyheter i Power BI-tjänsten](service-whats-new.md) och [nyheter i mobilappa
 ### <a name="power-bi-desktop-monthly-update-video"></a>Video om månadsuppdatering för Power BI Desktop
 I följande video beskrivs var och en av dessa uppdateringar. Du kan även titta på videon från blogginlägget:
 
-> [!VIDEO https://www.youtube.com/embed/q2Hfn_Rhb3E]
+> [!VIDEO https://www.youtube.com/embed/JtuHIslowxk]
 
 ## <a name="more-videos"></a>Fler videor
 

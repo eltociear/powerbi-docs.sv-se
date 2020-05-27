@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 05/04/2020
+ms.date: 05/19/2020
 ms.author: painbar
-ms.openlocfilehash: 762d88789bb68777886a126589802b9e8d854879
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: a68c8a452752981b2526c450820e8d277f5c0b10
+ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83347457"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83693013"
 ---
 # <a name="install-and-distribute-template-apps-in-your-organization"></a>Installera och distribuera mallappar i organisationen
 
@@ -59,11 +59,19 @@ Om du vill installera, anpassa och distribuera en mallapp behöver du:
 
 ## <a name="connect-to-data"></a>Ansluta till data
 
-1. Välj **Gå till app**. Fönstret **Kom igång med din nya app** visas.
+1. Välj **Gå till app**.
 
-   ![Kom igång med din app](media/service-template-apps-install-distribute/power-bi-template-app-get-started.png)
+1. Välj **Utforska** i fönstret **Kom igång med din nya app**.
 
-1. Klicka på **Anslut**.
+   ![Välkomstskärmen för mallappen](media/service-template-apps-install-distribute/power-bi-template-app-get-started.png)
+
+   Appen öppnas och visar exempeldata.
+
+1. Välj länken **Anslut dina data** på banderollen längst upp på sidan.
+
+   ![Länken Anslut dina data i GitHub-appen](media/service-template-apps-install-distribute/power-bi-template-app-connect-data.png)
+
+
     
     Då öppnas en dialogruta eller serie med dialogrutor där du kan ändra datakällan från exempeldata till din egen datakälla. Det betyder vanligtvis att du definierar om datauppsättningsparametrar och autentiseringsuppgifter för datakällan. Se [Kända begränsningar](service-template-apps-overview.md#known-limitations).
     
@@ -71,19 +79,20 @@ Om du vill installera, anpassa och distribuera en mallapp behöver du:
 
    ![Dialogrutor för Anslut till data](media/service-template-apps-install-distribute/power-bi-template-app-connect-to-data-dialogs.png)
 
-    När du har fyllt i anslutningsdialogrutorna startar anslutningsprocessen. En banderoll informerar dig om att du visar exempeldata.
+    När du har fyllt i anslutningsdialogrutorna startar anslutningsprocessen. En banderoll informerar dig om att data uppdateras och att du under tiden visar exempeldata.
 
     ![Visar exempeldata](media/service-template-apps-install-distribute/power-bi-template-app-viewing-sample-data.png)
 
-    Vänta tills data har anslutits och uppdaterats. Om du vill veta när den här processen är avslutad tittar du på förloppsindikatorn på datauppsättningsraden (nytt utseende) eller fliken (gammalt utseende).
-
-   När anslutningen och datauppdateringen är klar ska du uppdatera webbläsaren. Banderollen informerar nu om att du behöver uppdatera appen för att tillämpa de ändringar du gör i appen och för att dela den.
-
-    ![Anpassa och dela appen](media/service-template-apps-install-distribute/power-bi-template-app-customize-share.png)
+   Rapportdata uppdateras automatiskt en gång per dag, såvida du inte inaktiverar detta under inloggningsprocessen. Om du vill kan du även [ställa in ett eget uppdateringsschema](./refresh-scheduled-refresh.md) för att hålla rapportdata aktuella.
 
 ## <a name="customize-and-share-the-app"></a>Anpassa och dela appen
 
-När du har uppdaterat webbläsaren efter anslutning till data och datauppdatering, ser du nu arbetsytan som är associerad med appen. Nu kan du redigera alla artefakter där, precis som i alla arbetsytor. Kom dock ihåg att alla ändringar du gör kommer att skrivas över när du uppdaterar appen med en ny version, om du inte sparar de objekt som du har ändrat under olika namn. [Se information om att skriva över](#overwrite-behavior).
+När du har anslutit till dina data och datauppdateringen är klar kan du anpassa rapporterna eller instrumentpanelerna i appen och dela appen med dina medarbetare. Kom dock ihåg att alla ändringar du gör kommer att skrivas över när du uppdaterar appen med en ny version, om du inte sparar de objekt som du har ändrat under olika namn. [Se information om att skriva över](#overwrite-behavior).
+
+Om du vill anpassa och dela appen väljer du pennikonen längst upp till höger på sidan.
+
+![Redigera app](media/service-template-apps-install-distribute/power-bi-template-app-edit-app.png)
+
 
 Information om hur du redigerar artefakter i arbetsytan finns i
 * [Upptäck rapportredigeraren i Power BI](../create-reports/service-the-report-editor-take-a-tour.md)
@@ -132,4 +141,4 @@ Om du ursprungligen laddade ned appen från AppSource när en ny version av Temp
 
 ## <a name="next-steps"></a>Nästa steg
 
-[Skapa arbetsytor med dina kollegor i Power BI](../collaborate-share/service-create-workspaces.md)
+[Skapa arbetsytor med dina kollegor i Power BI](../collaborate-share/service-create-the-new-workspaces.md)

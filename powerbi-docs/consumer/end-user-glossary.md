@@ -8,12 +8,12 @@ ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 04/07/2020
 ms.author: mihart
-ms.openlocfilehash: 101cdbc7ad7ea5d07edf182765d305ad2f1fa8c7
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: ebdd84dd4de054df08ac79dc2d28f7862cbb284b
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82120124"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83564905"
 ---
 # <a name="glossary-for-power-bi-service"></a>Ordlista för Power BI-tjänsten
 Power BI-tjänsten kan introducera terminologi som du kanske inte är bekant med eller förstår. Ordlistan är ett bra ställe att leta upp terminologi. Om du vill kan du lägga till den som ett bokmärke. En annan bra resurs om du vill lära dig mer om byggstenarna bakom Power BI-tjänsten är [Grundläggande begrepp](end-user-basic-concepts.md). Grundläggande begrepp ger en översikt över de olika *delarna* i Power BI och hur de hänger ihop.
@@ -26,7 +26,7 @@ Den här ordlista är ett community-arbete.  Saknar du något ord? Be oss att l�
 
 *Premium*-prenumeration för organisationer (även kallat *Premium-kapacitet*) lägger till ett lager med funktioner utöver per användare-licenser. Exempel: *kostnadsfria* per användare-kontoinnehavare inom en organisation som har en *Premium*-prenumeration kan göra mycket mer med Power BI än *kostnadsfria* användare utan *Premium*. Till exempel kan *kostnadsfria* användare med *Premium*-organisationskonton samarbeta med kollegor och visa innehåll som ligger i en Power BI Premium-kapacitet. 
 
-**admin portal (administrationsportal)** Platsen där Power BI-administratörer hanterar användare, funktioner och inställningar för Power BI i deras organisation. (Obs! För Office 365, Azure och PowerApps används termen administrationscenter.)
+**admin portal (administrationsportal)** Platsen där Power BI-administratörer hanterar användare, funktioner och inställningar för Power BI i deras organisation. (Obs! För Microsoft 365, Azure och PowerApps används termen administrationscenter.)
 
 **aggregates (aggregera)** När värdena från flera rader grupperas tillsammans som indata till kriterier för att bilda ett enskilt mer meningsfullt värde eller mått.
 

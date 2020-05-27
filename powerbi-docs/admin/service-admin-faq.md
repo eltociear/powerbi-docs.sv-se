@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 459eaf6ba8b4f6e09b2df5f55956dc77adee9667
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: ce18b3cb077e0fee2eea4d0d31327329f405a51a
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83344421"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83563753"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>Administrera Power BI – Vanliga frågor och svar
 
@@ -81,7 +81,7 @@ Det finns tre scenarier som kan gälla för användare i organisationen:
 
 ### <a name="how-can-i-prevent-users-from-joining-my-existing-microsoft-365-tenant"></a>Hur kan jag förhindra att användare ansluter till min befintliga Microsoft 365-klientorganisation?
 
-Det finns steg som du kan vidta som global administratör för Microsoft 365 så att inte användare ansluter till din Microsoft 365-klientorganisation. Om du blockerar åtkomst kommer användarnas försök att registrera sig att misslyckas och ett meddelande visas som hänvisar dem till att kontakta administratören för deras organisation. Du behöver inte upprepa den här proceduren om du redan har inaktiverat licensen för automatisk distribution (till exempel via Office 365 för utbildning för studenter, lärare och övrig personal).
+Det finns steg som du kan vidta som global administratör så att inte användare ansluter till din Microsoft 365-klientorganisation. Om du blockerar åtkomst kommer användarnas försök att registrera sig att misslyckas och ett meddelande visas som hänvisar dem till att kontakta administratören för deras organisation. Du behöver inte upprepa den här proceduren om du redan har inaktiverat licensen för automatisk distribution (till exempel via Office 365 för utbildning för studenter, lärare och övrig personal).
 
 Använd följande PowerShell-skript för att förhindra att nya användare ansluter till en hanterad klient. ([Läs mer om PowerShell][1].)
 
@@ -184,7 +184,7 @@ När en självbetjäningsanvändare registrerar sig för en molntjänst som anv�
 Om du inte gör något skapas en klient för varje användares e-postdomäner och underdomäner. Om du vill att alla användare ska vara i samma klient oavsett deras e-postadressdomän: Skapa en målklient i förväg eller använd en befintlig klient. Lägg sedan till alla befintliga domäner och underdomäner som du vill samla inom klienten. Alla användare med e-postadresser som slutar på dessa domäner och underdomäner ansluts automatiskt till målklienten när de registreras.
 
 > [!IMPORTANT]
-> Det finns ingen automatisk mekanism för att flytta användare mellan klienter när de väl har skapats. Mer information om att lägga till domäner i en enda Microsoft 365-klientorganisation finns i [Lägga till användare och domän i Office 365](/office365/admin/setup/add-domain/).
+> Det finns ingen automatisk mekanism för att flytta användare mellan klienter när de väl har skapats. Mer information om att lägga till domäner i en enda Microsoft 365-klientorganisation finns i [Lägga till användare och domän i Microsoft 365](/office365/admin/setup/add-domain/).
 
 ### <a name="how-do-i-remove-power-bi-for-users-that-already-signed-up"></a>Hur tar jag bort Power BI för användare som redan har registrerat sig?
 
@@ -259,9 +259,9 @@ Microsoft Power BI bygger på Microsoft 365, som i sin tur bygger på Azure-tjä
 [Vad är Power BI Premium?](service-premium-what-is.md)  
 [Så här köper du Power BI Premium](service-admin-premium-purchase.md)  
 [Power BI Premium – white paper](https://aka.ms/pbipremiumwhitepaper)  
-[Hantera din grupp i Power BI och Office 365](../collaborate-share/service-manage-app-workspace-in-power-bi-and-office-365.md)  
-[Användarkontohantering i Office 365](/office365/servicedescriptions/office-365-platform-service-description/user-account-management/)  
-[Grupphantering i Office 365](/office365/admin/email/create-edit-or-delete-a-security-group/)  
+[Hantera din grupp i Power BI och Microsoft 365](../collaborate-share/service-manage-app-workspace-in-power-bi-and-office-365.md)  
+[Hantering av arbets- eller skolkonto](/office365/servicedescriptions/office-365-platform-service-description/user-account-management/)  
+[Microsoft 365-grupphantering](/office365/admin/email/create-edit-or-delete-a-security-group/)  
 
 Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 

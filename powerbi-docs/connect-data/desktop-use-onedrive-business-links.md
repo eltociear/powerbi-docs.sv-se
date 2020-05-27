@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 01/15/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 706703985242284725fb4fc2d42bf46e54c605c7
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: e5effe6f397dd53fe6347708774118e9c491abc1
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83285818"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83564155"
 ---
 # <a name="use-onedrive-for-business-links-in-power-bi-desktop"></a>Använd OneDrive för företag-länkar i Power BI Desktop
 Många har Excel-arbetsböcker lagrade på OneDrive för företag som skulle vara perfekta att använda med Power BI Desktop. Med Power BI Desktop kan du använda onlinelänkar för Excel-filer som lagras i OneDrive för företag till att skapa rapporter och visuella objekt. Du kan använda ett OneDrive för företag-gruppkonto eller ditt personliga OneDrive för företag-konto.
@@ -44,7 +44,7 @@ I Power BI Desktop kan du använda länken som du nyss kopierade till Urklipp. G
 3. Ta bort strängen *?web=1* i slutet av länken så Power BI Desktop kan navigera till din fil ordentligt, och välj sedan **OK**.
    
     ![](media/desktop-use-onedrive-business-links/power-bi-web-link-confirmation.png) 
-4. Om Power BI Desktop ber dig om autentiseringsuppgifter väljer du antingen **Windows** (för lokala SharePoint-webbplatser) eller **Organisationskonto** (för Office 365 eller OneDrive för företag-webbplatser).
+4. Om Power BI Desktop ber dig om autentiseringsuppgifter väljer du antingen **Windows** (för lokala SharePoint-webbplatser) eller **Organisationskonto** (för Microsoft 365 eller OneDrive för företag-webbplatser).
    
    ![](media/desktop-use-onedrive-business-links/odb-links_06.png)
 

@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 05/11/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: f4bf863d7d87bd908165976940b868be55e367f9
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 6155453f00ae64eee2cf74db7426b36248def796
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83138594"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83564419"
 ---
 # <a name="configure-and-manage-capacities-in-power-bi-premium"></a>Konfigurera och hantera kapaciteter i Power BI Premium
 
@@ -24,11 +24,11 @@ Lär dig hur du hanterar Power BI Premium- och Power BI Embedded-kapaciteter som
 
 ![Inställningsskärmen för Power BI-kapacitet](media/service-admin-premium-manage/premium-capacity-management.png)
 
-*Kapacitet* är i hjärtat av Power BI Premium- och Power BI Embedded-erbjudandena. Det är en uppsättning resurser som reserveras endast för din organisation. Med dedikerad kapacitet kan du publicera instrumentpaneler, rapporter och datauppsättningar för användare i hela organisationen utan att behöva köpa licenser per användare till dem. Det erbjuder även pålitlig och konsekvent prestanda för det innehåll som omfattas av kapaciteten. Mer information finns i [Vad är Power BI Premium?](../service-premium.md).
+*Kapacitet* är i hjärtat av Power BI Premium- och Power BI Embedded-erbjudandena. Det är en uppsättning resurser som reserveras endast för din organisation. Med dedikerad kapacitet kan du publicera instrumentpaneler, rapporter och datauppsättningar för användare i hela organisationen utan att behöva köpa licenser per användare till dem. Det erbjuder även pålitlig och konsekvent prestanda för det innehåll som omfattas av kapaciteten. Mer information finns i [Vad är Power BI Premium?](service-premium-what-is.md).
 
 ## <a name="manage-capacity"></a>Hantera kapacitet
 
-När du har köpt kapacitetsnoder i Office 365 konfigurerar du kapaciteten i administratörsportalen för Power BI. Du hanterar Power BI Premium-kapaciteter i avsnittet **Kapacitetsinställningar** i portalen.
+När du har köpt kapacitetsnoder i Microsoft 365 konfigurerar du kapaciteten i administratörsportalen för Power BI. Du hanterar Power BI Premium-kapaciteter i avsnittet **Kapacitetsinställningar** i portalen.
 
 ![Kapacitetsinställningar i administratörsportalen](media/service-admin-premium-manage/admin-portal-premium.png)
 
@@ -60,7 +60,7 @@ Om du har tillgängliga v-kärnor konfigurerar du din nya kapacitet genom att f�
 
     ![Konfigurera en ny kapacitet](media/service-admin-premium-manage/set-up-capacity.png)
 
-Kapacitetsadministratörer samt Power BI-administratörer och globala Office 365-administratörer kan därefter se kapaciteten i listan i administratörsportalen.
+Kapacitetsadministratörer samt Power BI-administratörer och globala administratörer kan därefter se kapaciteten i listan i administratörsportalen.
 
 ### <a name="capacity-settings"></a>Kapacitetsinställningar
 
@@ -81,7 +81,7 @@ Kapacitetsadministratörer samt Power BI-administratörer och globala Office 365
 
 ### <a name="change-capacity-size"></a>Ändra kapacitetsstorlek
 
-Power BI-administratörer och globala Office 365-administratörer kan ändra Power BI Premium-kapacitet. Det här alternativet är inte tillgängligt för kapacitetsadministratörer som inte är Power BI-administratör eller global Office 365-administratör.
+Power BI-administratörer och globala administratörer kan ändra Power BI Premium-kapacitet. Det här alternativet är inte tillgängligt för kapacitetsadministratörer som inte är Power BI-administratörer eller globala administratörer.
 
 1. Välj **Ändra kapacitetsstorlek**.
 
@@ -118,7 +118,7 @@ Det finns två sätt att tilldela en arbetsyta till en kapacitet: i administrat�
 
 ### <a name="assign-from-the-admin-portal"></a>Tilldela från administratörsportalen
 
-Kapacitetsadministratörer, tillsammans med Power BI-administratörer och globala Office 365-administratörer, kan masstilldela arbetsytor i administratörsportalens avsnitt för premiumkapacitetshantering. När du hanterar en kapacitet visas avsnittet **Arbetsytor**, där du kan tilldela arbetsytor.
+Kapacitetsadministratörer, tillsammans med Power BI-administratörer och globala administratörer, kan masstilldela arbetsytor i administratörsportalens avsnitt för premiumkapacitetshantering. När du hanterar en kapacitet visas avsnittet **Arbetsytor**, där du kan tilldela arbetsytor.
 
 ![Kapacitetshanteringsområde för tilldelning av arbetsyta](media/service-admin-premium-manage/capacity-manage-workspaces.png)
 

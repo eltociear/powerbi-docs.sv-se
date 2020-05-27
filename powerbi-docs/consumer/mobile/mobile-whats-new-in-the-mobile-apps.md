@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 05/05/2020
 ms.author: painbar
-ms.openlocfilehash: dd3d3702524bc8939720a177dcdcc291081542f4
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 7d0933b20c942df724a4d21fbba438cdc8748969
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83349274"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565310"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nyheter i Power BI-mobilapparna
 Relaterad information om nyheter finns i:
@@ -274,7 +274,7 @@ Om du öppnar en rapportlänk som innehåller frågesträngar så kommer de nu a
 
 ### <a name="shared-credentials-now-in-android"></a>Delade autentiseringsuppgifter (nu i Android)
 
-Aldrig har varit enklare att logga in till Power BI från din mobilapp. Vi har förenklat inloggningsprocessen med hjälp av delade autentiseringsuppgifter, vilket innebär att du kan använda autentiseringsuppgifter för andra Office 365-appar när du autentiserar dig i Power BI-tjänsten.
+Aldrig har varit enklare att logga in till Power BI från din mobilapp. Vi har förenklat inloggningsprocessen med hjälp av delade autentiseringsuppgifter, vilket innebär att du kan använda autentiseringsuppgifter för andra Microsoft 365-appar när du autentiserar dig i Power BI-tjänsten.
 
 ### <a name="in-app-urls-now-in-android"></a>URL:er i appen (nu i Android) 
 
@@ -294,7 +294,7 @@ Läs Power BI [-blogginlägget om sidnumrerade rapporter i mobilen](https://powe
 
 ### <a name="shared-credentials-ios"></a>Delade autentiseringsuppgifter (iOS)
 
-Aldrig har varit enklare att logga in till Power BI från din mobilapp. Vi har förenklat inloggningsprocessen med hjälp av delade autentiseringsuppgifter, vilket innebär att du kan använda autentiseringsuppgifter för andra Office 365-appar när du autentiserar dig i Power BI-tjänsten.
+Aldrig har varit enklare att logga in till Power BI från din mobilapp. Vi har förenklat inloggningsprocessen med hjälp av delade autentiseringsuppgifter, vilket innebär att du kan använda autentiseringsuppgifter för andra Microsoft 365-appar när du autentiserar dig i Power BI-tjänsten.
 
 ### <a name="in-app-urls-ios"></a>URL:er i app (iOS) 
 

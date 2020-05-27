@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 04/27/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 2b7c442ef39bba58b7ac7f8224928d29ea56d9c6
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 311473aea5748c94bfa6a757482659176930544b
+ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83348147"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83693828"
 ---
 # <a name="embed-a-report-in-a-secure-portal-or-website"></a>Bädda in en rapport i en säker portal eller webbplats
 
@@ -50,7 +50,7 @@ Alternativet **Bädda in** stöder [URL-filter](service-url-filters.md) och URL-
 
 Alternativet **Bädda in** tillåter inte automatiskt användare att visa rapporten. Visningsbehörigheter anges i Power BI-tjänsten.
 
-I Power BI-tjänsten kan du dela inbäddade rapporter med användare som behöver åtkomst. Om du använder en Office 365-grupp kan du lista användaren som medlem i arbetsytan. Mer information finns i artikeln om att [hantera din arbetsyta i Power BI och Office 365](service-manage-app-workspace-in-power-bi-and-office-365.md).
+I Power BI-tjänsten kan du dela inbäddade rapporter med användare som behöver åtkomst. Om du använder en Microsoft 365-grupp kan du lista användaren som medlem i arbetsytan. Mer information finns i artikeln om att [hantera din arbetsyta i Power BI och Microsoft 365](service-manage-app-workspace-in-power-bi-and-office-365.md).
 
 ## <a name="licensing"></a>Licensiering
 

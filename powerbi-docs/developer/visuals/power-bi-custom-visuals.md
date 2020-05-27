@@ -10,12 +10,12 @@ ms.subservice: powerbi-desktop
 ms.topic: overview
 ms.date: 01/03/2019
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 22c367dbc6160928541570bf2de37c51edcbfc14
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: e9dc53eb3f49a1ef62e4e3539ac7eb6d92b317af
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80550867"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83561649"
 ---
 # <a name="visuals-in-power-bi"></a>Visuella objekt i Power BI
 
@@ -41,7 +41,7 @@ Både communitymedlemmar och Microsoft har bidragit med visuella Power BI-objekt
 
 ### <a name="what-is-appsource"></a>Vad är AppSource?
 
-[AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) är en plats där du kan hitta appar och tillägg till dina Microsoft-program. På AppSource får miljontals användare av produkter som Office 365, Azure, Dynamics 365, Cortana och Power BI tillgång till lösningar som hjälper dem att utföra sitt arbete ännu mer effektivt och insiktsfullt än förut.
+[AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) är en plats där du kan hitta appar och tillägg till dina Microsoft-program. På AppSource får miljontals användare av produkter som Microsoft 365, Azure, Dynamics 365, Cortana och Power BI tillgång till lösningar som hjälper dem att utföra sitt arbete ännu mer effektivt och insiktsfullt än förut.
 
 ### <a name="certified-power-bi-visuals"></a>Certifierade visuella Power BI-objekt
 
@@ -80,4 +80,4 @@ Om du är webbutvecklare och intresserad av att skapa egna visuella objekt och l
 
 * Utforska [riktlinjerna för visuella Power BI-objekt](guidelines-powerbi-visuals.md).
 
-Fler frågor? Läs mer i [Vanliga frågor och svar om visuella Power BI-objekt](power-bi-custom-visuals-faq.md) eller i [Power BI-communityn](https://community.powerbi.com/).
+Har du fler frågor? Läs mer i [Vanliga frågor och svar om visuella Power BI-objekt](power-bi-custom-visuals-faq.md) eller i [Power BI-communityn](https://community.powerbi.com/).
