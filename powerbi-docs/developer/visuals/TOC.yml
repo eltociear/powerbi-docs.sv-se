@@ -52,6 +52,8 @@
           href: power-bi-custom-visuals-certified.md
         - name: Publicera visuella Power BI-objekt till AppSource
           href: office-store.md
+        - name: Skapa R-baserade visuella objekt
+          href: create-r-based-power-bi-desktop.md
         - name: Testa din Power BI-visualisering
           href: submission-testing.md
         - name: Använd R-baserade visuella Power BI-objekt i Power BI
