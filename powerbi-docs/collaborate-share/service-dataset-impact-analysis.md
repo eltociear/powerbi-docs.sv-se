@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 04/13/2020
 ms.author: painbar
 LocalizationGroup: ''
-ms.openlocfilehash: edb34fc5592a6b851ae2c48690a772d75049fb48
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: dd7387bcb008d10ec8887ac777431b5423d43f4c
+ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83274867"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84120332"
 ---
 # <a name="dataset-impact-analysis"></a>Effektanalys för datamängd
 
@@ -54,7 +54,7 @@ Användningsstatistiken gäller de senaste 30 dagarna exklusive den aktuella dag
 
 ## <a name="notify-contacts"></a>Meddela kontakter
 
-Om du har gjort en ändring i en datamängd eller överväger att göra det kan du kontakta de berörda användarna och berätta om den. När du meddelar kontakter skickas ett e-postmeddelande till [kontaktlistorna](../collaborate-share/service-create-the-new-workspaces.md#workspace-contact-list) för de arbetsytor som påverkas. Ditt namn visas i e-postmeddelandet så att kontakterna kan hitta dig och svara i en ny e-posttråd. 
+Om du har gjort en ändring i en datamängd eller överväger att göra det kan du kontakta de berörda användarna och berätta om den. När du meddelar kontakter skickas ett e-postmeddelande till [kontaktlistorna](../collaborate-share/service-create-the-new-workspaces.md#create-a-contact-list) för de arbetsytor som påverkas. Ditt namn visas i e-postmeddelandet så att kontakterna kan hitta dig och svara i en ny e-posttråd. 
 
 1. Klicka på **Meddela kontakter** i sidofönstret för påverkansanalysen. Du ser dialogrutan Meddela kontakter.
 
