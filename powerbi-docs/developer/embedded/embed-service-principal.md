@@ -9,12 +9,12 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 03/30/2020
-ms.openlocfilehash: 40f713c2fd021ea8ecea5789b8ad0bc54cff2294
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 5e9b14fb0eccc0418ca7d5b4a7859f26c1781d50
+ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83275971"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84121194"
 ---
 # <a name="embedding-power-bi-content-with-service-principal-and-application-secret"></a>Bädda in Power BI innehåll med tjänstens huvudnamn och apphemlighet
 
@@ -188,7 +188,6 @@ När ditt innehåll hasr bäddats in kan du [övergå till produktion](embed-sam
 * Dedikerad kapacitet krävs vid flytt till produktion.
 * Du kan inte logga in på Power BI-portal med tjänstens huvudnamn.
 * Power BI-administratörsbehörighet krävs för att aktivera tjänstens huvudnamn i inställningarna för utvecklare i Power BI-administratörsportalen.
-* Du kan inte installera eller hantera en lokal datagateway med tjänstens huvudnamn.
 * Det går inte att använda tjänstens huvudnamn för [inbäddning för organisationens](embed-sample-for-your-organization.md) program.
 * Hantering av [dataflöden](../../transform-model/service-dataflows-overview.md) stöds inte.
 * Tjänstens huvudnamn har för närvarande inte stöd för några administratörs-API:er.
