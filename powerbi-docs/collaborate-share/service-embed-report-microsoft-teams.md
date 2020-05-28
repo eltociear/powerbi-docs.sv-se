@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
 ms.date: 04/27/2020
-ms.openlocfilehash: c424572cf222e4b2f65354e7b9a0959b60a56fca
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 7034bd544ee9c14dd5f32df9335faefd4221e4ac
+ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83143983"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83693908"
 ---
 # <a name="embed-reports-in-microsoft-teams-with-the-power-bi-tab"></a>Bädda in rapporter i Microsoft Teams med fliken Power BI
 
@@ -28,11 +28,12 @@ För att **fliken Power BI för Microsoft Teams** ska fungera ska du se till att
 - Dina användare har en Power BI Pro-licens, eller att rapporten ligger i en [Power BI Premium-kapacitet (SKU:n EM eller P)](../admin/service-premium-what-is.md) med en Power BI-licens.
 - Microsoft Teams har fliken Power BI.
 - Användaren har loggat in i Power BI-tjänsten och aktiverat sin Power BI-licens för att kunna använda rapporten.
-- Användarna måste ha behörighet att visa rapporten.
+- För att kunna lägga till en rapport i Microsoft Teams med fliken Power BI måste du ha minst en visningsroll på arbetsytan där rapporten ska vara. Information om de olika rollerna finns i [Roller i de nya arbetsytorna](service-new-workspaces.md#roles-in-the-new-workspaces).
+- För att kunna visa rapporten på fliken Power BI i Microsoft Teams måste användarna ha behörighet att visa rapporten.
 
 För att **länkförhandsvisningar** ska fungera ska du också kontrollera att:
 - Användarna uppfyller kraven för att använda fliken Power BI för Microsoft Teams.
-- Användarna har loggat in till Power BI Bot-tjänsten. 
+- Användarna har loggat in till Power BI-tjänsten. 
 
 
 ## <a name="embed-your-report"></a>Bädda in rapporten
@@ -90,12 +91,12 @@ Följ de här stegen för att hämta en länkförhandsvisning för innehåll i P
 
 ## <a name="grant-access-to-reports"></a>Bevilja åtkomst till rapporter
 
-När du bäddar in en rapport i Microsoft Teams eller skickar en länk till ett objekt får inte användarna automatiskt behörighet att visa rapporten – du måste [ge användarna tillåtelse att visa rapporten i Power BI](service-share-dashboards.md). Du kan använda en Office 365-grupp för ditt team så att det blir enklare. 
+När du bäddar in en rapport i Microsoft Teams eller skickar en länk till ett objekt får inte användarna automatiskt behörighet att visa rapporten – du måste [ge användarna tillåtelse att visa rapporten i Power BI](service-share-dashboards.md). Du kan använda en Microsoft 365-grupp för ditt team så att det blir enklare.
 
 > [!IMPORTANT]
 > Se till att granska vem som kan visa rapporten i Power BI-tjänsten och bevilja åtkomst till de som inte visas i listan.
 
-Ett sätt att se till att alla i teamet har åtkomst till rapporterna är att placera rapporterna på en enda arbetsyta i Power BI och ge Office 365-teamet åtkomst till arbetsytan.
+Ett sätt att se till att alla i teamet har åtkomst till rapporterna är att placera rapporterna på en enda arbetsyta i Power BI och ge Microsoft 365-teamet åtkomst till arbetsytan.
 
 ## <a name="link-previews"></a>Länkförhandsvisningar 
 
@@ -123,7 +124,7 @@ När du lägger till en Power BI-rapportflik i Teams, skapar Teams automatiskt e
 - Power BI har inte stöd för samma lokaliserade språk som i Microsoft Teams. Det innebar att den inbäddade rapporten kanske inte är helt lokaliserad.
 - Du kan inte bädda in Power BI-instrumentpaneler på fliken Power BI för Microsoft Teams.
 - Användare utan någon Power BI-licens eller behörighet till rapporten ser ett meddelande om att innehållet inte är tillgängligt.
-- Problem kan också uppstå om du använder Internet Explorer 10. <!--You can look at the [browsers support for Power BI](../consumer/end-user-browsers.md) and for [Office 365](https://products.office.com/office-system-requirements#Browsers-section). -->
+- Problem kan också uppstå om du använder Internet Explorer 10. <!--You can look at the [browsers support for Power BI](../consumer/end-user-browsers.md) and for [Microsoft 365](https://products.office.com/office-system-requirements#Browsers-section). -->
 - [URL-filter](service-url-filters.md) stöds inte på fliken Power BI för Microsoft Teams.
 - I nationella moln är den nya Power BI-fliken inte tillgänglig. Det kan finnas en äldre version som inte stöder de nya funktionerna för arbetsytor eller rapporter i Power BI-appar. 
 - När du har sparat fliken kan du inte ändra namnet på fliken via flikinställningarna. Använd alternativet Byt namn för att ändra det.
