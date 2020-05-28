@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.date: 04/15/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 4995671fe5a3a4af0e74ce97d3227f73f005dc3f
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 62d0282af47b0d57a0b9ac307b422191b440b45c
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83348538"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83564098"
 ---
 # <a name="connect-to-files-stored-in-onedrive-for-your-power-bi-workspace"></a>Anslut till filer som lagras i OneDrive för din Power BI-arbetsyta
 När du har [skapat en arbetsyta i Power BI](../collaborate-share/service-create-distribute-apps.md) kan du lagra dina Excel-, CSV-, och Power BI Desktop-filer i OneDrive för företag för din Power BI-arbetsyta. Du kan fortsätta att uppdatera de filer som du lagrar i OneDrive. De uppdateringarna visas automatiskt i Power BI-rapporter och instrumentpaneler som baseras på filerna. 
 
 > [!NOTE]
-> I de nya arbetsytorna har förhållandet ändrats mellan Power BI-arbetsytor och Office 365-grupper. Du skapar inte automatiskt en Office 365-grupp varje gång du skapar en av de nya arbetsytorna. Läs mer om att [skapa de nya arbetsytorna](../collaborate-share/service-create-the-new-workspaces.md)
+> I de nya arbetsytorna har förhållandet ändrats mellan Power BI-arbetsytor och Microsoft 365-grupper. Du skapar inte automatiskt en Microsoft 365-grupp varje gång du skapar en av de nya arbetsytorna. Läs mer om att [skapa de nya arbetsytorna](../collaborate-share/service-create-the-new-workspaces.md)
 
 Att lägga till filer på din arbetsyta är en tvåstegsprocess: 
 
@@ -34,10 +34,10 @@ Att lägga till filer på din arbetsyta är en tvåstegsprocess:
 1. I Power BI-tjänsten väljer du pilen bredvid Arbetsytor > och väljer ellipsen ( **…** ) bredvid namnet på din arbetsyta. 
    
    ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/power-bi-app-ellipsis.png)
-2. Välj **Filer** för att öppna OneDrive för företag för din arbetsyta i Office 365.
+2. Välj **Filer** för att öppna OneDrive för företag för din arbetsyta i Microsoft 365.
    
    > [!NOTE]
-   > Om du inte ser **Filer** överst i menyn för arbetsytan, väljer du **Medlemmar** för att öppna OneDrive för företag för din arbetsyta. Där väljer du **filer**. Office 365 ställer in en lagringsplats för OneDrive för din apps filer för grupparbetsytan. Den här processen kan ta lite tid. 
+   > Om du inte ser **Filer** överst i menyn för arbetsytan, väljer du **Medlemmar** för att öppna OneDrive för företag för din arbetsyta. Där väljer du **filer**. Microsoft 365 ställer in en lagringsplats för OneDrive för din apps filer för grupparbetsytan. Den här processen kan ta lite tid.
    > 
    > 
 3. Här kan du ladda upp dina filer till OneDrive för företag för din arbetsyta. Välj **överför**, och navigera till dina filer.
@@ -79,5 +79,5 @@ Nu när dina filer finns i OneDrive för företag för din arbetsyta har du ett 
 * [Skapa appar och arbetsytor i Power BI](../collaborate-share/service-create-distribute-apps.md)
 * [Importera data från Excel-arbetsböcker](service-get-data-from-files.md)
 * [Ansluta till hela Excel-arbetsböcker](service-excel-workbook-files.md)
-* Fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
+* Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
 * Feedback? Besök [Power BI-idéer](https://ideas.powerbi.com/forums/265200-power-bi)

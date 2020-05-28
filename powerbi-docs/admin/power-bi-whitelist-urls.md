@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 01/29/2020
 ms.custom: seodec18
-ms.openlocfilehash: 1426cb2926641ca93bcbff3e55ea151f829f290a
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: f74bfb92508564a01422729eefc251acc124baea
+ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83129681"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83692721"
 ---
 # <a name="power-bi-urls-for-whitelisting"></a>URL:er för Power BI för vitlistning
 [//]: # "suparnap, miwehnia är kontakter för att underhålla listan"
@@ -34,11 +34,11 @@ Jokertecken (*) representerar alla nivåer under rotdomänen, och Saknas använd
 
 ## <a name="authentication"></a>Autentisering
 
-Power BI är beroende av de obligatoriska slutpunkterna i avsnitten om autentisering och identiteter i Office 365. För att kunna använda Power BI måste du kunna ansluta till slutpunkterna på den länkade webbplatsen nedan.
+Power BI är beroende av de obligatoriska slutpunkterna i avsnitten om autentisering och identiteter i Microsoft 365. För att kunna använda Power BI måste du kunna ansluta till slutpunkterna på den länkade webbplatsen nedan.
 
 | Rad | Syfte | Mål | Portar |
 | --- | --- | --- | --- |
-| 1 | **Krävs:** Autentisering och identitet | Se Office 365-dokumentationen för [Office Online och vanliga URL:er](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online)  | Saknas |
+| 1 | **Krävs:** Autentisering och identitet | Se dokumentationen om [vanliga URL:er och Office Online-URL:er för Microsoft 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online)  | Saknas |
 
 ## <a name="general-site-usage"></a>Allmän webbplatsanvändning
 
@@ -48,12 +48,12 @@ För allmän användning av Power BI måste du kunna ansluta till slutpunkterna 
 | --- | --- | --- | --- |
 | 1 | **Krävs:** Backend-API:er | *.analysis.windows.net | TCP 443 |
 | 2 | **Krävs:** Backend-API:er | *.pbidedicated.windows.net | TCP 443 |
-| 3 | **Krävs:** Office 365-integration | Se Office 365-dokumentationen för [Office Online och vanliga URL:er](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) | Saknas |
-| 4 | **Krävs:** Portal | app.powerbi.com | TCP 443 |
-| 5 | **Krävs:** Tjänsttelemetri | dc.services.visualstudio.com | TCP 443 |
-| 6 | **Valfritt:** Informationsmeddelanden | dynmsg.modpim.com | TCP 443 |
-| 7 | **Valfritt:** NPS-undersökningar | nps.onyx.azure.net | TCP 443 |
-| 8 | **Valfritt:** Innehållsleverantörsnätverk (CDN) | content.powerapps.com | TCP 443 |
+| 3 | **Krävs:** Innehållsleverantörsnätverk (CDN) | content.powerapps.com | TCP 443 |
+| 4 | **Krävs:** Microsoft 365-integrering | Se dokumentationen om [vanliga URL:er och Office Online-URL:er för Microsoft 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) | Saknas |
+| 5 | **Krävs:** Portal | app.powerbi.com | TCP 443 |
+| 6 | **Krävs:** Tjänsttelemetri | dc.services.visualstudio.com | TCP 443 |
+| 7 | **Valfritt:** Informationsmeddelanden | dynmsg.modpim.com | TCP 443 |
+| 8 | **Valfritt:** NPS-undersökningar | nps.onyx.azure.net | TCP 443 |
 | | | |
 
 ## <a name="administration"></a>Administration
@@ -62,7 +62,7 @@ För att kunna använda administrativa funktioner i Power BI måste du kunna ans
 
 | Rad | Syfte | Mål | Portar |
 | --- | --- | --- | --- |
-| 1 | **Krävs:** För att hantera användare och visa granskningsloggar | Se Office 365-dokumentationen för [Office Online och vanliga URL:er](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) | Saknas |
+| 1 | **Krävs:** För att hantera användare och visa granskningsloggar | Se dokumentationen om [vanliga URL:er och Office Online-URL:er för Microsoft 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) | Saknas |
 | | | |
 
 ## <a name="getting-data"></a>Hämta data
@@ -84,7 +84,7 @@ Power BI är beroende av vissa slutpunkter för att kunna stödja dina instrumen
 
 | Rad | Syfte | Mål | Portar |
 | --- | --- | --- | --- |
-| 1 | **Krävs:** Excel-integration | Se Office 365-dokumentationen för [Office Online och vanliga URL:er](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) | Saknas |
+| 1 | **Krävs:** Excel-integration | Se dokumentationen om [vanliga URL:er och Office Online-URL:er för Microsoft 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) | Saknas |
 | | | |
 
 ## <a name="power-bi-visuals"></a>Visuella objekt för Power BI
@@ -96,7 +96,7 @@ Power BI är beroende av vissa slutpunkter för att kunna visa och få åtkomst 
 | 1 | **Krävs:** Importera ett anpassat visuellt objekt från Microsoft Azure Marketplace-gränssnittet eller från en fil | *.azureedge.net <br> *.blob.core.windows.net <br> *.osi.office.net <br> *.msecnd.net <br> store.office.com <br> web.vortex.data.microsoft.com <br> store-images.s-microsoft.com | TCP 443 |
 | 2 | **Valfritt:** Bing-kartor | bing.com <br> platform.bing.com <br> *.virtualearth.net | TCP 443 |
 | 3 | **Valfritt:** PowerApps | Se [avsnittet om tjänster som krävs](https://docs.microsoft.com/powerapps/maker/canvas-apps/limits-and-config#required-services) på webbplatsen för PowerApps-systemkrav | Saknas |
-| 4 | **Valfritt:** Visio | Se Office 365-dokumentationen för [Office Online och vanliga URL:er](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) samt [SharePoint Online och OneDrive för företag](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#sharepoint-online-and-onedrive-for-business) | Saknas |
+| 4 | **Valfritt:** Visio | Se dokumentationen om [vanliga URL:er och Office Online-URL:er för Microsoft 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online), samt [SharePoint Online och OneDrive för Business](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#sharepoint-online-and-onedrive-for-business) | Saknas |
 | | | |
 
 ## <a name="related-external-sites"></a>Relaterade externa webbplatser
