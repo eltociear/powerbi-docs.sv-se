@@ -1,6 +1,6 @@
 ---
 title: 'Project Online: anslut till data via Power BI Desktop'
-description: 'Project Online: anslut till data via Power BI Desktop'
+description: 'Project Online: Ansluta till data via Power BI Desktop'
 author: davidiseminger
 ms.reviewer: ''
 ms.custom: seodec18
@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/01/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 0f01a6da3bb0d829d396861814f71d33ba69f22f
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 4244253faa3160b515a02b598988072117d982ed
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83291936"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83563062"
 ---
 # <a name="connect-to-project-online-data-through-power-bi-desktop"></a>Ansluta till Project Online-data via Power BI Desktop
 Du kan ansluta till data i Project Online via Power BI Desktop.
@@ -35,7 +35,7 @@ Du kan ansluta till data i Project Online via Power BI Desktop.
 
     `https://contoso.sharepoint.com/sites/pwa/default.aspx`
 
-5. Power BI Desktop ber dig att autentisera med ditt Office 365-konto. Välj organisationskonto och ange dina autentiseringsuppgifter.
+5. Power BI Desktop ber dig att autentisera med ditt arbets- eller skolkonto. Välj organisationskonto och ange dina autentiseringsuppgifter.
    
    ![](media/desktop-project-online-connect-to-data/image.png)
 

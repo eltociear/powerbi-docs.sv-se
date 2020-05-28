@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/09/2019
 LocalizationGroup: Administration
-ms.openlocfilehash: 4524e7c6cb8297f3c9bf71284140ddc31b38e33f
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 59400f05544efa9f4ffcca6ef3ebdf1b12423d33
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83275419"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83564396"
 ---
 # <a name="power-bi-security"></a>Power BI-säkerhet
 
@@ -45,9 +45,9 @@ Den streckade linjen i bilden för **serverdelsklustret** ovan, visar gränsen m
 
 ## <a name="user-authentication"></a>Användarautentisering
 
-Power BI använder Azure Active Directory ([AAD](https://azure.microsoft.com/services/active-directory/)) till att autentisera användarna som loggar in på Power BI-tjänsten. Därefter används inloggningsuppgifterna för Power BI varje gång en användare försöker få åtkomst till resurser som kräver autentisering. När användarna loggar in på Power BI-tjänsten används den e-postadress som användes när deras Power BI-konton skapades. Power BI använder e-postinloggningen som *effektivt användarnamn* och skickar den till resurserna när en användare försöker att ansluta till data. Det *effektiva användarnamnet* mappas sedan till *Användarens huvudnamn* ([UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525\(v=vs.85\).aspx)) och matchas med det associerade Windows-domänkonto som autentiseringen används för.
+Power BI använder Azure Active Directory ([AAD](https://azure.microsoft.com/services/active-directory/)) till att autentisera användarna som loggar in på Power BI-tjänsten. Därefter används inloggningsuppgifterna för Power BI varje gång en användare försöker få åtkomst till resurser som kräver autentisering. När användarna loggar in på Power BI-tjänsten används den e-postadress som användes när deras Power BI-konton skapades. Power BI använder e-postinloggningen som *effektivt användarnamn* och skickar den till resurserna när en användare försöker att ansluta till data. Det *effektiva användarnamnet* mappas sedan till [Användarens huvudnamn *(* UPN](/windows/win32/secauthn/user-name-formats)) och matchas med det associerade Windows-domänkonto som autentiseringen används för.
 
-För organisationer som använt e-postadressen till arbetet vid Power BI-inloggning (t.ex <em>david@contoso.com</em>), är *effektiva användarnamn* som UPN-mappning enkel att använda. För organisationer som inte har använt e-postadressen till arbetet för Power BI-inloggning (t.ex <em>david@contoso.onmicrosoft.com</em>), kommer mappningen mellan AAD och lokala autentiseringsuppgifter kräva att [katalogsynkroniseringen](https://technet.microsoft.com/library/jj573653.aspx) fungerar som den ska.
+För organisationer som använt e-postadressen till arbetet vid Power BI-inloggning (t.ex <em>david@contoso.com</em>), är *effektiva användarnamn* som UPN-mappning enkel att använda. För organisationer som inte har använt e-postadressen till arbetet för Power BI-inloggning (t.ex <em>david@contoso.onmicrosoft.com</em>), kommer mappningen mellan AAD och lokala autentiseringsuppgifter kräva att [katalogsynkroniseringen](/azure/active-directory-domain-services/synchronization) fungerar som den ska.
 
 Plattformssäkerheten för Power BI inkluderar även miljösäkerhet för flera klienter, nätverkssäkerhet och möjligheten att lägga till ytterligare AAD-baserade säkerhetsåtgärder.
 
@@ -68,4 +68,3 @@ Den här tillämpningen kan göras genom att administrativt ange registernycklar
 **Power BI Desktop** respekterar de registernyckelinställningar som beskrivs i dessa artiklar och skapar bara anslutningar som använder tillåten version av TLS baserat på dessa registerinställningar, då de existerar.
 
 Mer information om hur du anger dessa registernycklar finns i artikeln [TLS för registerinställningarna](https://docs.microsoft.com/windows-server/security/tls/tls-registry-settings).
-

@@ -10,22 +10,22 @@ ms.date: 04/27/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 8ff022c09fc58f5ebeadbb869039c00c6dd28533
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: b08184e92730bd3a42a91424883d07cecec82549
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83275603"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83564482"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administrera Power BI i Admin-portalen
 
 Med Admin-portalen kan du använda en Power BI-*klient* för din organisation. Portalen innehåller sådant som användningsstatistik för åtkomst till Microsoft 365-administrationscenter och inställningar.
 
-Hela administrationsportalen är tillgänglig för alla användare som är globala administratörer i Office 365 eller som har tilldelats rollen administratör i Power BI-tjänsten. Om du inte är någon av dessa roller kan du bara se **kapacitetsinställningarna** i portalen. Läs mer om administratörsrollen för Power BI-tjänsten i [Förstå administratörsrollen för Power BI](service-admin-role.md).
+Hela administrationsportalen är tillgänglig för alla användare som är globala administratörer eller som har tilldelats rollen administratör i Power BI-tjänsten. Om du inte är någon av dessa roller kan du bara se **kapacitetsinställningarna** i portalen. Läs mer om administratörsrollen för Power BI-tjänsten i [Förstå administratörsrollen för Power BI](service-admin-role.md).
 
 ## <a name="how-to-get-to-the-admin-portal"></a>Navigera till administrationsportalen
 
-Ditt konto måste vara markerat som **Global administratör** i Office 365 eller Azure Active Directory (Azure AD), eller ha tilldelats administratörsrollen för Power BI-tjänsten, för att ha åtkomst till Power BI-administratörsportalen. Läs mer om administratörsrollen för Power BI-tjänsten i [Förstå administratörsrollen för Power BI](service-admin-role.md). Gör följande för att gå till Power BI-administratörsportalen.
+Ditt konto måste vara markerat som **Global administratör** i Microsoft 365 eller Azure Active Directory (Azure AD), eller ha tilldelats administratörsrollen för Power BI-tjänsten, för att ha åtkomst till Power BI-administratörsportalen. Läs mer om administratörsrollen för Power BI-tjänsten i [Förstå administratörsrollen för Power BI](service-admin-role.md). Gör följande för att gå till Power BI-administratörsportalen.
 
 1. Välj kugghjulet längst upp till höger i Power BI-tjänsten.
 
@@ -85,7 +85,7 @@ Med den här informationen kommer du att kunna hämta verkliga insikter om hur p
 
 ## <a name="control-usage-metrics"></a>Kontrollera användningsstatistik
 
-Användningsstatistikrapporter är en funktion som Power BI- eller Office 365-administratören kan aktivera eller inaktivera. Administratörerna har detaljerad kontroll över vilka användare som har åtkomst till användningsstatistik. De är **På** som standard för alla användare i organisationen.
+Användningsstatistikrapporter är en funktion som Power BI- eller Microsoft 365-administratören kan aktivera eller inaktivera. Administratörerna har detaljerad kontroll över vilka användare som har åtkomst till användningsstatistik. De är **På** som standard för alla användare i organisationen.
 
 Administratörer kan också bestämma om skapare av innehåll kan se data per användare i användningsmått. 
 
@@ -189,10 +189,10 @@ Arbetsytor är platser där användarna kan samarbeta kring instrumentpaneler, r
 
 :::image type="content" source="media/service-admin-portal/power-bi-admin-workspace-settings.png" alt-text="Skapa de nya arbetsyteupplevelserna":::
 
-För klassiska arbetsytor baserade på Office 365-grupper, sker administrationen även fortsatt i administrationsportalen för Office 365 och Azure Active Directory.
+För klassiska arbetsytor baserade på Microsoft 365-grupper, sker administrationen även fortsatt i administrationsportalen och Azure Active Directory.
 
 > [!NOTE]
-> Inställningen **Skapa arbetsytor (ny arbetsyteupplevelse)** tillåter som standard endast användare som kan skapa Office 365-grupper att skapa nya Power BI-arbetsytor. Glöm inte att ange ett värde i Power BI-administratörsportalen och därmed säkerställa att lämpliga användare kan skapa dem.
+> Inställningen **Skapa arbetsytor (ny arbetsyteupplevelse)** tillåter som standard endast användare som kan skapa Microsoft 365-grupper att skapa nya Power BI-arbetsytor. Glöm inte att ange ett värde i Power BI-administratörsportalen och därmed säkerställa att lämpliga användare kan skapa dem.
 
 **Lista med arbetsytor**
 
@@ -334,7 +334,7 @@ Följande bild visar alternativet **Hela min organisation** när du skapar ett i
 
 ### <a name="create-template-apps-and-organizational-content-packs"></a>Skapa mallappar och organisationsinnehållspaket
 
-Användare i organisationen kan skapa mallappar och organisationsinnehållspaket som använder datamängder som bygger på en datakälla i Power BI Desktop. Läs mer om [mallappar](../template-content-pack-authoring.md).
+Användare i organisationen kan skapa mallappar och organisationsinnehållspaket som använder datamängder som bygger på en datakälla i Power BI Desktop. Läs mer om [mallappar](../connect-data/service-template-apps-create.md).
 
 ### <a name="push-apps-to-end-users"></a>Pusha appar till slutanvändare
 
@@ -625,7 +625,3 @@ I [Aktuellt innehåll](#featured-content) i den här artikeln kan du läsa om hu
 [Granska Power BI i din organisation](service-admin-auditing.md)  
 
 Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
-
-
-
-

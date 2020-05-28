@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 03/23/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 08b9585195e805548546e832915e07f0e02265f5
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: dd474da6a3fb61b6fd78dc55a6b0313e51bbb773
+ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83348285"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83693586"
 ---
 # <a name="publish-an-app-in-power-bi"></a>Publicera en app i Power BI
 
@@ -64,7 +64,7 @@ När instrumentpanelerna och rapporterna på din arbetsyta är redo kan du välj
 5. På **Behörigheter** väljer du vilka som har åtkomst till appen och vad de kan göra med den. 
 
     - I [klassiska arbetsytor](service-create-workspaces.md): alla i din organisation, specifika personer eller Azure Active Directory-säkerhetsgrupper (Azure AD).
-    - I [arbetsytor med ny funktion](service-create-the-new-workspaces.md): specifika personer, Azure AD-säkerhetsgrupper och distributionslistor samt Office 365-grupper. Alla arbetsyteanvändare får automatiskt åtkomst till appen för arbetsytan.
+    - I [arbetsytor med ny funktion](service-create-the-new-workspaces.md): specifika personer, Azure AD-säkerhetsgrupper och distributionslistor samt Microsoft 365-grupper. Alla arbetsyteanvändare får automatiskt åtkomst till appen för arbetsytan.
     - Du kan tillåta appanvändare att ansluta till appens underliggande datamängder genom att ge dem skapa-behörighet. De ser dessa datamängder när de söker efter delade datamängder. Läs mer om att [tillåta att användare ansluter till appens datamängder](#allow-users-to-connect-to-datasets) i den här artikeln.
     - Användare med skapa-behörighet kan även få behörighet att kopiera rapporter från den här appen till en annan arbetsyta. Läs mer om att [tillåta att användare kopierar rapporter i appen](#allow-users-to-copy-reports) i den här artikeln.
     

@@ -9,12 +9,12 @@ ms.topic: overview
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 9e9ed930cc557250a9e1702d6010536ed069cd7b
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: afa8513267be4ec2de18a9adda7995c88f4f2aa8
+ms.sourcegitcommit: 6ba7cc9afaf91229f717374bc0c12f0b8201d15e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83129518"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "83438049"
 ---
 # <a name="what-is-power-bi-administration"></a>Vad är Power BI-administration?
 
@@ -36,17 +36,17 @@ Det finns flera roller som är relaterade till Power BI-administration, vilka be
 
 | **Typ av administratör** | **Administrativ omfattning** | **Power BI-omfattning** |
 | --- | --- | --- |
-| Global administratör för Office 365 | Office 365 | Kan hantera alla aspekter av en Power BI-klient och andra tjänster. |
-| Faktureringsadministratör för Office 365 | Office 365 | Kan hämta Power BI-licenser via Office 365-prenumerationer. |
+| Global administratör | Microsoft 365 | Kan hantera alla aspekter av en Power BI-klient och andra tjänster. |
+| Faktureringsadministratör | Microsoft 365 | Kan hämta Power BI-licenser via Office 365-prenumerationer. |
 | Power BI-tjänstadministratör | Power BI-klient | Har fullständig kontroll över en Power BI-klient och dess administrativa funktioner (förutom licensiering). |
 | Kapacitetsadministratör för Power BI Premium | En enda Premium-kapacitet | Har fullständig kontroll över en Premium-kapacitet och dess administrativa funktioner. |
 | Kapacitetsadministratör för Power BI Embedded | En enda Embedded-kapacitet | Har fullständig kontroll över en inbäddad kapacitet och dess administrativa funktioner. |
 
-Globala administratörer i Office 365 eller Azure Active Directory har administratörsbehörighet för Power BI. Globala administratörer i Office 365 kan tilldela andra användare rollen som Power BI-tjänstadministratör, som endast ger administrativa rättigheter över Power BI-funktioner.
+Globala administratörer i Microsoft 365 eller Azure Active Directory har administratörsbehörighet för Power BI. Globala administratörer kan tilldela andra användare rollen som Power BI-tjänstadministratör, som endast ger administrativa rättigheter över Power BI-funktioner.
 
 Power BI-tjänstadministratörer har åtkomst till Power BI-administrationsportalen som innehåller olika inställningar på klientnivå för funktionalitet, säkerhet och övervakning. Tjänstadministratörer har fullständig åtkomst till alla resurser i en Power BI-klient. I de flesta fall identifierar tjänstadministratörerna problem som de sedan följer upp med resursägarna för att vidta korrigerande åtgärder.
 
-Rollen som Power BI-tjänstadministratör ger inte möjlighet att tilldela licenser till användare eller visa granskningsloggar i Office 365. Därför kan uppgiften att administrera Power BI för närvarande inte utföras av användare som endast är Power BI-tjänstadministratör.
+Rollen som Power BI-tjänstadministratör ger inte möjlighet att tilldela licenser till användare eller visa granskningsloggar i Microsoft 365. Därför kan uppgiften att administrera Power BI för närvarande inte utföras av användare som endast är Power BI-tjänstadministratör.
 
 ## <a name="administrative-tasks"></a>Administrativa uppgifter
 

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 03/26/2020
+ms.date: 05/15/2020
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: c206e35651ef28c03151c6c5af8e5bae453d5d2b
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 290174f7848e4518a4b1489d0a90136e86d245da
+ms.sourcegitcommit: 6ba7cc9afaf91229f717374bc0c12f0b8201d15e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83274384"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "83438256"
 ---
 # <a name="what-is-power-bi-premium"></a>Vad är Power BI Premium?
 
@@ -59,6 +59,7 @@ Med Power BI Premium får du *dedikerade kapaciteter*. Till skillnad från en de
 * Excel-arbetsböcker (såvida inte data först importeras till Power BI Desktop)
 * [Push-överför datauppsättningar](/rest/api/power-bi/pushdatasets)
 * [Direktuppspelande datauppsättningar](../connect-data/service-real-time-streaming.md#set-up-your-real-time-streaming-dataset-in-power-bi)
+* [Frågor och svar](../create-reports/power-bi-tutorial-q-and-a.md)
 
 Arbetsytor förvaras i kapaciteter. Varje Power BI-användare har en personlig arbetsyta som kallas **Min arbetsyta**. Du kan skapa fler arbetsytor, så kallade **arbetsytor**, för samarbete och distribution. Som standard skapas arbetsytor, däribland personliga arbetsytor, i den delade kapaciteten. När du har Premium-kapaciteter kan både Mina arbetsytor och arbetsytor tilldelas till Premium-kapaciteter.
 
@@ -68,7 +69,7 @@ Som beskrivs i avsnittet [Prenumerationer och licensiering](#subscriptions-and-l
 
 Bearbetning uppnås med ett visst antal v-kärnor, jämnt fördelat mellan serverdelen och klientdelen.
 
-**Serverdelens v-kärnor** ansvarar för huvudfunktioner för Power BI, inklusive frågebearbetning, hantering av cache, köra R-tjänster, modelluppdatering, bearbetning av naturligt språk (frågor och svar) och återgivning av rapporter och bilder från serversidan. Serverdelens v-kärnor tilldelas en fast mängd minne som i första hand används för att vara värd för modeller, som även kallas aktiva datamängder.
+**Serverdelens v-kärnor** ansvarar för huvudfunktioner för Power BI, inklusive frågebearbetning, hantering av cache, köra R-tjänster, modelluppdatering och återgivning av rapporter och bilder från serversidan. Serverdelens v-kärnor tilldelas en fast mängd minne som i första hand används för att vara värd för modeller, som även kallas aktiva datamängder.
 
 **Klientdelens v-kärnor** ansvarar för hantering av webbtjänsten, instrumentpanelen och rapportdokument, hantering av åtkomsträttigheter och schemaläggning av API:er, uppladdning och nedladdning samt överlag för allt som rör användarupplevelser.
 

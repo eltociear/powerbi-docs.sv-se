@@ -1,22 +1,22 @@
 ---
-title: Skapa-behörighet för delade datauppsättningar (förhandsversion)
+title: Skapa-behörighet för delade datamängder
 description: Läs om hur du kan styra åtkomsten till data med hjälp av behörigheten Skapa.
 author: maggiesMSFT
-ms.reviewer: chbraun
+ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/12/2020
+ms.date: 04/30/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: af2e4c865609846d8fcfc792eee4f483afef2160
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 84f6a9d152151c6d6f44bcbad9e0a4d54fc0c293
+ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83285358"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83792996"
 ---
-# <a name="build-permission-for-shared-datasets-preview"></a>Skapa-behörighet för delade datauppsättningar (förhandsversion)
+# <a name="build-permission-for-shared-datasets"></a>Skapa-behörighet för delade datamängder
 
 När du skapar en rapport i Power BI Desktop lagras data i rapporten i en *datamodell*. När du publicerar dina rapporter till Power BI-tjänsten publicerar du även data som en *datamängd*. Du kan ge andra *behörigheten Skapa* för rapporten så att de kan identifiera och återanvända den datamängd du har delat. I den här artikeln går vi igenom hur du kan styra åtkomsten till data med hjälp av behörigheten Skapa.
 
@@ -107,5 +107,5 @@ Du kan ta bort skapa-behörigheter. Om du gör detta kan de personer vars behör
 
 ## <a name="next-steps"></a>Nästa steg
 
-- [Använda datamängder mellan arbetsytor (förhandsversion)](service-datasets-across-workspaces.md)
+- [Använda datamängder på arbetsytor](service-datasets-across-workspaces.md)
 - Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
