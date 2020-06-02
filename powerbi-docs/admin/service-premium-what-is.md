@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/15/2020
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 290174f7848e4518a4b1489d0a90136e86d245da
-ms.sourcegitcommit: 6ba7cc9afaf91229f717374bc0c12f0b8201d15e
+ms.openlocfilehash: 7c9f198ac15311948e1789173851a6c85debc856
+ms.sourcegitcommit: 2cb249fc855e369eed1518924fbf026d5ee07eb1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "83438256"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83812460"
 ---
 # <a name="what-is-power-bi-premium"></a>Vad är Power BI Premium?
 
@@ -50,7 +50,7 @@ Azure Power BI Embedded är i stort sett utanför omfånget för den här artike
 
 ### <a name="purchasing"></a>Inköp
 
-Power BI Premium-prenumerationer köps av administratörer i Microsoft 365 Administrationscenter. Mer specifikt kan endast globala Office 365-administratörer eller faktureringsadministratörer köpa SKU:er. När de köps får klienten ett motsvarande antal v-kärnor för att tilldela till kapaciteter, vilket kallas *poolning av v-kärnor*. Köp av en P3 SKU ger till exempel klienten 32 v-kärnor. Mer information finns i [Så här köper du Power BI Premium](service-admin-premium-purchase.md).
+Power BI Premium-prenumerationer köps av administratörer i Microsoft 365 Administrationscenter. Mer specifikt kan endast globala administratörer eller faktureringsadministratörer köpa SKU:er. När de köps får klienten ett motsvarande antal v-kärnor för att tilldela till kapaciteter, vilket kallas *poolning av v-kärnor*. Köp av en P3 SKU ger till exempel klienten 32 v-kärnor. Mer information finns i [Så här köper du Power BI Premium](service-admin-premium-purchase.md).
 
 ## <a name="dedicated-capacities"></a>Dedikerade kapaciteter
 
@@ -127,13 +127,13 @@ Avsnittskommentarer:
 
 ### <a name="regional-support"></a>Regional support
 
-När globala Office 365-administratörer och Power BI-tjänstadministratörer skapar en ny kapacitet kan de ange en region där arbetsytor som tilldelats till kapaciteten lagras. Detta kallas **Multi-Geo**. Med Multi-Geo kan organisationer uppfylla kraven på datahemvist genom att distribuera innehåll till datacenter i en viss region, även om den skiljer sig från den region där Office 365-prenumerationen finns. Mer information finns i [Multi-Geo-stöd för Power BI Premium](service-admin-premium-multi-geo.md).
+När globala administratörer och Power BI-tjänstadministratörer skapar en ny kapacitet, kan de ange en region där arbetsytor som tilldelats till kapaciteten lagras. Detta kallas **Multi-Geo**. Med Multi-Geo kan organisationer uppfylla kraven på datahemvist genom att distribuera innehåll till datacenter i en viss region, även om den skiljer sig från den region där Office 365-prenumerationen finns. Mer information finns i [Multi-Geo-stöd för Power BI Premium](service-admin-premium-multi-geo.md).
 
 ### <a name="capacity-management"></a>Kapacitetshantering
 
 Hantering av Premium-kapaciteter innebär skapande eller borttagande av kapaciteter, tilldelning av administratörer, tilldelning av arbetsytor, konfiguration av arbetsbelastningar, övervakning och justeringar för optimering av kapacitetsprestanda. 
 
-Globala Office 365-administratörer och Power BI-tjänstadministratörer kan skapa Premium-kapaciteter från tillgängliga v-kärnor eller ändra befintliga Premium-kapaciteter. När en kapacitet skapas så anges kapacitetsstorlek och geografisk region, och minst en kapacitetsadministratör tilldelas. 
+Globala administratörer och Power BI-tjänstadministratörer kan skapa Premium-kapaciteter från tillgängliga v-kärnor eller ändra befintliga Premium-kapaciteter. När en kapacitet skapas så anges kapacitetsstorlek och geografisk region, och minst en kapacitetsadministratör tilldelas. 
 
 När kapaciteterna skapas slutförs de flesta administrativa uppgifter i [administrationsportalen](service-admin-portal.md).
 

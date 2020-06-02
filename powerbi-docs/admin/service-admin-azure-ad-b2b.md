@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 25b136bfa15b00333400b80781d968d0b40d9779
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: 2bb54bf7340e89b86bfbfd56390b79a7051dd709
+ms.sourcegitcommit: 2cb249fc855e369eed1518924fbf026d5ee07eb1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83564505"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83812288"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-with-azure-ad-b2b"></a>Distribuera Power BI-innehåll till externa gästanvändare med Azure Active Directory B2B
 
@@ -153,7 +153,7 @@ För att hjälpa tillåtna användare att logga in i Power BI kan du ge dem klie
 * Det finns inställningar för Active Directory som begränsar vad externa gästanvändare kan göra inom din organisation. Detta gäller också för din Power BI-miljö. I följande dokumentation beskrivs inställningarna:
     * [Hantera inställningar för externt samarbete](/azure/active-directory/b2b/delegate-invitations#configure-b2b-external-collaboration-settings)
     * [Tillåt eller blockera inbjudningar till B2B-användare från specifika organisationer](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list)
-    * [Tillåt eller blockera gästanvändares åtkomst till Power BI-tjänsten](/azure/active-directory/conditional-access/overview)
+    * [Använd villkorlig åtkomst för att tillåta eller blockera åtkomst](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps)
     
 * Du kan inte dela utanför organisationen i nationella moln. Skapa istället användarkonton i din organisation som externa användare kan använda för att få åtkomst till innehållet. 
 

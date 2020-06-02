@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/14/2019
+ms.date: 05/21/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: b0ee72fdfdf504537073b0de22e5c386ca2572ad
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 8e991a8696ac35ed0a7d4b448bb4dd83d9a19c42
+ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83327954"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83793444"
 ---
 # <a name="real-time-streaming-in-power-bi"></a>Realtidsuppspelning i Power BI
 Med direktuppspelning i realtid för Power BI, kan du strömma data och uppdatera instrumentpaneler i realtid. Visuella objekt och instrumentpaneler som kan skapas i Power BI kan även skapas för att visa och uppdatera data och visuella objekt i realtid. Enheter och datakällor för strömmande data kan vara fabrikssensorer, sociala mediekällor, användningsstatistik för tjänsten och alla andra källor där tidskänsliga data kan insamlas eller skickas.
@@ -52,7 +52,7 @@ Det enda sättet att visualisera en strömmande datauppsättning är att lägga 
 I praktiken är strömmande datauppsättningar och deras tillhörande strömmande visuella information bäst i situationer när det är viktigt att minimera fördröjning mellan när data pushas och visualiseras. Dessutom är det praxis att pusha data i ett format som kan visualiseras som det är utan ytterligare tillägg. Exempel på data som är klar som de är inkluderar temperaturer och förberäknade genomsnitt.
 
 ### <a name="pubnub-streaming-dataset"></a>PubNub-strömmande datauppsättning
-Med en **PubNub** strömmande datauppsättning, använder Power BI-webbklienten sig av PubNub SDK:n för att läsa en befintlig PubNub-dataström och inga data lagras i Power BI-tjänsten. Eftersom det här anropet görs direkt från webbklienten skulle du behöva vitlista trafik till PubNub om du endast tillåter vitlistad utgående trafik från nätverket. Läs anvisningarna i supportartikeln om [Vitlistning av utgående trafik för PubNub](https://support.pubnub.com/support/solutions/articles/14000043522-can-i-whitelist-ips-for-pubnub-traffic-).
+Med en **PubNub** strömmande datauppsättning, använder Power BI-webbklienten sig av PubNub SDK:n för att läsa en befintlig PubNub-dataström och inga data lagras i Power BI-tjänsten. Eftersom det här anropet görs direkt från webbklienten skulle du behöva lista trafik till PubNub som tillåten om du endast tillåter vitlistad utgående trafik från nätverket. Läs anvisningarna i supportartikeln om [Vitlistning av utgående trafik för PubNub](https://support.pubnub.com/support/solutions/articles/14000043522-can-i-whitelist-ips-for-pubnub-traffic-).
 
 Precis som med den **strömmande datauppsättningen** så har den **PubNub-strömmande datauppsättningen** ingen underliggande databas i Power BI. Det går därmed inte att skapa rapportvisualiseringar mot de data som flödar in och du kan inte dra nytta av rapportfunktioner som filtrering, visuella Power BI-objekt och så vidare. Därmed kan den **PubNub-strömmande datauppsättningen** också bara visualiseras genom att lägga till en panel på instrumentpanelen och konfigurera en PubNub-dataström som källa.
 
@@ -215,7 +215,7 @@ Strömmande datauppsättningar är utformade för att visa de senaste data. Du k
 För push-datauppsättningar, kan du försöka skapa en rapportvisualisering med det senaste N-filtret, förutsatt att du har en tidsstämpel i schemat.
 
 #### <a name="can-i-connect-to-push-or-streaming-datasets-in-power-bi-desktop"></a>Kan jag ansluta till push- eller strömmande datauppsättningar i Power BI Desktop?
-Tyvärr är detta inte tillgänglig just nu.
+Push- och hybriddatamängder kan vara liveanslutna i Power BI Desktop, men andra strömmande datamängder kan inte anslutas i Power BI Desktop.
 
 #### <a name="given-the-previous-question-how-can-i-do-any-modeling-on-real-time-datasets"></a>Med tanke på föregående fråga, hur kan jag modellera realtids-datauppsättningar?
 Det går inte att modellera en strömmande datauppsättning, eftersom data inte lagras permanent. Med en push-datauppsättning, kan du använda REST API:erna uppdatera datauppsättning/tabell för att lägga till åtgärder och relationer. 

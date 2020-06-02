@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 02/11/2020
-ms.openlocfilehash: 66ef36f669b5f34c19f283cf9ebc8be2b12332ec
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.date: 05/17/2020
+ms.openlocfilehash: 1e2426b12bf6205e5ed2fc6cfb0540c67740df7d
+ms.sourcegitcommit: 2cb249fc855e369eed1518924fbf026d5ee07eb1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83148655"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83813633"
 ---
 # <a name="capacity-and-skus-in-power-bi-embedded-analytics"></a>Kapacitet och SKU:er i inbäddad Power BI-analys
 
@@ -64,74 +64,22 @@ Det finns två SKU:er för Power BI Premium, *P* och *EM*.
 
 ### <a name="which-sku-should-i-use"></a>Vilken SKU ska jag använda?
 
-I den här tabellen ges en sammanfattning av funktioner, vilken kapacitet som behövs för dem och den specifika SKU:n för var och en. 
+I tabellen nedan ges en sammanfattning av funktioner, vilken kapacitet som behövs för dem och den specifika SKU som behövs för var och en.
 
-</br>
-<table>
-<col width="20%">
-<col width="20%">
-<col width="20%">
-<col width="20%">
-<col width="20%">
-<tbody>
-<tr>
-<td style="text-align: center"; colspan="2"><p><b>Funktion</b></p></td>
-<td style="text-align: center">
-<p><b>Power BI Embedded</b></p>
-</td>
-<td style="text-align: center"; colspan="2">
-<p><b>Power BI Premium</b></p>
-</td>
-</tr>
-<tr>
-<td><p><em>Vad förbrukas?</em><p></td>
-<td><p><em>Vad är det som förbrukar?</em><p></td>
-<td style="text-align: center"><p><em>A-SKU:er</br>(Azure)</em></p></td>
-<td style="text-align: center"><p><em>EM-SKU:er</br>(Office)</em></p></td>
-<td style="text-align: center"><p><em>P-SKU:er</br>(Office)</em></p></td>
-</tr>
-<tr>
-<td>Bädda in artefakter från en Power BI-arbetsyta</td>
-<td>
-</td>
-<td style="text-align: center">✔</td>
-<td style="text-align: center">✔</td>
-<td style="text-align: center">✔</td>
-</tr>
-<tr>
-<td rowspan="2">Power BI-rapporter</td>
-<td>En inbäddad app i organisationen</br>(användaren äger data)</td>
-<td style="text-align: center">✖</td>
-<td style="text-align: center">✔</td>
-<td style="text-align: center">✔</td>
-</tr>
-<tr>
-<td>En inbäddad app för dina kunder</br>(appen äger data)</td>
-<td style="text-align: center">✔</td>
-<td style="text-align: center">✔</td>
-<td style="text-align: center">✔</td>
-</tr>
-<tr>
-<td rowspan="3">Power BI-innehåll<br>(med en kostnadsfri Power BI-licens)</td>
-<td>Power BI-tjänst</td>
-<td style="text-align: center">✖</td>
-<td style="text-align: center">✖</td>
-<td style="text-align: center">✔</td>
-</tr>
-<tr>
-<td>Power BI mobilt</td>
-<td style="text-align: center">✖</td>
-<td style="text-align: center">✖</td>
-<td style="text-align: center">✔</td>
-</tr>
-<tr>
-<td>MS Office-appar</td>
-<td style="text-align: center">✖</td>
-<td style="text-align: center">✔</td>
-<td style="text-align: center">✔</td>
-</tr>
-</tbody>
-</table>
+I den här tabellen refererar en anpassad app till en webbapp som skapats med inbäddad analys. När du bäddar in i en anpassad webbapp som utvecklare (med hjälp av Java Script, .NET-SDK:er eller REST-API:er), kan du styra och anpassa UX. Den här funktionen är inte tillgänglig när du använder andra inbäddningsalternativ, till exempel Power BI-tjänsten och Power BI Mobile.
+
+
+|         |         |         |
+|---------|---------|---------|
+|**Scenario**</br><p></p>|**Azure**</br>(A SKU)|**Office**</br>(P och EM SKU:er)|
+|[Bädda in för dina kunder](embed-sample-for-customers.md)</br>(appen äger data)     |✔        |✔        |
+|[Bädda in för din organisation](embed-sample-for-your-organization.md)</br>(användaren äger data)     |✖        |✔         |
+|Microsoft 365-appar</br>(kallades tidigare Office 365-appar)<ul><li>[Bädda in i Teams](../../collaborate-share/service-embed-report-microsoft-teams.md)</li><li>[Bädda in i SharePoint](../../collaborate-share/service-embed-report-spo.md)</li></ul>     |✖        |✔        |
+|[Säker URL-inbäddning](../../collaborate-share/service-embed-secure.md)</br>(bädda in från Power BI-tjänsten)     |✖        |✔        |
+
+>[!NOTE]
+>* En [Power BI Pro-licens](../../admin/service-admin-purchasing-power-bi-pro.md) krävs för att publicera innehåll till en Power BI-apparbetsyta.
+>* Endast **P SKU** tillåter personer som använder Power BI kostnadsfritt att använda Power BI-appar och delat innehåll i Power BI-tjänsten.
 
 ### <a name="capacity-considerations"></a>Överväganden för kapaciteter
 
@@ -147,33 +95,33 @@ I tabellen nedan ser du information om betalning och användning per kapacitet.
 </tr>
 <tr>
 <td><p><strong>Erbjudande</strong></p></td>
-<td style="text-align: center;"><p>Azure</p></td>
-<td style="text-align: center;" colspan="2"><p>Office</p></td>
+<td style="text-align: center"><p>Azure</p></td>
+<td style="text-align: center" colspan="2"><p>Office</p></td>
 </tr>
 <tr>
 <td><p><strong>SKU</strong></p></td>
-<td style="text-align: center;"><p>A</p></td>
-<td style="text-align: center;"><p>EM</p></td>
-<td style="text-align: center;"><p>P</p></td>
+<td style="text-align: center"><p>A</p></td>
+<td style="text-align: center"><p>EM</p></td>
+<td style="text-align: center"><p>P</p></td>
 </tr>
 <tr>
 <td><p><strong>Billing</strong></td>
-<td style="text-align: center;">Varje timma</td>
-<td style="text-align: center;">Varje månad</td>
-<td style="text-align: center;">Varje månad</td>
+<td style="text-align: center">Varje timma</td>
+<td style="text-align: center">Varje månad</td>
+<td style="text-align: center">Varje månad</td>
 </tr>
 <tr>
 <td><p><strong>Bindningstid</strong></td>
-<td style="text-align: center;">None</td>
-<td style="text-align: center;">Varje år</td>
-<td style="text-align: center;">Per månad eller år</td>
+<td style="text-align: center">Ingen</td>
+<td style="text-align: center">Varje år</td>
+<td style="text-align: center">Per månad eller år</td>
 </tr>
 <tr>
 <td valign="top"><p><strong>Användning</strong></td>
-<td style="text-align: center;">Azure-resurser kan:</br>- <a href="azure-pbie-scale-capacity.md">Skalas upp eller ned</a></br>- <a href="azure-pbie-pause-start.md">Pausas och återupptas</a>
-</td>
-<td style="text-align: center;">Bädda in i appar och i</br> Microsoft-program</td>
-<td style="text-align: center;">Bädda in i appar och i</br> Power BI-tjänsten</td>
+<td style="text-align: center">Azure-resurser kan:<li><a href="azure-pbie-scale-capacity.md">Skalas upp eller ned</a></li><li><a href="azure-pbie-pause-start.md">Pausas och återupptas</a>
+</td></li>
+<td style="text-align: center">Bädda in i appar och i</br> Microsoft-program</td>
+<td style="text-align: center">Bädda in i appar och i</br> Power BI-tjänsten</td>
 </tr>
 </tbody>
 </table>

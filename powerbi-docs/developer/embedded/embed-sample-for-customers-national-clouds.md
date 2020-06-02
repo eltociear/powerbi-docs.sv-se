@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 02/05/2019
-ms.openlocfilehash: d30dfaa36bc55e8da769d4eaf0f7c2d1b9be0724
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 889f7359e0711ecafb44caa6cf98f8a4df6bb0fa
+ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83145200"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83794042"
 ---
 # <a name="tutorial-embed-a-power-bi-content-into-your-application-for-national-clouds"></a>Självstudie: Integrera Power BI-innehåll i ditt program för nationella moln
 
@@ -54,7 +54,7 @@ Artikeln visar den kod som användes i exemplet [Appen äger data](https://githu
 * Government Community Cloud (GCC):
 
     > [!NOTE]
-    > Du kan bara bädda in Power BI-innehåll från GCC (Government Community Cloud) med en Office 365-SKU. Kunder i andra nationella moln kan använda [Office 365- eller Azure-SKU:er](embedded-faq.md).
+    > Du kan bara bädda in Power BI-innehåll från GCC (Government Community Cloud) med en Microsoft 365-SKU. Kunder i andra nationella moln kan använda [Microsoft 365- eller Azure-SKU:er](embedded-faq.md).
 
 1. Skriv över Cloud.config-filen med GCCCloud.config-innehåll.
 

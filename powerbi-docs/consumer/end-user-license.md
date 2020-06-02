@@ -7,17 +7,17 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 04/18/2020
+ms.date: 05/20/2020
 ms.author: mihart
 LocalizationGroup: consumers
-ms.openlocfilehash: 14e3b0f2956252e0b09abcf314d6e14b9a9709ad
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: f39460c823b79748d0a181646a9645d86467ef02
+ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83129485"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83794159"
 ---
-# <a name="using-the-power-bi-service-as-a-consumer"></a>Använda Power BI-tjänsten som *konsument*
+# <a name="licenses-and-subscriptions-for-consumers"></a>Licenser och prenumerationer för *konsumenter*
 
 [!INCLUDE[consumer-appliesto-ynnn](../includes/consumer-appliesto-ynnn.md)]
 
@@ -35,15 +35,15 @@ I den här artikeln beskriver vi funktionerna i varje licenstyp och hur *den pla
 
 ## <a name="licenses"></a>Licenser
 
-Alla Power BI-tjänstanvändare använder antingen en *kostnadsfri* licens eller en *Pro*-licens. Om du är Power BI-*konsument* använder du förmodligen en kostnadsfri licens som hanteras av din administratör. 
+Alla Power BI-tjänstanvändare använder antingen en *kostnadsfri* licens eller en *Pro*-licens. Om du är Power BI-*konsument* använder du förmodligen en kostnadsfri licens som hanteras av din Power BI-klientadministratör. 
 
 Det går att ha fler än en licens på samma gång.  Tjänsten levererar alltid en upplevelse som motsvarar den bästa licens som du för närvarande har. 
 
 ## <a name="power-bi-premium-capacity"></a>Power BI Premium-kapacitet
 
-Premium är en organisationsprenumeration som tillhandahåller ett annat sätt att lagra innehåll – i en dedikerad kapacitet. Med Premium kan alla, både inom och utanför organisationen, se ditt Power BI-innehåll utan att köpa individuella Power BI Pro-licenser. 
+Premium är en organisationsprenumeration som tillhandahåller ett annat sätt att lagra innehåll – i en dedikerad kapacitet. Med Premium kan alla med behörigheter, både inom och utanför organisationen, se ditt Power BI-innehåll utan att köpa individuella Power BI Pro-licenser. 
 
-Premium möjliggör omfattande distribution av innehåll från Pro-användare utan att de mottagare som visar innehållet behöver ha Pro-licenser. Pro-licenser krävs för innehållsdesigners. Utvecklarna ansluter till datakällor, modellerar data och skapar rapporter och instrumentpaneler som paketeras som arbetsyteappar. Användare som saknar Pro-licens kan trots detta få åtkomst till en arbetsyta med Power BI Premium-kapacitet, så länge de har rollen Visare.
+Premium möjliggör omfattande distribution av innehåll från Pro-användare utan att de mottagare som visar innehållet behöver ha Pro-licenser. Pro-licenser krävs för innehållsdesigners. Utvecklarna ansluter till datakällor, modellerar data och skapar rapporter och instrumentpaneler som paketeras som arbetsyteappar. Användare som saknar Pro-licens kan trots detta få åtkomst till en arbetsyta med Power BI Premium-kapacitet, så länge som de är tilldelade en [roll på arbetsytan](end-user-workspaces.md).
 
 På dessa arbetsytor tilldelar designers roller såsom **Tittare**, **Deltagare**, **Medlem** och **Administratör**, som avgör i vilken utsträckning kollegor kan interagera med innehållet. Mer information finns i [behörigheter och roller för arbetsytor](end-user-workspaces.md). 
 
@@ -88,13 +88,13 @@ I bilden nedan lagras tre av apparna i Premium-kapacitet.
 ![Appskärmen](media/end-user-license/power-bi-premium.png)
 
     
-Som *konsument*, förutsatt att *designern* placerar arbetsytan i en dedikerad Premium-kapacitet, har du möjligheten att **på den arbetsytan** visa delat innehåll, samarbeta med kollegor, arbeta med appinstrumentpaneler och rapporter och mer. Omfattningen av dina behörigheter anges av din Power BI-administratör och av innehållsdesignern. 
+Som användare med en kostnadsfri licens, förutsatt att *designern* placerar arbetsytan i en dedikerad Premium-kapacitet, har du möjligheten att **på den arbetsytan** visa delat innehåll, samarbeta med kollegor, arbeta med appinstrumentpaneler och rapporter och annat. Omfattningen av dina behörigheter anges av din Power BI-administratör och av innehållsdesignern. 
 
    
 
 ## <a name="putting-it-all-together"></a>Färdigställa allt
 
-När en organisation köper en Premium-prenumeration tilldelar administratören normalt Pro-licenser till de anställda som ska arbeta i Premium-kapacitet samt skapa och dela innehåll. Administratören tilldelar även kostnadsfria licenser till alla som ska använda innehållet. Pro-användarna skapar [apparbetsytor](end-user-workspaces.md) och lägger till innehåll (instrumentpaneler, rapporter, appar) på dessa arbetsytor. För att låta användare med kostnadsfri licens samarbeta på dessa arbetsytor tilldelar administratören eller Pro-användaren arbetsytorna till *dedikerad kapacitet*.    
+När en organisation köper en Premium-prenumeration tilldelar administratören normalt Pro-licenser till de anställda som ska arbeta i Premium-kapacitet samt skapa och dela innehåll. Pro-användarna skapar [arbetsytor](end-user-workspaces.md) och lägger till innehåll (instrumentpaneler, rapporter, appar) på dessa arbetsytor. För att låta användare med kostnadsfri licens samarbeta på dessa arbetsytor tilldelar administratören eller Pro-användaren arbetsytorna till *dedikerad kapacitet*.    
 <br>
 
 |Licenstyp  |delad kapacitet  |dedikerad kapacitet  |
@@ -113,7 +113,7 @@ I diagrammet nedan representerar den vänstra sidan Pro-användare som skapar oc
 
     ![bild på tre arbetsytor](media/end-user-license/power-bi-dedicated.jpg)
 
-Power BI Pro-*designern* kan dela och samarbeta med andra Pro-användare via vilken som helst av de tre arbetsytorna. Men det enda sättet för Power BI Pro-användare att dela och samarbeta med användare med kostnadsfri licens är att använda Arbetsyta B, som är i en dedikerad Premium-kapacitet.  På arbetsytan tilldelar designern medarbetarna roller. Din roll avgör vilka åtgärder du kan vidta på arbetsytan. Power BI-*konsumenter* tilldelas vanligtvis rollen *Tittare*. Läs mer om roller i [Arbetsytor för Power BI-konsumenter](end-user-workspaces.md).
+Power BI Pro-*designern* kan dela och samarbeta med andra Pro-användare via vilken som helst av arbetsytorna. Men det enda sättet för Power BI Pro-användare att dela och samarbeta med användare med kostnadsfri licens är att använda Arbetsyta B, som är i en dedikerad Premium-kapacitet.  På arbetsytan tilldelar designern medarbetarna roller. Din roll avgör vilka åtgärder du kan vidta på arbetsytan. Power BI-*konsumenter* tilldelas vanligtvis rollen *Tittare*. Läs mer om roller i [Arbetsytor för Power BI-konsumenter](end-user-workspaces.md).
 
 
 
@@ -121,16 +121,16 @@ Power BI Pro-*designern* kan dela och samarbeta med andra Pro-användare via vil
 ## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
 - Det går att ha fler än en Power BI-licens. Power BI-tjänsten levererar alltid den upplevelse som motsvarar den bästa licens som du för närvarande har. Om du till exempel har både en Pro-licens och en kostnadsfri licens använder Power BI-tjänsten Pro-licensen.
 
-- Om du vill dela och skapa innehåll (instrumentpaneler, rapporter och appar) är du kanske inte Power BI-*konsument*, utan *designer*. Överväg att ändra till en Pro-användarlicens. Du kan registrera dig för en kostnadsfri 60-dagars utvärdering av Power BI Pro genom att välja den dialogruta för uppgradering som visas i Power BI-tjänsten när du försöker använda en Pro-funktion.
+- Om du vill dela och skapa innehåll (instrumentpaneler, rapporter och appar) är du kanske inte Power BI-*konsument*, utan *designer*. Se till att du har en Pro-användarlicens. Du kan registrera dig för en kostnadsfri 60-dagars utvärdering av Power BI Pro genom att välja den dialogruta för uppgradering som visas i Power BI-tjänsten när du försöker använda en Pro-funktion.
 
     ![dialogruta med länk till Pro-utvärdering](media/end-user-license/power-bi-trial.png)
 
-  När utvärderingen på 60 dagar upphör att gälla ändras din licens tillbaka till en kostnadsfri Power BI-licens. Då har du inte längre tillgång till funktioner som kräver en Power BI Pro-licens. Om du vill fortsätta med en Pro-licens kan du kontakta din administratör om att köpa en Power BI Pro-licens. Om du inte har någon administratör kan du besöka [sidan med Power BI-prissättning](https://powerbi.microsoft.com/pricing/).     
+  När utvärderingen på 60 dagar upphör att gälla ändras din licens tillbaka till en kostnadsfri Power BI-licens. Då har du inte längre tillgång till funktioner som kräver en Power BI Pro-licens. Om du vill fortsätta med en Pro-licens kan du kontakta din administratör eller IT-supportavdelning om att köpa en Power BI Pro-licens. Om du inte har någon administratör eller IT-supportavdelning kan du besöka [sidan med prissättningen för Power BI](https://powerbi.microsoft.com/pricing/).     
 
 
-- Om du har registrerat dig för en kostnadsfri licens upphör den aldrig att gälla. Så om du uppgraderar till en Pro-utvärdering eller om din organisation ger dig en Pro-licens, och din utvärdering sedan går ut eller din organisation tar bort din Pro-licens, har du fortfarande tillgång till den kostnadsfria licensen – såvida inte du eller en administratör avbryter licensen. 
+- Om du har registrerat dig för en kostnadsfri licens på egen hand, genom att välja en typ av *Testa det kostnadsfritt*-knapp, upphör den aldrig att gälla. Så om du uppgraderar till en Pro-utvärdering eller om din organisation ger dig en Pro-licens, och din utvärdering sedan går ut eller din organisation tar bort din Pro-licens, har du fortfarande tillgång till den kostnadsfria licensen – såvida du inte avbryter licensen. 
 
-- <sup>1</sup> En kostnadsfri användarlicens för Power BI-tjänsten är perfekt för dem som utforskar eller använder den för personlig dataanalys och visualiseringar med hjälp av **Min arbetsyta**. Användare med kostnadsfri licens använder inte Power BI för att samarbeta med kollegor. Användare med kostnadsfria licenser kan inte visa innehåll som delas av andra eller dela sitt eget innehåll med andra Power BI-användare. 
+- <sup>1</sup> En kostnadsfri användarlicens för Power BI-tjänsten är perfekt för dem som utforskar eller använder den för personlig dataanalys och visualiseringar med hjälp av **Min arbetsyta**. Användare med en fristående, kostnadsfri licens kan inte använda Power BI för att samarbeta med kollegor. Fristående användare med kostnadsfria licenser kan inte visa innehåll som delas av andra eller dela sitt eget innehåll med andra Power BI-användare. 
 
     ![bild av fristående användare](media/end-user-license/power-bi-free-license.jpg)
 

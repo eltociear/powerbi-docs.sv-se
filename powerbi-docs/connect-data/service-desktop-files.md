@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 05/26/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 5368370cc25e12fdeab333b42a064ec4db66c301
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 8db571d3635ad224c293a4d2ab86f4bcb9197fe0
+ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83347388"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84120088"
 ---
 # <a name="get-data-from-power-bi-desktop-files"></a>Hämta data från Power BI Desktop-filer
 ![](media/service-desktop-files/pbid_file_icon.png)
@@ -47,7 +47,9 @@ När du läst in data i **Power BI Desktop** och skapat några rapporter, är de
    ![](media/service-desktop-files/pbid_find_your_file.png)
 
 ## <a name="publish-a-file-from-power-bi-desktop-to-your-power-bi-site"></a>Publicera en fil från Power BI Desktop till din Power BI-webbplats
-Att använda Publicera från Power BI Desktop är ungefär detsamma som att använda Hämta data i Power BI för att importera filen från en lokal enhet eller ansluta till den i OneDrive.  Här visas en snabb beskrivning av hur du gör, men du kan läsa mer i [Publicera från Power BI Desktop](../create-reports/desktop-upload-desktop-files.md) om du vill få mer information.
+Att använda Publicera från Power BI Desktop är ungefär detsamma som att använda Hämta data i Power BI för att importera fildata från en lokal enhet eller ansluta till den i OneDrive. Det finns dock skillnader: om du laddar upp från en lokal enhet ska du uppdatera dessa data ofta för att säkerställa att dina data är online och att lokala kopior av data är aktuella. 
+
+Här visas en snabb beskrivning av hur du gör, men du kan läsa mer i [Publicera från Power BI Desktop](../create-reports/desktop-upload-desktop-files.md) om du vill få mer information.
 
 1. I Power BI Desktop klickar du på **Fil** > **Publicera** > **Publicera till Power BI** eller klickar på **Publicera** i menyfliksområdet.
    

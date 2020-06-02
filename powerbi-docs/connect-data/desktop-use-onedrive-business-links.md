@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/15/2020
+ms.date: 05/27/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: e5effe6f397dd53fe6347708774118e9c491abc1
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: 71acc85ecd74b2606d00c4e3b63b6f7532c9487c
+ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83564155"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84120036"
 ---
 # <a name="use-onedrive-for-business-links-in-power-bi-desktop"></a>Använd OneDrive för företag-länkar i Power BI Desktop
 Många har Excel-arbetsböcker lagrade på OneDrive för företag som skulle vara perfekta att använda med Power BI Desktop. Med Power BI Desktop kan du använda onlinelänkar för Excel-filer som lagras i OneDrive för företag till att skapa rapporter och visuella objekt. Du kan använda ett OneDrive för företag-gruppkonto eller ditt personliga OneDrive för företag-konto.
@@ -26,11 +26,10 @@ Att hämta en onlinelänk från OneDrive för företag kräver dock några speci
    
    > [!NOTE]
    > Webbläsarens gränssnitt kanske inte ser exakt likadant ut som på följande bild. Det finns flera olika sätt att välja **Öppna i Excel** för filer i webbläsargränssnittet för OneDrive för företag. Du kan använda valfritt alternativ som låter dig öppna filen i Excel.
-   > 
-   > 
    
    ![](media/desktop-use-onedrive-business-links/odb-links_02.png)
-2. I Excel väljer du **Arkiv** > **Info** och därefter **Kopiera sökväg** ovanför **Skydda arbetsbok**.
+
+2. I Excel väljer du **fil** > **Info** och väljer sedan knappen **Kopiera sökväg**, som du ser i följande bild.
    
    ![](media/desktop-use-onedrive-business-links/onedrive-copy-path.png)
 

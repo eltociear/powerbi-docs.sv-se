@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/14/2020
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: 78031bb4f8326b50917b5c299948518717cc18a9
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: 2f98071000715c65f50f39eb4d121a4af6e72f99
+ms.sourcegitcommit: 2cb249fc855e369eed1518924fbf026d5ee07eb1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83566073"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83813357"
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nyheter i Power BI-tjänsten
 Kontrollera den här sidan för kända problem och nyligen utgivna funktioner i **Power BI-tjänsten**. Relaterad information om nyheter finns i:
@@ -174,7 +174,7 @@ Besök även våra YouTube-kanaler för information om nyheter och funktioner.
 
 ### <a name="april-2018"></a>April 2018
 * [Power BI-white paper om dataskydd](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5bd4c466-277b-4726-b9e0-f816ac12872d&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
-* [Granskningsloggar](../admin/service-admin-auditing.md) i Power BI-tjänsten är aktiverade som standard för Office 365-klienter.
+* [Granskningsloggar](../admin/service-admin-auditing.md) i Power BI-tjänsten är aktiverade som standard för organisation.
 
 ### <a name="march-2018"></a>Mars 2018
 * [Beständiga filter](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) i Power BI-tjänsten.
@@ -188,7 +188,7 @@ Besök även våra YouTube-kanaler för information om nyheter och funktioner.
 ### <a name="january-2018"></a>Januari 2018
 *    Resurs- och favoritrapporter i Power BI.
 *    Stöd för enkel inloggning med OAuth2- och DirectQuery för Azure SQL Database och Data Warehouse.
-*    Regiongranskning: Granskningsloggarna lagras nu i samma Office 365-region som klientorganisationen.
+*    Regiongranskning: Granskningsloggarna lagras nu i samma Microsoft 365-region som deras klient.
 *    GA för SharePoint Online [Power BI-rapportwebbdel](https://go.microsoft.com/fwlink/p/?LinkId=825698).
 *    Administratörskontroll för att stänga av visning av visuella Power BI-objekt för alla användare i en klientorganisation.
 *    Schemalagt uppdateringsstöd för Azure Analysis Services (AAS).
@@ -254,7 +254,7 @@ Besök även våra YouTube-kanaler för information om nyheter och funktioner.
 
 ### <a name="january-2017"></a>Januari 2017
 * Administrera Power BI med hjälp av [Power BI administratörsrollen](https://powerbi.microsoft.com/blog/power-bi-service-january-feature-summary/#pbiadminrole).
-* [Power BI-granskningsloggar ](https://powerbi.microsoft.com/blog/power-bi-service-january-feature-summary/#auditlogs) i granskningsportalen i Office 365 är tillgängliga globalt.
+* [Power BI-granskningsloggar](https://powerbi.microsoft.com/blog/power-bi-service-january-feature-summary/#auditlogs) i granskningsportalen är tillgängliga globalt.
 * Version 1.4 av [utvecklingsverktyg och visuella Power BI-objekt-API:er](https://powerbi.microsoft.com/blog/new-apis-available-for-custom-visuals-developers/) släpps.
 * [Funktionsuppsättning för strömning i realtid](https://powerbi.microsoft.com/blog/announcing-general-availability-of-power-bi-real-time-streaming-datasets/) släpps till allmän tillgänglighet.
 * [Skicka data till Power BI med hjälp av Power Automate](https://powerbi.microsoft.com/blog/push-rows-to-a-power-bi-streaming-dataset-without-writing-any-code-using-microsoft-flow/) utan att skriva en enda kodrad.
@@ -277,7 +277,7 @@ Besök även våra YouTube-kanaler för information om nyheter och funktioner.
 * Dra nytta av [Power BI-integrering med nya Microsoft Teams](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/).
 * Designa [R-visualiseringar](https://powerbi.microsoft.com/blog/r-powered-custom-visuals/) i Power BI utan att lära dig R.
 * Förhandsversion: Med [Azure Analysis Services](https://powerbi.microsoft.com/blog/introducing-azure-analysis-services/)kan BI-tekniker skapa BI-semantikmodeller baserat på data som finns i molnet eller lokalt för att ge användare i verksamheten en förenklad vy av sina data.
-* Den nya [BI-administratörsrollen](https://powerbi.microsoft.com/blog/making-it-easier-to-administer-power-bi/) kan tilldelas användare som ska ha åtkomst till Power BI-administratörsportalen utan att även ge dem annan administrativ Office 365-åtkomst.
+* Den nya [Power BI-administratörsrollen](https://powerbi.microsoft.com/blog/making-it-easier-to-administer-power-bi/) kan tilldelas användare som ska ha åtkomst till Power BI-administratörsportalen utan att även ge dem annan administrativ åtkomst.
 * Utforska dina [MYOB avancerade data med Power BI](https://powerbi.microsoft.com/blog/explore-your-myob-advanced-data-with-power-bi/).
 * Så här kan en icke-administratör granska [granskningsloggen för Power BI](https://powerbi.microsoft.com/blog/tech-tip-thursday-power-bi-auditing-for-a-non-administrator/)
 * Visa [textkolumner som knappbeskrivningar](https://powerbi.microsoft.com/blog/tech-tip-thursday-displaying-text-columns-in-tool-tips/).
@@ -693,7 +693,7 @@ Besök [bloggen](https://powerbi.microsoft.com/blog/power-bi-service-weekly-upda
 **4 augusti 2015**
 
 * Power BI erbjuder nu användare av [Circuit-ID](https://powerbi.microsoft.com/blog/circuit-id-data-with-power-bi/) möjlighet att spåra och övervaka deras molnkommunikationtjänster med Circuit-ID och fatta bättre affärsbeslut. Mer information om hur du kommer igång finns på hjälpsidan för innehållspaketet [Circuit ID för Power BI](../connect-data/service-connect-to-services.md).
-* Idag har vi släppt en förbättring av funktionen Dela instrumentpanel så att den blir ännu enklare att använda.  Om din organisation använder Office 365 för e-post, kan du nu [dela i en e-postdistributionsgrupp](https://powerbi.microsoft.com/blog/easier-dashboard-sharing-with-distribution-groups/) på samma sätt du skulle skicka ett e-postmeddelande i Outlook.  Det är bara att ange adressen till distributionsgruppen och klicka på Dela.  Alla medlemmar i distributionsgruppen får en e-postinbjudan för att visa instrumentpanelen.
+* Idag har vi släppt en förbättring av funktionen Dela instrumentpanel så att den blir ännu enklare att använda.  Om din organisation använder Microsoft 365 för e-post, kan du nu [dela i en e-postdistributionsgrupp](https://powerbi.microsoft.com/blog/easier-dashboard-sharing-with-distribution-groups/) på samma sätt du skulle skicka ett e-postmeddelande i Outlook.  Det är bara att ange adressen till distributionsgruppen och klicka på Dela.  Alla medlemmar i distributionsgruppen får en e-postinbjudan för att visa instrumentpanelen.
 
 **28 juli 2015**
 
@@ -703,7 +703,7 @@ Besök [bloggen](https://powerbi.microsoft.com/blog/power-bi-service-weekly-upda
 
 * Vi vill meddela att Power BI kommer att vara allmänt tillgängligt. Registrera dig för [Power BI Pro](service-self-service-signup-for-power-bi.md). Som en del av GA-lanseringen erbjuder vi vissa nya funktioner:
 * En ny miljö för att skapa visualiseringar och rapporter: Den nya arbetsytan för rapporter har ett större antal visualiseringar, mer kontroll över rubrikformatering, förklaringar, axlar, bakgrunder med mera.
-* [Power BI-grupper](../collaborate-share/service-create-distribute-apps.md): grupper erbjuder en kraftfull samarbetsmiljö som bygger på Office 365-grupper.
+* [Power BI-grupper](../collaborate-share/service-create-distribute-apps.md): grupper erbjuder en kraftfull samarbetsmiljö som bygger på Microsoft 365-grupper.
 * [Organisationsinnehållspaket](../collaborate-share/service-organizational-content-pack-introduction.md): Det är otroligt enkelt att skapa instrumentpaneler och rapporter med Power BI. Nu kan användarna publicera innehållet i organisationens innehållsgalleri.
 * [Ta med hela Excel-filer](../connect-data/service-excel-workbook-files.md): Du kan ta en Excel-arbetsbok som lagras på OneDrive för företag i Power BI och visa hela arbetsboken, precis som i Excel Online.
 * [Ta med CSV-filer](../connect-data/service-get-data-from-files.md): Precis som Excel- eller Power BI Desktop-filer kan kommaseparerade textfiler (CSV) också fungera som datauppsättning för dina instrumentpaneler och rapporter i Power BI.
@@ -714,7 +714,7 @@ Besök [bloggen](https://powerbi.microsoft.com/blog/power-bi-service-weekly-upda
 
 * Acumatica Cloud ERP ger en uppsättning helt integrerade affärshanteringsprogram, till exempel ekonomi, distribution, CRM och projektredovisning, tack vare en stabil och flexibel plattform. Med [innehållspaketet Power BI Acumatica](https://powerbi.microsoft.com/blog/analyze-and-explore-your-acumatica-cloud-erp-data-with-power-bi/) kan du snabbt få insikter om dina affärsmöjlighetsdata. Detta innehåll omfattar en instrumentpanelmall, en rapportuppsättning och en granskad datauppsättning och tillhandahåller information som antalet lyckade affärsmöjligheter per datum. Läs mer [här](../connect-data/service-connect-to-services.md). 
 * [Azure HDInsight](https://powerbi.microsoft.com/blog/visualize-big-data-with-power-bi-and-spark-for-azure-hdinsight/) erbjuder en helt hanterad Spark-tjänst. Den här funktionen möjliggör scenarier som iterativ maskininlärning och interaktiv dataanalys. Med Power BI kan du ansluta direkt till data i Spark på HDInsight och undersöka dem enkelt och i realtid. Läs [hjälpdokumentationen](../connect-data/power-bi-data-sources.md) för mer information.
-* [Integration av programstartare och navigation i Office 365](https://powerbi.microsoft.com/blog/new-capabilities-added-to-power-bi#launcher). Med ett enda klick kan du navigera till alla dina Office 365-program.
+* [Integration av programstartare och navigering i Microsoft 365](https://powerbi.microsoft.com/blog/new-capabilities-added-to-power-bi#launcher). Med ett enda klick kan du navigera till alla dina Microsoft 365-program.
 * [Ange en anpassad URL](https://powerbi.microsoft.com/blog/new-capabilities-added-to-power-bi#url) som användarna skickas till när de klickar på en panel. Nu har du möjlighet att styra exakt var användarna hamnar: en rapport, en instrumentpanel, en SSRS-rapport eller en extern webbplats. 
 * [Synlighet och hantering av lagringen](https://powerbi.microsoft.com/blog/new-capabilities-added-to-power-bi#storage) du förbrukar i Power BI
 * [Konfigurera visuella objekt och fält som visas i Frågor och svar](https://powerbi.microsoft.com/blog/new-capabilities-added-to-power-bi#visual)

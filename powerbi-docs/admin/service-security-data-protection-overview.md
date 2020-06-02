@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/22/2020
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: d7fc915c9c21460670bf86f308b756196886983a
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: d70262908df5568066533d1b638c7a1495a3f30b
+ms.sourcegitcommit: c1f05254eaf5adb563f8d4f33c299119134c7d1f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83132044"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83733242"
 ---
 # <a name="data-protection-in-power-bi-preview"></a>Dataskydd i Power BI (förhandsversion)
 
@@ -23,7 +23,7 @@ Moderna företag har strikta affärsregler och krav på hur känsliga data ska h
 
 Med Dataskydd i Power BI kan du göra följande:
 
-* Använd Microsofts känslighetsetiketter för att klassificera och märka upp innehåll i Power BI-tjänsten (instrumentpaneler, rapporter, datamängder och dataflöden) med samma taxonomi som används till att klassificera och skydda filer i Office 365. 
+* Använd Microsofts känslighetsetiketter för att klassificera och märka upp innehåll i Power BI-tjänsten (instrumentpaneler, rapporter, datamängder och dataflöden) med samma taxonomi som används till att klassificera och skydda filer i Microsoft 365.
 
 * Tillämpa skyddsinställningar som kryptering eller vattenstämplar när du exporterar data från Power BI-tjänsten genom att innehållets känslighetsetikett och skydd ärvs (Excel, PowerPoint och PDF). 
 
@@ -35,7 +35,7 @@ Med Dataskydd i Power BI kan du göra följande:
 
 Känslighetsetiketter skapas och hanteras antingen i [säkerhetscentret för Microsoft 365](https://security.microsoft.com/) eller i [efterlevnadscentret för Microsoft 365](https://compliance.microsoft.com/).
 
-Om du vill hantera känslighetsetiketter på någon av de här platserna går du till **Klassificering > Känslighetsetiketter**. De här känslighetsetiketterna kan användas i flera Microsoft-tjänster som Azure Information Protection, Office-appar och Office 365-tjänster.
+Om du vill hantera känslighetsetiketter på någon av de här platserna går du till **Klassificering** > **Känslighetsetiketter**. De här känslighetsetiketterna kan användas i flera Microsoft-tjänster som Azure Information Protection, Office-appar och Microsoft 365-tjänster.
 
 > [!IMPORTANT]
 > Azure Information Protection-användare måste migrera etiketterna till någon av de tidigare angivna tjänsterna om de ska kunna användas i Power BI. Dessutom kan känslighetsetiketter bara användas i offentliga moln och inte för klientorganisationer i exempelvis självständiga moln.

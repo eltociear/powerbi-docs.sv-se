@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/14/2019
+ms.date: 05/26/2020
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 4b80d329c89299cbe87fb29aa340733f0031192a
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 6e3d44c9871332842ed0e3f3d9b9fb5fc64a5a65
+ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83349009"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84121107"
 ---
 # <a name="create-featured-questions-for-power-bi-qa"></a>Skapa aktuella frågor för Frågor och svar i Power BI
 Om du äger en datauppsättning, kan du lägga till egna aktuella frågor till den datauppsättningen. Frågor och svar för Power BI kommer att visa dessa frågor till kollegor som konsumerar rapporter baserat på den datamängden.  Aktuella frågor ger dina kollegor idéer om vilka typer av frågor de kan ställa till datauppsättningen. Det är helt upp till dig vilka aktuella frågor du lägger till – lägg till populära frågor, frågor som ger intressanta resultat eller frågor som kan vara svåra att uttrycka rätt.
@@ -40,7 +40,7 @@ Den här artikeln använder sig av [exemplet detaljhandelsanalys](sample-dataset
 6. Gå tillbaka till Power BI-instrumentpanelen för exemplet detaljhandelsanalys och placera markören i frågor och svar-rutan.   
    ![Frågeruta för Frågor och svar med aktuell fråga](media/service-q-and-a-create-featured-questions/power-bi-qna-featured-question-to-start.png)
 7. Den nya aktuella frågan **försäljning per område som en karta**, är den första i listan. Välj den.  
-8. Svaret visas som en fylld kartvisualisering.  
+8. Power BI skapar svaret och visar det som en ifylld kartvisualisering.  
    ![Besvarad aktuell fråga för Frågor och svar: kartvisualisering](media/service-q-and-a-create-featured-questions/power-bi-qna-featured-question.png)
 
 ## <a name="next-steps"></a>Nästa steg

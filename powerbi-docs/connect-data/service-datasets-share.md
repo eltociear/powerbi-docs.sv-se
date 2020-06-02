@@ -1,22 +1,22 @@
 ---
-title: Dela en datauppsättning (förhandsversion)
+title: Dela en datauppsättning
 description: Som datamängdsägare kan du skapa och dela dina datamängder så att andra kan använda dem. Läs hur du delar dem.
 author: maggiesMSFT
-ms.reviewer: chbraun
+ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/01/2019
+ms.date: 04/30/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 4114287099300c371a6b02961a968702acb98f92
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: 4082647338adcca8518cc4d9c3a3b88cc3e04f4f
+ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83565470"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83794096"
 ---
-# <a name="share-a-dataset-preview"></a>Dela en datauppsättning (förhandsversion)
+# <a name="share-a-dataset"></a>Dela en datauppsättning
 
 Som skapare av *datamodeller* i Power BI Desktop, skapar du *datauppsättningar* som du kan distribuera i Power BI-tjänsten. Andra rapportskapare kan därefter använda dina datauppsättningar som grund för sina egna rapporter. I den här artikeln får du lära dig hur du delar dina datauppsättningar. Information om hur du ger och tar bort åtkomst till dina delade datauppsättningar finns i [Skapa-behörighet](service-datasets-build-permissions.md).
 
@@ -53,5 +53,5 @@ När du har en delad datamängd på din arbetsyta kan du behöva veta vilka rapp
 
 ## <a name="next-steps"></a>Nästa steg
 
-- [Använda datamängder mellan arbetsytor (förhandsversion)](service-datasets-across-workspaces.md)
+- [Använda datamängder på arbetsytor](service-datasets-across-workspaces.md)
 - Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)

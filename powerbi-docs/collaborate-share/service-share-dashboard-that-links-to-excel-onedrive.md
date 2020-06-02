@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 1cd90c4348c33726cdf171f4948b617498c63a1f
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 3fcf15d7179c86b2c6859fe3c5704ac2cf1b9ce5
+ms.sourcegitcommit: c1f05254eaf5adb563f8d4f33c299119134c7d1f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83348055"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83733081"
 ---
 # <a name="share-a-power-bi-dashboard-that-links-to-an-excel-file-in-onedrive"></a>Dela en Power BI-instrumentpanel som är länkad till en Excel-fil på OneDrive
 I Power BI kan du [ansluta till Excel-arbetsböcker på OneDrive för företag](../connect-data/service-excel-workbook-files.md) och fästa paneler på en instrumentpanel från den arbetsboken. När du delar instrumentpanelen eller skapar ett innehållspaket som innehåller instrumentpanelen:
@@ -49,11 +49,11 @@ När du [publicerar ett innehållspaket](service-organizational-content-pack-cre
 5. Välj **Publicera**.
 
 ## <a name="share-a-dashboard-from-a-power-bi-workspace"></a>Dela en instrumentpanel från en Power BI-arbetsyta
-Att dela en instrumentpanel från en Power BI-arbetsyta liknar att dela en instrumentpanel från din egen arbetsyta, förutom att filerna finns på en Office 365-webbplatsarbetsyta i stället för i din egna OneDrive för företag. Ändra behörighet för Excel-arbetsboken innan du delar instrumentpanelen med personer utanför arbetsytan.
+Att dela en instrumentpanel från en Power BI-arbetsyta liknar att dela en instrumentpanel från din egen arbetsyta, förutom att filerna finns på en Microsoft 365-webbplatsarbetsyta i stället för i din egen OneDrive för företag. Ändra behörighet för Excel-arbetsboken innan du delar instrumentpanelen med personer utanför arbetsytan.
 
 ![Dela från OneDrive](media/service-share-dashboard-that-links-to-excel-onedrive/pbi_onedriveshare.png)
 
 ## <a name="next-steps"></a>Nästa steg
 * [Fästa en panel på en Power BI-instrumentpanel från Excel](../create-reports/service-dashboard-pin-tile-from-excel.md)
 * [Grundläggande begrepp för designers i Power BI-tjänsten](../fundamentals/service-basic-concepts.md)
-* Fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
+* Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)

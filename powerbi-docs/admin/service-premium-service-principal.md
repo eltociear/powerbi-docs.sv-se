@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 05/20/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: e3d3beb73ab788c1042abb8cc1790455c4789c59
-ms.sourcegitcommit: c1f05254eaf5adb563f8d4f33c299119134c7d1f
+ms.openlocfilehash: aa8b457dfd33cff40dbd651f0e07811e361e52d9
+ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83733265"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84120961"
 ---
 # <a name="automate-premium-workspace-and-dataset-tasks-with-service-principals"></a>Automatisera arbetsyte- och datauppsättningsåtgärder i Premium med hjälp av tjänstens huvudnamn
 
@@ -29,7 +29,7 @@ I **Power BI Premium** kan tjänstens huvudnamn även användas med [XMLA-slutpu
 - Azure Logic Apps
 - Anpassade klientprogram
 
-Tjänstens huvudnamn kan bara användas med XMLA-slutpunkten mot [nya arbetsytor](../collaborate-share/service-new-workspaces.md). Klassiska arbetsytor stöds inte. Tjänstens huvudnamn har bara de behörigheter som krävs för att utföra uppgifter för arbetsytor som det har tilldelats. Behörigheter tilldelas via Arbetsyteåtkomst, ungefär som vanliga UPN-konton.
+Endast [Nya arbetsytor](../collaborate-share/service-new-workspaces.md) har stöd för XMLA-slutpunktsanslutningar med hjälp av tjänstens huvudnamn. Klassiska arbetsytor stöds inte. Tjänstens huvudnamn har bara de behörigheter som krävs för att utföra uppgifter för arbetsytor som det har tilldelats. Behörigheter tilldelas via Arbetsyteåtkomst, ungefär som vanliga UPN-konton.
 
 Skrivåtgärder kräver att [XMLA-slutpunkten är aktiverad för läs- och skrivåtgärder](service-premium-connect-tools.md#enable-xmla-read-write) för kapacitetens **arbetsbelastning för datauppsättningar**. Funktionen för [förbättrat metadataformat](../connect-data/desktop-enhanced-dataset-metadata.md) bör vara aktiverad för datauppsättningar som publiceras från Power BI Desktop.
 

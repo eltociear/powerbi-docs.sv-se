@@ -9,16 +9,16 @@ ms.topic: conceptual
 ms.date: 04/07/2020
 ms.author: kfollis
 LocalizationGroup: Get started
-ms.openlocfilehash: 3f001c91c89b18b43c953669272b4d5be37dd154
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 2701765ce9d9a059016265049ddecf444a0640ea
+ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83135525"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83792966"
 ---
 # <a name="enroll-your-us-government-organization-in-the-power-bi-service"></a>Registrera din amerikanska myndighetsorganisation i Power BI-tjänsten
 
-Det finns en version av Power BI-tjänsten som ingår i [Office 365-myndighetsabonnemang](https://www.microsoft.com/microsoft-365/government/compare-office-365-government-plans?rtc=1). Den här artikeln är utformad för kunder som tillhör amerikanska myndigheter. Den registreringsprocess som beskrivs här skiljer sig från kommersiella versioner av Power BI-tjänsten.
+Det finns en version av Power BI-tjänsten som ingår i [Microsoft 365-myndighetsabonnemang](https://www.microsoft.com/microsoft-365/government/compare-office-365-government-plans?rtc=1). Den här artikeln är utformad för kunder som tillhör amerikanska myndigheter. Den registreringsprocess som beskrivs här skiljer sig från kommersiella versioner av Power BI-tjänsten.
 
 Mer information om Power BI-tjänsten för amerikanska myndigheter finns i [Power BI för amerikanska myndigheter – översikt](service-govus-overview.md).
 
@@ -29,19 +29,19 @@ Mer information om Power BI-tjänsten för amerikanska myndigheter finns i [Powe
 
 ## <a name="select-the-right-sign-up-process-for-your-us-government-organization"></a>Välj rätt registreringsprocessen för din organisation som tillhör en amerikansk myndighet
 
-Government Cloud Community kan vara nytt för din myndighetsorganisation, eller så har den kanske redan en prenumeration. Följande avsnitt innehåller information om de registreringssteg som baseras på var du befinner dig med avseende på Office 365-myndighetsabonnemangen och Power BI. Stegen är olika beroende på din aktuella registrering.
+Government Cloud Community kan vara nytt för din myndighetsorganisation, eller så har den kanske redan en prenumeration. Följande avsnitt innehåller information om de registreringssteg som baseras på var du befinner dig med avseende på Microsoft 365-myndighetsabonnemangen och Power BI. Stegen är olika beroende på din aktuella registrering.
 
 När du har registrerat dig för Power BI US Government kan du arbeta med ditt kontoteam för att påbörja den [*vitslistningsprocess*](#additional-signup-information) som beskrivs i den här artikeln. Det steget krävs för att du ska aktivera organisationen fullständigt i Government Community Cloud.
 
-## <a name="sign-up-for-a-new-office-365-government-plan"></a>Registrera dig för ett nytt Office 365-myndighetsabonnemang
+## <a name="sign-up-for-a-new-microsoft-365-government-plan"></a>Registrera dig för ett nytt Microsoft 365-myndighetsabonnemang
 
-Om Government Cloud Community är nytt för din organisation följer du dessa steg för att få ett Office 365-myndighetsabonnemang:
+Om Government Cloud Community är nytt för din organisation följer du dessa steg för att få ett Microsoft 365-myndighetsabonnemang:
 
 > [!NOTE]
 > De här stegen bör utföras av den globala administratören.
 >
 
-1. Gå till [Office 365-myndighetsabonnemang](https://products.office.com/government/office-365-web-services-for-government).
+1. Gå till [Microsoft 365-myndighetsabonnemang](https://products.office.com/government/office-365-web-services-for-government).
 2. Välj **Kom igång med en kostnadsfri utvärderingsversion**.
 3. Fyll i formuläret för att berätta för oss om din organisation. Använd listrutan för att välja din organisationstyp.
 
@@ -49,11 +49,11 @@ Om Government Cloud Community är nytt för din organisation följer du dessa st
 
 4. Skicka formuläret för att starta registreringsprocessen. Din Microsoft-representant eller -partner kan hjälpa dig med frågor.
 
-När den här processen är klar följer du stegen för befintliga Office 365 Government-kunder för att lägga till en Power BI-prenumeration.
+När den här processen är klar följer du stegen för befintliga Microsoft 365-myndighetskunder för att lägga till en Power BI-prenumeration.
 
-## <a name="add-power-bi-to-an-office-365-government-plan"></a>Lägga till Power BI i ett Office 365-myndighetsabonnemang
+## <a name="add-power-bi-to-a-microsoft-365-government-plan"></a>Lägga till Power BI till ett Microsoft 365-myndighetsabonnemang
 
-Om din organisation redan har ett Office 365-myndighetsabonnemang följer du dessa steg för att lägga till en Power BI-prenumeration:
+Om din organisation redan har ett Microsoft 365-myndighetsabonnemang, följer du dessa steg för att lägga till en Power BI-prenumeration:
 
 > [!NOTE]
 > De här stegen bör utföras av den globala administratören.

@@ -8,18 +8,18 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/28/2019
-ms.openlocfilehash: 67a9725e55f82e325466789064f5738222919ac8
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: c8c62709775bb269eb57b2f88c174f1dc4fd13ad
+ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80114737"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83794101"
 ---
 # <a name="create-an-azure-active-directory-tenant-to-use-with-power-bi"></a>Skapa en Azure Active Directory-klient som ska användas med Power BI
 
 Lär dig hur du skapar en ny Azure AD-klientorganisation för en anpassad app som anropar [REST-API:er för Power BI](../automation/rest-api-reference.md).
 
-En klientorganisation representerar en organisation i Azure Active Directory. Det är en dedikerad instans av Azure AD-tjänsten som en organisation tar emot och äger när den registrerar sig för en Microsoft-molntjänst som Azure, Microsoft Intune eller Office 365. Varje Azure AD-klient är unik och avgränsad från andra Azure AD-klienter.
+En klientorganisation representerar en organisation i Azure Active Directory. Det är en dedikerad instans av Azure AD-tjänsten som en organisation tar emot och äger när den registrerar sig för en Microsoft-molntjänst som Azure, Microsoft Intune eller Microsoft 365. Varje Azure AD-klient är unik och avgränsad från andra Azure AD-klienter.
 
 När du har en Azure AD-klientorganisation kan du definiera en app och tilldela behörigheter för den så att den kan anropa [REST-API:er för Power BI](../automation/rest-api-reference.md).
 
@@ -27,7 +27,7 @@ Organisationen kanske redan har en Azure AD-klient som du kan använda för prog
 
 ## <a name="create-an-azure-active-directory-tenant"></a>Skapa en Azure Active Directory-klient
 
-För att kunna integrera Power BI i din anpassade app måste du definiera en app i Azure AD, och för det krävs en Azure AD-katalog. Den här katalogen är din *klientorganisation*. Om din organisation inte har någon klientorganisation än, eftersom de inte använder Power BI eller Office 365, [så måste du skapa en utvecklingsmiljö](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant). Du måste också skapa en sådan om du inte vill att appen ska blandas ihop med organisationens klientorganisation, så att du kan separera aktiviteterna. Eller kanske du bara vill skapa en klient i testsyfte.
+För att kunna integrera Power BI i din anpassade app måste du definiera en app i Azure AD, och för det krävs en Azure AD-katalog. Den här katalogen är din *klientorganisation*. Om din organisation inte har någon klientorganisation än, eftersom de inte använder Power BI eller Microsoft 365, [måste du skapa en utvecklingsmiljö](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant). Du måste också skapa en sådan om du inte vill att appen ska blandas ihop med organisationens klientorganisation, så att du kan separera aktiviteterna. Eller kanske du bara vill skapa en klient i testsyfte.
 
 Så här skapar du en ny Azure AD-klientorganisation:
 

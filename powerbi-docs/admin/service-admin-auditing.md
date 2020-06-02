@@ -10,12 +10,12 @@ ms.date: 05/11/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 42203c65f6351422bbb65b5a0dc2245ac6a7b190
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: c0f8e6f0282e4a862c8fc92e922a412ba0f56098
+ms.sourcegitcommit: 2cb249fc855e369eed1518924fbf026d5ee07eb1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83564625"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83812437"
 ---
 # <a name="track-user-activities-in-power-bi"></a>Spåra användaraktiviteter i Power BI
 
@@ -26,7 +26,7 @@ Att veta vem som har vidtagit en viss åtgärd för ett visst objekt i din Power
 | Innehåller händelser från SharePoint Online, Exchange Online, Dynamics 365 och andra tjänster utöver Power BI-granskningshändelserna. | Innehåller endast Power BI-granskningshändelserna. |
 | Endast användare med behörigheter för skrivskyddade granskningsloggar eller granskningsloggar, till exempel globala administratörer och granskare, har åtkomst. | Globala administratörer och Power BI-tjänstadministratörer har åtkomst. |
 | Globala administratörer och granskare kan söka i den enhetliga spårningsloggen i Microsoft 365 Säkerhetscenter och Microsoft 365 Efterlevnadscenter. | Det finns inget användargränssnitt för att söka i aktivitetsloggen ännu. |
-| Globala administratörer och granskare kan ladda ned granskningsloggposter med hjälp av API:er och cmdletar för Office 365-hantering. | Globala administratörer och Power BI-tjänstadministratörer kan ladda ned aktivitetsloggposter med hjälp av ett Power BI REST API och en cmdlet för hantering. |
+| Globala administratörer och granskare kan ladda ned granskningsloggposter med hjälp av API:er och cmdletar för Microsoft 365-hantering. | Globala administratörer och Power BI-tjänstadministratörer kan ladda ned aktivitetsloggposter med hjälp av ett Power BI REST API och en cmdlet för hantering. |
 | Behåller granskningsdata i 90 dagar | Behåller aktivitetsdata i 30 dagar (offentlig förhandsversion). |
 | Behåller granskningsdata, även om klientorganisationen flyttas till en annan Azure-region. | Behåller inte aktivitetsdata när klientorganisationen flyttas till en annan Azure-region. |
 
@@ -239,6 +239,7 @@ Följande åtgärder är tillgängliga i både granskningsloggar och aktivitetsl
 
 | Eget namn                                     | Åtgärdsnamn                              | Anteckningar                                  |
 |---------------------------------------------------|---------------------------------------------|------------------------------------------|
+| Använda aktuella Power BI-tabeller i Excel | AnalyzedByExternalApplication |    |
 | En datakälla lades till i Power BI-gatewayen             | AddDatasourceToGateway                      |                                          |
 | Power BI-mappåtkomst har lagts till                      | AddFolderAccess                             | Används inte för närvarande                       |
 | Power BI-gruppmedlemmar har lagts till                      | AddGroupMembers                             |                                          |
@@ -299,6 +300,7 @@ Följande åtgärder är tillgängliga i både granskningsloggar och aktivitetsl
 | Power BI-instrumentpanel skrevs ut                        | PrintDashboard                              |                                          |
 | Power BI-rapportsida skrevs ut                      | PrintReport                                 |                                          |
 | Power BI-rapport publicerades på webben                  | PublishToWebReport <sup>2</sup>                         |                                          |
+| Publicerade eller uppdaterade aktuella tabeller | UpdateFeaturedTables <sup>3</sup>   | |
 | Power BI-dataflödeshemlighet togs emot från Key Vault  | ReceiveDataflowSecretFromKeyVault           |                                          |
 | En datakälla togs bort från Power BI-gatewayen         | RemoveDatasourceFromGateway                 |                                          |
 | Power BI-gruppmedlemmar togs bort                    | DeleteGroupMembers                          |                                          |
@@ -341,6 +343,8 @@ Följande åtgärder är tillgängliga i både granskningsloggar och aktivitetsl
 <sup>1</sup> Publicering från Power BI Desktop till tjänsten är en CreateReport-händelse i tjänsten.
 
 <sup>2</sup> PublishtoWebReport refererar till funktionen [Publicera på webben](../collaborate-share/service-publish-to-web.md).
+
+<sup>3</sup> UpdateFeaturedTables refererar till [aktuella Power BI-tabeller i Excel](../collaborate-share/service-excel-featured-tables.md).
 
 ## <a name="next-steps"></a>Nästa steg
 

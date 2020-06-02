@@ -1,22 +1,22 @@
 ---
-title: Certifiera datamängder (förhandsversion) – Power BI
+title: Certifiera datamängder – Power BI
 description: Lär dig hur du vägleder företagsanvändare till tillförlitliga, högkvalitativa datamängder.
 author: maggiesMSFT
-ms.reviewer: chbraun
+ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/03/2019
+ms.date: 04/30/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: bdce9ec797d00b34f657ed66df6b7a5ce373334d
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: a6d03521cd3962dcf9549d99076d8606b1142976
+ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83285013"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83792944"
 ---
-# <a name="certify-datasets-preview"></a>Certifiera datamängder (förhandsversion)
+# <a name="certify-datasets---power-bi"></a>Certifiera datamängder – Power BI
 
 Din organisation kan certifiera datamängder som är den auktoritativa källan till viktig information. Dessa datamängder är viktiga när rapportdesigners börjar skapa en rapport och leta efter tillförlitliga data. Certifiering kan vara en mycket selektiv process där endast de mest värdefulla datamängderna certifieras. Power BI-klientorganisationsadministratörer har en ny inställning så att de noggrant kan kontrollera vem som kan certifiera datamängder. Därmed kan administratörer säkerställa att certifiering av datamängder resulterar i tillförlitliga och auktoritativa datamängder som kan användas i hela organisationen.
 

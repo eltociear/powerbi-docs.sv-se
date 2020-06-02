@@ -4,26 +4,39 @@ description: Sidnumrerade rapporter, som länge varit standardrapportformat i SQ
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
+featuredvideoid: jXTiYJKw1Rs
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
-ms.date: 05/14/2020
-ms.openlocfilehash: 0cf3fcdbcfb49d501ccbb7fa191b566e298c84b7
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.date: 05/19/2020
+ms.openlocfilehash: 69d6f3c828066a66c59ab8becf4fd4f43e54c547
+ms.sourcegitcommit: c1f05254eaf5adb563f8d4f33c299119134c7d1f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83565516"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83733426"
 ---
 # <a name="what-are-paginated-reports-in-power-bi-premium"></a>Vad är sidnumrerade rapporter i Power BI Premium?
 
-Sidnumrerade rapporter, som länge varit standardrapportformat i SQL Server Reporting Services, är nu tillgängliga i Power BI-tjänsten. De här rapporterna kan skrivas ut eller delas. De kallas ”sidnumrerade” eftersom de är formaterade för att passa på en sida. De visar alla data i en tabell, även om tabellen sträcker sig över flera sidor. Rapporterna kallas ibland ”pixelperfekta” eftersom du kan kontrollera deras sidlayout i minsta detalj. Sidnumrerade rapporter baseras på tekniken för RDL-rapporter i SQL Server Reporting Services. Report Builder är ett fristående verktyg för redigering av sidnumrerade rapporter. 
+*Sidnumrerade rapporter* är utformade för att skrivas ut eller delas. De kallas *sidnumrerade* eftersom de är formaterade för att passa på en sida. De visar alla data i en tabell, även om tabellen sträcker sig över flera sidor. Rapporterna kallas också *pixelperfekta* eftersom du kan kontrollera deras sidlayout i minsta detalj. Power BI Report Builder är ett fristående verktyg för redigering av sidnumrerade rapporter. Sidnumrerade rapporter baseras på tekniken för RDL-rapporter som länge var rapportformatet av standardtyp i SQL Server Reporting Services. 
 
-Sidnumrerade rapporter kan ha många sidor. Den här rapporten har till exempel 563 sidor. Varje sida har en exakt utformning med en sida per faktura och upprepande sidhuvuden och sidfötter.
+Sidnumrerade rapporter har ofta många sidor. Den här rapporten har till exempel 563 sidor. Varje sida har en exakt utformning med en sida per faktura och upprepande sidhuvuden och sidfötter.
 
 ![Sidnumrerad](media/paginated-reports-report-builder-power-bi/power-bi-paginated-wwi-report-page.png)
 
 Du kan förhandsgranska rapporten i Report Builder och sedan publicera den i Power BI-tjänsten `https://app.powerbi.com`. Du måste ha en Power BI Pro-licens för att kunna publicera en rapport i tjänsten. Du kan publicera och dela sidnumrerade rapporter på Min arbetsyta eller på arbetsytor så länge arbetsytan ligger i en Power BI Premium-kapacitet. Dessutom måste en Power BI-administratör aktivera sidnumrerade rapporter i [avsnittet Premium-kapaciteter](../admin/service-admin-premium-workloads.md#paginated-reports) i Power BI-administratörsportalen. 
+
+## <a name="compare-power-bi-reports-and-paginated-reports"></a>Jämföra Power BI-rapporter och sidnumrerade rapporter
+
+En stor fördel med sidnumrerade rapporter är möjligheten att skriva ut alla data i en tabell, oavsett hur lång den blir. Föreställ dig att du placerar en tabell i en Power BI-rapport. Du ser några av dess rader i tabellen på sidan och du har en rullningslist för att visa resten. Om du skriver ut sidan eller exporterar den till PDF, är de enda raderna som skrivs ut de som du såg på sidan. 
+
+Anta nu att du nu placerar samma tabell i en sidnumrerad rapport. När du skriver ut eller exporterar den till PDF, har den sidnumrerade rapporten så många sidor som behövs för att skriva ut varje rad i tabellen. 
+
+I följande videoklipp visar Microsofts kunniga Data Platform MVP, Peter Myers, och högsta programansvariga Chris Finlan, hur man skriver ut en liknande tabell i de två rapportformaten. 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jXTiYJKw1Rs?list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT" frameborder="0" allowfullscreen></iframe>
+
+Den här videon är en del av en videobaserad kurs i åtta moduler, [Sidnumrerade rapporter i Power BI på en dag](../learning-catalog/paginated-reports-online-course.md). Den här kursen är utformad för att ge dig som rapportförfattare de tekniska kunskaper som krävs för att skapa, publicera och distribuera sidnumrerade rapporter i Power BI.
 
 ## <a name="create-reports-in-power-bi-report-builder"></a>Skapa rapporter i Power BI Report Builder
 

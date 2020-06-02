@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/08/2019
 ms.author: lukaszp
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 5330b4c42794f0fa3110cef57f6d62ead0381e52
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: 08a05a266dd505dd991d90738b81a2e7d413f090
+ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83561798"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84119875"
 ---
 # <a name="set-contact-information-for-reports-and-dashboards-in-the-power-bi-service"></a>Ange kontaktuppgifter för rapporter och instrumentpaneler i Power BI-tjänsten
 I den här artikeln får du veta hur du anger kontaktuppgifter för en instrumentpanel eller rapport i Power BI-tjänsten.
@@ -28,7 +28,7 @@ Du kan lägga till flera användare eller grupper i kontakten för ett objekt. D
 * En e-postaktiverad säkerhetsgrupp
 * En distributionslista
 
-Som standard är den person som skapar en ny rapport eller instrumentpanel kontakten för den. Om du anger ett värde åsidosätts standardvärdet. Du kan givetvis ta bort alla personer eller grupper från kontaktlistan. När du gör detta för klassiska arbetsytor kommer Microsoft 365-gruppen för arbetsytan att visas. För den nya arbetsyteupplevelsen kommer [arbetsytans kontaktlista](../collaborate-share/service-create-the-new-workspaces.md#workspace-contact-list) att användas. Om arbetsytans kontaktlista inte anges, visas arbetsytans administratörer.
+Som standard är den person som skapar en ny rapport eller instrumentpanel kontakten för den. Om du anger ett värde åsidosätts standardvärdet. Du kan givetvis ta bort alla personer eller grupper från kontaktlistan. När du gör detta för klassiska arbetsytor kommer Microsoft 365-gruppen för arbetsytan att visas. För den nya arbetsyteupplevelsen kommer [arbetsytans kontaktlista](../collaborate-share/service-create-the-new-workspaces.md#create-a-contact-list) att användas. Om arbetsytans kontaktlista inte anges, visas arbetsytans administratörer.
 
 Kontaktuppgifterna visas för personer som visar objektet. 
 

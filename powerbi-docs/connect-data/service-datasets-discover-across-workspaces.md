@@ -1,22 +1,22 @@
 ---
-title: Skapa rapporter baserat på datamängder från olika arbetsytor (förhandsversion) – Power BI
+title: Skapa rapporter baserat på datamängder från olika arbetsytor – Power BI
 description: Lär dig hur du delar en datamängd med användare i organisationen. De kan sedan skapa rapporter baserat på din datamängd på sina egna arbetsytor.
 author: maggiesMSFT
-ms.reviewer: chbraun
+ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/03/2019
+ms.date: 04/30/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: af8cab7403a0ee34505ff395248aec188fd54666
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 0e7574f9f1d3b4d6c818115af1f2cb4dcd7b8374
+ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83284737"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83793031"
 ---
-# <a name="create-reports-based-on-datasets-from-different-workspaces-preview"></a>Skapa rapporter baserat på datamängder från olika arbetsytor (förhandsversion)
+# <a name="create-reports-based-on-datasets-from-different-workspaces"></a>Skapa rapporter baserat på datamängder från olika arbetsytor
 
 Lär dig hur du skapar rapporter på dina egna arbetsytor baserat på datamängder på andra arbetsytor. Om du vill skapa en rapport ovanpå en befintlig datamängd kan du starta från Power BI Desktop eller Power BI-tjänsten i Min arbetsyta eller i en [ny arbetsytefunktion](../collaborate-share/service-create-the-new-workspaces.md).
 
@@ -61,5 +61,5 @@ Det finns två olika typer av rekommenderade datamängder. Datamängdsägare kan
 
 ## <a name="next-steps"></a>Nästa steg
 
-- [Använda datamängder mellan arbetsytor (förhandsversion)](service-datasets-across-workspaces.md)
+- [Använda datamängder på arbetsytor](service-datasets-across-workspaces.md)
 - Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)

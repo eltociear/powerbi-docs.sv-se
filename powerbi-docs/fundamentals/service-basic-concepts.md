@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 11/14/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 0620ca7373f247cf5475f43ddaceb69ded60bc59
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: bcd5713b2ee7f053448718bc5dd93c24b0d53de6
+ms.sourcegitcommit: 2cb249fc855e369eed1518924fbf026d5ee07eb1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83358448"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83813886"
 ---
 # <a name="basic-concepts-for-designers-in-the-power-bi-service"></a>Grundläggande begrepp för designers i Power BI-tjänsten
 
@@ -29,7 +29,7 @@ Om du inte ännu har egna rapporter kan du prova att installera ett [exempel fö
 När du öppnar Power BI-tjänsten i en webbläsare kommer du till din startskärm. De olika delarna i vyn är följande:
 
 1. Navigeringsfönster
-2. Startprogram för Office 365-app
+2. Microsoft 365-appstartprogram
 3. Power BI-hemknapp
 4. Ikonknappar, bland annat inställningar, hjälp och feedback
 5. Sökruta
@@ -106,7 +106,7 @@ Nu går vi vidare till nästa avsnitt – rapporter.
 * [Exempel på datauppsättningar för Power BI](../create-reports/sample-datasets.md)
 
 ## <a name="reports"></a>Rapporter
-En Power BI-rapport är en eller flera sidor med visualiseringar som linjediagram, kartor och trädkartor. Visualiseringar kallas även **_visuella objekt_** . Alla visualiseringar i en rapport kommer från en enda datauppsättning. Du kan skapa rapporter från grunden i Power BI eller importera dem med instrumentpaneler som kollegor delar med dig. Alternativt kan Power BI skapa dem när du ansluter till datamängder från Excel, Power BI Desktop, databaser och SaaS-program.  När du ansluter till en Excel-arbetsbok med Power View-blad, skapar Power BI en rapport baserad på dessa blad. Och när du ansluter till ett SaaS-program, importerar Power BI en förskapad rapport.
+En Power BI-rapport är en eller flera sidor med visualiseringar som linjediagram, kartor och trädkartor. Visualiseringar kallas även **_visuella objekt_**. Alla visualiseringar i en rapport kommer från en enda datauppsättning. Du kan skapa rapporter från grunden i Power BI eller importera dem med instrumentpaneler som kollegor delar med dig. Alternativt kan Power BI skapa dem när du ansluter till datamängder från Excel, Power BI Desktop, databaser och SaaS-program.  När du ansluter till en Excel-arbetsbok med Power View-blad, skapar Power BI en rapport baserad på dessa blad. Och när du ansluter till ett SaaS-program, importerar Power BI en förskapad rapport.
 
 Det finns två lägen för att visa och interagera med rapporter: *Läsvyn* och *redigeringsvyn*. När du öppnar en rapport öppnas den i läsvyn. Om du har redigeringsbehörigheter visas **Redigera rapport** i det övre vänstra hörnet, och du kan visa rapporten i redigeringsvyn.  Om en rapport finns på en arbetsyta kan alla med rollen *administratör*, *medlem* eller *deltagare* redigera den. De har tillgång till alla funktioner i redigeringsvyn för att utforska, designa, skapa och dela för den rapporten. De personer som de delar rapporten med kan utforska och interagera med rapporten i läsvyn.   
 
@@ -228,8 +228,8 @@ Lägg märke till ”C”-ikonen efter instrumentpanelsrubriken. Den här instru
 
 ![Ikon för dataklassificering](media/service-basic-concepts/power-bi-title.png)
 
-### <a name="6-office-365-app-launcher"></a>6. **Startprogram för Office 365-app**
-Med appstartprogrammet är alla dina Office 365-appar enkelt tillgängliga med ett enda klick. Härifrån kan du snabbt starta din e-post, dina dokument, din kalender och annat.
+### <a name="6-microsoft-365-app-launcher"></a>6. **Microsoft 365-appstartprogram**
+Med appstartprogrammet är alla dina Microsoft 365-appar enkelt tillgängliga med ett enda klick. Härifrån kan du snabbt starta din e-post, dina dokument, din kalender och annat.
 
 ![Office-appstartprogram](media/service-basic-concepts/power-bi-waffle.png)
 

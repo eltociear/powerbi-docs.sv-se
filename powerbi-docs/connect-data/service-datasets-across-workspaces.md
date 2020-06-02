@@ -1,22 +1,22 @@
 ---
-title: Introduktion till datamängder mellan arbetsytor (förhandsversion)
+title: Introduktion till datamängder på olika arbetsytor
 description: Lär dig hur du delar en datamängd med användare i organisationen. De kan sedan skapa rapporter baserat på din datamängd på sina egna arbetsytor.
 author: maggiesMSFT
-ms.reviewer: chbraun
+ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/01/2019
+ms.date: 04/30/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 3fe0478a7fa570b4d88f4493c4b27fec083041ae
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 0458498b5677f20bac3a2e50f884d820ef1c3648
+ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83285473"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83793637"
 ---
-# <a name="intro-to-datasets-across-workspaces-preview"></a>Introduktion till datamängder mellan arbetsytor (förhandsversion)
+# <a name="intro-to-datasets-across-workspaces"></a>Introduktion till datamängder på olika arbetsytor
 
 Business Intelligence är en samarbetsinriktad aktivitet. Det är viktigt att upprätta standardiserade datamängder som kan utgöra ”den enda källan till sanning”. Det viktigaste är att upptäcka och återanvända dessa standardiserade datamängder. När experter på datamodellering i din organisation skapar och delar optimerade datamängder kan rapportskapare börja med de datamängderna för att skapa korrekta rapporter. Sedan har organisationen konsekventa data för beslutsfattande och en välfungerande datakultur.
 
@@ -33,9 +33,9 @@ Skapandet av rapporter baserat på datamängder på olika arbetsytor, och kopier
 - I Power BI Desktop kan du publicera Live Connect-rapporter till olika arbetsytor förutsatt att deras datamängder finns på arbetsytor med den nya arbetsytefunktionen.
 - Vid kopiering av rapporter mellan arbetsytor behöver målarbetsytan vara en arbetsyta med den nya arbetsytefunktionen.
 
-## <a name="discover-datasets-preview"></a>Upptäcka datamängder (förhandsversion)
+## <a name="discover-datasets"></a>Upptäcka datamängder
 
-När en rapport skapas ovanpå en befintlig datamängd är det första steget att ansluta till datamängden via antingen Power BI-tjänsten eller Power BI Desktop. Läs avsnittet om att [upptäcka datamängder från olika arbetsytor (förhandsversion)](service-datasets-discover-across-workspaces.md)
+När en rapport skapas ovanpå en befintlig datamängd är det första steget att ansluta till datamängden via antingen Power BI-tjänsten eller Power BI Desktop. Läs avsnittet om att [upptäcka datamängder från olika arbetsytor](service-datasets-discover-across-workspaces.md)
 
 ## <a name="copy-a-report"></a>Kopiera en rapport
 

@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/17/2019
 ms.author: kfollis
-ms.openlocfilehash: 690f69f584b4b185929ad465cf4ddd75e26c1011
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 3ec6e3f060b495efd6b961a7a16d8e1cf68f44c9
+ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83131617"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84120627"
 ---
 # <a name="power-bi-pro-and-power-bi-premium-support-options"></a>Supportalternativ för Power BI Pro och Power BI Premium
 
@@ -24,7 +24,7 @@ Den här artikeln beskriver de supportalternativ som är tillgängliga för kund
 | **Community-support**: Webbforum för användare för att få hjälp av andra användare, vägledning och bästa praxis med svar som tillhandahålls av en global community med Power BI-experter och Microsoft-anställda. | X |   |   | Ingen, engagemang tillhandahålls som bästa möjliga. | [Power BI Community](https://community.powerbi.com) |
 | **Power BI Pro slutanvändarsupport**: Grundläggande teknisk support för slutanvändare som skapar och använder innehåll i Power BI. | X |   |   | En arbetsdag. | [Power BI supportwebbplats](https://support.powerbi.com)  |
 | **Power BI Premium administratörssupport**: Teknisk support för administratörer som distribuerar och driver Power BI Premium-funktioner. | X |   |   | En arbetsdag eller en timme, beroende på allvarlighetsgrad.\* | [Power BI supportwebbplats](https://support.powerbi.com)<br>OR<br>[Administrationscenter för Microsoft 365](https://portal.office.com/adminportal)<br>OR<br> Telefon |
-| **Power BI administratörssupport**: Teknisk support och faktureringssupport för administratörer av Power BI-distributioner på sina organisationer.  Om du vill använda det här alternativet måste du vara företagsadministratör för Azure Active Directory, global administratör för Office 365, tjänstadministratör för Office 365 eller Power BI-tjänstadministratör. | X | X |   | En arbetsdag eller en timme, beroende på allvarlighetsgrad.\* | [Administrationscenter för Microsoft 365](https://portal.office.com/adminportal)<br>OR<br> Telefon |
+| **Power BI administratörssupport**: Teknisk support och faktureringssupport för administratörer av Power BI-distributioner på sina organisationer.  Om du vill använda det här alternativet måste du vara företagsadministratör, global administratör, tjänstadministratör för Office 365 eller Power BI-tjänstadministratör. | X | X |   | En arbetsdag eller en timme, beroende på allvarlighetsgrad.\* | [Administrationscenter för Microsoft 365](https://portal.office.com/adminportal)<br>OR<br> Telefon |
 | **Microsoft Premier Support**: Support i företagsklass med kontohantering, alternativ för support på plats och proaktiva tjänster, till exempel utbildning och prestandaoptimering av datamodeller. | X | X | X | Varierar beroende på erbjudande och allvarlighetsgrad.\* | Technical Account Manager <br>OR<br> [Administrationscenter för Microsoft 365](https://portal.office.com/adminportal) |
 | | | | | | |
 

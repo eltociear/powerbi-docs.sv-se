@@ -6,16 +6,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/27/2020
+ms.date: 05/12/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: b08184e92730bd3a42a91424883d07cecec82549
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: 605d35d55f3191b230d9c4a8d118e2c238283ff2
+ms.sourcegitcommit: c1f05254eaf5adb563f8d4f33c299119134c7d1f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83564482"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83733608"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administrera Power BI i Admin-portalen
 
@@ -356,6 +356,16 @@ Användare i organisationen kan använda ArcGIS Maps for Power BI-visualiseringe
 ### <a name="use-global-search-for-power-bi-preview"></a>Använda global sökning för Power BI (förhandsversion)
 
 Användare i organisationen kan använda externa sökfunktioner som förlitar sig på Azure Search.
+
+## <a name="featured-tables-settings"></a>Aktuella tabellinställningar
+
+Under **Klientinställningar** kan Power BI-administratörer med hjälp av klientinställningen **Tillåt anslutningar till aktuella tabeller** styra vem i organisationen som kan använda aktuella tabeller i galleriet för Excel-datatyper. 
+
+:::image type="content" source="media/service-admin-portal/admin-allow-connections-featured-tables.png" alt-text="Alla anslutningar till aktuella tabeller":::
+
+Anslutningar till aktuella tabeller inaktiveras också om klientinställningen **Exportera data** är inställd på **Inaktiverad**.
+
+Läs mer om [aktuella Power BI-tabeller i Excel](../collaborate-share/service-excel-featured-tables.md).
 
 ## <a name="power-bi-visuals-settings"></a>Inställningar för visuella Power BI-objekt
 

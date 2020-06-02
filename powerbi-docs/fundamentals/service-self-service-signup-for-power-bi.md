@@ -6,19 +6,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/27/2020
+ms.date: 05/20/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 721479910a430bb04dc6404936b37fbb00a2c5a8
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: cbc89e5f428e13cce35a1d293752091958d82496
+ms.sourcegitcommit: 2cb249fc855e369eed1518924fbf026d5ee07eb1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83361990"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83813840"
 ---
 # <a name="sign-up-for-the-power-bi-service-as-an-individual"></a>Registrera dig själv som enskild individ för Power BI-tjänsten
 
-Power BI kan vara ditt personliga verktyg för dataanalys och visualisering, och det kan även fungera som analys- och beslutsmotor för grupprojekt, avdelningar eller hela företag. I den här artikeln förklaras hur du registrerar dig för Power BI som enskild individ. Om du är Power BI-administratör eller global administratör kan du läsa [Behörigheter för administratörsrollen i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
+Power BI kan vara ditt personliga verktyg för dataanalys och visualisering, och det kan även fungera som analys- och beslutsmotor för grupprojekt, avdelningar eller hela företag. I den här artikeln förklaras hur du registrerar dig för Power BI som enskild individ. Om du är global administratör eller faktureringsadministratör kan du läsa mer i [Power BI-licensiering för din organisation](../admin/service-admin-licensing-organization.md).
 
 ## <a name="what-is-power-bi"></a>Vad är Power BI?
 Power BI är en enhetlig självbetjänings- och Enterprise Business Intelligence-plattform som kombinerar en intuitiv användarupplevelse med intelligenta datavisualiseringar som ger djupare datainsikter. Rapporter kan delas i Microsoft-verktyg som Teams, SharePoint, PowerPoint eller inom andra produktivitetsprodukter. Det erbjuds som en online-SaaS (programvara som en tjänst) med två medföljande program: ett Microsoft Windows-skrivbordsprogram som kallas Power BI Desktop för att skapa rapporter, och interna mobila BI-appar för att läsa rapporter på iOS- och Android-enheter. 
@@ -74,7 +74,7 @@ De exakta stegen för registrering kan variera beroende på din organisation och
 
        ![Kom igång](media/service-self-service-signup-for-power-bi/power-bi-did-you.png)
    
-    - Om du får ett meddelande som detta godkänner du villkoren.
+    - Om du får ett meddelande som detta läser du villkoren. Om du samtycker väljer du **Start**. 
 
         ![Kom igång](media/service-self-service-signup-for-power-bi/power-bi-almost.png)
 
@@ -91,7 +91,7 @@ Grattis till att ha loggat in på ditt Power BI-konto för första gången! Nu h
 
 ![Dialogruta för Power BI-utvärderingsversion](media/service-self-service-signup-for-power-bi/power-bi-start-trial.png)    
 
-<sup>2</sup> I vissa organisationer kan ditt Power BI-standardkonto vara en Power BI **Pro**-licens. Till exempel innehåller vissa versioner av Office 365 en Power BI Pro-licens. Information om hur du söker efter användarlicensen finns i [Vilken licens har jag?](../consumer/end-user-license.md)
+<sup>2</sup> I vissa organisationer kan ditt Power BI-standardkonto vara en Power BI **Pro**-licens. Till exempel innehåller vissa versioner av Microsoft 365 en Power BI Pro-licens. Information om hur du söker efter användarlicensen finns i [Vilken licens har jag?](../consumer/end-user-license.md)
 
 
 
@@ -112,13 +112,13 @@ I de flesta fall kan du registrera dig för Power BI genom att följa processen 
 | Symtom/felmeddelande | Orsak och lösning |
 | ----------------------- | -------------------- |
 | <strong>Personliga e-postadresser (till exempel nancy@gmail.com)</strong> Du får ett meddelande som liknar detta under registreringen: <br /><br /> *Du angav en personlig e-postadress: Ange din e-postadress till arbetet, så vi kan lagra företagets data på ett säkert sätt.* <br /><br /> eller <br /><br /> *Det där ser ut som en personlig e-postadress. Ange din adress till arbetet så att vi kan ansluta dig till andra i företaget. Oroa dig inte. Vi kommer inte att dela din adress med någon annan.* | Power BI stöder inte e-postadresser som tillhandahålls av e-posttjänster för konsumenter eller telekommunikationsleverantörer. <br /><br /> Försök att slutföra registreringen igen med en e-postadress som tilldelats av ditt arbete eller din skola. <br /><br /> Om du ändå inte kan registrera dig och är villig att genomföra en mer avancerad konfigurationsprocess, så kan du [registrera dig för en ny Office 365-utvärderingsprenumeration och använda den e-postadressen för att registrera dig](../admin/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md). <br /><br /> En befintlig användare kan även [bjuda in dig som gäst](../admin/service-admin-azure-ad-b2b.md). |
-| **Självbetjäningsregistreringen är inaktiverad**: Du får ett meddelande som liknar detta under registreringen: <br /><br /> *Vi kan inte slutföra din registrering. IT-avdelningen har inaktiverat registrering för Microsoft Power BI. Kontakta dem så att du kan slutföra registreringen.* <br /><br /> | Din organisations [globala administratör](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles.md) har inaktiverat självbetjäningsregistrering för Power BI. <br /><br /> Slutför registreringen genom att kontakta den globala administratören och be dem [följa instruktionerna för att aktivera registreringen](../admin/service-admin-disable-self-service.md). <br/><br/> Det här problemet kan också uppstå om du har registrerat dig för Office 365 via en partner. I så fall kontaktar du den person inom organisationen som ansvarar för att förse dig med Office 365. |
-| **E-postadressen är inte ett ID för Office 365** Du får ett meddelande som liknar detta under registreringen: <br /><br /> *Vi hittar dig inte på contoso.com.  Använder du ett annat ID i arbetet eller skolan? <br /><br />Prova med att logga in med det, och om detta inte fungerar kan du kontakta IT-avdelningen.* | Din organisation använder ID:n som skiljer sig från din e-postadress för att logga in på Office 365 och andra Microsoft-tjänster.  Din e-postadress kan t.ex. vara Nancy.Smith@contoso.com, medan ditt ID är nancys@contoso.com. <br /><br /> Slutför registreringen med det ID som organisationen har tilldelat dig för att logga in i Office 365 och andra Microsoft-tjänster.  Om du inte känner till det kan du kontakta den globala administratören. <br /><br /> Om du ändå inte kan registrera dig och är villig att genomföra en mer avancerad konfigurationsprocess, så kan du [registrera dig för en ny Office 365-utvärderingsprenumeration och använda den e-postadressen för att registrera dig](../admin/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md). |
+| **Självbetjäningsregistreringen är inaktiverad**: Du får ett meddelande som liknar detta under registreringen: <br /><br /> *Vi kan inte slutföra din registrering. IT-avdelningen har inaktiverat registrering för Microsoft Power BI. Kontakta dem så att du kan slutföra registreringen.* <br /><br /> | Din organisations [globala administratör](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles.md) har inaktiverat självbetjäningsregistrering för Power BI. <br /><br /> Slutför registreringen genom att kontakta den globala administratören och be dem [följa instruktionerna för att aktivera registreringen](../admin/service-admin-disable-self-service.md). <br/><br/> Det här problemet kan också uppstå om du har registrerat dig för Microsoft 365 via en partner. I så fall kontaktar du den person inom organisationen som ansvarar för att förse dig med Microsoft 365. |
+| **E-postadressen är inte ett ID för Microsoft 365** Du får ett meddelande som liknar detta under registreringen: <br /><br /> *Vi hittar dig inte på contoso.com.  Använder du ett annat ID i arbetet eller skolan? <br /><br />Prova med att logga in med det, och om detta inte fungerar kan du kontakta IT-avdelningen.* | Din organisation använder ID:n som skiljer sig från din e-postadress för att logga in på Microsoft 365 och andra Microsoft-tjänster.  Din e-postadress kan t.ex. vara Nancy.Smith@contoso.com, medan ditt ID är nancys@contoso.com. <br /><br /> Slutför registreringen med det ID som organisationen har tilldelat dig för att logga in i Microsoft 365 och andra Microsoft-tjänster.  Om du inte känner till det kan du kontakta den globala administratören. <br /><br /> Om du ändå inte kan registrera dig och är villig att genomföra en mer avancerad konfigurationsprocess, så kan du [registrera dig för en ny Office 365-utvärderingsprenumeration och använda den e-postadressen för att registrera dig](../admin/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md). |
 Power BI-inloggningen känner inte igen ditt lösenord  |  Ibland tar det några försök. Om du gör ett nytt försök med ditt lösenord flera gånger och du fortfarande inte kan logga in, kan du prova att köra webbläsaren i Incognito-läge (Chrome) eller InPrivate (Edge).
 
 ## <a name="next-steps"></a>Nästa steg
 
-[Köp Power BI Pro](../admin/service-admin-purchasing-power-bi-pro.md)  
-[Power BI-serviceavtal för enskilda användare](https://powerbi.microsoft.com/terms-of-service/)  
+[Power BI-funktioner efter licenstyp](../consumer/end-user-features.md)    
+[Tips för att hitta hjälp](../fundamentals/service-tips-for-finding-help.md)    
 
 Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

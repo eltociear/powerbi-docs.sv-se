@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/05/2019
+ms.date: 05/26/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 45229edbc6ed2c9e9c4618d44b4b74e42d0037b8
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 9df00079488b248f2e5bab52395a637e37045a24
+ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83274614"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84119978"
 ---
 # <a name="configure-multi-geo-support-for-power-bi-premium"></a>Konfigurera Multi-Geo-stöd för Power BI Premium
 
@@ -22,7 +22,7 @@ Multi-Geo är en Power BI Premium-funktion som hjälper multinationella kunder a
 
 - USA
 - Kanada
-- Storbritannien och Nordirland
+- Storbritannien
 - Brasilien
 - Europa
 - Japan
@@ -43,7 +43,7 @@ Aktivera Multi-Geo genom att välja en annan region än standardregion i listrut
 
 När du har skapat en kapacitet finns den kvar i den regionen, och alla arbetsytor som skapats får sitt innehåll sparat i den regionen. Du kan migrera arbetsytor från en region till en annan via listrutan på skärmen för arbetsyteinställningar.
 
-![Redigera arbetsyta: välj en tillgänglig kapacitet. Power BI med Multi-Geo](media/service-admin-premium-multi-geo/power-bi-multi-geo-edit-workspace.png)
+![Redigera arbetsyta: Välj en tillgänglig kapacitet. Power BI med Multi-Geo](media/service-admin-premium-multi-geo/power-bi-multi-geo-edit-workspace.png)
 
 Det här meddelandet visas så att du kan bekräfta ändringen.
 
@@ -67,6 +67,8 @@ De här objekten finns kvar i klientorganisationens hemregion:
 - Service Bus för gatewayfrågor eller schemalagda uppdateringsjobb
 - Behörigheter
 - Autentiseringsuppgifter för datauppsättning
+
+
 
 ## <a name="view-capacity-regions"></a>Visa kapacitetsregioner
 
@@ -93,6 +95,7 @@ Du kan ta bort arbetsytor från Multi-Geo-kapaciteten på något av följande tv
 - Bekräfta att varje förflyttning du upprättar mellan regioner följer alla företags- och myndighetskrav innan du påbörjar dataöverföringen.
 - En cachelagrad fråga som lagras i en avlägsen region kvar i den regionen i vila. Andra data under överföring kan dock flyttas fram och tillbaka mellan flera geografiska områden.
 - När du flyttar data från en region till en annan i en Multi-Geo-miljö kan källdata finnas kvar i upp till 30 dagar i den region från vilken data har flyttats. Under den tiden har slutanvändare inte åtkomst till den. Den tas bort från den här regionen och förstörs under 30-dagarsperioden.
+- Trafik för frågetext och frågeresultat för importerade datamodeller överförs inte via hemregionen. Rapportens metadata kommer fortfarande från den fjärranslutna regionen och vissa DNS-routningar kan ta trafik ut från regionen. 
 
 - Funktionen för [dataflöden](../transform-model/service-dataflows-overview.md) stöds inte med Multi-GEO just nu.
 
@@ -101,5 +104,5 @@ Du kan ta bort arbetsytor från Multi-Geo-kapaciteten på något av följande tv
 - [Vad är Power BI Premium?](service-premium-what-is.md)
 - [Multi-Geo för Power BI Embedded-kapaciteter](../developer/embedded/embedded-multi-geo.md)
 
-Fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 

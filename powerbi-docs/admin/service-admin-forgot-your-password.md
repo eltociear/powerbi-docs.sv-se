@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/13/2019
 ms.author: kfollis
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 7f5f24273b05666098376a2ef04a5dcaada6461b
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: b2743fee2c681f0923d243304ea8f44b45ee3e17
+ms.sourcegitcommit: 2cb249fc855e369eed1518924fbf026d5ee07eb1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83139811"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83812161"
 ---
 # <a name="forgot-your-password-for-power-bi"></a>Har du glömt lösenordet till Power BI?
 
@@ -22,7 +22,7 @@ Om du har glömt ditt lösenord, kan du använda följande länk för att begär
 
 <https://passwordreset.microsoftonline.com>
 
-Om du får ett meddelande om att ditt konto inte har konfigurerats för lösenordsåterställning kontaktar du din Office 365-administratör. Om du använder den kostnadsfria utvärderingsversionen är administratören den första personen inom organisationen som registrerade sig.
+Om du får ett meddelande om att ditt konto inte har konfigurerats för lösenordsåterställning kontaktar du din administratör. Om du använder den kostnadsfria utvärderingsversionen är administratören den första personen inom organisationen som registrerade sig.
 
 Om du fortfarande har problem med att komma åt ditt konto kan du prova att kontakta supportteamet för att få en lösenordsåterställning.
 

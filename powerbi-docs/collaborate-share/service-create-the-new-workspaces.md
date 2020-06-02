@@ -6,32 +6,35 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/07/2020
+ms.date: 05/26/2020
 ms.author: maggies
+ms.custom: contperfq4
 LocalizationGroup: Share your work
-ms.openlocfilehash: 700b9a5dffc3abff00fb2ea738d0517a676a689b
-ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
+ms.openlocfilehash: edc06d7a46589c999e4bf18613c0c75f6d5bf983
+ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "83693758"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84120610"
 ---
 # <a name="create-the-new-workspaces-in-power-bi"></a>Skapa de nya arbetsytorna i Power BI
 
-Power BI introducerar en ny miljö för arbetsytor. Arbetsytor är fortfarande platser för samarbete med kollegor för att skapa samlingar med instrumentpaneler, rapporter och sidnumrerade rapporter. Du kan sedan paketera samlingarna i *appar* och distribuera dem till hela organisationen eller till vissa personer eller grupper.
+Den här artikeln beskriver hur du skapar en *ny arbetsyta* istället för en *klassisk arbetsyta*. Båda typer av arbetsytor är platser för samarbete kollegor emellan. Här skapar du samlingar av instrumentpaneler, rapporter och sidnumrerade rapporter. Om du vill kan du även paketera samlingen i en *app* och distribuera den till en bredare publik.
 
-Detta har ändrats. Med de nya arbetsytorna kan du:
+Så här skiljer sig de nya arbetsytorna från den gamla. Med de nya arbetsytorna kan du:
 
-- Tilldela arbetsyteroller till användargrupper: säkerhetsgrupper, distributionslistor, Microsoft 365-grupper och enskilda användare.
+- Tilldela arbetsytans roller till användargrupper och individer.
 - Skapa en arbetsyta i Power BI utan att skapa en Microsoft 365-grupp.
-- Använda mer detaljerade arbetsyteroller för mer flexibel hantering av behörigheter på en arbetsyta.
+- Använda mer detaljerade arbetsyteroller för mer flexibel hantering av behörigheter.
 
-Är du redo att migrera den klassiska arbetsytan? Mer information finns i [Uppgradera klassiska arbetsytor till de nya arbetsytorna i Power BI](service-upgrade-workspaces.md).
+:::image type="content" source="media/service-create-the-new-workspaces/power-bi-workspace-sales-marketing.png" alt-text="Exempelarbetsytan Försäljning och marknadsföring":::
+
+Mer bakgrundsinformation finns i artikeln om [nya arbetsytor](service-new-workspaces.md).
+
+Är du redo för att migrera den klassiska arbetsytan? Mer information finns i [Uppgradera klassiska arbetsytor till de nya arbetsytorna i Power BI](service-upgrade-workspaces.md).
 
 > [!NOTE]
 > Om du vill inför säkerhet på radnivå (RLS) för Power BI Pro-användare som bläddrar i innehållet i en arbetsyta, kan du tilldela användarna läsarrollen.
-
-Mer bakgrundsinformation finns i artikeln om [nya arbetsytor](service-new-workspaces.md).
 
 ## <a name="create-one-of-the-new-workspaces"></a>Skapa en av de nya arbetsytorna
 
@@ -43,21 +46,19 @@ Mer bakgrundsinformation finns i artikeln om [nya arbetsytor](service-new-worksp
    
      ![Ny arbetsyteupplevelse](media/service-create-the-new-workspaces/power-bi-new-workspace.png)
      
-     Om du väljer **återgå till klassiskt**skapar du en [arbetsyta som baseras på en Microsoft 365-grupp](service-create-workspaces.md). 
+     Om du väljer **Återgå till klassiskt** skapar du en [ klassisk arbetsyta](service-create-workspaces.md) som baseras på en Microsoft 365-grupp.
 
-2. Ge arbetsytan ett namn. Om namnet inte är tillgängligt kan du redigera det för att få fram ett unikt namn.
+2. Ge arbetsytan ett unikt namn. Om namnet inte är tillgängligt kan du redigera det för att få fram ett unikt namn.
    
-     Appen för arbetsytan kommer att ha samma namn och ikon som arbetsytan.
+     Appen som du skapar från arbetsytan kommer att ha samma namn och ikon som arbetsytan.
    
 1. Här följer några valfria objekt som du kan ställa in för din arbetsyta:
 
     Överför en **arbetsytebild**. Filerna kan vara i .png- eller .jpg-format. Filstorleken måste vara mindre än 45 KB.
     
-    [Lägg till en **Kontaktlista**](#workspace-contact-list). Som standard är arbetsytans administratörer kontakter. 
+    [Lägg till en **Kontaktlista**](#create-a-contact-list). Som standard är arbetsytans administratörer kontakter. 
     
-    [Ange en **OneDrive för arbetsytan**](#workspace-onedrive) genom att endast skriva namnet på en befintlig Microsoft 365-grupp, inte URL:en. Nu kan den här arbetsytan använda Microsoft 365-gruppens fillagringsplats.
-
-    ![Ange en OneDrive-plats](media/service-create-the-new-workspaces/power-bi-new-workspace-onedrive.png)
+    [Ange en **OneDrive för arbetsyta**](#set-a-workspace-onedrive) om du vill använda en Microsoft 365-grupplagringsplats för filer. 
 
     Om du vill tilldela arbetsytan till en **Dedikerad kapacitet** går du till fliken **Premium** och väljer **Dedikerad kapacitet**.
      
@@ -67,9 +68,9 @@ Mer bakgrundsinformation finns i artikeln om [nya arbetsytor](service-new-worksp
 
     Power BI skapar arbetsytan och öppnar den. Den visas i listan med arbetsytor som du är medlem i. 
 
-## <a name="workspace-contact-list"></a>Arbetsytans kontaktlista
+## <a name="create-a-contact-list"></a>Skapa en kontaktlista
 
-Du kan ange vilka användare som ska informeras om problem som uppstår i arbetsytan. Som standard informeras alla användare och grupper som angetts som arbetsyteadministratör, men du kan anpassa listan genom att lägga till dem i *kontaktlista*. Användare eller grupper som finns med i kontaktlistan visas i användargränssnittet för att hjälpa användarna att få hjälp med arbetsytan.
+Du kan ange vilka användare som ska informeras om problem som uppstår i arbetsytan. Som standard informeras alla användare och grupper som angetts som arbetsyteadministratör men du kan lägga till andra personer i *kontaktlistan*. Användare eller grupper som finns med i kontaktlistan visas i användargränssnittet för att hjälpa användarna att få hjälp med arbetsytan.
 
 1. Få åtkomst till den nya inställningen **Kontaktlista** på ett av två sätt:
 
@@ -85,11 +86,11 @@ Du kan ange vilka användare som ska informeras om problem som uppstår i arbets
 
 3. Välj **Spara**.
 
-## <a name="workspace-onedrive"></a>Arbetsytans OneDrive
+## <a name="set-a-workspace-onedrive"></a>Konfigurera arbetsytans OneDrive
 
-Med arbetsytans OneDrive-funktion kan du konfigurera en Microsoft 365-grupp vars fillagring för SharePoint-dokumentbiblioteket är tillgänglig för arbetsyteanvändarna. Du skapar gruppen först utanför Power BI.
+Med arbetsytans OneDrive-funktion kan du konfigurera en Microsoft 365-grupp vars fillagring för SharePoint-dokumentbiblioteket är tillgänglig för arbetsyteanvändarna. Du skapar gruppen först utanför Power BI. 
 
-Power BI synkroniserar inte behörigheter för användare eller grupper, som är konfigurerade med arbetsyteåtkomst, med Microsoft 365-gruppmedlemskapet. Det bästa sättet är att ge den Microsoft 365-grupp vars fillagring du konfigurerar i den här inställningen [åtkomst till arbetsytan](#give-access-to-your-workspace). Hantera sedan åtkomst till arbetsytan genom att hantera medlemskap i Microsoft 365-gruppen.
+Power BI synkroniserar inte behörigheter för användare eller grupper, som är konfigurerade med arbetsyteåtkomst, med Microsoft 365-gruppmedlemskapet. Det bästa sättet är att ge den Microsoft 365-grupp vars fillagring du konfigurerar i den här inställningen för Microsoft 365-gruppen [åtkomst till arbetsytan](#give-access-to-your-workspace). Hantera sedan åtkomst till arbetsytan genom att hantera medlemskap i Microsoft 365-gruppen. 
 
 1. Öppna den nya **OneDrive**-inställningen för arbetsytan på något av följande två sätt:
 
@@ -99,7 +100,7 @@ Power BI synkroniserar inte behörigheter för användare eller grupper, som är
 
     ![Arbetsyteinställningar](media/service-create-the-new-workspaces/power-bi-workspace-new-settings.png)
 
-2. Under **Avancerat** > **OneDrive för arbetsytan** anger du namnet på den Microsoft 365-grupp som du skapade tidigare. Power BI hämtar automatiskt OneDrive för gruppen.
+2. Under **Avancerat** > **OneDrive för arbetsytan** anger du namnet på den Microsoft 365-grupp som du skapade tidigare. Skriv bara namnet, inte webbadressen. Power BI hämtar automatiskt OneDrive för gruppen.
 
     ![Ange en OneDrive-plats](media/service-create-the-new-workspaces/power-bi-new-workspace-onedrive.png)
 
@@ -117,19 +118,21 @@ När du har konfigurerat OneDrive-platsen kommer du till den på samma sätt som
 
     ![Plats för arbetsytans filer – hämta data](media/service-create-the-new-workspaces/power-bi-new-workspace-get-data-onedrive.png)
 
-### <a name="connecting-to-third-party-services-in-new-workspaces"></a>Anslut till tjänster från tredje part i nya arbetsytor
+### <a name="connect-to-apps-in-new-workspaces"></a>Ansluta till appar i nya arbetsytor
 
-I de nya arbetsytorna gör vi en ändring för att fokusera på *appar*. Appar för tjänster från tredje part gör det enkelt för användare att hämta data från de tjänster som de använder, till exempel Microsoft Dynamics CRM, Salesforce eller Google Analytics.
+Den nya arbetsytan skapar och använder *appar* i stället för innehållspaket. Appar är samlingar av instrumentpaneler, rapporter och datauppsättningar som ansluter till tjänster från tredje part och organisationsdata. Appar gör det enkelt att hämta data från tjänster, till exempel Microsoft Dynamics CRM, Salesforce och Google Analytics.
 
-Med de nya arbetsytorna kan du inte skapa eller använda innehållspaket för organisationen. Du kan i stället använda de appar som tillhandahålls för att ansluta till tjänster från tredje part eller be att dina egna team tillhandahåller appar för eventuella innehållspaket som du använder. 
+Med de nya arbetsytorna kan du inte skapa eller använda innehållspaket för organisationen. Be dina interna team att tillhandahålla appar för alla innehållspaket som du använder just nu. 
 
 ## <a name="give-access-to-your-workspace"></a>Ge åtkomst till din arbetsyta
 
-1. Eftersom du är administratör ser du en ny åtgärd, **åtkomst**, på arbetsytans innehållslista.
+Alla som har en administratörsroll i en arbetsyta kan ge åtkomst till arbetsytan till andra.
+
+1. Eftersom du är administratör ser du **Åtkomst**, på arbetsytans innehållslista.
 
     ![Innehållslista för arbetsytor](media/service-create-the-new-workspaces/power-bi-workspace-access-icon.png)
 
-1. Lägg till säkerhetsgrupper, distributionslistor, Microsoft 365-grupper eller enskilda användare i dessa arbetsytor som tittare, medlemmar, deltagare eller administratörer. En förklaring av de olika rollerna finns i [Roller i de nya arbetsytorna](service-new-workspaces.md#roles-in-the-new-workspaces).
+1. Lägg till säkerhetsgrupper, distributionslistor, Microsoft 365-grupper eller enskilda användare i dessa arbetsytor som administratörer, medlemmar, deltagare eller tittare. En förklaring av de olika rollerna finns i [Roller i de nya arbetsytorna](service-new-workspaces.md#roles-in-the-new-workspaces).
 
     ![Lägga till medlemmar, administratörer och deltagare i arbetsytor](media/service-create-the-new-workspaces/power-bi-workspace-add-members.png)
 
@@ -138,9 +141,9 @@ Med de nya arbetsytorna kan du inte skapa eller använda innehållspaket för or
 
 ## <a name="distribute-an-app"></a>Distribuera en app
 
-Om du vill distribuera officiellt innehåll till en stor målgrupp i din organisation kan du publicera en app från din arbetsyta.  När innehållet är färdigt kan du välja vilka instrumentpaneler och rapporter som du vill publicera och sedan publicera det som en *app*. Du kan skapa en app från varje arbetsyta.
+Om du vill distribuera officiellt innehåll till en stor målgrupp i din organisation kan du publicera en *app* från din arbetsyta.  När innehållet är färdigt kan du välja vilka instrumentpaneler och rapporter som du vill publicera och sedan publicera det som en app. Du kan skapa en app från varje arbetsyta.
 
-Läs om att [publicera en app från de nya arbetsytorna](service-create-distribute-apps.md)
+Läs om att [publicera en app från de nya arbetsytorna](service-create-distribute-apps.md).
 
 ## <a name="next-steps"></a>Nästa steg
 * Läs om att [organisera arbete i de nya arbetsytorna i Power BI](service-new-workspaces.md)

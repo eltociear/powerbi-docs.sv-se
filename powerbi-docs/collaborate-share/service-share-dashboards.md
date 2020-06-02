@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/26/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 119571e49b69ad6e3c6cfa0a7d3758912ebec0dc
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: d094e3411bd5b8bef9b4a8f488412d903723a703
+ms.sourcegitcommit: c1f05254eaf5adb563f8d4f33c299119134c7d1f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83348124"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83733564"
 ---
 # <a name="share-power-bi-dashboards-and-reports-with-coworkers-and-others"></a>Dela Power BI-instrumentpaneler och -rapporter med kollegor och andra
 *Dela* är ett bra sätt att ge ett fåtal användare åtkomst till dina instrumentpaneler och rapporter. Power BI erbjuder också [flera andra sätt att samarbeta och distribuera instrumentpaneler och rapporter på](service-how-to-collaborate-distribute-dashboards-reports.md).
@@ -127,7 +127,7 @@ Saker att tänka på när det gäller att dela instrumentpaneler och rapporter:
 * Alla som du delar din instrumentpanel med kan se den och interagera med relaterade rapporter i [läsvyn](../consumer/end-user-reading-view.md#reading-view). De kan i allmänhet inte skapa rapporter eller spara ändringar i befintliga rapporter. Men om du väljer **Låt användare skapa nytt innehåll från de underliggande datauppsättningarna** kan de skapa egna rapporter i andra arbetsytor baserat på datamängden för instrumentpanelen eller rapporten.
 * Ingen kan se eller hämta datamängden, men de kan komma åt den direkt med hjälp av funktionen Analysera i Excel. En administratör kan begränsa möjligheten att använda Analysera i Excel för alla användare i en grupp. Begränsningen gäller dock för alla användare i gruppen och för varje arbetsyta som gruppen tillhör.
 * Alla kan [uppdatera data](../connect-data/refresh-data.md) manuellt.
-* Om du använder Office 365 för e-post kan du dela med medlemmar i en distributionsgrupp genom att ange den e-postadress som är kopplad till distributionsgruppen.
+* Om du använder Microsoft 365 för e-post kan du dela med medlemmar i en distributionsgrupp genom att ange den e-postadress som är kopplad till distributionsgruppen.
 * Medarbetare som har samma e-postdomän som du, och medarbetare med en annan domän men som är registrerade inom samma klientorganisation, kan dela instrumentpanelen med andra. Låt oss t.ex. anta att domänerna contoso.com och contoso2.com har registrerats i samma klientorganisation och din e-postadress är konrads@contoso.com. Både ravali@contoso.com och gustav@contoso2.com kan dela din instrumentpanel, så länge som du ger dem behörighet att dela.
 * Om dina medarbetare redan har åtkomst till en specifik instrumentpanel eller rapport kan du skicka en direktlänk genom att kopiera URL:en när du är på instrumentpanelen eller i rapporten. Exempel: `https://powerbi.com/dashboards/g12466b5-a452-4e55-8634-xxxxxxxxxxxx`.
 * Om dina medarbetare på motsvarande sätt redan har åtkomst till en specifik instrumentpanel kan du [skicka en direktlänk till den underliggande rapporten](service-share-reports.md). 

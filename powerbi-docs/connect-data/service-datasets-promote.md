@@ -1,27 +1,27 @@
 ---
-title: Höja upp din datamängd (förhandsversion) – Power BI
+title: Höja upp din datamängd – Power BI
 description: Lär dig hur du höjer upp din datamängd för att vägleda företagsanvändare till tillförlitliga, högkvalitativa datamängder.
 author: maggiesMSFT
-ms.reviewer: chbraun
+ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/03/2019
+ms.date: 04/30/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 379249ac50f61df07c4adaffe53e0df29a311086
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 3e17b31aa75e1778e92408787a248db810d4d08d
+ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83284760"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83792979"
 ---
-# <a name="promote-your-dataset-preview"></a>Höja upp din datamängd (förhandsversion)
+# <a name="promote-your-dataset---power-bi"></a>Höja upp din datamängd – Power BI
 
 Dina Power BI-rapportskapare kan nu ha åtkomst till många olika datamängder. Därför behöver företag vägleda dem till tillförlitliga, högkvalitativa datamängder. Power BI erbjuder två sätt att *rekommendera* datamängder:
 
 - **Upphöjning**: Som datamängdsägare kan du höja upp dina egna datamängder när de är redo för generell användning. Alla medlemmar i arbetsytan med skrivbehörighet kan flytta upp en datauppsättning. Det finns inga begränsningar som kan flytta upp en datauppsättning. Upphöjning stöder en samarbetsinriktade spridningen av datamängder i organisationer. Den här artikeln handlar om att höja upp din datamängd.
-- **Certifiering**: Du kan begära certifiering för en upphöjd datamängd. En utvald grupp med användare som definieras i klientorganisationsadministratörens inställningen **Datamängdscertifiering** avgör vilka datamängder som ska certifieras. Mer information finns i [Certifiera datamängder (förhandsversion)](service-datasets-certify.md).
+- **Certifiering**: Du kan begära certifiering för en upphöjd datamängd. En utvald grupp med användare som definieras i klientorganisationsadministratörens inställningen **Datamängdscertifiering** avgör vilka datamängder som ska certifieras. Mer information finns i [Certifiera datamängder](service-datasets-certify.md).
 
 ## <a name="promote-a-dataset"></a>Höja upp en datamängd
 

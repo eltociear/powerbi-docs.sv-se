@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/31/2019
+ms.date: 05/26/2020
 ms.author: davidi
 LocalizationGroup: conceptual
-ms.openlocfilehash: 1004549c37f4bff92e4a8b1d31b3844b7cdd0f2d
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 5562271eebc10789e27f7e65c7ff96b72de43aae
+ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83330415"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84121070"
 ---
 # <a name="azure-machine-learning-integration-in-power-bi"></a>Azure Machine Learning-integrering i Power BI
 
@@ -30,6 +30,9 @@ Om du vill veta mer om Azure Machine Learning kan du läsa:
 
 - Översikt:  [Vad är Azure Machine Learning?](https://docs.microsoft.com/azure/machine-learning/service/overview-what-is-azure-ml)
 - Snabbstarter och självstudier för Azure Machine Learning:  [Dokumentation om Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/)
+
+> [!NOTE]
+> Det krävs en Power BI Premium-prenumeration för att använda Azure Machine Learning-integrering.
 
 ## <a name="granting-access-to-the-azure-ml-model-to-a-power-bi-user"></a>Bevilja åtkomst till Azure ML-modellen till en Power BI-användare
 

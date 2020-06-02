@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: ce18b3cb077e0fee2eea4d0d31327329f405a51a
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: 25b5665aa531c347d43a197b53938aec569b9d2d
+ms.sourcegitcommit: 2cb249fc855e369eed1518924fbf026d5ee07eb1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83563753"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83812184"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>Administrera Power BI – Vanliga frågor och svar
 
@@ -27,8 +27,8 @@ Den här artikeln tar upp vanliga frågor och svar för Power BI-administration.
 * [Använda PowerShell](#using-powershell)
 * [Hur registrerar sig användare för Power BI?](#how-do-users-sign-up-for-power-bi)
 * [Hur registrerar sig enskilda användare i organisationen?](#how-do-individual-users-in-my-organization-sign-up)
-* [Hur kan jag förhindra användare från att ansluta till min befintliga Office 365-klient?](#how-can-i-prevent-users-from-joining-my-existing-microsoft-365-tenant)
-* [Hur kan jag låta användare att ansluta till min befintliga Office 365-klient?](#how-can-i-allow-users-to-join-my-existing-microsoft-365-tenant)
+* [Hur kan jag förhindra användare från att ansluta till min befintliga organisation?](#how-can-i-prevent-users-from-joining-my-existing-microsoft-365-tenant)
+* [Hur kan jag låta användare att ansluta till min befintliga organisation?](#how-can-i-allow-users-to-join-my-existing-microsoft-365-tenant)
 * [Hur kontrollerar jag om klienten är blockerad?](#how-do-i-check-if-i-have-the-block-on-in-the-tenant)
 * [Hur förhindrar jag att mina befintliga användare börjar använda Power BI?](#how-can-i-prevent-my-existing-users-from-starting-to-use-power-bi)
 * [Hur låter jag mina befintliga användare registrera dig för Power BI?](#how-can-i-allow-my-existing-users-to-sign-up-for-power-bi)

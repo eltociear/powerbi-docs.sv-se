@@ -10,12 +10,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 05/05/2020
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b117bb1825e4b50e64b2af5212ed5b3a28bf6e6f
-ms.sourcegitcommit: 2cb249fc855e369eed1518924fbf026d5ee07eb1
+ms.openlocfilehash: 6e6974df9ea6ddfc2402ed4d58e2a994355d0f0b
+ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83812253"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84120194"
 ---
 # <a name="visualizations-in-power-bi-reports"></a>Visualiseringar i Power BI-rapporter
 
@@ -29,7 +29,7 @@ Många olika typer av visuella objekt är tillgängliga direkt från Power BI-f�
 
 ![fönster med ikoner för varje visualiseringstyp](media/power-bi-report-visualizations/power-bi-icons.png)
 
-Om du vill ha ännu fler alternativ, kan du besöka [Microsoft AppSource community-webbplatsen](https://appsource.microsoft.com) för att söka efter och [ladda ned](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) [visuella Power BI-objekt](../developer/visuals/custom-visual-develop-tutorial.md) från Microsoft och communityn.
+Du hittar fler visuella Power BI-objekt via community-webbplatsen [Microsoft AppSource](https://appsource.microsoft.com). I AppSource kan du söka efter och [Ladda ned](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) [Visuella Power BI-objekt](../developer/visuals/custom-visual-develop-tutorial.md) från Microsoft och communityn.
 
 Om du inte har arbetat med Power BI tidigare eller behöver en uppfräschning, kan du använda länkarna nedan för att läsa om grunderna i Power BI-visualiseringar.  Alternativt, kan du använda vår innehållsförteckning (till vänster om den här artikeln) för att hitta ännu mer användbar information.
 
@@ -37,21 +37,37 @@ Om du inte har arbetat med Power BI tidigare eller behöver en uppfräschning, k
 
 [Skapa visualiseringar](power-bi-report-add-visualizations-i.md) på sidorna i dina rapporter. Bläddra igenom [listan över tillgängliga visualiseringar och tillgängliga visualiseringssjälvstudier.](power-bi-visualization-types-for-reports-and-q-and-a.md) 
 
-## <a name="upload-a-custom-visualization-and-use-it-in-power-bi"></a>Ladda upp en anpassad visualisering och använd den i Power BI
+## <a name="upload-a-visualization-from-a-file-or-from-appsource"></a>Ladda upp en visualisering från en fil eller från AppSource
 
-Lägg till en anpassad visualisering som du har skapat själv eller som du hittat på [Microsoft AppSource community-webbplatsen](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). Känner du dig kreativ? Ta en närmare titt på vår källkod och använd våra [utvecklarverktyg](../developer/visuals/custom-visual-develop-tutorial.md) om du vill skapa nya visualiseringstyper och [dela dem med communityn](../developer/visuals/office-store.md). Om du vill veta mer om hur man utvecklar anpassade visuella objekt kan du läsa [Utveckla ett anpassat visuellt objekt i Power BI](../developer/visuals/custom-visual-develop-tutorial.md).
+Lägg till en visualisering som du har skapat själv eller som du hittat på [Microsoft AppSource community-webbplatsen](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). Känner du dig kreativ? Ta en närmare titt på vår källkod och använd våra [utvecklarverktyg](../developer/visuals/custom-visual-develop-tutorial.md) om du vill skapa nya visualiseringstyper och [dela dem med communityn](../developer/visuals/office-store.md). Om du vill veta mer om hur man utvecklar visuella Power BI-objekt kan du läsa [Utveckla ett visuellt objekt i Power BI](../developer/visuals/custom-visual-develop-tutorial.md).
 
-## <a name="personalize-your-visualization-pane-preview"></a>Anpassa visualiseringsfönstret (förhandsversion)
+## <a name="personalize-your-visualization-pane"></a>Anpassa visualiseringsfönstret
 
-Om du märker att du använder samma anpassade visuella objekt i många rapporter kan fästa du den anpassade visualiseringen i ditt visualiseringsfönster. Högerklicka på det visuella objektet för att fästa visualiseringen i fönstret.
+Du kan anpassa visualiseringsfönstret genom att lägga till och ta bort visuella objekt i Power BI från det. Om du har tagit bort visuella standardobjekt från visualiseringsfönstret, kan du återställa fönstret till standard och ta tillbaka alla visuella objekt.
+
+### <a name="add-a-visual-to-the-visualization-pane"></a>Lägga till ett visuellt objekt i visualiseringsfönstret
+
+Om du märker att du använder samma visuella objekt i många rapporter kan du lägga till visualiseringen i ditt visualiseringsfönster. Att lägga till visuella objekt gäller för AppSource-visualiseringar, organisatoriska visualiseringar och visuella objekt från filer. Om du vill lägga till ett visuellt objekt högerklickar du på det visuella objektet.
 
 ![Fästa i visualiseringsfönstret](media/power-bi-report-visualizations/power-bi-pin-custom-visual-option.png)
 
-När ett visuellt objekt har fästs flyttas det upp till de andra inbyggda visuella objekten. Det här visuella objektet är nu kopplat till kontot du är inloggad på, och alla nya rapporter du skapar kommer automatiskt innehålla det här visuella objektet förutsatt att du är inloggad. Det gör det enkelt att standardisera ett visst visuellt objekt, utan att du behöver lägga till det i varje enskild rapport.
+När ett visuellt objekt har fästs flyttas det upp till de andra visuella standardobjekten. Det här visuella objektet är nu kopplat till kontot du är inloggad på, och alla nya rapporter du skapar kommer automatiskt innehålla det här visuella objektet förutsatt att du är inloggad. Du behöver inte längre lägga till en viss visuell information som du använder ofta för varje enskild rapport.
 
 ![Anpassat fönster för visualiseringar](media/power-bi-report-visualizations/power-bi-personalized-visualization-pane.png)
 
-Eftersom funktionen bara finns som förhandsversion kommer du bara att se dina fästa visuella objekt i Power BI Desktop. Du måste också vara inloggad för att funktionen ska vara tillgänglig.
+### <a name="remove-a-visual-from-the-visualization-pane"></a>Ta bort ett visuellt objekt från visualiseringsfönstret
+
+Om du slutar använda ett visuellt objekt regelbundet kan du högerklicka på det och ta bort det från visualiseringsfönstret. Alla typer av visuella objekt kan tas bort från visualiseringsfönstret, inklusive visuella standard-, fil-, organisations- och AppSource-objekt.
+
+![Ta bort från visualiseringsfönstret](media/power-bi-report-visualizations/unpin-visual.png)
+
+### <a name="restore-the-visualization-pane"></a>Återställ visualiseringsfönstret
+
+Återställning av visualiseringsfönstret gäller endast för standardvisualiseringar. Visuella objekt som har lagts till i visualiseringsfönstret påverkas inte och kommer att vara tillgängliga från visualiseringsfönstret. Om du vill ta bort AppSource- eller filvisualiseringar från visualiseringsfönstret måste du göra det manuellt.
+
+Om du vill återställa visualiseringsfönstret till standard klickar du på fler alternativ och väljer **Återställa visuella standardobjekt**.
+
+![Återställ visualiseringsfönstret till standard](media/power-bi-report-visualizations/restore-default.png)
 
 ## <a name="change-the-visualization-type"></a>Ändra visualiseringstyp
 
@@ -59,12 +75,12 @@ Försök att [ändra visualiseringstypen](power-bi-report-change-visualization-t
 
 ## <a name="pin-the-visualization"></a>Fäst visualiseringen
 
-När du har fått till visualiseringen som du vill ha den i Power BI-tjänsten, kan du [fästa den på en instrumentpanel](../create-reports/service-dashboard-pin-tile-from-report.md) som en panel. Om du ändrar den visualisering som används i rapporten efter att du fäster den, ändras inte panelen på instrumentpanelen. Om den var ett linjediagram förblir den ett linjediagram, även om du har ändrat till ett ringdiagram i rapporten.
+När du har fått till visualiseringen som du vill ha den i Power BI-tjänsten, kan du [fästa den på en instrumentpanel](../create-reports/service-dashboard-pin-tile-from-report.md) som en panel. Om du ändrar visualiseringen som används i rapporten efter att du fäst den, ändras inte panelen på instrumentpanelen. Om det var ett linjediagram förblir det ett linjediagram, även om du har ändrat det till ett ringdiagram i rapporten.
 
 ## <a name="limitations-and-considerations"></a>Begränsningar och överväganden
 - De visuella objekten kan läsas in långsamt, beroende på datakällan och antalet fält (mått eller kolumner).  Vi rekommenderar att du begränsar antalet visuella objekt till totalt 10–20 fält, för bättre läsbarhet och prestanda. 
 
-- Den övre gränsen för visuella objekt är 100 fält (mått eller kolumner). Om dina visuella objekt inte kan läsas in måste du minska antalet fält.   
+- Den övre gränsen för visuella objekt är 100 fält (mått eller kolumner). Om dina visuella objekt inte kan läsas in måste du minska antalet fält.
 
 ## <a name="next-steps"></a>Nästa steg
 

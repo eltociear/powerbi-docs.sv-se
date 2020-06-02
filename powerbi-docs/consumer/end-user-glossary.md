@@ -8,12 +8,12 @@ ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 04/07/2020
 ms.author: mihart
-ms.openlocfilehash: ebdd84dd4de054df08ac79dc2d28f7862cbb284b
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: 8426b9461b55ae6c29d5adc71f8073ec48731855
+ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83564905"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83794066"
 ---
 # <a name="glossary-for-power-bi-service"></a>Ordlista för Power BI-tjänsten
 Power BI-tjänsten kan introducera terminologi som du kanske inte är bekant med eller förstår. Ordlistan är ett bra ställe att leta upp terminologi. Om du vill kan du lägga till den som ett bokmärke. En annan bra resurs om du vill lära dig mer om byggstenarna bakom Power BI-tjänsten är [Grundläggande begrepp](end-user-basic-concepts.md). Grundläggande begrepp ger en översikt över de olika *delarna* i Power BI och hur de hänger ihop.
@@ -22,9 +22,7 @@ Den här ordlista är ett community-arbete.  Saknar du något ord? Be oss att l�
 
 ## <a name="a"></a>A
 
-**konto** Det finns olika typer av Power BI-konton, som även kallas *licenser* eller *prenumerationer*.  Kontona är antingen: per användare eller organisation. Konton per användare är tillgängliga som *kostnadsfria* eller *Pro*.  En *kostnadsfri* Power BI-användare använder fristående Power BI Desktop eller använder Power BI-tjänsten fristående eller använder Power BI-tjänsten inom en organisation som har en Premium-organisationsprenumeration. Per-användare-konton för Power BI *Pro* är en betald månatlig prenumeration som gör det möjligt att samarbeta och dela innehåll med andra *Pro*-användare. 
-
-*Premium*-prenumeration för organisationer (även kallat *Premium-kapacitet*) lägger till ett lager med funktioner utöver per användare-licenser. Exempel: *kostnadsfria* per användare-kontoinnehavare inom en organisation som har en *Premium*-prenumeration kan göra mycket mer med Power BI än *kostnadsfria* användare utan *Premium*. Till exempel kan *kostnadsfria* användare med *Premium*-organisationskonton samarbeta med kollegor och visa innehåll som ligger i en Power BI Premium-kapacitet. 
+**konto** Använd ditt arbets- eller skolkonto för att logga in på Power BI. Administratörer hanterar arbets- eller skolkonton i Azure Active Directory. Din åtkomstnivå bestäms av den Power BI-licens som är kopplad till det kontot och den kapacitetstyp där innehållet lagras. Se **licens** och **Premium** nedan. 
 
 **admin portal (administrationsportal)** Platsen där Power BI-administratörer hanterar användare, funktioner och inställningar för Power BI i deras organisation. (Obs! För Microsoft 365, Azure och PowerApps används termen administrationscenter.)
 
@@ -171,7 +169,11 @@ Kontrollerna längs vänsterkanten i Power BI-tjänsten.
 
 Första förekomsten: navigeringsfönstret Efterföljande omnämnanden eller vid begränsat utrymme: nav pane
 
-**licens** Se *Konto*.
+**licens** din åtkomst nivå bestäms av den Power BI-licens som är kopplad till ditt konto och den kapacitetstyp där innehållet lagras. Till exempel kan en användare med en Power BI Pro-licens endast samarbeta med användare som också har tilldelats en Pro-licens. Vid delad kapacitet ger en kostnadsfri licens endast åtkomst till användarens personliga arbetsyta. Men när innehållet är i Premium-kapacitet kan användare med en Pro-licens dela innehållet med användare som har tilldelats en kostnadsfri licens. 
+
+En licens tilldelas till en användare och kan vara en kostnadsfri licens eller en Pro-licens. Beroende på hur licensen har förvärvats kan vara betald eller obetald. Kontona är antingen: per användare eller organisation. Konton per användare är tillgängliga som *kostnadsfria* eller *Pro*.  En *kostnadsfri* Power BI-användare använder fristående Power BI Desktop eller använder Power BI-tjänsten fristående eller använder Power BI-tjänsten inom en organisation som har en Premium-organisationsprenumeration. Per-användare-konton för Power BI *Pro* är en betald månatlig prenumeration som gör det möjligt att samarbeta och dela innehåll med andra *Pro*-användare. 
+
+*Premium*-prenumeration för organisationer (även kallat *Premium-kapacitet*) lägger till ett lager med funktioner utöver per användare-licenser. Exempel: *kostnadsfria* per användare-kontoinnehavare inom en organisation som har en *Premium*-prenumeration kan göra mycket mer med Power BI än *kostnadsfria* användare utan *Premium*. Till exempel kan *kostnadsfria* användare med *Premium*-organisationskonton samarbeta med kollegor och visa innehåll som ligger i en Power BI Premium-kapacitet. 
 
 **list page (listsida)** eller **content list (innehållslista)** En av avsnittssidorna för elementen i navigeringsfönstret. Till exempel Favoriter, Senaste, Min arbetsyta osv.
 

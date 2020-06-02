@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/12/2019
+ms.date: 05/26/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: a3a7d7b0afa4a1eb3d6af81d3e6ba1315e291c4b
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 25a0f5abe07b82c2397ab2800802eba6f624a27c
+ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83324734"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84119947"
 ---
 # <a name="group-visuals-in-power-bi-desktop-reports"></a>Gruppera visuella objekt i Power BI Desktop-rapporter
 Med **gruppering** i **Power BI Desktop** kan du gruppera ihop visuella objekt i rapporten, till exempel knappar, textrutor, formbilder och alla visuella objekt som du skapar, precis som du grupperar objekt i PowerPoint. Med gruppering av visuella objekt i en rapport kan du behandla gruppen som ett enda objekt, vilket gör att du kan flytta, ändra storlek på och arbeta med lager i rapporten enklare, snabbare och mer intuitivt.
@@ -33,6 +33,8 @@ Grupper visas i **urvalsfönstret**. Du kan ha så många grupper med visuella o
 ![kapsla grupper](media/desktop-grouping-visuals/grouping-visuals-03.png)
 
 I **urvalsfönstret** kan du även dra och släppa enskilda visuella objekt för att inkludera dem i en grupp, ta bort dem från en grupp, kapsla en grupp eller ta bort en grupp eller ett enskilt visuellt objekt från en kapsling. Dra det visuella objekt som du vill justera och placera det där du vill. Om det finns överlappning bestäms skiktning av visuella objekt av deras ordning i listan *Lagerordning*.
+
+Det är enkelt att byta namn på en grupp: dubbelklicka bara på gruppnamnet i rutan **Val** och skriv sedan in det nya namnet på din grupp.
 
 ![dra och släppa grupper](media/desktop-grouping-visuals/grouping-visuals-04.png)
 

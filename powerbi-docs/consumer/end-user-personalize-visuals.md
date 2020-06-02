@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/09/2020
+ms.date: 05/21/2020
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 83f040fd021a3d3e1cd6ce344c84051c7ff58bb0
-ms.sourcegitcommit: faa8cfb66e79ea16ba46605f752cc9ca57924d0e
+ms.openlocfilehash: 9599d9b96b98feed4a8751c6bd028ca8b3f77ed3
+ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83383167"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83793571"
 ---
 # <a name="personalize-visuals-in-a-report"></a>Anpassa visuella objekt i en rapport
 
@@ -117,7 +117,7 @@ För närvarande har funktionen några begränsningar som du bör vara medveten 
 
 - **Anpassa det här visuella objektet** kan inaktiveras för en hel rapport eller för ett visst visuellt objekt. Kontakta klientadminstratören eller rapportens ägare om du inte har ett alternativ som låter dig anpassa det visuella objektet. Om du vill visa kontaktinformation för rapportägaren väljer du namnet på rapporten på Power BI-menyraden.
 - Användares utforskningar sparas inte automatiskt. Du måste spara vyn som ett personligt bokmärke för att kunna samla in dina ändringar.
-- Du kan inte ändra visuella objekt i Power BI-mobilappar. Men eventuella ändringar av visuella objekt som du sparar i ett personligt bokmärke i Power BI-tjänsten sparas i mobilappar.
+- Den här funktionen stöds i mobilappar för Power BI för iOS och Android-surfplattor och i Power BI Windows-appen. Det finns inte stöd för Power BI-appar för telefoner. Men eventuella ändringar av visuella objekt som du sparar i ett personligt bokmärke i Power BI-tjänsten sparas i alla Power BI-mobilappar.
 
 Det finns även några kända problem som vi ska lösa:
 

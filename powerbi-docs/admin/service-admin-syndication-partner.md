@@ -1,6 +1,6 @@
 ---
-title: Det gick inte att lägga till Power BI till O365-partner
-description: Det går inte att lägga till Power BI till en syndikeringspartner i Office 365. Den syndikerade modellen är en inköpsmodell som används av Office 365.
+title: Det går inte att lägga till Power BI till en O365-partner
+description: Det går inte att lägga till Power BI till en syndikeringspartner i Microsoft 365. Den syndikerade modellen är en inköpsmodell som används av Microsoft 365.
 author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
@@ -9,16 +9,16 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 5907f23bb5bf1bcdc5a4ca3412e5331a09d145c9
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 2c590875b4dee81f7ca54434d6e5895be885be97
+ms.sourcegitcommit: 2cb249fc855e369eed1518924fbf026d5ee07eb1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83344950"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83812345"
 ---
 # <a name="unable-to-add-power-bi-to-office-365-partner-subscription"></a>Det går inte att lägga till Power BI till en Office 365-partnerprenumeration
 
-Med Office 365 kan företag sälja Office 365 paketerat och integrerat med sina egna lösningar, vilket ger slutkunderna en enda kontaktpunkt för inköp, fakturering och support.
+Med Microsoft 365 kan företag sälja Microsoft 365 paketerat och integrerat med sina egna lösningar, vilket ger slutkunderna en enda kontaktpunkt för inköp, fakturering och support.
 
 Om du är intresserad av att köpa Power BI tillsammans med din prenumeration på Office 365, rekommenderar vi att du kontaktar din partner. Om din partner inte erbjuder Power BI för tillfället finns det olika alternativ som du kan överväga.
 
@@ -52,13 +52,13 @@ Du kan registrera dig för en kostnadsfri utvärderingsversion av Power BI. Om d
 
 ### <a name="enable-ad-hoc-subscriptions"></a>Aktivera ad hoc-prenumerationer
 
-Som standard är enskild registrering, även kallat ad hoc-prenumeration, inaktiverad. I det här fallet visas följande meddelande när du försöker registrera dig: *IT-avdelningen har inaktiverat registrering för Microsoft Power BI*.
+Som standard är enskild registrering, även kallat ad hoc-prenumeration, inaktiverad. I det här fallet visas ett meddelande när du försöker registrera dig om att: *IT-avdelningen har inaktiverat registrering för Microsoft Power BI*.
 
 ![Vi beklagar-bild](media/service-admin-syndication-partner/sorry.png)
 
 Om du vill aktivera ad hoc-prenumerationer kan du kontakta din partner och begära att de aktiverar detta. Om du är administratör för din klient och vet hur man använder Azure Active Directory PowerShell-kommandon, kan du aktivera ad hoc-prenumerationer själv. [Azure Active Directory PowerShell för Graph](/powershell/azure/active-directory/install-adv2/)
 
-1. Logga in på Azure Active Directory med dina Office 365-autentiseringsuppgifter. Den första raden i följande skript uppmanar dig att ange dina autentiseringsuppgifter. Den andra raden ansluter till Azure Active Directory.
+1. Logga in i Azure Active Directory med dina autentiseringsuppgifter för Microsoft 365. Den första raden i följande skript uppmanar dig att ange dina autentiseringsuppgifter. Den andra raden ansluter till Azure Active Directory.
 
     ```powershell
     $msolcred = get-credential
@@ -83,4 +83,4 @@ Om du vill aktivera ad hoc-prenumerationer kan du kontakta din partner och begä
 
 [Power BI-licensiering i din organisation](service-admin-licensing-organization.md)
 
-Fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

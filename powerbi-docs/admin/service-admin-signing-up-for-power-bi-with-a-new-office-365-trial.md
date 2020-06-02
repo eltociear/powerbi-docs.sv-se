@@ -9,21 +9,18 @@ ms.topic: conceptual
 ms.date: 05/17/2020
 ms.author: mihart
 LocalizationGroup: Administration
-ms.openlocfilehash: 9db228253e0e88105108a1b3a5eaf725c73e0abb
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: 9c13f29b29742e62cb08c973e5444a7879e6222a
+ms.sourcegitcommit: 2cb249fc855e369eed1518924fbf026d5ee07eb1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83563628"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83812230"
 ---
 # <a name="signing-up-for-power-bi-with-a-new-microsoft-365-trial"></a>Registrera dig för Power BI med en ny Microsoft 365-utvärderingsversion
 
 I den här artikeln beskrivs ett alternativt sätt att registrera dig för Power BI, om du inte redan har ett e-postkonto för arbetet eller skolan.
 
 Om du har problem med att registrera dig för Power BI med din e-postadress måste du kontrollera att det är en [e-postadress som kan användas med Power BI](../fundamentals/service-self-service-signup-for-power-bi.md#supported-email-addresses). Om det inte lyckas kan du registrera dig för en Microsoft 365 utvärderingsversion och skapa ett arbetskonto. Använd sedan det nya arbetskontot för att registrera dig för Power BI-tjänsten. Du kommer att kunna använda Power BI även när utvärderingsversionen av Microsoft 365 upphör att gälla.
-
-> [!NOTE]
-> Office 365 ändrades nyligen till Microsoft 365. Tills alla våra artiklar har uppdaterats kan du fortfarande se namnet Office 365.
 
 ## <a name="sign-up-for-a-microsoft-365-trial-of-office"></a>Registrera dig för en Microsoft 365-utvärderingsversion av Office
 Registrera dig för en Microsoft 365-utvärderingsversion [på Microsoft 365-webbplatsen](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans). Om du inte redan har ett konto kommer Microsoft att vägleda dig genom stegen för att skapa ett. Eftersom kommersiella e-postkonton (som Hotmail och Gmail) inte fungerar med Microsoft 365 måste du skapa ett nytt konto som fungerar.  Det e-postkontot kommer att se ut ungefär så här: *zalan@onmicrosoft.com* .
@@ -42,7 +39,7 @@ Om du väljer **Office 365 E5** kommer din utvärderingsversion att innehålla P
 
     ![skapa ett arbets- eller skolkonto](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-enter-info.png)
 
-3. Skapa din nya e-postadress och ditt lösenord. Skapa ett nytt inloggningsnamn som ser ut så här: you@yourcompany.onmicrosoft.com. Det här är inloggningen du använder med ditt nya Office 365-konto och med Power BI.
+3. Skapa din nya e-postadress och ditt lösenord. Skapa ett nytt inloggningsnamn som ser ut så här: you@yourcompany.onmicrosoft.com. Det här är inloggningen du använder med ditt nya jobb- eller skolkonto och med Power BI.
 
     ![Välj att registrera dig för ett nytt konto](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-create-account.png)
 

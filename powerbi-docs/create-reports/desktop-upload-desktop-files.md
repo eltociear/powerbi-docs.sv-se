@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/15/2020
+ms.date: 05/20/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 3a67c36b2594696e1c576693cc5808eb0227c1c7
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 4a363ce72002003981f1bcbe46e0f5367f89860f
+ms.sourcegitcommit: c1f05254eaf5adb563f8d4f33c299119134c7d1f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83333497"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83733492"
 ---
 # <a name="publish-datasets-and-reports-from-power-bi-desktop"></a>Publicera datamängder och rapporter från Power BI Desktop
 När du publicerar en Power BI Desktop-fil till Power BI-tjänsten publicerar du data i modellen till din Power BI-arbetsyta. Samma sak gäller för alla rapporter som du har skapat i **rapportvyn**. En ny datamängd med samma namn och eventuella rapporter visas i navigatorfältet för arbetsytan.
@@ -31,7 +31,7 @@ Publicering från Power BI Desktop har samma effekt som när du använder **Häm
 
    ![Knappen Publicera](media/desktop-upload-desktop-files/pbid_publish_publishbutton.png)
 
-2. Logga in på Power BI.
+2. Logga in i Power BI.
 3. Välj målet.
 
    ![Välj publiceringsmålet](media/desktop-upload-desktop-files/pbid_publish_select_destination.png)
@@ -49,5 +49,9 @@ Processen är tydlig, men det finns ett par saker som du bör känna till:
 * Om du byter namn på eller ta bort en kolumn eller ett mått kan alla visualiseringar som du redan har i Power BI med fältet skadas. 
 * Power BI ignorerar vissa formatändringar av befintliga kolumner. Till exempel om du ändrar formatet för en kolumn från 0,25 % till 25 %.
 * Anta att du har ett uppdateringsschema som har konfigurerats för din befintliga datauppsättning i Power BI. När du lägger till nya datakällor i filen och sedan publicerar på nytt måste du logga in på dem före nästa schemalagda uppdatering.
-* När du återpublicerar en datauppsättning som har publicerats från Power BI Desktop och har ett definierat uppdateringsschema, startas en uppdatering av datauppsättningen så snart du publicerar igen. 
+* När du återpublicerar en datauppsättning som har publicerats från Power BI Desktop och har ett definierat uppdateringsschema, startas en uppdatering av datauppsättningen så snart du publicerar igen.
+* När du gör en ändring i en datamängd och sedan publicerar om den, visas ett meddelande om hur många arbetsytor, rapporter och instrumentpaneler som kan påverkas av ändringen och du uppmanas att bekräfta att du vill ersätta den aktuella publicerade datamängden med den du har ändrat. I meddelandet finns också en länk till en fullständig påverkansanalys för datamängden i Power BI-tjänsten, där du kan se mer information och vidta åtgärder för att minimera riskerna med ändringen.
 
+   ![Varning om effekten av att publicera om en datamängd](media/desktop-upload-desktop-files/pbid-dataset-impact-analysis-desktop-warning.png)
+
+   [Läs mer om analys av datamängdseffekter](../collaborate-share/service-dataset-impact-analysis.md).

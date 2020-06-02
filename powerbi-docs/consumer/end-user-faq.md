@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 02/20/2020
+ms.date: 05/20/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 39d30cc7949565872fd638f289756be6541eee0d
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: 530b1dd757f8fe0bfdb120601ae8ea28d95ed835
+ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83564996"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83793706"
 ---
 # <a name="frequently-asked-questions-about-power-bi"></a>Vanliga frågor och svar om Power BI
 
@@ -27,14 +27,14 @@ ms.locfileid: "83564996"
 
 Power BI är en molnbaserad tjänst för företagsanalyser som låter vem som helst visualisera och analysera data med högre hastighet, effektivitet och djupare insikter. Användare får tillgång till en stor mängd molnbaserade och lokala data genom lättanvända instrumentpaneler, interaktiva rapporter och spännande visualiseringar som levandegör data. Läs mer om [Power BI](../fundamentals/power-bi-overview.md).
 
-## <a name="what-is-the-microsoft-power-bi-service-for-consumers"></a>Vad innebär Microsoft Power BI-tjänsten för *konsumenter*?
+## <a name="what-is-a-power-bi-consumers"></a>Vad är en Power BI-*konsument*?
 
 Hur du interagerar med Power BI beror på din arbetsroll. Som slutanvändare eller *konsument* är du den som tar emot innehåll (instrumentpaneler, rapporter och appar) från kollegorna. Du arbetar i online- eller mobilversionen av Power BI, som kallas för Power BI-tjänsten, där du granskar och interagerar med innehållet för att fatta affärsbeslut.  Läs mer om [Power BI för konsumenter](index.yml).
 
 
 ## <a name="whats-the-difference-between-power-bi-pro-and-power-bi-premium"></a>Vad är skillnaden mellan Power BI Pro och Power BI Premium?
 
-Power BI Pro är en individuell användarlicens som ger åtkomst till allt innehåll och alla funktioner i Power BI-tjänsten. Du kan till och med dela innehåll och samarbeta med andra Pro-användare. Det är bara Pro-användare som kan publicera innehåll på arbetsytor, dela instrumentpaneler samt prenumerera på instrumentpaneler och rapporter. Den här typen av licens tilldelas vanligtvis till Power BI-rapport*designers*, utvecklare och administratörer. 
+Power BI Pro är en individuell användarlicens som ger åtkomst till allt innehåll och alla funktioner i Power BI-tjänsten. Du kan till och med dela innehåll och samarbeta med andra Pro-användare. Det är bara Pro-användare som kan publicera innehåll på arbetsytor, dela instrumentpaneler samt prenumerera på instrumentpaneler och rapporter. 
 
 Power BI Premium tillhandahåller dedikerad kapacitet för att erbjuda mer enhetlig prestanda. Det ger även stöd för större datavolymer i Power BI. För enskilda användare möjliggör Premium även omfattande distribution av innehåll av Pro-användare utan att det krävs Pro-licenser per användare för mottagare som visar innehållet. Detta innebär att *konsumenter* kan samarbeta med kollegor och visa och interagera med instrumentpaneler, rapporter och appar som har delats med dem. 
 
@@ -54,7 +54,7 @@ Om ditt företag har köpt Power BI-licenser eller ett Premium-kapacitetskonto, 
 
 Du kan också registrera dig själv som enskild individ för Power BI-tjänsten. Mer information finns i [Processen för självbetjäningsregistrering i Power BI](../fundamentals/service-self-service-signup-for-power-bi.md)
 
-## <a name="why-do-i-have-to-sign-up-with-my-work-email"></a>Varför måste jag registrera min e-postadress för arbetet?
+## <a name="why-do-i-have-to-sign-up-with-my-work-email"></a>Varför måste jag logga med min jobbmejl?
 
 Power BI stöder inte e-postadresser som tillhandahålls av e-posttjänster för konsumenter eller telekommunikationsleverantörer. Lär dig mer om [registreringsprocessen för Power BI med självbetjäning](../fundamentals/service-self-service-signup-for-power-bi.md).
 
@@ -113,5 +113,5 @@ Precis som med många andra Microsoft-tjänster och program så erbjuder Power B
 
 * [Vad är en Power BI-konsument?](end-user-consumer.md)
 * [Hur använder en konsument Power BI?](end-user-reading-view.md)
-* Fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+* Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 * Har du fortfarande problem? Besök [Power BI-supportsidan](https://powerbi.microsoft.com/support/).

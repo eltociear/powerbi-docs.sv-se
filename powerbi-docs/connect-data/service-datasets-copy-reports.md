@@ -1,22 +1,22 @@
 ---
-title: Kopiera rapporter från andra appar eller arbetsytor (förhandsversion) – Power BI
+title: Kopiera rapporter från andra appar eller arbetsytor – Power BI
 description: Lär dig att skapa en kopia av en rapport och spara den på din egen arbetsyta.
 author: maggiesMSFT
-ms.reviewer: chbraun
+ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/16/2020
+ms.date: 04/30/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 8716a304e5b117c027d75db149ebcc8d95efebfe
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: d70f029568dca578bb76350a42b5146ecc335759
+ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83312636"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83793088"
 ---
-# <a name="copy-reports-from-other-workspaces-preview"></a>Kopiera rapporter från andra arbetsytor (förhandsversion)
+# <a name="copy-reports-from-other-workspaces"></a>Kopiera rapporter från andra arbetsytor
 
 När du har hittat en rapport som du gillar på en arbetsyta eller i en app kan du göra en kopia av den och sedan spara den på en annan arbetsyta. Du kan sedan ändra din kopia av rapporten genom att lägga till eller ta bort visuella objekt och andra element. Du behöver inte tänka på att skapa datamodellen. Den har redan skapats. Och det är mycket enklare att ändra en befintlig rapport än att börja från början. När du skapar en app från arbetsytan kan du ibland inte publicera din kopia av rapporten i appen. Mer information finns i [Överväganden och begränsningar i artikeln ”Använda datamängder mellan arbetsytor”](service-datasets-across-workspaces.md#considerations-and-limitations).
 
@@ -106,5 +106,5 @@ Du kan bestämma att du inte längre vill ha kvar rapporten och dess associerade
 
 ## <a name="next-steps"></a>Nästa steg
 
-- [Använda datamängder mellan arbetsytor (förhandsversion)](service-datasets-across-workspaces.md)
+- [Använda datamängder på arbetsytor](service-datasets-across-workspaces.md)
 - Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)

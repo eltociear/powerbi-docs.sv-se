@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/09/2020
+ms.date: 05/27/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: dfd44b7130c1c7e4e1d2d7a9c9f15208cb0d9b0c
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: 05df39b58334b33046fde0f95b9f1ca596c1eec1
+ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83563297"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84120561"
 ---
 # <a name="about-using-directquery-in-power-bi"></a>Använda DirectQuery i Power BI
 
@@ -184,7 +184,7 @@ Varje användaråtgärd i rapporten kan resultera i att visuella objekt uppdater
 
 Om du redigerar en ny rapport krävs på motsvarande sätt att frågor skickas för varje steg på vägen mot att ta fram det slutgiltiga visuella objektet.
 
-Det förekommer viss cachelagring av resultat. Uppdateringen av ett visuellt objekt sker direkt om exakt samma resultat har erhållits nyligen. Om säkerhet på radnivå inte är definierad delas inte dessa cacheminnen mellan olika användare.
+Det förekommer viss cachelagring av resultat. Uppdateringen av ett visuellt objekt sker direkt om exakt samma resultat har erhållits nyligen. Om säkerhet på radnivå är definierad delas inte dessa cacheminnen mellan olika användare.
 
 #### <a name="dashboard-refresh"></a>Uppdatering av instrumentpanelen
 
