@@ -6,15 +6,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/07/2020
+ms.date: 05/27/2020
 ms.author: kfollis
+ms.custom: licensing support
 LocalizationGroup: Get started
-ms.openlocfilehash: 9f94d6a1b99bce40d3f901dd71877da3f6b236af
-ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
+ms.openlocfilehash: f4f0bc5de0480748344fa029c774c4d262facc08
+ms.sourcegitcommit: 3f864ec22f99ca9e25cda3a5abda8a5f69ccfa8e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "83792890"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84159707"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI för amerikanska myndighetskunder
 Den här artikeln är till för amerikanska myndighetskunder som distribuerar Power BI som en del av ett Microsoft 365-myndighetsabonnemang. Myndighetsabonnemang är utformade för de unika behoven hos organisationer som måste uppfylla amerikanska efterlevnads- och säkerhetsstandarder. Den Power BI-tjänst som har utformats för amerikanska myndighetskunder skiljer sig från den kommersiella versionen av Power BI-tjänsten. Dessa funktionsskillnader och funktioner beskrivs i följande avsnitt.
@@ -97,7 +98,7 @@ För att tillgodose kraven hos molnkunder på myndigheter finns det vissa skilln
 |Datahantering|Gateway för datahantering|Tillgänglig|Tillgänglig|Tillgänglig|
 |  |Datakryptering i Azure SQL Database|Tillgänglig|Tillgänglig|Tillgänglig|
 |  |Datakryptering i Blob Storage för Power BI|Tillgänglig|Tillgänglig|Tillgänglig|
-|Integrering mellan produkter|Bädda in i SharePoint Online med hjälp av Power BI:s webbdel|Inte tillgänglig|Inte tillgänglig|Inte tillgänglig|
+|Integrering mellan produkter|Bädda in i SharePoint Online med hjälp av Power BI:s webbdel|Tillgänglig|Inte tillgänglig|Inte tillgänglig|
 |  |Bädda in i SharePoint Online med hjälp av Bädda in webbdel|Tillgänglig|Tillgänglig|Tillgänglig|
 |  |Dataflöden-och AI-funktioner|Inte tillgänglig|Inte tillgänglig|Inte tillgänglig|
 |  |Power Automate-anslutning för datadrivna aviseringar|Inte tillgänglig|Inte tillgänglig|Inte tillgänglig|
