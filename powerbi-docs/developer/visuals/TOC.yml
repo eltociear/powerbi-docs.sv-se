@@ -20,6 +20,8 @@
           href: custom-visual-develop-tutorial-format-options.md
         - name: Lägga till enhetstester för visuellt projekt
           href: unit-tests-introduction.md
+        - name: Skapa ett trattdiagram från R-skript till visuellt R-objekt
+          href: funnel-plot-from-r.md
     - name: Begrepp
       items:
         - name: Struktur för projekt med visuella Power BI-objekt

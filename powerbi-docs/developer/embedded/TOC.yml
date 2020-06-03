@@ -28,8 +28,6 @@
           href: embedded-capacity-planning.md
         - name: Bästa praxis för prestanda
           href: embedded-performance-best-practices.md
-        - name: Tjänstens huvudnamn
-          href: embed-service-principal.md
         - name: Säkerhet på radnivå
           href: embedded-row-level-security.md
         - name: Sidindelade rapporter – säkerhet på radnivå
@@ -44,6 +42,10 @@
           href: power-bi-permissions.md
     - name: Gör så här
       items:
+        - name: Bädda in med hjälp av tjänsthuvudnamn med ett certifikat
+          href: embed-service-principal-certificate.md
+        - name: Bädda in med hjälp av tjänsthuvudnamn med apphemlighet
+          href: embed-service-principal.md
         - name: Bädda in från en app
           href: embed-from-apps.md
         - name: Exportera rapport till fil
