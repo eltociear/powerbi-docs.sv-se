@@ -38,8 +38,6 @@
           href: azure-pbie-diag-logs.md
         - name: Bädda in
           href: embedded-faq.md
-        - name: Power BI-behörigheter
-          href: power-bi-permissions.md
     - name: Gör så här
       items:
         - name: Bädda in med hjälp av tjänsthuvudnamn med ett certifikat
