@@ -64,4 +64,4 @@ Dataflöden hjälper organisationer att samla data från olika källor och förb
 
 [Grundläggande begrepp för rapportdesigners](service-basic-concepts.md)
 
-Fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)

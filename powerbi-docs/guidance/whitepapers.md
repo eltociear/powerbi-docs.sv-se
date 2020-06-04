@@ -6,22 +6,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/27/2020
+ms.date: 06/03/2020
 ms.author: maggies
-ms.openlocfilehash: f0bf8edc3c954bf5c79d76c1a3bdba1a08ae40ae
-ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
+ms.openlocfilehash: 529be27d10a5ac1a352473be14e6e7184493bdf9
+ms.sourcegitcommit: f05f7b0112a8ec2dce60839ea5f922eda3cc776c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84121079"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84336807"
 ---
 # <a name="whitepapers-for-power-bi"></a>White paper-dokument om Power BI
 
 I våra white paper-dokument kan du läsa mer om Power BI på en djupare nivå. Här hittar du en lista över tillgängliga whitepapers för Power BI.
 
-| White paper | Beskrivning | Datum |
+| White paper | Description | Datum |
 | --- | --- | --- |
-| [Planera en företagsdistribution för Power BI](https://aka.ms/PBIEnterpriseDeploymentWP) |Det uppdaterade tekniska dokumentet beskriver överväganden och bästa praxis för en bra och säker distribution av organisations Power BI. | Maj 2020 |
+| [Planera en företagsdistribution för Power BI](https://aka.ms/PBIEnterpriseDeploymentWP) |Det uppdaterade tekniska dokumentet beskriver överväganden och bästa praxis för en bra och säker distribution av organisations Power BI. | 2020 juni |
 | [Power BI och dataflöden](https://go.microsoft.com/fwlink/?linkid=2034388&clcid=0x409)| Det här faktabladet beskriver dataflöden i detalj och beskriver funktioner och initiativ bakom dataflödesegenskaper och -funktioner. | November 2018 |
 | [Microsoft Power BI Premium](https://aka.ms/pbipremiumwhitepaper) |Beskriver Power BI Premium, både i dess ursprungsform och hur den kommer att utvecklas. | Oktober 2017 |
 | [Power BI Premium planering och distribution](whitepaper-powerbi-premium-deployment.md)| Innehållet i det här dokumentet har integrerats i allmän vägledning. Se länken för vägledning och bästa metoder för att planera och distribuera Premium-kapacitet för väldefinierade arbets belastningar.| Mars 2019 |

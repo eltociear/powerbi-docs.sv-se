@@ -76,6 +76,6 @@ Du kan också fokusera på en datapost i en visualisering och gå in på detaljn
 ## <a name="next-steps"></a>Nästa steg
 [Exportera data från Power BI-visualiseringar](power-bi-visualization-export-data.md)    
 
-Fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
 
 

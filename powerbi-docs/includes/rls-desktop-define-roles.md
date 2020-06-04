@@ -25,7 +25,7 @@ Följ dessa steg för att definiera säkerhetsroller.
    ![Välj Skapa](./media/rls-desktop-define-roles/powerbi-desktop-security-create-role.png)
 4. Ange ett namn på rollen under **Roller**. 
 5. Välj den tabell som du vill tillämpa DAX-regeln på under **Tabeller**.
-6. I rutan **DAX-uttryck för tabellfilter** anger du DAX-uttrycket. Det här uttrycket returnerar värdet true eller false. Till exempel: ```[Entity ID] = “Value”```.
+6. I rutan **DAX-uttryck för tabellfilter** anger du DAX-uttrycket. Det här uttrycket returnerar värdet true eller false. Exempel: ```[Entity ID] = “Value”```.
       
    ![Fönstret Hantera roller](./media/rls-desktop-define-roles/powerbi-desktop-security-create-rule.png)
 

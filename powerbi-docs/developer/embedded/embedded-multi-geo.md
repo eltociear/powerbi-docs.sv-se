@@ -91,4 +91,4 @@ Läs mer om Power BI Embedded-kapaciteter och Multi-Geo-alternativ för alla kap
 
 * [Multi-Geo i Power BI Premium-kapaciteter](../../admin/service-admin-premium-multi-geo.md)
 
-Fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

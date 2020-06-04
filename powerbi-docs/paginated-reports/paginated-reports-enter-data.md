@@ -25,9 +25,9 @@ I den här artikeln får du lära dig om en funktion i den nya versionen av SQL 
 - För att spara din sidnumrerade rapport i Power BI-tjänsten behöver du ett [Power BI Pro-konto](../fundamentals/service-self-service-signup-for-power-bi.md) och skrivåtkomst till en arbetsyta i en [Power BI Premium-kapacitet](../admin/service-premium-what-is.md).
 - Om du vill spara din sidnumrerade rapport till en rapportserver behöver du behörigheter för att [redigera filen Rsreportserver.config](#upload-the-paginated-report-to-a-report-server).
 
-## <a name="get-started"></a>Get started
+## <a name="get-started"></a>Kom igång
 
-När du har hämtat och installerat Report Builder följer du samma arbetsflöde som du använder för att lägga till en inbäddad datamängd och datamängd i rapporten. I följande procedur under **Datakällor** du ser ett nytt alternativ: **Ange data**.  Du behöver bara konfigurera den här datakällan en gång i en rapport. Efter det kan du skapa flera tabeller för data som har angetts som separata datamängder med den enda datakällan.
+När du har hämtat och installerat Report Builder följer du samma arbetsflöde som du använder för att lägga till en inbäddad datamängd och datamängd i rapporten. I följande procedur under **Datakällor** så ser du ett nytt alternativ: **Ange data**.  Du behöver bara konfigurera den här datakällan en gång i en rapport. Efter det kan du skapa flera tabeller för data som har angetts som separata datamängder med den enda datakällan.
 
 1. I fönstret **Rapportdata** i Report Builder väljer du **Nytt** > **Datamängd**.
 

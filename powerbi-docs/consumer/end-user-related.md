@@ -76,4 +76,4 @@ Härifrån kan du vidta direkta åtgärder för det relaterade innehållet. Väl
 
 ## <a name="next-steps"></a>Nästa steg
 * [Kom igång med Power BI-tjänsten](../fundamentals/service-get-started.md)
-* Fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
+* Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)

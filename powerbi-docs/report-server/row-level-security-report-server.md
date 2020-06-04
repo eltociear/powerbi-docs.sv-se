@@ -97,7 +97,7 @@ Rapportförfattare har inte behörighet att visa rapportdata i Power BI-rapports
 
  
 
-## <a name="faq"></a>VANLIGA FRÅGOR OCH SVAR 
+## <a name="faq"></a>Vanliga frågor och svar 
 
 ### <a name="can-i-create-these-roles-for-analysis-services-data-sources"></a>Kan jag skapa rollerna för Analysis Services-datakällor? 
 
@@ -121,5 +121,5 @@ Om du redan har befintliga roller som definierats och medlemmar som tilldelats i
 [Vad är Power BI-rapportservern? ](get-started.md) 
 [Administratörshandbok](admin-handbook-overview.md)  
 
-Fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 

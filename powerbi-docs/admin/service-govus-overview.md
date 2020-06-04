@@ -6,16 +6,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/27/2020
+ms.date: 06/02/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Get started
-ms.openlocfilehash: f4f0bc5de0480748344fa029c774c4d262facc08
-ms.sourcegitcommit: 3f864ec22f99ca9e25cda3a5abda8a5f69ccfa8e
+ms.openlocfilehash: 8be103d01b5f46c510a1e3658d5a5e29d566a5ff
+ms.sourcegitcommit: f05f7b0112a8ec2dce60839ea5f922eda3cc776c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84159707"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84336554"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI för amerikanska myndighetskunder
 Den här artikeln är till för amerikanska myndighetskunder som distribuerar Power BI som en del av ett Microsoft 365-myndighetsabonnemang. Myndighetsabonnemang är utformade för de unika behoven hos organisationer som måste uppfylla amerikanska efterlevnads- och säkerhetsstandarder. Den Power BI-tjänst som har utformats för amerikanska myndighetskunder skiljer sig från den kommersiella versionen av Power BI-tjänsten. Dessa funktionsskillnader och funktioner beskrivs i följande avsnitt.
@@ -83,12 +83,12 @@ För att tillgodose kraven hos molnkunder på myndigheter finns det vissa skilln
 |  |Använda Active Directory-grupper för delning och åtkomstkontroll|Tillgänglig|Tillgänglig|Tillgänglig|
 |  |Granskning via Office 365 Administrationscenter för säkerhet och efterlevnad|Tillgänglig|Tillgänglig|Tillgänglig|
 |  |Delning med extern användare|Tillgänglig|Tillgänglig|Tillgänglig|
-|  |Användningsstatistik för rapporter och instrumentpaneler|Inte tillgänglig|Inte tillgänglig|Inte tillgänglig|
+|  |Användningsstatistik för rapporter och instrumentpaneler|Tillgänglig|Tillgänglig|Tillgänglig|
 |  |Azure B2B mellan GCC och kommersiellt moln|Inte tillgänglig|Inte tillgänglig|Inte tillgänglig|
 |Skapa rapport|Skapa och visa instrumentpaneler och rapporter|Tillgänglig|Tillgänglig|Tillgänglig|
 |  |Schemalagd datauppdatering|Tillgänglig|Tillgänglig|Tillgänglig|
 |  |Uppdateringsbara teaminstrumentpaneler|Tillgänglig|Tillgänglig|Tillgänglig|
-|  |Sidnumrerade rapporter|Tillgänglig|I planeringsstadiet|I planeringsstadiet|
+|  |Sidnumrerade rapporter|Tillgänglig|Tillgänglig|Tillgänglig|
 |  |Mallappar|Inte tillgänglig|Inte tillgänglig|Inte tillgänglig|
 |Ansluta till data|Importera data och rapporter från Excel|Tillgänglig|Tillgänglig|Tillgänglig|
 |  |Importera data från CSV-filer|Tillgänglig|Tillgänglig|Tillgänglig|

@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 01/29/2020
 ms.custom: seodec18
-ms.openlocfilehash: f74bfb92508564a01422729eefc251acc124baea
-ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
+ms.openlocfilehash: c3a3bd98dc65e3b73ffe04b95fa9001c90af1d53
+ms.sourcegitcommit: cd64ddd3a6888253dca3b2e3fe24ed8bb9b66bc6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "83692721"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84315935"
 ---
 # <a name="power-bi-urls-for-whitelisting"></a>URL:er för Power BI för vitlistning
 [//]: # "suparnap, miwehnia är kontakter för att underhålla listan"
@@ -46,14 +46,15 @@ För allmän användning av Power BI måste du kunna ansluta till slutpunkterna 
 
 | Rad | Syfte | Mål | Portar |
 | --- | --- | --- | --- |
-| 1 | **Krävs:** Backend-API:er | *.analysis.windows.net | TCP 443 |
-| 2 | **Krävs:** Backend-API:er | *.pbidedicated.windows.net | TCP 443 |
-| 3 | **Krävs:** Innehållsleverantörsnätverk (CDN) | content.powerapps.com | TCP 443 |
-| 4 | **Krävs:** Microsoft 365-integrering | Se dokumentationen om [vanliga URL:er och Office Online-URL:er för Microsoft 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) | Saknas |
-| 5 | **Krävs:** Portal | app.powerbi.com | TCP 443 |
-| 6 | **Krävs:** Tjänsttelemetri | dc.services.visualstudio.com | TCP 443 |
-| 7 | **Valfritt:** Informationsmeddelanden | dynmsg.modpim.com | TCP 443 |
-| 8 | **Valfritt:** NPS-undersökningar | nps.onyx.azure.net | TCP 443 |
+| 1 | **Krävs:** Backend-API:er | api.powerbi.com | TCP 443 |
+| 2 | **Krävs:** Backend-API:er | *.analysis.windows.net | TCP 443 |
+| 3 | **Krävs:** Backend-API:er | *.pbidedicated.windows.net | TCP 443 |
+| 4 | **Krävs:** Innehållsleverantörsnätverk (CDN) | content.powerapps.com | TCP 443 |
+| 5 | **Krävs:** Microsoft 365-integrering | Se dokumentationen om [vanliga URL:er och Office Online-URL:er för Microsoft 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) | Saknas |
+| 6 | **Krävs:** Portal | app.powerbi.com | TCP 443 |
+| 7 | **Krävs:** Tjänsttelemetri | dc.services.visualstudio.com | TCP 443 |
+| 8 | **Valfritt:** Informationsmeddelanden | dynmsg.modpim.com | TCP 443 |
+| 9 | **Valfritt:** NPS-undersökningar | nps.onyx.azure.net | TCP 443 |
 | | | |
 
 ## <a name="administration"></a>Administration
