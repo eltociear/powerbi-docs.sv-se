@@ -94,6 +94,8 @@
           href: 'https://go.microsoft.com/fwlink/?linkid=848274'
         - name: Bädda in anpassade layouter i en app
           href: embedded-custom-layout.md
+        - name: Azure CLI
+          href: /cli/azure/ext/powerbidedicated/powerbi
     - name: Resurser
       items:
         - name: Developer Center
