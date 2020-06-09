@@ -8,21 +8,23 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 05/17/2020
 ms.author: mihart
+ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: 9c13f29b29742e62cb08c973e5444a7879e6222a
-ms.sourcegitcommit: 2cb249fc855e369eed1518924fbf026d5ee07eb1
+ms.openlocfilehash: bab0eba6e2ae3d0ec8ede57f9875385dbb26a60a
+ms.sourcegitcommit: 3f864ec22f99ca9e25cda3a5abda8a5f69ccfa8e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83812230"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84159868"
 ---
 # <a name="signing-up-for-power-bi-with-a-new-microsoft-365-trial"></a>Registrera dig för Power BI med en ny Microsoft 365-utvärderingsversion
 
-I den här artikeln beskrivs ett alternativt sätt att registrera dig för Power BI, om du inte redan har ett e-postkonto för arbetet eller skolan.
+I den här artikeln beskrivs ett alternativt sätt att registrera dig för Power BI-tjänsten, om du inte redan har ett e-postkonto för arbetet eller skolan.
 
 Om du har problem med att registrera dig för Power BI med din e-postadress måste du kontrollera att det är en [e-postadress som kan användas med Power BI](../fundamentals/service-self-service-signup-for-power-bi.md#supported-email-addresses). Om det inte lyckas kan du registrera dig för en Microsoft 365 utvärderingsversion och skapa ett arbetskonto. Använd sedan det nya arbetskontot för att registrera dig för Power BI-tjänsten. Du kommer att kunna använda Power BI även när utvärderingsversionen av Microsoft 365 upphör att gälla.
 
 ## <a name="sign-up-for-a-microsoft-365-trial-of-office"></a>Registrera dig för en Microsoft 365-utvärderingsversion av Office
+
 Registrera dig för en Microsoft 365-utvärderingsversion [på Microsoft 365-webbplatsen](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans). Om du inte redan har ett konto kommer Microsoft att vägleda dig genom stegen för att skapa ett. Eftersom kommersiella e-postkonton (som Hotmail och Gmail) inte fungerar med Microsoft 365 måste du skapa ett nytt konto som fungerar.  Det e-postkontot kommer att se ut ungefär så här: *zalan@onmicrosoft.com* .
 
 ![Välj Prova kostnadsfritt](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-try-free.png)

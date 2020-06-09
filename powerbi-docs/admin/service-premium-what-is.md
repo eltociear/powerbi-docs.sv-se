@@ -8,14 +8,14 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.custom: seodec18
+ms.custom: licensing support
 LocalizationGroup: Premium
-ms.openlocfilehash: 7c9f198ac15311948e1789173851a6c85debc856
-ms.sourcegitcommit: 2cb249fc855e369eed1518924fbf026d5ee07eb1
+ms.openlocfilehash: 1c72507759a69dc03f3d8b1510aef0e3ad369dd2
+ms.sourcegitcommit: 49daa8964c6e30347e29e7bfc015762e2cf494b3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83812460"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84272757"
 ---
 # <a name="what-is-power-bi-premium"></a>Vad är Power BI Premium?
 
@@ -36,7 +36,7 @@ Den här artikeln introducerar viktiga funktioner i Power BI Premium. Vid behov 
 
 ## <a name="subscriptions-and-licensing"></a>Prenumerationer och licensiering
 
-Power BI Premium är en prenumeration på klientnivå för Office 365, tillgänglig för två SKU-serier (lagerhållningsenhet):
+Power BI Premium är en Microsoft 365-prenumeration på klientorganisationsnivå, tillgänglig i två SKU-serier (lagerhållningsenhet):
 
 - **P**-SKU:er (P1–P5) för inbäddning och företagsfunktioner kräver ett månatligt eller årsvis åtagande, faktureras månadsvis och inkluderar en licens för installation av Power BI-rapportservern lokalt.
 
@@ -127,7 +127,7 @@ Avsnittskommentarer:
 
 ### <a name="regional-support"></a>Regional support
 
-När globala administratörer och Power BI-tjänstadministratörer skapar en ny kapacitet, kan de ange en region där arbetsytor som tilldelats till kapaciteten lagras. Detta kallas **Multi-Geo**. Med Multi-Geo kan organisationer uppfylla kraven på datahemvist genom att distribuera innehåll till datacenter i en viss region, även om den skiljer sig från den region där Office 365-prenumerationen finns. Mer information finns i [Multi-Geo-stöd för Power BI Premium](service-admin-premium-multi-geo.md).
+När globala administratörer och Power BI-tjänstadministratörer skapar en ny kapacitet, kan de ange en region där arbetsytor som tilldelats till kapaciteten lagras. Detta kallas **Multi-Geo**. Med Multi-Geo kan organisationer uppfylla kraven på datahemvist genom att distribuera innehåll till datacenter i en viss region, även om den skiljer sig från den region där Microsoft 365-prenumerationen finns. Mer information finns i [Multi-Geo-stöd för Power BI Premium](service-admin-premium-multi-geo.md).
 
 ### <a name="capacity-management"></a>Kapacitetshantering
 

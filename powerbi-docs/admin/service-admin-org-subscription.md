@@ -1,5 +1,5 @@
 ---
-title: Skaffa en Power BI-prenumeration för din organisation
+title: Skaffa en prenumeration på tjänsten Power BI för din organisation
 description: Hur du registrerar dig för en Power BI-tjänstprenumeration som administratör och köper licenser i bulk.
 author: kfollis
 ms.reviewer: ''
@@ -8,17 +8,18 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 05/13/2020
 ms.author: kfollis
+ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: 1bb8abab7d3f8430037b31e2797d62ce8d7b03e1
-ms.sourcegitcommit: 6ba7cc9afaf91229f717374bc0c12f0b8201d15e
+ms.openlocfilehash: 39ecda08527e0805b1ce26ebd9a1c83ceb57187b
+ms.sourcegitcommit: 3f864ec22f99ca9e25cda3a5abda8a5f69ccfa8e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "83438178"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84160052"
 ---
-# <a name="get-a-power-bi-subscription-for-your-organization"></a>Skaffa en Power BI-prenumeration för din organisation
+# <a name="get-a-power-bi-service-subscription-for-your-organization"></a>Skaffa en prenumeration på tjänsten Power BI för din organisation
 
-Administratörer kan registrera sig för Power BI via sidan **Köptjänster** på administrationscentret för Microsoft 365. När administratörer registrerar sig för Power BI kan de tilldela licenser till användare som ska ha åtkomst.
+Administratörer kan registrera sig för Power BI-tjänsten via sidan **Köptjänster** på administrationscentret för Microsoft 365. När administratörer registrerar sig för Power BI kan de tilldela licenser till användare som ska ha åtkomst.
 
 Användare i din organisation kan registrera sig för Power BI via Power BI-webbplatsen. När en användare i din organisation registrerar sig för Power BI, tilldelas användaren automatiskt en licens för Power BI. Om du vill inaktivera de här självbetjäningsfunktionerna följer du stegen i [Aktivera eller inaktivera registrering och inköp via självbetjäning](service-admin-disable-self-service.md).
 

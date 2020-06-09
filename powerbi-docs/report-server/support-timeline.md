@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/03/2020
-ms.openlocfilehash: 3546254c8bff56ac4caefbdd0b5f8df901256a59
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.date: 05/27/2020
+ms.openlocfilehash: 288e511c38df0326d07fad87f5d239cd5b0cfec0
+ms.sourcegitcommit: 0d8261a3cdef05ed8d4eb2aaffff2c1cc2098624
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "77527578"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84126283"
 ---
 # <a name="support-timeline-for-power-bi-report-server"></a>Supporttider för Power BI-rapportservern
 
@@ -35,9 +35,10 @@ Med den här supportpolicyn kan vi leverera nyheter till kunderna snabbt samt ge
 | Mars 2018 | 19 mars 2018 | Stöds inte längre |
 | Augusti 2018 | 15 augusti 2018 | Stöds inte längre |
 | Januari 2019 | 23 januari 2019 | Stöds inte längre |
-| Maj 2019 | 22 maj 2019 | 22 maj 2020 |
+| Maj 2019 | 22 maj 2019 | Stöds inte längre |
 | September 2019 | September 2019 | September 2020 
 | Januari 2020 | Januari 2020 | Januari 2021
+| Maj 2020 | Maj 2020 | Maj 2021
 
 Om du vill ladda ned Power BI-rapportservern och Power BI Desktop som är optimerat för Power BI-rapportserver, går du till [Lokal rapportering med Power BI-rapportserver](https://powerbi.microsoft.com/report-server/).
 
@@ -47,4 +48,4 @@ Om du vill ladda ned Power BI-rapportservern och Power BI Desktop som är optime
 [Administratörsöversikt](admin-handbook-overview.md)  
 [Installera Power BI-rapportserver](install-report-server.md)  
 
-Fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

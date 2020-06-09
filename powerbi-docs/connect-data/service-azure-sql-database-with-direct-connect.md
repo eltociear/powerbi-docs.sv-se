@@ -10,18 +10,21 @@ ms.reviewer: ''
 ms.custom: ''
 ms.date: 04/28/2020
 LocalizationGroup: Data from databases
-ms.openlocfilehash: aa1ae57d928633ce61ab66a8e0e905118c3a7877
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: aa4f07e32d66e7f9bdb2da7d210b2cc8c178b172
+ms.sourcegitcommit: cd64ddd3a6888253dca3b2e3fe24ed8bb9b66bc6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83302171"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84316050"
 ---
 # <a name="azure-sql-database-with-directquery"></a>Azure SQL Database med DirectQuery
 
 Här kan du lära dig hur du kan ansluta direkt till Azure SQL Database och skapa rapporter med realtidsdata. Du kan hålla dina data vid källan och inte i Power BI.
 
 Med DirectQuery skickas frågor tillbaka till din Azure SQL Database medan du utforskar dessa data i rapportvyn. Den här användningen föreslås för användare som är bekanta med databaser och de enheter som de ansluter till.
+
+> [!Important]
+> Den här beskrivningen förutsätter att Azure SQL Database inte finns bakom ett VNET eller har Private Link-slutpunkt aktiverat.
 
 **OBS:**
 
@@ -57,4 +60,4 @@ Du hittar det fullständigt kvalificerade servernamnet och databasnamnet i Azure
 * [Vad är Power BI?](../fundamentals/power-bi-overview.md)  
 * [Hämta data för Power BI](service-get-data.md)  
 
-Fler frågor? [Testa Power BI Community](https://community.powerbi.com/)
+Har du fler frågor? [Testa Power BI Community](https://community.powerbi.com/)

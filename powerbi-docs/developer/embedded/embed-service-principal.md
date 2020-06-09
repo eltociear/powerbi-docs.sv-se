@@ -1,6 +1,6 @@
 ---
-title: Tjänstens huvudnamn med Power BI
-description: Lär dig hur du registrerar en app i Azure Active Directory med hjälp av tjänstens huvudnamn och en apphemlighet för användning med inbäddning av Power BI-innehåll.
+title: Bädda in Power BI-innehåll med tjänstens huvudnamn och en programhemlighet
+description: Lär dig hur du använder autentisering med inbäddad analys med hjälp av en programhemlighet och tjänstens huvudnamn för ett Azure Active Directory-program.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -8,19 +8,24 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 03/30/2020
-ms.openlocfilehash: 5e9b14fb0eccc0418ca7d5b4a7859f26c1781d50
-ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
+ms.date: 05/12/2020
+ms.openlocfilehash: da7db691628b0fbcfd42d6a35f99b18b4cfdcc88
+ms.sourcegitcommit: cd64ddd3a6888253dca3b2e3fe24ed8bb9b66bc6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84121194"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84315875"
 ---
-# <a name="embedding-power-bi-content-with-service-principal-and-application-secret"></a>Bädda in Power BI innehåll med tjänstens huvudnamn och apphemlighet
+# <a name="embed-power-bi-content-with-service-principal-and-an-application-secret"></a>Bädda in Power BI-innehåll med tjänstens huvudnamn och en programhemlighet
 
 [!INCLUDE[service principal overview](../../includes/service-principal-overview.md)]
 
 I den här artikeln beskrivs autentisering med tjänstens huvudnamn med *program-ID* och *apphemlighet*.
+
+>[!NOTE]
+>Vi rekommenderar att du skyddar dina serverdelstjänster med certifikat, i stället för med hemliga nycklar.
+>* [Läs mer om hur du hämtar åtkomsttoken från Azure AD med hjälp av hemliga nycklar eller certifikat](https://docs.microsoft.com/azure/architecture/multitenant-identity/client-assertion).
+>* [Bädda in Power BI-innehåll med tjänstens huvudnamn och certifikat](embed-service-principal-certificate.md).
 
 ## <a name="method"></a>Metod
 
@@ -54,30 +59,12 @@ Skapa en Azure AD-app med någon av följande metoder:
 
 ### <a name="creating-an-azure-ad-app-in-the-microsoft-azure-portal"></a>Skapa en Azure AD-app i Microsoft Azure-portalen
 
-1. Logga in på [Microsoft Azure](https://portal.azure.com/#allservices).
-
-2. Sök efter **Appregistreringar** och klicka på länken **Appregistreringar**.
-
-    ![Azure-appregistrering](media/embed-service-principal/azure-app-registration.png)
-
-3. Klicka **Ny registrering**.
-
-    ![ny registrering](media/embed-service-principal/new-registration.png)
-
-4. Fyll i nödvändig information:
-    * **Namn** – Ange ett namn för ditt program
-    * **Kontotyper som stöds** – Välj det Azure AD-konto du behöver
-    * (Valfritt) **Omdirigerings-URI** – ange en URI om det behövs
-
-5. Klicka på **Registrera**.
-
-6. Efter registreringen är *Program-ID* tillgängligt på fliken **Översikt**. Kopiera och spara *Program-ID* för senare användning.
-
-    ![program-ID](media/embed-service-principal/application-id.png)
+[!INCLUDE[service create app](../../includes/service-principal-create-app.md)]
 
 7. Klicka på fliken **Certifikat och hemligheter**.
 
      ![program-ID](media/embed-service-principal/certificates-and-secrets.png)
+
 
 8. Klicka på **Ny klienthemlighet**
 
@@ -157,7 +144,7 @@ Lägg till den säkerhetsgrupp som du skapade i Azure AD i det specifika område
 
 ![Administratörsportalen](media/embed-service-principal/admin-portal.png)
 
-## <a name="step-4---add-the-service-principal-as-an-admin-to-your-workspace"></a>Steg 4 – Lägg till tjänstens huvudnamn som administratör för din arbetsyta
+## <a name="step-4---add-the-service-principal-to-your-workspace"></a>Steg 4 – Lägg till tjänstens huvudnamn i din arbetsyta
 
 Om du vill aktivera åtkomstartefakter för Azure AD-appen, till exempel rapporter, instrumentpaneler och datauppsättningar i Power BI-tjänsten, lägger du till entiteten för tjänstens huvudnamn som medlem eller administratör på din arbetsyta.
 
@@ -181,20 +168,21 @@ Du kan bädda in ditt innehåll med ett exempelprogram eller i ditt program.
 
 När ditt innehåll hasr bäddats in kan du [övergå till produktion](embed-sample-for-customers.md#move-to-production).
 
-## <a name="considerations-and-limitations"></a>Överväganden och begränsningar
-
-* Tjänstens huvudnamn fungerar bara med [nya arbetsytor](../../collaborate-share/service-create-the-new-workspaces.md).
-* **Min arbetsyta** stöds inte när du använder tjänstens huvudnamn.
-* Dedikerad kapacitet krävs vid flytt till produktion.
-* Du kan inte logga in på Power BI-portal med tjänstens huvudnamn.
-* Power BI-administratörsbehörighet krävs för att aktivera tjänstens huvudnamn i inställningarna för utvecklare i Power BI-administratörsportalen.
-* Det går inte att använda tjänstens huvudnamn för [inbäddning för organisationens](embed-sample-for-your-organization.md) program.
-* Hantering av [dataflöden](../../transform-model/service-dataflows-overview.md) stöds inte.
-* Tjänstens huvudnamn har för närvarande inte stöd för några administratörs-API:er.
-* Vid användning av tjänsthuvudnamn med en [Azure Analysis Services](https://docs.microsoft.com/azure/analysis-services/analysis-services-overview)-datakälla måste själva tjänsthuvudnamnet ha en Azure Analysis Services-instansbehörighet. Det fungerar inte att använda en säkerhetsgrupp som innehåller tjänsthuvudnamnet för detta ändamål.
+[!INCLUDE[service principal limitations](../../includes/service-principal-limitations.md)]
 
 ## <a name="next-steps"></a>Nästa steg
 
-* [Power BI Embedded för dina kunder](embed-sample-for-customers.md)
+>[!div class="nextstepaction"]
+>[Registrera en app](register-app.md)
 
-* [Säkerhet på radnivå med hjälp av lokal datagateway med tjänstens huvudnamn](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal)
+> [!div class="nextstepaction"]
+>[Power BI Embedded för dina kunder](embed-sample-for-customers.md)
+
+>[!div class="nextstepaction"]
+>[Objekt för program och tjänstens huvudnamn i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals)
+
+>[!div class="nextstepaction"]
+>[Säkerhet på radnivå med hjälp av lokal datagateway med tjänstens huvudnamn](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal)
+
+>[!div class="nextstepaction"]
+>[Bädda in Power BI-innehåll med tjänstens huvudnamn och certifikat](embed-service-principal-certificate.md)

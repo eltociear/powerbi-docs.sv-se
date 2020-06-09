@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/14/2020
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: 2f98071000715c65f50f39eb4d121a4af6e72f99
-ms.sourcegitcommit: 2cb249fc855e369eed1518924fbf026d5ee07eb1
+ms.openlocfilehash: b43d52445c9a5232ba1747a9dae9333da8697f84
+ms.sourcegitcommit: 49daa8964c6e30347e29e7bfc015762e2cf494b3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83813357"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84273079"
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nyheter i Power BI-tjänsten
 Kontrollera den här sidan för kända problem och nyligen utgivna funktioner i **Power BI-tjänsten**. Relaterad information om nyheter finns i:
@@ -646,7 +646,7 @@ Besök [bloggen](https://powerbi.microsoft.com/blog/power-bi-service-weekly-upda
 * Med den här veckans serviceuppdatering kan du välja bland flera storlekar samt definiera en egen sidstorlek när du skapar nya rapporter. Detta styr storleken och proportionerna på varje sida i rapporten.
 * Vi har lagt till ytterligare stöd för visuell formatering för bilder och bubbeldiagram. Du kan låsa proportionerna när du ändrar storleken på bilder för att undvika att de förvrängs och punktdiagram bubblor kan konfigureras att vara ifyllda eller ej.
 * Idag skickar Power BI delningsinbjudningar till en alternativ e-postadress. När en instrumentpanel delas med dig skickar vi en delningsinbjudan till både den ursprungliga e-postadressen och din alternativa e-postadress (om detta har konfigurerats).
-* Power BI är tillgängligt för alla kunder, inklusive kunder på Multitenant (DonMT) O365-arkitektur. Du kommer att använda Power BI som delad tjänst i läge för flera användare. I de flesta fall kan du registrera dig för Power BI genom att följa den enkla [registreringsprocessen med självservice](https://powerbi.microsoft.com/) – det är bara att ange din jobbmejladress, ange ditt namn och lösenord för att komma igång. Om du är klientadministratör kan du tilldela licenser till användare med [dessa](https://go.microsoft.com/fwlink/?LinkId=627174) instruktörer.
+* Power BI är tillgängligt för alla kunder, inklusive kunder på Multitenant (DonMT) Microsoft 365-arkitektur. Du kommer att använda Power BI som delad tjänst i läge för flera användare. I de flesta fall kan du registrera dig för Power BI genom att följa den enkla [registreringsprocessen med självservice](https://powerbi.microsoft.com/) – det är bara att ange din jobbmejladress, ange ditt namn och lösenord för att komma igång. Om du är klientadministratör kan du tilldela licenser till användare med [dessa](https://go.microsoft.com/fwlink/?LinkId=627174) instruktörer.
 * Med Azure-granskningsloggarna kan du visa de operativa loggarna på kontrollplan i din Azure-prenumeration. Innehållspaketet för Power BI Azure-granskningsloggar kan enkelt hjälpa dig att analysera och visualisera all information som finns i dessa loggar. Med innehållspaketet kan du ansluta till dina data och börja upptäcka insikter exempelinstrumentpaneler och -rapporter. Besök vår [blogg](https://powerbi.microsoft.com/blog/monitor-azure-audit-logs-with-power-bi/) och [onlinedokumentationen](../connect-data/service-connect-to-services.md) för mer information.
 
 [Läs mer i vår blogg](https://powerbi.microsoft.com/blog/power-bi-weekly-service-update-0929/).

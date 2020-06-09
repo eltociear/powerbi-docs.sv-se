@@ -8,17 +8,18 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 04/08/2020
 ms.author: kfollis
+ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: 2d5eab5dbbf600227611cadc870fab1b3e44a4b7
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 16cd210955ff358bd6bf64346b4e3169648bab8d
+ms.sourcegitcommit: 3f864ec22f99ca9e25cda3a5abda8a5f69ccfa8e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83138909"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84160029"
 ---
 # <a name="view-and-manage-power-bi-user-licenses"></a>Visa och hantera Power BI-användarlicenser
 
-Den här artikeln förklarar hur administratörer kan använda Administrationscenter för Microsoft 365 eller Azure-portalen för att visa och hantera användarlicenser.
+Den här artikeln förklarar hur administratörer kan använda Administrationscenter för Microsoft 365 eller Azure-portalen för att visa och hantera användarlicenser för Power BI-tjänsten.
 
 > [!NOTE]
 >

@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/13/2020
+ms.date: 06/02/2020
 ms.author: otarb
 LocalizationGroup: Connect to data
-ms.openlocfilehash: d5b57b782af52542ed944b5e5e7504a974ee9d81
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 2792c5b35d68dd38554209fe8fe065710c339381
+ms.sourcegitcommit: f05f7b0112a8ec2dce60839ea5f922eda3cc776c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83291430"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84336853"
 ---
 # <a name="run-python-scripts-in-power-bi-desktop"></a>Kör Python-skript i Power BI Desktop
 
@@ -118,9 +118,13 @@ Vi rekommenderar att du använder den officiella Python-distributionen från htt
 
 Du kan starta Power BI Desktop från din anpassade kommandotolk för din Python-miljö som en möjlig lösning.
 
-### <a name="refresh"></a>Refresh
+### <a name="refresh"></a>Uppdatera
 
 Du kan uppdatera ett Python-skript i Power BI Desktop. Uppdatera genom att gå till menyfliken **Start** och välja **Uppdatera**. När du uppdaterar ett Python-skript kör Power BI Desktop Python-skriptet igen.
+
+## <a name="known-limitations"></a>Kända begränsningar
+
+För närvarande kan du inte använda Python-skript i rapporter som skapats med funktionen **förbättrade metadata (förhandsversion)** aktiverad. Befintliga rapporter fortsätter att fungera. Mer information finns i artikeln om att [använda utökade datamängdsmetadata (förhandsversion)](desktop-enhanced-dataset-metadata.md). 
 
 ## <a name="next-steps"></a>Nästa steg
 

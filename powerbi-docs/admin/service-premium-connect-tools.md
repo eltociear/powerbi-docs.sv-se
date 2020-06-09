@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/26/2020
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 7a363af0bb8d6db9f0fd370b7c4b987b51c88221
-ms.sourcegitcommit: faa8cfb66e79ea16ba46605f752cc9ca57924d0e
+ms.openlocfilehash: 74ea78bf9f5e845eb86a38bad54ebde5e99ffbb0
+ms.sourcegitcommit: b66c913a50a5100082e1c8ff7cd1c4f76f514fe7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83382748"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "84219566"
 ---
 # <a name="dataset-connectivity-with-the-xmla-endpoint-preview"></a>Datamängdsanslutning med XMLA-slutpunkten (förhandsversion)
 
@@ -98,11 +98,14 @@ Program som ansluter till arbetsytan använder URL:en som om den vore ett Analys
 
 Användare med UPN i samma klientorganisation (inte B2B) kan ersätta klientnamnet med `myorg`. Till exempel,  `powerbi://api.powerbi.com/v1.0/myorg/Sales Workspace`.
 
+B2B-användare måste ange organisationens UPN som klientorganisationsnamn. Till exempel,  `powerbi://api.powerbi.com/v1.0/fabrikam.com/Sales Workspace`.
+
 ### <a name="to-get-the-workspace-connection-url"></a>Hämta arbetsytans anslutnings-URL
 
 I **Inställningar för arbetsyta** > **Premium** > **Arbetsytans anslutning** klickar du på **Kopiera**.
 
 ![Anslutningssträng för arbetsyta](media/service-premium-connect-tools/xmla-endpoint-workspace-connection.png)
+
 
 ## <a name="connection-requirements"></a>Anslutningskrav
 

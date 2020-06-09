@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/21/2019
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 48d3e997e0150f28ee4bfa41d282d3ba312bc230
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: af095964846cad264d1ac0ffd82e0c2ac6988a0e
+ms.sourcegitcommit: 49daa8964c6e30347e29e7bfc015762e2cf494b3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83273625"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84273424"
 ---
 # <a name="monitor-usage-metrics-for-power-bi-dashboards-and-reports"></a>Övervaka användningsstatistik för Power BI-instrumentpaneler och -rapporter
 
@@ -134,7 +134,7 @@ Om du vill visa mått för alla instrumentpaneler eller för alla rapporter i ar
 
 ## <a name="power-bi-admin-controls-for-usage-metrics"></a>Administratörskontroller för Power BI för användningsstatistik
 
-Användningsstatistikrapporter är en funktion som Power BI- eller Office 365-administratören kan aktivera eller inaktivera. Administratörerna har detaljerad kontroll över vilka användare som har åtkomst till användningsstatistiken. De är **aktiverade** som standard för alla användare i organisationen.
+Användningsstatistikrapporter är en funktion som den globala administratören eller Power BI-administratören kan aktivera eller inaktivera. Administratörerna har detaljerad kontroll över vilka användare som har åtkomst till användningsstatistiken. De är **aktiverade** som standard för alla användare i organisationen.
 
 > [!NOTE]
 > Endast administratörer för Power BI-klienten kan se administratörsportalen och redigera inställningarna. 

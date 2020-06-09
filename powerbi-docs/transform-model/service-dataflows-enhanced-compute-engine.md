@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/08/2020
+ms.date: 06/01/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: e126451bf016bf4e9dcce7b7a4df51db9ed20386
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: ec0d12ddf91b04654b90c5a3e7cdfda24bc04604
+ms.sourcegitcommit: cd64ddd3a6888253dca3b2e3fe24ed8bb9b66bc6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83320525"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84315912"
 ---
 # <a name="the-enhanced-compute-engine"></a>Den förbättrade beräkningsmotorn
 
@@ -31,6 +31,9 @@ I följande avsnitt beskrivs hur du aktiverar den förbättrade beräkningsmotor
 Du aktiverar den förbättrade beräkningsmotorn på sidan **Kapacitetsinställningar** i Power BI-tjänsten, i avsnittet **Dataflöden**. Den förbättrade beräkningsmotorn är **Av** som standard. Du aktiverar den genom att föra reglaget till **På** som i den här bilden, och sedan spara inställningarna. 
 
 ![Aktivera den förbättrade beräkningsmotorn](media/service-dataflows-enhanced-compute-engine/enhanced-compute-engine-01.png)
+
+> [!IMPORTANT]
+> Den förbättrade beräkningsmotorn fungerar bara för Power BI-kapaciteter med A3 och senare.
 
 När du har aktiverat den förbättrade beräkningsmotorn återgår du till dataflödena. Du bör se bättre prestanda för alla beräknade enheter som utför komplexa åtgärder, som *join* eller *group by*, för dataflöden som skapats från befintliga länkade entiteter i samma kapacitet. 
 

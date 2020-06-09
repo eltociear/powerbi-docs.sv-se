@@ -10,14 +10,14 @@ ms.topic: tutorial
 ms.date: 01/10/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: f7c907d31d4d58a9f39ad982e7d94f3f5ba3f118
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: 7e93e8a08b6dd662f3ada089c5ee8745bb24b3e2
+ms.sourcegitcommit: f05f7b0112a8ec2dce60839ea5f922eda3cc776c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82865578"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84337060"
 ---
-# <a name="create-and-view-decomposition-tree-visuals-in-power-bi-preview"></a>Skapa och visa det visuella objektet för nedbrytningsträd i Power BI (förhandsversion)
+# <a name="create-and-view-decomposition-tree-visuals-in-power-bi"></a>Skapa och visa det visuella objektet för nedbrytningsträd i Power BI
 
 [!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
 
@@ -32,6 +32,9 @@ I den här självstudien används två exempel:
 - Ett scenario med en leveranskedja som analyserar procentandelen produkter som ett företag har som restorder (slut i lager).  
 - Ett försäljningsscenario som delar upp videospelsförsäljning efter olika faktorer som spelgenre och utgivare.
 
+Du hittar det pbix som används i scenariot med en leveranskedja här: [Supply Chain Sample.pbix](
+https://github.com/microsoft/powerbi-desktop-samples/blob/master/Sample%20Reports/Supply%20Chain%20Sample.pbix).
+
 > [!NOTE]
 > För att dela en rapport med en Power BI-kollega krävs att du både har individuella Power BI Pro-licenser eller att rapporten har sparats med Premium-kapacitet.    
 
@@ -39,17 +42,21 @@ I den här självstudien används två exempel:
 Välj ikonen för nedbrytningsträd i fönstret Visualiseringar.
 ![Vattenstämpel för nedbrytningsträd](media/power-bi-visualization-decomposition-tree/tree-watermark.png)
 
-Visualiseringen kräver två typer av indata.
+Visualiseringen kräver två typer av indata:
 
-**Analysera** – Måttet som du vill analysera. Detta måste vara ett mått eller ett aggregat.  
-**Förklara med** – En eller flera dimensioner som du vill öka detaljnivån för.
+ - **Analysera** – Måttet som du vill analysera. Detta måste vara ett mått eller ett aggregat.  
+ - **Förklara med** – En eller flera dimensioner som du vill öka detaljnivån för.
 
-När du har dragit ditt mått till fältkällan visar uppdateringen av det visuella objektet det aggregerade måttet. I exemplet nedan visualiserar vi genomsnittet i % för produkterna på restorder (5,07 %) ![Nedbrytningsträdets rotnod](media/power-bi-visualization-decomposition-tree/tree-root.png)
+När du har dragit ditt mått till fältkällan visar uppdateringen av det visuella objektet det aggregerade måttet. I exemplet nedan visualiserar vi genomsnittet i % för produkterna på restorder (5,07 %).
+
+![Nedbrytningsträdets rotnod](media/power-bi-visualization-decomposition-tree/tree-root.png)
 
 Nästa steg är att ta med en eller flera dimensioner som du vill öka detaljnivån för. Lägg till dessa fält i bucketen **Förklara med**. Lägg märke till att ett plustecken visas bredvid rotnoden. Om du väljer + kan du välja vilket fält du vill detaljgranska i (du kan öka detaljnivån för fälten i valfri ordning).
+
 ![Meny för nedbrytningsträd](media/power-bi-visualization-decomposition-tree/tree-menu.png)
 
 Om du väljer **Prognosens bias** expanderas trädet och måttet delas upp i kolumnens värden. Den här processen upprepas om du väljer en annan nod.
+
 ![Expansion av nedbrytningsträd](media/power-bi-visualization-decomposition-tree/tree-expansion.png)
 
 Om du väljer en nod på den sista nivån korsfiltreras datan. Om du väljer en nod från en tidigare nivå ändras sökvägen.
@@ -72,10 +79,12 @@ Du kan använda ”AI-delningar” om du behöver hjälp med vad du ska titta ef
 
 Analysen kan fungera på två sätt beroende på dina inställningar. Standardbeteendet är följande:
 
-**Högt värde**: Tar hänsyn till alla tillgängliga fält och bestämmer vilka som ska genomsökas för att kunna hämta det högsta värdet för måttet som analyseras.  
-**Lågt värde**: Tar hänsyn till alla tillgängliga fält och bestämmer vilka som ska genomsökas för att kunna hämta det lägsta värdet för måttet som analyseras.  
+ - **Högt värde**: Tar hänsyn till alla tillgängliga fält och bestämmer vilka som ska genomsökas för att kunna hämta det högsta värdet för måttet som analyseras.  
+ - **Lågt värde**: Tar hänsyn till alla tillgängliga fält och bestämmer vilka som ska genomsökas för att kunna hämta det lägsta värdet för måttet som analyseras.  
 
-Om du väljer **Högt värde** i restorderexemplet får du följande resultat: ![AI-delning för nedbrytningsträd](media/power-bi-visualization-decomposition-tree/tree-ai-split.png)
+Om du väljer **Högt värde** i restorderexemplet får du följande resultat:
+
+![AI-delning för nedbrytningsträd](media/power-bi-visualization-decomposition-tree/tree-ai-split.png)
 
 En glödlampa visas bredvid **Produkttyp** och anger att detta är en ” AI-delning”. Trädet visar också en prickad linje som rekommenderar noden **Patientövervakning**, eftersom den innehåller det högsta värdet med restordrar (9,2 %). 
 
@@ -83,7 +92,9 @@ Hovra över glödlampan för att se en knappbeskrivning. I det här exemplet är
 
 Du kan konfigurera att det visuella objektet söker **Relativa** AI-delningar i stället för **Absoluta**. 
 
-Det relativa läget söker efter höga värden som utmärker sig (jämfört med resten av datan i kolumnen). Vi illustrerar detta med ett exempel: ![Absolut delning för nedbrytningsträd](media/power-bi-visualization-decomposition-tree/tree-ai-absolute.png)
+Det relativa läget söker efter höga värden som utmärker sig (jämfört med resten av datan i kolumnen). Vi illustrerar detta med ett exempel:
+
+![Absolut delning för nedbrytningsträd](media/power-bi-visualization-decomposition-tree/tree-ai-absolute.png)
 
 I skärmbilden ovan tittar vi på Nordamerikas försäljning av videospel. Först delar vi upp trädet efter **Utgivarnamn** och söker sedan i Nintendo. Om vi väljer **Högt värde** expanderas **Plattformen är Nintendo**. Eftersom Nintendo (utgivaren) bara utvecklar spel för Nintendo-konsoler finns det bara ett värde som är tillgängligt och som därför är det högsta värdet.
 
@@ -111,9 +122,13 @@ Om du föredrar att inte använda några AI-delningar i trädet, kan du välja a
 
 ## <a name="tree-interactions-with-ai-splits"></a>Trädinteraktioner med AI-delningar
 
-Du kan ha flera efterföljande AI-nivåer. Du kan också blanda olika typer av AI-nivåer (gå från Högt värde till Lågt värde och tillbaka till Högt värde): ![Nedbrytningsträd över flera AI-sökvägar](media/power-bi-visualization-decomposition-tree/tree-multi-ai-path.png)
+Du kan ha flera efterföljande AI-nivåer. Du kan också blanda olika typer av AI-nivåer (gå från Högt värde till Lågt värde och tillbaka till Högt värde):
 
-Om du väljer en annan nod i trädet räknas AI-delningen om från början. I exemplet nedan ändrade vi den valda noden i nivån **Prognosens bias**. De efterföljande nivåerna ändras till korrekta höga och låga värden ![AI-interaktioner för nedbrytningsträd](media/power-bi-visualization-decomposition-tree/tree-ai-interactions.png)
+![Nedbrytningsträd över flera AI-sökvägar](media/power-bi-visualization-decomposition-tree/tree-multi-ai-path.png)
+
+Om du väljer en annan nod i trädet räknas AI-delningen om från början. I exemplet nedan ändrade vi den valda noden i nivån **Prognosens bias**. De efterföljande nivåerna ändras till att ge korrekta höga och låga värden.
+
+![AI-interaktioner för nedbrytningsträd](media/power-bi-visualization-decomposition-tree/tree-ai-interactions.png)
 
 AI-nivåer räknas också om när du korsfiltrerar nedbrytningsträdet med ett annat visuellt objekt. I exemplet nedan kan vi se att vår restorder-% är störst för Fabrik 0477.
 
@@ -144,15 +159,11 @@ Nedbrytningsträd stöds inte i följande scenarier:
 
 AI-delningar stöds inte i följande scenarier:  
 -   Azure Analysis Services
--   Direct Query
 -   Power BI-rapportserver
 -   Publicera på webben
 -   Komplexa mått och mått från tilläggsscheman i ”Analysera”
 
-Andra begränsningar i förhandsversionen:
-- Power BI Mobile  
-- Fästa på instrumentpanelen
-- Visa datafunktioner
+Andra begränsningar:
 - Support i Frågor och svar
 
 ## <a name="next-steps"></a>Nästa steg

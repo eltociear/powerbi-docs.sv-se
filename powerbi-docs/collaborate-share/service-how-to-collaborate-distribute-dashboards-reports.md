@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 03/12/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: c71467a279ed3a2304d6af82f7493dac97425c4f
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 68ead14063c290c8ec9db5cb24814b93e493ea6b
+ms.sourcegitcommit: 49daa8964c6e30347e29e7bfc015762e2cf494b3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83348101"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84272964"
 ---
 # <a name="ways-to-share-your-work-in-power-bi"></a>Olika sätt att dela ditt arbete i Power BI
 
@@ -82,7 +82,7 @@ Anta att du har skapat en instrumentpanel och en rapport på din egen Min arbets
 
 ![Dela en rapport](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-share-report.png)
 
-Du behöver en Power BI Pro-licens för att dela innehåll, liksom de som du delar det med. Annars måste innehållet vara på en arbetsyta i en [Premium-kapacitet](../admin/service-premium-what-is.md). När du delar en instrumentpanel eller rapport kan mottagare som du delar med se den och interagera med den, men inte redigera den. De ser samma data som visas på instrumentpanelen och i rapporterna, såvida inte säkerhet på radnivå (RLS) tillämpas på den underliggande datauppsättningen. De medarbetare som du delar den med kan dela den med sina medarbetare, om du tillåter dem att göra så. 
+Du behöver en Power BI Pro-licens för att dela innehåll, liksom de som du delar det med. Annars måste innehållet vara på en arbetsyta i en [Premium-kapacitet](../admin/service-premium-what-is.md). När du delar en instrumentpanel eller rapport kan mottagare som du delar med se den och interagera med den, men inte redigera den. De ser samma data som du ser på instrumentpanelen eller i rapporten och får åtkomst till alla data i den underliggande datauppsättningen, såvida inte [säkerhet på radnivå (RLS)](../admin/service-admin-rls.md) tillämpas. De medarbetare som du delar den med kan dela den med sina medarbetare, om du tillåter dem att göra så. 
 
 Du kan dela en instrumentpanel med personer utanför din organisation. De kan även visa och interagera med instrumentpanelen eller rapporten, men de kan inte dela den. 
 
@@ -140,4 +140,4 @@ Med **Publicera på webben** kan du publicera Power BI-rapporter till hela inter
 
 Har du feedback till oss? Gå till [Power BI Community-webbplatsen](https://community.powerbi.com/) med dina förslag.
 
-Fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)

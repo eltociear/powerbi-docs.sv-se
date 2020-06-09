@@ -6,15 +6,15 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: troubleshooting
-ms.date: 09/13/2019
+ms.date: 05/28/2020
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 38f3b9e40001b5cc3d90d35ed56e768237345e5d
-ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
+ms.openlocfilehash: f28182b8ecfcadae92f64a725622493ebd7a6c61
+ms.sourcegitcommit: 3f864ec22f99ca9e25cda3a5abda8a5f69ccfa8e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84119802"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84160259"
 ---
 # <a name="troubleshooting-refresh-scenarios"></a>Felsöka uppdateringsscenarier
 
@@ -23,7 +23,14 @@ Här hittar du information om olika scenarier som du kan stöta på när du uppd
 > [!NOTE]
 > Om det uppstår ett fel som inte finns i listan nedan och det orsakar problem kan du be om mer hjälp på [community-webbplatsen](https://community.powerbi.com/), eller så kan du skapa ett [supportärende](https://powerbi.microsoft.com/support/).
 >
->
+
+Kontrollera alltid att de grundläggande kraven för uppdatering är uppfyllda och verifierade. Dessa grundläggande krav är:
+
+* Kontrollera att den senaste gateway-versionen används
+* Kontrollera att en gateway är vald för rapporten; om inte kan det bero på att datakällan ha ändrats eller att den saknas
+
+När du har bekräftat att dessa krav är uppfyllda kan du titta igenom följande avsnitt för att fortsätta felsökningen. 
+
 
 ## <a name="email-notifications"></a>E-postmeddelanden
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/29/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 636aaf59a3a949b5b3571012d12cecc234e9763b
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: e91698413df11a2f593128a616948935b65c0c4e
+ms.sourcegitcommit: 49daa8964c6e30347e29e7bfc015762e2cf494b3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83347963"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84272918"
 ---
 # <a name="filter-and-share-a-power-bi-report"></a>Filtrera och dela en Power BI-rapport
 *Dela* är ett bra sätt att ge ett fåtal användare åtkomst till dina instrumentpaneler och rapporter. Hur gör du om du vill dela en filtrerad version av en rapport? Kanske du vill att rapporten ska visa endast data för en viss ort, säljare eller år. Den här artikeln förklarar hur du filtrerar en rapport och delar den filtrerade versionen av rapporten. Ett annat sätt att dela en filtrerad rapport är att [lägga till frågeparametrar till rapportens URL](service-url-filters.md). I båda fallen filtreras rapporten när mottagarna öppnar den för första gången. De kan rensa filtervalen i rapporten.
@@ -77,9 +77,13 @@ Spara rapporten.
 
 7. När du delar den här länken visas den filtrerade rapporten för mottagarna. 
 
+## <a name="limitations-and-considerations"></a>Begränsningar och överväganden
+Saker att tänka på när det gäller att dela rapporter:
+
+* När du delar en datauppsättning genom att hantera behörigheter, genom att dela rapporter eller instrumentpaneler eller genom att publicera en app, beviljar du åtkomst till hela datauppsättningen om inte [säkerhet på radnivå (RLS)](../admin/service-admin-rls.md) begränsar deras åtkomst. Rapportförfattare kan använda funktioner som anpassar användarupplevelsen för att visa eller interagera med rapporter. De kan till exempel dölja kolumner, begränsa åtgärderna för visuella objekt med mera. Dessa anpassade användarupplevelser begränsar inte vilka data som användare kan komma åt i datauppsättningen. Använd [säkerhet på radnivå (RLS)](../admin/service-admin-rls.md) i datauppsättningen så att varje persons autentiseringsuppgifter avgör vilka data de har åtkomst till.
 
 ## <a name="next-steps"></a>Nästa steg
 * [Olika sätt att dela ditt arbete i Power BI](service-how-to-collaborate-distribute-dashboards-reports.md)
 * [Dela en instrumentpanel](service-share-dashboards.md)
-* Fler frågor? [Testa Power BI Community](https://community.powerbi.com/).
+* Har du fler frågor? [Testa Power BI Community](https://community.powerbi.com/).
 * Har du feedback till oss? Gå till [Power BI Community-webbplatsen](https://community.powerbi.com/) med dina förslag.

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/30/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 4082647338adcca8518cc4d9c3a3b88cc3e04f4f
-ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
+ms.openlocfilehash: b6e45113662117d5c6c793211644c4895f666a40
+ms.sourcegitcommit: 49daa8964c6e30347e29e7bfc015762e2cf494b3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "83794096"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84273355"
 ---
 # <a name="share-a-dataset"></a>Dela en datauppsättning
 
@@ -28,7 +28,7 @@ Som skapare av *datamodeller* i Power BI Desktop, skapar du *datauppsättningar*
 
 1. Publicera .pbix-filen till en [arbetsyta med den nya funktionen](../collaborate-share/service-create-the-new-workspaces.md) i Power BI-tjänsten.
     
-    Andra medlemmar i den här arbetsytan kan redan skapa rapporter på andra arbetsytor baserat på den här datamängden.
+    Andra medlemmar i den här arbetsytan kan redan skapa rapporter på andra arbetsytor baserat på den här datamängden. Använd alternativet Hantera behörigheter för datamängden i arbetsytans innehållslista för att ge ytterligare användare åtkomst till datamängden. 
 
 1. Du kan även [publicera en app](../collaborate-share/service-create-distribute-apps.md) från den här arbetsytan. När du gör det kan du på sidan **Behörigheter** ange vilka som har behörigheter och vad de kan göra.
 
@@ -50,6 +50,11 @@ När du har en delad datamängd på din arbetsyta kan du behöva veta vilka rapp
 1. Dialogrutan **Relaterat innehåll** visar alla relaterade objekt. I den här listan visas de relaterade objekten på den här arbetsytan och på **Andra arbetsytor**.
  
     ![Dialogrutan Relaterat innehåll](media/service-datasets-build-permissions/power-bi-dataset-related-workspaces.png)
+
+## <a name="limitations-and-considerations"></a>Begränsningar och överväganden
+Saker att tänka på när det gäller att dela datamängder:
+
+* När du delar en datamängd genom att hantera behörigheter, genom att dela rapporter eller instrumentpaneler eller genom att publicera en app, beviljar du åtkomst till hela datamängden om inte [säkerhet på radnivå (RLS)](../admin/service-admin-rls.md) begränsar deras åtkomst. Rapportförfattare kan använda funktioner som anpassar användarupplevelsen för att visa eller interagera med rapporter. De kan till exempel dölja kolumner, begränsa åtgärderna för visuella objekt med mera. Dessa anpassade användarupplevelser begränsar inte vilka data som användare kan komma åt i datamängden. Använd [säkerhet på radnivå (RLS)](../admin/service-admin-rls.md) i datamängden så att varje persons autentiseringsuppgifter avgör vilka data de har åtkomst till.
 
 ## <a name="next-steps"></a>Nästa steg
 

@@ -7,19 +7,48 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 04/08/2020
-ms.openlocfilehash: abe0b97a4c4f593f8bb22be8b72c12295d0f656c
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.date: 05/31/2020
+ms.openlocfilehash: 0391f0f2e4340b01c1f1ad7a3bce860487daabc9
+ms.sourcegitcommit: 49daa8964c6e30347e29e7bfc015762e2cf494b3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81006467"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84272665"
 ---
 # <a name="change-log-for-power-bi-report-server"></a>Ändringslogg för Power BI-rapportservern
 
 Den här ändringsloggen är avsedd för Power BI-rapportservern och visar nya objekt tillsammans med felkorrigeringar för varje utgiven version.
 
 Detaljerad information om nya funktioner finns [Nyheter i Power BI-rapportserver](whats-new.md). 
+
+
+## <a name="may-2020"></a>Maj 2020
+- **Power BI-rapportserver**
+    - *Version: 1.8.7450.37410 (version 15.0.1103.227), utgiven: 27 maj 2020*
+         - Funktioner
+            -  Stöd har lagts till för anpassningsbar storlek på kataloganslutningspool (se [inställningen MaxCatalogConnectionPoolSizePerProcess](https://docs.microsoft.com/sql/reporting-services/report-server/rsreportserver-config-configuration-file?view=sql-server-ver15#bkmk_service) för mer information).
+            -  Bättre beteende när du visar en rapport under en uppdateringsåtgärd.
+        - Säkerhetsuppdateringar
+        - Felkorrigeringar
+            - Åtgärdat två problem som rör enkla citattecken i mapp- och rapportnamn.
+            - Åtgärdat ett problem som rör den vågräta rullningen med vissa webbläsare och funktionen Visa poster.
+            - Åtgärdat ett problem där schemalagd uppdateringen när rapporten är öppen ibland kan leda till schemaläggningsfel i den underliggande modellen.
+            - Åtgärdat ett problem där alternativtext för PDF-export inte kodades korrekt för tecken med flera byte.
+            - Åtgärdat ett problem där anpassade program som kör LoadReport felaktigt fick ett TrustedHeader-fel.
+            - Åtgärdat ett problem där hög belastning från schemalagd uppdatering kunde leda till misslyckade uppdateringar.
+            - Åtgärdat ett problem där rapporter sparades på fel plats om rapportnamnet matchade mappnamnet.
+            - Åtgärdat problem med tabbordning i dokumentöversikten.
+            - Åtgärdat ett problem med datadrivna prenumerationer som misslyckades när de använde DAX-frågor.
+            - Åtgärdat ett problem i URL-åtkomst som gör att FindString inte kan hitta matchningar.
+            - Åtgärdat ett problem som gjorde att inbäddade datakällor inte fungerade när rapporter flyttades.
+            - Åtgärdat ett problem som gjorde att den schemalagda uppdateringen misslyckades för vissa datakällor.
+            - Lagt till validering i schemaläggning av rapporter för att minska möjligheter för ogiltiga begäranden.
+
+
+- **Power BI Desktop (optimerad för Power BI-rapportservern)**
+    - *Version: 2.81.5831.941 (maj 2020), utgiven: 27 maj 2020* (ny build och ny version)
+        - Innehåller ändringar som krävs för anslutning till Power BI-rapportservern (maj 2020)        
+
 
 
 ## <a name="january-2020"></a>Januari 2020

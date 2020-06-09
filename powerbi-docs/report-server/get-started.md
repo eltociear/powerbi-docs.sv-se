@@ -4,17 +4,17 @@ description: Få en översikt över Power BI-rapportservern för att förstå hu
 keywords: ''
 author: maggiesMSFT
 ms.author: maggies
-ms.date: 05/14/2020
+ms.date: 05/28/2020
 ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc
-ms.openlocfilehash: 55a3614c5da2ea8b5ea1a8cbb6ee87b20c542df4
-ms.sourcegitcommit: 6ba7cc9afaf91229f717374bc0c12f0b8201d15e
+ms.openlocfilehash: a1d62ad9cd8475e217a0ae051919792970dbb34d
+ms.sourcegitcommit: b66c913a50a5100082e1c8ff7cd1c4f76f514fe7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "83438302"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "84219582"
 ---
 # <a name="what-is-power-bi-report-server"></a>Vad är Power BI-rapportserver?
 
@@ -26,7 +26,9 @@ Power BI-rapportservern är en lokal rapportserver med en webbportal som du kan 
 Power BI-rapportserver är lik både SQL Server Reporting Services och Power BI-tjänsten online, men på olika sätt. Precis som Power BI-tjänsten är Power BI Report Server värd för Power BI-rapporter(.pbix), Excel-filer och sidnumrerade rapporter (.rdl). Precis som Reporting Services är Power BI Report Server lokal. Power BI Report Server är en supermängd av Reporting Services: allt som du kan göra i Reporting Services kan du göra med Power BI-rapportservern och mer, tillsammans med stöd för Power BI-rapporter. Se [Jämföra Power BI-rapportservern och Power BI-tjänsten](compare-report-server-service.md) för mer information.
 
 ## <a name="licensing-power-bi-report-server"></a>Licensiera Power BI-rapportserver
-Power BI-rapportserver finns tillgänglig via två olika licenser: [Power BI Premium](../admin/service-premium-what-is.md) och SQL Server Enterprise Edition med Software Assurance. Mer information finns i [Microsoft-volymlicensiering](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=1&ShowArchived=True). Med Power BI Premium-licensen kan du skapa en hybrid distributionsblandning för moln och lokalt.  
+Power BI-rapportserver finns tillgänglig via två olika licenser: [Power BI Premium](../admin/service-premium-what-is.md) och SQL Server Enterprise Edition med Software Assurance. Mer information finns i [Microsoft-volymlicensiering](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=1&ShowArchived=True). Med Power BI Premium-licensen kan du skapa en hybrid distributionsblandning för moln och lokalt.
+
+Om du publicerar Power BI-rapporter till en Power BI-rapportserver måste du också ha en Power BI Pro-licens. Du behöver ingen Power BI Pro-licens för att visa och interagera med Power BI-rapporter på en Power BI-rapportserver.
 
 > [!NOTE]
 > När det gäller Power BI Premium inkluderas Microsoft Power BI-rapportserver enbart med P SKU:er. Det inkluderas inte med EM SKU:er.

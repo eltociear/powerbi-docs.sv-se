@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/21/2019
 ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 1816fb7926ed378cdb70ce2e0ade08893828ce4c
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 1d0dcc80c358fa4c6f0768d515c399a3f381bfe7
+ms.sourcegitcommit: 49daa8964c6e30347e29e7bfc015762e2cf494b3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83301343"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84273378"
 ---
 # <a name="troubleshoot-importing-access-and-excel-xls-files-in-power-bi-desktop"></a>Felsöka import av Access- och Excel-filer (.xls) i Power BI Desktop
 
@@ -30,7 +30,7 @@ Om du får ett felmeddelande i Power BI Desktop om att Access-databasmotorn inte
 
 ## <a name="situation-2-the-access-database-engine-bit-version-32-bit-or-64-bit-is-different-from-your-power-bi-desktop-bit-version"></a>Situation 2: Antalet bitar för Access-databasmotorn (32 eller 64 bitar) är inte samma som för Power BI Desktop-versionen
 
-Den här situationen ofta uppstår när den installerade versionen av Microsoft Office är 32-bitars och versionen av Power BI Desktop installerat 64-bitars. Motsatsen kan också inträffa, och i båda fallen är matchningen ogiltig. Om du använder en Office 365-prenumeration kan du läsa om ett annat problem och en lösning i [situation 3](#situation-3-trouble-using-access-or-xls-files-with-an-office-365-subscription). Något av följande lösningar kan åtgärda versionsmatchningsfelet:
+Den här situationen ofta uppstår när den installerade versionen av Microsoft Office är 32-bitars och versionen av Power BI Desktop installerat 64-bitars. Motsatsen kan också inträffa, och i båda fallen är matchningen ogiltig. Om du använder en Microsoft 365-prenumeration kan du läsa om ett annat problem och en lösning i [situation 3](#situation-3-trouble-using-access-or-xls-files-with-a-microsoft-365-subscription). Något av följande lösningar kan åtgärda versionsmatchningsfelet:
 
 ### <a name="solution-1"></a>Lösning 1
 
@@ -46,7 +46,7 @@ Den här situationen ofta uppstår när den installerade versionen av Microsoft 
  
 1. På skärmen som visas markerar du kryssrutan bredvid PBIDesktop.msi om du vill ha 32-bitarsversionen, eller PBIDesktop_x64.msi om du vill ha 64-bitarsversionen. 
 
-   I följande bild är 64-bitarsversionen vald.
+   I följande skärmbild är 64-bitarsversionen vald.
    
    ![Välj version av Power BI Desktop att ladda ned](media/desktop-access-database-errors/desktop-access-errors-2.png)
    
@@ -79,9 +79,9 @@ Så här installerar du båda versionerna av Access-databasmotorn:
    
        c:\users\joe\downloads\AccessDatabaseEngine_x64.exe /passive
 
-## <a name="situation-3-trouble-using-access-or-xls-files-with-an-office-365-subscription"></a>Situation 3: Problem med åtkomst eller .XLS-filer med en Office 365-prenumeration
+## <a name="situation-3-trouble-using-access-or-xls-files-with-a-microsoft-365-subscription"></a>Situation 3: Problem med Access- eller .XLS-filer med en Microsoft 365-prenumeration
 
-Om du använder en Office 365-prenumeration, oavsett om det är **Office 2013** eller **Office 2016**, så är providern för Access-databasmotorn registrerad på en virtuell registerplats som *bara* Microsoft Office-processer har åtkomst till. Därför kan inte kombinationsmotorn (som ansvarar för att köra processer som inte hör till Office 365 Excel eller Power BI Desktop) använda providern för Access-databasmotorn.
+Om du använder en Microsoft 365-prenumeration, oavsett om det är **Office 2013** eller **Office 2016**, så är providern för Access-databasmotorn registrerad på en virtuell registerplats som *bara* Microsoft Office-processer har åtkomst till. Därför kan inte kombinationsmotorn (som ansvarar för att köra processer som inte hör till Office 365 Excel eller Power BI Desktop) använda providern för Access-databasmotorn.
 
 Du kan komma runt det här genom att [ladda ned och installera den distribuerbara version av Access-databasmotorns](https://www.microsoft.com/download/details.aspx?id=13255) som matchar bitversionen för din Power BI Desktop-installation. Mer information om bitversioner finns längre bak i den här artikeln.
 

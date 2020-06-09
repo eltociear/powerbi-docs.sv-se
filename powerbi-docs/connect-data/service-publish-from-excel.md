@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/05/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: ca3e954f64665798c439fba47c3135e93fe51ac0
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 9bbd5cbafa7f6c17fd9b9a02b93a27cc5859ee4a
+ms.sourcegitcommit: 49daa8964c6e30347e29e7bfc015762e2cf494b3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83305621"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84272780"
 ---
 # <a name="publish-to-power-bi-from-microsoft-excel"></a>Publicera till Power BI från Microsoft Excel
 Med Microsoft Excel 2016 och nyare kan du publicera dina Excel-arbetsböcker direkt till din [Power BI](https://powerbi.microsoft.com)-arbetsyta, där du kan skapa interaktiva rapporter och instrumentpaneler baserat på data i arbetsboken. Du kan sedan dela dina insikter med andra i din organisation.
@@ -39,7 +39,7 @@ Om du väljer **Exportera**kan du exportera tabelldata och dess datamodell till 
 Excel stöder publicering av lokala Excel-filer. De behöver inte sparas till OneDrive för företag eller SharePoint Online.
 
 > [!IMPORTANT]
-> Du kan bara publicera lokala filer om du använder Excel 2016 (eller senare) med en prenumeration på Office 365. Fristående versioner av Excel 2016 kan publicera till Power BI, men endast när arbetsboken sparas i OneDrive för företag eller SharePoint Online.
+> Du kan bara publicera lokala filer om du använder Excel 2016 (eller senare) med en prenumeration på Microsoft 365. Fristående versioner av Excel 2016 kan publicera till Power BI, men endast när arbetsboken sparas i OneDrive för företag eller SharePoint Online.
 > 
 
 När du väljer **Publicera** kan du välja vilken arbetsyta du vill publicera till. Om din Excel-fil finns på OneDrive för företag kan du bara publicera till din *Min arbetsyta*. Om din Excel-fil finns på en lokal enhet kan du publicera till *Min arbetsyta* eller en delad arbetsyta som du har åtkomst till.

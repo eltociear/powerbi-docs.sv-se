@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/05/2020
+ms.date: 05/28/2020
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 373ad0d230b3d9d7b9d35909d086b0611637f0e2
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: a0000d2e0da3613bb74e8d3d0aed2dd7fa3e3dcc
+ms.sourcegitcommit: 3f864ec22f99ca9e25cda3a5abda8a5f69ccfa8e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83326045"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84160282"
 ---
 # <a name="create-and-manage-relationships-in-power-bi-desktop"></a>Skapa och hantera relationer i Power BI Desktop
 När du importerar flera tabeller är det möjligt att du kommer att utföra analyser med data från alla tabellerna. Det måste finnas relationer mellan dessa tabeller för korrekt beräkning av resultat och för att rätt information ska visas i dina rapporter. Med Power BI Desktop blir det enkelt att skapa dessa relationer. I de flesta fall behöver du faktiskt inte behöver göra något alls. Funktionen Identifiera automatiskt gör det åt dig. I vissa fall kan du dock behöva skapa relationerna själv eller göra ändringar i en relation. Oavsett vilket är det viktigt att förstå relationer i Power BI Desktop, samt hur du skapar och redigerar dem.
@@ -59,7 +59,7 @@ Du kan konfigurera ytterligare alternativ när du skapar eller redigerar en rela
 ### <a name="cardinality"></a>Kardinalitet
 Alternativet **Kardinalitet** kan ha en av följande inställningar:
 
-**Många till en (\*:1)** : Många-till-en är den vanligaste standardtypen av relation. Det innebär att en kolumn i en tabell kan ha fler än en instans av ett värde och att den andra relaterade tabellen, som ofta kallas för uppslagstabell, endast har en instans av ett värde.
+**Många till en (\*:1)** : Många-till-en är den vanligaste standardtypen av relation. Det innebär att en kolumn i en given tabell kan ha fler än en instans av ett värde och att den andra relaterade tabellen, som ofta kallas för uppslagstabell, endast har en instans av ett värde.
 
 **En till en (1:1)** : I en en-till-en-relation har kolumnen i en tabell endast en instans av ett visst värde, och den andra relaterade tabellen har endast en instans av ett visst värde.
 

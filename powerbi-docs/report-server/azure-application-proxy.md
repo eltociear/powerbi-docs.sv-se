@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 03/06/2020
+ms.date: 05/27/2020
 ms.author: maggies
-ms.openlocfilehash: 548e66685c7b460829e171d097d18640cd5b0f57
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 3bd792c585f42add6652205a6e4a99fe116ad20f
+ms.sourcegitcommit: 3f864ec22f99ca9e25cda3a5abda8a5f69ccfa8e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78922607"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84159845"
 ---
 # <a name="configure-power-bi-report-server-with-azure-application-proxy"></a>Konfigurera en Power BI-rapportserver med Azure-programproxy
 
@@ -166,7 +166,10 @@ Vi har konfigurerat den externa URL:en som ska vara `https://pbirsazureapp-umaco
 
 ![Standardanslutningsgrupp](media/azure-application-proxy/report-server-application-proxy-1.png)
 
-Inga ändringar har gjorts i avsnittet **Ytterligare inställningar**. Den har konfigurerats för att fungera med standardalternativen:
+Inga ändringar har gjorts i avsnittet **Ytterligare inställningar**. Det har konfigurerats för att fungera med standardalternativen.
+
+> [!IMPORTANT]
+> Observera att egenskapen **Tidsgränsen gick ut för serverdels-programmet** är inställd på **Standard** (85 sekunder) när du konfigurerar programproxyn. Om du har rapporter som tar längre tid än 85 sekunder att köra ställer du in den här egenskapen på **Lång** (180 sekunder), vilket är det högsta möjliga tidsgränsvärdet. När den är inställd på **Lång** måste alla rapporter slutföras inom 180 sekunder. Annars överskrider de tidsgränsen, vilket resulterar i ett fel.
 
 ![Ytterligare inställningar](media/azure-application-proxy/report-server-application-proxy-1.png)
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/15/2020
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: f057395361840b7b16fa8a7cde5a6d2513196845
-ms.sourcegitcommit: 6ba7cc9afaf91229f717374bc0c12f0b8201d15e
+ms.openlocfilehash: c43b0710c15fcc77a08aa789a92d840d2425f5ab
+ms.sourcegitcommit: cd64ddd3a6888253dca3b2e3fe24ed8bb9b66bc6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "83438233"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84315958"
 ---
 # <a name="subscribe-yourself-and-others-to-reports-and-dashboards-in-the-power-bi-service"></a>Skapa en prenumeration åt dig eller andra på rapporter och instrumentpaneler i Power BI-tjänsten
 
@@ -71,6 +71,10 @@ Prenumeration på sidnumrerade rapporter fungerar lite annorlunda. Mer informati
 1. (Valfritt) Välj om du vill ta med en länk tillbaka till innehållet i Power BI och om du vill ge användarna åtkomst till det innehåll som prenumerationen gäller.  Om du väljer att ta med en länk ska du även se till att alla användare har åtkomst till rapporten.
 2. Välj **Spara och stäng**. Användare som prenumererar får ett e-postmeddelande och en ögonblicksbild eller rapportsida för den frekvens och tid du har valt. Totalt kan du skapa upp till 24 prenumerationer per rapport eller instrumentpanel och kan ange unika mottagare, tider och frekvenser för varje prenumeration. Alla prenumerationer med frekvensen **Efter datauppdatering** inställd för din instrumentpanel eller rapport skickar fortfarande bara ett e-postmeddelande efter den första schemalagda uppdateringen.
 
+    > [!NOTE]
+    > Om du redigerar prenumerationen efter att du har sparat och stängt aktiveras alternativet att ge användarna åtkomst till innehållet som prenumerationen gäller, oavsett dina tidigare val.
+    >
+
     > [!TIP]
     > Vill du skicka e-postmeddelandet från en prenumeration direkt eller på begäran vid valfri tidpunkt? Välj **Kör nu** för prenumerationerna för den instrumentpanel eller rapport du vill skicka. Du får därmed ett meddelande om att ett e-postmeddelande skickas till alla för den specifika prenumerationen. Den här åtgärden räknas inte mot din gräns på 24 schemalagda prenumerationskörningar per dag per rapport eller instrumentpanel. Detta utlöser INTE en datauppdatering av den underliggande datamängden.
     >
@@ -112,6 +116,7 @@ Power BI-administratörer kan använda Power BI-spårningsloggar till att visa i
 - Om din instrumentpanel eller rapport finns i Premium-kapacitet kan du använda grupp-e-postalias för prenumerationer i stället för att prenumerera kollegor med en e-postadress i taget. Alias baseras på aktuell aktiv katalog.
 - Om ditt innehåll inte finns i en Premium-kapacitet kan endast Power BI Pro-användare få e-postprenumerationer. 
 - Prenumerationer stöder för närvarande inte bokmärken.
+- Alternativet för att ge åtkomst till rapporten/instrumentpanelen visas alltid som aktiverat när du redigerar en befintlig prenumeration.  Om du avmarkerar det här alternativet och sparar prenumerationen sparas detta tillstånd. Men när du väljer att redigera rapporten igen kommer det att vara markerat som standard.
 
 ### <a name="dashboards"></a>Instrumentpaneler
 

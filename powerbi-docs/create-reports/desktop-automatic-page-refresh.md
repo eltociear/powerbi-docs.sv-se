@@ -7,15 +7,15 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/26/2019
+ms.date: 06/03/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 7c9ba490a2cc30d42fee4f2317dbf5d4026ab59a
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 1ff21d0508889fecda5022edb0e48714c8be3ed6
+ms.sourcegitcommit: f05f7b0112a8ec2dce60839ea5f922eda3cc776c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83299710"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84337106"
 ---
 # <a name="automatic-page-refresh-in-power-bi-desktop-preview"></a>Automatisk sidouppdatering i Power BI Desktop (förhandsversion)
 
@@ -25,7 +25,7 @@ Med funktionen för automatisk siduppdatering i Power BI kan aktiva rapportsida 
 
 ## <a name="using-automatic-page-refresh"></a>Använda automatisk siduppdatering
 
-I den här förhandsversionen måste du aktivera funktionen för automatisk siduppdatering i Power BI Desktop. Gå till **Arkiv > Alternativ och inställningar** > **Alternativ** och välj sedan **Förhandsgranskningsfunktioner** i den vänstra rutan. Aktivera funktionen genom att markera kryssrutan bredvid *Automatisk siduppdatering*. Automatisk siduppdatering är endast tillgängligt för DirectQuery-datakällor.
+I den här förhandsversionen måste du aktivera funktionen för automatisk siduppdatering i Power BI Desktop. Gå till **Arkiv > Alternativ och inställningar** > **Alternativ** och välj sedan **Förhandsgranskningsfunktioner** i den vänstra rutan. Aktivera funktionen genom att markera kryssrutan bredvid *Automatisk siduppdatering*. Automatisk siduppdatering är *endast* tillgängligt för DirectQuery-datakällor.
 
 Om du vill använda automatisk siduppdatering väljer du den rapportsida som du vill aktivera uppdateringen för. I fönstret **Visualiseringar** väljer du ikonen **Formatering** (en målarroller) och **Siduppdatering** längst ned i fönstret. 
 
@@ -121,15 +121,15 @@ Här visas information om de två scenarierna för arbetsytor:
 
  1. *Funktion på/av* : Om din kapacitetsadministratör har valt att inaktivera funktionen kan du inte konfigurera någon typ av siduppdatering i den publicerade rapporten.
 
- 2. *Minsta uppdateringsintervall*: När funktionen aktiveras måste kapacitetsadministratören ange ett lägsta uppdateringsintervall. Om intervallet är lägre än minimivärdet åsidosätter Power BI-tjänsten intervallet och använder det lägsta intervall som angetts av kapacitetsadministratören.
+ 2. *Minsta uppdateringsintervall*: När funktionen aktiveras måste kapacitetsadministratören ange ett lägsta uppdateringsintervall. Om ditt intervall är lägre än minimivärdet *åsidosätter* Power BI-tjänsten ditt intervall och använder det lägsta intervall som angetts av kapacitetsadministratören. Åsidosättningen kallas *Åsidosättning av kapacitetsadministratör* i följande tabell. 
 
-Tabellen nedan innehåller mer information om var den här funktionen är tillgänglig, samt begränsningarna för varje kapacitetstyp och [lagringsläge](../connect-data/service-dataset-modes-understand.md)
+Tabellen nedan innehåller mer information om var den här funktionen är tillgänglig, samt begränsningarna för varje kapacitetstyp och [lagringsläge](../connect-data/service-dataset-modes-understand.md):
 
 | Lagringsläge | Dedikerad kapacitet | Delad kapacitet |
 | --- | --- | --- |
 | Direct Query | **Stöds** – Ja. <br>**Minsta uppdateringsintervall** – 1 sekund <br>**Åsidosättning av kapacitetsadministratör** – Ja. | **Stöds** – Ja. <br>**Minsta uppdateringsintervall** – 30 minuter <br>**Åsidosättning av kapacitetsadministratör** – Nej. |
 | Importera | **Stöds** – Nej. <br>**Lägsta uppdateringsintervall** – Ej tillämpligt. <br>**Åsidosättning av kapacitetsadministratör** – Ej tillämpligt. | **Stöds** – Nej. <br>**Lägsta uppdateringsintervall** – Ej tillämpligt. <br>**Åsidosättning av kapacitetsadministratör** – Ej tillämpligt. |
-| Blandat läge (DQ + andra) | **Stöds** – Ja. <br>**Minsta uppdateringsintervall** – 1 sekund <br>**Åsidosättning av kapacitetsadministratör** – Ja. | **Stöds** – Ja. <br>**Minsta uppdateringsintervall** – 30 minuter <br>**Åsidosättning av kapacitetsadministratör** – Nej. |
+| Blandat läge (DirectQuery + andra datakällor) | **Stöds** – Ja. <br>**Minsta uppdateringsintervall** – 1 sekund <br>**Åsidosättning av kapacitetsadministratör** – Ja. | **Stöds** – Ja. <br>**Minsta uppdateringsintervall** – 30 minuter <br>**Åsidosättning av kapacitetsadministratör** – Nej. |
 | Live Connect AS | **Stöds** – Nej. <br>**Lägsta uppdateringsintervall** – Ej tillämpligt. <br>**Åsidosättning av kapacitetsadministratör** – Ej tillämpligt. | **Stöds** – Nej. <br>**Lägsta uppdateringsintervall** – Ej tillämpligt. <br>**Åsidosättning av kapacitetsadministratör** – Ej tillämpligt. |
 | Live Connect PBI | **Stöds** – Nej. <br>**Lägsta uppdateringsintervall** – Ej tillämpligt. <br>**Åsidosättning av kapacitetsadministratör** – Ej tillämpligt. | **Stöds** – Nej. <br>**Lägsta uppdateringsintervall** – Ej tillämpligt. <br>**Åsidosättning av kapacitetsadministratör** – Ej tillämpligt. |
 
@@ -186,7 +186,7 @@ Det här avsnittet innehåller vanliga frågor och svar för
     * Inställningen av automatisk siduppdatering som görs i användargränssnittet för kapacitetsadministratörer tar upp till 5 minuter att spridas till rapporterna.
     * Förutom att aktivera automatisk siduppdatering för kapaciteten, måste du också aktivera det för sidorna i rapporten.
 
-3. Min rapport körs i blandat läge (DQ + import). Alla visuella objekt uppdateras inte.
+3. Min rapport körs i blandat läge (blandat läge innebär att rapporten har en DirectQuery-anslutning och en importdatakälla). Alla visuella objekt uppdateras inte.
 
     * Om dina visuella objekt refererar till importtabeller är detta normalt. automatisk siduppdatering stöds inte för import.
     * Se fråga 1 i det här avsnittet.
@@ -211,6 +211,7 @@ Det här avsnittet innehåller vanliga frågor och svar för
 Mer information finns i följande artiklar:
 
 * [Använd DirectQuery i Power BI](../connect-data/desktop-directquery-about.md)
+* [Använda sammansatta modeller i Power BI Desktop](../transform-model/desktop-composite-models.md)
 * [Använda Prestandaanalys till att undersöka prestanda för rapportelement](desktop-performance-analyzer.md)
 * [Distribuera och hantera Power BI Premium-kapaciteter](../guidance/whitepaper-powerbi-premium-deployment.md)
 * [Datakällor i Power BI Desktop](../connect-data/desktop-data-sources.md)

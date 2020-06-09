@@ -8,13 +8,14 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 04/08/2020
 ms.author: kfollis
+ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: cce546b489e0f49ff87af22f4955af1922f628e5
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: fc0bfea05449b3169e7a5f73a4c096d28579b35c
+ms.sourcegitcommit: 3f864ec22f99ca9e25cda3a5abda8a5f69ccfa8e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83344973"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84159684"
 ---
 # <a name="purchase-and-assign-power-bi-pro-user-licenses"></a>Köpa och tilldela Power BI Pro-användarlicenser
 
@@ -38,6 +39,9 @@ För att kunna tilldela licenser i Azure-portalen måste du vara ägare till den
 
 ### <a name="purchase-licenses-in-microsoft-365"></a>Köpa licenser i Microsoft 365
 
+> [!NOTE]
+> Om du vanligtvis köper licenser via ett volymlicensavtal, som ett Enterprise-avtal, och vill få en faktura i stället för att köpa med ett kreditkort eller ett bankkonto, måste du skicka beställningen på ett annat sätt. Kontakta din Microsoft-återförsäljare eller gå via Volume Licensing Service Center om du vill lägga till eller ta bort licenser. Mer information finns i [Hantera prenumerationslicenser](https://docs.microsoft.com/microsoft-365/commerce/licenses/buy-licenses?view=o365-worldwide).
+
 Så här köper du Power BI Pro-licenser i administrationscentret för Microsoft 365:
 
 1. Logga in på [Administrationscenter för Microsoft 365](https://admin.microsoft.com).
@@ -57,6 +61,7 @@ Så här köper du Power BI Pro-licenser i administrationscentret för Microsoft
 8. Bekräfta ditt köp genom att gå till **Fakturering** > **Produkter och tjänster** och leta efter **Power BI Pro**.
 
 9. Om du vill lägga till fler licenser senare letar du upp **Power BI Pro** på sidan **Produkter och tjänster** och väljer sedan **Lägg till/ta bort licenser**.
+
 
 ## <a name="assign-licenses-in-the-microsoft-365-admin-center"></a>Tilldela licenser i administrationscentret för Microsoft 365
 

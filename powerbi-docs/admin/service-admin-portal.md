@@ -10,12 +10,12 @@ ms.date: 05/12/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 605d35d55f3191b230d9c4a8d118e2c238283ff2
-ms.sourcegitcommit: c1f05254eaf5adb563f8d4f33c299119134c7d1f
+ms.openlocfilehash: 460ab380798975065eb90bf904b2b5bacd1edd2c
+ms.sourcegitcommit: cd64ddd3a6888253dca3b2e3fe24ed8bb9b66bc6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83733608"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84315981"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administrera Power BI i Admin-portalen
 
@@ -85,7 +85,7 @@ Med den här informationen kommer du att kunna hämta verkliga insikter om hur p
 
 ## <a name="control-usage-metrics"></a>Kontrollera användningsstatistik
 
-Användningsstatistikrapporter är en funktion som Power BI- eller Microsoft 365-administratören kan aktivera eller inaktivera. Administratörerna har detaljerad kontroll över vilka användare som har åtkomst till användningsstatistik. De är **På** som standard för alla användare i organisationen.
+Användningsstatistikrapporter är en funktion som Power BI-administratören eller den globala administratören kan aktivera eller inaktivera. Administratörerna har detaljerad kontroll över vilka användare som har åtkomst till användningsstatistik. De är **På** som standard för alla användare i organisationen.
 
 Administratörer kan också bestämma om skapare av innehåll kan se data per användare i användningsmått. 
 
@@ -132,6 +132,9 @@ Om du vill använda granskningsloggar, se till att inställningen [**Skapa grans
 ## <a name="tenant-settings"></a>Klientinställningar
 
 Fliken **Klientinställningar** möjliggör kontroll i minsta detalj över de funktioner som är tillgängliga för din organisation. Om du har frågor kring känsliga data, vissa av våra funktioner inte är lämpliga för din organisation eller om du bara vill att en viss funktion ska vara tillgänglig för en särskild grupp.
+
+> [!NOTE]
+> Klientinställningar som styr tillgängligheten för funktioner i Power BI-användargränssnittet kan hjälpa dig att upprätta styrningsprinciper, men de är inte en säkerhetsåtgärd. Till exempel begränsar inställningen **Exportera data** inte behörigheterna för en Power BI-användare för en datamängd. Power BI-användare med läsbehörighet till en datamängd har behörighet att köra frågor på den här datamängden och kan spara resultaten utan att använda funktionen **Exportera data** i Power BI-användargränssnittet.
 
 Följande bild visar flera inställningar på fliken **Klientorganisationsinställningar**.
 

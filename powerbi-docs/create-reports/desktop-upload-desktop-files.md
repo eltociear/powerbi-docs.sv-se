@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/20/2020
+ms.date: 06/01/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 4a363ce72002003981f1bcbe46e0f5367f89860f
-ms.sourcegitcommit: c1f05254eaf5adb563f8d4f33c299119134c7d1f
+ms.openlocfilehash: 417d5a03ed45897896db15f2fd31d3badae837c5
+ms.sourcegitcommit: 49daa8964c6e30347e29e7bfc015762e2cf494b3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83733492"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84273470"
 ---
 # <a name="publish-datasets-and-reports-from-power-bi-desktop"></a>Publicera datamängder och rapporter från Power BI Desktop
 När du publicerar en Power BI Desktop-fil till Power BI-tjänsten publicerar du data i modellen till din Power BI-arbetsyta. Samma sak gäller för alla rapporter som du har skapat i **rapportvyn**. En ny datamängd med samma namn och eventuella rapporter visas i navigatorfältet för arbetsytan.
@@ -23,13 +23,12 @@ Publicering från Power BI Desktop har samma effekt som när du använder **Häm
 
 > [!NOTE]
 > Eventuella ändringar som du gör i rapporten i Power BI sparas inte i den ursprungliga Power BI Desktop-filen. Detta gäller även när du lägger till, tar bort eller ändrar visualiseringar i rapporter.
-> 
-> 
 
 ## <a name="to-publish-a-power-bi-desktop-dataset-and-reports"></a>Så här publicerar du en Power BI Desktop-datauppsättning och rapporter
 1. I Power BI Desktop väljer du **Arkiv** \> **Publicera** \> **Publicera till Power BI**, eller väljer **Publicera** i menyfliksområdet.  
 
    ![Knappen Publicera](media/desktop-upload-desktop-files/pbid_publish_publishbutton.png)
+
 
 2. Logga in i Power BI.
 3. Välj målet.
@@ -55,3 +54,7 @@ Processen är tydlig, men det finns ett par saker som du bör känna till:
    ![Varning om effekten av att publicera om en datamängd](media/desktop-upload-desktop-files/pbid-dataset-impact-analysis-desktop-warning.png)
 
    [Läs mer om analys av datamängdseffekter](../collaborate-share/service-dataset-impact-analysis.md).
+
+> [!NOTE]
+> Vissa dataanslutningar i Power BI-rapporter kan innehålla länkar till data, i stället för de data i datauppsättningen som importeras till Power BI-tjänsten. Till exempel länkar DirectQuery-anslutningar till data när uppdateringar eller interaktioner sker, i stället för att importera dessa data. Om länkade datakällor i din rapport finns lokalt kan du behöva en gateway för att få åtkomst till dem från Power BI. Mer information finns i [Vad är en lokal datagateway?](../connect-data/service-gateway-onprem.md)
+> 

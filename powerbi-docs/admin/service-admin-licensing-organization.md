@@ -1,6 +1,6 @@
 ---
-title: Power BI-licensiering i din organisation
-description: Översikt av olika licenstyper som är tillgängliga i Power BI och hur administratörer köper och hanterar licensiering för organisationen.
+title: Power BI-licensiering för användare i din organisation
+description: Översikt över olika typer av användarlicenser som är tillgängliga i Power BI och hur administratörer köper och hanterar licensiering för användare i organisationen.
 author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
@@ -8,15 +8,16 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 05/14/2020
 ms.author: kfollis
+ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: a0ce3eab2992c59c5b887db1f0838f88db7ad2da
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: 5bac52e98830c97262945e1434880f9c178a0932
+ms.sourcegitcommit: 3f864ec22f99ca9e25cda3a5abda8a5f69ccfa8e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83563498"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84160006"
 ---
-# <a name="power-bi-licensing-in-your-organization"></a>Power BI-licensiering i din organisation
+# <a name="licensing-the-power-bi-service-for-users-in-your-organization"></a>Licensiera tjänsten Power BI för användare i din organisation
 
 Vad användare kan göra i Power BI-tjänsten beror på vilken typ av ”per användare”-licens de har. Vilken åtkomstnivå de får med deras licens beror på om arbetsytan i fråga har tilldelats Power BI Premium-kapacitet. Alla användare av Power BI-tjänsten måste ha en licens.
 

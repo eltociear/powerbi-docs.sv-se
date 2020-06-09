@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/26/2020
 ms.author: davidi
 LocalizationGroup: Premium
-ms.openlocfilehash: eb9a10c715a03adc9149ca8793ff248a23b9914d
-ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
+ms.openlocfilehash: 2257e38183d87ef7fd4fdd12546c2a191a7acf74
+ms.sourcegitcommit: 3f864ec22f99ca9e25cda3a5abda8a5f69ccfa8e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84121027"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84159891"
 ---
 # <a name="incremental-refresh-in-power-bi"></a>Inkrementell uppdatering i Power BI
 
@@ -230,7 +230,7 @@ I följande exempel beskrivs alla 120 månader i det historiska intervallet för
 
 ## <a name="metadata-only-deployment"></a>Distribution med endast metadata
 
-När du publicerar en ny version av en .pbix-fil från Power BI Desktop till en arbetsyta i Power BI-tjänst, uppmanas du att ersätta den befintliga datauppsättningen om det redan finns en datauppsättning med samma namn.
+När du publicerar en ny version av en PBIX-fil från Power BI Desktop till en arbetsyta i Power BI Premium, uppmanas du att ersätta den befintliga datauppsättningen om det redan finns en datauppsättning med samma namn.
 
 ![Varning om att ersätta datauppsättning](media/service-premium-incremental-refresh/replace-dataset-prompt.png)
 

@@ -8,13 +8,13 @@ ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
-ms.date: 12/12/2019
-ms.openlocfilehash: 7eef6c7522bc364bc4b66c9567189dd7aec72239
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.date: 06/02/2020
+ms.openlocfilehash: 75b880876a08a78d822fc1203de40a7bb8311afe
+ms.sourcegitcommit: f05f7b0112a8ec2dce60839ea5f922eda3cc776c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83349849"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84337083"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-customers"></a>Självstudie: Bädda in Power BI-innehåll i ett program för dina kunder
 
@@ -46,7 +46,7 @@ Om du i stället vill konfigurera miljön manuellt, fortsätter du bara nedan.
 
 ### <a name="register-an-application-in-azure-active-directory-azure-ad"></a>Registrera ett program i Azure Active Directory (Azure AD)
 
-[Registrera appen](register-app.md) med Azure Active Directory så att ditt program får åtkomst till [Power BI REST-API:er](https://docs.microsoft.com/rest/api/power-bi/). Genom att registrera din app kan du upprätta en identitet för din app och ange behörigheter till Power BI REST-resurser. Bestämmer hur du kommer igång med registreringen av en app, beroende på om du vill använda ett huvudkonto eller [tjänstens huvudnamn](embed-service-principal.md).
+[Registrera appen](register-app.md) med Azure Active Directory så att ditt program får åtkomst till [Power BI REST-API:er](https://docs.microsoft.com/rest/api/power-bi/). Genom att registrera din app kan du upprätta en identitet för din app och ange [behörigheter till Power BI REST-resurser](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent). Bestämmer hur du kommer igång med registreringen av en app, beroende på om du vill använda ett huvudkonto eller [tjänstens huvudnamn](embed-service-principal.md).
 
 Påverkar vilken typ app du registrerar i Azure, beroende på vilken metod du väljer.
 
@@ -135,7 +135,7 @@ Så här hämtar du **applicationId**:
 
 Det här attributet behövs för både AuthenticationTypes (huvudkonto och [tjänstens huvudnamn](embed-service-principal.md)).
 
-Fyll i **workspaceId** med arbetsytans (gruppens) GUID från Power BI. Du kan få den här informationen från URL:en när du är inloggad i Power BI-tjänsten eller med hjälp av Powershell.
+Fyll i **workspaceId** med arbetsytans (gruppens) GUID från Power BI. Du kan få den här informationen från URL:en när du är inloggad i Power BI-tjänsten eller med hjälp av PowerShell.
 
 URL <br>
 
@@ -147,13 +147,13 @@ PowerShell <br>
 Get-PowerBIworkspace -name "App Owns Embed Test"
 ```
 
-   ![workspaceId från powershell](media/embed-sample-for-customers/embed-sample-for-customers-031-ps.png)
+   ![workspaceId från PowerShell](media/embed-sample-for-customers/embed-sample-for-customers-031-ps.png)
 
 ### <a name="report-id"></a>Rapport-ID
 
 Det här attributet behövs för både AuthenticationTypes (huvudkonto och [tjänstens huvudnamn](embed-service-principal.md)).
 
-Fyll i **reportId**-information med rapport-GUID från Power BI. Du kan få den här informationen från URL:en när du är inloggad i Power BI-tjänsten eller med hjälp av Powershell.
+Fyll i **reportId**-information med rapport-GUID från Power BI. Du kan få den här informationen från URL:en när du är inloggad i Power BI-tjänsten eller med hjälp av PowerShell.
 
 URL<br>
 
@@ -206,7 +206,7 @@ Hämta **ApplicationSecret** genom att utföra följande steg:
 
 Det här attributet behövs bara för AuthenticationType [tjänstens huvudnamn](embed-service-principal.md).
 
-Fyll i informationen om **klientorganisationen** med ditt Azure-klientorganisations-ID. Du kan få den här informationen från [Azure AD-administratörsportalen](/onedrive/find-your-office-365-tenant-id) när du är inloggad i Power BI-tjänsten eller med hjälp av Powershell.
+Fyll i informationen om **klientorganisationen** med ditt Azure-klientorganisations-ID. Du kan få den här informationen från [Azure AD-administratörscentret](/onedrive/find-your-office-365-tenant-id) när du är inloggad i Power BI-tjänsten eller genom att använda Powershell.
 
 ### <a name="run-the-application"></a>Kör programmet
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 03/23/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: dd474da6a3fb61b6fd78dc55a6b0313e51bbb773
-ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
+ms.openlocfilehash: a26a93851d3914527bbb61275d763f95f21d7603
+ms.sourcegitcommit: f05f7b0112a8ec2dce60839ea5f922eda3cc776c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "83693586"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84336830"
 ---
 # <a name="publish-an-app-in-power-bi"></a>Publicera en app i Power BI
 
@@ -209,6 +209,7 @@ Saker att tänka på när det gäller att publicera appar:
 * För det nya arbetsytgränssnittet, om användaren som lagts till i appåtkomstlistan redan har åtkomst till appen via arbetsytan visas de inte i åtkomstlistan för appen.  
 * När du använder det nya utseendet för Power BI-tjänsten visas webbadressen till supportwebbplatsen på objekts informationskort. Läs mer om det [nya utseendet i Power BI](../consumer/service-new-look.md).
 * Appar har ett alternativ för att tillåta användare att dela appen och appens underliggande datamängder med hjälp av dela-behörigheten. För nya appar är det här alternativet inaktiverat som standard. Vi rekommenderar att du inaktiverar det här alternativet för dina befintliga appar och uppdaterar behörigheten för de underliggande datamängderna. Alternativet var aktiverat för befintliga appar eftersom appar ursprungligen utformats för att ersätta innehållspaket, som hade det här beteendet.
+* Appar kan ha högst 200 instrumentpaneler. 
 
 ## <a name="next-steps"></a>Nästa steg
 * [Skapa en arbetsyta](service-create-workspaces.md)

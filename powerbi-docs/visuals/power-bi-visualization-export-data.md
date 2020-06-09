@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 05/20/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 01f2d8add417b1d1d37ef043ccb3c48c2609162d
-ms.sourcegitcommit: 2cb249fc855e369eed1518924fbf026d5ee07eb1
+ms.openlocfilehash: b0fc91eab8c377f5571e66eb7baaf55234fafa97
+ms.sourcegitcommit: f05f7b0112a8ec2dce60839ea5f922eda3cc776c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83813610"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84337037"
 ---
 # <a name="export-the-data-that-was-used-to-create-a-visualization"></a>Exportera data som används för att skapa en visualisering
 
@@ -154,24 +154,26 @@ När du väljer **Exportera**, exporterar Power BI aktuella data till en *xlsx-f
 
     - Eftersom vi tillämpade filter på visualiseringen exporteras data enligt filtret. Observera att den första raden visar **Applied filters: City is not Atlanta, GA** (Tillämpade filter: Stad är inte Atlanta, GA). 
 
-## <a name="protecting-proprietary-data"></a>Skydda upphovsrättsskyddade data
+## <a name="customize-the-export-data-user-experience"></a>Anpassa användarupplevelsen för dataexport
 
-Din datamängd kan ha innehåll som inte bör ses av alla användare. Om du inte är försiktig kan export av underliggande data göra så att användare kan se alla detaljerade data för det visuella objektet – alla kolumner och rader i dessa data. 
+Användare som beviljas åtkomst till en rapport **beviljas åtkomst till hela den underliggande datauppsättningen**, såvida inte [säkerhet på radnivå (RLS)(.. /admin/service-admin-rls.md) begränsar åtkomsten. Rapportförfattare och Power BI-administratörer kan använda de funktioner som beskrivs nedan för att anpassa användarupplevelsen.
 
-Det finns flera strategier som Power BI-administratörer och designers bör använda för att skydda upphovsrättsskyddade data. 
+- Rapportförfattare [bestämmer vilka *exportalternativ*](#set-the-export-options) som är tillgängliga för användare.  
 
-- Designers [bestämmer vilka *exportalternativ*](#set-the-export-options) som är tillgängliga för användare.  
-
-- Power BI-administratörer kan inaktivera dataexport för sin organisation. 
+- Power BI-administratörer kan inaktivera vissa eller alla dataexportalternativ för deras organisation.  
 
 - Datamängdsägare kan ange säkerhet på radnivå (RLS). RLS begränsar åtkomsten till skrivskyddade användare. Men om du har konfigurerat en apparbetsyta och gett medlemmar redigeringsbehörighet tillämpas inte RLS-roller för dem. Mer information finns i [Säkerhet på radnivå](../admin/service-admin-rls.md).
 
-- Rapportdesigners kan dölja kolumner så att de inte visas i listan **Fält**. Mer information finns i [Egenskaper för datamängd](../developer/automation/api-dataset-properties.md)
+- Rapportförfattare kan dölja kolumner så att de inte visas i listan **Fält**. Mer information finns i [Egenskaper för datamängd](../developer/automation/api-dataset-properties.md)
 
-- Power BI-administratörer kan lägga till [känslighetsetiketter](../admin/service-security-data-protection-overview.md) till instrumentpaneler, rapporter, datamängder och dataflöden. De kan sedan framtvinga skyddsinställningar såsom kryptering eller vattenstämplar vid export av data. 
 
-- Power BI-administratörer kan använda [Microsoft Cloud App Security](../admin/service-security-data-protection-overview.md) för att övervaka användarnas åtkomst och aktiviteter, utföra riskanalyser i realtid och ange etikettspecifika kontroller. Organisationer kan till exempel använda Microsoft Cloud App Security till att konfigurera en princip som förhindrar att användare laddar ned känsliga data från Power BI till ohanterade enheter. 
+**Dessa anpassade användarupplevelser begränsar inte vilka data som användare kan komma åt i datauppsättningen. Använd [säkerhet på radnivå (RLS)](../admin/service-admin-rls.md) i datauppsättningen så att varje persons autentiseringsuppgifter avgör vilka data de har åtkomst till.**
 
+## <a name="protect-data-when-it-is-exported-out-of-power-bi"></a>Skydda data när de exporteras från Power BI
+
+- Rapportförfattare kan tillämpa [känslighetsetiketter](../admin/service-security-data-protection-overview.md) på rapporter.  Dessa etiketter avgör vem som kan komma åt rapportdata och hur dessa data exporteras till Excel, PowerPoint och PDF. Vissa känslighetsnivåer är skyddsinställningar (t.ex. behörigheter och kryptering) som tillämpas när data exporteras. Om känslighetsnivån omfattar skyddsinställningar tillämpas dessa inställningar när du exporterar data till Excel, PowerPoint och PDF. Endast användare med rätt behörighet kan exportera, visa, spara och dela rapportdata. 
+
+- Säkerhets- och Power BI-administratörer kan använda [Microsoft Cloud App Security](../admin/service-security-data-protection-overview.md) för att övervaka användarnas åtkomst och aktiviteter, utföra riskanalyser i realtid och ange etikettspecifika kontroller. Organisationer kan till exempel använda Microsoft Cloud App Security till att konfigurera en princip som förhindrar att användare laddar ned känsliga data från Power BI till ohanterade enheter.
 
 ## <a name="export-underlying-data-details"></a>Exportera underliggande data
 

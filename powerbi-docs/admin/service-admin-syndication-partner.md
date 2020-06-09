@@ -1,26 +1,27 @@
 ---
-title: Det går inte att lägga till Power BI till en O365-partner
-description: Det går inte att lägga till Power BI till en syndikeringspartner i Microsoft 365. Den syndikerade modellen är en inköpsmodell som används av Microsoft 365.
+title: Köpa Power BI via en Microsoft 365-partner
+description: Lär dig hur du lägger till Power BI i en Microsoft 365-prenumeration som har köpts via en partner. Den syndikerade modellen är en inköpsmodell som används av Microsoft 365.
 author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 09/09/2019
+ms.date: 05/27/2020
 ms.author: kfollis
+ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: 2c590875b4dee81f7ca54434d6e5895be885be97
-ms.sourcegitcommit: 2cb249fc855e369eed1518924fbf026d5ee07eb1
+ms.openlocfilehash: bc00c69869ea58aee8b4d0a79fce6b24489bde18
+ms.sourcegitcommit: 3f864ec22f99ca9e25cda3a5abda8a5f69ccfa8e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83812345"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84159771"
 ---
-# <a name="unable-to-add-power-bi-to-office-365-partner-subscription"></a>Det går inte att lägga till Power BI till en Office 365-partnerprenumeration
+# <a name="add-power-bi-to-a-microsoft-365-partner-subscription"></a>Lägga till Power BI i en Microsoft 365-partnerprenumeration
 
-Med Microsoft 365 kan företag sälja Microsoft 365 paketerat och integrerat med sina egna lösningar, vilket ger slutkunderna en enda kontaktpunkt för inköp, fakturering och support.
+Med Microsoft 365 kan företag sälja Microsoft 365 paketerat och integrerat med sina egna lösningar, vilket ger kunderna en enda kontaktpunkt för inköp, fakturering och support.
 
-Om du är intresserad av att köpa Power BI tillsammans med din prenumeration på Office 365, rekommenderar vi att du kontaktar din partner. Om din partner inte erbjuder Power BI för tillfället finns det olika alternativ som du kan överväga.
+Om du är intresserad av att lägga till Power BI i din Microsoft 365-prenumeration rekommenderar vi att du kontaktar din partner. Om din partner inte erbjuder Power BI för tillfället kan du använda de olika alternativen nedan.
 
 ## <a name="work-with-your-partner-to-purchase-power-bi"></a>Köp Power BI i samarbete med din partner
 
@@ -32,17 +33,19 @@ Om du vill köpa en prenumeration på Power BI Pro eller Power BI Premium kan du
 
 ## <a name="purchase-from-microsoft-or-another-channel"></a>Köp från Microsoft eller en annan kanal
 
-Beroende på relationen med din partner kan du köpa Power BI direkt från Microsoft eller en annan partner. Du kan verifiera om du kan lägga till Power BI-prenumerationer eller inte i administrationscenter för Microsoft 365 (kräver medlemskap i rollen global administratör eller faktureringsadministratör).
+Beroende på relationen med din partner kan du köpa Power BI direkt från Microsoft eller en annan partner. Du kan kontrollera om du kan lägga till Power BI-prenumerationer i Administrationscenter för Microsoft 365 (kräver medlemskap i rollen global administratör eller faktureringsadministratör).
 
 1. Gå till [Administrationscenter för Microsoft 365](https://admin.microsoft.com/AdminPortal/Home#/homepage).
 
-1. Öppna **Fakturering** i den vänstra menyn:
+1. Öppna **Fakturering** i den vänstra menyn, och välj sedan **Dina produkter**:
 
-    * Om du ser **Prenumerationer** kan du skaffa tjänsten hos Microsoft direkt eller kontakta en partner som erbjuder Power BI.
+   ![Faktureringsmenyn i Administrationscenter för Microsoft 365](media/service-admin-syndication-partner/365-my-products.png)
 
-        ![Fakturering med prenumerationer](media/service-admin-syndication-partner/billingsub.png)
+ 1. Leta efter **Prenumerationer** enligt bilden nedan. Om du ser **Prenumerationer** kan du skaffa tjänsten hos Microsoft direkt eller kontakta en partner som erbjuder Power BI.
 
-    * Om du inte ser **Prenumerationer** kan du inte köpa från Microsoft direkt eller från en annan partner.
+    ![Dina produkter med prenumerationer](media\service-admin-syndication-partner\365-subscriptions.png)
+
+    Om du inte ser **Prenumerationer** kan du inte köpa från Microsoft direkt eller från en annan partner.
 
 Om din partner inte erbjuder Power BI och du inte kan köpa direkt från Microsoft eller en annan partner kan du överväga att registrera dig för en kostnadsfri utvärderingsversion.
 
@@ -56,31 +59,11 @@ Som standard är enskild registrering, även kallat ad hoc-prenumeration, inakti
 
 ![Vi beklagar-bild](media/service-admin-syndication-partner/sorry.png)
 
-Om du vill aktivera ad hoc-prenumerationer kan du kontakta din partner och begära att de aktiverar detta. Om du är administratör för din klient och vet hur man använder Azure Active Directory PowerShell-kommandon, kan du aktivera ad hoc-prenumerationer själv. [Azure Active Directory PowerShell för Graph](/powershell/azure/active-directory/install-adv2/)
-
-1. Logga in i Azure Active Directory med dina autentiseringsuppgifter för Microsoft 365. Den första raden i följande skript uppmanar dig att ange dina autentiseringsuppgifter. Den andra raden ansluter till Azure Active Directory.
-
-    ```powershell
-    $msolcred = get-credential
-    connect-msolservice -credential $msolcred
-    ```
-
-    ![Ange autentiseringsuppgifter](media/service-admin-syndication-partner/aad-signin.png)
-
-1. När du har loggat in kör du följande kommando för att kontrollera den aktuella inställningen för `AllowAdHocSubscriptions`.
-
-    ```powershell
-    Get-MsolCompanyInformation
-    ```
-
-1. Kör följande kommando för att aktivera kostnadsfri registrering.
-
-    ```powershell
-    Set-MsolCompanySettings -AllowAdHocSubscriptions $true
-    ```
+Om du vill aktivera ad hoc-prenumerationer kan du kontakta din partner och begära att de aktiverar detta. Om du är administratör för din klient och vet hur man använder Azure Active Directory PowerShell-kommandon, kan du aktivera ad hoc-prenumerationer själv. Om du vill ha mer information följer du stegen i artikeln om att [aktivera eller inaktivera inköp via självbetjäning](service-admin-disable-self-service.md).
 
 ## <a name="next-steps"></a>Nästa steg
 
-[Power BI-licensiering i din organisation](service-admin-licensing-organization.md)
+* [Power BI-licensiering i din organisation](service-admin-licensing-organization.md)
+* [Köpa och tilldela Power BI Pro-licenser](service-admin-purchasing-power-bi-pro.md)
 
 Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

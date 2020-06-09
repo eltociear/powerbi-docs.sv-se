@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 04/02/2019
-ms.openlocfilehash: e47cb22ba4c30c8090e2e9552e1994a5c545b47b
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: e8c45145695d61bcd7173e2202db98ec306c4b4d
+ms.sourcegitcommit: f05f7b0112a8ec2dce60839ea5f922eda3cc776c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80404031"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84336876"
 ---
 # <a name="register-an-azure-ad-application-to-use-with-power-bi"></a>Registrera en Azure AD-app för användning med Power BI
 
@@ -54,7 +54,7 @@ Så här gör du för att registrera din app med registreringsverktyget för Pow
 
 5. Om du väljer **Server-side web application** (Webbapp på serversidan) som apptyp fortsätter du med att ange ett värde för **Hemside-URL** och **Omdirigerings-URL**. **Omdirigerings-URL** fungerar med alla giltiga URL-adresser och ska motsvara den app som du har skapat. Om du har valt **Intern** fortsätter du till steg 6.
 
-6. Välj de Power BI-API:er som appen behöver. Läs mer om Power BI-behörigheter i [Power BI-behörigheter](power-bi-permissions.md). Välj **Registrera**.
+6. Välj de Power BI-API:er som appen behöver. Mer information om åtkomstbehörigheter för Power BI finns i [Behörigheter och medgivande i slutpunkten för Microsoft Identity Platform](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent). Välj **Registrera**.
 
     ![Välja API:er för registrering](media/register-app/register-app-new-app-registration-apis-register.png)
 
@@ -198,4 +198,4 @@ Logga in med *huvudkontot*, som används för inbäddning, eller med ett globalt
 
 Nu när du har registrerat appen i Azure AD måste du autentisera användare i appen. Mer information finns i [Autentisera användare och hämta en Azure AD-åtkomsttoken för din Power BI-app](get-azuread-access-token.md).
 
-Fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

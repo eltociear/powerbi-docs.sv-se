@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 01/29/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 1ab1ed139a62b1929cb1b4da411bf7949a5d151e
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: b024ff52585a4b9b46b60e3230a059b3d07d7b24
+ms.sourcegitcommit: 9c72ec6b2d6d4574c86e976a65c076764473482d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83279766"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84273909"
 ---
 # <a name="tenant-admin-settings-guidance"></a>Guide till administratörsinställningar för klientorganisationer
 
@@ -25,7 +25,7 @@ Vi ger vägledning kring specifika klientinställningar som bidrar till att för
 
 ## <a name="improve-power-bi-experience"></a>Förbättra Power BI-miljön
 
-### <a name="publish-get-help-information"></a>Publicera ”Få hjälp-information”
+### <a name="publish-get-help-information"></a>Publicera Få hjälp-information
 
 Vi rekommenderar att du konfigurerar interna Power BI-relaterade webbplatser med [Microsoft Teams](/microsoftteams)eller någon annan samarbetsplattform. Sådana webbplatser kan användas till att lagra utbildningsdokumentation, hålla diskussioner, begära licenser och att ge svar på frågor.
 
@@ -44,7 +44,7 @@ De här webbadresserna blir tillgängliga som länkar på hjälpmenyn i Power BI
 ![Inställningen Publicera ”Få hjälp”-information visas.](media/admin-tenant-settings/publish-get-help-information.png)
 
 ## <a name="manage-risk"></a>Hantera risk
-
+Inställningarna för att hantera risker kan hjälpa dig att upprätta styrningsprinciper i Power BI-klientorganisationen. Kom ihåg att styrningsinställningar inte är en säkerhetsåtgärd. Om du till exempel inaktiverar inställningen **Exportera data** tas funktionen bort från Power BI-användargränssnittet. Det hjälper Power BI-användare att följa organisationens styrningsprinciper när de arbetar, men det hindrar inte målmedvetna användare från att exportera data med hjälp av andra alternativ. Från en säkerhetssynpunkt har en Power BI-användare med läsbehörighet till en datauppsättning behörighet att köra frågor på den här datauppsättningen och kan spara resultaten oavsett vilka funktioner som finns tillgängliga i Power BI-användargränssnittet.
 ### <a name="receive-email-notification-service-outages-or-incidents"></a>Få e-postmeddelanden om tjänstavbrott och incidenter
 
 Du kan få ett meddelande via e-post om din klientorganisation påverkas av ett tjänstavbrott eller en incident. På så sätt kan du hantera incidenter proaktivt.

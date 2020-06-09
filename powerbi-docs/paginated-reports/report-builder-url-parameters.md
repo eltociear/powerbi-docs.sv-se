@@ -9,12 +9,12 @@ ms.author: maggies
 ms.reviewer: cfinlan
 ms.custom: ''
 ms.date: 05/01/2020
-ms.openlocfilehash: 83de843ba640bc165e9a56450bc5539e8e433e78
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: d7e11b40c3a0257e090812ff15f31916cea509f9
+ms.sourcegitcommit: f05f7b0112a8ec2dce60839ea5f922eda3cc776c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82692852"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84336784"
 ---
 # <a name="url-parameters-in-paginated-reports-in-power-bi"></a>URL-parametrar i sidnumrerade rapporter i Power BI
 
@@ -163,6 +163,8 @@ XML:
 - rdl:Encoding=string
 - rdl:FileExtension=string
 - rdl:Schema=true/false
+
+**Öppna hyperlänk i samma webbläsarfönster** Du kan lägga till ”rdl:targetSameWindow=true” sist i hyperlänkens URL i din rapport så att Power BI öppnar hyperlänken i samma webbläsarfönster. Information om hur du lägger till hyperlänkar i en rapport finns i [Lägga till en hyperlänk till en URL](https://docs.microsoft.com/sql/reporting-services/report-design/add-a-hyperlink-to-a-url-report-builder-and-ssrs) i SQL Server Reporting Services-dokumentationen.
 
 ## <a name="next-steps"></a>Nästa steg
 

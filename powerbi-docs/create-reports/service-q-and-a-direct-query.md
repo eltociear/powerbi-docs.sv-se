@@ -6,19 +6,22 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/16/2018
+ms.date: 05/29/2020
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 3544a5330a21036e0ddecb351fd67b424ca6ebc7
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: cceeb3c874bf3320b7c826790c46b4cafd6d45a2
+ms.sourcegitcommit: b66c913a50a5100082e1c8ff7cd1c4f76f514fe7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83348883"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "84219495"
 ---
 # <a name="enable-qa-for-live-connections-in-power-bi"></a>Aktivera Frågor och svar för live-anslutningar i Power BI
-## <a name="what-is-the-on-premises-data-gateway--what-is-a-live-connection"></a>Vad är den lokala datagatewayen?  Vad är en live-anslutning?
-Datauppsättningar i Power BI kan importeras till Power BI eller så kan du skapa en live-anslutning till dem. Datamängder med live-anslutning kallas ofta ”lokala”. Live-anslutningarna hanteras med en [gateway](../connect-data/service-gateway-onprem.md). Data och frågor skickas fram och tillbaka med hjälp av live-frågor.
+
+Du kan importera datauppsättningar till Power BI eller så kan du skapa en *live-anslutning* till dem. Datauppsättningar med live-anslutning är ofta lokala. I så fall kan du hantera live-anslutningar med en [gateway](../connect-data/service-gateway-onprem.md). Data och frågor skickas fram och tillbaka med hjälp av live-frågor.
+
+> [!NOTE]
+> Live-anslutningar har också stöd för Azure Analysis Services-datauppsättningar, som inte kräver en gateway.
 
 ## <a name="qa-for-on-premises-data-gateway-datasets"></a>Frågor och svar för datauppsättningar för den lokala datagatewayen
 Om du vill använda frågor och svar med datauppsättningar som du kommer åt via en gateway, måste du först aktivera dem.
@@ -65,4 +68,4 @@ Funktionen har vissa begränsningar:
 - [Grundläggande begrepp för designers i Power BI-tjänsten](../fundamentals/service-basic-concepts.md)  
 - [Översikt över Power BI frågor och svar](../consumer/end-user-q-and-a.md)  
 
-Fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

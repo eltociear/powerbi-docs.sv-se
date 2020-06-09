@@ -6,34 +6,34 @@ manager: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/11/2020
+ms.date: 05/23/2020
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: e16acffd683b14eb48a6e21ddc456caeac25efc3
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: fdc246d1edb487ce7280ceee8a3727d2faeb0252
+ms.sourcegitcommit: 12f26ae9a2615cb287fee9046b0dc713af764c04
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83132000"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "84229079"
 ---
-# <a name="data-protection-metrics-report-preview"></a>Dataskyddsmåttrapport (förhandsversion)
+# <a name="data-protection-metrics-report"></a>Dataskyddsmåttrapport
 
 ## <a name="what-is-the-data-protection-metrics-report"></a>Vad är dataskyddsmåttrapporten?
-Dataskyddsmåttrapporten är en dedikerad rapport som [Power BI-administratörer](../admin/service-admin-role.md) kan använda för att övervaka och spåra datas känslighetsetikettanvändning och dess implementering i klientorganisationen.
+Dataskyddsmåttrapporten är en dedikerad rapport som [Power BI-administratörer](../service-admin-role.md) kan använda för att övervaka och spåra datas känslighetsetikettanvändning och dess implementering i klientorganisationen.
 
 ![Dataskyddsmåttrapport](./media/service-security-data-protection-metrics-report/protection-metrics-seven-days-1.png)
  
 Rapporten innehåller:
 * En 100 % stående stapeldiagram sin visar daglig känslighetsetikettanvändning i klientorganisationen under de senaste 7, 30 eller 90 dagarna. Det här diagrammet gör det enkelt att spåra den relativa användningen av olika typer av etiketter över tid.
 * Ringdiagram som visar det aktuella läget för användning av känslighetsetiketter i klienten för instrumentpaneler, rapporter, datamängder och dataflöden.
-* En länk till Cloud App Security-portalen där Power BI-aviseringar, användare i farozonen, aktivitetsloggar och annan information är tillgänglig. Mer information finns i [Använda Microsoft Cloud App Security-kontroller i Power BI (förhandsversion)](./service-security-using-microsoft-cloud-app-security-controls.md).
+* En länk till Cloud App Security-portalen där Power BI-aviseringar, användare i farozonen, aktivitetsloggar och annan information är tillgänglig. Mer information finns i [Använda Microsoft Cloud App Security-kontroller i Power BI](./service-security-using-microsoft-cloud-app-security-controls.md).
 
 Rapporten uppdateras var 24:e timme.
 
 ## <a name="viewing-the-data-protection-metrics-report"></a>Visa är dataskyddsmåttrapporten
 
-Du måste ha [rollen Power BI-administratör](../admin/service-admin-role.md) för att kunna öppna och visa rapporten.
-Om du vill visa rapporten går du till **Inställningar > Administratörsportalen** och väljer **Säkerhetsmått (förhandsversion)** .
+Du måste ha [rollen Power BI-administratör](../service-admin-role.md) för att kunna öppna och visa rapporten.
+Om du vill visa rapporten går du till **Inställningar > Administratörsportalen** och väljer **Säkerhetsmått**.
 
 ![administrationsportalen för säkerhetsmått](./media/service-security-data-protection-metrics-report/protection-metrics-admin-portal.png)
  
@@ -51,9 +51,9 @@ Förbättrade versioner av dataskyddsmåttrapporten släpps regelbundet. När du
 * För att få åtkomst till Cloud App Security-information måste din organisation ha rätt [Cloud App Security-licens](https://docs.microsoft.com/power-bi/admin/service-security-using-microsoft-cloud-app-security-controls#microsoft-cloud-app-security-licensing).
 * Om du bestämmer dig för att dela information från dataskyddsmåttrapporten med en användare som inte är Power BI-administratör bör du vara medveten om att den här rapporten innehåller känslig information om din organisation.
 * Dataskyddsmåttrapporten är en särskild typ av rapport och visas inte i listorna ”Delat med mig”, ”Senaste” och ”Favoriter”.
-* Dataskyddsmåttrapporten är inte tillgänglig för [externa användare (Azure Active Directory B2B-gästanvändare)](../admin/service-admin-azure-ad-b2b.md).
+* Dataskyddsmåttrapporten är inte tillgänglig för [externa användare (Azure Active Directory B2B-gästanvändare)](../service-admin-azure-ad-b2b.md).
 ## <a name="next-steps"></a>Nästa steg
-* [Dataskydd i Power BI (förhandsversion)](./service-security-data-protection-overview.md)
-* [Använda Microsoft Cloud App Security-kontroller i Power BI (förhandsversion)](./service-security-using-microsoft-cloud-app-security-controls.md)
-* [Förstå administratörsrollen för Power BI-tjänsten](../admin/service-admin-role.md)
-* [Aktivera känslighetsetiketter för data i Power BI](./service-security-enable-data-sensitivity-labels.md)
+* [Dataskydd i Power BI](./service-security-data-protection-overview.md)
+* [Använda Microsoft Cloud App Security-kontroller i Power BI](service-security-using-microsoft-cloud-app-security-controls.md)
+* [Förstå administratörsrollen för Power BI-tjänsten](service-admin-role.md)
+* [Aktivera känslighetsetiketter för data i Power BI](service-security-enable-data-sensitivity-labels.md)
