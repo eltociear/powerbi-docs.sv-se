@@ -28,6 +28,8 @@
               href: star-schema.md
             - name: Minska datamodellstorlek
               href: import-modeling-data-reduction.md
+            - name: Skapa datatabeller
+              href: model-date-tables.md
             - name: Vägledning för automatiskt datum/tid
               href: auto-date-time.md
             - name: En-till-en-relationer
@@ -44,6 +46,8 @@
               href: directquery-model-guidance.md
             - name: Vägledning för sammansatt modell
               href: composite-model-guidance.md
+            - name: Vägledning för säkerhet på radnivå (RLS)
+              href: rls-guidance.md
         - name: DAX
           items:
             - name: Funktionen DIVIDERA jämfört med divisionsoperatorn (/)

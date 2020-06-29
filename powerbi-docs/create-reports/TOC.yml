@@ -47,6 +47,8 @@
       items:
         - name: Power BI-rapporter
           items:
+            - name: Modernt Power BI-menyfliksområde
+              href: desktop-ribbon.md
             - name: Arbeta med rapportvyn
               href: desktop-report-view.md
             - name: Typer av filter i rapporter

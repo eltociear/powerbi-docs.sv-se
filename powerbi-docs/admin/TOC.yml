@@ -24,7 +24,7 @@
               href: service-govus-overview.md
             - name: 'Registrera en myndighet inom USA:s förvaltning'
               href: service-govus-signup.md
-        - name: Power BI i regionala moln
+        - name: Power BI i nationella moln
           items:
             - name: Migrera till Go Lokala tyska regioner
               href: service-admin-migrate-data-germany.md
@@ -116,6 +116,8 @@
               href: service-premium-connect-tools.md
             - name: Automatisering med tjänstens huvudnamn
               href: service-premium-service-principal.md
+            - name: Felsöka anslutning för XMLA-slutpunkt
+              href: troubleshoot-xmla-endpoint.md
     - name: Referens
       items:
         - name: 'PowerShell, REST API: er och .NET SDK'

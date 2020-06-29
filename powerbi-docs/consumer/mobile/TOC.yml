@@ -21,7 +21,7 @@
       items:
         - name: Ställ frågor i iOS-mobilappar
           href: tutorial-mobile-apps-ios-qna.md
-    - name: Koncept
+    - name: Begrepp
       expanded: true
       items:
         - name: Hämta verkliga data med mobilapparna
@@ -30,7 +30,7 @@
           href: mobile-apps-offline-data.md
         - name: Appen Power BI för Mixed Reality (förhandsversion)
           href: mobile-mixed-reality-app.md
-    - name: Gör så här för att
+    - name: Gör så här
       items:
         - name: Alla mobilappar
           items:
@@ -84,7 +84,9 @@
               href: mobile-apps-iOS-siri-Shortcuts.md
             - name: iOS-enhetssökningsintegrering
               href: mobile-apps-iOS-search-integration.md
-            - name: Power BI Apple Watch-app
+            - name: Mörkt läge
+              href: mobile-apps-dark-mode.md
+            - name: Power BI-appen för Apple Watch
               href: mobile-apple-watch.md
         - name: Android-enheter
           items:
@@ -98,7 +100,7 @@
               href: mobile-android-app-error-corporate-ssl-account-is-untrusted.md
             - name: Åtgärda "Android System WebView måste uppdateras"
               href: mobile-android-error-update-android-system-webview.md
-        - name: Power BI-app för Windows 10-enheter
+        - name: Power BI-appen för Windows 10-enheter
           items:
             - name: Kom igång med Windows 10-appen
               href: mobile-windows-10-phone-app-get-started.md
@@ -106,7 +108,7 @@
               href: mobile-pin-dashboard-start-screen-windows-10-phone-app.md
             - name: 'Visa lokala rapporter och KPI:er'
               href: mobile-app-windows-10-ssrs-kpis-mobile-reports.md
-            - name: Visa Power BI på Surface Hub
+            - name: Presentationsläge på Surface Hub och Windows 10-enheter
               href: mobile-windows-10-app-presentation-mode.md
             - name: Enkel inloggning i Windows-appen
               href: mobile-windows-10-app-single-sign-on-sso.md

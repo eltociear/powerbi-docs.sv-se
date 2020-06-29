@@ -122,6 +122,8 @@
               href: desktop-connect-to-web.md
             - name: Ansluta till ett Snowflake Computing-lager
               href: desktop-connect-snowflake.md
+            - name: Ansluta till Snowflake i Power BI-tjänsten
+              href: service-connect-snowflake.md
             - name: Skapa visuella objekt med Azure Cost Management-anslutningsappen
               href: desktop-connect-azure-cost-management.md
             - name: Ansluta till Azure Consumption Insights-data

@@ -74,6 +74,8 @@
               href: end-user-spotlight.md
             - name: Anpasssa ett visuellt objekt
               href: end-user-personalize-visuals.md
+            - name: Analysera variationer i visuella objekt
+              href: end-user-analyze-visuals.md
             - name: Sidnumrerade rapporter i Power BI
               items:
                 - name: Sidnumrerade rapporter
@@ -92,6 +94,8 @@
               href: end-user-visual-type.md
             - name: Visa data som används för att skapa visualiseringen
               href: end-user-show-data.md
+            - name: Kopiera ett visuellt objekt och klistra in det någon annanstans
+              href: end-user-copy-paste.md
             - name: Öka detaljnivån i en visualisering
               href: end-user-drill.md
             - name: Interagera med ArcGIS-kartor

@@ -49,8 +49,12 @@
           items:
             - name: Dela instrumentpaneler och rapporter
               href: service-share-dashboards.md
+            - name: Begär åtkomst till en rapport eller instrumentpanel
+              href: service-request-access.md
             - name: Filtrera och dela en rapport
               href: service-share-reports.md
+            - name: Felsöka delning av rapporter eller instrumentpaneler
+              href: service-troubleshoot-sharing.md
             - name: 'Filtrera en rapport med hjälp av parametrar i URL:en'
               href: service-url-filters.md
             - name: Registrera dig och andra för prenumeration
