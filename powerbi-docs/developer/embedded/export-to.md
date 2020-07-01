@@ -3,16 +3,16 @@ title: Exportera API för Power BI-rapporter
 description: Läs om hur du kan exportera en inbäddad Power BI-rapport
 author: KesemSharabi
 ms.author: kesharab
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 03/24/2020
-ms.openlocfilehash: 5d0ca90bc352e88f08e18d2bd2a9e4fd9860cbc5
-ms.sourcegitcommit: 49daa8964c6e30347e29e7bfc015762e2cf494b3
+ms.openlocfilehash: 546f712c87e67240fd15ee2563252d8f322212c7
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84273010"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85221010"
 ---
 # <a name="export-power-bi-report-to-file-preview"></a>Exportera Power BI-rapport till fil (förhandsversion)
 
