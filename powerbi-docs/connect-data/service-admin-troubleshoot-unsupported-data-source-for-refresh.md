@@ -1,21 +1,21 @@
 ---
 title: Felsöka datakälla utan stöd för uppdatering
 description: Felsöka datakälla utan stöd för uppdatering
-author: maggiesMSFT
+author: davidiseminger
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: troubleshooting
 ms.date: 05/08/2020
-ms.author: maggies
+ms.author: davidi
 ms.custom: seodec18
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 50eb4f0fd50c49a39363093ea600922c61ebfab4
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: acce77e3c3e41ec5b711a6a1c79628b2a47cd47f
+ms.sourcegitcommit: a453ba52aafa012896f665660df7df7bc117ade5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83324136"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85485862"
 ---
 # <a name="troubleshooting-unsupported-data-source-for-refresh"></a>Felsöka datakälla utan stöd för uppdatering
 Du kan se ett fel vid försök att konfigurera en datauppsättning för schemalagd uppdatering.

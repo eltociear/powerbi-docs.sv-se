@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/07/2019
 ms.author: davidi
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 7ab103c5d7b568e7315f67193da4d8da25b77a6c
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: 2783f434e2bb1d6d45ed1a9442c60da7b09e7ae4
+ms.sourcegitcommit: e8b12d97076c1387088841c3404eb7478be9155c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83565447"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85782796"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-using-azure-active-directory-b2b"></a>Distribuera Power BI-innehåll till externa gästanvändare med Azure Active Directory B2B
 
@@ -71,7 +71,7 @@ Vissa organisationer kräver mer kontroll över när externa användare läggs t
 
 
 
-1. Bearbeta stjärnor med en IT-administratör som bjuder in gäst användaren antingen manuellt eller via det API som tillhandahålls av Azure Active Directory
+1. Processen börjar med en IT-administratör som bjuder in gäst användaren antingen manuellt eller via det API som tillhandahålls av Azure Active Directory
 2. Användaren godkänner inbjudan till organisationen.
 3. När användaren har accepterat inbjudan kan en användare i Power BI dela en rapport eller instrument panel med den externa användaren eller en säkerhets grupp som de finns i. Precis som med vanlig delning i Power BI får den externa användaren ett e-postmeddelande med en länk till objektet.
 4. När den externa användaren har åtkomst till länken skickas deras autentisering i sin katalog till Contosos Azure AD och används för att få till gång till Power BI innehåll.
