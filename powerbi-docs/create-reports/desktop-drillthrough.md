@@ -5,16 +5,16 @@ author: maggiesMSFT
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/12/2020
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 9f017a4e93e76d91949b3cc3e12ef0c652664a91
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 7ba75bf5bce05f7a2614dc27d5ff8245ec1a31ef
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83281448"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85239167"
 ---
 # <a name="set-up-drill-through-in-power-bi-reports"></a>Konfigurera detaljvisning i Power BI-rapporter
 Med *visning av detaljerad information* i Power BI-rapporter kan du skapa en sida i rapporten som fokuserar på en specifik enhet – till exempel en leverantör, kund eller tillverkare. När rapportläsarna använder visning av detaljerad information högerklickar de på datapunkt i andra rapportsidor och använder visning av detaljerad information till den sidan som är i fokus för att hämta information som har filtrerats för det sammanhanget. Du kan också [skapa en knapp som visar detaljerad information](desktop-drill-through-buttons.md) när de klickar på den.

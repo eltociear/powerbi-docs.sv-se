@@ -6,15 +6,15 @@ author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: a68644c63d3d5eaeb54a71683629af01817d62a7
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 85e295b2320f8aecca2176149ce37c0a25ad2bd2
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79114618"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85237462"
 ---
 # <a name="fixing-corporate-ssl-certificate-is-untrusted---power-bi"></a>Åtgärda ”Företagets SSL-certifikat är inte betrott” – Power BI
 När du loggar in till Android-mobilappen för Microsoft Power BI ser du kanske meddelandet ”Det gick inte att autentisera eftersom ditt företags SSL-certifikat inte är betrott av den här enheten. Kontakta ditt företags IT-administratör.” 

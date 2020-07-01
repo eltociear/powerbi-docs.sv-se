@@ -5,16 +5,16 @@ author: maggiesMSFT
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/01/2020
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 2ccf0d7566cb1ffd2b3b12295c0667885bf30ef0
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: b8fddd6b88effac3375840dd6034ca93cec52f12
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83349596"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85238321"
 ---
 # <a name="download-a-report-from-the-power-bi-service-to-power-bi-desktop-preview"></a>Hämta en rapport från Power BI-tjänsten till Power BI Desktop (förhandsversion)
 I Power BI Desktop kan du publicera en rapport (en *.pbix*-fil) från den lokala datorn till Power BI-tjänsten. Power BI-rapporter kan även gå åt det andra hållet: Du kan ladda ned en rapport från Power BI-tjänsten till Power BI Desktop. Filnamnstillägget för en Power BI-rapport är i båda fallen .pbix.

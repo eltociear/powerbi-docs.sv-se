@@ -5,15 +5,15 @@ author: maggiesMSFT
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 02/03/2020
 ms.author: maggies
-ms.openlocfilehash: efc316e93bea9cfc1b3f429657ac2810e13f4e63
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 8e907b87c26dd7f2e764705a1178efc5df432a3e
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83349481"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85239018"
 ---
 # <a name="create-a-power-bi-report-for-power-bi-report-server"></a>Skapa en Power BI-rapport för Power BI-rapportservern
 Du kan lagra och hantera Power BI-rapporter lokalt i webbportalen för Power BI-rapportserver, precis som du kan lagra Power BI-rapporter i molnet i Power BI-tjänsten (https://powerbi.com). Du skapar och redigerar rapporter i Power BI Desktop och publicerar dem till webbportalen. Rapportläsare i din organisation kan sedan se dem i webbläsaren eller i en Power BI-mobilapp på en mobilenhet.

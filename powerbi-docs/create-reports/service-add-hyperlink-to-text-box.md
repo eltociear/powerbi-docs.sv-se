@@ -6,16 +6,16 @@ ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 07/25/2019
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 2de2cd80dbffc8c65a4577fffd6a8e41bc6116d2
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 2960bb75e408011cbdf6b05117ac7f6073517f9b
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83315948"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85238144"
 ---
 # <a name="add-a-hyperlink-to-a-text-box-in-a-report"></a>Lägga till en hyperlänk i en textruta i en rapport
 Du kan lägga till en textruta i en rapport i Power BI Desktop eller Power BI-tjänsten. Du kan fästa en textruta från en rapport på en instrumentpanel eller lägga till en direkt på en instrumentpanel. Oavsett var textrutan finns kan du alltid lägga till en hyperlänk till den. Den här artikeln beskriver hur du lägger till en hyperlänk i en textruta i en rapport. 
