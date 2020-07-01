@@ -4,16 +4,16 @@ description: Så här hämtar och installerar du mallappen Instrumentpanel för 
 author: paulinbar
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 05/13/2020
 ms.author: painbar
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 40a585c78de4a95981ff157413e857b48fd35c14
-ms.sourcegitcommit: 21b06e49056c2f69a363d3a19337374baa84c83f
+ms.openlocfilehash: e10f2144e987f8fdc7ea9dbfd18d4581889ae8bf
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83407568"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85230132"
 ---
 # <a name="connect-to-the-hospital-emergency-response-decision-support-dashboard"></a>Ansluta till Instrumentpanel för beslutsstöd för akutrespons för sjukhus
 Instrumentpanelen för beslutsstöd för akutrespons för sjukhus är rapporteringskomponenten i [Microsoft Power Platform-lösningen för akutrespons inom hälso- och sjukvården](https://powerapps.microsoft.com/blog/emergency-response-solution-a-microsoft-power-platform-solution-for-healthcare-emergency-response/). På instrumentpanelen kan akutchefer se sammanställda data i vårdsystemet så att de kan fatta rätt beslut vid rätt tidpunkt.

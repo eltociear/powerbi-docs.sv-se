@@ -4,16 +4,16 @@ description: Så här hämtar och installerar du mallappen Instrumentpanel för 
 author: paulinbar
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/24/2020
 ms.author: painbar
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 52522c03a285290fbc01da49328516f62ddfc60a
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 3cf846ef7fa7b47b0eaa90c850885af65a4bab80
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83279237"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85229664"
 ---
 # <a name="connect-to-the-regional-emergency-response-dashboard"></a>Anslut till instrumentpanelen för regional akutrespons
 Instrumentpanelen för regional akutrespons är rapporteringskomponenten i [Microsoft Power Platforms lösning för regional akutrespons](https://docs.microsoft.com/powerapps/sample-apps/regional-emergency-response/overview). Regionala organisationsadministratörer kan visa instrumentpanelen i sin Power BI-klientorganisation, så att de snabbt kan visa viktiga data och mått som kan hjälpa dem att fatta effektiva beslut.

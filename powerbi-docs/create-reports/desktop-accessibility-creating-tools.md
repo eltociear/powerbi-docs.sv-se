@@ -5,16 +5,16 @@ author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 10/28/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: c8806adce3fc729208effb3bd22c57c7274915d2
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 00fd1352542a0cc3c962dc1597e2fa82a7393682
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83310497"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85229319"
 ---
 # <a name="creating-reports-in-power-bi-using-accessibility-tools"></a>Skapa rapporter i Power BI med hjälpmedel
 

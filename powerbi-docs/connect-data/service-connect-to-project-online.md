@@ -5,16 +5,16 @@ author: SarinaJoan
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 07/25/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 5f5c161448c2522da3521dd1888443e558fd383e
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 25a0ddaaf72e185d795d819e8c2cb990d2823ed2
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83348469"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85229786"
 ---
 # <a name="connect-to-project-web-app-with-power-bi"></a>Anslut till Project Web App med Power BI
 Microsoft Project Web App är en flexibel lösning för hantering av projektportföljer (PPM) och dagligt arbete. Med Project Web App kan organisationer komma igång, prioritera investeringar i projektportföljer och leverera det avsedda verksamhetsvärdet. Med Project Web App-mallappen för Power BI får du tillgång till information från Project Web App som hjälper dig att hantera projekt, portföljer och resurser.
