@@ -5,16 +5,16 @@ author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 05/04/2020
 ms.author: painbar
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 4498557d1bd38ce457b2e79d637e713af11c945a
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: a1cf9c96b976acbfd9a5cefe4d413b4aa0fac9bf
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83325056"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85236273"
 ---
 # <a name="connect-to-smartsheet-with-power-bi"></a>Anslut till Smartsheet med Power BI
 Den här artikeln vägleder dig genom att hämta data från ditt Smartsheet-konto med en Power BI-mallapp. Smartsheet erbjuder en enkel plattform för samarbete och fildelning. Smartsheet-mallappen för Power BI erbjuder en instrumentpanel, rapporter och datauppsättningar som visar en översikt över ditt Smartsheet-konto. Du kan också använda [Power BI Desktop](desktop-connect-to-data.md) till att ansluta direkt till enskilda blad i ditt konto. 

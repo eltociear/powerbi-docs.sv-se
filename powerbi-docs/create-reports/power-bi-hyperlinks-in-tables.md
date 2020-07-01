@@ -6,16 +6,16 @@ ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 02/13/2020
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 6b98e99191363c6a33aa4ee99adff2ab72f48641
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 55b08d608e30b8a1f4b06319f1de835a12f7ca77
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83344835"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85234831"
 ---
 # <a name="add-hyperlinks-urls-to-a-table-or-matrix"></a>Lägga till hyperlänkar (URL) i en tabell eller matris
 I det här avsnittet lär du dig lägga till hyperlänkar (URL:er) i en tabell. Du använder Power BI Desktop för att lägga till hyperlänkar (URL:er) i en datamängd. Du kan lägga till hyperlänkarna i dina rapporttabeller och matriser, antingen i Power BI Desktop eller Power BI-tjänsten. Sedan kan du visa URL-adressen eller en länkikon, eller formatera en annan kolumn som länktext.
