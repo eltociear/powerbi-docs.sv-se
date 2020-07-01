@@ -6,16 +6,16 @@ ms.reviewer: lukaszp
 featuredvideoid: 0tUwn8DHo3s
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 01/29/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: e91698413df11a2f593128a616948935b65c0c4e
-ms.sourcegitcommit: 49daa8964c6e30347e29e7bfc015762e2cf494b3
+ms.openlocfilehash: 2988f02b8207eafe5155073af9acc60dcb0a81cf
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84272918"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85225328"
 ---
 # <a name="filter-and-share-a-power-bi-report"></a>Filtrera och dela en Power BI-rapport
 *Dela* är ett bra sätt att ge ett fåtal användare åtkomst till dina instrumentpaneler och rapporter. Hur gör du om du vill dela en filtrerad version av en rapport? Kanske du vill att rapporten ska visa endast data för en viss ort, säljare eller år. Den här artikeln förklarar hur du filtrerar en rapport och delar den filtrerade versionen av rapporten. Ett annat sätt att dela en filtrerad rapport är att [lägga till frågeparametrar till rapportens URL](service-url-filters.md). I båda fallen filtreras rapporten när mottagarna öppnar den för första gången. De kan rensa filtervalen i rapporten.

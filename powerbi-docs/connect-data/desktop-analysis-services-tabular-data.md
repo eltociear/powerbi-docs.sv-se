@@ -5,16 +5,16 @@ author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 01/28/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: ac15a732f3d388fd5dafa61d33eec1d82022da54
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 6f9661b6cda8782e83e64e30f55ae4b0d8bf6fa2
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83301320"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85224867"
 ---
 # <a name="connect-to-analysis-services-tabular-data-in-power-bi-desktop"></a>Ansluta till Analysis Services-tabelldata i Power BI Desktop
 Med Power BI Desktop finns det två sätt att ansluta till och hämta data från SQL Server Analysis Services-tabellmodellerna: Utforska genom att använda en liveanslutning eller välj objekt och importera dem till Power BI Desktop.

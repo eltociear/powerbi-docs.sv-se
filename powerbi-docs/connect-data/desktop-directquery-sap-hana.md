@@ -5,16 +5,16 @@ author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/10/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 2a3b9ab5e8ec2d977363506f98d27528db7b9d8a
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: f121d4fb4e60fc29ef887d27c148aa3063dcee82
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83292649"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85223699"
 ---
 # <a name="connect-to-sap-hana-data-sources-by-using-directquery-in-power-bi"></a>Ansluta till SAP HANA-datakällor med hjälp av DirectQuery i Power BI
 Du kan ansluta till **SAP HANA**-datakällor direkt med **DirectQuery**. Det finns två alternativ när du ansluter till SAP HANA:
