@@ -5,16 +5,16 @@ author: maggiesMSFT
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/18/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 2aa75d1cbe04f33197bf8941fd101c66384142dd
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: d4d01c7c8b57dda6667ffcd744a7d914ff936b09
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83565820"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85231045"
 ---
 # <a name="optimize-a-dashboard-for-mobile-phones---power-bi"></a>Optimera en instrumentpanel för mobiltelefoner – Power BI 
 När du visar instrumentpaneler i stående läge på en telefon märker du att instrumentpanelens paneler placeras ut en i taget, alla i samma storlek. I Power BI-tjänsten kan du skapa en anpassad vy av en instrumentpanel särskilt för stående läge på mobiltelefoner. Även om du skapar en telefonvy ser du instrumentpanelen som den ser ut i tjänsten när du vänder telefonen i sidled.

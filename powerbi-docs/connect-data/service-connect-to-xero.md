@@ -4,16 +4,16 @@ description: Xero för Power BI
 author: paulinbar
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/06/2020
 ms.author: painbar
 LocalizationGroup: Connect to services
-ms.openlocfilehash: adb2f66b043b09ecb584870cf96f4c491960d59b
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 8ac9081e1cf7d6ec4ca53863c8111e56ae3ad68e
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83348446"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85231724"
 ---
 # <a name="connect-to-xero-with-power-bi"></a>Ansluta till Xero med Power BI
 Xero är ett lättanvänt redovisningsprogram online som har specialutformats för små företag. Du kan skapa övertygande visuella objekt utifrån dina Xero-siffror med den här Power BI-mallappen. Standardinstrumentpanelen innehåller många mått för småföretag som kontantposition, inkomster och utgifter, vinst-/förlusttrend, gäldenärsdagar och räntabilitet.
