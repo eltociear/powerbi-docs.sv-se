@@ -5,15 +5,15 @@ author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
-ms.topic: conceptual
-ms.date: 02/10/2020
+ms.topic: how-to
+ms.date: 06/06/2020
 ms.author: painbar
-ms.openlocfilehash: 105cef5b9df49d076491057d73f6929d46216a8b
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: a12f4d81e2cae913ddddd26ca3bd9c820ad716ca
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83564870"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85233033"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-android-devices"></a>Kom igång med Power BI-mobilapp på Android-enheter
 Android-appen för Microsoft Power BI ger mobil BI-upplevelse för Power BI, Power BI-rapportserver och Reporting Services. Visa och interagera med ditt företags instrumentpaneler lokalt och i molnet överallt, med pekaktiverad mobil åtkomst i realtid. Utforska data i instrumentpaneler och dela med dina kollegor via e-post eller sms. 

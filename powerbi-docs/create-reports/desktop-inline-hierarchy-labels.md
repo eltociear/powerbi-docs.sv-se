@@ -5,16 +5,16 @@ author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: db86fee2303759d30b2ff64dc59b56314f220474
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: c840565e39e344011588f8d47925e435eb019b37
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83304218"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85233712"
 ---
 # <a name="use-inline-hierarchy-labels-in-power-bi-desktop"></a>Använd infogade hierarkietiketter i Power BI Desktop
 **Power BI Desktop** stöder användning av **infogade hierarkietiketter**, vilket är den första av två funktioner som är avsedda att förbättra hierarkisk utökning av detaljnivån. Den andra funktionen, som för närvarande är under utveckling, är möjligheten att använda kapslade hierarkietiketter (håll ögonen öppna för detta – vi uppdaterar ofta).   
