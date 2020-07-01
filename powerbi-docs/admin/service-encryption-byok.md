@@ -6,15 +6,15 @@ ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 02/20/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: c3d95e6cc10f01a09fe93d31012652e741eb077c
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 944d115b0592954d92460ca26ae5b59311abc42e
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83274430"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85227479"
 ---
 # <a name="bring-your-own-encryption-keys-for-power-bi"></a>Använda egna krypteringsnycklar för Power BI
 
@@ -154,7 +154,7 @@ När du har aktiverat BYOK i klientorganisationen anger du krypteringsnyckeln f�
 1. Använd [`Set-PowerBICapacityEncryptionKey`](/powershell/module/microsoftpowerbimgmt.admin/set-powerbicapacityencryptionkey) för att ange krypteringsnyckeln:
 
     ```powershell
-    Set-PowerBICapacityEncryptionKey-CapacityId xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx -KeyName 'Contoso Sales'
+    Set-PowerBICapacityEncryptionKey -CapacityId xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx -KeyName 'Contoso Sales'
     ```
 
 Du har kontroll över hur BYOK används i klientorganisationen. Om du till exempel vill kryptera en enstaka kapacitet anropar du `Add-PowerBIEncryptionKey` utan `-Activate` eller `-Default`. Anropa sedan `Set-PowerBICapacityEncryptionKey` för den kapacitet du vill aktivera BYOK för.

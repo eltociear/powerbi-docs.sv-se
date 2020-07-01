@@ -4,16 +4,17 @@ description: I moderna Business Intelligence-projekt kan det vara svårt för m�
 author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
-ms.topic: conceptual
-ms.date: 02/27/2020
+ms.subservice: powerbi-eim
+ms.topic: how-to
+ms.date: 06/15/2020
 ms.author: painbar
 LocalizationGroup: ''
-ms.openlocfilehash: 101217023576783a32491b21ba254d54736b27db
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 697aa38a08acb561cca9b0ccba5656281157237e
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83348216"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85226421"
 ---
 # <a name="data-lineage"></a>Dataursprung
 I moderna Business Intelligence-projekt kan det vara svårt att förstå dataflödet från datakällan till målet. Det kan vara ännu svårare om du har byggt avancerade analysprojekt som omfattar flera datakällor, artefakter och beroenden. Frågor som ”vad händer om jag ändrar dessa data?” eller ”varför är inte den här rapporten uppdaterad?” kan vara svåra att svara på. Det kan krävas ett team av experter eller en djupgående undersökning för att hitta svaren. Vi har skapat en dataursprungsvy för att hjälpa dig att besvara dessa frågor.
