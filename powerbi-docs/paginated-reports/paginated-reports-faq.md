@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 04/29/2020
-ms.openlocfilehash: 0089a38c852d82acaebc8cab0f0fb653c6a304cb
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: f18f8b56db8635d407417949bc35adb61fb4a2c5
+ms.sourcegitcommit: aece2382b618dc5b730705b4c76e76a657986588
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83565636"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84427565"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Sidnumrerade rapporter i Power BI: Vanliga frågor och svar 
 
@@ -96,7 +96,7 @@ Ja, men med Power BI-tjänsten kan du bara ladda upp ett enskilt objekt i taget,
 
 ### <a name="what-versions-of-report-builder-do-you-support"></a>Vilka versioner av Report Builder stöder ni?
 
-Vi har lanserat Power BI Report Builder som det primära redigeringsverktyget för sidnumrerade rapporter i Power BI-tjänsten. Installera [Power BI Report Builder från Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=2086513).
+Vi har lanserat Power BI Report Builder som det primära redigeringsverktyget för sidnumrerade rapporter i Power BI-tjänsten. Installera [Power BI Report Builder från Microsoft Download Center](https://aka.ms/pbireportbuilder).
 
 ### <a name="how-do-i-move-existing-reports-i-have-saved-in-sql-server-reporting-services-to-power-bi"></a>Hur gör jag för att flytta befintliga rapporter som jag har sparat i SQL Server Reporting Services till Power BI?
 
@@ -181,5 +181,5 @@ Det här är något att tänka på när du arbetar med DateTime-fält i sidnumre
 
 ## <a name="next-steps"></a>Nästa steg
 
-- [Installera Power BI Report Builder från Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=2086513)
+- [Installera Power BI Report Builder från Microsoft Download Center](https://aka.ms/pbireportbuilder)
 - [Självstudie: Skapa en sidnumrerad rapport](paginated-reports-quickstart-aw.md)

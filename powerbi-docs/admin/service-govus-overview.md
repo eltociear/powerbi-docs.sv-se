@@ -10,14 +10,15 @@ ms.date: 06/02/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Get started
-ms.openlocfilehash: 8be103d01b5f46c510a1e3658d5a5e29d566a5ff
-ms.sourcegitcommit: f05f7b0112a8ec2dce60839ea5f922eda3cc776c
+ms.openlocfilehash: 3d50b8678abd54d2a4543b5a2d187f32b491b063
+ms.sourcegitcommit: aece2382b618dc5b730705b4c76e76a657986588
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84336554"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84427136"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI för amerikanska myndighetskunder
+
 Den här artikeln är till för amerikanska myndighetskunder som distribuerar Power BI som en del av ett Microsoft 365-myndighetsabonnemang. Myndighetsabonnemang är utformade för de unika behoven hos organisationer som måste uppfylla amerikanska efterlevnads- och säkerhetsstandarder. Den Power BI-tjänst som har utformats för amerikanska myndighetskunder skiljer sig från den kommersiella versionen av Power BI-tjänsten. Dessa funktionsskillnader och funktioner beskrivs i följande avsnitt.
 
 ## <a name="add-power-bi-to-your-microsoft-365-government-plan"></a>Lägga till Power BI i ditt Microsoft 365-myndighetsabonnemang
@@ -33,13 +34,14 @@ Om du är en ny kund måste du verifiera organisationens behörighet innan du ka
 >
 >
 ## <a name="government-cloud-instances"></a>Molninstanser för amerikanska myndigheter
+
 Microsoft 365 erbjuder olika miljöer för myndigheter för att uppfylla olika krav på efterlevnad. Mer information om varje miljö finns i:
 
 * [Microsoft 365 Government Community Cloud (GCC)](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc) är utformat för federala, statliga och lokala myndigheter.
 
 * [Microsoft 365 Government Community Cloud High (GCC-High)](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod) har utformats för federala myndigheter, försvaret, flygbranschen och andra organisationer som innehar kontrollerad, ej hemligstämplad information. Den här miljön lämpar sig för nationella säkerhetsorganisationer och företag med ITAR-data (International Traffic in Arms Regulations) eller DFARS-krav (Defense Federal Acquisition Regulations Supplement).
 
-* [Microsoft 365 DoD-miljön](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod) är utformat uteslutande för USA:s försvarsdepartement. 
+* [Microsoft 365 DoD-miljön](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod) är utformat uteslutande för USA:s försvarsdepartement.
 
 ## <a name="connect-to-power-bi-for-us-government"></a>Ansluta till Power BI för amerikanska myndigheter
 
@@ -68,7 +70,7 @@ Azure distribueras i flera moln. Som standard kan du aktivera brandväggsregler 
 * USGov Texas
 * USGov Arizona
 
-IP-intervall är tillgängliga i det offentliga molnet. Om du vill hämta IP-intervall för amerikanska myndigheters moln laddar du ned filen [IP-intervall och tjänsttaggar för Azure – US Government-moln](https://www.microsoft.com/download/details.aspx?id=57063). 
+IP-intervall är tillgängliga i det offentliga molnet. Om du vill hämta IP-intervall för amerikanska myndigheters moln laddar du ned filen [IP-intervall och tjänsttaggar för Azure – US Government-moln](https://www.microsoft.com/download/details.aspx?id=57063).
 
 Information om hur man konfigurerar brandväggar för SQL-databaser finns i [Skapa och hantera IP-brandväggsregler](https://docs.microsoft.com/azure/sql-database/sql-database-firewall-configure#create-and-manage-ip-firewall-rules).
 
@@ -84,7 +86,7 @@ För att tillgodose kraven hos molnkunder på myndigheter finns det vissa skilln
 |  |Granskning via Office 365 Administrationscenter för säkerhet och efterlevnad|Tillgänglig|Tillgänglig|Tillgänglig|
 |  |Delning med extern användare|Tillgänglig|Tillgänglig|Tillgänglig|
 |  |Användningsstatistik för rapporter och instrumentpaneler|Tillgänglig|Tillgänglig|Tillgänglig|
-|  |Azure B2B mellan GCC och kommersiellt moln|Inte tillgänglig|Inte tillgänglig|Inte tillgänglig|
+|  |Azure B2B mellan GCC och kommersiellt moln|Tillgänglig|Tillgänglig|Tillgänglig|
 |Skapa rapport|Skapa och visa instrumentpaneler och rapporter|Tillgänglig|Tillgänglig|Tillgänglig|
 |  |Schemalagd datauppdatering|Tillgänglig|Tillgänglig|Tillgänglig|
 |  |Uppdateringsbara teaminstrumentpaneler|Tillgänglig|Tillgänglig|Tillgänglig|
@@ -112,4 +114,4 @@ För att tillgodose kraven hos molnkunder på myndigheter finns det vissa skilln
 * [Registrera dig för Power BI för amerikanska myndigheter](service-govus-signup.md)
 * [Microsoft Power Apps US Government](https://docs.microsoft.com/power-platform/admin/powerapps-us-government)
 * [Power Automate US Government](https://docs.microsoft.com/power-automate/us-govt)
-* <a href="https://channel9.msdn.com/Blogs/Azure/Cognitive-Services-HDInsight-and-Power-BI-on-Azure-Government">Demonstration av Power BI för amerikanska myndigheter</a>
+* [Demonstration av Power BI för amerikanska myndigheter](https://channel9.msdn.com/Blogs/Azure/Cognitive-Services-HDInsight-and-Power-BI-on-Azure-Government)

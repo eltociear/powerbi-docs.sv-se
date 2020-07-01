@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 11/06/2018
-ms.openlocfilehash: 81e293f4dbf15a21c2546a54f140b163ebc93c05
-ms.sourcegitcommit: 9c72ec6b2d6d4574c86e976a65c076764473482d
+ms.openlocfilehash: 5243f80fea732e01fee600d738ae6e6cde56e261
+ms.sourcegitcommit: aece2382b618dc5b730705b4c76e76a657986588
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "83565659"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84427719"
 ---
 # <a name="tutorial-create-a-paginated-report-and-upload-it-to-the-power-bi-service"></a>Självstudie: Skapa en sidnumrerad rapport och ladda upp den till Power BI-tjänsten
 
@@ -36,7 +36,7 @@ Om du inte har någon Azure-prenumeration kan du [skapa ett kostnadsfritt konto]
 
 Här följer förutsättningarna för att skapa den sidnumrerade rapporten:
 
-- Installera [Power BI Report Builder från Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=2086513). 
+- Installera [Power BI Report Builder från Microsoft Download Center](https://aka.ms/pbireportbuilder). 
 
 - Följ snabbstarten [Skapa ett Azure SQL-exempeldatabas i Azure Portal](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal). Kopiera och spara värdet i rutan **Servernamn** på fliken **Översikt**. Kom ihåg det användarnamn och det lösenord som du skapade i Azure.
 

@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: quickstart
 ms.date: 11/25/2019
 ms.author: painbar
-ms.openlocfilehash: 0313dc2014130ded9b9ed4ad112aa26803d92d28
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: e3b0fba18250853eec7eef85b5cfc9161290bacb
+ms.sourcegitcommit: c006d7aabf90c7b29fb05641d1f94f1ee7132943
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79435730"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "84685334"
 ---
 # <a name="quickstart-explore-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Snabbstart: Utforska instrumentpaneler och rapporter i Power BI-mobilappar
 I den här snabbstarten får du en snabbtur om Power BI-mobilappen och utforskar ett exempel på en instrumentpanel och en rapport. Power BI-appen för iOS visas, men du kan enkelt följa med på andra enheter.
@@ -47,8 +47,6 @@ När du har slutfört kraven och laddat ned Exempel på detaljhandelsanalys till
     ![Intrumentpaneler i Min arbetsyta](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-dashboard.png)
    
     Power BI-instrumentpaneler ser lite annorlunda ut på din mobila enhet än vad de gör i Power BI-tjänsten. Alla paneler visas med samma bredd och de är placerade efter varandra uppifrån och ned.
-
-5. Tryck på stjärnikonen ![Favoritstjärna-ikonen](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-favorite-icon.png) i verktygsfältet längst ned för att göra den här instrumentpanelen till favorit. När du skapar en favorit i mobilappen blir den en favorit i Power BI-tjänsten och vice versa.
 
 6. Bläddra nedåt och tryck på det ifyllda linjediagrammet Årets försäljning, förra årets försäljning.
 

@@ -5,16 +5,16 @@ author: maggiesMSFT
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/01/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 332b179c1eb097883592d1d1df531b525df585c2
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: baf48e1cfa2bc37652880c9ab4201f2f49ff3c32
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83323285"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85218664"
 ---
 # <a name="pin-a-tile-from-one-dashboard-to-another-dashboard"></a>Fästa en panel från en instrumentpanel till en annan instrumentpanelen
 Ett sätt att lägga till en ny [instrumentpanel](../consumer/end-user-tiles.md) är genom att kopiera den från en annan instrumentpanel. Var och en av de här panelerna, när de klickas på, länkar tillbaka till där de skapades – antingen i frågor och svar eller i en rapport. 

@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/18/2020
+ms.date: 06/16/2020
 ms.author: kfollis
-ms.openlocfilehash: 1a90a9826d794f84933a75213043c31a9a67a4b5
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: 872c847f25c15b46338127dd4a5a15cc536e5ee2
+ms.sourcegitcommit: 3e7e3cb2c2e398cffe8733d99e3ac832ee056dc9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83566050"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "84973417"
 ---
 # <a name="power-bi-webinars"></a>Power BI-webbseminarier
 [//]: # "Tatevik Tatero är en leverantör som arbetar med Chauncy Freels och som hjälper till att underhålla den här listan över webbseminarier"
@@ -22,12 +22,7 @@ Registrera dig för våra kommande live-webbseminarier eller titta på våra ins
 
 ## <a name="upcoming-webinars"></a>Kommande webbseminarier
 
-**Vad är skillnaden mellan Analytics och BI?**
-<br>av Nate Findley och Charles Feddersen, Microsoft
-<br>[Registrera dig för att titta den 3 juni 2020, kl. 10:00–11:00 PDT]( https://info.microsoft.com/ww-landing-What-is-the-difference-between-analytics-and-business-intelligence.html?lcid=en-u)
-
-
->[Kommande webbseminarier från Power BI-communityn](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
+[Kommande webbseminarier från Power BI-communityn](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
 
 ## <a name="featured-webinars"></a>Aktuella webbseminarier
 
