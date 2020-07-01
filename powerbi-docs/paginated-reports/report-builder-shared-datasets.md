@@ -4,15 +4,15 @@ description: Skapa en sidnumrerad rapport i Power BI Report Builder baserat på 
 ms.date: 02/12/2020
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: how-to
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 6f77b2c4ffa7b42cf99a75b4ae88ae0aeb631499
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: a13f346feeddc8196cb35e06acf027baeaa7a151
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83276638"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85239801"
 ---
 # <a name="create-a-paginated-report-based-on-a-power-bi-shared-dataset"></a>Skapa en sidnumrerad rapport baserat på en delad Power BI-datamängd
 
@@ -26,7 +26,7 @@ Datamängden behöver inte finnas på en arbetsyta i en Premium-kapacitet, och d
 
 Här är en lista över det du behöver och inte behöver för att använda en delad datamängd i Report Builder i Power BI.
 
-- Öppna Report Builder i Power BI. [Ladda ned och installera Report Builder i Power BI](https://go.microsoft.com/fwlink/?linkid=2086513).
+- Öppna Report Builder i Power BI. [Ladda ned och installera Report Builder i Power BI](https://aka.ms/pbireportbuilder).
 - För att få åtkomst till en Power BI-datamängd behöver du ha behörigheten Skapa för datamängden. Läs om [behörigheten Skapa](../connect-data/service-datasets-build-permissions.md).
 - Du behöver ingen Power BI Pro-licens för att skapa en sidnumrerad rapport i Report Builder. 
 - Du behöver dock en Power BI Pro-licens för att publicera den sidnumrerade rapporten. Du behöver även minst rollen Deltagare för en arbetsyta i en Premium-kapacitet. 

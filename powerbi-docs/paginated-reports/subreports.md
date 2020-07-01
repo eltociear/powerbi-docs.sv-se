@@ -6,14 +6,14 @@ ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/29/2020
-ms.openlocfilehash: 784e3fd3883adb9fc5b773cc730b992135d7ef8b
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 9ced88289b2170d503a8394d5b83175659178e85
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83272820"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85239578"
 ---
 # <a name="subreports-in-power-bi-paginated-reports"></a>Underrapporter i sidnumrerade Power BI-rapporter
 
@@ -23,7 +23,7 @@ En *underrapport* är ett sidnumrerat rapportobjekt som visar en annan sidnumrer
   
  I den här bilden kommer den kontaktinformation som visas i huvudrapporten för Försäljningsorder faktiskt från en kontaktunderrapport.  
   
-Du skapar och ändrar definitionen för sidnumrerad rapport (.rdl) i Power BI Report Builder. Du kan ladda upp underrapporter som lagras i SQL Server Reporting Services till en Premium-arbetsyta i Power BI-tjänsten. Huvudrapporterna och underrapporterna måste publiceras på samma arbetsyta. Installera [Power BI Report Builder](https://go.microsoft.com/fwlink/?linkid=2086513).
+Du skapar och ändrar definitionen för sidnumrerad rapport (.rdl) i Power BI Report Builder. Du kan ladda upp underrapporter som lagras i SQL Server Reporting Services till en Premium-arbetsyta i Power BI-tjänsten. Huvudrapporterna och underrapporterna måste publiceras på samma arbetsyta. Installera [Power BI Report Builder](https://aka.ms/pbireportbuilder).
   
 ## <a name="work-with-report-builder-and-the-power-bi-service"></a>Arbeta med Report Builder och Power BI-tjänsten
 
