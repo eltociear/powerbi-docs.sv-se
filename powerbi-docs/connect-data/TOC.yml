@@ -94,6 +94,8 @@
                   href: desktop-python-ide.md
                 - name: Skapa visuella objekt med Python
                   href: desktop-python-visuals.md
+                - name: Läs mer om vilka Python-paket som stöds
+                  href: service-python-packages-support.md
             - name: Kör R-skript
               href: desktop-r-scripts.md
             - name: Använda R i frågeredigeraren
