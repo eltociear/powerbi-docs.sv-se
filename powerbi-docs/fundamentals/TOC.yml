@@ -13,6 +13,10 @@
           href: power-bi-service-overview.md
         - name: Jämföra Power BI Desktop och tjänsten
           href: service-service-vs-desktop.md
+    - name: Självstudier
+      items:
+        - name: Kom igång med Power BI-tjänsten
+          href: service-get-started.md
     - name: Begrepp
       items:
         - name: Vad är nytt i den senaste uppdateringen av Power BI Desktop?

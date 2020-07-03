@@ -26,8 +26,6 @@
           href: desktop-tutorial-facebook-analytics.md
         - name: Implementera säkerhet på radnivå i en Analysis Services-tabellmodell
           href: desktop-tutorial-row-level-security-onprem-ssas-tabular.md
-        - name: Kom igång med Power BI
-          href: ../fundamentals/service-get-started.md
         - name: Anslut till ett GitHub-exempel
           href: service-tutorial-connect-to-github.md
         - name: Använda Analysera i Excel
