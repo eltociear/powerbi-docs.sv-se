@@ -118,6 +118,14 @@
               href: report-performance-troubleshoot.md
             - name: Metodtips för distributionspipelines
               href: ../create-reports/deployment-pipelines-best-practices.md
+    - name: Center för utmärkthet (COE)
+      items:
+        - name: Microsoft BI-omvandling
+          href: center-of-excellence-microsoft-business-intelligence-transformation.md
+        - name: Upprätta ett COE
+          href: center-of-excellence-establish.md
+        - name: BI-lösningsarkitektur i COE
+          href: center-of-excellence-business-intelligence-solution-architecture.md
     - name: Vitböcker
       items:
         - name: Översikt vitböcker
