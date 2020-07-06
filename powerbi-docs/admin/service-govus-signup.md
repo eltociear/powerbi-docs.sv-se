@@ -10,12 +10,12 @@ ms.date: 04/07/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Get started
-ms.openlocfilehash: f494533c8b79dce250f3f25c706896d542f01f26
-ms.sourcegitcommit: 3f864ec22f99ca9e25cda3a5abda8a5f69ccfa8e
+ms.openlocfilehash: 885490554acfec10503ba8ce7bc1db6937ec8fce
+ms.sourcegitcommit: a453ba52aafa012896f665660df7df7bc117ade5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84159569"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85485471"
 ---
 # <a name="enroll-your-us-government-organization-in-the-power-bi-service"></a>Registrera din amerikanska myndighetsorganisation i Power BI-tjänsten
 
@@ -32,7 +32,7 @@ Mer information om Power BI-tjänsten för amerikanska myndigheter finns i [Powe
 
 Government Cloud Community kan vara nytt för din myndighetsorganisation, eller så har den kanske redan en prenumeration. Följande avsnitt innehåller information om de registreringssteg som baseras på var du befinner dig med avseende på Microsoft 365-myndighetsabonnemangen och Power BI. Stegen är olika beroende på din aktuella registrering.
 
-När du har registrerat dig för Power BI US Government kan du arbeta med ditt kontoteam för att påbörja den [*vitslistningsprocess*](#additional-signup-information) som beskrivs i den här artikeln. Det steget krävs för att du ska aktivera organisationen fullständigt i Government Community Cloud.
+När du har registrerat dig för Power BI US Government kan du arbeta med ditt kontoteam för att påbörja [listan med tillåtna-processen](#additional-signup-information) som beskrivs i den här artikeln. Det steget krävs för att du ska aktivera organisationen fullständigt i Government Community Cloud.
 
 ## <a name="sign-up-for-a-new-microsoft-365-government-plan"></a>Registrera dig för ett nytt Microsoft 365-myndighetsabonnemang
 
@@ -69,9 +69,9 @@ Om din organisation redan har ett Microsoft 365-myndighetsabonnemang, följer du
 
 ## <a name="additional-signup-information"></a>Ytterligare registreringsinformation
 
-Innan du kan använda Power BI-tjänster för amerikanska myndigheter måste du arbeta med ditt Microsoft-kontoteam för att inleda *vitlistning* för din organisation. Vitlistning är en process som Power BI-utvecklingsteamet använder för att flytta kunder från den kommersiella molnmiljön till det säkra Government Community Cloud. Detta steg säkerställer att funktionerna i US Government Cloud fungerar som förväntat. 
+Innan du kan använda Power BI-tjänster för US Government måste du arbeta med ditt Microsoft-kontoteam för att lägga till organisationen i vår lista med tillåtna. Listan med tillåtna-processen används av Power BI-utvecklingsteamet för att flytta kunder från den kommersiella molnmiljön till det säkra Government Community Cloud. Detta steg säkerställer att funktionerna i US Government Cloud fungerar som förväntat. 
 
-Du startar vitlistningsprocessen genom att kontakta ditt Microsoft-kontoteam för att få hjälp. Endast administratörer kan begära vitlistning. Processen tar cirka tre veckor. Under denna tid utför Power BI-teknikteamet lämpliga ändringar så att din klientorganisation fungerar korrekt i molnet för amerikanska myndigheter.
+Du startar lista med tillåtna-processen genom att kontakta ditt Microsoft-kontoteam för att få hjälp. Endast administratörer kan begära tillägg till listan över tillåtna. Processen tar cirka tre veckor. Under denna tid utför Power BI-teknikteamet lämpliga ändringar så att din klientorganisation fungerar korrekt i molnet för amerikanska myndigheter.
 
 
 ## <a name="next-steps"></a>Nästa steg

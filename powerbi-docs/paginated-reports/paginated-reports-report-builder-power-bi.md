@@ -1,6 +1,6 @@
 ---
 title: Vad är sidnumrerade rapporter i Power BI Premium?
-description: Sidnumrerade rapporter, som länge varit standardrapportformat i SQL Server Reporting Services, är nu tillgängliga i Power BI-tjänsten. De här rapporterna kan skrivas ut eller delas. Du kan kontrollera rapportlayouten i detalj. De visar alla data i en tabell, även om tabellen t.ex. sträcker sig över flera sidor.
+description: Sidnumrerade rapporter är nu tillgängliga i Power BI-tjänsten. De har länge varit standard rapportformat i SQL Server Reporting Services. De här rapporterna kan skrivas ut eller delas. Du kan kontrollera rapportlayouten i detalj. De visar alla data i en tabell, även om tabellen t.ex. sträcker sig över flera sidor.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
 ms.date: 05/19/2020
-ms.openlocfilehash: 69d6f3c828066a66c59ab8becf4fd4f43e54c547
-ms.sourcegitcommit: c1f05254eaf5adb563f8d4f33c299119134c7d1f
+ms.openlocfilehash: 7483b6878a7f7c2e01be7869827f8de66499cc5f
+ms.sourcegitcommit: 46a340937d9f01c6daba86a4ab178743858722ec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83733426"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85393799"
 ---
 # <a name="what-are-paginated-reports-in-power-bi-premium"></a>Vad är sidnumrerade rapporter i Power BI Premium?
 
@@ -95,7 +95,8 @@ Här följer några andra funktioner som inte stöds i den första versionen:
  
 ## <a name="next-steps"></a>Nästa steg
 
-- [Installera Power BI Report Builder från Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=2086513)
+- [Installera Power BI Report Builder från Microsoft Download Center](https://aka.ms/pbireportbuilder)
 - [Självstudie: Skapa en sidnumrerad rapport](paginated-reports-quickstart-aw.md)
+- [Nätbaserad kurs: Sidnumrerade rapporter i Power BI på en dag](../learning-catalog/paginated-reports-online-course.md)
 - [Ange data direkt i en sidnumrerad rapport](paginated-reports-enter-data.md)
 - [Självstudie: Bädda in sidnumrerade Power BI-rapporter i en app för dina kunder](../developer/embedded/embed-paginated-reports-customers.md)

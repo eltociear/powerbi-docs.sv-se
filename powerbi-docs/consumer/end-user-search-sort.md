@@ -6,16 +6,16 @@ ms.reviewer: willt
 ms.custom: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
-ms.topic: conceptual
-ms.date: 03/11/2020
+ms.topic: how-to
+ms.date: 06/25/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 63c18ae6452b36a72ab72eb6fdf0ce14a73011e9
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 62acc84c7459cadd758a036f1db04685b5e9c2b5
+ms.sourcegitcommit: e8b12d97076c1387088841c3404eb7478be9155c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79114120"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85782549"
 ---
 # <a name="navigation-for-power-bi-consumers-global-search"></a>Navigering för Power BI konsumenter: global sökning
 
@@ -39,11 +39,11 @@ När du börjar använda Power BI-tjänsten så är bara några få innehållsko
 
 ## <a name="sorting-content-lists"></a>Sortera innehållslistor
 
-Om du bara har några få innehållsbitar, så är kanske inte sortering nödvändigt.  Men när du har långa listor med instrumentpaneler och rapporter, så kan sortering hjälpa dig att hitta det du söker. Den här innehållslistan för **Delas med mig** innehåller t.ex. 63 objekt. 
+Om du bara har några få innehållsbitar, så är kanske inte sortering nödvändigt.  Men när du har långa listor med instrumentpaneler och rapporter, så kan sortering hjälpa dig att hitta det du söker. Den här innehållslistan för **Delas med mig** innehåller t.ex. 257 objekt. 
 
-![innehållslista för delas med mig](./media/end-user-search-sort/power-bi-long-lists.png)
+![innehållslista för delas med mig](./media/end-user-search-sort/power-bi-all-shared.png)
 
-Just nu sorteras den här innehållslistan efter datum, från det senaste till det äldsta. Om du vill ändra sorteringsvillkoren, så välj pilen till höger om **Datum (senaste)** .
+Just nu sorteras innehållslistan alfabetiskt efter namn, från A till Ö. Om du vill ändra sorteringsvillkoren väljer du pilen till höger om **Namn (A-Ö)** .
 
 ![Sorteringslistruta](./media/end-user-search-sort/power-bi-sort-date.png)
 
@@ -61,4 +61,6 @@ Det finns vissa kolumner som inte kan sorteras. Hovra över kolumnrubrikerna fö
 ## <a name="next-steps"></a>Nästa steg
 [Sortera visuella objekt i rapporter](end-user-change-sort.md)
 
-Fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
+[Sortera data i visuella objekt](end-user-change-sort.md)
+
+Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)

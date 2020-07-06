@@ -1,19 +1,19 @@
 ---
 title: Power BI-datakällor
 description: Den här artikeln innehåller de datakällor som Power BI stöder, inklusive information om DirectQuery och den lokala datagatewayen.
-author: kfollis
+author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/01/2020
-ms.author: kfollis
-ms.openlocfilehash: 7fcd5b5f7a6365aac597186618ce2b18fcc44d7f
-ms.sourcegitcommit: 49daa8964c6e30347e29e7bfc015762e2cf494b3
+ms.date: 06/10/2020
+ms.author: davidi
+ms.openlocfilehash: 0bc6b844457f625d0287f2ec85f582a6ea874624
+ms.sourcegitcommit: 6d3a37eb636e1b71c7dcb9d1c3a9e495b78dec97
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84273401"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "84681869"
 ---
 # <a name="power-bi-data-sources"></a>Power BI-datakällor
 
@@ -31,7 +31,7 @@ I följande tabell visas de datakällor som Power BI stöder för datauppsättni
 | Amazon Redshift | Ja | Ja | Ja | Ja | Nej |
 | appFigures | Ja | Ja | Nej | Nej | Nej |
 | AtScale-kuber | Ja | Ja | Ja | Ja | Nej |
-| Azure Analysis Services | Ja | Ja | Ja | Inga | Nej |
+| Azure Analysis Services | Ja | Ja | Ja | Nej | Nej |
 | Azure Blob Storage | Ja | Ja | Nej | Ja | Nej |
 | Azure Cosmos DB | Ja | Ja | Nej | Nej | Nej |
 | Azure Cost Management | Ja | Ja | Nej | Nej | Nej |
@@ -62,7 +62,7 @@ I följande tabell visas de datakällor som Power BI stöder för datauppsättni
 | Exasol | Ja | Ja | Ja | Ja | Ja |
 | Excel | Ja <sup>3</sup> | Ja <sup>3</sup> | Nej | Ja <sup>3</sup> | Nej <sup>4</sup> |
 | Facebook | Ja | Ja | Nej | Nej | Nej |
-| Arkiv | Ja | Ja | Nej | Ja | Ja |
+| Fil | Ja | Ja | Nej | Ja | Ja |
 | Mapp | Ja | Ja | Nej | Ja | Ja |
 | GitHub | Ja | Ja | Nej | Nej | Nej |
 | Google Analytics | Ja | Ja | Nej | Nej | Nej |
@@ -90,7 +90,7 @@ I följande tabell visas de datakällor som Power BI stöder för datauppsättni
 | Microsoft Graph Security | Ja | Ja | Nej | Ja | Nej |
 | Mixpanel | Ja | Ja | Nej | Nej | Nej |
 | MySQL | Ja | Ja | Nej | Ja | Ja |
-| OData | Ja | Ja | Nej | Ja | Nej |
+| OData | Ja | Ja <sup>7</sup> | Nej | Ja | Nej |
 | ODBC | Ja | Ja | Nej | Ja | Ja |
 | OleDb | Ja | Ja | Nej | Ja | Ja |
 | Oracle | Ja | Ja | Ja | Ja | Ja |
@@ -134,7 +134,7 @@ I följande tabell visas de datakällor som Power BI stöder för datauppsättni
 | Twilio | Ja | Ja | Nej | Nej | Nej |
 | tyGraph | Ja | Ja | Nej | Nej | Nej |
 | Vertica | Ja | Ja | Ja | Ja | Ja |
-| Webb | Ja | Ja | Nej | Ja | Ja <sup>6</sup> |
+| Webben | Ja | Ja | Nej | Ja | Ja <sup>6</sup> |
 | Webtrends | Ja | Ja | Nej | Nej | Nej |
 | Workforce Dimensions | Ja | Ja | Nej | Ja | Nej |
 | XML | Ja | Ja | Nej | Ja | Nej <sup>4</sup> |
@@ -152,6 +152,8 @@ I följande tabell visas de datakällor som Power BI stöder för datauppsättni
 <sup>5</sup> Stöds endast med [personlig gateway](service-gateway-personal-mode.md).
 
 <sup>6</sup> Krävs för .html-, .xls- och Access-databaser
+
+<sup>7</sup> Power BI-tjänsten stöder inte OData-flöden som kräver autentisering.
 
 ## <a name="single-sign-on-sso-for-directquery-sources"></a>Enkel inloggning (SSO) för DirectQuery-källor
 

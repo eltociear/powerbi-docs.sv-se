@@ -1,6 +1,6 @@
 ---
 title: Säkerhet på radnivå med inbäddat innehåll i Power BI
-description: Läs mer om vad du behöver göra för att bädda in Power BI-innehåll i ditt program.
+description: Läs mer om vad du behöver göra för att bädda in Power BI-innehåll i ditt program
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: nishalit
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/10/2019
-ms.openlocfilehash: 71f204058bfa94c61df8299d2a2c7c9063caad5d
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: b412af6899b9299fc4fde8ea217569747a445e45
+ms.sourcegitcommit: 52f365af6ea5359e39d4d4547f1d61e5e0d08c5f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83277029"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84795149"
 ---
 # <a name="row-level-security-with-power-bi-embedded"></a>Säkerhet på radnivå med Power BI Embedded
 
@@ -88,16 +88,19 @@ API:et tillåter en lista med identiteter med information om relevanta dataupps�
 
 Du kan skapa en inbäddningstoken med hjälp av metoden **GenerateTokenInGroup** på **PowerBIClient.Reports**.
 
-Du kan till exempel ändra exemplet [PowerBIEmbedded_AppOwnsData](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Framework/App%20Owns%20Data/PowerBIEmbedded_AppOwnsData). *Services\EmbedService.cs rad 76 och 77* kan uppdateras från:
+Du kan t.ex. ändra exemplet *[PowerBI-Developer-Samples](https://github.com/Microsoft/PowerBI-Developer-Samples) > .NET Framework > Embed for your customers > **PowerBIEmbedded_AppOwnsData***.
+
+**Före ändringen**
 
 ```csharp
-// Generate Embed Token.
-var generateTokenRequestParameters = new GenerateTokenRequest(accessLevel: "view");
+// Generate Embed Token with effective identities.
+generateTokenRequestParameters = new GenerateTokenRequest(accessLevel: "view", identities: new List<EffectiveIdentity> { rls });
 
-var tokenResponse = await client.Reports.GenerateTokenInGroupAsync(GroupId, report.Id, generateTokenRequestParameters);
+// Generate Embed Token for reports without effective identities.
+generateTokenRequestParameters = new GenerateTokenRequest(accessLevel: "view");
 ```
 
-till
+**Efter ändringen**
 
 ```csharp
 var generateTokenRequestParameters = new GenerateTokenRequest("View", null, identities: new List<EffectiveIdentity> { new EffectiveIdentity(username: "username", roles: new List<string> { "roleA", "roleB" }, datasets: new List<string> { "datasetId" }) });
@@ -143,7 +146,10 @@ Roller kan tilldelas med identiteten i en inbäddad token. Om ingen roll anges k
 
 ### <a name="using-the-customdata-feature"></a>Använda funktionen CustomData
 
-CustomData-funktionen fungerar endast för modeller som finns i **Azure Analysis Services**, och den fungerar endast i läget **Anslut live**. Till skillnad från användare och roller så kan den anpassade datafunktionen inte anges inuti en .pbix-fil. När du skapar en token med Anpassade data-funktionen så måste du ha ett användarnamn.
+CustomData-funktionen fungerar endast för modeller som finns i **Azure Analysis Services**, och den fungerar endast i läget **Anslut live**. Till skillnad från användare och roller så kan den anpassade datafunktionen inte anges inuti en .pbix-fil. När du skapar en token med CustomData-funktionen så måste du ha ett användarnamn.
+
+>[!NOTE]
+>CustomData-användarnamnet får innehålla högst 256 tecken.
 
 Med CustomData-funktionen kan du lägga till ett radfilter när du visar Power BI-data i ditt program när du använder **Azure Analysis Services** som datakälla (visa Power BI-data som är anslutna till Azure Analysis Services i ditt program ).
 

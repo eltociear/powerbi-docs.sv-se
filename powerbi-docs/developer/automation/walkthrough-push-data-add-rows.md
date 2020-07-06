@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.date: 02/05/2019
-ms.openlocfilehash: ecd5b71d0b64e235d69d2b6d3933d393cb684b04
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: ba37d9fc79405518a59ff188fdb5890e6af8043c
+ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79079265"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85355040"
 ---
 # <a name="step-5-add-rows-to-a-power-bi-table"></a>Steg 5: Lägga till rader i en Power BI-tabell
 
@@ -23,7 +23,7 @@ I **steg 4** av Skicka data till en datauppsättning, [Hämta en datauppsättnin
 
 När du anropar åtgärden [PostRows](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows) läggs rader till i en datauppsättning.
 
-![](media/walkthrough-push-data-add-rows/powerbi-developer-add-rows.png)
+![lägg till rader](media/walkthrough-push-data-add-rows/powerbi-developer-add-rows.png)
 
 Så här lägger du till rader till i en datauppsättning med Power BI-API.
 

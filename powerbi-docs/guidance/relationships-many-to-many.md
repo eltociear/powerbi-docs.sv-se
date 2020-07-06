@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 03/02/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 8718c67c592bf96d50efed475c0d27b4ec80ca04
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 971c2351fe5032ba91fa6c0f964bd844ef479b05
+ms.sourcegitcommit: 66b1a0c74b8a7dcb33a2f8570fb67bce2401a895
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83278340"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84532429"
 ---
 # <a name="many-to-many-relationship-guidance"></a>Vägledning för att lägga till en många-till-många-relationer
 
@@ -61,7 +61,7 @@ Radinformationen för de fyra tabellerna beskrivs i följande punktlista:
 - Tabellen **AccountCustomer** innehåller tre rader:
   - **AccountID** 1 är associerad med **CustomerID** 91
   - **AccountID** 1 är associerad med **CustomerID** 92
-  - **AccountID** 3 är associerad med **CustomerID** 92
+  - **AccountID** 2 är associerat med **CustomerID** 92
 - Tabellen **Transaction** innehåller tre rader:
   - **Date** January 1 2019, **AccountID** 1, **Amount** 100
   - **Date** February 2 2019, **AccountID** 2, **Amount** 200

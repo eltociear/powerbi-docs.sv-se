@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/30/2019
 ms.author: v-pemyer
-ms.openlocfilehash: de84dd7e9021abf1198f2dc4f910afb8bd078ac6
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: b195e0bc11068b819a2f3133ed9ae135e3c30ffb
+ms.sourcegitcommit: a453ba52aafa012896f665660df7df7bc117ade5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83279536"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85485954"
 ---
 # <a name="on-premises-data-gateway-sizing"></a>Dimensionering av lokal datagateway
 
@@ -84,7 +84,7 @@ Planera för bästa möjliga anslutning mellan Power BI-tjänsten och din gatewa
 
 - Sträva efter tillförlitlighet, snabba hastigheter och låga konsekventa fördröjningar
 - Eliminera – eller minska – datorhopp mellan gatewayen och dina datakällor
-- Ta bort eventuella nätverksbegränsningar som införts av brandväggsproxyns lager. Mer information om Power BI-slutpunkter finns i [Power BI-URL:er för vitlistning](../admin/power-bi-whitelist-urls.md).
+- Ta bort eventuella nätverksbegränsningar som införts av brandväggsproxyns lager. Mer information om Power BI-slutpunkter finns i [Lägg till Power BI-URL:er till listan över tillåtna](../admin/power-bi-whitelist-urls.md).
 - Konfigurera [Azure ExpressRoute](/azure/expressroute/expressroute-introduction) för att upprätta en privat, hanterad anslutning till Power BI
 - När det gäller datakällor på virtuella Azure-datorer, så se till att de virtuella datorerna [samplaceras med Power BI-tjänsten](../admin/service-admin-where-is-my-tenant-located.md)
 - När det gäller de live-anslutningsarbetsbelastningar till SQL Server Analysis Services (SSAS) som involverar dynamisk RLS, så säkerställ en lämplig anslutning mellan gatewaydatorn och Active Directory lokalt

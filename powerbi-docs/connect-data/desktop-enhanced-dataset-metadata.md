@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/21/2020
+ms.date: 06/11/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 42e3f36689e62b196f5d8cb82bd4dd5ee118bf8b
-ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
+ms.openlocfilehash: 0a09311c5fdb1a8b2e008996d993015f33ee9b5f
+ms.sourcegitcommit: a07fa723bb459494c60cf6d749b4554af723482a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "83793391"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "84739263"
 ---
 # <a name="using-enhanced-dataset-metadata-preview"></a>Använda utökade datamängdsmetadata (förhandsversion)
 
@@ -64,11 +64,13 @@ Säkerhetskopian skapas när rapporten uppgraderas, så ändringar som görs eft
 I förhandsversionen gäller följande begränsningar när förhandsfunktionen är aktiverad.
 
 ### <a name="unsupported-features-and-connectors"></a>Funktioner och anslutningar som inte stöds
+
+Följande begränsningar gäller:
+
 När du öppnar en befintlig PBIX- eller PBIT-fil som inte har uppgraderats misslyckas uppgraderingen om datamängden innehåller någon av följande funktioner eller anslutningar. Om den misslyckas bör det inte ha någon direkt påverkan på användarupplevelsen, och Power BI Desktop fortsätter använda det tidigare metadataformatet.
 
-* Alla anpassade anslutningsprogram
+* Alla anpassade anslutningsprogram (versionsbegränsning maj 2020)
 * Python-skript
-* Anpassade anslutningar
 * Azure DevOps Server
 * BI-anslutningsapp
 * Denodo
@@ -84,16 +86,15 @@ När du öppnar en befintlig PBIX- eller PBIT-fil som inte har uppgraderats miss
 * M-uttryck som innehåller vissa teckenkombinationer som "\\n" i kolumnnamn
 * När du använder datamängder med funktionen **Förbättrade datamängdsmetadata** aktiverad kan inte SSO-datakällor (datakällor för enkel inloggning) konfigureras i Power BI-tjänsten
 
-Rapporter som använder de här listade anslutningsprogrammen uppgraderas inte till det nya formatet. Rapporter som redan har uppgraderats, eller som skapades efter att den här nya funktionen aktiverades, har inte stöd för att lägga till de listade funktionerna eller anslutningsprogrammen som saknar stöd. 
+Om du använder Power BI Desktop-versionen från **juni 2020** (eller senare) *har* alla anpassade anslutningsprogram och alla inbyggda anslutningsprogram stöd för Power BI Desktop och Power BI-tjänsten. När du använder versionen från juni 2020 eller senare under publiceringsprocessen, och om gatewayen påträffar problem, så publiceras visserligen datamängden, men användarna måste publicera om rapporten så att data uppdateras. Dialogrutan **Inställningar för datakälla** är den enda indikatorn på problem under publiceringsprocessen.
+
+Rapporter som använder anslutningsprogram som inte stöds uppgraderas inte till det nya formatet. Rapporter som redan har uppgraderats, eller som skapades efter att den här nya funktionen aktiverades, har inte stöd för att lägga till de listade funktionerna eller anslutningsprogrammen som saknar stöd. 
 
 Frågor med dynamiska datakällor stöds inte. Rapporter som har dynamiska datakällor kommer inte att uppgraderas till det nya formatet och rapporter som redan har uppgraderats eller som nyligen har skapats med funktionen aktiverad stöder inte tillägg av dynamiska datakällor. En fråga har en dynamisk datakälla om källan ändras beroende på en parameter, en instabil funktion eller funktionsindata. 
 
 Frågor med fel i överordnade steg eller grenar stöds inte. 
 
-PBIX- och PBIT-filer som redan har uppgraderats att använda **förbättrade datamängdsmetadata** *kan inte* heller använda ovanstående funktioner eller anslutningar i den aktuella versionen.
-
-
-
+PBIX- och PBIT-filer som redan har uppgraderats att använda **förbättrade datamängdsmetadata** *kan inte* heller använda ovanstående funktioner (eller eventuella anslutningsprogram som inte stöds).
 
 ### <a name="lineage-view"></a>Ursprungsvy
 Datauppsättningar med det nya metadataformatet visar för närvarande inte länkar till dataflöden i ursprungsvyn i Power BI-tjänsten.

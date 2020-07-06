@@ -6,16 +6,16 @@ ms.reviewer: ''
 featuredvideoid: lJKgWnvl6bQ
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 07/23/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 7e3a9d6db1b7f51f02f3dbc94da1d6b35eac3222
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 1e0fdf11eab5ea264e78363984ff49bbc95660d8
+ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83348906"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85354327"
 ---
 # <a name="pin-a-tile-to-a-power-bi-dashboard-from-a-report"></a>Fäst en panel på en Power BI-instrumentpanel från en rapport
 
@@ -57,6 +57,11 @@ Nu kan du skapa en egen instrumentpanel med någon av Power BI-exempelrapportern
 Ett annat alternativ är att fästa en hel rapportsida på en instrumentpanel, vilket är ett enkelt sätt att fästa mer än en visualisering i taget. När du fäster en hel sida är panelerna *levande*. Det vill säga du kan interagera dem på instrumentpanelen. Ändringar du gör i någon av visualiseringarna i rapportredigeraren (till exempel om du lägger till ett filter eller ändrar fälten som används i diagrammet) visas då även på instrumentpanelen.  
 
 Mer information finns i [Fästa en hel rapportsida](service-dashboard-pin-live-tile-from-report.md).
+
+> [!NOTE]
+> Vissa formateringsalternativ används inte för visuella objekt när de fästs på en instrumentpanel. Inställningar för kantlinje, skuggning och bakgrund kommer att ignoreras i den fästa panelen. För visuella kortobjekt visas alltid texten som används för värdet i instrumentpaneler med teckensnittsfamiljen DIN. 
+> 
+>
 
 ## <a name="next-steps"></a>Nästa steg
 - [Instrumentpaneler för de som använder Power BI-tjänsten](../consumer/end-user-dashboards.md)

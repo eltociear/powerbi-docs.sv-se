@@ -6,15 +6,15 @@ ms.reviewer: willthom
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 05/07/2020
 ms.author: davidi
-ms.openlocfilehash: e7e7c0f8df0f41d673920cf4af596ca33d46519c
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: ae9a3695c8db084d9c65871314edfef34cde1cb6
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83564585"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85238490"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop"></a>Tips om hur du skapar rapporter i Power BI Desktop
 För att få ut mesta möjliga av dina data, behövs ibland lite extra hjälp. Vi har samlat några tips och råd som du kan använda när du skapar rapporter i Microsoft Power BI Desktop *och* i Microsoft Excel 2016 eller Excel 2013 Pro-Plus-versioner med Power Pivot-tillägget aktiverat och Power Query installerad och aktiverad. 
@@ -99,11 +99,11 @@ Det avslutande steget är att skapa histogrammet. Dra bucketfältet från tabell
 ## <a name="histograms"></a>Histogram
 I Power BI Desktop kan du använda ett beräknat fält för att definiera ett histogram. Identifiera tabellen och den kolumn där du vill skapa ett histogram. Skriv följande formel i beräkningsområdet:
 
-> Frekvens: = COUNTROWS (\<kolumnnamnet\>)
+> Frekvens: =COUNTROWS(\<Column Name\>)
 > 
 > 
 
-Spara ändringarna och återgå till rapporten. Lägg till \<kolumnnamnet\> och konvertera sedan Frekvenser från en tabell till ett stapeldiagram. Se till att \<kolumnnamnet\> finns på x-axeln och det beräknade fältet Frekvens är på y-axeln.
+Spara ändringarna och återgå till rapporten. Lägg till \<Column Name\> och frekvens till en tabell och konvertera till ett stapeldiagram. Se till att \<Column Name\> finns på x-axeln och det beräknade fältet Frekvens ligger på y-axeln.
 
 ## <a name="tips-and-tricks-for-creating-relationships-in-power-bi-desktop"></a>Tips om hur du skapar relationer i Power BI Desktop
 Ofta, när du läser in datauppsättningar från flera källor hindrar problem som null-värden, tomma värden och duplicerade serier dig från att skapa relationer. 

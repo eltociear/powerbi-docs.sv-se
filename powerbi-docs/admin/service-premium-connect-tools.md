@@ -6,16 +6,16 @@ ms.author: owend
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
-ms.topic: conceptual
-ms.date: 03/26/2020
+ms.topic: how-to
+ms.date: 06/04/2020
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 74ea78bf9f5e845eb86a38bad54ebde5e99ffbb0
-ms.sourcegitcommit: b66c913a50a5100082e1c8ff7cd1c4f76f514fe7
+ms.openlocfilehash: b327730db126ad3f83e0a680d8dc29f384e606fe
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "84219566"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85227427"
 ---
 # <a name="dataset-connectivity-with-the-xmla-endpoint-preview"></a>Datamängdsanslutning med XMLA-slutpunkten (förhandsversion)
 
@@ -169,7 +169,7 @@ Metadata som anges via XMLA-slutpunkten kan skapa anslutningar till datakällor,
 
 ### <a name="service-principals"></a>Tjänstens huvudnamn
 
-Under den offentliga förhandsversionen finns inte stöd för att ansluta till XMLA-slutpunkten med hjälp av [tjänsthuvudnamn](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals) för automatiseringsscenarier.
+Azure-tjänstens huvudnamn kan användas för att utföra obevakade åtgärder på resurs- och tjänstnivå. Mer information finns i [Automatisera arbetsyte- och datauppsättningsåtgärder i Premium med hjälp av tjänstens huvudnamn](service-premium-service-principal.md).
 
 ## <a name="deploy-model-projects-from-visual-studio-ssdt"></a>Distribuera modellprojekt från Visual Studio (SSDT)
 

@@ -9,15 +9,15 @@ ms.topic: troubleshooting
 ms.date: 03/05/2020
 ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 299329cad78d831a3b77e55107e94a234d6f64b1
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: e1358cb8cbe37e0b44cd6a60069ad9ec707d12d8
+ms.sourcegitcommit: a453ba52aafa012896f665660df7df7bc117ade5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83287543"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85485517"
 ---
 # <a name="troubleshooting-sign-in-for-power-bi-desktop"></a>Felsök inloggning i Power BI Desktop
-Det kan finnas tillfällen när du försöker logga in på **Power BI Desktop** men stöter på fel. Det finns två primära orsaker till inloggningsproblem: **Proxyautentiseringsfel** och **icke-HTTPS-URL omdirigeringsfel**. 
+Det kan finnas tillfällen när du försöker logga in på **Power BI Desktop** men stöter på fel. Det finns två primära orsaker för inloggningsproblem: **Proxy-autentiseringsfel** och **icke-HTTPS-URL omdirigeringsfel**. 
 
 För att avgöra vilka problem som orsakar inloggningsproblemet, är det första steget att kontakta din administratör och ange diagnostisk information så att de kan fastställa orsaken till problemet. Genom att spåra problem associerade med dina inloggningsproblem, kan administratörer vilket av följande fel som gäller för dig. 
 
@@ -37,13 +37,13 @@ Följande undantag i *Power BI Desktop*-spårningsfiler är associerat med det h
 
 När det här felet uppstår är den troligaste orsaken att en proxyserver för autentisering i ditt nätverk blockerar webbegäranden som utfärdats av **Power BI Desktop**. 
 
-Om ditt nätverk använder en proxyserver för autentisering, kan din administratör åtgärda problemet genom att vitlista följande domäner på proxyservern för autentisering:
+Om ditt nätverk använder en proxyserver för autentisering, kan din administratör åtgärda problemet genom lägga till följande domäner i listan med tillåtna på proxyservern för autentisering:
 
 * app.powerbi.com
 * api.powerbi.com
 * domäner i namnområdet *.analysis.windows.net
 
-För kunder som ingår i ett myndighetsmoln, kan man åtgärda problemet genom att vitlista följande domäner på proxyservern för autentisering:
+För kunder som ingår i ett myndighetsmoln, kan man åtgärda problemet genom att lägga till följande domäner i listan över tillåtna på proxyservern för autentisering:
 
 * app.powerbigov.us
 * api.powerbigov.us
@@ -55,7 +55,7 @@ Aktuella versioner av **Power BI Desktop** använder den aktuella versionen av A
 
 Följande undantag i *Power BI Desktop*-spårningsfiler är associerat med det här felet:
 
-* *Microsoft.IdentityModel.Clients.ActiveDirectory.AdalServiceException: Omdirigering till icke-HTTPS-URL:er stöds inte i webbvyn*
+* *Microsoft.IdentityModel.Clients.ActiveDirectory.AdalServiceException: Omdirigering av Icke-HTTPS-URL stöds inte i webbvy*
 * *ErrorCode: non_https_redirect_failed*
 
 Om *ErrorCode: non_https_redirect_failed* inträffar, innebär det att en eller flera omdirigeringssidor eller providers i omdirigeringskedjan inte är en HTTPS-skyddad slutpunkt eller att en certifikatutfärdare för en eller flera omdirigeringar inte finns bland enhetens betrodda rotcertifikat. Alla leverantörer i en omdirigeringskedja för inloggning måste använda en HTTPS-URL. Kontakta din administratör och begär att säkra URL:er används för deras autentiseringswebbplatser för att lösa problemet. 

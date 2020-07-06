@@ -8,19 +8,19 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 12/12/2018
-ms.openlocfilehash: c619f37ac062eec02eb379ba7cd97731254a171a
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: ba0a85958fad500bd27f4697a7f46961ca430f49
+ms.sourcegitcommit: 0b1e96de184caf2371adedcc3ee43bcb88048187
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83279398"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85299582"
 ---
 # <a name="power-bi-embedded-performance-best-practices"></a>Bästa praxis för Power BI Embedded-prestanda
 
 Den här artikeln innehåller rekommendationer för snabbare rendering av rapporter, instrumentpaneler och paneler i ditt program.
 
 > [!Note]
-> Kom ihåg att inläsningstiden huvudsakligen beror på element som är relevanta för själva rapporten och data, däribland visuella objekt, storleken på data samt komplexiteten för frågorna och beräknade mått. Mer information finns i [Power BI-optimeringsguiden](../../guidance/power-bi-optimization.md).
+> Kom ihåg att inläsningstiden huvudsakligen beror på element som är relevanta för själva rapporten och data, däribland visuella objekt, storleken på data samt komplexiteten för frågorna och måtten. Mer information finns i [Power BI-optimeringsguiden](../../guidance/power-bi-optimization.md).
 
 ## <a name="update-tools-and-sdk-packages"></a>Uppdatera verktyg och SDK-paket
 
@@ -53,7 +53,7 @@ Om du bäddar in rapporter med samma filter, bokmärken och utsnitt kan du förb
 När du bäddar in flera rapporter i samma iframe ska du inte generera en ny iframe för varje rapport. Använd i stället `powerbi.embed(element, config)` med en annan config för att bädda in den nya rapporten.
 
 > [!NOTE]
-> Växling mellan rapporter för ett ”App äger data”-scenario är kanske inte särskilt effektivt på grund av att en ny inbäddningstoken måste skapas.
+> Om du växlar mellan rapporter när du bäddar in för dina kunder (kallas även för appen äger data) måste du använda en inbäddningstoken med behörigheter till alla rapporter och datauppsättningar. Mer information finns i [skapa token-API](https://docs.microsoft.com/rest/api/power-bi/embedtoken/generatetoken).
 
 ## <a name="query-caching"></a>Cachelagring av frågor
 
@@ -63,7 +63,7 @@ Organisationer med Power BI Premium-kapacitet eller Power BI Embedded-kapacitet 
 
 ## <a name="preload"></a>Förinläsning
 
-Använd `powerbi.preload()` för att förbättra slutanvändarprestandan. Metod `powerbi.preload()` laddar ned javascript, css-filer och andra artefakter som används senare för att bädda in en rapport.
+Använd `powerbi.preload()` för att förbättra slutanvändarprestandan. Metoden `powerbi.preload()` laddar ned Javascript, CSS-filer och andra artefakter som används senare för att bädda in en rapport.
 
 Anropa `powerbi.preload()` om du inte tänker bädda in rapporten direkt. Om det Power BI-inbäddade innehållet till exempel inte visas på startsidan, använder du `powerbi.preload()` för att hämta och cachelagra de artefakter som används för att bädda in innehållet.
 

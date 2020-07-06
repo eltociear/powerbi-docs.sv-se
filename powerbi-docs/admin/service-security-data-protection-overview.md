@@ -4,17 +4,17 @@ description: Lär dig hur dataskyddet fungerar i Power BI
 author: paulinbar
 manager: rkarlin
 ms.service: powerbi
-ms.subservice: powerbi-service
-ms.topic: conceptual
-ms.date: 05/21/2020
+ms.subservice: powerbi-eim
+ms.topic: how-to
+ms.date: 06/15/2020
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: fa969f8f738cf09e9e01e284de8f60e2fd8ce9ab
-ms.sourcegitcommit: cd64ddd3a6888253dca3b2e3fe24ed8bb9b66bc6
+ms.openlocfilehash: 4575c80106329a00c959db73c2851c99959f41ec
+ms.sourcegitcommit: 46a340937d9f01c6daba86a4ab178743858722ec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84315682"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85393667"
 ---
 # <a name="data-protection-in-power-bi"></a>Dataskydd i Power BI
 
@@ -37,7 +37,7 @@ Om du vill hantera känslighetsetiketter på någon av de här platserna går du
 > Om din organisation använder känslighetsetiketter i Azure Information Protection måste du [migrera](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels) dem till någon av de tidigare angivna tjänsterna för att etiketterna ska kunna användas i Power BI.
 
 > [!NOTE]
-> Känslighetsetiketter kan bara användas för klientorganisationer i offentliga moln, inte för klientorganisationer i exempelvis självständiga moln.
+> Känslighetsetiketter kan bara användas för klientorganisationer i offentliga moln, inte för klientorganisationer i exempelvis nationella moln.
 
 ## <a name="how-sensitivity-labels-work-in-power-bi"></a>Så här fungerar känslighetsetiketter i Power BI
 
@@ -99,12 +99,12 @@ I den här listan anges några begränsningar för känslighetsetiketter i Power
 * Känslighetsetiketter på Power BI-resurser visas i vyerna Arbetsytelista, Ursprung, Favoriter, Senaste och Appar. För närvarande visas inte etiketter i vyn ”Delat med mig”. Men även om du inte ser en etikett som tillämpats på en Power BI-tillgång så gäller den även efter export till Excel-, PowerPoint- eller PDF-format.
 * Känslighetsetiketter stöds bara för klientorganisationer i det globala (offentliga) molnet. Känslighetsetiketter stöds inte för klientorganisationer i andra moln.
 * Datakänslighetsetiketter stöds inte för mallappar. Känslighetsetiketter som anges av mallappens skapare tas bort när appen extraheras och installeras, och känslighetsetiketter som lagts till i artefakter i en installerad mallapp av appkonsumenten går förlorade (återställs till ingenting) när appen uppdateras.
-* Power BI stöder inte känslighetsetiketter för skyddstyperna [Vidarebefordra inte](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide#let-users-assign-permissions), [Användardefinierat](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide#let-users-assign-permissions) och [HYOK](https://docs.microsoft.com/azure/information-protection/configure-adrms-restrictions). Skyddstyperna Vidarebefordra inte och Användardefinierat är etiketter som definieras i [Microsoft 365 Security Center](https://security.microsoft.com/) eller [Microsoft 365 Compliance Center](https://compliance.microsoft.com/).
-* De är inte avsedda att användas för att tillåta att användare tillämpar överordnade etiketter i Power BI. Om en överordnad etikett tillämpas på innehåll kommer en export av data från det innehållet till en fil (Excel, PowerPoint och PDF) att misslyckas. Mer information finns i avsnittet om [Underordnade etiketter (etikettgruppering)](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels?view=o365-worldwide#sublabels-grouping-labels).
+* Power BI stöder inte känslighetsetiketter av skyddstyperna [Vidarebefordra inte](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide#let-users-assign-permissions), [Användardefinierat](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide#let-users-assign-permissions) och [HYOK](https://docs.microsoft.com/azure/information-protection/configure-adrms-restrictions). Skyddstyperna Vidarebefordra inte och Användardefinierat är etiketter som definieras i [Microsoft 365 Säkerhetscenter](https://security.microsoft.com/) eller [Microsoft 365 Efterlevnadscenter](https://compliance.microsoft.com/).
+* Det är inte rekommenderat att tillåta användare att tillämpa överordnade etiketter i Power BI. Om en överordnad etikett tillämpas på innehåll kommer en export av data från det innehållet till en fil (Excel, PowerPoint och PDF) att misslyckas. Mer information finns i avsnittet om [underetiketter (etikettgruppering)](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels?view=o365-worldwide#sublabels-grouping-labels).
 
 **Export**
 * Etikett- och skyddskontroller tillämpas endast när data exporteras till Excel-, PowerPoint- och PDF-filer. Etikett och skydd tillämpas inte när data exporteras till CSV- eller PBIX-filer, Analysera i Excel eller andra exportsökvägar.
-* När du tillämpar en känslighetsetikett och skydd på en exporterad fil, läggs ingen innehållsmärkning till för filen. Om etiketten har konfigurerats att använda innehållsmärkningar tillämpas de dock automatiskt av Azure Information Protection-klienten för enhetliga etiketter när filen öppnas i Office-skrivbordsappar. Innehållsmärkningarna tillämpas inte automatiskt när du använder inbyggd märkning för skrivbords-, mobil- eller webbappar. Mer information finns i avsnittet [om innehållsmärkning och kryptering med Office-appar](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps?view=o365-worldwide#when-office-apps-apply-content-marking-and-encryption).
+* När du tillämpar en känslighetsetikett och skydd på en exporterad fil, läggs ingen innehållsmärkning till för filen. Om etiketten har konfigurerats att använda innehållsmärkningar tillämpas de dock automatiskt av Azure Information Protection-klienten för enhetliga etiketter när filen öppnas i Office-skrivbordsappar. Innehållsmärkningarna tillämpas inte automatiskt när du använder inbyggd märkning för skrivbords-, mobil- eller webbappar. Mer information finns i avsnittet om [innehållsmärkning och kryptering med Office-appar](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps?view=o365-worldwide#when-office-apps-apply-content-marking-and-encryption).
 * Användare som exporterar en fil från Power BI har behörighet att komma åt och redigera filen enligt inställningarna för känslighetsetiketten. Användaren som exporterar data får inte ägarbehörighet till filen.
 * Exporten misslyckas om det inte går att tillämpa en etikett när data exporteras till en fil. Du kan kontrollera om exporten misslyckades på grund av att det inte gick att tillämpa etiketten. Klicka bara på rapportens eller instrumentpanelens namn i mitten av namnlisten och se om ”Det går inte att läsa in känslighetsetiketten” visas i listrutan som öppnas. Detta kan hända om den tillämpade etiketten har avpublicerats eller tagits bort av säkerhetsadministratören, eller på grund av ett tillfälligt systemfel.
 

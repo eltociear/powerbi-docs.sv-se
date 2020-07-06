@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 03/29/2020
+ms.date: 06/18/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: c2800ab9d57732448db9e4fe647a0601a20a816c
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: b273b5ea265815f26e58010356790186163c4aa8
+ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83276615"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85354626"
 ---
 # <a name="tips-and-tricks-for-color-formatting-in-power-bi"></a>Tips för färgformatering i Power BI
 
@@ -62,11 +62,11 @@ Anta nu att du vill att anropa segmentet **Bekvämlighet** för att visa hur vä
 
 Visa kortet **Datafärger** och aktivera skjutreglaget för **Visa alla**. Då visas färgerna för varje dataelement i visualiseringen. Du kan nu ändra vilken som helst av datapunkterna.
 
-![](media/service-tips-and-tricks-for-color-formatting/power-bi-show.png)
+![Formatfönstret med Visa alla På](media/service-tips-and-tricks-for-color-formatting/power-bi-show.png)
 
 Ställ in **Bekvämlighet** på orange. 
 
-![](media/service-tips-and-tricks-for-color-formatting/power-bi-one-color.png)
+![stapeldiagram med en orange kolumn](media/service-tips-and-tricks-for-color-formatting/power-bi-one-color.png)
 
 När du är klar visas datapunkten **Bekvämlighet** med en fin orange nyans som verkligen står ut.
 
@@ -96,7 +96,7 @@ Använd listrutorna i fönstret **Standardfärger** till att identifiera vilka f
 
 Du kan också formatera färgen för det visuella objektet med hjälp av ett fält som inte ingår i det visuella objektet. I följande bild används **%Market Share SPLY YTD**. 
 
-![](media/service-tips-and-tricks-for-color-formatting/power-bi-conditional-colors.png)
+![stapeldiagram med flera nyanser av blått](media/service-tips-and-tricks-for-color-formatting/power-bi-conditional-colors.png)
 
 
 Även om vi har sålt fler enheter av både **Productivity** och **Extreme** (deras kolumner är högre) så ser du att **Moderation** har större **%Market Share SPLY YTD** (kolumnen har högre färgmättnad).
@@ -106,7 +106,7 @@ Du kan också ändra hur värdena mappas till dessa färger. I följande bild ha
 
 Notera hur diagramstaplarna i den första bilden reflekterar den toning som visas i stapeln. Det högsta värdet är grönt, det lägsta är orange, och varje mellanliggande stapel har en färgton som ligger i spektrumet någonstans mellan grönt och orange.
 
-![](media/service-tips-and-tricks-for-color-formatting/power-bi-conditional4.png)
+![stapeldiagram som visar tonade färger från grönt till orange](media/service-tips-and-tricks-for-color-formatting/power-bi-conditional4.png)
 
 Nu ska vi se vad som händer om vi tillhandahåller numeriska värden i värdefälten **Minimum** och **Maximum**. Välj **Anpassad** från listrutorna för både **Lägsta** och **Högsta**. Sätt **Lägsta** till 3 500 och **Högsta** till 6 000.
 

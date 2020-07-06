@@ -5,15 +5,15 @@ author: peter-myers
 ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 10/23/2019
 ms.author: v-pemyer
-ms.openlocfilehash: ea3d786642d969eb8f0879bd336a49c486b3f95c
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: ae8121af4e3c16e7e8dd047284034fc95d0403fd
+ms.sourcegitcommit: 46a340937d9f01c6daba86a4ab178743858722ec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83349527"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85393828"
 ---
 # <a name="apply-auto-datetime-in-power-bi-desktop"></a>Använda automatisk datum/tid i Power BI Desktop
 
@@ -24,7 +24,6 @@ Automatiskt datum/tid är ett datainläsningsalternativ i Power BI Desktop. Syft
 När alternativet är aktiverat skapar Power BI Desktop en dold automatisk datum/tidtabell för varje datumkolumn, förutsatt att alla följande villkor är uppfyllda:
 
 - Tabellens lagringsläge är Importera
-- Kolumnen är inte en beräknad kolumn
 - Kolumnens datatyp är datum eller datum/tid
 - Kolumnen är inte på ”många”-sidan i en modellrelation
 
@@ -99,6 +98,7 @@ Välj _Arkiv > Alternativ och inställningar > Alternativ_ i Power BI Desktop oc
 Mer information om ämnet i den här artikeln finns i följande resurser:
 
 - [Vägledning om automatiskt datum/tid i Power BI Desktop](../guidance/auto-date-time.md)
+- [Skapa datumtabeller i Power BI Desktop](../guidance/model-date-tables.md)
 - [Konfigurera och använda datumtabeller i Power BI Desktop](desktop-date-tables.md)
 - Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 - Har du förslag? [Bidra till att förbättra Power BI](https://ideas.powerbi.com/)

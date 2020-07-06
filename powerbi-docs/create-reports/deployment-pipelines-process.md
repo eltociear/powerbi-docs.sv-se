@@ -6,13 +6,13 @@ ms.author: kesharab
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.date: 05/06/2020
-ms.openlocfilehash: c4a823b0b41def6c10cd8f932bb97e91eb977ecb
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.date: 06/25/2020
+ms.openlocfilehash: fc7e6aa751bab6562e097b8ce14ff8416e6231e7
+ms.sourcegitcommit: e8b12d97076c1387088841c3404eb7478be9155c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83148606"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85782559"
 ---
 # <a name="understand-the-deployment-process-preview"></a>Förstå distributionsprocessen (förhandsversion)
 
@@ -60,7 +60,7 @@ I målfasen förblir [objektegenskaper som inte kopieras](deployment-pipelines-p
 
 Data i måldatauppsättningen bevaras där det är möjligt. Om det inte finns några ändringar i en datauppsättning bevaras data som de var före distributionen.
 
-Med små ändringar, till exempel att lägga till en tabell eller beräknade mått, bevarar Power BI den ursprungliga informationen och uppdateringen är optimerad för att endast uppdatera det som behövs. En fullständig uppdatering krävs brytande schemaändringar eller ändringar av datakällans anslutning.
+Med små ändringar, som att exempelvis lägga till en tabell eller ett mått, bevarar Power BI den ursprungliga informationen och uppdateringen är optimerad för att endast uppdatera det som behövs. En fullständig uppdatering krävs brytande schemaändringar eller ändringar av datakällans anslutning.
 
 ### <a name="requirements-for-deploying-to-a-stage-with-an-existing-workspace"></a>Krav för att distribuera till en fas med en befintlig arbetsyta
 
@@ -152,11 +152,11 @@ Följande datauppsättningsegenskaper kopieras inte heller under distributionen:
 
 Skapa en app för varje pipelinefas i distributionen så att du kan testa varje uppdatering av appen från slutanvändarens perspektiv. Med en distributionspipeline kan du enkelt hantera den här processen. Använd knappen Publicera eller Visa på arbetsytan för att publicera eller visa appen i en särskild pipelinefas.
 
-[![](media/deployment-pipelines-process/publish.png "Publish app")](media/deployment-pipelines-process/publish.png#lightbox)
+[![publicera app](media/deployment-pipelines-process/publish.png "Publicera app")](media/deployment-pipelines-process/publish.png#lightbox)
 
 I produktionsfasen öppnar huvudknappen för åtgärder i det nedre vänstra hörnet sidan uppdatera app i Power BI, så att alla innehållsuppdateringar blir tillgängliga för appens användare.
 
-[![](media/deployment-pipelines-process/update-app.png "Update app")](media/deployment-pipelines-process/update-app.png#lightbox)
+[![uppdatera app](media/deployment-pipelines-process/update-app.png "Uppdatera app")](media/deployment-pipelines-process/update-app.png#lightbox)
 
 >[!IMPORTANT]
 >Distributionsprocessen omfattar inte uppdatering av appens innehåll eller inställningar. Om du vill tillämpa ändringar på innehåll eller inställningar måste du uppdatera appen manuellt i motsvarande pipelinefas.
@@ -236,13 +236,23 @@ Det här avsnittet innehåller de flesta begränsningarna i distributionspipelin
 
 * Power BI-objekt, till exempel rapporter och instrumentpaneler som har märkts med [känslighetsetiketter](../admin/service-security-data-protection-overview.md#sensitivity-labels-in-power-bi) i Power BI kan inte distribueras.
 
-* Datauppsättningar som är konfigurerade med [stegvis uppdatering](../admin/service-premium-incremental-refresh.md) kan inte distribueras.
+* Det maximala antalet Power BI-objekt som kan distribueras i en enda distribution är 300.
 
 * En lista över begränsningar för arbetsytan finns i [Tilldelningsbegränsningar för arbetsytan](deployment-pipelines-get-started.md#workspace-assignment-limitations).
 
-* En lista över begränsningar för datauppsättningsregler finns i [Begränsningar för datauppsättningsregler](deployment-pipelines-get-started.md#dataset-rule-limitations)
-
 * En lista över objekt som inte stöds finns i [Objekt som inte stöds](#unsupported-items).
+
+### <a name="dataset-limitations"></a>Begränsningar för datamängder
+
+* Datauppsättningar som är konfigurerade med [stegvis uppdatering](../admin/service-premium-incremental-refresh.md) kan inte distribueras.
+
+* Datamängder som använder dataanslutning i realtid kan inte distribueras.
+
+* Om måldatamängden använder en [liveanslutning](../connect-data/desktop-report-lifecycle-datasets.md) under distributionen måste även källdatamängden använda detta anslutningsläge.
+
+* Nedladdning av en datamängd (från fasen den har distribuerats till) efter distributionen stöds inte.
+
+* En lista över begränsningar för datamängdsregler finns i [Begränsningar för datamängdsregler](deployment-pipelines-get-started.md#dataset-rule-limitations).
 
 ## <a name="next-steps"></a>Nästa steg
 

@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/20/2020
+ms.date: 06/18/2020
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 3dd50d4f57b3146135cde5e91062ed3b2a0eecc1
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 56ace35adf6a005c4370bf692d8851dc015688c0
+ms.sourcegitcommit: e8b12d97076c1387088841c3404eb7478be9155c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83128537"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85782337"
 ---
 # <a name="power-bi-high-availability-failover-and-disaster-recovery-faq"></a>Vanliga frågor och svar om hög tillgänglighet, redundans och haveriberedskap i Power BI
 
@@ -38,7 +38,7 @@ Alla komponenter i Power BI-tjänsten synkroniserar regelbundet sina backup-inst
 
 Backup-instanser finns inom samma geografiska region (geo) som du har valt när organisationen registrerade sig för Power BI, förutom där det noteras i [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location). En geo kan innehålla flera regioner, och Microsoft kan replikera data i någon av regionerna inom en viss geo för dataåterhämtning. Microsoft replikerar inte och flyttar inte kundinformation utanför geo-regionen. En mappning av geo-regioner som tillhandahålls av Power BI och regionerna inom dem finns i [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location).
 
-## <a name="how-does-microsoft-decide-to-failover"></a>Hur bestämmer sig Microsoft för redundansväxling?
+## <a name="how-does-microsoft-decide-to-fail-over"></a>Hur väljer Microsoft redundansväxling?
 
 Det finns två olika system som anger när en redundansväxling kan krävas:
 
@@ -57,6 +57,9 @@ När det har fastställts att en redundansväxling krävs tar det cirka 15 minut
 
 När en redundansväxling har utförts använder Power BI Azure Storage GEO-replikering för att utföra redundansväxlingen. Sådana replikeringar har vanligtvis en återställningstid på 15 minuter, men [Azure Storage garanterar inte denna tidsram](https://docs.microsoft.com/azure/storage/common/storage-redundancy) i ett serviceavtal, och därför kan inte heller Power BI garantera någon tidsram. 
 
+## <a name="what-happens-to-workspaces-and-reports-if-my-premium-capacity-becomes-unavailable"></a>Vad händer med arbetsytor och rapporter om min Premium-kapacitet blir otillgänglig? 
+
+Om en Premium-kapacitet blir otillgänglig förblir arbetsytor och rapporter fortfarande tillgängliga och synliga för alla Power BI Pro-licensierade användare som tidigare hade till gång till dem.
 
 ## <a name="when-does-my-power-bi-instance-return-to-the-original-region"></a>När återgår min Power BI-instans till den ursprungliga regionen?
 

@@ -4,15 +4,15 @@ description: Lär dig hur du kan använda genvägar och Google Search för att s
 author: paulinbar
 ms.service: powerbi
 ms.subservice: powerbi-mobile
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/06/2020
 ms.author: painbar
-ms.openlocfilehash: 1aa2e80e7624fb50878c70e464aac7edd943e0a8
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: ec4763118360ea02362e3f49fe9776224e9c087a
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80802788"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85229404"
 ---
 # <a name="use-android-app-shortcuts-in-the-power-bi-android-app"></a>Använda genvägar till Android-appen i Power BI-appen för Android
 
@@ -33,7 +33,7 @@ I Power BI-mobilappen för Android finns två enkla sätt att gå direkt till de
 
 Du kan skapa en genväg till valfri rapport eller instrumentpanel.
 
-1. Klicka på **Fler alternativ...** på åtgärdsmenyn och välj **Lägg till genväg**.
+1. Från en rapport på Åtgärder-menyn, trycker du på **Fler alternativ...** och väljer **Lägg till genväg**. Från en instrumentpanel trycker du på **Lägg till genväg** på Åtgärder-menyn.
 
    ![Lägga till genväg på åtgärdsmenyn](media/mobile-app-quick-access-shortcuts/mobile-add-shortcut-action-menu.png)
 
@@ -44,7 +44,6 @@ Du kan skapa en genväg till valfri rapport eller instrumentpanel.
    Dessa två alternativ illustreras nedan.
 
    ![Banderoll för att lägga till en genväg](media/mobile-app-quick-access-shortcuts/mobile-add-shortcut-banner.png)
-
 
  1. Dialogrutan **Lägg till genväg** visas med namnet på ditt objekt. Du kan ändra namnet om du vill. Tryck på **Lägg till** när du är klar.
 
@@ -60,7 +59,7 @@ Du kan skapa en genväg till valfri rapport eller instrumentpanel.
 
 ## <a name="edit-the-shortcut-name"></a>Redigera genvägsnamnet
 
-Om du vill ändra namnet på en genväg väljer du **Fler alternativ...** på åtgärdsmenyn och sedan **Redigera genvägsnamnet**
+Om du vill ändra namnet på en genväg från en rapport väljer du **Fler alternativ...** på åtgärdsmenyn och sedan **Redigera genvägsnamnet**. Från en instrumentpanel trycker du på **Lägg till genväg**. Dialogrutan **Redigera genvägsnamn** visas.
 
  ![Redigera genvägsnamnet](media/mobile-app-quick-access-shortcuts/mobile-edit-shortcut.png)
 

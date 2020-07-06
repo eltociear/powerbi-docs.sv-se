@@ -5,15 +5,15 @@ author: peter-myers
 ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.date: 10/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 002df4e6c3eec7095258647a0015042efb98257f
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 54091175b49a0465a56a689190965429715a4754
+ms.sourcegitcommit: a453ba52aafa012896f665660df7df7bc117ade5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83292511"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85485563"
 ---
 # <a name="troubleshoot-developing-directquery-models-in-power-bi-desktop"></a>Felsöka utveckling av DirectQuery-modeller i Power BI Desktop
 
@@ -42,13 +42,13 @@ För vissa DirectQuery-källor innehåller den här loggfilen alla frågor som s
 - Teradata
 - SAP HANA
 
-Du hittar spårningsfilen i **AppData**-mappen för den aktuella användaren: _\\\<Användare>\AppData\Local\Microsoft\Power BI Desktop\AnalysisServicesWorkspaces_
+Spårningsfilen finns i mappen **AppData** för den aktuella användaren: _\\\<User>\AppData\Local\Microsoft\Power BI-Desktop\AnalysisServicesWorkspaces_
 
 Här är ett enkelt sätt att komma till den här mappen: I Power BI Desktop väljer du _Arkiv > Alternativ och inställningar > Alternativ_ och sedan sidan **Diagnostik**. Följande dialogruta visas:
 
 ![Power BI Desktop-fönstret är öppet och sidan Global diagnostik är vald. Det finns två egenskaper i avsnittet Diagnostikalternativ: Aktivera spårning och Åsidosätt geokodningscache. Alternativet Aktivera spårning är aktiverat. I avsnittet Kraschdump-samling finns knappen Aktivera nu och en länk för att öppna kraschdump-/spårmappen.](media/desktop-directquery-troubleshoot/desktop-directquery-troubleshoot-desktop-file-options-diagnostics.png)
 
-När du väljer länken **Öppna kraschdump-/spårmappen** under Kraschdump-samling öppnas följande mapp: _\\\<Användare>\AppData\Local\Microsoft\Power BI Desktop\Traces_
+När du väljer **Öppna kraschdump-/spårmapp**-länken under Kraschdumpsamling, öppnas följande mapp: _\\\<User>\AppData\Local\Microsoft\Power BI Desktop\Traces_
 
 Om du går till mappens överordnade mapp ser du mappen som innehåller _AnalysisServicesWorkspaces_, som innehåller en arbetsytemapp för varje öppen instans av Power BI Desktop. Dessa undermappar namnges med ett heltalssuffix, t.ex. _AnalysisServicesWorkspace2058279583_.
 
@@ -63,7 +63,7 @@ När du har laddat ned och installerat SQL Server Management Studio så kör du 
 Öppna spårningsfilen så här:
 
 1. Välj _Arkiv > Öppna > Spårningsfil_ i SQL Server Profiler
-2. Ange sökvägen till den för tillfället öppna Power BI-sessionens spårningsfil, t.ex.: _\\\<Användare>\AppData\Local\Microsoft\Power BI Desktop\AnalysisServicesWorkspaces\AnalysisServicesWorkspace2058279583\Data_
+2. Ange sökvägen till spårningsfilen för den för tillfället öppna Power BI-sessionen, till exempel: _\\\<User>\AppData\Local\Microsoft\Power BI-Desktop\AnalysisServicesWorkspaces\AnalysisServicesWorkspace2058279583\Data_
 3. Öppna _FlightRecorderCurrent.trc_
 
 Alla händelser från den aktuella sessionen visas. Ett kommenterat exempel visas nedan, där olika grupper av händelser har markerats. Varje grupp har följande:

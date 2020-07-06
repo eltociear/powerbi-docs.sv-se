@@ -7,15 +7,15 @@ featuredvideoid: lnv66cTZ5ho
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/22/2020
+ms.date: 06/18/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 34d539af94f2bcbe03a2c9d6b870887e371a1a6e
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: 90c721f6c2f555bd632d6c8fff56d05994b1444b
+ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83563906"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85354787"
 ---
 # <a name="create-and-use-combo-charts-in-power-bi"></a>Skapa och använda kombinationsdiagram i Power BI
 
@@ -78,7 +78,7 @@ Se hur Will skapar ett kombinationsdiagram med exemplet på försäljning och ma
     ![exempel på konvertering av kombinationsdiagram](media/power-bi-visualization-combo-chart/converttocombo-new2.png)
 7. Från panelen **Fält** drar du **Försäljning** \> **Last Years Sales (Förra årets försäljning)** till behållaren **Radvärden**.
 
-   ![](media/power-bi-visualization-combo-chart/linevaluebucket.png)
+   ![Radvärdesområdet som visar förra årets försäljning](media/power-bi-visualization-combo-chart/linevaluebucket.png)
 
    Kombinationsdiagrammet bör se ut ungefär så här:
 

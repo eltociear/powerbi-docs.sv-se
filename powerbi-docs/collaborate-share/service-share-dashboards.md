@@ -3,37 +3,34 @@ title: Dela Power BI-instrumentpaneler och -rapporter med kollegor och andra
 description: Hur du delar Power BI-instrumentpaneler och -rapporter med dina kollegor i och utanför din organisation, och vad du behöver veta om delning.
 author: maggiesMSFT
 ms.reviewer: lukaszp
-featuredvideoid: 0tUwn8DHo3s
+ms.custom: contperfq4
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
-ms.date: 11/26/2019
+ms.topic: how-to
+ms.date: 06/26/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: cf971de1a60636def852080a523c227f08b4f888
-ms.sourcegitcommit: 49daa8964c6e30347e29e7bfc015762e2cf494b3
+ms.openlocfilehash: d09ebee0cc22c7037db437e1c7a46a3d19ff36fd
+ms.sourcegitcommit: a453ba52aafa012896f665660df7df7bc117ade5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84272941"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85485606"
 ---
 # <a name="share-power-bi-dashboards-and-reports-with-coworkers-and-others"></a>Dela Power BI-instrumentpaneler och -rapporter med kollegor och andra
-*Dela* är ett bra sätt att ge ett fåtal användare åtkomst till dina instrumentpaneler och rapporter. Power BI erbjuder också [flera andra sätt att samarbeta och distribuera instrumentpaneler och rapporter på](service-how-to-collaborate-distribute-dashboards-reports.md).
-
-![Delningsikonen i en lista med instrumentpaneler](media/service-share-dashboards/power-bi-share-new-look.png)
-
-Med delning, vare sig om du delar innehåll i eller utanför din organisation, behöver du en [Power BI Pro-licens](../fundamentals/service-features-license-type.md). Mottagarna behöver också Power BI Pro-licenser, såvida inte innehållet finns i en [Premium-kapacitet](../admin/service-premium-what-is.md). 
-
-Du kan dela instrumentpaneler och rapporter från de flesta platser i Power BI-tjänsten: Favoriter, Senaste, Min arbetsyta och Delat med mig, om ägaren tillåter det. Du kan också dela från andra arbetsytor om du har rollen [administratör, medlem eller deltagare](service-new-workspaces.md#roles-in-the-new-workspaces) i arbetsytan. 
+*Delning* är det enklaste sättet att ge användare åtkomst till dina instrumentpaneler och rapporter i Power BI-tjänsten. Du kan dela med personer i eller utanför din organisation.
 
 När du delar en instrumentpanel eller en rapport kan de som du delar med se den och interagera med den, men inte redigera den. De ser samma data som du ser på instrumentpanelen och i rapporterna och får åtkomst till hela den underliggande datauppsättningen, såvida inte säkerhet på radnivå (RLS) tillämpas på den underliggande datauppsättningen.  De medarbetare som du delar med kan också dela den med sina medarbetare, om du tillåter detta. Personerna utanför organisationen kan också visa och interagera med instrumentpanelen eller rapporten, men de kan inte dela den. 
 
+![Delningsikonen i en lista med instrumentpaneler](media/service-share-dashboards/power-bi-share-new-look.png)
+
+Du kan dela instrumentpaneler och rapporter från många platser i Power BI-tjänsten: Favoriter, senaste, min arbetsyta. Du kan också dela från andra arbetsytor om du har rollen [administratör, medlem eller deltagare](service-new-workspaces.md#roles-in-the-new-workspaces) i arbetsytan. Och du kan dela instrumentpaneler och rapporter i Delat med mig, om ägaren tillåter det. 
+
+Power BI-tjänsten erbjuder även andra sätt att samarbeta och distribuera instrumentpaneler och rapporter på. Läs [Sätt att samarbeta och dela i Power BI](service-how-to-collaborate-distribute-dashboards-reports.md) och se vilket sätt som fungerar bäst för dina förhållanden. 
+
+Med delning, vare sig om du delar innehåll i eller utanför din organisation, behöver du en [Power BI Pro-licens](../fundamentals/service-features-license-type.md). Mottagarna behöver också Power BI Pro-licenser, såvida inte innehållet finns i en [Premium-kapacitet](../admin/service-premium-what-is.md). 
+
 Du kan inte *dela* direkt från Power BI Desktop. Du [publicerar rapporter från Power BI Desktop](../create-reports/desktop-upload-desktop-files.md) till Power BI-tjänsten. Du kan dock [dela en instrumentpanel från Power BI-mobilappar](../consumer/mobile/mobile-share-dashboard-from-the-mobile-apps.md).  
-
-## <a name="video-share-a-dashboard"></a>Video: Dela en instrumentpanel
-Se hur Amanda delar sin instrumentpanel med kollegor i och utanför företaget. Prova sedan själv genom att följa de stegvisa anvisningarna under videon.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0tUwn8DHo3s?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
 ## <a name="share-a-dashboard-or-report"></a>Dela en instrumentpanel eller en rapport
 
@@ -98,6 +95,14 @@ Om du skickar en länk från en Power BI-mobilapp till personer utanför organis
 
 Power BI-administratörer kan tillåta externa gästanvändare att redigera och hantera innehåll i organisationen. I så fall kommer dina externa användare inte att ha upplevelsen för enbart förbrukning. De kan redigera och hantera innehåll i din organisation. Läs mer om att [distribuera Power BI-innehåll till externa gästanvändare med Azure Active Directory B2B](../admin/service-admin-azure-ad-b2b.md).
 
+## <a name="share-with-more-than-100-separate-users"></a>Dela med fler än 100 separata användare
+
+Du kan dela med högst 100 användare eller grupper i en enda delningsåtgärd. Du kan dock ge mer än 500 användare åtkomst till ett objekt. Här följer några förslag:
+
+- Dela flera gånger genom att ange användarna individuellt.
+- Dela med en användargrupp som innehåller alla användare. 
+- Skapa rapporten eller instrumentpanelen i en arbetsyta och skapa sedan en app från arbetsytan. Du kan dela appen med många fler personer. Läs mer om att [publicera appar i Power BI](service-create-distribute-apps.md).
+
 ## <a name="stop-or-change-sharing"></a>Avsluta eller ändra delning
 Endast en instrumentpanels eller rapports ägare kan aktivera eller inaktivera omdelning.
 
@@ -132,50 +137,10 @@ Saker att tänka på när det gäller att dela instrumentpaneler och rapporter:
 * Om dina medarbetare redan har åtkomst till en specifik instrumentpanel eller rapport kan du skicka en direktlänk genom att kopiera URL:en när du är på instrumentpanelen eller i rapporten. Exempel: `https://powerbi.com/dashboards/g12466b5-a452-4e55-8634-xxxxxxxxxxxx`.
 * Om dina medarbetare på motsvarande sätt redan har åtkomst till en specifik instrumentpanel kan du [skicka en direktlänk till den underliggande rapporten](service-share-reports.md). 
 
-### <a name="share-with-more-than-100-separate-users"></a>Dela med fler än 100 separata användare
-
-Du kan dela med högst 100 användare eller grupper i en enda delningsåtgärd. Du kan dock ge mer än 500 användare åtkomst till ett objekt. Här följer några förslag:
-
-- Dela flera gånger genom att ange användarna individuellt.
-- Dela med en användargrupp som innehåller alla användare. 
-- Skapa rapporten eller instrumentpanelen i en arbetsyta och skapa sedan en app från arbetsytan. Du kan dela appen med många fler personer. Läs mer om att [publicera appar i Power BI](service-create-distribute-apps.md).
-
-## <a name="troubleshoot-sharing"></a>Felsöka delning
-
-### <a name="my-dashboard-recipients-see-a-lock-icon-in-a-tile-or-a-permission-required-message"></a>Mina instrumentpanelsmottagare ser en låsikon i en panel eller ett meddelande om ”Behörighet krävs”
-
-De personer som du delar med kan se en låst panel på en instrumentpanel eller ett meddelande om att ”behörighet krävs” när de försöker visa en rapport.
-
-![låst panel i Power BI](media/service-share-dashboards/power-bi-locked_tile_small.png)
-
-I så fall behöver ge dem behörighet till den underliggande datauppsättningen.
-
-1. Gå till fliken **Datauppsättningar** i listan med innehåll.
-
-1. Välj ellipsen ( **...** ) intill datamängden och välj sedan **Hantera behörigheter**.
-
-    ![Hantera behörigheter](media/service-share-dashboards/power-bi-sharing-manage-permissions.png)
-
-1. Välj **Lägg till användare**.
-
-    ![Välj Lägg till användare](media/service-share-dashboards/power-bi-share-dataset-add-user.png)
-
-1. Ange fullständiga e-postadresser för enskilda användare, distributionsgrupper och säkerhetsgrupper. Du kan inte dela med dynamiska distributionslistor.
-
-    ![Lägg till e-postadresser](media/service-share-dashboards/power-bi-add-user-dataset.png)
-
-
-1. Välj **Lägg till**.
-
-### <a name="i-cant-share-a-dashboard-or-report"></a>Jag kan inte dela en instrumentpanel eller en rapport
-
-Om du vill dela en instrumentpanel eller rapport behöver du behörighet att dela det underliggande innehållet, det vill säga relaterade rapporter och datamängder. Om du ser ett meddelande om att du inte kan dela ber du rapportskaparen att ge dig behörighet att dela vidare för dessa rapporter och datamängder.
-
-![Meddelande om att det inte går att dela](media/service-share-dashboards/power-bi-sharing-unable-to-share.png)
-
-
 ## <a name="next-steps"></a>Nästa steg
 
-* [Hur ska jag samarbeta kring och dela instrumentpaneler och rapporter?](service-how-to-collaborate-distribute-dashboards-reports.md)
-* [Dela en filtrerad Power BI-rapport](service-share-reports.md)
-* Har du några frågor? [Prova Power BI Community](https://community.powerbi.com/)
+- [Hur ska jag samarbeta kring och dela instrumentpaneler och rapporter?](service-how-to-collaborate-distribute-dashboards-reports.md)
+- [Felsöka delning av instrumentpaneler och rapporter](service-troubleshoot-sharing.md)
+- [Begära eller bevilja åtkomst till delade instrumentpaneler eller rapporter](service-request-access.md)
+- [Dela en filtrerad Power BI-rapport](service-share-reports.md)
+- Har du några frågor? [Prova Power BI Community](https://community.powerbi.com/)

@@ -3,16 +3,16 @@ title: Kom igång med distributionspipelines
 description: Lär att använda distributionspipelines i Power BI
 author: KesemSharabi
 ms.author: kesharab
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.date: 05/06/2020
-ms.openlocfilehash: 8dc0dc97e2b4bca7154ea0f13273ee2dbaee1b61
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 6e9ed3217a7ee589eaf1469ba179ef8c8bc474e9
+ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83272843"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85354741"
 ---
 # <a name="get-started-with-deployment-pipelines-preview"></a>Kom igång med distributionspipelines (förhandsversion)
 
@@ -84,7 +84,7 @@ Uppdatera datauppsättningen när distributionen är klar. Mer information finns
 
 Välj den fas du vill distribuera från och klicka på distributionsknappen. Distributionsprocessen skapar en duplicerad arbetsyta i målfasen. Den här arbetsytan innehåller allt befintligt innehåll i den aktuella fasen.
 
-[![](media/deployment-pipelines-get-started/deploy.png "Deploy all content")](media/deployment-pipelines-get-started/deploy.png#lightbox)
+[![distribuera](media/deployment-pipelines-get-started/deploy.png "Distribuera allt innehåll")](media/deployment-pipelines-get-started/deploy.png#lightbox)
 
 ### <a name="selective-deployment"></a>Selektiv distribution
 
@@ -92,7 +92,7 @@ Om du endast vill distribuera vissa objekt klickar du på länken **Visa fler** 
 
 Eftersom instrumentpaneler, rapporter och datauppsättningar är relaterade och har beroenden kan du använda knappen Välj relaterade för att kontrollera alla objekt som dessa objekt är beroende av. Om du till exempel vill distribuera en rapport till nästa fas kan du klicka på knappen Välj relaterad så markeras den datauppsättning som rapporten är ansluten till, så att båda ska distribueras samtidigt och rapporten inte bryts.
 
-[![](media/deployment-pipelines-get-started/selective-deploy.png "Selective deployment")](media/deployment-pipelines-get-started/selective-deploy.png#lightbox)
+[![selektiv distribution](media/deployment-pipelines-get-started/selective-deploy.png "Selektiv distribution")](media/deployment-pipelines-get-started/selective-deploy.png#lightbox)
 
 >[!NOTE]
 > * Du kan inte distribuera en rapport eller instrumentpanel till nästa fas om objekten som den är beroende av inte finns i den fas som du distribuerar till.
@@ -104,7 +104,7 @@ Du kan välja att distribuera till ett tidigare stadium, till exempel i ett scen
 
 Distribution till en tidigare fas fungerar bara om den föregående fasen är tomt. När du distribuerar till föregående steg kan du inte välja vissa objekt. Allt innehåll i steget kommer att distribueras.
 
-[![](media/deployment-pipelines-get-started/deploy-back.png "Backwards deployment")](media/deployment-pipelines-get-started/deploy-back.png#lightbox)
+[![omvänd distribution](media/deployment-pipelines-get-started/deploy-back.png "Omvänd distribution")](media/deployment-pipelines-get-started/deploy-back.png#lightbox)
 
 ## <a name="step-4---create-dataset-rules"></a>Steg 4 – skapa datauppsättningsregler
 
@@ -125,11 +125,11 @@ Datauppsättningsregler definieras på datakällor och parametrar i varje dataup
 
 2. I fönstret distributionsinställningar väljer du den datauppsättning som du vill skapa en regel för.
 
-    [![](media/deployment-pipelines-get-started/dataset-rules.png "Select a dataset")](media/deployment-pipelines-get-started/dataset-rules.png#lightbox)
+    [![datauppsättningsregler](media/deployment-pipelines-get-started/dataset-rules.png "Skapa en datamängd")](media/deployment-pipelines-get-started/dataset-rules.png#lightbox)
 
 3. Välj den typ av regel som du vill skapa, expandera listan och klicka på **Lägg till regel**.
 
-     [![](media/deployment-pipelines-get-started/add-rule.png "Add a rule")](media/deployment-pipelines-get-started/add-rule.png#lightbox)
+     [![lägg till regel](media/deployment-pipelines-get-started/add-rule.png "Lägga till en regel")](media/deployment-pipelines-get-started/add-rule.png#lightbox)
 
 ### <a name="dataset-rule-types"></a>Regeltyper för datauppsättningar
 
@@ -154,15 +154,14 @@ Det finns två typer av regler som du kan skapa:
 * Om datakällan eller parametrarna som definierats i en regel ändras eller tas bort från källdatauppsättningen är regeln inte giltig och distributionen kommer att misslyckas.
 
 * Regler för datakällor kan bara definieras för följande datakällor:
-    * Analysis Services
-    * Azure SQL-server
     * Azure Analysis Services
+    * SQL Server Analysis Services (SSAS)
+    * Azure SQL-server
+    * SQL-server
     * OData-feed
     * Oracle
-    * SapHana
+    * SapHana (stöds endast för importläge, inte direkt frågeläge)
     * SharePoint
-    * SQL-server
-    * SQL Server Analysis Services (SSAS)
     * Teradata
 
     För andra datakällor rekommenderar vi [att använda parametrar för att konfigurera datakällan](deployment-pipelines-best-practices.md#use-parameters-in-your-model).
@@ -181,7 +180,7 @@ Distributionstiden är användbar för att fastställa när en fas senast uppdat
 
 När två sekventiella faser har innehåll jämförs innehållet baserat på metadata för innehållsobjekten. Jämförelsen omfattar inte jämförelse av data eller uppdateringstid mellan faser.
 
- [![](media/deployment-pipelines-get-started/deployment-flow.png "Comparing stages")](media/deployment-pipelines-get-started/deployment-flow.png#lightbox)
+ [![distributionsflöde](media/deployment-pipelines-get-started/deployment-flow.png "Jämföra faser")](media/deployment-pipelines-get-started/deployment-flow.png#lightbox)
 
 För att få en snabb visuell insyn i skillnaderna mellan två sekventiella steg visas en jämförelseikon mellan dem. Jämförelseikonen har två tillstånd:
 
@@ -202,7 +201,7 @@ När två sekventiella steg inte är identiska visas en **jämförelselänk** un
     >[!NOTE]
     >Distributionen kommer inte att påverka *saknas från*-objekt.
 
- [![](media/deployment-pipelines-get-started/compare.png "Compare view")](media/deployment-pipelines-get-started/compare.png#lightbox)
+ [![jämför](media/deployment-pipelines-get-started/compare.png "Jämför vy")](media/deployment-pipelines-get-started/compare.png#lightbox)
 
 ## <a name="overriding-content"></a>Åsidosätta innehåll
 

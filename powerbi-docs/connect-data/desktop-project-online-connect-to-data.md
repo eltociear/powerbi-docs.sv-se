@@ -6,16 +6,16 @@ ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/01/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 4244253faa3160b515a02b598988072117d982ed
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: 726c265198c7489ac1de055d0fc00b1988109d11
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83563062"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85223329"
 ---
 # <a name="connect-to-project-online-data-through-power-bi-desktop"></a>Ansluta till Project Online-data via Power BI Desktop
 Du kan ansluta till data i Project Online via Power BI Desktop.
@@ -29,7 +29,7 @@ Du kan ansluta till data i Project Online via Power BI Desktop.
 3. Välj **OData-flöde** och välj **Anslut**.
 4. Ange adressen för ditt OData-flöde i URL-rutan och klicka sedan på OK.
    
-   Om adressen till din Project Web App-webbplats liknar *https://\<KlientorganisationensNamn\>.sharepoint.com/sites/pwa* blir den adress som du anger för ditt OData-flöde *https://\<KlientorganisationensNamn\>.sharepoint.com/sites/pwa/\_api/Projectdata*.
+   Om adressen till Project Web App-webbplatsen liknar *https://\<tenantname\>.sharepoint.com/sites/pwa* så blir den adress du anger för OData-flödet *https://\<tenantname\>.sharepoint.com/sites/pwa\_api/Projectdata*.
    
    I det här exemplet använder vi:
 

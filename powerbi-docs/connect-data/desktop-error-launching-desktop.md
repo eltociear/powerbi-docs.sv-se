@@ -5,16 +5,16 @@ author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.date: 01/14/2020
 ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 67c83f2cc0eb81e90f447961ed178a04e97e050e
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: ba59a08ee1b50e44af71312a25d77fb67c8fca2d
+ms.sourcegitcommit: a453ba52aafa012896f665660df7df7bc117ade5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83292097"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85485448"
 ---
 # <a name="troubleshoot-opening-power-bi-desktop"></a>Felsöka öppning av Power BI Desktop
 
@@ -36,7 +36,7 @@ Du kan avinstallera den lokala Power BI-datagatewayen om du inte längre behöve
 
 Du kan istället starta Power BI Desktop som administratör, vilket även låter Power BI Desktop starta. Vi rekommenderar ändå att du installerar den senaste versionen av den lokala Power BI-datagatewayen, vilket beskrivs tidigare.
 
-Power BI Desktop är utformad som en flerprocessarkitektur och flera av de här processerna kommunicerar med hjälp av Windows-namngivna pipes. Det kan finnas andra processer som stör dessa namngivna pipes. Den vanligaste orsaken för sådana störningar är säkerhet, inklusive situationer där antivirusprogram eller brandväggar blockerar pipes eller omdirigerar trafik till en viss port. Om du startar Power BI Desktop med administratörsbehörigheter så kan det lösa det problemet. Om du inte kan öppna med administratörsbehörighet kan du be administratören att avgöra vilka säkerhetsregler som hindrar namngivna pipelines från att kommunicera korrekt. Vitlista sedan Power BI Desktop och dess respektive underprocesser.
+Power BI Desktop är utformad som en flerprocessarkitektur och flera av de här processerna kommunicerar med hjälp av Windows-namngivna pipes. Det kan finnas andra processer som stör dessa namngivna pipes. Den vanligaste orsaken för sådana störningar är säkerhet, inklusive situationer där antivirusprogram eller brandväggar blockerar pipes eller omdirigerar trafik till en viss port. Om du startar Power BI Desktop med administratörsbehörigheter så kan det lösa det problemet. Om du inte kan öppna med administratörsbehörighet kan du be administratören att avgöra vilka säkerhetsregler som hindrar namngivna pipelines från att kommunicera korrekt. Lägg därefter till Power BI Desktop och dess respektive underprocesser i listan över tillåtna.
 
 ## <a name="resolve-issues-when-connecting-to-sql-server"></a>Lösa problem vid anslutning till SQL Server
 

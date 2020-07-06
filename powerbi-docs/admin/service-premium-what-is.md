@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 05/15/2020
+ms.date: 06/13/2020
 ms.custom: licensing support
 LocalizationGroup: Premium
-ms.openlocfilehash: 1c72507759a69dc03f3d8b1510aef0e3ad369dd2
-ms.sourcegitcommit: 49daa8964c6e30347e29e7bfc015762e2cf494b3
+ms.openlocfilehash: 83383b93d9f61c30c22afa30a5d092aa62ce3a10
+ms.sourcegitcommit: 94fc44928bff09d874793964b5d7443db40934cd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84272757"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "84754196"
 ---
 # <a name="what-is-power-bi-premium"></a>Vad är Power BI Premium?
 
@@ -85,12 +85,10 @@ Resurser och begränsningar för varje Premium-SKU (och en A-SKU med motsvarande
 | P1/A4 | 8 | 4 | 25 | 4 | 30 | 6 |
 | P2/A5 | 16 | 8 | 50 | 8 | 60 | 12 |
 | P3/A6 | 32 | 16 | 100 | 16 | 120 | 24 |
-| P4 | 64 | 32 | 200 | 32 | 240 | 48 |
-| P5 | 128 | 64 | 400 | 64 | 480 | 96 |
 | | | | | | | |
 
-> [!NOTE]
-> Användning av ett enda större SKU (t.ex. ett P2-SKU) kan vara bättre än att kombinera mindre SKU:er (t.ex. två P1-SKU:er). Du kan till exempel använda större modeller och uppnå bättre parallellitet med P2.
+>[!NOTE]
+>Användning av ett enda större SKU (t.ex. ett P2-SKU) kan vara bättre än att kombinera mindre SKU:er (t.ex. två P1-SKU:er). Du kan till exempel använda större modeller och uppnå bättre parallellitet med P2.
 
 ### <a name="capacity-workloads"></a>Kapacitetsarbetsbelastningar
 
@@ -179,17 +177,17 @@ Beroende på SKU:n stöder Power BI Premium uppladdning av Power BI Desktop-mode
 
 ### <a name="size-considerations"></a>Överväganden gällande storlek
 
-Stora datamängder kan vara resurskrävande. Du bör ha minst en P1-SKU för alla datamängder som är större än 1 GB. Även om det kan gå att publicera stora datamängder till arbetsytor som backas upp av A-SKU:er upp till A3, så går det inte att uppdatera dem.
+Stora datamängder kan vara resurskrävande. Du bör ha minst en P1 eller en A4 SKU för alla datamängder större än 1 GB. Även om det kan gå att publicera stora datamängder till arbetsytor som backas upp av A-SKU:er upp till A3, så går det inte att uppdatera dem.
 
 I följande tabell visas rekommenderade SKU:er för .pbix-filöverföring eller publicering i Power BI-tjänsten:
 
    |SKU  |Storlek på PBIX   |
    |---------|---------|
-   |P1    | < 3 GB        |
-   |P2    | < 6 GB        |
-   |P3, P4, P5    | upp till 10 GB   |
+   |P1/A4    | < 3 GB        |
+   |P2/A5    | < 6 GB        |
+   |P3/A6, P4, P5    | upp till 10 GB   |
 
-Power BI Embedded-SKU:n A4 motsvarar SKU:n P1, A5 = P2 och A6 = P3. Om du publicerar stora datamängder till A- och EM-SKU:er kan det returnera fel som inte är specifika för modellens storleksbegränsningsfel i den delade kapaciteten. Uppdateringsfel för stora datamängder i A- och EM-SKU:er pekar troligen på tidsgränser.
+Power BI Embedded-SKU:n A4 motsvarar SKU:n P1, A5 = P2 och A6 = P3.
 
 Om du aktiverar [stora modeller](service-premium-large-models.md) på en datamängd, så gäller fortfarande .pbix-filstorleksbegränsningarna för filöverföring eller publicering. Men med en kombination av stegvis uppdatering och stora modeller kan datamängderna växa sig mycket större än dessa gränser. Med stora modeller begränsas datamängdens storlek endast av kapacitetsstorleken för Power BI Premium.
 
@@ -211,7 +209,7 @@ Mer information finns i [Inkrementell uppdatering i Power BI Premium](service-pr
 
 ## <a name="paginated-reports"></a>Sidnumrerade rapporter
 
-Sidnumrerade rapporter, som stöds på P1–P3- och A4–A6-SKU:er, baseras på RDL-teknik (Report Definition Language) i SQL Server Reporting Services. De bygger på RDL-teknik, men det är inte samma sak som Power BI-rapportserver, vilket är en nedladdningsbar rapporteringsplattform som du kan installera lokalt och som även ingår i Power BI Premium. Sidnumrerade rapporter formateras för att passar bra på en sida som kan skrivas ut eller delas. Data visas i en tabell, även om tabellen sträcker sig över flera sidor. Med hjälp av det kostnadsfria Windows Desktop-programmet [**Power BI Report Builder**](https://go.microsoft.com/fwlink/?linkid=2086513) skriver användare sidnumrerade rapporter och publicerar dem till tjänsten.
+Sidnumrerade rapporter, som stöds på P1–P3- och A4–A6-SKU:er, baseras på RDL-teknik (Report Definition Language) i SQL Server Reporting Services. De bygger på RDL-teknik, men det är inte samma sak som Power BI-rapportserver, vilket är en nedladdningsbar rapporteringsplattform som du kan installera lokalt och som även ingår i Power BI Premium. Sidnumrerade rapporter formateras för att passar bra på en sida som kan skrivas ut eller delas. Data visas i en tabell, även om tabellen sträcker sig över flera sidor. Med hjälp av det kostnadsfria Windows Desktop-programmet [**Power BI Report Builder**](https://aka.ms/pbireportbuilder) skriver användare sidnumrerade rapporter och publicerar dem till tjänsten.
 
 I Power BI Premium är sidnumrerade rapporter en arbetsbelastning som måste aktiveras för en kapacitet med hjälp av administratörsportalen. Kapacitetsadministratörer kan aktivera och sedan ange mängden minne som en procentandel av kapacitetens övergripande minnesresurser. Till skillnad från andra typer av arbetsbelastningar kör Premium sidnumrerade rapporter i ett inneslutet område inom kapaciteten. Det maximala minne som anges för det här området används oavsett om arbetsbelastningen är aktiv eller inte. Standard är 20 %. 
 

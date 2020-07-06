@@ -5,16 +5,16 @@ author: davidiseminger
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
-ms.date: 05/27/2020
+ms.topic: how-to
+ms.date: 06/16/2020
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 9bc8f7c100acc3805fbe6ab949e3584cb5fd26e1
-ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
+ms.openlocfilehash: ddb5e4d1476025965e6227e9ae443441f2060fcd
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84121054"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85219745"
 ---
 # <a name="data-refresh-in-power-bi"></a>Datauppdatering i Power BI
 
@@ -112,7 +112,7 @@ Power BI utför uppdateringen baserat på ett objekt-ID i OneDrive, så tänk ef
 Om du flyttar filen till en annan plats (till exempel genom att dra och släppa) fortsätter uppdateringen att fungera eftersom Power BI fortfarande känner till filens ID. Men om du kopierar filen till en annan plats skapas en ny instans av filen och en ny fileID. Det innebär att din Power BI-filreferens inte längre är giltig och att uppdateringen kommer att misslyckas.
 
 > [!NOTE]
-> Det kan ta Power BI upp till 10 minuter att uppdatera en datauppsättning, även när synkroniseringen har slutförts på den lokala datorn och efter att du använt *Uppdatera nu* i Power BI-tjänsten.
+> Det kan ta Power BI upp till 60 minuter att uppdatera en datauppsättning, även när synkroniseringen har slutförts på den lokala datorn och efter att du använt *Uppdatera nu* i Power BI-tjänsten.
 
 Se OneDrive-fliken i uppdateringshistoriken om du vill granska tidigare synkroniseringscykler. På följande skärmbild visas en slutförd synkroniseringscykel för en exempeldatauppsättning.
 
@@ -202,14 +202,15 @@ Till skillnad från en företagsdatagateway behöver du inte lägga till datakä
 
 ![Konfigurera autentiseringsuppgifter för datakälla för gateway](media/refresh-data/configure-data-source-credentials-gateway.png)
 
-> [!NOTE]
-> Den personliga datagatewayen stöder inte datauppsättningar i DirectQuery-/LiveConnect-läge. Du kan på inställningssidan för datauppsättningen uppmanas att installera den, men om du bara har en personlig gateway kan du inte konfigurera en gatewayanslutning. Se till att du har en företagsdatagateway för att stödja de här typerna av datauppsättningar.
 
 ### <a name="accessing-cloud-data-sources"></a>Åtkomst till molndatakällor
 
 Datauppsättningar som använder molndatakällor, till exempel Azure SQL DB, kräver inte en datagateway om Power BI kan upprätta en direkt nätverksanslutning till källan. Därmed kan du hantera konfigurationen av de här datakällorna med hjälp av avsnittet **Autentiseringsuppgifter för datakälla** i datauppsättningens inställningar. Som följande skärmbild visar behöver du inte konfigurera en gatewayanslutning.
 
 ![Konfigurera autentiseringsuppgifter för datakälla utan en gateway](media/refresh-data/configure-data-source-credentials.png)
+
+> [!NOTE]
+> Varje användare kan bara ha en uppsättning autentiseringsuppgifter per datakälla för alla de datamängder som de äger, oavsett vilka arbetsytor som datamängderna finns på. 
 
 ### <a name="accessing-on-premises-and-cloud-sources-in-the-same-source-query"></a>Åtkomst till lokala och molnbaserade källor i samma källfråga
 

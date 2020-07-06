@@ -6,16 +6,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 05/14/2020
+ms.date: 06/24/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: 5bac52e98830c97262945e1434880f9c178a0932
-ms.sourcegitcommit: 3f864ec22f99ca9e25cda3a5abda8a5f69ccfa8e
+ms.openlocfilehash: e050fd4ec3e533c07ecfd0f0604092bec7fc00b5
+ms.sourcegitcommit: a453ba52aafa012896f665660df7df7bc117ade5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84160006"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85484942"
 ---
 # <a name="licensing-the-power-bi-service-for-users-in-your-organization"></a>Licensiera tjänsten Power BI för användare i din organisation
 
@@ -39,6 +39,8 @@ Dessa roller sköter hantering av organisationen. Mer information om administrat
 
 ## <a name="get-power-bi-for-your-organization"></a>Få Power BI för din organisation
 
+Information om prissättning finns i [Prissättning och produktjämförelse](https://powerbi.microsoft.com/pricing/).
+
 En global administratör eller en faktureringsadministratör kan registrera sig för Power BI-tjänsten och köpa licenser för användarna i organisationen. Om du inte är redo att köpa väljer du utvärderingsversionen för Power BI Pro. Du får 25 licenser som du kan använda i en månad. Stegvisa instruktioner för hur du registrerar dig finns i [Skaffa en Power BI-prenumeration för din organisation](service-admin-org-subscription.md).
 
 ## <a name="about-self-service-sign-up"></a>Om registrering via självbetjäning
@@ -46,6 +48,16 @@ En global administratör eller en faktureringsadministratör kan registrera sig 
 Enskilda användare kan få sin egen Power BI-licens genom att registrera sig med sitt arbets- eller skolkonto. Med en kostnadsfri licens kan användarna utforska Power BI för personlig dataanalys och visualisering med hjälp av Min arbetsyta, men de kan inte dela med andra användare. En Power BI Pro-licens krävs för delning av innehåll. Användarna kan uppgradera sin licenstyp till Pro eller registrera sig för Pro direkt om organisationen använder det kommersiella molnet. Köp av eller uppgradering till Pro är inte tillgängligt för utbildningsorganisationer eller organisationer som distribuerats till molnen Azure Government, Azure Tyskland eller Azure China 21Vianet.
 
 Om du inte vill att självbetjäningsregistrering ska vara tillgängligt för användare i din organisation läser du [Aktivera eller inaktivera självbetjäningsregistrering](service-admin-disable-self-service.md) för att lära dig hur du inaktiverar funktionen.
+
+Genom att inaktivera självanmälan så kan användare inte utforska Power BI för visualisering och analys av data. Om du blockerar individuell registrering så kan du behöva skaffa Power BI-licenser (kostnadsfria) för din organisation och tilldela dem till alla användare. Följ dessa steg om du vill tilldela en Power BI-licens (kostnadsfri) automatiskt till alla befintliga användare:
+
+1. Logga in på [Administrationscenter för Microsoft 365](https://admin.microsoft.com) med dina autentiseringsuppgifter för global administratör eller faktureringsadministratör.
+1. I den vänstra navigeringsmenyn väljer du **Fakturering** > **Köp tjänster**.
+1. Sök eller bläddra för att hitta Power BI-erbjudandet (kostnadsfritt). Välj erbjudandet och välj sedan **Hämta nu**.
+1. Ange antalet licenser som behövs för att omfatta alla dina användare.
+1. Välj **Tilldela automatiskt till alla dina användare utan licenser** och checka ut.
+
+  ![Power BI-kostnadsfri automatiskt tilldelad prenumeration](media/service-admin-licensing-organization/m365-auto-assign.png) 
 
 Om du vill se vilka användare i din organisation som kanske redan har en licens kan du läsa [Visa och hantera användarlicenser](service-admin-manage-licenses.md) för att lära dig hur det går till.
 

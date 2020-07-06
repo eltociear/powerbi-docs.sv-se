@@ -5,17 +5,17 @@ author: maggiesMSFT
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
-ms.date: 05/03/2019
+ms.topic: how-to
+ms.date: 06/16/2020
 ms.author: maggies
 ms.custom: seodec18
 LocalizationGroup: Reports
-ms.openlocfilehash: 469f217426f4c66c6d1d0d72192efbda8391689c
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 4addd87085eb4321253bcf34842ca135f536f981
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83315304"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85238111"
 ---
 # <a name="work-with-aggregates-sum-average-and-so-on-in-the-power-bi-service"></a>Arbeta med aggregat (summa, medelvärde och så vidare) i Power BI-tjänsten
 
@@ -152,13 +152,13 @@ Du kan även aggregera ett icke-numeriskt fält. Om du exempelvis har ett produk
 
 F:  Varför har jag inte alternativet **Summera inte**?
 
-S:  Det fält du har valt är troligen ett beräknat mått eller avancerat mått som skapats i Excel eller [Power BI Desktop](../transform-model/desktop-measures.md). Varje beräknat mått har en egen hårdkodad formel. Du kan inte ändra den aggregering som används av Power BI. Om den till exempel är en summa, kan den bara vara en summa. I listan **Fält** visas *beräknade mått* med kalkylatorsymbolen.
+S:  Det fält du valt är sannolikt ett beräknat mått i en flerdimensionell modell, eller ett mått som skapats i Excel eller [Power BI Desktop](../transform-model/desktop-measures.md). Varje mått har sin egen hårdkodade formel. Du kan inte ändra den aggregering som används av Power BI. Om den till exempel är en summa, kan den bara vara en summa. Listan **Fält** visar *mått* med kalkylatorsymbolen.
 
 F:  Mitt fält **är** numeriskt, varför är mina enda alternativ **Antal** och **Distinkt antal**?
 
 S1:  Sannolikt är förklaringen att datamängdens ägare *inte* har klassificerat fältet som ett tal. Om en datamängd till exempel har ett **år**-fält kan datamängdens ägare kategorisera det värdet som text. Det är mer troligt att Power BI räknar **år**-fältet (till exempel antalet personer födda 1974). Det är mindre troligt att Power BI summerar eller genomsnittsberäknar det. Om du är ägaren kan du öppna datamängden i Power BI Desktop och använda fliken **Modellering** för att ändra datatypen.
 
-S2: Om fältet har en kalkylatorikon innebär det att det är ett *beräknat mått*. Varje beräknat mått har sin egen hårdkodade formel som bara datamängdens ägare kan ändra. Den beräkning som Power BI använder kan vara en enkel aggregering, till exempel ett medelvärde eller en summa. Det kan även vara något mer komplicerat såsom ”procenten av bidraget till den överordnade kategorin” eller ”löpande totalsumma sedan årets start”. Power BI kommer inte att sammanfatta eller medelvärdesberäkna resultatet. I stället räknar det bara om (med hjälp av den hårdkodade formeln) för varje datapunkt.
+S2: Om fältet har en kalkylatorikon innebär det att det är ett *mått*. Varje mått har sin egen formel som bara datauppsättningens ägare kan ändra. Den beräkning som Power BI använder kan vara en enkel aggregering, till exempel ett medelvärde eller en summa. Det kan även vara något mer komplicerat såsom ”procenten av bidraget till den överordnade kategorin” eller ”löpande totalsumma sedan årets start”. Power BI kommer inte att sammanfatta eller medelvärdesberäkna resultatet. I stället räknar det bara om (med hjälp av den hårdkodade formeln) för varje datapunkt.
 
 S3:  En annan möjlighet är att du har släppt fältet i en *bucket* som endast tillåter kategoriska värden.  I så fall är dina enda alternativ antal och distinkt antal.
 

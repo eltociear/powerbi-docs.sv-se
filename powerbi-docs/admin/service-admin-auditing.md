@@ -5,17 +5,17 @@ author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 05/11/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: f479bb865a11de57587a0302738411327327ed33
-ms.sourcegitcommit: 49daa8964c6e30347e29e7bfc015762e2cf494b3
+ms.openlocfilehash: ff61cdf25c83b1062fd7c4a471a49269d20c57a8
+ms.sourcegitcommit: e8b12d97076c1387088841c3404eb7478be9155c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84272688"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85782401"
 ---
 # <a name="track-user-activities-in-power-bi"></a>Spåra användaraktiviteter i Power BI
 
@@ -244,8 +244,9 @@ Följande åtgärder är tillgängliga i både granskningsloggar och aktivitetsl
 | Power BI-mappåtkomst har lagts till                      | AddFolderAccess                             | Används inte för närvarande                       |
 | Power BI-gruppmedlemmar har lagts till                      | AddGroupMembers                             |                                          |
 | Administratören anslöt ett lagringskonto för dataflöde till klientorganisationen | AdminAttachedDataflowStorageAccountToTenant | Används inte för närvarande                       |
-| Power BI-datauppsättning analyserades                         | AnalyzedByExternalApplication               |                                          |
-| Power BI-datarapport analyserades                          | AnalyzeInExcel                              | Genereras när användare interagerar med tjänsten. När du laddar ned `*.odc`-filen skapas ingen granskningshändelse                                         |
+| Power BI-datauppsättning analyserades                         | AnalyzedByExternalApplication               | Genereras när användare interagerar med tjänsten                                         |
+| Power BI-datarapport analyserades                          | AnalyzeInExcel                              |                                          |
+| Tilldelade en distributionspipeline en arbetsyta                          | AssignWorkspaceToPipeline                              |                                          |
 | Lagringskonto för dataflöden anslöts                 | AttachedDataflowStorageAccount              |                                          |
 | Power BI-datamängd har bundits till gateway                | BindToGateway                               |                                          |
 | Uppdatering av dataflöde avbröts                        | CancelDataflowRefresh                       |                                          |
@@ -254,7 +255,9 @@ Följande åtgärder är tillgängliga i både granskningsloggar och aktivitetsl
 | Anslutningar för Power BI-datauppsättning ändrades              | SetAllConnections                           |                                          |
 | Power BI gateway-administratörer ändrades                   | ChangeGatewayAdministrators                 |                                          |
 | Användare av Power BI-gatewayens datakälla ändrades        | ChangeGatewayDatasourceUsers                |                                          |
+| Skapade ett anpassat visuellt objekt i en organisation                          | InsertOrganizationalGalleryItem                                |                                          |
 | Organisationens Power BI-innehållspaket ändrades      | CreateOrgApp                                |                                          |
+| Skapade en distributionspipeline      | CreateAlmPipeline                                |                                          |
 | Power BI-app skapades                              | CreateApp                                   |                                          |
 | Power BI-instrumentpanel skapades                        | CreateDashboard                             |                                          |
 | Power BI-dataflöde skapades                         | CreateDataflow                              |                                          |
@@ -264,9 +267,13 @@ Följande åtgärder är tillgängliga i både granskningsloggar och aktivitetsl
 | Power BI-gateway skapades                          | CreateGateway                               |                                          |
 | Power BI-grupp skapades                            | CreateGroup                                 |                                          |
 | Power BI-rapport skapades                           | CreateReport <sup>1</sup>                                |                                          |
+| Anpassat visuellt objekt begärde Azure AD-åtkomsttoken                           | GenerateCustomVisualAADAccessToken                                |                                          |
+| Anpassat visuellt objekt begärde Azure Web Apps-åtkomsttoken                           | GenerateCustomVisualWACAccessToken                                |                                          |
 | Dataflöde migrerades till externt lagringskonto     | DataflowMigratedToExternalStorageAccount    | Används inte för närvarande                       |
 | Dataflödesbehörigheter har lagts till                        | DataFlowPermissionsAdded                    | Används inte för närvarande                       |
 | Dataflödesbehörigheter har tagits bort                      | DataflowPermissionsRemoved                  | Används inte för närvarande                       |
+| Tog bort ett anpassat visuellt objekt i en organisation     | DeleteOrganizationalGalleryItem                                |                                          |
+| Tog bort en distributionspipeline      | DeleteAlmPipeline                                |                                          |
 | Organisationens Power BI-innehållspaket har tagits bort      | DeleteOrgApp                                |                                          |
 | Power BI-kommentar togs bort                          | DeleteComment                               |                                          |
 | Power BI-instrumentpanel togs bort                        | DeleteDashboard                             | Används inte för närvarande                       |
@@ -278,6 +285,7 @@ Följande åtgärder är tillgängliga i både granskningsloggar och aktivitetsl
 | Power BI-gateway togs bort                          | DeleteGateway                               |                                          |
 | Power BI-grupp togs bort                            | DeleteGroup                                 |                                          |
 | Power BI-rapport togs bort                           | DeleteReport                                |                                          |
+| Distribuerade till en pipelinefas                           | DeleteAlmPipeline                                |                                          |
 | Datakällor för Power BI-datauppsättning identifierades          | GetDatasources                              |                                          |
 | Power BI-rapport hämtades                        | DownloadReport                              |                                          |
 | Egenskaper för dataflöde redigerades                        | EditDataflowProperties                      |                                          |
@@ -302,6 +310,7 @@ Följande åtgärder är tillgängliga i både granskningsloggar och aktivitetsl
 | Power BI-rapport publicerades på webben                  | PublishToWebReport <sup>2</sup>                         |                                          |
 | Publicerade eller uppdaterade aktuella tabeller | UpdateFeaturedTables <sup>3</sup>   | |
 | Power BI-dataflödeshemlighet togs emot från Key Vault  | ReceiveDataflowSecretFromKeyVault           |                                          |
+| Tog bort en distributionspipeline från en arbetsyta         | UnassignWorkspaceFromPipeline                 |                                          |
 | En datakälla togs bort från Power BI-gatewayen         | RemoveDatasourceFromGateway                 |                                          |
 | Power BI-gruppmedlemmar togs bort                    | DeleteGroupMembers                          |                                          |
 | Arbetsyta togs bort från en kapacitet                 | RemoveWorkspacesFromCapacity                |                                          |
@@ -321,9 +330,12 @@ Följande åtgärder är tillgängliga i både granskningsloggar och aktivitetsl
 | Ett dataflöde i Power BI togs över                     | TookOverDataflow                             |                                          |
 | Power BI-appen avpublicerades                          | UnpublishApp                                |                                          |
 | Kapacitetens resursstyrningsinställningar uppdaterades      | UpdateCapacityResourceGovernanceSettings    | För närvarande inte i administrationscenter för Microsoft 365 |
+| Uppdaterade ett anpassat visuellt objekt i en organisation                     | UpdateOrganizationalGalleryItem                   |                                          |
 | Kapacitetsadministratörer uppdaterades                            | UpdateCapacityAdmins                        |                                          |
 | Kapacitetens visningsnamn uppdaterades                     | UpdateCapacityDisplayName                   |                                          |
 | Behörigheter för tilldelning av dataflödeslagring uppdaterades   | UpdatedDataflowStorageAssignmentPermissions |                                          |
+| Uppdaterade en distributionspipeline   | UpdateAlmPipelineAccess |                                          |
+| Uppdaterade en konfiguration av pipelinedistribution   | SetConfigurationAlmPipeline |                                          |
 | Organisationens Power BI-inställningar uppdaterades          | UpdatedAdminFeatureSwitch                   |                                          |
 | Power BI-appen uppdaterades                              | UpdateApp                                   |                                          |
 | Power BI-dataflödet uppdaterades                         | UpdateDataflow                              |                                          |

@@ -8,14 +8,14 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 11/04/2019
-ms.openlocfilehash: 8d3068453ea2d166b0b55fbba45d8452431de319
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: a929374e3d974606d27defed4a7faa99e5450c87
+ms.sourcegitcommit: aece2382b618dc5b730705b4c76e76a657986588
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79491742"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84427871"
 ---
-# <a name="implementing-row-level-security-in-embedded-paginated-reports-preview"></a>Implementera säkerhet på radnivå i inbäddade sidnumrerade rapporter (förhandsversion)
+# <a name="implementing-row-level-security-in-embedded-paginated-reports"></a>Implementera säkerhet på radnivå i inbäddade sidnumrerade rapporter
 
 När du bäddar in en sidnumrerad rapport kan du styra vilka data som ska visas. På så sätt kan du skräddarsy vilken information som ska visas per användare. Om du till exempel har en sidnumrerad Power BI-rapport som innehåller globala försäljningsresultat, kan du bädda in den så att endast försäljningsresultaten från en viss region är tillgängliga.
 
@@ -28,7 +28,7 @@ Den här funktionen ger ett säkert sätt att visa en delmängd av datan, utan a
 
 När du använder säkerhet på radnivå i en sidnumrerad Power BI-rapport, måste du tilldela en [-parameter](../../paginated-reports/report-builder-parameters.md) till **UserID**-attributet. Parametern begränsar vilka data som hämtas från datamängden innan rapporten bäddas in.
 
-När du har tilldelat parametern till **UserID**, använder du API:et [Reports GenerateTokenForCreateInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetokenforcreateingroup) till att hämta din inbäddningstoken.
+När du har tilldelat parametern till **UserID**, använder du API:et [Reports GenerateTokenInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetokeningroup) till att hämta din inbäddningstoken.
 
 ## <a name="use-userid-as-a-filter-at-report-or-query-level"></a>Använda UserID som filter på rapport- eller frågenivå
 
@@ -78,7 +78,7 @@ Du kan använda **UserId** som ett *filter* eller i en *fråga* till datakällan
 
 ## <a name="passing-the-configured-parameter-using-the-embed-token"></a>Skicka den konfigurerade parametern med hjälp av en inbäddningstoken
 
-När du bäddar in en sidnumrerad rapport åt dina kunder, används API:et [Reports GenerateTokenForCreateInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetokenforcreateingroup) till att hämta en inbäddningstoken. Denna token kan också användas till att filtrera några av de data som hämtas från den sidnumrerade rapporten.
+När du bäddar in en sidnumrerad rapport åt dina kunder, används API:et [Reports GenerateTokenInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetokeningroup) till att hämta en inbäddningstoken. Denna token kan också användas till att filtrera några av de data som hämtas från den sidnumrerade rapporten.
 
 Om du bara vill exponera vissa data tilldelar du fältet `username` den information som du vill ska visas. Om du till exempel anger *grönt* i fältet `username` i en sidnumrerad rapport med en färgparameter, begränsar din inbäddningstoken inbäddade data så att de endast visar data med värdet *grönt* i färgkolumnen.
 

@@ -11,14 +11,14 @@ ms.subservice: powerbi-consumer
 ms.topic: quickstart
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/11/2020
+ms.date: 06/17/2020
 ms.author: mihart
-ms.openlocfilehash: ef25e98bb87b52cf7f0bd30c118b7e2fa5509991
-ms.sourcegitcommit: 2cb249fc855e369eed1518924fbf026d5ee07eb1
+ms.openlocfilehash: 20d54e9050e1481180b3a8b58a69c7235198bef3
+ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83813817"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85355155"
 ---
 # <a name="quickstart-learn-about-the-power-bi-capabilities-for-consumers"></a>Snabbstart: Lär dig mer om Power BI-funktioner för *användare*
 
@@ -156,7 +156,7 @@ Easily navigate between the visualizations on the report page.
     ![report Selection pane](media/end-user-reading-view/power-bi-selection-pane-new.png) -->
 
 ### <a name="zoom-in-on-individual-visuals"></a>Zooma in på enskilda visuella objekt
-Håll muspekaren över visualiseringen och välj ikonen **Fokusläge**![](media/end-user-reading-view/pbi_popouticon.jpg). När du visar en visualisering i fokusläge expanderas den så att den fyller hela rapportarbetsytan enligt nedan.
+Håll muspekaren över ett visuellt objekt och välj ikonen **Fokusläge** och ![välj Fokusläge på menyn ](media/end-user-reading-view/pbi_popouticon.jpg). När du visar en visualisering i fokusläge expanderas den så att den fyller hela rapportarbetsytan enligt nedan.
 
 ![fokusläge](media/end-user-reading-view/power-bi-full-screen-before.png)
 

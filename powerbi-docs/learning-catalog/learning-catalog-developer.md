@@ -1,17 +1,17 @@
 ---
 title: Utbildningskatalog för utvecklare
 description: Hitta alla utbildningsalternativ för Power BI
-author: loreleishannonmsft
+author: margoc
 ms.prod: powerbi
 ms.topic: article
 ms.date: 03/25/2020
-ms.author: v-lshann
-ms.openlocfilehash: 6262b7ba0f3d01db6f9f5ff24f411de6ec4f35cb
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.author: margoc
+ms.openlocfilehash: edc2e40c219a8bbe1d57a5cfda774e7f9f87856d
+ms.sourcegitcommit: 66b1a0c74b8a7dcb33a2f8570fb67bce2401a895
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81268614"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84532636"
 ---
 # <a name="developer-learning-catalog"></a>Utbildningskatalog för utvecklare
 
@@ -27,17 +27,13 @@ Följande katalog ordnas från kärnkunskaper till specifika domäner och från 
 ## <a name="embedded"></a>Embedded<a name="embedded"></a>
 | Innehåll | Beskrivning | Format  | Längd      |
 |--------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|-------------|
+|[Nätbaserad kurs: Power BI-utvecklare på en dag](developer-online-course.md)|En videobaserad kursen som ger dig som apputvecklare de tekniska kunskaper som krävs för att kunna bädda in Power BI-innehåll. Vi rekommenderar att du tittar på videorna i inspelningsordningen från video 1 till video 20.|YouTube-spellista och självstudiepaket|3 tim 20 min|
 | [Bästa praxis för hantering av Power BI Embedded-analys för distribution med flera klientorganisationer](https://info.microsoft.com/ww-landing-PBI-webinar-Best-Practices-for-Managing-Power-BI-Embedded-video.html) | Power BI Embedded är en kraftfull tjänst som gör att du kan vitmarkera Power BI i dina egna program. Titta på det här webbseminariet om du vill lära dig hur du hanterar Power BI Embedded-distributioner.   | Webbseminarium       |                |
 | [Lär dig mer om Power BI Embedded på 20 minuter](https://info.microsoft.com/ww-ondemand-power-bi-embedded-in-20-min.html)  | Den här webbseminariet är en introduktion till inbäddat Power BI. I slutet av webbseminariet bör användare kunna förstå vad Power BI Embedded är, nästa steg för att komma igång med produkten och var de kan hitta hjälp/resurser. | Webbseminarium       |                |
 | [Utveckla med Power BI-inbäddning av Ted Pattison – april 2018-uppdateringen](https://www.youtube.com/watch?v=swnGlrRy588)  | I det här webbseminariet för utvecklare går Ted Pattison igenom de senaste förbättringarna av inbäddningsplattformen i Power BI och hur de kan användas av ISV:er och företagsutvecklare. | YouTube-video | 59 min 49 s  |
 | [Power BI-inbäddning version 2 – hela historien](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Power-BI-Embedding-Version-2-The-Full-Story/td-p/229527)    | Det här webbseminariet presenterades den 10 augusti 2017 av Power BI MVP Ted Pattison från Critical Path Training. Webbseminariet handlar om hur du utvecklar med de nya inbäddningsfunktionerna i Power BI som är tillgängliga via Power BI Premium.  | Webbseminarium       | 1 h 7 min 23 sek |
 | [Självstudie: Bädda in Power BI-innehåll i ett program för dina kunder](https://docs.microsoft.com/power-bi/developer/embed-sample-for-customers#step-1-setup-your-embedded-analytics-development-environment) | Med Power BI Embedded i Azure eller Power BI-inbäddning i Office kan du bädda in rapporter, instrumentpaneler och paneler i en app och använda appens egna data.  | Dokumentation |                |
 | [Lär dig mer om Power BI Embedded på 20 minuter](https://info.microsoft.com/ww-ondemand-power-bi-embedded-in-20-min.html)  | Den här webbseminariet är en introduktion till inbäddat Power BI. I slutet av webbseminariet bör användare kunna förstå vad Power BI Embedded är, nästa steg för att komma igång med produkten och var de kan hitta hjälp/resurser. | Webbseminarium       |                |
-## <a name="dax"></a>DAX<a name="dax"></a>
-| Innehåll | Beskrivning | Format  | Längd      |
-|--------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|-------------|
-| [Practical DAX for Power BI av Phil Seamark](https://www.youtube.com/watch?v=1fGfqzS37qs)  | Som komplement till sin nya bok går Phil Seamark här igenom några metodtips för praktisk DAX i Power BI   | YouTube-video | 59 min 41 s |
-| [Kreativa DAX-lösningar av Philip Seamark](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/10-2-18-Webinar-Creative-DAX-solutions-by-Philip-Seamark/td-p/516250) | Visste du att språket DAX kan användas för mycket mer än att bara summera över en kolumn eller räkna rader i en tabell? DAX körs över en av de snabbaste databaserna som finns. Här går Charles Sterling och Philip Seamark igenom några ovanliga och kreativa scenarier som du kanske inte har trott var möjliga. | Webbseminarium       | 58 min 12 s |
 ## <a name="development"></a>Utveckling<a name="development"></a>
 | Innehåll | Beskrivning | Format  | Längd      |
 |--------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|-------------|

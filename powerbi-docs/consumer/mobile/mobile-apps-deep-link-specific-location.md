@@ -5,15 +5,15 @@ author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: f0a72cf315c8ad911414274daae11b712971b305
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 2590e5fad227027f7cc2fddf2f93a18b92f39ae3
+ms.sourcegitcommit: 46a340937d9f01c6daba86a4ab178743858722ec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79114486"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85393804"
 ---
 # <a name="create-a-link-to-a-specific-location-in-the-power-bi-mobile-apps"></a>Skapa en länk till en specifik plats i Power BI-mobilapparna
 Du kan använda länkar för att direkt komma åt specifika objekt i Power BI: Rapport, Instrumentpanel och Panel.
@@ -33,7 +33,7 @@ https://app.powerbi.com/Redirect?[**QUERYPARAMS**]
 ```
 
 > [!IMPORTANT]
-> Om ditt innehåll finns i ett särskilt datacenter såsom Goverment, Kina osv. ska länken börja med rätt Power BI-adress, till exempel `app.powerbigov.us` eller `app.powerbi.cn`.   
+> Om ditt innehåll finns i ett särskilt datacenter som Goverment, Kina osv. ska länken börja med rätt Power BI-adress, till exempel `app.powerbigov.us` eller `app.powerbi.cn`.   
 >
 
 

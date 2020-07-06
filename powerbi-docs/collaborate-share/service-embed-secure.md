@@ -6,15 +6,15 @@ ms.author: maggies
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/27/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 311473aea5748c94bfa6a757482659176930544b
-ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
+ms.openlocfilehash: a2e7445db843788293a20fbbebdffd2952dfeb6a
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "83693828"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85226192"
 ---
 # <a name="embed-a-report-in-a-secure-portal-or-website"></a>Bädda in en rapport i en säker portal eller webbplats
 
@@ -139,7 +139,7 @@ Du kan lägga till så många knappar du vill för att skapa en anpassad uppleve
 
 * Den automatiska autentiseringsfunktionen som tillhandahålls av alternativet **Bädda in** fungerar inte med Power BI JavaScript-API:et. När det gäller Power BI JavaScript-API:et använder du metoden [användaren äger data](../developer/embedded/embed-sample-for-your-organization.md) för inbäddning. 
 
-* Livstiden för autentiseringstoken styrs utifrån dina AAD-inställningar. När autentiseringstoken upphör att gälla måste användaren uppdatera sin webbläsare för att få en uppdaterad autentiseringstoken. Livslängden är som standard en timme, men den kan vara kortare eller längre i din organisation.
+* Livstiden för autentiseringstoken styrs utifrån dina AAD-inställningar. När autentiseringstoken upphör att gälla måste användaren uppdatera sin webbläsare för att få en uppdaterad autentiseringstoken. Livslängden är som standard en timme, men den kan vara kortare eller längre i din organisation.  Det finns ingen möjlighet att automatiskt uppdatera token i det här scenariot.
 
 ## <a name="next-steps"></a>Nästa steg
 

@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/19/2020
+ms.date: 06/10/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 5203f2676409de28cfa9faf9442beaeb324b6f54
-ms.sourcegitcommit: 2cb249fc855e369eed1518924fbf026d5ee07eb1
+ms.openlocfilehash: 5a8b2934c47d3bc85b1710927fefb814f027c035
+ms.sourcegitcommit: c006d7aabf90c7b29fb05641d1f94f1ee7132943
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83812897"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "84685270"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Tidigare månadsuppdateringar till Power BI Desktop
 
@@ -32,6 +32,97 @@ Länkarna bredvid varje uppdatering innebär följande:
 Du kan också se videon **Senaste uppdateringar** från början i den här artikeln, genom att klicka på ikonen **Spela upp** på videobilden nedanför listan med uppdateringar.
 
 Följande avsnitt beskriver tidigare månaders uppdateringar till **Power BI Desktop**.
+
+
+
+## <a name="may-2020-update-2815831621"></a>Uppdatering maj 2020 (2.81.5831.621)
+
+Vi hoppas att vår majuppdatering av Power BI Desktop har gett dig nya insikter, nya möjligheter och en positiv syn på vår globala community. 
+
+Skaffa den senaste versionen av Power BI Desktop från [Download Center](https://www.microsoft.com/download/details.aspx?id=58494). Om du kör Windows 10 kan du även hämta Power BI Desktop från [Windows Store](https://aka.ms/pbidesktopstore). Oavsett hur du installerar Power BI Desktop är månadsversionerna desamma, men versionsnumreringen kan variera. Mer information om hur du laddar ned och installerar Power BI Desktop finns i [Hämta Power BI Desktop](desktop-get-the-desktop.md). 
+
+> [!IMPORTANT]
+> Från och med september 2019-versionen levereras Power BI Desktop endast som en enskild .exe-fil som innehåller alla språk med stöd. MSI-versionen släpps inte längre.
+
+
+Länkarna intill varje funktion i Power BI Desktop uppdateringslistan tolkas enligt följande:
+
+* \[blogg\]: De flesta funktioner beskrivs i ett avsnitt i månadsuppdateringens blogginlägg.
+* \[video\]: Vissa funktioner har ett videoutdrag som diskuterar funktionen, som spelas upp i en ny flik i webbläsaren.
+* \[artikel\]: Vissa funktioner har en artikel som innehåller mer information.
+* De återstående funktionerna är självförklarande och behöver varken artikel eller video.
+
+Du kan även titta på hela [videon om månadsuppdateringen av Power BI Desktop](#power-bi-desktop-monthly-update-video).
+
+Följande uppdateringar är nya för Power BI Desktop den här månaden:
+
+
+### <a name="reporting"></a>Rapportering
+* Organisera aktuella tabeller för Excel (förhandsgranskning) [[video]](https://youtu.be/JtuHIslowxk?t=20)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_Excel) 
+* Tillämpa alla filter (förhandsgranskning) [[video]](https://youtu.be/JtuHIslowxk?t=193) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_Apply_all) 
+* Förbättringar av ändringsidentifiering (förhandsgranskning) [[video]](https://youtu.be/JtuHIslowxk?t=475)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_CDM) 
+* Knappåtgärden för detaljvisning är nu allmänt tillgänglig [[video]](https://youtu.be/JtuHIslowxk?t=626)  [[artikel]](../create-reports/desktop-drill-through-buttons.md) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_Drill_through) 
+* Förbättringar av sidnavigeringsåtgärd [[video]](https://youtu.be/JtuHIslowxk?t=1143)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_page_nav) 
+* Knappar stöder nu fyllningsbilder [[video]](https://youtu.be/JtuHIslowxk?t=1465)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_fill_images) 
+* Stöd för skugga i visuella objekt [[video]](https://youtu.be/JtuHIslowxk?t=1561)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_shadow) 
+* Migrering av filterpanel  [[video]](https://youtu.be/JtuHIslowxk?t=1688)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_migration) 
+
+### <a name="analytics"></a>Analys
+* Nedbrytningsträd är nu allmänt tillgängligt [[video]](https://youtu.be/JtuHIslowxk?t=1701)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_Decomp_tree) 
+
+
+### <a name="visuals"></a>Visuella objekt
+* Nya visuella objekt för Power BI [[video]](https://youtu.be/JtuHIslowxk?t=1840)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_Visualizations)
+* Visuellt Power Apps-objekt är nu kompatibelt med alla språk som stöds [[video]](https://youtu.be/JtuHIslowxk?t=1861)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_lang)
+
+### <a name="modeling"></a>Modellering
+* Listavgränsare och decimaltecken är nu standard för DAX-avgränsare [[video]](https://youtu.be/JtuHIslowxk?t=1869)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_List_separator)
+
+
+### <a name="data-preparation"></a>Förberedelse av data
+* DirectQuery på dataflöden [[video]](https://youtu.be/JtuHIslowxk?t=1883)   [[artikel]](../transform-model/service-dataflows-directquery.md)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_DQ_Dataflows) 
+* Nu föreslår funktionen ”webben efter exempel” automatiskt tabeller som standard [[video]](https://youtu.be/JtuHIslowxk?t=1916)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_Web_by_example) 
+* Förbättringar av Frågediagnostik: Sekretessnivåpartitioner [[video]](https://youtu.be/JtuHIslowxk?t=1931)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_Query_Diag) 
+
+
+### <a name="data-connectivity"></a>Dataanslutning
+* Många nya dataanslutningsprogram [[video]](https://youtu.be/JtuHIslowxk?t=1948)   [[artikel]](../connect-data/desktop-data-sources.md)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_Data_connectivity) 
+
+
+
+### <a name="other-features"></a>Andra funktioner
+* Påverkansanalys för en datamängd [[video]](https://youtu.be/JtuHIslowxk?t=1964)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_Impact) 
+
+
+Du kan läsa mer om de här nya funktionerna i [blogginlägget om Power BI Desktop-funktioner](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/).
+
+Se [nyheter i Power BI-tjänsten](service-whats-new.md) och [nyheter i mobilapparna för Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+
+> [!NOTE]
+> Se [datakällor som är tillgängliga för Power BI Desktop](../connect-data/desktop-data-sources.md). Vår lista växer ständigt, så titta gärna efter nyheter ofta.
+
+
+### <a name="power-bi-desktop-monthly-update-video"></a>Video om månadsuppdatering för Power BI Desktop
+I följande video beskrivs var och en av dessa uppdateringar. Du kan även titta på videon från blogginlägget:
+
+> [!VIDEO https://www.youtube.com/embed/JtuHIslowxk]
+
+
+
+Du kan också hämta tidigare versioner av Power BI Desktop om din organisation kräver det. Vi rekommenderar alltid att du använder den senaste versionen av Power BI Desktop, i stället för en tidigare version. Alla tidigare versioner har följande begränsningar:
+
+* Tidigare versioner av Power BI Desktop servas inte – du bör alltid använda den senaste versionen för de senaste funktionerna och uppdateringarna.
+* Det kanske inte går att öppna filer som skapats eller sparats i senare versioner av Power BI Desktop med tidigare versioner av Power BI Desktop. 
+* Om du får en varning när du läser in en rapport som sparas i en nyare version av Power BI Desktop och sedan spara rapporten i den tidigare versionen, förlorar du information som är relaterad till nya funktioner.
+* Vi arkiverar endast de engelska versionerna av Power BI Desktop.
+
+Välj följande länkar för att ladda ned den tidigare versionen: 
+
+* [Maj 2020-versionen av Power BI Desktop – 32 bitar](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2020-05.exe)
+* [Maj 2020-versionen av Power BI Desktop – 64 bitar](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2020-05_x64.exe)
+
+
+
 
 
 ## <a name="april-2020-update-2805803282"></a>Uppdatering april 2020 (2.80.5803.282)
@@ -368,19 +459,6 @@ Se [nyheter i Power BI-tjänsten](service-whats-new.md) och [nyheter i mobilappa
 I följande video beskrivs var och en av dessa uppdateringar. Du kan även titta på videon från blogginlägget:
 
 > [!VIDEO https://www.youtube.com/embed/eCEwgZsVUOs]
-
-Du kan också hämta tidigare versioner av Power BI Desktop om din organisation kräver det. Vi rekommenderar alltid att du använder den senaste versionen av Power BI Desktop, i stället för en tidigare version. Alla tidigare versioner har följande begränsningar:
-
-* Tidigare versioner av Power BI Desktop servas inte – du bör alltid använda den senaste versionen för de senaste funktionerna och uppdateringarna.
-* Det kanske inte går att öppna filer som skapats eller sparats i senare versioner av Power BI Desktop med tidigare versioner av Power BI Desktop. 
-* Om du får en varning när du läser in en rapport som sparas i en nyare version av Power BI Desktop och sedan spara rapporten i den tidigare versionen, förlorar du information som är relaterad till nya funktioner.
-* Vi arkiverar endast de engelska versionerna av Power BI Desktop.
-
-Välj följande länkar för att ladda ned den tidigare versionen: 
-
-* [December 2019-versionen av Power BI Desktop – 32-bitar](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2019-12.exe)
-* [December 2019-versionen av Power BI Desktop – 64-bitar](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2019-12_x64.exe)
-
 
 
 ## <a name="november-2019-update-2755649341"></a>Uppdatering november 2019 (2.75.5649.341)

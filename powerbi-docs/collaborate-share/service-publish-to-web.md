@@ -6,15 +6,15 @@ ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 02/25/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 136376da9d00e5f40397f0d4152e83d17a171168
-ms.sourcegitcommit: 49daa8964c6e30347e29e7bfc015762e2cf494b3
+ms.openlocfilehash: 5e7fe8a7c71927a1e89bd4e86209c580ae1f3b29
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84272987"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85225676"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Publicera på webben från Power BI
 
@@ -118,11 +118,11 @@ När du skapar en inbäddningskod för **Publicera på webben** kan du hantera k
 
 ## <a name="updates-to-reports-and-data-refresh"></a>Uppdateringar av rapporter och datauppdatering
 
-När du har skapat inbäddningskoden för **Publicera på webben** och delat den uppdateras rapporten med eventuella ändringar som du gör, och länken för inbäddningskoden blir aktiv omedelbart. Alla som öppnar länken kan visa den. Efter den här inledande åtgärden kan dock uppdateringar av rapporter eller visuella objekt ta två till tre timmar innan de blir synliga för användarna. Mer information finns i avsnittet [**Så här fungerar det**](#howitworks) längre fram i den här artikeln. 
+När du har skapat inbäddningskoden för **Publicera på webben** och delat den uppdateras rapporten med eventuella ändringar som du gör, och länken för inbäddningskoden blir aktiv omedelbart. Alla som öppnar länken kan visa den. Efter det första skapandet kan uppdateringar av rapporter och visuella objekt ta upp till två timmar innan användarna ser dem. Data cachelagras under en timma från den tidpunkt då de hämtas. Vi rekommenderar inte att du använder Publicera på webben för data som behöver uppdateras ofta. Mer information finns i avsnittet [**Så här fungerar det**](#howitworks) längre fram i den här artikeln. 
 
 ### <a name="data-refresh"></a>Datauppdatering
 
-Datauppdateringarna återspeglas automatiskt i din inbäddade rapport eller visuella objekt. Det kan ta ungefär en timme för uppdaterade data att bli synliga från inbäddningskoder. Du kan inaktivera automatisk uppdatering genom att välja **Uppdatera inte** på schemat för den datamängd som används av rapporten.  
+Datauppdateringarna återspeglas automatiskt i din inbäddade rapport eller visuella objekt. Det kan ta upp till två timmar innan datauppdateringarna blir synliga från inbäddningskoder. Du kan inaktivera automatisk uppdatering genom att välja **Uppdatera inte** på schemat för den datamängd som används av rapporten.  
 
 ## <a name="power-bi-visuals"></a>Visuella objekt för Power BI
 
@@ -159,7 +159,7 @@ Du måste vara en Microsoft Power BI-användare för att kunna använda **Public
 
 När du skapar en inbäddningskod med hjälp av **Publicera på webben** görs rapporten synlig för Internetanvändare. Den är offentligt tillgänglig, så du kan förvänta dig att användarna enkelt kan dela rapporten via sociala medier i framtiden. När användarna visar rapporten, antingen genom att öppna den offentliga URL:en direkt, eller visa den inbäddad på en webbsida eller i en blogg, så cachelagrar Power BI rapportdefinitionen och resultaten för de frågor som krävs för att visa rapporten. Denna cachelagring säkerställer att tusentals samtidiga användare kan visa rapporten utan att påverka prestanda.
 
-Cacheminnet är långlivat. Om du uppdaterar rapportdefinitionen (genom att t.ex. ändra dess visningsläge) eller uppdaterar rapportdata, så kan det ta ungefär en timme innan ändringarna avspeglas i den version av rapporten som användarna ser. Eftersom varje element och datavärde cachelagras separat, när en datauppdatering sker, kan en blandning av aktuella och tidigare värden visas för en användare. Därför rekommenderar vi att du mellanlagrar ditt arbete i förväg och skapa inbäddningskoden för **Publicera på webben** enbart när du är nöjd med inställningarna. Om dina data kommer att uppdateras minimerar du antalet uppdateringar och utför uppdateringarna utanför arbetstid.
+Data cachelagras under en timma från den tidpunkt då de hämtas. Om du uppdaterar rapportdefinitionen (genom att t.ex. ändra dess visningsläge) eller uppdaterar rapportdata, så kan det ta upp till två timmar innan ändringarna avspeglas i den version av rapporten som användarna ser. Eftersom varje element och datavärde cachelagras separat, när en datauppdatering sker, kan en blandning av aktuella och tidigare värden visas för en användare. Därför rekommenderar vi att du mellanlagrar ditt arbete i förväg och skapa inbäddningskoden för **Publicera på webben** enbart när du är nöjd med inställningarna. Om dina data kommer att uppdateras minimerar du antalet uppdateringar och utför uppdateringarna utanför arbetstid. Vi rekommenderar inte att du använder Publicera på webben för data som behöver uppdateras ofta.
 
 ## <a name="find-your-power-bi-administrator"></a>Hitta din Power BI-administratör
 

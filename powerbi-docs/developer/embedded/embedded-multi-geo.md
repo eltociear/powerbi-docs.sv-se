@@ -6,14 +6,14 @@ ms.author: kesharab
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 02/05/2019
-ms.openlocfilehash: 3b51fbfda8f63834a0b2445bd2b2b23734b8e234
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 9c99d48a0b9d50312d2ae5ce152826fcf1ab9319
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83149241"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85238778"
 ---
 # <a name="multi-geo-support-for-power-bi-embedded"></a>Multi-Geo-stöd för Power BI Embedded
 
@@ -80,6 +80,8 @@ Vi har gjort några ändringar i befintliga API: er för att stödja hantering a
 * När du flyttar data från en region till en annan i en Multi-Geo-miljö kan källdata finnas kvar i upp till 30 dagar i den region från vilken data har flyttats. Under den tiden har slutanvändare inte åtkomst till den. Den tas bort från den här regionen och förstörs under 30-dagarsperioden.
 
 * Multi-Geo resultera inte i bättre prestanda i allmänhet. Att läsa in rapporter och instrumentpaneler involverar fortfarande förfrågningar om metadata från hemregionen.
+
+* I en inbäddning för dina kundscenarier, fortsätter frågetext och frågeresultat att gå via hemklienten.
 
 ## <a name="next-steps"></a>Nästa steg
 

@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 05/05/2020
+ms.date: 06/24/2020
 ms.author: painbar
-ms.openlocfilehash: 7d0933b20c942df724a4d21fbba438cdc8748969
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: 9655783decee99bc90071cdfbd66a8b58d8272f4
+ms.sourcegitcommit: e8b12d97076c1387088841c3404eb7478be9155c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83565310"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85782584"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nyheter i Power BI-mobilapparna
 Relaterad information om nyheter finns i:
@@ -24,6 +24,20 @@ Relaterad information om nyheter finns i:
 
 >[!NOTE]
 >Stöd för Power BI-mobilappen för **telefoner som använder Windows 10 Mobile** kommer att upphöra den 16 mars 2021. [Läs mer](https://go.microsoft.com/fwlink/?linkid=2121400)
+
+## <a name="june-2020"></a>Juni 2020
+### <a name="show-your-bookmarks-in-slideshows-windows"></a>Visa bokmärken i bildspel (Windows)
+Nu kan du lägga till rapportbokmärken och personliga bokmärken i bildspel automatiskt, som en del av presentationen, för att markera viktiga insikter i dina data.
+[Kolla in!](mobile-windows-10-app-presentation-mode.md#use-presentation-mode)
+
+## <a name="may-2020"></a>Maj 2020
+### <a name="weve-added-dark-mode-to-power-bi-mobile-ios"></a>Vi har lagt till mörkt läge till Power BI Mobile (iOS)
+Testa det nya mörka läget i Power BI-mobilappen för iOS13. I mörkt läge ser du ljus text mot en mörk bakgrund, vilket minskar skärmens ljusstyrka och gör det lättare att se innehållet. Du kan växla mellan teman i appens utseendeinställningar. [Läs mer](mobile-apps-dark-mode.md)
+
+![Mörkt läge i Power BI-mobilapparna](media/mobile-whats-new-in-the-mobile-apps/mobile-apps-dark-mode.png)
+
+### <a name="apply-bookmarks-in-presentation-mode-windows"></a>Använda bokmärken i presentationsläge (Windows)
+När du visar en rapport i presentationsläge kan du använda både personliga bokmärken och rapportbokmärken för rapportsidor, som berättar mer om dina data. [Kolla in!](mobile-windows-10-app-presentation-mode.md#use-presentation-mode)
 
 ## <a name="april-2020"></a>April 2020
 

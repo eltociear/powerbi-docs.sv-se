@@ -6,16 +6,16 @@ ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 05/15/2020
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: c43b0710c15fcc77a08aa789a92d840d2425f5ab
-ms.sourcegitcommit: cd64ddd3a6888253dca3b2e3fe24ed8bb9b66bc6
+ms.openlocfilehash: d7e1365ce1328e529d056a80b46230b97febc446
+ms.sourcegitcommit: a453ba52aafa012896f665660df7df7bc117ade5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84315958"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85485678"
 ---
 # <a name="subscribe-yourself-and-others-to-reports-and-dashboards-in-the-power-bi-service"></a>Skapa en prenumeration åt dig eller andra på rapporter och instrumentpaneler i Power BI-tjänsten
 
@@ -109,7 +109,7 @@ Power BI-administratörer kan använda Power BI-spårningsloggar till att visa i
 
 ### <a name="general"></a>Allmänt
 
-- Precis som med andra BI-produkter är tiden som du anger för din prenumeration den tid då prenumerationen börjar bearbetas.  När rapportbearbetningen är klar placeras prenumerationen i kö och skickas till e-postmottagarna.  Vi bearbetar och levererar alla prenumerationer så snabbt som möjligt. När efterfrågan är hög kan det dock uppstå en fördröjning på grund av mängden prenumerationer som Power BI kan skicka samtidigt. Fördröjningen i bearbetningen och leveransen av rapporter brukar vara högst 15 minuter för kunder. Det kan ta upp till 30 minuter under vissa tider och för klientorganisationer med hög användning.  Ingen leveransfördröjning förväntas överstiga 60 minuter från den tidpunkt då prenumerationen schemalades.  Om fördröjningen ändå är så lång börjar du med att kontrollera att adressen `no-reply-powerbi@microsoft.com` är vitlistad av din e-postleverantör.  Om så är fallet kontaktar du Power BI-supporten.
+- Precis som med andra BI-produkter är tiden som du anger för din prenumeration den tid då prenumerationen börjar bearbetas.  När rapportbearbetningen är klar placeras prenumerationen i kö och skickas till e-postmottagarna.  Vi bearbetar och levererar alla prenumerationer så snabbt som möjligt. När efterfrågan är hög kan det dock uppstå en fördröjning på grund av mängden prenumerationer som Power BI kan skicka samtidigt. Fördröjningen i bearbetningen och leveransen av rapporter brukar vara högst 15 minuter för kunder. Det kan ta upp till 30 minuter under vissa tider och för klientorganisationer med hög användning.  Ingen leveransfördröjning förväntas överstiga 60 minuter från den tidpunkt då prenumerationen schemalades.  Om du upplever en så lång fördröjning så kan du först kontrollera att adressen `no-reply-powerbi@microsoft.com` är i din lista med tillåtna och inte blockerats av din e-postleverantör.  Om e-posten inte blockeras kontaktar du Power BI-supporten för hjälp.
 - E-postprenumerationer för rapporter och instrumentpaneler som använder datamängder med liveanslutning stöds för närvarande inte när du skapar prenumerationer åt andra än dig själv, förutom när det gäller sidnumrerade rapporter. Du kan skapa prenumerationer på en sidnumrerad rapport åt andra via din säkerhetskontext. Läs mer om att [prenumerera på sidnumrerade rapporter](../consumer/paginated-reports-subscriptions.md).
 - Power BI pausar automatiskt uppdateringar för datauppsättningar som är associerade med instrumentpaneler och rapporter som inte har besökts på över två månader. Men om du lägger till en prenumeration på en instrumentpanel eller en rapport, så pausas den inte, även om den förblir obesökt.
 - Om du inte får någon e-post angående prenumerationen, så kontrollera att ditt UPN (User Principal Name) kan ta emot e-postmeddelanden.
@@ -134,6 +134,7 @@ Power BI-administratörer kan använda Power BI-spårningsloggar till att visa i
 - E-postprenumerationer har inte stöd för så många [anpassade visuella objekt](../developer/power-bi-custom-visuals.md). Det enda undantaget är de anpassade visuella objekt som har [certifierats](../developer/power-bi-custom-visuals-certified.md).
 - E-postprenumerationer har för närvarande inte stöd för R-baserade anpassade visuella objekt.
 - E-postprenumerationer skickas med rapportens standardfilter och utsnittstillstånd. Inga ändringar av standardinställningarna som du gör efter att du börjar prenumerera visas i e-postmeddelandet. Sidnumrerade rapporter har stöd för den här funktionen och gör att du kan ställa in specifika parametervärden per prenumeration.
+- Anta att du har en rapport med en Live-anslutning till Analysis Services och att du har konfigurerat prenumerationen så att den körs efter datauppdateringen. Den kommer att köras första gången Power BI-tjänsten identifierar en ändring i din lokala modell när den avsöker Analysis Services-instansen.  Power BI kontrollerar varje timme för en ändring i Analysis Services-datamodellen för att avgöra när prenumerationen ska skickas.
 
 ## <a name="next-steps"></a>Nästa steg
 

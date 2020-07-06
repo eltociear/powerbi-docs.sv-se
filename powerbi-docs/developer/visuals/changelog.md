@@ -8,36 +8,39 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 03/13/2019
-ms.openlocfilehash: fa8759d7edb519240140263bcd01bfdddd9c7d86
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 3cf415cbd14da28d523a042fdf4099fe464a4a8b
+ms.sourcegitcommit: a07fa723bb459494c60cf6d749b4554af723482a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83141062"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "84739194"
 ---
 # <a name="power-bi-visuals-api-changelog"></a>Ändringslogg för API för visuella Power BI-objekt
 Den här sidan innehåller en snabböversikt över API-versionerna. Versioner som anges här betraktas som stabila och kommer inte att ändras.
 
-## <a name="api-v26"></a>API v2.6
+## <a name="api-v320"></a>API v3.2.0
+  * Stöder **[supportsMultiVisualSelection](./supportsmultivisualselection-feature.md)**
+
+## <a name="api-v260"></a>API v2.6.0
   * Lägger till **isInFocus** till alternativet Uppdatera och **switchFocusModeState**-metoden till visuell värd
   * Stöder **delsummor**-anpassning
 
-## <a name="api-v25"></a>API v2.5
+## <a name="api-v250"></a>API v2.5.0
   * Stöder **[Fönstret Analys](./analytics-pane.md)**
   * Stöder metoderna `SelectionIdBuilder`**withMatrixNode** och **withTable**
   * Har inte längre stöd för `DataRepetitionSelector`-gränssnittet, ersatt med `data.CustomVisualOpaqueIdentity`-gränssnittet
 
-## <a name="api-v23"></a>API v2.3
+## <a name="api-v230"></a>API v2.3.0
   * **[API för Landningssida](./landing-page.md)**
   * **[API för lokal lagring](./local-storage.md)**
   * **[API för tuppelfilter (flerkolumnsfilter)](./filter-api.md#the-tuple-filter-api-multi-column-filter)**
   * **[API för rendering av händelser](./event-service.md#render-events-in-power-bi-visuals)**
 
-## <a name="api-v22"></a>API v2.2
+## <a name="api-v220"></a>API v2.2.0
   * Stöder **[återställning av JSON-filter från DataView](./filter-api.md#restore-the-json-filter-from-the-data-view)**
   * **[ContextMenu API](./context-menu.md)**
 
-## <a name="api-v21"></a>API v2.1
+## <a name="api-v210"></a>API v2.1.0
   * Prestandaförbättringar:
     * Snabbare inläsningstider
     * Mindre minnesstorlek
@@ -58,32 +61,32 @@ Den här sidan innehåller en snabböversikt över API-versionerna. Versioner so
    ```
 * Egenskapen `proto` lagrar inte längre dolda metadata\data i dataView. Visuella objekt med som kommer åt egenskaper via `proto` kan sluta fungera med den här uppdateringen.
 
-## <a name="api-v113"></a>API v1.13
+## <a name="api-v1130"></a>API v1.13.0
 * Stöder **[Sync-utsnitt](./enable-sync-slicers.md)** , observera att detta endast fungerar för enskilda fältutsnitt på grund av PBI aktuellt kodtillstånd [läs mer](/power-bi/desktop-slicers).
 * Tillgänglighet: [Högkontraststöd](./high-contrast-support.md) 
 * Tillgänglighet: Tillåt tangentbordsfokusflagga
 
-## <a name="api-v112"></a>API v1.12
+## <a name="api-v1120"></a>API v1.12.0
 * Stöder teman
 * Har stöd för **[fetchMoreData](./fetch-more-data.md)** , observera att **Hämta mer data-API:t** överkommer den hårda gränsen på 30 000 datapunkter
 * **[API för arbetsytans knappbeskrivningar](./add-tooltips.md#add-report-page-tooltips)**
 
-## <a name="api-v111"></a>API v1.11
+## <a name="api-v1110"></a>API v1.11.0
 * **[FilterManager API](./filter-api.md)**
 * Stöder **[bokmärken](./bookmarks-support.md)** 
 
-## <a name="api-v110"></a>API v1.10
+## <a name="api-v1100"></a>API v1.10.0
 * Lägger till `ILocalizationManager`
 * **API för autentisering**
 
-## <a name="api-v19"></a>API v1.9
+## <a name="api-v190"></a>API v1.9.0
 * **[launchUrl API](./launch-url.md)**
 
-## <a name="api-v18"></a>API v1.8
+## <a name="api-v180"></a>API v1.8.0
 * Stöder den nya typen **fillRule** (toning) i funktionsschemat
 * Stöder **regel**-egenskapen i funktionsschemat för objektegenskaper
 
-## <a name="api-v17"></a>API v1.7
+## <a name="api-v170"></a>API v1.7.0
 * Stöder **[RESJSON](./localization.md#resource-file)**
 
 ## <a name="api-v162"></a>API v1.6.2

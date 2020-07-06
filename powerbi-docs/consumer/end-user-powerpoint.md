@@ -6,16 +6,16 @@ ms.reviewer: ''
 ms.custom: contperfq4
 ms.service: powerbi
 ms.subservice: powerbi-consumer
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 05/12/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: f70c41e40ff2da385b2f63798b93dec3fcd7b7c5
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: d1120b15974d0e747dc60cf2c56dff1135c9d29c
+ms.sourcegitcommit: e8b12d97076c1387088841c3404eb7478be9155c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83565751"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85782531"
 ---
 # <a name="export-reports-to-powerpoint"></a>Exportera rapporter till PowerPoint
 
@@ -102,6 +102,8 @@ Det finns några överväganden och begränsningar som du bör tänka på när d
     - Om du delar en instrumentpanel med någon utanför organisationen och därmed, en användare som inte är i din Power BI-klient, kommer den användaren inte att kunna exportera delade instrumentpanelers associerade rapporter till PowerPoint. Så om du är aaron@contoso.com kan du dela med david@cohowinery.com. Men david@cohowinery.com kan inte exportera de associerade rapporterna till PowerPoint.
     - Rapporter med mer än 30 rapportsidor. Endast de första 30 sidorna exporteras.
     - Rapporter som exporteras till äldre versioner av PowerPoint.
+    - Rapporter som tar längre tid än en timma att bearbeta. 
+    - Rapportsidor som det tar längre tid än 6 minuter att läsa in. 
 
 * Om menyobjektet **exportera till PowerPoint** inte finns i Power BI-tjänsten, beror det förmodligen på att din klientadministratör har inaktiverat funktionen. Kontakta din klientadministratör för mer information.
 * Power BI-tjänsten använder det språk du har i din Power BI-språkinställning som språk för PowerPoint-exporten. Om du vill se eller ange din språkinställning, klicka på kugghjulsikonen ![kugghjulsikon](media/end-user-powerpoint/power-bi-settings-icon.png) > **Inställningar** > **Allmänt** > **Språk**.

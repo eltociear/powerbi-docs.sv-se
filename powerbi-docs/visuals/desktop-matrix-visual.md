@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/10/2020
+ms.date: 06/18/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b26cd958ad637f0dc3c27c7a0f6ccbe2591d37b7
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: beb744e1293db077111df8212c0861154aa86242
+ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83279191"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85354718"
 ---
 # <a name="create-matrix-visualizations-in-power-bi"></a>Skapa matrisvisualiseringar i Power BI
 
@@ -49,17 +49,17 @@ När du tittar på summor och delsummor, kom ihåg att dessa värden baseras på
 ## <a name="expanding-and-collapsing-row-headers"></a>Visa och dölja radrubriker
 Det finns två sätt på vilka du kan visa radrubriker. Det första är att klicka på snabbmenyn. Du ser alternativen för att visa den radrubrik som du har valt, hela nivån eller allt upp till den sista nivån i hierarkin. Det finns även snarlika alternativ för att dölja radrubrikerna.
 
-![](media/desktop-matrix-visual/power-bi-expand1.png)
+![meny som visar expandera och markera](media/desktop-matrix-visual/power-bi-expand1.png)
 
 Du kan också lägga till plus- och minusknappar (+/-) till radrubrikerna via formateringsrutan under kortet **Radrubriker**. Ikonerna matchar som standard radrubrikens formatering, men du kan anpassa deras färger och storlekar separat om du vill.
 
 När ikonerna har aktiverats fungerar de ungefär som pivottabellsikoner i Excel.
 
-![](media/desktop-matrix-visual/power-bi-expand2.png)
+![matris som visar aktiverade ikoner](media/desktop-matrix-visual/power-bi-expand2.png)
 
 Matrisens expansionsstatus sparas med rapporten. En matris kan fästas på en instrumentpanel som visas eller döljs. När instrumentpanelen är markerad och rapporten öppnas, kan du fortfarande ändra visningstillståndet i rapporten. 
 
-![](media/desktop-matrix-visual/power-bi-expand3.png)
+![matris som visar expansionsstatus](media/desktop-matrix-visual/power-bi-expand3.png)
 
 > [!NOTE]
 > Om du skapar en rapport ovanpå en flerdimensionell Analysis Services-modell finns det några särskilda överväganden för expandering/minimering om modellen använder standardmedlemsfunktionen. Mer information finns i [Arbeta med flerdimensionella modeller i Power BI](../connect-data/desktop-default-member-multidimensional-models.md)

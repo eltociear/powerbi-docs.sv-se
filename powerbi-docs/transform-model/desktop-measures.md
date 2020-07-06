@@ -5,22 +5,22 @@ author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 01/29/2020
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 809f0ec23dd0b7c1ef4cd41dde27fd0c8fdefd33
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 752e43fa3471419a76338f9db81f08a6180b6aba
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83324504"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85238226"
 ---
 # <a name="create-measures-for-data-analysis-in-power-bi-desktop"></a>Skapa mått för dataanalys i Power BI Desktop
 
 I Power BI Desktop får du hjälp att skapa insikter om dina data med bara några klickningar. Men data innehåller ibland inte allt du behöver för att besvara några av dina viktigaste frågor. Mått kan vara en hjälp på vägen.
 
-Mått används i några av de vanligaste dataanalyserna. Enkla summeringar som summor, medelvärden, lägsta, högsta och antal kan du även ställa in via källan **Fält**. Det beräknade resultatet av mått ändras alltid när du interagerar med dina rapporter, vilket ger snabb och dynamisk utforskning av dina data. Låt oss ta en närmare titt. Mer information finns i [Skapa beräknade mått](/learn/modules/model-data-power-bi/4b-create-calculated-measures).
+Mått används i några av de vanligaste dataanalyserna. Enkla summeringar som summor, medelvärden, lägsta, högsta och antal kan du även ställa in via källan **Fält**. Det beräknade resultatet av mått ändras alltid när du interagerar med dina rapporter, vilket ger snabb och dynamisk utforskning av dina data. Låt oss ta en närmare titt. Mer information finns i [Skapa mått](/learn/modules/model-data-power-bi/4b-create-calculated-measures).
 
 ## <a name="understanding-measures"></a>Förstå mått
 

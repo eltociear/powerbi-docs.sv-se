@@ -1,7 +1,7 @@
 ---
 title: Öppna Report Builder i Power BI
 description: Power BI Report Builder är ett verktyg för skapande av sidnumrerade rapporter.
-ms.date: 11/27/2019
+ms.date: 06/29/2020
 ms.service: powerbi
 ms.subservice: report-builder
 featuredvideoid: 78TZeiEhveY
@@ -9,16 +9,18 @@ ms.topic: conceptual
 ms.assetid: 55bf4f9c-d037-412f-ae57-3fc39ce32fa5
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 0118bc427ce58f48d50b3e8ed4e918bf66c6e8fc
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: a0c22be90b609e25a6403e33cb646b35e9467c07
+ms.sourcegitcommit: e8b12d97076c1387088841c3404eb7478be9155c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80621532"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85782763"
 ---
 # <a name="power-bi-report-builder"></a>Öppna Report Builder i Power BI
 
- Power BI Report Builder är ett verktyg för skapande av sidnumrerade rapporter.  När du utformar en sidnumrerad rapport skapar du en rapportdefinition som anger vilka data som ska hämtas, var de ska hämtas och hur de ska visas. När du kör rapporten tar rapportbearbetaren den rapportdefinition som du har angett, hämtar data, kombinerar dem med rapportlayouten och genererar därmed rapporten. Du förhandsgranskar rapporten i Report Builder. Sedan publicerar du rapporten till Power BI-tjänsten.
+ Power BI Report Builder är ett verktyg med vilket du kan skapa sidnumrerade rapporter att publicera i Power BI-tjänsten.  När du utformar en sidnumrerad rapport skapar du en rapportdefinition som anger vilka data som ska hämtas, var de ska hämtas och hur de ska visas. När du kör rapporten tar rapportbearbetaren den rapportdefinition som du har angett, hämtar data, kombinerar dem med rapportlayouten och genererar därmed rapporten. Du förhandsgranskar rapporten i Report Builder. Sedan publicerar du rapporten till Power BI-tjänsten.
+ 
+Är du redo att börja redigera? [Installera Power BI Report Builder](https://aka.ms/pbireportbuilder) från Microsoft Download Center.
 
 Föredrar du inlärning från videor? Titta på videoserien om sidnumrerade Power BI-rapporter på YouTube av Chris Finlan, Principal Program Manager för Power BI.
 

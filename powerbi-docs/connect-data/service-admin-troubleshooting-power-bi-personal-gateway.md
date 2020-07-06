@@ -5,16 +5,16 @@ author: arthiriyer
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: troubleshooting
+ms.topic: how-to
 ms.date: 5/06/2019
 ms.author: arthii
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: da21acf2c37136b70bdb7ab70060422655ac879c
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 108a50017a55a2ac87bb8db2adf4f92bd5dca58f
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83323883"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85231084"
 ---
 # <a name="troubleshooting-power-bi-gateway-personal-mode"></a>Felsöka Power BI-gateway (personligt läge)
 
@@ -47,7 +47,7 @@ Ett stort antal problem kan uppstå om gatewayversionen är inaktuell. Det är e
 ## <a name="schedule-refresh"></a>Uppdatera schema
 **Fel: Autentiseringsuppgiften som lagras i molnet saknas.**
 
-Du kan få detta fel i inställningarna för \<datamängden\> om du har en schemalagd uppdatering och sedan avinstallerat och ominstallerat gateway (personligt läge). När du avinstallerar en gateway (personligt läge) tas datakällans autentiseringsuppgifter för en datamängd som har konfigurerats för uppdatering bort från Power BI-tjänsten.
+Du kan få detta fel i inställningarna för \<dataset\> om du har en schemalagd uppdatering och sedan avinstallerat och ominstallerat gatewayen (personligt läge). När du avinstallerar en gateway (personligt läge) tas datakällans autentiseringsuppgifter för en datamängd som har konfigurerats för uppdatering bort från Power BI-tjänsten.
 
 **Lösning:** I Power BI så går du till uppdateringsinställningarna för en datauppsättning. I **Hantera datakällor** väljer du **Redigera autentiseringsuppgifter** för alla datakällor med fel. Logga sedan in på datakällan igen.
 

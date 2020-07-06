@@ -5,16 +5,16 @@ author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 05/21/2020
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: d1aca2499ecf2be3e38fe36bd00f5ff5b2c17cc7
-ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
+ms.openlocfilehash: f70876b3b8c1815576ed019f88b67296f7aec052
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "83793717"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85238611"
 ---
 # <a name="use-visual-table-and-data-point-table-in-power-bi-desktop"></a>Använda visuell tabell och datapunkttabell i Power BI Desktop
 I **Power BI Desktop** kan du visa detaljer om en visualisering och se textrepresentationer av underliggande data eller enskilda dataelement för den valda visualiseringen. De här funktionerna kallas ibland för *klicka igenom*, *detaljerad information* eller *gå in på detaljnivå*.
@@ -82,7 +82,7 @@ Gå tillbaka till rapporten genom att markera **< Tillbaka till rapporten** i de
 > [!NOTE]
 >**Datapunkttabell** har följande begränsningar:
 > - Du kan inte ändra data i vyn **Datapunkttabell** och sedan spara dem i rapporten igen.
-> - Du kan inte använda **Datapunkttabell** när ditt visuella objekt använder ett beräknat mått.
+> - Du kan inte använda **Datapunktstabell** när ditt visuella objekt använder ett beräknat mått i en (flerdimensionell) måttgrupp.
 > - Du kan inte använda **Datapunkttabell** när du är ansluten till en flerdimensionell livemodell.
 
 ## <a name="next-steps"></a>Nästa steg

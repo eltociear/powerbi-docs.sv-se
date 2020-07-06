@@ -6,16 +6,16 @@ ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 07/26/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 364736ae8f4cf800c9c63282feb07f8e081aeb42
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 83e1725b7ce7d38a00d0564702977c3a8eef7c1d
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83289222"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85222871"
 ---
 # <a name="enable-encryption-for-sap-hana"></a>Aktivera kryptering för SAP HANA
 
@@ -38,7 +38,7 @@ Se till att din HANA-server är konfigurerad att använda OpenSSL som kryptograf
 
 Skapa en begäran om X509-certifikatsignering för HANA-servern.
 
-1. Med SSH ansluter du till den Linux-dator som HANA-servern körs på som \<sid\>adm.
+1. Med SSH, anslut till den Linux-dator som HANA-servern körs på som \<sid\>adm.
 
 1. Gå till startkatalogen _/__usr/sap/\<sid\>/home_.
 

@@ -5,27 +5,29 @@ author: mihart
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
-ms.topic: conceptual
-ms.date: 03/11/2020
+ms.topic: how-to
+ms.date: 06/24/2020
 ms.author: mihart
+ms.custom: contperfq4
 LocalizationGroup: Consumer
-ms.openlocfilehash: acfcd863a537153e70734d5f83e89e384438885e
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 605b3fbc49d9a9dbf60b6963a89487ca15284b29
+ms.sourcegitcommit: 46a340937d9f01c6daba86a4ab178743858722ec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83279444"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85393851"
 ---
 # <a name="visual-types-in-power-bi"></a>Typer av visuella objekt i Power BI
 
 [!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
-Det finns visuella objekt i rapporter, på instrumentpaneler samt i frågor och svar. Vissa av dessa typer av visuella objekt paketeras med Power BI, och vissa är *visuella Power BI-objekt*. Anpassade visuella objekt skapas utanför Power BI och på ett sätt som gör att *rapportdesigners* kan lägga till dem i Power BI-rapporter och -instrumentpaneler. 
+Visuella objekt (även kallade *diagram* och *visualiseringar*) är bildrepresentationer av dina data. Några vanliga exempel är kolumndiagram, kartor, punktdiagram och radiella mätare. Det finns visuella objekt i rapporter, på instrumentpaneler samt i frågor och svar.
 
-Den här artikeln är en översikt över de visuella objekt som paketeras med Power BI-tjänsten.  Det här är de visuella objekt som du stöter på oftast. Detaljerad information om dessa visuella objekt finns i [dokumentationen om typer av visuella objekt för Power BI-*rapportdesigners*](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md)
+De visuella objekt som beskrivs på den här sidan är de som paketeras med Power BI. Dessa är de visuella typer som du stöter på oftast. På den här sidan får du en snabb överblick över dessa förpaketerade visuella objekt. Detaljerad information om dessa visuella objekt finns i [Power BI-rapport*designerns* dokumentation om visuella typer](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).
 
-> [!NOTE]
-> Du kan få mer information om visuella Power BI-objekt genom att söka efter dem i avsnittet om **visuella objekt i Power BI** i [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). För varje visuella objekt finns en beskrivning, information om skapare och antingen skärmbilder eller en video. 
+Visuella objekt som inte automatiskt ingår i Power BI kallas för *anpassade visuella objekt*. Anpassade visuella objekt kan importeras till Power BI från externa webbplatser som Microsoft AppSource eller från interna källor, som organisationens lagringsplats. Om du importerar anpassade virtuella objekt måste du ha redigeringsbehörigheter för rapporten. Om du vill veta mer om dessa visuella objekt, så gå till [Visualiseringar i Power BI](../developer/visuals/power-bi-custom-visuals.md).
+
+
 
 ## <a name="list-of-visuals-available-in-power-bi"></a>Lista över visuella objekt som är tillgängliga i Power BI
 Alla dessa visuella objekt finns i Power BI-instrumentpaneler och -rapporter och [anges i frågor och svar](end-user-q-and-a.md). Information om hur du interagerar med visuella objekt finns i [Interagera med visuella objekt i rapporter, instrumentpaneler och appar](end-user-visualizations.md)
@@ -64,6 +66,12 @@ Kombinationsdiagram är ett bra alternativ:
 - för att illustrera korrelationen mellan två mått i ett visuellt objekt
 - för att kontrollera om ett mått uppfyller det mål som har definierats av ett annat mått
 - för att spara utrymme på arbetsytan
+
+
+### <a name="decomposition-tree"></a>Nedbrytningsträd
+![nedbrytningsträd](media/end-user-visual-type/power-bi-decomposition.png)
+
+I det visuella objektet för nedbrytningsträd kan du visualisera data i flera dimensioner. Data sammanställs automatiskt och du kan öka detaljnivån i dimensionerna i valfri ordning. Det är också en AI-visualisering (artificiell intelligens), så du kan be den hitta nästa dimension som du vill öka detaljnivån för utifrån vissa kriterier. Detta gör det till ett värdefullt verktyg för ad hoc-utforskning och för att genomföra rotorsaksanalyser.
 
 ### <a name="doughnut-charts"></a>Ringdiagram
 ![ringdiagram](media/end-user-visual-type/donut-small.png)
@@ -210,10 +218,10 @@ Tabeller är ett bra alternativ:
 - för att visa data i tabellformat
 - att visa numeriska data efter kategorier
 
-### <a name="treemaps"></a>Trädkartor
-![trädkarta](media/end-user-visual-type/pbi-nancy-viz-tree.png)
+### <a name="tree-maps"></a>Trädkartor
+![trädkartsdiagram](media/end-user-visual-type/pbi-nancy-viz-tree.png)
 
-Trädkartor är diagram som består av färgade rektanglar, vars storlek representerar värdet.  De kan vara hierarkiska, med rektanglar inbäddade i huvudrektanglarna. Utrymmet i varje rektangel fördelas utifrån vilka värden som mäts. Rektanglarna ordnas i storleksordning med de största överst till vänster och de minsta längst ned till höger.
+Trädkartor är diagram som består av färgade rektanglar, vilkas storlek representerar deras värden.  De kan vara hierarkiska, med rektanglar inbäddade i huvudrektanglarna. Utrymmet i varje rektangel fördelas utifrån vilka värden som mäts. Rektanglarna ordnas i storleksordning med de största överst till vänster och de minsta längst ned till höger.
 
 Trädkartor är ett bra alternativ:
 - för att visa stora mängder hierarkiska data
@@ -241,7 +249,7 @@ Vattenfallsdiagram är ett bra alternativ
 När du skriver frågor med naturligt språk i Frågor och svar för Power BI kan du ange typen av visuellt objekt i frågan.  Till exempel:
 
 
-”***försäljning per tillstånd som en trädkarta***”
+"***försäljning efter delstat som en trädkarta***"
 
 ![frågesession](media/end-user-visual-type/qa-treemap.png)
 

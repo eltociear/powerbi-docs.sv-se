@@ -1,17 +1,17 @@
 ---
-ms.openlocfilehash: 4ea1b2141cf9a072f11a3a62789c7c0ec5b500a4
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 0296512b59baf828dd284088e0109af819aee261
+ms.sourcegitcommit: 66b1a0c74b8a7dcb33a2f8570fb67bce2401a895
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "73800160"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84562128"
 ---
 Det finns två primära beräkningar som du kan skapa med hjälp av DAX:
 
 * **beräknade kolumner**
-* **beräknade mått**
+* **mått**
 
-Innan du tar itu med att skapa endera av dessa, är det bra om du har koll på den DAX-syntax för tabeller och kolumner som du måste använda när du skapar **beräknade kolumner** eller **beräknade mått**.
+Innan du sätter igång med att skapa någon av dessa, är det bra om du har koll på DAX-syntaxen för tabeller och kolumner som du måste använda när du skapar antingen **beräknade kolumner** eller **mått**.
 
 ## <a name="dax-table-and-column-name-syntax"></a>DAX-syntax för tabeller och kolumner
 Oavsett om du skapar en ny kolumn eller ett nytt mått, så är det viktigt att du känner till det allmänna formatet för tabellnamn i DAX:
@@ -51,8 +51,8 @@ De obligatoriska elementen för en beräknad kolumn är följande:
 
 Om du refererar till en tabell eller kolumn i en beräknad kolumnformel, så behöver du inte ange någon rad i tabellen – Power BI beräknar kolumnen för den aktuella raden för varje beräkning.
 
-## <a name="creating-calculated-measures"></a>Skapa beräknade mått
-Använd ett **beräknat mått** när du beräknar procenttal eller förhållanden, eller när du behöver komplexa aggregeringar. Om du vill skapa ett mått med en DAX-formel, så välj knappen **Nytt mått** på fliken **Modellering**. Än en gång är det bäst att välja vyn **Data** i Power BI Desktop eftersom **formelfältet** då visas och gör det enkelt för dig att skriva din DAX-formel.
+## <a name="creating-measures"></a>Skapa mått
+Använd ett **mått** när du beräknar procenttal eller förhållanden, eller när du behöver komplexa aggregeringar. Om du vill skapa ett mått med en DAX-formel, så välj knappen **Nytt mått** på fliken **Modellering**. Än en gång är det bäst att välja vyn **Data** i Power BI Desktop eftersom **formelfältet** då visas och gör det enkelt för dig att skriva din DAX-formel.
 
 ![](media/7-2-dax-calculation-types/dax-calc-types_4.png)
 
@@ -60,7 +60,7 @@ När du använder **mått** visas en ny måttikon med måttets namn i fönstret 
 
 ![](media/7-2-dax-calculation-types/dax-calc-types_5.png)
 
-De obligatoriska elementen för ett beräknat mått är desamma som för en beräknad kolumn:
+De obligatoriska elementen för ett mått är desamma som för en beräknad kolumn:
 
 * ett nytt måttnamn
 * minst en funktion eller minst ett uttryck

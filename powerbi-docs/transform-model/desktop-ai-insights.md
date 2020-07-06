@@ -1,22 +1,22 @@
 ---
-title: Ansluta till Alla insikter i Power BI Desktop (förhandsversion)
+title: Ansluta till AI-insikter i Power BI Desktop
 description: Anslut enkelt till och använd data från Alla insikter i Power BI Desktop
 author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
-ms.date: 11/12/2019
+ms.topic: how-to
+ms.date: 06/10/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: fec1a1a632244ef0c1923e2d68f76a7364d3c7b8
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 7f067e87bf155b45be1d4c34f27d41649b6247df
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83311739"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85237970"
 ---
-# <a name="use-ai-insights-in-power-bi-desktop-preview"></a>Använda AI Insights i Power BI Desktop (förhandsversion)
+# <a name="use-ai-insights-in-power-bi-desktop"></a>Använda AI-insikter i Power BI Desktop
 
 I Power BI kan du använda Alla insikter för att få åtkomst till en samling maskininlärningsmodeller som har tränats i förväg för att förbättra dina dataförberedelser. Alla insikter används i **Power Query-redigeraren** och du når funktionerna via flikarna **Start** och **Lägg till kolumn** i **Power Query-redigeraren**. 
 
@@ -26,7 +26,10 @@ I den här artikeln beskrivs funktioner för Textanalys och Vision, som båda fi
 
 ## <a name="how-to-enable-ai-insights"></a>Så här aktiverar du Alla insikter
 
-Alla insikter i Power BI är en förhandsgranskningsfunktion som måste vara aktiverad. Aktivera den genom att välja **Arkiv > Alternativ och inställningar > Alternativ** och sedan **Förhandsgranskningsfunktioner** i den vänstra kolumnen. I den högra rutan finns alternativet **Funktionsläsaren Alla insikter**. Markera kryssrutan bredvid **Funktionsläsaren Alla insikter** för att aktivera förhandsgranskningsfunktionen. Du måste starta om Power BI Desktop för att förhandsgranskningsfunktionen ska börja gälla.
+AI-insikter gjordes allmänt tillgängligt i juni 2020-versionen av Power BI Desktop. För tidigare versioner av Power BI Desktop måste AI-insikter i Power BI aktiveras genom att välja **Fil > Alternativ och inställningar > Alternativ** och därefter **förhandsgranskningsfunktioner** från den vänstra kolumnen. I den högra rutan finns alternativet **Funktionsläsaren Alla insikter**. Markera kryssrutan bredvid **Funktionsläsaren Alla insikter** för att aktivera förhandsgranskningsfunktionen. Du måste starta om Power BI Desktop för att förhandsgranskningsfunktionen ska börja gälla.
+
+> [!NOTE]
+> AI-insikter är allmänt tillgängligt för alla versioner av Power BI Desktop från och med versionen från juni 2020 och för dessa versioner behöver det inte aktiveras som en förhandsgranskningsfunktion.
 
 ![Alternativet Alla insikter för Power BI Desktop](media/desktop-ai-insights/ai-insights-01.png)
 

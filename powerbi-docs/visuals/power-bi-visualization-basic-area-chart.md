@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/05/2020
+ms.date: 06/16/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e03a453b95a797b281f789e8aed40b3879b54e02
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: dd0cfbcb2b4e4d18a7aa69fb65063f9d81e0a14a
+ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83563859"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85354810"
 ---
 # <a name="create-and-use-basic-area-charts"></a>Skapa och använda enkla ytdiagram
 
@@ -26,7 +26,7 @@ Det grundläggande ytdiagrammet (kallas även för ett överlappande ytdiagram) 
 
 Ytdiagrammet framhäver omfattningen av förändring över tid och kan användas för att uppmärksamma totalvärdet över en trend. Data som representerar vinst över tid kan till exempel ritas i ett ytdiagram för att betona den totala vinsten.
 
-![](media/power-bi-visualization-basic-area-chart/power-bi-chart-example.png)
+![grundläggande ytdiagram](media/power-bi-visualization-basic-area-chart/power-bi-chart-example.png)
 
 > [!NOTE]
 > För att dela en rapport med en Power BI-kollega krävs att du både har individuella Power BI Pro-licenser eller att rapporten har sparats med Premium-kapacitet.

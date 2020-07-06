@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/30/2020
+ms.date: 06/17/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 526d2face5b963b27ac17335bbe223c5e3bec672
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: e4f5007d60f7634b671f1178a7279fe5cc35be89
+ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83276592"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85354603"
 ---
 # <a name="getting-started-with-the-formatting-pane"></a>Kom igång med formateringsfönstret
 
@@ -28,11 +28,11 @@ Kom igång genom att öppna en rapport i Power BI Desktop eller Power BI-tjänst
 
 När du redigerar en rapport och du har en vald visualisering visas fönstret **Visualiseringar**. Använd det här fönstret för att ändra visualiseringar. Direkt under fönstret **Visualiseringar** finns tre ikoner: **Fält** (en stack med staplar), **Format** (en roller) och **Analys** (ett förstoringsglas). På bilden nedan har ikonen **Fält** valts, vilket indikeras med ett gult fält under ikonen.
 
-![](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-format.png)
+![Visualiseringsfönstret med Fält-ikonen vald](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-format.png)
 
 När du väljer **Format** visar området under ikonen de anpassningar som är tillgängliga för den för tillfället valda visualiseringen.  
 
-![](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-format-selected.png)
+![Visualiseringsfönstret med Format-ikonen vald](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-format-selected.png)
 
 Du kan anpassa många element i respektive visualisering. Vilka alternativ som är tillgängliga beror på vilket visuellt objekt som har valts. Några av dessa alternativ är:
 
@@ -119,7 +119,7 @@ Vissa Power BI-visualiseringar har ett **Stil**-alternativ. Med ett klick använ
 ## <a name="changing-axis-properties"></a>Ändra axelegenskaper
 
 Det kan ofta vara användbart att ändra x-axeln eller y-axeln. På liknande sätt som du arbetar med färger kan du ändra en axel genom att välja nedåtpilen till vänster om den axel som du vill ändra, så som visas på följande bild.  
-![](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-y-axis.png)
+![Format-fönstret med pil till Y-axel-kort](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-y-axis.png)
 
 I exemplet nedan har vi formaterat Y-axeln genom att:
 - flytta etiketterna till höger sida av visualiseringen

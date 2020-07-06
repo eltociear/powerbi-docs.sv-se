@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/23/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 69084048b46c77452bf94f04fd79a97c4f09af5b
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: b95eafbe797dcc28c54aa9781b0422820ccf1f4b
+ms.sourcegitcommit: 46a340937d9f01c6daba86a4ab178743858722ec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83566004"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85393621"
 ---
 # <a name="auto-datetime-guidance-in-power-bi-desktop"></a>Vägledning om automatisk datum/tid i Power BI Desktop
 
@@ -26,7 +26,7 @@ Alternativet _Automatiskt datum/tid_ tillhandahåller praktisk, snabb och lätta
 
 I följande punktlista beskrivs de överväganden – och eventuella begränsningar – som relaterar till alternativet _Automatiskt datum/tid_.
 
-- **Gäller för alla eller ingen:** När alternativet _Automatiskt datum/tid-_ har aktiverats gäller det alla datumkolumner (förutom beräknade kolumner) i importtabeller som inte tillhör &quot;många&quot;-sidan i en relation. Du kan inte aktivera eller inaktivera det selektivt kolumn för kolumn.
+- **Gäller för alla eller ingen:** När alternativet _Automatiskt datum/tid-_ har aktiverats gäller det alla datumkolumner i importtabeller som inte tillhör &quot;många&quot;-sidan i en relation. Du kan inte aktivera eller inaktivera det selektivt kolumn för kolumn.
 - **Endast kalenderperioder:** Kolumnerna för år och kvartal relaterar till kalenderperioder. Det innebär att året börjar den 1 januari och slutar den 31 december. Det går inte att ändra datumen för årets början (eller slut).
 - **Anpassning:** Det går inte att anpassa de värden som används för att beskriva tidsperioder. Dessutom går det inte att lägga till fler kolumner för som beskriver andra tidsperioder, t.ex. veckor.
 - **Årsfiltrering:** Kolumnvärdena för**Kvartal**, **Månad** och **Dag** omfattar inte något värde för år. Kolumnen **Månad** innehåller t.ex. endast månadsnamn (januari, februari osv). Värdena är inte helt självbeskrivande, och i vissa rapportmodeller kan det hända att det inte går att kommunicera årsfiltreringskontexten.
@@ -51,6 +51,7 @@ Om alternativet _Automatiskt datum/tid_ inte är relevant för dina projekt, så
 
 Mer information om ämnet i den här artikeln finns i följande resurser:
 
+- [Skapa datumtabeller i Power BI Desktop](model-date-tables.md)
 - [Automatisk datum/tid i Power BI Desktop](../transform-model/desktop-auto-date-time.md)
 - [Konfigurera och använda datumtabeller i Power BI Desktop](../transform-model/desktop-date-tables.md)
 - Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)

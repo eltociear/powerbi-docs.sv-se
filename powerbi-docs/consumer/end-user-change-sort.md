@@ -6,19 +6,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 02/19/2020
+ms.date: 06/25/2020
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: a84ebd1374cab596023f55024eb9368a69daab0d
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 10db78c01ea074e2b3fab71715a3df92ae207f8e
+ms.sourcegitcommit: e8b12d97076c1387088841c3404eb7478be9155c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85236011"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85782487"
 ---
 # <a name="change-how-a-chart-is-sorted-in-a-power-bi-report"></a>Ändra hur ett diagram sorteras i en Power BI-rapport
 
-[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
+[!INCLUDE[consumer-appliesto-ynnn](../includes/consumer-appliesto-ynnn.md)]
 
 
 > [!IMPORTANT]
@@ -26,7 +26,7 @@ ms.locfileid: "85236011"
 
 I Power BI-tjänsten kan du ändra utseendet för ett visuellt objekt genom att sortera det enligt olika datafält. Genom att ändra sorteringen för ett visuellt objekt kan du framhäva den information du vill förmedla. Oavsett om du använder numeriska data (som försäljningssiffror) eller textdata (som namn på delstater) kan du sortera dina visuella objekt som det passar dig. Power BI ger stor flexibilitet gällande sortering och du kan använda olika snabbmenyer. 
 
-Du kan inte sortera visuella objekt på en instrumentpanel, men i en Power BI-rapport kan du sortera de flesta visualiseringar 
+Det går inte att sortera visuella objekt på en instrumentpanel. Men i en Power BI-rapport kan du sortera de flesta visuella objekt ett och ibland två fält i taget. För vissa typer av visuella objekt är sortering inte tillgänglig överhuvudtaget: trädkartor, mätare, kartor osv. 
 
 ## <a name="get-started"></a>Kom igång
 
@@ -51,6 +51,19 @@ Om det behövs kan du ändra sorteringsordningen mellan stigande och fallande.  
 
 > [!NOTE]
 > Det går inte att sortera alla visuella objekt. Till exempel går det inte att sortera följande visuella objekt: trädkarta, karta, koropletkarta, punktdiagram, mätare, kort och vattenfall.
+
+## <a name="sorting-by-multiple-columns"></a>Sortera efter flera kolumner
+Data i den här tabellen sorteras efter **Antal kunder**.  Vi vet detta på grund av den lilla pilen under ordet *Antal*. Pilen pekar nedåt vilket innebär att kolumnen sorteras i *fallande* ordning.
+
+![skärmbild som visar den första kolumnen som används för sortering](media/end-user-change-sort/power-bi-sort-first.png)
+
+
+Om du vill lägga till fler kolumner i sorteringsordningen, så Skift-klicka på den kolumnrubrik som du vill lägga till härnäst i sorteringsordningen. Om du exempelvis klickar på **Antal kunder** och sedan Skift-klickar på **Totala intäkter**, så sorteras tabellen först efter antal kunder och sedan efter intäkter. Den röda konturen visar områden där sorteringsordningen har ändrats.
+
+![skärmbild som visar den andra kolumnen som används för sortering](media/end-user-change-sort/power-bi-sort-second.png)
+
+Om du Skift-klickar en andra gång i samma kolumn ändras sorteringsriktningen för den kolumnen. Om du Skift-klickar på en kolumn som du tidigare har lagt till i sorteringsordningen flyttas den kolumnen längst tillbaka i sorteringsordningen.
+
 
 ## <a name="saving-changes-you-make-to-sort-order"></a>Spara dina ändringar av sorteringsordningen
 De filter, utsnitt, sorteringar och andra datavisningsändringar som du gör sparas i Power BI-rapporterna – även om du arbetar i [läsvyn](end-user-reading-view.md). Om du navigerar bort från en rapport och sedan kommer tillbaka så har dina sorteringsändringar sparats.  Om du vill återställa ändringarna till rapport*designerns* inställningar väljer du **Återställ till standard** i det övre menyfältet. 

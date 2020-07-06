@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.date: 02/05/2019
-ms.openlocfilehash: 149b4f8663838c0a87609a1ec24358fb9ee9727e
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 8860a06355f201c463e97d81021a8e5476ac98c8
+ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80403643"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85354994"
 ---
 # <a name="step-3-create-a-dataset-in-power-bi"></a>Steg 3: Skapa en datauppsättning i Power BI
 Den här artikeln ingår i en stegvis genomgång för att [skicka data till en datauppsättning](walkthrough-push-data.md).
@@ -26,7 +26,7 @@ Lägg till den token som du fick i [Hämta en åtkomsttoken för autentisering](
 
 När du anropar åtgärden [PostDataset](https://docs.microsoft.com/rest/api/power-bi/pushdatasets) skapas en ny datauppsättning. 
 
-![](media/walkthrough-push-data-create-dataset/powerbi-developer-create-dataset.png)
+![skapa datauppsättning](media/walkthrough-push-data-create-dataset/powerbi-developer-create-dataset.png)
 
 Skapa en datauppsättning i Power BI.
 
@@ -111,7 +111,7 @@ Nedan visas den [fullständiga kodlistan](#code).
 
 <a name="code"/>
 
-## <a name="complete-code-listing"></a>Slutföra kodlistning
+## <a name="complete-code-listing"></a>Fullständig kodlista
 
 ```csharp
 using System;
@@ -235,5 +235,5 @@ namespace walkthrough_push_data
 * [Översikt över Power BI REST API](overview-of-power-bi-rest-api.md)  
 * [Power BI REST API-referens](https://docs.microsoft.com/rest/api/power-bi/)  
 
-Fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
 

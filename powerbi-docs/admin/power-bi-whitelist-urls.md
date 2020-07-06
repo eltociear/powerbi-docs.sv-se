@@ -1,36 +1,36 @@
 ---
-title: URL:er för Power BI för vitlistning
-description: I den här artikeln listas URL-slutpunkter och portar till den betrodda listan för anslutning till Power BI.
+title: Lägg till Power BI-URL:er i listan över tillåtna
+description: I den här artikeln listas URL-slutpunkter och -portar som ska läggas till i listan över tillåtna för anslutning till Power BI.
 author: kfollis
 ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/29/2020
+ms.date: 06/25/2020
 ms.custom: seodec18
-ms.openlocfilehash: c3a3bd98dc65e3b73ffe04b95fa9001c90af1d53
-ms.sourcegitcommit: cd64ddd3a6888253dca3b2e3fe24ed8bb9b66bc6
+ms.openlocfilehash: 38e6668c0fb15d1279923b77042cdedebe6dd139
+ms.sourcegitcommit: a453ba52aafa012896f665660df7df7bc117ade5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84315935"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85485080"
 ---
-# <a name="power-bi-urls-for-whitelisting"></a>URL:er för Power BI för vitlistning
-[//]: # "suparnap, miwehnia är kontakter för att underhålla listan"
+# <a name="add-power-bi-urls-to-your-allow-list"></a>Lägg till Power BI URL:er till din lista över tillåtna
+[//]: # "suparnap, miwehnia, natham är kontaktpersoner för att underhålla den här listan"
 
-**Power BI-onlinetjänsten**, även kallad Power BI SaaS-appen (Software as a Service), kräver anslutning till Internet. Slutpunkterna nedan måste vara tillgängliga för kunder som använder Power BI-onlinetjänsten.
+Power BI-tjänsten kräver en Internetanslutning. De slutpunkter som anges i tabellerna i den här artikeln ska vara nåbara för kunder som använder Power BI-tjänsten.
 
-För att kunna använda Power BI-onlinetjänsten måste du kunna ansluta till de slutpunkter som är märkta med **krävs** i tabellerna nedan, samt till alla slutpunkter som är märkta med **krävs** på de länkade webbplatserna. Om en länk till en extern webbplats refererar till ett visst avsnitt behöver du bara granska slutpunkterna i det avsnittet.
+För att kunna använda Power BI-tjänsten måste du kunna ansluta till de slutpunkter som är märkta med **krävs** i tabellerna nedan, samt till alla slutpunkter som är märkta med **krävs** på de länkade webbplatserna. Om en länk till en extern webbplats refererar till ett visst avsnitt behöver du bara granska slutpunkterna i det avsnittet.
 
-Slutpunkter som är märkta med **valfritt** kanske också är **godkända** och rekommenderade för att specifika funktioner ska fungera.
+Slutpunkter som är märkta med **valfritt** kan även läggas till i listor över tillåtna för att specifika funktioner ska fungera.
 
-Power BI-onlinetjänsten kräver endast att TCP-port 443 är öppen för de angivna slutpunkterna.
+Power BI-tjänsten kräver endast att TCP-port 443 är öppen för de listade slutpunkterna.
 
-Jokertecken (*) representerar alla nivåer under rotdomänen, och Saknas används när ingen information är tillgänglig. Kolumnen **Mål** är en lista med fullständigt kvalificerade domännamn/domäner och länkar till externa webbplatser som innehåller ytterligare information om slutpunkter.
+Jokertecken (*) representerar alla nivåer under rotdomänen, och Saknas används när ingen information är tillgänglig. Kolumnen **Mål** är en lista med domännamn och länkar till externa webbplatser som innehåller ytterligare slutpunktsinformation.
 
 >[!Important]
->Informationen i tabellerna nedan gäller inte för **molnet för amerikanska myndigheter**, **molnet för Tyskland** eller **molnet för Kina**.
+>Informationen i tabellerna nedan gäller inte för Power BI Tyskland, Power BI Kina som drivs av 21Vianet eller Power BI för amerikanska myndigheter. Läs [anslut myndigheter och globala Azure Cloud Services](service-govus-overview.md#connect-government-and-global-azure-cloud-services) för att läsa mer om kommunikation mellan molntjänster.
 
 ## <a name="authentication"></a>Autentisering
 
@@ -51,7 +51,7 @@ För allmän användning av Power BI måste du kunna ansluta till slutpunkterna 
 | 3 | **Krävs:** Backend-API:er | *.pbidedicated.windows.net | TCP 443 |
 | 4 | **Krävs:** Innehållsleverantörsnätverk (CDN) | content.powerapps.com | TCP 443 |
 | 5 | **Krävs:** Microsoft 365-integrering | Se dokumentationen om [vanliga URL:er och Office Online-URL:er för Microsoft 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) | Saknas |
-| 6 | **Krävs:** Portal | app.powerbi.com | TCP 443 |
+| 6 | **Krävs:** Portal | *.powerbi.com | TCP 443 |
 | 7 | **Krävs:** Tjänsttelemetri | dc.services.visualstudio.com | TCP 443 |
 | 8 | **Valfritt:** Informationsmeddelanden | dynmsg.modpim.com | TCP 443 |
 | 9 | **Valfritt:** NPS-undersökningar | nps.onyx.azure.net | TCP 443 |
@@ -102,7 +102,7 @@ Power BI är beroende av vissa slutpunkter för att kunna visa och få åtkomst 
 
 ## <a name="related-external-sites"></a>Relaterade externa webbplatser
 
-Power BI-länkar till andra relaterade webbplatser. Dessa webbplatser är värdar för dokumentation, support, förfrågningar om nya funktioner och mycket annat. Åtkomst till dessa webbplatser påverkar inte funktionerna i Power BI, så vitlistning är valfritt.
+Power BI-länkar till andra relaterade webbplatser. Dessa webbplatser är värdar för dokumentation, support, förfrågningar om nya funktioner och mycket annat. Åtkomst till dessa webbplatser påverkar inte funktionerna i Power BI, så det är valfritt att lägga till dem i listan över tillåtna.
 
 | Rad | Syfte | Mål | Portar |
 | --- | --- | --- | --- |

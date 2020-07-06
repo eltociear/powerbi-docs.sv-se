@@ -1,6 +1,6 @@
 ---
-title: Sidnumrerade rapporter i Power BI i en dagskurs
-description: Den här onlinekursen syftar till att ge dig som rapportförfattare de tekniska kunskaper som krävs för att skapa, publicera och distribuera sidnumrerade rapporter i Power BI.
+title: Kursen Sidnumrerade rapporter i Power BI på en dag
+description: Den här videobaserade kursen som syftar till att ge dig som rapportförfattare de tekniska kunskaper som krävs för att skapa, publicera och distribuera sidnumrerade rapporter i Power BI.
 author: peter-myers
 ms.reviewer: maggies
 featuredvideoid: DN1t5p9aui0
@@ -9,12 +9,12 @@ ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 03/18/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 3b6c3f79b6695c670b942253ddd2c2b158dc3acc
-ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
+ms.openlocfilehash: d4d5386a7e56618a761e541ba7942778a09a7008
+ms.sourcegitcommit: aece2382b618dc5b730705b4c76e76a657986588
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "83693235"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84427475"
 ---
 # <a name="power-bi-paginated-reports-in-a-day-course"></a>Kursen Sidnumrerade rapporter i Power BI på en dag
 
@@ -93,11 +93,11 @@ När du har extraherat filerna har du mappen **PowerBIPRIAD** med följande unde
 - **MySolution**: I den här mappen lagras dina lösningsfiler. Det står när du ska använda lösningsfiler i övningsinstruktionerna.
 - **Presentation**: Den här mappen innehåller kurspresentationen i form av ett PDF-dokument.
 
-### <a name="getting-started-with-the-kit"></a>Komma igång med paketet
+### <a name="get-started-with-the-kit"></a>Kom igång med paketet
 
 Vi rekommenderar att du tittar på onlinekursen först. Du kan gå tillbaka till presentationsteorin genom att öppna filen **&lt;CourseFolder&gt;\PowerBIPRIAD\Presentation\PowerBIPRIAD_Presentation.pdf**. I presentationen finns åtta övningsbilder som visar när det är dags att använda teorin i praktiken. Den innehåller också många resurslänkar som hjälper dig att hitta relaterat innehåll.
 
-När du är redo att börja med den första övningen öppnar du filen **&lt;CourseFolder&gt;\PowerBIPRIAD\Lab01A\PowerBIPRIAD_Lab01A.pdf**. I det här dokumentet får du hjälp med att logga in i Power BI-tjänsten, ladda upp en datamängd och sedan installera [Power BI Report Builder](../paginated-reports/report-builder-power-bi.md).
+När du är redo att börja med den första övningen öppnar du filen **&lt;CourseFolder&gt;\PowerBIPRIAD\Lab01A\PowerBIPRIAD_Lab01A.pdf**. I det här dokumentet får du hjälp med att logga in i Power BI-tjänsten, ladda upp en datamängd och sedan installera [Power BI Report Builder](https://aka.ms/pbireportbuilder).
 
 > [!NOTE]
 > Du måste ha ett eget Power BI-konto. Om du inte redan har det kan du läsa [Registrera dig för Power BI som enskild person](../fundamentals/service-self-service-signup-for-power-bi.md).

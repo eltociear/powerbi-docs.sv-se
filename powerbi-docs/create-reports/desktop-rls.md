@@ -6,16 +6,16 @@ ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
+ms.topic: how-to
 ms.custom: ''
 ms.date: 01/31/2020
 LocalizationGroup: Create reports
-ms.openlocfilehash: 89c33de2ef7319c6dcbeace0df79786128e16cd9
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 9036967c826dee83847c3bc3d4a903bbe749b2ce
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83334325"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85238652"
 ---
 # <a name="restrict-data-access-with-row-level-security-rls-for-power-bi-desktop"></a>Begränsa dataåtkomsten med säkerhet på radnivå (RLS) för Power BI Desktop
 
@@ -36,6 +36,9 @@ Du kan nu konfigurera RLS för datamodeller som importerats till Power BI med Po
 
 ## <a name="next-steps"></a>Nästa steg
 
-[Sälkerhet på radnivå (RLS) med Power BI-tjänsten](../admin/service-admin-rls.md)  
+Mer information om ämnet i den här artikeln finns i följande resurser:
 
-Fler frågor? [Fråga Power BI Community](https://community.powerbi.com/).
+- [Säkerhet på radnivå (RLS) med Power BI](../admin/service-admin-rls.md)
+- [Vägledning om säkerhet på radnivå (RLS) med Power BI Desktop](../guidance/rls-guidance.md)
+- Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+- Har du förslag? [Bidra till att förbättra Power BI](https://ideas.powerbi.com/)

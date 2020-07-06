@@ -5,15 +5,15 @@ author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 05/19/2020
 ms.author: painbar
-ms.openlocfilehash: a68c8a452752981b2526c450820e8d277f5c0b10
-ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
+ms.openlocfilehash: e66d1b8b57af9ee04239e7222db742b64cc25883
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "83693013"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85235690"
 ---
 # <a name="install-and-distribute-template-apps-in-your-organization"></a>Installera och distribuera mallappar i organisationen
 
@@ -38,15 +38,19 @@ Om du vill installera, anpassa och distribuera en mallapp behöver du:
 
     ![Hämta appar](media/service-template-apps-install-distribute/power-bi-get-apps-arrow.png)
 
-1. I AppSource-fönstret som visas väljer du **Appar**. Bläddra eller sök efter appen du vill använda och välj sedan **Hämta nu**.
+1. I Marketplace för Power BI-appar som visas väljer du **Mallappar**. Alla mallappar som är tillgängliga i AppSource visas. Bläddra för att hitta den mallapp som du letar efter eller hämta en filtrerad markering med hjälp av sökrutan. Om du skriver en del av namnet på mallappen, eller en kategori som ekonomi, analys, marknadsföring osv., så blir det lättare att hitta det objekt som du letar efter.
 
     ![Söka i AppSource](media/service-template-apps-install-distribute/power-bi-appsource.png)
+
+1. När du har hittat den mallapp som du letar efter, klickar du på den. Mallapperbjudandet visas. Klicka på **Skaffa nu**.
+
+   ![Mallapperbjudande](media/service-template-apps-install-distribute/power-bi-template-app-offer.png)
 
 1. I dialogrutan som visas väljer du **Installera**.
 
     ![Installera app](media/service-template-apps-install-distribute/power-install-dialog.png)
     
-    Appen installeras med en associerad arbetsyta. **Om du bestämmer dig för att anpassa appen gör du det i den associerade arbetsytan**.
+    Appen installeras, tillsammans med en arbetsyta med samma namn som innehåller alla artefakter som behövs för ytterligare [anpassning](#customize-and-share-the-app).
 
     > [!NOTE]
     > Om du använder en installationslänk för en app som inte finns i AppSource, visas dialogrutan för validering där du uppmanas att bekräfta valet.

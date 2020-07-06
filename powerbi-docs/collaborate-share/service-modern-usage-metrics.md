@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 01/22/2020
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 894aa17e0a6a2be52446be0a67452d96d45c9a5b
-ms.sourcegitcommit: cd64ddd3a6888253dca3b2e3fe24ed8bb9b66bc6
+ms.openlocfilehash: ee5536f2c4026ceb019c5f89b6045afd44b35529
+ms.sourcegitcommit: 0b1e96de184caf2371adedcc3ee43bcb88048187
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84316073"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85299628"
 ---
 # <a name="monitor-usage-metrics-in-the-new-workspace-experience"></a>Övervaka användningsstatistik i den nya arbetsytan
 
@@ -257,6 +257,7 @@ Förutom ovanstående skillnader mellan tidigare och förbättrade användningss
 - Användarmaskering fungerar inte som förväntat när kapslade grupper används. Om din organisation har inaktiverat data per användare i användningsstatistik för skapare av innehåll i klientorganisationsinställningarna för Power BI-administratörsportalen, maskeras bara medlemmarna på den översta nivån. Medlemmar i undergrupper visas fortfarande.
 - Det kan ta några minuter att initiera datauppsättningen för användningsstatistikrapporten, vilket leder till att en tom användningsstatistikrapport visas, eftersom Power BI-användargränssnittet inte väntar på att uppdateringen ska slutföras. Kontrollera uppdateringshistoriken för datauppsättningsinställningarna i användningsstatistiken för att kontrollera att uppdateringen har slutförts.
 - Det kanske inte gå att initiera datauppsättningen för användningsstatistikrapporten på grund av en tidsgräns som påträffades under uppdateringen. Se felsökningsavsnittet nedan för att lösa problemet.
+- Delning har inaktiverats för användningsstatistikrapporten. Om du vill ge användare läsbehörighet till rapporten måste du först ge dem åtkomst till arbetsytan.
 
 ## <a name="frequently-asked-questions"></a>Vanliga frågor och svar
 

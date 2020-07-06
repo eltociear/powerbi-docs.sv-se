@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/21/2019
 LocalizationGroup: Dashboards
-ms.openlocfilehash: af095964846cad264d1ac0ffd82e0c2ac6988a0e
-ms.sourcegitcommit: 49daa8964c6e30347e29e7bfc015762e2cf494b3
+ms.openlocfilehash: b5f4d615c04583e59b618b415c8c239c9295c8a8
+ms.sourcegitcommit: 0b1e96de184caf2371adedcc3ee43bcb88048187
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84273424"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85299605"
 ---
 # <a name="monitor-usage-metrics-for-power-bi-dashboards-and-reports"></a>Övervaka användningsstatistik för Power BI-instrumentpaneler och -rapporter
 
@@ -158,6 +158,7 @@ Det är viktigt att förstå att skillnader kan uppstå när du jämför använd
 * Användningsstatistik kan ibland underberäkna aktiviteter på grund av inkonsekventa nätverksanslutningar, reklamblockering eller andra problem som kan störa skickandet av händelser från klienten.
 * Vissa typer av vyer ingår inte i användningsstatistiken, vilket beskrivs tidigare i den här artikeln.
 * Användningsstatistiken kan ibland överberäkna aktiviteter i situationer där klienten uppdateras utan att en begäran behöver skickas tillbaka till Power BI-tjänsten.
+* Delning har inaktiverats för användningsstatistikrapporten. Om du vill ge användare läsbehörighet till rapporten måste du först ge dem åtkomst till arbetsytan.
 
 ### <a name="other-considerations"></a>Ytterligare överväganden
 

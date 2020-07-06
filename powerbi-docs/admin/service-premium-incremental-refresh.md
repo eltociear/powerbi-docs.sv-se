@@ -5,16 +5,16 @@ author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
-ms.topic: conceptual
-ms.date: 05/26/2020
+ms.topic: how-to
+ms.date: 06/22/2020
 ms.author: davidi
 LocalizationGroup: Premium
-ms.openlocfilehash: 2257e38183d87ef7fd4fdd12546c2a191a7acf74
-ms.sourcegitcommit: 3f864ec22f99ca9e25cda3a5abda8a5f69ccfa8e
+ms.openlocfilehash: a9045c5c088926b24bb9f71e2adf558da6ffa597
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84159891"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85227448"
 ---
 # <a name="incremental-refresh-in-power-bi"></a>Inkrementell uppdatering i Power BI
 
@@ -114,7 +114,7 @@ Den första uppdateringen i Power BI-tjänsten kan ta längre tid eftersom alla 
 
 #### <a name="current-date"></a>Aktuellt datum
 
-*Aktuellt datum* baseras på systemdatumet vid tidpunkten för uppdateringen. Om schemalagd uppdatering är aktiverad för datamängden i Power BI-tjänsten tas den angivna tidszonen med i beräkningen när det aktuella datumet fastställs. Tidszonen räknas in för både manuellt anropade och schemalagda uppdateringar om den är tillgänglig. En uppdatering som görs 20.00 Pacific Time (USA och Kanada) med angiven tidszon fastställer till exempel aktuellt datumet baserat på Pacific Time, inte GMT (vilket annars skulle vara nästa dag).
+*Aktuellt datum* baseras på systemdatumet vid tidpunkten för uppdateringen. Om schemalagd uppdatering är aktiverad för datamängden i Power BI-tjänsten tas den angivna tidszonen med i beräkningen när det aktuella datumet fastställs. Både manuellt anropade och schemalagda uppdateringar via Power BI-tjänsten tar hänsyn till tidszon i förekommande fall. En uppdatering som görs 20.00 Pacific Time (USA och Kanada) med angiven tidszon fastställer till exempel aktuellt datumet baserat på Pacific Time, inte GMT (vilket annars skulle vara nästa dag). Uppdateringsåtgärder som inte anropas via Power BI-tjänsten, till exempel [TMSL Refresh-kommandot](https://docs.microsoft.com/analysis-services/tmsl/refresh-command-tmsl?view=power-bi-premium-current) tar inte hänsyn till den schemalagda uppdateringens tidszon
 
 ![Tidszon](media/service-premium-incremental-refresh/time-zone2.png)
 
@@ -186,7 +186,7 @@ Följande parametrar kan infogas i TMSL Refresh-kommandot för att åsidosätta 
 
 - **applyRefreshPolicy** – om en tabell har en definierad stegvis uppdateringsprincip kommer applyRefreshPolicy att avgöra om principen tillämpas eller inte. Om principen inte tillämpas lämnar en fullständig processåtgärd partitionsdefinitioner oförändrade och alla partitioner i tabellen uppdateras helt och hållet. Standardvärdet är True.
 
-- **effectiveDate** – om en princip för stegvis uppdatering används måste du känna till det aktuella datumet för att fastställa rullande fönsterintervall för det historiska området och det stegvisaintervallet. Med parametern effectiveDate kan du åsidosätta det aktuella datumet. Detta är användbart för testning, demonstrationer och affärsscenarier där data stegvis uppdateras till ett historiskt eller framtida datum (till exempel framtida budgetar). Standardvärdet är det [aktuella datumet](#current-date).
+- **effectiveDate** – om en princip för stegvis uppdatering används måste du känna till det aktuella datumet för att fastställa rullande fönsterintervall för det historiska området och det stegvisaintervallet. Med parametern effectiveDate kan du åsidosätta det aktuella datumet. Detta är användbart för testning, demonstrationer och affärsscenarier där data stegvis uppdateras till ett historiskt eller framtida datum (till exempel framtida budgetar). Standardvärdet är det aktuella datumet.
 
 ```json
 { 
@@ -205,6 +205,8 @@ Följande parametrar kan infogas i TMSL Refresh-kommandot för att åsidosätta 
   }
 }
 ```
+
+Om du vill läsa mer om hur du åsidosätter standardvärdet för stegvis uppdatering med TMSL, se [Uppdateringskommando](https://docs.microsoft.com/analysis-services/tmsl/refresh-command-tmsl?view=power-bi-premium-current).
 
 ### <a name="custom-queries-for-detect-data-changes"></a>Anpassade frågor för att identifiera dataändringar
 

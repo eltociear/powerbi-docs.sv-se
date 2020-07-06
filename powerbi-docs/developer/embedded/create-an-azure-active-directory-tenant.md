@@ -6,14 +6,14 @@ ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 05/28/2019
-ms.openlocfilehash: c8c62709775bb269eb57b2f88c174f1dc4fd13ad
-ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
+ms.openlocfilehash: f592b7927d713e343f1d3ad11453cbbacc17fffd
+ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "83794101"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85354948"
 ---
 # <a name="create-an-azure-active-directory-tenant-to-use-with-power-bi"></a>Skapa en Azure Active Directory-klient som ska användas med Power BI
 
@@ -60,29 +60,29 @@ Nu när du har en katalog ska du skapa minst två användare. En är global admi
 
 1. Se till att du befinner sig på Azure Active Directory-menyn i Azure-portalen.
 
-    ![](media/create-an-azure-active-directory-tenant/aad-flyout.png)
+    ![Azure AD-meny](media/create-an-azure-active-directory-tenant/aad-flyout.png)
 
     Om du inte gör det väljer du ikonen för Azure Active Directory i det vänstra navigeringsfältet.
 
-    ![](media/create-an-azure-active-directory-tenant/aad-service.png)
+    ![Azure AD-ikon](media/create-an-azure-active-directory-tenant/aad-service.png)
 
 2. Under **Hantera** väljer du **Användare**.
 
-    ![](media/create-an-azure-active-directory-tenant/users-and-groups.png)
+    ![Azure AD-användare och -grupper](media/create-an-azure-active-directory-tenant/users-and-groups.png)
 
 3. Välj **Alla användare** och sedan **+ Ny användare**.
 
 4. Ange värden för **Namn** och **Användarnamn** för klientorganisationens globala administratör. Ändra **Katalogroll** till **Global administratör**. Du kan dessutom visa det tillfälliga lösenordet. När du är färdig väljer du **Skapa**.
 
-    ![](media/create-an-azure-active-directory-tenant/global-admin.png)
+    ![Global Azure AD-administratör](media/create-an-azure-active-directory-tenant/global-admin.png)
 
 5. Gör samma sak för en vanlig användare i klientorganisationen. Du kan använda det här kontot som huvudkonto för inbäddningen. Den här gången låter du **Katalogroll** vara **Användare**. Skriv ned lösenordet och välj sedan **Skapa**.
 
-    ![](media/create-an-azure-active-directory-tenant/pbiembed-user.png)
+    ![Azure AD-användare](media/create-an-azure-active-directory-tenant/pbiembed-user.png)
 
 6. Registrera dig för Power BI med användarkontot du skapade i steg 5. Gå till [powerbi.com](https://powerbi.microsoft.com/get-started/) och välj **Testa kostnadsfritt** under **Power BI – Molnsamarbete och delning**.
 
-    ![](media/create-an-azure-active-directory-tenant/try-powerbi-free.png)
+    ![skapa klientorganisation](media/create-an-azure-active-directory-tenant/try-powerbi-free.png)
 
     När du registrerar dig får du en fråga om du vill prova Power BI Pro kostnadsfritt under 60 dagar. Du kan välja det och bli Pro-användare, så att du kan [börja utveckla en inbäddad lösning](embed-sample-for-customers.md).
 

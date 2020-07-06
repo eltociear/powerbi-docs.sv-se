@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 04/02/2020
-ms.openlocfilehash: 42304e60740c215b1300e66f074807aea10ec6f9
-ms.sourcegitcommit: cd64ddd3a6888253dca3b2e3fe24ed8bb9b66bc6
+ms.openlocfilehash: cbc8f6366e23aa7fbfb447bbfe56909c09f3e3fd
+ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84317062"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85354488"
 ---
 # <a name="tutorial-build-a-funnel-plot-from-r-script-to-r-visual"></a>Självstudie: Skapa ett trattdiagram från R-skript till visuellt R-objekt
 Den här artikeln beskriver steg för steg hur du skapar en trattritning med ett R-skript och ett visuellt R-objekt.
@@ -89,13 +89,13 @@ Det visuella objektet är inte särskilt användarvänligt än eftersom använda
 
    Du måste uppdatera avsnitten `dataRoles` och `dataViewMappings`, som definierar namn, typer, knappbeskrivningar och maximalt antal kolumner för varje indatafält.
 
-   ![](./samples/funnel-plot/chapter-3/funnel-r-visual-v02/capabilities-before-vs-after.png)
+   ![före och efter](./samples/funnel-plot/chapter-3/funnel-r-visual-v02/capabilities-before-vs-after.png)
    
    Mer information finns i avsnittet om [funktioner](./capabilities.md).
 
 1. Redigera *script.r* för att ge stöd för `Population`, `Number` och `Tooltips` som dataframes för inmatning i stället för `dataset`, eller ladda ned [script.r](https://github.com/microsoft/PowerBI-visuals/raw/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v02/script.r).
 
-   ![](./samples/funnel-plot/chapter-3/funnel-r-visual-v02/script-r-before-vs-after.png)
+   ![skript](./samples/funnel-plot/chapter-3/funnel-r-visual-v02/script-r-before-vs-after.png)
 
    > [!TIP]
    > Om du vill följa ändringarna i R-skriptet söker du efter kommentarsblock: 
@@ -125,7 +125,7 @@ Det visuella objektet är inte särskilt användarvänligt än eftersom använda
 
    ladda ned [capabilities.json](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v03/capabilities.json); mer information finns i avsnittet om [objektegenskaper](./objects-properties.md)
 
-   ![](./samples/funnel-plot/chapter-3/funnel-r-visual-v03/capabilities-before-after.PNG)
+   ![funktioner](./samples/funnel-plot/chapter-3/funnel-r-visual-v03/capabilities-before-after.PNG)
 
 1. Redigera *src/settings.ts* så att det avspeglar [settings.ts](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v03/src/settings.ts). Den här filen är skriven i TypeScript.  
 
@@ -133,7 +133,7 @@ Det visuella objektet är inte särskilt användarvänligt än eftersom använda
    - Deklarera ett nytt gränssnitt för att lagra egenskapsvärdet
    - Definiera en medlemsegenskap och standardvärden
 
-   ![](./samples/funnel-plot/chapter-3/funnel-r-visual-v03/settings-ts-before-after.PNG)
+   ![inställningar](./samples/funnel-plot/chapter-3/funnel-r-visual-v03/settings-ts-before-after.PNG)
 
 1. Redigera *script.r* så att det avspeglar detta [script.r](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v03/script.r). Den här ändringen lägger till stöd för parametrar i användargränssnittet genom att lägga till `if.exists`-anrop per användarparameter.
 
@@ -150,7 +150,7 @@ Det visuella objektet är inte särskilt användarvänligt än eftersom använda
    > #RVIZ_IN_PBI_GUIDE:END:Removed to enable user parameters
    > ```
 
-   ![](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v03/script_r_before_after_1.png)
+   ![skript före och efter](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v03/script_r_before_after_1.png)
 
    Du kan välja att inte exponera parametrarna för användargränssnittet, som vi gjorde.  
 

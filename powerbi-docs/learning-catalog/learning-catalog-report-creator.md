@@ -1,17 +1,17 @@
 ---
 title: Utbildningskatalog för rapportförfattare
 description: Hitta alla utbildningsalternativ för Power BI
-author: loreleishannonmsft
+author: margoc
 ms.prod: powerbi
 ms.topic: article
 ms.date: 03/25/2020
-ms.author: v-lshann
-ms.openlocfilehash: f318aa59f33a9993b31787fcb3e0036286616608
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.author: margoc
+ms.openlocfilehash: ed36d045047215babb092eb074156c950af9d16f
+ms.sourcegitcommit: 66b1a0c74b8a7dcb33a2f8570fb67bce2401a895
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81268821"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84532291"
 ---
 # <a name="report-creator-learning-catalog"></a>Utbildningskatalog för rapportförfattare
 
@@ -39,6 +39,7 @@ Följande katalog ordnas från kärnkunskaper till specifika domäner och från 
 ## <a name="report-design"></a>Rapportdesign<a name="report-design"></a>
 | Innehåll | Beskrivning  | Format | Längd   |
 |-------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|----------------|
+|[Nätbaserad kurs: Sidnumrering i Power BI på en dag](paginated-reports-online-course.md)|En videobaserad kurs som syftar till att ge dig som rapportförfattare de tekniska kunskaper som krävs för att skapa, publicera och distribuera sidnumrerade rapporter i Power BI. Vi rekommenderar att du tittar på videorna i inspelningsordningen från video 1 till video 24.|YouTube-spellista och självstudiepaket|4 tim 20 min|
 | [Berätta historier om data med Power BI av Tristan Malherbe](https://www.youtube.com/watch?v=egk0suekwHo)  | Berätta historier om data med Power BI av Tristan Malherbe  | YouTube-video | 59 min 54 s    |
 | [Kraftfulla tips och verktyg från ägarna av PowerBI.Tips](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Power-Tricks-Tips-and-Tools-from-the-owners-of-PowerBI-Tips/td-p/382848) | I det här särskilda användargruppmötet delar ägarna av PowerBI.Tips och Power BI MVPs, Seth Bauer och Mike Carlo, med sig av en mängd tips och verktyg som de har publicerat på http://PowerBI.Tips de senaste 18 månaderna. Bland annat demonstreras deras temagenerator, hur du lägger till datatyper i Frågeredigeraren och de senaste erbjudandena om Power BI-layouter (du får till exempel en rundtur i deras senaste layout ”Cool Blue”).  | Webbseminarium       | 1 h 7 min 4 sek |
 | [Webbseminarium 2018-09-11: Nya verktyg och nya mallar, bland annat en genomgång av vad som har ändrats i färgen](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/9-11-18-Webinar-New-tools-and-new-templates-including-a/td-p/480220) | Här går Charles Sterling och skaparna av PowerBI.Tips och Microsoft MVPs, Seth Bauer och Mike Carlo, igenom tips och verktyg som de har publicerat på https://PowerBI.Tips de senaste 6 månaderna. Bland annat får du se den senaste tema generatorn, tips och trick och de senaste Power BI-layouterna.  | Webbseminarium       | 53 min 34 s    |

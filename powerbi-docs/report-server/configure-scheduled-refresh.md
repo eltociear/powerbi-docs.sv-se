@@ -5,22 +5,24 @@ author: davidiseminger
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-report-server
-ms.topic: conceptual
-ms.date: 11/01/2017
+ms.topic: how-to
+ms.date: 06/10/2020
 ms.author: davidi
-ms.openlocfilehash: cab64bdcd5707cfd0b1578e82334de4b5c84495c
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 3814c0532d94af3265bd608fc7837df982f9b6c4
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81439973"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85236082"
 ---
 # <a name="how-to-configure-power-bi-report-scheduled-refresh"></a>Konfigurera schemalagd uppdatering av en Power BI-rapport
-Om du vill uppdatera data i Power BI-rapport måste du skapa en plan för schemalagd uppdatering. Detta görs i området *Hantera* i Power BI-rapporten.
+Om du vill uppdatera data i Power BI-rapporten i Power BI-rapportserver så måste du skapa en plan för schemalagd uppdatering. Du skapar den här planen i avsnittet *Hantera* i en Power BI-rapport på rapportservern.
 
 ![Lyckad schemalagd uppdatering på en Power BI-rapport](media/configure-scheduled-refresh/scheduled-refresh-success.png)
 
 ## <a name="configure-data-source-credentials"></a>Konfigurera autentiseringsuppgifter för datakälla
+Du måste ha nödvändiga behörigheter för att skapa en schemalagd uppdateringsplan. Behörigheter definieras i rolldefinitionerna för rapportservern. Se [Rolldefinitioner – fördefinierade roller](https://docs.microsoft.com/sql/reporting-services/security/role-definitions-predefined-roles) i SQL Server Reporting Services-dokumentationen för mer information.
+
 Innan du skapar en datauppdateringsplan, måste du ange autentiseringsuppgifter för **varje datakälla** som används i din Power BI-rapport.
 
 1. Högerklicka på Power BI-rapporten i webbportalen och välj **Hantera**.
@@ -70,7 +72,7 @@ Visa status för en plan för schemalagd uppdatering i webbportalen.
 2. I den vänstra menyn väljer du fliken **Schemalagd uppdatering**.
 3. På sidan **Schemalagd uppdatering** visar den högra kolumnen för de flesta sidan status för en plan.
    
-   | **Status** | **Description** |
+   | **Status** | **Beskrivning** |
    | --- | --- |
    | Ny plan för schemalagd uppdatering |Planen har skapats men har inte körts. |
    | Uppdaterar |Uppdateringsprocessen har startats. |
@@ -78,7 +80,7 @@ Visa status för en plan för schemalagd uppdatering i webbportalen.
    | Uppdaterar data |Uppdatera data i modellen. |
    | Ta bort autentiseringsuppgifterna från modellen |De autentiseringsuppgifter som användes för att ansluta till datakällan från modellen har tagits bort. |
    | Spara modellen till katalogen |Uppdatering av data är klar och den uppdaterade modellen sparas tillbaka till katalogen för rapportserverdatabasen. |
-   | Slutfört: Datauppdatering |Uppdateringen är klar. |
+   | Slutförd: Datauppdatering |Uppdateringen är klar. |
    | Fel: |Ett fel uppstod under uppdatering och visas. |
 
 Webbsidan måste uppdateras för att visa aktuell status. Statusen ändras inte automatiskt.
@@ -88,5 +90,5 @@ Läs mer om att skapa och ändra scheman i [Skapa, ändra och ta bort scheman](h
 
 Information om hur du felsöker schemalagd uppdatering finns i [Felsök schemalagd uppdatering i Power BI Report Server](scheduled-refresh-troubleshoot.md).
 
-Fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 

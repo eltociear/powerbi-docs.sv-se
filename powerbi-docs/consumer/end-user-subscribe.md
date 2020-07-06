@@ -7,15 +7,15 @@ ms.reviewer: cmfinlan
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 05/11/2020
 LocalizationGroup: Common tasks
-ms.openlocfilehash: dfb307a53ac4fd75188965618a08bb4bdee5689b
-ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
+ms.openlocfilehash: e82dde5022bf0ad28d37e0ed9a8ac9553fbbd75d
+ms.sourcegitcommit: a453ba52aafa012896f665660df7df7bc117ade5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "83794178"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85485908"
 ---
 # <a name="subscribe-to-a-report-or-dashboard-in-the-power-bi-service"></a>Prenumerera på en rapport eller en instrumentpanel i Power BI-tjänsten 
 
@@ -93,7 +93,7 @@ En prenumeration går ut om Pro-licensen upphör att gälla, om instrumentpanele
 * För prenumerationer på instrumentpaneler så saknar vissa typer av paneler fortfarande stöd.  Detta gäller: strömningspaneler, videopaneler och paneler för anpassat webbinnehåll.     
 * På grund av storleksbegränsningar i e-posten kan prenumerationer på instrumentpaneler och rapporter som innehåller extremt stora bilder misslyckas.    
 * Power BI pausar automatiskt uppdateringar för datauppsättningar som är associerade med instrumentpaneler och rapporter som inte har besökts på över två månader.  Men om du lägger till en prenumeration på en instrumentpanel eller en rapport pausas den inte även om den förblir obesökt.
-* Kom ihåg att precis som med andra BI-produkter är tiden som du anger för din prenumeration den tid då prenumerationen börjar bearbetas.  När rapportbearbetningen är klar placeras prenumerationen i kö och skickas till e-postmottagarna.  Vi strävar efter att bearbeta och leverera alla prenumerationer så fort som möjligt, men det finns tider med hög efterfrågan då du kan se en längre fördröjning på grund av antalet prenumerationer som kan skickas samtidigt.  De flesta kunderna kommer inte att uppleva fördröjningar på mer än 15 minuter för att bearbeta och skicka sina rapporter, även om det kan ta upp till 30 minuter för vissa tider och klienter med hög användning.  Ingen leveransfördröjning förväntas överstiga 60 minuter från den tidpunkt då prenumerationen schemalades.  Om en kund upplever en längre fördröjning bör de först kontrollera att adressen no-reply-powerbi@microsoft.com vitlistas av deras e-postleverantör.  Om så är fallet bör de kontakta Power BI-supporten.
+* Kom ihåg att precis som med andra BI-produkter är tiden som du anger för din prenumeration den tid då prenumerationen börjar bearbetas.  När rapportbearbetningen är klar placeras prenumerationen i kö och skickas till e-postmottagarna.  Vi strävar efter att bearbeta och leverera alla prenumerationer så fort som möjligt, men det finns tider med hög efterfrågan då du kan se en längre fördröjning på grund av antalet prenumerationer som kan skickas samtidigt.  De flesta kunderna kommer inte att uppleva fördröjningar på mer än 15 minuter för att bearbeta och skicka sina rapporter, även om det kan ta upp till 30 minuter för vissa tider och klienter med hög användning.  Ingen leveransfördröjning förväntas överstiga 60 minuter från den tidpunkt då prenumerationen schemalades.  Om någon kund upplever en så lång fördröjning så bör de först kontrollera att adressen no-reply-powerbi@microsoft.com finns med i listan över säkra avsändare och inte blockeras av e-postleverantören.  Om e-postadressen inte blockeras kontaktar du Power BI-supporten för hjälp.
 
 ## <a name="next-steps"></a>Nästa steg
 

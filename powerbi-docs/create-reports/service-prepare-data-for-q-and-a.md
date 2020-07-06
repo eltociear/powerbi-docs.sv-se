@@ -5,16 +5,16 @@ author: maggiesMSFT
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 05/13/2019
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 102145e8c5b2fd3ad19b6703710405d06da5a93a
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: f7760021966673b93313809a806473b94c7750d3
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83323239"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85218710"
 ---
 # <a name="make-excel-data-work-well-with-qa-in-power-bi"></a>Få Excel-data att fungera med Frågor och svar i Power BI
 Om du är en person som skapar datamodeller eller bygger Excel-arbetsböcker som ska användas med Power BI kan du läsa på...
@@ -40,7 +40,7 @@ Här får du några tips om hur du kan utnyttja Frågor och svar på bästa sät
 
 * Om arbetsboken har en Power Pivot-datamodell, kan du göra ytterligare optimeringar. Läs mer i [Avmystifiera Power BI Q&A, del 2](https://powerbi.microsoft.com/blog/demystifying-power-bi-q-amp-a-part-2/) från vårt interna expertteam när det gäller naturligt språk.
 
-* Öppna datauppsättningen i Power BI Desktop och skapa nya kolumner, skapa beräknade mått, sammanfoga fält för att skapa unika värden, klassificera data efter typ (till exempel datum, strängar, geografi, bilder, URL:er), med mera.
+* Öppna datamängden i Power BI Desktop och skapa nya kolumner, skapa mått, skapa unika värden genom att sammanfoga fält, klassificera data efter typ (t.ex. datum, strängar, geografi, bilder, URL:er) och mycket annat.
 
 ## <a name="next-steps"></a>Nästa steg
 
@@ -49,4 +49,4 @@ Här får du några tips om hur du kan utnyttja Frågor och svar på bästa sät
 - [Förbereda lokala datamängder för Frågor och svar](service-q-and-a-direct-query.md)   
 - [Hämta data (för Power BI)](../connect-data/service-get-data.md)  
 
-Fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)

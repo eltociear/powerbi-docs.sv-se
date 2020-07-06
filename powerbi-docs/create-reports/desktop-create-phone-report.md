@@ -1,112 +1,124 @@
 ---
 title: Optimera rapporter för Power BI-mobilapparna
 description: Lär dig hur du optimerar rapportsidor för Power BI-mobilapparna genom att skapa en stående version av rapporten som är anpassad för telefoner och surfplattor.
-author: maggiesMSFT
+author: paulinbar
 ms.reviewer: ''
+ms.custom: contperfq4
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
-ms.date: 11/18/2019
-ms.author: maggies
+ms.topic: how-to
+ms.date: 06/15/2020
+ms.author: painbar
 LocalizationGroup: Create reports
-ms.openlocfilehash: cab4accfa11a4c92c1672314e2157659ef68f21a
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: b9161813c291a3feb8c01e4201972337f8e96fcb
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83564756"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85221753"
 ---
 # <a name="optimize-power-bi-reports-for-the-mobile-app"></a>Optimera Power BI-rapporter för mobilappen
-Du kan förbättra upplevelsen av att visa rapporter i mobilapparna genom att skapa en stående layout. I Power BI Desktop och i Power BI-tjänsten ordnar du om och ändrar storlek på visuella objekt för att få en optimal upplevelse i stående läge.  
+Mobila användare kan visa alla Power BI-rapportsidor med liggande orientering. Rapportförfattarna kan dock skapa en ytterligare vy som är optimerad för mobila enheter och som visas med stående orientering. Med det här designalternativet, som är tillgängligt i både Power BI Desktop och i Power BI-tjänsten, kan författarna välja och ordna om enbart de visuella objekt som passar för mobilanvändare i farten.
 
-Letar du i stället efter information om visning av rapporter på en mobil enhet? Prova den här snabbstarten [Utforska instrumentpaneler och rapporter i Power BI-mobilappar](../consumer/mobile/mobile-apps-quickstart-view-dashboard-report.md).
+![Mobiloptimerad rapport](media/desktop-create-phone-report/desktop-mobile-optimized-report.png).
 
-![Optimerad rapport i en telefon](media/desktop-create-phone-report/desktop-create-phone-report-1.png)
+Power BI innehåller ett antal funktioner som hjälper dig att skapa mobiloptimerade versioner av dina rapporter:
+* En mobillayoutvy där du kan skapa en mobiloptimerad rapport genom att dra och släppa visuella objekt på en telefonemulators arbetsyta.
+* Visuella objekt och utsnitt som kan optimeras för användning på små, mobila skärmar.
 
-Du kan skapa [responsiva visuella objekt](#optimize-a-visual-for-any-size) och [responsiva utsnitt](#enhance-slicers-to-work-well-in-phone-reports) som anpassar sin storlek överallt. Om du lägger till filter i din rapport visas de automatiskt i den optimerade rapporten.
+Med dessa funktioner blir det enklare att utforma och skapa snygga, interaktiva, mobiloptimerade rapporter.
 
-## <a name="lay-out-a-portrait-version-of-a-report-page"></a>Utforma en stående version av en rapportsida
+## <a name="create-a-mobile-optimized-portrait-version-of-a-report-page"></a>Skapa en mobiloptimerad rapportsida i stående format
 
-När du har skapat en rapport kan du optimera den för telefoner och surfplattor.
+Det första steget är att utforma och skapa rapporten i den vanliga webbvyn. När du har skapat rapporten kan du optimera den för telefoner och surfplattor.
 
-1. Gå till fliken **Visa** och välj **Telefonlayout** i **rapportvyn** i Power BI Desktop.  
-   
-    ![Ikonen Telefonlayout](media/desktop-create-phone-report/desktop-create-phone-report-3.png)
-   
-    Välj **Redigera rapport** > **Mobil layout** i Power BI-tjänsten.
+Om du vill skapa en mobiloptimerad vy öppnar du vyn för mobil layout:
+   * Välj menyfliksområdet **Vy** i Power BI Desktop och välj **Mobil layout**.
+   * Välj **Fler alternativ (...) > Redigera rapport > Mobil layout** i Power BI-tjänsten.
 
-    Du ser en tom arbetsyta som är formad som en telefon. Alla visuella objekt på den ursprungliga rapportsidan visas i fönstret **Visualiseringar** till höger.
+   Du ser en rullningsbar arbetsyta som är formad som en telefon och fönstret **Visualiseringar** som visar alla visuella objekt som finns på den ursprungliga rapportsidan.
 
-1. Om du vill lägga till ett visuellt objekt i telefonlayouten drar du det från fönstret **Visualiseringar** till telefonens arbetsyta.
-   
-    Telefonrapporter använder sig av en rutnätslayout. När du drar visuella objekt till mobilarbetsytan fäster de vid rutnätet.
-   
-    ![Dra och släppa ett visuellt objekt](media/desktop-create-phone-report/desktop-create-phone-report-4.gif)
-   
-    Du kan lägga till några eller alla av huvudrapportsidans visuella objekt på telefonens rapportsida. Du kan lägga till varje visuellt objekt en gång och du behöver inte inkludera alla visuella objekt.
+   ![Mobil layoutvy](media/desktop-create-phone-report/desktop-mobile-layout.png).
 
-1. Du kan ändra storlek på de visuella objekten i rutnätet på samma sätt som med paneler på instrumentpaneler och mobila instrumentpaneler.
-   
-   Telefonens rapportrutnät anpassas till telefoner av olika storlekar, vilket innebär att din rapport kommer att se lika bra ut på telefoner med stora och små skärmar.
-   
-   ![Ändra storlek på ett visuellt objekt](media/desktop-create-phone-report/desktop-create-phone-report-5.gif)
+* Varje visuellt objekt i fönstret **Visualiseringar** visas med sitt namn, så att identifieringen underlättas.
+* Varje visuellt objekt har också en synlighetsindikator. Synlighetsindikatorn för ett visuellt objekt ändras beroende på det visuella objektets synlighetsstatus i webbrapportvyns aktuella tillstånd. Synlighetsindikatorn är användbar när du arbetar med bokmärken.
 
-## <a name="optimize-a-visual-for-any-size"></a>Optimera ett visuellt objekt oavsett storlek
-Du kan ange att de visuella objekten i din instrumentpanel eller rapport ska vara *dynamiska*. Visuella objekt kan ändras dynamiskt så att den maximala mängden data och insikter visas, oavsett skärmstorlek. 
+## <a name="add-visuals-to-the-mobile-layout-canvas"></a>Lägga till visuella objekt på den mobila layoutens arbetsyta
+Om du vill lägga till ett visuellt objekt, så dra det från fönstret **Visualiseringar** till telefonens arbetsyta. När du drar det visuella objektet till arbetsytan fästs det mot rutnätet. Du kan också dubbelklicka på det visuella objektet i visualiseringsfönstret, så läggs det visuella objektet till på arbetsytan.
 
-När ett visuellt objekt får en annan storlek prioriterar Power BI datavyn. Till exempel kan det ta bort utfyllnad och flytta förklaringen överst i det visuella objektet automatiskt, så att objektet förblir informativt även när det blir mindre.
+Du kan lägga till några eller alla av webbrapportsidans visuella objekt till den mobiloptimerade rapportsidan. Du kan lägga till varje visuellt objekt en gång, men du behöver inte inkludera alla visuella objekt.
 
-![Dynamisk storleksändring av visuella objekt](media/desktop-create-phone-report/desktop-create-phone-report-6.gif)
+>[!NOTE]
+> Du kan dra och släppa dolda visuella objekt på arbetsytan. De placeras, men visas inte såvida deras synlighetsstatus inte ändras i den aktuella webbrapportvyn.
 
-Du väljer om du ska aktivera svarstider för varje visuellt objekt. Läs mer om att [optimera visuella objekt](../visuals/power-bi-report-visualizations.md).
+Du kan också lägga visuella objekt över varandra när du skapar interaktiva rapporter med bokmärken, eller skapar snygga rapporter genom att lägga visuella objekt över bilder.
 
-## <a name="considerations-when-creating-phone-report-layouts"></a>Överväganden när man skapar telefonrapportlayouter
-* För rapporter med flera sidor kan du optimera alla sidor eller enbart ett fåtal. 
-* Om du har definierat en bakgrundsfärg för en rapportsida, kommer telefonrapporten ha samma bakgrundsfärg.
-* Du kan inte ändra formateringsinställningarna för enbart telefonen. Formateringen är likadan mellan huvud- och mobillayouter. Exempelvis kommer teckenstorlekarna vara desamma.
-* Om du vill ändra ett visuellt objekt, exempelvis dess formatering, datauppsättning, filter eller andra attribut, återgår du till det vanliga rapportredigeringsläget.
-* I Power BI finns standardrubriker och sidnamn för telefonrapporter i mobilappen. Om du har skapat visuella textobjekt för rubriker och sidnamn i rapporten, kan du fundera på om de ska läggas till eller ej i telefonrapporterna.     
+När du har placerat ett visuellt objekt på arbetsytan kan du ändra storlek på det genom att dra i handtagen som visas på det visuella objektets kant när du markerar objektet. Om du vill behålla det visuella objektets proportioner under storleksändringen, så håll ned **Skift**-tangenten när du drar i storlekshandtagen.
 
-## <a name="remove-a-visual-from-the-phone-layout"></a>Ta bort ett visuellt objekt från telefonlayouten
-* Du tar bort ett visuellt objekt genom att markera **X** i det övre högra fönstret på det visuella objektet på telefonarbetsytan, eller genom att markera det och trycka på **Ta bort**.
-  
-   Om du tar bort det visuella objektet här tas det bara bort från telefonlayoutens arbetsyta. Det visuella objektet och den ursprungliga rapporten påverkas inte.
-  
-   ![Ta bort ett visuellt objekt](media/desktop-create-phone-report/desktop-create-phone-report-7.gif)
+Bilden nedan visar hur visuella objekt dras från fönstret **visualiseringar** och släpps på arbetsytan, och hur några av dem ändrar storlek och överlappas.
 
-## <a name="enhance-slicers-to-work-well-in-phone-reports"></a>Förbättra utsnitt så att de fungerar bra i telefonrapporter
-Utsnitten ger filtrering av rapportdata på arbetsytan. När utformning av utsnitt sker i det vanliga rapportredigeringsläget, kan du ändra vissa utsnittsinställningar för att göra dem mer användbara i telefonrapporter:
+   ![Dra och släpp, ändra storlek på och överlappa virtuella obekt](media/desktop-create-phone-report/desktop-mobile-layout-overlay-resize.gif)
 
-* Bestäm om rapportläsarna ska kunna välja ett eller flera objekt.
-* Placera en ruta runt utsnittet för att göra rapporten enklare att skanna.
-* Gör utsnittet lodrätt, vågrätt eller *dynamiskt*. 
+Telefonens rapportrutnät anpassas till telefoner av olika storlekar, vilket innebär att din rapport kommer att se lika bra ut på telefoner med stora och små skärmar.
 
-Om du gör utsnittet dynamiskt, visar det fler eller färre alternativ när du ändrar storleken eller formen. Det kan vara högt, kort, brett eller smalt. Om du gör det tillräckligt litet, blir det bara en filterikon på rapportsidan. 
+## <a name="remove-visuals-from-the-mobile-layout-canvas"></a>Ta bort visuella objekt från den mobila layoutens arbetsyta
+Ta bort ett visuellt objekt från den mobila layouten genom att klicka på **X** i det visuella objektet övre högra hörn på telefonens arbetsyta, eller markera det visuella objektet och tryck på **Ta bort**.
 
-![Power BI-dynamiskt utsnitt](media/desktop-create-phone-report/desktop-create-phone-report-8.png)
+Du kan ta bort alla visualiseringar från arbetsytan genom att klicka på radergummit i fönstret **Visualisering**.
 
+Om du tar bort visuella objekt från den mobila layoutens arbetsyta tas de enbart bort från arbetsytan. De visuella objekten visas fortfarande i visualiseringsfönstret och den ursprungliga rapporten förblir opåverkad.
+
+## <a name="configure-visuals-and-slicers-for-use-in-mobile-optimized-reports"></a>Konfigurera visuella objekt och utsnitt så att de kan användas i mobiloptimerade rapporter
+
+### <a name="visuals"></a>Visuella objekt
+
+Många virtuella objekt, i synnerhet visuella objekt av diagramtyp, är dynamiska.  Det innebär att de kan ändras dynamiskt så att maximal mängd data och insikter visas, oavsett skärmstorlek.
+
+När ett visuellt objekt ändrar storlek prioriterar Power BI dess data. Det innebär t.ex. att utfyllnad kan tas bort och att förklaringen automatiskt placeras överst i det visuella objektet, så att det förblir informativt även när det förminskas.
+
+![Dynamisk storleksändring av visuella objekt](media/desktop-create-phone-report/desktop-mobile-layout-responsive-visual.gif)
+ 
+Om du av någon anledning vill inaktivera dynamiken kan du göra det i avsnittet **Allmänt** i det visuella objektets formatinställningar.
+
+### <a name="slicers"></a>Utsnitt
+
+Utsnitten ger filtrering av rapportdata på arbetsytan. När du utformar utsnitt i det vanliga rapportredigeringsläget kan du ändra vissa inställningar så att utsnitten blir mer användbara i mobiloptimerade rapporter:
+* Du kan välja att tillåta rapportläsarna att välja ett eller flera objekt.
+* Du kan göra utsnittet lodrätt, vågrätt eller dynamiskt (dynamiska utsnitt måste vara vågräta).
+
+Om du gör utsnittet dynamiskt, visar det fler eller färre alternativ när du ändrar storleken eller formen. Det kan vara högt, kort, brett eller smalt. Om du gör det tillräckligt litet, blir det bara en filterikon på rapportsidan.
+
+![Power BI-dynamiskt utsnitt](media/desktop-create-phone-report/desktop-create-phone-report-8.gif)
+ 
 Läs mer om att [skapa dynamiska utsnitt](power-bi-slicer-filter-responsive.md).
 
-## <a name="publish-a-phone-report"></a>Publicera en telefonrapport
-Om du vill publicera en telefonversion av en rapport [publicerar du huvudrapporten från Power BI Desktop till Power BI-tjänsten](desktop-upload-desktop-files.md). Telefonversionen publiceras samtidigt.
-  
-Läs mer om [delning och behörigheter i Power BI](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md).
+## <a name="publish-a-mobile-optimized-report"></a>Publicera en mobiloptimerad rapport
+Om du vill publicera en mobiloptimerad version av en rapport, så [publicera huvudrapporten från Power BI Desktop till Power BI-tjänsten](desktop-upload-desktop-files.md). Då publiceras den mobiloptimerade versionen samtidigt.
 
-## <a name="view-optimized-and-unoptimized-reports-on-a-phone-or-tablet"></a>Visa optimerade och icke-optimerade rapporter i en telefon eller surfplatta
-I mobilapparna för telefoner hittar Power BI automatiskt optimerade och icke-optimerade telefonrapporter. Om det finns en telefonoptimerad rapport kommer Power BI-telefonappen automatiskt öppna den i telefonrapportläge.
+## <a name="viewing-optimized-and-unoptimized-reports-on-a-phone-or-tablet"></a>Visa optimerade och icke-optimerade rapporter på en telefon eller surfplatta
 
-Om det inte finns någon telefonoptimerad rapport kommer rapporten öppnas i en icke-optimerad liggande vy.  
+I Power BI-mobilappar indikeras mobiloptimerade rapporter med en särskild ikon.
 
-När du är i telefonrapporten kommer rapporten öppnas i en icke-optimerad vy med den ursprungliga rapportlayouten när du ändrar telefonens orientering till liggande, oavsett om rapporten är optimerad eller ej.
+![Ikon för mobiloptimerad rapport](media/desktop-create-phone-report/desktop-create-phone-report-optimized-icon.png)
 
-Om du enbart optimerar vissa sidor kommer läsarna att se ett meddelande i stående vy som visar att rapporten är tillgänglig i liggande vy.
+På telefoner identifierar appen automatiskt huruvida rapporten är mobiloptimerad eller inte.
+* Om det finns en mobiloptimerad rapport öppnar appen automatiskt rapporten i mobiloptimerat läge.
+* Om det inte finns någon mobiloptimerad rapport öppnas rapporten i en icke-optimerad liggande vy.
+
+När du håller en mobiltelefon i liggande läge öppnas rapporten i en icke-optimerad vy med den ursprungliga rapportlayouten, oavsett huruvida rapporten är optimerad eller inte.
+
+Om du optimerar enbart vissa sidor, så uppmanas användarna att växla till liggande vy när de kommer till sidor som inte är optimerade. Om användaren håller mobilen eller surfplattan i sidoläge kan hen se sidan i liggande läge. [Läs mer om att använda Power BI-rapporter som är optimerade för stående läge](../consumer/mobile/mobile-apps-view-phone-report.md).
 
 ![Telefonsidan är inte optimerad](media/desktop-create-phone-report/desktop-create-phone-report-9.png)
 
-Rapportläsarna kan vrida sina telefoner eller surfplattor åt sidan för att se rapporten i liggande läge. Läs mer om att [använda Power BI-rapporter som är optimerade för stående läge](../consumer/mobile/mobile-apps-view-phone-report.md).
+## <a name="considerations-when-creating-mobile-optimized-layouts"></a>Att tänka på när du skapar mobiloptimerade layouter
+* När det gäller rapporter med flera sidor kan du välja att optimera alla sidor eller enbart ett fåtal.
+* Om du har definierat en bakgrundsfärg för en rapportsida får den mobiloptimerade rapporten samma bakgrundsfärg.
+* Du kan inte ändra formatinställningarna enbart för den mobiloptimerade rapporten. Formateringen är likadan för huvudlayouten som för mobillayouten. Teckenstorlekarna är t.ex. desamma.
+* Om du vill ändra ett visuellt objekt, exempelvis dess formatering, datauppsättning, filter eller andra attribut, återgår du till redigeringsläget för webbrapporter.
 
 ## <a name="next-steps"></a>Nästa steg
 * [Skapa en telefonvy av en instrumentpanel i Power BI](service-create-dashboard-mobile-phone-view.md).
 * [Visa Power BI-rapporter som är optimerade för din telefon](../consumer/mobile/mobile-apps-view-phone-report.md).
-* [Skapa dynamiska visuella objekt som optimerats för alla storlekar](../visuals/power-bi-report-visualizations.md).
-* Fler frågor? [Fråga Power BI Community](https://community.powerbi.com/).
+* [Power BI-dokumentation om att skapa rapporter och instrumentpaneler](https://docs.microsoft.com/power-bi/create-reports/).
+* Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/).

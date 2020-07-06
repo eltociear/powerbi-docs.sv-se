@@ -7,14 +7,14 @@ ms.reviewer: rkarlin
 manager: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/18/2019
-ms.openlocfilehash: 2cca057b2a91129745fe739160ffbb3e9e25b6da
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 57f443ec11d918966c25b9d59a1656bb02983fbb
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80113702"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85238042"
 ---
 # <a name="add-interactivity-into-visual-by-power-bi-visuals-selections"></a>Lägga till interaktivitet i visuella objekt med Power BI-markeringar
 
@@ -81,7 +81,7 @@ Objektet har motsvarande metoder för att skapa `selections` för olika typer av
 
 Vi ska se hur urval visas i mappningen av kategoriska datavyer i exempeldatamängden:
 
-| Tillverkare | Typ | Value |
+| Tillverkare | Typ | Värde |
 | - | - | - |
 | Chrysler | Inhemsk bil | 28883 |
 | Chrysler | Inhemsk lastbil | 117131 |
@@ -161,7 +161,7 @@ Och det visuella objektet ska kunna segmentera data från `Manufacturer` och `Ty
 
 När användaren exempelvis väljer `Chrysler` i `Manufacturer`, bör andra visuella objekt visa följande data:
 
-| Tillverkare | Typ | Value |
+| Tillverkare | Typ | Värde |
 | - | - | - |
 | **Chrysler** | Inhemsk bil | 28883 |
 | **Chrysler** | Inhemsk lastbil | 117131 |
@@ -170,7 +170,7 @@ När användaren exempelvis väljer `Chrysler` i `Manufacturer`, bör andra visu
 
 När användaren väljer `Import Car` i `Type` (väljer data i serier), bör de andra visuella objekten visa följande data:
 
-| Tillverkare | Typ | Value |
+| Tillverkare | Typ | Värde |
 | - | - | - |
 | Chrysler | **Importerad bil** | 0 |
 | Ford | **Importerad bil** | 0 |
@@ -188,7 +188,7 @@ De visuella datakorgarna måste fyllas i.
 Det finns `Manufacturer` som kategori (kolumner), `Type` som serier (rader) och `Value` som `Values` för serier.
 
 > [!NOTE]
-> `Values` krävs för serier eftersom mappningen av datavyer gör att det visuella objektet förväntar sig att `Values` grupperas enligt `Rows`-data.
+> `Values` krävs för serier eftersom enligt datavymappningen förväntar sig det visuella objektet att `Values` grupperas enligt `Rows`-data.
 
 #### <a name="create-selections-for-categories"></a>Skapa markeringar för kategorier
 

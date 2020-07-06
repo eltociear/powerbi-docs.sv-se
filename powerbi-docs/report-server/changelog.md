@@ -7,13 +7,13 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/31/2020
-ms.openlocfilehash: 0391f0f2e4340b01c1f1ad7a3bce860487daabc9
-ms.sourcegitcommit: 49daa8964c6e30347e29e7bfc015762e2cf494b3
+ms.date: 06/30/2020
+ms.openlocfilehash: 0339dd4a8fa7b429db01715060bfd146db115e46
+ms.sourcegitcommit: e8b12d97076c1387088841c3404eb7478be9155c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84272665"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85782738"
 ---
 # <a name="change-log-for-power-bi-report-server"></a>Ändringslogg för Power BI-rapportservern
 
@@ -21,9 +21,15 @@ Den här ändringsloggen är avsedd för Power BI-rapportservern och visar nya o
 
 Detaljerad information om nya funktioner finns [Nyheter i Power BI-rapportserver](whats-new.md). 
 
-
 ## <a name="may-2020"></a>Maj 2020
 - **Power BI-rapportserver**
+    - *Version: 1.8.7485.35104 (version 15.0.1103.234), utgiven: 30 juni 2020*
+        - Felkorrigeringar
+            - Ett problem har åtgärdats avseende utskalningsscenarier där rapporter inte reflekterar ändringar direkt på servern efter uppladdning.
+    - *Version: 1.8.7468.41510 (version 15.0.1103.232), utgiven: 15 juni 2020*
+        - Felkorrigeringar
+            - Ett problem har åtgärdats där rapporter inte reflekterar ändringar direkt på servern efter uppladdning.
+            - Ett problem har åtgärdats där uppdateringen misslyckades när fuzzy-matchning användes vid sammanslående av frågor.
     - *Version: 1.8.7450.37410 (version 15.0.1103.227), utgiven: 27 maj 2020*
          - Funktioner
             -  Stöd har lagts till för anpassningsbar storlek på kataloganslutningspool (se [inställningen MaxCatalogConnectionPoolSizePerProcess](https://docs.microsoft.com/sql/reporting-services/report-server/rsreportserver-config-configuration-file?view=sql-server-ver15#bkmk_service) för mer information).

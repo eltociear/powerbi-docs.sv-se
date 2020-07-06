@@ -7,15 +7,15 @@ featuredvideoid: et_MLSL2sA8
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 03/11/2020
+ms.date: 06/22/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 891a9b1a5afee26bdb2d6b363ccd2cee5f2461cb
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 111b2b5fe0ae4b341816becdb4baf0b96e057cdd
+ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79377294"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85354511"
 ---
 # <a name="view-data-insights-on-dashboard-tiles-with-power-bi"></a>Visa datainsikter på instrumentpanelens paneler med Power BI
 
@@ -61,9 +61,11 @@ När du har en insikt öppen, kan fortsätta att utforska.
 Om du vill återgå till din rapport väljer du **Avsluta Fokusläge** i det övre vänstra hörnet.
 
 ## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
-- **Visa insikter** fungerar inte med alla typer av paneler på instrumentpanelen. Det är till exempel inte tillgängligt för visuella Power BI-objekt.<!--[Power BI visuals](end-user-custom-visuals.md)-->
+- **Visa insikter** fungerar inte med alla typer av paneler på instrumentpanelen. Det är till exempel inte tillgängligt för anpassade visuella Power BI-objekt.<!--[Power BI visuals](end-user-custom-visuals.md)-->
 
 
 ## <a name="next-steps"></a>Nästa steg
+
+Kör insikter om visuella rapportobjekt [med hjälp av analysfunktionen](end-user-analyze-visuals.md)    
 Lär dig mer om [tillgängliga typer av Quick Insights](end-user-insight-types.md)
 
