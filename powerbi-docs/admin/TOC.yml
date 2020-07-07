@@ -76,13 +76,15 @@
           href: desktop-admin-sign-in-form.md
         - name: Dataskydd
           items:
-            - name: Översikt över dataskydd
-              href: service-security-data-protection-overview.md
-            - name: Aktivera känslighetsetiketter för data
+            - name: Känslighetsetiketter i Power BI
+              href: service-security-sensitivity-label-overview.md
+            - name: Aktivera känslighetsetiketter
               href: service-security-enable-data-sensitivity-labels.md
+            - name: Så här använder du känslighetsetiketter
+              href: service-security-apply-data-sensitivity-labels.md
             - name: Använda Microsoft Cloud App Security med Power BI
               href: service-security-using-microsoft-cloud-app-security-controls.md
-            - name: Dataskyddsmåttrapport
+            - name: Skyddsmåttrapport
               href: service-security-data-protection-metrics-report.md
         - name: Säkerhet på radnivå
           href: service-admin-rls.md
