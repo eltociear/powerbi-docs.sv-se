@@ -12,7 +12,6 @@ ms.custom: licensing support
 LocalizationGroup: Get started
 ms.openlocfilehash: 033ddd99061bde70070061fab4e19250f5fb4591
 ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
-ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 06/25/2020
 ms.locfileid: "85354465"
@@ -143,7 +142,7 @@ Om du ändå inte kan registrera dig och är villig att genomföra en mer avance
 **Power BI-inloggningen känner inte igen ditt lösenord**  
 
 **Lösning**    
-Ibland tar det några försök. Om du gör ett nytt försök med ditt lösenord flera gånger och du fortfarande inte kan logga in, kan du prova att köra webbläsaren i Incognito-läge (Chrome) eller InPrivate (Edge).
+Ibland tar det några försök. Om du gör ett nytt försök med ditt lösenord flera gånger och du fortfarande inte kan logga in, kan du prova att köra webbläsaren i Incognito-läge (Chrome) eller InPrivate (Microsoft Edge).
 
 ## <a name="next-steps"></a>Nästa steg
 
