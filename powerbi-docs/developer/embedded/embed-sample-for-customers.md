@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 06/02/2020
-ms.openlocfilehash: 75b880876a08a78d822fc1203de40a7bb8311afe
-ms.sourcegitcommit: f05f7b0112a8ec2dce60839ea5f922eda3cc776c
+ms.openlocfilehash: bb693b1b46e193a87365537492c83aa2eb8a479a
+ms.sourcegitcommit: b2c60781da6f756102f91346b35a7651fb5dcda3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84337083"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86092249"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-customers"></a>Självstudie: Bädda in Power BI-innehåll i ett program för dina kunder
 
@@ -428,9 +428,12 @@ I tabellen nedan beskrivs resurser och begränsningar för respektive SKU. När 
 
 ### <a name="development-testing"></a>Utvecklingstestning
 
-Inbäddningstoken med Pro-licenser är avsedda för testning under utveckling, så antalet inbäddningstoken ett Power BI-huvudkonto eller tjänstens huvudnamn kan generera är begränsat. En dedikerad kapacitet krävs för inbäddning i en produktionsmiljö. Det finns ingen gräns för att hur många inbäddningstoken du kan generera med en dedikerad kapacitet. Gå till [Tillgängliga funktioner](https://docs.microsoft.com/rest/api/power-bi/availablefeatures/getavailablefeatures) för att kontrollera användningsvärdet som anger aktuell inbäddad användning i procent. Användningsmängden baseras per huvudkonto.
+Vid utvecklingstestning kan du använda inbäddade utvärderingstokens med en Pro-licens. Vid inbäddning i produktionsmiljö måste en dedikerad kapacitet användas.
 
-För mer information, se [White paper om kapacitetsplanering för inbäddad analys](https://aka.ms/pbiewhitepaper).
+Antalet inbäddade utvärderingstokens som ett huvudnamn för Power BI-tjänsten eller ett huvudkonto kan generera är begränsat. Använd API:et [Tillgängliga funktioner](https://docs.microsoft.com/rest/api/power-bi/availablefeatures/getavailablefeatures) för att kontrollera procentandelen för den nuvarande inbäddade användningen. Användningsmängden visas per huvudnamn eller huvudkonto för tjänsten.
+
+Om dina inbäddade tokens tar slut under testningen, måste du köpa en Power BI Embedded- eller Premium-[kapacitet](embedded-capacity.md). Det finns ingen gräns för att hur många inbäddade tokens du kan generera med en dedikerad kapacitet.
+
 
 ### <a name="assign-a-workspace-to-a-dedicated-capacity"></a>Tilldela en arbetsyta till en dedikerad kapacitet
 

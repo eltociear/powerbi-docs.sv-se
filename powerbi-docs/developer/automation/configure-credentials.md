@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.date: 06/23/2020
-ms.openlocfilehash: ed35775ac077be7c45807b950530e4e1277d5ac3
-ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
+ms.openlocfilehash: dd85f44057c0e4069a903293ec162028b1cbd66e
+ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85355017"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86034070"
 ---
 # <a name="configure-credentials-programmatically-for-power-bi"></a>Konfigurera autentiseringsuppgifter programmässigt för Power BI
 
@@ -49,13 +49,16 @@ Följ stegen i den här artikeln för att konfigurera autentiseringsuppgifter pr
 
     ---
 
-2. Anropa [Hämta gateway](https://docs.microsoft.com/rest/api/power-bi/gateways/getgateways) för att hämta den offentliga nyckeln för gatewayen.
+    >[!NOTE]
+    >Om du använder molndatakällor ska du inte följa de kommande stegen i det här avsnittet. Ange autentiseringsuppgifterna med hjälp av det gateway-ID och datakälls-ID som erhölls i steg 1 genom att anropa [Uppdatera datakälla](https://docs.microsoft.com/rest/api/power-bi/gateways/updatedatasource). 
+
+3. Anropa [Hämta gateway](https://docs.microsoft.com/rest/api/power-bi/gateways/getgateways) för att hämta den offentliga nyckeln för gatewayen.
 
     ```csharp
     var gateway = pbiClient.Gateways.GetGatewayById(datasource.GatewayId);
     ```
 
-3. Kryptera autentiseringsuppgifterna.
+4. Kryptera autentiseringsuppgifterna.
 
     # <a name="net-sdk-v3"></a>[.NET SDK v3](#tab/sdk3)
 
@@ -73,7 +76,7 @@ Följ stegen i den här artikeln för att konfigurera autentiseringsuppgifter pr
 
     ---  
 
-4. Skapa information om autentiseringsuppgifter med krypterade autentiseringsuppgifter.
+5. Skapa information om autentiseringsuppgifter med krypterade autentiseringsuppgifter.
 
     # <a name="net-sdk-v3"></a>[.NET SDK v3](#tab/sdk3)
 
@@ -101,7 +104,7 @@ Följ stegen i den här artikeln för att konfigurera autentiseringsuppgifter pr
 
     ---
 
-5. Anropa [Uppdatera datakälla](https://docs.microsoft.com/rest/api/power-bi/gateways/updatedatasource) för att ange autentiseringsuppgifter.
+6. Anropa [Uppdatera datakälla](https://docs.microsoft.com/rest/api/power-bi/gateways/updatedatasource) för att ange autentiseringsuppgifter.
 
     ```csharp
     pbiClient.Gateways.UpdateDatasource(gatewayId, datasourceId, credentialDetails);

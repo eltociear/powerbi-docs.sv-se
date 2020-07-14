@@ -1,25 +1,27 @@
 ---
-title: Kom igång med Power BI-tjänsten
+title: 'Självstudie: Kom igång med att skapa i Power BI-tjänsten'
 description: Kom igång med Power BI-tjänsten online (app.powerbi.com)
 author: maggiesMSFT
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: tutorial
-ms.date: 09/05/2019
+ms.date: 07/02/2020
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 67bb913f582b372d2c9ffcbe72a59aeade143fac
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: ee3919be08cfb2af2ad0e82e9f0f35b5d13147c6
+ms.sourcegitcommit: 20cfd157af587b3910a2b6deec9518dca4105d71
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83358770"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85943563"
 ---
-# <a name="tutorial-get-started-with-the-power-bi-service"></a>Självstudie: Kom igång med Power BI-tjänsten
+# <a name="tutorial-get-started-creating-in-the-power-bi-service"></a>Självstudie: Kom igång med att skapa i Power BI-tjänsten
 Den här självstudien är en introduktion till några av funktionerna i *Power BI-tjänsten*. I självstudien ansluter du till data, skapar en rapport och en instrumentpanel och ställer frågor om dina data. Du kan göra mycket mer i Power BI-tjänsten. Den här självstudien är bara en aptitretare. Om du vill förstå hur Power BI-tjänsten passar ihop med andra Power BI-erbjudanden rekommenderar vi att du läser [Vad är Power BI](power-bi-overview.md).
 
-![Startsida för Power BI-tjänsten](media/service-get-started/power-bi-service-get-started-home.png)
+Är du *rapportläsare* snarare än rapportskapare? [Navigera i Power BI-tjänsten](../consumer/end-user-experience.md) är ett bra ställe att börja.
+
+:::image type="content" source="media/service-get-started/power-bi-service-rearranged-dashboard.png" alt-text="Skärmbild av instrumentpanelen Financial Sample.":::
 
 I den här självstudien går du igenom följande steg:
 
@@ -30,180 +32,193 @@ I den här självstudien går du igenom följande steg:
 > * Använd dessa data för att skapa visualiseringar och spara dem som en rapport.
 > * Skapa en instrumentpanel genom att fästa paneler från rapporten.
 > * Lägg till ytterligare visualiseringar på instrumentpanelen med verktyget för frågor och svar på naturligt språk.
-> * Ändra storlek på, ordna om och interagera med panelerna på instrumentpanelen.
+> * Ändra storlek på, ordna om och redigera information för panelerna på instrumentpanelen.
 > * Rensa resurser genom att ta bort datamängden, rapporten och instrumentpanelen.
 
-> [!TIP]
-> Föredrar du en kostnadsfri självstudiekurs istället? [Registrera dig för vår kurs Analysera och visualisera data på EdX](https://aka.ms/edxpbi).
-
 ## <a name="sign-up-for-the-power-bi-service"></a>Registrera dig för Power BI-tjänsten
-Om du inte har något Power BI-konto [registrerar du dig för en kostnadsfri Power BI Pro-utvärderingsversion](https://app.powerbi.com/signupredirect?pbi_source=web) innan du börjar.
-
-När du har ett konto anger du *app.powerbi.com* i webbläsaren för att öppna Power BI-tjänsten. 
+Du behöver en Power BI Pro-licens för att skapa innehåll i Power BI. Om du inte har något Power BI-konto [registrerar du dig för en kostnadsfri Power BI Pro-utvärderingsversion](https://app.powerbi.com/signupredirect?pbi_source=web) innan du börjar.
 
 ## <a name="step-1-get-data"></a>Steg 1: Hämta data
 
-När du vill skapa en Power BI-rapport börjar du ofta i Power BI Desktop. Den här gången ska vi börja från början och skapa en rapport i Power BI-tjänsten.
+När du vill skapa en Power BI-rapport börjar du ofta i Power BI Desktop. Power BI Desktop ger mer kraft. Du kan transformera, forma och modellera data innan du börjar designa rapporten. Den här gången börjar vi dock från början med att skapa en rapport i Power BI-tjänsten.
 
-I den här självstudien får vi data från en CSV-fil. Vill du hänga på? [Ladda ned CSV-filen med finansiella exempel](https://go.microsoft.com/fwlink/?LinkID=521962).
+I den här självstudien hämtar vi data från en enkel Microsoft Excel-fil. Vill du hänga på? [Ladda ned filen Financial Sample](https://go.microsoft.com/fwlink/?LinkID=521962).
 
-1. [Logga in till Power BI](https://www.powerbi.com/). Har du inte något konto? Inga problem, du kan registrera dig för en kostnadsfri utvärderingsversion.
-2. Power BI öppnas i webbläsaren. Välj **Hämta data** längst ned i navigeringsfönstret.
+1. Börja med att öppna Power BI-tjänsten (app.powerbi.com) i webbläsaren. 
+
+    Har du inte något konto? Inga problem – du kan [registrera dig för en kostnadsfri utvärderingsversion av Power BI Pro](https://app.powerbi.com/signupredirect?pbi_source=web)
+
+1. Välj **Min arbetsyta** i navigeringsfönstret.
+
+1. I **Min arbetsyta** väljer du **Ny** > **Ladda upp en fil**.
 
     Sidan **Hämta data** öppnas.   
 
-3. Under avsnittet **Skapa nytt innehåll** väljer du **Filer**. 
+3. I avsnittet **Skapa nytt innehåll** ser du till att **Filer** är valt och väljer sedan den plats där du skapade Excel-filen.
    
-   ![Hämta filer](media/service-get-started/gs1.png)
-4.  Välj **Lokal fil**.
-   
-    ![Skärmen Hämta Data > Filer](media/service-get-started/power-bi-service-get-data-local-file.png)
+    :::image type="content" source="media/service-get-started/power-bi-service-get-data-local-file.png" alt-text="Skärmbild av fönstret Skapa nytt innehåll > Filer.":::
 
 5. Bläddra till filen på datorn och välj **Öppna**.
 
 5. I den här självstudien väljer vi **Importera** för att lägga till Excel-filen som en datauppsättning som vi sedan kan använda för att skapa rapporter och instrumentpaneler. Om du väljer **Ladda upp** laddas hela Excel-arbetsboken upp till Power BI, där du kan öppna och redigera den i Excel Online.
    
-   ![Välja importera](media/service-get-started/power-bi-import.png)
-6. När din datauppsättning är klar väljer du **Datauppsättningar** och sedan **Skapa rapport** bredvid datauppsättningen **Finansiellt exempel** för att öppna rapportredigeraren. 
+   :::image type="content" source="media/service-get-started/power-bi-import.png" alt-text="Skärmbild av valet av Importera.":::
+6. När datamängden är redo väljer du **Fler alternativ (...)** intill datamängden Financial Sample och väljer sedan **Skapa rapport**.
+1. Öppna rapportredigeraren. 
 
-    ![Lista med datauppsättningar](media/service-get-started/power-bi-service-datasets.png)
+    :::image type="content" source="media/service-get-started/power-bi-service-datasets.png" alt-text="Skärmbild av Allt innehåll > Skapa rapport.":::
 
     Rapportarbetsytan är tom. På höger sida visas fönstren **Filter**, **Visualiseringar** och **Fält**.
 
-    ![Tom rapportarbetsyta](media/service-get-started/power-bi-service-blank-report.png)
+    :::image type="content" source="media/service-get-started/power-bi-service-blank-report.png" alt-text="Skärmbild av en tom rapportarbetsyta.":::
 
-7. Observera att alternativet **Läsvy** finns i det övre navigeringsfönstret. Eftersom du har det här alternativet innebär det att du för närvarande är i Redigeringsvy. Ett bra sätt för dig att bekanta dig med rapportredigeraren är att [ta en rundtur](../create-reports/service-the-report-editor-take-a-tour.md).
+    > [!TIP]
+    > Välj den globala navigeringsknappen i det övre vänstra hörnet för att dölja navigeringsfönstret. På så sätt får arbetsyta mer plats.
+    >
+    >:::image type="content" source="media/service-get-started/power-bi-global-nav-button.png" alt-text="Den globala navigeringsknappen.":::
+    >
 
-    ![Alternativet Läsvy](media/service-get-started/power-bi-service-reading-view.png)
+7. Du är för närvarande i redigeringsvyn. Observera alternativet **Läsvy** i menyraden. 
 
-    I redigeringsvyn kan du skapa och ändra dina rapporter eftersom du är *ägare* till rapporten. Det innebär att du är *skapare*. När du delar din rapport med kollegor kan de bara interagera med rapporten i läsvyn. Kollegorna är alltså *konsumenter*. Lär dig mer om [Läsvy och Redigeringsvy](../consumer/end-user-reading-view.md).
+    :::image type="content" source="media/service-get-started/power-bi-service-reading-view.png" alt-text="Skärmbild av alternativet Läsvy.":::
 
+    I redigeringsvyn kan du ändra rapporter eftersom du är *ägare* till och *skapare* av rapporten. När du delar rapporten med kollegor kan de ofta bara interagera med rapporten i läsvyn. De är *konsumenter* av rapporter i din **Min arbetsyta**. 
 
 ## <a name="step-2-create-a-chart-in-a-report"></a>Steg 2: Skapa ett diagram i en rapport
-Nu när du har anslutit till dina data kan du börja utforska omgivningarna.  När du har hittat något intressant, kan du skapa en instrumentpanel för att övervaka det och se hur det ändras med tiden. Nu ska vi se hur det fungerar.
+Nu när du har anslutit till dina data kan du börja utforska omgivningarna. När du har hittat något intressant kan du spara den på rapportarbetsytan. Sedan kan du fästa den på en instrumentpanel för att övervaka den och se hur den ändras med tiden. Men en sak i taget.
     
-1. I rapportredigeraren börjar vi i fönstret **Fält** till höger på sidan för att skapa en visualisering. Markera kryssrutorna **Bruttoförsäljning** och **Datum**.
+1. I rapportredigeraren börjar du i fönstret **Fält** till höger på sidan för att skapa en visualisering. Välj fältet **Gross Sales** (Bruttoförsäljning) och sedan fältet **Date** (Datum).
    
-   ![Fältlista](media/service-get-started/power-bi-service-fields-pane-selected.png)
+   :::image type="content" source="media/service-get-started/power-bi-service-fields-pane-selected.png" alt-text="Skärmbild av listan Fält.":::
 
-    Power BI analyserar informationen och skapar en visualisering. Om du markerade **Datum** först visas en tabell. Om du markerade **Bruttoförsäljning** först visas ett stapeldiagram. 
+    Power BI analyserar informationen och skapar en visualisering för kolumndiagram. 
 
-2. Växla till ett annat sätt att visa dina data. Nu visar vi dessa data som ett linjediagram. Välj ikonen för linjediagram i fönstret **Visualiseringar**.
-   
-   ![Rapportredigeraren med linjediagram valt](media/service-get-started/power-bi-service-select-line-chart.png)
+    > [!NOTE]
+    > Om du valde fältet **Date** först i stället för **Gross Sales** visas en tabell. Det gör inget! Vi ska ändra visualiseringen i nästa steg.
 
-3. Det här diagrammet ser intressant ut så vi *fäster* det på en instrumentpanel. Hovra över visualiseringen och välj fästikonen. När du fäster visualiseringen sparas den på instrumentpanelen och hålls uppdaterad så att du kan se det senaste värdet direkt.
-   
-   ![Fästikon](media/service-get-started/power-bi-service-pin-visual.png)
+    Intill vissa fält finns sigmasymboler eftersom Power BI identifierade att de innehåller numeriska värden.
 
-4. Eftersom den här rapporten är ny uppmanas du att spara den innan du kan fästa en visualisering på instrumentpanelen. Ge rapporten ett namn (till exempel *Försäljning över tid*) och välj sedan **Spara**. 
+    :::image type="content" source="media/service-get-started/power-bi-sigma-fields.png" alt-text="Fält med sigmasymboler.":::
 
-5. Välj **Ny instrumentpanel** och ge det namnet *Finansiellt exempel för självstudie*. 
+2. Vi växlar till ett annat sätt att visa dessa data. Linjediagram är bra visuella objekt för att visa värden över tid. Välj ikonen för **linjediagram** i fönstret **Visualiseringar**.
    
-   ![Namnge rapporten](media/service-get-started/power-bi-pin.png)
+   :::image type="content" source="media/service-get-started/power-bi-service-select-line-chart.png" alt-text="Skärmbild av rapportredigeraren med linjediagram valt.":::
+
+3. Det här diagrammet ser intressant ut så vi *fäster* det på en instrumentpanel. Hovra över visualiseringen och välj fästikonen.
    
-6. Välj **fäst**.
+   :::image type="content" source="media/service-get-started/power-bi-service-pin-visual.png" alt-text="Ögonblicksbild av ikonen Fäst.":::
+
+4. Eftersom den här rapporten är ny uppmanas du att spara den innan du kan fästa en visualisering på instrumentpanelen. Ge rapporten ett namn (till exempel *Financial Sample report*) och **Spara** sedan. 
+
+    Nu tittar du på rapporten i läsvyn. 
+
+6. Välj ikonen **Fäst** igen.
+ 
+5. Välj **Ny instrumentpanel** och ge den till exempel namnet *Financial Sample dashboard*. 
    
+   :::image type="content" source="media/service-get-started/power-bi-pin.png" alt-text="Skärmbild av namngivning av instrumentpanelen.":::
+  
     Ett meddelande (nära det övre högra hörnet) anger att visualiseringen har lagts till som en panel på instrumentpanelen.
    
-    ![Dialogrutan Fäst på instrumentpanelen](media/service-get-started/power-bi-pin-success.png)
+    :::image type="content" source="media/service-get-started/power-bi-pin-success.png" alt-text="Skärmbild av dialogrutan Fäst på instrumentpanelen.":::
+
+    Nu när du har fäst visualiseringen lagras den på instrumentpanelen. Data hålls uppdaterade så att du snabbt kan spåra det senaste värdet. Om du däremot ändrar visualiseringstypen i rapporten ändras inte visualiseringen på instrumentpanelen.
 
 7. Välj **Gå till instrumentpanelen** för att se den nya instrumentpanelen med linjediagrammet som du fäste som en panel på instrumentpanelen. 
    
-   ![Instrumentpanel med fäst visualisering](media/service-get-started/power-bi-service-dashboard-tile.png)
+   :::image type="content" source="media/service-get-started/power-bi-service-dashboard-tile.png" alt-text="Skärmbild av instrumentpanel med en fäst visualisering.":::
    
-8. Välj den nya panelen på instrumentpanelen för att gå tillbaka till rapporten. Power BI visar rapporten i läsvyn. 
+8. Välj den nya panelen på instrumentpanelen. Power BI visar rapporten i läsvyn.
 
-1. Du kan gå tillbaka till redigeringsvyn genom att välja **Fler alternativ** (...) i det översta navigeringsfältet > **Redigera**. När du är i redigeringsvyn kan du fortsätta att utforska och fästa paneler.
+1. Du kan gå tillbaka till redigeringsvyn genom att välja **Fler alternativ** (...) i menyraden > **Redigera**.
 
-    ![Välj Redigera för att redigera rapporten](media/service-get-started/power-bi-service-edit-report.png)
+    :::image type="content" source="media/service-get-started/power-bi-service-edit-report.png" alt-text="Skärmbild av val av Redigera för att redigera rapporten.":::
+
+    När du är i redigeringsvyn kan du fortsätta att utforska och fästa paneler.
 
 ## <a name="step-3-explore-with-qa"></a>Steg 3: Utforska med frågor och svar
 
-Om du vill utforska dina data snabbt kan du prova med att ställa en fråga i rutan Frågor och svar. Frågor och svar skapar frågor om dina data på ett naturligt språk. Rutan Frågor och svar finns längst upp (**Ställ en fråga om dina data**). I en rapport finns den i det översta navigeringsfönstret (**Ställ en fråga**).
+Om du vill utforska dina data snabbt kan du prova med att ställa en fråga i rutan Frågor och svar. Med Frågor och svar kan du ställa frågor på naturligt språk om dina data. På en instrumentpanel finns rutan Frågor och svar längst upp (**Ställ en fråga om dina data**) under menyraden. I en rapport finns den i den översta menyraden (**Ställ en fråga**).
 
-1. Om du vill gå tillbaka till instrumentpanelen väljer du **Min arbetsyta** i det svarta **Power BI**-fältet.
+1. Om du vill gå tillbaka till instrumentpanelen väljer du **Min arbetsyta** i det svarta **Power BI**-rubrikfältet.
 
-    ![Gå tillbaka till Min arbetsyta](media/service-get-started/power-bi-service-go-my-workspace.png)
+    :::image type="content" source="media/service-get-started/power-bi-service-go-my-workspace.png" alt-text="Skärmbild av Gå tillbaka till Min arbetsyta.":::
 
-1. Välj din instrumentpanel på fliken **Instrumentpaneler**.
+1. I **Min arbetsyta** väljer du din instrumentpanel.
 
-    ![Välj din instrumentpanel](media/service-get-started/power-bi-service-dashboard-tab.png)
+    :::image type="content" source="media/service-get-started/power-bi-service-dashboard-tab.png" alt-text="Skärmbild av val av din instrumentpanel.":::
 
-1. Välj **Ställ en fråga om dina data**. Frågor och svar visar automatiskt ett antal förslag.
+1. Välj **Ställ en fråga om dina data**. Frågor och svar visar automatiskt ett antal förslag. 
 
-    ![Frågor och svar-arbetsyta](media/service-get-started/power-bi-service-new-qanda.png)
+    :::image type="content" source="media/service-get-started/power-bi-service-new-qanda.png" alt-text="Skärmbild av arbetsyta för vanliga frågor och svar.":::
 
     > [!NOTE]
     > Om du inte kan se förslagen aktiverar du **Nya frågor och svar-upplevelsen**.
 
-2. Några av förslagen returnerar ett enda värde. Välj till exempel **maximal försäljning**.
+    :::image type="content" source="media/service-get-started/power-bi-new-qna-experience.png" alt-text="Skärmbild av aktivering av den nya upplevelsen för vanliga frågor och svar.":::
+
+1. Några förslag returnerar ett enskilt värde. Välj exempelvis **what is the average cog** (vad är genomsnittligt cog).
 
     Frågor och svar söker efter svar och visar dem i form av en *kortvisualisering*.
 
-    ![Kort för maximal försäljning](media/service-get-started/power-bi-service-qanda-maximum-sale.png)
+3. Välj **Fäst visuellt objekt** och fäst den här visualiseringen på instrumentpanelen Financial Sample.
 
-3. Välj fästikonen ![Fästikon](media/service-get-started/pbi_pinicon.png) för att visa den här visualiseringen på instrumentpanelen Finansiellt exempel för självstudie.
+    :::image type="content" source="media/service-get-started/power-bi-qna-pin-tile.png" alt-text="Skärmbild av det visuella objekt som fästs.":::
 
-1. Rulla ned i listan **Frågor för att komma igång** och välj **average cog for each month** (genomsnittlig kostnad för sålda varor för varje månad). 
+1. Gå tillbaka till Vanliga frågor och svar och välj **Visa alla förslag**.
+1. Välj **total profit by country** (total vinst per land). 
 
-    ![Genomsnittlig kostnad för sålda varor för varje månad](media/service-get-started/power-bi-service-qanda-average-cog.png)
+    :::image type="content" source="media/service-get-started/power-bi-qna-total-profit-country.png" alt-text="Skärmbild av total vinst per land.":::
 
-1. Fäst även det liggande stapeldiagrammet på instrumentpanelen **Finansiellt exempel för självstudie**.
+1. Fäst kartan på instrumentpanelen Financial Sample också.
 
-1. Placera markören efter *by month* (efter månad) i rutan Frågor och svar och skriv *as line* (som linje). Välj **linje (Visualiseringstyp)** . 
+1. På instrumentpanelen väljer du den karta som du just fäste. Ser du hur det gör att Vanliga frågor och svar öppnas igen? 
+1. Placera markören efter *by country* (efter land) i rutan Frågor och svar och skriv *as bar* (som stapel). Power BI skapar ett stapeldiagram med resultatet.
 
-    ![Diagramvisualisering som linje](media/service-get-started/power-bi-service-qanda-as-line.png)
+    :::image type="content" source="media/service-get-started/power-bi-qna-profit-country-bar.png" alt-text="Skärmbild av en visualisering av ett stapeldiagram.":::
+
+1. Fäst stapeldiagrammet på instrumentpanelen Financial Sample också.
 
 4. Välj **Avsluta frågor och svar** för att återgå till instrumentpanelen, där du kan se de nya panelerna du skapade. 
 
-   ![Instrumentpanel med fäst diagram](media/service-get-started/power-bi-service-dashboard-qna.png)
+   :::image type="content" source="media/service-get-started/power-bi-service-dashboard-qna.png" alt-text="Skärmbild av instrumentpanel med visuella objekt för Vanliga frågor och svar som fästs.":::
 
-   Du kan se att panelen fortfarande är ett stapeldiagram, trots att du ändrade diagrammet till ett linjediagram. Det beror på att panelen var ett stapeldiagram när du fäste den. 
+   Du kan se att panelen fortfarande är en karta, trots att du ändrade kartan till ett linjediagram i Vanliga frågor och svar. Det beror på att panelen var en karta när du fäste den. 
 
 ## <a name="step-4-reposition-tiles"></a>Steg 4: Flytta paneler
 
-Instrumentpanelen är bred. Vi kan ordna om panelerna så att vi kan utnyttja instrumentpanelens utrymme på ett bättre sätt.
+Vi kan ordna om panelerna så att vi kan utnyttja instrumentpanelens utrymme på ett bättre sätt.
 
 1. Dra i det nedre högra hörnet av panelen med linjediagrammet *Bruttoförsäljning* uppåt tills den fäster på plats i samma höjd som panelen Försäljning och släpp sedan panelen.
 
-    ![Ändra storlek på panelen](media/service-get-started/power-bi-service-resize-tile.png)
+    :::image type="content" source="media/service-get-started/power-bi-service-resize-tile.png" alt-text="Skärmbild av ändring av storleken på panelen.":::
 
     Nu har de två panelerna samma höjd.
 
-    ![Ändra storlek på panelen](media/service-get-started/power-bi-service-resized-tile.png)
+1. Välj **Fler alternativ (...)** för panelen Average of COGS (Genomsnitt för COGS) > **Redigera information**. 
 
-1. Dra panelen med stapeldiagrammet *Genomsnittlig kostnad för sålda varor* tills den passar under linjediagrammet *Bruttoförsäljning*.
+    :::image type="content" source="media/service-get-started/power-bi-tile-edit-details.png" alt-text="Skärmbild av menyn Fler alternativ för en panel.":::
+
+1. I rutan **Rubrik** skriver du *Average Cost of Goods Sold* > **Tillämpa**.
+
+    :::image type="content" source="media/service-get-started/power-bi-tile-details-dialog.png" alt-text="Skärmbild av dialogrutan Redigera information.":::
+
+1. Ordna om de andra visuella objekten så att de passar ihop.
 
     Det ser bättre ut.
 
-    ![Instrumentpanelen när den ordnats om](media/service-get-started/power-bi-service-rearranged-dashboard.png)
-
-## <a name="step-5-interact-with-tiles"></a>Steg 5: Interagera med paneler
-
-Nu ska vi titta på en sista interaktion innan du börjar skapa dina egna instrumentpaneler och rapporter. Du får olika resultat när du väljer olika paneler. 
-
-1. Välj först panelen med linjediagrammet *Bruttoförsäljning* som du har fäst i rapporten. 
-
-    Rapporten öppnas i läsvyn i Power BI. 
-
-2. Välj Bakåt-knappen i webbläsaren. 
-
-1. Nu väljer du panelen med stapeldiagrammet *Genomsnittlig kostnad för sålda varor* som du skapade i Frågor och svar. 
-
-    Rapporten öppnas inte i Power BI. Frågor och svar öppnas i stället, eftersom du skapade det här diagrammet där.
+    :::image type="content" source="media/service-get-started/power-bi-service-rearranged-dashboard.png" alt-text="Skärmbild av omorganiserad instrumentpanel.":::
 
 
 ## <a name="clean-up-resources"></a>Rensa resurser
 Nu när du är klar med självstudien kan du ta bort datauppsättningen, rapporten och instrumentpanelen. 
 
-1. Kontrollera i navigeringsfönstret att du är i **Min arbetsyta**.
-2. Välj fliken **Datauppsättningar** och hitta datauppsättningen du importerade för den här självstudien.  
-3. Välj **Fler alternativ** (...) > **Ta bort**.
+1. Välj **Min arbetsyta** i det svarta **Power BI**-rubrikfältet.
+2. Välj **Fler alternativ (...)** intill datamängden Financial Sample > **Ta bort**.
 
-    ![Ta bort datauppsättningen](media/service-get-started/power-bi-service-delete-dataset.png)
+    :::image type="content" source="media/service-get-started/power-bi-service-delete-dataset.png" alt-text="Skärmbild av borttagning av datamängden.":::
 
-    När du tar bort datauppsättningen visas varningsmeddelandet **Alla rapporter och instrumentpanelsflikar som innehåller data från den här datauppsättningen kommer också att tas bort**.
+    En varning visas om att **Alla rapporter och instrumentpanelsflikar som innehåller data från den här datamängden kommer också att tas bort**.
 
 4. Välj **Ta bort**.
 

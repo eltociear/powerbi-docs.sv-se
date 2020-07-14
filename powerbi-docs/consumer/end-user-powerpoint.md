@@ -7,19 +7,19 @@ ms.custom: contperfq4
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 05/12/2020
+ms.date: 07/01/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: d1120b15974d0e747dc60cf2c56dff1135c9d29c
-ms.sourcegitcommit: e8b12d97076c1387088841c3404eb7478be9155c
+ms.openlocfilehash: 85dc7e9807e11114c4fb6abb988d10c583b9e56c
+ms.sourcegitcommit: 7d7bb755d5a5af30d2b0eab89fb56e4498514890
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85782531"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85837049"
 ---
 # <a name="export-reports-to-powerpoint"></a>Exportera rapporter till PowerPoint
 
-[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
+[!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
 
 Med tjänsten Power BI (app.powerbi.com) kan du publicera din rapport till Microsoft PowerPoint och enkelt att skapa ett bildspel baserat på din Power BI-rapport. När du exporterar till PowerPoint, inträffar följande:
@@ -40,7 +40,7 @@ Välj en rapport i **Power BI-tjänsten** för att visa den på arbetsytan. Du k
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-När den rapport som du vill exportera till PowerPoint visas på arbetsytan väljer du **Exportera** > **PowerPoint** på menyraden.
+När den rapport som du vill exportera till PowerPoint visas på arbetsytan, väljer du **Arkiv** > **Exportera till PowerPoint** på menyraden.
 
 ![Välj Exportera från menyfältet](media/end-user-powerpoint/power-bi-export.png)
 
@@ -86,6 +86,10 @@ Det är nu upp till dig vad du vill göra med PowerPoint-presentationen eller n�
 ## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
 Det finns några överväganden och begränsningar som du bör tänka på när du arbetar med funktionen **exportera till PowerPoint**.
  
+
+* Om du inte ser alternativet **Exportera** kontrollerar du att du har aktiverat ”Nytt utseende” och att du visar en rapport (inte en instrumentpanel).
+
+    ![Skärmbild av växling till det nya utseendet](media/end-user-powerpoint/power-bi-new-look.png)
 
 * [URL-filter](../collaborate-share/service-url-filters.md) respekteras för närvarande inte när du väljer **Aktuella värden** för exporten.
 

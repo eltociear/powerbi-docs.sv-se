@@ -9,17 +9,17 @@ ms.topic: how-to
 ms.date: 06/15/2020
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: 759957b6412f4835aaf170fcebb7fd2beac4e234
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 0452dabef54cc899abf7a6cbbd6ab718bf22524e
+ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85227161"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86034323"
 ---
 # <a name="data-protection-metrics-report"></a>Dataskyddsmåttrapport
 
 ## <a name="what-is-the-data-protection-metrics-report"></a>Vad är dataskyddsmåttrapporten?
-Dataskyddsmåttrapporten är en dedikerad rapport som [Power BI-administratörer](../service-admin-role.md) kan använda för att övervaka och spåra datas känslighetsetikettanvändning och dess implementering i klientorganisationen.
+Dataskyddsmåttrapporten är en dedikerad rapport som [Power BI-administratörer](../service-admin-role.md) kan använda för att övervaka och spåra användning och implementering av känslighetsetiketter i klientorganisationen.
 
 ![Dataskyddsmåttrapport](./media/service-security-data-protection-metrics-report/protection-metrics-seven-days-1.png)
  
@@ -47,13 +47,13 @@ Första gången du öppnar dataskyddsmåttrapporten kan det ta några sekunder a
 
 Förbättrade versioner av dataskyddsmåttrapporten släpps regelbundet. När du öppnar rapporten får du en fråga om du vill öppna den nya versionen om en ny version är tillgänglig. Om du säger ”Ja” läses den nya versionen av rapporten in och den gamla versionen skrivs över. Eventuella ändringar som du har gjort i den gamla rapporten och/eller datamängden går förlorade. Du kan välja att inte öppna den nya versionen, men i så fall kommer du inte att ha nytta av den nya versionens förbättringar. 
 ## <a name="notes-and-considerations"></a>Kommentarer och överväganden
-* För att dataskyddsmåttrapporten ska genereras ordentligt måste [informationsskydd](./service-security-enable-data-sensitivity-labels.md) must vara aktiverat på klientorganisationen och [känslighetsetiketter bör ha använts](../collaborate-share/service-security-apply-data-sensitivity-labels.md). 
+* För att dataskyddsmåttrapporten ska genereras ordentligt måste [informationsskydd](./service-security-enable-data-sensitivity-labels.md) must vara aktiverat på klientorganisationen och [känslighetsetiketter bör ha använts](./service-security-apply-data-sensitivity-labels.md). 
 * För att få åtkomst till Cloud App Security-information måste din organisation ha rätt [Cloud App Security-licens](https://docs.microsoft.com/power-bi/admin/service-security-using-microsoft-cloud-app-security-controls#microsoft-cloud-app-security-licensing).
 * Om du bestämmer dig för att dela information från dataskyddsmåttrapporten med en användare som inte är Power BI-administratör bör du vara medveten om att den här rapporten innehåller känslig information om din organisation.
 * Dataskyddsmåttrapporten är en särskild typ av rapport och visas inte i listorna ”Delat med mig”, ”Senaste” och ”Favoriter”.
 * Dataskyddsmåttrapporten är inte tillgänglig för [externa användare (Azure Active Directory B2B-gästanvändare)](../service-admin-azure-ad-b2b.md).
 ## <a name="next-steps"></a>Nästa steg
-* [Dataskydd i Power BI](./service-security-data-protection-overview.md)
+* [Känslighetsetiketter i Power BI](./service-security-sensitivity-label-overview.md)
 * [Använda Microsoft Cloud App Security-kontroller i Power BI](service-security-using-microsoft-cloud-app-security-controls.md)
 * [Förstå administratörsrollen för Power BI-tjänsten](service-admin-role.md)
-* [Aktivera känslighetsetiketter för data i Power BI](service-security-enable-data-sensitivity-labels.md)
+* [Aktivera känslighetsetiketter i Power BI](service-security-enable-data-sensitivity-labels.md)

@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 3857478e972caef0a53c1de82f6dcc96650a7386
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: d741a489c5655e5a08f49f7197389a67c5d016ed
+ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85225686"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86034415"
 ---
 # <a name="manage-update-and-delete-organizational-content-packs"></a>Hantera, uppdatera och ta bort organisationsinnehållspaket
 > [!NOTE]
@@ -40,12 +40,12 @@ När du gör och sparar en ändring i instrumentpanelen som du inkluderat i ett 
 
 1. Välj **Visa innehållspaket** i meddelandet.
    
-   ![](media/service-organizational-content-pack-manage-update-delete/pbi_contpkchangesmessage.png)
-2. Eller välj kugghjulsikonen i det övre högra hörnet ![](media/service-organizational-content-pack-manage-update-delete/cog.png) och välj **Visa innehållspaketet**.
+   ![Skärmbild av en meddelandedialogruta där du kan välja Visa innehållspaket.](media/service-organizational-content-pack-manage-update-delete/pbi_contpkchangesmessage.png)
+2. Du kan också välja kugghjulsikonen i det övre högra hörnet ![Skärmbild av kugghjulsikon.](media/service-organizational-content-pack-manage-update-delete/cog.png) och välja **Visa innehållspaket**.
    
-   ![](media/service-organizational-content-pack-manage-update-delete/pbi_contpkview.png)
+   ![Skärmbild av kugghjulsikonen i det övre högra hörnet.](media/service-organizational-content-pack-manage-update-delete/pbi_contpkview.png)
    
-   Observera varningsikonen ![](media/service-organizational-content-pack-manage-update-delete/pbi_contpkwarningicon.png).  Den låter dig veta att du har ändrat innehållspaketet på något sätt och att det inte längre matchar det du publicerat.
+   Observera varningsikonen ![Skärmbild av varningsikon.](media/service-organizational-content-pack-manage-update-delete/pbi_contpkwarningicon.png).  Den låter dig veta att du har ändrat innehållspaketet på något sätt och att det inte längre matchar det du publicerat.
 3. Välj **Redigera**.  
 4. Gör nödvändiga ändringar i **Uppdatera innehållspaketet** och välj **Uppdatera**. Ett meddelande om **slutförande** visas.
    
@@ -55,7 +55,7 @@ När du gör och sparar en ändring i instrumentpanelen som du inkluderat i ett 
 ## <a name="update-the-audience-expand-or-restrict-access"></a>Uppdatera målgruppen: utöka eller begränsa åtkomst
 En annan ändring som är tillgänglig för innehållspaketets skapare är att utöka och begränsa åtkomsten till innehållspaketet.  Kanske du har publicerat ett innehållspaketet till en bred publik och du vill begränsa åtkomsten till en mindre grupp.  
 
-1. Välj kugghjulsikonen ![](media/service-organizational-content-pack-manage-update-delete/cog.png) och välj **Visa innehållspaket**.
+1. Välj kugghjulsikonen ![Skärmbild av kugghjulsikon.](media/service-organizational-content-pack-manage-update-delete/cog.png) och välj **Visa innehållspaket**.
 2. Välj **Redigera**. 
 3. Gör nödvändiga ändringar i **Uppdatera innehållspaketet** och välj **Uppdatera**. Ta till exempel bort den ursprungliga distributionsgruppen i fältet **Specifika grupper** och ersätt den med en annan distributionsgrupp (som har färre medlemmar).
    
@@ -77,7 +77,7 @@ Du kan bara ta bort ett innehållspaketet från AppSource om du har skapat det. 
 > 
 > 
 
-1. Om du vill ta bort ett innehållspaketet från AppSource går du till arbetsytan där du skapade innehållspaketet, väljer kugghjulsikonen ![](media/service-organizational-content-pack-manage-update-delete/cog.png) och väljer **Visa innehållspaket**.
+1. Om du vill ta bort ett innehållspaket från AppSource, går du till arbetsytan där du skapade innehållspaketet och väljer kugghjulsikonen ![Skärmbild av kugghjulsikon.](media/service-organizational-content-pack-manage-update-delete/cog.png) och välj **Visa innehållspaket**.
 2. Välj **Ta bort \> Ta bort**. 
    
    * För gruppmedlemmar som inte har anpassat innehållspaketet tas instrumentpanelen och de rapporter som är associerade med detta innehållspaketet bort automatiskt. De är inte längre tillgängliga och innehållspaketet visas inte i navigeringsfönstret.

@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 05/04/2020
 ms.author: painbar
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 6cac39407cac3af833656a4e94edf9a3c80bbc26
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: e32824a58faa3a6a98e4d38f7362c62ab13b069e
+ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85231630"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86034461"
 ---
 # <a name="connect-to-zendesk-with-power-bi"></a>Anslut till Zendesk med Power BI
 
@@ -28,6 +28,9 @@ När du har installerat mallappen kan du ändra instrumentpanelen och rapporten.
 
 >[!NOTE]
 >Du måste ha ett Zendesk-administratörskonto för att kunna ansluta. Mer information om [kraven](#system-requirements) finns nedan.
+
+>[!WARNING]
+>Före den 15 oktober 2019 hade Zendesk stöd för att sök-API:et kunde ta emot sammanlagt 200 000 resultat med hjälp av sidnumrering av stora frågor. För att kunna anpassa sökanvändningen till dess avsedda omfattning, begränsar Zendesk nu det maximala antalet resultat som returneras till 1 000 resultat, med högst 100 resultat per sida. Det nuvarande Power BI Zendesk-anslutningsprogrammet kan dock fortfarande skapa API-anrop som överskrider dessa nya gränser, vilket kan ge missvisande resultat.
 
 ## <a name="how-to-connect"></a>Så här ansluter du
 

@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/09/2019
 LocalizationGroup: Administration
-ms.openlocfilehash: 59400f05544efa9f4ffcca6ef3ebdf1b12423d33
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: 6e006bc858ad9d82073ced7929c87920da6559ab
+ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83564396"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86034170"
 ---
 # <a name="power-bi-security"></a>Power BI-säkerhet
 
@@ -28,11 +28,11 @@ Varje Power BI-distribution består av två kluster – ett frontwebb (**WFE**) 
 
 **WFE**-klustret hanterar den första anslutningen och autentiseringsprocessen för Power BI, samt använder AAD för att autentisera klienter och tillhandahåller tokens för efterföljande klientanslutningar till Power BI-tjänsten. Power BI använder dessutom **Azure Traffic Manager** (ATM) till att dirigera användartrafik till det närmaste datacentret, vilket bestäms av DNS-posten för den klient som försöker att ansluta, för autentiseringen och för att ladda ned statiskt innehåll och filer. Power BI använder **Azure Content Delivery Network** (CDN) till att distribuera det statiska innehåll som krävs samt filer till användarna, baserat på nationella inställningar.
 
-![](media/service-admin-power-bi-security/pbi_security_v2_wfe.png)
+![Diagram över Power BI-arkitekturen för frontwebbkluster.](media/service-admin-power-bi-security/pbi_security_v2_wfe.png)
 
 **Serverdelsklustret** avser hur autentiserade klienter interagerar med Power BI-tjänsten. **Serverdelsklustret** hanterar visualiseringar, instrumentpaneler för användare, datauppsättningar, rapporter, datalagring, dataanslutningar, datauppdatering och andra delar av interaktionen med Power BI-tjänsten. **Gatewayrollen** fungerar som en gateway mellan användarförfrågningar och Power BI-tjänsten. Användarna samverkar inte direkt med några andra roller än **gatewayrollen**. **Azure API Management** levererar slutligen **gatewayrollen**.
 
-![](media/service-admin-power-bi-security/pbi_security_v2_backend_updated.png)
+![Diagram över Power BI-arkitekturen för webbserverdelskluster.](media/service-admin-power-bi-security/pbi_security_v2_backend_updated.png)
 
 > [!IMPORTANT]
 > Det är viktigt att observera att endast rollerna **Azure API Management** (APIM) och **Gateway** (GW) kan nås via ett offentligt Internet. De tillhandahåller funktioner för autentisering, auktorisering, DDoS-skydd, begränsning, belastningsutjämning, routning m.m.

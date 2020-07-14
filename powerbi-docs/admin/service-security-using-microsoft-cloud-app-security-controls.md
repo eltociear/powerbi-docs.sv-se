@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 06/15/2020
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: b41d15329b7ce617803056d2d2b912a0afb7850c
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: cecb78ec986ddf672a9560598ccf68c95fa5d659
+ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85227089"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86034231"
 ---
 # <a name="using-microsoft-cloud-app-security-controls-in-power-bi"></a>Använda Microsoft Cloud App Security-kontroller i Power BI
 
@@ -59,7 +59,7 @@ Cloud App Security har även två särskilda, inbyggda identifieringar för Powe
 
 Med känslighetsetiketter kan du klassificera och skydda känsligt innehåll så att personer i organisationen kan samarbeta med partners utanför organisationen, samtidigt som de skyddar och är försiktiga med känsliga uppgifter och data. 
 
-I artikeln om [känslighetsetiketter i Power BI](../collaborate-share/service-security-apply-data-sensitivity-labels.md) beskrivs hur du använder känslighetsetiketter i Power BI. Här kan du se ett [exempel på en Power BI-policy baserad på känslighetsetiketter](#example).
+I artikeln om [känslighetsetiketter i Power BI](service-security-sensitivity-label-overview.md) beskrivs hur du använder känslighetsetiketter i Power BI. Här kan du se ett [exempel på en Power BI-policy baserad på känslighetsetiketter](#example).
 
 ## <a name="built-in-cloud-app-security-detections-for-power-bi"></a>Inbyggda identifieringar för Power BI i Cloud App Security
 
@@ -133,9 +133,9 @@ Skapa sessionspolicyn i fönstret som öppnas. De numrerade stegen beskriver ins
 ## <a name="next-steps"></a>Nästa steg
 I den här artikeln har vi gått igenom hur Cloud App Security kan skydda dina data och ditt innehåll i Power BI. Du kanske också är intresserad av följande artiklar, som beskriver olika dataskydd i Power BI och relaterat innehåll för de Azure-tjänster som tillhandahåller skydden.
 
-* [Översikt över dataskydd i Power BI](service-security-data-protection-overview.md)
-* [Aktivera känslighetsetiketter för data i Power BI](service-security-enable-data-sensitivity-labels.md)
-* [Använda känslighetsetiketter för data i Power BI](../collaborate-share/service-security-apply-data-sensitivity-labels.md)
+* [Översikt över känslighetsetiketter i Power BI](service-security-sensitivity-label-overview.md)
+* [Aktivera känslighetsetiketter i Power BI](service-security-enable-data-sensitivity-labels.md)
+* [Använda känslighetsetiketter i Power BI](../collaborate-share/service-security-apply-data-sensitivity-labels.md)
 
 Du kanske också är intresserad av följande artiklar om säkerhet i Azure:
 

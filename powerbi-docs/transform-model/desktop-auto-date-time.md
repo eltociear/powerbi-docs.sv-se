@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: how-to
 ms.date: 10/23/2019
 ms.author: v-pemyer
-ms.openlocfilehash: ae8121af4e3c16e7e8dd047284034fc95d0403fd
-ms.sourcegitcommit: 46a340937d9f01c6daba86a4ab178743858722ec
+ms.openlocfilehash: 0c62e423bdf357a5eee4ef5b03daa7ec145310e7
+ms.sourcegitcommit: 20cfd157af587b3910a2b6deec9518dca4105d71
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85393828"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85943060"
 ---
 # <a name="apply-auto-datetime-in-power-bi-desktop"></a>Använda automatisk datum/tid i Power BI Desktop
 
@@ -61,7 +61,7 @@ När det finns en automatisk datum/tidtabell för en datumkolumn (och kolumnen �
 
 Den automatiska datum/tidgenererade hierarkin kan användas för att konfigurera ett visuellt objekt på exakt samma sätt som vanliga hierarkier kan användas. Visuella objekt kan konfigureras med hjälp av hela hierarkin **Date Hierarchy**, eller med vissa nivåer i hierarkin.
 
-Det finns dock en extra funktion som inte stöds av vanliga hierarkier. När den automatiska datum/tid-hierarkin, eller en nivå i hierarkin, läggs till i ett visuellt objekt kan rapportförfattaren växla mellan att använda hierarkin eller datumkolumnen. Den här metoden passar bra för vissa visuella objekt, när det enda som behövs är datumkolumnen och inte hierarkin eller dess nivåer. Du börjar genom att konfigurera det visuella fältet (högerklicka på det visuella fältet eller klicka på nedåtpilen). Använd sedan snabbmenyn för att växla mellan datumkolumnen och datumhierarkin.
+Det finns dock en extra funktion som inte stöds av vanliga hierarkier. När den automatiska datum/tid-hierarkin (eller en nivå i hierarkin) läggs till i ett visuellt objekt, kan rapportförfattarna växla mellan att använda hierarkin eller datumkolumnen. Den här metoden passar bra för vissa visuella objekt, när det enda som behövs är datumkolumnen och inte hierarkin eller dess nivåer. Du börjar genom att konfigurera det visuella fältet (högerklicka på det visuella fältet eller klicka på nedåtpilen). Använd sedan snabbmenyn för att växla mellan datumkolumnen och datumhierarkin.
 
 ![Exempel på en konfiguration av ett visuellt fält för hierarkin OrderDate. I den öppna snabbmenyn visas två alternativ som tillåter att växlingen använder kolumnen OrderDate eller Date Hierarchy.](media/desktop-auto-date-time/auto-date-time-configure-visuals-fields.png)
 

@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: e499f6894890c379b76bfe0a11428715add30dfb
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 5e76cdfc2fd8ad4a90290ecaa559d502d5f847e6
+ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85224890"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86034438"
 ---
 # <a name="connect-to-azure-consumption-insights-data-in-power-bi-desktop"></a>Ansluta till Azure Consumption Insights-data i Power BI Desktop
 
@@ -42,25 +42,25 @@ Så här använder du **Azure Consumption Insights**-anslutningsprogrammet i **P
 
 1. Välj **Anslut**.
 
-   ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_01b.png)
+   ![Skärmbild av dialogrutan Microsoft Azure Consumption Insights. Välj Anslut.](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_01b.png)
 
    I den dialogruta som visas anger du ditt **Azure-registreringsnummer**.
 
-   ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_02.png)
+   ![Skärmbild av dialogrutan där Azure-registreringsnumret anges.](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_02.png)
 
    * Du kan hämta ditt registreringsnummer från [Azure Enterprise Portal](https://ea.azure.com), på den plats som visas i följande bild:
 
-  ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_08.png)
+  ![Skärmbild av Azure Enterprise Portal där registreringsnumret hämtas.](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_08.png)
 
    Den här versionen av anslutningsprogrammet stöder bara Enterprise-registreringar från https://ea.azure.com. Registreringar från Kina stöds inte för tillfället.
 
    Ange därefter din *åtkomstnyckel* för att ansluta.
 
-   ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_03.png)
+   ![Skärmbild av dialogrutan där åtkomstnyckeln anges för anslutning till Microsoft Azure Consumption Insights.](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_03.png)
 
    * Din åtkomstnyckel för certifikatregistrering kan hittas på [Azure Enterprise Portal](https://ea.azure.com).
 
-  ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_09.png)
+  ![Skärmbild av Azure Enterprise Portal med åtkomstnycklar för registreringen.](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_09.png)
 
 När du har angett din *åtkomstnyckel* och valt **Anslut** visas ett **navigatörsfönster** som visar de nio tillgängliga tabellerna:
 
@@ -78,7 +78,7 @@ När du har angett din *åtkomstnyckel* och valt **Anslut** visas ett **navigat�
 
 Du kan markera kryssrutan intill varje tabell för att visa en förhandsgranskning. Du kan markera en eller flera tabeller genom att markera rutan bredvid användarens namn och sedan välja **Ladda**.
 
-![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_04b.png)
+![Skärmbild av navigeringsdialogrutan med alla tillgängliga tabeller.](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_04b.png)
 
 > [!NOTE]
 > Tabellerna *Sammanfattning* och *Prisdokument* är bara tillgängliga för API-nycklar på registreringsnivå. Som standard har data i dessa tabeller dessutom den aktuella månadens data för *Användning* och *Prisdokument*. Tabellerna *Sammanfattning* och *MarketPlace* är inte begränsade till den aktuella månaden.
@@ -87,11 +87,11 @@ Du kan markera kryssrutan intill varje tabell för att visa en förhandsgranskni
 
 När du väljer **Ladda** läsas data in i **Power BI Desktop**.
 
-![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_05.png)
+![Skärmbild av dialogrutan som visas när data läses in.](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_05.png)
 
 De dina valda data har laddats kommer dina valda tabeller och fält att visas i panelen **Fält**.
 
-![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_06.png)
+![Skärmbild av fältfönstret när du har läst in en tabell från navigeringsfönstret.](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_06.png)
 
 ## <a name="using-azure-consumption-insights"></a>Använda Azure Consumption Insights
 För att använda **Azure Consumption Insights**-anslutningsprogrammet behöver du ha åtkomst till Enterprise-funktionerna i Azure-portalen.
@@ -116,7 +116,7 @@ I **formelfältet** skriver du:
 
 I följande bild finns en exempelsamling som visas.
 
-![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_07.png)
+![Skärmbild av en exempelsamling.](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_07.png)
 
 När du arbetar med rapporter och skapar frågor kan du göra följande:
 
@@ -148,7 +148,7 @@ I **frågeredigeraren** väljer du **Avancerad redigerare** från menyfliksområ
     in     
         data
 
-![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_10.png)
+![Skärmbild av dialogrutan Skapa en fråga i Avancerad redigerare.](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_10.png)
 
 Du behöver ersätta värdet för *enrollmentNumber* med ditt registreringsnummer. Du kan hämta ditt nummer från [Azure Enterprise-portalen](https://ea.azure.com). Parametern *numberOfMonth* är det antal månaders data som du vill ha räknat tillbaka från dagens datum. Använd noll (0) för den aktuella månaden.
 
@@ -160,7 +160,7 @@ Därefter behöver du flytta eventuella anpassade kolumner eller mått som du sk
 1. Öppna Anteckningar (eller något annat textredigeringsprogram).
 2. Välj det mått som du vill flytta, kopiera text från fältet *Formel* och placera den i anteckningar.
 
-   ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_11.png)
+   ![Skärmbild som visar formelfältet för kolumner och mått.](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_11.png)
 3. Byt namn på *Fråga1* till ursprungliga informationstabellens namn.
 4. För att skapa nya tabellmått och anpassade kolumner högerklickar du på tabellen och väljer **Nytt mått**. Klipp sedan ut och klistra in dina sparade mått och kolumner tills alla är klara.
 
@@ -169,7 +169,7 @@ Många instrumentpaneler har ytterligare tabeller som används för sökning och
 
 - På fliken **Modellering** i **Power BI Desktop** väljer du **Hantera relationer** för att öppna ett fönster där du kan hantera relationer i modellen. Länka om dina tabeller om det behövs.
 
-    ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_12.png)
+    ![Skärmbild av dialogrutan Skapa relation. Välj Hantera relationer.](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_12.png)
 
 ### <a name="step-5-verify-your-visuals-and-adjust-field-formatting-as-needed"></a>Steg 5: Kontrollera dina visuella objekt och justera fältformateringen vid behov
 Vid det här laget bör de flesta av dina ursprungliga visuella objekt, tabeller och detaljerad information fungera som förväntat. Vissa mindre justeringar kan dock vara nödvändiga för att noggrant formatera utseendet och känslan. Ägna en stund åt att titta på dina instrumentpaneler och visuella objekt så att de ser helt rätt ut.

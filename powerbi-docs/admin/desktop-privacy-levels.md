@@ -9,19 +9,19 @@ ms.topic: reference
 ms.date: 09/09/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: c6c3ccdc547a8e9fb4e2d471365c9da67f7cf58a
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 19189529637fe5511ebd6f736c17b8a10a1d2ef9
+ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83130325"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86033794"
 ---
 # <a name="power-bi-desktop-privacy-levels"></a>Sekretessnivåer i Power BI Desktop
 I **Power BI Desktop**, anger sekretessnivåer en isoleringsnivå som definierar hur en datakälla isoleras från andra datakällor. Även om en begränsande isoleringsnivå blockerar information från att utbytas mellan datakällor, kan det minska funktionaliteten och påverka prestandan.
 
 I inställningen **Sekretessnivåer** som finns i **Fil > Alternativ och inställningar > Alternativ** och sedan **Aktuell fil > Sekretess** kan du avgöra om Power BI Desktop använder dina inställningar för sekretess när du kombinerar data. Den här dialogrutan inkluderar en länk till Power BI Desktop-dokumentationen om sekretessnivåer och sekretessnivåer (den här artikeln).
 
-![](media/desktop-privacy-levels/desktop_privacylevels1.png)
+![Skärmbild av dialogrutan Alternativ.](media/desktop-privacy-levels/desktop_privacylevels1.png)
 
 ## <a name="configure-a-privacy-level"></a>Konfigurera en sekretessnivå
 Med inställningar för sekretessnivå kan du ange en isoleringsnivå som definierar hur en datakälla måste isoleras från andra datakällor.
@@ -37,7 +37,7 @@ Inställningsdialogrutan **Sekretess** för varje datakälla hittas i **Fil > Al
 
 Om du vill konfigurera en sekretessnivå för datakällan, väljer du datakällan och därefter **Redigera**. Dialogrutan **Inställningar för datakälla** visas där du kan välja lämplig sekretessnivå från listrutan längst ned i dialogrutan som det visas i följande bild.
 
-![](media/desktop-privacy-levels/desktop_privacylevels2.png)
+![Skärmbild av dialogrutan Inställningar för datakälla.](media/desktop-privacy-levels/desktop_privacylevels2.png)
 
 > [!CAUTION]
 > Du bör konfigurera en datakälla som innehåller mycket känsliga eller konfidentiella data som **Privat**.

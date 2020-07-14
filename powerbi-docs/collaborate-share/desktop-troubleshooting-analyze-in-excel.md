@@ -5,16 +5,16 @@ author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: how-to
+ms.topic: troubleshooting
 ms.date: 05/27/2020
 ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: e1162ecfb9eee7d1a0bfaf5a7ef25244ec8935c0
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 3c36a2725748e2c701c65f1737c39f4d56128962
+ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85226817"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86034392"
 ---
 # <a name="troubleshooting-analyze-in-excel"></a>Felsöka Analysera i Excel
 
@@ -45,22 +45,22 @@ Excel-biblioteket måste matcha din version av Windows. Om du använder 64-bitar
 
 Om du vill hämta de senaste Excel-biblioteken ska du besöka Power BI och välja **nedåtpilen** i det övre högra hörnet av Power BI-tjänsten. Välj sedan **Analysera i Excel-uppdateringar**.
 
-![](media/desktop-troubleshooting-analyze-in-excel/tshoot-analyze-excel_1.png)
+![Skärmbild av nedåtpilen i det övre högra hörnet där Analysera väljs i Excel-uppdateringar.](media/desktop-troubleshooting-analyze-in-excel/tshoot-analyze-excel_1.png)
 
 I dialogrutan som visas väljer du **Hämta (förhandsgranskning)** .
 
-![](media/desktop-troubleshooting-analyze-in-excel/tshoot-analyze-excel_2.png)
+![Skärmbild av dialogrutan Analysera i Excel-uppdateringar där man kan välja knappen Ladda ned eller förhandsgranska.](media/desktop-troubleshooting-analyze-in-excel/tshoot-analyze-excel_2.png)
 
 ## <a name="determining-whether-you-need-to-update-your-excel-libraries"></a>Bestämma om du behöver uppdatera ditt Excel-bibliotek
 Du kan hämta den senaste versionen av Excel OLE DB-providerbibliotek via länkarna i föregående avsnitt. När du har hämtat OLD DB-providerbiblioteket och startat installationen utförs kontroller mot den aktuella versionen.
 
 Om ditt klientbibliotek för Excel OLE DB-providern är uppdaterat visas följande dialogruta:
 
-![](media/desktop-troubleshooting-analyze-in-excel/troubleshoot-analyze-excel_3.png)
+![Skärmbild av dialogrutan där du uppmanas att uppdatera om det finns en nyare version av klientbiblioteket för Excel O L E D B-providern.](media/desktop-troubleshooting-analyze-in-excel/troubleshoot-analyze-excel_3.png)
 
 Alternativt visas följande dialogruta om den nya versionen som du installerar är nyare än versionen på din dator:
 
-![](media/desktop-troubleshooting-analyze-in-excel/troubleshoot-analyze-excel_2.png)
+![Skärmbild av dialogrutan där en uppgradering bekräftas under installationen av klientbibliotek för Excel O L E D B-providern.](media/desktop-troubleshooting-analyze-in-excel/troubleshoot-analyze-excel_2.png)
 
 Om du ser en dialogruta som uppmanar dig att uppgradera bör du fortsätta med installationen för att hämta den senaste versionen av OLE DB-providern som är installerad på din dator.
 

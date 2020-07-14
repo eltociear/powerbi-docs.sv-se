@@ -9,19 +9,19 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 04/27/2020
-ms.openlocfilehash: 6448fd85f281024aaaf03973496eaa0c4350c13b
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.date: 06/28/2020
+ms.openlocfilehash: 94419bb25aa00645b22a1dad1f97fcc792c3d63d
+ms.sourcegitcommit: 561f6de3e4621d9d439dd54fab458ddca78ace2c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85226274"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85939542"
 ---
 # <a name="embed-a-report-web-part-in-sharepoint-online"></a>Bädda in en rapportwebbdel i SharePoint Online
 
 Med den nya rapportwebbdelen för SharePoint Online i Power BI kan du enkelt bädda in interaktiva Power BI-rapporter i SharePoint Online-sidor.
 
-Vid användning av det nya alternativet **Bädda in i SharePoint Online** är de inbäddade rapporterna helt säkra. Du kan därför enkelt skapa säkra interna portaler.
+När du använder det nya alternativet **Bädda in i SharePoint Online**, tar de inbäddade rapporterna hänsyn till all objektbehörighet och datasäkerhet med hjälp av [Säkerhet på radnivå (RLS)](../admin/service-admin-rls.md), för att du enkelt ska kunna skapa säkra interna portaler.
 
 ## <a name="requirements"></a>Krav
 

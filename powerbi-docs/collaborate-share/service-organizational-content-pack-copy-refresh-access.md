@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 74063dc581cce3d63395be5f99e0232a9e7a69a2
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: f89459b9d1e930fe429467b566d0813030fb43ab
+ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85225901"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86034530"
 ---
 # <a name="organizational-content-packs-copy-refresh-and-get-access"></a>Organisationsinnehållspaket: Kopiera, uppdatera och få åtkomst
 
@@ -31,7 +31,7 @@ Skapa din egen kopia av innehållspaketet som inte är synligt för andra.
 
 1. Välj **Fler alternativ** (...) bredvid innehållspaketets instrumentpanel > Gör en kopia.
 
-    ![](media/service-organizational-content-pack-copy-refresh-access/power-bi-create-copy-organizational-content-pack.png)
+    ![Skärmbild av dialogrutan Fler alternativ.](media/service-organizational-content-pack-copy-refresh-access/power-bi-create-copy-organizational-content-pack.png)
 2. Välj **Spara**.  
 
 Nu har du en kopia som du kan ändra. Ingen annan kommer att se de ändringar du gör.

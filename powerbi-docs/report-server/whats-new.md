@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/27/2020
-ms.openlocfilehash: 9cb9939f665dabc910c0605f4c1864f7d80988c3
-ms.sourcegitcommit: a07fa723bb459494c60cf6d749b4554af723482a
+ms.date: 07/06/2020
+ms.openlocfilehash: b6f2775d9aa23899a1e27ed58b818024129043b7
+ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "84739240"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86034047"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Nyheter i Power BI-rapportserver
 
@@ -28,9 +28,11 @@ Relaterad information om nyheter i Power BI finns i:
 
 ## <a name="may-2020"></a>Maj 2020
 
+### <a name="power-bi-desktop-optimized-for-power-bi-report-server"></a>Power BI Desktop optimerat för Power BI-rapportserver
+
 Bland de viktigaste nyheterna i den här uppdateringen är hierarkiska utsnitt, visualisering av nedbrytningsträd och frågediagnostik. Det här är en fullständig lista över nya och uppdaterade funktioner. Mer information finns i [blogginlägget om Power BI-rapportserver från maj 2020](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2020-feature-summary/). 
 
-### <a name="reporting"></a>Rapportering
+#### <a name="reporting"></a>Rapportering
 
 - Hierarkiskt utsnitt
 - Nya åtgärdstyper för knappar:
@@ -51,7 +53,7 @@ Bland de viktigaste nyheterna i den här uppdateringen är hierarkiska utsnitt, 
     - Ny upplevelse för filterruta
     - Sökning i filterfönster
     
-### <a name="modeling"></a>Modellering
+#### <a name="modeling"></a>Modellering
 
 - Nya DAX-funktioner:
 
@@ -61,18 +63,24 @@ Bland de viktigaste nyheterna i den här uppdateringen är hierarkiska utsnitt, 
 
 - DAX-standardavgränsare
 
-### <a name="visualizations"></a>Visualiseringar
+#### <a name="visualizations"></a>Visualiseringar
 
 - Nya visualiseringsikoner
 - Bakgrundsskuggor i visualiseringar
 
-### <a name="data-preparation"></a>Förberedelse av data
+#### <a name="data-preparation"></a>Förberedelse av data
 
 - Frågediagnostik
 
-### <a name="other"></a>Annat
+#### <a name="other"></a>Annat
 
 - Använda standardautentiseringsuppgifter för systemet för webbproxy
+
+### <a name="power-bi-report-server"></a>Power BI-rapportserver
+
+#### <a name="power-bi-visuals-api"></a>API för visuella Power BI-objekt
+
+API-versionen som levereras med den här versionen är 3.2.
 
 ## <a name="january-2020"></a>Januari 2020
 
