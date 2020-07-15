@@ -2,19 +2,19 @@
 title: Lär dig hur knappar fungerar i Power BI-tjänsten
 description: Knappar kan användas för att starta olika åtgärder, t.ex. navigering och visning av detaljerad information i rapporter
 author: mihart
-ms.reviewer: ''
+ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
 ms.date: 07/01/2020
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 14024a9c28da93cbe9e6e586ee66f634b63a70b8
-ms.sourcegitcommit: 561f6de3e4621d9d439dd54fab458ddca78ace2c
+ms.openlocfilehash: 51871e9653a1f3d0d48f25de33d4a72603695cf4
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85940121"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86161800"
 ---
 # <a name="buttons-in-the-power-bi-service"></a>Knappar i Power BI-tjänsten
 I rapporterna som du har fått från dina kollegor kanske du har lagt märke till vissa knappar och funderat över vad du ska använda dem till. En del knappar innehåller ord, en del har pilar, andra har grafik och vissa har även listmenyer. I artikeln får du lära dig hur du känner igen en knapp och hur du tar reda på vad du kan göra med den.
