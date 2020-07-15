@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: how-to
 ms.date: 04/27/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: a2e7445db843788293a20fbbebdffd2952dfeb6a
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: e1925c57869a58f111b77c6a50a1289224440ecb
+ms.sourcegitcommit: 01b5fb05f723eab2557e0e420bfde23197987a96
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85226192"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86301009"
 ---
 # <a name="embed-a-report-in-a-secure-portal-or-website"></a>Bädda in en rapport i en säker portal eller webbplats
 
@@ -122,8 +122,6 @@ Du kan lägga till så många knappar du vill för att skapa en anpassad uppleve
 ## <a name="considerations-and-limitations"></a>Överväganden och begränsningar
 
 * Sidnumrerade rapporter med säker inbäddning och sidnumrerade rapporter med URL-parametrar stöds. Läs mer om att [skicka rapportparametrar i en URL för en sidnumrerad rapport](../paginated-reports/report-builder-url-pass-parameters.md).
-
-* Stöder inte externa gästanvändare med Azure företag till företag (B2B).
 
 * Säker inbäddning fungerar för rapporter som publicerats i Power BI-tjänsten.
 

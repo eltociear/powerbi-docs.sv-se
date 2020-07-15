@@ -2,18 +2,18 @@
 title: Visa en rapport
 description: Det här avsnittet visar hur Power BI-användare öppnar och visar en Power BI-rapport.
 author: mihart
-ms.reviewer: ''
+ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
 ms.date: 03/11/2020
 ms.author: mihart
-ms.openlocfilehash: 0750ac3546242cffa9858168bb8ff376d3aad8e9
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: a706864ef5bd0e4858cfe593a68e7d1f399e06df
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85235977"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86264347"
 ---
 # <a name="view-a-report-in-the-power-bi-service-for-consumers"></a>Visa en rapport i Power BI-tjänsten för *konsumenter*
 

@@ -2,19 +2,19 @@
 title: Visa de data som användes för att skapa det visuella objektet
 description: Det här dokumentet beskriver hur Power BI-användare kan ”se” de data som används för att skapa ett visuellt objekt.
 author: mihart
-ms.reviewer: ''
+ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
 ms.date: 04/28/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 6363c369f3ed30ee136d8e043c12c1546b184ef9
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 55f60facc281b49d4dc5e05fa1dbf157227d9374
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238709"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86264232"
 ---
 # <a name="show-data-with-power-bi-reports"></a>Visa data med Power BI-rapporter
 
