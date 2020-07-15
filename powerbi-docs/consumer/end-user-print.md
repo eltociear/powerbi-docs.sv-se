@@ -2,7 +2,7 @@
 title: Skriva ut från Power BI-tjänsten
 description: Skriva ut en instrumentpanel, panel eller rapportsida från Power BI-tjänsten.
 author: mihart
-ms.reviewer: ''
+ms.reviewer: mihart
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 03/12/2020
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 1e47b6fb3b402c14e9973dd2ad69b574ad6a2e54
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: b12eef42a3e5ac778d686f9d627e5f84bc66fcde
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85236392"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86263345"
 ---
 # <a name="printing-from-the-power-bi-service"></a>Skriva ut från Power BI-tjänsten
 

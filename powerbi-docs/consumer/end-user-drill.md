@@ -2,19 +2,19 @@
 title: Öka och minska detaljnivån i ett visuellt objekt
 description: Den här artikeln beskriver hur du ökar detaljnivån i ett visuellt objekt i Microsoft Power BI-tjänsten.
 author: mihart
-ms.reviewer: ''
+ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
 ms.date: 02/18/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 0ca9fed0d086ab602ac5e7c4ae558e85a619da88
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 787b5b35e1a8ab0365a5e5576d69dd7153188acb
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85235225"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216271"
 ---
 # <a name="drill-mode-in-a-visual-in-power-bi"></a>Granskningsläge i ett visuellt objekt i Power BI
 

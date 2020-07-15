@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 02/25/2020
+ms.date: 07/08/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 5e7fe8a7c71927a1e89bd4e86209c580ae1f3b29
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 26c27c8cd33929c7bb83a8ef5b1faed0fb12e502
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85225676"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216554"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Publicera på webben från Power BI
 
@@ -29,10 +29,6 @@ Med alternativet **Publicera på webben** i Power BI kan du enkelt bädda in int
 ## <a name="create-embed-codes-with-publish-to-web"></a>Skapa inbäddningskoder med Publicera på webben
 
 **Publicera på webben** är tillgängligt för rapporter som du kan redigera på dina personliga arbetsytor och grupparbetsytor.  Det är inte tillgängligt för rapporter som delas med dig eller sådana som använder säkerhet på radnivå för att skydda data. I avsnittet [**Begränsningar**](#limitations) nedan finns en fullständig lista över fall där **Publicera på webben** inte stöds. Läs avsnittet **Varning** tidigare i den här artikeln innan du använder **Publicera på webben**.
-
-Följande korta video visar hur den här funktionen fungerar. Sedan kan du prova själv med stegen nedan.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/UF9QtqE7s4Y" frameborder="0" allowfullscreen></iframe>
 
 Följande steg beskriver hur du använder **Publicera på webben**.
 
