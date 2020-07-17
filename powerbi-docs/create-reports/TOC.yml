@@ -47,6 +47,8 @@
       items:
         - name: Power BI-rapporter
           items:
+            - name: Power BI Desktop och externa verktyg
+              href: desktop-external-tools.md
             - name: Modernt Power BI-menyfliksområde
               href: desktop-ribbon.md
             - name: Arbeta med rapportvyn
