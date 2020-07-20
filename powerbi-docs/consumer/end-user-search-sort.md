@@ -7,15 +7,15 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 06/25/2020
+ms.date: 07/09/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 62acc84c7459cadd758a036f1db04685b5e9c2b5
-ms.sourcegitcommit: e8b12d97076c1387088841c3404eb7478be9155c
+ms.openlocfilehash: 1ff7332bc71935cd6b679fa546dc2f1d37551436
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85782549"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86215751"
 ---
 # <a name="navigation-for-power-bi-consumers-global-search"></a>Navigering för Power BI konsumenter: global sökning
 
@@ -29,7 +29,7 @@ När du börjar använda Power BI-tjänsten så är bara några få innehållsko
 ## <a name="searching-for-content"></a>Söka efter innehåll
  Sökning är tillgängligt från nästan alla delar av Power BI-tjänsten. Det är bara att titta efter sökrutan eller sökikonen ![förstoringsglasikon](./media/end-user-search-sort/power-bi-search-icon.png).
 
- I sökfältet skriver du hela namnet, eller en del av det, för en instrumentpanel, rapport, arbetsbok eller ägare. Power BI söker igenom allt innehåll. 
+ Skriv hela eller delar av namnet på en instrumentpanel, rapport, arbetsbok, arbetsyta, app eller ägare i sökfältet. Power BI söker igenom allt innehåll. 
 
  ![söka efter en rapport](./media/end-user-search-sort/power-bi-search-field.png) 
 

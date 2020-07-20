@@ -9,18 +9,18 @@ ms.topic: overview
 ms.date: 12/16/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: bd95dfcc5d621b5ae4988e187d7cc6d9478feb58
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 2a67bd6c2a3d757475580d218547be689dbb99d2
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83361530"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216930"
 ---
 # <a name="what-is-power-bi-desktop"></a>Vad är Power BI Desktop?
 
 *Power BI Desktop* är ett kostnadsfritt program som du installerar lokalt i datorn och som gör att du kan ansluta till, transformera och visualisera dina data. Med Power BI Desktop kan du ansluta till många olika datakällor och kombinera dem i en datamodell (detta kallas ofta *modellering*). Med den här datamodellen kan du skapa visuella objekt och samlingar av visuella objekt som du kan dela som rapporter med andra personer i din organisation. De flesta användare som arbetar i Business Intelligence-projekt använder Power BI Desktop till att skapa rapporter och sedan *Power BI-tjänsten* till att dela sina rapporter med andra.
 
-![Power BI Desktop](media/desktop-what-is-desktop/what-is-desktop_01.png)
+![Skärmbild av Power BI Desktop med exempeldata.](media/desktop-what-is-desktop/what-is-desktop_01.png)
 
 Här är de vanligaste användningsområdena för Power BI Desktop:
 
@@ -39,7 +39,7 @@ Det finns tre vyer i Power BI Desktop som du väljer längs med arbetsytans vän
 
 I den här bilden ser du de tre vyerna, såsom de visas längs med arbetsytans vänstra sida:
 
-![Power BI Desktop-vyer](media/desktop-what-is-desktop/what-is-desktop-07.png)
+![Skärmbild av Power BI Desktop med panelen Tre vyer.](media/desktop-what-is-desktop/what-is-desktop-07.png)
  
 
 ## <a name="connect-to-data"></a>Ansluta till data
@@ -51,11 +51,11 @@ Ansluta till data:
 
    Du ser fönstret **Hämta data** med alla de kategorier som Power BI Desktop kan ansluta till.
 
-   ![Hämta data i Power BI Desktop](media/desktop-what-is-desktop/what-is-desktop_02.png)
+   ![Skärmbild av Power BI Desktop med dialogrutan Hämta data.](media/desktop-what-is-desktop/what-is-desktop_02.png)
 
 2. När du väljer en datatyp, uppmanas du att ange information, till exempel URL och autentiseringsuppgifter som krävs för att Power BI Desktop ska kunna ansluta till datakällan för din räkning.
 
-   ![Anslut till en SQL Server-databas i Power BI Desktop](media/desktop-what-is-desktop/what-is-desktop_03.png)
+   ![Skärmbild av Power BI Desktop med dialogrutan SQL Server-databas.](media/desktop-what-is-desktop/what-is-desktop_03.png)
 
 3. När du har anslutit till en eller flera datakällor kanske du vill transformera dina data så att de blir mer användbara.
 
@@ -69,13 +69,13 @@ Så här startar du Power Query-redigeraren:
 
    Fönstret **Power Query-redigeraren** visas.
 
-   ![Power Query-redigeraren i Power BI Desktop](media/desktop-getting-started/designer_gsg_editquery.png)
+   ![Skärmbild av Power BI Desktop med fönstret Power Query-redigeraren.](media/desktop-getting-started/designer_gsg_editquery.png)
 
 Varje transformeringssteg du tar (som att byta namn på en tabell, omvandla en datatyp eller ta bort en kolumn) registreras av Power Query-redigeraren. Varje gång frågan ansluter till datakällan utförs de här stegen så att data alltid formas på det sätt du anger.
 
 I den här bilden ser du fönstret **Power Query-redigeraren** för en fråga som har formats och omvandlats till en modell.
 
- ![Fönstret Power Query-redigeraren](media/desktop-getting-started/shapecombine_querysettingsfinished.png)
+ ![Skärmbild av Power BI Desktop med fönstret Power Query-redigeraren och en fråga som har formats.](media/desktop-getting-started/shapecombine_querysettingsfinished.png)
 
 När dina data är som du vill ha dem så kan du skapa visuell information. 
 
@@ -83,13 +83,13 @@ När dina data är som du vill ha dem så kan du skapa visuell information.
 
 När du har en datamodell kan du dra *fält* till rapportarbetsytan och skapa *visuella objekt*. Ett visuellt objekt är en grafisk representation av data i din modell. Det finns många olika typer av visuell information att välja mellan i Power BI Desktop. Följande visuella information visar ett enkelt stapeldiagram. 
 
-![Visuell information i Power BI Desktop](media/desktop-what-is-desktop/what-is-desktop_04.png)
+![Skärmbild av Power BI Desktop med ett exempeldiagram.](media/desktop-what-is-desktop/what-is-desktop_04.png)
 
 Skapa eller ändra ett visuellt objekt: 
 
 - Välj ikonen för visuella objekt i fönstret **Visualiseringar**. 
 
-   ![Fönstret Visualiseringar i Power BI Desktop](media/desktop-what-is-desktop/what-is-desktop_05.png)
+   ![Skärmbild av Power BI Desktop med fönstret Visualiseringar.](media/desktop-what-is-desktop/what-is-desktop_05.png)
 
    Om du redan har valt ett visuellt objekt på rapportarbetsytan så ändras det till den typ du har valt. 
 
@@ -98,13 +98,13 @@ Skapa eller ändra ett visuellt objekt:
 
 ## <a name="create-reports"></a>Skapa rapporter
 
-Vanligare är att du vill skapa en samling visuella objekt som visar olika aspekter av de data du har använt till att skapa din modell i Power BI Desktop. En samling med visuell information i en Power BI Desktop-fil kallas en *rapport*. En rapport kan innehålla en eller flera sidor, precis som en Excel-fil kan ha ett eller flera kalkylblad. 
+Vanligare är att du vill skapa en samling visuella objekt som visar olika aspekter av de data du har använt till att skapa din modell i Power BI Desktop. En samling med visuell information i en Power BI Desktop-fil kallas en *rapport*. En rapport kan innehålla en eller flera sidor, precis som en Excel-fil kan ha ett eller flera kalkylblad.
 
 Med Power BI Desktop kan du skapa komplexa och visuellt omfattande rapporter med hjälp av data från flera källor i en enda rapport som du sedan delar med andra i din organisation.
 
 I den här bilden ser du första sidan i en Power BI Desktop-rapport med namnet **Overview**, du ser namnet på fliken i bildens nederkant. 
 
-![Exempelrapport i Power BI Desktop](media/desktop-what-is-desktop/what-is-desktop_01.png)
+![Skärmbild av Power BI Desktop med fliken Översikt.](media/desktop-what-is-desktop/what-is-desktop_01.png)
 
 ## <a name="share-reports"></a>Dela rapporter
 
@@ -114,7 +114,7 @@ Så här publicerar du en Power BI Desktop-rapport:
 
 1. Välj **Publicera** i menyfliksområdet **Start**.
 
-   ![Publicera en rapport från Power BI Desktop](media/desktop-what-is-desktop/what-is-desktop_06.png)
+   ![Skärmbild av Power BI Desktop med knappen Publicera.](media/desktop-what-is-desktop/what-is-desktop_06.png)
 
    Power BI Desktop ansluter till Power BI-tjänsten med ditt Power BI-konto. 
 

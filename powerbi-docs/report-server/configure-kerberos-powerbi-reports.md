@@ -8,12 +8,12 @@ ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.date: 11/01/2017
 ms.author: maggies
-ms.openlocfilehash: aee58d27eb75bbe14629235591065e236502588a
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: a9dd66d726a2417c936204898eb2cdfb749fcc94
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85236114"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216517"
 ---
 # <a name="configure-kerberos-to-use-power-bi-reports"></a>Konfigurera Kerberos för att använda Power BI-rapporter
 <iframe width="640" height="360" src="https://www.youtube.com/embed/vCH8Fa3OpQ0?showinfo=0" frameborder="0" allowfullscreen></iframe>
@@ -31,14 +31,14 @@ Om din rapportserver inte är korrekt konfigurerad, kan följande felmeddelanden
 
     Something went wrong.
 
-    We couldn’t run the report because we couldn’t connect to its data source. The report or data source might not be configured correctly. 
+    We couldn't run the report because we couldn't connect to its data source. The report or data source might not be configured correctly. 
 
 I den tekniska informationen visas följande meddelande.
 
-    We couldn’t connect to the Analysis Services server. The server forcibly closed the connection. To connect as the user viewing the report, your organization must have configured Kerberos constrained delegation.
+    We couldn't connect to the Analysis Services server. The server forcibly closed the connection. To connect as the user viewing the report, your organization must have configured Kerberos constrained delegation.
 
-![](media/configure-kerberos-powerbi-reports/powerbi-report-config-error.png)
-
+![Skärmbild av Power BI Reports med ett felmeddelande om problem med anslutningen till Analysis Services-servern.](media/configure-kerberos-powerbi-reports/powerbi-report-config-error.png)
+ 
 ## <a name="configuring-kerberos-constrained-delegation"></a>Konfigurera Kerberos-begränsad delegering
 Det finns flera objekt som måste konfigureras för att Kerberos-begränsad delegering ska fungera. Det inkluderar inställningar för tjänstens huvudnamn (SPN) och delegeringsinställningar för tjänstkonton.
 
@@ -193,7 +193,7 @@ Vi vill konfigurera begränsad delegering med protokollövergång. Med begränsa
 5. Under **tjänster som det här kontot kan ge delegerade autentiseringsuppgifter**: väljer du **lägg till**.
 6. I den nya dialogrutan väljer du **Användare eller datorer**.
 7. Ange tjänstkontot för Analysis Services-tjänsten och välj **Ok**.
-8. Välj det SPN som du skapade. Det börjar med `MSOLAPSvc.3`. Om du har lagt till både FQDN och NetBIOS SPN, väljs båda. Du kan hända att du bara ser en.
+8. Välj det SPN som du skapade. Det börjar med `MSOLAPSvc.3`. Om du har lagt till både FQDN och NetBIOS SPN, väljs båda. Du kan bara se en.
 9. Välj **OK**.  Du bör nu se SPN-namnet i listan.
 10. Du kan också markera **expanderat** för att visa både FQDN- och NetBIOS SPN i listan.
 11. Välj **lägg till** igen. Vi lägger till SQL Browser SPN nu.
@@ -202,14 +202,14 @@ Vi vill konfigurera begränsad delegering med protokollövergång. Med begränsa
 14. Välj det SPN som du skapade. Det börjar med `MSOLAPDisco.3`. Om du har lagt till både FQDN och NetBIOS SPN, väljs båda. Du kan hända att du bara ser en.
 15. Välj **OK**. Dialogrutan bör likna följande när du har markerat **expanderat**.
     
-    ![](media/configure-kerberos-powerbi-reports/powerbi-report-config-delegation.png)
+    ![Skärmbild av Power BI Reports som visar fliken Delegering i fönstret Egenskaper.](media/configure-kerberos-powerbi-reports/powerbi-report-config-delegation.png)
 16. Välj **OK**.
 17. Starta om Power BI-rapportservern.
 
 ## <a name="running-a-power-bi-report"></a>Kör en Power BI-rapport
 När all ovanstående konfiguration är på plats, borde din rapport visas korrekt. 
 
-![](media/configure-kerberos-powerbi-reports/powerbi-report.png)
+![Skärmbild av Power BI Reports som visar vyn Instrumentpanel.](media/configure-kerberos-powerbi-reports/powerbi-report.png)
 
 Den här konfigurationen borde fungera i de flesta fall, men med Kerberos kan det behövas en annan konfiguration beroende på din miljö. Om rapporten fortfarande inte läses in, bör du ta kontakt med din domänadministratör för att undersöka vidare eller kontakta supporten.
 
@@ -217,5 +217,5 @@ Den här konfigurationen borde fungera i de flesta fall, men med Kerberos kan de
 [Administratörsöversikt](admin-handbook-overview.md)  
 [Installera Power BI-rapportserver](install-report-server.md)  
 
-Fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 

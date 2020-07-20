@@ -6,17 +6,18 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 04/01/2020
+ms.date: 07/14/2020
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: b8fddd6b88effac3375840dd6034ca93cec52f12
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 5cd0dd3b91109e63e5481e2f5e5516fd9ecd245c
+ms.sourcegitcommit: d8acf2fb0318708a3e8e1e259cb3747b0312b312
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238321"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86385985"
 ---
 # <a name="download-a-report-from-the-power-bi-service-to-power-bi-desktop-preview"></a>Hämta en rapport från Power BI-tjänsten till Power BI Desktop (förhandsversion)
+      
 I Power BI Desktop kan du publicera en rapport (en *.pbix*-fil) från den lokala datorn till Power BI-tjänsten. Power BI-rapporter kan även gå åt det andra hållet: Du kan ladda ned en rapport från Power BI-tjänsten till Power BI Desktop. Filnamnstillägget för en Power BI-rapport är i båda fallen .pbix.
 
 Det finns några begränsningar och saker du bör tänka på, vilket beskrivs längre fram avsnittet [Överväganden och felsökning](#considerations-and-troubleshooting) i den här artikeln.
@@ -46,6 +47,7 @@ Hämta .pbx-filen genom att följa dessa steg:
     ![Rapportredigeraren i Power BI Desktop](media/service-export-to-pbix/power-bi-desktop.png)
 
 ## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
+
 Det finns några viktiga överväganden och begränsningar att ta hänsyn till vid nedladdning av en .pbix-fil från Power BI-tjänsten.
 
 * Du måste ha redigeringsåtkomst till rapporten för att kunna ladda ned filen.
@@ -55,9 +57,12 @@ Det finns några viktiga överväganden och begränsningar att ta hänsyn till v
 * Använd alltid den senaste versionen av Power BI Desktop när du öppnar nedladdade filer. Nedladdade .pbix-filer öppnas kanske inte i inaktuella versioner av Power BI Desktop.
 * Om administratören har stängt av möjligheten att ladda ned data visas den här funktionen inte i Power BI-tjänsten.
 * Datamängder med inkrementell uppdatering kan inte laddas ned till en .pbix-fil.
-* Om du skapar en Power BI-rapport som baseras på en datauppsättning i en arbetsyta och publicerar till en annan arbetsyta kan du och dina användare inte ladda ned den. Nedladdningsfunktionen stöds för närvarande inte i det här scenariot.
+* Datamängder som är aktiverade för [stora modeller](../admin/service-premium-large-models.md) kan inte laddas ned till en .pbix-fil.
+* Datamängder som har ändrats med hjälp av [XMLA-slutpunkten](../admin/service-premium-connect-tools.md) kan inte laddas ned till en .pbix-fil.
+* Om du skapar en Power BI-rapport som baseras på en datamängd i en arbetsyta och publicerar den till en annan arbetsyta kan du och dina användare inte ladda ned den. Nedladdningsfunktionen stöds för närvarande inte i det här scenariot.
 
 ## <a name="next-steps"></a>Nästa steg
+
 Visa enminutsvideon **Kille i en kub** om den här funktionen:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ymWqU5jiUl0" frameborder="0" allowfullscreen></iframe>

@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 02/16/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 9245dd6c25917b2c8c861ea5b83710cd8b52bb22
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 3c76fed8f5533ad339904c4f8251a7404270a0ae
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83279030"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216600"
 ---
 # <a name="monitor-report-performance-in-power-bi"></a>Övervaka rapportprestanda i Power BI
 
@@ -35,7 +35,7 @@ Använd [Frågediagnostik](/power-query/QueryDiagnostics) i Power BI Desktop nä
 > [!NOTE]
 > Frågediagnostik är för närvarande en förhandsgranskningsfunktion, så du måste aktivera den i _Alternativ och inställningar_. När du väl har aktiverat den, så är dess kommandon tillgängliga i Power Query-redigerarens fönster på menyfliken **Verktyg**.
 
-![Bilden visar menyfliken Verktyg i Power Query-redigeraren. Menyfliksområdet visar kommandona Diagnostisera steg, Starta diagnostiken och Stoppa diagnostiken.](media/monitor-report-performance/power-query-diagnotics.png)
+![Skärmbild av menyfliksområdet Verktyg i Power Query-redigeraren med kommandona Diagnostisera steg, Starta diagnostiken och Stoppa diagnostiken.](media/monitor-report-performance/power-query-diagnotics.png)
 
 ## <a name="use-performance-analyzer"></a>Använda Prestandaanalys
 

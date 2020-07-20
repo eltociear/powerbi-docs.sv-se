@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 01/15/2020
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 62beab136dce53c7a3412eb5e2a4ec6470d14ec2
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: e2144cc7460ea2eff84bbcc1e93f02c99d650b35
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85220918"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216362"
 ---
 # <a name="refresh-a-dataset-stored-on-onedrive-or-sharepoint-online"></a>Uppdatera en datauppsättning som lagras på OneDrive eller SharePoint Online
 Att importera filer från OneDrive eller SharePoint Online i Power BI-tjänsten är ett bra sätt för att kontrollera att ditt arbete i Power BI Desktop förblir synkroniserat med Power BI-tjänsten.
@@ -25,11 +25,11 @@ När du lagrar en Power BI Desktop-fil på OneDrive eller SharePoint Online, kom
 
 Du kan utföra manuell engångsuppdatering direkt i Power BI Desktop genom att välja **Uppdatera** på menyfliken **Start**. När du väljer **Uppdatera**, uppdaterar du filmodellen med uppdaterade data från den ursprungliga datakällan. Den här typen av uppdatering sker helt och hållet inifrån själva Power BI Desktop-programmet. Den skiljer sig åt från manuell eller schemalagd uppdatering i Power BI och det är viktigt att förstå skillnaden.
 
-![](media/refresh-desktop-file-onedrive/pbix-refresh.png)
+![Skärmbild av menyfliksområdet Start i Power BI Desktop med valet Uppdatera.](media/refresh-desktop-file-onedrive/pbix-refresh.png)
 
 När du importerar en Power BI Desktop-fil från OneDrive eller SharePoint Online, läser du in data, och modellinformation i en datamängd i Power BI. Du kommer att vilja uppdatera datamängden i Power BI-tjänsten, eftersom det är vad dina rapporter baseras på. Eftersom datakällorna är externa kan du manuellt uppdatera datamängden med **Uppdatera nu**. Du kan också konfigurera ett uppdateringsschema med hjälp av **Schemalägg uppdatering**. 
 
-![](media/refresh-desktop-file-onedrive/powerbi-service-refresh.png)
+![Skärmbild av datamängden i Power BI Desktop och valet Schemalägg uppdatering.](media/refresh-desktop-file-onedrive/powerbi-service-refresh.png)
 
 När du uppdaterar datamängden ansluter Power BI inte till filen på OneDrive eller SharePoint Online för att fråga efter uppdaterade data. Den använder informationen i datamängden för att ansluta direkt till datakällorna och fråga efter uppdaterade data. Sedan läser den in dessa data till datamängden. Uppdaterade data i datamängden synkroniseras inte tillbaka till filen på OneDrive eller SharePoint Online.
 
@@ -39,7 +39,7 @@ Power BI har stöd för **Uppdatera** och **Schemalägg uppdatering** för datam
 > [!NOTE]
 > OneDrive-uppdatering för datamängder med liveanslutning stöds. Att ändra liveanslutningens datamängd, från en datamängd till en annan i en redan publicerad rapport, stöds dock inte i OneDrive-uppdateringsscenariot.
 
-### <a name="power-bi-gateway---personal"></a>Power BI Gateway – Personal
+### <a name="power-bi-gateway---personal"></a>Power BI Gateway - Personal
 * Alla datakällor online som visas i **Hämta data** och **Frågeredigeraren** i Power BI Desktop.
 * Alla lokala datakällor som visas i **Hämta data** och **Frågeredigeraren** i Power BI Desktop, förutom Hadoop-filer (HDFS) och Microsoft Exchange.
 
@@ -52,13 +52,13 @@ Power BI har stöd för **Uppdatera** och **Schemalägg uppdatering** för datam
 > 
 
 ## <a name="onedrive-or-onedrive-for-business-whats-the-difference"></a>OneDrive eller OneDrive för företag. Vad är skillnaden?
-Om du både har en personlig OneDrive och OneDrive för företag, bör du behålla alla filer som du vill importera till Power BI på OneDrive för företag. Skälet är att du förmodligen använder två olika konton för att logga in till dem.
+Om du både har en personlig OneDrive och OneDrive för företag, bör du behålla alla filer som du vill importera till Power BI på OneDrive för företag. Skälet är följande: Du använder förmodligen två olika konton för att logga in till dem.
 
 När du ansluter till OneDrive för företag i Power BI, är det enkelt att ansluta eftersom ditt Power BI-konto ofta är samma konto som ditt OneDrive för företag-konto. På din personliga OneDrive loggar du vanligtvis in med ett annat [Microsoft-konto](https://account.microsoft.com).
 
 När du loggar in med ditt Microsoft-konto bör du markera **Jag vill förbli inloggad**. Power BI kan sedan synkronisera alla uppdateringar du gör i filen i Power BI Desktop med datamängderna i Power BI.
 
-![](media/refresh-desktop-file-onedrive/refresh_signin_keepmesignedin.png)
+![Skärmbild av dialogrutan Logga in med kryssrutan Jag vill förbli inloggad markerad.](media/refresh-desktop-file-onedrive/refresh_signin_keepmesignedin.png)
 
 Om du har ändrat dina Microsoft-autentiseringsuppgifter, kan du inte synkronisera ändringar mellan din fil på OneDrive och datamängden i Power BI. Du måste ansluta till och importera filen igen från OneDrive.
 
@@ -81,4 +81,4 @@ Ibland går det inte som förväntat att uppdatera data. Du stöter normalt på 
 
 [Felsöka Power BI Gateway – Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)
 
-Fler frågor? Fråga [Power BI Community](https://community.powerbi.com/).
+Har du fler frågor? Fråga [Power BI Community](https://community.powerbi.com/).

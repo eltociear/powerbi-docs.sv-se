@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 01/22/2020
 LocalizationGroup: Dashboards
-ms.openlocfilehash: ee5536f2c4026ceb019c5f89b6045afd44b35529
-ms.sourcegitcommit: 0b1e96de184caf2371adedcc3ee43bcb88048187
+ms.openlocfilehash: 380fe94a123c26d7502ce68bc21372f791a3508f
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85299628"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86162053"
 ---
 # <a name="monitor-usage-metrics-in-the-new-workspace-experience"></a>Övervaka användningsstatistik i den nya arbetsytan
 
@@ -82,7 +82,7 @@ Den förbättrade användningsstatistikrapporten innehåller följande rapportsi
 | Rapportanvändning | Unika användare | En användare är någon som öppnade rapporten minst en gång under tidsperioden (baserat på AAD-användarkontot). |
 | Rapportanvändning | Visningstrend | Visningstrenden visar antalet ändringar över tid. Den jämför den första halvan av den valda tidsperioden med den andra halvan. |
 | Rapportanvändning | Datumutsnitt | Du kan ändra tidsperioden på rapportanvändningssidan, till exempel för att beräkna trender vecka för vecka eller varannan vecka. I det nedre vänstra hörnet på rapportanvändningssidan kan du fastställa det tidigaste och senaste datumet då användningsdata är tillgängliga för den valda rapporten. |
-| Rapportanvändning | Rangordning | Baserat på antal visningar visar rankningen en rapports popularitet i jämförelse med alla andra rapporter i organisationen.   |
+| Rapportanvändning | Rangordning | Baserat på antal visningar visar rankningen en rapports popularitet i jämförelse med alla andra rapporter i organisationen. Rangordningen 1 innebär att rapporten har flest visningar av alla rapporter i organisationen.   |
 | Rapportanvändning | Rapportvisningar per dag | Totalt antal visningar per dag. |
 | Rapportanvändning | Rapportanvändare per dag | Det totala antalet olika användare som visat rapporten (baserat på AAD-användarkontot). |
 | Rapportanvändning | Distributionsmetod | Hur användarna får åtkomst till rapporten, t. ex. när de är medlemmar i en arbetsyta, genom att rapporten delas med dem eller genom att installera en app. |
@@ -258,6 +258,8 @@ Förutom ovanstående skillnader mellan tidigare och förbättrade användningss
 - Det kan ta några minuter att initiera datauppsättningen för användningsstatistikrapporten, vilket leder till att en tom användningsstatistikrapport visas, eftersom Power BI-användargränssnittet inte väntar på att uppdateringen ska slutföras. Kontrollera uppdateringshistoriken för datauppsättningsinställningarna i användningsstatistiken för att kontrollera att uppdateringen har slutförts.
 - Det kanske inte gå att initiera datauppsättningen för användningsstatistikrapporten på grund av en tidsgräns som påträffades under uppdateringen. Se felsökningsavsnittet nedan för att lösa problemet.
 - Delning har inaktiverats för användningsstatistikrapporten. Om du vill ge användare läsbehörighet till rapporten måste du först ge dem åtkomst till arbetsytan.
+- I vissa fall kanske du märker att prestandadata saknas. Det här kan inträffa om en användare öppnar en rapport och interagerar med rapporten innan den har lästs in eller om det uppstått något fel under inläsningen av rapporten.
+- Prestandadata är beroende av klienten/enheten som skickar data till Power BI. Nätverkets svarstider, annonsblockerare, brandväggar och de nätverksregler som organisationen har angett kan göra att prestandadata aldrig når Power BI. Prestandadata är därför bara avsedda som exempel och kan inte inkludera eller visa alla användare. 
 
 ## <a name="frequently-asked-questions"></a>Vanliga frågor och svar
 
@@ -309,7 +311,7 @@ Plattformen visar tekniken som ett visningsprogram använt för att öppna en ra
 
 **F:** Hur fungerar rapportrangordning?
 
-**S:** Baserat på antal visningar visar rankningen en rapports popularitet i jämförelse med alla andra rapporter i organisationen.
+**S:** Baserat på antal visningar visar rankningen en rapports popularitet i jämförelse med alla andra rapporter i organisationen. Rangordningen 1 innebär att rapporten har flest visningar av alla rapporter i organisationen.
 
 **F:** Vad är ”namnlösa användare”?
 

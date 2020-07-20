@@ -8,12 +8,12 @@ ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 01/14/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 90f501b257313c48cbef13517747ff83cd9ea9d1
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 35a62923ba69520c1197e7bb80114a22ec1d9a20
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78920772"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86214090"
 ---
 # <a name="use-cascading-parameters-in-paginated-reports"></a>Använda sammanhängande parametrar i sidnumrerade rapporter
 
@@ -60,7 +60,7 @@ Vi tar en titt på tre exempel för att hjälpa dig att begränsa stora mängder
 
 I det här exemplet interagerar rapportanvändaren med fem rapportparametrar. Användaren måste välja land/region, delstat/provins, ort och sedan postnummer. En slutgiltig parameter listar sedan återförsäljare som finns på den geografiska platsen.
 
-![Bilden visar fem rapportparametrar: Country-region (Land/region), State-province (Delstat/provins), City (Ort), Postal Code (Postnummer) och Reseller (Återförsäljare). De fyra första värdena har angetts och listan över återförsäljare filtreras till endast fyra objekt.](media/paginated-report-cascading-parameter/filter-by-related-columns-example.png)
+![Skärmbild av Power BI-parametrar för sidnumrerade rapporter som visar filtrering efter relaterade kolumner.](media/paginated-report-cascading-parameter/filter-by-related-columns-example.png)
 
 Så här kan du utveckla de sammanhängande parametrarna:
 
@@ -134,7 +134,7 @@ Så här kan du utveckla de sammanhängande parametrarna:
 
 I det här exemplet interagerar rapportanvändaren med en rapportparameter för att välja den första bokstaven i återförsäljarens namn. En andra parameter visar sedan återförsäljare när namnet börjar med den valda bokstaven.
 
-![Bilden visar fem rapportparametrar: Group (Grupp) och Reseller (Återförsäljare). Det första parametervärdet anges till bokstaven A, och listan över återförsäljare filtreras efter flera poster som börjar med den bokstaven.](media/paginated-report-cascading-parameter/filter-by-grouping-column-example.png)
+![Skärmbild av Power BI-parametrar för sidnumrerade rapporter som visar filtrering efter en grupperingskolumn.](media/paginated-report-cascading-parameter/filter-by-grouping-column-example.png)
 
 Så här kan du utveckla de sammanhängande parametrarna:
 
@@ -196,7 +196,7 @@ GO
 
 I det här exemplet interagerar rapportanvändaren med en rapportparameter för att ange ett sökmönster. En andra parameter visar sedan återförsäljare när namnet innehåller mönstret.
 
-![Bilden visar två rapportparametrar: Search (Sök) och Reseller (Återförsäljare). Det första parametervärdet anges till testen ”red” och listan över återförsäljare filtreras efter flera poster som innehåller den texten.](media/paginated-report-cascading-parameter/filter-by-search-pattern-example.png)
+![Skärmbild av Power BI-parametrar för sidnumrerade rapporter som visar filtrering efter ett sökmönster.](media/paginated-report-cascading-parameter/filter-by-search-pattern-example.png)
 
 Så här kan du utveckla de sammanhängande parametrarna:
 
@@ -242,7 +242,7 @@ I det här scenariot kan du använda faktauppgifter för att begränsa antalet t
 
 I det här exemplet interagerar rapportanvändaren med tre rapportparametrar. De första två anger ett datumintervall för försäljningsorder. Den tredje parametern visar sedan återförsäljare där ordrar har skapats under den tidsperioden.
 
-![Bilden visar tre rapportparametrar: Start Order Date (Orderns startdatum) ,End Order Date (Orderns slutdatum) och Reseller (Återförsäljare). De två datumparametrarna har angetts till januari 2020 och listan över återförsäljare filtreras efter flera poster som representerar återförsäljare som har skapat ordrar under den här månaden.](media/paginated-report-cascading-parameter/filter-relevant-items-example.png)
+![Skärmbild av Power BI-parametrar för sidnumrerade rapporter som visar tre rapportparametrar: Start Order Date (Orderns startdatum) ,End Order Date (Orderns slutdatum) och Reseller (Återförsäljare).](media/paginated-report-cascading-parameter/filter-relevant-items-example.png)
 
 Så här kan du utveckla de sammanhängande parametrarna:
 

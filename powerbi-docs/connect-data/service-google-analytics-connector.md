@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 3247e718e5e98536ddce3a253f8e78e5ff615614
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: ec290ce53155f24a9213a4849ecb82abd6cfc592
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85234448"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86263652"
 ---
 # <a name="use-the-google-analytics-connector-for-power-bi-desktop"></a>Använda Google Analytics-anslutningsprogrammet för Power BI Desktop
 > [!NOTE]
@@ -27,21 +27,21 @@ Du kan ansluta till Google Analytics-data med hjälp av **Google Analytics**-ans
 2. I fönstret **Hämta data** väljer du **Onlinetjänster** från kategorierna i det vänstra fönstret.
 3. Välj **Google Analytics** från alternativen i det högra fönstret.
 4. Längst ned i fönstret väljer du **Anslut**.  
-   ![](media/service-google-analytics-connector/tps_googleanalytics_1.png)
+   ![Skärmbild av fliken Start och menyfliksområdet Hämta data med Google Analytics valt och knappen Anslut.](media/service-google-analytics-connector/tps_googleanalytics_1.png)
 
 En dialogruta visas som förklarar att anslutningsprogrammet är en tredjepartstjänst, varnar om hur funktioner och tillgänglighet kan ändras med tiden samt andra förtydliganden.  
-![](media/service-google-analytics-connector/tps_googleanalytics_2.png)
+![Skärmbild av anslutningsdialogrutan med en varning om att anslutningsprogrammet är beroende av en tjänst från tredje part.](media/service-google-analytics-connector/tps_googleanalytics_2.png)
 
 När du väljer **Fortsätt** uppmanas du att logga in på Google Analytics.  
-![](media/service-google-analytics-connector/tps_googleanalytics_3.png)
+![Skärmbild av Google Analytics-prompten som visar att du måste logga in för att ansluta.](media/service-google-analytics-connector/tps_googleanalytics_3.png)
 
 När du anger dina autentiseringsuppgifter visas ett meddelande om att Power BI vill ha offlineåtkomst. Detta är hur du använder **Power BI Desktop** för att få åtkomst till dina Google Analytics-data.  
 
 När du har accepterat visar **Power BI Desktop** att du för närvarande är inloggad.  
-![](media/service-google-analytics-connector/tps_googleanalytics_5.png)
+![Skärmbild av Google Analytics-prompten som visar att du är inloggad.](media/service-google-analytics-connector/tps_googleanalytics_5.png)
 
 Välj **Anslut**. Dina Google Analytics-data ansluts till **Power BI Desktop** och läser in datan.  
-![](media/service-google-analytics-connector/tps_googleanalytics_6.png)
+![Skärmbild av dialogrutan Läs in som visar att Google Analytics-data är anslutna och läses in.](media/service-google-analytics-connector/tps_googleanalytics_6.png)
 
 ## <a name="changes-to-the-api"></a>Ändringar i API:n
 Även om vi försöker släppa uppdateringar i takt med ändringarna, kan API:n ändras på ett sätt som påverkar resultaten för de frågor som vi genererar. I vissa fall kanske inte vissa frågor längre stöds. På grund av detta beroende kan vi inte garantera resultatet för dina frågor när du använder det här anslutningsprogrammet.

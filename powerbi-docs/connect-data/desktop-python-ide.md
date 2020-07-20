@@ -1,5 +1,5 @@
 ---
-title: Använd en extern Python IDE med Power BI
+title: Använda en extern Python IDE med Power BI
 description: Du kan starta och använda en extern IDE med Power BI
 author: otarb
 ms.reviewer: ''
@@ -9,17 +9,17 @@ ms.topic: how-to
 ms.date: 06/18/2018
 ms.author: otarb
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 902b2580dbdd454b5a0eec234ba11e59cc5eb666
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 8fdc0ecb4dfa1d35077e773ff7f568106168009c
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85223426"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86215357"
 ---
-# <a name="use-an-external-python-ide-with-power-bi"></a>Använd en extern Python IDE med Power BI
+# <a name="use-an-external-python-ide-with-power-bi"></a>Använda en extern Python IDE med Power BI
 Med **Power BI Desktop** kan du använda din externa Python IDE (Integrated Development Environment) för att skapa och förfina Python-skript och sedan använda dessa skript i Power BI.
 
-![](media/desktop-python-ide/python-ide-1.png)
+![Skärmbild av dialogrutan Alternativ med Visual Studio Code angivet i fältet Identifierade Python-IDE:er.](media/desktop-python-ide/python-ide-1.png)
 
 ## <a name="enable-an-external-python-ide"></a>Aktivera ett externt Python IDE
 Du kan starta ditt externa Python IDE från **Power BI Desktop** och låta dina data importeras och visas automatiskt i Python IDE. Därifrån kan du ändra skriptet i det externa Python IDE:t och sedan klistra in det igen i **Power BI Desktop** för att skapa visuella Power BI-objekt och rapporter.
@@ -36,7 +36,7 @@ Om du vill använda den här funktionen måste du installera ett **Python IDE** 
   * Du kan associera **.PY**-filer med den externa IDE som du vill att **Power BI Desktop** ska starta.
   * Du kan ange den .exe som **Power BI Desktop** ska starta genom att välja *Övrigt* i avsnittet **Python-skriptalternativ** i dialogrutan **Alternativ**. Du kan öppna dialogrutan **Alternativ** genom att gå till **Arkiv > Alternativ och inställningar > Alternativ**.
     
-    ![](media/desktop-python-ide/python-ide-2.png)
+    ![Skärmbild av dialogrutan Alternativ med Annat angivet i fältet Identifierade Python-IDE:er.](media/desktop-python-ide/python-ide-2.png)
 
 Om du har flera Python IDE:er installerade kan du ange vilken som ska startas genom att välja den i listrutan *Identifierade Python-IDE:er* i dialogrutan **Alternativ**.
 
@@ -50,13 +50,13 @@ Starta en Python IDE från **Power BI Desktop** genom att utföra följande steg
 1. Läs in data till **Power BI Desktop**.
 2. Välj några fält i fönstret **Fält** som du vill arbeta med. Om du inte har aktiverat visuell skriptinformation ännu uppmanas du att göra detta.
    
-   ![](media/desktop-python-ide/python-ide-3.png)
+   ![Skärmbild av dialogrutan Aktivera skriptbilder med en uppmaning att aktivera dem.](media/desktop-python-ide/python-ide-3.png)
 3. När visuell skriptinformation är aktiverad kan du välja ett visuellt Python-objekt i fönstret **Visualiseringar**, vilket skapar ett tomt visuellt Python-objekt som är redo att visa resultatet av skriptet. Fönstret **Python-skriptredigerare** visas också.
    
-   ![](media/desktop-python-ide/python-ide-4.png)
+   ![Skärmbild av fönstret Visualiseringar och en tom Python-kontroll.](media/desktop-python-ide/python-ide-4.png)
 4. Du kan nu välja de fält som du vill använda i ditt Python-skript. När du väljer ett fält skapar fältet **Python-skriptredigerare** automatiskt skriptkod baserat på det eller de fält som du väljer. Du kan antingen skapa (eller klistra in) Python-skriptet direkt i fönstret **Python-skriptredigerare** eller lämna det tomt.
    
-   ![](media/desktop-python-ide/python-ide-5.png)
+   ![Skärmbild av fönstret Visualiseringar som visar en tom Python-kontroll med skriptkod i R-skriptredigeraren.](media/desktop-python-ide/python-ide-5.png)
    
    > [!NOTE]
    > Aggregeringens standardtyp för visuella Python-objekt är *Summera inte*.
@@ -64,10 +64,10 @@ Starta en Python IDE från **Power BI Desktop** genom att utföra följande steg
    > 
 5. Nu kan du starta din Python IDE direkt från **Power BI Desktop**. Välj knappen **Starta Python IDE** som finns på höger sida i namnlisten **Python-skriptredigerare** enligt nedan.
    
-   ![](media/desktop-python-ide/python-ide-6.png)
+   ![Skärmbild av Python-skriptredigeraren som visar hur du startar Python-IDE:n.](media/desktop-python-ide/python-ide-6.png)
 6. Den angivna Python IDE:n startas av Power BI Desktop enligt följande bild (i den här bilden är **Visual Studio Code** standard för Python IDE).
    
-   ![](media/desktop-python-ide/python-ide-7.png)
+   ![Skärmbild av Python-IDE:n i Visual Studio Code.](media/desktop-python-ide/python-ide-7.png)
    
    > [!NOTE]
    > **Power BI Desktop** lägger till de tre första raderna i skriptet så att den kan importera data från **Power BI Desktop** när du kör skriptet.

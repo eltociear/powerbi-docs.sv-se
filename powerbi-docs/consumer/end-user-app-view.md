@@ -6,16 +6,16 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 05/26/2020
+ms.date: 07/08/2020
 ms.author: mihart
 ms.custom: licensing support
 LocalizationGroup: Share your work
-ms.openlocfilehash: 8040822453050b06f29ee8c6799e26d1d0a6dbea
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 7362eb683dae6318dc0e64de68afb8a8b57d62c6
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238461"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86162182"
 ---
 # <a name="install-and-use-apps-with-dashboards-and-reports-in-power-bi"></a>Installera och använda appar med instrumentpaneler och rapporter i Power BI
 
@@ -28,10 +28,10 @@ Nu när du har en [grundläggande förståelse av appar](end-user-apps.md) ska v
 ## <a name="ways-to-get-a-new-app"></a>Olika sätt att skaffa en ny app
 Det finns flera sätt att skaffa en ny app:
 * Du kan hämta den från Marketplace för Power BI-appar i Power BI.
-* Du kan använda en direktlänk till en app som du har fått från appens skapare. 
-* En rapportdesigner i organisationen kan installera appen automatiskt på ditt Power BI-konto.
+* Du kan använda en direktlänk till en app som du har fått från appdesignern. 
+* En appdesigner i organisationen kan installera appen automatiskt på ditt Power BI-konto.
 
-I din Power BI-mobilapp kan du bara installera en app från en direktlänk. Om appdesignern installerar appen automatiskt visas den i din lista över appar.
+Med Power BI Mobile kan du bara installera appar via direktlänk. Om appdesignern installerar appen automatiskt visas den i din lista över appar.
 
 ## <a name="apps-and-licenses"></a>Appar och licenser
 Alla Power BI-användare kan inte visa och interagera med appar. 
@@ -41,6 +41,9 @@ Alla Power BI-användare kan inte visa och interagera med appar.
 ## <a name="get-the-app-from-the-power-bi-apps-marketplace"></a>Hämta appen från Marketplace för Power BI-appar
 
 Du kan söka efter och installera appar från Marketplace för Power BI-appar. I marketplace för appar kan du hämta både organisationsappar och mallappar.
+
+- En *organisationsapp* är tillgänglig för Power BI-användare inom organisationen. Sådana appar kan även ha färdiga instrumentpaneler och rapporter som du kan använda i befintligt skick eller anpassa och dela med andra. Din organisation kan ha appar för att spåra försäljning, mäta resultat eller analysera nyanställda.
+- En *mallapp* har färdiga instrumentpaneler och rapporter som du kan använda till att ansluta till många av de tjänster du använder i verksamheten, som Salesforce, Microsoft Dynamics och Google Analytics.
 
 1. [Logga in på Power BI-tjänsten](./end-user-sign-in.md) om du inte redan har loggat in. 
 
@@ -61,19 +64,19 @@ Du kan söka efter och installera appar från Marketplace för Power BI-appar. I
 
    Sökrutan är känslig för fliken du har öppen – endast appar av den valda typen returneras. Om fliken **Alla appar** är öppen, returneras både organisationsappar och mallappar. Detta kan vara förvirrande när en organisationsapp och en mallapp har samma namn. Kom bara ihåg att mallappens paneler har en shoppingbag-ikon i det övre högra hörnet.
 
-När du hittar den app du vill använda klickar du på **Hämta nu** för att installera den.
+När du hittar den app du vill använda väljer du **Hämta nu** för att installera den.
 * Om du installerar en organisationsapp läggs den omedelbart till i din lista med appar.
-* Om du installerar en mallapp kommer du att gå till mallenapperbjudandet i AppSource. Se [ett exempel](end-user-app-marketing.md) på hur du laddar ner och installerar en exempelmallapp från Marketplace för Power BI-appar. 
+* Om du installerar en mallapp kommer du att gå till mallenapperbjudandet i AppSource. Se [ett exempel](end-user-app-marketing.md) på hur du laddar ner och installerar en exempelmallapp från Marketplace för Power BI-appar. Appen installeras tillsammans med en arbetsyta med samma namn.
 
    > [!NOTE]
-   > Om du använder en kostnadsfri användarlicens kan du ladda ned appar, men kan inte visa dem om du inte uppgraderar till ett Power BI Pro-konto eller om appen inte är lagrad i Premium-kapaciteten. Mer information finns i [licenser för konsumenter](end-user-license.md).
+   > Om du använder en kostnadsfri användarlicens kan du ladda ned appar, men du kan inte visa dem om du inte uppgraderar till ett Power BI Pro-konto. Annars måste appen lagras i en delad Premium-kapacitet. Mer information finns i [licenser för konsumenter](end-user-license.md).
 
 ## <a name="install-an-app-from-a-direct-link"></a>Installera en app från en direktlänk
 Du kan också installera en organisationsapp från en direktlänk i ett e-postmeddelande från App Designer.  
 
 **På datorn** 
 
-När du väljer länken i ett e-postmeddelande öppnar Power BI-tjänsten ([https://powerbi.com](https://powerbi.com)) appen i din webbläsare. 
+När du väljer länken i ett e-postmeddelande öppnar Power BI-tjänsten ([https://powerbi.com](https://app/powerbi.com)) appen i din webbläsare. 
 
 **På iOS- eller mobila Android-enheter** 
 
@@ -82,9 +85,40 @@ När du väljer länken i ett e-postmeddelande på din mobila enhet så installe
 ## <a name="interact-with-the-dashboards-and-reports-in-the-app"></a>Interagera med instrumentpaneler och rapporter i appen
 Ägna en stund åt att utforska data på de instrumentpaneler och i de rapporter som ingår i appen. Du har åtkomst till alla Power BI-standardinteraktioner som filtrering, syntaxmarkering, sortering och detaljinformation.  Är du fortfarande lite osäker på skillnaden mellan instrumentpaneler och rapporter?  Läs [artikeln om instrumentpaneler](end-user-dashboards.md) och [artikeln om rapporter](end-user-reports.md).  
 
+### <a name="open-an-app"></a>Öppna en app
+
+Du har installerat en app eller fått en app från en kollega. Om du vill visa appen öppnar du innehållslistan för appar genom att välja **Appar** i navigeringsfönstret.
+
+![Skärmbild av innehållslistan för appar](./media/end-user-app-view/power-bi-apps-list.png)
+
+Hovra över och välj den app du vill öppna. Beroende på appen kan du få ett meddelande som ser ut ungefär så här:
+
+![Skärmbild med tre alternativ om att utforska, ansluta och anpassa](./media/end-user-app-view/power-bi-customize.png)
+
+I [Installera mallappar](../connect-data/service-template-apps-install-distribute.md) kan du få hjälp med vad du ska välja.
+
+Hovra över appen om du vill visa information och välj appkortet för att öppna appen.
+
+![Skärmbild av hovringstillståndet för en app som visar namn, tidsstämpel, ägare och åtgärder. ](./media/end-user-app-view/power-bi-apps-hover.png)
+
+Appen öppnas. Alla appar är olika. De har olika layout, kontroller, färger och alternativ. Alla appar har dock några gemensamma funktioner.
+
+![Skärmbild av appen Sales and Marketing med olika områden identifierade med siffror ](./media/end-user-app-view/power-bi-app-numbered.png)
+
+1. Appens namn och tiden för senaste uppdatering. Välj listrutan om du vill visa ägaren och hjälpkontakten.
+1. Välj **Power BI** för att återgå till [Home](end-user-home.md).
+1. Ditt åtgärdsfält. 
+1. Rapportsidans arbetsyta.
+1. Appnavigeringsfönstret.  Under appens namn hittar du listan med rapportsidor. Välj namnet på en rapportsida om du vill öppna den. För närvarande är sidan *Return rate* öppen. 
+1. Välj pilen för att expandera rutan **Filter** .
+
+Du kan också utforska den tillhörande arbetsytan. [Läs mer om arbetsytor](end-user-workspaces.md)
+
+![Skärmbild av arbetsytan Sales and Marketing med en rapport och en datamängd. ](./media/end-user-app-view/power-bi-new-workspace.png)
+
 ## <a name="update-an-app"></a>Uppdatera en app 
 
-Ibland kan appskapare släppa nya versioner av sina appar. Ditt sätt att skaffa den nya versionen beror på hur du fick den ursprungliga versionen. 
+Ibland kan appdesigners släppa nya versioner av sina appar. Ditt sätt att skaffa den nya versionen beror på hur du fick den ursprungliga versionen. 
 
 * Om du fick appen från din organisation är uppdateringen av den nya versionen helt transparent – du behöver inte göra något. 
 
@@ -106,6 +140,11 @@ Ibland kan appskapare släppa nya versioner av sina appar. Ditt sätt att skaffa
     > När du installerar en ny version skrivs alla ändringar du har gjort av rapporter och instrumentpaneler över. Om du vill behålla dina uppdaterade rapporter och instrumentpaneler kan du spara dem med ett annat namn eller på en annan plats innan du installerar. 
 
     4. När du har installerat den uppdaterade versionen väljer du **Uppdatera app** för att slutföra uppdateringsprocessen. 
+
+## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
+
+- Power BI-administratören kan aktivera och avaktivera möjligheten att installera appar. Kontakta IT-avdelningen eller supportavdelningen om du behöver aktivera den här funktionen.    
+- För användning av appar behöver du antingen en Pro-licens, eller så måste appen vara lagrad i en delad Premium-kapacitet. [Läs mer om licenser](end-user-license.md).
 
 
 ## <a name="next-steps"></a>Nästa steg

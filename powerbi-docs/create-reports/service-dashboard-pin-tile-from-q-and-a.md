@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 03/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: d74c6583197441d63cb6c7c40ba44a5b21885b28
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 76c76cf5ae41c369e3810f3a52ee43816184d8e1
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85219193"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86263066"
 ---
 # <a name="pin-a-tile-to-a-dashboard-from-qa"></a>Fäst en panel till en instrumentpanel från frågor och svar
 ## <a name="how-to-pin-a-tile-from-qa"></a>Så här fäster du en panel från frågor och svar
@@ -32,7 +32,7 @@ Om du vill följa med, kan du öppna instrumentpanelen [Exempel på detaljhandel
    ![skriv en fråga](media/service-dashboard-pin-tile-from-q-and-a/power-bi-type-q-and-a.png)
 
    ger frågerutan dig förslag.
-4. Om du vill lägga till diagrammet till din instrumentpanel, väljer du fäst ![](media/service-dashboard-pin-tile-from-q-and-a/pbi_pintile.png) längst upp till höger i arbetsytan. Om instrumentpanelen inte har delats med dig, kommer du inte kunna fästa några visualiseringar.
+4. Välj fästikonen för att lägga till diagrammet på din instrumentpanel som en panel ![Fästikon](media/service-dashboard-pin-tile-from-q-and-a/pbi_pintile.png) uppe till höger på arbetsytan. Om instrumentpanelen inte har delats med dig, kommer du inte kunna fästa några visualiseringar.
 
 5. Fäst panelen på en befintlig eller ny instrumentpanel.
 

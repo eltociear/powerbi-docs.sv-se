@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
 ms.date: 05/19/2020
-ms.openlocfilehash: 7483b6878a7f7c2e01be7869827f8de66499cc5f
-ms.sourcegitcommit: 46a340937d9f01c6daba86a4ab178743858722ec
+ms.openlocfilehash: 0f07c27cf9c69c07ae7b05c0cbf2573605647252
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85393799"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86264837"
 ---
 # <a name="what-are-paginated-reports-in-power-bi-premium"></a>Vad är sidnumrerade rapporter i Power BI Premium?
 
@@ -24,7 +24,7 @@ Sidnumrerade rapporter har ofta många sidor. Den här rapporten har till exempe
 
 ![Sidnumrerad](media/paginated-reports-report-builder-power-bi/power-bi-paginated-wwi-report-page.png)
 
-Du kan förhandsgranska rapporten i Report Builder och sedan publicera den i Power BI-tjänsten `https://app.powerbi.com`. Du måste ha en Power BI Pro-licens för att kunna publicera en rapport i tjänsten. Du kan publicera och dela sidnumrerade rapporter på Min arbetsyta eller på arbetsytor så länge arbetsytan ligger i en Power BI Premium-kapacitet. Dessutom måste en Power BI-administratör aktivera sidnumrerade rapporter i [avsnittet Premium-kapaciteter](../admin/service-admin-premium-workloads.md#paginated-reports) i Power BI-administratörsportalen. 
+Du kan förhandsgranska rapporten i Report Builder och sedan publicera den i Power BI-tjänsten, app.powerbi.com. Du måste ha en Power BI Pro-licens för att kunna publicera en rapport i tjänsten. Du kan publicera och dela sidnumrerade rapporter på Min arbetsyta eller på arbetsytor så länge arbetsytan ligger i en Power BI Premium-kapacitet. Dessutom måste en Power BI-administratör aktivera sidnumrerade rapporter i [avsnittet Premium-kapaciteter](../admin/service-admin-premium-workloads.md#paginated-reports) i Power BI-administratörsportalen. 
 
 ## <a name="compare-power-bi-reports-and-paginated-reports"></a>Jämföra Power BI-rapporter och sidnumrerade rapporter
 

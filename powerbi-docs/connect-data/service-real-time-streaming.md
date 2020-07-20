@@ -9,17 +9,17 @@ ms.topic: how-to
 ms.date: 05/21/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 2679e9fa21b193fa4c19384c2bd7d22660cf657a
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 0472baffa765f1a1e7d39e365e40a1f596472a16
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85235787"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86264384"
 ---
 # <a name="real-time-streaming-in-power-bi"></a>Realtidsuppspelning i Power BI
 Med direktuppspelning i realtid för Power BI, kan du strömma data och uppdatera instrumentpaneler i realtid. Visuella objekt och instrumentpaneler som kan skapas i Power BI kan även skapas för att visa och uppdatera data och visuella objekt i realtid. Enheter och datakällor för strömmande data kan vara fabrikssensorer, sociala mediekällor, användningsstatistik för tjänsten och alla andra källor där tidskänsliga data kan insamlas eller skickas.
 
-![Skärmbild som visar resultatet av miljösensorer i realtid.](media/service-real-time-streaming/real-time-streaming-10.png)
+![Skärmbild av instrumentpanelen Environmental sensors som visar dataresultat i realtid.](media/service-real-time-streaming/real-time-streaming-10.png)
 
 Den här artikeln visar hur man ställer in en strömmande datauppsättning i realtid i Power BI. Men innan dess är det viktigt att förstå de typer av datauppsättningar i realtid som är skapade att visas i paneler (och instrumentpaneler) och hur de datauppsättningarna skiljer sig åt.
 
@@ -61,7 +61,7 @@ Paneler baserade på en **PubNub-strömmande datauppsättning** är optimerade f
 ### <a name="streaming-dataset-matrix"></a>Matris över strömmande datauppsättningar
 Följande tabell (eller matris, om du vill) beskriver de tre typerna av datauppsättningar för strömning i realtid listar deras funktioner och begränsningar.
 
-![](media/service-real-time-streaming/real-time-streaming_11.png)
+![Skärmbild av en tabell som visar matrisen för den strömmade datamängden.](media/service-real-time-streaming/real-time-streaming_11.png)
 
 > [!NOTE]
 > Se [den här artikeln](../developer/automation/api-rest-api-limitations.md) för information om **push**-begränsningar för hur mycket data som kan pushas in.
@@ -92,11 +92,11 @@ Alla begäranden till REST API:er är skyddade med **Azure AD OAuth**.
 ### <a name="using-the-streaming-dataset-ui-to-push-data"></a>Använd användargränssnittet för strömmande datauppsättningar för att pusha data
 I Power BI-tjänsten kan du skapa en datauppsättning genom att välja **API**-metoden enligt följande bild.
 
-![](media/service-real-time-streaming/real-time-streaming_0b.png)
+![Skärmbild av alternativen för Ny strömmande datauppsättning och valet API.](media/service-real-time-streaming/real-time-streaming_0b.png)
 
 När du skapar nya strömmande datauppsättning, du kan välja att aktivera **historisk dataanalys** enligt nedan, vilket har en betydande inverkan.
 
-![](media/service-real-time-streaming/real-time-streaming_0c.png)
+![Skärmbild av den nya strömmande datauppsättningen med Historisk dataanalys aktiverat.](media/service-real-time-streaming/real-time-streaming_0c.png)
 
 När **historisk dataanalys** är inaktiverat (det är inaktiverat som standard), skapar du en **strömmande datauppsättning** som det beskrivs tidigare i den här artikeln. När **historisk dataanalys** är *aktiverat*, blir den skapade datauppsättningen både en **strömmande datauppsättning** och en **push-datauppsättning**. Det här motsvarar att använda Power BI REST API:er för att skapa en datauppsättning med sitt *defaultMode* inställt på *pushStreaming*, som det beskrivs tidigare i den här artikeln.
 
@@ -125,19 +125,19 @@ Om du vill komma igång med strömning i realtid, måste du välja ett av de tv�
 
 Bägge alternativen kräver att du ställer in **strömmande data** i Power BI. Du gör detta i din instrumentpanel (antingen en befintlig instrumentpanel eller en ny) genom att välja **lägg till en panel** och därefter välja **anpassade strömmande data**.
 
-![](media/service-real-time-streaming/real-time-streaming_1.png)
+![Skärmbild av instrumentpanelen som visar valet Anpassad strömmande data i avsnittet Lägg till panel.](media/service-real-time-streaming/real-time-streaming_1.png)
 
 Oroa dig inte om du inte har strömmande datauppsättning inställt ännu, du kan välja **hantera data** för att komma igång.
 
-![](media/service-real-time-streaming/real-time-streaming_2.png)
+![Skärmbild av instrumentpanelen som visar länken för hanterade data i Lägg till en anpassad panel med strömmande data.](media/service-real-time-streaming/real-time-streaming_2.png)
 
 På den här sidan kan du ange slutpunkten för din strömmande datauppsättning om du redan har skapat en (i textrutan). Om du inte har en strömmande datauppsättning ännu, väljer du plusikonen ( **+** ) i det övre högra hörnet för att se tillgängliga alternativ för att skapa en strömmande datauppsättning.
 
-![](media/service-real-time-streaming/real-time-streaming_3.png)
+![Skärmbild av instrumentpanelen som visar hur du matar in slutpunkten för din strömmande datauppsättning med en pekare till plusikonen.](media/service-real-time-streaming/real-time-streaming_3.png)
 
 När du klickar på **+** -ikonen, visas två alternativ:
 
-![](media/service-real-time-streaming/real-time-streaming_4a.png)
+![Skärmbild av Ny strömmande datauppsättning med valen API och PubNub.](media/service-real-time-streaming/real-time-streaming_4a.png)
 
 Nästa avsnitt går igenom de här alternativen och innehåller mer information om hur du skapar en strömmande **panel** eller hur du skapar en **datauppsättning** från den strömmande datakällan som du sedan kan använda för att skapa rapporter.
 
@@ -152,7 +152,7 @@ Nästa avsnitt går igenom varje alternativ i tur och ordning.
 ### <a name="using-the-power-bi-rest-api"></a>Med hjälp av POWER BI REST API
 **Power BI REST API** De senaste förbättringarna av Power BI REST API har skapats för att göra strömning i realtid enklare för utvecklare. När du väljer **API** från det **nya strömmande datauppsättnings**fönstret så får du se poster som låter Power BI ansluta till och använda din slutpunkt:
 
-![](media/service-real-time-streaming/real-time-streaming_5.png)
+![Skärmbild av dialogrutan Ny strömmande datauppsättning som visar REST API-alternativ för anslutning.](media/service-real-time-streaming/real-time-streaming_5.png)
 
 Om du vill att Power BI ska lagra de data som skickas via den här dataströmmen, aktiverar du *analys av historiska data* så kommer du att kunna göra rapporter och analyser på den insamlade dataströmen. Du kan också [läsa mer om API:et](https://docs.microsoft.com/rest/api/power-bi/).
 
@@ -163,7 +163,7 @@ När du gör *POST*-begäranden, bör du kontrollera att begärandetexten matcha
 ### <a name="using-pubnub"></a>Med hjälp av PubNub
 Integreringen av **PubNub**-strömning med Power BI låter dig använda dina **PubNub**-dataströmmar med låg latens (eller skapa nya) och använda dem i Power BI. När du väljer **PubNub** och sedan väljer **nästa**, får du upp följande fönster:
 
-![](media/service-real-time-streaming/real-time-streaming_7.png)
+![Skärmbild av dialogrutan Ny strömmande datauppsättning med PubNub-alternativ för anslutning.](media/service-real-time-streaming/real-time-streaming_7.png)
 
 > [!WARNING]
 > PubNub-kanaler kan skyddas med en autentiseringsnyckel från PubNub Access Manager (PAM). Den här nyckeln kommer att delas med alla användare som har åtkomst till instrumentpanelen. Du kan [läsa mer om PubNub-åtkomstkontroll](https://www.pubnub.com/docs/web-javascript/pam-security).
@@ -179,7 +179,7 @@ I det här exemplet, använder vi en offentligt tillgänglig ström från **PubN
 
 1. I **Power BI-tjänsten**, väljer du en instrumentpanel (eller skapa en ny) och välj **Lägg till panel** > **anpassade strömmande data** och välj sedan **nästa**-knappen.
    
-   ![](media/service-real-time-streaming/real-time-streaming_1.png)
+   ![Skärmbild av instrumentpanelen som visar Lägg till panel med valet Anpassad strömmande data.](media/service-real-time-streaming/real-time-streaming_1.png)
 2. Om du inte har några strömmande datakällor ännu, väljer du länken **hantera data** (ovanför **nästa**-knappen) och väljer **+ lägg till strömmande data** från länken i övre högra delen av fönstret. Välj **PubNub** och välj sedan **nästa**.
 3. Skapa ett namn för din datauppsättning och klistra sedan in följande värden i fönstret som visas, välj sedan **nästa**:
    
@@ -190,13 +190,13 @@ I det här exemplet, använder vi en offentligt tillgänglig ström från **PubN
    
        pubnub-sensor-network
    
-   ![](media/service-real-time-streaming/real-time-streaming_8.png)
+   ![Skärmbild av dialogrutan Ny strömmande datauppsättning som visar hur du skapar ett datauppsättningsnamn och poster i fälten Undernyckel och Kanalnamn.](media/service-real-time-streaming/real-time-streaming_8.png)
 4. I följande fönster väljer du standardinställningarna (som fylls i automatiskt), välj sedan **skapa**.
    
-   ![](media/service-real-time-streaming/real-time-streaming_9.png)
+   ![Skärmbild av dialogrutan Ny strömmande datauppsättning som visar standardvärden för fälten Namn på datauppsättning och Värden från dataström.](media/service-real-time-streaming/real-time-streaming_9.png)
 5. I din Power BI-arbetsyta skapar du sedan en ny instrumentpanel och lägger till en panel (se ovanstående steg om du behöver dem). Nu när du skapar en panel och väljer **anpassade strömmande data**, får du en strömmande datauppsättning att arbeta med. Experimentera med den. Om du lägger till *siffer*fälten till linjediagram och därefter lägger till andra paneler så får du en instrumentpanel i realtid som ser ut ungefär såhär:
    
-   ![Skärmbild som visar resultatet av miljösensorer i realtid.](media/service-real-time-streaming/real-time-streaming-10.png)
+   ![Skärmbild av instrumentpanelen Environmental sensors som visar resultat i realtid.](media/service-real-time-streaming/real-time-streaming-10.png)
 
 Prova att experimentera med exempel-datauppsättningen. Gå sedan skapa dina egna datauppsättningar och strömma realtidsdata till Power BI.
 

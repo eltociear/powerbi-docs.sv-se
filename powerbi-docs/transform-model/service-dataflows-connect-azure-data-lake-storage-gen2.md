@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 01/22/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: d6301b4eea49ab4ae5714446e051290cb254c324
-ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
+ms.openlocfilehash: 92244304bcffc3544ca8616fd0b16226361d58c8
+ms.sourcegitcommit: d8acf2fb0318708a3e8e1e259cb3747b0312b312
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85354764"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86385962"
 ---
 # <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage"></a>Ansluta Azure Data Lake Storage Gen2 för lagring av dataflöde
 
@@ -46,6 +46,7 @@ Innan du kan konfigurera Power BI med ett Azure Data Lake Storage Gen2-konto, m�
 2. Storage-kontot måste skapas i samma Microsoft Azure Active Directory-klient som Power BI-klienten.
 3. Storage-kontot måste skapas i samma-region som Power BI-klienten. Om du vill ta reda på var din Power BI-klientorganisation finns kan du läsa [Var finns min Power BI-klientorganisation?](../admin/service-admin-where-is-my-tenant-located.md).
 4. Lagringskontot måste ha funktionen *Hierarkiskt namnområde* aktiverad.
+5. Om lagringskontot inte har skapats av den aktuella användaren ska du se till att den aktuella användaren har tilldelats behörighet som [Storage Blob Data-ägare](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#storage-blob-data-owner) och [ägare](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner). (Eftersom rollen ägare inte omfattar behörigheter på datanivå krävs även Blob Data-ägare.)
 
 I följande avsnitt beskrivs de steg som krävs för att konfigurera ditt Azure Data Lake Storage Gen2-konto i detalj.
 

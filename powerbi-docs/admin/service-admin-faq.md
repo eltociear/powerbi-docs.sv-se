@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 25b5665aa531c347d43a197b53938aec569b9d2d
-ms.sourcegitcommit: 2cb249fc855e369eed1518924fbf026d5ee07eb1
+ms.openlocfilehash: aed09a9cd26452a03363e8606e45938715595558
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83812184"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86161685"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>Administrera Power BI – Vanliga frågor och svar
 
@@ -130,7 +130,7 @@ Använd följande PowerShell-skript för att inaktivera ad hoc-prenumerationer (
      connect-msolservice -credential $msolcred
     ```
 
-   ![Skärmbild av Azure Active Directory-inloggning via PowerShell](media/service-admin-licensing-organization/azure-ad-sign-in.png)
+   ![Skärmbild av inloggning i Azure Active Directory via PowerShell.](media/service-admin-licensing-organization/azure-ad-sign-in.png)
 
 1. När du har loggat in kan du köra följande kommando för att se hur din klient är konfigurerad.
 

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/23/2019
 ms.author: kfollis
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 6c6bbf8476087532fd3a049a0e4bde3191892325
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: d2d28d8ea3f7e2e7217124483f90ecc28d44314f
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83564044"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86161708"
 ---
 # <a name="use-an-alternate-email-address"></a>Använda en alternativ e-postadress
 
@@ -37,7 +37,7 @@ Följ dessa steg om du vill ange en alternativ e-postadress i Microsoft 365.
 
     Om du inte kan redigera din information innebär det att din administratör hanterar din e-postadress. Kontakta administratören om du vill uppdatera din e-postadress.
 
-    ![Kontaktinformation](media/service-admin-alternate-email-address-for-power-bi/contact-details.png)
+    ![Skärmbild av dialogrutan Kontaktinformation som visar hur du anger en alternativ e-postadress.](media/service-admin-alternate-email-address-for-power-bi/contact-details.png)
 
 1. I fältet **Alternativ e-postadress** anger du den e-postadress som du vill att Microsoft 365 ska använda för Power BI-uppdateringar.
 

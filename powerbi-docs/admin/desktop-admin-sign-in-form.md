@@ -8,17 +8,17 @@ ms.subservice: powerbi-service
 ms.topic: how-to
 ms.date: 04/15/2019
 ms.author: davidi
-ms.openlocfilehash: 49b7d1129f73e146db1e34b1ec7d39a176cb37ed
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 44add6bf76e5bc4445df08a76859e05c8fa1638d
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85228905"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86160880"
 ---
 # <a name="administrators-manage-the-power-bi-desktop-sign-in-form"></a>Administratörer: Hantera inloggningsformuläret för Power BI Desktop
 Första gången Power BI Desktop startas visas ett inloggningsformulär. Informationen kan vara ifylld. Annars loggar du in i Power BI för att fortsätta. Administratörer kan hantera det här formuläret med hjälp av en registernyckel. 
 
-![Första inloggningsformuläret för Power BI Desktop](media/desktop-admin-sign-in-form/sign-in-form.png)
+![Skärmbild av det initiala inloggningsformuläret för Power BI Desktop.](media/desktop-admin-sign-in-form/sign-in-form.png)
 
 Administratörer använder följande registernyckel för att inaktivera inloggningsformuläret. Åtgärden kan även tillämpas i hela företaget med hjälp av globala principer.
 

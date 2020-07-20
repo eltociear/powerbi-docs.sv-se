@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 04/29/2020
-ms.openlocfilehash: f18f8b56db8635d407417949bc35adb61fb4a2c5
-ms.sourcegitcommit: aece2382b618dc5b730705b4c76e76a657986588
+ms.date: 07/08/2020
+ms.openlocfilehash: acde398c1d8954b815c86cce77a6be0cfcf1553f
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84427565"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216660"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Sidnumrerade rapporter i Power BI: Vanliga frågor och svar 
 
@@ -162,7 +162,7 @@ Ja, detta kan utföras med hjälp av URL-parametrar med dina sidnumrerade rappor
 
 Ja, sidnumrerade rapporter har stöd för att distribueras med appar från både v1- och v2-arbetsytor. 
 
-### <a name="will-other-report-specific-features-in-power-bi-like-pinning-to-report-tiles-to-dashboards-work-with-paginated-reports"></a>Kommer andra rapportspecifika funktioner i Power BI, t.ex. fästa rapportpaneler på instrumentpaneler, fungera med sidnumrerade rapporter?
+### <a name="will-other-report-specific-features-in-power-bi-like-pinning-report-tiles-to-dashboards-work-with-paginated-reports"></a>Fungerar andra rapportspecifika funktioner i Power BI, som att fästa rapportpaneler på instrumentpaneler, med sidnumrerade rapporter?
 
 Vi planerar att rapporterna ska ha stöd för samma större scenarier i tjänsten så mycket som möjligt.  I bästa fall ser konsumenterna det bara som ytterligare en rapport i listan i portalen, även om verktyget för att skapa dem är annorlunda. För dem spelar det ingen roll hur den skapades så länge de kan åstadkomma det de behöver.  Ett bra exempel på den här funktionspariteten är det planerade kommentarsstödet. Även om själva funktionen fungerar lite annorlunda för varje rapporttyp, kommer du att kunna använda kommentarer för båda.
 

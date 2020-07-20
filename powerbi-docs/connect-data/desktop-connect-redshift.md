@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 69cc3e21befb2c3becca737f853947e869bd681c
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: b832e96b795b38133939296a15dcab6ece3996be
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85224200"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86214890"
 ---
 # <a name="connect-to-an-amazon-redshift-database-in-power-bi-desktop"></a>Ansluta till en Amazon Redshift-databas i Power BI Desktop
 I **Power BI Desktop** kan du ansluta till en **Amazon Redshift**-databas och använda underliggande data precis som andra datakällor i Power BI Desktop.
@@ -22,19 +22,19 @@ I **Power BI Desktop** kan du ansluta till en **Amazon Redshift**-databas och an
 ## <a name="connect-to-an-amazon-redshift-database"></a>Ansluta till en Amazon Redshift-databas
 Om du vill ansluta till en **Amazon Redshift**-databas, väljer du **Hämta data** från **Start**-menyfliksområdet i Power BI Desktop. Välj **Databas** från kategorierna till vänster så ser du **Amazon Redshift**.
 
-![](media/desktop-connect-redshift/connect_redshift_3.png)
+![Skärmbild av dialogrutan Hämta data med Amazon RedShift-databas valt.](media/desktop-connect-redshift/connect_redshift_3.png)
 
 I fönstret **Amazon Redshift** som visas skriver eller klistrar du inte namnet på din **Amazon Redshift**-server och -databas i rutan. Som en del av fältet *Server* kan användarna ange en port i följande format: *ServerURL:Port*
 
-![](media/desktop-connect-redshift/connect_redshift_4.png)
+![Skärmbild av dialogrutan Amazon Redshift med fälten Server och Databas.](media/desktop-connect-redshift/connect_redshift_4.png)
 
 När du uppmanas, ange ditt användarnamn och lösenord. Använd servernamnet som exakt matchar SSL-certifikatet för att undvika fel. 
 
-![](media/desktop-connect-redshift/connect_redshift_5.png)
+![Skärmbild av uppmaningen att ange autentiseringsuppgifter för Amazon RedShift med fälten Användarnamn och Lösenord.](media/desktop-connect-redshift/connect_redshift_5.png)
 
 När du har anslutit, visas ett **navigator**-fönster som visar data som är tillgängliga på servern, där du kan välja ett eller flera element att importera och använda i **Power BI Desktop**.
 
-![](media/desktop-connect-redshift/connect_redshift_6.png)
+![Skärmbild av dialogrutan Navigator som visar tillgängliga data på servern.](media/desktop-connect-redshift/connect_redshift_6.png)
 
 När du väljer från fönstret **Navigator** kan du antingen **Hämta** eller **Redigera** data.
 

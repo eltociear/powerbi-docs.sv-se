@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 02/10/2020
 ms.author: painbar
-ms.openlocfilehash: 1f71c2c835c729f3a0afe824835deaee719568c2
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 989e77eeaa559ac74579c1d981f77f2bca374f01
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85219998"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86264791"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-ios-devices"></a>Kom igång med Power BI-mobilappen på iOS-enheter
 Microsoft Power BI-appen för iOS på iPhone och iPad ger dig den mobila BI-upplevelsen för Power BI, Power BI-rapportservern och Reporting Services. Visa och interagera med ditt företags instrumentpaneler lokalt och i molnet överallt, med pekaktiverad mobil åtkomst i realtid. Utforska data i instrumentpaneler och dela med dina kollegor via e-post eller sms. Och hålla dig uppdaterad med dina mest aktuella data på din [Apple Watch](mobile-apple-watch.md).  
@@ -66,7 +66,7 @@ Ett antal Power BI-exempel åtföljs av flera exempel på rapportservern.
 Tryck på förstoringsglaset i rubriken för att börja söka efter Power BI-innehåll.
 
 ## <a name="view-your-favorite-dashboards-and-reports"></a>Visa dina favoritinstrumentpaneler och -rapporter
-Tryck på **Favoriter** (![](./media/mobile-iphone-app-get-started/power-bi-mobile-apps-home-favorites-icon.png)) i navigeringsfältet för att visa sidan Favoriter. 
+Tryck på **Favoriter** (![ikonen Favoriter](./media/mobile-iphone-app-get-started/power-bi-mobile-apps-home-favorites-icon.png)) i navigeringsfältet för att visa sidan med dina Favoriter. 
 
 Läs mer om [favoriter i Power BI-mobilappar](mobile-apps-favorites.md).
 

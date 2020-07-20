@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 03/02/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 971c2351fe5032ba91fa6c0f964bd844ef479b05
-ms.sourcegitcommit: 66b1a0c74b8a7dcb33a2f8570fb67bce2401a895
+ms.openlocfilehash: 7c9b5c753b262900d61a1a71b4c9a8167c943121
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84532429"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216694"
 ---
 # <a name="many-to-many-relationship-guidance"></a>Vägledning för att lägga till en många-till-många-relationer
 
@@ -35,20 +35,20 @@ Det är förhållandevis enkelt att modellera dessa entiteter. En tabell av dime
 
 Här är ett förenklad modelldiagram över de tre tabellerna.
 
-![Ett modelldiagram innehåller tre tabeller. Designen beskrivs i följande stycke.](media/relationships-many-to-many/bank-account-customer-model-example.png)
+![Diagram som visar en modell med tre tabeller. Designen beskrivs i följande stycke.](media/relationships-many-to-many/bank-account-customer-model-example.png)
 
 Den första tabellen heter **Account** och innehåller två kolumner: **AccountID** och **Account**. Den andra tabellen heter **AccountCustomer** och innehåller två kolumner: **AccountID** och **CustomerID**. Den tredje tabellen heter **Customer** och innehåller två kolumner: **CustomerID** och **Customer**. Det finns inga relationer mellan tabellerna.
 
 Två en-till-många-relationer läggs till för att relatera tabellerna. Här är ett uppdaterat modelldiagram över de relaterade tabellerna. En tabell av faktatyp med namnet **Transaction** har lagts till. I den registreras kontotransaktioner. Bryggningstabellen och alla ID-kolumner har dolts.
 
-![Modelldiagrammet innehåller nu fyra tabeller. En-till-många-relationer har lagts till för att relatera alla tabellerna.](media/relationships-many-to-many/bank-account-customer-model-related-tables-1.png)
+![Diagram som visar att modellen nu innehåller fyra tabeller. En-till-många-relationer har lagts till för att relatera alla tabellerna.](media/relationships-many-to-many/bank-account-customer-model-related-tables-1.png)
 
 För att hjälpa till att beskriva hur spridningen av relationsfiltret fungerar har modelldiagrammet ändrats så att tabellraderna visas.
 
 > [!NOTE]
 > Det går inte att visa tabellrader i Power BI Desktop-modelldiagrammet. Det sker i den här artikeln i syfte att stödja diskussionen med tydliga exempel.
 
-![Nu visar modelldiagrammet tabellraderna. Radinformationen beskrivs i följande stycke.](media/relationships-many-to-many/bank-account-customer-model-related-tables-2.png)
+![Diagram som visar att modellen nu visar tabellraderna. Radinformationen beskrivs i följande stycke.](media/relationships-many-to-many/bank-account-customer-model-related-tables-2.png)
 
 Radinformationen för de fyra tabellerna beskrivs i följande punktlista:
 
@@ -71,7 +71,7 @@ Vi tittar på vad som händer när frågor körs mot modellen.
 
 Nedan visas två visuella objekt som sammanfattar kolumnen **Amount** från tabellen **Transaction**. Det första visuella objektet grupperar efter konto. Summan av **Amount**-kolumnerna representerar därför _kontosaldot_. Det andra visuella objektet grupperar efter kund. Summan av **Amount**-kolumnerna representerar därför _kundsaldot_.
 
-![Två visuella rapportobjekt är sida vid sida. De visuella objekten beskrivs i följande stycke.](media/relationships-many-to-many/bank-account-customer-model-queried-1.png)
+![Diagram som visar två rapportkontroller sida vid sida. De visuella objekten beskrivs i följande stycke.](media/relationships-many-to-many/bank-account-customer-model-queried-1.png)
 
 Det första visuella objektet heter **Account Balance** och innehåller två kolumner: **Account** och **Amount**. Det visar följande resultat:
 
@@ -91,9 +91,9 @@ Det verkar dock som att något inte stämmer med det visuella objektet **Custome
 
 Följ riktningarna för relationsfilter från tabellen **Customer** till tabellen **Transaction**. Det bör vara uppenbart att relationen mellan tabellerna **Account** och **AccountCustomer** sprids i fel riktning. Filterriktningen för den här relationen måste anges till **Båda**.
 
-![Modelldiagrammet har uppdaterats. En enda ändring har gjorts i relationen mellan tabellerna Account och AccountCustomer. Nu filtreras den i båda riktningarna.](media/relationships-many-to-many/bank-account-customer-model-related-tables-3.png)
+![Diagram som visar att modellen har uppdaterats. Nu filtreras den i båda riktningarna.](media/relationships-many-to-many/bank-account-customer-model-related-tables-3.png)
 
-![Samma två visuella rapportobjekt är sida vid sida. Det första visuella objektet har inte ändrats. Det andra visuella objektet visar ett annat resultat och beskrivs i följande stycken.](media/relationships-many-to-many/bank-account-customer-model-queried-2.png)
+![Diagram som visar samma två rapportkontroller sida vid sida. Den första kontrollen har inte ändrats medan den andra kontrollen har det.](media/relationships-many-to-many/bank-account-customer-model-queried-2.png)
 
 Som förväntat har inga ändringar gjorts i det visuella objektet **Account Balance**.
 
@@ -131,13 +131,13 @@ Det andra många-till-många-scenariotypen innefattar att två tabeller av fakta
 
 Vi tar en titt på ett exempel med två tabeller av faktatyp: **Order** och **Fulfillment**. Tabellen **Order** innehåller en rad per orderrad, och tabellen **Fulfillment** kan innehålla noll eller fler rader per orderrad. Rader i tabellen **Order** representerar försäljningsordrar. Rader i tabellen **Fulfillment** representerar orderobjekt som har fraktats. En många-till-många-relation relaterar de två **OrderID**-kolumnerna. Filterspridning sker bara från tabellen **Order** (**Order** filtrerar **Fulfillment**).
 
-![Ett modelldiagram innehåller två tabeller: Order och Fulfillment. En många-till-många-relation relaterar de två kolumnerna OrderID-kolumnerna med filtrering från Order till Fulfillment.](media/relationships-many-to-many/order-fulfillment-model-example.png)
+![Diagram som visar en modell med två tabeller: Order och Fulfillment.](media/relationships-many-to-many/order-fulfillment-model-example.png)
 
 Relationskardinaliteten anges till många-till-många för att stödja lagring av duplicerade **OrderID**-värden i båda tabellerna. I tabellen **Order** kan det finnas duplicerade **OrderID**-värden eftersom en order kan ha flera rader. I tabellen **Fulfillment** kan det finnas duplicerade **OrderID**-värden eftersom ordrar kan ha rader och orderrader kan uppfyllas av många leveranser.
 
 Nu tar vi en titt på tabellraderna. Observera att orderrader i tabellen **Fulfillment** kan uppfyllas av flera leveranser. (Om det saknas en orderrad innebär det att ordern ännu inte har uppfyllts.)
 
-![Nu visar modelldiagrammet tabellraderna. Radinformationen beskrivs i följande stycke.](media/relationships-many-to-many/order-fulfillment-model-related-tables.png)
+![Diagram som visar att modellen nu visar tabellraderna. Radinformationen beskrivs i följande stycke.](media/relationships-many-to-many/order-fulfillment-model-related-tables.png)
 
 Radinformationen för de två tabellerna beskrivs i följande punktlista:
 
@@ -155,7 +155,7 @@ Radinformationen för de två tabellerna beskrivs i följande punktlista:
 
 Vi tittar på vad som händer när frågor körs mot modellen. Här är ett visuellt tabellobjekt där kvantiteter för order och uppfyllande jämförs efter **Order**-tabellens **OrderID**-kolumn.
 
-![Ett visuellt tabellobjekt har tre kolumner: OrderID, OrderQuantity och FulfillmentQuantity. Det finns tre rader, en för varje order. OrderID 2 och 3 är inte helt uppfyllda.](media/relationships-many-to-many/order-fulfillment-model-queried.png)
+![Diagram som visar en tabellkontroll med tre kolumner: OrderID, OrderQuantity och FulfillmentQuantity.](media/relationships-many-to-many/order-fulfillment-model-queried.png)
 
 Det visuella objektet visar ett korrekt resultat. Modellens användbarhet är dock begränsad – du kan bara filtrera eller gruppera efter **Order**-tabellens **OrderID**-kolumn.
 
@@ -167,7 +167,7 @@ Vi rekommenderar att du i stället för att relatera tabeller av faktatyp direkt
 
 Vi tittar på en bättre lösning.
 
-![Ett modelldiagram innehåller sex tabeller: OrderLine, OrderDate, Order, Fulfillment, Product och FulfillmentDate. Alla tabeller är relaterade. Designen beskrivs i följande stycke.](media/relationships-many-to-many/order-fulfillment-model-improved.png)
+![Diagram som visar en modell med sex tabeller: OrderLine, OrderDate, Order, Fulfillment, Product och FulfillmentDate.](media/relationships-many-to-many/order-fulfillment-model-improved.png)
 
 Observera följande designändringar:
 
@@ -192,11 +192,11 @@ Detta många-till-många-scenario skiljer sig avsevärt från de andra två scen
 
 Vi tittar på ett exempel med fyra tabeller: **Date**, **Sales**, **Product** och **Target**. **Date** och **Product** är tabeller av dimensionstyp, och en-till-många-relationer relaterar vardera till tabellen **Sales**, som är av faktatyp. Än så länge följer detta en god design enligt principerna för star-schema. Dock har tabellen **Target** ännu inte relaterats till de andra tabellerna.
 
-![Ett modelldiagram innehåller fyra tabeller: Date, Sales, Product och Target. Tabellen Target är inte relaterad till någon annan tabell. Designen beskrivs i följande stycke.](media/relationships-many-to-many/sales-targets-model-example.png)
+![Diagram som visar en modell med fyra tabeller: Date, Sales, Product och Target.](media/relationships-many-to-many/sales-targets-model-example.png)
 
 Tabellen **Target** innehåller tre kolumner: **Category**, **TargetQuantity** och **TargetYear**. Tabellraderna visar på en kornighet för år och produktkategori. Mål, som används för att mäta försäljningsprestanda, anges alltså varje år för varje produktkategori.
 
-![Tabellen Target innehåller tre kolumner: TargetYear, Category och TargetQuantity. Sex rader registrerar mål för 2019 och 2020, var och en för tre kategorier.](media/relationships-many-to-many/sales-targets-model-target-rows.png)
+![Diagram som visar tabellen Target med tre kolumner: TargetYear, Category och TargetQuantity.](media/relationships-many-to-many/sales-targets-model-target-rows.png)
 
 Eftersom tabellen **Target** lagrar data på en högre nivå än tabellerna av dimensionstyp går det inte att skapa en en-till-många-relation. Detta stämmer åtminstone för bara en av relationerna. Vi går igenom hur tabellen **Target** kan relateras till tabellerna av dimensionstyp.
 
@@ -211,7 +211,7 @@ Var dock noggrann med att se till att filtren på månads- eller datumnivå ger 
 
 Följande visuella matrisobjekt visar vad som händer när rapportanvändaren ökar detaljnivån från ett år till dess månader. Det visuella objektet sammanfattar kolumnen **TargetQuantity**. (Alternativet [Visa objekt utan data](../create-reports/desktop-show-items-no-data.md) har aktiverats för matrisraderna.)
 
-![Ett visuellt matrisobjekt visar målkvantiteten för året 2020 som 270. När det expanderas till att visa månaderna för 2020 är januari 270, och alla andra målkvantiteter på månadsnivå är TOM.](media/relationships-many-to-many/sales-targets-model-matrix-blank-months-bad.png)
+![Diagram som visar en matriskontroll med målkvantiteten för år 2020 som 270.](media/relationships-many-to-many/sales-targets-model-matrix-blank-months-bad.png)
 
 För att undvika det här beteendet rekommenderar vi att du kontrollerar sammanfattningen av faktadata med hjälp av mått. Ett sätt att kontrollera sammanfattningen är att returnera TOM när frågor körs mot tidsperioder på lägre nivåer. Ett annat sätt – som definieras med viss sofistikerad DAX – är att fördela värden mellan tidsperioder på lägre nivåer.
 
@@ -228,7 +228,7 @@ IF(
 
 Följande visuella matrisobjekt använder nu **Target Quantity**-måttet. Det visar att alla målkvantiteter för månad är TOM.
 
-![Ett visuellt matrisobjekt visar målkvantiteten för året 2020 som 270. När det expanderas till att visa månaderna för 2020 alla målkvantiteter på månadsnivå TOM.](media/relationships-many-to-many/sales-targets-model-matrix-blank-months-good.png)
+![Diagram som visar en matriskontroll med målkvantiteten för år 2020 som 270.](media/relationships-many-to-many/sales-targets-model-matrix-blank-months-good.png)
 
 ### <a name="relate-higher-grain-non-date"></a>Relatera högre kornighet (icke-datum)
 
@@ -236,21 +236,21 @@ En annan designmetod krävs när du relaterar en icke-datumkolumn från en tabel
 
 **Category**-kolumnerna (från både tabellen **Product** och tabellen **Target**) innehåller dubblettvärden. Därför finns det ingen ”en” för en en-till-många-relation. I det fallet måste du skapa en många-till-många-relation. Relationen ska sprida filter i en enda riktning, från tabellen av dimensionstyp till tabellen av faktatyp.
 
-![Ett fragment av ett modelldiagram visar mål- och produkttabellerna. En många-till-många-relation relaterar de två tabellerna. Filterriktningen går från produkt till mål.](media/relationships-many-to-many/sales-targets-model-relate-non-date.png)
+![Diagram som visar en modell med tabellerna Product och Target. En många-till-många-relation relaterar de två tabellerna.](media/relationships-many-to-many/sales-targets-model-relate-non-date.png)
 
 Nu tar vi en titt på tabellraderna.
 
-![Ett modelldiagram innehåller två tabeller: Mål och produkt. En många-till-många-relation relaterar de två Category-kolumnerna. Radinformationen beskrivs i följande stycke.](media/relationships-many-to-many/sales-targets-model-relate-non-date-tables.png)
+![Diagram som visar en modell med två tabeller: Mål och produkt. En många-till-många-relation relaterar de två Category-kolumnerna.](media/relationships-many-to-many/sales-targets-model-relate-non-date-tables.png)
 
 I tabellen **Target** finns det fyra rader: två rader för varje målår (2019 och 2020) samt två kategorier (Clothing och Accessories). I tabellen **Product** finns det tre produkter. Två hör till kategorin Clothing och en hör till kategorin Accessories. En av klädfärgerna är grön, och de andra två är blå.
 
 Ett visuellt tabellobjekt som grupperar efter kolumnen **Category** från tabellen **Product** ger följande resultat.
 
-![Ett visuellt tabellobjekt har två kolumner: Category och TargetQuantity. Accessories är 60, Clothing är 40 och summan är 100.](media/relationships-many-to-many/sales-targets-model-visual-category-targets.png)
+![Diagram som visar en tabellkontroll med två kolumner: Category och TargetQuantity. Accessories är 60, Clothing är 40 och summan är 100.](media/relationships-many-to-many/sales-targets-model-visual-category-targets.png)
 
 Det här visuella objektet är korrekt resultat. Nu tittar vi på vad som händer när kolumnen **Color** från tabellen **Product** används för att gruppera målkvantitet.
 
-![Ett visuellt tabellobjekt har två kolumner: Color och TargetQuantity. Blue är 100, Green är 40 och summan är 100.](media/relationships-many-to-many/sales-targets-model-visual-color-targets-bad.png)
+![Diagram som visar en tabellkontroll med två kolumner: Color och TargetQuantity. Blue är 100, Green är 40 och summan är 100.](media/relationships-many-to-many/sales-targets-model-visual-color-targets-bad.png)
 
 Det visuella objektet ger en felaktig representation av data. Vad är det som händer här?
 
@@ -272,11 +272,11 @@ IF(
 
 Följande visuella tabellobjekt använder nu **Target Quantity**-måttet. Det visar att alla målkvantiteter för färg är TOM.
 
-![Ett visuellt tabellobjekt har två kolumner: Color och TargetQuantity. Blue är TOM, Green är TOM och summan är 100.](media/relationships-many-to-many/sales-targets-model-visual-color-targets-good.png)
+![Diagram som visar en tabellkontroll med två kolumner: Color och TargetQuantity. Blue är TOM, Green är TOM och summan är 100.](media/relationships-many-to-many/sales-targets-model-visual-color-targets-good.png)
 
 Den slutgiltiga modelldesignen har följande utseende.
 
-![Modelldiagrammet visar att tabellerna Date och Target är relaterade med en en-till-många-relation. Tabellerna Product och Target är relaterade med en många-till-många-relation med filtrering från Product till Target.](media/relationships-many-to-many/sales-targets-model-example-final.png)
+![Diagram som visar en modell med tabellerna Date och Target kopplade via en en-till-många-relation.](media/relationships-many-to-many/sales-targets-model-example-final.png)
 
 ### <a name="relate-higher-grain-facts-guidance"></a>Vägledning om att relatera fakta med högre kornighet
 

@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 02/25/2020
 ms.author: maggies
 LocalizationGroup: Administration
-ms.openlocfilehash: bd671e32167837a5b8b96388bb2687616e6cada5
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 50d3adef65791c3fecd1a2125f67318fb8ab0298
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85228565"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86214254"
 ---
 # <a name="manage-data-storage-in-power-bi-workspaces"></a>Hantera datalagring i Power BI-arbetsytor
 
@@ -48,21 +48,19 @@ Din datalagring inkluderar dina egna datauppsättningar och Excel-rapporter och 
 
 Storleken på en instrumentpanel som du delar varierar beroende på vad som är fäst på den. Om du till exempel fäster objekt från två rapporter som ingår i två olika datauppsättningar, kommer storleken att inkludera bägge datauppsättningarna.
 
-<a name="manage"/>
-
 ## <a name="manage-items-you-own"></a>Hantera objekt du äger
 
 Se hur mycket lagringsutrymme du använder i ditt Power BI-konto och hantera ditt konto.
 
 1. Om du vill hantera din lagring går du till **Min arbetsyta** i navigeringsfönstret.
    
-    ![Min arbetsyta](media/service-admin-manage-your-data-storage-in-power-bi/pbi_myworkspace.png)
+    ![Skärmbild av navigeringsfönstret med Min arbetsyta framhävd.](media/service-admin-manage-your-data-storage-in-power-bi/pbi_myworkspace.png)
 
-2. Välj kugghjulsikonen ![Kugghjulsikon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png) i det övre högra hörnet \> **Hantera personlig lagring**.
+2. Välj kugghjulsikonen uppe till höger ![kugghjulsikon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png) **Hantera personlig lagring**.
    
     Det översta fältet visar hur mycket av din lagringsgräns som du har använt.
    
-    ![Hantera lagringsgräns](media/service-admin-manage-your-data-storage-in-power-bi/pbi_persnlstorage.png)
+    ![Skärmbild av Hantera lagring som visar hur mycket lagringsutrymme som används.](media/service-admin-manage-your-data-storage-in-power-bi/pbi_persnlstorage.png)
    
     Datauppsättningarna och rapporterna avgränsas på två flikar:
    
@@ -74,14 +72,14 @@ Se hur mycket lagringsutrymme du använder i ditt Power BI-konto och hantera dit
 Tänk på att du eller någon annan kan ha rapporter och instrumentpaneler baserade på en datauppsättning. Om du tar bort datauppsättningen, fungerar dessa rapporter och instrumentpaneler inte längre.
 
 ## <a name="manage-your-workspace"></a>Hantera din arbetsyta
-1. Välj pilen intill **Arbetsytor** \> välj namnet på arbetsytan.
+1. Välj pilen bredvid **Arbetsytor** och välj namnet på arbetsytan.
    
-    ![Välj en arbetsyta](media/service-admin-manage-your-data-storage-in-power-bi/pbi_groupworkspaces.png)
-2. Välj kugghjulsikonen ![Kugghjulsikon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png) i det övre högra hörnet \>  **Hantera grupplagring**.
+    ![Skärmbild av Arbetsytor med arbetsytan Säljgrupp.](media/service-admin-manage-your-data-storage-in-power-bi/pbi_groupworkspaces.png)
+2. Välj kugghjulsikonen uppe till höger ![kugghjulsikon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png) **Hantera grupplagring**.
    
     Det översta fältet visar hur mycket av din lagringsgräns som du har använt.
    
-    ![Hantera lagring för arbetsytor](media/service-admin-manage-your-data-storage-in-power-bi/pbi_groupstorage.png)
+    ![Skärmbild av Hantera lagring som visar hur mycket lagringsutrymme som används för Säljgrupp.](media/service-admin-manage-your-data-storage-in-power-bi/pbi_groupstorage.png)
    
     Datauppsättningarna och rapporterna avgränsas på två flikar:
    
@@ -102,17 +100,17 @@ Det finns en gräns på 1 GB, per datauppsättning som importeras till Power BI.
 ## <a name="what-happens-when-you-reach-a-limit"></a>Vad händer när du når en gräns?
 När du når datakapacitetsgränsen för vad du kan göra, får du meddelanden i tjänsten. 
 
-När du väljer kugghjulsikonen ![kugghjulsikonen](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png), ser du ett rött streck som anger att du har överskridit din datakapacitetsgräns.
+När du väljer kugghjulsikonen ![Kugghjulsikon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png), ser du ett rött streck som anger att du har överskridit din datakapacitetsgräns.
 
-![Uppnådd lagringsgräns](media/service-admin-manage-your-data-storage-in-power-bi/manage-storage-limit.png)
+![Skärmbild av lagringskapaciteten som visar att gränsen har uppnåtts.](media/service-admin-manage-your-data-storage-in-power-bi/manage-storage-limit.png)
 
 Den här gränsen visas också i **Hantera personlig lagring**.
 
- ![Hantera personlig lagring, lagringsgränsen har nåtts](media/service-admin-manage-your-data-storage-in-power-bi/manage-storage-limit2.png)
+ ![Skärmbild av den personliga lagringskapaciteten som visar att Janes gräns har uppnåtts.](media/service-admin-manage-your-data-storage-in-power-bi/manage-storage-limit2.png)
 
- När du försöker utföra en åtgärd som når någon av gränserna visas ett meddelande om att du är över gränsen. Du kan [hantera](#manage) din lagring för att minska ditt lagringsutrymme och komma förbi gränsen.
+ När du försöker utföra en åtgärd som når någon av gränserna visas ett meddelande om att du är över gränsen. Du kan [hantera din lagring](#manage-items-you-own) för att minska ditt lagringsutrymme och komma förbi gränsen.
 
- ![Över din lagringsgräns](media/service-admin-manage-your-data-storage-in-power-bi/powerbi-pro-over-limit.png)
+ ![Skärmbild av dialogrutan Över din lagringsgräns som visar att gränser har uppnåtts.](media/service-admin-manage-your-data-storage-in-power-bi/powerbi-pro-over-limit.png)
 
  ## <a name="next-steps"></a>Nästa steg
 

@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 06/18/2018
 ms.author: otarb
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 5fb76d5f4e32c1ff7f9d68757e071f1bc69a7ddf
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 6e1c18f61cc822cd9656a49a65c98b225709c540
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85223303"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86215496"
 ---
 # <a name="use-python-in-query-editor"></a>Använda Python i frågeredigeraren
 Du kan använda **Python**, ett programmeringsspråk som ofta används av statistiker, dataforskare och dataanalytiker, i **frågeredigeraren** för Power BI Desktop. Med den här integreringen av Python i **frågeredigeraren** kan du utföra datarensning med Python, avancerade datautformning och analyser i datauppsättningar, inklusive färdigställande av saknade data, förutsägelser och klustring för att bara nämna några få. **Python** är ett kraftfullt språk och kan användas i **frågeredigeraren** till att förbereda din datamodell och skapa rapporter.
@@ -27,19 +27,19 @@ För att visa hur du använder **Python** i **frågeredigeraren** anges det här
 
 1. Först läser du in dina data i **Power BI Desktop**. I det här exemplet läser du in filen *EuStockMarkets_NA.csv* och väljer **Hämta data > CSV** på menyfliken **Start** i **Power BI Desktop**.
    
-   ![](media/desktop-python-in-query-editor/python-in-query-editor-1.png)
+   ![Skärmbild av menyfliksområdet Hämta data i Power BI Desktop med valet CSV.](media/desktop-python-in-query-editor/python-in-query-editor-1.png)
 2. Markera filen och välj **Öppna**. CSV:n visas i dialogrutan **CSV-fil**.
    
-   ![](media/desktop-python-in-query-editor/python-in-query-editor-2.png)
+   ![Skärmbild av dialogrutan CSV-fil som visar vald CSV-fil.](media/desktop-python-in-query-editor/python-in-query-editor-2.png)
 3. När datan har lästs in visas den i fönstret **Fält** i Power BI Desktop.
    
-   ![](media/desktop-python-in-query-editor/python-in-query-editor-3.png)
+   ![Skärmbild av rutan Fält med inlästa data.](media/desktop-python-in-query-editor/python-in-query-editor-3.png)
 4. Öppna **Frågeredigeraren** genom att välja **Redigera frågor** på fliken **Start** i **Power BI Desktop**.
    
-   ![](media/desktop-python-in-query-editor/python-in-query-editor-4.png)
+   ![Skärmbild av Frågeredigeraren i Power BI Desktop med Redigera frågor valt.](media/desktop-python-in-query-editor/python-in-query-editor-4.png)
 5. På fliken **Transformera** väljer du **Kör Python-skript**. Redigeringsprogrammet **Kör Python-skript** öppnas (visas i nästa steg). Observera att det saknas data på raderna 15 och 20, vilket det även gör på andra rader som du inte kan se i följande bild. Stegen nedan visar hur Python kan (och kommer) att slutföra dem åt dig.
    
-   ![](media/desktop-python-in-query-editor/python-in-query-editor-5.png)
+   ![Skärmbild av fliken Transformera med datarader.](media/desktop-python-in-query-editor/python-in-query-editor-5.png)
 6. I det här exemplet anger du följande skriptkod:
    
     ```python
@@ -55,13 +55,13 @@ För att visa hur du använder **Python** i **frågeredigeraren** anges det här
    
    När koden infogas i dialogrutan **Kör Python-skript** ser den ut ungefär så här:
    
-   ![](media/desktop-python-in-query-editor/python-in-query-editor-5b.png)
+   ![Skärmbild av dialogrutan Kör Python-skript med skriptkoden.](media/desktop-python-in-query-editor/python-in-query-editor-5b.png)
 7. När du har valt **OK** visar **frågeredigeraren** en varning om datasekretess.
    
-   ![](media/desktop-python-in-query-editor/python-in-query-editor-6.png)
+   ![Skärmbild av Frågeredigeraren med en varning om datasekretess.](media/desktop-python-in-query-editor/python-in-query-editor-6.png)
 8. För att Python-skript ska fungera korrekt i Power BI-tjänsten måste alla datakällor anges som *offentliga*. Mer information om sekretessinställningar och deras konsekvenser finns i [Sekretessnivåer](../admin/desktop-privacy-levels.md).
    
-   ![](media/desktop-python-in-query-editor/python-in-query-editor-7.png)
+   ![Skärmbild av dialogrutan Sekretessnivåer och Offentlig valt.](media/desktop-python-in-query-editor/python-in-query-editor-7.png)
    
    Observera en ny kolumn i fönstret **Fält** med namnet *completedValues*. Observera att det är några dataelement som saknas, t.ex på rad 15 och 18. Ta en titt på hur Python hanterar det i nästa avsnitt.
    
@@ -71,7 +71,7 @@ Trots att vi bara har fem rader med Python-skript kan **frågeredigeraren** fyll
 ## <a name="creating-visuals-from-python-script-data"></a>Skapa visuella objekt från Python-skriptdata
 Nu kan vi skapa ett visuellt objekt för att se hur Python-skriptkoden använder biblioteket *pandas* till att fylla i saknade värden, enligt följande bild:
 
-![](media/desktop-python-in-query-editor/python-in-query-editor-8.png)
+![Skärmbild av kontrollen med ursprungliga data och ifyllda saknade värden för biblioteket pandas.](media/desktop-python-in-query-editor/python-in-query-editor-8.png)
 
 När det visuella objektet är klart och även övriga visuella objekt som du vill skapa med **Power BI Desktop**, kan du spara **Power BI Desktop**-filen (som en .pbix-fil) och sedan använda datamodellen, inklusive de Python-skript som ingår i den, i Power BI-tjänsten.
 
@@ -88,11 +88,11 @@ Det finns vissa begränsningar för frågor med Python-skript som skapats i **fr
 
 * Alla Python-inställningar för datakällan måste anges som *offentliga* och alla andra steg i en fråga som skapats i **frågeredigeraren** måste också vara offentliga. Gå till inställningar för datakällan i **Power BI Desktop** genom att välja **Fil > Alternativ och inställningar > Datakällsinställningar**.
   
-  ![](media/desktop-python-in-query-editor/python-in-query-editor-9.png)
+  ![Skärmbild av menyn Arkiv i Power BI Desktop med Datakällsinställningar valt.](media/desktop-python-in-query-editor/python-in-query-editor-9.png)
   
   I dialogrutan **Datakällsinställningar** markerar du datakällorna och väljer sedan **Redigera behörigheter...** . Kontrollera att **Sekretessnivå** är inställd som *Offentlig*.
   
-  ![](media/desktop-python-in-query-editor/python-in-query-editor-10.png)    
+  ![Skärmbild av dialogrutan Datakällsinställningar där Offentlig är valt som Sekretessnivå.](media/desktop-python-in-query-editor/python-in-query-editor-10.png)    
 * Om du vill aktivera schemalagd uppdatering av visuella Python-objekt eller datauppsättningar, måste du aktivera **Schemalagd uppdatering** och installera en **Personlig gateway** på datorn där arbetsboken och Python-installationen finns. Mer information om detta finns i föregående avsnitt i den här artikeln, med länkar till mer information om var och en.
 * Kapslade tabeller (tabell över tabeller) stöds inte för tillfället 
 

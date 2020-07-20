@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 4f1f8947827500ec89d189e17f8ab2189caaff93
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: fe93fa3f41cf1c340b31ce3c6f817f842f3039ff
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83138956"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86161662"
 ---
 # <a name="using-the-same-account-for-power-bi-and-azure"></a>Använda samma kontoinloggning för Power BI och Azure
 
@@ -32,7 +32,7 @@ Du kan lägga till ditt organisationskonto som medadministratör i Azure med fö
 
 1. I navigeringsfönstret väljer du **Åtkomstkontroll (IAM)** och sedan **Lägg till** \> **Lägg till medadministratör**.
 
-    ![Lägg till en medadministratör i Azure Portal](media/service-admin-how-to-use-the-same-account-as-azure/add-co-administrator.png)
+    ![Skärm bild av åtkomstkontroll med Lägg till en medadministratör framhävt.](media/service-admin-how-to-use-the-same-account-as-azure/add-co-administrator.png)
 
 1. Ange den e-postadress som är associerat med ditt organisationskonto och välj **Lägg till**.
 

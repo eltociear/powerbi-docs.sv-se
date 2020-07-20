@@ -8,18 +8,18 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 07/02/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 18dc88404b84e786bfee0a15ac169a6e0c1496e4
-ms.sourcegitcommit: 561f6de3e4621d9d439dd54fab458ddca78ace2c
+ms.openlocfilehash: 8e1e590f871e1840209e72eb611bde7b21610c6e
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85940165"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86162377"
 ---
 # <a name="microsofts-bi-transformation"></a>Microsoft BI-omvandling
 
 Den här artikeln vänder sig till IT-proffs och IT-chefer. Vi beskriver vår BI-strategi och vision som gör det möjligt för oss att kontinuerligt utnyttja våra data som en tillgång. Du får också se hur vi skapar en datakultur för affärsbeslut med Power BI.
 
-Först lite bakgrundsinformation: I dag påverkar explosionen av datahantering både kunder och företag i en svindlande hastighet. För att lyckas i den här dataintensiva miljön måste analytiker och chefer kunna utvinna kortfattade insikter ur enorma mängder data. Revolutionen med Microsofts BI-verktyg har förändrat det sätt som Microsoft själva utforskar sina data och får de insikter som krävs för att driva företaget.
+Först lite bakgrundsinformation: I dag påverkar explosionen av datahantering både kunder och företag i en svindlande hastighet. För att lyckas i den här dataintensiva miljön måste analytiker och chefer kunna utvinna kortfattade insikter ur enorma mängder data. Den snabba utvecklingen inom Microsofts BI-verktyg har förändrat hur Microsoft självt utforskar sina data och får de insikter som krävs för att driva företaget framåt.
 
 Så hur kan din organisation också revolutionera sin dataanvändning? Vi rekommenderar att du läser artikeln om vår BI-omvandling för att få en bättre förståelse för möjligheterna.
 

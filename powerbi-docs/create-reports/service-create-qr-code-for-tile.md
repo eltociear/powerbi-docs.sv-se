@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 03/07/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 5a363a951e9c8f6cc04f825c64dce811d0a954e8
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 7ce25bb448d698f8c1ce4b77e8823e96220a1792
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85219331"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86264458"
 ---
 # <a name="create-a-qr-code-for-a-tile-in-power-bi-to-use-in-the-mobile-apps"></a>Skapa en QR-kod för en panel i Power BI som ska användas i mobilapparna
 Med QR-koderna i Power BI kan du ansluta vad som helst i verkligheten direkt till relaterad BI-information &#151; Ingen navigering eller sökning behövs.
@@ -26,13 +26,13 @@ Kolleger som du har delat instrumentpanelen med kan [skanna QR-koden för att f�
 
 ## <a name="create-a-qr-code-for-a-tile"></a>Skapa en QR-kod för en panel
 1. Öppna en instrumentpanel i Power BI-tjänsten.
-2. Välj **Fler alternativ** (...) uppe till höger på panelen och sedan **Fokusläge** ![](media/service-create-qr-code-for-tile/fullscreen-icon.jpg).
+2. Välj **Fler alternativ** (...) uppe till höger på panelen och sedan **Fokusläge** ![helskärmsikon](media/service-create-qr-code-for-tile/fullscreen-icon.jpg).
 3. Välj **Fler alternativ** (...) uppe till höger och sedan **Generera QR-kod**. 
    
-    ![](media/service-create-qr-code-for-tile/power-bi-create-qr-code-tile.png)
+    ![Skärmbild av en panel med en pekare från ellipsen till Generera QR-kod.](media/service-create-qr-code-for-tile/power-bi-create-qr-code-tile.png)
 4. En dialogruta med QR-koden visas. 
    
-    ![](media/service-create-qr-code-for-tile/pbi_qrcode_opportunity_count.png)
+    ![Skärmbild av en dialog ruta som visar att QR-koden är klar att ladda ned eller spara.](media/service-create-qr-code-for-tile/pbi_qrcode_opportunity_count.png)
 5. Härifrån kan du skanna QR-koden eller ladda ned och spara den så att du kan: 
    
    * Lägga till den i ett e-postmeddelande eller ett annat dokument, eller 

@@ -8,12 +8,12 @@ ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.date: 10/24/2018
 ms.author: maggies
-ms.openlocfilehash: f69d55e6c4f0916ac2c0c5083e062b248c4c36de
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: b877ec917953bb6ec456a0042035e498c591e1ed
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85239432"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86214010"
 ---
 # <a name="how-to-find-your-report-server-product-key"></a>Så här hittar du rapportserverns produktnyckel
 Lär dig hur du hittar produktnyckeln för Power BI-rapportservern för att installera servern i en produktionsmiljö.
@@ -29,7 +29,7 @@ Om du har köpt Power BI Premium så kommer du att ha tillgång till din produkt
 
 ![Power BI-rapportservernyckeln i premiuminställningarna](media/find-product-key/pbirs-product-key.png)
 
-Om du väljer **Power BI-rapportservernyckel** visas en dialogruta med din produktnyckel. Du kan kopiera den och använda den med installationen.
+Om du väljer **Power BI-rapportservernyckel** så visas en dialogruta med din produktnyckel. Du kan kopiera den och använda den med installationen.
 
 ![Produktnyckel för Power BI-rapportserver](media/find-product-key/pbirs-product-key-dialog.png)
 
@@ -41,13 +41,13 @@ Om du har ett SQL Server Enterprise SA-avtal, kan du få din produktnyckel från
 > 
 > 
 
-![](media/find-product-key/vlsc-download.png "Volume Licensing Service Center")
-
+![Skärmbild av SQL Server Enterprise som visar fliken Nedladdningar och nycklar med information om integreringen med Power BI Report.](media/find-product-key/vlsc-download.png "Volume Licensing Service Center")
+ 
 ## <a name="next-steps"></a>Nästa steg
 [Installera Power BI-rapportserver](install-report-server.md)  
-[Installera Power BI Desktop optimerad för Power BI-rapportserver](install-powerbi-desktop.md)  
+[Installera Power BI Desktop som har optimerats för Power BI-rapportservern](install-powerbi-desktop.md)  
 [Hämta Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
 [Ladda ned SQL Server Data Tools (SSDT)](https://go.microsoft.com/fwlink/?LinkID=616714)
 
-Fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 

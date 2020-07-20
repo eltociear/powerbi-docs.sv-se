@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 05/27/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 88aa1335433dba38e5f18ca7463077543db2c923
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 20271b1e165fea894404a77bf19bbcc735703907
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85222452"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86214555"
 ---
 # <a name="use-onedrive-for-business-links-in-power-bi-desktop"></a>Använd OneDrive för företag-länkar i Power BI Desktop
 Många har Excel-arbetsböcker lagrade på OneDrive för företag som skulle vara perfekta att använda med Power BI Desktop. Med Power BI Desktop kan du använda onlinelänkar för Excel-filer som lagras i OneDrive för företag till att skapa rapporter och visuella objekt. Du kan använda ett OneDrive för företag-gruppkonto eller ditt personliga OneDrive för företag-konto.
@@ -27,30 +27,28 @@ Att hämta en onlinelänk från OneDrive för företag kräver dock några speci
    > [!NOTE]
    > Webbläsarens gränssnitt kanske inte ser exakt likadant ut som på följande bild. Det finns flera olika sätt att välja **Öppna i Excel** för filer i webbläsargränssnittet för OneDrive för företag. Du kan använda valfritt alternativ som låter dig öppna filen i Excel.
    
-   ![](media/desktop-use-onedrive-business-links/odb-links_02.png)
+   ![Skärmbild av OneDrive i en webbläsare med valet Öppna i Excel.](media/desktop-use-onedrive-business-links/odb-links_02.png)
 
 2. I Excel väljer du **fil** > **Info** och väljer sedan knappen **Kopiera sökväg**, som du ser i följande bild.
    
-   ![](media/desktop-use-onedrive-business-links/onedrive-copy-path.png)
+   ![Skärmbild av menyn Information som visar knappen Kopiera sökväg.](media/desktop-use-onedrive-business-links/onedrive-copy-path.png)
 
 ## <a name="use-the-link-in-power-bi-desktop"></a>Använda länken i Power BI Desktop
 I Power BI Desktop kan du använda länken som du nyss kopierade till Urklipp. Gör följande:
 
 1. I Power BI Desktop väljer du **Hämta data** > **Webb**.
    
-   ![](media/desktop-use-onedrive-business-links/power-bi-web-link-onedrive.png)
+   ![Skärmbild av menyfliksområdet Hämta data i Power BI Desktop med valet Webb.](media/desktop-use-onedrive-business-links/power-bi-web-link-onedrive.png)
 2. När du har valt alternativet **Basic** (Grundläggande) klistrar du in länken i dialogrutan **Från webben**.
 3. Ta bort strängen *?web=1* i slutet av länken så Power BI Desktop kan navigera till din fil ordentligt, och välj sedan **OK**.
    
-    ![](media/desktop-use-onedrive-business-links/power-bi-web-link-confirmation.png) 
+    ![Skärmbild av dialogrutan Från webben som visar hur du tar bort en sträng från fältet URL.](media/desktop-use-onedrive-business-links/power-bi-web-link-confirmation.png) 
 4. Om Power BI Desktop ber dig om autentiseringsuppgifter väljer du antingen **Windows** (för lokala SharePoint-webbplatser) eller **Organisationskonto** (för Microsoft 365 eller OneDrive för företag-webbplatser).
    
-   ![](media/desktop-use-onedrive-business-links/odb-links_06.png)
+   ![Skärmbild av uppmaningen att ange autentiseringsuppgifter för Power BI Desktop med valen Windows- eller organisationskonto.](media/desktop-use-onedrive-business-links/odb-links_06.png)
 
    En **Navigatörsdialogruta** öppnas där du kan välja i listan med tabeller, blad och intervall som finns i Excel-arbetsboken. Därifrån kan du använda OneDrive för företag-filen precis som vilken Excel-fil som helst. Du kan skapa rapporter och använda dem i datamängder på samma sätt som med andra datakällor.
 
 > [!NOTE]
 > Om du vill använda en OneDrive för företag-fil som datakälla i Power BI-tjänsten med **Uppdatera tjänst** aktiverat för filen måste du välja **OAuth2** som **Autentiseringsmetod** när du konfigurerar uppdateringsinställningarna. Annars kan ett fel uppstå (t.ex. *Det gick inte att uppdatera datakällans autentiseringsuppgifter*) när du försöker ansluta eller uppdatera. Om du väljer **OAuth2** som autentiseringsmetod åtgärdas detta problem.
-> 
-> 
-
+>

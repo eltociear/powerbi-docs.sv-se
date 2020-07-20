@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 12/11/2019
 ms.author: painbar
-ms.openlocfilehash: 3d1c1919b5a940bc4ed6c5b0de9bd0af6444af00
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 6cddfd820da45de6141b698b8cb6e3c2bfc68069
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85220067"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86264906"
 ---
 # <a name="set-data-alerts-in-the-power-bi-mobile-apps"></a>Ställa in dataaviseringar i Power BI-mobilapparna
 Gäller för:
@@ -37,14 +37,14 @@ Du kan ställa in aviseringar på paneler om du har en Power BI Pro-licens, elle
 ### <a name="set-an-alert-on-an-iphone-or-ipad"></a>Ställa in dataaviseringar på en iPhone eller iPad
 1. Tryck på en tal- eller mätarpanel på en instrumentpanel att öppna den i Fokusläge.  
    
-   ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-card-visual.png)
-2. Tryck på klockikonen ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-alert-icon.png) för att lägga till en avisering.  
+   ![Skärmbild av en instrumentpanel med mätarpanelen i fokusläge.](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-card-visual.png)
+2. Tryck på klockikonen ![Klockikonen](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-alert-icon.png) om du vill lägga till en avisering.  
 3. Tryck på **Lägg till aviseringsregel**.
    
-   ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-add-alert-rule.png)
+   ![Skärmbild av aviseringsregeln som visar att inga aviseringar har angetts.](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-add-alert-rule.png)
 4. Välj att ta emot aviseringar över eller under ett värde och ange sedan värdet.
    
-   ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-set-alert-threshold.png)
+   ![Skärmbild av aviseringsinställningarna som visar aviseringsrubriken och värdet som ska anges](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-set-alert-threshold.png)
 5. Begär om du vill få aviseringar varje timme eller dag och om du vill få ett e-postmeddelande när du får aviseringen.
    
    > [!NOTE]
@@ -55,32 +55,32 @@ Du kan ställa in aviseringar på paneler om du har en Power BI Pro-licens, elle
 7. Tryck på **Spara**.
 8. En panel kan ha aviseringar för värden både över och under tröskelvärden. I **Hantera aviseringar** trycker du på **Lägg till regel för avisering**.
    
-   ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-add-another-alert-rule.png)
+   ![Skärmbild av funktionen Hantera avisering och en pekare mot Lägg till regel för avisering.](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-add-another-alert-rule.png)
 
 ### <a name="manage-alerts-on-your-iphone-or-ipad"></a>Hantera aviseringar på din iPhone eller iPad
 Du kan hantera enskilda aviseringar på din mobila enhet eller [hantera alla varningar i Power BI-tjänsten](../../create-reports/service-set-data-alerts.md).
 
 1. Tryck på en tal- eller mätarpanel som har en avisering på instrumentpanelen.  
    
-   ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-card-visual_has_alert.png)
+   ![Skärmbild av instrumentpanelen som visar talpanelen med aviseringen.](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-card-visual_has_alert.png)
 
-2. Tryck på klockikonen ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-has-alert-icon.png).  
+2. Tryck på klockikonen ![Klockikonen](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-has-alert-icon.png).  
 3. Tryck på namnet på aviseringen för att redigera den, tryck sedan på skjutreglaget för att stänga av e-postaviseringar eller på papperskorgen för att ta bort aviseringen.
    
-    ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-edit-delete-alert.png)
+    ![Skärmbild av en avisering med en pekare på aviseringsnamnet, papperskorg för att ta bort aviseringen och skjutreglaget för att stänga av aviseringen.](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-edit-delete-alert.png)
 
 ## <a name="data-alerts-on-an-android-device"></a>Dataaviseringar på en Android-enhet
 ### <a name="set-an-alert-on-an-android-device"></a>Ställa in dataaviseringar på en Android-enhet
 1. Tryck på en tal- eller mätarpanel på Power BI-instrumentpanelen för att öppna den.  
-2. Tryck på klockikonen ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-android-alert-icon.png) för att lägga till en avisering.  
+2. Tryck på klockikonen ![Klockikonen](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-android-alert-icon.png) om du vill lägga till en avisering.  
    
-   ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-android-tap-alert.png)
+   ![Skärmbild av instrumentpanelen som visar talpanelen med aviseringen.](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-android-tap-alert.png)
 3. Tryck på plusikonen (+).
    
-   ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-android-plus-alert.png)
+   ![Skärmbild av Hantera avisering med en pekare mot plusikonen.](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-android-plus-alert.png)
 4. Välj att ta emot aviseringar över eller under ett värde och ange sedan värdet.
    
-   ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-android-tablet-set-alert-condition.png)
+   ![Skärmbild av aviseringsinställningen med pekare mot Spara och Klart.](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-android-tablet-set-alert-condition.png)
 5. Tryck på **Klar**.
 6. Begär om du vill få aviseringar varje timme eller dag och om du vill få ett e-postmeddelande när du får aviseringen.
    
@@ -95,12 +95,12 @@ Du kan hantera enskilda aviseringar på din mobila enhet eller [hantera alla var
 Du kan hantera enskilda aviseringar i Power BI-appen eller [hantera alla varningar i Power BI-tjänsten](../../create-reports/service-set-data-alerts.md).
 
 1. Tryck på en kort- eller mätarpanel som har en avisering på instrumentpanelen.  
-2. Tryck på den fasta klockikonen ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-android-filled-alert-bell.png).  
+2. Tryck på den fasta klockikonen ![Klockikonen](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-android-filled-alert-bell.png).  
 3. Tryck på aviseringen om du vill ändra ett värde eller stänga av den.
    
-    ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-android-manage-alerts.png)
+    ![Skärmbild av panelen Hantera avisering och plusikonen för att lägga till en avisering.](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-android-manage-alerts.png)
 4. Tryck på plusikonen (+) för att lägga till en ny avisering på samma panel.
-5. Om du vill ta bort aviseringen helt knackar du på papperskorgen ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-android-delete-alert-icon.png).
+5. Om du vill ta bort aviseringen helt trycker du på papperskorgen ![papperskorgsikon](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-android-delete-alert-icon.png).
 
 ## <a name="data-alerts-on-a-windows-device"></a>Dataaviseringar på en Windows-enhet
 
@@ -109,15 +109,15 @@ Du kan hantera enskilda aviseringar i Power BI-appen eller [hantera alla varning
 
 ### <a name="set-data-alerts-on-a-windows-device"></a>Ställ in dataaviseringar på en Windows-enhet
 1. Tryck på en tal- eller mätarpanel på en instrumentpanel att öppna den.  
-2. Tryck på klockikonen ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-windows-10-alert-bell-off.png) för att lägga till en avisering.  
+2. Tryck på klockikonen ![Klockikonen](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-windows-10-alert-bell-off.png) om du vill lägga till en avisering.  
    
-   ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-windows-10-tap-alert.png)
+   ![Skärmbild av instrumentpanelen som visar talpanelen med aviseringen.](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-windows-10-tap-alert.png)
 3. Tryck på plusikonen (+).
    
-   ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-windows-10-no-alerts-yet.png)
+   ![Skärmbild av Hantera aviseringar som visar att inga aviseringar har angetts.](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-windows-10-no-alerts-yet.png)
 4. Välj att ta emot aviseringar över eller under ett värde och ange sedan värdet.
    
-   ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-windows-10-set-alert.png)
+   ![Skärmbild av aviseringsinställningarna som visar poster för att redigera aviseringen.](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-windows-10-set-alert.png)
 5. Begär om du vill få aviseringar varje timme eller dag och om du vill få ett e-postmeddelande när du får aviseringen.
    
    > [!NOTE]
@@ -128,18 +128,18 @@ Du kan hantera enskilda aviseringar i Power BI-appen eller [hantera alla varning
 7. Tryck på krysset.
 8. En panel kan ha aviseringar för värden både över och under tröskelvärden. Tryck på plustecknet (+) i **Hantera aviseringar**.
    
-   ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-windows-10-add-another-alert.png)
+   ![Skärmbild av Hantera avisering och plustecknet för att lägga till en avisering.](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-windows-10-add-another-alert.png)
 
 ### <a name="manage-alerts-on-a-windows-device"></a>Hantera dataaviseringar på en Windows-enhet
 Du kan hantera enskilda aviseringar i Power BI-appen eller [hantera alla varningar i Power BI-tjänsten](../../create-reports/service-set-data-alerts.md).
 
 1. Tryck på en kort- eller mätarpanel som har en avisering på instrumentpanelen.  
-2. Tryck på klockikonen ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-windows-10-alert-bell-on.png).  
+2. Tryck på klockikonen ![Klockikonen](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-windows-10-alert-bell-on.png).  
    
-   ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-windows-10-has-alerts.png)
+   ![Skärmbild av instrumentpanelen som visar talpanelen med aviseringen.](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-windows-10-has-alerts.png)
 3. Tryck på aviseringen om du vill ändra ett värde eller stänga av den.
    
-    ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-windows-10-add-another-alert.png)
+    ![Skärmbild av Hantera avisering och plustecknet för att lägga till en avisering.](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-windows-10-add-another-alert.png)
 4. Om du vill ta bort aviseringen helt kan du högerklicka eller trycka och hålla kvar på > **Ta bort**.
 
 ## <a name="receiving-alerts"></a>Ta emot aviseringar
@@ -152,7 +152,7 @@ Datakällor är ofta inställda på att uppdateras varje dag, men vissa uppdater
    Så länge data har passerat tröskelvärdet får du en avisering varje timme eller var 24 timme.
 2. Om du har valt att skicka ett e-postmeddelande kommer du att se följande i din inkorg.
    
-   ![](media/mobile-set-data-alerts-in-the-mobile-apps/powerbi-alerts-email.png)
+   ![Skärmbild av en e-postavisering som visar aviseringen.](media/mobile-set-data-alerts-in-the-mobile-apps/powerbi-alerts-email.png)
 3. Power BI lägger till ett meddelande i [Meddelandecenter](mobile-apps-notification-center.md) och lägger till en gul prick på klockikonen ![klockikon](media/mobile-set-data-alerts-in-the-mobile-apps/powerbi-alert-tile-notification-icon.png) på namnlisten (iOS och Android) eller till den globala navigeringsknappen ![globala navigeringsknapp](./media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-alert-global-nav-button.png) (Windows 10-enheter).
 
 

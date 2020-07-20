@@ -2,20 +2,20 @@
 title: Lägga till kommentarer på instrumentpaneler och i rapporter
 description: I det här dokumentet visas hur du lägger till kommentarer på en instrumentpanel, i en rapport eller i ett visuellt objekt samt hur du använder kommentarer för att föra konversationer med samarbetspartner.
 author: mihart
-ms.reviewer: ''
+ms.reviewer: mihart
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 02/18/2020
+ms.date: 07/07/2020
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: 4d9581a617241afbe668d8e1810c0c3f60a0835c
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 76a3bd087899126d1c3aa9eed6eb7d20b1441bff
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85236052"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86161903"
 ---
 # <a name="add-comments-to-a-dashboard-or-report"></a>Lägga till kommentarer på en instrumentpanel eller i en rapport
 
@@ -33,7 +33,7 @@ Lägg till en personlig kommentar eller starta en konversation om en instrumentp
 ## <a name="how-to-use-the-comments-feature"></a>Hur du använder kommentarsfunktionen
 Kommentarer kan läggas till på en hel instrumentpanel, i enskilda visuella objekt på en instrumentpanel, på en rapportsida, i en sidnumrerad rapport samt i enskilda visuella objekt på en rapportsida. Lägg till en allmän kommentar eller en kommentar riktad till specifika kollegor.  
 
-När du lägger till en kommentar i en rapport hämtar Power BI de aktuella filter- och utsnittsvärdena. Det innebär att när du väljer eller svarar på en kommentar så kan rapportsidan eller rapportens visuella objekt ändras till att visa de filter- och utsnittsval som var aktiva när kommentaren först lades till.  
+När du lägger till en kommentar i en rapport hämtar Power BI de aktuella filter- och utsnittsvärdena och skapar ett [bokmärke](end-user-bookmarks.md). Det innebär att när du väljer eller svarar på en kommentar så kan rapportsidan eller rapportens visuella objekt ändras till att visa de filter- och utsnittsval som var aktiva när kommentaren först lades till.  
 
 ![video om rapport med filter](media/end-user-comment/power-bi-comment.gif)
 
@@ -46,15 +46,15 @@ Processen för att lägga till kommentarer på en instrumentpanel liknar den dä
 
 1. Öppna en Power BI-instrumentpanel eller en rapport och välj ikonen **Kommentarer**. Då öppnas dialogrutan Kommentarer.
 
-    ![Ikonen Kommentarer](media/end-user-comment/power-bi-comment-menu.png)
+    ![Ikonen Kommentarer](media/end-user-comment/power-bi-comments-icon.png)
 
     Här ser vi att skaparen av instrumentpanelen redan har lagt till en allmän kommentar.  Alla med åtkomst till instrumentpanelen kan se den här kommentaren.
 
-    ![Ikonen Kommentarer](media/end-user-comment/power-bi-first-comments.png)
+    ![Ikonen Kommentarer](media/end-user-comment/power-bi-first-comment.png)
 
 2. Svara genom att välja **Svara**, skriva svaret och välja **Publicera**.  
 
-    ![Ikonen Kommentarssvar](media/end-user-comment/power-bi-comment-reply.png)
+    ![Ikonen Kommentarssvar](media/end-user-comment/power-bi-comments-reply.png)
 
     Som standard dirigerar Power BI ditt svar till de kollegor som startade kommentarstråden, i det här fallet Aaron. 
 
@@ -62,7 +62,7 @@ Processen för att lägga till kommentarer på en instrumentpanel liknar den dä
 
  3. Om du vill lägga till en kommentar som inte ingår i en befintlig tråd skriver du kommentaren i det övre textfältet.
 
-    ![Ikonen Kommentarssvar](media/end-user-comment/power-bi-new-comments.png)
+    ![Ikonen Kommentarssvar](media/end-user-comment/power-bi-new-commenting.png)
 
     Kommentarerna för den här instrumentpanelen ser nu ut så här.
 
@@ -74,11 +74,11 @@ Utöver att lägga till kommentarer på en hel instrumentpanel eller en hel rapp
 1. Hovra över det visuella objektet och välj **Fler alternativ** (...).    
 2. Välj **Öppna kommentarer** i listrutan.
 
-    ![Lägga till en kommentar är det första alternativet](media/end-user-comment/power-bi-report-comment.png)  
+    ![Lägga till en kommentar är det första alternativet](media/end-user-comment/power-bi-comment-reports.png)  
 
 3.  Dialogrutan **Kommentarer** öppnas och de andra visuella objekten på sidan är gråtonade. Det visuella objektet har inga kommentarer än. 
 
-    ![Lägg till en kommentar till mig själv](media/end-user-comment/power-bi-comment-column.png)  
+    ![Lägg till en kommentar till mig själv](media/end-user-comment/power-bi-comments-column.png)  
 
 4. Skriv kommentaren och välj sedan **Publicera**.
 
@@ -94,13 +94,15 @@ Utöver att lägga till kommentarer på en hel instrumentpanel eller en hel rapp
 5. Välj **Stäng** för att återgå till instrumentpanelen eller rapporten.
 
 ### <a name="get-your-colleagues-attention-by-using-the--sign"></a>Få kollegornas uppmärksamhet genom att använda @-tecknet
-Oavsett om du skapar en kommentar för instrumentpanel, rapport, ruta eller visuellt objekt kan du fånga kollegornas uppmärksamhet med hjälp av ”\@”-tecknet.  När du skriver ”\@”-tecknet öppnar Power BI en listruta där du kan söka efter och välja personer från din organisation. Alla verifierade namn med \@-tecknet först visas i blått. 
+Oavsett om du skapar en kommentar för instrumentpanel, rapport, ruta eller visuellt objekt kan du fånga kollegornas uppmärksamhet med hjälp av ”\@”-tecknet.  När du skriver ”\@”-tecknet öppnar Power BI en listruta där du kan söka efter och välja personer från din organisation. Alla verifierade namn med \@-tecknet först visas i blått. Personer med @mentioned får omedelbart ett e-postmeddelande i inkorgen, och om de använder en Power BI Mobile-app får de ett push-meddelande på enheten. De kan öppna kommentaren direkt från meddelandet, visa data och svara på lämpligt sätt.
 
-Det här är en konversation jag har med *visualiseringsdesignern*. Den personen använder @-tecknet för att försäkra sig om att jag ser kommentaren. Jag vet att den här kommentaren är avsedd för mig. När jag öppnar den här appen i Power BI väljer jag **Kommentarer** i rubriken. Vår konversation visas i **kommentarsfönstret**.
+Det här är en konversation jag har med *visualiseringsdesignern*. Den personen använder @-tecknet för att försäkra sig om att jag ser kommentaren. Jag får ett meddelande och väljer länken för att öppna den här instrumentpanelen och relevant konversation.  
 
 ![Lägg till ett omnämnande till en kommentar](media/end-user-comment/power-bi-comment-convo.png)  
 
+## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
 
+- Bokmärken samlas inte in när du svarar på en konversation. Det är bara den första kommentaren i en konversation som skapar ett bokmärke.
 
 ## <a name="next-steps"></a>Nästa steg
 Tillbaka till [visualiseringar för användare](end-user-visualizations.md)    

@@ -10,12 +10,12 @@ ms.date: 04/08/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: 8b110dceb7427e3aeefe8e7ef48e579943a7e6f3
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: af58a79c5c81e8f04e5d0ba714703c202f9c8000
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85228445"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86161363"
 ---
 # <a name="view-and-manage-power-bi-user-licenses"></a>Visa och hantera Power BI-användarlicenser
 
@@ -35,7 +35,7 @@ Följ dessa steg om du vill se vilka Power BI-prenumerationer din organisation h
 
 Dina aktiva Power BI-prenumerationer visas tillsammans med andra prenumerationer som du har. Du ser kanske en oväntad prenumeration på Power BI (kostnadsfri), såsom det visas här.
 
-  ![Kostnadsfri användaraktiverad Power BI-prenumeration](media/service-admin-manage-licenses/power-bi-free-user-activated.png)
+  ![Skärmbild av en kostnadsfri Power BI-prenumeration.](media/service-admin-manage-licenses/power-bi-free-user-activated.png)
 
 Den här typen av prenumeration skapas åt dig när användare drar nytta av självbetjäningsregistrering. Läs mer i [Power BI i din organisation](https://docs.microsoft.com/microsoft-365/admin/misc/power-bi-in-your-organization?view=o365-worldwide).
 

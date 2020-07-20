@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 021b5f0856ef4ff3730102efda88fd089a36dfcf
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: bd3ab4a1c6f702ad866211339a3d3a386c4981fa
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83320088"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86264403"
 ---
 # <a name="data-sources-for-the-power-bi-service"></a>Datakällor för Power BI-tjänsten
 Datan finns centralt i Power BI. Vi antar att du utforskar data. Det kan du göra genom att skapa diagram och instrumentpaneler eller genom att ställa frågor med **Q&A**. De visualiseringar och svar du ser får sina underliggande data från en datamängd. Men var kommer datauppsättningen från? Jo, den kommer från en datakälla.
@@ -23,14 +23,14 @@ I den här artikeln ska vi gå igenom de olika typer av datakällor du kan anslu
 
 Du kan hämta data från alla de här datakällorna i Power BI genom att välja **Hämta data** nere till vänster på sidan.
 
-![](media/service-get-data/pbi-getdata-navigation-link.png) 
+![Skärmbild av Hämta data nere till vänster i Power BI-tjänsten.](media/service-get-data/pbi-getdata-navigation-link.png) 
 
 När du har valt **Hämta data** kan du välja vilka data du vill använda
 
-![](media/service-get-data/pbi-getdata-startscreen.png)
+![Skärmbild av alternativen för Hämta data, där du kan välja vilka data du vill använda.](media/service-get-data/pbi-getdata-startscreen.png)
 
 ## <a name="discover-content"></a>Upptäck innehåll
-![](media/service-get-data/pbi-getdata-discovercontent.png)
+![Skärmbild av avsnittet Identifiera innehåll med partnerlogotyper.](media/service-get-data/pbi-getdata-discovercontent.png)
 
 I avsnittet **Upptäck innehåll** hittar du alla data och rapporter du behöver, och de har redan förberetts åt dig. Det finns två typer av innehållspaket i Power BI: Organisation och Tjänster. 
 
@@ -43,7 +43,7 @@ I avsnittet **Upptäck innehåll** hittar du alla data och rapporter du behöver
 I avsnittet **Skapa nytt innehåll** hittar du alternativ för att skapa och importera innehåll själv. Det finns två sätt att skapa eller importera eget innehåll i Power BI: Filer och Databaser. 
 
 ### <a name="files"></a>Filer
-![](media/service-get-data/pbi_getdata_files.png)
+![Excel, Power BI Desktop och CSV-ikonen](media/service-get-data/pbi_getdata_files.png)
 
 **Excel** ( *.xlsx*, *.xlsm*) – I Excel kan en arbetsbok innehålla olika datatyper. Den kan till exempel innehålla data som du har lagt in i kalkylbladen själv. Den kan även innehålla data som du har kört frågor om och läst in från externa datakällor med Power Query. Power Query är tillgängligt via **Hämta & transformera** i Excel 2016 eller Power Pivot. Du kan importera data från tabeller i kalkylblad eller från en datamodell. Mer information finns i [Hämta data från filer för Power BI](service-get-data-from-files.md).
 
@@ -56,7 +56,7 @@ För andra filtyper som XML-tabeller ( *.xml*) eller textfiler ( *.txt*), kan du
 Var du lagrar dina filer gör också en stor skillnad. OneDrive för företag erbjuder störst flexibilitet och integrering med Power BI. Det är OK om du vill spara filerna lokalt. Om du behöver uppdatera dina data krävs dock några extra steg. Du kan läsa mer i artikellänkarna nedan.
 
 ### <a name="databases"></a>Databaser
-![](media/service-get-data/pbi_getdata_databases.png)
+![Skärmbild av databaser med logotyper för databaser i molnet.](media/service-get-data/pbi_getdata_databases.png)
 
 **Databaser i molnet** – Från Power BI-tjänsten kan du liveansluta till:
 

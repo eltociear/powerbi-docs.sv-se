@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 806fb9fffccaffee62d8cafb00dc94b5ad7b0def
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: ef9c39f6c00738718d88dd485430b150ad95ec50
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85220895"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216351"
 ---
 # <a name="refresh-a-dataset-created-from-an-excel-workbook-on-a-local-drive"></a>Uppdatera en datauppsättning som skapats från en Excel-arbetsbok på en lokal enhet
 ## <a name="whats-supported"></a>Vad stöds?
@@ -47,13 +47,13 @@ När du använder Power Query (Hämta & Transformera data i Excel 2016) för att
 > 
 
 I **Navigator** klickar du på **Läs in till ...**  
-    ![](media/refresh-excel-file-local-drive/refresh_loadtodm_1.png)
+    ![Skärmbild av Läs in i Navigator, med Läs in till valt.](media/refresh-excel-file-local-drive/refresh_loadtodm_1.png)
 
 Eller, om du klickar på **Redigera** i Navigator, så öppnas Frågeredigeraren. Där kan du klicka på **Stäng och läs in till ...**  
-    ![](media/refresh-excel-file-local-drive/refresh_loadtodm_2.png)
+    ![Skärmbild av fliken Start i Navigator med Stäng och läs in till valt.](media/refresh-excel-file-local-drive/refresh_loadtodm_2.png)
 
 I **Läs in till** måste du sedan kontrollera att du väljer **Lägg till dessa data i datamodellen**.  
-    ![](media/refresh-excel-file-local-drive/refresh_loadtodm_3.png)
+    ![Skärmbild av dialogrutan Läs in till med kryssrutan Lägg till dessa data i datamodellen markerad.](media/refresh-excel-file-local-drive/refresh_loadtodm_3.png)
 
 ### <a name="what-if-i-use-get-external-data-in-power-pivot"></a>Vad händer om jag använder Hämta externa Data i Power Pivot?
 Inga problem. När du använder Power Pivot för att ansluta till och fråga efter data från en lokal datakälla eller datakälla online, läses dina data in automatiskt till datamodellen.
@@ -64,7 +64,7 @@ När du konfigurerar ett uppdateringsschema, ansluter Power BI direkt till datak
 Mer information om hur du konfigurerar schemalagda uppdateringar finns i [Konfigurera schemalagd uppdatering](refresh-scheduled-refresh.md).
 
 ## <a name="when-things-go-wrong"></a>Om något går fel
-Om något går fel beror det vanligtvis på att Power BI inte kan logga in till datakällor, eller att gatewayen är offline om datauppsättningen ansluter till en lokal datakälla. Kontrollera att Power BI kan logga in till datakällor. Om det lösenord som du använder för att logga in på en datakälla ändras eller om Power BI loggas ut från en datakälla, bör du försöka logga in på dina datakällor igen i datakällans autentiseringsuppgifter.
+Om något går fel beror det vanligtvis på att Power BI inte kan logga in till datakällor, eller att gatewayen är offline om datauppsättningen ansluter till en lokal datakälla. Kontrollera att Power BI kan logga in till datakällor. Om det lösenord som du använder för att logga in till en datakälla ändras eller om Power BI loggas ut från en datakälla, bör du försöka logga in till dina datakällor igen i datakällans autentiseringsuppgifter.
 
 Se till att lämna **Skicka ett e-postmeddelande till mig om uppdateringen misslyckas** markerat. Du vill veta direkt om en schemalagd uppdatering misslyckas.
 
@@ -79,4 +79,4 @@ Ibland går det inte som förväntat att uppdatera data. Vanligtvis rör problem
 [Felsöka Power BI Gateway – Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)
 
 ## <a name="next-steps"></a>Nästa steg
-Fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)

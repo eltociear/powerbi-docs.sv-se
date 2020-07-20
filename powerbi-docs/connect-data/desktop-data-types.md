@@ -9,12 +9,12 @@ ms.topic: reference
 ms.date: 05/06/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 06033a65acd090f0297a53bfbf0f0a004b68649a
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: 40f85c40abd543e4f90a1f571ce648bfc4af7d9e
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83561580"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216466"
 ---
 # <a name="data-types-in-power-bi-desktop"></a>Datatyper i Power BI Desktop
 Den här artikeln beskriver datatyper som stöds i Power BI Desktop och dataanalysuttryck (DAX). 
@@ -28,11 +28,11 @@ I Power BI Desktop kan du fastställa och ange datatyp för en kolumn i frågere
 
 **Datatyper i frågeredigeraren**
 
-![](media/desktop-data-types/pbiddatatypesinqueryeditort.png)
+![Skärmbild av menyfliksområdet Datatyp i Frågeredigeraren.](media/desktop-data-types/pbiddatatypesinqueryeditort.png)
 
 **Datatyper i datavyn eller rapportvyn**
 
-![](media/desktop-data-types/pbiddatatypesindatareportview.png)
+![Skärmbild av menyfliksområdet Datatyp i datavyn.](media/desktop-data-types/pbiddatatypesindatareportview.png)
 
 Listrutan Datatyp i frågeredigeraren har två datatyper som för närvarande inte finns i datavyn eller rapportvyn: **Datum/tid/tidszon** och **Varaktighet**. När en kolumn med dessa datatyper läses in i modellen och visas i datavyn eller rapportvyn, kommer en kolumn med datatypen Datum/tid/tidszon att konverteras till Datum/tid och en kolumn med datatypen Varaktighet kommer att konverteras till ett decimaltal.
 

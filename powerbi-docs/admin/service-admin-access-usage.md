@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 4f9b69e863b71fda0cece06df7065740bd55463e
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 620e71ffa08a02dc0d0080b310fb0252388e1b10
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85228893"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86161202"
 ---
 # <a name="find-power-bi-users-that-have-signed-in"></a>Hitta Power BI-användare som har loggat in
 
@@ -29,7 +29,7 @@ Alla användare (inklusive icke-administratörer) kan visa en rapport med egna i
 
 * Din klientorganisation måste ha en associerad Azure Active Directory Premium-licens.
 
-* Du måste vara i någon av följande roller: global administratör, säkerhetsadministratör eller säkerhetsläsare.
+* Du måste ha någon av följande roller: Global administratör, Säkerhetsadministratör eller Säkerhetsläsare.
 
 ## <a name="use-the-azure-portal-to-view-sign-ins"></a>Använda Azure Portal för att visa inloggningar
 
@@ -51,7 +51,7 @@ Följ dessa steg om du vill visa en inloggningsaktivitet.
 
 Du kan [Ladda ned en inloggningsrapport](/azure/active-directory/reports-monitoring/quickstart-download-sign-in-report) i som en CSV-fil eller en JSON-fil.
 
-![Skärmbild av nedladdningsknappen.](media/service-admin-access-usage/download-sign-in-data-csv.png)
+![Skärmbild av dataexporten med alternativet Ladda ned markerat.](media/service-admin-access-usage/download-sign-in-data-csv.png)
 
 Längst upp på sidan **Inloggningar** väljer du **Ladda ned** och väljer sedan något av följande alternativ:
 
@@ -67,4 +67,4 @@ Inloggningsdata kan hållas kvar i upp till 30 dagar. Mer information finns i [R
 
 [Använda granskning i din organisation](service-admin-auditing.md)
 
-Fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

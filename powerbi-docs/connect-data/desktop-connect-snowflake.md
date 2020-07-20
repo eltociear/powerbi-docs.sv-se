@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b343136acb22d213c0e2ad2dfcf83fbda805e88a
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: d6de937f4be3c503c146c31a32c56b67ee97a8c4
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85224121"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86214804"
 ---
 # <a name="connect-to-a-snowflake-computing-warehouse-in-power-bi-desktop"></a>Ansluta till ett Snowflake Computing-lager i Power BI Desktop
 I Power BI Desktop kan du ansluta till en **Snowflake**-databas och använda underliggande data precis som andra datakällor i Power BI Desktop. 
@@ -22,15 +22,15 @@ I Power BI Desktop kan du ansluta till en **Snowflake**-databas och använda und
 ## <a name="connect-to-a-snowflake-computing-warehouse"></a>Ansluta till ett Snowflake Computing-lager
 Om du vill ansluta till ett **Snowflake**-lager väljer du **Hämta data** från **Start**-menyfliksområdet i Power BI Desktop. Välj **Databas** från kategorierna till vänster så ser du **Snowflake**.
 
-![](media/desktop-connect-snowflake/connect-snowflake-2b.png)
+![Skärmbild av dialogrutan Hämta data med Snowflake-databas valt.](media/desktop-connect-snowflake/connect-snowflake-2b.png)
 
 I fönstret **Snowflake** som visas skriver eller klistrar du in namnet på ditt Snowflake-datalager i rutan och väljer **OK**. Observera att du kan välja att **importera** data direkt i Power BI, eller så kan du använda **DirectQuery**. Du kan läsa mer om att [använda DirectQuery](desktop-use-directquery.md). Observera att enkel AAD-inloggning endast kan användas med DirectQuery.
 
-![](media/desktop-connect-snowflake/connect-snowflake-3.png)
+![Skärmbild av dialogrutan Snowflake med alternativknappen Importera vald.](media/desktop-connect-snowflake/connect-snowflake-3.png)
 
 När du uppmanas, ange ditt användarnamn och lösenord.
 
-![](media/desktop-connect-snowflake/connect-snowflake-4.png)
+![Skärmbild av uppmaningen att ange autentiseringsuppgifter för Snowflake med fälten Användarnamn och Lösenord.](media/desktop-connect-snowflake/connect-snowflake-4.png)
 
 > [!NOTE]
 > När du anger ditt användarnamn och lösenord för en viss **Snowflake**-server, använder Power BI Desktop samma autentiseringsuppgifter i efterföljande anslutningsförsök. Du kan ändra autentiseringsuppgifterna genom att gå till **Arkiv > Alternativ och inställningar > Inställningar för datakälla**.

@@ -10,12 +10,12 @@ ms.date: 05/11/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: ff61cdf25c83b1062fd7c4a471a49269d20c57a8
-ms.sourcegitcommit: e8b12d97076c1387088841c3404eb7478be9155c
+ms.openlocfilehash: 195d1284fedc9f9c51c6fed2ff03cc0883b16405
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85782401"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86161731"
 ---
 # <a name="track-user-activities-in-power-bi"></a>Spåra användaraktiviteter i Power BI
 
@@ -145,7 +145,7 @@ Du kan begränsa resultaten till enbart Power BI-aktiviteter genom att utföra f
 
 2. Välj **PowerBI-aktiviteter**.
 
-   ![Skärmbild av Sök i granskningslogg med Power BI-aktiviteter framhävda.](media/service-admin-auditing/audit-log-search-filter-by-powerbi.png)
+   ![Skärmbild av Spårningsloggsökning i med Power BI-aktiviteter framhävt.](media/service-admin-auditing/audit-log-search-filter-by-powerbi.png)
 
 3. Stäng markeringsrutan genom att klicka någonstans utanför den.
 
@@ -157,13 +157,13 @@ Du kan söka i loggarna efter datumintervall med hjälp av fälten **Startdatum*
 
 Ett felmeddelande visas om det valda datumintervallet är längre än 90 dagar. Om du använder det maximala datumintervallet 90 dagar, så välj den aktuella tiden som **Startdatum**. I annat fall får du ett felmeddelande som säger att startdatumet är senare än slutdatumet. Om du har aktiverat granskning under de senaste 90 dagarna, kan datumintervallet inte starta före det datum då granskningen aktiverades.
 
-![Skärmbild av Sök i granskningslogg med alternativen Startdatum och Slutdatum framhävda.](media/service-admin-auditing/search-audit-log-by-date.png)
+![Skärmbild av Spårningsloggsökning med alternativen Startdatum och Slutdatum framhävda.](media/service-admin-auditing/search-audit-log-by-date.png)
 
 ### <a name="search-the-audit-logs-by-users"></a>Sök i granskningsloggarna efter användare
 
 Du kan söka efter granskningsloggposter för aktiviteter som utförts av specifika användare. Ange ett eller flera användarnamn i fältet **Användare**. Användarnamnet ser ut som en e-postadress. Det är det konto som användarna loggar in på Power BI med. Om du lämnar den här rutan tom returneras poster för alla användare (och tjänstkonton) i organisationen.
 
-![Sök via användare](media/service-admin-auditing/search-audit-log-by-user.png)
+![Skärmbild av Spårningsloggsökning med Användare framhävt.](media/service-admin-auditing/search-audit-log-by-user.png)
 
 ### <a name="view-search-results"></a>Visa sökresultat
 
@@ -198,7 +198,7 @@ Du kan exportera Power BI-granskningsloggen till en CSV-fil med dessa steg.
 
 1. Välj **Spara inlästa resultat** eller **Hämta alla resultat**.
 
-    ![Skärmbild av alternativet Exportera resultat.](media/service-admin-auditing/export-auditing-results.png)
+    ![Skärmbild av alternativet Exportera resultat med Ladda ned alla resultat framhävt.](media/service-admin-auditing/export-auditing-results.png)
 
 ### <a name="use-powershell-to-search-audit-logs"></a>Använd PowerShell för att söka igenom granskningsloggar
 

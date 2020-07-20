@@ -1,7 +1,7 @@
 ---
 title: Öppna Report Builder i Power BI
 description: Power BI Report Builder är ett verktyg för skapande av sidnumrerade rapporter.
-ms.date: 06/29/2020
+ms.date: 07/08/2020
 ms.service: powerbi
 ms.subservice: report-builder
 featuredvideoid: 78TZeiEhveY
@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.assetid: 55bf4f9c-d037-412f-ae57-3fc39ce32fa5
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: a0c22be90b609e25a6403e33cb646b35e9467c07
-ms.sourcegitcommit: e8b12d97076c1387088841c3404eb7478be9155c
+ms.openlocfilehash: f74fb596fb2a080922d0e62a4492ef6c8ccd4e0d
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85782763"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216729"
 ---
 # <a name="power-bi-report-builder"></a>Öppna Report Builder i Power BI
 
@@ -22,9 +22,7 @@ ms.locfileid: "85782763"
  
 Är du redo att börja redigera? [Installera Power BI Report Builder](https://aka.ms/pbireportbuilder) från Microsoft Download Center.
 
-Föredrar du inlärning från videor? Titta på videoserien om sidnumrerade Power BI-rapporter på YouTube av Chris Finlan, Principal Program Manager för Power BI.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/78TZeiEhveY?list=PLx7LcKtN_gq-JVzM6L8xNNxX7kts-KflJ" frameborder="0" allowfullscreen></iframe>
+Föredrar du inlärning från videor? Kolla in [Videobaserad kurs: Sidnumrerade rapporter i Power BI på en dag](../learning-catalog/paginated-reports-online-course.md).
 
 Följande sidnumrerade rapport har en matris med radgrupper och kolumngrupper, miniatyrdiagram, indikatorer samt ett cirkeldiagram för sammanfattning i hörncellen, tillsammans med en karta med två uppsättningar geografiska data som representeras av färg och cirkelstorlek.  
 
@@ -63,4 +61,4 @@ Följande sidnumrerade rapport har en matris med radgrupper och kolumngrupper, m
 ## <a name="next-steps"></a>Nästa steg
 
 - [Vad är sidnumrerade rapporter i Power BI Premium?](paginated-reports-report-builder-power-bi.md)
-- Titta på [videoserien om sidnumrerade Power BI-rapporter](https://www.youtube.com/watch?v=78TZeiEhveY&list=PLx7LcKtN_gq-JVzM6L8xNNxX7kts-KflJ) på YouTube av Chris Finlan, Principal Program Manager för Power BI
+- [Videobaserad kurs: Sidnumrerade rapporter i Power BI på en dag](../learning-catalog/paginated-reports-online-course.md)

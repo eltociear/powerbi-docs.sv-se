@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 610fe7ea2188d40d42ab91a355df68bc07bb0d84
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 3b3faab2a01a00e09560d39e850f40d0672a5863
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85228519"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86161179"
 ---
 # <a name="track-power-bi-service-health-in-microsoft-365"></a>Spåra Power BI-tjänstens hälsa i Microsoft 365
 
@@ -38,7 +38,7 @@ Mer information om roller finns i [Administratörsroller relaterade till Power B
 
 1. Om du vill se mer information, väljer du **Visa information** för ett objekt. I skärmbilden nedan visas ytterligare information, däribland de senaste statusuppdateringarna.
 
-    ![Skärmbild av rekommendationsinformation.](media/service-admin-health/advisory-details.png)
+    ![Skärmbild av rekommendationsinformation med ytterligare information.](media/service-admin-health/advisory-details.png)
 
     Bläddra nedåt för att se mer information och stäng sedan fönstret när du är klar.
 

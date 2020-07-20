@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 05/30/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 41d5350bf2986f9b8f0f01acf97e96eafc3b4db8
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 9fcf67a52bde69e62816af09a8fed69c8383927d
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85229514"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216177"
 ---
 # <a name="connect-to-salesforce-with-power-bi"></a>Anslut till Salesforce med Power BI
 Med Power BI kan du enkelt ansluta till ditt Salesforce.com-konto. Med den här anslutningen kan du hämta dina Salesforce-data och få en instrumentpanel och rapporter automatiskt.
@@ -24,37 +24,37 @@ Läs mer om [Salesforce-integrering](https://powerbi.microsoft.com/integrations/
 ## <a name="how-to-connect"></a>Så här ansluter du
 1. Välj **Hämta data** längst ned i navigeringsfönstret i Power BI.
    
-   ![](media/service-connect-to-salesforce/pbi_getdata.png) 
+   ![Skärmbild av knappen Hämta data i navigeringsfönstret.](media/service-connect-to-salesforce/pbi_getdata.png) 
 2. I rutan **Tjänster** väljer du **Hämta**.
    
-   ![](media/service-connect-to-salesforce/pbi_getservices.png) 
+   ![Skärmbild av dialogrutan Tjänster och knappen Hämta.](media/service-connect-to-salesforce/pbi_getservices.png) 
 3. Välj **Analys för Salesforce** och välj **Hämta**.  
    
-   ![](media/service-connect-to-salesforce/salesforce.png)
+   ![Skärmbild av dialogrutan Analys för Salesforce och länken Hämta nu.](media/service-connect-to-salesforce/salesforce.png)
 4. Välj **Logga in** för att starta inloggningsflödet.
    
-    ![](media/service-connect-to-salesforce/dialog.png)
+    ![Skärm bild av dialogrutan Anslut till Salesforce och knappen Logga in.](media/service-connect-to-salesforce/dialog.png)
 5. När du uppmanas till det anger du dina Salesforce-autentiseringsuppgifter. Välj **Tillåt** så att Power BI kan komma åt grundläggande Salesforce-information och data.
    
-   ![](media/service-connect-to-salesforce/sf_authorize.png)
+   ![Skärmbild av Salesforce-autentiseringsuppgifterna som visar att Power BI har begärt behörighet att komma åt din information.](media/service-connect-to-salesforce/sf_authorize.png)
 6. Konfigurera vad du vill importera till Power BI med listrutan:
    
    * **Instrumentpanel**
      
      Välj en fördefinierad instrumentpanel baserat på en person (som **försäljningschef**). De här instrumentpanelerna hämtar en specifik uppsättning standarddata från Salesforce och inkluderar inte anpassade fält.
      
-     ![](media/service-connect-to-salesforce/pbi_salesforcechooserole.png)
+     ![Skärmbild av Salesforce-instrumentpanelen som visar alternativet att välja en fördefinierad instrumentpanel baserat på en person.](media/service-connect-to-salesforce/pbi_salesforcechooserole.png)
    * **Rapporter**
      
      Välj en eller flera anpassade rapporter från ditt Salesforce-konto. De här rapporterna matchar dina vyer i Salesforce och kan innehålla data från anpassade fält eller objekt.
      
-     ![](media/service-connect-to-salesforce/pbi_salesforcereports.png)
+     ![Skärmbild av Salesforce-rapporter och en lista med anpassade rapporter.](media/service-connect-to-salesforce/pbi_salesforcereports.png)
      
      Om du inte ser några rapporter, lägger du till eller skapar dem i ditt Salesforce-konto och försöker ansluta igen.
 
 7. Välj **Anslut** för att starta importen. Under importen ser du ett meddelande om att importen pågår. När importen är klar ser du en instrumentpanel, rapport och datamängd för dina Salesforce-data i navigeringsfönstret.
    
-   ![](media/service-connect-to-salesforce/pbi_getdatasalesforcedash.png)
+   ![Skärmbild av instrumentpanelen Säljchef med instrumentpanelen, rapporten och datamängderna.](media/service-connect-to-salesforce/pbi_getdatasalesforcedash.png)
 
 Du kan ändra instrumentpanelen så att den visar data på det sätt du vill. Du kan köra frågor med Q&A eller [välja en panel](../consumer/end-user-tiles.md) för att öppna den underliggande rapporten och [redigera eller ta bort paneler på instrumentpanelen](../create-reports/service-dashboard-edit-tile.md).
 

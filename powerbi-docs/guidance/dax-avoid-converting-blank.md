@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: aea24e96acadbf9fee9e6dbf3aa395e09ef8e541
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 6b130016bf4514b817edbf8c91cfb24d2063e6f1
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83279651"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86215452"
 ---
 # <a name="dax-avoid-converting-blanks-to-values"></a>DAX: Undvik att omvandla tomma värden till värden
 
@@ -47,7 +47,7 @@ För många grupperingar kan också vara förvirrande för användarna.
 
 Nu ska vi se vad som händer när måttet **Profit Margin** läggs till i ett visuellt tabellobjekt med gruppering efter kund.
 
-![Ett visuellt tabellobjekt har tre kolumner: Customer, Sales och Profit Margin. Du ser ungefär 10 rader data i tabellen, men den lodräta rullningslisten visar att det finns många fler rader som kan visas. Du ser inga värden i kolumnen Sales. I kolumnen Profit Margin visas bara noll.](media/dax-avoid-converting-blank/table-visual-poor.png)
+![Skärmbild av Power BI Desktop och en tabellkontroll med en rad data per kund. Försäljningsvärdena är tomma och vinstmarginalen är noll procent. ](media/dax-avoid-converting-blank/table-visual-poor.png)
 
 Det visuella tabellobjektet har ett orimligt stort antal rader. (Det finns i själva verket 18 484 kunder i modellen, och tabellen försöker visa samtliga.) Observera att kunderna i vyn inte har någon försäljning. Men eftersom måttet **Profit Margin** alltid returnerar ett värde så visas de ändå.
 
@@ -63,7 +63,7 @@ DIVIDE([Profit], [Sales])
 
 Nu visas bara kunder som har en försäljning i den aktuella filterkontexten i det visuella tabellobjektet. Det förbättrade måttet gör rapportmiljön mer effektiv och praktisk för användarna.
 
-![Samma visuella tabellobjekt med fyra datarader. Varje rad avser en kund som har ett försäljningsvärde, och vinstmarginalen är skild från noll.](media/dax-avoid-converting-blank/table-visual-good.png)
+![Skärmbild av Power BI Desktop och en tabellkontroll med filtrerat datainnehåll.](media/dax-avoid-converting-blank/table-visual-good.png)
 
 > [!TIP]
 > Om det behövs kan du konfigurera det visuella objektet så att alla grupperingar visas (de som returnerar värden eller är tomma) i filterkontexten genom att aktivera alternativet [Visa poster utan data](../create-reports/desktop-show-items-no-data.md).
@@ -80,4 +80,3 @@ Mer information om den här artikeln finns i följande resurser:
 
 - [Data Analysis uttryck (DAX)-referens](/dax/)
 - Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
-

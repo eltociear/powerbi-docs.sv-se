@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 41289fbfb76dc2453ccb871f93cf1cb4e18de7f7
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: b12cc24c7ddddd0bc866a3bbeb23e0c7097711db
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85237098"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86215250"
 ---
 # <a name="import-and-display-kpis-in-power-bi"></a>Importera och visa KPI:er i Power BI
 Med **Power BI Desktop**, kan du importera och visa KPI:er i tabeller, matriser och kort.
@@ -27,10 +27,10 @@ Följ de här stegen för att importera och visa KPI:er.
 
 1. Efter importen till Power BI, visas din KPI i rutan **Fält** som markerats med ![trafikljus](media/desktop-import-and-display-kpis/traffic.png)-ikonen. Om du vill använda en KPI i din rapporten, måste du expandera dess innehåll, vilket visar fälten **Värde**, **Mål** och **Status**.
 
-    ![](media/desktop-import-and-display-kpis/desktoppreviewfeatureon2.png)
-
+    ![Skärmbild av Power BI Desktop med DeltaKPI expanderat i rutan Fält.](media/desktop-import-and-display-kpis/desktoppreviewfeatureon2.png)
+ 
 1. Importerade KPI:er är bäst att använda i standard visualiseringstyper som **Tabell**-typen. Power BI inkluderar även visualiseringstypen **KPI**, som bara bör användas för att skapa nya KPI:er.
    
-    ![](media/desktop-import-and-display-kpis/desktoppreviewfeatureon3.png)
+    ![Skärmbild av Power BI Desktop med Table1-fälten valda i rutan Fält.](media/desktop-import-and-display-kpis/desktoppreviewfeatureon3.png)
 
 Det är allt det är. Du kan använda KPI:er för att markera trender, förlopp eller andra viktiga indikatorer.

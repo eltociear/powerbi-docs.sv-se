@@ -10,37 +10,37 @@ ms.topic: how-to
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: edbea68fac44811469e0f6f90d68028eeb35be71
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 9e10d694940bda465e68f54370d87aab15b628ee
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85224392"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216483"
 ---
 # <a name="connect-to-odata-feeds-in-power-bi-desktop"></a>Ansluta till en OData-feed i Power BI Desktop
 I Power BI Desktop kan du ansluta till en **OData**-feed och använda underliggande data precis som andra datakällor i Power BI Desktop.
 
 Om du vill ansluta till en OData-feed-databas, väljer du **Hämta Data > OData-feed** från **Start**-menyfliksområdet i Power BI Desktop.
 
-![](media/desktop-connect-odata/connect-to-odata_1.png)
+![Skärmbild av menyfliksområdet Hämta data i Power BI Desktop med valet OData-feed.](media/desktop-connect-odata/connect-to-odata_1.png)
 
 I fönstret **OData-deed** som visas skriver eller klistrar du in URL:en för din OData-feed i rutan och väljer **OK**.
 
-![](media/desktop-connect-odata/connect-to-odata_2.png)
+![Skärmbild av dialogrutan OData-feed med fältet URL.](media/desktop-connect-odata/connect-to-odata_2.png)
 
 Power BI Desktop ansluter till OData-feeden och visar tillgängliga tabeller och andra dataelement i fönstret **Navigator**. När du väljer ett element visas en förhandsgranskning av data i fönstret **Navigator**. Du kan använda så många tabeller som du vill importera. Fönstret **Navigator** visar en förhandsgranskning av den markerade tabellen.
 
-![](media/desktop-connect-odata/connect-to-odata_3.png)
+![Skärmbild av dialogrutan Navigator med en förhandsgranskning av den valda tabellens data.](media/desktop-connect-odata/connect-to-odata_3.png)
 
 Du kan välja knappen **Redigera** knappen, som startar **Frågeredigeraren**, där du kan utforma och transformera data från OData-feeden innan du importerar dem till Power BI Desktop. Eller så kan du välja knappen **Hämta** och importera alla dataelement som du har valt i den vänstra rutan.
 
 När vi väljer **Hämta** importerar Power BI Desktop de valda objekten och visar **Hämtnings**fönstret som visar importförloppet.
 
-![](media/desktop-connect-odata/connect-to-odata_4.png)
+![Skärmbild av dialogrutan Läs in som visar importens förlopp.](media/desktop-connect-odata/connect-to-odata_4.png)
 
 När du är klar gör Power BI Desktop de markerade tabellerna och andra dataelement i fönstret **Fält** tillgängliga på höger sida av vyn *Rapporter* i Power BI Desktop.
 
-![](media/desktop-connect-odata/connect-to-odata_5.png)
+![Skärmbild av fönstret Fält och en lista med valda tabeller.](media/desktop-connect-odata/connect-to-odata_5.png)
 
 Och sedan är du klar!
 

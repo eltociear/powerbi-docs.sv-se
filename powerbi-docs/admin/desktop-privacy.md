@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/14/2018
 ms.author: willthom
 LocalizationGroup: Learn more
-ms.openlocfilehash: 538464477a65600efd7b8486ff2fee281d1d4500
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: af67eca7b1a4d1cb82f3b58ea4abdbb8b2ad4671
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83130160"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86160857"
 ---
 # <a name="power-bi-desktop-privacy"></a>Sekretess i Power BI Desktop
 
@@ -24,12 +24,12 @@ Informationen vi samlar in från **Power BI Desktop**-användare kan innefatta d
  
 Om du vill avanmäla dig från den här datainsamlingen kan du gå till **Arkiv > Alternativ och inställningar > Alternativ** och avmarkera kryssrutan **Skicka användningsdata** på fliken **Användningsdata** enligt bilden nedan.
 
-![Inställningar för att skicka användningsdata](media/desktop-privacy/privacy_01.png)
+![Skärmbild av inställningar för att skicka användningsdata.](media/desktop-privacy/privacy_01.png)
 
 ## <a name="sending-additional-information"></a>Skicka ytterligare information
 
 Om det uppstår kraschar eller andra problem kan du skicka felrapporter och ytterligare information som kan hjälpa oss att åtgärda dessa problem i en senare version. Vi samlar också in information om tillståndet för den **Power BI Desktop**-fil som du arbetar i, till exempel dokumentets nationella inställningar, aktiverade förhandsversionsfunktioner och lagringsläge. Detta kan innefatta skärmbilder, felmeddelanden och formler från modellen. Dessa objekt kan innefatta innehållet i de filer som du använde när felet inträffade. Därför bör du granska dem innan de skickas. Vi påminner dig innan de skickas så att du kan välja vilken information som ska skickas till Microsoft.  
  
-Om du inte vill skicka den här informationen kan du klicka på **Stäng** när ett fel inträffar, eller avanmäla dig från att skicka användningsdata på det sätt som beskrivs ovan. 
+Om du inte vill skicka den här informationen kan du klicka på **Stäng** när ett fel inträffar, eller avanmäla dig från att skicka användningsdata på det sätt som beskrivs ovan.
 
-![Kraschdialogruta](media/desktop-privacy/privacy_02.png)
+![Skärmbild av dialogrutan Krasch och valen att rapportera problemet eller stänga dialogrutan.](media/desktop-privacy/privacy_02.png)

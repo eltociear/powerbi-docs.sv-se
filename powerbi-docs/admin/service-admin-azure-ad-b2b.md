@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 07/02/2020
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 17c19fbdf1c5057d287f50531f2b679a19e3a30e
-ms.sourcegitcommit: 561f6de3e4621d9d439dd54fab458ddca78ace2c
+ms.openlocfilehash: ca0a33f42c1b2fd466df9af59bb649ae73d7d594
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85939448"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86161386"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-with-azure-ad-b2b"></a>Distribuera Power BI-innehåll till externa gästanvändare med Azure Active Directory B2B
 
@@ -62,7 +62,7 @@ Följ dessa steg för att skicka en inbjudan i Azure-portalen.
 
 1. Ange en **e-postadress** och ett **personligt meddelande**.
 
-    ![Skärmbild på Azure AD-portalens dialogruta Ny gästanvändare.](media/service-admin-azure-ad-b2b/azure-ad-portal-invite-message.png)
+    ![Skärmbild av dialogrutan Ny gästanvändare med fälten e-post och meddelande framhävda.](media/service-admin-azure-ad-b2b/azure-ad-portal-invite-message.png)
 
 1. Välj **Bjud in**.
 
@@ -70,17 +70,17 @@ Om du vill bjuda in fler än en gästanvändare använder du PowerShell eller sk
 
 Gästanvändaren behöver välja **Kom igång** i e-postinbjudan denne tar emot. Gästanvändaren läggs sedan till i organisationen.
 
-![Skärmbild på e-postinbjudan till gästanvändaren.](media/service-admin-azure-ad-b2b/guest-user-invite-email.png)
+![Skärmbild av e-postinbjudan till gästanvändare med Kom igång framhävt.](media/service-admin-azure-ad-b2b/guest-user-invite-email.png)
 
 ### <a name="ad-hoc-invites"></a>Ad hoc-inbjudningar
 
 Bjud in en extern användare när som helst genom att lägga till denne i din instrumentpanel eller rapport via delningsfunktionen eller till din app via åtkomstsidan. Här är ett exempel på vad du gör när du bjuder in en extern användare att använda en app.
 
-![Skärmbild på externa användare har lagts till i listan över appåtkomst.](media/service-admin-azure-ad-b2b/power-bi-app-access.png)
+![Skärmbild av att en extern användare läggs till i listan för appåtkomst i Power BI.](media/service-admin-azure-ad-b2b/power-bi-app-access.png)
 
 Gästanvändaren får ett e-postmeddelande som anger att du delat appen med dem.
 
-![Skärmbild på e-post för appen som delas med gästanvändare](media/service-admin-azure-ad-b2b/guest-user-invite-email-2.png)
+![Skärmbild av e-postmeddelandet som gästanvändaren får när appen har delats.](media/service-admin-azure-ad-b2b/guest-user-invite-email-2.png)
 
 Gästanvändaren måste logga in med sin organisations e-postadress. De uppmanas att tacka ja till inbjudan efter inloggningen. Efter inloggningen öppnas appen för gästanvändaren. Användaren bör bokmärka länken eller spara e-postmeddelandet så att det blir enkelt att återgå till appen.
 
@@ -94,19 +94,19 @@ Gästanvändaren måste ha korrekt licensiering för att se innehållet som dela
 
 Genom att tilldela arbetsytan till en [Power BI Premium-kapacitet](service-premium-what-is.md) kan gästanvändaren använda appen utan att behöva någon Power BI Pro-licens. Power BI Premium kan även användas för appar för att dra nytta av andra funktioner som ökade uppdateringsintervall, dedikerad kapacitet och stora modellstorlekar.
 
-![Diagram of guest user experience with Power BI Premium.](media/service-admin-azure-ad-b2b/license-approach-1.png)
+![Diagram över gästanvändarens miljö i Power BI Premium.](media/service-admin-azure-ad-b2b/license-approach-1.png)
 
 ### <a name="assign-a-power-bi-pro-license-to-guest-user"></a>Tilldela Power BI Pro-licens till gästanvändaren
 
 När du tilldelar en Power BI Pro-licens från din organisation till en gästanvändare så kan gästanvändaren se innehåll som delats med dem. Mer information om tilldelning av licenser finns i [Tilldela licenser till användare på sidan Licenser](/office365/admin/manage/assign-licenses-to-users#assign-licenses-to-users-on-the-licenses-page). Innan du tilldelar Pro-licenser till gästanvändare, bör du gå till [sidan Produktvillkor](https://www.microsoft.com/licensing/terms) och kontrollera att du följer villkoren i ditt licensavtal med Microsoft.
 
-![Diagram of guest user experience with Assign Pro license from your tenant.](media/service-admin-azure-ad-b2b/license-approach-2.png)
+![Diagram över gästanvändarens miljö med Tilldela Pro-licens från din klientorganisation.](media/service-admin-azure-ad-b2b/license-approach-2.png)
 
 ### <a name="guest-user-brings-their-own-power-bi-pro-license"></a>Gästanvändare tar med sin egen Power BI Pro-licens
 
 Gästanvändaren kan redan ha en Power BI Pro-licens som tilldelats dem via deras egen organisation.
 
-![Diagram över gästanvändarens upplevelse när de tar med egna licenser.](media/service-admin-azure-ad-b2b/license-approach-3.png)
+![Diagram över gästanvändarens miljö om en egen licens tas med.](media/service-admin-azure-ad-b2b/license-approach-3.png)
 
 ## <a name="guest-users-who-can-edit-and-manage-content"></a>Gästanvändare som kan redigera och hantera innehåll
 
@@ -118,7 +118,7 @@ För att hjälpa tillåtna användare att logga in i Power BI kan du ge dem klie
 
 2. Leta efter värdet bredvid **Klientorganisations-URL**. Dela klientorganisationens webbadress med dina tillåtna gästanvändare.
 
-    ![Skärmbild av dialogrutan Om Power BI där webbadressen till klientorganisationen har markerats.](media/service-admin-azure-ad-b2b/power-bi-about-dialog.png)
+    ![Skärmbild av dialogrutan Om Power BI med gästanvändarens klientorganisationsadress framhävd.](media/service-admin-azure-ad-b2b/power-bi-about-dialog.png)
 
 ## <a name="considerations-and-limitations"></a>Överväganden och begränsningar
 

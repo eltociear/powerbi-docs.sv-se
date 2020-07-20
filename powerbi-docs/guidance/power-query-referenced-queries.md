@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/30/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 242f1e44e3314af900d9f4d4e4fb7380b28b4103
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 21105513bf77a4ede8d788860a99fedaf3a6c48c
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83278685"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86214866"
 ---
 # <a name="referencing-power-query-queries"></a>Referera till Power Query-frågor
 
@@ -23,13 +23,13 @@ Låt oss ta en titt på vad det innebär: _När en fråga refererar till en andr
 
 Överväg flera frågor: **Fråga1** hämtar data från en webbtjänst och dess belastning är inaktiverad. **Fråga2**, **Fråga3** och **Fråga4** refererar till **Fråga1** och deras utdata läses in i datamodellen.
 
-![Frågeberoendevyn som visar de frågor som beskrivs i föregående stycke.](media/power-query-referenced-queries/query-dependencies-web-service.png)
+![Diagram som visar vyn Frågeberoenden med de frågor som beskrivs i föregående stycke.](media/power-query-referenced-queries/query-dependencies-web-service.png)
 
 När datamodellen uppdateras förutsätts det ofta att Power Query hämtar resultatet från **Fråga1** och att den återanvänds av refererade frågor. Detta är felaktigt. I själva verket kör Power Query **Fråga2**, **Fråga3** och **Fråga4** separat.
 
 Du kan tänka att **Fråga2** har stegen för **Fråga1** inbäddade i den. Det är fallet för **Fråga3** och **Fråga4**. Följande diagram visar en tydligare bild av hur frågorna körs.
 
-![En modifierad version av vyn Fråga beroenden som visar Fråga2, Fråga3 och Fråga4. Var och en av de tre frågorna har Fråga1 inbäddad.](media/power-query-referenced-queries/query-dependencies-web-service-concept.png)
+![Diagram som visar en modifierad version av vyn Frågeberoenden som visar Fråga2, Fråga3 och Fråga4.](media/power-query-referenced-queries/query-dependencies-web-service-concept.png)
 
 **Fråga1** körs tre gånger. Flera körningar kan leda till långsam datauppdatering och påverka datakällan negativt.
 

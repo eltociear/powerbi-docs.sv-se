@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/23/2020
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: c3b0a330793abf4242d43c1546dd0362b75683f2
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: da1ec0ec3a10adbd9771e13a97bcb17dcdf73273
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83361139"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216895"
 ---
 # <a name="supported-languages-and-countriesregions-for-power-bi"></a>Språk och länder/regioner som stöds för Power BI
 
@@ -82,7 +82,7 @@ För tillfället är endast några funktioner enbart tillgängliga på engelska:
 Håll ögonen öppna – snart kommer det fler funktioner på andra språk. 
 
 ### <a name="choose-your-language-in-the-power-bi-service"></a>Välja språk i Power BI-tjänsten
-1. I Power BI-tjänsten väljer du ikonen **Inställningar**![ikonen Inställningar](media/supported-languages-countries-regions/pbi_settings_icon.png) > **Inställningar**.
+1. Välj ikonen **Inställningar** i Power BI-tjänsten ![Skärmbild av Power BI-tjänsten med ikonen Inställningar.](media/supported-languages-countries-regions/pbi_settings_icon.png) > **Inställningar**.
 2. På fliken **Allmänt** > **Språk**.
 3. Välj språk > **Tillämpa**.
 
@@ -92,25 +92,25 @@ Power BI identifierar språket baserat på datorns språkinställningar. Hur du 
 #### <a name="internet-explorer-version-11"></a>Internet Explorer (version 11)
 1. Klicka på knappen **Verktyg** i det övre högra hörnet i webbläsarfönstret:
    
-   ![Knappen Internet Explorer-verktyg](media/supported-languages-countries-regions/languages1.png)
+   ![Skärmbild av Internet Explorer och knappen Verktyg.](media/supported-languages-countries-regions/languages1.png)
 2. Klicka på **Internetalternativ**.
 3. I dialogrutan Internetalternativ klickar du på knappen **Språk** på fliken Allmänt under Utseende.
 
 #### <a name="google-chrome-version-42"></a>Google Chrome (version 42)
 1. Klicka på menyknappen i det övre högra hörnet i webbläsarfönstret:
    
-   ![Menyknapp för Chrome](media/supported-languages-countries-regions/languages2.png)
+   ![Skärmbild av Google Chrome och menyknappen.](media/supported-languages-countries-regions/languages2.png)
 2. Klicka på **Inställningar**.
 3. Klicka på **Visa avancerade inställningar**.
 4. Under Språk klickar du på knappen **Inställningar för språk och inmatning**.
 5. Klicka på **Lägg till**, välj ett språk och klicka på **OK**.
    
-   ![Språklista i Chrome](media/supported-languages-countries-regions/pbi_langs_enus.png)
+   ![Skärmbild av Google Chrome och språklistan.](media/supported-languages-countries-regions/pbi_langs_enus.png)
    
    Det nya språket finns i slutet av listan. 
 6. Dra det nya språket överst i listan och klicka på **Visa Google Chrome på detta språk**.
    
-   ![Visa Google Chrome på detta språk](media/supported-languages-countries-regions/pbi_langs_eses.png)
+   ![Skärmbild av Google Chrome och visningsspråket.](media/supported-languages-countries-regions/pbi_langs_eses.png)
    
    Du kan behöva stänga och öppna webbläsaren igen för att se ändringen.
 
@@ -130,10 +130,10 @@ Det finns två sätt att skaffa Power BI Desktop: Du kan ladda ned det som ett f
 
 3. I **Windows-inställningar**väljer du **Tid och språk**.
    
-     ![Dialogrutan Windows-inställningar](media/supported-languages-countries-regions/power-bi-service-windows-settings.png)
+     ![Skärmbild av Power BI Desktop med dialogrutan Windows-inställningar.](media/supported-languages-countries-regions/power-bi-service-windows-settings.png)
 4. Välj **Språk** och välj ett språk. Välj **Add a Windows display language in Microsoft Store** (Lägg till ett Windows-visningsspråk i Microsoft Store) om det behövs.
    
-     ![Dialogrutan Språkinställningar i Windows](media/supported-languages-countries-regions/power-bi-service-language-settings.png)
+     ![Skärmbild av Power BI Desktop med dialogrutan Windows-språkinställningar.](media/supported-languages-countries-regions/power-bi-service-language-settings.png)
    
      Nästa gång du startar Power BI Desktop används det språk som du angav som standard. 
 
@@ -152,7 +152,7 @@ Power BI Desktop hämtar standardantal och datumformatering från inställningar
 
 2. I **Windows-inställningar**väljer du **Tid och språk**.
    
-     ![Dialogrutan Windows-inställningar](media/supported-languages-countries-regions/power-bi-service-windows-settings.png)
+     ![Skärmbild av Power BI Desktop med dialogrutan Windows-inställningar.](media/supported-languages-countries-regions/power-bi-service-windows-settings.png)
 
 3. Välj **Region** > **Additional date, time, and regional settings** (Ytterligare datum-, tid- och regionsinställningar).
 
@@ -173,7 +173,7 @@ Oavsett om du laddar ned Power BI Desktop eller installerar det från Windows St
 2. Under **Aktuell fil**väljer du **Regionala inställningar**.
 3. Välja andra nationella inställningar för import i rutan **Nationella inställningar**. 
    
-   ![Dialogrutan Power BI Desktop-alternativ](media/supported-languages-countries-regions/power-bi_supptdlangs-locale.png)
+   ![Skärmbild av Power BI Desktop med dialogrutan Alternativ.](media/supported-languages-countries-regions/power-bi_supptdlangs-locale.png)
 4. Välj **OK**.
 
 ### <a name="choose-the-language-for-the-model-in-power-bi-desktop"></a>Välja språk för modellen i Power BI Desktop
@@ -184,7 +184,7 @@ Utöver att ställa in språket för Power BI Desktop-programmet kan du också a
 - Det språk som Power BI Desktop använder vid skapande av dolda datumtabeller från datumfält. Fälten kallas till exempel Månad/Monat/Mois och så vidare.
 
 > [!NOTE]
-> Power BI-modellen använder för närvarande ett språk som inte är skiftlägeskänsligt (eller kana-känslig) så att ”ABC” och ”abc” behandlas som likvärdiga. Om ”ABC” läses in i databasen först kommer andra strängar som endast skiljer sig åt i skiftläge såsom ”Abc” inte att läsas in som ett separat värde.
+> Power BI-modellen använder för närvarande ett språk som inte är skiftlägeskänsligt (eller kana-känsligt) så att ”ABC” och ”abc” behandlas som likvärdiga. Om ”ABC” läses in i databasen först kommer andra strängar som endast skiljer sig åt i skiftläge, som ”Abc”, inte att läsas in som ett separat värde.
 > 
 >
 
@@ -194,7 +194,7 @@ Så här ställer du in modellspråket.
 2. Under **Global** väljer du **Regionala inställningar**.
 3. I rutan **Modellspråk** väljer du ett annat språk. 
 
-    ![Ställa in modellspråk i Power BI Desktop](media/supported-languages-countries-regions/power-bi-supported-model-languages.png)
+    ![Skärmbild av hur du ställer in modellspråk i Power BI Desktop.](media/supported-languages-countries-regions/power-bi-supported-model-languages.png)
 
 > [!NOTE]
 > När det skapats kan inte språket för en Power BI-modell ändras.

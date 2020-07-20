@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 03/13/2018
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 544a4e476d730a6bccc02f476903005ca19a5cca
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: b13ad1c50e62351c693adee1026a0d78aafd2daa
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85219354"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86264684"
 ---
 # <a name="create-a-qr-code-for-a-report-in-power-bi-to-use-in-the-mobile-apps"></a>Skapa en QR-kod för en rapport i Power BI som ska användas i mobilapparna
 Med QR-koderna i Power BI kan du ansluta vad som helst i verkligheten direkt till relaterad BI-information &#151; Ingen navigering eller sökning behövs.
@@ -25,12 +25,12 @@ Kolleger som du har delat rapporten med kan skanna QR-koden för att få åtkoms
 
 ## <a name="create-a-qr-code-for-a-report"></a>Skapa en QR-kod för en rapport
 1. Öppna rapporten i Power BI-tjänsten.
-2. Välj **Fler alternativ** (...) uppe till höger och välj **Generera QR-kod**. 
+2. Välj **Fler alternativ** (...) uppe till höger och sedan **Generera QR-kod**. 
    
-    ![](media/service-create-qr-code-for-report/power-bi-create-qr-code-report.png)
+    ![Skärmbild av en rapport med en pekare från ellipsen till Generera QR-kod.](media/service-create-qr-code-for-report/power-bi-create-qr-code-report.png)
 3. En dialogruta med QR-koden visas. 
    
-    ![](media/service-create-qr-code-for-report/powerbi_report_qrcode.png)
+    ![Skärmbild av en dialog ruta som visar att QR-koden är klar att ladda ned eller spara.](media/service-create-qr-code-for-report/powerbi_report_qrcode.png)
 4. Härifrån kan du skanna QR-koden eller ladda ned och spara den så att du kan: 
    
    * Lägga till den i ett e-postmeddelande eller ett annat dokument, eller 

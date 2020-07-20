@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 11/26/2019
 ms.author: painbar
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 471522e0f66fe4bf03a8c1616d1a24221149f2e0
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 422782c3036f94c1ea764f46135200116092d70c
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85229899"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216241"
 ---
 # <a name="connect-to-office365mon-with-power-bi"></a>Ansluta till Office365Mon med Power BI
 Det är lätt att analysera dina Office 365-avbrott och hälsoprestandadata med Power BI och Office365Mon-mallappen. Power BI hämtar dina data, inklusive avbrott och hälsoavsökningar, och skapar sedan en anpassad instrumentpanel och rapporter som baseras på dessa data.
@@ -27,23 +27,23 @@ Anslut till [Office365Mon-mallappen](https://msit.powerbi.com/groups/me/getapps/
 ## <a name="how-to-connect"></a>Så här ansluter du
 1. Välj **Hämta data** längst ned i navigeringsfönstret.
    
-   ![](media/service-connect-to-office365mon/pbi_getdata.png)
+   ![Skärmbild av knappen Hämta data i navigeringsfönstret.](media/service-connect-to-office365mon/pbi_getdata.png)
 2. I rutan **Tjänster** väljer du **Hämta**.
    
-   ![](media/service-connect-to-office365mon/pbi_getservices.png) 
+   ![Skärmbild av dialogrutan Tjänster och knappen Hämta.](media/service-connect-to-office365mon/pbi_getservices.png) 
 3. Välj **Office365Mon** \> **Hämta**.
    
-   ![](media/service-connect-to-office365mon/o365mon.png)
+   ![Skärmbild av dialogrutan Office365Mon med länken Hämta.](media/service-connect-to-office365mon/o365mon.png)
 4. Som autentiseringsmetod väljer du **oAuth2** \> **Logga in**.
    
    När du uppmanas till det anger du autentiseringsuppgifterna som Office365Mon-administratör och följer autentiseringsprocessen.
    
-   ![](media/service-connect-to-office365mon/creds.png)
+   ![Skärmbild av dialogrutan Anslut till Office365Mon med o Auth2 i fältet Autentiseringsmetod.](media/service-connect-to-office365mon/creds.png)
    
-   ![](media/service-connect-to-office365mon/creds2.png)
+   ![Skärmbild av inloggningen till Office365Mon där du uppmanas att ange autentiseringsuppgifter.](media/service-connect-to-office365mon/creds2.png)
 5. När Power BI har importerat dessa data, visas en ny instrumentpanel, rapport och datamängd i navigeringsfönstret. Nya objekt har markerats med en gul asterisk \*, välj Office365Mon-posten.
    
-   ![](media/service-connect-to-office365mon/dashboard4.png)
+   ![Skärmbild av navigeringsfönstret i Power BI med instrumentpanelen, rapporten och datamängden.](media/service-connect-to-office365mon/dashboard4.png)
 
 **Och sedan?**
 

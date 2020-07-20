@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: ace93dfe358c85e54863dece0303c889c6a766b2
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 264d3f4a0c611ca01de627b7656584ceb60e7b18
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83279605"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86214529"
 ---
 # <a name="directquery-model-guidance-in-power-bi-desktop"></a>Vägledning för DirectQuery-modell i Power BI Desktop
 
@@ -54,9 +54,9 @@ Du kan optimera en DirectQuery-modell på många sätt, vi går igenom dem i den
 
 - **Undvik komplexa Power Query-frågor:** Du kan göra modelldesignen mer effektiv genom att se till att Power Query-frågorna inte behöver göra några transformationer. Det innebär att varje fråga mappas till en enda tabell eller vy i relationsdatabaskällan. Du kan förhandsgranska en representation av det faktiska SQL-frågeuttrycket i ett tillämpat Power Query-steg genom att välja alternativet **Visa intern fråga**.
 
-    ![Fem steg visas i Frågeredigeraren. Ett högerklick på det sista steget med namnet ”Omdöpta kolumner” har öppnat snabbmenyn. Alternativet ”Visa intern fråga” är aktiverat och markerat.](media/directquery-model-guidance/directquery-model-guidance-query-editor-view-native-query.png)
+    ![Skärmbild av Power BI Desktop som visar alternativet Visa intern fråga under Tillämpade steg.](media/directquery-model-guidance/directquery-model-guidance-query-editor-view-native-query.png)
     
-    ![I fönstret Intern fråga visas en T-SQL-fråga som kopplar ihop källtabeller.](media/directquery-model-guidance/directquery-model-guidance-native-query-window.png)
+    ![Skärmbild av Power BI Desktop med fönstret Intern fråga. En frågeinstruktion kopplar ihop två källtabeller.](media/directquery-model-guidance/directquery-model-guidance-native-query-window.png)
 
 - **Granska användningen av beräknade kolumner och datatypsändringar:** DirectQuery-modeller har stöd för att lägga till beräkningar och Power Query-steg för konvertering av datatyper. Du får dock ofta bättre prestanda genom att materialisera omvandlingsresultaten i relationsdatabaskällan om det går.
 - **Använd inte relativ datumfiltrering i Power Query:** Du kan definiera relativ datumfiltrering i Power Query-frågor. Ett exempel kan vara att hämta försäljningsorder som skapats det senaste året (i förhållande till dagens datum). Sådana filter översätts till ineffektiva interna frågor, som den här:
@@ -81,7 +81,7 @@ Du kan optimera en DirectQuery-modell på många sätt, vi går igenom dem i den
 - **Undvik att filtrera på dubbelriktade relationer:** Om du filtrerar på dubbelriktade relationer kan frågornas prestanda försämras. Använd bara den här relationsfunktionen om det behövs, vilket ofta är fallet när du implementerar en många-till-många-relation i en bryggningstabell. Mer information finns i [Relationer med kardinaliteten många-många i Power BI Desktop](../transform-model/desktop-many-to-many-relationships.md).
 - **Begränsa parallella frågor:** Du kan ställa in det maximala antalet anslutningar som DirectQuery ska öppna för varje underliggande datakälla. Det här styr hur många frågor som skickas samtidigt till datakällan.
 
-    ![Power BI Desktop-fönstret är öppet och DirectQuery-sidan Aktuell fil är vald. Egenskapen Maximalt antal anslutningar per datakälla är markerad.](media/directquery-model-guidance/directquery-model-guidance-desktop-options-current-file-directquery.png)
+    ![Skärmbild av Power BI Desktop med fönstret Direct Query-alternativ.](media/directquery-model-guidance/directquery-model-guidance-desktop-options-current-file-directquery.png)
     
     Inställningen är bara aktiv när det finns minst en DirectQuery-källa i modellen. Värdet gäller för alla DirectQuery-källor och för alla nya DirectQuery-källor som läggs till i modellen.
 
@@ -95,7 +95,7 @@ Du kan optimera rapporter baserade på en DirectQuery-datamängd på många sät
 
 - **Aktivera metoder för frågereduktion:** _Alternativ och inställningar_ i Power BI Desktop innehåller en sida av typen Frågereduktion. Den här sidan har tre användbara alternativ. Du kan inaktivera korsmarkering och korsfiltrering som standard, även om detta kan åsidosättas genom redigering av interaktioner. Du kan också visa knappen Tillämpa på utsnitt och filter. Alternativen för utsnittet eller filtret tillämpas då inte förrän rapportanvändaren klickar på knappen. Om du aktiverar de här alternativen bör du göra det direkt när du skapar rapporten.
 
-    ![Power BI Desktop-fönstret är öppet och sidan Aktuell fil > Frågereduktion är vald. Det finns tre alternativ, för att minska antalet frågor som skickas och för att visa knappen Tillämpa för utsnitt och filter.](media/directquery-model-guidance/directquery-model-guidance-desktop-options-current-file-query-reduction.png)
+    ![Skärmbild av Power BI Desktop med filtret Frågereduktion i fönstret Alternativ.](media/directquery-model-guidance/directquery-model-guidance-desktop-options-current-file-query-reduction.png)
     
 - **Använd filter först:** När du först utformar rapporter rekommenderar vi att du tillämpar eventuella filter, för rapporter, sidor eller visuella objekt, innan du mappar fälten till de visuella fälten. Snarare än att dra in måtten **Country** och **Sales** och sedan filtrera efter ett visst år bör du till exempel tillämpa filtret på fältet **Year** först. Det här beror på att varje steg i processen att skapa ett visuellt objekt skickar en fråga, och även om du kan göra ytterligare en ändring innan den första frågan har slutförts så innebär det en onödig belastning på den underliggande datakällan. Om du tillämpar filter tidigt blir de mellanliggande frågorna normalt mer kostnadseffektiva och snabbare. Om du inte tillämpar filter tidigt kan du också råka överskrida gränsen på en miljon rader som beskrivs ovan.
 - **Begränsa antalet visuella objekt på en sida:** När du öppnar en rapportsida (när sidfilter används) uppdateras alla visuella objekt på sidan. Det finns dock en gräns för hur många frågor som kan skickas parallellt, baserat på Power BI-miljön och inställningen **Maximalt antal anslutningar per datakälla** för modellen, se beskrivningen ovan. När antalet visuella objekt på sidan ökar är det därmed högre risk att de uppdateras seriellt. Det här gör att det tar längre tid att uppdatera sidan, och risken ökar dessutom för att de visuella objekten på sidan visar inkonsekventa resultat (för obeständiga datakällor). Det här gör att du bör begränsa antalet visuella objekt på samma sida, och i stället använda fler och enklare sidor. Om du ersätter flera visuella kort med ett enda kort med flera rader kan du få en liknande sidlayout.
@@ -105,7 +105,7 @@ Utöver listan med optimeringstekniker ovan bör du tänka på att följande rap
 
 - **Måttfilter:** Visuella objekt som innehåller mått (eller kolumnaggregat) kan ha filter som tillämpas på måtten. Det visuella objektet nedan visar till exempel **Sales** per **Category**, men bara för kategorier med en försäljning som överstiger 15 miljoner USD.
 
-    ![Ett visuellt tabellobjekt har två kolumner: Category och Sales. Fönstret Filter innehåller ett filter på måttet Sales för värden större än 15 miljoner USD. Tabellen innehåller tre rader och varje rad har ett försäljningsvärde som är större än 15 miljoner USD.](media/directquery-model-guidance/directquery-model-guidance-example-measure-filter.png)
+    ![Skärmbild av Power BI Desktop som visar tabelldata med tillämpade filter.](media/directquery-model-guidance/directquery-model-guidance-example-measure-filter.png)
     
     
     Det här kan leda till att två frågor skickas till den underliggande datakällan:

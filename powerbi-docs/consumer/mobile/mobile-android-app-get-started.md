@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 06/06/2020
 ms.author: painbar
-ms.openlocfilehash: a12f4d81e2cae913ddddd26ca3bd9c820ad716ca
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 725890e3650ff05e0b90e7678bb83e0bc5d01050
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85233033"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86263004"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-android-devices"></a>Kom igång med Power BI-mobilapp på Android-enheter
 Android-appen för Microsoft Power BI ger mobil BI-upplevelse för Power BI, Power BI-rapportserver och Reporting Services. Visa och interagera med ditt företags instrumentpaneler lokalt och i molnet överallt, med pekaktiverad mobil åtkomst i realtid. Utforska data i instrumentpaneler och dela med dina kollegor via e-post eller sms. 
@@ -80,7 +80,7 @@ Ett antal Power BI-exempel åtföljs av flera exempel på rapportservern.
 Tryck på förstoringsglaset i rubriken för att börja söka efter Power BI-innehåll.
 
 ## <a name="view-your-favorite-dashboards-and-reports"></a>Visa dina favoritinstrumentpaneler och -rapporter
-Tryck på **Favoriter** (![](./media/mobile-android-app-get-started/power-bi-mobile-apps-home-favorites-icon.png)) i navigeringsfältet för att visa sidan Favoriter. 
+Tryck på **Favoriter** (![ikonen Favoriter](./media/mobile-android-app-get-started/power-bi-mobile-apps-home-favorites-icon.png)) i navigeringsfältet för att visa sidan med dina Favoriter. 
 
 Läs mer om [favoriter i Power BI-mobilappar](mobile-apps-favorites.md).
 

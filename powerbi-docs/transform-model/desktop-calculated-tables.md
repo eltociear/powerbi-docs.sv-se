@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 05/06/2020
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 3f23f18002ce12c3b6706469f36bde077e117941
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 8c22b040a1767d616ce1f4d0e4e7fa26e55bfe19
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85237892"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86214300"
 ---
 # <a name="create-calculated-tables-in-power-bi-desktop"></a>Skapa beräknade tabeller i Power BI Desktop
 För det mest skapar du tabeller genom att importera data till din modell från en extern datakälla. Men med *beräknade tabeller* kan du lägga till nya tabeller baserat på data som du redan har läst in till modellen. I stället för att köra frågor och läsa in värden i den nya tabellens kolumner från en datakälla kan du skapa en [DAX-formel](/dax/index) (Data Analysis Expressions) som definierar tabellens värden.
@@ -31,11 +31,11 @@ Anta till exempel att du är en personalchef som har en tabell med **Northwest E
 
 **Northwest Employees**
 
- ![](media/desktop-calculated-tables/calctables_nwempl.png)
+ ![Skärmbild av Power BI Desktop som visar tabelldata för Northwest Employees.](media/desktop-calculated-tables/calctables_nwempl.png)
 
 **Southwest Employees**
 
- ![](media/desktop-calculated-tables/calctables_swempl.png)
+ ![Skärmbild av Power BI Desktop som visar tabelldata för Southwest Employees.](media/desktop-calculated-tables/calctables_swempl.png)
 
 Gå till gruppen **Beräkningar** på fliken **Modellering** och välj **Ny tabell** i rapportvyn eller datavyn i Power BI Desktop. Det är lite enklare att göra i datavyn, eftersom du då ser den nya beräknade tabellen direkt.
 

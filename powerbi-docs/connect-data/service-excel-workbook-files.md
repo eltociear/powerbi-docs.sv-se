@@ -9,15 +9,15 @@ ms.topic: how-to
 ms.date: 09/06/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: e86aeaf8f7254e2b28b266135ccc4a0005e927b6
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 870e3dbdc4b18422b0565834764b996d3f096ebf
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85236657"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86264443"
 ---
 # <a name="get-data-from-excel-workbook-files"></a>Hämta data från Excel-arbetsboksfiler
-![](media/service-excel-workbook-files/excel_icon.png)
+![Excel-ikon](media/service-excel-workbook-files/excel_icon.png)
 
 Microsoft Excel är ett av världens mest använda affärsprogram. Det är också ett av de vanligaste sätt att få dina data i Power BI.
 
@@ -61,7 +61,7 @@ Det här användbara videoklippet visar dig hur du kan förbereda dina Excel-arb
 ## <a name="one-excel-workbook--two-ways-to-use-it"></a>En Excel-arbetsbok – två sätt att använda den
 Om du sparar arbetsbokfilerna i **OneDrive**, finns det ett par olika sätt att utforska dina data i Power BI
 
-![](media/service-excel-workbook-files/excel_import_connect.png)
+![Skärmbild av OneDrive för företag som visar alternativet att importera eller ansluta till Excel-data.](media/service-excel-workbook-files/excel_import_connect.png)
 
 ### <a name="import-excel-data-into-power-bi"></a>Importera Excel-data till Power BI
 När du väljer **Importera** importeras alla data som stöds i tabeller och/eller en datamodell till en ny datauppsättning i Power BI. Om du har några Power View-blad kommer de att skapas igen i Power BI som rapporter.
@@ -84,31 +84,31 @@ I Excel 2016 kan du också använda Publicera > Överför. Det är ganska långt
 ## <a name="import-or-connect-to-an-excel-workbook-from-power-bi"></a>Importera eller ansluta till en Excel-arbetsbok från Power BI
 1. Klicka på **Hämta data** i navigeringsfönstret i Power BI.
    
-   ![](media/service-excel-workbook-files/excel_get_data_button.png)
+   ![Skärmbild av Hämta data med knappen i navigeringsfönstret.](media/service-excel-workbook-files/excel_get_data_button.png)
 2. I Filer klickar du på **Hämta**.
    
-   ![](media/service-excel-workbook-files/excel_files_get.png)
+   ![Skärmbild av dialog rutan Filer och knappen Hämta.](media/service-excel-workbook-files/excel_files_get.png)
 3. Hitta din fil.
    
-   ![](media/service-excel-workbook-files/excel_find_your_file.png)
+   ![Skärmbild av fyra paneler för att söka efter din fil med valen Lokal fil, OneDrive Business, OneDrive Personal och SharePoint-paneler.](media/service-excel-workbook-files/excel_find_your_file.png)
 4. Om din arbetsboksfil finns på OneDrive eller SharePoint - gruppwebbplatser väljer du **Importera** eller **Anslut**.
 
 ## <a name="local-excel-workbooks"></a>Lokala Excel-arbetsböcker
 Du kan också använda en lokal Excel-fil och överföra den till Power BI. Välj bara **Lokal fil** från föregående meny och gå till platsen där du har sparat dina Excel-arbetsböcker.
 
-![](media/service-excel-workbook-files/excel_import_6.png)
+![Skärmbild av panelen Lokal fil som visar hur du navigerar till att välja Excel-arbetsböcker.](media/service-excel-workbook-files/excel_import_6.png)
 
 När du har valt detta kan du välja att överföra din fil till Power BI.
 
-![](media/service-excel-workbook-files/excel_import_7.png)
+![Skärmbild av dialogrutan Lokal fil med alternativet Ladda upp din Excel-fil till Power BI.](media/service-excel-workbook-files/excel_import_7.png)
 
 När din arbetsbok överförs får du ett meddelande om att arbetsboken är klar.
 
-![](media/service-excel-workbook-files/excel_import_8.png)
+![Skärmbild av meddelandet som visar att din arbetsbok är klar.](media/service-excel-workbook-files/excel_import_8.png)
 
 När arbetsboken är klar hittar du den på området **Rapporter** i Power BI.
 
-![](media/service-excel-workbook-files/excel_import_9.png)
+![Skärmbild av avsnittet Rapporter och den valda rapporten med Excel-data.](media/service-excel-workbook-files/excel_import_9.png)
 
 ## <a name="publish-from-excel-2016-to-your-power-bi-site"></a>Publicera från Excel 2016 till Power BI-webbplats
 Funktionen **Publicera Power BI** i Excel 2016 är praktiskt taget samma som att använda **hämta Data** i Power BI för att importera eller ansluta till din fil. Vi kommer inte gå in på större detaljer här, men du kan läsa [Publicera till Power BI från Excel 2016](service-publish-from-excel.md) om du vill veta mer.

@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 5a84d46743522a9070c4cd9b16f7a540e3c103df
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: d5028e4aaa1bbb864f14c3f3cdb58d136275e5fc
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85228642"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86161248"
 ---
 # <a name="close-your-power-bi-account"></a>Stänga ditt Power BI-konto
 
@@ -34,7 +34,7 @@ Om du har registrerat dig för Power BI som individ kan du avsluta ditt konto fr
 
 1. Välj ett skäl för att stänga kontot (1). Alternativt så kan du ge mer information (2). Välj sedan **avsluta kontot**.
 
-    ![Skärmbild av dialogrutan Stäng konto med alternativet Stäng konto framhävt.](media/service-admin-closing-your-account/close-account-settings-3.png)
+    ![Skärmbild av dialogrutan Stäng konto med fält för att ange ytterligare information om stängningen.](media/service-admin-closing-your-account/close-account-settings-3.png)
 
 1. Bekräfta att du vill avsluta ditt konto.
 
@@ -42,12 +42,12 @@ Om du har registrerat dig för Power BI som individ kan du avsluta ditt konto fr
 
     Det bör visas en bekräftelse på att Power BI har stängt ditt konto. Du kan återaktivera ditt konto här om det behövs.
 
-    ![Skärmbild av dialogrutan Ditt konto har stängts.](media/service-admin-closing-your-account/close-account-settings-5.png)
+    ![Skärmbild av bekräftelsedialogrutan Ditt konto har stängts.](media/service-admin-closing-your-account/close-account-settings-5.png)
 
 ## <a name="managed-tenant-users"></a>Hanterade klientanvändare
 
 Om din organisation har registrerat dig för Power BI kan du kontakta din klientadministratör. Be dem att ta bort licensen från ditt konto.
 
-![Hantera stängt konto](media/service-admin-closing-your-account/close-account-managed.png)
+![Skärmbild av Stäng konto för hanterat konto.](media/service-admin-closing-your-account/close-account-managed.png)
 
 Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

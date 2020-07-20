@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 04/01/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 726c265198c7489ac1de055d0fc00b1988109d11
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 807ba59066508d063dba2e2f921eff19cf018bc5
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85223329"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86214598"
 ---
 # <a name="connect-to-project-online-data-through-power-bi-desktop"></a>Ansluta till Project Online-data via Power BI Desktop
 Du kan ansluta till data i Project Online via Power BI Desktop.
@@ -37,7 +37,7 @@ Du kan ansluta till data i Project Online via Power BI Desktop.
 
 5. Power BI Desktop ber dig att autentisera med ditt arbets- eller skolkonto. Välj organisationskonto och ange dina autentiseringsuppgifter.
    
-   ![](media/desktop-project-online-connect-to-data/image.png)
+   ![Skärmbild av Power BI Desktop som visar uppmaningen att ange autentiseringsuppgifter för att ansluta.](media/desktop-project-online-connect-to-data/image.png)
 
 Det konto som du använder för att ansluta till OData-flödet måste minst ha åtkomst genom portföljvyn för Project Web App-webbplatsen. 
 

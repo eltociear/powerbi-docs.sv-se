@@ -9,15 +9,15 @@ ms.topic: how-to
 ms.date: 05/26/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 5b649b3694eab5a573f814efd707155154d54b18
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: c34244669b538a5c3138536adbfd022eb00e646d
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85236689"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86263029"
 ---
 # <a name="get-data-from-power-bi-desktop-files"></a>Hämta data från Power BI Desktop-filer
-![](media/service-desktop-files/pbid_file_icon.png)
+![Ikon för Power BI Desktop-filer](media/service-desktop-files/pbid_file_icon.png)
 
 **Power BI Desktop** gör affärsinformation och rapportering enkelt. Oavsett om du ansluter till många olika datakällor, ställer frågor om och omvandlar data, modellerar dina data eller skapar kraftfulla och dynamiska rapporter, gör **Power BI Desktop** ditt arbete med affärsinformation snabbt och intuitivt. Om du är nybörjare på **Power BI Desktop** bör du läsa [Komma igång med Power BI Desktop](../fundamentals/desktop-getting-started.md).
 
@@ -38,13 +38,13 @@ När du läst in data i **Power BI Desktop** och skapat några rapporter, är de
 
 1. I Power BI, i navigeringsfönstret, klickar du på ** Hämta data**.
    
-   ![](media/service-desktop-files/pbid_get_data_button.png)
+   ![Skärmbild av Hämta data med knappen i navigeringsfönstret.](media/service-desktop-files/pbid_get_data_button.png)
 2. I **Filer**, klickar du på **Hämta**.
    
-   ![](media/service-desktop-files/pbid_files_get.png)
+   ![Skärmbild av dialog rutan Filer och knappen Hämta.](media/service-desktop-files/pbid_files_get.png)
 3. Hitta din fil. Power BI Desktop-filer har tillägget .PBIX.
    
-   ![](media/service-desktop-files/pbid_find_your_file.png)
+   ![Skärmbild av fyra paneler för att söka efter din fil med valen Lokal fil, OneDrive Business, OneDrive Personal och SharePoint-paneler.](media/service-desktop-files/pbid_find_your_file.png)
 
 ## <a name="publish-a-file-from-power-bi-desktop-to-your-power-bi-site"></a>Publicera en fil från Power BI Desktop till din Power BI-webbplats
 Att använda Publicera från Power BI Desktop är ungefär detsamma som att använda Hämta data i Power BI för att importera fildata från en lokal enhet eller ansluta till den i OneDrive. Det finns dock skillnader: om du laddar upp från en lokal enhet ska du uppdatera dessa data ofta för att säkerställa att dina data är online och att lokala kopior av data är aktuella. 
@@ -53,12 +53,12 @@ Här visas en snabb beskrivning av hur du gör, men du kan läsa mer i [Publicer
 
 1. I Power BI Desktop klickar du på **Fil** > **Publicera** > **Publicera till Power BI** eller klickar på **Publicera** i menyfliksområdet.
    
-   ![](media/service-desktop-files/pbid_publish.png)
+   ![Skärmbild av Publicera i menyfliksområdet som visar hur du publicerar från Power BI Desktop.](media/service-desktop-files/pbid_publish.png)
 2. Logga in i Power BI. Du behöver bara göra detta första gången.
    
    När du är klar får du en länk för att öppna rapporten på din Power BI-webbplats.
    
-   ![](media/service-desktop-files/pbid_publishing.png)
+   ![Skärmbild av dialogrutan för bekräftad inloggning som visar att du har loggat in med en länk till att öppna din rapport.](media/service-desktop-files/pbid_publishing.png)
 
 ## <a name="next-steps"></a>Nästa steg
 **Utforska dina data** – När du har hämtat dina data och rapporter från filen till Power BI, är det dags att börja utforska. Om det redan finns rapporter i filen visas de i navigeringsfönstret i **Rapporter**. Om filen bara innehåller data, kan du skapa nya rapporter. Högerklicka bara på den nya datauppsättningen och klicka sedan på **Utforska**.

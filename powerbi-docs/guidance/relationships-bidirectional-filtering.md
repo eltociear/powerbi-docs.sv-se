@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 03/02/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 9c883b32d03362e5d0e0d6d5ed074cb627fabaf1
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: c362a8012635becb68200a9d513157c05310edaf
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83273209"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86215144"
 ---
 # <a name="bi-directional-relationship-guidance"></a>Vägledning för dubbelriktad relation
 
@@ -40,7 +40,7 @@ Dubbelriktade relationer spelar en viktig roll när du ska skapa följande två 
 
 Flerriktade relationer kan tillhandahålla utsnitt som begränsar objekten till där data finns. (Om du är bekant med pivottabeller och utsnitt i Excel, så kan vi nämna att det är standardbeteendet vid hämtande av källdata från en Power BI-datamängd eller Analysis Services-modell.) Vad betyder detta? Låt oss först se på följande modelldiagram.
 
-![Ett modelldiagram innehåller tre tabeller. Designen beskrivs i följande stycke.](media/relationships-bidirectional-filtering/sales-model-diagram.png)
+![Diagram som visar en modell med tre tabeller. Designen beskrivs i följande stycke.](media/relationships-bidirectional-filtering/sales-model-diagram.png)
 
 Den första tabellen heter **Kund** och innehåller tre kolumner: **Land/region**, **Kund** och **Kundkod**. Den andra tabellen heter **Produkt** och innehåller tre kolumner: **Färg**, **Produkt** och **SKU**. Den tredje tabellen heter **Försäljing** och innehåller fyra kolumner: **Kundkod**, **Orderdatum**, **Kvantitet** och **SKU**. Tabellerna **Kund** och **Produkt** är tabeller av dimensionstyp, och var och en har en en-till-många-relation till tabellen **Försäljing**. Varje enskild relation filtrerar i en riktning.
 
@@ -49,7 +49,7 @@ För att hjälpa till att beskriva hur dubbelriktad filtrering fungerar, så har
 > [!NOTE]
 > Det går inte att visa tabellrader i Power BI Desktop-modelldiagrammet. Det sker i den här artikeln i syfte att stödja diskussionen med tydliga exempel.
 
-![Nu visar modelldiagrammet tabellraderna. Radinformationen beskrivs i följande stycke.](media/relationships-bidirectional-filtering/sales-model-diagram-rows.png)
+![Diagram som visar att modellen nu visar tabellraderna. Radinformationen beskrivs i följande stycke.](media/relationships-bidirectional-filtering/sales-model-diagram-rows.png)
 
 Radinformationen för de tre tabellerna beskrivs i följande punktlista:
 
@@ -67,17 +67,17 @@ Radinformationen för de tre tabellerna beskrivs i följande punktlista:
 
 Låt oss titta på följande rapportsida.
 
-![Rapportsidan innehåller tre visuella objekt. Informationen beskrivs i följande stycke.](media/relationships-bidirectional-filtering/sales-report-no-bi-directional-filter.png)
+![Diagram som visar rapportsidan med tre kontroller. Informationen beskrivs i följande stycke.](media/relationships-bidirectional-filtering/sales-report-no-bi-directional-filter.png)
 
 Sidan består av två utsnitt och ett visuellt kortobjekt. Det första utsnittet är för **Land/region** innehåller två objekt: Australien och USA. Den följer för närvarande efter Australien. Det andra utsnittet är för **Produkt**, och det innehåller tre objekt: Hatt, Jeans and T-shirt. Inget objekt har valts (vilket innebär att _inga produkter_ filtreras). Det visuella kortobjektet visar kvantiteten 30.
 
 När rapportanvändare gör ett utsnitt efter Australien vill du kanske begränsa **Product**-utsnittet till att visa objekt där data _relaterar_ till försäljning i Australien. Det är vad som avses med att visa utsnittsobjekt ”med data”. Du kan uppnå det här beteendet genom att konfigurera relationen mellan tabellerna **Produkt** och **Försäljning** så att de filtreras i båda riktningarna.
 
-![Moelldiagrammet visar att relationen mellan tabellerna Produkt och Försäljning nu är dubbelriktad.](media/relationships-bidirectional-filtering/sales-model-diagram-rows-bi-directional-filter.png)
+![Diagram som visar en modell där relationen mellan tabellerna Produkt och Försäljning nu är dubbelriktad.](media/relationships-bidirectional-filtering/sales-model-diagram-rows-bi-directional-filter.png)
 
 **Produkt**-utsnittet listar nu ett enskilt objekt: T-shirt. Det här objektet representerar den enda produkt som har sålts till australiensiska kunder.
 
-![Rapportsidan innehåller tre visuella objekt. Informationen beskrivs i följande stycke.](media/relationships-bidirectional-filtering/sales-report-bi-directional-filter.png)
+![Diagram som visar rapportsidan med tre kontroller. Informationen beskrivs i följande stycke.](media/relationships-bidirectional-filtering/sales-report-bi-directional-filter.png)
 
 Vi föreslår att du först noga överväger om den här designen kommer att fungera för dina rapportanvändare. Vissa rapportanvändare kan finna det förvirrande. De förstår inte varför utsnittsobjekten visas och försvinner dynamiskt när de interagerar med andra utsnitt.
 
@@ -93,7 +93,7 @@ Total Quantity = SUM(Sales[Quantity])
 
 Om du vill visa **Produkt**-utsnittsobjekt ”med data”, så behöver det helt enkelt filtreras efter måttet **Totalt antal** med villkoret ”är inte tom”.
 
-![Produktutsnittets filterfönster filtreras nu efter ”Totalt antal är inte tomt”.](media/relationships-bidirectional-filtering/filter-product-slicer-measure-is-not-blank.png)
+![Diagram som visar att rutan Filter för utsnittet Produkt nu filtreras efter ”Totalt antal är inte tomt”.](media/relationships-bidirectional-filtering/filter-product-slicer-measure-is-not-blank.png)
 
 ## <a name="dimension-to-dimension-analysis"></a>Dimension-till-dimension-analys
 
@@ -128,7 +128,7 @@ Under utvärderingen av måttuttrycket **Sålt i olika länder** filtreras relat
 
 Följande visuella tabellobjekt presenterar statistik för varje såld produkt. Kolumnen **Kvantitet** visar helt enkelt kvantitetssummevärdet. Kolumnen **Sålt i olika länder** representerar det distinkta antalet land/region-värden för alla kunder som har köpt produkten.
 
-![Två produkter listas i ett visuellt tabellobjekt. I kolumnen ”Sålt i olika länder” är Jeans 1 och T-shirt 2.](media/relationships-bidirectional-filtering/country-sales-crossfilter-function.png)
+![Diagram som visar två produkter i en tabellkontroll. I kolumnen ”Sålt i olika länder” är Jeans 1 och T-shirt 2.](media/relationships-bidirectional-filtering/country-sales-crossfilter-function.png)
 
 ## <a name="next-steps"></a>Nästa steg
 
@@ -141,4 +141,3 @@ Mer information om ämnet i den här artikeln finns i följande resurser:
 - [Vägledning vid felsökning av relationer](relationships-troubleshoot.md)
 - Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 - Har du förslag? [Bidra till att förbättra Power BI](https://ideas.powerbi.com/)
-

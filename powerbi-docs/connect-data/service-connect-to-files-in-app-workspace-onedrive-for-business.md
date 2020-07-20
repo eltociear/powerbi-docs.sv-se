@@ -8,12 +8,12 @@ ms.topic: how-to
 ms.date: 04/15/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: fdbb571a30f530ddeba37a7eaf490718b6c8116d
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 0016c5af8d8e9e154abf3c9e94dc6330a73d358d
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85230370"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216256"
 ---
 # <a name="connect-to-files-stored-in-onedrive-for-your-power-bi-workspace"></a>Anslut till filer som lagras i OneDrive för din Power BI-arbetsyta
 När du har [skapat en arbetsyta i Power BI](../collaborate-share/service-create-distribute-apps.md) kan du lagra dina Excel-, CSV-, och Power BI Desktop-filer i OneDrive för företag för din Power BI-arbetsyta. Du kan fortsätta att uppdatera de filer som du lagrar i OneDrive. De uppdateringarna visas automatiskt i Power BI-rapporter och instrumentpaneler som baseras på filerna. 
@@ -33,7 +33,7 @@ Att lägga till filer på din arbetsyta är en tvåstegsprocess:
 ## <a name="1-upload-files-to-the-onedrive-for-business-for-your-workspace"></a>1 Ladda upp filer till OneDrive för företag för din arbetsyta
 1. I Power BI-tjänsten väljer du pilen bredvid Arbetsytor > och väljer ellipsen ( **…** ) bredvid namnet på din arbetsyta. 
    
-   ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/power-bi-app-ellipsis.png)
+   ![Skärmbild av arbetsytan i Power BI och den valda arbetsytans namn.](media/service-connect-to-files-in-app-workspace-onedrive-for-business/power-bi-app-ellipsis.png)
 2. Välj **Filer** för att öppna OneDrive för företag för din arbetsyta i Microsoft 365.
    
    > [!NOTE]
@@ -42,7 +42,7 @@ Att lägga till filer på din arbetsyta är en tvåstegsprocess:
    > 
 3. Här kan du ladda upp dina filer till OneDrive för företag för din arbetsyta. Välj **överför**, och navigera till dina filer.
    
-   ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/pbi_grpfilesonedrive.png)
+   ![Skärmbild av OneDrive för företag som visar hur du navigerar för att ladda upp en fil.](media/service-connect-to-files-in-app-workspace-onedrive-for-business/pbi_grpfilesonedrive.png)
 
 ## <a name="2-import-excel-files-as-datasets-or-as-excel-online-workbooks"></a>2 importera Excel-filer som datauppsättningar eller som Excel Online-arbetsböcker
 Nu när dina filer finns i OneDrive för företag för din arbetsyta har du ett val. Du kan: 
@@ -54,26 +54,26 @@ Nu när dina filer finns i OneDrive för företag för din arbetsyta har du ett 
 1. Växla till arbetsytan i Power BI så att du ser arbetsytans namn uppe till vänster. 
 2. Välj **Hämta data** längst ned i navigeringsfönstret. 
    
-   ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/power-bi-app-get-data-button.png)
+   ![Skärmbild av knappen Hämta data i navigeringsfönstret.](media/service-connect-to-files-in-app-workspace-onedrive-for-business/power-bi-app-get-data-button.png)
 3. I rutan **Filer** väljer du **Hämta**.
    
-   ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/pbi_getfiles.png)
+   ![Skärmbild av dialog rutan Filer och knappen Hämta.](media/service-connect-to-files-in-app-workspace-onedrive-for-business/pbi_getfiles.png)
 4. Välj **OneDrive** - *arbetsytans namn*.
    
-    ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/pbi_grp_one_drive_shrpt.png)
+    ![Skärmbild av tre paneler för att välja din arbetsyta: Lokal fil, OneDrive och SharePoint.](media/service-connect-to-files-in-app-workspace-onedrive-for-business/pbi_grp_one_drive_shrpt.png)
 5. Välj den fil du vill > **ansluta**.
    
     Nu väljer du om du vill [importera data från Excel-arbetsboken](service-get-data-from-files.md) eller [ansluta till hela Excel-arbetsboken](service-excel-workbook-files.md).
 6. Välj **importera** eller **anslut**.
    
-    ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/pbi_importexceldataorwholecrop.png)
+    ![Skärmbild av dialogrutan OneDrive för företag med Importera från Excel eller Anslut till Excel.](media/service-connect-to-files-in-app-workspace-onedrive-for-business/pbi_importexceldataorwholecrop.png)
 7. Om du väljer **imporera** så visas arbetsboken i fliken **datauppsättningar**. 
    
-    ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/power-bi-app-excel-file-import.png)
+    ![Skärmbild av Arbetsytor i Power BI och fliken Datauppsättningar.](media/service-connect-to-files-in-app-workspace-onedrive-for-business/power-bi-app-excel-file-import.png)
    
     Om du väljer **anslut** så visas arbetsboken i fliken **arbetsböcker**.
    
-    ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/power-bi-app-excel-file-connect.png)
+    ![Skärmbild av Arbetsytor i Power BI och fliken Arbetsböcker.](media/service-connect-to-files-in-app-workspace-onedrive-for-business/power-bi-app-excel-file-connect.png)
 
 ## <a name="next-steps"></a>Nästa steg
 * [Skapa appar och arbetsytor i Power BI](../collaborate-share/service-create-distribute-apps.md)

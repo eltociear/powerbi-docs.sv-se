@@ -1,18 +1,18 @@
 ---
 title: Skapa en sidnumrerad rapport med en delad Power BI-datamängd – Power BI Report Builder
 description: Skapa en sidnumrerad rapport i Power BI Report Builder baserat på en delad Power BI-datamängd.
-ms.date: 02/12/2020
+ms.date: 07/08/2020
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: a13f346feeddc8196cb35e06acf027baeaa7a151
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: d3955b8dde22863e7b0224d335b162846e0741d2
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85239801"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216820"
 ---
 # <a name="create-a-paginated-report-based-on-a-power-bi-shared-dataset"></a>Skapa en sidnumrerad rapport baserat på en delad Power BI-datamängd
 
@@ -104,6 +104,9 @@ Här är stegen du behöver utföra för att hämta frågan.
     ![Frågedesigner i Report Builder](media/report-builder-shared-datasets/power-bi-report-builder-query-designer.png)
 
 1. I den övre rutan klistrar du in den fråga som du kopierade från Power BI Desktop.
+
+    > [!NOTE]
+    > Om frågan innehåller funktionen TOPN tar du bort den från frågan.
 
 1. Välj **Kör fråga** (det röda utropstecknet, !) för att kontrollera att frågan fungerar. 
 

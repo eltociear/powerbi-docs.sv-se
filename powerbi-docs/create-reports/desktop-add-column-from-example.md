@@ -9,17 +9,17 @@ ms.topic: how-to
 ms.date: 01/16/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 9632bfaecc524aac95ec524cccb59ba08a7bc21f
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 68f2dc14b713345796ba0472fc3d55f6baedf819
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85229081"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86263185"
 ---
 # <a name="add-a-column-from-examples-in-power-bi-desktop"></a>Lägga till en kolumn från exempel i Power BI Desktop
 Med *Lägg till kolumn från exempel* i Power Query-redigeraren kan du lägga till nya kolumner i datamodellen genom att ange ett eller flera exempelvärden för de nya kolumnerna. Du kan skapa de nya kolumnexemplen från ett urval eller ange inmatning baserat på alla befintliga kolumner i tabellen.
 
-![](media/desktop-add-column-from-example/add-column-from-example_01.png)
+![Skärmbild av Power Query-redigeraren som visar hur du lägger till en kolumn från exempel i Power BI Desktop.](media/desktop-add-column-from-example/add-column-from-example_01.png)
 
 Med hjälp av *Lägg till kolumn från exempel* kan du snabbt och enkelt skapa nya kolumner. Det passar utmärkt i följande situationer:
 
@@ -165,4 +165,3 @@ Många, men inte alla, omvandlingar är tillgängliga när du använder **Lägg 
 - Summa
 - Tangens
 - Behållare/intervall
-

@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 01/29/2020
 ms.author: v-pemyer
-ms.openlocfilehash: b024ff52585a4b9b46b60e3230a059b3d07d7b24
-ms.sourcegitcommit: 9c72ec6b2d6d4574c86e976a65c076764473482d
+ms.openlocfilehash: 7dd6c812116d9ba196b157bd12d6362c19ac64ec
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84273909"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216723"
 ---
 # <a name="tenant-admin-settings-guidance"></a>Guide till administratörsinställningar för klientorganisationer
 
@@ -41,7 +41,7 @@ De här webbadresserna blir tillgängliga som länkar på hjälpmenyn i Power BI
 > [!NOTE]
 > Med länken **Licensieringsbegäranden** förhindrar du att enskilda användare registrerar sig för den 60-dagars kostnadsfria utvärderingsversionen av Power BI Pro. De dirigeras i stället till en inter webbplatsen med information om att skaffa en licens – kostnadsfri eller Pro.
 
-![Inställningen Publicera ”Få hjälp”-information visas.](media/admin-tenant-settings/publish-get-help-information.png)
+![Skärmbild av Power BI Desktop med inställningar för hjälp och support.](media/admin-tenant-settings/publish-get-help-information.png)
 
 ## <a name="manage-risk"></a>Hantera risk
 Inställningarna för att hantera risker kan hjälpa dig att upprätta styrningsprinciper i Power BI-klientorganisationen. Kom ihåg att styrningsinställningar inte är en säkerhetsåtgärd. Om du till exempel inaktiverar inställningen **Exportera data** tas funktionen bort från Power BI-användargränssnittet. Det hjälper Power BI-användare att följa organisationens styrningsprinciper när de arbetar, men det hindrar inte målmedvetna användare från att exportera data med hjälp av andra alternativ. Från en säkerhetssynpunkt har en Power BI-användare med läsbehörighet till en datauppsättning behörighet att köra frågor på den här datauppsättningen och kan spara resultaten oavsett vilka funktioner som finns tillgängliga i Power BI-användargränssnittet.
@@ -51,7 +51,7 @@ Du kan få ett meddelande via e-post om din klientorganisation påverkas av ett 
 
 Vi rekommenderar att du aktiverar inställningen **Få e-postmeddelanden om tjänstavbrott och incidenter**. Du hittar den i gruppen **Hjälp- och supportinställningar**. Tilldela en eller flera _e-postaktiverade_ säkerhetsgrupper.
 
-![Inställningen ”Få e-postmeddelanden om tjänstavbrott och incidenter” visas.](media/admin-tenant-settings/receive-email-notifications-for-service-outages-or-incidents.png)
+![Skärmbild av Power BI Desktop som visar inställningen ”Få e-postmeddelanden om tjänstavbrott och incidenter”.](media/admin-tenant-settings/receive-email-notifications-for-service-outages-or-incidents.png)
 
 ### <a name="information-protection"></a>Informationsskydd
 
@@ -74,7 +74,7 @@ Vi rekommenderar att du tilldelar en eller flera säkerhetsgrupper. Dessa gruppe
 
 Glöm inte att ta med anvisningar i dokumentationen som hjälper användare (som inte har behörighet att skapa arbetsytor) att begära en ny arbetsyta.
 
-![Inställningen "Skapa arbetsytor" visas.](media/admin-tenant-settings/create-workspaces.png)
+![Skärmbild av Power BI Desktop som visar inställningen ”Skapa arbetsytor”.](media/admin-tenant-settings/create-workspaces.png)
 
 ### <a name="share-content-with-external-users"></a>Dela innehåll med externa användare
 
@@ -84,7 +84,7 @@ Inställningen **Dela innehåll med externa användare** är som standard aktive
 
 Vi rekommenderar att du tilldelar en eller flera säkerhetsgrupper. Dessa grupper kan beviljas _eller nekas_ behörighet att dela innehåll med externa användare.
 
-![Inställningen ”Dela innehåll med externa användare” visas.](media/admin-tenant-settings/share-content-with-external-users.png)
+![Skärmbild av Power BI Desktop som visar inställningen ”Dela innehåll med externa användare”.](media/admin-tenant-settings/share-content-with-external-users.png)
 
 ### <a name="publish-to-web"></a>Publicera på webben
 
@@ -96,7 +96,7 @@ Om du aktiverar inställningen rekommenderar vi att du tilldelar en eller flera 
 
 Dessutom finns det ett alternativ för hur inbäddningskoderna fungerar. Standardvärdet är **Tillåt endast befintliga koder**. Det innebär att användarna uppmanas att kontakta en Power BI-administratör när de behöver skapa en inbäddningskod.
 
-![Inställningen ”Publicera på webben” visas.](media/admin-tenant-settings/publish-to-web.png)
+![Skärmbild av Power BI Desktop som visar inställningen ”Publicera på webben”.](media/admin-tenant-settings/publish-to-web.png)
 
 Vi rekommenderar också att du regelbundet besöker [Inbäddningskoder för publicering till webben](https://app.powerbi.com/admin-portal/embedCodes). Ta bort koder om de leder till att privat eller konfidentiell information publiceras.
 
@@ -111,7 +111,7 @@ Vi rekommenderar att du tilldelar en eller flera säkerhetsgrupper. Dessa gruppe
 > [!IMPORTANT]
 > Om du inaktiverar den här inställningen begränsas även användningen av funktionerna [Analysera i Excel](../collaborate-share/service-analyze-in-excel.md) och Power BI-tjänstens [liveanslutningar](../connect-data/desktop-report-lifecycle-datasets.md#using-a-power-bi-service-live-connection-for-report-lifecycle-management).
 
-![Inställningen "Exportera data" visas.](media/admin-tenant-settings/export-data.png)
+![Skärmbild av Power BI Desktop som visar inställningen ”Exportera data”.](media/admin-tenant-settings/export-data.png)
 
 > [!NOTE]
 > Om användarna tillåts att exportera data kan du lägga till extra säkerhet i form av [dataskydd](../admin/service-security-data-protection-overview.md). Det gör att obehöriga användare blockeras från att exportera innehåll med känslighetsmärkning.
@@ -124,7 +124,7 @@ Inställningen **Tillåt externa gästanvändare att redigera och hantera inneh�
 
 Om du behöver ge externa användare behörighet att redigera och hantera innehåll rekommenderar vi att du tilldelar en eller flera säkerhetsgrupper. Dessa grupper kan beviljas _eller nekas_ behörighet att publicera rapporter.
 
-![Inställningen ”Tillåt externa gästanvändare att redigera och hantera innehåll i organisationen” visas.](media/admin-tenant-settings/allow-external-guest-users.png)
+![Skärmbild av Power BI Desktop som visar inställningen ”Tillåt externa gästanvändare att redigera och hantera innehåll i organisationen”.](media/admin-tenant-settings/allow-external-guest-users.png)
 
 ### <a name="developer-settings"></a>Inställningar för utvecklare
 
@@ -135,7 +135,7 @@ Det finns två inställningar för klientorganisationer relaterade till [inbädd
 
 Om du inte har för avsikt att använda utvecklar-API:er till att bädda in innehåll rekommenderar vi att du inaktiverar dem. Annars bör du åtminstone konfigurera specifika säkerhetsgrupper som ska utföra det här arbetet.
 
-![Inställningarna för utvecklare visas.](media/admin-tenant-settings/developer-settings.png)
+![Skärmbild av Power BI Desktop som visar inställningar för utvecklare.](media/admin-tenant-settings/developer-settings.png)
 
 ## <a name="next-steps"></a>Nästa steg
 
@@ -145,4 +145,3 @@ Mer information om ämnet i den här artikeln finns i följande resurser:
 - [Administrera Power BI i Admin-portalen](../admin/service-admin-portal.md)
 - Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 - Har du förslag? [Bidra till att förbättra Power BI](https://ideas.powerbi.com)
-

@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 03/02/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 3e3e44647ca7c85c09a3e7f4b3c309947559f5d3
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: e8ba3203728a72b26d188e96eb1fa66f62f89a55
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83273234"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86215130"
 ---
 # <a name="active-vs-inactive-relationship-guidance"></a>Vägledning för aktiva kontra inaktiva relationer
 
@@ -29,7 +29,7 @@ I allmänhet rekommenderar vi att du definierar aktiva relationer när det är m
 
 Här är en del av ett modelldiagram över de två tabellerna.
 
-![Ett modelldiagram innehåller två tabeller: Flyg och flygplats. Relationsdesignen beskrivs i följande stycke.](media/relationships-active-inactive/flight-model-1.png)
+![Diagram som visar en modell med två tabeller: Flyg och flygplats. Relationsdesignen beskrivs i följande stycke.](media/relationships-active-inactive/flight-model-1.png)
 
 Det finns två modellrelationer mellan tabellerna **Flight** och **Airport**. I **Flight**-tabellen är **DepartureAirport**- och **ArrivalAirport**-kolumnerna kopplade till **Airport**-kolumnen i **Airport**-tabellen. I star-schemadesignen beskrivs **Airport**-tabellen som en [rollspelsdimension](star-schema.md#role-playing-dimensions). I den här modellen är de två rollerna _avgångsflygplats_ och _ankomstflygplats_.
 
@@ -39,13 +39,13 @@ Den här modelldesignen medför allvarliga begränsningar för hur data kan rapp
 
 Här är den förbättrade modelldesignen.
 
-![Ett modelldiagram innehåller nu fyra tabeller: Datum, flyg, avgångsflygplats och ankomstflygplats. Relationsdesignen beskrivs i följande stycke.](media/relationships-active-inactive/flight-model-2.png)
+![Diagram som visar en modell med fyra tabeller: Datum, flyg, avgångsflygplats och ankomstflygplats.](media/relationships-active-inactive/flight-model-2.png)
 
 Modellen har nu två flygplatstabeller: **Departure Airport** och **Arrival Airport**. Modellrelationerna mellan dessa tabeller och tabellen för **Flight** är aktiva. Observera också att kolumnnamnen i **Departure Airport**- och **Arrival Airport**-tabellerna föregås av ordet _Departure_ eller _Arrival_.
 
 Den förbättrade modelldesignen stöder framställning av följande rapportdesign.
 
-![En rapportsida har två utsnitt och ett visuellt tabellobjekt. Utsnitten är Month (månad) och Departure Airport (avgångsflygplats). Det visuella objektet i tabellen visar ankomstflygplatser och olika statistik.](media/relationships-active-inactive/flight-report-design.png)
+![Diagram som visar en rapportsida med två utsnitt och en tabellkontroll. Utsnitten är Month (månad) och Departure Airport (avgångsflygplats).](media/relationships-active-inactive/flight-report-design.png)
 
 Rapportsidan filtreras efter Melbourne som avgångsflygplats och tabellen visuella grupper per ankomstflygplatser.
 
@@ -86,7 +86,7 @@ Nu ska vi överväga olika modell- och rapporteringskrav:
 
 Här är en del av ett modelldiagram över de två tabellerna.
 
-![Ett modelldiagram innehåller två tabeller: Försäljning och datum. Försäljningstabellen innehåller sex mått. Relationsdesignen beskrivs i följande stycke.](media/relationships-active-inactive/sales-model.png)
+![Diagram som visar en modell med två tabeller: Försäljning och datum. Försäljningstabellen innehåller sex mått.](media/relationships-active-inactive/sales-model.png)
 
 Det finns två modellrelationer mellan tabellerna **Sales** och **Date**. I **Sales**-tabellen relaterar **OrderDate**- och **ShipDate**-kolumnerna för **Date**-kolumnen för **Date**-tabellen. I den här modellen är de två rollerna för **Date**-tabellen _order date_ och _ship date_. Det är relationen till kolumnen **OrderDate** som är aktiv.
 
@@ -110,7 +110,7 @@ CALCULATE(
 
 Denna modelldesign stöder framställning av följande rapportdesign.
 
-![En rapportsida har ett utsnitt och ett visuellt tabellobjekt. Utsnittet är kvartal och den visuella tabellen anger månadsförsäljningsstatistik.](media/relationships-active-inactive/sales-report-design.png)
+![Diagram som visar en rapportsida med ett utsnitt och en tabellkontroll. Utsnittet är kvartal och den visuella tabellen anger månadsförsäljningsstatistik.](media/relationships-active-inactive/sales-report-design.png)
 
 Rapportsidan filtreras efter kvartal 2019 Q4. Tabellen visar grupper per månad och visar olika försäljningsstatistik. Måtten **Beställningar** och **Beställningar levererade** ger olika resultat. De använder samma sammanfattningslogik (antal rader i **Sales**-tabellen), men olika filterspridning för **Date**-tabell.
 

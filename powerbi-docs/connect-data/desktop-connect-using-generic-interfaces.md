@@ -9,18 +9,18 @@ ms.topic: how-to
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 6a0170d40413cd2833f7e31bb3bc7c5704a1f5cc
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 106b2e4f9b829190cff8269342c3239429b41f24
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85224035"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86214732"
 ---
 # <a name="connect-to-data-by-using-power-bi-desktop-generic-interfaces"></a>Ansluta till data med hjälp av generiska gränssnitt i Power BI Desktop 
 
 Du kan ansluta till en mängd olika datakällor i **Power BI Desktop** med hjälp av inbyggda dataanslutningar, från **Access-databaser** till **Zendesk**-resurser, vilket visas i fönstret **Hämta data**. Du kan också ansluta till alla möjliga typer av *andra* datakällor för att ytterligare utöka dina anslutningsmöjligheter, med hjälp av generiska gränssnitt (exempelvis **ODBC** eller **REST API:er**) som är inbyggda i **Power BI Desktop**.
 
-![](media/desktop-connect-using-generic-interfaces/generic-data-interfaces_1.png)
+![Skärmbild av dialogrutan Hämta data med valet ODBC.](media/desktop-connect-using-generic-interfaces/generic-data-interfaces_1.png)
 
 ## <a name="power-bi-desktop-data-interfaces"></a>Power BI Desktop-gränssnitt
 **Power BI Desktop** innehåller en ständigt växande samling dataanslutningar som har skapats för att ansluta till en specifik datakälla. Till exempel innehåller dataanslutningen **SharePoint-lista** specifika fält och kompletterande information under anslutningssekvensen som är utformade för **SharePoint-listor**, vilket är fallet med andra datakällor finns i fönstret som visas när du väljer **hämta Data > Fler...**  (visas i föregående bild).
@@ -42,7 +42,7 @@ Kan du inte hitta datakällan som du vill använda med **Power BI Desktop**? Ski
 ## <a name="data-sources-accessible-through-odbc"></a>Datakällor som är tillgängliga via ODBC
 Med anslutningsappen **ODBC** i **Power BI Desktop** kan du importera data från en ODBC-drivrutin genom att ange en **Namn på datakällan (DSN)** eller en *anslutningssträng*. Som ett alternativ kan du också ange ett SQL-uttryck som ska köras mot ODBC-drivrutinen.
 
-![](media/desktop-connect-using-generic-interfaces/generic-data-interfaces_2.png)
+![Skärmbild av dialogrutan Från ODBC med alternativen DSN och Avancerade alternativ.](media/desktop-connect-using-generic-interfaces/generic-data-interfaces_2.png)
 
 I följande lista beskrivs några exempel på datakällorna som **Power BI Desktop** kan ansluta till med hjälp av ett allmänt **ODBC**-gränssnitt.
 
@@ -62,7 +62,7 @@ I följande lista beskrivs några exempel på datakällorna som **Power BI Deskt
 ## <a name="data-sources-accessible-through-ole-db"></a>Datakällor som är tillgängliga via OLE DB
 Med anslutningsappen **OLE DB** i **Power BI Desktop** kan du importera data från en OLE DB-drivrutin genom att ange en *anslutningssträng*. Som ett alternativ kan du också ange ett SQL-uttryck som ska köras mot OLE DB-drivrutinen.
 
-![](media/desktop-connect-using-generic-interfaces/generic-data-interfaces_3.png)
+![Skärmbild av dialogrutan Från OLE DB med alternativen Anslutningssträng och Avancerade alternativ.](media/desktop-connect-using-generic-interfaces/generic-data-interfaces_3.png)
 
 I följande lista beskrivs några exempel på datakällorna som **Power BI Desktop** kan ansluta till med hjälp av ett allmänt **OLE DB**-gränssnitt.
 
@@ -74,7 +74,7 @@ I följande lista beskrivs några exempel på datakällorna som **Power BI Deskt
 ## <a name="data-sources-accessible-through-odata"></a>Datakällor som är tillgängliga via OData
 Med anslutningsappen **OData** i **Power BI Desktop** kan du importera data från **OData** URL genom att skriva eller klistra in webbadressen för **OData**. Du kan lägga till flera webbadressdelar genom att skriva eller klistra in dessa länkar i textrutorna i fönstret **OData Feed**.
 
-![](media/desktop-connect-using-generic-interfaces/generic-data-interfaces_4.png)
+![Skärmbild av dialogrutan OData-feed med fält för URL-delar och förhandsgranskning.](media/desktop-connect-using-generic-interfaces/generic-data-interfaces_4.png)
 
 I följande lista beskrivs några exempel på datakällorna som **Power BI Desktop** kan ansluta till med hjälp av ett allmänt **OData**-gränssnitt.
 
@@ -85,7 +85,7 @@ I följande lista beskrivs några exempel på datakällorna som **Power BI Deskt
 ## <a name="data-sources-accessible-through-rest-apis"></a>Datakällor som är tillgängliga via REST API:er
 Du kan ansluta till datakällor med hjälp av **REST API:er** och därmed använda data från alla typer av datakällor som stöder **REST**.
 
-![](media/desktop-connect-using-generic-interfaces/generic-data-interfaces_5.png)
+![Skärmbild av dialogrutan Fråga som visar datakällorna.](media/desktop-connect-using-generic-interfaces/generic-data-interfaces_5.png)
 
 I följande lista beskrivs några exempel på datakällorna som **Power BI Desktop** kan ansluta till med hjälp av ett allmänt **REST API**-gränssnitt.
 
@@ -96,7 +96,7 @@ I följande lista beskrivs några exempel på datakällorna som **Power BI Deskt
 ## <a name="data-sources-accessible-through-r-script"></a>Datakällor som är tillgängliga via R-skript
 Du kan använda **R-skript** för att få åtkomst till datakällor och använda dessa data i **Power BI Desktop**.
 
-![](media/desktop-connect-using-generic-interfaces/r-scripts-2.png)
+![Skärmbild av dialogrutan R-skript som visar körningsskriptet.](media/desktop-connect-using-generic-interfaces/r-scripts-2.png)
 
 I följande lista beskrivs några exempel på datakällorna som **Power BI Desktop** kan ansluta till med hjälp av ett allmänt **R-skript**-gränssnitt.
 

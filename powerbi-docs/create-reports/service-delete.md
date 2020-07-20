@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 09/11/2018
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: f74b90b944f40b5d5ff046f60bd67ca4c3c7eb83
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: ff31548801f372fa1e20949e5c109cc9214f55e1
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238413"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86264483"
 ---
 # <a name="delete-almost-anything-in-power-bi-service"></a>Ta bort på nästan vad som helst i Power BI-tjänsten
 Den här artikeln lär dig hur du tar bort en instrumentpanel, rapport, rapportsida, arbetsbok, datauppsättning, app, visualisering och arbetsyta i Power BI-tjänsten.
@@ -125,7 +125,7 @@ Appar kan enkelt tas bort från listan med appar. Men endast administratörer ka
 Om du tar bort en app från applistan tas den inte bort för andra medlemmar.
 
 1. Öppna applistsidan genom att välja **Appar** i navigeringsfönstret.
-2. Håll muspekaren över en app för att ta bort den och välj ikonen Ta bort ![](media/service-delete/power-bi-delete-report2.png).
+2. Håll muspekaren över appen du vill ta bort och välj ikonen Ta bort ![papperskorgsikon](media/service-delete/power-bi-delete-report2.png)  -ikonen.
 
    ![välj appar](media/service-delete/power-bi-delete-app.png)
 

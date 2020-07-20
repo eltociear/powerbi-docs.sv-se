@@ -9,15 +9,15 @@ ms.topic: how-to
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 4827049ee8eff86b2ce71ee9befd3d01760c0840
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 20c289648dc6e9b9784335c0d92f6725328dfffc
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85230486"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216326"
 ---
 # <a name="get-data-from-comma-separated-value-csv-files"></a>Hämta data från filer med kommaavgränsade värden (.csv)
-![](media/service-comma-separated-value-files/csv_icon.png)
+![CSV-ikonen](media/service-comma-separated-value-files/csv_icon.png)
 
 Filer med kommaavgränsade värden, ofta kallade .CSV-filer, är enkla textfiler med rader med data där varje värde är avgränsat med ett kommatecken. Dessa typer av filer kan innehålla mycket stora mängder data på en relativt liten storlek, vilket gör dem till en perfekt datakälla för Power BI. Du kan hämta en exempel-.CSV-fil [här](https://go.microsoft.com/fwlink/?LinkID=619356).
 
@@ -41,13 +41,13 @@ Om du har en .CSV, är det dags att få in den i din Power BI-plats som en datau
 
 1. I Power BI i navigeringsfönstret, klickar du på **hämta data**.
    
-   ![](media/service-comma-separated-value-files/csv_get_data_button.png)
-2. I **filer**, klickar du på **hämta**.
+   ![Skärmbild av Hämta data i Power BI Desktop med knappen i navigeringsfönstret.](media/service-comma-separated-value-files/csv_get_data_button.png)
+2. I **Filer**, klickar du på **Hämta**.
    
-   ![](media/service-comma-separated-value-files/csv_files_get.png)
+   ![Skärmbild av dialog rutan Filer och knappen Hämta.](media/service-comma-separated-value-files/csv_files_get.png)
 3. Hitta din fil.
    
-   ![](media/service-comma-separated-value-files/csv_find_your_file.png)
+   ![Skärmbild av fyra paneler för att söka efter din fil med valen Lokal fil, OneDrive Business, OneDrive Personal och SharePoint-paneler.](media/service-comma-separated-value-files/csv_find_your_file.png)
 
 ## <a name="next-steps"></a>Nästa steg
 **Utforska dina data** – när du hämtat in data från din fil till Power BI är det dags att börja utforska. Högerklicka bara på den nya datauppsättningen och klicka sedan på **utforska**.

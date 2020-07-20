@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: de20bc743c582d42d81f2d4c2544e3acf5f1b99c
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 60f49775db1f461ff5105ada63920686e5ab5cbf
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85234512"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86264922"
 ---
 # <a name="qa-virtual-analyst-in-ios-apps---power-bi"></a>Det virtuella analysverktyget Frågor och svar i iOS-appar – Power BI
 
@@ -49,40 +49,40 @@ När du har slutfört de nödvändiga förutsättningarna är det dags att testa
 3. Skriv **visa**, tryck på **försäljning** från listan över förslag > **Skicka** ![Ikonen Skicka](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
 
     ![Visa försäljning](./media/mobile-apps-ios-qna/power-bi-ios-q-n-a-show-sales.png)
-4. Tryck på **efter** bland nyckelorden, tryck på **objekt** från listan över förslag > **Skicka** ![](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
+4. Tryck på **efter** bland nyckelorden, tryck på **objekt** i listan med förslag > **Skicka** ![ikonen Skicka](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
 
     ![Försäljning per objekt](./media/mobile-apps-ios-qna/power-bi-ios-q-n-a-sale-by-item.png)
-5. Tryck på **som** bland nyckelorden, därefter på ikonen för kolumndiagram ![](./media/mobile-apps-ios-qna/power-bi-ios-q-n-a-column-chart-icon.png) och sedan på **Skicka** ![](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
+5. Tryck på **som** bland nyckelorden, tryck på ikonen för kolumndiagram ![diagramikon](./media/mobile-apps-ios-qna/power-bi-ios-q-n-a-column-chart-icon.png) och sedan på **Skicka** ![ikonen Skicka](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
 6. Tryck och håll kvar på diagrammet som skapas och sedan på **Expandera**.
 
-    ![](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-tap-expand-feedback.png)
+    ![Skärmbild av ett kolumndiagram med en pekare mot Expandera.](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-tap-expand-feedback.png)
 
     Diagrammet öppnas i appen i fokusläge.
 
-    ![](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-expanded-chart.png)
+    ![Skärmbild av ett kolumndiagram som visar diagrammets fokusläge.](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-expanded-chart.png)
 7. Tryck på pilen i det övre vänstra hörnet att gå tillbaka till chattfönstret för frågor och svar.
 8. Tryck på X till höger i textrutan för att ta bort texten och börja om.
-9. Försök med en ny fråga: Tryck på **topp** bland nyckelorden och därefter på **försäljning efter genomsnittlig $/enhet ly** > **Skicka** ![](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
+9. Försök med en ny fråga: Tryck på **bästa** bland nyckelorden och sedan på **försäljning efter genomsnittlig $/enhet ly** > **Skicka** ![ikonen Skicka](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
 
-    ![](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-top-sale-2.png)
-10. Välj **efter** bland nyckelorden, tryck på **tid** från listan över förslag längst upp > **Skicka** ![](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
+    ![Skärmbild av en fråga som visar den bästa försäljningen efter genomsnittligt belopp per enhet.](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-top-sale-2.png)
+10. Välj **efter** bland nyckelorden, tryck på **tid** i listan med förslag längst upp > **Skicka** ![ikonen Skicka](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
 
-     ![](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-top-sale-by-time.png)
-11. Skriv **som**, välj ikonen för linjediagram ![](./media/mobile-apps-ios-qna/power-bi-ios-q-n-a-line-chart-icon.png) från listan över förslag > **Skicka** ![](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
+     ![Skärmbild av ett diagram som visar den bästa försäljningen efter genomsnittligt belopp per enhet efter tid.](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-top-sale-by-time.png)
+11. Skriv **som**, välj ikonen för linjediagram ![diagramikon](./media/mobile-apps-ios-qna/power-bi-ios-q-n-a-line-chart-icon.png) i listan med förslag > **Skicka** ![ikonen Skicka](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
 
-    ![](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-top-sale-as-line.png)
+    ![Skärmbild av ett kolumndiagram och ett linjediagram med pekare från kolumn- till linjediagrammet](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-top-sale-as-line.png)
 
 ## <a name="try-saying-your-questions"></a>Försök att säga dina frågor
 Du kan nu ställa frågor om dina data i mobilappen för Power BI genom att tala i stället för att skriva.
 
 1. Peka på ikonen för Frågor och svar ![Ikonen för Frågor och svar](././media/mobile-apps-ios-qna/power-bi-ios-q-n-a-icon.png) från åtgärdsmenyn längst ner på sidan (överst på sidan om du använder en iPad).
-2. Tryck på mikrofonikonen ![](media/mobile-apps-ios-qna/power-bi-ios-qna-mic-icon.png).
+2. Tryck på mikrofonikonen ![mikrofonikon](media/mobile-apps-ios-qna/power-bi-ios-qna-mic-icon.png).
 
-    ![](media/mobile-apps-ios-qna/power-bi-ios-qna-mic-on.png)
+    ![Skärmbild av en fråga som visar att mikrofonen är aktiv.](media/mobile-apps-ios-qna/power-bi-ios-qna-mic-on.png)
 
-1. Börja tala när mikrofonikonen är aktiv. Säg till exempel ”genomsnittligt enhetspris efter tid” och tryck på **Skicka** ![](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
+1. Börja tala när mikrofonikonen är aktiv. Säg till exempel ”genomsnittligt enhetspris efter tid” och tryck på **Skicka** ![ikonen Skicka](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
 
-    ![](media/mobile-apps-ios-qna/power-bi-ios-qna-speech-complete.png)
+    ![Skärmbild av en fråga som visar att talet är slutfört.](media/mobile-apps-ios-qna/power-bi-ios-qna-speech-complete.png)
 
 ### <a name="questions-about-privacy-when-using-speech-to-text"></a>Frågor om sekretess när du använder tal till text?
 Se avsnittet taligenkänning i [Vad är nytt i iOS](https://go.microsoft.com/fwlink/?linkid=845624) i Apple iOS guider för utvecklare.
@@ -91,7 +91,7 @@ Se avsnittet taligenkänning i [Vad är nytt i iOS](https://go.microsoft.com/fwl
 * Behöver du hjälp? Säga bara ”Hej” eller ”Hjälp” så får du hjälp med att starta en ny fråga.
 * Vill du ge feedback om resultaten? Tryck länge på ett diagram eller något annat resultat och peka sedan på det glada eller bistra ansiktet.
 
-    ![](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-tap-feedback.png)
+    ![Skärmbild av ett kolumndiagram som visar feedback med en pekare till ett leende ansikte.](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-tap-feedback.png)
 
     Din feedback är anonym och hjälper oss att förbättra våra svar på frågor.
 

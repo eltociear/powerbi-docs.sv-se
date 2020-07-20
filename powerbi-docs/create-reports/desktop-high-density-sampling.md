@@ -9,17 +9,17 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 344b041b8cca3e6ed4be1f40c0e783df18315679
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: a41af59873aa8e0504e7ee808a2e87dba1af1121
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83324642"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86262873"
 ---
 # <a name="high-density-line-sampling-in-power-bi"></a>Högdensitetssampling av linjer i Power BI
 Från och med juni 2017-versionen av **Power BI Desktop** och uppdateringar av **Power BI-tjänsten** finns en ny samplingsalgoritm tillgänglig som förbättrar visuella objekt som samplar högdensitetsdata. Du kan till exempel skapa ett linjediagram från din återförsäljares försäljningsresultat för varje butik som har mer än tiotusen försäljningskvitton varje år. Ett linjediagram med sådan försäljningsinformation skulle sampla data (välja en meningsfull återgivning av dessa data som illustrerar hur försäljningen varierar över tid) från data för varje butik samt skapa ett linjediagram med flera serier som därmed representerar underliggande data. Detta är vanligt vid visualisering av högdensitetsdata. Power BI Desktop har förbättrat sin sampling av högdensitetsdata, vilket beskrivs i den här artikeln.
 
-![](media/desktop-high-density-sampling/high-density-sampling_01.png)
+![Skärmbild av linjediagram som visar samplingsdata med hög densitet.](media/desktop-high-density-sampling/high-density-sampling_01.png)
 
 > [!NOTE]
 > Algoritmen för **högdensitetssampling** som beskrivs i den här artikeln är tillgänglig i både **Power BI Desktop** och **Power BI-tjänsten**.
@@ -77,7 +77,7 @@ Detta sker ofta i knappbeskrivningar. Höga och låga värden för en viss lager
 ## <a name="how-to-turn-on-high-density-line-sampling"></a>Så aktiverar du högdensitetssampling av linjer
 Den nya algoritmen är som standard **På**. Du kan ändra den här inställningen genom att gå till fönstret **Formatering**. Längst ned på kortet **Allmänt** finns ett skjutreglage med namnet **Högdensitetssampling**. Om du vill inaktivera den drar du reglaget till **Av**.
 
-![](media/desktop-high-density-sampling/high-density-sampling_02.png)
+![Skärmbild av en linjesampling med hög densitet och pekare till formateringsfönstret, Allmänt och Högdensitetssampling.](media/desktop-high-density-sampling/high-density-sampling_02.png)
 
 ## <a name="considerations-and-limitations"></a>Överväganden och begränsningar
 Den nya algoritmen för högdensitetssampling av linjer är en viktig förbättring i Power BI, men det finns några saker du behöver veta när du arbetar med högdensitetsvärden och data.

@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 11/14/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: bcd5713b2ee7f053448718bc5dd93c24b0d53de6
-ms.sourcegitcommit: 2cb249fc855e369eed1518924fbf026d5ee07eb1
+ms.openlocfilehash: ca6ce7bde592c1153b0a553a906391c3a2c7d5be
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83813886"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216639"
 ---
 # <a name="basic-concepts-for-designers-in-the-power-bi-service"></a>Grundläggande begrepp för designers i Power BI-tjänsten
 
@@ -24,7 +24,7 @@ Syftet med den här artikeln är att ge en översikt över Power BI-tjänsten: t
 
 Om du inte ännu har egna rapporter kan du prova att installera ett [exempel för Power BI](../create-reports/sample-datasets.md).
 
-![Power BI-tjänstens startskärm i en webbläsare](media/service-basic-concepts/power-bi-home-screen.png)
+![Skärmbild av startskärmen i Power BI-tjänsten i en webbläsare med numrerade områden nedanför.](media/service-basic-concepts/power-bi-home-screen.png)
 
 När du öppnar Power BI-tjänsten i en webbläsare kommer du till din startskärm. De olika delarna i vyn är följande:
 
@@ -57,7 +57,8 @@ Arbetsytor skapas i kapaciteter. De är i princip containrar för instrumentpane
 
 Det finns två typer av arbetsytor: *Min arbetsyta* och *arbetsytor*.
 
-- *Min arbetsyta* är en personlig arbetsyta där vilken Power BI-kund som helst kan arbeta med sitt eget innehåll. Bara du har åtkomst till Min arbetsyta. Du kan dela instrumentpaneler och rapporter från Min arbetsyta. Om du vill samarbeta på instrumentpaneler och i rapporter, eller skapa en app, så vill du använda en arbetsyta.      
+- *Min arbetsyta* är en personlig arbetsyta där vilken Power BI-kund som helst kan arbeta med sitt eget innehåll. Bara du har åtkomst till Min arbetsyta. Du kan dela instrumentpaneler och rapporter från Min arbetsyta. Om du vill samarbeta på instrumentpaneler och i rapporter, eller skapa en app, så vill du använda en arbetsyta.
+
 -  *Arbetsytor* används till att samarbeta och dela innehåll med kollegor. Du kan lägga till kollegor på dina arbetsytor och samarbeta kring instrumentpaneler, rapporter, arbetsböcker och datamängder. Med ett undantag behöver alla arbetsytans medlemmar en Power BI Pro-licens. Läs mer om [de nya arbetsytorna](../collaborate-share/service-create-the-new-workspaces.md). 
 
     Arbetsytor är också där du skapar, publicerar och hanterar *appar* för din organisation. Du kan se arbetsytor som mellanlagringsområden och containrar för det innehåll som ska utgöra en Power BI-app. Så, vad är en *app*? En app är en samling av instrumentpaneler och rapporter som skapats för att leverera viktiga mått för Power BI-användarna i din organisation. Appar är interaktiva men användarna kan inte redigera dem. Appkonsumenterna, de kollegor som har tillgång till apparna, behöver inte nödvändigtvis Pro-licenser.  
@@ -80,7 +81,7 @@ Datauppsättningar är associerade med *arbetsytor* och en enskild datauppsättn
 
 I exemplet nedan har jag markerat arbetsytan ”Sales and marketing” och klickat på fliken **Datamängder**.
 
-![Datamängder har valts](media/service-basic-concepts/power-bi-datasets.png)
+![Skärmbild av Power BI med en exempelarbetsyta och Datamängder valt.](media/service-basic-concepts/power-bi-datasets.png)
 
 **EN** datauppsättning ...
 
@@ -88,7 +89,7 @@ I exemplet nedan har jag markerat arbetsytan ”Sales and marketing” och klick
 * kan användas i olika rapporter.
 * Visualiseringar från denna enda datauppsättning kan visas på många olika instrumentpaneler.
 
-  ![Diagram för datamängd](media/service-basic-concepts/drawing2.png)
+  ![Diagram som visar relationen mellan en datamängd och en rapport samt en instrumentpanel.](media/service-basic-concepts/drawing2.png)
 
 Om du vill [ansluta till eller importera en datauppsättning](../connect-data/service-get-data.md) väljer du **Hämta data** längst ned i navigeringsfönstret. Följ instruktionerna för att ansluta till eller importera den specifika källan och lägga till datauppsättningen till den aktiva arbetsytan. Nya datauppsättningar markeras med en gul asterisk. Ditt arbete i Power BI ändrar inte den underliggande datamängden.
 
@@ -108,7 +109,7 @@ Nu går vi vidare till nästa avsnitt – rapporter.
 ## <a name="reports"></a>Rapporter
 En Power BI-rapport är en eller flera sidor med visualiseringar som linjediagram, kartor och trädkartor. Visualiseringar kallas även **_visuella objekt_**. Alla visualiseringar i en rapport kommer från en enda datauppsättning. Du kan skapa rapporter från grunden i Power BI eller importera dem med instrumentpaneler som kollegor delar med dig. Alternativt kan Power BI skapa dem när du ansluter till datamängder från Excel, Power BI Desktop, databaser och SaaS-program.  När du ansluter till en Excel-arbetsbok med Power View-blad, skapar Power BI en rapport baserad på dessa blad. Och när du ansluter till ett SaaS-program, importerar Power BI en förskapad rapport.
 
-Det finns två lägen för att visa och interagera med rapporter: *Läsvyn* och *redigeringsvyn*. När du öppnar en rapport öppnas den i läsvyn. Om du har redigeringsbehörigheter visas **Redigera rapport** i det övre vänstra hörnet, och du kan visa rapporten i redigeringsvyn.  Om en rapport finns på en arbetsyta kan alla med rollen *administratör*, *medlem* eller *deltagare* redigera den. De har tillgång till alla funktioner i redigeringsvyn för att utforska, designa, skapa och dela för den rapporten. De personer som de delar rapporten med kan utforska och interagera med rapporten i läsvyn.   
+Det finns två lägen för att visa och interagera med rapporter: *Läsvyn* och *redigeringsvyn*. När du öppnar en rapport öppnas den i läsvyn. Om du har redigeringsbehörigheter visas **Redigera rapport** i det övre vänstra hörnet, och du kan visa rapporten i redigeringsvyn.  Om en rapport finns på en arbetsyta kan alla med rollen *administratör*, *medlem* eller *deltagare* redigera den. De har tillgång till alla funktioner i redigeringsvyn för att utforska, designa, skapa och dela för den rapporten. De personer som de delar rapporten med kan utforska och interagera med rapporten i läsvyn.
 
 När du öppnar en arbetsyta, visas de associerade rapporterna under fliken **Rapporter**. Varje listad rapport representerar en eller flera sidor med visualiseringar baserade på endast en av de underliggande datauppsättningarna. Om du vill öppna en rapport markerar du den.
 
@@ -118,7 +119,7 @@ Som standard öppnas rapporten i Läsvy.  Du behöver bara välja **Redigera rap
 
 I exemplet nedan markerade jag arbetsytan ”Sales and marketing” och klickade på fliken **Rapporter**.
 
-![Valda rapporter](media/service-basic-concepts/power-bi-reports.png)
+![Skärmbild av Power BI med en exempelarbetsyta och Rapporter valt.](media/service-basic-concepts/power-bi-reports.png)
 
 **EN** rapport ...
 
@@ -126,7 +127,7 @@ I exemplet nedan markerade jag arbetsytan ”Sales and marketing” och klickade
 * kan associeras med flera instrumentpaneler på den arbetsytan. Paneler som fästs från den rapporten kan visas på flera instrumentpaneler.
 * kan skapas med hjälp av data från en datauppsättning. Power BI Desktop kan kombinera fler än en datakälla till en enskild datamängd i en rapport, och den rapporten kan importeras till Power BI.
 
-  ![Rapportdiagram](media/service-basic-concepts/drawing3new.png)
+  ![Diagram som visar relationen mellan en rapport och en datamängd samt en instrumentpanel.](media/service-basic-concepts/drawing3new.png)
 
 ### <a name="dig-deeper"></a>Gå djupare
 - [Skapa en rapport i Power BI-tjänsten genom att importera en datamängd](../create-reports/service-report-create-new.md)
@@ -154,7 +155,7 @@ Det finns många olika sätt som du eller en kollega kan [dela en instrumentpane
 * kan visa visualiseringar från många olika rapporter
 * kan visa visualiseringar som fästs från andra verktyg (t.ex. Excel)
 
-  ![Markerad instrumentpanel](media/service-basic-concepts/drawing1.png)
+  ![Diagram som visar relationer mellan en instrumentpanel och en datamängd samt en rapport.](media/service-basic-concepts/drawing1.png)
 
 ### <a name="dig-deeper"></a>Gå djupare
 * [Skapa en tom instrumentpanel och hämta sedan data](../create-reports/service-dashboard-create.md).
@@ -177,15 +178,15 @@ Du kan inte redigera din arbetsbok i Power BI. Men om du behöver göra några �
 ## <a name="a-dashboard-in-my-workspace"></a>En instrumentpanel i Min arbetsyta
 Vi har gått igenom arbetsytor och byggstenar. Nu sammanför vi det och granskar delarna som utgör instrumentpanelfunktionerna i Power BI-tjänsten.
 
-![Power BI-tjänsten i en webbläsare](media/service-basic-concepts/completenewest.png)
+![Skärmbild av Power BI-tjänsten i en webbläsare och numrerade funktioner nedanför.](media/service-basic-concepts/completenewest.png)
 
 ### <a name="1-navigation-pane"></a>1. **Navigeringsfönster**
 Du använder navigeringsfönstret för att leta upp och flytta mellan arbetsytorna och Power BI-byggstenarna: instrumentpaneler, rapporter, arbetsböcker och datauppsättningar.  
 
-  ![Navigeringsfönster](media/service-basic-concepts/power-bi-navigation.png)
+  ![Skärmbild av Power BI-tjänsten och navigeringsfönstret.](media/service-basic-concepts/power-bi-navigation.png)
 
 * Välj **Hämta data** för att [lägga till datauppsättningar, rapporter och instrumentpaneler i Power BI](../connect-data/service-get-data.md).
-* Visa och dölj navigeringsfönstret med den här ikonen ![ikon för navigeringsfönster](media/service-basic-concepts/expand-icon.png).
+* Visa och dölj navigeringsfönstret med den här ikonen ![Skärmbild av Power BI-tjänsten och ikonen för navigeringsfönstret.](media/service-basic-concepts/expand-icon.png).
 * Öppna eller hantera ditt favoritinnehåll genom att välja **Favoriter**.
 * Visa och öppna ditt senast besökta innehåll genom att välja **Senaste**.
 * Visa, öppna eller ta bort en app genom att välja **Appar**.
@@ -203,7 +204,7 @@ Eftersom vi har öppnat en instrumentpanel, visas visualiseringspaneler på arbe
 
 Instrumentpaneler består av [paneler](../create-reports/service-dashboard-tiles.md).  Paneler skapas i rapportens redigeringsvy, Frågor och svar och andra instrumentpaneler och kan fästas från Excel, SSRS och andra platser. En särskild typ av panel som kallas en [widget](../create-reports/service-dashboard-add-widget.md) läggs till direkt på instrumentpanelen. Panelerna som visas på en instrumentpanel har särskilt placerats där av en rapportskapare/-ägare.  Att lägga till en panel på en instrumentpanel kallas *fästning*.
 
-![Arbetsyta för Power BI-instrumentpanel](media/service-basic-concepts/canvas.png)
+![Skärmbild av Power BI-tjänsten och ritytan för instrumentpanelen.](media/service-basic-concepts/canvas.png)
 
 Mer information finns i [Instrumentpaneler](#dashboards) (ovan).
 
@@ -212,36 +213,36 @@ Ett sätt att utforska dina data är att ställa en fråga och låta Power BI:s 
 
 Frågor och svar letar efter svar i den datauppsättning(ar) som är ansluten på instrumentpanelen.  En ansluten datauppsättning är en som har minst en panel fäst på instrumentpanelen.
 
-![ruta för frågor och svar](media/service-basic-concepts/power-bi-qna.png)
+![Skärmbild av Power BI-tjänsten och frågerutan Frågor och svar.](media/service-basic-concepts/power-bi-qna.png)
 
 När du börjar skriva en fråga, leder frågor och svar dig till sidan för frågor och svar. När du skriver hjälper frågor och svar dig att ställa rätt fråga och hitta det bästa svaret med omformuleringar, autofyll, förslag med mera. När du har en visualisering (ett svar) som du är nöjd med, fäster du den på instrumentpanelen. Mer information finns i [Frågor och svar i Power BI](../consumer/end-user-q-and-a.md).
 
 ### <a name="4-icons-in-the-black-header-bar"></a>4. **Ikoner i det svarta rubrikfältet**
 Ikonerna i det övre högra hörnet är dina resurser för inställningar, meddelanden, nedladdningar, få hjälp, aktivera och inaktivera **Nytt utseende**, samt ge feedback till Power BI-teamet.  
 
-![ikonknappar](media/service-basic-concepts/power-bi-icons.png)
+![Skärmbild av Power BI-tjänsten med ikonknapparna.](media/service-basic-concepts/power-bi-icons.png)
 
 ### <a name="5-dashboard-title-navigation-path-or-breadcrumbs"></a>5. **Instrumentpanelsrubrik** (navigeringssökväg, även kallat synlig sökväg)
 Det är inte alltid lätt att klura ut vilken arbetsyta och instrumentpanel som är aktiv, så Power BI skapar en navigeringssökväg för dig.  I det här exemplet visas arbetsytan (Min arbetsyta) och instrumentpanelsrubriken (Exempel på detaljhandelsanalys).  Om vi öppnar en rapport, läggs rapportens namn till i slutet av navigeringssökvägen.  Varje del av sökvägen är en aktiv hyperlänk.  
 
 Lägg märke till ”C”-ikonen efter instrumentpanelsrubriken. Den här instrumentpanelen har [dataklassificeringstaggen](../create-reports/service-data-classification.md) ”konfidentiellt”. Taggen identifierar aktuella datas känslighet och säkerhetsnivå. Om din administratör har aktiverat dataklassificering ställs en standardtagg in för alla instrumentpaneler. Instrumentpanelsägare bör ändra taggen så att den matchar instrumentpanelens korrekta skyddsnivå.
 
-![Ikon för dataklassificering](media/service-basic-concepts/power-bi-title.png)
+![Skärmbild av Power BI-tjänsten med ikonen Dataklassificering.](media/service-basic-concepts/power-bi-title.png)
 
 ### <a name="6-microsoft-365-app-launcher"></a>6. **Microsoft 365-appstartprogram**
 Med appstartprogrammet är alla dina Microsoft 365-appar enkelt tillgängliga med ett enda klick. Härifrån kan du snabbt starta din e-post, dina dokument, din kalender och annat.
 
-![Office-appstartprogram](media/service-basic-concepts/power-bi-waffle.png)
+![Skärmbild av Power BI-tjänsten och startfunktionen för Office-appar.](media/service-basic-concepts/power-bi-waffle.png)
 
 ### <a name="7-power-bi-home"></a>7. **Startsida för Power BI**
 När du väljer **Power BI** kommer du tillbaka till din startsida i Power BI.
 
-   ![”Power BI” i tjänsten](media/service-basic-concepts/version-new.png)
+   ![Skärmbild av Power BI-tjänsten med ikonen för att återgå till startsidan för Power BI.](media/service-basic-concepts/version-new.png)
 
 ### <a name="8-labeled-icons-in-the-gray-menu-bar"></a>8. **Etiketterade ikoner i den grå menyraden**
 Det här området på skärmen innehåller ytterligare alternativ för att interagera med innehållet (i det här fallet med instrumentpanelen).  Förutom de etiketterade ikonerna kan du välja **Fler alternativ (...)** . Då visas alternativ för att bland annat duplicera, skriva ut och uppdatera instrumentpanelen.
 
-   ![Märkta ikonknappar](media/service-basic-concepts/power-bi-labeled-icons.png)
+   ![Skärmbild av Power BI-tjänsten och ikoner med etiketter.](media/service-basic-concepts/power-bi-labeled-icons.png)
 
 ## <a name="next-steps"></a>Nästa steg
 - [Vad är Power BI?](power-bi-overview.md)  

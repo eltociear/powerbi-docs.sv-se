@@ -10,12 +10,12 @@ ms.date: 06/24/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: e050fd4ec3e533c07ecfd0f0604092bec7fc00b5
-ms.sourcegitcommit: a453ba52aafa012896f665660df7df7bc117ade5
+ms.openlocfilehash: 276770b677d85e0e125e7dd87bb0a800248d71c2
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85484942"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86161483"
 ---
 # <a name="licensing-the-power-bi-service-for-users-in-your-organization"></a>Licensiera tjänsten Power BI för användare i din organisation
 
@@ -57,7 +57,7 @@ Genom att inaktivera självanmälan så kan användare inte utforska Power BI f�
 1. Ange antalet licenser som behövs för att omfatta alla dina användare.
 1. Välj **Tilldela automatiskt till alla dina användare utan licenser** och checka ut.
 
-  ![Power BI-kostnadsfri automatiskt tilldelad prenumeration](media/service-admin-licensing-organization/m365-auto-assign.png) 
+  ![Skärmbild av kostnadsfri och automatiskt tilldelad prenumeration i Power BI med egen registrering.](media/service-admin-licensing-organization/m365-auto-assign.png)
 
 Om du vill se vilka användare i din organisation som kanske redan har en licens kan du läsa [Visa och hantera användarlicenser](service-admin-manage-licenses.md) för att lära dig hur det går till.
 

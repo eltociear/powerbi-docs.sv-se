@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 01/29/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: a043e230ba74432254248ee70db495bc75a3d28b
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 3038463a9e3447ee9b38ae3cb178f3486d21bc80
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85232503"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86215107"
 ---
 # <a name="get-power-bi-desktop"></a>Hämta Power BI Desktop
 Med Power BI Desktop kan du skapa avancerade frågor, modeller och rapporter som visualiserar data. Med Power BI Desktop kan du bygga datamodeller, skapa rapporter och dela ditt arbete genom att publicera till Power BI-tjänsten. Power BI Desktop är en kostnadsfri nedladdning.
@@ -35,13 +35,13 @@ Det finns några sätt att skaffa den senaste versionen av Power BI Desktop frå
 
     - Från [Power BI-tjänsten](https://docs.microsoft.com/power-bi/service-get-started) väljer du ikonen **Ladda ned** i det övre högra hörnet och väljer sedan **Power BI Desktop**.
 
-      ![Ladda ned Power BI Desktop från Power BI-tjänsten](media/desktop-get-the-desktop/getpbid_downloads.png)
+      ![Skärmbild av Microsoft Store och alternativet för att ladda ned Power BI Desktop.](media/desktop-get-the-desktop/getpbid_downloads.png)
 
    - Gå till [Power BI Desktop-produktsidan](https://powerbi.microsoft.com/desktop/) och välj sedan **Ladda ned kostnadsfritt**.
   
 2. När du har kommit till **Power BI Desktop-sidan** i Microsoft Store väljer du **Installera**.
 
-     ![Hämta Power BI Desktop från Microsoft Store](media/desktop-get-the-desktop/getpbid_04.png)
+     ![Skärmbild av Microsoft Store och alternativet för att installera Power BI Desktop.](media/desktop-get-the-desktop/getpbid_04.png)
 
 Det finns några fördelar med att hämta Power BI Desktop från Microsoft Store:
 
@@ -66,7 +66,7 @@ Följande överväganden och begränsningar gäller när du installerar Power BI
   
   Om du vill ladda ned den körbara Power BI Desktop-filen från Download Center väljer du **Ladda ned** på [Download Center-sidan](https://www.microsoft.com/download/details.aspx?id=58494). Ange sedan en 32-bitars eller 64-bitars installationsfil som ska laddas ned.
 
-  ![Ange installationsfilen för Power BI Desktop](media/desktop-get-the-desktop/download-desktop-exe.png)
+  ![Skärm bild av Nedladdningscenter och kryssrutan för nedladdning av 64-bitarsversionen av Power BI Desktop.](media/desktop-get-the-desktop/download-desktop-exe.png)
 
 ### <a name="install-power-bi-desktop-after-downloading-it"></a>Installera Power BI Desktop när det har laddats ned
 Du uppmanas att köra installationsfilen när nedladdningen är klar.
@@ -75,7 +75,7 @@ Från och med juli 2019-versionen levereras Power BI Desktop som ett enda .exe-i
 
 När du startar installationspaketet installeras Power BI Desktop som ett program och körs på skrivbordet.
 
-![Köra installationen av Power BI Desktop](media/desktop-get-the-desktop/designer_gsg_install.png)
+![Skärmbild av Power BI Desktop-installationen och installationsguiden.](media/desktop-get-the-desktop/designer_gsg_install.png)
 
 > [!NOTE]
 > Installation av den nedladdade versionen (MSI, inaktuell) och Microsoft Store-versionen av Power BI Desktop på samma dator (kallas ibland en *sida-vid-sida*-installation) stöds inte. Avinstallera Power BI Desktop manuellt innan du laddar ned det från Microsoft Store.
@@ -84,7 +84,7 @@ När du startar installationspaketet installeras Power BI Desktop som ett progra
 ## <a name="using-power-bi-desktop"></a>Använd Power BI Desktop
 När du startar Power BI Desktop visas en välkomstskärm.
 
-![Välkomstskärmen för Power BI Desktop](media/desktop-get-the-desktop/getpbid_05.png)
+![Skärmbild av Power BI Desktop-installationen och välkomstskärmen.](media/desktop-get-the-desktop/getpbid_05.png)
 
 Om du använder Power BI Desktop för första gången (det vill säga att installationen inte är en uppgradering) uppmanas du att fylla i ett formulär eller logga in på Power BI-tjänsten innan du kan fortsätta.
 
@@ -141,7 +141,7 @@ Du kan till exempel köra Power BI Desktop med följande alternativ och parametr
 
 ### <a name="installing-power-bi-desktop-on-remote-machines"></a>Installera Power BI Desktop på fjärrdatorer
 
-Om du distribuerar Power BI Desktop till dina användare med ett verktyg som kräver en Windows Installer-fil (.msi-fil) kan du extrahera msi-filen från den körbara .exe-installationsfilen för Power BI Desktop. Använd ett verktyg från tredje part, till exempel WiX Toolset.
+Om du distribuerar Power BI Desktop till dina användare med ett verktyg som kräver en Windows-installationsfil (.msi-fil) kan du extrahera msi-filen från .exe-filen för Power BI Desktop-installationen. Använd ett verktyg från tredje part, till exempel WiX Toolset.
 
 > [!NOTE]
 > WiX verktygsalternativ kan ändras utan föregående meddelande, eftersom detta är en produkt från tredje part. Läs deras senaste dokumentation och kontakta deras e-postlista om du behöver hjälp.

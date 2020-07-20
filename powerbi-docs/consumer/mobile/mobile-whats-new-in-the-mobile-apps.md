@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/24/2020
+ms.date: 07/08/2020
 ms.author: painbar
-ms.openlocfilehash: 9655783decee99bc90071cdfbd66a8b58d8272f4
-ms.sourcegitcommit: e8b12d97076c1387088841c3404eb7478be9155c
+ms.openlocfilehash: 2a8186f24e7a82604ab941e25c2a5aa471efe614
+ms.sourcegitcommit: d8acf2fb0318708a3e8e1e259cb3747b0312b312
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85782584"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386008"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nyheter i Power BI-mobilapparna
 Relaterad information om nyheter finns i:
@@ -24,6 +24,13 @@ Relaterad information om nyheter finns i:
 
 >[!NOTE]
 >Stöd för Power BI-mobilappen för **telefoner som använder Windows 10 Mobile** kommer att upphöra den 16 mars 2021. [Läs mer](https://go.microsoft.com/fwlink/?linkid=2121400)
+
+## <a name="july-2020"></a>Juli 2020
+### <a name="the-power-bi-mobile-app-for-windows-now-supports-organizational-branding"></a>Power BI-mobilappen för Windows har nu stöd för organisationens varumärkesprofiler
+Alla ändringar som administratören för att anpassa Power BI efter organisationens varumärkesteman visas även i Power BI-mobilappen. Sådana ändringar kan vara ett nytt färgschema för det övre navigeringsfältet, organisationens logotyp och en banderoll.  
+
+### <a name="disable-single-sign-on-via-remote-configuration-ios-and-android"></a>Avaktivera enkel inloggning via fjärrkonfiguration (iOS och Android)
+IT-administratörer kan nu avaktivera enkel inloggning i Power BI-mobilappen via fjärrkonfiguration vilket ökar säkerheten och efterlevnaden av behörigheter på enheter med flera användare. [Läs mer!](mobile-app-configuration.md#disable-single-sign-on-ios-and-android)
 
 ## <a name="june-2020"></a>Juni 2020
 ### <a name="show-your-bookmarks-in-slideshows-windows"></a>Visa bokmärken i bildspel (Windows)
@@ -860,15 +867,15 @@ Mer information finns i [blogginlägget om Power BI-mobilappar för mitten av ok
 * Linjediagram med en procentandelsbaserad y-axel beräknar nu det visuella objektets intervall enligt dina faktiska data. Grafen startar nu från den lägsta datapunkten i diagrammet, i stället för från ett standardvärde.
 * Linje-, kolumn- och stapeldiagram kan nu förses med dataetiketter. 
   
-    ![](media/mobile-whats-new-in-the-mobile-apps/pbi_mobilelinechart.png)
+    ![Skärmbild av ett linjediagram som visar VTB-procenten per månad med dataetiketter. ](media/mobile-whats-new-in-the-mobile-apps/pbi_mobilelinechart.png)
 
 #### <a name="iphone"></a>iPhone
 * Håll dig uppdaterad om dina gruppers senaste instrumentpaneler – få ett meddelande på din iPhone varje gång en gruppmedlem lägger till en instrumentpanel i en av dina grupper.
   
-    ![](media/mobile-whats-new-in-the-mobile-apps/pbi_iph_grpdashalertcrop.png)
+    ![Skärmbild av en instrumentpanel, som visar ett meddelande på en iPhone.](media/mobile-whats-new-in-the-mobile-apps/pbi_iph_grpdashalertcrop.png)
 * Du kan nu visa instrumentpaneler vågrätt, genom att bara vrida på telefonen. Läs mer om [liggande läge i iPhone-appen](https://powerbi.microsoft.com/blog/enjoy-the-landscape-with-the-power-bi-iphone-app/).
   
-    ![](media/mobile-whats-new-in-the-mobile-apps/pbi_iph_landscape.png)
+    ![Skärmbild av en instrumentpanel i liggande läge på en iPhone.](media/mobile-whats-new-in-the-mobile-apps/pbi_iph_landscape.png)
 
 ### <a name="september-2015"></a>September 2015
 Förbättringar i Power BI-mobilapparna – Android, iOS (iPhone och iPad) och Windows. Mer information finns i [blogginlägget om Power BI-mobilappar för mitten av september](https://powerbi.microsoft.com/blog/power-bi-mobile-mid-september-updates-are-here/).

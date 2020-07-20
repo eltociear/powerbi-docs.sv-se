@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/30/2019
 ms.author: v-pemyer
-ms.openlocfilehash: b195e0bc11068b819a2f3133ed9ae135e3c30ffb
-ms.sourcegitcommit: a453ba52aafa012896f665660df7df7bc117ade5
+ms.openlocfilehash: e1a24d8d15881bf8a1948d91758c7592f75ea7ac
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85485954"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86214202"
 ---
 # <a name="on-premises-data-gateway-sizing"></a>Dimensionering av lokal datagateway
 
@@ -33,7 +33,7 @@ Arbetsbelastningen _Cachelagrade data_ hämtar och transformerar källdata för 
 1. **Datahämtning och transformering**: Data hämtas och transformeras när så behövs. Närhelst det är möjligt skickar Power Query-kombinationsmotorn transformeringssteg till datakällan. Detta kallas _[frågedelegering](power-query-folding.md)_ . När det inte är möjligt måste transformeringarna göras av gatewayen. I det här fallet förbrukar gatewayen mer processor- och minnesresurser.
 1. **Överföring**: Data överförs till Power BI-tjänsten – en tillförlitlig och snabb Internet-anslutning är viktig, särskilt för stora datavolymer
 
-![Ett diagram visar den lokala datagatewayen som ansluter till lokala källor: relationsdatabas, Excel-arbetsbok och CSV-filer. Gatewayen hämtar och transformerar data.](media/gateway-onprem-sizing/gateway-onprem-workload-cached-data.png)
+![Diagram med cachedata som visar hur den lokala datagatewayen ansluter till lokala källor.](media/gateway-onprem-sizing/gateway-onprem-workload-cached-data.png)
 
 ### <a name="live-connection-and-directquery-workloads"></a>Live-anslutning och DirectQuery-arbetsbelastningar
 
@@ -46,7 +46,7 @@ Den här arbetsbelastningen kräver CPU-resurser för routning av frågor och fr
 
 En tillförlitlig, snabb och konsekvent anslutning är viktig för att säkerställa att rapportanvändarna får dynamiska upplevelser.
 
-![Ett diagram visar den lokala datagatewayen ansluta till lokala källor: Analysis Services-tabell- och relationsdatabas. Gatewayen fungerar huvudsakligen i genomgångsläge.](media/gateway-onprem-sizing/gateway-onprem-workload-liveconnection-directquery.png)
+![Diagram med Live-anslutning och DirectQuery som visar hur den lokala datagatewayen ansluter till lokala källor.](media/gateway-onprem-sizing/gateway-onprem-workload-liveconnection-directquery.png)
 
 ## <a name="sizing-considerations"></a>Överväganden för dimensionering
 

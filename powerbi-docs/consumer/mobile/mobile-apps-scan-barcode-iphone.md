@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 12/02/2019
 ms.author: painbar
-ms.openlocfilehash: 88b5c6c377588003a02f571c29ef8baef5540ae3
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 9265cc94aceb53b1b088f2393ca607c83f94b978
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85220228"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86264807"
 ---
 # <a name="scan-a-barcode-with-your-device-from-the-power-bi-mobile-app"></a>Skanna en streckkod med din enhet från Power BI-mobilappen
 Skanna streckkoder ute i världen och gå direkt till filtrerad BI-information i Power BI-mobilappen.
@@ -27,14 +27,14 @@ Gäller för:
 
 Anta att en kollega har [taggat ett streckkodsfält i en rapport i Power BI Desktop](../../transform-model/desktop-mobile-barcodes.md) och delat rapporten med dig. 
 
-![](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-scanner.png)
+![Skärmbild som visar skanning av streckkoden för en produkt, med skannern över streckkoden för en färgad dryck.](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-scanner.png)
 
 När du då skannar en produktstreckkod med skannern i Power BI-appen på din enhet, ser du rapporten (eller listan med rapporter) med den streckkoden. Du kan öppna rapporten, filtrerat till den streckkoden.
 
 ## <a name="scan-a-barcode-with-the-power-bi-scanner"></a>Skanna en streckkod med Power BI-skannern
 1. I navigeringsfältet trycker du på **Fler alternativ** (...) och sedan på **Skanner**.
 
-    ![](media/mobile-apps-scan-barcode-iphone/power-bi-scanner.png)
+    ![Skärmbild av Fler-alternativen i navigeringsfönstret och alternativet Skanner.](media/mobile-apps-scan-barcode-iphone/power-bi-scanner.png)
 
 2. Du måste godkänna Power BI-appen för att använda kameran om din kamera inte är aktiverad. Det här är ett engångsgodkännande. 
 4. Peka skannern på en streckkod på en produkt. Du får upp en lista över rapporter som är associerade med den streckkoden.
@@ -43,8 +43,8 @@ När du då skannar en produktstreckkod med skannern i Power BI-appen på din en
 ## <a name="filter-by-other-barcodes-while-in-a-report"></a>Filtrera efter andra streckkoder i en rapport
 När du tittar på en rapport som filtreras efter en streckkod på din enhet kanske du vill filtrera samma rapport efter en annan streckkod.
 
-* Om streckkodsikonen har ett filter ![](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-filtered-icon-black.png), är filtret aktivt och rapporten filtreras redan efter en streckkod. 
-* Om ikonen inte har ett filter ![](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-unfiltered-icon.png), är inte filtret aktivt och rapporten filtreras inte efter en streckkod. 
+* Om streckkodsikonen innehåller ett filter ![ikon med filter](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-filtered-icon-black.png)är filtret aktivt och rapporten filtreras redan efter en streckkod. 
+* Om ikonen inte innehåller något filter ![ikon utan filter](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-unfiltered-icon.png)är filtret inte aktivt och rapporten filtreras inte efter någon streckkod. 
 
 Oavsett vilket, trycker du på ikonen om du vill öppna en liten meny med en flytande skanner.
 

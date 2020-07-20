@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 08/05/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 2c92fb47f576b750aa4815b56fabece2b5bc1de5
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: 396c760a97911a35d7fdc0c608fc35de1cf6586d
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83565981"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216792"
 ---
 # <a name="data-reduction-techniques-for-import-modeling"></a>Metoder för dataminskning för importmodellering
 
@@ -84,7 +84,7 @@ Men i vissa fall kan modellberäknade kolumner vara det bästa valet. Detta kan 
 
 Power Query-frågor som avses stödja dataintegrering med andra frågor bör inte läsas in i modellen. För att undvika att läsa in frågan till modellen bör du se till att inaktivera frågebelastning i dessa fall.
 
-![Inaktivera inläsningen för en Power Query-fråga](media/import-modeling-data-reduction/power-query-disable-query-load.png)
+![Skärmbild av Power Query med alternativet Aktivera inläsning.](media/import-modeling-data-reduction/power-query-disable-query-load.png)
 
 ## <a name="disable-auto-datetime"></a>Inaktivera automatisk datum/tid
 

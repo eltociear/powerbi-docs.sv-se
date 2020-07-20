@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 11/22/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 2bb48ad44c1f1d440fb5741fc55cc4a83f315dc8
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 129b4a22e17b5eab03018efae113ff47133e9dda
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85237145"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86214160"
 ---
 # <a name="use-quick-measures-for-common-calculations"></a>Använd snabbmått för vanliga beräkningar
 Du kan använda *snabbmått* när du snabbt och enkelt vill utföra vanliga och kraftfulla beräkningar. Ett snabbmått kör en uppsättning kommandon för dataanalysuttryck (DAX) i bakgrunden och visar sedan de resultat som du kan använda i rapporten. Du behöver inte skriva DAX, det är klart baserat på det du skriver i en dialogruta. Det finns många tillgängliga kategorier för beräkningar och sätt att ändra varje beräkningen så att den passar dina behov. Det bästa kanske är att du kan se de DAX-kommandon som körs av snabbmåttet och komma igång med eller utöka dina egna DAX-kunskaper.
@@ -53,14 +53,14 @@ De fem måttberäkningstyperna, med deras beräkningar, är:
   * Summa hittills den här månaden
   * Ändring från år till år
   * Ändring från kvartal till kvartal
-  * Förändring månad för månad
+  * Ändring från månad till månad
   * Rullande medelvärde
 * **Summor**
   * Löpande summa
   * Summa för kategorin (filter applicerade)
   * Summan för kategorin (filter ej applicerade)
 * **Matematiska operationer**
-  * Addition
+  * Tillägg
   * Subtraktion
   * Multiplikation
   * Division
@@ -90,7 +90,7 @@ I fönstret **Snabbmått**, under **Beräkning**, väljer du **Genomsnitt per ka
 
 Dra **Genomsnittligt enhetspris** från fönstret **Fält** till fältet **Basvärde**. Lämna **Kategori** i fältet **Kategori** och välj **OK**. 
 
-![](media/desktop-quick-measures/quick-measures_06.png)
+![Skärmbild av Power BI Desktop med alternativet Filter i rutan Fält.](media/desktop-quick-measures/quick-measures_06.png)
 
 När du väljer **OK**sker flera intressanta saker.
 

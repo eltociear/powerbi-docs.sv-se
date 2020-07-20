@@ -10,18 +10,18 @@ ms.topic: conceptual
 ms.date: 08/12/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 87a30acce38966d0e044f4ed0b6691ccbc7acd3f
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 0be1f3aeb48e4596566c36c1ee8cfadeb3c33d10
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83349228"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86214032"
 ---
 # <a name="comparing-power-bi-desktop-and-the-power-bi-service"></a>Jämföra Power BI Desktop och Power BI-tjänsten
 
 I ett Venndiagram där Power BI Desktop och Power BI-tjänsten jämförs visar området i mitten hur de två överlappar. Vissa uppgifter kan du utföra i både Power BI Desktop och i tjänsten. De två sidorna i Venndiagrammet visar de funktioner som är unika för programmet respektive tjänsten.  
 
-![Venndiagram över Power BI Desktop och tjänsten](media/service-service-vs-desktop/power-bi-venn-desktop-service.png)
+![Venndiagram som visar relationen mellan Power BI Desktop och Power BI-tjänsten.](media/service-service-vs-desktop/power-bi-venn-desktop-service.png)
 
 **Power BI Desktop** är ett komplett verktyg för dataanalys och rapportskapande som du installerar kostnadsfritt på den lokala datorn. Det omfattar frågeredigeraren, där du kan ansluta till många olika datakällor och kombinera dem (detta kallas ofta modellering) till en datamodell. Sedan designar du en rapport baserat på den datamodellen. [Kom igång-guiden för Power BI Desktop](desktop-getting-started.md) går igenom processen.
 
@@ -33,7 +33,7 @@ De flesta rapportdesigners som arbetar i Business Intelligence-projekt använder
 
 I både programmet och tjänsten skapar du och redigerar *rapporter*. En rapport kan bestå av en eller flera sidor, med visuella objekt och samlingar med visuella objekt. Lägg till bokmärken, knappar, filter och detaljinformation för att förbättra navigeringen i rapporterna.
 
-![Redigera en rapport i Power BI Desktop eller i tjänsten](media/service-service-vs-desktop/power-bi-editing-desktop-service.png)
+![Skärmbilder av Power BI Desktop och Power BI-tjänsten med numrerade avsnitt.](media/service-service-vs-desktop/power-bi-editing-desktop-service.png)
 
 Rapportredigerarna i Power BI Desktop och i tjänsten liknar varandra. De består av tre avsnitt:  
 
