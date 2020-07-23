@@ -156,8 +156,6 @@
           items:
             - name: Hämta data från filer
               href: service-get-data-from-files.md
-            - name: Från Excel till fantastiska rapporter
-              href: service-from-excel-to-stunning-report.md
             - name: Hämta data från Excel-arbetsboksfiler
               href: service-excel-workbook-files.md
             - name: Hämta data från Power BI Desktop-filer
