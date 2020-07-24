@@ -11,6 +11,10 @@
     - name: Självstudier
       expanded: true
       items:
+        - name: 'Power BI Desktop: Från Excel till rapporter'
+          href: desktop-excel-stunning-report.md
+        - name: 'Power BI-tjänsten: Från Excel till rapporter'
+          href: service-from-excel-to-stunning-report.md
         - name: 'Nätbaserad kurs: Sidnumrerade rapporter'
           href: ../learning-catalog/paginated-reports-online-course.md
         - name: Skapa en sidnumrerad rapport och ladda upp den
