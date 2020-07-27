@@ -7,12 +7,12 @@ ms.topic: troubleshooting
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.date: 05/06/2020
-ms.openlocfilehash: e41a13fac3e0ffea5171d2927cc0f3b9debbeef1
-ms.sourcegitcommit: a453ba52aafa012896f665660df7df7bc117ade5
+ms.openlocfilehash: b911af4c7137aac9352c16985aac3a79a7eec87e
+ms.sourcegitcommit: 10c5b6cd5e7070f96de8a9f1d9b95f3d242ac7f2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85485885"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86557176"
 ---
 # <a name="deployment-pipelines-troubleshooting-preview"></a>Felsökning av distributionspipelines (förhandsversion)
 
@@ -110,7 +110,7 @@ Om distributionen tidigare lyckades och nu plötsligt misslyckas med brutna regl
 
 Datauppsättningsreglerna saknar värden. Detta kan inträffa om din datauppsättning har ändrats.
 
-![bruten regel](media/deployment-pipelines-troubleshooting/broken-rule.png)
+![En skärmbild av det ogiltiga regelfel som visas när en distribution misslyckats på grund av brutna länkar.](media/deployment-pipelines-troubleshooting/broken-rule.png)
 
 När en tidigare lyckad distribution misslyckas på grund av brutna länkar visas en varning. Du kan klicka på **Konfigurera regler** för att navigera till fönstret distributionsinställningar där den felaktiga datauppsättningen är markerad. När du klickar på datauppsättningen markeras de brutna reglerna.
 

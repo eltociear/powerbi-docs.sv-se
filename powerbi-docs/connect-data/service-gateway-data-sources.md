@@ -6,16 +6,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 02/21/2020
+ms.date: 07/16/2020
 ms.author: arthii
 ms.custom: seodec18
 LocalizationGroup: Gateways
-ms.openlocfilehash: 5e1b127bae83338264ac450438956e03a5ec24cb
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 7fecec5ed41f0de9227cf30ed3ba4f39b23f21e9
+ms.sourcegitcommit: cfcde5ff2421be35dc1efc9e71ce2013f55ec78f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85236648"
+ms.lasthandoff: 07/18/2020
+ms.locfileid: "86459564"
 ---
 # <a name="manage-data-sources"></a>Hantera datakällor
 
@@ -102,6 +102,9 @@ När du har lagt till en datakälla till en gateway ger du användarna och de e-
 
 Du kan även ge användare och säkerhetsgrupper administrativ åtkomst till gatewayen.
 
+> [!NOTE]
+> Användare med åtkomst till datakällan kan associera datamängder till datakällan och ansluta, baserat på vilket säkerhetsalternativ (lagrade autentiseringsuppgifter eller enkel inloggning) du valde när du skapade datakällan.
+
 ### <a name="add-users-to-a-data-source"></a>Lägga till användare till en datakälla
 
 1. Välj kugghjulsikonen ![Inställningar](media/service-gateway-data-sources/icon-gear.png) > **Hantera gatewayer** i det övre högra hörnet av Power BI-tjänsten.
@@ -141,4 +144,4 @@ Information om vilka datakällor som stöds av den lokala datagatewayen finns i 
 * [Hantera din datakälla – Import/schemalagd uppdatering](service-gateway-enterprise-manage-scheduled-refresh.md)
 * [Vägledning för distribution av en datagateway](service-gateway-deployment-guidance.md)
 
-Fler frågor? Testa [Power BI Community](https://community.powerbi.com/).
+Har du fler frågor? Testa [Power BI Community](https://community.powerbi.com/).

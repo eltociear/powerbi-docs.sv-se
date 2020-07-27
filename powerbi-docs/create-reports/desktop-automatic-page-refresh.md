@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 06/10/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 1febf93d35500d56f5b3b104487725f33d7b17ad
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 9a1e42b4901e8659bb5d999294f29a80a0389280
+ms.sourcegitcommit: 10c5b6cd5e7070f96de8a9f1d9b95f3d242ac7f2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85234172"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86557243"
 ---
 # <a name="automatic-page-refresh-in-power-bi-desktop"></a>Automatisk siduppdatering i Power BI Desktop 
 
@@ -147,6 +147,7 @@ Det finns några saker att tänka på när du använder automatisk siduppdaterin
 * Lagringslägena Import, LiveConnect och Push stöds inte av automatisk siduppdatering.  
 * Sammansatta modeller som har minst en DirectQuery-datakälla stöds.
 * Power BI Desktop har inga begränsningar vad gäller uppdateringsintervall. Intervallet kan vara så frekvent som varje sekund. När rapporter publiceras till Power BI-tjänsten gäller vissa begränsningar, vilket beskrevs [tidigare](#restrictions-on-refresh-intervals) i den här artikeln.
+* SharePoint Online-inbäddning stöder inte automatisk siduppdatering.
 
 ### <a name="performance-diagnostics"></a>Prestandadiagnostik
 

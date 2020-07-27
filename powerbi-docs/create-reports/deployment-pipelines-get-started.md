@@ -7,12 +7,12 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.date: 05/06/2020
-ms.openlocfilehash: 6e9ed3217a7ee589eaf1469ba179ef8c8bc474e9
-ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
+ms.openlocfilehash: 8ce11c0ac6a5098c49f4d8aba0b0a09f28be975b
+ms.sourcegitcommit: 10c5b6cd5e7070f96de8a9f1d9b95f3d242ac7f2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85354741"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86557266"
 ---
 # <a name="get-started-with-deployment-pipelines-preview"></a>Kom igång med distributionspipelines (förhandsversion)
 
@@ -31,7 +31,7 @@ Du kommer att kunna komma åt distributionspipelinen om följande villkor är up
 >[!NOTE]
 > Du kan också se knappen distributionspipeliner om du tidigare har skapat en pipeline eller om en pipeline har delats med dig.
 
-![Landningssida för distributionspipelines](media/deployment-pipelines-get-started/creating-pipeline.png)
+![En skärmbild av landningssida för distributionspipelines.](media/deployment-pipelines-get-started/creating-pipeline.png)
 
 ## <a name="step-1---create-a-deployment-pipeline"></a>Steg 1 – Skapa en distributionspipeline
 
@@ -84,7 +84,7 @@ Uppdatera datauppsättningen när distributionen är klar. Mer information finns
 
 Välj den fas du vill distribuera från och klicka på distributionsknappen. Distributionsprocessen skapar en duplicerad arbetsyta i målfasen. Den här arbetsytan innehåller allt befintligt innehåll i den aktuella fasen.
 
-[![distribuera](media/deployment-pipelines-get-started/deploy.png "Distribuera allt innehåll")](media/deployment-pipelines-get-started/deploy.png#lightbox)
+[![En skärmbild som visar distributionsknappen för utvecklings- och testfaserna i en distributionspipeline.](media/deployment-pipelines-get-started/deploy.png)](media/deployment-pipelines-get-started/deploy.png#lightbox)
 
 ### <a name="selective-deployment"></a>Selektiv distribution
 
@@ -92,7 +92,7 @@ Om du endast vill distribuera vissa objekt klickar du på länken **Visa fler** 
 
 Eftersom instrumentpaneler, rapporter och datauppsättningar är relaterade och har beroenden kan du använda knappen Välj relaterade för att kontrollera alla objekt som dessa objekt är beroende av. Om du till exempel vill distribuera en rapport till nästa fas kan du klicka på knappen Välj relaterad så markeras den datauppsättning som rapporten är ansluten till, så att båda ska distribueras samtidigt och rapporten inte bryts.
 
-[![selektiv distribution](media/deployment-pipelines-get-started/selective-deploy.png "Selektiv distribution")](media/deployment-pipelines-get-started/selective-deploy.png#lightbox)
+[![En skärmbild som visar alternativet för selektiv distribution i pipelines, vilket är tillgängligt när du har valt alternativet att visa mer.](media/deployment-pipelines-get-started/selective-deploy.png)](media/deployment-pipelines-get-started/selective-deploy.png#lightbox)
 
 >[!NOTE]
 > * Du kan inte distribuera en rapport eller instrumentpanel till nästa fas om objekten som den är beroende av inte finns i den fas som du distribuerar till.
@@ -104,7 +104,7 @@ Du kan välja att distribuera till ett tidigare stadium, till exempel i ett scen
 
 Distribution till en tidigare fas fungerar bara om den föregående fasen är tomt. När du distribuerar till föregående steg kan du inte välja vissa objekt. Allt innehåll i steget kommer att distribueras.
 
-[![omvänd distribution](media/deployment-pipelines-get-started/deploy-back.png "Omvänd distribution")](media/deployment-pipelines-get-started/deploy-back.png#lightbox)
+[![En skärmbild som visar knappen Distribuera till föregående steg, som är tillgänglig från test- och produktionsstegens menyer.](media/deployment-pipelines-get-started/deploy-back.png)](media/deployment-pipelines-get-started/deploy-back.png#lightbox)
 
 ## <a name="step-4---create-dataset-rules"></a>Steg 4 – skapa datauppsättningsregler
 
@@ -121,15 +121,15 @@ Datauppsättningsregler definieras på datakällor och parametrar i varje dataup
 
 1. I pipelinesteget som du vill skapa en datauppsättningsregel för klickar du på **Distributionsinställningar**.
 
-    ![distributionsinställningar](media/deployment-pipelines-get-started/deployment-settings.png)
+    ![En skärmbild av knappen för distributionsinställningar, vilken finns högst upp till höger i respektive distributionspipelinesteg.](media/deployment-pipelines-get-started/deployment-settings.png)
 
 2. I fönstret distributionsinställningar väljer du den datauppsättning som du vill skapa en regel för.
 
-    [![datauppsättningsregler](media/deployment-pipelines-get-started/dataset-rules.png "Skapa en datamängd")](media/deployment-pipelines-get-started/dataset-rules.png#lightbox)
+    [![En skärmbild som visar val av en datamängd vid skapande av en datamängdsregel.](media/deployment-pipelines-get-started/dataset-rules.png)](media/deployment-pipelines-get-started/dataset-rules.png#lightbox)
 
 3. Välj den typ av regel som du vill skapa, expandera listan och klicka på **Lägg till regel**.
 
-     [![lägg till regel](media/deployment-pipelines-get-started/add-rule.png "Lägga till en regel")](media/deployment-pipelines-get-started/add-rule.png#lightbox)
+     [![En skärmbild som visar hur du kan välja en datamängdsregel genom att klicka på alternativet för att lägga till regel.](media/deployment-pipelines-get-started/add-rule.png)](media/deployment-pipelines-get-started/add-rule.png#lightbox)
 
 ### <a name="dataset-rule-types"></a>Regeltyper för datauppsättningar
 
@@ -152,6 +152,8 @@ Det finns två typer av regler som du kan skapa:
 * När ett objekt tas bort raderas även dess regler. Det går inte att återställa dessa regler.
 
 * Om datakällan eller parametrarna som definierats i en regel ändras eller tas bort från källdatauppsättningen är regeln inte giltig och distributionen kommer att misslyckas.
+
+* Parameterregler kan inte definieras för parametrar som är av typen *Valfri* eller *Binär*. Mer information finns i [Parameterbegränsningar för datamängdsuppdatering](https://docs.microsoft.com/rest/api/power-bi/datasets/updateparameters).
 
 * Regler för datakällor kan bara definieras för följande datakällor:
     * Azure Analysis Services
@@ -180,7 +182,7 @@ Distributionstiden är användbar för att fastställa när en fas senast uppdat
 
 När två sekventiella faser har innehåll jämförs innehållet baserat på metadata för innehållsobjekten. Jämförelsen omfattar inte jämförelse av data eller uppdateringstid mellan faser.
 
- [![distributionsflöde](media/deployment-pipelines-get-started/deployment-flow.png "Jämföra faser")](media/deployment-pipelines-get-started/deployment-flow.png#lightbox)
+ [![En skärmbild som visar en distributionspipeline med dess jämförelseindikatorer.](media/deployment-pipelines-get-started/deployment-flow.png)](media/deployment-pipelines-get-started/deployment-flow.png#lightbox)
 
 För att få en snabb visuell insyn i skillnaderna mellan två sekventiella steg visas en jämförelseikon mellan dem. Jämförelseikonen har två tillstånd:
 
@@ -201,13 +203,13 @@ När två sekventiella steg inte är identiska visas en **jämförelselänk** un
     >[!NOTE]
     >Distributionen kommer inte att påverka *saknas från*-objekt.
 
- [![jämför](media/deployment-pipelines-get-started/compare.png "Jämför vy")](media/deployment-pipelines-get-started/compare.png#lightbox)
+ [![En skärmbild som visar jämförelsealternativet som utökar jämförelsevyn och tillåter jämförelse av objekt i olika faser i distributionspipelinen.](media/deployment-pipelines-get-started/compare.png)](media/deployment-pipelines-get-started/compare.png#lightbox)
 
 ## <a name="overriding-content"></a>Åsidosätta innehåll
 
 När du distribuerar efter att ha ändrat innehållet i källfasen skrivs det innehåll som du ändrade i målfasen över. När du klickar på *Distribuera*får du en varning om antalet objekt som skrivs över.
 
-![varning om ersatt innehåll](media/deployment-pipelines-get-started/replaced-content.png)
+![En skärmbild av varningen om ersatt innehåll som visas när en distribution är på väg att orsaka ändringar av objekt i den fas som du distribuerar till.](media/deployment-pipelines-get-started/replaced-content.png)
 
 Du kan lära dig mer om [vilka objekt som kopieras till nästa fas ](deployment-pipelines-process.md#deployed-items)och [vilka objekt som inte kopieras](deployment-pipelines-process.md#unsupported-items) i [Förstå distributionsprocessen](deployment-pipelines-process.md).
 

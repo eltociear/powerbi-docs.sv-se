@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 05/08/2019
+ms.date: 07/16/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: e68d860800f2265923189e470bc633589e612c11
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 785ad7b7d10a164f8257f8aacab177116c0b553b
+ms.sourcegitcommit: cfcde5ff2421be35dc1efc9e71ce2013f55ec78f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85224157"
+ms.lasthandoff: 07/18/2020
+ms.locfileid: "86459633"
 ---
 # <a name="connect-to-pdf-files-in-power-bi-desktop"></a>Ansluta till PDF-filer i Power BI Desktop
 I Power BI Desktop kan du ansluta till en **PDF-fil** och använda inkluderade data från filen precis som andra datakällor i Power BI Desktop.
@@ -39,6 +39,10 @@ Om du markerar en kryssruta bredvid de identifierade elementen i PDF-filen visas
 Från och med November 2018-versionen av **Power BI Desktop** så kan du ange **Start page** och **End page** som valfria parametrar för PDF-anslutningen. Du kan även ange dessa parametrar i M-formelspråket, med följande format:
 
 `Pdf.Tables(File.Contents("c:\sample.pdf"), [StartPage=10, EndPage=11])`
+
+## <a name="limitations-and-considerations"></a>Begränsningar och överväganden
+
+När du arbetar med PDF-anslutningsprogrammet för datamängder i en Premium-kapacitet, så gör inte PDF-anslutningsprogrammet anslutningen korrekt. Om du vill göra det möjligt för PDF-anslutningsprogrammet att arbeta med en datamängd i en Premium-kapacitet, så konfigurera datamängden så att den använder en gateway, och bekräfta att anslutningen till datamängden går via gatewayen.  
 
 
 ## <a name="next-steps"></a>Nästa steg

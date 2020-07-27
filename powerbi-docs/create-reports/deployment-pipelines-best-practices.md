@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.date: 05/06/2020
-ms.openlocfilehash: e76d820e804a19db148e0db4c2702e002ee2c017
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 4dd5698f91177733e150577490775eefb7e2f2ef
+ms.sourcegitcommit: 10c5b6cd5e7070f96de8a9f1d9b95f3d242ac7f2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83275925"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86557197"
 ---
 # <a name="deployment-pipelines-best-practices-preview"></a>Metodtips för distributionspipelines (förhandsversion)
 
@@ -140,7 +140,7 @@ Se till att dessa tre faktorer beaktas i testmiljön:
 
 När du testar kan du använda samma kapacitet som i produktionssteget. Detta kan dock göra produktionen instabil vid belastningstestning. För att undvika instabil produktion bör du använda en annan kapacitet som liknar resurser i produktionskapaciteten för testning. För att undvika extra kostnader kan du använda [Azure A-kapaciteter](../developer/embedded/azure-pbie-create-capacity.md) för att endast betala för testtiden.
 
-![metodtipsdiagram för distributionspipelines](media/deployment-pipelines-best-practices/deployment-pipelines-best-practices-diagram.png)
+![Ett diagram som visar en distributionspipeline med en testmiljö som simulerar en produktionsmiljö.](media/deployment-pipelines-best-practices/deployment-pipelines-best-practices-diagram.png)
 
 ### <a name="use-dataset-rules-with-a-real-life-data-source"></a>Använda datauppsättningsregler med en verklig datakälla
 

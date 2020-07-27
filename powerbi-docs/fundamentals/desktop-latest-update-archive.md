@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/10/2020
+ms.date: 07/15/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 5a8b2934c47d3bc85b1710927fefb814f027c035
-ms.sourcegitcommit: c006d7aabf90c7b29fb05641d1f94f1ee7132943
+ms.openlocfilehash: f0eef1441eb0bb87b6e7b85e791c47174c752bc7
+ms.sourcegitcommit: 11deeccf596e9bb8f22615276a152614f7579f35
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "84685270"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "86409431"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Tidigare månadsuppdateringar till Power BI Desktop
 
@@ -32,6 +32,94 @@ Länkarna bredvid varje uppdatering innebär följande:
 Du kan också se videon **Senaste uppdateringar** från början i den här artikeln, genom att klicka på ikonen **Spela upp** på videobilden nedanför listan med uppdateringar.
 
 Följande avsnitt beskriver tidigare månaders uppdateringar till **Power BI Desktop**.
+
+
+## <a name="june-2020-update-2825858301"></a>Uppdatering juni 2020 (2.82.5858.301)
+
+Vår juni-uppdatering av Power BI Desktop känns som en ny fräsch start med nya funktioner, allmänt tillgängliga funktioner, och många möjligheter att interagera i din värld av data. 
+
+Skaffa den senaste versionen av Power BI Desktop från [Download Center](https://www.microsoft.com/download/details.aspx?id=58494). Om du kör Windows 10 kan du även hämta Power BI Desktop från [Windows Store](https://aka.ms/pbidesktopstore). Oavsett hur du installerar Power BI Desktop är månadsversionerna desamma, men versionsnumreringen kan variera. Mer information om hur du laddar ned och installerar Power BI Desktop finns i [Hämta Power BI Desktop](desktop-get-the-desktop.md). 
+
+> [!IMPORTANT]
+> Från och med september 2019-versionen levereras Power BI Desktop endast som en enskild .exe-fil som innehåller alla språk med stöd. MSI-versionen släpps inte längre.
+
+
+Länkarna intill varje funktion i Power BI Desktop uppdateringslistan tolkas enligt följande:
+
+* \[blogg\]: De flesta funktioner beskrivs i ett avsnitt i månadsuppdateringens blogginlägg.
+* \[video\]: Vissa funktioner har ett videoutdrag som diskuterar funktionen, som spelas upp i en ny flik i webbläsaren.
+* \[artikel\]: Vissa funktioner har en artikel som innehåller mer information.
+* De återstående funktionerna är självförklarande och behöver varken artikel eller video.
+
+Du kan även titta på hela [videon om månadsuppdateringen av Power BI Desktop](#power-bi-desktop-monthly-update-video).
+
+Följande uppdateringar är nya för Power BI Desktop den här månaden:
+
+
+### <a name="reporting"></a>Rapportering
+* Förbättringar av redigering av mobil layout [[video]](https://youtu.be/WUo8TnHNHYM?t=15)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_mobile) 
+* Nu är automatisk siduppdatering allmänt tillgänglig [[video]](https://youtu.be/WUo8TnHNHYM?t=266)  [[artikel]](../create-reports/desktop-automatic-page-refresh.md)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_APR) 
+* Nu är hierarkiskt utsnitt allmänt tillgängligt [[video]](https://youtu.be/WUo8TnHNHYM?t=819)  [[artikel]](../create-reports/desktop-drill-through-buttons.md)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_Hierarchical_slicer) 
+* Nu är det moderna menyfliksområdet allmänt tillgängligt  [[video]](https://youtu.be/WUo8TnHNHYM?t=1057)  [[artikel]](../create-reports/desktop-ribbon.md)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_ribbon) 
+* RLS stöds nu för aktuella tabeller i datatypsgalleriet i Excel  [[video]](https://youtu.be/WUo8TnHNHYM?t=1075) [[artikel]](../collaborate-share/service-excel-featured-tables.md) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_RLS) 
+
+
+
+### <a name="analytics"></a>Analys
+* Nu är AI-insikter allmänt tillgängliga  [[video]](https://youtu.be/WUo8TnHNHYM?t=1106) [[artikel]](../transform-model/desktop-ai-insights.md)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_AI) 
+
+
+### <a name="visuals"></a>Visuella objekt
+* Punktformateringsalternativ för linjediagram [[video]](https://youtu.be/WUo8TnHNHYM?t=1262)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_Line_chart)
+* Många nya visuella objekt från flera leverantörer [[video]](https://youtu.be/WUo8TnHNHYM?t=1342)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_Radar)
+
+### <a name="template-apps"></a>Mallappar
+* Agile HR Analytics [[video]](https://youtu.be/WUo8TnHNHYM?t=1482)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_Agile_HR_Analytics)
+* Uber-användardatarapport [[video]](https://youtu.be/WUo8TnHNHYM?t=1507)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_Uber_User_Data)
+
+
+### <a name="modeling"></a>Modellering
+* Modellvisning aktiverad för liveanslutning (förhandsversion) [[video]](https://youtu.be/WUo8TnHNHYM?t=1527)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_Model_view_enabled)
+* Uppdateringar av modellvyn [[video]](https://youtu.be/WUo8TnHNHYM?t=1624)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_Updates_to_Model)
+
+
+### <a name="data-connectivity"></a>Dataanslutning
+* Palantir Foundry-anslutningsprogram [[video]](https://youtu.be/WUo8TnHNHYM?t=1700)  [[artikel]](../connect-data/desktop-data-sources.md)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_Palantir) 
+
+
+### <a name="other-features"></a>Andra funktioner
+* Nya Power BI-träningar [[video]](https://youtu.be/WUo8TnHNHYM?t=1722)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_pbi_training) 
+
+
+Du kan läsa mer om de här nya funktionerna i [blogginlägget om Power BI Desktop-funktioner](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/).
+
+Se [nyheter i Power BI-tjänsten](service-whats-new.md) och [nyheter i mobilapparna för Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+
+> [!NOTE]
+> Se [datakällor som är tillgängliga för Power BI Desktop](../connect-data/desktop-data-sources.md). Vår lista växer ständigt, så titta gärna efter nyheter ofta.
+
+
+### <a name="power-bi-desktop-monthly-update-video"></a>Video om månadsuppdatering för Power BI Desktop
+I följande video beskrivs var och en av dessa uppdateringar. Du kan även titta på videon från blogginlägget:
+
+> [!VIDEO https://www.youtube.com/embed/WUo8TnHNHYM]
+
+
+Du kan också hämta tidigare versioner av Power BI Desktop om din organisation kräver det. Vi rekommenderar alltid att du använder den senaste versionen av Power BI Desktop, i stället för en tidigare version. Alla tidigare versioner har följande begränsningar:
+
+* Tidigare versioner av Power BI Desktop servas inte – du bör alltid använda den senaste versionen för de senaste funktionerna och uppdateringarna.
+* Det kanske inte går att öppna filer som skapats eller sparats i senare versioner av Power BI Desktop med tidigare versioner av Power BI Desktop. 
+* Om du får en varning när du läser in en rapport som sparas i en nyare version av Power BI Desktop och sedan spara rapporten i den tidigare versionen, förlorar du information som är relaterad till nya funktioner.
+* Vi arkiverar endast de engelska versionerna av Power BI Desktop.
+
+Välj följande länkar för att ladda ned den tidigare versionen: 
+
+* [Juni 2020-versionen av Power BI Desktop – 32 bitar](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2020-06.exe)
+* [Juni 2020-versionen av Power BI Desktop – 64 bitar](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2020-06_x64.exe)
+
+
+
+
 
 
 

@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.topic: how-to
 ms.subservice: powerbi-custom-visuals
-ms.date: 03/08/2020
-ms.openlocfilehash: 037fbdf3c1e4c01bac91e6089f9fa1c7dd1635d1
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.date: 07/14/2020
+ms.openlocfilehash: 94cd4fd652fc1b06a73e1ea319a65e1aa5b46c7e
+ms.sourcegitcommit: 8b8d54d46470a311d8654abe92b5a223b696af28
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238995"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86437225"
 ---
 # <a name="publish-power-bi-visuals-to-partner-center"></a>Publicera visuella Power BI-objekt på Partnercenter
 
@@ -23,7 +23,7 @@ När du har skapat ditt visuella Power BI-objekt, vill du kanske publicera det p
 
 [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) är det ställe där du hittar SaaS-appar och tillägg för dina Microsoft-produkter och tjänster.
 
-![Office Store](media/office-store/appsource-01.png)
+![Skärmbild av visuella Power BI-objekt i AppSource.](media/office-store/appsource-01.png)
 
 ## <a name="preparing-to-submit-your-power-bi-visual"></a>Förbereda att skicka ditt visuella Power BI-objekt
 
@@ -61,7 +61,7 @@ Bifoga **pbiviz-filen** och **pbix-filen med exempelrapporten** i ditt e-postmed
 
 ## <a name="submitting-to-appsource"></a>Skicka in till AppSource
 
-Om du vill skicka in ditt visuella Power BI-objekt till AppSource måste du skaffa ett appaket från Power BI-teamet och sedan skicka det till Partnercenter. 
+Om du vill skicka in ditt visuella Power BI-objekt till AppSource måste du skaffa ett appaket från Power BI-teamet och sedan skicka det till Partnercenter.
 
 ### <a name="getting-the-app-package"></a>Hämta appaketet
 
@@ -73,6 +73,11 @@ Power BI-teamet måste kontrollera filerna för varje ny överföring av visuell
 
 Om du vill skicka in dina visuella Power BI-objekt till Partnercenter så måste du vara registrerad hos ditt Partnercenter. Om du inte har registrerat dig ännu så [öppna ett utvecklarkonto i Partnercenter](https://docs.microsoft.com/office/dev/store/open-a-developer-account).
 
+>[!NOTE]
+>**Individuella utgivare** kan använda en av fölande metoder för att skicka in ett visuellt Power BI-objekt:
+>* Om du har ett gammalt instrumentpanelskonto kan du fortsätta att använda kontots autentiseringsuppgifter när du loggar in på Partnercenter.
+>* Om du inte har något gammalt instrumentpanelskonto och inte har registrerat dig på Partnercenter, så måste du [öppna ett utvecklarkonto i Partnercenter](https://docs.microsoft.com/office/dev/store/open-a-developer-account) med den e-postadress du använder i arbetet.
+
 Följ stegen nedan när du ska skicka in ditt visuella Power BI-objekt till Partnercenter. Mer information om överföringsprocessen finns i [Skicka in din Office-lösning till AppSource via Partnercenter](https://docs.microsoft.com/office/dev/store/use-partner-center-to-submit-to-appsource).
 
 1. Logga in på **Partnercenter**.
@@ -83,7 +88,7 @@ Följ stegen nedan när du ska skicka in ditt visuella Power BI-objekt till Part
 
 4. Välj **Skapa ny** och välj **Visuellt Power BI-objekt**på den nedrullningsbara menyn.
 
-    ![Office Store](media/office-store/power-bi-visual.png)
+    ![Skärmbild som visar hur du kan skapa ett nytt visuellt Power BI-objekt på fliken Office Store i Partnercenter.](media/office-store/power-bi-visual.png)
 
 5. Skriv in ett namn på ditt visuella Power BI-objekt i fönstret **Skapa ett nytt visuellt Power BI-objekt** och välj **Skapa**.
 

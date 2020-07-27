@@ -6,13 +6,13 @@ ms.author: kesharab
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 03/24/2020
-ms.openlocfilehash: 5763c3fc72632e6e734e0dc0a32854e719709d01
-ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
+ms.date: 07/13/2020
+ms.openlocfilehash: 04dae0a59391ba48c7a8b6858c98ed11490ca946
+ms.sourcegitcommit: 10c5b6cd5e7070f96de8a9f1d9b95f3d242ac7f2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86034507"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86557117"
 ---
 # <a name="export-power-bi-report-to-file-preview"></a>Exportera Power BI-rapport till fil (förhandsversion)
 
@@ -117,9 +117,10 @@ Ett jobb som överskrider antalet samtidiga begäranden avslutas inte. Om du exe
 
 När du skapar ett exportjobb finns det tre steg att följa:
 
-1. Skickar en exportbegäran.
-2. Avsökning.
-3. Hämtar filen.
+1. [Skickar en exportbegäran](#step-1---sending-an-export-request).
+2. [Avsökning](#step-2---polling).
+3. [Hämta filen](#step-3---getting-the-file).
+4. [Använda filströmmen](#step-4---using-the-file-stream).
 
 Det här avsnittet tillhandahåller exempel för varje steg.
 
@@ -231,6 +232,10 @@ public class ExportedFile
     public string FileSuffix;
 }
 ```
+
+### <a name="step-4---using-the-file-stream"></a>Steg 4 – använda filströmmen
+
+När du har filströmmen, så kan du hantera den på det sätt som passar dina behov bäst. Du kan till exempel skicka ett e-postmeddelande till den eller använda den för att ladda ned de exporterade rapporterna.
 
 ### <a name="end-to-end-example"></a>Exempel på slutpunkt till slutpunkt
 

@@ -9,12 +9,12 @@ ms.author: maggies
 ms.reviewer: cfinlan
 ms.custom: ''
 ms.date: 05/01/2020
-ms.openlocfilehash: d7e11b40c3a0257e090812ff15f31916cea509f9
-ms.sourcegitcommit: f05f7b0112a8ec2dce60839ea5f922eda3cc776c
+ms.openlocfilehash: fd92e64ac04a31446214bd6f1661d9ba5c1358d9
+ms.sourcegitcommit: 10c5b6cd5e7070f96de8a9f1d9b95f3d242ac7f2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84336784"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86557127"
 ---
 # <a name="url-parameters-in-paginated-reports-in-power-bi"></a>URL-parametrar i sidnumrerade rapporter i Power BI
 
@@ -81,9 +81,17 @@ Tillgängliga värden är:
 - WORDOPENXML (WORD) 
 - CSV 
 - PDF 
+- ACCESSIBLEPDF (PDF)
 - XML 
 
-**Tillstånd för parameterfönster** Anger om parameterfönstret är stängt eller öppet när rapporten läses in, eller är helt dolt.
+**Rapportvy** Anger vilken typ av vy som ska användas för att visa rapporten.
+
+-   rdl:reportView
+
+    - interactive (standardinställning): läs in rapporten i interaktivt läge.
+    - pageView: läs in rapporten i sidvisningsläge.
+
+**Tillstånd för parameterfönster** Anger om parameterfönstret är stängt eller öppet när rapporten läses in, eller om det är helt dolt.
 
 -   rdl:parameterPanelState
 
@@ -93,7 +101,7 @@ Tillgängliga värden är:
 
 **Enhetsinformation** Du kan ange ytterligare utdataparametrar för följande exportformat. 
 
-PDF:
+PDF/ACCESSIBLEPDF:
 
 - rdl:AccessiblePDF=true/false
 - rdl:Columns=integer

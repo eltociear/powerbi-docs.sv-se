@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 04/22/2020
+ms.date: 07/06/2020
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 056d69a866b0b56e83557e77462e03e3e00a2c8d
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: f1a792c7ad25600f04ca9834b1e5019d4e27efb4
+ms.sourcegitcommit: 11deeccf596e9bb8f22615276a152614f7579f35
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85218549"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "86409523"
 ---
 # <a name="use-a-relative-time-slicer-and-filter-in-power-bi"></a>Använda ett relativt tidsutsnitt eller filter i Power BI
 
@@ -22,18 +22,12 @@ ms.locfileid: "85218549"
 
 I nya scenarier med snabba uppdateringar kan det vara användbart att filtrera på en mindre tidsperiod. Med ett relativt tidsutsnitt eller relativt datumfilter kan du använda tidsbaserade filter på valfri datum- eller tidskolumn i datamodellen. Du kan till exempel använda det relativa tidsutsnittet till att bara visa videovisningar den senaste minuten eller timmen. 
 
-:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time.gif" alt-text="Exempel på relativ tid":::
+:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time.gif" alt-text="Skärmbild på exempel på relativ tid.":::
 
 Du behöver inte använda funktionen tillsammans med funktionen för [automatisk siduppdatering](../create-reports/desktop-automatic-page-refresh.md). Många relativa tidsscenarier är dock bra med funktionen för automatisk siduppdatering.  
 
 > [!NOTE]
 > När du använder ett relativt tidsfilter eller utsnitt på sidan eller rapportnivån filtreras alla visuella objekt på sidan eller rapporten till exakt samma tidsintervall, med hjälp av ett delad *fästpunktstid*. Eftersom visuella objekt kan ha olika körningstider ser den här delade fästpunktstiden till att visuella objekt synkroniseras på sidan eller i hela rapporten. Läs mer om [fästpunktstid](#understanding-anchor-time) i den här artikeln.
-
-## <a name="turn-on-relative-time-preview"></a>Aktivera förhandsgranskning av relativ tid
-
-Det relativa tidsfiltret är i förhandsversion, så du måste aktivera funktionsväxlaren. Gå till **Arkiv** > **Alternativ och inställningar** > **Alternativ**. Under **Globala inställningar** > **Förhandsversionsfunktioner** kontrollerar du att **Relativt tidsfilter** är markerat.
-
-:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-set-preview.png" alt-text="Ange alternativ för förhandsgranskning av relativ tid":::
 
 ## <a name="create-a-relative-time-slicer-or-filter"></a>Skapa ett relativt tidsutsnitt eller filter
 
@@ -45,7 +39,7 @@ När du har aktiverat funktionen kan du dra och släppa fältet datum eller tid 
 
 2. Välj visualiseringstypen **Utsnitt**.
 
-    :::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-create-slicer.png" alt-text="Skapa ett tidsutsnitt":::
+    :::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-create-slicer.png" alt-text="Skärmbild som visar hur man skapar ett tidsutsnitt.":::
 
 ### <a name="create-a-filter"></a>Skapa ett filter
  
@@ -55,27 +49,27 @@ När du har aktiverat funktionen kan du dra och släppa fältet datum eller tid 
 
 Sedan ändrar du filtertypen till **Relativ tid**.
 
-:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-set.png" alt-text="Ändra till relativ tid":::
+:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-set.png" alt-text="Skärmbild av ändring till relativ tid.":::
  
 Så här ser det ut i ett utsnitt:
 
-:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-slicer.png" alt-text="Relativ tid i ett utsnitt":::
+:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-slicer.png" alt-text="Skärmbild av relativ tid i ett tidsutsnitt.":::
 
 Så här ser det ut i ett filterkort: 
 
-:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-filter.png" alt-text="Relativ tid i ett filter":::
+:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-filter.png" alt-text="Skärmbild av relativ tid i ett filter.":::
  
-Med den nya filtertypen har du möjlighet att filtrera efter **Senaste**, **Nästa**eller **Under denna tidsperiod**: 
+Med den nya filtertypen kan du filtrera efter **Senaste**, **Nästa** eller **Under denna tidsperiod**: 
 
-:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-last-next.png" alt-text="Välj Senaste, Nästa eller Under denna tidsperiod":::
+:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-last-next.png" alt-text="Skärmbild av alternativen Senaste, Nästa och Under denna tidsperiod.":::
  
 Du anger tidsfönstret med ett heltal och en tidsenhet: **Minuter** eller **timmar**.
  
-:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-minutes-hours.png" alt-text="Välj minuter eller timmar":::
+:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-minutes-hours.png" alt-text="Skärmbild av val av minuter eller timmar.":::
 
 Om du behöver spara utrymme på arbetsytan kan du också skapa ett relativt tidsfilter som ett filterkort i fönstret Filter.
 
-:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-set-filter.png" alt-text="Ange relativ tid i ett filter i stället":::
+:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-set-filter.png" alt-text="Skärmbild av hur man ställer in relativ tid i ett filter i stället.":::
  
 ## <a name="understanding-anchor-time"></a>Förstå fästpunktstid
 
@@ -101,7 +95,7 @@ Följande begränsningar och överväganden kan användas för relativt tidsutsn
     - Den stöds inte via API:et för inbäddning.
     - Det finns inte stöd för att publicera på webben.
 
-- **Cachelagring av frågor**: Vi använder klientens cacheminne. Anta därför att du anger ”senaste minuten”, ”de senaste fem minuterna” och sedan tillbaka till ”senaste minuten”. Då ser du samma resultat som när det kördes första gången, om du inte uppdaterar sidan eller om sidan uppdateras automatiskt.
+- **Cachelagring av frågor**: Vi använder klientcachen. Anta att du först anger ”senaste minuten”, sedan ”de senaste fem minuterna” och därefter ändrar tillbaka till ”senaste minuten”. Då ser du samma resultat som när det kördes första gången, om du inte uppdaterar sidan eller om sidan uppdateras automatiskt.
 
 ## <a name="next-steps"></a>Nästa steg
 

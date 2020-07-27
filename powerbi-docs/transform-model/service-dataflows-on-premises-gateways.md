@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 01/08/2020
+ms.date: 07/15/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: b4146cef6ae34c7c6e5eb9713242c3a2cb0257ee
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 9a3e393fa02d0bccc3e966c467b41883e72ae05e
+ms.sourcegitcommit: cfcde5ff2421be35dc1efc9e71ce2013f55ec78f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85237760"
+ms.lasthandoff: 07/18/2020
+ms.locfileid: "86459656"
 ---
 # <a name="using-dataflows-with-on-premises-data-sources"></a>Använda dataflöden med lokala datakällor
 
@@ -69,6 +69,7 @@ Det finns några kända begränsningar för användning av företagsgatewayer oc
 * Att ändra gatewayen påverkar hela dataflödet.
 * Om flera gatewayar krävs är det bästa sättet att skapa flera dataflöden (ett för varje gateway) och använda funktionerna för beräkning eller entitetsreferens för att förena data.
 * Dataflöden stöds endast med företagsgateway. Personliga gatewayer kan inte väljas i nedrullningsbara listor och inställningsskärmar.
+* Lokala datakällor som konfigurerats med alternativet [Använd SSO via Kerberos för DirectQuery och importera frågor](../connect-data/service-gateway-sso-kerberos.md#run-a-power-bi-report) stöds inte i dataflöden.
 
 
 ## <a name="next-steps"></a>Nästa steg
@@ -84,5 +85,5 @@ Mer information om Power Query och schemalagd uppdatering finns i följande arti
 * [Frågeöversikt i Power BI Desktop](desktop-query-overview.md)
 * [Konfigurera schemalagd uppdatering](../connect-data/refresh-scheduled-refresh.md)
 
-För mer information om den gemensamma datamodellen kan du läsa dess översiktsartikel:
+Mer information om Common Data Service finns i dess översiktsartikel:
 * [Common Data Service – översikt ](https://docs.microsoft.com/powerapps/common-data-model/overview)

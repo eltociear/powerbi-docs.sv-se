@@ -8,20 +8,22 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 05/04/2020
+ms.date: 07/16/2020
 LocalizationGroup: Reports
-ms.openlocfilehash: dc71bff7cd27ec369899a02cc9da0f916a043af1
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 59e99bc44b9b438c76b72addf49beee2b69b8623
+ms.sourcegitcommit: 8b8d54d46470a311d8654abe92b5a223b696af28
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85225234"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86437288"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtrera en rapport med frågesträngparametrar i URL:en
 
 När du öppnar en rapport i Power BI-tjänsten har varje sida i rapporten en egen unik URL. Du kan använda filterfönstret på rapportarbetsytan om du vill filtrera rapportsidan.  Eller så kan du lägga till frågesträngsparametrar i URL:en för att förfiltrera rapporten. Du kanske har en rapport som du vill visa dina kolleger men du vill filtrera den först åt dem. Ett sätt att filtrera på är att börja med standard-URL:en för rapporten, lägga till filterparametrar och sedan skicka dem hela den nya URL:en med e-post.
 
-![Power BI-rapport i tjänsten](media/service-url-filters/power-bi-report2.png)
+Den här artikeln använder sig av detaljhandelsanalysexemplet. Om du vill hänga med, så [ladda ned exempelrapporten](../create-reports/sample-retail-analysis.md#get-the-sample).
+
+![Skärmbild av Power BI-rapport i tjänsten.](media/service-url-filters/power-bi-retail-analysis-sample.png)
 
 ## <a name="uses-for-query-string-parameters"></a>Användningsområden för frågesträngsparametrar
 
@@ -35,18 +37,10 @@ Med parametrar kan du filtrera rapporten för ett eller flera värden, även om 
 
 *URL*?filter=*Table*/*Field* eq '*value*'
 
-![URL med filter](media/service-url-filters/power-bi-filter-urls7b.png)
+![Skärmbild av URL med filter.](media/service-url-filters/power-bi-filter-urls7b.png)
 
 * Namnen **Tabell** och **Fält** är skiftlägeskänsliga, men **värde** är det inte.
 * Fält som är dolda från rapportvyn kan fortfarande filtreras.
-
-### <a name="reports-in-apps"></a>Rapporter i appar
-
-Om du vill lägga till ett URL-filter till en rapport i en app är formateringen lite annorlunda. Länkar till rapporter i en app har en frågeparameter (ctid) som läggs till i URL:en. Separera frågeparametrarna med ett et-tecken (&). Behåll ”?filter=” och flytta ctid-parametern till slutet av URL:en, föregången av ett et-tecken (&). 
-
-Som i följande exempel:
-
-app.powerbi.com/groups/me/apps/*app-id*/reports/*report-id*/ReportSection?filter=*Tabell*/*Fält* eq '*värde*'&ctid=*ctid*
 
 ### <a name="field-types"></a>Fälttyper
 
@@ -62,27 +56,19 @@ Om du fortfarande tycker det är förvirrande kan du fortsätta läsa så förkl
 
 Vi antar att URL:en till vår rapport är följande.
 
-![start-URL](media/service-url-filters/power-bi-filter-urls6.png)
+![Skärmbild av start-URL.](media/service-url-filters/power-bi-filter-urls6.png)
 
-Och vi ser i vår kartvisualisering (ovan) att vi har butiker i North Carolina.
+Och vi ser i vår kartvisualisering (ovan) att vi har butiker i North Carolina. *NC* är det värde för North Carolina som lagras i fältet **Område** i tabellen **Butik**. Om du vill filtrera rapporten så att den endast visar data för butiker i NC, så lägg till följande i URL:en:
 
->[!NOTE]
->Det här exemplet är baserat på [Exempel på detaljhandelsanalys](../create-reports/sample-datasets.md).
-> 
+```
+?filter=Store/Territory eq 'NC'
+```
 
-Filtrera rapporten till att endast visa data för butiker i ”NC” (North Carolina) genom att lägga till följande i URL:en:
+![Skärmbild av URL med filter.](media/service-url-filters/power-bi-filter-urls7.png)
 
-?filter=Butik/Område eq 'NC'
+Vår rapport har nu filtrerats för North Carolina, vilket innebär att alla visualiseringar i rapporten endast visar data för North Carolina.
 
-![URL med filter](media/service-url-filters/power-bi-filter-urls7.png)
-
->[!NOTE]
->*NC* är ett värde som lagras i fältet **Område** i tabellen **Butik**.
-> 
-
-Vår rapport är filtrerad för North Carolina, vilket innebär att alla visualiseringar på rapportsidan endast visar data för North Carolina.
-
-![Rapport filtrerad för North Carolina](media/service-url-filters/power-bi-report4.png)
+![Skärmbild av rapport filtrerad för North Carolina.](media/service-url-filters/power-bi-url-filter-nc.png)
 
 ## <a name="filter-on-more-than-one-value-in-a-field"></a>Filtrera på fler än ett värde i ett fält
 
@@ -92,7 +78,9 @@ Om du vill filtrera efter fler än ett värde i ett fält, så använd operatorn
 
 Om du, med utgångspunkt i samma exempel, vill filtrera rapporten till att endast visa data för butiker i ”NC” (North Carolina) eller ”TN” (Tennessee), så gör följande tillägg i URL:en:
 
+```
 ?filter=Store/Territory in ('NC', 'TN')
+```
 
 En lista över andra användbara operatorer finns i tabellen [Operatorer](#operators) längre fram i artikeln.
 
@@ -167,10 +155,10 @@ Specialtecken och blanksteg i tabell- och kolumnnamn kräver viss ytterligare fo
 |**[Kolumn]**     |  [ är 0x005B, ] är 0x005D       |  _x005B_Column_x005D_       |
 |**Column+Plus**     | + är 0x2B        |  Column_x002B_Plus       |
 
-Table_x0020_Name/Column_x002B_Plus eq 3 ![tabell för visuell rendering av specialtecken](media/service-url-filters/power-bi-special-characters1.png)
+Table_x0020_Name/Column_x002B_Plus eq 3 ![Skärmbild av visuellt tabellobjekt med specialtecken.](media/service-url-filters/power-bi-special-characters1.png)
 
 
-Table_x0020_Special/_x005B_Column_x0020_Brackets_x005D_ eq '[C]' ![tabell för visuell rendering av specialtecken](media/service-url-filters/power-bi-special-characters2.png)
+Table_x0020_Special/_x005B_Column_x0020_Brackets_x005D_ eq '[C]' ![Skärmbild av visuellt tabellobjekt med specialtecken.](media/service-url-filters/power-bi-special-characters2.png)
 
 ### <a name="special-characters-in-values"></a>Specialtecken i värden
 
@@ -200,7 +188,9 @@ OmrådeKedja = [Område] & " - " & [Kedja]
 
 Publicera rapporten till Power BI-tjänsten och använd sedan URL-frågesträngen för att enbart filtrera och visa data för Lindseys butiker i NC.
 
-    https://app.powerbi.com/groups/me/reports/8d6e300b-696f-498e-b611-41ae03366851/ReportSection3?filter=Store/TerritoryChain eq 'NC – Lindseys'
+```
+https://app.powerbi.com/groups/me/reports/8d6e300b-696f-498e-b611-41ae03366851/ReportSection3?filter=Store/TerritoryChain eq 'NC – Lindseys'
+```
 
 ## <a name="pin-a-tile-from-a-filtered-report"></a>Fästa en panel från en filtrerad rapport
 
@@ -216,6 +206,7 @@ Det finns några saker som du bör vara medveten om när du använder frågestr�
 * Power BI-rapportservern stöder även möjligheten att ange ytterligare filter med URL-parametern ”filter”. Här är ett exempel på hur URL:en kan se ut i Power BI-rapportservern: `https://reportserver/reports/powerbi/Store Sales?rs:Embed=true&filter= Store/Territory eq 'NC' and Store/Chain eq 'Fashions Direct'`
 * Rapportfilter för URL har en begränsning på 10 uttryck (10 filter som är hopkopplade med AND).
 * Datatypen long är (2^53-1) på grund av begränsningar i JavaScript.
+* Power BI begränsar inte antalet tecken i URL-frågesträngar. Olika webbläsare har olika längdbegränsningar.
 
 URL-filter stöds i vissa inbäddningsscenarier, men inte i andra.
 

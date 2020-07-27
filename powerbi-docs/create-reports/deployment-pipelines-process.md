@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.date: 06/25/2020
-ms.openlocfilehash: eee8d67caab4a3d7b888396fa62debaf0aab2490
-ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
+ms.openlocfilehash: 002a50fd2e8e55d5ec06d7f15420ae8299861b37
+ms.sourcegitcommit: 10c5b6cd5e7070f96de8a9f1d9b95f3d242ac7f2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86034300"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86557220"
 ---
 # <a name="understand-the-deployment-process-preview"></a>Förstå distributionsprocessen (förhandsversion)
 
@@ -152,11 +152,11 @@ Följande datauppsättningsegenskaper kopieras inte heller under distributionen:
 
 Skapa en app för varje pipelinefas i distributionen så att du kan testa varje uppdatering av appen från slutanvändarens perspektiv. Med en distributionspipeline kan du enkelt hantera den här processen. Använd knappen Publicera eller Visa på arbetsytan för att publicera eller visa appen i en särskild pipelinefas.
 
-[![publicera app](media/deployment-pipelines-process/publish.png "Publicera app")](media/deployment-pipelines-process/publish.png#lightbox)
+[![En skärmbild som lyfter fram appupliceringsknappen längst ned till höger i produktionsfasen.](media/deployment-pipelines-process/publish.png)](media/deployment-pipelines-process/publish.png#lightbox)
 
 I produktionsfasen öppnar huvudknappen för åtgärder i det nedre vänstra hörnet sidan uppdatera app i Power BI, så att alla innehållsuppdateringar blir tillgängliga för appens användare.
 
-[![uppdatera app](media/deployment-pipelines-process/update-app.png "Uppdatera app")](media/deployment-pipelines-process/update-app.png#lightbox)
+[![En skärmbild som lyfter fram appuppdateringsknappen längst ned till höger i produktionsfasen.](media/deployment-pipelines-process/update-app.png)](media/deployment-pipelines-process/update-app.png#lightbox)
 
 >[!IMPORTANT]
 >Distributionsprocessen omfattar inte uppdatering av appens innehåll eller inställningar. Om du vill tillämpa ändringar på innehåll eller inställningar måste du uppdatera appen manuellt i motsvarande pipelinefas.

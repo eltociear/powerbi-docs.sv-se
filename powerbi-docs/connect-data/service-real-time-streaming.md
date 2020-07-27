@@ -6,25 +6,25 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 05/21/2020
+ms.date: 07/16/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 0472baffa765f1a1e7d39e365e40a1f596472a16
-ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
+ms.openlocfilehash: cfe184b1f2bd34796dea8982117e3ba90561fa31
+ms.sourcegitcommit: cfcde5ff2421be35dc1efc9e71ce2013f55ec78f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "86264384"
+ms.lasthandoff: 07/18/2020
+ms.locfileid: "86459702"
 ---
 # <a name="real-time-streaming-in-power-bi"></a>Realtidsuppspelning i Power BI
-Med direktuppspelning i realtid för Power BI, kan du strömma data och uppdatera instrumentpaneler i realtid. Visuella objekt och instrumentpaneler som kan skapas i Power BI kan även skapas för att visa och uppdatera data och visuella objekt i realtid. Enheter och datakällor för strömmande data kan vara fabrikssensorer, sociala mediekällor, användningsstatistik för tjänsten och alla andra källor där tidskänsliga data kan insamlas eller skickas.
+Med direktuppspelning i realtid för Power BI, kan du strömma data och uppdatera instrumentpaneler i realtid. Visuella objekt och instrumentpaneler som skapas i Power BI kan visa och uppdatera data och visuella objekt i realtid. Enheter och datakällor för strömmande data kan vara fabrikssensorer, sociala mediekällor, tjänstanvändningsmått och många andra insamlare och överförare av tidskänsliga data.
 
 ![Skärmbild av instrumentpanelen Environmental sensors som visar dataresultat i realtid.](media/service-real-time-streaming/real-time-streaming-10.png)
 
-Den här artikeln visar hur man ställer in en strömmande datauppsättning i realtid i Power BI. Men innan dess är det viktigt att förstå de typer av datauppsättningar i realtid som är skapade att visas i paneler (och instrumentpaneler) och hur de datauppsättningarna skiljer sig åt.
+Den här artikeln visar hur man ställer in en strömmande datauppsättning i realtid i Power BI. För det första är det viktigt att förstå de typer av datamängder i realtid som har skapats att visas i paneler (och instrumentpaneler) och hur dessa datamängder skiljer sig åt.
 
 ## <a name="types-of-real-time-datasets"></a>Typer av datauppsättningar i realtid
-Det finns tre typer av datauppsättningar i realtid som är skapade för visning på instrumentpaneler i realtid:
+Det finns tre typer av datamängder i realtid som skapats för visning på instrumentpaneler i realtid:
 
 * Push-datauppsättning
 * Strömmande datauppsättning
@@ -43,20 +43,20 @@ Det finns två saker att tänka på med fästa paneler från en push-datauppsät
 * När en visualisering har fästs på en instrumentpanel, kan du använda **frågor och svar** för att ställa frågor till push-datauppsättningen på naturligt språk. När du ställer en **frågor och svar**-fråga, kan du fästa tillbaka den resulterande visualiseringen till instrumentpanelen och instrumentpanelen kommer *också* uppdateras i realtid.
 
 ### <a name="streaming-dataset"></a>Strömmande datauppsättning
-Med en **strömmande datauppsättning** pushas data också till Power BI-tjänsten med en viktig skillnad: Power BI lagrar endast data i ett tillfälligt cacheminne som snabbt förfaller. Det tillfälliga cacheminnet används bara för att visa visuella objekt med en tillfällig historisk information, till exempel ett linjediagram med ett tidsfönster på en timme.
+Med en **strömmande datauppsättning** pushas data också till Power BI-tjänsten med en viktig skillnad: Power BI lagrar endast data i ett tillfälligt cacheminne som snabbt förfaller. Det tillfälliga cacheminnet används bara för att visa visuella objekt med en tillfällig historisk information, till exempel ett linjediagram med ett tidsfönster på en timma.
 
 Med en **strömmande datauppsättning**, finns det *ingen* underliggande databas så du *kan* skapa rapportvisualiseringar med data som flödar in från strömmen. Du kan inte använda rapportfunktionaliteter som filtrering, visuella Power BI-objekt och andra rapportfunktioner.
 
-Det enda sättet att visualisera en strömmande datauppsättning är att lägga till en panel och använda den strömmande datauppsättning som en **anpassad strömmande data**-datakälla. De anpassade strömmande panelerna som baseras på en **strömmande datauppsättning** är optimerade för att snabbt visa data i realtid. Det är mycket låg fördröjning mellan när data pushas till Power BI-tjänsten och när det visuella objektet uppdateras, eftersom inga data behöver matas in i eller läsas från en databas.
+Det enda sättet du kan visualisera en strömmande datamängd på är att lägga till en panel och använda den strömmande datamängden som en **anpassad strömmande datakälla**. De anpassade strömmande panelerna som baseras på en **strömmande datauppsättning** är optimerade för att snabbt visa data i realtid. Det är låg fördröjning mellan när data pushas till Power BI-tjänsten och när det visuella objektet uppdateras, eftersom inga data behöver matas in i eller läsas från en databas.
 
 I praktiken är strömmande datauppsättningar och deras tillhörande strömmande visuella information bäst i situationer när det är viktigt att minimera fördröjning mellan när data pushas och visualiseras. Dessutom är det praxis att pusha data i ett format som kan visualiseras som det är utan ytterligare tillägg. Exempel på data som är klar som de är inkluderar temperaturer och förberäknade genomsnitt.
 
 ### <a name="pubnub-streaming-dataset"></a>PubNub-strömmande datauppsättning
-Med en **PubNub** strömmande datauppsättning, använder Power BI-webbklienten sig av PubNub SDK:n för att läsa en befintlig PubNub-dataström och inga data lagras i Power BI-tjänsten. Eftersom det här anropet görs direkt från webbklienten skulle du behöva lista trafik till PubNub som tillåten om du endast tillåter vitlistad utgående trafik från nätverket. Läs anvisningarna i supportartikeln om [Vitlistning av utgående trafik för PubNub](https://support.pubnub.com/support/solutions/articles/14000043522-can-i-whitelist-ips-for-pubnub-traffic-).
+Med en **PubNub** strömmande datamängd använder Power BI-webbklienten sig av PubNub SDK:n för att läsa en befintlig PubNub-dataström. Power BI-tjänst lagrar inte några data. Eftersom det här anropet görs direkt från webbklienten skulle du behöva lista trafik till PubNub som tillåten om du endast tillåter vitlistad utgående trafik från nätverket. Läs anvisningarna i supportartikeln om [Vitlistning av utgående trafik för PubNub](https://support.pubnub.com/support/solutions/articles/14000043522-can-i-whitelist-ips-for-pubnub-traffic-).
 
 Precis som med den **strömmande datauppsättningen** så har den **PubNub-strömmande datauppsättningen** ingen underliggande databas i Power BI. Det går därmed inte att skapa rapportvisualiseringar mot de data som flödar in och du kan inte dra nytta av rapportfunktioner som filtrering, visuella Power BI-objekt och så vidare. Därmed kan den **PubNub-strömmande datauppsättningen** också bara visualiseras genom att lägga till en panel på instrumentpanelen och konfigurera en PubNub-dataström som källa.
 
-Paneler baserade på en **PubNub-strömmande datauppsättning** är optimerade för att snabbt visa data i realtid. Eftersom Power BI är direkt ansluten till PubNub-dataströmmen, finns det mycket låg fördröjning mellan när data pushas till Power BI-tjänsten och när det visuella objektet uppdateras.
+Paneler baserade på en **PubNub-strömmande datauppsättning** är optimerade för att snabbt visa data i realtid. Eftersom Power BI är direkt ansluten till PubNub-dataströmmen, finns det låg fördröjning mellan när data pushas till Power BI-tjänsten och när det visuella objektet uppdateras.
 
 ### <a name="streaming-dataset-matrix"></a>Matris över strömmande datauppsättningar
 Följande tabell (eller matris, om du vill) beskriver de tre typerna av datauppsättningar för strömning i realtid listar deras funktioner och begränsningar.
@@ -98,7 +98,7 @@ När du skapar nya strömmande datauppsättning, du kan välja att aktivera **hi
 
 ![Skärmbild av den nya strömmande datauppsättningen med Historisk dataanalys aktiverat.](media/service-real-time-streaming/real-time-streaming_0c.png)
 
-När **historisk dataanalys** är inaktiverat (det är inaktiverat som standard), skapar du en **strömmande datauppsättning** som det beskrivs tidigare i den här artikeln. När **historisk dataanalys** är *aktiverat*, blir den skapade datauppsättningen både en **strömmande datauppsättning** och en **push-datauppsättning**. Det här motsvarar att använda Power BI REST API:er för att skapa en datauppsättning med sitt *defaultMode* inställt på *pushStreaming*, som det beskrivs tidigare i den här artikeln.
+När **historisk dataanalys** är inaktiverat, vilket är inaktiverat som standard, kan du skapa en **strömmande datamängd** så som beskrivs tidigare i den här artikeln. När **historisk dataanalys** är *aktiverat*, blir den skapade datauppsättningen både en **strömmande datauppsättning** och en **push-datauppsättning**. Det här motsvarar att använda Power BI REST API:er för att skapa en datauppsättning med sitt *defaultMode* inställt på *pushStreaming*, som det beskrivs tidigare i den här artikeln.
 
 > [!NOTE]
 > För strömmande datauppsättningar som skapats med gränssnittet för Power BI-tjänsten, som det beskrivs i föregående stycke, krävs ingen Azure AD-autentisering. I sådana datauppsättningar, tar datauppsättningens ägare emot en URL med en radnyckel som låter begäraren pusha data till datauppsättningen utan någon Azure AD OAuth-ägartoken. Tillvägagångssättet med Azure AD (AAD) fungerar dock fortfarande för att pusha data till datauppsättningen.
@@ -108,7 +108,7 @@ När **historisk dataanalys** är inaktiverat (det är inaktiverat som standard)
 ### <a name="using-azure-stream-analytics-to-push-data"></a>Använd Azure Stream Analytics för att pusha data
 Du kan lägga till Power BI som utdata i **Azure Stream Analytics** (ASA) och sedan visualisera dessa dataströmmar i Power BI-tjänsten i realtid. Det här avsnittet beskriver teknisk information om hur den här processen sker.
 
-Azure Stream Analytics använder Power BI REST-API:er för att skapa sin utdataström till Power BI med *defaultMode* satt till *pushStreaming* (se tidigare avsnitt i den här artikeln för information om *defaultMode*), vilket resulterar i en datauppsättning som kan dra nytta av både **push** och **strömning**. Vid skapandet av datauppsättningen, sätter även Azure Stream Analytics **retentionPolicy**-flaggan till *basicFIFO*. Med den inställningen, lagrar databasen som stöder push-datauppsättningen 200 000 rader och efter att den gränsen överskrids, släpps raderna enligt FIFO-metoden (first-in first-out).
+Azure Stream Analytics använder Power BI REST-API:er för att skapa sin utdataström till Power BI med *defaultMode* satt till *pushStreaming*, vilket resulterar i en datamängd som kan dra nytta av både **push** och **direktuppspelning**. När datamängden har skapats ställer Azure Stream Analytics in flaggan **retentionPolicy** på *basicFIFO*. Med den inställningen lagrar databasen, som stöder push-datamängden, 200 000 rader, och raderna släpps enligt FIFO-metoden (First-In First-Out).
 
 > [!CAUTION]
 > Om din Azure Stream Analytics-fråga resulterar i mycket snabba utdata till Power BI (till exempel en eller två gånger per sekund), börjar Azure Stream Analytics batchbearbeta dessa utdata till en enskild begäran. Detta kan göra att begärans storlek överskrider gränsen för den strömmande panelen. I det fallet kommer, som tidigare nämnts, de strömmande panelerna att misslyckas med att renderas. I sådana fall är ett metodtips att sakta ner hastigheten för utdata till Power BI. Istället för ett maxvärde varje sekund till exempel, kan du ange det till ett max var 10:e sekund.
@@ -180,7 +180,7 @@ I det här exemplet, använder vi en offentligt tillgänglig ström från **PubN
 1. I **Power BI-tjänsten**, väljer du en instrumentpanel (eller skapa en ny) och välj **Lägg till panel** > **anpassade strömmande data** och välj sedan **nästa**-knappen.
    
    ![Skärmbild av instrumentpanelen som visar Lägg till panel med valet Anpassad strömmande data.](media/service-real-time-streaming/real-time-streaming_1.png)
-2. Om du inte har några strömmande datakällor ännu, väljer du länken **hantera data** (ovanför **nästa**-knappen) och väljer **+ lägg till strömmande data** från länken i övre högra delen av fönstret. Välj **PubNub** och välj sedan **nästa**.
+2. Om du inte har några källor för direktuppspelning ännu, så välj länken **hantera data** (precis ovanför knappen **Nästa**), och välj sedan **+ Lägg till strömmande data** via länken i fönstrets övre högra hörn. Välj **PubNub** och välj sedan **nästa**.
 3. Skapa ett namn för din datauppsättning och klistra sedan in följande värden i fönstret som visas, välj sedan **nästa**:
    
    *Prenumerationsnyckel:*
@@ -212,13 +212,14 @@ När du tillämpar filter för att pusha datauppsättningar med *DateTime*-fält
 
 #### <a name="how-do-i-see-the-latest-value-on-a-push-dataset-how-about-streaming-dataset"></a>Hur ser jag det senaste värdet för en push-datauppsättning? Eller den strömmande datauppsättningen?
 Strömmande datauppsättningar är utformade för att visa de senaste data. Du kan använda den strömmande visualiseringen **kort** för att enkelt se de senaste numeriska värdena. Kortet stöder dock inte data av typen *DateTime* eller *Text*.
-För push-datauppsättningar, kan du försöka skapa en rapportvisualisering med det senaste N-filtret, förutsatt att du har en tidsstämpel i schemat.
+
+För push-datamängder kan du försöka skapa ett visuellt rapporobjekt med det senaste N-filtret, förutsatt att du har en tidsstämpel i schemat.
 
 #### <a name="can-i-connect-to-push-or-streaming-datasets-in-power-bi-desktop"></a>Kan jag ansluta till push- eller strömmande datauppsättningar i Power BI Desktop?
-Push- och hybriddatamängder kan vara liveanslutna i Power BI Desktop, men andra strömmande datamängder kan inte anslutas i Power BI Desktop.
+Push-datamängder och hybriddatamängder kan live-anslutas i Power BI Desktop. Övriga strömmande datamängder kan inte anslutas i Power BI Desktop.
 
 #### <a name="given-the-previous-question-how-can-i-do-any-modeling-on-real-time-datasets"></a>Med tanke på föregående fråga, hur kan jag modellera realtids-datauppsättningar?
-Det går inte att modellera en strömmande datauppsättning, eftersom data inte lagras permanent. Med en push-datauppsättning, kan du använda REST API:erna uppdatera datauppsättning/tabell för att lägga till åtgärder och relationer. 
+Det går inte att modellera en strömmande datauppsättning, eftersom data inte lagras permanent. För en push-datamängd kan du använda ”skapa datamängds-REST API” när du vill skapa en datamängd med relationer och mått och/eller använda uppdateringstabellens REST-API:er för att lägga till mått i en befintlig tabell. 
 
 #### <a name="how-can-i-clear-all-the-values-on-a-push-dataset-how-about-streaming-dataset"></a>Hur kan jag rensa alla värden i en push-datauppsättning? Eller den strömmande datauppsättningen?
 På en push-datauppsättning kan du använda REST API-anropet ta bort rader. För tillfället finns det inget sätt att rensa data från en strömmande datauppsättning. Data rensas dock av sig självt efter en timme.
@@ -230,12 +231,12 @@ Här är en checklista som du kan använda för att felsöka problemet:
 2. Försök att auktorisera om din Power BI-anslutning i Azure Stream Analytics
 3. Vilken arbetsyta angav du för Azure Stream Analytics-utdata? Checkar du in den (samma) arbetsytan i Power BI-tjänsten?
 4. Matas Azure Stream Analytics-frågan uttryckligen ut till Power BI-utdata? (med nyckelordet INTO)
-5. Har Azure Stream Analytics-jobbet data som flödar genom det? Datauppsättningen skapas endast när det finns data som överförs.
+5. Har Azure Stream Analytics-jobbet data som flödar genom det? Datamängden skapas bara när data överförs.
 6. Kan du kolla Azure Stream Analytics-loggarna och se om det finns några varningar eller fel?
 
 ## <a name="automatic-page-refresh"></a>Automatisk siduppdatering
 
-Automatisk siduppdatering används på nivån för rapportsidan och innebär att rapportförfattarna kan ange ett uppdateringsintervall för visuella objekt på sidor som bara är aktivt när sidan används. Automatisk siduppdatering är endast tillgängligt för DirectQuery-datakällor. Det lägsta uppdateringsintervallet beror på vilken typ av arbetsyta som rapporten publiceras på, samt kapacitetsadministratörens inställningar för Premium-arbetsytor.
+Automatisk siduppdatering används på nivån för rapportsidan och innebär att du kan ange ett uppdateringsintervall för visuella objekt som bara är aktiva när sidan används. Automatisk siduppdatering är endast tillgängligt för DirectQuery-datakällor. Det lägsta uppdateringsintervallet beror på vilken typ av arbetsyta som rapporten publiceras på, samt kapacitetsadministratörsinställningarna för Premium-arbetsytor.
 
 Läs mer om automatisk siduppdatering i artikeln [om automatisk siduppdatering](../create-reports/desktop-automatic-page-refresh.md).
 
