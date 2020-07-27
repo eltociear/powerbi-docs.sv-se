@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 07/08/2020
-ms.openlocfilehash: 8b777cba35f32dcf2d6561b73c350d047d473223
-ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
+ms.openlocfilehash: 1263de975319b7b0e2ef5123d985fa50a126d680
+ms.sourcegitcommit: cfcde5ff2421be35dc1efc9e71ce2013f55ec78f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86162285"
+ms.lasthandoff: 07/18/2020
+ms.locfileid: "86459610"
 ---
 # <a name="change-log-for-power-bi-report-server"></a>Ändringslogg för Power BI-rapportservern
 
@@ -52,11 +52,12 @@ Mer information om nya funktioner finns i [Nyheter i Power BI-rapportserver](wha
 
 
 - **Power BI Desktop (optimerad för Power BI-rapportservern)**
-    - *Version: 2.81.5831.941 (maj 2020), utgiven: 27 maj 2020* (ny build och ny version)
+   - *Version: 2.81.5831.1181 (maj 2020), utgiven: Juni 9, 2020*
+        - Felkorrigering
+           -  Korrigering av visuella MarketPlace-objekt
+   - *Version: 2.81.5831.941 (maj 2020), utgiven: 27 maj 2020* (ny build och ny version)
         - Innehåller ändringar som krävs för anslutning till Power BI-rapportservern (maj 2020)        
-
-
-
+   
 ## <a name="january-2020"></a>Januari 2020
 - **Power BI-rapportserver**
     - *Version: 1.6.7364.4075 (version 15.0.1102.777), utgiven: 2 mars 2020*
