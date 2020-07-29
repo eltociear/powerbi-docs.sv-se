@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/14/2020
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: b43d52445c9a5232ba1747a9dae9333da8697f84
-ms.sourcegitcommit: 49daa8964c6e30347e29e7bfc015762e2cf494b3
+ms.openlocfilehash: 40f1e0938f54fe55abf8148e12f8842041b42c3d
+ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84273079"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87252784"
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nyheter i Power BI-tjänsten
 Kontrollera den här sidan för kända problem och nyligen utgivna funktioner i **Power BI-tjänsten**. Relaterad information om nyheter finns i:
@@ -42,7 +42,7 @@ Besök även våra YouTube-kanaler för information om nyheter och funktioner.
 
 ### <a name="february-2020"></a>Februari 2020
 * Möjlighet att flytta upp instrumentpaneler, rapporter och appar på Power BI-start.
-* Den nya [Power BI-fliken](../collaborate-share/service-embed-report-microsoft-teams.md) för inbäddning av rapporter i Microsoft Teams.
+* Den nya [Power BI-fliken](../collaborate-share/service-collaborate-microsoft-teams.md) för inbäddning av rapporter i Microsoft Teams.
 * Allmän tillgänglighet för [inkrementell uppdatering](../admin/service-premium-incremental-refresh.md) med stöd för Power BI Pro-användare.
 * Stöd för e-postprenumerationer för externa e-postadresser.
 * Allmän tillgänglighet för [Bring Your Own Key (BYOK)](../admin/service-encryption-byok.md) för Power BI Premium.

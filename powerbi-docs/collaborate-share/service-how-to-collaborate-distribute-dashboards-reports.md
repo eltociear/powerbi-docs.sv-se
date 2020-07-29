@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/18/2020
 ms.custom: contperfq4
 LocalizationGroup: Share your work
-ms.openlocfilehash: 3cf9d59926c1a38d83f386c7ae01fbdcf1a7fc95
-ms.sourcegitcommit: a58d10ca62bc55e83b58cf8e8495ac01a4bd6532
+ms.openlocfilehash: 4af8f9edd3d51214aaa766219e4903eb4b26b813
+ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/20/2020
-ms.locfileid: "85120445"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87252554"
 ---
 # <a name="ways-to-collaborate-and-share-in-power-bi"></a>Olika sätt att samarbeta och dela i Power BI
 
@@ -73,7 +73,7 @@ När du lägger till en Power BI-rapportflik i Microsoft Teams, så skapar Teams
 
 :::image type="content" source="media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-teams-conversation-tab.png" alt-text="Microsoft Teams-konversationsflik":::
 
-Läs mer om [samarbete i Microsoft Teams med Power BI](service-embed-report-microsoft-teams.md).
+Läs mer om [samarbete i Microsoft Teams med Power BI](service-collaborate-microsoft-teams.md).
 
 ## <a name="share-dashboards-and-reports"></a>Dela instrumentpaneler och rapporter
 

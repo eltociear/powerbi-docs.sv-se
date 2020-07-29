@@ -7,15 +7,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 02/25/2020
+ms.date: 07/27/2020
 ms.author: maggies
 LocalizationGroup: Administration
-ms.openlocfilehash: 50d3adef65791c3fecd1a2125f67318fb8ab0298
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: eb59359497dec351c960ce0c6a3ce11b4f6eab0d
+ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86214254"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87252117"
 ---
 # <a name="manage-data-storage-in-power-bi-workspaces"></a>Hantera datalagring i Power BI-arbetsytor
 
@@ -28,7 +28,7 @@ Lagringsgränser för arbetsytan, vare sig det gäller min arbetsyta eller en ap
 ### <a name="shared-capacity-limits"></a>Begränsningar för delad kapacitet
 För arbetsytor i delad kapacitet: 
 
-- Det finns en lagringsgräns per arbetsyta på 100 GB.
+- Det finns en lagringsgräns per arbetsyta på 10 GB.
 - För app-arbetsytor får den totala användningen inte överskrida klientlagringsgränsen på 10 GB multiplicerat med antalet Pro-licenser i klienten.
 
 ### <a name="premium-capacity-limits"></a>Begränsningar för premiumkapacitet
