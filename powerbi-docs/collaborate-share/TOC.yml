@@ -37,6 +37,8 @@
               href: service-data-lineage.md
             - name: Effektanalys för datamängd
               href: service-dataset-impact-analysis.md
+            - name: Effektanalys för datakälla
+              href: service-data-source-impact-analysis.md
             - name: Använd känslighetsetiketter för data
               href: ../admin/service-security-apply-data-sensitivity-labels.md
             - name: Anslut till filer på din grupps OneDrive
@@ -45,6 +47,16 @@
               href: service-collaborate-power-bi-workspace.md
             - name: Hantera din grupp i Power BI och Microsoft 365
               href: service-manage-app-workspace-in-power-bi-and-office-365.md
+        - name: Power BI i Teams
+          items:
+            - name: Samarbeta i Teams
+              href: service-collaborate-microsoft-teams.md
+            - name: Bädda in rapporter i Teams
+              href: service-embed-report-microsoft-teams.md
+            - name: Dela direkt till Teams
+              href: service-share-report-teams.md
+            - name: Hämta en länkförhandsvisning i Teams
+              href: service-teams-link-preview.md
         - name: Publicera och dela ditt arbete
           items:
             - name: Dela instrumentpaneler och rapporter
@@ -61,8 +73,6 @@
               href: service-report-subscribe.md
             - name: Funktionsinnehåll på Startsidan
               href: service-featured-content.md
-            - name: Bädda in rapport i Microsoft Teams
-              href: service-embed-report-microsoft-teams.md
             - name: Bädda in rapport i SharePoint Online
               href: service-embed-report-spo.md
             - name: Bädda in en rapport på en säker portal eller webbplats
@@ -71,20 +81,22 @@
               href: service-publish-to-web.md
             - name: Dela en instrumentpanel som länkar till en Excel-arbetsbok på OneDrive
               href: service-share-dashboard-that-links-to-excel-onedrive.md
-        - name: Utöka Power BI
+        - name: Power BI i Excel
           items:
             - name: Analysera i Excel
               href: service-analyze-in-excel.md
-            - name: Aktuella Power BI-tabeller i Excel
+            - name: Använda aktuella Power BI-tabeller i Excel
               href: service-excel-featured-tables.md
+            - name: Ange aktuella tabeller
+              href: service-create-excel-featured-tables.md
             - name: Felsöka analysfunktionen i Excel
               href: desktop-troubleshooting-analyze-in-excel.md
             - name: 'Fel: Det gick inte att hitta några data i din Excel-arbetsbok'
               href: ../connect-data/service-admin-troubleshoot-excel-workbook-data.md
-            - name: Power Automate och Power BI
-              href: service-flow-integration.md
-            - name: Använda appar från tredje part
-              href: service-power-bi-get-started-third-party-apps.md
+        - name: Power Automate och Power BI
+          href: service-flow-integration.md
+        - name: Använda appar från tredje part
+          href: service-power-bi-get-started-third-party-apps.md
         - name: Organisationsinnehållspaket
           items:
             - name: Introduktion till organisationsinnehållspaket
