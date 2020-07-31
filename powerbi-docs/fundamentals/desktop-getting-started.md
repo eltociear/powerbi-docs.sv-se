@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 03/13/2020
+ms.date: 07/23/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: ec716f0824ce083b034dc8fd459f00fdb7768ac4
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: 62f0f6d9bac3b8451f3c5efc70612c2ef067aed4
+ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86215597"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87252807"
 ---
 # <a name="get-started-with-power-bi-desktop"></a>Komma igång med Power BI Desktop
 Välkommen till Komma igång-guiden för Power BI Desktop. Den här guiden visar hur Power BI Desktop fungerar, vad det kan göra samt hur du skapar robusta datamodeller och fantastiska rapporter som förbättrar din Business Intelligence.
@@ -24,6 +24,11 @@ Om du vill få en snabb översikt över hur Power BI Desktop fungerar och hur du
 ![Skärmbild av Power BI Desktop med ett exempel på ett arbetsobjekt.](media/desktop-getting-started/hero-02.png)
 
 Du kan även titta på videon [Komma igång med Power BI Desktop](https://www.youtube.com/watch?v=Qgam9M8I0xA) och ladda ned Excel-arbetsboken [Financial Sample](https://go.microsoft.com/fwlink/?LinkID=521962) (Ekonomiexempel) för att följa med videon.
+
+
+> [!IMPORTANT]
+> Power BI Desktop uppdateras och publiceras varje månad, så att du kan inkludera kundfeedback och nya funktioner. Endast den senaste versionen av Power BI Desktop stöds. Kunder som kontaktar support för Power BI Desktop uppmanas att uppgradera till den senaste versionen. Du kan hämta den senaste versionen av Power BI Desktop från [Windows Store](https://aka.ms/pbidesktopstore) eller som en enda körbar fil som innehåller alla språk som stöds och som du [laddar ned](https://www.microsoft.com/download/details.aspx?id=58494) och installerar på datorn.
+
 
 ## <a name="how-power-bi-desktop-works"></a>Så här fungerar Power BI Desktop
 Med Power BI Desktop kan du:

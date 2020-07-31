@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: how-to
 ms.date: 05/07/2020
 ms.author: davidi
-ms.openlocfilehash: ae9a3695c8db084d9c65871314edfef34cde1cb6
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: e2615915503b0eb6d9d1ee08bd2a1fa8599bcf8c
+ms.sourcegitcommit: e9cd61eaa66eda01cc159251d7936a455c55bd84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238490"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86953017"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop"></a>Tips om hur du skapar rapporter i Power BI Desktop
 För att få ut mesta möjliga av dina data, behövs ibland lite extra hjälp. Vi har samlat några tips och råd som du kan använda när du skapar rapporter i Microsoft Power BI Desktop *och* i Microsoft Excel 2016 eller Excel 2013 Pro-Plus-versioner med Power Pivot-tillägget aktiverat och Power Query installerad och aktiverad. 
@@ -54,7 +54,7 @@ När du använder ett kategoriskt (sträng)-värde i Power BI för diagramaxlar 
 ## <a name="building-maps-more-easily-with-hints-to-bing"></a>Skapa kartor enklare med tips till Bing
 Power BI integrerar med Bing för att tillhandahålla kartkoordinater av standardtyp (en process som kallas geokodning), vilket gör det enklare att skapa kartor. Bing använder vissa algoritmer och tips för att försöka hämta rätt plats, men det är ändå en gissning. Du kan använda följande tips för att öka sannolikheten för rätt geo-kodning:
 
-När du skapar en karta vill du ofta markera länder, regioner och städer. Om du namnger kolumner efter geografisk beteckning i Power BI Desktop hjälper det Bing att gissa vad du vill visa. Till exempel, om du har ett fält med namn på delstater i USA, till exempel ”Kalifornien” och ”Washington” kan Bing återge platsen för Washington, DC, istället för delstaten Washington som svar på ordet ”Washington”. Om du ger kolumnen namnet ”States” förbättras geokodningen. Samma sak gäller för kolumner med namn som Land och Stad. 
+När du skapar en karta vill du ofta markera länder/regioner, delstater och städer. Om du namnger kolumner efter geografisk beteckning i Power BI Desktop hjälper det Bing att gissa vad du vill visa. Till exempel, om du har ett fält med namn på delstater i USA, till exempel ”Kalifornien” och ”Washington” kan Bing återge platsen för Washington, DC, istället för delstaten Washington som svar på ordet ”Washington”. Om du ger kolumnen namnet ”States” förbättras geokodningen. Samma sak gäller för kolumner med namn som Land och Stad. 
 
 Vissa benämningar är tvetydiga när de används i samband med flera länder/regioner. I vissa fall behandlas kan en ”delstat” i ett land/region vara något helt annat i en annan provins eller land. Du kan öka noggrannheten för geokodning genom att skapa kolumner som lägger till flera fält tillsammans och använda dem för att rita upp dataplatser. I stället för att skicka endast ”Wiltshire” kan du skicka ”Wiltshire, England” för att få en mer korrekt geokodning. 
 

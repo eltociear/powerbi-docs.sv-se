@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/27/2020
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 305da7339159500a8e6de410bb4bf7f0b06d10e0
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: a268247d13fdfe71e17e5c0a6fafeeb635b96984
+ms.sourcegitcommit: e9cd61eaa66eda01cc159251d7936a455c55bd84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83349642"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86953063"
 ---
 # <a name="get-samples-for-power-bi"></a>Hämta exempel för Power BI
 Säg att du har använt Power BI och vill prova men inte har några data.  Eller så kanske du vill se rapporter som illustrerar några av funktionerna i Power BI. Det har vi.
@@ -25,7 +25,7 @@ Power BI erbjuder olika typer av exempel för olika syften:
 - En **[exempelapp](#sample-app-from-appsource)** som du hämtar från AppSource, även direkt i Power BI-tjänsten. Appar inkluderar instrumentpaneler, rapporter och datauppsättningar. Du kan ändra dem och sedan distribuera dem till dina kollegor.
 - **[Åtta ursprungliga inbyggda exempel](#eight-original-samples)** i Power BI-tjänsten som *innehållspaket*, med instrumentpaneler, rapporter och datauppsättningar. Du installerar dem direkt i Power BI-tjänsten. De inbyggda exemplen är också tillgängliga som Power BI-rapporter (.pbix) och Excel-arbetsböcker (.xlsx).
 - **[Excel-arbetsbok](#download-sample-excel-files)** versioner av de inbyggda exemplen som innehåller datamodellen och Power View-blad. Du kan utforska eller redigera datamodellen i Excel, använda Excel-arbetsboken som en datakälla för en Power BI-rapport. Du kan också ladda upp arbetsboken som en Excel-fil och visa Excel-visualiseringar och pivottabeller i Power BI-rapporter. 
-- En **[exempelarbetsbokmed finansiella data](sample-financial-download.md)** . en enkel platt tabell i en Excel-fil som är tillgänglig för nedladdning. Den innehåller anonymiserade data med fiktiva produkter där försäljningen delas upp enligt segment och länder. Den är en användbar grundläggande datakälla för en Power BI-rapport.
+- En **[exempelarbetsbokmed finansiella data](sample-financial-download.md)** . en enkel platt tabell i en Excel-fil som är tillgänglig för nedladdning. Den innehåller anonymiserade data med fiktiva produkter där försäljningen delas upp enligt segment och länder/regioner. Den är en användbar grundläggande datakälla för en Power BI-rapport.
 
 Vår onlinedokumentation använder samma exempel i självstudier och demonstrationer så att du kan följa processen.
 

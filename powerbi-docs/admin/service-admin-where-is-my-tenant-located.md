@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: a797547562a8968591ca6551f85a56e0da98d680
-ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
+ms.openlocfilehash: ee123bed8940b52a66f3b0f860671a87210c261f
+ms.sourcegitcommit: e9cd61eaa66eda01cc159251d7936a455c55bd84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "83793292"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86952695"
 ---
 # <a name="where-is-my-power-bi-tenant-located"></a>Var finns min Power BI-klient?
 
@@ -34,7 +34,7 @@ Följ dessa steg för att hitta den region som din klient finns i.
 
 ## <a name="how-the-data-region-is-selected"></a>Så här väljs dataregionen
 
-Dataområdet baseras på det land som du väljer när du skapar klienten. Valet gäller för registreringen för både Microsoft 365 och Power BI eftersom den här informationen delas. Om det är en ny klient väljer du rätt land/region i listan när du registrerar dig.
+Dataområdet baseras på det land/region som du väljer när du skapar klienten. Valet gäller för registreringen för både Microsoft 365 och Power BI eftersom den här informationen delas. Om det är en ny klientorganisation väljer du rätt land/region i listan när du registrerar dig.
 
 ![Val av land](media/service-admin-where-is-my-tenant-located/sign-up-country-selection.png)
 
@@ -44,4 +44,3 @@ Power BI väljer det dataområde som är närmast ditt val, vilket avgör var da
 > Du kan inte ändra valet när du väl har skapat klientorganisationen.
 
 Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
-

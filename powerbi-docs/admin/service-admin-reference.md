@@ -1,5 +1,5 @@
 ---
-title: PowerShell-cmdletar, REST API:er och .NET SDK för administratörer
+title: PowerShell-cmdletar, REST-API:er och .NET-klientbibliotek för administratörer
 description: Lär dig hur du kan administrera Power BI via skript och programmerings-API:er.
 author: kfollis
 ms.reviewer: ''
@@ -9,23 +9,23 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: b4f4227a53a87cd831962bc5c944a569531b8232
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: e1c95c330687131a29753359f5223e096bddab1d
+ms.sourcegitcommit: e9cd61eaa66eda01cc159251d7936a455c55bd84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83136298"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86952626"
 ---
-# <a name="powershell-cmdlets-rest-apis-and-net-sdk-for-power-bi-administration"></a>PowerShell-cmdletar, REST API:er och .NET SDK för Power BI-administration
-Med Power BI kan administratörer skripta vanliga åtgärder med PowerShell-cmdletar. Dessutom visas REST API:er och en .NET SDK tillhandahålls för utveckling av administrativa lösningar. I det här avsnittet visas en lista över cmdletar med motsvarande SDK-metod och REST API-slutpunkt. Mer information finns i:
+# <a name="powershell-cmdlets-rest-apis-and-net-client-library-for-power-bi-administration"></a>PowerShell-cmdletar, REST-API:er och .NET-klientbibliotek för Power BI-administration
+Med Power BI kan administratörer skripta vanliga åtgärder med PowerShell-cmdletar. Dessutom exponerar tjänsten REST-API:er och tillhandahåller ett .NET-klientbibliotek för utveckling av administrativa lösningar. Det här avsnittet innehåller en lista över cmdletar och tillhörande API:er och REST-API-slutpunkt. Mer information finns i:
 
 - PowerShell – [nedladdning](https://www.powershellgallery.com/packages/MicrosoftPowerBIMgmt/) och [dokumentation](https://docs.microsoft.com/powershell/power-bi/overview?view=powerbi-ps)
 - REST API – [dokumentation](https://docs.microsoft.com/rest/api/power-bi/admin)
-- .NET SDK – [nedladdning](https://www.nuget.org/packages/Microsoft.PowerBI.Api/)
+- .NET-klientbibliotek – [nedladdning](https://www.nuget.org/packages/Microsoft.PowerBI.Api/)
 
 > Cmdlet:arna nedan ska anropas med `-Scope Organization` för att fungera med klientorganisationen för administration.
 
-| **Cmdlet-namn** | **Alias** | **SDK-metod** | **REST API-slutpunkt** | **Description** |
+| **Cmdlet-namn** | **Alias** | **API** | **REST API-slutpunkt** | **Description** |
 | --- | --- | --- | --- | --- |
 | `Get-PowerBIDatasource` | Saknas | `Datasets_GetDataSourcesAsAdmin` | /v1.0/myorg/admin/datasets/{datasetkey}/datasources | Hämtar datakällor för den angivna datauppsättningen. |
 | `Get-PowerBIDataset` | Saknas | `Datasets_GetDatasetsAsAdmin` | /v1.0/myorg/admin/datasets | Hämtar en fullständig lista över datauppsättningar i en Power BI-klientorganisation. |

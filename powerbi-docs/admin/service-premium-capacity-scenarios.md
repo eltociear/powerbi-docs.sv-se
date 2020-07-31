@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/09/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 9b3e06172d29f218f9234cf1f3d7e1f623495001
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: dc5f952aa38e2ab36887ec3f2727e2e253389460
+ms.sourcegitcommit: e9cd61eaa66eda01cc159251d7936a455c55bd84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83135266"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86952672"
 ---
 # <a name="premium-capacity-scenarios"></a>Premium-kapacitetsscenarier
 
@@ -67,7 +67,7 @@ Power BI-administratören kan försöka att lösa problemet genom att utföra å
 
 ## <a name="identifying-slow-responding-datasets"></a>Identifiera datamängder som svarar långsamt
 
-I det här scenariot utlöstes en undersökning när användarna klagat på att det tog lång tid att öppna vissa rapporter och att rapporterna ibland slutade svara.
+I det här scenariot initierades en undersökning när användarna klagade över att det tog lång tid att öppna vissa rapporter och att rapporterna ibland slutade svara.
 
 I appen kan Power BI-administratören använda det visuella objektet **Frågevaraktigheter** för att fastställa de sämst presterande datauppsättningarna genom att sortera datauppsättningar efter fallande **Genomsnittlig varaktighet**. Det här visuella objektet visar också antal frågor för datauppsättningen, så du kan se hur ofta datauppsättningarna efterfrågas.
 
@@ -141,7 +141,7 @@ Detta kan vara särskilt tydligt när en datamängd som används i korta ökning
 
 I vissa fall kan Power BI-administratörer begära att datauppsättningens ägare skapar en mindre föränderlig frågearbetsbelastning genom att skapa en instrumentpanel (som frågar med jämna mellanrum vid alla uppdateringar av datauppsättning efter cachelagrade paneler) i stället för en rapport. Detta kan förhindra toppar när instrumentpanelen läses in. Den här lösningen kanske inte alltid är möjlig för alla verksamhetskrav, men den kan vara ett effektivt sätt att undvika processormättnad, utan att göra ändringar på datauppsättningen.
 
-## <a name="acknowledgements"></a>Bekräftelser
+## <a name="acknowledgments"></a>Tack till
 
 Den här artikeln är skriven av Peter Myers, Data Platform MVP och oberoende BI-expert på [Bitwise Solutions](https://www.bitwisesolutions.com.au/).
 

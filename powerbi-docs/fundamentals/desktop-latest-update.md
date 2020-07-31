@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/15/2020
+ms.date: 07/23/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 7108ed95e28819bf90eacab86caf90dd13fa645c
-ms.sourcegitcommit: 11deeccf596e9bb8f22615276a152614f7579f35
+ms.openlocfilehash: f8d9ef38e56e22fb84175ebe5ec97eee2d123023
+ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "86409339"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87252715"
 ---
 # <a name="whats-new-in-power-bi-desktop"></a>Nyheter i Power BI Desktop
 
@@ -25,8 +25,7 @@ Våra Power BI Desktop-uppdateringar för juli är fulla av nya funktioner som �
 Skaffa den senaste versionen av Power BI Desktop från [Download Center](https://www.microsoft.com/download/details.aspx?id=58494). Om du kör Windows 10 kan du även hämta Power BI Desktop från [Windows Store](https://aka.ms/pbidesktopstore). Oavsett hur du installerar Power BI Desktop är månadsversionerna desamma, men versionsnumreringen kan variera. Mer information om hur du laddar ned och installerar Power BI Desktop finns i [Hämta Power BI Desktop](desktop-get-the-desktop.md). 
 
 > [!IMPORTANT]
-> Från och med september 2019-versionen levereras Power BI Desktop endast som en enskild .exe-fil som innehåller alla språk med stöd. MSI-versionen släpps inte längre.
-
+> Power BI Desktop uppdateras och publiceras varje månad, så att du kan inkludera kundfeedback och nya funktioner. Endast den senaste versionen av Power BI Desktop stöds. Kunder som kontaktar support för Power BI Desktop uppmanas att uppgradera till den senaste versionen. Du kan hämta den senaste versionen av Power BI Desktop från [Windows Store](https://aka.ms/pbidesktopstore) eller som en enda körbar fil som innehåller alla språk som stöds och som du [laddar ned](https://www.microsoft.com/download/details.aspx?id=58494) och installerar på datorn.
 
 Länkarna intill varje funktion i Power BI Desktop uppdateringslistan tolkas enligt följande:
 

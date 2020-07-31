@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 10/28/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 0d388127ab42c4f60d1e08efea6b3fdbbbf7045b
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: ca04a5404f0868f85a9c7ed840109efe6d213760
+ms.sourcegitcommit: e9cd61eaa66eda01cc159251d7936a455c55bd84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238820"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86952649"
 ---
 # <a name="consume-power-bi-reports-by-using-accessibility-features"></a>Använda Power BI-rapporter med hjälpmedel
 Power BI har många inbyggda funktioner som hjälper personer med funktionshinder att använda och interagera med Power BI-rapporter. De här verktygen gör att sådana användare kan få samma information från en rapport som de som inte använder hjälpmedelstekniken.
@@ -30,7 +30,7 @@ I följande avsnitt beskrivs de hjälpmedelsverktyg som är tillgängliga när d
 
 ## <a name="keyboard-navigation"></a>Tangentbordsnavigering
 
-När du startar Power BI Desktop eller Power BI-tjänsten ser du en knappbeskrivning uppe till höger så fort du trycker på **Tabb**. Länken **Tips för att använda Power BI med en skärmläsare** leder till den här artikeln med information om hur du använder hjälpmedel i en rapport. Om du klickar på länken **Hoppa till huvudinnehåll** kommer du till rapportarbetsytan.
+När du startar Power BI Desktop eller Power BI-tjänsten visas en knappbeskrivning uppe till höger när du trycker på **Tabb**. Länken **Tips för att använda Power BI med en skärmläsare** leder till den här artikeln med information om hur du använder hjälpmedel i en rapport. Om du klickar på länken **Hoppa till huvudinnehåll** kommer du till rapportarbetsytan.
 
 ![Tryck på Tabb för att se hjälpmedelstips](media/desktop-accessibility/accessibility-consuming-tools-02.png)
 
@@ -114,5 +114,3 @@ Här är samlingen med artiklar om hjälpmedel i Power BI:
 * [Skapa Power BI-rapporter med hjälpmedel](desktop-accessibility-creating-tools.md)
 * [Kortkommandon för hjälpmedel i Power BI-rapporter](desktop-accessibility-keyboard-shortcuts.md)
 * [Checklista för hjälpmedel i rapporter](desktop-accessibility-creating-reports.md#report-accessibility-checklist)
-
-

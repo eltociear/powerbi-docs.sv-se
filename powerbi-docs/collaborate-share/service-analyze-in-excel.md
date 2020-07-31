@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 05/26/2020
 ms.author: davidi
 LocalizationGroup: Reports
-ms.openlocfilehash: d4bfb6de39f0a8dee678e8224cca1cb03646abca
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 1e1e9afcbcae300e12580fb5f54bdb53e7822c03
+ms.sourcegitcommit: e9cd61eaa66eda01cc159251d7936a455c55bd84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85226978"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86952770"
 ---
 # <a name="analyze-in-excel"></a>Analysera i Excel
 Med **Analysera i Excel** kan du placera Power BI-datauppsättningar i Excel och sedan visa dem och interagera med dem med hjälp av pivottabeller, diagram, utsnitt och andra Excel-funktioner. Om du vill använda **Analysera i Excel** måste du först hämta funktionen från Power BI, installera den och sedan välja en eller flera datauppsättningar som ska användas i Excel. 
@@ -62,36 +62,41 @@ När den är klar är du redo att välja en rapport i Power BI-tjänsten (eller 
 
 ## <a name="connect-to-power-bi-data"></a>Anslut till Power BI-data
 
-I Power BI-tjänsten navigerar du till den datauppsättning eller rapport som du vill analysera i Excel och väljer menyn **Fler alternativ** (...) för att hitta menyalternativet **Analysera i Excel**. Följande bild visar hur du väljer en rapport.
-
-![Uppdateringar installeras](media/service-analyze-in-excel/analyze-excel-06.png)
-
-Det finns några steg för att hämta en datauppsättning från Power BI-tjänsten till Excel:
+Gå till den datauppsättning eller rapport som du vill analysera i Excel i Power BI-tjänsten och gör sedan följande:
 
 1. Välj menyn **Fler alternativ**.
-2. Välj **Analysera i Excel** från menyalternativen som visas.
 
-    Power BI-tjänsten skapar sedan en fil av datauppsättningen som är utformad (och strukturerad) för användning med **Analysera i Excel** som har filtillägget ODC. Filen skapas och startar sedan automatiskt en nedladdningsprocess i webbläsaren.
+1. Välj **Analysera i Excel** från menyalternativen som visas.
+
+    Följande bild visar hur du väljer en rapport.
+
+    ![Uppdateringar installeras](media/service-analyze-in-excel/analyze-excel-06.png)
     
-    ![Hämtar ODC-filen](media/service-analyze-in-excel/analyze-excel-07.png)
+    >[!NOTE]
+    >Kom ihåg att om du väljer Analysera i Excel från en rapportmeny är det rapportens underliggande datauppsättning som hämtas till Excel.
+
+    Power BI-tjänsten skapar sedan en Excel-fil av datauppsättningen som är utformad (och strukturerad) för användning med **Analysera i Excel** och påbörjar en nedladdningsprocess i webbläsaren.
     
-    Filnamnet matchar datauppsättningen (eller rapporten eller någon annan datakälla) som den härleds från. Så om rapporten kallades *Senaste-försäljning*, skulle den nedladdade filen heta **Senaste-försäljning.ODC**.
+    ![Laddar ned Excel-filen](media/service-analyze-in-excel/analyze-in-excel-download-xlsx.png)
 
-3. Starta ODC-filen
+    Filnamnet matchar datauppsättningen (eller rapporten eller någon annan datakälla) som den härleds från. Så om rapporten heter *Kvartalsrapport* skulle den nedladdade filen heta **Kvartalsrapport.xlsx**.
 
-Filen är redan kopplad till **Analysera i Excel**, så när du väljer eller startar ODC-filen, startas Excel och börjar automatiskt läsa in ODC-filen. Du kommer troligen få en varning om ett hot från en extern datakälla:
+3. Öppna Excel-filen.
 
-![Säkerhetsvarning](media/service-analyze-in-excel/analyze-excel-08.png)
+    >[!NOTE]
+    >Första gången du öppnar filen kan du behöva **Aktivera redigering** och sedan **Aktivera innehåll**, beroende på inställningarna för [Skyddad vy](https://support.microsoft.com/en-gb/office/what-is-protected-view-d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653?ui=en-us&rs=en-gb&ad=gb) och [betrodda dokument](https://support.microsoft.com/en-us/office/trusted-documents-cf872bd8-47ec-4c02-baa5-1fdba1a11b53).
+    >
+    >![Skärmbild av Skyddad vy som aktiverar redigeringsbanderoll](media/service-analyze-in-excel/protected-view-enable-editing-banner.png)
+    >
+    >![Skärmbild av betrott dokument som aktiverar innehållsbanderoll](media/service-analyze-in-excel/trusted-document-enable-content-banner.png)
 
-Välj **Aktivera** för att läsa in ODC-filen för **Analysera i Excel** och Excel läser in filen. 
+## <a name="use-excel-to-analyze-the-data"></a>Använd Excel för att analysera data
 
-## <a name="use-excel-to-analyze-the-data"></a>Använda Excel för att analysera data
+När du har aktiverat redigering och innehåll visar Excel en tom **Pivottabell** och listan **Fält** från Power BI-datauppsättningen som är redo att analyseras.
 
-När du tillåter ODC-filen som ska läsas in genom att välja **Aktivera** från säkerhetsmeddelandet visas en tom lista för **Pivottabell** och **Fält** från Power BI-datauppsättningen som är redo att analyseras.
+![Excel med data anslutna](media/service-analyze-in-excel/analyze-in-excel-connected.png)
 
-![Excel med data anslutna](media/service-analyze-in-excel/analyze-excel-09.png)
-
-Odc-filen har en MSOLAP-anslutningssträng som ansluter till din datauppsättning i Power BI. När du analyserar eller arbetar med dina data, ställer Excel frågor till datauppsättningen i Power BI och returnerar resultaten till Excel. Om datauppsättningen ansluter till en datakälla i realtid med hjälp av DirectQuery, frågar Power BI datakällan och returnerar resultatet till Excel.
+Excel-filen har en MSOLAP-anslutningssträng som ansluter till din datauppsättning i Power BI. När du analyserar eller arbetar med dina data, ställer Excel frågor till datauppsättningen i Power BI och returnerar resultaten till Excel. Om datauppsättningen ansluter till en datakälla i realtid med hjälp av DirectQuery, frågar Power BI datakällan och returnerar resultatet till Excel.
 
 Med anslutningen till data i Power BI som nu upprättats kan du skapa pivottabeller och diagram och analysera din datauppsättning precis som om du arbetade med en lokal datauppsättning i Excel.
 
@@ -107,7 +112,7 @@ Det finns några saker att tänka på när du börjar använda Analysera i Excel
 
 
 ### <a name="sign-in-to-power-bi"></a>Logga in i Power BI
-Även om du är inloggad i Power BI i webbläsaren, kan du första gången du öppnar en ny odc-fil i Excel bli ombedd att logga in i Power BI med ditt Power BI-konto. Detta autentiserar anslutningen från Excel till Power BI.
+Även om du är inloggad i Power BI i webbläsaren, kan du första gången du öppnar en ny Excel-fil i Excel bli ombedd att logga in i Power BI med ditt Power BI-konto. Detta autentiserar anslutningen från Excel till Power BI.
 
 ### <a name="users-with-multiple-power-bi-accounts"></a>Användare med flera Power BI-konton
 Vissa användare har flera Power BI-konton. Om du har det, kanske du är inloggad på Power BI med ett konto, men ditt andra konto har åtkomst till datauppsättningen som används i Analysera i Excel. I detta fall kanske du får ett meddelande om **förbud** eller inloggningsfel när du försöker komma åt en datauppsättning som används i en Analysera i Excel-arbetsbok.

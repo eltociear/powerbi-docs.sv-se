@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
-ms.date: 07/16/2020
+ms.date: 07/28/2020
 ms.custom: seodec18, css_fy20Q4
 LocalizationGroup: Premium
-ms.openlocfilehash: 5d6e3af615a73f8e4a3db42406bf94e33f16a2a3
-ms.sourcegitcommit: cfcde5ff2421be35dc1efc9e71ce2013f55ec78f
+ms.openlocfilehash: 8a815f69d4f74ec925c3ac0cc8a84c2a13d80346
+ms.sourcegitcommit: a254f6e2453656f6783690669be8e881934e15ac
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/18/2020
-ms.locfileid: "86459679"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87363972"
 ---
 # <a name="troubleshoot-xmla-endpoint-connectivity"></a>Felsöka anslutning för XMLA-slutpunkt
 
@@ -135,6 +135,10 @@ Personifieringsinställningarna som du kan definiera för providerdatakällorna 
 När du utlöser en schemalagd uppdatering eller uppdatering på begäran i Power BI så uppdaterar Power BI vanligtvis hela datauppsättningen. I många fall är det mer effektivt att utföra uppdateringar mer selektivt. Du kan utföra detaljerade bearbetningsuppgifter i SQL Server Management Studio (SSMS) som visas nedan eller med hjälp av verktyg eller skript från tredje part.
 
 :::image type="content" source="media/troubleshoot-xmla-endpoint/process-tables.png" alt-text="Bearbeta tabeller i SSMS":::
+
+### <a name="overrides-in-refresh-tmsl-command"></a>Åsidosättningar i uppdatera-kommandot för TMSL
+
+Med åsidosättningar i [uppdatera-kommandot (TMSL)](https://docs.microsoft.com/analysis-services/tmsl/refresh-command-tmsl) kan användare välja en annan partitionsfrågedefinition eller datakälldefinition för uppdateringsåtgärden. **Åsidosättningar stöds för närvarande inte** i Power BI Premium. Ett fel – ”Filslutsbindningar kan inte användas i Power BI Premium. Mer information finns i ”support för XMLA-läsa/skriva” i produktdokumentationen.” returneras.
 
 ## <a name="see-also"></a>Se även
 

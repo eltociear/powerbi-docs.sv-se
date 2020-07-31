@@ -6,96 +6,94 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 05/20/2020
+ms.date: 07/24/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: a872c0ada80a7168ebc6bb545de1ad474c4561b7
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 00fba391a6ad92f1e3edaf0e2af9691452724f6e
+ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85226369"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87251654"
 ---
 # <a name="access-power-bi-featured-tables-in-excel-preview"></a>Använda aktuella Power BI-tabeller i Excel (förhandsversion)
 
-I Excel kan du hitta data från aktuella tabeller i Power BI-datauppsättningar i galleriet datatyper. Med aktuella tabeller blir det enklare att lägga till företagsdata i dina Excel-blad. Genom att använda Power BI-certifierade och förbättrade datauppsättningsfunktioner kan organisationer göra det möjligt för fler användare att hitta och använda relevanta data som kan uppdateras för att fatta bättre beslut. Läs mer om att använda [Excel-datatyper från Power BI](https://support.office.com/article/use-excel-data-types-from-power-bi-preview-cd8938ce-f963-444d-b82a-7140848241e9) i Excel-dokumentationen.
+Galleriet Datatyper i Excel innehåller data från *utvalda tabeller* i Power BI-datauppsättningar. Med aktuella tabeller blir det enklare att lägga till företagsdata i dina Excel-blad. Stegen för att använda Power BI-data i Excel-blad ser ut så här:
 
-Galleriet med datatyper visar bara aktuella tabeller som en modellerare har granskat i Power BI-datauppsättningar. Du kan också bläddra i en datauppsättning i Excel som du har åtkomst till i Power BI. I Excel väljer du alternativet **Power BI-datauppsättningar** under **Hämta data** på menyfliken **Data**.
+- En Power BI-datamodellerare [höjer upp eller certifierar en datauppsättning i Power BI](../connect-data/service-datasets-promote.md).
+- Datamodelleraren [identifierar utvalda tabeller](service-create-excel-featured-tables.md) i datauppsättningen och sparar datauppsättningen till Power BI-tjänsten.
+- Resten av organisationen kan ansluta till de utvalda tabellerna i Excel och få relevanta och uppdaterbara data. I Excel kallas dessa tabeller för *datatyper* och finns i galleriet Datatyper.
 
-## <a name="access-power-bi-data-through-the-excel-data-types-gallery"></a>Åtkomst Power BI-data via galleriet för datatyper i Excel
-Aktuella tabeller i Power BI-datauppsättningar visas i galleriet Excel-datatyper på menyfliken Data.
+> [!NOTE]
+> I Excel kan du också hämta data från valfri datauppsättning som du har åtkomst till i Power BI. Gå till menyfliken **Data** och välj **Hämta data** > **Från Power BI (Microsoft)** .
+> :::image type="content" source="media/service-excel-featured-tables/excel-get-data-power-bi.png" alt-text="Skärmbild som visar alternativet för att hämta data från Power BI på menyfliken Data.":::
 
-:::image type="content" source="media/service-excel-featured-tables/excel-data-ribbon.png" alt-text="Menyfliken Excel-data":::
+## <a name="the-excel-data-types-gallery"></a>Galleriet Datatyper i Excel
+Utvalda tabeller i Power BI-datauppsättningar visas som *datatyper* på fliken **Data** i galleriet **Datatyper** i Excel.
 
-När galleriet är expanderat visar galleriet de viktigaste tillgängliga datatyperna.
+:::image type="content" source="media/service-excel-featured-tables/excel-data-ribbon.png" alt-text="Skärmbild som visar galleriet Datatyper på menyfliken Data i Excel.":::
 
-:::image type="content" source="media/service-excel-featured-tables/excel-data-types-gallery.png" alt-text="Galleri för Excel-datatyper":::
+När galleriet är expanderat visas de generiska datatyperna, t.ex. **Stocks** (Aktier) och **Geography** (Geografi), plus de tio främsta **organisationsdatatyper** som du har åtkomst till – utvalda tabeller från Power BI-datauppsättningar.
+
+:::image type="content" source="media/service-excel-featured-tables/excel-data-types-gallery.png" alt-text="Skärmbild som visar galleriet Datatyper i Excel.":::
+
+## <a name="format-a-range-of-cells-as-a-table-optional"></a>Formatera ett cellområde som en tabell (valfritt)
+
+ Innan du börjar rekommenderar vi att du formaterar dina data som en Excel-tabell. På så sätt kommer ändringar som du gör i en rad att tillämpas på de andra raderna i tabellen. 
+
+1. Lägg till en kolumnrubrik. 
+2. Markera sedan en cell i dina data och tryck på CTRL + T. 
+3. Markera **Min tabell har rubriker** > **OK**.
+
+    :::image type="content" source="media/service-excel-featured-tables/excel-format-table.png" alt-text="Skärmbild som visar hur du konverterar ett område till en tabell.":::
+
+## <a name="search-for-power-bi-data-in-the-excel-data-types-gallery"></a>Söka efter Power BI-data i galleriet Datatyper i Excel
+
+När du ska söka efter data i en utvald Power BI-tabell väljer du en cell eller ett område i Excel-bladet som innehåller ett värde som matchar värdet i en utvald tabell. Välj **Organisation**. Excel söker igenom alla utvalda tabeller som du har åtkomst till, och söker efter en matchning.
+
+:::image type="content" source="media/service-excel-featured-tables/excel-table-organization.png" alt-text="Skärmbild som visar hur du väljer en cell eller ett cellområde.":::
  
-Om du vill söka efter data i en aktuell Power BI-tabell väljer du en cell eller ett intervall i ditt Excel-blad.
+Om du vet vilken tabell du letar efter väljer du **Från din organisation (förhandsversion)** i galleriet och väljer den.
 
-:::image type="content" source="media/service-excel-featured-tables/excel-select-cell.png" alt-text="Markera en cell":::
+:::image type="content" source="media/service-excel-featured-tables/excel-organizational-data-table.png" alt-text="Skärmbild som visar organisationsdata i Excel – tabellen för datatypen Suppliers (Leverantörer).":::
  
-Välj alternativet **Organisationsdata** från galleriet för att söka efter data i aktuella tabeller i certifierade datauppsättningar som du har åtkomst till.
+Om Excel hittar matchande rader med hög tillförlitlighet när du söker, länkas cellerna genast till dessa rader. Ikonen för länkat objekt anger att cellerna är länkade till raderna i Power BI.
 
-:::image type="content" source="media/service-excel-featured-tables/excel-organizational-data.png" alt-text="Excel-organisationsdata":::
+:::image type="content" source="media/service-excel-featured-tables/excel-linked-card-icon.png" alt-text="Skärmbild som visar ikonen för länkat objekt.":::
+
+Om en cell har mer än en möjlig matchande rad visas ett frågetecken för cellen och fönstret **Dataväljare** öppnas. I följande exempel valde användaren området B2:B10 och sökte efter en utvald Power BI-tabell. Alla rader hade matchningar utom cell B5, ”Ma Maison”. **Dataväljaren** visar två möjliga matchningar.
+
+:::image type="content" source="media/service-excel-featured-tables/excel-data-selector-pane.png" alt-text="Skärmbild som visar fönstret Dataväljare i Excel.":::
  
-Välj en viss datatyp om du vet vilken typ av data du söker efter eller om du inte hittar matchande rader med alternativet organisationsdata.
+Alternativet för organisationsdata kan returnera rader från flera utvalda tabeller. I Excel grupperas de potentiellt matchande raderna enligt den datatyp de kom från. Excel sorterar datatyperna baserat på deras starkast möjliga matchande rad. Använd piltangenterna för att komprimera och expandera datatyperna till matchande rader.
 
-:::image type="content" source="media/service-excel-featured-tables/excel-select-data-type.png" alt-text="Välj en datatyp":::
+:::image type="content" source="media/service-excel-featured-tables/excel-data-selector-multiple.png" alt-text="Skärmbild som visar fönstret Dataväljare i Excel, med flera möjligheter.":::
  
-När du söker, om en matchande rad med hög exakthet hittas länkas cellen direkt till raden. Ikonen länkat objekt anger att cellen är länkad till raden i Power BI.
+För varje rad väljer du radnamn om du vill se mer information på raden så att du kan välja rätt rad. När du har hittat den trycker du på **Välj** för att länka raden till cellen i Excel. 
 
-:::image type="content" source="media/service-excel-featured-tables/excel-linked-item-icon.png" alt-text="Ikonen länkat objekt":::
-
-Om en cell har flera möjliga matchande rader visas ett dataväljarfönster. I cellen visas frågetecknet som öppnar dataväljarfönstret på den raden. Här är ett exempel när användaren har valt ett intervall från A2:A7 och sökte i en Power BI-funktionstabell.
-
-:::image type="content" source="media/service-excel-featured-tables/excel-multiple-matches.png" alt-text="Flera möjliga matchande rader":::
-
-I **dataväljarfönstret** visas de potentiellt matchande raderna.
-
-:::image type="content" source="media/service-excel-featured-tables/excel-data-selector-pane.png" alt-text="Dataväljarfönstret i Excel":::
+:::image type="content" source="media/service-excel-featured-tables/excel-data-selector-details.png" alt-text="Skärmbild som visar information om dataväljaren.":::
  
-Alternativet organisationsdata kan returnera rader från flera datatyper. I Excel grupperas de potentiellt matchande raderna enligt den datatyp de kom från. Excel sorterar datatyperna baserat på deras starkast möjliga matchande rad. Använd piltangenterna för att komprimera och expandera datatyperna till matchande rader.
-
-:::image type="content" source="media/service-excel-featured-tables/excel-data-selector-multiple.png" alt-text="Dataväljarfönstret i Excel":::
+Om du väljer ikonen för **kort** i cellen visas ett kort med data från fält och beräknade fält i den utvalda tabellen. Kortets rubrik visar värdet för radetikettfältet i den aktuella tabellen.
  
-För varje rad väljer du radnamn om du vill se mer information på raden så att du kan välja rätt rad. När du har hittat en rad trycker du på **Välj** för att länka raden till cellen i Excel. 
+:::image type="content" source="media/service-excel-featured-tables/excel-linked-item-details.png" alt-text="Skärmbild som visar information om länkade objekt.":::
 
-:::image type="content" source="media/service-excel-featured-tables/excel-data-selector-select.png" alt-text="Information om dataväljare":::
- 
-När en rad markeras länkas cellen till raden och dess värde med värdet för fältet **Radetikett** i den aktuella Power BI-tabellen. 
+Välj ikonen för **infogade data** och välj sedan ett fältnamn i listan med fält för att lägga till dess värde i rutnätet.  
 
-:::image type="content" source="media/service-excel-featured-tables/excel-linked-item-icon.png" alt-text="Länkat objekt i Excel":::
- 
-Om du väljer ikonen **Länkad cell** visas ett kort med data från alla fält och beräknade fält i den aktuella tabellen. Kortets rubrik visar värdet för radetikettfältet i den aktuella tabellen.
- 
-:::image type="content" source="media/service-excel-featured-tables/excel-linked-item-details.png" alt-text="Information om länkat objekt":::
+:::image type="content" source="media/service-excel-featured-tables/excel-select-field.png" alt-text="Skärmbild som visar hur du väljer ett fältnamn.":::
 
-Välj ikonen **Infoga data** för att lägga till fältvärden i rutnätet.
+Fältvärdet eller fältvärdena placeras i intilliggande celler. Cellformeln refererar till den länkade cellen och fältnamnet så att du kan använda data i Excel-funktioner.
 
-:::image type="content" source="media/service-excel-featured-tables/excel-insert-data.png" alt-text="Infoga data"::: 
-
-Välj ett fältnamn i listan med fält för att lägga till värdet i rutnätet.  
-
-:::image type="content" source="media/service-excel-featured-tables/excel-select-field.png" alt-text="Välj ett fältnamn":::
-
-Fältvärdet placeras i den angränsande cellen. Cellformeln refererar till den länkade cellen och fältnamnet så att du kan använda data i Excel-funktioner.
-
-:::image type="content" source="media/service-excel-featured-tables/excel-cell-formula.png" alt-text="Excel-cellformel":::
- 
-När du formaterar data som en Excel-tabell expanderar du tabellen och anger kolumnrubriken så att den matchar fältnamnet. Rader som är länkade till samma datatyper fylls också med deras respektive värden.
-
-:::image type="content" source="media/service-excel-featured-tables/excel-field-column-name.png" alt-text="Fältet är kolumnnamnet"::: 
+:::image type="content" source="media/service-excel-featured-tables/excel-cell-formula.png" alt-text="Skärmbild som visar en formel i en cell i Excel.":::
 
 ## <a name="cell-formulas"></a>Cellformler
 
 När du använder en Excel-tabell kan du referera till den länkade tabellkolumnen och sedan lägga till datafält med hjälp av referensen `.` (punkt).
 
-:::image type="content" source="media/service-excel-featured-tables/excel-dot-reference.png" alt-text="Referens för Excel-period":::
+:::image type="content" source="media/service-excel-featured-tables/excel-dot-reference.png" alt-text="Skärmbild som visar en Excel-punktreferens.":::
 
 På samma sätt som du använder en cell kan du referera till cellen och använda referensen `.` (period) för att hämta fält.
 
-:::image type="content" source="media/service-excel-featured-tables/excel-cell-dot-reference.png" alt-text="Cellperiodreferens":::
+:::image type="content" source="media/service-excel-featured-tables/excel-cell-dot-reference.png" alt-text="Skärmbild som visar en cellpunktsreferens.":::
  
 ## <a name="data-caching-and-refresh"></a>Cachelagring av data och uppdatering
 
@@ -103,24 +101,25 @@ När Excel länkar en cell till en rad i en aktuell Power BI-tabell hämtas och 
 
 Använd knappen **Uppdatera alla** i menyfliksområdet **Data** för att uppdatera data i länkade celler. 
 
-:::image type="content" source="media/service-excel-featured-tables/excel-refresh-all.png" alt-text="Uppdatera alla":::
+:::image type="content" source="media/service-excel-featured-tables/excel-refresh-all.png" alt-text="Skärmbild som visar Uppdatera allt.":::
  
 Du kan också uppdatera enskilda celler. Högerklicka på cellen och välj **Datatyper** > **Uppdatera**.
 
 ## <a name="show-a-card-change-or-convert-to-text"></a>Visa ett kort, ändra eller konvertera till text
 
-Länkade celler har lagt till snabbmenyalternativ. Högerklicka på en cell > välj **Datatyp** >  
+Länkade celler har lagt till snabbmenyalternativ. Högerklicka på en cell. Förutom de vanliga alternativen finns alternativ som:
 
-- **Visa kort**
-- **Uppdatera**
-- **Ändra** 
+- **Visa kortet för en datatyp**.
+- **Uppdatera**.
+- **Ändra**.
 - **Konvertera till text**.
 
-:::image type="content" source="media/service-excel-featured-tables/excel-right-click-data-type.png" alt-text="Högerklicka, konvertera till text":::
+:::image type="content" source="media/service-excel-featured-tables/excel-right-click-data-type.png" alt-text="Skärmbild som visar hur du högerklickar och konverterar till text.":::
  
 **Konvertera till text** tar bort länken till raden i den aktuella Power BI-tabellen. Det är viktigt att texten i cellen är radetikettvärdet i den länkade cellen. Om du har länkat en cell till en rad som du inte har tänkt dig väljer du **Ångra** i Excel för att återställa de inledande cellvärdena.
 
 ## <a name="licensing"></a>Licensiering
+
 Galleriet för Excel-datatyper och anslutna upplevelser för aktuella Power BI-tabeller är bara tillgängligt för Excel E5- och G5-kunder. 
 
 ## <a name="security"></a>Säkerhet
@@ -128,39 +127,6 @@ Galleriet för Excel-datatyper och anslutna upplevelser för aktuella Power BI-t
 Du kan bara se aktuella tabeller från datauppsättningar som du har behörighet till i Power BI. När du uppdaterar data måste du ha behörighet att komma åt datauppsättningen i Power BI för att hämta raderna. Detta kräver kompilerings- eller skrivrättigheter till datauppsättningen. Excel cachelagrar data som returneras för hela raden. Alla som du delar Excel-filen med kan se data för alla fält i alla länkade celler.
 
 Om en Power BI-datauppsättning har säkerhet på radnivå eller om en etikett för Microsoft Information Protection-känslighet används ingår inte aktuella tabeller från den datauppsättningen i galleriet för Excel-datatyper. Detta är en begränsning som gäller för förhandsversionen.
-
-## <a name="curate-a-featured-table-in-power-bi-desktop"></a>Organisera en aktuell tabell i Power BI Desktop
-Galleriet Excel-datatyper visar aktuella tabeller i datauppsättningar som laddats upp till Power BI-tjänsten. Använd Power BI Desktop för att granska aktuella tabeller i datamodellen och ladda upp dem till Power BI-tjänsten.
-
-### <a name="turn-on-the-featured-table-preview"></a>Aktivera förhandsgranskning av aktuell tabell
-
-1. I Power BI Desktop väljer du **Arkiv** > **Alternativ och inställningar** > **Alternativ** > **Förhandsvisningsfunktioner**.
-2. Markera kryssrutan **Aktuella tabeller**.
-
-    :::image type="content" source="media/service-excel-featured-tables/power-bi-preview-featured-tables.png" alt-text="Förhandsvisning av alternativet aktuella tabeller":::
-
-### <a name="select-a-table"></a>Välj en tabell
-
-1. Gå till modellvy i Power BI Desktop
-
-    :::image type="content" source="media/service-excel-featured-tables/power-bi-model-view.png" alt-text="Modellvy":::
- 
-2. Välj en tabell och ställ in **Är aktuell tabell** på **Ja**.
-
-    :::image type="content" source="media/service-excel-featured-tables/power-bi-featured-table-yes.png" alt-text="Ställ in Är aktuell tabell på Ja":::
-
-4. Ange de obligatoriska fälten i **Konfigurera den här aktuella tabellen**:
-
-    - En **Beskrivning**:
-    - Fältvärdet **radetikett** används i Excel så att användarna enkelt kan identifiera raden. Den visas som cellvärdet för en länkad cell i **dataväljarfönstret** och på kortet **Information**. 
-    - **Nyckelkolumnen** fältvärde innehåller det unika ID:t för raden. Med det här värdet kan Excel länka en cell till en viss rad i tabellen.
-
-    :::image type="content" source="media/service-excel-featured-tables/power-bi-set-up-featured-table.png" alt-text="Konfigurera aktuell tabell":::
-
-När du har publicerat eller importerat datauppsättningen till Power BI-tjänsten visas den aktuella tabellen i galleriet Excel-datatyper.
-
-- Excel cachelagrar listan med datatyper så att du måste starta om Excel för att se nyligen publicerade aktuella tabeller.
-- Vissa datauppsättningar stöds inte i förhandsversionen och aktuella tabeller som definierats i dessa datauppsättningar visas inte i Excel. Se Överväganden och begränsningar för mer information.
 
 ## <a name="administrative-control"></a>Administrativ kontroll
 
@@ -193,7 +159,7 @@ Här följer begränsningar för den inledande förhandsversionen:
     - Mått som definierats i funktionstabellen.
     - Mått som definierats för relaterade tabeller och införstådda mått som beräknas utifrån relationer.
 
-- Excel visar bara aktuella tabeller som lagras i de nya Power BI-arbetsytorna. Aktuella tabeller som lagras i de klassiska arbetsytorna eller min arbetsyta visas inte som datatyper i Excel. Du kan [Uppgradera klassiska arbetsytor till de nya arbetsytorna](service-upgrade-workspaces.md) i Power BI.
+- Excel visar bara utvalda tabeller (*datatyper*) som lagras i de nya Power BI-arbetsytorna. Aktuella tabeller som lagras i de klassiska arbetsytorna eller min arbetsyta visas inte som datatyper i Excel. Du kan [Uppgradera klassiska arbetsytor till de nya arbetsytorna](service-upgrade-workspaces.md) i Power BI.
 
 Datatyp-upplevelsen i Excel liknar en sökfunktion. Det tar ett cellvärde från Excel-bladet och söker efter matchande rader i aktuella Power BI-tabeller. Sökfunktionen har följande beteenden:
 
@@ -213,5 +179,7 @@ Datatyp-upplevelsen i Excel liknar en sökfunktion. Det tar ett cellvärde från
 
 ## <a name="next-steps"></a>Nästa steg
 
+- [Definiera utvalda tabeller i Power BI Desktop](service-create-excel-featured-tables.md)
+- Mer information om [hur du använder Excel-datatyper från Power BI](https://support.office.com/article/use-excel-data-types-from-power-bi-preview-cd8938ce-f963-444d-b82a-7140848241e9) finns i Excel-dokumentationen.
 - Har du några frågor? [Prova Power BI Community](https://community.powerbi.com/)
 

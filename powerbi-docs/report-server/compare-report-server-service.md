@@ -8,13 +8,13 @@ ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc
-ms.date: 07/08/2020
-ms.openlocfilehash: 34f4265444d030902474c740dda91f8431d36625
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.date: 07/27/2020
+ms.openlocfilehash: c91642a08642a52b333ccba14078068eaa9ba616
+ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86216539"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87252876"
 ---
 # <a name="comparing-power-bi-report-server-and-the-power-bi-service"></a>En jämförelse av Power BI-rapportservern och Power BI-tjänsten
 
@@ -48,6 +48,7 @@ Power BI-rapportservern och Power BI-tjänsten har många likheter och vissa vik
 | E-postprenumerationer för sidnumrerade rapporter | Ja | Ja | [Skapa en prenumeration åt dig själv och andra på en sidnumrerad rapport i Power BI-tjänsten](../consumer/paginated-reports-subscriptions.md)<br><br>[E-postleverans i Reporting Services](https://docs.microsoft.com/sql/reporting-services/working-with-subscriptions-web-portal)  |
 | Datavarningar | Nej | Ja | [Datavarningar](../create-reports/service-set-data-alerts.md) i Power BI-tjänsten
 | Säkerhet på radnivå (RLS) | Ja | Ja | Tillgängligt i både DirectQuery- (datakälla) och Import-läge <br><br>Säkerhet på radnivå (RLS) med [Power BI-tjänsten](../admin/service-admin-rls.md) <br><br>Säkerhet på radnivå (RLS) i [Power BI-rapportservern](row-level-security-report-server.md) |
+| Detaljerad korsrapport | Nej | Ja | [Använda detaljerade korsrapporter](../create-reports/desktop-cross-report-drill-through.md) |
 | Helskärmsläge | Nej | Ja | [Helskärmsläge](../consumer/end-user-focus.md) i Power BI-tjänsten |
 | Avancerat Microsoft 365-samarbete | Nej | Ja | [Samarbeta på en arbetsyta](../collaborate-share/service-collaborate-power-bi-workspace.md) med Microsoft 365 |
 | R-skript och kontroller | Nej | Ja | [Skapa R-kontroller](../create-reports/desktop-r-visuals.md), kör R-skript i Power BI Desktop och publicera dem till Power BI-tjänsten. Du kan inte spara Power BI-rapporter med R-skript eller kontroller till Power BI-rapportserver.  |

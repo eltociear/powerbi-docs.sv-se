@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 835feb7c7535a50a10c736464d8366f1f7bf910a
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: 8cbc5d3018f16cecd5013dab2d4da01b0a69ef9f
+ms.sourcegitcommit: a254f6e2453656f6783690669be8e881934e15ac
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83565889"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87363949"
 ---
 # <a name="formula-editor-in-power-bi-desktop"></a>Formelredigeraren i Power BI Desktop
 
@@ -61,5 +61,5 @@ Du kan använda följande kortkommandon för att öka produktiviteten och effekt
 Följande artiklar innehåller mer information om formler och DAX i Power BI Desktop.
 
 * [DAX-grunder i Power BI Desktop](desktop-quickstart-learn-dax-basics.md)
-* [Lär dig DAX för Power BI](https://docs.microsoft.com/power-bi/guided-learning/introductiontodax?tutorial-step=1)
+* Microsoft Learn-kurs om [DAX i Power BI Desktop](https://docs.microsoft.com/learn/paths/dax-power-bi/)
 * [DAX-referens](/dax/)

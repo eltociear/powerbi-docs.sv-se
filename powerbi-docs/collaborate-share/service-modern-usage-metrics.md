@@ -1,5 +1,5 @@
 ---
-title: Övervaka användningsstatistik i den nya arbetsytan
+title: Övervaka användningsstatistik på den nya arbetsytan (förhandsversion)
 description: Så här visar, sparar och använder du användningsstatistik i den nya arbetsytan för Power BI-instrumentpaneler och rapporter.
 author: maggiesMSFT
 ms.author: maggies
@@ -8,14 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/22/2020
+ms.date: 07/22/2020
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 380fe94a123c26d7502ce68bc21372f791a3508f
-ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
+ms.openlocfilehash: 7c8c1744c8ecbbf170ae073d2e302fe55faea55b
+ms.sourcegitcommit: e9cd61eaa66eda01cc159251d7936a455c55bd84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86162053"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86953040"
 ---
 # <a name="monitor-usage-metrics-in-the-new-workspace-experience"></a>Övervaka användningsstatistik i den nya arbetsytan
 
@@ -65,6 +65,9 @@ När du visar den förbättrade användningsstatistikrapporten enligt följande 
 ### <a name="usage-metrics-report-dataset"></a>Datauppsättning för användningsstatistikrapport
 
 Den förbättrade användningsstatistikrapporten förlitar sig på en datauppsättning för användningsstatistikrapport som Power BI skapar automatiskt när du startar den förbättrade användningsstatistikrapporten första gången. Power BI uppdaterar datauppsättningen dagligen. Du kan inte ändra uppdateringsschemat, men du kan uppdatera de autentiseringsuppgifter som Power BI använder för att uppdatera användningsstatistikdata. Det kan vara nödvändigt att återuppta schemalagd uppdatering om autentiseringsuppgifterna upphör att gälla om du tog bort den användare som först startade användningsstatistikrapporten från arbetsytan där datauppsättningen finns.
+
+> [!NOTE]
+> Datauppsättningen för användningsstatistik finns fortfarande bara som förhandsversion, och mindre ändringar kan förekomma som påverkar anpassade rapporter.  
 
 ### <a name="usage-metrics-report-pages"></a>Sidor i användningsstatistikrapporten
 
