@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 04/28/2020
-ms.openlocfilehash: 865b60800b68aed410f10964148afdf2791b1ae1
-ms.sourcegitcommit: 9c72ec6b2d6d4574c86e976a65c076764473482d
+ms.date: 07/27/2020
+ms.openlocfilehash: 4f4650d47e420313075509301e940bf7092d4d5a
+ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "83279168"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87252853"
 ---
 # <a name="supported-data-sources-for-power-bi-paginated-reports"></a>Datakällor som stöds för sidnumrerade Power BI-rapporter
 
@@ -29,7 +29,7 @@ Sidnumrerade rapporter har inbyggt stöd för följande lista av datakällor:
 | Azure SQL-hanterad instans | Grundläggande | via offentlig eller privat slutpunkt (privat slutpunkt måste dirigeras via Enterprise Gateway)  |
 | Azure Analysis Services | Enkel inloggning, OAuth2 | AAS-brandväggen måste inaktiveras eller konfigureras så att alla IP-intervall tillåts.|
 | Power BI-datamängd | Enkel inloggning | Premium-baserade och icke-Premium-baserade Power BI-datamängder. Kräver läs-behörighet |
-| Premium Power BI-datamängd (XMLA) | Enkel inloggning |   |
+| Premium Power BI-datamängd (XMLA) | Enkel inloggning | Power BI-datamängder stöds inte som datakälla för inbäddade sidnumrerade rapporter.  |
 | Ange data | Saknas | Data bäddas in i rapporten. |
 
 Förutom Azure SQL Database är alla data källor redo att användas när du har laddat upp rapporten till Power BI-tjänsten. Datakällorna använder som standard enkel inloggning (SSO) där det är tillämpligt. För Azure Analysis Services kan du ändra autentiseringstypen till OAuth2. Men när autentiseringstypen för en specifik datakälla har ändrats till OAuth2 går det inte att återgå till att använda SSO.  Dessutom gäller den här ändringen alla rapporter som använder datakällan på alla arbetsytor för en specifik klient.  Säkerhet på radnivå i sidnumrerade rapporter fungerar inte om användarna väljer SSO för autentiseringstyp.

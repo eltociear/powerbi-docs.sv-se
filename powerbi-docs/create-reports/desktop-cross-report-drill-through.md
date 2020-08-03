@@ -1,22 +1,22 @@
 ---
-title: Använd visning av detaljerad information mellan rapporter i Power BI Desktop
+title: Använda visning av detaljerad information mellan rapporter i Power BI Desktop
 description: Lär dig mer om visa detaljerad information från en rapport till en annan i Power BI Desktop
 author: maggiesMSFT
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 01/16/2019
+ms.date: 07/27/2020
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 7589858749585cb506d4f313557abcb889b506c9
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: a22610ea8ca3b7a26763a435b98bf7c114e1bfa0
+ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85221728"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87252830"
 ---
-# <a name="use-cross-report-drillthrough-in-power-bi"></a>Använda visning av detaljerad information mellan rapporter i Power BI
+# <a name="use-cross-report-drill-through-in-power-bi"></a>Använda visning av detaljerad information mellan rapporter i Power BI
 
 Med funktionen för *Visa detaljerad information mellan rapporter* i Power BI kan du gå från en rapport till en annan baserat på sammanhang i samma Power BI-arbetsyta eller app. Du kan använda visning av detaljerad information mellan rapporter för att ansluta två eller flera rapporter som har relaterat innehåll och för att skicka filterkontexten tillsammans med anslutningen mellan rapporterna. 
 
@@ -33,7 +33,7 @@ Den här artikeln visar hur du konfigurerar och använder detaljerad visning av 
 > [!NOTE]
 > Du kan inte använda visning av detaljerad information mellan rapporter med [Delat med mig-rapporter](../collaborate-share/service-share-dashboards.md#share-a-dashboard-or-report) som delas enskilt. Om du vill använda visning av detaljerad information mellan rapporter måste du öppna rapporterna på arbetsytor som du är medlem i.
 
-## <a name="enable-cross-report-drillthrough"></a>Aktivera detaljerad information mellan rapporter
+## <a name="enable-cross-report-drill-through"></a>Aktivera detaljerad information mellan rapporter
 
 Det första steget i att aktivera visning av detaljerad information mellan rapporter är att godkänna datamodellerna för käll- och målrapporter. Även om scheman i varje rapport inte behöver vara samma måste fälten som du vill skicka finnas i båda datamodellerna. Namnen på fälten och namnen på de tabeller som de tillhör måste vara identiska. Strängarna måste matcha, och de är skiftlägeskänsliga.
 
@@ -55,7 +55,7 @@ Du kan också aktivera visning av detaljerad information mellan rapporter från 
    
    ![Aktivera visning av detaljerad information mellan rapporter i Power BI-tjänsten](media/desktop-cross-report-drill-through/cross-report-drill-through-02a.png)
 
-## <a name="set-up-a-cross-report-drillthrough-target"></a>Konfigurera ett mål för visning av detaljerad information mellan rapporter
+## <a name="set-up-a-cross-report-drill-through-target"></a>Konfigurera ett mål för visning av detaljerad information mellan rapporter
 
 Att konfigurera en målsida för visning av detaljerad information mellan rapporter påminner om att konfigurera visning av detaljerad information inom en rapport. Genom att aktivera visning av detaljerad information på målsidan kan andra visuella objekt använda sidan som mål för visning av detaljerad information. Läs [Använd detaljinformation i Power BI Desktop](desktop-drillthrough.md) om du vill skapa visning av detaljerad information i en enskild rapport.
 
@@ -72,7 +72,7 @@ Du kan konfigurera ett mål för visning av detaljerad information mellan rappor
 
 Och sedan är du klar. Nu kan du använda visning av detaljerad information mellan rapporter i rapporterna. 
 
-## <a name="use-cross-report-drillthrough"></a>Använd detaljerad information mellan rapporter
+## <a name="use-cross-report-drill-through"></a>Använda visning av detaljerad information mellan rapporter
 
 Om du vill använda visning av detaljerad information mellan rapporter väljer du källrapporten i Power BI-tjänsten och ett visuellt objekt som använder fältet för visning av detaljerad information på sättet som du angav när du konfigurerade målsidan. Högerklicka sedan på en datapunkt för att öppna den visuella snabbmenyn och välj **Visning av detaljerad information** och sedan målet för visning av detaljerad information. Mål för visning av detaljerad information mellan rapporter formateras som **Sidnamn [Rapportnamn]** .
 
@@ -100,9 +100,13 @@ För visning av detaljerad information mellan rapporter överför Power BI filte
 
 Använd webbläsarens **Bakåt**-knapp om du vill återgå till källrapporten efter åtgärden för detaljerad information mellan rapporter. 
 
+## <a name="considerations-and-limitations"></a>Överväganden och begränsningar
+
+Visning av detaljerad information mellan rapporter fungerar inte i Power BI-rapporter i Power BI-rapportserver.
+
 ## <a name="next-steps"></a>Nästa steg
 
 Följande artiklar kan också vara av intresse för dig:
 
 - [Utsnitt i Power BI](../visuals/power-bi-visualization-slicers.md)
-- [Använd detaljinformation i Power BI Desktop](desktop-drillthrough.md)
+- [Använda detaljvisning i Power BI Desktop](desktop-drillthrough.md)

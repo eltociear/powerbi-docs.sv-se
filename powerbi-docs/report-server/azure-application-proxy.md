@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
-ms.date: 05/27/2020
+ms.date: 07/28/2020
 ms.author: maggies
-ms.openlocfilehash: f4237379ffefeeb7ba9d105f5fbd61ff84959807
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 1a9fbfc5d764a9dbda75bd60e0efb6da55efd202
+ms.sourcegitcommit: a254f6e2453656f6783690669be8e881934e15ac
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85239526"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87364087"
 ---
 # <a name="configure-power-bi-report-server-with-azure-application-proxy"></a>Konfigurera en Power BI-rapportserver med Azure-programproxy
 
@@ -110,7 +110,7 @@ Vi måste konfigurera delegeringsinställningar på rapportserverns tjänstkonto
 3. Vi vill konfigurera begränsad delegering med protokollövergång. Med begränsad delegering, måste du vara uttrycklig med vilka tjänster vi vill delegera till.
 4. Högerklicka på **rapportserverkontot** och välj **Egenskaper**.
 5. Välj fliken **delegering**.
-6. Välj **lita på den här datorn enbart för delegering till angivna tjänster**.
+6. Välj **Den här användaren är endast betrodd för delegering till de tjänster som anges**.
 7. Välj **Använd valfritt autentiseringsprotokoll**.
 8. Under **Tjänster som det här kontot kan ge delegerade autentiseringsuppgifter till** väljer du **Lägg till**.
 9. I den nya dialogrutan väljer du **Användare eller datorer**.

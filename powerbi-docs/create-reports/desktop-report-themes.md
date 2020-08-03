@@ -7,15 +7,15 @@ ms.custom: contperfq4
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 06/01/2020
+ms.date: 07/28/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 48ff2852f2c7df3a1b005d730a3f91dc9e434f62
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: fdd08c32277dfaa9a619b024a7fb0ece0517f1cb
+ms.sourcegitcommit: a254f6e2453656f6783690669be8e881934e15ac
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85232248"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87364110"
 ---
 # <a name="use-report-themes-in-power-bi-desktop"></a>Använda rapportteman i Power BI Desktop
 
@@ -44,6 +44,9 @@ Om du vill använda ett rapporttema i en Power BI Desktop-rapport kan du välja 
 
 Vi tar en titt på vart och ett av dessa alternativ.
 
+> [!NOTE]
+> Du kan bara använda teman när du använder Power BI Desktop. Du kan inte använda teman i befintliga rapporter i Power BI-tjänsten. 
+
 ### <a name="built-in-report-themes"></a>Inbyggda rapportteman
 
 Så här väljer du bland tillgängliga inbyggda rapportteman:
@@ -62,7 +65,7 @@ Så här väljer du bland tillgängliga inbyggda rapportteman:
     
     | Inbyggt rapporttema | Standardfärgsekvens |
     |------ |---------- |
-    | Standard | ![Standard](media/desktop-report-themes/report-themes-color-scheme-default.png)|
+    | Default | ![Standard](media/desktop-report-themes/report-themes-color-scheme-default.png)|
     | Highrise | ![Highrise](media/desktop-report-themes/report-themes-color-scheme-highrise.png)|
     | Chef | ![Chef](media/desktop-report-themes/report-themes-color-scheme-executive.png)|
     | Gräns| ![Gräns](media/desktop-report-themes/report-themes-color-scheme-frontier.png)|
@@ -198,6 +201,15 @@ Så här visar du tillgängliga färger i ett rapporttema:
 I vårt exempel tillämpar vi först de många gröna och bruna färgerna från St. Patrick's Day-temat och visar sedan temafärgerna. Ser du allt det gröna? Det beror på att färgerna ingick i det rapporttema som vi importerade och använde.
 
 Färgerna på färgpaletten styrs av det aktuella temat. Anta till exempel att du väljer den tredje färgen på den översta raden för en datapunkt. Om du senare byter till ett annat tema uppdateras datapunktens färg automatiskt till den tredje färgen på den översta raden i det nya temat, precis som när du ändrar teman i Microsoft Office.
+
+Om du anger en rapporttema ändras standardfärgerna som används i visuella objekt i rapporten. Power BI har en lista med hundratals färger, så att de visuella objekten har massor av unika färger att visa i en rapport. När Power BI tilldelar färger till en serie för ett visuellt objekt väljs färger enligt en först till kvarn-princip när seriefärger tilldelas. När du importerar ett tema återställs mappningen av färger för dataserien. 
+
+Power BI spårar färgen för en dynamisk serie och använder samma färg för värdet i andra visuella objekt. I en *dynamisk serie* kan antalet serier som presenteras i visuella objekt ändras baserat på mått, värden eller andra aspekter. Om du till exempel visar *vinst per region* i en rapport kan antalet säljregioner du har vara fem eller så kan det vara nio. Antalet regioner är dynamiskt, så det anses vara en dynamiska serie. 
+
+Och för *statiska serier* är antalet serier känt. Till exempel är *vinst* och *intäkter* statiska serier. I statiska serier tilldelar Power BI färger efter index i temapaletterna. Du kan åsidosätta den standardinställda färgtilldelningen genom att välja en färg i formateringsrutan under **Datafärger**. Du kanske måste ändra utsnittsmarkeringarna för att se alla potentiella serievärden, och även ange deras färger. Om du uttryckligen anger en färg för ett enstaka visuellt objekt med rutan **Egenskaper** gäller inte det importerade temat för några av dessa uttryckligen definierade färger. 
+
+Om du vill tillåta att temat används för dessa uttryckligen valda färger använder du **Återgå till standard** i **Datafärger** för det visuella objekt som färger uttryckligen har angetts för, för att ångra den uttryckliga färganvändningen och låta temat användas.
+
 
 ### <a name="situations-when-report-theme-colors-wont-stick-to-your-reports"></a>Situationer när rapportens temafärger inte behålls i rapporterna
 
@@ -365,7 +377,7 @@ I följande tabell visas denna information:
 
 |Primärklass  |Sekundära klasser  |JSON-klassnamn  | Standardinställningar  |Associerade visuella objekt  |
 |---------|---------|---------|---------|---------|
-| Bildtext | Saknas | bildtext | DIN <br> #252423 <br> 45pt |Kortdataetiketter <br> KPI-indikatorer|
+| Bildtext | Ej tillämpligt | bildtext | DIN <br> #252423 <br> 45pt |Kortdataetiketter <br> KPI-indikatorer|
 |Sidhuvud|Saknas|sidhuvud|Segoe UI Semibold <br> #252423 <br> 12 pt |Sidhuvud med viktiga påverkare |
 | Rubrik || rubrik |DIN <br> #252423 <br> 12 pt |Rubrik för kategoriaxel <br> Rubrik för värdeaxel <br> Flerradskortsrubrik * <br> Sidhuvud för utsnitt|
 |-| Stor rubrik | stor rubrik |14pt |Visuell rubrik |

@@ -7,19 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
-ms.date: 02/13/2020
-ms.openlocfilehash: 3f4538639765f62387fe6b4e493886f85ba22c3d
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.date: 07/24/2020
+ms.openlocfilehash: d361430387d9c24b8b4ef0b673c50cf4cec5a24b
+ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85239351"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87252620"
 ---
 # <a name="install-power-bi-desktop-optimized-for-power-bi-report-server"></a>Installera Power BI Desktop som har optimerats för Power BI-rapportservern
 
-Om du vill skapa Power BI-rapporter för Power BI-rapportservern måste du hämta och installera den version av Power BI Desktop som är optimerad för Power BI-rapportserver. Den här versionen skiljer sig från Power BI Desktop som används med Power BI-tjänsten. Versionen av Power BI Desktop för Power BI-tjänsten innehåller till exempel förhandsgranskningsfunktioner som inte är tillgängliga i Power BI-rapportserverversionen förrän de är allmänt tillgängliga. Om du använder den här versionen, se till att rapportservern kan interagera med en känd version av rapporter och modeller. 
+Om du vill skapa Power BI-rapporter för Power BI-rapportservern måste du hämta och installera den version av Power BI Desktop som är optimerad för Power BI-rapportserver. Den här versionen skiljer sig från Power BI Desktop som används med Power BI-tjänsten. Till exempel innehåller versionen av Power BI Desktop för Power BI-tjänsten förhandsgranskningsfunktioner. Dessa funktioner finns inte i Power BI-rapportserverversionen förrän de är allmänt tillgängliga. Om du använder den här versionen, se till att rapportservern kan interagera med en känd version av rapporter och modeller. 
 
-Den bra nyheten är att du kan installera Power BI Desktop och Power BI Desktop som har optimerats för Power BI-rapportservern sida vid sida på samma dator.
+Oroa dig inte. Du kan installera Power BI Desktop och Power BI Desktop som är optimerad för Power BI-rapportserver sida vid sida på samma dator.
 
 ## <a name="download-and-install-power-bi-desktop"></a>Ladda ner och installera Power BI Desktop
 
@@ -38,27 +38,27 @@ Det enklaste sättet att se till att du har den senaste versionen av Power BI De
     - **PBIDesktopRS.msi** (32-bitarsversionen) eller
     - **PBIDesktopRS_x64.msi** (64-bitarsversionen).
 
-1. När du har hämtat installationsprogrammet kör du installationsguiden för Power BI Desktop (september 2019).
+1. När du har hämtat installationsprogrammet kör du installationsguiden för Power BI Desktop.
 
 2. I slutet av installationen väljer du **Starta Power BI Desktop**.
 
     Det startar automatiskt och du är redo att sätta igång.
 
 ## <a name="verify-youre-using-the-correct-version"></a>Kontrollera att du använder rätt version
-Det är enkelt att kontrollera att du använder rätt version av Power BI Desktop: Titta på startskärmen eller namnlisten i Power BI Desktop. Du kan se att du har rätt version eftersom det står **Power BI Desktop (september 2019)** i namnlisten. Power BI-logotypens färger är dessutom spegelvända, gult på svart istället för svart på gult.
+Det är enkelt att kontrollera att du använder rätt version av Power BI Desktop: Titta på startskärmen eller namnlisten i Power BI Desktop. Du kan se att du har rätt version eftersom det står **Power BI Desktop (maj 2020)** i namnlisten. Power BI-logotypens färger är dessutom spegelvända, gult på svart istället för svart på gult.
 
-![Power BI Desktop september 2019](media/install-powerbi-desktop/power-bi-report-server-desktop-sept-2019.png)
+![Power BI Desktop maj 2020](media/install-powerbi-desktop/power-bi-report-server-desktop-may-2020.png)
 
 Versionen av Power BI Desktop för Power BI-tjänsten har inte månaden och året i namnlisten.
 
 ## <a name="file-extension-association"></a>Association för filtillägg
-Om du installerar både Power BI Desktop och Power BI Desktop som har optimerats för Power BI-rapportservern på samma dator har den senaste installationen av Power BI Desktop en filassociation med .pbix-filer. Det innebär att den Power BI Desktop-version som installerades senast öppnas när du dubbelklickar på en pbix-fil.
+Anta att du har installerat både Power BI Desktop och Power BI Desktop som är optimerad för Power BI-rapportserver på samma dator. Din senaste installation av Power BI Desktop har filassociationen med .pbix-filer. Det innebär att den Power BI Desktop-version som installerades senast öppnas när du dubbelklickar på en pbix-fil.
 
 Om du har Power BI Desktop och sedan installerar Power BI Desktop som har optimerats för Power BI-rapportservern öppnas alla pbix-filer i Power BI Desktop som är optimerat för Power BI-rapportservern som standard. Om du hellre vill att Power BI Desktop ska vara standard för att öppna pbix-filer kan du installera om [Power BI Desktop från Microsoft Store](https://aka.ms/pbidesktopstore).
 
 Du kan alltid öppna den version av Power BI Desktop som du vill använda först. Och sedan öppna filen i Power BI Desktop.
 
-När du redigerar en Power BI-rapport från Power BI-rapportservern eller skapar en ny Power BI-rapport från webbportalen öppnas alltid rätt version av Power BI Desktop.
+Här är det säkraste sättet att alltid öppna rätt version av Power BI Desktop. Börja redigera en Power BI-rapport från Power BI-rapportserver eller skapa en ny Power BI-rapport från Power BI-tjänsten.
 
 ## <a name="considerations-and-limitations"></a>Överväganden och begränsningar
 
@@ -100,12 +100,6 @@ Det finns inget stöd för anpassad säkerhet i Power BI Desktop optimerad för 
 ### <a name="saving-reports-to-a-power-bi-report-server-in-a-different-domain"></a>Spara rapporter på en Power BI-rapportserver i en annan domän
 
 När du sparar en Power BI-rapport på en Power BI-rapportserver används dina Windows-autentiseringsuppgifter. Du kan inte spara direkt på en rapportserver i en annan domän än den där dina Windows-autentiseringsuppgifter gäller. Du kan visa rapportservern i en webbläsare och manuellt ladda upp filen från datorn i stället.
-
-## <a name="power-bi-desktop-for-earlier-versions-of-power-bi-report-server"></a>Power BI Desktop för tidigare versioner av Power BI-rapportserver
-
-Om din rapportserver är en tidigare version behöver du motsvarande version av Power BI Desktop. Här är länken för att ladda ned en tidigare version.
-
-- Microsoft Power BI Desktop ([Optimerad för Power BI Report Server – september 2019](https://go.microsoft.com/fwlink/?linkid=2103723))
 
 ## <a name="next-steps"></a>Nästa steg
 

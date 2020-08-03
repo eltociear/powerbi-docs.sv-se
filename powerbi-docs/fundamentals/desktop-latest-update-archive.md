@@ -6,21 +6,26 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/15/2020
+ms.date: 07/22/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: f0eef1441eb0bb87b6e7b85e791c47174c752bc7
-ms.sourcegitcommit: 11deeccf596e9bb8f22615276a152614f7579f35
+ms.openlocfilehash: 01155e3ed4921a11f87acaeaf67f20772a4d01dd
+ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "86409431"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87252761"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Tidigare månadsuppdateringar till Power BI Desktop
 
 Den här artikeln beskrivs tidigare uppdateringar av **Power BI Desktop**. Den senaste månatliga utgåvan finns i [**Power BI Desktop** senaste uppdateringar](desktop-latest-update.md).
 
 Skaffa den senaste versionen av Power BI Desktop från [Download Center](https://www.microsoft.com/download/details.aspx?id=58494). Om du kör Windows 10 kan du även hämta Power BI Desktop från Windows Store i Windows 10. Oavsett hur du installerar Power BI Desktop är månadsversionerna desamma, men versionsnumreringen kan variera. Mer information om hur du laddar ned och installerar Power BI Desktop finns i [Hämta Power BI Desktop](desktop-get-the-desktop.md). 
+
+
+> [!IMPORTANT]
+> Power BI Desktop uppdateras och publiceras varje månad, så att du kan inkludera kundfeedback och nya funktioner. Endast den senaste versionen av Power BI Desktop stöds. Kunder som kontaktar support för Power BI Desktop uppmanas att uppgradera till den senaste versionen. Du kan hämta den senaste versionen av Power BI Desktop från [Windows Store](https://aka.ms/pbidesktopstore) eller som en enda körbar fil som innehåller alla språk som stöds och som du [laddar ned](https://www.microsoft.com/download/details.aspx?id=58494) och installerar på datorn.
+
 
 Länkarna bredvid varje uppdatering innebär följande:
 

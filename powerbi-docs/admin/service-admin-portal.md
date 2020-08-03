@@ -10,12 +10,12 @@ ms.date: 05/12/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: f2fb659188a5c413ec7a203c6f1a55bb24826c15
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 90cd12bc7d8d7261e25edd32c5afa7cf144e8202
+ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85228735"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87252531"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administrera Power BI i Admin-portalen
 
@@ -185,6 +185,7 @@ Administrationsportalen har två avsnitt för att kontrollera arbetsytor i **Kli
 
 - Skapa nya arbetsyteupplevelser.
 - Använd datamängder på arbetsytor.
+- Blockera skapande av klassisk arbetsyta.
 
 ### <a name="create-the-new-workspaces"></a>Skapa nya arbetsytor
 
@@ -213,6 +214,13 @@ Administratörer kan styra vilka användare i organisationen som kan använda da
 
 Mer information finns i [Introduktion till datamängder på olika arbetsytor](../connect-data/service-datasets-across-workspaces.md).
 
+### <a name="block-classic-workspace-creation"></a>Blockera skapande av klassisk arbetsyta
+
+Administratörer kan styra om organisationen kan skapa klassiska arbetsytor. När inställningen är aktiverad kan användare som skapar en arbetsyta bara skapa arbetsytor för den nya arbetsyteupplevelsen. 
+
+![Blockera skapande av klassisk arbetsyta](media/service-admin-portal/power-bi-admin-block-classic-workspaces.png)
+
+När inställningen är aktiverad visas inte nya skapade Office 365-grupper i listan över arbetsytor i Power BI. Befintliga klassiska arbetsytor visas fortfarande i listan. När inställningen är inaktiverad visas alla Office 365-grupper som användaren är medlem av i listan över arbetsytor. Läs mer om [arbetsytor för den nya arbetsyteupplevelsen](../collaborate-share/service-new-workspaces.md).
 
 ## <a name="export-and-sharing-settings"></a>Inställningar för export och delning
 
@@ -369,6 +377,15 @@ Under **Klientinställningar** kan Power BI-administratörer med hjälp av klien
 Anslutningar till aktuella tabeller inaktiveras också om klientinställningen **Exportera data** är inställd på **Inaktiverad**.
 
 Läs mer om [aktuella Power BI-tabeller i Excel](../collaborate-share/service-excel-featured-tables.md).
+
+## <a name="share-to-teams-tenant-setting"></a>Dela till Teams-klientinställning
+
+Inställningen **Dela till Teams** finns i avsnittet **Klientinställningar** i Power BI-administratörsportalen. Med den här inställningen kan organisationer dölja knapparna för **Dela till Teams** i Power BI-tjänsten. När inställningen är inaktiverad visas inte **Dela till Teams**-knappar i åtgärdsfältet eller i snabbmenyer när de visar rapporter och instrumentpaneler i Power BI-tjänsten.
+
+![Skärmbild av klientinställningen Dela till Teams i Power BI-administratörsportalen.](media/service-admin-portal/service-teams-share-to-teams-tenant-setting.png)
+
+Läs mer om [delning av Power BI-innehåll till Teams](../collaborate-share/service-share-report-teams.md).
+
 
 ## <a name="power-bi-visuals-settings"></a>Inställningar för visuella Power BI-objekt
 

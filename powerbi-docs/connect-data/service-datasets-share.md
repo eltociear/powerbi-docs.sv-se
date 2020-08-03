@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 04/30/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 6a1fd2ee46edd2447e7cf5096307f9d4947168a6
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: fd31c3b97eef80b0e4457fe6e61c1a8bf101db7b
+ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85236740"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87252669"
 ---
 # <a name="share-a-dataset"></a>Dela en datauppsättning
 
@@ -54,7 +54,7 @@ När du har en delad datamängd på din arbetsyta kan du behöva veta vilka rapp
 ## <a name="limitations-and-considerations"></a>Begränsningar och överväganden
 Saker att tänka på när det gäller att dela datamängder:
 
-* När du delar en datamängd genom att hantera behörigheter, genom att dela rapporter eller instrumentpaneler eller genom att publicera en app, beviljar du åtkomst till hela datamängden om inte [säkerhet på radnivå (RLS)](../admin/service-admin-rls.md) begränsar deras åtkomst. Rapportförfattare kan använda funktioner som anpassar användarupplevelsen för att visa eller interagera med rapporter. De kan till exempel dölja kolumner, begränsa åtgärderna för visuella objekt med mera. Dessa anpassade användarupplevelser begränsar inte vilka data som användare kan komma åt i datamängden. Använd [säkerhet på radnivå (RLS)](../admin/service-admin-rls.md) i datamängden så att varje persons autentiseringsuppgifter avgör vilka data de har åtkomst till.
+* När du delar en datauppsättning genom att hantera behörigheter, genom att dela rapporter eller instrumentpaneler eller genom att publicera en app, beviljar du åtkomst till hela datauppsättningen om inte [säkerhet på radnivå (RLS)](../admin/service-admin-rls.md) begränsar deras åtkomst. Rapportförfattare kan använda funktioner som anpassar användarupplevelsen för att visa eller interagera med rapporter. De kan till exempel dölja kolumner, begränsa åtgärderna för visuella objekt med mera. Dessa anpassade användarupplevelser begränsar inte vilka data som användare kan komma åt i datamängden. Använd [säkerhet på radnivå (RLS)](../admin/service-admin-rls.md) i datamängden så att varje persons autentiseringsuppgifter avgör vilka data de har åtkomst till.
 
 ## <a name="next-steps"></a>Nästa steg
 

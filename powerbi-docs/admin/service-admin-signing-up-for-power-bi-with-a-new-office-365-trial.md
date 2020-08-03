@@ -10,12 +10,12 @@ ms.date: 05/17/2020
 ms.author: mihart
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: a3df69e52614fba3152f6539b2c4cbcf4f5c87d2
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 8f79037c4117baaba1a50b6fe4e728b57fad362f
+ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85227679"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87252094"
 ---
 # <a name="signing-up-for-power-bi-with-a-new-microsoft-365-trial"></a>Registrera dig för Power BI med en ny Microsoft 365-utvärderingsversion
 
@@ -25,7 +25,7 @@ Om du har problem med att registrera dig för Power BI med din e-postadress mås
 
 ## <a name="sign-up-for-a-microsoft-365-trial-of-office"></a>Registrera dig för en Microsoft 365-utvärderingsversion av Office
 
-Registrera dig för en Microsoft 365-utvärderingsversion [på Microsoft 365-webbplatsen](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans). Om du inte redan har ett konto kommer Microsoft att vägleda dig genom stegen för att skapa ett. Eftersom kommersiella e-postkonton (som Hotmail och Gmail) inte fungerar med Microsoft 365 måste du skapa ett nytt konto som fungerar.  Det e-postkontot kommer att se ut ungefär så här: *zalan@onmicrosoft.com* .
+Registrera dig för en Microsoft 365-utvärderingsversion [på Microsoft 365-webbplatsen](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans). Om du inte redan har ett konto kommer Microsoft att vägleda dig genom stegen för att skapa ett. Eftersom kommersiella e-postkonton (som Hotmail och Gmail) inte fungerar med Microsoft 365 måste du skapa ett nytt konto som fungerar.  Det e-postkontot kommer att se ut ungefär så här: *zalan\@onmicrosoft.com*.
 
 ![Välj Prova kostnadsfritt](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-try-free.png)
 

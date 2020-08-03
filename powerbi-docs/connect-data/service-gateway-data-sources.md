@@ -6,16 +6,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 07/16/2020
+ms.date: 07/22/2020
 ms.author: arthii
 ms.custom: seodec18
 LocalizationGroup: Gateways
-ms.openlocfilehash: 7fecec5ed41f0de9227cf30ed3ba4f39b23f21e9
-ms.sourcegitcommit: cfcde5ff2421be35dc1efc9e71ce2013f55ec78f
+ms.openlocfilehash: 92c3a65b11435403b61a06324f534e6d82e4b7cb
+ms.sourcegitcommit: efe11c819be75887c4242afa64d32bb0698da569
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/18/2020
-ms.locfileid: "86459564"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87123498"
 ---
 # <a name="manage-data-sources"></a>Hantera datakällor
 
@@ -44,6 +44,9 @@ De flesta hanteringsåtgärder för datakällor kan även utföras med hjälp av
     ![Inställningar för datakälla](media/service-gateway-data-sources/data-source-settings.png)
 
 5. För SQL Server väljer du en **Autentiseringsmetod** som är **Windows** eller **Grundläggande** (SQL-autentisering). Om du väljer **Grundläggande** ska du ange autentiseringsuppgifterna för datakällan.
+
+    > [!NOTE]
+    > Om den valda autentiseringsmetoden är OAuth kan det hända att frågor som körs längre än förfalloprincipen för OAuth-token misslyckas.
 
 6. Under **Avancerade inställningar** kan du konfigurera [Enkel inloggning (SSO)](service-gateway-sso-overview.md) för din datakälla. 
 

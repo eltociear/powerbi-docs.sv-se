@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
-ms.date: 02/03/2020
+ms.date: 07/24/2020
 ms.author: maggies
-ms.openlocfilehash: 8e907b87c26dd7f2e764705a1178efc5df432a3e
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 73772b96929ffd91dc5a38634ab9a1a2e57286b1
+ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85239018"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87251355"
 ---
 # <a name="create-a-power-bi-report-for-power-bi-report-server"></a>Skapa en Power BI-rapport för Power BI-rapportservern
 Du kan lagra och hantera Power BI-rapporter lokalt i webbportalen för Power BI-rapportserver, precis som du kan lagra Power BI-rapporter i molnet i Power BI-tjänsten (https://powerbi.com). Du skapar och redigerar rapporter i Power BI Desktop och publicerar dem till webbportalen. Rapportläsare i din organisation kan sedan se dem i webbläsaren eller i en Power BI-mobilapp på en mobilenhet.
@@ -40,13 +40,13 @@ Om du redan har skapat Power BI-rapporter i Power BI Desktop är du nästan redo
 
     - **PBIDesktopRS_x64.msi** (64-bitarsversionen).
 
-4. När du har hämtat installationsprogrammet kör du installationsguiden för Power BI Desktop (september 2019).
+4. När du har hämtat installationsprogrammet kör du installationsguiden för Power BI Desktop.
 
 2. I slutet av installationen, markerar du **Starta Power BI Desktop nu**.
    
-    Det startar automatiskt och du är redo att sätta igång. Du kan se att du har rätt version eftersom det står **Power BI Desktop (september 2019)** i namnlisten.
+    Det startar automatiskt och du är redo att sätta igång. Du kan se att du har rätt version eftersom det står **Power BI Desktop (maj 2020)** i namnlisten.
 
-    ![Power BI Desktop september 2019](media/quickstart-create-powerbi-report/power-bi-report-server-desktop-sept-2019.png)
+    ![Power BI Desktop maj 2020](media/quickstart-create-powerbi-report/power-bi-report-server-desktop-may-2020.png)
 
 3. Om du inte är bekant med Power BI Desktop, bör du titta på videoklippen på välkomstskärmen.
    
