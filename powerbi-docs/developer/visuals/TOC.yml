@@ -26,7 +26,7 @@
       items:
         - name: Struktur för projekt med visuella Power BI-objekt
           href: visual-project-structure.md
-        - name: Begrepp om visuella objekt
+        - name: ' Systemintegrering för visuella Power BI-objekt'
           href: power-bi-visuals-concept.md
         - name: Visuella objekt för organisationer i Power BI
           href: power-bi-custom-visuals-organization.md
