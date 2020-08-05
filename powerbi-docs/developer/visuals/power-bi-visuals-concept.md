@@ -9,14 +9,14 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: af3bf93469887a449f60fa051b7e7b5fb85060df
-ms.sourcegitcommit: 21b06e49056c2f69a363d3a19337374baa84c83f
+ms.openlocfilehash: d5d075e3627ded01f7e47c1b073b60ff379bb506
+ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83407683"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87537652"
 ---
-# <a name="visuals-in-power-bi"></a>Visuella objekt i Power BI
+# <a name="power-bi-visuals-system-integration"></a>Systemintegrering för visuella Power BI-objekt
 
 I artikeln beskrivs hur visuella objekt integreras med Power BI och hur en användare kan interagera med ett visuellt objekt i Power BI. 
 

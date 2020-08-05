@@ -10,12 +10,12 @@ ms.date: 05/12/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 90cd12bc7d8d7261e25edd32c5afa7cf144e8202
-ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
+ms.openlocfilehash: ec521c256209c258604e13483a9f3159b24626ae
+ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87252531"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87537514"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administrera Power BI i Admin-portalen
 
@@ -43,8 +43,8 @@ Det finns nio flikar i portalen. Resten av den här artikeln innehåller informa
 * [Klientinställningar](#tenant-settings)
 * [Kapacitetsinställningar](#capacity-settings)
 * [Bädda in koder](#embed-codes)
-* [Visuella organisationsobjekt](#organizational-visuals)
-* [Dataflödeslagring (förhandsversion)](#dataflowStorage)
+* [Visuella organisationsobjekt](organizational-visuals.md#organizational-visuals)
+* [Dataflödeslagring (förhandsversion)](#dataflow-storage-preview)
 * [Arbetsytor](#workspaces)
 * [Anpassad varumärkesanpassning](#custom-branding)
 
@@ -386,55 +386,6 @@ Inställningen **Dela till Teams** finns i avsnittet **Klientinställningar** i 
 
 Läs mer om [delning av Power BI-innehåll till Teams](../collaborate-share/service-share-report-teams.md).
 
-
-## <a name="power-bi-visuals-settings"></a>Inställningar för visuella Power BI-objekt
-
-### <a name="add-and-use-power-bi-visuals"></a>Lägga till och använda visuella Power BI-objekt
-
-Användare i organisationen kan interagera med och dela visuella Power BI-objekt. [Läs mer](../developer/visuals/power-bi-custom-visuals.md)
-
-> [!NOTE]
-> Den här inställningen kan tillämpas för hela organisationen eller begränsas till specifika grupper.
-
-Power BI Desktop (med start från lanseringen i mars 2019) stöder användning av **Grupprincip** för att inaktivera användningen av visuella Power BI-objekt i en organisations distribuerade datorer.
-
-<table>
-<tr><th>Attribut</th><th>Värde</th>
-</tr>
-<td>nyckel</td>
-    <td>Programvara\Principer\Microsoft\Power BI Desktop\</td>
-<tr>
-<td>valueName</td>
-<td>EnableCustomVisuals</td>
-</tr>
-</table>
-
-Med värdet 1 (decimal) kan du använda visuella Power BI-objekt i Power BI (detta är standardinställningen).
-
-Med värdet 0 (decimal) kan du inaktivera användningen av visuella Power BI-objekt i Power BI.
-
-### <a name="allow-only-certified-visuals"></a>Tillåt endast certifierade visuella objekt
-
-Användare i organisationen som har behörighet att lägga till och använda visuella Power BI-objekt, enligt inställningen ”Lägg till och använd visuella Power BI-objekt”, kan endast använda [certifierade anpassade visuella objekt](https://go.microsoft.com/fwlink/?linkid=2002010) (ocertifierade visuella objekt blockeras och ett felmeddelande visas när det används). 
-
-
-Power BI Desktop (med start från lanseringen i mars 2019) stöder användning av **Grupprincip** för att inaktivera användningen av ocertifierade visuella Power BI-objekt i en organisations distribuerade datorer.
-
-<table>
-<tr><th>Attribut</th><th>Värde</th>
-</tr>
-<td>nyckel</td>
-    <td>Programvara\Principer\Microsoft\Power BI Desktop\</td>
-<tr>
-<td>valueName</td>
-<td>EnableUncertifiedVisuals</td>
-</tr>
-</table>
-
-Med värdet 1 (decimal) kan du använda ocertifierade visuella Power BI-objekt i Power BI (detta är standardinställningen).
-
-Värdet 0 (decimal) inaktiverar användningen av ocertifierade visuella Power BI-objekt i Power BI (det här alternativet kan bara använda [certifierade visuella Power BI-objekt](https://go.microsoft.com/fwlink/?linkid=2002010)).
-
 ## <a name="r-visuals-settings"></a>Inställningar för R-visualisering
 
 ### <a name="interact-with-and-share-r-visuals"></a>Interagera med och dela visuell R-information
@@ -540,67 +491,7 @@ Som administratör kan du visa de inbäddningskoder som har genererats för din 
 
 ![Bädda in koder i administrationsportalen för Power BI](media/service-admin-portal/embed-codes.png)
 
- ## <a name=""></a><a name="organizational-visuals">Visuella organisationsobjekt</a> 
-
-Med fliken **organisationsobjekt** kan du distribuera och hantera visuella Power BI-objekt i din organisation. Med visuella objekt kan du enkelt distribuera egna visuella objekt i din organisation som rapportförfattarna kan sedan identifiera och importera till sina rapporter från Power BI Desktop. [Läs mer](../developer/visuals/power-bi-custom-visuals-organization.md)
-
-> [!WARNING]
-> Ett anpassat visuellt objekt kan innehålla kod som innebär säkerhets- eller integritetsrisker. Kontrollera att författaren och det visuella objektets källa är betrodda innan du distribuerar till organisationens databas.
-
-Följande bild visar alla de visuella Power BI-objekt som för närvarande har distribuerats i organisationens databas.
-
-![Organisera visuellt objekt som administratör](media/service-admin-portal/power-bi-custom-visuals-organizational-admin-01.png)
-
-### <a name="add-a-new-custom-visual"></a>Lägga till ett nytt anpassat visuellt objekt
-
-Följ dessa steg om du vill lägga till ett nytt anpassat visuellt objekt i listan. 
-
-1. I den högra rutan väljer du **Lägg till ett anpassat visuellt objekt**.
-
-    ![Formulär för visuella Power BI-objekt](media/service-admin-portal/power-bi-custom-visuals-organizational-admin-02.png)
-
-1. Fyll i formuläret **Lägg till anpassade visuella objekt**:
-
-    * **Välj en .pbiviz-fil** (obligatoriskt): välj en fil för ett anpassat visuellt objekt att överföra. Endast versionshanterade visuella API-Power BI-objekt stöds, och här kan du läsa vad det innebär.
-
-    Innan du överför ett anpassat visuellt objekt bör du granska objektet ur säkerhets- och sekretessynvinkel för att säkerställa att det uppfyller din organisations standarder.
-
-    * **Namnge ditt anpassade visuella objekt** (obligatoriskt): ge det visuella objektet en kort rubrik så att Power BI Desktop-användare lätt kan förstå hur det fungerar
-
-    * **Ikon**: Den ikonfil som visas i användargränssnittet för Power BI Desktop.
-
-    * **Beskrivning**: en kort beskrivning av det visuella objektet som ger användaren mer kontext och kunskap
-
-1. Initiera överföringsförfrågan genom att välja **Lägg till**. Om detta lyckas visas det nya objektet i listan. Om det inte lyckas får du ett felmeddelande
-
-### <a name="delete-a-custom-visual-from-the-list"></a>Ta bort ett anpassat visuellt objekt från listan
-
-Välj papperskorgen om du vill ta bort det visuella objektet permanent från databasen.
-
-> [!IMPORTANT]
-> Du kan inte ångra borttagningen. När det visuella objektet väl har tagits bort upphör det omedelbart att återges i befintliga rapporter. Även om du överför samma visuella objekt igen kommer den inte att ersätta det föregående objektet som har tagits bort. Användare kan dock importera det nya visuella objektet igen och ersätta den version som de har i sina rapporter.
-
-### <a name="disable-a-custom-visual-in-the-list"></a>Inaktivera ett anpassat visuellt objekt i listan
-
-Välj kugghjulsikonen om du vill inaktivera det visuella objektet från organisationens lager. Inaktivera det anpassade visuella objektet i avsnittet **Åtkomst**.
-
-När du har inaktiverat det visuella objektet återges inte det visuella objektet i befintliga rapporter utan visar felmeddelandet nedan.
-
-*Detta anpassade visuella objekt är inte längre tillgängligt. Kontakta din administratör om du vill ha mer information.*
-
-Visuella objekt som har bokmärken fungerar dock fortfarande.
-
-Efter uppdatering eller byte av administratör bör Power BI Desktop-användare starta om programmet eller uppdatera webbläsaren i Power BI-tjänsten för att se uppdateringarna.
-
-### <a name="update-a-visual"></a>Uppdatera ett visuellt objekt
-
-Välj kugghjulsikonen om du vill uppdatera det visuella objektet från organisationens lager. Bläddra och ladda upp en ny version av det visuella objektet.
-
-Kontrollera att visualiserings-ID förblir oförändrat. Den nya filen ersätter den tidigare filen för alla rapporter i hela organisationen. Men om den nya versionen av visualiseringen kan skada någon användnings- eller datastruktur av den tidigare versionen av visualiseringen ska du inte ersätta den tidigare versionen. I stället bör du skapa en ny lista för den nya versionen av visualiseringen. Lägg till exempel till ett nytt versionsnummer (version X.X) till rubriken för den nya listade visualiseringen. På det här sättet är det klart att det är samma visualisering men bara med ett uppdaterat versionsnummer så att befintliga rapporter inte skadar deras funktioner. Kontrollera igen att visualiserings-ID förblir oförändrat. Nästa gång användarna använder organisationens databas från Power BI Desktop kan de importera den nya versionen, vilket tvingar dem att ersätta den aktuella version som de har i sina rapporter.
-
-Mer information finns i [Vanliga frågor och svar om visuella Power BI-objekt i en organisation](../developer/visuals/power-bi-custom-visuals-faq.md#organizational-power-bi-visuals)
-
-## <a name=""></a><a name="dataflowStorage">Dataflödeslagring (förhandsversion)</a>
+## <a name="dataflow-storage-preview"></a>Dataflödeslagring (förhandsversion)
 
 Som standard lagras data som används med Power BI i intern lagring som tillhandahålls av Power BI. Med integreringen av dataflöden och Azure Data Lake Storage Gen2 (ADLS Gen2) kan du lagra dina dataflöden på din organisations Azure Data Lake Storage Gen2 konto. Mer information finns i [Dataflöden och Azure Data Lake-integrering (förhandsversion)](../transform-model/service-dataflows-azure-data-lake-integration.md).
 

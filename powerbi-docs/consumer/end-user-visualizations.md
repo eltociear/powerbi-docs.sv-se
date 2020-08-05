@@ -2,19 +2,19 @@
 title: Arbeta med visualiseringar (visuella objekt) som användare
 description: Power BI-koncept och -terminologi – visualiseringar, visuella objekt. Vad är en Power BI-visualisering, visuellt objekt.
 author: mihart
-ms.reviewer: ''
+ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
 ms.date: 01/29/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 60b43a428d9a657a0464c2f308aeac8fe5f5102e
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: a65752f6b49590c4b83c6dee471fa881a639acbe
+ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85237324"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87537675"
 ---
 # <a name="interact-with-visuals-in-reports-dashboards-and-apps"></a>Interagera med visuella objekt i rapporter, instrumentpaneler och appar
 

@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/24/2020
+ms.date: 07/29/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: c1d483b6a29d2463af05cd224ac6b03dd149eb33
-ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
+ms.openlocfilehash: 69929ff48428ebf73044c296eabc419f8e442b3b
+ms.sourcegitcommit: 00c0b24d5e80009d18cec6da4fee8a9611bcba04
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87252899"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87411967"
 ---
 # <a name="using-external-tools-in-power-bi-desktop-preview"></a>Använda externa verktyg i Power BI Desktop (förhandsversion)
 
@@ -42,8 +42,6 @@ Du kan ansluta externa verktyg till Power BI Desktop-datamängden (Analysis Serv
 * [Perspektiv](https://docs.microsoft.com/analysis-services/tabular-models/perspectives-ssas-tabular) för att definiera fokuserade verksamhetsdomänspecifika vyer över datamängdens metadata
 
 Det kan gå att hantera metadataöversättningar med hjälp av externa verktyg, men denna funktion stöds för närvarande inte i den här förhandsversionen. Om den aktuella användarens språkvariant är ett översatt språk, fungerar inte redigeringsobjekt i fältlistan korrekt med den aktuella versionen av Power BI Desktop. 
-
-Det finns ett känt problem när rapporter skapas mot modeller som har definierade beräkningsgrupper. Om beräkningsgruppen definierar dynamisk formatering beroende på den valda beräkningen/det valda måttet, så är sådan formatering för närvarande endast tillgänglig i virtuella tabell-, matris- eller kortobjekt.
 
 Alla datamängdsmetadata för [tabellobjektsmodellen](https://docs.microsoft.com/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo) kan nås i skrivskyddat syfte, men objekt som inte omfattas av listan som beskrivs i artikeln [Tabellobjektsmodell](https://docs.microsoft.com/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo) stöds ännu inte för redigering i Power BI Desktop Analysis Services-instansen.
 
@@ -134,9 +132,9 @@ Filer på denna angivna plats med tillägget **.pbitool.json** läses in av Powe
 
 Externa verktyg kan inaktiveras med **grupprinciper** eller genom att redigera registret, vilket liknar processen att inaktivera **anpassade visuella objekt**.
 
-    Registry key: ```Software\Policies\Microsoft\Power BI Desktop\```
+    Registry key: *Software\Policies\Microsoft\Power BI Desktop\*
 
-    Registry value: ```EnableExternalTools```
+    Registry value: *EnableExternalTools*
 
 Med värdet 1 (decimal) kan du använda externa verktyg i Power BI, vilket är standardvärdet.
 
