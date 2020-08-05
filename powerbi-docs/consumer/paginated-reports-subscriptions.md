@@ -3,17 +3,17 @@ title: Prenumerera på sidnumrerade rapporter i Power BI-tjänsten
 description: I den här artikeln får du lära dig några saker som är bra att tänka på när du ska prenumerera på sidnumrerade rapporter i Power BI-tjänsten.
 author: maggiesMSFT
 ms.author: maggies
-ms.reviewer: ''
+ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
 ms.date: 12/03/2019
-ms.openlocfilehash: 22c36ff3ff14f67d84d2e3aa227dfe1a4c14b266
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 0e4a62cf6216af49ef61651dc310c93de41664b7
+ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85240299"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87538135"
 ---
 # <a name="subscribe-yourself-and-others-to-paginated-reports-in-the-power-bi-service"></a>Skapa en prenumeration åt dig själv och andra på en sidnumrerad rapport i Power BI-tjänsten 
 
