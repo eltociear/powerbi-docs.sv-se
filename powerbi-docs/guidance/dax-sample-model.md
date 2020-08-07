@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 06/25/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 470bfcd4d9131c98412c504e4aba7daf6a995890
-ms.sourcegitcommit: e8b12d97076c1387088841c3404eb7478be9155c
+ms.openlocfilehash: 6e2fe331fa274305447266321893204dddcc3148
+ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85785263"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87537468"
 ---
 # <a name="dax-sample-model"></a>DAX-exempelmodell
 
@@ -50,5 +50,6 @@ Du kan ladda ned den färdiga Power BI Desktop-exempelfilen [här](https://aka.m
 Mer information om den här artikeln finns i följande resurser:
 
 - [Data Analysis uttryck (DAX)-referens](/dax/)
+- Utbildningsväg: [Använda DAX i Power BI Desktop](https://docs.microsoft.com/learn/paths/dax-power-bi/)
 - Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
-- Har du förslag? [Bidra till att förbättra Power BI](https://ideas.powerbi.com/)
+- Har du förslag? [Bidra till att förbättra Power BI](https://ideas.powerbi.com)

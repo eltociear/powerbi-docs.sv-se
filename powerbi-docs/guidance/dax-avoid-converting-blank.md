@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 6b130016bf4514b817edbf8c91cfb24d2063e6f1
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: ac5eb41aa248eeebf2cbfb6d53e327e2a3e83fdd
+ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86215452"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87537629"
 ---
 # <a name="dax-avoid-converting-blanks-to-values"></a>DAX: Undvik att omvandla tomma värden till värden
 
@@ -79,4 +79,6 @@ Den här designmetoden är effektiv och gör att Power BI kan återge rapporter 
 Mer information om den här artikeln finns i följande resurser:
 
 - [Data Analysis uttryck (DAX)-referens](/dax/)
+- Utbildningsväg: [Använda DAX i Power BI Desktop](https://docs.microsoft.com/learn/paths/dax-power-bi/)
 - Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+- Har du förslag? [Bidra till att förbättra Power BI](https://ideas.powerbi.com)

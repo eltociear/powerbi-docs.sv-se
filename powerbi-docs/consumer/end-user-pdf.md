@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: ff79017bd77dd63ce1aa50b9c5361bf82a060820
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: ec45d971855aefe35161f2b10fecd483f0345a46
+ms.sourcegitcommit: a7227f6d3236e6e0a7bc1f83ff6099b5cd58bff3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85236421"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "87768813"
 ---
 # <a name="export-reports-from-power-bi-to-pdf"></a>Exportera rapporter från Power BI till PDF
 
@@ -55,7 +55,7 @@ Det finns några överväganden och begränsningar som du bör tänka på när d
 * Visuella R-och Python-objekt stöds inte för tillfället. I PDF-filen är dessa visuella objekt tomma och visar ett felmeddelande. 
 * Visuella Power BI-objekt som har certifierats stöds. Mer information om certifierade visuella Power BI-objekt, inklusive hur visuella Power BI-objekt certifieras, finns i [Certifiera visuella Power BI-objekt](../developer/visuals/power-bi-custom-visuals-certified.md). Visuella Power BI-objekt som inte har certifierats stöds inte. I PDF-filen visas ett felmeddelande för dem.
 * Det här visuella ESRI-objektet stöds inte
-* Rapporter med mer än 30 rapportsidor kan för närvarande inte exporteras.
+* Rapporter med fler än 50 rapportsidor kan för närvarande inte exporteras.
 * Att exportera rapporten till PDF kan ta några minuter att slutföra, så ha tålamod. Faktorer som kan påverka den tid som krävs är rapportens struktur och den aktuella belastningen på Power BI-tjänsten.
 * Om menyobjektet **exportera till PDF** inte finns i Power BI-tjänsten, beror det förmodligen på att din klientadministratör har inaktiverat funktionen. Kontakta din klientadministratör för mer information.
 * Bakgrundsbilder beskärs med diagrammets markeringsområdet. Vi rekommenderar att du tar bort bakgrundsbilder innan du exporterar till PDF.

@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 06/26/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: d09ebee0cc22c7037db437e1c7a46a3d19ff36fd
-ms.sourcegitcommit: a453ba52aafa012896f665660df7df7bc117ade5
+ms.openlocfilehash: 68d6a399a5ecccf07aaa71f74b18fd4ddd6082f5
+ms.sourcegitcommit: a7227f6d3236e6e0a7bc1f83ff6099b5cd58bff3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85485606"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "87768527"
 ---
 # <a name="share-power-bi-dashboards-and-reports-with-coworkers-and-others"></a>Dela Power BI-instrumentpaneler och -rapporter med kollegor och andra
 *Delning* är det enklaste sättet att ge användare åtkomst till dina instrumentpaneler och rapporter i Power BI-tjänsten. Du kan dela med personer i eller utanför din organisation.
@@ -34,7 +34,7 @@ Du kan inte *dela* direkt från Power BI Desktop. Du [publicerar rapporter från
 
 ## <a name="share-a-dashboard-or-report"></a>Dela en instrumentpanel eller en rapport
 
-1. I en lista med instrumentpaneler och rapporter, eller i en öppen instrumentpanel eller rapport, väljer du **Dela** ![delningsikon](media/service-share-dashboards/power-bi-share-icon.png).
+1. Välj **Dela** :::image type="icon" source="../media/power-bi-share-icon.png" border="false"::: i en lista med instrumentpaneler eller rapporter, eller i en öppen instrumentpanel eller rapport.
 
 2. Ange fullständiga e-postadresser för enskilda användare, distributionsgrupper och säkerhetsgrupper i den översta rutan. Du kan inte dela med dynamiska distributionslistor. 
    
@@ -67,7 +67,7 @@ Du kan inte *dela* direkt från Power BI Desktop. Du [publicerar rapporter från
 ## <a name="see-who-has-access-to-a-dashboard-or-report"></a>Se vem som har tillgång till en instrumentpanel eller en rapport
 Ibland kan du behöva se vilka personer du har delat med, och se vilka de har delat den med.
 
-1. I listan med instrumentpaneler och rapporter, eller i själva instrumentpanelen eller rapporten, väljer du **Dela** ![delningsikon](media/service-share-dashboards/power-bi-share-icon.png). 
+1. Välj **Dela** :::image type="icon" source="../media/power-bi-share-icon.png" border="false"::: i listan med instrumentpaneler eller rapporter, eller i själva instrumentpanelen eller rapporten. 
 2. I dialogrutan **Dela instrumentpanel** eller **Dela rapport** väljer du **Åtkomst**.
    
     ![Dialogrutan Dela instrumentpanel, fliken Åtkomst](media/service-share-dashboards/power-bi-share-dialog-access.png)
@@ -110,7 +110,7 @@ Endast en instrumentpanels eller rapports ägare kan aktivera eller inaktivera o
 * Avmarkera kryssrutan **Tillåt mottagare att dela min instrumentpanel (eller rapport)** längst ned i inbjudan innan du skickar den.
 
 ### <a name="if-youve-already-shared-the-dashboard-or-report"></a>Om du redan har delat instrumentpanelen eller rapporten
-1. I listan med instrumentpaneler och rapporter, eller i själva instrumentpanelen eller rapporten, väljer du **Dela** ![delningsikon](media/service-share-dashboards/power-bi-share-icon.png). 
+1. Välj **Dela** :::image type="icon" source="../media/power-bi-share-icon.png" border="false"::: i listan med instrumentpaneler eller rapporter, eller i själva instrumentpanelen eller rapporten. 
 2. I dialogrutan **Dela instrumentpanel** eller **Dela rapport** väljer du **Åtkomst**.
    
     ![Dialogrutan Dela instrumentpanel, fliken Åtkomst](media/service-share-dashboards/power-bi-share-dialog-access.png)

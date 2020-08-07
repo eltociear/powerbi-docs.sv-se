@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 07/01/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: d49d92261b141a66021bb0809c214e712bd687c8
-ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
+ms.openlocfilehash: 3707399d21d15b16236e0e33da6c264fb6e364b4
+ms.sourcegitcommit: a7227f6d3236e6e0a7bc1f83ff6099b5cd58bff3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "86263727"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "87768982"
 ---
 # <a name="export-reports-to-powerpoint"></a>Exportera rapporter till PowerPoint
 
@@ -104,7 +104,7 @@ Det finns några överväganden och begränsningar som du bör tänka på när d
 * Vissa rapporter kan inte exporteras. Dessa omfattar:
     - Rapporter som ägs av en användare utanför din Power BI-klientdomänen som en rapport som ägs av någon utanför organisationen och delas med dig.
     - Om du delar en instrumentpanel med någon utanför organisationen och därmed, en användare som inte är i din Power BI-klient, kommer den användaren inte att kunna exportera delade instrumentpanelers associerade rapporter till PowerPoint. Så om du är aaron@contoso.com kan du dela med david@cohowinery.com. Men david@cohowinery.com kan inte exportera de associerade rapporterna till PowerPoint.
-    - Rapporter med mer än 30 rapportsidor. Endast de första 30 sidorna exporteras.
+    - Rapporter med fler än 50 rapportsidor. Endast de första 50 sidorna exporteras.
     - Rapporter som exporteras till äldre versioner av PowerPoint.
     - Rapporter som tar längre tid än en timma att bearbeta. 
     - Rapportsidor som det tar längre tid än 6 minuter att läsa in. 

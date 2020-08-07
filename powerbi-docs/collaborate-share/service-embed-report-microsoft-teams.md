@@ -9,19 +9,28 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 07/22/2020
-ms.openlocfilehash: 68459deb29c59af3b9e2b185d54cf4e523d555d8
-ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
+ms.date: 07/31/2020
+ms.openlocfilehash: 53126fe044f65740b9dac072422f749312b960da
+ms.sourcegitcommit: d9d67ee47954379c2df8db8d0dc8302de4c9f1e5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87252577"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87478025"
 ---
 # <a name="embed-power-bi-content-in-microsoft-teams"></a>Bädda in Power BI-innehåll i Microsoft Teams
 
 Du kan enkelt bädda in interaktiva Power BI-rapporter i Microsoft Teams kanaler och chattar. 
 
-Information om hur Power BI och Teams fungerar tillsammans, inklusive vilka krav du måste uppfylla, finns i [Samarbeta i Microsoft Teams med Power BI](service-embed-report-microsoft-teams.md).
+## <a name="requirements"></a>Krav
+
+Säkerställ följande element om du vill använda **Power BI**-fliken i Microsoft Teams:
+
+- Microsoft Teams har **Power BI**-fliken.
+- För att kunna lägga till en rapport i Microsoft Teams med **Power BI**-fliken måste du ha minst en Deltagare-roll på arbetsytan där rapporten ska vara. Information om de olika rollerna finns i [Roller i de nya arbetsytorna](service-new-workspaces.md#roles-in-the-new-workspaces).
+- För att kunna visa rapporten på **Power BI**-fliken i Microsoft Teams måste användarna ha behörighet att visa rapporten.
+- Användare måste vara Microsoft Teams-användare med åtkomst till kanaler och chattar.
+
+Du kan läsa om hur Power BI och Teams fungerar tillsammans, inklusive vilka krav du måste uppfylla, i [Samarbeta i Microsoft Teams med Power BI](service-embed-report-microsoft-teams.md).
 
 ## <a name="embed-a-report-in-teams"></a>Bädda in en rapport i Teams
 

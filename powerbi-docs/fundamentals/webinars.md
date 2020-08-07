@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/15/2020
+ms.date: 08/03/2020
 ms.author: kfollis
-ms.openlocfilehash: 34c46f97128d1229f46eeed254bdecee58a32aaf
-ms.sourcegitcommit: 11deeccf596e9bb8f22615276a152614f7579f35
+ms.openlocfilehash: d7b36d7ecbbf9d046c02f275ca83d7f8c8a196d5
+ms.sourcegitcommit: a7227f6d3236e6e0a7bc1f83ff6099b5cd58bff3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "86409477"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "87768411"
 ---
 # <a name="power-bi-webinars"></a>Power BI-webbseminarier
 [//]: # "Tatevik Tatero (tatevik.teroyan@simple-concepts.com)är en leverantör som arbetar med Chauncy Freels och som hjälper till att underhålla den här listan över webbseminarier"
@@ -27,6 +27,10 @@ Registrera dig för våra kommande live-webbseminarier eller titta på våra ins
 ## <a name="featured-webinars"></a>Aktuella webbseminarier
 
 Kom igång med dessa populära webbseminarier på begäran
+
+**Gör användarna nöjdare med några metodtips kring hantering av BI-innehåll**  
+av Nimrod Shalit  
+[Titta nu](https://info.microsoft.com/ww-landing-Boost-User-Satisfaction-with-Best-Practices-for-Managing-BI-Content.html?lcid=en-us)
 
 **Från insikt till åtgärd: Köra en datakultur med Power BI**  
 av Arun Ulagaratchagan och Amir Netz  

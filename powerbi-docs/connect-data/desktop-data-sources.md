@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 05/19/2020
+ms.date: 07/28/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 9d20f9aa5311d8ee96246ab8b3ed832330742973
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: dcdd663ec9899f7623789915754087c4643c9806
+ms.sourcegitcommit: 00c0b24d5e80009d18cec6da4fee8a9611bcba04
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85223923"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87411990"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Datakällor i Power BI Desktop
 
@@ -116,7 +116,7 @@ I **Power Platform**-kategorin finns följande dataanslutningar:
 * Power BI-datauppsättningar
 * Power BI-dataflöden
 * Common Data Service
-* Power Platform-dataflöden
+* Power Platform-dataflöden (beta)
 
 Följande bild visar fönstret **Hämta data** för **Power Platform**.
 
@@ -133,6 +133,7 @@ Kategorin **Azure** innehåller följande dataanslutningar:
 * Azure Blob Storage
 * Azure Table Storage
 * Azure Cosmos DB
+* Azure Data Explorer (Kusto)
 * Azure Data Lake Storage Gen2
 * Azure Data Lake Storage Gen1
 * Azure HDInsight (HDFS)
@@ -171,21 +172,19 @@ Kategorin **Onlinetjänster** innehåller följande dataanslutningar:
 * Marketo (beta)
 * Mixpanel (beta)
 * Planview Enterprise One – PRM (beta)
-* Planview Projectplace (beta)
 * QuickBooks Online (beta)
 * Smartsheet
 * SparkPost (beta)
 * SweetIQ (beta)
 * Planview Enterprise One – CTM (Beta)
 * Twilio (beta)
-* tyGraph (beta)
-* Webtrends (beta)
 * Zendesk (beta)
 * Asana (Beta)
 * Dynamics 365 Customer Insights (Beta)
 * Emigo Data Source
 * Entersoft Business Suite (Beta)
-* FactSet Analytics (Beta)
+* FactSet Analytics
+* Palantir Foundry
 * Industrial App Store
 * Intune Data Warehouse (Beta)
 * Microsoft Graph Security (Beta)
@@ -218,7 +217,10 @@ Kategorin **Övrigt** innehåller följande dataanslutningar:
 * Python-skript
 * ODBC
 * OLE DB
+* Acterys : Model Automation & Planning (Beta)
+* Automation Anywhere (Beta)
 * Solver
+* Cherwell (Beta)
 * Cognite Data Fusion (Beta)
 * FHIR
 * Information Grid (Beta)
@@ -233,6 +235,7 @@ Kategorin **Övrigt** innehåller följande dataanslutningar:
 * Tenforce (Smart)List
 * TIBCO (R) Data Virtualization (Beta)
 * Vena (Beta)
+* Vessel Insight (Beta)
 * Workforce Dimensions (Beta)
 * Zucchetti HR Infinity (Beta)
 * Tom fråga

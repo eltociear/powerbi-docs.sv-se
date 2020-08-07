@@ -6,12 +6,12 @@ ms.prod: powerbi
 ms.topic: article
 ms.date: 03/25/2020
 ms.author: margoc
-ms.openlocfilehash: e4514cae5f083ace75c9703999a177da033a844d
-ms.sourcegitcommit: 66b1a0c74b8a7dcb33a2f8570fb67bce2401a895
+ms.openlocfilehash: 11150686d1ff922877081a672290069f85b1afc5
+ms.sourcegitcommit: 00c0b24d5e80009d18cec6da4fee8a9611bcba04
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84532337"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87411921"
 ---
 # <a name="functional-application-consultant-learning-catalog"></a>Utbildningskatalog för konsulter för funktionella program
 
@@ -35,6 +35,7 @@ För funktionella konsulter visade vår analys av jobbaktiviteter att alla måst
 | [Three Ways AI Is Changing BI](https://info.microsoft.com/ww-landing-Three-Ways-AI-Is-Changing-BI-OnDemand.html)  | Det är viktigt att analytiker undersöker och visualiserar data så att intressenter snabbt och effektivt kan hitta insikter. Dagens chefer frågar inte längre vad och när någonting hände, utan varför det hände och vad som kommer att hända i framtiden. Registrera dig för det här webbseminariet om du vill veta mer om tre möjligheter till datainsikter där AI med BI (Business Intelligence) samverkar.   | Webbseminarium       |                   |
 | [Utnyttja kraften hos Power BI – tips och trick av Philip Seamark](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/6-22-2017-Unleash-the-Power-of-Power-BI-tips-and-tricks-by/td-p/161490) | Här går Philip Seamark igenom några detaljer kring södra halvklotets största distribution av Power BI, hur den används och uppfyller kundens BI-behov. I den här sessionen får du en mängd olika tips och knep som hjälper dig att skapa bättre Power BI-rapporter.   | Webbseminarium       | 53 min 47 s       |
 | [Vad är Power BI?](https://docs.microsoft.com/power-bi/fundamentals/power-bi-overview)  | Översikt över Power BI   | Webbplats       | 3 minuters läsning |
+| [Använda DAX i Power BI Desktop](https://docs.microsoft.com/learn/paths/dax-power-bi/) | Den här utbildningsvägen introducerar DAX (Data Analysis Expressions) och ger dig grundläggande kunskaper kring att förbättra datamodeller med beräkningar.  | Kostnadsfri utbildningsväg online i valfri takt | 4 tim 30 min |
 ## <a name="best-practices"></a>Metodtips<a name="best-practices"></a>
 | Innehåll   | Beskrivning  | Format   | Längd   |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|-------------------|

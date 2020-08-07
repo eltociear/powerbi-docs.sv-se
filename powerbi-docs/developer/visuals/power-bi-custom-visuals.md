@@ -1,6 +1,6 @@
 ---
 title: Visuella objekt i Power BI
-description: Anpassade visualiseringar i Power BI
+description: I den här artikeln beskrivs anpassade visuella objekt i Power BI
 author: KesemSharabi
 ms.author: kesharab
 manager: rkarlin
@@ -8,20 +8,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: overview
-ms.date: 01/03/2019
+ms.date: 07/14/2020
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e9dc53eb3f49a1ef62e4e3539ac7eb6d92b317af
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: e56b03eeccc3140709fb458d4e42a9065a4da5d4
+ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83561649"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87538020"
 ---
 # <a name="visuals-in-power-bi"></a>Visuella objekt i Power BI
 
 Power BI har många inbyggda visuella objekt redan från start. Du kommer åt de här visuella objekten via visualiseringsfönstret i både [Power BI Desktop](https://powerbi.microsoft.com/desktop/) och [Power BI-tjänsten](https://app.powerbi.com), och du kan använda dem till att skapa och redigera Power BI-innehåll.
 
-![visualiseringar](media/power-bi-custom-visuals/power-bi-visualizations.png)
+![Skärmbild av fönstret Visualisering i Power BI som det ser ut Power BI Desktop och Power BI-tjänsten.](media/power-bi-custom-visuals/power-bi-visualizations.png)
 
 Du hittar många fler visuella Power BI-objekt via Microsoft [AppSource](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fappsource.microsoft.com%2Fen-us%2Fmarketplace%2Fapps%3Fpage%3D1%26product%3Dpower-bi-visuals&data=02%7C01%7CKesem.Sharabi%40microsoft.com%7C6d9286afacb3468d4cde08d740b76694%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637049028749147718&sdata=igWm0e1vXdgGcbyvngQBrHQVAkahPnxPC1ZhUPntGI8%3D&reserved=0) eller Power BI. De här visuella objekten har skapats av Microsoft och våra partners, och de har testats av valideringsteamet på AppSource.
 
@@ -38,6 +38,11 @@ Om du vill återställa det visuella Power BI-standardobjektet i visualiseringsf
 ## <a name="appsource-power-bi-visuals"></a>Visuella Power BI-objekt i AppSource
 
 Både communitymedlemmar och Microsoft har bidragit med visuella Power BI-objekt och publicerat dem för allmän tillgänglighet på [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). Du kan ladda ned de här visuella objekten och använda dem i Power BI-rapporter. Microsoft har testat och godkänt dessa visuella Power BI-objekt vad gäller funktionalitet och kvalitet.
+
+>[!NOTE]
+>* När du använder Power BI-kontroller som skapats med vårt SDK kan du importera data från eller skicka data till tredje part, eller andra tjänster som ligger utanför Power BI-klientorganisationens geografiska område, efterlevnadsgräns eller nationella molninstans.
+>* Certifierade Power BI-kontroller är kontroller i AppSource som testats så att kontrollen garanterat inte använder några externa tjänster eller resurser.
+>* När du importerar Power BI-kontroller från AppSource kan de uppdateras automatiskt utan att du meddelas om det.
 
 ### <a name="what-is-appsource"></a>Vad är AppSource?
 
@@ -74,10 +79,17 @@ Om du är webbutvecklare och intresserad av att skapa egna visuella objekt och l
 
 ## <a name="next-steps"></a>Nästa steg
 
-* Om du är utvecklare börjar du med självstudien [Utveckla ett visuellt Power BI-objekt](custom-visual-develop-tutorial.md).
+>[!div class="nextstepaction"]
+>[Utveckla ett visuellt Power BI-objekt](custom-visual-develop-tutorial.md)
 
-* Lär dig hur ett [projekt med visuella Power BI-objekt är strukturerat](visual-project-structure.md).
+>[!div class="nextstepaction"]
+>[Projektstruktur för Power BI-kontroller](visual-project-structure.md)
 
-* Utforska [riktlinjerna för visuella Power BI-objekt](guidelines-powerbi-visuals.md).
+>[!div class="nextstepaction"]
+>[Riktlinjer för Power BI-kontroller](guidelines-powerbi-visuals.md)
 
-Har du fler frågor? Läs mer i [Vanliga frågor och svar om visuella Power BI-objekt](power-bi-custom-visuals-faq.md) eller i [Power BI-communityn](https://community.powerbi.com/).
+>[!div class="nextstepaction"]
+>[Vanliga frågor och svar](power-bi-custom-visuals-faq.md)
+
+>[!div class="nextstepaction"]
+>[Power BI Community](https://community.powerbi.com/)

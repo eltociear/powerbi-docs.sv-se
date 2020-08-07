@@ -6,24 +6,26 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 07/24/2020
+ms.date: 07/30/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: e39d2fe11a58691b259784c292fec6e5ee6cb322
-ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
+ms.openlocfilehash: c74c618eb4c748d94260573c1ddd4266d3cf5c0e
+ms.sourcegitcommit: d9d67ee47954379c2df8db8d0dc8302de4c9f1e5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87254221"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87478094"
 ---
 # <a name="set-featured-tables-in-power-bi-desktop-preview"></a>Ange utvalda tabeller i Power BI Desktop (förhandsversion)
 
 I galleriet Datatyper i Excel kan användarna hitta data från *utvalda tabeller* i Power BI-datauppsättningar. I den här artikeln får du lära dig hur du ställer in tabeller som *aktuella* i dina datauppsättningar. Taggarna gör det enklare för användarna att lägga till företagsdata i sina Excel-blad. Här är de grundläggande stegen för att ställa in och dela aktuella tabeller.
 
-1. Du [flyttar upp certifierar datauppsättningar i Power BI](../connect-data/service-datasets-promote.md). 
 1. Du identifierar aktuella tabeller i dina datauppsättningar i Power BI Desktop (den här artikeln)
 1. Du sparar datauppsättningarna med aktuella tabeller till någon av de nya arbetsytorna. Rapportskapare kan skapa rapporter med dessa aktuella tabeller. 
 1. Resten av organisationen kan ansluta till de utvalda tabellerna, som kallas *datatyper* i Excel och få relevanta och uppdaterbara data. I artikeln [Åtkomst till Power BI-tabeller i Excel (förhandsversion)](service-excel-featured-tables.md) beskrivs användningen av dessa aktuella tabeller i Excel.
+
+> [!NOTE]
+> Du kan [höja upp eller certifiera datamängder i Power BI](../connect-data/service-datasets-promote.md). Det här kallas för *bekräftelse*. Excel prioriterar tabeller i bekräftade datamängder i datatypsgalleriet. Excel visar först aktuella tabeller i certifierade datamängder och därefter tabeller i bekräftade datamängder. Därefter visar Excel aktuella tabeller i datamängder som inte har bekräftats. 
 
 ## <a name="turn-on-the-featured-table-preview"></a>Aktivera förhandsgranskning av aktuell tabell
 
@@ -31,6 +33,8 @@ I galleriet Datatyper i Excel kan användarna hitta data från *utvalda tabeller
 2. Markera kryssrutan **Aktuella tabeller**.
 
     :::image type="content" source="media/service-excel-featured-tables/power-bi-preview-featured-tables.png" alt-text="Förhandsvisning av alternativet aktuella tabeller":::
+
+3. Starta om Power BI Desktop
 
 ## <a name="select-a-table"></a>Välj en tabell
 

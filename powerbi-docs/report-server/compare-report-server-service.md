@@ -8,13 +8,13 @@ ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc
-ms.date: 07/27/2020
-ms.openlocfilehash: c91642a08642a52b333ccba14078068eaa9ba616
-ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
+ms.date: 07/28/2020
+ms.openlocfilehash: 44cfbeb85f30e2d84dc2c693ab4837606eb899eb
+ms.sourcegitcommit: 00c0b24d5e80009d18cec6da4fee8a9611bcba04
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87252876"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87412059"
 ---
 # <a name="comparing-power-bi-report-server-and-the-power-bi-service"></a>En jämförelse av Power BI-rapportservern och Power BI-tjänsten
 
@@ -48,14 +48,15 @@ Power BI-rapportservern och Power BI-tjänsten har många likheter och vissa vik
 | E-postprenumerationer för sidnumrerade rapporter | Ja | Ja | [Skapa en prenumeration åt dig själv och andra på en sidnumrerad rapport i Power BI-tjänsten](../consumer/paginated-reports-subscriptions.md)<br><br>[E-postleverans i Reporting Services](https://docs.microsoft.com/sql/reporting-services/working-with-subscriptions-web-portal)  |
 | Datavarningar | Nej | Ja | [Datavarningar](../create-reports/service-set-data-alerts.md) i Power BI-tjänsten
 | Säkerhet på radnivå (RLS) | Ja | Ja | Tillgängligt i både DirectQuery- (datakälla) och Import-läge <br><br>Säkerhet på radnivå (RLS) med [Power BI-tjänsten](../admin/service-admin-rls.md) <br><br>Säkerhet på radnivå (RLS) i [Power BI-rapportservern](row-level-security-report-server.md) |
+| Många-till-många-relationer | Nej | Ja | [Använda många-till-många-relationer i Power BI Desktop](../transform-model/desktop-many-to-many-relationships.md) |
 | Detaljerad korsrapport | Nej | Ja | [Använda detaljerade korsrapporter](../create-reports/desktop-cross-report-drill-through.md) |
 | Helskärmsläge | Nej | Ja | [Helskärmsläge](../consumer/end-user-focus.md) i Power BI-tjänsten |
 | Avancerat Microsoft 365-samarbete | Nej | Ja | [Samarbeta på en arbetsyta](../collaborate-share/service-collaborate-power-bi-workspace.md) med Microsoft 365 |
-| R-skript och kontroller | Nej | Ja | [Skapa R-kontroller](../create-reports/desktop-r-visuals.md), kör R-skript i Power BI Desktop och publicera dem till Power BI-tjänsten. Du kan inte spara Power BI-rapporter med R-skript eller kontroller till Power BI-rapportserver.  |
+| R-skript och kontroller | Inga | Ja | [Skapa R-kontroller](../create-reports/desktop-r-visuals.md), kör R-skript i Power BI Desktop och publicera dem till Power BI-tjänsten. Du kan inte spara Power BI-rapporter med R-skript eller kontroller till Power BI-rapportserver.  |
 | Python-skript och kontroller | Nej | Ja | [Skapa Python-skript](../connect-data/desktop-python-scripts.md) och kontroller i Power BI Desktop och publicera dem till Power BI-tjänsten. Du kan inte spara Power BI-rapporter med Python-skript eller kontroller till Power BI-rapportserver. |
-| Förhandsgranskningsfunktioner | Nej | Ja | [Anmäl dig till förhandsversionsfunktioner](../consumer/end-user-preview-features.md) i Power BI-tjänsten |
+| Förhandsgranskningsfunktioner | Inga | Ja | [Anmäl dig till förhandsversionsfunktioner](../consumer/end-user-preview-features.md) i Power BI-tjänsten |
 | Visuella objekt för Power BI | Ja | Ja | [Visuella Power BI-objekt](../developer/visuals/power-bi-custom-visuals.md) |
-| Sammansatta modeller | Nej | Ja |
+| Sammansatta modeller | Inga | Ja |
 | Power BI Desktop | Version som är optimerad för rapportservern och som kan laddas ned med rapportservern | Version som är optimerad för Power BI-tjänsten, tillgänglig från Windows Store | [Power BI Desktop för rapportservern](https://powerbi.microsoft.com/report-server/) <br><br> [Power BI Desktop för Power BI-tjänsten](https://aka.ms/pbidesktopstore) |
 
 ## <a name="next-steps"></a>Nästa steg

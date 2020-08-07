@@ -10,14 +10,14 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 07/22/2020
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 7c8c1744c8ecbbf170ae073d2e302fe55faea55b
-ms.sourcegitcommit: e9cd61eaa66eda01cc159251d7936a455c55bd84
+ms.openlocfilehash: 9aad77f162a49697466899afce44284c7f063746
+ms.sourcegitcommit: d9d67ee47954379c2df8db8d0dc8302de4c9f1e5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "86953040"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87478163"
 ---
-# <a name="monitor-usage-metrics-in-the-new-workspace-experience"></a>Övervaka användningsstatistik i den nya arbetsytan
+# <a name="monitor-usage-metrics-in-the-new-workspace-experience-preview"></a>Övervaka användningsstatistik på den nya arbetsytan (förhandsversion)
 
 Genom att känna till hur ditt innehåll används ser du vilken inverkan det har och du kan prioritera dina åtgärder. Användningsstatistik kan t.ex. visa att en av dina rapporter används dagligen av en stor del av organisationen eller att en instrumentpanel som du har skapat inte används alls. Den här typen av feedback är ovärderlig vid planeringen av ditt arbete.
 
@@ -81,7 +81,7 @@ Den förbättrade användningsstatistikrapporten innehåller följande rapportsi
 
 | **Sida** | **Mått** | **Beskrivning** |
 | --- | --- | --- |
-| Rapportanvändning | Rapportvyer | En rapportvy registreras varje gång någon öppnar en rapport. Observera att definitionen av en vy skiljer sig från tidigare användningsstatistikrapporter. Att ändra rapportsidor anses inte längre vara en extra vy. |
+| Rapportanvändning | Rapportvyer | En rapportvy registreras varje gång någon öppnar en rapport. Observera att definitionen av en vy skiljer sig från tidigare användningsstatistikrapporter. Att ändra rapportsidor anses inte längre vara en extra vy. Aktiviteter som att dela och fästa beaktas inte längre i användningsstatistiken.|
 | Rapportanvändning | Unika användare | En användare är någon som öppnade rapporten minst en gång under tidsperioden (baserat på AAD-användarkontot). |
 | Rapportanvändning | Visningstrend | Visningstrenden visar antalet ändringar över tid. Den jämför den första halvan av den valda tidsperioden med den andra halvan. |
 | Rapportanvändning | Datumutsnitt | Du kan ändra tidsperioden på rapportanvändningssidan, till exempel för att beräkna trender vecka för vecka eller varannan vecka. I det nedre vänstra hörnet på rapportanvändningssidan kan du fastställa det tidigaste och senaste datumet då användningsdata är tillgängliga för den valda rapporten. |
