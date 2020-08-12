@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 01/17/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 972241228ca9fc669289d3c0efa0a357094f6f67
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 4426960cefc23111740d0e930f7a9704e18f8bb6
+ms.sourcegitcommit: 0d0ab427bb71b37c9e5170c515a8f274e1f20c17
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83286370"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87878314"
 ---
 # <a name="implement-row-level-security-in-an-analysis-services-tabular-model"></a>Implementera säkerhet på radnivå i en Analysis Services-tabellmodell
 
@@ -64,7 +64,7 @@ För stegen här måste du använda AdventureworksDW2012-relationsdatabasen.
 
 ## <a name="task-2-create-the-tabular-model-with-facts-and-dimension-tables"></a>Uppgift 2: Skapa tabellmodellen med fakta- och dimensionstabeller
 
-När ditt relationsinformationslager finns på plats ska du definiera tabellmodellen. Du kan skapa modellen med hjälp av [SQL Server Data Tools](/sql/ssdt/sql-server-data-tools) (SSDT). Mer information finns i [Skapa ett nytt tabellmodellprojekt](/sql/analysis-services/lesson-1-create-a-new-tabular-model-project).
+När ditt relationsinformationslager finns på plats ska du definiera tabellmodellen. Du kan skapa modellen med hjälp av [SQL Server Data Tools](/sql/ssdt/sql-server-data-tools) (SSDT). Mer information finns i [Skapa ett nytt tabellmodellprojekt](/analysis-services/tutorial-tabular-1400/as-lesson-1-create-a-new-tabular-model-project).
 
 1. Importera alla nödvändiga tabeller till modellen enligt vad som visas nedan.
 
@@ -101,7 +101,7 @@ När ditt relationsinformationslager finns på plats ska du definiera tabellmode
 
     Den här formeln anger att alla kolumner matchas till `false`, vilket innebär du inte kan köra frågor mot kolumner i tabellen `DimUserSecurity`.
 
-Nu ska du bearbeta och distribuera modellen. Mer information finns i [Distribuera](/sql/analysis-services/lesson-13-deploy).
+Nu ska du bearbeta och distribuera modellen. Mer information finns i [Distribuera](/analysis-services/tutorial-tabular-1200/lesson-13-deploy).
 
 ## <a name="task-3-add-data-sources-within-your-on-premises-data-gateway"></a>Uppgift 3: Lägga till datakällor inom din lokala datagateway
 
@@ -164,9 +164,9 @@ Grattis! Power BI-tjänsten visar den dynamiska säkerhet på radnivå som defin
 I den här uppgiften förutsätts att du känner till [SQL Server Profiler](/sql/tools/sql-server-profiler/sql-server-profiler), eftersom du behöver samla in en SQL Server Profiler-spårning från din lokala SSAS-tabellinstans.
 
 Sessionen initieras när användaren Rita öppnar instrumentpanelen i Power BI-tjänsten. Kan du se att rollen **salesterritoryusers** börjar gälla omedelbart med det gällande användarnamnet **<EffectiveUserName>rita@contoso.com</EffectiveUserName>**
-
+```
        <PropertyList><Catalog>DefinedSalesTabular</Catalog><Timeout>600</Timeout><Content>SchemaData</Content><Format>Tabular</Format><AxisFormat>TupleFormat</AxisFormat><BeginRange>-1</BeginRange><EndRange>-1</EndRange><ShowHiddenCubes>false</ShowHiddenCubes><VisualMode>0</VisualMode><DbpropMsmdFlattened2>true</DbpropMsmdFlattened2><SspropInitAppName>PowerBI</SspropInitAppName><SecuredCellValue>0</SecuredCellValue><ImpactAnalysis>false</ImpactAnalysis><SQLQueryMode>Calculated</SQLQueryMode><ClientProcessID>6408</ClientProcessID><Cube>Model</Cube><ReturnCellProperties>true</ReturnCellProperties><CommitTimeout>0</CommitTimeout><ForceCommitTimeout>0</ForceCommitTimeout><ExecutionMode>Execute</ExecutionMode><RealTimeOlap>false</RealTimeOlap><MdxMissingMemberMode>Default</MdxMissingMemberMode><DisablePrefetchFacts>false</DisablePrefetchFacts><UpdateIsolationLevel>2</UpdateIsolationLevel><DbpropMsmdOptimizeResponse>0</DbpropMsmdOptimizeResponse><ResponseEncoding>Default</ResponseEncoding><DirectQueryMode>Default</DirectQueryMode><DbpropMsmdActivityID>4ea2a372-dd2f-4edd-a8ca-1b909b4165b5</DbpropMsmdActivityID><DbpropMsmdRequestID>2313cf77-b881-015d-e6da-eda9846d42db</DbpropMsmdRequestID><LocaleIdentifier>1033</LocaleIdentifier><EffectiveUserName>rita@contoso.com</EffectiveUserName></PropertyList>
-
+```
 Baserat på gällande begäran om användarnamn konverterar Analysis Services begäran till de faktiska autentiseringsuppgifterna `contoso\rita` efter att ha skickat en fråga till den lokala Active Directory. När Analysis Services får autentiseringsuppgifterna returnerar Analysis Services de data som användaren har behörighet att visa och komma åt.
 
 Om det uppstår mer aktivitet i instrumentpanelen kan du med SQL Profiler se att en specifik fråga kommer tillbaka till Analysis Services-tabellmodellen som en DAX-fråga. Om Rita till exempel går från instrumentpanelen till den underliggande rapporten sker följande fråga.

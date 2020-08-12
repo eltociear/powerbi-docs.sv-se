@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/10/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: fdb3db1db1fe82743658f6a6073386701e7fe961
-ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
+ms.openlocfilehash: 985c028ac2624bb95939d41239b34d2473b15232
+ms.sourcegitcommit: 0d0ab427bb71b37c9e5170c515a8f274e1f20c17
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84120998"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87878489"
 ---
 # <a name="managing-premium-capacities"></a>Hantera Premium-kapaciteter
 
@@ -107,7 +107,7 @@ Mer information om alla tillgängliga mått för varje arbetsbelastning finns i 
 
 ### <a name="power-bi-premium-capacity-metrics-app"></a>Kapacitetsmåttappen för Power BI Premium
 
-Appen [Kapacitetsmått för Power BI Premium](https://appsource.microsoft.com/product/power-bi/pbi_pcmm.pbi-premiumcapacitymonitoring?tab=Overview) är en Power BI-app som är tillgänglig för kapacitetsadministratörer och installeras på samma sätt som andra Power BI-appar. Den innehåller en instrumentpanel och rapport.
+Appen [Kapacitetsmått för Power BI Premium](https://appsource.microsoft.com/en-us/product/power-bi/pbi_pcmm.capacity-metrics-dxt?tab=Overview) är en Power BI-app som är tillgänglig för kapacitetsadministratörer och installeras på samma sätt som andra Power BI-appar. Den innehåller en instrumentpanel och rapport.
 
 ![Kapacitetsmåttappen för Power BI Premium](media/service-premium-capacity-manage/capacity-metrics-app.png)
 

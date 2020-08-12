@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 04/02/2020
-ms.openlocfilehash: cbc8f6366e23aa7fbfb447bbfe56909c09f3e3fd
-ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
+ms.openlocfilehash: 2cc37d1296d7f170bf8c6280465e7a3f1aa52e33
+ms.sourcegitcommit: 0d0ab427bb71b37c9e5170c515a8f274e1f20c17
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85354488"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87878689"
 ---
 # <a name="tutorial-build-a-funnel-plot-from-r-script-to-r-visual"></a>Självstudie: Skapa ett trattdiagram från R-skript till visuellt R-objekt
 Den här artikeln beskriver steg för steg hur du skapar en trattritning med ett R-skript och ett visuellt R-objekt.
@@ -75,7 +75,7 @@ Redigera sedan skriptet så att det avspeglar [det här skriptet](https://github
 1. Paketera om det visuella objektet med kommandot `pbiviz package` och prova att importera det till Power BI.
 
 > [!NOTE]
-> Se [PBIX](https://github.com/microsoft/PowerBI-visuals/raw/master/RVisualTutorial/TutorialFunnelPlot/chapter3-RCustomVisual/funnelPlot_RCustomVisual.pbix) och [källkoden](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v01/) för nedladdningen.
+> Se [PBIX](https://github.com/microsoft/PowerBI-visuals/blob/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelPlot_RCustomVisual.pbix) och [källkoden](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v01/) för nedladdningen.
 
 ## <a name="make-r-based-visual-improvements"></a>Förbättra det R-baserade visuella objektet
 
@@ -274,7 +274,7 @@ Eftersom det resulterande visuella objektet är PNG-baserat, svarar det inte på
 
 * Varje visuellt R-objekt använder `unique`-operatorn i sin indatatabell. Om du vill undvika att identiska rader tas bort kan du lägga till ett extra indatafält med ett unikt ID och ignorera det i R-koden.   
 
-* Om du har ett Power-BI konto kan du använda Power BI-tjänsten för att utveckla ett visuellt objekt [direkt](/PowerBI-visuals/docs/step-by-step-lab/creating-a-custom-visual/#testing-the-custom-visual) i stället för att paketera om dem med kommandot `pbiviz package`.
+* Om du har ett Power-BI konto kan du använda Power BI-tjänsten för att utveckla ett visuellt objekt [direkt](/power-bi/developer/visuals/custom-visual-develop-tutorial/) i stället för att paketera om dem med kommandot `pbiviz package`.
 
 ### <a name="html-widgets-gallery"></a>HTML-widgetgalleri
 Utforska visuella objekt i [HTML-widgetgalleriet](http://gallery.htmlwidgets.org/) som du kan använda med ditt nästa visuella objekt. För att göra det enkelt har vi skapat en [lagringsplats för visualiseringsprojekt](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/multipleRHTML) med över 20 interaktiva HTML-visualiseringar som du kan välja bland!

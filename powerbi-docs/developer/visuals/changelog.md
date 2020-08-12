@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 03/13/2019
-ms.openlocfilehash: 3cf415cbd14da28d523a042fdf4099fe464a4a8b
-ms.sourcegitcommit: a07fa723bb459494c60cf6d749b4554af723482a
+ms.openlocfilehash: 95d2cec8cf731c403e204beeb6c013c2cfe0ce1d
+ms.sourcegitcommit: 0d0ab427bb71b37c9e5170c515a8f274e1f20c17
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "84739194"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87878569"
 ---
 # <a name="power-bi-visuals-api-changelog"></a>Ändringslogg för API för visuella Power BI-objekt
 Den här sidan innehåller en snabböversikt över API-versionerna. Versioner som anges här betraktas som stabila och kommer inte att ändras.
@@ -91,7 +91,7 @@ Den här sidan innehåller en snabböversikt över API-versionerna. Versioner so
 
 ## <a name="api-v162"></a>API v1.6.2
 * Stöder **[Redigeringsläge](./advanced-edit-mode.md)** för visuella objekt för att komma in i visuellt redigeringsläge
-* Stöder **[Interaktiv (HTML) visuella R Power BI-objekt](https://microsoft.github.io/PowerBI-visuals/tutorials/building-r-powered-custom-visual/creating-r-visuals.md)** , baserat på HTML
+* Stöder **[Interaktiv (HTML) visuella R Power BI-objekt](https://github.com/Microsoft/PowerBI-visuals/blob/master/RVisualTutorial/CreateRHTML.md)** , baserat på HTML
 
 ## <a name="api-v150"></a>API v1.5.0
 * Stöder **[Tillåt interaktioner](./visuals-interactions.md)** för visuell interaktivitet
@@ -105,7 +105,7 @@ Den här sidan innehåller en snabböversikt över API-versionerna. Versioner so
 ## <a name="api-v120"></a>API v1.2.0
 * Lägger till **colorPalette** för att hantera de färger som används i ditt visuella objekt.
 * Stöder **Markering av flera** – selectionManager kan acceptera en matris med `SelectionId`.
-* Stöder **[visuella R-objekt](https://microsoft.github.io/PowerBI-visuals/tutorials/building-r-powered-custom-visual/creating-r-visuals.md)** med R-skript
+* Stöder **[visuella R-objekt](https://github.com/Microsoft/PowerBI-visuals/blob/master/RVisualTutorial/CreateRHTML.md)** med R-skript
 
 ## <a name="api-v110"></a>API v1.1.0
 * Stöder visuella felsökningsobjekt i iFrame

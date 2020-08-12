@@ -10,12 +10,12 @@ ms.date: 04/08/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: 72e2744fc325f5e5b36f3abcf4a6d3d71767fbd4
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 899055ea26d1f36592c426ba402aa363b65bfa15
+ms.sourcegitcommit: 0d0ab427bb71b37c9e5170c515a8f274e1f20c17
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85227656"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87878364"
 ---
 # <a name="purchase-and-assign-power-bi-pro-user-licenses"></a>Köpa och tilldela Power BI Pro-användarlicenser
 
@@ -29,7 +29,7 @@ Power BI Pro är en enskild användarlicens där användarna kan läsa och inter
 Den här artikeln beskriver hur du köper Power BI Pro-användarlicenser i Administrationscenter för Microsoft 365. När du har köpt licenser kan du tilldela dem till användare i antingen Administrationscenter för Microsoft 365 eller Azure-portalen.
 
 > [!NOTE]
-> Från och med 14 januari 2020 är funktionerna för självbetjäningsköp, prenumeration och licenshantering för Power Platform-produkter (Power BI, Power Apps och Power Automate) tillgängliga för kommersiella molnkunder. Mer information finns i [Vanliga frågor och svar om självbetjäningsköp](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq). Om du vill aktivera eller inaktivera funktioner för självbetjäningsköp läser du [Aktivera eller inaktivera registrering och inköp via självbetjäning](/service-admin-disable-self-service.md).
+> Från och med 14 januari 2020 är funktionerna för självbetjäningsköp, prenumeration och licenshantering för Power Platform-produkter (Power BI, Power Apps och Power Automate) tillgängliga för kommersiella molnkunder. Mer information finns i [Vanliga frågor och svar om självbetjäningsköp](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq). Om du vill aktivera eller inaktivera funktioner för självbetjäningsköp läser du [Aktivera eller inaktivera registrering och inköp via självbetjäning](/power-bi/admin/service-admin-disable-self-service).
 
 ### <a name="prerequisites"></a>Förutsättningar
 

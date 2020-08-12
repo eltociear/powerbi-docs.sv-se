@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 06/10/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 7f067e87bf155b45be1d4c34f27d41649b6247df
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: d3539da05aed1fda28ca6e93c96e1e2f7793c3d6
+ms.sourcegitcommit: 0d0ab427bb71b37c9e5170c515a8f274e1f20c17
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85237970"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87878506"
 ---
 # <a name="use-ai-insights-in-power-bi-desktop"></a>Använda AI-insikter i Power BI Desktop
 
@@ -75,7 +75,7 @@ Extrahering av diskussionsämne fungerar bäst när du har större mängder text
 
 Funktionen **Bedöma sentiment** utvärderar textinmatning och returnerar ett sentimentpoäng för varje dokument som sträcker sig från 0 (negativt) till 1 (positivt). Det här är användbart för att upptäcka positiva och negativa attityder i sociala medier, kundrecensioner och diskussionsforum.
 
-Textanalys använder en klassificeringsalgoritm för maskininlärning för att generera ett sentimentpoäng mellan 0 och 1. Poäng närmare 1 anger positiv attityd, poäng närmare 0 indikerar negativ attityd. Modellen har tränats i förväg med en omfattande textmassa med attitydassociationer. Det är för närvarande inte möjligt att ange dina egna träningsdata. Modellen använder en kombination av metoder under textanalys, inklusive textbehandling, en del av tal-analys, ordplacering och ordassociationer. Läs mer om algoritmen i [Introduktion till textanalys](https://blogs.technet.microsoft.com/machinelearning/2015/04/08/introducing-text-analytics-in-the-azure-ml-marketplace/).
+Textanalys använder en klassificeringsalgoritm för maskininlärning för att generera ett sentimentpoäng mellan 0 och 1. Poäng närmare 1 anger positiv attityd, poäng närmare 0 indikerar negativ attityd. Modellen har tränats i förväg med en omfattande textmassa med attitydassociationer. Det är för närvarande inte möjligt att ange dina egna träningsdata. Modellen använder en kombination av metoder under textanalys, inklusive textbehandling, en del av tal-analys, ordplacering och ordassociationer. Läs mer om algoritmen i [Introduktion till textanalys](/archive/blogs/machinelearning/machine-learning-and-text-analytics).
 
 Attitydanalys utförs på hela indatafältet, till skillnad från att extrahera attityder för en viss entitet i texten. I praktiken är det en tendens för att bedöma precision för att förbättra när dokumenten innehåller en eller två meningar i stället för ett stort textblock. Under en fas med bedömning av objektivitet avgör modellen om ett inmatningsfält som helhet är objektivt eller innehåller sentiment. Ett indatafält som främst är objektivt går inte vidare till fasen för sentimentspårning, vilket resulterar i en poäng på 0,50 utan fortsatt bearbetning. För inmatningsfält som fortsätter i pipelinen, genererar nästa fas en poäng över eller under 0,50 beroende på graden av sentiment som identifierats i indatafältet.
 

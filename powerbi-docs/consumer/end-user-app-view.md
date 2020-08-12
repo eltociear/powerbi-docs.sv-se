@@ -10,12 +10,12 @@ ms.date: 07/08/2020
 ms.author: mihart
 ms.custom: licensing support
 LocalizationGroup: Share your work
-ms.openlocfilehash: 7362eb683dae6318dc0e64de68afb8a8b57d62c6
-ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
+ms.openlocfilehash: bfda795e02ef53188c5125bc2f0674e859ebd450
+ms.sourcegitcommit: 0d0ab427bb71b37c9e5170c515a8f274e1f20c17
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86162182"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87878821"
 ---
 # <a name="install-and-use-apps-with-dashboards-and-reports-in-power-bi"></a>Installera och använda appar med instrumentpaneler och rapporter i Power BI
 
@@ -76,7 +76,7 @@ Du kan också installera en organisationsapp från en direktlänk i ett e-postme
 
 **På datorn** 
 
-När du väljer länken i ett e-postmeddelande öppnar Power BI-tjänsten ([https://powerbi.com](https://app/powerbi.com)) appen i din webbläsare. 
+När du väljer länken i ett e-postmeddelande öppnar Power BI-tjänsten ([https://app.powerbi.com](https://app.powerbi.com)) appen i din webbläsare. 
 
 **På iOS- eller mobila Android-enheter** 
 

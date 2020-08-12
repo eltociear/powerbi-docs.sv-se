@@ -9,18 +9,18 @@ ms.topic: conceptual
 ms.date: 06/11/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 0a09311c5fdb1a8b2e008996d993015f33ee9b5f
-ms.sourcegitcommit: a07fa723bb459494c60cf6d749b4554af723482a
+ms.openlocfilehash: b1204b28ae5239bf4080472129b0862862446e5d
+ms.sourcegitcommit: 0d0ab427bb71b37c9e5170c515a8f274e1f20c17
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "84739263"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87878466"
 ---
 # <a name="using-enhanced-dataset-metadata-preview"></a>Använda utökade datamängdsmetadata (förhandsversion)
 
 När Power BI Desktop skapar rapporter skapas även datamängdsmetadata i motsvarande PBIX- och PBIT-filer. Tidigare lagrades metadata i ett format som var specifikt för Power BI Desktop. Det använde Base-64-kodade M-uttryck och datakällor, och antaganden gjordes om hur metadata lagrades.
 
-I och med att funktionen för **förbättrade datamängdsmetadata** släpps tas många av dessa begränsningar bort. Nu när funktionen för **förbättrade datamängdsmetadata** aktiveras, använder metadata som skapats av Power BI Desktop ett format som liknar det som används för Analysis Services-tabellmodeller, baserat på [tabellobjektsmodellen](https://docs.microsoft.com/bi-reference/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo).
+I och med att funktionen för **förbättrade datamängdsmetadata** släpps tas många av dessa begränsningar bort. Nu när funktionen för **förbättrade datamängdsmetadata** aktiveras, använder metadata som skapats av Power BI Desktop ett format som liknar det som används för Analysis Services-tabellmodeller, baserat på [tabellobjektsmodellen](/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo).
 
 
 Funktionen för **förbättrade datamängdsmetadata** är strategisk och grundläggande, eftersom framtida Power BI funktioner kommer att skapas utifrån sina metadata. Några ytterligare funktioner som drar nytta av förbättrade datamängdsmetadata är [XMLA läs/skriv](https://docs.microsoft.com/power-platform-release-plan/2019wave2/business-intelligence/xmla-readwrite) för hantering av Power BI-datauppsättningar och migrering av Analysis Services-arbetsbelastningar till Power BI för att dra nytta av nästa generations funktioner.

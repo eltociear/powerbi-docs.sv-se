@@ -6,14 +6,14 @@ ms.author: kesharab
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/18/2019
-ms.openlocfilehash: aed8317c36cdd118b03bff2db93788f493ac9ad2
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 96e42eb8a4d958eb4ee090cedf12d2ebfe79f941
+ms.sourcegitcommit: 0d0ab427bb71b37c9e5170c515a8f274e1f20c17
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79380535"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87878598"
 ---
 # <a name="add-bookmark-support-for-power-bi-visuals"></a>Lägga till stöd för bokmärken för visuella Power BI-objekt
 
@@ -49,9 +49,9 @@ Det visuella objektet bör återställa filtervärdena till att visa det visuell
 
 Om ditt visuella objekt interagerar med andra visuella objekt med hjälp av [Val](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/Selection.md) kan du lägga till bokmärken på endera av de följande två sätten:
 
-* Om det visuella objektet inte redan har använt [InteractivityService](https://github.com/Microsoft/powerbi-visuals-utils-interactivityutils/blob/master/docs/api/interactivityService.md) kan du använda metoden `FilterManager.restoreSelectionIds`.
+* Om det visuella objektet inte redan har använt [InteractivityService](https://github.com/microsoft/powerbi-visuals-utils-interactivityutils/blob/master/src/interactivityService.ts) kan du använda metoden `FilterManager.restoreSelectionIds`.
 
-* Om det visuella objektet redan använder [InteractivityService](https://github.com/Microsoft/powerbi-visuals-utils-interactivityutils/blob/master/docs/api/interactivityService.md) för att hantera val bör du använda metoden `applySelectionFromFilter` i instansen av `InteractivityService`.
+* Om det visuella objektet redan använder [InteractivityService](https://github.com/microsoft/powerbi-visuals-utils-interactivityutils/blob/master/src/interactivityService.ts) för att hantera val bör du använda metoden `applySelectionFromFilter` i instansen av `InteractivityService`.
 
 #### <a name="use-iselectionmanagerregisteronselectcallback"></a>Använda ISelectionManager.registerOnSelectCallback
 
