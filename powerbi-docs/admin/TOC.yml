@@ -114,6 +114,8 @@
               href: service-admin-premium-multi-geo.md
             - name: Använda egna krypteringsnycklar
               href: service-encryption-byok.md
+            - name: Använda kundhanterade nycklar
+              href: service-encryption-customer-managed-keys.md
             - name: Starta om en Premium-kapacitet
               href: service-admin-premium-restart.md
             - name: Anslutning av datauppsättning med XMLA-slutpunkten
