@@ -7,15 +7,15 @@ ms.reviewer: cmfinlan
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 03/11/2020
+ms.date: 08/05/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: ec45d971855aefe35161f2b10fecd483f0345a46
-ms.sourcegitcommit: a7227f6d3236e6e0a7bc1f83ff6099b5cd58bff3
+ms.openlocfilehash: 4f02a98ca13bd5808bde987889c3f4404c9100f0
+ms.sourcegitcommit: 65822b51810a5239fea9d3d0af1fc286436c6cad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "87768813"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87837507"
 ---
 # <a name="export-reports-from-power-bi-to-pdf"></a>Exportera rapporter från Power BI till PDF
 
@@ -52,6 +52,7 @@ Det är allt. Du kan ladda ned filen och öppna den med ett PDF-visningsprogram,
 ## <a name="limitations-and-considerations"></a>Begränsningar och överväganden
 Det finns några överväganden och begränsningar som du bör tänka på när du arbetar med funktionen **exportera till PDF**.
 
+* PDF-filen kommer att innehålla data och visualiseringar som visas på din Power BI-arbetsyta. Om det visuella objektet innehåller rullningslister innehåller PDF-filen det visuella objektet i det obläddrade standardläget.  
 * Visuella R-och Python-objekt stöds inte för tillfället. I PDF-filen är dessa visuella objekt tomma och visar ett felmeddelande. 
 * Visuella Power BI-objekt som har certifierats stöds. Mer information om certifierade visuella Power BI-objekt, inklusive hur visuella Power BI-objekt certifieras, finns i [Certifiera visuella Power BI-objekt](../developer/visuals/power-bi-custom-visuals-certified.md). Visuella Power BI-objekt som inte har certifierats stöds inte. I PDF-filen visas ett felmeddelande för dem.
 * Det här visuella ESRI-objektet stöds inte

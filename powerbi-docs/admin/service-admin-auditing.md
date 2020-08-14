@@ -10,12 +10,12 @@ ms.date: 05/11/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: 195d1284fedc9f9c51c6fed2ff03cc0883b16405
-ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
+ms.openlocfilehash: e8e81c297841e32d1f4d966de23b5d752b654c20
+ms.sourcegitcommit: d7145123133255d004b85ef8b20ca4977f0b843e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86161731"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88091628"
 ---
 # <a name="track-user-activities-in-power-bi"></a>Spåra användaraktiviteter i Power BI
 
@@ -318,6 +318,9 @@ Följande åtgärder är tillgängliga i både granskningsloggar och aktivitetsl
 | Uppdatering av Power BI-dataflöde begärdes               | RequestDataflowRefresh                      | Används inte för närvarande                       |
 | Uppdatering av Power BI-datauppsättning begärdes                | RefreshDataset                              |                                          |
 | Power BI-arbetsytor hämtades                     | GetWorkspaces                               |                                          |
+| Känslighetsetikett används                         | SensitivityLabelApplied                     |                                          |
+| Känslighetsetikett har ändrats                         | SensitivityLabelChanged                     |                                          |
+| Känslighetsetikett har tagits bort                         | SensitivityLabelRemoved                     |                                          |
 | Lagringsplats för dataflöden för en arbetsyta angavs     | SetDataflowStorageLocationForWorkspace      |                                          |
 | Schemalagd uppdatering i Power BI-dataflödet konfigurerades        | SetScheduledRefreshOnDataflow               |                                          |
 | Schemalagd uppdatering i Power BI-datauppsättningen konfigurerades         | SetScheduledRefresh                         |                                          |

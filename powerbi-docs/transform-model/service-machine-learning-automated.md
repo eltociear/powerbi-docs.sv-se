@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 10/18/2019
+ms.date: 08/03/2020
 ms.author: davidi
 LocalizationGroup: conceptual
-ms.openlocfilehash: 3b4d7eb41e04a173f763dd09caf5fa94bfc444d4
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: caccfdede32e91aa6265db0d38e26e96f8a7852c
+ms.sourcegitcommit: 0d0ab427bb71b37c9e5170c515a8f274e1f20c17
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85232635"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87878629"
 ---
 # <a name="automated-machine-learning-in-power-bi"></a>Automatiserad maskininlärning i Power BI
 
@@ -142,11 +142,15 @@ När du tillämpar ML-modellen skapas två nya dataflödesentiteter som innehål
 
 ![Frågeredigeraren](media/service-machine-learning-automated/automated-machine-learning-power-bi-11.png)
 
+Du kan också använda en Power BI AutoML-modell för entiteter i alla dataflöden på samma arbetsyta med hjälp av AI Insights i PQO-funktionswebbläsaren. På så sätt kan du använda modeller som skapats av andra på samma arbetsyta utan att nödvändigtvis vara ägare till det dataflöde som rymmer modellen. Power Query identifierar alla Power BI ML-modeller på arbetsytan och exponerar dem som dynamiska Power Query-funktioner. Du kan sedan anropa dessa funktioner genom att öppna dem i menyfliksområdet i Power Query-redigeraren, eller genom att anropa M-funktionen direkt.Den här funktionen stöds för närvarande endast för Power BI-dataflöden och för Power Query Online i Power BI-tjänsten. Observera att detta skiljer sig från att använda ML-modeller i ett dataflöde med hjälp av AutoML-guiden. Det finns ingen förklaringsenhet som har skapats med den här metoden, och såvida du inte är ägare till dataflödet har du inte åtkomst till modellträningsrapporterna och kan inte träna modellen på nytt. Om källmodellen redigeras (genom att indatafält läggs till eller tas bort) eller om modellen eller källdataflödet tas bort, så bryts detta beroendedataflöde.
+
+![Använd en modell med hjälp av PQO-funktionswebbläsaren](media/service-machine-learning-automated/automated-machine-learning-power-bi-20.png)
+
 När du tillämpar modellen håller AutoML alltid dina förutsägelser uppdaterade när dataflödet uppdateras.
 
 Om du vill använda insikter och förutsägelser från ML-modellen i en Power BI-rapport kan du ansluta till utdataentiteten från Power BI Desktop med hjälp av anslutningsprogrammet för **dataflöden**.
 
-## <a name="binary-prediction-models"></a>Modeller för binär förutsägelse
+## <a name="binary-prediction-models"></a>Binära förutsägelsemodeller
 
 Modeller för binär förutsägelse, som mer formellt kallas **modeller för binär klassificering**, används för att klassificera en datamängd i två grupper. De används till att förutse händelser som kan ha ett binärt utfall. Några exempel kan vara om en affärsmöjlighet realiseras, ett konto faller bort, en faktura betalas i tid eller en transaktion är bedräglig.
 

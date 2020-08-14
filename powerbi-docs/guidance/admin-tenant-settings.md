@@ -6,14 +6,14 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/29/2020
+ms.date: 08/10/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 7dd6c812116d9ba196b157bd12d6362c19ac64ec
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: eeb879fc70effa166d08c9a342f77ad614779751
+ms.sourcegitcommit: 9e39232cbc28d8b39dfec5496db7ece9837b5e53
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86216723"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "88049309"
 ---
 # <a name="tenant-admin-settings-guidance"></a>Guide till administratörsinställningar för klientorganisationer
 
@@ -39,9 +39,13 @@ Om du gör det rekommenderar vi att du sedan aktiverar inställningen **Publicer
 De här webbadresserna blir tillgängliga som länkar på hjälpmenyn i Power BI.
 
 > [!NOTE]
-> Med länken **Licensieringsbegäranden** förhindrar du att enskilda användare registrerar sig för den 60-dagars kostnadsfria utvärderingsversionen av Power BI Pro. De dirigeras i stället till en inter webbplatsen med information om att skaffa en licens – kostnadsfri eller Pro.
+> Genom den tillhandahållna **licensieringsbegärande**-URL:en förhindras enskilda användare från att köpa en Power BI Pro-licens. De dirigeras i stället till en intern webbplats med information om hur man skaffar en licens. Inställningen **Låt användarna testa Power BI Pro** är aktiverad som standard och skiljer inköps- och utvärderingsupplevelserna åt. Mer information om hur dessa inställningar fungerar tillsammans finns i [Låt användarna testa Power BI Pro](../admin/service-admin-portal.md#allow-users-to-try-power-bi-pro).
+>
+>
 
 ![Skärmbild av Power BI Desktop med inställningar för hjälp och support.](media/admin-tenant-settings/publish-get-help-information.png)
+
+Mer information finns i [Hjälp- och supportinställningar](../admin/service-admin-portal.md#help-and-support-settings).
 
 ## <a name="manage-risk"></a>Hantera risk
 Inställningarna för att hantera risker kan hjälpa dig att upprätta styrningsprinciper i Power BI-klientorganisationen. Kom ihåg att styrningsinställningar inte är en säkerhetsåtgärd. Om du till exempel inaktiverar inställningen **Exportera data** tas funktionen bort från Power BI-användargränssnittet. Det hjälper Power BI-användare att följa organisationens styrningsprinciper när de arbetar, men det hindrar inte målmedvetna användare från att exportera data med hjälp av andra alternativ. Från en säkerhetssynpunkt har en Power BI-användare med läsbehörighet till en datauppsättning behörighet att köra frågor på den här datauppsättningen och kan spara resultaten oavsett vilka funktioner som finns tillgängliga i Power BI-användargränssnittet.

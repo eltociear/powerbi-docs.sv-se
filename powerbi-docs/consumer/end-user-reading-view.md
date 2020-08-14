@@ -12,14 +12,14 @@ ms.subservice: powerbi-consumer
 ms.topic: quickstart
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 06/17/2020
+ms.date: 08/10/2020
 ms.author: mihart
-ms.openlocfilehash: 7d9d0a3f9aaea77a969f11561a22ab68fbec0264
-ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
+ms.openlocfilehash: 0d0d6e935f8405aa063ed90cf5a2f403faeba893
+ms.sourcegitcommit: 9e39232cbc28d8b39dfec5496db7ece9837b5e53
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87537261"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "88049746"
 ---
 # <a name="quickstart-learn-about-the-power-bi-capabilities-for-consumers"></a>Snabbstart: Lär dig mer om Power BI-funktioner för *användare*
 
@@ -98,11 +98,11 @@ Du behöver inte öppna Power BI för att övervaka en instrumentpanel.  Du kan 
  Läs mer om [Power BI-prenumerationer](end-user-subscribe.md)
 
 #### <a name="get-alerts-when-your-data-reaches-a-threshold"></a>Få aviseringar när dina data når ett tröskelvärde
-Dina data är live, och de visuella objekten uppdateras automatiskt för att avspegla detta. Om du vill bli meddelad när data överskrider eller underskrider ett tröskelvärde som du anger så använder du dataaviseringar. Aviseringar fungerar för mätare, KPI: er och kort.    
+Dina data är live, och de visuella objekten uppdateras automatiskt för att avspegla detta. Om du vill bli meddelad när data överskrider eller underskrider ett tröskelvärde som du anger så använder du dataaviseringar. Aviseringar fungerar för mätare, KPI:er och kort.    
 ![panel, kort, kpi](media/end-user-alerts/card-gauge-kpi.png)
 
 Power BI skickar dig ett e-postmeddelande när värdet överskrider eller underskrider den gräns som du har angett.  
-![Aviseringsmeddelande](media/end-user-alerts/power-bi-alert-email.png)
+![Aviseringsmeddelande](media/end-user-alerts/power-bi-email.png)
 
 Läs mer om [Power BI-aviseringar](end-user-alerts.md)
 

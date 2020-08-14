@@ -5,15 +5,15 @@ author: paulinbar
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
-ms.date: 07/06/2020
+ms.date: 08/10/2020
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: f92d10fdff880049460d24c714201d9a433745d8
-ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
+ms.openlocfilehash: be2f98341abd581cd2df717d19b3a9110548a2ec
+ms.sourcegitcommit: 9e39232cbc28d8b39dfec5496db7ece9837b5e53
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86035154"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "88049217"
 ---
 # <a name="how-to-apply-sensitivity-labels-in-power-bi"></a>Så här tillämpar du känslighetsetiketter i Power BI
 
@@ -21,8 +21,8 @@ Microsoft Information Protection-känslighetsetiketter på dina rapporter, instr
 
 Följande krav måste vara uppfyllda för att du ska kunna använda känslighetsetiketter i Power BI:
 * Du måste ha en Power BI Pro-licens och redigeringsbehörighet för det innehåll som du vill märka.
-* Du måste vara medlem i en säkerhetsgrupp som har behörighet att tillämpa känslighetsetiketter. Mer information finns i [Aktivera känslighetsetiketter i Power BI](./service-security-enable-data-sensitivity-labels.md#enable-sensitivity-labels).
-* Alla [förhandskrav](./service-security-sensitivity-label-overview.md#requirements-for-using-sensitivity-labels-in-power-bi) och [licenskrav](./service-security-data-protection-overview.md#licensing) måste vara uppfyllda.
+* Du måste vara medlem i en säkerhetsgrupp som har behörighet att tillämpa känslighetsetiketter. Mer information finns i [Aktivera känslighetsetiketter i Power BI](./service-security-enable-data-sensitivity-labels.md).
+* Alla [licensieringskrav och andra krav](./service-security-enable-data-sensitivity-labels.md#licensing-and-requirements) måste uppfyllas.
 
 Mer information om känslighetsetiketter i Power BI finns i [Känslighetsetiketter i Power BI](service-security-sensitivity-label-overview.md).
 

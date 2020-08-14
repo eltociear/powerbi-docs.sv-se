@@ -6,20 +6,22 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/26/2020
+ms.date: 08/07/2020
 ms.author: maggies
 ms.custom: contperfq4
 LocalizationGroup: Share your work
-ms.openlocfilehash: 77de9608978379cee83236b0c362bd2d7d57d5c6
-ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
+ms.openlocfilehash: 56dd9e07e7c0647e7f92cc5d701b260483e2fbdf
+ms.sourcegitcommit: 9e39232cbc28d8b39dfec5496db7ece9837b5e53
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84120411"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "88049286"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Organisera arbete på de nya arbetsytorna i Power BI
 
-*Arbetsytor* är platser för samarbete med kollegor för att skapa samlingar med instrumentpaneler, rapporter och sidnumrerade rapporter. Den nya arbetsyteupplevelsen hjälper dig att bättre hantera åtkomst till innehåll. Den här artikeln beskriver de nya arbetsytorna och hur de skiljer sig åt från de klassiska arbetsytorna.  De används, precis som de klassiska arbetsytorna, för att skapa och distribuera appar. Är du redo att skapa en ny arbetsyta? Läs [Skapa en ny arbetsyta-upplevelsen](service-create-the-new-workspaces.md).
+*Arbetsytor* är platser för samarbete med kollegor för att skapa samlingar med instrumentpaneler, rapporter och sidnumrerade rapporter. Den nya arbetsyteupplevelsen hjälper dig att bättre hantera åtkomst till innehåll. Den här artikeln beskriver de nya arbetsytorna och hur de skiljer sig åt från de klassiska arbetsytorna.  De används, precis som de klassiska arbetsytorna, för att skapa och distribuera appar. 
+
+Är du redo att skapa en ny arbetsyta? Läs [Skapa en ny arbetsyta-upplevelsen](service-create-the-new-workspaces.md).
 
 :::image type="content" source="media/service-new-workspaces/power-bi-workspace-opportunity.png" alt-text="Ny arbetsyteupplevelse i Power BI":::
 
@@ -86,8 +88,10 @@ Om en av de nya arbetsytorna är i en delad kapacitet, behöver alla du lägger 
 
 När arbetsytan är i en Power BI Premium-kapacitet, kan användare med läsarroll få åtkomst till den nya arbetsytan även om de inte har en Power BI Pro-licens. Om du tilldelar dessa användare en högre roll som Administratör, Medlem eller Deltagare så ombes de dock att starta en Pro-utvärdering när de försöker komma åt arbetsytan. Om du vill att användare utan Pro-licenser ska använda rollen Läsare, se till att de inte har andra arbetsyteroller också, antingen som individer eller som en del av en användargrupp.
 
+Vid publicering av rapporter till den nya arbetsyteupplevelsen tillämpas befintliga licensieringsregler strängare. Om du försöker publicera från Power BI Desktop eller andra klientverktyg utan en Pro-licens får du upp felet ”Endast användare med Power BI Pro-licens kan publicera till den här arbetsytan”.
+
 > [!NOTE]
-> Vid publicering av rapporter till den nya arbetsyteupplevelsen tillämpas befintliga licensieringsregler strängare. Om du försöker publicera från Power BI Desktop eller andra klientverktyg utan en Pro-licens får du upp felet ”Endast användare med Power BI Pro-licens kan publicera till den här arbetsytan”.
+> Power BI för amerikanska myndigheter är inte tillgängligt som en kostnadsfri licens. Mer information om licensiering finns i [Power BI för amerikanska myndighetskunder](../admin/service-govus-overview.md).
 
 ### <a name="guest-users"></a>Gästanvändare
 
@@ -95,7 +99,9 @@ Som standard har [Azure AD B2B-gästanvändare](../admin/service-admin-azure-ad-
 
 ### <a name="administering-new-workspace-experience-workspaces"></a>Administrera arbetsytor för den nya arbetsyteupplevelsen
 
-Administration för arbetsytor i den nya arbetsyteupplevelsen finns i administratörsportalen för Power BI. Power BI-administratörer bestämmer vem i en organisation som kan skapa arbetsytor och distribuera appar. Administratörer kan se status för alla arbetsytor i organisationen. De kan också hantera och återställa arbetsytor. Läs mer om att [administrera nya arbetsytor](../admin/service-admin-portal.md#create-the-new-workspaces) i artikeln Administratörsportalen.
+Administration för arbetsytor i den nya arbetsyteupplevelsen finns i administratörsportalen för Power BI. Power BI-administratörer bestämmer vem i en organisation som kan skapa arbetsytor och distribuera appar. Läs mer om att [hantera användarnas möjlighet att skapa arbetsytor](../admin/service-admin-portal.md#create-the-new-workspaces) i artikeln Administrationsportalen. 
+
+Administratörer kan även se tillståndet för alla arbetsytor i organisationen. De kan hantera, återställa och till och med ta bort arbetsytor. Läs mer om att [hantera arbetsytor](../admin/service-admin-portal.md#workspaces) i artikeln Administrationsportalen.
 
 ### <a name="auditing"></a>Granskning
 

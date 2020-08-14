@@ -8,13 +8,13 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.custom: seodec18
-ms.date: 06/06/2019
-ms.openlocfilehash: fea4e4927b009e30bc040593f9237cc49ff73956
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.date: 08/04/2020
+ms.openlocfilehash: fe6ca733a5498c0e576ec30e6992ffbf26d54319
+ms.sourcegitcommit: 65822b51810a5239fea9d3d0af1fc286436c6cad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78921457"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87837599"
 ---
 # <a name="report-data-in-power-bi-report-builder"></a>Rapportdata i Power BI Report Builder
 
@@ -27,7 +27,10 @@ Lär dig hur du [skapar en inbäddad datakälla för sidnumrerade rapporter i Po
   
 - **Dataanslutning.** Kallas även för *datakälla*. En dataanslutning innehåller ett namn och anslutningsegenskaper som är beroende av anslutningstypen. Dataanslutningar innehåller inga autentiseringsuppgifter. Dataanslutningar anger inte vilka data som ska hämtas från den externa datakällan. Det gör du i stället genom att ange en fråga när du skapar en datamängd.  
   
-- **Anslutningssträng.** En anslutningssträng är en strängversion av de anslutningsegenskaper som behövs för anslutning till en datakälla. Anslutningsegenskaper varierar beroende på typen av dataanslutning.  
+- **Anslutningssträng.** En anslutningssträng är en strängversion av de anslutningsegenskaper som behövs för anslutning till en datakälla. Anslutningsegenskaper varierar beroende på typen av dataanslutning. 
+
+    > [!NOTE]
+    > Anslutningssträngar för en datakälla kan inte vara uttrycksbaserade.
   
 - **Inbäddad datakälla.** Kallas även *rapportspecifik datakälla*. En datakälla som definieras i en rapport och endast används av just den rapporten.  
   

@@ -6,15 +6,15 @@ manager: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
-ms.date: 07/05/2020
+ms.date: 08/10/2020
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: ea161af0156aa0bee2fe92ab2f87fb82630f5589
-ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
+ms.openlocfilehash: 4d719d7df5b982341b6377c41e448267197e769b
+ms.sourcegitcommit: 9e39232cbc28d8b39dfec5496db7ece9837b5e53
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87252140"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "88049260"
 ---
 # <a name="sensitivity-labels-in-power-bi"></a>Känslighetsetiketter i Power BI
 
@@ -39,7 +39,7 @@ Känslighetsetiketter och filkryptering tillämpas **inte** på andra exportsök
 
 ## <a name="how-sensitivity-labels-work-in-power-bi"></a>Så här fungerar känslighetsetiketter i Power BI
 
-När du tillämpar en känslighetsetikett på en instrumentpanel, en rapport, en datamängd eller ett dataflöde i Power BI så fungerar det i princip på samma sätt som när du lägger till en tagg för resursen, med följande fördelar:
+När du tillämpar en känslighetsetikett på en instrumentpanel, en rapport, en datamängd eller ett dataflöde i Power BI fungerar det i princip på samma sätt som när du lägger till en tagg för resursen, med följande fördelar:
 * **Anpassningsbar** – du kan skapa kategorier för olika nivåer av känsligt innehåll i organisationen, till exempel Personligt, Offentligt, Allmänt, Konfidentiellt och Mycket konfidentiellt.
 * **Klartext** – eftersom etiketten är i klartext är det enkelt för användarna att förstå hur de ska hantera innehållet enligt riktlinjerna för känslighetsetiketter.
 * **Beständiga** – När en känslighetsetikett har tillämpats på innehåll följer den med innehållet när det exporteras till Excel-, PowerPoint- och PDF-filer och påverkar hur principer tillämpas och verkställs.
@@ -69,11 +69,23 @@ När data exporteras från Power BI till Excel-, PowerPoint- eller PDF-filer til
 
 Användare som exporterar en fil från Power BI har behörighet att komma åt och redigera filen enligt inställningarna för känslighetsetiketten. De får inte ägarbehörigheter till filen.
 
-Känslighetsetiketter och skydd tillämpas inte när data exporteras till .csv- eller .pbix-filer, Analysera i Excel eller andra exportsökvägar.
+Känslighetsetiketter och skydd tillämpas inte när data exporteras till .csv- eller .pbix-filer eller några andra exportsökvägar.
 
 När en känslighetsetikett och skydd tillämpas på en exporterad fil läggs ingen innehållsmarkering till för filen. Om etiketten dock konfigureras att tillämpa innehållsmärkningar tillämpas markeringarna automatiskt av Azure Information Protection-klienten för enhetliga etiketter när filen öppnas i Office-skrivbordsappar. Innehållsmärkningarna tillämpas inte automatiskt när du använder inbyggd märkning för skrivbords-, mobil- eller webbappar. Mer information finns i avsnittet om [innehållsmärkning och kryptering med Office-appar](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps?view=o365-worldwide#when-office-apps-apply-content-marking-and-encryption).
 
 Exporten misslyckas om det inte går att tillämpa en etikett när data exporteras till en fil. Du kan kontrollera om exporten misslyckades på grund av att det inte gick att tillämpa etiketten. Klicka bara på rapportens eller instrumentpanelens namn i mitten av namnlisten och se om ”Det går inte att läsa in känslighetsetiketten” visas i listrutan som öppnas. Detta kan inträffa på grund av ett tillfälligt systemproblem eller om den tillämpade etiketten har avpublicerats eller tagits bort av säkerhetsadministratören.
+
+## <a name="sensitivity-label-inheritance-in-analyze-in-excel"></a>Känslighetsetikettsarv i Analysera i Excel
+
+När du skapar en pivottabell i Excel med en live-anslutning till en Power BI-datamängd (vilket du kan göra antingen från Power BI via [Analysera i Excel](../collaborate-share/service-analyze-in-excel.md) eller från [Excel](https://support.microsoft.com/office/create-a-pivottable-from-power-bi-datasets-31444a04-9c38-4dd7-9a45-22848c666884?ui=en-US&rs=en-US&ad=US)), ärvs och tillämpas datamängdens känslighetsetikett på din Excel-fil, tillsammans med eventuellt associerat skydd. Om datamängdens etikett senare ändras till att bli mer restriktiv, uppdateras etiketten som tillämpas på den länkade Excel-filen automatiskt vid nästa datauppdatering.
+
+![Skärmbild av Excel som visar känslighetsetiketter som ärvts från datamängden via en live-anslutning.](media/service-security-sensitivity-label-overview/live-connection-inheritance.png)
+ 
+Känslighetsetiketter i Excel som konfigurerats manuellt skrivs inte över automatiskt av datamängdens känslighetsetikett. I stället visas en banderoll som meddelar dig att datamängden har en känslighetsetikett som du rekommenderas att använda.
+
+>[!NOTE]
+>Om datamängdens känslighetsetikett är mindre restriktiv än Excel-filens känslighetsetikett varken ärvs eller uppdateras etiketten. En Excel-fil ärver aldrig en mindre begränsande känslighetsetikett.
+
 
 ## <a name="sensitivity-label-persistence-in-embedded-reports-and-dashboards"></a>Bevarande av känslighetsetiketter i inbäddade rapporter och instrumentpaneler
 
@@ -83,7 +95,7 @@ Du kan bädda in Power BI-rapporter, instrumentpaneler och visuella objekt i fö
 
 Följande inbäddningsscenarier stöds:
 * [Bädda in för din organisation](../developer/embedded/embed-sample-for-your-organization.md)
-* Microsoft 365-appar (till exempel [Teams](../collaborate-share/service-collaborate-microsoft-teams.md) och [SharePoint](../collaborate-share/service-embed-report-spo.md))
+* Microsoft 365-appar (exempelvis [Teams](../collaborate-share/service-embed-report-microsoft-teams.md) och [SharePoint](../collaborate-share/service-embed-report-spo.md))
 * [Säker URL-inbäddning](../collaborate-share/service-embed-secure.md) (inbäddning från Power BI-tjänsten) 
 
 ## <a name="sensitivity-labels-in-the-power-bi-mobile-apps"></a>Känslighetsetiketter i Power BI-mobilapparna
@@ -95,18 +107,9 @@ Känslighetsetiketter kan visas på rapporter och instrumentpaneler i Power BI-m
 ## <a name="supported-clouds"></a>Moln som stöds
 Känslighetsetiketter stöds endast för klientorganisationer i globala (offentliga) moln, inte för klientorganisationer i exempelvis nationella moln.
 
-## <a name="requirements-for-using-sensitivity-labels-in-power-bi"></a>Krav för att använda känslighetsetiketter i Power BI
+## <a name="licensing-and-requirements"></a>Licensiering och krav
 
-Innan du kan aktivera och använda känslighetsetiketter i Power BI måste följande förutsättningar vara uppfyllda:
-* Känslighetsetiketterna måste vara definierade antingen i [säkerhetscentret för Microsoft 365](https://security.microsoft.com/) eller i [efterlevnadscentret för Microsoft 365](https://compliance.microsoft.com/).
-* [Aktivera känslighetsetiketter](service-security-enable-data-sensitivity-labels.md) i Power BI.
-* Se till att användarna har [rätt licenser](#licensing).
-
-## <a name="licensing"></a>Licensiering
-
-* För att använda och visa känslighetsetiketter från Microsoft Information Protection i Power BI behöver du en Premium P1- eller Premium P2-licens för Azure Information Protection. Du kan antingen köpa Microsoft Azure Information Protection separat eller via något av Microsofts licenspaket. Läs mer i [Prissättning för Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection/).
-* Det finns [licenskrav](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-sensitivity-labels#subscription-and-licensing-requirements-for-sensitivity-labels) för att visa och använda etiketter i Office-appar.
-* För att tillämpa etiketter på Power BI-innehåll måste användarna dessutom ha en Power BI Pro-licens utöver en av Azure Information Protection-licenserna som anges ovan.
+Mer information finns i [Licensiering och krav](service-security-enable-data-sensitivity-labels.md#licensing-and-requirements).
 
 ## <a name="sensitivity-label-creation-and-management"></a>Skapande och hantering av känslighetsetiketter
 

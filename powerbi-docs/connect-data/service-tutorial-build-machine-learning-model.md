@@ -7,15 +7,15 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.custom: connect-to-services
 ms.topic: tutorial
-ms.date: 03/29/2019
+ms.date: 08/03/2020
 ms.author: davidi
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 2d65b63238009c5a743d83a13d596f36aad4b2a3
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 9f25c9ffc294a1733a3dba5818dc00bd23124837
+ms.sourcegitcommit: 0d0ab427bb71b37c9e5170c515a8f274e1f20c17
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83281701"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87878905"
 ---
 # <a name="tutorial-build-a-machine-learning-model-in-power-bi"></a>Självstudie: Skapa en maskininlärningsmodell i Power BI
 
@@ -154,6 +154,26 @@ När du tillämpar en modell för binär förutsägelse läggs fyra kolumner med
 När dataflödet har uppdaterats kan du välja entiteten **OnlineShoppers enriched Purchase Intent Prediction** för att visa resultatet.
 
 ![Visa resultatet](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-21.png)
+
+Du kan också anropa valfri AutoML-modell på arbetsytan direkt från Power Query-redigeringsprogrammet i ditt dataflöde. Om du vill ha åtkomst till Azure ML-modellerna väljer du knappen Redigera för den entitet som du vill utöka med insikter från din AutoML-modell, så som visas på följande bild.
+
+![Redigera entiteten](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-22.png)
+
+Genom att välja knappen Redigera öppnas Power Query Editor för entiteter i ditt dataflöde. Välj AI Insights-knappen i menyfliksområdet.
+
+![AI-insikter](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-23.png)
+
+ Välj mappen Power BI Machine Learning-modeller på menyn i navigeringsfönstret. Alla AutoML-modeller som du har åtkomst till visas här som Power Query-funktioner. Dessutom mappas automatiskt AutoML-modellens indataparametrar som parametrar för motsvarande Power Query-funktion. Observera att automatisk mappning av parametrar endast sker om namnet och parameterns datatyp är identiska.
+ 
+Du kan ange någon av den valda entitetens kolumner som indata från listrutan när du vill anropa en AutoML-modell. Du kan också ange ett konstant värde som ska användas som indata genom att klicka på kolumnikonen till vänster om dialogrutan Indata.
+
+![PQO-funktionswebbläsare](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-24.png)
+
+Välj Använd om du vill visa förhandsversionen av AutoML-modellens utdata som en ny kolumn i entitetstabellen. Du kan även se modellanropet som ett tillämpat steg för frågan.
+
+![Visa resultat](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-25.png)
+
+När du sparar ditt dataflöde anropas modellen automatiskt när dataflödet uppdateras, för alla nya eller uppdaterade rader i entitetstabellen.
 
 ## <a name="using-the-scored-output-from-the-model-in-a-power-bi-report"></a>Använda det poängsatta utfallet från modellen i en Power BI-rapport
 

@@ -5,15 +5,15 @@ author: paulinbar
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
-ms.date: 07/06/2020
+ms.date: 08/10/2020
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: 0fe1b7b1b8175511838005b7b63ca7543bbf939a
-ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
+ms.openlocfilehash: ebc4601f3575e84c248aef9204537a7d93c428ac
+ms.sourcegitcommit: 9e39232cbc28d8b39dfec5496db7ece9837b5e53
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86034346"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "88049194"
 ---
 # <a name="enable-sensitivity-labels-in-power-bi"></a>Aktivera känslighetsetiketter i Power BI
 
@@ -24,7 +24,20 @@ När känslighetsetiketter är aktiverade:
 * Angivna användare och säkerhetsgrupper i organisationen kan klassificera och [tillämpa känslighetsetiketter](./service-security-apply-data-sensitivity-labels.md) för sina rapporter, instrumentpaneler, datamängder och dataflöden i Power BI.
 * Alla medlemmar i organisationen kan se de här etiketterna.
 
-Om du ska aktivera känslighetsetiketter måste du ha en licens för Azure Information Protection. Mer information finns i [Licensiering](service-security-sensitivity-label-overview.md#licensing).
+Om du ska aktivera känslighetsetiketter måste du ha en licens för Azure Information Protection. Mer information finns i [Licensiering och krav](#licensing-and-requirements).
+
+## <a name="licensing-and-requirements"></a>Licensiering och krav
+
+* Om du vill använda eller visa Microsoft Information Protection-känslighetsetiketter i Power BI måste du ha en Premium P1- eller Premium P2-licens för Azure Information Protection. Du kan köpa Azure Information Protection separat eller via något av Microsofts licenspaket. Läs mer i [Prissättning för Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection/).
+
+* Om en användare ska kunna använda etiketter på Power BI-innehåll måste hen dessutom ha en Power BI Pro-licens utöver någon av de Azure Information Protection-licenser som anges ovan.
+
+* Office-appar har sina egna [licensieringskrav för visning och användning av känslighetsetiketter]( https://docs.microsoft.com/microsoft-365/compliance/get-started-with-sensitivity-labels#subscription-and-licensing-requirements-for-sensitivity-labels ).
+
+* Innan du aktiverar känslighetsetiketter på din klient, så kontrollera att känslighetsetiketter har definierats och publicerats för relevanta användare och grupper. Mer information finns i [Skapa och konfigurera känslighetsetiketter och deras principer](https://docs.microsoft.com/microsoft-365/compliance/create-sensitivity-labels?view=o365-worldwide).
+
+>[!NOTE]
+> Om din organisation använder Azure Information Protection-känslighetsetiketter måste de migreras till Microsoft Information Protection Unified Labeling-plattformen om de ska kunna användas i Power BI. [Läs mer om att migrera känslighetsetiketter](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels).
 
 ## <a name="enable-sensitivity-labels"></a>Aktivera känslighetsetiketter
 
@@ -52,9 +65,9 @@ Utför följande steg i avsnittet **Information Protection**:
 
 Power BI använder känslighetsetiketter från Microsoft Information Protection. Om du får ett felmeddelande när du försöker aktivera känslighetsetiketter kan det bero på något av följande:
 
-* Du har ingen [licens](service-security-sensitivity-label-overview.md#licensing) för Azure Information Protection.
-* Känslighetsetiketter har inte migrerats till den version av Microsoft Information Protection som stöds i Power BI. Läs mer om att [migrera känslighetsetiketter](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels).
-* Inga känslighetsetiketter från Microsoft Information Protection har definierats i organisationen. Observera att en etikett måste vara en del av en publicerad princip för att kunna användas. [Läs mer om känslighetsetiketter](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels) eller besök [Microsofts säkerhets- och efterlevnadscenter](https://sip.protection.office.com/sensitivity?flight=EnableMIPLabels) för att läsa om hur du definierar etiketter och publicerar policyer för din organisation.
+* Du har ingen [licens](#licensing-and-requirements) för Azure Information Protection.
+* Känslighetsetiketter har inte [migrerats](#enable-sensitivity-labels) till den version av Microsoft Information Protection som stöds i Power BI.
+* Inga känslighetsetiketter från Microsoft Information Protection har [definierats i organisationen](#enable-sensitivity-labels).
 
 ## <a name="considerations-and-limitations"></a>Överväganden och begränsningar
 
@@ -67,4 +80,4 @@ I den här artikeln beskrivs hur du aktiverar känslighetsetiketter i Power BI. 
 * [Översikt över känslighetsetiketter i Power BI](service-security-sensitivity-label-overview.md)
 * [Använda känslighetsetiketter i Power BI](../collaborate-share/service-security-apply-data-sensitivity-labels.md)
 * [Använda Microsoft Cloud App Security-kontroller i Power BI](service-security-using-microsoft-cloud-app-security-controls.md)
-* [Skyddsmåttrapport](service-security-data-protection-metrics-report.md)
+* [Rapport om skyddsmått](service-security-data-protection-metrics-report.md)

@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 07/15/2019
+ms.date: 08/07/2020
 LocalizationGroup: Gateways
-ms.openlocfilehash: dea1198519f59a81c49e2f7a95a903c37bd4fb11
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: c171369cad8a311f91bd4b8542577cbd0c8e4657
+ms.sourcegitcommit: 154946ece829360cc0ff3be13276cd7a129f3388
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85236611"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87988712"
 ---
 # <a name="use-custom-data-connectors-with-the-on-premises-data-gateway"></a>Använda anpassade dataanslutningar med den lokala datagatewayen
 
@@ -47,6 +47,7 @@ När det här alternativet är aktiverat visas dina anpassade anslutningar som t
 * Kontrollera att mappen som du skapar är tillgänglig för gatewaytjänsten som körs i bakgrunden. Normalt kan mappar under din användares Windows-mapp eller systemmappar inte nås. Appen för den lokala datagatewayen visar ett meddelande om mappen inte är tillgänglig. Den här instruktionen gäller inte för den lokala datagatewayen (personligt läge).
 * För att anpassade anslutningar ska fungera med den lokala datagatewayen måste de implementera ett ”TestConnection”-avsnitt i den anpassade anslutningens kod. Det här avsnittet krävs inte när du använder anpassade anslutningar med Power BI Desktop. Därmed kan du ha en anslutning som fungerar med Power BI Desktop, men inte med gatewayen. Mer information om hur du implementerar ett TestConnection-avsnitt finns i [den här dokumentationen](https://github.com/Microsoft/DataConnectors/blob/master/docs/m-extensions.md#implementing-testconnection-for-gateway-support).
 * OAuth för anpassade anslutningsappar via gatewayer stöds för närvarande endast för gateway-administratörer, men inte andra datakällsanvändare.
+* Om ditt anpassade anslutningsprogram finns på en nätverksenhet, så inkludera den fullständiga sökvägen i den lokala datagatewayappen.
 
 ## <a name="next-steps"></a>Nästa steg
 
@@ -58,4 +59,4 @@ När det här alternativet är aktiverat visas dina anpassade anslutningar som t
 * [Konfigurera proxyinställningar för den lokala datagatewayen](/data-integration/gateway/service-gateway-proxy)
 * [Använda Kerberos för enkel inloggning (SSO) från Power BI till lokala datakällor](service-gateway-sso-kerberos.md)  
 
-Fler frågor? Fråga [Power BI Community](https://community.powerbi.com/).
+Har du fler frågor? Fråga [Power BI Community](https://community.powerbi.com/).

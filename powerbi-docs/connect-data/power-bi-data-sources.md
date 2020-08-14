@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/10/2020
+ms.date: 08/05/2020
 ms.author: davidi
-ms.openlocfilehash: 0bc6b844457f625d0287f2ec85f582a6ea874624
-ms.sourcegitcommit: 6d3a37eb636e1b71c7dcb9d1c3a9e495b78dec97
+ms.openlocfilehash: 6afc5dd36127390dd359d76fc8970d5ef6f7b590
+ms.sourcegitcommit: 65822b51810a5239fea9d3d0af1fc286436c6cad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "84681869"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87837576"
 ---
 # <a name="power-bi-data-sources"></a>Power BI-datakällor
 
@@ -94,7 +94,7 @@ I följande tabell visas de datakällor som Power BI stöder för datauppsättni
 | ODBC | Ja | Ja | Nej | Ja | Ja |
 | OleDb | Ja | Ja | Nej | Ja | Ja |
 | Oracle | Ja | Ja | Ja | Ja | Ja |
-| Paxata | Ja | Ja | Nej | Ja | Nej |
+| Paxata <sup>8</sup> | Ja | Ja | Nej | Ja | Nej |
 | PDF | Ja | Ja | Nej | Ja | Nej <sup>4</sup> |
 | Planview Enterprise One – CTM | Ja | Ja | Nej | Nej | Nej |
 | Planview Enterprise One – PRM | Ja | Ja | Nej | Nej | Nej |
@@ -155,6 +155,8 @@ I följande tabell visas de datakällor som Power BI stöder för datauppsättni
 
 <sup>7</sup> Power BI-tjänsten stöder inte OData-flöden som kräver autentisering.
 
+<sup>8</sup> Paxata stöds i den versionen av Power BI Desktop som har optimerats för Power BI-rapportserver. Det stöds inte i Power BI-rapporter som publiceras till Power BI-rapportserver. En lista över de datakällor som stöds finns i [Power BI-rapportdatakällor i Power BI-rapportserver](../report-server/data-sources.md).
+
 ## <a name="single-sign-on-sso-for-directquery-sources"></a>Enkel inloggning (SSO) för DirectQuery-källor
 
 När alternativet för enkel inloggning är aktiverat och dina användares åtkomstrapporter har skapats ovanpå datakällan skickar Power BI deras autentiserade Azure AD-autentiseringsuppgifter i frågorna till den underliggande datakällan. Detta möjliggör för Power BI att respektera säkerhetsinställningarna som är konfigurerade på datakällsnivå.
@@ -180,3 +182,4 @@ Alternativet för enkel inloggning börjar fungera för alla datauppsättningar 
 [Använd DirectQuery i Power BI](desktop-directquery-about.md)  
 [SQL Server Analysis Services-realtidsdata i Power BI](sql-server-analysis-services-tabular-data.md)  
 [Vad är en lokal datagateway?](service-gateway-onprem.md)  
+[Power BI-rapportdatakällor i Power BI-rapportserver](../report-server/data-sources.md)
