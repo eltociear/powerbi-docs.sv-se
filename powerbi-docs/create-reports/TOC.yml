@@ -119,7 +119,7 @@
       items:
         - name: Power BI-rapporter
           items:
-            - name: Aktivera automatisk siduppdatering (förhandsversion)
+            - name: Aktivera automatisk siduppdatering
               href: desktop-automatic-page-refresh.md
             - name: Undersök rapportelement med Prestandaanalys
               href: desktop-performance-analyzer.md
