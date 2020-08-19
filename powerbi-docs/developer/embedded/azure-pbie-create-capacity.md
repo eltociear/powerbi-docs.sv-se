@@ -9,12 +9,12 @@ ms.devlang: csharp, javascript
 ms.topic: how-to
 ms.reviewer: zakharb
 ms.date: 08/02/2020
-ms.openlocfilehash: 5a84c67a2efd57376afc289f965da9dc5dafd3c6
-ms.sourcegitcommit: a7227f6d3236e6e0a7bc1f83ff6099b5cd58bff3
+ms.openlocfilehash: 2f330b42e674f11f27d695fb65bc8d5de928eaae
+ms.sourcegitcommit: 64139587061136a43c5aea3b6db4d1a94e4e7795
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "87768760"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88204830"
 ---
 # <a name="create-power-bi-embedded-capacity-in-the-azure-portal"></a>Skapa Power BI Embedded-kapacitet på Azure Portal
 
@@ -56,7 +56,7 @@ Innan du skapar en Power BI Embedded-kapacitet ser du till att du har loggat in 
 
     * **Plats** – platsen där Power BI körs för klientorganisationen. Standardplatsen är din hemregion, men du kan ändra plats med hjälp av [Multi-Geo-alternativ](embedded-multi-geo.md).
 
-    * **Storlek** – den [A-SKU](../../admin/service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios) du behöver. Mer information finns i [Minne och beräkningskraft för SKU:er](/embedded/embedded-capacity.md#sku-memory-and-computing-power).
+    * **Storlek** – den [A-SKU](../../admin/service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios) du behöver. Mer information finns i [Minne och beräkningskraft för SKU:er](/power-bi/developer/embedded/embedded-capacity).
 
     * **Administratör för Power BI-kapacitet** – en administratör för kapaciteten.
         >[!NOTE]
@@ -229,9 +229,10 @@ En Azure-resurs definieras i mallen, [Microsoft.PowerBIDedicated/capacities Az](
 
     * **Namn** – kapacitetens namn.
 
-    * **Plats** – platsen där Power BI körs för klientorganisationen. Standardplatsen är din hemregion, men du kan ändra plats med hjälp av [Multi-Geo-alternativ](/embedded/embedded-multi-geo.md).
+    * **Plats** – platsen där Power BI körs för klientorganisationen. Standardplatsen är din hemregion, men du kan ändra plats med hjälp av [Multi-Geo-alternativ](https://docs.microsoft.com/power-bi/developer/embedded/embedded-multi-geo
+).
 
-    * **SKU** – den [A-SKU](../../admin/service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios) du behöver. Mer information finns i [Minne och beräkningskraft för SKU:er](/embedded/embedded-capacity.md#sku-memory-and-computing-power).
+    * **SKU** – den [A-SKU](../../admin/service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios) du behöver. Mer information finns i [Minne och beräkningskraft för SKU:er](/power-bi/developer/embedded/embedded-capacity).
 
     * **Admin** – en administratör för kapaciteten.
         >[!NOTE]
