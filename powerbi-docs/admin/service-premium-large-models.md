@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: how-to
 ms.date: 03/03/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 0169eba3e27b4014f9dbf20f88a10575caf903fe
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 7ea6601514d77f9f7e2e416b358194e871f6445b
+ms.sourcegitcommit: 64139587061136a43c5aea3b6db4d1a94e4e7795
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85227252"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88204313"
 ---
 # <a name="large-models-in-power-bi-premium-preview"></a>Stora modeller i Power BI Premium (förhandsversion)
 
@@ -114,7 +114,6 @@ SELECT * FROM SYSTEMRESTRICTSCHEMA
 
 Tänk på följande begränsningar när du använder stora modeller:
 
-- **BYOK-kryptering (Bring Your Own Key)** : Datamängder som är aktiverade för Premium-filer krypteras inte av [BYOK](service-encryption-byok.md).
 - **Stöd för Multi-Geo**: Datamängder som är aktiverade för Premium-filer kommer inte att fungera i kapaciteter där [Multi-Geo](service-admin-premium-multi-geo.md) också är aktiverat.
 
 - **Ladda ned till Power BI Desktop**: Om en datamängd lagras på Premium-filer kommer [nedladdning som .pbix](../create-reports/service-export-to-pbix.md)-fil att misslyckas.
@@ -131,24 +130,24 @@ Följande lista visar i vilka regioner de största Power BI-modellerna är tillg
 |Azure-region  |Förkortning av Azure-region  |
 |---------|---------|
 |Australien, östra     | australienöstra        |
-|Australien, sydöstra     | australiensydöstra        |
-|USA, centrala     | usacentrala        |
+|Australien, sydöstra     | Australien, sydöstra        |
+|Central US     | USA, centrala        |
 |Asien, östra     | eastasia        |
-|USA, östra     | eastus        |
+|East US     | USA, östra        |
 |USA, östra 2     | usaöstra2        |
-|Japan, östra     | japanöstra        |
+|Japan, östra     | Japan, östra        |
 |Japan, västra     | japanvästra        |
 |Sydkorea, centrala     | koreacentrala        |
 |Sydkorea, södra     | koreasödra        |
 |USA, norra centrala     | usanorracentrala        |
-|Europa, norra     | northeurope        |
-|USA, södra centrala     | southcentralus        |
-|Sydostasien     | sydostasien        |
+|Norra Europa     | northeurope        |
+|USA, södra centrala     | USA, södra centrala        |
+|Sydostasien     | Asien, sydöstra        |
 |Storbritannien, södra     | södrastorbritannien        |
 |Storbritannien, västra     | västrastorbritannien        |
-|Europa, västra     | västeuropa        |
+|Europa, västra     | Europa, västra        |
 |USA, västra     | westus        |
-|USA, västra 2     | westus2        |
+|USA, västra 2     | USA, västra 2        |
 
 
 
