@@ -6,21 +6,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/23/2020
+ms.date: 08/12/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: f8d9ef38e56e22fb84175ebe5ec97eee2d123023
-ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
+ms.openlocfilehash: e24897b64a700f84cb7caf2458c72bbfa9b5c70b
+ms.sourcegitcommit: b60063c49ac39f8b28c448908ecbb44b54326335
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87252715"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88160198"
 ---
 # <a name="whats-new-in-power-bi-desktop"></a>Nyheter i Power BI Desktop
 
-## <a name="july-2020-update-2835894661"></a>Uppdatering juli 2020 (2.83.5894.661)
+## <a name="august-2020-update-2844610"></a>Uppdatering för augusti 2020 (2.84.461.0)
 
-Våra Power BI Desktop-uppdateringar för juli är fulla av nya funktioner som är väl värda att fira med fyrverkerier, soliga picknickar och grillfester. 
+Våra Power BI Desktop-uppdateringar för augusti är fulla av nya funktioner som är väl värda att fira med fyrverkerier, soliga picknickar och grillfester. 
 
 Skaffa den senaste versionen av Power BI Desktop från [Download Center](https://www.microsoft.com/download/details.aspx?id=58494). Om du kör Windows 10 kan du även hämta Power BI Desktop från [Windows Store](https://aka.ms/pbidesktopstore). Oavsett hur du installerar Power BI Desktop är månadsversionerna desamma, men versionsnumreringen kan variera. Mer information om hur du laddar ned och installerar Power BI Desktop finns i [Hämta Power BI Desktop](desktop-get-the-desktop.md). 
 
@@ -36,42 +36,44 @@ Länkarna intill varje funktion i Power BI Desktop uppdateringslistan tolkas enl
 
 Du kan även titta på hela [videon om månadsuppdateringen av Power BI Desktop](#power-bi-desktop-monthly-update-video).
 
+> [!IMPORTANT]
+> Power BI Desktop stöds inte längre i Windows 7 efter den 31 januari 2021. Efter det datumet stöds endast den senaste versionen av Power BI Desktop i Windows 8 eller senare versioner av Windows. 
+
 Följande uppdateringar är nya för Power BI Desktop den här månaden:
 
 
 ### <a name="reporting"></a>Rapportering
-* Toningslayout [[video]](https://youtu.be/BCNYMJKyjEo?t=15)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2020-feature-summary/#_Gradient_legend) 
-* Möjlighet att ytterligare anpassa utsnittsrubriktext [[video]](https://youtu.be/BCNYMJKyjEo?t=159) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2020-feature-summary/#_Ability_to_further) 
-* Ett filter för relativ tid är nu allmänt tillgängligt [[video]](https://youtu.be/BCNYMJKyjEo?t=195)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2020-feature-summary/#_Relative_time_filter) 
+* Perspektivstöd för Anpassa visuella objekt (förhandsversion) [[video]](https://youtu.be/TPsV7N4bZZg?t=15)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2020-feature-summary/#_Perspectives) 
+* Välj rektangulär lasso för datapunkter (förhandsversion) [[video]](https://youtu.be/TPsV7N4bZZg?t=448)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2020-feature-summary/#_Data_point) 
+* Stöd för dynamisk formatering av fler visuella objekt har lagts till [[video]](https://youtu.be/TPsV7N4bZZg?t=715)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2020-feature-summary/#_dynamic_formatting) 
 
 
-### <a name="analytics"></a>Analys
-* Förbättringar av frågor och svar [[video]](https://youtu.be/BCNYMJKyjEo?t=214) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2020-feature-summary/#_Enhancements_to_QA) 
+### <a name="analytics"></a>Analytics
+* DirectQuery-stöd för Frågor och svar [[video]](https://youtu.be/TPsV7N4bZZg?t=926)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2020-feature-summary/#_Direct_Query) 
 
 
 ### <a name="visuals"></a>Visuella objekt
-* Visuellt Azure Maps-objekt (förhandsversion) [[video]](https://youtu.be/BCNYMJKyjEo?t=390) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2020-feature-summary/#_Azure_Maps_visual)
-* Uppdateringar av diagram med flera axlar av XViz [[video]](https://youtu.be/BCNYMJKyjEo?t=783) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2020-feature-summary/#_Updates_to_Multi_Axis)
-
-
-### <a name="modeling"></a>Modellering
-* Stöd för finansiella funktioner i Excel [[video]](https://youtu.be/BCNYMJKyjEo?t=812) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2020-feature-summary/#_Support_for_Excel)
-* Modellvy aktiverad för live-anslutning är nu allmänt tillgänglig [[video]](https://youtu.be/BCNYMJKyjEo?t=956) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2020-feature-summary/#_Model_view_enabled)
-
-
-### <a name="data-preparation"></a>Förberedelse av data
-* Globalt alternativ för att inaktivera automatisk typidentifiering [[video]](https://youtu.be/BCNYMJKyjEo?t=989) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2020-feature-summary/#_Global_option_to) 
+* Flera nya visuella objekt från olika företag [[video]](https://youtu.be/TPsV7N4bZZg?t=956)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2020-feature-summary/#_Visualizations)
+* Uppdateringar av ArcGIS Maps [[video]](https://youtu.be/TPsV7N4bZZg?t=1096)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2020-feature-summary/#_ArcGIS)
+* Utökade administratörsfunktioner för AppSource-kontroller [[video]](https://youtu.be/TPsV7N4bZZg?t=1135)[[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2020-feature-summary/#_Admin)
 
 
 ### <a name="template-apps"></a>Mallappar
-* YouTube Analytics från MAQ Software [[video]](https://youtu.be/BCNYMJKyjEo?t=1035)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2020-feature-summary/#_YouTube_Analytics_by)
+* Flexibel CRM-analys för Dynamics 365  [[video]](https://youtu.be/TPsV7N4bZZg?t=1300)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2020-feature-summary/#_CRM)
 
 
-### <a name="other-features"></a>Andra funktioner
-* Starta externa verktyg från Power BI Desktop (förhandsversion) [[video]](https://youtu.be/BCNYMJKyjEo?t=1066) [[artikel]](../create-reports/desktop-external-tools.md) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2020-feature-summary/#_Launch_external_tools) 
+### <a name="data-preparation"></a>Förberedelse av data
+* Text/CSF med exempel (förhandsversion) [[video]](https://youtu.be/TPsV7N4bZZg?t=1335)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2020-feature-summary/#_text_csv) 
+
+### <a name="data-connectivity"></a>Dataanslutning
+* Cherwell-anslutningsprogram [[video]](https://youtu.be/TPsV7N4bZZg?t=1392)  [[artikel]](../create-reports/desktop-external-tools.md)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2020-feature-summary/#_Cherwell_connector) 
+
+* Automation Anywhere-anslutningsprogram [[video]](https://youtu.be/TPsV7N4bZZg?t=1414)  [[artikel]](../create-reports/desktop-external-tools.md)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2020-feature-summary/#_Auto_connector) 
+
+* Acterys-anslutningsprogram [[video]](https://youtu.be/TPsV7N4bZZg?t=1434)  [[artikel]](../create-reports/desktop-external-tools.md)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2020-feature-summary/#_Acterys_connector) 
 
 
-Du kan läsa mer om de här nya funktionerna i [blogginlägget om Power BI Desktop-funktioner](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2020-feature-summary/).
+Du kan läsa mer om de här nya funktionerna i [blogginlägget om Power BI Desktop-funktioner](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2020-feature-summary/).
 
 Se [nyheter i Power BI-tjänsten](service-whats-new.md) och [nyheter i mobilapparna för Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
@@ -82,7 +84,7 @@ Se [nyheter i Power BI-tjänsten](service-whats-new.md) och [nyheter i mobilappa
 ### <a name="power-bi-desktop-monthly-update-video"></a>Video om månadsuppdatering för Power BI Desktop
 I följande video beskrivs var och en av dessa uppdateringar. Du kan även titta på videon från blogginlägget:
 
-> [!VIDEO https://www.youtube.com/embed/BCNYMJKyjEo]
+> [!VIDEO https://www.youtube.com/embed/TPsV7N4bZZg]
 
 ## <a name="more-videos"></a>Fler videor
 

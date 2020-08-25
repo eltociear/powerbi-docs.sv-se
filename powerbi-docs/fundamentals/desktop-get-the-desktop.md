@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 07/23/2020
+ms.date: 08/12/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: ab1dd7be867d886f4944e9771be5c9ff188d2037
-ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
+ms.openlocfilehash: c5c4c7b08f69bd91fc8a4e6ab13a05878936225d
+ms.sourcegitcommit: b60063c49ac39f8b28c448908ecbb44b54326335
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87252646"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88160221"
 ---
 # <a name="get-power-bi-desktop"></a>Hämta Power BI Desktop
 Med Power BI Desktop kan du skapa avancerade frågor, modeller och rapporter som visualiserar data. Med Power BI Desktop kan du bygga datamodeller, skapa rapporter och dela ditt arbete genom att publicera till Power BI-tjänsten. Power BI Desktop är en kostnadsfri nedladdning.
@@ -97,6 +97,9 @@ Därifrån kan du börja skapa datamodeller eller rapporter och sedan dela dem m
 
 ## <a name="minimum-requirements"></a>Minimikrav
 Följande lista innehåller minimikraven för att köra Power BI Desktop:
+
+> [!IMPORTANT]
+> Power BI Desktop stöds inte längre i Windows 7 efter den 31 januari 2021. Efter det datumet stöds endast den senaste versionen av Power BI Desktop i Windows 8 eller senare versioner av Windows. 
 
 * Windows 7 / Windows Server 2008 R2 eller senare
 * .NET 4.5

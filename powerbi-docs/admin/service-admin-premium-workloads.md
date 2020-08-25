@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: how-to
 ms.date: 05/11/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 1213d02926db3b1d356e7fefffb44bcc41b8ab96
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 829de249b71076ccd1ed2a60348170e93b68e507
+ms.sourcegitcommit: 64139587061136a43c5aea3b6db4d1a94e4e7795
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85227686"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88204444"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Konfigurera arbetsbelastningar i en Premium-kapacitet
 
@@ -59,8 +59,10 @@ Som standard är datamängdernas arbetsbelastning aktiverad och kan inte inaktiv
 | **Maximalt antal resultatraduppsättningar** | Det maximala antalet rader som returneras i en DAX-fråga. Standardvärdet är -1 (ingen gräns) och det tillåtna intervallet är mellan 100 000 och 2 147 483 647. |
 | **Minnesgräns för frågor (%)** | Den maximala procentandel tillgängligt minne i arbetsbelastningen som kan användas för att köra en MDX- eller DAX-fråga. Standardvärdet är 0, vilket resulterar i att en automatisk SKU-specifik minnesgräns för frågor används. |
 | **Tidsgräns för frågor (sekunder)** | Maximal tid innan tidsgränsen för frågan uppnås. Standardvärdet är 3 600 sekunder (en timme). Värdet 0 anger att frågorna inte har någon tidsgräns. |
-| **Automatisk siduppdatering (förhandsversion)** | På/av växlar funktionen för automatisk siduppdatering i Premium-arbetsytor. |
+| **Automatisk siduppdatering** | På/av-reglage för att tillåta rapporter med automatisk siduppdatering baserad på regelbundna intervall på Premium-arbetsytor. |
 | **Minsta uppdateringsintervall** | Om automatisk siduppdatering är aktiverat, är detta det minsta intervall som tillåts för siduppdatering. Standardvärdet är fem minuter och det lägsta tillåtna värdet är en sekund. |
+| **Mått för ändringsidentifiering** | På/av-reglage för att tillåta rapporter med automatisk siduppdatering baserad på ändringsidentifiering på Premium-arbetsytor. |
+| **Minsta körningsintervall** | Om ändringsidentifiering är aktiverat ändras minsta tillåtna körningsintervall för att söka efter dataändringar. Standardvärdet är fem sekunder och lägsta tillåtna värde är en sekund. |
 |  |  |  |
 
 #### <a name="max-intermediate-row-set-count"></a>Maximalt antal mellanliggande raduppsättningar
@@ -107,7 +109,7 @@ Standardinställningen är 0, vilket resulterar i att följande automatiska SKU-
 | Automatisk minnesgräns för frågor | 1 GB     | 2 GB     | 2 GB     | 6 GB    | 6 GB    | 10 GB   |
 |                              |          |          |          |         |         |         |
 
-För att skydda systemets prestanda används ett fast tak på 10 GB för alla frågor som körs av Power BI-rapporter, oavsett vilken minnesgräns som användaren har konfigurerat. Det här fasta taket gäller inte för frågor som körs via verktyg som använder Analysis Services-protokollet (det vill säga XMLA). Användare bör överväga att förenkla frågan eller dess beräkningar om frågan är för minnesintensiv.
+För att skydda systemets prestanda används ett fast tak på 10 GB för alla frågor som körs av Power BI-rapporter, oavsett vilken minnesgräns som användaren har konfigurerat. Det här fasta taket gäller inte för frågor som körs via verktyg som använder Analysis Services-protokollet (även kallat XMLA). Användare bör överväga att förenkla frågan eller dess beräkningar om frågan är för minnesintensiv.
 
 #### <a name="query-timeout"></a>Tidsgräns för frågor
 

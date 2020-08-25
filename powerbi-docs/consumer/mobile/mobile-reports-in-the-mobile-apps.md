@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 08/11/2020
+ms.date: 08/12/2020
 ms.author: painbar
-ms.openlocfilehash: 5ca205bf2e82269140926ac69ccdead43b0cddd8
-ms.sourcegitcommit: d7145123133255d004b85ef8b20ca4977f0b843e
+ms.openlocfilehash: f53fb518df3c82f4570c81b7caa14c20eea8022c
+ms.sourcegitcommit: 64139587061136a43c5aea3b6db4d1a94e4e7795
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88091651"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88204961"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Utforska rapporter i Power BI-mobilappar
 Gäller:
@@ -53,6 +53,9 @@ Om du vill gå till en rapport från en instrumentpanel trycker du på **Fler al
   
   Det går inte att öppna alla paneler som rapporter. Paneler som har skapats genom att ställa en fråga i frågor och svar-rutan, öppnar inte rapporter när du klickar på dem.
   
+## <a name="zoom-in-on-your-data"></a>Zooma in på dina data   
+Använd gesten dra ihop för att zooma in i dina rapporter när du vill undersöka dem mer detaljerat. Dra isär för att zooma ut igen. Dra ihop för zoomning stöds på telefoner och surfplattor med Android och iOS.
+
 ## <a name="interact-with-reports"></a>Interagera med rapporter
 När du har öppnat en rapport i appen kan du börja arbeta med den. Det finns många saker du kan göra med rapporten och dess data. I rapportens sidfot finns åtgärder som du kan utföra i rapporten. Genom att trycka och trycka länge på de data som visas i rapporten, kan du också dela upp och blanda datan.
 
@@ -127,7 +130,7 @@ När du trycker på **Fler alternativ** (...) i rapportens sidfot ser du alla å
 ![Alla rapportåtgärder](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-all-actions.png)
 
 Vissa av åtgärderna kan vara inaktiverade eftersom de är beroende av de specifika rapportfunktionerna.
-Till exempel:
+Exempel:
 
 **Bokmärken** finns bara om [bokmärken](mobile-reports-in-the-mobile-apps.md#bookmarks) har angetts i rapporten. Både personliga bokmärken som du kan definiera i Power BI-tjänsten och bokmärken som definieras av rapportens skapare visas. Om ett av bokmärkena har definierats som standardbokmärke öppnas rapporten till den vyn när den läses in.
 
@@ -143,7 +146,7 @@ Till exempel:
 
 Power BI-mobilappen stöder både rapportbokmärken som rapportens skapare har definierat och personliga bokmärken som du kan definiera i Power BI-tjänsten. Bokmärkesmenyn finns under **Fler alternativ** (...) i [verktygsfältet för rapportåtgärder](mobile-reports-in-the-mobile-apps.md#all-report-actions).
 
-Standardbokmärken indikeras av en specialikon. För personliga bokmärken kan du ange, ta bort eller ändra standardinställningen genom att trycka på **Fler alternativ (...)** bredvid det bokmärke som du vill ändra och välja **Gör till**  eller **Rensa standardinställningen**.
+Standardbokmärken indikeras av en specialikon. För personliga bokmärken kan du ange, ta bort eller ändra standardinställningen genom att trycka på **Fler alternativ (...)** bredvid det bokmärke som du vill ändra och välja **Gör till ** eller **Rensa standardinställningen**.
 
 ![bokmärkesmeny](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-bookmark-menu.png)
 

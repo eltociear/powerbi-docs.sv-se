@@ -7,107 +7,160 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 06/10/2020
+ms.date: 08/13/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 9a1e42b4901e8659bb5d999294f29a80a0389280
-ms.sourcegitcommit: 10c5b6cd5e7070f96de8a9f1d9b95f3d242ac7f2
+ms.openlocfilehash: 070dfd4048c494f9a1865603be4e692231f771f5
+ms.sourcegitcommit: 9b193dc155a306738a23b6bf20bcc424b8c64afd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86557243"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247150"
 ---
-# <a name="automatic-page-refresh-in-power-bi-desktop"></a>Automatisk siduppdatering i Power BI Desktop 
+# <a name="automatic-page-refresh-in-power-bi"></a>Automatisk siduppdatering i Power BI
 
-När du övervakar kritiska händelser är det viktigt att data uppdateras så snart som källdata uppdateras. I tillverkningsbranschen är det exempelvis viktigt att upptäcka när en maskin slutat fungera eller är nära att sluta fungera.
+När du övervakar kritiska händelser är det viktigt att data uppdateras så snart som källdata uppdateras. I tillverkningsbranschen är det exempelvis viktigt att upptäcka när en maskin slutat fungera eller är nära att sluta fungera. Om du övervakar signaler som sentiment på sociala medier vill du få reda på plötsliga ändringar så fort de inträffar.
 
-Med funktionen för automatisk siduppdatering i Power BI kan din aktiva rapportsida söka efter nya data i fördefinierad takt i [DirectQuery-källor](https://docs.microsoft.com/power-bi/desktop-directquery-about).
+Med automatisk siduppdatering i Power BI kan din aktiva rapportsida söka efter nya data från [DirectQuery-källor](../connect-data/desktop-directquery-about.md) i en takt du anger.
 
-## <a name="using-automatic-page-refresh"></a>Använda automatisk siduppdatering
+## <a name="refresh-types"></a>Uppdateringstyper
 
-Automatisk siduppdatering är endast tillgängligt för DirectQuery-datakällor.
+Det finns två typer av uppdateringar när du använder automatisk siduppdatering: fast intervall och ändringsidentifiering.
 
-Om du vill använda automatisk siduppdatering väljer du den rapportsida som du vill aktivera uppdateringen för. Välj ikonen **Formatering** (en målarroller) i fönstret **Visualiseringar** och sök efter **Siduppdatering** längst ned i fönstret. 
+### <a name="fixed-interval"></a>Fast intervall
+
+Med den här uppdateringstypen kan du uppdatera alla kontroller på en rapportsida baserat på ett fast intervall, till exempel en sekund eller fem minuter. Efter det angivna intervallet skickar alla kontroller på sidan en uppdateringsfråga till datakällan och uppdaterar eventuella ändringar.
+
+### <a name="change-detection"></a>Ändringsidentifiering
+
+Med den här uppdateringstypen kan du uppdatera kontroller på en sida baserat på identifierade källändringar snarare än ett visst uppdateringsintervall. Det här måttet söker efter ändringar i [DirectQuery-källan](../connect-data/desktop-directquery-about.md). Förutom att definiera måttet måste du också välja hur ofta Power BI Desktop ska söka efter ändringar. När du publicerar till tjänsten stöds bara den här uppdateringstypen för arbetsytor som ingår i en Premium-kapacitet.
+
+## <a name="authoring-reports-with-automatic-page-refresh-in-power-bi-desktop"></a>Skriva rapporter med automatisk siduppdatering i Power BI Desktop
+
+Automatisk sid uppdatering är bara tillgängligt för [DirectQuery-källor](../connect-data/desktop-directquery-about.md), så funktionen är bara tillgänglig när du är ansluten till en DirectQuery-datakälla. Den här begränsningen gäller för båda typerna av automatisk siduppdatering.
+
+Om du vill använda automatisk siduppdatering i Power BI Desktop väljer du den rapportsida du vill aktivera automatisk siduppdatering. Välj ikonen **Formatering** (en målarroller) i fönstret **Visualiseringar** och gå till avsnittet **Siduppdatering** längst ned i fönstret.
 
 ![Plats för siduppdatering](media/desktop-automatic-page-refresh/automatic-page-refresh-01.png)
 
-Följande bild visar kortet **Siduppdatering**. De numrerade elementen beskrivs under bilden.
+1. Aktiverar eller inaktiverar siduppdatering.
+2. Typ av uppdatering
+3. Indata och information (beroende på uppdateringstyp)
 
-![Kortet Siduppdatering](media/desktop-automatic-page-refresh/automatic-page-refresh-02.png)
+Kortet **Siduppdatering** är bara tillgängligt om du är ansluten till en [DirectQuery-källa](../connect-data/desktop-directquery-about.md). Om du vill aktivera automatisk siduppdatering måste reglaget vara i läget På. Vilka indata som behövs och vilken information som anges beror på vilken uppdateringstyp du väljer.
 
-1.    Aktiverar eller inaktiverar siduppdatering
-2.    Siffervärde för siduppdateringsintervallet
-3.    Enhet för siduppdateringsintervallet
+### <a name="fixed-interval-setup"></a>Inställningar för fast intervall
 
-På det här kortet kan du aktivera siduppdatering och välja uppdateringens varaktighet. Standardvärdet är 30 minuter. (Det lägsta uppdateringsintervallet är en sekund.) Rapporten kommer att börja uppdateras med det intervall som du har angett. 
+När du väljer **Fast intervall** som uppdateringstyp måste du ange önskat uppdateringsintervall. Standardvärdet är 30 minuter. (Det lägsta uppdateringsintervallet är en sekund.) Rapporten kommer att börja uppdateras med det intervall som du har angett.
 
-## <a name="determining-the-page-refresh-interval"></a>Bestämma siduppdateringsintervallet
+När du klickar på Visa information ser du ytterligare information om följande i Power BI:
+
+- Om funktionen aktiverats av administratören (bara när du är inloggad på ditt Power BI-konto)
+- Lägsta intervall som administratören tillåter (bara när du är inloggad på ditt Power BI-konto)
+- Faktisk uppdateringsfrekvens (vanligtvis längre än det valda intervallet)
+- Senaste uppdateringstid
+
+![Visa information om siduppdatering](media/desktop-automatic-page-refresh/automatic-page-refresh-02.png)
+
+### <a name="change-detection-setup"></a>Inställningar för ändringsidentifiering
+
+När du väljer **Ändringsidentifiering** som uppdateringstyp visas länken **Lägg till ändringsidentifiering**. Du kan också öppna fönstret **Ändringsidentifiering** från fliken Modellering i menyfliksområdet. Klicka sedan på ikonen **Ändringsidentifiering** i avsnittet **Siduppdatering**. Du kan också högerklicka eller välja listrutepilen bredvid valfritt värde i området Värde och sedan välja **Ändringsidentifiering** på menyn.
+
+![Kortet Ändringsidentifiering](media/desktop-automatic-page-refresh/automatic-page-refresh-03.png)
+
+När fönstret är öppet visas alternativet **Måttyp** där du kan välja ett befintligt mått eller skapa ett nytt från grunden. När du väljer ett befintligt mått behöver du bara välja det från fältlistan eller dra och släppa det i avsnittet **Välj befintligt mått**. När du skapar ett nytt mått kan du **Välja en beräkning** för måttet. Välj mellan antal, räkna distinkta, minimum, maximum och summa. Du kan till exempel använda räkna distinkta om du vill räkna kund-ID:n och bara uppdatera när en ny kund läggs till i listan. När du har valt ett mått måste du definiera hur ofta Power BI ska **söka efter ändringar**. Det här intervallet anger hur ofta Power BI ska beräkna måttet och hämta eventuella ändringar. När du klickar på Tillämpa visas ett nytt mått med ikonen för ändringsidentifiering i fältlistan.
+
+![Fönstret Ändringsidentifiering](media/desktop-automatic-page-refresh/automatic-page-refresh-04.png)
+
+Sedan visas information om vilket mått som används för ändringsidentifiering och det definierade intervallet för din referens i siduppdateringsavsnittet.
+
+![Kortet Ändringsidentifiering med information](media/desktop-automatic-page-refresh/automatic-page-refresh-05.png)
+
+> [!NOTE]
+> Du kan bara använda ett mått för ändringsidentifiering per modell.
+
+## <a name="determining-the-refresh-interval"></a>Bestämma uppdateringsintervallet
 
 När automatisk siduppdatering har aktiverats skickar Power BI Desktop ständigt frågor till DirectQuery-källan. När frågan har skickats uppstår en fördröjning innan data returneras. Så för korta uppdateringsintervall bör du kontrollera att frågorna returnerar den efterfrågade informationen inom det konfigurerade intervallet. Om data inte returneras inom intervallet, så uppdateras de visuella objekten mer sällan än vad de har konfigurerats för.
 
+De här övervägandena gäller för båda typerna av uppdatering: fast intervall och ändringsidentifiering. Den största skillnaden är att för ändringsidentifiering är det bara en fråga som går tillbaka till källan med ett fast intervall, och kontrolluppdateringen utlöses bara när värdet för måttet för ändringsidentifiering ändras.
+
 Det bästa är om uppdateringsintervallet minst matchar din förväntade nya datahastighet:
 
-* Om nya data tas emot av källan var 20:e minut, kan uppdateringsintervallet inte vara kortare än 20 minuter. 
-
-* Om nya data tas emot varje sekund så ställ in intervallet på en sekund. 
+* Om nya data tas emot av källan var 20:e minut, kan uppdateringsintervallet inte vara kortare än 20 minuter.
+* Om nya data tas emot varje sekund så ställ in intervallet på en sekund.
 
 När det gäller korta uppdateringsintervall, t. ex. en sekund, så tänk på fölande faktorer:
+
 - Typen av DirectQuery-datakälla
 - Den belastning som dina frågor som skapas för den
-- Avståndet mellan dina rapportvisningsprogram och kapacitetens datacenter 
+- Avståndet mellan dina rapportvisningsprogram och kapacitetens datacenter
 
-Du kan beräkna returtider med hjälp av Prestandaanalys i Power BI Desktop. Med Prestandaanalys kan du kontrollera om varje visuell fråga har tillräckligt med tid för att återkomma med resultatet från källan. Du kan också bestämma var tiden ska användas. Utifrån Prestandaanalys-resultatet kan du justera och göra ändringar i datakällan, eller så kan du experimentera med andra visuella objekt och mått i rapporten.
+Du kan beräkna svarstiden med [Prestandaanalyseraren](desktop-performance-analyzer.md) i Power BI Desktop och menyn Visa information i siduppdateringsavsnittet för uppdateringstypen Fast intervall. Med Prestandaanalys kan du kontrollera om varje visuell fråga har tillräckligt med tid för att återkomma med resultatet från källan. Du kan också bestämma var tiden ska användas. Utifrån Prestandaanalys-resultatet kan du justera och göra ändringar i datakällan, eller så kan du experimentera med andra visuella objekt och mått i rapporten.
 
-Den här bilden visar resultatet av en DirectQuery i Prestandaanalys:
+Den här bilden visar resultatet för en DirectQuery-källa i Prestandaanalyseraren:
 
-![Prestandaanalys-resultat](media/desktop-automatic-page-refresh/automatic-page-refresh-03.png)
+![Prestandaanalys-resultat](media/desktop-automatic-page-refresh/automatic-page-refresh-06.png)
 
-Låt oss betrakta några andra egenskaper hos den här datakällan: 
+Låt oss betrakta några andra egenskaper hos den här datakällan:
 
--    Data tas emot med en hastighet på två sekunder. 
--    Prestandaanalys visar en maximal fråga och en visningstid på ungefär 4,9 sekunder (4,688 millisekunder). 
--    Datakällan har konfigurerats för att hantera cirka 1 000 samtidiga frågor per sekund. 
--    Du förväntar dig att cirka 10 användare ska kunna se rapporten samtidigt.
+- Data tas emot varannan sekund
+- Prestandaanalyseraren visar en maximal tid för fråga och visning på ungefär 4,9 sekunder (4 688 millisekunder)
+- Datakällan har konfigurerats för att hantera cirka 1 000 samtidiga frågor per sekund
+- Du förväntar dig att cirka 10 användare kan visa rapporten samtidigt
 
 Detta resulterar i följande ekvation:
 
-**5 visuella objekt x 10 användare = cirka 50 frågor**
+- **5 visuella objekt x 10 användare = cirka 50 frågor**
 
-Den här beräkningen visar en mycket högre belastning än vad datakällan har stöd för. Data tas emot med en hastighet på två sekunder, vilket bör vara din uppdateringsfrekvens. Men eftersom frågan tar ungefär fem sekunder att slutföra, bör du ställa in den på mer än fem sekunder. 
+Den här beräkningen visar en mycket högre belastning än vad datakällan har stöd för. Data tas emot med en hastighet på två sekunder, vilket bör vara din uppdateringsfrekvens. Men eftersom frågan tar ungefär fem sekunder att slutföra, bör du ställa in den på mer än fem sekunder.
 
-Observera också att det här resultatet kan avvika från när du publicerar rapporten till tjänsten. Skillnaden beror på att rapporten använder den Azure Analysis Services-instans som finns i molnet. Du vill kanske justera dina uppdateringshastigheter enligt detta. 
+Observera också att det här resultatet kan avvika från när du publicerar rapporten till tjänsten. Skillnaden beror på att rapporten använder den Azure Analysis Services-instans som finns i molnet. Du vill kanske justera dina uppdateringshastigheter enligt detta.
 
-För att klara av frågor och uppdateringstider kör Power BI nästa uppdateringsfråga först när alla återstående uppdateringsfrågor har slutförts. Så även om uppdateringsintervallet är kortare än den tid som dina frågor tar att bearbeta, uppdateras Power BI inte förrän återstående frågor har slutförts. 
+För att klara av frågor och uppdateringstider kör Power BI nästa uppdateringsfråga först när alla återstående uppdateringsfrågor har slutförts. Så även om uppdateringsintervallet är kortare än den tid som dina frågor tar att bearbeta, uppdateras Power BI inte förrän återstående frågor har slutförts.
+
+Med uppdateringstypen ändringsidentifiering gäller de här övervägandena fortfarande. Dessutom visar [Prestandaanalyseraren](desktop-performance-analyzer.md) mätresultatet för ändringsidentifieringen även om ingen kontroll i rapporten matchas. Vi har lagt till den här funktionen så att du ska kunna felsöka den här typen av mått på samma sätt som vi nämnde tidigare. Den största skillnaden för den här uppdateringstypen är att bara en fråga skickas till datakällan i stället för alla frågor från alla kontroller. Det här gäller även om flera användare visar rapporten.
+
+![Resultat från Prestandaanalyseraren med ändringsidentifiering](media/desktop-automatic-page-refresh/automatic-page-refresh-07.png)
+
+I samma scenario som vi gick igenom tidigare:
+
+- **1 fråga om måttet för ändringsidentifiering för 5 kontroller genererar bara en fråga oavsett hur många som visar rapporten**
+
+- **När måttet för ändringsidentifiering utlöser en uppdatering i samma scenario som tidigare får vi 5 kontroller x 10 användare = cirka 50 frågor**
+
+Sammanfattningsvis skickas bara en fråga till datakällan tills en ändring har upptäckts när du använder ändringsidentifiering. Sedan används samma logik som för uppdateringstypen fast intervall, så att lika många frågor genereras när kontrollerna uppdateras för samtliga användare. Den här metoden bör vara mer effektiv i längden.
 
 Nu ska vi titta på hur du kan identifiera och diagnostisera prestandaproblem som kapacitetsadministratör. Du kan också läsa avsnittet [Vanliga frågor och svar om automatisk siduppdatering](#frequently-asked-questions) längre fram i den här artikeln om du vill ha mer information om prestanda och felsökning.
 
 ## <a name="automatic-page-refresh-in-the-power-bi-service"></a>Automatisk siduppdatering i Power BI-tjänsten
 
-Du kan också ställa in automatiska siduppdateringsintervall för rapporter som har skapats i Power BI Desktop och publicerats i Power BI-tjänsten. 
+Du kan också ställa in automatisk siduppdatering för rapporter som har publicerats till Power BI-tjänsten så länge datakällan är av typen [DirectQuery](../connect-data/desktop-directquery-about.md).
 
-Om du vill konfigurera automatisk siduppdatering för rapporter i Power BI-tjänsten, så följ steg som liknar dem du använde i Power BI Desktop. Automatisk siduppdatering har även stöd för [inbäddat Power BI](../developer/embedded/embedding.md)-innehåll när det konfigureras i Power BI-tjänsten. Den här bilden visar konfigurationen av **siduppdatering** för Power BI-tjänsten:
+Processen att konfigurera automatisk siduppdatering för rapporter i Power BI-tjänsten liknar den i Power BI Desktop. Automatisk siduppdatering har även stöd för [inbäddat Power BI](../developer/embedded/embedding.md)-innehåll när det konfigureras i Power BI-tjänsten. Den här bilden visar konfigurationen av **siduppdatering** för Power BI-tjänsten:
 
-![Automatisk siduppdatering i Power BI-tjänsten](media/desktop-automatic-page-refresh/automatic-page-refresh-04.png)
+![Siduppdatering i tjänsten](media/desktop-automatic-page-refresh/automatic-page-refresh-08.png)
 
-Dessa beskrivningar motsvarar de numrerade elementen: 
+1. Aktiverar eller inaktiverar siduppdatering.
+2. Typ av uppdatering
+3. Indata och information (beroende på uppdateringstyp)
 
-1.    Aktiverar eller inaktiverar siduppdatering.
-2.    Siffervärde för siduppdateringsintervallet. Måste vara ett heltal.
-3.    Enhet för siduppdateringsintervallet.
+> [!NOTE]
+> När du publicerar den aktiverade rapporten för automatisk siduppdatering från Power BI Desktop till tjänsten, måste du ange autentiseringsuppgifterna för DirectQuery-datakällan på menyn för datamängdsinställningar. Du kan ställa in autentiseringen så att rapportläsarna ansluter till datakällan med sina egna identiteter, vilket innebär att källans inställda säkerhet tillämpas. Om du använder mått för ändringsidentifiering utvärderas de alltid med författarens autentiseringsuppgifter.
 
 ### <a name="page-refresh-intervals"></a>Siduppdateringsintervall
 
-De siduppdateringsintervall som tillåts i Power BI-tjänsten påverkas av rapportens typ av arbetsyta. Detta gäller för följande rapporter:
+Vilka typer av siduppdateringar och intervall som tillåts i Power BI-tjänsten påverkas av rapportens arbetsyta. Det här gäller i följande situationer:
 
 * Publicera en rapport i en arbetsyta där automatisk siduppdatering är aktiverat
 * Redigera ett siduppdateringsintervall som redan finns på en arbetsyta
 * Skapa en rapport direkt i tjänsten
 
-Power BI Desktop har inga begränsningar vad gäller uppdateringsintervall. Uppdateringsintervallet kan vara så frekvent som varje sekund. När rapporter publiceras till Power BI-tjänsten gäller vissa begränsningar. Dessa begränsningar beskrivs i följande avsnitt.
+Power BI Desktop har inga begränsningar för uppdateringsintervall, intervallet kan vara så litet som varje sekund. När rapporter publiceras till Power BI-tjänsten gäller dock vissa begränsningar, som beskrivs i följande avsnitt.
 
 ### <a name="restrictions-on-refresh-intervals"></a>Begränsningar för uppdateringsintervall
 
-I Power BI-tjänsten tillämpas begränsningar för automatisk siduppdatering baserat på faktorer som arbetsyta och huruvida du använder Premium-tjänster eller inte.
+I Power BI-tjänsten tillämpas begränsningar för automatisk siduppdatering baserat på arbetsytan där rapporten publiceras, om du använder Premium-tjänster eller inte och Premium-kapacitetens administratörsinställningar.
 
 Vi kan förtydliga hur dessa begränsningar fungerar kan vi börja med lite bakgrundsinformation om kapaciteter och arbetsytor.
 
@@ -119,26 +172,31 @@ Power BI-*arbetsytor* finns i kapaciteterna. De representerar säkerhets-, samar
 
 Här visas information om de två scenarierna för arbetsytor:
 
-**Delade arbetsytor**. För vanliga arbetsytor (arbetsytor som inte ingår i en Premium-kapacitet) har den automatiska siduppdateringen ett minsta intervall på 30 minuter (det lägsta tillåtna intervallet).
+**Delade arbetsytor**. För vanliga arbetsytor (arbetsytor som inte ingår i en Premium-kapacitet) har den automatiska siduppdateringen ett minsta intervall på 30 minuter (det lägsta tillåtna intervallet). Uppdateringstypen ändringsidentifiering är inte tillgänglig för delade kapaciteter.
 
-**Premium-arbetsytor**. Tillgängligheten för automatisk siduppdatering av Premium-arbetsytor beror på vilka arbetsbelastningsinställningar som din Premium-administratör har konfigurerat för Power BI Premium-kapaciteten. Det finns två variabler som kan påverka din möjlighet att konfigurera automatisk siduppdatering:
+**Premium-arbetsytor**. Tillgängligheten för automatisk siduppdatering på Premium-arbetsytor (både med fast intervall och ändringsidentifiering) beror på vilka arbetsbelastningsinställningar som din Premium-administratör har konfigurerat för Power BI Premium-kapaciteten. Det finns två variabler som kan påverka din möjlighet att konfigurera automatisk siduppdatering:
 
- - **Funktion på/av**. Om din kapacitetsadministratör har valt att inaktivera funktionen kan du inte konfigurera någon typ av siduppdatering i den publicerade rapporten.
+ - **Funktion på/av**. Om din kapacitetsadministratör har valt att inaktivera funktionen kan du inte konfigurera någon typ av siduppdatering i den publicerade rapporten. Fast intervall och ändringsidentifiering kan aktiveras och inaktiveras separat.
 
- - **Minsta uppdateringsintervall**. När funktionen aktiveras måste kapacitetsadministratören ange ett lägsta uppdateringsintervall. Om intervallet är lägre än minimivärdet åsidosätter Power BI-tjänsten intervallet och använder det lägsta intervall som angetts av kapacitetsadministratören. Åsidosättningen kallas ”Åsidosättning av kapacitetsadministratör” i följande tabell. 
+ - **Minsta uppdateringsintervall**. När du aktiverar automatisk siduppdatering med fast intervall måste kapacitetsadministratören konfigurera ett minsta uppdateringsintervall (standardvärdet är fem minuter). Om intervallet är lägre än minimivärdet åsidosätter Power BI-tjänsten intervallet och använder det lägsta intervall som angetts av kapacitetsadministratören.
+
+ - **Minsta körningsintervall**. När du aktiverar ändringsidentifiering måste kapacitetsadministratören konfigurera ett minsta körningsintervall (standardvärdet är fem sekunder). Om intervallet är lägre än minimivärdet åsidosätter Power BI-tjänsten intervallet och använder det lägsta intervall som angetts av kapacitetsadministratören.
+
+![Inställningar för automatisk siduppdatering i administratörsportalen för kapaciteten](media/desktop-automatic-page-refresh/automatic-page-refresh-09.png)
 
 Den här tabellen innehåller mer information om var den här funktionen är tillgänglig, och vilka begränsningarna är för varje kapacitetstyp och [lagringsläge](../connect-data/service-dataset-modes-understand.md):
 
 | Lagringsläge | Dedikerad kapacitet | Delad kapacitet |
 | --- | --- | --- |
-| DirectQuery | **Stöds**: Ja <br>**Minsta uppdateringsintervall**: 1 sekund <br>**Åsidosättning av kapacitetsadministratör**: Ja | **Stöds**: Ja <br>**Minsta uppdateringsintervall**: 30 minuter <br>**Åsidosättning av kapacitetsadministratör**: Nej |
-| Importera | **Stöds**: Nej <br>**Minsta uppdateringsintervall**: Saknas <br>**Åsidosättning av kapacitetsadministratör**: Saknas | **Stöds**: Nej <br>**Minsta uppdateringsintervall**: Saknas <br>**Åsidosättning av kapacitetsadministratör**: Saknas |
-| Blandat läge (DirectQuery + andra datakällor) | **Stöds**: Ja <br>**Minsta uppdateringsintervall**: 1 sekund <br>**Åsidosättning av kapacitetsadministratör**: Ja | **Stöds**: Ja <br>**Minsta uppdateringsintervall**: 30 minuter <br>**Åsidosättning av kapacitetsadministratör**: Nej |
-| Live Connect AS | **Stöds**: Nej <br>**Minsta uppdateringsintervall**: Saknas <br>**Åsidosättning av kapacitetsadministratör**: Saknas | **Stöds**: Nej <br>**Minsta uppdateringsintervall**: Saknas <br>**Åsidosättning av kapacitetsadministratör**: Saknas |
-| Live Connect PBI | **Stöds**: Nej <br>**Minsta uppdateringsintervall**: Saknas <br>**Åsidosättning av kapacitetsadministratör**: Saknas | **Stöds**: Nej <br>**Minsta uppdateringsintervall**: Saknas <br>**Åsidosättning av kapacitetsadministratör**: Saknas |
+| DirectQuery | **FI stöds**: Ja <br>**ÄI stöds**: Ja <br>**Minimum**: 1 sekund <br>**Åsidosättning av administratör**: Ja | **FI stöds**: Ja <br>**ÄI stöds**: Nej <br>**Minimum**: 30 minuter <br>**Åsidosättning av administratör**: Nej |
+| Importera | **FI stöds**: Nej <br>**ÄI stöds**: Nej <br>**Minimum**: Saknas <br>**Åsidosättning av administratör**: Saknas | **FI stöds**: Nej <br>**ÄI stöds**: Nej <br>**Minimum**: Saknas <br>**Åsidosättning av administratör**: Saknas |
+| Blandat läge (DirectQuery + andra datakällor) | **FI stöds**: Ja <br>**ÄI stöds**: Ja <br>**Minimum**: 1 sekund <br>**Åsidosättning av administratör**: Ja | **FI stöds**: Ja <br>**ÄI stöds**: Nej <br>**Minimum**: 30 minuter <br>**Åsidosättning av administratör**: Nej |
+| Live Connect AS | **FI stöds**: Nej <br>**ÄI stöds**: Nej <br>**Minimum**: Saknas <br>**Åsidosättning av administratör**: Saknas | **FI stöds**: Nej <br>**ÄI stöds**: Nej <br>**Minimum**: Saknas <br>**Åsidosättning av administratör**: Saknas |
+| Live Connect PBI | **FI stöds**: Nej <br>**ÄI stöds**: Nej <br>**Minimum**: Saknas <br>**Åsidosättning av administratör**: Saknas | **FI stöds**: Nej <br>**ÄI stöds**: Nej <br>**Minimum**: Saknas <br>**Åsidosättning av administratör**: Saknas |
 
-> [!NOTE]
-> När du publicerar den aktiverade rapporten för automatisk siduppdatering från Power BI Desktop till tjänsten, måste du ange autentiseringsuppgifterna för DirectQuery-datakällan på menyn för datamängdsinställningar.
+*Tabellförklaring:*
+1. *FI: Fast intervall*
+2. *ÄI: Ändringsidentifiering*
 
 ## <a name="considerations-and-limitations"></a>Överväganden och begränsningar
 
@@ -146,8 +204,9 @@ Det finns några saker att tänka på när du använder automatisk siduppdaterin
 
 * Lagringslägena Import, LiveConnect och Push stöds inte av automatisk siduppdatering.  
 * Sammansatta modeller som har minst en DirectQuery-datakälla stöds.
-* Power BI Desktop har inga begränsningar vad gäller uppdateringsintervall. Intervallet kan vara så frekvent som varje sekund. När rapporter publiceras till Power BI-tjänsten gäller vissa begränsningar, vilket beskrevs [tidigare](#restrictions-on-refresh-intervals) i den här artikeln.
-* SharePoint Online-inbäddning stöder inte automatisk siduppdatering.
+* Power BI Desktop har inga begränsningar vad gäller uppdateringsintervall. Intervallet kan vara så litet som varje sekund för både fast intervall och ändringsidentifiering. När rapporter publiceras till Power BI-tjänsten gäller vissa begränsningar, vilket beskrevs [tidigare](#restrictions-on-refresh-intervals) i den här artikeln.
+* Du kan bara ha ett mått för ändringsidentifiering per datamängd.
+* Det får bara finnas högst 10 modeller med mått för ändringsidentifiering i en Power BI-klientorganisation.
 
 ### <a name="performance-diagnostics"></a>Prestandadiagnostik
 
@@ -181,13 +240,14 @@ Om du märker att kapaciteten överbelastas av frågor med låg prioritet finns 
 **Jag är en rapportförfattare. Jag definierade rapportuppdateringsintervallet till en sekund i Power BI Desktop, men efter publiceringen så uppdateras inte min rapport i tjänsten.**
 
 * Se till att automatisk siduppdatering har aktiverats för sidan. Eftersom den här inställningen gäller per sida, måste du se till att den är aktiverad för varje sida i rapporten som du vill uppdatera.
-* Kontrollera om du har överfört till en arbetsyta med en ansluten Premium-kapacitet. Om du inte har gjort det, så låses uppdateringsintervallet till 30 minuter.
-* Om rapporten finns på en Premium-arbetsyta, så fråga din administratör om funktionen har aktiverats för den anslutna kapaciteten. Se dessutom till att det lägsta uppdateringsintervallet för kapaciteten är lägre eller detsamma som intervallet för rapporten.
+* Kontrollera om du har överfört till en arbetsyta med en ansluten Premium-kapacitet. Om du inte har gjort det låses uppdateringsintervallet vid 30 minuter för fast intervall, och du kan inte använda ändringsidentifiering.
+* Om rapporten finns på en Premium-arbetsyta, så fråga din administratör om funktionen har aktiverats för den anslutna kapaciteten. Se dessutom till att det lägsta uppdateringsintervallet för kapaciteten är lägre än eller samma som intervallet för rapporten. Det här gäller separat för både fast intervall och ändringsidentifiering
 
 **Jag är en kapacitetsadministratör. Jag ändrade inställningarna för sidans automatiska uppdateringsintervall, men ändringarna visas inte. Det innebär att rapporterna fortfarande uppdateras i felaktig takt, eller inte uppdateras alls trots att jag har aktiverat automatisk siduppdatering.**
 
 * Det tar upp till 5 minuter innan de ändrade inställningarna av automatisk siduppdatering i användargränssnittet för kapacitetsadministratörer sprids till rapporterna.
 * Förutom att aktivera automatisk siduppdatering för kapaciteten, måste du också aktivera den för de sidor i rapporten för vilka du vill aktivera den.
+* Uppdateringstyperna hanteras separat, så se till att den aktuella typen av uppdatering är aktiverad.
 
 **Min rapport körs i blandat läge. (Blandat läge innebär att rapporten har en DirectQuery-anslutning och en importdatakälla.) Vissa visuella objekt uppdateras inte.**
 
@@ -207,6 +267,13 @@ Om du märker att kapaciteten överbelastas av frågor med låg prioritet finns 
 **Hanteras automatiska siduppdateringsfrågor från cacheminnet?**
 
 * Nej. Alla automatiska siduppdateringsfrågor kringår eventuella cachelagrade data.
+
+**Mitt mått för ändringsidentifierings utlöser inte några uppdateringar**
+
+* Se till att ändringsidentifiering är aktiverat för sidan. Eftersom den här inställningen gäller per sida, måste du se till att den är aktiverad för varje sida i rapporten som du vill uppdatera.
+* Kontrollera om du har överfört till en arbetsyta med en ansluten Premium-kapacitet. Annars fungerar inte ändringsidentifiering.
+* Om rapporten finns på en Premium-arbetsyta, så fråga din administratör om funktionen har aktiverats för den anslutna kapaciteten. Se dessutom till att det lägsta körningsintervallet för kapaciteten är lägre än eller samma som intervallet för rapporten.
+* Om du har kontrollerat allt det här kontrollerar du om måttet ändras alls i Power BI Desktop eller i redigeringsläget. Det gör du genom att dra det till arbetsytan och kontrollera om värdet ändras. Annars kanske inte måttet passar så bra till att söka efter ändringar i datakällan.
 
 
 ## <a name="next-steps"></a>Nästa steg

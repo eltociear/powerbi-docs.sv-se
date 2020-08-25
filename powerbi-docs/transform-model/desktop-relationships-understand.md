@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/15/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 4928d194367c1bb2f38fb520722dd040e8ee1a3f
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 3df3e29d2f6517fec68bf185bf71d9f4f3c5618a
+ms.sourcegitcommit: 642b0c04d3ff3aa4d5422ca5054a5a158fb01b22
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83296720"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88512872"
 ---
 # <a name="model-relationships-in-power-bi-desktop"></a>Modellrelationer i Power BI Desktop
 
@@ -42,7 +42,7 @@ En fråga – kanske genererad av ett visuellt objekt för ett Power BI-kort –
 
 Det är ovanligt att en modelltabell inte alls är relaterad till en annan modelltabell. En sådan tabell, i en giltig modelldesign, kallas en _frånkopplad tabell_. En frånkopplad tabell är inte avsedd att sprida filter till andra modelltabeller. Den används istället för att godkänna "användarindata" (kanske med ett visuellt utsnitt), så att modellberäkningar kan använda indatavärdet på ett meningsfullt sätt. Anta till exempel att en frånkopplad tabell har lästs in med ett intervall av värden för valutaväxelkurser. Så länge ett filter används för att filtrera efter ett enda värde, kan värdet användas genom ett måttuttryck för att konvertera försäljningsvärden.
 
-Power BI Desktop konsekvensparameter är en funktion som skapar en frånkopplad tabell. Mer information finns i artikeln om att [skapa och använda en konsekvensparameter för att visualisera variabler i Power BI Desktop](desktop-what-if.md).
+Konsekvensparametern i Power BI Desktop är en funktion som skapar en frånkopplad tabell. Mer information finns i artikeln om att [skapa och använda en konsekvensparameter för att visualisera variabler i Power BI Desktop](desktop-what-if.md).
 
 ## <a name="relationship-properties"></a>Relationsegenskaper
 

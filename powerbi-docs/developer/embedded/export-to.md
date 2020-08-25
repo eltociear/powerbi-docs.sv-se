@@ -7,12 +7,12 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 07/13/2020
-ms.openlocfilehash: fd30b9df6fce484bffab430888260145bb374ce9
-ms.sourcegitcommit: d7145123133255d004b85ef8b20ca4977f0b843e
+ms.openlocfilehash: 8e3ca6d9615a348fec928f13a561fbb97e719d6a
+ms.sourcegitcommit: b60063c49ac39f8b28c448908ecbb44b54326335
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88091582"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88160382"
 ---
 # <a name="export-power-bi-report-to-file-preview"></a>Exportera Power BI-rapport till fil (förhandsversion)
 
@@ -103,8 +103,7 @@ Ett jobb som överskrider antalet samtidiga begäranden avslutas inte. Om du exe
 * För den offentliga förhandsversionen är antalet Power BI-rapportsidor som exporteras per timme begränsat till 50 per kapacitet.
 * Exporterade rapporter får inte överskrida en filstorlek på 250 MB.
 * Känslighetsetiketter stöds inte när du exporterar till .png-format.
-* Du kan inte exportera en rapport med en känslighetsetikett till .pdf- eller .pptx-format med hjälp av ett [huvudnamn för tjänsten](embed-service-principal.md).
-* Det antal sidor som kan ingå i en exporterad rapport är 30. Om rapporten innehåller fler sidor returnerar API:et ett fel och exportjobbet avbryts.
+* Antalet sidor som kan ingå i en exporterad rapport är 50. Om rapporten innehåller fler sidor returnerar API:et ett fel och exportjobbet avbryts.
 * [Personliga bokmärken](../../consumer/end-user-bookmarks.md#personal-bookmarks) och [beständiga filter](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) stöds inte.
 * De visuella Power BI-objekt som listas nedan stöds inte. När en rapport som innehåller dessa visuella objekt exporteras så återges inte de delar av rapporten som innehåller dessa visuella objekt, och en felsymbol visas.
     * Ocertifierade visuella Power BI-objekt

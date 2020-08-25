@@ -7,12 +7,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 07/01/2020
 ms.author: mohaali
-ms.openlocfilehash: 295fc7732729fc464676257ab63dcadfa967771b
-ms.sourcegitcommit: 561f6de3e4621d9d439dd54fab458ddca78ace2c
+ms.openlocfilehash: de16ddbbaca69aea5283c7ab61c462493a6da1d0
+ms.sourcegitcommit: 7d505cb7cc9360211d67f1056cb488f7f15ffab4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85939657"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "88578115"
 ---
 # <a name="intro-to-power-bi-qa"></a>Introduktion till Power BI Frågor och svar
 
@@ -43,22 +43,20 @@ När du skriver din fråga visar Power BI Frågor och svar relevanta och sammanh
 
 ![Komplettering av fraser i Frågor och svar](media/qna-suggestion-phrase-completion.png)
 
-### <a name="redblue-underlines"></a>Röda/blå understreck
+### <a name="redblueorange-underlines"></a>Röda/blå/orange understreck
 
 Frågor och svar visar understreck för ord så att du ser vilka ord som systemet förstår och inte. En heldragen blå understrykning visar att systemet har matchat ordet till ett fält eller värde i datamodellen. I det här exemplet ser du att Frågor och svar känner igen ordet *EU Sales*.
 
 ![Blå understrykning i Frågor och svar](media/qna-blue-underline.png)
 
-När du skriver in ord i Frågor och svar kan du även se röda understrykningar. En röd understrykning innebär ett av två möjliga problem. Den första typen av problem handlar om *låg konfidensbedömning*. Om du skriver ett vagt eller tvetydigt ord får det röd understrykning. Ett exempel kan vara ordet Försäljning. Flera fält kan innehålla ordet Försäljning, så systemet använder en röd understrykning för att du ska välja önskat fält. Ett annat exempel på låg konfidensgrad är om du skriver ”area”, men kolumnen som matchas är ”region”. Power BI Frågor och svar känner igen ord som betyder samma sak, tack vare integreringen med Bing och Office. Frågor och svar använder röd understrykning så att du ser att matchningen inte är exakt.
+ En orange understrykning visar att ordet/orden är kategoriserade som *låg konfidens*. Om du skriver ett vagt eller tvetydigt ord får det orange understrykning. Ett exempel kan vara ordet Försäljning. Flera fält kan innehålla ordet Försäljning, så systemet använder orange understrykning för att du ska välja önskat fält. Ett annat exempel på låg konfidensgrad är om du skriver ”area”, men kolumnen som matchas är ”region”. Frågor och svar i Power BI känner igen ord som betyder samma sak, tack vare integreringen med Bing och Office samt funktionen att tolka om namn från en rapport som potentiella förslag. Frågor och svar understryker ordet i orange så att du ser att matchningen inte är exakt.
 
-![Röd understrykning för Sales i Frågor och svar](media/qna-red-underline-sales.png)
-
-Den andra typen av problem är när Frågor och svar inte känner igen ordet alls. Du kan stöta på det här problemet när du använder domänspecifika termer som inte förekommer i dina data, eller om datafälten har fel namn. Ett exempel kan vara om du använder ordet ”kostnad” utan att det förekommer i dina data. Ordet finns med i ordlistan, men Frågor och svar stryker under termen i rött.
+En röd understrykning betyder att Frågor och svar inte känner igen ordet alls. Du kan stöta på det här problemet när du använder domänspecifika termer som inte förekommer i dina data, eller om datafälten har fel namn. Ett exempel kan vara om du använder ordet ”kostnad” utan att ordet förekommer i dina data alls. Ordet finns med i den engelska ordlistan, men Frågor och svar använder röd understrykning som indikation på att termen inte finns med i dina data.
 
 ![Röd understrykning för Sales i Frågor och svar](media/qna-red-underline-costs.png)
 
 > [!NOTE]
-> Du kan anpassa färgerna för understrykningar i fönstret **Visuell formatering** för Frågor och svar. I artikeln om [verktyg för Frågor och svar](q-and-a-tooling-teach-q-and-a.md) förklaras även *Träna Frågor och svar*, som du använder till att definiera termer som Frågor och svar inte känner igen.
+> Du kan anpassa understrykningsfärgerna blå/röd/orange i fönstret **Visuell formatering** i Frågor och svar. I artikeln om [verktyg för Frågor och svar](q-and-a-tooling-teach-q-and-a.md) förklaras även *Träna Frågor och svar*, som du använder till att definiera termer som Frågor och svar inte känner igen.
 
 ### <a name="visualization-results"></a>Visualiseringsresultat
 

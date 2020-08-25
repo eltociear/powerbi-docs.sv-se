@@ -7,12 +7,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 04/17/2020
 ms.author: maggies
-ms.openlocfilehash: 6178c9f157578110a09abf3fcbebccba54339f13
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: 47ab35113bbf6564cbc824b48891cd9f58370c8a
+ms.sourcegitcommit: 7d505cb7cc9360211d67f1056cb488f7f15ffab4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82866084"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "88578172"
 ---
 # <a name="intro-to-qa-tooling-to-train-power-bi-qa-preview"></a>Introduktion till verktyg i Frågor och svar för att träna upp Power BI Frågor och svar (förhandsversion)
 
@@ -42,7 +42,25 @@ Verktyg i Frågor och svar är bara tillgängligt i Power BI Desktop, och för n
 
     ![Kom igång i Frågor och svar](media/q-and-a-tooling-intro/qna-tooling-dialog.png)
 
-### <a name="review-questions"></a>Granska frågor
+### <a name="field-synonyms"></a>Fältsynonymer
+
+Välj **Fältsynonymer** om du vill se alla tabeller och kolumner som tillhör modellen. I den här vyn kan du lägga till alternativa namn som matchar kolumnerna för att hjälpa användarna. Du kan också välja om kolumnen eller tabellen ska vara dold i Frågor och svar.
+
+![Start för fältsynonymer i Frågor och svar](media/q-and-a-tooling-intro/qna-tooling-field-synonyms-home.png)
+
+Klicka på en av tabellerna för att expandera den, så visas en dialogruta som liknar den nedan.
+
+![Fältsynonymer i Frågor och svar expanderat](media/q-and-a-tooling-intro/qna-tooling-field-synonyms-expanded.png)
+
+I dialogrutan visas alla kolumner och tabeller med respektive termer/synonymer som användarna kan använda när de ställer frågor om datamängden. Du kan snabbt se alla termer på en och samma plats, och lägga till eller ta bort termer för flera kolumner. 
+
+- Lägg till termer – om du har ett fält som heter Försäljning kan du lägga till termen Intäkter så att användarna kan använda det här ordet i stället för Försäljning. Klicka på Lägg till-symbolen för att snabbt lägga till en ny term
+
+- Ta med i Frågor och svar – med det här alternativet kan du utelämna en kolumn eller tabell från Frågor och svar. Då visas inte kolumnen, och det visas heller inga resultat med kolumnen. En situation där du kan välja att inte ta med en kolumn är när du hanterar datum. Om det finns flera datumfält eller sekundärnycklar kan du välja att ta bort alla utom ett av datumfälten så att rätt datumkolumn väljs när användare ställer datumrelaterade frågor.
+
+- Föreslagna termer – Frågor och svar rekommenderar även föreslagna termer som hämtas från vår förslagsmotor så att du snabbt kan lägga till termer/synonymer. Om förslagen inte läggs till fungerar de fortfarande, men användaren ser en orange streckad linje som visar att Frågor och svar tror att det här är ett svar, men verktyget är inte säkert. Om den föreslagna synonymen stämmer klickar du på +-ikonen så att den kan användas som synonym. Om förslaget är felaktigt klickar du på x-ikonen så att termen tas bort. Då används den inte som term/synonym i Frågor och svar. Förslagen hämtas från Office-ordlistan och namn som finns med i rapporten
+
+### <a name="review-questions"></a>Granska frågorna
 
 Välj **Granska frågor** om du vill se en lista med de datamängder som används i Power BI-tjänsten för din klientorganisation. På sidan **Granska frågor** ser du även datamängdens ägare, arbetsytan och datumet för senaste uppdatering. Här kan du välja en datamängd och se vilka frågor som användarna har ställt. Du ser även ord som inte känts igen. De data som visas här är för de senaste 28 dagarna.
 
@@ -62,7 +80,7 @@ Här visas allt du har sparat från Träna Frågor och svar, så att du kan gran
 
 ### <a name="suggest-questions"></a>Föreslå frågor
 
-Om du inte konfigurerar någon inställning föreslår Visuella frågor och svar flera frågor att komma igång med. Frågorna genereras automatiskt baserat på din datamodell. I **Föreslå frågor**kan du skriva över de automatiskt genererade frågorna med dina egna frågor. 
+Om du inte konfigurerar någon inställning föreslår Visuella frågor och svar flera frågor att komma igång med. Frågorna genereras automatiskt baserat på din datamodell. I **Föreslå frågor**kan du skriva över de automatiskt genererade frågorna med dina egna frågor.
 
 Börja med att skriva den fråga som du vill lägga till i textrutan. I avsnittet förhandsversion ser du hur resultatet kommer att se ut i Visuella frågor och svar. 
 
@@ -74,30 +92,12 @@ Välj knappen **Lägg till** för att lägga till den här frågan till **dina f
  
 Se till att välja **Spara** för att visa en lista över föreslagna frågor i Visuella frågor och svar. 
 
+> [!NOTE]
+> De föreslagna frågorna visas för alla instanser av Frågor och svar-kontrollen. Du kan inte skapa en separat uppsättning förslag för varje Frågor och svar-kontroll.
+> 
+> 
 
 ## <a name="other-qa-settings"></a>Andra inställningar i Frågor och svar
-
-### <a name="bulk-synonyms"></a>Flera synonymer
-
-På fliken **Modellering** i Power BI Desktop finns fler alternativ för att förbättra Frågor och svar-miljön. 
-
-1. Välj vyn Modellering i Power BI Desktop.
-
-2. Välj ett fält eller en tabell så att fönstret **Egenskaper** öppnas.  Det här fönstret innehåller flera Frågor och svar-åtgärder och visas till höger på arbetsytan. Ett alternativ är **Synonymer**. I rutan **Synonymer** kan du snabbt definiera alternativ till den tabell eller det fält du väljer. Du kan också definiera synonymer i avsnittet **Träna Frågor och svar** i dialogrutan Verktyg, men om det gäller många fält i en tabell går det ofta snabbare att göra det här.
-
-    ![Synonymer på fliken Modellering i Frågor och svar](media/q-and-a-tooling-intro/qna-modelling-pane-synonyms.png)
-
-3. Om du vill definiera flera synonymer för ett enda fält använder du kommatecken till att avgränsa dem.
-
-### <a name="hide-from-qa"></a>Dölj i Frågor och svar
-
-Du kan också dölja fält och tabeller så att de inte visas i resultat från Frågor och svar. 
-
-1. Välj vyn Modellering i Power BI Desktop.
-
-2. Välj ett fält eller en tabell så att fönstret **Egenskaper** öppnas och ange egenskapen **Är dold** till **På**.
-
-    Frågor och svar respekterar inställningen och ser till att fältet inte används i Frågor och svar. Du kan till exempel dölja ID-fält och sekundärnycklar så att du undviker onödiga dubbletter med samma namn. Även om du döljer ett fält kan du fortfarande använda det i visuella objekt i Power BI Desktop utanför Frågor och svar.
 
 ### <a name="set-a-row-label"></a>Ange en radetikett
 

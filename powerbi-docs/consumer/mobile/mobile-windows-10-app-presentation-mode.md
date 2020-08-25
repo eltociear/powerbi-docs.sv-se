@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 08/11/2020
+ms.date: 08/12/2020
 ms.author: painbar
-ms.openlocfilehash: 85ba8b893dfa6da7934aff6b7890530e0acb2961
-ms.sourcegitcommit: d7145123133255d004b85ef8b20ca4977f0b843e
+ms.openlocfilehash: c4453f1475ac2ab227294b0b3bd8ba5dba10de67
+ms.sourcegitcommit: 64139587061136a43c5aea3b6db4d1a94e4e7795
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88091697"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88204512"
 ---
 # <a name="view-reports-and-dashboards-in-presentation-mode-on-surface-hub-and-windows-10-devices"></a>Visa rapporter och instrumentpaneler i presentationsläge på Surface Hub och Windows 10-enheter
 Du kan använda presentationsläge för att visa rapporter och instrumentpaneler i helskärmsläge på Windows 10-enheter och Surface Hub. Presentationsläget är användbart när du vill visa Power BI på ett möte eller en konferens eller på en dedikerad projektor på ett kontor, eller bara vill maximera utrymmet på en liten skärm.
@@ -64,9 +64,24 @@ När du trycker på knappen **Spela upp** i åtgärdsverktygsfältet så börjar
 
  Kontrollanten visar namnet på den vy som visas (sida eller bokmärke och sida). På bilden ovan ser vi att i rapporten som kallas **Försäljning** just nu visar bokmärket **Asien och stillahavsområdet** på sidan **Försäljningsprestanda**.
 
+Som standard växlar ett bildspel endast mellan sidorna, och med en hastighet på en sida var 30:e sekund. Du kan ställa in standardbeteendet i [inställningarna för bildspel](#slideshow-settings).
+
+
+### <a name="auto-play-a-slideshow-on-startup"></a>Spela upp ett bildspel automatiskt vid start
+
+Du kan ställa in att Power BI-mobilappen ska börja spela upp ett bild spel automatiskt när du startar appen. Det här alternativet är användbart när du vill skapa en helskärmsupplevelse där en rapport körs på offentliga skärmar utan manuell åtgärd. I [Bildspelsinställningar](#slideshow-settings) kan du läsa mer om att konfigurera en rapport för automatisk uppspelning.
+
 ### <a name="slideshow-settings"></a>Bildspelsinställningar
 
-Som standard växlar ett bildspel sidor med en hastighet på en sida var 30:e sekund. Du kan ändra standardinställningarna genom att gå till **Inställningar > Alternativ**, så som visas nedan.
+Som standard växlar ett bildspel endast mellan sidorna, och med en hastighet på en sida var 30:e sekund. Du kan ändra standardbeteendet genom att gå till **Inställningar > Alternativ** som i bilden nedan. Du kan också aktivera automatisk uppspelning och välja en rapport att spela upp.
+
+1. Välj inställningsikonen.
+
+1. Öppna fliken Alternativ.
+
+1. Om du vill kan du ändra standardinställningarna för vad bildspelet ska stegas igenom efter (sidor, bokmärken eller båda) och hur snabbt bildspelet ska gå vidare.
+
+1. Om du vill att rapporten ska börja spelas upp automatiskt när appen startas aktiverar du reglaget och väljer **Välj rapport**. Du kan söka efter de rapporter du har åtkomst till.
 
 ![Skärmbild av bildspelsinställningarna](././media/mobile-windows-10-app-presentation-mode//power-bi-windows-10-slideshow-settings.png)
 

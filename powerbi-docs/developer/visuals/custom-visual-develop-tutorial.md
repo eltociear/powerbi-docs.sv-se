@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.topic: tutorial
 ms.subservice: powerbi-custom-visuals
 ms.date: 03/15/2019
-ms.openlocfilehash: d82f09fa4c545129bbd1032041dcfab6f4f67901
-ms.sourcegitcommit: a07fa723bb459494c60cf6d749b4554af723482a
+ms.openlocfilehash: ebb0107b158e505a8095b4c8f6b6b32731e7e98d
+ms.sourcegitcommit: 642b0c04d3ff3aa4d5422ca5054a5a158fb01b22
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "84739355"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88512941"
 ---
 # <a name="tutorial-developing-a-power-bi-visual"></a>Självstudie: Utveckla ett visuellt Power BI-objekt
 
@@ -130,7 +130,7 @@ Nu måste du installera **pbiviz**-paketet.
 4. Stäng alla webbläsare som du har öppnat.
 
 > [!NOTE]
-> Om certifikatet inte har identifierats kan du behöva starta om datorn.
+> Om certifikatet inte har identifierats kan du behöva starta om datorn. I vissa webbläsare, som Firefox, måste du ange det självsignerade certifikatet som betrott. Det gör du genom att gå till sidan för WebPack-servern (https://localhost:8080/webpack-dev-server) och acceptera risken.
 
 ## <a name="creating-a-custom-visual"></a>Skapa ett anpassat visuellt objekt
 

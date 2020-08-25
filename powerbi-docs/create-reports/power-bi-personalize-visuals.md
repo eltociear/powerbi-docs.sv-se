@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 05/21/2020
+ms.date: 08/12/2020
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 0fdee37f682774e1dac2b1ac6a4fc7a6e8dabe91
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 8dd6e64943ea05f2219efa471cd3fcfa4152650b
+ms.sourcegitcommit: b60063c49ac39f8b28c448908ecbb44b54326335
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238081"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88160591"
 ---
 # <a name="let-users-personalize-visuals-in-a-report"></a>Låt användarna anpassa visuella objekt i en rapport
 
@@ -41,6 +41,59 @@ Den här funktionen tillåter inte bara nya utforskningsfunktioner. Det omfattar
 - Återställ alla ändringar för en rapport
 - Återställ alla ändringar för ett visuellt objekt
 - Ta bort de senaste ändringarna
+
+## <a name="use-perspectives-for-a-more-focused-view"></a>Använda perspektiv för att få en mer fokuserad vy
+
+I anpassade visuella objekt kan du använda **perspektiv** till att välja ut en delmängd av en modell som ger en mer fokuserad vy. Det kan vara bra att välja ut en delmängd när du arbetar med en stor datamodell, så att du kan fokusera på en hanterbar andel av fälten och inte överbelasta rapportläsarna genom att presentera alla fält från den stora modellen. 
+
+![Anpassa visuella objekt](media/power-bi-personalize-visuals/power-bi-personalize-perspective-01.png)
+
+Tänk på följande när du arbetar med perspektiv:
+
+* Perspektiv är inte avsedda att användas som säkerhetsmekanism, de är ett verktyg för att ge slutanvändarna en bättre upplevelse. Säkerheten för ett perspektiv ärvs från den underliggande modellen.
+
+* Du kan använda perspektiv i både tabellbaserade och flerdimensionella modeller. För perspektiv i flerdimensionella modeller kan du dock bara ange att perspektivet ska vara samma som rapportens baskub.
+
+* Innan du tar bort ett perspektiv från en modell ska du kontrollera att perspektivet inte används till anpassning av visuella objekt. 
+
+Om du vill använda perspektiv måste du aktivera Anpassa visuella objekt för rapporten. Du måste också skapa minst ett perspektiv som innehåller de dimensioner och mått du vill att slutanvändarna ska interagera med i Anpassa visuella objekt.
+
+Du skapar perspektivet med [Tabular Editor](https://tabulareditor.com/) som du kan ladda ned från följande plats: Ladda ned Tabular Editor
+
+När du har installerat **Tabular Editor** öppnar du rapporten i **Power BI Desktop** och startar **Tabular Editor** från fliken **Externa verktyg** i menyfliksområdet. Se följande bild.
+
+![Tabular Editor i menyfliksområdet Externa verktyg](media/power-bi-personalize-visuals/power-bi-personalize-perspective-02.png)
+
+Högerklicka på mappen **Perspectives** i Tabular Editor för att skapa ett nytt perspektiv.
+
+![Mappen Perspectives i Tabular Editor](media/power-bi-personalize-visuals/power-bi-personalize-perspective-03.png)
+
+Du kan dubbelklicka på texten för att byta namn på perspektivet.
+
+![Byta namn på perspektivet](media/power-bi-personalize-visuals/power-bi-personalize-perspective-04.png)
+
+Lägg sedan till fält i perspektivet genom att öppna mappen **Tables** i Tabular Editor. Högerklicka sedan på de fält du vill visa i perspektivet.
+
+![Lägga till fält i ett perspektiv](media/power-bi-personalize-visuals/power-bi-personalize-perspective-05.png)
+
+Upprepa processen för varje fält du vill lägga till i perspektivet. Du kan inte lägga till dubbletter av fält i ett perspektiv, så alternativet att lägga till fältet inaktiveras för de fält du redan har lagt till i perspektivet.
+
+När du har lagt till de fält du vill använda sparar du dina inställningar, både i Tabular Editor och i Power BI Desktop.
+
+![Spara perspektivinställningarna i Tabular Editor och Power BI Desktop](media/power-bi-personalize-visuals/power-bi-personalize-perspective-06.png)
+
+När du har sparat det nya perspektivet i modellen och sparat Power BI Desktop-rapporten går du till fönstret **Format** för sidan, där du ser ett nytt avsnitt för **Anpassa visuellt objekt**.
+
+![Avsnittet Anpassa visuellt objekt i fönstret Format](media/power-bi-personalize-visuals/power-bi-personalize-perspective-07.png)
+
+Alternativet *Rapportläsarperspektiv* är som standard inställt på *Standardfält*. När du väljer listrutepilen ser du de andra perspektiv du har skapat.
+
+![Välj listrutepilen för att se dina andra perspektiv](media/power-bi-personalize-visuals/power-bi-personalize-perspective-08.png)
+
+När du har angett perspektivet för rapportsidan filtreras upplevelsen Anpassa visuella objekt på sidan enligt det valda perspektivet. Om du väljer **Använd på alla sidor** kan du tillämpa perspektivinställningen på alla befintliga sidor i rapporten.
+
+![Välj Använd på alla sidor för perspektivet om du vill tillämpa det i hela rapporten](media/power-bi-personalize-visuals/power-bi-personalize-perspective-09.png)
+
 
 ## <a name="turn-on-the-preview-feature"></a>Aktivera förhandsgranskningsfunktionen
 

@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
-ms.date: 07/16/2019
-ms.openlocfilehash: 1602743230f1a369fe3da48fa37a313b9d9bbea4
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.date: 08/12/2020
+ms.openlocfilehash: c9d6b10c05ac3e19c5ebdcb5a0f3a1ab9b989a10
+ms.sourcegitcommit: 64139587061136a43c5aea3b6db4d1a94e4e7795
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79435891"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88204946"
 ---
 # <a name="guidelines-for-power-bi-visuals"></a>Riktlinjer för visuella objekt för Power BI
 Innan du [publicerar](office-store.md) ditt visuella Power BI-objekt till Microsoft AppSource så att andra kan upptäcka och använda det ska du se till att följa riktlinjerna så att användarna får en bra upplevelse.
@@ -59,6 +59,9 @@ Snabbmenyn är den högerklicksmeny som visas när användaren hovrar över ett 
 Alla visuella Power BI-objekt bör aktivera snabbmenyn för att ge en enhetlig upplevelse.
 Information om hur du lägger till en snabbmeny finns i [den här artikeln](https://github.com/Microsoft/PowerBI-visuals/blob/gh-pages/tutorials/building-bar-chart/adding-context-menu-to-the-bar.md).
 
+>[!div class="mx-imgBorder"]
+>![En skärmbild av en visuell snabbmeny i Power BI.](media/guidelines-powerbi-visuals/context-menu.png)
+
 ## <a name="commercial-logo"></a>Kommersiell logotyp
 I det här avsnittet beskrivs specifikationerna för att lägga till kommersiella logotyper i visuella Power BI-objekt. Kommersiella logotyper är inte obligatoriska. Om de läggs till måste de följa dessa riktlinjer.
 
@@ -74,15 +77,15 @@ I det här avsnittet beskrivs specifikationerna för att lägga till kommersiell
 Det finns tre typer av kommersiella logotyper:
 * **Textlogotyp** – en textlogotyp består av två element som sitter ihop (en ikon och ett namn).
 
-    ![Microsoft-logotyp](media/guidelines-powerbi-visuals/microsoft-logo.png)
+    ![En skärmbild av Microsoft-logotypen.](media/guidelines-powerbi-visuals/microsoft-logo.png)
 
 * **Symbol** – en bild utan text.
 
-    ![Microsoft-symbol](media/guidelines-powerbi-visuals/microsoft-symbol.png)
+    ![En skärmbild av Microsoft-symbolen.](media/guidelines-powerbi-visuals/microsoft-symbol.png)
 
 * **Logotyp** – en logotyp utan ikon, som endast består av text.
 
-    ![Microsoft-symbol](media/guidelines-powerbi-visuals/microsoft-logotype.png)
+    ![En skärmbild av Microsoft-logotypen utan ikon.](media/guidelines-powerbi-visuals/microsoft-logotype.png)
 
 ### <a name="commercial-logo-color"></a>Kommersiell logotypfärg
 
@@ -90,15 +93,15 @@ När du använder en kommersiell logotyp måste färgen på logotypen vara grå 
 
 * **Logotyp**
 
-    ![Microsoft-symbol](media/guidelines-powerbi-visuals/grey-microsoft-logo.png)
+    ![En skärmbild av Microsoft-logotypen i grått.](media/guidelines-powerbi-visuals/grey-microsoft-logo.png)
 
 * **Symbol** – en bild utan text.
 
-    ![Microsoft-symbol](media/guidelines-powerbi-visuals/grey-microsoft-symbol.png)
+    ![En skärmbild av Microsoft-symbolen i grått.](media/guidelines-powerbi-visuals/grey-microsoft-symbol.png)
 
 * **Logotyp** – en logotyp utan ikon, som endast består av text.
 
-    ![Microsoft-symbol](media/guidelines-powerbi-visuals/grey-microsoft-logotype.png)
+    ![En skärmbild av Microsoft-logotypen utan ikon i grått.](media/guidelines-powerbi-visuals/grey-microsoft-logotype.png)
 
 > [!TIP]
 > * Om ditt visuella Power BI-objekt innehåller en bild kan du överväga att lägga till en vit bakgrund (med marginaler på 10 px) för din logotyp.
@@ -110,13 +113,13 @@ Ett visuellt Power BI-objekt måste ha två kommersiella logotyper, en för stor
 
 I följande tabell beskrivs storleksöverväganden för visuella Power BI-objekt.
 
-|  |Litet visuellt Power BI-objekt  |Stort visuellt Power BI-objekt  |
+|Inställningar  |Litet visuellt Power BI-objekt  |Stort visuellt Power BI-objekt  |
 |---------|---------|---------|
 |*Logotypens bredd*    |Upp till 240 px         |Större än 240 px         |
 |*Logotypens höjd*     |Upp till 160 px         |Större än 160 px         |
 |*Storlek på avgränsningsruta*     |40 x 15 px         |101 x 30 px         |
-|*Exempel på kommersiell logotyp*     |![Microsoft-symbol](media/guidelines-powerbi-visuals/grey-microsoft-symbol.png)         |![Microsoft-logotyp](media/guidelines-powerbi-visuals/grey-microsoft-logo.png)         |
-|*Exempel på en avgränsningsruta*    |![exempel på liten logotyp](media/guidelines-powerbi-visuals/small-logo-box.png)         |![exempel på stor logotyp](media/guidelines-powerbi-visuals/big-logo-box.png)         |
+|*Exempel på kommersiell logotyp*     |![En skärmbild av en mindre version av Microsofts kommersiella logotyp.](media/guidelines-powerbi-visuals/grey-microsoft-symbol.png)         |![En skärmbild av Microsofts kommersiella logotyp.](media/guidelines-powerbi-visuals/grey-microsoft-logo.png)         |
+|*Exempel på en avgränsningsruta*    |![En skärmbild av måtten för en liten logotyp.](media/guidelines-powerbi-visuals/small-logo-box.png)         |![En skärmbild av måtten för en stor logotyp.](media/guidelines-powerbi-visuals/big-logo-box.png)         |
 |    |         |         |
 
 ### <a name="commercial-logo-behavior"></a>Beteende för kommersiell logotyp
@@ -140,13 +143,13 @@ Kommersiella logotyper är endast tillåtna i redigeringsläge. En kommersiell l
 
 * Undvik en färgad eller svart kommersiell logotyp. Den kommersiella logotypen måste vara grå (hexkoden #C8C8C8).
 
-    ![Otillåten färgad logotyp](media/guidelines-powerbi-visuals/no-color-logo.png) ![Otillåten svart logotyp](media/guidelines-powerbi-visuals/black-logo.png)
+    ![En skärmbild av en Microsoft-logotyp i otillåten färg.](media/guidelines-powerbi-visuals/no-color-logo.png) ![En skärmbild av en svart Microsoft-logotyp som inte är tillåten](media/guidelines-powerbi-visuals/black-logo.png)
 
 * En kommersiell logotyp med effekter som övertoningar eller starka skuggor.
 
-    ![Otillåten logotypstil](media/guidelines-powerbi-visuals/no-style-logo.png)
+    ![En skärmbild av ett exempel på en Microsoft-logotyp i otillåtet format.](media/guidelines-powerbi-visuals/no-style-logo.png)
 
-## <a name="best-practices"></a>Metodtips
+## <a name="best-practices"></a>Bästa praxis
 
 När du publicerar ett visuellt Power BI-objekt bör du tänka på följande rekommendationer för att ge användarna en bra upplevelse.
 
@@ -164,4 +167,7 @@ Mer information om visuella Power BI-objekt finns i [Vanliga frågor och svar om
 
 ## <a name="next-steps"></a>Nästa steg
 
-Läs hur du kan publicera dina visuella Power BI-objekt till [Microsoft AppSource](office-store.md) där andra kan upptäcka och använda dem.
+Läs hur du kan publicera dina visuella Power BI-objekt till Microsoft AppSource där andra kan upptäcka och använda dem.
+
+>[!div class="nextstepaction"]
+>[Publicera visuella Power BI-objekt](office-store.md)

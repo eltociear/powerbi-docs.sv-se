@@ -6,59 +6,58 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 06/09/2020
+ms.date: 08/12/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 5f2e97a5b1ba8fc62581244cf26cd069ce5c2586
-ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
+ms.openlocfilehash: f8020e68db6b0baaabdde626d1b17674fe995ca2
+ms.sourcegitcommit: 64139587061136a43c5aea3b6db4d1a94e4e7795
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86162262"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88205107"
 ---
 # <a name="install-and-use-the-sample-sales-and-marketing-app-in-the-power-bi-service"></a>Installera och använda exempelappen Sales & Marketing i Power BI-tjänsten
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
-Nu när du har en [grundläggande förståelse för hur du hämtar Power BI-innehåll](end-user-app-view.md) ska vi hämta appen Sales & Marketing från Microsoft AppSource (appsource.com). 
+Nu när du har [grundläggande förståelse för hur du hämtar Power BI-innehåll](end-user-app-view.md) ska vi hämta appen Marketing and Sales från Microsoft AppSource. 
 
 
-## <a name="get-the-app-from-the-power-bi-apps-marketplace"></a>Hämta appen från Marketplace för Power BI-appar
+## <a name="get-the-app-from-microsoft-appsource"></a>Hämta appen från Microsoft AppSource
 
-1. [Logga in på Power BI-tjänsten](./end-user-sign-in.md) om du inte redan har loggat in. 
+1. Öppna [https://appsource.microsoft.com](https://appsource.microsoft.com).
 
-1. När du är i Power BI väljer du **Appar > Hämta appar**. 
+   ![Öppna AppSource-webbplatsen  ](./media/end-user-app-marketing/power-bi-appsource.png)
 
-    ![Hämta appar  ](./media/end-user-app-marketing/power-bi-get-apps.png)
+1. Ange **Marketing** i sökfältet och markera **Förfina efter produkt > Power BI-appar**. 
 
-1. Marketplace för Power BI-appar öppnas. Hitta Sälj- och marknadsföringsappen. Om du inte ser den kan du prova att skriva Sälj i sökrutan.
+    ![Hämta appar  ](./media/end-user-app-marketing/power-bi-search-appsource.png)
 
-    ![Marketplace för Power BI-appar  ](./media/end-user-app-marketing/power-bi-apps-marketplace.png)
 
-1. Klicka på appanelen. App-erbjudandet på AppSource öppnas. Klicka på **Skaffa nu**.
+1. Välj apptiteln **Microsoft Sample Sales & Marketing**. Du kan också läsa igenom översikten och recensionerna samt ta en titt på bilderna.  Välj sedan **Hämta nu**.
 
-   ![App-erbjudande i AppSource](./media/end-user-app-marketing/power-bi-apps-app-offering.png)
+   ![App-erbjudande i AppSource](./media/end-user-app-marketing/power-bi-app-offering.png)
 
 1. Bekräfta att du vill installera den här appen.
 
-   ![Vill du installera den här appen?](./media/end-user-app-marketing/power-bi-app-install.png)
+   ![Vill du installera den här appen?](./media/end-user-app-marketing/power-bi-installs.png)
 
 5. När appen har installerats visar Power BI-tjänsten ett meddelande om att det är klart. Välj **Gå till app** för att öppna appen. Beroende på hur designern har skapat appen visas antingen appens instrumentpanel eller appens rapport.
 
     ![Appen har installerats ](./media/end-user-app-marketing/power-bi-app-ready.png)
 
-    Du kan också öppna appen direkt från din innehållslista för appar genom att markera **Appar** och välja **Försäljning och marknadsföring**.
+    Du kan också öppna appen direkt från applistan genom att välja **Appar** och sedan titeln **Sales & Marketing**.
 
-    ![Appar i Power BI](./media/end-user-app-marketing/power-bi-apps-sales-marketing.png)
+    ![Appar i Power BI](./media/end-user-app-marketing/power-bi-sales-marketing.png)
 
 
-6. Välj om du vill utforska eller anpassa och dela din nya app. Eftersom vi har valt en Microsoft-exempelapp börjar vi med att utforska. 
+6. Välj om du vill ansluta dina egna data, utforska med exempeldata eller anpassa och dela din nya app. Eftersom vi har valt en Microsoft-exempelapp börjar vi med att utforska. 
 
-    ![Utforska med exempeldata](./media/end-user-app-marketing/power-bi-explore.png)
+    ![Utforska med exempeldata](./media/end-user-app-marketing/power-bi-explore-app.png)
 
 7.  Din nya app öppnas med en instrumentpanel. Appens *designer* skulle ha kunnat konfigurera appen så att den öppnas i en rapport i stället.  
 
-    ![Utforska med exempeldata](./media/end-user-app-marketing/power-bi-new-app.png)
+    ![Utforska med exempeldata](./media/end-user-app-marketing/power-bi-app-new.png)
 
 
 
@@ -70,6 +69,6 @@ Nu när du har en [grundläggande förståelse för hur du hämtar Power BI-inne
 
 
 ## <a name="next-steps"></a>Nästa steg
-* [Gå tillbaka till översikten över appar](end-user-apps.md)
-* [Visa en Power BI-rapport](end-user-report-open.md)
+* [Gå tillbaka till översikten över appar](end-user-apps.md)    
+* [Visa en Power BI-rapport](end-user-report-open.md)    
 * [Andra sätt att dela innehåll med dig](end-user-shared-with-me.md)

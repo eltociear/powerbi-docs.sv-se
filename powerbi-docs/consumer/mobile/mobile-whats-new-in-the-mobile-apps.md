@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 08/11/2020
+ms.date: 08/12/2020
 ms.author: painbar
-ms.openlocfilehash: f580891be69e0c5478474496be6a6414867e662d
-ms.sourcegitcommit: d7145123133255d004b85ef8b20ca4977f0b843e
+ms.openlocfilehash: 84ceb5cd856986f2ff068395bac8bcac10baad96
+ms.sourcegitcommit: 64139587061136a43c5aea3b6db4d1a94e4e7795
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88091674"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88204869"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nyheter i Power BI-mobilapparna
 Relaterad information om nyheter finns i:
@@ -24,6 +24,23 @@ Relaterad information om nyheter finns i:
 
 >[!NOTE]
 >Stöd för Power BI-mobilappen för **telefoner som använder Windows 10 Mobile** kommer att upphöra den 16 mars 2021. [Läs mer](https://go.microsoft.com/fwlink/?linkid=2121400)
+
+## <a name="august-2020"></a>Augusti 2020
+### <a name="weve-improved-how-you-navigate-to-your-content-ios-and-android"></a>Vi har gjort det enklare att navigera till ditt innehåll (iOS och Android)
+Nu kan du snabbt och enkelt ta dig runt i ditt innehåll med det **nya navigeringsträdet**, som du kommer åt via listrutan i sidhuvudet i rapporter, på instrumentpaneler och i appar. Du kan snabbt se innehållets platshierarki och enkelt navigera i innehållshierarkin, gå till innehåll på samma nivå och gå tillbaka till startsidan. Om objektet du visar ingår i en app visar trädet hela innehållet i appen – avsnitt, länkar samt alla rapporter och instrumentpaneler. Om objektet du visar är en rapport ser du också en lista med alla synliga rapportsidor. Det har aldrig varit så enkelt att komma från en sida till en annan! Kolla själv! 
+
+![Skärmbild av navigeringsträdet i Power BI-mobilappen.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-nav-tree1.png)
+
+### <a name="share-from-power-bi-using-your-favorite-apps-ios-and-android"></a>Dela från Power BI via dina favoritappar (iOS och Android)
+Nu kan du dela länkar till Power BI-innehåll med dina kontakter. Använd den nya delningsåtgärden i sidhuvudet till att skicka länken via valfri samarbetsapp på din enhet, som Microsoft Teams, e-postappen eller liknande. Länken går till den aktuella vyn, så du kan till och med dela filtrerade rapportvyer.
+
+![Skärmbild av delningsikonen i Power BI-mobilappen.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-share.png)
+
+### <a name="pinch-and-zoom-is-now-available-in-all-report-views---on-both-phones-and-tablets-ios-and-android"></a>Dra ihop och zooma är nu tillgängligt i alla rapportvyer – både på telefoner och surfplattor (iOS och Android)   
+Vi har aktiverat hopdragning och zoom i alla rapportvyer så att du enklare kan zooma in och ut i rapportinnehåll oavsett om du arbetar på telefonen eller surfplattan.
+
+### <a name="auto-play-a-slideshow-on-startup-windows"></a>Spela upp bildspel automatiskt vid start (Windows)
+Du kan ange att en rapport ska spelas upp automatiskt som bildspel när Power BI-appen startas i Windows. Det här är användbart när du vill skapa en helskärmsupplevelse där en rapport körs på offentliga skärmar utan manuell åtgärd. [Läs mer!](mobile-windows-10-app-presentation-mode.md#auto-play-a-slideshow-on-startup)
 
 ## <a name="july-2020"></a>Juli 2020
 ### <a name="the-power-bi-mobile-app-for-windows-now-supports-organizational-branding"></a>Power BI-mobilappen för Windows har nu stöd för organisationens varumärkesprofiler
@@ -173,7 +190,7 @@ Läs mer om [det nya utseendet för Power BI](https://powerbi.microsoft.com/blog
 
 ### <a name="secured-access-with-azure-active-directory-ad-application-proxy-ios-and-android"></a>Skyddad åtkomst med Azure Active Directory-programproxyn (iOS och Android)
 
-Vi har samarbetat med Azure Active Directory-teamet när det gäller att integrera mobila Power BI-program med Azure Active Directory-programproxyn. Med den här konfigurationen kan du ansluta till en rapportserver inom företagsgränserna från Power BI Mobile-appen, utan att behöva konfigurera en komplex lokal konfiguration. Läs mer om [Integrera Power BI Mobile och Azure AD-programproxy](https://powerbi.microsoft.com/blog/access-on-prem-report-server-from-your-power-bi-mobile-app-with-azure-active-directory-application-proxy/). Lär dig [hur du konfigurerar Azure AD-programproxy och Power BI](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi).
+Vi har samarbetat med Azure Active Directory-teamet när det gäller att integrera mobila Power BI-program med programproxyn för Azure Active Directory (Azure AD). Med den här konfigurationen kan du ansluta till en rapportserver inom företagsgränserna från Power BI Mobile-appen, utan att behöva konfigurera en komplex lokal konfiguration. Läs mer om [Integrera Power BI Mobile och Azure AD-programproxy](https://powerbi.microsoft.com/blog/access-on-prem-report-server-from-your-power-bi-mobile-app-with-azure-active-directory-application-proxy/). Lär dig [hur du konfigurerar Azure AD-programproxy och Power BI](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi).
 
 ## <a name="july-2019"></a>Juli 2019
 
@@ -211,7 +228,7 @@ En tryckning är nu i allmän tillgänglighet och kommer att bli den standardmä
 
 ### <a name="enhanced-conditional-access-protection-ios-android"></a>Förbättrad villkorsstyrt åtkomstskydd (iOS och Android)
 
-Vi har integrerat med [den nya appskyddsbaserade funktionen för villkorsstyrd åtkomst](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access) i AAD för att öka säkerheten genom att begränsa åtkomst till Power BI innan appprincipen tillämpas.
+Vi har integrerat med [den nya appskyddsbaserade funktionen för villkorsstyrd åtkomst](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access) i Azure AD för att öka säkerheten genom att begränsa åtkomsten till Power BI innan appprincipen tillämpas.
 
 ### <a name="device-protection-ios"></a>Enhetsskydd (iOS)
 
@@ -490,7 +507,7 @@ Du kan nu ange proxyinställningar i Power BI:s iOS-mobilapp. Det innebär att P
 Läs [funktionssammanfattningen om mobilappar för juli 2017](https://powerbi.microsoft.com/blog/power-bi-service-and-mobile-july-feature-summary/#ios-preview)
 
 #### <a name="ios-devices"></a>iOS-enheter
-**Nya frågor och svar i iOS (förhandsversion)** I stället för att bara få ett svar på din fråga, kan du nu använda naturligt språk för att få begränsade insikter. Även om du inte vet vad du letar efter, avslöjar Frågor och svar proaktivt insikter som är relevanta för dina data. Den nya upplevelsen för frågor och svar för mobila enheter, som har utvecklats i samarbete med Microsofts forskningsteam, visar prov på vår produkts kraftfulla tekniker. Prova självstudierna och [ställ frågor om dina data i iOS-mobilapparna](mobile-apps-ios-qna.md).
+**Nya frågor och svar i iOS (förhandsversion)** I stället för att bara få ett svar på din fråga, kan du nu använda naturligt språk för att få begränsade insikter. Även om du inte vet vad du letar efter får du proaktivt insikter i Frågor och svar som är relevanta för dina data. Den nya upplevelsen för frågor och svar för mobila enheter, som har utvecklats i samarbete med Microsofts forskningsteam, visar prov på vår produkts kraftfulla tekniker. Prova självstudierna och [ställ frågor om dina data i iOS-mobilapparna](mobile-apps-ios-qna.md).
 
 ### <a name="responsive-visuals"></a>Dynamiska visuella objekt
 **Dynamiska visuella objekt för telefonrapporter och instrumentpaneler** Du kan ställa in de visuella objekten på din instrumentpanel eller i din rapport till att vara *dynamiska*, så att de ändras dynamiskt för att visa maximala mängder data och insikter, oavsett skärmstorlek. Läs [bloggen om dynamiska visuella objekt](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#responsiveVisuals).
@@ -530,7 +547,7 @@ Läs [funktionssammanfattningen om mobilappar för mars 2017](https://powerbi.mi
 Vi har förbättrat pekfunktionerna för tidsutsnitt.
 
 #### <a name="ios-devices"></a>iOS-enheter
-**Ställ frågor om dina data med Frågor och svar – och ge oss feedback** Prova att ställa frågor om dina data med Frågor och svar och skicka oss en glad eller ledsen smiley för att berätta för oss hur väl vi lyckades besvara dina frågor.
+**Ställ frågor om dina data med Frågor och svar – och ge oss feedback** Prova att ställa frågor om dina data med Frågor och svar och skicka en glad eller ledsen smiley till oss för att berätta hur väl vi lyckades besvara dina frågor.
 
 **Använd 3D Touch för vanliga åtgärder** Tryck länge på Power BI app-ikonen på startsidan på din iPhone 6s eller senare för att få åtkomst till meddelanden, sökning och senast använda instrumentpaneler.
 
