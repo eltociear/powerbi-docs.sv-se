@@ -71,6 +71,8 @@
               items:
                 - name: Frågor och svar – introduktion
                   href: ../natural-language/q-and-a-intro.md
+                - name: Frågor och svar – datakällor
+                  href: ../natural-language/q-and-a-data-sources.md
                 - name: Introduktion till verktyg för frågor och svar
                   href: ../natural-language/q-and-a-tooling-intro.md
                 - name: Avancerade verktyg för frågor och svar
