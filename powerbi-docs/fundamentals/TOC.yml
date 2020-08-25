@@ -15,6 +15,8 @@
           href: service-service-vs-desktop.md
     - name: Självstudier
       items:
+        - name: Komma igång med Power BI Desktop
+          href: desktop-getting-started.md
         - name: Kom igång med Power BI-tjänsten
           href: service-get-started.md
     - name: Begrepp
@@ -41,8 +43,6 @@
       items:
         - name: Hämta Power BI Desktop
           href: desktop-get-the-desktop.md
-        - name: Komma igång med Power BI Desktop
-          href: desktop-getting-started.md
     - name: Referens
       items:
         - name: Språk och länder/regioner som stöds
