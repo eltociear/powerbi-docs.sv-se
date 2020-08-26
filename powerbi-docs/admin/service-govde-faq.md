@@ -7,15 +7,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 08/20/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: f42ee7a0b3b1aaf562e3ab087ad9c07501707afc
-ms.sourcegitcommit: 0d0ab427bb71b37c9e5170c515a8f274e1f20c17
+ms.openlocfilehash: f7130b1565c85d8e18188c89c22dda3eda193018
+ms.sourcegitcommit: 0f807d3c74e5202b6e6a95fad49f2787928b9613
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87878388"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "88702638"
 ---
 # <a name="frequently-asked-questions-for-power-bi-for-germany-cloud-customers"></a>Vanliga frågor för Power BI för tyska molnkunder
 **Power BI-tjänsten** har en version som är tillgänglig för kunder i EU/Europeiska frihandelsavtalet (EU/EFTA), vilket ofta kallas Microsoft Cloud Deutschland (MCD). Den **Power BI-tjänsten** version som beskrivs i den här artikeln är utformad för kunder som tillhör myndigheter i EU-/EFTA-länder och är separat och skiljer sig från kommersiella versioner av **Power BI-tjänsten** eller Power BI-tjänster för andra myndigheter.
@@ -53,6 +53,8 @@ Följande frågor och svar innehåller viktig information för Power BI Pro-tjä
    * Publicera på webben
    * ArcGIS-kartor från Esri
    * Power BI Embedded (avgränsad uppmätt ISV-licensiering, kommer att erbjudas via [Microsoft Azure Tyskland](https://azure.microsoft.com/overview/clouds/germany/) i framtiden)
+   * Aktivitetsloggning
+
 7. **Var kan jag hitta specifik konfigureringsinformation för Power BI-molntjänsten för Tyskland för användning och integration i mina applikationer?**
    
    Vi har uppdaterat våra utvecklarexempel på [SaaS-inbäddning](https://github.com/Microsoft/PowerBI-Developer-Samples) med konfigurationsinformation för Tyskland och andra Power BI-molnlösningar. Ta en titt på mappen **molnkonfigurationerna** i exemplen för molnspecifika slutpunkter för konfigurering. I följande tabell visas olika konfigurationsslutpunkter för Power BI-molntjänsten för Tyskland (och offentligt moln som jämförelse).
