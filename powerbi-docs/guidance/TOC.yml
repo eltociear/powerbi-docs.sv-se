@@ -118,6 +118,24 @@
               href: report-performance-troubleshoot.md
             - name: Metodtips för distributionspipelines
               href: ../create-reports/deployment-pipelines-best-practices.md
+    - name: Migrera till Power BI
+      items:
+        - name: Översikt över migrering
+          href: powerbi-migration-overview.md
+        - name: Förbereda migrering
+          href: powerbi-migration-pre-migration-steps.md
+        - name: Sammanställa krav
+          href: powerbi-migration-requirements.md
+        - name: Planera distribution
+          href: powerbi-migration-planning.md
+        - name: Utföra konceptbevis
+          href: powerbi-migration-proof-of-concept.md
+        - name: Skapa innehåll
+          href: powerbi-migration-create-validate-content.md
+        - name: Distribuera till Power BI
+          href: powerbi-migration-deploy-support-monitor.md
+        - name: Lär dig av kunders Power BI migreringar
+          href: powerbi-migration-learn-from-customers.md
     - name: Center för utmärkthet (COE)
       items:
         - name: Microsoft BI-omvandling
