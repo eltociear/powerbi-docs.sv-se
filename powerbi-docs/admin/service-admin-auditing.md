@@ -6,16 +6,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 05/11/2020
+ms.date: 08/20/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: e8e81c297841e32d1f4d966de23b5d752b654c20
-ms.sourcegitcommit: d7145123133255d004b85ef8b20ca4977f0b843e
+ms.openlocfilehash: 7b5a96f4b592789c04ebaca5418e470d546ff788
+ms.sourcegitcommit: 84e75a2cd92f4ba4e0c08ba296b981b79d6d0e82
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88091628"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88802984"
 ---
 # <a name="track-user-activities-in-power-bi"></a>Spåra användaraktiviteter i Power BI
 
@@ -32,6 +32,10 @@ Att veta vem som har vidtagit en viss åtgärd för ett visst objekt i din Power
 
 
 ## <a name="use-the-activity-log"></a>Använd aktivitetsloggen
+
+> [!NOTE]
+> Aktivitetsloggning stöds inte för Microsoft Cloud Deutschland. Läs mer om tjänstens begränsningar för moln i Tyskland i [Vanliga frågor för Power BI för tyska molnkunder](service-govde-faq.md).
+
 
 Som Power BI-tjänstadministratör kan du analysera användningen för alla Power BI-resurser på klientorganisationsnivå genom att använda anpassade rapporter som baseras på Power BI-aktivitetsloggen. Du kan ladda ned aktiviteterna med hjälp av ett REST API eller en PowerShell-cmdlet. Du kan även filtrera aktivitetsdata efter datumintervall, användare och aktivitetstyp.
 
@@ -73,6 +77,8 @@ completeListOfActivityEvents.AddRange(response.ActivityEventEntities);
 > Det kan ta upp till 24 timmar för alla händelser att visas, men fullständiga data görs vanligtvis tillgängliga snabbare än så.
 >
 >
+Om du vill veta mer om hur du använder Power BI REST API och få exempel på hur du kan hämta granskningsaktivitetshändelser går du till [Admin - Get Activity Events](https://docs.microsoft.com/rest/api/power-bi/admin/getactivityevents) (Admin – Hämta aktivitetshändelser) i Power BI REST API-referensdokumentationen.
+
 ### <a name="get-powerbiactivityevent-cmdlet"></a>Cmdleten Get-PowerBIActivityEvent
 
 Ladda ned aktivitetshändelser med hjälp av cmdletar för hantering av Power BI för PowerShell. Cmdleten **Get-PowerBIActivityEvent** hanterar automatiskt fortsättningstoken åt dig. Cmdleten **get-PowerBIActivityEvent** tar en StartDateTime-parameter och en EndDateTime-parameter med samma begränsningar som **ActivityEvents** REST-API:et. Med andra ord måste startdatumet och slutdatumet referera till samma datumvärde eftersom du bara kan hämta aktivitetsdata för en dag i taget.
@@ -113,7 +119,7 @@ Du kan filtrera granskningsdata efter datumintervall, användare, instrumentpane
 
 Du måste uppfylla följande krav för att komma åt granskningsloggar:
 
-- Du måste antingen vara global administratör eller ha tilldelats rollen Spårningsloggar eller Visa enbart spårningsloggar i Exchange Online för att få åtkomst till spårningsloggen. För rollgrupperna Efterlevnadshantering och Organisationsledning är de här rollerna som standard tilldelade på sidan **Behörigheter** i administrationscentret för Exchange.
+- Du måste antingen vara global administratör eller ha tilldelats rollen Spårningsloggar eller Visa enbart spårningsloggar i Exchange Online för att få åtkomst till spårningsloggen. För rollgrupperna Efterlevnadshantering och Organisationsledning är de här rollerna som standard tilldelade på sidan **Behörigheter** i administrationscentret för Exchange. Mer information om vilka roller som kan visa spårningsloggar finns [Requirements to search the audit log](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide#requirements-to-search-the-audit-log) (Krav för att söka i spårningsloggen).
 
     Lägg till användaren som en medlem i någon av dessa rollgrupper om du vill ge åtkomst till granskningsloggen till icke-administratörskonton. Om du vill göra det på ett annat sätt kan du skapa en anpassad rollgrupp i administrationscentret för Exchange, tilldela gruppen någon av rollerna Spårningsloggar eller Visa enbart spårningsloggar, och sedan lägga till icke-administratörskontot till den nya rollgruppen. Mer information finns i [Hantera rollgrupper i Exchange Online](/Exchange/permissions-exo/role-groups).
 
