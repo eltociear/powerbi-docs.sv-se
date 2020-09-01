@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/23/2019
 ms.author: kfollis
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: d2d28d8ea3f7e2e7217124483f90ecc28d44314f
-ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
+ms.openlocfilehash: 0cc691e8987bf45f6c3028a5006955db1da72b0b
+ms.sourcegitcommit: f73ea4b9116ad186817ec5cc5d5f487d49cc0cb0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86161708"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88638806"
 ---
 # <a name="use-an-alternate-email-address"></a>Använda en alternativ e-postadress
 
@@ -23,7 +23,7 @@ När du registrerar dig för Power BI kan du ange en e-postadress. Som standard 
 I vissa fall vill du kanske att dessa e-postmeddelanden ska skickas till en alternativ e-postadress istället för den du registrerade dig med. Den här artikeln förklarar hur du anger en alternativ e-postadress i Microsoft 365 och i PowerShell. Den här artikeln beskriver även Azure Active Directory (Azure AD) matchar en e-postadress.
 
 > [!NOTE]
-> Om du anger en alternativ adress påverkas inte vilken e-postadress som använder Power BI för uppdateringar av tjänsten, nyhetsbrev och andra erbjudanden. Dessa meddelanden skickas alltid till den e-postadress som du använde när du registrerade dig för Power BI.
+> Om du anger en alternativ adress påverkas inte vilken e-postadress som använder Power BI för e-postprenumerationer, uppdateringar av tjänsten, nyhetsbrev och andra erbjudanden. Dessa meddelanden skickas alltid till den e-postadress som du använde när du registrerade dig för Power BI.
 
 ## <a name="use-microsoft-365"></a>Använda Microsoft 365
 

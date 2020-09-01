@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 08/05/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 4f02a98ca13bd5808bde987889c3f4404c9100f0
-ms.sourcegitcommit: 65822b51810a5239fea9d3d0af1fc286436c6cad
+ms.openlocfilehash: e1df6634492bbaa690e7efe601455fbae8b6094b
+ms.sourcegitcommit: 0f807d3c74e5202b6e6a95fad49f2787928b9613
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87837507"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "88702684"
 ---
 # <a name="export-reports-from-power-bi-to-pdf"></a>Exportera rapporter från Power BI till PDF
 
@@ -68,6 +68,7 @@ Det finns några överväganden och begränsningar som du bör tänka på när d
 * Rapporter med ovanliga anpassade sidstorlekar kan ge problem i exportscenarier. För bästa resultat bör du överväga att byta till en standardstorlek för rapporten.
 * När du exporterar till PDF så används standardteckensnitt för rapporter med anpassade teckensnitt.
 * Vi försöker ge en konsekvent upplevelse, men vi kan inte garantera att den exporterade PDF-filen från Power BI-tjänsten alltid matchar den exporterade PDF-filen från en lokal Power BI Desktop-fil.
+* Vid export till PDF kan vi inte garantera pixelperfekt återgivning för PBIX-rapporter.
 
 ## <a name="next-steps"></a>Nästa steg
 [Skriva ut en rapport](end-user-print.md)

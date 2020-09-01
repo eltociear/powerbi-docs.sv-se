@@ -10,12 +10,12 @@ ms.date: 08/17/2020
 ms.author: mihart
 ms.custom: licensing support
 LocalizationGroup: Share your work
-ms.openlocfilehash: d7ad3722b609d76383a7a404ef94655ec9ef8711
-ms.sourcegitcommit: 7d505cb7cc9360211d67f1056cb488f7f15ffab4
+ms.openlocfilehash: e737d8747f7d6d9b69eda2035df06abdddd9569f
+ms.sourcegitcommit: 84e75a2cd92f4ba4e0c08ba296b981b79d6d0e82
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "88578080"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88803099"
 ---
 # <a name="install-and-use-apps-with-dashboards-and-reports-in-power-bi"></a>Installera och använda appar med instrumentpaneler och rapporter i Power BI
 
@@ -27,7 +27,7 @@ Nu när du har en [grundläggande förståelse av appar](end-user-apps.md) ska v
 
 ## <a name="ways-to-get-a-new-app"></a>Olika sätt att skaffa en ny app
 Det finns flera sätt att skaffa en ny app:
-* Du kan hämta den från Marketplace för Power BI-appar i Power BI.
+* Du kan hämta den från Marketplace för Power BI-appar i Power BI-tjänsten.
 * Du kan använda en direktlänk till en app som du har fått från appdesignern. 
 * En appdesigner i organisationen kan installera appen automatiskt på ditt Power BI-konto.
 
@@ -37,6 +37,8 @@ Med Power BI Mobile kan du bara installera appar via direktlänk. Om appdesigner
 Alla Power BI-användare kan inte visa och interagera med appar. 
 - Om du har en kostnadsfri licens kan du öppna appar som lagras i en Premium-kapacitet och som delats med dig.  
 - Om du har en Pro-licens kan du öppna appar som har delats med dig.
+
+Kontakta administratören eller supportavdelningen om du inte kan öppna appar. Information om licensiering finns i [Power BI-licensiering](end-user-license.md).
 
 ## <a name="get-the-app-from-the-power-bi-apps-marketplace"></a>Hämta appen från Marketplace för Power BI-appar
 

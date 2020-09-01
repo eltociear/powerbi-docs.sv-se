@@ -6,14 +6,14 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/02/2020
+ms.date: 08/19/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 9aab2afd9e3b4b86844c045ceb0346d57baa3e18
-ms.sourcegitcommit: 561f6de3e4621d9d439dd54fab458ddca78ace2c
+ms.openlocfilehash: 477b6a1e29fc05da3004a2dcf8466ef969df4531
+ms.sourcegitcommit: f73ea4b9116ad186817ec5cc5d5f487d49cc0cb0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85940205"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88638622"
 ---
 # <a name="establish-a-center-of-excellence"></a>Upprätta ett center för utmärkthet
 
@@ -45,10 +45,10 @@ På Microsoft kallas COE för BI-plattformen. Den består av många intressentgr
 
 Delade funktioner krävs för att kunna upprätta och driva BI-plattformen. De har stöd för alla intressentgrupper som finansierar plattformen. De består av följande team:
 
-- **Teknik för kärnplattformen:** Vi har utformat BI-plattformen ur en teknisk synvinkel. Det är egentligen en uppsättning ramverk som har stöd för datainmatning, bearbetning för att utöka data, samt leverans av dessa data i datamodeller för att kunna analysera förbrukningen. Teknikerna ansvarar för den tekniska utformningen och implementeringen av kärnfunktionerna i BI-plattformen. De kan till exempel utforma och implementera datapipelines.
+- **Teknik för kärnplattformen:** Vi har utformat BI-plattformen ur en teknisk synvinkel. Det är egentligen en uppsättning ramverk som har stöd för datainmatning, bearbetning för att utöka data, samt leverans av dessa data i BI-semantikmodeller för att kunna analysera förbrukningen. Teknikerna ansvarar för den tekniska utformningen och implementeringen av kärnfunktionerna i BI-plattformen. De kan till exempel utforma och implementera datapipelines.
 - **Infrastruktur och värdtjänster:** IT-teknikerna ansvarar för etablering och hantering av alla Azure-tjänster.
 - **Support och drift:** Det här teamet håller plattformen igång. Supporten tar hand om användarbehov som exempelvis databehörighet. Driften håller plattformen igång, säkerställer att serviceavtal är uppfyllda och kommunicerar vid förseningar eller fel.
-- **Versionshantering:** Versionsändringar från tekniska programchefer. Ändringar kan variera från uppdateringar av plattformens ramverk till ändringsbegäranden för datamodeller. De är den sista utposten som ser till att ändringar inte förstör något.
+- **Versionshantering:** Versionsändringar från tekniska programchefer. Ändringar kan variera från uppdateringar av plattformens ramverk till ändringsbegäranden för BI-semantikmodeller. De är den sista utposten som ser till att ändringar inte förstör något.
 
 ### <a name="dedicated-deliveries"></a>Dedikerade leveranser
 
@@ -60,13 +60,22 @@ På Microsoft drivs vår BI-plattform av skalbara expertteam. Teamen anpassas ef
 
 - **Programchefer:** Programchefer är en dedikerad resurs. De fungerar som den primära kontakten mellan BI-teamet och intressenterna. Det är deras jobb att översätta intressenternas affärskrav till en teknisk specifikation. De hanterar även prioriteringen av intressenternas slutprodukter.
 - **Databasleads:** De är en dedikerad resurs som ansvarar för att registrera nya datamängder i det centraliserade informationslagret. Att registrera en datamängd kan omfatta konfiguration av fördefinierade dimensioner, lägga till affärslogik och anpassade attribut, samt standardnamn och formatering.
-- **Analysleads:** De är en dedikerad resurs som ansvarar för utformningen och utvecklingen av datamodeller. De strävar efter att tillämpa en konsekvent arkitektur med standardnamn och formatering. Prestandaoptimering är en viktig del av deras roll.
+- **Analysleads:** De är en dedikerad resurs som ansvarar för utformningen och utvecklingen av BI-semantikmodeller. De strävar efter att tillämpa en konsekvent arkitektur med standardnamn och formatering. Prestandaoptimering är en viktig del av deras roll.
 - **Drift och infrastruktur:** De är en delad resurs som ansvarar för att hantera jobb och datapipelines. De är också ansvariga för att hantera Azure-prenumerationer, Power BI-kapaciteter, virtuella datorer och datagatewayer.
-- **Support:** De är en delad resurs som ansvarar för att skriva dokumentation, organisera utbildning, kommunicera datamodelländringar och besvara användarfrågor.
+- **Support:** De är en delad resurs som ansvarar för att skriva dokumentation, organisera utbildning, kommunicera ändringar i BI-semantikmodeller och besvara användarfrågor.
 
 ## <a name="governance-and-compliance"></a>Styrning och efterlevnad
 
 För varje intressentgrupp erbjuder programcheferna styrning och tillsyn över olika program. Det övergripande målet är att säkerställa att investeringar i IT genererar affärsvärde och minimerar risker. Styrningskommitténs möten hålls regelbundet i syfte att granska framsteg och godkänna större initiativ.
+
+## <a name="grow-your-own-community"></a>Bygg upp en egen community
+
+Upprätta och främja en community i organisationen genom att göra följande:
+
+- Ordna evenemang på ordinarie arbetstid där BI-teamet deltar och användare kan ställa frågor, komma med förslag, dela med sig av idéer och framföra klagomål.
+- Skapa en egen supportkanal i Teams och uppmuntra alla att ställa och svara på publicerade frågor.
+- Genomför och främja informella användargrupper och uppmuntra medarbetare att närvara och delta.
+- Genomför mer formella utbildningstillfällen om vissa produkter och själva BI-plattformen. Överväg att genomföra [Power BI-instrumentpanelen på en dag](https://powerbi.microsoft.com/diad/), som är tillgänglig som kostnadsfritt kurspaket och som är ett bra sätt att introducera medarbetarna till Power BI för första gången.
 
 ## <a name="next-steps"></a>Nästa steg
 
@@ -75,3 +84,11 @@ Mer information om den här artikeln finns i följande resurser:
 - [BI-lösningsarkitektur i COE](center-of-excellence-business-intelligence-solution-architecture.md)
 - Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 - Har du förslag? [Bidra till att förbättra Power BI](https://ideas.powerbi.com/)
+
+I [nästa artikeln i den här serien](center-of-excellence-business-intelligence-solution-architecture.md) lär du dig mer om BI-lösningsarkitekturen i COE och de olika tekniker som används.
+
+### <a name="professional-services"></a>Professionella tjänster
+
+Certifierade Power BI-partners finns där och kan hjälpa din organisation att starta ett COE. De kan erbjuda kostnadseffektiv utbildning eller en granskning av dina data. Om du vill kontakta en Power BI-partner går du till [partnerportalen för Power BI](https://powerbi.microsoft.com/partners/).
+
+Du kan också kontakta erfarna konsultpartners. De kan hjälpa dig att [bedöma](https://appsource.microsoft.com/marketplace/consulting-services?product=power-bi&serviceType=assessment&country=ALL&region=ALL), [utvärdera](https://appsource.microsoft.com/marketplace/consulting-services?product=power-bi&serviceType=proof-of-concept&country=ALL&region=ALL) eller [implementera](https://appsource.microsoft.com/marketplace/consulting-services?product=power-bi&serviceType=implementation&country=ALL&region=ALL&page=1) Power BI.

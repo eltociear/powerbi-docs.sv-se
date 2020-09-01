@@ -1,25 +1,26 @@
 ---
-title: Ordlista för Power BI-användare
-description: Power BI innehåller många nya termer och en del befintliga termer används på nya sätt. Använd vår ordlista för att bekanta dig med Power BI-terminologin.
+title: Ordlista för Power BI-företagsanvändare
+description: Power BI innehåller många nya termer och en del befintliga termer används på nya sätt. Använd vår ordlista för att bekanta dig med Power BI-tjänstens terminologi.
 services: power-bi
 author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
-ms.topic: conceptual
-ms.date: 07/08/2020
+ms.topic: reference
+ms.date: 08/24/2020
+ms.custom: contperfq1
 ms.author: mihart
-ms.openlocfilehash: f5ed2252836ecda364ca53904c2cccbae9f9b7e6
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: cd562d8fe689c2ae82ee1cacfc9e02393a5992f9
+ms.sourcegitcommit: 84e75a2cd92f4ba4e0c08ba296b981b79d6d0e82
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86215611"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88803053"
 ---
-# <a name="glossary-for-power-bi-service"></a>Ordlista för Power BI-tjänsten    
+# <a name="glossary-for-business-users-of-the-power-bi-service"></a>Ordlista för företagsanvändare av Power BI-tjänsten    
 Power BI-tjänsten kan introducera terminologi som du kanske inte är bekant med eller förstår. Ordlistan är ett bra ställe att leta upp terminologi. Om du vill kan du lägga till den som ett bokmärke. En annan bra resurs om du vill lära dig mer om byggstenarna bakom Power BI-tjänsten är [Grundläggande begrepp](end-user-basic-concepts.md). Grundläggande begrepp ger en översikt över de olika *delarna* i Power BI och hur de hänger ihop.
 
-Den här ordlista är ett community-arbete.  Saknar du något ord? Be oss att lägga till det. Du kan använda feedback-knappen för dokumentation längst ned i den här artikeln.
+Den här ordlista är ett community-arbete.  Saknar du något ord? Be oss gärna att lägga till det (du kan använda knappen för feedback om dokumentation längst ned i den här artikeln).
 
 ## <a name="a"></a>A
 

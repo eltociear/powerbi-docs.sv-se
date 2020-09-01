@@ -10,12 +10,12 @@ ms.date: 06/02/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Get started
-ms.openlocfilehash: 3d50b8678abd54d2a4543b5a2d187f32b491b063
-ms.sourcegitcommit: aece2382b618dc5b730705b4c76e76a657986588
+ms.openlocfilehash: 75b05449de47f39fc95fd7cf42f9325b7a5d0ee9
+ms.sourcegitcommit: f73ea4b9116ad186817ec5cc5d5f487d49cc0cb0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84427136"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88638783"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI för amerikanska myndighetskunder
 
@@ -86,7 +86,7 @@ För att tillgodose kraven hos molnkunder på myndigheter finns det vissa skilln
 |  |Granskning via Office 365 Administrationscenter för säkerhet och efterlevnad|Tillgänglig|Tillgänglig|Tillgänglig|
 |  |Delning med extern användare|Tillgänglig|Tillgänglig|Tillgänglig|
 |  |Användningsstatistik för rapporter och instrumentpaneler|Tillgänglig|Tillgänglig|Tillgänglig|
-|  |Azure B2B mellan GCC och kommersiellt moln|Tillgänglig|Tillgänglig|Tillgänglig|
+|  |Azure B2B-samarbete mellan GCC och kommersiellt moln<sup>1</sup>|Tillgänglig|Inte tillgänglig|Inte tillgänglig|
 |Skapa rapport|Skapa och visa instrumentpaneler och rapporter|Tillgänglig|Tillgänglig|Tillgänglig|
 |  |Schemalagd datauppdatering|Tillgänglig|Tillgänglig|Tillgänglig|
 |  |Uppdateringsbara teaminstrumentpaneler|Tillgänglig|Tillgänglig|Tillgänglig|
@@ -108,6 +108,8 @@ För att tillgodose kraven hos molnkunder på myndigheter finns det vissa skilln
 |  |Automatiserad maskininlärning|Inte tillgänglig|Inte tillgänglig|Inte tillgänglig|
 |  |Azure Cognitive Services|Inte tillgänglig|Inte tillgänglig|Inte tillgänglig|
 |  |Azure Machine Learning|Inte tillgänglig|Inte tillgänglig|Inte tillgänglig|
+
+<sup>1</sup> B2B-samarbete är tillgängligt för GCC, men en licens till den externa användaren måste utfärdas i den miljön. Licenser för kommersiella moln är inte giltiga i GCC. Mer information om kända begränsningar med B2B-samarbete för amerikanska myndigheter finns i [Jämför Azure Government och globala Azure](https://docs.microsoft.com/azure/azure-government/compare-azure-government-global-azure#azure-active-directory-premium-p1-and-p2).
 
 ## <a name="next-steps"></a>Nästa steg
 

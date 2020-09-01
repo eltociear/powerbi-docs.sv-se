@@ -6,24 +6,31 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/02/2020
+ms.date: 08/19/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 81dda3c2bc3558ba68a16ee3f3070e748f76f15b
-ms.sourcegitcommit: 561f6de3e4621d9d439dd54fab458ddca78ace2c
+ms.openlocfilehash: fe55c789f5af644a802bc5c5f648315744a074be
+ms.sourcegitcommit: f73ea4b9116ad186817ec5cc5d5f487d49cc0cb0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85940352"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88638690"
 ---
 # <a name="bi-solution-architecture-in-the-center-of-excellence"></a>BI-lösningsarkitektur i Center of Excellence
 
 Den här artikeln vänder sig till IT-experter och IT-chefer. Du lär dig mer om BI-lösningsarkitekturen i COE och de olika tekniker som används. Tekniker inkluderar Azure, Power BI och Excel. De kan utnyttjas tillsammans för att ge en skalbar och datadriven BI-molnplattform.
 
-Att designa en robust BI-plattform kan liknas vid att bygga en bro som förbinder transformerade och berikade källdata med datakonsumenter. Designen av en sådan komplex struktur kräver ett tekniskt tänkesätt men kan vara en av de mest kreativa och inspirerande IT-arkitekturer som du kan utforma.
+Att designa en robust BI-plattform kan liknas vid att bygga en bro som förbinder transformerade och berikade källdata med datakonsumenter. Designen av en sådan komplex struktur kräver ett tekniskt tänkesätt men kan vara en av de mest kreativa och inspirerande IT-arkitekturer som du kan utforma. I en stor organisation kan en BI-lösning bestå av följande:
+
+- Datakällor
+- Datainhämtning
+- Stordata/förberedelse av data
+- Informationslager
+- BI-semantikmodeller
+- Rapporter
+
+:::image type="content" source="media/center-of-excellence-business-intelligence-solution-architecture/azure-business-intelligence-platform.png" alt-text="Ett diagram av BI-plattformsarkitekturen, från datakällor till datainmatning, stordata, datalager, informationslager, BI-semantikmodell, rapportering och maskininlärning.":::
 
 Plattformen måste stödja specifika krav. Närmare bestämt måste den skalas och prestera enligt förväntningarna från företagstjänster och datakonsumenter. Samtidigt måste den vara helt säker. Och den ska vara tillräckligt motståndskraftig för att anpassas efter förändringar, eftersom nya data och ämnesområden garanterat måste föras online framöver.
-
-:::image type="content" source="media/center-of-excellence-business-intelligence-solution-architecture/azure-business-intelligence-platform.png" alt-text="En bild som visar ett diagram av en BI-plattformsarkitektur, från datakällor till datainmatning, stordata, datalager, informationslager, rapportering och maskininlärning.":::
 
 ## <a name="frameworks"></a>Ramverk
 
@@ -40,7 +47,7 @@ Datamodeller ger dig kontroll över hur data struktureras och används. För fö
 En BI-plattform kan leverera tre olika typer av modeller:
 
 - Företagsmodeller
-- BI-modeller
+- BI-semantikmodeller
 - Maskininlärningsmodeller (ML)
 
 ### <a name="enterprise-models"></a>Företagsmodeller
@@ -51,17 +58,15 @@ Företagsmodeller levererar en konsekvent och enskild datakälla för rapporteri
 
 På en BI-molnplattform kan företagsmodeller distribueras till en [Synapse SQL-pool i Azure Synapse](/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-overview-what-is#synapse-sql-pool-in-azure-synapse). Synapse SQL-poolen blir då den enda versionen av sanningen, som organisationen kan räkna med för snabba och robusta insikter.
 
-### <a name="bi-models"></a>BI-modeller
+### <a name="bi-semantic-models"></a>BI-semantikmodeller
 
-**BI-modeller** representerar ett semantiskt lager ovanpå företagsmodeller. De skapas och underhålls av BI-utvecklare och företagsanvändare. BI-utvecklare skapar BI-kärnmodeller som hämtar data från företagsmodeller. Företagsanvändare kan skapa oberoende modeller i mindre skala, eller så kan de utöka BI-kärnmodeller med avdelningskällor eller externa källor. BI-modeller fokuserar ofta på ett enda ämnesområde och delas ofta bland många parter.
+**BI-semantikmodeller** representerar ett semantiskt lager över företagsmodeller. De skapas och underhålls av BI-utvecklare och företagsanvändare. BI-utvecklare skapar centrala BI-semantikmodeller som hämtar data från företagsmodeller. Företagsanvändare kan skapa oberoende modeller i mindre skala, eller så kan de utöka centrala BI-semantikmodeller med avdelningskällor eller externa källor. BI-semantikmodeller fokuserar ofta på ett enda ämnesområde och delas ofta bland många parter.
 
-Affärsfunktioner möjliggörs inte endast av data, utan av BI-modeller som beskriver begrepp, relationer, regler och standarder. På så sätt representerar de intuitiva och lättförståeliga strukturer som definierar datarelationer och kapslar in affärsregler som beräkningar. De kan även framtvinga detaljerade databehörigheter och därmed se till att rätt personer får åtkomst till rätt data. En viktig punkt är att de påskyndar frågeprestanda och ger mycket responsiva interaktiva analyser – till och med över terabyte med data. Precis som företagsmodeller antar BI-modeller namngivningskonventioner som säkerställer konsekvens.
+Affärsfunktioner möjliggörs inte endast av data, utan av BI-semantikmodeller som beskriver begrepp, relationer, regler och standarder. På så sätt representerar de intuitiva och lättförståeliga strukturer som definierar datarelationer och kapslar in affärsregler som beräkningar. De kan även framtvinga detaljerade databehörigheter och därmed se till att rätt personer får åtkomst till rätt data. En viktig punkt är att de påskyndar frågeprestanda och ger mycket responsiva interaktiva analyser – till och med över terabyte med data. Precis som företagsmodeller antar BI-semantikmodeller namngivningskonventioner som säkerställer konsekvens.
 
-På en BI-molnplattform kan BI-utvecklare distribuera BI-modeller till [Azure Analysis Services](/azure/analysis-services/) eller [Power BI Premium-kapaciteter](../admin/service-premium-what-is.md#dedicated-capacities). Vi rekommenderar att du distribuerar till Power BI när det används som rapporterings- och analyslager. Dessa produkter stöder olika lagringslägen, vilket gör att datamodellstabeller kan cachelagra sina data eller använda [DirectQuery](directquery-model-guidance.md), en teknik som skickar frågor till den underliggande datakällan. DirectQuery är ett idealiskt lagringsläge när modelltabeller representerar stora datavolymer eller om det finns behov av att leverera resultat i nära realtid. De två lagringslägena kan kombineras: [Sammansatta modeller](composite-model-guidance.md) kombinerar tabeller som använder olika lagringslägen till en enda modell.
+På en BI-molnplattform kan BI-utvecklare distribuera BI-semantikmodeller till [Azure Analysis Services](/azure/analysis-services/) eller [Power BI Premium-kapaciteter](../admin/service-premium-what-is.md#dedicated-capacities). Vi rekommenderar att du distribuerar till Power BI när det används som rapporterings- och analyslager. Dessa produkter stöder olika lagringslägen, vilket gör att datamodellstabeller kan cachelagra sina data eller använda [DirectQuery](directquery-model-guidance.md), en teknik som skickar frågor till den underliggande datakällan. DirectQuery är ett idealiskt lagringsläge när modelltabeller representerar stora datavolymer eller om det finns behov av att leverera resultat i nära realtid. De två lagringslägena kan kombineras: [Sammansatta modeller](composite-model-guidance.md) kombinerar tabeller som använder olika lagringslägen till en enda modell.
 
-För modeller som det körs många frågor till kan [Azure Load Balancer](/azure/load-balancer/load-balancer-overview) användas för att fördela frågebelastningen jämnt bland modellrepliker. Detta gör även att du kan skapa program och skapa BI-modeller med hög tillgänglighet.
-
-<!-- For more information on BI models, see [BI modeling and processing in the COE](https://TODO/).-->
+För modeller som det körs många frågor till kan [Azure Load Balancer](/azure/load-balancer/load-balancer-overview) användas för att fördela frågebelastningen jämnt bland modellrepliker. Detta gör även att du kan skapa program och skapa BI-semantikmodeller med hög tillgänglighet.
 
 ### <a name="machine-learning-models"></a>Maskininlärningsmodeller
 
@@ -134,7 +139,7 @@ Förfinade data lagras sedan i en relationsdatabas för att leverera ett högpre
 
 I rapporteringslagret förbrukar företagstjänster företagsdata från informationslagret. De får även åtkomst till data direkt i datasjön för ad hoc-analys eller dataforskningsuppgifter.
 
-Detaljerade behörigheter framtvingas i alla lager: i datasjön, företagsmodellerna och BI-modellerna. Behörigheterna säkerställer att datakonsumenter endast kan se de data som de har behörighet att komma åt.
+Detaljerade behörigheter framtvingas i alla lager: i datasjön, företagsmodellerna och BI-semantikmodellerna. Behörigheterna säkerställer att datakonsumenter endast kan se de data som de har behörighet att komma åt.
 
 Hos Microsoft använder vi Power BI-rapporter och instrumentpaneler samt [sidnumrerade Power BI-rapporter](../paginated-reports/paginated-reports-report-builder-power-bi.md). Vissa rapporter och ad hoc-analyser görs i Excel, särskilt vad gäller ekonomisk rapportering.
 
@@ -142,11 +147,11 @@ Vi publicerar dataordlistor, som innehåller referensinformation om våra datamo
 
 Vanligtvis skiljs dataförbrukningsmönster åt baserat på roll:
 
-- **Dataanalytiker** ansluter direkt till BI-kärnmodeller. När BI-kärnmodeller innehåller alla data och all logik de behöver använder de live-anslutningar för att skapa Power BI-rapporter och instrumentpaneler. När de behöver utöka modellerna med avdelningsdata skapar de [sammansatta Power BI-modeller](composite-model-guidance.md). Om det finns ett behov av rapporter i kalkylbladsformat använder de Excel för att skapa rapporter baserade på BI-kärnmodeller eller BI-avdelningsmodeller.
-- **BI-utvecklare** och författare av operativa rapporter ansluter direkt till företagsmodeller. De använder Power BI Desktop för att skapa analytiska rapporter med live-anslutning. De kan även skriva BI-rapporter av operationstyp som sidnumrerade Power BI-rapporter; de skriver interna SQL-frågor för att få åtkomst till data från Azure Synapse Analytics-företagsmodeller med hjälp av T-SQL eller Power BI-modeller via DAX eller MDX.
+- **Dataanalytiker** ansluter direkt till centrala BI-semantikmodeller. När centrala BI-semantikmodeller innehåller alla data och all logik de behöver använder de live-anslutningar för att skapa Power BI-rapporter och instrumentpaneler. När de behöver utöka modellerna med avdelningsdata skapar de [sammansatta Power BI-modeller](composite-model-guidance.md). Om det finns ett behov av rapporter i kalkylbladsformat använder de Excel för att skapa rapporter baserade på centrala BI-semantikmodeller eller avdelningsspecifika BI-semantikmodeller.
+- **BI-utvecklare** och författare av operativa rapporter ansluter direkt till företagsmodeller. De använder Power BI Desktop för att skapa analytiska rapporter med live-anslutning. De kan även skriva BI-rapporter av operationstyp som sidnumrerade Power BI-rapporter; de skriver interna SQL-frågor för att få åtkomst till data från Azure Synapse Analytics-företagsmodeller med hjälp av T-SQL eller Power BI-semantikmodeller via DAX eller MDX.
 - **Dataforskare** ansluter direkt till datasjön. De använder Azure Databricks och Python-anteckningsböcker för att utveckla ML-modeller, som ofta är experimentella och kräver särskilda kunskaper för produktionsanvändning.
 
-:::image type="content" source="media/center-of-excellence-business-intelligence-solution-architecture/azure-data-warehouse-consumption.png" alt-text="En bild som visar användningen av Azure Synapse Analytics med Power BI och Azure Machine Learning.":::
+:::image type="content" source="media/center-of-excellence-business-intelligence-solution-architecture/azure-data-warehouse-consumption.png" alt-text="En bild som visar användningen av Azure Synapse Analytics med Power BI, Excel och Azure Machine Learning.":::
 
 ## <a name="next-steps"></a>Nästa steg
 
@@ -155,3 +160,9 @@ Mer information om den här artikeln finns i följande resurser:
 - [Enterprise BI i Azure med Azure Synapse Analytics](/azure/architecture/reference-architectures/data/enterprise-bi-synapse)
 - Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 - Har du förslag? [Bidra till att förbättra Power BI](https://ideas.powerbi.com/)
+
+### <a name="professional-services"></a>Professionella tjänster
+
+Certifierade Power BI-partners finns där och kan hjälpa din organisation att starta ett COE. De kan erbjuda kostnadseffektiv utbildning eller en granskning av dina data. Om du vill kontakta en Power BI-partner går du till [partnerportalen för Power BI](https://powerbi.microsoft.com/partners/).
+
+Du kan också kontakta erfarna konsultpartners. De kan hjälpa dig att [bedöma](https://appsource.microsoft.com/marketplace/consulting-services?product=power-bi&serviceType=assessment&country=ALL&region=ALL), [utvärdera](https://appsource.microsoft.com/marketplace/consulting-services?product=power-bi&serviceType=proof-of-concept&country=ALL&region=ALL) eller [implementera](https://appsource.microsoft.com/marketplace/consulting-services?product=power-bi&serviceType=implementation&country=ALL&region=ALL&page=1) Power BI.

@@ -6,14 +6,14 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/02/2020
+ms.date: 08/19/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 8e1e590f871e1840209e72eb611bde7b21610c6e
-ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
+ms.openlocfilehash: 1b4f86a0e3316cc774b0f1562112f0d6e5b19a4f
+ms.sourcegitcommit: f73ea4b9116ad186817ec5cc5d5f487d49cc0cb0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86162377"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88638714"
 ---
 # <a name="microsofts-bi-transformation"></a>Microsoft BI-omvandling
 
@@ -53,9 +53,9 @@ I utkanten av kärnan blev våra analytiker inom ekonomi, försäljning och mark
 
 **Starlight** är namnet på vår interna samlade analysplattform, som stöder ekonomi, försäljning, marknadsföring och teknik. Uppdraget är att leverera en robust, delad och skalbar dataplattform. Plattformen har skapats helt och hållet av ekonomiavdelningen och används i dag med de senaste Microsoft-produkterna.
 
-**KPI Lake** är inte Azure Data Lake. I stället är det en Starlight-tabellmodell som finns i Azure IaaS och används med Microsoft SQL Server Analysis Services. Tabellmodellen levererar data från ett hundratal interna källor och definierar många hierarkier och KPI:er. Uppdraget är att teamen inom ekonomi, marknadsföring och försäljning ska kunna utföra prestandarapportering och analyser. De får korrekta insikter i rätt tid med hjälp av enhetliga modeller från relevanta källor.
+**KPI Lake** är inte Azure Data Lake. I stället är det en Starlight-driven, tabellformad BI-semantikmodell som finns i Azure IaaS och används med Microsoft SQL Server Analysis Services. BI-semantikmodellen levererar data från ett hundratal interna källor och definierar många hierarkier och KPI:er. Uppdraget är att teamen inom ekonomi, marknadsföring och försäljning ska kunna utföra prestandarapportering och analyser. De får korrekta insikter i rätt tid med hjälp av enhetliga, BI-semantikmodeller från relevanta källor.
 
-Den första distributionen var spännande eftersom tabellmodellen resulterade i omedelbara och mätbara fördelar. Den första versionen centraliserade plattformarna C+E Finance och Marketing BI. Under de senaste sex åren har den utökats till att konsolidera fler lösningar för affärsinsikter. Den fortsätter att utvecklas och förser våra globala och kommersiella företag med granskningar, standardrapportering och SSBI. Införandet har femdubblats sedan lanseringen och överträffar våra inledande förväntningar.
+Den första distributionen var spännande eftersom den tabellformade BI-semantikmodellen resulterade i omedelbara och mätbara fördelar. Den första versionen centraliserade plattformarna C+E Finance och Marketing BI. Under de senaste sex åren har den utökats till att konsolidera fler lösningar för affärsinsikter. Den fortsätter att utvecklas och förser våra globala och kommersiella företag med granskningar, standardrapportering och SSBI. Införandet har femdubblats sedan lanseringen och överträffar våra inledande förväntningar.
 
 Här är en sammanfattning av viktiga fördelar:
 
@@ -71,8 +71,8 @@ Här är en sammanfattning av viktiga fördelar:
 Starlight-plattformen hanterar dataflödet från förvärv, till bearbetning och sedan hela vägen till publiceringen:
 
 1. Den robusta och smidiga dataintegreringen utförs regelbundet och konsoliderar data från drygt 100 olika obearbetade källor. Källdatasystemen är bl.a. relationsdatabaser, Azure Data Lake Storage och Azure Synapse-databaser. Ämnesområdena är ekonomi, marknadsföring, försäljning och teknik.
-2. När datan har mellanlagrats, fördefinieras och formateras den med hjälp av huvuddata och affärslogik. Den läses sedan in i informationslagertabeller. Därefter uppdateras tabellmodellen.
-3. Analytiker i företaget använder Excel och Power BI till att leverera insikter och analyser från tabellmodellen. Dessutom kan företagsägare få måttdefinitioner för sin egen verksamhet. Vid behov uppnås skalning med hjälp av Azure IaaS med belastningsutjämning.
+2. När datan har mellanlagrats, fördefinieras och formateras den med hjälp av huvuddata och affärslogik. Den läses sedan in i informationslagertabeller. Sedan uppdateras den tabellformade BI-semantikmodellen.
+3. Analytiker i företaget använder Excel och Power BI till att leverera insikter och analyser från den tabellformade BI-semantikmodellen. Dessutom kan företagsägare få måttdefinitioner för sin egen verksamhet. Vid behov uppnås skalning med hjälp av Azure IaaS med belastningsutjämning.
 
 ## <a name="deliver-success"></a>Bli framgångsrik
 
@@ -86,10 +86,16 @@ Läs gärna artiklarna i denna COE-serie för mer information. Vi hjälper dig a
 
 ## <a name="next-steps"></a>Nästa steg
 
-I [nästa artikel i serien](center-of-excellence-establish.md) visar vi hur ett COE hjälpte oss på Microsoft att skapa en standardiserad analys- och dataplattform som utvinner insikter från våra data.
-
 Mer information om den här artikeln finns i följande resurser:
 
 - [Upprätta ett center för utmärkthet](center-of-excellence-establish.md)
 - Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 - Har du förslag? [Bidra till att förbättra Power BI](https://ideas.powerbi.com/)
+
+I [nästa artikel i serien](center-of-excellence-establish.md) visar vi hur ett COE hjälpte oss på Microsoft att skapa en standardiserad analys- och dataplattform som utvinner insikter från våra data.
+
+### <a name="professional-services"></a>Professionella tjänster
+
+Certifierade Power BI-partners finns där och kan hjälpa din organisation att starta ett COE. De kan erbjuda kostnadseffektiv utbildning eller en granskning av dina data. Om du vill kontakta en Power BI-partner går du till [partnerportalen för Power BI](https://powerbi.microsoft.com/partners/).
+
+Du kan också kontakta erfarna konsultpartners. De kan hjälpa dig att [bedöma](https://appsource.microsoft.com/marketplace/consulting-services?product=power-bi&serviceType=assessment&country=ALL&region=ALL), [utvärdera](https://appsource.microsoft.com/marketplace/consulting-services?product=power-bi&serviceType=proof-of-concept&country=ALL&region=ALL) eller [implementera](https://appsource.microsoft.com/marketplace/consulting-services?product=power-bi&serviceType=implementation&country=ALL&region=ALL&page=1) Power BI.
