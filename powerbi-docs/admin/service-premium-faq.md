@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/16/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 189710c613c7d48f76ee0bb23a430ac4d9908c74
-ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
+ms.openlocfilehash: 4188a5570dfe15658e13d3358f3e192ac842cbfb
+ms.sourcegitcommit: 13c4bec679313f2951f1833033316cb8176da8a1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "83792870"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88937342"
 ---
 # <a name="power-bi-premium-faq"></a>Vanliga frågor och svar om Power BI Premium
 
@@ -83,11 +83,11 @@ Mer information finns i [Kom igång med Power BI-rapportserver](../report-server
 
 **Nästa steg**
 
-[Vad är Power BI Premium?](service-premium-what-is.md)
-[Viktig information om Power BI Premium](../service-premium-release-notes.md)
-[Microsoft Power BI Premium – white paper](https://aka.ms/pbipremiumwhitepaper)
-[Planera ett white paper för en företagsdistribution för Power BI](https://aka.ms/pbienterprisedeploy)
-[Aktivering av utökad Pro-utvärderingsversion](../service-extended-pro-trial.md)
-[Vanliga frågor och svar om Power BI Embedded](../developer/embedded/embedded-faq.md)
+* [Vad är Power BI Premium?](service-premium-what-is.md)
+* [Viktig information om Power BI Premium](../service-premium-release-notes.md)
+* [Microsoft Power BI Premium – white paper](https://aka.ms/pbipremiumwhitepaper)
+* [Planera ett white paper för en företagsdistribution för Power BI](https://aka.ms/pbienterprisedeploy)
+* [Aktivering av utökad Pro-utvärderingsversion](../service-extended-pro-trial.md)
+* [Vanliga frågor och svar om Power BI Embedded](../developer/embedded/embedded-faq.md)
 
 Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

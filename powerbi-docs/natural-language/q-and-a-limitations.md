@@ -7,12 +7,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 04/21/2020
 ms.author: maggies
-ms.openlocfilehash: b71fd2986fb79adf88493416ac8234f2656aefa9
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: eebb40d81e9b59b545b30ce55dbf4a362b826455
+ms.sourcegitcommit: 13c4bec679313f2951f1833033316cb8176da8a1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82866781"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88937595"
 ---
 # <a name="limitations-of-power-bi-qa"></a>Begränsningar för Power BI Frågor och svar
 
@@ -75,7 +75,6 @@ För närvarande saknas stöd för att definiera om en identifierad term eller a
 
 ### <a name="statements-not-supported"></a>Instruktioner stöds inte
 
-- Du kan för närvarande inte använda mått i villkor. Konvertera i stället måtten till beräknade kolumner så att de fungerar.
 - Du kan inte använda flera villkor. En lösning är att skapa en beräknad DAX-kolumn som utvärderar ett booleskt uttryck med flera villkor och använder detta fält i stället.
 - Om du inte anger något filtervillkor när Frågor och svar begär en delmängd data kan du inte spara definitionen, även om hela instruktionen saknar röda understrykningar.
 

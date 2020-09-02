@@ -9,12 +9,12 @@ ms.topic: tutorial
 ms.date: 07/08/2020
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 7b9f69607d2fef823ba67d5af035e1e2064a9a72
-ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
+ms.openlocfilehash: d40bda8ef6469e5dc826d36db3cc21cfe72f0da6
+ms.sourcegitcommit: 70a892df1a0c196db58bf9165b3aa31b26bbe149
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86162400"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "89092393"
 ---
 # <a name="tutorial-get-started-creating-in-the-power-bi-service"></a>Självstudie: Kom igång med att skapa i Power BI-tjänsten
 Den här självstudien är en introduktion till några av funktionerna i *Power BI-tjänsten*. I självstudien ansluter du till data, skapar en rapport och en instrumentpanel och ställer frågor om dina data. Du kan göra mycket mer i Power BI-tjänsten. Den här självstudien är bara en aptitretare. Om du vill förstå hur Power BI-tjänsten passar ihop med andra Power BI-erbjudanden rekommenderar vi att du läser [Vad är Power BI](power-bi-overview.md).
@@ -226,5 +226,5 @@ Nu när du är klar med självstudien kan du ta bort datauppsättningen, rapport
 
 Utforska de här samlingarna med Microsoft Learn-innehåll för Power BI:
 
-- [Lär dig Power BI](https://docs.microsoft.com/users/microsoftpowerplatform-5978/collections/r52to235xrjxk)
+- [Lär dig Power BI](https://docs.microsoft.com/learn/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link)
 - [Bli Power BI-dataanalytiker](https://docs.microsoft.com/users/microsoftpowerplatform-5978/collections/djwu3eywpk4nm)

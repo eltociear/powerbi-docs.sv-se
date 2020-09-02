@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 05/21/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 669f05c03bd7a42d5b44f6ca2fa1b4d58680f71b
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 3e7bb33eae8be4a0eaa7eb4d92ca165c74b14ed5
+ms.sourcegitcommit: 13c4bec679313f2951f1833033316cb8176da8a1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85237753"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88937388"
 ---
 # <a name="use-directquery-with-dataflows-in-power-bi-preview"></a>Använda DirectQuery med dataflöden i Power BI (förhandsversion)
 
@@ -48,8 +48,6 @@ När du har tillämpat den inställningen uppdaterar du dataflödet så att opti
 ## <a name="considerations-and-limitations"></a>Överväganden och begränsningar
 
 Det finns några kända begränsningar med DirectQuery och dataflöden, som beskrivs i följande lista.
-
-* DirectQuery för dataflöden fungerar inte med funktionen **enhanced metadata preview** (förbättrad metadataförhandsgranskning) aktiverad. Detta undantag förväntas tas bort i en kommande månatlig version av Power BI Desktop.
 
 * Under förhandsversionsperioden för funktionen kan tidsgränser nås eller prestandaproblem uppstå för vissa kunder när de använder DirectQuery med dataflöden. Sådana problem håller på att åtgärdas under förhandsversionsperioden.
 

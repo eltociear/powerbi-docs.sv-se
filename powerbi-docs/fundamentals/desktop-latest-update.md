@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/12/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: e24897b64a700f84cb7caf2458c72bbfa9b5c70b
-ms.sourcegitcommit: b60063c49ac39f8b28c448908ecbb44b54326335
+ms.openlocfilehash: 42c21a99422e7a3c67cdb65b62d6c323f8c8aa0d
+ms.sourcegitcommit: 70a892df1a0c196db58bf9165b3aa31b26bbe149
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "88160198"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "89092255"
 ---
 # <a name="whats-new-in-power-bi-desktop"></a>Nyheter i Power BI Desktop
 
@@ -91,7 +91,7 @@ I följande video beskrivs var och en av dessa uppdateringar. Du kan även titta
 Gillar du att lära dig mer om Power BI genom videor och annat innehåll? Kolla in följande uppsättning med videokällor och innehåll:
 
 -   [Power BI-kanal](https://www.youtube.com/user/mspowerbi): en samling Power BI-videor på YouTube.
--   [Interaktiv utbildning för Power BI](https://powerbi.microsoft.com/guided-learning/): en sekventiell rundtur i Power BI, uppdelad i mindre delar.
+-   [Interaktiv utbildning för Power BI](https://docs.microsoft.com/learn/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link): en sekventiell rundtur i Power BI, uppdelad i mindre delar.
 
 ## <a name="updates-for-previous-months"></a>Uppdateringar för tidigare månader
 
