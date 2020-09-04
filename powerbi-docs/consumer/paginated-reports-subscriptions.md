@@ -7,13 +7,13 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 12/03/2019
-ms.openlocfilehash: 0e4a62cf6216af49ef61651dc310c93de41664b7
-ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
+ms.date: 09/01/2020
+ms.openlocfilehash: 43b63da5a8107a2e30d729142e2d36f2a4f30c08
+ms.sourcegitcommit: 89ce1777a85b9fc476f077cbe22978c6cf923603
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87538135"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89286761"
 ---
 # <a name="subscribe-yourself-and-others-to-paginated-reports-in-the-power-bi-service"></a>Skapa en prenumeration åt dig själv och andra på en sidnumrerad rapport i Power BI-tjänsten 
 
@@ -27,7 +27,7 @@ När du ställer in prenumerationer väljer du hur ofta du vill få e-postmeddel
 
 - Du kan inkludera en förhandsgranskning av rapporten i e-postmeddelandets brödtext.  Detta är valfritt och kan skilja sig något från den första sidan i ditt bifogade rapportdokument beroende på vilket bilageformat som valts. 
 
-- Maximal storlek för rapportbilagan är 25 MB. 
+- Maximal storlek för rapportbilagan är 24 MB. 
 
 - Du kan ställa in prenumerationer åt andra på sidnumrerade rapporter som ansluter till datakällor som stöds för närvarande, som Azure Analysis Services eller Power BI-datamängder. Tänk på att rapportbilagan återger data baserat på dina behörigheter, precis som SQL Server Reporting Services fungerar redan idag. 
 

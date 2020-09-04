@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 07/01/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 2cffd2b9913773e7f29d1afa960209ddeddd3583
-ms.sourcegitcommit: b60063c49ac39f8b28c448908ecbb44b54326335
+ms.openlocfilehash: 1153b20e77958bbecce9284add3ae7eab21cd47d
+ms.sourcegitcommit: 1aaa742c239a3119cdaad698be5a7553b68801fa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "88160428"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "89040335"
 ---
 # <a name="export-reports-to-powerpoint"></a>Exportera rapporter till PowerPoint
 
@@ -49,6 +49,8 @@ Ett popup-fönster visas där du kan välja **Aktuella värden** eller **Standar
 ![Välj vad som ska exporteras](media/end-user-powerpoint/power-bi-current-values.png)
  
 Det finns också en kryssruta för att välja om dolda flikar i en rapport ska exporteras eller inte. Markera den här kryssrutan om du bara vill exportera rapportflikar som är synliga för dig i webbläsaren. Om du föredrar att få med alla dolda flikar i exporten lämnar du kryssrutan avmarkerad. Om kryssrutan är nedtonad finns inga dolda flikar i rapporten. Ett exempel på en dold flik är en knappbeskrivningsflik. [Anpassade knappbeskrivningar](../create-reports/desktop-tooltips.md) skapas av *rapportdesigners* och visas inte som rapportflikar för *konsumenter* i Power BI-tjänsten. 
+
+Du kan också välja att bara exportera den sida som du ser i rapporten genom att markera alternativet ”Exportera endast aktuell sida”.  Som standard är detta omarkerat och alla sidor kommer att exporteras från rapporten.
 
 Välj **Exportera** för att fortsätta när du har gjort dina val. Du ser en meddelandebanderoll i det övre högra hörnet i Power BI-tjänstens webbläsarfönster att rapporten exporteras till PowerPoint. 
 

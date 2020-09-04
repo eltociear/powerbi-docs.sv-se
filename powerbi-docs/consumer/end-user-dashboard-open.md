@@ -6,15 +6,15 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 02/18/2020
+ms.date: 08/27/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: fbbda6edde0028a6d7ca21081f582ace7cb0cc94
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: e9b950d85d50727ed1e9ca5ec2f94498a37d1665
+ms.sourcegitcommit: 89ce1777a85b9fc476f077cbe22978c6cf923603
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86216217"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89286827"
 ---
 # <a name="view-a-dashboard"></a>Visa en instrumentpanel
 
@@ -22,9 +22,9 @@ ms.locfileid: "86216217"
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-Power BI-*användare* tillbringar mycket tid framför instrumentpaneler. Instrumentpaneler är utformade för att fokusera på specifik information från de underliggande rapporterna och datauppsättningarna. Och Power BI-konsumenter använder denna information för att spåra, övervaka, svara på frågor, testa med mera, för att kunna fatta datadrivna affärsbeslut.
+Power BI-*företagsanvändare* tillbringar mycket tid med instrumentpaneler. Instrumentpaneler är utformade för att fokusera på specifik information från de underliggande rapporterna och datauppsättningarna. Och Power BI-företagsanvändare förlitar sig på denna information för att spåra, övervaka, svara på frågor, testa med mera, för att kunna fatta datadrivna affärsbeslut.
 
-![instrumentpanel](media/end-user-dashboard-open/power-bi-new-dash-new.png)
+![instrumentpanel](media/end-user-dashboard-open/power-bi-new-dashboard.png)
 
 
 Du behöver Power BI Pro både för att dela en instrumentpanel och att visa delade instrumentpaneler. [Vilken licens har jag?](end-user-license.md) 
@@ -35,14 +35,14 @@ Du behöver Power BI Pro både för att dela en instrumentpanel och att visa del
 
 |              |         |
 |------------|--------------------------------|
-|![instrumentpanelikon](media/end-user-dashboard-open/power-bi-dashboard-icon.png)      |Instrumentpaneler kan öppnas från många olika platser i Power BI-tjänsten. <br> Sök efter den här instrumentpanelsikonen. När du har hittat en <br>instrumentpanel är det enkelt att öppna den, välj den bara så visas den på Power BI-arbetsytan. |
+|![instrumentpanelikon](media/end-user-dashboard-open/power-bi-dashboard-icon.png)      |Instrumentpaneler kan öppnas från många olika platser i Power BI-tjänsten. <br> Sök efter den här instrumentpanelsikonen. När du har hittat en <br>instrumentpanel öppnar du den genom att välja den. Instrumentpanelen visas då på hela Power BI-arbetsytan. |
 |                    |          |
 
 
 
 Det kan finnas instrumentpaneler i alla containrar i navigeringsfönstret. 
 
-![instrumentpanelikon](media/end-user-dashboard-open/power-bi-open-dashboards.gif)
+![Video som visar alla platser där instrumentpaneler kan finnas](media/end-user-dashboard-open/power-bi-open-dashboards.gif)
 
 - **Start** 
 - **Favoriter** – om du har [angett en instrumentpanel som en favorit](end-user-favorite.md)
@@ -54,5 +54,7 @@ Det kan finnas instrumentpaneler i alla containrar i navigeringsfönstret.
 
 
 ## <a name="next-steps"></a>Nästa steg
+* Tillbaka till [instrumentpanelens översikt](end-user-dashboards.md)
+
 * Bekanta dig med instrumentpaneler genom att ta en titt på ett av våra [exempel](../create-reports/sample-tutorial-connect-to-the-samples.md).    
 * Lär dig mer om [panelerna](end-user-tiles.md) och vad som händer när du väljer en.

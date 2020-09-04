@@ -6,24 +6,30 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
-ms.date: 01/21/2020
+ms.date: 09/01/2020
 ms.author: maggies
-ms.openlocfilehash: bb769937e99cd3e936d7f5f3967e8f17b939242c
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 69aa11216624416f005dcb2e47d1b818204ae7ec
+ms.sourcegitcommit: 89ce1777a85b9fc476f077cbe22978c6cf923603
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85236066"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89286738"
 ---
 # <a name="change-data-source-connection-strings-in-power-bi-reports-with-powershell---power-bi-report-server"></a>Ändra anslutningssträngar för datakällor i Power BI-rapporter med PowerShell – Power BI-rapportserver
 
 
-Du kan ändra anslutningssträngar för datakällor i Power BI-rapporter på Power BI-rapportservern med hjälp av API:er i PowerShell. 
+Du kan ändra anslutningssträngar för datakällan i de Power BI-rapporter som finns i Power BI-rapportservern, genom att använda PowerShell vid interaktionen med de API:er som krävs. 
 
 > [!NOTE]
 > För närvarande fungerar den här funktionen bara för DirectQuery. Stöd för import och datauppdatering kommer.
 
 1. Installera PowerShell-cmdletarna för Power BI-rapportservern. Du hittar Leta rätt på cmdletarna och installationsinstruktioner på [https://github.com/Microsoft/ReportingServicesTools](https://github.com/Microsoft/ReportingServicesTools). 
+
+    Installera modulen `ReportingServicesTools` direkt från [PowerShell-galleriet](https://www.powershellgallery.com/packages/ReportingServicesTools/) med hjälp av nedanstående kommando.
+
+    ```powershell
+    Install-Module ReportingServicesTools
+    ```
 
 2. Hämta information om befintliga datakällor i Power BI-filen via PowerShell-cmdletarna:
 
@@ -70,4 +76,4 @@ Du kan ändra anslutningssträngar för datakällor i Power BI-rapporter på Pow
 
 [Datakällor i sidnumrerade rapporter på Power BI-rapportservern](connect-data-sources.md) 
 
-Fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

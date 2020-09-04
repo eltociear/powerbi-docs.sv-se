@@ -9,12 +9,12 @@ ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 03/18/2020
 ms.author: v-pemyer
-ms.openlocfilehash: d4d5386a7e56618a761e541ba7942778a09a7008
-ms.sourcegitcommit: aece2382b618dc5b730705b4c76e76a657986588
+ms.openlocfilehash: 533dba01bb975d774741643771415aaafa8f155c
+ms.sourcegitcommit: 70a892df1a0c196db58bf9165b3aa31b26bbe149
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84427475"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "89092301"
 ---
 # <a name="power-bi-paginated-reports-in-a-day-course"></a>Kursen Sidnumrerade rapporter i Power BI på en dag
 
@@ -83,28 +83,29 @@ Titta på välkomst- och introduktionsvideon för att starta kursen.
 
 Du kan ladda ned och konfigurera ett självstudiepaket som består av presentationsinnehåll och åtta praktiska labbövningar:
 
-1. Använd [den här länken](https://aka.ms/priad-student) till att ladda ned självstudien (.zip) lokalt.
-1. Öppna filegenskaperna och markera ”Avblockera” (Windows kan flagga filen som potentiellt osäker).
-1. Extrahera filinnehållet till en mapp i filsystemet. Vi rekommenderar att du skapar en mapp som är lätt att hitta, du kan ge den namnet **Utbildning**. Labbdokumenten refererar till den här platsen som **&lt;CourseFolder&gt;** .
+1. Använd [den här länken](https://aka.ms/priad-student) till att ladda ned självstudien (.zip) lokalt på din dator (Windows 7 eller senare).
+1. Öppna filegenskaperna för zip-filen och markera ”Avblockera” (Windows kan flagga filen som potentiellt osäker).
+1. Skapa en rotmapp för kursen. Vi rekommenderar att du ger den namnet ”C:\Training” eller liknande. Kom ihåg platsen. Du behöver ha åtkomst till kurssessionerna under labbuppgifterna. Alla labbdokument refererar till den här platsen som **&lt;CourseFolder&gt;** .
+1. Extrahera innehållet i filen **PowerBIPRIAD-Student.zip** till rotmappen för kursen.
+1. I mappen **&lt;CourseFolder&gt;\PowerBIPRIAD** öppnar du **ReadMe.txt**-filen och installerar enligt anvisningarna.
 
-När du har extraherat filerna har du mappen **PowerBIPRIAD** med följande undermappar:
-
-- **Lab01A** (och övriga övningsmappar). Övningsmapparna innehåller alla övningsdokument och resurser, det kan även vara tillgångar och lösningsfiler.
-- **MySolution**: I den här mappen lagras dina lösningsfiler. Det står när du ska använda lösningsfiler i övningsinstruktionerna.
-- **Presentation**: Den här mappen innehåller kurspresentationen i form av ett PDF-dokument.
-
-### <a name="get-started-with-the-kit"></a>Kom igång med paketet
-
-Vi rekommenderar att du tittar på onlinekursen först. Du kan gå tillbaka till presentationsteorin genom att öppna filen **&lt;CourseFolder&gt;\PowerBIPRIAD\Presentation\PowerBIPRIAD_Presentation.pdf**. I presentationen finns åtta övningsbilder som visar när det är dags att använda teorin i praktiken. Den innehåller också många resurslänkar som hjälper dig att hitta relaterat innehåll.
-
-När du är redo att börja med den första övningen öppnar du filen **&lt;CourseFolder&gt;\PowerBIPRIAD\Lab01A\PowerBIPRIAD_Lab01A.pdf**. I det här dokumentet får du hjälp med att logga in i Power BI-tjänsten, ladda upp en datamängd och sedan installera [Power BI Report Builder](https://aka.ms/pbireportbuilder).
+> [!TIP]
+> **ReadMe.txt**-filen, labbdokumenten och presentationsfilen (PDF) är tillgängliga på engelska och även följande åtta språk:
+> - Tyska (de-DE)
+> - Spanska (es-ES)
+> - Franska (fr-FR)
+> - Italienska (it-IT)
+> - Japanska (ja-JP)
+> - Koreanska (ko-KR)
+> - Portugisiska, Brasilien (pt-BR)
+> - Kinesiska, förenklade tecken (zh-CN)
 
 > [!NOTE]
 > Du måste ha ett eget Power BI-konto. Om du inte redan har det kan du läsa [Registrera dig för Power BI som enskild person](../fundamentals/service-self-service-signup-for-power-bi.md).
 >
 > Du måste logga in i Power BI för att publicera en Power BI Desktop-fil till en arbetsyta. Publiceringen ger dig en datamängd som används som datakälla till rapporter. Du behöver ingen Power BI Pro-licens eller Power BI Premium-prenumeration för att använda en datamängd som datakälla till rapporter.
 >
-> I en del övningar ska du publicera en sidnumrerad rapport till en arbetsyta. Du kan bara öppna en sidnumrerad rapport när den har sparats på en arbetsyta i en [dedikerad kapacitet](../admin/service-premium-what-is.md#dedicated-capacities) som har arbetsbelastningar för sidnumrerade rapporter aktiverade. Om du inte har åtkomst till någon sådan arbetsyta får du en länk till en video som visar rapportpublicering i stället.
+> I en del övningar ska du publicera en sidnumrerad rapport till en arbetsyta. Du kan bara öppna en sidnumrerad rapport när den har sparats på en arbetsyta i en [dedikerad kapacitet](../admin/service-premium-what-is.md#dedicated-capacities) som har arbetsbelastningar för sidnumrerade rapporter aktiverade. Om du inte har någon lämplig arbetsyta får du av labbet en länk till en video som visar rapportpubliceringen i stället.
 
 ## <a name="instructor-kit"></a>Instruktörssats
 

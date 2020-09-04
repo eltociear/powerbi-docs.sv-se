@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 07/22/2020
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 9aad77f162a49697466899afce44284c7f063746
-ms.sourcegitcommit: d9d67ee47954379c2df8db8d0dc8302de4c9f1e5
+ms.openlocfilehash: ee51ea2bbca794730d35d1f21bc999adda3dcc98
+ms.sourcegitcommit: 13c4bec679313f2951f1833033316cb8176da8a1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87478163"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88937549"
 ---
 # <a name="monitor-usage-metrics-in-the-new-workspace-experience-preview"></a>Övervaka användningsstatistik på den nya arbetsytan (förhandsversion)
 
@@ -184,6 +184,10 @@ När du skapar en kopia av den skrivskyddade färdiga användningsrapporten skap
 1. Den nya rapporten sparas i på fliken Rapporter den aktuella arbetsytan och läggs också till i innehållslistan Senaste.
 
     ![Den nya rapporten på fliken Rapporter](media/service-modern-usage-metrics/power-bi-modern-usage-metrics-new-report.png)
+    
+> [!NOTE]
+> När du sparar en kopia av användningsstatistikrapporten behandlas den som en vanlig Power BI-rapport. Den kommer att vara tillgänglig för alla användare som har visningsbehörighet för arbetsytan, inklusive användare med en visningsroll.
+
 
 ### <a name="create-a-new-usage-report-in-power-bi-desktop"></a>Skapa en ny användningsrapport i Power BI Desktop
 
@@ -242,7 +246,14 @@ När du ansluter till användningsdata i Excel kan du skapa pivottabeller som an
 
 ## <a name="usage-metrics-in-national-clouds"></a>Använda statistik i nationella moln
 
-Power BI finns tillgängligt i enskilda nationella moln. Molnen ger samma nivåer av säkerhet, sekretess, efterlevnad och transparens som den globala versionen av Power BI, kombinerat med en unik modell för lokala föreskrifter om tillhandahållande av tjänster, datahemvist, åtkomst och kontroll. Tack vare denna unika modell för lokala föreskrifter är inte användningsstatistik tillgänglig i nationella moln. Mer information finns i artikeln om [nationella moln](https://powerbi.microsoft.com/clouds/).
+Power BI finns tillgängligt i enskilda nationella moln. Molnen ger samma nivåer av säkerhet, sekretess, efterlevnad och transparens som den globala versionen av Power BI, kombinerat med en unik modell för lokala föreskrifter om tillhandahållande av tjänster, datahemvist, åtkomst och kontroll. Modern användningsstatistik är för närvarande tillgänglig i följande nationella moln: 
+
+- US Government Community Cloud
+- US Government Community Cloud High
+- USA:s försvarsdepartement
+- Kina
+
+Mer information finns i artikeln om [nationella moln](https://powerbi.microsoft.com/clouds/).
 
 ## <a name="considerations-and-limitations"></a>Överväganden och begränsningar
 

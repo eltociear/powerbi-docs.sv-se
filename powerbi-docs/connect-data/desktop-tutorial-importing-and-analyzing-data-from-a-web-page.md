@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 01/13/2020
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 4321ed284a6db7b4ed021c51d9fa1abe6752b75a
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 3778b1fcd4841902588df89ce785e65bec2bd3dc
+ms.sourcegitcommit: 70a892df1a0c196db58bf9165b3aa31b26bbe149
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83348630"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "89092370"
 ---
 # <a name="tutorial-analyze-webpage-data-by-using-power-bi-desktop"></a>Självstudie: Analysera webbsidedata med Power BI Desktop
 
@@ -169,7 +169,7 @@ Du kan ändra utseendet på en visualisering genom att markera den och sedan vä
 
 1. Med visualiseringen vald, väljer du ikonen **Formatera** och sedan **Datafärger** för att expandera datafärgsalternativen.
 
-   ![Formatera datafärger](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web15.png)
+   ![Ikonen Formatera och val av datafärger](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web15.png)
 
 1. Ange **Visa alla** till **På** och välj sedan den nedrullningsbara menyn bredvid **Västtyskland**. Välj en gul färg.
 
@@ -179,7 +179,7 @@ Du kan ändra utseendet på en visualisering genom att markera den och sedan vä
 
 1. Ändra **Teckenfärg** till röd, **Textstorlek** till **12**, och **Teckensnittsfamilj** till **Segoe (Bold)** .
 
-   ![Formatera datafärger](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web17.png)
+   ![Teckenfärg, storlek och familj](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web17.png)
 
 Din kartvisualisering ser nu ut så här:
 
@@ -201,7 +201,7 @@ I Power BI Desktop är det enkelt att hämta data från en stor mängd datakäll
 
 ## <a name="see-also"></a>Se även
 
-* [Läs andra Power BI Desktop-självstudier](/power-bi/guided-learning/)
+* [Microsoft Learn för Power BI](https://docs.microsoft.com/learn/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link)
 * [Se Power BI Desktop-videor](../fundamentals/desktop-videos.md)
 * [Besök Power BI-forumet](https://go.microsoft.com/fwlink/?LinkID=519326)
 * [Läs Power BI-bloggen](https://go.microsoft.com/fwlink/?LinkID=519327)

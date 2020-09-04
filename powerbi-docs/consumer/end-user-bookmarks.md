@@ -6,15 +6,15 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 02/18/2020
+ms.date: 08/26/2020
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: f8bd09bd55694bbd7c6a991d502dde45dad5f2e4
-ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
+ms.openlocfilehash: f865815c76df179c87c1487e1243c37108375167
+ms.sourcegitcommit: 13c4bec679313f2951f1833033316cb8176da8a1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86162076"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88937724"
 ---
 # <a name="what-are-bookmarks"></a>Vad är bokmärken?
 
@@ -29,18 +29,24 @@ Bokmärken har många användningsområden. Anta att du upptäcker en intressant
 
 Du kan även skapa en samling bokmärken, ordna dem i valfri ordning och sedan gå igenom varje bokmärke i en presentation och framhäva en serie med insikter som du vill förmedla.  
 
-![Visa Bokmärkesfönstret genom att välja det i menyfliksområdet.](media/end-user-bookmarks/power-bi-select-bookmark.png)
+![Visa Bokmärkesfönstret genom att välja det i menyfliksområdet.](media/end-user-bookmarks/power-bi-bookmark-icon.png)
 
 ## <a name="open-bookmarks"></a>Öppna bokmärken
-Du kan öppna Bokmärkesfönstret genom att välja **Bokmärken** > **Visa flera bokmärken** på menyraden. Om du vill återgå till den ursprungligen publicerade vyn för rapporten väljer du **Återställ till standard**.
+Du kan öppna Bokmärkesfönstret genom att välja **Bokmärken** > **Visa flera bokmärken** på menyraden. 
+
+![skärmbild av rapportarbetsyta med fönstret Bokmärken öppet.](media/end-user-bookmarks/power-bi-show-bookmarks.png)
+
+Om du vill återgå till den ursprungligen publicerade vyn för rapporten väljer du ikonen för **återställning**.
+
+![skärmbild där återställningsikonen har valts](media/end-user-bookmarks/power-bi-revert.png)
 
 ### <a name="report-bookmarks"></a>Rapportbokmärken
-Om *rapportdesignern* inkluderade rapportbokmärken finns de under rubriken **Rapportbokmärken**. Den här rapporten har två bokmärken, B1 och B2. 
+Om *rapportdesignern* inkluderade rapportbokmärken finns de under rubriken **Rapportbokmärken**. Den här rapportsidan har fyra bokmärken: B1, B2, VanArsdel YTD och All YTD. **All YTD** är valt just nu.
 
 > [!NOTE]
 > Du behöver Power BI Pro eller Premium för att visa delade rapporter. 
 
-![Visa rapportbokmärken.](media/end-user-bookmarks/power-bi-report.png)
+![Visa rapportbokmärken.](media/end-user-bookmarks/power-bi-bookmark-list.png)
 
 Välj ett bokmärke för att ändra till den rapportvyn. 
 
@@ -48,7 +54,7 @@ Välj ett bokmärke för att ändra till den rapportvyn.
 
 ### <a name="personal-bookmarks"></a>Personliga bokmärken
 
-När du skapar ett bokmärke sparas följande element med bokmärket:
+Om du kan se en rapport, kan du också lägga till personliga bokmärken.  När du skapar ett bokmärke sparas följande element med bokmärket:
 
 * Nuvarande sida
 * Filter
@@ -59,15 +65,21 @@ När du skapar ett bokmärke sparas följande element med bokmärket:
 * Synlighet (för ett objekt med hjälp av fönstret **Val**)
 * Fokus- eller **Spotlight**-lägen för synliga objekt
 
-Konfigurera en rapport som du vill att den ska visas i bokmärket. När du har utformat din rapportsida och visuella objekt väljer du **Lägg till** från fönstret **Bokmärken** om du vill lägga till ett bokmärke. I det här exemplet har vi lagt till vissa filter för region och datum. 
+Konfigurera en rapport som du vill att den ska visas i bokmärket. I det här exemplet:
 
-![Lägg till personliga bokmärken.](media/end-user-bookmarks/power-bi-bookmark-personal.png)
+1. Vi har ändrat det befintliga datumfiltret i fönstret **Filter**,
+1. ändrat filter för befintliga regioner i fönstret **Filter** och
+1.  markerat datapunkter i ringdiagrammets visuella objekt för att korsfiltrera och korsmarkera rapportarbetsytan. 
+
+När du har utformat din rapportsida och visuella objekt väljer du **Lägg till** från fönstret **Bokmärken** om du vill lägga till ett bokmärke. 
+
+![Lägg till personliga bokmärken.](media/end-user-bookmarks/power-bi-personal.png)
 
 **Power BI** skapar ett personligt bokmärke och ger det ett allmänt namn eller ett namn som du anger. Du kan *byta namn på*, *ta bort* eller *uppdatera* ditt bokmärke genom att välja ellipsen intill bokmärkets namn och sedan välja en åtgärd på den meny som visas.
 
 När du har ett bokmärke kan du visa det genom att välja bokmärket i fönstret **Bokmärken**. 
 
-![Lägg till personliga bokmärken.](media/end-user-bookmarks/power-bi-bookmark-west.png)
+![Visa ett specifikt bokmärke genom att välja det.](media/end-user-bookmarks/power-bi-selected.png)
 
 
 <!--
@@ -91,7 +103,7 @@ När du är i **visnings**läget finns det några funktioner att observera:
 - Namnlistan för bokmärket har pilar som låter dig flytta till nästa eller föregående bokmärke.
 - Du kan avsluta **Visnings**läget genom att välja **Avsluta** från rutan **Bokmärken** eller genom att välja **X** som finns i namnlisten för bokmärket.
 
-![Bildspel med bokmärken](media/end-user-bookmarks/power-bi-slideshow.png)
+![Bildspel med bokmärken](media/end-user-bookmarks/power-bi-view-bookmarks.png)
 
 När du är i **Visningsläget** kan du stänga fönstret **Bokmärken** (genom att klicka på X i det här fönstret) för att ge mer utrymme till presentationen. Medan du är i **Visningsläget** är alla visuella objekt interaktiva och är tillgängliga för korsmarkering, precis som de annars skulle vara när du interagerar med dem. 
 
@@ -156,7 +168,7 @@ Note that selecting **Ungroup** for any bookmark from a group takes all bookmark
 
 
 ## <a name="limitations-and-considerations"></a>Begränsningar och överväganden
-Det finns några begränsningar och saker du bör tänka på för den här versionen av **bokmärken**.
+Det finns några begränsningar och saker du bör tänka på i den här versionen av **bokmärken**.
 
 * De flesta visuella Power BI-objekt bör fungera väl med bokmärkning. Om du stöter på problem med bokmärkning och ett visuellt Power BI-objekt, kontaktar du den som har skapat det visuella Power BI-objektet och ber den personen att lägga till stöd för bokmärken till sina visuella objekt.
 * Om du lägger till ett visuellt objekt på en rapportsida efter att du har skapat ett bokmärke kommer det visuella objektet att visas i sitt standardläge. Det innebär att om du lägger till ett utsnitt på en sida där du tidigare skapade bokmärken så fungerar utsnittet i standardtillståndet.

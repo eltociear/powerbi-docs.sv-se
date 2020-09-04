@@ -7,12 +7,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 04/17/2020
 ms.author: maggies
-ms.openlocfilehash: 47ab35113bbf6564cbc824b48891cd9f58370c8a
-ms.sourcegitcommit: 7d505cb7cc9360211d67f1056cb488f7f15ffab4
+ms.openlocfilehash: aaa31851f338832a8c4f4fffb38f12414c859610
+ms.sourcegitcommit: 13c4bec679313f2951f1833033316cb8176da8a1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "88578172"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88937480"
 ---
 # <a name="intro-to-qa-tooling-to-train-power-bi-qa-preview"></a>Introduktion till verktyg i Frågor och svar för att träna upp Power BI Frågor och svar (förhandsversion)
 
@@ -80,6 +80,11 @@ Här visas allt du har sparat från Träna Frågor och svar, så att du kan gran
 
 ### <a name="suggest-questions"></a>Föreslå frågor
 
+> [!NOTE]
+> De föreslagna frågorna visas för alla instanser av Frågor och svar-kontrollen. Det går inte att skapa en separat uppsättning förslag för alla visuella frågor och svar.
+> 
+> 
+
 Om du inte konfigurerar någon inställning föreslår Visuella frågor och svar flera frågor att komma igång med. Frågorna genereras automatiskt baserat på din datamodell. I **Föreslå frågor**kan du skriva över de automatiskt genererade frågorna med dina egna frågor.
 
 Börja med att skriva den fråga som du vill lägga till i textrutan. I avsnittet förhandsversion ser du hur resultatet kommer att se ut i Visuella frågor och svar. 
@@ -91,11 +96,6 @@ Välj knappen **Lägg till** för att lägga till den här frågan till **dina f
 :::image type="content" source="media/q-and-a-tooling-intro/power-bi-qna-save-suggest-questions.png" alt-text="Spara föreslagna frågor":::
  
 Se till att välja **Spara** för att visa en lista över föreslagna frågor i Visuella frågor och svar. 
-
-> [!NOTE]
-> De föreslagna frågorna visas för alla instanser av Frågor och svar-kontrollen. Du kan inte skapa en separat uppsättning förslag för varje Frågor och svar-kontroll.
-> 
-> 
 
 ## <a name="other-qa-settings"></a>Andra inställningar i Frågor och svar
 

@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 07/02/2020
+ms.date: 08/28/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 4083304a13b75df900e25204b54f62368be43e70
-ms.sourcegitcommit: 561f6de3e4621d9d439dd54fab458ddca78ace2c
+ms.openlocfilehash: b31ddb3e3881f9002affcae9106b9e14bf85a964
+ms.sourcegitcommit: 70a892df1a0c196db58bf9165b3aa31b26bbe149
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85939499"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "89092324"
 ---
 # <a name="use-directquery-in-power-bi-desktop"></a>Använda DirectQuery i Power BI Desktop
 När du ansluter till din datakälla i *Power BI Desktop* kan du alltid importera en kopia av data till Power BI Desktop. En annan metod är tillgänglig för vissa datakällor: att ansluta direkt till datakällan med DirectQuery.
@@ -50,6 +50,8 @@ Det finns några begränsningar när du använder DirectQuery:
 - Om frågan i **frågeredigeraren** är alltför komplex uppstår ett fel. Du kan lösa felet genom att antingen ta bort det problematiska steget i **frågeredigeraren** eller *importera* data istället för att använda DirectQuery. För flerdimensionella källor som SAP Business Warehouse finns det ingen **frågeredigerare**.
 
 - Det finns inga tidsinformationsfunktioner i DirectQuery. Det går till exempel inte att behandla datumkolumner (som år, kvartal, månad och dag) annorlunda i DirectQuery-läge.
+
+- Beräknade tabeller och kolumner som refererar till en DirectQuery-tabell från en datakälla med enkel inloggning som autentisering, stöds inte i Power BI-tjänsten.
 
 - Det finns begränsningar för DAX-uttryck som tillåts i mått så att frågor som skickas till den underliggande datakällan har acceptabel prestanda.
 

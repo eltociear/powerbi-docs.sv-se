@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.date: 05/06/2020
-ms.openlocfilehash: 4dd5698f91177733e150577490775eefb7e2f2ef
-ms.sourcegitcommit: 10c5b6cd5e7070f96de8a9f1d9b95f3d242ac7f2
+ms.openlocfilehash: a1a30dc09e61e29053a5a1d95cde3d5a339c5a3d
+ms.sourcegitcommit: 6d7d5e6b19e11d557dfa1b79b745728b4ee02b4e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86557197"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89220870"
 ---
 # <a name="deployment-pipelines-best-practices-preview"></a>Metodtips för distributionspipelines (förhandsversion)
 
@@ -106,7 +106,7 @@ Tänk på Power BI Desktop som din lokala utvecklingsmiljö. Med Power BI Deskto
 Om du vill hantera versionshistoriken för dina rapporter och datauppsättningar använder du [Power BI:s automatiska synkronisering med OneDrive](../connect-data/service-connect-to-files-in-app-workspace-onedrive-for-business.md). Då hålls filerna uppdaterade med den senaste versionen. Det gör även att du kan hämta äldre versioner vid behov.
 
 >[!NOTE]
->Använd endast automatisk synkronisering med OneDrive (eller någon annan lagringsplats) med .pbix-filerna i utvecklingssteget för distributionspipelines. Synkronisera inte .pbix-filer i test- och produktionsstegen för distributionspipelines. Det orsakar problem med att distribuera innehåll i pipelinen.
+>Använd endast automatisk synkronisering med OneDrive (eller någon annan lagringsplats) med .pbix-filerna i utvecklingssteget för distributionens pipelines. Synkronisera inte .pbix-filer i test- och produktionsstegen för distributionens pipelines. Det orsakar problem med att distribuera innehåll i pipelinen.
 
 ### <a name="separate-modeling-development-from-report-and-dashboard-development"></a>Utveckling av separata modeller för rapport- och instrumentpanelsutveckling
 

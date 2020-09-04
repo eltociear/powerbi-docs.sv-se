@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 05/26/2020
 ms.author: davidi
 LocalizationGroup: Reports
-ms.openlocfilehash: 1e1e9afcbcae300e12580fb5f54bdb53e7822c03
-ms.sourcegitcommit: e9cd61eaa66eda01cc159251d7936a455c55bd84
+ms.openlocfilehash: 1605e6108b990c95a995eadd9a6b3d03260001f5
+ms.sourcegitcommit: 13c4bec679313f2951f1833033316cb8176da8a1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "86952770"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88937503"
 ---
 # <a name="analyze-in-excel"></a>Analysera i Excel
 Med **Analysera i Excel** kan du placera Power BI-datauppsättningar i Excel och sedan visa dem och interagera med dem med hjälp av pivottabeller, diagram, utsnitt och andra Excel-funktioner. Om du vill använda **Analysera i Excel** måste du först hämta funktionen från Power BI, installera den och sedan välja en eller flera datauppsättningar som ska användas i Excel. 
@@ -44,7 +44,7 @@ När du har loggat in och Power BI-tjänsten körs i webbläsaren väljer du obj
 
 Du kan också navigera i Power BI-tjänsten till en datauppsättning som du vill analysera och välja objektet **Fler alternativ** för en datauppsättning, en rapport eller ett annat Power BI-objekt. I menyn som visas väljer du alternativet **Analysera i Excel**, som du ser i följande bild.
 
-![Analysera i Excel](media/service-analyze-in-excel/analyze-excel-01.png)
+![Analysera i Excel från datamängd](media/service-analyze-in-excel/analyze-excel-01.png)
 
 Oavsett hur du gör identifierar Power BI om du har Analysera i Excel installerat och om så inte är fallet uppmanas du att ladda ned det. 
 
@@ -56,7 +56,7 @@ När du väljer Hämta, identifierar Power BI den version av Excel som du har in
 
 När hämtningen är klar kör du installationsprogrammet (.msi) för att installera Analysera i Excel. Namnet på installationsprocessen skiljer sig från Analysera i Excel. Namnet kommer att vara **Microsoft Analysis Services OLE DB-provider** såsom visas på följande bild, eller något liknande.
 
-![Uppdateringar installeras](media/service-analyze-in-excel/analyze-excel-05.png)
+![Installera uppdateringar av Analysis Services OLE DB-providern](media/service-analyze-in-excel/analyze-excel-05.png)
 
 När den är klar är du redo att välja en rapport i Power BI-tjänsten (eller något annat Power BI-dataelement, t.ex. en datauppsättning) och sedan analysera den i Excel.
 
@@ -81,6 +81,9 @@ Gå till den datauppsättning eller rapport som du vill analysera i Excel i Powe
 
     Filnamnet matchar datauppsättningen (eller rapporten eller någon annan datakälla) som den härleds från. Så om rapporten heter *Kvartalsrapport* skulle den nedladdade filen heta **Kvartalsrapport.xlsx**.
 
+    >[!Note]
+    >Analysera i Excel laddar nu ned en Excel-fil i stället för en ODC-fil. Detta skyddar de data som exporteras från Power BI. Den nedladdade Excel-filen ärver känslighetsetiketten för den datamängd som valts för Analysera i Excel.
+
 3. Öppna Excel-filen.
 
     >[!NOTE]
@@ -90,7 +93,7 @@ Gå till den datauppsättning eller rapport som du vill analysera i Excel i Powe
     >
     >![Skärmbild av betrott dokument som aktiverar innehållsbanderoll](media/service-analyze-in-excel/trusted-document-enable-content-banner.png)
 
-## <a name="use-excel-to-analyze-the-data"></a>Använd Excel för att analysera data
+## <a name="use-excel-to-analyze-the-data"></a>Använda Excel för att analysera data
 
 När du har aktiverat redigering och innehåll visar Excel en tom **Pivottabell** och listan **Fält** från Power BI-datauppsättningen som är redo att analyseras.
 

@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 08/12/2020
 ms.author: painbar
-ms.openlocfilehash: c4453f1475ac2ab227294b0b3bd8ba5dba10de67
-ms.sourcegitcommit: 64139587061136a43c5aea3b6db4d1a94e4e7795
+ms.openlocfilehash: c01169a514b1231f93df21a23dc8992e92353070
+ms.sourcegitcommit: 13c4bec679313f2951f1833033316cb8176da8a1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88204512"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88937618"
 ---
 # <a name="view-reports-and-dashboards-in-presentation-mode-on-surface-hub-and-windows-10-devices"></a>Visa rapporter och instrumentpaneler i presentationsläge på Surface Hub och Windows 10-enheter
 Du kan använda presentationsläge för att visa rapporter och instrumentpaneler i helskärmsläge på Windows 10-enheter och Surface Hub. Presentationsläget är användbart när du vill visa Power BI på ett möte eller en konferens eller på en dedikerad projektor på ett kontor, eller bara vill maximera utrymmet på en liten skärm.
@@ -64,7 +64,7 @@ När du trycker på knappen **Spela upp** i åtgärdsverktygsfältet så börjar
 
  Kontrollanten visar namnet på den vy som visas (sida eller bokmärke och sida). På bilden ovan ser vi att i rapporten som kallas **Försäljning** just nu visar bokmärket **Asien och stillahavsområdet** på sidan **Försäljningsprestanda**.
 
-Som standard växlar ett bildspel endast mellan sidorna, och med en hastighet på en sida var 30:e sekund. Du kan ställa in standardbeteendet i [inställningarna för bildspel](#slideshow-settings).
+Som standard växlar ett bildspel endast mellan sidorna, och med en hastighet på en sida var 30:e sekund. Du kan ändra standardbeteendet i [inställningarna för bildspel](#slideshow-settings).
 
 
 ### <a name="auto-play-a-slideshow-on-startup"></a>Spela upp ett bildspel automatiskt vid start

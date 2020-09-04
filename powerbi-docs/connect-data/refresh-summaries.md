@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 05/18/2020
+ms.date: 08/27/2020
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 7a1fabd1c61219d7f195253a4384accfd2521d24
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 44aeb5030008d17a9998e8357f23d47524f11512
+ms.sourcegitcommit: 1aaa742c239a3119cdaad698be5a7553b68801fa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85235998"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "89040234"
 ---
 # <a name="refresh-summaries-for-power-bi"></a>Uppdateringsöversikt i Power BI
 
@@ -60,6 +60,8 @@ Schemavyn är mycket användbar för att avgöra om det är tillräckligt lång 
 ![Schemavy](media/refresh-summaries/refresh-summaries-02.jpg)
 
 Kolumnen *Bokad uppdateringstid (minuter)* är en beräkning av medelvärdet för upp till 60 poster för varje associerad datauppsättning. Det numeriska värdet för varje tidsperiod på 30 minuter är summan av det antal minuter som beräknats för alla uppdateringar som schemalagts att starta på den tiden **och** alla schemalagda uppdateringar som ställts in på att starta i den *föregående* tidsperioden, men vars genomsnittliga varaktighet överlappar (går in i) den valda tidsperioden.
+
+Kolumnen *Tillgänglig uppdateringstid (minuter)* är en beräkning av hur många minuter som är tillgängliga för uppdatering vid varje tidpunkt, minus den uppdatering som redan har schemalagts för tidpunkten. Om din P2-prenumeration till exempel innehåller 12 uppdateringar som körs samtidigt, har du 12 stycken på 30 minuter. 12 uppdateringar x 30 minuter varje gång = 360 tillgängliga minuter för uppdatering inom den tiden. Om du har en schemalagd uppdatering som tar 20 minuter är *Tillgänglig uppdateringstid (minuter)* 340 minuter (360 totalt antal tillgängliga minuter, minus 20 minuter som redan är schemalagda = 340 minuter är fortfarande tillgängligt). 
 
 Du kan välja en tid och sedan välja tillhörande **informationsknapp** om du vill se vilka schemalagda uppdateringshändelser som bidrar till den bokade uppdateringstiden, ägarna och hur lång tid de tar att slutföra.
 

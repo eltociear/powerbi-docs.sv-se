@@ -7,15 +7,15 @@ featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 02/20/2020
+ms.date: 08/28/2020
 ms.author: mihart
 LocalizationGroup: Consumers
-ms.openlocfilehash: eebe5bcf2a4e75d9ff6ed526fbd8f9d362ff26ee
-ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
+ms.openlocfilehash: a4b7b866d56852cb4e49cbe09150dcdb694b64c3
+ms.sourcegitcommit: 89ce1777a85b9fc476f077cbe22978c6cf923603
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87537836"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89287013"
 ---
 # <a name="export-data-from-a-visual"></a>Exportera data från ett visuellt objekt
 
@@ -23,7 +23,9 @@ ms.locfileid: "87537836"
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-Om du vill se de data som används i en visualisering [kan du visa dessa data i Power BI](end-user-show-data.md) eller exportera data till Excel. Alternativet att exportera data kräver en viss typ av licens- och redigeringsbehörigheter till innehållet. Kontakta din Power BI-administratör om du inte kan exportera. Export av data kräver en Power BI Pro-licens, en Pro-licens per användare eller en Pro-licens per användare inom en organisation som har en licens för Premium-kapacitetslicens. Den här typen av licens används vanligtvis av raport *designers*, inte *konsumenter*. Mer information finns i [Vilken licens har jag?](end-user-license.md)
+Om du vill se de data som används i en visualisering [kan du visa dessa data i Power BI](end-user-show-data.md) eller exportera data till Excel. Alternativet att exportera data kräver en viss typ av licens- och redigeringsbehörigheter till innehållet. Kontakta din Power BI-administratör eller IT-supporten om det inte går att exportera. 
+
+Export av data kräver en Power BI Pro-licens, eller för att instrumentpanelen eller rapporten ska delas med Premium-kapaciteten. Mer information finns i [Vilken licens har jag?](end-user-license.md)
 
 
 ## <a name="from-a-visual-on-a-power-bi-dashboard"></a>Från en visualisering på en Power BI-instrumentpanel
@@ -35,13 +37,13 @@ Om du vill se de data som används i en visualisering [kan du visa dessa data i 
 
 2. Hovra över ett visuellt objekt för att visa **Fler alternativ** (...) och klicka på det för att visa åtgärdsmenyn.
 
-    ![Meny som visas när du väljer ellipserna](media/end-user-export/power-bi-options-menu.png)
+    ![Meny som visas när du väljer ellipserna](media/end-user-export/power-bi-option-menu.png)
 
 3. Välj **Exportera till .csv**.
 
 4. Vad som händer härnäst beror på vilken webbläsare du använder. Du kan uppmanas att spara filen eller så kan en länk till den exporterade filen visas längst ned i webbläsaren. 
 
-    ![Chrome-webbläsare som visar exporterad fillänk](media/end-user-export/power-bi-dashboard-exports.png)
+    ![Chrome-webbläsare som visar exporterad fillänk](media/end-user-export/power-bi-dashboards-export.png)
 
 5. Öppna filen i Excel. 
 
@@ -56,18 +58,18 @@ Du kan exportera data från en visualisering i en rapport som .csv- eller .xlsx-
 
 1. Välj en panel på instrumentpanelen för att öppna den underliggande rapporten.  I det här exemplet väljer vi samma visualisering som ovan, *totalt antal enheter hittills i år var %.* 
 
-    ![Markerad instrumentpanel](media/end-user-export/power-bi-export-reports.png)
+    ![Markerad instrumentpanel](media/end-user-export/power-bi-export-tile.png)
 
     Eftersom den här panelen skapades från exempelrapporten *Försäljning och marknadsföring* öppnas den rapporten. Och den öppnas på sidan som innehåller den valda visualiseringen. 
 
 2. Välj visualiseringen i rapporten. Expandera fönstret **Filter** till höger. Den här visualiseringen har tillämpade filter. Mer information om filter finns i [Använda filter i en rapport.](end-user-report-filter.md)
 
-    ![Filterfönstret har valts](media/end-user-export/power-bi-export-filter.png)
+    ![Filterfönstret har valts](media/end-user-export/power-bi-export-filter-pane.png)
 
 
 3. Välj **Fler alternativ (...)** uppe till höger i visualiseringen. Välj **Exportera data**.
 
-    ![Markerade exporterade data från listrutan](media/end-user-export/power-bi-export-report.png)
+    ![Markerade exporterade data från listrutan](media/end-user-export/power-bi-export-reports.png)
 
 4. Du ser alternativ för att exportera sammanfattade data eller underliggande data. Om du använder exempelappen *Försäljning och marknadsföring* inaktiveras **Underliggande data**. Men du kan stöta på rapporter där båda alternativen är aktiverade. Här förklaras skillnaden.
 
@@ -80,7 +82,7 @@ Du kan exportera data från en visualisering i en rapport som .csv- eller .xlsx-
 
 5. Vad som händer härnäst beror på vilken webbläsare du använder. Du kan uppmanas att spara filen eller så kan en länk till den exporterade filen visas längst ned i webbläsaren. 
 
-    ![Exporterad fil visas i webbläsaren Microsoft Edge](media/end-user-export/power-bi-export-edge-browser.png)
+    ![Exporterad fil visas i webbläsaren Microsoft Edge](media/end-user-export/power-bi-export-edge-screen.png)
 
     > [!NOTE]
     > Om du inte har behörighet till data kan du inte exportera eller öppna filen i Excel.  

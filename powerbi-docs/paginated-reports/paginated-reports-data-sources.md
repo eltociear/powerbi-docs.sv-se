@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 07/27/2020
-ms.openlocfilehash: d82026ddb3ae12d95aed94fc6f96f45b4861ec48
-ms.sourcegitcommit: 3268a9b630cf599c50592d83c70a87eeecf7838f
+ms.openlocfilehash: fda04d3241db68f1ca8da66d999bfca6cef9e8cf
+ms.sourcegitcommit: 13c4bec679313f2951f1833033316cb8176da8a1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88168430"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88937457"
 ---
 # <a name="supported-data-sources-for-power-bi-paginated-reports"></a>Datakällor som stöds för sidnumrerade Power BI-rapporter
 
@@ -27,7 +27,7 @@ Sidnumrerade rapporter har inbyggt stöd för följande lista av datakällor:
 | --- | --- | --- |
 | Azure SQL Database <br>Azure SQL Data Warehouse | Grundläggande, enkel inloggning, OAuth2 | Du kan använda en Enterprise Gateway med Azure SQL DB. Du får dock inte använda SSO eller oAuth2 för att autentisera i dessa scenarier.   |
 | Azure SQL-hanterad instans | Grundläggande | via offentlig eller privat slutpunkt (privat slutpunkt måste dirigeras via Enterprise Gateway)  |
-| Azure Analysis Services | Enkel inloggning, OAuth2 | AAS-brandväggen måste inaktiveras eller konfigureras så att alla IP-intervall i BlackForest-regionen tillåts. Det här gäller bara BlackForest-regionen. |
+| Azure Analysis Services | Enkel inloggning, OAuth2 | AAS-brandväggen måste inaktiveras eller konfigureras så att alla IP-intervall i BlackForest-regionen tillåts. Det här gäller bara BlackForest-regionen.  Enkel inloggning från extern klientorganisation stöds inte. |
 | Power BI-datamängd | Enkel inloggning | Premium-baserade och icke-Premium-baserade Power BI-datamängder. Kräver läs-behörighet |
 | Premium Power BI-datamängd (XMLA) | Enkel inloggning | Power BI-datamängder stöds inte som datakälla för inbäddade sidnumrerade rapporter.  |
 | Ange data | Saknas | Data bäddas in i rapporten. |

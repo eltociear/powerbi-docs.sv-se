@@ -5,17 +5,17 @@ author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
-ms.topic: how-to
-ms.date: 04/17/2020
+ms.topic: reference
+ms.date: 09/01/2020
 ms.author: mihart
 ms.custom: licensing support
 LocalizationGroup: consumers
-ms.openlocfilehash: b6beb2115f664de12382933c8200b07b510bd083
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: 75ee1ad31bc2f99964a8f79ea29efb499c2cc81e
+ms.sourcegitcommit: 89ce1777a85b9fc476f077cbe22978c6cf923603
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86215890"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89286784"
 ---
 # <a name="power-bi-feature-list-for-consumers-and-others-with-free-licenses"></a>Lista med Power BI-funktioner för *konsumenter* och andra med kostnadsfria licenser
 
@@ -49,7 +49,7 @@ Alla Power BI-tjänstanvändare har antingen en kostnadsfri licens eller en Pro-
 
 - **Kostnadsfri licens** – tilldelas vanligtvis till *konsumenter* i en organisation (se första bilden nedan). Tilldelas även av alla som registrerar sig för Power BI-tjänsten som enskild person och vill testa [Power BI-tjänsten i fristående läge](../fundamentals/service-self-service-signup-for-power-bi.md) (se andra bilden nedan). 
 
-    ![skärm som visar användare med kostnadsfri licens](media/end-user-features/power-bi-free-organization.png)
+    ![skärm som visar en Premium-användare](media/end-user-features/power-bi-free-organization.png)
 
     För användare med kostnadsfri licens är det organisationens Premium-kapacitet som ger superkrafter. Så länge dina Pro-kollegor använder arbetsytor i Premium-kapaciteten till att dela innehåll så kan du som kostnadsfri användare visa innehållet och samarbeta med dem.  **På så sätt blir den kostnadsfria användaren en *Power BI-konsument* med möjlighet att ta emot och dela innehåll för att fatta affärsbeslut.** 
  
@@ -87,7 +87,7 @@ Den andra kolumnen representerar en *konsument*.  En konsument:
 |Favorit | ![orange x](media/end-user-features/orange-x.png) | ![grön prick](media/end-user-license/power-bi-green-dot.png)  |
  |Redigera, uppdatera, dela om, publicera om |![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png)   |
  |Skapa ny app |![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png)   |
- |Appsource: ladda ned och öppna | ![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png) | 
+ |AppSource: ladda ned och öppna | ![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png) | 
 |Organisationsarkiv: ladda ned och öppna|![orange x](media/end-user-features/orange-x.png)  |![grön prick](media/end-user-license/power-bi-green-dot.png)  |
  |**Apparbetsytor**
 | Skapa, redigera eller ta bort arbetsytor och innehåll  | ![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png) |
@@ -129,7 +129,7 @@ Den andra kolumnen representerar en *konsument*.  En konsument:
 | Visa bokmärken som andra har skapat och lägga till egna bokmärken  | ![orange x](media/end-user-features/orange-x.png)|![grön prick](media/end-user-license/power-bi-green-dot.png)  |
 | Visa och svara på kommentarer från andra: lägga till nya kommentarer  | ![orange x](media/end-user-features/orange-x.png)|![grön prick](media/end-user-license/power-bi-green-dot.png)  |
 |Ändra dimensioner för visning   | ![grönt myw](media/end-user-features/green-mwo.png) | ![grön prick](media/end-user-license/power-bi-green-dot.png)  | 
-| Spara en kopia |![orange x](media/end-user-features/orange-x.png) |![grön prick](media/end-user-license/power-bi-green-dot.png)*  
+| Spara en kopia |![orange x](media/end-user-features/orange-x.png) |![orange x](media/end-user-features/orange-x.png)  
 |Kopiera visuella objekt som bilder* |
 | Visuella rapportobjekt med korsmarkering och korsfiltrering   |![grönt myw](media/end-user-features/green-mwo.png) |![grön prick](media/end-user-license/power-bi-green-dot.png)  |
 |  Öka detaljnivå   |![grönt myw](media/end-user-features/green-mwo.png)  |![grön prick](media/end-user-license/power-bi-green-dot.png)  |
