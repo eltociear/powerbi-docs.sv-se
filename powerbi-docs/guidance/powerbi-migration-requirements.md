@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/20/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 29b821dc44f7eacb07f0df31100df2ff837c2189
-ms.sourcegitcommit: 84e75a2cd92f4ba4e0c08ba296b981b79d6d0e82
+ms.openlocfilehash: 60a22946ccde642987e748904d0dc7fe636ec700
+ms.sourcegitcommit: ffc46032d0771227395cc38be9ec9ff1500eac70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88803390"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89401989"
 ---
 # <a name="gather-requirements-to-migrate-to-power-bi"></a>Samla in krav för att migrera till Power BI
 
@@ -67,7 +67,7 @@ Sammanställ detaljerad information om data, till exempel:
 - **Datastruktur och rengöringsbehov:** Bestäm datastrukturen för varje nödvändig datakälla och i vilken utsträckning [datarengöring](../transform-model/desktop-query-overview.md) krävs.
 - **Dataintegrering**: Utvärdera hur dataintegreringen ska hanteras när det finns flera datakällor och hur [relationer](../transform-model/desktop-create-and-manage-relationships.md) kan definieras mellan varje modelltabell. Identifiera de enskilda dataelement som behövs för att förenkla modellen och [minska storleken](import-modeling-data-reduction.md).
 - **Godtagbar datasvarstid:** Fastställ behoven av datasvarstider för varje datakälla. Det påverkar beslut om vilket [datalagringsläge](../transform-model/desktop-storage-mode.md) som ska användas. Frekvensen för datauppdateringar för importmodellstabeller är viktig att känna till.
-- **Datavolym och skalbarhet:** Utvärdera förväntningar på datavolymer, vilket kommer att påverka beslut om [stormodellsstöd](/admin/service-premium-large-models.md) och utformning av DirectQuery-modeller eller [sammansatta modeller](../transform-model/desktop-composite-models.md). Överväganden om behov av historiska data är också nödvändiga att känna till. För större datamängder är det också nödvändigt att fastställa reglerna för [stegvis uppdatering](../admin/service-premium-incremental-refresh.md).
+- **Datavolym och skalbarhet:** Utvärdera förväntningar på datavolymer, vilket kommer att påverka beslut om [stormodellsstöd](../admin/service-premium-large-models.md) och utformning av DirectQuery-modeller eller [sammansatta modeller](../transform-model/desktop-composite-models.md). Överväganden om behov av historiska data är också nödvändiga att känna till. För större datamängder är det också nödvändigt att fastställa reglerna för [stegvis uppdatering](../admin/service-premium-incremental-refresh.md).
 - **Mått, KPI:er och affärsregler:** Utvärdera behovet av mått, KPI: er och affärsregler. De påverkar beslut om var logiken ska tillämpas: i datamängden eller i dataintegreringsprocessen.
 - **Huvuddata och datakatalog:** Fundera över om det finns några problem med huvuddata som behöver åtgärdas. Kontrollera om integreringen med en företagsdatakatalog är lämplig för att förbättra identifieringsmöjligheterna, komma åt definitioner eller skapa konsekvent terminologi som godkänts av organisationen.
 - **Säkerhet och datasekretess:** Ta reda på om det finns några särskilda överväganden angående säkerhet och datasekretess för datamängder, inklusive [krav på säkerhet på radnivå](../admin/service-admin-rls.md).

@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 05/05/2020
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 5d50f6dc1f1671ae8eb6695d9d39443367dfc20e
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: ef6fef8535e0fb6013e363a23f4736368a66720c
+ms.sourcegitcommit: d91c060913fcb526f9a01dc48e218485daf55b4e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85233453"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89562454"
 ---
 # <a name="creating-a-relative-date-slicer-and-filter-in-power-bi"></a>Skapa ett relativt datumutsnitt eller filter i Power BI
 
@@ -108,5 +108,5 @@ Följande begränsningar och överväganden kan användas för utsnitt och filte
 
 ## <a name="next-steps"></a>Nästa steg
 
-- [Använda ett relativt datumutsnitt eller filter i Power BI](desktop-slicer-filter-date-range.md)
+- [Använda ett relativt tidsutsnitt eller filter i Power BI](../create-reports/slicer-filter-relative-time.md)
 - [Utsnitt i Power BI](power-bi-visualization-slicers.md)

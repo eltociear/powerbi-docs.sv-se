@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/20/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 58eb9af4975c0afeb12a71a880711ddd73e64d50
-ms.sourcegitcommit: 84e75a2cd92f4ba4e0c08ba296b981b79d6d0e82
+ms.openlocfilehash: 59f340e6325cf846d1b0453a94a1015b50a987c4
+ms.sourcegitcommit: ffc46032d0771227395cc38be9ec9ff1500eac70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88803492"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89402012"
 ---
 # <a name="deploy-to-power-bi"></a>Distribuera till Power BI
 
@@ -87,7 +87,7 @@ Viktiga aktiviteter under en distribution till produktionsarbetsytan omfattar va
 
 - **Ändringshantering:** Om det behövs kan du skaffa ett godkännande för att distribuera och kommunicera till användargruppen med hjälp av standardmetoderna för ändringshantering. Det kan finnas ett fönster för godkänd ändringshantering där produktionsdistributioner tillåts. Det är vanligtvis tillämpligt på IT-hanterat innehåll och används mycket mer sällan för självbetjäningsinnehåll.
 - **Återställningsplan:** Med en migrering är förväntningen att migreringen görs av en ny lösning för första gången. Om innehållet redan finns måste du ha en plan för att återgå till den tidigare versionen, om det blir nödvändigt. Att ha tidigare versioner av Power BI Desktop-filer (med SharePoint- eller OneDrive-versioner) fungerar bra för det här ändamålet.
-- **Anslutningssträngar och parametrar:** Justera datauppsättningens anslutningssträngar om datakällan skiljer sig mellan testning och produktion. [Parameterisering](/connect-data/service-parameters.md) kan användas effektivt för detta ändamål.
+- **Anslutningssträngar och parametrar:** Justera datauppsättningens anslutningssträngar om datakällan skiljer sig mellan testning och produktion. [Parameterisering](../connect-data/service-parameters.md) kan användas effektivt för detta ändamål.
 - **Datauppdatering:** [Schemalägg datauppsättningsuppdateringar](../connect-data/refresh-scheduled-refresh.md) för alla importerade datauppsättningar.
 - **Arbetsytans innehåll:** Publicera datauppsättningar och rapporter till produktionsarbetsytan och skapa instrumentpaneler. Om ditt innehåll har publicerats till arbetsytor med Premium-kapacitet kan [distributionspipelines](../create-reports/deployment-pipelines-overview.md) förenkla distributionsprocessen till utvecklings-, test- och produktionsarbetsytor.
 - **App:** Om appar är en del av din strategi för innehållsdistribution publicerar du en [app](../consumer/end-user-apps.md) med hjälp av innehållet från produktionsarbetsytan.

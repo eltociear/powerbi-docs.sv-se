@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 12/11/2018
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 6683efbf9fa9dea9215914c097f249362fbffff2
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: b969fa3dd04f25c8921db563a89b11125216c752
+ms.sourcegitcommit: ffc46032d0771227395cc38be9ec9ff1500eac70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83278823"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89401966"
 ---
 # <a name="organizational-visuals-in-power-bi"></a>Visuella objekt för organisationer i Power BI
 
@@ -32,7 +32,7 @@ Mer information om hur du använder visuella Power BI-objekt i en organisation i
 
 ## <a name="administer-organizational-power-bi-visuals"></a>Administrera visuella Power BI-objekt i en organisation
 
-Mer information om hur du administrerar, distribuerar och hanterar visuella Power BI-objekt i din organisation finns i följande artikel: [Mer information om distribution och hantering av en organisations visuella Power BI-objekt](https://go.microsoft.com/fwlink/?linkid=866790).
+Mer information om hur du administrerar, distribuerar och hanterar visuella Power BI-objekt i din organisation finns i följande artikel: [Mer information om distribution och hantering av en organisations visuella Power BI-objekt](../../admin/organizational-visuals.md).
 
 > [!WARNING]
 > Ett anpassat visuellt Power BI-objekt som har installerats från en fil kan innehålla kod som innebär säkerhets- och integritetsrisker. Kontrollera att författaren eller källan till den visuella Power BI-objektfilen är tillförlitlig innan du distribuerar dem till organisationens databas.
