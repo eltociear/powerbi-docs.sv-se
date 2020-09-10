@@ -118,6 +118,8 @@
               href: report-performance-troubleshoot.md
             - name: Metodtips för distributionspipelines
               href: ../create-reports/deployment-pipelines-best-practices.md
+            - name: Få åtkomst till Power BI-aktivitetsloggen
+              href: admin-activity-log.md
     - name: Migrera till Power BI
       items:
         - name: Översikt över migrering
